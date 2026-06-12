@@ -125,7 +125,6 @@ h1 {
   font-size: 1.08rem;
 }
 
-.topic-nav,
 .venue-nav {
   justify-content: center;
   display: flex;
@@ -138,7 +137,6 @@ h1 {
   margin: 10px 0 18px;
 }
 
-.topic-pill,
 .venue-pill,
 .badge,
 .link-pill {
@@ -147,7 +145,6 @@ h1 {
   white-space: nowrap;
 }
 
-.topic-pill,
 .venue-pill {
   min-height: 34px;
   padding: 8px 14px;
@@ -185,7 +182,6 @@ h1 {
   font-weight: 850;
 }
 
-.topic-pill.is-active,
 .venue-pill.is-active {
   border-color: var(--blue);
   background: var(--blue);
@@ -815,7 +811,6 @@ h1 {
   color: var(--text);
 }
 
-:root[data-theme="dark"] .topic-pill,
 :root[data-theme="dark"] .venue-pill,
 :root[data-theme="dark"] .sidebar,
 :root[data-theme="dark"] .stats article,
@@ -934,7 +929,6 @@ h1 {
 }
 
 :root[data-theme="dark"] .toolbar-toggle,
-:root[data-theme="dark"] .topic-pill,
 :root[data-theme="dark"] .venue-pill,
 :root[data-theme="dark"] .sidebar,
 :root[data-theme="dark"] .stats article,
@@ -950,7 +944,6 @@ h1 {
   color: var(--text);
 }
 
-:root[data-theme="dark"] .topic-pill:hover,
 :root[data-theme="dark"] .venue-pill:hover,
 :root[data-theme="dark"] .side-nav button:hover,
 :root[data-theme="dark"] .side-nav button.is-active,
@@ -961,7 +954,6 @@ h1 {
   color: var(--text);
 }
 
-:root[data-theme="dark"] .topic-pill.is-active,
 :root[data-theme="dark"] .venue-pill.is-active,
 :root[data-theme="dark"] .link-pill.primary {
   border-color: var(--blue);
@@ -1149,12 +1141,10 @@ h1 {
   font-size: 0.86rem;
 }
 
-.topic-nav,
 .venue-nav {
   gap: 6px;
 }
 
-.topic-pill,
 .venue-pill {
   min-height: 33px;
   padding: 8px 13px;
