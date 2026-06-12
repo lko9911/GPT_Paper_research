@@ -91,6 +91,7 @@ TAG_ALIASES = {
     "Machine Learning": "Machine learning",
     "메타물질": "Metamaterials",
     "FDM": "FDM/Material extrusion",
+    "FDM / Material Extrusion": "FDM/Material extrusion",
     "Material extrusion": "FDM/Material extrusion",
     "4D Printing": "4D printing",
     "Active Materials": "Active materials",
