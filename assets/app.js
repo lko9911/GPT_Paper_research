@@ -474,13 +474,15 @@ function buildSideNav() {
           const count = state.papers.filter((paper) => deriveField(paper) === field && deriveSubtopics(paper).includes(subtopic)).length;
           if (!count) return "";
           return `<button class="side-subtopic" type="button" data-side-field="${escapeAttribute(field)}" data-side-subtopic="${escapeAttribute(subtopic)}">
-            ${escapeHtml(displayLabel(subtopic))} <span>${count}</span>
+            <span class="side-label">${escapeHtml(displayLabel(subtopic))}</span>
+            <span class="side-count">${count}</span>
           </button>`;
         })
         .join("");
       return `<div class="side-field-group">
         <button class="side-field" type="button" data-side-field="${escapeAttribute(field)}">
-          ${escapeHtml(displayLabel(field))} <span>${fieldCounts.get(field)}</span>
+          <span class="side-label">${escapeHtml(displayLabel(field))}</span>
+          <span class="side-count">${fieldCounts.get(field)}</span>
         </button>
         <div class="side-subtopics">${subtopicButtons}</div>
       </div>`;

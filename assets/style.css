@@ -258,6 +258,10 @@ h1 {
 
 .side-nav a,
 .side-nav button {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  column-gap: 12px;
   width: 100%;
   padding: 8px 10px;
   border: 0;
@@ -305,9 +309,27 @@ h1 {
 }
 
 .side-nav span {
-  float: right;
   color: var(--muted);
   font-size: 0.74rem;
+}
+
+.side-nav .side-label {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.side-nav .side-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 28px;
+  min-height: 22px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: #e9eef7;
+  color: #344054;
+  font-size: 0.72rem;
+  font-weight: 850;
 }
 
 .stats {
@@ -912,10 +934,20 @@ h1 {
   color: #08111f;
 }
 
-:root[data-theme="dark"] .venue-pill span,
-:root[data-theme="dark"] .side-nav span {
+:root[data-theme="dark"] .venue-pill span {
   background: transparent;
   color: var(--muted);
+}
+
+:root[data-theme="dark"] .side-nav .side-count {
+  background: #223757;
+  color: #d8e8ff;
+}
+
+:root[data-theme="dark"] .side-nav button.is-active .side-count,
+:root[data-theme="dark"] .side-nav button:hover .side-count {
+  background: rgba(255, 255, 255, 0.78);
+  color: #071224;
 }
 
 :root[data-theme="dark"] .venue-pill.is-active span {
@@ -1103,6 +1135,7 @@ h1 {
   padding: 8px 10px;
   font-size: 0.76rem;
   line-height: 1.28;
+  column-gap: 12px;
 }
 
 .side-nav .side-field {

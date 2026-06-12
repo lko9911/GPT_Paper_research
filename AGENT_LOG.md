@@ -1,5 +1,32 @@
 # AGENT_LOG
 
+## 2026-06-12 19:10
+
+### 변경 요약
+- 왼쪽 sidebar의 긴 분야 라벨과 숫자 count가 너무 붙어 보이는 문제를 개선했습니다.
+- `Production / Manufacturing`, `Robotics for Manufacturing` 같은 긴 라벨에서도 숫자가 독립된 badge처럼 보이도록 정리했습니다.
+
+### 수정/생성한 파일
+- `assets/app.js`: sidebar field/subtopic 버튼의 라벨과 숫자를 `side-label`, `side-count` span으로 분리했습니다.
+- `assets/style.css`: sidebar 버튼을 grid layout으로 변경하고 라벨/숫자 사이 간격, count badge 최소폭과 색상을 지정했습니다.
+- `assets/style.css`: 다크 모드 active/hover 상태에서 sidebar count badge 대비를 개선했습니다.
+- `index.html`: CSS/JS cache-busting version을 갱신했습니다.
+- `AGENT_LOG.md`: 이번 sidebar count spacing 개선 내용을 기록했습니다.
+
+### 구현한 기능
+- 긴 sidebar 라벨과 숫자 count가 서로 붙지 않고 분리되어 표시됩니다.
+- count는 최소 폭을 가진 pill badge로 표시되어 숫자 자리가 안정적으로 보입니다.
+- 다크 모드에서 active/hover sidebar count도 밝은 badge + 어두운 숫자로 표시됩니다.
+
+### 설계 결정
+- 기존 `float: right` 방식 대신 CSS grid의 `minmax(0, 1fr) auto` 구조를 사용했습니다. 긴 라벨과 숫자 영역을 명확히 분리하기 위해서입니다.
+
+### 남은 작업
+- 실제 모바일 폭에서 sidebar가 접히는 구간의 count badge 간격을 추가 확인하면 좋습니다.
+
+### 주의사항
+- 이번 변경은 sidebar UI 마크업/스타일 조정이며 데이터 수집에는 영향을 주지 않습니다.
+
 ## 2026-06-12 19:02
 
 ### 변경 요약
