@@ -50,7 +50,7 @@ def main() -> None:
             continue
         key = _dedupe_key(candidate)
         if key in index:
-            _merge_source(index[key], candidate, today)
+            _merge_existing_record(index[key], candidate, today)
             continue
 
         enriched = enrich_with_semantic_scholar(candidate)
@@ -72,7 +72,7 @@ def main() -> None:
                 continue
             key = _dedupe_key(candidate)
             if key in index:
-                _merge_source(index[key], candidate, today)
+                _merge_existing_record(index[key], candidate, today)
                 continue
 
             enriched = enrich_with_semantic_scholar(candidate)
@@ -96,7 +96,7 @@ def main() -> None:
                     continue
                 key = _dedupe_key(candidate)
                 if key in index:
-                    _merge_source(index[key], candidate, today)
+                    _merge_existing_record(index[key], candidate, today)
                     continue
 
                 enriched = enrich_with_semantic_scholar(candidate)
@@ -217,6 +217,33 @@ def _merge_source(existing: dict[str, Any], candidate: dict[str, Any], today: st
         existing["doi"] = candidate["doi"]
         existing["url"] = candidate.get("url", existing.get("url", ""))
     existing["last_updated"] = today
+
+
+def _merge_existing_record(existing: dict[str, Any], candidate: dict[str, Any], today: str) -> None:
+    _merge_source(existing, candidate, today)
+    if not _should_refresh_generic_summary(existing, candidate):
+        return
+
+    refresh_record = dict(existing)
+    refresh_record.update({key: value for key, value in candidate.items() if value})
+    summarized = summarize_record(refresh_record, allow_openai=False)
+    for key in ("ai_summary_ko", "relevance_note_ko", "relevance_score", "tags", "categories"):
+        if summarized.get(key):
+            existing[key] = summarized[key]
+    existing["abstract_used_for_summary"] = bool(candidate.get("_abstract"))
+
+
+def _should_refresh_generic_summary(existing: dict[str, Any], candidate: dict[str, Any]) -> bool:
+    if not candidate.get("_abstract"):
+        return False
+    summary = str(existing.get("ai_summary_ko") or "")
+    generic_markers = [
+        "제목과 공개 메타데이터",
+        "공개 메타데이터를 기준",
+        "public metadata",
+        "metadata and curated topic signals",
+    ]
+    return any(marker in summary for marker in generic_markers)
 
 
 def _dedupe_key(record: dict[str, Any]) -> str:
