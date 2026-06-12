@@ -91,11 +91,12 @@ def _finalize_record(record: dict[str, Any], today: str) -> dict[str, Any]:
     doi = (record.get("doi") or "").lower()
     paper_id = doi or _title_hash(record.get("title", ""))
     url = record.get("url") or (f"https://doi.org/{doi}" if doi else "")
+    year = _safe_year(record.get("year"))
     return {
         "id": paper_id,
         "title": record.get("title", "Untitled"),
         "authors": record.get("authors", []),
-        "year": record.get("year"),
+        "year": year,
         "venue": record.get("venue", ""),
         "doi": doi,
         "url": url,
@@ -140,6 +141,18 @@ def _title_hash(title: str) -> str:
 
 def _strip_transient(record: dict[str, Any]) -> dict[str, Any]:
     return {key: value for key, value in record.items() if not key.startswith("_")}
+
+
+def _safe_year(value: Any) -> int | None:
+    try:
+        year = int(value)
+    except (TypeError, ValueError):
+        return None
+    current_year = date.today().year
+    if year < 1900 or year > current_year + 1:
+        print(f"Discarding implausible publication year: {year}")
+        return None
+    return year
 
 
 def _load_json(path: Path, default: Any) -> Any:
