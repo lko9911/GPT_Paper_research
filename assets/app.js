@@ -270,9 +270,6 @@ function renderVenueBoard() {
     const matched = entries.find(([venue]) => matchesTargetVenue(venue, target));
     return matched || [target, 0];
   }).filter(([, count]) => count > 0);
-  const otherEntries = entries
-    .filter(([venue]) => !isPriorityVenue(venue))
-    .slice(0, 12);
 
   const mainCards = [
     `<button class="venue-card is-all is-active" type="button" data-board-venue="">
@@ -282,19 +279,7 @@ function renderVenueBoard() {
     ...priorityEntries.map(([venue, count]) => venueCard(venue, count, "priority")),
   ].join("");
 
-  const otherCards = otherEntries.length
-    ? `<div class="venue-list">
-        <div class="venue-list-head">
-          <strong>기타 게재지</strong>
-          <span>상위 ${otherEntries.length}개</span>
-        </div>
-        <div class="venue-list-grid">
-          ${otherEntries.map(([venue, count]) => venueChip(venue, count)).join("")}
-        </div>
-      </div>`
-    : "";
-
-  els.venueBoard.innerHTML = `<div class="venue-featured">${mainCards}</div>${otherCards}`;
+  els.venueBoard.innerHTML = `<div class="venue-featured">${mainCards}</div>`;
 
   els.venueBoard.querySelectorAll("[data-board-venue]").forEach((button) => {
     button.addEventListener("click", () => {
@@ -308,7 +293,7 @@ function renderVenueBoard() {
       els.venueNav.querySelectorAll(".venue-pill").forEach((pill) => {
         pill.classList.toggle("is-active", pill.dataset.targetVenue === state.activeTargetVenue);
       });
-      els.venueBoard.querySelectorAll(".venue-card, .venue-chip").forEach((card) => {
+      els.venueBoard.querySelectorAll(".venue-card").forEach((card) => {
         card.classList.toggle("is-active", card.dataset.boardVenue === venue);
       });
       applyFilters();
@@ -326,15 +311,7 @@ function venueCard(venue, count, label = "") {
   </button>`;
 }
 
-function venueChip(venue, count) {
-  return `<button class="venue-chip" type="button" data-board-venue="${escapeAttribute(venue)}">
-    <strong>${escapeHtml(shortVenue(venue))}</strong>
-    <span>${count}</span>
-  </button>`;
-}
-
 function updateStats() {
-  const fields = new Set(state.papers.map((paper) => deriveField(paper)));
   const subtopics = new Set(flatten(state.papers.map((paper) => deriveSubtopics(paper))));
   const updatedDates = state.papers
     .map((paper) => paper.last_updated || paper.first_added)
@@ -349,7 +326,7 @@ function updateStats() {
   }).length;
 
   els.total.textContent = state.papers.length.toLocaleString("ko-KR");
-  els.categories.textContent = `${fields.size.toLocaleString("ko-KR")} / ${subtopics.size.toLocaleString("ko-KR")}`;
+  els.categories.textContent = subtopics.size.toLocaleString("ko-KR");
   els.updated.textContent = latestDate || "-";
   els.week.textContent = weekCount.toLocaleString("ko-KR");
 }
