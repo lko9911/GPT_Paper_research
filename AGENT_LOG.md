@@ -1,5 +1,29 @@
 # AGENT_LOG
 
+## 2026-06-12 18:15
+
+### 변경 요약
+- 사이트 대표 제목에서 `Awesome` 문구를 제거했습니다.
+- 제목을 더 담백한 `AI Manufacturing and 3D/4D Printing Research`로 정리했습니다.
+
+### 수정/생성한 파일
+- `index.html`: 브라우저 title과 H1에서 `Awesome`을 제거했습니다.
+- `README.md`: README 대표 제목에서 `Awesome`을 제거했습니다.
+- `AGENT_LOG.md`: 이번 제목 문구 변경 이력을 추가했습니다.
+
+### 구현한 기능
+- 사이트 첫 화면과 브라우저 탭에 `AI Manufacturing and 3D/4D Printing Research`가 표시됩니다.
+
+### 설계 결정
+- UI 구성은 Awesome-style 큐레이션 감각을 유지하되, 제목 자체는 프로젝트의 연구 트래커 성격이 더 직접적으로 드러나도록 간결하게 변경했습니다.
+
+### 남은 작업
+- GitHub Pages 배포 후 공개 URL에서 제목 반영 여부를 확인합니다.
+
+### 주의사항
+- 이번 변경은 제목 표시만 바꾸며, 데이터 수집/요약/API 비용에는 영향을 주지 않습니다.
+- API key, secret, token은 기록하지 않았습니다.
+
 ## 2026-06-12 18:12
 
 ### 변경 요약
