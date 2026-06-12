@@ -7,7 +7,7 @@ import json
 import os
 import re
 import sys
-from datetime import date
+from datetime import UTC, date, datetime
 from pathlib import Path
 from typing import Any
 
@@ -18,6 +18,7 @@ from summarize import summarize_record
 
 ROOT = Path(__file__).resolve().parents[1]
 PAPERS_PATH = ROOT / "data" / "papers.json"
+SITE_META_PATH = ROOT / "data" / "site_meta.json"
 QUERIES_PATH = ROOT / "data" / "queries.json"
 TARGET_VENUES_PATH = ROOT / "data" / "target_venues.json"
 SEED_DOIS_PATH = ROOT / "data" / "seed_dois.json"
@@ -30,6 +31,7 @@ def main() -> None:
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(encoding="utf-8")
     today = date.today().isoformat()
+    run_started_at = datetime.now(UTC).replace(microsecond=0).isoformat().replace("+00:00", "Z")
     since_year = _since_year()
     existing = _load_json(PAPERS_PATH, [])
     queries = _load_json(QUERIES_PATH, [])
@@ -108,6 +110,17 @@ def main() -> None:
     cleaned = [_strip_transient(paper) for paper in existing]
     cleaned.sort(key=lambda paper: (paper.get("year") or 0, paper.get("relevance_score") or 0, paper.get("title") or ""), reverse=True)
     _write_json_if_changed(PAPERS_PATH, cleaned)
+    _write_json_if_changed(
+        SITE_META_PATH,
+        {
+            "last_run_at_utc": run_started_at,
+            "last_run_date": today,
+            "paper_count": len(cleaned),
+            "papers_added": added,
+            "since_year": since_year,
+            "sources": ["OpenAlex", "Crossref", "Semantic Scholar optional"],
+        },
+    )
     print(f"Update complete. Added {added} new papers. Total {len(cleaned)} papers.")
 
 

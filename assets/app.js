@@ -64,6 +64,7 @@ const TAG_CATEGORY_ALIASES = {
 
 const state = {
   papers: [],
+  siteMeta: null,
   filtered: [],
   activeTopic: "",
   activeTargetVenue: "",
@@ -99,6 +100,14 @@ async function init() {
   } catch (error) {
     console.error("Failed to load papers.json", error);
     state.papers = [];
+  }
+  try {
+    const response = await fetch(`data/site_meta.json?ts=${Date.now()}`);
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    state.siteMeta = await response.json();
+  } catch (error) {
+    console.warn("Failed to load site_meta.json", error);
+    state.siteMeta = null;
   }
 
   buildFilters();
@@ -386,7 +395,8 @@ function updateStats() {
 
   els.total.textContent = state.papers.length.toLocaleString("ko-KR");
   els.categories.textContent = subtopics.size.toLocaleString("ko-KR");
-  els.updated.textContent = latestDate || "-";
+  const lastRunAt = state.siteMeta && state.siteMeta.last_run_at_utc;
+  els.updated.textContent = formatRunTime(lastRunAt) || latestDate || "-";
   els.week.textContent = weekCount.toLocaleString("ko-KR");
 }
 
@@ -778,6 +788,23 @@ function normalize(value) {
 
 function dateValue(value) {
   return value ? new Date(`${value}T00:00:00`).getTime() : 0;
+}
+
+function formatRunTime(value) {
+  if (!value) return "";
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return "";
+  const parts = new Intl.DateTimeFormat("ko-KR", {
+    timeZone: "Asia/Seoul",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: false,
+  }).formatToParts(date);
+  const byType = Object.fromEntries(parts.map((part) => [part.type, part.value]));
+  return `${byType.year}-${byType.month}-${byType.day} ${byType.hour}:${byType.minute} KST`;
 }
 
 function flatten(items) {

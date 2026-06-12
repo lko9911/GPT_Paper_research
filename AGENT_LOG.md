@@ -887,3 +887,34 @@
 ### 주의사항
 - 현재 데이터 기준 4D 관련 논문은 3편, DLP/vat photopolymerization 관련 논문은 2편이 탐지됩니다.
 - JS 문법 검증을 통과했습니다.
+## 2026-06-12 13:58
+
+### 변경 요약
+- 자동 갱신 실행 시각을 사이트에서 확인할 수 있도록 `data/site_meta.json` 메타데이터를 추가했습니다.
+- GitHub Actions가 새 논문이 없어도 마지막 실행 시각을 커밋할 수 있도록 workflow를 수정했습니다.
+- 프론트엔드 상단 통계의 `최신 업데이트`가 마지막 파이프라인 실행 시각을 KST로 표시하도록 변경했습니다.
+
+### 수정/생성한 파일
+- `data/site_meta.json`: 마지막 실행 UTC 시각, 날짜, 논문 수, 추가 논문 수, 수집 시작 연도, 데이터 출처를 저장하는 메타 파일을 추가했습니다.
+- `scripts/update_papers.py`: 실행 시작 시각을 UTC ISO timestamp로 기록하고 `site_meta.json`을 매번 갱신하도록 수정했습니다.
+- `.github/workflows/update-papers.yml`: 자동 커밋 대상에 `data/site_meta.json`을 추가했습니다.
+- `assets/app.js`: `site_meta.json`을 fetch하고 `last_run_at_utc`를 KST 표시로 변환해 상단 통계에 보여주도록 수정했습니다.
+- `README.md`, `ARCHITECTURE.md`, `PROJECT_STATUS.md`: 갱신 시각 메타데이터 정책을 문서화했습니다.
+- `AGENT_LOG.md`: 이번 변경 기록을 추가했습니다.
+
+### 구현한 기능
+- 사이트 상단의 `최신 업데이트`가 논문별 날짜가 아니라 마지막 자동 갱신 실행 시간을 표시합니다.
+- 표시 형식은 `YYYY-MM-DD HH:mm KST`입니다.
+- 새 논문이 없어도 workflow 실행 시각이 남습니다.
+
+### 설계 결정
+- 논문 데이터와 실행 메타데이터를 분리하기 위해 `papers.json`에 전역 필드를 섞지 않고 `site_meta.json`을 별도로 만들었습니다.
+- `last_run_at_utc`는 UTC로 저장하고, 브라우저에서 KST로 변환합니다.
+- `site_meta.json` 로딩 실패 시 기존 논문 `last_updated` 날짜를 fallback으로 사용합니다.
+
+### 남은 작업
+- 필요하면 `papers_added`를 UI에 추가해 마지막 실행에서 몇 편이 추가되었는지도 표시할 수 있습니다.
+
+### 주의사항
+- `site_meta.json`은 자동 실행 때마다 바뀌므로 GitHub Actions가 매시간 커밋을 만들 수 있습니다.
+- JS 문법 검증과 Python py_compile을 통과했습니다.
