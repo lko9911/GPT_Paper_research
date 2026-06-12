@@ -52,7 +52,7 @@ const UI_TEXT = {
     noticeSoft:
       "본 사이트의 요약은 공개된 논문 메타데이터 및 초록을 바탕으로 AI가 새로 작성한 한글 요약입니다. 원문 및 정확한 내용은 DOI 링크를 통해 확인하세요.",
     sideTitle: "분야 및 서브 토픽",
-    totalPapers: "표시 논문",
+    totalPapers: "논문수",
     subtopicCount: "수집 후보",
     latestUpdate: "마지막 수집",
     weekAdded: "숨긴 후보",
@@ -101,7 +101,7 @@ const UI_TEXT = {
     noticeSoft:
       "Summaries on this site are newly written AI summaries based on public paper metadata and abstracts. Check the DOI link for the original and authoritative content.",
     sideTitle: "Fields and Subtopics",
-    totalPapers: "Shown Papers",
+    totalPapers: "Papers",
     subtopicCount: "Collected Candidates",
     latestUpdate: "Last Collection",
     weekAdded: "Hidden Candidates",
@@ -297,9 +297,7 @@ const els = {
   sideTopicNav: document.querySelector("#side-topic-nav"),
   venueBoard: document.querySelector("#venue-board"),
   total: document.querySelector("#stat-total"),
-  categories: document.querySelector("#stat-categories"),
-  updated: document.querySelector("#stat-updated"),
-  week: document.querySelector("#stat-week"),
+  opsNote: document.querySelector("#ops-note"),
   themeToggle: document.querySelector("#theme-toggle"),
   languageToggle: document.querySelector("#language-toggle"),
 };
@@ -389,9 +387,6 @@ function applyStaticLanguage() {
   setText(".notice-soft", t("noticeSoft"));
   setText(".sidebar strong", t("sideTitle"));
   setText(".stats article:nth-child(1) strong", t("totalPapers"));
-  setText(".stats article:nth-child(2) strong", t("subtopicCount"));
-  setText(".stats article:nth-child(3) strong", t("latestUpdate"));
-  setText(".stats article:nth-child(4) strong", t("weekAdded"));
   setText(".controls label:nth-child(1) span", t("search"));
   setText(".controls label:nth-child(2) span", t("field"));
   setText(".controls label:nth-child(3) span", t("tagSubtopic"));
@@ -410,7 +405,7 @@ function applyStaticLanguage() {
   setText(".results-head h2", t("curatedPapers"));
   setText("#empty-state strong", t("emptyTitle"));
   setText("#empty-state p", t("emptyText"));
-  setText(".site-footer p", t("footer"));
+  setText("#footer-policy", t("footer"));
   if (els.search) {
     els.search.placeholder = t("searchPlaceholder");
   }
@@ -671,23 +666,35 @@ function otherVenueCard(paperCount, venueCount) {
 }
 
 function updateStats() {
-  const updatedDates = state.papers
-    .map((paper) => paper.last_updated || paper.first_added)
-    .filter(Boolean)
-    .sort();
-  const latestDate = updatedDates.length ? updatedDates[updatedDates.length - 1] : "";
   const meta = state.siteMeta || {};
   const rawCount = meta.raw_candidate_count || state.papers.length;
   const archivedCount = meta.archived_count || Math.max(0, rawCount - state.papers.length);
-
-  els.total.textContent = state.papers.length.toLocaleString("ko-KR");
-  els.categories.textContent = rawCount.toLocaleString("ko-KR");
   const lastRunAt = state.siteMeta && state.siteMeta.last_run_at_utc;
-  renderUpdatedStat(lastRunAt, latestDate);
-  els.week.textContent = archivedCount.toLocaleString("ko-KR");
+
+  if (els.total) {
+    els.total.textContent = state.papers.length.toLocaleString(state.language === "ko" ? "ko-KR" : "en-US");
+  }
+  renderOpsNote(rawCount, archivedCount, lastRunAt);
+}
+
+function renderOpsNote(rawCount, archivedCount, lastRunAt) {
+  if (!els.opsNote) return;
+  const locale = state.language === "ko" ? "ko-KR" : "en-US";
+  const shownCount = state.papers.length.toLocaleString(locale);
+  const rawText = rawCount.toLocaleString(locale);
+  const archivedText = archivedCount.toLocaleString(locale);
+  const lastRun = formatRunTime(lastRunAt);
+  const timeText = lastRun ? `${lastRun.date} ${lastRun.time} KST` : "-";
+
+  if (state.language === "ko") {
+    els.opsNote.textContent = `운영 정보: 표시 ${shownCount}편 / 수집 후보 ${rawText}개 / 하단 숨김 ${archivedText}개 · 마지막 수집 ${timeText}`;
+  } else {
+    els.opsNote.textContent = `Ops note: ${shownCount} shown / ${rawText} collected candidates / ${archivedText} hidden at the bottom layer · last collection ${timeText}`;
+  }
 }
 
 function renderUpdatedStat(lastRunAt, fallbackDate) {
+  if (!els.updated) return;
   const lastRun = formatRunTime(lastRunAt);
   els.updated.classList.add("stat-datetime");
   if (!lastRun) {

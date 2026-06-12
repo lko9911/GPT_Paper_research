@@ -345,13 +345,12 @@ h1 {
 }
 
 .stats {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 10px;
+  display: flex;
   padding: 18px 0 12px;
 }
 
 .stats article {
+  width: min(220px, 100%);
   padding: 14px;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -801,6 +800,20 @@ h1 {
   border-top: 1px solid var(--line);
   color: var(--muted);
   font-size: 0.9rem;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+.ops-note {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid color-mix(in srgb, var(--line), transparent 45%);
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.55;
+  opacity: 0.78;
 }
 
 :root[data-theme="dark"] .subtitle,
