@@ -11,9 +11,21 @@ const CATEGORY_ORDER = [
   "적층제조를 위한 AI 및 머신러닝",
 ];
 
+const FEATURED_TOPICS = [
+  "MMAM",
+  "FGAM",
+  "DM filament",
+  "계산설계",
+  "재료분포",
+  "툴패스",
+  "퍼지 감소",
+  "AI/ML",
+];
+
 const state = {
   papers: [],
   filtered: [],
+  activeTopic: "",
 };
 
 const els = {
@@ -22,8 +34,10 @@ const els = {
   count: document.querySelector("#result-count"),
   search: document.querySelector("#search-input"),
   category: document.querySelector("#category-filter"),
+  tag: document.querySelector("#tag-filter"),
   year: document.querySelector("#year-filter"),
   sort: document.querySelector("#sort-select"),
+  topicNav: document.querySelector(".topic-nav"),
   total: document.querySelector("#stat-total"),
   categories: document.querySelector("#stat-categories"),
   updated: document.querySelector("#stat-updated"),
@@ -41,10 +55,11 @@ async function init() {
   }
 
   buildFilters();
+  buildTopicNav();
   updateStats();
   applyFilters();
 
-  [els.search, els.category, els.year, els.sort].forEach((el) => {
+  [els.search, els.category, els.tag, els.year, els.sort].forEach((el) => {
     el.addEventListener("input", applyFilters);
     el.addEventListener("change", applyFilters);
   });
@@ -52,23 +67,53 @@ async function init() {
 
 function buildFilters() {
   const categories = new Set();
+  const tags = new Set();
   const years = new Set();
 
   state.papers.forEach((paper) => {
     (paper.categories || []).forEach((category) => categories.add(category));
+    (paper.tags || []).forEach((tag) => tags.add(tag));
     if (paper.year) years.add(String(paper.year));
   });
 
   [...CATEGORY_ORDER, ...categories]
     .filter((category, index, array) => category && array.indexOf(category) === index)
     .forEach((category) => {
-      if (!categories.has(category)) return;
-      els.category.append(new Option(category, category));
+      if (categories.has(category)) els.category.append(new Option(category, category));
     });
+
+  [...tags].sort((a, b) => a.localeCompare(b, "ko")).forEach((tag) => {
+    els.tag.append(new Option(tag, tag));
+  });
 
   [...years]
     .sort((a, b) => Number(b) - Number(a))
     .forEach((year) => els.year.append(new Option(year, year)));
+}
+
+function buildTopicNav() {
+  const availableTags = new Set(state.papers.flatMap((paper) => paper.tags || []));
+  const availableCategories = new Set(state.papers.flatMap((paper) => paper.categories || []));
+  const topics = FEATURED_TOPICS.filter((topic) => availableTags.has(topic) || availableCategories.has(topic));
+
+  topics.forEach((topic) => {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "topic-pill";
+    button.dataset.topic = topic;
+    button.textContent = topic;
+    els.topicNav.append(button);
+  });
+
+  els.topicNav.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-topic]");
+    if (!button) return;
+    state.activeTopic = button.dataset.topic;
+    els.topicNav.querySelectorAll(".topic-pill").forEach((pill) => {
+      pill.classList.toggle("is-active", pill.dataset.topic === state.activeTopic);
+    });
+    applyFilters();
+  });
 }
 
 function updateStats() {
@@ -94,27 +139,32 @@ function updateStats() {
 function applyFilters() {
   const query = normalize(els.search.value);
   const category = els.category.value;
+  const tag = els.tag.value;
   const year = els.year.value;
   const sort = els.sort.value;
 
   state.filtered = state.papers.filter((paper) => {
+    const paperCategories = paper.categories || [];
+    const paperTags = paper.tags || [];
     const haystack = normalize(
       [
         paper.title,
         (paper.authors || []).join(" "),
         paper.venue,
         paper.doi,
-        (paper.categories || []).join(" "),
-        (paper.tags || []).join(" "),
+        paperCategories.join(" "),
+        paperTags.join(" "),
         paper.ai_summary_ko,
         paper.relevance_note_ko,
       ].join(" ")
     );
 
     const matchesQuery = !query || haystack.includes(query);
-    const matchesCategory = !category || (paper.categories || []).includes(category);
+    const matchesCategory = !category || paperCategories.includes(category);
+    const matchesTag = !tag || paperTags.includes(tag);
+    const matchesTopic = !state.activeTopic || paperTags.includes(state.activeTopic) || paperCategories.includes(state.activeTopic);
     const matchesYear = !year || String(paper.year || "") === year;
-    return matchesQuery && matchesCategory && matchesYear;
+    return matchesQuery && matchesCategory && matchesTag && matchesTopic && matchesYear;
   });
 
   state.filtered.sort((a, b) => {
@@ -136,44 +186,80 @@ function render() {
   els.empty.hidden = state.filtered.length > 0;
 
   const fragment = document.createDocumentFragment();
-  state.filtered.forEach((paper) => fragment.append(renderCard(paper)));
+  const groups = groupByPrimaryCategory(state.filtered);
+  groups.forEach(([category, papers]) => {
+    fragment.append(renderGroup(category, papers));
+  });
   els.list.append(fragment);
 }
 
-function renderCard(paper) {
+function groupByPrimaryCategory(papers) {
+  const grouped = new Map();
+  papers.forEach((paper) => {
+    const category = (paper.categories || [])[0] || "기타";
+    if (!grouped.has(category)) grouped.set(category, []);
+    grouped.get(category).push(paper);
+  });
+  return [...grouped.entries()].sort((a, b) => categoryIndex(a[0]) - categoryIndex(b[0]));
+}
+
+function renderGroup(category, papers) {
+  const section = document.createElement("section");
+  section.className = "paper-group";
+  section.innerHTML = `
+    <div class="group-heading">
+      <h3>${escapeHtml(category)}</h3>
+      <span>${papers.length.toLocaleString("ko-KR")} papers</span>
+    </div>
+  `;
+  papers.forEach((paper) => section.append(renderPaperRow(paper)));
+  return section;
+}
+
+function renderPaperRow(paper) {
   const article = document.createElement("article");
-  article.className = "paper-card";
+  article.className = "paper-row";
 
   const doiUrl = paper.url || (paper.doi ? `https://doi.org/${paper.doi}` : "");
   const sourceText = (paper.source || []).join(", ") || "Metadata API";
   const authors = formatAuthors(paper.authors || []);
+  const categoryBadges = (paper.categories || []).map((category) => badge(category, "category")).join("");
+  const tagBadges = (paper.tags || []).map((tag) => tagButton(tag)).join("");
 
   article.innerHTML = `
-    <h3 class="paper-title">${escapeHtml(paper.title || "Untitled")}</h3>
-    <p class="meta">${escapeHtml(authors)}${authors ? " · " : ""}${escapeHtml(String(paper.year || "연도 미상"))} · ${escapeHtml(paper.venue || "Venue unknown")} · ${escapeHtml(sourceText)}</p>
-    <div class="badge-row">
-      ${badge(String(paper.year || "연도 미상"), "year")}
-      ${badge(`관련성 ${paper.relevance_score || "-"} / 10`, "score")}
-      ${(paper.categories || []).map((category) => badge(category, "category")).join("")}
-      ${(paper.tags || []).map((tag) => badge(tag)).join("")}
+    <div class="paper-main">
+      <h4 class="paper-title">${escapeHtml(paper.title || "Untitled")}</h4>
+      <p class="meta">${escapeHtml(authors)}${authors ? " · " : ""}${escapeHtml(String(paper.year || "연도 미상"))} · ${escapeHtml(paper.venue || "Venue unknown")} · ${escapeHtml(sourceText)}</p>
+      <p class="summary">${escapeHtml(paper.ai_summary_ko || "요약이 아직 생성되지 않았습니다.")}</p>
+      <p class="relevance-note">${escapeHtml(paper.relevance_note_ko || "")}</p>
+      <div class="tag-line">${categoryBadges}${tagBadges}</div>
     </div>
-    <p class="summary">${escapeHtml(paper.ai_summary_ko || "요약이 아직 생성되지 않았습니다.")}</p>
-    <p class="relevance-note">${escapeHtml(paper.relevance_note_ko || "")}</p>
-    <p class="meta">마지막 업데이트: ${escapeHtml(paper.last_updated || "-")} · Raw abstract displayed: ${paper.raw_abstract_displayed === false ? "false" : "unknown"} · PDF stored: ${paper.pdf_stored === false ? "false" : "unknown"}</p>
-    <div class="actions">
-      ${doiUrl ? `<a class="button primary" href="${escapeAttribute(doiUrl)}" target="_blank" rel="noopener noreferrer">DOI 열기</a>` : ""}
-      ${doiUrl ? `<a class="button" href="${escapeAttribute(doiUrl)}" target="_blank" rel="noopener noreferrer">Source 열기</a>` : ""}
-      <button class="button" type="button" data-citation>citation 복사</button>
-    </div>
+    <aside class="paper-side">
+      <span class="score-badge">${escapeHtml(String(paper.relevance_score || "-"))}<small>/10</small></span>
+      <span class="year-badge">${escapeHtml(String(paper.year || "-"))}</span>
+      <div class="link-stack">
+        ${doiUrl ? `<a class="link-pill primary" href="${escapeAttribute(doiUrl)}" target="_blank" rel="noopener noreferrer">Paper</a>` : ""}
+        ${doiUrl ? `<a class="link-pill" href="${escapeAttribute(doiUrl)}" target="_blank" rel="noopener noreferrer">DOI</a>` : ""}
+        <button class="link-pill" type="button" data-citation>Copy Cite</button>
+      </div>
+      <p class="policy-mini">No abstract/PDF hosted · updated ${escapeHtml(paper.last_updated || "-")}</p>
+    </aside>
   `;
 
   article.querySelector("[data-citation]").addEventListener("click", async (event) => {
     const citation = buildCitation(paper);
     await navigator.clipboard.writeText(citation);
-    event.currentTarget.textContent = "복사됨";
+    event.currentTarget.textContent = "Copied";
     window.setTimeout(() => {
-      event.currentTarget.textContent = "citation 복사";
+      event.currentTarget.textContent = "Copy Cite";
     }, 1400);
+  });
+
+  article.querySelectorAll("[data-tag-filter]").forEach((button) => {
+    button.addEventListener("click", () => {
+      els.tag.value = button.dataset.tagFilter;
+      applyFilters();
+    });
   });
 
   return article;
@@ -181,6 +267,10 @@ function renderCard(paper) {
 
 function badge(text, className = "") {
   return `<span class="badge ${className}">${escapeHtml(text)}</span>`;
+}
+
+function tagButton(text) {
+  return `<button class="badge tag" type="button" data-tag-filter="${escapeAttribute(text)}">${escapeHtml(text)}</button>`;
 }
 
 function buildCitation(paper) {
@@ -195,6 +285,11 @@ function formatAuthors(authors) {
   if (!authors.length) return "";
   if (authors.length <= 3) return authors.join(", ");
   return `${authors.slice(0, 3).join(", ")} 외 ${authors.length - 3}명`;
+}
+
+function categoryIndex(category) {
+  const index = CATEGORY_ORDER.indexOf(category);
+  return index === -1 ? CATEGORY_ORDER.length : index;
 }
 
 function normalize(value) {
