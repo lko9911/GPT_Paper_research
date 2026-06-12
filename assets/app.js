@@ -21,7 +21,7 @@ const FIELD_ORDER = [
 
 const FIELD_SUBTOPICS = {
   "생산/제조": ["공정 최적화", "금속/합금 제조", "복합재/소재 제조"],
-  "3D 프린팅": ["DLP", "Toolpath", "Material Switching"],
+  "3D 프린팅": ["FDM/Material extrusion", "DLP", "Toolpath", "Material Switching"],
   "4D 프린팅": ["LCE", "메타물질", "Active materials"],
   "로봇틱스(생산제조)": ["로봇 AM", "제조 자동화", "공정 최적화"],
   "AI 생산제조": ["Machine Learning", "Design Automation"],
@@ -1086,7 +1086,13 @@ function paperMatchesSidebarSubtopic(paper, field, topic) {
 
 function paperHasRepresentativeTopic(paper, topic) {
   const target = normalizeTopicKey(canonicalTopicLabel(topic));
-  return representativeTags(paper).some((tag) => normalizeTopicKey(canonicalTopicLabel(tag)) === target);
+  const candidates = [
+    ...(paper.tags || []),
+    ...visibleTags(paper),
+    ...deriveSubtopics(paper),
+    ...(paper.categories || []),
+  ];
+  return candidates.some((tag) => normalizeTopicKey(canonicalTopicLabel(tag)) === target);
 }
 
 function collapseMaterialExtrusionTags(tags, paper) {
