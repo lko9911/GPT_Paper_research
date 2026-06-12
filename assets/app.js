@@ -11,6 +11,13 @@ const CATEGORY_ORDER = [
   "적층제조를 위한 AI 및 머신러닝",
 ];
 
+const FIELD_ORDER = [
+  "생산/제조",
+  "3D 프린팅",
+  "로봇틱스(생산제조)",
+  "AI 생산제조",
+];
+
 const FEATURED_TOPICS = [
   "MMAM",
   "FGAM",
@@ -100,22 +107,28 @@ async function init() {
 }
 
 function buildFilters() {
-  const categories = new Set();
+  const fields = new Set();
   const tags = new Set();
   const venues = new Set(TARGET_VENUES);
   const years = new Set();
 
   state.papers.forEach((paper) => {
-    (paper.categories || []).forEach((category) => categories.add(category));
+    fields.add(deriveField(paper));
     visibleTags(paper).forEach((tag) => tags.add(tag));
     venues.add(normalizeVenue(paper.venue));
     if (paper.year) years.add(String(paper.year));
   });
 
-  [...CATEGORY_ORDER, ...categories]
-    .filter((category, index, array) => category && array.indexOf(category) === index)
-    .forEach((category) => {
-      if (categories.has(category)) els.category.append(new Option(category, category));
+  FIELD_ORDER.forEach((field) => {
+    if (fields.has(field)) {
+      els.category.append(new Option(field, field));
+    }
+  });
+  [...fields]
+    .filter((field) => !FIELD_ORDER.includes(field))
+    .sort((a, b) => a.localeCompare(b, "ko"))
+    .forEach((field) => {
+      els.category.append(new Option(field, field));
     });
 
   [...tags].sort((a, b) => a.localeCompare(b, "ko")).forEach((tag) => {
@@ -184,13 +197,11 @@ function buildVenueNav() {
 }
 
 function buildSideNav() {
-  const categories = CATEGORY_ORDER.filter((category) =>
-    state.papers.some((paper) => (paper.categories || []).includes(category))
-  );
-  els.sideTopicNav.innerHTML = categories
-    .map((category) => {
-      const count = state.papers.filter((paper) => (paper.categories || []).includes(category)).length;
-      return `<button type="button" data-side-category="${escapeAttribute(category)}">${escapeHtml(category)} <span>${count}</span></button>`;
+  const fields = FIELD_ORDER.filter((field) => state.papers.some((paper) => deriveField(paper) === field));
+  els.sideTopicNav.innerHTML = fields
+    .map((field) => {
+      const count = state.papers.filter((paper) => deriveField(paper) === field).length;
+      return `<button type="button" data-side-category="${escapeAttribute(field)}">${escapeHtml(field)} <span>${count}</span></button>`;
     })
     .join("");
 
@@ -257,7 +268,7 @@ function renderVenueBoard() {
 }
 
 function updateStats() {
-  const categories = new Set(flatten(state.papers.map((paper) => paper.categories || [])));
+  const categories = new Set(state.papers.map((paper) => deriveField(paper)));
   const updatedDates = state.papers
     .map((paper) => paper.last_updated || paper.first_added)
     .filter(Boolean)
@@ -289,8 +300,10 @@ function applyFilters() {
     const paperTags = paper.tags || [];
     const paperVisibleTags = visibleTags(paper);
     const paperVenue = normalizeVenue(paper.venue);
+    const paperField = deriveField(paper);
     const haystack = normalize(
       [
+        paperField,
         paper.title,
         (paper.authors || []).join(" "),
         paper.venue,
@@ -303,7 +316,7 @@ function applyFilters() {
     );
 
     const matchesQuery = !query || haystack.includes(query);
-    const matchesCategory = !category || paperCategories.includes(category);
+    const matchesCategory = !category || paperField === category;
     const matchesTag = !tag || paperTags.includes(tag);
     const matchesVenue = !venue || paperVenue === venue;
     const matchesTarget = !state.activeTargetVenue || matchesTargetVenue(paperVenue, state.activeTargetVenue);
@@ -349,7 +362,7 @@ function render() {
 function groupByPrimaryCategory(papers) {
   const grouped = new Map();
   papers.forEach((paper) => {
-    const category = (paper.categories || [])[0] || "기타";
+    const category = deriveField(paper);
     if (!grouped.has(category)) grouped.set(category, []);
     grouped.get(category).push(paper);
   });
@@ -455,8 +468,71 @@ function formatAuthors(authors) {
 }
 
 function categoryIndex(category) {
-  const index = CATEGORY_ORDER.indexOf(category);
-  return index === -1 ? CATEGORY_ORDER.length : index;
+  const index = FIELD_ORDER.indexOf(category);
+  return index === -1 ? FIELD_ORDER.length : index;
+}
+
+function deriveField(paper) {
+  const titleText = normalize(
+    [
+      paper.title,
+      paper.venue,
+      (paper.tags || []).join(" "),
+    ].join(" ")
+  );
+  const categoryText = normalize((paper.categories || []).join(" "));
+  const text = `${titleText} ${categoryText}`;
+
+  if (titleText.includes("robot") || titleText.includes("로봇")) {
+    return "로봇틱스(생산제조)";
+  }
+  if (
+    titleText.includes("ai/ml") ||
+    titleText.includes("machine learning") ||
+    titleText.includes("deep learning") ||
+    titleText.includes("reinforcement learning") ||
+    titleText.includes("artificial intelligence") ||
+    titleText.includes("neural") ||
+    titleText.includes("머신러닝") ||
+    titleText.includes("인공지능") ||
+    categoryText.includes("ai")
+  ) {
+    return "AI 생산제조";
+  }
+  if (
+    titleText.includes("3d printing") ||
+    titleText.includes("3d print") ||
+    titleText.includes("fdm") ||
+    titleText.includes("dm filament") ||
+    titleText.includes("digital material") ||
+    titleText.includes("functionally graded") ||
+    titleText.includes("fgam") ||
+    titleText.includes("multi-material") ||
+    titleText.includes("multimaterial") ||
+    titleText.includes("toolpath") ||
+    titleText.includes("material extrusion") ||
+    titleText.includes("다중재료") ||
+    titleText.includes("기능성 구배") ||
+    titleText.includes("툴패스") ||
+    titleText.includes("재료 전환") ||
+    titleText.includes("3d 프린팅")
+  ) {
+    return "3D 프린팅";
+  }
+  if (
+    text.includes("manufacturing") ||
+    text.includes("production") ||
+    text.includes("process") ||
+    text.includes("metals") ||
+    text.includes("alloys") ||
+    text.includes("construction") ||
+    text.includes("fabrication") ||
+    text.includes("제조") ||
+    text.includes("생산")
+  ) {
+    return "생산/제조";
+  }
+  return "생산/제조";
 }
 
 function sectionId(value) {
