@@ -4,14 +4,14 @@
 
 - 현재 `data/papers.json`에는 342편의 논문 메타데이터가 저장되어 있습니다.
 - 왼쪽 분야 패널은 `생산/제조`, `3D 프린팅`, `4D 프린팅`, `로봇틱스(생산제조)`, `AI 생산제조`와 각 서브 토픽을 표시합니다.
-- 로봇틱스 분야에 `로봇 자율 실험` / `Autonomous Experimentation` 서브 토픽을 추가했습니다.
+- `로봇 자율 실험`은 표현이 부정확해 `Self-driving Labs` / `자율 실험실`로 정리했고, 위치도 로봇틱스가 아니라 `AI 생산제조` 분야 아래로 옮겼습니다.
 - `제조 자동화`는 현재 데이터에서 완전히 없는 주제가 아니라, 기존 감지 키워드가 좁아 일부 항목을 놓치던 상태였습니다. `automation`, `automated`, `autonomous`, `closed-loop`, `monitoring`, `in-situ` 계열 표현을 함께 인식하도록 보강했습니다.
-- `data/queries.json`에 로봇 AM, 제조 자동화, closed-loop manufacturing, self-driving lab 계열 검색어를 추가했으므로 다음 자동 수집부터 해당 영역 recall이 개선됩니다.
-- 현재 로컬 검증 기준으로 로봇 관련 후보는 32편, 자동화 확장 키워드 후보는 8편, 엄격한 로봇 자율 실험 후보는 0편입니다.
+- `data/queries.json`에 로봇 AM, 제조 자동화, closed-loop manufacturing, self-driving lab, autonomous laboratory, materials discovery 계열 검색어를 추가했으므로 다음 자동 수집부터 해당 영역 recall이 개선됩니다.
+- 현재 로컬 검증 기준으로 로봇 관련 후보는 32편, 자동화 확장 키워드 후보는 8편, self-driving lab/autonomous lab 계열 후보는 0편입니다.
 
 ### 최근 완료된 추가 개선
 - 왼쪽 패널의 긴 분야명은 줄바꿈하지 않고 한 줄로 표시하며, 숫자 배지와의 간격을 넓혔습니다.
-- `scripts/summarize.py`의 태그 맵도 보강해 새로 수집되는 논문이 로봇 자율 실험/제조 자동화 태그를 받을 수 있도록 했습니다.
+- `scripts/summarize.py`의 태그 맵도 보강해 새로 수집되는 논문이 `Self-driving Labs`/제조 자동화 태그를 받을 수 있도록 했습니다.
 - OpenAlex API는 일시적으로 429 rate limit을 반환할 수 있으므로, 깊은 검증이나 대량 수집은 GitHub Actions 수동 실행 또는 충분한 sleep 설정을 권장합니다.
 
 ## 2026-06-12 17:56 최신 상태

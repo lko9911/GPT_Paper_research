@@ -152,7 +152,10 @@ def _is_plausible(record: dict[str, Any], since_year: int) -> bool:
     title = record.get("title", "")
     if not title or title == "Untitled":
         return False
-    year = _safe_year(record.get("year"), log=False)
+    raw_year = record.get("year")
+    year = _safe_year(raw_year, log=False)
+    if raw_year and year is None:
+        return False
     if year and year < since_year:
         return False
     text = f"{title} {record.get('_abstract', '')}".lower()
@@ -170,6 +173,8 @@ def _is_plausible(record: dict[str, Any], since_year: int) -> bool:
         "fused deposition",
         "fdm",
         "material extrusion",
+        "materials discovery",
+        "materials synthesis",
     ]
     topic_terms = [
         "multi-material",
@@ -194,6 +199,18 @@ def _is_plausible(record: dict[str, Any], since_year: int) -> bool:
         "purge",
         "path planning",
         "digital material",
+        "self-driving lab",
+        "self driving lab",
+        "self-driving laboratory",
+        "autonomous laboratory",
+        "autonomous lab",
+        "autonomous experimentation",
+        "autonomous experiment",
+        "closed-loop experimentation",
+        "closed-loop experiment",
+        "robot scientist",
+        "active learning",
+        "bayesian optimization",
     ]
     return any(term in text for term in additive_terms) and any(term in text for term in topic_terms)
 

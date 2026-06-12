@@ -1,5 +1,37 @@
 # AGENT_LOG
 
+## 2026-06-12 23:25
+
+### 변경 요약
+- `로봇 자율 실험` / `Autonomous Experimentation` 토픽명을 `Self-driving Labs` / `자율 실험실`로 정리했습니다.
+- 해당 토픽을 로봇틱스 분야가 아니라 `AI 생산제조` 분야의 서브 토픽으로 이동했습니다.
+- self-driving lab, autonomous laboratory, closed-loop experimentation, active learning, Bayesian optimization 계열 논문이 다음 자동 수집에서 걸릴 수 있도록 검색어와 필터를 보강했습니다.
+
+### 수정/생성한 파일
+- `assets/app.js`: 사이드바 taxonomy, 한글/영문 라벨, canonical topic alias, AI 분야 판별 조건, 서브토픽 감지 키워드를 수정했습니다.
+- `scripts/summarize.py`: 새 논문 요약/태그 생성 시 `Self-driving Labs` 태그를 인식하도록 태그 맵과 alias를 정리했습니다.
+- `scripts/update_papers.py`: self-driving lab 계열 논문이 plausibility 필터에서 누락되지 않도록 `materials discovery`, `materials synthesis`, autonomous lab, closed-loop experimentation, active learning, Bayesian optimization 표현을 추가하고, 비정상 미래 연도 메타데이터는 필터에서 제외되도록 보강했습니다.
+- `data/queries.json`: self-driving lab/autonomous lab/closed-loop experimentation/materials discovery 관련 검색어를 추가했습니다.
+- `index.html`: GitHub Pages 캐시 갱신을 위해 CSS/JS 버전을 업데이트했습니다.
+- `AGENT_LOG.md`: 이번 토픽명 정리 및 수집 범위 보강 작업을 기록했습니다.
+
+### 구현한 기능
+- 사이드바에서 `Self-driving Labs`는 `AI Manufacturing` 아래에 표시됩니다.
+- 기존 `Robotic autonomous experimentation` alias가 남아 있어도 화면에서는 `Self-driving Labs`로 정규화됩니다.
+- 다음 자동 업데이트부터 self-driving lab 및 closed-loop experimentation 계열 논문 수집 가능성이 높아집니다.
+
+### 설계 결정
+- self-driving lab 문헌은 로봇 팔 자체보다 능동학습, 베이지안 최적화, closed-loop 실험 계획, 자동 재료 탐색에 가까우므로 `Robotics for Manufacturing`이 아니라 `AI Manufacturing` 아래에 배치했습니다.
+- 현재 저장된 342편에서는 self-driving lab 계열 키워드가 0편으로 확인되었으므로, 기존 데이터를 억지로 재분류하지 않고 수집 쿼리와 필터를 보강했습니다.
+- Crossref/Semantic Scholar 공개 메타데이터 검색에서는 2024년 이후 closed-loop experimentation 및 self-driving lab/materials discovery 계열 결과가 존재함을 확인했지만, Crossref total count와 일부 미래 연도 항목은 검색 품질이 낮아 정밀한 논문 수로 해석하지 않습니다.
+
+### 남은 작업
+- 다음 자동 수집 후 `Self-driving Labs` 숫자가 실제로 증가하는지 확인해야 합니다.
+- 관련 없는 materials discovery 논문이 많이 들어오면 `_is_plausible()` 필터를 additive manufacturing 또는 manufacturing context 중심으로 다시 조정하세요.
+
+### 주의사항
+- 이번 변경도 공식 메타데이터 API 기반 수집 범위만 조정하며, 출판사 크롤링/PDF 저장/raw abstract 표시 정책은 변경하지 않았습니다.
+
 ## 2026-06-12 23:20
 
 ### 변경 요약
