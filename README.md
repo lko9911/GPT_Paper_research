@@ -4,7 +4,7 @@
 
 ## 프로젝트 목적
 
-이 저장소는 multi-material additive manufacturing, functionally graded additive manufacturing, blended FDM, digital material filament, computational design, toolpath optimization, material switching optimization 관련 논문 메타데이터를 주기적으로 수집하고, DOI 링크와 한글 AI 요약을 함께 보여줍니다. 요약은 논문 리뷰에 바로 쓰기 쉽도록 `Topic`, `Problem`, `Method`, `Key Result`, `Takeaway`의 5문항 형식으로 작성합니다.
+이 저장소는 multi-material additive manufacturing, functionally graded additive manufacturing, blended FDM, digital material filament, computational design, toolpath optimization, material switching optimization 관련 논문 메타데이터를 주기적으로 수집하고, DOI 링크와 한글/영문 AI 요약을 함께 보여줍니다. 요약은 논문 리뷰에 바로 쓰기 쉽도록 `Topic`, `Problem`, `Method`, `Key Result`, `Takeaway`의 5문항 형식으로 작성합니다.
 
 현재 자동 조사 범위는 2024년 이후 논문입니다. `SINCE_YEAR` 환경변수로 시작 연도를 바꿀 수 있으며 기본값은 `2024`입니다.
 
@@ -18,9 +18,9 @@
 
 ## 저작권 정책
 
-- 저장하는 데이터는 제목, 저자, 연도, 저널/학회명, DOI, URL, source, category, tag, AI-generated Korean summary로 제한합니다.
+- 저장하는 데이터는 제목, 저자, 연도, 저널/학회명, DOI, URL, source, category, tag, AI-generated Korean/English summary로 제한합니다.
 - API에서 초록을 제공하더라도 `data/papers.json`에는 원문 초록을 저장하지 않습니다.
-- 초록은 새 한글 요약을 생성하기 위한 임시 입력으로만 사용합니다.
+- 초록은 새 한글/영문 요약을 생성하기 위한 임시 입력으로만 사용합니다.
 - 웹사이트에는 출판사 초록, summary, description 문장을 그대로 표시하지 않습니다.
 - 각 논문 카드에는 DOI/source 링크를 표시하여 원문 확인은 공식 링크에서 하도록 안내합니다.
 
@@ -29,7 +29,7 @@
 GitHub 저장소의 `Settings > Secrets and variables > Actions`에서 다음 값을 설정할 수 있습니다.
 
 - `CONTACT_EMAIL`: OpenAlex/Crossref polite pool 및 User-Agent에 사용할 연락 이메일입니다.
-- `OPENAI_API_KEY`: 선택 사항입니다. 있으면 새 논문에 대해 OpenAI API로 5문항 형식의 한글 요약을 생성합니다.
+- `OPENAI_API_KEY`: 선택 사항입니다. 있으면 새 논문에 대해 OpenAI API로 5문항 형식의 한글/영문 요약을 함께 생성합니다.
 - `SEMANTIC_SCHOLAR_API_KEY`: 선택 사항입니다. 있으면 DOI 기반 Semantic Scholar 메타데이터 보강을 시도합니다.
 - `OPENAI_MODEL`: 선택 사항입니다. Repository variable로 설정하며 기본값은 `gpt-4o-mini`입니다.
 
@@ -66,7 +66,7 @@ python -m http.server 8000
 
 ## OpenAI로 기존 논문 전체 재요약
 
-`OPENAI_API_KEY`를 GitHub Actions secret에 설정한 뒤, 기존 논문 요약을 OpenAI 기반 5문항 형식으로 다시 만들 수 있습니다.
+`OPENAI_API_KEY`를 GitHub Actions secret에 설정한 뒤, 기존 논문 요약을 OpenAI 기반 5문항 한글/영문 형식으로 다시 만들 수 있습니다.
 
 1. GitHub 저장소의 `Actions` 탭으로 이동합니다.
 2. `Refresh OpenAI summaries` workflow를 선택합니다.
@@ -79,7 +79,7 @@ refresh_mode: non_qa
 dry_run: false
 ```
 
-현재 논문 수가 약 342편이므로 `max_summaries=400`이면 기존 문단형 요약을 대부분 한 번에 5문항 형식으로 바꿀 수 있습니다. 비용 테스트만 하려면 `max_summaries=5`, `dry_run=true`로 먼저 실행하세요.
+현재 논문 수가 약 342편이므로 `max_summaries=400`이면 기존 문단형 요약 대부분과 영문 GPT 요약이 비어 있는 항목을 한 번에 5문항 형식으로 바꿀 수 있습니다. 비용 테스트만 하려면 `max_summaries=5`, `dry_run=true`로 먼저 실행하세요.
 
 이 workflow는 정기 실행되지 않고 수동 실행만 지원합니다. 따라서 OpenAI 비용이 매시간 반복 발생하지 않습니다.
 
@@ -101,6 +101,7 @@ dry_run: false
   "tags": ["FGAM", "MMAM", "계산설계"],
   "relevance_score": 8,
   "ai_summary_ko": "1. Topic - 이 논문은 무엇을 다루는가? ...\n2. Problem - 어떤 문제나 한계를 해결하려는가? ...\n3. Method - 어떤 방법이나 접근을 사용했는가? ...\n4. Key Result - 가장 중요한 결과는 무엇인가? ...\n5. Takeaway - 그래서 이 논문의 핵심 메시지는 무엇인가? ...",
+  "ai_summary_en": "1. Topic - ...\n2. Problem - ...\n3. Method - ...\n4. Key Result - ...\n5. Takeaway - ...",
   "relevance_note_ko": "...",
   "abstract_used_for_summary": true,
   "raw_abstract_displayed": false,

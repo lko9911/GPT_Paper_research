@@ -225,6 +225,7 @@ def _finalize_record(record: dict[str, Any], today: str) -> dict[str, Any]:
         "tags": record.get("tags", [])[:6],
         "relevance_score": int(record.get("relevance_score", 5)),
         "ai_summary_ko": record.get("ai_summary_ko", ""),
+        "ai_summary_en": record.get("ai_summary_en", ""),
         "relevance_note_ko": record.get("relevance_note_ko", ""),
         "abstract_used_for_summary": bool(record.get("_abstract")),
         "raw_abstract_displayed": False,
@@ -252,7 +253,7 @@ def _merge_existing_record(existing: dict[str, Any], candidate: dict[str, Any], 
     refresh_record = dict(existing)
     refresh_record.update({key: value for key, value in candidate.items() if value})
     summarized = summarize_record(refresh_record, allow_openai=False)
-    for key in ("ai_summary_ko", "relevance_note_ko", "relevance_score", "tags", "categories"):
+    for key in ("ai_summary_ko", "ai_summary_en", "relevance_note_ko", "relevance_score", "tags", "categories"):
         if summarized.get(key):
             existing[key] = summarized[key]
     existing["abstract_used_for_summary"] = bool(candidate.get("_abstract"))

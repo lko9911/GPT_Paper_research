@@ -1,5 +1,38 @@
 # AGENT_LOG
 
+## 2026-06-12 22:09
+
+### 변경 요약
+- 영어 모드도 GPT가 작성한 영문 요약을 사용할 수 있도록 OpenAI 요약 파이프라인을 확장했습니다.
+- 새 OpenAI 요약 결과에 `ai_summary_ko`와 `ai_summary_en`을 함께 생성하고 저장하도록 변경했습니다.
+- 기존 논문 재요약 workflow가 5문항 한글 요약이 이미 있어도 `ai_summary_en`이 비어 있으면 재요약 대상으로 잡도록 조정했습니다.
+
+### 수정/생성한 파일
+- `scripts/summarize.py`: OpenAI 프롬프트가 한글/영문 5문항 요약을 함께 반환하도록 변경하고, `ai_summary_en` 정규화 로직을 추가했습니다.
+- `scripts/update_papers.py`: `data/papers.json` 저장 schema에 `ai_summary_en`을 포함하고, 기존 논문 refresh 시에도 영문 요약을 병합하도록 수정했습니다.
+- `scripts/refresh_openai_summaries.py`: 수동 OpenAI 재요약 대상 판단에 `ai_summary_en` 누락 여부를 포함했습니다.
+- `README.md`: OpenAI 요약이 한글/영문을 함께 생성한다는 점과 schema 예시를 업데이트했습니다.
+- `ARCHITECTURE.md`: 데이터 구조, 파이프라인, 저작권 정책 설명을 `ai_summary_ko`/`ai_summary_en` 기준으로 갱신했습니다.
+- `PROJECT_STATUS.md`: 현재 상태와 다음 작업에 영문 GPT 요약 저장 지원을 반영했습니다.
+- `AGENT_LOG.md`: 이번 영문 GPT 요약 파이프라인 확장 작업을 기록했습니다.
+
+### 구현한 기능
+- 새 논문 또는 수동 재요약 논문에 대해 GPT가 `Topic`, `Problem`, `Method`, `Key Result`, `Takeaway` 형식의 한글/영문 요약을 함께 생성합니다.
+- 영어 UI는 저장된 `ai_summary_en`이 있으면 이를 우선 표시하고, 없는 경우 기존 메타데이터 기반 fallback을 유지합니다.
+
+### 설계 결정
+- 한글 요약을 클라이언트에서 번역하지 않고 서버 측 업데이트 파이프라인에서 `ai_summary_en`을 별도 저장하도록 했습니다. 그래야 영어 모드도 초록을 반영한 고품질 요약을 안정적으로 보여줄 수 있습니다.
+- 정기 수집 workflow에는 기존처럼 새 논문만 요약하게 두고, 전체 기존 논문 재요약은 수동 workflow로 분리해 OpenAI 비용이 매시간 반복되지 않도록 유지했습니다.
+
+### 남은 작업
+- 변경 사항 배포 후 `Refresh OpenAI summaries` workflow를 `max_summaries=1`, `refresh_mode=non_qa`, `dry_run=false`로 실행해 `ai_summary_en` 저장을 1편 테스트합니다.
+- 전체 논문에 영문 GPT 요약을 채우려면 같은 workflow를 더 큰 `max_summaries` 값으로 수동 실행해야 합니다.
+
+### 주의사항
+- API key, secret, token은 로그나 데이터 파일에 기록하지 않습니다.
+- raw abstract는 저장하거나 표시하지 않고, PDF도 다운로드하거나 저장하지 않는 정책을 유지합니다.
+- `ai_summary_en` 생성은 OpenAI API 호출이므로 수동 재요약 실행 시 처리 편수만큼 비용이 발생할 수 있습니다.
+
 ## 2026-06-12 22:06
 
 ### 변경 요약
