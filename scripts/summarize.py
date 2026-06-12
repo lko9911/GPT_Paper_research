@@ -40,6 +40,9 @@ TAG_MAP = {
     "LCE": ["liquid crystal elastomer", "liquid-crystal elastomer", " lce "],
     "4D printing": ["4d printing", "4-d printing", "four-dimensional printing", "shape morphing", "shape-morphing"],
     "Metamaterials": ["metamaterial", "metamaterials", "mechanical metamaterial"],
+    "디지털 제작": ["digital tectonics", "digital craftsmanship", "large-scale additive manufacturing"],
+    "툴패스 전략": ["toolpath", "tool path", "woven toolpath"],
+    "재료 거동": ["material behaviour", "material behavior", "material intelligence"],
     "계산설계": ["computational design", "inverse design", "generative design"],
     "재료분포": ["material distribution", "topology optimization"],
     "툴패스": ["toolpath", "tool path", "slicing"],
@@ -126,8 +129,8 @@ def _fallback_summary(record: dict[str, Any], abstract: str) -> dict[str, Any]:
     score = _score(record, abstract, categories)
     summary = _abstract_based_summary(record, abstract, categories, tags, year, venue)
     note = (
-        f"DM filament, FGAM, computational design 추적 관점에서 "
-        f"{', '.join(tags[:3])} 키워드와 연결되어 관련성 {score}/10로 분류했습니다."
+        f"이 트래커에서는 {', '.join(tags[:3])} 키워드를 기준으로 "
+        f"제조·설계 연구와의 관련성을 {score}/10로 평가했습니다."
     )
     return {
         "ai_summary_ko": summary,
@@ -215,16 +218,86 @@ def _abstract_based_summary(
     )
 
     if abstract:
+        subject = _study_subject(title, text, focus)
+        approach = _study_approach(text, method)
+        contribution = _study_contribution(text, outcome)
         return (
-            f"{title}은(는) {year}년 {venue}에 발표된 연구로, {_object_phrase(focus)} 중심 주제로 다룹니다. "
-            f"초록 내용을 바탕으로 보면 연구는 {_object_phrase(method)} 통해 {outcome}을 검토하며, "
-            "제조·설계 문헌 추적에서 참고할 만한 시사점을 제공합니다."
+            f"{title}은(는) {year}년 {venue}에 발표된 연구로, {subject} "
+            f"{approach}{contribution}"
         )
 
     return (
         f"{title}은(는) {year}년 {venue}에 발표된 항목으로, 공개 메타데이터상 {focus}와 관련됩니다. "
         "초록이 제공되지 않아 제목·venue·키워드만으로 보수적으로 요약했으며, 자세한 내용은 DOI 원문 확인이 필요합니다."
     )
+
+
+def _study_subject(title: str, text: str, focus: str) -> str:
+    if has_terms(text, ["ornament", "large-scale additive manufacturing"]):
+        return "대형 적층제조에서 장식을 표면 장식이 아니라 재료 거동, 공정 흔적, 제작 논리가 드러나는 설계 요소로 해석합니다."
+    if has_terms(text, ["liquid crystal elastomer", "4d printing"]):
+        return "액정 엘라스토머를 4D 프린팅으로 제작해 열이나 자극에 따라 형상이 변하는 구조를 구현합니다."
+    if has_terms(text, ["continuous fiber", "liquid crystal elastomer"]):
+        return "연속섬유 보강과 액정 엘라스토머 프린팅을 결합해 변형 성능과 구조적 강성을 함께 다룹니다."
+    if has_terms(text, ["toolpath", "optimization"]):
+        return "툴패스와 공정 조건을 설계 변수로 삼아 적층제조 결과의 품질과 효율을 개선하는 방법을 다룹니다."
+    if has_terms(text, ["multi-material", "3d printing"]) or has_terms(text, ["multimaterial", "3d printing"]):
+        return "서로 다른 재료를 한 구조 안에 배치하거나 전환하는 다중재료 3D 프린팅 문제를 다룹니다."
+    if has_terms(text, ["functionally graded"]) or has_terms(text, ["graded", "additive manufacturing"]):
+        return "재료 조성이나 물성을 위치에 따라 달리하는 기능성 구배 적층제조를 다룹니다."
+    if has_terms(text, ["robot", "additive manufacturing"]):
+        return "로봇 기반 적층제조에서 경로, 자세, 제작 가능성을 함께 고려하는 제조 문제를 다룹니다."
+    if has_terms(text, ["machine learning"]) or has_terms(text, ["deep learning"]):
+        return "제조 데이터와 학습 기반 모델을 이용해 공정 이해나 설계 자동화를 개선하는 연구입니다."
+    return f"{focus}와 관련된 제조·설계 문제를 구체적인 연구 대상으로 삼습니다."
+
+
+def _study_approach(text: str, method: str) -> str:
+    details = []
+    if has_terms(text, ["case studies"]):
+        details.append("디자인 사례를 비교하고")
+    if has_terms(text, ["agent-based"]):
+        details.append("agent-based 조형 로직을 활용하며")
+    if has_terms(text, ["data-informed"]):
+        details.append("데이터 기반 변조를 적용하고")
+    if has_terms(text, ["woven toolpath"]):
+        details.append("직조형 툴패스 전략을 설계에 통합합니다")
+    if has_terms(text, ["simulation"]):
+        details.append("시뮬레이션으로 거동을 예측합니다")
+    if has_terms(text, ["experiment"]) or has_terms(text, ["fabrication"]):
+        details.append("제작 실험으로 구현 가능성을 확인합니다")
+    if has_terms(text, ["optimization"]):
+        details.append("최적화 절차로 설계안을 탐색합니다")
+    if details:
+        sentence = _join_korean_clauses(details)
+        if sentence.endswith("다") or sentence.endswith("다."):
+            return f"접근 방식의 특징은 {sentence.rstrip('.')}. "
+        return f"접근 방식의 특징은 {sentence}는 점입니다. "
+    return f"{method}을(를) 통해 문제를 분석하고 구현 방향을 제시합니다. "
+
+
+def _study_contribution(text: str, outcome: str) -> str:
+    if has_terms(text, ["toolpath", "material behaviour"]) or has_terms(text, ["toolpath", "material behavior"]):
+        return "핵심 기여는 툴패스와 재료 반응을 단순 제작 수단이 아니라 형태와 공간 구성을 만드는 설계 언어로 연결한 점입니다."
+    if has_terms(text, ["matter", "performance", "application"]):
+        return "핵심 기여는 재료, 성능, 적용 가능성을 하나의 설계 논리 안에서 함께 해석한 점입니다."
+    if has_terms(text, ["mechanical", "performance"]):
+        return "핵심 기여는 프린팅 전략이 기계적 성능과 구조 응답에 미치는 영향을 구체적으로 보여준 점입니다."
+    if has_terms(text, ["accuracy"]) or has_terms(text, ["efficiency"]):
+        return "핵심 기여는 제조 정확도나 공정 효율을 개선할 수 있는 실질적인 설계 기준을 제시한 점입니다."
+    return f"핵심 기여는 {outcome}을(를) 제조·설계 관점에서 해석할 수 있게 한 점입니다."
+
+
+def has_terms(text: str, terms: list[str]) -> bool:
+    return all(term in text for term in terms)
+
+
+def _join_korean_clauses(clauses: list[str]) -> str:
+    if not clauses:
+        return ""
+    if len(clauses) == 1:
+        return clauses[0]
+    return ", ".join(clauses[:-1]) + f" 마지막으로 {clauses[-1]}"
 
 
 def _matched_phrases(text: str, term_phrases: list[tuple[str, str]], limit: int = 3) -> list[str]:

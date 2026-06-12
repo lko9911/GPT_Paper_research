@@ -1,5 +1,39 @@
 # AGENT_LOG
 
+## 2026-06-12 18:48
+
+### 변경 요약
+- 초록 기반 fallback 요약이 “무슨 분야에 속한다”는 식으로 너무 분류 설명처럼 보이던 문제를 개선했습니다.
+- `Material articulation: Toward an ornamental thinking in digital tectonics` 논문의 요약을 연구 대상, 접근 방식, 핵심 기여가 드러나도록 갱신했습니다.
+- venue 카드의 긴 라벨과 `priority` 표현이 어색하게 보이던 UI를 짧고 안정적인 카드 디자인으로 조정했습니다.
+
+### 수정/생성한 파일
+- `scripts/summarize.py`: 초록에서 연구 대상, 접근 방식, 특징/기여를 추론하는 fallback 요약 함수를 추가하고 관련성 설명 문구를 완화했습니다.
+- `data/papers.json`: DOI `10.21606/drs.2026.2363` 항목의 요약, 관련성 설명, 태그를 갱신했습니다.
+- `assets/app.js`: venue 라벨을 `Core`, `2 or fewer papers`처럼 짧게 바꾸고 venue 카드 숫자 마크업을 분리했습니다.
+- `assets/style.css`: venue 카드 숫자와 라벨 칩의 간격, 크기, 다크모드 대비를 조정했습니다.
+- `index.html`: CSS/JS cache-busting version을 갱신했습니다.
+- `AGENT_LOG.md`: 이번 요약 품질 및 UI 개선 작업을 기록했습니다.
+
+### 구현한 기능
+- fallback 요약이 초록 원문을 복사하지 않고, 논문의 연구 내용과 특징을 새 한국어 문장으로 설명하도록 개선했습니다.
+- 특정 DRS 논문은 “대형 적층제조에서 장식을 재료 거동, 공정 흔적, 제작 논리가 드러나는 설계 요소로 해석한다”는 내용 중심으로 표시됩니다.
+- venue board의 `priority` 라벨은 `Core`로 바꾸고, 기타 게재지 라벨은 짧은 표현으로 줄였습니다.
+
+### 설계 결정
+- OpenAlex가 제공하는 초록은 요약 입력으로만 사용하고 `data/papers.json`에는 저장하지 않았습니다.
+- PDF 다운로드나 출판사 페이지 크롤링은 수행하지 않았습니다.
+- 태그는 한국어 모드에서 자연스럽게 보이도록 한국어 중심으로 저장하고, 영어 모드에서는 `assets/app.js` 번역 테이블로 표시되게 했습니다.
+
+### 남은 작업
+- 기존에 생성된 다른 generic 요약들도 같은 방식으로 일괄 갱신하면 전체 카드 품질이 좋아질 수 있습니다.
+- 현재 환경에는 Node가 없어 `node --check assets/app.js`를 실행하지 못했습니다. GitHub Pages 배포 후 브라우저에서 최종 UI 확인을 권장합니다.
+
+### 주의사항
+- raw abstract는 계속 저장/표시하지 않습니다.
+- API key, secret, token은 기록하지 않았습니다.
+- fallback 요약은 모델 API 비용 없이 동작하지만, 초록이 없는 논문은 여전히 제목/메타데이터 기반의 보수적 요약이 될 수 있습니다.
+
 ## 2026-06-12 18:43
 
 ### 변경 요약
