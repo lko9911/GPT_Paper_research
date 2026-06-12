@@ -66,6 +66,15 @@ TAG_MAP = {
         "active learning",
         "bayesian optimization",
     ],
+    "Digital Twins": [
+        "digital twin",
+        "digital twins",
+        "virtual twin",
+        "cyber-physical",
+        "cyber physical",
+        "process twin",
+        "machine twin",
+    ],
     "Manufacturing automation": [
         "manufacturing automation",
         "automated manufacturing",
@@ -123,6 +132,10 @@ TAG_ALIASES = {
     "Self-driving lab": "Self-driving Labs",
     "Self-driving Labs": "Self-driving Labs",
     "Closed-loop experiment": "Self-driving Labs",
+    "Digital twin": "Digital Twins",
+    "Digital twins": "Digital Twins",
+    "Digital Twins": "Digital Twins",
+    "Cyber-physical": "Digital Twins",
     "4D Printing": "4D printing",
     "Active Materials": "Active materials",
 }
