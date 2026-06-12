@@ -52,10 +52,10 @@ const UI_TEXT = {
     noticeSoft:
       "본 사이트의 요약은 공개된 논문 메타데이터 및 초록을 바탕으로 AI가 새로 작성한 한글 요약입니다. 원문 및 정확한 내용은 DOI 링크를 통해 확인하세요.",
     sideTitle: "분야 및 서브 토픽",
-    totalPapers: "큐레이션 논문",
-    subtopicCount: "전체 후보",
-    latestUpdate: "현재 / 갱신",
-    weekAdded: "숨김/아카이브",
+    totalPapers: "표시 논문",
+    subtopicCount: "수집 후보",
+    latestUpdate: "마지막 수집",
+    weekAdded: "숨긴 후보",
     search: "검색",
     searchPlaceholder: "키워드, 저자, 태그, 요약 검색",
     field: "분야",
@@ -101,10 +101,10 @@ const UI_TEXT = {
     noticeSoft:
       "Summaries on this site are newly written AI summaries based on public paper metadata and abstracts. Check the DOI link for the original and authoritative content.",
     sideTitle: "Fields and Subtopics",
-    totalPapers: "Curated Papers",
-    subtopicCount: "Raw Candidates",
-    latestUpdate: "Now / Updated",
-    weekAdded: "Archived Hidden",
+    totalPapers: "Shown Papers",
+    subtopicCount: "Collected Candidates",
+    latestUpdate: "Last Collection",
+    weekAdded: "Hidden Candidates",
     search: "Search",
     searchPlaceholder: "Search keywords, authors, tags, summaries",
     field: "Field",
@@ -688,19 +688,14 @@ function updateStats() {
 }
 
 function renderUpdatedStat(lastRunAt, fallbackDate) {
-  const now = formatRunTime(new Date().toISOString());
   const lastRun = formatRunTime(lastRunAt);
   els.updated.classList.add("stat-datetime");
-  if (!now) {
+  if (!lastRun) {
     els.updated.textContent = fallbackDate || "-";
     return;
   }
-  const updatedText = lastRun
-    ? state.language === "ko"
-      ? `수집 ${lastRun.time} KST`
-      : `Updated ${lastRun.time} KST`
-    : fallbackDate || "";
-  els.updated.innerHTML = `${escapeHtml(now.date)}<small>${escapeHtml(now.time)} KST${updatedText ? ` · ${escapeHtml(updatedText)}` : ""}</small>`;
+  const date = state.language === "ko" ? lastRun.date : lastRun.date;
+  els.updated.innerHTML = `${escapeHtml(date)}<small>${escapeHtml(lastRun.time)} KST</small>`;
 }
 
 function applyFilters() {
