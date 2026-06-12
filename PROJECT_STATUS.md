@@ -37,6 +37,7 @@ GitHub Pages에서 동작 가능한 정적 논문 큐레이션 사이트와 GitH
 - OpenAI API 선택적 요약 생성
 - OpenAI key가 없을 때 fallback 한글 요약 생성
 - 논문 요약을 5문항 Q/A 형식으로 생성 및 렌더링
+- 기존 논문을 OpenAI로 일괄 재요약하는 수동 workflow
 - Semantic Scholar API key가 있을 때 선택적 보강
 - GitHub Actions 매시 실행 및 수동 실행
 - 변경된 `data/papers.json`만 자동 커밋
@@ -49,6 +50,7 @@ GitHub Pages에서 동작 가능한 정적 논문 큐레이션 사이트와 GitH
 - 관련성 점수와 분류는 OpenAI가 없을 때 휴리스틱 기반입니다.
 - Source 열기 버튼은 현재 DOI URL을 사용합니다. 향후 API별 landing URL을 별도로 저장하면 더 정확해질 수 있습니다.
 - API rate limit 배려는 기본 sleep, User-Agent/mailto, OpenAlex 429 retry/backoff 중심입니다. 더 큰 수집에는 실행 간격과 page 예산 조정이 필요합니다.
+- 전체 342편 OpenAI 재요약은 자동 정기 실행이 아니라 `Refresh OpenAI summaries` 수동 workflow로만 실행됩니다.
 
 ## 아직 구현되지 않은 기능
 
@@ -75,6 +77,7 @@ GitHub Pages에서 동작 가능한 정적 논문 큐레이션 사이트와 GitH
 4. OpenAI 요약 품질을 보고 프롬프트와 카테고리 분류를 개선합니다.
 5. GitHub Pages 배포 후 모바일 화면과 citation 복사 동작을 브라우저에서 확인합니다.
 6. Nature/Science/Additive Manufacturing 논문을 더 정확히 모으려면 OpenAlex source ID 기반 venue-specific 검색을 추가합니다.
+7. 기존 전체 논문을 5문항 형식으로 통일하려면 `Refresh OpenAI summaries` workflow를 `max_summaries=400`, `refresh_mode=non_qa`, `dry_run=false`로 수동 실행합니다.
 ## 2026-06-12 추가 상태
 
 - 논문 총량 100편 제한을 제거했고, 현재 `data/papers.json`에는 145편이 저장되어 있습니다.

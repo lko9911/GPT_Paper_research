@@ -1,0 +1,93 @@
+name: Refresh OpenAI summaries
+
+on:
+  workflow_dispatch:
+    inputs:
+      max_summaries:
+        description: "Maximum papers to refresh in this run. Use 400 for the current full library."
+        required: true
+        default: "25"
+      refresh_mode:
+        description: "non_qa refreshes only summaries not already in 5-question format; all refreshes every paper."
+        required: true
+        default: "non_qa"
+        type: choice
+        options:
+          - non_qa
+          - all
+          - missing
+      dry_run:
+        description: "Run without writing data changes."
+        required: true
+        default: "false"
+        type: choice
+        options:
+          - "false"
+          - "true"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: openai-summary-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: python -m pip install --upgrade pip && pip install -r requirements.txt
+
+      - name: Refresh summaries with OpenAI
+        env:
+          CONTACT_EMAIL: ${{ secrets.CONTACT_EMAIL }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-4o-mini' }}
+          MAX_OPENAI_SUMMARIES: ${{ inputs.max_summaries }}
+          REFRESH_MODE: ${{ inputs.refresh_mode }}
+          DRY_RUN: ${{ inputs.dry_run }}
+          API_SLEEP_SECONDS: "1.0"
+          OPENAI_REFRESH_SLEEP_SECONDS: "0.5"
+        run: python scripts/refresh_openai_summaries.py
+
+      - name: Commit refreshed summaries
+        if: ${{ inputs.dry_run == 'false' }}
+        run: |
+          if git diff --quiet -- data/papers.json data/site_meta.json; then
+            echo "No summary changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/papers.json data/site_meta.json
+          git commit -m "Refresh OpenAI paper summaries"
+          git push
+
+      - name: Setup Pages
+        if: ${{ inputs.dry_run == 'false' }}
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        if: ${{ inputs.dry_run == 'false' }}
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      - name: Deploy to GitHub Pages
+        if: ${{ inputs.dry_run == 'false' }}
+        id: deployment
+        uses: actions/deploy-pages@v4

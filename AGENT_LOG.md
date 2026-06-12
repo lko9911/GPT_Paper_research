@@ -1,5 +1,41 @@
 # AGENT_LOG
 
+## 2026-06-12 21:37
+
+### 변경 요약
+- 사용자가 OpenAI API key 준비를 완료했다고 알려 기존 논문 전체를 OpenAI 기반 5문항 요약으로 재생성할 수 있는 수동 batch 경로를 추가했습니다.
+- 정기 수집 workflow와 OpenAI 전체 재요약 workflow를 분리해 비용이 매시간 반복 발생하지 않도록 했습니다.
+- 한 번에 처리할 논문 수, 재요약 대상, dry-run 여부를 workflow input으로 제어하도록 했습니다.
+
+### 수정/생성한 파일
+- `scripts/summarize.py`: 요약 생성 결과가 OpenAI인지 fallback인지 임시 `_summary_provider`로 표시하도록 했습니다.
+- `scripts/refresh_openai_summaries.py`: 기존 `data/papers.json` 항목을 OpenAI로 재요약하는 수동 batch 스크립트를 추가했습니다.
+- `.github/workflows/refresh-openai-summaries.yml`: `workflow_dispatch` 전용 OpenAI 재요약 workflow를 추가했습니다.
+- `README.md`: GitHub Actions에서 전체 OpenAI 재요약 workflow를 실행하는 방법을 문서화했습니다.
+- `ARCHITECTURE.md`: 수동 OpenAI 재요약 파이프라인과 환경변수를 문서화했습니다.
+- `PROJECT_STATUS.md`: 완료 기능과 다음 작업에 OpenAI batch 재요약 workflow를 반영했습니다.
+- `AGENT_LOG.md`: 이번 OpenAI batch 재요약 기능 추가를 기록했습니다.
+
+### 구현한 기능
+- `Refresh OpenAI summaries` workflow에서 `max_summaries`, `refresh_mode`, `dry_run`을 입력받아 기존 논문을 재요약할 수 있습니다.
+- `refresh_mode=non_qa`는 아직 5문항 형식이 아닌 논문만 재요약합니다.
+- `max_summaries=400`을 사용하면 현재 342편 전체를 한 번에 처리할 수 있습니다.
+- OpenAI key가 없으면 스크립트는 실패하지 않고 재요약을 건너뜁니다.
+
+### 설계 결정
+- 비용 안전성을 위해 이 작업은 cron에 연결하지 않고 수동 실행 전용 workflow로 분리했습니다.
+- 초록은 OpenAlex DOI endpoint에서 임시로 읽어 요약 입력으로만 사용하고 `data/papers.json`에는 저장하지 않습니다.
+- OpenAI 호출이 실패해 fallback으로 내려간 항목은 OpenAI 재요약 성공으로 집계하지 않도록 `_summary_provider`를 사용했습니다.
+
+### 남은 작업
+- GitHub Actions에서 `Refresh OpenAI summaries`를 수동 실행해 실제 342편 재요약을 수행해야 합니다.
+- 실행 후 공개 `data/papers.json`에서 5문항 요약 개수가 전체 논문 수와 맞는지 확인해야 합니다.
+
+### 주의사항
+- API key, secret, token은 로그에 기록하지 않았습니다.
+- 이 workflow를 `max_summaries=400`, `dry_run=false`로 실행하면 OpenAI API 비용이 발생합니다.
+- PDF 다운로드나 출판사 웹사이트 크롤링은 수행하지 않습니다.
+
 ## 2026-06-12 21:12
 
 ### 변경 요약
