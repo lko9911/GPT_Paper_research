@@ -282,6 +282,19 @@ h1 {
   font-weight: 850;
 }
 
+.stats span.stat-datetime {
+  font-size: 1.2rem;
+  line-height: 1.1;
+}
+
+.stats span.stat-datetime small {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 820;
+}
+
 .stats strong {
   color: var(--muted);
   font-size: 0.84rem;
