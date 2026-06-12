@@ -1,5 +1,35 @@
 # AGENT_LOG
 
+## 2026-06-12 18:12
+
+### 변경 요약
+- 논문 카드 상단에 `ICLR 2026`, `arXiv 2025`, `Nat. Commun. 2024`처럼 게재지/플랫폼과 연도를 함께 보여주는 publication label을 추가했습니다.
+- 기존 `venue`와 `year` 메타데이터를 기반으로 표시용 라벨을 생성하며, 원본 venue 정보는 카드 meta 줄에 계속 표시합니다.
+
+### 수정/생성한 파일
+- `assets/app.js`: `formatPublicationLabel()`을 추가하고, 카드 상단 첫 badge가 연도만이 아니라 축약 venue + 연도를 표시하도록 변경했습니다.
+- `assets/style.css`: publication label 전용 스타일과 다크 모드 대비 스타일을 추가했습니다.
+- `index.html`: CSS/JS cache-busting version을 갱신했습니다.
+- `AGENT_LOG.md`: 이번 UI 표시 변경 내용을 기록했습니다.
+
+### 구현한 기능
+- arXiv 계열 venue는 `arXiv 2024`처럼 표시합니다.
+- ICLR, ICML, NeurIPS, CVPR, ICRA, IROS 같은 주요 conference venue가 데이터에 들어오면 축약명 + 연도로 표시합니다.
+- Nature Communications, Additive Manufacturing 등 기존 주요 저널도 `Nat. Commun. 2025`, `Addit. Manuf. 2026`처럼 compact하게 표시합니다.
+- venue 문자열이 정확히 일치하지 않아도 `arxiv`, `learning representations`, `neurips` 등 주요 패턴을 부분 매칭해 축약합니다.
+
+### 설계 결정
+- `data/papers.json` schema를 바꾸지 않고 프론트엔드에서 표시용 라벨을 계산했습니다. 기존 자동 수집 파이프라인과 중복 제거 로직에 영향을 주지 않기 위해서입니다.
+- 원문 venue 문자열은 보존하고, 카드 상단에만 읽기 쉬운 축약 라벨을 추가했습니다.
+
+### 남은 작업
+- 필요하면 venue 축약 사전에 `SIGGRAPH`, `CHI`, `RSS`, `CoRL`, `T-RO`, `RA-L` 등을 추가할 수 있습니다.
+- 학회명 normalization을 Python 수집 단계에서도 저장 필드로 만들지 여부는 추후 결정할 수 있습니다.
+
+### 주의사항
+- 이번 변경은 공개 메타데이터의 표시 방식만 바꾸며, 출판사 초록/PDF 저장 정책에는 영향을 주지 않습니다.
+- API key, secret, token은 기록하지 않았습니다.
+
 ## 2026-06-12 17:56
 
 ### 변경 요약
