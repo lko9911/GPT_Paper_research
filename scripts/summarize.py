@@ -41,26 +41,59 @@ TAG_MAP = {
     "LCE": ["liquid crystal elastomer", "liquid-crystal elastomer", " lce "],
     "4D printing": ["4d printing", "4-d printing", "four-dimensional printing", "shape morphing", "shape-morphing"],
     "Metamaterials": ["metamaterial", "metamaterials", "mechanical metamaterial"],
-    "디지털 제작": ["digital tectonics", "digital craftsmanship", "large-scale additive manufacturing"],
-    "툴패스 전략": ["toolpath", "tool path", "woven toolpath"],
-    "재료 거동": ["material behaviour", "material behavior", "material intelligence"],
-    "계산설계": ["computational design", "inverse design", "generative design"],
-    "재료분포": ["material distribution", "topology optimization"],
-    "툴패스": ["toolpath", "tool path", "slicing"],
-    "퍼지 감소": ["purge", "material switching", "waste reduction"],
-    "경로계획": ["path planning", "graph search", "routing"],
-    "AI/ML": ["machine learning", "deep learning", "neural", "artificial intelligence"],
+    "Digital fabrication": ["digital tectonics", "digital craftsmanship", "large-scale additive manufacturing"],
+    "Toolpath strategy": ["toolpath", "tool path", "woven toolpath", "slicing"],
+    "Material behavior": ["material behaviour", "material behavior", "material intelligence"],
+    "Computational design": ["computational design", "inverse design", "generative design"],
+    "Material distribution": ["material distribution", "topology optimization"],
+    "Material switching": ["purge", "material switching", "waste reduction"],
+    "Path planning": ["path planning", "graph search", "routing"],
+    "Machine learning": ["machine learning", "deep learning", "neural", "artificial intelligence"],
+    "DLP": ["dlp", "digital light processing", "vat photopolymerization", "vat photopolymerisation"],
+    "FDM/Material extrusion": ["fdm", "fused deposition", "material extrusion", "filament"],
+    "Robotic AM": ["robotic additive manufacturing", "robot-assisted manufacturing", "robotic am"],
+    "Manufacturing automation": ["manufacturing automation", "automated manufacturing", "automation"],
+    "Process optimization": ["process optimization", "process optimisation", "parameter optimization", "parameter optimisation"],
 }
 
 TAG_CATEGORY_ALIASES = {
-    "툴패스": "툴패스 계획",
-    "경로계획": "그래프 탐색 / 경로 계획 알고리즘",
-    "재료분포": "재료분포 최적화",
-    "퍼지 감소": "재료 전환 / 퍼지 감소",
-    "계산설계": "계산설계",
+    "Toolpath strategy": "툴패스 계획",
+    "Path planning": "그래프 탐색 / 경로 계획 알고리즘",
+    "Material distribution": "재료분포 최적화",
+    "Material switching": "재료 전환 / 퍼지 감소",
+    "Computational design": "계산설계",
     "MMAM": "다중재료 적층제조",
     "FGAM": "기능성 구배 적층제조",
-    "AI/ML": "적층제조를 위한 AI 및 머신러닝",
+    "Machine learning": "적층제조를 위한 AI 및 머신러닝",
+}
+
+GENERIC_TAGS = {"적층제조", "문헌추적", "메타데이터", "3D 프린팅"}
+
+TAG_ALIASES = {
+    "다중재료": "MMAM",
+    "다중 재료": "MMAM",
+    "기능성 구배": "FGAM",
+    "디지털 제작": "Digital fabrication",
+    "툴패스 전략": "Toolpath strategy",
+    "툴패스": "Toolpath strategy",
+    "Toolpath": "Toolpath strategy",
+    "Toolpath planning": "Toolpath strategy",
+    "재료 거동": "Material behavior",
+    "계산설계": "Computational design",
+    "Computational Design": "Computational design",
+    "재료분포": "Material distribution",
+    "Material Distribution": "Material distribution",
+    "퍼지 감소": "Material switching",
+    "경로계획": "Path planning",
+    "Path Planning": "Path planning",
+    "AI/ML": "Machine learning",
+    "ML": "Machine learning",
+    "Machine Learning": "Machine learning",
+    "메타물질": "Metamaterials",
+    "FDM": "FDM/Material extrusion",
+    "Material extrusion": "FDM/Material extrusion",
+    "4D Printing": "4D printing",
+    "Active Materials": "Active materials",
 }
 
 
@@ -413,7 +446,7 @@ def _tags(record: dict[str, Any], abstract: str, categories: list[str]) -> list[
     for category in categories:
         if category not in tags and len(tags) < 6:
             tags.append(category)
-    return _dedupe_tags(tags, categories) or ["적층제조", "문헌추적", "메타데이터"]
+    return _dedupe_tags(tags, categories) or _fallback_tags(text, categories)
 
 
 def _score(record: dict[str, Any], abstract: str, categories: list[str]) -> int:
@@ -455,7 +488,7 @@ def _sanitize_generated(payload: dict[str, Any]) -> dict[str, Any]:
         "ai_summary_en": _normalize_generated_summary(payload.get("ai_summary_en"), _en_summary_labels()),
         "relevance_score": max(1, min(10, score)),
         "relevance_note_ko": str(payload.get("relevance_note_ko", "")).strip(),
-        "tags": _dedupe_tags(tags, categories)[:6] or ["적층제조", "문헌추적"],
+        "tags": _dedupe_tags(tags, categories)[:6] or _fallback_tags("", categories),
         "categories": categories or ["다중재료 적층제조"],
     }
 
@@ -517,7 +550,8 @@ def _dedupe_tags(tags: list[str], categories: list[str]) -> list[str]:
     seen: set[str] = set()
     cleaned = []
     for tag in tags:
-        if not tag or tag in seen:
+        tag = _canonical_tag(tag)
+        if not tag or tag in GENERIC_TAGS or tag in seen:
             continue
         seen.add(tag)
         if tag in category_set:
@@ -527,6 +561,33 @@ def _dedupe_tags(tags: list[str], categories: list[str]) -> list[str]:
             continue
         cleaned.append(tag)
     return cleaned
+
+
+def _canonical_tag(tag: str) -> str:
+    value = str(tag or "").strip()
+    if not value:
+        return ""
+    return TAG_ALIASES.get(value, value)
+
+
+def _fallback_tags(text: str, categories: list[str]) -> list[str]:
+    if "툴패스 계획" in categories:
+        return ["Toolpath strategy"]
+    if "그래프 탐색 / 경로 계획 알고리즘" in categories:
+        return ["Path planning"]
+    if "재료분포 최적화" in categories:
+        return ["Material distribution"]
+    if "재료 전환 / 퍼지 감소" in categories:
+        return ["Material switching"]
+    if "계산설계" in categories:
+        return ["Computational design"]
+    if "기능성 구배 적층제조" in categories:
+        return ["FGAM"]
+    if "적층제조를 위한 AI 및 머신러닝" in categories:
+        return ["Machine learning"]
+    if "다중재료 적층제조" in categories:
+        return ["MMAM"]
+    return ["Additive manufacturing"]
 
 
 def _extract_json(content: str) -> str:

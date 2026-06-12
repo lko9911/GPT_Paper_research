@@ -35,11 +35,11 @@ const FEATURED_TOPICS = [
   "DM filament",
   "DLP",
   "4D printing",
-  "계산설계",
-  "재료분포",
-  "툴패스",
-  "퍼지 감소",
-  "AI/ML",
+  "Computational design",
+  "Material distribution",
+  "Toolpath strategy",
+  "Material switching",
+  "Machine learning",
 ];
 
 const TARGET_VENUES = [
@@ -196,15 +196,72 @@ const LABEL_TRANSLATIONS = {
   },
 };
 
+const TAG_LABELS = {
+  ko: {
+    "Additive manufacturing": "적층제조",
+    MMAM: "다중재료",
+    FGAM: "기능성 구배",
+    "DM filament": "DM filament",
+    "FDM/Material extrusion": "FDM/재료압출",
+    DLP: "DLP",
+    LCE: "LCE",
+    "4D printing": "4D 프린팅",
+    Metamaterials: "메타물질",
+    "Active materials": "능동 재료",
+    "Digital fabrication": "디지털 제작",
+    "Toolpath strategy": "툴패스 전략",
+    "Material behavior": "재료 거동",
+    "Computational design": "계산설계",
+    "Material distribution": "재료분포",
+    "Material switching": "재료전환",
+    "Path planning": "경로계획",
+    "Process optimization": "공정 최적화",
+    "Manufacturing automation": "제조 자동화",
+    "Design automation": "설계 자동화",
+    "Machine learning": "머신러닝",
+    "Robotic AM": "로봇 AM",
+    Honeycomb: "허니컴",
+    "Energy absorption": "에너지 흡수",
+    Reusability: "재사용성",
+  },
+  en: {
+    "Additive manufacturing": "Additive Manufacturing",
+    MMAM: "Multi-material AM",
+    FGAM: "Functionally Graded AM",
+    "DM filament": "DM Filament",
+    "FDM/Material extrusion": "FDM / Material Extrusion",
+    DLP: "DLP",
+    LCE: "LCE",
+    "4D printing": "4D Printing",
+    Metamaterials: "Metamaterials",
+    "Active materials": "Active Materials",
+    "Digital fabrication": "Digital Fabrication",
+    "Toolpath strategy": "Toolpath Strategy",
+    "Material behavior": "Material Behavior",
+    "Computational design": "Computational Design",
+    "Material distribution": "Material Distribution",
+    "Material switching": "Material Switching",
+    "Path planning": "Path Planning",
+    "Process optimization": "Process Optimization",
+    "Manufacturing automation": "Manufacturing Automation",
+    "Design automation": "Design Automation",
+    "Machine learning": "Machine Learning",
+    "Robotic AM": "Robotic AM",
+    Honeycomb: "Honeycomb",
+    "Energy absorption": "Energy Absorption",
+    Reusability: "Reusability",
+  },
+};
+
 const TAG_CATEGORY_ALIASES = {
-  툴패스: "툴패스 계획",
-  경로계획: "그래프 탐색 / 경로 계획 알고리즘",
-  재료분포: "재료분포 최적화",
-  "퍼지 감소": "재료 전환 / 퍼지 감소",
-  계산설계: "계산설계",
+  "Toolpath strategy": "툴패스 계획",
+  "Path planning": "그래프 탐색 / 경로 계획 알고리즘",
+  "Material distribution": "재료분포 최적화",
+  "Material switching": "재료 전환 / 퍼지 감소",
+  "Computational design": "계산설계",
   MMAM: "다중재료 적층제조",
   FGAM: "기능성 구배 적층제조",
-  "AI/ML": "적층제조를 위한 AI 및 머신러닝",
+  "Machine learning": "적층제조를 위한 AI 및 머신러닝",
 };
 
 const DEFAULT_THEME = "dark";
@@ -392,7 +449,7 @@ function buildFilters() {
   state.papers.forEach((paper) => {
     fields.add(deriveField(paper));
     visibleTags(paper).forEach((tag) => tags.add(tag));
-    deriveSubtopics(paper).forEach((subtopic) => tags.add(subtopic));
+    deriveSubtopics(paper).forEach((subtopic) => tags.add(canonicalTopicLabel(subtopic)));
     venues.add(normalizeVenue(paper.venue));
     if (paper.year) years.add(String(paper.year));
   });
@@ -653,7 +710,7 @@ function otherVenueCard(paperCount, venueCount) {
 }
 
 function updateStats() {
-  const subtopics = new Set(flatten(state.papers.map((paper) => deriveSubtopics(paper))));
+  const subtopics = new Set(flatten(state.papers.map((paper) => deriveSubtopics(paper).map(canonicalTopicLabel))));
   const updatedDates = state.papers
     .map((paper) => paper.last_updated || paper.first_added)
     .filter(Boolean)
@@ -705,6 +762,7 @@ function applyFilters() {
     const paperTags = paper.tags || [];
     const paperVisibleTags = visibleTags(paper);
     const paperSubtopics = deriveSubtopics(paper);
+    const paperCanonicalTags = [...paperTags, ...paperVisibleTags, ...paperSubtopics].map(canonicalTopicLabel);
     const paperVenue = normalizeVenue(paper.venue);
     const paperField = deriveField(paper);
     const haystack = normalize(
@@ -724,13 +782,13 @@ function applyFilters() {
 
     const matchesQuery = !query || haystack.includes(query);
     const matchesCategory = !category || paperField === category;
-    const matchesTag = !tag || paperTags.includes(tag) || paperVisibleTags.includes(tag) || paperSubtopics.includes(tag);
+    const matchesTag = !tag || paperCanonicalTags.includes(canonicalTopicLabel(tag));
     const matchesVenue = !venue || paperVenue === venue;
     const matchesTarget = !state.activeTargetVenue || matchesTargetVenue(paperVenue, state.activeTargetVenue);
     const matchesVenueGroup = !state.activeVenueGroup || isOtherVenuePaper(paper);
     const matchesTopic =
       !state.activeTopic ||
-      paperTags.includes(state.activeTopic) ||
+      paperCanonicalTags.includes(canonicalTopicLabel(state.activeTopic)) ||
       paperCategories.includes(state.activeTopic) ||
       paperSubtopics.includes(state.activeTopic);
     const matchesSubtopic = !state.activeSubtopic || paperMatchesSidebarSubtopic(paper, paperField, state.activeSubtopic);
@@ -1066,17 +1124,24 @@ function canonicalTopicLabel(tag) {
   if (hasAny(text, ["fdm", "fused deposition", "material extrusion"])) return "FDM/Material extrusion";
   if (hasAny(text, ["dlp", "digital light processing", "vat photopolymerization", "vat photopolymerisation", "stereolithography", "sla"])) return "DLP";
   if (hasAny(text, ["lce", "liquid crystal elastomer", "liquid-crystal elastomer"])) return "LCE";
-  if (hasAny(text, ["metamaterial", "metamaterials", "mechanical metamaterial", "메타물질"])) return "메타물질";
+  if (hasAny(text, ["metamaterial", "metamaterials", "mechanical metamaterial", "메타물질"])) return "Metamaterials";
   if (hasAny(text, ["4d printing", "4d printed", "4d-printed", "4d print", "4d 프린팅"])) return "4D printing";
-  if (hasAny(text, ["toolpath", "툴패스", "툴패스 전략"])) return "Toolpath";
-  if (hasAny(text, ["path planning", "trajectory", "graph search", "경로계획", "경로 계획", "그래프 탐색"])) return "Path Planning";
-  if (hasAny(text, ["process optimization", "process optimisation", "parameter optimization", "parameter optimisation", "공정 최적화"])) return "Process Optimization";
-  if (hasAny(text, ["manufacturing automation", "automation", "automated", "제조 자동화"])) return "Manufacturing Automation";
-  if (hasAny(text, ["design automation", "computational design", "generative design", "topology optimization", "계산설계", "설계 자동화"])) return "Design Automation";
-  if (hasAny(text, ["machine learning", "deep learning", "reinforcement learning", "ai/ml", "머신러닝", "인공지능"])) return "AI/ML";
+  if (hasAny(text, ["active material", "active materials", "actuator", "actuation", "능동 재료"])) return "Active materials";
+  if (hasAny(text, ["digital fabrication", "digital tectonics", "digital craftsmanship", "디지털 제작"])) return "Digital fabrication";
+  if (hasAny(text, ["toolpath strategy", "toolpath", "툴패스", "툴패스 전략"])) return "Toolpath strategy";
+  if (hasAny(text, ["material behavior", "material behaviour", "material intelligence", "재료 거동"])) return "Material behavior";
+  if (hasAny(text, ["path planning", "trajectory", "graph search", "경로계획", "경로 계획", "그래프 탐색"])) return "Path planning";
+  if (hasAny(text, ["process optimization", "process optimisation", "parameter optimization", "parameter optimisation", "공정 최적화"])) return "Process optimization";
+  if (hasAny(text, ["manufacturing automation", "automation", "automated", "제조 자동화"])) return "Manufacturing automation";
+  if (hasAny(text, ["design automation", "computational design", "generative design", "topology optimization", "계산설계", "설계 자동화"])) return "Design automation";
+  if (hasAny(text, ["machine learning", "deep learning", "reinforcement learning", "ai/ml", "머신러닝", "인공지능"])) return "Machine learning";
   if (hasAny(text, ["review", "survey", "리뷰", "서베이"])) return "Review";
-  if (hasAny(text, ["material distribution", "재료분포", "재료 분포"])) return "Material Distribution";
-  if (hasAny(text, ["material switching", "purge", "재료 전환", "퍼지"])) return "Material Switching";
+  if (hasAny(text, ["material distribution", "재료분포", "재료 분포"])) return "Material distribution";
+  if (hasAny(text, ["material switching", "purge", "재료 전환", "퍼지"])) return "Material switching";
+  if (hasAny(text, ["honeycomb", "벌집"])) return "Honeycomb";
+  if (hasAny(text, ["energy absorption", "energy dissipation", "에너지 소산", "에너지 흡수"])) return "Energy absorption";
+  if (hasAny(text, ["reusable", "reusability", "재사용"])) return "Reusability";
+  if (hasAny(text, ["additive manufacturing", "3d printing", "3d 프린팅", "적층제조"])) return "Additive manufacturing";
   return value;
 }
 
@@ -1087,14 +1152,18 @@ function normalizeTopicKey(tag) {
 function visibleTags(paper) {
   const categories = new Set(paper.categories || []);
   const seen = new Set();
-  return (paper.tags || []).filter((tag) => {
-    if (!tag || seen.has(tag)) return false;
-    seen.add(tag);
-    if (categories.has(tag)) return false;
-    const aliasCategory = TAG_CATEGORY_ALIASES[tag];
+  const cleaned = [];
+  (paper.tags || []).forEach((tag) => {
+    const canonical = canonicalTopicLabel(tag);
+    const key = normalizeTopicKey(canonical);
+    if (!canonical || seen.has(key)) return;
+    seen.add(key);
+    if (categories.has(canonical)) return;
+    const aliasCategory = TAG_CATEGORY_ALIASES[canonical];
     if (aliasCategory && categories.has(aliasCategory)) return false;
-    return true;
+    cleaned.push(canonical);
   });
+  return cleaned;
 }
 
 function buildCitation(paper) {
@@ -1284,6 +1353,9 @@ function t(key) {
 }
 
 function displayLabel(value) {
+  const canonical = canonicalTopicLabel(value);
+  const tagLabel = TAG_LABELS[state.language] && TAG_LABELS[state.language][canonical];
+  if (tagLabel) return tagLabel;
   if (state.language === "ko") return value;
   return (LABEL_TRANSLATIONS.en && LABEL_TRANSLATIONS.en[value]) || value;
 }
