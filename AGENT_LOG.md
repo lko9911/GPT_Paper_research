@@ -1,5 +1,31 @@
 # AGENT_LOG
 
+## 2026-06-12 19:41
+
+### 변경 요약
+- venue 섹션의 설명 문구와 display rule 문구를 제거했습니다.
+- UI가 충분히 카드/그룹 구조로 의미를 전달하므로 중복 설명을 줄였습니다.
+
+### 수정/생성한 파일
+- `index.html`: venue 섹션 header의 설명 paragraph를 제거하고 cache-busting version을 갱신했습니다.
+- `assets/app.js`: `venuesDescription`, `venueRule` 텍스트와 해당 문구 렌더링/언어 전환 업데이트를 제거했습니다.
+- `assets/style.css`: 더 이상 사용하지 않는 `.venue-rule` 스타일과 다크 모드 참조를 제거했습니다.
+- `AGENT_LOG.md`: 이번 venue 설명 문구 제거 작업을 기록했습니다.
+
+### 구현한 기능
+- `Core venues and journals with at least two collected papers are shown individually; the rest are grouped as Others.` 문구가 더 이상 표시되지 않습니다.
+- `Display rule: core venues and 2+ paper journals are shown individually; all others are grouped.` 문구가 더 이상 표시되지 않습니다.
+
+### 설계 결정
+- 설명 텍스트를 줄여 venue 카드 자체가 먼저 보이도록 했습니다.
+- 사용하지 않는 CSS와 번역 키도 함께 제거해 유지보수 부담을 줄였습니다.
+
+### 남은 작업
+- 없음.
+
+### 주의사항
+- 이번 변경은 UI 텍스트 제거만 수행하며 데이터 수집/API 비용에는 영향이 없습니다.
+
 ## 2026-06-12 19:34
 
 ### 변경 요약

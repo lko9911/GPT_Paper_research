@@ -447,14 +447,6 @@ h1 {
   padding: 14px;
 }
 
-.venue-rule {
-  padding: 8px 10px;
-  border-radius: 7px;
-  background: #f6f8fb;
-  color: var(--muted);
-  font-size: 0.8rem;
-}
-
 .venue-featured {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
@@ -805,7 +797,6 @@ h1 {
 }
 
 :root[data-theme="dark"] .venue-section-head,
-:root[data-theme="dark"] .venue-rule,
 :root[data-theme="dark"] .side-nav .side-field {
   background: var(--ink-soft);
 }
@@ -988,7 +979,6 @@ h1 {
 }
 
 :root[data-theme="dark"] .venue-section-head,
-:root[data-theme="dark"] .venue-rule,
 :root[data-theme="dark"] .side-nav .side-field {
   border-color: var(--line);
   background: var(--ink-soft);
@@ -1230,11 +1220,6 @@ h1 {
 .venue-board {
   gap: 10px;
   padding: 12px;
-}
-
-.venue-rule {
-  padding: 7px 9px;
-  font-size: 0.74rem;
 }
 
 .venue-featured {
