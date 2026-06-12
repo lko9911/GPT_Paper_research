@@ -1,5 +1,35 @@
 # AGENT_LOG
 
+## 2026-06-12 18:46
+
+### 변경 요약
+- 카드 대표 태그에서 `MMAM`, `FGAM`, `DM filament`, `FDM/Material extrusion`이 중복 표시되지 않도록 분류 기준을 정리했습니다.
+- 네 태그가 동시에 후보로 잡히더라도 카드에는 가장 적절한 대표 분류 하나만 표시됩니다.
+
+### 수정/생성한 파일
+- `assets/app.js`: `collapseMaterialExtrusionTags()`를 추가해 소재/압출 계열 중복 태그를 상호배타적으로 정리했습니다.
+- `index.html`: JS/CSS cache-busting version을 갱신했습니다.
+- `AGENT_LOG.md`: 이번 태그 분류 기준 변경을 기록했습니다.
+
+### 구현한 기능
+- `DM filament`, `FGAM`, `MMAM`, `FDM/Material extrusion`이 카드 대표 태그에 동시에 표시되지 않습니다.
+- 분류 우선 기준은 논문 제목/venue/tags/categories/요약 메타데이터를 기반으로 합니다.
+- `digital material`, `digital material filament`, `blended FDM` 신호가 있으면 `DM filament`를 우선 표시합니다.
+- `functionally graded`, `functional gradient`, `graded`, `FGAM` 신호가 있으면 `FGAM`을 우선 표시합니다.
+- `multi-material`, `multimaterial`, `MMAM` 신호가 있으면 `MMAM`을 우선 표시합니다.
+- 위 신호 없이 FDM/material extrusion만 있으면 `FDM/Material extrusion`을 표시합니다.
+
+### 설계 결정
+- 검색/필터용 서브토픽은 유지하고, 카드에 보이는 대표 태그만 상호배타적으로 정리했습니다. 필터링 가능성은 유지하면서 카드 가독성과 분류 명확성을 높이기 위해서입니다.
+- `data/papers.json`은 수정하지 않고 프론트엔드 표시 로직에서 해결했습니다.
+
+### 남은 작업
+- 향후 데이터 품질을 더 높이려면 Python 요약/분류 단계에서도 동일한 상호배타 규칙을 적용할 수 있습니다.
+
+### 주의사항
+- 이번 변경은 UI 표시 분류 기준 변경이며, API 호출이나 비용에는 영향을 주지 않습니다.
+- raw abstract와 PDF는 계속 저장/표시하지 않습니다.
+
 ## 2026-06-12 18:38
 
 ### 변경 요약
