@@ -308,6 +308,16 @@ h1 {
   color: var(--blue);
 }
 
+.side-nav button.is-empty {
+  opacity: 0.52;
+  cursor: default;
+}
+
+.side-nav button.is-empty:hover {
+  background: transparent;
+  color: #5c6678;
+}
+
 .side-nav span {
   color: var(--muted);
   font-size: 0.74rem;
@@ -948,6 +958,16 @@ h1 {
 :root[data-theme="dark"] .side-nav button:hover .side-count {
   background: rgba(255, 255, 255, 0.78);
   color: #071224;
+}
+
+:root[data-theme="dark"] .side-nav button.is-empty:hover {
+  background: transparent;
+  color: var(--muted);
+}
+
+:root[data-theme="dark"] .side-nav button.is-empty:hover .side-count {
+  background: #223757;
+  color: #d8e8ff;
 }
 
 :root[data-theme="dark"] .venue-pill.is-active span {

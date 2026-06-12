@@ -27,6 +27,8 @@ const FIELD_SUBTOPICS = {
   "AI 생산제조": ["Machine Learning", "Design Automation"],
 };
 
+const SIDEBAR_OTHER_TOPIC = "__field_other__";
+
 const FEATURED_TOPICS = [
   "MMAM",
   "FGAM",
@@ -469,15 +471,10 @@ function buildSideNav() {
   els.sideTopicNav.innerHTML = FIELD_ORDER.filter((field) => fieldCounts.get(field))
     .map((field) => {
       const subtopics = FIELD_SUBTOPICS[field] || [];
-      const subtopicButtons = subtopics
-        .map((subtopic) => {
-          const count = state.papers.filter((paper) => deriveField(paper) === field && paperHasRepresentativeTopic(paper, subtopic)).length;
-          if (!count) return "";
-          return `<button class="side-subtopic" type="button" data-side-field="${escapeAttribute(field)}" data-side-subtopic="${escapeAttribute(subtopic)}">
-            <span class="side-label">${escapeHtml(displayLabel(subtopic))}</span>
-            <span class="side-count">${count}</span>
-          </button>`;
-        })
+      const fieldPapers = state.papers.filter((paper) => deriveField(paper) === field);
+      const bucketCounts = sidebarBucketCounts(fieldPapers, subtopics);
+      const subtopicButtons = [...subtopics, SIDEBAR_OTHER_TOPIC]
+        .map((subtopic) => sideSubtopicButton(field, subtopic, bucketCounts.get(subtopic) || 0))
         .join("");
       return `<div class="side-field-group">
         <button class="side-field" type="button" data-side-field="${escapeAttribute(field)}">
@@ -500,6 +497,32 @@ function buildSideNav() {
       scrollToPapers();
     });
   });
+}
+
+function sidebarBucketCounts(papers, subtopics) {
+  const counts = new Map(subtopics.map((subtopic) => [subtopic, 0]));
+  counts.set(SIDEBAR_OTHER_TOPIC, 0);
+
+  papers.forEach((paper) => {
+    const bucket = sidebarBucketForPaper(paper, subtopics);
+    counts.set(bucket, (counts.get(bucket) || 0) + 1);
+  });
+
+  return counts;
+}
+
+function sidebarBucketForPaper(paper, subtopics) {
+  return subtopics.find((subtopic) => paperHasRepresentativeTopic(paper, subtopic)) || SIDEBAR_OTHER_TOPIC;
+}
+
+function sideSubtopicButton(field, subtopic, count) {
+  const isOther = subtopic === SIDEBAR_OTHER_TOPIC;
+  const label = isOther ? t("others") : displayLabel(subtopic);
+  const disabled = count ? "" : " disabled";
+  return `<button class="side-subtopic${count ? "" : " is-empty"}" type="button" data-side-field="${escapeAttribute(field)}" data-side-subtopic="${escapeAttribute(subtopic)}"${disabled}>
+    <span class="side-label">${escapeHtml(label)}</span>
+    <span class="side-count">${count}</span>
+  </button>`;
 }
 
 function syncSideNavActive() {
@@ -699,7 +722,7 @@ function applyFilters() {
       paperTags.includes(state.activeTopic) ||
       paperCategories.includes(state.activeTopic) ||
       paperSubtopics.includes(state.activeTopic);
-    const matchesSubtopic = !state.activeSubtopic || paperHasRepresentativeTopic(paper, state.activeSubtopic);
+    const matchesSubtopic = !state.activeSubtopic || paperMatchesSidebarSubtopic(paper, paperField, state.activeSubtopic);
     const matchesYear = !year || String(paper.year || "") === year;
     return (
       matchesQuery &&
@@ -885,6 +908,15 @@ function representativeTags(paper) {
   });
 
   return collapseMaterialExtrusionTags(picked, paper).slice(0, 3);
+}
+
+function paperMatchesSidebarSubtopic(paper, field, topic) {
+  if (!topic) return true;
+  const subtopics = FIELD_SUBTOPICS[field] || [];
+  if (topic === SIDEBAR_OTHER_TOPIC) {
+    return sidebarBucketForPaper(paper, subtopics) === SIDEBAR_OTHER_TOPIC;
+  }
+  return paperHasRepresentativeTopic(paper, topic);
 }
 
 function paperHasRepresentativeTopic(paper, topic) {
