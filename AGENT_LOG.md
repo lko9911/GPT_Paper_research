@@ -1,5 +1,30 @@
 # AGENT_LOG
 
+## 2026-06-12 22:24
+
+### 변경 요약
+- 영어 모드에서 저자 목록이 `외 N명`으로 표시되던 문제를 수정했습니다.
+- 영어 모드에서는 4명 이상 저자일 때 `et al.` 표기를 사용하도록 변경했습니다.
+
+### 수정/생성한 파일
+- `assets/app.js`: `formatAuthors()`가 현재 언어를 확인해 영어 모드에서는 `et al.`, 한국어 모드에서는 `외 N명`을 표시하도록 수정했습니다.
+- `index.html`: JS/CSS cache-busting version을 갱신했습니다.
+- `AGENT_LOG.md`: 이번 저자 표기 수정 작업을 기록했습니다.
+
+### 구현한 기능
+- 영어 모드 예시: `Rahul Chatterjee, Pinaki Das, Sayan Basak et al.`
+- 한국어 모드 예시: `Rahul Chatterjee, Pinaki Das, Sayan Basak 외 5명`
+
+### 설계 결정
+- 영어권 학술 목록에서 가장 자연스럽고 compact한 `et al.` 표기를 사용했습니다.
+- 데이터 자체는 바꾸지 않고 화면 표시 함수만 수정했습니다.
+
+### 남은 작업
+- 없음.
+
+### 주의사항
+- 이번 변경은 프론트엔드 표시만 수정하며 데이터 수집, API key, raw abstract/PDF 정책에는 영향을 주지 않습니다.
+
 ## 2026-06-12 22:21
 
 ### 변경 요약
