@@ -23,8 +23,8 @@ const FIELD_SUBTOPICS = {
   "생산/제조": ["공정 최적화", "금속/합금 제조", "복합재/소재 제조"],
   "3D 프린팅": ["FDM/Material extrusion", "DLP", "Toolpath", "Material Switching"],
   "4D 프린팅": ["LCE", "메타물질", "Active materials"],
-  "로봇틱스(생산제조)": ["로봇 AM", "로봇 자율 실험", "제조 자동화", "공정 최적화"],
-  "AI 생산제조": ["Machine Learning", "Design Automation"],
+  "로봇틱스(생산제조)": ["로봇 AM", "제조 자동화", "공정 최적화"],
+  "AI 생산제조": ["Machine Learning", "Self-driving Labs", "Design Automation"],
 };
 
 const SIDEBAR_OTHER_TOPIC = "__field_other__";
@@ -172,7 +172,6 @@ const LABEL_TRANSLATIONS = {
     "툴패스": "Toolpath",
     "퍼지/재료전환": "Purge/Material Switching",
     "로봇 AM": "Robotic AM",
-    "로봇 자율 실험": "Autonomous Experimentation",
     "제조 자동화": "Manufacturing Automation",
     "경로계획": "Path Planning",
     "메타물질": "Metamaterials",
@@ -224,7 +223,8 @@ const TAG_LABELS = {
     "Path planning": "경로계획",
     "Process optimization": "공정 최적화",
     "Manufacturing automation": "제조 자동화",
-    "Robotic autonomous experimentation": "로봇 자율 실험",
+    "Self-driving Labs": "자율 실험실",
+    "Robotic autonomous experimentation": "자율 실험실",
     "Design automation": "설계 자동화",
     "Machine learning": "머신러닝",
     "Robotic AM": "로봇 AM",
@@ -252,7 +252,8 @@ const TAG_LABELS = {
     "Path planning": "Path Planning",
     "Process optimization": "Process Optimization",
     "Manufacturing automation": "Manufacturing Automation",
-    "Robotic autonomous experimentation": "Autonomous Experimentation",
+    "Self-driving Labs": "Self-driving Labs",
+    "Robotic autonomous experimentation": "Self-driving Labs",
     "Design automation": "Design Automation",
     "Machine learning": "Machine Learning",
     "Robotic AM": "Robotic AM",
@@ -1152,8 +1153,8 @@ function canonicalTopicLabel(tag) {
   if (hasAny(text, ["material behavior", "material behaviour", "material intelligence", "재료 거동"])) return "Material behavior";
   if (hasAny(text, ["path planning", "trajectory", "graph search", "경로계획", "경로 계획", "그래프 탐색"])) return "Path planning";
   if (hasAny(text, ["process optimization", "process optimisation", "parameter optimization", "parameter optimisation", "공정 최적화"])) return "Process optimization";
-  if (hasAny(text, ["robotic autonomous experimentation", "autonomous experimentation", "autonomous experiment", "self-driving lab", "closed-loop experiment", "robotic experiment", "로봇 자율 실험"])) {
-    return "Robotic autonomous experimentation";
+  if (hasAny(text, ["robotic autonomous experimentation", "self-driving lab", "self driving lab", "self-driving laboratory", "autonomous laboratory", "autonomous lab", "autonomous experimentation", "autonomous experiment", "closed-loop experimentation", "closed loop experimentation", "closed-loop experiment", "robotic experiment", "robot scientist", "active learning", "bayesian optimization", "자율 실험실", "자동화 실험", "로봇 자율 실험"])) {
+    return "Self-driving Labs";
   }
   if (hasAny(text, ["manufacturing automation", "automation", "automated", "autonomous", "closed-loop", "closed loop", "monitoring", "in-situ", "in situ", "제조 자동화", "자동화", "자율", "모니터링"])) return "Manufacturing automation";
   if (hasAny(text, ["design automation", "computational design", "generative design", "topology optimization", "계산설계", "설계 자동화"])) return "Design automation";
@@ -1245,6 +1246,16 @@ function deriveField(paper) {
     titleText.includes("reinforcement learning") ||
     titleText.includes("artificial intelligence") ||
     titleText.includes("neural") ||
+    titleText.includes("self-driving lab") ||
+    titleText.includes("self driving lab") ||
+    titleText.includes("self-driving laboratory") ||
+    titleText.includes("autonomous laboratory") ||
+    titleText.includes("autonomous lab") ||
+    titleText.includes("closed-loop experimentation") ||
+    titleText.includes("closed loop experimentation") ||
+    titleText.includes("autonomous experimentation") ||
+    titleText.includes("active learning") ||
+    titleText.includes("bayesian optimization") ||
     titleText.includes("design automation") ||
     titleText.includes("computational design") ||
     titleText.includes("generative design") ||
@@ -1338,8 +1349,8 @@ function deriveSubtopics(paper) {
   if (hasAny(text, ["stimuli", "stimulus", "responsive", "temperature-responsive", "자극 반응", "반응형"])) subtopics.add("Stimuli-responsive");
 
   if (hasAny(text, ["robot", "robotic", "로봇"])) subtopics.add("로봇 AM");
-  if (hasAny(text, ["autonomous experiment", "autonomous experimentation", "self-driving lab", "self driving lab", "closed-loop experiment", "closed loop experiment", "robotic experiment", "autonomous laboratory", "로봇 자율 실험", "자율 실험"])) {
-    subtopics.add("로봇 자율 실험");
+  if (hasAny(text, ["self-driving lab", "self driving lab", "self-driving laboratory", "autonomous laboratory", "autonomous lab", "autonomous experiment", "autonomous experimentation", "closed-loop experimentation", "closed loop experimentation", "closed-loop experiment", "closed loop experiment", "robot scientist", "active learning", "bayesian optimization", "자율 실험실", "자동화 실험", "자율 실험", "로봇 자율 실험"])) {
+    subtopics.add("Self-driving Labs");
   }
   if (hasAny(text, ["automation", "automated", "autonomous", "closed-loop", "closed loop", "monitoring", "in-situ", "in situ", "자동화", "자율", "모니터링"])) {
     subtopics.add("제조 자동화");
