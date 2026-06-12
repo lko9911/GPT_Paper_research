@@ -52,7 +52,26 @@ TAG_MAP = {
     "DLP": ["dlp", "digital light processing", "vat photopolymerization", "vat photopolymerisation"],
     "FDM/Material extrusion": ["fdm", "fused deposition", "material extrusion", "filament"],
     "Robotic AM": ["robotic additive manufacturing", "robot-assisted manufacturing", "robotic am"],
-    "Manufacturing automation": ["manufacturing automation", "automated manufacturing", "automation"],
+    "Robotic autonomous experimentation": [
+        "robotic autonomous experimentation",
+        "autonomous experimentation",
+        "autonomous experiment",
+        "self-driving lab",
+        "closed-loop experiment",
+        "robotic experiment",
+    ],
+    "Manufacturing automation": [
+        "manufacturing automation",
+        "automated manufacturing",
+        "automation",
+        "automated",
+        "autonomous",
+        "closed-loop",
+        "closed loop",
+        "monitoring",
+        "in-situ",
+        "in situ",
+    ],
     "Process optimization": ["process optimization", "process optimisation", "parameter optimization", "parameter optimisation"],
 }
 
@@ -93,6 +112,10 @@ TAG_ALIASES = {
     "FDM": "FDM/Material extrusion",
     "FDM / Material Extrusion": "FDM/Material extrusion",
     "Material extrusion": "FDM/Material extrusion",
+    "Robotic autonomous experimentation": "Robotic autonomous experimentation",
+    "Autonomous experimentation": "Robotic autonomous experimentation",
+    "Self-driving lab": "Robotic autonomous experimentation",
+    "Closed-loop experiment": "Robotic autonomous experimentation",
     "4D Printing": "4D printing",
     "Active Materials": "Active materials",
 }
