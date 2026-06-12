@@ -107,8 +107,11 @@ def _summarize_with_openai(record: dict[str, Any], abstract: str) -> dict[str, A
                     "content": (
                         "You write new Korean paper summaries. Do not copy or translate abstract sentences verbatim. "
                         "The ai_summary_ko field must answer exactly these five labeled questions in Korean, each in one concise sentence: "
-                        "1. 무엇에 관한 논문인가? 2. 어떤 문제를 해결하려고 하는가? 3. 어떤 접근법/방법을 사용했는가? "
-                        "4. 핵심 결과는 무엇인가? 5. 내 연구/발표에 왜 필요한가? "
+                        "1. Topic - 이 논문은 무엇을 다루는가? "
+                        "2. Problem - 어떤 문제나 한계를 해결하려는가? "
+                        "3. Method - 어떤 방법이나 접근을 사용했는가? "
+                        "4. Key Result - 가장 중요한 결과는 무엇인가? "
+                        "5. Takeaway - 그래서 이 논문의 핵심 메시지는 무엇인가? "
                         "Return strict JSON with ai_summary_ko, relevance_score, relevance_note_ko, tags, categories."
                     ),
                 },
@@ -229,7 +232,7 @@ def _abstract_based_summary(
         problem = _study_problem(text, focus)
         approach = _study_approach(text, method)
         contribution = _study_contribution(text, outcome)
-        usefulness = _study_usefulness(tags, categories, score, text)
+        usefulness = _study_takeaway(tags, categories, score, text)
         return _format_five_question_summary(subject, problem, approach, contribution, usefulness)
 
     subject = f"{title}은(는) {year}년 {venue}에 발표된 항목으로, 공개 메타데이터상 {focus}와 관련됩니다."
@@ -238,7 +241,7 @@ def _abstract_based_summary(
         "초록이 제공되지 않아 구체적인 문제 설정은 DOI 원문 확인이 필요합니다.",
         "제목, venue, DOI 메타데이터, 키워드 신호를 바탕으로 보수적으로 분류했습니다.",
         "공개 메타데이터만으로는 핵심 결과를 단정하지 않고, 관련 주제 여부만 확인했습니다.",
-        _study_usefulness(tags, categories, score, text),
+        _study_takeaway(tags, categories, score, text),
     )
 
 
@@ -317,15 +320,15 @@ def _study_problem(text: str, focus: str) -> str:
     return f"{focus}와 관련된 설계·제조상의 병목을 이해하거나 완화하려는 문제를 다룹니다."
 
 
-def _study_usefulness(tags: list[str], categories: list[str], score: int, text: str) -> str:
+def _study_takeaway(tags: list[str], categories: list[str], score: int, text: str) -> str:
     topic = _join_phrases(tags[:3] or categories[:2], "제조·설계")
     if has_terms(text, ["toolpath"]) and ("material behaviour" in text or "material behavior" in text):
-        return "툴패스가 재료 표현과 구조 성능을 어떻게 바꾸는지 보여주므로 DM filament, FGAM, MMAM 발표의 설계 논리 사례로 유용합니다."
+        return "툴패스와 재료 거동은 단순한 제작 조건이 아니라 구조 성능과 표현을 결정하는 설계 변수라는 점이 핵심 메시지입니다."
     if any(tag in tags for tag in ["LCE", "4D printing", "Metamaterials"]):
-        return "4D 프린팅과 능동 재료 설계 사례를 제공하므로 형상 변화 구조나 메타물질 관련 발표 배경으로 유용합니다."
+        return "자극 반응 재료와 4D 프린팅을 결합하면 형상 변화 구조를 설계 가능한 제조 대상으로 다룰 수 있다는 점이 핵심 메시지입니다."
     if any(tag in tags for tag in ["MMAM", "FGAM", "DM filament", "FDM/Material extrusion"]):
-        return "재료 배치와 공정 설계의 연결을 보여주므로 다중재료/구배/필라멘트 기반 제조 연구의 비교 문헌으로 유용합니다."
-    return f"{topic} 관점에서 관련성 {score}/10로 평가되어, 연구 배경 정리나 관련 연구 슬라이드에 넣기 좋습니다."
+        return "재료 배치와 공정 설계를 함께 최적화해야 다중재료 제조의 성능 이점을 얻을 수 있다는 점이 핵심 메시지입니다."
+    return f"{topic} 관점에서 관련성 {score}/10로 평가되며, 핵심 메시지는 제조 방법과 설계 목표를 함께 해석해야 한다는 점입니다."
 
 
 def _format_five_question_summary(
@@ -337,11 +340,11 @@ def _format_five_question_summary(
 ) -> str:
     return "\n".join(
         [
-            f"1. 무엇에 관한 논문인가? {subject}",
-            f"2. 어떤 문제를 해결하려고 하는가? {problem}",
-            f"3. 어떤 접근법/방법을 사용했는가? {approach}",
-            f"4. 핵심 결과는 무엇인가? {finding}",
-            f"5. 내 연구/발표에 왜 필요한가? {usefulness}",
+            f"1. Topic - 이 논문은 무엇을 다루는가? {subject}",
+            f"2. Problem - 어떤 문제나 한계를 해결하려는가? {problem}",
+            f"3. Method - 어떤 방법이나 접근을 사용했는가? {approach}",
+            f"4. Key Result - 가장 중요한 결과는 무엇인가? {finding}",
+            f"5. Takeaway - 그래서 이 논문의 핵심 메시지는 무엇인가? {usefulness}",
         ]
     )
 
@@ -456,11 +459,11 @@ def _sanitize_generated(payload: dict[str, Any]) -> dict[str, Any]:
 
 def _normalize_generated_summary(value: Any) -> str:
     labels = [
-        "무엇에 관한 논문인가?",
-        "어떤 문제를 해결하려고 하는가?",
-        "어떤 접근법/방법을 사용했는가?",
-        "핵심 결과는 무엇인가?",
-        "내 연구/발표에 왜 필요한가?",
+        "Topic - 이 논문은 무엇을 다루는가?",
+        "Problem - 어떤 문제나 한계를 해결하려는가?",
+        "Method - 어떤 방법이나 접근을 사용했는가?",
+        "Key Result - 가장 중요한 결과는 무엇인가?",
+        "Takeaway - 그래서 이 논문의 핵심 메시지는 무엇인가?",
     ]
     if isinstance(value, dict):
         lines = []
