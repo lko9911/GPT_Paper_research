@@ -445,12 +445,40 @@ def _sanitize_generated(payload: dict[str, Any]) -> dict[str, Any]:
     tags = [str(tag).strip() for tag in payload.get("tags", []) if str(tag).strip()]
     score = int(payload.get("relevance_score", 5))
     return {
-        "ai_summary_ko": str(payload.get("ai_summary_ko", "")).strip(),
+        "ai_summary_ko": _normalize_generated_summary(payload.get("ai_summary_ko")),
         "relevance_score": max(1, min(10, score)),
         "relevance_note_ko": str(payload.get("relevance_note_ko", "")).strip(),
         "tags": _dedupe_tags(tags, categories)[:6] or ["적층제조", "문헌추적"],
         "categories": categories or ["다중재료 적층제조"],
     }
+
+
+def _normalize_generated_summary(value: Any) -> str:
+    labels = [
+        "무엇에 관한 논문인가?",
+        "어떤 문제를 해결하려고 하는가?",
+        "어떤 접근법/방법을 사용했는가?",
+        "핵심 결과는 무엇인가?",
+        "내 연구/발표에 왜 필요한가?",
+    ]
+    if isinstance(value, dict):
+        lines = []
+        for index, label in enumerate(labels, start=1):
+            answer = value.get(str(index)) or value.get(index) or value.get(label) or ""
+            answer = str(answer).strip()
+            if answer:
+                lines.append(f"{index}. {label} {answer}")
+        if lines:
+            return "\n".join(lines)
+    if isinstance(value, list):
+        lines = []
+        for index, answer in enumerate(value[:5], start=1):
+            answer = str(answer).strip()
+            if answer:
+                lines.append(f"{index}. {labels[index - 1]} {answer}")
+        if lines:
+            return "\n".join(lines)
+    return str(value or "").strip()
 
 
 def _dedupe_tags(tags: list[str], categories: list[str]) -> list[str]:
