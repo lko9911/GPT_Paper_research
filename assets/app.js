@@ -24,7 +24,7 @@ const FIELD_SUBTOPICS = {
   "3D 프린팅": ["FDM/Material extrusion", "DLP", "Toolpath", "Material Switching"],
   "4D 프린팅": ["LCE", "메타물질", "Active materials"],
   "로봇틱스(생산제조)": ["로봇 AM", "제조 자동화", "공정 최적화"],
-  "AI 생산제조": ["Machine Learning", "Self-driving Labs", "Design Automation"],
+  "AI 생산제조": ["Machine Learning", "Self-driving Labs", "Digital Twins", "Design Automation"],
 };
 
 const SIDEBAR_OTHER_TOPIC = "__field_other__";
@@ -176,6 +176,7 @@ const LABEL_TRANSLATIONS = {
     "경로계획": "Path Planning",
     "메타물질": "Metamaterials",
     "AI 공정제어": "AI Process Control",
+    "디지털 트윈": "Digital Twins",
     "설계 자동화": "Design Automation",
     "리뷰 및 서베이": "Reviews and Surveys",
     "다중재료 적층제조": "Multi-material AM",
@@ -224,6 +225,7 @@ const TAG_LABELS = {
     "Process optimization": "공정 최적화",
     "Manufacturing automation": "제조 자동화",
     "Self-driving Labs": "자율 실험실",
+    "Digital Twins": "디지털 트윈",
     "Robotic autonomous experimentation": "자율 실험실",
     "Design automation": "설계 자동화",
     "Machine learning": "머신러닝",
@@ -253,6 +255,7 @@ const TAG_LABELS = {
     "Process optimization": "Process Optimization",
     "Manufacturing automation": "Manufacturing Automation",
     "Self-driving Labs": "Self-driving Labs",
+    "Digital Twins": "Digital Twins",
     "Robotic autonomous experimentation": "Self-driving Labs",
     "Design automation": "Design Automation",
     "Machine learning": "Machine Learning",
@@ -1156,6 +1159,7 @@ function canonicalTopicLabel(tag) {
   if (hasAny(text, ["robotic autonomous experimentation", "self-driving lab", "self driving lab", "self-driving laboratory", "autonomous laboratory", "autonomous lab", "autonomous experimentation", "autonomous experiment", "closed-loop experimentation", "closed loop experimentation", "closed-loop experiment", "robotic experiment", "robot scientist", "active learning", "bayesian optimization", "자율 실험실", "자동화 실험", "로봇 자율 실험"])) {
     return "Self-driving Labs";
   }
+  if (hasAny(text, ["digital twin", "digital twins", "virtual twin", "cyber-physical", "cyber physical", "process twin", "machine twin", "디지털 트윈"])) return "Digital Twins";
   if (hasAny(text, ["manufacturing automation", "automation", "automated", "autonomous", "closed-loop", "closed loop", "monitoring", "in-situ", "in situ", "제조 자동화", "자동화", "자율", "모니터링"])) return "Manufacturing automation";
   if (hasAny(text, ["design automation", "computational design", "generative design", "topology optimization", "계산설계", "설계 자동화"])) return "Design automation";
   if (hasAny(text, ["machine learning", "deep learning", "reinforcement learning", "ai/ml", "머신러닝", "인공지능"])) return "Machine learning";
@@ -1256,6 +1260,12 @@ function deriveField(paper) {
     titleText.includes("autonomous experimentation") ||
     titleText.includes("active learning") ||
     titleText.includes("bayesian optimization") ||
+    titleText.includes("digital twin") ||
+    titleText.includes("digital twins") ||
+    titleText.includes("virtual twin") ||
+    titleText.includes("cyber-physical") ||
+    titleText.includes("cyber physical") ||
+    titleText.includes("디지털 트윈") ||
     titleText.includes("design automation") ||
     titleText.includes("computational design") ||
     titleText.includes("generative design") ||
@@ -1361,6 +1371,9 @@ function deriveSubtopics(paper) {
   if (hasAny(text, ["deep learning", "neural", "딥러닝"])) subtopics.add("Deep Learning");
   if (hasAny(text, ["reinforcement learning", "강화학습"])) subtopics.add("Reinforcement Learning");
   if (hasAny(text, ["process control", "monitoring", "closed-loop", "공정제어", "모니터링"])) subtopics.add("AI 공정제어");
+  if (hasAny(text, ["digital twin", "digital twins", "virtual twin", "cyber-physical", "cyber physical", "process twin", "machine twin", "디지털 트윈"])) {
+    subtopics.add("Digital Twins");
+  }
   if (hasAny(text, ["computational design", "generative design", "topology optimization", "design automation", "계산설계", "설계 자동화"])) {
     subtopics.add("설계 자동화");
   }

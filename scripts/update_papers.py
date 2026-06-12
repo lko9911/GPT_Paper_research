@@ -175,6 +175,10 @@ def _is_plausible(record: dict[str, Any], since_year: int) -> bool:
         "material extrusion",
         "materials discovery",
         "materials synthesis",
+        "digital twin",
+        "digital twins",
+        "cyber-physical",
+        "cyber physical",
     ]
     topic_terms = [
         "multi-material",
@@ -211,6 +215,12 @@ def _is_plausible(record: dict[str, Any], since_year: int) -> bool:
         "robot scientist",
         "active learning",
         "bayesian optimization",
+        "digital twin",
+        "digital twins",
+        "cyber-physical",
+        "cyber physical",
+        "process twin",
+        "machine twin",
     ]
     return any(term in text for term in additive_terms) and any(term in text for term in topic_terms)
 

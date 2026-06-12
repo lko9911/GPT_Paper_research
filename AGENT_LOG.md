@@ -1,5 +1,36 @@
 # AGENT_LOG
 
+## 2026-06-12 23:30
+
+### 변경 요약
+- `AI 생산제조` / `AI Manufacturing` 분야에 `Digital Twins` / `디지털 트윈` 서브 토픽을 추가했습니다.
+- 디지털 트윈, cyber-physical manufacturing, process twin 계열 표현을 프론트엔드 분류와 자동 수집 파이프라인에서 인식하도록 보강했습니다.
+
+### 수정/생성한 파일
+- `assets/app.js`: `AI 생산제조` 서브 토픽에 `Digital Twins`를 추가하고, 한글/영문 라벨, canonical topic, AI 분야 판별, 서브토픽 감지 키워드를 추가했습니다.
+- `scripts/summarize.py`: 새 논문 요약/태그 생성에서 `Digital Twins` 태그를 인식하도록 태그 맵과 alias를 추가했습니다.
+- `scripts/update_papers.py`: 디지털 트윈 및 cyber-physical 표현이 plausibility 필터를 통과할 수 있도록 키워드를 추가했습니다.
+- `data/queries.json`: `digital twin additive manufacturing`, `digital twin 3D printing`, `cyber-physical additive manufacturing` 등 검색어를 추가했습니다.
+- `index.html`: GitHub Pages 캐시 갱신을 위해 CSS/JS 버전을 업데이트했습니다.
+- `AGENT_LOG.md`: 이번 디지털 트윈 토픽 추가 작업을 기록했습니다.
+
+### 구현한 기능
+- 사이드바에서 `Digital Twins`는 `AI Manufacturing` 아래에 표시됩니다.
+- `digital twin`, `digital twins`, `virtual twin`, `cyber-physical`, `process twin`, `machine twin` 표현을 같은 토픽으로 정규화합니다.
+- 다음 자동 업데이트부터 디지털 트윈 관련 제조/적층제조 논문 수집 가능성이 높아집니다.
+
+### 설계 결정
+- 디지털 트윈은 로봇틱스보다 AI 기반 제조 운영, 공정 모니터링, 가상 모델 기반 최적화와 더 가까우므로 `AI Manufacturing` 아래에 배치했습니다.
+- 현재 저장된 342편에서는 디지털 트윈 계열 키워드가 0편으로 확인되어 기존 데이터를 억지로 재분류하지 않았습니다.
+- Crossref 상위 검색 결과에는 비정상 미래 연도 및 무관 항목이 섞였으므로, 기존 연도/관련성 필터를 유지해 오염을 막습니다.
+
+### 남은 작업
+- 다음 자동 수집 후 `Digital Twins` 숫자가 실제로 증가하는지 확인해야 합니다.
+- OpenAlex rate limit이 풀린 뒤 `digital twin additive manufacturing` 계열 검색 결과를 추가 검증하면 좋습니다.
+
+### 주의사항
+- 이번 변경은 공식 메타데이터 API 기반 검색어와 분류만 조정하며, 출판사 크롤링/PDF 저장/raw abstract 표시 정책은 변경하지 않았습니다.
+
 ## 2026-06-12 23:25
 
 ### 변경 요약
