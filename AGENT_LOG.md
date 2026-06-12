@@ -1,5 +1,30 @@
 # AGENT_LOG
 
+## 2026-06-12 23:40
+
+### 변경 요약
+- 논문 자동 수집 workflow의 cron 실행 시각을 매시 정각에서 매시 17분으로 변경했습니다.
+- GitHub Actions scheduled workflow가 정각 부하 시간대에 지연되거나 누락될 가능성을 줄이기 위한 조정입니다.
+
+### 수정/생성한 파일
+- `.github/workflows/update-papers.yml`: `cron`을 `0 * * * *`에서 `17 * * * *`로 변경했습니다.
+- `AGENT_LOG.md`: 이번 자동 수집 주기 안정화 작업을 기록했습니다.
+
+### 구현한 기능
+- 자동 수집은 여전히 1시간마다 실행되지만, 실행 시각만 매시 17분으로 이동했습니다.
+
+### 설계 결정
+- 새 토픽을 추가해도 `data/papers.json`은 다음 `Update papers` workflow가 실행되어야 바뀝니다.
+- GitHub Actions의 scheduled workflow는 정각에 몰리면 지연 또는 누락될 수 있으므로, 약간 비켜간 분 단위 실행이 더 안정적입니다.
+
+### 남은 작업
+- 다음 `Update papers` 실행 후 새 검색어로 실제 논문이 추가되는지 확인해야 합니다.
+- 급하게 확인하려면 GitHub Actions의 `Update papers` workflow를 `workflow_dispatch`로 수동 실행하면 됩니다.
+
+### 주의사항
+- OpenAlex rate limit은 수동 검증 중 실제로 발생했지만, 현재 논문이 바로 늘지 않은 직접 원인은 새 주제 추가 이후 수집 workflow가 아직 실행되지 않은 점입니다.
+- 이번 변경은 workflow 스케줄만 바꾸며 API key, secret, token은 기록하지 않았습니다.
+
 ## 2026-06-12 23:35
 
 ### 변경 요약
