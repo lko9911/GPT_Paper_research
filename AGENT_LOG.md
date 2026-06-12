@@ -1046,3 +1046,28 @@
 
 ### 주의사항
 - JS 문법 검증과 로컬 HTTP 200 확인을 완료했습니다.
+## 2026-06-12 14:35
+
+### 변경 요약
+- 다크 모드에서 일부 색 대비가 어색한 문제를 개선했습니다.
+- 다크 전용 contrast pass를 추가해 배경, 패널, 버튼, badge, notice, 입력창, 링크 버튼의 색을 일관되게 조정했습니다.
+
+### 수정/생성한 파일
+- `assets/style.css`: 다크 모드 색상 변수와 컴포넌트별 대비 보정 스타일을 추가했습니다.
+- `index.html`: CSS/JS cache-busting 버전을 `20260612-1438`로 갱신했습니다.
+- `AGENT_LOG.md`: 이번 다크 모드 색상 보정 기록을 추가했습니다.
+
+### 구현한 기능
+- 다크 모드에서 notice, badge, card topline, form input, venue/topic pill, link button의 텍스트 대비가 더 안정적으로 보입니다.
+- active/hover 상태가 과하게 밝거나 탁하게 보이지 않도록 blue/green/amber 계열을 다크 팔레트에 맞췄습니다.
+- placeholder와 muted text 색상을 어두운 배경에서 읽기 쉬운 수준으로 조정했습니다.
+
+### 설계 결정
+- 기존 라이트 모드 색상은 건드리지 않고 `:root[data-theme="dark"]` override만 추가했습니다.
+- 색상은 pure black이 아니라 deep navy 계열을 사용해 눈부심을 줄였습니다.
+
+### 남은 작업
+- 실제 브라우저에서 특정 카드/배지가 여전히 튀면 해당 컴포넌트별로 추가 미세 조정할 수 있습니다.
+
+### 주의사항
+- JS 문법 검증과 로컬 HTTP 200 확인을 완료했습니다.
