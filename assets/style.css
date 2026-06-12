@@ -345,23 +345,18 @@ h1 {
 }
 
 .stats {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 10px;
   padding: 18px 0 12px;
 }
 
 .stats article {
-  width: min(240px, 100%);
   padding: 14px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--panel);
   box-shadow: var(--shadow);
-}
-
-.stats .stat-clock-card {
-  width: min(300px, 100%);
 }
 
 .stats span {
