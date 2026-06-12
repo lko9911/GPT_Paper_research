@@ -1,5 +1,38 @@
 # AGENT_LOG
 
+## 2026-06-12 19:55
+
+### 변경 요약
+- fallback 요약이 제목/메타데이터 기반 안내문처럼 보이던 문제를 개선했습니다.
+- OpenAI API key가 없을 때도 초록이 제공되면 초록 내용을 바탕으로 새 한국어 요약문을 작성하도록 변경했습니다.
+- 사용자가 지적한 `Material articulation: Toward an ornamental thinking in digital tectonics` 항목의 요약을 초록 기반 fallback 요약으로 갱신했습니다.
+
+### 수정/생성한 파일
+- `scripts/summarize.py`: `summarize_record(..., allow_openai=True)` 옵션을 추가했습니다.
+- `scripts/summarize.py`: 초록 기반 fallback 요약 생성 로직과 키워드 기반 focus/method/outcome 추출 함수를 추가했습니다.
+- `scripts/update_papers.py`: 기존 generic 요약이 있고 새 API 응답에 초록이 있으면 OpenAI 없이 fallback 요약으로 갱신하도록 변경했습니다.
+- `data/papers.json`: DOI `10.21606/drs.2026.2363` 논문의 요약을 초록 기반 새 요약으로 갱신했습니다.
+- `AGENT_LOG.md`: 이번 요약 품질 개선 작업을 기록했습니다.
+
+### 구현한 기능
+- 새 논문은 기존처럼 OpenAI key가 있으면 OpenAI 요약을 사용할 수 있습니다.
+- 기존 generic 요약 refresh는 `allow_openai=False`로 수행되어 OpenAI 비용을 만들지 않습니다.
+- 초록은 `_abstract` transient 입력으로만 사용하고, 저장 전 제거하는 정책을 유지합니다.
+- fallback 요약은 초록 원문 문장을 복사하지 않고 focus/method/outcome을 새 한국어 문장으로 재구성합니다.
+
+### 설계 결정
+- 출판사 초록 원문을 사이트에 표시하거나 저장하지 않는 정책은 유지했습니다.
+- 전체 기존 데이터 재요약은 시간이 오래 걸릴 수 있어, 우선 지적된 논문을 targeted refresh하고 이후 정기 수집 때 generic 요약을 점진적으로 갱신하도록 했습니다.
+- 기존 논문 refresh에는 OpenAI를 쓰지 않아 예상치 못한 비용 증가를 막았습니다.
+
+### 남은 작업
+- 전체 기존 generic 요약을 한 번에 정리하려면 별도 batch refresh script를 만들고 API rate limit을 고려해 나누어 실행하는 것이 좋습니다.
+- 더 높은 품질의 한영 요약을 원하면 향후 `ai_summary_en` 필드와 OpenAI 기반 batch 재요약 정책을 별도로 설계할 수 있습니다.
+
+### 주의사항
+- API key, secret, token은 기록하지 않았습니다.
+- raw abstract와 PDF는 계속 저장/표시하지 않습니다.
+
 ## 2026-06-12 19:41
 
 ### 변경 요약

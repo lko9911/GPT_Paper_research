@@ -57,16 +57,16 @@ TAG_CATEGORY_ALIASES = {
 }
 
 
-def summarize_record(record: dict[str, Any]) -> dict[str, Any]:
+def summarize_record(record: dict[str, Any], allow_openai: bool = True) -> dict[str, Any]:
     """Add Korean summary fields to a record.
 
     OPENAI_API_KEY enables model-based generation. Without it, this function
-    creates a conservative Korean summary from title and metadata, avoiding any
-    verbatim abstract reuse.
+    creates a conservative Korean summary from transient abstract signals and
+    metadata, avoiding any verbatim abstract reuse.
     """
 
     abstract = record.get("_abstract", "")
-    if os.getenv("OPENAI_API_KEY"):
+    if allow_openai and os.getenv("OPENAI_API_KEY"):
         generated = _summarize_with_openai(record, abstract)
         if generated:
             record.update(generated)
@@ -121,15 +121,10 @@ def _fallback_summary(record: dict[str, Any], abstract: str) -> dict[str, Any]:
     categories = _classify(record, abstract)
     tags = _tags(record, abstract, categories)
     score = _score(record, abstract, categories)
-
-    summary = (
-        f"{title}은(는) {year}년 {venue}에 보고된 연구로, "
-        f"{', '.join(categories)} 관점에서 다중재료 적층제조 문헌 추적에 포함할 만한 항목입니다. "
-        "제목과 공개 메타데이터를 기준으로 볼 때 재료 조성, 설계 자동화, 제조 경로 중 하나 이상과 연결됩니다."
-    )
+    summary = _abstract_based_summary(record, abstract, categories, tags, year, venue)
     note = (
         f"DM filament, FGAM, computational design 추적 관점에서 "
-        f"{', '.join(tags[:3])} 키워드와의 연결성이 있어 관련성 {score}/10로 분류했습니다."
+        f"{', '.join(tags[:3])} 키워드와 연결되어 관련성 {score}/10로 분류했습니다."
     )
     return {
         "ai_summary_ko": summary,
@@ -138,6 +133,127 @@ def _fallback_summary(record: dict[str, Any], abstract: str) -> dict[str, Any]:
         "tags": tags[:6],
         "categories": categories[:2],
     }
+
+
+def _abstract_based_summary(
+    record: dict[str, Any],
+    abstract: str,
+    categories: list[str],
+    tags: list[str],
+    year: Any,
+    venue: str,
+) -> str:
+    title = record.get("title", "이 논문")
+    text = _text(record, abstract)
+    focus = _join_phrases(
+        _matched_phrases(
+            text,
+            [
+                ("digital tectonics", "디지털 제작과 건축적 구성"),
+                ("ornamental", "재료 표현과 장식적 설계 사고"),
+                ("material articulation", "재료의 연결과 표현 방식"),
+                ("multi-material", "다중재료 구조"),
+                ("multimaterial", "다중재료 구조"),
+                ("functionally graded", "기능성 구배 재료"),
+                ("graded", "구배 재료"),
+                ("blended fdm", "혼합 FDM 공정"),
+                ("digital material filament", "디지털 재료 필라멘트"),
+                ("toolpath", "툴패스 설계"),
+                ("path planning", "경로 계획"),
+                ("topology optimization", "위상 최적화"),
+                ("computational design", "계산설계"),
+                ("robotic", "로봇 기반 제조"),
+                ("4d printing", "4D 프린팅"),
+                ("metamaterial", "메타물질"),
+                ("liquid crystal elastomer", "액정 엘라스토머"),
+            ],
+        ),
+        fallback=", ".join(tags[:2] or categories[:1]),
+    )
+    method = _join_phrases(
+        _matched_phrases(
+            text,
+            [
+                ("conceptual", "개념적 논의"),
+                ("discuss", "개념적 논의"),
+                ("propose", "개념 제안"),
+                ("framework", "설계 프레임워크"),
+                ("method", "방법론"),
+                ("optimization", "최적화"),
+                ("simulation", "시뮬레이션"),
+                ("machine learning", "머신러닝"),
+                ("deep learning", "딥러닝"),
+                ("reinforcement learning", "강화학습"),
+                ("experiment", "실험 검증"),
+                ("fabrication", "제작 실험"),
+                ("analysis", "분석"),
+                ("review", "문헌 검토"),
+                ("survey", "문헌 조사"),
+            ],
+        ),
+        fallback="공개 초록의 문제 설정과 접근법",
+    )
+    outcome = _join_phrases(
+        _matched_phrases(
+            text,
+            [
+                ("performance", "성능"),
+                ("mechanical", "기계적 특성"),
+                ("accuracy", "정밀도"),
+                ("efficiency", "공정 효율"),
+                ("reusability", "재사용성"),
+                ("sustainability", "지속가능성"),
+                ("design", "설계 가능성"),
+                ("manufacturing", "제조 적용성"),
+                ("application", "응용 가능성"),
+            ],
+        ),
+        fallback="설계와 제조 관점의 의미",
+    )
+
+    if abstract:
+        return (
+            f"{title}은(는) {year}년 {venue}에 발표된 연구로, {_object_phrase(focus)} 중심 주제로 다룹니다. "
+            f"초록 내용을 바탕으로 보면 연구는 {_object_phrase(method)} 통해 {outcome}을 검토하며, "
+            "제조·설계 문헌 추적에서 참고할 만한 시사점을 제공합니다."
+        )
+
+    return (
+        f"{title}은(는) {year}년 {venue}에 발표된 항목으로, 공개 메타데이터상 {focus}와 관련됩니다. "
+        "초록이 제공되지 않아 제목·venue·키워드만으로 보수적으로 요약했으며, 자세한 내용은 DOI 원문 확인이 필요합니다."
+    )
+
+
+def _matched_phrases(text: str, term_phrases: list[tuple[str, str]], limit: int = 3) -> list[str]:
+    phrases: list[str] = []
+    for term, phrase in term_phrases:
+        if term in text and phrase not in phrases:
+            phrases.append(phrase)
+        if len(phrases) >= limit:
+            break
+    return phrases
+
+
+def _join_phrases(phrases: list[str], fallback: str) -> str:
+    clean = [phrase for phrase in phrases if phrase]
+    if not clean:
+        return fallback or "관련 주제"
+    if len(clean) == 1:
+        return clean[0]
+    return ", ".join(clean[:-1]) + f" 및 {clean[-1]}"
+
+
+def _object_phrase(text: str) -> str:
+    if not text:
+        return "관련 주제를"
+    return f"{text}을" if _has_final_consonant(text[-1]) else f"{text}를"
+
+
+def _has_final_consonant(char: str) -> bool:
+    code = ord(char)
+    if 0xAC00 <= code <= 0xD7A3:
+        return (code - 0xAC00) % 28 != 0
+    return False
 
 
 def _classify(record: dict[str, Any], abstract: str) -> list[str]:
