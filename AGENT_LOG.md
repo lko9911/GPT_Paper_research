@@ -1,5 +1,37 @@
 # AGENT_LOG
 
+## 2026-06-12 19:34
+
+### 변경 요약
+- 왼쪽 sidebar에서 메인 토픽 count와 subtopic count 합계가 맞지 않아 혼란스러운 문제를 개선했습니다.
+- 각 메인 토픽 아래에 정의된 subtopic을 모두 표시하고, 어느 subtopic에도 배정되지 않은 논문은 `Others` bucket으로 묶도록 변경했습니다.
+
+### 수정/생성한 파일
+- `assets/app.js`: `SIDEBAR_OTHER_TOPIC`, `sidebarBucketCounts()`, `sidebarBucketForPaper()`, `sideSubtopicButton()`, `paperMatchesSidebarSubtopic()`을 추가했습니다.
+- `assets/app.js`: sidebar subtopic count와 click filter가 동일한 bucket 기준을 사용하도록 변경했습니다.
+- `assets/style.css`: 0개 subtopic의 disabled/empty 스타일과 다크 모드 empty hover 스타일을 추가했습니다.
+- `index.html`: CSS/JS cache-busting version을 갱신했습니다.
+- `AGENT_LOG.md`: 이번 sidebar bucket/count 정합성 개선 내용을 기록했습니다.
+
+### 구현한 기능
+- 메인 토픽 아래 모든 대표 subtopic을 표시합니다.
+- count가 0인 subtopic도 흐리게 표시해 “현재 해당 논문 없음”을 알 수 있습니다.
+- 각 field에서 대표 subtopic에 속하지 않은 논문은 `Others`로 표시합니다.
+- `Others`를 클릭하면 해당 field 안에서 대표 subtopic에 배정되지 않은 논문만 필터링됩니다.
+- 결과적으로 메인 토픽 count를 subtopic count들의 합으로 이해할 수 있습니다.
+
+### 설계 결정
+- `deriveSubtopics()`의 넓은 키워드 감지 대신 sidebar는 `representativeTags()` 기반 bucket을 사용합니다.
+- 하나의 논문은 sidebar에서 한 field 안의 하나의 bucket에만 배정되도록 하여 count 해석을 단순하게 했습니다.
+- 0개 subtopic을 숨기지 않고 disabled 상태로 남겨 사용자에게 전체 subtopic 구조를 보여줍니다.
+
+### 남은 작업
+- 실제 UI에서 `Others` 비율이 너무 크면 대표 subtopic 목록을 더 세분화할 수 있습니다.
+
+### 주의사항
+- 데이터 파일과 자동 수집 파이프라인은 변경하지 않았습니다.
+- 이번 변경은 프론트엔드 sidebar 표시/필터 기준 조정이며 API 비용에는 영향이 없습니다.
+
 ## 2026-06-12 19:22
 
 ### 변경 요약
