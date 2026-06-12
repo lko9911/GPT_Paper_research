@@ -1,0 +1,103 @@
+# Awesome Computational Design for Multi-material Additive Manufacturing
+
+MMAM, FGAM, DM filament, computational design 분야를 위한 AI 기반 논문 큐레이션 저장소입니다. GitHub Pages에서 동작하는 정적 웹사이트와 GitHub Actions 기반 자동 업데이트 파이프라인을 포함합니다.
+
+## 프로젝트 목적
+
+이 저장소는 multi-material additive manufacturing, functionally graded additive manufacturing, blended FDM, digital material filament, computational design, toolpath optimization, material switching optimization 관련 논문 메타데이터를 주기적으로 수집하고, DOI 링크와 한글 AI 요약을 함께 보여줍니다.
+
+## 데이터 출처
+
+- OpenAlex Works API
+- Crossref Works API
+- 선택적 보강: Semantic Scholar Graph API
+
+출판사 웹사이트를 직접 크롤링하지 않으며 PDF를 다운로드하거나 저장하지 않습니다.
+
+## 저작권 정책
+
+- 저장하는 데이터는 제목, 저자, 연도, 저널/학회명, DOI, URL, source, category, tag, AI-generated Korean summary로 제한합니다.
+- API에서 초록을 제공하더라도 `data/papers.json`에는 원문 초록을 저장하지 않습니다.
+- 초록은 새 한글 요약을 생성하기 위한 임시 입력으로만 사용합니다.
+- 웹사이트에는 출판사 초록, summary, description 문장을 그대로 표시하지 않습니다.
+- 각 논문 카드에는 DOI/source 링크를 표시하여 원문 확인은 공식 링크에서 하도록 안내합니다.
+
+## API key 설정 방법
+
+GitHub 저장소의 `Settings > Secrets and variables > Actions`에서 다음 값을 설정할 수 있습니다.
+
+- `CONTACT_EMAIL`: OpenAlex/Crossref polite pool 및 User-Agent에 사용할 연락 이메일입니다.
+- `OPENAI_API_KEY`: 선택 사항입니다. 있으면 새 논문에 대해 OpenAI API로 한글 요약을 생성합니다.
+- `SEMANTIC_SCHOLAR_API_KEY`: 선택 사항입니다. 있으면 DOI 기반 Semantic Scholar 메타데이터 보강을 시도합니다.
+- `OPENAI_MODEL`: 선택 사항입니다. Repository variable로 설정하며 기본값은 `gpt-4o-mini`입니다.
+
+키가 없어도 파이프라인은 실패하지 않습니다. `OPENAI_API_KEY`가 없으면 제목과 메타데이터 기반 fallback 요약을 생성합니다.
+
+## 로컬 실행 방법
+
+```bash
+python -m venv .venv
+. .venv/Scripts/activate
+pip install -r requirements.txt
+python scripts/update_papers.py
+python -m http.server 8000
+```
+
+브라우저에서 `http://localhost:8000`을 열면 정적 사이트를 확인할 수 있습니다.
+
+## GitHub Pages 배포 방법
+
+1. 저장소를 GitHub에 push합니다.
+2. `Settings > Pages`로 이동합니다.
+3. Source를 `Deploy from a branch`로 선택합니다.
+4. Branch를 `main` 또는 사용하는 기본 브랜치, folder를 `/root`로 설정합니다.
+5. 배포 후 Pages URL에서 `index.html`이 `data/papers.json`을 불러와 렌더링합니다.
+
+## 자동 업데이트
+
+`.github/workflows/update-papers.yml`은 다음 조건에서 실행됩니다.
+
+- 매시 정각 cron 실행
+- `workflow_dispatch` 수동 실행
+
+워크플로는 Python 의존성을 설치하고 `scripts/update_papers.py`를 실행합니다. `data/papers.json`이 변경된 경우에만 자동 커밋합니다. 새 논문이 없어도 정상 종료되도록 구성해 불필요한 실패 알림을 줄였습니다.
+
+## 논문 수동 추가/수정 방법
+
+`data/papers.json`에 아래 스키마를 맞춰 항목을 추가하거나 수정합니다.
+
+```json
+{
+  "id": "doi-or-hash",
+  "title": "...",
+  "authors": ["..."],
+  "year": 2026,
+  "venue": "...",
+  "doi": "10.xxxx/xxxxx",
+  "url": "https://doi.org/...",
+  "source": ["OpenAlex", "Crossref"],
+  "categories": ["기능성 구배 적층제조"],
+  "tags": ["FGAM", "MMAM", "계산설계"],
+  "relevance_score": 8,
+  "ai_summary_ko": "...",
+  "relevance_note_ko": "...",
+  "abstract_used_for_summary": true,
+  "raw_abstract_displayed": false,
+  "pdf_stored": false,
+  "first_added": "YYYY-MM-DD",
+  "last_updated": "YYYY-MM-DD"
+}
+```
+
+`raw_abstract_displayed`와 `pdf_stored`는 정책 확인을 위해 `false`로 유지합니다.
+
+## 검색어 수정 방법
+
+`data/queries.json`의 문자열 배열을 수정하면 다음 자동 실행부터 검색 범위가 바뀝니다. 너무 넓은 검색어는 관련 없는 논문을 늘릴 수 있으므로, additive manufacturing과 설계/재료/툴패스 맥락이 함께 드러나는 검색어를 권장합니다.
+
+## 한계점
+
+- 메타데이터 API의 색인 상태에 따라 최신 논문 반영이 지연될 수 있습니다.
+- DOI가 없는 논문은 normalized title hash로 중복 제거하므로 제목 변형이 큰 경우 중복이 생길 수 있습니다.
+- `OPENAI_API_KEY`가 없을 때 생성되는 fallback 요약은 제목과 메타데이터 기반이라 내용 이해가 제한적입니다.
+- 자동 분류와 관련성 점수는 휴리스틱 또는 AI 생성 결과이므로 최종 판단은 DOI 링크의 원문을 확인해야 합니다.
