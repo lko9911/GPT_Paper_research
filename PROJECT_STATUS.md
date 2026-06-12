@@ -16,6 +16,7 @@ GitHub Pages에서 동작 가능한 정적 논문 큐레이션 사이트와 GitH
 - DOI 열기, Source 열기, citation 복사 버튼
 - OpenAlex 검색 스크립트
 - Crossref 검색 스크립트
+- 2025년 이후 논문만 자동 수집하는 기본 조사 범위
 - DOI 우선 중복 제거 및 DOI 없는 경우 normalized title 중복 제거
 - 새 논문만 요약 생성
 - OpenAI API 선택적 요약 생성
@@ -47,6 +48,7 @@ GitHub Pages에서 동작 가능한 정적 논문 큐레이션 사이트와 GitH
 - DOI가 없는 논문은 제목 정규화 기반으로 중복 제거하므로 제목 표기가 크게 다르면 중복이 남을 수 있습니다.
 - 자동 필터링은 additive manufacturing 관련 키워드가 title/abstract에 있어야 통과하므로, 메타데이터에 초록이 없고 제목이 짧은 관련 논문은 누락될 수 있습니다.
 - 현재 자동 수집 결과에는 넓은 biomedical 3D printing 또는 LPBF toolpath 항목이 포함될 수 있습니다. 큐레이션 품질을 높이려면 검색어와 `_is_plausible` 필터를 더 엄격하게 조정하세요.
+- Science/Nature 계열 게재지는 별도로 배제하지 않습니다. 공식 메타데이터 API 검색 결과에 나오고 주제/연도 기준을 만족하면 포함될 수 있습니다.
 
 ## 다음 작업 추천 순서
 

@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import os
 import re
 import sys
 from datetime import date
@@ -18,12 +19,14 @@ from summarize import summarize_record
 ROOT = Path(__file__).resolve().parents[1]
 PAPERS_PATH = ROOT / "data" / "papers.json"
 QUERIES_PATH = ROOT / "data" / "queries.json"
+DEFAULT_SINCE_YEAR = 2025
 
 
 def main() -> None:
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(encoding="utf-8")
     today = date.today().isoformat()
+    since_year = _since_year()
     existing = _load_json(PAPERS_PATH, [])
     queries = _load_json(QUERIES_PATH, [])
     index = {_dedupe_key(paper): paper for paper in existing}
@@ -32,11 +35,11 @@ def main() -> None:
     for query in queries:
         print(f"Searching: {query}")
         candidates: list[dict[str, Any]] = []
-        candidates.extend(_safe_fetch(fetch_openalex, query))
-        candidates.extend(_safe_fetch(fetch_crossref, query))
+        candidates.extend(_safe_fetch(fetch_openalex, query, since_year))
+        candidates.extend(_safe_fetch(fetch_crossref, query, since_year))
 
         for candidate in candidates:
-            if not _is_plausible(candidate):
+            if not _is_plausible(candidate, since_year):
                 continue
             key = _dedupe_key(candidate)
             if key in index:
@@ -57,17 +60,20 @@ def main() -> None:
     print(f"Update complete. Added {added} new papers. Total {len(cleaned)} papers.")
 
 
-def _safe_fetch(fetcher, query: str) -> list[dict[str, Any]]:
+def _safe_fetch(fetcher, query: str, since_year: int) -> list[dict[str, Any]]:
     try:
-        return fetcher(query)
+        return fetcher(query, from_year=since_year)
     except Exception as exc:
         print(f"Fetch failed for {fetcher.__name__} / '{query}': {exc}")
         return []
 
 
-def _is_plausible(record: dict[str, Any]) -> bool:
+def _is_plausible(record: dict[str, Any], since_year: int) -> bool:
     title = record.get("title", "")
     if not title or title == "Untitled":
+        return False
+    year = _safe_year(record.get("year"), log=False)
+    if year and year < since_year:
         return False
     text = f"{title} {record.get('_abstract', '')}".lower()
     additive_terms = ["additive manufacturing", "3d printing", "fused deposition", "fdm", "material extrusion"]
@@ -85,6 +91,15 @@ def _is_plausible(record: dict[str, Any]) -> bool:
         "digital material",
     ]
     return any(term in text for term in additive_terms) and any(term in text for term in topic_terms)
+
+
+def _since_year() -> int:
+    value = os.getenv("SINCE_YEAR", str(DEFAULT_SINCE_YEAR))
+    try:
+        return int(value)
+    except ValueError:
+        print(f"Invalid SINCE_YEAR={value!r}; using {DEFAULT_SINCE_YEAR}")
+        return DEFAULT_SINCE_YEAR
 
 
 def _finalize_record(record: dict[str, Any], today: str) -> dict[str, Any]:
@@ -143,14 +158,15 @@ def _strip_transient(record: dict[str, Any]) -> dict[str, Any]:
     return {key: value for key, value in record.items() if not key.startswith("_")}
 
 
-def _safe_year(value: Any) -> int | None:
+def _safe_year(value: Any, log: bool = True) -> int | None:
     try:
         year = int(value)
     except (TypeError, ValueError):
         return None
     current_year = date.today().year
     if year < 1900 or year > current_year + 1:
-        print(f"Discarding implausible publication year: {year}")
+        if log:
+            print(f"Discarding implausible publication year: {year}")
         return None
     return year
 
