@@ -2400,3 +2400,30 @@
 
 ### 주의사항
 - API key, token, secret은 기록하지 않았습니다.
+
+## 2026-06-13 01:10
+
+### 변경 요약
+- 마우스 이벤트가 단조롭다는 피드백을 반영해 UI interaction polish layer를 추가했습니다.
+- 논문 카드, venue 카드, 사이드바 토픽, 필터 입력, 버튼, 태그의 hover/focus/active 상태를 더 쫀득하게 조정했습니다.
+
+### 수정/생성한 파일
+- `index.html`: CSS/JS cache-busting 버전을 `20260613-0060`으로 갱신했습니다.
+- `assets/style.css`: motion 변수, hover lift, press feedback, focus ring, subtle gradient overlay, link shine, reduced-motion 대응을 추가했습니다.
+- `AGENT_LOG.md`: 이번 UI interaction 개선 기록을 추가했습니다.
+
+### 구현한 기능
+- 논문 카드 hover 시 살짝 떠오르고 제목 색이 바뀌며 배경에 약한 highlight가 생깁니다.
+- venue 카드와 사이드바 항목 hover/active 상태가 더 명확하게 반응합니다.
+- 버튼과 태그는 hover lift, active press, focus-visible ring을 지원합니다.
+- `prefers-reduced-motion: reduce` 사용자는 움직임이 거의 제거됩니다.
+
+### 설계 결정
+- 학술 큐레이션 사이트의 차분한 성격을 유지하기 위해 큰 애니메이션 대신 1-3px 이동, 짧은 easing, 미세한 그림자 변화 중심으로 구현했습니다.
+- 다크모드 대비가 깨지지 않도록 기존 CSS 변수와 `color-mix()`를 사용했습니다.
+
+### 남은 작업
+- 실제 브라우저에서 움직임이 과하거나 약하면 duration과 translate 값을 더 조정할 수 있습니다.
+
+### 주의사항
+- API key, token, secret은 기록하지 않았습니다.
