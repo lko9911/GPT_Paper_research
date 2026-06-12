@@ -20,11 +20,11 @@ const FIELD_ORDER = [
 ];
 
 const FIELD_SUBTOPICS = {
-  "생산/제조": ["공정 최적화", "금속/합금 제조", "건설/대형 제조", "복합재/소재 제조"],
-  "3D 프린팅": ["MMAM", "FGAM", "DM filament", "FDM/Material extrusion", "DLP", "툴패스", "퍼지/재료전환"],
-  "4D 프린팅": ["4D printing", "LCE", "메타물질", "Active materials", "Shape morphing", "Stimuli-responsive"],
-  "로봇틱스(생산제조)": ["로봇 AM", "제조 자동화", "경로계획"],
-  "AI 생산제조": ["Machine Learning", "Deep Learning", "Reinforcement Learning", "AI 공정제어", "설계 자동화"],
+  "생산/제조": ["공정 최적화", "금속/합금 제조", "복합재/소재 제조"],
+  "3D 프린팅": ["DLP", "Toolpath", "Material Switching"],
+  "4D 프린팅": ["LCE", "메타물질", "Active materials"],
+  "로봇틱스(생산제조)": ["로봇 AM", "제조 자동화", "Path Planning"],
+  "AI 생산제조": ["Machine Learning", "Design Automation"],
 };
 
 const FEATURED_TOPICS = [
@@ -471,7 +471,7 @@ function buildSideNav() {
       const subtopics = FIELD_SUBTOPICS[field] || [];
       const subtopicButtons = subtopics
         .map((subtopic) => {
-          const count = state.papers.filter((paper) => deriveField(paper) === field && deriveSubtopics(paper).includes(subtopic)).length;
+          const count = state.papers.filter((paper) => deriveField(paper) === field && paperHasRepresentativeTopic(paper, subtopic)).length;
           if (!count) return "";
           return `<button class="side-subtopic" type="button" data-side-field="${escapeAttribute(field)}" data-side-subtopic="${escapeAttribute(subtopic)}">
             <span class="side-label">${escapeHtml(displayLabel(subtopic))}</span>
@@ -699,7 +699,7 @@ function applyFilters() {
       paperTags.includes(state.activeTopic) ||
       paperCategories.includes(state.activeTopic) ||
       paperSubtopics.includes(state.activeTopic);
-    const matchesSubtopic = !state.activeSubtopic || paperSubtopics.includes(state.activeSubtopic);
+    const matchesSubtopic = !state.activeSubtopic || paperHasRepresentativeTopic(paper, state.activeSubtopic);
     const matchesYear = !year || String(paper.year || "") === year;
     return (
       matchesQuery &&
@@ -885,6 +885,11 @@ function representativeTags(paper) {
   });
 
   return collapseMaterialExtrusionTags(picked, paper).slice(0, 3);
+}
+
+function paperHasRepresentativeTopic(paper, topic) {
+  const target = normalizeTopicKey(canonicalTopicLabel(topic));
+  return representativeTags(paper).some((tag) => normalizeTopicKey(canonicalTopicLabel(tag)) === target);
 }
 
 function collapseMaterialExtrusionTags(tags, paper) {
