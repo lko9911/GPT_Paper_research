@@ -63,7 +63,7 @@ const UI_TEXT = {
     sideTitle: "분야 및 서브 토픽",
     totalPapers: "전체 논문 수",
     subtopicCount: "서브토픽 수",
-    latestUpdate: "최신 업데이트",
+    latestUpdate: "현재 / 갱신",
     weekAdded: "이번 주 추가",
     search: "검색",
     searchPlaceholder: "키워드, 저자, 태그, 요약 검색",
@@ -106,7 +106,7 @@ const UI_TEXT = {
     sideTitle: "Fields and Subtopics",
     totalPapers: "Total Papers",
     subtopicCount: "Subtopics",
-    latestUpdate: "Latest Update",
+    latestUpdate: "Now / Updated",
     weekAdded: "Added This Week",
     search: "Search",
     searchPlaceholder: "Search keywords, authors, tags, summaries",
@@ -281,6 +281,9 @@ function setupPreferences() {
       applyFilters();
     });
   }
+  window.setInterval(() => {
+    updateStats();
+  }, 60000);
 }
 
 function applyPreferences() {
@@ -616,13 +619,19 @@ function updateStats() {
 }
 
 function renderUpdatedStat(lastRunAt, fallbackDate) {
-  const formatted = formatRunTime(lastRunAt);
-  els.updated.classList.toggle("stat-datetime", Boolean(formatted));
-  if (!formatted) {
+  const now = formatRunTime(new Date().toISOString());
+  const lastRun = formatRunTime(lastRunAt);
+  els.updated.classList.add("stat-datetime");
+  if (!now) {
     els.updated.textContent = fallbackDate || "-";
     return;
   }
-  els.updated.innerHTML = `${escapeHtml(formatted.date)}<small>${escapeHtml(formatted.time)} KST</small>`;
+  const updatedText = lastRun
+    ? state.language === "ko"
+      ? `수집 ${lastRun.time} KST`
+      : `Updated ${lastRun.time} KST`
+    : fallbackDate || "";
+  els.updated.innerHTML = `${escapeHtml(now.date)}<small>${escapeHtml(now.time)} KST${updatedText ? ` · ${escapeHtml(updatedText)}` : ""}</small>`;
 }
 
 function applyFilters() {
