@@ -128,3 +128,28 @@
 
 ### 주의사항
 - 새 논문이 없을 때 자동 커밋 단계는 `git diff --quiet -- data/papers.json` 조건으로 건너뜁니다.
+
+## 2026-06-12 10:23
+
+### 변경 요약
+- 원격 GitHub 저장소 `lko9911/GPT_Paper_research`에 초기 사이트 구현을 커밋하고 push했습니다.
+- GitHub Pages 배포를 자동화하기 위한 별도 workflow와 Python 캐시 제외 규칙을 추가했습니다.
+
+### 수정/생성한 파일
+- `.gitignore`: Python 캐시, 가상환경, `.env` 파일이 커밋되지 않도록 추가했습니다.
+- `.github/workflows/deploy-pages.yml`: `main` 브랜치 push 또는 수동 실행 시 정적 사이트를 GitHub Pages로 배포하는 workflow를 추가했습니다.
+- `AGENT_LOG.md`: 원격 push와 배포 workflow 추가 내용을 기록했습니다.
+
+### 구현한 기능
+- GitHub Actions 기반 Pages 배포 경로를 추가했습니다.
+- 캐시 파일이 이후 커밋에 포함되지 않도록 방지했습니다.
+
+### 설계 결정
+- GitHub 저장소 Settings에서 branch 배포를 수동 설정하지 않아도 동작할 가능성이 높은 `actions/configure-pages`, `actions/upload-pages-artifact`, `actions/deploy-pages` 조합을 사용했습니다.
+
+### 남은 작업
+- GitHub 저장소의 Pages 설정이 GitHub Actions 배포를 허용하는지 확인해야 합니다.
+- 이미 올라간 `scripts/__pycache__` 파일은 다음 커밋에서 제거해야 합니다.
+
+### 주의사항
+- GitHub Pages URL은 배포 workflow가 성공한 뒤 `https://lko9911.github.io/GPT_Paper_research/` 형태로 접근할 수 있습니다.
