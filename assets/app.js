@@ -902,13 +902,17 @@ function renderSummaryBlock(paper) {
 }
 
 function formatSummarySections(paper) {
-  if (state.language === "en") {
-    return englishSummarySections(paper);
+  const sections = parseStoredSummarySections(paper.ai_summary_ko || "");
+  if (state.language !== "en") {
+    return sections;
   }
-  return parseKoreanSummarySections(paper.ai_summary_ko || "");
+  return sections.map((section, index) => ({
+    question: UI_TEXT.en.summaryQuestions[index] || section.question,
+    answer: section.answer,
+  }));
 }
 
-function parseKoreanSummarySections(summary) {
+function parseStoredSummarySections(summary) {
   const labels = UI_TEXT.ko.summaryQuestions;
   const lines = String(summary || "")
     .split(/\n+/)
@@ -929,24 +933,6 @@ function parseKoreanSummarySections(summary) {
   });
 
   return sections.length >= 3 ? sections : [];
-}
-
-function englishSummarySections(paper) {
-  const labels = UI_TEXT.en.summaryQuestions;
-  const title = paper.title || "This work";
-  const venue = paper.venue || "an unknown venue";
-  const year = paper.year || "an undated";
-  const tags = representativeTags(paper).map((tag) => displayLabel(tag));
-  const tagPhrase = formatEnglishList(tags) || "manufacturing and design";
-  const score = paper.relevance_score ? `${paper.relevance_score}/10` : "pending";
-
-  return [
-    { question: labels[0], answer: `${title} is a ${year} paper from ${venue} related to ${tagPhrase}.` },
-    { question: labels[1], answer: `It is tracked because it connects to a design or manufacturing bottleneck around ${tagPhrase}.` },
-    { question: labels[2], answer: "Check the DOI for the full method; this site does not reproduce publisher abstracts." },
-    { question: labels[3], answer: "The main finding should be confirmed in the original paper, while this tracker records its metadata-level relevance." },
-    { question: labels[4], answer: `It is useful as background or comparison literature for this topic; current relevance score: ${score}.` },
-  ];
 }
 
 function formatRelevanceNote(paper) {
