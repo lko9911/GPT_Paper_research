@@ -56,7 +56,7 @@ const UI_TEXT = {
     themeDark: "Dark",
     themeLight: "Light",
     langToggle: "EN",
-    subtitle: "MMAM, FGAM, DM filament, computational design 분야를 위한 AI 기반 논문 큐레이션 저장소",
+    subtitle: "생산·제조, 3D/4D 프린팅, 로봇틱스, AI 제조 분야를 위한 AI 기반 논문 큐레이션 저장소",
     noticeMain: "본 저장소는 DOI 링크와 AI 생성 요약만 제공합니다. 저작권이 있는 PDF나 출판사 초록 원문을 호스팅하지 않습니다.",
     noticeSoft:
       "본 사이트의 요약은 공개된 논문 메타데이터 및 초록을 바탕으로 AI가 새로 작성한 한글 요약입니다. 원문 및 정확한 내용은 DOI 링크를 통해 확인하세요.",
@@ -99,7 +99,7 @@ const UI_TEXT = {
     themeDark: "Dark",
     themeLight: "Light",
     langToggle: "KO",
-    subtitle: "An AI-assisted paper curation repository for MMAM, FGAM, DM filament, and computational design.",
+    subtitle: "An AI-assisted research tracker for manufacturing, 3D/4D printing, robotics, and AI-driven production.",
     noticeMain: "This repository provides DOI links and AI-generated summaries only. It does not host copyrighted PDFs or publisher abstract text.",
     noticeSoft:
       "Summaries on this site are newly written Korean AI summaries based on public paper metadata and abstracts. Check the DOI link for the original and authoritative content.",

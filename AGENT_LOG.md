@@ -1,5 +1,36 @@
 # AGENT_LOG
 
+## 2026-06-12 15:15
+
+### 변경 요약
+- 사이트 제목과 대표 설명을 현재 범위에 맞게 변경했습니다.
+- 기존 MMAM/FGAM 중심 제목에서 생산·제조, 3D/4D 프린팅, 로봇틱스, AI 제조를 포괄하는 연구 트래커 제목으로 재정의했습니다.
+- 언어 전환 시 표시되는 한글/영문 부제와 README 대표 문구도 함께 정리했습니다.
+
+### 수정/생성한 파일
+- `index.html`: 문서 title, meta description, eyebrow, H1, subtitle, CSS/JS cache busting version을 갱신했습니다.
+- `assets/app.js`: 한글/영문 subtitle UI 텍스트를 새 프로젝트 범위에 맞게 수정했습니다.
+- `README.md`: 프로젝트 대표 제목과 첫 설명 문장을 수정했습니다.
+- `AGENT_LOG.md`: 이번 제목/포지셔닝 변경 이력을 추가했습니다.
+
+### 구현한 기능
+- 사이트 첫 화면과 브라우저 탭 제목이 `Awesome AI Manufacturing and 3D/4D Printing Research`로 표시되도록 변경했습니다.
+- 한글 모드에서는 생산·제조, 3D/4D 프린팅, 로봇틱스, AI 제조 분야를 위한 큐레이션 저장소라는 설명이 표시됩니다.
+- 영어 모드에서는 manufacturing, 3D/4D printing, robotics, AI-driven production을 포괄하는 research tracker 설명이 표시됩니다.
+
+### 설계 결정
+- `Awesome` 스타일의 큐레이션 정체성은 유지하되, 특정 소재/공정 중심 제목보다 넓은 제조 연구 트래커로 읽히도록 제목을 확장했습니다.
+- 기존 데이터 수집 정책, API 사용 방식, 저작권 정책은 변경하지 않았습니다.
+- CSS/JS query version을 올려 GitHub Pages 캐시가 오래된 문구를 계속 보여줄 가능성을 줄였습니다.
+
+### 남은 작업
+- 실제 GitHub Pages 반영은 push 후 Pages 배포/캐시 갱신 시간에 따라 몇 분 지연될 수 있습니다.
+- 향후 필요하면 repository 이름 또는 GitHub Pages slug도 새 제목과 맞게 바꿀 수 있습니다.
+
+### 주의사항
+- API key, secret, token은 기록하지 않았습니다.
+- 이번 변경은 UI/문서의 제목과 설명만 바꾼 것이며, 논문 수집 범위나 비용 구조에는 영향을 주지 않습니다.
+
 ## 2026-06-12 10:19
 
 ### 변경 요약
