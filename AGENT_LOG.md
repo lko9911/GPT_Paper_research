@@ -1,5 +1,34 @@
 # AGENT_LOG
 
+## 2026-06-12 19:22
+
+### 변경 요약
+- 왼쪽 sidebar의 subtopic 목록을 대표 탐색용 토픽만 남기도록 정리했습니다.
+- `MMAM`, `FGAM`, `DM filament`, `FDM/Material extrusion`처럼 서로 겹치는 3D 재료/압출 계열 토픽은 sidebar에서 제거했습니다.
+- sidebar subtopic count를 넓은 키워드 감지 기준이 아니라 카드 대표 태그 기준으로 다시 계산하도록 변경했습니다.
+
+### 수정/생성한 파일
+- `assets/app.js`: `FIELD_SUBTOPICS`를 대표 토픽 중심으로 정리했습니다.
+- `assets/app.js`: `paperHasRepresentativeTopic()`을 추가해 sidebar count와 sidebar click filter가 카드 대표 태그 기준을 따르도록 했습니다.
+- `index.html`: CSS/JS cache-busting version을 갱신했습니다.
+- `AGENT_LOG.md`: 이번 sidebar 대표 토픽 정리 내용을 기록했습니다.
+
+### 구현한 기능
+- sidebar에서 모든 논문에 붙어 보이던 `MMAM 100`, `FGAM 100`, `DM filament 100`, `FDM/Material extrusion 100`류의 중복 표시를 제거했습니다.
+- sidebar count는 실제 카드에 대표 태그로 표시되는 논문 수와 더 가깝게 계산됩니다.
+- subtopic을 클릭했을 때도 같은 대표 태그 기준으로 필터링합니다.
+
+### 설계 결정
+- 카드 내부에는 세부 대표 태그를 유지하되, 왼쪽 sidebar는 탐색을 위한 상위/대표 필터만 보여주도록 역할을 분리했습니다.
+- `deriveSubtopics()`는 검색/필터 보조용으로 유지하고, sidebar 표시와 count는 `representativeTags()` 기반으로 좁혔습니다.
+
+### 남은 작업
+- 실제 배포 화면에서 sidebar count가 기대한 수준으로 줄었는지 확인하고, 너무 적게 잡히는 토픽은 대표 태그 규칙을 조정할 수 있습니다.
+
+### 주의사항
+- 데이터 파일과 자동 수집 로직은 변경하지 않았습니다.
+- 이번 변경은 프론트엔드 표시/필터 기준 조정이며 API 호출 비용에는 영향이 없습니다.
+
 ## 2026-06-12 19:10
 
 ### 변경 요약
