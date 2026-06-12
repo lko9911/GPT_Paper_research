@@ -1,5 +1,36 @@
 # AGENT_LOG
 
+## 2026-06-12 22:00
+
+### 변경 요약
+- 논문 요약 5문항 표준을 `Topic`, `Problem`, `Method`, `Key Result`, `Takeaway` 형식으로 변경했습니다.
+- 기존 “내 연구/발표에 왜 필요한가?” 항목을 `Takeaway - 그래서 이 논문의 핵심 메시지는 무엇인가?`로 대체했습니다.
+- 이미 저장되어 있던 번호형 요약 2편은 OpenAI를 다시 호출하지 않고 라벨만 새 형식으로 변환했습니다.
+
+### 수정/생성한 파일
+- `scripts/summarize.py`: OpenAI 프롬프트, fallback 요약, OpenAI 응답 정규화 라벨을 새 5문항 형식으로 변경했습니다.
+- `assets/app.js`: 한글/영문 모드의 카드 질문 라벨을 `Topic`, `Problem`, `Method`, `Key Result`, `Takeaway`로 통일했습니다.
+- `data/papers.json`: 기존 번호형 요약 2편의 라벨을 새 표준으로 변환했습니다.
+- `README.md`: 요약 형식 설명과 schema 예시를 새 표준으로 갱신했습니다.
+- `ARCHITECTURE.md`: 요약 구조 설명을 새 표준으로 갱신했습니다.
+- `index.html`: JS/CSS cache-busting version을 갱신했습니다.
+- `AGENT_LOG.md`: 이번 요약 표준 변경 작업을 기록했습니다.
+
+### 구현한 기능
+- 새 OpenAI 요약과 fallback 요약은 `Topic / Problem / Method / Key Result / Takeaway` 형식을 사용합니다.
+- 프론트엔드의 한글/영문 모드는 동일한 5개 라벨을 표시합니다.
+
+### 설계 결정
+- 답변은 한국어로 유지하고, 질문 라벨은 논문 리뷰에 적합한 짧은 영문 키워드를 사용합니다.
+- 기존 요약 내용은 재생성하지 않고 라벨만 변환해 불필요한 OpenAI 비용을 만들지 않았습니다.
+
+### 남은 작업
+- 전체 OpenAI 재요약 workflow를 실행하면 나머지 문단형 요약도 새 5문항 표준으로 생성됩니다.
+
+### 주의사항
+- 이번 변경 자체는 OpenAI API를 호출하지 않았습니다.
+- raw abstract와 PDF는 저장하지 않았습니다.
+
 ## 2026-06-12 21:53
 
 ### 변경 요약

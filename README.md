@@ -4,7 +4,7 @@
 
 ## 프로젝트 목적
 
-이 저장소는 multi-material additive manufacturing, functionally graded additive manufacturing, blended FDM, digital material filament, computational design, toolpath optimization, material switching optimization 관련 논문 메타데이터를 주기적으로 수집하고, DOI 링크와 한글 AI 요약을 함께 보여줍니다. 요약은 발표 준비에 바로 쓰기 쉽도록 `무엇에 관한 논문인가`, `어떤 문제를 다루는가`, `어떤 방법을 쓰는가`, `핵심 결과는 무엇인가`, `내 연구/발표에 왜 필요한가`의 5문항 형식으로 작성합니다.
+이 저장소는 multi-material additive manufacturing, functionally graded additive manufacturing, blended FDM, digital material filament, computational design, toolpath optimization, material switching optimization 관련 논문 메타데이터를 주기적으로 수집하고, DOI 링크와 한글 AI 요약을 함께 보여줍니다. 요약은 논문 리뷰에 바로 쓰기 쉽도록 `Topic`, `Problem`, `Method`, `Key Result`, `Takeaway`의 5문항 형식으로 작성합니다.
 
 현재 자동 조사 범위는 2024년 이후 논문입니다. `SINCE_YEAR` 환경변수로 시작 연도를 바꿀 수 있으며 기본값은 `2024`입니다.
 
@@ -100,7 +100,7 @@ dry_run: false
   "categories": ["기능성 구배 적층제조"],
   "tags": ["FGAM", "MMAM", "계산설계"],
   "relevance_score": 8,
-  "ai_summary_ko": "1. 무엇에 관한 논문인가? ...\n2. 어떤 문제를 해결하려고 하는가? ...\n3. 어떤 접근법/방법을 사용했는가? ...\n4. 핵심 결과는 무엇인가? ...\n5. 내 연구/발표에 왜 필요한가? ...",
+  "ai_summary_ko": "1. Topic - 이 논문은 무엇을 다루는가? ...\n2. Problem - 어떤 문제나 한계를 해결하려는가? ...\n3. Method - 어떤 방법이나 접근을 사용했는가? ...\n4. Key Result - 가장 중요한 결과는 무엇인가? ...\n5. Takeaway - 그래서 이 논문의 핵심 메시지는 무엇인가? ...",
   "relevance_note_ko": "...",
   "abstract_used_for_summary": true,
   "raw_abstract_displayed": false,

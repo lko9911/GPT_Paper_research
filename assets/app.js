@@ -95,11 +95,11 @@ const UI_TEXT = {
     relevanceLabel: "관련성",
     summaryMissing: "요약이 아직 생성되지 않았습니다.",
     summaryQuestions: [
-      "무엇에 관한 논문인가?",
-      "어떤 문제를 해결하려고 하는가?",
-      "어떤 접근법/방법을 사용했는가?",
-      "핵심 결과는 무엇인가?",
-      "내 연구/발표에 왜 필요한가?",
+      "Topic",
+      "Problem",
+      "Method",
+      "Key Result",
+      "Takeaway",
     ],
   },
   en: {
@@ -143,11 +143,11 @@ const UI_TEXT = {
     relevanceLabel: "Relevance",
     summaryMissing: "Summary has not been generated yet.",
     summaryQuestions: [
-      "What is this paper about?",
-      "What problem does it address?",
-      "What method is used?",
-      "What is the main finding?",
-      "Why is it useful for my topic?",
+      "Topic",
+      "Problem",
+      "Method",
+      "Key Result",
+      "Takeaway",
     ],
   },
 };
@@ -926,6 +926,7 @@ function parseStoredSummarySections(summary) {
     const answer = line
       .replace(/^\d+\.\s*/, "")
       .replace(/^.*?\?\s*/, "")
+      .replace(/^(Topic|Problem|Method|Key Result|Takeaway)\s*[-:]\s*/i, "")
       .trim();
     if (answer) {
       sections.push({ question: label, answer });
