@@ -51,6 +51,95 @@ const TARGET_VENUES = [
   "Additive Manufacturing",
 ];
 
+const UI_TEXT = {
+  ko: {
+    themeDark: "Dark",
+    themeLight: "Light",
+    langToggle: "EN",
+    subtitle: "MMAM, FGAM, DM filament, computational design 분야를 위한 AI 기반 논문 큐레이션 저장소",
+    noticeMain: "본 저장소는 DOI 링크와 AI 생성 요약만 제공합니다. 저작권이 있는 PDF나 출판사 초록 원문을 호스팅하지 않습니다.",
+    noticeSoft:
+      "본 사이트의 요약은 공개된 논문 메타데이터 및 초록을 바탕으로 AI가 새로 작성한 한글 요약입니다. 원문 및 정확한 내용은 DOI 링크를 통해 확인하세요.",
+    sideTitle: "분야 및 서브 토픽",
+    totalPapers: "전체 논문 수",
+    subtopicCount: "서브토픽 수",
+    latestUpdate: "최신 업데이트",
+    weekAdded: "이번 주 추가",
+    search: "검색",
+    searchPlaceholder: "키워드, 저자, 태그, 요약 검색",
+    field: "분야",
+    tagSubtopic: "태그/서브 토픽",
+    venue: "게재지",
+    year: "연도",
+    sort: "정렬",
+    all: "전체",
+    newest: "최신순",
+    relevance: "관련성 점수순",
+    title: "제목순",
+    venuesTitle: "주요 게재지",
+    venuesDescription: "핵심 게재지와 2편 이상 수집된 학술지는 개별 표시하고, 나머지는 Others로 묶습니다.",
+    venueRule: "표시 기준: 핵심 게재지와 2편 이상 학술지는 개별 표시, 나머지는 Others로 묶음",
+    allVenues: "All venues",
+    papersByField: "Papers by Field",
+    curatedPapers: "Curated Papers",
+    emptyTitle: "표시할 논문이 없습니다.",
+    emptyText: "검색어와 필터를 조정하거나 GitHub Actions 업데이트를 실행해 보세요.",
+    footer:
+      "Metadata from OpenAlex, Crossref, and optionally Semantic Scholar. Summaries are generated and do not reproduce publisher abstracts.",
+    papers: "papers",
+    priority: "priority",
+    others: "Others",
+    lowCountVenue: "2편 이하의 학술지",
+    showing: "편 표시 중",
+    unknownYear: "연도 미상",
+    relevanceLabel: "관련성",
+    summaryMissing: "요약이 아직 생성되지 않았습니다.",
+  },
+  en: {
+    themeDark: "Dark",
+    themeLight: "Light",
+    langToggle: "KO",
+    subtitle: "An AI-assisted paper curation repository for MMAM, FGAM, DM filament, and computational design.",
+    noticeMain: "This repository provides DOI links and AI-generated summaries only. It does not host copyrighted PDFs or publisher abstract text.",
+    noticeSoft:
+      "Summaries on this site are newly written Korean AI summaries based on public paper metadata and abstracts. Check the DOI link for the original and authoritative content.",
+    sideTitle: "Fields and Subtopics",
+    totalPapers: "Total Papers",
+    subtopicCount: "Subtopics",
+    latestUpdate: "Latest Update",
+    weekAdded: "Added This Week",
+    search: "Search",
+    searchPlaceholder: "Search keywords, authors, tags, summaries",
+    field: "Field",
+    tagSubtopic: "Tag/Subtopic",
+    venue: "Venue",
+    year: "Year",
+    sort: "Sort",
+    all: "All",
+    newest: "Newest",
+    relevance: "Relevance",
+    title: "Title",
+    venuesTitle: "Key Venues",
+    venuesDescription: "Core venues and journals with at least two collected papers are shown individually; the rest are grouped as Others.",
+    venueRule: "Display rule: core venues and 2+ paper journals are shown individually; all others are grouped.",
+    allVenues: "All venues",
+    papersByField: "Papers by Field",
+    curatedPapers: "Curated Papers",
+    emptyTitle: "No papers to display.",
+    emptyText: "Adjust the search or filters, or run the GitHub Actions update.",
+    footer:
+      "Metadata from OpenAlex, Crossref, and optionally Semantic Scholar. Summaries are generated and do not reproduce publisher abstracts.",
+    papers: "papers",
+    priority: "priority",
+    others: "Others",
+    lowCountVenue: "Journals with 2 or fewer papers",
+    showing: "papers shown",
+    unknownYear: "Year unknown",
+    relevanceLabel: "Relevance",
+    summaryMissing: "Summary has not been generated yet.",
+  },
+};
+
 const TAG_CATEGORY_ALIASES = {
   툴패스: "툴패스 계획",
   경로계획: "그래프 탐색 / 경로 계획 알고리즘",
@@ -70,6 +159,8 @@ const state = {
   activeTargetVenue: "",
   activeVenueGroup: "",
   activeSubtopic: "",
+  theme: localStorage.getItem("theme") || "light",
+  language: localStorage.getItem("language") || "ko",
 };
 
 const els = {
@@ -90,9 +181,12 @@ const els = {
   categories: document.querySelector("#stat-categories"),
   updated: document.querySelector("#stat-updated"),
   week: document.querySelector("#stat-week"),
+  themeToggle: document.querySelector("#theme-toggle"),
+  languageToggle: document.querySelector("#language-toggle"),
 };
 
 async function init() {
+  setupPreferences();
   try {
     const response = await fetch(`data/papers.json?ts=${Date.now()}`);
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
@@ -130,6 +224,95 @@ async function init() {
       applyFilters();
     });
   });
+}
+
+function setupPreferences() {
+  applyPreferences();
+  if (els.themeToggle) {
+    els.themeToggle.addEventListener("click", () => {
+      state.theme = state.theme === "dark" ? "light" : "dark";
+      localStorage.setItem("theme", state.theme);
+      applyPreferences();
+    });
+  }
+  if (els.languageToggle) {
+    els.languageToggle.addEventListener("click", () => {
+      state.language = state.language === "ko" ? "en" : "ko";
+      localStorage.setItem("language", state.language);
+      applyPreferences();
+      buildFiltersReset();
+      buildTopicNavReset();
+      buildVenueNavReset();
+      buildSideNav();
+      renderVenueBoard();
+      updateStats();
+      applyFilters();
+    });
+  }
+}
+
+function applyPreferences() {
+  document.documentElement.dataset.theme = state.theme;
+  document.documentElement.lang = state.language === "ko" ? "ko" : "en";
+  if (els.themeToggle) {
+    els.themeToggle.textContent = state.theme === "dark" ? t("themeLight") : t("themeDark");
+  }
+  if (els.languageToggle) {
+    els.languageToggle.textContent = t("langToggle");
+  }
+  applyStaticLanguage();
+}
+
+function applyStaticLanguage() {
+  setText(".subtitle", t("subtitle"));
+  setText(".notice", t("noticeMain"));
+  setText(".notice-soft", t("noticeSoft"));
+  setText(".sidebar strong", t("sideTitle"));
+  setText(".stats article:nth-child(1) strong", t("totalPapers"));
+  setText(".stats article:nth-child(2) strong", t("subtopicCount"));
+  setText(".stats article:nth-child(3) strong", t("latestUpdate"));
+  setText(".stats article:nth-child(4) strong", t("weekAdded"));
+  setText(".controls label:nth-child(1) span", t("search"));
+  setText(".controls label:nth-child(2) span", t("field"));
+  setText(".controls label:nth-child(3) span", t("tagSubtopic"));
+  setText(".controls label:nth-child(4) span", t("venue"));
+  setText(".controls label:nth-child(5) span", t("year"));
+  setText(".controls label:nth-child(6) span", t("sort"));
+  setText("#category-filter option[value='']", t("all"));
+  setText("#tag-filter option[value='']", t("all"));
+  setText("#venue-filter option[value='']", t("all"));
+  setText("#year-filter option[value='']", t("all"));
+  setText("#sort-select option[value='newest']", t("newest"));
+  setText("#sort-select option[value='relevance']", t("relevance"));
+  setText("#sort-select option[value='title']", t("title"));
+  setText(".venue-section-head h2", t("venuesTitle"));
+  setText(".venue-section-head p:last-child", t("venuesDescription"));
+  setText(".results-head .section-kicker", t("papersByField"));
+  setText(".results-head h2", t("curatedPapers"));
+  setText("#empty-state strong", t("emptyTitle"));
+  setText("#empty-state p", t("emptyText"));
+  setText(".site-footer p", t("footer"));
+  if (els.search) {
+    els.search.placeholder = t("searchPlaceholder");
+  }
+}
+
+function buildFiltersReset() {
+  resetSelect(els.category, t("all"));
+  resetSelect(els.tag, t("all"));
+  resetSelect(els.venue, t("all"));
+  resetSelect(els.year, t("all"));
+  buildFilters();
+}
+
+function buildTopicNavReset() {
+  els.topicNav.innerHTML = `<button type="button" class="topic-pill is-active" data-topic="">All</button>`;
+  buildTopicNav();
+}
+
+function buildVenueNavReset() {
+  els.venueNav.innerHTML = `<button type="button" class="venue-pill is-active" data-target-venue="">${escapeHtml(t("allVenues"))}</button>`;
+  buildVenueNav();
 }
 
 function buildFilters() {
@@ -298,16 +481,16 @@ function renderVenueBoard() {
 
   const mainCards = [
     `<button class="venue-card is-all is-active" type="button" data-board-venue="">
-      <strong>All venues</strong>
-      <span>${state.papers.length} papers</span>
+      <strong>${escapeHtml(t("allVenues"))}</strong>
+      <span>${state.papers.length} ${escapeHtml(t("papers"))}</span>
     </button>`,
-    ...priorityEntries.map(([venue, count]) => venueCard(venue, count, "priority")),
+    ...priorityEntries.map(([venue, count]) => venueCard(venue, count, t("priority"))),
     ...discoveredEntries.map(([venue, count]) => venueCard(venue, count)),
     hiddenPaperCount ? otherVenueCard(hiddenPaperCount, hiddenEntries.length) : "",
   ].join("");
 
   els.venueBoard.innerHTML = `
-    <div class="venue-rule">표시 기준: 핵심 게재지와 2편 이상 학술지는 개별 표시, 나머지는 Others로 묶음</div>
+    <div class="venue-rule">${escapeHtml(t("venueRule"))}</div>
     <div class="venue-featured">${mainCards}</div>
   `;
 
@@ -366,16 +549,16 @@ function venueCard(venue, count, label = "") {
   const badge = label ? `<em>${escapeHtml(label)}</em>` : "";
   return `<button class="venue-card" type="button" data-board-venue="${escapeAttribute(venue)}">
     <strong>${escapeHtml(shortVenue(venue))}</strong>
-    <span>${count} papers</span>
+    <span>${count} ${escapeHtml(t("papers"))}</span>
     ${badge}
   </button>`;
 }
 
 function otherVenueCard(paperCount, venueCount) {
   return `<button class="venue-card venue-card-muted" type="button" data-board-venue="" data-board-venue-group="other">
-    <strong>Others</strong>
-    <span>${paperCount} papers · ${venueCount} venues</span>
-    <em>2편 이하의 학술지</em>
+    <strong>${escapeHtml(t("others"))}</strong>
+    <span>${paperCount} ${escapeHtml(t("papers"))} · ${venueCount} venues</span>
+    <em>${escapeHtml(t("lowCountVenue"))}</em>
   </button>`;
 }
 
@@ -489,7 +672,10 @@ function isOtherVenuePaper(paper) {
 }
 
 function render() {
-  els.count.textContent = `${state.filtered.length.toLocaleString("ko-KR")}편 표시 중`;
+  els.count.textContent =
+    state.language === "ko"
+      ? `${state.filtered.length.toLocaleString("ko-KR")}${t("showing")}`
+      : `${state.filtered.length.toLocaleString("en-US")} ${t("showing")}`;
   els.list.innerHTML = "";
   els.empty.hidden = state.filtered.length > 0;
 
@@ -516,9 +702,9 @@ function renderGroup(category, papers) {
   section.className = "paper-group";
   section.id = sectionId(category);
   section.innerHTML = `
-    <div class="group-heading">
-      <h3>${escapeHtml(category)}</h3>
-      <span>${papers.length.toLocaleString("ko-KR")} papers</span>
+      <div class="group-heading">
+        <h3>${escapeHtml(category)}</h3>
+      <span>${papers.length.toLocaleString(state.language === "ko" ? "ko-KR" : "en-US")} ${escapeHtml(t("papers"))}</span>
     </div>
   `;
   papers.forEach((paper) => section.append(renderPaperRow(paper)));
@@ -539,12 +725,12 @@ function renderPaperRow(paper) {
   article.innerHTML = `
     <div class="card-content">
       <div class="card-topline">
-        <span>${escapeHtml(String(paper.year || "연도 미상"))}</span>
-        <span>관련성 ${escapeHtml(String(paper.relevance_score || "-"))}/10</span>
+        <span>${escapeHtml(String(paper.year || t("unknownYear")))}</span>
+        <span>${escapeHtml(t("relevanceLabel"))} ${escapeHtml(String(paper.relevance_score || "-"))}/10</span>
       </div>
       <h4 class="paper-title">${escapeHtml(paper.title || "Untitled")}</h4>
-      <p class="meta">${escapeHtml(authors)}${authors ? " · " : ""}${escapeHtml(String(paper.year || "연도 미상"))} · ${escapeHtml(paper.venue || "Venue unknown")} · ${escapeHtml(sourceText)}</p>
-      <p class="summary">${escapeHtml(paper.ai_summary_ko || "요약이 아직 생성되지 않았습니다.")}</p>
+      <p class="meta">${escapeHtml(authors)}${authors ? " · " : ""}${escapeHtml(String(paper.year || t("unknownYear")))} · ${escapeHtml(paper.venue || "Venue unknown")} · ${escapeHtml(sourceText)}</p>
+      <p class="summary">${escapeHtml(paper.ai_summary_ko || t("summaryMissing"))}</p>
       <p class="relevance-note">${escapeHtml(paper.relevance_note_ko || "")}</p>
       <div class="tag-line">${categoryBadges}${subtopicBadges}${tagBadges}</div>
       <div class="card-links">
@@ -752,6 +938,24 @@ function scrollToPapers() {
   if (paperList) {
     paperList.scrollIntoView({ behavior: "smooth", block: "start" });
   }
+}
+
+function t(key) {
+  const table = UI_TEXT[state.language] || UI_TEXT.ko;
+  return table[key] || UI_TEXT.ko[key] || key;
+}
+
+function setText(selector, value) {
+  const node = document.querySelector(selector);
+  if (node) {
+    node.textContent = value;
+  }
+}
+
+function resetSelect(select, defaultLabel) {
+  if (!select) return;
+  select.innerHTML = "";
+  select.append(new Option(defaultLabel, ""));
 }
 
 function sectionId(value) {
