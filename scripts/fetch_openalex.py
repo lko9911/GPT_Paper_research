@@ -48,7 +48,7 @@ def fetch_openalex(
     page = 0
 
     while True:
-        response = requests.get(OPENALEX_API, params=params, headers=_headers(), timeout=30)
+        response = _get_with_retry(OPENALEX_API, params=params)
         response.raise_for_status()
         payload = response.json()
         results = payload.get("results", [])
@@ -71,7 +71,7 @@ def fetch_openalex_by_doi(doi: str) -> dict[str, Any] | None:
     doi = _clean_doi(doi)
     if not doi:
         return None
-    response = requests.get(f"{OPENALEX_API}/doi:{doi}", headers=_headers(), timeout=30)
+    response = _get_with_retry(f"{OPENALEX_API}/doi:{doi}")
     if response.status_code == 404:
         return None
     response.raise_for_status()
@@ -140,6 +140,23 @@ def _headers() -> dict[str, str]:
         "User-Agent": f"awesome-mmam-paper-tracker/1.0 ({contact})",
         "Accept": "application/json",
     }
+
+
+def _get_with_retry(url: str, params: dict[str, Any] | None = None) -> requests.Response:
+    retries = int(os.getenv("OPENALEX_RETRIES", "3"))
+    base_sleep = float(os.getenv("API_SLEEP_SECONDS", "0.2"))
+    for attempt in range(retries + 1):
+        response = requests.get(url, params=params, headers=_headers(), timeout=30)
+        if response.status_code != 429:
+            response.raise_for_status()
+            return response
+        retry_after = response.headers.get("Retry-After")
+        if attempt >= retries:
+            response.raise_for_status()
+        wait = float(retry_after) if retry_after and retry_after.isdigit() else base_sleep * (2 ** attempt + 1)
+        print(f"OpenAlex rate limited; retrying in {wait:.1f}s")
+        time.sleep(wait)
+    raise RuntimeError("OpenAlex retry loop exhausted")
 
 
 def _max_pages() -> int:
