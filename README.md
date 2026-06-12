@@ -122,6 +122,8 @@ Science, Nature, Nature Communications, Advanced Materials 같은 게재지도 O
 - Science Robotics
 - Additive Manufacturing
 
+이 목록은 `data/target_venues.json`에 OpenAlex source ID와 함께 저장되어 있습니다. 자동 업데이트는 일반 주제 검색에 더해 우선 추적 게재지 안에서 별도 검색도 수행합니다.
+
 ## 한계점
 
 - 메타데이터 API의 색인 상태에 따라 최신 논문 반영이 지연될 수 있습니다.

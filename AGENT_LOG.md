@@ -382,6 +382,38 @@
 ### 주의사항
 - 현재 데이터의 venue는 모두 1편씩이라 sidebar venue 필터는 각 게재지별로 1편씩 표시할 가능성이 큽니다.
 
+## 2026-06-12 10:34
+
+### 변경 요약
+- 사용자가 Nature/Science/Additive Manufacturing에 논문이 없는 이유를 물어, 기존 파이프라인이 venue 이름을 검색어에 섞는 수준이었고 실제 저널 내부 검색을 하지 않았음을 확인했습니다.
+- OpenAlex source ID 기반 우선 게재지 검색을 추가했습니다.
+- 2024년 이후 기준으로 업데이트를 실행해 우선 게재지 논문 12편을 추가했습니다.
+
+### 수정/생성한 파일
+- `data/target_venues.json`: Nature, Nature Communications, Nature Materials, Nature Reviews Materials, Science, Science Advances, Science Robotics, Additive Manufacturing의 OpenAlex source ID를 저장했습니다.
+- `scripts/fetch_openalex.py`: `source_id` 인자를 추가해 `primary_location.source.id` 필터로 특정 게재지 내부 검색을 지원하도록 수정했습니다.
+- `scripts/update_papers.py`: 일반 검색 후 `data/target_venues.json`을 순회하며 우선 게재지 내부 검색을 수행하도록 확장했습니다.
+- `data/papers.json`: 우선 게재지 검색 결과 12편을 추가해 총 22편이 되었습니다.
+- `README.md`: 우선 게재지 목록이 source ID 기반으로 검색된다는 설명을 추가했습니다.
+- `ARCHITECTURE.md`: target venue 검색 단계를 파이프라인 설명에 추가했습니다.
+- `AGENT_LOG.md`: 이번 원인 분석과 구현 내용을 기록했습니다.
+
+### 구현한 기능
+- 우선 게재지별 OpenAlex source ID 검색
+- Nature Communications, Science, Additive Manufacturing 등에서 공식 API 메타데이터 기반 논문 수집
+- 기존 DOI/title 중복 제거와 저작권 정책 유지
+
+### 설계 결정
+- 저널 페이지를 직접 크롤링하지 않고 OpenAlex source ID를 사용했습니다. 이 방식은 공식 메타데이터 API만 사용하면서도 특정 게재지 안의 논문을 정확히 찾을 수 있습니다.
+- venue별 검색은 API 호출 수를 과도하게 늘리지 않도록 기본 검색어 앞쪽 6개만 사용합니다.
+
+### 남은 작업
+- target venue별 검색어를 별도 파일로 세분화하면 Nature/Science 계열의 관련 없는 논문 유입을 더 줄일 수 있습니다.
+- 새로 추가된 12편의 관련성을 사람이 검수하면 큐레이션 품질이 좋아집니다.
+
+### 주의사항
+- 현재 target venue count는 Additive Manufacturing 9편, Nature Communications 2편, Science 1편입니다.
+
 ## 2026-06-12 10:32
 
 ### 변경 요약

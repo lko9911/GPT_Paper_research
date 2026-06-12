@@ -19,7 +19,9 @@ from summarize import summarize_record
 ROOT = Path(__file__).resolve().parents[1]
 PAPERS_PATH = ROOT / "data" / "papers.json"
 QUERIES_PATH = ROOT / "data" / "queries.json"
+TARGET_VENUES_PATH = ROOT / "data" / "target_venues.json"
 DEFAULT_SINCE_YEAR = 2024
+VENUE_QUERY_LIMIT = 6
 
 
 def main() -> None:
@@ -29,6 +31,7 @@ def main() -> None:
     since_year = _since_year()
     existing = _load_json(PAPERS_PATH, [])
     queries = _load_json(QUERIES_PATH, [])
+    target_venues = _load_json(TARGET_VENUES_PATH, [])
     index = {_dedupe_key(paper): paper for paper in existing}
     added = 0
 
@@ -54,6 +57,30 @@ def main() -> None:
             added += 1
             print(f"Added: {paper['title']}")
 
+    for target in target_venues:
+        venue_name = target.get("name", "Unknown venue")
+        source_id = target.get("openalex_source_id", "")
+        if not source_id:
+            continue
+        print(f"Searching target venue: {venue_name}")
+        for query in queries[:VENUE_QUERY_LIMIT]:
+            candidates = _safe_fetch_openalex_source(query, source_id, since_year)
+            for candidate in candidates:
+                if not _is_plausible(candidate, since_year):
+                    continue
+                key = _dedupe_key(candidate)
+                if key in index:
+                    _merge_source(index[key], candidate, today)
+                    continue
+
+                enriched = enrich_with_semantic_scholar(candidate)
+                summarized = summarize_record(enriched)
+                paper = _finalize_record(summarized, today)
+                index[_dedupe_key(paper)] = paper
+                existing.append(paper)
+                added += 1
+                print(f"Added from {venue_name}: {paper['title']}")
+
     cleaned = [_strip_transient(paper) for paper in existing]
     cleaned.sort(key=lambda paper: (paper.get("year") or 0, paper.get("relevance_score") or 0, paper.get("title") or ""), reverse=True)
     _write_json_if_changed(PAPERS_PATH, cleaned)
@@ -65,6 +92,14 @@ def _safe_fetch(fetcher, query: str, since_year: int) -> list[dict[str, Any]]:
         return fetcher(query, from_year=since_year)
     except Exception as exc:
         print(f"Fetch failed for {fetcher.__name__} / '{query}': {exc}")
+        return []
+
+
+def _safe_fetch_openalex_source(query: str, source_id: str, since_year: int) -> list[dict[str, Any]]:
+    try:
+        return fetch_openalex(query, per_page=10, from_year=since_year, source_id=source_id)
+    except Exception as exc:
+        print(f"Venue fetch failed for OpenAlex source {source_id} / '{query}': {exc}")
         return []
 
 
