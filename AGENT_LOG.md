@@ -1,5 +1,30 @@
 # AGENT_LOG
 
+## 2026-06-12 23:50
+
+### 변경 요약
+- `AI Manufacturing` 사이드바에서 `Manufacturing Automation`이 두 번 표시되던 버그를 수정했습니다.
+- 실제로는 `Design Automation` 항목이었지만, canonical topic 판별 순서 때문에 넓은 `automation` 규칙에 먼저 걸려 `Manufacturing Automation`으로 표시되고 있었습니다.
+
+### 수정/생성한 파일
+- `assets/app.js`: `canonicalTopicLabel()`에서 `Design automation` 판별을 일반 `Manufacturing automation` 판별보다 먼저 수행하도록 순서를 조정했습니다.
+- `index.html`: GitHub Pages 캐시 갱신을 위해 CSS/JS 버전을 업데이트했습니다.
+- `AGENT_LOG.md`: 이번 사이드바 중복 라벨 버그 수정 작업을 기록했습니다.
+
+### 구현한 기능
+- `AI Manufacturing` 아래의 중복 `Manufacturing Automation` 항목이 사라지고, 마지막 항목은 `Design Automation`으로 표시됩니다.
+- 제조 자동화 키워드는 유지하되, `design automation`, `computational design`, `generative design`, `topology optimization`은 설계 자동화로 먼저 정규화됩니다.
+
+### 설계 결정
+- `automation`은 너무 넓은 단어라 구체적인 토픽인 `Design Automation`을 먼저 매칭해야 합니다.
+- 기존 데이터 구조는 유지하고 프론트엔드 정규화 순서만 수정해 표시 버그를 해결했습니다.
+
+### 남은 작업
+- 공개 사이트 반영 후 사이드바에서 `Manufacturing Automation` 중복이 사라졌는지 확인합니다.
+
+### 주의사항
+- 이번 변경은 UI 라벨 정규화 로직만 수정하며 논문 데이터, API key, PDF/초록 정책은 변경하지 않았습니다.
+
 ## 2026-06-12 23:45
 
 ### 변경 요약
