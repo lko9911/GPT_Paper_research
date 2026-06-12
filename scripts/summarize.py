@@ -45,6 +45,17 @@ TAG_MAP = {
     "AI/ML": ["machine learning", "deep learning", "neural", "artificial intelligence"],
 }
 
+TAG_CATEGORY_ALIASES = {
+    "툴패스": "툴패스 계획",
+    "경로계획": "그래프 탐색 / 경로 계획 알고리즘",
+    "재료분포": "재료분포 최적화",
+    "퍼지 감소": "재료 전환 / 퍼지 감소",
+    "계산설계": "계산설계",
+    "MMAM": "다중재료 적층제조",
+    "FGAM": "기능성 구배 적층제조",
+    "AI/ML": "적층제조를 위한 AI 및 머신러닝",
+}
+
 
 def summarize_record(record: dict[str, Any]) -> dict[str, Any]:
     """Add Korean summary fields to a record.
@@ -147,7 +158,7 @@ def _tags(record: dict[str, Any], abstract: str, categories: list[str]) -> list[
     for category in categories:
         if category not in tags and len(tags) < 6:
             tags.append(category)
-    return tags or ["적층제조", "문헌추적", "메타데이터"]
+    return _dedupe_tags(tags, categories) or ["적층제조", "문헌추적", "메타데이터"]
 
 
 def _score(record: dict[str, Any], abstract: str, categories: list[str]) -> int:
@@ -182,15 +193,32 @@ def _text(record: dict[str, Any], abstract: str) -> str:
 
 def _sanitize_generated(payload: dict[str, Any]) -> dict[str, Any]:
     categories = [category for category in payload.get("categories", []) if category in CATEGORIES][:2]
-    tags = [str(tag).strip() for tag in payload.get("tags", []) if str(tag).strip()][:6]
+    tags = [str(tag).strip() for tag in payload.get("tags", []) if str(tag).strip()]
     score = int(payload.get("relevance_score", 5))
     return {
         "ai_summary_ko": str(payload.get("ai_summary_ko", "")).strip(),
         "relevance_score": max(1, min(10, score)),
         "relevance_note_ko": str(payload.get("relevance_note_ko", "")).strip(),
-        "tags": tags or ["적층제조", "문헌추적"],
+        "tags": _dedupe_tags(tags, categories)[:6] or ["적층제조", "문헌추적"],
         "categories": categories or ["다중재료 적층제조"],
     }
+
+
+def _dedupe_tags(tags: list[str], categories: list[str]) -> list[str]:
+    category_set = set(categories)
+    seen: set[str] = set()
+    cleaned = []
+    for tag in tags:
+        if not tag or tag in seen:
+            continue
+        seen.add(tag)
+        if tag in category_set:
+            continue
+        alias_category = TAG_CATEGORY_ALIASES.get(tag)
+        if alias_category and alias_category in category_set:
+            continue
+        cleaned.append(tag)
+    return cleaned
 
 
 def _extract_json(content: str) -> str:

@@ -33,6 +33,17 @@ const TARGET_VENUES = [
   "Additive Manufacturing",
 ];
 
+const TAG_CATEGORY_ALIASES = {
+  툴패스: "툴패스 계획",
+  경로계획: "그래프 탐색 / 경로 계획 알고리즘",
+  재료분포: "재료분포 최적화",
+  "퍼지 감소": "재료 전환 / 퍼지 감소",
+  계산설계: "계산설계",
+  MMAM: "다중재료 적층제조",
+  FGAM: "기능성 구배 적층제조",
+  "AI/ML": "적층제조를 위한 AI 및 머신러닝",
+};
+
 const state = {
   papers: [],
   filtered: [],
@@ -103,7 +114,7 @@ function buildFilters() {
 
   state.papers.forEach((paper) => {
     (paper.categories || []).forEach((category) => categories.add(category));
-    (paper.tags || []).forEach((tag) => tags.add(tag));
+    visibleTags(paper).forEach((tag) => tags.add(tag));
     venues.add(normalizeVenue(paper.venue));
     if (paper.year) years.add(String(paper.year));
   });
@@ -269,6 +280,7 @@ function applyFilters() {
   state.filtered = state.papers.filter((paper) => {
     const paperCategories = paper.categories || [];
     const paperTags = paper.tags || [];
+    const paperVisibleTags = visibleTags(paper);
     const paperVenue = normalizeVenue(paper.venue);
     const haystack = normalize(
       [
@@ -277,7 +289,7 @@ function applyFilters() {
         paper.venue,
         paper.doi,
         paperCategories.join(" "),
-        paperTags.join(" "),
+        paperVisibleTags.join(" "),
         paper.ai_summary_ko,
         paper.relevance_note_ko,
       ].join(" ")
@@ -423,7 +435,7 @@ function renderPaperRow(paper) {
   const sourceText = (paper.source || []).join(", ") || "Metadata API";
   const authors = formatAuthors(paper.authors || []);
   const categoryBadges = (paper.categories || []).map((category) => badge(category, "category")).join("");
-  const tagBadges = (paper.tags || []).map((tag) => tagButton(tag)).join("");
+  const tagBadges = visibleTags(paper).map((tag) => tagButton(tag)).join("");
 
   article.innerHTML = `
     <div class="card-content">
@@ -470,6 +482,19 @@ function badge(text, className = "") {
 
 function tagButton(text) {
   return `<button class="badge tag" type="button" data-tag-filter="${escapeAttribute(text)}">${escapeHtml(text)}</button>`;
+}
+
+function visibleTags(paper) {
+  const categories = new Set(paper.categories || []);
+  const seen = new Set();
+  return (paper.tags || []).filter((tag) => {
+    if (!tag || seen.has(tag)) return false;
+    seen.add(tag);
+    if (categories.has(tag)) return false;
+    const aliasCategory = TAG_CATEGORY_ALIASES[tag];
+    if (aliasCategory && categories.has(aliasCategory)) return false;
+    return true;
+  });
 }
 
 function buildCitation(paper) {
