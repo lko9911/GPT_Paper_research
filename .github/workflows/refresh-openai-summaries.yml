@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       max_summaries:
-        description: "Maximum papers to refresh in this run. Use 400 for the current full library."
+        description: "Maximum curated papers to refresh in this run. Cost-control guard; use 25 for tests, 414 for the current full library."
         required: true
         default: "25"
       refresh_mode:

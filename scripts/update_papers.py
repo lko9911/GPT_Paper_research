@@ -40,6 +40,11 @@ def main() -> None:
     target_venues = _load_json(TARGET_VENUES_PATH, [])
     seed_dois = _load_json(SEED_DOIS_PATH, [])
     index = {_dedupe_key(paper): paper for paper in existing}
+    allow_openai_in_update = _env_flag("ALLOW_OPENAI_IN_UPDATE")
+    if allow_openai_in_update:
+        print("ALLOW_OPENAI_IN_UPDATE is enabled. New candidates may call OpenAI before curation.")
+    else:
+        print("OpenAI summaries are disabled for scheduled metadata updates. Use refresh_openai_summaries.py for curated papers only.")
     added = 0
 
     for doi in seed_dois:
@@ -56,7 +61,7 @@ def main() -> None:
             continue
 
         enriched = enrich_with_semantic_scholar(candidate)
-        summarized = summarize_record(enriched)
+        summarized = summarize_record(enriched, allow_openai=allow_openai_in_update)
         paper = _finalize_record(summarized, today)
         index[_dedupe_key(paper)] = paper
         existing.append(paper)
@@ -81,7 +86,7 @@ def main() -> None:
                 continue
 
             enriched = enrich_with_semantic_scholar(candidate)
-            summarized = summarize_record(enriched)
+            summarized = summarize_record(enriched, allow_openai=allow_openai_in_update)
             paper = _finalize_record(summarized, today)
             index[_dedupe_key(paper)] = paper
             existing.append(paper)
@@ -108,7 +113,7 @@ def main() -> None:
                         continue
 
                     enriched = enrich_with_semantic_scholar(candidate)
-                    summarized = summarize_record(enriched)
+                    summarized = summarize_record(enriched, allow_openai=allow_openai_in_update)
                     paper = _finalize_record(summarized, today)
                     index[_dedupe_key(paper)] = paper
                     existing.append(paper)

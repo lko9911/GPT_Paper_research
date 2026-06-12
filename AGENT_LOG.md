@@ -2427,3 +2427,35 @@
 
 ### 주의사항
 - API key, token, secret은 기록하지 않았습니다.
+
+## 2026-06-13 01:25
+
+### 변경 요약
+- OpenAI 사용량이 예상보다 크게 발생한 원인을 조사했습니다.
+- 정기 `Update papers` workflow에서 raw 후보 수집 단계에 OpenAI 요약기가 켜질 수 있었던 비용 리스크를 차단했습니다.
+- 앞으로 OpenAI 요약은 수동 `Refresh OpenAI summaries` workflow에서 curated papers 대상으로만 실행하는 운영 원칙으로 정리했습니다.
+
+### 수정/생성한 파일
+- `scripts/update_papers.py`: `ALLOW_OPENAI_IN_UPDATE=true`가 명시된 경우에만 정기 업데이트 중 OpenAI 호출을 허용하도록 변경했습니다. 기본값은 비활성화입니다.
+- `.github/workflows/update-papers.yml`: 정기 업데이트 job에서 `OPENAI_API_KEY`와 `OPENAI_MODEL` 전달을 제거하고 `ALLOW_OPENAI_IN_UPDATE=false`를 명시했습니다.
+- `.github/workflows/refresh-openai-summaries.yml`: 수동 요약 workflow의 `max_summaries` 설명을 비용 통제 중심으로 명확히 수정했습니다.
+- `AGENT_LOG.md`: 비용 사고 원인과 방지책을 기록했습니다.
+- `PROJECT_STATUS.md`: OpenAI 호출 정책과 비용 방어 상태를 갱신했습니다.
+- `ARCHITECTURE.md`: 수집 파이프라인과 요약 파이프라인의 분리 원칙을 문서화했습니다.
+
+### 구현한 기능
+- 정기 metadata 수집은 OpenAI API key가 repository secret에 있어도 기본적으로 OpenAI를 호출하지 않습니다.
+- OpenAI 요약은 별도 수동 workflow에서만 실행됩니다.
+- 실수로 정기 workflow에 key가 다시 전달되어도 코드 기본값이 OpenAI 호출을 막습니다.
+
+### 설계 결정
+- 비용이 발생하는 AI 요약은 후보 수집/필터링 이후의 curated papers에만 적용해야 합니다.
+- raw candidates와 archive candidates는 무료 fallback 요약/점수로만 처리하고, 필요 시 나중에 수동으로 curated 항목만 재요약합니다.
+
+### 남은 작업
+- GitHub Actions에서 이미 실행 중인 이전 scheduled run은 권한 토큰 없이 이 환경에서 취소할 수 없습니다. 필요하면 GitHub Actions UI에서 현재 실행 중인 `Update papers`를 수동 취소하세요.
+- 향후 `refresh_openai_summaries.py`에 예상 비용 출력과 hard cap을 추가하면 더 안전합니다.
+
+### 주의사항
+- API key, token, secret은 기록하지 않았습니다.
+- 이번 변경은 향후 실행 비용 방지용이며, 이미 발생한 OpenAI usage를 되돌리지는 않습니다.

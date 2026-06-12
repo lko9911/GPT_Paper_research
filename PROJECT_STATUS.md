@@ -6,6 +6,8 @@
 - raw candidate 수와 archive hidden 수는 footer의 작은 운영 정보로 이동했습니다.
 - `data/archive_papers.json`은 삭제되거나 비공개 처리된 것이 아니라, 메인 목록에서 숨긴 공개 보존 데이터입니다.
 - archive를 정말 비공개로 만들려면 GitHub Pages 배포 대상에서 제외하거나 별도 비공개 저장소/artifact로 분리해야 합니다.
+- 비용 방지를 위해 정기 `Update papers` workflow는 더 이상 `OPENAI_API_KEY`를 전달하지 않으며, `scripts/update_papers.py`도 기본적으로 OpenAI 호출을 차단합니다.
+- OpenAI 요약은 수동 `Refresh OpenAI summaries` workflow에서 curated papers 대상으로만 실행하는 것이 현재 운영 원칙입니다.
 
 ## 2026-06-13 00:10 상태
 

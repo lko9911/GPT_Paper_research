@@ -36,9 +36,8 @@ jobs:
       - name: Update papers
         env:
           CONTACT_EMAIL: ${{ secrets.CONTACT_EMAIL }}
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
           SEMANTIC_SCHOLAR_API_KEY: ${{ secrets.SEMANTIC_SCHOLAR_API_KEY }}
+          ALLOW_OPENAI_IN_UPDATE: "false"
           SINCE_YEAR: "2024"
           API_SLEEP_SECONDS: "1.0"
           OPENALEX_MAX_PAGES: "2"
