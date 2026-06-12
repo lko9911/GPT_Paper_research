@@ -119,7 +119,7 @@ async function init() {
 function buildFilters() {
   const fields = new Set();
   const tags = new Set();
-  const venues = new Set(TARGET_VENUES);
+  const venues = new Set();
   const years = new Set();
 
   state.papers.forEach((paper) => {
@@ -186,13 +186,13 @@ function buildTopicNav() {
 function buildVenueNav() {
   TARGET_VENUES.forEach((venue) => {
     const count = state.papers.filter((paper) => matchesTargetVenue(normalizeVenue(paper.venue), venue)).length;
+    if (count === 0) return;
     const button = document.createElement("button");
     button.type = "button";
     button.className = "venue-pill";
     button.dataset.targetVenue = venue;
-    button.textContent = `${shortVenue(venue)} ${count}`;
-    button.disabled = count === 0;
-    button.title = count === 0 ? "아직 수집된 논문이 없습니다." : `${venue} 논문만 보기`;
+    button.innerHTML = `${escapeHtml(shortVenue(venue))} <span>${count}</span>`;
+    button.title = `${venue} 논문만 보기`;
     els.venueNav.append(button);
   });
 
@@ -266,20 +266,35 @@ function venueCountEntries() {
 
 function renderVenueBoard() {
   const entries = venueCountEntries();
-  els.venueBoard.innerHTML = [
+  const priorityEntries = TARGET_VENUES.map((target) => {
+    const matched = entries.find(([venue]) => matchesTargetVenue(venue, target));
+    return matched || [target, 0];
+  }).filter(([, count]) => count > 0);
+  const otherEntries = entries
+    .filter(([venue]) => !isPriorityVenue(venue))
+    .slice(0, 12);
+
+  const mainCards = [
     `<button class="venue-card is-all is-active" type="button" data-board-venue="">
       <strong>All venues</strong>
       <span>${state.papers.length} papers</span>
     </button>`,
-    ...entries.map(([venue, count]) => {
-      const priority = isPriorityVenue(venue) ? "<em>priority</em>" : "";
-      return `<button class="venue-card" type="button" data-board-venue="${escapeAttribute(venue)}">
-        <strong>${escapeHtml(shortVenue(venue))}</strong>
-        <span>${count} papers</span>
-        ${priority}
-      </button>`;
-    }),
+    ...priorityEntries.map(([venue, count]) => venueCard(venue, count, "priority")),
   ].join("");
+
+  const otherCards = otherEntries.length
+    ? `<div class="venue-list">
+        <div class="venue-list-head">
+          <strong>기타 게재지</strong>
+          <span>상위 ${otherEntries.length}개</span>
+        </div>
+        <div class="venue-list-grid">
+          ${otherEntries.map(([venue, count]) => venueChip(venue, count)).join("")}
+        </div>
+      </div>`
+    : "";
+
+  els.venueBoard.innerHTML = `<div class="venue-featured">${mainCards}</div>${otherCards}`;
 
   els.venueBoard.querySelectorAll("[data-board-venue]").forEach((button) => {
     button.addEventListener("click", () => {
@@ -293,13 +308,29 @@ function renderVenueBoard() {
       els.venueNav.querySelectorAll(".venue-pill").forEach((pill) => {
         pill.classList.toggle("is-active", pill.dataset.targetVenue === state.activeTargetVenue);
       });
-      els.venueBoard.querySelectorAll(".venue-card").forEach((card) => {
+      els.venueBoard.querySelectorAll(".venue-card, .venue-chip").forEach((card) => {
         card.classList.toggle("is-active", card.dataset.boardVenue === venue);
       });
       applyFilters();
       scrollToPapers();
     });
   });
+}
+
+function venueCard(venue, count, label = "") {
+  const badge = label ? `<em>${escapeHtml(label)}</em>` : "";
+  return `<button class="venue-card" type="button" data-board-venue="${escapeAttribute(venue)}">
+    <strong>${escapeHtml(shortVenue(venue))}</strong>
+    <span>${count} papers</span>
+    ${badge}
+  </button>`;
+}
+
+function venueChip(venue, count) {
+  return `<button class="venue-chip" type="button" data-board-venue="${escapeAttribute(venue)}">
+    <strong>${escapeHtml(shortVenue(venue))}</strong>
+    <span>${count}</span>
+  </button>`;
 }
 
 function updateStats() {

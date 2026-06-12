@@ -114,6 +114,9 @@ h1 {
 }
 
 .venue-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   min-height: 30px;
   border-color: #d5dbea;
   background: #f8fafc;
@@ -121,10 +124,28 @@ h1 {
   font-size: 0.8rem;
 }
 
+.venue-pill span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 22px;
+  min-height: 20px;
+  padding: 2px 6px;
+  border-radius: 999px;
+  background: #e9eef7;
+  color: #344054;
+  font-size: 0.72rem;
+}
+
 .topic-pill.is-active,
 .venue-pill.is-active {
   border-color: var(--blue);
   background: var(--blue);
+  color: #ffffff;
+}
+
+.venue-pill.is-active span {
+  background: rgba(255, 255, 255, 0.2);
   color: #ffffff;
 }
 
@@ -328,15 +349,20 @@ h1 {
 
 .venue-board {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  gap: 10px;
+  gap: 12px;
   padding: 14px;
+}
+
+.venue-featured {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 10px;
 }
 
 .venue-card {
   display: grid;
   gap: 6px;
-  min-height: 82px;
+  min-height: 74px;
   padding: 12px;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -372,6 +398,78 @@ h1 {
   font-size: 0.7rem;
   font-style: normal;
   font-weight: 820;
+}
+
+.venue-list {
+  display: grid;
+  gap: 10px;
+  padding: 12px;
+  border: 1px solid #e3e8f1;
+  border-radius: 8px;
+  background: #fbfcff;
+}
+
+.venue-list-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  color: #344054;
+  font-size: 0.86rem;
+}
+
+.venue-list-head span {
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 760;
+}
+
+.venue-list-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 7px;
+}
+
+.venue-chip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  min-height: 36px;
+  padding: 7px 9px;
+  border: 1px solid #d8deea;
+  border-radius: 7px;
+  background: #ffffff;
+  color: #344054;
+  text-align: left;
+  cursor: pointer;
+}
+
+.venue-chip:hover,
+.venue-chip.is-active {
+  border-color: var(--blue);
+  background: var(--blue-soft);
+  color: var(--blue);
+}
+
+.venue-chip strong {
+  overflow: hidden;
+  font-size: 0.8rem;
+  line-height: 1.25;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.venue-chip span {
+  flex: 0 0 auto;
+  min-width: 26px;
+  padding: 2px 7px;
+  border-radius: 999px;
+  background: #eef1f6;
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 820;
+  text-align: center;
 }
 
 .results-head {
