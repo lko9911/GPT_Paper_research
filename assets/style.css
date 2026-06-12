@@ -493,40 +493,35 @@ h1 {
   box-shadow: 0 12px 24px rgba(22, 32, 51, 0.16);
 }
 
-.preview-tile {
-  display: grid;
-  place-items: center;
-  min-height: 168px;
-  padding: 18px;
-  background:
-    radial-gradient(circle at 22% 18%, rgba(255, 255, 255, 0.78), transparent 22%),
-    linear-gradient(135deg, #2457c5, #4d78d8);
-  color: #ffffff;
-  text-align: center;
-}
-
-.preview-tile span {
-  font-size: 3.2rem;
-  font-weight: 900;
-  letter-spacing: 0.03em;
-}
-
-.preview-tile small,
-.preview-tile strong {
-  display: inline-flex;
-  margin-top: 6px;
-  padding: 5px 9px;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.18);
-  font-size: 0.8rem;
-  font-weight: 800;
-}
-
 .card-content {
   display: flex;
   flex: 1;
   flex-direction: column;
-  padding: 14px;
+  padding: 15px;
+}
+
+.card-topline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.card-topline span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: var(--blue-soft);
+  color: #244889;
+  font-size: 0.76rem;
+  font-weight: 840;
+}
+
+.card-topline span:last-child {
+  background: var(--amber-soft);
+  color: var(--amber);
 }
 
 .paper-title {
