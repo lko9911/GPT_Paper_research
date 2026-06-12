@@ -102,7 +102,7 @@ const UI_TEXT = {
     subtitle: "An AI-assisted research tracker for manufacturing, 3D/4D printing, robotics, and AI-driven production.",
     noticeMain: "This repository provides DOI links and AI-generated summaries only. It does not host copyrighted PDFs or publisher abstract text.",
     noticeSoft:
-      "Summaries on this site are newly written Korean AI summaries based on public paper metadata and abstracts. Check the DOI link for the original and authoritative content.",
+      "Summaries on this site are newly written AI summaries based on public paper metadata and abstracts. Check the DOI link for the original and authoritative content.",
     sideTitle: "Fields and Subtopics",
     totalPapers: "Total Papers",
     subtopicCount: "Subtopics",
@@ -170,6 +170,14 @@ const LABEL_TRANSLATIONS = {
     "적층제조를 위한 AI 및 머신러닝": "AI and ML for AM",
     "재료분포": "Material Distribution",
     "퍼지 감소": "Purge Reduction",
+    "툴패스": "Toolpath",
+    "경로계획": "Path Planning",
+    "공정 최적화": "Process Optimization",
+    "재료 전환": "Material Switching",
+    "퍼지/재료전환": "Purge/Material Switching",
+    "리뷰": "Review",
+    "서베이": "Survey",
+    "메타물질": "Metamaterials",
   },
 };
 
@@ -184,6 +192,16 @@ const TAG_CATEGORY_ALIASES = {
   "AI/ML": "적층제조를 위한 AI 및 머신러닝",
 };
 
+const DEFAULT_THEME = "dark";
+const DEFAULT_LANGUAGE = "en";
+const PREFERENCE_VERSION = "20260612-en-dark";
+
+if (localStorage.getItem("preferenceVersion") !== PREFERENCE_VERSION) {
+  localStorage.setItem("theme", DEFAULT_THEME);
+  localStorage.setItem("language", DEFAULT_LANGUAGE);
+  localStorage.setItem("preferenceVersion", PREFERENCE_VERSION);
+}
+
 const state = {
   papers: [],
   siteMeta: null,
@@ -192,8 +210,8 @@ const state = {
   activeTargetVenue: "",
   activeVenueGroup: "",
   activeSubtopic: "",
-  theme: localStorage.getItem("theme") || "light",
-  language: localStorage.getItem("language") || "ko",
+  theme: localStorage.getItem("theme") || DEFAULT_THEME,
+  language: localStorage.getItem("language") || DEFAULT_LANGUAGE,
 };
 
 const els = {
@@ -761,6 +779,8 @@ function renderPaperRow(paper) {
   const sourceText = (paper.source || []).join(", ") || "Metadata API";
   const authors = formatAuthors(paper.authors || []);
   const publicationLabel = formatPublicationLabel(paper);
+  const summaryText = formatSummary(paper);
+  const relevanceNote = formatRelevanceNote(paper);
   const representativeBadges = representativeTags(paper)
     .map((tag) => badge(displayLabel(tag), "tag"))
     .join("");
@@ -773,8 +793,8 @@ function renderPaperRow(paper) {
       </div>
       <h4 class="paper-title">${escapeHtml(paper.title || "Untitled")}</h4>
       <p class="meta">${escapeHtml(authors)}${authors ? " · " : ""}${escapeHtml(paper.venue || "Venue unknown")} · ${escapeHtml(sourceText)}</p>
-      <p class="summary">${escapeHtml(paper.ai_summary_ko || t("summaryMissing"))}</p>
-      <p class="relevance-note">${escapeHtml(paper.relevance_note_ko || "")}</p>
+      <p class="summary">${escapeHtml(summaryText)}</p>
+      <p class="relevance-note">${escapeHtml(relevanceNote)}</p>
       <div class="tag-line">${representativeBadges}</div>
       <div class="card-links">
         ${doiUrl ? `<a class="link-pill primary" href="${escapeAttribute(doiUrl)}" target="_blank" rel="noopener noreferrer">Paper</a>` : ""}
@@ -812,6 +832,40 @@ function tagButton(text) {
   return `<button class="badge tag" type="button" data-tag-filter="${escapeAttribute(text)}">${escapeHtml(text)}</button>`;
 }
 
+function formatSummary(paper) {
+  if (state.language !== "en") {
+    return paper.ai_summary_ko || t("summaryMissing");
+  }
+
+  const yearPhrase = paper.year ? `${paper.year}` : "undated";
+  const venue = paper.venue || "an unknown venue";
+  const tags = representativeTags(paper).map((tag) => displayLabel(tag));
+  const tagPhrase = formatEnglishList(tags);
+  const score = paper.relevance_score ? `${paper.relevance_score}/10` : "not yet scored";
+  const title = paper.title || "This work";
+
+  return `${title} is tracked as a ${yearPhrase} paper from ${venue} related to ${tagPhrase || "manufacturing research"}. Based on public metadata and curated topic signals, its current relevance score for this tracker is ${score}.`;
+}
+
+function formatRelevanceNote(paper) {
+  if (state.language !== "en") {
+    return paper.relevance_note_ko || "";
+  }
+
+  const tags = representativeTags(paper).map((tag) => displayLabel(tag));
+  const tagPhrase = formatEnglishList(tags);
+  const score = paper.relevance_score ? `${paper.relevance_score}/10` : "pending";
+  return `Relevant to the tracker through ${tagPhrase || "its manufacturing and design metadata"}; score: ${score}.`;
+}
+
+function formatEnglishList(items) {
+  const clean = items.filter(Boolean);
+  if (!clean.length) return "";
+  if (clean.length === 1) return clean[0];
+  if (clean.length === 2) return `${clean[0]} and ${clean[1]}`;
+  return `${clean.slice(0, -1).join(", ")}, and ${clean[clean.length - 1]}`;
+}
+
 function representativeTags(paper) {
   const candidates = [...deriveSubtopics(paper), ...visibleTags(paper)];
   if (candidates.length < 3) {
@@ -835,20 +889,23 @@ function canonicalTopicLabel(tag) {
   const value = String(tag || "").trim();
   const text = normalize(value);
   if (!value) return "";
-  if (hasAny(text, ["multi-material", "multi material", "multimaterial", "mmam"])) return "MMAM";
-  if (hasAny(text, ["functionally graded", "functional gradient", "graded material", "fgam"])) return "FGAM";
+  if (hasAny(text, ["multi-material", "multi material", "multimaterial", "mmam", "다중재료", "다중 재료"])) return "MMAM";
+  if (hasAny(text, ["functionally graded", "functional gradient", "graded material", "fgam", "기능성 구배", "구배"])) return "FGAM";
   if (hasAny(text, ["dm filament", "digital material", "blended fdm"])) return "DM filament";
   if (hasAny(text, ["fdm", "fused deposition", "material extrusion"])) return "FDM/Material extrusion";
   if (hasAny(text, ["dlp", "digital light processing", "vat photopolymerization", "vat photopolymerisation", "stereolithography", "sla"])) return "DLP";
   if (hasAny(text, ["lce", "liquid crystal elastomer", "liquid-crystal elastomer"])) return "LCE";
   if (hasAny(text, ["metamaterial", "metamaterials", "mechanical metamaterial", "메타물질"])) return "메타물질";
-  if (hasAny(text, ["4d printing", "4d printed", "4d-printed", "4d print"])) return "4D printing";
-  if (hasAny(text, ["toolpath"])) return "Toolpath";
-  if (hasAny(text, ["path planning", "trajectory", "graph search"])) return "Path Planning";
-  if (hasAny(text, ["process optimization", "process optimisation", "parameter optimization", "parameter optimisation"])) return "Process Optimization";
-  if (hasAny(text, ["manufacturing automation", "automation", "automated"])) return "Manufacturing Automation";
-  if (hasAny(text, ["design automation", "computational design", "generative design", "topology optimization"])) return "Design Automation";
-  if (hasAny(text, ["machine learning", "deep learning", "reinforcement learning", "ai/ml"])) return "AI/ML";
+  if (hasAny(text, ["4d printing", "4d printed", "4d-printed", "4d print", "4d 프린팅"])) return "4D printing";
+  if (hasAny(text, ["toolpath", "툴패스"])) return "Toolpath";
+  if (hasAny(text, ["path planning", "trajectory", "graph search", "경로계획", "경로 계획", "그래프 탐색"])) return "Path Planning";
+  if (hasAny(text, ["process optimization", "process optimisation", "parameter optimization", "parameter optimisation", "공정 최적화"])) return "Process Optimization";
+  if (hasAny(text, ["manufacturing automation", "automation", "automated", "제조 자동화"])) return "Manufacturing Automation";
+  if (hasAny(text, ["design automation", "computational design", "generative design", "topology optimization", "계산설계", "설계 자동화"])) return "Design Automation";
+  if (hasAny(text, ["machine learning", "deep learning", "reinforcement learning", "ai/ml", "머신러닝", "인공지능"])) return "AI/ML";
+  if (hasAny(text, ["review", "survey", "리뷰", "서베이"])) return "Review";
+  if (hasAny(text, ["material distribution", "재료분포", "재료 분포"])) return "Material Distribution";
+  if (hasAny(text, ["material switching", "purge", "재료 전환", "퍼지"])) return "Material Switching";
   return value;
 }
 
