@@ -103,6 +103,9 @@ def _summarize_with_openai(record: dict[str, Any], abstract: str) -> dict[str, A
                     "role": "system",
                     "content": (
                         "You write new Korean paper summaries. Do not copy or translate abstract sentences verbatim. "
+                        "The ai_summary_ko field must answer exactly these five labeled questions in Korean, each in one concise sentence: "
+                        "1. 무엇에 관한 논문인가? 2. 어떤 문제를 해결하려고 하는가? 3. 어떤 접근법/방법을 사용했는가? "
+                        "4. 핵심 결과는 무엇인가? 5. 내 연구/발표에 왜 필요한가? "
                         "Return strict JSON with ai_summary_ko, relevance_score, relevance_note_ko, tags, categories."
                     ),
                 },
@@ -127,7 +130,7 @@ def _fallback_summary(record: dict[str, Any], abstract: str) -> dict[str, Any]:
     categories = _classify(record, abstract)
     tags = _tags(record, abstract, categories)
     score = _score(record, abstract, categories)
-    summary = _abstract_based_summary(record, abstract, categories, tags, year, venue)
+    summary = _abstract_based_summary(record, abstract, categories, tags, year, venue, score)
     note = (
         f"이 트래커에서는 {', '.join(tags[:3])} 키워드를 기준으로 "
         f"제조·설계 연구와의 관련성을 {score}/10로 평가했습니다."
@@ -148,6 +151,7 @@ def _abstract_based_summary(
     tags: list[str],
     year: Any,
     venue: str,
+    score: int,
 ) -> str:
     title = record.get("title", "이 논문")
     text = _text(record, abstract)
@@ -219,16 +223,19 @@ def _abstract_based_summary(
 
     if abstract:
         subject = _study_subject(title, text, focus)
+        problem = _study_problem(text, focus)
         approach = _study_approach(text, method)
         contribution = _study_contribution(text, outcome)
-        return (
-            f"{title}은(는) {year}년 {venue}에 발표된 연구로, {subject} "
-            f"{approach}{contribution}"
-        )
+        usefulness = _study_usefulness(tags, categories, score, text)
+        return _format_five_question_summary(subject, problem, approach, contribution, usefulness)
 
-    return (
-        f"{title}은(는) {year}년 {venue}에 발표된 항목으로, 공개 메타데이터상 {focus}와 관련됩니다. "
-        "초록이 제공되지 않아 제목·venue·키워드만으로 보수적으로 요약했으며, 자세한 내용은 DOI 원문 확인이 필요합니다."
+    subject = f"{title}은(는) {year}년 {venue}에 발표된 항목으로, 공개 메타데이터상 {focus}와 관련됩니다."
+    return _format_five_question_summary(
+        subject,
+        "초록이 제공되지 않아 구체적인 문제 설정은 DOI 원문 확인이 필요합니다.",
+        "제목, venue, DOI 메타데이터, 키워드 신호를 바탕으로 보수적으로 분류했습니다.",
+        "공개 메타데이터만으로는 핵심 결과를 단정하지 않고, 관련 주제 여부만 확인했습니다.",
+        _study_usefulness(tags, categories, score, text),
     )
 
 
@@ -270,10 +277,13 @@ def _study_approach(text: str, method: str) -> str:
         details.append("최적화 절차로 설계안을 탐색합니다")
     if details:
         sentence = _join_korean_clauses(details)
-        if sentence.endswith("다") or sentence.endswith("다."):
-            return f"접근 방식의 특징은 {sentence.rstrip('.')}. "
-        return f"접근 방식의 특징은 {sentence}는 점입니다. "
-    return f"{method}을(를) 통해 문제를 분석하고 구현 방향을 제시합니다. "
+        sentence = sentence.rstrip(".")
+        if sentence.endswith("합니다"):
+            return f"접근 방식은 {sentence[:-3]}하는 것입니다."
+        if sentence.endswith("다"):
+            return f"접근 방식은 {sentence}는 점입니다."
+        return f"접근 방식은 {sentence}는 점입니다."
+    return f"{method}을(를) 통해 문제를 분석하고 구현 방향을 제시합니다."
 
 
 def _study_contribution(text: str, outcome: str) -> str:
@@ -286,6 +296,51 @@ def _study_contribution(text: str, outcome: str) -> str:
     if has_terms(text, ["accuracy"]) or has_terms(text, ["efficiency"]):
         return "핵심 기여는 제조 정확도나 공정 효율을 개선할 수 있는 실질적인 설계 기준을 제시한 점입니다."
     return f"핵심 기여는 {outcome}을(를) 제조·설계 관점에서 해석할 수 있게 한 점입니다."
+
+
+def _study_problem(text: str, focus: str) -> str:
+    if has_terms(text, ["ornament", "large-scale additive manufacturing"]):
+        return "대형 적층제조에서 장식, 툴패스, 재료 거동이 분리되어 해석되는 문제를 다룹니다."
+    if has_terms(text, ["liquid crystal elastomer", "4d printing"]):
+        return "자극 반응 재료를 원하는 형상 변화와 구조 성능으로 안정적으로 프린팅하는 문제를 다룹니다."
+    if has_terms(text, ["multi-material", "3d printing"]) or has_terms(text, ["multimaterial", "3d printing"]):
+        return "서로 다른 재료의 배치, 전환, 계면 특성을 원하는 기능으로 연결하는 문제를 다룹니다."
+    if has_terms(text, ["toolpath", "optimization"]):
+        return "툴패스 선택이 품질, 시간, 재료 사용량, 성능에 미치는 영향을 줄이는 문제를 다룹니다."
+    if has_terms(text, ["robot", "path planning"]):
+        return "로봇 제조에서 경로 계획과 제작 가능성을 동시에 만족시키는 문제를 다룹니다."
+    if has_terms(text, ["machine learning"]) or has_terms(text, ["deep learning"]):
+        return "제조 공정의 복잡한 변수와 결과 사이의 관계를 데이터 기반으로 파악하는 문제를 다룹니다."
+    return f"{focus}와 관련된 설계·제조상의 병목을 이해하거나 완화하려는 문제를 다룹니다."
+
+
+def _study_usefulness(tags: list[str], categories: list[str], score: int, text: str) -> str:
+    topic = _join_phrases(tags[:3] or categories[:2], "제조·설계")
+    if has_terms(text, ["toolpath"]) and ("material behaviour" in text or "material behavior" in text):
+        return "툴패스가 재료 표현과 구조 성능을 어떻게 바꾸는지 보여주므로 DM filament, FGAM, MMAM 발표의 설계 논리 사례로 유용합니다."
+    if any(tag in tags for tag in ["LCE", "4D printing", "Metamaterials"]):
+        return "4D 프린팅과 능동 재료 설계 사례를 제공하므로 형상 변화 구조나 메타물질 관련 발표 배경으로 유용합니다."
+    if any(tag in tags for tag in ["MMAM", "FGAM", "DM filament", "FDM/Material extrusion"]):
+        return "재료 배치와 공정 설계의 연결을 보여주므로 다중재료/구배/필라멘트 기반 제조 연구의 비교 문헌으로 유용합니다."
+    return f"{topic} 관점에서 관련성 {score}/10로 평가되어, 연구 배경 정리나 관련 연구 슬라이드에 넣기 좋습니다."
+
+
+def _format_five_question_summary(
+    subject: str,
+    problem: str,
+    approach: str,
+    finding: str,
+    usefulness: str,
+) -> str:
+    return "\n".join(
+        [
+            f"1. 무엇에 관한 논문인가? {subject}",
+            f"2. 어떤 문제를 해결하려고 하는가? {problem}",
+            f"3. 어떤 접근법/방법을 사용했는가? {approach}",
+            f"4. 핵심 결과는 무엇인가? {finding}",
+            f"5. 내 연구/발표에 왜 필요한가? {usefulness}",
+        ]
+    )
 
 
 def has_terms(text: str, terms: list[str]) -> bool:

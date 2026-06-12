@@ -674,6 +674,33 @@ h1 {
   font-size: 0.9rem;
 }
 
+.summary-qa {
+  display: grid;
+  gap: 7px;
+}
+
+.summary-qa div {
+  display: grid;
+  gap: 2px;
+  padding: 7px 8px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: #f8fafc;
+}
+
+.summary-qa dt {
+  color: var(--blue);
+  font-size: 0.72rem;
+  font-weight: 850;
+}
+
+.summary-qa dd {
+  margin: 0;
+  color: #263247;
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
 .relevance-note {
   margin: 8px 0 0;
   color: #475467;
@@ -777,7 +804,8 @@ h1 {
 :root[data-theme="dark"] .subtitle,
 :root[data-theme="dark"] .venue-section-head h2,
 :root[data-theme="dark"] .paper-title,
-:root[data-theme="dark"] .summary {
+:root[data-theme="dark"] .summary,
+:root[data-theme="dark"] .summary-qa dd {
   color: var(--text);
 }
 
@@ -1010,6 +1038,15 @@ h1 {
 :root[data-theme="dark"] .badge.subtopic {
   background: var(--green-soft);
   color: #c9f7df;
+}
+
+:root[data-theme="dark"] .summary-qa div {
+  border-color: var(--line);
+  background: #111827;
+}
+
+:root[data-theme="dark"] .summary-qa dt {
+  color: var(--blue);
 }
 
 :root[data-theme="dark"] .venue-card span b {
@@ -1351,6 +1388,22 @@ h1 {
   margin: 7px 0;
   font-size: 0.84rem;
   line-height: 1.5;
+}
+
+.summary-qa {
+  gap: 6px;
+}
+
+.summary-qa div {
+  padding: 7px 8px;
+}
+
+.summary-qa dt {
+  font-size: 0.68rem;
+}
+
+.summary-qa dd {
+  font-size: 0.78rem;
 }
 
 .tag-line {

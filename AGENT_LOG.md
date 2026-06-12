@@ -1,5 +1,42 @@
 # AGENT_LOG
 
+## 2026-06-12 21:07
+
+### 변경 요약
+- 논문 요약의 표준 형식을 사용자가 제안한 5문항 Q/A 구조로 변경했습니다.
+- 프론트엔드가 5문항 요약을 감지하면 카드 안에서 Q/A 블록으로 렌더링하도록 개선했습니다.
+- 예시 논문 `Material articulation: Toward an ornamental thinking in digital tectonics`의 요약을 새 5문항 형식으로 갱신했습니다.
+
+### 수정/생성한 파일
+- `scripts/summarize.py`: OpenAI 프롬프트와 fallback 요약 생성기를 5문항 형식으로 변경했습니다.
+- `assets/app.js`: `ai_summary_ko`의 5문항 형식을 파싱해 Q/A 블록으로 표시하는 렌더링 로직을 추가했습니다.
+- `assets/style.css`: 요약 Q/A 블록의 spacing, border, 다크모드 대비 스타일을 추가했습니다.
+- `data/papers.json`: DOI `10.21606/drs.2026.2363` 항목을 5문항 요약으로 갱신했습니다.
+- `index.html`: CSS/JS cache-busting version을 갱신했습니다.
+- `README.md`: 요약 형식과 API key가 없을 때의 fallback 요약 정책을 갱신했습니다.
+- `ARCHITECTURE.md`: 5문항 요약 데이터/렌더링 구조를 문서화했습니다.
+- `PROJECT_STATUS.md`: 현재 논문 수와 완료 기능 상태를 최신화했습니다.
+- `AGENT_LOG.md`: 이번 요약 형식 변경 작업을 기록했습니다.
+
+### 구현한 기능
+- 새 논문 요약은 다음 질문에 답하도록 생성됩니다: 무엇에 관한 논문인가, 어떤 문제를 해결하려고 하는가, 어떤 방법을 쓰는가, 핵심 결과는 무엇인가, 내 연구/발표에 왜 필요한가.
+- 구조화된 요약은 카드에서 작은 Q/A 리스트로 표시됩니다.
+- 기존 문단형 요약이 남아 있는 논문은 paragraph fallback으로 계속 표시됩니다.
+
+### 설계 결정
+- `ai_summary_ko` 필드를 새로 쪼개지 않고 기존 필드 안에 번호가 붙은 5문항 텍스트를 저장했습니다. 기존 schema와 GitHub Pages 정적 렌더링을 유지하기 위해서입니다.
+- 영어 모드에는 별도 `ai_summary_en` 필드가 아직 없으므로, 메타데이터 기반 5문항 영어 표시 요약을 안전한 fallback으로 제공합니다.
+- raw abstract는 계속 저장하지 않고 요약 생성 입력으로만 사용합니다.
+
+### 남은 작업
+- 기존 159편 전체의 문단형 요약을 한 번에 5문항 형식으로 batch refresh하면 사이트 전체의 요약 품질이 더 균일해집니다.
+- 별도 `ai_summary_en` 필드를 추가하면 영어 모드에서도 초록 기반 고품질 요약을 제공할 수 있습니다.
+
+### 주의사항
+- API key, secret, token은 기록하지 않았습니다.
+- PDF 다운로드나 출판사 웹사이트 크롤링은 수행하지 않았습니다.
+- 현재 환경에 Node가 없어 `node --check assets/app.js` 검증은 실행하지 못할 수 있습니다.
+
 ## 2026-06-12 18:48
 
 ### 변경 요약

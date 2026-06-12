@@ -94,6 +94,13 @@ const UI_TEXT = {
     unknownYear: "연도 미상",
     relevanceLabel: "관련성",
     summaryMissing: "요약이 아직 생성되지 않았습니다.",
+    summaryQuestions: [
+      "무엇에 관한 논문인가?",
+      "어떤 문제를 해결하려고 하는가?",
+      "어떤 접근법/방법을 사용했는가?",
+      "핵심 결과는 무엇인가?",
+      "내 연구/발표에 왜 필요한가?",
+    ],
   },
   en: {
     themeDark: "Dark",
@@ -135,6 +142,13 @@ const UI_TEXT = {
     unknownYear: "Year unknown",
     relevanceLabel: "Relevance",
     summaryMissing: "Summary has not been generated yet.",
+    summaryQuestions: [
+      "What is this paper about?",
+      "What problem does it address?",
+      "What method is used?",
+      "What is the main finding?",
+      "Why is it useful for my topic?",
+    ],
   },
 };
 
@@ -801,7 +815,7 @@ function renderPaperRow(paper) {
   const sourceText = (paper.source || []).join(", ") || "Metadata API";
   const authors = formatAuthors(paper.authors || []);
   const publicationLabel = formatPublicationLabel(paper);
-  const summaryText = formatSummary(paper);
+  const summaryHtml = renderSummaryBlock(paper);
   const relevanceNote = formatRelevanceNote(paper);
   const representativeBadges = representativeTags(paper)
     .map((tag) => badge(displayLabel(tag), "tag"))
@@ -815,7 +829,7 @@ function renderPaperRow(paper) {
       </div>
       <h4 class="paper-title">${escapeHtml(paper.title || "Untitled")}</h4>
       <p class="meta">${escapeHtml(authors)}${authors ? " · " : ""}${escapeHtml(paper.venue || "Venue unknown")} · ${escapeHtml(sourceText)}</p>
-      <p class="summary">${escapeHtml(summaryText)}</p>
+      ${summaryHtml}
       <p class="relevance-note">${escapeHtml(relevanceNote)}</p>
       <div class="tag-line">${representativeBadges}</div>
       <div class="card-links">
@@ -867,6 +881,70 @@ function formatSummary(paper) {
   const title = paper.title || "This work";
 
   return `${title} is tracked as a ${yearPhrase} paper from ${venue} related to ${tagPhrase || "manufacturing research"}. Based on public metadata and curated topic signals, its current relevance score for this tracker is ${score}.`;
+}
+
+function renderSummaryBlock(paper) {
+  const sections = formatSummarySections(paper);
+  if (!sections.length) {
+    return `<p class="summary">${escapeHtml(formatSummary(paper))}</p>`;
+  }
+
+  return `<dl class="summary summary-qa">
+    ${sections
+      .map(
+        (item) => `<div>
+          <dt>${escapeHtml(item.question)}</dt>
+          <dd>${escapeHtml(item.answer)}</dd>
+        </div>`
+      )
+      .join("")}
+  </dl>`;
+}
+
+function formatSummarySections(paper) {
+  if (state.language === "en") {
+    return englishSummarySections(paper);
+  }
+  return parseKoreanSummarySections(paper.ai_summary_ko || "");
+}
+
+function parseKoreanSummarySections(summary) {
+  const labels = UI_TEXT.ko.summaryQuestions;
+  const lines = String(summary || "")
+    .split(/\n+/)
+    .map((line) => line.trim())
+    .filter(Boolean);
+  const sections = [];
+
+  labels.forEach((label, index) => {
+    const numberPattern = `${index + 1}.`;
+    const line = lines.find((item) => item.startsWith(numberPattern) && item.includes(label));
+    if (!line) return;
+    const answer = line.replace(numberPattern, "").replace(label, "").replace(/^\s*\?\s*/, "").trim();
+    if (answer) {
+      sections.push({ question: label, answer });
+    }
+  });
+
+  return sections.length >= 3 ? sections : [];
+}
+
+function englishSummarySections(paper) {
+  const labels = UI_TEXT.en.summaryQuestions;
+  const title = paper.title || "This work";
+  const venue = paper.venue || "an unknown venue";
+  const year = paper.year || "an undated";
+  const tags = representativeTags(paper).map((tag) => displayLabel(tag));
+  const tagPhrase = formatEnglishList(tags) || "manufacturing and design";
+  const score = paper.relevance_score ? `${paper.relevance_score}/10` : "pending";
+
+  return [
+    { question: labels[0], answer: `${title} is a ${year} paper from ${venue} related to ${tagPhrase}.` },
+    { question: labels[1], answer: `It is tracked because it connects to a design or manufacturing bottleneck around ${tagPhrase}.` },
+    { question: labels[2], answer: "Check the DOI for the full method; this site does not reproduce publisher abstracts." },
+    { question: labels[3], answer: "The main finding should be confirmed in the original paper, while this tracker records its metadata-level relevance." },
+    { question: labels[4], answer: `It is useful as background or comparison literature for this topic; current relevance score: ${score}.` },
+  ];
 }
 
 function formatRelevanceNote(paper) {
