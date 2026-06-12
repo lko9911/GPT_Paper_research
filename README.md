@@ -7,6 +7,7 @@ MMAM, FGAM, DM filament, computational design 분야를 위한 AI 기반 논문 
 이 저장소는 multi-material additive manufacturing, functionally graded additive manufacturing, blended FDM, digital material filament, computational design, toolpath optimization, material switching optimization 관련 논문 메타데이터를 주기적으로 수집하고, DOI 링크와 한글 AI 요약을 함께 보여줍니다.
 
 현재 자동 조사 범위는 2024년 이후 논문입니다. `SINCE_YEAR` 환경변수로 시작 연도를 바꿀 수 있으며 기본값은 `2024`입니다.
+자동 수집 총량은 기본적으로 100편을 넘지 않도록 `MAX_TOTAL_PAPERS=100`으로 제한합니다.
 
 ## 데이터 출처
 
