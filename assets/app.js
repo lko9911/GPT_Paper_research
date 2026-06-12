@@ -142,7 +142,7 @@ const UI_TEXT = {
 
 const LABEL_TRANSLATIONS = {
   en: {
-    "생산/제조": "Production/Manufacturing",
+    "생산/제조": "Production / Manufacturing",
     "3D 프린팅": "3D Printing",
     "4D 프린팅": "4D Printing",
     "로봇틱스(생산제조)": "Robotics for Manufacturing",
