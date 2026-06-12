@@ -424,16 +424,13 @@ function renderPaperRow(paper) {
   const authors = formatAuthors(paper.authors || []);
   const categoryBadges = (paper.categories || []).map((category) => badge(category, "category")).join("");
   const tagBadges = (paper.tags || []).map((tag) => tagButton(tag)).join("");
-  const primaryCategory = (paper.categories || [])[0] || "기타";
-  const initials = previewInitials(primaryCategory);
 
   article.innerHTML = `
-    <div class="preview-tile" data-category="${escapeAttribute(primaryCategory)}">
-      <span>${escapeHtml(initials)}</span>
-      <small>${escapeHtml(String(paper.year || "Year"))}</small>
-      <strong>${escapeHtml(String(paper.relevance_score || "-"))}/10</strong>
-    </div>
     <div class="card-content">
+      <div class="card-topline">
+        <span>${escapeHtml(String(paper.year || "연도 미상"))}</span>
+        <span>관련성 ${escapeHtml(String(paper.relevance_score || "-"))}/10</span>
+      </div>
       <h4 class="paper-title">${escapeHtml(paper.title || "Untitled")}</h4>
       <p class="meta">${escapeHtml(authors)}${authors ? " · " : ""}${escapeHtml(String(paper.year || "연도 미상"))} · ${escapeHtml(paper.venue || "Venue unknown")} · ${escapeHtml(sourceText)}</p>
       <p class="summary">${escapeHtml(paper.ai_summary_ko || "요약이 아직 생성되지 않았습니다.")}</p>
@@ -496,22 +493,6 @@ function categoryIndex(category) {
 
 function sectionId(value) {
   return `section-${normalize(value).replace(/[^a-z0-9가-힣]+/g, "-").replace(/^-|-$/g, "") || "unknown"}`;
-}
-
-function previewInitials(category) {
-  const map = {
-    "리뷰 및 서베이": "RV",
-    "다중재료 적층제조": "MM",
-    "기능성 구배 적층제조": "FG",
-    "Blended FDM / Digital Material Filament": "DM",
-    "계산설계": "CD",
-    "재료분포 최적화": "MD",
-    "툴패스 계획": "TP",
-    "재료 전환 / 퍼지 감소": "PG",
-    "그래프 탐색 / 경로 계획 알고리즘": "GP",
-    "적층제조를 위한 AI 및 머신러닝": "AI",
-  };
-  return map[category] || "AM";
 }
 
 function normalizeVenue(venue) {
