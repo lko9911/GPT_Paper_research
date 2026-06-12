@@ -471,6 +471,33 @@
 ### 주의사항
 - seed DOI도 `_is_plausible`의 주제/연도 필터를 통과해야 저장됩니다.
 
+## 2026-06-12 10:37
+
+### 변경 요약
+- 사용자의 UI 요청에 따라 왼쪽 floating 패널은 분야 선택 전용으로 정리하고, 게재지는 본문에서 별도 보드로 볼 수 있게 변경했습니다.
+
+### 수정/생성한 파일
+- `index.html`: sidebar에서 Venues nav를 제거하고, 본문에 `게재지별 보기` 섹션과 `venue-board`를 추가했습니다.
+- `assets/app.js`: sidebar 분야 선택 버튼, venue board 렌더링, venue card 클릭 필터링 로직을 추가했습니다.
+- `assets/style.css`: venue section, venue board, venue card 스타일을 추가했습니다.
+- `AGENT_LOG.md`: 이번 UI 구조 변경을 기록했습니다.
+
+### 구현한 기능
+- 왼쪽 floating 패널에서는 분야/카테고리만 선택합니다.
+- 본문 `게재지별 보기` 섹션에서 실제 게재지별 논문 수를 볼 수 있습니다.
+- 게재지 카드를 클릭하면 아래 논문 목록이 해당 게재지로 필터링됩니다.
+- `All venues` 카드로 게재지 필터를 초기화할 수 있습니다.
+
+### 설계 결정
+- 분야 선택과 게재지 선택을 분리해 탐색 목적을 명확히 했습니다.
+- 게재지는 별도 보드로 제공해 Nature/Science/Additive Manufacturing 같은 우선 게재지와 실제 수집 게재지를 더 넓게 볼 수 있게 했습니다.
+
+### 남은 작업
+- 공개 Pages 배포 후 좌측 분야 패널과 게재지 보드가 의도대로 표시되는지 확인해야 합니다.
+
+### 주의사항
+- sidebar 분야 버튼은 category select와 동기화됩니다. 게재지 보드는 venue select 또는 priority venue 필터와 동기화됩니다.
+
 ## 2026-06-12 10:32
 
 ### 변경 요약

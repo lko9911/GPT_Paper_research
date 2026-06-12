@@ -67,7 +67,7 @@ const els = {
   topicNav: document.querySelector(".topic-nav"),
   venueNav: document.querySelector(".venue-nav"),
   sideTopicNav: document.querySelector("#side-topic-nav"),
-  sideVenueNav: document.querySelector("#side-venue-nav"),
+  venueBoard: document.querySelector("#venue-board"),
   matrix: document.querySelector("#venue-matrix"),
   matrixClear: document.querySelector("#matrix-clear"),
   total: document.querySelector("#stat-total"),
@@ -91,6 +91,7 @@ async function init() {
   buildVenueNav();
   buildSideNav();
   buildVenueMatrix();
+  renderVenueBoard();
   updateStats();
   applyFilters();
 
@@ -194,24 +195,16 @@ function buildSideNav() {
   const categories = CATEGORY_ORDER.filter((category) =>
     state.papers.some((paper) => (paper.categories || []).includes(category))
   );
-  const venueCounts = venueCountEntries();
   els.sideTopicNav.innerHTML = categories
-    .map((category) => `<a href="#${escapeAttribute(sectionId(category))}">${escapeHtml(category)}</a>`)
+    .map((category) => {
+      const count = state.papers.filter((paper) => (paper.categories || []).includes(category)).length;
+      return `<button type="button" data-side-category="${escapeAttribute(category)}">${escapeHtml(category)} <span>${count}</span></button>`;
+    })
     .join("");
-  els.sideVenueNav.innerHTML = [
-    '<button type="button" data-side-venue="">All venues <span>' + state.papers.length + "</span></button>",
-    ...venueCounts.map(([venue, count]) => {
-      return `<button type="button" data-side-venue="${escapeAttribute(venue)}">${escapeHtml(shortVenue(venue))} <span>${count}</span></button>`;
-    }),
-  ].join("");
 
-  els.sideVenueNav.querySelectorAll("[data-side-venue]").forEach((button) => {
+  els.sideTopicNav.querySelectorAll("[data-side-category]").forEach((button) => {
     button.addEventListener("click", () => {
-      state.activeTargetVenue = button.dataset.sideVenue;
-      els.venue.value = state.activeTargetVenue && !isPriorityVenue(state.activeTargetVenue) ? state.activeTargetVenue : "";
-      els.venueNav.querySelectorAll(".venue-pill").forEach((pill) => {
-        pill.classList.toggle("is-active", pill.dataset.targetVenue === state.activeTargetVenue);
-      });
+      els.category.value = button.dataset.sideCategory;
       applyFilters();
       const paperList = document.querySelector("#paper-list");
       if (paperList) {
@@ -228,6 +221,47 @@ function venueCountEntries() {
     counts.set(venue, (counts.get(venue) || 0) + 1);
   });
   return [...counts.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "ko"));
+}
+
+function renderVenueBoard() {
+  const entries = venueCountEntries();
+  els.venueBoard.innerHTML = [
+    `<button class="venue-card is-all is-active" type="button" data-board-venue="">
+      <strong>All venues</strong>
+      <span>${state.papers.length} papers</span>
+    </button>`,
+    ...entries.map(([venue, count]) => {
+      const priority = isPriorityVenue(venue) ? "<em>priority</em>" : "";
+      return `<button class="venue-card" type="button" data-board-venue="${escapeAttribute(venue)}">
+        <strong>${escapeHtml(shortVenue(venue))}</strong>
+        <span>${count} papers</span>
+        ${priority}
+      </button>`;
+    }),
+  ].join("");
+
+  els.venueBoard.querySelectorAll("[data-board-venue]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const venue = button.dataset.boardVenue;
+      state.activeTargetVenue = isPriorityVenue(venue) ? venue : "";
+      els.venue.value = venue && !isPriorityVenue(venue) ? venue : "";
+      if (!venue) {
+        state.activeTargetVenue = "";
+        els.venue.value = "";
+      }
+      els.venueNav.querySelectorAll(".venue-pill").forEach((pill) => {
+        pill.classList.toggle("is-active", pill.dataset.targetVenue === state.activeTargetVenue);
+      });
+      els.venueBoard.querySelectorAll(".venue-card").forEach((card) => {
+        card.classList.toggle("is-active", card.dataset.boardVenue === venue);
+      });
+      applyFilters();
+      const paperList = document.querySelector("#paper-list");
+      if (paperList) {
+        paperList.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    });
+  });
 }
 
 function buildVenueMatrix() {
