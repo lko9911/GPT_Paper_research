@@ -759,6 +759,7 @@ function renderPaperRow(paper) {
   const doiUrl = paper.url || (paper.doi ? `https://doi.org/${paper.doi}` : "");
   const sourceText = (paper.source || []).join(", ") || "Metadata API";
   const authors = formatAuthors(paper.authors || []);
+  const publicationLabel = formatPublicationLabel(paper);
   const categoryBadges = (paper.categories || []).map((category) => badge(displayLabel(category), "category")).join("");
   const subtopicBadges = deriveSubtopics(paper).map((subtopic) => badge(displayLabel(subtopic), "subtopic")).join("");
   const tagBadges = visibleTags(paper).map((tag) => tagButton(tag)).join("");
@@ -766,11 +767,11 @@ function renderPaperRow(paper) {
   article.innerHTML = `
     <div class="card-content">
       <div class="card-topline">
-        <span>${escapeHtml(String(paper.year || t("unknownYear")))}</span>
+        <span class="publication-badge">${escapeHtml(publicationLabel)}</span>
         <span>${escapeHtml(t("relevanceLabel"))} ${escapeHtml(String(paper.relevance_score || "-"))}/10</span>
       </div>
       <h4 class="paper-title">${escapeHtml(paper.title || "Untitled")}</h4>
-      <p class="meta">${escapeHtml(authors)}${authors ? " · " : ""}${escapeHtml(String(paper.year || t("unknownYear")))} · ${escapeHtml(paper.venue || "Venue unknown")} · ${escapeHtml(sourceText)}</p>
+      <p class="meta">${escapeHtml(authors)}${authors ? " · " : ""}${escapeHtml(paper.venue || "Venue unknown")} · ${escapeHtml(sourceText)}</p>
       <p class="summary">${escapeHtml(paper.ai_summary_ko || t("summaryMissing"))}</p>
       <p class="relevance-note">${escapeHtml(paper.relevance_note_ko || "")}</p>
       <div class="tag-line">${categoryBadges}${subtopicBadges}${tagBadges}</div>
@@ -829,6 +830,16 @@ function buildCitation(paper) {
   const venue = paper.venue ? ` ${paper.venue}.` : "";
   const doi = paper.doi ? ` https://doi.org/${paper.doi}` : "";
   return `${authors} ${year}. ${paper.title || "Untitled"}.${venue}${doi}`.replace(/\s+/g, " ").trim();
+}
+
+function formatPublicationLabel(paper) {
+  const year = paper.year ? String(paper.year) : "";
+  const venue = normalizeVenue(paper.venue);
+  const compactVenue = shortVenue(venue);
+  if (!compactVenue || compactVenue === "Venue unknown") {
+    return year ? `Venue unknown ${year}` : "Venue unknown";
+  }
+  return year ? `${compactVenue} ${year}` : compactVenue;
 }
 
 function formatAuthors(authors) {
@@ -1026,6 +1037,20 @@ function isPriorityVenue(venue) {
 
 function shortVenue(venue) {
   const replacements = {
+    "arXiv (Cornell University)": "arXiv",
+    "ArXiv.org": "arXiv",
+    "International Conference on Learning Representations": "ICLR",
+    "The International Conference on Learning Representations": "ICLR",
+    "International Conference on Machine Learning": "ICML",
+    "International Conference on Machine Learning (ICML)": "ICML",
+    "Neural Information Processing Systems": "NeurIPS",
+    "Advances in Neural Information Processing Systems": "NeurIPS",
+    "Conference on Neural Information Processing Systems": "NeurIPS",
+    "Computer Vision and Pattern Recognition": "CVPR",
+    "IEEE/CVF Conference on Computer Vision and Pattern Recognition": "CVPR",
+    "International Conference on Robotics and Automation": "ICRA",
+    "IEEE International Conference on Robotics and Automation": "ICRA",
+    "IEEE/RSJ International Conference on Intelligent Robots and Systems": "IROS",
     "Nature Communications": "Nat. Commun.",
     "Nature Materials": "Nat. Mater.",
     "Nature Reviews Materials": "Nat. Rev. Mater.",
@@ -1039,7 +1064,20 @@ function shortVenue(venue) {
     "Engineering With Computers": "Eng. with Computers",
     "npj Artificial Intelligence": "npj AI",
   };
-  return replacements[venue] || venue;
+  if (replacements[venue]) return replacements[venue];
+
+  const lower = normalize(venue);
+  if (lower.includes("arxiv")) return "arXiv";
+  if (lower.includes("learning representations") || lower.includes("iclr")) return "ICLR";
+  if (lower.includes("international conference on machine learning") || lower.includes("icml")) return "ICML";
+  if (lower.includes("neural information processing systems") || lower.includes("neurips")) return "NeurIPS";
+  if (lower.includes("computer vision and pattern recognition") || lower.includes("cvpr")) return "CVPR";
+  if (lower.includes("international conference on robotics and automation") || lower.includes("icra")) return "ICRA";
+  if (lower.includes("intelligent robots and systems") || lower.includes("iros")) return "IROS";
+  if (lower === "additive manufacturing") return "Addit. Manuf.";
+  if (lower === "nature communications") return "Nat. Commun.";
+  if (lower === "science advances") return "Sci. Adv.";
+  return venue;
 }
 
 function normalize(value) {

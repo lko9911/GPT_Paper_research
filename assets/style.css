@@ -622,6 +622,12 @@ h1 {
   color: var(--amber);
 }
 
+.card-topline .publication-badge {
+  background: linear-gradient(135deg, #102a56, #2b6cb0);
+  color: #ffffff;
+  letter-spacing: 0.01em;
+}
+
 .paper-title {
   flex: 0;
   margin: 0 0 8px;
@@ -938,6 +944,11 @@ h1 {
 :root[data-theme="dark"] .card-topline span:last-child {
   background: var(--amber-soft);
   color: #ffe2a8;
+}
+
+:root[data-theme="dark"] .card-topline .publication-badge {
+  background: linear-gradient(135deg, #7db4ff, #5b7cfa);
+  color: #071224;
 }
 
 :root[data-theme="dark"] .badge,
