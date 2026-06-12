@@ -40,10 +40,8 @@
 
     <main class="wide-shell main-layout">
       <aside class="sidebar" aria-label="빠른 탐색">
-        <strong>Topics</strong>
+        <strong>분야 선택</strong>
         <nav id="side-topic-nav" class="side-nav"></nav>
-        <strong>Venues</strong>
-        <nav id="side-venue-nav" class="side-nav"></nav>
       </aside>
 
       <div class="content">
@@ -114,6 +112,17 @@
           <button id="matrix-clear" class="link-pill" type="button" hidden>매트릭스 필터 해제</button>
         </div>
         <div id="venue-matrix" class="venue-matrix"></div>
+      </section>
+
+      <section class="venue-section" aria-label="게재지별 논문">
+        <div class="venue-section-head">
+          <div>
+            <p class="section-kicker">Venues</p>
+            <h2>게재지별 보기</h2>
+          </div>
+          <p>게재지를 선택하면 아래 논문 목록이 해당 게재지로 필터링됩니다.</p>
+        </div>
+        <div id="venue-board" class="venue-board"></div>
       </section>
 
       <section class="results-head">
