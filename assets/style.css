@@ -455,10 +455,6 @@ h1 {
   --grid-min: 285px;
 }
 
-.paper-group:not(:has(.paper-card)) {
-  display: none;
-}
-
 .group-heading ~ .paper-card {
   float: left;
 }

@@ -128,8 +128,8 @@ function buildFilters() {
 }
 
 function buildTopicNav() {
-  const availableTags = new Set(state.papers.flatMap((paper) => paper.tags || []));
-  const availableCategories = new Set(state.papers.flatMap((paper) => paper.categories || []));
+  const availableTags = new Set(flatten(state.papers.map((paper) => paper.tags || [])));
+  const availableCategories = new Set(flatten(state.papers.map((paper) => paper.categories || [])));
   const topics = FEATURED_TOPICS.filter((topic) => availableTags.has(topic) || availableCategories.has(topic));
 
   topics.forEach((topic) => {
@@ -197,7 +197,10 @@ function buildSideNav() {
         pill.classList.toggle("is-active", pill.dataset.targetVenue === state.activeTargetVenue);
       });
       applyFilters();
-      document.querySelector("#paper-list")?.scrollIntoView({ behavior: "smooth", block: "start" });
+      const paperList = document.querySelector("#paper-list");
+      if (paperList) {
+        paperList.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
     });
   });
 }
@@ -222,12 +225,12 @@ function buildVenueMatrix() {
 }
 
 function updateStats() {
-  const categories = new Set(state.papers.flatMap((paper) => paper.categories || []));
-  const latestDate = state.papers
+  const categories = new Set(flatten(state.papers.map((paper) => paper.categories || [])));
+  const updatedDates = state.papers
     .map((paper) => paper.last_updated || paper.first_added)
     .filter(Boolean)
-    .sort()
-    .at(-1);
+    .sort();
+  const latestDate = updatedDates.length ? updatedDates[updatedDates.length - 1] : "";
   const weekAgo = new Date();
   weekAgo.setDate(weekAgo.getDate() - 7);
   const weekCount = state.papers.filter((paper) => {
@@ -502,7 +505,7 @@ function normalizeVenue(venue) {
 }
 
 function normalizeVenueKey(venue) {
-  return normalize(venue).replaceAll("&", "and");
+  return normalize(venue).replace(/&/g, "and");
 }
 
 function matchesTargetVenue(venue, target) {
@@ -539,17 +542,21 @@ function dateValue(value) {
   return value ? new Date(`${value}T00:00:00`).getTime() : 0;
 }
 
+function flatten(items) {
+  return items.reduce((acc, item) => acc.concat(item), []);
+}
+
 function escapeHtml(value) {
   return String(value)
-    .replaceAll("&", "&amp;")
-    .replaceAll("<", "&lt;")
-    .replaceAll(">", "&gt;")
-    .replaceAll('"', "&quot;")
-    .replaceAll("'", "&#039;");
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
 }
 
 function escapeAttribute(value) {
-  return escapeHtml(value).replaceAll("`", "&#096;");
+  return escapeHtml(value).replace(/`/g, "&#096;");
 }
 
 init();
