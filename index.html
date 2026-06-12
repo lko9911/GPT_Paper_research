@@ -8,7 +8,7 @@
       name="description"
       content="An AI-assisted research tracker for manufacturing, 3D/4D printing, robotics, and AI-driven production."
     />
-    <link rel="stylesheet" href="assets/style.css?v=20260613-0020" />
+    <link rel="stylesheet" href="assets/style.css?v=20260613-0030" />
   </head>
   <body>
     <header class="site-header" id="top">
@@ -47,19 +47,7 @@
         <section class="stats" aria-label="논문 통계">
           <article>
             <span id="stat-total">0</span>
-            <strong>표시 논문</strong>
-          </article>
-          <article>
-            <span id="stat-categories">0</span>
-            <strong>수집 후보</strong>
-          </article>
-          <article>
-            <span id="stat-updated">-</span>
-            <strong>마지막 수집</strong>
-          </article>
-          <article>
-            <span id="stat-week">0</span>
-            <strong>숨긴 후보</strong>
+            <strong>논문수</strong>
           </article>
         </section>
 
@@ -130,13 +118,14 @@
 
     <footer class="site-footer">
       <div class="wide-shell">
-        <p>
+        <p id="footer-policy">
           Metadata from OpenAlex, Crossref, and optionally Semantic Scholar. Summaries are generated and
           do not reproduce publisher abstracts.
         </p>
+        <p id="ops-note" class="ops-note"></p>
       </div>
     </footer>
 
-    <script src="assets/app.js?v=20260613-0020" defer></script>
+    <script src="assets/app.js?v=20260613-0030" defer></script>
   </body>
 </html>

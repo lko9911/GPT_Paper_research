@@ -1,12 +1,19 @@
 # PROJECT_STATUS
 
-## 2026-06-13 00:10 최신 상태
+## 2026-06-13 00:30 최신 상태
+
+- 상단 통계 영역은 방문자 혼동을 줄이기 위해 현재 화면에 표시되는 curated paper 수만 `논문수`로 보여줍니다.
+- raw candidate 수, archive hidden 수, 마지막 수집 시각은 footer의 작은 운영 정보로 이동했습니다.
+- `data/archive_papers.json`은 삭제되거나 비공개 처리된 것이 아니라, 메인 목록에서 숨긴 공개 보존 데이터입니다.
+- archive를 정말 비공개로 만들려면 GitHub Pages 배포 대상에서 제외하거나 별도 비공개 저장소/artifact로 분리해야 합니다.
+
+## 2026-06-13 00:10 상태
 
 - 공개 사이트의 raw 후보 레코드 2084개를 curated/archive 구조로 분리했습니다.
 - `data/papers.json`에는 기본 사이트에 표시할 curated papers 414편만 남겼습니다.
 - `data/archive_papers.json`에는 낮은 관련성 및 제목 중복 후보 1670개를 보존했습니다.
 - `data/site_meta.json`은 `curated_count=414`, `raw_candidate_count=2084`, `archived_count=1670`, `hidden_low_relevance_count=1647`, `duplicate_archived_count=23`을 기록합니다.
-- 상단 통계는 이제 `큐레이션 논문`, `전체 후보`, `숨김/아카이브`를 구분해 보여줍니다.
+- 상단 통계는 이후 방문자용 `논문수` 1개로 단순화되었고, 전체 후보/숨김 수치는 footer 운영 정보로 이동했습니다.
 
 ### 완료된 추가 개선
 - 자동 수집 파이프라인이 앞으로도 curated/archive를 분리 저장하도록 `scripts/update_papers.py`를 수정했습니다.
