@@ -87,9 +87,9 @@ const UI_TEXT = {
     footer:
       "Metadata from OpenAlex, Crossref, and optionally Semantic Scholar. Summaries are generated and do not reproduce publisher abstracts.",
     papers: "papers",
-    priority: "priority",
+    priority: "Core",
     others: "Others",
-    lowCountVenue: "2편 이하의 학술지",
+    lowCountVenue: "2편 이하 게재지",
     showing: "편 표시 중",
     unknownYear: "연도 미상",
     relevanceLabel: "관련성",
@@ -128,9 +128,9 @@ const UI_TEXT = {
     footer:
       "Metadata from OpenAlex, Crossref, and optionally Semantic Scholar. Summaries are generated and do not reproduce publisher abstracts.",
     papers: "papers",
-    priority: "priority",
+    priority: "Core",
     others: "Others",
-    lowCountVenue: "Journals with 2 or fewer papers",
+    lowCountVenue: "2 or fewer papers",
     showing: "papers shown",
     unknownYear: "Year unknown",
     relevanceLabel: "Relevance",
@@ -169,6 +169,7 @@ const LABEL_TRANSLATIONS = {
     "재료분포": "Material Distribution",
     "퍼지 감소": "Purge Reduction",
     "툴패스": "Toolpath",
+    "툴패스 전략": "Toolpath Strategy",
     "경로계획": "Path Planning",
     "공정 최적화": "Process Optimization",
     "재료 전환": "Material Switching",
@@ -176,6 +177,8 @@ const LABEL_TRANSLATIONS = {
     "리뷰": "Review",
     "서베이": "Survey",
     "메타물질": "Metamaterials",
+    "디지털 제작": "Digital Fabrication",
+    "재료 거동": "Material Behavior",
   },
 };
 
@@ -619,10 +622,10 @@ function isNonJournalVenue(venue) {
 }
 
 function venueCard(venue, count, label = "") {
-  const badge = label ? `<em>${escapeHtml(label)}</em>` : "";
+  const badge = label ? `<em class="venue-chip">${escapeHtml(label)}</em>` : "";
   return `<button class="venue-card" type="button" data-board-venue="${escapeAttribute(venue)}">
     <strong>${escapeHtml(shortVenue(venue))}</strong>
-    <span>${count} ${escapeHtml(t("papers"))}</span>
+    <span><b>${count}</b> ${escapeHtml(t("papers"))}</span>
     ${badge}
   </button>`;
 }
@@ -630,8 +633,8 @@ function venueCard(venue, count, label = "") {
 function otherVenueCard(paperCount, venueCount) {
   return `<button class="venue-card venue-card-muted" type="button" data-board-venue="" data-board-venue-group="other">
     <strong>${escapeHtml(t("others"))}</strong>
-    <span>${paperCount} ${escapeHtml(t("papers"))} · ${venueCount} venues</span>
-    <em>${escapeHtml(t("lowCountVenue"))}</em>
+    <span><b>${paperCount}</b> ${escapeHtml(t("papers"))} · ${venueCount} venues</span>
+    <em class="venue-chip">${escapeHtml(t("lowCountVenue"))}</em>
   </button>`;
 }
 
@@ -961,7 +964,7 @@ function canonicalTopicLabel(tag) {
   if (hasAny(text, ["lce", "liquid crystal elastomer", "liquid-crystal elastomer"])) return "LCE";
   if (hasAny(text, ["metamaterial", "metamaterials", "mechanical metamaterial", "메타물질"])) return "메타물질";
   if (hasAny(text, ["4d printing", "4d printed", "4d-printed", "4d print", "4d 프린팅"])) return "4D printing";
-  if (hasAny(text, ["toolpath", "툴패스"])) return "Toolpath";
+  if (hasAny(text, ["toolpath", "툴패스", "툴패스 전략"])) return "Toolpath";
   if (hasAny(text, ["path planning", "trajectory", "graph search", "경로계획", "경로 계획", "그래프 탐색"])) return "Path Planning";
   if (hasAny(text, ["process optimization", "process optimisation", "parameter optimization", "parameter optimisation", "공정 최적화"])) return "Process Optimization";
   if (hasAny(text, ["manufacturing automation", "automation", "automated", "제조 자동화"])) return "Manufacturing Automation";
