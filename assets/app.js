@@ -930,7 +930,7 @@ function parseStoredSummarySections(summary) {
     const answer = line
       .replace(/^\d+\.\s*/, "")
       .replace(/^.*?\?\s*/, "")
-      .replace(/^(Topic|Problem|Method|Key Result|Takeaway)\s*[-:]\s*/i, "")
+      .replace(/^(Topic|Problem|Method|Key Result|Takeaway)\s*(?:[-:]\s*)?/i, "")
       .trim();
     if (answer) {
       sections.push({ question: label, answer });

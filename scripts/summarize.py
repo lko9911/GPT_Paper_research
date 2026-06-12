@@ -113,7 +113,7 @@ def _summarize_with_openai(record: dict[str, Any], abstract: str) -> dict[str, A
                         "4. Key Result - 가장 중요한 결과는 무엇인가? "
                         "5. Takeaway - 그래서 이 논문의 핵심 메시지는 무엇인가? "
                         "Also write ai_summary_en in English with the same five labels: "
-                        "1. Topic, 2. Problem, 3. Method, 4. Key Result, 5. Takeaway. "
+                        "1. Topic -, 2. Problem -, 3. Method -, 4. Key Result -, 5. Takeaway -. "
                         "Return strict JSON with ai_summary_ko, ai_summary_en, relevance_score, relevance_note_ko, tags, categories."
                     ),
                 },
@@ -472,11 +472,11 @@ def _ko_summary_labels() -> list[str]:
 
 def _en_summary_labels() -> list[str]:
     return [
-        "Topic",
-        "Problem",
-        "Method",
-        "Key Result",
-        "Takeaway",
+        "Topic -",
+        "Problem -",
+        "Method -",
+        "Key Result -",
+        "Takeaway -",
     ]
 
 
@@ -484,7 +484,8 @@ def _normalize_generated_summary(value: Any, labels: list[str]) -> str:
     if isinstance(value, dict):
         lines = []
         for index, label in enumerate(labels, start=1):
-            answer = value.get(str(index)) or value.get(index) or value.get(label) or ""
+            short_label = label.split("-", 1)[0].strip()
+            answer = value.get(str(index)) or value.get(index) or value.get(label) or value.get(short_label) or ""
             answer = str(answer).strip()
             if answer:
                 lines.append(f"{index}. {label} {answer}")
