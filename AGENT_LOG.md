@@ -328,3 +328,29 @@
 
 ### 주의사항
 - `assets/app.js`는 Node가 설치되어 있지 않아 `node --check`로 문법 검사를 수행할 수 없습니다. 정적 훅과 로컬 HTTP 응답 검증으로 대체했습니다.
+
+## 2026-06-12 10:30
+
+### 변경 요약
+- 사용자가 논문이 표시되지 않는다고 알려주어 프론트엔드 렌더링 문제를 조사했습니다.
+- JS 파일은 내려오고 데이터도 정상 제공되지만, optional chaining 같은 최신 JS 문법이 일부 브라우저/검증 환경에서 스크립트 실행을 막을 수 있음을 확인했습니다.
+
+### 수정/생성한 파일
+- `assets/app.js`: optional chaining `?.`, `Array.prototype.at`, `String.prototype.replaceAll`, `Array.prototype.flatMap` 사용을 제거하고 더 호환성 높은 문법으로 변경했습니다.
+- `assets/style.css`: 필수 기능이 아닌 CSS `:has()` 선택자를 제거했습니다.
+- `AGENT_LOG.md`: 표시 오류 원인과 수정 내용을 기록했습니다.
+
+### 구현한 기능
+- 구형 또는 제한된 브라우저 환경에서도 JS가 파싱되고 논문 렌더링이 실행될 가능성을 높였습니다.
+- Python `esprima` 파서로 `assets/app.js` 문법 검사를 통과했습니다.
+- 로컬 HTTP 서버에서 `index.html`과 `assets/app.js` 응답을 확인했습니다.
+
+### 설계 결정
+- 최신 문법의 간결함보다 GitHub Pages 방문자의 브라우저 호환성을 우선했습니다.
+- 논문이 표시되지 않는 장애를 막기 위해 렌더링 경로의 optional chaining과 최신 prototype 메서드를 제거했습니다.
+
+### 남은 작업
+- 공개 Pages 배포 후 실제 URL에서 사용자가 논문 카드가 보이는지 확인해야 합니다.
+
+### 주의사항
+- Node가 설치되어 있지 않아 `node --check`는 계속 사용할 수 없습니다. 대신 `esprima` 기반 문법 검사를 사용했습니다.
