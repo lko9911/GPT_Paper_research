@@ -7,6 +7,7 @@
 - 프론트엔드: `index.html`, `assets/style.css`, `assets/app.js`
 - 데이터: `data/papers.json`, `data/queries.json`
 - 우선 게재지: `data/target_venues.json`
+- Seed DOI: `data/seed_dois.json`
 - 업데이트 파이프라인: `scripts/*.py`
 - 자동화: `.github/workflows/update-papers.yml`
 - 문서: `README.md`, `AGENT_LOG.md`, `PROJECT_STATUS.md`, `ARCHITECTURE.md`
@@ -48,12 +49,13 @@
 
 1. `data/papers.json`과 `data/queries.json`을 읽습니다.
 2. 각 검색어마다 OpenAlex와 Crossref를 조회합니다. 기본 시작 연도는 `SINCE_YEAR=2024`입니다.
-3. `data/target_venues.json`의 OpenAlex source ID를 사용해 Nature, Science, Additive Manufacturing 등 우선 게재지 안에서 별도 검색을 수행합니다.
-4. DOI가 있으면 DOI로, DOI가 없으면 normalized title로 중복 제거합니다.
-5. 새 논문이면 선택적으로 Semantic Scholar 보강을 수행합니다.
-6. 새 논문에 대해서만 한글 요약, 관련성 점수, 관련성 설명, 태그, 카테고리를 생성합니다.
-7. 저장 전 `_abstract` 같은 transient 필드를 제거합니다.
-8. 변경이 있을 때만 `data/papers.json`을 씁니다.
+3. `data/seed_dois.json`에 있는 DOI는 OpenAlex DOI endpoint로 직접 조회합니다.
+4. `data/target_venues.json`의 OpenAlex source ID를 사용해 Nature, Science, Additive Manufacturing 등 우선 게재지 안에서 별도 검색을 수행합니다.
+5. DOI가 있으면 DOI로, DOI가 없으면 normalized title로 중복 제거합니다.
+6. 새 논문이면 선택적으로 Semantic Scholar 보강을 수행합니다.
+7. 새 논문에 대해서만 한글 요약, 관련성 점수, 관련성 설명, 태그, 카테고리를 생성합니다.
+8. 저장 전 `_abstract` 같은 transient 필드를 제거합니다.
+9. 변경이 있을 때만 `data/papers.json`을 씁니다.
 
 파일별 역할:
 

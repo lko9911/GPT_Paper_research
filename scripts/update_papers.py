@@ -13,13 +13,14 @@ from typing import Any
 
 from enrich_semantic_scholar import enrich_with_semantic_scholar
 from fetch_crossref import fetch_crossref
-from fetch_openalex import fetch_openalex
+from fetch_openalex import fetch_openalex, fetch_openalex_by_doi
 from summarize import summarize_record
 
 ROOT = Path(__file__).resolve().parents[1]
 PAPERS_PATH = ROOT / "data" / "papers.json"
 QUERIES_PATH = ROOT / "data" / "queries.json"
 TARGET_VENUES_PATH = ROOT / "data" / "target_venues.json"
+SEED_DOIS_PATH = ROOT / "data" / "seed_dois.json"
 DEFAULT_SINCE_YEAR = 2024
 VENUE_QUERY_LIMIT = 6
 
@@ -32,8 +33,30 @@ def main() -> None:
     existing = _load_json(PAPERS_PATH, [])
     queries = _load_json(QUERIES_PATH, [])
     target_venues = _load_json(TARGET_VENUES_PATH, [])
+    seed_dois = _load_json(SEED_DOIS_PATH, [])
     index = {_dedupe_key(paper): paper for paper in existing}
     added = 0
+
+    for doi in seed_dois:
+        print(f"Fetching seed DOI: {doi}")
+        candidate = _safe_fetch_openalex_doi(doi)
+        if not candidate:
+            continue
+        if not _is_plausible(candidate, since_year):
+            print(f"Seed DOI skipped by relevance/year filter: {doi}")
+            continue
+        key = _dedupe_key(candidate)
+        if key in index:
+            _merge_source(index[key], candidate, today)
+            continue
+
+        enriched = enrich_with_semantic_scholar(candidate)
+        summarized = summarize_record(enriched)
+        paper = _finalize_record(summarized, today)
+        index[_dedupe_key(paper)] = paper
+        existing.append(paper)
+        added += 1
+        print(f"Added seed DOI: {paper['title']}")
 
     for query in queries:
         print(f"Searching: {query}")
@@ -101,6 +124,14 @@ def _safe_fetch_openalex_source(query: str, source_id: str, since_year: int) -> 
     except Exception as exc:
         print(f"Venue fetch failed for OpenAlex source {source_id} / '{query}': {exc}")
         return []
+
+
+def _safe_fetch_openalex_doi(doi: str) -> dict[str, Any] | None:
+    try:
+        return fetch_openalex_by_doi(doi)
+    except Exception as exc:
+        print(f"DOI fetch failed for {doi}: {exc}")
+        return None
 
 
 def _is_plausible(record: dict[str, Any], since_year: int) -> bool:

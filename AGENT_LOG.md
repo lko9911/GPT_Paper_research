@@ -440,6 +440,37 @@
 ### 주의사항
 - 중복 태그를 숨기더라도 검색 haystack에는 표시용 태그가 반영되므로, 카테고리/태그 필터 설계를 계속 관찰해야 합니다.
 
+## 2026-06-12 10:36
+
+### 변경 요약
+- 사용자가 Nature Communications DOI `10.1038/s41467-024-47480-5` 논문이 검색되지 않는 문제를 제기했습니다.
+- 원인은 OpenAlex venue 검색이 최신순 상위 일부만 가져와 2024 핵심 논문이 최신 2026 논문 뒤로 밀린 것이었습니다.
+- 검색 순위에 의존하지 않도록 seed DOI 직접 조회 기능을 추가하고 해당 논문을 추가했습니다.
+
+### 수정/생성한 파일
+- `data/seed_dois.json`: 중요 논문 DOI 목록을 추가하고 `10.1038/s41467-024-47480-5`를 등록했습니다.
+- `scripts/fetch_openalex.py`: DOI로 OpenAlex works endpoint를 직접 조회하는 `fetch_openalex_by_doi` 함수를 추가했습니다.
+- `scripts/update_papers.py`: seed DOI를 먼저 조회하고 기존 중복 제거/요약/저장 파이프라인에 태우도록 수정했습니다.
+- `data/papers.json`: `3D printing with a 3D printed digital material filament for programming functional gradients` 논문을 추가했습니다.
+- `README.md`: 자동 검색에서 누락되는 중요 논문은 `data/seed_dois.json`에 DOI를 추가하는 방식으로 보완할 수 있음을 문서화했습니다.
+- `ARCHITECTURE.md`: seed DOI 조회 단계를 파이프라인 설명에 추가했습니다.
+- `AGENT_LOG.md`: 이번 누락 원인과 수정 내용을 기록했습니다.
+
+### 구현한 기능
+- DOI 기반 강제 포함 후보 조회
+- 검색 순위에서 밀리는 핵심 논문 보완
+- 기존 저작권 정책 유지: abstract 저장 없음, PDF 저장 없음
+
+### 설계 결정
+- 특정 Nature 페이지를 크롤링하지 않고 DOI를 통해 OpenAlex 공식 메타데이터를 조회했습니다.
+- seed DOI는 사람이 중요 논문을 알고 있을 때 사용하는 보완 경로로 설계했습니다.
+
+### 남은 작업
+- 핵심 분야 논문을 추가로 알고 있다면 `data/seed_dois.json`에 DOI를 계속 추가하면 됩니다.
+
+### 주의사항
+- seed DOI도 `_is_plausible`의 주제/연도 필터를 통과해야 저장됩니다.
+
 ## 2026-06-12 10:32
 
 ### 변경 요약

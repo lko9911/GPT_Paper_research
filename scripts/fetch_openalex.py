@@ -47,6 +47,18 @@ def fetch_openalex(
     return [_normalize_work(item) for item in response.json().get("results", [])]
 
 
+def fetch_openalex_by_doi(doi: str) -> dict[str, Any] | None:
+    doi = _clean_doi(doi)
+    if not doi:
+        return None
+    response = requests.get(f"{OPENALEX_API}/doi:{doi}", headers=_headers(), timeout=30)
+    if response.status_code == 404:
+        return None
+    response.raise_for_status()
+    time.sleep(float(os.getenv("API_SLEEP_SECONDS", "0.2")))
+    return _normalize_work(response.json())
+
+
 def _normalize_work(item: dict[str, Any]) -> dict[str, Any]:
     doi = _clean_doi(item.get("doi"))
     title = item.get("title") or item.get("display_name") or "Untitled"

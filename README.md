@@ -93,6 +93,8 @@ python -m http.server 8000
 
 `raw_abstract_displayed`와 `pdf_stored`는 정책 확인을 위해 `false`로 유지합니다.
 
+중요하지만 자동 검색 순위에서 누락되는 논문은 `data/seed_dois.json`에 DOI를 추가하세요. 업데이트 파이프라인이 DOI로 OpenAlex를 직접 조회해 주제/연도 기준을 만족하면 `data/papers.json`에 추가합니다.
+
 ## 검색어 수정 방법
 
 `data/queries.json`의 문자열 배열을 수정하면 다음 자동 실행부터 검색 범위가 바뀝니다. 너무 넓은 검색어는 관련 없는 논문을 늘릴 수 있으므로, additive manufacturing과 설계/재료/툴패스 맥락이 함께 드러나는 검색어를 권장합니다.
