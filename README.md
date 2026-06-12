@@ -64,6 +64,25 @@ python -m http.server 8000
 
 워크플로는 Python 의존성을 설치하고 `scripts/update_papers.py`를 실행합니다. `data/papers.json`이 변경된 경우에만 자동 커밋합니다. 새 논문이 없어도 정상 종료되도록 구성해 불필요한 실패 알림을 줄였습니다.
 
+## OpenAI로 기존 논문 전체 재요약
+
+`OPENAI_API_KEY`를 GitHub Actions secret에 설정한 뒤, 기존 논문 요약을 OpenAI 기반 5문항 형식으로 다시 만들 수 있습니다.
+
+1. GitHub 저장소의 `Actions` 탭으로 이동합니다.
+2. `Refresh OpenAI summaries` workflow를 선택합니다.
+3. `Run workflow`를 누릅니다.
+4. 전체 라이브러리를 갱신하려면 다음 값을 사용합니다.
+
+```txt
+max_summaries: 400
+refresh_mode: non_qa
+dry_run: false
+```
+
+현재 논문 수가 약 342편이므로 `max_summaries=400`이면 기존 문단형 요약을 대부분 한 번에 5문항 형식으로 바꿀 수 있습니다. 비용 테스트만 하려면 `max_summaries=5`, `dry_run=true`로 먼저 실행하세요.
+
+이 workflow는 정기 실행되지 않고 수동 실행만 지원합니다. 따라서 OpenAI 비용이 매시간 반복 발생하지 않습니다.
+
 ## 논문 수동 추가/수정 방법
 
 `data/papers.json`에 아래 스키마를 맞춰 항목을 추가하거나 수정합니다.

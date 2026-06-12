@@ -89,6 +89,7 @@
 - `scripts/fetch_crossref.py`: Crossref Works API 조회 및 공통 스키마로 정규화
 - `scripts/enrich_semantic_scholar.py`: `SEMANTIC_SCHOLAR_API_KEY`가 있을 때 DOI 기반 선택적 보강
 - `scripts/summarize.py`: OpenAI 요약 생성 또는 fallback 요약 생성, 5문항 요약 형식화, 카테고리/태그/점수 생성
+- `scripts/refresh_openai_summaries.py`: 기존 논문을 수동 batch로 OpenAI 재요약
 - `scripts/update_papers.py`: 전체 orchestration, 중복 제거, 저장
 
 ## GitHub Actions workflow 구조
@@ -105,6 +106,8 @@
 
 새 논문이 없거나 API 일부가 일시 실패해도 전체 워크플로가 불필요하게 실패하지 않도록 fetch 오류는 개별 검색 단위에서 로그를 남기고 계속 진행합니다.
 
+`.github/workflows/refresh-openai-summaries.yml`은 정기 실행되지 않는 수동 workflow입니다. `OPENAI_API_KEY`가 설정된 경우에만 기존 논문을 OpenAI로 5문항 재요약합니다. 비용 폭주를 막기 위해 `max_summaries`, `refresh_mode`, `dry_run` 입력값을 받습니다. 전체 342편 재요약은 `max_summaries=400`, `refresh_mode=non_qa`, `dry_run=false`로 실행합니다.
+
 ## API key 및 환경변수
 
 - `CONTACT_EMAIL`: OpenAlex/Crossref polite request에 사용합니다.
@@ -113,6 +116,9 @@
 - `SEMANTIC_SCHOLAR_API_KEY`: 선택적 Semantic Scholar 보강에 사용합니다.
 - `API_SLEEP_SECONDS`: API rate limit 배려를 위한 요청 간 대기 시간입니다. 기본값은 `0.2`초입니다.
 - `SINCE_YEAR`: 자동 조사 시작 연도입니다. 기본값은 `2024`입니다.
+- `MAX_OPENAI_SUMMARIES`: 수동 OpenAI 재요약 workflow에서 한 번에 처리할 최대 논문 수입니다.
+- `REFRESH_MODE`: `non_qa`, `all`, `missing` 중 하나로 OpenAI 재요약 대상을 고릅니다.
+- `DRY_RUN`: `true`면 OpenAI 재요약 테스트만 하고 파일을 쓰지 않습니다.
 
 환경변수 값은 로그나 데이터 파일에 기록하지 않습니다.
 

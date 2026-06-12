@@ -76,9 +76,11 @@ def summarize_record(record: dict[str, Any], allow_openai: bool = True) -> dict[
         generated = _summarize_with_openai(record, abstract)
         if generated:
             record.update(generated)
+            record["_summary_provider"] = "openai"
             return record
 
     record.update(_fallback_summary(record, abstract))
+    record["_summary_provider"] = "fallback"
     return record
 
 
