@@ -156,12 +156,37 @@ def _is_plausible(record: dict[str, Any], since_year: int) -> bool:
     if year and year < since_year:
         return False
     text = f"{title} {record.get('_abstract', '')}".lower()
-    additive_terms = ["additive manufacturing", "3d printing", "fused deposition", "fdm", "material extrusion"]
+    additive_terms = [
+        "additive manufacturing",
+        "3d printing",
+        "3-d printing",
+        "4d printing",
+        "4-d printing",
+        "four-dimensional printing",
+        "printed",
+        "printing",
+        "direct ink writing",
+        "diw",
+        "fused deposition",
+        "fdm",
+        "material extrusion",
+    ]
     topic_terms = [
         "multi-material",
         "multimaterial",
         "functionally graded",
         "graded material",
+        "liquid crystal elastomer",
+        "liquid-crystal elastomer",
+        " lce ",
+        "4d print",
+        "shape morph",
+        "shape-morph",
+        "shape changing",
+        "stimuli-responsive",
+        "stimulus-responsive",
+        "soft actuator",
+        "metamaterial",
         "toolpath",
         "computational design",
         "material distribution",
@@ -271,7 +296,7 @@ def _safe_year(value: Any, log: bool = True) -> int | None:
     except (TypeError, ValueError):
         return None
     current_year = date.today().year
-    if year < 1900 or year > current_year + 1:
+    if year < 1900 or year > current_year:
         if log:
             print(f"Discarding implausible publication year: {year}")
         return None

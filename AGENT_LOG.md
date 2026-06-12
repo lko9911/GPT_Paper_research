@@ -1,5 +1,44 @@
 # AGENT_LOG
 
+## 2026-06-12 18:43
+
+### 변경 요약
+- LCE(liquid crystal elastomer) 논문이 누락된 원인을 확인하고, 검색어와 합법적 메타데이터 수집 필터를 확장했습니다.
+- OpenAlex DOI 메타데이터 기준으로 2024년 LCE/4D printing 관련 논문 3편을 `data/papers.json`에 추가했습니다.
+- OpenAlex rate limit 상황에 대비해 429 retry/backoff 로직을 추가했습니다.
+- 미래 연도 논문이 섞이지 않도록 현재 연도 이후 논문은 제외하도록 연도 필터를 강화했습니다.
+
+### 수정/생성한 파일
+- `data/queries.json`: LCE, 4D printing, direct ink writing, stimuli-responsive LCE 관련 검색어를 추가했습니다.
+- `data/seed_dois.json`: LCE 관련 검증 DOI 3개를 seed DOI로 추가했습니다.
+- `data/papers.json`: 2024년 LCE 관련 논문 3편을 추가했습니다.
+- `data/site_meta.json`: 총 논문 수와 마지막 갱신 시각 메타데이터를 현재 데이터 상태에 맞게 갱신했습니다.
+- `scripts/update_papers.py`: LCE, 4D printing, direct ink writing, soft actuator, metamaterial 표현을 관련성 필터에 반영하고 미래 연도 필터를 강화했습니다.
+- `scripts/summarize.py`: LCE, 4D printing, metamaterials 태그 판별 키워드를 추가했습니다.
+- `scripts/fetch_openalex.py`: OpenAlex 429 응답에 대한 재시도와 지수 backoff를 추가했습니다.
+- `AGENT_LOG.md`: 이번 LCE 보강 작업의 원인, 변경 내용, 정책 주의사항을 기록했습니다.
+
+### 구현한 기능
+- LCE/4D printing 논문이 자동 수집 후보에 포함되도록 검색 범위를 확장했습니다.
+- DOI 기반 seed 수집으로 누락 가능성이 큰 핵심 논문을 안정적으로 포함했습니다.
+- 새로 추가한 논문도 기존 정책과 동일하게 raw abstract를 표시하거나 저장하지 않고, PDF도 다운로드/저장하지 않습니다.
+- OpenAlex 일시적 rate limit이 있어도 workflow가 더 안정적으로 재시도할 수 있게 했습니다.
+
+### 설계 결정
+- 출판사 웹사이트 크롤링이나 PDF 다운로드 없이 OpenAlex DOI 메타데이터 API를 사용했습니다.
+- LCE는 4D printing, direct ink writing, shape morphing, stimuli-responsive actuator 문헌과 함께 검색되므로 additive manufacturing 키워드만으로 제한하지 않도록 필터를 넓혔습니다.
+- Crossref/OpenAlex에서 미래 연도 메타데이터가 섞일 수 있어 현재 연도 이후 항목은 제외하도록 했습니다.
+- API key, secret, token은 로그나 코드에 기록하지 않았습니다.
+
+### 남은 작업
+- GitHub Actions 정기 실행 후에도 LCE 검색어가 충분히 작동하는지 다음 자동 갱신 결과를 확인하는 것이 좋습니다.
+- LCE 하위 태그가 UI에서 과도하게 늘어나면 `assets/app.js`의 토픽 그룹 표현을 추가 정리할 수 있습니다.
+
+### 주의사항
+- raw abstract는 AI 요약 입력으로만 사용해야 하며 사이트나 JSON의 표시 필드로 저장하지 않습니다.
+- PDF는 다운로드하거나 저장하지 않습니다.
+- OpenAlex 검색 API가 429를 반환할 수 있으므로 지나치게 공격적인 수집 주기나 쿼리 수 증가는 피해야 합니다.
+
 ## 2026-06-12 19:55
 
 ### 변경 요약
