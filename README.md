@@ -111,6 +111,17 @@ python -m http.server 8000
 
 Science, Nature, Nature Communications, Advanced Materials 같은 게재지도 OpenAlex/Crossref 메타데이터에 잡히고 위 기준을 만족하면 포함될 수 있습니다. 특정 출판사나 저널을 직접 크롤링하지는 않습니다.
 
+현재 UI에서 우선 추적하는 게재지는 다음과 같습니다.
+
+- Nature
+- Nature Communications
+- Nature Materials
+- Nature Reviews Materials
+- Science
+- Science Advances
+- Science Robotics
+- Additive Manufacturing
+
 ## 한계점
 
 - 메타데이터 API의 색인 상태에 따라 최신 논문 반영이 지연될 수 있습니다.

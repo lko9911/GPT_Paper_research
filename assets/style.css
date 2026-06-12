@@ -74,14 +74,20 @@ h1 {
   font-size: 1.08rem;
 }
 
-.topic-nav {
+.topic-nav,
+.venue-nav {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin: 20px 0 18px;
+  margin: 20px 0 0;
+}
+
+.venue-nav {
+  margin: 10px 0 18px;
 }
 
 .topic-pill,
+.venue-pill,
 .badge,
 .link-pill {
   border-radius: 999px;
@@ -89,7 +95,8 @@ h1 {
   white-space: nowrap;
 }
 
-.topic-pill {
+.topic-pill,
+.venue-pill {
   min-height: 32px;
   padding: 7px 12px;
   border: 1px solid var(--line-strong);
@@ -100,7 +107,16 @@ h1 {
   cursor: pointer;
 }
 
-.topic-pill.is-active {
+.venue-pill {
+  min-height: 30px;
+  border-color: #d5dbea;
+  background: #f8fafc;
+  color: #475467;
+  font-size: 0.8rem;
+}
+
+.topic-pill.is-active,
+.venue-pill.is-active {
   border-color: var(--blue);
   background: var(--blue);
   color: #ffffff;
