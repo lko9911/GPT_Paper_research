@@ -11,11 +11,12 @@ permissions:
   id-token: write
 
 concurrency:
-  group: pages
+  group: update-papers
   cancel-in-progress: false
 
 jobs:
   update:
+    timeout-minutes: 60
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

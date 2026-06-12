@@ -11,6 +11,7 @@
 ### 완료된 추가 개선
 - 자동 수집 파이프라인이 앞으로도 curated/archive를 분리 저장하도록 `scripts/update_papers.py`를 수정했습니다.
 - `.github/workflows/update-papers.yml`의 자동 커밋 대상에 `data/archive_papers.json`을 추가했습니다.
+- Pages 배포와 논문 수집 workflow의 concurrency group을 분리했고, 수집 job에 60분 timeout을 추가했습니다.
 - 너무 넓은 `digital twin smart manufacturing`, `digital twin manufacturing process optimization` 검색어를 제거하고 AM 맥락이 더 강한 digital twin 검색어로 교체했습니다.
 - 같은 제목의 여러 버전은 정식 venue/DOI/비저장소 여부를 기준으로 대표 항목만 curated에 남깁니다.
 
