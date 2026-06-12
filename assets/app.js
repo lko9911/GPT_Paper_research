@@ -30,6 +30,7 @@ const FIELD_SUBTOPICS = {
 const SIDEBAR_OTHER_TOPIC = "__field_other__";
 
 const FEATURED_TOPICS = [
+  "Additive manufacturing",
   "MMAM",
   "FGAM",
   "DM filament",
@@ -1204,7 +1205,7 @@ function categoryIndex(category) {
 }
 
 function deriveField(paper) {
-  const titleText = normalize([paper.title, paper.venue, (paper.tags || []).join(" ")].join(" "));
+  const titleText = normalize([paper.title, paper.venue].join(" "));
   const categoryText = normalize((paper.categories || []).join(" "));
   const text = `${titleText} ${categoryText}`;
 
@@ -1260,7 +1261,6 @@ function deriveField(paper) {
     titleText.includes("vat photopolymerisation") ||
     titleText.includes("stereolithography") ||
     titleText.includes("sla") ||
-    titleText.includes("additive manufacturing") ||
     titleText.includes("다중재료") ||
     titleText.includes("기능성 구배") ||
     titleText.includes("툴패스") ||

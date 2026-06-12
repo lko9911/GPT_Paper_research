@@ -1,5 +1,35 @@
 # AGENT_LOG
 
+## 2026-06-12 23:01
+
+### 변경 요약
+- `Additive manufacturing` 태그 보강 후 왼쪽 `Manufacturing` 분야 카운트가 1로 줄어드는 문제를 수정했습니다.
+- 대분야 분류가 태그에 과도하게 끌려가지 않도록 `deriveField()`에서 `paper.tags`를 제외했습니다.
+- `additive manufacturing` 단독 표현만으로 3D Printing 분야에 들어가지 않도록 조정했습니다.
+- 대표 태그 목록에 `Additive manufacturing`을 추가해 FDM 및 Functionally Graded AM 축과 함께 보이도록 했습니다.
+- 깨져 있던 일부 `relevance_note_ko` 문장을 UTF-8 안전 방식으로 전체 재생성했습니다.
+
+### 수정/생성한 파일
+- `assets/app.js`: 대분야 분류 로직과 대표 태그 목록을 수정했습니다.
+- `data/papers.json`: 342편의 `relevance_note_ko`를 정상 한국어 문장으로 재생성했습니다.
+- `index.html`: JS/CSS cache-busting version을 갱신했습니다.
+- `AGENT_LOG.md`: 이번 분류 복구 및 태그 노출 보강 작업을 기록했습니다.
+
+### 구현한 기능
+- `Manufacturing` 분야가 태그 정규화 때문에 1편으로 줄어드는 문제가 해결됩니다.
+- `Additive Manufacturing`, `FDM`, `Functionally Graded AM`이 대표 태그 축에서 함께 보입니다.
+- 관련성 설명 문장이 `? ??????`처럼 깨져 보이는 문제를 제거했습니다.
+
+### 설계 결정
+- 태그는 필터/카드 표시용으로 유지하고, 대분야 분류는 제목·venue·카테고리 중심으로 계산하도록 분리했습니다.
+- `Additive manufacturing`은 너무 넓은 표현이므로 단독으로는 3D Printing으로 강제 분류하지 않습니다.
+
+### 남은 작업
+- 실제 브라우저에서 왼쪽 패널 카운트와 대표 태그 버튼 표시를 확인하면 좋습니다.
+
+### 주의사항
+- raw abstract/PDF 저장 정책은 변경하지 않았습니다.
+
 ## 2026-06-12 22:50
 
 ### 변경 요약
