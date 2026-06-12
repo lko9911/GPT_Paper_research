@@ -26,6 +26,9 @@ const state = {
   papers: [],
   filtered: [],
   activeTopic: "",
+  matrixCategory: "",
+  matrixVenue: "",
+  venueColumns: [],
 };
 
 const els = {
@@ -35,9 +38,12 @@ const els = {
   search: document.querySelector("#search-input"),
   category: document.querySelector("#category-filter"),
   tag: document.querySelector("#tag-filter"),
+  venue: document.querySelector("#venue-filter"),
   year: document.querySelector("#year-filter"),
   sort: document.querySelector("#sort-select"),
   topicNav: document.querySelector(".topic-nav"),
+  matrix: document.querySelector("#venue-matrix"),
+  matrixClear: document.querySelector("#matrix-clear"),
   total: document.querySelector("#stat-total"),
   categories: document.querySelector("#stat-categories"),
   updated: document.querySelector("#stat-updated"),
@@ -56,23 +62,32 @@ async function init() {
 
   buildFilters();
   buildTopicNav();
+  buildVenueMatrix();
   updateStats();
   applyFilters();
 
-  [els.search, els.category, els.tag, els.year, els.sort].forEach((el) => {
+  [els.search, els.category, els.tag, els.venue, els.year, els.sort].forEach((el) => {
     el.addEventListener("input", applyFilters);
     el.addEventListener("change", applyFilters);
+  });
+
+  els.matrixClear.addEventListener("click", () => {
+    state.matrixCategory = "";
+    state.matrixVenue = "";
+    applyFilters();
   });
 }
 
 function buildFilters() {
   const categories = new Set();
   const tags = new Set();
+  const venues = new Set();
   const years = new Set();
 
   state.papers.forEach((paper) => {
     (paper.categories || []).forEach((category) => categories.add(category));
     (paper.tags || []).forEach((tag) => tags.add(tag));
+    venues.add(normalizeVenue(paper.venue));
     if (paper.year) years.add(String(paper.year));
   });
 
@@ -86,9 +101,29 @@ function buildFilters() {
     els.tag.append(new Option(tag, tag));
   });
 
+  [...venues].sort((a, b) => a.localeCompare(b, "ko")).forEach((venue) => {
+    els.venue.append(new Option(venue, venue));
+  });
+
   [...years]
     .sort((a, b) => Number(b) - Number(a))
     .forEach((year) => els.year.append(new Option(year, year)));
+}
+
+function buildVenueMatrix() {
+  const venueCounts = new Map();
+  state.papers.forEach((paper) => {
+    const venue = normalizeVenue(paper.venue);
+    venueCounts.set(venue, (venueCounts.get(venue) || 0) + 1);
+  });
+
+  state.venueColumns = [...venueCounts.entries()]
+    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "ko"))
+    .slice(0, 8)
+    .map(([venue]) => venue);
+
+  const uncategorizedVenues = [...venueCounts.keys()].filter((venue) => !state.venueColumns.includes(venue));
+  if (uncategorizedVenues.length) state.venueColumns.push("Other venues");
 }
 
 function buildTopicNav() {
@@ -140,12 +175,14 @@ function applyFilters() {
   const query = normalize(els.search.value);
   const category = els.category.value;
   const tag = els.tag.value;
+  const venue = els.venue.value;
   const year = els.year.value;
   const sort = els.sort.value;
 
   state.filtered = state.papers.filter((paper) => {
     const paperCategories = paper.categories || [];
     const paperTags = paper.tags || [];
+    const paperVenue = normalizeVenue(paper.venue);
     const haystack = normalize(
       [
         paper.title,
@@ -162,9 +199,12 @@ function applyFilters() {
     const matchesQuery = !query || haystack.includes(query);
     const matchesCategory = !category || paperCategories.includes(category);
     const matchesTag = !tag || paperTags.includes(tag);
+    const matchesVenue = !venue || paperVenue === venue;
     const matchesTopic = !state.activeTopic || paperTags.includes(state.activeTopic) || paperCategories.includes(state.activeTopic);
+    const matchesMatrixCategory = !state.matrixCategory || paperCategories.includes(state.matrixCategory);
+    const matchesMatrixVenue = !state.matrixVenue || venueBucket(paperVenue) === state.matrixVenue;
     const matchesYear = !year || String(paper.year || "") === year;
-    return matchesQuery && matchesCategory && matchesTag && matchesTopic && matchesYear;
+    return matchesQuery && matchesCategory && matchesTag && matchesVenue && matchesTopic && matchesMatrixCategory && matchesMatrixVenue && matchesYear;
   });
 
   state.filtered.sort((a, b) => {
@@ -177,7 +217,67 @@ function applyFilters() {
     return Number(b.relevance_score || 0) - Number(a.relevance_score || 0) || Number(b.year || 0) - Number(a.year || 0);
   });
 
+  renderMatrix();
   render();
+}
+
+function renderMatrix() {
+  els.matrix.innerHTML = "";
+
+  const categories = CATEGORY_ORDER.filter((category) =>
+    state.papers.some((paper) => (paper.categories || []).includes(category))
+  );
+  const table = document.createElement("table");
+  table.className = "matrix-table";
+  table.innerHTML = `
+    <thead>
+      <tr>
+        <th scope="col">주제</th>
+        ${state.venueColumns.map((venue) => `<th scope="col">${escapeHtml(shortVenue(venue))}</th>`).join("")}
+        <th scope="col">합계</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  `;
+
+  const tbody = table.querySelector("tbody");
+  categories.forEach((category) => {
+    const rowPapers = state.papers.filter((paper) => (paper.categories || []).includes(category));
+    const row = document.createElement("tr");
+    row.innerHTML = `
+      <th scope="row">${escapeHtml(category)}</th>
+      ${state.venueColumns.map((venue) => matrixCell(category, venue)).join("")}
+      <td class="matrix-total">${rowPapers.length}</td>
+    `;
+    tbody.append(row);
+  });
+
+  els.matrix.append(table);
+  els.matrix.querySelectorAll("[data-matrix-category]").forEach((button) => {
+    button.addEventListener("click", () => {
+      state.matrixCategory = button.dataset.matrixCategory;
+      state.matrixVenue = button.dataset.matrixVenue;
+      applyFilters();
+    });
+  });
+
+  els.matrixClear.hidden = !(state.matrixCategory || state.matrixVenue);
+}
+
+function matrixCell(category, venue) {
+  const papers = state.papers.filter((paper) => {
+    const categories = paper.categories || [];
+    return categories.includes(category) && venueBucket(normalizeVenue(paper.venue)) === venue;
+  });
+  const active = state.matrixCategory === category && state.matrixVenue === venue;
+  if (!papers.length) return '<td class="matrix-empty">-</td>';
+  return `
+    <td>
+      <button class="matrix-count ${active ? "is-active" : ""}" type="button" data-matrix-category="${escapeAttribute(category)}" data-matrix-venue="${escapeAttribute(venue)}">
+        ${papers.length}
+      </button>
+    </td>
+  `;
 }
 
 function render() {
@@ -290,6 +390,26 @@ function formatAuthors(authors) {
 function categoryIndex(category) {
   const index = CATEGORY_ORDER.indexOf(category);
   return index === -1 ? CATEGORY_ORDER.length : index;
+}
+
+function normalizeVenue(venue) {
+  return String(venue || "Venue unknown").trim() || "Venue unknown";
+}
+
+function venueBucket(venue) {
+  return state.venueColumns.includes(venue) ? venue : "Other venues";
+}
+
+function shortVenue(venue) {
+  const replacements = {
+    "Rapid Prototyping Journal": "Rapid Prototyping",
+    "Journal of Manufacturing Processes": "J. Manufacturing",
+    "Physics in Medicine and Biology": "Phys. Med. Biol.",
+    "Advanced Engineering Materials": "Adv. Eng. Mater.",
+    "Engineering With Computers": "Eng. with Computers",
+    "npj Artificial Intelligence": "npj AI",
+  };
+  return replacements[venue] || venue;
 }
 
 function normalize(value) {
