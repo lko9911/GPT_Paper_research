@@ -1,5 +1,42 @@
 # AGENT_LOG
 
+## 2026-06-13 00:10
+
+### 변경 요약
+- 자동 수집 후보 2084개를 메인 큐레이션 논문과 아카이브 후보로 분리했습니다.
+- `data/papers.json`은 기본 사이트에 노출할 curated papers만 담도록 정리했고, 낮은 관련성/제목 중복 후보는 `data/archive_papers.json`으로 이동했습니다.
+- 상단 통계를 `큐레이션 논문`, `전체 후보`, `숨김/아카이브`로 바꿔 2084와 실제 표시 논문 수의 의미를 분리했습니다.
+
+### 수정/생성한 파일
+- `data/papers.json`: `relevance_score >= 5`와 제목 중복 제거 기준을 통과한 414편만 유지했습니다.
+- `data/archive_papers.json`: 낮은 관련성 및 제목 중복 후보 1670개를 보존했습니다.
+- `data/site_meta.json`: `curated_count=414`, `raw_candidate_count=2084`, `archived_count=1670`, `hidden_low_relevance_count=1647`, `duplicate_archived_count=23`을 기록했습니다.
+- `scripts/update_papers.py`: 이후 자동 수집도 curated/archive를 분리 저장하도록 변경했습니다.
+- `.github/workflows/update-papers.yml`: 자동 커밋 대상에 `data/archive_papers.json`을 포함했습니다.
+- `data/queries.json`: 너무 넓은 digital twin 검색어를 줄이고 additive manufacturing 맥락이 강한 검색어로 교체했습니다.
+- `assets/app.js`: 상단 통계와 결과 문구를 raw/curated/archive 기준으로 표시하도록 수정했습니다.
+- `index.html`: 초기 통계 라벨과 CSS/JS cache-busting version을 업데이트했습니다.
+- `AGENT_LOG.md`: 이번 큐레이션/아카이브 분리 작업을 기록했습니다.
+
+### 구현한 기능
+- 기본 사이트에는 curated papers만 표시됩니다.
+- 전체 raw 후보 수와 archive 숨김 수는 `data/site_meta.json` 기반 통계로 확인할 수 있습니다.
+- 자동 수집 시 `relevance_score < 5` 항목과 제목 중복 loser는 archive로 이동합니다.
+- 같은 제목의 여러 버전이 있을 경우 관련성 점수, repository 여부, venue/DOI 존재 여부, 연도를 기준으로 대표 항목을 고릅니다.
+
+### 설계 결정
+- 2084는 논문 수가 아니라 자동 수집 후보 레코드 수로 보고, Awesome-style 사이트의 메인 수는 curated count로 분리했습니다.
+- 낮은 관련성 항목을 삭제하지 않고 archive에 보존해 나중에 기준 변경 시 복구할 수 있게 했습니다.
+- `digital twin smart manufacturing`처럼 너무 넓은 쿼리는 폭증 원인이므로 제거했습니다.
+
+### 남은 작업
+- 새 curated 414편 중 분야와 게재지 분포를 화면에서 검수하면 좋습니다.
+- 필요하면 archive 보기 토글을 UI에 추가할 수 있습니다.
+
+### 주의사항
+- 이번 변경은 PDF 저장, 출판사 크롤링, raw abstract 표시 정책을 변경하지 않습니다.
+- `archive_papers.json`도 공개 정적 데이터이지만 DOI/메타데이터/AI 요약만 포함하며, 원문 초록이나 PDF는 저장하지 않습니다.
+
 ## 2026-06-12 23:50
 
 ### 변경 요약
