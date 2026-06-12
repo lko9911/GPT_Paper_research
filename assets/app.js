@@ -68,8 +68,6 @@ const els = {
   venueNav: document.querySelector(".venue-nav"),
   sideTopicNav: document.querySelector("#side-topic-nav"),
   venueBoard: document.querySelector("#venue-board"),
-  matrix: document.querySelector("#venue-matrix"),
-  matrixClear: document.querySelector("#matrix-clear"),
   total: document.querySelector("#stat-total"),
   categories: document.querySelector("#stat-categories"),
   updated: document.querySelector("#stat-updated"),
@@ -90,7 +88,6 @@ async function init() {
   buildTopicNav();
   buildVenueNav();
   buildSideNav();
-  buildVenueMatrix();
   renderVenueBoard();
   updateStats();
   applyFilters();
@@ -100,11 +97,6 @@ async function init() {
     el.addEventListener("change", applyFilters);
   });
 
-  els.matrixClear.addEventListener("click", () => {
-    state.matrixCategory = "";
-    state.matrixVenue = "";
-    applyFilters();
-  });
 }
 
 function buildFilters() {
@@ -264,25 +256,6 @@ function renderVenueBoard() {
   });
 }
 
-function buildVenueMatrix() {
-  const venueCounts = new Map();
-  state.papers.forEach((paper) => {
-    const venue = normalizeVenue(paper.venue);
-    venueCounts.set(venue, (venueCounts.get(venue) || 0) + 1);
-  });
-
-  const targetColumns = TARGET_VENUES.filter((venue) => venueCounts.has(venue));
-  const otherColumns = [...venueCounts.entries()]
-    .filter(([venue]) => !targetColumns.includes(venue))
-    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "ko"))
-    .slice(0, Math.max(0, 8 - targetColumns.length))
-    .map(([venue]) => venue);
-
-  state.venueColumns = [...targetColumns, ...otherColumns];
-  const uncategorizedVenues = [...venueCounts.keys()].filter((venue) => !state.venueColumns.includes(venue));
-  if (uncategorizedVenues.length) state.venueColumns.push("Other venues");
-}
-
 function updateStats() {
   const categories = new Set(flatten(state.papers.map((paper) => paper.categories || [])));
   const updatedDates = state.papers
@@ -335,8 +308,6 @@ function applyFilters() {
     const matchesVenue = !venue || paperVenue === venue;
     const matchesTarget = !state.activeTargetVenue || matchesTargetVenue(paperVenue, state.activeTargetVenue);
     const matchesTopic = !state.activeTopic || paperTags.includes(state.activeTopic) || paperCategories.includes(state.activeTopic);
-    const matchesMatrixCategory = !state.matrixCategory || paperCategories.includes(state.matrixCategory);
-    const matchesMatrixVenue = !state.matrixVenue || venueBucket(paperVenue) === state.matrixVenue;
     const matchesYear = !year || String(paper.year || "") === year;
     return (
       matchesQuery &&
@@ -345,8 +316,6 @@ function applyFilters() {
       matchesVenue &&
       matchesTarget &&
       matchesTopic &&
-      matchesMatrixCategory &&
-      matchesMatrixVenue &&
       matchesYear
     );
   });
@@ -361,67 +330,7 @@ function applyFilters() {
     return Number(b.relevance_score || 0) - Number(a.relevance_score || 0) || Number(b.year || 0) - Number(a.year || 0);
   });
 
-  renderMatrix();
   render();
-}
-
-function renderMatrix() {
-  els.matrix.innerHTML = "";
-
-  const categories = CATEGORY_ORDER.filter((category) =>
-    state.papers.some((paper) => (paper.categories || []).includes(category))
-  );
-  const table = document.createElement("table");
-  table.className = "matrix-table";
-  table.innerHTML = `
-    <thead>
-      <tr>
-        <th scope="col">주제</th>
-        ${state.venueColumns.map((venue) => `<th scope="col">${escapeHtml(shortVenue(venue))}</th>`).join("")}
-        <th scope="col">합계</th>
-      </tr>
-    </thead>
-    <tbody></tbody>
-  `;
-
-  const tbody = table.querySelector("tbody");
-  categories.forEach((category) => {
-    const rowPapers = state.papers.filter((paper) => (paper.categories || []).includes(category));
-    const row = document.createElement("tr");
-    row.innerHTML = `
-      <th scope="row">${escapeHtml(category)}</th>
-      ${state.venueColumns.map((venue) => matrixCell(category, venue)).join("")}
-      <td class="matrix-total">${rowPapers.length}</td>
-    `;
-    tbody.append(row);
-  });
-
-  els.matrix.append(table);
-  els.matrix.querySelectorAll("[data-matrix-category]").forEach((button) => {
-    button.addEventListener("click", () => {
-      state.matrixCategory = button.dataset.matrixCategory;
-      state.matrixVenue = button.dataset.matrixVenue;
-      applyFilters();
-    });
-  });
-
-  els.matrixClear.hidden = !(state.matrixCategory || state.matrixVenue);
-}
-
-function matrixCell(category, venue) {
-  const papers = state.papers.filter((paper) => {
-    const categories = paper.categories || [];
-    return categories.includes(category) && venueBucket(normalizeVenue(paper.venue)) === venue;
-  });
-  const active = state.matrixCategory === category && state.matrixVenue === venue;
-  if (!papers.length) return '<td class="matrix-empty">-</td>';
-  return `
-    <td>
-      <button class="matrix-count ${active ? "is-active" : ""}" type="button" data-matrix-category="${escapeAttribute(category)}" data-matrix-venue="${escapeAttribute(venue)}">
-        ${papers.length}
-      </button>
-    </td>
-  `;
 }
 
 function render() {
@@ -568,10 +477,6 @@ function matchesTargetVenue(venue, target) {
 
 function isPriorityVenue(venue) {
   return TARGET_VENUES.some((target) => matchesTargetVenue(venue, target));
-}
-
-function venueBucket(venue) {
-  return state.venueColumns.includes(venue) ? venue : "Other venues";
 }
 
 function shortVenue(venue) {
