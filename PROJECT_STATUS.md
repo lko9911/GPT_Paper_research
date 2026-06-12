@@ -17,7 +17,7 @@
 
 ## 현재 프로젝트 상태 요약
 
-GitHub Pages에서 동작 가능한 정적 논문 큐레이션 사이트와 GitHub Actions 자동 업데이트 파이프라인의 최소 동작 버전이 구현되어 있습니다. 로컬에서 업데이트 스크립트를 1회 실행해 `data/papers.json`에는 현재 9편의 논문 메타데이터가 들어 있습니다.
+GitHub Pages에서 동작 가능한 정적 논문 큐레이션 사이트와 GitHub Actions 자동 업데이트 파이프라인이 구현되어 있습니다. `data/papers.json`에는 현재 159편의 논문 메타데이터가 들어 있으며, 조사 범위는 2024년 이후 논문입니다.
 
 ## 완료된 기능
 
@@ -36,6 +36,7 @@ GitHub Pages에서 동작 가능한 정적 논문 큐레이션 사이트와 GitH
 - 새 논문만 요약 생성
 - OpenAI API 선택적 요약 생성
 - OpenAI key가 없을 때 fallback 한글 요약 생성
+- 논문 요약을 5문항 Q/A 형식으로 생성 및 렌더링
 - Semantic Scholar API key가 있을 때 선택적 보강
 - GitHub Actions 매시 실행 및 수동 실행
 - 변경된 `data/papers.json`만 자동 커밋
@@ -47,7 +48,7 @@ GitHub Pages에서 동작 가능한 정적 논문 큐레이션 사이트와 GitH
 
 - 관련성 점수와 분류는 OpenAI가 없을 때 휴리스틱 기반입니다.
 - Source 열기 버튼은 현재 DOI URL을 사용합니다. 향후 API별 landing URL을 별도로 저장하면 더 정확해질 수 있습니다.
-- API rate limit 배려는 기본 sleep과 User-Agent/mailto 중심입니다. 대규모 검색에는 backoff 전략을 추가할 수 있습니다.
+- API rate limit 배려는 기본 sleep, User-Agent/mailto, OpenAlex 429 retry/backoff 중심입니다. 더 큰 수집에는 실행 간격과 page 예산 조정이 필요합니다.
 
 ## 아직 구현되지 않은 기능
 

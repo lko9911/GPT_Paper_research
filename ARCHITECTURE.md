@@ -39,6 +39,7 @@
 - 관련성 점수순, 최신순, 제목순 정렬
 - 전체 논문 수, 카테고리 수, 최신 업데이트 날짜, 이번 주 추가 논문 수 표시
 - DOI 열기, Source 열기, citation 복사 버튼
+- 5문항 논문 요약 Q/A 렌더링
 
 클라이언트에는 API key를 사용하지 않습니다. GitHub Pages에서 정적 파일만 제공하므로 비밀 값은 절대 브라우저로 전달되지 않습니다.
 
@@ -53,6 +54,16 @@
 - `pdf_stored`: 항상 `false`로 저장합니다.
 
 초록 원문은 API 응답에서 `_abstract`라는 임시 필드로만 들고 있다가 저장 직전 제거합니다. 이 필드는 `data/papers.json`에 남지 않습니다.
+
+`ai_summary_ko`는 일반 문단이 아니라 다음 5문항을 순서대로 답하는 형식을 표준으로 사용합니다.
+
+1. 무엇에 관한 논문인가?
+2. 어떤 문제를 해결하려고 하는가?
+3. 어떤 접근법/방법을 사용했는가?
+4. 핵심 결과는 무엇인가?
+5. 내 연구/발표에 왜 필요한가?
+
+프론트엔드는 이 형식을 감지하면 카드 내부에 Q/A 블록으로 렌더링하고, 예전 문단형 요약은 기존 paragraph 형태로 fallback 표시합니다.
 
 `data/queries.json`은 자동 검색에 사용할 기본 검색어 배열입니다.
 
@@ -77,7 +88,7 @@
 - `scripts/fetch_openalex.py`: OpenAlex Works API 조회 및 공통 스키마로 정규화
 - `scripts/fetch_crossref.py`: Crossref Works API 조회 및 공통 스키마로 정규화
 - `scripts/enrich_semantic_scholar.py`: `SEMANTIC_SCHOLAR_API_KEY`가 있을 때 DOI 기반 선택적 보강
-- `scripts/summarize.py`: OpenAI 요약 생성 또는 fallback 요약 생성, 카테고리/태그/점수 생성
+- `scripts/summarize.py`: OpenAI 요약 생성 또는 fallback 요약 생성, 5문항 요약 형식화, 카테고리/태그/점수 생성
 - `scripts/update_papers.py`: 전체 orchestration, 중복 제거, 저장
 
 ## GitHub Actions workflow 구조

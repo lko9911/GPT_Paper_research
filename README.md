@@ -4,7 +4,7 @@
 
 ## 프로젝트 목적
 
-이 저장소는 multi-material additive manufacturing, functionally graded additive manufacturing, blended FDM, digital material filament, computational design, toolpath optimization, material switching optimization 관련 논문 메타데이터를 주기적으로 수집하고, DOI 링크와 한글 AI 요약을 함께 보여줍니다.
+이 저장소는 multi-material additive manufacturing, functionally graded additive manufacturing, blended FDM, digital material filament, computational design, toolpath optimization, material switching optimization 관련 논문 메타데이터를 주기적으로 수집하고, DOI 링크와 한글 AI 요약을 함께 보여줍니다. 요약은 발표 준비에 바로 쓰기 쉽도록 `무엇에 관한 논문인가`, `어떤 문제를 다루는가`, `어떤 방법을 쓰는가`, `핵심 결과는 무엇인가`, `내 연구/발표에 왜 필요한가`의 5문항 형식으로 작성합니다.
 
 현재 자동 조사 범위는 2024년 이후 논문입니다. `SINCE_YEAR` 환경변수로 시작 연도를 바꿀 수 있으며 기본값은 `2024`입니다.
 
@@ -29,11 +29,11 @@
 GitHub 저장소의 `Settings > Secrets and variables > Actions`에서 다음 값을 설정할 수 있습니다.
 
 - `CONTACT_EMAIL`: OpenAlex/Crossref polite pool 및 User-Agent에 사용할 연락 이메일입니다.
-- `OPENAI_API_KEY`: 선택 사항입니다. 있으면 새 논문에 대해 OpenAI API로 한글 요약을 생성합니다.
+- `OPENAI_API_KEY`: 선택 사항입니다. 있으면 새 논문에 대해 OpenAI API로 5문항 형식의 한글 요약을 생성합니다.
 - `SEMANTIC_SCHOLAR_API_KEY`: 선택 사항입니다. 있으면 DOI 기반 Semantic Scholar 메타데이터 보강을 시도합니다.
 - `OPENAI_MODEL`: 선택 사항입니다. Repository variable로 설정하며 기본값은 `gpt-4o-mini`입니다.
 
-키가 없어도 파이프라인은 실패하지 않습니다. `OPENAI_API_KEY`가 없으면 제목과 메타데이터 기반 fallback 요약을 생성합니다.
+키가 없어도 파이프라인은 실패하지 않습니다. `OPENAI_API_KEY`가 없으면 제목, 메타데이터, API에서 임시로 받은 초록 신호를 바탕으로 5문항 형식의 fallback 요약을 생성합니다. 초록 원문은 저장하지 않습니다.
 
 ## 로컬 실행 방법
 
@@ -81,7 +81,7 @@ python -m http.server 8000
   "categories": ["기능성 구배 적층제조"],
   "tags": ["FGAM", "MMAM", "계산설계"],
   "relevance_score": 8,
-  "ai_summary_ko": "...",
+  "ai_summary_ko": "1. 무엇에 관한 논문인가? ...\n2. 어떤 문제를 해결하려고 하는가? ...\n3. 어떤 접근법/방법을 사용했는가? ...\n4. 핵심 결과는 무엇인가? ...\n5. 내 연구/발표에 왜 필요한가? ...",
   "relevance_note_ko": "...",
   "abstract_used_for_summary": true,
   "raw_abstract_displayed": false,
@@ -130,7 +130,7 @@ Science, Nature, Nature Communications, Advanced Materials 같은 게재지도 O
 
 - 메타데이터 API의 색인 상태에 따라 최신 논문 반영이 지연될 수 있습니다.
 - DOI가 없는 논문은 normalized title hash로 중복 제거하므로 제목 변형이 큰 경우 중복이 생길 수 있습니다.
-- `OPENAI_API_KEY`가 없을 때 생성되는 fallback 요약은 제목과 메타데이터 기반이라 내용 이해가 제한적입니다.
+- `OPENAI_API_KEY`가 없을 때 생성되는 fallback 요약은 초록이 있으면 초록을 임시 입력으로 참고하지만, 모델 기반 정밀 요약보다는 보수적일 수 있습니다.
 - 자동 분류와 관련성 점수는 휴리스틱 또는 AI 생성 결과이므로 최종 판단은 DOI 링크의 원문을 확인해야 합니다.
 - 논문 수 총량 제한은 두지 않지만, OpenAlex/Crossref API의 응답 범위와 rate limit에 영향을 받습니다.
 ## 2026-06-12 최신 수집 정책 업데이트
