@@ -13,6 +13,8 @@
 - `data/site_meta.json`: `curated_count=414`, `raw_candidate_count=2084`, `archived_count=1670`, `hidden_low_relevance_count=1647`, `duplicate_archived_count=23`을 기록했습니다.
 - `scripts/update_papers.py`: 이후 자동 수집도 curated/archive를 분리 저장하도록 변경했습니다.
 - `.github/workflows/update-papers.yml`: 자동 커밋 대상에 `data/archive_papers.json`을 포함했습니다.
+- `.github/workflows/update-papers.yml`: 수집 workflow에 60분 timeout을 추가하고 concurrency group을 `update-papers`로 분리했습니다.
+- `.github/workflows/deploy-pages.yml`: Pages 배포 concurrency group을 `deploy-pages`로 분리해 오래 실행되는 수집 workflow가 배포를 막지 않도록 했습니다.
 - `data/queries.json`: 너무 넓은 digital twin 검색어를 줄이고 additive manufacturing 맥락이 강한 검색어로 교체했습니다.
 - `assets/app.js`: 상단 통계와 결과 문구를 raw/curated/archive 기준으로 표시하도록 수정했습니다.
 - `index.html`: 초기 통계 라벨과 CSS/JS cache-busting version을 업데이트했습니다.
