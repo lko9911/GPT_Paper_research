@@ -20,11 +20,11 @@ const FIELD_ORDER = [
 ];
 
 const FIELD_SUBTOPICS = {
-  "생산/제조": ["공정 최적화", "금속/합금 제조", "복합재/소재 제조"],
-  "3D 프린팅": ["FDM/Material extrusion", "DLP", "Toolpath", "Material Switching"],
+  "생산/제조": ["금속/합금 제조", "복합재/소재 제조", "공정 최적화"],
+  "3D 프린팅": ["DLP", "Material Switching", "Toolpath", "FDM/Material extrusion"],
   "4D 프린팅": ["LCE", "메타물질", "Active materials"],
-  "로봇틱스(생산제조)": ["로봇 AM", "제조 자동화", "공정 최적화"],
-  "AI 생산제조": ["Machine Learning", "Self-driving Labs", "Digital Twins", "Design Automation"],
+  "로봇틱스(생산제조)": ["제조 자동화", "공정 최적화", "로봇 AM"],
+  "AI 생산제조": ["Self-driving Labs", "Digital Twins", "제조 자동화", "Design Automation", "Machine Learning"],
 };
 
 const SIDEBAR_OTHER_TOPIC = "__field_other__";
@@ -534,13 +534,8 @@ function sidebarBucketCounts(papers, subtopics) {
   counts.set(SIDEBAR_OTHER_TOPIC, 0);
 
   papers.forEach((paper) => {
-    const matchedSubtopics = subtopics.filter((subtopic) => paperHasRepresentativeTopic(paper, subtopic));
-    matchedSubtopics.forEach((subtopic) => {
-      counts.set(subtopic, (counts.get(subtopic) || 0) + 1);
-    });
-    if (!matchedSubtopics.length) {
-      counts.set(SIDEBAR_OTHER_TOPIC, (counts.get(SIDEBAR_OTHER_TOPIC) || 0) + 1);
-    }
+    const bucket = sidebarBucketForPaper(paper, subtopics);
+    counts.set(bucket, (counts.get(bucket) || 0) + 1);
   });
 
   return counts;
@@ -1032,10 +1027,7 @@ function representativeTags(paper) {
 function paperMatchesSidebarSubtopic(paper, field, topic) {
   if (!topic) return true;
   const subtopics = FIELD_SUBTOPICS[field] || [];
-  if (topic === SIDEBAR_OTHER_TOPIC) {
-    return sidebarBucketForPaper(paper, subtopics) === SIDEBAR_OTHER_TOPIC;
-  }
-  return paperHasRepresentativeTopic(paper, topic);
+  return sidebarBucketForPaper(paper, subtopics) === topic;
 }
 
 function paperHasRepresentativeTopic(paper, topic) {

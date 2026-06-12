@@ -1,5 +1,19 @@
 # PROJECT_STATUS
 
+## 2026-06-12 23:45 최신 상태
+
+- 현재 `data/papers.json`에는 428편의 논문 메타데이터가 저장되어 있습니다.
+- `Self-driving Labs`와 `Digital Twins` 검색어 추가 후 Crossref 관련도순 검색으로 수동 보강 수집을 실행했고, 비논문 항목을 제거한 뒤 86편이 새로 남았습니다.
+- OpenAlex는 현재 429 rate limit을 반환하고 있어, 이번 보강 수집은 `SKIP_OPENALEX=1`로 Crossref 중심으로 수행했습니다.
+- 왼쪽 사이드바 서브토픽 카운트는 분야 내 대표 버킷 방식입니다. 따라서 각 분야의 서브토픽 및 `Others` 합계가 분야 총 논문 수와 일치합니다.
+- `scripts/update_papers.py`는 `UPDATE_QUERY_FILTER`, `SKIP_OPENALEX`, `SKIP_TARGET_VENUES`, `SEARCH_PER_PAGE`, `TARGET_VENUE_PER_PAGE` 환경변수를 지원합니다.
+- Crossref에서 `Review for`, `Decision letter`, `Author response`, `Title Pending`, 초청 발표 초록 같은 비논문 항목이 들어오지 않도록 필터를 보강했습니다.
+
+### 최근 완료된 추가 개선
+- Crossref 기본 정렬을 `published`에서 `relevance`로 바꿔 비정상 미래 연도 항목이 검색 상단을 차지하는 문제를 줄였습니다.
+- `data/site_meta.json`은 이번 수동 수집 기준 `paper_count=428`, `papers_added=86`을 기록합니다.
+- 데이터 정책 검증 결과 `raw_abstract_displayed=false`, `pdf_stored=false`가 유지됩니다.
+
 ## 2026-06-12 23:15 최신 상태
 
 - 현재 `data/papers.json`에는 342편의 논문 메타데이터가 저장되어 있습니다.

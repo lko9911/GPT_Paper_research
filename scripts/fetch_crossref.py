@@ -15,13 +15,15 @@ CROSSREF_API = "https://api.crossref.org/works"
 
 
 def fetch_crossref(query: str, rows: int = 20, from_year: int | None = None) -> list[dict[str, Any]]:
+    sort = os.getenv("CROSSREF_SORT", "relevance")
     params: dict[str, Any] = {
         "query.bibliographic": query,
         "rows": min(rows, 1000),
-        "sort": "published",
-        "order": "desc",
+        "sort": sort,
         "cursor": "*",
     }
+    if sort != "relevance":
+        params["order"] = os.getenv("CROSSREF_ORDER", "desc")
     contact_email = os.getenv("CONTACT_EMAIL")
     if contact_email:
         params["mailto"] = contact_email
