@@ -1,5 +1,20 @@
 # ARCHITECTURE
 
+## 2026-06-12 Pages 배포 보강
+
+자동 수집 workflow인 `.github/workflows/update-papers.yml`은 `data/papers.json`과 `data/site_meta.json`을 갱신한 뒤, GitHub Pages artifact를 업로드하고 `actions/deploy-pages`로 직접 배포합니다.
+
+이 보강의 이유는 다음과 같습니다.
+
+- GitHub Actions의 `GITHUB_TOKEN`으로 만들어진 데이터 커밋은 원격 `main`에는 정상 반영되지만, 별도 push 기반 Pages 배포 workflow를 항상 트리거하지 않을 수 있습니다.
+- 사용자는 사이트 상단의 현재 시각과 마지막 수집 실행 시각을 함께 보므로, 데이터 수집 성공 후 Pages 반영도 가능한 한 같은 workflow에서 요청하는 편이 혼동을 줄입니다.
+- 따라서 정기 수집 workflow 자체가 Pages 배포까지 수행하도록 구성했습니다.
+
+현재 관련 workflow는 두 종류입니다.
+
+- `.github/workflows/update-papers.yml`: 매시간/수동 실행으로 논문 데이터를 수집하고, 변경 사항을 커밋한 뒤 GitHub Pages를 직접 배포합니다.
+- `.github/workflows/deploy-pages.yml`: `main` push 또는 수동 실행 시 정적 사이트를 GitHub Pages에 배포합니다.
+
 ## 전체 시스템 구조
 
 이 프로젝트는 GitHub Pages에서 바로 호스팅할 수 있는 정적 프론트엔드와 GitHub Actions에서 실행되는 Python 업데이트 파이프라인으로 구성됩니다.

@@ -1,5 +1,36 @@
 # AGENT_LOG
 
+## 2026-06-12 17:56
+
+### 변경 요약
+- GitHub Actions 수집은 성공했지만 GitHub Pages 공개 사이트가 이전 `site_meta.json`을 계속 보여주는 현상을 확인했습니다.
+- 원격 `main`에는 `34ff160 Update paper metadata` 커밋이 생성되어 `data/site_meta.json`이 `2026-06-12T06:29:37Z`로 갱신되었고, 논문 수가 145편에서 156편으로 증가했음을 확인했습니다.
+- Pages URL은 여전히 `2026-06-12T04:59:53Z` 데이터를 서빙하고 있어, 데이터 수집과 Pages 배포 사이의 연결을 보강했습니다.
+
+### 수정/생성한 파일
+- `.github/workflows/update-papers.yml`: 데이터 업데이트/커밋 후 GitHub Pages artifact를 업로드하고 직접 배포하는 단계를 추가했습니다.
+- `AGENT_LOG.md`: 이번 원인 분석과 workflow 보강 내용을 기록했습니다.
+- `ARCHITECTURE.md`: 업데이트 workflow와 Pages 반영 구조의 최신 동작을 문서화했습니다.
+- `PROJECT_STATUS.md`: 현재 데이터 상태와 Pages 반영 지연 이슈/개선 사항을 기록했습니다.
+
+### 구현한 기능
+- 매시간 업데이트 workflow가 끝난 뒤 `actions/configure-pages`, `actions/upload-pages-artifact`, `actions/deploy-pages`로 GitHub Pages를 직접 배포합니다.
+- 데이터 커밋을 만든 `GITHUB_TOKEN` push가 별도 deploy workflow를 트리거하지 않아도, 같은 workflow 안에서 공개 사이트가 최신 데이터로 배포됩니다.
+
+### 설계 결정
+- GitHub Actions의 `GITHUB_TOKEN`이 만든 커밋이 별도 push workflow를 항상 트리거하지 않을 수 있으므로, update workflow 내부에서 Pages 배포까지 직접 수행하도록 했습니다.
+- 기존 `.github/workflows/deploy-pages.yml`은 일반 push와 수동 배포용으로 유지하고, 정기 수집 후 배포는 `update-papers.yml`에서 처리합니다.
+- 새 논문이 없어도 `site_meta.json`은 실행 시각을 갱신하므로, Pages도 매 실행 후 최신 실행 시각을 반영해야 합니다.
+
+### 남은 작업
+- 다음 scheduled run 또는 수동 `workflow_dispatch` 실행 후 Pages URL의 `data/site_meta.json`이 최신 시간으로 바뀌는지 확인해야 합니다.
+- GitHub Pages 설정이 Actions 배포 방식인지 branch 배포 방식인지 저장소 Settings에서 최종 확인하면 좋습니다.
+
+### 주의사항
+- API key, secret, token은 로그에 기록하지 않았습니다.
+- GitHub Pages 반영은 GitHub 내부 캐시와 배포 지연 때문에 수집 커밋보다 몇 분 늦을 수 있습니다.
+- 현재 공개 Pages 데이터가 늦게 보이는 것은 비용 문제가 아니라 배포/캐시 반영 문제입니다.
+
 ## 2026-06-12 15:15
 
 ### 변경 요약

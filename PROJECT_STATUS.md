@@ -1,5 +1,20 @@
 # PROJECT_STATUS
 
+## 2026-06-12 17:56 최신 상태
+
+- 원격 `main` 기준 `data/papers.json`에는 156편의 논문이 저장되어 있습니다.
+- 최신 자동 수집 커밋은 `34ff160 Update paper metadata`이며, `data/site_meta.json`의 `last_run_at_utc`는 `2026-06-12T06:29:37Z`입니다. 이는 KST 기준 `2026-06-12 15:29:37`입니다.
+- 공개 GitHub Pages URL이 한동안 이전 `2026-06-12T04:59:53Z` 데이터를 서빙하는 현상을 확인했습니다. 원인은 데이터 커밋은 성공했지만 Pages 배포가 즉시 따라오지 않는 배포/캐시 반영 문제로 판단했습니다.
+- `.github/workflows/update-papers.yml`에 데이터 업데이트 후 GitHub Pages artifact를 업로드하고 직접 배포하는 단계를 추가했습니다.
+
+### 완료된 추가 개선
+- 매시간 논문 수집 workflow가 성공하면 같은 workflow 안에서 GitHub Pages를 직접 배포합니다.
+- `GITHUB_TOKEN`으로 만든 데이터 커밋이 별도 push 배포 workflow를 트리거하지 않아도 공개 사이트가 최신 데이터로 갱신되도록 보강했습니다.
+
+### 다음 확인 사항
+- 다음 정기 실행 또는 수동 `workflow_dispatch` 실행 후 `https://lko9911.github.io/GPT_Paper_research/data/site_meta.json`이 최신 `last_run_at_utc`를 보여주는지 확인합니다.
+- GitHub 저장소 Settings > Pages에서 현재 배포 방식이 GitHub Actions인지 branch deploy인지 확인합니다.
+
 ## 현재 프로젝트 상태 요약
 
 GitHub Pages에서 동작 가능한 정적 논문 큐레이션 사이트와 GitHub Actions 자동 업데이트 파이프라인의 최소 동작 버전이 구현되어 있습니다. 로컬에서 업데이트 스크립트를 1회 실행해 `data/papers.json`에는 현재 9편의 논문 메타데이터가 들어 있습니다.
