@@ -22,7 +22,9 @@ QUERIES_PATH = ROOT / "data" / "queries.json"
 TARGET_VENUES_PATH = ROOT / "data" / "target_venues.json"
 SEED_DOIS_PATH = ROOT / "data" / "seed_dois.json"
 DEFAULT_SINCE_YEAR = 2024
-VENUE_QUERY_LIMIT = 6
+SEARCH_PER_PAGE = 50
+TARGET_VENUE_PER_PAGE = 50
+MAX_TOTAL_PAPERS = 100
 
 
 def main() -> None:
@@ -52,6 +54,9 @@ def main() -> None:
 
         enriched = enrich_with_semantic_scholar(candidate)
         summarized = summarize_record(enriched)
+        if len(existing) >= _max_total_papers():
+            print(f"Paper limit reached ({_max_total_papers()}); skipping further additions.")
+            continue
         paper = _finalize_record(summarized, today)
         index[_dedupe_key(paper)] = paper
         existing.append(paper)
@@ -61,8 +66,8 @@ def main() -> None:
     for query in queries:
         print(f"Searching: {query}")
         candidates: list[dict[str, Any]] = []
-        candidates.extend(_safe_fetch(fetch_openalex, query, since_year))
-        candidates.extend(_safe_fetch(fetch_crossref, query, since_year))
+        candidates.extend(_safe_fetch(fetch_openalex, query, since_year, per_page=SEARCH_PER_PAGE))
+        candidates.extend(_safe_fetch(fetch_crossref, query, since_year, rows=SEARCH_PER_PAGE))
 
         for candidate in candidates:
             if not _is_plausible(candidate, since_year):
@@ -74,6 +79,9 @@ def main() -> None:
 
             enriched = enrich_with_semantic_scholar(candidate)
             summarized = summarize_record(enriched)
+            if len(existing) >= _max_total_papers():
+                print(f"Paper limit reached ({_max_total_papers()}); skipping further additions.")
+                continue
             paper = _finalize_record(summarized, today)
             index[_dedupe_key(paper)] = paper
             existing.append(paper)
@@ -86,7 +94,7 @@ def main() -> None:
         if not source_id:
             continue
         print(f"Searching target venue: {venue_name}")
-        for query in queries[:VENUE_QUERY_LIMIT]:
+        for query in queries:
             candidates = _safe_fetch_openalex_source(query, source_id, since_year)
             for candidate in candidates:
                 if not _is_plausible(candidate, since_year):
@@ -98,6 +106,9 @@ def main() -> None:
 
                 enriched = enrich_with_semantic_scholar(candidate)
                 summarized = summarize_record(enriched)
+                if len(existing) >= _max_total_papers():
+                    print(f"Paper limit reached ({_max_total_papers()}); skipping further additions.")
+                    continue
                 paper = _finalize_record(summarized, today)
                 index[_dedupe_key(paper)] = paper
                 existing.append(paper)
@@ -110,9 +121,9 @@ def main() -> None:
     print(f"Update complete. Added {added} new papers. Total {len(cleaned)} papers.")
 
 
-def _safe_fetch(fetcher, query: str, since_year: int) -> list[dict[str, Any]]:
+def _safe_fetch(fetcher, query: str, since_year: int, **kwargs) -> list[dict[str, Any]]:
     try:
-        return fetcher(query, from_year=since_year)
+        return fetcher(query, from_year=since_year, **kwargs)
     except Exception as exc:
         print(f"Fetch failed for {fetcher.__name__} / '{query}': {exc}")
         return []
@@ -120,7 +131,7 @@ def _safe_fetch(fetcher, query: str, since_year: int) -> list[dict[str, Any]]:
 
 def _safe_fetch_openalex_source(query: str, source_id: str, since_year: int) -> list[dict[str, Any]]:
     try:
-        return fetch_openalex(query, per_page=10, from_year=since_year, source_id=source_id)
+        return fetch_openalex(query, per_page=TARGET_VENUE_PER_PAGE, from_year=since_year, source_id=source_id)
     except Exception as exc:
         print(f"Venue fetch failed for OpenAlex source {source_id} / '{query}': {exc}")
         return []
@@ -166,6 +177,15 @@ def _since_year() -> int:
     except ValueError:
         print(f"Invalid SINCE_YEAR={value!r}; using {DEFAULT_SINCE_YEAR}")
         return DEFAULT_SINCE_YEAR
+
+
+def _max_total_papers() -> int:
+    value = os.getenv("MAX_TOTAL_PAPERS", str(MAX_TOTAL_PAPERS))
+    try:
+        return int(value)
+    except ValueError:
+        print(f"Invalid MAX_TOTAL_PAPERS={value!r}; using {MAX_TOTAL_PAPERS}")
+        return MAX_TOTAL_PAPERS
 
 
 def _finalize_record(record: dict[str, Any], today: str) -> dict[str, Any]:

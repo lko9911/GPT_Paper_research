@@ -87,6 +87,7 @@
 - `SEMANTIC_SCHOLAR_API_KEY`: 선택적 Semantic Scholar 보강에 사용합니다.
 - `API_SLEEP_SECONDS`: API rate limit 배려를 위한 요청 간 대기 시간입니다. 기본값은 `0.2`초입니다.
 - `SINCE_YEAR`: 자동 조사 시작 연도입니다. 기본값은 `2024`입니다.
+- `MAX_TOTAL_PAPERS`: 자동 수집 총량 상한입니다. 기본값은 `100`입니다.
 
 환경변수 값은 로그나 데이터 파일에 기록하지 않습니다.
 
