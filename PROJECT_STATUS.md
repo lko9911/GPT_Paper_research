@@ -1,5 +1,23 @@
 # PROJECT_STATUS
 
+## 2026-06-13 00:10 최신 상태
+
+- 공개 사이트의 raw 후보 레코드 2084개를 curated/archive 구조로 분리했습니다.
+- `data/papers.json`에는 기본 사이트에 표시할 curated papers 414편만 남겼습니다.
+- `data/archive_papers.json`에는 낮은 관련성 및 제목 중복 후보 1670개를 보존했습니다.
+- `data/site_meta.json`은 `curated_count=414`, `raw_candidate_count=2084`, `archived_count=1670`, `hidden_low_relevance_count=1647`, `duplicate_archived_count=23`을 기록합니다.
+- 상단 통계는 이제 `큐레이션 논문`, `전체 후보`, `숨김/아카이브`를 구분해 보여줍니다.
+
+### 완료된 추가 개선
+- 자동 수집 파이프라인이 앞으로도 curated/archive를 분리 저장하도록 `scripts/update_papers.py`를 수정했습니다.
+- `.github/workflows/update-papers.yml`의 자동 커밋 대상에 `data/archive_papers.json`을 추가했습니다.
+- 너무 넓은 `digital twin smart manufacturing`, `digital twin manufacturing process optimization` 검색어를 제거하고 AM 맥락이 더 강한 digital twin 검색어로 교체했습니다.
+- 같은 제목의 여러 버전은 정식 venue/DOI/비저장소 여부를 기준으로 대표 항목만 curated에 남깁니다.
+
+### 알려진 주의점
+- `archive_papers.json`은 삭제가 아니라 보존용입니다. 큐레이션 기준을 바꾸면 archive에서 다시 복구할 수 있습니다.
+- 기본 사이트에는 curated 414편만 표시되므로, 이전의 2084개 raw 후보 수와 화면 표시 수는 더 이상 같은 의미가 아닙니다.
+
 ## 2026-06-12 23:45 최신 상태
 
 - 현재 `data/papers.json`에는 428편의 논문 메타데이터가 저장되어 있습니다.

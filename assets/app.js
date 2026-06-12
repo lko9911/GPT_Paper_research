@@ -52,10 +52,10 @@ const UI_TEXT = {
     noticeSoft:
       "본 사이트의 요약은 공개된 논문 메타데이터 및 초록을 바탕으로 AI가 새로 작성한 한글 요약입니다. 원문 및 정확한 내용은 DOI 링크를 통해 확인하세요.",
     sideTitle: "분야 및 서브 토픽",
-    totalPapers: "전체 논문 수",
-    subtopicCount: "서브토픽 수",
+    totalPapers: "큐레이션 논문",
+    subtopicCount: "전체 후보",
     latestUpdate: "현재 / 갱신",
-    weekAdded: "이번 주 추가",
+    weekAdded: "숨김/아카이브",
     search: "검색",
     searchPlaceholder: "키워드, 저자, 태그, 요약 검색",
     field: "분야",
@@ -80,7 +80,7 @@ const UI_TEXT = {
     tenPlusVenue: "10편 이상",
     others: "기타",
     lowCountVenue: "Core/10편 이상 외",
-    showing: "편 표시 중",
+    showing: "개 큐레이션 결과",
     unknownYear: "연도 미상",
     relevanceLabel: "관련성",
     summaryMissing: "요약이 아직 생성되지 않았습니다.",
@@ -101,10 +101,10 @@ const UI_TEXT = {
     noticeSoft:
       "Summaries on this site are newly written AI summaries based on public paper metadata and abstracts. Check the DOI link for the original and authoritative content.",
     sideTitle: "Fields and Subtopics",
-    totalPapers: "Total Papers",
-    subtopicCount: "Subtopics",
+    totalPapers: "Curated Papers",
+    subtopicCount: "Raw Candidates",
     latestUpdate: "Now / Updated",
-    weekAdded: "Added This Week",
+    weekAdded: "Archived Hidden",
     search: "Search",
     searchPlaceholder: "Search keywords, authors, tags, summaries",
     field: "Field",
@@ -129,7 +129,7 @@ const UI_TEXT = {
     tenPlusVenue: "10+ papers",
     others: "Others",
     lowCountVenue: "Outside Core/10+",
-    showing: "papers shown",
+    showing: "curated results",
     unknownYear: "Year unknown",
     relevanceLabel: "Relevance",
     summaryMissing: "Summary has not been generated yet.",
@@ -671,24 +671,20 @@ function otherVenueCard(paperCount, venueCount) {
 }
 
 function updateStats() {
-  const subtopics = new Set(flatten(state.papers.map((paper) => deriveSubtopics(paper).map(canonicalTopicLabel))));
   const updatedDates = state.papers
     .map((paper) => paper.last_updated || paper.first_added)
     .filter(Boolean)
     .sort();
   const latestDate = updatedDates.length ? updatedDates[updatedDates.length - 1] : "";
-  const weekAgo = new Date();
-  weekAgo.setDate(weekAgo.getDate() - 7);
-  const weekCount = state.papers.filter((paper) => {
-    if (!paper.first_added) return false;
-    return new Date(`${paper.first_added}T00:00:00`) >= weekAgo;
-  }).length;
+  const meta = state.siteMeta || {};
+  const rawCount = meta.raw_candidate_count || state.papers.length;
+  const archivedCount = meta.archived_count || Math.max(0, rawCount - state.papers.length);
 
   els.total.textContent = state.papers.length.toLocaleString("ko-KR");
-  els.categories.textContent = subtopics.size.toLocaleString("ko-KR");
+  els.categories.textContent = rawCount.toLocaleString("ko-KR");
   const lastRunAt = state.siteMeta && state.siteMeta.last_run_at_utc;
   renderUpdatedStat(lastRunAt, latestDate);
-  els.week.textContent = weekCount.toLocaleString("ko-KR");
+  els.week.textContent = archivedCount.toLocaleString("ko-KR");
 }
 
 function renderUpdatedStat(lastRunAt, fallbackDate) {

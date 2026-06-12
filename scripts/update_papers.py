@@ -18,11 +18,13 @@ from summarize import summarize_record
 
 ROOT = Path(__file__).resolve().parents[1]
 PAPERS_PATH = ROOT / "data" / "papers.json"
+ARCHIVE_PAPERS_PATH = ROOT / "data" / "archive_papers.json"
 SITE_META_PATH = ROOT / "data" / "site_meta.json"
 QUERIES_PATH = ROOT / "data" / "queries.json"
 TARGET_VENUES_PATH = ROOT / "data" / "target_venues.json"
 SEED_DOIS_PATH = ROOT / "data" / "seed_dois.json"
 DEFAULT_SINCE_YEAR = 2024
+CURATED_MIN_SCORE = int(os.getenv("CURATED_MIN_SCORE", "5"))
 SEARCH_PER_PAGE = int(os.getenv("SEARCH_PER_PAGE", "200"))
 TARGET_VENUE_PER_PAGE = int(os.getenv("TARGET_VENUE_PER_PAGE", "200"))
 
@@ -33,7 +35,7 @@ def main() -> None:
     today = date.today().isoformat()
     run_started_at = datetime.now(UTC).replace(microsecond=0).isoformat().replace("+00:00", "Z")
     since_year = _since_year()
-    existing = _load_json(PAPERS_PATH, [])
+    existing = _load_json(PAPERS_PATH, []) + _load_json(ARCHIVE_PAPERS_PATH, [])
     queries = _filtered_queries(_load_json(QUERIES_PATH, []))
     target_venues = _load_json(TARGET_VENUES_PATH, [])
     seed_dois = _load_json(SEED_DOIS_PATH, [])
@@ -114,20 +116,28 @@ def main() -> None:
                     print(f"Added from {venue_name}: {paper['title']}")
 
     cleaned = [_strip_transient(paper) for paper in existing]
-    cleaned.sort(key=lambda paper: (paper.get("year") or 0, paper.get("relevance_score") or 0, paper.get("title") or ""), reverse=True)
-    _write_json_if_changed(PAPERS_PATH, cleaned)
+    curated, archive, split_stats = _split_curated_archive(cleaned)
+    _write_json_if_changed(PAPERS_PATH, curated)
+    _write_json_if_changed(ARCHIVE_PAPERS_PATH, archive)
     _write_json_if_changed(
         SITE_META_PATH,
         {
             "last_run_at_utc": run_started_at,
             "last_run_date": today,
-            "paper_count": len(cleaned),
+            "paper_count": len(curated),
+            "curated_count": len(curated),
+            "raw_candidate_count": len(cleaned),
+            "archived_count": len(archive),
+            "hidden_low_relevance_count": split_stats["low_relevance"],
+            "duplicate_archived_count": split_stats["duplicate_title"],
             "papers_added": added,
+            "raw_records_added": added,
             "since_year": since_year,
+            "curated_min_score": CURATED_MIN_SCORE,
             "sources": ["OpenAlex", "Crossref", "Semantic Scholar optional"],
         },
     )
-    print(f"Update complete. Added {added} new papers. Total {len(cleaned)} papers.")
+    print(f"Update complete. Added {added} new records. Curated {len(curated)} papers; archived {len(archive)} of {len(cleaned)} raw candidates.")
 
 
 def _safe_fetch(fetcher, query: str, since_year: int, **kwargs) -> list[dict[str, Any]]:
@@ -266,6 +276,84 @@ def _is_non_research_output(title: str) -> bool:
         "(invited)",
     )
     return any(fragment in normalized_title for fragment in blocked_fragments)
+
+
+def _split_curated_archive(records: list[dict[str, Any]]) -> tuple[list[dict[str, Any]], list[dict[str, Any]], dict[str, int]]:
+    groups: dict[str, list[dict[str, Any]]] = {}
+    for record in records:
+        key = _normalize_title(record.get("title", "")) or _dedupe_key(record)
+        groups.setdefault(key, []).append(record)
+
+    curated: list[dict[str, Any]] = []
+    archive: list[dict[str, Any]] = []
+    stats = {"low_relevance": 0, "duplicate_title": 0}
+
+    for group in groups.values():
+        ranked = sorted(group, key=_curation_rank, reverse=True)
+        winner = ranked[0]
+        if _is_curated_candidate(winner):
+            curated.append(_without_archive_reason(winner))
+            for duplicate in ranked[1:]:
+                archive.append(_with_archive_reason(duplicate, "duplicate_title"))
+                stats["duplicate_title"] += 1
+        else:
+            for record in ranked:
+                archive.append(_with_archive_reason(record, "low_relevance"))
+                stats["low_relevance"] += 1
+
+    curated.sort(key=_sort_key, reverse=True)
+    archive.sort(key=_sort_key, reverse=True)
+    return curated, archive, stats
+
+
+def _is_curated_candidate(record: dict[str, Any]) -> bool:
+    return int(record.get("relevance_score") or 0) >= CURATED_MIN_SCORE and not _is_non_research_output(record.get("title", ""))
+
+
+def _curation_rank(record: dict[str, Any]) -> tuple[int, int, int, int, int, str]:
+    venue = record.get("venue") or ""
+    doi = record.get("doi") or ""
+    return (
+        int(record.get("relevance_score") or 0),
+        0 if _is_repository_like(venue, doi) else 1,
+        1 if venue else 0,
+        1 if doi else 0,
+        int(record.get("year") or 0),
+        record.get("title") or "",
+    )
+
+
+def _is_repository_like(venue: str, doi: str = "") -> bool:
+    text = f"{venue} {doi}".lower()
+    return any(
+        marker in text
+        for marker in (
+            "figshare",
+            "zenodo",
+            "arxiv",
+            "chemrxiv",
+            "research square",
+            "ssrn",
+            "techrxiv",
+            "repository",
+        )
+    )
+
+
+def _with_archive_reason(record: dict[str, Any], reason: str) -> dict[str, Any]:
+    archived = dict(record)
+    archived["archive_reason"] = reason
+    return archived
+
+
+def _without_archive_reason(record: dict[str, Any]) -> dict[str, Any]:
+    curated = dict(record)
+    curated.pop("archive_reason", None)
+    return curated
+
+
+def _sort_key(record: dict[str, Any]) -> tuple[int, int, str]:
+    return (int(record.get("year") or 0), int(record.get("relevance_score") or 0), record.get("title") or "")
 
 
 def _since_year() -> int:
