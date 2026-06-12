@@ -5,6 +5,7 @@ from __future__ import annotations
 import json
 import os
 import re
+import ast
 from typing import Any
 
 CATEGORIES = [
@@ -478,6 +479,16 @@ def _normalize_generated_summary(value: Any) -> str:
                 lines.append(f"{index}. {labels[index - 1]} {answer}")
         if lines:
             return "\n".join(lines)
+    if isinstance(value, str):
+        text = value.strip()
+        if text.startswith("{") and text.endswith("}"):
+            try:
+                parsed = ast.literal_eval(text)
+                if isinstance(parsed, (dict, list)):
+                    return _normalize_generated_summary(parsed)
+            except (SyntaxError, ValueError):
+                pass
+        return text
     return str(value or "").strip()
 
 
