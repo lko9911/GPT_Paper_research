@@ -1,5 +1,33 @@
 # AGENT_LOG
 
+## 2026-06-12 19:02
+
+### 변경 요약
+- UI 라벨과 버튼 여백을 조정해 왼쪽 분야 패널과 venue pill이 덜 답답하게 보이도록 개선했습니다.
+- 영어 라벨 `Production/Manufacturing`을 `Production / Manufacturing`으로 변경했습니다.
+- 다크 모드에서 active venue pill의 숫자 배지 색상 대비를 개선했습니다.
+
+### 수정/생성한 파일
+- `assets/app.js`: 영어 번역 라벨 `Production / Manufacturing`으로 변경했습니다.
+- `assets/style.css`: topic/venue pill과 sidebar field/subtopic 버튼의 padding, line-height, font-size를 조정했습니다.
+- `assets/style.css`: 다크 모드 active venue pill 숫자 배지의 배경/글자색을 별도로 지정했습니다.
+- `index.html`: CSS/JS cache-busting version을 갱신했습니다.
+- `AGENT_LOG.md`: 이번 UI 조정 내용을 기록했습니다.
+
+### 구현한 기능
+- 왼쪽 분야 패널에서 긴 영어 라벨이 박스에 너무 꽉 차 보이는 문제를 줄였습니다.
+- venue pill의 숫자 badge가 다크 모드 active 상태에서도 읽히도록 했습니다.
+
+### 설계 결정
+- 텍스트를 무리하게 키우기보다 padding과 line-height를 늘리고 font-size를 소폭 줄여 가독성과 밀도를 균형 있게 맞췄습니다.
+- 다크 모드 active count badge는 밝은 배경 + 어두운 숫자로 고정해 클릭 상태에서도 명확한 대비를 유지합니다.
+
+### 남은 작업
+- 실제 모바일 화면에서 긴 venue 이름/field label이 자연스럽게 줄바꿈되는지 추가 확인하면 좋습니다.
+
+### 주의사항
+- 이번 변경은 UI 스타일과 라벨만 바꾸며, API 호출/비용/데이터 수집에는 영향을 주지 않습니다.
+
 ## 2026-06-12 18:46
 
 ### 변경 요약

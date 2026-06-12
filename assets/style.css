@@ -149,38 +149,40 @@ h1 {
 
 .topic-pill,
 .venue-pill {
-  min-height: 32px;
-  padding: 7px 12px;
+  min-height: 34px;
+  padding: 8px 14px;
   border: 1px solid var(--line-strong);
   background: #ffffff;
   color: #344054;
-  font-size: 0.86rem;
+  font-size: 0.84rem;
   font-weight: 780;
+  line-height: 1.15;
   cursor: pointer;
 }
 
 .venue-pill {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  min-height: 30px;
+  gap: 7px;
+  min-height: 32px;
   border-color: #d5dbea;
   background: #f8fafc;
   color: #475467;
-  font-size: 0.8rem;
+  font-size: 0.79rem;
 }
 
 .venue-pill span {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 22px;
+  min-width: 24px;
   min-height: 20px;
-  padding: 2px 6px;
+  padding: 2px 7px;
   border-radius: 999px;
   background: #e9eef7;
   color: #344054;
   font-size: 0.72rem;
+  font-weight: 850;
 }
 
 .topic-pill.is-active,
@@ -257,13 +259,13 @@ h1 {
 .side-nav a,
 .side-nav button {
   width: 100%;
-  padding: 7px 8px;
+  padding: 8px 10px;
   border: 0;
   border-radius: 5px;
   background: transparent;
   color: #344054;
-  font-size: 0.82rem;
-  line-height: 1.2;
+  font-size: 0.8rem;
+  line-height: 1.28;
   text-align: left;
   text-decoration: none;
   cursor: pointer;
@@ -275,7 +277,7 @@ h1 {
 }
 
 .side-nav .side-field {
-  padding: 8px 9px;
+  padding: 9px 10px;
   background: #f6f8fb;
   color: #24324a;
   font-weight: 840;
@@ -289,9 +291,10 @@ h1 {
 }
 
 .side-nav .side-subtopic {
-  padding: 6px 7px;
+  padding: 7px 8px;
   color: #5c6678;
-  font-size: 0.76rem;
+  font-size: 0.74rem;
+  line-height: 1.25;
 }
 
 .side-nav a:hover,
@@ -915,6 +918,11 @@ h1 {
   color: var(--muted);
 }
 
+:root[data-theme="dark"] .venue-pill.is-active span {
+  background: rgba(255, 255, 255, 0.78);
+  color: #071224;
+}
+
 :root[data-theme="dark"] .notice {
   border-color: #33507e;
   background: #14243e;
@@ -1053,9 +1061,10 @@ h1 {
 
 .topic-pill,
 .venue-pill {
-  min-height: 30px;
-  padding: 7px 11px;
-  font-size: 0.79rem;
+  min-height: 33px;
+  padding: 8px 13px;
+  font-size: 0.78rem;
+  line-height: 1.16;
   box-shadow: 0 1px 0 rgba(22, 32, 51, 0.04);
 }
 
@@ -1090,17 +1099,18 @@ h1 {
 }
 
 .side-nav button {
-  min-height: 31px;
-  padding: 7px 8px;
-  font-size: 0.78rem;
+  min-height: 34px;
+  padding: 8px 10px;
+  font-size: 0.76rem;
+  line-height: 1.28;
 }
 
 .side-nav .side-field {
-  font-size: 0.8rem;
+  font-size: 0.78rem;
 }
 
 .side-nav .side-subtopic {
-  font-size: 0.73rem;
+  font-size: 0.72rem;
 }
 
 .stats {
