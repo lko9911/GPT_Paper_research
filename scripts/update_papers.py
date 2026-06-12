@@ -23,8 +23,8 @@ QUERIES_PATH = ROOT / "data" / "queries.json"
 TARGET_VENUES_PATH = ROOT / "data" / "target_venues.json"
 SEED_DOIS_PATH = ROOT / "data" / "seed_dois.json"
 DEFAULT_SINCE_YEAR = 2024
-SEARCH_PER_PAGE = 200
-TARGET_VENUE_PER_PAGE = 200
+SEARCH_PER_PAGE = int(os.getenv("SEARCH_PER_PAGE", "200"))
+TARGET_VENUE_PER_PAGE = int(os.getenv("TARGET_VENUE_PER_PAGE", "200"))
 
 
 def main() -> None:
@@ -34,7 +34,7 @@ def main() -> None:
     run_started_at = datetime.now(UTC).replace(microsecond=0).isoformat().replace("+00:00", "Z")
     since_year = _since_year()
     existing = _load_json(PAPERS_PATH, [])
-    queries = _load_json(QUERIES_PATH, [])
+    queries = _filtered_queries(_load_json(QUERIES_PATH, []))
     target_venues = _load_json(TARGET_VENUES_PATH, [])
     seed_dois = _load_json(SEED_DOIS_PATH, [])
     index = {_dedupe_key(paper): paper for paper in existing}
@@ -64,7 +64,10 @@ def main() -> None:
     for query in queries:
         print(f"Searching: {query}")
         candidates: list[dict[str, Any]] = []
-        candidates.extend(_safe_fetch(fetch_openalex, query, since_year, per_page=SEARCH_PER_PAGE))
+        if _env_flag("SKIP_OPENALEX"):
+            print("Skipping OpenAlex search because SKIP_OPENALEX is enabled.")
+        else:
+            candidates.extend(_safe_fetch(fetch_openalex, query, since_year, per_page=SEARCH_PER_PAGE))
         candidates.extend(_safe_fetch(fetch_crossref, query, since_year, rows=SEARCH_PER_PAGE))
 
         for candidate in candidates:
@@ -83,29 +86,32 @@ def main() -> None:
             added += 1
             print(f"Added: {paper['title']}")
 
-    for target in target_venues:
-        venue_name = target.get("name", "Unknown venue")
-        source_id = target.get("openalex_source_id", "")
-        if not source_id:
-            continue
-        print(f"Searching target venue: {venue_name}")
-        for query in queries:
-            candidates = _safe_fetch_openalex_source(query, source_id, since_year)
-            for candidate in candidates:
-                if not _is_plausible(candidate, since_year):
-                    continue
-                key = _dedupe_key(candidate)
-                if key in index:
-                    _merge_existing_record(index[key], candidate, today)
-                    continue
+    if _env_flag("SKIP_TARGET_VENUES"):
+        print("Skipping target venue searches because SKIP_TARGET_VENUES is enabled.")
+    else:
+        for target in target_venues:
+            venue_name = target.get("name", "Unknown venue")
+            source_id = target.get("openalex_source_id", "")
+            if not source_id:
+                continue
+            print(f"Searching target venue: {venue_name}")
+            for query in queries:
+                candidates = _safe_fetch_openalex_source(query, source_id, since_year)
+                for candidate in candidates:
+                    if not _is_plausible(candidate, since_year):
+                        continue
+                    key = _dedupe_key(candidate)
+                    if key in index:
+                        _merge_existing_record(index[key], candidate, today)
+                        continue
 
-                enriched = enrich_with_semantic_scholar(candidate)
-                summarized = summarize_record(enriched)
-                paper = _finalize_record(summarized, today)
-                index[_dedupe_key(paper)] = paper
-                existing.append(paper)
-                added += 1
-                print(f"Added from {venue_name}: {paper['title']}")
+                    enriched = enrich_with_semantic_scholar(candidate)
+                    summarized = summarize_record(enriched)
+                    paper = _finalize_record(summarized, today)
+                    index[_dedupe_key(paper)] = paper
+                    existing.append(paper)
+                    added += 1
+                    print(f"Added from {venue_name}: {paper['title']}")
 
     cleaned = [_strip_transient(paper) for paper in existing]
     cleaned.sort(key=lambda paper: (paper.get("year") or 0, paper.get("relevance_score") or 0, paper.get("title") or ""), reverse=True)
@@ -132,6 +138,22 @@ def _safe_fetch(fetcher, query: str, since_year: int, **kwargs) -> list[dict[str
         return []
 
 
+def _filtered_queries(queries: list[str]) -> list[str]:
+    query_filter = os.getenv("UPDATE_QUERY_FILTER", "").strip()
+    if not query_filter:
+        return queries
+    needles = [part.strip().lower() for part in query_filter.split(",") if part.strip()]
+    if not needles:
+        return queries
+    filtered = [query for query in queries if any(needle in query.lower() for needle in needles)]
+    print(f"UPDATE_QUERY_FILTER selected {len(filtered)} of {len(queries)} queries.")
+    return filtered
+
+
+def _env_flag(name: str) -> bool:
+    return os.getenv(name, "").strip().lower() in {"1", "true", "yes", "on"}
+
+
 def _safe_fetch_openalex_source(query: str, source_id: str, since_year: int) -> list[dict[str, Any]]:
     try:
         return fetch_openalex(query, per_page=TARGET_VENUE_PER_PAGE, from_year=since_year, source_id=source_id)
@@ -151,6 +173,8 @@ def _safe_fetch_openalex_doi(doi: str) -> dict[str, Any] | None:
 def _is_plausible(record: dict[str, Any], since_year: int) -> bool:
     title = record.get("title", "")
     if not title or title == "Untitled":
+        return False
+    if _is_non_research_output(title):
         return False
     raw_year = record.get("year")
     year = _safe_year(raw_year, log=False)
@@ -223,6 +247,25 @@ def _is_plausible(record: dict[str, Any], since_year: int) -> bool:
         "machine twin",
     ]
     return any(term in text for term in additive_terms) and any(term in text for term in topic_terms)
+
+
+def _is_non_research_output(title: str) -> bool:
+    normalized_title = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", title)).strip().lower()
+    blocked_prefixes = (
+        "review for ",
+        "decision letter for ",
+        "author response for ",
+        "response to reviewers",
+        "peer review for ",
+        "title pending",
+    )
+    if normalized_title.startswith(blocked_prefixes):
+        return True
+    blocked_fragments = (
+        "llm guided hypothesis generation in self-driving lab",
+        "(invited)",
+    )
+    return any(fragment in normalized_title for fragment in blocked_fragments)
 
 
 def _since_year() -> int:

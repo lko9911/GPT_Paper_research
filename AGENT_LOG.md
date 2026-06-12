@@ -1,5 +1,40 @@
 # AGENT_LOG
 
+## 2026-06-12 23:45
+
+### 변경 요약
+- 왼쪽 사이드바 서브토픽 카운트를 분야 내 대표 버킷 방식으로 되돌려, 각 분야의 서브토픽 합계가 분야 총 논문 수와 일치하도록 수정했습니다.
+- 새로 추가한 `Self-driving Labs`, `Digital Twins` 계열 검색어로 Crossref 기반 수동 수집을 실행해 논문 데이터를 342편에서 428편으로 늘렸습니다.
+- Crossref 결과에 섞인 `Review for`, `Decision letter`, `Author response`, 초청 발표 초록 등 비논문 항목을 제거하고, 향후 수집에서도 제외되도록 필터를 보강했습니다.
+
+### 수정/생성한 파일
+- `assets/app.js`: 사이드바 카운트를 포함형 카운트에서 대표 버킷 카운트로 변경하고, 구체적인 서브토픽이 먼저 배정되도록 순서를 조정했습니다.
+- `scripts/fetch_crossref.py`: Crossref 검색 기본 정렬을 최신순에서 관련도순으로 변경해 비정상 미래 연도 항목이 상단을 막는 문제를 완화했습니다.
+- `scripts/update_papers.py`: `UPDATE_QUERY_FILTER`, `SKIP_OPENALEX`, `SKIP_TARGET_VENUES`, `SEARCH_PER_PAGE`, `TARGET_VENUE_PER_PAGE` 실행 옵션을 추가하고 비논문 항목 필터를 보강했습니다.
+- `data/papers.json`: 새 주제 중심 수동 수집 결과를 반영해 총 428편으로 업데이트했습니다.
+- `data/site_meta.json`: 이번 수동 수집 결과 `papers_added=86`, `paper_count=428`을 기록했습니다.
+- `index.html`: GitHub Pages 캐시 갱신을 위해 CSS/JS 버전을 업데이트했습니다.
+- `AGENT_LOG.md`: 이번 카운트 수정 및 수동 수집 작업을 기록했습니다.
+
+### 구현한 기능
+- 사이드바에서 각 분야의 서브토픽과 `Others` 합계가 해당 분야 총 논문 수와 같아집니다.
+- OpenAlex가 429 rate limit에 걸렸을 때도 `SKIP_OPENALEX=1`로 Crossref 기반 보강 수집을 수행할 수 있습니다.
+- `UPDATE_QUERY_FILTER`로 새 토픽 검색어만 골라 빠르게 재수집할 수 있습니다.
+- Crossref에서 논문이 아닌 peer-review 부속 항목이 들어오는 문제를 방지합니다.
+
+### 설계 결정
+- 서브토픽 카운트는 중복 포함 관계가 아니라 대표 버킷으로 표시해야 사용자가 총합을 이해하기 쉽다고 판단했습니다.
+- `Robotic AM`, `Machine Learning`, `FDM`처럼 넓은 토픽은 뒤쪽에 배치하고, `Digital Twins`, `Self-driving Labs`, `Manufacturing Automation`, `DLP`처럼 구체적인 토픽을 먼저 배정합니다.
+- Crossref는 `published` 정렬 시 2035/2121 같은 비정상 메타데이터가 상단에 나와, 기본 정렬을 `relevance`로 바꿨습니다.
+
+### 남은 작업
+- 새로 추가된 86편은 메타데이터 기반 자동 수집 결과이므로, 사용자가 보는 화면에서 관련성이 낮은 항목이 있는지 한 차례 수동 검수하면 좋습니다.
+- OpenAlex rate limit이 풀리면 OpenAlex 기반으로 같은 주제의 누락 논문을 추가 보강할 수 있습니다.
+
+### 주의사항
+- 수동 수집은 `OPENAI_API_KEY`를 비운 상태로 실행했으므로 OpenAI 비용은 발생하지 않았습니다.
+- 이번 수집도 공식 메타데이터 API만 사용했으며 PDF 저장, 출판사 크롤링, raw abstract 표시 정책은 변경하지 않았습니다.
+
 ## 2026-06-12 23:40
 
 ### 변경 요약
