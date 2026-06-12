@@ -632,3 +632,51 @@
 
 ### 주의사항
 - 2024년 이후 범위이므로 2024, 2025, 2026 항목이 모두 포함될 수 있습니다.
+## 2026-06-12 13:00
+
+### 변경 요약
+- 사용자 요청에 따라 왼쪽 패널을 큰 분야와 서브 토픽 구조로 개편했습니다.
+- 논문 총량 100편 제한을 제거하고, OpenAlex/Crossref 공식 API 페이징으로 수집 범위를 확장했습니다.
+- 실제 네트워크 수집을 실행해 `data/papers.json`을 50편에서 145편으로 늘렸습니다.
+- UI 한글 문자열 일부가 깨져 있던 문제를 `index.html`과 `assets/app.js`에서 복구했습니다.
+- API rate limit을 고려해 GitHub Actions의 1회 실행 페이지 예산과 sleep 값을 명시했습니다.
+
+### 수정/생성한 파일
+- `index.html`: 깨진 한글 문구를 복구하고 왼쪽 패널 제목을 `분야 및 서브 토픽`으로 변경했습니다.
+- `assets/app.js`: `생산/제조`, `3D 프린팅`, `로봇틱스(생산제조)`, `AI 생산제조` 분야 분류와 서브 토픽 필터를 구현했습니다.
+- `assets/style.css`: 분야/서브 토픽 사이드바와 서브 토픽 badge 스타일을 추가했습니다.
+- `scripts/fetch_openalex.py`: OpenAlex cursor pagination과 DOI `/pdf` suffix 정리를 추가했습니다.
+- `scripts/fetch_crossref.py`: Crossref cursor pagination과 DOI suffix 정리를 추가했습니다.
+- `scripts/update_papers.py`: 논문 총량 제한 제거 상태를 유지하고 페이지당 수집량을 200으로 확장했습니다.
+- `.github/workflows/update-papers.yml`: `API_SLEEP_SECONDS`, `OPENALEX_MAX_PAGES`, `CROSSREF_MAX_PAGES`를 추가해 Actions timeout/rate limit 위험을 낮췄습니다.
+- `data/papers.json`: 공식 메타데이터 API로 수집한 논문을 145편까지 확장하고, `/pdf`가 붙은 DOI 중복 1건을 정리했습니다.
+- `README.md`: 최신 수집 정책 업데이트를 문서화했습니다.
+- `ARCHITECTURE.md`: API 페이징과 실행 예산 정책을 문서화했습니다.
+- `PROJECT_STATUS.md`: 현재 총 논문 수, 완료 기능, 알려진 rate limit 이슈를 기록했습니다.
+- `AGENT_LOG.md`: 이번 작업 기록을 추가했습니다.
+
+### 구현한 기능
+- 왼쪽 사이드바에서 큰 분야를 선택하면 해당 분야 논문만 표시됩니다.
+- 큰 분야 아래 서브 토픽을 선택하면 분야와 서브 토픽 조건이 함께 적용됩니다.
+- 태그 필터에서도 서브 토픽을 선택할 수 있습니다.
+- 논문 카드에는 기존 카테고리/태그와 함께 계산된 서브 토픽 badge가 표시됩니다.
+- OpenAlex/Crossref 검색은 한 페이지만 가져오지 않고 공식 API pagination을 사용할 수 있습니다.
+
+### 설계 결정
+- `data/papers.json`의 전체 논문 수에는 상한을 두지 않았습니다.
+- 다만 GitHub Actions는 1시간마다 실행되고 timeout/rate limit이 있으므로 실행 1회당 page budget을 둡니다. 이는 전체 수집량 제한이 아니라 운영 안정성을 위한 장치입니다.
+- 출판사 사이트를 직접 크롤링하지 않고, PDF도 저장하지 않으며, raw abstract는 저장/표시하지 않는 기존 정책을 유지했습니다.
+- 큰 분야는 기존 저장 카테고리를 삭제하지 않고 UI 계산값으로 도출합니다. 기존 세부 카테고리는 카드 badge로 보존합니다.
+- DOI가 `/pdf`로 끝나는 경우 링크 품질을 위해 suffix를 제거합니다. PDF를 다운로드하거나 저장한 것은 아닙니다.
+
+### 남은 작업
+- 더 깊은 전체 수집을 원하면 `OPENALEX_MAX_PAGES`와 `CROSSREF_MAX_PAGES`를 높이고 `API_SLEEP_SECONDS`도 함께 늘려 수동 실행하세요.
+- OpenAlex 429가 반복되면 target venue 검색을 여러 workflow job 또는 날짜 구간으로 나누는 개선이 필요합니다.
+- 일부 느슨한 검색어는 주변 제조/3D 프린팅 논문까지 포함할 수 있으므로 relevance rule을 연구실 기준에 맞게 더 조정할 수 있습니다.
+
+### 주의사항
+- API key, secret, token은 로그나 클라이언트 코드에 기록하지 않았습니다.
+- 이번 네트워크 수집 중 OpenAlex 429 rate limit이 일부 발생했지만 workflow가 실패하지 않도록 fetch 실패는 로그만 남기고 계속 진행하는 구조입니다.
+- raw abstract가 표시되지 않는 이유는 출판사 초록 원문 재게시 위험을 피하기 위해서입니다.
+- PDF를 저장하지 않는 이유는 저작권 파일 호스팅 위험을 피하고 DOI/source 링크를 통해 원문 확인을 유도하기 위해서입니다.
+- 로컬 브라우저 자동화 도구는 이번 세션에서 노출되지 않아 HTTP 200 응답, JS 파서, Python py_compile, 데이터 정책 검증으로 대체했습니다.

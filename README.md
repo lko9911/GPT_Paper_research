@@ -7,7 +7,6 @@ MMAM, FGAM, DM filament, computational design 분야를 위한 AI 기반 논문 
 이 저장소는 multi-material additive manufacturing, functionally graded additive manufacturing, blended FDM, digital material filament, computational design, toolpath optimization, material switching optimization 관련 논문 메타데이터를 주기적으로 수집하고, DOI 링크와 한글 AI 요약을 함께 보여줍니다.
 
 현재 자동 조사 범위는 2024년 이후 논문입니다. `SINCE_YEAR` 환경변수로 시작 연도를 바꿀 수 있으며 기본값은 `2024`입니다.
-자동 수집 총량은 기본적으로 100편을 넘지 않도록 `MAX_TOTAL_PAPERS=100`으로 제한합니다.
 
 ## 데이터 출처
 
@@ -133,3 +132,10 @@ Science, Nature, Nature Communications, Advanced Materials 같은 게재지도 O
 - DOI가 없는 논문은 normalized title hash로 중복 제거하므로 제목 변형이 큰 경우 중복이 생길 수 있습니다.
 - `OPENAI_API_KEY`가 없을 때 생성되는 fallback 요약은 제목과 메타데이터 기반이라 내용 이해가 제한적입니다.
 - 자동 분류와 관련성 점수는 휴리스틱 또는 AI 생성 결과이므로 최종 판단은 DOI 링크의 원문을 확인해야 합니다.
+- 논문 수 총량 제한은 두지 않지만, OpenAlex/Crossref API의 응답 범위와 rate limit에 영향을 받습니다.
+## 2026-06-12 최신 수집 정책 업데이트
+
+- 저장되는 논문 수에는 상한을 두지 않습니다. 기존 100편 제한은 제거했습니다.
+- OpenAlex와 Crossref의 공식 API 페이징을 사용해 한 페이지보다 넓게 수집합니다.
+- GitHub Actions는 매시간 안정적으로 끝나야 하므로 실행 1회당 `OPENALEX_MAX_PAGES`, `CROSSREF_MAX_PAGES`, `API_SLEEP_SECONDS`를 사용합니다. 이는 전체 논문 수 제한이 아니라 API rate limit과 Actions timeout을 피하기 위한 실행 예산입니다.
+- 더 깊은 일회성 수집이 필요하면 workflow 또는 로컬 환경에서 `OPENALEX_MAX_PAGES`와 `CROSSREF_MAX_PAGES`를 높여 수동 실행하면 됩니다.

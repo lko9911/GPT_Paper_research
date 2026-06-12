@@ -87,7 +87,6 @@
 - `SEMANTIC_SCHOLAR_API_KEY`: 선택적 Semantic Scholar 보강에 사용합니다.
 - `API_SLEEP_SECONDS`: API rate limit 배려를 위한 요청 간 대기 시간입니다. 기본값은 `0.2`초입니다.
 - `SINCE_YEAR`: 자동 조사 시작 연도입니다. 기본값은 `2024`입니다.
-- `MAX_TOTAL_PAPERS`: 자동 수집 총량 상한입니다. 기본값은 `100`입니다.
 
 환경변수 값은 로그나 데이터 파일에 기록하지 않습니다.
 
@@ -96,3 +95,9 @@
 이 프로젝트는 공식 메타데이터 API만 사용합니다. 출판사 웹사이트를 직접 크롤링하지 않고 PDF를 다운로드하거나 저장하지 않습니다. API에서 받은 abstract는 한글 AI 요약 생성 입력으로만 사용하며, 웹사이트와 `data/papers.json`에는 원문 abstract를 표시하거나 보관하지 않습니다.
 
 이 정책을 코드 레벨에서 지키기 위해 `scripts/update_papers.py`는 저장 직전 `_abstract`로 시작하는 transient 필드를 제거합니다. 프론트엔드도 `ai_summary_ko`만 표시합니다.
+## 2026-06-12 수집량 정책 업데이트
+
+- `data/papers.json`의 전체 논문 수에는 상한을 두지 않습니다.
+- OpenAlex와 Crossref는 공식 API의 cursor/page 기능을 사용해 여러 페이지를 읽을 수 있습니다.
+- GitHub Actions의 1회 실행은 `OPENALEX_MAX_PAGES`, `CROSSREF_MAX_PAGES`, `API_SLEEP_SECONDS`로 조절합니다. 이 값은 전체 수집량 제한이 아니라 rate limit과 timeout을 피하기 위한 실행 단위 예산입니다.
+- 429 응답이 잦으면 `API_SLEEP_SECONDS`를 늘리거나 수동 실행 간격을 넓히는 것이 좋습니다.

@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import os
+import re
 import time
 from typing import Any
 from urllib.parse import quote
@@ -26,8 +27,9 @@ def fetch_openalex(
 
     params: dict[str, Any] = {
         "search": query,
-        "per-page": per_page,
+        "per-page": min(per_page, 200),
         "sort": "publication_date:desc",
+        "cursor": "*",
     }
     contact_email = os.getenv("CONTACT_EMAIL")
     if contact_email:
@@ -40,11 +42,29 @@ def fetch_openalex(
     if filters:
         params["filter"] = ",".join(filters)
 
-    response = requests.get(OPENALEX_API, params=params, headers=_headers(), timeout=30)
-    response.raise_for_status()
-    time.sleep(float(os.getenv("API_SLEEP_SECONDS", "0.2")))
+    works: list[dict[str, Any]] = []
+    seen_cursors: set[str] = set()
+    max_pages = _max_pages()
+    page = 0
 
-    return [_normalize_work(item) for item in response.json().get("results", [])]
+    while True:
+        response = requests.get(OPENALEX_API, params=params, headers=_headers(), timeout=30)
+        response.raise_for_status()
+        payload = response.json()
+        results = payload.get("results", [])
+        works.extend(_normalize_work(item) for item in results)
+        page += 1
+        time.sleep(float(os.getenv("API_SLEEP_SECONDS", "0.2")))
+
+        next_cursor = (payload.get("meta") or {}).get("next_cursor")
+        if not results or not next_cursor or next_cursor in seen_cursors:
+            break
+        if max_pages and page >= max_pages:
+            break
+        seen_cursors.add(next_cursor)
+        params["cursor"] = next_cursor
+
+    return works
 
 
 def fetch_openalex_by_doi(doi: str) -> dict[str, Any] | None:
@@ -109,7 +129,9 @@ def _clean_doi(value: str | None) -> str:
         value = value[16:]
     if value.lower().startswith("http://dx.doi.org/"):
         value = value[18:]
-    return value.lower()
+    value = value.lower().strip()
+    value = re.sub(r"(\.pdf|/pdf)$", "", value)
+    return value
 
 
 def _headers() -> dict[str, str]:
@@ -118,3 +140,11 @@ def _headers() -> dict[str, str]:
         "User-Agent": f"awesome-mmam-paper-tracker/1.0 ({contact})",
         "Accept": "application/json",
     }
+
+
+def _max_pages() -> int:
+    value = os.getenv("OPENALEX_MAX_PAGES", "0")
+    try:
+        return max(0, int(value))
+    except ValueError:
+        return 0
