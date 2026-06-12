@@ -63,6 +63,7 @@ const state = {
   filtered: [],
   activeTopic: "",
   activeTargetVenue: "",
+  activeVenueGroup: "",
   activeSubtopic: "",
 };
 
@@ -107,10 +108,12 @@ async function init() {
   [els.search, els.category, els.tag, els.venue, els.year, els.sort].forEach((el) => {
     el.addEventListener("input", () => {
       if (el === els.category) state.activeSubtopic = "";
+      if (el === els.venue) clearVenueQuickFilters();
       applyFilters();
     });
     el.addEventListener("change", () => {
       if (el === els.category) state.activeSubtopic = "";
+      if (el === els.venue) clearVenueQuickFilters();
       applyFilters();
     });
   });
@@ -186,7 +189,7 @@ function buildTopicNav() {
 function buildVenueNav() {
   TARGET_VENUES.forEach((venue) => {
     const count = state.papers.filter((paper) => matchesTargetVenue(normalizeVenue(paper.venue), venue)).length;
-    if (count === 0) return;
+    if (count < 2) return;
     const button = document.createElement("button");
     button.type = "button";
     button.className = "venue-pill";
@@ -200,6 +203,7 @@ function buildVenueNav() {
     const button = event.target.closest("[data-target-venue]");
     if (!button) return;
     state.activeTargetVenue = button.dataset.targetVenue;
+    state.activeVenueGroup = "";
     if (state.activeTargetVenue) {
       els.venue.value = "";
     }
@@ -266,31 +270,28 @@ function venueCountEntries() {
 
 function renderVenueBoard() {
   const entries = venueCountEntries();
-  const priorityEntries = TARGET_VENUES.map((target) => {
-    const matched = entries.find(([venue]) => matchesTargetVenue(venue, target));
-    return matched || [target, 0];
-  }).filter(([, count]) => count > 0);
-  const discoveredEntries = entries
-    .filter(([venue]) => !isPriorityVenue(venue) && shouldShowDiscoveredVenue(venue))
-    .slice(0, 8);
+  const visibleEntries = entries.filter(([venue, count]) => count >= 2 && !isNonJournalVenue(venue));
+  const hiddenEntries = entries.filter(([venue, count]) => !visibleEntries.some(([visibleVenue]) => visibleVenue === venue));
+  const hiddenPaperCount = hiddenEntries.reduce((sum, [, count]) => sum + count, 0);
 
   const mainCards = [
     `<button class="venue-card is-all is-active" type="button" data-board-venue="">
       <strong>All venues</strong>
       <span>${state.papers.length} papers</span>
     </button>`,
-    ...priorityEntries.map(([venue, count]) => venueCard(venue, count, "target")),
-    ...discoveredEntries.map(([venue, count]) => venueCard(venue, count, "related")),
+    ...visibleEntries.map(([venue, count]) => venueCard(venue, count, isPriorityVenue(venue) ? "target" : "")),
+    hiddenPaperCount ? otherVenueCard(hiddenPaperCount, hiddenEntries.length) : "",
   ].join("");
 
   els.venueBoard.innerHTML = `
-    <div class="venue-rule">표시 기준: 핵심 타깃 venue 또는 2편 이상 반복 등장한 관련 학술지</div>
+    <div class="venue-rule">표시 기준: 2편 이상 수집된 학술지는 개별 표시, 나머지는 그 외로 묶음</div>
     <div class="venue-featured">${mainCards}</div>
   `;
 
   els.venueBoard.querySelectorAll("[data-board-venue]").forEach((button) => {
     button.addEventListener("click", () => {
       const venue = button.dataset.boardVenue;
+      state.activeVenueGroup = button.dataset.boardVenueGroup || "";
       state.activeTargetVenue = isPriorityVenue(venue) ? venue : "";
       els.venue.value = venue && !isPriorityVenue(venue) ? venue : "";
       if (!venue) {
@@ -301,7 +302,9 @@ function renderVenueBoard() {
         pill.classList.toggle("is-active", pill.dataset.targetVenue === state.activeTargetVenue);
       });
       els.venueBoard.querySelectorAll(".venue-card").forEach((card) => {
-        card.classList.toggle("is-active", card.dataset.boardVenue === venue);
+        const sameVenue = card.dataset.boardVenue === venue;
+        const sameGroup = (card.dataset.boardVenueGroup || "") === state.activeVenueGroup;
+        card.classList.toggle("is-active", sameVenue && sameGroup);
       });
       applyFilters();
       scrollToPapers();
@@ -309,26 +312,15 @@ function renderVenueBoard() {
   });
 }
 
-function shouldShowDiscoveredVenue(venue) {
-  const key = normalizeVenueKey(venue);
-  const count = state.papers.filter((paper) => normalizeVenueKey(paper.venue) === key).length;
-  if (count < 2) return false;
-  if (isNonJournalVenue(venue)) return false;
-  return hasAny(key, [
-    "manufacturing",
-    "materials",
-    "material",
-    "mechanical",
-    "engineering",
-    "polymer",
-    "polymers",
-    "machines",
-    "prototyping",
-    "robot",
-    "additive",
-    "applied sciences",
-    "composites",
-  ]);
+function clearVenueQuickFilters() {
+  state.activeTargetVenue = "";
+  state.activeVenueGroup = "";
+  els.venueNav.querySelectorAll(".venue-pill").forEach((pill) => {
+    pill.classList.toggle("is-active", !pill.dataset.targetVenue);
+  });
+  els.venueBoard.querySelectorAll(".venue-card").forEach((card) => {
+    card.classList.toggle("is-active", !card.dataset.boardVenue && !card.dataset.boardVenueGroup);
+  });
 }
 
 function isNonJournalVenue(venue) {
@@ -353,6 +345,14 @@ function venueCard(venue, count, label = "") {
     <strong>${escapeHtml(shortVenue(venue))}</strong>
     <span>${count} papers</span>
     ${badge}
+  </button>`;
+}
+
+function otherVenueCard(paperCount, venueCount) {
+  return `<button class="venue-card venue-card-muted" type="button" data-board-venue="" data-board-venue-group="other">
+    <strong>그 외</strong>
+    <span>${paperCount} papers · ${venueCount} venues</span>
+    <em>2편 이하의 학술지</em>
   </button>`;
 }
 
@@ -414,6 +414,7 @@ function applyFilters() {
     const matchesTag = !tag || paperTags.includes(tag) || paperVisibleTags.includes(tag) || paperSubtopics.includes(tag);
     const matchesVenue = !venue || paperVenue === venue;
     const matchesTarget = !state.activeTargetVenue || matchesTargetVenue(paperVenue, state.activeTargetVenue);
+    const matchesVenueGroup = !state.activeVenueGroup || isOtherVenuePaper(paper);
     const matchesTopic =
       !state.activeTopic ||
       paperTags.includes(state.activeTopic) ||
@@ -427,6 +428,7 @@ function applyFilters() {
       matchesTag &&
       matchesVenue &&
       matchesTarget &&
+      matchesVenueGroup &&
       matchesTopic &&
       matchesSubtopic &&
       matchesYear
@@ -444,6 +446,12 @@ function applyFilters() {
   });
 
   render();
+}
+
+function isOtherVenuePaper(paper) {
+  const venue = normalizeVenue(paper.venue);
+  const count = state.papers.filter((item) => normalizeVenueKey(item.venue) === normalizeVenueKey(venue)).length;
+  return count < 2 || isNonJournalVenue(venue);
 }
 
 function render() {

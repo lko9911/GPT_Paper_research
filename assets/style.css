@@ -386,6 +386,11 @@ h1 {
   background: var(--blue-soft);
 }
 
+.venue-card-muted {
+  border-style: dashed;
+  background: #fbfcff;
+}
+
 .venue-card strong {
   font-size: 0.92rem;
   line-height: 1.25;
