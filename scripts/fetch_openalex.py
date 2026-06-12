@@ -12,7 +12,12 @@ import requests
 OPENALEX_API = "https://api.openalex.org/works"
 
 
-def fetch_openalex(query: str, per_page: int = 20, from_year: int | None = None) -> list[dict[str, Any]]:
+def fetch_openalex(
+    query: str,
+    per_page: int = 20,
+    from_year: int | None = None,
+    source_id: str | None = None,
+) -> list[dict[str, Any]]:
     """Search OpenAlex and return normalized paper records.
 
     Abstract text is returned only in the transient "_abstract" field so the
@@ -27,8 +32,13 @@ def fetch_openalex(query: str, per_page: int = 20, from_year: int | None = None)
     contact_email = os.getenv("CONTACT_EMAIL")
     if contact_email:
         params["mailto"] = contact_email
+    filters = []
     if from_year:
-        params["filter"] = f"from_publication_date:{from_year}-01-01"
+        filters.append(f"from_publication_date:{from_year}-01-01")
+    if source_id:
+        filters.append(f"primary_location.source.id:{source_id}")
+    if filters:
+        params["filter"] = ",".join(filters)
 
     response = requests.get(OPENALEX_API, params=params, headers=_headers(), timeout=30)
     response.raise_for_status()
