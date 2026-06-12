@@ -72,6 +72,13 @@
 
 진입점은 `scripts/update_papers.py`입니다.
 
+비용 안전 정책:
+
+- 정기 `Update papers` workflow는 OpenAI API key를 전달하지 않습니다.
+- `scripts/update_papers.py`는 `ALLOW_OPENAI_IN_UPDATE=true`가 명시되지 않으면 OpenAI를 호출하지 않고 fallback 요약/분류만 생성합니다.
+- OpenAI 요약은 별도 수동 workflow인 `.github/workflows/refresh-openai-summaries.yml`에서 curated papers를 대상으로만 실행합니다.
+- 이 분리의 이유는 raw 후보 수집 단계에서 나중에 archive로 숨길 논문까지 요약하면 불필요한 API 비용이 발생하기 때문입니다.
+
 실행 순서:
 
 1. `data/papers.json`과 `data/queries.json`을 읽습니다.
