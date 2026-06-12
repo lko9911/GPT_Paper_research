@@ -6,6 +6,8 @@ MMAM, FGAM, DM filament, computational design 분야를 위한 AI 기반 논문 
 
 이 저장소는 multi-material additive manufacturing, functionally graded additive manufacturing, blended FDM, digital material filament, computational design, toolpath optimization, material switching optimization 관련 논문 메타데이터를 주기적으로 수집하고, DOI 링크와 한글 AI 요약을 함께 보여줍니다.
 
+현재 자동 조사 범위는 2025년 이후 논문입니다. `SINCE_YEAR` 환경변수로 시작 연도를 바꿀 수 있으며 기본값은 `2025`입니다.
+
 ## 데이터 출처
 
 - OpenAlex Works API
@@ -94,6 +96,20 @@ python -m http.server 8000
 ## 검색어 수정 방법
 
 `data/queries.json`의 문자열 배열을 수정하면 다음 자동 실행부터 검색 범위가 바뀝니다. 너무 넓은 검색어는 관련 없는 논문을 늘릴 수 있으므로, additive manufacturing과 설계/재료/툴패스 맥락이 함께 드러나는 검색어를 권장합니다.
+
+## 논문을 가져오는 기준
+
+자동 파이프라인은 다음 조건을 만족하는 항목만 `data/papers.json`에 추가합니다.
+
+- OpenAlex 또는 Crossref 공식 API에서 검색된 항목
+- 기본적으로 2025년 이후로 식별된 항목
+- 제목이 비어 있지 않은 항목
+- DOI가 있으면 DOI 기준으로 중복 제거, DOI가 없으면 정규화된 제목 기준으로 중복 제거
+- 제목 또는 API 초록 메타데이터에 additive manufacturing, 3D printing, FDM, material extrusion 계열 표현이 있는 항목
+- 제목 또는 API 초록 메타데이터에 multi-material, functionally graded, digital material, computational design, material distribution, toolpath, material switching, purge, path planning 계열 표현이 있는 항목
+- 출판사 웹사이트 직접 크롤링, PDF 다운로드, 원문 초록 저장 없이 처리 가능한 항목
+
+Science, Nature, Nature Communications, Advanced Materials 같은 게재지도 OpenAlex/Crossref 메타데이터에 잡히고 위 기준을 만족하면 포함될 수 있습니다. 특정 출판사나 저널을 직접 크롤링하지는 않습니다.
 
 ## 한계점
 
