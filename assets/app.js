@@ -1094,8 +1094,8 @@ function canonicalTopicLabel(tag) {
     return "Self-driving Labs";
   }
   if (hasAny(text, ["digital twin", "digital twins", "virtual twin", "cyber-physical", "cyber physical", "process twin", "machine twin", "디지털 트윈"])) return "Digital Twins";
-  if (hasAny(text, ["manufacturing automation", "automation", "automated", "autonomous", "closed-loop", "closed loop", "monitoring", "in-situ", "in situ", "제조 자동화", "자동화", "자율", "모니터링"])) return "Manufacturing automation";
   if (hasAny(text, ["design automation", "computational design", "generative design", "topology optimization", "계산설계", "설계 자동화"])) return "Design automation";
+  if (hasAny(text, ["manufacturing automation", "automated manufacturing", "factory automation", "process automation", "production automation", "automation", "automated", "autonomous", "closed-loop", "closed loop", "monitoring", "in-situ", "in situ", "제조 자동화", "생산 자동화", "공정 자동화", "자동화", "자율", "모니터링"])) return "Manufacturing automation";
   if (hasAny(text, ["machine learning", "deep learning", "reinforcement learning", "ai/ml", "머신러닝", "인공지능"])) return "Machine learning";
   if (hasAny(text, ["review", "survey", "리뷰", "서베이"])) return "Review";
   if (hasAny(text, ["material distribution", "재료분포", "재료 분포"])) return "Material distribution";
