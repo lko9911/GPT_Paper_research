@@ -1,5 +1,35 @@
 # AGENT_LOG
 
+## 2026-06-12 18:24
+
+### 변경 요약
+- 논문 카드에 표시되는 태그를 관련 대표 토픽 3개로 제한했습니다.
+- 중복 의미를 갖는 카테고리/서브토픽/태그가 한 카드에 길게 반복 표시되는 문제를 줄였습니다.
+- 4D 프린팅 서브토픽에 `LCE`와 `메타물질`을 추가했습니다.
+
+### 수정/생성한 파일
+- `assets/app.js`: `representativeTags()`, `canonicalTopicLabel()`, `normalizeTopicKey()`를 추가해 카드 표시용 대표 태그를 최대 3개로 정리했습니다.
+- `assets/app.js`: 4D 프린팅 서브토픽 목록에 `LCE`, `메타물질`을 추가하고, LCE/liquid crystal elastomer/metamaterial 키워드 감지 규칙을 추가했습니다.
+- `assets/app.js`: 영어 모드에서 `메타물질`이 `Metamaterials`로 표시되도록 번역 항목을 추가했습니다.
+- `index.html`: CSS/JS cache-busting version을 갱신했습니다.
+- `AGENT_LOG.md`: 이번 태그 표시 정책 변경을 기록했습니다.
+
+### 구현한 기능
+- 카드의 태그 라인은 대표 토픽 3개만 표시합니다.
+- `MMAM`, `FGAM`, `DM filament`, `FDM/Material extrusion`, `DLP`, `LCE`, `메타물질`, `4D printing`, `Toolpath`, `Path Planning`, `Process Optimization`, `Manufacturing Automation`, `Design Automation`, `AI/ML` 등은 canonical label로 정리됩니다.
+- 4D printing, LCE, liquid crystal elastomer, metamaterial 관련 논문은 4D 프린팅 분야/서브토픽에서 더 잘 잡히도록 했습니다.
+
+### 설계 결정
+- 검색/필터용 내부 토픽은 유지하고, 카드 표시만 대표 3개로 제한했습니다. 필터 기능을 줄이지 않으면서 카드 가독성을 높이기 위해서입니다.
+- `data/papers.json`은 수정하지 않고 프론트엔드 표시 로직에서 태그를 정리했습니다. 자동 수집 파이프라인과 기존 데이터 schema에 영향을 주지 않기 위해서입니다.
+
+### 남은 작업
+- 실제 수집 데이터에서 LCE/metamaterial 논문이 늘어나면 검색어(`data/queries.json`)에도 관련 키워드를 추가할지 검토할 수 있습니다.
+
+### 주의사항
+- 이번 변경은 UI 표시와 분류 보조 규칙 변경이며, 출판사 초록/PDF 저장 정책에는 영향을 주지 않습니다.
+- API key, secret, token은 기록하지 않았습니다.
+
 ## 2026-06-12 18:15
 
 ### 변경 요약

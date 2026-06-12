@@ -22,7 +22,7 @@ const FIELD_ORDER = [
 const FIELD_SUBTOPICS = {
   "생산/제조": ["공정 최적화", "금속/합금 제조", "건설/대형 제조", "복합재/소재 제조"],
   "3D 프린팅": ["MMAM", "FGAM", "DM filament", "FDM/Material extrusion", "DLP", "툴패스", "퍼지/재료전환"],
-  "4D 프린팅": ["4D printing", "Active materials", "Shape morphing", "Stimuli-responsive"],
+  "4D 프린팅": ["4D printing", "LCE", "메타물질", "Active materials", "Shape morphing", "Stimuli-responsive"],
   "로봇틱스(생산제조)": ["로봇 AM", "제조 자동화", "경로계획"],
   "AI 생산제조": ["Machine Learning", "Deep Learning", "Reinforcement Learning", "AI 공정제어", "설계 자동화"],
 };
@@ -156,6 +156,7 @@ const LABEL_TRANSLATIONS = {
     "로봇 AM": "Robotic AM",
     "제조 자동화": "Manufacturing Automation",
     "경로계획": "Path Planning",
+    "메타물질": "Metamaterials",
     "AI 공정제어": "AI Process Control",
     "설계 자동화": "Design Automation",
     "리뷰 및 서베이": "Reviews and Surveys",
@@ -760,9 +761,9 @@ function renderPaperRow(paper) {
   const sourceText = (paper.source || []).join(", ") || "Metadata API";
   const authors = formatAuthors(paper.authors || []);
   const publicationLabel = formatPublicationLabel(paper);
-  const categoryBadges = (paper.categories || []).map((category) => badge(displayLabel(category), "category")).join("");
-  const subtopicBadges = deriveSubtopics(paper).map((subtopic) => badge(displayLabel(subtopic), "subtopic")).join("");
-  const tagBadges = visibleTags(paper).map((tag) => tagButton(tag)).join("");
+  const representativeBadges = representativeTags(paper)
+    .map((tag) => badge(displayLabel(tag), "tag"))
+    .join("");
 
   article.innerHTML = `
     <div class="card-content">
@@ -774,7 +775,7 @@ function renderPaperRow(paper) {
       <p class="meta">${escapeHtml(authors)}${authors ? " · " : ""}${escapeHtml(paper.venue || "Venue unknown")} · ${escapeHtml(sourceText)}</p>
       <p class="summary">${escapeHtml(paper.ai_summary_ko || t("summaryMissing"))}</p>
       <p class="relevance-note">${escapeHtml(paper.relevance_note_ko || "")}</p>
-      <div class="tag-line">${categoryBadges}${subtopicBadges}${tagBadges}</div>
+      <div class="tag-line">${representativeBadges}</div>
       <div class="card-links">
         ${doiUrl ? `<a class="link-pill primary" href="${escapeAttribute(doiUrl)}" target="_blank" rel="noopener noreferrer">Paper</a>` : ""}
         ${doiUrl ? `<a class="link-pill" href="${escapeAttribute(doiUrl)}" target="_blank" rel="noopener noreferrer">DOI</a>` : ""}
@@ -809,6 +810,50 @@ function badge(text, className = "") {
 
 function tagButton(text) {
   return `<button class="badge tag" type="button" data-tag-filter="${escapeAttribute(text)}">${escapeHtml(text)}</button>`;
+}
+
+function representativeTags(paper) {
+  const candidates = [...deriveSubtopics(paper), ...visibleTags(paper)];
+  if (candidates.length < 3) {
+    candidates.push(...(paper.categories || []));
+  }
+
+  const seen = new Set();
+  const picked = [];
+  candidates.forEach((tag) => {
+    const canonical = canonicalTopicLabel(tag);
+    const key = normalizeTopicKey(canonical);
+    if (!canonical || seen.has(key)) return;
+    seen.add(key);
+    picked.push(canonical);
+  });
+
+  return picked.slice(0, 3);
+}
+
+function canonicalTopicLabel(tag) {
+  const value = String(tag || "").trim();
+  const text = normalize(value);
+  if (!value) return "";
+  if (hasAny(text, ["multi-material", "multi material", "multimaterial", "mmam"])) return "MMAM";
+  if (hasAny(text, ["functionally graded", "functional gradient", "graded material", "fgam"])) return "FGAM";
+  if (hasAny(text, ["dm filament", "digital material", "blended fdm"])) return "DM filament";
+  if (hasAny(text, ["fdm", "fused deposition", "material extrusion"])) return "FDM/Material extrusion";
+  if (hasAny(text, ["dlp", "digital light processing", "vat photopolymerization", "vat photopolymerisation", "stereolithography", "sla"])) return "DLP";
+  if (hasAny(text, ["lce", "liquid crystal elastomer", "liquid-crystal elastomer"])) return "LCE";
+  if (hasAny(text, ["metamaterial", "metamaterials", "mechanical metamaterial", "메타물질"])) return "메타물질";
+  if (hasAny(text, ["4d printing", "4d printed", "4d-printed", "4d print"])) return "4D printing";
+  if (hasAny(text, ["toolpath"])) return "Toolpath";
+  if (hasAny(text, ["path planning", "trajectory", "graph search"])) return "Path Planning";
+  if (hasAny(text, ["process optimization", "process optimisation", "parameter optimization", "parameter optimisation"])) return "Process Optimization";
+  if (hasAny(text, ["manufacturing automation", "automation", "automated"])) return "Manufacturing Automation";
+  if (hasAny(text, ["design automation", "computational design", "generative design", "topology optimization"])) return "Design Automation";
+  if (hasAny(text, ["machine learning", "deep learning", "reinforcement learning", "ai/ml"])) return "AI/ML";
+  return value;
+}
+
+function normalizeTopicKey(tag) {
+  return normalize(tag).replace(/[^a-z0-9가-힣]+/g, "");
 }
 
 function visibleTags(paper) {
@@ -863,6 +908,9 @@ function deriveField(paper) {
     titleText.includes("4d printed") ||
     titleText.includes("4d-printed") ||
     titleText.includes("4d print") ||
+    titleText.includes("lce") ||
+    titleText.includes("liquid crystal elastomer") ||
+    titleText.includes("metamaterial") ||
     titleText.includes("4d 프린팅")
   ) {
     return "4D 프린팅";
@@ -953,6 +1001,8 @@ function deriveSubtopics(paper) {
   if (hasAny(text, ["purge", "switching", "transition", "waste", "퍼지", "재료 전환", "전환"])) subtopics.add("퍼지/재료전환");
 
   if (hasAny(text, ["4d printing", "4d printed", "4d-printed", "4d print", "4d 프린팅"])) subtopics.add("4D printing");
+  if (hasAny(text, ["lce", "liquid crystal elastomer", "liquid-crystal elastomer"])) subtopics.add("LCE");
+  if (hasAny(text, ["metamaterial", "metamaterials", "mechanical metamaterial", "메타물질"])) subtopics.add("메타물질");
   if (hasAny(text, ["active material", "active materials", "actuator", "actuation", "액추에이터", "능동 재료"])) subtopics.add("Active materials");
   if (hasAny(text, ["shape morph", "morphing", "shape change", "shape-changing", "형상 변화", "변형"])) subtopics.add("Shape morphing");
   if (hasAny(text, ["stimuli", "stimulus", "responsive", "temperature-responsive", "자극 반응", "반응형"])) subtopics.add("Stimuli-responsive");
