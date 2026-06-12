@@ -1,5 +1,32 @@
 # AGENT_LOG
 
+## 2026-06-12 22:45
+
+### 변경 요약
+- 왼쪽 패널의 분야/서브토픽 표시가 한국어/영어 모드에 맞게 번역되도록 UI 문구를 보강했습니다.
+- venue 보드 기준을 기존 2편 이상 개별 표시에서 `Core / 10편 이상 / Others` 구조로 변경했습니다.
+- 한국어 모드의 `All venues`, `papers`, `Others` 같은 영어 잔여 UI 문구를 한국어로 정리했습니다.
+
+### 수정/생성한 파일
+- `assets/app.js`: venue 표시 기준, 한국어/영어 UI 문구, 10편 이상 venue 라벨을 수정했습니다.
+- `index.html`: JS/CSS cache-busting version을 갱신했습니다.
+- `AGENT_LOG.md`: 이번 사이드바/venue 표시 기준 변경을 기록했습니다.
+
+### 구현한 기능
+- 한국어 모드에서는 `전체 게재지`, `편`, `기타`, `10편 이상`처럼 표시됩니다.
+- 영어 모드에서는 `All venues`, `papers`, `Others`, `10+ papers`처럼 표시됩니다.
+- venue board는 core venue를 우선 표시하고, non-core venue는 10편 이상인 경우만 개별 표시하며 나머지는 Others로 묶습니다.
+
+### 설계 결정
+- Core venue는 기존 `TARGET_VENUES` 목록을 유지했습니다.
+- 10편 이상 기준은 `VENUE_MIN_VISIBLE_COUNT = 10` 상수로 분리해 이후 쉽게 조정할 수 있게 했습니다.
+
+### 남은 작업
+- 실제 브라우저에서 언어 토글 후 사이드바 라벨과 venue board를 시각 확인하면 좋습니다.
+
+### 주의사항
+- 이번 변경은 프론트엔드 표시와 venue grouping 기준만 수정하며 데이터 수집, API key, raw abstract/PDF 정책에는 영향을 주지 않습니다.
+
 ## 2026-06-12 22:24
 
 ### 변경 요약

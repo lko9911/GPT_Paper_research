@@ -53,6 +53,8 @@ const TARGET_VENUES = [
   "Additive Manufacturing",
 ];
 
+const VENUE_MIN_VISIBLE_COUNT = 10;
+
 const UI_TEXT = {
   ko: {
     themeDark: "Dark",
@@ -78,18 +80,19 @@ const UI_TEXT = {
     newest: "최신순",
     relevance: "관련성 점수순",
     title: "제목순",
-    venuesTitle: "주요 게재지",
-    allVenues: "All venues",
-    papersByField: "Papers by Field",
-    curatedPapers: "Curated Papers",
+    venuesTitle: "게재지",
+    allVenues: "전체 게재지",
+    papersByField: "분야별 논문",
+    curatedPapers: "논문 목록",
     emptyTitle: "표시할 논문이 없습니다.",
     emptyText: "검색어와 필터를 조정하거나 GitHub Actions 업데이트를 실행해 보세요.",
     footer:
       "Metadata from OpenAlex, Crossref, and optionally Semantic Scholar. Summaries are generated and do not reproduce publisher abstracts.",
-    papers: "papers",
+    papers: "편",
     priority: "Core",
-    others: "Others",
-    lowCountVenue: "2편 이하 게재지",
+    tenPlusVenue: "10편 이상",
+    others: "기타",
+    lowCountVenue: "Core/10편 이상 외",
     showing: "편 표시 중",
     unknownYear: "연도 미상",
     relevanceLabel: "관련성",
@@ -126,7 +129,7 @@ const UI_TEXT = {
     newest: "Newest",
     relevance: "Relevance",
     title: "Title",
-    venuesTitle: "Key Venues",
+    venuesTitle: "Venues",
     allVenues: "All venues",
     papersByField: "Papers by Field",
     curatedPapers: "Curated Papers",
@@ -136,8 +139,9 @@ const UI_TEXT = {
       "Metadata from OpenAlex, Crossref, and optionally Semantic Scholar. Summaries are generated and do not reproduce publisher abstracts.",
     papers: "papers",
     priority: "Core",
+    tenPlusVenue: "10+ papers",
     others: "Others",
-    lowCountVenue: "2 or fewer papers",
+    lowCountVenue: "Outside Core/10+",
     showing: "papers shown",
     unknownYear: "Year unknown",
     relevanceLabel: "Relevance",
@@ -619,7 +623,7 @@ function renderVenueBoard() {
     return matched || [target, 0];
   }).filter(([, count]) => count > 0);
   const discoveredEntries = entries.filter(
-    ([venue, count]) => count >= 2 && !isPriorityVenue(venue) && !isNonJournalVenue(venue)
+    ([venue, count]) => count >= VENUE_MIN_VISIBLE_COUNT && !isPriorityVenue(venue) && !isNonJournalVenue(venue)
   );
   const visibleVenueKeys = new Set(
     [...priorityEntries, ...discoveredEntries].map(([venue]) => normalizeVenueKey(venue))
@@ -633,7 +637,7 @@ function renderVenueBoard() {
       <span>${state.papers.length} ${escapeHtml(t("papers"))}</span>
     </button>`,
     ...priorityEntries.map(([venue, count]) => venueCard(venue, count, t("priority"))),
-    ...discoveredEntries.map(([venue, count]) => venueCard(venue, count)),
+    ...discoveredEntries.map(([venue, count]) => venueCard(venue, count, t("tenPlusVenue"))),
     hiddenPaperCount ? otherVenueCard(hiddenPaperCount, hiddenEntries.length) : "",
   ].join("");
 
@@ -822,7 +826,7 @@ function applyFilters() {
 function isOtherVenuePaper(paper) {
   const venue = normalizeVenue(paper.venue);
   const count = state.papers.filter((item) => normalizeVenueKey(item.venue) === normalizeVenueKey(venue)).length;
-  return count < 2 || isNonJournalVenue(venue);
+  return !isPriorityVenue(venue) && (count < VENUE_MIN_VISIBLE_COUNT || isNonJournalVenue(venue));
 }
 
 function render() {
