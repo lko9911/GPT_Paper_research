@@ -55,7 +55,7 @@
 
 초록 원문은 API 응답에서 `_abstract`라는 임시 필드로만 들고 있다가 저장 직전 제거합니다. 이 필드는 `data/papers.json`에 남지 않습니다.
 
-`ai_summary_ko`는 일반 문단이 아니라 다음 5문항을 순서대로 답하는 형식을 표준으로 사용합니다.
+`ai_summary_ko`와 `ai_summary_en`은 일반 문단이 아니라 다음 5문항을 순서대로 답하는 형식을 표준으로 사용합니다.
 
 1. Topic - 이 논문은 무엇을 다루는가?
 2. Problem - 어떤 문제나 한계를 해결하려는가?
@@ -63,7 +63,7 @@
 4. Key Result - 가장 중요한 결과는 무엇인가?
 5. Takeaway - 그래서 이 논문의 핵심 메시지는 무엇인가?
 
-프론트엔드는 이 형식을 감지하면 카드 내부에 Q/A 블록으로 렌더링하고, 예전 문단형 요약은 기존 paragraph 형태로 fallback 표시합니다.
+프론트엔드는 이 형식을 감지하면 카드 내부에 Q/A 블록으로 렌더링합니다. 영어 모드에서는 `ai_summary_en`이 있으면 우선 표시하고, 없으면 메타데이터 기반 영어 fallback을 표시합니다. 예전 문단형 요약은 기존 paragraph 형태로 fallback 표시합니다.
 
 `data/queries.json`은 자동 검색에 사용할 기본 검색어 배열입니다.
 
@@ -79,7 +79,7 @@
 4. `data/target_venues.json`의 OpenAlex source ID를 사용해 Nature, Science, Additive Manufacturing 등 우선 게재지 안에서 별도 검색을 수행합니다.
 5. DOI가 있으면 DOI로, DOI가 없으면 normalized title로 중복 제거합니다.
 6. 새 논문이면 선택적으로 Semantic Scholar 보강을 수행합니다.
-7. 새 논문에 대해서만 한글 요약, 관련성 점수, 관련성 설명, 태그, 카테고리를 생성합니다.
+7. 새 논문에 대해서만 한글/영문 요약, 관련성 점수, 관련성 설명, 태그, 카테고리를 생성합니다.
 8. 저장 전 `_abstract` 같은 transient 필드를 제거합니다.
 9. 변경이 있을 때만 `data/papers.json`을 씁니다.
 
@@ -106,12 +106,12 @@
 
 새 논문이 없거나 API 일부가 일시 실패해도 전체 워크플로가 불필요하게 실패하지 않도록 fetch 오류는 개별 검색 단위에서 로그를 남기고 계속 진행합니다.
 
-`.github/workflows/refresh-openai-summaries.yml`은 정기 실행되지 않는 수동 workflow입니다. `OPENAI_API_KEY`가 설정된 경우에만 기존 논문을 OpenAI로 5문항 재요약합니다. 비용 폭주를 막기 위해 `max_summaries`, `refresh_mode`, `dry_run` 입력값을 받습니다. 전체 342편 재요약은 `max_summaries=400`, `refresh_mode=non_qa`, `dry_run=false`로 실행합니다.
+`.github/workflows/refresh-openai-summaries.yml`은 정기 실행되지 않는 수동 workflow입니다. `OPENAI_API_KEY`가 설정된 경우에만 기존 논문을 OpenAI로 5문항 한글/영문 재요약합니다. 비용 폭주를 막기 위해 `max_summaries`, `refresh_mode`, `dry_run` 입력값을 받습니다. 전체 342편 재요약 또는 영문 GPT 요약 채우기는 `max_summaries=400`, `refresh_mode=non_qa`, `dry_run=false`로 실행합니다.
 
 ## API key 및 환경변수
 
 - `CONTACT_EMAIL`: OpenAlex/Crossref polite request에 사용합니다.
-- `OPENAI_API_KEY`: 선택적 OpenAI 요약 생성에 사용합니다.
+- `OPENAI_API_KEY`: 선택적 OpenAI 한글/영문 요약 생성에 사용합니다.
 - `OPENAI_MODEL`: 선택적 모델명입니다. 기본값은 `gpt-4o-mini`입니다.
 - `SEMANTIC_SCHOLAR_API_KEY`: 선택적 Semantic Scholar 보강에 사용합니다.
 - `API_SLEEP_SECONDS`: API rate limit 배려를 위한 요청 간 대기 시간입니다. 기본값은 `0.2`초입니다.
@@ -126,7 +126,7 @@
 
 이 프로젝트는 공식 메타데이터 API만 사용합니다. 출판사 웹사이트를 직접 크롤링하지 않고 PDF를 다운로드하거나 저장하지 않습니다. API에서 받은 abstract는 한글 AI 요약 생성 입력으로만 사용하며, 웹사이트와 `data/papers.json`에는 원문 abstract를 표시하거나 보관하지 않습니다.
 
-이 정책을 코드 레벨에서 지키기 위해 `scripts/update_papers.py`는 저장 직전 `_abstract`로 시작하는 transient 필드를 제거합니다. 프론트엔드도 `ai_summary_ko`만 표시합니다.
+이 정책을 코드 레벨에서 지키기 위해 `scripts/update_papers.py`는 저장 직전 `_abstract`로 시작하는 transient 필드를 제거합니다. 프론트엔드는 원문 abstract를 읽지 않고 저장된 `ai_summary_ko` 또는 `ai_summary_en`만 표시합니다.
 ## 2026-06-12 수집량 정책 업데이트
 
 - `data/papers.json`의 전체 논문 수에는 상한을 두지 않습니다.

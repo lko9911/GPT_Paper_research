@@ -112,7 +112,9 @@ def _summarize_with_openai(record: dict[str, Any], abstract: str) -> dict[str, A
                         "3. Method - 어떤 방법이나 접근을 사용했는가? "
                         "4. Key Result - 가장 중요한 결과는 무엇인가? "
                         "5. Takeaway - 그래서 이 논문의 핵심 메시지는 무엇인가? "
-                        "Return strict JSON with ai_summary_ko, relevance_score, relevance_note_ko, tags, categories."
+                        "Also write ai_summary_en in English with the same five labels: "
+                        "1. Topic, 2. Problem, 3. Method, 4. Key Result, 5. Takeaway. "
+                        "Return strict JSON with ai_summary_ko, ai_summary_en, relevance_score, relevance_note_ko, tags, categories."
                     ),
                 },
                 {
@@ -449,7 +451,8 @@ def _sanitize_generated(payload: dict[str, Any]) -> dict[str, Any]:
     tags = [str(tag).strip() for tag in payload.get("tags", []) if str(tag).strip()]
     score = int(payload.get("relevance_score", 5))
     return {
-        "ai_summary_ko": _normalize_generated_summary(payload.get("ai_summary_ko")),
+        "ai_summary_ko": _normalize_generated_summary(payload.get("ai_summary_ko"), _ko_summary_labels()),
+        "ai_summary_en": _normalize_generated_summary(payload.get("ai_summary_en"), _en_summary_labels()),
         "relevance_score": max(1, min(10, score)),
         "relevance_note_ko": str(payload.get("relevance_note_ko", "")).strip(),
         "tags": _dedupe_tags(tags, categories)[:6] or ["적층제조", "문헌추적"],
@@ -457,14 +460,27 @@ def _sanitize_generated(payload: dict[str, Any]) -> dict[str, Any]:
     }
 
 
-def _normalize_generated_summary(value: Any) -> str:
-    labels = [
+def _ko_summary_labels() -> list[str]:
+    return [
         "Topic - 이 논문은 무엇을 다루는가?",
         "Problem - 어떤 문제나 한계를 해결하려는가?",
         "Method - 어떤 방법이나 접근을 사용했는가?",
         "Key Result - 가장 중요한 결과는 무엇인가?",
         "Takeaway - 그래서 이 논문의 핵심 메시지는 무엇인가?",
     ]
+
+
+def _en_summary_labels() -> list[str]:
+    return [
+        "Topic",
+        "Problem",
+        "Method",
+        "Key Result",
+        "Takeaway",
+    ]
+
+
+def _normalize_generated_summary(value: Any, labels: list[str]) -> str:
     if isinstance(value, dict):
         lines = []
         for index, label in enumerate(labels, start=1):
@@ -488,7 +504,7 @@ def _normalize_generated_summary(value: Any) -> str:
             try:
                 parsed = ast.literal_eval(text)
                 if isinstance(parsed, (dict, list)):
-                    return _normalize_generated_summary(parsed)
+                    return _normalize_generated_summary(parsed, labels)
             except (SyntaxError, ValueError):
                 pass
         return text

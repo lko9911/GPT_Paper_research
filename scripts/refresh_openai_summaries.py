@@ -20,7 +20,7 @@ ROOT = Path(__file__).resolve().parents[1]
 PAPERS_PATH = ROOT / "data" / "papers.json"
 SITE_META_PATH = ROOT / "data" / "site_meta.json"
 
-SUMMARY_KEYS = ("ai_summary_ko", "relevance_note_ko", "relevance_score", "tags", "categories")
+SUMMARY_KEYS = ("ai_summary_ko", "ai_summary_en", "relevance_note_ko", "relevance_score", "tags", "categories")
 
 
 def main() -> None:
@@ -88,7 +88,7 @@ def _should_refresh(paper: dict[str, Any], mode: str) -> bool:
         return True
     if mode == "missing":
         return not summary
-    return not _is_five_question_summary(summary)
+    return not _is_five_question_summary(summary) or not paper.get("ai_summary_en")
 
 
 def _is_five_question_summary(summary: str) -> bool:
