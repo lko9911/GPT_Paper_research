@@ -101,3 +101,9 @@
 - OpenAlex와 Crossref는 공식 API의 cursor/page 기능을 사용해 여러 페이지를 읽을 수 있습니다.
 - GitHub Actions의 1회 실행은 `OPENALEX_MAX_PAGES`, `CROSSREF_MAX_PAGES`, `API_SLEEP_SECONDS`로 조절합니다. 이 값은 전체 수집량 제한이 아니라 rate limit과 timeout을 피하기 위한 실행 단위 예산입니다.
 - 429 응답이 잦으면 `API_SLEEP_SECONDS`를 늘리거나 수동 실행 간격을 넓히는 것이 좋습니다.
+
+## 2026-06-12 갱신 시각 메타데이터
+
+- `data/site_meta.json`은 자동 업데이트 파이프라인의 마지막 실행 시각을 저장합니다.
+- `last_run_at_utc`는 UTC ISO timestamp이며, 프론트엔드는 이를 KST로 변환해 상단 통계의 `최신 업데이트`에 표시합니다.
+- 새 논문이 없어도 workflow가 실행되면 `data/site_meta.json`이 변경되므로, 사용자는 사이트에서 마지막 갱신 실행 시간을 확인할 수 있습니다.

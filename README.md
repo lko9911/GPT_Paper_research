@@ -139,3 +139,4 @@ Science, Nature, Nature Communications, Advanced Materials 같은 게재지도 O
 - OpenAlex와 Crossref의 공식 API 페이징을 사용해 한 페이지보다 넓게 수집합니다.
 - GitHub Actions는 매시간 안정적으로 끝나야 하므로 실행 1회당 `OPENALEX_MAX_PAGES`, `CROSSREF_MAX_PAGES`, `API_SLEEP_SECONDS`를 사용합니다. 이는 전체 논문 수 제한이 아니라 API rate limit과 Actions timeout을 피하기 위한 실행 예산입니다.
 - 더 깊은 일회성 수집이 필요하면 workflow 또는 로컬 환경에서 `OPENALEX_MAX_PAGES`와 `CROSSREF_MAX_PAGES`를 높여 수동 실행하면 됩니다.
+- `data/site_meta.json`에는 마지막 자동 갱신 실행 시각이 저장되며, 사이트 상단의 `최신 업데이트`에 KST 기준으로 표시됩니다.

@@ -66,3 +66,4 @@ GitHub Pages에서 동작 가능한 정적 논문 큐레이션 사이트와 GitH
 - GitHub Actions에는 실행 안정성을 위해 `OPENALEX_MAX_PAGES=2`, `CROSSREF_MAX_PAGES=1`, `API_SLEEP_SECONDS=1.0`을 설정했습니다. 이는 전체 저장 논문 수 제한이 아니라 실행 1회당 API 예산입니다.
 - 왼쪽 패널은 `생산/제조`, `3D 프린팅`, `로봇틱스(생산제조)`, `AI 생산제조`의 큰 분야와 서브 토픽을 함께 보여주도록 변경했습니다.
 - 알려진 이슈: 깊은 수집 중 OpenAlex 429 rate limit이 발생할 수 있습니다. 더 많이 수집하려면 sleep을 늘리거나 수동 실행을 나누어 진행하세요.
+- `data/site_meta.json`을 추가해 마지막 자동 갱신 실행 시각을 사이트 상단에 표시합니다.
