@@ -906,10 +906,14 @@ function formatSummarySections(paper) {
   if (state.language !== "en") {
     return sections;
   }
-  return sections.map((section, index) => ({
-    question: UI_TEXT.en.summaryQuestions[index] || section.question,
-    answer: section.answer,
-  }));
+  const storedEnglish = parseStoredSummarySections(paper.ai_summary_en || "");
+  if (storedEnglish.length) {
+    return storedEnglish.map((section, index) => ({
+      question: UI_TEXT.en.summaryQuestions[index] || section.question,
+      answer: section.answer,
+    }));
+  }
+  return sections.length ? englishSummarySections(paper) : [];
 }
 
 function parseStoredSummarySections(summary) {
@@ -934,6 +938,39 @@ function parseStoredSummarySections(summary) {
   });
 
   return sections.length >= 3 ? sections : [];
+}
+
+function englishSummarySections(paper) {
+  const labels = UI_TEXT.en.summaryQuestions;
+  const title = paper.title || "This paper";
+  const venue = paper.venue || "an unknown venue";
+  const year = paper.year || "undated";
+  const tags = representativeTags(paper).map((tag) => displayLabel(tag));
+  const tagPhrase = formatEnglishList(tags) || "manufacturing and design";
+  const score = paper.relevance_score ? `${paper.relevance_score}/10` : "pending";
+
+  return [
+    {
+      question: labels[0],
+      answer: `${title} is a ${year} paper from ${venue} about ${tagPhrase}.`,
+    },
+    {
+      question: labels[1],
+      answer: `It is tracked because it addresses a design or manufacturing limitation related to ${tagPhrase}.`,
+    },
+    {
+      question: labels[2],
+      answer: "The detailed method should be checked in the DOI source; this site does not reproduce publisher abstracts.",
+    },
+    {
+      question: labels[3],
+      answer: "The key result should be confirmed in the original paper, while this tracker records its topic-level relevance.",
+    },
+    {
+      question: labels[4],
+      answer: `The takeaway is that this work is useful comparison literature for ${tagPhrase}; current relevance score is ${score}.`,
+    },
+  ];
 }
 
 function formatRelevanceNote(paper) {
