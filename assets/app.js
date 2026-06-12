@@ -582,8 +582,13 @@ function sidebarBucketCounts(papers, subtopics) {
   counts.set(SIDEBAR_OTHER_TOPIC, 0);
 
   papers.forEach((paper) => {
-    const bucket = sidebarBucketForPaper(paper, subtopics);
-    counts.set(bucket, (counts.get(bucket) || 0) + 1);
+    const matchedSubtopics = subtopics.filter((subtopic) => paperHasRepresentativeTopic(paper, subtopic));
+    matchedSubtopics.forEach((subtopic) => {
+      counts.set(subtopic, (counts.get(subtopic) || 0) + 1);
+    });
+    if (!matchedSubtopics.length) {
+      counts.set(SIDEBAR_OTHER_TOPIC, (counts.get(SIDEBAR_OTHER_TOPIC) || 0) + 1);
+    }
   });
 
   return counts;
