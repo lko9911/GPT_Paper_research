@@ -46,7 +46,7 @@
 실행 순서:
 
 1. `data/papers.json`과 `data/queries.json`을 읽습니다.
-2. 각 검색어마다 OpenAlex와 Crossref를 조회합니다. 기본 시작 연도는 `SINCE_YEAR=2025`입니다.
+2. 각 검색어마다 OpenAlex와 Crossref를 조회합니다. 기본 시작 연도는 `SINCE_YEAR=2024`입니다.
 3. DOI가 있으면 DOI로, DOI가 없으면 normalized title로 중복 제거합니다.
 4. 새 논문이면 선택적으로 Semantic Scholar 보강을 수행합니다.
 5. 새 논문에 대해서만 한글 요약, 관련성 점수, 관련성 설명, 태그, 카테고리를 생성합니다.
@@ -82,7 +82,7 @@
 - `OPENAI_MODEL`: 선택적 모델명입니다. 기본값은 `gpt-4o-mini`입니다.
 - `SEMANTIC_SCHOLAR_API_KEY`: 선택적 Semantic Scholar 보강에 사용합니다.
 - `API_SLEEP_SECONDS`: API rate limit 배려를 위한 요청 간 대기 시간입니다. 기본값은 `0.2`초입니다.
-- `SINCE_YEAR`: 자동 조사 시작 연도입니다. 기본값은 `2025`입니다.
+- `SINCE_YEAR`: 자동 조사 시작 연도입니다. 기본값은 `2024`입니다.
 
 환경변수 값은 로그나 데이터 파일에 기록하지 않습니다.
 

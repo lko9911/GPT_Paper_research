@@ -29,7 +29,7 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
           SEMANTIC_SCHOLAR_API_KEY: ${{ secrets.SEMANTIC_SCHOLAR_API_KEY }}
-          SINCE_YEAR: "2025"
+          SINCE_YEAR: "2024"
         run: python scripts/update_papers.py
 
       - name: Commit changed data
