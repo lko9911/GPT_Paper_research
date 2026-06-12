@@ -882,7 +882,38 @@ function representativeTags(paper) {
     picked.push(canonical);
   });
 
-  return picked.slice(0, 3);
+  return collapseMaterialExtrusionTags(picked, paper).slice(0, 3);
+}
+
+function collapseMaterialExtrusionTags(tags, paper) {
+  const cluster = ["DM filament", "FGAM", "MMAM", "FDM/Material extrusion"];
+  const present = cluster.filter((tag) => tags.includes(tag));
+  if (!present.length) return tags;
+
+  const text = normalize(
+    [
+      paper.title,
+      paper.venue,
+      (paper.tags || []).join(" "),
+      (paper.categories || []).join(" "),
+      paper.ai_summary_ko,
+      paper.relevance_note_ko,
+    ].join(" ")
+  );
+
+  let selected = present[0];
+  if (hasAny(text, ["dm filament", "digital material filament", "digital material", "blended fdm"])) {
+    selected = "DM filament";
+  } else if (hasAny(text, ["functionally graded", "functional gradient", "graded material", "fgam", "gradient", "graded"])) {
+    selected = "FGAM";
+  } else if (hasAny(text, ["multi-material", "multi material", "multimaterial", "mmam"])) {
+    selected = "MMAM";
+  } else if (hasAny(text, ["fdm", "fused deposition", "material extrusion", "filament"])) {
+    selected = "FDM/Material extrusion";
+  }
+
+  if (!selected) return tags;
+  return [selected, ...tags.filter((tag) => !cluster.includes(tag))];
 }
 
 function canonicalTopicLabel(tag) {
