@@ -396,8 +396,18 @@ function updateStats() {
   els.total.textContent = state.papers.length.toLocaleString("ko-KR");
   els.categories.textContent = subtopics.size.toLocaleString("ko-KR");
   const lastRunAt = state.siteMeta && state.siteMeta.last_run_at_utc;
-  els.updated.textContent = formatRunTime(lastRunAt) || latestDate || "-";
+  renderUpdatedStat(lastRunAt, latestDate);
   els.week.textContent = weekCount.toLocaleString("ko-KR");
+}
+
+function renderUpdatedStat(lastRunAt, fallbackDate) {
+  const formatted = formatRunTime(lastRunAt);
+  els.updated.classList.toggle("stat-datetime", Boolean(formatted));
+  if (!formatted) {
+    els.updated.textContent = fallbackDate || "-";
+    return;
+  }
+  els.updated.innerHTML = `${escapeHtml(formatted.date)}<small>${escapeHtml(formatted.time)} KST</small>`;
 }
 
 function applyFilters() {
@@ -804,7 +814,10 @@ function formatRunTime(value) {
     hour12: false,
   }).formatToParts(date);
   const byType = Object.fromEntries(parts.map((part) => [part.type, part.value]));
-  return `${byType.year}-${byType.month}-${byType.day} ${byType.hour}:${byType.minute} KST`;
+  return {
+    date: `${byType.year}-${byType.month}-${byType.day}`,
+    time: `${byType.hour}:${byType.minute}`,
+  };
 }
 
 function flatten(items) {
