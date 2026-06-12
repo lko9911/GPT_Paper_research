@@ -270,16 +270,23 @@ function renderVenueBoard() {
     const matched = entries.find(([venue]) => matchesTargetVenue(venue, target));
     return matched || [target, 0];
   }).filter(([, count]) => count > 0);
+  const discoveredEntries = entries
+    .filter(([venue]) => !isPriorityVenue(venue) && shouldShowDiscoveredVenue(venue))
+    .slice(0, 8);
 
   const mainCards = [
     `<button class="venue-card is-all is-active" type="button" data-board-venue="">
       <strong>All venues</strong>
       <span>${state.papers.length} papers</span>
     </button>`,
-    ...priorityEntries.map(([venue, count]) => venueCard(venue, count, "priority")),
+    ...priorityEntries.map(([venue, count]) => venueCard(venue, count, "target")),
+    ...discoveredEntries.map(([venue, count]) => venueCard(venue, count, "related")),
   ].join("");
 
-  els.venueBoard.innerHTML = `<div class="venue-featured">${mainCards}</div>`;
+  els.venueBoard.innerHTML = `
+    <div class="venue-rule">표시 기준: 핵심 타깃 venue 또는 2편 이상 반복 등장한 관련 학술지</div>
+    <div class="venue-featured">${mainCards}</div>
+  `;
 
   els.venueBoard.querySelectorAll("[data-board-venue]").forEach((button) => {
     button.addEventListener("click", () => {
@@ -300,6 +307,44 @@ function renderVenueBoard() {
       scrollToPapers();
     });
   });
+}
+
+function shouldShowDiscoveredVenue(venue) {
+  const key = normalizeVenueKey(venue);
+  const count = state.papers.filter((paper) => normalizeVenueKey(paper.venue) === key).length;
+  if (count < 2) return false;
+  if (isNonJournalVenue(venue)) return false;
+  return hasAny(key, [
+    "manufacturing",
+    "materials",
+    "material",
+    "mechanical",
+    "engineering",
+    "polymer",
+    "polymers",
+    "machines",
+    "prototyping",
+    "robot",
+    "additive",
+    "applied sciences",
+    "composites",
+  ]);
+}
+
+function isNonJournalVenue(venue) {
+  const key = normalizeVenueKey(venue);
+  return hasAny(key, [
+    "unknown",
+    "arxiv",
+    "research square",
+    "chemrxiv",
+    "dissertation",
+    "vtechworks",
+    "osti",
+    "shareok",
+    "proceedings",
+    "repository",
+  ]);
 }
 
 function venueCard(venue, count, label = "") {

@@ -353,6 +353,14 @@ h1 {
   padding: 14px;
 }
 
+.venue-rule {
+  padding: 8px 10px;
+  border-radius: 7px;
+  background: #f6f8fb;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
 .venue-featured {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));

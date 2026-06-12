@@ -779,3 +779,31 @@
 ### 주의사항
 - JS 문법 검증을 통과했습니다.
 - 한글 문구는 UTF-8 기준으로 정상 포함되어 있음을 확인했습니다.
+## 2026-06-12 13:26
+
+### 변경 요약
+- 게재지 보드를 너무 줄였던 문제를 보완해 기준 기반 표시 방식으로 변경했습니다.
+- 핵심 타깃 venue와 데이터에서 2편 이상 반복 등장한 관련 학술지를 함께 표시하도록 했습니다.
+- preprint/repository/unknown 계열 venue는 보드에서는 제외하고, 전체 드롭다운에서만 선택 가능하게 유지했습니다.
+
+### 수정/생성한 파일
+- `index.html`: 게재지 표시 기준 설명을 추가했습니다.
+- `assets/app.js`: `shouldShowDiscoveredVenue()`와 `isNonJournalVenue()`를 추가해 venue 보드 표시 기준을 구현했습니다.
+- `assets/style.css`: venue 표시 기준 안내 문구 스타일을 추가했습니다.
+- `AGENT_LOG.md`: 이번 기준 변경을 기록했습니다.
+
+### 구현한 기능
+- 보드에 `All venues`, 핵심 타깃 venue, 관련성이 높은 반복 등장 학술지가 표시됩니다.
+- 현재 데이터 기준 보드에는 Additive Manufacturing, Nature Communications, Science와 Polymers, IJAMT, Machines, Rapid Prototyping Journal 등 관련 venue가 함께 표시됩니다.
+
+### 설계 결정
+- 기준은 `핵심 타깃 venue` 또는 `2편 이상 반복 등장 + 제조/소재/기계/로봇/프린팅 관련 venue명`으로 잡았습니다.
+- `Venue unknown`, `arXiv`, `Research Square`, `ChemRxiv`, repository, dissertation, proceedings 계열은 학술지 보드 노이즈를 줄이기 위해 제외했습니다.
+- 제외된 venue도 데이터에서 삭제하지 않고 드롭다운 필터로 접근 가능하게 유지했습니다.
+
+### 남은 작업
+- venue 품질 기준을 더 엄밀하게 하려면 ISSN 기반 source type 또는 OpenAlex source metadata를 저장하는 개선이 필요합니다.
+
+### 주의사항
+- JS 문법 검증을 통과했습니다.
+- 현재 기준은 데이터 기반 휴리스틱이며, 학술지 등급 평가를 의미하지 않습니다.
