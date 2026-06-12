@@ -189,7 +189,7 @@ function buildTopicNav() {
 function buildVenueNav() {
   TARGET_VENUES.forEach((venue) => {
     const count = state.papers.filter((paper) => matchesTargetVenue(normalizeVenue(paper.venue), venue)).length;
-    if (count < 2) return;
+    if (count === 0) return;
     const button = document.createElement("button");
     button.type = "button";
     button.className = "venue-pill";
@@ -270,8 +270,17 @@ function venueCountEntries() {
 
 function renderVenueBoard() {
   const entries = venueCountEntries();
-  const visibleEntries = entries.filter(([venue, count]) => count >= 2 && !isNonJournalVenue(venue));
-  const hiddenEntries = entries.filter(([venue, count]) => !visibleEntries.some(([visibleVenue]) => visibleVenue === venue));
+  const priorityEntries = TARGET_VENUES.map((target) => {
+    const matched = entries.find(([venue]) => matchesTargetVenue(venue, target));
+    return matched || [target, 0];
+  }).filter(([, count]) => count > 0);
+  const discoveredEntries = entries.filter(
+    ([venue, count]) => count >= 2 && !isPriorityVenue(venue) && !isNonJournalVenue(venue)
+  );
+  const visibleVenueKeys = new Set(
+    [...priorityEntries, ...discoveredEntries].map(([venue]) => normalizeVenueKey(venue))
+  );
+  const hiddenEntries = entries.filter(([venue]) => !visibleVenueKeys.has(normalizeVenueKey(venue)));
   const hiddenPaperCount = hiddenEntries.reduce((sum, [, count]) => sum + count, 0);
 
   const mainCards = [
@@ -279,12 +288,13 @@ function renderVenueBoard() {
       <strong>All venues</strong>
       <span>${state.papers.length} papers</span>
     </button>`,
-    ...visibleEntries.map(([venue, count]) => venueCard(venue, count, isPriorityVenue(venue) ? "target" : "")),
+    ...priorityEntries.map(([venue, count]) => venueCard(venue, count, "priority")),
+    ...discoveredEntries.map(([venue, count]) => venueCard(venue, count)),
     hiddenPaperCount ? otherVenueCard(hiddenPaperCount, hiddenEntries.length) : "",
   ].join("");
 
   els.venueBoard.innerHTML = `
-    <div class="venue-rule">표시 기준: 2편 이상 수집된 학술지는 개별 표시, 나머지는 그 외로 묶음</div>
+    <div class="venue-rule">표시 기준: 핵심 게재지와 2편 이상 학술지는 개별 표시, 나머지는 Others로 묶음</div>
     <div class="venue-featured">${mainCards}</div>
   `;
 
@@ -350,7 +360,7 @@ function venueCard(venue, count, label = "") {
 
 function otherVenueCard(paperCount, venueCount) {
   return `<button class="venue-card venue-card-muted" type="button" data-board-venue="" data-board-venue-group="other">
-    <strong>그 외</strong>
+    <strong>Others</strong>
     <span>${paperCount} papers · ${venueCount} venues</span>
     <em>2편 이하의 학술지</em>
   </button>`;
