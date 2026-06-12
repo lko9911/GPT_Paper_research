@@ -29,21 +29,6 @@ const FIELD_SUBTOPICS = {
 
 const SIDEBAR_OTHER_TOPIC = "__field_other__";
 
-const FEATURED_TOPICS = [
-  "Additive manufacturing",
-  "MMAM",
-  "FGAM",
-  "DM filament",
-  "FDM/Material extrusion",
-  "DLP",
-  "4D printing",
-  "Computational design",
-  "Material distribution",
-  "Toolpath strategy",
-  "Material switching",
-  "Machine learning",
-];
-
 const TARGET_VENUES = [
   "Nature",
   "Nature Communications",
@@ -291,7 +276,6 @@ const state = {
   papers: [],
   siteMeta: null,
   filtered: [],
-  activeTopic: "",
   activeTargetVenue: "",
   activeVenueGroup: "",
   activeSubtopic: "",
@@ -309,7 +293,6 @@ const els = {
   venue: document.querySelector("#venue-filter"),
   year: document.querySelector("#year-filter"),
   sort: document.querySelector("#sort-select"),
-  topicNav: document.querySelector(".topic-nav"),
   venueNav: document.querySelector(".venue-nav"),
   sideTopicNav: document.querySelector("#side-topic-nav"),
   venueBoard: document.querySelector("#venue-board"),
@@ -341,7 +324,6 @@ async function init() {
   }
 
   buildFilters();
-  buildTopicNav();
   buildVenueNav();
   buildSideNav();
   renderVenueBoard();
@@ -377,7 +359,6 @@ function setupPreferences() {
       localStorage.setItem("language", state.language);
       applyPreferences();
       buildFiltersReset();
-      buildTopicNavReset();
       buildVenueNavReset();
       buildSideNav();
       renderVenueBoard();
@@ -443,11 +424,6 @@ function buildFiltersReset() {
   buildFilters();
 }
 
-function buildTopicNavReset() {
-  els.topicNav.innerHTML = `<button type="button" class="topic-pill is-active" data-topic="">All</button>`;
-  buildTopicNav();
-}
-
 function buildVenueNavReset() {
   els.venueNav.innerHTML = `<button type="button" class="venue-pill is-active" data-target-venue="">${escapeHtml(t("allVenues"))}</button>`;
   buildVenueNav();
@@ -490,34 +466,6 @@ function buildFilters() {
   [...years]
     .sort((a, b) => Number(b) - Number(a))
     .forEach((year) => els.year.append(new Option(year, year)));
-}
-
-function buildTopicNav() {
-  const availableTags = new Set(flatten(state.papers.map((paper) => paper.tags || [])));
-  const availableCategories = new Set(flatten(state.papers.map((paper) => paper.categories || [])));
-  const availableSubtopics = new Set(flatten(state.papers.map((paper) => deriveSubtopics(paper))));
-  const topics = FEATURED_TOPICS.filter(
-    (topic) => availableTags.has(topic) || availableCategories.has(topic) || availableSubtopics.has(topic)
-  );
-
-  topics.forEach((topic) => {
-    const button = document.createElement("button");
-    button.type = "button";
-    button.className = "topic-pill";
-    button.dataset.topic = topic;
-    button.textContent = displayLabel(topic);
-    els.topicNav.append(button);
-  });
-
-  els.topicNav.addEventListener("click", (event) => {
-    const button = event.target.closest("[data-topic]");
-    if (!button) return;
-    state.activeTopic = button.dataset.topic;
-    els.topicNav.querySelectorAll(".topic-pill").forEach((pill) => {
-      pill.classList.toggle("is-active", pill.dataset.topic === state.activeTopic);
-    });
-    applyFilters();
-  });
 }
 
 function buildVenueNav() {
@@ -804,11 +752,6 @@ function applyFilters() {
     const matchesVenue = !venue || paperVenue === venue;
     const matchesTarget = !state.activeTargetVenue || matchesTargetVenue(paperVenue, state.activeTargetVenue);
     const matchesVenueGroup = !state.activeVenueGroup || isOtherVenuePaper(paper);
-    const matchesTopic =
-      !state.activeTopic ||
-      paperCanonicalTags.includes(canonicalTopicLabel(state.activeTopic)) ||
-      paperCategories.includes(state.activeTopic) ||
-      paperSubtopics.includes(state.activeTopic);
     const matchesSubtopic = !state.activeSubtopic || paperMatchesSidebarSubtopic(paper, paperField, state.activeSubtopic);
     const matchesYear = !year || String(paper.year || "") === year;
     return (
@@ -818,7 +761,6 @@ function applyFilters() {
       matchesVenue &&
       matchesTarget &&
       matchesVenueGroup &&
-      matchesTopic &&
       matchesSubtopic &&
       matchesYear
     );
