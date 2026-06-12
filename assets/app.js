@@ -23,7 +23,7 @@ const FIELD_SUBTOPICS = {
   "생산/제조": ["공정 최적화", "금속/합금 제조", "복합재/소재 제조"],
   "3D 프린팅": ["DLP", "Toolpath", "Material Switching"],
   "4D 프린팅": ["LCE", "메타물질", "Active materials"],
-  "로봇틱스(생산제조)": ["로봇 AM", "제조 자동화", "Path Planning"],
+  "로봇틱스(생산제조)": ["로봇 AM", "제조 자동화", "공정 최적화"],
   "AI 생산제조": ["Machine Learning", "Design Automation"],
 };
 
@@ -1117,9 +1117,6 @@ function deriveField(paper) {
   ) {
     return "4D 프린팅";
   }
-  if (titleText.includes("robot") || titleText.includes("로봇")) {
-    return "로봇틱스(생산제조)";
-  }
   if (
     titleText.includes("ai/ml") ||
     titleText.includes("machine learning") ||
@@ -1127,11 +1124,20 @@ function deriveField(paper) {
     titleText.includes("reinforcement learning") ||
     titleText.includes("artificial intelligence") ||
     titleText.includes("neural") ||
+    titleText.includes("design automation") ||
+    titleText.includes("computational design") ||
+    titleText.includes("generative design") ||
+    titleText.includes("topology optimization") ||
     titleText.includes("머신러닝") ||
     titleText.includes("인공지능") ||
+    titleText.includes("설계 자동화") ||
+    titleText.includes("계산설계") ||
     categoryText.includes("ai")
   ) {
     return "AI 생산제조";
+  }
+  if (titleText.includes("robot") || titleText.includes("로봇")) {
+    return "로봇틱스(생산제조)";
   }
   if (
     titleText.includes("3d printing") ||
@@ -1189,7 +1195,9 @@ function deriveSubtopics(paper) {
   );
   const subtopics = new Set();
 
-  if (hasAny(text, ["process", "parameter", "optimization", "공정", "최적화"])) subtopics.add("공정 최적화");
+  if (hasAny(text, ["process", "parameter", "optimization", "path planning", "trajectory", "공정", "최적화", "경로계획", "경로 계획"])) {
+    subtopics.add("공정 최적화");
+  }
   if (hasAny(text, ["metal", "metals", "alloy", "steel", "inconel", "ss316", "금속", "합금"])) subtopics.add("금속/합금 제조");
   if (hasAny(text, ["construction", "large-scale", "concrete", "building", "건설", "대형"])) subtopics.add("건설/대형 제조");
   if (hasAny(text, ["composite", "fiber", "polymer", "복합재", "섬유", "고분자"])) subtopics.add("복합재/소재 제조");

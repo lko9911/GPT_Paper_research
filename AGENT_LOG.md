@@ -1,5 +1,32 @@
 # AGENT_LOG
 
+## 2026-06-12 21:09
+
+### 변경 요약
+- 왼쪽 사이드바의 Robotics for Manufacturing 서브토픽에서 `Path Planning`을 제거하고 `Process Optimization`으로 대체했습니다.
+- `Design Automation` 신호가 로봇 키워드보다 먼저 `AI Manufacturing`으로 분류되도록 분야 판별 순서를 조정했습니다.
+- path planning/trajectory 관련 신호가 공정 최적화 계열로도 잡히도록 서브토픽 판별을 보강했습니다.
+
+### 수정/생성한 파일
+- `assets/app.js`: `FIELD_SUBTOPICS`, `deriveField()`, `deriveSubtopics()` 분류 규칙을 수정했습니다.
+- `index.html`: JS/CSS cache-busting version을 갱신했습니다.
+- `AGENT_LOG.md`: 이번 사이드바 분류 조정 작업을 기록했습니다.
+
+### 구현한 기능
+- Robotics for Manufacturing 아래에는 `Robotic AM`, `Manufacturing Automation`, `Process Optimization`이 표시됩니다.
+- `Design Automation`은 AI Manufacturing 아래로 더 우선적으로 분류됩니다.
+- 기존에 Robotics 아래 `Path Planning 0`처럼 보이던 빈 항목이 사라집니다.
+
+### 설계 결정
+- 단순 표시명만 바꾸지 않고 분류 우선순위도 함께 조정했습니다. 그래야 카운트가 0으로 남는 문제를 줄일 수 있습니다.
+- 로봇 논문 중 경로계획/trajectory 신호는 제조 공정 최적화 관점으로 묶어 표시합니다.
+
+### 남은 작업
+- 브라우저에서 실제 사이드바 표시를 최종 확인하면 좋습니다. 현재 환경에는 Node/브라우저 실행 도구가 없어 로컬 JS 런타임 검증은 제한적입니다.
+
+### 주의사항
+- 이번 변경은 UI 분류 규칙만 수정하며 데이터 수집, API key, raw abstract/PDF 정책에는 영향을 주지 않습니다.
+
 ## 2026-06-12 21:07
 
 ### 변경 요약
