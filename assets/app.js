@@ -14,13 +14,15 @@ const CATEGORY_ORDER = [
 const FIELD_ORDER = [
   "생산/제조",
   "3D 프린팅",
+  "4D 프린팅",
   "로봇틱스(생산제조)",
   "AI 생산제조",
 ];
 
 const FIELD_SUBTOPICS = {
   "생산/제조": ["공정 최적화", "금속/합금 제조", "건설/대형 제조", "복합재/소재 제조"],
-  "3D 프린팅": ["MMAM", "FGAM", "DM filament", "FDM/Material extrusion", "툴패스", "퍼지/재료전환"],
+  "3D 프린팅": ["MMAM", "FGAM", "DM filament", "FDM/Material extrusion", "DLP", "툴패스", "퍼지/재료전환"],
+  "4D 프린팅": ["4D printing", "Active materials", "Shape morphing", "Stimuli-responsive"],
   "로봇틱스(생산제조)": ["로봇 AM", "제조 자동화", "경로계획"],
   "AI 생산제조": ["Machine Learning", "Deep Learning", "Reinforcement Learning", "AI 공정제어", "설계 자동화"],
 };
@@ -29,6 +31,8 @@ const FEATURED_TOPICS = [
   "MMAM",
   "FGAM",
   "DM filament",
+  "DLP",
+  "4D printing",
   "계산설계",
   "재료분포",
   "툴패스",
@@ -596,6 +600,15 @@ function deriveField(paper) {
   const categoryText = normalize((paper.categories || []).join(" "));
   const text = `${titleText} ${categoryText}`;
 
+  if (
+    titleText.includes("4d printing") ||
+    titleText.includes("4d printed") ||
+    titleText.includes("4d-printed") ||
+    titleText.includes("4d print") ||
+    titleText.includes("4d 프린팅")
+  ) {
+    return "4D 프린팅";
+  }
   if (titleText.includes("robot") || titleText.includes("로봇")) {
     return "로봇틱스(생산제조)";
   }
@@ -624,6 +637,12 @@ function deriveField(paper) {
     titleText.includes("multimaterial") ||
     titleText.includes("toolpath") ||
     titleText.includes("material extrusion") ||
+    titleText.includes("digital light processing") ||
+    titleText.includes("dlp") ||
+    titleText.includes("vat photopolymerization") ||
+    titleText.includes("vat photopolymerisation") ||
+    titleText.includes("stereolithography") ||
+    titleText.includes("sla") ||
     titleText.includes("additive manufacturing") ||
     titleText.includes("다중재료") ||
     titleText.includes("기능성 구배") ||
@@ -671,8 +690,14 @@ function deriveSubtopics(paper) {
   if (hasAny(text, ["functionally graded", "fgam", "graded", "gradient", "기능성 구배", "구배"])) subtopics.add("FGAM");
   if (hasAny(text, ["dm filament", "digital material", "blended fdm", "디지털 재료"])) subtopics.add("DM filament");
   if (hasAny(text, ["fdm", "fused deposition", "material extrusion", "filament", "압출"])) subtopics.add("FDM/Material extrusion");
+  if (hasAny(text, ["dlp", "digital light processing", "vat photopolymerization", "vat photopolymerisation", "stereolithography", "sla"])) subtopics.add("DLP");
   if (hasAny(text, ["toolpath", "path planning", "graph search", "trajectory", "툴패스", "경로계획", "경로 계획"])) subtopics.add("툴패스");
   if (hasAny(text, ["purge", "switching", "transition", "waste", "퍼지", "재료 전환", "전환"])) subtopics.add("퍼지/재료전환");
+
+  if (hasAny(text, ["4d printing", "4d printed", "4d-printed", "4d print", "4d 프린팅"])) subtopics.add("4D printing");
+  if (hasAny(text, ["active material", "active materials", "actuator", "actuation", "액추에이터", "능동 재료"])) subtopics.add("Active materials");
+  if (hasAny(text, ["shape morph", "morphing", "shape change", "shape-changing", "형상 변화", "변형"])) subtopics.add("Shape morphing");
+  if (hasAny(text, ["stimuli", "stimulus", "responsive", "temperature-responsive", "자극 반응", "반응형"])) subtopics.add("Stimuli-responsive");
 
   if (hasAny(text, ["robot", "robotic", "로봇"])) subtopics.add("로봇 AM");
   if (hasAny(text, ["automation", "automated", "자동화"])) subtopics.add("제조 자동화");

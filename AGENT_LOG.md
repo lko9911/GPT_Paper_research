@@ -861,3 +861,29 @@
 ### 주의사항
 - 현재 데이터 기준 Others에는 63개 venue, 76편 논문이 묶입니다.
 - JS 문법 검증을 통과했습니다.
+## 2026-06-12 13:37
+
+### 변경 요약
+- `3D 프린팅` 분야의 서브토픽에 `DLP`를 추가했습니다.
+- 큰 분야에 `4D 프린팅`을 새로 추가했습니다.
+- 4D/DLP 관련 키워드 기반 분류 규칙을 추가했습니다.
+
+### 수정/생성한 파일
+- `assets/app.js`: `FIELD_ORDER`, `FIELD_SUBTOPICS`, featured topics, `deriveField()`, `deriveSubtopics()`를 수정했습니다.
+- `AGENT_LOG.md`: 이번 분류 체계 변경을 기록했습니다.
+
+### 구현한 기능
+- `4D printing`, `4D-printed`, `4D print` 계열 논문은 큰 분야 `4D 프린팅`으로 분류됩니다.
+- `DLP`, `digital light processing`, `vat photopolymerization`, `stereolithography`, `SLA` 계열 논문은 `DLP` 서브토픽으로 표시됩니다.
+- `4D 프린팅`에는 `4D printing`, `Active materials`, `Shape morphing`, `Stimuli-responsive` 서브토픽을 추가했습니다.
+
+### 설계 결정
+- 4D 관련 논문은 AI/3D/로봇 키워드보다 먼저 판별해 별도 큰 분야로 빠지게 했습니다.
+- DLP는 독립 큰 분야가 아니라 3D 프린팅 내부 공정/방식 서브토픽으로 배치했습니다.
+
+### 남은 작업
+- DLP 범위를 더 넓히려면 `projection micro-stereolithography`, `two-photon polymerization` 같은 광중합 세부 키워드를 추가할 수 있습니다.
+
+### 주의사항
+- 현재 데이터 기준 4D 관련 논문은 3편, DLP/vat photopolymerization 관련 논문은 2편이 탐지됩니다.
+- JS 문법 검증을 통과했습니다.
