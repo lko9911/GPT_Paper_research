@@ -79,8 +79,6 @@ const UI_TEXT = {
     relevance: "관련성 점수순",
     title: "제목순",
     venuesTitle: "주요 게재지",
-    venuesDescription: "핵심 게재지와 2편 이상 수집된 학술지는 개별 표시하고, 나머지는 Others로 묶습니다.",
-    venueRule: "표시 기준: 핵심 게재지와 2편 이상 학술지는 개별 표시, 나머지는 Others로 묶음",
     allVenues: "All venues",
     papersByField: "Papers by Field",
     curatedPapers: "Curated Papers",
@@ -122,8 +120,6 @@ const UI_TEXT = {
     relevance: "Relevance",
     title: "Title",
     venuesTitle: "Key Venues",
-    venuesDescription: "Core venues and journals with at least two collected papers are shown individually; the rest are grouped as Others.",
-    venueRule: "Display rule: core venues and 2+ paper journals are shown individually; all others are grouped.",
     allVenues: "All venues",
     papersByField: "Papers by Field",
     curatedPapers: "Curated Papers",
@@ -342,7 +338,6 @@ function applyStaticLanguage() {
   setText("#sort-select option[value='relevance']", t("relevance"));
   setText("#sort-select option[value='title']", t("title"));
   setText(".venue-section-head h2", t("venuesTitle"));
-  setText(".venue-section-head p:last-child", t("venuesDescription"));
   setText(".results-head .section-kicker", t("papersByField"));
   setText(".results-head h2", t("curatedPapers"));
   setText("#empty-state strong", t("emptyTitle"));
@@ -569,7 +564,6 @@ function renderVenueBoard() {
   ].join("");
 
   els.venueBoard.innerHTML = `
-    <div class="venue-rule">${escapeHtml(t("venueRule"))}</div>
     <div class="venue-featured">${mainCards}</div>
   `;
 
