@@ -303,6 +303,7 @@ function renderVenueBoard() {
 }
 
 function updateStats() {
+  const fields = new Set(state.papers.map((paper) => deriveField(paper)));
   const subtopics = new Set(flatten(state.papers.map((paper) => deriveSubtopics(paper))));
   const updatedDates = state.papers
     .map((paper) => paper.last_updated || paper.first_added)
@@ -317,7 +318,7 @@ function updateStats() {
   }).length;
 
   els.total.textContent = state.papers.length.toLocaleString("ko-KR");
-  els.categories.textContent = subtopics.size.toLocaleString("ko-KR");
+  els.categories.textContent = `${fields.size.toLocaleString("ko-KR")} / ${subtopics.size.toLocaleString("ko-KR")}`;
   els.updated.textContent = latestDate || "-";
   els.week.textContent = weekCount.toLocaleString("ko-KR");
 }
