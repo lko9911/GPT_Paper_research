@@ -1,5 +1,34 @@
 # AGENT_LOG
 
+## 2026-06-12 22:50
+
+### 변경 요약
+- `FDM/Material extrusion` 태그가 UI에서 `FDM`으로 표시되도록 간결화했습니다.
+- 상단 대표 태그 목록에 FDM을 추가했습니다.
+- `Additive manufacturing` 태그만 있던 논문 중 FDM/material extrusion/filament 신호가 있는 항목에는 `FDM/Material extrusion` 태그를 추가했습니다.
+
+### 수정/생성한 파일
+- `assets/app.js`: `FEATURED_TOPICS`에 `FDM/Material extrusion`을 추가하고, 한국어/영어 표시 라벨을 `FDM`으로 정리했습니다.
+- `data/papers.json`: FDM 신호가 있는 기존 논문 4편에 FDM 태그를 추가했습니다.
+- `scripts/summarize.py`: OpenAI/자동 태그 결과에서 `FDM / Material Extrusion` 표기도 canonical `FDM/Material extrusion`으로 정규화되도록 alias를 추가했습니다.
+- `index.html`: JS/CSS cache-busting version을 갱신했습니다.
+- `AGENT_LOG.md`: 이번 FDM/FGAM 태그 표시 보강 작업을 기록했습니다.
+
+### 구현한 기능
+- 카드와 필터에서 FDM이 짧고 명확한 태그로 보입니다.
+- `Functionally Graded AM`은 기존 `FGAM` canonical 태그의 영어 표시로 유지됩니다.
+- Additive Manufacturing 계열 중 FDM 신호가 있는 논문은 더 구체적으로 FDM 태그를 함께 가집니다.
+
+### 설계 결정
+- 저장값은 기존 canonical `FDM/Material extrusion`을 유지하고, 화면 표시만 `FDM`으로 줄였습니다.
+- FGAM은 이미 `Functionally Graded AM`으로 표시되고 있어 저장값은 유지했습니다.
+
+### 남은 작업
+- 없음.
+
+### 주의사항
+- 이번 변경은 태그 표시/정규화만 수정하며 raw abstract/PDF 저장 정책에는 영향을 주지 않습니다.
+
 ## 2026-06-12 22:45
 
 ### 변경 요약
