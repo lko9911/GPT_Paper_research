@@ -1187,6 +1187,9 @@ function formatPublicationLabel(paper) {
 function formatAuthors(authors) {
   if (!authors.length) return "";
   if (authors.length <= 3) return authors.join(", ");
+  if (state.language === "en") {
+    return `${authors.slice(0, 3).join(", ")} et al.`;
+  }
   return `${authors.slice(0, 3).join(", ")} 외 ${authors.length - 3}명`;
 }
 
