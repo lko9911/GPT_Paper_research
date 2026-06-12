@@ -53,6 +53,8 @@ const UI_TEXT = {
       "본 사이트의 요약은 공개된 논문 메타데이터 및 초록을 바탕으로 AI가 새로 작성한 한글 요약입니다. 원문 및 정확한 내용은 DOI 링크를 통해 확인하세요.",
     sideTitle: "분야 및 서브 토픽",
     totalPapers: "논문수",
+    venueCount: "게재지",
+    yearRange: "조사연도",
     currentUpdate: "현재 / 갱신",
     subtopicCount: "수집 후보",
     latestUpdate: "마지막 수집",
@@ -103,6 +105,8 @@ const UI_TEXT = {
       "Summaries on this site are newly written AI summaries based on public paper metadata and abstracts. Check the DOI link for the original and authoritative content.",
     sideTitle: "Fields and Subtopics",
     totalPapers: "Papers",
+    venueCount: "Venues",
+    yearRange: "Years",
     currentUpdate: "Now / Updated",
     subtopicCount: "Collected Candidates",
     latestUpdate: "Last Collection",
@@ -299,6 +303,8 @@ const els = {
   sideTopicNav: document.querySelector("#side-topic-nav"),
   venueBoard: document.querySelector("#venue-board"),
   total: document.querySelector("#stat-total"),
+  venues: document.querySelector("#stat-venues"),
+  years: document.querySelector("#stat-years"),
   updated: document.querySelector("#stat-updated"),
   opsNote: document.querySelector("#ops-note"),
   themeToggle: document.querySelector("#theme-toggle"),
@@ -390,7 +396,9 @@ function applyStaticLanguage() {
   setText(".notice-soft", t("noticeSoft"));
   setText(".sidebar strong", t("sideTitle"));
   setText(".stats article:nth-child(1) strong", t("totalPapers"));
-  setText(".stats article:nth-child(2) strong", t("currentUpdate"));
+  setText(".stats article:nth-child(2) strong", t("venueCount"));
+  setText(".stats article:nth-child(3) strong", t("yearRange"));
+  setText(".stats article:nth-child(4) strong", t("currentUpdate"));
   setText(".controls label:nth-child(1) span", t("search"));
   setText(".controls label:nth-child(2) span", t("field"));
   setText(".controls label:nth-child(3) span", t("tagSubtopic"));
@@ -678,6 +686,13 @@ function updateStats() {
   if (els.total) {
     els.total.textContent = state.papers.length.toLocaleString(state.language === "ko" ? "ko-KR" : "en-US");
   }
+  if (els.venues) {
+    const venues = new Set(state.papers.map((paper) => normalizeVenue(paper.venue)).filter(Boolean));
+    els.venues.textContent = venues.size.toLocaleString(state.language === "ko" ? "ko-KR" : "en-US");
+  }
+  if (els.years) {
+    els.years.textContent = formatYearRange(state.papers);
+  }
   renderUpdatedStat(lastRunAt);
   renderOpsNote(rawCount, archivedCount, lastRunAt);
 }
@@ -709,6 +724,14 @@ function renderUpdatedStat(lastRunAt) {
   }
   const updatedLabel = state.language === "ko" ? "수집" : "updated";
   els.updated.innerHTML = `${escapeHtml(now.date)}<small>${escapeHtml(now.time)} KST · ${escapeHtml(updatedLabel)} ${escapeHtml(lastRun.time)} KST</small>`;
+}
+
+function formatYearRange(papers) {
+  const years = papers.map((paper) => Number(paper.year)).filter((year) => Number.isInteger(year) && year > 0);
+  if (!years.length) return "-";
+  const minYear = Math.min(...years);
+  const maxYear = Math.max(...years);
+  return minYear === maxYear ? String(maxYear) : `${minYear}-${maxYear}`;
 }
 
 function applyFilters() {
