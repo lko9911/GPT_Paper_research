@@ -19,7 +19,7 @@ from summarize import summarize_record
 ROOT = Path(__file__).resolve().parents[1]
 PAPERS_PATH = ROOT / "data" / "papers.json"
 QUERIES_PATH = ROOT / "data" / "queries.json"
-DEFAULT_SINCE_YEAR = 2025
+DEFAULT_SINCE_YEAR = 2024
 
 
 def main() -> None:

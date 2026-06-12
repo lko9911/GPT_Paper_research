@@ -16,7 +16,7 @@ GitHub Pages에서 동작 가능한 정적 논문 큐레이션 사이트와 GitH
 - DOI 열기, Source 열기, citation 복사 버튼
 - OpenAlex 검색 스크립트
 - Crossref 검색 스크립트
-- 2025년 이후 논문만 자동 수집하는 기본 조사 범위
+- 2024년 이후 논문만 자동 수집하는 기본 조사 범위
 - DOI 우선 중복 제거 및 DOI 없는 경우 normalized title 중복 제거
 - 새 논문만 요약 생성
 - OpenAI API 선택적 요약 생성
