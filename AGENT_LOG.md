@@ -1,5 +1,40 @@
 # AGENT_LOG
 
+## 2026-06-12 23:15
+
+### 변경 요약
+- 왼쪽 분야 패널에서 `Robotics for Manufacturing` 같은 긴 라벨이 줄바꿈되며 숫자와 붙어 보이는 문제를 개선했습니다.
+- 로봇틱스 분야에 `로봇 자율 실험` / `Autonomous Experimentation` 서브 토픽을 추가했습니다.
+- `제조 자동화`가 0으로 보이던 원인을 검증하고, 자동화 관련 키워드 감지 범위를 넓혔습니다.
+
+### 수정/생성한 파일
+- `assets/style.css`: 왼쪽 패널 폭, 라벨 줄바꿈 방지, 라벨-숫자 간격을 조정했습니다.
+- `assets/app.js`: 로봇 자율 실험 토픽과 영문/한글 라벨을 추가하고, 제조 자동화 분류 키워드를 확장했습니다.
+- `data/queries.json`: 로봇 AM, 제조 자동화, closed-loop manufacturing, self-driving lab 계열 검색어를 추가했습니다.
+- `scripts/summarize.py`: 새로 수집되는 논문 요약/태그 생성에서도 로봇 자율 실험과 제조 자동화 표현을 인식하도록 태그 맵을 보강했습니다.
+- `index.html`: GitHub Pages 캐시 갱신을 위해 CSS/JS 버전을 업데이트했습니다.
+- `PROJECT_STATUS.md`: 현재 342편 데이터 상태와 로봇틱스/제조 자동화 보강 내용을 최신 상태로 기록했습니다.
+- `AGENT_LOG.md`: 이번 UI 및 분류 검증 작업을 기록했습니다.
+
+### 구현한 기능
+- 왼쪽 사이드바의 메인 분야 라벨은 한 줄로 표시되고, 숫자 배지는 더 안정적으로 떨어져 보입니다.
+- `self-driving lab`, `autonomous experimentation`, `closed-loop experiment`, `robotic experiment` 계열 표현은 `로봇 자율 실험`으로 분류됩니다.
+- `automation`, `automated`, `autonomous`, `closed-loop`, `monitoring`, `in-situ` 계열 표현은 `제조 자동화` 후보로 잡히도록 했습니다.
+- 이후 자동 수집은 로봇 AM 및 제조 자동화 관련 검색어도 함께 조회합니다.
+
+### 설계 결정
+- `로봇 자율 실험`은 현재 수집 데이터에서 엄격한 키워드 기준으로는 0편이지만, 사용자가 원하는 연구 범위에 맞춰 taxonomy에 먼저 포함했습니다.
+- `제조 자동화`는 논문 제목/요약/태그에서 쓰이는 표현이 다양하므로 좁은 `automation` 키워드만 쓰지 않고 관련 표현을 함께 감지합니다.
+- PDF 저장, publisher crawling, raw abstract 표시 정책은 변경하지 않았습니다.
+
+### 남은 작업
+- 다음 자동 수집 후 로봇 자율 실험 관련 논문이 새로 들어오는지 확인하면 좋습니다.
+- 수집량이 과도하게 늘어나면 `data/queries.json`의 로봇/자동화 검색어를 더 세분화할 수 있습니다.
+
+### 주의사항
+- 현재 데이터 검증 기준으로 로봇 관련 논문은 32편, 자동화 확장 키워드 후보는 8편, 엄격한 로봇 자율 실험 후보는 0편입니다.
+- UI 변경은 정적 프론트엔드만 바꾸며 API key, secret, token은 사용하거나 기록하지 않았습니다.
+
 ## 2026-06-12 23:08
 
 ### 변경 요약
