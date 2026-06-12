@@ -160,6 +160,8 @@ function buildVenueNav() {
     button.className = "venue-pill";
     button.dataset.targetVenue = venue;
     button.textContent = `${shortVenue(venue)} ${count}`;
+    button.disabled = count === 0;
+    button.title = count === 0 ? "아직 수집된 논문이 없습니다." : `${venue} 논문만 보기`;
     els.venueNav.append(button);
   });
 
@@ -181,18 +183,21 @@ function buildSideNav() {
   const categories = CATEGORY_ORDER.filter((category) =>
     state.papers.some((paper) => (paper.categories || []).includes(category))
   );
+  const venueCounts = venueCountEntries();
   els.sideTopicNav.innerHTML = categories
     .map((category) => `<a href="#${escapeAttribute(sectionId(category))}">${escapeHtml(category)}</a>`)
     .join("");
-  els.sideVenueNav.innerHTML = TARGET_VENUES.map((venue) => {
-    const count = state.papers.filter((paper) => matchesTargetVenue(normalizeVenue(paper.venue), venue)).length;
-    return `<button type="button" data-side-venue="${escapeAttribute(venue)}">${escapeHtml(shortVenue(venue))} <span>${count}</span></button>`;
-  }).join("");
+  els.sideVenueNav.innerHTML = [
+    '<button type="button" data-side-venue="">All venues <span>' + state.papers.length + "</span></button>",
+    ...venueCounts.map(([venue, count]) => {
+      return `<button type="button" data-side-venue="${escapeAttribute(venue)}">${escapeHtml(shortVenue(venue))} <span>${count}</span></button>`;
+    }),
+  ].join("");
 
   els.sideVenueNav.querySelectorAll("[data-side-venue]").forEach((button) => {
     button.addEventListener("click", () => {
       state.activeTargetVenue = button.dataset.sideVenue;
-      els.venue.value = "";
+      els.venue.value = state.activeTargetVenue && !isPriorityVenue(state.activeTargetVenue) ? state.activeTargetVenue : "";
       els.venueNav.querySelectorAll(".venue-pill").forEach((pill) => {
         pill.classList.toggle("is-active", pill.dataset.targetVenue === state.activeTargetVenue);
       });
@@ -203,6 +208,15 @@ function buildSideNav() {
       }
     });
   });
+}
+
+function venueCountEntries() {
+  const counts = new Map();
+  state.papers.forEach((paper) => {
+    const venue = normalizeVenue(paper.venue);
+    counts.set(venue, (counts.get(venue) || 0) + 1);
+  });
+  return [...counts.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "ko"));
 }
 
 function buildVenueMatrix() {
@@ -510,6 +524,10 @@ function normalizeVenueKey(venue) {
 
 function matchesTargetVenue(venue, target) {
   return normalizeVenueKey(venue) === normalizeVenueKey(target);
+}
+
+function isPriorityVenue(venue) {
+  return TARGET_VENUES.some((target) => matchesTargetVenue(venue, target));
 }
 
 function venueBucket(venue) {
