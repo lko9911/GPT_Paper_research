@@ -55,6 +55,8 @@ const els = {
   sort: document.querySelector("#sort-select"),
   topicNav: document.querySelector(".topic-nav"),
   venueNav: document.querySelector(".venue-nav"),
+  sideTopicNav: document.querySelector("#side-topic-nav"),
+  sideVenueNav: document.querySelector("#side-venue-nav"),
   matrix: document.querySelector("#venue-matrix"),
   matrixClear: document.querySelector("#matrix-clear"),
   total: document.querySelector("#stat-total"),
@@ -76,6 +78,7 @@ async function init() {
   buildFilters();
   buildTopicNav();
   buildVenueNav();
+  buildSideNav();
   buildVenueMatrix();
   updateStats();
   applyFilters();
@@ -171,6 +174,31 @@ function buildVenueNav() {
       pill.classList.toggle("is-active", pill.dataset.targetVenue === state.activeTargetVenue);
     });
     applyFilters();
+  });
+}
+
+function buildSideNav() {
+  const categories = CATEGORY_ORDER.filter((category) =>
+    state.papers.some((paper) => (paper.categories || []).includes(category))
+  );
+  els.sideTopicNav.innerHTML = categories
+    .map((category) => `<a href="#${escapeAttribute(sectionId(category))}">${escapeHtml(category)}</a>`)
+    .join("");
+  els.sideVenueNav.innerHTML = TARGET_VENUES.map((venue) => {
+    const count = state.papers.filter((paper) => matchesTargetVenue(normalizeVenue(paper.venue), venue)).length;
+    return `<button type="button" data-side-venue="${escapeAttribute(venue)}">${escapeHtml(shortVenue(venue))} <span>${count}</span></button>`;
+  }).join("");
+
+  els.sideVenueNav.querySelectorAll("[data-side-venue]").forEach((button) => {
+    button.addEventListener("click", () => {
+      state.activeTargetVenue = button.dataset.sideVenue;
+      els.venue.value = "";
+      els.venueNav.querySelectorAll(".venue-pill").forEach((pill) => {
+        pill.classList.toggle("is-active", pill.dataset.targetVenue === state.activeTargetVenue);
+      });
+      applyFilters();
+      document.querySelector("#paper-list")?.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
   });
 }
 
@@ -359,6 +387,7 @@ function groupByPrimaryCategory(papers) {
 function renderGroup(category, papers) {
   const section = document.createElement("section");
   section.className = "paper-group";
+  section.id = sectionId(category);
   section.innerHTML = `
     <div class="group-heading">
       <h3>${escapeHtml(category)}</h3>
@@ -371,32 +400,35 @@ function renderGroup(category, papers) {
 
 function renderPaperRow(paper) {
   const article = document.createElement("article");
-  article.className = "paper-row";
+  article.className = "paper-card";
 
   const doiUrl = paper.url || (paper.doi ? `https://doi.org/${paper.doi}` : "");
   const sourceText = (paper.source || []).join(", ") || "Metadata API";
   const authors = formatAuthors(paper.authors || []);
   const categoryBadges = (paper.categories || []).map((category) => badge(category, "category")).join("");
   const tagBadges = (paper.tags || []).map((tag) => tagButton(tag)).join("");
+  const primaryCategory = (paper.categories || [])[0] || "기타";
+  const initials = previewInitials(primaryCategory);
 
   article.innerHTML = `
-    <div class="paper-main">
+    <div class="preview-tile" data-category="${escapeAttribute(primaryCategory)}">
+      <span>${escapeHtml(initials)}</span>
+      <small>${escapeHtml(String(paper.year || "Year"))}</small>
+      <strong>${escapeHtml(String(paper.relevance_score || "-"))}/10</strong>
+    </div>
+    <div class="card-content">
       <h4 class="paper-title">${escapeHtml(paper.title || "Untitled")}</h4>
       <p class="meta">${escapeHtml(authors)}${authors ? " · " : ""}${escapeHtml(String(paper.year || "연도 미상"))} · ${escapeHtml(paper.venue || "Venue unknown")} · ${escapeHtml(sourceText)}</p>
       <p class="summary">${escapeHtml(paper.ai_summary_ko || "요약이 아직 생성되지 않았습니다.")}</p>
       <p class="relevance-note">${escapeHtml(paper.relevance_note_ko || "")}</p>
       <div class="tag-line">${categoryBadges}${tagBadges}</div>
-    </div>
-    <aside class="paper-side">
-      <span class="score-badge">${escapeHtml(String(paper.relevance_score || "-"))}<small>/10</small></span>
-      <span class="year-badge">${escapeHtml(String(paper.year || "-"))}</span>
-      <div class="link-stack">
+      <div class="card-links">
         ${doiUrl ? `<a class="link-pill primary" href="${escapeAttribute(doiUrl)}" target="_blank" rel="noopener noreferrer">Paper</a>` : ""}
         ${doiUrl ? `<a class="link-pill" href="${escapeAttribute(doiUrl)}" target="_blank" rel="noopener noreferrer">DOI</a>` : ""}
         <button class="link-pill" type="button" data-citation>Copy Cite</button>
       </div>
       <p class="policy-mini">No abstract/PDF hosted · updated ${escapeHtml(paper.last_updated || "-")}</p>
-    </aside>
+    </div>
   `;
 
   article.querySelector("[data-citation]").addEventListener("click", async (event) => {
@@ -443,6 +475,26 @@ function formatAuthors(authors) {
 function categoryIndex(category) {
   const index = CATEGORY_ORDER.indexOf(category);
   return index === -1 ? CATEGORY_ORDER.length : index;
+}
+
+function sectionId(value) {
+  return `section-${normalize(value).replace(/[^a-z0-9가-힣]+/g, "-").replace(/^-|-$/g, "") || "unknown"}`;
+}
+
+function previewInitials(category) {
+  const map = {
+    "리뷰 및 서베이": "RV",
+    "다중재료 적층제조": "MM",
+    "기능성 구배 적층제조": "FG",
+    "Blended FDM / Digital Material Filament": "DM",
+    "계산설계": "CD",
+    "재료분포 최적화": "MD",
+    "툴패스 계획": "TP",
+    "재료 전환 / 퍼지 감소": "PG",
+    "그래프 탐색 / 경로 계획 알고리즘": "GP",
+    "적층제조를 위한 AI 및 머신러닝": "AI",
+  };
+  return map[category] || "AM";
 }
 
 function normalizeVenue(venue) {
