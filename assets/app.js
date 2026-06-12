@@ -917,10 +917,12 @@ function parseKoreanSummarySections(summary) {
   const sections = [];
 
   labels.forEach((label, index) => {
-    const numberPattern = `${index + 1}.`;
-    const line = lines.find((item) => item.startsWith(numberPattern) && item.includes(label));
+    const line = lines.find((item) => item.startsWith(`${index + 1}.`));
     if (!line) return;
-    const answer = line.replace(numberPattern, "").replace(label, "").replace(/^\s*\?\s*/, "").trim();
+    const answer = line
+      .replace(/^\d+\.\s*/, "")
+      .replace(/^.*?\?\s*/, "")
+      .trim();
     if (answer) {
       sections.push({ question: label, answer });
     }
