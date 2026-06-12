@@ -22,10 +22,22 @@ const FEATURED_TOPICS = [
   "AI/ML",
 ];
 
+const TARGET_VENUES = [
+  "Nature",
+  "Nature Communications",
+  "Nature Materials",
+  "Nature Reviews Materials",
+  "Science",
+  "Science Advances",
+  "Science Robotics",
+  "Additive Manufacturing",
+];
+
 const state = {
   papers: [],
   filtered: [],
   activeTopic: "",
+  activeTargetVenue: "",
   matrixCategory: "",
   matrixVenue: "",
   venueColumns: [],
@@ -42,6 +54,7 @@ const els = {
   year: document.querySelector("#year-filter"),
   sort: document.querySelector("#sort-select"),
   topicNav: document.querySelector(".topic-nav"),
+  venueNav: document.querySelector(".venue-nav"),
   matrix: document.querySelector("#venue-matrix"),
   matrixClear: document.querySelector("#matrix-clear"),
   total: document.querySelector("#stat-total"),
@@ -62,6 +75,7 @@ async function init() {
 
   buildFilters();
   buildTopicNav();
+  buildVenueNav();
   buildVenueMatrix();
   updateStats();
   applyFilters();
@@ -81,7 +95,7 @@ async function init() {
 function buildFilters() {
   const categories = new Set();
   const tags = new Set();
-  const venues = new Set();
+  const venues = new Set(TARGET_VENUES);
   const years = new Set();
 
   state.papers.forEach((paper) => {
@@ -110,22 +124,6 @@ function buildFilters() {
     .forEach((year) => els.year.append(new Option(year, year)));
 }
 
-function buildVenueMatrix() {
-  const venueCounts = new Map();
-  state.papers.forEach((paper) => {
-    const venue = normalizeVenue(paper.venue);
-    venueCounts.set(venue, (venueCounts.get(venue) || 0) + 1);
-  });
-
-  state.venueColumns = [...venueCounts.entries()]
-    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "ko"))
-    .slice(0, 8)
-    .map(([venue]) => venue);
-
-  const uncategorizedVenues = [...venueCounts.keys()].filter((venue) => !state.venueColumns.includes(venue));
-  if (uncategorizedVenues.length) state.venueColumns.push("Other venues");
-}
-
 function buildTopicNav() {
   const availableTags = new Set(state.papers.flatMap((paper) => paper.tags || []));
   const availableCategories = new Set(state.papers.flatMap((paper) => paper.categories || []));
@@ -149,6 +147,50 @@ function buildTopicNav() {
     });
     applyFilters();
   });
+}
+
+function buildVenueNav() {
+  TARGET_VENUES.forEach((venue) => {
+    const count = state.papers.filter((paper) => matchesTargetVenue(normalizeVenue(paper.venue), venue)).length;
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "venue-pill";
+    button.dataset.targetVenue = venue;
+    button.textContent = `${shortVenue(venue)} ${count}`;
+    els.venueNav.append(button);
+  });
+
+  els.venueNav.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-target-venue]");
+    if (!button) return;
+    state.activeTargetVenue = button.dataset.targetVenue;
+    if (state.activeTargetVenue) {
+      els.venue.value = "";
+    }
+    els.venueNav.querySelectorAll(".venue-pill").forEach((pill) => {
+      pill.classList.toggle("is-active", pill.dataset.targetVenue === state.activeTargetVenue);
+    });
+    applyFilters();
+  });
+}
+
+function buildVenueMatrix() {
+  const venueCounts = new Map();
+  state.papers.forEach((paper) => {
+    const venue = normalizeVenue(paper.venue);
+    venueCounts.set(venue, (venueCounts.get(venue) || 0) + 1);
+  });
+
+  const targetColumns = TARGET_VENUES.filter((venue) => venueCounts.has(venue));
+  const otherColumns = [...venueCounts.entries()]
+    .filter(([venue]) => !targetColumns.includes(venue))
+    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "ko"))
+    .slice(0, Math.max(0, 8 - targetColumns.length))
+    .map(([venue]) => venue);
+
+  state.venueColumns = [...targetColumns, ...otherColumns];
+  const uncategorizedVenues = [...venueCounts.keys()].filter((venue) => !state.venueColumns.includes(venue));
+  if (uncategorizedVenues.length) state.venueColumns.push("Other venues");
 }
 
 function updateStats() {
@@ -200,11 +242,22 @@ function applyFilters() {
     const matchesCategory = !category || paperCategories.includes(category);
     const matchesTag = !tag || paperTags.includes(tag);
     const matchesVenue = !venue || paperVenue === venue;
+    const matchesTarget = !state.activeTargetVenue || matchesTargetVenue(paperVenue, state.activeTargetVenue);
     const matchesTopic = !state.activeTopic || paperTags.includes(state.activeTopic) || paperCategories.includes(state.activeTopic);
     const matchesMatrixCategory = !state.matrixCategory || paperCategories.includes(state.matrixCategory);
     const matchesMatrixVenue = !state.matrixVenue || venueBucket(paperVenue) === state.matrixVenue;
     const matchesYear = !year || String(paper.year || "") === year;
-    return matchesQuery && matchesCategory && matchesTag && matchesVenue && matchesTopic && matchesMatrixCategory && matchesMatrixVenue && matchesYear;
+    return (
+      matchesQuery &&
+      matchesCategory &&
+      matchesTag &&
+      matchesVenue &&
+      matchesTarget &&
+      matchesTopic &&
+      matchesMatrixCategory &&
+      matchesMatrixVenue &&
+      matchesYear
+    );
   });
 
   state.filtered.sort((a, b) => {
@@ -396,12 +449,26 @@ function normalizeVenue(venue) {
   return String(venue || "Venue unknown").trim() || "Venue unknown";
 }
 
+function normalizeVenueKey(venue) {
+  return normalize(venue).replaceAll("&", "and");
+}
+
+function matchesTargetVenue(venue, target) {
+  return normalizeVenueKey(venue) === normalizeVenueKey(target);
+}
+
 function venueBucket(venue) {
   return state.venueColumns.includes(venue) ? venue : "Other venues";
 }
 
 function shortVenue(venue) {
   const replacements = {
+    "Nature Communications": "Nat. Commun.",
+    "Nature Materials": "Nat. Mater.",
+    "Nature Reviews Materials": "Nat. Rev. Mater.",
+    "Science Advances": "Sci. Adv.",
+    "Science Robotics": "Sci. Robot.",
+    "Additive Manufacturing": "Addit. Manuf.",
     "Rapid Prototyping Journal": "Rapid Prototyping",
     "Journal of Manufacturing Processes": "J. Manufacturing",
     "Physics in Medicine and Biology": "Phys. Med. Biol.",

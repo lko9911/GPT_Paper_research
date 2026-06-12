@@ -268,3 +268,34 @@
 
 ### 주의사항
 - 메타데이터 API에는 embargo date나 잘못된 미래 연도 값이 섞일 수 있어 방어 로직이 필요합니다.
+
+## 2026-06-12 10:28
+
+### 변경 요약
+- Nature, Science, Additive Manufacturing 계열 게재지를 우선 추적 대상으로 추가했습니다.
+- 프론트엔드 JS의 한글 UI 문자열을 UTF-8 기준으로 다시 정리했습니다.
+
+### 수정/생성한 파일
+- `index.html`: 상단에 우선 추적 게재지 navigation을 추가했습니다.
+- `assets/app.js`: `TARGET_VENUES` 목록, target venue chip, target venue 필터링, 우선 게재지 count 표시, 축약 venue 이름 표시를 구현했습니다.
+- `assets/style.css`: 우선 게재지 pill 스타일을 추가했습니다.
+- `data/queries.json`: Additive Manufacturing, Nature, Science 조합 검색어를 추가했습니다.
+- `README.md`: 우선 추적 게재지 목록을 문서화했습니다.
+- `PROJECT_STATUS.md`: 우선 추적 게재지 상태와 다음 개선 작업을 기록했습니다.
+- `AGENT_LOG.md`: 이번 변경 내용을 기록했습니다.
+
+### 구현한 기능
+- Nature, Nature Communications, Nature Materials, Nature Reviews Materials, Science, Science Advances, Science Robotics, Additive Manufacturing을 별도 칩으로 보여줍니다.
+- 각 칩에는 현재 수집된 논문 수가 표시됩니다.
+- 칩을 클릭하면 해당 게재지 논문만 필터링됩니다.
+- 게재지 select에도 우선 추적 게재지가 포함됩니다.
+
+### 설계 결정
+- 특정 출판사 사이트를 직접 크롤링하지 않고 공식 메타데이터 API에서 검색되는 항목만 포함합니다.
+- 지금 단계에서는 source ID 고정 검색보다 검색어 보강과 UI 강조를 먼저 적용했습니다. OpenAlex source ID 기반 검색은 다음 단계에서 더 정확하게 추가할 수 있습니다.
+
+### 남은 작업
+- Nature/Science/Additive Manufacturing 논문을 더 정확히 모으려면 OpenAlex Sources API로 source ID를 고정한 venue-specific 검색을 추가하세요.
+
+### 주의사항
+- 현재 데이터에 해당 게재지 논문이 없으면 칩 count가 0으로 표시됩니다. 0은 배제가 아니라 아직 수집 결과가 없다는 뜻입니다.
