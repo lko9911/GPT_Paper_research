@@ -22,9 +22,8 @@ QUERIES_PATH = ROOT / "data" / "queries.json"
 TARGET_VENUES_PATH = ROOT / "data" / "target_venues.json"
 SEED_DOIS_PATH = ROOT / "data" / "seed_dois.json"
 DEFAULT_SINCE_YEAR = 2024
-SEARCH_PER_PAGE = 50
-TARGET_VENUE_PER_PAGE = 50
-MAX_TOTAL_PAPERS = 100
+SEARCH_PER_PAGE = 200
+TARGET_VENUE_PER_PAGE = 200
 
 
 def main() -> None:
@@ -54,9 +53,6 @@ def main() -> None:
 
         enriched = enrich_with_semantic_scholar(candidate)
         summarized = summarize_record(enriched)
-        if len(existing) >= _max_total_papers():
-            print(f"Paper limit reached ({_max_total_papers()}); skipping further additions.")
-            continue
         paper = _finalize_record(summarized, today)
         index[_dedupe_key(paper)] = paper
         existing.append(paper)
@@ -79,9 +75,6 @@ def main() -> None:
 
             enriched = enrich_with_semantic_scholar(candidate)
             summarized = summarize_record(enriched)
-            if len(existing) >= _max_total_papers():
-                print(f"Paper limit reached ({_max_total_papers()}); skipping further additions.")
-                continue
             paper = _finalize_record(summarized, today)
             index[_dedupe_key(paper)] = paper
             existing.append(paper)
@@ -106,9 +99,6 @@ def main() -> None:
 
                 enriched = enrich_with_semantic_scholar(candidate)
                 summarized = summarize_record(enriched)
-                if len(existing) >= _max_total_papers():
-                    print(f"Paper limit reached ({_max_total_papers()}); skipping further additions.")
-                    continue
                 paper = _finalize_record(summarized, today)
                 index[_dedupe_key(paper)] = paper
                 existing.append(paper)
@@ -177,15 +167,6 @@ def _since_year() -> int:
     except ValueError:
         print(f"Invalid SINCE_YEAR={value!r}; using {DEFAULT_SINCE_YEAR}")
         return DEFAULT_SINCE_YEAR
-
-
-def _max_total_papers() -> int:
-    value = os.getenv("MAX_TOTAL_PAPERS", str(MAX_TOTAL_PAPERS))
-    try:
-        return int(value)
-    except ValueError:
-        print(f"Invalid MAX_TOTAL_PAPERS={value!r}; using {MAX_TOTAL_PAPERS}")
-        return MAX_TOTAL_PAPERS
 
 
 def _finalize_record(record: dict[str, Any], today: str) -> dict[str, Any]:

@@ -18,6 +18,13 @@ const FIELD_ORDER = [
   "AI 생산제조",
 ];
 
+const FIELD_SUBTOPICS = {
+  "생산/제조": ["공정 최적화", "금속/합금 제조", "건설/대형 제조", "복합재/소재 제조"],
+  "3D 프린팅": ["MMAM", "FGAM", "DM filament", "FDM/Material extrusion", "툴패스", "퍼지/재료전환"],
+  "로봇틱스(생산제조)": ["로봇 AM", "제조 자동화", "경로계획"],
+  "AI 생산제조": ["Machine Learning", "Deep Learning", "Reinforcement Learning", "AI 공정제어", "설계 자동화"],
+};
+
 const FEATURED_TOPICS = [
   "MMAM",
   "FGAM",
@@ -56,9 +63,7 @@ const state = {
   filtered: [],
   activeTopic: "",
   activeTargetVenue: "",
-  matrixCategory: "",
-  matrixVenue: "",
-  venueColumns: [],
+  activeSubtopic: "",
 };
 
 const els = {
@@ -100,10 +105,15 @@ async function init() {
   applyFilters();
 
   [els.search, els.category, els.tag, els.venue, els.year, els.sort].forEach((el) => {
-    el.addEventListener("input", applyFilters);
-    el.addEventListener("change", applyFilters);
+    el.addEventListener("input", () => {
+      if (el === els.category) state.activeSubtopic = "";
+      applyFilters();
+    });
+    el.addEventListener("change", () => {
+      if (el === els.category) state.activeSubtopic = "";
+      applyFilters();
+    });
   });
-
 }
 
 function buildFilters() {
@@ -115,6 +125,7 @@ function buildFilters() {
   state.papers.forEach((paper) => {
     fields.add(deriveField(paper));
     visibleTags(paper).forEach((tag) => tags.add(tag));
+    deriveSubtopics(paper).forEach((subtopic) => tags.add(subtopic));
     venues.add(normalizeVenue(paper.venue));
     if (paper.year) years.add(String(paper.year));
   });
@@ -147,7 +158,10 @@ function buildFilters() {
 function buildTopicNav() {
   const availableTags = new Set(flatten(state.papers.map((paper) => paper.tags || [])));
   const availableCategories = new Set(flatten(state.papers.map((paper) => paper.categories || [])));
-  const topics = FEATURED_TOPICS.filter((topic) => availableTags.has(topic) || availableCategories.has(topic));
+  const availableSubtopics = new Set(flatten(state.papers.map((paper) => deriveSubtopics(paper))));
+  const topics = FEATURED_TOPICS.filter(
+    (topic) => availableTags.has(topic) || availableCategories.has(topic) || availableSubtopics.has(topic)
+  );
 
   topics.forEach((topic) => {
     const button = document.createElement("button");
@@ -197,23 +211,47 @@ function buildVenueNav() {
 }
 
 function buildSideNav() {
-  const fields = FIELD_ORDER.filter((field) => state.papers.some((paper) => deriveField(paper) === field));
-  els.sideTopicNav.innerHTML = fields
+  const fieldCounts = countBy(state.papers, deriveField);
+  els.sideTopicNav.innerHTML = FIELD_ORDER.filter((field) => fieldCounts.get(field))
     .map((field) => {
-      const count = state.papers.filter((paper) => deriveField(paper) === field).length;
-      return `<button type="button" data-side-category="${escapeAttribute(field)}">${escapeHtml(field)} <span>${count}</span></button>`;
+      const subtopics = FIELD_SUBTOPICS[field] || [];
+      const subtopicButtons = subtopics
+        .map((subtopic) => {
+          const count = state.papers.filter((paper) => deriveField(paper) === field && deriveSubtopics(paper).includes(subtopic)).length;
+          if (!count) return "";
+          return `<button class="side-subtopic" type="button" data-side-field="${escapeAttribute(field)}" data-side-subtopic="${escapeAttribute(subtopic)}">
+            ${escapeHtml(subtopic)} <span>${count}</span>
+          </button>`;
+        })
+        .join("");
+      return `<div class="side-field-group">
+        <button class="side-field" type="button" data-side-field="${escapeAttribute(field)}">
+          ${escapeHtml(field)} <span>${fieldCounts.get(field)}</span>
+        </button>
+        <div class="side-subtopics">${subtopicButtons}</div>
+      </div>`;
     })
     .join("");
 
-  els.sideTopicNav.querySelectorAll("[data-side-category]").forEach((button) => {
+  els.sideTopicNav.querySelectorAll("[data-side-field]").forEach((button) => {
     button.addEventListener("click", () => {
-      els.category.value = button.dataset.sideCategory;
+      const field = button.dataset.sideField;
+      const subtopic = button.dataset.sideSubtopic || "";
+      els.category.value = field;
+      state.activeSubtopic = subtopic;
+      syncSideNavActive();
       applyFilters();
-      const paperList = document.querySelector("#paper-list");
-      if (paperList) {
-        paperList.scrollIntoView({ behavior: "smooth", block: "start" });
-      }
+      scrollToPapers();
     });
+  });
+}
+
+function syncSideNavActive() {
+  els.sideTopicNav.querySelectorAll("[data-side-field]").forEach((button) => {
+    const fieldMatches = button.dataset.sideField === els.category.value;
+    const subtopicMatches = (button.dataset.sideSubtopic || "") === state.activeSubtopic;
+    const isFieldButton = !button.dataset.sideSubtopic;
+    button.classList.toggle("is-active", fieldMatches && (isFieldButton ? !state.activeSubtopic : subtopicMatches));
   });
 }
 
@@ -259,10 +297,7 @@ function renderVenueBoard() {
         card.classList.toggle("is-active", card.dataset.boardVenue === venue);
       });
       applyFilters();
-      const paperList = document.querySelector("#paper-list");
-      if (paperList) {
-        paperList.scrollIntoView({ behavior: "smooth", block: "start" });
-      }
+      scrollToPapers();
     });
   });
 }
@@ -295,10 +330,14 @@ function applyFilters() {
   const year = els.year.value;
   const sort = els.sort.value;
 
+  if (!category) state.activeSubtopic = "";
+  syncSideNavActive();
+
   state.filtered = state.papers.filter((paper) => {
     const paperCategories = paper.categories || [];
     const paperTags = paper.tags || [];
     const paperVisibleTags = visibleTags(paper);
+    const paperSubtopics = deriveSubtopics(paper);
     const paperVenue = normalizeVenue(paper.venue);
     const paperField = deriveField(paper);
     const haystack = normalize(
@@ -310,6 +349,7 @@ function applyFilters() {
         paper.doi,
         paperCategories.join(" "),
         paperVisibleTags.join(" "),
+        paperSubtopics.join(" "),
         paper.ai_summary_ko,
         paper.relevance_note_ko,
       ].join(" ")
@@ -317,10 +357,15 @@ function applyFilters() {
 
     const matchesQuery = !query || haystack.includes(query);
     const matchesCategory = !category || paperField === category;
-    const matchesTag = !tag || paperTags.includes(tag);
+    const matchesTag = !tag || paperTags.includes(tag) || paperVisibleTags.includes(tag) || paperSubtopics.includes(tag);
     const matchesVenue = !venue || paperVenue === venue;
     const matchesTarget = !state.activeTargetVenue || matchesTargetVenue(paperVenue, state.activeTargetVenue);
-    const matchesTopic = !state.activeTopic || paperTags.includes(state.activeTopic) || paperCategories.includes(state.activeTopic);
+    const matchesTopic =
+      !state.activeTopic ||
+      paperTags.includes(state.activeTopic) ||
+      paperCategories.includes(state.activeTopic) ||
+      paperSubtopics.includes(state.activeTopic);
+    const matchesSubtopic = !state.activeSubtopic || paperSubtopics.includes(state.activeSubtopic);
     const matchesYear = !year || String(paper.year || "") === year;
     return (
       matchesQuery &&
@@ -329,6 +374,7 @@ function applyFilters() {
       matchesVenue &&
       matchesTarget &&
       matchesTopic &&
+      matchesSubtopic &&
       matchesYear
     );
   });
@@ -391,6 +437,7 @@ function renderPaperRow(paper) {
   const sourceText = (paper.source || []).join(", ") || "Metadata API";
   const authors = formatAuthors(paper.authors || []);
   const categoryBadges = (paper.categories || []).map((category) => badge(category, "category")).join("");
+  const subtopicBadges = deriveSubtopics(paper).map((subtopic) => badge(subtopic, "subtopic")).join("");
   const tagBadges = visibleTags(paper).map((tag) => tagButton(tag)).join("");
 
   article.innerHTML = `
@@ -403,7 +450,7 @@ function renderPaperRow(paper) {
       <p class="meta">${escapeHtml(authors)}${authors ? " · " : ""}${escapeHtml(String(paper.year || "연도 미상"))} · ${escapeHtml(paper.venue || "Venue unknown")} · ${escapeHtml(sourceText)}</p>
       <p class="summary">${escapeHtml(paper.ai_summary_ko || "요약이 아직 생성되지 않았습니다.")}</p>
       <p class="relevance-note">${escapeHtml(paper.relevance_note_ko || "")}</p>
-      <div class="tag-line">${categoryBadges}${tagBadges}</div>
+      <div class="tag-line">${categoryBadges}${subtopicBadges}${tagBadges}</div>
       <div class="card-links">
         ${doiUrl ? `<a class="link-pill primary" href="${escapeAttribute(doiUrl)}" target="_blank" rel="noopener noreferrer">Paper</a>` : ""}
         ${doiUrl ? `<a class="link-pill" href="${escapeAttribute(doiUrl)}" target="_blank" rel="noopener noreferrer">DOI</a>` : ""}
@@ -473,13 +520,7 @@ function categoryIndex(category) {
 }
 
 function deriveField(paper) {
-  const titleText = normalize(
-    [
-      paper.title,
-      paper.venue,
-      (paper.tags || []).join(" "),
-    ].join(" ")
-  );
+  const titleText = normalize([paper.title, paper.venue, (paper.tags || []).join(" ")].join(" "));
   const categoryText = normalize((paper.categories || []).join(" "));
   const text = `${titleText} ${categoryText}`;
 
@@ -511,6 +552,7 @@ function deriveField(paper) {
     titleText.includes("multimaterial") ||
     titleText.includes("toolpath") ||
     titleText.includes("material extrusion") ||
+    titleText.includes("additive manufacturing") ||
     titleText.includes("다중재료") ||
     titleText.includes("기능성 구배") ||
     titleText.includes("툴패스") ||
@@ -533,6 +575,66 @@ function deriveField(paper) {
     return "생산/제조";
   }
   return "생산/제조";
+}
+
+function deriveSubtopics(paper) {
+  const text = normalize(
+    [
+      paper.title,
+      paper.venue,
+      (paper.tags || []).join(" "),
+      (paper.categories || []).join(" "),
+      paper.ai_summary_ko,
+      paper.relevance_note_ko,
+    ].join(" ")
+  );
+  const subtopics = new Set();
+
+  if (hasAny(text, ["process", "parameter", "optimization", "공정", "최적화"])) subtopics.add("공정 최적화");
+  if (hasAny(text, ["metal", "metals", "alloy", "steel", "inconel", "ss316", "금속", "합금"])) subtopics.add("금속/합금 제조");
+  if (hasAny(text, ["construction", "large-scale", "concrete", "building", "건설", "대형"])) subtopics.add("건설/대형 제조");
+  if (hasAny(text, ["composite", "fiber", "polymer", "복합재", "섬유", "고분자"])) subtopics.add("복합재/소재 제조");
+
+  if (hasAny(text, ["multi-material", "multimaterial", "mmam", "multi material", "다중재료"])) subtopics.add("MMAM");
+  if (hasAny(text, ["functionally graded", "fgam", "graded", "gradient", "기능성 구배", "구배"])) subtopics.add("FGAM");
+  if (hasAny(text, ["dm filament", "digital material", "blended fdm", "디지털 재료"])) subtopics.add("DM filament");
+  if (hasAny(text, ["fdm", "fused deposition", "material extrusion", "filament", "압출"])) subtopics.add("FDM/Material extrusion");
+  if (hasAny(text, ["toolpath", "path planning", "graph search", "trajectory", "툴패스", "경로계획", "경로 계획"])) subtopics.add("툴패스");
+  if (hasAny(text, ["purge", "switching", "transition", "waste", "퍼지", "재료 전환", "전환"])) subtopics.add("퍼지/재료전환");
+
+  if (hasAny(text, ["robot", "robotic", "로봇"])) subtopics.add("로봇 AM");
+  if (hasAny(text, ["automation", "automated", "자동화"])) subtopics.add("제조 자동화");
+  if (hasAny(text, ["path planning", "graph search", "trajectory", "경로계획", "경로 계획"])) subtopics.add("경로계획");
+
+  if (hasAny(text, ["machine learning", "ml", "머신러닝"])) subtopics.add("Machine Learning");
+  if (hasAny(text, ["deep learning", "neural", "딥러닝"])) subtopics.add("Deep Learning");
+  if (hasAny(text, ["reinforcement learning", "강화학습"])) subtopics.add("Reinforcement Learning");
+  if (hasAny(text, ["process control", "monitoring", "closed-loop", "공정제어", "모니터링"])) subtopics.add("AI 공정제어");
+  if (hasAny(text, ["computational design", "generative design", "topology optimization", "design automation", "계산설계", "설계 자동화"])) {
+    subtopics.add("설계 자동화");
+  }
+
+  return [...subtopics];
+}
+
+function hasAny(text, terms) {
+  return terms.some((term) => text.includes(normalize(term)));
+}
+
+function countBy(items, mapper) {
+  const counts = new Map();
+  items.forEach((item) => {
+    const key = mapper(item);
+    counts.set(key, (counts.get(key) || 0) + 1);
+  });
+  return counts;
+}
+
+function scrollToPapers() {
+  const paperList = document.querySelector("#paper-list");
+  if (paperList) {
+    paperList.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
 }
 
 function sectionId(value) {
