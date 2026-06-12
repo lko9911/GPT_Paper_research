@@ -844,6 +844,132 @@ h1 {
   }
 }
 
+/* Dark contrast pass: keep surfaces readable and avoid light-mode color leftovers. */
+:root[data-theme="dark"] {
+  --bg: #0c111c;
+  --panel: #151b28;
+  --text: #edf2fb;
+  --muted: #aeb9ca;
+  --line: #2c3546;
+  --line-strong: #465269;
+  --blue: #9ec5ff;
+  --blue-soft: #1c2d4a;
+  --green: #8ee5bd;
+  --green-soft: #173a2c;
+  --amber: #ffd180;
+  --amber-soft: #3d2d12;
+  --ink-soft: #202838;
+}
+
+:root[data-theme="dark"] body {
+  background:
+    linear-gradient(180deg, rgba(78, 132, 255, 0.1), transparent 280px),
+    var(--bg);
+}
+
+:root[data-theme="dark"] .toolbar-toggle,
+:root[data-theme="dark"] .topic-pill,
+:root[data-theme="dark"] .venue-pill,
+:root[data-theme="dark"] .sidebar,
+:root[data-theme="dark"] .stats article,
+:root[data-theme="dark"] .controls,
+:root[data-theme="dark"] .controls input,
+:root[data-theme="dark"] .controls select,
+:root[data-theme="dark"] .venue-section,
+:root[data-theme="dark"] .venue-card,
+:root[data-theme="dark"] .paper-card,
+:root[data-theme="dark"] .empty-state {
+  border-color: var(--line);
+  background: var(--panel);
+  color: var(--text);
+}
+
+:root[data-theme="dark"] .topic-pill:hover,
+:root[data-theme="dark"] .venue-pill:hover,
+:root[data-theme="dark"] .side-nav button:hover,
+:root[data-theme="dark"] .side-nav button.is-active,
+:root[data-theme="dark"] .venue-card:hover,
+:root[data-theme="dark"] .venue-card.is-active {
+  border-color: var(--blue);
+  background: var(--blue-soft);
+  color: var(--text);
+}
+
+:root[data-theme="dark"] .topic-pill.is-active,
+:root[data-theme="dark"] .venue-pill.is-active,
+:root[data-theme="dark"] .link-pill.primary {
+  border-color: var(--blue);
+  background: var(--blue);
+  color: #08111f;
+}
+
+:root[data-theme="dark"] .venue-pill span,
+:root[data-theme="dark"] .side-nav span {
+  background: transparent;
+  color: var(--muted);
+}
+
+:root[data-theme="dark"] .notice {
+  border-color: #33507e;
+  background: #14243e;
+  color: #dce9ff;
+}
+
+:root[data-theme="dark"] .notice-soft {
+  border-color: #245641;
+  background: #102b22;
+  color: #dff8eb;
+}
+
+:root[data-theme="dark"] .venue-section-head,
+:root[data-theme="dark"] .venue-rule,
+:root[data-theme="dark"] .side-nav .side-field {
+  border-color: var(--line);
+  background: var(--ink-soft);
+  color: var(--text);
+}
+
+:root[data-theme="dark"] .card-topline span,
+:root[data-theme="dark"] .badge.category {
+  background: #20385e;
+  color: #d8e8ff;
+}
+
+:root[data-theme="dark"] .card-topline span:last-child {
+  background: var(--amber-soft);
+  color: #ffe2a8;
+}
+
+:root[data-theme="dark"] .badge,
+:root[data-theme="dark"] .badge.tag {
+  background: #273143;
+  color: #d6deec;
+}
+
+:root[data-theme="dark"] .badge.subtopic {
+  background: var(--green-soft);
+  color: #c9f7df;
+}
+
+:root[data-theme="dark"] .badge.tag:hover {
+  background: #334056;
+}
+
+:root[data-theme="dark"] .link-pill {
+  border-color: var(--line-strong);
+  background: #111827;
+  color: var(--text);
+}
+
+:root[data-theme="dark"] .paper-card:hover {
+  border-color: var(--line-strong);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.36);
+}
+
+:root[data-theme="dark"] .controls input::placeholder {
+  color: #7f8ba1;
+}
+
 /* Visual refinement layer: tighter academic list, calmer scale, clearer hierarchy. */
 :root {
   --radius: 8px;
