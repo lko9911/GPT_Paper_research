@@ -72,6 +72,12 @@
           </select>
         </label>
         <label>
+          <span>게재지</span>
+          <select id="venue-filter">
+            <option value="">전체</option>
+          </select>
+        </label>
+        <label>
           <span>연도</span>
           <select id="year-filter">
             <option value="">전체</option>
@@ -85,6 +91,17 @@
             <option value="title">제목순</option>
           </select>
         </label>
+      </section>
+
+      <section class="matrix-section" aria-label="주제 및 게재지 매트릭스">
+        <div class="matrix-head">
+          <div>
+            <p class="section-kicker">Topic x Venue</p>
+            <h2>주제별 게재지 분포</h2>
+          </div>
+          <button id="matrix-clear" class="link-pill" type="button" hidden>매트릭스 필터 해제</button>
+        </div>
+        <div id="venue-matrix" class="venue-matrix"></div>
       </section>
 
       <section class="results-head">
