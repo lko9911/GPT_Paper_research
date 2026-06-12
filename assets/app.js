@@ -140,6 +140,38 @@ const UI_TEXT = {
   },
 };
 
+const LABEL_TRANSLATIONS = {
+  en: {
+    "생산/제조": "Production/Manufacturing",
+    "3D 프린팅": "3D Printing",
+    "4D 프린팅": "4D Printing",
+    "로봇틱스(생산제조)": "Robotics for Manufacturing",
+    "AI 생산제조": "AI Manufacturing",
+    "공정 최적화": "Process Optimization",
+    "금속/합금 제조": "Metals/Alloys",
+    "건설/대형 제조": "Construction/Large-scale",
+    "복합재/소재 제조": "Composites/Materials",
+    "툴패스": "Toolpath",
+    "퍼지/재료전환": "Purge/Material Switching",
+    "로봇 AM": "Robotic AM",
+    "제조 자동화": "Manufacturing Automation",
+    "경로계획": "Path Planning",
+    "AI 공정제어": "AI Process Control",
+    "설계 자동화": "Design Automation",
+    "리뷰 및 서베이": "Reviews and Surveys",
+    "다중재료 적층제조": "Multi-material AM",
+    "기능성 구배 적층제조": "Functionally Graded AM",
+    "계산설계": "Computational Design",
+    "재료분포 최적화": "Material Distribution Optimization",
+    "툴패스 계획": "Toolpath Planning",
+    "재료 전환 / 퍼지 감소": "Material Switching / Purge Reduction",
+    "그래프 탐색 / 경로 계획 알고리즘": "Graph Search / Path Planning",
+    "적층제조를 위한 AI 및 머신러닝": "AI and ML for AM",
+    "재료분포": "Material Distribution",
+    "퍼지 감소": "Purge Reduction",
+  },
+};
+
 const TAG_CATEGORY_ALIASES = {
   툴패스: "툴패스 계획",
   경로계획: "그래프 탐색 / 경로 계획 알고리즘",
@@ -331,18 +363,18 @@ function buildFilters() {
 
   FIELD_ORDER.forEach((field) => {
     if (fields.has(field)) {
-      els.category.append(new Option(field, field));
+      els.category.append(new Option(displayLabel(field), field));
     }
   });
   [...fields]
     .filter((field) => !FIELD_ORDER.includes(field))
     .sort((a, b) => a.localeCompare(b, "ko"))
     .forEach((field) => {
-      els.category.append(new Option(field, field));
+      els.category.append(new Option(displayLabel(field), field));
     });
 
   [...tags].sort((a, b) => a.localeCompare(b, "ko")).forEach((tag) => {
-    els.tag.append(new Option(tag, tag));
+    els.tag.append(new Option(displayLabel(tag), tag));
   });
 
   [...venues].sort((a, b) => a.localeCompare(b, "ko")).forEach((venue) => {
@@ -367,7 +399,7 @@ function buildTopicNav() {
     button.type = "button";
     button.className = "topic-pill";
     button.dataset.topic = topic;
-    button.textContent = topic;
+    button.textContent = displayLabel(topic);
     els.topicNav.append(button);
   });
 
@@ -420,13 +452,13 @@ function buildSideNav() {
           const count = state.papers.filter((paper) => deriveField(paper) === field && deriveSubtopics(paper).includes(subtopic)).length;
           if (!count) return "";
           return `<button class="side-subtopic" type="button" data-side-field="${escapeAttribute(field)}" data-side-subtopic="${escapeAttribute(subtopic)}">
-            ${escapeHtml(subtopic)} <span>${count}</span>
+            ${escapeHtml(displayLabel(subtopic))} <span>${count}</span>
           </button>`;
         })
         .join("");
       return `<div class="side-field-group">
         <button class="side-field" type="button" data-side-field="${escapeAttribute(field)}">
-          ${escapeHtml(field)} <span>${fieldCounts.get(field)}</span>
+          ${escapeHtml(displayLabel(field))} <span>${fieldCounts.get(field)}</span>
         </button>
         <div class="side-subtopics">${subtopicButtons}</div>
       </div>`;
@@ -703,7 +735,7 @@ function renderGroup(category, papers) {
   section.id = sectionId(category);
   section.innerHTML = `
       <div class="group-heading">
-        <h3>${escapeHtml(category)}</h3>
+        <h3>${escapeHtml(displayLabel(category))}</h3>
       <span>${papers.length.toLocaleString(state.language === "ko" ? "ko-KR" : "en-US")} ${escapeHtml(t("papers"))}</span>
     </div>
   `;
@@ -718,8 +750,8 @@ function renderPaperRow(paper) {
   const doiUrl = paper.url || (paper.doi ? `https://doi.org/${paper.doi}` : "");
   const sourceText = (paper.source || []).join(", ") || "Metadata API";
   const authors = formatAuthors(paper.authors || []);
-  const categoryBadges = (paper.categories || []).map((category) => badge(category, "category")).join("");
-  const subtopicBadges = deriveSubtopics(paper).map((subtopic) => badge(subtopic, "subtopic")).join("");
+  const categoryBadges = (paper.categories || []).map((category) => badge(displayLabel(category), "category")).join("");
+  const subtopicBadges = deriveSubtopics(paper).map((subtopic) => badge(displayLabel(subtopic), "subtopic")).join("");
   const tagBadges = visibleTags(paper).map((tag) => tagButton(tag)).join("");
 
   article.innerHTML = `
@@ -943,6 +975,11 @@ function scrollToPapers() {
 function t(key) {
   const table = UI_TEXT[state.language] || UI_TEXT.ko;
   return table[key] || UI_TEXT.ko[key] || key;
+}
+
+function displayLabel(value) {
+  if (state.language === "ko") return value;
+  return (LABEL_TRANSLATIONS.en && LABEL_TRANSLATIONS.en[value]) || value;
 }
 
 function setText(selector, value) {
