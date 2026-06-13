@@ -2581,6 +2581,34 @@
 - API key, token, secret은 기록하지 않았습니다.
 - 로컬에 남아 있는 `data/papers.json`, `data/site_meta.json` 변경은 이번 UI 커밋에 포함하지 않습니다.
 
+## 2026-06-13 09:23
+
+### 변경 요약
+- `Additive Manufacturing with Graded Bio-Polymer Composites`가 DOI는 있지만 venue가 `Venue unknown`으로 표시되는 원인을 확인했습니다.
+- OpenAlex 레코드는 venue가 비어 있었고, Crossref DOI 메타데이터에는 `ROB|ARCH2024 – Robotic Fabrication in Architecture, Art and Design`가 `container-title`로 존재했습니다.
+- 기존 레코드와 새 후보가 DOI로 병합될 때 비어 있는 venue/year/authors를 보강하도록 업데이트 파이프라인을 수정했습니다.
+
+### 수정/생성한 파일
+- `scripts/fetch_crossref.py`: DOI 직접 조회 함수 `fetch_crossref_by_doi`를 추가했습니다.
+- `scripts/update_papers.py`: 기존 레코드 병합 시 비어 있는 venue/year/authors를 후보 메타데이터로 채우고, venue가 비어 있으면 Crossref DOI 조회로 한 번 더 보강하도록 수정했습니다.
+- `AGENT_LOG.md`: venue unknown 원인과 수정 내용을 기록했습니다.
+
+### 구현한 기능
+- OpenAlex에서 venue가 비어 들어온 논문도 Crossref에 DOI 메타데이터가 있으면 이후 업데이트에서 venue를 보강할 수 있습니다.
+- 기존 DOI 중복 병합 시 source만 합치던 동작을 확장해 메타데이터 누락 필드를 보완합니다.
+
+### 설계 결정
+- 출판사 페이지를 크롤링하지 않고 Crossref 공식 API의 `container-title`만 사용했습니다.
+- PDF나 원문 초록은 저장하지 않았습니다.
+
+### 남은 작업
+- 현재 로컬 `data/papers.json`, `data/site_meta.json`에는 별도 변경이 남아 있어 이번 스크립트 수정 커밋에는 포함하지 않습니다.
+- 다음 정기 업데이트 또는 별도 데이터 정리 커밋에서 해당 DOI의 venue 값을 반영할 수 있습니다.
+
+### 주의사항
+- API key, token, secret은 기록하지 않았습니다.
+- Crossref DOI 보강은 rate limit을 피하기 위해 venue가 비어 있고 DOI가 있는 기존 레코드에 한정했습니다.
+
 ## 2026-06-13 02:30
 
 ### 변경 요약

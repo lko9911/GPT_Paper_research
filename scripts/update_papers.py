@@ -12,7 +12,7 @@ from pathlib import Path
 from typing import Any
 
 from enrich_semantic_scholar import enrich_with_semantic_scholar
-from fetch_crossref import fetch_crossref
+from fetch_crossref import fetch_crossref, fetch_crossref_by_doi
 from fetch_openalex import fetch_openalex, fetch_openalex_by_doi
 from summarize import summarize_record
 
@@ -182,6 +182,14 @@ def _safe_fetch_openalex_doi(doi: str) -> dict[str, Any] | None:
         return fetch_openalex_by_doi(doi)
     except Exception as exc:
         print(f"DOI fetch failed for {doi}: {exc}")
+        return None
+
+
+def _safe_fetch_crossref_doi(doi: str) -> dict[str, Any] | None:
+    try:
+        return fetch_crossref_by_doi(doi)
+    except Exception as exc:
+        print(f"Crossref DOI fetch failed for {doi}: {exc}")
         return None
 
 
@@ -407,11 +415,21 @@ def _merge_source(existing: dict[str, Any], candidate: dict[str, Any], today: st
     if not existing.get("doi") and candidate.get("doi"):
         existing["doi"] = candidate["doi"]
         existing["url"] = candidate.get("url", existing.get("url", ""))
+    if not existing.get("venue") and candidate.get("venue"):
+        existing["venue"] = candidate["venue"]
+    if not existing.get("year") and candidate.get("year"):
+        existing["year"] = candidate["year"]
+    if not existing.get("authors") and candidate.get("authors"):
+        existing["authors"] = candidate["authors"]
     existing["last_updated"] = today
 
 
 def _merge_existing_record(existing: dict[str, Any], candidate: dict[str, Any], today: str) -> None:
     _merge_source(existing, candidate, today)
+    if not existing.get("venue") and existing.get("doi"):
+        crossref_record = _safe_fetch_crossref_doi(existing["doi"])
+        if crossref_record:
+            _merge_source(existing, crossref_record, today)
     if not _should_refresh_generic_summary(existing, candidate):
         return
 
