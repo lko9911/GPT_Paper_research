@@ -99,6 +99,16 @@ const UI_TEXT = {
     doiButton: "DOI",
     copyCitation: "인용 복사",
     copiedCitation: "복사됨",
+    shortlistOnly: "선택 논문만",
+    shortlistAll: "전체 보기",
+    shortlistHint: "별표를 눌러 이 브라우저에 발표/리뷰 후보를 저장하세요.",
+    shortlistCount: "선택 논문 {count}편",
+    starPaper: "선택 논문에 추가",
+    unstarPaper: "선택 논문에서 제거",
+    exportCsv: "CSV",
+    exportBibtex: "BibTeX",
+    exportMarkdown: "Markdown",
+    exportEmpty: "내보낼 논문이 없습니다.",
     summaryQuestions: [
       "Topic",
       "Problem",
@@ -165,6 +175,16 @@ const UI_TEXT = {
     doiButton: "DOI",
     copyCitation: "Copy Cite",
     copiedCitation: "Copied",
+    shortlistOnly: "Shortlist only",
+    shortlistAll: "Show all",
+    shortlistHint: "Star papers to build a local shortlist for talks or reviews.",
+    shortlistCount: "{count} shortlisted",
+    starPaper: "Add to shortlist",
+    unstarPaper: "Remove from shortlist",
+    exportCsv: "CSV",
+    exportBibtex: "BibTeX",
+    exportMarkdown: "Markdown",
+    exportEmpty: "No papers to export.",
     summaryQuestions: [
       "Topic",
       "Problem",
@@ -332,11 +352,22 @@ const state = {
   activeTargetVenue: "",
   activeVenueGroup: "",
   activeSubtopic: "",
+  shortlistOnly: localStorage.getItem("shortlistOnly") === "true",
+  shortlisted: new Set(readStoredArray("shortlistedPapers")),
   theme: localStorage.getItem("theme") || DEFAULT_THEME,
   language: localStorage.getItem("language") || DEFAULT_LANGUAGE,
   density: localStorage.getItem("density") || DEFAULT_DENSITY,
-  collapsedFields: new Set(JSON.parse(localStorage.getItem("collapsedFields") || "[]")),
+  collapsedFields: new Set(readStoredArray("collapsedFields")),
 };
+
+function readStoredArray(key) {
+  try {
+    const value = JSON.parse(localStorage.getItem(key) || "[]");
+    return Array.isArray(value) ? value : [];
+  } catch (error) {
+    return [];
+  }
+}
 
 const els = {
   list: document.querySelector("#paper-list"),
@@ -356,6 +387,12 @@ const els = {
   updated: document.querySelector("#stat-updated"),
   opsNote: document.querySelector("#ops-note"),
   heroStatus: document.querySelector("#hero-status"),
+  shortlistCount: document.querySelector("#shortlist-count"),
+  shortlistHint: document.querySelector("#shortlist-hint"),
+  shortlistToggle: document.querySelector("#shortlist-toggle"),
+  exportCsv: document.querySelector("#export-csv"),
+  exportBibtex: document.querySelector("#export-bibtex"),
+  exportMarkdown: document.querySelector("#export-markdown"),
   themeToggle: document.querySelector("#theme-toggle"),
   languageToggle: document.querySelector("#language-toggle"),
   densityToggle: document.querySelector("#density-toggle"),
@@ -384,6 +421,7 @@ async function init() {
   buildSideNav();
   renderVenueBoard();
   updateStats();
+  setupResearchActions();
   applyFilters();
 
   [els.search, els.category, els.tag, els.venue, els.year, els.sort].forEach((el) => {
@@ -426,6 +464,14 @@ function setupPreferences() {
       state.density = state.density === "compact" ? "comfortable" : "compact";
       localStorage.setItem("density", state.density);
       applyPreferences();
+    });
+  }
+  if (els.shortlistToggle) {
+    els.shortlistToggle.addEventListener("click", () => {
+      state.shortlistOnly = !state.shortlistOnly;
+      localStorage.setItem("shortlistOnly", String(state.shortlistOnly));
+      updateShortlistUi();
+      applyFilters();
     });
   }
   window.setInterval(() => {
@@ -478,6 +524,11 @@ function applyStaticLanguage() {
   setText("#empty-state p", t("emptyText"));
   setText("#footer-policy", t("footer"));
   setText("#contact-label", t("contactLabel"));
+  setText("#shortlist-hint", t("shortlistHint"));
+  setText("#export-csv", t("exportCsv"));
+  setText("#export-bibtex", t("exportBibtex"));
+  setText("#export-markdown", t("exportMarkdown"));
+  updateShortlistUi();
   if (!state.papers.length) {
     setText("#hero-status", t("heroStatusLoading"));
   }
@@ -570,6 +621,34 @@ function buildSideNav() {
       scrollToPapers();
     });
   });
+}
+
+function setupResearchActions() {
+  updateShortlistUi();
+  if (els.exportCsv) {
+    els.exportCsv.addEventListener("click", () => exportFiltered("csv"));
+  }
+  if (els.exportBibtex) {
+    els.exportBibtex.addEventListener("click", () => exportFiltered("bibtex"));
+  }
+  if (els.exportMarkdown) {
+    els.exportMarkdown.addEventListener("click", () => exportFiltered("markdown"));
+  }
+}
+
+function updateShortlistUi() {
+  const count = state.shortlisted.size;
+  if (els.shortlistCount) {
+    els.shortlistCount.textContent = t("shortlistCount").replace(
+      "{count}",
+      count.toLocaleString(state.language === "ko" ? "ko-KR" : "en-US")
+    );
+  }
+  if (els.shortlistToggle) {
+    els.shortlistToggle.textContent = state.shortlistOnly ? t("shortlistAll") : t("shortlistOnly");
+    els.shortlistToggle.setAttribute("aria-pressed", String(state.shortlistOnly));
+    els.shortlistToggle.classList.toggle("is-active", state.shortlistOnly);
+  }
 }
 
 function toggleSideField(field) {
@@ -831,6 +910,7 @@ function applyFilters() {
     const matchesVenueGroup = !state.activeVenueGroup || isOtherVenuePaper(paper);
     const matchesSubtopic = !state.activeSubtopic || paperMatchesSidebarSubtopic(paper, paperField, state.activeSubtopic);
     const matchesYear = !year || String(paper.year || "") === year;
+    const matchesShortlist = !state.shortlistOnly || state.shortlisted.has(paperKey(paper));
     return (
       matchesQuery &&
       matchesCategory &&
@@ -839,7 +919,8 @@ function applyFilters() {
       matchesTarget &&
       matchesVenueGroup &&
       matchesSubtopic &&
-      matchesYear
+      matchesYear &&
+      matchesShortlist
     );
   });
 
@@ -915,13 +996,19 @@ function renderPaperRow(paper) {
   const representativeBadges = representativeTags(paper)
     .map((tag) => badge(displayLabel(tag), "tag"))
     .join("");
+  const key = paperKey(paper);
+  const isShortlisted = state.shortlisted.has(key);
 
   article.innerHTML = `
     <div class="card-content">
       <div class="card-topline">
         <span class="publication-badge">${escapeHtml(publicationLabel)}</span>
         <span class="${escapeAttribute(summaryProviderLabel.className)}" title="${escapeAttribute(summaryProviderLabel.title)}">${escapeHtml(summaryProviderLabel.text)}</span>
-        <span>${escapeHtml(t("relevanceLabel"))} ${escapeHtml(String(paper.relevance_score || "-"))}/10</span>
+        <span class="relevance-badge">${escapeHtml(t("relevanceLabel"))} ${escapeHtml(String(paper.relevance_score || "-"))}/10</span>
+        <button class="star-button${isShortlisted ? " is-starred" : ""}" type="button" data-star-paper="${escapeAttribute(key)}" aria-pressed="${isShortlisted ? "true" : "false"}" title="${escapeAttribute(isShortlisted ? t("unstarPaper") : t("starPaper"))}">
+          <span aria-hidden="true">★</span>
+          <span>${escapeHtml(isShortlisted ? t("unstarPaper") : t("starPaper"))}</span>
+        </button>
       </div>
       <h4 class="paper-title">${escapeHtml(paper.title || "Untitled")}</h4>
       <p class="meta">${escapeHtml(authors)}${authors ? " · " : ""}${escapeHtml(paper.venue || "Venue unknown")} · ${escapeHtml(sourceText)}</p>
@@ -946,6 +1033,10 @@ function renderPaperRow(paper) {
     }, 1400);
   });
 
+  article.querySelector("[data-star-paper]").addEventListener("click", (event) => {
+    toggleShortlist(event.currentTarget.dataset.starPaper);
+  });
+
   article.querySelectorAll("[data-tag-filter]").forEach((button) => {
     button.addEventListener("click", () => {
       els.tag.value = button.dataset.tagFilter;
@@ -954,6 +1045,22 @@ function renderPaperRow(paper) {
   });
 
   return article;
+}
+
+function toggleShortlist(key) {
+  if (!key) return;
+  if (state.shortlisted.has(key)) {
+    state.shortlisted.delete(key);
+  } else {
+    state.shortlisted.add(key);
+  }
+  localStorage.setItem("shortlistedPapers", JSON.stringify([...state.shortlisted]));
+  updateShortlistUi();
+  applyFilters();
+}
+
+function paperKey(paper) {
+  return String(paper.id || paper.doi || normalizeTopicKey(paper.title || "") || "unknown");
 }
 
 function badge(text, className = "") {
@@ -1279,6 +1386,135 @@ function buildCitation(paper) {
   const venue = paper.venue ? ` ${paper.venue}.` : "";
   const doi = paper.doi ? ` https://doi.org/${paper.doi}` : "";
   return `${authors} ${year}. ${paper.title || "Untitled"}.${venue}${doi}`.replace(/\s+/g, " ").trim();
+}
+
+function exportFiltered(format) {
+  if (!state.filtered.length) {
+    window.alert(t("exportEmpty"));
+    return;
+  }
+  const stamp = new Date().toISOString().slice(0, 10);
+  if (format === "csv") {
+    downloadText(`curated-papers-${stamp}.csv`, papersToCsv(state.filtered), "text/csv;charset=utf-8");
+    return;
+  }
+  if (format === "bibtex") {
+    downloadText(`curated-papers-${stamp}.bib`, papersToBibtex(state.filtered), "application/x-bibtex;charset=utf-8");
+    return;
+  }
+  downloadText(`curated-papers-${stamp}.md`, papersToMarkdown(state.filtered), "text/markdown;charset=utf-8");
+}
+
+function papersToCsv(papers) {
+  const headers = [
+    "title",
+    "authors",
+    "year",
+    "venue",
+    "doi",
+    "url",
+    "source",
+    "categories",
+    "tags",
+    "relevance_score",
+    "last_updated",
+    "shortlisted",
+  ];
+  const rows = papers.map((paper) =>
+    headers.map((key) => csvCell(exportValue(paper, key))).join(",")
+  );
+  return [headers.join(","), ...rows].join("\n");
+}
+
+function papersToBibtex(papers) {
+  return papers
+    .map((paper) => {
+      const key = bibtexKey(paper);
+      const fields = [
+        ["title", paper.title || "Untitled"],
+        ["author", (paper.authors || []).join(" and ")],
+        ["year", paper.year || ""],
+        ["journal", paper.venue || ""],
+        ["doi", paper.doi || ""],
+        ["url", paper.url || (paper.doi ? `https://doi.org/${paper.doi}` : "")],
+        ["note", `Relevance ${paper.relevance_score || "-"}/10; ${formatRelevanceNote(paper)}`],
+      ].filter(([, value]) => String(value || "").trim());
+      return `@article{${key},\n${fields
+        .map(([name, value]) => `  ${name} = {${bibtexEscape(value)}},`)
+        .join("\n")}\n}`;
+    })
+    .join("\n\n");
+}
+
+function papersToMarkdown(papers) {
+  const lines = [
+    "# Curated Papers Export",
+    "",
+    `Exported: ${new Date().toISOString()}`,
+    `Count: ${papers.length}`,
+    "",
+  ];
+  papers.forEach((paper, index) => {
+    const doiUrl = paper.url || (paper.doi ? `https://doi.org/${paper.doi}` : "");
+    lines.push(
+      `## ${index + 1}. ${paper.title || "Untitled"}`,
+      "",
+      `- Authors: ${(paper.authors || []).join(", ") || "-"}`,
+      `- Year: ${paper.year || "-"}`,
+      `- Venue: ${paper.venue || "-"}`,
+      `- DOI: ${doiUrl || paper.doi || "-"}`,
+      `- Relevance: ${paper.relevance_score || "-"}/10`,
+      `- Tags: ${representativeTags(paper).map((tag) => displayLabel(tag)).join(", ") || "-"}`,
+      `- Summary: ${singleLineSummary(paper)}`,
+      ""
+    );
+  });
+  return lines.join("\n");
+}
+
+function exportValue(paper, key) {
+  if (key === "authors") return (paper.authors || []).join("; ");
+  if (key === "source") return (paper.source || []).join("; ");
+  if (key === "categories") return (paper.categories || []).map(displayLabel).join("; ");
+  if (key === "tags") return representativeTags(paper).map(displayLabel).join("; ");
+  if (key === "shortlisted") return state.shortlisted.has(paperKey(paper)) ? "yes" : "no";
+  return paper[key] == null ? "" : paper[key];
+}
+
+function singleLineSummary(paper) {
+  const sections = formatSummarySections(paper);
+  const text = sections.length
+    ? sections.map((section) => `${section.question}: ${section.answer}`).join(" ")
+    : formatSummary(paper);
+  return String(text || "").replace(/\s+/g, " ").trim();
+}
+
+function csvCell(value) {
+  const text = String(value == null ? "" : value).replace(/\r?\n/g, " ");
+  return `"${text.replace(/"/g, '""')}"`;
+}
+
+function bibtexKey(paper) {
+  const firstAuthor = normalizeTopicKey((paper.authors || ["paper"])[0] || "paper").slice(0, 14) || "paper";
+  const year = paper.year || "nd";
+  const title = normalizeTopicKey(paper.title || "").slice(0, 16) || "untitled";
+  return `${firstAuthor}${year}${title}`;
+}
+
+function bibtexEscape(value) {
+  return String(value || "").replace(/[{}]/g, "").replace(/\s+/g, " ").trim();
+}
+
+function downloadText(filename, text, mimeType) {
+  const blob = new Blob([text], { type: mimeType });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = filename;
+  document.body.append(link);
+  link.click();
+  link.remove();
+  window.setTimeout(() => URL.revokeObjectURL(url), 1000);
 }
 
 function formatPublicationLabel(paper) {
