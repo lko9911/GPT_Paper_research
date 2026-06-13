@@ -2866,3 +2866,29 @@
 ### 주의사항
 - API key, token, secret은 기록하지 않았습니다.
 - 로컬에 남아 있는 `data/papers.json`, `data/site_meta.json` 변경은 이번 UI 커밋에 포함하지 않습니다.
+## 2026-06-13 11:58
+
+### 변경 요약
+- 게재지 보드가 너무 복잡해 보인다는 피드백에 따라 core venue 이외의 모든 게재지를 `Others` 하나로 묶도록 단순화했습니다.
+- 기존의 `10편 이상` 중간 노출 기준과 `270 venues` 같은 세부 venue 수 표시는 제거했습니다.
+
+### 수정/생성한 파일
+- `assets/app.js`: venue 보드 렌더링 기준을 `Core + Others`로 변경하고, `Others` 클릭 시 core가 아닌 모든 논문이 필터링되도록 수정했습니다.
+- `index.html`: 브라우저 캐시가 이전 JavaScript를 사용하지 않도록 asset version을 갱신했습니다.
+- `AGENT_LOG.md`: 이번 UI 기준 변경의 이유와 내용을 기록했습니다.
+
+### 구현한 기능
+- `Nature`, `Nature Communications`, `Nature Materials`, `Nature Reviews Materials`, `Science`, `Science Advances`, `Science Robotics`, `Additive Manufacturing` 같은 core venue만 개별 표시합니다.
+- core venue가 아닌 모든 논문은 `Others` 카드에 논문 수만 표시합니다.
+- `Others` 필터는 venue 수나 10편 이상 여부와 무관하게 모든 non-core venue 논문을 포함합니다.
+
+### 설계 결정
+- venue 목록은 탐색 UI이므로 너무 많은 세부 정보를 노출하기보다, 사용자가 바로 이해할 수 있는 `Core / Others` 구조를 우선했습니다.
+- 세부 venue 수는 데이터 디버깅에는 유용하지만 일반 사용자 UI에서는 노이즈가 커서 숨겼습니다.
+
+### 남은 작업
+- 필요하면 추후 개발자용 하단 정보 또는 별도 JSON에서 non-core venue 개수를 확인할 수 있게 분리할 수 있습니다.
+
+### 주의사항
+- 이 변경은 표시/필터 UI 기준만 바꾸며 `data/papers.json`의 논문 데이터나 수집 파이프라인은 수정하지 않습니다.
+- API key, token, secret은 기록하지 않았습니다.

@@ -40,8 +40,6 @@ const TARGET_VENUES = [
   "Additive Manufacturing",
 ];
 
-const VENUE_MIN_VISIBLE_COUNT = 10;
-
 const UI_TEXT = {
   ko: {
     themeDark: "Dark",
@@ -80,9 +78,8 @@ const UI_TEXT = {
       "Metadata from OpenAlex, Crossref, and optionally Semantic Scholar. Summaries are generated and do not reproduce publisher abstracts.",
     papers: "편",
     priority: "Core",
-    tenPlusVenue: "10편 이상",
     others: "기타",
-    lowCountVenue: "Core/10편 이상 외",
+    lowCountVenue: "Core 외",
     showing: "개 큐레이션 결과",
     unknownYear: "연도 미상",
     relevanceLabel: "관련성",
@@ -137,9 +134,8 @@ const UI_TEXT = {
       "Metadata from OpenAlex, Crossref, and optionally Semantic Scholar. Summaries are generated and do not reproduce publisher abstracts.",
     papers: "papers",
     priority: "Core",
-    tenPlusVenue: "10+ papers",
     others: "Others",
-    lowCountVenue: "Outside Core/10+",
+    lowCountVenue: "Non-core",
     showing: "curated results",
     unknownYear: "Year unknown",
     relevanceLabel: "Relevance",
@@ -596,12 +592,7 @@ function renderVenueBoard() {
     const matched = entries.find(([venue]) => matchesTargetVenue(venue, target));
     return matched || [target, 0];
   }).filter(([, count]) => count > 0);
-  const discoveredEntries = entries.filter(
-    ([venue, count]) => count >= VENUE_MIN_VISIBLE_COUNT && !isPriorityVenue(venue) && !isNonJournalVenue(venue)
-  );
-  const visibleVenueKeys = new Set(
-    [...priorityEntries, ...discoveredEntries].map(([venue]) => normalizeVenueKey(venue))
-  );
+  const visibleVenueKeys = new Set(priorityEntries.map(([venue]) => normalizeVenueKey(venue)));
   const hiddenEntries = entries.filter(([venue]) => !visibleVenueKeys.has(normalizeVenueKey(venue)));
   const hiddenPaperCount = hiddenEntries.reduce((sum, [, count]) => sum + count, 0);
 
@@ -611,8 +602,7 @@ function renderVenueBoard() {
       <span>${state.papers.length} ${escapeHtml(t("papers"))}</span>
     </button>`,
     ...priorityEntries.map(([venue, count]) => venueCard(venue, count, t("priority"))),
-    ...discoveredEntries.map(([venue, count]) => venueCard(venue, count, t("tenPlusVenue"))),
-    hiddenPaperCount ? otherVenueCard(hiddenPaperCount, hiddenEntries.length) : "",
+    hiddenPaperCount ? otherVenueCard(hiddenPaperCount) : "",
   ].join("");
 
   els.venueBoard.innerHTML = `
@@ -679,10 +669,10 @@ function venueCard(venue, count, label = "") {
   </button>`;
 }
 
-function otherVenueCard(paperCount, venueCount) {
+function otherVenueCard(paperCount) {
   return `<button class="venue-card venue-card-muted" type="button" data-board-venue="" data-board-venue-group="other">
     <strong>${escapeHtml(t("others"))}</strong>
-    <span><b>${paperCount}</b> ${escapeHtml(t("papers"))} · ${venueCount} venues</span>
+    <span><b>${paperCount}</b> ${escapeHtml(t("papers"))}</span>
     <em class="venue-chip">${escapeHtml(t("lowCountVenue"))}</em>
   </button>`;
 }
@@ -813,8 +803,7 @@ function applyFilters() {
 
 function isOtherVenuePaper(paper) {
   const venue = normalizeVenue(paper.venue);
-  const count = state.papers.filter((item) => normalizeVenueKey(item.venue) === normalizeVenueKey(venue)).length;
-  return !isPriorityVenue(venue) && (count < VENUE_MIN_VISIBLE_COUNT || isNonJournalVenue(venue));
+  return !isPriorityVenue(venue);
 }
 
 function render() {
