@@ -1,5 +1,19 @@
 # ARCHITECTURE
 
+## 2026-06-13 Seed DOI 및 Priority Curation 구조
+
+`data/seed_dois.json`은 일반 검색 쿼리로 놓치면 안 되는 대표 논문을 DOI 기준으로 고정 추적하는 목록입니다. Nature, Science, Nature Materials, Science Advances처럼 중요한 venue의 대표 논문은 broad keyword search 상위 결과에 항상 들어온다고 보장할 수 없으므로 seed DOI로 관리합니다.
+
+`scripts/update_papers.py`는 seed DOI를 처리할 때 일반 `_is_plausible()` keyword 필터 대신 `_is_plausible_seed()`를 사용합니다. 이 함수는 제목, 연도, 비논문 여부만 확인합니다. seed DOI는 사용자가 직접 큐레이션한 항목이므로 통과 시 `curation_priority=true`가 붙고, relevance score가 낮게 계산되어도 최소 curated 기준점인 `CURATED_MIN_SCORE` 이상으로 보정됩니다.
+
+`_is_curated_candidate()`는 `curation_priority=true`인 논문을 archive로 숨기지 않습니다. 따라서 CRAFT처럼 일반 fallback scoring이 낮게 나온 논문도 사용자가 지정한 대표 논문이면 메인 `data/papers.json`에 남습니다.
+
+중요한 운영 원칙:
+- seed DOI 추가는 출판사 크롤링이 아니라 OpenAlex/Crossref DOI 메타데이터 조회입니다.
+- seed DOI 처리에서도 OpenAI는 자동 호출하지 않습니다.
+- 새로 seed로 들어온 논문은 사용자가 별도로 명시 요청하기 전까지 fallback metadata summary 상태로 둡니다.
+- OpenAI Q5 refresh를 다시 실행할 때도 `relevance_score`는 덮어쓰지 않고 기존 curated score를 유지합니다.
+
 ## 2026-06-12 Pages 배포 보강
 
 자동 수집 workflow인 `.github/workflows/update-papers.yml`은 `data/papers.json`과 `data/site_meta.json`을 갱신한 뒤, GitHub Pages artifact를 업로드하고 `actions/deploy-pages`로 직접 배포합니다.

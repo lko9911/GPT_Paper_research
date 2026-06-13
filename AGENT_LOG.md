@@ -1,5 +1,39 @@
 # AGENT_LOG
 
+## 2026-06-13 13:43
+
+### 변경 요약
+- 사용자가 제시한 Nature, Science, Nature Materials, Science Advances 대표 논문들이 왜 사이트에 없거나 archive에 있었는지 조사했습니다.
+- OpenAlex와 Crossref에는 대부분 정확한 DOI/메타데이터가 있었으므로 API 부재가 아니라 수집 쿼리와 relevance/archive 정책의 문제로 판단했습니다.
+- 대표 논문 DOI를 seed list에 추가하고, seed DOI는 `curation_priority`로 메인 curated 목록에 남도록 파이프라인을 수정했습니다.
+
+### 수정/생성한 파일
+- `data/seed_dois.json`: 사용자가 제시한 대표 논문 DOI 14개를 추가했습니다.
+- `data/queries.json`: volumetric printing, DLP photopolymer, wavelength-selective resin, thermoplastic crystallinity, keyhole instability, AM metals, two-photon liquid crystal 계열 검색어를 추가했습니다.
+- `scripts/update_papers.py`: seed DOI는 일반 broad-query relevance 필터 대신 제목/연도/비논문 여부만 확인하고 `curation_priority=true`로 표시하도록 수정했습니다. priority seed는 최소 curated 점수 기준 이상을 보장합니다.
+- `data/papers.json`: 14개 대표 DOI가 모두 curated 목록에 포함되도록 갱신했습니다.
+- `data/archive_papers.json`: seed priority로 승격된 항목의 archive 상태를 갱신했습니다.
+- `data/site_meta.json`: curated count와 raw/archive count를 갱신했습니다.
+- `AGENT_LOG.md`: 이번 원인 조사와 수정 내용을 기록했습니다.
+
+### 구현한 기능
+- 사용자가 제시한 14개 DOI가 모두 `data/papers.json`에 포함됩니다.
+- 기존에 archive에 있던 `Lithographic crystallinity regulation in additive fabrication of thermoplastics (CRAFT)`는 메인 curated 목록으로 승격되었습니다.
+- `curation_priority` seed 논문은 relevance score가 낮게 계산되어도 archive로 숨겨지지 않습니다.
+
+### 설계 결정
+- Nature/Science 계열 대표 논문은 broad keyword search 상위 결과에 의존하지 않고 DOI seed로 고정 추적합니다.
+- OpenAI는 호출하지 않았습니다. 새로 추가/승격된 항목 중 기존 OpenAI 요약이 없던 논문은 fallback metadata summary 상태로 남깁니다.
+- 자동 업데이트도 계속 `ALLOW_OPENAI_IN_UPDATE=false` 정책을 유지합니다.
+
+### 남은 작업
+- 사용자가 원할 경우 새로 추가된 fallback summary 논문 10편만 별도 OpenAI Q5 refresh 대상으로 실행할 수 있습니다. 단, 이는 다시 명시 요청이 있을 때만 수행해야 합니다.
+- 대표 논문 별 relevance score를 별도 curated weight로 더 세밀하게 조정할 수 있습니다.
+
+### 주의사항
+- API key, token, secret은 기록하지 않았습니다.
+- seed DOI 추가는 출판사 크롤링이 아니라 OpenAlex/Crossref DOI 메타데이터 조회 기반입니다.
+
 ## 2026-06-13 13:30
 
 ### 변경 요약
