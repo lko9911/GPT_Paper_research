@@ -1,5 +1,29 @@
 # AGENT_LOG
 
+## 2026-06-13 12:04
+
+### 변경 요약
+- 헤더 제작자 크레딧의 영문 이름 표기를 `Kyuwon`에서 `Gyuwon`으로 수정했습니다.
+- `Now / Updated`에 표시된 `updated 11:31 KST`의 원인을 확인했습니다.
+
+### 수정/생성한 파일
+- `index.html`: 제작자 크레딧 이름을 `Gyuwon Lee`로 수정했습니다.
+- `AGENT_LOG.md`: 이전 작업 로그에 남아 있던 이름 표기와 이번 확인 내용을 기록했습니다.
+
+### 구현한 기능
+- 사이트 헤더에 올바른 제작자 이름이 표시됩니다.
+
+### 설계 결정
+- `11:31 KST`는 `data/site_meta.json`의 `last_run_at_utc=2026-06-13T02:31:38Z`에서 변환된 값으로 확인했습니다.
+- GitHub Actions run `27453956710`은 `workflow_dispatch` 이벤트이며 actor는 `lko9911`로 확인했습니다. 따라서 schedule이 아니라 수동 실행된 업데이트입니다.
+
+### 남은 작업
+- 필요하면 `Now / Updated` 라벨을 `Current time / Last collection`처럼 더 명확하게 바꿀 수 있습니다.
+
+### 주의사항
+- 해당 run은 논문 추가가 0개였지만, 수집 스크립트가 실행되었기 때문에 마지막 수집 시간이 갱신되었습니다.
+- API key, token, secret은 기록하지 않았습니다.
+
 ## 2026-06-13 12:02
 
 ### 변경 요약
@@ -12,7 +36,7 @@
 - `AGENT_LOG.md`: 이번 헤더 크레딧 추가 작업을 기록했습니다.
 
 ### 구현한 기능
-- 헤더 제목 옆에 `Curated by Kyuwon Lee, M.S. Student, Prof. Howon Lee Lab, SNU ME · with Codex` 문구가 작게 표시됩니다.
+- 헤더 제목 옆에 `Curated by Gyuwon Lee, M.S. Student, Prof. Howon Lee Lab, SNU ME · with Codex` 문구가 작게 표시됩니다.
 - 모바일에서는 제목 아래로 자연스럽게 내려가도록 구성했습니다.
 
 ### 설계 결정
