@@ -2715,6 +2715,32 @@
 - API key, token, secret은 기록하지 않았습니다.
 - 이번 변경은 스케줄만 바꾸며 OpenAI API 호출과 무관합니다.
 
+## 2026-06-13 10:38
+
+### 변경 요약
+- 사용자가 OpenAI 토큰 사용량 증가를 우려해 자동 업데이트 차단 상태를 재확인했습니다.
+- `Update papers` workflow는 `ALLOW_OPENAI_IN_UPDATE: "false"`이며 `OPENAI_API_KEY`를 주입하지 않아 OpenAI API를 호출할 수 없음을 확인했습니다.
+- 추가 안전장치로 수동 `Refresh OpenAI summaries` workflow도 repository variable `OPENAI_REFRESH_ENABLED=true`가 설정되어 있지 않으면 실행 단계에서 차단되도록 변경했습니다.
+
+### 수정/생성한 파일
+- `.github/workflows/refresh-openai-summaries.yml`: explicit phrase 외에 `OPENAI_REFRESH_ENABLED` repository variable guard를 추가했습니다.
+- `AGENT_LOG.md`: OpenAI 비용 차단 확인과 추가 guard 내용을 기록했습니다.
+
+### 구현한 기능
+- 정기/수동 논문 수집 workflow에서는 OpenAI API를 사용하지 않습니다.
+- OpenAI 요약 refresh workflow는 명시 문구와 별도로 repo variable을 켜야만 실행됩니다.
+
+### 설계 결정
+- 사용자의 “OpenAI API는 요구할 때만” 규칙을 더 강하게 보장하기 위해, 수동 workflow에도 이중 잠금장치를 추가했습니다.
+- API key, secret, token 값은 로그에 기록하지 않았습니다.
+
+### 남은 작업
+- OpenAI 대시보드의 증가분이 이 저장소 외 다른 API 사용 또는 Codex/ChatGPT 사용량인지 계정/프로젝트 단위에서 확인해야 합니다.
+
+### 주의사항
+- 기존 대시보드 누적 토큰은 과거 실행 기록과 다른 OpenAI 사용량을 포함할 수 있습니다.
+- 이번 변경은 OpenAI 호출을 발생시키지 않습니다.
+
 ## 2026-06-13 02:30
 
 ### 변경 요약

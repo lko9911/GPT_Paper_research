@@ -58,6 +58,10 @@ jobs:
 
       - name: Confirm explicit OpenAI request
         run: |
+          if [ "${{ vars.OPENAI_REFRESH_ENABLED }}" != "true" ]; then
+            echo "OpenAI summary refresh is disabled. Set repository variable OPENAI_REFRESH_ENABLED=true only for the intended run."
+            exit 1
+          fi
           if [ "${{ inputs.explicit_openai_request }}" != "I explicitly request OpenAI summaries" ]; then
             echo "OpenAI summary refresh is blocked. Run only when the user explicitly requests it."
             exit 1
