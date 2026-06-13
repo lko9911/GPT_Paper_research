@@ -76,6 +76,7 @@ const UI_TEXT = {
     emptyText: "검색어와 필터를 조정하거나 GitHub Actions 업데이트를 실행해 보세요.",
     footer:
       "Metadata from OpenAlex, Crossref, and optionally Semantic Scholar. Summaries are generated and do not reproduce publisher abstracts.",
+    contactLabel: "문의",
     papers: "편",
     priority: "Core",
     others: "기타",
@@ -132,6 +133,7 @@ const UI_TEXT = {
     emptyText: "Adjust the search or filters, or run the GitHub Actions update.",
     footer:
       "Metadata from OpenAlex, Crossref, and optionally Semantic Scholar. Summaries are generated and do not reproduce publisher abstracts.",
+    contactLabel: "Contact",
     papers: "papers",
     priority: "Core",
     others: "Others",
@@ -443,6 +445,7 @@ function applyStaticLanguage() {
   setText("#empty-state strong", t("emptyTitle"));
   setText("#empty-state p", t("emptyText"));
   setText("#footer-policy", t("footer"));
+  setText("#contact-label", t("contactLabel"));
   if (els.search) {
     els.search.placeholder = t("searchPlaceholder");
   }
