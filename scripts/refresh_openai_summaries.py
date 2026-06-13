@@ -64,6 +64,8 @@ def main() -> None:
                 paper["abstract_used_for_summary"] = bool(record.get("_abstract"))
                 paper["raw_abstract_displayed"] = False
                 paper["pdf_stored"] = False
+                paper["summary_provider"] = "openai"
+                paper["openai_summary_applied"] = True
                 paper["last_updated"] = today
                 for key in list(paper):
                     if key.startswith("_"):

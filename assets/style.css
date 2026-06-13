@@ -657,6 +657,23 @@ h1 {
   letter-spacing: 0.01em;
 }
 
+.summary-provider-badge {
+  border: 1px solid transparent;
+  font-weight: 820;
+}
+
+.summary-provider-badge.is-fallback {
+  border-color: rgba(154, 100, 0, 0.2);
+  background: var(--amber-soft);
+  color: var(--amber);
+}
+
+.summary-provider-badge.is-openai {
+  border-color: rgba(35, 87, 198, 0.2);
+  background: var(--blue-soft);
+  color: var(--blue);
+}
+
 .paper-title {
   flex: 0;
   margin: 0 0 8px;
@@ -1278,6 +1295,18 @@ h1 {
 :root[data-theme="dark"] .card-topline .publication-badge {
   background: linear-gradient(135deg, #7db4ff, #5b7cfa);
   color: #071224;
+}
+
+:root[data-theme="dark"] .summary-provider-badge.is-fallback {
+  border-color: rgba(240, 195, 109, 0.24);
+  background: #352714;
+  color: #f6d58a;
+}
+
+:root[data-theme="dark"] .summary-provider-badge.is-openai {
+  border-color: rgba(138, 180, 255, 0.24);
+  background: #1b2a45;
+  color: #b9d5ff;
 }
 
 :root[data-theme="dark"] .badge,

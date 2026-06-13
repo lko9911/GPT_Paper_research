@@ -8,6 +8,8 @@
 - archive를 정말 비공개로 만들려면 GitHub Pages 배포 대상에서 제외하거나 별도 비공개 저장소/artifact로 분리해야 합니다.
 - 비용 방지를 위해 정기 `Update papers` workflow는 더 이상 `OPENAI_API_KEY`를 전달하지 않으며, `scripts/update_papers.py`도 기본적으로 OpenAI 호출을 차단합니다.
 - OpenAI 요약은 수동 `Refresh OpenAI summaries` workflow에서 curated papers 대상으로만 실행하는 것이 현재 운영 원칙입니다.
+- 추가 절대 규칙: OpenAI API는 사용자가 명시적으로 요구할 때만 사용합니다. 새로 업데이트되는 모든 논문에는 OpenAI를 적용하지 않습니다.
+- 현재 curated 414편은 모두 `openai_summary_applied=false`이며, UI 카드에는 `OpenAI 미적용` 배지가 표시됩니다.
 
 ## 2026-06-13 00:10 상태
 

@@ -76,8 +76,10 @@
 
 - 정기 `Update papers` workflow는 OpenAI API key를 전달하지 않습니다.
 - `scripts/update_papers.py`는 `ALLOW_OPENAI_IN_UPDATE=true`가 명시되지 않으면 OpenAI를 호출하지 않고 fallback 요약/분류만 생성합니다.
-- OpenAI 요약은 별도 수동 workflow인 `.github/workflows/refresh-openai-summaries.yml`에서 curated papers를 대상으로만 실행합니다.
+- OpenAI 요약은 사용자가 명시적으로 요구할 때만 별도 workflow인 `.github/workflows/refresh-openai-summaries.yml`에서 curated papers를 대상으로 실행합니다.
+- 수동 OpenAI workflow도 `explicit_openai_request` 입력에 정확한 안전 문구를 넣지 않으면 실패합니다.
 - 이 분리의 이유는 raw 후보 수집 단계에서 나중에 archive로 숨길 논문까지 요약하면 불필요한 API 비용이 발생하기 때문입니다.
+- 각 논문에는 `summary_provider`와 `openai_summary_applied` 필드를 저장합니다. UI는 이 값을 보고 `OpenAI 미적용` 또는 `OpenAI 요약` 배지를 표시합니다.
 
 실행 순서:
 
