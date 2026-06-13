@@ -84,6 +84,40 @@
     "openai_summary_applied": false
   },
   {
+    "id": "10.20868/upm.thesis.96235",
+    "title": "4D printed Nitinol metamaterials: from algorithmic design of textile-based soft-stiff architectures towards next generation medical implants",
+    "authors": [
+      "Carlos Aguilar Vega"
+    ],
+    "year": 2026,
+    "venue": "",
+    "doi": "10.20868/upm.thesis.96235",
+    "url": "https://doi.org/10.20868/upm.thesis.96235",
+    "source": [
+      "OpenAlex"
+    ],
+    "categories": [
+      "재료 전환 / 퍼지 감소",
+      "계산설계"
+    ],
+    "tags": [
+      "Metamaterials"
+    ],
+    "relevance_score": 7,
+    "curation_priority": false,
+    "ai_summary_ko": "1. Topic - 이 논문은 무엇을 다루는가? 계산설계 및 메타물질와 관련된 제조·설계 문제를 구체적인 연구 대상으로 삼습니다.\n2. Problem - 어떤 문제나 한계를 해결하려는가? 계산설계 및 메타물질와 관련된 설계·제조상의 병목을 이해하거나 완화하려는 문제를 다룹니다.\n3. Method - 어떤 방법이나 접근을 사용했는가? 개념 제안, 설계 프레임워크 및 방법론을(를) 통해 문제를 분석하고 구현 방향을 제시합니다.\n4. Key Result - 가장 중요한 결과는 무엇인가? 핵심 기여는 재료, 성능, 적용 가능성을 하나의 설계 논리 안에서 함께 해석한 점입니다.\n5. Takeaway - 그래서 이 논문의 핵심 메시지는 무엇인가? 자극 반응 재료와 4D 프린팅을 결합하면 형상 변화 구조를 설계 가능한 제조 대상으로 다룰 수 있다는 점이 핵심 메시지입니다.",
+    "ai_summary_en": "",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_ko": "이 트래커에서는 Metamaterials 키워드를 기준으로 제조·설계 연구와의 관련성을 7/10로 평가했습니다.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-06-13",
+    "last_updated": "2026-06-13",
+    "archive_reason": "duplicate_title"
+  },
+  {
     "id": "10.2139/ssrn.6833705",
     "title": "Tailored Infill Path Design using Surface Mesh Deformation: A Strategy for Boosting Mechanical Performance in Fused Filament Fabrication",
     "authors": [
@@ -111,6 +145,43 @@
     "summary_provider": "fallback",
     "openai_summary_applied": false,
     "relevance_note_ko": "이 트래커에서는 FDM/Material extrusion 키워드를 기준으로 제조·설계 연구와의 관련성을 6/10로 평가했습니다.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-06-13",
+    "last_updated": "2026-06-13",
+    "archive_reason": "duplicate_title"
+  },
+  {
+    "id": "c263dbac285d9194",
+    "title": "3D-printed Soft Optical sensor with a Lens (SOLen) for light guidance in mechanosensing",
+    "authors": [
+      "Diana Cafiso",
+      "Petr Trunin",
+      "Carolina Gay",
+      "Lucia Beccai"
+    ],
+    "year": 2026,
+    "venue": "arXiv (Cornell University)",
+    "doi": "",
+    "url": "https://openalex.org/W7130762781",
+    "source": [
+      "OpenAlex"
+    ],
+    "categories": [
+      "다중재료 적층제조"
+    ],
+    "tags": [
+      "FGAM",
+      "DLP"
+    ],
+    "relevance_score": 6,
+    "curation_priority": false,
+    "ai_summary_ko": "1. Topic - 이 논문은 무엇을 다루는가? 재료 조성이나 물성을 위치에 따라 달리하는 기능성 구배 적층제조를 다룹니다.\n2. Problem - 어떤 문제나 한계를 해결하려는가? 다중재료 구조 및 구배 재료와 관련된 설계·제조상의 병목을 이해하거나 완화하려는 문제를 다룹니다.\n3. Method - 어떤 방법이나 접근을 사용했는가? 접근 방식은 시뮬레이션으로 거동을 예측합니다 마지막으로 제작 실험으로 구현 가능성을 확인하는 것입니다.\n4. Key Result - 가장 중요한 결과는 무엇인가? 핵심 기여는 성능, 설계 가능성 및 제조 적용성을(를) 제조·설계 관점에서 해석할 수 있게 한 점입니다.\n5. Takeaway - 그래서 이 논문의 핵심 메시지는 무엇인가? 재료 배치와 공정 설계를 함께 최적화해야 다중재료 제조의 성능 이점을 얻을 수 있다는 점이 핵심 메시지입니다.",
+    "ai_summary_en": "",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_ko": "이 트래커에서는 FGAM, DLP 키워드를 기준으로 제조·설계 연구와의 관련성을 6/10로 평가했습니다.",
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
@@ -7781,6 +7852,7 @@
     "doi": "10.1002/aisy.70431",
     "url": "https://doi.org/10.1002/aisy.70431",
     "source": [
+      "Crossref",
       "OpenAlex"
     ],
     "categories": [
@@ -18822,7 +18894,8 @@
     "doi": "10.36922/msam025510122",
     "url": "https://doi.org/10.36922/msam025510122",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -19522,7 +19595,8 @@
     "doi": "10.3390/gels12020138",
     "url": "https://doi.org/10.3390/gels12020138",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -21683,7 +21757,8 @@
     "doi": "10.1007/s40964-026-01667-y",
     "url": "https://doi.org/10.1007/s40964-026-01667-y",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -29056,6 +29131,120 @@
     "archive_reason": "duplicate_title"
   },
   {
+    "id": "10.2139/ssrn.5159002",
+    "title": "Multimaterial 3d Printing of Structured Surfaces for Increased Hydrophobicity of Biocomposite Materials",
+    "authors": [
+      "Kayah St. Germain",
+      "Damien Marchand",
+      "Laurence Chocinski-Arnault",
+      "Hani  E. Naguib",
+      "Fabienne Touchard"
+    ],
+    "year": 2025,
+    "venue": "",
+    "doi": "10.2139/ssrn.5159002",
+    "url": "https://doi.org/10.2139/ssrn.5159002",
+    "source": [
+      "Crossref"
+    ],
+    "categories": [
+      "다중재료 적층제조"
+    ],
+    "tags": [
+      "MMAM"
+    ],
+    "relevance_score": 6,
+    "curation_priority": false,
+    "ai_summary_ko": "1. Topic - 이 논문은 무엇을 다루는가? Multimaterial 3d Printing of Structured Surfaces for Increased Hydrophobicity of Biocomposite Materials은(는) 2025년 학술 문헌에 발표된 항목으로, 공개 메타데이터상 다중재료 구조와 관련됩니다.\n2. Problem - 어떤 문제나 한계를 해결하려는가? 초록이 제공되지 않아 구체적인 문제 설정은 DOI 원문 확인이 필요합니다.\n3. Method - 어떤 방법이나 접근을 사용했는가? 제목, venue, DOI 메타데이터, 키워드 신호를 바탕으로 보수적으로 분류했습니다.\n4. Key Result - 가장 중요한 결과는 무엇인가? 공개 메타데이터만으로는 핵심 결과를 단정하지 않고, 관련 주제 여부만 확인했습니다.\n5. Takeaway - 그래서 이 논문의 핵심 메시지는 무엇인가? 재료 배치와 공정 설계를 함께 최적화해야 다중재료 제조의 성능 이점을 얻을 수 있다는 점이 핵심 메시지입니다.",
+    "ai_summary_en": "",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_ko": "이 트래커에서는 MMAM 키워드를 기준으로 제조·설계 연구와의 관련성을 6/10로 평가했습니다.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-06-13",
+    "last_updated": "2026-06-13",
+    "archive_reason": "duplicate_title"
+  },
+  {
+    "id": "10.21203/rs.3.rs-6074274/v1",
+    "title": "Laser-Based Powder Bed Fusion Additive Manufacturing of Thinner Walls Through Re-melting",
+    "authors": [
+      "Adnen Mezghani",
+      "Abdalla R. Nassar",
+      "Timothy W. Simpson"
+    ],
+    "year": 2025,
+    "venue": "",
+    "doi": "10.21203/rs.3.rs-6074274/v1",
+    "url": "https://doi.org/10.21203/rs.3.rs-6074274/v1",
+    "source": [
+      "Crossref"
+    ],
+    "categories": [
+      "다중재료 적층제조",
+      "기능성 구배 적층제조"
+    ],
+    "tags": [
+      "적층 제조",
+      "재용융",
+      "얇은 벽",
+      "레이저 기술"
+    ],
+    "relevance_score": 6,
+    "ai_summary_ko": "1. Topic - 이 논문은 무엇을 다루는가? 이 논문은 레이저 기반 분말 침대 융합 적층 제조에서 얇은 벽을 재용융을 통해 제작하는 방법을 다룹니다.\n2. Problem - 어떤 문제나 한계를 해결하려는가? 얇은 벽 구조물의 제조에서 발생하는 품질 저하와 결함 문제를 해결하려고 합니다.\n3. Method - 어떤 방법이나 접근을 사용했는가? 재용융 기술을 적용하여 레이저 파라미터를 최적화하고, 얇은 벽을 효과적으로 제작하는 방법을 제안합니다.\n4. Key Result - 가장 중요한 결과는 무엇인가? 재용융을 통해 얇은 벽 구조물의 기계적 성질과 표면 품질이 향상되었음을 보여주었습니다.\n5. Takeaway - 그래서 이 논문의 핵심 메시지는 무엇인가? 이 연구는 레이저 기반 적층 제조에서 얇은 벽 구조물의 품질을 개선할 수 있는 새로운 접근법을 제시합니다.",
+    "ai_summary_en": "1. Topic - This paper addresses the production of thinner walls in laser-based powder bed fusion additive manufacturing through re-melting.\n2. Problem - It aims to solve the issues of quality degradation and defects in the manufacturing of thin-walled structures.\n3. Method - The study proposes optimizing laser parameters by applying re-melting techniques to effectively fabricate thin walls.\n4. Key Result - It demonstrates that re-melting improves the mechanical properties and surface quality of thin-walled structures.\n5. Takeaway - This research presents a novel approach to enhance the quality of thin-walled structures in laser-based additive manufacturing.",
+    "summary_provider": "openai",
+    "openai_summary_applied": true,
+    "relevance_note_ko": "이 논문은 적층 제조의 특정 기술적 문제를 다루고 있어 높은 관련성을 가집니다.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-06-13",
+    "last_updated": "2026-06-13",
+    "archive_reason": "duplicate_title"
+  },
+  {
+    "id": "10.20944/preprints202506.2041.v1",
+    "title": "Enabling Intelligent Industrial Automation: A Review of Machine Learning Applications with Digital Twin and Edge AI Integration",
+    "authors": [
+      "Mohammad Abidur Rahman",
+      "Md Farhan Shahrior",
+      "Kamran Iqbal",
+      "Ali A. Abushaiba"
+    ],
+    "year": 2025,
+    "venue": "Preprints.org",
+    "doi": "10.20944/preprints202506.2041.v1",
+    "url": "https://doi.org/10.20944/preprints202506.2041.v1",
+    "source": [
+      "OpenAlex"
+    ],
+    "categories": [
+      "적층제조를 위한 AI 및 머신러닝",
+      "리뷰 및 서베이"
+    ],
+    "tags": [
+      "Digital Twins",
+      "Manufacturing automation",
+      "Process optimization"
+    ],
+    "relevance_score": 6,
+    "curation_priority": false,
+    "ai_summary_ko": "1. Topic - 이 논문은 무엇을 다루는가? 제조 데이터와 학습 기반 모델을 이용해 공정 이해나 설계 자동화를 개선하는 연구입니다.\n2. Problem - 어떤 문제나 한계를 해결하려는가? 제조 공정의 복잡한 변수와 결과 사이의 관계를 데이터 기반으로 파악하는 문제를 다룹니다.\n3. Method - 어떤 방법이나 접근을 사용했는가? 접근 방식은 시뮬레이션으로 거동을 예측합니다 마지막으로 최적화 절차로 설계안을 탐색하는 것입니다.\n4. Key Result - 가장 중요한 결과는 무엇인가? 핵심 기여는 제조 정확도나 공정 효율을 개선할 수 있는 실질적인 설계 기준을 제시한 점입니다.\n5. Takeaway - 그래서 이 논문의 핵심 메시지는 무엇인가? Digital Twins, Manufacturing automation 및 Process optimization 관점에서 관련성 6/10로 평가되며, 핵심 메시지는 제조 방법과 설계 목표를 함께 해석해야 한다는 점입니다.",
+    "ai_summary_en": "",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_ko": "이 트래커에서는 Digital Twins, Manufacturing automation, Process optimization 키워드를 기준으로 제조·설계 연구와의 관련성을 6/10로 평가했습니다.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-06-13",
+    "last_updated": "2026-06-13",
+    "archive_reason": "duplicate_title"
+  },
+  {
     "id": "10.31224/5471",
     "title": "An Open-Source and Low-Cost Dual Extruder 3D Printer for Macroscale Biotic Materials",
     "authors": [
@@ -30934,6 +31123,7 @@
     "doi": "10.1515/ntrev-2025-0145",
     "url": "https://doi.org/10.1515/ntrev-2025-0145",
     "source": [
+      "Crossref",
       "OpenAlex"
     ],
     "categories": [
@@ -34738,6 +34928,7 @@
     "doi": "10.1002/admt.202501075",
     "url": "https://doi.org/10.1002/admt.202501075",
     "source": [
+      "Crossref",
       "OpenAlex"
     ],
     "categories": [
@@ -37186,7 +37377,7 @@
     "pdf_stored": false,
     "first_added": "2026-06-12",
     "last_updated": "2026-06-13",
-    "archive_reason": "low_relevance",
+    "archive_reason": "duplicate_title",
     "summary_provider": "openai",
     "openai_summary_applied": true
   },
@@ -41555,7 +41746,8 @@
     "doi": "10.32996/bjmss.2025.3.2.5",
     "url": "https://doi.org/10.32996/bjmss.2025.3.2.5",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -46350,7 +46542,8 @@
     "doi": "10.1063/5.0271688",
     "url": "https://doi.org/10.1063/5.0271688",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -48244,7 +48437,8 @@
     "doi": "10.64229/t20sy660",
     "url": "https://doi.org/10.64229/t20sy660",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -49908,6 +50102,123 @@
     "openai_summary_applied": true
   },
   {
+    "id": "10.26434/chemrxiv-2024-f94sf",
+    "title": "Multimaterial 3D Laser Printing of Cell-Adhesive and Cell-Repellent Hydrogels",
+    "authors": [
+      "Niklas Schwegler",
+      "Tanisha Gebert",
+      "Maria Villiou",
+      "Federico Colombo",
+      "Barbara Schamberger",
+      "Christine Selhuber-Unkel",
+      "Franziska Thomas",
+      "Eva Blasco"
+    ],
+    "year": 2024,
+    "venue": "",
+    "doi": "10.26434/chemrxiv-2024-f94sf",
+    "url": "https://doi.org/10.26434/chemrxiv-2024-f94sf",
+    "source": [
+      "Crossref"
+    ],
+    "categories": [
+      "다중재료 적층제조"
+    ],
+    "tags": [
+      "MMAM"
+    ],
+    "relevance_score": 6,
+    "curation_priority": false,
+    "ai_summary_ko": "1. Topic - 이 논문은 무엇을 다루는가? 다중재료 구조와 관련된 제조·설계 문제를 구체적인 연구 대상으로 삼습니다.\n2. Problem - 어떤 문제나 한계를 해결하려는가? 다중재료 구조와 관련된 설계·제조상의 병목을 이해하거나 완화하려는 문제를 다룹니다.\n3. Method - 어떤 방법이나 접근을 사용했는가? 접근 방식은 제작 실험으로 구현 가능성을 확인하는 것입니다.\n4. Key Result - 가장 중요한 결과는 무엇인가? 핵심 기여는 기계적 특성, 설계 가능성 및 제조 적용성을(를) 제조·설계 관점에서 해석할 수 있게 한 점입니다.\n5. Takeaway - 그래서 이 논문의 핵심 메시지는 무엇인가? 재료 배치와 공정 설계를 함께 최적화해야 다중재료 제조의 성능 이점을 얻을 수 있다는 점이 핵심 메시지입니다.",
+    "ai_summary_en": "",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_ko": "이 트래커에서는 MMAM 키워드를 기준으로 제조·설계 연구와의 관련성을 6/10로 평가했습니다.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-06-13",
+    "last_updated": "2026-06-13",
+    "archive_reason": "duplicate_title"
+  },
+  {
+    "id": "10.21203/rs.3.rs-4237033/v1",
+    "title": "Hybrid Epoxy-Acrylate Resins for Wavelength-Selective Multimaterial 3D Printing",
+    "authors": [
+      "Zachariah A. Page",
+      "Jiwon Kim",
+      "Marshall J. Allen",
+      "Henry L. Cater",
+      "Ain Uddin",
+      "Elizabeth A. Recker",
+      "Benny D. Freeman"
+    ],
+    "year": 2024,
+    "venue": "Research Square",
+    "doi": "10.21203/rs.3.rs-4237033/v1",
+    "url": "https://doi.org/10.21203/rs.3.rs-4237033/v1",
+    "source": [
+      "Crossref",
+      "OpenAlex"
+    ],
+    "categories": [
+      "다중재료 적층제조"
+    ],
+    "tags": [
+      "MMAM"
+    ],
+    "relevance_score": 6,
+    "curation_priority": false,
+    "ai_summary_ko": "1. Topic - 이 논문은 무엇을 다루는가? Hybrid Epoxy-Acrylate Resins for Wavelength-Selective Multimaterial 3D Printing은(는) 2024년 Research Square에 발표된 항목으로, 공개 메타데이터상 다중재료 구조와 관련됩니다.\n2. Problem - 어떤 문제나 한계를 해결하려는가? 초록이 제공되지 않아 구체적인 문제 설정은 DOI 원문 확인이 필요합니다.\n3. Method - 어떤 방법이나 접근을 사용했는가? 제목, venue, DOI 메타데이터, 키워드 신호를 바탕으로 보수적으로 분류했습니다.\n4. Key Result - 가장 중요한 결과는 무엇인가? 공개 메타데이터만으로는 핵심 결과를 단정하지 않고, 관련 주제 여부만 확인했습니다.\n5. Takeaway - 그래서 이 논문의 핵심 메시지는 무엇인가? 재료 배치와 공정 설계를 함께 최적화해야 다중재료 제조의 성능 이점을 얻을 수 있다는 점이 핵심 메시지입니다.",
+    "ai_summary_en": "",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_ko": "이 트래커에서는 MMAM 키워드를 기준으로 제조·설계 연구와의 관련성을 6/10로 평가했습니다.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-06-13",
+    "last_updated": "2026-06-13",
+    "archive_reason": "duplicate_title"
+  },
+  {
+    "id": "10.26434/chemrxiv-2024-pqzct",
+    "title": "Fabrication of High-Density Microarchitected Tungsten via DLP 3D Printing",
+    "authors": [
+      "Junyu Cai",
+      "Songhua Ma",
+      "Wenbin Yi",
+      "Jieping Wang"
+    ],
+    "year": 2024,
+    "venue": "",
+    "doi": "10.26434/chemrxiv-2024-pqzct",
+    "url": "https://doi.org/10.26434/chemrxiv-2024-pqzct",
+    "source": [
+      "Crossref"
+    ],
+    "categories": [
+      "다중재료 적층제조"
+    ],
+    "tags": [
+      "Metamaterials",
+      "DLP"
+    ],
+    "relevance_score": 5,
+    "curation_priority": false,
+    "ai_summary_ko": "1. Topic - 이 논문은 무엇을 다루는가? 메타물질와 관련된 제조·설계 문제를 구체적인 연구 대상으로 삼습니다.\n2. Problem - 어떤 문제나 한계를 해결하려는가? 메타물질와 관련된 설계·제조상의 병목을 이해하거나 완화하려는 문제를 다룹니다.\n3. Method - 어떤 방법이나 접근을 사용했는가? 접근 방식은 제작 실험으로 구현 가능성을 확인하는 것입니다.\n4. Key Result - 가장 중요한 결과는 무엇인가? 핵심 기여는 기계적 특성, 설계 가능성 및 제조 적용성을(를) 제조·설계 관점에서 해석할 수 있게 한 점입니다.\n5. Takeaway - 그래서 이 논문의 핵심 메시지는 무엇인가? 자극 반응 재료와 4D 프린팅을 결합하면 형상 변화 구조를 설계 가능한 제조 대상으로 다룰 수 있다는 점이 핵심 메시지입니다.",
+    "ai_summary_en": "",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_ko": "이 트래커에서는 Metamaterials, DLP 키워드를 기준으로 제조·설계 연구와의 관련성을 5/10로 평가했습니다.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-06-13",
+    "last_updated": "2026-06-13",
+    "archive_reason": "duplicate_title"
+  },
+  {
     "id": "10.26434/chemrxiv-2024-dp30s",
     "title": "Alignment and Actuation of Liquid Crystals via 3D Confinement and Two-Photon Laser Printing",
     "authors": [
@@ -49924,6 +50235,7 @@
     "doi": "10.26434/chemrxiv-2024-dp30s",
     "url": "https://doi.org/10.26434/chemrxiv-2024-dp30s",
     "source": [
+      "Crossref",
       "OpenAlex"
     ],
     "categories": [
@@ -51857,6 +52169,7 @@
     "doi": "10.1088/1361-665x/ad212c",
     "url": "https://doi.org/10.1088/1361-665x/ad212c",
     "source": [
+      "Crossref",
       "OpenAlex"
     ],
     "categories": [
@@ -54239,7 +54552,8 @@
     "doi": "10.3390/polym16111510",
     "url": "https://doi.org/10.3390/polym16111510",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -61033,7 +61347,8 @@
     "doi": "10.1115/msec2024-125262",
     "url": "https://doi.org/10.1115/msec2024-125262",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
