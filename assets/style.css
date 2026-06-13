@@ -478,12 +478,44 @@ h1 {
 
 .controls {
   display: grid;
-  grid-template-columns: minmax(260px, 1.55fr) repeat(6, minmax(112px, 1fr)) minmax(92px, 0.72fr);
-  gap: 10px;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-areas:
+    "search search search search search reset"
+    "field tag venue summary year sort";
+  align-items: end;
+  gap: 10px 12px;
   padding: 12px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--panel);
+}
+
+.search-field {
+  grid-area: search;
+}
+
+.field-filter {
+  grid-area: field;
+}
+
+.tag-filter {
+  grid-area: tag;
+}
+
+.venue-filter {
+  grid-area: venue;
+}
+
+.summary-filter {
+  grid-area: summary;
+}
+
+.year-filter {
+  grid-area: year;
+}
+
+.sort-filter {
+  grid-area: sort;
 }
 
 .controls label {
@@ -507,13 +539,17 @@ h1 {
 }
 
 .filter-actions {
+  grid-area: reset;
   display: flex;
   align-items: end;
+  justify-content: end;
+  min-width: 0;
 }
 
 .reset-filters-button {
-  background: #f3f6fb;
-  color: #344054;
+  max-width: 108px;
+  background: transparent;
+  color: var(--muted);
   font-weight: 840;
   cursor: pointer;
 }
@@ -521,7 +557,7 @@ h1 {
 .reset-filters-button:hover,
 .reset-filters-button:focus-visible {
   border-color: color-mix(in srgb, var(--blue), #cfd6e2 35%);
-  background: #eaf1fb;
+  background: color-mix(in srgb, var(--blue-soft), transparent 58%);
   color: var(--blue);
 }
 
@@ -1044,12 +1080,15 @@ h1 {
   }
 
   .controls {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-areas:
+      "search search reset"
+      "field tag venue"
+      "summary year sort";
   }
 
-  .search-field,
   .filter-actions {
-    grid-column: 1 / -1;
+    justify-content: end;
   }
 
 }
@@ -1066,6 +1105,26 @@ h1 {
   .stats,
   .controls {
     grid-template-columns: 1fr;
+  }
+
+  .controls {
+    grid-template-areas:
+      "search"
+      "field"
+      "tag"
+      "venue"
+      "summary"
+      "year"
+      "sort"
+      "reset";
+  }
+
+  .filter-actions {
+    justify-content: stretch;
+  }
+
+  .reset-filters-button {
+    max-width: none;
   }
 
   .results-head {
@@ -1101,9 +1160,6 @@ h1 {
     gap: 14px;
   }
 
-  .controls {
-    grid-template-columns: minmax(360px, 1.8fr) repeat(5, minmax(132px, 1fr));
-  }
 }
 
 @media (min-width: 1680px) {
@@ -1720,9 +1776,6 @@ h1 {
     gap: 14px;
   }
 
-  .controls {
-    grid-template-columns: minmax(360px, 1.8fr) repeat(5, minmax(132px, 1fr));
-  }
 }
 
 @media (min-width: 1680px) {
@@ -1784,10 +1837,6 @@ h1 {
 
   .stats {
     grid-template-columns: repeat(4, minmax(180px, 1fr));
-  }
-
-  .controls {
-    grid-template-columns: minmax(340px, 1.75fr) repeat(5, minmax(140px, 1fr));
   }
 
   .venue-featured {
@@ -2388,8 +2437,8 @@ h1 {
 }
 
 .controls {
-  grid-template-columns: minmax(250px, 1.4fr) repeat(6, minmax(106px, 1fr)) minmax(88px, 0.72fr);
-  gap: 8px;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 9px 10px;
   padding: 10px;
 }
 
@@ -2686,7 +2735,11 @@ h1 {
   }
 
   .controls {
-    grid-template-columns: minmax(230px, 1.4fr) repeat(3, minmax(116px, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-areas:
+      "search search reset"
+      "field tag venue"
+      "summary year sort";
   }
 }
 
@@ -2726,6 +2779,15 @@ h1 {
 
   .controls {
     grid-template-columns: 1fr;
+    grid-template-areas:
+      "search"
+      "field"
+      "tag"
+      "venue"
+      "summary"
+      "year"
+      "sort"
+      "reset";
   }
 
   .venue-section-head {
@@ -2766,7 +2828,7 @@ h1 {
   }
 
   .controls {
-    grid-template-columns: minmax(360px, 1.8fr) repeat(6, minmax(124px, 1fr)) minmax(96px, 0.72fr);
+    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 }
 
