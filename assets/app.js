@@ -348,7 +348,6 @@ const els = {
   venue: document.querySelector("#venue-filter"),
   year: document.querySelector("#year-filter"),
   sort: document.querySelector("#sort-select"),
-  venueNav: document.querySelector(".venue-nav"),
   sideTopicNav: document.querySelector("#side-topic-nav"),
   venueBoard: document.querySelector("#venue-board"),
   total: document.querySelector("#stat-total"),
@@ -382,7 +381,6 @@ async function init() {
   }
 
   buildFilters();
-  buildVenueNav();
   buildSideNav();
   renderVenueBoard();
   updateStats();
@@ -417,7 +415,6 @@ function setupPreferences() {
       localStorage.setItem("language", state.language);
       applyPreferences();
       buildFiltersReset();
-      buildVenueNavReset();
       buildSideNav();
       renderVenueBoard();
       updateStats();
@@ -497,11 +494,6 @@ function buildFiltersReset() {
   buildFilters();
 }
 
-function buildVenueNavReset() {
-  els.venueNav.innerHTML = `<button type="button" class="venue-pill is-active" data-target-venue="">${escapeHtml(t("allVenues"))}</button>`;
-  buildVenueNav();
-}
-
 function buildFilters() {
   const fields = new Set();
   const tags = new Set();
@@ -539,34 +531,6 @@ function buildFilters() {
   [...years]
     .sort((a, b) => Number(b) - Number(a))
     .forEach((year) => els.year.append(new Option(year, year)));
-}
-
-function buildVenueNav() {
-  TARGET_VENUES.forEach((venue) => {
-    const count = state.papers.filter((paper) => matchesTargetVenue(normalizeVenue(paper.venue), venue)).length;
-    if (count === 0) return;
-    const button = document.createElement("button");
-    button.type = "button";
-    button.className = "venue-pill";
-    button.dataset.targetVenue = venue;
-    button.innerHTML = `${escapeHtml(shortVenue(venue))} <span>${count}</span>`;
-    button.title = `${venue} 논문만 보기`;
-    els.venueNav.append(button);
-  });
-
-  els.venueNav.addEventListener("click", (event) => {
-    const button = event.target.closest("[data-target-venue]");
-    if (!button) return;
-    state.activeTargetVenue = button.dataset.targetVenue;
-    state.activeVenueGroup = "";
-    if (state.activeTargetVenue) {
-      els.venue.value = "";
-    }
-    els.venueNav.querySelectorAll(".venue-pill").forEach((pill) => {
-      pill.classList.toggle("is-active", pill.dataset.targetVenue === state.activeTargetVenue);
-    });
-    applyFilters();
-  });
 }
 
 function buildSideNav() {
@@ -696,9 +660,6 @@ function renderVenueBoard() {
         state.activeTargetVenue = "";
         els.venue.value = "";
       }
-      els.venueNav.querySelectorAll(".venue-pill").forEach((pill) => {
-        pill.classList.toggle("is-active", pill.dataset.targetVenue === state.activeTargetVenue);
-      });
       els.venueBoard.querySelectorAll(".venue-card").forEach((card) => {
         const sameVenue = card.dataset.boardVenue === venue;
         const sameGroup = (card.dataset.boardVenueGroup || "") === state.activeVenueGroup;
@@ -713,9 +674,6 @@ function renderVenueBoard() {
 function clearVenueQuickFilters() {
   state.activeTargetVenue = "";
   state.activeVenueGroup = "";
-  els.venueNav.querySelectorAll(".venue-pill").forEach((pill) => {
-    pill.classList.toggle("is-active", !pill.dataset.targetVenue);
-  });
   els.venueBoard.querySelectorAll(".venue-card").forEach((card) => {
     card.classList.toggle("is-active", !card.dataset.boardVenue && !card.dataset.boardVenueGroup);
   });
