@@ -2459,3 +2459,39 @@
 ### 주의사항
 - API key, token, secret은 기록하지 않았습니다.
 - 이번 변경은 향후 실행 비용 방지용이며, 이미 발생한 OpenAI usage를 되돌리지는 않습니다.
+
+## 2026-06-13 01:40
+
+### 변경 요약
+- 사용자의 절대 규칙을 반영했습니다: OpenAI API는 사용자가 명시적으로 요구할 때만 사용하며, 새로 업데이트되는 모든 논문에는 적용하지 않습니다.
+- OpenAI가 적용되지 않은 논문을 사이트에서 바로 알아볼 수 있도록 논문 카드에 요약 출처 배지를 추가했습니다.
+- 데이터 파일에 `summary_provider`와 `openai_summary_applied` 필드를 추가했습니다.
+
+### 수정/생성한 파일
+- `data/papers.json`: 현재 curated 414편 모두 `summary_provider: fallback`, `openai_summary_applied: false`로 표시했습니다.
+- `data/archive_papers.json`: 기존 영문 OpenAI 요약 흔적이 있는 archive 항목은 `openai_summary_applied: true`, 나머지는 `false`로 표시했습니다.
+- `data/site_meta.json`: OpenAI 정기 업데이트 비활성화 정책 메타데이터를 추가했습니다.
+- `assets/app.js`: 논문 카드 상단에 `OpenAI 미적용` / `OpenAI 요약` 배지를 렌더링하도록 추가했습니다.
+- `assets/style.css`: 요약 출처 배지의 라이트/다크 모드 스타일을 추가했습니다.
+- `index.html`: CSS/JS cache-busting 버전을 `20260613-0070`으로 갱신했습니다.
+- `.github/workflows/refresh-openai-summaries.yml`: 수동 OpenAI workflow가 명시 문구 없이는 실패하도록 안전 입력을 추가했습니다.
+- `scripts/update_papers.py`: 새 논문 저장 시 요약 출처 필드를 보존하도록 수정했습니다.
+- `scripts/refresh_openai_summaries.py`: 실제 OpenAI 요약 적용 시 `summary_provider: openai`, `openai_summary_applied: true`를 기록하도록 수정했습니다.
+- `PROJECT_STATUS.md`: OpenAI 절대 규칙과 UI 표시 상태를 갱신했습니다.
+- `ARCHITECTURE.md`: OpenAI 사용 정책 및 요약 출처 필드를 문서화했습니다.
+
+### 구현한 기능
+- 새로 업데이트되는 논문은 OpenAI를 사용하지 않습니다.
+- OpenAI가 적용되지 않은 논문은 카드 상단에 `OpenAI 미적용` 배지로 표시됩니다.
+- 사용자가 명시적으로 요구하지 않으면 수동 OpenAI workflow도 실행되지 않습니다.
+
+### 설계 결정
+- OpenAI 적용 여부는 추측 가능한 UI 상태가 아니라 데이터 필드로 명시 저장합니다.
+- 정기 업데이트와 OpenAI 요약은 완전히 분리된 운영 경로로 유지합니다.
+
+### 남은 작업
+- 사용자가 나중에 명시적으로 요청하면 curated 논문 일부 또는 전체에 대해서만 OpenAI 요약을 실행할 수 있습니다.
+
+### 주의사항
+- API key, token, secret은 기록하지 않았습니다.
+- 현재 curated 414편의 OpenAI 적용 수는 0편입니다.

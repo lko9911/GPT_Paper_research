@@ -86,6 +86,9 @@ const UI_TEXT = {
     showing: "개 큐레이션 결과",
     unknownYear: "연도 미상",
     relevanceLabel: "관련성",
+    openaiApplied: "OpenAI 요약",
+    openaiNotApplied: "OpenAI 미적용",
+    fallbackSummary: "Fallback 요약",
     summaryMissing: "요약이 아직 생성되지 않았습니다.",
     summaryQuestions: [
       "Topic",
@@ -138,6 +141,9 @@ const UI_TEXT = {
     showing: "curated results",
     unknownYear: "Year unknown",
     relevanceLabel: "Relevance",
+    openaiApplied: "OpenAI summary",
+    openaiNotApplied: "No OpenAI",
+    fallbackSummary: "Fallback summary",
     summaryMissing: "Summary has not been generated yet.",
     summaryQuestions: [
       "Topic",
@@ -855,6 +861,7 @@ function renderPaperRow(paper) {
   const sourceText = (paper.source || []).join(", ") || "Metadata API";
   const authors = formatAuthors(paper.authors || []);
   const publicationLabel = formatPublicationLabel(paper);
+  const summaryProviderLabel = formatSummaryProviderLabel(paper);
   const summaryHtml = renderSummaryBlock(paper);
   const relevanceNote = formatRelevanceNote(paper);
   const representativeBadges = representativeTags(paper)
@@ -865,6 +872,7 @@ function renderPaperRow(paper) {
     <div class="card-content">
       <div class="card-topline">
         <span class="publication-badge">${escapeHtml(publicationLabel)}</span>
+        <span class="${escapeAttribute(summaryProviderLabel.className)}">${escapeHtml(summaryProviderLabel.text)}</span>
         <span>${escapeHtml(t("relevanceLabel"))} ${escapeHtml(String(paper.relevance_score || "-"))}/10</span>
       </div>
       <h4 class="paper-title">${escapeHtml(paper.title || "Untitled")}</h4>
@@ -954,6 +962,13 @@ function formatSummarySections(paper) {
     }));
   }
   return sections.length ? englishSummarySections(paper) : [];
+}
+
+function formatSummaryProviderLabel(paper) {
+  if (paper.openai_summary_applied === true || paper.summary_provider === "openai") {
+    return { text: t("openaiApplied"), className: "summary-provider-badge is-openai" };
+  }
+  return { text: t("openaiNotApplied"), className: "summary-provider-badge is-fallback" };
 }
 
 function parseStoredSummarySections(summary) {
