@@ -1214,6 +1214,46 @@
     "ai_summary_en": "1. Topic - This paper addresses recent advancements in 4D printing, focusing on materials, methods, and applications.\n2. Problem - It aims to resolve issues related to the limited adoption of 4D printing and barriers such as long-term reliability, manufacturing scalability, and design predictability.\n3. Method - The review systematically examines key additive manufacturing techniques and stimulus-responsive materials, analyzing their interactions through various application cases.\n4. Key Result - It finds that material extrusion and vat photopolymerization are the most practical methods for 4D printing, with shape memory polymers being the most widely used materials.\n5. Takeaway - The key message is that the successful application of 4D printing relies on the interaction among fabrication methods, material responses, activation mechanisms, and structural designs."
   },
   {
+    "id": "10.1007/s44245-026-00274-z",
+    "title": "Recent advances in machine learning based optimization of porous propeller aerodynamics for unmanned aerial vehicle systems",
+    "authors": [
+      "Kaustav Dey",
+      "Suman Debnath",
+      "Raj Kumar",
+      "Gaurav Arora",
+      "Papiya Bhowmik",
+      "Mohit Kumar",
+      "Vinod Ayyappan",
+      "Ravi Sevak"
+    ],
+    "year": 2026,
+    "venue": "Discover Mechanical Engineering",
+    "doi": "10.1007/s44245-026-00274-z",
+    "url": "https://doi.org/10.1007/s44245-026-00274-z",
+    "source": [
+      "OpenAlex"
+    ],
+    "categories": [
+      "적층제조를 위한 AI 및 머신러닝",
+      "계산설계"
+    ],
+    "tags": [
+      "Digital Twins"
+    ],
+    "relevance_score": 7,
+    "curation_priority": false,
+    "ai_summary_ko": "1. Topic - 이 논문은 무엇을 다루는가? 제조 데이터와 학습 기반 모델을 이용해 공정 이해나 설계 자동화를 개선하는 연구입니다.\n2. Problem - 어떤 문제나 한계를 해결하려는가? 제조 공정의 복잡한 변수와 결과 사이의 관계를 데이터 기반으로 파악하는 문제를 다룹니다.\n3. Method - 어떤 방법이나 접근을 사용했는가? 접근 방식은 제작 실험으로 구현 가능성을 확인합니다 마지막으로 최적화 절차로 설계안을 탐색하는 것입니다.\n4. Key Result - 가장 중요한 결과는 무엇인가? 핵심 기여는 프린팅 전략이 기계적 성능과 구조 응답에 미치는 영향을 구체적으로 보여준 점입니다.\n5. Takeaway - 그래서 이 논문의 핵심 메시지는 무엇인가? Digital Twins 관점에서 관련성 7/10로 평가되며, 핵심 메시지는 제조 방법과 설계 목표를 함께 해석해야 한다는 점입니다.",
+    "ai_summary_en": "",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_ko": "이 트래커에서는 Digital Twins 키워드를 기준으로 제조·설계 연구와의 관련성을 7/10로 평가했습니다.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-06-13",
+    "last_updated": "2026-06-13"
+  },
+  {
     "id": "10.5755/j02.mech.40395",
     "title": "Recent Advances in Friction Stir Additive Manufacturing: A Review of Mechanical and Microstructural Performance in Similar and Dissimilar Composites",
     "authors": [
@@ -1457,6 +1497,45 @@
     "summary_provider": "openai",
     "openai_summary_applied": true,
     "ai_summary_en": "1. Topic - This paper addresses toolpath planning in additive manufacturing.\n2. Problem - It aims to solve the issue of conventional toolpath strategies ignoring physical principles, leading to defects and inefficiencies.\n3. Method - A reinforcement learning framework is employed that integrates policy learning with finite-element thermal simulations.\n4. Key Result - The learned policies outperform conventional zigzag baselines in speed and generalize effectively to irregular geometries.\n5. Takeaway - The core message of this paper is that reinforcement learning can optimize toolpaths in additive manufacturing."
+  },
+  {
+    "id": "10.1016/j.matdes.2026.116367",
+    "title": "Interfacial structure − property relationships in additively manufactured WC-Co/316L multi-material systems",
+    "authors": [
+      "Stefan Roos",
+      "Carlos Botero",
+      "William Sjöström",
+      "Francesc Barberà-Flichi",
+      "Emil Ekwall",
+      "Mikael Schuisky",
+      "Lars‐Erik Rännar"
+    ],
+    "year": 2026,
+    "venue": "Materials & Design",
+    "doi": "10.1016/j.matdes.2026.116367",
+    "url": "https://doi.org/10.1016/j.matdes.2026.116367",
+    "source": [
+      "OpenAlex"
+    ],
+    "categories": [
+      "재료 전환 / 퍼지 감소",
+      "다중재료 적층제조"
+    ],
+    "tags": [
+      "FGAM"
+    ],
+    "relevance_score": 7,
+    "curation_priority": false,
+    "ai_summary_ko": "1. Topic - 이 논문은 무엇을 다루는가? 재료 조성이나 물성을 위치에 따라 달리하는 기능성 구배 적층제조를 다룹니다.\n2. Problem - 어떤 문제나 한계를 해결하려는가? 다중재료 구조 및 구배 재료와 관련된 설계·제조상의 병목을 이해하거나 완화하려는 문제를 다룹니다.\n3. Method - 어떤 방법이나 접근을 사용했는가? 공개 초록의 문제 설정과 접근법을(를) 통해 문제를 분석하고 구현 방향을 제시합니다.\n4. Key Result - 가장 중요한 결과는 무엇인가? 핵심 기여는 프린팅 전략이 기계적 성능과 구조 응답에 미치는 영향을 구체적으로 보여준 점입니다.\n5. Takeaway - 그래서 이 논문의 핵심 메시지는 무엇인가? 재료 배치와 공정 설계를 함께 최적화해야 다중재료 제조의 성능 이점을 얻을 수 있다는 점이 핵심 메시지입니다.",
+    "ai_summary_en": "",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_ko": "이 트래커에서는 FGAM 키워드를 기준으로 제조·설계 연구와의 관련성을 7/10로 평가했습니다.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-06-13",
+    "last_updated": "2026-06-13"
   },
   {
     "id": "10.1016/j.jmapro.2026.04.069",
@@ -3244,6 +3323,39 @@
     "ai_summary_en": "1. Topic - This paper addresses superior bonding in multimaterial additive manufacturing through printing orientation and interfacial mechanical design.\n2. Problem - It aims to solve the issue of insufficient adhesion between mechanically dissimilar 3D-printed materials, which leads to premature debonding under load.\n3. Method - The study employs optimized printing orientations to create dense mechanical interlocking.\n4. Key Result - Specimens printed in 'on edge' orientation showed up to a 389% increase in interfacial toughness compared to 'flat' oriented specimens.\n5. Takeaway - Thus, the core message is that strategic selection of printing orientation combined with interfacial mechanical design provides a scalable route for achieving robust bonding in multimaterial additive manufacturing."
   },
   {
+    "id": "10.5772/intechopen.1015854",
+    "title": "Predictive Maintenance – An Overview",
+    "authors": [
+      "Mihaela Juganaru"
+    ],
+    "year": 2026,
+    "venue": "IntechOpen eBooks",
+    "doi": "10.5772/intechopen.1015854",
+    "url": "https://doi.org/10.5772/intechopen.1015854",
+    "source": [
+      "OpenAlex"
+    ],
+    "categories": [
+      "적층제조를 위한 AI 및 머신러닝",
+      "리뷰 및 서베이"
+    ],
+    "tags": [
+      "Digital Twins"
+    ],
+    "relevance_score": 6,
+    "curation_priority": false,
+    "ai_summary_ko": "1. Topic - 이 논문은 무엇을 다루는가? 제조 데이터와 학습 기반 모델을 이용해 공정 이해나 설계 자동화를 개선하는 연구입니다.\n2. Problem - 어떤 문제나 한계를 해결하려는가? 제조 공정의 복잡한 변수와 결과 사이의 관계를 데이터 기반으로 파악하는 문제를 다룹니다.\n3. Method - 어떤 방법이나 접근을 사용했는가? 방법론, 머신러닝 및 딥러닝을(를) 통해 문제를 분석하고 구현 방향을 제시합니다.\n4. Key Result - 가장 중요한 결과는 무엇인가? 핵심 기여는 설계와 제조 관점의 의미을(를) 제조·설계 관점에서 해석할 수 있게 한 점입니다.\n5. Takeaway - 그래서 이 논문의 핵심 메시지는 무엇인가? Digital Twins 관점에서 관련성 6/10로 평가되며, 핵심 메시지는 제조 방법과 설계 목표를 함께 해석해야 한다는 점입니다.",
+    "ai_summary_en": "",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_ko": "이 트래커에서는 Digital Twins 키워드를 기준으로 제조·설계 연구와의 관련성을 6/10로 평가했습니다.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-06-13",
+    "last_updated": "2026-06-13"
+  },
+  {
     "id": "10.3390/jpbi3020009",
     "title": "Precision and Personalized Medicine in Transdermal Drug Delivery Systems: Integrating AI Approaches",
     "authors": [
@@ -4113,6 +4225,40 @@
     "summary_provider": "openai",
     "openai_summary_applied": true,
     "ai_summary_en": "1. Topic - This paper discusses the impact of 4D printing technology on the future of smart and sustainable food production.\n2. Problem - It aims to address the need for sustainability and personalization in food production.\n3. Method - The study developed and evaluated prototypes using 4D printing technology, plant-based inks, and artificial intelligence.\n4. Key Result - The prototypes achieved up to a 25% extension in shelf life and a 25% reduction in waste.\n5. Takeaway - 4D-printed smart foods can serve as eco-friendly, nutrient-rich alternatives, contributing to solving food security challenges."
+  },
+  {
+    "id": "10.5281/zenodo.20661261",
+    "title": "Future Scope of Automation in Civil Engineering",
+    "authors": [
+      "P Abhilash"
+    ],
+    "year": 2026,
+    "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+    "doi": "10.5281/zenodo.20661261",
+    "url": "https://doi.org/10.5281/zenodo.20661261",
+    "source": [
+      "OpenAlex"
+    ],
+    "categories": [
+      "리뷰 및 서베이",
+      "적층제조를 위한 AI 및 머신러닝"
+    ],
+    "tags": [
+      "Digital Twins",
+      "Manufacturing automation"
+    ],
+    "relevance_score": 6,
+    "curation_priority": false,
+    "ai_summary_ko": "1. Topic - 이 논문은 무엇을 다루는가? 로봇 기반 제조와 관련된 제조·설계 문제를 구체적인 연구 대상으로 삼습니다.\n2. Problem - 어떤 문제나 한계를 해결하려는가? 로봇 기반 제조와 관련된 설계·제조상의 병목을 이해하거나 완화하려는 문제를 다룹니다.\n3. Method - 어떤 방법이나 접근을 사용했는가? 개념적 논의, 방법론 및 문헌 검토을(를) 통해 문제를 분석하고 구현 방향을 제시합니다.\n4. Key Result - 가장 중요한 결과는 무엇인가? 핵심 기여는 제조 정확도나 공정 효율을 개선할 수 있는 실질적인 설계 기준을 제시한 점입니다.\n5. Takeaway - 그래서 이 논문의 핵심 메시지는 무엇인가? Digital Twins 및 Manufacturing automation 관점에서 관련성 6/10로 평가되며, 핵심 메시지는 제조 방법과 설계 목표를 함께 해석해야 한다는 점입니다.",
+    "ai_summary_en": "",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_ko": "이 트래커에서는 Digital Twins, Manufacturing automation 키워드를 기준으로 제조·설계 연구와의 관련성을 6/10로 평가했습니다.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-06-13",
+    "last_updated": "2026-06-13"
   },
   {
     "id": "10.46793/adeletters.2026.5.1.2",
@@ -5017,6 +5163,42 @@
     "ai_summary_en": "1. Topic - This paper discusses the advancements in smart materials, lattice optimization, and process intelligence through the integration of artificial intelligence and additive manufacturing.\n2. Problem - It aims to address key challenges related to process complexity, parameter tuning, and multifunctional design in additive manufacturing.\n3. Method - The approach utilizes AI and machine learning to replace labor-intensive experimentation with predictive and adaptive models based on data-driven methods.\n4. Key Result - It illustrates how AI contributes to the evolution of additive manufacturing from empirical fabrication to autonomous, multifunctional manufacturing paradigms.\n5. Takeaway - The paper emphasizes that AI is a crucial driver of innovation in additive manufacturing while highlighting challenges such as data scarcity and interpretability."
   },
   {
+    "id": "10.3390/ma19122538",
+    "title": "Artificial Intelligence in the Design and Optimization of Orthodontic Materials: A Clinical Perspective on Current State and Future Directions",
+    "authors": [
+      "Marcin Mikulewicz",
+      "Anna Paradowska-Stolarz"
+    ],
+    "year": 2026,
+    "venue": "Materials",
+    "doi": "10.3390/ma19122538",
+    "url": "https://doi.org/10.3390/ma19122538",
+    "source": [
+      "OpenAlex"
+    ],
+    "categories": [
+      "적층제조를 위한 AI 및 머신러닝",
+      "리뷰 및 서베이"
+    ],
+    "tags": [
+      "Self-driving Labs",
+      "Digital Twins",
+      "Process optimization"
+    ],
+    "relevance_score": 6,
+    "curation_priority": false,
+    "ai_summary_ko": "1. Topic - 이 논문은 무엇을 다루는가? Self-driving Labs, Digital Twins와 관련된 제조·설계 문제를 구체적인 연구 대상으로 삼습니다.\n2. Problem - 어떤 문제나 한계를 해결하려는가? Self-driving Labs, Digital Twins와 관련된 설계·제조상의 병목을 이해하거나 완화하려는 문제를 다룹니다.\n3. Method - 어떤 방법이나 접근을 사용했는가? 접근 방식은 최적화 절차로 설계안을 탐색하는 것입니다.\n4. Key Result - 가장 중요한 결과는 무엇인가? 핵심 기여는 프린팅 전략이 기계적 성능과 구조 응답에 미치는 영향을 구체적으로 보여준 점입니다.\n5. Takeaway - 그래서 이 논문의 핵심 메시지는 무엇인가? Self-driving Labs, Digital Twins 및 Process optimization 관점에서 관련성 6/10로 평가되며, 핵심 메시지는 제조 방법과 설계 목표를 함께 해석해야 한다는 점입니다.",
+    "ai_summary_en": "",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_ko": "이 트래커에서는 Self-driving Labs, Digital Twins, Process optimization 키워드를 기준으로 제조·설계 연구와의 관련성을 6/10로 평가했습니다.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-06-13",
+    "last_updated": "2026-06-13"
+  },
+  {
     "id": "10.3311/ppci.30373",
     "title": "Algorithm for Generating Gradient Infills in Load-bearing 3D-printed Parts",
     "authors": [
@@ -5408,6 +5590,79 @@
     "summary_provider": "openai",
     "openai_summary_applied": true,
     "ai_summary_en": "1. Topic - This paper presents a standardized workflow for the development of 3D-printed anthropomorphic phantoms for radiotherapy.\n2. Problem - It aims to address the issue of limited reproducibility and comparability across studies due to the lack of standardization in phantom development.\n3. Method - A systematic standardized workflow was designed, encompassing material characterization, calibration, and phantom fabrication.\n4. Key Result - The phantoms produced showed a maximum deviation of 6.04% in RED and 3.00% in Zeff compared to calibration-optimized values.\n5. Takeaway - This study provides a practical foundation that supports clinical implementation and improves patient-specific radiotherapy outcomes."
+  },
+  {
+    "id": "10.1007/s44372-026-00696-9",
+    "title": "A review of AI-driven phenomics, genomics, and predictive breeding in wheat",
+    "authors": [
+      "Mohammad Jafar Tanin",
+      "Dinesh Kumar Saini",
+      "Praveenkumar Alagappan",
+      "Jatinder Kaur"
+    ],
+    "year": 2026,
+    "venue": "Discover Plants.",
+    "doi": "10.1007/s44372-026-00696-9",
+    "url": "https://doi.org/10.1007/s44372-026-00696-9",
+    "source": [
+      "OpenAlex"
+    ],
+    "categories": [
+      "적층제조를 위한 AI 및 머신러닝",
+      "리뷰 및 서베이"
+    ],
+    "tags": [
+      "Digital Twins"
+    ],
+    "relevance_score": 6,
+    "curation_priority": false,
+    "ai_summary_ko": "1. Topic - 이 논문은 무엇을 다루는가? 제조 데이터와 학습 기반 모델을 이용해 공정 이해나 설계 자동화를 개선하는 연구입니다.\n2. Problem - 어떤 문제나 한계를 해결하려는가? 제조 공정의 복잡한 변수와 결과 사이의 관계를 데이터 기반으로 파악하는 문제를 다룹니다.\n3. Method - 어떤 방법이나 접근을 사용했는가? 개념적 논의, 설계 프레임워크 및 방법론을(를) 통해 문제를 분석하고 구현 방향을 제시합니다.\n4. Key Result - 가장 중요한 결과는 무엇인가? 핵심 기여는 제조 정확도나 공정 효율을 개선할 수 있는 실질적인 설계 기준을 제시한 점입니다.\n5. Takeaway - 그래서 이 논문의 핵심 메시지는 무엇인가? Digital Twins 관점에서 관련성 6/10로 평가되며, 핵심 메시지는 제조 방법과 설계 목표를 함께 해석해야 한다는 점입니다.",
+    "ai_summary_en": "",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_ko": "이 트래커에서는 Digital Twins 키워드를 기준으로 제조·설계 연구와의 관련성을 6/10로 평가했습니다.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-06-13",
+    "last_updated": "2026-06-13"
+  },
+  {
+    "id": "10.1038/s41598-026-56030-6",
+    "title": "A machine learning framework for structural and predictive analysis of intelligent data networks",
+    "authors": [
+      "Sanjay Agal",
+      "Arpit Shah",
+      "Nikunj Bhavsar",
+      "Nirav Pareshkumar Mehta",
+      "Shiv Shakti Shrivastava"
+    ],
+    "year": 2026,
+    "venue": "Scientific Reports",
+    "doi": "10.1038/s41598-026-56030-6",
+    "url": "https://doi.org/10.1038/s41598-026-56030-6",
+    "source": [
+      "OpenAlex"
+    ],
+    "categories": [
+      "적층제조를 위한 AI 및 머신러닝",
+      "그래프 탐색 / 경로 계획 알고리즘"
+    ],
+    "tags": [
+      "Digital Twins"
+    ],
+    "relevance_score": 6,
+    "curation_priority": false,
+    "ai_summary_ko": "1. Topic - 이 논문은 무엇을 다루는가? 제조 데이터와 학습 기반 모델을 이용해 공정 이해나 설계 자동화를 개선하는 연구입니다.\n2. Problem - 어떤 문제나 한계를 해결하려는가? 제조 공정의 복잡한 변수와 결과 사이의 관계를 데이터 기반으로 파악하는 문제를 다룹니다.\n3. Method - 어떤 방법이나 접근을 사용했는가? 접근 방식은 디자인 사례를 비교하고, 제작 실험으로 구현 가능성을 확인합니다 마지막으로 최적화 절차로 설계안을 탐색하는 것입니다.\n4. Key Result - 가장 중요한 결과는 무엇인가? 핵심 기여는 제조 정확도나 공정 효율을 개선할 수 있는 실질적인 설계 기준을 제시한 점입니다.\n5. Takeaway - 그래서 이 논문의 핵심 메시지는 무엇인가? Digital Twins 관점에서 관련성 6/10로 평가되며, 핵심 메시지는 제조 방법과 설계 목표를 함께 해석해야 한다는 점입니다.",
+    "ai_summary_en": "",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_ko": "이 트래커에서는 Digital Twins 키워드를 기준으로 제조·설계 연구와의 관련성을 6/10로 평가했습니다.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-06-13",
+    "last_updated": "2026-06-13"
   },
   {
     "id": "10.36922/ijb026140128",
@@ -5923,6 +6178,41 @@
     "ai_summary_en": "1. Topic - This paper addresses a visuo-tactile sensor for soft robotic grippers.\n2. Problem - There is a need for a method to detect and distinguish force distribution without complex transmission and processing of electrical signals.\n3. Method - A new approach was developed using cholesteric liquid crystal elastomers and a 3D-printed microtip array to detect forces.\n4. Key Result - The system can detect milli-Newton forces with a resolution of approximately 2 mN and processes color signals in real-time using a low-cost Raspberry Pi 4 camera.\n5. Takeaway - This research presents the potential for miniaturized tactile sensors applicable to soft robotic grippers."
   },
   {
+    "id": "10.1007/s44327-026-00294-0",
+    "title": "Urban circularity digital twin to support decision-making for sustainable mobility",
+    "authors": [
+      "Marcela Noronha Pinto de Oliveira e Sousa",
+      "Silvia Cruz",
+      "Victor Yuji Kubo Machado",
+      "Léa Gejer Struchiner"
+    ],
+    "year": 2026,
+    "venue": "Discover Cities",
+    "doi": "10.1007/s44327-026-00294-0",
+    "url": "https://doi.org/10.1007/s44327-026-00294-0",
+    "source": [
+      "OpenAlex"
+    ],
+    "categories": [
+      "다중재료 적층제조"
+    ],
+    "tags": [
+      "Digital Twins"
+    ],
+    "relevance_score": 5,
+    "curation_priority": false,
+    "ai_summary_ko": "1. Topic - 이 논문은 무엇을 다루는가? Digital Twins와 관련된 제조·설계 문제를 구체적인 연구 대상으로 삼습니다.\n2. Problem - 어떤 문제나 한계를 해결하려는가? Digital Twins와 관련된 설계·제조상의 병목을 이해하거나 완화하려는 문제를 다룹니다.\n3. Method - 어떤 방법이나 접근을 사용했는가? 설계 프레임워크을(를) 통해 문제를 분석하고 구현 방향을 제시합니다.\n4. Key Result - 가장 중요한 결과는 무엇인가? 핵심 기여는 지속가능성 및 설계 가능성을(를) 제조·설계 관점에서 해석할 수 있게 한 점입니다.\n5. Takeaway - 그래서 이 논문의 핵심 메시지는 무엇인가? Digital Twins 관점에서 관련성 5/10로 평가되며, 핵심 메시지는 제조 방법과 설계 목표를 함께 해석해야 한다는 점입니다.",
+    "ai_summary_en": "",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_ko": "이 트래커에서는 Digital Twins 키워드를 기준으로 제조·설계 연구와의 관련성을 5/10로 평가했습니다.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-06-13",
+    "last_updated": "2026-06-13"
+  },
+  {
     "id": "385707cb8531012b",
     "title": "Towards Active Real-to-Twin Inspection: A New Paradigm for Zero-Shot Anomaly Detection",
     "authors": [
@@ -6354,7 +6644,8 @@
     "doi": "10.1016/j.amf.2026.200359",
     "url": "https://doi.org/10.1016/j.amf.2026.200359",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "기능성 구배 적층제조",
@@ -6420,6 +6711,46 @@
     "summary_provider": "openai",
     "openai_summary_applied": true,
     "ai_summary_en": "1. Topic - This paper addresses the alignment of liquid crystalline elastomers (LCEs) through digital light processing 3D printing.\n2. Problem - Current manufacturing methods struggle to produce complex spatial patterns in three dimensions.\n3. Method - A strategy integrating a rotatable magnetic array with DLP photomasking is used for voxel-level control of LCE alignment domains.\n4. Key Result - Multidomain LCE smart valves were fabricated, achieving up to 70% improved flow control compared to monodomain counterparts.\n5. Takeaway - This technique dramatically expands the design space of 3D programmable matter and establishes a pathway for complex LCE systems."
+  },
+  {
+    "id": "10.1007/s40684-026-00906-5",
+    "title": "Smart Operation Platform for Railway Rolling Stock Production Using Digital Twin and AI",
+    "authors": [
+      "Hyewon Cho",
+      "Hayong Lee",
+      "Seyed Mohammad Mehdi Sajadieh",
+      "Hee-Chang Yoon",
+      "Chang-hyeon Song",
+      "Jong Hun Woo",
+      "J H Choi",
+      "Sang Do Noh"
+    ],
+    "year": 2026,
+    "venue": "International Journal of Precision Engineering and Manufacturing-Green Technology",
+    "doi": "10.1007/s40684-026-00906-5",
+    "url": "https://doi.org/10.1007/s40684-026-00906-5",
+    "source": [
+      "OpenAlex"
+    ],
+    "categories": [
+      "다중재료 적층제조"
+    ],
+    "tags": [
+      "Digital Twins",
+      "Manufacturing automation"
+    ],
+    "relevance_score": 5,
+    "curation_priority": false,
+    "ai_summary_ko": "1. Topic - 이 논문은 무엇을 다루는가? Digital Twins, Manufacturing automation와 관련된 제조·설계 문제를 구체적인 연구 대상으로 삼습니다.\n2. Problem - 어떤 문제나 한계를 해결하려는가? Digital Twins, Manufacturing automation와 관련된 설계·제조상의 병목을 이해하거나 완화하려는 문제를 다룹니다.\n3. Method - 어떤 방법이나 접근을 사용했는가? 접근 방식은 시뮬레이션으로 거동을 예측합니다 마지막으로 최적화 절차로 설계안을 탐색하는 것입니다.\n4. Key Result - 가장 중요한 결과는 무엇인가? 핵심 기여는 제조 정확도나 공정 효율을 개선할 수 있는 실질적인 설계 기준을 제시한 점입니다.\n5. Takeaway - 그래서 이 논문의 핵심 메시지는 무엇인가? Digital Twins 및 Manufacturing automation 관점에서 관련성 5/10로 평가되며, 핵심 메시지는 제조 방법과 설계 목표를 함께 해석해야 한다는 점입니다.",
+    "ai_summary_en": "",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_ko": "이 트래커에서는 Digital Twins, Manufacturing automation 키워드를 기준으로 제조·설계 연구와의 관련성을 5/10로 평가했습니다.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-06-13",
+    "last_updated": "2026-06-13"
   },
   {
     "id": "10.21203/rs.3.rs-8971871/v1",
@@ -6491,6 +6822,39 @@
     "summary_provider": "openai",
     "openai_summary_applied": true,
     "relevance_note_ko": "논문 주제와 관련된 기술적 접근 방식과 결과가 명확하게 설명되어 있습니다.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-06-13",
+    "last_updated": "2026-06-13"
+  },
+  {
+    "id": "10.1002/9783527854578.ch08",
+    "title": "Shape‐memory Hydrogels",
+    "authors": [
+      "Guodong Fu",
+      "Mulenga Kalulu"
+    ],
+    "year": 2026,
+    "venue": "",
+    "doi": "10.1002/9783527854578.ch08",
+    "url": "https://doi.org/10.1002/9783527854578.ch08",
+    "source": [
+      "OpenAlex"
+    ],
+    "categories": [
+      "적층제조를 위한 AI 및 머신러닝"
+    ],
+    "tags": [
+      "4D printing"
+    ],
+    "relevance_score": 5,
+    "curation_priority": false,
+    "ai_summary_ko": "1. Topic - 이 논문은 무엇을 다루는가? 로봇 기반 제조 및 4D 프린팅와 관련된 제조·설계 문제를 구체적인 연구 대상으로 삼습니다.\n2. Problem - 어떤 문제나 한계를 해결하려는가? 로봇 기반 제조 및 4D 프린팅와 관련된 설계·제조상의 병목을 이해하거나 완화하려는 문제를 다룹니다.\n3. Method - 어떤 방법이나 접근을 사용했는가? 접근 방식은 제작 실험으로 구현 가능성을 확인합니다 마지막으로 최적화 절차로 설계안을 탐색하는 것입니다.\n4. Key Result - 가장 중요한 결과는 무엇인가? 핵심 기여는 기계적 특성, 지속가능성 및 제조 적용성을(를) 제조·설계 관점에서 해석할 수 있게 한 점입니다.\n5. Takeaway - 그래서 이 논문의 핵심 메시지는 무엇인가? 자극 반응 재료와 4D 프린팅을 결합하면 형상 변화 구조를 설계 가능한 제조 대상으로 다룰 수 있다는 점이 핵심 메시지입니다.",
+    "ai_summary_en": "",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_ko": "이 트래커에서는 4D printing 키워드를 기준으로 제조·설계 연구와의 관련성을 5/10로 평가했습니다.",
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
@@ -8365,6 +8729,40 @@
     "last_updated": "2026-06-13"
   },
   {
+    "id": "10.1109/mc.2026.3671749",
+    "title": "InterwovenXR: A Cyber–Physical–Social Testbed System for Robotics, Digital Twins, and Hyperautomation",
+    "authors": [
+      "Louis Nisiotis",
+      "Marios Raspopoulos"
+    ],
+    "year": 2026,
+    "venue": "Computer",
+    "doi": "10.1109/mc.2026.3671749",
+    "url": "https://doi.org/10.1109/mc.2026.3671749",
+    "source": [
+      "OpenAlex"
+    ],
+    "categories": [
+      "적층제조를 위한 AI 및 머신러닝"
+    ],
+    "tags": [
+      "Digital Twins",
+      "Manufacturing automation"
+    ],
+    "relevance_score": 5,
+    "curation_priority": false,
+    "ai_summary_ko": "1. Topic - 이 논문은 무엇을 다루는가? 로봇 기반 제조와 관련된 제조·설계 문제를 구체적인 연구 대상으로 삼습니다.\n2. Problem - 어떤 문제나 한계를 해결하려는가? 로봇 기반 제조와 관련된 설계·제조상의 병목을 이해하거나 완화하려는 문제를 다룹니다.\n3. Method - 어떤 방법이나 접근을 사용했는가? 공개 초록의 문제 설정과 접근법을(를) 통해 문제를 분석하고 구현 방향을 제시합니다.\n4. Key Result - 가장 중요한 결과는 무엇인가? 핵심 기여는 설계 가능성을(를) 제조·설계 관점에서 해석할 수 있게 한 점입니다.\n5. Takeaway - 그래서 이 논문의 핵심 메시지는 무엇인가? Digital Twins 및 Manufacturing automation 관점에서 관련성 5/10로 평가되며, 핵심 메시지는 제조 방법과 설계 목표를 함께 해석해야 한다는 점입니다.",
+    "ai_summary_en": "",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_ko": "이 트래커에서는 Digital Twins, Manufacturing automation 키워드를 기준으로 제조·설계 연구와의 관련성을 5/10로 평가했습니다.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-06-13",
+    "last_updated": "2026-06-13"
+  },
+  {
     "id": "10.1201/9781003504825-2",
     "title": "Integration of Digital Twin Technology into Intelligent Manufacturing Systems for Enhancing Sustainability in Industry 4.0",
     "authors": [
@@ -8889,6 +9287,42 @@
     "last_updated": "2026-06-13"
   },
   {
+    "id": "abe47425b2b13f0e",
+    "title": "Foundation-Model Surrogates Enable Data-Efficient Active Learning for Materials Discovery",
+    "authors": [
+      "Jeffrey Hu",
+      "Rongzhi Dong",
+      "Ying Feng",
+      "Ming Hu",
+      "Jianjun Hu"
+    ],
+    "year": 2026,
+    "venue": "ArXiv.org",
+    "doi": "",
+    "url": "https://openalex.org/W7138824926",
+    "source": [
+      "OpenAlex"
+    ],
+    "categories": [
+      "다중재료 적층제조"
+    ],
+    "tags": [
+      "Self-driving Labs"
+    ],
+    "relevance_score": 5,
+    "curation_priority": false,
+    "ai_summary_ko": "1. Topic - 이 논문은 무엇을 다루는가? Self-driving Labs와 관련된 제조·설계 문제를 구체적인 연구 대상으로 삼습니다.\n2. Problem - 어떤 문제나 한계를 해결하려는가? Self-driving Labs와 관련된 설계·제조상의 병목을 이해하거나 완화하려는 문제를 다룹니다.\n3. Method - 어떤 방법이나 접근을 사용했는가? 접근 방식은 제작 실험으로 구현 가능성을 확인하는 것입니다.\n4. Key Result - 가장 중요한 결과는 무엇인가? 핵심 기여는 성능을(를) 제조·설계 관점에서 해석할 수 있게 한 점입니다.\n5. Takeaway - 그래서 이 논문의 핵심 메시지는 무엇인가? Self-driving Labs 관점에서 관련성 5/10로 평가되며, 핵심 메시지는 제조 방법과 설계 목표를 함께 해석해야 한다는 점입니다.",
+    "ai_summary_en": "",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_ko": "이 트래커에서는 Self-driving Labs 키워드를 기준으로 제조·설계 연구와의 관련성을 5/10로 평가했습니다.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-06-13",
+    "last_updated": "2026-06-13"
+  },
+  {
     "id": "10.1002/admi.202500879",
     "title": "Fluctuating Curvature and Actuation in 4D Printed Asymmetric Networks by Frontal Photopolymerization",
     "authors": [
@@ -9132,6 +9566,39 @@
     "summary_provider": "openai",
     "openai_summary_applied": true,
     "ai_summary_en": "1. Topic - This paper investigates the thermal history in FDM-based 4D printing.\n2. Problem - There are limitations in understanding how thermal history affects layer-wise pre-strain and shape change during the printing process.\n3. Method - The study quantifies the cooling of a single printed line by varying parameters such as nozzle temperature, printing speed, cooling fan, and build plate temperature, and analyzes the thermal history of multilayer structures.\n4. Key Result - Thermal history plays a crucial role in pre-strain formation, with lower nozzle temperatures leading to increased shrinkage and curvature.\n5. Takeaway - The control of thermal history during the printing process is essential for enhancing the performance of 4D printing."
+  },
+  {
+    "id": "10.1002/9783527854578.ch01",
+    "title": "Evolution of Hydrogels – From Basic to Functional",
+    "authors": [
+      "Guodong Fu",
+      "Mulenga Kalulu"
+    ],
+    "year": 2026,
+    "venue": "",
+    "doi": "10.1002/9783527854578.ch01",
+    "url": "https://doi.org/10.1002/9783527854578.ch01",
+    "source": [
+      "OpenAlex"
+    ],
+    "categories": [
+      "리뷰 및 서베이"
+    ],
+    "tags": [
+      "Additive manufacturing"
+    ],
+    "relevance_score": 5,
+    "curation_priority": false,
+    "ai_summary_ko": "1. Topic - 이 논문은 무엇을 다루는가? 로봇 기반 적층제조에서 경로, 자세, 제작 가능성을 함께 고려하는 제조 문제를 다룹니다.\n2. Problem - 어떤 문제나 한계를 해결하려는가? 로봇 기반 제조와 관련된 설계·제조상의 병목을 이해하거나 완화하려는 문제를 다룹니다.\n3. Method - 어떤 방법이나 접근을 사용했는가? 방법론을(를) 통해 문제를 분석하고 구현 방향을 제시합니다.\n4. Key Result - 가장 중요한 결과는 무엇인가? 핵심 기여는 기계적 특성, 설계 가능성 및 제조 적용성을(를) 제조·설계 관점에서 해석할 수 있게 한 점입니다.\n5. Takeaway - 그래서 이 논문의 핵심 메시지는 무엇인가? Additive manufacturing 관점에서 관련성 5/10로 평가되며, 핵심 메시지는 제조 방법과 설계 목표를 함께 해석해야 한다는 점입니다.",
+    "ai_summary_en": "",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_ko": "이 트래커에서는 Additive manufacturing 키워드를 기준으로 제조·설계 연구와의 관련성을 5/10로 평가했습니다.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-06-13",
+    "last_updated": "2026-06-13"
   },
   {
     "id": "10.46632/jeae/5/1/4",
@@ -9691,6 +10158,44 @@
     "ai_summary_en": "1. Topic - This paper addresses the method of creating soft microactuators through 4D microprinting.\n2. Problem - Existing printing methods have limitations in producing fine structures and do not support complex deformations of 3D structures.\n3. Method - The study employs liquid crystal diffusion as a design principle to fabricate microactuators with hierarchical and volumetric alignment within complex 3D architectures.\n4. Key Result - The research successfully developed microactuators with programmable molecular alignment capable of executing complex motions in 3D architectures.\n5. Takeaway - Thus, the paper demonstrates that utilizing liquid crystal diffusion in 4D microprinting can contribute to advanced microrobotics."
   },
   {
+    "id": "10.3389/fmech.2026.1854257",
+    "title": "Development of a hybrid reinforcement learning (hybrid-RL) system for manufacturing resilience",
+    "authors": [
+      "Yvonne Magodi",
+      "Ilesanmi Daniyan",
+      "Khumbulani Mpofu",
+      "Olugbenga Aderoba",
+      "Humbulani Simon Phuluwa",
+      "M. K. Ayuba",
+      "Kamorudeen Amuda"
+    ],
+    "year": 2026,
+    "venue": "Frontiers in Mechanical Engineering",
+    "doi": "10.3389/fmech.2026.1854257",
+    "url": "https://doi.org/10.3389/fmech.2026.1854257",
+    "source": [
+      "OpenAlex"
+    ],
+    "categories": [
+      "적층제조를 위한 AI 및 머신러닝"
+    ],
+    "tags": [
+      "Digital Twins"
+    ],
+    "relevance_score": 5,
+    "curation_priority": false,
+    "ai_summary_ko": "1. Topic - 이 논문은 무엇을 다루는가? 제조 데이터와 학습 기반 모델을 이용해 공정 이해나 설계 자동화를 개선하는 연구입니다.\n2. Problem - 어떤 문제나 한계를 해결하려는가? 제조 공정의 복잡한 변수와 결과 사이의 관계를 데이터 기반으로 파악하는 문제를 다룹니다.\n3. Method - 어떤 방법이나 접근을 사용했는가? 접근 방식은 시뮬레이션으로 거동을 예측합니다 마지막으로 최적화 절차로 설계안을 탐색하는 것입니다.\n4. Key Result - 가장 중요한 결과는 무엇인가? 핵심 기여는 제조 정확도나 공정 효율을 개선할 수 있는 실질적인 설계 기준을 제시한 점입니다.\n5. Takeaway - 그래서 이 논문의 핵심 메시지는 무엇인가? Digital Twins 관점에서 관련성 5/10로 평가되며, 핵심 메시지는 제조 방법과 설계 목표를 함께 해석해야 한다는 점입니다.",
+    "ai_summary_en": "",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_ko": "이 트래커에서는 Digital Twins 키워드를 기준으로 제조·설계 연구와의 관련성을 5/10로 평가했습니다.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-06-13",
+    "last_updated": "2026-06-13"
+  },
+  {
     "id": "10.1002/best.70140",
     "title": "Design Strategies for Modular Additive Manufacturing in Construction",
     "authors": [
@@ -10026,6 +10531,50 @@
     "last_updated": "2026-06-13"
   },
   {
+    "id": "10.1007/978-981-95-2668-0_4",
+    "title": "Committee II.2: Dynamic Response",
+    "authors": [
+      "Daniele Dessi",
+      "V. De Diego",
+      "Sharad Dhavalikar",
+      "M. Holtmann",
+      "S. J. Kim",
+      "Levent Kaydihan",
+      "L. Moro",
+      "T. Pais",
+      "A. Paiva",
+      "G. Storhaug",
+      "H. Takahashi",
+      "Sasan Tavakoli"
+    ],
+    "year": 2026,
+    "venue": "Lecture notes in mechanical engineering",
+    "doi": "10.1007/978-981-95-2668-0_4",
+    "url": "https://doi.org/10.1007/978-981-95-2668-0_4",
+    "source": [
+      "OpenAlex"
+    ],
+    "categories": [
+      "리뷰 및 서베이"
+    ],
+    "tags": [
+      "Digital Twins",
+      "Manufacturing automation"
+    ],
+    "relevance_score": 5,
+    "curation_priority": false,
+    "ai_summary_ko": "1. Topic - 이 논문은 무엇을 다루는가? Digital Twins, Manufacturing automation와 관련된 제조·설계 문제를 구체적인 연구 대상으로 삼습니다.\n2. Problem - 어떤 문제나 한계를 해결하려는가? Digital Twins, Manufacturing automation와 관련된 설계·제조상의 병목을 이해하거나 완화하려는 문제를 다룹니다.\n3. Method - 어떤 방법이나 접근을 사용했는가? 설계 프레임워크, 문헌 검토 및 문헌 조사을(를) 통해 문제를 분석하고 구현 방향을 제시합니다.\n4. Key Result - 가장 중요한 결과는 무엇인가? 핵심 기여는 기계적 특성 및 응용 가능성을(를) 제조·설계 관점에서 해석할 수 있게 한 점입니다.\n5. Takeaway - 그래서 이 논문의 핵심 메시지는 무엇인가? Digital Twins 및 Manufacturing automation 관점에서 관련성 5/10로 평가되며, 핵심 메시지는 제조 방법과 설계 목표를 함께 해석해야 한다는 점입니다.",
+    "ai_summary_en": "",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_ko": "이 트래커에서는 Digital Twins, Manufacturing automation 키워드를 기준으로 제조·설계 연구와의 관련성을 5/10로 평가했습니다.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-06-13",
+    "last_updated": "2026-06-13"
+  },
+  {
     "id": "10.31224/6400",
     "title": "Cold-Spray Repair of Corroded Steel Bridge Girders via an Optimization-Driven Cyber-Physical Workflow and Robotic Deposition Architecture",
     "authors": [
@@ -10220,6 +10769,38 @@
     "last_updated": "2026-06-13",
     "summary_provider": "openai",
     "openai_summary_applied": true
+  },
+  {
+    "id": "10.67294/w1jdxb80",
+    "title": "Bridging Model-Based Systems Engineering, Digital Twins, and Cyber-Physical Manufacturing Systems: A Foundational Framework for Operational Excellence",
+    "authors": [
+      "Oscar Antonio Silva Sprock"
+    ],
+    "year": 2026,
+    "venue": "",
+    "doi": "10.67294/w1jdxb80",
+    "url": "https://doi.org/10.67294/w1jdxb80",
+    "source": [
+      "OpenAlex"
+    ],
+    "categories": [
+      "리뷰 및 서베이"
+    ],
+    "tags": [
+      "Digital Twins"
+    ],
+    "relevance_score": 5,
+    "curation_priority": false,
+    "ai_summary_ko": "1. Topic - 이 논문은 무엇을 다루는가? Digital Twins와 관련된 제조·설계 문제를 구체적인 연구 대상으로 삼습니다.\n2. Problem - 어떤 문제나 한계를 해결하려는가? Digital Twins와 관련된 설계·제조상의 병목을 이해하거나 완화하려는 문제를 다룹니다.\n3. Method - 어떤 방법이나 접근을 사용했는가? 개념적 논의, 설계 프레임워크 및 방법론을(를) 통해 문제를 분석하고 구현 방향을 제시합니다.\n4. Key Result - 가장 중요한 결과는 무엇인가? 핵심 기여는 설계 가능성 및 제조 적용성을(를) 제조·설계 관점에서 해석할 수 있게 한 점입니다.\n5. Takeaway - 그래서 이 논문의 핵심 메시지는 무엇인가? Digital Twins 관점에서 관련성 5/10로 평가되며, 핵심 메시지는 제조 방법과 설계 목표를 함께 해석해야 한다는 점입니다.",
+    "ai_summary_en": "",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_ko": "이 트래커에서는 Digital Twins 키워드를 기준으로 제조·설계 연구와의 관련성을 5/10로 평가했습니다.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-06-13",
+    "last_updated": "2026-06-13"
   },
   {
     "id": "10.1016/j.engstruct.2026.123121",
@@ -15551,6 +16132,39 @@
     "summary_provider": "openai",
     "openai_summary_applied": true,
     "ai_summary_en": "1. Topic - This paper addresses in-process density measurement for model-based process optimization of functionally graded foam microcellular structures.\n2. Problem - There is a need to improve the accuracy and efficiency of density measurement in existing additive manufacturing processes.\n3. Method - The authors developed a model for process optimization using real-time density measurement technology.\n4. Key Result - The study demonstrated the positive impact of density measurement on process optimization.\n5. Takeaway - Thus, in-process density measurement plays a crucial role in enhancing the quality of functionally graded structures."
+  },
+  {
+    "id": "10.1016/b978-0-443-16144-5.00015-6",
+    "title": "Hybrid metal additive manufacturing for complex multimaterial component fabrication",
+    "authors": [
+      "Gururaj Telasang",
+      "Ravi Bathe"
+    ],
+    "year": 2025,
+    "venue": "Additively Manufactured Smart Materials and Structures",
+    "doi": "10.1016/b978-0-443-16144-5.00015-6",
+    "url": "https://doi.org/10.1016/b978-0-443-16144-5.00015-6",
+    "source": [
+      "Crossref"
+    ],
+    "categories": [
+      "다중재료 적층제조"
+    ],
+    "tags": [
+      "MMAM"
+    ],
+    "relevance_score": 6,
+    "curation_priority": false,
+    "ai_summary_ko": "1. Topic - 이 논문은 무엇을 다루는가? Hybrid metal additive manufacturing for complex multimaterial component fabrication은(는) 2025년 Additively Manufactured Smart Materials and Structures에 발표된 항목으로, 공개 메타데이터상 다중재료 구조와 관련됩니다.\n2. Problem - 어떤 문제나 한계를 해결하려는가? 초록이 제공되지 않아 구체적인 문제 설정은 DOI 원문 확인이 필요합니다.\n3. Method - 어떤 방법이나 접근을 사용했는가? 제목, venue, DOI 메타데이터, 키워드 신호를 바탕으로 보수적으로 분류했습니다.\n4. Key Result - 가장 중요한 결과는 무엇인가? 공개 메타데이터만으로는 핵심 결과를 단정하지 않고, 관련 주제 여부만 확인했습니다.\n5. Takeaway - 그래서 이 논문의 핵심 메시지는 무엇인가? 재료 배치와 공정 설계를 함께 최적화해야 다중재료 제조의 성능 이점을 얻을 수 있다는 점이 핵심 메시지입니다.",
+    "ai_summary_en": "",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_ko": "이 트래커에서는 MMAM 키워드를 기준으로 제조·설계 연구와의 관련성을 6/10로 평가했습니다.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-06-13",
+    "last_updated": "2026-06-13"
   },
   {
     "id": "10.1038/s41563-025-02249-z",
@@ -23442,6 +24056,43 @@
     "ai_summary_en": "1. Topic - This paper discusses a design approach for 3D printed concrete structures using multi-material topology optimization.\n2. Problem - Current reinforcement techniques for 3D printed concrete have limitations in application scenarios and do not fully utilize material performance.\n3. Method - The study proposes a design where 3D printed concrete structures primarily experience compression, combined with tensioned steel cables to form an efficient composite system without additional reinforcement.\n4. Key Result - Load tests on the experimental prototype 'FloatArch' confirmed the feasibility and efficiency of the proposed 3D printed concrete structure.\n5. Takeaway - The paper emphasizes that multi-material topology optimization technology can provide an innovative and sustainable new pathway for structural design in 3D printed concrete."
   },
   {
+    "id": "10.1007/978-981-99-8405-3_20",
+    "title": "Designing a Systematic Experiment to Investigate the Effect of Ambient Smell on Human Emotions in the Indoor Space; Introducing a Mixed-Method Approach",
+    "authors": [
+      "Mohsen Kafaei",
+      "Jane Burry",
+      "Mehrnoush Latifi",
+      "Joseph Ciorciari"
+    ],
+    "year": 2024,
+    "venue": "Computational Design and Robotic Fabrication",
+    "doi": "10.1007/978-981-99-8405-3_20",
+    "url": "https://doi.org/10.1007/978-981-99-8405-3_20",
+    "source": [
+      "Crossref"
+    ],
+    "categories": [
+      "적층제조를 위한 AI 및 머신러닝",
+      "계산설계"
+    ],
+    "tags": [
+      "Digital Twins",
+      "Robot-based Manufacturing"
+    ],
+    "relevance_score": 7,
+    "curation_priority": false,
+    "ai_summary_ko": "1. Topic - 이 논문은 무엇을 다루는가? 계산설계 및 로봇 기반 제조와 관련된 제조·설계 문제를 구체적인 연구 대상으로 삼습니다.\n2. Problem - 어떤 문제나 한계를 해결하려는가? 계산설계 및 로봇 기반 제조와 관련된 설계·제조상의 병목을 이해하거나 완화하려는 문제를 다룹니다.\n3. Method - 어떤 방법이나 접근을 사용했는가? 접근 방식은 시뮬레이션으로 거동을 예측합니다 마지막으로 제작 실험으로 구현 가능성을 확인하는 것입니다.\n4. Key Result - 가장 중요한 결과는 무엇인가? 핵심 기여는 설계 가능성을(를) 제조·설계 관점에서 해석할 수 있게 한 점입니다.\n5. Takeaway - 그래서 이 논문의 핵심 메시지는 무엇인가? Digital Twins 및 Robot-based Manufacturing 관점에서 관련성 7/10로 평가되며, 핵심 메시지는 제조 방법과 설계 목표를 함께 해석해야 한다는 점입니다.",
+    "ai_summary_en": "",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_ko": "이 트래커에서는 Digital Twins, Robot-based Manufacturing 키워드를 기준으로 제조·설계 연구와의 관련성을 7/10로 평가했습니다.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-06-13",
+    "last_updated": "2026-06-13"
+  },
+  {
     "id": "10.24425/cpe.2024.149472",
     "title": "Chemical engineering aspects in the design and construction of a new type of multimaterial 3D printer using photopolymerization and electrodeposition processes",
     "authors": [
@@ -23550,6 +24201,44 @@
     "summary_provider": "openai",
     "openai_summary_applied": true,
     "relevance_note_ko": "논문 주제와 내용이 적층 제조 및 격자 구조와 밀접하게 관련되어 있어 높은 관련성을 보입니다.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-06-13",
+    "last_updated": "2026-06-13"
+  },
+  {
+    "id": "10.1016/j.xcrp.2024.102244",
+    "title": "4D-printed photochromic contact lenses for ultraviolet monitoring and protection",
+    "authors": [
+      "Muhammed Hisham",
+      "Ahmed E. Salih",
+      "Muhammed Shebeeb C",
+      "Mary Krystelle Catacutan",
+      "Sungmun Lee",
+      "Haider Butt"
+    ],
+    "year": 2024,
+    "venue": "Cell Reports Physical Science",
+    "doi": "10.1016/j.xcrp.2024.102244",
+    "url": "https://doi.org/10.1016/j.xcrp.2024.102244",
+    "source": [
+      "OpenAlex"
+    ],
+    "categories": [
+      "재료 전환 / 퍼지 감소",
+      "다중재료 적층제조"
+    ],
+    "tags": [
+      "Manufacturing automation"
+    ],
+    "relevance_score": 7,
+    "curation_priority": false,
+    "ai_summary_ko": "1. Topic - 이 논문은 무엇을 다루는가? 다중재료 구조와 관련된 제조·설계 문제를 구체적인 연구 대상으로 삼습니다.\n2. Problem - 어떤 문제나 한계를 해결하려는가? 다중재료 구조와 관련된 설계·제조상의 병목을 이해하거나 완화하려는 문제를 다룹니다.\n3. Method - 어떤 방법이나 접근을 사용했는가? 공개 초록의 문제 설정과 접근법을(를) 통해 문제를 분석하고 구현 방향을 제시합니다.\n4. Key Result - 가장 중요한 결과는 무엇인가? 핵심 기여는 기계적 특성을(를) 제조·설계 관점에서 해석할 수 있게 한 점입니다.\n5. Takeaway - 그래서 이 논문의 핵심 메시지는 무엇인가? Manufacturing automation 관점에서 관련성 7/10로 평가되며, 핵심 메시지는 제조 방법과 설계 목표를 함께 해석해야 한다는 점입니다.",
+    "ai_summary_en": "",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_ko": "이 트래커에서는 Manufacturing automation 키워드를 기준으로 제조·설계 연구와의 관련성을 7/10로 평가했습니다.",
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
