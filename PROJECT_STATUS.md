@@ -2,6 +2,8 @@
 
 ## 2026-06-13 13:26 최신 상태
 
+- 2026-06-13 13:30에 OpenAI refresh 후 `relevance_score`가 전부 `1/10`으로 덮인 문제를 복구했습니다. 현재 점수 분포는 `5점 296편`, `6점 141편`, `7점 76편`, `8점 26편`입니다.
+- 향후 `Refresh OpenAI summaries`는 `relevance_score`를 덮어쓰지 않고 기존 curated score를 유지합니다.
 - curated 논문 539편 전체에 OpenAI 기반 Q5 요약이 적용되었습니다.
 - `data/papers.json` 기준 `summary_provider=openai` 539편, `openai_summary_applied=true` 539편입니다.
 - 한국어 Q5 요약과 영어 Q5 요약 모두 539/539편에서 확인되었습니다.

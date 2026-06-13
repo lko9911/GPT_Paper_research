@@ -20,7 +20,7 @@ ROOT = Path(__file__).resolve().parents[1]
 PAPERS_PATH = ROOT / "data" / "papers.json"
 SITE_META_PATH = ROOT / "data" / "site_meta.json"
 
-SUMMARY_KEYS = ("ai_summary_ko", "ai_summary_en", "relevance_note_ko", "relevance_score", "tags", "categories")
+SUMMARY_KEYS = ("ai_summary_ko", "ai_summary_en", "relevance_note_ko", "tags", "categories")
 
 
 def main() -> None:
