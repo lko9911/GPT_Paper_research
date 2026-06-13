@@ -480,7 +480,7 @@ function applyStaticLanguage() {
   setText(".stats article:nth-child(2) strong", t("venueCount"));
   setText(".stats article:nth-child(3) strong", t("yearRange"));
   setText(".stats article:nth-child(4) strong", t("currentUpdate"));
-  setText(".controls label:nth-child(1) span", t("search"));
+  setText(".search-label-text", t("search"));
   setText(".controls label:nth-child(2) span", t("field"));
   setText(".controls label:nth-child(3) span", t("tagSubtopic"));
   setText(".controls label:nth-child(4) span", t("venue"));
