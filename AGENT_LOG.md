@@ -2667,6 +2667,31 @@
 - 검증용으로 생성한 headless Chrome 스크린샷과 임시 프로필 폴더는 커밋 전에 삭제했습니다.
 - 로컬에 남아 있는 `data/papers.json`, `data/site_meta.json` 변경은 이번 UI 커밋에 포함하지 않습니다.
 
+## 2026-06-13 09:40
+
+### 변경 요약
+- 사용자가 매시 17분 업데이트가 멈춘 이유를 문의해 GitHub Actions 최근 실행 상태를 확인했습니다.
+- `Update papers` workflow는 수집 단계는 성공했지만, 장시간 실행 중 main 브랜치에 UI 커밋이 추가되어 `Commit changed data` 단계에서 push가 실패한 것으로 확인했습니다.
+- 이후 동일한 push reject가 반복되지 않도록 데이터 커밋 후 `git pull --rebase --autostash origin main`을 수행한 뒤 push하도록 수정했습니다.
+
+### 수정/생성한 파일
+- `.github/workflows/update-papers.yml`: 데이터 자동 커밋 후 최신 main을 rebase하고 push하도록 변경했습니다.
+- `AGENT_LOG.md`: 업데이트 정지 원인과 workflow 보강 내용을 기록했습니다.
+
+### 구현한 기능
+- 업데이트 workflow가 오래 실행되는 동안 UI/문서 커밋이 먼저 main에 들어가도, 데이터 커밋 단계에서 최신 main을 반영한 뒤 push를 재시도할 수 있습니다.
+
+### 설계 결정
+- 수집 전이 아니라 커밋 직후 rebase를 수행했습니다. 수집 결과를 잃지 않으면서 원격 main의 최신 UI 변경을 함께 반영하기 위해서입니다.
+- `--autostash`를 사용해 rebase 중 작업 트리 변경이 있을 때도 안전하게 처리하도록 했습니다.
+
+### 남은 작업
+- 다음 정기 실행 또는 수동 `workflow_dispatch` 실행에서 정상 커밋/배포되는지 확인하면 좋습니다.
+
+### 주의사항
+- API key, token, secret은 기록하지 않았습니다.
+- 이번 변경은 workflow 안정성 수정이며 OpenAI API 호출과 무관합니다.
+
 ## 2026-06-13 02:30
 
 ### 변경 요약
