@@ -1,5 +1,31 @@
 # AGENT_LOG
 
+## 2026-06-13 13:30
+
+### 변경 요약
+- OpenAI Q5 요약 refresh 이후 모든 논문의 `relevance_score`가 `1/10`으로 표시되는 버그를 확인하고 복구했습니다.
+- 원인은 OpenAI refresh가 기존 curated relevance score를 OpenAI 응답값으로 덮어쓴 것이었습니다.
+
+### 수정/생성한 파일
+- `data/papers.json`: OpenAI refresh 직전 커밋의 relevance score를 기준으로 539편 전체 점수를 복구했습니다.
+- `scripts/refresh_openai_summaries.py`: 향후 OpenAI summary refresh가 `relevance_score`를 덮어쓰지 않도록 `SUMMARY_KEYS`에서 제외했습니다.
+- `AGENT_LOG.md`: 이번 버그 원인과 복구 내용을 기록했습니다.
+
+### 구현한 기능
+- 점수 분포를 `5점 296편`, `6점 141편`, `7점 76편`, `8점 26편`으로 복구했습니다.
+- OpenAI Q5 요약, 영어 요약, `summary_provider=openai`, `openai_summary_applied=true` 상태는 539편 전체에서 유지했습니다.
+
+### 설계 결정
+- 관련성 점수는 수집/분류 파이프라인의 curated score를 신뢰하고, OpenAI refresh는 요약/태그/카테고리/관련성 설명만 갱신하도록 제한했습니다.
+- 점수는 사이트 필터와 정렬에 직접 영향을 주므로, 요약 모델 응답으로 일괄 덮어쓰지 않는 것이 안전합니다.
+
+### 남은 작업
+- 필요하면 `relevance_note_ko`도 curated scoring 기준에 맞춰 더 정량적인 설명으로 다시 생성할 수 있습니다.
+
+### 주의사항
+- OpenAI API는 이번 복구 작업에서 호출하지 않았습니다.
+- API key, token, secret은 기록하지 않았습니다.
+
 ## 2026-06-13 13:26
 
 ### 변경 요약
