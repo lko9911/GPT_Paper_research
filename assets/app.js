@@ -86,9 +86,11 @@ const UI_TEXT = {
     showing: "개 큐레이션 결과",
     unknownYear: "연도 미상",
     relevanceLabel: "관련성",
-    openaiApplied: "OpenAI 요약",
-    openaiNotApplied: "OpenAI 미적용",
-    fallbackSummary: "Fallback 요약",
+    openaiApplied: "AI 요약",
+    openaiNotApplied: "메타데이터 요약",
+    openaiAppliedTitle: "OpenAI API로 생성한 요약입니다.",
+    openaiNotAppliedTitle: "OpenAI API를 사용하지 않고 제목, 초록 사용 여부, DOI 및 공개 메타데이터 신호를 바탕으로 작성한 요약입니다.",
+    fallbackSummary: "메타데이터 기반 요약",
     summaryMissing: "요약이 아직 생성되지 않았습니다.",
     summaryQuestions: [
       "Topic",
@@ -141,9 +143,11 @@ const UI_TEXT = {
     showing: "curated results",
     unknownYear: "Year unknown",
     relevanceLabel: "Relevance",
-    openaiApplied: "OpenAI summary",
-    openaiNotApplied: "No OpenAI",
-    fallbackSummary: "Fallback summary",
+    openaiApplied: "AI summary",
+    openaiNotApplied: "Metadata summary",
+    openaiAppliedTitle: "This summary was generated with the OpenAI API.",
+    openaiNotAppliedTitle: "This summary was written without the OpenAI API, using title, abstract-availability, DOI, and public metadata signals.",
+    fallbackSummary: "Metadata-based summary",
     summaryMissing: "Summary has not been generated yet.",
     summaryQuestions: [
       "Topic",
@@ -872,7 +876,7 @@ function renderPaperRow(paper) {
     <div class="card-content">
       <div class="card-topline">
         <span class="publication-badge">${escapeHtml(publicationLabel)}</span>
-        <span class="${escapeAttribute(summaryProviderLabel.className)}">${escapeHtml(summaryProviderLabel.text)}</span>
+        <span class="${escapeAttribute(summaryProviderLabel.className)}" title="${escapeAttribute(summaryProviderLabel.title)}">${escapeHtml(summaryProviderLabel.text)}</span>
         <span>${escapeHtml(t("relevanceLabel"))} ${escapeHtml(String(paper.relevance_score || "-"))}/10</span>
       </div>
       <h4 class="paper-title">${escapeHtml(paper.title || "Untitled")}</h4>
@@ -966,9 +970,9 @@ function formatSummarySections(paper) {
 
 function formatSummaryProviderLabel(paper) {
   if (paper.openai_summary_applied === true || paper.summary_provider === "openai") {
-    return { text: t("openaiApplied"), className: "summary-provider-badge is-openai" };
+    return { text: t("openaiApplied"), title: t("openaiAppliedTitle"), className: "summary-provider-badge is-openai" };
   }
-  return { text: t("openaiNotApplied"), className: "summary-provider-badge is-fallback" };
+  return { text: t("openaiNotApplied"), title: t("openaiNotAppliedTitle"), className: "summary-provider-badge is-fallback" };
 }
 
 function parseStoredSummarySections(summary) {

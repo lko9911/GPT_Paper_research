@@ -2609,6 +2609,34 @@
 - API key, token, secret은 기록하지 않았습니다.
 - Crossref DOI 보강은 rate limit을 피하기 위해 venue가 비어 있고 DOI가 있는 기존 레코드에 한정했습니다.
 
+## 2026-06-13 09:27
+
+### 변경 요약
+- 논문 카드의 `No OpenAI` / `OpenAI 미적용` 뱃지가 일반 방문자에게 의미가 모호한 문제를 개선했습니다.
+- OpenAI 미사용 상태를 `Metadata summary` / `메타데이터 요약`으로 바꾸고, hover tooltip에 설명을 추가했습니다.
+
+### 수정/생성한 파일
+- `assets/app.js`: summary provider 라벨을 `AI summary` / `Metadata summary` 및 한국어 대응 문구로 변경하고 title 설명을 추가했습니다.
+- `assets/style.css`: 메타데이터 요약 뱃지를 경고색이 아닌 중립 정보성 색상으로 조정했습니다.
+- `index.html`: CSS/JS cache-busting 버전을 `20260613-0130`으로 갱신했습니다.
+- `AGENT_LOG.md`: 이번 뱃지 문구 및 스타일 변경 기록을 추가했습니다.
+
+### 구현한 기능
+- OpenAI API를 사용하지 않은 논문은 `Metadata summary` / `메타데이터 요약`으로 표시됩니다.
+- OpenAI API로 생성된 논문은 `AI summary` / `AI 요약`으로 표시됩니다.
+- 뱃지에 마우스를 올리면 해당 요약 방식의 의미를 확인할 수 있습니다.
+
+### 설계 결정
+- `No OpenAI`는 내부 비용/운영 정책처럼 보일 수 있어, 방문자 관점에서 요약의 생성 근거를 설명하는 이름으로 바꿨습니다.
+- 메타데이터 기반 요약은 문제가 있는 상태가 아니므로 노란 경고색 대신 중립색을 사용했습니다.
+
+### 남은 작업
+- 없음.
+
+### 주의사항
+- API key, token, secret은 기록하지 않았습니다.
+- 이번 변경은 UI 표시만 바꾸며 OpenAI API 호출은 발생하지 않습니다.
+
 ## 2026-06-13 02:30
 
 ### 변경 요약
