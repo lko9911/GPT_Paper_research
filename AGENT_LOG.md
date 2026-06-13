@@ -1,5 +1,32 @@
 # AGENT_LOG
 
+## 2026-06-13 22:20
+
+### 변경 요약
+- 사용자의 요청에 따라 `Export filtered results` action bar와 CSV/BibTeX/Markdown export 기능을 제거했습니다.
+- `Gyuwon Lee` 이름 하이라이트가 너무 밋밋해 보여 highlight 면적과 대비를 조금 키웠습니다.
+
+### 수정/생성한 파일
+- `index.html`: export action bar를 제거하고 CSS/JS cache version을 `20260613-0380`으로 갱신했습니다.
+- `assets/app.js`: export 버튼 참조, event listener, CSV/BibTeX/Markdown 생성 및 다운로드 helper를 제거했습니다.
+- `assets/style.css`: export action bar 스타일을 제거하고 `.creator-name` highlight 스타일을 더 선명하게 조정했습니다.
+- `AGENT_LOG.md`: export 제거와 creator name highlight 강화 내용을 기록했습니다.
+
+### 구현한 기능
+- 검색/필터 영역 아래의 export UI가 사라져 화면이 더 단순해졌습니다.
+- 제작자 이름은 더 넓고 선명한 pastel green 형광펜 효과로 표시됩니다.
+
+### 설계 결정
+- 사용자가 불필요하다고 판단한 export workflow는 제거했습니다.
+- 이름 강조는 텍스트 자체를 키우기보다 highlight 배경 면적, 색 농도, 약한 text-shadow만 조절해 과한 장식이 되지 않게 했습니다.
+
+### 남은 작업
+- 배포 후 export 영역이 사라지고 이름 강조가 충분히 보이는지 확인합니다.
+
+### 주의사항
+- 이 수정은 OpenAI API를 호출하지 않습니다.
+- 새 논문 수집도 실행하지 않습니다.
+
 ## 2026-06-13 22:12
 
 ### 변경 요약

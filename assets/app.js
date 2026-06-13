@@ -99,12 +99,6 @@ const UI_TEXT = {
     doiButton: "DOI",
     copyCitation: "인용 복사",
     copiedCitation: "복사됨",
-    exportTitle: "필터 결과 내보내기",
-    exportHint: "현재 화면에 표시된 논문 목록을 파일로 저장합니다.",
-    exportCsv: "CSV",
-    exportBibtex: "BibTeX",
-    exportMarkdown: "Markdown",
-    exportEmpty: "내보낼 논문이 없습니다.",
     summaryQuestions: [
       "Topic",
       "Problem",
@@ -171,12 +165,6 @@ const UI_TEXT = {
     doiButton: "DOI",
     copyCitation: "Copy Cite",
     copiedCitation: "Copied",
-    exportTitle: "Export filtered results",
-    exportHint: "Download the papers currently shown by your filters.",
-    exportCsv: "CSV",
-    exportBibtex: "BibTeX",
-    exportMarkdown: "Markdown",
-    exportEmpty: "No papers to export.",
     summaryQuestions: [
       "Topic",
       "Problem",
@@ -377,11 +365,6 @@ const els = {
   updated: document.querySelector("#stat-updated"),
   opsNote: document.querySelector("#ops-note"),
   heroStatus: document.querySelector("#hero-status"),
-  exportTitle: document.querySelector("#export-title"),
-  exportHint: document.querySelector("#export-hint"),
-  exportCsv: document.querySelector("#export-csv"),
-  exportBibtex: document.querySelector("#export-bibtex"),
-  exportMarkdown: document.querySelector("#export-markdown"),
   themeToggle: document.querySelector("#theme-toggle"),
   languageToggle: document.querySelector("#language-toggle"),
   densityToggle: document.querySelector("#density-toggle"),
@@ -410,7 +393,6 @@ async function init() {
   buildSideNav();
   renderVenueBoard();
   updateStats();
-  setupResearchActions();
   applyFilters();
 
   [els.search, els.category, els.tag, els.venue, els.year, els.sort].forEach((el) => {
@@ -505,11 +487,6 @@ function applyStaticLanguage() {
   setText("#empty-state p", t("emptyText"));
   setText("#footer-policy", t("footer"));
   setText("#contact-label", t("contactLabel"));
-  setText("#export-title", t("exportTitle"));
-  setText("#export-hint", t("exportHint"));
-  setText("#export-csv", t("exportCsv"));
-  setText("#export-bibtex", t("exportBibtex"));
-  setText("#export-markdown", t("exportMarkdown"));
   if (!state.papers.length) {
     setText("#hero-status", t("heroStatusLoading"));
   }
@@ -602,18 +579,6 @@ function buildSideNav() {
       scrollToPapers();
     });
   });
-}
-
-function setupResearchActions() {
-  if (els.exportCsv) {
-    els.exportCsv.addEventListener("click", () => exportFiltered("csv"));
-  }
-  if (els.exportBibtex) {
-    els.exportBibtex.addEventListener("click", () => exportFiltered("bibtex"));
-  }
-  if (els.exportMarkdown) {
-    els.exportMarkdown.addEventListener("click", () => exportFiltered("markdown"));
-  }
 }
 
 function toggleSideField(field) {
@@ -1323,133 +1288,6 @@ function buildCitation(paper) {
   const venue = paper.venue ? ` ${paper.venue}.` : "";
   const doi = paper.doi ? ` https://doi.org/${paper.doi}` : "";
   return `${authors} ${year}. ${paper.title || "Untitled"}.${venue}${doi}`.replace(/\s+/g, " ").trim();
-}
-
-function exportFiltered(format) {
-  if (!state.filtered.length) {
-    window.alert(t("exportEmpty"));
-    return;
-  }
-  const stamp = new Date().toISOString().slice(0, 10);
-  if (format === "csv") {
-    downloadText(`curated-papers-${stamp}.csv`, papersToCsv(state.filtered), "text/csv;charset=utf-8");
-    return;
-  }
-  if (format === "bibtex") {
-    downloadText(`curated-papers-${stamp}.bib`, papersToBibtex(state.filtered), "application/x-bibtex;charset=utf-8");
-    return;
-  }
-  downloadText(`curated-papers-${stamp}.md`, papersToMarkdown(state.filtered), "text/markdown;charset=utf-8");
-}
-
-function papersToCsv(papers) {
-  const headers = [
-    "title",
-    "authors",
-    "year",
-    "venue",
-    "doi",
-    "url",
-    "source",
-    "categories",
-    "tags",
-    "relevance_score",
-    "last_updated",
-  ];
-  const rows = papers.map((paper) =>
-    headers.map((key) => csvCell(exportValue(paper, key))).join(",")
-  );
-  return [headers.join(","), ...rows].join("\n");
-}
-
-function papersToBibtex(papers) {
-  return papers
-    .map((paper) => {
-      const key = bibtexKey(paper);
-      const fields = [
-        ["title", paper.title || "Untitled"],
-        ["author", (paper.authors || []).join(" and ")],
-        ["year", paper.year || ""],
-        ["journal", paper.venue || ""],
-        ["doi", paper.doi || ""],
-        ["url", paper.url || (paper.doi ? `https://doi.org/${paper.doi}` : "")],
-        ["note", `Relevance ${paper.relevance_score || "-"}/10; ${formatRelevanceNote(paper)}`],
-      ].filter(([, value]) => String(value || "").trim());
-      return `@article{${key},\n${fields
-        .map(([name, value]) => `  ${name} = {${bibtexEscape(value)}},`)
-        .join("\n")}\n}`;
-    })
-    .join("\n\n");
-}
-
-function papersToMarkdown(papers) {
-  const lines = [
-    "# Curated Papers Export",
-    "",
-    `Exported: ${new Date().toISOString()}`,
-    `Count: ${papers.length}`,
-    "",
-  ];
-  papers.forEach((paper, index) => {
-    const doiUrl = paper.url || (paper.doi ? `https://doi.org/${paper.doi}` : "");
-    lines.push(
-      `## ${index + 1}. ${paper.title || "Untitled"}`,
-      "",
-      `- Authors: ${(paper.authors || []).join(", ") || "-"}`,
-      `- Year: ${paper.year || "-"}`,
-      `- Venue: ${paper.venue || "-"}`,
-      `- DOI: ${doiUrl || paper.doi || "-"}`,
-      `- Relevance: ${paper.relevance_score || "-"}/10`,
-      `- Tags: ${representativeTags(paper).map((tag) => displayLabel(tag)).join(", ") || "-"}`,
-      `- Summary: ${singleLineSummary(paper)}`,
-      ""
-    );
-  });
-  return lines.join("\n");
-}
-
-function exportValue(paper, key) {
-  if (key === "authors") return (paper.authors || []).join("; ");
-  if (key === "source") return (paper.source || []).join("; ");
-  if (key === "categories") return (paper.categories || []).map(displayLabel).join("; ");
-  if (key === "tags") return representativeTags(paper).map(displayLabel).join("; ");
-  return paper[key] == null ? "" : paper[key];
-}
-
-function singleLineSummary(paper) {
-  const sections = formatSummarySections(paper);
-  const text = sections.length
-    ? sections.map((section) => `${section.question}: ${section.answer}`).join(" ")
-    : formatSummary(paper);
-  return String(text || "").replace(/\s+/g, " ").trim();
-}
-
-function csvCell(value) {
-  const text = String(value == null ? "" : value).replace(/\r?\n/g, " ");
-  return `"${text.replace(/"/g, '""')}"`;
-}
-
-function bibtexKey(paper) {
-  const firstAuthor = normalizeTopicKey((paper.authors || ["paper"])[0] || "paper").slice(0, 14) || "paper";
-  const year = paper.year || "nd";
-  const title = normalizeTopicKey(paper.title || "").slice(0, 16) || "untitled";
-  return `${firstAuthor}${year}${title}`;
-}
-
-function bibtexEscape(value) {
-  return String(value || "").replace(/[{}]/g, "").replace(/\s+/g, " ").trim();
-}
-
-function downloadText(filename, text, mimeType) {
-  const blob = new Blob([text], { type: mimeType });
-  const url = URL.createObjectURL(blob);
-  const link = document.createElement("a");
-  link.href = url;
-  link.download = filename;
-  document.body.append(link);
-  link.click();
-  link.remove();
-  window.setTimeout(() => URL.revokeObjectURL(url), 1000);
 }
 
 function formatPublicationLabel(paper) {

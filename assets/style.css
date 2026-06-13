@@ -201,12 +201,13 @@ h1 {
 
 .creator-name {
   display: inline;
-  padding: 0 3px 1px;
-  border-radius: 4px;
+  padding: 1px 5px 2px;
+  border-radius: 6px;
   background:
-    linear-gradient(180deg, transparent 42%, rgba(118, 210, 173, 0.34) 42% 88%, transparent 88%);
-  color: color-mix(in srgb, var(--green), var(--text) 28%);
+    linear-gradient(180deg, transparent 22%, rgba(118, 210, 173, 0.5) 22% 92%, transparent 92%);
+  color: color-mix(in srgb, var(--green), var(--text) 12%);
   font-weight: 900;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.32);
 }
 
 .subtitle {
@@ -3110,8 +3111,9 @@ h1 {
 
 :root[data-theme="dark"] .creator-name {
   background:
-    linear-gradient(180deg, transparent 42%, rgba(118, 210, 173, 0.26) 42% 88%, transparent 88%);
-  color: #dff7ec;
+    linear-gradient(180deg, transparent 20%, rgba(118, 210, 173, 0.4) 20% 92%, transparent 92%);
+  color: #f1fff8;
+  text-shadow: 0 0 10px rgba(118, 210, 173, 0.22);
 }
 
 @media (max-width: 720px) {
@@ -3509,66 +3511,6 @@ h1 {
   }
 }
 
-/* Research workflow additions: filtered exports. */
-.research-actions {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 14px;
-  margin-top: 12px;
-  padding: 12px 14px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: color-mix(in srgb, var(--panel), transparent 4%);
-  box-shadow: var(--shadow);
-}
-
-.research-actions strong {
-  display: block;
-  font-size: 0.92rem;
-}
-
-.research-actions span {
-  display: block;
-  margin-top: 2px;
-  color: var(--muted);
-  font-size: 0.78rem;
-}
-
-.research-action-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  gap: 8px;
-}
-
-.action-pill {
-  min-height: 32px;
-  padding: 7px 11px;
-  border: 1px solid var(--line-strong);
-  border-radius: 999px;
-  background: var(--panel);
-  color: var(--text);
-  font-size: 0.78rem;
-  font-weight: 820;
-  cursor: pointer;
-  transition:
-    transform 0.18s ease,
-    border-color 0.18s ease,
-    background 0.18s ease,
-    color 0.18s ease,
-    box-shadow 0.18s ease;
-}
-
-.action-pill:hover,
-.action-pill.is-active {
-  transform: translateY(-1px);
-  border-color: var(--blue);
-  background: var(--blue-soft);
-  color: var(--blue);
-  box-shadow: 0 8px 18px color-mix(in srgb, var(--blue), transparent 84%);
-}
-
 .card-topline {
   align-items: center;
 }
@@ -3590,28 +3532,9 @@ h1 {
   color: var(--amber);
 }
 
-:root[data-theme="dark"] .research-actions,
-:root[data-theme="dark"] .action-pill {
-  background: var(--panel);
-  color: var(--text);
-}
-
 :root[data-theme="dark"] .card-topline > span {
   color: var(--text);
 }
 
 @media (max-width: 760px) {
-  .research-actions {
-    align-items: stretch;
-    flex-direction: column;
-  }
-
-  .research-action-buttons {
-    justify-content: stretch;
-  }
-
-  .action-pill {
-    flex: 1 1 auto;
-  }
-
 }
