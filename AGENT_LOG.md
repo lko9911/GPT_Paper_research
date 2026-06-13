@@ -1,5 +1,31 @@
 # AGENT_LOG
 
+## 2026-06-13 21:43
+
+### 변경 요약
+- 사이트 배경에 은은한 technical grid, radial glow, toolpath-like diagonal line 레이어를 추가했습니다.
+- 헤더 영역에는 별도의 subtle gradient/glow를 더해 첫 화면 인상을 강화했습니다.
+
+### 수정/생성한 파일
+- `assets/style.css`: light/dark theme용 배경 변수와 body/header background layer를 추가했습니다.
+- `index.html`: GitHub Pages cache busting을 위해 CSS/JS query version을 `20260613-0330`으로 갱신했습니다.
+- `AGENT_LOG.md`: 배경 스타일 실험 내용을 기록했습니다.
+
+### 구현한 기능
+- 전체 배경에 아주 약한 격자와 대각선 라인을 표시해 computational design/toolpath 느낌을 줍니다.
+- 다크모드에서는 blue/green glow를 조금 더 살리고, 본문 카드와 패널의 가독성은 유지했습니다.
+
+### 설계 결정
+- 논문 카드와 컨트롤 패널의 배경은 그대로 유지했습니다. 텍스트 가독성을 해치지 않기 위해 장식은 page background와 header에만 적용했습니다.
+- 이미지나 SVG 파일을 추가하지 않고 CSS 레이어만 사용해 GitHub Pages 정적 구조를 단순하게 유지했습니다.
+
+### 남은 작업
+- 배포 후 다크/라이트 모드에서 배경이 과하지 않은지 확인합니다.
+
+### 주의사항
+- 이 수정은 OpenAI API를 호출하지 않습니다.
+- 새 논문 수집도 실행하지 않습니다.
+
 ## 2026-06-13 21:36
 
 ### 변경 요약
