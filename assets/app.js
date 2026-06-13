@@ -227,6 +227,16 @@ const TAG_LABELS = {
     "Design automation": "설계 자동화",
     "Machine learning": "머신러닝",
     "Robotic AM": "로봇 AM",
+    "Metals/Alloys": "금속/합금",
+    "Composites/Materials": "복합재/소재",
+    Sustainability: "지속가능성",
+    "Material property control": "물성 제어",
+    "Micro/Nano manufacturing": "마이크로/나노 제조",
+    "Shape morphing": "형상 변형",
+    "Stimuli-responsive": "자극 반응",
+    "Deep Learning": "딥러닝",
+    "Reinforcement Learning": "강화학습",
+    "AI Process Control": "AI 공정제어",
     Honeycomb: "허니컴",
     "Energy absorption": "에너지 흡수",
     Reusability: "재사용성",
@@ -257,6 +267,16 @@ const TAG_LABELS = {
     "Design automation": "Design Automation",
     "Machine learning": "Machine Learning",
     "Robotic AM": "Robotic AM",
+    "Metals/Alloys": "Metals/Alloys",
+    "Composites/Materials": "Composites/Materials",
+    Sustainability: "Sustainability",
+    "Material property control": "Material Property Control",
+    "Micro/Nano manufacturing": "Micro/Nano Manufacturing",
+    "Shape morphing": "Shape Morphing",
+    "Stimuli-responsive": "Stimuli-responsive",
+    "Deep Learning": "Deep Learning",
+    "Reinforcement Learning": "Reinforcement Learning",
+    "AI Process Control": "AI Process Control",
     Honeycomb: "Honeycomb",
     "Energy absorption": "Energy Absorption",
     Reusability: "Reusability",
@@ -1050,6 +1070,7 @@ function representativeTags(paper) {
   const picked = [];
   candidates.forEach((tag) => {
     const canonical = canonicalTopicLabel(tag);
+    if (!isKnownCanonicalTag(canonical)) return;
     const key = normalizeTopicKey(canonical);
     if (!canonical || seen.has(key)) return;
     seen.add(key);
@@ -1107,10 +1128,59 @@ function collapseMaterialExtrusionTags(tags, paper) {
   return [selected, ...tags.filter((tag) => !cluster.includes(tag))];
 }
 
+function explicitCanonicalAlias(value, text) {
+  const raw = String(value || "").trim().toLowerCase();
+  if (!raw) return "";
+
+  const checks = [
+    [["적층 제조", "additive manufacturing", "3d printing", "3d 프린팅"], "Additive manufacturing"],
+    [["디지털 트윈", "digital twin", "digital twins", "cyber-physical"], "Digital Twins"],
+    [["액정 엘라스토머", "액정 고무", "액정 고무체", "liquid crystal elastomer", "lce"], "LCE"],
+    [["4d 프린팅", "4d printing", "4d print"], "4D printing"],
+    [["메타재료", "메타물질", "metamaterial"], "Metamaterials"],
+    [["능동 재료", "능동 소재", "active material", "active materials"], "Active materials"],
+    [["스마트 재료", "자극 반응", "stimuli", "stimulus", "responsive"], "Stimuli-responsive"],
+    [["형태 변형", "형태 변화", "형상 변형", "shape morph", "morphing"], "Shape morphing"],
+    [["툴패스", "toolpath", "tool path"], "Toolpath strategy"],
+    [["경로 계획", "path planning", "trajectory"], "Path planning"],
+    [["공정 최적화", "제조 최적화", "최적화", "process optimization", "parameter optimization"], "Process optimization"],
+    [["재료 전환", "material switching", "purge"], "Material switching"],
+    [["소재 분포", "재료 분포", "material distribution"], "Material distribution"],
+    [["계산 설계", "계산설계", "설계 자동화", "computational design", "design automation", "generative design"], "Design automation"],
+    [["머신러닝", "머신 러닝", "기계 학습", "machine learning"], "Machine learning"],
+    [["딥러닝", "deep learning", "neural"], "Deep Learning"],
+    [["강화 학습", "reinforcement learning"], "Reinforcement Learning"],
+    [["인공지능", "ai", "artificial intelligence"], "Machine learning"],
+    [["제조 자동화", "자동화", "스마트 제조", "manufacturing automation", "automated manufacturing"], "Manufacturing automation"],
+    [["자율 실험", "자율 실험실", "self-driving lab", "autonomous laboratory", "bayesian optimization"], "Self-driving Labs"],
+    [["로봇", "로봇 공학", "로봇공학", "robotic", "robot"], "Robotic AM"],
+    [["금속", "합금", "alloy", "alloys", "metal", "metals"], "Metals/Alloys"],
+    [["복합재", "복합재료", "복합 재료", "composite", "composites"], "Composites/Materials"],
+    [["지속 가능성", "지속가능성", "재활용", "sustainability", "recycling", "circular"], "Sustainability"],
+    [["광중합", "디지털 광 처리", "photopolymer", "photopolymerization", "dlp"], "DLP"],
+    [["물성 제어", "property control", "crystallinity", "결정화도"], "Material property control"],
+    [["나노", "마이크로", "nanowriting", "micro", "nano"], "Micro/Nano manufacturing"],
+    [["기능성 구배", "구배 재료", "functionally graded", "fgam"], "FGAM"],
+    [["다중재료", "다중 재료", "multi-material", "multimaterial", "mmam"], "MMAM"],
+    [["fdm", "fused deposition", "material extrusion", "filament"], "FDM/Material extrusion"],
+    [["dm filament", "digital material", "blended fdm"], "DM filament"],
+    [["리뷰", "review", "survey"], "Review"],
+  ];
+
+  for (const [needles, canonical] of checks) {
+    if (needles.some((needle) => raw.includes(needle) || text.includes(normalize(needle)))) {
+      return canonical;
+    }
+  }
+  return "";
+}
+
 function canonicalTopicLabel(tag) {
   const value = String(tag || "").trim();
   const text = normalize(value);
   if (!value) return "";
+  const explicit = explicitCanonicalAlias(value, text);
+  if (explicit) return explicit;
   if (hasAny(text, ["multi-material", "multi material", "multimaterial", "mmam", "다중재료", "다중 재료"])) return "MMAM";
   if (hasAny(text, ["functionally graded", "functional gradient", "graded material", "fgam", "기능성 구배", "구배"])) return "FGAM";
   if (hasAny(text, ["dm filament", "digital material", "blended fdm"])) return "DM filament";
@@ -1142,6 +1212,10 @@ function canonicalTopicLabel(tag) {
   return value;
 }
 
+function isKnownCanonicalTag(tag) {
+  return Boolean(TAG_LABELS.en && TAG_LABELS.en[tag]);
+}
+
 function normalizeTopicKey(tag) {
   return normalize(tag).replace(/[^a-z0-9가-힣]+/g, "");
 }
@@ -1152,6 +1226,7 @@ function visibleTags(paper) {
   const cleaned = [];
   (paper.tags || []).forEach((tag) => {
     const canonical = canonicalTopicLabel(tag);
+    if (!isKnownCanonicalTag(canonical)) return;
     const key = normalizeTopicKey(canonical);
     if (!canonical || seen.has(key)) return;
     seen.add(key);
