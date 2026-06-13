@@ -2,7 +2,10 @@
 
 ## 2026-06-13 13:26 최신 상태
 
-- 2026-06-13 13:30에 OpenAI refresh 후 `relevance_score`가 전부 `1/10`으로 덮인 문제를 복구했습니다. 현재 점수 분포는 `5점 296편`, `6점 141편`, `7점 76편`, `8점 26편`입니다.
+- 2026-06-13 13:43에 Nature/Science/Nature Materials/Science Advances 대표 논문 누락 원인을 조사하고 seed DOI 기반으로 보강했습니다. 현재 curated 논문 수는 549편입니다.
+- 원인은 API 부재가 아니라 broad query 검색 결과 제한과 relevance/archive 정책이었습니다. 대표 DOI는 `data/seed_dois.json`에 고정하고 `curation_priority=true`로 메인 목록에 남깁니다.
+- 새로 추가/승격된 대표 논문 중 기존 OpenAI 요약이 없던 10편은 OpenAI 없이 fallback metadata summary 상태입니다. OpenAI 적용은 사용자가 다시 명시 요청할 때만 수행해야 합니다.
+- 2026-06-13 13:30에 OpenAI refresh 후 `relevance_score`가 전부 `1/10`으로 덮인 문제를 복구했습니다. 대표 DOI 보강 후 현재 점수 분포는 `5점 305편`, `6점 142편`, `7점 76편`, `8점 26편`입니다.
 - 향후 `Refresh OpenAI summaries`는 `relevance_score`를 덮어쓰지 않고 기존 curated score를 유지합니다.
 - curated 논문 539편 전체에 OpenAI 기반 Q5 요약이 적용되었습니다.
 - `data/papers.json` 기준 `summary_provider=openai` 539편, `openai_summary_applied=true` 539편입니다.

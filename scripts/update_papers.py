@@ -52,16 +52,19 @@ def main() -> None:
         candidate = _safe_fetch_openalex_doi(doi)
         if not candidate:
             continue
-        if not _is_plausible(candidate, since_year):
+        if not _is_plausible_seed(candidate, since_year):
             print(f"Seed DOI skipped by relevance/year filter: {doi}")
             continue
+        _mark_curation_priority(candidate)
         key = _dedupe_key(candidate)
         if key in index:
             _merge_existing_record(index[key], candidate, today)
+            _mark_curation_priority(index[key])
             continue
 
         enriched = enrich_with_semantic_scholar(candidate)
         summarized = summarize_record(enriched, allow_openai=allow_openai_in_update)
+        _mark_curation_priority(summarized)
         paper = _finalize_record(summarized, today)
         index[_dedupe_key(paper)] = paper
         existing.append(paper)
@@ -272,6 +275,24 @@ def _is_plausible(record: dict[str, Any], since_year: int) -> bool:
     return any(term in text for term in additive_terms) and any(term in text for term in topic_terms)
 
 
+def _is_plausible_seed(record: dict[str, Any], since_year: int) -> bool:
+    title = record.get("title", "")
+    if not title or title == "Untitled":
+        return False
+    if _is_non_research_output(title):
+        return False
+    raw_year = record.get("year")
+    year = _safe_year(raw_year, log=False)
+    if raw_year and year is None:
+        return False
+    return not year or year >= since_year
+
+
+def _mark_curation_priority(record: dict[str, Any]) -> None:
+    record["curation_priority"] = True
+    record["relevance_score"] = max(CURATED_MIN_SCORE, int(record.get("relevance_score") or 0))
+
+
 def _is_non_research_output(title: str) -> bool:
     normalized_title = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", title)).strip().lower()
     blocked_prefixes = (
@@ -320,7 +341,10 @@ def _split_curated_archive(records: list[dict[str, Any]]) -> tuple[list[dict[str
 
 
 def _is_curated_candidate(record: dict[str, Any]) -> bool:
-    return int(record.get("relevance_score") or 0) >= CURATED_MIN_SCORE and not _is_non_research_output(record.get("title", ""))
+    return (
+        bool(record.get("curation_priority"))
+        or int(record.get("relevance_score") or 0) >= CURATED_MIN_SCORE
+    ) and not _is_non_research_output(record.get("title", ""))
 
 
 def _curation_rank(record: dict[str, Any]) -> tuple[int, int, int, int, int, str]:
@@ -395,6 +419,7 @@ def _finalize_record(record: dict[str, Any], today: str) -> dict[str, Any]:
         "categories": record.get("categories", ["다중재료 적층제조"])[:2],
         "tags": record.get("tags", [])[:6],
         "relevance_score": int(record.get("relevance_score", 5)),
+        "curation_priority": bool(record.get("curation_priority")),
         "ai_summary_ko": record.get("ai_summary_ko", ""),
         "ai_summary_en": record.get("ai_summary_en", ""),
         "summary_provider": record.get("_summary_provider", "fallback"),
