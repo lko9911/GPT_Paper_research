@@ -2495,3 +2495,31 @@
 ### 주의사항
 - API key, token, secret은 기록하지 않았습니다.
 - 현재 curated 414편의 OpenAI 적용 수는 0편입니다.
+
+## 2026-06-13 01:55
+
+### 변경 요약
+- 논문 카드 hover 애니메이션을 더 풍성하게 개선했습니다.
+- 카드가 뜨는 느낌에 더해 내부 제목, topline, summary, tag, link 영역이 미세하게 따라 움직이도록 했습니다.
+
+### 수정/생성한 파일
+- `index.html`: CSS/JS cache-busting 버전을 `20260613-0080`으로 갱신했습니다.
+- `assets/style.css`: paper-card 전용 final hover layer를 추가했습니다.
+- `AGENT_LOG.md`: 이번 마우스 인터랙션 개선 기록을 추가했습니다.
+
+### 구현한 기능
+- 논문 카드 hover 시 더 큰 lift, scale, shadow가 적용됩니다.
+- 카드 내부에 radial/linear highlight overlay가 부드럽게 나타납니다.
+- 제목과 요약 블록, 태그, 링크 영역이 작은 시차감을 갖고 움직입니다.
+- 다크모드용 shadow와 highlight 대비를 별도로 보정했습니다.
+
+### 설계 결정
+- hover 효과는 논문 카드에만 강화하고, 전체 사이트의 학술적 톤은 유지했습니다.
+- 기존 CSS 뒤쪽 refinement가 hover를 덮어쓰고 있어 파일 후반에 final layer로 배치했습니다.
+
+### 남은 작업
+- 실제 브라우저에서 움직임이 과하면 `translateY(-5px)`와 `scale(1.008)` 값을 낮추면 됩니다.
+
+### 주의사항
+- API key, token, secret은 기록하지 않았습니다.
+- 작업 중 `data/papers.json`, `data/site_meta.json`에 별도 변경이 감지되었지만 이번 UI 커밋에는 포함하지 않았습니다.
