@@ -4,24 +4,24 @@ This file is written by GitHub Actions so the latest paper-update state can be c
 
 ## Latest Workflow Check
 
-- Checked at: `2026-06-13 11:39:20 KST`
+- Checked at: `2026-06-13T19:00:51+09:00` KST
 - Workflow: `Update papers`
-- Event: `manual baseline`
-- Run: `-`
-- Job status: `baseline`
-- Update step: `not run in this baseline file`
-- Commit step: `not run in this baseline file`
-- Deploy step: `not run in this baseline file`
+- Event: `schedule`
+- Run: [27463017145](https://github.com/lko9911/GPT_Paper_research/actions/runs/27463017145)
+- Job status: `success`
+- Update step: `success`
+- Commit step: `success`
+- Deploy step: `success`
 - Ref: `main`
-- Commit SHA: `-`
+- Commit SHA: `c2a8bb5496fd8db070358944f6a035b766e2c54e`
 
 ## Last Successful Collection
 
-- Last collection time: `2026-06-13 10:30:30 KST`
-- Curated papers: `539`
-- Raw candidates: `2217`
-- Archived hidden: `1678`
-- Papers added in last successful run: `133`
+- Last collection time: `2026-06-13 18:33:34 KST`
+- Curated papers: `707`
+- Raw candidates: `2393`
+- Archived hidden: `1686`
+- Papers added in last successful run: `166`
 
 ## Schedule
 
