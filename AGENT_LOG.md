@@ -1,5 +1,33 @@
 # AGENT_LOG
 
+## 2026-06-13 13:54
+
+### 변경 요약
+- 태그가 한글/영문 모드에서 불안정하게 섞이는 문제를 개선했습니다.
+- OpenAI가 생성한 자유 태그와 기존 fallback 태그가 1,000종 이상 섞여 있어, 화면 표시 단계에서 canonical 대표 태그만 통과시키도록 변경했습니다.
+
+### 수정/생성한 파일
+- `assets/app.js`: 한글/영문 태그 label을 보강하고, 자주 나오는 한글 자유 태그를 canonical tag로 매핑하는 `explicitCanonicalAlias()`를 추가했습니다.
+- `assets/app.js`: `representativeTags()`와 `visibleTags()`에서 알 수 없는 자유 태그는 표시/필터에 노출하지 않도록 제한했습니다.
+- `index.html`: JS/CSS cache-busting version을 갱신했습니다.
+- `AGENT_LOG.md`: 이번 태그 표시 안정화 작업을 기록했습니다.
+
+### 구현한 기능
+- `적층 제조`, `디지털 트윈`, `액정 엘라스토머`, `복합재료`, `지속 가능성`, `금속`, `공정 최적화`, `제조 자동화` 등 자주 등장하는 한글 태그를 영문/한글 canonical label로 변환합니다.
+- 영어 모드에서는 대표 태그가 `Additive Manufacturing`, `Digital Twins`, `LCE`, `Composites/Materials`처럼 영문으로 표시됩니다.
+- 한글 모드에서는 같은 태그가 `적층 제조`, `디지털 트윈`, `LCE`, `복합재/소재`처럼 표시됩니다.
+
+### 설계 결정
+- `data/papers.json`의 원본 자유 태그를 대량 수정하지 않고, 프론트엔드 표시 계층에서 canonical tag만 보여주는 방식을 선택했습니다.
+- 알 수 없는 자유 태그는 카드/필터에서 제외해 언어 혼합과 과도한 태그 증가를 막습니다.
+
+### 남은 작업
+- 실제 화면에서 추가로 어색한 태그가 보이면 `explicitCanonicalAlias()`에 alias를 더 추가하면 됩니다.
+
+### 주의사항
+- OpenAI API는 호출하지 않았습니다.
+- 논문 데이터, 요약 내용, relevance score는 수정하지 않았습니다.
+
 ## 2026-06-13 13:43
 
 ### 변경 요약
