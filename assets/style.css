@@ -1023,6 +1023,536 @@ h1 {
   }
 }
 
+/* Last mobile override. Keep this at EOF so earlier refinement layers cannot re-break phones. */
+@media (max-width: 760px) {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .wide-shell,
+  .shell {
+    width: min(100% - 20px, 720px);
+  }
+
+  .site-header {
+    padding: 18px 0 16px;
+  }
+
+  .site-header .wide-shell {
+    align-items: stretch;
+  }
+
+  .site-toolbar {
+    position: static;
+    align-self: center;
+    justify-content: center;
+    margin-bottom: 14px;
+  }
+
+  .eyebrow {
+    font-size: 0.68rem;
+    line-height: 1.25;
+  }
+
+  h1 {
+    max-width: 13.5ch;
+    font-size: clamp(1.55rem, 8vw, 2.05rem);
+    line-height: 1.1;
+    overflow-wrap: normal;
+  }
+
+  .subtitle {
+    max-width: 32rem;
+    margin: 12px auto 14px;
+    font-size: 0.92rem;
+    line-height: 1.5;
+  }
+
+  .venue-nav {
+    justify-content: flex-start;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    gap: 7px;
+    margin: 12px -10px 4px;
+    padding: 0 10px 8px;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .venue-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .venue-pill {
+    flex: 0 0 auto;
+    min-height: 30px;
+    padding: 7px 11px;
+    font-size: 0.74rem;
+  }
+
+  .main-layout {
+    display: block;
+  }
+
+  .sidebar {
+    position: static;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    margin-bottom: 14px;
+    padding: 12px;
+  }
+
+  .side-nav,
+  .stats,
+  .controls,
+  .venue-featured,
+  .paper-group,
+  .card-links {
+    grid-template-columns: 1fr;
+  }
+
+  .side-nav {
+    gap: 7px;
+  }
+
+  .side-subtopics {
+    padding-left: 0;
+    border-left: 0;
+  }
+
+  .side-nav button,
+  .side-nav .side-field,
+  .side-nav .side-subtopic {
+    grid-template-columns: minmax(0, 1fr) max-content;
+    column-gap: 10px;
+    width: 100%;
+    max-width: 100%;
+    min-height: 38px;
+    padding: 8px 9px;
+    border-radius: 7px;
+    font-size: 0.74rem;
+    line-height: 1.22;
+  }
+
+  .side-nav .side-field .side-label,
+  .side-nav .side-label {
+    overflow: visible;
+    text-overflow: clip;
+    white-space: normal;
+  }
+
+  .side-nav .side-count {
+    justify-self: end;
+    flex: 0 0 auto;
+    min-width: 26px;
+    min-height: 20px;
+    padding: 2px 7px;
+    font-size: 0.66rem;
+  }
+
+  .stats {
+    gap: 8px;
+    padding: 10px 0;
+  }
+
+  .stats article {
+    padding: 11px 10px;
+  }
+
+  .stats span {
+    overflow-wrap: anywhere;
+    font-size: 1.18rem;
+  }
+
+  .stats span.stat-datetime {
+    font-size: 0.88rem;
+  }
+
+  .controls {
+    gap: 8px;
+    padding: 10px;
+  }
+
+  .controls input,
+  .controls select {
+    min-height: 42px;
+    font-size: 0.9rem;
+  }
+
+  .venue-section-head,
+  .results-head,
+  .group-heading {
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .venue-section-head {
+    gap: 6px;
+    padding: 12px;
+  }
+
+  .venue-section-head p:last-child {
+    max-width: none;
+    text-align: left;
+  }
+
+  .venue-board {
+    padding: 10px;
+  }
+
+  .paper-group {
+    --grid-min: 100%;
+    gap: 12px;
+  }
+
+  .group-heading {
+    gap: 4px;
+    padding: 8px 0;
+  }
+
+  .paper-card {
+    min-width: 0;
+  }
+
+  .paper-card:hover {
+    transform: none;
+  }
+
+  .card-content {
+    padding: 12px;
+  }
+
+  .card-topline span,
+  .badge {
+    max-width: 100%;
+    white-space: normal;
+    line-height: 1.2;
+  }
+
+  .paper-title,
+  .meta,
+  .summary,
+  .summary-qa dd,
+  .relevance-note,
+  .policy-mini {
+    overflow-wrap: anywhere;
+  }
+
+  .link-pill {
+    width: 100%;
+    min-height: 36px;
+  }
+}
+
+/* Mobile layout pass. Desktop stays unchanged; phones get a single-column reading flow. */
+@media (max-width: 760px) {
+  html {
+    scroll-padding-top: 12px;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .wide-shell,
+  .shell {
+    width: min(100% - 20px, 720px);
+  }
+
+  .site-header {
+    padding: 18px 0 16px;
+  }
+
+  .site-header .wide-shell {
+    align-items: stretch;
+  }
+
+  .site-toolbar {
+    position: static;
+    align-self: center;
+    justify-content: center;
+    margin-bottom: 14px;
+  }
+
+  .eyebrow {
+    font-size: 0.68rem;
+    line-height: 1.25;
+  }
+
+  h1 {
+    max-width: 16ch;
+    font-size: clamp(1.7rem, 9vw, 2.35rem);
+    line-height: 1.08;
+  }
+
+  .subtitle {
+    max-width: 32rem;
+    margin: 12px auto 14px;
+    font-size: 0.92rem;
+    line-height: 1.5;
+  }
+
+  .venue-nav {
+    justify-content: flex-start;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    gap: 7px;
+    margin: 12px -10px 4px;
+    padding: 0 10px 8px;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .venue-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .venue-pill {
+    flex: 0 0 auto;
+    min-height: 30px;
+    padding: 7px 11px;
+    font-size: 0.74rem;
+  }
+
+  .main-layout {
+    display: block;
+  }
+
+  .sidebar {
+    position: static;
+    margin-bottom: 14px;
+    padding: 12px;
+  }
+
+  .sidebar strong {
+    margin-bottom: 8px;
+    font-size: 0.78rem;
+  }
+
+  .side-nav {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 7px;
+  }
+
+  .side-field-group {
+    min-width: 0;
+  }
+
+  .side-subtopics {
+    gap: 4px;
+    padding-left: 0;
+    border-left: 0;
+  }
+
+  .side-nav button,
+  .side-nav .side-field,
+  .side-nav .side-subtopic {
+    column-gap: 8px;
+    min-height: 38px;
+    padding: 8px 9px;
+    border-radius: 7px;
+    font-size: 0.72rem;
+    line-height: 1.2;
+  }
+
+  .side-nav .side-field .side-label,
+  .side-nav .side-label {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .side-nav .side-count {
+    min-width: 24px;
+    min-height: 20px;
+    padding: 2px 6px;
+    font-size: 0.66rem;
+  }
+
+  .stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    padding: 10px 0;
+  }
+
+  .stats article {
+    min-width: 0;
+    padding: 11px 10px;
+  }
+
+  .stats span {
+    overflow-wrap: anywhere;
+    font-size: 1.18rem;
+  }
+
+  .stats span.stat-datetime {
+    font-size: 0.88rem;
+  }
+
+  .stats span.stat-datetime small,
+  .stats strong {
+    font-size: 0.68rem;
+  }
+
+  .controls {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 10px;
+  }
+
+  .controls input,
+  .controls select {
+    min-height: 42px;
+    font-size: 0.9rem;
+  }
+
+  .venue-section {
+    margin-top: 12px;
+  }
+
+  .venue-section-head {
+    align-items: start;
+    flex-direction: column;
+    gap: 6px;
+    padding: 12px;
+  }
+
+  .venue-section-head p:last-child {
+    max-width: none;
+    text-align: left;
+  }
+
+  .venue-board {
+    padding: 10px;
+  }
+
+  .venue-featured {
+    grid-template-columns: 1fr;
+  }
+
+  .venue-card {
+    min-height: 0;
+    padding: 10px;
+  }
+
+  .results-head {
+    align-items: start;
+    flex-direction: column;
+    gap: 4px;
+    padding: 18px 0 9px;
+  }
+
+  .paper-list {
+    gap: 22px;
+  }
+
+  .paper-group {
+    --grid-min: 100%;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .group-heading {
+    align-items: start;
+    flex-direction: column;
+    gap: 4px;
+    padding: 8px 0;
+  }
+
+  .group-heading h3 {
+    padding-left: 10px;
+    font-size: 1rem;
+    line-height: 1.25;
+  }
+
+  .paper-card {
+    min-width: 0;
+    border-radius: 8px;
+  }
+
+  .paper-card:hover {
+    transform: none;
+  }
+
+  .card-content {
+    padding: 12px;
+  }
+
+  .card-topline {
+    gap: 5px;
+  }
+
+  .card-topline span {
+    max-width: 100%;
+    min-height: 22px;
+    padding: 4px 7px;
+    white-space: normal;
+    font-size: 0.66rem;
+    line-height: 1.2;
+  }
+
+  .paper-title {
+    overflow-wrap: anywhere;
+    font-size: 0.96rem;
+  }
+
+  .meta,
+  .summary,
+  .summary-qa dd,
+  .relevance-note,
+  .policy-mini {
+    overflow-wrap: anywhere;
+  }
+
+  .summary-qa div {
+    padding: 7px;
+  }
+
+  .tag-line {
+    gap: 5px;
+  }
+
+  .badge {
+    max-width: 100%;
+    white-space: normal;
+    line-height: 1.2;
+  }
+
+  .card-links {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 7px;
+  }
+
+  .link-pill {
+    width: 100%;
+    min-height: 36px;
+    padding: 7px 8px;
+  }
+}
+
+@media (max-width: 420px) {
+  .wide-shell,
+  .shell {
+    width: min(100% - 16px, 420px);
+  }
+
+  .side-nav {
+    grid-template-columns: 1fr;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .card-links {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Final desktop width override: prioritize the paper panel and reduce unused side margins. */
 @media (min-width: 1200px) {
   .wide-shell {
@@ -2144,5 +2674,320 @@ h1 {
 
   .venue-nav {
     justify-content: center;
+  }
+}
+
+/* Last mobile override. Keep this at EOF so earlier refinement layers cannot re-break phones. */
+@media (max-width: 760px) {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .wide-shell,
+  .shell {
+    width: min(100% - 20px, 720px);
+  }
+
+  .site-header {
+    padding: 18px 0 16px;
+  }
+
+  .site-header .wide-shell {
+    align-items: stretch;
+  }
+
+  .site-toolbar {
+    position: static;
+    align-self: center;
+    justify-content: center;
+    margin-bottom: 14px;
+  }
+
+  .eyebrow {
+    font-size: 0.68rem;
+    line-height: 1.25;
+  }
+
+  h1 {
+    max-width: 13.5ch;
+    font-size: clamp(1.55rem, 8vw, 2.05rem);
+    line-height: 1.1;
+    overflow-wrap: normal;
+  }
+
+  .subtitle {
+    max-width: 32rem;
+    margin: 12px auto 14px;
+    font-size: 0.92rem;
+    line-height: 1.5;
+  }
+
+  .venue-nav {
+    justify-content: flex-start;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    gap: 7px;
+    margin: 12px -10px 4px;
+    padding: 0 10px 8px;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .venue-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .venue-pill {
+    flex: 0 0 auto;
+    min-height: 30px;
+    padding: 7px 11px;
+    font-size: 0.74rem;
+  }
+
+  .main-layout {
+    display: block;
+  }
+
+  .sidebar {
+    position: static;
+    margin-bottom: 14px;
+    padding: 12px;
+  }
+
+  .side-nav,
+  .stats,
+  .controls,
+  .venue-featured,
+  .paper-group,
+  .card-links {
+    grid-template-columns: 1fr;
+  }
+
+  .side-nav {
+    gap: 7px;
+  }
+
+  .side-subtopics {
+    padding-left: 0;
+    border-left: 0;
+  }
+
+  .side-nav button,
+  .side-nav .side-field,
+  .side-nav .side-subtopic {
+    column-gap: 10px;
+    min-height: 38px;
+    padding: 8px 9px;
+    border-radius: 7px;
+    font-size: 0.74rem;
+    line-height: 1.22;
+  }
+
+  .side-nav .side-field .side-label,
+  .side-nav .side-label {
+    overflow: visible;
+    text-overflow: clip;
+    white-space: normal;
+  }
+
+  .side-nav .side-count {
+    min-width: 26px;
+    min-height: 20px;
+    padding: 2px 7px;
+    font-size: 0.66rem;
+  }
+
+  .stats {
+    gap: 8px;
+    padding: 10px 0;
+  }
+
+  .stats article {
+    padding: 11px 10px;
+  }
+
+  .stats span {
+    overflow-wrap: anywhere;
+    font-size: 1.18rem;
+  }
+
+  .stats span.stat-datetime {
+    font-size: 0.88rem;
+  }
+
+  .controls {
+    gap: 8px;
+    padding: 10px;
+  }
+
+  .controls input,
+  .controls select {
+    min-height: 42px;
+    font-size: 0.9rem;
+  }
+
+  .venue-section-head,
+  .results-head,
+  .group-heading {
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .venue-section-head {
+    gap: 6px;
+    padding: 12px;
+  }
+
+  .venue-section-head p:last-child {
+    max-width: none;
+    text-align: left;
+  }
+
+  .venue-board {
+    padding: 10px;
+  }
+
+  .paper-group {
+    --grid-min: 100%;
+    gap: 12px;
+  }
+
+  .group-heading {
+    gap: 4px;
+    padding: 8px 0;
+  }
+
+  .paper-card {
+    min-width: 0;
+  }
+
+  .paper-card:hover {
+    transform: none;
+  }
+
+  .card-content {
+    padding: 12px;
+  }
+
+  .card-topline span,
+  .badge {
+    max-width: 100%;
+    white-space: normal;
+    line-height: 1.2;
+  }
+
+  .paper-title,
+  .meta,
+  .summary,
+  .summary-qa dd,
+  .relevance-note,
+  .policy-mini {
+    overflow-wrap: anywhere;
+  }
+
+  .link-pill {
+    width: 100%;
+    min-height: 36px;
+  }
+}
+
+/* Tiny phone overflow guard for sidebar counts. */
+@media (max-width: 760px) {
+  .sidebar,
+  .side-nav,
+  .side-field-group,
+  .side-subtopics {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .sidebar {
+    overflow: hidden;
+  }
+
+  .side-nav button,
+  .side-nav .side-field,
+  .side-nav .side-subtopic {
+    grid-template-columns: minmax(0, 1fr) max-content;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .side-nav .side-count {
+    justify-self: end;
+    flex: 0 0 auto;
+  }
+}
+
+/* Mobile sidebar count visibility guard. */
+@media (max-width: 760px) {
+  .side-nav button,
+  .side-nav .side-field,
+  .side-nav .side-subtopic {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .side-nav .side-label {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .side-nav .side-count {
+    display: inline-flex;
+    flex: 0 0 auto;
+    margin-left: 8px;
+  }
+}
+
+/* Hard mobile width clamp for the topic panel. */
+@media (max-width: 760px) {
+  .main-layout,
+  .content,
+  .sidebar {
+    width: 100%;
+    max-width: calc(100vw - 20px);
+  }
+
+  .side-nav button,
+  .side-nav .side-field,
+  .side-nav .side-subtopic {
+    position: relative;
+    width: 100%;
+    max-width: calc(100vw - 44px);
+    padding-right: 46px;
+  }
+
+  .side-nav .side-count {
+    position: absolute;
+    top: 50%;
+    right: 9px;
+    margin-left: 0;
+    transform: translateY(-50%);
+  }
+}
+
+/* Mobile count placement: keep counts next to labels instead of the far edge. */
+@media (max-width: 760px) {
+  .side-nav button,
+  .side-nav .side-field,
+  .side-nav .side-subtopic {
+    justify-content: flex-start;
+    padding-right: 9px;
+  }
+
+  .side-nav .side-label {
+    flex: 0 1 auto;
+  }
+
+  .side-nav .side-count {
+    position: static;
+    transform: none;
+    margin-left: 8px;
   }
 }
