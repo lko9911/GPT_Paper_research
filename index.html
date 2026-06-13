@@ -8,7 +8,7 @@
       name="description"
       content="An AI-assisted research tracker for manufacturing, 3D/4D printing, robotics, and AI-driven production."
     />
-    <link rel="stylesheet" href="assets/style.css?v=20260613-0330" />
+    <link rel="stylesheet" href="assets/style.css?v=20260613-0350" />
   </head>
   <body>
     <header class="site-header" id="top">
@@ -96,6 +96,19 @@
           </label>
         </section>
 
+        <section class="research-actions" aria-label="Research actions">
+          <div>
+            <strong id="shortlist-count">0 shortlisted</strong>
+            <span id="shortlist-hint">Star papers to build a local shortlist.</span>
+          </div>
+          <div class="research-action-buttons">
+            <button id="shortlist-toggle" class="action-pill" type="button" aria-pressed="false">Shortlist only</button>
+            <button id="export-csv" class="action-pill" type="button">CSV</button>
+            <button id="export-bibtex" class="action-pill" type="button">BibTeX</button>
+            <button id="export-markdown" class="action-pill" type="button">Markdown</button>
+          </div>
+        </section>
+
         <section class="venue-section" aria-label="게재지별 논문">
           <div class="venue-section-head">
             <div>
@@ -145,6 +158,6 @@
       </div>
     </footer>
 
-    <script src="assets/app.js?v=20260613-0330" defer></script>
+    <script src="assets/app.js?v=20260613-0350" defer></script>
   </body>
 </html>

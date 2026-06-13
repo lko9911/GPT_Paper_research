@@ -1,5 +1,34 @@
 # AGENT_LOG
 
+## 2026-06-13 21:58
+
+### 변경 요약
+- 논문 후보를 개인적으로 모아둘 수 있는 `Shortlist/Star` 기능을 추가했습니다.
+- 현재 필터링된 논문 목록을 CSV, BibTeX, Markdown으로 내보내는 export 기능을 추가했습니다.
+
+### 수정/생성한 파일
+- `index.html`: 검색/필터 아래에 research action bar를 추가하고 CSS/JS cache version을 `20260613-0350`으로 갱신했습니다.
+- `assets/app.js`: localStorage 기반 shortlist 저장, `Shortlist only` 필터, 카드 별표 버튼, CSV/BibTeX/Markdown export 로직, localStorage 안전 읽기 helper를 추가했습니다.
+- `assets/style.css`: research action bar, export 버튼, star 버튼 스타일과 모바일 대응을 추가했습니다.
+- `AGENT_LOG.md`: shortlist/export 기능 추가 내용을 기록했습니다.
+
+### 구현한 기능
+- 각 논문 카드에서 별표 버튼을 눌러 이 브라우저의 shortlist에 저장할 수 있습니다.
+- `Shortlist only` 버튼으로 저장한 논문만 필터링해서 볼 수 있습니다.
+- 현재 검색/필터 결과를 CSV, BibTeX, Markdown 파일로 다운로드할 수 있습니다.
+
+### 설계 결정
+- shortlist는 서버 없이 브라우저 `localStorage`에만 저장합니다. GitHub Pages 정적 사이트 구조를 유지하고, 사용자별 개인 선택이 저장소 데이터에 섞이지 않게 하기 위해서입니다.
+- export는 현재 화면의 필터링 결과 `state.filtered`를 기준으로 동작합니다. 사용자가 보고 있는 논문 묶음을 그대로 발표/문서 작업으로 가져가기 쉽게 하기 위해서입니다.
+- API, 논문 데이터, OpenAI 요약 pipeline은 변경하지 않았습니다.
+
+### 남은 작업
+- 배포 후 별표 저장, shortlist filter, 세 가지 export 버튼이 정상 동작하는지 브라우저에서 확인합니다.
+
+### 주의사항
+- 이 수정은 OpenAI API를 호출하지 않습니다.
+- 새 논문 수집도 실행하지 않습니다.
+
 ## 2026-06-13 21:43
 
 ### 변경 요약
