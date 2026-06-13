@@ -936,6 +936,77 @@ h1 {
   }
 }
 
+/* Wide layout pass: use desktop horizontal space instead of clustering in the center. */
+@media (min-width: 1200px) {
+  .wide-shell {
+    width: min(1760px, calc(100% - 44px));
+  }
+
+  .site-header {
+    text-align: left;
+  }
+
+  .site-header h1,
+  .site-header .subtitle,
+  .site-header .notice {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .site-header h1 {
+    max-width: 1180px;
+  }
+
+  .site-header .subtitle {
+    max-width: 980px;
+  }
+
+  .venue-nav {
+    justify-content: flex-start;
+  }
+
+  .main-layout {
+    grid-template-columns: 300px minmax(0, 1fr);
+    gap: 28px;
+  }
+
+  .sidebar {
+    padding: 14px;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .stats {
+    grid-template-columns: repeat(4, minmax(180px, 1fr));
+  }
+
+  .controls {
+    grid-template-columns: minmax(340px, 1.75fr) repeat(5, minmax(140px, 1fr));
+  }
+
+  .venue-featured {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+
+  .paper-group {
+    --grid-min: 320px;
+    gap: 16px;
+  }
+}
+
+@media (min-width: 1560px) {
+  .main-layout {
+    grid-template-columns: 320px minmax(0, 1fr);
+    gap: 32px;
+  }
+
+  .paper-group {
+    --grid-min: 300px;
+  }
+}
+
 /* Interaction polish: subtle, responsive motion without changing the academic layout. */
 :root {
   --motion-fast: 140ms cubic-bezier(0.2, 0.8, 0.2, 1);
