@@ -201,13 +201,13 @@ h1 {
 
 .creator-name {
   display: inline;
-  padding: 1px 5px 2px;
-  border-radius: 6px;
+  padding: 0 1px 1px;
+  border-radius: 2px;
   background:
-    linear-gradient(180deg, transparent 22%, rgba(118, 210, 173, 0.5) 22% 92%, transparent 92%);
+    linear-gradient(180deg, transparent 48%, rgba(118, 210, 173, 0.62) 48% 88%, transparent 88%);
   color: color-mix(in srgb, var(--green), var(--text) 12%);
   font-weight: 900;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.32);
+  text-shadow: none;
 }
 
 .subtitle {
@@ -3111,9 +3111,9 @@ h1 {
 
 :root[data-theme="dark"] .creator-name {
   background:
-    linear-gradient(180deg, transparent 20%, rgba(118, 210, 173, 0.4) 20% 92%, transparent 92%);
+    linear-gradient(180deg, transparent 48%, rgba(118, 210, 173, 0.48) 48% 88%, transparent 88%);
   color: #f1fff8;
-  text-shadow: 0 0 10px rgba(118, 210, 173, 0.22);
+  text-shadow: none;
 }
 
 @media (max-width: 720px) {
