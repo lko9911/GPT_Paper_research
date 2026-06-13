@@ -2580,3 +2580,28 @@
 ### 주의사항
 - API key, token, secret은 기록하지 않았습니다.
 - 로컬에 남아 있는 `data/papers.json`, `data/site_meta.json` 변경은 이번 UI 커밋에 포함하지 않습니다.
+
+## 2026-06-13 02:30
+
+### 변경 요약
+- 헤더 영역은 다시 중앙 정렬로 돌리고, 저작권/요약 정책 안내 문구는 footer의 개발자/운영 정보 영역으로 이동했습니다.
+
+### 수정/생성한 파일
+- `index.html`: 헤더의 두 notice 문단을 제거하고 footer의 `developer-notes` 영역으로 이동했습니다. CSS/JS cache-busting 버전을 `20260613-0110`으로 갱신했습니다.
+- `assets/style.css`: 헤더/venue nav 최종 중앙 정렬 override와 footer 개발자 노트 스타일을 추가했습니다.
+- `AGENT_LOG.md`: 이번 헤더/푸터 정보 구조 변경을 기록했습니다.
+
+### 구현한 기능
+- 상단 첫 화면에는 제목, 부제, venue chip만 중앙 배치됩니다.
+- 정책 문구는 페이지 하단 개발자/운영 정보 칸에서 확인할 수 있습니다.
+
+### 설계 결정
+- 기존 `.notice` 클래스를 footer로 이동해 한/영 전환 로직을 유지했습니다.
+- 넓은 화면 레이아웃은 유지하되, hero 성격의 헤더만 중앙 정렬로 복원했습니다.
+
+### 남은 작업
+- footer 운영 정보가 너무 길어 보이면 접이식 details UI로 바꿀 수 있습니다.
+
+### 주의사항
+- API key, token, secret은 기록하지 않았습니다.
+- 로컬에 남아 있는 `data/papers.json`, `data/site_meta.json` 변경은 이번 UI 커밋에 포함하지 않습니다.

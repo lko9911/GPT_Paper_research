@@ -979,6 +979,50 @@ h1 {
   }
 }
 
+/* Header/footer final placement. Keep hero centered; keep policy text in the lower developer area. */
+.site-header {
+  text-align: center;
+}
+
+.site-header h1,
+.site-header .subtitle {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.venue-nav {
+  justify-content: center;
+}
+
+.developer-notes {
+  display: grid;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.site-footer .notice,
+.site-footer .notice-soft {
+  max-width: none;
+  margin: 0;
+  text-align: left;
+}
+
+@media (min-width: 1200px) {
+  .site-header {
+    text-align: center;
+  }
+
+  .site-header h1,
+  .site-header .subtitle {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .venue-nav {
+    justify-content: center;
+  }
+}
+
 /* Final desktop width override: prioritize the paper panel and reduce unused side margins. */
 @media (min-width: 1200px) {
   .wide-shell {
