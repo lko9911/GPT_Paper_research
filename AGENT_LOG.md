@@ -1,5 +1,30 @@
 # AGENT_LOG
 
+## 2026-06-13 22:05
+
+### 변경 요약
+- 사용자의 요청에 따라 `Shortlist/Star` 기능을 제거했습니다.
+- CSV/BibTeX/Markdown export 기능은 유지하고, action bar를 export 전용으로 단순화했습니다.
+
+### 수정/생성한 파일
+- `index.html`: shortlist count/hint/toggle을 제거하고 export 안내 문구만 남겼습니다. CSS/JS cache version을 `20260613-0360`으로 갱신했습니다.
+- `assets/app.js`: shortlist 상태, localStorage 저장, 카드 별표 버튼, shortlist only 필터, export의 shortlisted 컬럼을 제거했습니다.
+- `AGENT_LOG.md`: shortlist 제거 작업을 기록했습니다.
+
+### 구현한 기능
+- 검색/필터 아래 action bar는 현재 필터 결과를 CSV, BibTeX, Markdown으로 내보내는 기능만 제공합니다.
+
+### 설계 결정
+- 사용자가 필요 없다고 판단한 개인 shortlist workflow는 제거하고, 필터 결과 export는 연구 자료 이동에 유용하므로 유지했습니다.
+- 브라우저에 과거 `shortlistedPapers` localStorage 값이 남아 있어도 더 이상 UI나 필터에 사용하지 않습니다.
+
+### 남은 작업
+- 배포 후 별표 버튼과 `Shortlist only` 버튼이 사라졌는지 확인합니다.
+
+### 주의사항
+- 이 수정은 OpenAI API를 호출하지 않습니다.
+- 새 논문 수집도 실행하지 않습니다.
+
 ## 2026-06-13 21:58
 
 ### 변경 요약

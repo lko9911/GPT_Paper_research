@@ -3493,7 +3493,7 @@ h1 {
   }
 }
 
-/* Research workflow additions: local shortlist and filtered exports. */
+/* Research workflow additions: filtered exports. */
 .research-actions {
   display: flex;
   align-items: center;
@@ -3574,75 +3574,14 @@ h1 {
   color: var(--amber);
 }
 
-.star-button {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  min-height: 25px;
-  margin-left: auto;
-  padding: 4px 8px;
-  border: 1px solid var(--line-strong);
-  border-radius: 999px;
-  background: var(--panel);
-  color: var(--muted);
-  font-size: 0.72rem;
-  font-weight: 820;
-  cursor: pointer;
-  transition:
-    transform 0.18s ease,
-    border-color 0.18s ease,
-    background 0.18s ease,
-    color 0.18s ease,
-    box-shadow 0.18s ease;
-}
-
-.card-topline .star-button span,
-.card-topline .star-button span:last-child {
-  display: inline;
-  min-height: 0;
-  padding: 0;
-  border: 0;
-  border-radius: 0;
-  background: transparent;
-  color: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  line-height: 1;
-}
-
-.card-topline .star-button span:first-child {
-  color: var(--amber);
-  font-size: 0.86rem;
-}
-
-.star-button:hover,
-.star-button.is-starred {
-  transform: translateY(-1px);
-  border-color: color-mix(in srgb, var(--amber), var(--line) 28%);
-  background: var(--amber-soft);
-  color: var(--amber);
-  box-shadow: 0 8px 18px color-mix(in srgb, var(--amber), transparent 82%);
-}
-
 :root[data-theme="dark"] .research-actions,
-:root[data-theme="dark"] .action-pill,
-:root[data-theme="dark"] .star-button {
+:root[data-theme="dark"] .action-pill {
   background: var(--panel);
   color: var(--text);
 }
 
 :root[data-theme="dark"] .card-topline > span {
   color: var(--text);
-}
-
-:root[data-theme="dark"] .star-button {
-  color: var(--muted);
-}
-
-:root[data-theme="dark"] .star-button:hover,
-:root[data-theme="dark"] .star-button.is-starred {
-  background: var(--amber-soft);
-  color: var(--amber);
 }
 
 @media (max-width: 760px) {
@@ -3659,9 +3598,4 @@ h1 {
     flex: 1 1 auto;
   }
 
-  .star-button {
-    width: 100%;
-    justify-content: center;
-    margin-left: 0;
-  }
 }
