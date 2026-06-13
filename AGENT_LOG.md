@@ -1,5 +1,31 @@
 # AGENT_LOG
 
+## 2026-06-13 22:41
+
+### 변경 요약
+- 헤더 배경에 아주 은은한 toolpath/contour 느낌의 곡선 레이어를 추가했습니다.
+- 모바일에서는 배경 장식 opacity를 낮춰 작은 화면에서 산만하지 않게 했습니다.
+
+### 수정/생성한 파일
+- `assets/style.css`: `.site-header::before`에 radial/repeating-radial gradient 기반 contour 레이어를 추가하고 모바일 override를 추가했습니다.
+- `index.html`: GitHub Pages cache busting을 위해 CSS/JS query version을 `20260613-0410`으로 갱신했습니다.
+- `AGENT_LOG.md`: 헤더 배경 contour 개선 기록을 추가했습니다.
+
+### 구현한 기능
+- 헤더에만 3D printing/toolpath를 연상시키는 희미한 곡선 레이어가 표시됩니다.
+- 본문 논문 카드와 필터 패널 배경은 그대로 유지해 가독성을 보호했습니다.
+
+### 설계 결정
+- SVG나 이미지 파일을 추가하지 않고 CSS gradient만 사용했습니다. 정적 사이트 구조를 단순하게 유지하고 되돌리기 쉽게 하기 위해서입니다.
+- 모바일에서는 장식 레이어를 단순화하고 opacity를 낮췄습니다.
+
+### 남은 작업
+- 배포 후 헤더 배경이 과하지 않고 본문 가독성을 해치지 않는지 확인합니다.
+
+### 주의사항
+- 이 수정은 OpenAI API를 호출하지 않습니다.
+- 새 논문 수집도 실행하지 않습니다.
+
 ## 2026-06-13 22:34
 
 ### 변경 요약
