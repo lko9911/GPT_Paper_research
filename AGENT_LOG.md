@@ -2552,3 +2552,31 @@
 ### 주의사항
 - API key, token, secret은 기록하지 않았습니다.
 - 로컬에 남아 있던 `data/papers.json`, `data/site_meta.json` 변경은 이번 UI 커밋에 포함하지 않을 예정입니다.
+
+## 2026-06-13 02:20
+
+### 변경 요약
+- 이전 wide layout 변경이 뒤쪽 CSS refinement에 의해 덮이는 문제를 수정했습니다.
+- 논문 패널이 실제로 좌우 화면 폭을 더 많이 쓰도록 파일 맨 끝에 final desktop width override를 추가했습니다.
+
+### 수정/생성한 파일
+- `index.html`: CSS/JS cache-busting 버전을 `20260613-0100`으로 갱신했습니다.
+- `assets/style.css`: 1200px 이상과 1680px 이상에서 `.wide-shell`, `.main-layout`, `.paper-group`을 최종 override로 확장했습니다.
+- `AGENT_LOG.md`: 이번 레이아웃 수정 기록을 추가했습니다.
+
+### 구현한 기능
+- 큰 화면에서 좌우 margin을 `20px` 이하로 줄였습니다.
+- sidebar는 280px로 유지하고, 나머지 폭을 논문 패널에 더 몰아줍니다.
+- 논문 grid 최소 폭을 280px, 초대형 화면에서는 270px로 낮춰 더 많은 카드 열을 표시합니다.
+- `content`, `paper-list`, `paper-group`의 `max-width` 제한을 제거했습니다.
+
+### 설계 결정
+- 기존 CSS 레이어가 많아 중간 위치의 width 규칙이 덮였기 때문에, 이번에는 파일 마지막에 final override를 배치했습니다.
+- 논문 카드 자체를 무리하게 넓히는 대신 카드 열 수를 늘려 데스크톱 공간 활용을 높였습니다.
+
+### 남은 작업
+- 실제 1920px 화면에서 카드가 너무 촘촘하면 `--grid-min`을 290px 정도로 되돌릴 수 있습니다.
+
+### 주의사항
+- API key, token, secret은 기록하지 않았습니다.
+- 로컬에 남아 있는 `data/papers.json`, `data/site_meta.json` 변경은 이번 UI 커밋에 포함하지 않습니다.
