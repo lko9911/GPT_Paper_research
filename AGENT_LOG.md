@@ -1,5 +1,37 @@
 # AGENT_LOG
 
+## 2026-06-13 21:25
+
+### 변경 요약
+- UI 실험 패치를 적용했습니다. 사용자가 되돌릴 수 있도록 프론트엔드 중심 변경으로 한정했습니다.
+- 상단 상태 요약, 카드 밀도 토글, 왼쪽 패널 accordion, Q5 요약 카드화, 관련성 설명 강조, hover/버튼 인터랙션을 개선했습니다.
+
+### 수정/생성한 파일
+- `index.html`: 상단 `hero-status` 한 줄 상태 요약과 `Compact/Comfort` 밀도 토글 버튼을 추가하고 CSS/JS cache version을 `20260613-0310`으로 갱신했습니다.
+- `assets/app.js`: 카드 밀도 preference, sidebar collapse 상태 저장, hero status 렌더링, Q5 takeaway 강조 class, 버튼 위계 class, 한글/영문 버튼 라벨을 추가했습니다.
+- `assets/style.css`: accordion sidebar, 더 넓은 논문 카드 grid, Q5 요약의 질문/답변 분리 디자인, relevance note 강조, hover micro-interaction, compact density mode, dark mode 대비 보정을 추가했습니다.
+- `AGENT_LOG.md`: 이번 UI 실험 변경 사항을 기록했습니다.
+
+### 구현한 기능
+- 왼쪽 분야 패널의 caret 클릭으로 서브토픽을 접고 펼칠 수 있습니다.
+- 상단에 `741 curated papers · 86 venues · 2024-2026 · updated ... KST` 형태의 요약 상태가 표시됩니다.
+- `Compact/Comfort` 버튼으로 논문 카드 밀도를 전환할 수 있습니다.
+- Q5 요약은 질문 라벨과 답변을 분리해 읽기 쉽게 표시하며, 마지막 takeaway는 별도 강조 블록처럼 보이게 했습니다.
+- 논문 카드, venue, tag, 버튼 hover에 부드러운 이동/그림자/색상 전환을 추가했습니다.
+
+### 설계 결정
+- 데이터, 요약, OpenAI/API workflow는 건드리지 않았습니다. UI 실험이 마음에 들지 않을 경우 이 커밋만 되돌리면 됩니다.
+- 카드 grid 최소 폭을 키워 요약 텍스트가 과도하게 좁아지지 않도록 했고, compact mode에서는 기존처럼 촘촘하게 볼 수 있게 했습니다.
+- sidebar field 클릭은 기존처럼 필터로 유지하고, caret 클릭만 접기/펼치기로 분리했습니다.
+
+### 남은 작업
+- 로컬 브라우저에서 desktop/mobile 화면을 확인하고 필요하면 간격과 대비를 조정합니다.
+- 검증 후 커밋/푸시하고 GitHub Pages 반영 여부를 확인합니다.
+
+### 주의사항
+- 이 수정은 OpenAI API를 호출하지 않습니다.
+- 새 논문 수집도 실행하지 않습니다.
+
 ## 2026-06-13 20:55
 
 ### 변경 요약
