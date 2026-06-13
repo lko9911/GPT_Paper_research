@@ -2787,6 +2787,36 @@
 - API key, token, secret은 기록하지 않았습니다.
 - OpenAI API는 정기 업데이트에서 여전히 사용하지 않습니다.
 
+## 2026-06-13 11:40
+
+### 변경 요약
+- 사용자가 업데이트가 됐는지, 밀렸는지, 실패했는지 직접 확인할 수 있는 Markdown 상태 파일을 요청했습니다.
+- `UPDATE_STATUS.md`와 `data/update_status.json`을 추가하고, `Update papers` workflow가 성공/실패 여부와 관계없이 마지막에 상태 파일을 갱신하도록 구성했습니다.
+
+### 수정/생성한 파일
+- `scripts/write_update_status.py`: GitHub Actions 환경변수와 `data/site_meta.json`을 읽어 `UPDATE_STATUS.md`, `data/update_status.json`을 생성하는 스크립트를 추가했습니다.
+- `.github/workflows/update-papers.yml`: `Update papers`, `Commit changed data`, `Deploy to GitHub Pages` 단계에 id를 부여하고, 마지막에 `Write update status` 및 `Commit update status` 단계를 추가했습니다.
+- `UPDATE_STATUS.md`: 사용자가 바로 확인할 수 있는 공개 Markdown 상태 파일을 추가했습니다.
+- `data/update_status.json`: 프론트엔드나 외부 도구가 읽을 수 있는 상태 JSON을 추가했습니다.
+- `AGENT_LOG.md`: 상태 파일 도입 이유와 동작 방식을 기록했습니다.
+
+### 구현한 기능
+- workflow가 시작되어 끝까지 도달하면 성공/실패/스킵 여부가 `UPDATE_STATUS.md`에 기록됩니다.
+- 마지막 성공 수집 시간, curated paper 수, raw candidate 수, archive 수, 마지막 성공 run의 추가 논문 수를 확인할 수 있습니다.
+- GitHub schedule 자체가 생성되지 않은 경우에는 이 파일이 바뀌지 않으므로, “해당 슬롯이 스킵됐음”을 간접적으로 확인할 수 있습니다.
+
+### 설계 결정
+- 상태 파일은 데이터 변경 여부와 별개로 항상 별도 커밋되도록 구성했습니다.
+- 사람이 바로 읽기 쉬운 Markdown과 기계가 읽기 쉬운 JSON을 함께 제공합니다.
+- OpenAI 사용 여부는 상태 파일에 `disabled`로 명시했습니다.
+
+### 남은 작업
+- 다음 scheduled 또는 workflow_dispatch 실행 후 `UPDATE_STATUS.md`가 자동 갱신되는지 확인하면 좋습니다.
+
+### 주의사항
+- API key, token, secret은 기록하지 않았습니다.
+- workflow가 GitHub에 의해 아예 생성되지 않은 경우에는 어떤 step도 실행되지 않으므로 상태 파일 역시 갱신되지 않습니다.
+
 ## 2026-06-13 02:30
 
 ### 변경 요약
