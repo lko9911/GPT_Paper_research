@@ -2741,6 +2741,28 @@
 - 기존 대시보드 누적 토큰은 과거 실행 기록과 다른 OpenAI 사용량을 포함할 수 있습니다.
 - 이번 변경은 OpenAI 호출을 발생시키지 않습니다.
 
+## 2026-06-13 11:13
+
+### 변경 요약
+- 정각 cron(`0 * * * *`)에서 11:00 KST scheduled run이 생성되지 않은 것을 확인한 뒤, 사용자의 요청에 따라 논문 자동 업데이트 시간을 다시 매시 17분으로 되돌렸습니다.
+
+### 수정/생성한 파일
+- `.github/workflows/update-papers.yml`: `cron: "0 * * * *"`를 `cron: "17 * * * *"`로 변경했습니다.
+- `AGENT_LOG.md`: 정각 실행이 GitHub schedule에서 누락된 이유와 17분 복귀 결정을 기록했습니다.
+
+### 구현한 기능
+- GitHub Actions `Update papers` workflow가 다시 매시간 17분 기준으로 예약 실행됩니다.
+
+### 설계 결정
+- 정각은 직관적이지만 GitHub Actions 큐가 몰려 scheduled run 생성이 누락될 수 있어, 상대적으로 덜 몰리는 17분 실행으로 되돌렸습니다.
+
+### 남은 작업
+- 다음 12:17 KST 전후 scheduled run이 생성되는지 확인하면 좋습니다.
+
+### 주의사항
+- API key, token, secret은 기록하지 않았습니다.
+- 논문이 새로 추가되지 않아도 workflow가 성공하면 `data/site_meta.json`의 `last_run_at_utc`가 갱신되어야 합니다.
+
 ## 2026-06-13 02:30
 
 ### 변경 요약
