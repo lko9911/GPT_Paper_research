@@ -45,6 +45,11 @@ const UI_TEXT = {
     themeDark: "Dark",
     themeLight: "Light",
     langToggle: "EN",
+    densityCompact: "간결",
+    densityComfortable: "넓게",
+    heroStatusLoading: "논문 정보를 불러오는 중...",
+    heroStatus:
+      "{papers}편 큐레이션 · {venues}개 게재지 · {years} · {updated} KST 갱신",
     subtitle: "생산·제조, 3D/4D 프린팅, 로봇틱스, AI 제조 분야를 위한 AI 기반 논문 큐레이션 저장소",
     noticeMain: "본 저장소는 DOI 링크와 AI 생성 요약만 제공합니다. 저작권이 있는 PDF나 출판사 초록 원문을 호스팅하지 않습니다.",
     noticeSoft:
@@ -90,6 +95,10 @@ const UI_TEXT = {
     openaiNotAppliedTitle: "OpenAI API를 사용하지 않고 제목, 초록 사용 여부, DOI 및 공개 메타데이터 신호를 바탕으로 작성한 요약입니다.",
     fallbackSummary: "메타데이터 기반 요약",
     summaryMissing: "요약이 아직 생성되지 않았습니다.",
+    openPaper: "논문 열기",
+    doiButton: "DOI",
+    copyCitation: "인용 복사",
+    copiedCitation: "복사됨",
     summaryQuestions: [
       "Topic",
       "Problem",
@@ -102,6 +111,11 @@ const UI_TEXT = {
     themeDark: "Dark",
     themeLight: "Light",
     langToggle: "KO",
+    densityCompact: "Compact",
+    densityComfortable: "Comfort",
+    heroStatusLoading: "Loading curated papers...",
+    heroStatus:
+      "{papers} curated papers · {venues} venues · {years} · updated {updated} KST",
     subtitle: "An AI-assisted research tracker for manufacturing, 3D/4D printing, robotics, and AI-driven production.",
     noticeMain: "This repository provides DOI links and AI-generated summaries only. It does not host copyrighted PDFs or publisher abstract text.",
     noticeSoft:
@@ -147,6 +161,10 @@ const UI_TEXT = {
     openaiNotAppliedTitle: "This summary was written without the OpenAI API, using title, abstract-availability, DOI, and public metadata signals.",
     fallbackSummary: "Metadata-based summary",
     summaryMissing: "Summary has not been generated yet.",
+    openPaper: "Open Paper",
+    doiButton: "DOI",
+    copyCitation: "Copy Cite",
+    copiedCitation: "Copied",
     summaryQuestions: [
       "Topic",
       "Problem",
@@ -297,11 +315,13 @@ const TAG_CATEGORY_ALIASES = {
 
 const DEFAULT_THEME = "dark";
 const DEFAULT_LANGUAGE = "en";
+const DEFAULT_DENSITY = "comfortable";
 const PREFERENCE_VERSION = "20260612-en-dark";
 
 if (localStorage.getItem("preferenceVersion") !== PREFERENCE_VERSION) {
   localStorage.setItem("theme", DEFAULT_THEME);
   localStorage.setItem("language", DEFAULT_LANGUAGE);
+  localStorage.setItem("density", DEFAULT_DENSITY);
   localStorage.setItem("preferenceVersion", PREFERENCE_VERSION);
 }
 
@@ -314,6 +334,8 @@ const state = {
   activeSubtopic: "",
   theme: localStorage.getItem("theme") || DEFAULT_THEME,
   language: localStorage.getItem("language") || DEFAULT_LANGUAGE,
+  density: localStorage.getItem("density") || DEFAULT_DENSITY,
+  collapsedFields: new Set(JSON.parse(localStorage.getItem("collapsedFields") || "[]")),
 };
 
 const els = {
@@ -334,8 +356,10 @@ const els = {
   years: document.querySelector("#stat-years"),
   updated: document.querySelector("#stat-updated"),
   opsNote: document.querySelector("#ops-note"),
+  heroStatus: document.querySelector("#hero-status"),
   themeToggle: document.querySelector("#theme-toggle"),
   languageToggle: document.querySelector("#language-toggle"),
+  densityToggle: document.querySelector("#density-toggle"),
 };
 
 async function init() {
@@ -400,6 +424,13 @@ function setupPreferences() {
       applyFilters();
     });
   }
+  if (els.densityToggle) {
+    els.densityToggle.addEventListener("click", () => {
+      state.density = state.density === "compact" ? "comfortable" : "compact";
+      localStorage.setItem("density", state.density);
+      applyPreferences();
+    });
+  }
   window.setInterval(() => {
     updateStats();
   }, 60000);
@@ -407,12 +438,16 @@ function setupPreferences() {
 
 function applyPreferences() {
   document.documentElement.dataset.theme = state.theme;
+  document.documentElement.dataset.density = state.density;
   document.documentElement.lang = state.language === "ko" ? "ko" : "en";
   if (els.themeToggle) {
     els.themeToggle.textContent = state.theme === "dark" ? t("themeLight") : t("themeDark");
   }
   if (els.languageToggle) {
     els.languageToggle.textContent = t("langToggle");
+  }
+  if (els.densityToggle) {
+    els.densityToggle.textContent = state.density === "compact" ? t("densityComfortable") : t("densityCompact");
   }
   applyStaticLanguage();
 }
@@ -446,6 +481,9 @@ function applyStaticLanguage() {
   setText("#empty-state p", t("emptyText"));
   setText("#footer-policy", t("footer"));
   setText("#contact-label", t("contactLabel"));
+  if (!state.papers.length) {
+    setText("#hero-status", t("heroStatusLoading"));
+  }
   if (els.search) {
     els.search.placeholder = t("searchPlaceholder");
   }
@@ -538,23 +576,29 @@ function buildSideNav() {
       const subtopics = FIELD_SUBTOPICS[field] || [];
       const fieldPapers = state.papers.filter((paper) => deriveField(paper) === field);
       const bucketCounts = sidebarBucketCounts(fieldPapers, subtopics);
+      const isCollapsed = state.collapsedFields.has(field);
       const subtopicButtons = [...subtopics, SIDEBAR_OTHER_TOPIC]
         .map((subtopic) => sideSubtopicButton(field, subtopic, bucketCounts.get(subtopic) || 0))
         .join("");
-      return `<div class="side-field-group">
-        <button class="side-field" type="button" data-side-field="${escapeAttribute(field)}">
+      return `<div class="side-field-group${isCollapsed ? " is-collapsed" : ""}">
+        <button class="side-field" type="button" data-side-field="${escapeAttribute(field)}" aria-expanded="${isCollapsed ? "false" : "true"}">
+          <span class="side-caret" aria-hidden="true"></span>
           <span class="side-label">${escapeHtml(displayLabel(field))}</span>
           <span class="side-count">${fieldCounts.get(field)}</span>
         </button>
-        <div class="side-subtopics">${subtopicButtons}</div>
+        <div class="side-subtopics" ${isCollapsed ? "hidden" : ""}>${subtopicButtons}</div>
       </div>`;
     })
     .join("");
 
   els.sideTopicNav.querySelectorAll("[data-side-field]").forEach((button) => {
-    button.addEventListener("click", () => {
+    button.addEventListener("click", (event) => {
       const field = button.dataset.sideField;
       const subtopic = button.dataset.sideSubtopic || "";
+      if (!subtopic && event.target.closest(".side-caret")) {
+        toggleSideField(field);
+        return;
+      }
       els.category.value = field;
       state.activeSubtopic = subtopic;
       syncSideNavActive();
@@ -562,6 +606,17 @@ function buildSideNav() {
       scrollToPapers();
     });
   });
+}
+
+function toggleSideField(field) {
+  if (state.collapsedFields.has(field)) {
+    state.collapsedFields.delete(field);
+  } else {
+    state.collapsedFields.add(field);
+  }
+  localStorage.setItem("collapsedFields", JSON.stringify([...state.collapsedFields]));
+  buildSideNav();
+  syncSideNavActive();
 }
 
 function sidebarBucketCounts(papers, subtopics) {
@@ -704,19 +759,39 @@ function updateStats() {
   const rawCount = meta.raw_candidate_count || state.papers.length;
   const archivedCount = meta.archived_count || Math.max(0, rawCount - state.papers.length);
   const lastRunAt = state.siteMeta && state.siteMeta.last_run_at_utc;
+  const locale = state.language === "ko" ? "ko-KR" : "en-US";
 
   if (els.total) {
-    els.total.textContent = state.papers.length.toLocaleString(state.language === "ko" ? "ko-KR" : "en-US");
+    els.total.textContent = state.papers.length.toLocaleString(locale);
   }
+  const venues = new Set(state.papers.map((paper) => normalizeVenue(paper.venue)).filter(Boolean));
   if (els.venues) {
-    const venues = new Set(state.papers.map((paper) => normalizeVenue(paper.venue)).filter(Boolean));
-    els.venues.textContent = venues.size.toLocaleString(state.language === "ko" ? "ko-KR" : "en-US");
+    els.venues.textContent = venues.size.toLocaleString(locale);
   }
+  const yearRange = formatYearRange(state.papers);
   if (els.years) {
-    els.years.textContent = formatYearRange(state.papers);
+    els.years.textContent = yearRange;
   }
   renderUpdatedStat(lastRunAt);
+  renderHeroStatus({
+    paperCount: state.papers.length,
+    venueCount: venues.size,
+    yearRange,
+    lastRunAt,
+  });
   renderOpsNote(rawCount, archivedCount, lastRunAt);
+}
+
+function renderHeroStatus({ paperCount, venueCount, yearRange, lastRunAt }) {
+  if (!els.heroStatus) return;
+  const locale = state.language === "ko" ? "ko-KR" : "en-US";
+  const lastRun = formatRunTime(lastRunAt);
+  const updated = lastRun ? `${lastRun.date} ${lastRun.time}` : "-";
+  els.heroStatus.textContent = t("heroStatus")
+    .replace("{papers}", paperCount.toLocaleString(locale))
+    .replace("{venues}", venueCount.toLocaleString(locale))
+    .replace("{years}", yearRange)
+    .replace("{updated}", updated);
 }
 
 function renderOpsNote(rawCount, archivedCount, lastRunAt) {
@@ -896,9 +971,9 @@ function renderPaperRow(paper) {
       <p class="relevance-note">${escapeHtml(relevanceNote)}</p>
       <div class="tag-line">${representativeBadges}</div>
       <div class="card-links">
-        ${doiUrl ? `<a class="link-pill primary" href="${escapeAttribute(doiUrl)}" target="_blank" rel="noopener noreferrer">Paper</a>` : ""}
-        ${doiUrl ? `<a class="link-pill" href="${escapeAttribute(doiUrl)}" target="_blank" rel="noopener noreferrer">DOI</a>` : ""}
-        <button class="link-pill" type="button" data-citation>Copy Cite</button>
+        ${doiUrl ? `<a class="link-pill primary" href="${escapeAttribute(doiUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(t("openPaper"))}</a>` : ""}
+        ${doiUrl ? `<a class="link-pill subtle" href="${escapeAttribute(doiUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(t("doiButton"))}</a>` : ""}
+        <button class="link-pill subtle" type="button" data-citation>${escapeHtml(t("copyCitation"))}</button>
       </div>
       <p class="policy-mini">No abstract/PDF hosted · updated ${escapeHtml(paper.last_updated || "-")}</p>
     </div>
@@ -907,9 +982,9 @@ function renderPaperRow(paper) {
   article.querySelector("[data-citation]").addEventListener("click", async (event) => {
     const citation = buildCitation(paper);
     await navigator.clipboard.writeText(citation);
-    event.currentTarget.textContent = "Copied";
+    event.currentTarget.textContent = t("copiedCitation");
     window.setTimeout(() => {
-      event.currentTarget.textContent = "Copy Cite";
+      event.currentTarget.textContent = t("copyCitation");
     }, 1400);
   });
 
@@ -955,7 +1030,7 @@ function renderSummaryBlock(paper) {
   return `<dl class="summary summary-qa">
     ${sections
       .map(
-        (item) => `<div>
+        (item, index) => `<div class="${index === 4 ? "is-takeaway" : ""}">
           <dt>${escapeHtml(item.question)}</dt>
           <dd>${escapeHtml(item.answer)}</dd>
         </div>`
