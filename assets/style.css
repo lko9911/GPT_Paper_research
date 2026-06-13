@@ -121,9 +121,12 @@ select {
   inset: 0;
   z-index: -1;
   background:
+    radial-gradient(ellipse at 18% 24%, transparent 0 3.8rem, color-mix(in srgb, var(--blue), transparent 88%) 3.86rem 3.94rem, transparent 4rem 7.6rem, color-mix(in srgb, var(--blue), transparent 92%) 7.66rem 7.74rem, transparent 7.8rem),
+    radial-gradient(ellipse at 82% 34%, transparent 0 4.7rem, color-mix(in srgb, var(--green), transparent 89%) 4.76rem 4.84rem, transparent 4.9rem 9.2rem, color-mix(in srgb, var(--green), transparent 93%) 9.26rem 9.34rem, transparent 9.4rem),
+    repeating-radial-gradient(ellipse at 50% 118%, transparent 0 2.9rem, color-mix(in srgb, var(--blue), transparent 94%) 2.95rem 3.02rem, transparent 3.08rem 5.8rem),
     linear-gradient(115deg, transparent 0 38%, color-mix(in srgb, var(--blue), transparent 88%) 38.1% 38.22%, transparent 38.32% 100%),
     linear-gradient(155deg, transparent 0 62%, color-mix(in srgb, var(--green), transparent 90%) 62.08% 62.2%, transparent 62.3% 100%);
-  opacity: 0.9;
+  opacity: 0.82;
   pointer-events: none;
 }
 
@@ -1149,6 +1152,13 @@ h1 {
 
   .site-header {
     padding: 18px 0 16px;
+  }
+
+  .site-header::before {
+    opacity: 0.42;
+    background:
+      repeating-radial-gradient(ellipse at 50% 112%, transparent 0 3.2rem, color-mix(in srgb, var(--blue), transparent 95%) 3.25rem 3.32rem, transparent 3.38rem 6.4rem),
+      linear-gradient(115deg, transparent 0 42%, color-mix(in srgb, var(--blue), transparent 92%) 42.1% 42.22%, transparent 42.32% 100%);
   }
 
   .site-header .wide-shell {
