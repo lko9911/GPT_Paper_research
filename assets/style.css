@@ -1710,6 +1710,94 @@ h1 {
   font-size: 0.68rem;
 }
 
+/* Final paper-card hover pass: a little more tactile without turning the list into a toy. */
+.paper-card {
+  transform-origin: center top;
+  will-change: transform, box-shadow;
+}
+
+.paper-card::after {
+  position: absolute;
+  inset: -1px;
+  z-index: -1;
+  border-radius: inherit;
+  background:
+    radial-gradient(circle at 18% 0%, color-mix(in srgb, var(--blue), transparent 82%), transparent 32%),
+    linear-gradient(135deg, color-mix(in srgb, var(--blue), transparent 88%), transparent 46%);
+  content: "";
+  opacity: 0;
+  transform: scale(0.985);
+  transition:
+    opacity 260ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    transform 260ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.paper-card .card-topline,
+.paper-card .paper-title,
+.paper-card .summary,
+.paper-card .tag-line,
+.paper-card .card-links {
+  transition:
+    color 180ms ease,
+    transform 240ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.paper-card .summary-qa div {
+  transition:
+    background-color 180ms ease,
+    border-color 180ms ease,
+    transform 240ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.paper-card:hover {
+  transform: translateY(-5px) scale(1.008);
+  border-color: color-mix(in srgb, var(--blue), var(--line-strong) 46%);
+  box-shadow:
+    0 18px 34px rgba(22, 32, 51, 0.16),
+    0 4px 10px rgba(22, 32, 51, 0.08);
+}
+
+.paper-card:hover::after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.paper-card:hover .card-topline {
+  transform: translateY(-1px);
+}
+
+.paper-card:hover .paper-title {
+  transform: translateY(-2px);
+  color: var(--blue);
+}
+
+.paper-card:hover .summary,
+.paper-card:hover .tag-line {
+  transform: translateY(-1px);
+}
+
+.paper-card:hover .summary-qa div {
+  transform: translateY(-1px);
+  border-color: color-mix(in srgb, var(--blue), var(--line) 70%);
+}
+
+.paper-card:hover .card-links {
+  transform: translateY(1px);
+}
+
+:root[data-theme="dark"] .paper-card:hover {
+  border-color: color-mix(in srgb, var(--blue), var(--line-strong) 48%);
+  box-shadow:
+    0 20px 42px rgba(0, 0, 0, 0.48),
+    0 5px 14px rgba(0, 0, 0, 0.32);
+}
+
+:root[data-theme="dark"] .paper-card::after {
+  background:
+    radial-gradient(circle at 18% 0%, color-mix(in srgb, var(--blue), transparent 84%), transparent 34%),
+    linear-gradient(135deg, color-mix(in srgb, var(--blue), transparent 90%), transparent 48%);
+}
+
 @media (max-width: 1100px) {
   .main-layout {
     grid-template-columns: 240px minmax(0, 1fr);
