@@ -1,5 +1,31 @@
 # AGENT_LOG
 
+## 2026-06-13 20:29
+
+### 변경 요약
+- 왼쪽 분야/서브토픽 패널에서 `Robotics for Manufacturing`이 `Robotic AM`으로, `AI Manufacturing`이 `Machine Learning`으로 잘못 표시되는 라벨 정규화 버그를 수정했습니다.
+- 실제 데이터 수집 결과는 유지하고, 표시 계층만 올바르게 보이도록 조정했습니다.
+
+### 수정/생성한 파일
+- `assets/app.js`: `displayLabel()`에서 메인 분야와 기존 카테고리 라벨은 태그 canonicalization보다 먼저 처리하도록 수정했습니다.
+- `index.html`: GitHub Pages 캐시 무효화를 위해 CSS/JS query version을 `20260613-0230`으로 갱신했습니다.
+- `AGENT_LOG.md`: 이번 표시 버그의 원인과 수정 내용을 기록했습니다.
+
+### 구현한 기능
+- 메인 분야명이 서브토픽 태그로 둔갑하지 않도록 표시 우선순위를 분리했습니다.
+- `로봇틱스(생산제조)`는 영어 모드에서 `Robotics for Manufacturing`, `AI 생산제조`는 `AI Manufacturing`으로 안정적으로 표시됩니다.
+
+### 설계 결정
+- 논문 데이터 자체를 변형하지 않고 프론트엔드 라벨 표시 함수에서 해결했습니다. 기존 수집/요약/분류 데이터의 provenance를 보존하기 위해서입니다.
+- 태그와 분야는 이름이 일부 겹치지만 UI 계층이 다르므로, 분야명은 태그 정규화 로직보다 먼저 번역합니다.
+
+### 남은 작업
+- 배포 후 공개 페이지에서 왼쪽 패널이 `Robotics for Manufacturing`, `AI Manufacturing`으로 표시되는지 확인합니다.
+
+### 주의사항
+- 이 수정은 OpenAI API를 호출하지 않습니다.
+- 새 논문 수집도 실행하지 않으며, 현재 저장된 `data/papers.json`을 그대로 사용합니다.
+
 ## 2026-06-13 20:10
 
 ### 변경 요약
