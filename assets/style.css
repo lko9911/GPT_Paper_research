@@ -199,6 +199,16 @@ h1 {
   box-shadow: 0 8px 18px rgba(22, 32, 51, 0.08);
 }
 
+.creator-name {
+  display: inline;
+  padding: 0 3px 1px;
+  border-radius: 4px;
+  background:
+    linear-gradient(180deg, transparent 42%, rgba(118, 210, 173, 0.34) 42% 88%, transparent 88%);
+  color: color-mix(in srgb, var(--green), var(--text) 28%);
+  font-weight: 900;
+}
+
 .subtitle {
   max-width: 860px;
   margin: 14px auto 18px;
@@ -3096,6 +3106,12 @@ h1 {
   background: rgba(27, 42, 69, 0.78);
   color: #d7e3f8;
   box-shadow: 0 10px 22px rgba(0, 0, 0, 0.26);
+}
+
+:root[data-theme="dark"] .creator-name {
+  background:
+    linear-gradient(180deg, transparent 42%, rgba(118, 210, 173, 0.26) 42% 88%, transparent 88%);
+  color: #dff7ec;
 }
 
 @media (max-width: 720px) {

@@ -1,5 +1,28 @@
 # AGENT_LOG
 
+## 2026-06-13 22:12
+
+### 변경 요약
+- 헤더 제작자 표기에서 `Gyuwon Lee` 이름 부분만 은은한 형광펜 느낌으로 하이라이트했습니다.
+
+### 수정/생성한 파일
+- `index.html`: `Gyuwon Lee` 텍스트를 `.creator-name` span으로 감쌌고 CSS/JS cache version을 `20260613-0370`으로 갱신했습니다.
+- `assets/style.css`: `.creator-name` highlight 스타일과 dark mode 색상 보정을 추가했습니다.
+- `AGENT_LOG.md`: 제작자 이름 highlight 변경을 기록했습니다.
+
+### 구현한 기능
+- 제작자 이름이 과하지 않은 pastel green highlighter 효과로 강조됩니다.
+
+### 설계 결정
+- 전체 credit pill이 아니라 이름만 강조했습니다. 헤더가 산만해지지 않도록 highlight opacity를 낮게 유지했습니다.
+
+### 남은 작업
+- 배포 후 헤더에서 이름 강조가 과하지 않은지 확인합니다.
+
+### 주의사항
+- 이 수정은 OpenAI API를 호출하지 않습니다.
+- 새 논문 수집도 실행하지 않습니다.
+
 ## 2026-06-13 22:05
 
 ### 변경 요약
