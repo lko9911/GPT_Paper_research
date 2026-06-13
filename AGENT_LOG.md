@@ -1,5 +1,28 @@
 # AGENT_LOG
 
+## 2026-06-13 22:34
+
+### 변경 요약
+- `Curated by Gyuwon Lee`에서 `by`와 `Gyuwon`이 붙어 `byGyuwon`처럼 보이는 문제를 수정했습니다.
+
+### 수정/생성한 파일
+- `assets/style.css`: `.creator-name`에 `margin-left: 0.22em`을 추가해 이름 앞 간격을 명시적으로 확보했습니다.
+- `index.html`: GitHub Pages cache busting을 위해 CSS/JS query version을 `20260613-0400`으로 갱신했습니다.
+- `AGENT_LOG.md`: 제작자 이름 간격 수정 기록을 추가했습니다.
+
+### 구현한 기능
+- 제작자 credit에서 `by`와 `Gyuwon Lee`가 시각적으로 분리되어 읽힙니다.
+
+### 설계 결정
+- HTML 문구는 유지하고 CSS margin만 추가했습니다. 문구 구조를 바꾸지 않고 시각적 붙음만 해결하기 위해서입니다.
+
+### 남은 작업
+- 배포 후 헤더에서 `Curated by Gyuwon Lee`가 자연스럽게 보이는지 확인합니다.
+
+### 주의사항
+- 이 수정은 OpenAI API를 호출하지 않습니다.
+- 새 논문 수집도 실행하지 않습니다.
+
 ## 2026-06-13 22:27
 
 ### 변경 요약
