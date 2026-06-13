@@ -1,5 +1,31 @@
 # AGENT_LOG
 
+## 2026-06-13 20:55
+
+### 변경 요약
+- 사용자가 `Metadata summary` 203편에 대해 OpenAI Q5 요약 실행을 명시적으로 허가했습니다.
+- 기존 `non_qa` 모드는 이미 Q5 형식인 fallback summary를 정확히 집지 못하므로, `metadata` refresh mode를 추가했습니다.
+
+### 수정/생성한 파일
+- `scripts/refresh_openai_summaries.py`: `REFRESH_MODE=metadata` 또는 `fallback`일 때 `summary_provider=fallback/metadata/metadata-based` 또는 `openai_summary_applied=false`인 논문만 OpenAI 요약 대상으로 선택하도록 추가했습니다.
+- `.github/workflows/refresh-openai-summaries.yml`: 수동 workflow의 `refresh_mode` 선택지에 `metadata`를 추가하고 설명을 갱신했습니다.
+- `AGENT_LOG.md`: OpenAI 실행 허가 범위와 안전장치 변경 내용을 기록했습니다.
+
+### 구현한 기능
+- 203편의 metadata/fallback summary만 대상으로 OpenAI 요약을 실행할 수 있는 수동 모드를 추가했습니다.
+
+### 설계 결정
+- `non_qa` 대신 `metadata` 모드를 새로 추가했습니다. 현재 fallback summary 203편은 이미 Q5 형식을 갖고 있지만 영어 요약이 없으므로, 형식 기준보다 provider 기준으로 선택하는 것이 정확합니다.
+- 자동 업데이트 workflow는 계속 OpenAI API를 사용하지 않으며, 이번 작업은 별도 수동 refresh workflow에서만 수행합니다.
+
+### 남은 작업
+- 변경 사항을 커밋/푸시한 뒤 `Refresh OpenAI summaries` workflow를 `max_summaries=203`, `refresh_mode=metadata`, `dry_run=false`로 한 번만 실행합니다.
+- 실행 후 repository variable `OPENAI_REFRESH_ENABLED`를 다시 `false`로 닫고, provider 분포가 `openai=741`, `fallback=0`인지 확인합니다.
+
+### 주의사항
+- API key, secret, token은 로그에 기록하지 않았습니다.
+- 이번 허가는 현재 metadata summary 203편에 한정됩니다. 이후 새롭게 추가되는 논문은 사용자가 다시 허가하기 전까지 OpenAI 요약을 적용하지 않습니다.
+
 ## 2026-06-13 20:46
 
 ### 변경 요약

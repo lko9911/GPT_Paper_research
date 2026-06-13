@@ -4,16 +4,17 @@ on:
   workflow_dispatch:
     inputs:
       max_summaries:
-        description: "Maximum curated papers to refresh in this run. Cost-control guard; use 25 for tests, 414 for the current full library."
+        description: "Maximum curated papers to refresh in this run. Cost-control guard; use 25 for tests."
         required: true
         default: "25"
       refresh_mode:
-        description: "non_qa refreshes only summaries not already in 5-question format; all refreshes every paper."
+        description: "metadata refreshes only fallback/metadata summaries; non_qa refreshes summaries not already in 5-question format; all refreshes every paper."
         required: true
         default: "non_qa"
         type: choice
         options:
           - non_qa
+          - metadata
           - all
           - missing
       dry_run:
