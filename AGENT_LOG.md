@@ -1,5 +1,40 @@
 # AGENT_LOG
 
+## 2026-06-13 20:10
+
+### 변경 요약
+- `Robotics for Manufacturing` 분야에서 `Process Optimization` 서브토픽이 `Production / Manufacturing`의 `Process Optimization`과 중복되어 제거했습니다.
+- 로봇이 생산/제조/조립/가공/용접/프린팅을 수행하는 논문을 분리하기 위해 `Robot-based Manufacturing` 서브토픽을 추가했습니다.
+- 로봇 관련 쿼리만 대상으로 metadata update를 실행했습니다.
+
+### 수정/생성한 파일
+- `assets/app.js`: `Robotics for Manufacturing` 서브토픽을 `Manufacturing Automation`, `Robot-based Manufacturing`, `Robotic AM`으로 재구성했습니다.
+- `assets/app.js`: `Robot-based Manufacturing`의 한글/영문 표시 label과 감지 규칙을 추가했습니다.
+- `data/queries.json`: robot-based/robotic manufacturing, robotic fabrication, robot-assisted manufacturing, robotic assembly/machining/welding 계열 검색어를 추가했습니다.
+- `scripts/summarize.py`: fallback tag generation에서 `Robot-based Manufacturing`을 인식하도록 태그 맵을 추가했습니다.
+- `data/papers.json`, `data/archive_papers.json`, `data/site_meta.json`: OpenAI 없이 로봇 관련 metadata update 결과를 반영했습니다.
+- `index.html`: JS/CSS cache-busting version을 갱신했습니다.
+- `AGENT_LOG.md`, `PROJECT_STATUS.md`: 이번 구조 변경과 업데이트 결과를 기록했습니다.
+
+### 구현한 기능
+- 로봇 분야의 중복 `Process Optimization` 항목을 제거했습니다.
+- 새 서브토픽 `Robot-based Manufacturing` / `로봇 기반 생산제조`를 추가했습니다.
+- 원격 자동 업데이트 반영 후 최신 데이터 기준으로 로봇 관련 update를 다시 실행했으며, curated papers가 707편에서 741편으로 증가했습니다.
+- 근사 검증 기준으로 `Robot-based Manufacturing` 후보 약 63편, `Robotic AM` 후보 약 30편이 분리됩니다.
+
+### 설계 결정
+- `Robotic AM`은 로봇 기반 적층제조/3D·4D printing에 더 특화된 항목으로 유지했습니다.
+- `Robot-based Manufacturing`은 로봇이 제조, 생산, 제작, 조립, 가공, 용접, 프린팅을 수행하는 broader manufacturing 항목으로 분리했습니다.
+- OpenAI는 호출하지 않았고, 새 논문은 fallback metadata summary로 추가했습니다.
+
+### 남은 작업
+- 새로 추가된 fallback 논문 중 사용자가 명시적으로 원할 경우에만 별도 OpenAI Q5 refresh를 실행할 수 있습니다.
+- 실제 UI에서 `Robot-based Manufacturing` 카운트가 너무 넓거나 좁으면 감지 키워드를 조정할 수 있습니다.
+
+### 주의사항
+- API key, token, secret은 기록하지 않았습니다.
+- 정기 업데이트의 `ALLOW_OPENAI_IN_UPDATE=false` 정책은 유지됩니다.
+
 ## 2026-06-13 13:54
 
 ### 변경 요약

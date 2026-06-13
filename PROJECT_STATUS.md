@@ -2,6 +2,8 @@
 
 ## 2026-06-13 13:26 최신 상태
 
+- 2026-06-13 20:10에 `Robotics for Manufacturing`에서 중복 `Process Optimization`을 제거하고 `Robot-based Manufacturing` / `로봇 기반 생산제조` 서브토픽을 추가했습니다. 로봇 관련 metadata update 후 curated 논문 수는 741편입니다.
+- 새로 추가된 로봇 관련 논문은 OpenAI 없이 fallback metadata summary 상태입니다.
 - 2026-06-13 13:54에 태그 표시를 canonical tag 기반으로 안정화했습니다. 자유 한글/영문 태그는 데이터에 남아 있어도 카드와 필터에는 대표 태그만 언어별 label로 표시됩니다.
 - 2026-06-13 13:43에 Nature/Science/Nature Materials/Science Advances 대표 논문 누락 원인을 조사하고 seed DOI 기반으로 보강했습니다. 현재 curated 논문 수는 549편입니다.
 - 원인은 API 부재가 아니라 broad query 검색 결과 제한과 relevance/archive 정책이었습니다. 대표 DOI는 `data/seed_dois.json`에 고정하고 `curation_priority=true`로 메인 목록에 남깁니다.

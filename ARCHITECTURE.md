@@ -14,6 +14,16 @@
 - 새로 seed로 들어온 논문은 사용자가 별도로 명시 요청하기 전까지 fallback metadata summary 상태로 둡니다.
 - OpenAI Q5 refresh를 다시 실행할 때도 `relevance_score`는 덮어쓰지 않고 기존 curated score를 유지합니다.
 
+## 2026-06-13 Robotics Subtopic Policy
+
+`Robotics for Manufacturing` 분야는 `Manufacturing Automation`, `Robot-based Manufacturing`, `Robotic AM` 세 서브토픽을 사용합니다. `Process Optimization`은 `Production / Manufacturing` 분야에만 두고, 로봇 분야에서는 중복 표시하지 않습니다.
+
+- `Robot-based Manufacturing`: 로봇이 제조, 생산, 제작, 조립, 가공, 용접, 프린팅을 수행하는 broader manufacturing 논문입니다.
+- `Robotic AM`: 로봇 기반 적층제조, 로봇 3D/4D printing, robot-assisted additive manufacturing에 더 특화된 논문입니다.
+- `Manufacturing Automation`: 자동화, closed-loop, monitoring, autonomous manufacturing처럼 제조 자동화 자체가 중심인 논문입니다.
+
+새 로봇 관련 쿼리는 `data/queries.json`에 있으며, 정기 업데이트에서도 OpenAI는 자동 호출하지 않습니다.
+
 ## 2026-06-12 Pages 배포 보강
 
 자동 수집 workflow인 `.github/workflows/update-papers.yml`은 `data/papers.json`과 `data/site_meta.json`을 갱신한 뒤, GitHub Pages artifact를 업로드하고 `actions/deploy-pages`로 직접 배포합니다.

@@ -87,6 +87,15 @@ TAG_MAP = {
         "in-situ",
         "in situ",
     ],
+    "Robot-based Manufacturing": [
+        "robot-based manufacturing",
+        "robotic manufacturing",
+        "robotic fabrication",
+        "robot-assisted manufacturing",
+        "robotic assembly",
+        "robotic machining",
+        "robotic welding",
+    ],
     "Process optimization": ["process optimization", "process optimisation", "parameter optimization", "parameter optimisation"],
 }
 
