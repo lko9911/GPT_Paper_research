@@ -88,6 +88,9 @@ def _should_refresh(paper: dict[str, Any], mode: str) -> bool:
     summary = str(paper.get("ai_summary_ko") or "").strip()
     if mode == "all":
         return True
+    if mode in {"metadata", "fallback"}:
+        provider = str(paper.get("summary_provider") or "").strip().lower()
+        return provider in {"fallback", "metadata", "metadata-based"} or paper.get("openai_summary_applied") is False
     if mode == "missing":
         return not summary
     return not _is_five_question_summary(summary) or not paper.get("ai_summary_en")
