@@ -2605,3 +2605,28 @@
 ### 주의사항
 - API key, token, secret은 기록하지 않았습니다.
 - 로컬에 남아 있는 `data/papers.json`, `data/site_meta.json` 변경은 이번 UI 커밋에 포함하지 않습니다.
+
+## 2026-06-13 02:40
+
+### 변경 요약
+- 헤더 제목/부제/venue chip 블록이 wide layout 규칙에 의해 왼쪽으로 밀리는 문제를 수정했습니다.
+- 파일 맨 끝에 absolute final header alignment override를 추가해 모든 화면 폭에서 헤더 블록을 중앙 정렬로 고정했습니다.
+
+### 수정/생성한 파일
+- `index.html`: CSS/JS cache-busting 버전을 `20260613-0120`으로 갱신했습니다.
+- `assets/style.css`: `.site-header`, `.site-header .wide-shell`, `.venue-nav` 최종 중앙 정렬 override를 추가했습니다.
+- `AGENT_LOG.md`: 이번 헤더 중앙 정렬 수정 기록을 추가했습니다.
+
+### 구현한 기능
+- `AI Manufacturing Research Tracker`, H1, subtitle, venue chip 전체가 중앙에 정렬됩니다.
+- 큰 화면에서도 venue chip row가 `flex-start`로 돌아가지 않습니다.
+
+### 설계 결정
+- 기존 CSS에 여러 refinement layer가 있어 중간 위치의 규칙이 다시 덮였습니다. 따라서 이번 정렬은 파일 마지막에 배치했습니다.
+
+### 남은 작업
+- 없음.
+
+### 주의사항
+- API key, token, secret은 기록하지 않았습니다.
+- 로컬에 남아 있는 `data/papers.json`, `data/site_meta.json` 변경은 이번 UI 커밋에 포함하지 않습니다.

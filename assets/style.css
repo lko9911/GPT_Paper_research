@@ -2103,3 +2103,46 @@ h1 {
     --grid-min: 270px;
   }
 }
+
+/* Last rule: center the hero title block and venue chips after every layout override. */
+.site-header {
+  text-align: center;
+}
+
+.site-header .wide-shell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.site-header .eyebrow,
+.site-header h1,
+.site-header .subtitle {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.venue-nav {
+  justify-content: center;
+}
+
+@media (min-width: 1200px) {
+  .site-header {
+    text-align: center;
+  }
+
+  .site-header .wide-shell {
+    align-items: center;
+  }
+
+  .site-header h1,
+  .site-header .subtitle {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .venue-nav {
+    justify-content: center;
+  }
+}
