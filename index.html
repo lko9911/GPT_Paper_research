@@ -8,7 +8,7 @@
       name="description"
       content="An AI-assisted research tracker for manufacturing, 3D/4D printing, robotics, and AI-driven production."
     />
-    <link rel="stylesheet" href="assets/style.css?v=20260614-0010" />
+    <link rel="stylesheet" href="assets/style.css?v=20260614-0020" />
   </head>
   <body>
     <header class="site-header" id="top">
@@ -62,25 +62,25 @@
             <span>검색</span>
             <input id="search-input" type="search" placeholder="키워드, 저자, 태그, 요약 검색" autocomplete="off" />
           </label>
-          <label>
+          <label class="field-filter">
             <span>분야</span>
             <select id="category-filter">
               <option value="">전체</option>
             </select>
           </label>
-          <label>
+          <label class="tag-filter">
             <span>태그/서브 토픽</span>
             <select id="tag-filter">
               <option value="">전체</option>
             </select>
           </label>
-          <label>
+          <label class="venue-filter">
             <span>게재지</span>
             <select id="venue-filter">
               <option value="">전체</option>
             </select>
           </label>
-          <label>
+          <label class="summary-filter">
             <span>요약 방식</span>
             <select id="summary-provider-filter">
               <option value="">전체</option>
@@ -88,13 +88,13 @@
               <option value="metadata">메타데이터 요약</option>
             </select>
           </label>
-          <label>
+          <label class="year-filter">
             <span>연도</span>
             <select id="year-filter">
               <option value="">전체</option>
             </select>
           </label>
-          <label>
+          <label class="sort-filter">
             <span>정렬</span>
             <select id="sort-select">
               <option value="newest">최신순</option>
@@ -156,6 +156,6 @@
       </div>
     </footer>
 
-    <script src="assets/app.js?v=20260614-0010" defer></script>
+    <script src="assets/app.js?v=20260614-0020" defer></script>
   </body>
 </html>
