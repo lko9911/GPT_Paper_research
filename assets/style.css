@@ -3698,3 +3698,107 @@ h1 {
     white-space: normal;
   }
 }
+
+/* 2026-06-14 filter polish: scoped and easy to revert. */
+.controls {
+  gap: 12px 14px;
+  padding: 13px 14px 14px;
+}
+
+.search-field {
+  gap: 7px;
+}
+
+.search-field-head {
+  padding-inline: 1px;
+}
+
+.reset-filters-button {
+  min-height: auto;
+  padding: 0;
+  color: color-mix(in srgb, var(--muted), var(--text) 14%);
+  font-size: 0.7rem;
+  letter-spacing: 0.01em;
+}
+
+.controls label:not(.search-field) {
+  gap: 6px;
+  min-width: 0;
+  opacity: 0.94;
+}
+
+.controls label:not(.search-field) > span {
+  padding-left: 1px;
+  font-size: 0.7rem;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+}
+
+.controls input,
+.controls select {
+  min-height: 39px;
+  border-color: color-mix(in srgb, var(--line), #cfd6e2 54%);
+  background: color-mix(in srgb, #ffffff, var(--panel) 8%);
+}
+
+.controls select {
+  font-size: 0.82rem;
+}
+
+.venue-section {
+  margin-top: 13px;
+}
+
+.venue-section-head {
+  min-height: 48px;
+  padding: 10px 13px;
+}
+
+.venue-board {
+  gap: 8px;
+  padding: 10px;
+}
+
+.venue-featured {
+  grid-template-columns: repeat(auto-fit, minmax(142px, 1fr));
+  gap: 8px;
+}
+
+.venue-card {
+  min-height: 58px;
+  gap: 4px;
+  padding: 9px 10px;
+}
+
+.venue-card strong {
+  font-size: 0.8rem;
+  line-height: 1.18;
+}
+
+.venue-card span {
+  font-size: 0.72rem;
+}
+
+.venue-card em {
+  padding: 2px 6px;
+  font-size: 0.64rem;
+}
+
+:root[data-theme="dark"] .controls input,
+:root[data-theme="dark"] .controls select {
+  background: color-mix(in srgb, var(--panel), #0c111c 18%);
+}
+
+@media (max-width: 620px) {
+  .controls {
+    gap: 9px;
+  }
+
+  .controls label:not(.search-field) > span {
+    text-transform: none;
+  }
+
+  .venue-featured {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
