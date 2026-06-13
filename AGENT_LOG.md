@@ -1,5 +1,33 @@
 # AGENT_LOG
 
+## 2026-06-13 22:50
+
+### 변경 요약
+- 모바일 헤더에서 제목, 제작자 credit, subtitle, 상태 pill이 뭉개지는 문제를 수정했습니다.
+- 직전 contour/toolpath 헤더 배경이 산만해 보여 제거하고, 더 차분한 glow/diagonal 배경으로 낮췄습니다.
+
+### 수정/생성한 파일
+- `assets/style.css`: 헤더 contour gradient를 제거하고 opacity를 낮췄습니다. 모바일 전용 헤더 typography, creator credit, hero status, 배경 단순화 override를 추가했습니다.
+- `index.html`: GitHub Pages cache busting을 위해 CSS/JS query version을 `20260613-0420`으로 갱신했습니다.
+- `AGENT_LOG.md`: 모바일 헤더 및 배경 디자인 수정 기록을 추가했습니다.
+
+### 구현한 기능
+- 모바일에서 `AI Manufacturing and 3D/4D Printing Research` 제목이 더 넓은 폭에서 자연스럽게 줄바꿈됩니다.
+- `Curated by Gyuwon Lee...` credit은 별도 줄의 작은 pill로 안정적으로 표시됩니다.
+- 모바일 상태 pill은 여러 줄 허용, 작은 글자, 좁은 폭으로 조정했습니다.
+- 모바일 배경은 grid/contour 없이 은은한 glow만 남겨 산만함을 줄였습니다.
+
+### 설계 결정
+- 본문 카드와 필터 UI는 건드리지 않고 헤더와 배경만 수정했습니다.
+- contour 배경은 사용자 피드백상 별로였으므로 유지하지 않고 단순화했습니다.
+
+### 남은 작업
+- 배포 후 모바일에서 헤더가 겹치거나 뭉개지지 않는지 확인합니다.
+
+### 주의사항
+- 이 수정은 OpenAI API를 호출하지 않습니다.
+- 새 논문 수집도 실행하지 않습니다.
+
 ## 2026-06-13 22:41
 
 ### 변경 요약
