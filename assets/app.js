@@ -67,12 +67,15 @@ const UI_TEXT = {
     field: "분야",
     tagSubtopic: "태그/서브 토픽",
     venue: "게재지",
+    summaryProvider: "요약 방식",
     year: "연도",
     sort: "정렬",
     all: "전체",
+    allSummaries: "전체",
     newest: "최신순",
     relevance: "관련성 점수순",
     title: "제목순",
+    resetFilters: "초기화",
     venuesTitle: "게재지",
     allVenues: "전체 게재지",
     papersByField: "분야별 논문",
@@ -133,12 +136,15 @@ const UI_TEXT = {
     field: "Field",
     tagSubtopic: "Tag/Subtopic",
     venue: "Venue",
+    summaryProvider: "Summary",
     year: "Year",
     sort: "Sort",
     all: "All",
+    allSummaries: "All",
     newest: "Newest",
     relevance: "Relevance",
     title: "Title",
+    resetFilters: "Reset",
     venuesTitle: "Venues",
     allVenues: "All venues",
     papersByField: "Papers by Field",
@@ -355,8 +361,10 @@ const els = {
   category: document.querySelector("#category-filter"),
   tag: document.querySelector("#tag-filter"),
   venue: document.querySelector("#venue-filter"),
+  summaryProvider: document.querySelector("#summary-provider-filter"),
   year: document.querySelector("#year-filter"),
   sort: document.querySelector("#sort-select"),
+  resetFilters: document.querySelector("#reset-filters"),
   sideTopicNav: document.querySelector("#side-topic-nav"),
   venueBoard: document.querySelector("#venue-board"),
   total: document.querySelector("#stat-total"),
@@ -395,7 +403,8 @@ async function init() {
   updateStats();
   applyFilters();
 
-  [els.search, els.category, els.tag, els.venue, els.year, els.sort].forEach((el) => {
+  [els.search, els.category, els.tag, els.venue, els.summaryProvider, els.year, els.sort].forEach((el) => {
+    if (!el) return;
     el.addEventListener("input", () => {
       if (el === els.category) state.activeSubtopic = "";
       if (el === els.venue) clearVenueQuickFilters();
@@ -407,6 +416,10 @@ async function init() {
       applyFilters();
     });
   });
+
+  if (els.resetFilters) {
+    els.resetFilters.addEventListener("click", resetFilters);
+  }
 }
 
 function setupPreferences() {
@@ -471,15 +484,20 @@ function applyStaticLanguage() {
   setText(".controls label:nth-child(2) span", t("field"));
   setText(".controls label:nth-child(3) span", t("tagSubtopic"));
   setText(".controls label:nth-child(4) span", t("venue"));
-  setText(".controls label:nth-child(5) span", t("year"));
-  setText(".controls label:nth-child(6) span", t("sort"));
+  setText(".controls label:nth-child(5) span", t("summaryProvider"));
+  setText(".controls label:nth-child(6) span", t("year"));
+  setText(".controls label:nth-child(7) span", t("sort"));
   setText("#category-filter option[value='']", t("all"));
   setText("#tag-filter option[value='']", t("all"));
   setText("#venue-filter option[value='']", t("all"));
+  setText("#summary-provider-filter option[value='']", t("allSummaries"));
+  setText("#summary-provider-filter option[value='openai']", t("openaiApplied"));
+  setText("#summary-provider-filter option[value='metadata']", t("openaiNotApplied"));
   setText("#year-filter option[value='']", t("all"));
   setText("#sort-select option[value='newest']", t("newest"));
   setText("#sort-select option[value='relevance']", t("relevance"));
   setText("#sort-select option[value='title']", t("title"));
+  setText("#reset-filters", t("resetFilters"));
   setText(".venue-section-head h2", t("venuesTitle"));
   setText(".results-head .section-kicker", t("papersByField"));
   setText(".results-head h2", t("curatedPapers"));
@@ -803,6 +821,7 @@ function applyFilters() {
   const category = els.category.value;
   const tag = els.tag.value;
   const venue = els.venue.value;
+  const summaryProvider = els.summaryProvider ? els.summaryProvider.value : "";
   const year = els.year.value;
   const sort = els.sort.value;
 
@@ -839,6 +858,7 @@ function applyFilters() {
     const matchesTarget = !state.activeTargetVenue || matchesTargetVenue(paperVenue, state.activeTargetVenue);
     const matchesVenueGroup = !state.activeVenueGroup || isOtherVenuePaper(paper);
     const matchesSubtopic = !state.activeSubtopic || paperMatchesSidebarSubtopic(paper, paperField, state.activeSubtopic);
+    const matchesSummaryProvider = !summaryProvider || summaryProviderForFilter(paper) === summaryProvider;
     const matchesYear = !year || String(paper.year || "") === year;
     return (
       matchesQuery &&
@@ -848,6 +868,7 @@ function applyFilters() {
       matchesTarget &&
       matchesVenueGroup &&
       matchesSubtopic &&
+      matchesSummaryProvider &&
       matchesYear
     );
   });
@@ -863,6 +884,28 @@ function applyFilters() {
   });
 
   render();
+}
+
+function resetFilters() {
+  if (els.search) els.search.value = "";
+  if (els.category) els.category.value = "";
+  if (els.tag) els.tag.value = "";
+  if (els.venue) els.venue.value = "";
+  if (els.summaryProvider) els.summaryProvider.value = "";
+  if (els.year) els.year.value = "";
+  if (els.sort) els.sort.value = "newest";
+  state.activeTargetVenue = "";
+  state.activeVenueGroup = "";
+  state.activeSubtopic = "";
+  clearVenueQuickFilters();
+  syncSideNavActive();
+  applyFilters();
+}
+
+function summaryProviderForFilter(paper) {
+  return paper.openai_summary_applied === true || paper.summary_provider === "openai"
+    ? "openai"
+    : "metadata";
 }
 
 function isOtherVenuePaper(paper) {
