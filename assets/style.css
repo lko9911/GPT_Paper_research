@@ -936,6 +936,92 @@ h1 {
   }
 }
 
+/* Absolute final desktop width override. Keep this at EOF so later refinement layers cannot narrow the paper panel. */
+@media (min-width: 1200px) {
+  .wide-shell {
+    width: min(1920px, calc(100% - 20px));
+  }
+
+  .main-layout {
+    grid-template-columns: 280px minmax(0, 1fr);
+    gap: 20px;
+  }
+
+  .content,
+  .paper-list,
+  .paper-group {
+    width: 100%;
+    max-width: none;
+  }
+
+  .paper-group {
+    --grid-min: 280px;
+    gap: 14px;
+  }
+
+  .controls {
+    grid-template-columns: minmax(360px, 1.8fr) repeat(5, minmax(132px, 1fr));
+  }
+}
+
+@media (min-width: 1680px) {
+  .wide-shell {
+    width: min(1960px, calc(100% - 16px));
+  }
+
+  .main-layout {
+    grid-template-columns: 280px minmax(0, 1fr);
+    gap: 18px;
+  }
+
+  .paper-group {
+    --grid-min: 270px;
+  }
+}
+
+/* Final desktop width override: prioritize the paper panel and reduce unused side margins. */
+@media (min-width: 1200px) {
+  .wide-shell {
+    width: min(1920px, calc(100% - 20px));
+  }
+
+  .main-layout {
+    grid-template-columns: 280px minmax(0, 1fr);
+    gap: 20px;
+  }
+
+  .content,
+  .paper-list,
+  .paper-group {
+    width: 100%;
+    max-width: none;
+  }
+
+  .paper-group {
+    --grid-min: 280px;
+    gap: 14px;
+  }
+
+  .controls {
+    grid-template-columns: minmax(360px, 1.8fr) repeat(5, minmax(132px, 1fr));
+  }
+}
+
+@media (min-width: 1680px) {
+  .wide-shell {
+    width: min(1960px, calc(100% - 16px));
+  }
+
+  .main-layout {
+    grid-template-columns: 280px minmax(0, 1fr);
+    gap: 18px;
+  }
+
+  .paper-group {
+    --grid-min: 270px;
+  }
+}
+
 /* Wide layout pass: use desktop horizontal space instead of clustering in the center. */
 @media (min-width: 1200px) {
   .wide-shell {
@@ -1928,5 +2014,48 @@ h1 {
 
   .paper-group {
     --grid-min: 100%;
+  }
+}
+
+/* Absolute final desktop width override. Keep this at EOF so later refinement layers cannot narrow the paper panel. */
+@media (min-width: 1200px) {
+  .wide-shell {
+    width: min(1920px, calc(100% - 20px));
+  }
+
+  .main-layout {
+    grid-template-columns: 280px minmax(0, 1fr);
+    gap: 20px;
+  }
+
+  .content,
+  .paper-list,
+  .paper-group {
+    width: 100%;
+    max-width: none;
+  }
+
+  .paper-group {
+    --grid-min: 280px;
+    gap: 14px;
+  }
+
+  .controls {
+    grid-template-columns: minmax(360px, 1.8fr) repeat(5, minmax(132px, 1fr));
+  }
+}
+
+@media (min-width: 1680px) {
+  .wide-shell {
+    width: min(1960px, calc(100% - 16px));
+  }
+
+  .main-layout {
+    grid-template-columns: 280px minmax(0, 1fr);
+    gap: 18px;
+  }
+
+  .paper-group {
+    --grid-min: 270px;
   }
 }
