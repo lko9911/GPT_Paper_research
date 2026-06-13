@@ -99,12 +99,8 @@ const UI_TEXT = {
     doiButton: "DOI",
     copyCitation: "인용 복사",
     copiedCitation: "복사됨",
-    shortlistOnly: "선택 논문만",
-    shortlistAll: "전체 보기",
-    shortlistHint: "별표를 눌러 이 브라우저에 발표/리뷰 후보를 저장하세요.",
-    shortlistCount: "선택 논문 {count}편",
-    starPaper: "선택 논문에 추가",
-    unstarPaper: "선택 논문에서 제거",
+    exportTitle: "필터 결과 내보내기",
+    exportHint: "현재 화면에 표시된 논문 목록을 파일로 저장합니다.",
     exportCsv: "CSV",
     exportBibtex: "BibTeX",
     exportMarkdown: "Markdown",
@@ -175,12 +171,8 @@ const UI_TEXT = {
     doiButton: "DOI",
     copyCitation: "Copy Cite",
     copiedCitation: "Copied",
-    shortlistOnly: "Shortlist only",
-    shortlistAll: "Show all",
-    shortlistHint: "Star papers to build a local shortlist for talks or reviews.",
-    shortlistCount: "{count} shortlisted",
-    starPaper: "Add to shortlist",
-    unstarPaper: "Remove from shortlist",
+    exportTitle: "Export filtered results",
+    exportHint: "Download the papers currently shown by your filters.",
     exportCsv: "CSV",
     exportBibtex: "BibTeX",
     exportMarkdown: "Markdown",
@@ -352,8 +344,6 @@ const state = {
   activeTargetVenue: "",
   activeVenueGroup: "",
   activeSubtopic: "",
-  shortlistOnly: localStorage.getItem("shortlistOnly") === "true",
-  shortlisted: new Set(readStoredArray("shortlistedPapers")),
   theme: localStorage.getItem("theme") || DEFAULT_THEME,
   language: localStorage.getItem("language") || DEFAULT_LANGUAGE,
   density: localStorage.getItem("density") || DEFAULT_DENSITY,
@@ -387,9 +377,8 @@ const els = {
   updated: document.querySelector("#stat-updated"),
   opsNote: document.querySelector("#ops-note"),
   heroStatus: document.querySelector("#hero-status"),
-  shortlistCount: document.querySelector("#shortlist-count"),
-  shortlistHint: document.querySelector("#shortlist-hint"),
-  shortlistToggle: document.querySelector("#shortlist-toggle"),
+  exportTitle: document.querySelector("#export-title"),
+  exportHint: document.querySelector("#export-hint"),
   exportCsv: document.querySelector("#export-csv"),
   exportBibtex: document.querySelector("#export-bibtex"),
   exportMarkdown: document.querySelector("#export-markdown"),
@@ -466,14 +455,6 @@ function setupPreferences() {
       applyPreferences();
     });
   }
-  if (els.shortlistToggle) {
-    els.shortlistToggle.addEventListener("click", () => {
-      state.shortlistOnly = !state.shortlistOnly;
-      localStorage.setItem("shortlistOnly", String(state.shortlistOnly));
-      updateShortlistUi();
-      applyFilters();
-    });
-  }
   window.setInterval(() => {
     updateStats();
   }, 60000);
@@ -524,11 +505,11 @@ function applyStaticLanguage() {
   setText("#empty-state p", t("emptyText"));
   setText("#footer-policy", t("footer"));
   setText("#contact-label", t("contactLabel"));
-  setText("#shortlist-hint", t("shortlistHint"));
+  setText("#export-title", t("exportTitle"));
+  setText("#export-hint", t("exportHint"));
   setText("#export-csv", t("exportCsv"));
   setText("#export-bibtex", t("exportBibtex"));
   setText("#export-markdown", t("exportMarkdown"));
-  updateShortlistUi();
   if (!state.papers.length) {
     setText("#hero-status", t("heroStatusLoading"));
   }
@@ -624,7 +605,6 @@ function buildSideNav() {
 }
 
 function setupResearchActions() {
-  updateShortlistUi();
   if (els.exportCsv) {
     els.exportCsv.addEventListener("click", () => exportFiltered("csv"));
   }
@@ -633,21 +613,6 @@ function setupResearchActions() {
   }
   if (els.exportMarkdown) {
     els.exportMarkdown.addEventListener("click", () => exportFiltered("markdown"));
-  }
-}
-
-function updateShortlistUi() {
-  const count = state.shortlisted.size;
-  if (els.shortlistCount) {
-    els.shortlistCount.textContent = t("shortlistCount").replace(
-      "{count}",
-      count.toLocaleString(state.language === "ko" ? "ko-KR" : "en-US")
-    );
-  }
-  if (els.shortlistToggle) {
-    els.shortlistToggle.textContent = state.shortlistOnly ? t("shortlistAll") : t("shortlistOnly");
-    els.shortlistToggle.setAttribute("aria-pressed", String(state.shortlistOnly));
-    els.shortlistToggle.classList.toggle("is-active", state.shortlistOnly);
   }
 }
 
@@ -910,7 +875,6 @@ function applyFilters() {
     const matchesVenueGroup = !state.activeVenueGroup || isOtherVenuePaper(paper);
     const matchesSubtopic = !state.activeSubtopic || paperMatchesSidebarSubtopic(paper, paperField, state.activeSubtopic);
     const matchesYear = !year || String(paper.year || "") === year;
-    const matchesShortlist = !state.shortlistOnly || state.shortlisted.has(paperKey(paper));
     return (
       matchesQuery &&
       matchesCategory &&
@@ -919,8 +883,7 @@ function applyFilters() {
       matchesTarget &&
       matchesVenueGroup &&
       matchesSubtopic &&
-      matchesYear &&
-      matchesShortlist
+      matchesYear
     );
   });
 
@@ -996,8 +959,6 @@ function renderPaperRow(paper) {
   const representativeBadges = representativeTags(paper)
     .map((tag) => badge(displayLabel(tag), "tag"))
     .join("");
-  const key = paperKey(paper);
-  const isShortlisted = state.shortlisted.has(key);
 
   article.innerHTML = `
     <div class="card-content">
@@ -1005,10 +966,6 @@ function renderPaperRow(paper) {
         <span class="publication-badge">${escapeHtml(publicationLabel)}</span>
         <span class="${escapeAttribute(summaryProviderLabel.className)}" title="${escapeAttribute(summaryProviderLabel.title)}">${escapeHtml(summaryProviderLabel.text)}</span>
         <span class="relevance-badge">${escapeHtml(t("relevanceLabel"))} ${escapeHtml(String(paper.relevance_score || "-"))}/10</span>
-        <button class="star-button${isShortlisted ? " is-starred" : ""}" type="button" data-star-paper="${escapeAttribute(key)}" aria-pressed="${isShortlisted ? "true" : "false"}" title="${escapeAttribute(isShortlisted ? t("unstarPaper") : t("starPaper"))}">
-          <span aria-hidden="true">★</span>
-          <span>${escapeHtml(isShortlisted ? t("unstarPaper") : t("starPaper"))}</span>
-        </button>
       </div>
       <h4 class="paper-title">${escapeHtml(paper.title || "Untitled")}</h4>
       <p class="meta">${escapeHtml(authors)}${authors ? " · " : ""}${escapeHtml(paper.venue || "Venue unknown")} · ${escapeHtml(sourceText)}</p>
@@ -1033,10 +990,6 @@ function renderPaperRow(paper) {
     }, 1400);
   });
 
-  article.querySelector("[data-star-paper]").addEventListener("click", (event) => {
-    toggleShortlist(event.currentTarget.dataset.starPaper);
-  });
-
   article.querySelectorAll("[data-tag-filter]").forEach((button) => {
     button.addEventListener("click", () => {
       els.tag.value = button.dataset.tagFilter;
@@ -1045,22 +998,6 @@ function renderPaperRow(paper) {
   });
 
   return article;
-}
-
-function toggleShortlist(key) {
-  if (!key) return;
-  if (state.shortlisted.has(key)) {
-    state.shortlisted.delete(key);
-  } else {
-    state.shortlisted.add(key);
-  }
-  localStorage.setItem("shortlistedPapers", JSON.stringify([...state.shortlisted]));
-  updateShortlistUi();
-  applyFilters();
-}
-
-function paperKey(paper) {
-  return String(paper.id || paper.doi || normalizeTopicKey(paper.title || "") || "unknown");
 }
 
 function badge(text, className = "") {
@@ -1418,7 +1355,6 @@ function papersToCsv(papers) {
     "tags",
     "relevance_score",
     "last_updated",
-    "shortlisted",
   ];
   const rows = papers.map((paper) =>
     headers.map((key) => csvCell(exportValue(paper, key))).join(",")
@@ -1477,7 +1413,6 @@ function exportValue(paper, key) {
   if (key === "source") return (paper.source || []).join("; ");
   if (key === "categories") return (paper.categories || []).map(displayLabel).join("; ");
   if (key === "tags") return representativeTags(paper).map(displayLabel).join("; ");
-  if (key === "shortlisted") return state.shortlisted.has(paperKey(paper)) ? "yes" : "no";
   return paper[key] == null ? "" : paper[key];
 }
 
