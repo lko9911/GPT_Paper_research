@@ -1465,6 +1465,14 @@ function t(key) {
 }
 
 function displayLabel(value) {
+  if (FIELD_ORDER.includes(value)) {
+    if (state.language === "ko") return value;
+    return (LABEL_TRANSLATIONS.en && LABEL_TRANSLATIONS.en[value]) || value;
+  }
+  if (CATEGORY_ORDER.includes(value)) {
+    if (state.language === "ko") return value;
+    return (LABEL_TRANSLATIONS.en && LABEL_TRANSLATIONS.en[value]) || value;
+  }
   const canonical = canonicalTopicLabel(value);
   const tagLabel = TAG_LABELS[state.language] && TAG_LABELS[state.language][canonical];
   if (tagLabel) return tagLabel;
