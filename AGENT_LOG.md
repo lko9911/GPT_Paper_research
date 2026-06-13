@@ -1,5 +1,32 @@
 # AGENT_LOG
 
+## 2026-06-13 20:37
+
+### 변경 요약
+- `Robotic AM`을 별도 서브토픽/대표 태그에서 제거했습니다.
+- 로봇 기반 적층제조 관련 표현은 더 넓은 `Robot-based Manufacturing`으로 흡수되도록 정리했습니다.
+
+### 수정/생성한 파일
+- `assets/app.js`: 왼쪽 패널의 `로봇틱스(생산제조)` 서브토픽에서 `로봇 AM`을 제거하고, `Robotic AM` 태그 라벨과 자동 감지 추가 로직을 제거했습니다.
+- `scripts/summarize.py`: 향후 fallback 요약/태그 생성에서 `Robotic AM`이 새로 생성되지 않도록 TAG_MAP에서 제거했습니다.
+- `index.html`: GitHub Pages 캐시 무효화를 위해 CSS/JS query version을 `20260613-0240`으로 갱신했습니다.
+- `AGENT_LOG.md`: 이번 분류 정리 내용을 기록했습니다.
+
+### 구현한 기능
+- 왼쪽 패널은 `Robotics for Manufacturing` 아래에 `Manufacturing Automation`, `Robot-based Manufacturing`, `Others`만 표시합니다.
+- 기존 논문에 `Robotic AM` 태그가 남아 있어도 대표 태그 UI에서는 표시하지 않습니다.
+
+### 설계 결정
+- 논문 데이터 원본은 수정하지 않았습니다. 기존 수집/요약 기록을 보존하고, UI 계층에서 중복 분류만 제거하기 위해서입니다.
+- `robotic additive manufacturing`, `robotic 3D printing` 같은 표현은 별도 `Robotic AM`이 아니라 `Robot-based Manufacturing`으로 해석합니다.
+
+### 남은 작업
+- 배포 후 공개 페이지에서 `Robotic AM` 항목이 사라졌는지 확인합니다.
+
+### 주의사항
+- 이 수정은 OpenAI API를 호출하지 않습니다.
+- 새 논문 수집도 실행하지 않습니다.
+
 ## 2026-06-13 20:29
 
 ### 변경 요약
