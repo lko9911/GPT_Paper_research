@@ -1,5 +1,37 @@
 # AGENT_LOG
 
+## 2026-06-13 13:26
+
+### 변경 요약
+- 사용자가 명시적으로 허용한 이번 1회에 한해 curated 논문 전체 OpenAI Q5 요약 refresh를 실행했습니다.
+- 실행 직후 `OPENAI_REFRESH_ENABLED` repository variable을 다시 `false`로 닫아 이후 자동/수동 추가 실행을 차단했습니다.
+- GitHub Actions run `27454740969`가 성공 완료되었고, Pages 배포까지 완료되었습니다.
+
+### 수정/생성한 파일
+- `data/papers.json`: GitHub Actions가 539편 전체에 OpenAI 기반 한국어/영어 Q5 요약을 반영했습니다.
+- `data/site_meta.json`: `summaries_refreshed=539`, `summary_refresh_model=gpt-4o-mini`, `last_run_at_utc=2026-06-13T04:23:40Z`가 기록되었습니다.
+- `AGENT_LOG.md`: 이번 수동 OpenAI refresh 실행 결과와 안전장치 상태를 기록했습니다.
+- `PROJECT_STATUS.md`: 현재 요약 적용 상태를 갱신했습니다.
+
+### 구현한 기능
+- `summary_provider=openai`: 539/539편
+- `openai_summary_applied=true`: 539/539편
+- 한국어 Q5 요약 형식: 539/539편
+- 영어 Q5 요약 형식: 539/539편
+
+### 설계 결정
+- 사용자가 명시적으로 요청한 이번 작업만 OpenAI API를 사용했습니다.
+- 정기 `Update papers` workflow는 여전히 `ALLOW_OPENAI_IN_UPDATE=false`이며 `OPENAI_API_KEY`를 전달하지 않습니다.
+- 수동 `Refresh OpenAI summaries` workflow도 `OPENAI_REFRESH_ENABLED=true`와 정확한 확인 문구가 있어야만 실행됩니다. 현재 변수는 다시 `false`입니다.
+
+### 남은 작업
+- 다음 신규 논문은 기본적으로 OpenAI 없이 metadata summary로 추가됩니다.
+- 신규 논문에도 OpenAI Q5 요약을 적용하려면 사용자가 다시 명시적으로 요청해야 합니다.
+
+### 주의사항
+- 이번 refresh는 약 76분 걸렸습니다. 향후 대량 refresh는 100편 단위 batch 방식이 더 안정적일 수 있습니다.
+- API key, token, secret은 기록하지 않았습니다.
+
 ## 2026-06-13 12:04
 
 ### 변경 요약

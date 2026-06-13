@@ -1,5 +1,21 @@
 # PROJECT_STATUS
 
+## 2026-06-13 13:26 최신 상태
+
+- curated 논문 539편 전체에 OpenAI 기반 Q5 요약이 적용되었습니다.
+- `data/papers.json` 기준 `summary_provider=openai` 539편, `openai_summary_applied=true` 539편입니다.
+- 한국어 Q5 요약과 영어 Q5 요약 모두 539/539편에서 확인되었습니다.
+- 이번 실행은 사용자의 명시 요청에 따른 1회성 수동 실행입니다.
+- `Refresh OpenAI summaries` GitHub Actions run `27454740969`가 성공했고, 결과 커밋은 `af7da22 Refresh OpenAI paper summaries`입니다.
+- `data/site_meta.json`에는 `summaries_refreshed=539`, `summary_refresh_model=gpt-4o-mini`, `last_run_at_utc=2026-06-13T04:23:40Z`가 기록되어 있습니다.
+- 정기 `Update papers` workflow는 여전히 OpenAI API를 사용하지 않습니다. `ALLOW_OPENAI_IN_UPDATE=false`이며 scheduled update에는 `OPENAI_API_KEY`가 전달되지 않습니다.
+- repository variable `OPENAI_REFRESH_ENABLED`는 다시 `false`로 닫혀 있습니다. 다음 OpenAI refresh는 사용자가 다시 명시적으로 요청할 때만 열어야 합니다.
+
+### 남은 주의사항
+- 앞으로 자동 수집되는 신규 논문은 OpenAI 요약이 아니라 metadata summary로 들어옵니다.
+- 신규 논문까지 OpenAI Q5 요약을 적용하려면 별도 수동 refresh가 필요합니다.
+- 539편 전체 refresh에는 약 76분이 걸렸으므로, 다음 대량 refresh는 100편 단위 batch 방식이 더 안정적입니다.
+
 ## 2026-06-13 00:30 최신 상태
 
 - 상단 통계 영역은 방문자 혼동을 줄이기 위해 `논문수`, `게재지`, `조사연도`, `현재 / 갱신`만 보여줍니다.
