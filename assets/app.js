@@ -23,7 +23,7 @@ const FIELD_SUBTOPICS = {
   "생산/제조": ["금속/합금 제조", "복합재/소재 제조", "공정 최적화"],
   "3D 프린팅": ["DLP", "Material Switching", "Toolpath", "FDM/Material extrusion"],
   "4D 프린팅": ["LCE", "메타물질", "Active materials"],
-  "로봇틱스(생산제조)": ["제조 자동화", "Robot-based Manufacturing", "로봇 AM"],
+  "로봇틱스(생산제조)": ["제조 자동화", "Robot-based Manufacturing"],
   "AI 생산제조": ["Self-driving Labs", "Digital Twins", "제조 자동화", "Design Automation", "Machine Learning"],
 };
 
@@ -168,7 +168,6 @@ const LABEL_TRANSLATIONS = {
     "복합재/소재 제조": "Composites/Materials",
     "툴패스": "Toolpath",
     "퍼지/재료전환": "Purge/Material Switching",
-    "로봇 AM": "Robotic AM",
     "제조 자동화": "Manufacturing Automation",
     "경로계획": "Path Planning",
     "메타물질": "Metamaterials",
@@ -226,7 +225,6 @@ const TAG_LABELS = {
     "Robotic autonomous experimentation": "자율 실험실",
     "Design automation": "설계 자동화",
     "Machine learning": "머신러닝",
-    "Robotic AM": "로봇 AM",
     "Robot-based Manufacturing": "로봇 기반 생산제조",
     "Metals/Alloys": "금속/합금",
     "Composites/Materials": "복합재/소재",
@@ -267,7 +265,6 @@ const TAG_LABELS = {
     "Robotic autonomous experimentation": "Self-driving Labs",
     "Design automation": "Design Automation",
     "Machine learning": "Machine Learning",
-    "Robotic AM": "Robotic AM",
     "Robot-based Manufacturing": "Robot-based Manufacturing",
     "Metals/Alloys": "Metals/Alloys",
     "Composites/Materials": "Composites/Materials",
@@ -1155,8 +1152,7 @@ function explicitCanonicalAlias(value, text) {
     [["인공지능", "ai", "artificial intelligence"], "Machine learning"],
     [["제조 자동화", "자동화", "스마트 제조", "manufacturing automation", "automated manufacturing"], "Manufacturing automation"],
     [["자율 실험", "자율 실험실", "self-driving lab", "autonomous laboratory", "bayesian optimization"], "Self-driving Labs"],
-    [["로봇 기반 생산제조", "로봇 기반 제조", "robot-based manufacturing", "robotic manufacturing", "robotic fabrication", "robot-assisted manufacturing"], "Robot-based Manufacturing"],
-    [["로봇", "로봇 공학", "로봇공학", "robotic", "robot"], "Robotic AM"],
+    [["로봇 기반 생산제조", "로봇 기반 제조", "robot-based manufacturing", "robotic manufacturing", "robotic fabrication", "robot-assisted manufacturing", "robotic additive manufacturing", "robotic am", "robot-assisted additive", "robotic 3d printing", "robotic 4d printing"], "Robot-based Manufacturing"],
     [["금속", "합금", "alloy", "alloys", "metal", "metals"], "Metals/Alloys"],
     [["복합재", "복합재료", "복합 재료", "composite", "composites"], "Composites/Materials"],
     [["지속 가능성", "지속가능성", "재활용", "sustainability", "recycling", "circular"], "Sustainability"],
@@ -1410,12 +1406,6 @@ function deriveSubtopics(paper) {
     hasAny(text, ["manufacturing", "production", "fabrication", "assembly", "machining", "welding", "printing", "additive", "제조", "생산", "제작", "조립", "가공"])
   ) {
     subtopics.add("Robot-based Manufacturing");
-  }
-  if (
-    hasAny(text, ["robotic additive manufacturing", "robotic am", "robot-assisted additive", "robotic 3d printing", "robotic 4d printing"]) ||
-    (hasAny(text, ["robot", "robotic", "로봇"]) && hasAny(text, ["additive manufacturing", "3d printing", "4d printing", "direct ink writing", "printing", "적층", "프린팅"]))
-  ) {
-    subtopics.add("로봇 AM");
   }
   if (hasAny(text, ["self-driving lab", "self driving lab", "self-driving laboratory", "autonomous laboratory", "autonomous lab", "autonomous experiment", "autonomous experimentation", "closed-loop experimentation", "closed loop experimentation", "closed-loop experiment", "closed loop experiment", "robot scientist", "active learning", "bayesian optimization", "자율 실험실", "자동화 실험", "자율 실험", "로봇 자율 실험"])) {
     subtopics.add("Self-driving Labs");

@@ -51,7 +51,6 @@ TAG_MAP = {
     "Machine learning": ["machine learning", "deep learning", "neural", "artificial intelligence"],
     "DLP": ["dlp", "digital light processing", "vat photopolymerization", "vat photopolymerisation"],
     "FDM/Material extrusion": ["fdm", "fused deposition", "material extrusion", "filament"],
-    "Robotic AM": ["robotic additive manufacturing", "robot-assisted manufacturing", "robotic am"],
     "Self-driving Labs": [
         "self-driving lab",
         "self driving lab",
