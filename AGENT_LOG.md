@@ -1,5 +1,28 @@
 # AGENT_LOG
 
+## 2026-06-13 22:27
+
+### 변경 요약
+- `Gyuwon Lee` 이름 하이라이트가 이름 영역보다 크게 튀어나와 보이는 문제를 줄였습니다.
+
+### 수정/생성한 파일
+- `assets/style.css`: `.creator-name` padding, border-radius, gradient 위치를 줄여 글자 하단에만 형광펜이 깔리도록 조정했습니다.
+- `index.html`: GitHub Pages cache busting을 위해 CSS/JS query version을 `20260613-0390`으로 갱신했습니다.
+- `AGENT_LOG.md`: 이름 highlight 미세 조정 기록을 추가했습니다.
+
+### 구현한 기능
+- 형광펜 효과가 이름 바깥으로 과하게 퍼지지 않고 글자 폭에 더 가깝게 표시됩니다.
+
+### 설계 결정
+- 강조를 유지하되 배경 면적을 줄이기 위해 padding을 `0 1px 1px`로 줄이고, gradient를 글자 하단 48~88% 범위로 제한했습니다.
+
+### 남은 작업
+- 배포 후 헤더에서 이름 highlight가 충분히 자연스러운지 확인합니다.
+
+### 주의사항
+- 이 수정은 OpenAI API를 호출하지 않습니다.
+- 새 논문 수집도 실행하지 않습니다.
+
 ## 2026-06-13 22:20
 
 ### 변경 요약
