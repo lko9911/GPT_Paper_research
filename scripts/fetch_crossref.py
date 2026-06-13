@@ -55,6 +55,23 @@ def fetch_crossref(query: str, rows: int = 20, from_year: int | None = None) -> 
     return works
 
 
+def fetch_crossref_by_doi(doi: str) -> dict[str, Any] | None:
+    clean_doi = _clean_doi(doi)
+    if not clean_doi:
+        return None
+    contact_email = os.getenv("CONTACT_EMAIL")
+    params = {"mailto": contact_email} if contact_email else None
+    response = requests.get(f"{CROSSREF_API}/{quote(clean_doi)}", params=params, headers=_headers(), timeout=30)
+    if response.status_code == 404:
+        return None
+    response.raise_for_status()
+    item = response.json().get("message", {})
+    if not item:
+        return None
+    time.sleep(float(os.getenv("API_SLEEP_SECONDS", "0.2")))
+    return _normalize_work(item)
+
+
 def _normalize_work(item: dict[str, Any]) -> dict[str, Any]:
     doi = _clean_doi(item.get("DOI"))
     title = _first(item.get("title")) or "Untitled"
