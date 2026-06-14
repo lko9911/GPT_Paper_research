@@ -56,6 +56,8 @@ const UI_TEXT = {
       "본 사이트의 요약은 공개된 논문 메타데이터 및 초록을 바탕으로 AI가 새로 작성한 한글 요약입니다. 원문 및 정확한 내용은 DOI 링크를 통해 확인하세요.",
     sideTitle: "분야 및 서브 토픽",
     totalPapers: "논문수",
+    weeklyAdded: "최근 7일 추가",
+    latestRunAdded: "최근 실행",
     venueCount: "게재지",
     yearRange: "조사연도",
     currentUpdate: "현재 / 갱신",
@@ -125,6 +127,8 @@ const UI_TEXT = {
       "Summaries on this site are newly written AI summaries based on public paper metadata and abstracts. Check the DOI link for the original and authoritative content.",
     sideTitle: "Fields and Subtopics",
     totalPapers: "Papers",
+    weeklyAdded: "Added in 7 days",
+    latestRunAdded: "latest run",
     venueCount: "Venues",
     yearRange: "Years",
     currentUpdate: "Now / Updated",
@@ -368,6 +372,7 @@ const els = {
   sideTopicNav: document.querySelector("#side-topic-nav"),
   venueBoard: document.querySelector("#venue-board"),
   total: document.querySelector("#stat-total"),
+  weeklyAdded: document.querySelector("#stat-weekly-added"),
   venues: document.querySelector("#stat-venues"),
   years: document.querySelector("#stat-years"),
   updated: document.querySelector("#stat-updated"),
@@ -477,9 +482,10 @@ function applyStaticLanguage() {
   setText(".notice-soft", t("noticeSoft"));
   setText(".sidebar strong", t("sideTitle"));
   setText(".stats article:nth-child(1) strong", t("totalPapers"));
-  setText(".stats article:nth-child(2) strong", t("venueCount"));
-  setText(".stats article:nth-child(3) strong", t("yearRange"));
-  setText(".stats article:nth-child(4) strong", t("currentUpdate"));
+  setText(".stats article:nth-child(2) strong", t("weeklyAdded"));
+  setText(".stats article:nth-child(3) strong", t("venueCount"));
+  setText(".stats article:nth-child(4) strong", t("yearRange"));
+  setText(".stats article:nth-child(5) strong", t("currentUpdate"));
   setText(".search-label-text", t("search"));
   setText(".controls label:nth-child(2) span", t("field"));
   setText(".controls label:nth-child(3) span", t("tagSubtopic"));
@@ -749,6 +755,7 @@ function updateStats() {
   if (els.total) {
     els.total.textContent = state.papers.length.toLocaleString(locale);
   }
+  renderWeeklyAddedStat(lastRunAt);
   const venues = new Set(state.papers.map((paper) => normalizeVenue(paper.venue)).filter(Boolean));
   if (els.venues) {
     els.venues.textContent = venues.size.toLocaleString(locale);
@@ -806,6 +813,49 @@ function renderUpdatedStat(lastRunAt) {
   }
   const updatedLabel = state.language === "ko" ? "수집" : "updated";
   els.updated.innerHTML = `${escapeHtml(now.date)}<small>${escapeHtml(now.time)} KST · ${escapeHtml(updatedLabel)} ${escapeHtml(lastRun.time)} KST</small>`;
+}
+
+function renderWeeklyAddedStat(lastRunAt) {
+  if (!els.weeklyAdded) return;
+  const locale = state.language === "ko" ? "ko-KR" : "en-US";
+  const weeklyCount = countRecentlyAddedPapers(state.papers, lastRunAt, 7);
+  const latestAdded = Number(state.siteMeta && state.siteMeta.papers_added);
+  const latestText = Number.isFinite(latestAdded)
+    ? `<small>${escapeHtml(formatLatestAddedText(latestAdded, locale))}</small>`
+    : "";
+  els.weeklyAdded.classList.add("stat-with-note");
+  els.weeklyAdded.innerHTML = `${escapeHtml(weeklyCount.toLocaleString(locale))}${latestText}`;
+}
+
+function formatLatestAddedText(count, locale) {
+  const countText = count.toLocaleString(locale);
+  if (state.language === "ko") return `${t("latestRunAdded")} +${countText}`;
+  return `+${countText} ${t("latestRunAdded")}`;
+}
+
+function countRecentlyAddedPapers(papers, lastRunAt, days) {
+  const referenceDate = referenceDateOnly(lastRunAt);
+  if (!referenceDate) return 0;
+  const startDate = new Date(referenceDate);
+  startDate.setUTCDate(startDate.getUTCDate() - Math.max(0, days - 1));
+  return papers.filter((paper) => {
+    const addedDate = parseDateOnly(paper.first_added);
+    return addedDate && addedDate >= startDate && addedDate <= referenceDate;
+  }).length;
+}
+
+function referenceDateOnly(lastRunAt) {
+  const lastRun = formatRunTime(lastRunAt);
+  if (lastRun && lastRun.date) return parseDateOnly(lastRun.date);
+  const now = formatKstTime(new Date());
+  return parseDateOnly(now.date);
+}
+
+function parseDateOnly(value) {
+  const match = String(value || "").match(/^(\d{4})-(\d{2})-(\d{2})/);
+  if (!match) return null;
+  const date = new Date(Date.UTC(Number(match[1]), Number(match[2]) - 1, Number(match[3])));
+  return Number.isNaN(date.getTime()) ? null : date;
 }
 
 function formatYearRange(papers) {
