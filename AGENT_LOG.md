@@ -3651,6 +3651,21 @@
 - 이 변경은 표시/필터 UI 기준만 바꾸며 `data/papers.json`의 논문 데이터나 수집 파이프라인은 수정하지 않습니다.
 - API key, token, secret은 기록하지 않았습니다.
 
+## 2026-06-14 09:47
+
+### Change Summary
+- Made the Papers stat delta line more explicit so the user can tell which number is from the latest update and which is weekly.
+
+### Edited Files
+- `assets/app.js`: changed the compact stat note to labels such as `이번 업데이트 +20 · 주간 신규 +793`.
+- `index.html`: bumped asset cache versions for GitHub Pages.
+
+### Design Notes
+- Kept the weekly amount inside the Papers card instead of restoring a separate stat card, avoiding another large `793` tile while preserving the weekly count.
+
+### Follow-up
+- None.
+
 ## 2026-06-14 09:40
 
 ### Change Summary
