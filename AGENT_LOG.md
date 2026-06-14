@@ -3651,6 +3651,26 @@
 - 이 변경은 표시/필터 UI 기준만 바꾸며 `data/papers.json`의 논문 데이터나 수집 파이프라인은 수정하지 않습니다.
 - API key, token, secret은 기록하지 않았습니다.
 
+## 2026-06-14 14:20
+
+### Change Summary
+- Audited and tightened the `Digital Twins` classification.
+- Removed false-positive `Digital Twins` tags from 26 current papers that did not have an explicit digital-twin signal in title or venue.
+
+### Edited Files
+- `assets/app.js`: narrowed Digital Twins UI classification to explicit digital twin/twinning signals and stopped mapping `cyber-physical` alone to Digital Twins.
+- `scripts/summarize.py`: removed the `cyber-physical` alias/keyword from Digital Twins tag generation.
+- `scripts/update_papers.py`: stopped using `cyber-physical` alone as a digital-twin collection signal.
+- `data/papers.json`: removed 26 false-positive `Digital Twins` tags.
+- `index.html`: bumped the app script cache version for GitHub Pages.
+
+### Design Notes
+- Digital Twins is now treated as a narrower topic: `digital twin(s)`, `digital twinning`, `virtual twin`, `real-to-twin`, `twin-enabled`, `twin-driven`, `process twin`, or `machine twin`.
+- Broad `cyber-physical` papers can still be relevant to manufacturing, but they are no longer automatically shown under Digital Twins.
+
+### Follow-up
+- If needed, rerun OpenAI summaries later for the cleaned papers so old summary text no longer mentions Digital Twins in the narrative.
+
 ## 2026-06-14 10:10
 
 ### Change Summary

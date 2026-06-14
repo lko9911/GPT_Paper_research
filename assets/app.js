@@ -1209,6 +1209,7 @@ function representativeTags(paper) {
   candidates.forEach((tag) => {
     const canonical = canonicalTopicLabel(tag);
     if (!isKnownCanonicalTag(canonical)) return;
+    if (canonical === "Digital Twins" && !paperHasDigitalTwinSignal(paper)) return;
     const key = normalizeTopicKey(canonical);
     if (!canonical || seen.has(key)) return;
     seen.add(key);
@@ -1226,6 +1227,7 @@ function paperMatchesSidebarSubtopic(paper, field, topic) {
 
 function paperHasRepresentativeTopic(paper, topic) {
   const target = normalizeTopicKey(canonicalTopicLabel(topic));
+  if (target === normalizeTopicKey("Digital Twins") && !paperHasDigitalTwinSignal(paper)) return false;
   const candidates = [
     ...(paper.tags || []),
     ...visibleTags(paper),
@@ -1272,7 +1274,7 @@ function explicitCanonicalAlias(value, text) {
 
   const checks = [
     [["적층 제조", "additive manufacturing", "3d printing", "3d 프린팅"], "Additive manufacturing"],
-    [["디지털 트윈", "digital twin", "digital twins", "cyber-physical"], "Digital Twins"],
+    [["디지털 트윈", "digital twin", "digital twins", "digital twinning", "virtual twin", "real-to-twin", "twin-enabled", "twin-driven", "process twin", "machine twin"], "Digital Twins"],
     [["액정 엘라스토머", "액정 고무", "액정 고무체", "liquid crystal elastomer", "lce"], "LCE"],
     [["4d 프린팅", "4d printing", "4d print"], "4D printing"],
     [["메타재료", "메타물질", "metamaterial"], "Metamaterials"],
@@ -1336,7 +1338,7 @@ function canonicalTopicLabel(tag) {
   if (hasAny(text, ["robotic autonomous experimentation", "self-driving lab", "self driving lab", "self-driving laboratory", "autonomous laboratory", "autonomous lab", "autonomous experimentation", "autonomous experiment", "closed-loop experimentation", "closed loop experimentation", "closed-loop experiment", "robotic experiment", "robot scientist", "active learning", "bayesian optimization", "자율 실험실", "자동화 실험", "로봇 자율 실험"])) {
     return "Self-driving Labs";
   }
-  if (hasAny(text, ["digital twin", "digital twins", "virtual twin", "cyber-physical", "cyber physical", "process twin", "machine twin", "디지털 트윈"])) return "Digital Twins";
+  if (hasAny(text, ["digital twin", "digital twins", "digital-twin", "digital-twins", "digital twinning", "virtual twin", "real-to-twin", "twin-enabled", "twin-driven", "process twin", "machine twin", "디지털 트윈"])) return "Digital Twins";
   if (hasAny(text, ["design automation", "computational design", "generative design", "topology optimization", "계산설계", "설계 자동화"])) return "Design automation";
   if (hasAny(text, ["manufacturing automation", "automated manufacturing", "factory automation", "process automation", "production automation", "automation", "automated", "autonomous", "closed-loop", "closed loop", "monitoring", "in-situ", "in situ", "제조 자동화", "생산 자동화", "공정 자동화", "자동화", "자율", "모니터링"])) return "Manufacturing automation";
   if (hasAny(text, ["machine learning", "deep learning", "reinforcement learning", "ai/ml", "머신러닝", "인공지능"])) return "Machine learning";
@@ -1445,8 +1447,6 @@ function deriveField(paper) {
     titleText.includes("digital twin") ||
     titleText.includes("digital twins") ||
     titleText.includes("virtual twin") ||
-    titleText.includes("cyber-physical") ||
-    titleText.includes("cyber physical") ||
     titleText.includes("디지털 트윈") ||
     titleText.includes("design automation") ||
     titleText.includes("computational design") ||
@@ -1505,6 +1505,24 @@ function deriveField(paper) {
   return "생산/제조";
 }
 
+function paperHasDigitalTwinSignal(paper) {
+  const text = normalize([paper.title, paper.venue].join(" "));
+  return hasAny(text, [
+    "digital twin",
+    "digital twins",
+    "digital-twin",
+    "digital-twins",
+    "digital twinning",
+    "virtual twin",
+    "real-to-twin",
+    "twin-enabled",
+    "twin-driven",
+    "process twin",
+    "machine twin",
+    "디지털 트윈",
+  ]);
+}
+
 function deriveSubtopics(paper) {
   const text = normalize(
     [
@@ -1558,7 +1576,7 @@ function deriveSubtopics(paper) {
   if (hasAny(text, ["deep learning", "neural", "딥러닝"])) subtopics.add("Deep Learning");
   if (hasAny(text, ["reinforcement learning", "강화학습"])) subtopics.add("Reinforcement Learning");
   if (hasAny(text, ["process control", "monitoring", "closed-loop", "공정제어", "모니터링"])) subtopics.add("AI 공정제어");
-  if (hasAny(text, ["digital twin", "digital twins", "virtual twin", "cyber-physical", "cyber physical", "process twin", "machine twin", "디지털 트윈"])) {
+  if (paperHasDigitalTwinSignal(paper)) {
     subtopics.add("Digital Twins");
   }
   if (hasAny(text, ["computational design", "generative design", "topology optimization", "design automation", "계산설계", "설계 자동화"])) {

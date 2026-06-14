@@ -68,9 +68,11 @@ TAG_MAP = {
     "Digital Twins": [
         "digital twin",
         "digital twins",
+        "digital twinning",
         "virtual twin",
-        "cyber-physical",
-        "cyber physical",
+        "real-to-twin",
+        "twin-enabled",
+        "twin-driven",
         "process twin",
         "machine twin",
     ],
@@ -143,7 +145,6 @@ TAG_ALIASES = {
     "Digital twin": "Digital Twins",
     "Digital twins": "Digital Twins",
     "Digital Twins": "Digital Twins",
-    "Cyber-physical": "Digital Twins",
     "4D Printing": "4D printing",
     "Active Materials": "Active materials",
 }
