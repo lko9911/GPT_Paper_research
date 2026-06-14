@@ -3739,6 +3739,32 @@
 - Digital Twins is now treated as a narrower topic: `digital twin(s)`, `digital twinning`, `virtual twin`, `real-to-twin`, `twin-enabled`, `twin-driven`, `process twin`, or `machine twin`.
 - Broad `cyber-physical` papers can still be relevant to manufacturing, but they are no longer automatically shown under Digital Twins.
 
+## 2026-06-14 21:55
+
+### Change Summary
+- Added an explicit operations and copyright policy for the paper tracker.
+- Strengthened the OpenAI summary prompt so English summaries must avoid close paraphrase of publisher/OpenAlex abstract wording, not only verbatim copying.
+- Linked the new policy document from `README.md`.
+
+### Edited Files
+- `OPERATIONS_POLICY.md`: new operating policy covering data sources, update workflow, OpenAI usage, public repository rules, and abstract copyright safety.
+- `scripts/summarize.py`: added stronger instructions against abstract sentence order reuse, long noun-phrase reuse, and 8+ word overlap in `ai_summary_en`.
+- `README.md`: added a pointer to the new operations/copyright policy.
+- `AGENT_LOG.md`: recorded this policy update.
+
+### Audit Context
+- Local audit found no stored raw abstract field in current `data/papers.json` or `data/archive_papers.json`.
+- All checked records had `raw_abstract_displayed=false` and `pdf_stored=false`.
+- A sample comparison against OpenAlex abstracts found that some existing `ai_summary_en` entries share long technical phrases with abstracts, so future summaries must be treated under a stricter close-paraphrase policy.
+
+### Operating Rule
+- Copyright safety is not only "do not store abstracts." AI summaries, especially English summaries, must be newly synthesized and should not closely follow publisher abstract wording, sentence order, or long phrase chains.
+- Existing high-overlap English summaries should be considered candidates for selective rewrite or temporary conservative fallback if the site is hardened further.
+
+### Follow-up
+- Add an automated summary-overlap audit before future bulk OpenAI refreshes.
+- Consider selectively regenerating existing `ai_summary_en` entries with high abstract overlap.
+
 ### Follow-up
 - If needed, rerun OpenAI summaries later for the cleaned papers so old summary text no longer mentions Digital Twins in the narrative.
 
