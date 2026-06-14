@@ -439,7 +439,7 @@ h1 {
 
 .stats {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 10px;
   padding: 18px 0 12px;
 }
@@ -469,6 +469,15 @@ h1 {
   color: var(--muted);
   font-size: 0.8rem;
   font-weight: 820;
+}
+
+.stats span.stat-with-note small {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 820;
+  line-height: 1.15;
 }
 
 .stats strong {
@@ -1826,7 +1835,7 @@ h1 {
   }
 
   .stats {
-    grid-template-columns: repeat(4, minmax(180px, 1fr));
+    grid-template-columns: repeat(5, minmax(150px, 1fr));
   }
 
   .venue-featured {
@@ -3234,7 +3243,7 @@ h1 {
 }
 
 .stats {
-  grid-template-columns: 1.25fr 1fr 1fr 1.45fr;
+  grid-template-columns: 1.15fr 1fr 1fr 1fr 1.55fr;
 }
 
 .stats article {
