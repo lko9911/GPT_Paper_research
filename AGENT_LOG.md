@@ -3651,6 +3651,26 @@
 - 이 변경은 표시/필터 UI 기준만 바꾸며 `data/papers.json`의 논문 데이터나 수집 파이프라인은 수정하지 않습니다.
 - API key, token, secret은 기록하지 않았습니다.
 
+## 2026-06-14 14:42
+
+### Change Summary
+- Further narrowed `Digital Twins` to manufacturing-focused digital twins only.
+- Removed `Digital Twins` tags from 7 more current papers that were urban, generic semantic modelling, logistics, pharma supply chain, AHU, or city-platform topics.
+
+### Edited Files
+- `assets/app.js`: requires both a digital-twin signal and a manufacturing/3D-printing/4D-printing/robotics/automation domain signal before showing or filtering `Digital Twins`.
+- `scripts/summarize.py`: filters generated and fallback `Digital Twins` tags through the same manufacturing-focused rule.
+- `scripts/update_papers.py`: rejects generic digital-twin candidates unless they also match the manufacturing-focused context.
+- `data/papers.json`: reduced current direct `Digital Twins` tags from 21 to 14.
+- `index.html`: bumped the app script cache version for GitHub Pages.
+
+### Design Notes
+- The intended scope is now production/manufacturing, 3D/4D printing, manufacturing automation, robotic manufacturing, and closely related industrial process digital twins.
+- Generic city, mobility, healthcare/pharma, agriculture, indoor/AHU, and broad semantic digital-twin papers are no longer included under the Digital Twins topic.
+
+### Follow-up
+- Existing summary prose may still mention older Digital Twins reasoning until those records are regenerated.
+
 ## 2026-06-14 14:20
 
 ### Change Summary

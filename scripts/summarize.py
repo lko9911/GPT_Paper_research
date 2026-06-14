@@ -211,7 +211,7 @@ def _summarize_with_openai(record: dict[str, Any], abstract: str) -> dict[str, A
         )
         content = response.choices[0].message.content or "{}"
         payload = json.loads(_extract_json(content))
-        return _sanitize_generated(payload)
+        return _sanitize_generated(payload, _text(record, abstract))
     except Exception as exc:  # Fallback keeps scheduled jobs from failing on optional AI issues.
         print(f"OpenAI summary fallback for '{record.get('title', '')}': {exc}")
         return None
@@ -495,7 +495,13 @@ def _classify(record: dict[str, Any], abstract: str) -> list[str]:
 
 def _tags(record: dict[str, Any], abstract: str, categories: list[str]) -> list[str]:
     text = _text(record, abstract)
-    tags = [tag for tag, terms in TAG_MAP.items() if any(term in text for term in terms)]
+    tags = []
+    for tag, terms in TAG_MAP.items():
+        if not any(term in text for term in terms):
+            continue
+        if tag == "Digital Twins" and not _is_manufacturing_digital_twin(text):
+            continue
+        tags.append(tag)
     for category in categories:
         if category not in tags and len(tags) < 6:
             tags.append(category)
@@ -532,7 +538,7 @@ def _text(record: dict[str, Any], abstract: str) -> str:
     ).lower()
 
 
-def _sanitize_generated(payload: dict[str, Any]) -> dict[str, Any]:
+def _sanitize_generated(payload: dict[str, Any], source_text: str = "") -> dict[str, Any]:
     categories = [category for category in payload.get("categories", []) if category in CATEGORIES][:2]
     tags = [str(tag).strip() for tag in payload.get("tags", []) if str(tag).strip()]
     score = int(payload.get("relevance_score", 5))
@@ -541,7 +547,7 @@ def _sanitize_generated(payload: dict[str, Any]) -> dict[str, Any]:
         "ai_summary_en": _normalize_generated_summary(payload.get("ai_summary_en"), _en_summary_labels()),
         "relevance_score": max(1, min(10, score)),
         "relevance_note_ko": str(payload.get("relevance_note_ko", "")).strip(),
-        "tags": _dedupe_tags(tags, categories)[:6] or _fallback_tags("", categories),
+        "tags": _dedupe_tags(tags, categories, source_text)[:6] or _fallback_tags("", categories),
         "categories": categories or ["다중재료 적층제조"],
     }
 
@@ -598,13 +604,15 @@ def _normalize_generated_summary(value: Any, labels: list[str]) -> str:
     return str(value or "").strip()
 
 
-def _dedupe_tags(tags: list[str], categories: list[str]) -> list[str]:
+def _dedupe_tags(tags: list[str], categories: list[str], source_text: str = "") -> list[str]:
     category_set = set(categories)
     seen: set[str] = set()
     cleaned = []
     for tag in tags:
         tag = _canonical_tag(tag)
         if not tag or tag in GENERIC_TAGS or tag in seen:
+            continue
+        if tag == "Digital Twins" and source_text and not _is_manufacturing_digital_twin(source_text):
             continue
         seen.add(tag)
         if tag in category_set:
@@ -614,6 +622,80 @@ def _dedupe_tags(tags: list[str], categories: list[str]) -> list[str]:
             continue
         cleaned.append(tag)
     return cleaned
+
+
+def _is_manufacturing_digital_twin(text: str) -> bool:
+    digital_twin_terms = [
+        "digital twin",
+        "digital twins",
+        "digital-twin",
+        "digital-twins",
+        "digital twinning",
+        "virtual twin",
+        "real-to-twin",
+        "twin-enabled",
+        "twin-driven",
+        "process twin",
+        "machine twin",
+    ]
+    manufacturing_terms = [
+        "manufacturing",
+        "production",
+        "additive manufacturing",
+        "3d printing",
+        "3-d printing",
+        "4d printing",
+        "4-d printing",
+        "printing",
+        "printed",
+        "fabrication",
+        "robot",
+        "robotic",
+        "automation",
+        "automated",
+        "assembly",
+        "machining",
+        "welding",
+        "factory",
+        "industrial",
+        "quality",
+        "powder bed",
+        "laser powder",
+        "lpbf",
+        "fused filament",
+        "fff",
+        "fdm",
+        "material extrusion",
+        "wire arc",
+        "waam",
+        "directed energy",
+        "binder jet",
+        "vat photopolymer",
+        "stereolithography",
+        "dlp",
+        "cnc",
+    ]
+    non_manufacturing_terms = [
+        "urban",
+        "city",
+        "cities",
+        "mobility",
+        "supply chain",
+        "pharma",
+        "healthcare",
+        "medical",
+        "agricultural",
+        "agriculture",
+        "wheat",
+        "crop",
+        "air handling",
+        "indoor",
+    ]
+    return (
+        any(term in text for term in digital_twin_terms)
+        and any(term in text for term in manufacturing_terms)
+        and not any(term in text for term in non_manufacturing_terms)
+    )
 
 
 def _canonical_tag(tag: str) -> str:

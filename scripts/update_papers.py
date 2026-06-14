@@ -209,6 +209,8 @@ def _is_plausible(record: dict[str, Any], since_year: int) -> bool:
     if year and year < since_year:
         return False
     text = f"{title} {record.get('_abstract', '')}".lower()
+    if _has_digital_twin_signal(text) and not _has_manufacturing_digital_twin_context(text):
+        return False
     additive_terms = [
         "additive manufacturing",
         "3d printing",
@@ -276,6 +278,84 @@ def _is_plausible(record: dict[str, Any], since_year: int) -> bool:
         "machine twin",
     ]
     return any(term in text for term in additive_terms) and any(term in text for term in topic_terms)
+
+
+def _has_digital_twin_signal(text: str) -> bool:
+    return any(
+        term in text
+        for term in [
+            "digital twin",
+            "digital twins",
+            "digital-twin",
+            "digital-twins",
+            "digital twinning",
+            "virtual twin",
+            "real-to-twin",
+            "twin-enabled",
+            "twin-driven",
+            "process twin",
+            "machine twin",
+        ]
+    )
+
+
+def _has_manufacturing_digital_twin_context(text: str) -> bool:
+    manufacturing_terms = [
+        "manufacturing",
+        "production",
+        "additive manufacturing",
+        "3d printing",
+        "3-d printing",
+        "4d printing",
+        "4-d printing",
+        "printing",
+        "printed",
+        "fabrication",
+        "robot",
+        "robotic",
+        "automation",
+        "automated",
+        "assembly",
+        "machining",
+        "welding",
+        "factory",
+        "industrial",
+        "quality",
+        "powder bed",
+        "laser powder",
+        "lpbf",
+        "fused filament",
+        "fff",
+        "fdm",
+        "material extrusion",
+        "wire arc",
+        "waam",
+        "directed energy",
+        "binder jet",
+        "vat photopolymer",
+        "stereolithography",
+        "dlp",
+        "cnc",
+    ]
+    non_manufacturing_terms = [
+        "urban",
+        "city",
+        "cities",
+        "mobility",
+        "supply chain",
+        "pharma",
+        "healthcare",
+        "medical",
+        "agricultural",
+        "agriculture",
+        "wheat",
+        "crop",
+        "air handling",
+        "indoor",
+    ]
+    return any(term in text for term in manufacturing_terms) and not any(
+        term in text for term in non_manufacturing_terms
+    )
 
 
 def _is_plausible_seed(record: dict[str, Any], since_year: int) -> bool:
