@@ -3651,6 +3651,23 @@
 - 이 변경은 표시/필터 UI 기준만 바꾸며 `data/papers.json`의 논문 데이터나 수집 파이프라인은 수정하지 않습니다.
 - API key, token, secret은 기록하지 않았습니다.
 
+## 2026-06-14 15:10
+
+### Change Summary
+- Raised relevance scoring for curated manufacturing-focused `Digital Twins` papers.
+- Updated the 14 currently curated `Digital Twins` records from relevance score 5 to 7.
+
+### Edited Files
+- `scripts/summarize.py`: manufacturing-focused digital twin fallback/generated summaries now receive a minimum relevance score of 7.
+- `data/papers.json`: updated current curated `Digital Twins` records and their score text from `5/10` to `7/10`.
+
+### Design Notes
+- After narrowing Digital Twins to curated manufacturing DT papers, the remaining set is intentionally closer to the tracker scope and should not sit at the lowest visible relevance tier.
+- Generic/non-manufacturing digital twin papers remain excluded from the sidebar topic.
+
+### Follow-up
+- If some DT papers should be tiered higher than 7, review them individually after checking abstracts/full metadata.
+
 ## 2026-06-14 14:58
 
 ### Change Summary

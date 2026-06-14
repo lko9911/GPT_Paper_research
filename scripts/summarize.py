@@ -524,6 +524,8 @@ def _score(record: dict[str, Any], abstract: str, categories: list[str]) -> int:
     ]
     score = 4 + sum(1 for term in core_terms if term in text)
     score += min(len(categories), 2)
+    if _is_manufacturing_digital_twin(text):
+        score = max(score, 7)
     return max(1, min(10, score))
 
 
@@ -541,13 +543,16 @@ def _text(record: dict[str, Any], abstract: str) -> str:
 def _sanitize_generated(payload: dict[str, Any], source_text: str = "") -> dict[str, Any]:
     categories = [category for category in payload.get("categories", []) if category in CATEGORIES][:2]
     tags = [str(tag).strip() for tag in payload.get("tags", []) if str(tag).strip()]
+    cleaned_tags = _dedupe_tags(tags, categories, source_text)[:6] or _fallback_tags("", categories)
     score = int(payload.get("relevance_score", 5))
+    if "Digital Twins" in cleaned_tags and source_text and _is_manufacturing_digital_twin(source_text):
+        score = max(score, 7)
     return {
         "ai_summary_ko": _normalize_generated_summary(payload.get("ai_summary_ko"), _ko_summary_labels()),
         "ai_summary_en": _normalize_generated_summary(payload.get("ai_summary_en"), _en_summary_labels()),
         "relevance_score": max(1, min(10, score)),
         "relevance_note_ko": str(payload.get("relevance_note_ko", "")).strip(),
-        "tags": _dedupe_tags(tags, categories, source_text)[:6] or _fallback_tags("", categories),
+        "tags": cleaned_tags,
         "categories": categories or ["다중재료 적층제조"],
     }
 
