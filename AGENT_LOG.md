@@ -3739,6 +3739,23 @@
 - Digital Twins is now treated as a narrower topic: `digital twin(s)`, `digital twinning`, `virtual twin`, `real-to-twin`, `twin-enabled`, `twin-driven`, `process twin`, or `machine twin`.
 - Broad `cyber-physical` papers can still be relevant to manufacturing, but they are no longer automatically shown under Digital Twins.
 
+## 2026-06-14 22:08
+
+### Change Summary
+- Changed the scheduled paper metadata update interval from every 6 hours to every 12 hours.
+
+### Edited Files
+- `.github/workflows/update-papers.yml`: changed the cron schedule from `17 */6 * * *` to `17 */12 * * *` and updated the status description passed to `scripts/write_update_status.py`.
+- `AGENT_LOG.md`: recorded the schedule change.
+
+### Operating Notes
+- The workflow can still be run manually through `workflow_dispatch`.
+- In KST, the scheduled runs are now approximately 09:17 and 21:17.
+- This change does not affect OpenAI usage, paper data, summaries, or GitHub Pages UI.
+
+### Follow-up
+- None.
+
 ## 2026-06-14 21:55
 
 ### Change Summary
