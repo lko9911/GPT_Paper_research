@@ -3651,6 +3651,21 @@
 - 이 변경은 표시/필터 UI 기준만 바꾸며 `data/papers.json`의 논문 데이터나 수집 파이프라인은 수정하지 않습니다.
 - API key, token, secret은 기록하지 않았습니다.
 
+## 2026-06-14 10:10
+
+### Change Summary
+- Added `Multi-material AM` to the Production / Manufacturing sidebar subtopics.
+
+### Edited Files
+- `assets/app.js`: updated `FIELD_SUBTOPICS["생산/제조"]` to include the existing `MMAM` canonical tag.
+- `index.html`: bumped the app script cache version for GitHub Pages.
+
+### Design Notes
+- Reused the existing `MMAM` canonical tag so the displayed Korean/English labels and filtering behavior stay consistent.
+
+### Follow-up
+- None.
+
 ## 2026-06-14 10:02
 
 ### Change Summary
