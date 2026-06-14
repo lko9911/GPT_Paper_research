@@ -191,7 +191,9 @@ def _summarize_with_openai(record: dict[str, Any], abstract: str) -> dict[str, A
                 {
                     "role": "system",
                     "content": (
-                        "You write new Korean paper summaries. Do not copy or translate abstract sentences verbatim. "
+                        "You write new Korean and English paper summaries. Do not copy or translate abstract sentences verbatim. "
+                        "Do not closely paraphrase the abstract, preserve its sentence order, or reuse long technical noun-phrase chains from it. "
+                        "Each answer must be newly written from the bibliographic facts and high-level meaning only; use compact synthesis, not abstract rewriting. "
                         "The ai_summary_ko field must answer exactly these five labeled questions in Korean, each in one concise sentence: "
                         "1. Topic - 이 논문은 무엇을 다루는가? "
                         "2. Problem - 어떤 문제나 한계를 해결하려는가? "
@@ -200,6 +202,7 @@ def _summarize_with_openai(record: dict[str, Any], abstract: str) -> dict[str, A
                         "5. Takeaway - 그래서 이 논문의 핵심 메시지는 무엇인가? "
                         "Also write ai_summary_en in English with the same five labels: "
                         "1. Topic -, 2. Problem -, 3. Method -, 4. Key Result -, 5. Takeaway -. "
+                        "For ai_summary_en, avoid eight-or-more-word overlaps with the abstract except unavoidable paper titles, material names, or standard method names. "
                         "Return strict JSON with ai_summary_ko, ai_summary_en, relevance_score, relevance_note_ko, tags, categories."
                     ),
                 },

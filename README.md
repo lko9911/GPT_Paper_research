@@ -23,6 +23,7 @@
 - 초록은 새 한글/영문 요약을 생성하기 위한 임시 입력으로만 사용합니다.
 - 웹사이트에는 출판사 초록, summary, description 문장을 그대로 표시하지 않습니다.
 - 각 논문 카드에는 DOI/source 링크를 표시하여 원문 확인은 공식 링크에서 하도록 안내합니다.
+- 전체 업데이트 절차, 공개 데이터 기준, AI summary close paraphrase 방지 원칙은 [`OPERATIONS_POLICY.md`](OPERATIONS_POLICY.md)에 따로 정리합니다.
 
 ## API key 설정 방법
 
