@@ -884,7 +884,9 @@ function applyFilters() {
     const paperTags = paper.tags || [];
     const paperVisibleTags = visibleTags(paper);
     const paperSubtopics = deriveSubtopics(paper);
-    const paperCanonicalTags = [...paperTags, ...paperVisibleTags, ...paperSubtopics].map(canonicalTopicLabel);
+    const paperCanonicalTags = [...paperTags, ...paperVisibleTags, ...paperSubtopics]
+      .map(canonicalTopicLabel)
+      .filter((topic) => topic !== "Digital Twins" || paperHasCuratedDigitalTwinTag(paper));
     const paperVenue = normalizeVenue(paper.venue);
     const paperField = deriveField(paper);
     const haystack = normalize(
@@ -1209,7 +1211,7 @@ function representativeTags(paper) {
   candidates.forEach((tag) => {
     const canonical = canonicalTopicLabel(tag);
     if (!isKnownCanonicalTag(canonical)) return;
-    if (canonical === "Digital Twins" && !paperHasManufacturingDigitalTwinSignal(paper)) return;
+    if (canonical === "Digital Twins" && !paperHasCuratedDigitalTwinTag(paper)) return;
     const key = normalizeTopicKey(canonical);
     if (!canonical || seen.has(key)) return;
     seen.add(key);
@@ -1227,7 +1229,7 @@ function paperMatchesSidebarSubtopic(paper, field, topic) {
 
 function paperHasRepresentativeTopic(paper, topic) {
   const target = normalizeTopicKey(canonicalTopicLabel(topic));
-  if (target === normalizeTopicKey("Digital Twins") && !paperHasManufacturingDigitalTwinSignal(paper)) return false;
+  if (target === normalizeTopicKey("Digital Twins")) return paperHasCuratedDigitalTwinTag(paper);
   const candidates = [
     ...(paper.tags || []),
     ...visibleTags(paper),
@@ -1367,6 +1369,7 @@ function visibleTags(paper) {
   (paper.tags || []).forEach((tag) => {
     const canonical = canonicalTopicLabel(tag);
     if (!isKnownCanonicalTag(canonical)) return;
+    if (canonical === "Digital Twins" && !paperHasCuratedDigitalTwinTag(paper)) return;
     const key = normalizeTopicKey(canonical);
     if (!canonical || seen.has(key)) return;
     seen.add(key);
@@ -1523,6 +1526,10 @@ function paperHasDigitalTwinSignal(paper) {
   ]);
 }
 
+function paperHasCuratedDigitalTwinTag(paper) {
+  return (paper.tags || []).some((tag) => String(tag || "").trim() === "Digital Twins");
+}
+
 function paperHasManufacturingDigitalTwinSignal(paper) {
   if (!paperHasDigitalTwinSignal(paper)) return false;
   const text = normalize([paper.title, paper.venue].join(" "));
@@ -1636,7 +1643,7 @@ function deriveSubtopics(paper) {
   if (hasAny(text, ["deep learning", "neural", "딥러닝"])) subtopics.add("Deep Learning");
   if (hasAny(text, ["reinforcement learning", "강화학습"])) subtopics.add("Reinforcement Learning");
   if (hasAny(text, ["process control", "monitoring", "closed-loop", "공정제어", "모니터링"])) subtopics.add("AI 공정제어");
-  if (paperHasManufacturingDigitalTwinSignal(paper)) {
+  if (paperHasCuratedDigitalTwinTag(paper)) {
     subtopics.add("Digital Twins");
   }
   if (hasAny(text, ["computational design", "generative design", "topology optimization", "design automation", "계산설계", "설계 자동화"])) {
