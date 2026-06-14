@@ -56,8 +56,8 @@ const UI_TEXT = {
       "본 사이트의 요약은 공개된 논문 메타데이터 및 초록을 바탕으로 AI가 새로 작성한 한글 요약입니다. 원문 및 정확한 내용은 DOI 링크를 통해 확인하세요.",
     sideTitle: "분야 및 서브 토픽",
     totalPapers: "논문수",
-    weeklyAdded: "최근 7일 추가",
     latestRunAdded: "최근 실행",
+    weeklyAddedShort: "7일",
     venueCount: "게재지",
     yearRange: "조사연도",
     currentUpdate: "현재 / 갱신",
@@ -127,8 +127,8 @@ const UI_TEXT = {
       "Summaries on this site are newly written AI summaries based on public paper metadata and abstracts. Check the DOI link for the original and authoritative content.",
     sideTitle: "Fields and Subtopics",
     totalPapers: "Papers",
-    weeklyAdded: "Added in 7 days",
-    latestRunAdded: "latest run",
+    latestRunAdded: "latest",
+    weeklyAddedShort: "7d",
     venueCount: "Venues",
     yearRange: "Years",
     currentUpdate: "Now / Updated",
@@ -372,7 +372,6 @@ const els = {
   sideTopicNav: document.querySelector("#side-topic-nav"),
   venueBoard: document.querySelector("#venue-board"),
   total: document.querySelector("#stat-total"),
-  weeklyAdded: document.querySelector("#stat-weekly-added"),
   venues: document.querySelector("#stat-venues"),
   years: document.querySelector("#stat-years"),
   updated: document.querySelector("#stat-updated"),
@@ -482,10 +481,9 @@ function applyStaticLanguage() {
   setText(".notice-soft", t("noticeSoft"));
   setText(".sidebar strong", t("sideTitle"));
   setText(".stats article:nth-child(1) strong", t("totalPapers"));
-  setText(".stats article:nth-child(2) strong", t("weeklyAdded"));
-  setText(".stats article:nth-child(3) strong", t("venueCount"));
-  setText(".stats article:nth-child(4) strong", t("yearRange"));
-  setText(".stats article:nth-child(5) strong", t("currentUpdate"));
+  setText(".stats article:nth-child(2) strong", t("venueCount"));
+  setText(".stats article:nth-child(3) strong", t("yearRange"));
+  setText(".stats article:nth-child(4) strong", t("currentUpdate"));
   setText(".search-label-text", t("search"));
   setText(".controls label:nth-child(2) span", t("field"));
   setText(".controls label:nth-child(3) span", t("tagSubtopic"));
@@ -752,10 +750,7 @@ function updateStats() {
   const lastRunAt = state.siteMeta && state.siteMeta.last_run_at_utc;
   const locale = state.language === "ko" ? "ko-KR" : "en-US";
 
-  if (els.total) {
-    els.total.textContent = state.papers.length.toLocaleString(locale);
-  }
-  renderWeeklyAddedStat(lastRunAt);
+  renderTotalStat(lastRunAt);
   const venues = new Set(state.papers.map((paper) => normalizeVenue(paper.venue)).filter(Boolean));
   if (els.venues) {
     els.venues.textContent = venues.size.toLocaleString(locale);
@@ -815,22 +810,28 @@ function renderUpdatedStat(lastRunAt) {
   els.updated.innerHTML = `${escapeHtml(now.date)}<small>${escapeHtml(now.time)} KST · ${escapeHtml(updatedLabel)} ${escapeHtml(lastRun.time)} KST</small>`;
 }
 
-function renderWeeklyAddedStat(lastRunAt) {
-  if (!els.weeklyAdded) return;
+function renderTotalStat(lastRunAt) {
+  if (!els.total) return;
   const locale = state.language === "ko" ? "ko-KR" : "en-US";
+  const total = state.papers.length;
   const weeklyCount = countRecentlyAddedPapers(state.papers, lastRunAt, 7);
   const latestAdded = Number(state.siteMeta && state.siteMeta.papers_added);
-  const latestText = Number.isFinite(latestAdded)
-    ? `<small>${escapeHtml(formatLatestAddedText(latestAdded, locale))}</small>`
-    : "";
-  els.weeklyAdded.classList.add("stat-with-note");
-  els.weeklyAdded.innerHTML = `${escapeHtml(weeklyCount.toLocaleString(locale))}${latestText}`;
+  const deltaText = formatPaperDeltaText(total, weeklyCount, latestAdded, locale);
+  els.total.classList.add("stat-with-note");
+  els.total.innerHTML = `${escapeHtml(total.toLocaleString(locale))}${deltaText ? `<small>${escapeHtml(deltaText)}</small>` : ""}`;
 }
 
-function formatLatestAddedText(count, locale) {
-  const countText = count.toLocaleString(locale);
-  if (state.language === "ko") return `${t("latestRunAdded")} +${countText}`;
-  return `+${countText} ${t("latestRunAdded")}`;
+function formatPaperDeltaText(total, weeklyCount, latestAdded, locale) {
+  const parts = [];
+  if (Number.isFinite(latestAdded) && latestAdded > 0) {
+    const countText = latestAdded.toLocaleString(locale);
+    parts.push(state.language === "ko" ? `${t("latestRunAdded")} +${countText}` : `+${countText} ${t("latestRunAdded")}`);
+  }
+  if (weeklyCount > 0 && weeklyCount < total) {
+    const countText = weeklyCount.toLocaleString(locale);
+    parts.push(state.language === "ko" ? `${t("weeklyAddedShort")} +${countText}` : `+${countText} / ${t("weeklyAddedShort")}`);
+  }
+  return parts.join(" · ");
 }
 
 function countRecentlyAddedPapers(papers, lastRunAt, days) {
