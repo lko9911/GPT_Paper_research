@@ -1209,7 +1209,7 @@ function representativeTags(paper) {
   candidates.forEach((tag) => {
     const canonical = canonicalTopicLabel(tag);
     if (!isKnownCanonicalTag(canonical)) return;
-    if (canonical === "Digital Twins" && !paperHasDigitalTwinSignal(paper)) return;
+    if (canonical === "Digital Twins" && !paperHasManufacturingDigitalTwinSignal(paper)) return;
     const key = normalizeTopicKey(canonical);
     if (!canonical || seen.has(key)) return;
     seen.add(key);
@@ -1227,7 +1227,7 @@ function paperMatchesSidebarSubtopic(paper, field, topic) {
 
 function paperHasRepresentativeTopic(paper, topic) {
   const target = normalizeTopicKey(canonicalTopicLabel(topic));
-  if (target === normalizeTopicKey("Digital Twins") && !paperHasDigitalTwinSignal(paper)) return false;
+  if (target === normalizeTopicKey("Digital Twins") && !paperHasManufacturingDigitalTwinSignal(paper)) return false;
   const candidates = [
     ...(paper.tags || []),
     ...visibleTags(paper),
@@ -1523,6 +1523,66 @@ function paperHasDigitalTwinSignal(paper) {
   ]);
 }
 
+function paperHasManufacturingDigitalTwinSignal(paper) {
+  if (!paperHasDigitalTwinSignal(paper)) return false;
+  const text = normalize([paper.title, paper.venue].join(" "));
+  const excludedNonManufacturing = hasAny(text, [
+    "urban",
+    "city",
+    "cities",
+    "mobility",
+    "supply chain",
+    "pharma",
+    "healthcare",
+    "medical",
+    "agricultural",
+    "agriculture",
+    "wheat",
+    "crop",
+    "air handling",
+    "indoor",
+  ]);
+  const domainSignal = hasAny(text, [
+    "manufacturing",
+    "production",
+    "additive manufacturing",
+    "3d printing",
+    "3-d printing",
+    "4d printing",
+    "4-d printing",
+    "printing",
+    "printed",
+    "fabrication",
+    "robot",
+    "robotic",
+    "automation",
+    "automated",
+    "assembly",
+    "machining",
+    "welding",
+    "factory",
+    "industrial",
+    "quality",
+    "powder bed",
+    "laser powder",
+    "lpbf",
+    "fused filament",
+    "fff",
+    "fdm",
+    "material extrusion",
+    "wire arc",
+    "waam",
+    "directed energy",
+    "ded",
+    "binder jet",
+    "vat photopolymer",
+    "stereolithography",
+    "dlp",
+    "cnc",
+  ]);
+  return domainSignal && !excludedNonManufacturing;
+}
+
 function deriveSubtopics(paper) {
   const text = normalize(
     [
@@ -1576,7 +1636,7 @@ function deriveSubtopics(paper) {
   if (hasAny(text, ["deep learning", "neural", "딥러닝"])) subtopics.add("Deep Learning");
   if (hasAny(text, ["reinforcement learning", "강화학습"])) subtopics.add("Reinforcement Learning");
   if (hasAny(text, ["process control", "monitoring", "closed-loop", "공정제어", "모니터링"])) subtopics.add("AI 공정제어");
-  if (paperHasDigitalTwinSignal(paper)) {
+  if (paperHasManufacturingDigitalTwinSignal(paper)) {
     subtopics.add("Digital Twins");
   }
   if (hasAny(text, ["computational design", "generative design", "topology optimization", "design automation", "계산설계", "설계 자동화"])) {
