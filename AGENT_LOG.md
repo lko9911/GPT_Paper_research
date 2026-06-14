@@ -3651,6 +3651,23 @@
 - 이 변경은 표시/필터 UI 기준만 바꾸며 `data/papers.json`의 논문 데이터나 수집 파이프라인은 수정하지 않습니다.
 - API key, token, secret은 기록하지 않았습니다.
 
+## 2026-06-14 14:58
+
+### Change Summary
+- Fixed the visible `Digital Twins` sidebar count not changing after data cleanup.
+- The sidebar and tag filter now count `Digital Twins` only when a paper has the exact curated `Digital Twins` tag, instead of counting every title-derived manufacturing digital-twin signal.
+
+### Edited Files
+- `assets/app.js`: made `Digital Twins` representative/sidebar/filter matching use `paperHasCuratedDigitalTwinTag()`.
+- `index.html`: bumped the app script cache version for GitHub Pages.
+
+### Design Notes
+- The previous count stayed high because `deriveSubtopics()` inferred Digital Twins from titles and old metadata even after direct tag cleanup.
+- This keeps broad title search available while making the sidebar topic count reflect curated DT membership.
+
+### Follow-up
+- If more DT papers should be included, add the exact `Digital Twins` tag during curation rather than relying on automatic title inference.
+
 ## 2026-06-14 14:42
 
 ### Change Summary
