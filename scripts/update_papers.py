@@ -227,8 +227,8 @@ def _is_plausible(record: dict[str, Any], since_year: int) -> bool:
         "materials synthesis",
         "digital twin",
         "digital twins",
-        "cyber-physical",
-        "cyber physical",
+        "digital twinning",
+        "virtual twin",
     ]
     topic_terms = [
         "multi-material",
@@ -267,8 +267,11 @@ def _is_plausible(record: dict[str, Any], since_year: int) -> bool:
         "bayesian optimization",
         "digital twin",
         "digital twins",
-        "cyber-physical",
-        "cyber physical",
+        "digital twinning",
+        "virtual twin",
+        "real-to-twin",
+        "twin-enabled",
+        "twin-driven",
         "process twin",
         "machine twin",
     ]
