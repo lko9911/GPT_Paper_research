@@ -3651,6 +3651,21 @@
 - 이 변경은 표시/필터 UI 기준만 바꾸며 `data/papers.json`의 논문 데이터나 수집 파이프라인은 수정하지 않습니다.
 - API key, token, secret은 기록하지 않았습니다.
 
+## 2026-06-14 09:53
+
+### Change Summary
+- Added a browser tab favicon for the GitHub Pages site.
+
+### Edited Files
+- `assets/favicon.svg`: new compact research/manufacturing themed SVG icon.
+- `index.html`: linked the SVG favicon in the document head.
+
+### Design Notes
+- Used an SVG favicon so it remains crisp across browser tab and bookmark sizes without adding multiple raster assets.
+
+### Follow-up
+- None.
+
 ## 2026-06-14 09:47
 
 ### Change Summary
