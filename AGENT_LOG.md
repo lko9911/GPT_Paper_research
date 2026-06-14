@@ -3651,6 +3651,23 @@
 - 이 변경은 표시/필터 UI 기준만 바꾸며 `data/papers.json`의 논문 데이터나 수집 파이프라인은 수정하지 않습니다.
 - API key, token, secret은 기록하지 않았습니다.
 
+## 2026-06-14 15:22
+
+### Change Summary
+- Raised relevance scores for broader manufacturing-focused digital twin papers that were still scored too low.
+- Updated 113 current records with clear manufacturing/smart manufacturing/AM/robotics/process-optimization digital-twin signals from relevance score 5 to 7.
+
+### Edited Files
+- `scripts/summarize.py`: generated summaries now receive a minimum score of 7 whenever the source metadata matches the manufacturing digital twin rule, even if the exact curated `Digital Twins` tag is not present.
+- `data/papers.json`: updated current manufacturing-focused digital twin records and score text to `7/10`.
+
+### Design Notes
+- This is a score calibration change, not a sidebar taxonomy expansion.
+- The `Digital Twins` sidebar count still uses exact curated `Digital Twins` tags, while relevance scoring now recognizes broader in-scope manufacturing DT papers.
+
+### Follow-up
+- Review individual high-value manufacturing DT papers later if some should be promoted above 7.
+
 ## 2026-06-14 15:10
 
 ### Change Summary
