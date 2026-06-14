@@ -21,7 +21,7 @@ const FIELD_ORDER = [
 
 const FIELD_SUBTOPICS = {
   "생산/제조": ["금속/합금 제조", "복합재/소재 제조", "공정 최적화"],
-  "3D 프린팅": ["DLP", "Material Switching", "Toolpath", "FDM/Material extrusion"],
+  "3D 프린팅": ["Additive manufacturing", "FGAM", "DLP", "Material Switching", "Toolpath", "FDM/Material extrusion"],
   "4D 프린팅": ["LCE", "메타물질", "Active materials"],
   "로봇틱스(생산제조)": ["제조 자동화", "Robot-based Manufacturing"],
   "AI 생산제조": ["Self-driving Labs", "Digital Twins", "제조 자동화", "Design Automation", "Machine Learning"],

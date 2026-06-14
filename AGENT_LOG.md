@@ -3651,6 +3651,21 @@
 - 이 변경은 표시/필터 UI 기준만 바꾸며 `data/papers.json`의 논문 데이터나 수집 파이프라인은 수정하지 않습니다.
 - API key, token, secret은 기록하지 않았습니다.
 
+## 2026-06-14 10:02
+
+### Change Summary
+- Added `Functionally Graded AM` and `Additive Manufacturing` to the 3D Printing sidebar subtopics.
+
+### Edited Files
+- `assets/app.js`: updated `FIELD_SUBTOPICS["3D 프린팅"]` to include `Additive manufacturing` and `FGAM`.
+- `index.html`: bumped the app script cache version for GitHub Pages.
+
+### Design Notes
+- Reused the existing canonical tags and labels, so Korean/English display names and filtering remain consistent with the current taxonomy.
+
+### Follow-up
+- None.
+
 ## 2026-06-14 09:53
 
 ### Change Summary
