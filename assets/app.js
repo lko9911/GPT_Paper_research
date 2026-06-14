@@ -56,8 +56,8 @@ const UI_TEXT = {
       "본 사이트의 요약은 공개된 논문 메타데이터 및 초록을 바탕으로 AI가 새로 작성한 한글 요약입니다. 원문 및 정확한 내용은 DOI 링크를 통해 확인하세요.",
     sideTitle: "분야 및 서브 토픽",
     totalPapers: "논문수",
-    latestRunAdded: "최근 실행",
-    weeklyAddedShort: "7일",
+    latestRunAdded: "이번 업데이트",
+    weeklyAddedShort: "주간 신규",
     venueCount: "게재지",
     yearRange: "조사연도",
     currentUpdate: "현재 / 갱신",
@@ -127,8 +127,8 @@ const UI_TEXT = {
       "Summaries on this site are newly written AI summaries based on public paper metadata and abstracts. Check the DOI link for the original and authoritative content.",
     sideTitle: "Fields and Subtopics",
     totalPapers: "Papers",
-    latestRunAdded: "latest",
-    weeklyAddedShort: "7d",
+    latestRunAdded: "this update",
+    weeklyAddedShort: "weekly new",
     venueCount: "Venues",
     yearRange: "Years",
     currentUpdate: "Now / Updated",
@@ -827,9 +827,9 @@ function formatPaperDeltaText(total, weeklyCount, latestAdded, locale) {
     const countText = latestAdded.toLocaleString(locale);
     parts.push(state.language === "ko" ? `${t("latestRunAdded")} +${countText}` : `+${countText} ${t("latestRunAdded")}`);
   }
-  if (weeklyCount > 0 && weeklyCount < total) {
+  if (weeklyCount > 0) {
     const countText = weeklyCount.toLocaleString(locale);
-    parts.push(state.language === "ko" ? `${t("weeklyAddedShort")} +${countText}` : `+${countText} / ${t("weeklyAddedShort")}`);
+    parts.push(state.language === "ko" ? `${t("weeklyAddedShort")} +${countText}` : `+${countText} ${t("weeklyAddedShort")}`);
   }
   return parts.join(" · ");
 }
