@@ -3650,3 +3650,21 @@
 ### 주의사항
 - 이 변경은 표시/필터 UI 기준만 바꾸며 `data/papers.json`의 논문 데이터나 수집 파이프라인은 수정하지 않습니다.
 - API key, token, secret은 기록하지 않았습니다.
+
+## 2026-06-14 09:40
+
+### Change Summary
+- Simplified the headline stats panel after the weekly-added count duplicated the total paper count.
+- Removed the separate "recent 7 days" stats card and folded new-paper deltas into the Papers card.
+
+### Edited Files
+- `index.html`: removed the weekly stats card and bumped asset cache versions.
+- `assets/app.js`: renders latest-run and weekly deltas as a compact note under the total paper count; hides the weekly count when it equals the total.
+- `assets/style.css`: restored the stats grid to four cards.
+
+### Design Notes
+- The current dataset has all 793 papers within the weekly window, so showing another 793 was visually redundant.
+- The Papers card now shows the total as the primary number, with a small delta line such as `recent run +20`; weekly additions appear only when they add useful information.
+
+### Follow-up
+- None.
