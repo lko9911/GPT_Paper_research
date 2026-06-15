@@ -135,6 +135,11 @@ GENERIC_TAGS = {"적층제조", "문헌추적", "메타데이터", "3D 프린팅
 TAG_ALIASES = {
     "다중재료": "MMAM",
     "다중 재료": "MMAM",
+    "Multi-material AM": "MMAM",
+    "Multi-material": "MMAM",
+    "Multimaterial": "MMAM",
+    "multi-material": "MMAM",
+    "multimaterial": "MMAM",
     "기능성 구배": "FGAM",
     "디지털 제작": "Digital fabrication",
     "툴패스 전략": "Toolpath strategy",

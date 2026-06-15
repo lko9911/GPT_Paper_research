@@ -3983,6 +3983,43 @@
 
 ### Follow-up
 - None.
+# 2026-06-15 15:13
+## 변경 요약
+- `MMAM` 서브토픽 카운트가 원본 `tags`에 `MMAM`이 없는 논문까지 포함하는 이유를 검증했습니다.
+- 원인은 왼쪽 패널이 raw tag count가 아니라 제목/메타데이터 기반 파생 topic count를 사용하기 때문이었습니다.
+- 사용자 혼선을 줄이기 위해, 제목/메타데이터에 명시적으로 `multi-material`, `multimaterial`, `multi material` 신호가 있는 기존 논문에는 `MMAM` canonical tag를 데이터에 추가했습니다.
+
+## 수정/생성한 파일
+- `data/papers.json`: 100편의 태그를 정규화했습니다. `MMAM` 86건, `Volumetric AM` 7건, `Soft robotics` 12건을 명시적 메타데이터 신호 기반으로 보강했고 일부 alias를 canonical tag로 통합했습니다.
+- `scripts/summarize.py`: 향후 OpenAI/fallback 요약 결과에서 `Multi-material AM`, `Multimaterial`, `multi-material` 등이 다시 분산되지 않도록 `MMAM` alias를 추가했습니다.
+- `AGENT_LOG.md`: 이번 검증과 정규화 기준을 기록했습니다.
+
+## 구현한 기능
+- MMAM 서브토픽에 잡히는 논문은 데이터의 `tags`에도 `MMAM`이 들어가도록 맞췄습니다.
+- 기존 논문 중 메타데이터상 MMAM 신호가 있는데 `MMAM` 태그가 없는 항목은 0건으로 정리되었습니다.
+- JSON schema 및 저작권 정책 필드(`raw_abstract_displayed=false`, `pdf_stored=false`)를 유지했습니다.
+
+## 설계 결정
+- `MMAM`을 삭제하지 않았습니다. 제목에 `multi-material` 또는 `multimaterial`이 명시된 논문은 이 트래커의 핵심 축과 직접 연결되므로 유지 가치가 높다고 판단했습니다.
+- 다만 raw tag와 topic count가 다르게 보이는 혼선을 줄이기 위해 데이터 태그를 canonical topic과 일치시켰습니다.
+- 태그는 최대 6개 제한을 유지했습니다.
+
+## 검증 결과
+- 현재 논문 수: 873편
+- `MMAM` 태그 보유 논문: 97편
+- 제목/메타데이터에 MMAM 신호가 있으나 `MMAM` 태그가 없는 논문: 0편
+- `python -m json.tool data/papers.json` 통과
+- `python -m py_compile scripts/summarize.py` 통과
+- `git diff --check` 통과
+
+## 남은 작업
+- GitHub Pages 반영 후 MMAM 서브토픽 카운트와 논문 카드 태그가 직관적으로 일치하는지 화면에서 확인합니다.
+- 필요하면 `Additive Manufacturing`, `적층 제조`, `디지털 트윈` 등 다른 broad/alias 태그도 같은 방식으로 데이터 레벨에서 추가 정규화할 수 있습니다.
+
+## 주의사항
+- OpenAI API는 사용하지 않았습니다.
+- raw abstract 또는 PDF 저장/표시는 하지 않았습니다.
+
 # 2026-06-15 15:08
 ## 변경 요약
 - 논문 카드에 표시되는 대표 태그가 너무 넓거나 중복되는 문제를 정리했습니다.
