@@ -1,5 +1,34 @@
 # AGENT_LOG
 
+## 2026-06-15 14:36
+
+### 변경 요약
+- 사용자의 요청에 따라 OpenAI 없이 수동 논문 업데이트를 실행했습니다.
+- 전체 업데이트는 오래 걸려 타임아웃 후 백그라운드 완료되었지만 데이터 변경이 없었고, 이후 신규 volumetric/soft robotics 검색어만 좁혀 다시 실행해 데이터를 갱신했습니다.
+
+### 수정/생성한 파일
+- `data/papers.json`: curated 논문 수가 812편에서 958편으로 증가했습니다.
+- `data/archive_papers.json`: archive 논문 수가 1688편에서 1696편으로 증가했습니다.
+- `data/site_meta.json`: 마지막 수동 수집 시각, raw candidate 수, curated/archive 수, 추가 논문 수를 갱신했습니다.
+- `AGENT_LOG.md`: 이번 수동 업데이트 실행과 검증 결과를 기록했습니다.
+
+### 구현한 기능
+- `Dispensing Volumetric Additive Manufacturing`이 메인 논문 목록에 추가되었습니다.
+- `Versatile 3D-printed fin-ray effect soft robotic fingers: lightweight optimization and performance analysis`가 메인 논문 목록에 추가되었습니다.
+- 두 논문 모두 OpenAI 없이 metadata/fallback summary 상태로 저장되었습니다.
+
+### 설계 결정
+- GitHub CLI가 설치되어 있지 않아 GitHub Actions workflow_dispatch 대신 로컬에서 동일한 OpenAI 비활성 설정으로 업데이트를 실행했습니다.
+- `UPDATE_STATUS.md`는 GitHub Actions 실행 상태 파일이므로 로컬 수동 업데이트로 임의 갱신하지 않았습니다.
+
+### 남은 작업
+- 배포 후 사이트에서 두 논문이 검색되는지 확인합니다.
+- 이번 좁힌 수동 실행으로 volumetric AM/soft robotics 주변 논문도 다수 들어왔으므로, 필요하면 추후 검색어 또는 relevance 필터를 더 조정합니다.
+
+### 주의사항
+- 이 수동 업데이트는 OpenAI API를 호출하지 않았습니다.
+- 검증 결과 저장 데이터에 `_abstract` 필드가 없고, `raw_abstract_displayed=false`, `pdf_stored=false`가 유지됩니다.
+
 ## 2026-06-15 00:20
 
 ### 변경 요약
