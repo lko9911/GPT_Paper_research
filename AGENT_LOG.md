@@ -1,5 +1,37 @@
 # AGENT_LOG
 
+## 2026-06-15 15:05
+
+### 변경 요약
+- 사이트가 무거워졌다는 피드백에 따라 2026-06-15 수동 업데이트와 기존 curated 목록을 함께 검수했습니다.
+- biomedical/bioprinting/dental/food/electronics/photovoltaics/prosthetics 등 명확히 범위 밖인 논문을 archive로 내리고, 향후 재유입을 줄이도록 검색어와 필터를 조정했습니다.
+
+### 수정/생성한 파일
+- `data/papers.json`: 명확히 범위 밖인 논문 85편을 메인 curated 목록에서 제거했습니다.
+- `data/archive_papers.json`: 제거한 논문 85편을 `manual_scope_cleanup` archive reason으로 보존했습니다.
+- `data/site_meta.json`: curated/archive/raw candidate 수와 cleanup metadata를 갱신했습니다.
+- `data/queries.json`: 너무 넓었던 soft robotics 검색어를 제거하고 fin-ray/soft robotic finger 중심의 좁은 검색어로 교체했습니다.
+- `scripts/update_papers.py`: title/venue 기반 off-scope application filter를 추가했습니다.
+- `AGENT_LOG.md`: 이번 정리 작업과 기준을 기록했습니다.
+
+### 구현한 기능
+- `Dispensing Volumetric Additive Manufacturing`와 `Versatile 3D-printed fin-ray effect soft robotic fingers`는 유지했습니다.
+- 의료/치과/바이오프린팅/식품/농업/프린티드 전자/광전지 등 트래커 범위 밖 항목은 메인 표시 목록에서 내려갔습니다.
+- 제거된 논문은 삭제하지 않고 archive에 보존해 필요하면 복구할 수 있습니다.
+
+### 설계 결정
+- 완전 삭제가 아니라 archive 이동을 선택했습니다. 큐레이션 기준이 바뀌면 되돌릴 수 있어야 하기 때문입니다.
+- off-scope 필터는 abstract가 아니라 title/venue 중심으로 적용했습니다. 핵심 VAM/4D 논문이 초록에서 biomedical application을 언급했다는 이유만으로 빠지는 일을 줄이기 위해서입니다.
+- soft robotics 검색은 broad gripper 전체가 아니라 fin-ray/3D-printed soft robotic finger 중심으로 좁혔습니다.
+
+### 남은 작업
+- 배포 후 사이트 속도와 검색 결과가 나아졌는지 확인합니다.
+- 애매한 40여 편은 필요 시 추가 수동 검수합니다.
+
+### 주의사항
+- 이 정리 작업은 OpenAI API를 호출하지 않았습니다.
+- PDF나 raw abstract는 저장하지 않았습니다.
+
 ## 2026-06-15 14:36
 
 ### 변경 요약
