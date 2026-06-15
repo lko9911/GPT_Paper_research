@@ -205,3 +205,4 @@ GitHub Pages에서 동작 가능한 정적 논문 큐레이션 사이트와 GitH
 - `Deep Learning` and `Reinforcement Learning` are normalized into `Machine Learning` for this tracker, because the site is a manufacturing literature tracker rather than a general AI taxonomy browser.
 - Korean/English variants of soft robotics terms are normalized into `Soft robotics`.
 - `MMAM` is treated as a canonical topic tag, not only a raw API tag. Existing papers with explicit title/metadata signals such as `multi-material` or `multimaterial` were normalized so their `tags` field includes `MMAM`.
+- Sidebar topic counts should be based on stable metadata signals only: title, venue, canonical tags, and categories. AI summaries and relevance notes are display text and must not drive sidebar bucket counts, because generic tracker wording can over-count broad topics such as `MMAM`.

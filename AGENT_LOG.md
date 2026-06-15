@@ -3983,6 +3983,48 @@
 
 ### Follow-up
 - None.
+# 2026-06-15 15:17
+## 변경 요약
+- 3D Printing 하위에서 `Multi-material AM`이 288편으로 과도하게 카운팅되고, `FDM`, `Additive Manufacturing` 등이 0으로 보이는 문제를 조사했습니다.
+- 원인은 프론트엔드의 `deriveSubtopics()`와 material-extrusion 대표 태그 선택 로직이 `ai_summary_ko`, `relevance_note_ko`까지 분류 근거로 사용했기 때문이었습니다.
+- 요약/관련성 문장은 설명용 텍스트이므로, sidebar bucket 및 대표 태그 판정에서 제외했습니다.
+
+## 수정/생성한 파일
+- `assets/app.js`: `deriveSubtopics()`와 `collapseMaterialExtrusionTags()`가 제목, venue, 실제 tags, categories만 사용하도록 수정했습니다.
+- `index.html`: GitHub Pages 캐시 무효화를 위해 `assets/app.js` query version을 `20260615-0120`으로 갱신했습니다.
+- `AGENT_LOG.md`: 이번 원인 분석과 수정 기준을 기록했습니다.
+
+## 구현한 기능
+- 요약문에 `MMAM 관점`, `다중재료 트래커` 같은 문구가 있어도 그것만으로 MMAM 서브토픽에 들어가지 않도록 했습니다.
+- 3D Printing 하위 토픽 카운트가 실제 메타데이터/태그 기반으로 분산되도록 했습니다.
+
+## 검증 결과
+- 수정 후 로컬 데이터 기준 예상 3D Printing 하위 카운트:
+  - Multi-material AM: 81
+  - Functionally Graded AM: 19
+  - Volumetric AM: 54
+  - DLP: 16
+  - FDM: 18
+  - Toolpath Strategy: 12
+  - Material Switching: 2
+  - Additive Manufacturing: 94
+  - Others: 1
+- `python -m py_compile scripts/summarize.py` 통과
+- `python -m json.tool data/papers.json` 통과
+- `git diff --check` 통과
+
+## 설계 결정
+- 논문 요약과 관련성 설명은 사용자에게 보여주는 해석 텍스트이며, 카운트/필터링의 1차 근거로 쓰지 않습니다.
+- 카운트/필터링은 제목, venue, canonical tags, categories 같은 안정적인 메타데이터 기반 신호로 제한합니다.
+
+## 남은 작업
+- GitHub Pages 반영 후 왼쪽 패널의 3D Printing 하위 카운트가 위 예상치와 비슷하게 보이는지 확인합니다.
+
+## 주의사항
+- OpenAI API는 사용하지 않았습니다.
+- raw abstract 또는 PDF 저장/표시는 하지 않았습니다.
+- 데이터 파일은 이번 수정에서 변경하지 않았습니다.
+
 # 2026-06-15 15:13
 ## 변경 요약
 - `MMAM` 서브토픽 카운트가 원본 `tags`에 `MMAM`이 없는 논문까지 포함하는 이유를 검증했습니다.

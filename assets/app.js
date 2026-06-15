@@ -1298,8 +1298,6 @@ function collapseMaterialExtrusionTags(tags, paper) {
       paper.venue,
       (paper.tags || []).join(" "),
       (paper.categories || []).join(" "),
-      paper.ai_summary_ko,
-      paper.relevance_note_ko,
     ].join(" ")
   );
 
@@ -1667,8 +1665,6 @@ function deriveSubtopics(paper) {
       paper.venue,
       (paper.tags || []).join(" "),
       (paper.categories || []).join(" "),
-      paper.ai_summary_ko,
-      paper.relevance_note_ko,
     ].join(" ")
   );
   const subtopics = new Set();
