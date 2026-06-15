@@ -1,5 +1,32 @@
 # AGENT_LOG
 
+## 2026-06-15 00:20
+
+### 변경 요약
+- `Dispensing Volumetric Additive Manufacturing`와 `Versatile 3D-printed fin-ray effect soft robotic fingers` 계열 논문이 다음 자동 수집에서 잡히도록 검색어와 규칙 기반 필터를 보강했습니다.
+
+### 수정/생성한 파일
+- `data/queries.json`: volumetric AM/photopolymerization/computed axial lithography/tomographic printing 계열 검색어와 3D printed soft robotic finger/fin-ray/soft gripper 계열 검색어를 추가했습니다.
+- `scripts/update_papers.py`: `_is_plausible()` topic terms에 volumetric AM, computed axial lithography, tomographic printing, photopolymerization, soft robotics, fin-ray, soft gripper 계열 신호를 추가했습니다.
+- `scripts/summarize.py`: 신규 계열 논문에 `Volumetric AM`, `Soft robotics` 태그가 붙을 수 있도록 태그 맵과 카테고리 alias를 보강했습니다.
+- `AGENT_LOG.md`: 이번 검색/필터 보강 작업을 기록했습니다.
+
+### 구현한 기능
+- Crossref에서 잡히던 두 논문이 검색어와 plausibility 필터를 통과할 수 있게 되었습니다.
+- 두 논문 계열이 들어왔을 때 기존의 MMAM/Material distribution 같은 부정확한 단일 태그에만 의존하지 않고 더 명확한 태그를 받을 수 있습니다.
+
+### 설계 결정
+- DOI를 seed로 고정하는 대신 검색어와 규칙을 보강했습니다. 같은 계열의 후속 논문까지 자동으로 잡기 위해서입니다.
+- OpenAI 요약은 실행하지 않고, 다음 정기 수집 시 metadata/fallback summary로 들어오도록 유지했습니다.
+
+### 남은 작업
+- 다음 scheduled run 이후 두 논문이 `data/papers.json`에 들어왔는지 확인합니다.
+- 필요하면 DOI를 `data/seed_dois.json`에 추가해 대표 논문으로 고정 추적할 수 있습니다.
+
+### 주의사항
+- 이 수정은 OpenAI API를 호출하지 않습니다.
+- 논문 수집 스크립트도 실행하지 않았습니다.
+
 ## 2026-06-15 00:00
 
 ### 변경 요약

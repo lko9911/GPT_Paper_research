@@ -50,7 +50,25 @@ TAG_MAP = {
     "Path planning": ["path planning", "graph search", "routing"],
     "Machine learning": ["machine learning", "deep learning", "neural", "artificial intelligence"],
     "DLP": ["dlp", "digital light processing", "vat photopolymerization", "vat photopolymerisation"],
+    "Volumetric AM": [
+        "volumetric additive manufacturing",
+        "volumetric printing",
+        "computed axial lithography",
+        "tomographic printing",
+        "tomographic volumetric",
+    ],
     "FDM/Material extrusion": ["fdm", "fused deposition", "material extrusion", "filament"],
+    "Soft robotics": [
+        "soft robotic",
+        "soft robotics",
+        "soft gripper",
+        "soft robotic finger",
+        "soft robotic fingers",
+        "fin-ray",
+        "fin ray",
+        "pneumatic actuator",
+        "bioinspired gripper",
+    ],
     "Self-driving Labs": [
         "self-driving lab",
         "self driving lab",
@@ -109,6 +127,7 @@ TAG_CATEGORY_ALIASES = {
     "MMAM": "다중재료 적층제조",
     "FGAM": "기능성 구배 적층제조",
     "Machine learning": "적층제조를 위한 AI 및 머신러닝",
+    "Soft robotics": "계산설계",
 }
 
 GENERIC_TAGS = {"적층제조", "문헌추적", "메타데이터", "3D 프린팅"}
