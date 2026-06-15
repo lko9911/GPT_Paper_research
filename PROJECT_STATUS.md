@@ -204,3 +204,4 @@ GitHub Pages에서 동작 가능한 정적 논문 큐레이션 사이트와 GitH
 - Broad or low-signal tags such as `Additive Manufacturing`, `Review`, `Sustainability`, `Digital fabrication`, `Material behavior`, and `Reusability` are retained for fallback/filtering but are pushed behind more specific tags on paper cards.
 - `Deep Learning` and `Reinforcement Learning` are normalized into `Machine Learning` for this tracker, because the site is a manufacturing literature tracker rather than a general AI taxonomy browser.
 - Korean/English variants of soft robotics terms are normalized into `Soft robotics`.
+- `MMAM` is treated as a canonical topic tag, not only a raw API tag. Existing papers with explicit title/metadata signals such as `multi-material` or `multimaterial` were normalized so their `tags` field includes `MMAM`.
