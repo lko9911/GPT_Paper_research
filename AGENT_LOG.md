@@ -3983,6 +3983,38 @@
 
 ### Follow-up
 - None.
+# 2026-06-15 15:08
+## 변경 요약
+- 논문 카드에 표시되는 대표 태그가 너무 넓거나 중복되는 문제를 정리했습니다.
+- `Deep Learning`, `Reinforcement Learning`, `딥러닝`, `강화 학습` 등은 이 트래커 관점에서 `Machine Learning`으로 통합했습니다.
+- `소프트 로봇`, `소프트 액추에이터`, `Soft Robotics` 등은 `Soft robotics`로 통합했습니다.
+
+## 수정/생성한 파일
+- `assets/app.js`: 대표 태그 우선순위와 low-signal 태그 목록을 추가하고, 카드 표시 태그 정렬/선택 로직을 개선했습니다.
+- `scripts/summarize.py`: 정기 업데이트 및 수동 요약 정규화에서 중복 AI/soft robotics 태그가 다시 생기지 않도록 alias를 보강했습니다.
+- `index.html`: GitHub Pages 캐시 무효화를 위해 `assets/app.js` query version을 `20260615-0110`으로 갱신했습니다.
+- `AGENT_LOG.md`: 이번 태그 정리 기준과 주의사항을 기록했습니다.
+
+## 구현한 기능
+- 논문 카드 대표 3개 태그에서 `Additive Manufacturing`, `Review`, `Sustainability`, `Digital fabrication`, `Material behavior`, `Reusability` 같은 low-signal 태그는 구체 태그가 충분할 때 뒤로 밀리도록 했습니다.
+- 핵심 토픽인 `MMAM`, `FGAM`, `Volumetric AM`, `Soft robotics`, `LCE`, `Digital Twins`, `Self-driving Labs`가 카드 태그에서 우선적으로 보이도록 했습니다.
+- `Deep Learning`과 `Reinforcement Learning`은 별도 대표 태그로 분산되지 않고 `Machine Learning`으로 합쳐지도록 했습니다.
+- soft robotics 계열 한글/영문 표현이 `Soft robotics` canonical tag로 합쳐지도록 했습니다.
+
+## 설계 결정
+- broad tag를 완전히 삭제하지 않고 카드 표시에서만 후순위로 두었습니다. 필터나 broad bucket 용도로는 여전히 쓸 수 있기 때문입니다.
+- 한 논문당 대표 태그는 계속 3개만 표시합니다. 긴 태그 나열은 사용자가 논문의 핵심을 파악하는 데 오히려 방해된다고 판단했습니다.
+- `Deep Learning`, `Reinforcement Learning`은 발표/문헌 추적 수준에서는 `Machine Learning` 하위 표현으로 충분하다고 판단했습니다.
+
+## 남은 작업
+- 실제 GitHub Pages 반영 후 논문 카드에서 broad 태그가 과도하게 보이지 않는지 화면 확인이 필요합니다.
+- 필요하면 `Sustainability`나 `Review`를 완전히 숨길지, 또는 venue/field에 따라 조건부로 보일지 추가 조정할 수 있습니다.
+
+## 주의사항
+- OpenAI API는 사용하지 않았습니다.
+- 논문 데이터 파일은 수정하지 않았고, 표시/정규화 규칙만 수정했습니다.
+- raw abstract 또는 PDF 저장/표시는 하지 않았습니다.
+
 # 2026-06-15 15:00
 ## 변경 요약
 - 왼쪽 패널의 분야 내부 서브토픽 구성이 현재 873편 데이터에 적절한지 검증했습니다.

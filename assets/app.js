@@ -29,6 +29,38 @@ const FIELD_SUBTOPICS = {
 
 const SIDEBAR_OTHER_TOPIC = "__field_other__";
 
+const LOW_SIGNAL_CARD_TAGS = new Set([
+  "Additive manufacturing",
+  "Review",
+  "Sustainability",
+  "Digital fabrication",
+  "Material behavior",
+  "Reusability",
+]);
+
+const CARD_TAG_PRIORITY = new Map([
+  ["MMAM", 1],
+  ["FGAM", 1],
+  ["Volumetric AM", 1],
+  ["Soft robotics", 1],
+  ["LCE", 1],
+  ["Digital Twins", 1],
+  ["Self-driving Labs", 1],
+  ["Toolpath strategy", 2],
+  ["Material switching", 2],
+  ["FDM/Material extrusion", 2],
+  ["DLP", 2],
+  ["Robot-based Manufacturing", 2],
+  ["Manufacturing automation", 2],
+  ["Machine learning", 2],
+  ["Design automation", 2],
+  ["Metamaterials", 2],
+  ["Active materials", 2],
+  ["Process optimization", 3],
+  ["Metals/Alloys", 3],
+  ["Composites/Materials", 3],
+]);
+
 const TARGET_VENUES = [
   "Nature",
   "Nature Communications",
@@ -1222,7 +1254,19 @@ function representativeTags(paper) {
     picked.push(canonical);
   });
 
-  return collapseMaterialExtrusionTags(picked, paper).slice(0, 3);
+  return rankRepresentativeTags(collapseMaterialExtrusionTags(picked, paper)).slice(0, 3);
+}
+
+function rankRepresentativeTags(tags) {
+  const specific = tags.filter((tag) => !LOW_SIGNAL_CARD_TAGS.has(tag));
+  const broad = tags.filter((tag) => LOW_SIGNAL_CARD_TAGS.has(tag));
+  const pool = specific.length >= 3 ? specific : [...specific, ...broad];
+  return pool.sort((a, b) => {
+    const priorityA = CARD_TAG_PRIORITY.get(a) || 9;
+    const priorityB = CARD_TAG_PRIORITY.get(b) || 9;
+    if (priorityA !== priorityB) return priorityA - priorityB;
+    return a.localeCompare(b, "en");
+  });
 }
 
 function paperMatchesSidebarSubtopic(paper, field, topic) {
@@ -1293,9 +1337,7 @@ function explicitCanonicalAlias(value, text) {
     [["재료 전환", "material switching", "purge"], "Material switching"],
     [["소재 분포", "재료 분포", "material distribution"], "Material distribution"],
     [["계산 설계", "계산설계", "설계 자동화", "computational design", "design automation", "generative design"], "Design automation"],
-    [["머신러닝", "머신 러닝", "기계 학습", "machine learning"], "Machine learning"],
-    [["딥러닝", "deep learning", "neural"], "Deep Learning"],
-    [["강화 학습", "reinforcement learning"], "Reinforcement Learning"],
+    [["머신러닝", "머신 러닝", "기계 학습", "딥러닝", "강화 학습", "machine learning", "deep learning", "neural", "reinforcement learning"], "Machine learning"],
     [["인공지능", "ai", "artificial intelligence"], "Machine learning"],
     [["제조 자동화", "자동화", "스마트 제조", "manufacturing automation", "automated manufacturing"], "Manufacturing automation"],
     [["자율 실험", "자율 실험실", "self-driving lab", "autonomous laboratory", "bayesian optimization"], "Self-driving Labs"],
@@ -1309,7 +1351,7 @@ function explicitCanonicalAlias(value, text) {
     [["기능성 구배", "구배 재료", "functionally graded", "fgam"], "FGAM"],
     [["다중재료", "다중 재료", "multi-material", "multimaterial", "mmam"], "MMAM"],
     [["volumetric additive manufacturing", "volumetric am", "volumetric printing", "computed axial lithography", "tomographic printing", "tomographic volumetric", "xolography"], "Volumetric AM"],
-    [["soft robotics", "soft robotic", "soft gripper", "soft finger", "fin-ray", "fin ray", "pneumatic actuator"], "Soft robotics"],
+    [["소프트 로보틱스", "소프트 로봇", "소프트 액추에이터", "soft robotics", "soft robotic", "soft gripper", "soft finger", "fin-ray", "fin ray", "pneumatic actuator"], "Soft robotics"],
     [["fdm", "fused deposition", "material extrusion", "filament"], "FDM/Material extrusion"],
     [["dm filament", "digital material", "blended fdm"], "DM filament"],
     [["리뷰", "review", "survey"], "Review"],
@@ -1331,7 +1373,7 @@ function canonicalTopicLabel(tag) {
   if (explicit) return explicit;
   if (hasAny(text, ["multi-material", "multi material", "multimaterial", "mmam", "다중재료", "다중 재료"])) return "MMAM";
   if (hasAny(text, ["volumetric additive manufacturing", "volumetric am", "volumetric printing", "computed axial lithography", "tomographic printing", "tomographic volumetric", "xolography"])) return "Volumetric AM";
-  if (hasAny(text, ["soft robotics", "soft robotic", "soft gripper", "soft finger", "fin-ray", "fin ray", "pneumatic actuator"])) return "Soft robotics";
+  if (hasAny(text, ["소프트 로보틱스", "소프트 로봇", "소프트 액추에이터", "soft robotics", "soft robotic", "soft gripper", "soft finger", "fin-ray", "fin ray", "pneumatic actuator"])) return "Soft robotics";
   if (hasAny(text, ["functionally graded", "functional gradient", "graded material", "fgam", "기능성 구배", "구배"])) return "FGAM";
   if (hasAny(text, ["dm filament", "digital material", "blended fdm"])) return "DM filament";
   if (hasAny(text, ["fdm", "fused deposition", "material extrusion"])) return "FDM/Material extrusion";
@@ -1351,7 +1393,7 @@ function canonicalTopicLabel(tag) {
   if (hasAny(text, ["digital twin", "digital twins", "digital-twin", "digital-twins", "digital twinning", "virtual twin", "real-to-twin", "twin-enabled", "twin-driven", "process twin", "machine twin", "디지털 트윈"])) return "Digital Twins";
   if (hasAny(text, ["design automation", "computational design", "generative design", "topology optimization", "계산설계", "설계 자동화"])) return "Design automation";
   if (hasAny(text, ["manufacturing automation", "automated manufacturing", "factory automation", "process automation", "production automation", "automation", "automated", "autonomous", "closed-loop", "closed loop", "monitoring", "in-situ", "in situ", "제조 자동화", "생산 자동화", "공정 자동화", "자동화", "자율", "모니터링"])) return "Manufacturing automation";
-  if (hasAny(text, ["machine learning", "deep learning", "reinforcement learning", "ai/ml", "머신러닝", "인공지능"])) return "Machine learning";
+  if (hasAny(text, ["machine learning", "deep learning", "reinforcement learning", "ai/ml", "머신러닝", "머신 러닝", "기계 학습", "딥러닝", "강화 학습", "인공지능"])) return "Machine learning";
   if (hasAny(text, ["review", "survey", "리뷰", "서베이"])) return "Review";
   if (hasAny(text, ["material distribution", "재료분포", "재료 분포"])) return "Material distribution";
   if (hasAny(text, ["material switching", "purge", "재료 전환", "퍼지"])) return "Material switching";
