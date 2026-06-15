@@ -206,3 +206,4 @@ GitHub Pages에서 동작 가능한 정적 논문 큐레이션 사이트와 GitH
 - Korean/English variants of soft robotics terms are normalized into `Soft robotics`.
 - `MMAM` is treated as a canonical topic tag, not only a raw API tag. Existing papers with explicit title/metadata signals such as `multi-material` or `multimaterial` were normalized so their `tags` field includes `MMAM`.
 - Sidebar topic counts should be based on stable, specific metadata signals only: title, venue, and canonical tags. Broad categories and AI summaries/relevance notes are display or curation context and must not drive sidebar bucket counts, because generic tracker wording or broad category labels can over-count topics such as `MMAM`.
+- Photopolymerization process tags are split: `DLP` is displayed as `Digital Light Processing (DLP)`, `SLA` as `Stereolithography (SLA)`, and `Vat photopolymerization` as its own process tag. Generic `photopolymerization` alone is not enough to assign DLP/SLA/vat tags.
