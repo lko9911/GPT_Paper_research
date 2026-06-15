@@ -202,6 +202,8 @@ def _is_plausible(record: dict[str, Any], since_year: int) -> bool:
         return False
     if _is_non_research_output(title):
         return False
+    if _is_off_scope_application(record):
+        return False
     raw_year = record.get("year")
     year = _safe_year(raw_year, log=False)
     if raw_year and year is None:
@@ -295,6 +297,59 @@ def _is_plausible(record: dict[str, Any], since_year: int) -> bool:
         "machine twin",
     ]
     return any(term in text for term in additive_terms) and any(term in text for term in topic_terms)
+
+
+def _is_off_scope_application(record: dict[str, Any]) -> bool:
+    text = f"{record.get('title', '')} {record.get('venue', '')}".lower()
+    protected = [
+        "dispensing volumetric additive manufacturing",
+        "fin-ray effect soft robotic fingers",
+        "adaptive and context-aware volumetric printing",
+        "dual-wavelength volumetric microlithography",
+        "alignment and actuation of liquid crystals",
+        "diffusion-guided 4d microprinting",
+    ]
+    if any(term in text for term in protected):
+        return False
+    off_scope_terms = [
+        "bioprint",
+        "biofabricat",
+        "tissue engineering",
+        "organ-on-a-chip",
+        "organ on a chip",
+        "internal organ",
+        "tissues and organs",
+        "cell-based products",
+        "cryopreservation",
+        "dental",
+        "dentistry",
+        "prosthodontics",
+        "prosthesis",
+        "prosthetic",
+        "minimally invasive",
+        "endovascular",
+        "pediatric patent ductus",
+        "pancreas model",
+        "food printing",
+        "3d food printing",
+        "food automation",
+        "dough",
+        "agricultural products",
+        "medium-sized crops",
+        "ripeness",
+        "water treatment",
+        "photovoltaic",
+        "electroluminescent",
+        "printed electronics",
+        "stretchable electronics",
+        "soft bioelectronics",
+        "surface acoustic wave",
+        "transducer",
+        "drug delivery",
+        "regenerative medicine",
+        "medical education",
+    ]
+    return any(term in text for term in off_scope_terms)
 
 
 def _has_digital_twin_signal(text: str) -> bool:
