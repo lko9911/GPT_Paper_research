@@ -1,5 +1,38 @@
 # AGENT_LOG
 
+## 2026-06-15 00:00
+
+### 변경 요약
+- 사용자의 운영 의도에 맞춰 논문 자동 업데이트 주기를 6시간마다에서 12시간마다로 변경했습니다.
+- 상태 파일과 문서의 스케줄 설명도 12시간 주기 기준으로 정리했습니다.
+- 원격에 먼저 들어온 2026-06-14 UI/status 변경은 보존하고 그 위에 스케줄 변경을 rebase했습니다.
+
+### 수정/생성한 파일
+- `.github/workflows/update-papers.yml`: cron을 `17 */6 * * *`에서 `17 */12 * * *`로 변경하고 상태 파일에 전달하는 cron 설명도 갱신했습니다.
+- `scripts/write_update_status.py`: 기본 cron 설명을 12시간 기준으로 바꾸고, 현재 cron의 KST 예상 실행 시각을 출력하는 helper를 추가했습니다.
+- `UPDATE_STATUS.md`: 현재 스케줄 설명을 `09:17`, `21:17` KST 기준으로 수정했습니다.
+- `data/update_status.json`: 최신 workflow run 상태는 유지하고 schedule 값만 `17 */12 * * *`로 갱신했습니다.
+- `README.md`: 자동 업데이트 주기를 12시간 기준으로 수정하고, OpenAI key는 정기 업데이트가 아니라 수동 refresh에서만 사용한다는 설명으로 정정했습니다.
+- `ARCHITECTURE.md`: workflow 구조 설명을 12시간 주기 기준으로 수정했습니다.
+- `PROJECT_STATUS.md`: 2026-06-15 현재 상태 항목을 추가했습니다.
+- `AGENT_LOG.md`: 이번 스케줄 정리 작업을 기록했습니다.
+
+### 구현한 기능
+- 정기 논문 수집 workflow가 하루 두 번 실행되도록 예약됩니다.
+- 상태 Markdown은 다음 workflow 실행부터 12시간 주기의 KST 예상 시각을 표시합니다.
+
+### 설계 결정
+- 17분 실행은 유지했습니다. GitHub Actions 정각 부하를 피하면서도 하루 두 번 주기적으로 돌리는 의도에 맞기 때문입니다.
+- OpenAI 자동 미사용 정책은 변경하지 않았습니다.
+- `data/update_status.json`의 최신 수집 수치와 run id는 원격 최신 값을 유지했습니다.
+
+### 남은 작업
+- 다음 scheduled run 이후 `UPDATE_STATUS.md`가 새 run 정보로 갱신되는지 확인합니다.
+
+### 주의사항
+- 이 수정은 OpenAI API를 호출하지 않습니다.
+- 논문 수집 스크립트는 실행하지 않았고 스케줄/문서만 정리했습니다.
+
 ## 2026-06-14 09:10
 
 ### 변경 요약

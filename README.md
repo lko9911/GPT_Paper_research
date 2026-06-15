@@ -30,11 +30,11 @@
 GitHub 저장소의 `Settings > Secrets and variables > Actions`에서 다음 값을 설정할 수 있습니다.
 
 - `CONTACT_EMAIL`: OpenAlex/Crossref polite pool 및 User-Agent에 사용할 연락 이메일입니다.
-- `OPENAI_API_KEY`: 선택 사항입니다. 있으면 새 논문에 대해 OpenAI API로 5문항 형식의 한글/영문 요약을 함께 생성합니다.
+- `OPENAI_API_KEY`: 선택 사항입니다. 정기 업데이트에는 사용하지 않고, 사용자가 명시적으로 허가한 수동 `Refresh OpenAI summaries` workflow에서만 5문항 형식의 한글/영문 요약 생성에 사용합니다.
 - `SEMANTIC_SCHOLAR_API_KEY`: 선택 사항입니다. 있으면 DOI 기반 Semantic Scholar 메타데이터 보강을 시도합니다.
 - `OPENAI_MODEL`: 선택 사항입니다. Repository variable로 설정하며 기본값은 `gpt-4o-mini`입니다.
 
-키가 없어도 파이프라인은 실패하지 않습니다. `OPENAI_API_KEY`가 없으면 제목, 메타데이터, API에서 임시로 받은 초록 신호를 바탕으로 5문항 형식의 fallback 요약을 생성합니다. 초록 원문은 저장하지 않습니다.
+키가 없어도 파이프라인은 실패하지 않습니다. 정기 업데이트는 기본적으로 제목, 메타데이터, API에서 임시로 받은 초록 신호를 바탕으로 5문항 형식의 fallback 요약을 생성합니다. 초록 원문은 저장하지 않습니다.
 
 ## 로컬 실행 방법
 
@@ -60,7 +60,7 @@ python -m http.server 8000
 
 `.github/workflows/update-papers.yml`은 다음 조건에서 실행됩니다.
 
-- 매시 정각 cron 실행
+- 12시간마다 cron 실행
 - `workflow_dispatch` 수동 실행
 
 워크플로는 Python 의존성을 설치하고 `scripts/update_papers.py`를 실행합니다. `data/papers.json`이 변경된 경우에만 자동 커밋합니다. 새 논문이 없어도 정상 종료되도록 구성해 불필요한 실패 알림을 줄였습니다.
@@ -82,7 +82,7 @@ dry_run: false
 
 현재 논문 수가 약 342편이므로 `max_summaries=400`이면 기존 문단형 요약 대부분과 영문 GPT 요약이 비어 있는 항목을 한 번에 5문항 형식으로 바꿀 수 있습니다. 비용 테스트만 하려면 `max_summaries=5`, `dry_run=true`로 먼저 실행하세요.
 
-이 workflow는 정기 실행되지 않고 수동 실행만 지원합니다. 따라서 OpenAI 비용이 매시간 반복 발생하지 않습니다.
+이 workflow는 정기 실행되지 않고 수동 실행만 지원합니다. 따라서 OpenAI 비용이 주기적으로 반복 발생하지 않습니다.
 
 ## 논문 수동 추가/수정 방법
 
@@ -158,6 +158,6 @@ Science, Nature, Nature Communications, Advanced Materials 같은 게재지도 O
 
 - 저장되는 논문 수에는 상한을 두지 않습니다. 기존 100편 제한은 제거했습니다.
 - OpenAlex와 Crossref의 공식 API 페이징을 사용해 한 페이지보다 넓게 수집합니다.
-- GitHub Actions는 매시간 안정적으로 끝나야 하므로 실행 1회당 `OPENALEX_MAX_PAGES`, `CROSSREF_MAX_PAGES`, `API_SLEEP_SECONDS`를 사용합니다. 이는 전체 논문 수 제한이 아니라 API rate limit과 Actions timeout을 피하기 위한 실행 예산입니다.
+- GitHub Actions는 12시간 주기로 안정적으로 끝나야 하므로 실행 1회당 `OPENALEX_MAX_PAGES`, `CROSSREF_MAX_PAGES`, `API_SLEEP_SECONDS`를 사용합니다. 이는 전체 논문 수 제한이 아니라 API rate limit과 Actions timeout을 피하기 위한 실행 예산입니다.
 - 더 깊은 일회성 수집이 필요하면 workflow 또는 로컬 환경에서 `OPENALEX_MAX_PAGES`와 `CROSSREF_MAX_PAGES`를 높여 수동 실행하면 됩니다.
 - `data/site_meta.json`에는 마지막 자동 갱신 실행 시각이 저장되며, 사이트 상단의 `최신 업데이트`에 KST 기준으로 표시됩니다.

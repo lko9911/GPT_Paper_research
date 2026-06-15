@@ -1,5 +1,11 @@
 # PROJECT_STATUS
 
+## 2026-06-15 최신 상태
+
+- 사용자의 운영 의도에 맞춰 `Update papers` 정기 실행 주기를 12시간마다로 정리했습니다.
+- 현재 목표 cron은 `17 */12 * * *`이며 KST 기준 대략 `09:17`, `21:17`에 실행됩니다.
+- 정기 업데이트는 여전히 OpenAI API를 사용하지 않습니다. 신규 논문은 사용자가 별도로 허가하기 전까지 metadata/fallback summary로 들어옵니다.
+
 ## 2026-06-13 13:26 최신 상태
 
 - 2026-06-13 20:10에 `Robotics for Manufacturing`에서 중복 `Process Optimization`을 제거하고 `Robot-based Manufacturing` / `로봇 기반 생산제조` 서브토픽을 추가했습니다. 로봇 관련 metadata update 후 curated 논문 수는 741편입니다.
@@ -92,7 +98,7 @@
 - `.github/workflows/update-papers.yml`에 데이터 업데이트 후 GitHub Pages artifact를 업로드하고 직접 배포하는 단계를 추가했습니다.
 
 ### 완료된 추가 개선
-- 매시간 논문 수집 workflow가 성공하면 같은 workflow 안에서 GitHub Pages를 직접 배포합니다.
+- 정기 논문 수집 workflow가 성공하면 같은 workflow 안에서 GitHub Pages를 직접 배포합니다.
 - `GITHUB_TOKEN`으로 만든 데이터 커밋이 별도 push 배포 workflow를 트리거하지 않아도 공개 사이트가 최신 데이터로 갱신되도록 보강했습니다.
 
 ### 다음 확인 사항
