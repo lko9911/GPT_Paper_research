@@ -21,7 +21,7 @@ const FIELD_ORDER = [
 
 const FIELD_SUBTOPICS = {
   "생산/제조": ["금속/합금 제조", "복합재/소재 제조", "공정 최적화"],
-  "3D 프린팅": ["MMAM", "FGAM", "Volumetric AM", "DLP", "FDM/Material extrusion", "Toolpath", "Material Switching", "Additive manufacturing"],
+  "3D 프린팅": ["MMAM", "FGAM", "Volumetric AM", "DLP", "SLA", "Vat photopolymerization", "FDM/Material extrusion", "Toolpath", "Material Switching", "Additive manufacturing"],
   "4D 프린팅": ["LCE", "메타물질", "Active materials"],
   "로봇틱스(생산제조)": ["Soft robotics", "제조 자동화", "Robot-based Manufacturing"],
   "AI 생산제조": ["Self-driving Labs", "Digital Twins", "Machine Learning", "Design Automation", "제조 자동화"],
@@ -50,6 +50,8 @@ const CARD_TAG_PRIORITY = new Map([
   ["Material switching", 2],
   ["FDM/Material extrusion", 2],
   ["DLP", 2],
+  ["SLA", 2],
+  ["Vat photopolymerization", 2],
   ["Robot-based Manufacturing", 2],
   ["Manufacturing automation", 2],
   ["Machine learning", 2],
@@ -270,7 +272,9 @@ const TAG_LABELS = {
     FGAM: "기능성 구배",
     "DM filament": "DM filament",
     "FDM/Material extrusion": "FDM",
-    DLP: "DLP",
+    DLP: "Digital Light Processing (DLP)",
+    SLA: "Stereolithography (SLA)",
+    "Vat photopolymerization": "Vat photopolymerization",
     LCE: "LCE",
     "4D printing": "4D 프린팅",
     Metamaterials: "메타물질",
@@ -312,7 +316,9 @@ const TAG_LABELS = {
     FGAM: "Functionally Graded AM",
     "DM filament": "DM Filament",
     "FDM/Material extrusion": "FDM",
-    DLP: "DLP",
+    DLP: "Digital Light Processing (DLP)",
+    SLA: "Stereolithography (SLA)",
+    "Vat photopolymerization": "Vat Photopolymerization",
     LCE: "LCE",
     "4D printing": "4D Printing",
     Metamaterials: "Metamaterials",
@@ -1341,7 +1347,9 @@ function explicitCanonicalAlias(value, text) {
     [["금속", "합금", "alloy", "alloys", "metal", "metals"], "Metals/Alloys"],
     [["복합재", "복합재료", "복합 재료", "composite", "composites"], "Composites/Materials"],
     [["지속 가능성", "지속가능성", "재활용", "sustainability", "recycling", "circular"], "Sustainability"],
-    [["광중합", "디지털 광 처리", "photopolymer", "photopolymerization", "dlp"], "DLP"],
+    [["stereolithography", "stereo lithography"], "SLA"],
+    [["vat photopolymerization", "vat photopolymerisation", "vat polymerization", "vat polymerisation"], "Vat photopolymerization"],
+    [["디지털 광 처리", "digital light process", "digital light processing", "digital light projection", "dlp"], "DLP"],
     [["물성 제어", "property control", "crystallinity", "결정화도"], "Material property control"],
     [["나노", "마이크로", "nanowriting", "micro", "nano"], "Micro/Nano manufacturing"],
     [["기능성 구배", "구배 재료", "functionally graded", "fgam"], "FGAM"],
@@ -1373,7 +1381,9 @@ function canonicalTopicLabel(tag) {
   if (hasAny(text, ["functionally graded", "functional gradient", "graded material", "fgam", "기능성 구배", "구배"])) return "FGAM";
   if (hasAny(text, ["dm filament", "digital material", "blended fdm"])) return "DM filament";
   if (hasAny(text, ["fdm", "fused deposition", "material extrusion"])) return "FDM/Material extrusion";
-  if (hasAny(text, ["dlp", "digital light processing", "vat photopolymerization", "vat photopolymerisation", "stereolithography", "sla"])) return "DLP";
+  if (hasSlaSignal(text)) return "SLA";
+  if (hasAny(text, ["vat photopolymerization", "vat photopolymerisation", "vat polymerization", "vat polymerisation"])) return "Vat photopolymerization";
+  if (hasAny(text, ["dlp", "digital light process", "digital light processing", "digital light projection", "디지털 광 처리"])) return "DLP";
   if (hasAny(text, ["lce", "liquid crystal elastomer", "liquid-crystal elastomer"])) return "LCE";
   if (hasAny(text, ["metamaterial", "metamaterials", "mechanical metamaterial", "메타물질"])) return "Metamaterials";
   if (hasAny(text, ["4d printing", "4d printed", "4d-printed", "4d print", "4d 프린팅"])) return "4D printing";
@@ -1534,12 +1544,16 @@ function deriveField(paper) {
     titleText.includes("multimaterial") ||
     titleText.includes("toolpath") ||
     titleText.includes("material extrusion") ||
+    titleText.includes("digital light process") ||
     titleText.includes("digital light processing") ||
+    titleText.includes("digital light projection") ||
     titleText.includes("dlp") ||
     titleText.includes("vat photopolymerization") ||
     titleText.includes("vat photopolymerisation") ||
+    titleText.includes("vat polymerization") ||
+    titleText.includes("vat polymerisation") ||
     titleText.includes("stereolithography") ||
-    titleText.includes("sla") ||
+    hasSlaSignal(titleText) ||
     titleText.includes("다중재료") ||
     titleText.includes("기능성 구배") ||
     titleText.includes("툴패스") ||
@@ -1678,7 +1692,9 @@ function deriveSubtopics(paper) {
   if (hasAny(text, ["volumetric additive manufacturing", "volumetric am", "volumetric printing", "computed axial lithography", "tomographic printing", "tomographic volumetric", "xolography"])) subtopics.add("Volumetric AM");
   if (hasAny(text, ["dm filament", "digital material", "blended fdm", "디지털 재료"])) subtopics.add("DM filament");
   if (hasAny(text, ["fdm", "fused deposition", "material extrusion", "filament", "압출"])) subtopics.add("FDM/Material extrusion");
-  if (hasAny(text, ["dlp", "digital light processing", "vat photopolymerization", "vat photopolymerisation", "stereolithography", "sla"])) subtopics.add("DLP");
+  if (hasAny(text, ["dlp", "digital light process", "digital light processing", "digital light projection", "디지털 광 처리"])) subtopics.add("DLP");
+  if (hasSlaSignal(text)) subtopics.add("SLA");
+  if (hasAny(text, ["vat photopolymerization", "vat photopolymerisation", "vat polymerization", "vat polymerisation"])) subtopics.add("Vat photopolymerization");
   if (hasAny(text, ["toolpath", "path planning", "graph search", "trajectory", "툴패스", "경로계획", "경로 계획"])) subtopics.add("툴패스");
   if (hasAny(text, ["purge", "switching", "transition", "waste", "퍼지", "재료 전환", "전환"])) subtopics.add("퍼지/재료전환");
 
@@ -1722,6 +1738,10 @@ function deriveSubtopics(paper) {
 
 function hasAny(text, terms) {
   return terms.some((term) => text.includes(normalize(term)));
+}
+
+function hasSlaSignal(text) {
+  return text.includes("stereolithography") || text.includes("stereo lithography") || /\bsla\b/.test(text);
 }
 
 function countBy(items, mapper) {

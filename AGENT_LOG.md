@@ -3983,6 +3983,70 @@
 
 ### Follow-up
 - None.
+# 2026-06-15 15:27
+## 변경 요약
+- `DLP` 안에 `SLA`, `vat photopolymerization`, `stereolithography`가 섞여 있던 문제를 분리했습니다.
+- 논문별 태그가 한글/영문/약어로 흔들리던 문제를 전체 점검하고 핵심 canonical tag로 정규화했습니다.
+- `SLA`는 `SLAM`, `translaminar`, `translation` 같은 단어에 잘못 걸리지 않도록 단어 경계 기반으로만 판정하도록 했습니다.
+
+## 수정/생성한 파일
+- `assets/app.js`: 3D Printing 하위 토픽에 `SLA`, `Vat photopolymerization`을 추가하고, `DLP` 표시명을 `Digital Light Processing (DLP)`로 바꿨습니다. DLP/SLA/vat 판정 로직도 분리했습니다.
+- `scripts/summarize.py`: 새 논문 요약/분류 시 `DLP`, `SLA`, `Vat photopolymerization`이 분리 저장되도록 TAG_MAP과 alias를 보강했습니다.
+- `data/papers.json`: 기존 873편의 태그를 전체 점검해 핵심 alias를 canonical tag로 통합했습니다.
+- `index.html`: GitHub Pages 캐시 무효화를 위해 `assets/app.js` query version을 `20260615-0140`으로 갱신했습니다.
+- `AGENT_LOG.md`: 이번 변경 사항과 검증 결과를 기록했습니다.
+- `PROJECT_STATUS.md`: 현재 태그 정책을 갱신했습니다.
+
+## 구현한 기능
+- `DLP`는 `digital light process`, `digital light processing`, `digital light projection`, `DLP` 신호만 사용합니다.
+- `SLA`는 `stereolithography`, `stereo lithography`, 독립 약어 `SLA`만 사용합니다.
+- `Vat photopolymerization`은 `vat photopolymerization/photopolymerisation/polymerization/polymerisation` 명시 신호만 사용합니다.
+- `적층 제조`, `디지털 트윈`, `4D 프린팅`, `머신러닝`, `소프트 로봇`, `복합재료`, `액정 엘라스토머` 등 흔들리던 태그를 canonical tag로 통합했습니다.
+- 너무 넓거나 의미가 약한 `재료 과학`, `제조 기술`, `기술 발전`, `응용`, `제조`, `제조업`, `효율성`, `혁신` 태그는 카드/필터용 태그에서 제거했습니다.
+
+## 검증 결과
+- 현재 논문 수: 873편
+- `data/papers.json` JSON 검증 통과
+- `scripts/summarize.py` 문법 검증 통과
+- `git diff --check` 통과
+- 정규화 후 주요 태그 카운트:
+  - Additive manufacturing: 431
+  - Digital Twins: 161
+  - 4D printing: 105
+  - MMAM: 97
+  - Soft robotics: 87
+  - Machine learning: 86
+  - DLP: 24
+  - SLA: 3
+  - Vat photopolymerization: 8
+- 수정 후 로컬 데이터 기준 예상 3D Printing 하위 카운트:
+  - Multi-material AM: 81
+  - Functionally Graded AM: 20
+  - Volumetric AM: 54
+  - Digital Light Processing (DLP): 11
+  - Stereolithography (SLA): 3
+  - Vat Photopolymerization: 2
+  - FDM: 18
+  - Toolpath Strategy: 15
+  - Material Switching: 2
+  - Additive Manufacturing: 89
+  - Others: 1
+
+## 설계 결정
+- `DLP`, `SLA`, `Vat photopolymerization`은 서로 관련된 vat photopolymerization 계열이지만, UI에서는 사용자가 공정별로 볼 수 있도록 분리했습니다.
+- `SLA`는 짧은 약어라 substring matching을 쓰지 않고 정규식 단어 경계를 사용합니다.
+- `photopolymerization`이라는 일반 단어만으로는 DLP나 vat로 분류하지 않습니다. 명시적인 `vat photopolymerization` 또는 DLP/SLA 신호가 있을 때만 해당 태그를 붙입니다.
+- 데이터 태그는 최대 6개 제한을 유지하고, canonical topic을 우선 배치했습니다.
+
+## 남은 작업
+- GitHub Pages 반영 후 왼쪽 패널에서 DLP/SLA/Vat photopolymerization이 분리되어 보이는지 확인합니다.
+- 아직 남아 있는 일부 한글 세부 태그(`스마트 재료`, `로봇 공학`, `경로 계획` 등)는 필요하면 다음 라운드에서 canonical tag로 더 통합할 수 있습니다.
+
+## 주의사항
+- OpenAI API는 사용하지 않았습니다.
+- raw abstract 또는 PDF 저장/표시는 하지 않았습니다.
+- 이번 변경은 기존 논문 텍스트/요약이 아니라 태그 정규화와 프론트엔드 분류 규칙 변경입니다.
+
 # 2026-06-15 15:20
 ## 변경 요약
 - 사용자가 다시 확인한 `3D Printing > Multi-material AM 286` 과카운트 문제를 재조사했습니다.
