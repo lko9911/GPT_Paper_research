@@ -3983,3 +3983,50 @@
 
 ### Follow-up
 - None.
+# 2026-06-15 15:00
+## 변경 요약
+- 왼쪽 패널의 분야 내부 서브토픽 구성이 현재 873편 데이터에 적절한지 검증했습니다.
+- 새로 수집 범위에 들어온 `Volumetric AM`, `Soft robotics` 논문들이 기존 서브토픽 구조에서 `Others` 또는 다른 분야로 묻히는 문제를 수정했습니다.
+- broad topic이 세부 topic을 먼저 잡아먹지 않도록 왼쪽 패널의 서브토픽 순서를 재정렬했습니다.
+
+## 수정/생성한 파일
+- `assets/app.js`: 분야별 서브토픽 목록, 태그 라벨, canonical alias, 프론트엔드 분야/서브토픽 파생 규칙을 보정했습니다.
+- `index.html`: GitHub Pages 캐시 무효화를 위해 `assets/app.js` query version을 `20260615-0100`으로 갱신했습니다.
+- `AGENT_LOG.md`: 이번 검증과 설계 결정을 기록했습니다.
+- `PROJECT_STATUS.md`: 현재 taxonomy 상태와 남은 점검 포인트를 갱신했습니다.
+
+## 구현한 기능
+- `Volumetric AM`을 3D 프린팅 분야의 공식 서브토픽으로 추가했습니다.
+- `Soft robotics`를 로봇틱스(생산제조) 분야의 공식 서브토픽으로 추가했습니다.
+- `additive manufacturing`만 포함된 volumetric AM 논문이 생산/제조로 빠지지 않고 3D 프린팅으로 분류되도록 했습니다.
+- soft robotic finger/gripper/fin-ray/pneumatic actuator 논문이 topology optimization 등의 단어 때문에 AI 생산제조로 먼저 빠지지 않도록 분류 우선순위를 조정했습니다.
+- 3D 프린팅 서브토픽은 `MMAM`, `FGAM`, `Volumetric AM`, `DLP`, `FDM`, `Toolpath`, `Material Switching`을 먼저 보여주고, broad fallback인 `Additive Manufacturing`은 뒤로 보냈습니다.
+
+## 설계 결정
+- 왼쪽 패널 카운트는 한 논문을 여러 서브토픽에 중복 집계하지 않고, 분야 안에서 처음 매칭되는 하나의 bucket에 넣는 구조를 유지했습니다. 총합이 분야 논문수와 맞아야 사용자가 이해하기 쉽기 때문입니다.
+- 따라서 broad label은 뒤에 두고, 세부적인 연구 축을 앞에 두는 방식이 적절하다고 판단했습니다.
+- `MMAM`은 생산/제조보다는 3D 프린팅의 세부 축으로 보는 것이 더 자연스러워 3D 프린팅 쪽으로 이동했습니다.
+- `Manufacturing Automation`은 로봇틱스와 AI 생산제조 양쪽에 남겼지만, 로봇틱스에서는 `Soft robotics` 다음에 배치해 자동화 성격의 로봇 논문이 0으로 보이지 않도록 했습니다.
+
+## 검증 결과
+- 로컬 데이터 기준 총 논문 수는 873편입니다.
+- 변경 후 예상 분야별 집계:
+  - Production / Manufacturing: 140
+  - 3D Printing: 297
+  - 4D Printing: 130
+  - Robotics for Manufacturing: 97
+  - AI Manufacturing: 209
+- `Volumetric AM` 태그 논문 52편은 모두 3D Printing 분야로 배치됩니다.
+- `Soft robotics` 태그 논문 50편 중 대부분은 Robotics for Manufacturing으로 배치되며, 일부는 4D/AI/AM 키워드 우선순위 때문에 다른 분야에 남습니다.
+- `AI Manufacturing`의 `Others`가 여전히 큰데, 이는 한국어 태그/요약 기반 AI 신호와 기존 digital twin 보수 분류 정책이 섞인 결과입니다. 다음 개선 시 AI 서브토픽을 더 세분화할 수 있습니다.
+
+## 남은 작업
+- 브라우저 자동화 도구와 `node`가 현재 환경에서 사용 가능하지 않아 실제 화면 렌더링/JS 문법 체크는 수행하지 못했습니다.
+- GitHub Pages 반영 후 왼쪽 패널에서 `Volumetric AM`, `Soft Robotics`, `Manufacturing Automation` 카운트가 의도대로 보이는지 화면에서 확인해야 합니다.
+- AI 생산제조의 `Others`가 큰 원인을 별도 샘플링해 `AI process monitoring`, `Physics-informed ML`, `Quality prediction` 같은 하위 토픽을 추가할지 결정할 수 있습니다.
+
+## 주의사항
+- OpenAI API는 사용하지 않았습니다.
+- 데이터 파일은 수정하지 않았고, 프론트엔드 분류/표시 규칙만 수정했습니다.
+- `index.html`의 app script version은 브라우저/GitHub Pages 캐시가 이전 taxonomy 로직을 계속 사용하는 상황을 막기 위한 변경입니다.
+- raw abstract 또는 PDF 저장/표시는 하지 않았습니다.
