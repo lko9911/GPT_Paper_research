@@ -197,3 +197,10 @@ GitHub Pages에서 동작 가능한 정적 논문 큐레이션 사이트와 GitH
 - `AI Manufacturing` still has a large `Others` bucket. This is not necessarily wrong, but it suggests future subtopics such as `AI process monitoring`, `Quality prediction`, `Physics-informed ML`, or `Autonomous process control` may be useful.
 - `Soft robotics` papers that also contain strong 4D printing or AI keywords can still be assigned to those higher-priority fields. This is intentional for now, but can be changed if robotics should always override AI/4D.
 - Browser-level visual verification was not completed in this turn because the browser automation runtime and local `node` command were unavailable in the current environment.
+
+## Current Tag Display Policy
+- Paper cards still show at most three representative tags.
+- Specific tags are prioritized over broad tags. For example, `Volumetric AM`, `Soft robotics`, `MMAM`, `FGAM`, `LCE`, `Digital Twins`, and `Self-driving Labs` are favored.
+- Broad or low-signal tags such as `Additive Manufacturing`, `Review`, `Sustainability`, `Digital fabrication`, `Material behavior`, and `Reusability` are retained for fallback/filtering but are pushed behind more specific tags on paper cards.
+- `Deep Learning` and `Reinforcement Learning` are normalized into `Machine Learning` for this tracker, because the site is a manufacturing literature tracker rather than a general AI taxonomy browser.
+- Korean/English variants of soft robotics terms are normalized into `Soft robotics`.
