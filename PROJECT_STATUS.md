@@ -177,3 +177,23 @@ GitHub Pages에서 동작 가능한 정적 논문 큐레이션 사이트와 GitH
 - 왼쪽 패널은 `생산/제조`, `3D 프린팅`, `로봇틱스(생산제조)`, `AI 생산제조`의 큰 분야와 서브 토픽을 함께 보여주도록 변경했습니다.
 - 알려진 이슈: 깊은 수집 중 OpenAlex 429 rate limit이 발생할 수 있습니다. 더 많이 수집하려면 sleep을 늘리거나 수동 실행을 나누어 진행하세요.
 - `data/site_meta.json`을 추가해 마지막 자동 갱신 실행 시각을 사이트 상단에 표시합니다.
+# 2026-06-15 Taxonomy Status Update
+
+## Current Taxonomy State
+- The sidebar taxonomy was audited against the current 873 curated papers.
+- `Volumetric AM` is now an explicit subtopic under `3D Printing`.
+- `Soft robotics` is now an explicit subtopic under `Robotics for Manufacturing`.
+- `MMAM` was moved from `Production / Manufacturing` to `3D Printing`, because it is more naturally an additive manufacturing subtopic in this tracker.
+- Sidebar subtopic counting remains mutually exclusive within each field: each paper is assigned to the first matching subtopic bucket so that subtopic totals add up to the field total.
+
+## Current Field/Subtopic Rationale
+- `Production / Manufacturing`: broad manufacturing papers that are not primarily AM/robotics/AI/4D. Subtopics emphasize materials and process optimization.
+- `3D Printing`: additive manufacturing papers. Specific AM technologies and strategies are listed before the broad `Additive Manufacturing` fallback.
+- `4D Printing`: shape-changing, LCE, metamaterial, and active material papers.
+- `Robotics for Manufacturing`: robot-based manufacturing and soft robotics papers. `Manufacturing Automation` is kept as a subtopic because some robot papers are primarily about automated production workflows.
+- `AI Manufacturing`: ML, digital twins, self-driving labs, design automation, and manufacturing automation papers.
+
+## Known Taxonomy Issues
+- `AI Manufacturing` still has a large `Others` bucket. This is not necessarily wrong, but it suggests future subtopics such as `AI process monitoring`, `Quality prediction`, `Physics-informed ML`, or `Autonomous process control` may be useful.
+- `Soft robotics` papers that also contain strong 4D printing or AI keywords can still be assigned to those higher-priority fields. This is intentional for now, but can be changed if robotics should always override AI/4D.
+- Browser-level visual verification was not completed in this turn because the browser automation runtime and local `node` command were unavailable in the current environment.

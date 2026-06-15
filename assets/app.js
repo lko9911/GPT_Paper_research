@@ -20,11 +20,11 @@ const FIELD_ORDER = [
 ];
 
 const FIELD_SUBTOPICS = {
-  "생산/제조": ["금속/합금 제조", "복합재/소재 제조", "MMAM", "공정 최적화"],
-  "3D 프린팅": ["Additive manufacturing", "FGAM", "DLP", "Material Switching", "Toolpath", "FDM/Material extrusion"],
+  "생산/제조": ["금속/합금 제조", "복합재/소재 제조", "공정 최적화"],
+  "3D 프린팅": ["MMAM", "FGAM", "Volumetric AM", "DLP", "FDM/Material extrusion", "Toolpath", "Material Switching", "Additive manufacturing"],
   "4D 프린팅": ["LCE", "메타물질", "Active materials"],
-  "로봇틱스(생산제조)": ["제조 자동화", "Robot-based Manufacturing"],
-  "AI 생산제조": ["Self-driving Labs", "Digital Twins", "제조 자동화", "Design Automation", "Machine Learning"],
+  "로봇틱스(생산제조)": ["Soft robotics", "제조 자동화", "Robot-based Manufacturing"],
+  "AI 생산제조": ["Self-driving Labs", "Digital Twins", "Machine Learning", "Design Automation", "제조 자동화"],
 };
 
 const SIDEBAR_OTHER_TOPIC = "__field_other__";
@@ -232,6 +232,8 @@ const LABEL_TRANSLATIONS = {
 const TAG_LABELS = {
   ko: {
     "Additive manufacturing": "적층제조",
+    "Volumetric AM": "Volumetric AM",
+    "Soft robotics": "소프트 로보틱스",
     MMAM: "다중재료",
     FGAM: "기능성 구배",
     "DM filament": "DM filament",
@@ -272,6 +274,8 @@ const TAG_LABELS = {
   },
   en: {
     "Additive manufacturing": "Additive Manufacturing",
+    "Volumetric AM": "Volumetric AM",
+    "Soft robotics": "Soft Robotics",
     MMAM: "Multi-material AM",
     FGAM: "Functionally Graded AM",
     "DM filament": "DM Filament",
@@ -1304,6 +1308,8 @@ function explicitCanonicalAlias(value, text) {
     [["나노", "마이크로", "nanowriting", "micro", "nano"], "Micro/Nano manufacturing"],
     [["기능성 구배", "구배 재료", "functionally graded", "fgam"], "FGAM"],
     [["다중재료", "다중 재료", "multi-material", "multimaterial", "mmam"], "MMAM"],
+    [["volumetric additive manufacturing", "volumetric am", "volumetric printing", "computed axial lithography", "tomographic printing", "tomographic volumetric", "xolography"], "Volumetric AM"],
+    [["soft robotics", "soft robotic", "soft gripper", "soft finger", "fin-ray", "fin ray", "pneumatic actuator"], "Soft robotics"],
     [["fdm", "fused deposition", "material extrusion", "filament"], "FDM/Material extrusion"],
     [["dm filament", "digital material", "blended fdm"], "DM filament"],
     [["리뷰", "review", "survey"], "Review"],
@@ -1324,6 +1330,8 @@ function canonicalTopicLabel(tag) {
   const explicit = explicitCanonicalAlias(value, text);
   if (explicit) return explicit;
   if (hasAny(text, ["multi-material", "multi material", "multimaterial", "mmam", "다중재료", "다중 재료"])) return "MMAM";
+  if (hasAny(text, ["volumetric additive manufacturing", "volumetric am", "volumetric printing", "computed axial lithography", "tomographic printing", "tomographic volumetric", "xolography"])) return "Volumetric AM";
+  if (hasAny(text, ["soft robotics", "soft robotic", "soft gripper", "soft finger", "fin-ray", "fin ray", "pneumatic actuator"])) return "Soft robotics";
   if (hasAny(text, ["functionally graded", "functional gradient", "graded material", "fgam", "기능성 구배", "구배"])) return "FGAM";
   if (hasAny(text, ["dm filament", "digital material", "blended fdm"])) return "DM filament";
   if (hasAny(text, ["fdm", "fused deposition", "material extrusion"])) return "FDM/Material extrusion";
@@ -1451,22 +1459,32 @@ function deriveField(paper) {
     titleText.includes("digital twins") ||
     titleText.includes("virtual twin") ||
     titleText.includes("디지털 트윈") ||
-    titleText.includes("design automation") ||
-    titleText.includes("computational design") ||
-    titleText.includes("generative design") ||
-    titleText.includes("topology optimization") ||
     titleText.includes("머신러닝") ||
     titleText.includes("인공지능") ||
-    titleText.includes("설계 자동화") ||
-    titleText.includes("계산설계") ||
     categoryText.includes("ai")
   ) {
     return "AI 생산제조";
   }
-  if (titleText.includes("robot") || titleText.includes("로봇")) {
+  if (
+    titleText.includes("robot") ||
+    titleText.includes("soft robotic") ||
+    titleText.includes("soft gripper") ||
+    titleText.includes("soft finger") ||
+    titleText.includes("fin-ray") ||
+    titleText.includes("fin ray") ||
+    titleText.includes("pneumatic actuator") ||
+    titleText.includes("로봇")
+  ) {
     return "로봇틱스(생산제조)";
   }
   if (
+    titleText.includes("additive manufacturing") ||
+    titleText.includes("volumetric additive manufacturing") ||
+    titleText.includes("volumetric printing") ||
+    titleText.includes("computed axial lithography") ||
+    titleText.includes("tomographic printing") ||
+    titleText.includes("tomographic volumetric") ||
+    titleText.includes("xolography") ||
     titleText.includes("3d printing") ||
     titleText.includes("3d print") ||
     titleText.includes("fdm") ||
@@ -1491,6 +1509,16 @@ function deriveField(paper) {
     titleText.includes("3d 프린팅")
   ) {
     return "3D 프린팅";
+  }
+  if (
+    titleText.includes("design automation") ||
+    titleText.includes("computational design") ||
+    titleText.includes("generative design") ||
+    titleText.includes("topology optimization") ||
+    titleText.includes("설계 자동화") ||
+    titleText.includes("계산설계")
+  ) {
+    return "AI 생산제조";
   }
   if (
     text.includes("manufacturing") ||
@@ -1612,6 +1640,7 @@ function deriveSubtopics(paper) {
 
   if (hasAny(text, ["multi-material", "multimaterial", "mmam", "multi material", "다중재료"])) subtopics.add("MMAM");
   if (hasAny(text, ["functionally graded", "fgam", "graded", "gradient", "기능성 구배", "구배"])) subtopics.add("FGAM");
+  if (hasAny(text, ["volumetric additive manufacturing", "volumetric am", "volumetric printing", "computed axial lithography", "tomographic printing", "tomographic volumetric", "xolography"])) subtopics.add("Volumetric AM");
   if (hasAny(text, ["dm filament", "digital material", "blended fdm", "디지털 재료"])) subtopics.add("DM filament");
   if (hasAny(text, ["fdm", "fused deposition", "material extrusion", "filament", "압출"])) subtopics.add("FDM/Material extrusion");
   if (hasAny(text, ["dlp", "digital light processing", "vat photopolymerization", "vat photopolymerisation", "stereolithography", "sla"])) subtopics.add("DLP");
@@ -1630,6 +1659,9 @@ function deriveSubtopics(paper) {
     hasAny(text, ["manufacturing", "production", "fabrication", "assembly", "machining", "welding", "printing", "additive", "제조", "생산", "제작", "조립", "가공"])
   ) {
     subtopics.add("Robot-based Manufacturing");
+  }
+  if (hasAny(text, ["soft robotics", "soft robotic", "soft gripper", "soft finger", "fin-ray", "fin ray", "pneumatic actuator"])) {
+    subtopics.add("Soft robotics");
   }
   if (hasAny(text, ["self-driving lab", "self driving lab", "self-driving laboratory", "autonomous laboratory", "autonomous lab", "autonomous experiment", "autonomous experimentation", "closed-loop experimentation", "closed loop experimentation", "closed-loop experiment", "closed loop experiment", "robot scientist", "active learning", "bayesian optimization", "자율 실험실", "자동화 실험", "자율 실험", "로봇 자율 실험"])) {
     subtopics.add("Self-driving Labs");
