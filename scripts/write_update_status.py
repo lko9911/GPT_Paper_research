@@ -34,7 +34,7 @@ def main() -> None:
         "update_step_outcome": os.getenv("UPDATE_STEP_OUTCOME", ""),
         "commit_step_outcome": os.getenv("COMMIT_STEP_OUTCOME", ""),
         "deploy_step_outcome": os.getenv("DEPLOY_STEP_OUTCOME", ""),
-        "schedule": os.getenv("UPDATE_CRON_DESCRIPTION", "17 */6 * * *"),
+        "schedule": os.getenv("UPDATE_CRON_DESCRIPTION", "17 */12 * * *"),
         "last_successful_collection_utc": site_meta.get("last_run_at_utc", ""),
         "last_successful_collection_kst": _kst_display(site_meta.get("last_run_at_utc", "")),
         "paper_count": site_meta.get("paper_count", 0),
@@ -58,6 +58,7 @@ def _markdown(payload: dict[str, object]) -> str:
     deploy = str(payload.get("deploy_step_outcome") or "unknown")
     run_url = str(payload.get("run_url") or "")
     run_link = f"[{payload.get('run_id')}]({run_url})" if run_url else str(payload.get("run_id") or "-")
+    kst_times = _schedule_kst_times(str(payload.get("schedule") or ""))
     return f"""# Update Status
 
 This file is written by GitHub Actions so the latest paper-update state can be checked without opening the Actions UI.
@@ -86,7 +87,7 @@ This file is written by GitHub Actions so the latest paper-update state can be c
 ## Schedule
 
 - Cron: `{payload.get('schedule')}`
-- Approximate KST times: `03:17`, `09:17`, `15:17`, `21:17`
+- Approximate KST times: {kst_times}
 - OpenAI in scheduled updates: `disabled`
 
 ## Notes
@@ -103,6 +104,16 @@ def _run_url() -> str:
     if not repo or not run_id:
         return ""
     return f"https://github.com/{repo}/actions/runs/{run_id}"
+
+
+def _schedule_kst_times(schedule: str) -> str:
+    if schedule == "17 */12 * * *":
+        return "`09:17`, `21:17`"
+    if schedule == "17 * * * *":
+        return "`HH:17` every hour"
+    if schedule == "0 * * * *":
+        return "`HH:00` every hour"
+    return "`see cron expression`"
 
 
 def _kst_display(value: str) -> str:

@@ -25,8 +25,8 @@ This file is written by GitHub Actions so the latest paper-update state can be c
 
 ## Schedule
 
-- Cron: `17 */6 * * *`
-- Approximate KST times: `03:17`, `09:17`, `15:17`, `21:17`
+- Cron: `17 */12 * * *`
+- Approximate KST times: `09:17`, `21:17`
 - OpenAI in scheduled updates: `disabled`
 
 ## Notes
