@@ -3983,6 +3983,49 @@
 
 ### Follow-up
 - None.
+# 2026-06-15 15:20
+## 변경 요약
+- 사용자가 다시 확인한 `3D Printing > Multi-material AM 286` 과카운트 문제를 재조사했습니다.
+- 실제 원인은 `categories`였습니다. 현재 데이터에서 `다중재료 적층제조` category가 690편에 붙어 있어, sidebar subtopic 판정에 category를 사용하면 거의 모든 3D Printing 논문이 `MMAM`으로 먼저 배정되었습니다.
+- sidebar subtopic 판정에서 categories를 제외하고, 제목/venue/실제 tags만 사용하도록 수정했습니다.
+
+## 수정/생성한 파일
+- `assets/app.js`: `paperHasRepresentativeTopic()`, `deriveSubtopics()`, `collapseMaterialExtrusionTags()`에서 category 기반 subtopic 판정을 제거했습니다.
+- `index.html`: GitHub Pages 캐시 무효화를 위해 `assets/app.js` query version을 `20260615-0130`으로 갱신했습니다.
+- `AGENT_LOG.md`: 이번 진짜 원인과 수정 기준을 기록했습니다.
+- `PROJECT_STATUS.md`: sidebar count 정책을 갱신했습니다.
+
+## 구현한 기능
+- `다중재료 적층제조` 같은 broad category가 `MMAM` 하위 버킷을 과점하지 않도록 했습니다.
+- 3D Printing 하위 토픽 카운트가 실제 제목/venue/tags 기반으로 분산되도록 했습니다.
+
+## 검증 결과
+- 수정 후 로컬 데이터 기준 예상 3D Printing 하위 카운트:
+  - Multi-material AM: 81
+  - Functionally Graded AM: 19
+  - Volumetric AM: 54
+  - DLP: 16
+  - FDM: 18
+  - Toolpath Strategy: 12
+  - Material Switching: 2
+  - Additive Manufacturing: 94
+  - Others: 1
+- `python -m json.tool data/papers.json` 통과
+- `git diff --check` 통과
+
+## 설계 결정
+- categories는 broad curation label로 보고, sidebar의 세부 subtopic bucket 근거에서는 제외합니다.
+- sidebar subtopic count는 제목, venue, canonical tags만 사용합니다.
+- categories는 paper card metadata와 broad filtering/context에는 남길 수 있지만, 세부 topic count를 결정하면 과카운트가 발생합니다.
+
+## 남은 작업
+- GitHub Pages 반영 후 사용자가 보던 `Multi-material AM 286`이 `81` 전후로 내려오는지 확인합니다.
+
+## 주의사항
+- OpenAI API는 사용하지 않았습니다.
+- data file은 수정하지 않았습니다.
+- raw abstract 또는 PDF 저장/표시는 하지 않았습니다.
+
 # 2026-06-15 15:17
 ## 변경 요약
 - 3D Printing 하위에서 `Multi-material AM`이 288편으로 과도하게 카운팅되고, `FDM`, `Additive Manufacturing` 등이 0으로 보이는 문제를 조사했습니다.

@@ -1282,7 +1282,6 @@ function paperHasRepresentativeTopic(paper, topic) {
     ...(paper.tags || []),
     ...visibleTags(paper),
     ...deriveSubtopics(paper),
-    ...(paper.categories || []),
   ];
   return candidates.some((tag) => normalizeTopicKey(canonicalTopicLabel(tag)) === target);
 }
@@ -1297,7 +1296,6 @@ function collapseMaterialExtrusionTags(tags, paper) {
       paper.title,
       paper.venue,
       (paper.tags || []).join(" "),
-      (paper.categories || []).join(" "),
     ].join(" ")
   );
 
@@ -1664,7 +1662,6 @@ function deriveSubtopics(paper) {
       paper.title,
       paper.venue,
       (paper.tags || []).join(" "),
-      (paper.categories || []).join(" "),
     ].join(" ")
   );
   const subtopics = new Set();
