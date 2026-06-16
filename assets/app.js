@@ -369,6 +369,10 @@ const DEFAULT_THEME = "dark";
 const DEFAULT_LANGUAGE = "en";
 const DEFAULT_DENSITY = "comfortable";
 const PREFERENCE_VERSION = "20260612-en-dark";
+const UPDATE_STATUS_URLS = [
+  "https://raw.githubusercontent.com/lko9911/GPT_Paper_research/main/data/update_status.json",
+  "data/update_status.json",
+];
 
 if (localStorage.getItem("preferenceVersion") !== PREFERENCE_VERSION) {
   localStorage.setItem("theme", DEFAULT_THEME);
@@ -443,14 +447,7 @@ async function init() {
     console.warn("Failed to load site_meta.json", error);
     state.siteMeta = null;
   }
-  try {
-    const response = await fetch(`data/update_status.json?ts=${Date.now()}`);
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    state.updateStatus = await response.json();
-  } catch (error) {
-    console.warn("Failed to load update_status.json", error);
-    state.updateStatus = null;
-  }
+  state.updateStatus = await loadUpdateStatus();
 
   buildFilters();
   buildSideNav();
@@ -860,6 +857,19 @@ function renderUpdatedStat(lastRunAt) {
   }
   const updatedLabel = state.language === "ko" ? "수집" : "updated";
   els.updated.innerHTML = `${escapeHtml(now.date)}<small>${escapeHtml(now.time)} KST · ${escapeHtml(updatedLabel)} ${escapeHtml(lastRun.time)} KST${attempt ? ` · ${escapeHtml(attempt)}` : ""}</small>`;
+}
+
+async function loadUpdateStatus() {
+  for (const url of UPDATE_STATUS_URLS) {
+    try {
+      const response = await fetch(`${url}?ts=${Date.now()}`);
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      return await response.json();
+    } catch (error) {
+      console.warn(`Failed to load update status from ${url}`, error);
+    }
+  }
+  return null;
 }
 
 function updateAttemptDisplay() {
