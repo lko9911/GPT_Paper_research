@@ -8,6 +8,7 @@
 - GitHub Actions schedule이 예정 시각에 run을 만들지 않으면 사이트의 `Now / Updated` 패널은 `run not seen yet` / `시도 미감지` 상태를 표시합니다.
 - OpenAI 요약은 별도 `OpenAI summary refresh` 수동 workflow에서 사용자가 `confirm_openai_cost=true`를 선택한 경우에만 실행됩니다. 별도의 `OPENAI_REFRESH_ENABLED` repository variable을 열 필요는 없습니다.
 - OpenAI 요약 workflow 상태는 `OPENAI_SUMMARY_STATUS.md`와 `data/openai_summary_status.json`에 기록되며, 논문 수집 상태인 `UPDATE_STATUS.md`와 분리됩니다.
+- `OpenAI summary refresh`의 `dry_run` 기본값은 `false`입니다. 버튼 실행 시 실제 저장/배포가 기본이며, 테스트만 하려면 사용자가 직접 `dry_run=true`로 바꿔야 합니다.
 
 ## 2026-06-15 최신 상태
 

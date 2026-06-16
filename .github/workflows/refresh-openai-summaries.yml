@@ -20,11 +20,11 @@ on:
       dry_run:
         description: "Run without writing data changes."
         required: true
-        default: "true"
+        default: "false"
         type: choice
         options:
-          - "true"
           - "false"
+          - "true"
       confirm_openai_cost:
         description: "Required cost guard. Select true only when you intentionally want to call the OpenAI API."
         required: true
