@@ -3983,6 +3983,33 @@
 
 ### Follow-up
 - None.
+# 2026-06-16 09:37
+## 변경 요약
+- 정기 논문 업데이트가 누락됐는지 확인했습니다.
+- `UPDATE_STATUS.md`와 GitHub Actions run `27564111702` 확인 결과, 2026-06-16 03:27 KST에 체크된 scheduled run이 `cancelled` 상태였습니다.
+- 원인은 논문 업데이트 job이 기존 `timeout-minutes: 60` 제한을 초과했기 때문입니다.
+
+## 수정/생성한 파일
+- `.github/workflows/update-papers.yml`: `Update papers` job timeout을 60분에서 180분으로 늘렸습니다.
+- `AGENT_LOG.md`: 이번 원인 분석과 변경 사항을 기록했습니다.
+
+## 구현한 기능
+- 12시간 주기 업데이트가 검색어/target venue 검색량 때문에 1시간을 넘겨도 중간 취소되지 않도록 했습니다.
+
+## 설계 결정
+- 현재 검색어가 60개 이상이고 OpenAlex/Crossref 및 target venue 검색을 수행하므로, 60분 제한은 안정적인 정기 업데이트에 부족하다고 판단했습니다.
+- API 호출량을 즉시 줄이지 않고 timeout을 180분으로 늘렸습니다. 사용자가 원한 것은 주기적인 누락 없는 업데이트이며, OpenAI API는 scheduled update에서 계속 비활성화되어 있으므로 비용 증가는 없습니다.
+- `UPDATE_STATUS.md`는 Actions가 쓰는 상태 파일이므로 로컬에서 성공 상태로 조작하지 않았습니다.
+
+## 남은 작업
+- 다음 scheduled run 또는 수동 `workflow_dispatch` 실행 후 `UPDATE_STATUS.md`가 `success`로 갱신되는지 확인해야 합니다.
+- 업데이트 시간이 여전히 길면 target venue 검색을 더 효율화하거나 query batch를 나누는 개선이 필요합니다.
+
+## 주의사항
+- OpenAI API는 사용하지 않았습니다.
+- 논문 데이터 파일은 수정하지 않았습니다.
+- raw abstract 또는 PDF 저장/표시는 하지 않았습니다.
+
 # 2026-06-15 15:27
 ## 변경 요약
 - `DLP` 안에 `SLA`, `vat photopolymerization`, `stereolithography`가 섞여 있던 문제를 분리했습니다.
