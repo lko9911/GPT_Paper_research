@@ -870,6 +870,8 @@ function updateAttemptDisplay() {
   if (phase === "in_progress" || jobStatus === "in_progress" || updateStep === "running") {
     return state.language === "ko" ? "업데이트 중" : "updating now";
   }
+  const missedSchedule = missedScheduleDisplay(status);
+  if (missedSchedule) return missedSchedule;
   const checked = formatRunTime(status.checked_at_utc);
   const checkedText = checked ? checked.time : "";
   if (jobStatus === "failure" || jobStatus === "failed" || updateStep === "failure") {
@@ -886,6 +888,41 @@ function updateAttemptDisplay() {
     return state.language === "ko" ? `최근 확인 ${checkedText}` : `checked ${checkedText}`;
   }
   return "";
+}
+
+function missedScheduleDisplay(status) {
+  const dueAt = latestScheduledRunUtc(status.schedule);
+  if (!dueAt) return "";
+  const checkedAt = parseDate(status.checked_at_utc);
+  if (checkedAt && checkedAt.getTime() >= dueAt.getTime()) return "";
+  const due = formatRunTime(dueAt.toISOString());
+  const dueText = due ? due.time : "";
+  return state.language === "ko"
+    ? `${dueText} 시도 미감지`
+    : `${dueText} run not seen yet`;
+}
+
+function latestScheduledRunUtc(schedule) {
+  const knownSchedules = new Set(["17 1,13 * * *", "17 */12 * * *"]);
+  if (schedule && !knownSchedules.has(schedule)) return null;
+  const now = new Date();
+  const candidates = [1, 13].map((hour) => {
+    const date = new Date(now);
+    date.setUTCSeconds(0, 0);
+    date.setUTCMinutes(17);
+    date.setUTCHours(hour);
+    if (date.getTime() > now.getTime()) {
+      date.setUTCDate(date.getUTCDate() - 1);
+    }
+    return date;
+  });
+  return candidates.sort((a, b) => b.getTime() - a.getTime())[0];
+}
+
+function parseDate(value) {
+  if (!value) return null;
+  const date = new Date(value);
+  return Number.isNaN(date.getTime()) ? null : date;
 }
 
 function renderTotalStat(lastRunAt) {

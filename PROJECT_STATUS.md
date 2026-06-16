@@ -212,4 +212,5 @@ GitHub Pages에서 동작 가능한 정적 논문 큐레이션 사이트와 GitH
 - Scheduled paper updates run at `10:17` and `22:17` KST (`17 1,13 * * *` UTC cron).
 - The update workflow writes `UPDATE_STATUS.md` and `data/update_status.json` at the start of a run with `update_phase=in_progress`, then writes the final success/failure/cancelled state at the end.
 - The website reads `data/update_status.json` and shows update attempt state in the `Now / Updated` panel, so users can distinguish an update currently running, a failed/cancelled attempt, and the last successful collection time.
+- If the scheduled time has passed but `data/update_status.json` was not updated after that scheduled time, the website now shows a "run not seen yet" / "시도 미감지" message. This covers the GitHub Actions case where the scheduled event itself is delayed or dropped before any workflow step can write status.
 - Scheduled updates still do not call OpenAI. OpenAI summary refresh remains manual only.
