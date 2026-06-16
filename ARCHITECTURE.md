@@ -36,7 +36,7 @@
 
 현재 관련 workflow는 두 종류입니다.
 
-- `.github/workflows/update-papers.yml`: 12시간 주기/수동 실행으로 논문 데이터를 수집하고, 변경 사항을 커밋한 뒤 GitHub Pages를 직접 배포합니다.
+- `.github/workflows/update-papers.yml`: 6시간 주기/수동 실행으로 논문 데이터를 수집하고, 변경 사항을 커밋한 뒤 GitHub Pages를 직접 배포합니다.
 - `.github/workflows/deploy-pages.yml`: `main` push 또는 수동 실행 시 정적 사이트를 GitHub Pages에 배포합니다.
 
 ## 전체 시스템 구조
@@ -128,7 +128,7 @@
 
 ## GitHub Actions workflow 구조
 
-`.github/workflows/update-papers.yml`은 12시간마다 실행되며 `workflow_dispatch` 수동 실행도 지원합니다. 현재 cron은 `17 */12 * * *`이며, KST 기준 대략 `09:17`, `21:17`에 실행됩니다.
+`.github/workflows/update-papers.yml`은 6시간마다 실행되며 `workflow_dispatch` 수동 실행도 지원합니다. 현재 cron은 `17 1,7,13,19 * * *`이며, KST 기준 `04:17`, `10:17`, `16:17`, `22:17`에 실행됩니다.
 
 주요 단계:
 

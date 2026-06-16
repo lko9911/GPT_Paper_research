@@ -903,10 +903,10 @@ function missedScheduleDisplay(status) {
 }
 
 function latestScheduledRunUtc(schedule) {
-  const knownSchedules = new Set(["17 1,13 * * *", "17 */12 * * *"]);
+  const knownSchedules = new Set(["17 1,7,13,19 * * *", "17 1,13 * * *", "17 */12 * * *"]);
   if (schedule && !knownSchedules.has(schedule)) return null;
   const now = new Date();
-  const candidates = [1, 13].map((hour) => {
+  const candidates = [1, 7, 13, 19].map((hour) => {
     const date = new Date(now);
     date.setUTCSeconds(0, 0);
     date.setUTCMinutes(17);

@@ -2,7 +2,7 @@ name: Update papers
 
 on:
   schedule:
-    - cron: "17 1,13 * * *"
+    - cron: "17 1,7,13,19 * * *"
   workflow_dispatch:
 
 permissions:
@@ -32,7 +32,7 @@ jobs:
           UPDATE_STEP_OUTCOME: "running"
           COMMIT_STEP_OUTCOME: "pending"
           DEPLOY_STEP_OUTCOME: "pending"
-          UPDATE_CRON_DESCRIPTION: "17 1,13 * * *"
+          UPDATE_CRON_DESCRIPTION: "17 1,7,13,19 * * *"
         run: python scripts/write_update_status.py
 
       - name: Commit update status started
@@ -100,7 +100,7 @@ jobs:
           UPDATE_STEP_OUTCOME: ${{ steps.update_papers.outcome }}
           COMMIT_STEP_OUTCOME: ${{ steps.commit_data.outcome }}
           DEPLOY_STEP_OUTCOME: ${{ steps.deployment.outcome }}
-          UPDATE_CRON_DESCRIPTION: "17 1,13 * * *"
+          UPDATE_CRON_DESCRIPTION: "17 1,7,13,19 * * *"
         run: python scripts/write_update_status.py
 
       - name: Commit update status

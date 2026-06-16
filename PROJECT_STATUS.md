@@ -1,9 +1,16 @@
 # PROJECT_STATUS
 
+## 2026-06-16 최신 상태
+
+- `Update papers` 정기 실행 주기를 6시간마다로 변경했습니다.
+- 현재 목표 cron은 `17 1,7,13,19 * * *`이며 KST 기준 `04:17`, `10:17`, `16:17`, `22:17`에 실행됩니다.
+- 정기 업데이트는 OpenAI API를 사용하지 않습니다. 새 논문은 사용자가 별도로 허가하기 전까지 metadata/fallback summary 상태로 들어갑니다.
+- GitHub Actions schedule이 예정 시각에 run을 만들지 않으면 사이트의 `Now / Updated` 패널은 `run not seen yet` / `시도 미감지` 상태를 표시합니다.
+
 ## 2026-06-15 최신 상태
 
-- 사용자의 운영 의도에 맞춰 `Update papers` 정기 실행 주기를 12시간마다로 정리했습니다.
-- 현재 목표 cron은 `17 */12 * * *`이며 KST 기준 대략 `09:17`, `21:17`에 실행됩니다.
+- 사용자의 운영 의도에 맞춰 `Update papers` 정기 실행 주기를 6시간마다로 정리했습니다.
+- 현재 목표 cron은 `17 1,7,13,19 * * *`이며 KST 기준 `04:17`, `10:17`, `16:17`, `22:17`에 실행됩니다.
 - 정기 업데이트는 여전히 OpenAI API를 사용하지 않습니다. 신규 논문은 사용자가 별도로 허가하기 전까지 metadata/fallback summary로 들어옵니다.
 
 ## 2026-06-13 13:26 최신 상태
@@ -209,7 +216,7 @@ GitHub Pages에서 동작 가능한 정적 논문 큐레이션 사이트와 GitH
 - Photopolymerization process tags are split: `DLP` is displayed as `Digital Light Processing (DLP)`, `SLA` as `Stereolithography (SLA)`, and `Vat photopolymerization` as its own process tag. Generic `photopolymerization` alone is not enough to assign DLP/SLA/vat tags.
 
 ## Current Update Status Policy
-- Scheduled paper updates run at `10:17` and `22:17` KST (`17 1,13 * * *` UTC cron).
+- Scheduled paper updates run every 6 hours at `04:17`, `10:17`, `16:17`, and `22:17` KST (`17 1,7,13,19 * * *` UTC cron).
 - The update workflow writes `UPDATE_STATUS.md` and `data/update_status.json` at the start of a run with `update_phase=in_progress`, then writes the final success/failure/cancelled state at the end.
 - The website reads `data/update_status.json` and shows update attempt state in the `Now / Updated` panel, so users can distinguish an update currently running, a failed/cancelled attempt, and the last successful collection time.
 - If the scheduled time has passed but `data/update_status.json` was not updated after that scheduled time, the website now shows a "run not seen yet" / "시도 미감지" message. This covers the GitHub Actions case where the scheduled event itself is delayed or dropped before any workflow step can write status.
