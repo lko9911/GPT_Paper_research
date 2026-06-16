@@ -30,7 +30,7 @@
 GitHub 저장소의 `Settings > Secrets and variables > Actions`에서 다음 값을 설정할 수 있습니다.
 
 - `CONTACT_EMAIL`: OpenAlex/Crossref polite pool 및 User-Agent에 사용할 연락 이메일입니다.
-- `OPENAI_API_KEY`: 선택 사항입니다. 정기 업데이트에는 사용하지 않고, 사용자가 명시적으로 허가한 수동 `Refresh OpenAI summaries` workflow에서만 5문항 형식의 한글/영문 요약 생성에 사용합니다.
+- `OPENAI_API_KEY`: 선택 사항입니다. 정기 업데이트에는 사용하지 않고, 사용자가 명시적으로 허가한 수동 `OpenAI summary refresh` workflow에서만 5문항 형식의 한글/영문 요약 생성에 사용합니다.
 - `SEMANTIC_SCHOLAR_API_KEY`: 선택 사항입니다. 있으면 DOI 기반 Semantic Scholar 메타데이터 보강을 시도합니다.
 - `OPENAI_MODEL`: 선택 사항입니다. Repository variable로 설정하며 기본값은 `gpt-4o-mini`입니다.
 
@@ -70,7 +70,7 @@ python -m http.server 8000
 `OPENAI_API_KEY`를 GitHub Actions secret에 설정한 뒤, 기존 논문 요약을 OpenAI 기반 5문항 한글/영문 형식으로 다시 만들 수 있습니다.
 
 1. GitHub 저장소의 `Actions` 탭으로 이동합니다.
-2. `Refresh OpenAI summaries` workflow를 선택합니다.
+2. `OpenAI summary refresh` workflow를 선택합니다.
 3. `Run workflow`를 누릅니다.
 4. 전체 라이브러리를 갱신하려면 다음 값을 사용합니다.
 

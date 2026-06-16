@@ -1,5 +1,38 @@
 # AGENT_LOG
 
+## 2026-06-16 11:32
+### 변경 요약
+- OpenAI 요약 workflow를 `Update papers`처럼 더 명확한 별도 운영 단위로 분리했습니다.
+- Actions에 표시되는 이름을 `OpenAI summary refresh`로 바꾸고, OpenAI 요약 전용 상태 파일을 추가했습니다.
+
+### 수정/생성한 파일
+- `.github/workflows/refresh-openai-summaries.yml`: workflow 표시 이름을 `OpenAI summary refresh`로 변경하고, 시작/종료 시 전용 status 파일을 기록/커밋하도록 step을 추가했습니다.
+- `scripts/write_openai_summary_status.py`: OpenAI 요약 workflow 상태를 `OPENAI_SUMMARY_STATUS.md`와 `data/openai_summary_status.json`에 쓰는 스크립트를 추가했습니다.
+- `OPENAI_SUMMARY_STATUS.md`: OpenAI 요약 workflow의 공개 상태 확인 파일을 추가했습니다.
+- `data/openai_summary_status.json`: 사이트/자동화에서 읽을 수 있는 OpenAI 요약 workflow 상태 JSON을 추가했습니다.
+- `README.md`: 사용자가 Actions에서 선택할 workflow 이름을 `OpenAI summary refresh`로 정리했습니다.
+- `ARCHITECTURE.md`: OpenAI 요약 workflow와 상태 파일이 논문 업데이트 workflow와 분리되어 있음을 문서화했습니다.
+- `PROJECT_STATUS.md`: 현재 OpenAI 요약 운영 상태와 별도 status 파일 정책을 기록했습니다.
+- `AGENT_LOG.md`: 이번 분리 작업을 기록했습니다.
+
+### 구현한 기능
+- `Update papers`는 논문 수집 상태를 `UPDATE_STATUS.md`/`data/update_status.json`에 기록합니다.
+- `OpenAI summary refresh`는 OpenAI 요약 상태를 `OPENAI_SUMMARY_STATUS.md`/`data/openai_summary_status.json`에 기록합니다.
+- OpenAI 요약 workflow가 시작되면 `in_progress` 상태를 먼저 커밋하고, 종료 시 성공/실패/스킵 결과를 다시 커밋합니다.
+
+### 설계 결정
+- 비용이 발생하는 OpenAI 요약 작업과 무료/정기 논문 수집 작업은 상태 파일까지 분리하는 편이 운영상 더 안전하다고 판단했습니다.
+- OpenAI 요약 workflow는 계속 수동 전용이며, `confirm_openai_cost=true`가 없으면 실행을 차단합니다.
+- 초기 status 파일은 `not_run_yet` 상태로 추가했습니다. 실제 workflow가 한 번 실행되면 자동으로 최신 run 정보로 갱신됩니다.
+
+### 남은 작업
+- GitHub Actions에서 `OpenAI summary refresh`가 별도 항목으로 보이는지 확인합니다.
+- 필요하면 사이트 footer나 개발자 영역에 `OPENAI_SUMMARY_STATUS.md` 링크를 추가할 수 있습니다.
+
+### 주의사항
+- OpenAI API는 이번 변경 중 호출하지 않았습니다.
+- secret/token 값은 문서와 로그에 기록하지 않았습니다.
+
 ## 2026-06-16 11:20
 ### 변경 요약
 - OpenAI 요약도 논문 업데이트처럼 사용자가 GitHub Actions에서 직접 수동 실행할 수 있도록 workflow 사용성을 개선했습니다.
