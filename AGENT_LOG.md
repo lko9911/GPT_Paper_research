@@ -1,5 +1,36 @@
 # AGENT_LOG
 
+## 2026-06-16 11:20
+### 변경 요약
+- OpenAI 요약도 논문 업데이트처럼 사용자가 GitHub Actions에서 직접 수동 실행할 수 있도록 workflow 사용성을 개선했습니다.
+- 기존에는 `OPENAI_REFRESH_ENABLED=true` repository variable을 별도로 열어야 했지만, 이제 `Run workflow` 화면에서 `confirm_openai_cost=true`를 선택하면 실행됩니다.
+- 기본 `dry_run` 값을 `true`로 바꿔 실수로 비용이 발생하는 위험을 줄였습니다.
+
+### 수정/생성한 파일
+- `.github/workflows/refresh-openai-summaries.yml`: `confirm_openai_cost` 입력을 추가하고, `OPENAI_REFRESH_ENABLED` repository variable gate를 제거했습니다. `dry_run` 기본값을 `true`로 변경하고 커밋 전 `git pull --rebase --autostash origin main`을 추가했습니다.
+- `README.md`: 수동 OpenAI 요약 실행 예시에 `confirm_openai_cost=true`를 추가하고 dry-run/실행 방법을 설명했습니다.
+- `ARCHITECTURE.md`: OpenAI 요약 workflow의 입력값과 비용 확인 정책을 최신화했습니다.
+- `PROJECT_STATUS.md`: 현재 OpenAI 요약 운영 방식이 수동 workflow + `confirm_openai_cost=true` 기준임을 기록했습니다.
+- `AGENT_LOG.md`: 이번 변경의 이유와 주의사항을 기록했습니다.
+
+### 구현한 기능
+- 사용자는 GitHub Actions의 `Refresh OpenAI summaries`에서 `Run workflow`를 누르고 입력값을 선택해 OpenAI 요약을 직접 실행할 수 있습니다.
+- `confirm_openai_cost=false`이면 workflow가 즉시 중단되어 OpenAI API가 호출되지 않습니다.
+- `OPENAI_API_KEY`가 repository secret에 없으면 workflow가 즉시 중단됩니다.
+
+### 설계 결정
+- 비용이 발생하는 작업이므로 완전 자동 또는 정기 실행은 계속 금지했습니다.
+- 숨겨진 repository variable 대신 workflow 입력값으로 명시적 비용 확인을 받는 방식이 사용자가 직접 운영하기 쉽다고 판단했습니다.
+- 기본값은 `dry_run=true`로 두어 사용자가 먼저 작은 batch 테스트를 할 수 있게 했습니다.
+
+### 남은 작업
+- GitHub Actions 화면에서 `Refresh OpenAI summaries`를 `max_summaries=5`, `refresh_mode=metadata`, `dry_run=true`, `confirm_openai_cost=true`로 테스트하면 입력 흐름을 안전하게 확인할 수 있습니다.
+- 실제 반영 시에는 `dry_run=false`로 바꾸고 batch 크기를 비용에 맞춰 조정합니다.
+
+### 주의사항
+- OpenAI API key, secret, token은 문서와 로그에 기록하지 않습니다.
+- 정기 `Update papers` workflow는 여전히 OpenAI API를 호출하지 않습니다.
+
 ## 2026-06-16 11:06
 ### 변경 요약
 - 사용자가 `Run workflow`를 눌렀고 GitHub Actions run #17은 실제로 `in_progress` 상태였지만, 사이트 UI가 여전히 이전 상태를 보여주는 원인을 확인했습니다.
