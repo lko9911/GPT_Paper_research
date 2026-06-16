@@ -1,5 +1,31 @@
 # AGENT_LOG
 
+## 2026-06-16 11:45
+### 변경 요약
+- 사용자의 의도에 맞춰 `OpenAI summary refresh` workflow의 `dry_run` 기본값을 `false`로 변경했습니다.
+- 이제 사용자가 버튼을 눌러 실행하면 기본적으로 OpenAI Q5 요약 결과가 `data/papers.json`에 저장되고 사이트에 반영됩니다.
+
+### 수정/생성한 파일
+- `.github/workflows/refresh-openai-summaries.yml`: `dry_run` 기본값을 `false`로 바꾸고 선택지 순서도 `false`, `true`로 정리했습니다.
+- `README.md`: 기본 실행은 저장/반영이며, 테스트만 원할 때 `dry_run=true`로 바꾸라고 설명을 갱신했습니다.
+- `PROJECT_STATUS.md`: 현재 운영 정책에 `dry_run=false` 기본값을 기록했습니다.
+- `AGENT_LOG.md`: 이번 변경의 이유와 주의사항을 기록했습니다.
+
+### 구현한 기능
+- `OpenAI summary refresh` 수동 실행 시 기본값 기준으로 실제 요약 반영이 일어납니다.
+- 비용 확인 안전장치인 `confirm_openai_cost=true` 요구는 그대로 유지됩니다.
+
+### 설계 결정
+- 사용자의 목적이 metadata summary 논문을 실제 OpenAI Q5 요약으로 바꾸는 것이므로 `dry_run=false`가 더 적합하다고 판단했습니다.
+- 실수 비용 방지는 `confirm_openai_cost=false` 기본값으로 담당하게 했습니다.
+
+### 남은 작업
+- GitHub Actions 화면에서 `OpenAI summary refresh` 실행 시 `dry_run` 기본값이 `false`로 보이는지 확인합니다.
+
+### 주의사항
+- `confirm_openai_cost=true`를 선택하지 않으면 OpenAI API는 호출되지 않습니다.
+- OpenAI API는 이번 변경 중 호출하지 않았습니다.
+
 ## 2026-06-16 11:32
 ### 변경 요약
 - OpenAI 요약 workflow를 `Update papers`처럼 더 명확한 별도 운영 단위로 분리했습니다.

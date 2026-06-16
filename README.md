@@ -81,7 +81,7 @@ dry_run: false
 confirm_openai_cost: true
 ```
 
-`confirm_openai_cost=true`를 선택해야 실제 OpenAI API 호출이 허용됩니다. 기본값은 `dry_run=true`이므로 비용 테스트만 하려면 `max_summaries=5`, `dry_run=true`, `confirm_openai_cost=true`로 먼저 실행하세요. 실제로 저장하려면 `dry_run=false`로 실행합니다.
+`confirm_openai_cost=true`를 선택해야 실제 OpenAI API 호출이 허용됩니다. 기본값은 `dry_run=false`라서 실행하면 결과가 저장됩니다. 비용 테스트만 하고 사이트에 반영하지 않으려면 `max_summaries=5`, `dry_run=true`, `confirm_openai_cost=true`로 바꿔 실행하세요.
 
 이 workflow는 정기 실행되지 않고 수동 실행만 지원합니다. 따라서 OpenAI 비용이 주기적으로 반복 발생하지 않습니다.
 
