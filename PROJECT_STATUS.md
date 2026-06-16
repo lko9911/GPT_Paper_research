@@ -6,7 +6,8 @@
 - 현재 목표 cron은 `17 1,7,13,19 * * *`이며 KST 기준 `04:17`, `10:17`, `16:17`, `22:17`에 실행됩니다.
 - 정기 업데이트는 OpenAI API를 사용하지 않습니다. 새 논문은 사용자가 별도로 허가하기 전까지 metadata/fallback summary 상태로 들어갑니다.
 - GitHub Actions schedule이 예정 시각에 run을 만들지 않으면 사이트의 `Now / Updated` 패널은 `run not seen yet` / `시도 미감지` 상태를 표시합니다.
-- OpenAI 요약은 `Refresh OpenAI summaries` 수동 workflow에서 사용자가 `confirm_openai_cost=true`를 선택한 경우에만 실행됩니다. 별도의 `OPENAI_REFRESH_ENABLED` repository variable을 열 필요는 없습니다.
+- OpenAI 요약은 별도 `OpenAI summary refresh` 수동 workflow에서 사용자가 `confirm_openai_cost=true`를 선택한 경우에만 실행됩니다. 별도의 `OPENAI_REFRESH_ENABLED` repository variable을 열 필요는 없습니다.
+- OpenAI 요약 workflow 상태는 `OPENAI_SUMMARY_STATUS.md`와 `data/openai_summary_status.json`에 기록되며, 논문 수집 상태인 `UPDATE_STATUS.md`와 분리됩니다.
 
 ## 2026-06-15 최신 상태
 

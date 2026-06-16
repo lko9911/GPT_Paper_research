@@ -140,7 +140,9 @@
 
 새 논문이 없거나 API 일부가 일시 실패해도 전체 워크플로가 불필요하게 실패하지 않도록 fetch 오류는 개별 검색 단위에서 로그를 남기고 계속 진행합니다.
 
-`.github/workflows/refresh-openai-summaries.yml`은 정기 실행되지 않는 수동 workflow입니다. `OPENAI_API_KEY`가 설정된 경우에만 기존 논문을 OpenAI로 5문항 한글/영문 재요약합니다. 비용 폭주를 막기 위해 `max_summaries`, `refresh_mode`, `dry_run`, `confirm_openai_cost` 입력값을 받습니다. 실제 OpenAI 호출은 `confirm_openai_cost=true`를 명시적으로 선택한 경우에만 허용됩니다. 전체 재요약 또는 영문 GPT 요약 채우기는 `max_summaries=400`, `refresh_mode=non_qa`, `dry_run=false`, `confirm_openai_cost=true`로 실행합니다.
+`.github/workflows/refresh-openai-summaries.yml`은 `OpenAI summary refresh`라는 이름으로 Actions에 표시되는 별도 수동 workflow입니다. `OPENAI_API_KEY`가 설정된 경우에만 기존 논문을 OpenAI로 5문항 한글/영문 재요약합니다. 비용 폭주를 막기 위해 `max_summaries`, `refresh_mode`, `dry_run`, `confirm_openai_cost` 입력값을 받습니다. 실제 OpenAI 호출은 `confirm_openai_cost=true`를 명시적으로 선택한 경우에만 허용됩니다. 전체 재요약 또는 영문 GPT 요약 채우기는 `max_summaries=400`, `refresh_mode=non_qa`, `dry_run=false`, `confirm_openai_cost=true`로 실행합니다.
+
+OpenAI 요약 workflow의 상태는 `OPENAI_SUMMARY_STATUS.md`와 `data/openai_summary_status.json`에 기록합니다. 논문 수집 workflow의 `UPDATE_STATUS.md`/`data/update_status.json`과 분리되어 있어, 수집 업데이트와 비용이 발생하는 요약 작업을 별도로 추적할 수 있습니다.
 
 ## API key 및 환경변수
 
