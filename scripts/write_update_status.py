@@ -35,7 +35,7 @@ def main() -> None:
         "commit_step_outcome": os.getenv("COMMIT_STEP_OUTCOME", ""),
         "deploy_step_outcome": os.getenv("DEPLOY_STEP_OUTCOME", ""),
         "update_phase": os.getenv("UPDATE_PHASE", ""),
-        "schedule": os.getenv("UPDATE_CRON_DESCRIPTION", "17 1,13 * * *"),
+        "schedule": os.getenv("UPDATE_CRON_DESCRIPTION", "17 1,7,13,19 * * *"),
         "last_successful_collection_utc": site_meta.get("last_run_at_utc", ""),
         "last_successful_collection_kst": _kst_display(site_meta.get("last_run_at_utc", "")),
         "paper_count": site_meta.get("paper_count", 0),
@@ -110,6 +110,8 @@ def _run_url() -> str:
 
 
 def _schedule_kst_times(schedule: str) -> str:
+    if schedule == "17 1,7,13,19 * * *":
+        return "`04:17`, `10:17`, `16:17`, `22:17`"
     if schedule == "17 1,13 * * *":
         return "`10:17`, `22:17`"
     if schedule == "17 */12 * * *":

@@ -60,7 +60,7 @@ python -m http.server 8000
 
 `.github/workflows/update-papers.yml`은 다음 조건에서 실행됩니다.
 
-- 12시간마다 cron 실행
+- 6시간마다 cron 실행
 - `workflow_dispatch` 수동 실행
 
 워크플로는 Python 의존성을 설치하고 `scripts/update_papers.py`를 실행합니다. `data/papers.json`이 변경된 경우에만 자동 커밋합니다. 새 논문이 없어도 정상 종료되도록 구성해 불필요한 실패 알림을 줄였습니다.
@@ -158,6 +158,6 @@ Science, Nature, Nature Communications, Advanced Materials 같은 게재지도 O
 
 - 저장되는 논문 수에는 상한을 두지 않습니다. 기존 100편 제한은 제거했습니다.
 - OpenAlex와 Crossref의 공식 API 페이징을 사용해 한 페이지보다 넓게 수집합니다.
-- GitHub Actions는 12시간 주기로 안정적으로 끝나야 하므로 실행 1회당 `OPENALEX_MAX_PAGES`, `CROSSREF_MAX_PAGES`, `API_SLEEP_SECONDS`를 사용합니다. 이는 전체 논문 수 제한이 아니라 API rate limit과 Actions timeout을 피하기 위한 실행 예산입니다.
+- GitHub Actions는 6시간 주기로 안정적으로 끝나야 하므로 실행 1회당 `OPENALEX_MAX_PAGES`, `CROSSREF_MAX_PAGES`, `API_SLEEP_SECONDS`를 사용합니다. 이는 전체 논문 수 제한이 아니라 API rate limit과 Actions timeout을 피하기 위한 실행 예산입니다.
 - 더 깊은 일회성 수집이 필요하면 workflow 또는 로컬 환경에서 `OPENALEX_MAX_PAGES`와 `CROSSREF_MAX_PAGES`를 높여 수동 실행하면 됩니다.
 - `data/site_meta.json`에는 마지막 자동 갱신 실행 시각이 저장되며, 사이트 상단의 `최신 업데이트`에 KST 기준으로 표시됩니다.

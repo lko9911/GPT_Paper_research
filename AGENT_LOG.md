@@ -1,5 +1,36 @@
 # AGENT_LOG
 
+## 2026-06-16 10:45
+### 변경 요약
+- GitHub Actions scheduled trigger가 10:17 KST 슬롯에서 새 run을 생성하지 않은 상황을 줄이기 위해 논문 업데이트 주기를 12시간에서 6시간으로 조정했습니다.
+- 새 기준은 KST `04:17`, `10:17`, `16:17`, `22:17`입니다.
+
+### 수정/생성한 파일
+- `.github/workflows/update-papers.yml`: cron을 `17 1,7,13,19 * * *`로 변경하고 status writer에 전달하는 schedule description도 같은 값으로 맞췄습니다.
+- `assets/app.js`: `run not seen yet` 감지 기준을 6시간 슬롯으로 변경했습니다.
+- `scripts/write_update_status.py`: 기본 schedule 및 KST 표시 문구를 6시간 주기로 갱신했습니다.
+- `index.html`: GitHub Pages 캐시 무효화를 위해 `assets/app.js` query version을 갱신했습니다.
+- `PROJECT_STATUS.md`: 현재 update schedule 정책을 6시간 주기로 갱신했습니다.
+- `ARCHITECTURE.md`: workflow 구조 설명의 schedule 정보를 6시간 주기로 갱신했습니다.
+- `AGENT_LOG.md`: 이번 운영 정책 변경을 기록했습니다.
+
+### 구현한 기능
+- 정기 논문 업데이트가 하루 2회가 아니라 하루 4회 시도됩니다.
+- 사이트의 `Now / Updated` 패널은 6시간 기준 예정 시간이 지났는데 상태 파일이 갱신되지 않으면 `run not seen yet` / `시도 미감지`를 표시합니다.
+
+### 설계 결정
+- GitHub Actions schedule은 정확한 실행 보장이 없으므로, 실행 기회를 늘리기 위해 6시간 주기로 조정했습니다.
+- KST 10:17 기준은 유지하고, 같은 minute offset에서 6시간 간격으로 확장했습니다.
+- `UPDATE_STATUS.md`는 마지막 실제 workflow 실행 기록이므로 수동으로 새 schedule처럼 고치지 않았습니다. 다음 workflow가 시작되면 자동으로 새 cron 정보가 기록됩니다.
+
+### 남은 작업
+- 다음 16:17 또는 22:17 KST 슬롯에서 GitHub Actions run이 생성되는지 확인해야 합니다.
+- schedule 누락이 반복되면 외부 스케줄러가 `workflow_dispatch`를 호출하는 구조를 검토합니다.
+
+### 주의사항
+- OpenAI API는 사용하지 않았습니다.
+- 6시간 주기는 API 호출 빈도를 늘리므로 OpenAlex/Crossref rate limit 상황을 계속 관찰해야 합니다.
+
 ## 2026-06-16 10:22
 ### 변경 요약
 - 10:17 KST 정기 업데이트 시간이 지났는데 사이트의 `Now / Updated` 패널이 여전히 이전 업데이트 시각만 보여주는 문제를 점검했습니다.
