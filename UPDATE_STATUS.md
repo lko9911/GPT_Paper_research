@@ -4,16 +4,17 @@ This file is written by GitHub Actions so the latest paper-update state can be c
 
 ## Latest Workflow Check
 
-- Checked at: `2026-06-16T03:27:46+09:00` KST
+- Checked at: `2026-06-16T11:01:14+09:00` KST
 - Workflow: `Update papers`
-- Event: `schedule`
-- Run: [27564111702](https://github.com/lko9911/GPT_Paper_research/actions/runs/27564111702)
-- Job status: `cancelled`
-- Update step: `cancelled`
-- Commit step: `skipped`
-- Deploy step: `skipped`
+- Event: `workflow_dispatch`
+- Run: [27589020286](https://github.com/lko9911/GPT_Paper_research/actions/runs/27589020286)
+- Job status: `in_progress`
+- Update step: `running`
+- Commit step: `pending`
+- Deploy step: `pending`
+- Update phase: `in_progress`
 - Ref: `main`
-- Commit SHA: `58e3fd8f8265048ca380461089c4b0c3f7d131e4`
+- Commit SHA: `e4ed22a602194e524b69b469cc46bbf5c36bd15c`
 
 ## Last Successful Collection
 
@@ -25,8 +26,8 @@ This file is written by GitHub Actions so the latest paper-update state can be c
 
 ## Schedule
 
-- Cron: `17 */12 * * *`
-- Approximate KST times: `09:17`, `21:17`
+- Cron: `17 1,7,13,19 * * *`
+- Approximate KST times: `04:17`, `10:17`, `16:17`, `22:17`
 - OpenAI in scheduled updates: `disabled`
 
 ## Notes
