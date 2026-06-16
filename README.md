@@ -78,9 +78,10 @@ python -m http.server 8000
 max_summaries: 400
 refresh_mode: non_qa
 dry_run: false
+confirm_openai_cost: true
 ```
 
-현재 논문 수가 약 342편이므로 `max_summaries=400`이면 기존 문단형 요약 대부분과 영문 GPT 요약이 비어 있는 항목을 한 번에 5문항 형식으로 바꿀 수 있습니다. 비용 테스트만 하려면 `max_summaries=5`, `dry_run=true`로 먼저 실행하세요.
+`confirm_openai_cost=true`를 선택해야 실제 OpenAI API 호출이 허용됩니다. 기본값은 `dry_run=true`이므로 비용 테스트만 하려면 `max_summaries=5`, `dry_run=true`, `confirm_openai_cost=true`로 먼저 실행하세요. 실제로 저장하려면 `dry_run=false`로 실행합니다.
 
 이 workflow는 정기 실행되지 않고 수동 실행만 지원합니다. 따라서 OpenAI 비용이 주기적으로 반복 발생하지 않습니다.
 
