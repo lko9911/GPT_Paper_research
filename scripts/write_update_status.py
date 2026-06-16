@@ -34,7 +34,8 @@ def main() -> None:
         "update_step_outcome": os.getenv("UPDATE_STEP_OUTCOME", ""),
         "commit_step_outcome": os.getenv("COMMIT_STEP_OUTCOME", ""),
         "deploy_step_outcome": os.getenv("DEPLOY_STEP_OUTCOME", ""),
-        "schedule": os.getenv("UPDATE_CRON_DESCRIPTION", "17 */12 * * *"),
+        "update_phase": os.getenv("UPDATE_PHASE", ""),
+        "schedule": os.getenv("UPDATE_CRON_DESCRIPTION", "17 1,13 * * *"),
         "last_successful_collection_utc": site_meta.get("last_run_at_utc", ""),
         "last_successful_collection_kst": _kst_display(site_meta.get("last_run_at_utc", "")),
         "paper_count": site_meta.get("paper_count", 0),
@@ -56,6 +57,7 @@ def _markdown(payload: dict[str, object]) -> str:
     update = str(payload.get("update_step_outcome") or "unknown")
     commit = str(payload.get("commit_step_outcome") or "unknown")
     deploy = str(payload.get("deploy_step_outcome") or "unknown")
+    phase = str(payload.get("update_phase") or "")
     run_url = str(payload.get("run_url") or "")
     run_link = f"[{payload.get('run_id')}]({run_url})" if run_url else str(payload.get("run_id") or "-")
     kst_times = _schedule_kst_times(str(payload.get("schedule") or ""))
@@ -73,6 +75,7 @@ This file is written by GitHub Actions so the latest paper-update state can be c
 - Update step: `{update}`
 - Commit step: `{commit}`
 - Deploy step: `{deploy}`
+- Update phase: `{phase or status}`
 - Ref: `{payload.get('ref')}`
 - Commit SHA: `{payload.get('sha')}`
 
@@ -107,6 +110,8 @@ def _run_url() -> str:
 
 
 def _schedule_kst_times(schedule: str) -> str:
+    if schedule == "17 1,13 * * *":
+        return "`10:17`, `22:17`"
     if schedule == "17 */12 * * *":
         return "`09:17`, `21:17`"
     if schedule == "17 * * * *":

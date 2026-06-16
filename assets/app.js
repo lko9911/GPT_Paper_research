@@ -380,6 +380,7 @@ if (localStorage.getItem("preferenceVersion") !== PREFERENCE_VERSION) {
 const state = {
   papers: [],
   siteMeta: null,
+  updateStatus: null,
   filtered: [],
   activeTargetVenue: "",
   activeVenueGroup: "",
@@ -441,6 +442,14 @@ async function init() {
   } catch (error) {
     console.warn("Failed to load site_meta.json", error);
     state.siteMeta = null;
+  }
+  try {
+    const response = await fetch(`data/update_status.json?ts=${Date.now()}`);
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    state.updateStatus = await response.json();
+  } catch (error) {
+    console.warn("Failed to load update_status.json", error);
+    state.updateStatus = null;
   }
 
   buildFilters();
@@ -843,13 +852,40 @@ function renderUpdatedStat(lastRunAt) {
   if (!els.updated) return;
   const now = formatKstTime(new Date());
   const lastRun = formatRunTime(lastRunAt);
+  const attempt = updateAttemptDisplay();
   els.updated.classList.add("stat-datetime");
   if (!lastRun) {
-    els.updated.innerHTML = `${escapeHtml(now.date)}<small>${escapeHtml(now.time)} KST</small>`;
+    els.updated.innerHTML = `${escapeHtml(now.date)}<small>${escapeHtml(now.time)} KST${attempt ? ` · ${escapeHtml(attempt)}` : ""}</small>`;
     return;
   }
   const updatedLabel = state.language === "ko" ? "수집" : "updated";
-  els.updated.innerHTML = `${escapeHtml(now.date)}<small>${escapeHtml(now.time)} KST · ${escapeHtml(updatedLabel)} ${escapeHtml(lastRun.time)} KST</small>`;
+  els.updated.innerHTML = `${escapeHtml(now.date)}<small>${escapeHtml(now.time)} KST · ${escapeHtml(updatedLabel)} ${escapeHtml(lastRun.time)} KST${attempt ? ` · ${escapeHtml(attempt)}` : ""}</small>`;
+}
+
+function updateAttemptDisplay() {
+  const status = state.updateStatus || {};
+  const phase = String(status.update_phase || "").toLowerCase();
+  const jobStatus = String(status.job_status || "").toLowerCase();
+  const updateStep = String(status.update_step_outcome || "").toLowerCase();
+  if (phase === "in_progress" || jobStatus === "in_progress" || updateStep === "running") {
+    return state.language === "ko" ? "업데이트 중" : "updating now";
+  }
+  const checked = formatRunTime(status.checked_at_utc);
+  const checkedText = checked ? checked.time : "";
+  if (jobStatus === "failure" || jobStatus === "failed" || updateStep === "failure") {
+    return state.language === "ko"
+      ? `최근 시도 실패${checkedText ? ` ${checkedText}` : ""}`
+      : `last attempt failed${checkedText ? ` ${checkedText}` : ""}`;
+  }
+  if (jobStatus === "cancelled" || updateStep === "cancelled") {
+    return state.language === "ko"
+      ? `최근 시도 취소${checkedText ? ` ${checkedText}` : ""}`
+      : `last attempt cancelled${checkedText ? ` ${checkedText}` : ""}`;
+  }
+  if (jobStatus === "success" && checkedText) {
+    return state.language === "ko" ? `최근 확인 ${checkedText}` : `checked ${checkedText}`;
+  }
+  return "";
 }
 
 function renderTotalStat(lastRunAt) {

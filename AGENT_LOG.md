@@ -3983,6 +3983,44 @@
 
 ### Follow-up
 - None.
+# 2026-06-16 09:41
+## 변경 요약
+- 논문 업데이트 시간을 KST 10:17/22:17, 즉 12시간 주기로 변경했습니다.
+- 업데이트가 실행 중일 때 사이트 상단 `Now / Updated` 패널에서 `updating now`/`업데이트 중` 상태를 볼 수 있도록 했습니다.
+- 마지막 시도가 실패 또는 취소된 경우에도 같은 패널에서 `last attempt failed/cancelled`를 볼 수 있도록 했습니다.
+
+## 수정/생성한 파일
+- `.github/workflows/update-papers.yml`: cron을 `17 1,13 * * *`로 변경했고, workflow 시작 직후 `UPDATE_STATUS.md`와 `data/update_status.json`을 `in_progress` 상태로 먼저 커밋하는 step을 추가했습니다.
+- `scripts/write_update_status.py`: 새 cron의 KST 표시를 `10:17`, `22:17`로 바꾸고 `update_phase` 필드를 기록하도록 수정했습니다.
+- `assets/app.js`: `data/update_status.json`을 읽고, `Now / Updated` 패널에 업데이트 진행/실패/취소/확인 상태를 표시하도록 수정했습니다.
+- `index.html`: GitHub Pages 캐시 무효화를 위해 `assets/app.js` query version을 `20260616-0100`으로 갱신했습니다.
+- `AGENT_LOG.md`: 이번 변경 사항과 설계 결정을 기록했습니다.
+
+## 구현한 기능
+- scheduled update가 시작되면 긴 수집 작업이 끝나기 전에도 사이트가 `업데이트 중` 상태를 표시할 수 있습니다.
+- update가 실패하거나 취소되면 사용자는 마지막 성공 수집 시간과 마지막 시도 상태를 동시에 볼 수 있습니다.
+- `Now / Updated` 패널은 현재 시각, 마지막 성공 수집 시각, 마지막 update attempt 상태를 함께 표시합니다.
+
+## 설계 결정
+- `UPDATE_STATUS.md`와 `data/update_status.json`은 Actions가 실제 상태를 기록하는 파일로 유지합니다. 로컬에서 성공 상태를 수동으로 조작하지 않았습니다.
+- workflow 시작 상태를 별도 커밋으로 먼저 push합니다. 정적 GitHub Pages 사이트는 서버 실시간 상태를 직접 볼 수 없으므로, 공개 JSON 파일을 갱신하는 방식이 가장 단순하고 투명합니다.
+- OpenAI scheduled update는 계속 비활성화되어 있습니다.
+
+## 검증 결과
+- 현재 `data/update_status.json` 기준 표시 예상: `last attempt cancelled`
+- `scripts/write_update_status.py` 문법 검증 통과
+- `data/update_status.json` JSON 검증 통과
+- `git diff --check` 통과
+
+## 남은 작업
+- 다음 10:17 또는 22:17 KST scheduled run에서 사이트가 `updating now`를 표시하는지 확인합니다.
+- run 종료 후 `UPDATE_STATUS.md`와 `data/update_status.json`이 success/failure/cancelled 상태로 다시 갱신되는지 확인합니다.
+
+## 주의사항
+- OpenAI API는 사용하지 않았습니다.
+- 논문 데이터 파일은 수정하지 않았습니다.
+- raw abstract 또는 PDF 저장/표시는 하지 않았습니다.
+
 # 2026-06-16 09:37
 ## 변경 요약
 - 정기 논문 업데이트가 누락됐는지 확인했습니다.
