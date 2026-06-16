@@ -2,7 +2,7 @@ name: Update papers
 
 on:
   schedule:
-    - cron: "17 */12 * * *"
+    - cron: "17 1,13 * * *"
   workflow_dispatch:
 
 permissions:
@@ -24,6 +24,28 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Write update status started
+        env:
+          UPDATE_PHASE: "in_progress"
+          UPDATE_JOB_STATUS: "in_progress"
+          UPDATE_STEP_OUTCOME: "running"
+          COMMIT_STEP_OUTCOME: "pending"
+          DEPLOY_STEP_OUTCOME: "pending"
+          UPDATE_CRON_DESCRIPTION: "17 1,13 * * *"
+        run: python scripts/write_update_status.py
+
+      - name: Commit update status started
+        run: |
+          if git diff --quiet -- UPDATE_STATUS.md data/update_status.json; then
+            echo "No update status changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add UPDATE_STATUS.md data/update_status.json
+          git commit -m "Mark paper update in progress"
+          git push
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -78,7 +100,7 @@ jobs:
           UPDATE_STEP_OUTCOME: ${{ steps.update_papers.outcome }}
           COMMIT_STEP_OUTCOME: ${{ steps.commit_data.outcome }}
           DEPLOY_STEP_OUTCOME: ${{ steps.deployment.outcome }}
-          UPDATE_CRON_DESCRIPTION: "17 */12 * * *"
+          UPDATE_CRON_DESCRIPTION: "17 1,13 * * *"
         run: python scripts/write_update_status.py
 
       - name: Commit update status

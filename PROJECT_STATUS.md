@@ -207,3 +207,9 @@ GitHub Pages에서 동작 가능한 정적 논문 큐레이션 사이트와 GitH
 - `MMAM` is treated as a canonical topic tag, not only a raw API tag. Existing papers with explicit title/metadata signals such as `multi-material` or `multimaterial` were normalized so their `tags` field includes `MMAM`.
 - Sidebar topic counts should be based on stable, specific metadata signals only: title, venue, and canonical tags. Broad categories and AI summaries/relevance notes are display or curation context and must not drive sidebar bucket counts, because generic tracker wording or broad category labels can over-count topics such as `MMAM`.
 - Photopolymerization process tags are split: `DLP` is displayed as `Digital Light Processing (DLP)`, `SLA` as `Stereolithography (SLA)`, and `Vat photopolymerization` as its own process tag. Generic `photopolymerization` alone is not enough to assign DLP/SLA/vat tags.
+
+## Current Update Status Policy
+- Scheduled paper updates run at `10:17` and `22:17` KST (`17 1,13 * * *` UTC cron).
+- The update workflow writes `UPDATE_STATUS.md` and `data/update_status.json` at the start of a run with `update_phase=in_progress`, then writes the final success/failure/cancelled state at the end.
+- The website reads `data/update_status.json` and shows update attempt state in the `Now / Updated` panel, so users can distinguish an update currently running, a failed/cancelled attempt, and the last successful collection time.
+- Scheduled updates still do not call OpenAI. OpenAI summary refresh remains manual only.
