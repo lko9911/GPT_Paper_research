@@ -1,5 +1,32 @@
 # AGENT_LOG
 
+## 2026-06-16 11:06
+### 변경 요약
+- 사용자가 `Run workflow`를 눌렀고 GitHub Actions run #17은 실제로 `in_progress` 상태였지만, 사이트 UI가 여전히 이전 상태를 보여주는 원인을 확인했습니다.
+- 원인은 `data/update_status.json`의 시작 상태 커밋은 GitHub raw/main에는 즉시 반영되지만, GitHub Pages 배포본에는 workflow가 끝나기 전까지 반영되지 않는 구조였습니다.
+- 사이트가 update status만큼은 GitHub raw URL을 먼저 읽고, 실패하면 기존 Pages 경로로 fallback하도록 수정했습니다.
+
+### 수정/생성한 파일
+- `assets/app.js`: `UPDATE_STATUS_URLS`와 `loadUpdateStatus()`를 추가해 raw GitHub의 `data/update_status.json`을 우선 로드하도록 변경했습니다.
+- `index.html`: GitHub Pages 캐시 무효화를 위해 `assets/app.js` query version을 갱신했습니다.
+- `AGENT_LOG.md`: 이번 원인 조사와 수정 내용을 기록했습니다.
+
+### 구현한 기능
+- workflow가 시작 직후 `data/update_status.json`을 커밋하면, 사이트가 Pages 배포 완료를 기다리지 않고 raw GitHub 상태 파일을 통해 `updating now` 상태를 더 빨리 표시할 수 있습니다.
+- raw GitHub 요청이 실패하면 기존 `data/update_status.json` Pages 경로를 fallback으로 사용합니다.
+
+### 설계 결정
+- 논문 본문 데이터(`papers.json`)는 계속 GitHub Pages 배포본을 사용하고, 빠른 상태 확인이 필요한 `update_status.json`만 raw GitHub를 우선 사용합니다.
+- token이나 secret을 클라이언트에 노출하지 않습니다. public repository의 public raw JSON만 읽습니다.
+- OpenAI API는 사용하지 않았습니다.
+
+### 남은 작업
+- 이번 run #17 또는 다음 수동/정기 run에서 사이트 상단의 `Now / Updated` 패널이 `updating now`를 빠르게 표시하는지 확인합니다.
+
+### 주의사항
+- raw GitHub도 CDN/cache 영향을 받을 수 있지만, Pages 배포 완료를 기다리는 것보다는 상태 반영이 빠릅니다.
+- GitHub Actions run 자체가 생성되지 않는 경우에는 여전히 `run not seen yet` 표시가 필요합니다.
+
 ## 2026-06-16 10:45
 ### 변경 요약
 - GitHub Actions scheduled trigger가 10:17 KST 슬롯에서 새 run을 생성하지 않은 상황을 줄이기 위해 논문 업데이트 주기를 12시간에서 6시간으로 조정했습니다.
