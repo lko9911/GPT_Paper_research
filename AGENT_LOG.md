@@ -1,5 +1,23 @@
 # AGENT_LOG
 
+## 2026-06-17 22:45
+
+### Change Summary
+- Fixed long corresponding-author names causing the `Corresponding` badge to be clipped.
+
+### Edited Files
+- `assets/app.js`: wrapped author names in a dedicated `.author-chip-name` span so only the name text ellipsizes.
+- `assets/style.css`: moved ellipsis behavior from the whole chip to the name span, widened corresponding-author chips, and made the badge non-shrinking.
+- `index.html`: bumped JS/CSS cache versions for GitHub Pages.
+- `AGENT_LOG.md`: recorded the UI fix.
+
+### Design Notes
+- The corresponding-author badge now remains visible even when the author name is long.
+- Long names still truncate cleanly to keep paper cards compact.
+
+### Follow-up
+- None.
+
 ## 2026-06-17 22:33
 
 ### Change Summary
