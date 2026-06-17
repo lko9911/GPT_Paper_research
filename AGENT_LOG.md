@@ -4610,3 +4610,30 @@
 - OpenAI API는 사용하지 않았습니다.
 - API key, secret, token은 기록하지 않았습니다.
 - `reports/~$openalex_only_venues_crossref_check.xlsx`는 Excel이 만든 임시 잠금 파일로 보이며 이번 작업에서는 수정하지 않았습니다.
+
+## 2026-06-17 12:02
+### 변경 요약
+- 사용자가 실제로 원한 대상인 `OpenAlex-only venues with no Crossref journal match`만 따로 볼 수 있는 Excel 보고서를 생성했습니다.
+- 이전 source grouping workbook과 달리, 이번 파일은 Crossref journal lookup 결과가 `no_crossref_journal_match`인 93개 venue만 분리합니다.
+
+### 수정/생성한 파일
+- `reports/openalex_only_venues_no_crossref_journal_match.xlsx`: OpenAlex-only venue 중 Crossref journal match가 없는 93개 항목 전용 Excel 보고서를 생성했습니다.
+- `AGENT_LOG.md`: 이번 subset 보고서 생성 작업과 검증 결과를 기록했습니다.
+
+### 구현한 기능
+- `Summary` 시트에 OpenAlex-only venue 428개 중 exact match 332개, possible match 3개, no match 93개라는 핵심 수치를 정리했습니다.
+- `No_Crossref_Journal_Match` 시트에 원본 lookup CSV의 전체 열을 보존한 상세 목록을 넣었습니다.
+- `Top_No_Match_Compact` 시트에 venue, record count, curated/archive count, example titles 중심의 읽기 쉬운 목록을 추가했습니다.
+
+### 설계 결정
+- 이 파일은 API coverage 자체의 전역 진실을 증명하는 목적이 아니라, 현재 프로젝트의 collected dataset에서 OpenAlex-only로 관측되고 Crossref journal endpoint에서 journal title match가 없던 venue를 빠르게 검토하기 위한 목적입니다.
+- repository, preprint server, institutional source, conference/proceedings 성격의 source title을 Crossref-centered 운영에서 제거하거나 별도 그룹화할 후보로 보기 쉽게 만들었습니다.
+
+### 남은 작업
+- 93개 no-match venue 중 실제로 유지할 가치가 있는 proceedings/preprint source와 제거할 noisy source를 수동 정책으로 나눌 수 있습니다.
+- Crossref-centered pipeline으로 전환할 경우 이 목록을 exclusion 또는 low-priority venue rule의 근거로 사용할 수 있습니다.
+
+### 주의사항
+- OpenAI API는 사용하지 않았습니다.
+- 새 API 호출 없이 기존 `reports/openalex_only_venues_crossref_check.csv`를 기반으로 생성했습니다.
+- API key, secret, token은 기록하지 않았습니다.
