@@ -4718,6 +4718,46 @@
 - OpenAI API는 사용하지 않았습니다.
 - 열려 있는 Excel 프로세스를 강제로 종료하지 않았습니다.
 
+## 2026-06-17 13:21
+### 변경 요약
+- 이전 `Only OpenAlex / Only Crossref` 표가 현재 dataset provenance 기준이라 실제 API coverage와 다를 수 있음을 확인하고, paper-level API verification을 다시 수행했습니다.
+- OpenAlex-only paper는 Crossref에서 DOI/title로 재조회했고, Crossref-only paper는 OpenAlex에서 DOI/title로 재조회했습니다.
+- venue는 기존 source-title lookup 결과를 normalized venue name으로 다시 매핑해 정확한 confirmed/possible/no-match 집계를 계산했습니다.
+
+### 수정/생성한 파일
+- `reports/api_source_coverage_verified.xlsx`: 실제 API 재조회 기반의 verified coverage count와 상세 paper/venue 행을 담은 Excel 보고서를 생성했습니다.
+- `AGENT_LOG.md`: 검증 방식, 결과 숫자, 주의사항을 기록했습니다.
+
+### 구현한 기능
+- DOI가 있는 논문은 DOI API lookup을 confirmed match 기준으로 사용했습니다.
+- DOI가 없는 논문은 normalized title exact/near-exact match만 confirmed로 보고, high-similarity match는 possible로 분리했습니다.
+- paper-level verified 결과:
+  - confirmed both: all papers 2798, site papers 1265
+  - confirmed OpenAlex-only with no Crossref match: all papers 241, site papers 82
+  - confirmed Crossref-only with no OpenAlex match: all papers 34, site papers 9
+  - possible both: all papers 1, site papers 1
+  - lookup error: all papers 1, site papers 0
+- venue-level verified 결과:
+  - confirmed both: all venues 761, site venues 406
+  - confirmed OpenAlex-only with no Crossref journal match: all venues 93, site venues 62
+  - confirmed Crossref-only with no OpenAlex source match: all venues 202, site venues 53
+  - possible both: all venues 10, site venues 4
+  - lookup error: all venues 0
+
+### 설계 결정
+- “real number”는 source provenance가 아니라 API 재조회 기준으로 계산했습니다.
+- confirmed count에는 DOI match와 strict normalized-title/source-title match만 포함했습니다.
+- possible match는 confirmed truth에 넣지 않고 별도 행으로 분리했습니다.
+- `curated_records > 0`을 site-visible/site thing 기준으로 유지했습니다.
+
+### 남은 작업
+- `api_source_coverage_report.xlsx`가 Excel에서 열려 있어 바로 덮어쓰지 않고 `api_source_coverage_verified.xlsx`를 별도 생성했습니다. 사용자가 Excel 파일을 닫으면 최종 보고서를 하나로 통합할 수 있습니다.
+
+### 주의사항
+- OpenAI API는 사용하지 않았습니다.
+- Crossref와 OpenAlex 공식 API만 사용했고, PDF나 publisher abstract는 수집하지 않았습니다.
+- `_paper_api_coverage_lookup_cache.json`은 재조회 중간 캐시이므로 커밋하지 않습니다.
+
 ## 2026-06-17 12:34
 ### 변경 요약
 - 여러 Excel/CSV/Markdown 보고서를 하나의 최종 Excel 보고서로 통합했습니다.
