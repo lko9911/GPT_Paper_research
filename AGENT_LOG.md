@@ -1,5 +1,41 @@
 # AGENT_LOG
 
+## 2026-06-17 01:05
+### 변경 요약
+- 사용자가 OpenAlex-only venue가 실제로 Crossref에 없는 venue인지 확인하고 싶다고 요청하여, 기존 3,075 후보 기반 OpenAlex-only venue 428개를 Crossref journal lookup으로 재검사했습니다.
+- 각 OpenAlex-only venue에 대해 Crossref `/journals?query=...&rows=20`를 호출하고 exact/possible/no match로 분류했습니다.
+- `Nature`가 Crossref에 없는 것이 아니라, 현재 파이프라인에서 OpenAlex로만 수집된 것임을 확인했습니다.
+
+### 수정/생성한 파일
+- `reports/openalex_only_venues_crossref_check.md`: OpenAlex-only venue 428개에 대한 Crossref lookup 요약 보고서입니다.
+- `reports/openalex_only_venues_crossref_check.csv`: 전체 OpenAlex-only venue별 Crossref lookup 결과 CSV입니다.
+- `reports/openalex_only_venues_crossref_check.xlsx`: Excel 형식의 동일 분석 결과입니다.
+- `AGENT_LOG.md`: 이번 분석 작업과 결론을 기록했습니다.
+
+### 구현한 기능
+- OpenAlex-only venue를 단순 pipeline 관측값과 Crossref 실제 journal coverage 관점으로 분리했습니다.
+- Crossref exact title match, possible match, no match를 venue별로 기록했습니다.
+- `Nature`는 Crossref exact journal match로 보정되어 `Nature` 자체가 Crossref에 없다는 오해를 제거했습니다.
+
+### 설계 결정
+- Crossref venue coverage 확인에는 DOI가 아니라 venue 이름 기반 `/journals` endpoint를 사용했습니다.
+- `rows=20`까지 확인해 `Nature`처럼 query 결과 상위 8개 안에는 없지만 실제 exact title이 존재하는 경우를 보정했습니다.
+- 이번 분석은 API coverage의 1차 판별용이며, 최종 논문 단위 coverage는 DOI-level lookup이 더 정확합니다.
+
+### 결과 요약
+- OpenAlex-only로 관측된 venue: 428개
+- Crossref exact journal match: 332개
+- Crossref possible journal match: 3개
+- Crossref journal no match: 93개
+
+### 남은 작업
+- Crossref 중심 운영으로 전환하려면 `no_crossref_journal_match` venue들을 우선 제거/숨김 후보로 검토합니다.
+- `exact_crossref_journal_match` venue들은 Crossref에 존재하므로, OpenAlex-only로 보이는 원인이 검색/병합 파이프라인 때문인지 DOI-level enrichment로 추가 확인할 수 있습니다.
+
+### 주의사항
+- OpenAI API는 사용하지 않았습니다.
+- 출판사 웹사이트 크롤링, PDF 저장, raw abstract 표시는 수행하지 않았습니다.
+
 ## 2026-06-17 00:30
 ### 변경 요약
 - 사용자가 요청한 OpenAlex/Crossref 출처 집합 분석을 전체 collected candidates 3,075건 대상으로 수행했습니다.
