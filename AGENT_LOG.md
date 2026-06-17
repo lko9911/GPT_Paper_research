@@ -35,6 +35,33 @@
 ### 주의사항
 - OpenAI API는 사용하지 않았습니다.
 
+## 2026-06-17 14:30
+### 변경 요약
+- 논문 카드 author 영역을 사용자 요청 형식에 맞게 다시 정리했습니다.
+- `Corresponding Authors`는 항상 표시하고, 데이터가 없으면 `No data`를 표시하도록 변경했습니다.
+- 기존 `Alin Bustihan, Ioan Botiz · Polymers · Crossref` 같은 compact meta line을 제거했습니다.
+- `Authors:` / `Corresponding author:`의 colon을 제거했습니다.
+
+### 수정/생성한 파일
+- `assets/app.js`: old meta line 제거, `Corresponding Authors` 기본 표시, `Authors` 라벨 colon 제거를 적용했습니다.
+- `index.html`: GitHub Pages cache busting query를 `20260617-author-no-meta`로 갱신했습니다.
+- `AGENT_LOG.md`: 이번 카드 UI 변경을 기록했습니다.
+
+### 구현한 기능
+- Corresponding author metadata가 있으면 `Corresponding Authors 이름`을 표시합니다.
+- Corresponding author metadata가 없으면 `Corresponding Authors No data`를 표시합니다.
+- Authors는 기존 authors 배열 또는 OpenAlex author_details를 사용해 `Authors` 라벨 뒤 chip으로 표시합니다.
+
+### 설계 결정
+- Corresponding author가 없을 때 라인을 숨기면 사용자가 데이터 부재인지 UI 누락인지 알기 어렵기 때문에 `No data`를 명시했습니다.
+- venue/source 반복 meta line은 카드 상단 publication badge 및 DOI/source context와 중복되어 제거했습니다.
+
+### 남은 작업
+- 전체 논문에 corresponding author coverage를 늘리려면 `Enrich OpenAlex metadata` workflow를 계속 실행해야 합니다.
+
+### 주의사항
+- OpenAI API는 사용하지 않았습니다.
+
 ## 2026-06-17 14:08
 ### 변경 요약
 - `Enrich OpenAlex metadata` GitHub Actions 실패 원인을 분석하고, OpenAlex 개별 DOI lookup 실패가 workflow 전체 실패로 이어지지 않도록 수정했습니다.
