@@ -397,11 +397,12 @@
       "Nanya Li"
     ],
     "year": 2026,
-    "venue": "",
+    "venue": "SSRN Electronic Journal",
     "doi": "10.2139/ssrn.6833705",
     "url": "https://doi.org/10.2139/ssrn.6833705",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "재료분포 최적화",
@@ -2079,6 +2080,278 @@
     }
   },
   {
+    "id": "10.26434/chemrxiv.15004285/v4",
+    "title": "Red-Light Tomographic Volumetric 3D Printing in Seconds for Fabrication of Colorless Structures",
+    "authors": [
+      "Ali Eftekhari",
+      "Qianyi Zhang",
+      "Shahla Radmehr",
+      "Felix Wechsler",
+      "Riccardo Rizzo",
+      "Ville Santala",
+      "Minna Kellomäki",
+      "Alexander Efimov",
+      "Timo Laaksonen",
+      "Christophe Moser"
+    ],
+    "author_details": [
+      {
+        "name": "Ali Eftekhari",
+        "openalex_author_id": "https://openalex.org/A5101960549",
+        "orcid": "https://orcid.org/0009-0005-9557-0114",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Tampere University",
+            "ror": "https://ror.org/033003e23",
+            "country_code": "FI",
+            "type": "education"
+          },
+          {
+            "name": "École Polytechnique Fédérale de Lausanne",
+            "ror": "https://ror.org/02s376052",
+            "country_code": "CH",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Faculty of Engineering and Natural Sciences",
+          "Laboratory of Applied Photonics Devices École Polytechnique Fédéral Lausanne (EPFL",
+          "Tampere University"
+        ]
+      },
+      {
+        "name": "Qianyi Zhang",
+        "openalex_author_id": "https://openalex.org/A5101565166",
+        "orcid": "https://orcid.org/0000-0001-8210-6893",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "École Polytechnique Fédérale de Lausanne",
+            "ror": "https://ror.org/02s376052",
+            "country_code": "CH",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Laboratory of Applied Photonics Devices École Polytechnique Fédéral Lausanne (EPFL"
+        ]
+      },
+      {
+        "name": "Shahla Radmehr",
+        "openalex_author_id": "https://openalex.org/A5039687126",
+        "orcid": "https://orcid.org/0000-0002-3697-331X",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Tampere University of Applied Sciences",
+            "ror": "https://ror.org/00bwtjf83",
+            "country_code": "FI",
+            "type": "education"
+          },
+          {
+            "name": "Tampere University",
+            "ror": null,
+            "country_code": "FI",
+            "type": null
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Faculty of Engineering and Natural Sciences, Tampere University, Korkeakoulunkatu 8, Tampere, Finland, 33720"
+        ]
+      },
+      {
+        "name": "Felix Wechsler",
+        "openalex_author_id": "https://openalex.org/A5034120184",
+        "orcid": "https://orcid.org/0000-0001-8763-2948",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Riccardo Rizzo",
+        "openalex_author_id": "https://openalex.org/A5022575679",
+        "orcid": "https://orcid.org/0000-0002-5716-9195",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Ville Santala",
+        "openalex_author_id": "https://openalex.org/A5012618881",
+        "orcid": "https://orcid.org/0000-0002-9084-931X",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Tampere University of Applied Sciences",
+            "ror": "https://ror.org/00bwtjf83",
+            "country_code": "FI",
+            "type": "education"
+          },
+          {
+            "name": "Tampere University",
+            "ror": null,
+            "country_code": "FI",
+            "type": null
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Faculty of Engineering and Natural Sciences, Tampere University, Korkeakoulunkatu 8, Tampere, Finland, 33720"
+        ]
+      },
+      {
+        "name": "Minna Kellomäki",
+        "openalex_author_id": "https://openalex.org/A5014623140",
+        "orcid": "https://orcid.org/0000-0003-4321-1820",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Tampere University",
+            "ror": "https://ror.org/033003e23",
+            "country_code": "FI",
+            "type": "education"
+          },
+          {
+            "name": "Tissue Dynamics (Israel)",
+            "ror": "https://ror.org/05wyfzv25",
+            "country_code": "IL",
+            "type": "company"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Biomaterials and Tissue Engineering Group, Faculty of Medicine and Health Technology",
+          "Tampere University"
+        ]
+      },
+      {
+        "name": "Alexander Efimov",
+        "openalex_author_id": "https://openalex.org/A5004375419",
+        "orcid": "https://orcid.org/0000-0003-4671-3009",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Tampere University",
+            "ror": "https://ror.org/033003e23",
+            "country_code": "FI",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Faculty of Engineering and Natural Sciences",
+          "Tampere University"
+        ]
+      },
+      {
+        "name": "Timo Laaksonen",
+        "openalex_author_id": "https://openalex.org/A5004833492",
+        "orcid": "https://orcid.org/0000-0002-6699-3004",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "University of Helsinki",
+            "ror": "https://ror.org/040af2s02",
+            "country_code": "FI",
+            "type": "education"
+          },
+          {
+            "name": "Tampere University",
+            "ror": "https://ror.org/033003e23",
+            "country_code": "FI",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Faculty of Engineering and Natural Sciences",
+          "Faculty of Pharmacy",
+          "Tampere University",
+          "University of Helsinki"
+        ]
+      },
+      {
+        "name": "Christophe Moser",
+        "openalex_author_id": "https://openalex.org/A5016375695",
+        "orcid": "https://orcid.org/0000-0002-2078-0273",
+        "position": "last",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "École Polytechnique Fédérale de Lausanne",
+            "ror": "https://ror.org/02s376052",
+            "country_code": "CH",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Laboratory of Applied Photonics Devices École Polytechnique Fédéral Lausanne (EPFL"
+        ]
+      }
+    ],
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "year": 2026,
+    "venue": "ChemRxiv",
+    "openalex_work_id": "https://openalex.org/W7164932360",
+    "openalex_source_id": "https://openalex.org/S4393918830",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4393918830",
+      "issn_l": "2573-2293",
+      "issn": [
+        "2573-2293"
+      ],
+      "type": "repository",
+      "host_organization_name": null,
+      "works_count": null,
+      "cited_by_count": null,
+      "two_year_mean_citedness": null,
+      "h_index": null,
+      "i10_index": null,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Repository / preprint source",
+      "basis": "metadata_source_type",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "doi": "10.26434/chemrxiv.15004285/v4",
+    "url": "https://doi.org/10.26434/chemrxiv.15004285/v4",
+    "source": [
+      "OpenAlex"
+    ],
+    "categories": [
+      "다중재료 적층제조"
+    ],
+    "tags": [
+      "Volumetric AM"
+    ],
+    "relevance_score": 5,
+    "curation_priority": false,
+    "ai_summary_ko": "1. Topic - 이 논문은 무엇을 다루는가? Volumetric AM와 관련된 제조·설계 문제를 구체적인 연구 대상으로 삼습니다.\n2. Problem - 어떤 문제나 한계를 해결하려는가? Volumetric AM와 관련된 설계·제조상의 병목을 이해하거나 완화하려는 문제를 다룹니다.\n3. Method - 어떤 방법이나 접근을 사용했는가? 접근 방식은 제작 실험으로 구현 가능성을 확인하는 것입니다.\n4. Key Result - 가장 중요한 결과는 무엇인가? 핵심 기여는 제조 적용성을(를) 제조·설계 관점에서 해석할 수 있게 한 점입니다.\n5. Takeaway - 그래서 이 논문의 핵심 메시지는 무엇인가? Volumetric AM 관점에서 관련성 5/10로 평가되며, 핵심 메시지는 제조 방법과 설계 목표를 함께 해석해야 한다는 점입니다.",
+    "ai_summary_en": "",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_ko": "이 트래커에서는 Volumetric AM 키워드를 기준으로 제조·설계 연구와의 관련성을 5/10로 평가했습니다.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-06-17",
+    "last_updated": "2026-06-17",
+    "archive_reason": "duplicate_title"
+  },
+  {
     "id": "10.5281/zenodo.19187359",
     "title": "Raw optimization files for \"Overprinting with Tomographic Volumetric Additive Manufacturing\"",
     "authors": [
@@ -3411,7 +3684,8 @@
     "doi": "10.1145/3772318.3791317",
     "url": "https://doi.org/10.1145/3772318.3791317",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -14000,11 +14274,12 @@
       "Woong-Ryeol Yu"
     ],
     "year": 2026,
-    "venue": "",
+    "venue": "SSRN Electronic Journal",
     "doi": "10.2139/ssrn.6717859",
     "url": "https://doi.org/10.2139/ssrn.6717859",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -15424,11 +15699,12 @@
       "Hayoung Chung"
     ],
     "year": 2026,
-    "venue": "",
+    "venue": "SSRN Electronic Journal",
     "doi": "10.2139/ssrn.6568973",
     "url": "https://doi.org/10.2139/ssrn.6568973",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -18209,11 +18485,12 @@
       "Ahmad Akrad"
     ],
     "year": 2026,
-    "venue": "",
+    "venue": "SSRN Electronic Journal",
     "doi": "10.2139/ssrn.6486065",
     "url": "https://doi.org/10.2139/ssrn.6486065",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -19287,7 +19564,8 @@
     "doi": "10.1108/4dp-10-2025-0022",
     "url": "https://doi.org/10.1108/4dp-10-2025-0022",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -19578,11 +19856,12 @@
       "Bei  Bei Wang"
     ],
     "year": 2026,
-    "venue": "",
+    "venue": "SSRN Electronic Journal",
     "doi": "10.2139/ssrn.6308199",
     "url": "https://doi.org/10.2139/ssrn.6308199",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -21471,7 +21750,8 @@
     "doi": "10.4018/979-8-2600-0298-8.ch007",
     "url": "https://doi.org/10.4018/979-8-2600-0298-8.ch007",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -23284,7 +23564,8 @@
     "doi": "10.1117/12.3079498",
     "url": "https://doi.org/10.1117/12.3079498",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -25045,11 +25326,12 @@
       "Mingda Li"
     ],
     "year": 2026,
-    "venue": "",
+    "venue": "SSRN Electronic Journal",
     "doi": "10.2139/ssrn.6731328",
     "url": "https://doi.org/10.2139/ssrn.6731328",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "계산설계",
@@ -28418,7 +28700,8 @@
     "doi": "10.1016/b978-0-443-33645-4.00014-0",
     "url": "https://doi.org/10.1016/b978-0-443-33645-4.00014-0",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "툴패스 계획",
@@ -29073,7 +29356,8 @@
     "doi": "10.1115/1.4069976",
     "url": "https://doi.org/10.1115/1.4069976",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -29786,7 +30070,8 @@
     "doi": "10.1108/ec-10-2025-1127",
     "url": "https://doi.org/10.1108/ec-10-2025-1127",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -30456,11 +30741,12 @@
       "Chaitanya Mahajan"
     ],
     "year": 2026,
-    "venue": "",
+    "venue": "SSRN Electronic Journal",
     "doi": "10.2139/ssrn.6736132",
     "url": "https://doi.org/10.2139/ssrn.6736132",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -31833,7 +32119,8 @@
     "doi": "10.1002/pc.71100",
     "url": "https://doi.org/10.1002/pc.71100",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -32845,7 +33132,8 @@
     "doi": "10.1115/1.889114_ch7",
     "url": "https://doi.org/10.1115/1.889114_ch7",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -33339,7 +33627,8 @@
     "doi": "10.1108/4dp-12-2025-0023",
     "url": "https://doi.org/10.1108/4dp-12-2025-0023",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -33989,7 +34278,8 @@
     "doi": "10.1016/j.compstruct.2026.120395",
     "url": "https://doi.org/10.1016/j.compstruct.2026.120395",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "툴패스 계획",
@@ -34705,7 +34995,8 @@
     "doi": "10.1109/robosoft67810.2026.11522918",
     "url": "https://doi.org/10.1109/robosoft67810.2026.11522918",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -36154,7 +36445,8 @@
     "doi": "10.1016/j.ijpvp.2026.105845",
     "url": "https://doi.org/10.1016/j.ijpvp.2026.105845",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -36301,7 +36593,8 @@
     "doi": "10.1109/icmtim69588.2026.11526335",
     "url": "https://doi.org/10.1109/icmtim69588.2026.11526335",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -36545,13 +36838,17 @@
   {
     "id": "10.1002/9781394442942.ch12",
     "title": "Mechanistic Models, Machine Learning, and Digital Twins in Additive Manufacturing",
-    "authors": [],
+    "authors": [
+      "Tuhin Mukherjee",
+      "T. DebRoy"
+    ],
     "year": 2026,
     "venue": "Theory and Practice of Additive Manufacturing",
     "doi": "10.1002/9781394442942.ch12",
     "url": "https://doi.org/10.1002/9781394442942.ch12",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -37042,7 +37339,8 @@
     "doi": "10.3390/ma19061115",
     "url": "https://doi.org/10.3390/ma19061115",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -38070,7 +38368,8 @@
     "doi": "10.1108/rpj-03-2025-0093",
     "url": "https://doi.org/10.1108/rpj-03-2025-0093",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -40628,11 +40927,12 @@
       "Amit  Kumar Verma"
     ],
     "year": 2026,
-    "venue": "",
+    "venue": "SSRN Electronic Journal",
     "doi": "10.2139/ssrn.6879762",
     "url": "https://doi.org/10.2139/ssrn.6879762",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "계산설계",
@@ -42253,7 +42553,8 @@
     "doi": "10.33042/2079-424x.2026.65.1.01",
     "url": "https://doi.org/10.33042/2079-424x.2026.65.1.01",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -43662,7 +43963,8 @@
     "doi": "10.1016/b978-0-443-33645-4.00004-8",
     "url": "https://doi.org/10.1016/b978-0-443-33645-4.00004-8",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -44336,7 +44638,8 @@
     "doi": "10.34133/research.1174",
     "url": "https://doi.org/10.34133/research.1174",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -45182,7 +45485,8 @@
     "doi": "10.1039/d5dd00479a",
     "url": "https://doi.org/10.1039/d5dd00479a",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "계산설계",
@@ -46395,7 +46699,8 @@
     "doi": "10.1016/j.procir.2026.05.276",
     "url": "https://doi.org/10.1016/j.procir.2026.05.276",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -49387,11 +49692,12 @@
       "Weiwei Guo"
     ],
     "year": 2026,
-    "venue": "",
+    "venue": "SSRN Electronic Journal",
     "doi": "10.2139/ssrn.6435258",
     "url": "https://doi.org/10.2139/ssrn.6435258",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "기능성 구배 적층제조",
@@ -51277,7 +51583,8 @@
     "doi": "10.1007/s40684-025-00766-5",
     "url": "https://doi.org/10.1007/s40684-025-00766-5",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -53671,7 +53978,8 @@
     "doi": "10.1108/4dp-12-2025-0024",
     "url": "https://doi.org/10.1108/4dp-12-2025-0024",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -53794,7 +54102,8 @@
     "doi": "10.1016/j.susmat.2026.e02022",
     "url": "https://doi.org/10.1016/j.susmat.2026.e02022",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -54532,11 +54841,12 @@
       "Jincheng Wang"
     ],
     "year": 2026,
-    "venue": "",
+    "venue": "SSRN Electronic Journal",
     "doi": "10.2139/ssrn.6469735",
     "url": "https://doi.org/10.2139/ssrn.6469735",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "계산설계",
@@ -54925,7 +55235,8 @@
     "doi": "10.1108/4dp-09-2025-0019",
     "url": "https://doi.org/10.1108/4dp-09-2025-0019",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -55748,7 +56059,8 @@
     "doi": "10.1088/2053-1591/ae2f29",
     "url": "https://doi.org/10.1088/2053-1591/ae2f29",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -57008,11 +57320,12 @@
       "Reza Moini"
     ],
     "year": 2026,
-    "venue": "",
+    "venue": "SSRN Electronic Journal",
     "doi": "10.2139/ssrn.6353098",
     "url": "https://doi.org/10.2139/ssrn.6353098",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "툴패스 계획",
@@ -57506,7 +57819,8 @@
     "doi": "10.1016/b978-0-443-45573-5.00033-1",
     "url": "https://doi.org/10.1016/b978-0-443-45573-5.00033-1",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -58309,7 +58623,8 @@
     "doi": "10.1016/j.enconman.2026.121186",
     "url": "https://doi.org/10.1016/j.enconman.2026.121186",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -58620,11 +58935,12 @@
       "Albert To"
     ],
     "year": 2026,
-    "venue": "",
+    "venue": "SSRN Electronic Journal",
     "doi": "10.2139/ssrn.6075167",
     "url": "https://doi.org/10.2139/ssrn.6075167",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -62548,7 +62864,8 @@
     "doi": "10.1080/27525783.2026.2682042",
     "url": "https://doi.org/10.1080/27525783.2026.2682042",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "계산설계",
@@ -64736,7 +65053,7 @@
     "pdf_stored": false,
     "first_added": "2026-06-12",
     "last_updated": "2026-06-17",
-    "archive_reason": "low_relevance",
+    "archive_reason": "duplicate_title",
     "summary_provider": "openai",
     "openai_summary_applied": true,
     "author_details": [
@@ -82738,11 +83055,12 @@
       "Yang Lan"
     ],
     "year": 2026,
-    "venue": "",
+    "venue": "SSRN Electronic Journal",
     "doi": "10.2139/ssrn.6730311",
     "url": "https://doi.org/10.2139/ssrn.6730311",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "기능성 구배 적층제조",
@@ -83219,7 +83537,8 @@
     "doi": "10.1016/j.mser.2026.101231",
     "url": "https://doi.org/10.1016/j.mser.2026.101231",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -84027,7 +84346,8 @@
     "doi": "10.64631/zkvt6687",
     "url": "https://doi.org/10.64631/zkvt6687",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -89186,7 +89506,8 @@
     "doi": "10.1016/j.polymer.2026.130199",
     "url": "https://doi.org/10.1016/j.polymer.2026.130199",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -89645,7 +89966,8 @@
     "doi": "10.1016/j.matdes.2026.115961",
     "url": "https://doi.org/10.1016/j.matdes.2026.115961",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -89785,7 +90107,8 @@
     "doi": "10.3390/met16050467",
     "url": "https://doi.org/10.3390/met16050467",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -93211,7 +93534,8 @@
     "doi": "10.1016/j.addlet.2025.100353",
     "url": "https://doi.org/10.1016/j.addlet.2025.100353",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -93323,7 +93647,8 @@
     "doi": "10.1016/j.aime.2026.100185",
     "url": "https://doi.org/10.1016/j.aime.2026.100185",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "툴패스 계획",
@@ -96691,11 +97016,12 @@
       "Jonghee Yang"
     ],
     "year": 2026,
-    "venue": "",
+    "venue": "ChemRxiv",
     "doi": "10.26434/chemrxiv-2026-8c93m",
     "url": "https://doi.org/10.26434/chemrxiv-2026-8c93m",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "기능성 구배 적층제조",
@@ -100261,7 +100587,8 @@
     "doi": "10.1016/j.jmapro.2026.04.013",
     "url": "https://doi.org/10.1016/j.jmapro.2026.04.013",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -101867,7 +102194,8 @@
     "doi": "10.1109/tii.2026.3674787",
     "url": "https://doi.org/10.1109/tii.2026.3674787",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "툴패스 계획",
@@ -103343,11 +103671,12 @@
       "Mohammed Elsouri"
     ],
     "year": 2026,
-    "venue": "",
+    "venue": "Research Square",
     "doi": "10.21203/rs.3.rs-9410398/v1",
     "url": "https://doi.org/10.21203/rs.3.rs-9410398/v1",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -104311,13 +104640,19 @@
   {
     "id": "10.1515/9783111634609-004",
     "title": "76Chapter 4 4D Printing in Orthopedic Medicine",
-    "authors": [],
+    "authors": [
+      "Rishabha Malviya",
+      "Suraj Kumar",
+      "Sathvik Belagodu Sridhar",
+      "Pooja Shivappa"
+    ],
     "year": 2026,
     "venue": "4D Printing in Healthcare",
     "doi": "10.1515/9783111634609-004",
     "url": "https://doi.org/10.1515/9783111634609-004",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -104392,13 +104727,19 @@
   {
     "id": "10.1515/9783111634609-003",
     "title": "56Chapter 3 4D Printing in Healthcare of Biological Fabrications",
-    "authors": [],
+    "authors": [
+      "Rishabha Malviya",
+      "Suraj Kumar",
+      "Sathvik Belagodu Sridhar",
+      "Pooja Shivappa"
+    ],
     "year": 2026,
     "venue": "4D Printing in Healthcare",
     "doi": "10.1515/9783111634609-003",
     "url": "https://doi.org/10.1515/9783111634609-003",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -104662,11 +105003,12 @@
       "Eva Blasco"
     ],
     "year": 2026,
-    "venue": "",
+    "venue": "ChemRxiv",
     "doi": "10.26434/chemrxiv.15004096/v1",
     "url": "https://doi.org/10.26434/chemrxiv.15004096/v1",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -105432,11 +105774,12 @@
       "Chunze Yan"
     ],
     "year": 2026,
-    "venue": "",
+    "venue": "SSRN Electronic Journal",
     "doi": "10.2139/ssrn.6815757",
     "url": "https://doi.org/10.2139/ssrn.6815757",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -106957,13 +107300,19 @@
   {
     "id": "10.1515/9783111634609-002",
     "title": "32Chapter 2 4D Printing in Healthcare of Smart Materials",
-    "authors": [],
+    "authors": [
+      "Rishabha Malviya",
+      "Suraj Kumar",
+      "Sathvik Belagodu Sridhar",
+      "Pooja Shivappa"
+    ],
     "year": 2026,
     "venue": "4D Printing in Healthcare",
     "doi": "10.1515/9783111634609-002",
     "url": "https://doi.org/10.1515/9783111634609-002",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -107049,7 +107398,8 @@
     "doi": "10.1515/9783111592657-012",
     "url": "https://doi.org/10.1515/9783111592657-012",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -107155,13 +107505,19 @@
   {
     "id": "10.1515/9783111634609-001",
     "title": "1Chapter 1 4D Printing in Biomedical Engineering: Introduction and Fundamental Concepts",
-    "authors": [],
+    "authors": [
+      "Rishabha Malviya",
+      "Suraj Kumar",
+      "Sathvik Belagodu Sridhar",
+      "Pooja Shivappa"
+    ],
     "year": 2026,
     "venue": "4D Printing in Healthcare",
     "doi": "10.1515/9783111634609-001",
     "url": "https://doi.org/10.1515/9783111634609-001",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -107237,13 +107593,19 @@
   {
     "id": "10.1515/9783111634609-009",
     "title": "199Chapter 9 4D Printing in Cardiac Health",
-    "authors": [],
+    "authors": [
+      "Rishabha Malviya",
+      "Suraj Kumar",
+      "Sathvik Belagodu Sridhar",
+      "Pooja Shivappa"
+    ],
     "year": 2026,
     "venue": "4D Printing in Healthcare",
     "doi": "10.1515/9783111634609-009",
     "url": "https://doi.org/10.1515/9783111634609-009",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -107319,13 +107681,19 @@
   {
     "id": "10.1515/9783111634609-008",
     "title": "174Chapter 8 Hydrogel-Based 4D Printing",
-    "authors": [],
+    "authors": [
+      "Rishabha Malviya",
+      "Suraj Kumar",
+      "Sathvik Belagodu Sridhar",
+      "Pooja Shivappa"
+    ],
     "year": 2026,
     "venue": "4D Printing in Healthcare",
     "doi": "10.1515/9783111634609-008",
     "url": "https://doi.org/10.1515/9783111634609-008",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -107401,13 +107769,19 @@
   {
     "id": "10.1515/9783111634609-007",
     "title": "142Chapter 7 4D Printing in Stimuli-Responsive Materials",
-    "authors": [],
+    "authors": [
+      "Rishabha Malviya",
+      "Suraj Kumar",
+      "Sathvik Belagodu Sridhar",
+      "Pooja Shivappa"
+    ],
     "year": 2026,
     "venue": "4D Printing in Healthcare",
     "doi": "10.1515/9783111634609-007",
     "url": "https://doi.org/10.1515/9783111634609-007",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -108017,11 +108391,12 @@
       "Fabienne Touchard"
     ],
     "year": 2025,
-    "venue": "",
+    "venue": "SSRN Electronic Journal",
     "doi": "10.2139/ssrn.5159002",
     "url": "https://doi.org/10.2139/ssrn.5159002",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조"
@@ -108190,11 +108565,12 @@
       "Timothy W. Simpson"
     ],
     "year": 2025,
-    "venue": "",
+    "venue": "Research Square",
     "doi": "10.21203/rs.3.rs-6074274/v1",
     "url": "https://doi.org/10.21203/rs.3.rs-6074274/v1",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -110180,11 +110556,12 @@
       "David  J. Hoelzle"
     ],
     "year": 2025,
-    "venue": "",
+    "venue": "SSRN Electronic Journal",
     "doi": "10.2139/ssrn.5405399",
     "url": "https://doi.org/10.2139/ssrn.5405399",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조"
@@ -110976,11 +111353,12 @@
       "Boian T. Alexandrov"
     ],
     "year": 2025,
-    "venue": "",
+    "venue": "Research Square",
     "doi": "10.21203/rs.3.rs-7973952/v1",
     "url": "https://doi.org/10.21203/rs.3.rs-7973952/v1",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -111535,7 +111913,8 @@
     "doi": "10.1108/4dp-06-2025-0013",
     "url": "https://doi.org/10.1108/4dp-06-2025-0013",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -111711,7 +112090,8 @@
     "doi": "10.1109/icat66432.2025.11189288",
     "url": "https://doi.org/10.1109/icat66432.2025.11189288",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -111818,7 +112198,8 @@
     "doi": "10.1109/case58245.2025.11163898",
     "url": "https://doi.org/10.1109/case58245.2025.11163898",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -112041,11 +112422,12 @@
       "Christine Selhuber-Unkel"
     ],
     "year": 2025,
-    "venue": "",
+    "venue": "ChemRxiv",
     "doi": "10.26434/chemrxiv-2024-6vjkz-v2",
     "url": "https://doi.org/10.26434/chemrxiv-2024-6vjkz-v2",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -112730,7 +113112,8 @@
     "doi": "10.1115/imece-india2025-161210",
     "url": "https://doi.org/10.1115/imece-india2025-161210",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -112853,7 +113236,8 @@
     "doi": "10.1115/gt2025-154132",
     "url": "https://doi.org/10.1115/gt2025-154132",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -113682,11 +114066,12 @@
       "Reza Moini"
     ],
     "year": 2025,
-    "venue": "",
+    "venue": "SSRN Electronic Journal",
     "doi": "10.2139/ssrn.5963517",
     "url": "https://doi.org/10.2139/ssrn.5963517",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -113978,11 +114363,12 @@
       "Josephine  V. Carstensen"
     ],
     "year": 2025,
-    "venue": "",
+    "venue": "SSRN Electronic Journal",
     "doi": "10.2139/ssrn.5228197",
     "url": "https://doi.org/10.2139/ssrn.5228197",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "기능성 구배 적층제조",
@@ -114068,7 +114454,8 @@
     "doi": "10.1115/1.4069213",
     "url": "https://doi.org/10.1115/1.4069213",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -116726,13 +117113,18 @@
   {
     "id": "10.1002/9781394305285.ch7",
     "title": "Stimuli in 4D Printing of Foods",
-    "authors": [],
+    "authors": [
+      "C. Anandharamakrishnan",
+      "Jeyan A. Moses",
+      "P. Santhoshkumar"
+    ],
     "year": 2025,
     "venue": "4D Printing of Foods",
     "doi": "10.1002/9781394305285.ch7",
     "url": "https://doi.org/10.1002/9781394305285.ch7",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -117543,7 +117935,8 @@
     "doi": "10.1016/b978-0-443-24861-0.00005-8",
     "url": "https://doi.org/10.1016/b978-0-443-24861-0.00005-8",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -117972,7 +118365,8 @@
     "doi": "10.22541/au.174940808.86837002/v1",
     "url": "https://doi.org/10.22541/au.174940808.86837002/v1",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -118059,7 +118453,8 @@
     "doi": "10.1115/imece2025-166047",
     "url": "https://doi.org/10.1115/imece2025-166047",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -118641,11 +119036,12 @@
       "Klaus Schricker"
     ],
     "year": 2025,
-    "venue": "",
+    "venue": "SSRN Electronic Journal",
     "doi": "10.2139/ssrn.5642040",
     "url": "https://doi.org/10.2139/ssrn.5642040",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "툴패스 계획",
@@ -120981,7 +121377,8 @@
     "doi": "10.5604/01.3001.0055.4326",
     "url": "https://doi.org/10.5604/01.3001.0055.4326",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -122343,7 +122740,8 @@
     "doi": "10.1016/j.jmrt.2025.05.075",
     "url": "https://doi.org/10.1016/j.jmrt.2025.05.075",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -122738,7 +123136,8 @@
     "doi": "10.4236/jamp.2025.1312245",
     "url": "https://doi.org/10.4236/jamp.2025.1312245",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -123944,11 +124343,12 @@
       "Zhenyu Kong"
     ],
     "year": 2025,
-    "venue": "",
+    "venue": "Research Square",
     "doi": "10.21203/rs.3.rs-6650269/v1",
     "url": "https://doi.org/10.21203/rs.3.rs-6650269/v1",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "툴패스 계획",
@@ -124075,7 +124475,8 @@
     "doi": "10.1145/3746237.3746292",
     "url": "https://doi.org/10.1145/3746237.3746292",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -125762,7 +126163,8 @@
     "doi": "10.52842/conf.ecaade.2025.2.313",
     "url": "https://doi.org/10.52842/conf.ecaade.2025.2.313",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -126379,7 +126781,8 @@
     "doi": "10.1115/imece-india2025-161364",
     "url": "https://doi.org/10.1115/imece-india2025-161364",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -127618,7 +128021,8 @@
     "doi": "10.1002/9781394213795.ch6",
     "url": "https://doi.org/10.1002/9781394213795.ch6",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -127779,7 +128183,8 @@
     "doi": "10.1109/icmerr64601.2025.10949923",
     "url": "https://doi.org/10.1109/icmerr64601.2025.10949923",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "툴패스 계획",
@@ -128137,7 +128542,8 @@
     "doi": "10.4028/p-jwor8x",
     "url": "https://doi.org/10.4028/p-jwor8x",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -129671,11 +130077,12 @@
       "Bongju Jeong"
     ],
     "year": 2025,
-    "venue": "",
+    "venue": "SSRN Electronic Journal",
     "doi": "10.2139/ssrn.5462354",
     "url": "https://doi.org/10.2139/ssrn.5462354",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -130364,7 +130771,8 @@
     "doi": "10.1016/b978-0-443-29228-6.00014-1",
     "url": "https://doi.org/10.1016/b978-0-443-29228-6.00014-1",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -130794,7 +131202,8 @@
     "doi": "10.1016/b978-0-443-29228-6.00005-0",
     "url": "https://doi.org/10.1016/b978-0-443-29228-6.00005-0",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -131262,7 +131671,8 @@
     "doi": "10.1016/b978-0-443-29228-6.00010-4",
     "url": "https://doi.org/10.1016/b978-0-443-29228-6.00010-4",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -132872,7 +133282,8 @@
     "doi": "10.21012/fc12.1140",
     "url": "https://doi.org/10.21012/fc12.1140",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -133961,7 +134372,8 @@
     "doi": "10.36922/esam025180010",
     "url": "https://doi.org/10.36922/esam025180010",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -134241,7 +134653,8 @@
     "doi": "10.1016/b978-0-443-29228-6.00007-4",
     "url": "https://doi.org/10.1016/b978-0-443-29228-6.00007-4",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -134485,7 +134898,8 @@
     "doi": "10.59499/ep256767602",
     "url": "https://doi.org/10.59499/ep256767602",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -134598,11 +135012,12 @@
     "title": "Multi-material Additive Manufacturing",
     "authors": [],
     "year": 2025,
-    "venue": "",
+    "venue": "Elsevier eBooks",
     "doi": "10.1016/c2023-0-51837-3",
     "url": "https://doi.org/10.1016/c2023-0-51837-3",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -135372,7 +135787,8 @@
     "doi": "10.1201/9781003518198-4",
     "url": "https://doi.org/10.1201/9781003518198-4",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -136008,7 +136424,8 @@
     "doi": "10.1115/imece-india2025-159500",
     "url": "https://doi.org/10.1115/imece-india2025-159500",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -136990,7 +137407,8 @@
     "doi": "10.36922/msam025220045",
     "url": "https://doi.org/10.36922/msam025220045",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -137251,7 +137669,8 @@
     "doi": "10.1115/imece-india2025-161933",
     "url": "https://doi.org/10.1115/imece-india2025-161933",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -137581,11 +138000,12 @@
       "Doyeon Bang"
     ],
     "year": 2025,
-    "venue": "",
+    "venue": "SSRN Electronic Journal",
     "doi": "10.2139/ssrn.5247386",
     "url": "https://doi.org/10.2139/ssrn.5247386",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -138212,7 +138632,8 @@
     "doi": "10.1002/9781394213795.ch10",
     "url": "https://doi.org/10.1002/9781394213795.ch10",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -138351,7 +138772,8 @@
     "doi": "10.1016/b978-0-443-29228-6.00006-2",
     "url": "https://doi.org/10.1016/b978-0-443-29228-6.00006-2",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -138911,7 +139333,8 @@
     "doi": "10.1201/9781003557715-15",
     "url": "https://doi.org/10.1201/9781003557715-15",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -139210,7 +139633,8 @@
     "doi": "10.1108/4dp-02-2025-0005",
     "url": "https://doi.org/10.1108/4dp-02-2025-0005",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -139980,7 +140404,8 @@
     "doi": "10.1108/rpj-10-2024-0440",
     "url": "https://doi.org/10.1108/rpj-10-2024-0440",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -140101,7 +140526,8 @@
     "doi": "10.1016/b978-0-443-29228-6.00013-x",
     "url": "https://doi.org/10.1016/b978-0-443-29228-6.00013-x",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -140345,7 +140771,8 @@
     "doi": "10.1115/imece-india2025-159344",
     "url": "https://doi.org/10.1115/imece-india2025-159344",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -140469,7 +140896,8 @@
     "doi": "10.12688/digitaltwin.17931.2",
     "url": "https://doi.org/10.12688/digitaltwin.17931.2",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -141385,11 +141813,12 @@
       "M. Laura Habegger"
     ],
     "year": 2025,
-    "venue": "",
+    "venue": "Research Square",
     "doi": "10.21203/rs.3.rs-6279671/v1",
     "url": "https://doi.org/10.21203/rs.3.rs-6279671/v1",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -142516,7 +142945,8 @@
     "doi": "10.1016/j.jmrt.2025.09.159",
     "url": "https://doi.org/10.1016/j.jmrt.2025.09.159",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -143615,11 +144045,12 @@
       "Wei He"
     ],
     "year": 2025,
-    "venue": "",
+    "venue": "SSRN Electronic Journal",
     "doi": "10.2139/ssrn.5943509",
     "url": "https://doi.org/10.2139/ssrn.5943509",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -143830,11 +144261,12 @@
       "Yi Xiong"
     ],
     "year": 2025,
-    "venue": "",
+    "venue": "SSRN Electronic Journal",
     "doi": "10.2139/ssrn.5086974",
     "url": "https://doi.org/10.2139/ssrn.5086974",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -145268,7 +145700,8 @@
     "doi": "10.1115/smasis2025-167480",
     "url": "https://doi.org/10.1115/smasis2025-167480",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -146067,7 +146500,8 @@
     "doi": "10.1115/imece-india2025-159363",
     "url": "https://doi.org/10.1115/imece-india2025-159363",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -146457,13 +146891,18 @@
   {
     "id": "10.1002/9781394305285.ch4",
     "title": "Fundamentals of 4D Printing Technology",
-    "authors": [],
+    "authors": [
+      "C. Anandharamakrishnan",
+      "Jeyan A. Moses",
+      "P. Santhoshkumar"
+    ],
     "year": 2025,
     "venue": "4D Printing of Foods",
     "doi": "10.1002/9781394305285.ch4",
     "url": "https://doi.org/10.1002/9781394305285.ch4",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -146788,11 +147227,12 @@
       "Chengsong Yuan"
     ],
     "year": 2025,
-    "venue": "",
+    "venue": "SSRN Electronic Journal",
     "doi": "10.2139/ssrn.5782672",
     "url": "https://doi.org/10.2139/ssrn.5782672",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -147704,7 +148144,8 @@
     "doi": "10.1002/9781394213795.ch4",
     "url": "https://doi.org/10.1002/9781394213795.ch4",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -148314,7 +148755,8 @@
     "doi": "10.1117/12.3040656",
     "url": "https://doi.org/10.1117/12.3040656",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -149177,11 +149619,12 @@
       "Tejs Vegge"
     ],
     "year": 2025,
-    "venue": "",
+    "venue": "ChemRxiv",
     "doi": "10.26434/chemrxiv-2025-w8bkg",
     "url": "https://doi.org/10.26434/chemrxiv-2025-w8bkg",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "기능성 구배 적층제조",
@@ -149503,7 +149946,8 @@
     "doi": "10.1115/imece-india2025-161262",
     "url": "https://doi.org/10.1115/imece-india2025-161262",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -149642,7 +150086,8 @@
     "doi": "10.17350/hjse19030000360",
     "url": "https://doi.org/10.17350/hjse19030000360",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -150265,11 +150710,12 @@
       "Stelios Georgantzinos"
     ],
     "year": 2025,
-    "venue": "",
+    "venue": "Research Square",
     "doi": "10.21203/rs.3.rs-6841223/v1",
     "url": "https://doi.org/10.21203/rs.3.rs-6841223/v1",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -150362,13 +150808,18 @@
   {
     "id": "10.1002/9781394305285.ch5",
     "title": "Expanding Avenues in 4D Printing Technology",
-    "authors": [],
+    "authors": [
+      "C. Anandharamakrishnan",
+      "Jeyan A. Moses",
+      "P. Santhoshkumar"
+    ],
     "year": 2025,
     "venue": "4D Printing of Foods",
     "doi": "10.1002/9781394305285.ch5",
     "url": "https://doi.org/10.1002/9781394305285.ch5",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -150671,7 +151122,8 @@
     "doi": "10.1108/rpj-10-2024-0428",
     "url": "https://doi.org/10.1108/rpj-10-2024-0428",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -151920,7 +152372,8 @@
     "doi": "10.1108/4dp-05-2025-006",
     "url": "https://doi.org/10.1108/4dp-05-2025-006",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -152203,7 +152656,8 @@
     "doi": "10.54985/peeref.2507p7066538",
     "url": "https://doi.org/10.54985/peeref.2507p7066538",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -152304,7 +152758,8 @@
     "doi": "10.1093/jhps/hnaf069.213",
     "url": "https://doi.org/10.1093/jhps/hnaf069.213",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -155243,7 +155698,8 @@
     "doi": "10.1089/3dp.2023.0323",
     "url": "https://doi.org/10.1089/3dp.2023.0323",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "툴패스 계획",
@@ -155529,7 +155985,8 @@
     "doi": "10.36922/msam025130018",
     "url": "https://doi.org/10.36922/msam025130018",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -156083,7 +156540,8 @@
     "doi": "10.1049/icp.2025.1357",
     "url": "https://doi.org/10.1049/icp.2025.1357",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -157167,7 +157625,8 @@
     "doi": "10.24136/eq.3557",
     "url": "https://doi.org/10.24136/eq.3557",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -157396,7 +157855,8 @@
     "doi": "10.62306/dwsfqaeeoimatha",
     "url": "https://doi.org/10.62306/dwsfqaeeoimatha",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -157658,7 +158118,8 @@
     "doi": "10.1117/12.3050858",
     "url": "https://doi.org/10.1117/12.3050858",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -158400,7 +158861,8 @@
     "doi": "10.1117/12.3066926",
     "url": "https://doi.org/10.1117/12.3066926",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -160117,7 +160579,8 @@
     "doi": "10.1109/eras63351.2025.11135823",
     "url": "https://doi.org/10.1109/eras63351.2025.11135823",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -161824,7 +162287,8 @@
     "doi": "10.26678/abcm.cobem2023.cob2023-0208",
     "url": "https://doi.org/10.26678/abcm.cobem2023.cob2023-0208",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -165812,7 +166276,8 @@
     "doi": "10.34133/research.0889",
     "url": "https://doi.org/10.34133/research.0889",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -168115,7 +168580,8 @@
     "doi": "10.1002/adma.71106",
     "url": "https://doi.org/10.1002/adma.71106",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -169212,7 +169678,8 @@
     "doi": "10.1016/b978-0-443-29228-6.00012-8",
     "url": "https://doi.org/10.1016/b978-0-443-29228-6.00012-8",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -169590,7 +170057,8 @@
     "doi": "10.36922/msam025200031",
     "url": "https://doi.org/10.36922/msam025200031",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -171325,7 +171793,8 @@
     "doi": "10.22541/au.176419318.88774134/v1",
     "url": "https://doi.org/10.22541/au.176419318.88774134/v1",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -171411,11 +171880,12 @@
       "Alaa Elwany"
     ],
     "year": 2025,
-    "venue": "",
+    "venue": "SSRN Electronic Journal",
     "doi": "10.2139/ssrn.5604710",
     "url": "https://doi.org/10.2139/ssrn.5604710",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -172080,11 +172550,12 @@
       "Jinlu He"
     ],
     "year": 2025,
-    "venue": "",
+    "venue": "ChemRxiv",
     "doi": "10.26434/chemrxiv-2025-fk3r7-v2",
     "url": "https://doi.org/10.26434/chemrxiv-2025-fk3r7-v2",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -174189,7 +174660,8 @@
     "doi": "10.1115/imece-india2025-159815",
     "url": "https://doi.org/10.1115/imece-india2025-159815",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -175199,7 +175671,8 @@
     "doi": "10.1109/nmitcon65824.2025.11188115",
     "url": "https://doi.org/10.1109/nmitcon65824.2025.11188115",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -176156,7 +176629,8 @@
     "doi": "10.1063/5.0262179",
     "url": "https://doi.org/10.1063/5.0262179",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -176313,11 +176787,12 @@
     "title": "Advances in 3D and 4D Printing of Medical Robots and  Devices",
     "authors": [],
     "year": 2025,
-    "venue": "",
+    "venue": "Elsevier eBooks",
     "doi": "10.1016/c2023-0-51263-7",
     "url": "https://doi.org/10.1016/c2023-0-51263-7",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -176380,7 +176855,8 @@
     "doi": "10.1201/9781003569633-3",
     "url": "https://doi.org/10.1201/9781003569633-3",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -176597,11 +177073,12 @@
       "Yasmine Abdin"
     ],
     "year": 2025,
-    "venue": "",
+    "venue": "SSRN Electronic Journal",
     "doi": "10.2139/ssrn.5182954",
     "url": "https://doi.org/10.2139/ssrn.5182954",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -177583,7 +178060,8 @@
     "doi": "10.14733/cadaps.2026.101-122",
     "url": "https://doi.org/10.14733/cadaps.2026.101-122",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -177929,7 +178407,8 @@
     "doi": "10.1115/1.4067616",
     "url": "https://doi.org/10.1115/1.4067616",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "툴패스 계획",
@@ -178466,7 +178945,8 @@
     "doi": "10.1145/3706599.3720059",
     "url": "https://doi.org/10.1145/3706599.3720059",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -178823,7 +179303,8 @@
     "doi": "10.31224/4453",
     "url": "https://doi.org/10.31224/4453",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -178963,7 +179444,8 @@
     "doi": "10.36227/techrxiv.176283613.37299306/v1",
     "url": "https://doi.org/10.36227/techrxiv.176283613.37299306/v1",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -182036,7 +182518,8 @@
     "doi": "10.22306/asim.v11i1.118",
     "url": "https://doi.org/10.22306/asim.v11i1.118",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "계산설계",
@@ -182673,7 +183156,8 @@
     "doi": "10.2478/bipcm-2025-0040",
     "url": "https://doi.org/10.2478/bipcm-2025-0040",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -183406,7 +183890,8 @@
     "doi": "10.1109/sensors59705.2025.11331175",
     "url": "https://doi.org/10.1109/sensors59705.2025.11331175",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -183628,11 +184113,12 @@
       "Xiaodan Ren"
     ],
     "year": 2025,
-    "venue": "",
+    "venue": "SSRN Electronic Journal",
     "doi": "10.2139/ssrn.5491686",
     "url": "https://doi.org/10.2139/ssrn.5491686",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "툴패스 계획",
@@ -184453,7 +184939,8 @@
     "doi": "10.3390/jmmp9120400",
     "url": "https://doi.org/10.3390/jmmp9120400",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "계산설계",
@@ -184571,11 +185058,12 @@
       "Martin Winkler"
     ],
     "year": 2025,
-    "venue": "",
+    "venue": "Preprints.org",
     "doi": "10.20944/preprints202510.2394.v1",
     "url": "https://doi.org/10.20944/preprints202510.2394.v1",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "계산설계",
@@ -184696,7 +185184,8 @@
     "doi": "10.1109/ames64994.2025.11184376",
     "url": "https://doi.org/10.1109/ames64994.2025.11184376",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -185414,7 +185903,8 @@
     "doi": "10.1108/4dp-12-2024-0002",
     "url": "https://doi.org/10.1108/4dp-12-2024-0002",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -185536,7 +186026,8 @@
     "doi": "10.1016/b978-0-443-24861-0.00006-x",
     "url": "https://doi.org/10.1016/b978-0-443-24861-0.00006-x",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -185849,7 +186340,8 @@
     "doi": "10.1108/4dp-01-2025-0001",
     "url": "https://doi.org/10.1108/4dp-01-2025-0001",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "기능성 구배 적층제조",
@@ -185982,7 +186474,8 @@
     "doi": "10.1016/j.polymer.2025.129066",
     "url": "https://doi.org/10.1016/j.polymer.2025.129066",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -186524,7 +187017,8 @@
     "doi": "10.1039/d5ta01299f",
     "url": "https://doi.org/10.1039/d5ta01299f",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -187284,7 +187778,8 @@
     "doi": "10.1016/b978-0-443-24861-0.00011-3",
     "url": "https://doi.org/10.1016/b978-0-443-24861-0.00011-3",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -187447,7 +187942,8 @@
     "doi": "10.1108/4dp-04-2025-0008",
     "url": "https://doi.org/10.1108/4dp-04-2025-0008",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -187981,7 +188477,8 @@
     "doi": "10.1108/4dp-06-2025-0014",
     "url": "https://doi.org/10.1108/4dp-06-2025-0014",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -188110,7 +188607,8 @@
     "doi": "10.1016/b978-0-443-28808-1.00012-9",
     "url": "https://doi.org/10.1016/b978-0-443-28808-1.00012-9",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -188235,7 +188733,8 @@
     "doi": "10.1201/9781779643346-19",
     "url": "https://doi.org/10.1201/9781779643346-19",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -188533,11 +189032,12 @@
       "Yiping Zhao"
     ],
     "year": 2025,
-    "venue": "",
+    "venue": "SSRN Electronic Journal",
     "doi": "10.2139/ssrn.5457406",
     "url": "https://doi.org/10.2139/ssrn.5457406",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -189033,7 +189533,8 @@
     "doi": "10.1002/9781394213795.ch5",
     "url": "https://doi.org/10.1002/9781394213795.ch5",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -189957,7 +190458,8 @@
     "doi": "10.1002/9781394305285",
     "url": "https://doi.org/10.1002/9781394305285",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -190144,7 +190646,8 @@
     "doi": "10.1002/9781394213795.ch7",
     "url": "https://doi.org/10.1002/9781394213795.ch7",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -190280,7 +190783,8 @@
     "doi": "10.1002/9781394213795",
     "url": "https://doi.org/10.1002/9781394213795",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -190328,7 +190832,8 @@
     "doi": "10.1002/9781394213795.ch9",
     "url": "https://doi.org/10.1002/9781394213795.ch9",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -190846,7 +191351,8 @@
     "doi": "10.1016/b978-0-443-29228-6.00004-9",
     "url": "https://doi.org/10.1016/b978-0-443-29228-6.00004-9",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -190964,7 +191470,8 @@
     "doi": "10.1201/9781003539612-11",
     "url": "https://doi.org/10.1201/9781003539612-11",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -191095,7 +191602,8 @@
     "doi": "10.1201/9780367694265-eppmpt127-0",
     "url": "https://doi.org/10.1201/9780367694265-eppmpt127-0",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -191374,7 +191882,8 @@
     "doi": "10.1515/9783111505190-010",
     "url": "https://doi.org/10.1515/9783111505190-010",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -191467,7 +191976,8 @@
     "doi": "10.11129/9783955536510-025",
     "url": "https://doi.org/10.11129/9783955536510-025",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -191529,11 +192039,12 @@
       "Eva Blasco"
     ],
     "year": 2024,
-    "venue": "",
+    "venue": "ChemRxiv",
     "doi": "10.26434/chemrxiv-2024-f94sf",
     "url": "https://doi.org/10.26434/chemrxiv-2024-f94sf",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조"
@@ -192434,11 +192945,12 @@
       "Jon Spangenberg"
     ],
     "year": 2024,
-    "venue": "",
+    "venue": "SSRN Electronic Journal",
     "doi": "10.2139/ssrn.4868307",
     "url": "https://doi.org/10.2139/ssrn.4868307",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조"
@@ -192742,11 +193254,12 @@
       "Hui-suk Yun"
     ],
     "year": 2024,
-    "venue": "",
+    "venue": "SSRN Electronic Journal",
     "doi": "10.2139/ssrn.5036380",
     "url": "https://doi.org/10.2139/ssrn.5036380",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조"
@@ -192916,11 +193429,12 @@
       "Jieping Wang"
     ],
     "year": 2024,
-    "venue": "",
+    "venue": "ChemRxiv",
     "doi": "10.26434/chemrxiv-2024-pqzct",
     "url": "https://doi.org/10.26434/chemrxiv-2024-pqzct",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조"
@@ -193237,11 +193751,12 @@
       "Ghaus Rizvi"
     ],
     "year": 2024,
-    "venue": "",
+    "venue": "SSRN Electronic Journal",
     "doi": "10.2139/ssrn.4881757",
     "url": "https://doi.org/10.2139/ssrn.4881757",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조"
@@ -194129,7 +194644,8 @@
     "doi": "10.31399/asm.cp.am-epri-2024p0723",
     "url": "https://doi.org/10.31399/asm.cp.am-epri-2024p0723",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -194692,7 +195208,8 @@
     "doi": "10.1016/b978-0-443-15487-4.00015-7",
     "url": "https://doi.org/10.1016/b978-0-443-15487-4.00015-7",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -194876,11 +195393,12 @@
       "Christine Selhuber-Unkel"
     ],
     "year": 2024,
-    "venue": "",
+    "venue": "ChemRxiv",
     "doi": "10.26434/chemrxiv-2024-6vjkz",
     "url": "https://doi.org/10.26434/chemrxiv-2024-6vjkz",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -195176,11 +195694,12 @@
       "Leiting Zhang"
     ],
     "year": 2024,
-    "venue": "",
+    "venue": "ChemRxiv",
     "doi": "10.26434/chemrxiv-2024-mqb6s-v2",
     "url": "https://doi.org/10.26434/chemrxiv-2024-mqb6s-v2",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "계산설계",
@@ -195336,11 +195855,12 @@
       "Leiting Zhang"
     ],
     "year": 2024,
-    "venue": "",
+    "venue": "ChemRxiv",
     "doi": "10.26434/chemrxiv-2024-mqb6s",
     "url": "https://doi.org/10.26434/chemrxiv-2024-mqb6s",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "계산설계",
@@ -195587,7 +196107,8 @@
     "doi": "10.1016/b978-0-443-15286-3.00007-2",
     "url": "https://doi.org/10.1016/b978-0-443-15286-3.00007-2",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "툴패스 계획",
@@ -196671,7 +197192,8 @@
     "doi": "10.1109/asmc61125.2024.10545457",
     "url": "https://doi.org/10.1109/asmc61125.2024.10545457",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -196965,7 +197487,8 @@
     "doi": "10.1109/icac61394.2024.10718858",
     "url": "https://doi.org/10.1109/icac61394.2024.10718858",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -197970,7 +198493,8 @@
     "doi": "10.32604/icces.2024.011371",
     "url": "https://doi.org/10.32604/icces.2024.011371",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -198805,7 +199329,8 @@
     "doi": "10.2172/2540487",
     "url": "https://doi.org/10.2172/2540487",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -199373,7 +199898,8 @@
     "doi": "10.1016/b978-0-443-21518-6.00002-8",
     "url": "https://doi.org/10.1016/b978-0-443-21518-6.00002-8",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -199953,7 +200479,8 @@
     "doi": "10.1016/b978-0-443-13673-3.00007-9",
     "url": "https://doi.org/10.1016/b978-0-443-13673-3.00007-9",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -200805,7 +201332,8 @@
     "doi": "10.1016/b978-0-443-13673-3.00001-8",
     "url": "https://doi.org/10.1016/b978-0-443-13673-3.00001-8",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -201453,11 +201981,12 @@
       "Subham Banerjee"
     ],
     "year": 2024,
-    "venue": "",
+    "venue": "SSRN Electronic Journal",
     "doi": "10.2139/ssrn.4956469",
     "url": "https://doi.org/10.2139/ssrn.4956469",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -201776,11 +202305,12 @@
       "Wenhe Liao"
     ],
     "year": 2024,
-    "venue": "",
+    "venue": "Research Square",
     "doi": "10.21203/rs.3.rs-4328983/v1",
     "url": "https://doi.org/10.21203/rs.3.rs-4328983/v1",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -201979,7 +202509,8 @@
     "doi": "10.1109/icept63120.2024.10668411",
     "url": "https://doi.org/10.1109/icept63120.2024.10668411",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -202082,7 +202613,8 @@
     "doi": "10.1109/icemce64157.2024.10862094",
     "url": "https://doi.org/10.1109/icemce64157.2024.10862094",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -202554,7 +203086,8 @@
     "doi": "10.1002/adfm.202470051",
     "url": "https://doi.org/10.1002/adfm.202470051",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "기능성 구배 적층제조",
@@ -202890,7 +203423,8 @@
     "doi": "10.1115/msec2024-125118",
     "url": "https://doi.org/10.1115/msec2024-125118",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -203791,11 +204325,12 @@
       "Guha Manogharan"
     ],
     "year": 2024,
-    "venue": "",
+    "venue": "Research Square",
     "doi": "10.21203/rs.3.rs-4301742/v1",
     "url": "https://doi.org/10.21203/rs.3.rs-4301742/v1",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -203964,11 +204499,12 @@
       "Wei Xiong"
     ],
     "year": 2024,
-    "venue": "",
+    "venue": "SSRN Electronic Journal",
     "doi": "10.2139/ssrn.4709921",
     "url": "https://doi.org/10.2139/ssrn.4709921",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -204443,11 +204979,12 @@
       "Zhigang Lu"
     ],
     "year": 2024,
-    "venue": "",
+    "venue": "SSRN Electronic Journal",
     "doi": "10.2139/ssrn.4698277",
     "url": "https://doi.org/10.2139/ssrn.4698277",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -204587,7 +205124,8 @@
     "doi": "10.1108/jimse-10-2023-0008",
     "url": "https://doi.org/10.1108/jimse-10-2023-0008",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -205509,7 +206047,8 @@
     "doi": "10.1002/advs.202470149",
     "url": "https://doi.org/10.1002/advs.202470149",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "기능성 구배 적층제조",
@@ -205818,11 +206357,12 @@
       "HongPing Xiang"
     ],
     "year": 2024,
-    "venue": "",
+    "venue": "SSRN Electronic Journal",
     "doi": "10.2139/ssrn.4868141",
     "url": "https://doi.org/10.2139/ssrn.4868141",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "기능성 구배 적층제조",
@@ -206356,7 +206896,8 @@
     "doi": "10.1109/acai63924.2024.10899482",
     "url": "https://doi.org/10.1109/acai63924.2024.10899482",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "툴패스 계획",
@@ -207348,7 +207889,8 @@
     "doi": "10.1115/msec2024-124099",
     "url": "https://doi.org/10.1115/msec2024-124099",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -207570,11 +208112,12 @@
       "Anca Hermenean"
     ],
     "year": 2024,
-    "venue": "",
+    "venue": "SSRN Electronic Journal",
     "doi": "10.2139/ssrn.4729262",
     "url": "https://doi.org/10.2139/ssrn.4729262",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -207806,7 +208349,8 @@
     "doi": "10.1109/aixdke63520.2024.00014",
     "url": "https://doi.org/10.1109/aixdke63520.2024.00014",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -208238,7 +208782,8 @@
     "doi": "10.1016/b978-0-443-21518-6.00005-3",
     "url": "https://doi.org/10.1016/b978-0-443-21518-6.00005-3",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -208552,7 +209097,8 @@
     "doi": "10.36922/msam.3571",
     "url": "https://doi.org/10.36922/msam.3571",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -208637,7 +209183,8 @@
     "doi": "10.1117/12.3009698",
     "url": "https://doi.org/10.1117/12.3009698",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -208721,7 +209268,8 @@
     "doi": "10.1063/5.0215022",
     "url": "https://doi.org/10.1063/5.0215022",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -209119,7 +209667,8 @@
     "doi": "10.1007/s38311-024-1936-1",
     "url": "https://doi.org/10.1007/s38311-024-1936-1",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -209404,7 +209953,8 @@
     "doi": "10.1088/1361-665x/ad21b5",
     "url": "https://doi.org/10.1088/1361-665x/ad21b5",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -209683,7 +210233,8 @@
     "doi": "10.1016/b978-0-323-96020-5.00146-1",
     "url": "https://doi.org/10.1016/b978-0-323-96020-5.00146-1",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -210582,7 +211133,8 @@
     "doi": "10.52202/078370-0051",
     "url": "https://doi.org/10.52202/078370-0051",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -210687,7 +211239,8 @@
     "doi": "10.31224/3515",
     "url": "https://doi.org/10.31224/3515",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -211015,7 +211568,8 @@
     "doi": "10.54097/40ftw337",
     "url": "https://doi.org/10.54097/40ftw337",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -211140,7 +211694,8 @@
     "doi": "10.1115/isfa2024-141324",
     "url": "https://doi.org/10.1115/isfa2024-141324",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -211273,11 +211828,12 @@
     "title": "Motion and Path Planning for Additive Manufacturing",
     "authors": [],
     "year": 2024,
-    "venue": "",
+    "venue": "Elsevier eBooks",
     "doi": "10.1016/c2022-0-01328-3",
     "url": "https://doi.org/10.1016/c2022-0-01328-3",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "툴패스 계획",
@@ -211611,7 +212167,8 @@
     "doi": "10.21494/iste.op.2024.1227",
     "url": "https://doi.org/10.21494/iste.op.2024.1227",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -212740,7 +213297,8 @@
     "doi": "10.1016/b978-0-443-21518-6.00006-5",
     "url": "https://doi.org/10.1016/b978-0-443-21518-6.00006-5",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -212859,7 +213417,8 @@
     "doi": "10.1016/b978-0-443-21518-6.00008-9",
     "url": "https://doi.org/10.1016/b978-0-443-21518-6.00008-9",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -214214,7 +214773,8 @@
     "doi": "10.32604/icces.2024.011119",
     "url": "https://doi.org/10.32604/icces.2024.011119",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "기능성 구배 적층제조",
@@ -215067,11 +215627,12 @@
     "title": "Machine Learning Aided Analysis, Design, and Additive Manufacturing of Functionally Graded Porous Composite Structures",
     "authors": [],
     "year": 2024,
-    "venue": "",
+    "venue": "Elsevier eBooks",
     "doi": "10.1016/c2022-0-00102-1",
     "url": "https://doi.org/10.1016/c2022-0-00102-1",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -216024,11 +216585,12 @@
       "Lei Ren"
     ],
     "year": 2024,
-    "venue": "",
+    "venue": "SSRN Electronic Journal",
     "doi": "10.2139/ssrn.4933058",
     "url": "https://doi.org/10.2139/ssrn.4933058",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -216966,7 +217528,8 @@
     "doi": "10.12688/digitaltwin.17931.1",
     "url": "https://doi.org/10.12688/digitaltwin.17931.1",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -217194,7 +217757,8 @@
     "doi": "10.1109/case59546.2024.10711510",
     "url": "https://doi.org/10.1109/case59546.2024.10711510",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -217497,7 +218061,8 @@
     "doi": "10.1089/3dp.2021.0313",
     "url": "https://doi.org/10.1089/3dp.2021.0313",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -217674,7 +218239,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-12",
-    "last_updated": "2026-06-16",
+    "last_updated": "2026-06-17",
     "archive_reason": "low_relevance",
     "summary_provider": "openai",
     "openai_summary_applied": true,
@@ -218849,7 +219414,8 @@
     "doi": "10.1109/iros58592.2024.10802422",
     "url": "https://doi.org/10.1109/iros58592.2024.10802422",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -219003,7 +219569,8 @@
     "doi": "10.62441/nano-ntp.v20is12.15",
     "url": "https://doi.org/10.62441/nano-ntp.v20is12.15",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -219071,7 +219638,8 @@
     "doi": "10.31224/3723",
     "url": "https://doi.org/10.31224/3723",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -220040,7 +220608,8 @@
     "doi": "10.1115/msec2024-121253",
     "url": "https://doi.org/10.1115/msec2024-121253",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -221862,7 +222431,8 @@
     "doi": "10.36922/msam.5022",
     "url": "https://doi.org/10.36922/msam.5022",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -221972,7 +222542,8 @@
     "doi": "10.4018/978-1-6684-5638-5.ch013",
     "url": "https://doi.org/10.4018/978-1-6684-5638-5.ch013",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -222045,7 +222616,8 @@
     "doi": "10.3390/ma17184545",
     "url": "https://doi.org/10.3390/ma17184545",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -223046,7 +223618,8 @@
     "doi": "10.36652/1813-1336-2024-20-1-41-45",
     "url": "https://doi.org/10.36652/1813-1336-2024-20-1-41-45",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -223688,7 +224261,8 @@
     "doi": "10.46254/gc02.20240078",
     "url": "https://doi.org/10.46254/gc02.20240078",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -224193,7 +224767,8 @@
     "doi": "10.23919/iccas63016.2024.10773302",
     "url": "https://doi.org/10.23919/iccas63016.2024.10773302",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -225436,7 +226011,8 @@
     "doi": "10.1109/powermems63147.2024.10814506",
     "url": "https://doi.org/10.1109/powermems63147.2024.10814506",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -226218,7 +226794,8 @@
     "doi": "10.1002/adfm.202470270",
     "url": "https://doi.org/10.1002/adfm.202470270",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -226510,7 +227087,8 @@
     "doi": "10.1016/b978-0-443-21518-6.00003-x",
     "url": "https://doi.org/10.1016/b978-0-443-21518-6.00003-x",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -228540,7 +229118,8 @@
     "doi": "10.3390/electronics13173550",
     "url": "https://doi.org/10.3390/electronics13173550",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -228669,7 +229248,8 @@
     "doi": "10.12688/digitaltwin.17807.2",
     "url": "https://doi.org/10.12688/digitaltwin.17807.2",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -229015,7 +229595,8 @@
     "doi": "10.2139/ssrn.4900072",
     "url": "https://doi.org/10.2139/ssrn.4900072",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -229103,7 +229684,8 @@
     "doi": "10.54660/ijaiet.2024.5.1.58-65",
     "url": "https://doi.org/10.54660/ijaiet.2024.5.1.58-65",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -230658,7 +231240,8 @@
     "doi": "10.1201/9781032630748-4",
     "url": "https://doi.org/10.1201/9781032630748-4",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -230885,7 +231468,8 @@
     "doi": "10.1115/imece2024-146882",
     "url": "https://doi.org/10.1115/imece2024-146882",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -231381,7 +231965,8 @@
     "doi": "10.1109/tla.2024.10620386",
     "url": "https://doi.org/10.1109/tla.2024.10620386",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -232304,7 +232889,8 @@
     "doi": "10.1109/dtip62575.2024.10613180",
     "url": "https://doi.org/10.1109/dtip62575.2024.10613180",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "계산설계",
@@ -233334,7 +233920,8 @@
     "doi": "10.1115/msec2024-125414",
     "url": "https://doi.org/10.1115/msec2024-125414",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -234178,7 +234765,8 @@
     "doi": "10.1051/mfreview/2024010",
     "url": "https://doi.org/10.1051/mfreview/2024010",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -234417,11 +235005,12 @@
       "Nan Wu"
     ],
     "year": 2024,
-    "venue": "",
+    "venue": "SSRN Electronic Journal",
     "doi": "10.2139/ssrn.4909624",
     "url": "https://doi.org/10.2139/ssrn.4909624",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "기능성 구배 적층제조",
@@ -234544,7 +235133,8 @@
     "doi": "10.1145/3665662.3673256",
     "url": "https://doi.org/10.1145/3665662.3673256",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -234663,7 +235253,8 @@
     "doi": "10.3934/acse.2024010",
     "url": "https://doi.org/10.3934/acse.2024010",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -236097,11 +236688,12 @@
       "Yanlin Song"
     ],
     "year": 2024,
-    "venue": "",
+    "venue": "Research Square",
     "doi": "10.21203/rs.3.rs-4954530/v1",
     "url": "https://doi.org/10.21203/rs.3.rs-4954530/v1",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -236450,7 +237042,8 @@
     "doi": "10.1088/1361-665x/ad8a31",
     "url": "https://doi.org/10.1088/1361-665x/ad8a31",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "계산설계",
@@ -237202,7 +237795,8 @@
     "doi": "10.1088/1742-6596/2716/1/012034",
     "url": "https://doi.org/10.1088/1742-6596/2716/1/012034",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -238072,7 +238666,8 @@
     "doi": "10.1109/indin58382.2024.10774248",
     "url": "https://doi.org/10.1109/indin58382.2024.10774248",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -239340,11 +239935,12 @@
       "Santosh Suram"
     ],
     "year": 2024,
-    "venue": "",
+    "venue": "ChemRxiv",
     "doi": "10.26434/chemrxiv-2024-fhn1k",
     "url": "https://doi.org/10.26434/chemrxiv-2024-fhn1k",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -240634,11 +241230,12 @@
       "Garrett  W. Melenka"
     ],
     "year": 2024,
-    "venue": "",
+    "venue": "SSRN Electronic Journal",
     "doi": "10.2139/ssrn.4903000",
     "url": "https://doi.org/10.2139/ssrn.4903000",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -240802,11 +241399,12 @@
       "Chi-Tsun CHENG"
     ],
     "year": 2024,
-    "venue": "",
+    "venue": "Research Square",
     "doi": "10.21203/rs.3.rs-5239129/v1",
     "url": "https://doi.org/10.21203/rs.3.rs-5239129/v1",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -241505,7 +242103,8 @@
     "doi": "10.1109/case59546.2024.10711607",
     "url": "https://doi.org/10.1109/case59546.2024.10711607",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -241898,7 +242497,8 @@
     "doi": "10.47134/jme.v1i1.2191",
     "url": "https://doi.org/10.47134/jme.v1i1.2191",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -242408,7 +243008,8 @@
     "doi": "10.1002/rpm2.62",
     "url": "https://doi.org/10.1002/rpm2.62",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -242822,13 +243423,24 @@
   {
     "id": "10.62441/nano-ntp.v20i6.39",
     "title": "Advancements in Wire Arc Additive Manufacturing of Functionally Graded Materials: Optimizing Compositional Gradients and Mechanical Performance: An Overview",
-    "authors": [],
+    "authors": [
+      "Manideep Roy Avula",
+      "Ashwin Sailesh",
+      "S. N. Padhi",
+      "Dhivakar Poosapadi",
+      "M. Venkatasudhahar",
+      "Praveen Vundrajavarapu",
+      "T. Mayavan",
+      "Nagaraj Ashok",
+      "T. S. Senthil"
+    ],
     "year": 2024,
     "venue": "Nanotechnology Perceptions",
     "doi": "10.62441/nano-ntp.v20i6.39",
     "url": "https://doi.org/10.62441/nano-ntp.v20i6.39",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -243214,11 +243826,12 @@
       "Yasmine Abdin"
     ],
     "year": 2024,
-    "venue": "",
+    "venue": "SSRN Electronic Journal",
     "doi": "10.2139/ssrn.5064801",
     "url": "https://doi.org/10.2139/ssrn.5064801",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -243914,11 +244527,12 @@
       "Mohamad Reza Borhani"
     ],
     "year": 2024,
-    "venue": "",
+    "venue": "SSRN Electronic Journal",
     "doi": "10.2139/ssrn.4865630",
     "url": "https://doi.org/10.2139/ssrn.4865630",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -246262,7 +246876,8 @@
     "doi": "10.1088/2631-8695/ad82a4",
     "url": "https://doi.org/10.1088/2631-8695/ad82a4",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -246368,7 +246983,8 @@
     "doi": "10.1115/msec2024-124383",
     "url": "https://doi.org/10.1115/msec2024-124383",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -246515,7 +247131,8 @@
     "doi": "10.1002/marc.202470023",
     "url": "https://doi.org/10.1002/marc.202470023",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -246957,11 +247574,12 @@
       "M. L. Taheri"
     ],
     "year": 2024,
-    "venue": "",
+    "venue": "SSRN Electronic Journal",
     "doi": "10.2139/ssrn.4747004",
     "url": "https://doi.org/10.2139/ssrn.4747004",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -247795,7 +248413,8 @@
     "doi": "10.1515/9783111215112-008",
     "url": "https://doi.org/10.1515/9783111215112-008",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -247879,7 +248498,8 @@
     "doi": "10.1515/9783111215112-007",
     "url": "https://doi.org/10.1515/9783111215112-007",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -247942,11 +248562,12 @@
       "Abbas Zolfaghari"
     ],
     "year": 2024,
-    "venue": "",
+    "venue": "SSRN Electronic Journal",
     "doi": "10.2139/ssrn.4803748",
     "url": "https://doi.org/10.2139/ssrn.4803748",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -248050,11 +248671,12 @@
       "Zhaohua Lin"
     ],
     "year": 2024,
-    "venue": "",
+    "venue": "SSRN Electronic Journal",
     "doi": "10.2139/ssrn.4907165",
     "url": "https://doi.org/10.2139/ssrn.4907165",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -248516,7 +249138,8 @@
     "doi": "10.1016/b978-0-443-13673-3.00018-3",
     "url": "https://doi.org/10.1016/b978-0-443-13673-3.00018-3",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "기능성 구배 적층제조",
@@ -248986,7 +249609,8 @@
     "doi": "10.1016/b978-0-443-13673-3.00003-1",
     "url": "https://doi.org/10.1016/b978-0-443-13673-3.00003-1",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "기능성 구배 적층제조",
@@ -249228,7 +249852,8 @@
     "doi": "10.1016/b978-0-443-21518-6.00001-6",
     "url": "https://doi.org/10.1016/b978-0-443-21518-6.00001-6",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -250395,11 +251020,12 @@
       "Ralph Shad"
     ],
     "year": 2024,
-    "venue": "",
+    "venue": "Preprints.org",
     "doi": "10.20944/preprints202407.2574.v1",
     "url": "https://doi.org/10.20944/preprints202407.2574.v1",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -250490,7 +251116,8 @@
     "doi": "10.5772/intechopen.1007310",
     "url": "https://doi.org/10.5772/intechopen.1007310",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -250704,7 +251331,8 @@
     "doi": "10.21608/jtcps.2024.258193.1249",
     "url": "https://doi.org/10.21608/jtcps.2024.258193.1249",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -251209,11 +251837,12 @@
     "title": "4D Printing of Composites",
     "authors": [],
     "year": 2024,
-    "venue": "",
+    "venue": "Elsevier eBooks",
     "doi": "10.1016/c2022-0-03188-3",
     "url": "https://doi.org/10.1016/c2022-0-03188-3",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -251904,7 +252533,8 @@
     "doi": "10.1201/9781003442363-6",
     "url": "https://doi.org/10.1201/9781003442363-6",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -252143,7 +252773,8 @@
     "doi": "10.1515/9783111081632-004",
     "url": "https://doi.org/10.1515/9783111081632-004",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -252228,7 +252859,8 @@
     "doi": "10.1201/9781003442363",
     "url": "https://doi.org/10.1201/9781003442363",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "다중재료 적층제조",
@@ -253208,7 +253840,8 @@
     "doi": "10.1016/b978-0-443-21518-6.00004-1",
     "url": "https://doi.org/10.1016/b978-0-443-21518-6.00004-1",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
@@ -254132,7 +254765,8 @@
     "doi": "10.1115/detc2024-142544",
     "url": "https://doi.org/10.1115/detc2024-142544",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "툴패스 계획",
@@ -254218,7 +254852,8 @@
     "doi": "10.1515/9783111215112-014",
     "url": "https://doi.org/10.1515/9783111215112-014",
     "source": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "categories": [
       "리뷰 및 서베이",
