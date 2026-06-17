@@ -68,6 +68,29 @@
 ### 주의사항
 - OpenAI API는 사용하지 않았습니다.
 - publisher page crawling, PDF download/storage, raw abstract display는 수행하지 않았습니다.
+
+## 2026-06-17 14:20
+### 변경 요약
+- `Enrich OpenAlex metadata` workflow가 다시 exit code 1로 실패한 원인을 GitHub Actions push race condition으로 판단하고 완화했습니다.
+- Node.js 20 메시지는 실패 원인이 아니라 warning이며, 실제 실패는 enrichment workflow 실행 중 다른 workflow가 `main`에 먼저 커밋을 push해서 마지막 `git push`가 reject된 상황으로 보입니다.
+
+### 수정/생성한 파일
+- `.github/workflows/enrich-openalex-metadata.yml`: checkout에 `fetch-depth: 0`을 추가하고, enrichment commit 후 `git pull --rebase origin main`을 수행한 뒤 push하도록 변경했습니다.
+- `AGENT_LOG.md`: 실패 원인 분석과 workflow 수정 내용을 기록했습니다.
+
+### 구현한 기능
+- enrichment workflow가 오래 실행되는 동안 `Update papers` workflow가 `main`을 갱신해도, commit 후 rebase를 시도한 뒤 push합니다.
+- full history checkout으로 GitHub Actions 환경에서 rebase가 가능하도록 했습니다.
+
+### 설계 결정
+- enrichment는 data file을 변경하는 장시간 작업이라 scheduled update workflow와 충돌할 수 있습니다. 완전한 잠금보다 rebase 후 push가 사용자 수동 실행 흐름에 더 간단하다고 판단했습니다.
+- Node 24 opt-in은 이미 적용되어 있으므로 Node warning은 기능 실패로 취급하지 않습니다.
+
+### 남은 작업
+- 만약 rebase conflict가 계속 발생하면, update workflow와 enrichment workflow에 동일 concurrency group을 추가해 data-writing workflow를 직렬화하는 방식으로 더 강하게 막을 수 있습니다.
+
+### 주의사항
+- OpenAI API는 사용하지 않았습니다.
 - 출판사 웹사이트 크롤링, PDF 저장, raw abstract 표시는 수행하지 않았습니다.
 
 ## 2026-06-17 00:30
