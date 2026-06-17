@@ -1,5 +1,24 @@
 # AGENT_LOG
 
+## 2026-06-17 22:33
+
+### Change Summary
+- Simplified author display so corresponding authors are highlighted inside the author list instead of shown in a separate repeated line.
+- Increased corresponding-author highlight contrast.
+
+### Edited Files
+- `assets/app.js`: removed the separate corresponding-author row, keeps corresponding authors in the author chip list, and appends hidden corresponding authors as supplemental `Corresponding: Name` chips when they fall outside the visible author limit.
+- `assets/style.css`: strengthened corresponding-author chip contrast and added dashed styling for supplemental corresponding-author chips.
+- `index.html`: bumped JS/CSS cache versions for GitHub Pages.
+- `AGENT_LOG.md`: recorded the display decision.
+
+### Design Notes
+- The UI now treats corresponding author as a role within the author list, avoiding duplicate names.
+- If a corresponding author is beyond the first 8 visible authors, the UI still surfaces them as an extra highlighted chip.
+
+### Follow-up
+- None.
+
 ## 2026-06-17 22:20
 
 ### Change Summary

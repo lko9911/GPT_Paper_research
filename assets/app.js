@@ -1145,7 +1145,6 @@ function renderPaperRow(paper) {
 
   const doiUrl = paper.url || (paper.doi ? `https://doi.org/${paper.doi}` : "");
   const authorDetailsHtml = renderAuthorDetails(paper);
-  const correspondingHtml = renderCorrespondingAuthors(paper);
   const publicationLabel = formatPublicationLabel(paper);
   const summaryProviderLabel = formatSummaryProviderLabel(paper);
   const summaryHtml = renderSummaryBlock(paper);
@@ -1162,7 +1161,6 @@ function renderPaperRow(paper) {
         <span class="relevance-badge">${escapeHtml(t("relevanceLabel"))} ${escapeHtml(String(paper.relevance_score || "-"))}/10</span>
       </div>
       <h4 class="paper-title">${escapeHtml(paper.title || "Untitled")}</h4>
-      ${correspondingHtml}
       ${authorDetailsHtml}
       ${summaryHtml}
       <p class="relevance-note">${escapeHtml(relevanceNote)}</p>
@@ -1203,45 +1201,54 @@ function tagButton(text) {
   return `<button class="badge tag" type="button" data-tag-filter="${escapeAttribute(text)}">${escapeHtml(text)}</button>`;
 }
 
-function renderCorrespondingAuthors(paper) {
-  const authors = Array.isArray(paper.corresponding_authors) ? paper.corresponding_authors : [];
-  const names = authors
-    .slice(0, 3)
-    .map((author) => author.name || author)
-    .filter(Boolean);
-  if (!names.length) return "";
-  const suffix = authors.length > 3 ? ` +${authors.length - 3}` : "";
-  const value = `${names.join(", ")}${suffix}`;
-  return `<p class="author-line is-corresponding"><span>${escapeHtml(t("correspondingAuthorsLabel"))}</span> ${escapeHtml(value)}</p>`;
-}
-
 function renderAuthorDetails(paper) {
   const details = Array.isArray(paper.author_details) ? paper.author_details : [];
   const fallbackAuthors = Array.isArray(paper.authors) ? paper.authors : [];
   if (!details.length && !fallbackAuthors.length) return "";
+  const visibleLimit = 8;
   const visibleDetails = details.length
-    ? details.slice(0, 8).map((author) => ({
+    ? details.slice(0, visibleLimit).map((author) => ({
         name: author.name || "",
         tooltip: [author.name, author.position, primaryInstitution(author)].filter(Boolean).join(" · "),
         isCorresponding: Boolean(author.is_corresponding),
+        isSupplemental: false,
       }))
-    : fallbackAuthors.slice(0, 8).map((name) => ({
+    : fallbackAuthors.slice(0, visibleLimit).map((name) => ({
         name,
         tooltip: name,
         isCorresponding: false,
+        isSupplemental: false,
       }));
-  const chips = visibleDetails.map((author) => {
+  const visibleNames = new Set(visibleDetails.map((author) => normalizeAuthorName(author.name)));
+  const hiddenCorresponding = details.length
+    ? details.slice(visibleLimit).filter((author) => author && author.is_corresponding && !visibleNames.has(normalizeAuthorName(author.name)))
+    : [];
+  const supplementalCorresponding = hiddenCorresponding.slice(0, 2).map((author) => ({
+    name: author.name || "",
+    tooltip: [author.name, author.position, primaryInstitution(author)].filter(Boolean).join(" · "),
+    isCorresponding: true,
+    isSupplemental: true,
+  }));
+  const allChips = [...visibleDetails, ...supplementalCorresponding];
+  const chips = allChips.map((author) => {
     const name = author.name || "";
     if (!name) return "";
-    const corrBadge = author.isCorresponding
+    const corrBadge = author.isCorresponding && !author.isSupplemental
       ? `<span class="author-chip-badge">${escapeHtml(t("correspondingAuthorBadge"))}</span>`
       : "";
-    return `<span class="author-chip${author.isCorresponding ? " is-corresponding" : ""}" title="${escapeAttribute(author.tooltip)}">${escapeHtml(name)}${corrBadge}</span>`;
+    const prefix = author.isSupplemental ? `${t("correspondingAuthorBadge")}: ` : "";
+    const className = `author-chip${author.isCorresponding ? " is-corresponding" : ""}${author.isSupplemental ? " is-supplemental" : ""}`;
+    return `<span class="${escapeAttribute(className)}" title="${escapeAttribute(author.tooltip)}">${escapeHtml(prefix)}${escapeHtml(name)}${corrBadge}</span>`;
   }).join("");
   if (!chips) return "";
   const total = details.length || fallbackAuthors.length;
-  const remaining = total > 8 ? `<span class="author-chip muted">+${total - 8}</span>` : "";
+  const remainingCount = Math.max(0, total - visibleLimit - supplementalCorresponding.length);
+  const remaining = remainingCount > 0 ? `<span class="author-chip muted">+${remainingCount}</span>` : "";
   return `<div class="author-line author-detail-line" aria-label="Author details"><span>${escapeHtml(t("authorsLabel"))}</span><div>${chips}${remaining}</div></div>`;
+}
+
+function normalizeAuthorName(name) {
+  return String(name || "").trim().toLowerCase();
 }
 
 function primaryInstitution(author) {
