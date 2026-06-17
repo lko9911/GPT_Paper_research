@@ -4690,3 +4690,30 @@
 - OpenAI API는 사용하지 않았습니다.
 - PDF, 출판사 초록 원문, API key, secret, token은 저장하거나 표시하지 않았습니다.
 - `reports/_crossref_only_openalex_lookup_cache.json`은 중간 조회 재시작용 캐시라 커밋하지 않습니다.
+
+## 2026-06-17 12:24
+### 변경 요약
+- `reports/` 폴더에 Excel 보고서가 많아져서 불필요한 중간 산출물을 정리했습니다.
+- 최종 판단에 필요한 Excel 파일은 유지하고, 오래된 broad/intermediate Excel 파일을 제거하기 시작했습니다.
+
+### 수정/생성한 파일
+- `reports/source_overlap_analysis.xlsx`: broad summary Excel이 `source_overlap_openalex_crossref_groups.xlsx`와 역할이 겹치므로 제거했습니다.
+- `AGENT_LOG.md`: 보고서 정리 기준과 남은 잠금 파일 이슈를 기록했습니다.
+
+### 구현한 기능
+- 현재 유지하는 핵심 Excel 보고서는 다음 세 가지입니다.
+- `reports/source_overlap_openalex_crossref_groups.xlsx`: OpenAlex only / Crossref only / both 전체 그룹 보기.
+- `reports/openalex_only_venues_no_crossref_journal_match.xlsx`: OpenAlex-only 중 Crossref journal match가 없는 venue 전체 보기.
+- `reports/crossref_only_venues_no_openalex_source_match.xlsx`: Crossref-only 중 OpenAlex source match가 없는 venue 전체 보기.
+
+### 설계 결정
+- CSV와 Markdown 보고서는 감사 추적과 재검증을 위해 유지했습니다.
+- Excel 임시 잠금 파일과 중간 조회 캐시는 추적하지 않기로 했습니다.
+
+### 남은 작업
+- `reports/openalex_only_venues_crossref_check.xlsx`는 현재 Excel에서 열려 있어서 삭제가 막혔습니다. 사용자가 해당 Excel 창을 닫으면 제거할 수 있습니다.
+- `reports/~$openalex_only_venues_crossref_check.xlsx` 역시 Excel 잠금 파일이므로 원본 workbook이 닫히면 함께 사라지거나 삭제할 수 있습니다.
+
+### 주의사항
+- OpenAI API는 사용하지 않았습니다.
+- 열려 있는 Excel 프로세스를 강제로 종료하지 않았습니다.
