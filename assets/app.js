@@ -1014,11 +1014,13 @@ function applyFilters() {
       .filter((topic) => topic !== "Digital Twins" || paperHasCuratedDigitalTwinTag(paper));
     const paperVenue = normalizeVenue(paper.venue);
     const paperField = deriveField(paper);
+    const paperAuthorDetails = authorSearchText(paper);
     const haystack = normalize(
       [
         paperField,
         paper.title,
         (paper.authors || []).join(" "),
+        paperAuthorDetails,
         paper.venue,
         paper.doi,
         paperCategories.join(" "),
@@ -1138,6 +1140,9 @@ function renderPaperRow(paper) {
   const doiUrl = paper.url || (paper.doi ? `https://doi.org/${paper.doi}` : "");
   const sourceText = (paper.source || []).join(", ") || "Metadata API";
   const authors = formatAuthors(paper.authors || []);
+  const authorDetailsHtml = renderAuthorDetails(paper);
+  const correspondingHtml = renderCorrespondingAuthors(paper);
+  const qualityHtml = renderJournalQuality(paper);
   const publicationLabel = formatPublicationLabel(paper);
   const summaryProviderLabel = formatSummaryProviderLabel(paper);
   const summaryHtml = renderSummaryBlock(paper);
@@ -1155,6 +1160,9 @@ function renderPaperRow(paper) {
       </div>
       <h4 class="paper-title">${escapeHtml(paper.title || "Untitled")}</h4>
       <p class="meta">${escapeHtml(authors)}${authors ? " · " : ""}${escapeHtml(paper.venue || "Venue unknown")} · ${escapeHtml(sourceText)}</p>
+      ${correspondingHtml}
+      ${authorDetailsHtml}
+      ${qualityHtml}
       ${summaryHtml}
       <p class="relevance-note">${escapeHtml(relevanceNote)}</p>
       <div class="tag-line">${representativeBadges}</div>
@@ -1192,6 +1200,68 @@ function badge(text, className = "") {
 
 function tagButton(text) {
   return `<button class="badge tag" type="button" data-tag-filter="${escapeAttribute(text)}">${escapeHtml(text)}</button>`;
+}
+
+function renderCorrespondingAuthors(paper) {
+  const authors = Array.isArray(paper.corresponding_authors) ? paper.corresponding_authors : [];
+  if (!authors.length) return "";
+  const names = authors
+    .slice(0, 3)
+    .map((author) => author.name || author)
+    .filter(Boolean);
+  if (!names.length) return "";
+  const suffix = authors.length > 3 ? ` +${authors.length - 3}` : "";
+  return `<p class="author-highlight"><span>Corresponding</span> ${escapeHtml(names.join(", "))}${escapeHtml(suffix)}</p>`;
+}
+
+function renderAuthorDetails(paper) {
+  const details = Array.isArray(paper.author_details) ? paper.author_details : [];
+  if (!details.length) return "";
+  const chips = details.slice(0, 6).map((author) => {
+    const name = author.name || "";
+    if (!name) return "";
+    const institution = primaryInstitution(author);
+    const tooltip = [name, author.position, institution].filter(Boolean).join(" · ");
+    const marker = author.is_corresponding ? " *" : "";
+    return `<span class="author-chip" title="${escapeAttribute(tooltip)}">${escapeHtml(name)}${escapeHtml(marker)}</span>`;
+  }).join("");
+  if (!chips) return "";
+  const remaining = details.length > 6 ? `<span class="author-chip muted">+${details.length - 6}</span>` : "";
+  return `<div class="author-detail-line" aria-label="Author details">${chips}${remaining}</div>`;
+}
+
+function primaryInstitution(author) {
+  const institutions = Array.isArray(author.institutions) ? author.institutions : [];
+  const institution = institutions.find((item) => item && item.name);
+  return institution ? institution.name : "";
+}
+
+function authorSearchText(paper) {
+  const details = Array.isArray(paper.author_details) ? paper.author_details : [];
+  const corresponding = Array.isArray(paper.corresponding_authors) ? paper.corresponding_authors : [];
+  return [...details, ...corresponding].map((author) => {
+    const institutions = Array.isArray(author.institutions) ? author.institutions : [];
+    return [
+      author.name,
+      author.orcid,
+      author.openalex_author_id,
+      author.position,
+      institutions.map((institution) => institution.name).join(" "),
+      institutions.map((institution) => institution.country_code).join(" "),
+      (author.raw_affiliation_strings || []).join(" "),
+    ].filter(Boolean).join(" ");
+  }).join(" ");
+}
+
+function renderJournalQuality(paper) {
+  const quality = paper.journal_quality || {};
+  const metrics = paper.venue_metrics || {};
+  const label = quality.label || "";
+  const citedness = quality.openalex_two_year_mean_citedness ?? metrics.two_year_mean_citedness;
+  const metricText = typeof citedness === "number" ? ` · OpenAlex 2yr citedness ${citedness.toFixed(1)}` : "";
+  if (!label && !metricText) return "";
+  const basis = quality.basis ? ` (${quality.basis.replaceAll("_", " ")})` : "";
+  return `<p class="quality-line"><span>Venue signal</span> ${escapeHtml(label || "Open metric available")}${escapeHtml(metricText)}${escapeHtml(basis)}</p>`;
 }
 
 function formatSummary(paper) {

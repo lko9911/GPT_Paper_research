@@ -566,8 +566,15 @@ def _finalize_record(record: dict[str, Any], today: str) -> dict[str, Any]:
         "id": paper_id,
         "title": record.get("title", "Untitled"),
         "authors": record.get("authors", []),
+        "author_details": record.get("author_details", []),
+        "corresponding_authors": record.get("corresponding_authors", []),
+        "corresponding_author_available": bool(record.get("corresponding_authors")),
         "year": year,
         "venue": record.get("venue", ""),
+        "openalex_work_id": record.get("openalex_work_id", ""),
+        "openalex_source_id": record.get("openalex_source_id", ""),
+        "venue_metrics": record.get("venue_metrics", {}),
+        "journal_quality": _journal_quality(record),
         "doi": doi,
         "url": url,
         "source": sorted(set(record.get("source", []))),
@@ -601,6 +608,17 @@ def _merge_source(existing: dict[str, Any], candidate: dict[str, Any], today: st
         existing["year"] = candidate["year"]
     if not existing.get("authors") and candidate.get("authors"):
         existing["authors"] = candidate["authors"]
+    for key in (
+        "author_details",
+        "corresponding_authors",
+        "openalex_work_id",
+        "openalex_source_id",
+        "venue_metrics",
+    ):
+        if candidate.get(key) and not existing.get(key):
+            existing[key] = candidate[key]
+    existing["corresponding_author_available"] = bool(existing.get("corresponding_authors"))
+    existing["journal_quality"] = _journal_quality(existing)
     existing["last_updated"] = today
 
 
@@ -654,6 +672,84 @@ def _title_hash(title: str) -> str:
 
 def _strip_transient(record: dict[str, Any]) -> dict[str, Any]:
     return {key: value for key, value in record.items() if not key.startswith("_")}
+
+
+def _journal_quality(record: dict[str, Any]) -> dict[str, Any]:
+    """Assign a transparent journal-quality label without inventing JIF/Q values."""
+
+    venue = str(record.get("venue") or "").strip()
+    venue_key = _normalize_title(venue)
+    metrics = record.get("venue_metrics") or {}
+    openalex_citedness = metrics.get("two_year_mean_citedness")
+    source_type = str(metrics.get("type") or "").lower()
+
+    high_impact = {
+        "nature",
+        "science",
+        "nature communications",
+        "nature materials",
+        "nature reviews materials",
+        "science advances",
+        "science robotics",
+        "proceedings of the national academy of sciences",
+        "advanced materials",
+        "advanced functional materials",
+        "advanced science",
+    }
+    core_manufacturing = {
+        "additive manufacturing",
+        "virtual and physical prototyping",
+        "rapid prototyping journal",
+        "3d printing and additive manufacturing",
+        "progress in additive manufacturing",
+        "journal of manufacturing processes",
+        "journal of manufacturing systems",
+        "manufacturing letters",
+        "robotics and computer integrated manufacturing",
+        "international journal of advanced manufacturing technology",
+        "computer aided design",
+        "materials and design",
+        "journal of intelligent manufacturing",
+        "computers in industry",
+    }
+    repositories = {
+        "arxiv org",
+        "arxiv cornell university",
+        "zenodo cern european organization for nuclear research",
+        "figshare",
+        "chemrxiv",
+        "research square",
+    }
+
+    if venue_key in high_impact:
+        label = "High-impact general journal"
+        confidence = "manual_core_venue"
+    elif venue_key in core_manufacturing:
+        label = "Core manufacturing journal"
+        confidence = "manual_core_venue"
+    elif venue_key in repositories or source_type in {"repository"}:
+        label = "Repository / preprint source"
+        confidence = "metadata_source_type"
+    elif isinstance(openalex_citedness, (int, float)):
+        if openalex_citedness >= 10:
+            label = "High OpenAlex citation impact"
+        elif openalex_citedness >= 4:
+            label = "Moderate OpenAlex citation impact"
+        else:
+            label = "Low or emerging OpenAlex citation impact"
+        confidence = "openalex_metric_proxy"
+    else:
+        label = "Not classified"
+        confidence = "insufficient_open_metric"
+
+    return {
+        "label": label,
+        "basis": confidence,
+        "official_jif": None,
+        "official_quartile": None,
+        "openalex_two_year_mean_citedness": openalex_citedness,
+        "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+    }
 
 
 def _safe_year(value: Any, log: bool = True) -> int | None:
