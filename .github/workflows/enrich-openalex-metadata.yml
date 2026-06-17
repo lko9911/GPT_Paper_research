@@ -23,11 +23,12 @@ jobs:
   enrich:
     runs-on: ubuntu-latest
     env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
       CONTACT_EMAIL: ${{ secrets.CONTACT_EMAIL || 'lko9911@snu.ac.kr' }}
       OPENALEX_ENRICH_MAX: ${{ inputs.max_records }}
       OPENALEX_ENRICH_FORCE: ${{ inputs.force }}
-      API_SLEEP_SECONDS: "0.35"
-      OPENALEX_RETRIES: "4"
+      API_SLEEP_SECONDS: "0.75"
+      OPENALEX_RETRIES: "6"
     steps:
       - name: Checkout
         uses: actions/checkout@v4
