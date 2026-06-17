@@ -4637,3 +4637,25 @@
 - OpenAI API는 사용하지 않았습니다.
 - 새 API 호출 없이 기존 `reports/openalex_only_venues_crossref_check.csv`를 기반으로 생성했습니다.
 - API key, secret, token은 기록하지 않았습니다.
+
+## 2026-06-17 12:03
+### 변경 요약
+- `openalex_only_venues_no_crossref_journal_match.xlsx`에서 `Top_No_Match_Compact`라는 오해 소지가 있는 시트명을 제거했습니다.
+- compact 시트가 top-N 샘플이 아니라 93개 전체 목록임을 명확히 했습니다.
+
+### 수정/생성한 파일
+- `reports/openalex_only_venues_no_crossref_journal_match.xlsx`: `Top_No_Match_Compact`를 `All_No_Match_Compact`로 변경하고 Summary 설명을 보강했습니다.
+- `AGENT_LOG.md`: 시트명 변경과 검증 결과를 기록했습니다.
+
+### 구현한 기능
+- `No_Crossref_Journal_Match`와 `All_No_Match_Compact` 모두 Crossref journal match가 없는 93개 venue 전체를 표시합니다.
+
+### 설계 결정
+- 사용자가 “top”이 아니라 전체 목록을 원했기 때문에, 시트명과 설명에서 top/sample 뉘앙스를 제거했습니다.
+
+### 남은 작업
+- 필요하면 93개 전체 항목을 repository/preprint/proceedings/institutional/noisy-source로 수동 분류하는 별도 검토 시트를 추가할 수 있습니다.
+
+### 주의사항
+- OpenAI API는 사용하지 않았습니다.
+- 새 API 호출 없이 기존 Excel 파일의 시트명과 설명만 수정했습니다.
