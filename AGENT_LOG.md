@@ -4810,6 +4810,32 @@
 - PDF, publisher abstract, API key, secret, token은 저장하거나 표시하지 않았습니다.
 - IF/Q는 공식 값처럼 표시하지 않도록 `Venue signal`로만 표현했습니다.
 
+## 2026-06-17 13:52
+### 변경 요약
+- 논문 카드의 author 표시를 사용자가 요청한 명시적 문장형 라벨로 변경했습니다.
+- 기존 `Corresponding` badge 대신 `Corresponding author: ...`, author chip 영역에는 `Authors: ...` 라벨을 표시하도록 바꿨습니다.
+
+### 수정/생성한 파일
+- `assets/app.js`: `renderCorrespondingAuthors`와 `renderAuthorDetails`의 출력 문구를 명시적 라벨 형태로 변경했습니다.
+- `assets/style.css`: `.author-line` 기반 라벨/칩 레이아웃으로 스타일을 조정했습니다.
+- `index.html`: GitHub Pages cache busting query를 `20260617-author-labels`로 갱신했습니다.
+- `AGENT_LOG.md`: 이번 UI 라벨 변경을 기록했습니다.
+
+### 구현한 기능
+- Corresponding author가 있으면 `Corresponding author: Name` 형태로 표시합니다.
+- Author 상세 정보가 있으면 `Authors:` 라벨 뒤에 author chip을 표시합니다.
+- 아직 OpenAlex author detail이 없는 논문도 기존 `authors` 배열을 사용해 `Authors:` 라인을 표시할 수 있습니다.
+
+### 설계 결정
+- 사용자가 원하는 명확한 reading format을 우선해 chip-only UI보다 문장형 label을 앞에 두었습니다.
+- Corresponding author는 여전히 OpenAlex가 제공한 값만 표시하고 추정하지 않습니다.
+
+### 남은 작업
+- 전체 논문에 author detail을 채우려면 `Enrich OpenAlex metadata` workflow를 수동 실행해야 합니다.
+
+### 주의사항
+- OpenAI API는 사용하지 않았습니다.
+
 ## 2026-06-17 12:34
 ### 변경 요약
 - 여러 Excel/CSV/Markdown 보고서를 하나의 최종 Excel 보고서로 통합했습니다.

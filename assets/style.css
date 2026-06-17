@@ -860,7 +860,7 @@ h1 {
   font-size: 0.84rem;
 }
 
-.author-highlight,
+.author-line,
 .quality-line {
   display: flex;
   flex-wrap: wrap;
@@ -872,7 +872,7 @@ h1 {
   line-height: 1.35;
 }
 
-.author-highlight span,
+.author-line > span,
 .quality-line span {
   display: inline-flex;
   align-items: center;
@@ -906,6 +906,12 @@ h1 {
   font-weight: 760;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.author-detail-line > div {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 5px;
 }
 
 .author-chip.muted {
