@@ -4580,3 +4580,33 @@
 - 데이터 파일은 수정하지 않았고, 프론트엔드 분류/표시 규칙만 수정했습니다.
 - `index.html`의 app script version은 브라우저/GitHub Pages 캐시가 이전 taxonomy 로직을 계속 사용하는 상황을 막기 위한 변경입니다.
 - raw abstract 또는 PDF 저장/표시는 하지 않았습니다.
+- OpenAI API는 사용하지 않았습니다.
+
+## 2026-06-17 11:51
+### 변경 요약
+- OpenAlex / Crossref source overlap 결과를 Excel에서 바로 볼 수 있도록 별도 통합 워크북을 생성했습니다.
+- 사용자가 요청한 `only_OpenAlex`, `only_Crossref`, `both` 구분을 후보 레코드, 중복 제거 논문, 게재지 단위로 각각 분리했습니다.
+
+### 수정/생성한 파일
+- `reports/source_overlap_openalex_crossref_groups.xlsx`: `Summary`, `Records_*`, `Papers_*`, `Venues_*` 시트로 구성된 Excel 보고서를 생성했습니다.
+- `AGENT_LOG.md`: 이번 보고서 생성 작업과 검증 결과를 기록했습니다.
+
+### 구현한 기능
+- `Records_OpenAlex_only`, `Records_Crossref_only`, `Records_Both`: 전체 3,075개 collected candidate 기준 source 구분을 제공합니다.
+- `Papers_OpenAlex_only`, `Papers_Crossref_only`, `Papers_Both`: DOI 우선, DOI가 없으면 normalized title 기준으로 중복 제거한 논문 단위 source 구분을 제공합니다.
+- `Venues_OpenAlex_only`, `Venues_Crossref_only`, `Venues_Both`: venue/journal/proceedings 단위 source 구분을 제공합니다.
+- 각 시트에 필터 가능한 Excel table, freeze pane, 기본 열 너비, 요약 시트를 추가했습니다.
+
+### 설계 결정
+- `OpenAlex only`와 `Crossref only`는 전 세계 API coverage의 절대적 부재가 아니라, 현재 수집 파이프라인과 3,075개 후보 데이터셋에서 어느 source로 관측되었는지를 뜻하도록 Summary 시트에 명시했습니다.
+- 전체 후보 기준과 실제 논문 단위 기준을 혼동하지 않도록 `Records`와 `Papers`를 별도 시트로 나누었습니다.
+- 기존 CSV 보고서를 근거 데이터로 사용했고, API를 새로 호출하지 않았습니다.
+
+### 남은 작업
+- 필요하면 `OpenAlex only venue` 중 Crossref exact match가 있는 항목을 DOI-level Crossref enrichment로 보강하는 후속 파이프라인을 만들 수 있습니다.
+- Crossref-only 운영으로 전환할 경우, core manufacturing venue list와 Crossref ISSN 기반 수집 규칙을 별도 설계해야 합니다.
+
+### 주의사항
+- OpenAI API는 사용하지 않았습니다.
+- API key, secret, token은 기록하지 않았습니다.
+- `reports/~$openalex_only_venues_crossref_check.xlsx`는 Excel이 만든 임시 잠금 파일로 보이며 이번 작업에서는 수정하지 않았습니다.
