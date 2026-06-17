@@ -62,7 +62,7 @@ def main() -> None:
             _mark_curation_priority(index[key])
             continue
 
-        enriched = enrich_with_semantic_scholar(candidate)
+        enriched = _crosscheck_openalex_metadata(enrich_with_semantic_scholar(candidate))
         summarized = summarize_record(enriched, allow_openai=allow_openai_in_update)
         _mark_curation_priority(summarized)
         paper = _finalize_record(summarized, today)
@@ -88,7 +88,7 @@ def main() -> None:
                 _merge_existing_record(index[key], candidate, today)
                 continue
 
-            enriched = enrich_with_semantic_scholar(candidate)
+            enriched = _crosscheck_openalex_metadata(enrich_with_semantic_scholar(candidate))
             summarized = summarize_record(enriched, allow_openai=allow_openai_in_update)
             paper = _finalize_record(summarized, today)
             index[_dedupe_key(paper)] = paper
@@ -115,7 +115,7 @@ def main() -> None:
                         _merge_existing_record(index[key], candidate, today)
                         continue
 
-                    enriched = enrich_with_semantic_scholar(candidate)
+                    enriched = _crosscheck_openalex_metadata(enrich_with_semantic_scholar(candidate))
                     summarized = summarize_record(enriched, allow_openai=allow_openai_in_update)
                     paper = _finalize_record(summarized, today)
                     index[_dedupe_key(paper)] = paper
@@ -194,6 +194,51 @@ def _safe_fetch_crossref_doi(doi: str) -> dict[str, Any] | None:
     except Exception as exc:
         print(f"Crossref DOI fetch failed for {doi}: {exc}")
         return None
+
+
+def _crosscheck_openalex_metadata(record: dict[str, Any]) -> dict[str, Any]:
+    """Use OpenAlex DOI metadata to fill author details for Crossref-only records."""
+
+    if _env_flag("SKIP_OPENALEX"):
+        return record
+    doi = record.get("doi")
+    if not doi:
+        return record
+    if record.get("_openalex_crosscheck_attempted"):
+        return record
+    record["_openalex_crosscheck_attempted"] = True
+    sources = set(record.get("source", []))
+    needs_crosscheck = (
+        "OpenAlex" not in sources
+        or not record.get("author_details")
+        or not record.get("openalex_work_id")
+    )
+    if not needs_crosscheck:
+        return record
+    openalex_record = _safe_fetch_openalex_doi(str(doi))
+    if not openalex_record:
+        return record
+    _merge_openalex_crosscheck(record, openalex_record)
+    return record
+
+
+def _merge_openalex_crosscheck(record: dict[str, Any], openalex_record: dict[str, Any]) -> None:
+    sources = set(record.get("source", []))
+    sources.update(openalex_record.get("source", []))
+    record["source"] = sorted(sources)
+    for key in (
+        "author_details",
+        "corresponding_authors",
+        "openalex_work_id",
+        "openalex_source_id",
+        "venue_metrics",
+    ):
+        if openalex_record.get(key) and not record.get(key):
+            record[key] = openalex_record[key]
+    for key in ("authors", "venue", "year", "url", "_abstract"):
+        if openalex_record.get(key) and not record.get(key):
+            record[key] = openalex_record[key]
+    record["corresponding_author_available"] = bool(record.get("corresponding_authors"))
 
 
 def _is_plausible(record: dict[str, Any], since_year: int) -> bool:
@@ -624,6 +669,13 @@ def _merge_source(existing: dict[str, Any], candidate: dict[str, Any], today: st
 
 def _merge_existing_record(existing: dict[str, Any], candidate: dict[str, Any], today: str) -> None:
     _merge_source(existing, candidate, today)
+    if existing.get("doi") and (
+        not existing.get("author_details")
+        or not existing.get("openalex_work_id")
+        or ("OpenAlex" not in set(existing.get("source", [])) and not existing.get("corresponding_authors"))
+    ):
+        _crosscheck_openalex_metadata(existing)
+        existing["journal_quality"] = _journal_quality(existing)
     if not existing.get("venue") and existing.get("doi"):
         crossref_record = _safe_fetch_crossref_doi(existing["doi"])
         if crossref_record:
