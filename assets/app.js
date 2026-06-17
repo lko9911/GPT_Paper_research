@@ -1138,8 +1138,6 @@ function renderPaperRow(paper) {
   article.className = "paper-card";
 
   const doiUrl = paper.url || (paper.doi ? `https://doi.org/${paper.doi}` : "");
-  const sourceText = (paper.source || []).join(", ") || "Metadata API";
-  const authors = formatAuthors(paper.authors || []);
   const authorDetailsHtml = renderAuthorDetails(paper);
   const correspondingHtml = renderCorrespondingAuthors(paper);
   const qualityHtml = renderJournalQuality(paper);
@@ -1159,7 +1157,6 @@ function renderPaperRow(paper) {
         <span class="relevance-badge">${escapeHtml(t("relevanceLabel"))} ${escapeHtml(String(paper.relevance_score || "-"))}/10</span>
       </div>
       <h4 class="paper-title">${escapeHtml(paper.title || "Untitled")}</h4>
-      <p class="meta">${escapeHtml(authors)}${authors ? " · " : ""}${escapeHtml(paper.venue || "Venue unknown")} · ${escapeHtml(sourceText)}</p>
       ${correspondingHtml}
       ${authorDetailsHtml}
       ${qualityHtml}
@@ -1204,14 +1201,13 @@ function tagButton(text) {
 
 function renderCorrespondingAuthors(paper) {
   const authors = Array.isArray(paper.corresponding_authors) ? paper.corresponding_authors : [];
-  if (!authors.length) return "";
   const names = authors
     .slice(0, 3)
     .map((author) => author.name || author)
     .filter(Boolean);
-  if (!names.length) return "";
   const suffix = authors.length > 3 ? ` +${authors.length - 3}` : "";
-  return `<p class="author-line is-corresponding"><span>Corresponding author:</span> ${escapeHtml(names.join(", "))}${escapeHtml(suffix)}</p>`;
+  const value = names.length ? `${names.join(", ")}${suffix}` : "No data";
+  return `<p class="author-line is-corresponding"><span>Corresponding Authors</span> ${escapeHtml(value)}</p>`;
 }
 
 function renderAuthorDetails(paper) {
@@ -1237,7 +1233,7 @@ function renderAuthorDetails(paper) {
   if (!chips) return "";
   const total = details.length || fallbackAuthors.length;
   const remaining = total > 8 ? `<span class="author-chip muted">+${total - 8}</span>` : "";
-  return `<div class="author-line author-detail-line" aria-label="Author details"><span>Authors:</span><div>${chips}${remaining}</div></div>`;
+  return `<div class="author-line author-detail-line" aria-label="Author details"><span>Authors</span><div>${chips}${remaining}</div></div>`;
 }
 
 function primaryInstitution(author) {
