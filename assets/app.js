@@ -1238,7 +1238,7 @@ function renderAuthorDetails(paper) {
       : "";
     const prefix = author.isSupplemental ? `${t("correspondingAuthorBadge")}: ` : "";
     const className = `author-chip${author.isCorresponding ? " is-corresponding" : ""}${author.isSupplemental ? " is-supplemental" : ""}`;
-    return `<span class="${escapeAttribute(className)}" title="${escapeAttribute(author.tooltip)}">${escapeHtml(prefix)}${escapeHtml(name)}${corrBadge}</span>`;
+    return `<span class="${escapeAttribute(className)}" title="${escapeAttribute(author.tooltip)}"><span class="author-chip-name">${escapeHtml(prefix)}${escapeHtml(name)}</span>${corrBadge}</span>`;
   }).join("");
   if (!chips) return "";
   const total = details.length || fallbackAuthors.length;
