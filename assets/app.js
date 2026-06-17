@@ -1211,13 +1211,11 @@ function renderAuthorDetails(paper) {
         name: author.name || "",
         tooltip: [author.name, author.position, primaryInstitution(author)].filter(Boolean).join(" · "),
         isCorresponding: Boolean(author.is_corresponding),
-        isSupplemental: false,
       }))
     : fallbackAuthors.slice(0, visibleLimit).map((name) => ({
         name,
         tooltip: name,
         isCorresponding: false,
-        isSupplemental: false,
       }));
   const visibleNames = new Set(visibleDetails.map((author) => normalizeAuthorName(author.name)));
   const hiddenCorresponding = details.length
@@ -1227,18 +1225,16 @@ function renderAuthorDetails(paper) {
     name: author.name || "",
     tooltip: [author.name, author.position, primaryInstitution(author)].filter(Boolean).join(" · "),
     isCorresponding: true,
-    isSupplemental: true,
   }));
   const allChips = [...visibleDetails, ...supplementalCorresponding];
   const chips = allChips.map((author) => {
     const name = author.name || "";
     if (!name) return "";
-    const corrBadge = author.isCorresponding && !author.isSupplemental
+    const corrBadge = author.isCorresponding
       ? `<span class="author-chip-badge">${escapeHtml(t("correspondingAuthorBadge"))}</span>`
       : "";
-    const prefix = author.isSupplemental ? `${t("correspondingAuthorBadge")}: ` : "";
-    const className = `author-chip${author.isCorresponding ? " is-corresponding" : ""}${author.isSupplemental ? " is-supplemental" : ""}`;
-    return `<span class="${escapeAttribute(className)}" title="${escapeAttribute(author.tooltip)}"><span class="author-chip-name">${escapeHtml(prefix)}${escapeHtml(name)}</span>${corrBadge}</span>`;
+    const className = `author-chip${author.isCorresponding ? " is-corresponding" : ""}`;
+    return `<span class="${escapeAttribute(className)}" title="${escapeAttribute(author.tooltip)}"><span class="author-chip-name">${escapeHtml(name)}</span>${corrBadge}</span>`;
   }).join("");
   if (!chips) return "";
   const total = details.length || fallbackAuthors.length;

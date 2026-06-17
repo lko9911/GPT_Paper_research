@@ -1,5 +1,24 @@
 # AGENT_LOG
 
+## 2026-06-17 23:03
+
+### Change Summary
+- Made every corresponding author use the same highlighted author-chip style.
+- Restored the stronger corresponding-author highlight style requested by the user.
+
+### Edited Files
+- `assets/app.js`: removed the supplemental/prefix display variant so visible and extra corresponding authors render consistently with the same badge.
+- `assets/style.css`: restored the stronger green chip and filled role badge while keeping the badge non-shrinking.
+- `index.html`: bumped JS/CSS cache versions for GitHub Pages.
+- `AGENT_LOG.md`: recorded the correction.
+
+### Design Notes
+- Corresponding authors are not moved into a separate visual category. They remain author chips and all use the same corresponding-author treatment.
+- Extra corresponding authors outside the first visible author range are appended using the same chip style, not a different `Corresponding: name` style.
+
+### Follow-up
+- None.
+
 ## 2026-06-17 22:52
 
 ### Change Summary
