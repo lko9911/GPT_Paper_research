@@ -35,6 +35,30 @@
 ### 주의사항
 - OpenAI API는 사용하지 않았습니다.
 
+## 2026-06-17 14:36
+### 변경 요약
+- 논문 카드에서 `Venue signal` / `Repository / preprint source (metadata source type)` 표시를 제거했습니다.
+- 사용자가 지적한 `Repository / preprint source ... Topic`처럼 summary 앞에 붙는 venue quality line이 더 이상 렌더링되지 않습니다.
+
+### 수정/생성한 파일
+- `assets/app.js`: `qualityHtml` 삽입과 `renderJournalQuality` 함수를 제거했습니다.
+- `assets/style.css`: `.quality-line` 관련 스타일을 제거했습니다.
+- `index.html`: GitHub Pages cache busting query를 `20260617-no-venue-signal`로 갱신했습니다.
+- `AGENT_LOG.md`: 이번 UI 제거 작업을 기록했습니다.
+
+### 구현한 기능
+- 카드에는 더 이상 `Venue signal` 또는 journal_quality 기반 문장이 표시되지 않습니다.
+- 저장된 `journal_quality`/`venue_metrics` 데이터는 유지하여 향후 JCR/IF importer에 재사용할 수 있게 했습니다.
+
+### 설계 결정
+- 현재 단계에서는 JCR/IF 공식 데이터가 없으므로 venue quality 신호를 사용자-facing UI에서 숨기는 편이 더 명확하다고 판단했습니다.
+
+### 남은 작업
+- JCR manual export importer가 추가되면 공식 IF/Q만 별도 디자인으로 다시 표시할 수 있습니다.
+
+### 주의사항
+- OpenAI API는 사용하지 않았습니다.
+
 ## 2026-06-17 14:30
 ### 변경 요약
 - 논문 카드 author 영역을 사용자 요청 형식에 맞게 다시 정리했습니다.

@@ -860,8 +860,7 @@ h1 {
   font-size: 0.84rem;
 }
 
-.author-line,
-.quality-line {
+.author-line {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
@@ -872,8 +871,7 @@ h1 {
   line-height: 1.35;
 }
 
-.author-line > span,
-.quality-line span {
+.author-line > span {
   display: inline-flex;
   align-items: center;
   min-height: 20px;
@@ -917,15 +915,6 @@ h1 {
 .author-chip.muted {
   background: var(--ink-soft);
   color: var(--muted);
-}
-
-.quality-line {
-  color: var(--muted);
-}
-
-.quality-line span {
-  background: var(--green-soft);
-  color: var(--green);
 }
 
 .summary {
