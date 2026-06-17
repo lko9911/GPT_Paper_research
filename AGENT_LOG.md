@@ -1,5 +1,38 @@
 # AGENT_LOG
 
+## 2026-06-17 00:30
+### 변경 요약
+- 사용자가 요청한 OpenAlex/Crossref 출처 집합 분석을 전체 collected candidates 3,075건 대상으로 수행했습니다.
+- curated `data/papers.json` 1,357건과 hidden/archive `data/archive_papers.json` 1,718건을 합쳐 분석했습니다.
+- 논문 단위는 DOI 우선, DOI가 없으면 normalized title 기준으로 분류했고, 게재지 단위는 normalized venue name 기준으로 분류했습니다.
+
+### 수정/생성한 파일
+- `reports/source_overlap_analysis.md`: 분석 방법, record-level/unique-paper/venue-level 집계, 주요 venue 표를 담은 요약 보고서입니다.
+- `reports/source_overlap_analysis.xlsx`: Summary, All 3075 Records, Unique Papers, Venues, Title Matches 시트를 포함한 Excel 통합 보고서입니다.
+- `reports/source_overlap_records_all_3075.csv`: 3,075개 후보 레코드 전체의 출처 분류 CSV입니다.
+- `reports/source_overlap_unique_papers.csv`: DOI/title key 기준 unique paper 출처 분류 CSV입니다.
+- `reports/source_overlap_venues.csv`: 게재지별 OpenAlex-only/Crossref-only/both 분류 CSV입니다.
+- `reports/source_overlap_title_matches.csv`: normalized title 기준으로 양쪽 출처가 모두 관측된 제목 목록 CSV입니다.
+- `AGENT_LOG.md`: 이번 분석 작업과 결과 파일을 기록했습니다.
+
+### 구현한 기능
+- 전체 후보 3,075건에 대해 `OpenAlex only`, `Crossref only`, `both_openalex_crossref` 집합을 계산했습니다.
+- 논문 레코드, unique paper key, venue 세 수준으로 결과를 분리했습니다.
+- Excel에서 바로 열 수 있도록 UTF-8 BOM CSV와 `.xlsx` 보고서를 생성했습니다.
+
+### 설계 결정
+- 분석 대상은 사이트 하단 ops note의 `3,075 collected candidates`와 일치하도록 curated + archive 전체로 잡았습니다.
+- 같은 논문 판단은 기존 파이프라인 정책과 맞춰 DOI를 우선했고, DOI가 없을 때만 normalized title을 사용했습니다.
+- Semantic Scholar는 보강 API이므로 이번 OpenAlex/Crossref 집합 비교의 primary source에는 포함하지 않았습니다.
+
+### 남은 작업
+- 사용자가 원하면 이 분석을 재실행 가능한 `scripts/analyze_source_overlap.py`로 정식 스크립트화할 수 있습니다.
+- venue 이름의 대소문자/HTML entity 차이(`Additive manufacturing` vs `Additive Manufacturing`, `Materials &amp; Design` 등)를 더 강하게 정규화하면 venue-level 결과가 더 깔끔해질 수 있습니다.
+
+### 주의사항
+- OpenAI API는 사용하지 않았습니다.
+- 출판사 웹사이트 크롤링, PDF 저장, raw abstract 표시는 수행하지 않았습니다.
+
 ## 2026-06-17 00:00
 ### 변경 요약
 - 헤더 제작자 credit 문구를 `Curated by`에서 `Developed by`로 변경했습니다.
