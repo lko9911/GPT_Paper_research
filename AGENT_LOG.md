@@ -4758,6 +4758,58 @@
 - Crossref와 OpenAlex 공식 API만 사용했고, PDF나 publisher abstract는 수집하지 않았습니다.
 - `_paper_api_coverage_lookup_cache.json`은 재조회 중간 캐시이므로 커밋하지 않습니다.
 
+## 2026-06-17 13:45
+### 변경 요약
+- 논문 카드에 corresponding author, 상세 author chip, venue quality signal을 표시할 수 있도록 시스템을 확장했습니다.
+- OpenAlex의 `authorships.is_corresponding` 및 authorship/institution metadata를 저장하도록 OpenAlex fetcher와 저장 schema를 확장했습니다.
+- IF/Q 분류는 공식 JCR/Scopus 데이터를 자동 추정하지 않고, 비공식 open proxy/수동 core venue label로 분리했습니다.
+
+### 수정/생성한 파일
+- `scripts/fetch_openalex.py`: OpenAlex work metadata에서 `author_details`, `corresponding_authors`, OpenAlex work/source ID, venue metrics를 정규화하도록 확장했습니다.
+- `scripts/update_papers.py`: 새 author/venue metric 필드를 저장하고 merge하며 `journal_quality` label을 생성하도록 확장했습니다.
+- `scripts/enrich_openalex_metadata.py`: 기존 `data/papers.json` / `data/archive_papers.json`의 누락된 OpenAlex author/venue metadata를 DOI 기준으로 보강하는 수동 스크립트를 추가했습니다.
+- `.github/workflows/enrich-openalex-metadata.yml`: OpenAI 없이 OpenAlex metadata만 보강하는 수동 GitHub Actions workflow를 추가했습니다.
+- `assets/app.js`: paper card에 corresponding author, 상세 author chip, venue signal을 렌더링하고 author/institution 검색이 가능하도록 확장했습니다.
+- `assets/style.css`: corresponding author, author chip, venue signal UI 스타일을 추가했습니다.
+- `index.html`: GitHub Pages cache busting을 위해 CSS/JS version query를 갱신했습니다.
+- `data/papers.json`: smoke test로 5개 curated paper에 OpenAlex author/venue metadata를 보강했습니다.
+- `PROJECT_STATUS.md`: author/venue quality metadata 상태와 IF/Q 정책을 문서화했습니다.
+- `ARCHITECTURE.md`: OpenAlex enrichment 구조와 official IF/quartile 정책을 문서화했습니다.
+- `AGENT_LOG.md`: 이번 구현 작업, 검증 결과, 남은 작업을 기록했습니다.
+
+### 구현한 기능
+- Corresponding author가 OpenAlex에 제공되면 카드에서 `Corresponding`으로 강조 표시합니다.
+- Author chip은 최대 6명까지 표시하고, tooltip에 author position 및 대표 institution을 담습니다.
+- 상세 author/institution/ORCID/OpenAlex author ID는 검색 haystack에도 포함됩니다.
+- `journal_quality`는 다음 방식으로 보수적으로 생성합니다.
+  - Nature/Science/Advanced Materials 등은 `High-impact general journal`.
+  - Additive Manufacturing, Manufacturing Letters 등 core venue는 `Core manufacturing journal`.
+  - arXiv/Zenodo/Figshare/ChemRxiv/Research Square 등은 `Repository / preprint source`.
+  - OpenAlex source metric이 있을 때는 `OpenAlex citation impact` proxy label을 사용합니다.
+- 공식 `official_jif`와 `official_quartile`은 licensed JCR/Scopus 데이터가 없으면 `null`로 유지합니다.
+
+### 설계 결정
+- Corresponding author는 추정하지 않고 OpenAlex가 제공하는 `authorships.is_corresponding` 값만 신뢰합니다.
+- Crossref author metadata는 affiliation/ORCID coverage가 불완전하므로 corresponding author의 주 source로 사용하지 않았습니다.
+- JIF/Q는 공개 API로 임의 추정하면 오해가 크기 때문에 UI에는 `Venue signal`이라고 표시하고, 공식 IF/Q 필드는 비워두었습니다.
+- 전체 기존 데이터 보강은 rate limit을 고려해 별도 manual workflow로 분리했습니다.
+
+### 검증 결과
+- `python -m py_compile scripts/fetch_openalex.py scripts/update_papers.py scripts/enrich_openalex_metadata.py` 통과.
+- `OPENALEX_ENRICH_MAX=5 python scripts/enrich_openalex_metadata.py` smoke test 통과.
+- 현재 `data/papers.json` 1357편 중 5편에 `author_details`, `corresponding_authors`, `journal_quality`가 채워졌습니다.
+- JS 정적 sanity check에서 새 함수가 1회씩 존재하고 brace count가 균형을 이룸을 확인했습니다.
+
+### 남은 작업
+- 전체 기존 논문에 author/venue metadata를 채우려면 GitHub Actions의 `Enrich OpenAlex metadata` workflow를 `max_records=0`, `force=false`로 수동 실행합니다.
+- 공식 Q/IF가 필요하면 JCR/Scopus 등 licensed source에서 `data/journal_metrics.csv` 또는 API integration을 추가해야 합니다.
+- 현재 세션에서는 browser automation runtime이 노출되지 않아 실제 브라우저 visual QA는 수행하지 못했습니다.
+
+### 주의사항
+- OpenAI API는 사용하지 않았습니다.
+- PDF, publisher abstract, API key, secret, token은 저장하거나 표시하지 않았습니다.
+- IF/Q는 공식 값처럼 표시하지 않도록 `Venue signal`로만 표현했습니다.
+
 ## 2026-06-17 12:34
 ### 변경 요약
 - 여러 Excel/CSV/Markdown 보고서를 하나의 최종 Excel 보고서로 통합했습니다.

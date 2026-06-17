@@ -40,7 +40,264 @@
     "last_updated": "2026-06-16",
     "summary_provider": "openai",
     "openai_summary_applied": true,
-    "ai_summary_en": "1. Topic - This paper discusses the method of creating active-passive filaments and lattices with programmable shape morphing using rotational 3D printing.\n2. Problem - It aims to address the challenge of replicating the complex shape-morphing behavior of natural filaments in synthetic materials.\n3. Method - The approach utilizes rotational multimaterial 3D printing to directly encode intrinsic curvature and twist in multimaterial elastomeric filaments during fabrication.\n4. Key Result - This method enables the independent control of bending and torsion at every cross-section of the filament, resulting in complex shape-morphing materials.\n5. Takeaway - Thus, the key message of this paper is the development of shape-morphing materials with complex programmable responses for applications in adaptive, robotic, or deployable architectures."
+    "ai_summary_en": "1. Topic - This paper discusses the method of creating active-passive filaments and lattices with programmable shape morphing using rotational 3D printing.\n2. Problem - It aims to address the challenge of replicating the complex shape-morphing behavior of natural filaments in synthetic materials.\n3. Method - The approach utilizes rotational multimaterial 3D printing to directly encode intrinsic curvature and twist in multimaterial elastomeric filaments during fabrication.\n4. Key Result - This method enables the independent control of bending and torsion at every cross-section of the filament, resulting in complex shape-morphing materials.\n5. Takeaway - Thus, the key message of this paper is the development of shape-morphing materials with complex programmable responses for applications in adaptive, robotic, or deployable architectures.",
+    "author_details": [
+      {
+        "name": "Mustafa K. Abdelrahman",
+        "openalex_author_id": "https://openalex.org/A5023740833",
+        "orcid": "https://orcid.org/0000-0002-9388-2561",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Harvard University",
+            "ror": "https://ror.org/03vek6s52",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "John A. Paulson School of Engineering and Applied Sciences, Harvard University"
+        ]
+      },
+      {
+        "name": "Jackson K. Wilt",
+        "openalex_author_id": "https://openalex.org/A5134228767",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Harvard University",
+            "ror": "https://ror.org/03vek6s52",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "John A. Paulson School of Engineering and Applied Sciences, Harvard University"
+        ]
+      },
+      {
+        "name": "Yeonsu Jung",
+        "openalex_author_id": "https://openalex.org/A5006339552",
+        "orcid": "https://orcid.org/0000-0001-7920-3844",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Harvard University",
+            "ror": "https://ror.org/03vek6s52",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "John A. Paulson School of Engineering and Applied Sciences, Harvard University"
+        ]
+      },
+      {
+        "name": "Rodrigo Telles",
+        "openalex_author_id": "https://openalex.org/A5031784508",
+        "orcid": "https://orcid.org/0000-0001-5785-6289",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Harvard University",
+            "ror": "https://ror.org/03vek6s52",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "John A. Paulson School of Engineering and Applied Sciences, Harvard University"
+        ]
+      },
+      {
+        "name": "Gurminder K. Paink",
+        "openalex_author_id": "https://openalex.org/A5038346773",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Harvard University",
+            "ror": "https://ror.org/03vek6s52",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "John A. Paulson School of Engineering and Applied Sciences, Harvard University"
+        ]
+      },
+      {
+        "name": "Natalie Larson",
+        "openalex_author_id": "https://openalex.org/A5074523334",
+        "orcid": "https://orcid.org/0000-0002-2020-2326",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Harvard University",
+            "ror": "https://ror.org/03vek6s52",
+            "country_code": "US",
+            "type": "education"
+          },
+          {
+            "name": "Stanford University",
+            "ror": "https://ror.org/00f54p054",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering, Stanford University",
+          "John A. Paulson School of Engineering and Applied Sciences, Harvard University"
+        ]
+      },
+      {
+        "name": "Joanna Aizenberg",
+        "openalex_author_id": "https://openalex.org/A5035632514",
+        "orcid": "https://orcid.org/0000-0002-2343-8705",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Harvard University",
+            "ror": "https://ror.org/03vek6s52",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Chemistry and Chemical Biology, Harvard University",
+          "John A. Paulson School of Engineering and Applied Sciences, Harvard University"
+        ]
+      },
+      {
+        "name": "L. Mahadevan",
+        "openalex_author_id": "https://openalex.org/A5063432831",
+        "orcid": "https://orcid.org/0000-0002-5114-0519",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Harvard University",
+            "ror": "https://ror.org/03vek6s52",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Organismic and Evolutionary Biology, Harvard University",
+          "Department of Physics, Harvard University",
+          "John A. Paulson School of Engineering and Applied Sciences, Harvard University"
+        ]
+      },
+      {
+        "name": "Jennifer A. Lewis",
+        "openalex_author_id": "https://openalex.org/A5021067826",
+        "orcid": "https://orcid.org/0000-0002-0280-2774",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Harvard University",
+            "ror": "https://ror.org/03vek6s52",
+            "country_code": "US",
+            "type": "education"
+          },
+          {
+            "name": "Inspire",
+            "ror": "https://ror.org/02sy45055",
+            "country_code": "CH",
+            "type": "company"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "John A. Paulson School of Engineering and Applied Sciences, Harvard University",
+          "Wyss Institute for Biologically Inspired Engineering, Harvard University"
+        ]
+      }
+    ],
+    "corresponding_authors": [
+      {
+        "name": "L. Mahadevan",
+        "openalex_author_id": "https://openalex.org/A5063432831",
+        "orcid": "https://orcid.org/0000-0002-5114-0519",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Harvard University",
+            "ror": "https://ror.org/03vek6s52",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Organismic and Evolutionary Biology, Harvard University",
+          "Department of Physics, Harvard University",
+          "John A. Paulson School of Engineering and Applied Sciences, Harvard University"
+        ]
+      },
+      {
+        "name": "Jennifer A. Lewis",
+        "openalex_author_id": "https://openalex.org/A5021067826",
+        "orcid": "https://orcid.org/0000-0002-0280-2774",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Harvard University",
+            "ror": "https://ror.org/03vek6s52",
+            "country_code": "US",
+            "type": "education"
+          },
+          {
+            "name": "Inspire",
+            "ror": "https://ror.org/02sy45055",
+            "country_code": "CH",
+            "type": "company"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "John A. Paulson School of Engineering and Applied Sciences, Harvard University",
+          "Wyss Institute for Biologically Inspired Engineering, Harvard University"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "openalex_work_id": "https://openalex.org/W7155194136",
+    "openalex_source_id": "https://openalex.org/S125754415",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S125754415",
+      "issn_l": "0027-8424",
+      "issn": [
+        "0027-8424",
+        "1091-6490"
+      ],
+      "type": "journal",
+      "host_organization_name": "National Academy of Sciences",
+      "works_count": null,
+      "cited_by_count": null,
+      "two_year_mean_citedness": null,
+      "h_index": null,
+      "i10_index": null,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "High-impact general journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    }
   },
   {
     "id": "10.3390/polym18091019",
@@ -77,7 +334,96 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-13",
-    "last_updated": "2026-06-16"
+    "last_updated": "2026-06-16",
+    "author_details": [
+      {
+        "name": "Alin Bustihan",
+        "openalex_author_id": "https://openalex.org/A5117218426",
+        "orcid": null,
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Babeș-Bolyai University",
+            "ror": "https://ror.org/02rmd1t30",
+            "country_code": "RO",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Physics of Condensed Matter and Advanced Technologies, Faculty of Physics, Babeș-Bolyai University, 400084 Cluj-Napoca, Romania",
+          "Interdisciplinary Research Institute on Bio-Nano-Sciences, Babeș-Bolyai University, 400271 Cluj-Napoca, Romania"
+        ]
+      },
+      {
+        "name": "Ioan Botiz",
+        "openalex_author_id": "https://openalex.org/A5008610037",
+        "orcid": "https://orcid.org/0000-0002-8555-1084",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Babeș-Bolyai University",
+            "ror": "https://ror.org/02rmd1t30",
+            "country_code": "RO",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Physics of Condensed Matter and Advanced Technologies, Faculty of Physics, Babeș-Bolyai University, 400084 Cluj-Napoca, Romania",
+          "Interdisciplinary Research Institute on Bio-Nano-Sciences, Babeș-Bolyai University, 400271 Cluj-Napoca, Romania"
+        ]
+      }
+    ],
+    "corresponding_authors": [
+      {
+        "name": "Ioan Botiz",
+        "openalex_author_id": "https://openalex.org/A5008610037",
+        "orcid": "https://orcid.org/0000-0002-8555-1084",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Babeș-Bolyai University",
+            "ror": "https://ror.org/02rmd1t30",
+            "country_code": "RO",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Physics of Condensed Matter and Advanced Technologies, Faculty of Physics, Babeș-Bolyai University, 400084 Cluj-Napoca, Romania",
+          "Interdisciplinary Research Institute on Bio-Nano-Sciences, Babeș-Bolyai University, 400271 Cluj-Napoca, Romania"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "openalex_work_id": "https://openalex.org/W7155368599",
+    "openalex_source_id": "https://openalex.org/S123288148",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S123288148",
+      "issn_l": "2073-4360",
+      "issn": [
+        "2073-4360"
+      ],
+      "type": "journal",
+      "host_organization_name": "Multidisciplinary Digital Publishing Institute",
+      "works_count": null,
+      "cited_by_count": null,
+      "two_year_mean_citedness": null,
+      "h_index": null,
+      "i10_index": null,
+      "is_oa": true,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    }
   },
   {
     "id": "10.3390/polym18020192",
@@ -122,7 +468,316 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-13",
-    "last_updated": "2026-06-16"
+    "last_updated": "2026-06-16",
+    "author_details": [
+      {
+        "name": "Md Mahbubur Rahman",
+        "openalex_author_id": "https://openalex.org/A5122753830",
+        "orcid": null,
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Khulna University of Engineering and Technology",
+            "ror": "https://ror.org/04y58d606",
+            "country_code": "BD",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering, Khulna University of Engineering & Technology, Khulna 9203, Bangladesh"
+        ]
+      },
+      {
+        "name": "Safkat Islam",
+        "openalex_author_id": null,
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Khulna University of Engineering and Technology",
+            "ror": "https://ror.org/04y58d606",
+            "country_code": "BD",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering, Khulna University of Engineering & Technology, Khulna 9203, Bangladesh"
+        ]
+      },
+      {
+        "name": "Mubasshira",
+        "openalex_author_id": "https://openalex.org/A5122808025",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Khulna University of Engineering and Technology",
+            "ror": "https://ror.org/04y58d606",
+            "country_code": "BD",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Material Science and Engineering, Khulna University of Engineering & Technology, Khulna 9203, Bangladesh"
+        ]
+      },
+      {
+        "name": "Md Shaiful Islam",
+        "openalex_author_id": null,
+        "orcid": "https://orcid.org/0009-0000-1956-4322",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Khulna University of Engineering and Technology",
+            "ror": "https://ror.org/04y58d606",
+            "country_code": "BD",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering, Khulna University of Engineering & Technology, Khulna 9203, Bangladesh"
+        ]
+      },
+      {
+        "name": "Raju Ahammad",
+        "openalex_author_id": "https://openalex.org/A5095902191",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Khulna University of Engineering and Technology",
+            "ror": "https://ror.org/04y58d606",
+            "country_code": "BD",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering, Khulna University of Engineering & Technology, Khulna 9203, Bangladesh"
+        ]
+      },
+      {
+        "name": "Md Ashraful Islam",
+        "openalex_author_id": "https://openalex.org/A5122788745",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Khulna University of Engineering and Technology",
+            "ror": "https://ror.org/04y58d606",
+            "country_code": "BD",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering, Khulna University of Engineering & Technology, Khulna 9203, Bangladesh"
+        ]
+      },
+      {
+        "name": "Md Abdul Hasib",
+        "openalex_author_id": "https://openalex.org/A5122795956",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Khulna University of Engineering and Technology",
+            "ror": "https://ror.org/04y58d606",
+            "country_code": "BD",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering, Khulna University of Engineering & Technology, Khulna 9203, Bangladesh"
+        ]
+      },
+      {
+        "name": "Shohanur Rahman",
+        "openalex_author_id": "https://openalex.org/A5006286541",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Khulna University of Engineering and Technology",
+            "ror": "https://ror.org/04y58d606",
+            "country_code": "BD",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechatronics Engineering, Khulna University of Engineering & Technology, Khulna 9203, Bangladesh"
+        ]
+      },
+      {
+        "name": "Raza Moshwan",
+        "openalex_author_id": "https://openalex.org/A5033344623",
+        "orcid": "https://orcid.org/0000-0003-3392-3680",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "International University of Business Agriculture and Technology",
+            "ror": "https://ror.org/02m32cr13",
+            "country_code": "BD",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering, IUBAT—International University of Business Agriculture and Technology, Dhaka 1230, Bangladesh"
+        ]
+      },
+      {
+        "name": "M. Monjurul Ehsan",
+        "openalex_author_id": "https://openalex.org/A5122802905",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Islamic University of Technology",
+            "ror": "https://ror.org/057gnqw22",
+            "country_code": "BD",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical and Production Engineering (MPE), Islamic University of Technology (IUT), Board Bazaar, Gazipur 1704, Bangladesh"
+        ]
+      },
+      {
+        "name": "M. Sanaul Rabbi",
+        "openalex_author_id": "https://openalex.org/A5122808157",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Chittagong University of Engineering & Technology",
+            "ror": "https://ror.org/052qsay17",
+            "country_code": "BD",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering, Chittagong University of Engineering and Technology, Chattogram 4349, Bangladesh"
+        ]
+      },
+      {
+        "name": "Md Moniruzzaman",
+        "openalex_author_id": "https://openalex.org/A5122799226",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Khulna University of Engineering and Technology",
+            "ror": "https://ror.org/04y58d606",
+            "country_code": "BD",
+            "type": "education"
+          },
+          {
+            "name": "University of Southern Mississippi",
+            "ror": "https://ror.org/0270vfa57",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Textile Engineering, Khulna University of Engineering & Technology, Khulna 9203, Bangladesh",
+          "School of Polymer Science and Engineering, The University of Southern Mississippi, Hattiesburg, MS 39406, USA"
+        ]
+      },
+      {
+        "name": "Muhammad Altaf Nazir",
+        "openalex_author_id": "https://openalex.org/A5122754915",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Islamia University of Bahawalpur",
+            "ror": "https://ror.org/002rc4w13",
+            "country_code": "PK",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Institute of Chemistry, The Islamia University of Bahawalpur, Bahawalpur 63100, Pakistan"
+        ]
+      },
+      {
+        "name": "Liu Wei-di",
+        "openalex_author_id": "https://openalex.org/A5042421407",
+        "orcid": null,
+        "position": "last",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Nanjing University of Science and Technology",
+            "ror": "https://ror.org/00xp9wg62",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Herbert Gleiter Institute of Nanoscience, School of Materials Science and Engineering, Nanjing University of Science and Technology, Nanjing 210094, China"
+        ]
+      }
+    ],
+    "corresponding_authors": [
+      {
+        "name": "Md Mahbubur Rahman",
+        "openalex_author_id": "https://openalex.org/A5122753830",
+        "orcid": null,
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Khulna University of Engineering and Technology",
+            "ror": "https://ror.org/04y58d606",
+            "country_code": "BD",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering, Khulna University of Engineering & Technology, Khulna 9203, Bangladesh"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "openalex_work_id": "https://openalex.org/W7122498667",
+    "openalex_source_id": "https://openalex.org/S123288148",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S123288148",
+      "issn_l": "2073-4360",
+      "issn": [
+        "2073-4360"
+      ],
+      "type": "journal",
+      "host_organization_name": "Multidisciplinary Digital Publishing Institute",
+      "works_count": null,
+      "cited_by_count": null,
+      "two_year_mean_citedness": null,
+      "h_index": null,
+      "i10_index": null,
+      "is_oa": true,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    }
   },
   {
     "id": "10.1038/s44334-026-00073-0",
@@ -166,7 +821,233 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-15",
-    "last_updated": "2026-06-16"
+    "last_updated": "2026-06-16",
+    "author_details": [
+      {
+        "name": "Patrick L. Snarr",
+        "openalex_author_id": "https://openalex.org/A5093656881",
+        "orcid": "https://orcid.org/0009-0004-5141-6740",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Oak Ridge National Laboratory",
+            "ror": "https://ror.org/01qz5mb56",
+            "country_code": "US",
+            "type": "facility"
+          },
+          {
+            "name": "The University of Texas at Austin",
+            "ror": "https://ror.org/00hj54h04",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Oak Ridge National Laboratory, Oak Ridge, TN, USA",
+          "The University of Texas at Austin, Austin, TX, USA"
+        ]
+      },
+      {
+        "name": "Corson L. Cramer",
+        "openalex_author_id": "https://openalex.org/A5056792507",
+        "orcid": "https://orcid.org/0000-0002-0179-088X",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Oak Ridge National Laboratory",
+            "ror": "https://ror.org/01qz5mb56",
+            "country_code": "US",
+            "type": "facility"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Oak Ridge National Laboratory, Oak Ridge, TN, USA"
+        ]
+      },
+      {
+        "name": "Ercan Cakmak",
+        "openalex_author_id": "https://openalex.org/A5040662101",
+        "orcid": "https://orcid.org/0000-0001-7272-4815",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Oak Ridge National Laboratory",
+            "ror": "https://ror.org/01qz5mb56",
+            "country_code": "US",
+            "type": "facility"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Oak Ridge National Laboratory, Oak Ridge, TN, USA"
+        ]
+      },
+      {
+        "name": "Beth L. Armstrong",
+        "openalex_author_id": "https://openalex.org/A5081743475",
+        "orcid": "https://orcid.org/0000-0001-7149-3576",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Oak Ridge National Laboratory",
+            "ror": "https://ror.org/01qz5mb56",
+            "country_code": "US",
+            "type": "facility"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Oak Ridge National Laboratory, Oak Ridge, TN, USA"
+        ]
+      },
+      {
+        "name": "James G. Hemrick",
+        "openalex_author_id": "https://openalex.org/A5047869389",
+        "orcid": "https://orcid.org/0000-0002-7675-8956",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Oak Ridge National Laboratory",
+            "ror": "https://ror.org/01qz5mb56",
+            "country_code": "US",
+            "type": "facility"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Oak Ridge National Laboratory, Oak Ridge, TN, USA"
+        ]
+      },
+      {
+        "name": "Derek A. Haas",
+        "openalex_author_id": "https://openalex.org/A5066846284",
+        "orcid": "https://orcid.org/0000-0003-2929-8974",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "The University of Texas at Austin",
+            "ror": "https://ror.org/00hj54h04",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "The University of Texas at Austin, Austin, TX, USA"
+        ]
+      },
+      {
+        "name": "Joseph J. Beaman",
+        "openalex_author_id": "https://openalex.org/A5112023406",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "The University of Texas at Austin",
+            "ror": "https://ror.org/00hj54h04",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "The University of Texas at Austin, Austin, TX, USA"
+        ]
+      },
+      {
+        "name": "Christian Petrie",
+        "openalex_author_id": "https://openalex.org/A5063812863",
+        "orcid": "https://orcid.org/0000-0003-1167-3545",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Oak Ridge National Laboratory",
+            "ror": "https://ror.org/01qz5mb56",
+            "country_code": "US",
+            "type": "facility"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Oak Ridge National Laboratory, Oak Ridge, TN, USA"
+        ]
+      },
+      {
+        "name": "A. Nelson",
+        "openalex_author_id": "https://openalex.org/A5109214870",
+        "orcid": null,
+        "position": "last",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Oak Ridge National Laboratory",
+            "ror": "https://ror.org/01qz5mb56",
+            "country_code": "US",
+            "type": "facility"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Oak Ridge National Laboratory, Oak Ridge, TN, USA"
+        ]
+      }
+    ],
+    "corresponding_authors": [
+      {
+        "name": "Patrick L. Snarr",
+        "openalex_author_id": "https://openalex.org/A5093656881",
+        "orcid": "https://orcid.org/0009-0004-5141-6740",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Oak Ridge National Laboratory",
+            "ror": "https://ror.org/01qz5mb56",
+            "country_code": "US",
+            "type": "facility"
+          },
+          {
+            "name": "The University of Texas at Austin",
+            "ror": "https://ror.org/00hj54h04",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Oak Ridge National Laboratory, Oak Ridge, TN, USA",
+          "The University of Texas at Austin, Austin, TX, USA"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "openalex_work_id": "https://openalex.org/W7135244468",
+    "openalex_source_id": "https://openalex.org/S5407042850",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S5407042850",
+      "issn_l": "3004-8621",
+      "issn": [
+        "3004-8621"
+      ],
+      "type": "journal",
+      "host_organization_name": null,
+      "works_count": null,
+      "cited_by_count": null,
+      "two_year_mean_citedness": null,
+      "h_index": null,
+      "i10_index": null,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    }
   },
   {
     "id": "10.1039/d5ma01130b",
@@ -211,7 +1092,219 @@
     "archive_note_ko": "??/AM ?? ??? ??? ??? biomedical, dental, food, electronics, photovoltaic, prosthetics ? ?? ?? ???? ?? ???????.",
     "archive_scope_reasons": [
       "tissue engineering"
-    ]
+    ],
+    "author_details": [
+      {
+        "name": "Maria Celeste Tirelli",
+        "openalex_author_id": "https://openalex.org/A5015045310",
+        "orcid": "https://orcid.org/0000-0002-6670-4014",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Institute of Psychology",
+            "ror": "https://ror.org/034dn0836",
+            "country_code": "PL",
+            "type": "facility"
+          },
+          {
+            "name": "Polish Academy of Sciences",
+            "ror": "https://ror.org/01dr6c206",
+            "country_code": "PL",
+            "type": "government"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Institute of Physical Chemistry – Polish Academy of Science, Warsaw, Poland"
+        ]
+      },
+      {
+        "name": "Francesco Nalin",
+        "openalex_author_id": "https://openalex.org/A5032975101",
+        "orcid": "https://orcid.org/0000-0003-3392-0359",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Institute of Psychology",
+            "ror": "https://ror.org/034dn0836",
+            "country_code": "PL",
+            "type": "facility"
+          },
+          {
+            "name": "Polish Academy of Sciences",
+            "ror": "https://ror.org/01dr6c206",
+            "country_code": "PL",
+            "type": "government"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Institute of Physical Chemistry – Polish Academy of Science, Warsaw, Poland"
+        ]
+      },
+      {
+        "name": "Nehar Celikkin",
+        "openalex_author_id": "https://openalex.org/A5082514712",
+        "orcid": "https://orcid.org/0000-0001-8858-2057",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Institute of Psychology",
+            "ror": "https://ror.org/034dn0836",
+            "country_code": "PL",
+            "type": "facility"
+          },
+          {
+            "name": "Polish Academy of Sciences",
+            "ror": "https://ror.org/01dr6c206",
+            "country_code": "PL",
+            "type": "government"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Institute of Physical Chemistry – Polish Academy of Science, Warsaw, Poland"
+        ]
+      },
+      {
+        "name": "Żaneta Górecka",
+        "openalex_author_id": "https://openalex.org/A5050832734",
+        "orcid": "https://orcid.org/0000-0003-4782-6128",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Institute of Psychology",
+            "ror": "https://ror.org/034dn0836",
+            "country_code": "PL",
+            "type": "facility"
+          },
+          {
+            "name": "Polish Academy of Sciences",
+            "ror": "https://ror.org/01dr6c206",
+            "country_code": "PL",
+            "type": "government"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Institute of Physical Chemistry – Polish Academy of Science, Warsaw, Poland"
+        ]
+      },
+      {
+        "name": "Pasquale Posabella",
+        "openalex_author_id": "https://openalex.org/A5093996575",
+        "orcid": "https://orcid.org/0000-0003-3884-5378",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Warsaw University of Technology",
+            "ror": "https://ror.org/00y0xnp53",
+            "country_code": "PL",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Faculty of Materials Science and Engineering, Warsaw University of Technology, Warsaw, Poland"
+        ]
+      },
+      {
+        "name": "Wojciech Święszkowski",
+        "openalex_author_id": "https://openalex.org/A5125272702",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Warsaw University of Technology",
+            "ror": "https://ror.org/00y0xnp53",
+            "country_code": "PL",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Faculty of Materials Science and Engineering, Warsaw University of Technology, Warsaw, Poland"
+        ]
+      },
+      {
+        "name": "Marco Costantini",
+        "openalex_author_id": "https://openalex.org/A5123869506",
+        "orcid": null,
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Institute of Psychology",
+            "ror": "https://ror.org/034dn0836",
+            "country_code": "PL",
+            "type": "facility"
+          },
+          {
+            "name": "Polish Academy of Sciences",
+            "ror": "https://ror.org/01dr6c206",
+            "country_code": "PL",
+            "type": "government"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Institute of Physical Chemistry – Polish Academy of Science, Warsaw, Poland"
+        ]
+      }
+    ],
+    "corresponding_authors": [
+      {
+        "name": "Marco Costantini",
+        "openalex_author_id": "https://openalex.org/A5123869506",
+        "orcid": null,
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Institute of Psychology",
+            "ror": "https://ror.org/034dn0836",
+            "country_code": "PL",
+            "type": "facility"
+          },
+          {
+            "name": "Polish Academy of Sciences",
+            "ror": "https://ror.org/01dr6c206",
+            "country_code": "PL",
+            "type": "government"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Institute of Physical Chemistry – Polish Academy of Science, Warsaw, Poland"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "openalex_work_id": "https://openalex.org/W7128159583",
+    "openalex_source_id": "https://openalex.org/S4210182508",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210182508",
+      "issn_l": "2633-5409",
+      "issn": [
+        "2633-5409"
+      ],
+      "type": "journal",
+      "host_organization_name": "Royal Society of Chemistry",
+      "works_count": null,
+      "cited_by_count": null,
+      "two_year_mean_citedness": null,
+      "h_index": null,
+      "i10_index": null,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    }
   },
   {
     "id": "10.21606/drs.2026.2363",

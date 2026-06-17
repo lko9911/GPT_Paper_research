@@ -90,11 +90,13 @@ def _normalize_work(item: dict[str, Any]) -> dict[str, Any]:
     if not venue:
         venue = (item.get("host_venue") or {}).get("display_name") or ""
 
-    authors = []
-    for authorship in item.get("authorships", [])[:12]:
-        author = authorship.get("author") or {}
-        if author.get("display_name"):
-            authors.append(author["display_name"])
+    author_details = _normalize_authorships(item.get("authorships", []))
+    authors = [author["name"] for author in author_details[:12] if author.get("name")]
+    corresponding_authors = [
+        author
+        for author in author_details
+        if author.get("is_corresponding")
+    ]
 
     abstract = _decode_inverted_abstract(item.get("abstract_inverted_index"))
     url = f"https://doi.org/{quote(doi)}" if doi else item.get("id", "")
@@ -102,12 +104,77 @@ def _normalize_work(item: dict[str, Any]) -> dict[str, Any]:
     return {
         "title": title,
         "authors": authors,
+        "author_details": author_details,
+        "corresponding_authors": corresponding_authors,
+        "corresponding_author_available": bool(corresponding_authors),
+        "openalex_work_id": item.get("id", ""),
+        "openalex_source_id": source.get("id", "") if source else "",
+        "venue_metrics": _normalize_source_metrics(source),
         "year": item.get("publication_year"),
         "venue": venue,
         "doi": doi,
         "url": url,
         "source": ["OpenAlex"],
         "_abstract": abstract,
+    }
+
+
+def _normalize_authorships(authorships: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    details: list[dict[str, Any]] = []
+    for index, authorship in enumerate(authorships[:100], start=1):
+        author = authorship.get("author") or {}
+        institutions = []
+        for institution in authorship.get("institutions") or []:
+            name = institution.get("display_name")
+            if name:
+                institutions.append(
+                    {
+                        "name": name,
+                        "ror": institution.get("ror", ""),
+                        "country_code": institution.get("country_code", ""),
+                        "type": institution.get("type", ""),
+                    }
+                )
+        details.append(
+            {
+                "name": author.get("display_name", ""),
+                "openalex_author_id": author.get("id", ""),
+                "orcid": author.get("orcid", ""),
+                "position": authorship.get("author_position", "") or _fallback_author_position(index, len(authorships)),
+                "is_corresponding": bool(authorship.get("is_corresponding")),
+                "institutions": institutions,
+                "raw_affiliation_strings": authorship.get("raw_affiliation_strings") or [],
+            }
+        )
+    return details
+
+
+def _fallback_author_position(index: int, total: int) -> str:
+    if index == 1:
+        return "first"
+    if index == total:
+        return "last"
+    return "middle"
+
+
+def _normalize_source_metrics(source: dict[str, Any]) -> dict[str, Any]:
+    if not source:
+        return {}
+    summary_stats = source.get("summary_stats") or {}
+    return {
+        "source": "OpenAlex",
+        "source_id": source.get("id", ""),
+        "issn_l": source.get("issn_l", ""),
+        "issn": source.get("issn") or [],
+        "type": source.get("type", ""),
+        "host_organization_name": source.get("host_organization_name", ""),
+        "works_count": source.get("works_count"),
+        "cited_by_count": source.get("cited_by_count"),
+        "two_year_mean_citedness": summary_stats.get("2yr_mean_citedness"),
+        "h_index": summary_stats.get("h_index"),
+        "i10_index": summary_stats.get("i10_index"),
+        "is_oa": source.get("is_oa"),
+        "is_in_doaj": source.get("is_in_doaj"),
     }
 
 

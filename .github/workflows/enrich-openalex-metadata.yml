@@ -1,0 +1,56 @@
+name: Enrich OpenAlex metadata
+
+on:
+  workflow_dispatch:
+    inputs:
+      max_records:
+        description: "Maximum DOI records to enrich. Use 0 for all missing records."
+        required: true
+        default: "0"
+      force:
+        description: "Re-fetch records even if author/venue metadata already exists."
+        required: true
+        default: "false"
+        type: choice
+        options:
+          - "false"
+          - "true"
+
+permissions:
+  contents: write
+
+jobs:
+  enrich:
+    runs-on: ubuntu-latest
+    env:
+      CONTACT_EMAIL: ${{ secrets.CONTACT_EMAIL || 'lko9911@snu.ac.kr' }}
+      OPENALEX_ENRICH_MAX: ${{ inputs.max_records }}
+      OPENALEX_ENRICH_FORCE: ${{ inputs.force }}
+      API_SLEEP_SECONDS: "0.35"
+      OPENALEX_RETRIES: "4"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Enrich metadata
+        run: python scripts/enrich_openalex_metadata.py
+
+      - name: Commit changed data
+        run: |
+          if git diff --quiet -- data/papers.json data/archive_papers.json; then
+            echo "No OpenAlex metadata enrichment changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/papers.json data/archive_papers.json
+          git commit -m "Enrich OpenAlex author metadata"
+          git push

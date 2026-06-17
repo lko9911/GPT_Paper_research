@@ -175,3 +175,28 @@ OpenAI 요약 workflow의 상태는 `OPENAI_SUMMARY_STATUS.md`와 `data/openai_s
 - `data/site_meta.json`은 자동 업데이트 파이프라인의 마지막 실행 시각을 저장합니다.
 - `last_run_at_utc`는 UTC ISO timestamp이며, 프론트엔드는 이를 KST로 변환해 상단 통계의 `최신 업데이트`에 표시합니다.
 - 새 논문이 없어도 workflow가 실행되면 `data/site_meta.json`이 변경되므로, 사용자는 사이트에서 마지막 갱신 실행 시간을 확인할 수 있습니다.
+## 2026-06-17 Author And Journal Metric Enrichment
+
+The project now supports optional OpenAlex metadata enrichment for author and venue details.
+
+### Stored Author Fields
+
+- `author_details`: ordered authorship objects from OpenAlex, including author name, OpenAlex author ID, ORCID when available, author position, institutions, and raw affiliation strings.
+- `corresponding_authors`: subset of `author_details` where OpenAlex reports `authorships.is_corresponding=true`.
+- `corresponding_author_available`: boolean display helper. `false` means the API did not provide a corresponding author flag; it is not a negative claim from the publisher.
+
+### Venue Metric Fields
+
+- `venue_metrics`: open metadata from the OpenAlex source object when available, including ISSN, source type, host organization, works count, citation count, and OpenAlex `summary_stats`.
+- `journal_quality`: transparent display label. It can use manual core venue rules, repository/preprint detection, and OpenAlex open citation proxies.
+- `journal_quality.official_jif` and `journal_quality.official_quartile` remain `null` unless a licensed JCR/Scopus data source is supplied.
+
+### Workflow
+
+`.github/workflows/enrich-openalex-metadata.yml` exposes a manual `Enrich OpenAlex metadata` workflow. It runs `scripts/enrich_openalex_metadata.py`, calls only the official OpenAlex Work API by DOI, and commits changed `data/papers.json` / `data/archive_papers.json`.
+
+This workflow does not call OpenAI, crawl publisher pages, download PDFs, or store raw abstracts.
+
+### IF / Quartile Policy
+
+Official Journal Impact Factor and quartile classification should not be inferred from OpenAlex/Crossref. If those values are needed, add a licensed import such as `data/journal_metrics.csv` with source year, metric source, ISSN, JIF, and quartile fields. Until then the UI must call the automatic label a `Venue signal`, not `Impact Factor`.

@@ -224,3 +224,22 @@ GitHub Pages에서 동작 가능한 정적 논문 큐레이션 사이트와 GitH
 - The website reads `data/update_status.json` and shows update attempt state in the `Now / Updated` panel, so users can distinguish an update currently running, a failed/cancelled attempt, and the last successful collection time.
 - If the scheduled time has passed but `data/update_status.json` was not updated after that scheduled time, the website now shows a "run not seen yet" / "시도 미감지" message. This covers the GitHub Actions case where the scheduled event itself is delayed or dropped before any workflow step can write status.
 - Scheduled updates still do not call OpenAI. OpenAI summary refresh remains manual only.
+- Scheduled updates still do not call OpenAI. OpenAI summary refresh remains manual only.
+
+# 2026-06-17 Author And Venue Quality Metadata
+
+## Completed
+- OpenAlex metadata normalization now stores `author_details`, `corresponding_authors`, `corresponding_author_available`, `openalex_work_id`, `openalex_source_id`, and `venue_metrics` when available.
+- Paper cards can display corresponding authors, compact author chips, and a venue-quality signal.
+- A manual workflow, `Enrich OpenAlex metadata`, can fill missing author/venue metadata for existing stored records without calling OpenAI.
+- A local smoke test enriched 5 curated records and confirmed corresponding author extraction works when OpenAlex provides `authorships.is_corresponding`.
+
+## Quality / IF / Quartile Policy
+- Official Journal Impact Factor and JCR quartile are not inferred automatically because they are licensed Clarivate/JCR data.
+- The project stores `journal_quality.official_jif` and `journal_quality.official_quartile` as `null` unless a licensed source is supplied later.
+- Current automatic labels use transparent non-official signals only: manual core venue lists, repository/preprint source detection, and OpenAlex open citation proxy fields when available.
+- UI wording uses `Venue signal`, not `Impact Factor`, to avoid overstating the metric.
+
+## Remaining Work
+- Run the manual `Enrich OpenAlex metadata` workflow with `max_records=0` if a full-data refresh is desired.
+- If official Q/IF display is required, add a licensed `data/journal_metrics.csv` or API integration and document the license/source year.
