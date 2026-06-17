@@ -1140,7 +1140,6 @@ function renderPaperRow(paper) {
   const doiUrl = paper.url || (paper.doi ? `https://doi.org/${paper.doi}` : "");
   const authorDetailsHtml = renderAuthorDetails(paper);
   const correspondingHtml = renderCorrespondingAuthors(paper);
-  const qualityHtml = renderJournalQuality(paper);
   const publicationLabel = formatPublicationLabel(paper);
   const summaryProviderLabel = formatSummaryProviderLabel(paper);
   const summaryHtml = renderSummaryBlock(paper);
@@ -1159,7 +1158,6 @@ function renderPaperRow(paper) {
       <h4 class="paper-title">${escapeHtml(paper.title || "Untitled")}</h4>
       ${correspondingHtml}
       ${authorDetailsHtml}
-      ${qualityHtml}
       ${summaryHtml}
       <p class="relevance-note">${escapeHtml(relevanceNote)}</p>
       <div class="tag-line">${representativeBadges}</div>
@@ -1259,16 +1257,6 @@ function authorSearchText(paper) {
   }).join(" ");
 }
 
-function renderJournalQuality(paper) {
-  const quality = paper.journal_quality || {};
-  const metrics = paper.venue_metrics || {};
-  const label = quality.label || "";
-  const citedness = quality.openalex_two_year_mean_citedness ?? metrics.two_year_mean_citedness;
-  const metricText = typeof citedness === "number" ? ` · OpenAlex 2yr citedness ${citedness.toFixed(1)}` : "";
-  if (!label && !metricText) return "";
-  const basis = quality.basis ? ` (${quality.basis.replaceAll("_", " ")})` : "";
-  return `<p class="quality-line"><span>Venue signal</span> ${escapeHtml(label || "Open metric available")}${escapeHtml(metricText)}${escapeHtml(basis)}</p>`;
-}
 
 function formatSummary(paper) {
   if (state.language !== "en") {
