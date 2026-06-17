@@ -1,5 +1,22 @@
 # AGENT_LOG
 
+## 2026-06-17 22:52
+
+### Change Summary
+- Unified corresponding-author chip styling with the rest of the paper-card design system.
+
+### Edited Files
+- `assets/style.css`: replaced the strong standalone green badge style with token-based chip colors and a subtle inline divider label.
+- `index.html`: bumped JS/CSS cache versions for GitHub Pages.
+- `AGENT_LOG.md`: recorded the design unification.
+
+### Design Notes
+- The corresponding-author state remains visible through green tinting and the inline role label, but now uses existing CSS variables so light/dark themes stay consistent.
+- The badge still does not shrink, so long names cannot clip the role label.
+
+### Follow-up
+- None.
+
 ## 2026-06-17 22:45
 
 ### Change Summary
