@@ -134,6 +134,9 @@ const UI_TEXT = {
     openaiNotAppliedTitle: "OpenAI API를 사용하지 않고 제목, 초록 사용 여부, DOI 및 공개 메타데이터 신호를 바탕으로 작성한 요약입니다.",
     fallbackSummary: "메타데이터 기반 요약",
     summaryMissing: "요약이 아직 생성되지 않았습니다.",
+    authorsLabel: "저자",
+    correspondingAuthorsLabel: "교신저자",
+    correspondingAuthorBadge: "교신",
     openPaper: "논문 열기",
     doiButton: "DOI",
     copyCitation: "인용 복사",
@@ -205,6 +208,9 @@ const UI_TEXT = {
     openaiNotAppliedTitle: "This summary was written without the OpenAI API, using title, abstract-availability, DOI, and public metadata signals.",
     fallbackSummary: "Metadata-based summary",
     summaryMissing: "Summary has not been generated yet.",
+    authorsLabel: "Authors",
+    correspondingAuthorsLabel: "Corresponding authors",
+    correspondingAuthorBadge: "Corresponding",
     openPaper: "Open Paper",
     doiButton: "DOI",
     copyCitation: "Copy Cite",
@@ -1203,9 +1209,10 @@ function renderCorrespondingAuthors(paper) {
     .slice(0, 3)
     .map((author) => author.name || author)
     .filter(Boolean);
+  if (!names.length) return "";
   const suffix = authors.length > 3 ? ` +${authors.length - 3}` : "";
-  const value = names.length ? `${names.join(", ")}${suffix}` : "No data";
-  return `<p class="author-line is-corresponding"><span>Corresponding Authors</span> ${escapeHtml(value)}</p>`;
+  const value = `${names.join(", ")}${suffix}`;
+  return `<p class="author-line is-corresponding"><span>${escapeHtml(t("correspondingAuthorsLabel"))}</span> ${escapeHtml(value)}</p>`;
 }
 
 function renderAuthorDetails(paper) {
@@ -1216,22 +1223,25 @@ function renderAuthorDetails(paper) {
     ? details.slice(0, 8).map((author) => ({
         name: author.name || "",
         tooltip: [author.name, author.position, primaryInstitution(author)].filter(Boolean).join(" · "),
-        marker: author.is_corresponding ? " *" : "",
+        isCorresponding: Boolean(author.is_corresponding),
       }))
     : fallbackAuthors.slice(0, 8).map((name) => ({
         name,
         tooltip: name,
-        marker: "",
+        isCorresponding: false,
       }));
   const chips = visibleDetails.map((author) => {
     const name = author.name || "";
     if (!name) return "";
-    return `<span class="author-chip" title="${escapeAttribute(author.tooltip)}">${escapeHtml(name)}${escapeHtml(author.marker)}</span>`;
+    const corrBadge = author.isCorresponding
+      ? `<span class="author-chip-badge">${escapeHtml(t("correspondingAuthorBadge"))}</span>`
+      : "";
+    return `<span class="author-chip${author.isCorresponding ? " is-corresponding" : ""}" title="${escapeAttribute(author.tooltip)}">${escapeHtml(name)}${corrBadge}</span>`;
   }).join("");
   if (!chips) return "";
   const total = details.length || fallbackAuthors.length;
   const remaining = total > 8 ? `<span class="author-chip muted">+${total - 8}</span>` : "";
-  return `<div class="author-line author-detail-line" aria-label="Author details"><span>Authors</span><div>${chips}${remaining}</div></div>`;
+  return `<div class="author-line author-detail-line" aria-label="Author details"><span>${escapeHtml(t("authorsLabel"))}</span><div>${chips}${remaining}</div></div>`;
 }
 
 function primaryInstitution(author) {

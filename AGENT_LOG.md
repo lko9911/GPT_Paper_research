@@ -1,5 +1,25 @@
 # AGENT_LOG
 
+## 2026-06-17 22:20
+
+### Change Summary
+- Improved author and corresponding-author display on paper cards.
+- Added OpenAlex DOI cross-check for Crossref-only records so missing detailed author and corresponding-author metadata can be filled when OpenAlex has it.
+
+### Edited Files
+- `assets/app.js`: hides the corresponding-author line when no corresponding author is available, localizes author labels, and replaces the unexplained `*` marker with an explicit corresponding-author badge.
+- `assets/style.css`: added distinct styling for corresponding-author chips and badges.
+- `scripts/update_papers.py`: new DOI-based OpenAlex cross-check path merges `author_details`, `corresponding_authors`, OpenAlex IDs, venue metrics, and missing metadata into Crossref-derived candidates.
+- `index.html`: bumped JS/CSS cache versions for GitHub Pages.
+- `AGENT_LOG.md`: recorded the UI and metadata pipeline change.
+
+### Design Notes
+- Missing corresponding-author metadata is now treated as "not provided by the metadata source" rather than shown as `No data`.
+- The pipeline still does not infer corresponding authors. It only displays OpenAlex-provided `authorships.is_corresponding` when available.
+
+### Follow-up
+- Run or wait for the scheduled `Update papers` workflow to let Crossref-only records receive OpenAlex DOI cross-check enrichment.
+
 ## 2026-06-17 01:05
 ### 변경 요약
 - 사용자가 OpenAlex-only venue가 실제로 Crossref에 없는 venue인지 확인하고 싶다고 요청하여, 기존 3,075 후보 기반 OpenAlex-only venue 428개를 Crossref journal lookup으로 재검사했습니다.
