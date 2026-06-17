@@ -4717,3 +4717,46 @@
 ### 주의사항
 - OpenAI API는 사용하지 않았습니다.
 - 열려 있는 Excel 프로세스를 강제로 종료하지 않았습니다.
+
+## 2026-06-17 12:34
+### 변경 요약
+- 여러 Excel/CSV/Markdown 보고서를 하나의 최종 Excel 보고서로 통합했습니다.
+- 사용자가 보고서 폴더에서 한 파일만 보기를 원했기 때문에 중간 산출물과 감사용 CSV/MD 보고서를 제거했습니다.
+
+### 수정/생성한 파일
+- `reports/api_source_coverage_report.xlsx`: API source coverage 분석을 모두 담은 단일 최종 Excel 보고서를 생성했습니다.
+- `reports/source_overlap_openalex_crossref_groups.xlsx`: 단일 최종 보고서와 중복되므로 제거했습니다.
+- `reports/openalex_only_venues_no_crossref_journal_match.xlsx`: 단일 최종 보고서와 중복되므로 제거했습니다.
+- `reports/crossref_only_venues_no_openalex_source_match.xlsx`: 단일 최종 보고서와 중복되므로 제거했습니다.
+- `reports/crossref_only_venues_openalex_check.csv`: 단일 최종 보고서에 내용이 포함되어 제거했습니다.
+- `reports/crossref_only_venues_openalex_check.md`: 단일 최종 보고서에 내용이 포함되어 제거했습니다.
+- `reports/openalex_only_venues_crossref_check.csv`: 단일 최종 보고서에 내용이 포함되어 제거했습니다.
+- `reports/openalex_only_venues_crossref_check.md`: 단일 최종 보고서에 내용이 포함되어 제거했습니다.
+- `reports/source_overlap_analysis.md`: 단일 최종 보고서에 내용이 포함되어 제거했습니다.
+- `reports/source_overlap_records_all_3075.csv`: 단일 최종 보고서에 내용이 포함되어 제거했습니다.
+- `reports/source_overlap_title_matches.csv`: 단일 최종 보고서에 내용이 포함되어 제거했습니다.
+- `reports/source_overlap_unique_papers.csv`: 단일 최종 보고서에 내용이 포함되어 제거했습니다.
+- `reports/source_overlap_venues.csv`: 단일 최종 보고서에 내용이 포함되어 제거했습니다.
+- `AGENT_LOG.md`: 단일 보고서 통합 및 정리 기준을 기록했습니다.
+
+### 구현한 기능
+- `api_source_coverage_report.xlsx`에는 다음 시트를 포함했습니다.
+- `Summary`: 전체 source coverage 핵심 숫자와 해석 기준.
+- `Papers_Source_Groups`: deduped paper 기준 OpenAlex only / Crossref only / both.
+- `Venues_Source_Groups`: venue/source-title 기준 OpenAlex only / Crossref only / both.
+- `OpenAlexOnly_NoCrossref`: OpenAlex-only 중 Crossref journal match가 없는 93개 venue.
+- `CrossrefOnly_NoOpenAlex`: Crossref-only 중 OpenAlex source match가 없는 202개 venue.
+- `All_OpenAlex_Check`: OpenAlex-only 428개 venue의 Crossref lookup 전체 결과.
+- `All_Crossref_Check`: Crossref-only 427개 venue의 OpenAlex lookup 전체 결과.
+
+### 설계 결정
+- 사용자가 “only one file”을 원했기 때문에, 사람이 볼 최종 보고서는 `api_source_coverage_report.xlsx` 하나로 통합했습니다.
+- 원본 CSV/MD 감사 파일은 Git history에 남아 있으므로 현재 작업 폴더에서는 제거했습니다.
+- 단일 Excel 안에 상세 원본 수준의 행을 포함해, 별도 CSV 없이도 검토 가능하게 했습니다.
+
+### 남은 작업
+- `reports/openalex_only_venues_crossref_check.xlsx`는 현재 Excel에서 열려 있어서 Windows가 삭제를 막고 있습니다. 사용자가 해당 Excel 창을 닫으면 이 파일과 `reports/~$openalex_only_venues_crossref_check.xlsx` 잠금 파일을 삭제해 완전히 한 파일만 남길 수 있습니다.
+
+### 주의사항
+- OpenAI API는 사용하지 않았습니다.
+- 열려 있는 Excel 프로세스를 강제로 종료하지 않았습니다.
