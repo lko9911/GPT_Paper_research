@@ -4659,3 +4659,34 @@
 ### 주의사항
 - OpenAI API는 사용하지 않았습니다.
 - 새 API 호출 없이 기존 Excel 파일의 시트명과 설명만 수정했습니다.
+
+## 2026-06-17 12:14
+### 변경 요약
+- Crossref-only venue에 대해 OpenAlex source lookup을 수행하여, 반대 방향의 coverage sanity check 보고서를 생성했습니다.
+- OpenAlex-only/no-Crossref-match 보고서와 동일한 논리로 `Crossref-only venues with no OpenAlex source match`를 분리했습니다.
+
+### 수정/생성한 파일
+- `reports/crossref_only_venues_openalex_check.csv`: Crossref-only 427개 venue 전체에 대한 OpenAlex source lookup 상세 결과를 저장했습니다.
+- `reports/crossref_only_venues_openalex_check.md`: 조회 결과 요약과 no-match/possible-match 목록을 Markdown으로 기록했습니다.
+- `reports/crossref_only_venues_no_openalex_source_match.xlsx`: OpenAlex source match가 없는 202개 Crossref-only venue 전용 Excel 보고서를 생성했습니다.
+- `AGENT_LOG.md`: 이번 OpenAlex source lookup 및 보고서 생성 작업을 기록했습니다.
+
+### 구현한 기능
+- Crossref-only venue 427개를 OpenAlex `/sources` 검색 API로 확인했습니다.
+- 결과를 `exact_openalex_source_match`, `possible_openalex_source_match`, `no_openalex_source_match`, `lookup_error`로 분류했습니다.
+- 최종 결과는 exact match 218개, possible match 7개, no match 202개, lookup error 0개입니다.
+- Excel 파일에는 `Summary`, `No_OpenAlex_Source_Match`, `All_No_Match_Compact` 시트를 넣었고, compact 시트도 전체 202개 no-match venue를 표시합니다.
+
+### 설계 결정
+- `Crossref-only`는 현재 프로젝트의 collected dataset에서 Crossref로만 관측되었다는 의미이며, OpenAlex lookup은 venue/source-title 단위의 sanity check로 제한했습니다.
+- paper-level DOI coverage를 증명하는 작업이 아니므로 Summary와 Markdown에 해당 해석을 명시했습니다.
+- OpenAlex lookup에는 API key를 사용하지 않았고, `mailto`와 User-Agent를 포함해 polite pool 방식으로 조회했습니다.
+
+### 남은 작업
+- Crossref-only no-match 202개 venue 중 실제 제조 분야에서 유지할 가치가 있는 book/proceedings/source와 제거할 source를 수동 정책으로 나눌 수 있습니다.
+- Crossref-only 운영으로 전환할 경우, 이 목록을 OpenAlex 누락 위험 분석의 근거로 사용할 수 있습니다.
+
+### 주의사항
+- OpenAI API는 사용하지 않았습니다.
+- PDF, 출판사 초록 원문, API key, secret, token은 저장하거나 표시하지 않았습니다.
+- `reports/_crossref_only_openalex_lookup_cache.json`은 중간 조회 재시작용 캐시라 커밋하지 않습니다.
