@@ -34,6 +34,40 @@
 
 ### 주의사항
 - OpenAI API는 사용하지 않았습니다.
+
+## 2026-06-17 14:08
+### 변경 요약
+- `Enrich OpenAlex metadata` GitHub Actions 실패 원인을 분석하고, OpenAlex 개별 DOI lookup 실패가 workflow 전체 실패로 이어지지 않도록 수정했습니다.
+- GitHub Actions의 Node.js 20 deprecation 경고를 줄이기 위해 Node 24 opt-in 환경변수를 추가했습니다.
+- 로컬에서 추가 batch enrichment를 실행해 현재 85개 curated paper에 author/venue metadata가 들어간 상태를 만들었습니다.
+
+### 수정/생성한 파일
+- `.github/workflows/enrich-openalex-metadata.yml`: `FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true`를 추가하고, OpenAlex rate limit 완화를 위해 `API_SLEEP_SECONDS=0.75`, `OPENALEX_RETRIES=6`으로 조정했습니다.
+- `scripts/enrich_openalex_metadata.py`: DOI별 OpenAlex lookup 예외를 개별적으로 잡아 로그를 남기고 계속 진행하도록 수정했습니다.
+- `data/papers.json`: 로컬 enrichment batch 결과로 85개 논문에 `author_details`/`journal_quality`가 있고, 46개 논문에 `corresponding_authors`가 채워졌습니다.
+- `AGENT_LOG.md`: 실패 원인 분석과 수정 내용을 기록했습니다.
+
+### 구현한 기능
+- 특정 DOI에서 OpenAlex가 429/5xx/네트워크 오류를 반환해도 전체 workflow가 exit code 1로 실패하지 않고 해당 DOI만 skip합니다.
+- workflow가 Node 24 JavaScript actions runtime을 사용하도록 명시했습니다.
+- OpenAlex 요청 간격과 retry 횟수를 늘려 대량 enrichment 실행 안정성을 높였습니다.
+
+### 설계 결정
+- Corresponding author 보강은 best-effort metadata enrichment이므로, 일부 DOI 실패 때문에 전체 작업이 멈추는 것보다 skip 후 계속 진행하는 편이 안전하다고 판단했습니다.
+- Node 20 메시지는 실패 원인이 아니라 warning이지만, 사용자 혼란을 줄이기 위해 workflow에서 Node 24 opt-in을 명시했습니다.
+
+### 검증 결과
+- `python -m py_compile scripts/enrich_openalex_metadata.py scripts/fetch_openalex.py scripts/update_papers.py` 통과.
+- 로컬 `OPENALEX_ENRICH_MAX=80` batch가 성공적으로 완료되었습니다.
+- 현재 `data/papers.json` 기준: 전체 1357편, author detail 85편, corresponding author 46편, journal quality 85편.
+
+### 남은 작업
+- GitHub Actions에서 `Enrich OpenAlex metadata`를 다시 실행하면 남은 논문도 계속 보강됩니다.
+- 완전 보강에는 시간이 걸릴 수 있으므로, 필요하면 `max_records=200`처럼 나누어 실행할 수 있습니다.
+
+### 주의사항
+- OpenAI API는 사용하지 않았습니다.
+- publisher page crawling, PDF download/storage, raw abstract display는 수행하지 않았습니다.
 - 출판사 웹사이트 크롤링, PDF 저장, raw abstract 표시는 수행하지 않았습니다.
 
 ## 2026-06-17 00:30

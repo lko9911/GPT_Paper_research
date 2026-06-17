@@ -34,6 +34,7 @@ def main() -> None:
     for path in DEFAULT_PATHS:
         records = _load_json(path, [])
         changed = 0
+        failed = 0
         for record in records:
             if max_records and checked_total >= max_records:
                 break
@@ -44,7 +45,12 @@ def main() -> None:
                 continue
             checked_total += 1
             print(f"OpenAlex metadata enrichment: {doi}")
-            enriched = fetch_openalex_by_doi(doi)
+            try:
+                enriched = fetch_openalex_by_doi(doi)
+            except Exception as exc:
+                failed += 1
+                print(f"OpenAlex metadata enrichment failed for {doi}: {exc}")
+                continue
             if not enriched:
                 continue
             changed += _merge_enrichment(record, enriched)
@@ -55,6 +61,8 @@ def main() -> None:
             print(f"Wrote {path.relative_to(ROOT)} with {changed} enriched records.")
         else:
             print(f"No enrichment changes in {path.relative_to(ROOT)}.")
+        if failed:
+            print(f"Skipped {failed} records in {path.relative_to(ROOT)} after OpenAlex lookup failures.")
         changed_total += changed
 
     print(f"OpenAlex metadata enrichment complete. Checked {checked_total}; changed {changed_total}.")
