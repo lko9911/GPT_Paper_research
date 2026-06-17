@@ -1211,23 +1211,33 @@ function renderCorrespondingAuthors(paper) {
     .filter(Boolean);
   if (!names.length) return "";
   const suffix = authors.length > 3 ? ` +${authors.length - 3}` : "";
-  return `<p class="author-highlight"><span>Corresponding</span> ${escapeHtml(names.join(", "))}${escapeHtml(suffix)}</p>`;
+  return `<p class="author-line is-corresponding"><span>Corresponding author:</span> ${escapeHtml(names.join(", "))}${escapeHtml(suffix)}</p>`;
 }
 
 function renderAuthorDetails(paper) {
   const details = Array.isArray(paper.author_details) ? paper.author_details : [];
-  if (!details.length) return "";
-  const chips = details.slice(0, 6).map((author) => {
+  const fallbackAuthors = Array.isArray(paper.authors) ? paper.authors : [];
+  if (!details.length && !fallbackAuthors.length) return "";
+  const visibleDetails = details.length
+    ? details.slice(0, 8).map((author) => ({
+        name: author.name || "",
+        tooltip: [author.name, author.position, primaryInstitution(author)].filter(Boolean).join(" · "),
+        marker: author.is_corresponding ? " *" : "",
+      }))
+    : fallbackAuthors.slice(0, 8).map((name) => ({
+        name,
+        tooltip: name,
+        marker: "",
+      }));
+  const chips = visibleDetails.map((author) => {
     const name = author.name || "";
     if (!name) return "";
-    const institution = primaryInstitution(author);
-    const tooltip = [name, author.position, institution].filter(Boolean).join(" · ");
-    const marker = author.is_corresponding ? " *" : "";
-    return `<span class="author-chip" title="${escapeAttribute(tooltip)}">${escapeHtml(name)}${escapeHtml(marker)}</span>`;
+    return `<span class="author-chip" title="${escapeAttribute(author.tooltip)}">${escapeHtml(name)}${escapeHtml(author.marker)}</span>`;
   }).join("");
   if (!chips) return "";
-  const remaining = details.length > 6 ? `<span class="author-chip muted">+${details.length - 6}</span>` : "";
-  return `<div class="author-detail-line" aria-label="Author details">${chips}${remaining}</div>`;
+  const total = details.length || fallbackAuthors.length;
+  const remaining = total > 8 ? `<span class="author-chip muted">+${total - 8}</span>` : "";
+  return `<div class="author-line author-detail-line" aria-label="Author details"><span>Authors:</span><div>${chips}${remaining}</div></div>`;
 }
 
 function primaryInstitution(author) {
