@@ -1,5 +1,32 @@
 # AGENT_LOG
 
+## 2026-06-18 14:45
+
+### Change Summary
+- Changed AML recommendation cards to use the same visual/card structure as the main paper cards.
+
+### Edited Files
+- `assets/app.js`: reworked `renderAmlRecommendationCard()` to use the same card topline, title, author chips, summary, relevance note, tag line, links, copy citation button, and policy footer pattern as `renderPaperRow()`.
+- `assets/style.css`: removed AML-specific publication badge and route styling so AML cards inherit the normal paper-card design.
+- `index.html`: bumped asset cache versions to `20260618-aml-card`.
+- `AGENT_LOG.md`: recorded this UI alignment.
+
+### Implemented Features
+- AML recommendation cards now visually match regular paper cards.
+- AML cards now include `Open Paper`, `DOI`, and `Copy Cite` actions.
+- AML score remains visible as a normal relevance-style badge.
+
+### Design Decisions
+- Kept only the content-specific labels (`Possible`, `Watch`, `AML xx/100`) while reusing the main paper-card design system.
+- Removed the special AML route text block and moved route/update information into the same `policy-mini` area used by regular cards.
+
+### Remaining Work
+- Verify the deployed GitHub Pages UI after cache refresh.
+
+### Notes / Cautions
+- OpenAI API was not used.
+- `node --check` is still unavailable locally because `node` is not in PATH.
+
 ## 2026-06-18 14:31
 
 ### Change Summary

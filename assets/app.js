@@ -667,6 +667,7 @@ function renderAmlRecommendations() {
   els.amlSection.hidden = false;
   els.amlCount.textContent = `${visible.length.toLocaleString("en-US")} recommendations`;
   els.amlList.innerHTML = visible.map(renderAmlRecommendationCard).join("");
+  attachAmlCitationHandlers(visible);
 }
 
 function amlEmptyMessage(message = "No public AML recommendation file is available yet. Run the manual AML Recommendation workflow to publish related papers here.") {
@@ -685,31 +686,67 @@ function amlVisibleRecommendations() {
 
 function renderAmlRecommendationCard(item) {
   const doiUrl = item.url || (item.doi ? `https://doi.org/${item.doi}` : "");
+  const publicationLabel = [item.journal || "Venue unknown", item.year].filter(Boolean).join(" ");
+  const score = Math.round(Number(item.aml_score || 0) * 100);
   const topics = (item.matched_topics || [])
-    .slice(0, 4)
-    .map((topic) => `<span class="badge tag">${escapeHtml(topic)}</span>`)
+    .slice(0, 3)
+    .map((topic) => badge(displayLabel(topic), "tag"))
     .join("");
   const routes = (item.discovery_routes || []).slice(0, 3).map((route) => String(route).replace(/_/g, " ")).join(", ");
   const seed = (item.related_seed_papers || [])[0];
   const seedText = seed && seed.title ? `Closest seed: ${seed.title}` : "";
-  const authors = Array.isArray(item.authors) ? formatAuthors(item.authors) : "";
+  const authorDetailsHtml = renderAuthorDetails({
+    authors: Array.isArray(item.authors) ? item.authors : [],
+    author_details: Array.isArray(item.author_details) ? item.author_details : [],
+  });
   return `<article class="paper-card aml-card">
     <div class="card-content">
       <div class="card-topline">
-        <span class="publication-badge">${escapeHtml(item.recommendation_level || "Recommended")} - AML ${escapeHtml(String(Math.round(Number(item.aml_score || 0) * 100)))}</span>
-        <span class="summary-provider-badge is-openai">Embedding-based</span>
+        <span class="publication-badge">${escapeHtml(publicationLabel)}</span>
+        <span class="summary-provider-badge is-openai">${escapeHtml(item.recommendation_level || "Recommended")}</span>
+        <span class="relevance-badge">AML ${escapeHtml(String(score))}/100</span>
       </div>
-      <h3 class="paper-title">${escapeHtml(item.title || "Untitled")}</h3>
-      <p class="paper-meta">${escapeHtml([authors, item.journal, item.year].filter(Boolean).join(" - "))}</p>
+      <h4 class="paper-title">${escapeHtml(item.title || "Untitled")}</h4>
+      ${authorDetailsHtml}
       <p class="summary">${escapeHtml(item.why_recommended || "Recommended by the AML profile scoring pipeline.")}</p>
       ${seedText ? `<p class="relevance-note">${escapeHtml(seedText)}</p>` : ""}
       <div class="tag-line">${topics}</div>
-      ${routes ? `<p class="aml-route">Routes: ${escapeHtml(routes)}</p>` : ""}
       <div class="card-links">
         ${doiUrl ? `<a class="link-pill primary" href="${escapeAttribute(doiUrl)}" target="_blank" rel="noopener noreferrer">Open Paper</a>` : ""}
+        ${doiUrl ? `<a class="link-pill subtle" href="${escapeAttribute(doiUrl)}" target="_blank" rel="noopener noreferrer">DOI</a>` : ""}
+        <button class="link-pill subtle" type="button" data-aml-citation="${escapeAttribute(item.doi || item.title || "")}">${escapeHtml(t("copyCitation"))}</button>
       </div>
+      <p class="policy-mini">AML recommendation - ${escapeHtml(routes ? `routes: ${routes}` : "manual recommendation output")} - updated ${escapeHtml(formatAmlUpdatedAt(item.updated_at))}</p>
     </div>
   </article>`;
+}
+
+function attachAmlCitationHandlers(items) {
+  const citationMap = new Map(items.map((item) => [String(item.doi || item.title || ""), buildAmlCitation(item)]));
+  els.amlList.querySelectorAll("[data-aml-citation]").forEach((button) => {
+    button.addEventListener("click", async (event) => {
+      const key = event.currentTarget.dataset.amlCitation || "";
+      await navigator.clipboard.writeText(citationMap.get(key) || "");
+      event.currentTarget.textContent = t("copiedCitation");
+      window.setTimeout(() => {
+        event.currentTarget.textContent = t("copyCitation");
+      }, 1400);
+    });
+  });
+}
+
+function buildAmlCitation(item) {
+  if (item.citation) return item.citation;
+  const authors = Array.isArray(item.authors) ? item.authors.join(", ") : "";
+  const year = item.year ? `(${item.year})` : "";
+  const venue = item.journal ? ` ${item.journal}.` : "";
+  const doi = item.doi ? ` https://doi.org/${item.doi}` : "";
+  return `${authors} ${year}. ${item.title || "Untitled"}.${venue}${doi}`.replace(/\s+/g, " ").trim();
+}
+
+function formatAmlUpdatedAt(value) {
+  const formatted = formatRunTime(value);
+  return formatted ? `${formatted.date} ${formatted.time} KST` : "-";
 }
 
 function clearVenueQuickFilters() {
