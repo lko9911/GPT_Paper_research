@@ -12751,6 +12751,24 @@
     "openalex_work_id": "https://openalex.org/W7134971555",
     "id": "10.1201/9781003504825-10"
   },
+  "10.4018/979-8-3373-7785-8.ch008": {
+    "author_details": [],
+    "corresponding_authors": [],
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "ai_summary_en": "1. Topic - Digital Twin-Enabled Smart Manufacturing for Surface Mount Technology in Autonomous Vehicle Electronics Manufacturing is a 2026 paper from Digital Twin Approaches in Autonomous Vehicles about Digital Twins, Manufacturing automation, and Process optimization.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Digital Twins, Manufacturing automation, and Process optimization.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Digital Twins, Manufacturing automation, and Process optimization; current relevance score is 7/10.",
+    "relevance_note_en": "Relevant to the tracker through Digital Twins, Manufacturing automation, and Process optimization; score: 7/10.",
+    "id": "10.4018/979-8-3373-7785-8.ch008"
+  },
   "10.2139/ssrn.6140865": {
     "ai_summary_en": "1. Topic - This paper addresses the pilot-scale manufacturing of generic BCS Class II drug products using digital twin-enabled multi-objective optimization.\n2. Problem - It aims to solve the challenges related to ensuring process robustness and economic feasibility in manufacturing.\n3. Method - The approach involves modeling and optimizing the manufacturing process using digital twin technology.\n4. Key Result - An optimized solution was derived that enhances process robustness and improves cost efficiency.\n5. Takeaway - The paper highlights the potential of digital twin technology to enhance efficiency and economic viability in pharmaceutical manufacturing.",
     "author_details": [
@@ -32464,148 +32482,5 @@
       "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
     },
     "id": "10.1007/s44372-026-00696-9"
-  },
-  "10.1038/s41598-026-56030-6": {
-    "ai_summary_en": "1. Topic - This paper presents a machine learning framework for the structural and predictive analysis of intelligent data networks.\n2. Problem - It aims to address the limitations of existing analytical methodologies that treat structural analysis and prediction as separate challenges.\n3. Method - The framework, named NETSTRUCTPRED, is designed for analyzing heterogeneous temporal data networks.\n4. Key Result - It achieves state-of-the-art performance in both structural and predictive tasks across various real-world datasets.\n5. Takeaway - The integration of structural and predictive analytics is shown to be fundamentally synergistic, enhancing insights and forecasts.",
-    "author_details": [
-      {
-        "name": "Sanjay Agal",
-        "openalex_author_id": "https://openalex.org/A5014805149",
-        "orcid": "https://orcid.org/0000-0003-0352-0418",
-        "position": "first",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "Parul University",
-            "ror": null,
-            "country_code": "IN",
-            "type": null
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Artificial Intelligence and Data Science, Faculty of Engineering and Technology, Parul University, Vadodara, Gujarat, India. sanjayagal@yahoo.com"
-        ]
-      },
-      {
-        "name": "Arpit Shah",
-        "openalex_author_id": "https://openalex.org/A5033227006",
-        "orcid": "https://orcid.org/0009-0002-2208-1238",
-        "position": "middle",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Parul University",
-            "ror": null,
-            "country_code": "IN",
-            "type": null
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Artificial Intelligence and Data Science, Faculty of Engineering and Technology, Parul University, Vadodara, Gujarat, India"
-        ]
-      },
-      {
-        "name": "Nikunj Bhavsar",
-        "openalex_author_id": "https://openalex.org/A5088250543",
-        "orcid": null,
-        "position": "middle",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Parul University",
-            "ror": null,
-            "country_code": "IN",
-            "type": null
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Artificial Intelligence and Data Science, Faculty of Engineering and Technology, Parul University, Vadodara, Gujarat, India"
-        ]
-      },
-      {
-        "name": "Nirav Pareshkumar Mehta",
-        "openalex_author_id": "https://openalex.org/A5119377133",
-        "orcid": null,
-        "position": "middle",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Parul University",
-            "ror": "https://ror.org/024v3fg07",
-            "country_code": "IN",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Computer Science and Engineering, Parul Institute of Technology, Parul University, Vadodara, India"
-        ]
-      },
-      {
-        "name": "Shiv Shakti Shrivastava",
-        "openalex_author_id": "https://openalex.org/A5066539977",
-        "orcid": null,
-        "position": "last",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Parul University",
-            "ror": "https://ror.org/024v3fg07",
-            "country_code": "IN",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Computer Science and Engineering, Parul Institute of Technology, Parul University, Vadodara, India"
-        ]
-      }
-    ],
-    "corresponding_authors": [
-      {
-        "name": "Sanjay Agal",
-        "openalex_author_id": "https://openalex.org/A5014805149",
-        "orcid": "https://orcid.org/0000-0003-0352-0418",
-        "position": "first",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "Parul University",
-            "ror": null,
-            "country_code": "IN",
-            "type": null
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Artificial Intelligence and Data Science, Faculty of Engineering and Technology, Parul University, Vadodara, Gujarat, India. sanjayagal@yahoo.com"
-        ]
-      }
-    ],
-    "openalex_work_id": "https://openalex.org/W7164389054",
-    "openalex_source_id": "https://openalex.org/S196734849",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S196734849",
-      "issn_l": "2045-2322",
-      "issn": [
-        "2045-2322"
-      ],
-      "type": "journal",
-      "host_organization_name": "Nature Portfolio",
-      "works_count": null,
-      "cited_by_count": null,
-      "two_year_mean_citedness": null,
-      "h_index": null,
-      "i10_index": null,
-      "is_oa": true,
-      "is_in_doaj": true
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "id": "10.1038/s41598-026-56030-6"
   }
 }

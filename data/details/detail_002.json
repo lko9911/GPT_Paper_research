@@ -1,4 +1,71 @@
 {
+  "10.48550/arxiv.2601.13457": {
+    "ai_summary_en": "1. Topic - This paper introduces a unified multiscale 3D printer that combines single-photon tomographic volumetric additive manufacturing and two-photon polymerization.\n2. Problem - The study aims to address the trade-off between resolution and printing speed in additive manufacturing.\n3. Method - It employs a hybrid approach that integrates the strengths of both printing mechanisms for high-resolution and rapid 3D fabrication.\n4. Key Result - The experimental findings demonstrate that the dual-mode strategy can rapidly produce millimeter-scale 3D structures with sub-micrometer details.\n5. Takeaway - The core message of this paper is that it offers a novel approach for effective 3D structure fabrication across various applications.",
+    "author_details": [
+      {
+        "name": "Buse Unlu",
+        "openalex_author_id": "https://openalex.org/A5123503832",
+        "orcid": null,
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Felix Wechsler",
+        "openalex_author_id": "https://openalex.org/A5034120184",
+        "orcid": "https://orcid.org/0000-0001-8763-2948",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Ye Pu",
+        "openalex_author_id": "https://openalex.org/A5123469093",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Moser, Christophe",
+        "openalex_author_id": null,
+        "orcid": null,
+        "position": "last",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "openalex_work_id": "https://openalex.org/W7125233061",
+    "openalex_source_id": "https://openalex.org/S4306400194",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4306400194",
+      "issn_l": null,
+      "issn": [],
+      "type": "repository",
+      "host_organization_name": "Cornell University",
+      "works_count": null,
+      "cited_by_count": null,
+      "two_year_mean_citedness": null,
+      "h_index": null,
+      "i10_index": null,
+      "is_oa": true,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Repository / preprint source",
+      "basis": "metadata_source_type",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "id": "10.48550/arxiv.2601.13457"
+  },
   "10.1007/s10845-025-02578-5": {
     "ai_summary_en": "1. Topic - This paper addresses a framework for planning and executing robotic assembly with deformable objects.\n2. Problem - It aims to resolve the limitations of existing automation frameworks that do not adequately support the complexities of assembling deformable objects.\n3. Method - The proposed framework consists of three modules—data extraction, process planning, and execution—interacting with a centralized database based on the Rαβγ ontology.\n4. Key Result - The framework demonstrated a high reuse rate of assembly operations in three case studies involving deformable objects.\n5. Takeaway - Ultimately, this research presents an efficient and optimized automation approach for robotic assembly of deformable objects.",
     "author_details": [
@@ -34963,111 +35030,5 @@
       "is_in_doaj": false
     },
     "id": "10.1016/b978-0-443-33395-8.00011-2"
-  },
-  "10.1201/9781003343868-4": {
-    "ai_summary_en": "1. Topic - This paper discusses additive manufacturing technologies for metals and alloys.\n2. Problem - It aims to address various factors affecting the quality, functionality, and properties in metal additive manufacturing processes.\n3. Method - It analyzes several additive manufacturing techniques, including Powder Bed Fusion (PBF) and Directed Energy Deposition (DED).\n4. Key Result - It highlights the impact of processing parameters and material types on the quality of the final product.\n5. Takeaway - While metal additive manufacturing offers advantages for complex structures and multi-material designs, there are still challenges that need to be addressed.",
-    "author_details": [
-      {
-        "name": "Amit Bandyopadhyay",
-        "openalex_author_id": "https://openalex.org/A5000075961",
-        "orcid": "https://orcid.org/0000-0003-0992-5387",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Mohammad J. Mirzaali",
-        "openalex_author_id": "https://openalex.org/A5046772634",
-        "orcid": "https://orcid.org/0000-0002-5349-6922",
-        "position": "middle",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "F.S.L. Bobbert",
-        "openalex_author_id": "https://openalex.org/A5056058180",
-        "orcid": "https://orcid.org/0000-0002-4809-5614",
-        "position": "middle",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Yageng Li",
-        "openalex_author_id": "https://openalex.org/A5036731928",
-        "orcid": "https://orcid.org/0000-0002-0544-7253",
-        "position": "middle",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Amir A. Zadpoor",
-        "openalex_author_id": "https://openalex.org/A5085851098",
-        "orcid": "https://orcid.org/0000-0003-3234-2112",
-        "position": "middle",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Vamsi Krishna Balla",
-        "openalex_author_id": "https://openalex.org/A5022493675",
-        "orcid": "https://orcid.org/0000-0003-2796-7302",
-        "position": "middle",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Kellen D. Traxel",
-        "openalex_author_id": "https://openalex.org/A5035558736",
-        "orcid": "https://orcid.org/0000-0001-7453-5751",
-        "position": "middle",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Susmita Bose",
-        "openalex_author_id": "https://openalex.org/A5025156200",
-        "orcid": "https://orcid.org/0000-0001-8601-016X",
-        "position": "last",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "openalex_work_id": "https://openalex.org/W4410010132",
-    "openalex_source_id": "https://openalex.org/S2764842179",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S2764842179",
-      "issn_l": "2214-7810",
-      "issn": [
-        "2214-7810",
-        "2214-8604"
-      ],
-      "type": "journal",
-      "host_organization_name": "Elsevier BV",
-      "works_count": null,
-      "cited_by_count": null,
-      "two_year_mean_citedness": null,
-      "h_index": null,
-      "i10_index": null,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Core manufacturing journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "id": "10.1201/9781003343868-4"
   }
 }

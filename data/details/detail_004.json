@@ -1,4 +1,155 @@
 {
+  "10.3390/act14090432": {
+    "ai_summary_en": "1. Topic - This paper discusses a modular soft gripper designed for automating crop harvesting.\n2. Problem - It aims to address challenges in agriculture related to labor shortages and the need for operations in unstructured environments.\n3. Method - The approach involves a 3D-printed gripper that combines soft pneumatic actuators with embedded force sensors.\n4. Key Result - Successful harvesting of bell peppers was achieved, although cutting limitations were noted with tougher crops.\n5. Takeaway - The findings contribute to the development of multifunctional robotic harvesters adaptable to various fruit types.",
+    "author_details": [
+      {
+        "name": "Eduardo Navas",
+        "openalex_author_id": "https://openalex.org/A5037396569",
+        "orcid": "https://orcid.org/0000-0002-4314-4448",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Centre for Automation and Robotics",
+            "ror": "https://ror.org/02wh02235",
+            "country_code": "ES",
+            "type": "facility"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Centre for Automation and Robotics, UPM-CSIC, Carretera CAMPO-REAL Km 0.2, 28500 Arganda del Rey, Madrid, Spain"
+        ]
+      },
+      {
+        "name": "Kai Blanco",
+        "openalex_author_id": "https://openalex.org/A5093991014",
+        "orcid": "https://orcid.org/0009-0008-0007-3599",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Centre for Automation and Robotics",
+            "ror": "https://ror.org/02wh02235",
+            "country_code": "ES",
+            "type": "facility"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Centre for Automation and Robotics, UPM-CSIC, Carretera CAMPO-REAL Km 0.2, 28500 Arganda del Rey, Madrid, Spain"
+        ]
+      },
+      {
+        "name": "Daniel Rodríguez-Nieto",
+        "openalex_author_id": "https://openalex.org/A5095771273",
+        "orcid": "https://orcid.org/0009-0004-5885-3783",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Centre for Automation and Robotics",
+            "ror": "https://ror.org/02wh02235",
+            "country_code": "ES",
+            "type": "facility"
+          },
+          {
+            "name": "Universidad Politécnica de Madrid",
+            "ror": "https://ror.org/03n6nwv02",
+            "country_code": "ES",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Centre for Automation and Robotics, UPM-CSIC, Carretera CAMPO-REAL Km 0.2, 28500 Arganda del Rey, Madrid, Spain",
+          "Universidad Politécnica de Madrid, Calle de José Gutiérrez Abascal 2, 28006 Madrid, Madrid, Spain",
+          "PhD Program in Automation and Robotics, Universidad Politécnica de Madrid, Calle de José Gutiérrez Abascal 2, 28006 Madrid, Madrid, Spain"
+        ]
+      },
+      {
+        "name": "Roemí Fernández",
+        "openalex_author_id": "https://openalex.org/A5046665645",
+        "orcid": "https://orcid.org/0000-0003-0552-5407",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Centre for Automation and Robotics",
+            "ror": "https://ror.org/02wh02235",
+            "country_code": "ES",
+            "type": "facility"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Centre for Automation and Robotics, UPM-CSIC, Carretera CAMPO-REAL Km 0.2, 28500 Arganda del Rey, Madrid, Spain"
+        ]
+      }
+    ],
+    "corresponding_authors": [
+      {
+        "name": "Eduardo Navas",
+        "openalex_author_id": "https://openalex.org/A5037396569",
+        "orcid": "https://orcid.org/0000-0002-4314-4448",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Centre for Automation and Robotics",
+            "ror": "https://ror.org/02wh02235",
+            "country_code": "ES",
+            "type": "facility"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Centre for Automation and Robotics, UPM-CSIC, Carretera CAMPO-REAL Km 0.2, 28500 Arganda del Rey, Madrid, Spain"
+        ]
+      },
+      {
+        "name": "Roemí Fernández",
+        "openalex_author_id": "https://openalex.org/A5046665645",
+        "orcid": "https://orcid.org/0000-0003-0552-5407",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Centre for Automation and Robotics",
+            "ror": "https://ror.org/02wh02235",
+            "country_code": "ES",
+            "type": "facility"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Centre for Automation and Robotics, UPM-CSIC, Carretera CAMPO-REAL Km 0.2, 28500 Arganda del Rey, Madrid, Spain"
+        ]
+      }
+    ],
+    "openalex_work_id": "https://openalex.org/W4413932296",
+    "openalex_source_id": "https://openalex.org/S2736557103",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S2736557103",
+      "issn_l": "2076-0825",
+      "issn": [
+        "2076-0825"
+      ],
+      "type": "journal",
+      "host_organization_name": "Multidisciplinary Digital Publishing Institute",
+      "works_count": null,
+      "cited_by_count": null,
+      "two_year_mean_citedness": null,
+      "h_index": null,
+      "i10_index": null,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "id": "10.3390/act14090432"
+  },
   "10.48550/arxiv.2502.03914": {
     "ai_summary_en": "1. Topic - This paper discusses a flexible FBG-based contact force sensor for robotic gripping systems.\n2. Problem - It aims to address issues of slippage and excessive force due to the lack of integrated sensors for precise and secure grasping.\n3. Method - The study designs a highly sensitive force sensor with a 3D-printed TPU casing and dual FBG array, validated through various tests.\n4. Key Result - The sensor demonstrated a measurement range of 4.69 N and high sensitivity of approximately 1169.04 pm/N, with a 2.56% error compared to a commercial load cell.\n5. Takeaway - This sensor can enhance situational awareness and operational efficiency across multiple sectors, including manufacturing and healthcare.",
     "author_details": [
@@ -37967,92 +38118,5 @@
       "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
     },
     "id": "10.1002/admt.202400466"
-  },
-  "10.35631/ijirev.619002": {
-    "ai_summary_en": "1. Topic - This paper discusses the impact of Photopolymerization Additive Manufacturing (PAM) on micromold fabrication.\n2. Problem - It aims to address challenges that hinder the widespread adoption of PAM, including material limitations and process optimization.\n3. Method - A systematic review of peer-reviewed literature published between 2022 and 2024 was conducted following the PRISMA methodology.\n4. Key Result - Key barriers identified include limitations in material diversity and challenges in maintaining consistent layer resolution and scalability.\n5. Takeaway - Research into new photopolymer materials and hybrid manufacturing techniques is essential for the industrial adoption of PAM.",
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "author_details": [
-      {
-        "name": "Syah Mohd Amin Omar",
-        "openalex_author_id": null,
-        "orcid": null,
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Universiti Malaysia Perlis",
-            "ror": "https://ror.org/00xmkb790",
-            "country_code": "MY",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Faculty of Mechanical Engineering & Technology, UniCITI Alam Campus, Universiti Malaysia Perlis, Malaysia"
-        ]
-      },
-      {
-        "name": "M. S. Hussin",
-        "openalex_author_id": "https://openalex.org/A5089546390",
-        "orcid": "https://orcid.org/0000-0002-2696-6343",
-        "position": "middle",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Universiti Malaysia Perlis",
-            "ror": "https://ror.org/00xmkb790",
-            "country_code": "MY",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Faculty of Mechanical Engineering & Technology, UniCITI Alam Campus, Universiti Malaysia Perlis, Malaysia"
-        ]
-      },
-      {
-        "name": "Sanusi Hamat",
-        "openalex_author_id": "https://openalex.org/A5089748987",
-        "orcid": "https://orcid.org/0000-0001-6654-2601",
-        "position": "last",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Universiti Malaysia Perlis",
-            "ror": "https://ror.org/00xmkb790",
-            "country_code": "MY",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Faculty of Mechanical Engineering & Technology, UniCITI Alam Campus, Universiti Malaysia Perlis, Malaysia"
-        ]
-      }
-    ],
-    "openalex_work_id": "https://openalex.org/W4406191395",
-    "openalex_source_id": "https://openalex.org/S4210170620",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S4210170620",
-      "issn_l": "2637-0972",
-      "issn": [
-        "2637-0972"
-      ],
-      "type": "journal",
-      "host_organization_name": null,
-      "works_count": null,
-      "cited_by_count": null,
-      "two_year_mean_citedness": null,
-      "h_index": null,
-      "i10_index": null,
-      "is_oa": true,
-      "is_in_doaj": false
-    },
-    "id": "10.35631/ijirev.619002"
   }
 }

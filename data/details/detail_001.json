@@ -1,4 +1,147 @@
 {
+  "10.1038/s41598-026-56030-6": {
+    "ai_summary_en": "1. Topic - This paper presents a machine learning framework for the structural and predictive analysis of intelligent data networks.\n2. Problem - It aims to address the limitations of existing analytical methodologies that treat structural analysis and prediction as separate challenges.\n3. Method - The framework, named NETSTRUCTPRED, is designed for analyzing heterogeneous temporal data networks.\n4. Key Result - It achieves state-of-the-art performance in both structural and predictive tasks across various real-world datasets.\n5. Takeaway - The integration of structural and predictive analytics is shown to be fundamentally synergistic, enhancing insights and forecasts.",
+    "author_details": [
+      {
+        "name": "Sanjay Agal",
+        "openalex_author_id": "https://openalex.org/A5014805149",
+        "orcid": "https://orcid.org/0000-0003-0352-0418",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Parul University",
+            "ror": null,
+            "country_code": "IN",
+            "type": null
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Artificial Intelligence and Data Science, Faculty of Engineering and Technology, Parul University, Vadodara, Gujarat, India. sanjayagal@yahoo.com"
+        ]
+      },
+      {
+        "name": "Arpit Shah",
+        "openalex_author_id": "https://openalex.org/A5033227006",
+        "orcid": "https://orcid.org/0009-0002-2208-1238",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Parul University",
+            "ror": null,
+            "country_code": "IN",
+            "type": null
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Artificial Intelligence and Data Science, Faculty of Engineering and Technology, Parul University, Vadodara, Gujarat, India"
+        ]
+      },
+      {
+        "name": "Nikunj Bhavsar",
+        "openalex_author_id": "https://openalex.org/A5088250543",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Parul University",
+            "ror": null,
+            "country_code": "IN",
+            "type": null
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Artificial Intelligence and Data Science, Faculty of Engineering and Technology, Parul University, Vadodara, Gujarat, India"
+        ]
+      },
+      {
+        "name": "Nirav Pareshkumar Mehta",
+        "openalex_author_id": "https://openalex.org/A5119377133",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Parul University",
+            "ror": "https://ror.org/024v3fg07",
+            "country_code": "IN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Computer Science and Engineering, Parul Institute of Technology, Parul University, Vadodara, India"
+        ]
+      },
+      {
+        "name": "Shiv Shakti Shrivastava",
+        "openalex_author_id": "https://openalex.org/A5066539977",
+        "orcid": null,
+        "position": "last",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Parul University",
+            "ror": "https://ror.org/024v3fg07",
+            "country_code": "IN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Computer Science and Engineering, Parul Institute of Technology, Parul University, Vadodara, India"
+        ]
+      }
+    ],
+    "corresponding_authors": [
+      {
+        "name": "Sanjay Agal",
+        "openalex_author_id": "https://openalex.org/A5014805149",
+        "orcid": "https://orcid.org/0000-0003-0352-0418",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Parul University",
+            "ror": null,
+            "country_code": "IN",
+            "type": null
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Artificial Intelligence and Data Science, Faculty of Engineering and Technology, Parul University, Vadodara, Gujarat, India. sanjayagal@yahoo.com"
+        ]
+      }
+    ],
+    "openalex_work_id": "https://openalex.org/W7164389054",
+    "openalex_source_id": "https://openalex.org/S196734849",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S196734849",
+      "issn_l": "2045-2322",
+      "issn": [
+        "2045-2322"
+      ],
+      "type": "journal",
+      "host_organization_name": "Nature Portfolio",
+      "works_count": null,
+      "cited_by_count": null,
+      "two_year_mean_citedness": null,
+      "h_index": null,
+      "i10_index": null,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "id": "10.1038/s41598-026-56030-6"
+  },
   "10.36922/ijb026140128": {
     "ai_summary_en": "1. Topic - This paper addresses a generalized printing process window for preventing surface overcuring in volumetric additive manufacturing.\n2. Problem - It aims to solve the issue of surface overcuring caused by misalignment of material, process, and hardware parameters.\n3. Method - A generalized theoretical model was developed to predict spatial light-dose distribution within rotating ink and to investigate the effects of key physical parameters.\n4. Key Result - The study demonstrated that surface overcuring can be effectively suppressed by lowering material absorbance, reducing vat diameters, and narrowing projection beams.\n5. Takeaway - This research provides a printing process window that expands the applicability of volumetric additive manufacturing for complex structures.",
     "author_details": [
@@ -34829,72 +34972,5 @@
       "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
     },
     "id": "10.26599/jac.2026.9221313"
-  },
-  "10.48550/arxiv.2601.13457": {
-    "ai_summary_en": "1. Topic - This paper introduces a unified multiscale 3D printer that combines single-photon tomographic volumetric additive manufacturing and two-photon polymerization.\n2. Problem - The study aims to address the trade-off between resolution and printing speed in additive manufacturing.\n3. Method - It employs a hybrid approach that integrates the strengths of both printing mechanisms for high-resolution and rapid 3D fabrication.\n4. Key Result - The experimental findings demonstrate that the dual-mode strategy can rapidly produce millimeter-scale 3D structures with sub-micrometer details.\n5. Takeaway - The core message of this paper is that it offers a novel approach for effective 3D structure fabrication across various applications.",
-    "author_details": [
-      {
-        "name": "Buse Unlu",
-        "openalex_author_id": "https://openalex.org/A5123503832",
-        "orcid": null,
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Felix Wechsler",
-        "openalex_author_id": "https://openalex.org/A5034120184",
-        "orcid": "https://orcid.org/0000-0001-8763-2948",
-        "position": "middle",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Ye Pu",
-        "openalex_author_id": "https://openalex.org/A5123469093",
-        "orcid": null,
-        "position": "middle",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Moser, Christophe",
-        "openalex_author_id": null,
-        "orcid": null,
-        "position": "last",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "openalex_work_id": "https://openalex.org/W7125233061",
-    "openalex_source_id": "https://openalex.org/S4306400194",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S4306400194",
-      "issn_l": null,
-      "issn": [],
-      "type": "repository",
-      "host_organization_name": "Cornell University",
-      "works_count": null,
-      "cited_by_count": null,
-      "two_year_mean_citedness": null,
-      "h_index": null,
-      "i10_index": null,
-      "is_oa": true,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Repository / preprint source",
-      "basis": "metadata_source_type",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "id": "10.48550/arxiv.2601.13457"
   }
 }
