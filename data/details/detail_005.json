@@ -1,4 +1,1625 @@
 {
+  "10.1108/rpj-02-2024-0083": {
+    "ai_summary_en": "1. Topic - This paper focuses on optimizing time in additive manufacturing.\n2. Problem - It aims to solve the challenge of reducing build time in FDM systems while maintaining part strength.\n3. Method - A hybrid technique combining photopolymerization and FDM was developed by modifying a standard FDM machine.\n4. Key Result - The hybrid mechanism achieved time reductions of 34% to 87% for simpler models and 30.6% to 87.8% for complex models, along with increased strength.\n5. Takeaway - The research presents a novel hybrid approach that significantly reduces build time without compromising mechanical properties.",
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "author_details": [
+      {
+        "name": "Harsh Vardhan Singh",
+        "openalex_author_id": "https://openalex.org/A5067832506",
+        "orcid": "https://orcid.org/0000-0003-4842-9300",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Indian Institute of Technology Indore",
+            "ror": "https://ror.org/01hhf7w52",
+            "country_code": "IN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering, Indian Institute of Technology Indore, Indore, India"
+        ]
+      },
+      {
+        "name": "Girish Chandra Verma",
+        "openalex_author_id": "https://openalex.org/A5039693705",
+        "orcid": null,
+        "position": "last",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Indian Institute of Technology Indore",
+            "ror": "https://ror.org/01hhf7w52",
+            "country_code": "IN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering, Indian Institute of Technology Indore, Indore, India"
+        ]
+      }
+    ],
+    "openalex_work_id": "https://openalex.org/W4400055671",
+    "openalex_source_id": "https://openalex.org/S173500210",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S173500210",
+      "issn_l": "1355-2546",
+      "issn": [
+        "1355-2546",
+        "1758-7670"
+      ],
+      "type": "journal",
+      "host_organization_name": "Emerald Publishing Limited",
+      "works_count": null,
+      "cited_by_count": null,
+      "two_year_mean_citedness": null,
+      "h_index": null,
+      "i10_index": null,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "id": "10.1108/rpj-02-2024-0083"
+  },
+  "10.1016/j.addma.2024.104257": {
+    "ai_summary_en": "1. Topic - This paper addresses the optimization of mask images to enhance the accuracy of 3D printing in digital light processing-based vat photopolymerization.\n2. Problem - It aims to resolve limitations related to accuracy issues encountered during the 3D printing process.\n3. Method - The approach involves optimizing mask images to improve printing quality.\n4. Key Result - The study finds that optimized mask images significantly enhance printing accuracy.\n5. Takeaway - The core message of this paper highlights the importance of mask image optimization for improving 3D printing accuracy.",
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "author_details": [
+      {
+        "name": "Yifan Wang",
+        "openalex_author_id": "https://openalex.org/A5102721440",
+        "orcid": "https://orcid.org/0009-0003-0157-1446",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "University of Science and Technology of China",
+            "ror": "https://ror.org/04c4dkn09",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "CAS Key Laboratory of Mechanical Behavior and Design of Materials, Department of Modern Mechanics, University of Science and Technology of China, Hefei, 230026, Anhui, China"
+        ]
+      },
+      {
+        "name": "Yanan Zhang",
+        "openalex_author_id": "https://openalex.org/A5100415519",
+        "orcid": "https://orcid.org/0000-0002-3059-9291",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "University of Science and Technology of China",
+            "ror": "https://ror.org/04c4dkn09",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "CAS Key Laboratory of Mechanical Behavior and Design of Materials, Department of Modern Mechanics, University of Science and Technology of China, Hefei, 230026, Anhui, China"
+        ]
+      },
+      {
+        "name": "Haiyi Liang",
+        "openalex_author_id": "https://openalex.org/A5018438162",
+        "orcid": "https://orcid.org/0000-0001-7458-8036",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Anhui Jianzhu University",
+            "ror": "https://ror.org/0108wjw08",
+            "country_code": "CN",
+            "type": "education"
+          },
+          {
+            "name": "University of Science and Technology of China",
+            "ror": "https://ror.org/04c4dkn09",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "CAS Key Laboratory of Mechanical Behavior and Design of Materials, Department of Modern Mechanics, University of Science and Technology of China, Hefei, 230026, Anhui, China",
+          "IAT-Chungu Joint Laboratory for Additive Manufacturing, Anhui Chungu 3D printing Institute of Intelligent Equipment and Industrial Technology, Wuhu, 241200, Anhui, China",
+          "School of Civil Engineering, Anhui Jianzhu University, Hefei, 230601, Anhui, China"
+        ]
+      },
+      {
+        "name": "Xingyue Sun",
+        "openalex_author_id": "https://openalex.org/A5056893474",
+        "orcid": "https://orcid.org/0000-0002-1881-2985",
+        "position": "last",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "University of Science and Technology of China",
+            "ror": "https://ror.org/04c4dkn09",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "CAS Key Laboratory of Mechanical Behavior and Design of Materials, Department of Modern Mechanics, University of Science and Technology of China, Hefei, 230026, Anhui, China"
+        ]
+      }
+    ],
+    "corresponding_authors": [
+      {
+        "name": "Haiyi Liang",
+        "openalex_author_id": "https://openalex.org/A5018438162",
+        "orcid": "https://orcid.org/0000-0001-7458-8036",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Anhui Jianzhu University",
+            "ror": "https://ror.org/0108wjw08",
+            "country_code": "CN",
+            "type": "education"
+          },
+          {
+            "name": "University of Science and Technology of China",
+            "ror": "https://ror.org/04c4dkn09",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "CAS Key Laboratory of Mechanical Behavior and Design of Materials, Department of Modern Mechanics, University of Science and Technology of China, Hefei, 230026, Anhui, China",
+          "IAT-Chungu Joint Laboratory for Additive Manufacturing, Anhui Chungu 3D printing Institute of Intelligent Equipment and Industrial Technology, Wuhu, 241200, Anhui, China",
+          "School of Civil Engineering, Anhui Jianzhu University, Hefei, 230601, Anhui, China"
+        ]
+      }
+    ],
+    "openalex_work_id": "https://openalex.org/W4399721582",
+    "openalex_source_id": "https://openalex.org/S2764842179",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S2764842179",
+      "issn_l": "2214-7810",
+      "issn": [
+        "2214-7810",
+        "2214-8604"
+      ],
+      "type": "journal",
+      "host_organization_name": "Elsevier BV",
+      "works_count": null,
+      "cited_by_count": null,
+      "two_year_mean_citedness": null,
+      "h_index": null,
+      "i10_index": null,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "id": "10.1016/j.addma.2024.104257"
+  },
+  "10.1089/3dp.2022.0235": {
+    "ai_summary_en": "1. Topic - This paper focuses on optimizing high internal phase emulsion (HIPE)-based resins.\n2. Problem - It addresses the limitation of using HIPE resins in commercial vat photopolymerization additive manufacturing.\n3. Method - The study utilized a surfactant-stabilized water-in-oil emulsion and incorporated both hydrophobic and hydrophilic light absorbers.\n4. Key Result - The combination of beta-carotene and tartrazine yielded the best printing resolution, with stable emulsions producing porous structures.\n5. Takeaway - The formulation of HIPE-based resins allows for the fabrication of complex structures, enabling a wide range of applications.",
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "author_details": [
+      {
+        "name": "Nihan Sengokmen-Ozsoz",
+        "openalex_author_id": "https://openalex.org/A5038702745",
+        "orcid": "https://orcid.org/0000-0002-2000-7408",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "University of Sheffield",
+            "ror": "https://ror.org/05krs5044",
+            "country_code": "GB",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Materials Science and Engineering, Kroto Research Institute, The University of Sheffield, Sheffield, United Kingdom"
+        ]
+      },
+      {
+        "name": "Samand Pashneh‐Tala",
+        "openalex_author_id": "https://openalex.org/A5055335645",
+        "orcid": "https://orcid.org/0000-0003-2109-5494",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "University of Sheffield",
+            "ror": "https://ror.org/05krs5044",
+            "country_code": "GB",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Materials Science and Engineering, Kroto Research Institute, The University of Sheffield, Sheffield, United Kingdom"
+        ]
+      },
+      {
+        "name": "Frederik Claeyssens",
+        "openalex_author_id": "https://openalex.org/A5087716394",
+        "orcid": "https://orcid.org/0000-0002-1030-939X",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Sheffield",
+            "ror": "https://ror.org/05krs5044",
+            "country_code": "GB",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Materials Science and Engineering, Kroto Research Institute, The University of Sheffield, Sheffield, United Kingdom"
+        ]
+      }
+    ],
+    "corresponding_authors": [
+      {
+        "name": "Frederik Claeyssens",
+        "openalex_author_id": "https://openalex.org/A5087716394",
+        "orcid": "https://orcid.org/0000-0002-1030-939X",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Sheffield",
+            "ror": "https://ror.org/05krs5044",
+            "country_code": "GB",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Materials Science and Engineering, Kroto Research Institute, The University of Sheffield, Sheffield, United Kingdom"
+        ]
+      }
+    ],
+    "openalex_work_id": "https://openalex.org/W4319072244",
+    "openalex_source_id": "https://openalex.org/S4210174904",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210174904",
+      "issn_l": "2329-7662",
+      "issn": [
+        "2329-7662",
+        "2329-7670"
+      ],
+      "type": "journal",
+      "host_organization_name": "Mary Ann Liebert, Inc.",
+      "works_count": null,
+      "cited_by_count": null,
+      "two_year_mean_citedness": null,
+      "h_index": null,
+      "i10_index": null,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "id": "10.1089/3dp.2022.0235"
+  },
+  "10.1038/s41467-024-46929-x": {
+    "ai_summary_en": "1. Topic - This paper discusses three-dimensional printed fused silica glass with sub-micron features.\n2. Problem - It aims to address the challenges in fabricating glass structures with centimeter dimensions and sub-micron features.\n3. Method - The study employs engineered materials and one-photon micro-stereolithography (OμSL)-based 3D printing techniques.\n4. Key Result - The final material is confirmed to be stoichiometrically pure silica with high quality and excellent optical properties.\n5. Takeaway - This research showcases the potential to produce fused silica glass components with various 3D geometries.",
+    "author_details": [
+      {
+        "name": "Ziyong Li",
+        "openalex_author_id": "https://openalex.org/A5083003621",
+        "orcid": "https://orcid.org/0009-0001-3181-5136",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "City University of Hong Kong",
+            "ror": "https://ror.org/03q8dnn23",
+            "country_code": "HK",
+            "type": "education"
+          },
+          {
+            "name": "City University of Hong Kong, Shenzhen Research Institute",
+            "ror": "https://ror.org/00xc0ma20",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering, City University of Hong Kong, Kowloon, Hong Kong, SAR, China",
+          "Nano-Manufacturing Laboratory (NML), Shenzhen Research Institute of City University of Hong Kong, Shenzhen, 518057, China"
+        ]
+      },
+      {
+        "name": "Yanwen Jia",
+        "openalex_author_id": "https://openalex.org/A5040897542",
+        "orcid": "https://orcid.org/0000-0003-2163-4259",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "City University of Hong Kong",
+            "ror": "https://ror.org/03q8dnn23",
+            "country_code": "HK",
+            "type": "education"
+          },
+          {
+            "name": "Southern University of Science and Technology",
+            "ror": "https://ror.org/049tv2d57",
+            "country_code": "CN",
+            "type": "education"
+          },
+          {
+            "name": "City University of Hong Kong, Shenzhen Research Institute",
+            "ror": "https://ror.org/00xc0ma20",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Chemistry, Southern University of Science and Technology, Shenzhen, 518055, China",
+          "Department of Mechanical Engineering, City University of Hong Kong, Kowloon, Hong Kong, SAR, China",
+          "Nano-Manufacturing Laboratory (NML), Shenzhen Research Institute of City University of Hong Kong, Shenzhen, 518057, China"
+        ]
+      },
+      {
+        "name": "Ke Duan",
+        "openalex_author_id": "https://openalex.org/A5108102368",
+        "orcid": "https://orcid.org/0009-0000-3124-1649",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "City University of Hong Kong",
+            "ror": "https://ror.org/03q8dnn23",
+            "country_code": "HK",
+            "type": "education"
+          },
+          {
+            "name": "National University of Defense Technology",
+            "ror": "https://ror.org/05d2yfz11",
+            "country_code": "CN",
+            "type": "education"
+          },
+          {
+            "name": "City University of Hong Kong, Shenzhen Research Institute",
+            "ror": "https://ror.org/00xc0ma20",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Material Science and Engineering, College of Aerospace Science and Engineering, National University of Defense Technology, Changsha, 410073, China",
+          "Department of Mechanical Engineering, City University of Hong Kong, Kowloon, Hong Kong, SAR, China",
+          "Nano-Manufacturing Laboratory (NML), Shenzhen Research Institute of City University of Hong Kong, Shenzhen, 518057, China"
+        ]
+      },
+      {
+        "name": "Ran Xiao",
+        "openalex_author_id": "https://openalex.org/A5059038444",
+        "orcid": "https://orcid.org/0000-0002-7454-8621",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "City University of Hong Kong",
+            "ror": "https://ror.org/03q8dnn23",
+            "country_code": "HK",
+            "type": "education"
+          },
+          {
+            "name": "City University of Hong Kong, Shenzhen Research Institute",
+            "ror": "https://ror.org/00xc0ma20",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering, City University of Hong Kong, Kowloon, Hong Kong, SAR, China",
+          "Nano-Manufacturing Laboratory (NML), Shenzhen Research Institute of City University of Hong Kong, Shenzhen, 518057, China"
+        ]
+      },
+      {
+        "name": "Jingyu Qiao",
+        "openalex_author_id": "https://openalex.org/A5070895254",
+        "orcid": "https://orcid.org/0000-0002-7128-3031",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "City University of Hong Kong",
+            "ror": "https://ror.org/03q8dnn23",
+            "country_code": "HK",
+            "type": "education"
+          },
+          {
+            "name": "City University of Hong Kong, Shenzhen Research Institute",
+            "ror": "https://ror.org/00xc0ma20",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering, City University of Hong Kong, Kowloon, Hong Kong, SAR, China",
+          "Nano-Manufacturing Laboratory (NML), Shenzhen Research Institute of City University of Hong Kong, Shenzhen, 518057, China"
+        ]
+      },
+      {
+        "name": "Shuyu Liang",
+        "openalex_author_id": "https://openalex.org/A5007494299",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "City University of Hong Kong",
+            "ror": "https://ror.org/03q8dnn23",
+            "country_code": "HK",
+            "type": "education"
+          },
+          {
+            "name": "City University of Hong Kong, Shenzhen Research Institute",
+            "ror": "https://ror.org/00xc0ma20",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering, City University of Hong Kong, Kowloon, Hong Kong, SAR, China",
+          "Nano-Manufacturing Laboratory (NML), Shenzhen Research Institute of City University of Hong Kong, Shenzhen, 518057, China"
+        ]
+      },
+      {
+        "name": "Shixiang Wang",
+        "openalex_author_id": "https://openalex.org/A5100632545",
+        "orcid": "https://orcid.org/0000-0003-1070-7790",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Hong Kong Polytechnic University",
+            "ror": "https://ror.org/0030zas98",
+            "country_code": "HK",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Research Institute for Advanced Manufacturing, Department of Industrial and Systems Engineering, The Hong Kong Polytechnic University, Kowloon, Hong Kong, SAR, China",
+          "State Key Laboratory of Ultra-precision Machining Technology, Department of Industrial and Systems Engineering, The Hong Kong Polytechnic University, Kowloon, Hong Kong, SAR, China"
+        ]
+      },
+      {
+        "name": "Juzheng Chen",
+        "openalex_author_id": "https://openalex.org/A5062800976",
+        "orcid": "https://orcid.org/0000-0002-3989-4254",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "City University of Hong Kong",
+            "ror": "https://ror.org/03q8dnn23",
+            "country_code": "HK",
+            "type": "education"
+          },
+          {
+            "name": "City University of Hong Kong, Shenzhen Research Institute",
+            "ror": "https://ror.org/00xc0ma20",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering, City University of Hong Kong, Kowloon, Hong Kong, SAR, China",
+          "Nano-Manufacturing Laboratory (NML), Shenzhen Research Institute of City University of Hong Kong, Shenzhen, 518057, China"
+        ]
+      },
+      {
+        "name": "Hao Wu",
+        "openalex_author_id": "https://openalex.org/A5101627855",
+        "orcid": "https://orcid.org/0000-0002-7842-6453",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "City University of Hong Kong",
+            "ror": "https://ror.org/03q8dnn23",
+            "country_code": "HK",
+            "type": "education"
+          },
+          {
+            "name": "City University of Hong Kong, Shenzhen Research Institute",
+            "ror": "https://ror.org/00xc0ma20",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering, City University of Hong Kong, Kowloon, Hong Kong, SAR, China",
+          "Nano-Manufacturing Laboratory (NML), Shenzhen Research Institute of City University of Hong Kong, Shenzhen, 518057, China"
+        ]
+      },
+      {
+        "name": "Yang Lü",
+        "openalex_author_id": "https://openalex.org/A5067000940",
+        "orcid": "https://orcid.org/0000-0002-9280-2718",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "City University of Hong Kong",
+            "ror": "https://ror.org/03q8dnn23",
+            "country_code": "HK",
+            "type": "education"
+          },
+          {
+            "name": "City University of Hong Kong, Shenzhen Research Institute",
+            "ror": "https://ror.org/00xc0ma20",
+            "country_code": "CN",
+            "type": "education"
+          },
+          {
+            "name": "University of Hong Kong",
+            "ror": "https://ror.org/02zhqgq86",
+            "country_code": "HK",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering, The University of Hong Kong, Pokfulam Road, Hong Kong, SAR, China. ylu1@hku.hk",
+          "Nano-Manufacturing Laboratory (NML), Shenzhen Research Institute of City University of Hong Kong, Shenzhen, 518057, China. ylu1@hku.hk",
+          "Nano-Manufacturing Laboratory (NML), Shenzhen Research Institute of City University of Hong Kong, Shenzhen, 518057, China"
+        ]
+      },
+      {
+        "name": "Xiewen Wen",
+        "openalex_author_id": "https://openalex.org/A5025272432",
+        "orcid": "https://orcid.org/0000-0002-4177-8607",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Hong Kong Polytechnic University",
+            "ror": "https://ror.org/0030zas98",
+            "country_code": "HK",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Research Institute for Advanced Manufacturing, Department of Industrial and Systems Engineering, The Hong Kong Polytechnic University, Kowloon, Hong Kong, SAR, China. xw.wen@polyu.edu.hk",
+          "State Key Laboratory of Ultra-precision Machining Technology, Department of Industrial and Systems Engineering, The Hong Kong Polytechnic University, Kowloon, Hong Kong, SAR, China. xw.wen@polyu.edu.hk",
+          "State Key Laboratory of Ultra-precision Machining Technology, Department of Industrial and Systems Engineering, The Hong Kong Polytechnic University, Kowloon, Hong Kong, SAR, China"
+        ]
+      }
+    ],
+    "corresponding_authors": [
+      {
+        "name": "Yang Lü",
+        "openalex_author_id": "https://openalex.org/A5067000940",
+        "orcid": "https://orcid.org/0000-0002-9280-2718",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "City University of Hong Kong",
+            "ror": "https://ror.org/03q8dnn23",
+            "country_code": "HK",
+            "type": "education"
+          },
+          {
+            "name": "City University of Hong Kong, Shenzhen Research Institute",
+            "ror": "https://ror.org/00xc0ma20",
+            "country_code": "CN",
+            "type": "education"
+          },
+          {
+            "name": "University of Hong Kong",
+            "ror": "https://ror.org/02zhqgq86",
+            "country_code": "HK",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering, The University of Hong Kong, Pokfulam Road, Hong Kong, SAR, China. ylu1@hku.hk",
+          "Nano-Manufacturing Laboratory (NML), Shenzhen Research Institute of City University of Hong Kong, Shenzhen, 518057, China. ylu1@hku.hk",
+          "Nano-Manufacturing Laboratory (NML), Shenzhen Research Institute of City University of Hong Kong, Shenzhen, 518057, China"
+        ]
+      },
+      {
+        "name": "Xiewen Wen",
+        "openalex_author_id": "https://openalex.org/A5025272432",
+        "orcid": "https://orcid.org/0000-0002-4177-8607",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Hong Kong Polytechnic University",
+            "ror": "https://ror.org/0030zas98",
+            "country_code": "HK",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Research Institute for Advanced Manufacturing, Department of Industrial and Systems Engineering, The Hong Kong Polytechnic University, Kowloon, Hong Kong, SAR, China. xw.wen@polyu.edu.hk",
+          "State Key Laboratory of Ultra-precision Machining Technology, Department of Industrial and Systems Engineering, The Hong Kong Polytechnic University, Kowloon, Hong Kong, SAR, China. xw.wen@polyu.edu.hk",
+          "State Key Laboratory of Ultra-precision Machining Technology, Department of Industrial and Systems Engineering, The Hong Kong Polytechnic University, Kowloon, Hong Kong, SAR, China"
+        ]
+      }
+    ],
+    "openalex_work_id": "https://openalex.org/W4393222459",
+    "openalex_source_id": "https://openalex.org/S64187185",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S64187185",
+      "issn_l": "2041-1723",
+      "issn": [
+        "2041-1723"
+      ],
+      "type": "journal",
+      "host_organization_name": "Nature Portfolio",
+      "works_count": null,
+      "cited_by_count": null,
+      "two_year_mean_citedness": null,
+      "h_index": null,
+      "i10_index": null,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
+    "journal_quality": {
+      "label": "High-impact general journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "id": "10.1038/s41467-024-46929-x"
+  },
+  "10.1016/j.addma.2024.104538": {
+    "ai_summary_en": "1. Topic - This paper addresses the in-situ inspection of lattice structures and metamaterials in additive manufacturing.\n2. Problem - There is a need for efficient quality inspection methods that address the natural variability occurring during the additive manufacturing process.\n3. Method - The study employs a method that combines segmentation of in-situ images with a data modeling approach to convert 3D shapes into 1D profiles.\n4. Key Result - The proposed approach demonstrates effectiveness for in-line inspection of complex lattice structures.\n5. Takeaway - This research presents a novel and cost-effective method for quality assurance of lattice structures in additive manufacturing.",
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "author_details": [
+      {
+        "name": "Bianca Maria Colosimo",
+        "openalex_author_id": "https://openalex.org/A5032398347",
+        "orcid": "https://orcid.org/0000-0001-6844-2030",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Politecnico di Milano",
+            "ror": "https://ror.org/01nffqt88",
+            "country_code": "IT",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering, Politecnico di Milano, Via La Masa 1, 20156, Milan, Italy"
+        ]
+      },
+      {
+        "name": "Federica Garghetti",
+        "openalex_author_id": "https://openalex.org/A5033528710",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Politecnico di Milano",
+            "ror": "https://ror.org/01nffqt88",
+            "country_code": "IT",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering, Politecnico di Milano, Via La Masa 1, 20156, Milan, Italy"
+        ]
+      },
+      {
+        "name": "Marco Grasso",
+        "openalex_author_id": "https://openalex.org/A5009320715",
+        "orcid": "https://orcid.org/0000-0003-3233-4198",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Politecnico di Milano",
+            "ror": "https://ror.org/01nffqt88",
+            "country_code": "IT",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering, Politecnico di Milano, Via La Masa 1, 20156, Milan, Italy"
+        ]
+      },
+      {
+        "name": "Luca Pagani",
+        "openalex_author_id": "https://openalex.org/A5075245973",
+        "orcid": "https://orcid.org/0000-0002-9377-0375",
+        "position": "last",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Great Minds",
+            "ror": "https://ror.org/05aawzp88",
+            "country_code": "US",
+            "type": "nonprofit"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "OPEN MIND Technologies AG, Argelsrieder Feld 5, 82234 Weßling, Germany"
+        ]
+      }
+    ],
+    "corresponding_authors": [
+      {
+        "name": "Bianca Maria Colosimo",
+        "openalex_author_id": "https://openalex.org/A5032398347",
+        "orcid": "https://orcid.org/0000-0001-6844-2030",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Politecnico di Milano",
+            "ror": "https://ror.org/01nffqt88",
+            "country_code": "IT",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering, Politecnico di Milano, Via La Masa 1, 20156, Milan, Italy"
+        ]
+      }
+    ],
+    "openalex_work_id": "https://openalex.org/W4404094725",
+    "openalex_source_id": "https://openalex.org/S2764842179",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S2764842179",
+      "issn_l": "2214-7810",
+      "issn": [
+        "2214-7810",
+        "2214-8604"
+      ],
+      "type": "journal",
+      "host_organization_name": "Elsevier BV",
+      "works_count": null,
+      "cited_by_count": null,
+      "two_year_mean_citedness": null,
+      "h_index": null,
+      "i10_index": null,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "id": "10.1016/j.addma.2024.104538"
+  },
+  "10.54941/ahfe1005153": {
+    "ai_summary_en": "1. Topic - This paper discusses the manufacturing process of electrical connectors using 3D printing resin.\n2. Problem - It aims to create environmentally sealed connectors without disrupting existing manufacturing steps.\n3. Method - The approach involves inserting conductive terminals and potting them with the same material during the curing phase.\n4. Key Result - The produced electrical connectors were validated for mechanical strength and electrical performance.\n5. Takeaway - The study proposes a manufacturing workflow applicable to various types of connectors for power and data transfer.",
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "author_details": [
+      {
+        "name": "Andrei-Alexandru Popa",
+        "openalex_author_id": "https://openalex.org/A5100743911",
+        "orcid": "https://orcid.org/0000-0002-5729-464X",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Olgierd Krzysztof Nowakowski",
+        "openalex_author_id": "https://openalex.org/A5048761205",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Lars Duggen",
+        "openalex_author_id": "https://openalex.org/A5053275877",
+        "orcid": "https://orcid.org/0000-0002-7489-8760",
+        "position": "last",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "openalex_work_id": "https://openalex.org/W4399478795",
+    "openalex_source_id": "https://openalex.org/S4220651959",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4220651959",
+      "issn_l": "2771-0718",
+      "issn": [
+        "2771-0718"
+      ],
+      "type": "journal",
+      "host_organization_name": null,
+      "works_count": null,
+      "cited_by_count": null,
+      "two_year_mean_citedness": null,
+      "h_index": null,
+      "i10_index": null,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "id": "10.54941/ahfe1005153"
+  },
+  "10.1080/17452759.2024.2407473": {
+    "ai_summary_en": "1. Topic - This paper addresses a model weighting method for additive manufacturing around inserts.\n2. Problem - It aims to improve print quality and reduce the number of optimization iterations in existing insert-based printing.\n3. Method - A weighting method based on light occlusion is proposed, and benchmarks are evaluated under various insert occlusion scenarios.\n4. Key Result - The use of the weighting method enhances print quality and increases voxel doses within the insert compared to outside.\n5. Takeaway - This study presents a method to improve quality and simplify the optimization process in printing around inserts.",
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "author_details": [
+      {
+        "name": "Ahmad Bagheri",
+        "openalex_author_id": "https://openalex.org/A5058540276",
+        "orcid": "https://orcid.org/0000-0002-3639-377X",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "University of Tehran",
+            "ror": "https://ror.org/05vf56z40",
+            "country_code": "IR",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Mechanical Engineering, College of Engineering, University of Tehran, Tehran, Iran"
+        ]
+      },
+      {
+        "name": "Mohammad Reza Zakerzadeh",
+        "openalex_author_id": "https://openalex.org/A5022127608",
+        "orcid": "https://orcid.org/0000-0001-5495-3630",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Tehran",
+            "ror": "https://ror.org/05vf56z40",
+            "country_code": "IR",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Mechanical Engineering, College of Engineering, University of Tehran, Tehran, Iran"
+        ]
+      },
+      {
+        "name": "Mohammad Jafar Sadigh",
+        "openalex_author_id": "https://openalex.org/A5090037826",
+        "orcid": "https://orcid.org/0000-0002-3719-8861",
+        "position": "last",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "University of Tehran",
+            "ror": "https://ror.org/05vf56z40",
+            "country_code": "IR",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Mechanical Engineering, College of Engineering, University of Tehran, Tehran, Iran"
+        ]
+      }
+    ],
+    "corresponding_authors": [
+      {
+        "name": "Mohammad Reza Zakerzadeh",
+        "openalex_author_id": "https://openalex.org/A5022127608",
+        "orcid": "https://orcid.org/0000-0001-5495-3630",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Tehran",
+            "ror": "https://ror.org/05vf56z40",
+            "country_code": "IR",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Mechanical Engineering, College of Engineering, University of Tehran, Tehran, Iran"
+        ]
+      }
+    ],
+    "openalex_work_id": "https://openalex.org/W4402864689",
+    "openalex_source_id": "https://openalex.org/S152936027",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S152936027",
+      "issn_l": "1745-2759",
+      "issn": [
+        "1745-2759",
+        "1745-2767"
+      ],
+      "type": "journal",
+      "host_organization_name": "Taylor & Francis",
+      "works_count": null,
+      "cited_by_count": null,
+      "two_year_mean_citedness": null,
+      "h_index": null,
+      "i10_index": null,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
+    "id": "10.1080/17452759.2024.2407473"
+  },
+  "10.1016/j.addma.2024.104552": {
+    "ai_summary_en": "1. Topic - This paper focuses on numerical modeling of tomographic volumetric additive manufacturing using an energy threshold method.\n2. Problem - It addresses the need to improve geometric fidelity, particularly for small features, in traditional additive manufacturing.\n3. Method - The study introduces a computationally efficient numerical model that relies on exposure thresholds and requires only two parameters.\n4. Key Result - An optimal penetration depth is identified, which varies with process parameters and significantly affects print quality.\n5. Takeaway - The key message is the necessity to adjust penetration depth and light intensity to maintain quality in additive manufacturing.",
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "author_details": [
+      {
+        "name": "Roozbeh Salajeghe",
+        "openalex_author_id": "https://openalex.org/A5051811793",
+        "orcid": "https://orcid.org/0000-0002-6239-4311",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Technical University of Denmark",
+            "ror": "https://ror.org/04qtj9h94",
+            "country_code": "DK",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Civil and Mechanical Engineering, Technical University of Denmark, Kgs. Lyngby, 2800, Denmark",
+          "Technical University of Denmark, Department of Civil and Mechanical Engineering, DK"
+        ]
+      },
+      {
+        "name": "Berin Šeta",
+        "openalex_author_id": "https://openalex.org/A5075357516",
+        "orcid": "https://orcid.org/0000-0002-5989-1122",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Technical University of Denmark",
+            "ror": "https://ror.org/04qtj9h94",
+            "country_code": "DK",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Civil and Mechanical Engineering, Technical University of Denmark, Kgs. Lyngby, 2800, Denmark",
+          "Technical University of Denmark, Department of Civil and Mechanical Engineering, DK"
+        ]
+      },
+      {
+        "name": "Nicole Pellizzon",
+        "openalex_author_id": "https://openalex.org/A5099160239",
+        "orcid": "https://orcid.org/0009-0001-6490-1356",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Technical University of Denmark",
+            "ror": "https://ror.org/04qtj9h94",
+            "country_code": "DK",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Civil and Mechanical Engineering, Technical University of Denmark, Kgs. Lyngby, 2800, Denmark",
+          "Technical University of Denmark, Department of Civil and Mechanical Engineering, DK"
+        ]
+      },
+      {
+        "name": "Carl Gustav Sander Kruse",
+        "openalex_author_id": "https://openalex.org/A5099160240",
+        "orcid": "https://orcid.org/0009-0007-2130-5902",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Technical University of Denmark",
+            "ror": "https://ror.org/04qtj9h94",
+            "country_code": "DK",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Civil and Mechanical Engineering, Technical University of Denmark, Kgs. Lyngby, 2800, Denmark",
+          "Technical University of Denmark, Department of Civil and Mechanical Engineering, DK"
+        ]
+      },
+      {
+        "name": "Deepak Marla",
+        "openalex_author_id": "https://openalex.org/A5055050988",
+        "orcid": "https://orcid.org/0000-0001-6829-7830",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Indian Institute of Technology Bombay",
+            "ror": "https://ror.org/02qyf5152",
+            "country_code": "IN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering, India Institute of Technology Bombay, Mumbai, India"
+        ]
+      },
+      {
+        "name": "Aminul Islam",
+        "openalex_author_id": "https://openalex.org/A5101775050",
+        "orcid": "https://orcid.org/0000-0002-8275-6631",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Technical University of Denmark",
+            "ror": "https://ror.org/04qtj9h94",
+            "country_code": "DK",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Civil and Mechanical Engineering, Technical University of Denmark, Kgs. Lyngby, 2800, Denmark",
+          "Technical University of Denmark, Department of Civil and Mechanical Engineering, DK"
+        ]
+      },
+      {
+        "name": "Jon Spangenberg",
+        "openalex_author_id": "https://openalex.org/A5066476168",
+        "orcid": "https://orcid.org/0000-0002-5411-6821",
+        "position": "last",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Technical University of Denmark",
+            "ror": "https://ror.org/04qtj9h94",
+            "country_code": "DK",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Civil and Mechanical Engineering, Technical University of Denmark, Kgs. Lyngby, 2800, Denmark",
+          "Technical University of Denmark, Department of Civil and Mechanical Engineering, DK"
+        ]
+      }
+    ],
+    "corresponding_authors": [
+      {
+        "name": "Roozbeh Salajeghe",
+        "openalex_author_id": "https://openalex.org/A5051811793",
+        "orcid": "https://orcid.org/0000-0002-6239-4311",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Technical University of Denmark",
+            "ror": "https://ror.org/04qtj9h94",
+            "country_code": "DK",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Civil and Mechanical Engineering, Technical University of Denmark, Kgs. Lyngby, 2800, Denmark",
+          "Technical University of Denmark, Department of Civil and Mechanical Engineering, DK"
+        ]
+      }
+    ],
+    "openalex_work_id": "https://openalex.org/W4404634046",
+    "openalex_source_id": "https://openalex.org/S2764842179",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S2764842179",
+      "issn_l": "2214-7810",
+      "issn": [
+        "2214-7810",
+        "2214-8604"
+      ],
+      "type": "journal",
+      "host_organization_name": "Elsevier BV",
+      "works_count": null,
+      "cited_by_count": null,
+      "two_year_mean_citedness": null,
+      "h_index": null,
+      "i10_index": null,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "id": "10.1016/j.addma.2024.104552"
+  },
+  "10.1016/j.addma.2024.104360": {
+    "ai_summary_en": "1. Topic - This paper focuses on the synthesis of photocurable polyesters for 3D printing using fully biobased resins.\n2. Problem - It aims to address the reliance on fossil-based materials in current photopolymerization techniques.\n3. Method - The study employs a Diels-Alder reaction between itaconic acid and myrcene to create a co-monomer for polyester synthesis.\n4. Key Result - Sixteen fully biobased resins were synthesized, achieving biobased content up to 97% in many formulations.\n5. Takeaway - The research highlights the potential of using biobased materials for developing sustainable 3D printing resins.",
+    "author_details": [
+      {
+        "name": "Mirko Maturi",
+        "openalex_author_id": "https://openalex.org/A5020649056",
+        "orcid": "https://orcid.org/0000-0003-3176-0697",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "University of Bologna",
+            "ror": "https://ror.org/01111rn36",
+            "country_code": "IT",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Industrial Chemistry “Toso Montanari”, University of Bologna, V. Piero Gobetti 85, Bologna 40129, Italy"
+        ]
+      },
+      {
+        "name": "Chiara Spanu",
+        "openalex_author_id": "https://openalex.org/A5049144492",
+        "orcid": "https://orcid.org/0000-0002-5831-5190",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "University of Bologna",
+            "ror": "https://ror.org/01111rn36",
+            "country_code": "IT",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Industrial Chemistry “Toso Montanari”, University of Bologna, V. Piero Gobetti 85, Bologna 40129, Italy"
+        ]
+      },
+      {
+        "name": "Erica Locatelli",
+        "openalex_author_id": "https://openalex.org/A5002934530",
+        "orcid": "https://orcid.org/0000-0002-0711-8082",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "University of Bologna",
+            "ror": "https://ror.org/01111rn36",
+            "country_code": "IT",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Industrial Chemistry “Toso Montanari”, University of Bologna, V. Piero Gobetti 85, Bologna 40129, Italy"
+        ]
+      },
+      {
+        "name": "Letizia Sambri",
+        "openalex_author_id": "https://openalex.org/A5084180412",
+        "orcid": "https://orcid.org/0000-0003-1823-9872",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "University of Bologna",
+            "ror": "https://ror.org/01111rn36",
+            "country_code": "IT",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Industrial Chemistry “Toso Montanari”, University of Bologna, V. Piero Gobetti 85, Bologna 40129, Italy"
+        ]
+      },
+      {
+        "name": "Mauro Comes Franchini",
+        "openalex_author_id": "https://openalex.org/A5085509588",
+        "orcid": null,
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Bologna",
+            "ror": "https://ror.org/01111rn36",
+            "country_code": "IT",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Industrial Chemistry “Toso Montanari”, University of Bologna, V. Piero Gobetti 85, Bologna 40129, Italy"
+        ]
+      }
+    ],
+    "corresponding_authors": [
+      {
+        "name": "Mauro Comes Franchini",
+        "openalex_author_id": "https://openalex.org/A5085509588",
+        "orcid": null,
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Bologna",
+            "ror": "https://ror.org/01111rn36",
+            "country_code": "IT",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Industrial Chemistry “Toso Montanari”, University of Bologna, V. Piero Gobetti 85, Bologna 40129, Italy"
+        ]
+      }
+    ],
+    "openalex_work_id": "https://openalex.org/W4401648709",
+    "openalex_source_id": "https://openalex.org/S2764842179",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S2764842179",
+      "issn_l": "2214-7810",
+      "issn": [
+        "2214-7810",
+        "2214-8604"
+      ],
+      "type": "journal",
+      "host_organization_name": "Elsevier BV",
+      "works_count": null,
+      "cited_by_count": null,
+      "two_year_mean_citedness": null,
+      "h_index": null,
+      "i10_index": null,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "id": "10.1016/j.addma.2024.104360"
+  },
+  "10.1115/1.4066084": {
+    "ai_summary_en": "1. Topic - This paper discusses multistep and elastically stable mechanical metamaterials with tunable properties.\n2. Problem - There is a significant challenge in altering the mechanical properties of materials after they have been fabricated.\n3. Method - The authors fabricated metamaterial samples using 3D printing and selective laser sintering, and analyzed their properties through theoretical modeling and simulations.\n4. Key Result - The effective Young's modulus increases with compressive strain, showing superior auxeticity at larger strains.\n5. Takeaway - The study enables the design of reusable metamaterials with adjustable mechanical performance.",
+    "author_details": [
+      {
+        "name": "Lianchao Wang",
+        "openalex_author_id": "https://openalex.org/A5029283893",
+        "orcid": "https://orcid.org/0000-0001-9383-2823",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Centre National de la Recherche Scientifique",
+            "ror": "https://ror.org/02feahw73",
+            "country_code": "FR",
+            "type": "government"
+          },
+          {
+            "name": "City University of Hong Kong",
+            "ror": "https://ror.org/03q8dnn23",
+            "country_code": "HK",
+            "type": "education"
+          },
+          {
+            "name": "Harbin Institute of Technology",
+            "ror": "https://ror.org/01yqg2h08",
+            "country_code": "CN",
+            "type": "education"
+          },
+          {
+            "name": "Franche-Comté Électronique Mécanique Thermique et Optique - Sciences et Technologies",
+            "ror": "https://ror.org/004fmxv66",
+            "country_code": "FR",
+            "type": "facility"
+          },
+          {
+            "name": "Université de Franche-Comté",
+            "ror": "https://ror.org/03pcc9z86",
+            "country_code": "FR",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "City University of Hong Kong Department of Mechanical Engineering, , Hong Kong SAR , China",
+          "Harbin Institute of Technology National Key Laboratory of Science and Technology on Advanced Composites, in Special Environments, , Harbin 150001 , China ;",
+          "Université de Franche-Comté, CNRS, Institut FEMTO-ST , Besançon 25000 , France ;",
+          "83 Tat Chee Ave., Kowloon Hong Kong, 999077 Hong Kong"
+        ]
+      },
+      {
+        "name": "Julio A. Iglesias Mart ́inez",
+        "openalex_author_id": "https://openalex.org/A5106015728",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Centre National de la Recherche Scientifique",
+            "ror": "https://ror.org/02feahw73",
+            "country_code": "FR",
+            "type": "government"
+          },
+          {
+            "name": "Franche-Comté Électronique Mécanique Thermique et Optique - Sciences et Technologies",
+            "ror": "https://ror.org/004fmxv66",
+            "country_code": "FR",
+            "type": "facility"
+          },
+          {
+            "name": "Université de Franche-Comté",
+            "ror": "https://ror.org/03pcc9z86",
+            "country_code": "FR",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Université de Franche-Comté, CNRS, Institut FEMTO-ST , Besançon 25000 , France",
+          "15 B Avenue des Montboucons besancon, 25000 France"
+        ]
+      },
+      {
+        "name": "Krzysztof K. Dudek",
+        "openalex_author_id": "https://openalex.org/A5083685601",
+        "orcid": "https://orcid.org/0000-0002-9570-6713",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Centre National de la Recherche Scientifique",
+            "ror": "https://ror.org/02feahw73",
+            "country_code": "FR",
+            "type": "government"
+          },
+          {
+            "name": "Franche-Comté Électronique Mécanique Thermique et Optique - Sciences et Technologies",
+            "ror": "https://ror.org/004fmxv66",
+            "country_code": "FR",
+            "type": "facility"
+          },
+          {
+            "name": "University of Zielona Góra",
+            "ror": "https://ror.org/04fzm7v55",
+            "country_code": "PL",
+            "type": "education"
+          },
+          {
+            "name": "Université de Franche-Comté",
+            "ror": "https://ror.org/03pcc9z86",
+            "country_code": "FR",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "University of Zielona Gora Institute of Physics, , ul. Szafrana 4a, Zielona Gora 65-069 , Poland",
+          "Université de Franche-Comté, CNRS, Institut FEMTO-ST , Besançon 25000 , France ;",
+          "A-29 - Budynek Dydaktyczny, prof. Z. Szafrana 4a, 65-516 Zielona Góra, 411 Poland"
+        ]
+      },
+      {
+        "name": "Gwenn Ulliac",
+        "openalex_author_id": "https://openalex.org/A5057839796",
+        "orcid": "https://orcid.org/0000-0001-5900-1743",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Centre National de la Recherche Scientifique",
+            "ror": "https://ror.org/02feahw73",
+            "country_code": "FR",
+            "type": "government"
+          },
+          {
+            "name": "Franche-Comté Électronique Mécanique Thermique et Optique - Sciences et Technologies",
+            "ror": "https://ror.org/004fmxv66",
+            "country_code": "FR",
+            "type": "facility"
+          },
+          {
+            "name": "Université de Franche-Comté",
+            "ror": "https://ror.org/03pcc9z86",
+            "country_code": "FR",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Université de Franche-Comté, CNRS, Institut FEMTO-ST , Besançon 25000 , France",
+          "15 B Avenue des Montboucons besancon, 25000 France"
+        ]
+      },
+      {
+        "name": "Xinrui Niu",
+        "openalex_author_id": "https://openalex.org/A5013880281",
+        "orcid": "https://orcid.org/0000-0001-9965-4423",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "City University of Hong Kong",
+            "ror": "https://ror.org/03q8dnn23",
+            "country_code": "HK",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "City University of Hong Kong Department of Mechanical Engineering, , Hong Kong SAR 999077 , China",
+          "Y5409, Yellow Zone, Yeung Kin Man Academic Building (AC-1) Dept of MNE, City University of Hong Kong, 83 Tat Chee Ave. Kowloon, 999077 Hong Kong"
+        ]
+      },
+      {
+        "name": "Yajun Zou",
+        "openalex_author_id": "https://openalex.org/A5028735918",
+        "orcid": "https://orcid.org/0000-0001-9823-1488",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Harbin Institute of Technology",
+            "ror": "https://ror.org/01yqg2h08",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Harbin Institute of Technology National Key Laboratory of Science and Technology on Advanced Composites in Special Environments, , Harbin 150001 , China",
+          "No 2, Yikuang Street Harbin, 150001 China"
+        ]
+      },
+      {
+        "name": "Bing Wang",
+        "openalex_author_id": "https://openalex.org/A5100382552",
+        "orcid": "https://orcid.org/0000-0003-2537-5805",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Harbin University",
+            "ror": "https://ror.org/00ey9xa07",
+            "country_code": "CN",
+            "type": "education"
+          },
+          {
+            "name": "Harbin Institute of Technology",
+            "ror": "https://ror.org/01yqg2h08",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Harbin Institute of Technology National Key Laboratory of Science and Technology on Advanced Composites in Special Environments, , Harbin 150001 , China",
+          "Harbin, China Harbin, 150001 China"
+        ]
+      },
+      {
+        "name": "Vincent Laude",
+        "openalex_author_id": "https://openalex.org/A5069963757",
+        "orcid": "https://orcid.org/0000-0001-8930-8797",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Centre National de la Recherche Scientifique",
+            "ror": "https://ror.org/02feahw73",
+            "country_code": "FR",
+            "type": "government"
+          },
+          {
+            "name": "Franche-Comté Électronique Mécanique Thermique et Optique - Sciences et Technologies",
+            "ror": "https://ror.org/004fmxv66",
+            "country_code": "FR",
+            "type": "facility"
+          },
+          {
+            "name": "Université de Franche-Comté",
+            "ror": "https://ror.org/03pcc9z86",
+            "country_code": "FR",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Université de Franche-Comté, CNRS, Institut FEMTO-ST , Besançon 25000 , France",
+          "Institut FEMTO-ST 15B avenue des Montboucons Besançon, 25030 France"
+        ]
+      },
+      {
+        "name": "Muamer Kadic",
+        "openalex_author_id": "https://openalex.org/A5029270983",
+        "orcid": "https://orcid.org/0000-0002-4692-5696",
+        "position": "last",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Centre National de la Recherche Scientifique",
+            "ror": "https://ror.org/02feahw73",
+            "country_code": "FR",
+            "type": "government"
+          },
+          {
+            "name": "Franche-Comté Électronique Mécanique Thermique et Optique - Sciences et Technologies",
+            "ror": "https://ror.org/004fmxv66",
+            "country_code": "FR",
+            "type": "facility"
+          },
+          {
+            "name": "Université de Franche-Comté",
+            "ror": "https://ror.org/03pcc9z86",
+            "country_code": "FR",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Université de Franche-Comté, CNRS, Institut FEMTO-ST , Besançon 25000 , France",
+          "15 B Avenue des Montboucons Besançon, Doubs 25000 France"
+        ]
+      }
+    ],
+    "openalex_work_id": "https://openalex.org/W4401172980",
+    "openalex_source_id": "https://openalex.org/S124014869",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S124014869",
+      "issn_l": "0021-8936",
+      "issn": [
+        "0021-8936",
+        "1528-9036"
+      ],
+      "type": "journal",
+      "host_organization_name": "ASM International",
+      "works_count": null,
+      "cited_by_count": null,
+      "two_year_mean_citedness": null,
+      "h_index": null,
+      "i10_index": null,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "id": "10.1115/1.4066084"
+  },
   "10.1117/12.3000331": {
     "ai_summary_en": "1. Topic - This paper discusses advancements in multicolor tomographic volumetric printing and associated challenges.\n2. Problem - It aims to address the issues and limitations of achieving multiple functionalities using various colors.\n3. Method - The study implements a dual-color system and develops a sinogram computation strategy to fine-tune mechanical properties.\n4. Key Result - It presents a theoretical framework for a tri-color system that can alleviate resolution requirements through coordinated illumination.\n5. Takeaway - The research proposes a system with the potential for full orthogonality between geometric control and property modulation.",
     "author_details": [

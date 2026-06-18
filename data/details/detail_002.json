@@ -1,4 +1,1570 @@
 {
+  "10.1007/s10845-025-02578-5": {
+    "ai_summary_en": "1. Topic - This paper addresses a framework for planning and executing robotic assembly with deformable objects.\n2. Problem - It aims to resolve the limitations of existing automation frameworks that do not adequately support the complexities of assembling deformable objects.\n3. Method - The proposed framework consists of three modules—data extraction, process planning, and execution—interacting with a centralized database based on the Rαβγ ontology.\n4. Key Result - The framework demonstrated a high reuse rate of assembly operations in three case studies involving deformable objects.\n5. Takeaway - Ultimately, this research presents an efficient and optimized automation approach for robotic assembly of deformable objects.",
+    "author_details": [
+      {
+        "name": "Ran Shneor",
+        "openalex_author_id": "https://openalex.org/A5060458220",
+        "orcid": "https://orcid.org/0000-0001-7736-4193",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Ben-Gurion University of the Negev",
+            "ror": "https://ror.org/05tkyf982",
+            "country_code": "IL",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Industrial Engineering & Management, Ben-Gurion University of the Negev, Beer-Sheva, Israel"
+        ]
+      },
+      {
+        "name": "Gali Naveh",
+        "openalex_author_id": "https://openalex.org/A5059892151",
+        "orcid": "https://orcid.org/0000-0002-7002-2606",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Sami Shamoon College of Engineering",
+            "ror": "https://ror.org/011aa4g29",
+            "country_code": "IL",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Industrial Engineering & Management, Shamoon College of Engineering, Beer-Sheva, Israel"
+        ]
+      },
+      {
+        "name": "Shir Ben-David",
+        "openalex_author_id": "https://openalex.org/A5072711586",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Ben-Gurion University of the Negev",
+            "ror": "https://ror.org/05tkyf982",
+            "country_code": "IL",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Industrial Engineering & Management, Ben-Gurion University of the Negev, Beer-Sheva, Israel"
+        ]
+      },
+      {
+        "name": "Bar Shvarzman",
+        "openalex_author_id": "https://openalex.org/A5116537842",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Ben-Gurion University of the Negev",
+            "ror": "https://ror.org/05tkyf982",
+            "country_code": "IL",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Industrial Engineering & Management, Ben-Gurion University of the Negev, Beer-Sheva, Israel"
+        ]
+      },
+      {
+        "name": "Zachi Mann",
+        "openalex_author_id": "https://openalex.org/A5024759549",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Israel Aerospace Industries (Israel)",
+            "ror": "https://ror.org/04aaeds92",
+            "country_code": "IL",
+            "type": "company"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Siemens Digital Industries Software, Airport City, Israel"
+        ]
+      },
+      {
+        "name": "Alex M. Greenberg",
+        "openalex_author_id": "https://openalex.org/A5061691144",
+        "orcid": "https://orcid.org/0000-0002-4259-325X",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Israel Aerospace Industries (Israel)",
+            "ror": "https://ror.org/04aaeds92",
+            "country_code": "IL",
+            "type": "company"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Siemens Digital Industries Software, Airport City, Israel"
+        ]
+      },
+      {
+        "name": "Yotam Efrat",
+        "openalex_author_id": "https://openalex.org/A5116537843",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Sapir College",
+            "ror": "https://ror.org/04hwjfc40",
+            "country_code": "IL",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Polygon-Technologies, Mitzpe Sapir, Zur Yigal, Israel"
+        ]
+      },
+      {
+        "name": "Omer Einav",
+        "openalex_author_id": "https://openalex.org/A5019512829",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Sapir College",
+            "ror": "https://ror.org/04hwjfc40",
+            "country_code": "IL",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Polygon-Technologies, Mitzpe Sapir, Zur Yigal, Israel"
+        ]
+      },
+      {
+        "name": "Sigal Berman",
+        "openalex_author_id": "https://openalex.org/A5034498707",
+        "orcid": "https://orcid.org/0000-0001-7717-7259",
+        "position": "last",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Ben-Gurion University of the Negev",
+            "ror": "https://ror.org/05tkyf982",
+            "country_code": "IL",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Industrial Engineering & Management, Ben-Gurion University of the Negev, Beer-Sheva, Israel"
+        ]
+      }
+    ],
+    "corresponding_authors": [
+      {
+        "name": "Ran Shneor",
+        "openalex_author_id": "https://openalex.org/A5060458220",
+        "orcid": "https://orcid.org/0000-0001-7736-4193",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Ben-Gurion University of the Negev",
+            "ror": "https://ror.org/05tkyf982",
+            "country_code": "IL",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Industrial Engineering & Management, Ben-Gurion University of the Negev, Beer-Sheva, Israel"
+        ]
+      }
+    ],
+    "openalex_work_id": "https://openalex.org/W4408192393",
+    "openalex_source_id": "https://openalex.org/S161464388",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S161464388",
+      "issn_l": "0956-5515",
+      "issn": [
+        "0956-5515",
+        "1572-8145"
+      ],
+      "type": "journal",
+      "host_organization_name": "Springer Science+Business Media",
+      "works_count": null,
+      "cited_by_count": null,
+      "two_year_mean_citedness": null,
+      "h_index": null,
+      "i10_index": null,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "id": "10.1007/s10845-025-02578-5"
+  },
+  "10.1016/j.rcim.2026.103289": {
+    "ai_summary_en": "1. Topic - This paper discusses a machine learning-based tool for enhancing position accuracy in industrial robots.\n2. Problem - It aims to address the challenges posed by limited robot position accuracy in high value-added processes.\n3. Method - A multi-parameter machine learning error predictor was developed using a reduced experimental dataset.\n4. Key Result - Validation on a KUKA robot showed up to a 98.4% reduction in positioning error, confirming the tool's robustness.\n5. Takeaway - The study emphasizes the need for a general-purpose tool for offline position error compensation for rapid industrial deployment.",
+    "author_details": [
+      {
+        "name": "Giuseppe Romano",
+        "openalex_author_id": "https://openalex.org/A5127972345",
+        "orcid": null,
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "University of Modena and Reggio Emilia",
+            "ror": "https://ror.org/02d4c4y02",
+            "country_code": "IT",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Sciences and Methods for Engineering, University of Modena and Reggio Emilia, Reggio Emilia, Italy"
+        ]
+      },
+      {
+        "name": "Pietro Bilancia",
+        "openalex_author_id": "https://openalex.org/A5012646822",
+        "orcid": "https://orcid.org/0000-0002-4931-1745",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Modena and Reggio Emilia",
+            "ror": "https://ror.org/02d4c4y02",
+            "country_code": "IT",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Sciences and Methods for Engineering, University of Modena and Reggio Emilia, Reggio Emilia, Italy"
+        ]
+      },
+      {
+        "name": "Alberto Locatelli",
+        "openalex_author_id": "https://openalex.org/A5081624483",
+        "orcid": "https://orcid.org/0000-0002-5368-8289",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "University of Modena and Reggio Emilia",
+            "ror": "https://ror.org/02d4c4y02",
+            "country_code": "IT",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Sciences and Methods for Engineering, University of Modena and Reggio Emilia, Reggio Emilia, Italy"
+        ]
+      },
+      {
+        "name": "Mirko Mucciarini",
+        "openalex_author_id": "https://openalex.org/A5106008702",
+        "orcid": "https://orcid.org/0000-0001-5425-6704",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "University of Modena and Reggio Emilia",
+            "ror": "https://ror.org/02d4c4y02",
+            "country_code": "IT",
+            "type": "education"
+          },
+          {
+            "name": "Ferrari (Italy)",
+            "ror": "https://ror.org/05p859a12",
+            "country_code": "IT",
+            "type": "company"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Engineering ”Enzo Ferrari”, University of Modena and Reggio Emilia, Modena, Italy"
+        ]
+      },
+      {
+        "name": "Manuel Iori",
+        "openalex_author_id": "https://openalex.org/A5088224363",
+        "orcid": "https://orcid.org/0000-0003-2097-6572",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "University of Modena and Reggio Emilia",
+            "ror": "https://ror.org/02d4c4y02",
+            "country_code": "IT",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Sciences and Methods for Engineering, University of Modena and Reggio Emilia, Reggio Emilia, Italy"
+        ]
+      },
+      {
+        "name": "Marcello Pellicciari",
+        "openalex_author_id": "https://openalex.org/A5003445819",
+        "orcid": "https://orcid.org/0000-0003-2578-4123",
+        "position": "last",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "University of Modena and Reggio Emilia",
+            "ror": "https://ror.org/02d4c4y02",
+            "country_code": "IT",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Sciences and Methods for Engineering, University of Modena and Reggio Emilia, Reggio Emilia, Italy"
+        ]
+      }
+    ],
+    "corresponding_authors": [
+      {
+        "name": "Pietro Bilancia",
+        "openalex_author_id": "https://openalex.org/A5012646822",
+        "orcid": "https://orcid.org/0000-0002-4931-1745",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Modena and Reggio Emilia",
+            "ror": "https://ror.org/02d4c4y02",
+            "country_code": "IT",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Sciences and Methods for Engineering, University of Modena and Reggio Emilia, Reggio Emilia, Italy"
+        ]
+      }
+    ],
+    "openalex_work_id": "https://openalex.org/W7138958089",
+    "openalex_source_id": "https://openalex.org/S118216261",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S118216261",
+      "issn_l": "0736-5845",
+      "issn": [
+        "0736-5845",
+        "1879-2537"
+      ],
+      "type": "journal",
+      "host_organization_name": "Elsevier BV",
+      "works_count": null,
+      "cited_by_count": null,
+      "two_year_mean_citedness": null,
+      "h_index": null,
+      "i10_index": null,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "id": "10.1016/j.rcim.2026.103289"
+  },
+  "10.1016/j.rineng.2026.110883": {
+    "ai_summary_en": "1. Topic - This paper discusses a lightweight 3D-printed soft robotic finger powered by SMA artificial muscle.\n2. Problem - It aims to address the issues of existing prosthetic fingers being bulky, noisy, and expensive.\n3. Method - The approach involves a soft robotic finger made from thermoplastic elastomer actuated by a dual-wire configuration of SMA.\n4. Key Result - The final prototype demonstrates a flexion range of up to 100 degrees and a peak fingertip force of 6.5 N.\n5. Takeaway - The findings highlight the potential of this design as a foundational component for future prosthetic hand development.",
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "author_details": [
+      {
+        "name": "Horia-Petru Nazarie",
+        "openalex_author_id": "https://openalex.org/A5136091231",
+        "orcid": null,
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Universidad Carlos III de Madrid",
+            "ror": "https://ror.org/03ths8210",
+            "country_code": "ES",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Systems Engineering and Automatics, University Carlos III of Madrid, Avda. Universidad, no. 30, Leganes, 28911, Madrid, Spain"
+        ]
+      },
+      {
+        "name": "Jorge Muñoz",
+        "openalex_author_id": "https://openalex.org/A5038460997",
+        "orcid": "https://orcid.org/0000-0003-1820-1831",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Universidad Carlos III de Madrid",
+            "ror": "https://ror.org/03ths8210",
+            "country_code": "ES",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Systems Engineering and Automatics, University Carlos III of Madrid, Avda. Universidad, no. 30, Leganes, 28911, Madrid, Spain"
+        ]
+      },
+      {
+        "name": "Dolores Blanco",
+        "openalex_author_id": "https://openalex.org/A5007484595",
+        "orcid": "https://orcid.org/0000-0001-6300-5165",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Universidad Carlos III de Madrid",
+            "ror": "https://ror.org/03ths8210",
+            "country_code": "ES",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Systems Engineering and Automatics, University Carlos III of Madrid, Avda. Universidad, no. 30, Leganes, 28911, Madrid, Spain"
+        ]
+      },
+      {
+        "name": "Concepción A. Monje",
+        "openalex_author_id": "https://openalex.org/A5136107210",
+        "orcid": "https://orcid.org/0000-0001-8295-127X",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Universidad Carlos III de Madrid",
+            "ror": "https://ror.org/03ths8210",
+            "country_code": "ES",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Systems Engineering and Automatics, University Carlos III of Madrid, Avda. Universidad, no. 30, Leganes, 28911, Madrid, Spain"
+        ]
+      },
+      {
+        "name": "Dorin Copaci",
+        "openalex_author_id": "https://openalex.org/A5136092078",
+        "orcid": "https://orcid.org/0000-0002-3070-0994",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Universidad Carlos III de Madrid",
+            "ror": "https://ror.org/03ths8210",
+            "country_code": "ES",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Systems Engineering and Automatics, University Carlos III of Madrid, Avda. Universidad, no. 30, Leganes, 28911, Madrid, Spain"
+        ]
+      }
+    ],
+    "corresponding_authors": [
+      {
+        "name": "Dorin Copaci",
+        "openalex_author_id": "https://openalex.org/A5136092078",
+        "orcid": "https://orcid.org/0000-0002-3070-0994",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Universidad Carlos III de Madrid",
+            "ror": "https://ror.org/03ths8210",
+            "country_code": "ES",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Systems Engineering and Automatics, University Carlos III of Madrid, Avda. Universidad, no. 30, Leganes, 28911, Madrid, Spain"
+        ]
+      }
+    ],
+    "openalex_work_id": "https://openalex.org/W7161115678",
+    "openalex_source_id": "https://openalex.org/S4210226253",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210226253",
+      "issn_l": "2590-1230",
+      "issn": [
+        "2590-1230"
+      ],
+      "type": "journal",
+      "host_organization_name": "Elsevier BV",
+      "works_count": null,
+      "cited_by_count": null,
+      "two_year_mean_citedness": null,
+      "h_index": null,
+      "i10_index": null,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
+    "id": "10.1016/j.rineng.2026.110883"
+  },
+  "10.21606/drs.2026.1046": {
+    "ai_summary_en": "1. Topic - This paper proposes a hierarchical taxonomy of stimuli, smart materials, and transformation effects in 4D printing.\n2. Problem - It aims to address the challenge non-technical designers face in identifying pathways from intended interactions to material outcomes.\n3. Method - The study employs a combined hierarchical classification and ontology-based classification approach grounded in a systematic literature review and ontology mapping.\n4. Key Result - The proposed taxonomy organizes complex stimulus-material-effect relationships, supporting the development of 4D printing design guidelines.\n5. Takeaway - The core message of this paper is that 4D printing can enable new forms of interaction design and fluid, responsive artifacts.",
+    "author_details": [
+      {
+        "name": "Jiayue Qin",
+        "openalex_author_id": "https://openalex.org/A5137571783",
+        "orcid": null,
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Brunel University of London",
+            "ror": "https://ror.org/00dn4t376",
+            "country_code": "GB",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Brunel University of London, United Kingdom"
+        ]
+      },
+      {
+        "name": "Eujin Pei",
+        "openalex_author_id": "https://openalex.org/A5019051358",
+        "orcid": "https://orcid.org/0000-0002-3628-8689",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Brunel University of London",
+            "ror": "https://ror.org/00dn4t376",
+            "country_code": "GB",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Brunel University of London, United Kingdom"
+        ]
+      },
+      {
+        "name": "Abdusselam Cifter",
+        "openalex_author_id": "https://openalex.org/A5137533822",
+        "orcid": null,
+        "position": "last",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Brunel University of London",
+            "ror": "https://ror.org/00dn4t376",
+            "country_code": "GB",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Brunel University of London, United Kingdom"
+        ]
+      }
+    ],
+    "openalex_work_id": "https://openalex.org/W7163045495",
+    "openalex_source_id": "https://openalex.org/S4220651532",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4220651532",
+      "issn_l": "2398-3132",
+      "issn": [
+        "2398-3132"
+      ],
+      "type": "journal",
+      "host_organization_name": null,
+      "works_count": null,
+      "cited_by_count": null,
+      "two_year_mean_citedness": null,
+      "h_index": null,
+      "i10_index": null,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "id": "10.21606/drs.2026.1046"
+  },
+  "10.1007/s40964-026-01669-w": {
+    "ai_summary_en": "1. Topic - This paper proposes a complexity index for optimizing VAT photopolymerization designs.\n2. Problem - There are limitations in effectively assessing and optimizing the complexity of existing design methods.\n3. Method - A fuzzy AHP (Analytic Hierarchy Process) approach is utilized to quantify complexity.\n4. Key Result - The proposed index has been demonstrated as a useful tool for design optimization.\n5. Takeaway - The key message is that the complexity index can enhance the efficiency of additive manufacturing designs.",
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "author_details": [
+      {
+        "name": "Dhal A. Matoc",
+        "openalex_author_id": "https://openalex.org/A5109014264",
+        "orcid": "https://orcid.org/0009-0004-0015-2511",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Marwadi University",
+            "ror": "https://ror.org/030dn1812",
+            "country_code": "IN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Marwadi University, Rajkot, India"
+        ]
+      },
+      {
+        "name": "Nikunj Maheta",
+        "openalex_author_id": "https://openalex.org/A5135242627",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Marwadi University",
+            "ror": "https://ror.org/030dn1812",
+            "country_code": "IN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Marwadi University, Rajkot, India"
+        ]
+      },
+      {
+        "name": "Amit Sata",
+        "openalex_author_id": "https://openalex.org/A5135174243",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Marwadi University",
+            "ror": "https://ror.org/030dn1812",
+            "country_code": "IN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Marwadi University, Rajkot, India"
+        ]
+      },
+      {
+        "name": "Bhavesh Kanabar",
+        "openalex_author_id": "https://openalex.org/A5135160183",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Marwadi University",
+            "ror": "https://ror.org/030dn1812",
+            "country_code": "IN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Marwadi University, Rajkot, India"
+        ]
+      },
+      {
+        "name": "Abhilash Edacherian",
+        "openalex_author_id": "https://openalex.org/A5082940553",
+        "orcid": "https://orcid.org/0000-0002-5594-264X",
+        "position": "last",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "King Khalid University",
+            "ror": "https://ror.org/052kwzs30",
+            "country_code": "SA",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "King Khalid University Abha, Abhā, Saudi Arabia"
+        ]
+      }
+    ],
+    "corresponding_authors": [
+      {
+        "name": "Amit Sata",
+        "openalex_author_id": "https://openalex.org/A5135174243",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Marwadi University",
+            "ror": "https://ror.org/030dn1812",
+            "country_code": "IN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Marwadi University, Rajkot, India"
+        ]
+      }
+    ],
+    "openalex_work_id": "https://openalex.org/W7160177840",
+    "openalex_source_id": "https://openalex.org/S4210206835",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210206835",
+      "issn_l": "2363-9512",
+      "issn": [
+        "2363-9512",
+        "2363-9520"
+      ],
+      "type": "journal",
+      "host_organization_name": "Springer Science+Business Media",
+      "works_count": null,
+      "cited_by_count": null,
+      "two_year_mean_citedness": null,
+      "h_index": null,
+      "i10_index": null,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "id": "10.1007/s40964-026-01669-w"
+  },
+  "10.1088/2631-7990/ae6b19": {
+    "ai_summary_en": "1. Topic - This paper addresses a curcumin strategy for mitigating light scattering in DLP ceramic 3D printing.\n2. Problem - Light scattering poses a significant challenge in achieving high precision and complex geometries in ceramic additive manufacturing.\n3. Method - The study employs a novel approach that combines light absorption and chemical radical scavenging using curcumin.\n4. Key Result - The method operates effectively at low concentrations, maintaining geometric errors below 10% in printed SiC components.\n5. Takeaway - This work offers a simple and scalable solution to enhance resolution in DLP ceramic printing.",
+    "author_details": [
+      {
+        "name": "Mingyue Cao",
+        "openalex_author_id": "https://openalex.org/A5135705988",
+        "orcid": null,
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Hunan University",
+            "ror": "https://ror.org/05htk5m33",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Hunan University"
+        ]
+      },
+      {
+        "name": "Wenxin Wang",
+        "openalex_author_id": "https://openalex.org/A5135665861",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Hunan University",
+            "ror": "https://ror.org/05htk5m33",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Hunan University"
+        ]
+      },
+      {
+        "name": "Xingyu Yang",
+        "openalex_author_id": "https://openalex.org/A5135673720",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Hunan University",
+            "ror": "https://ror.org/05htk5m33",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Hunan University"
+        ]
+      },
+      {
+        "name": "Wei Zhu",
+        "openalex_author_id": "https://openalex.org/A5135725501",
+        "orcid": "https://orcid.org/0000-0003-0148-6236",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Hunan University",
+            "ror": "https://ror.org/05htk5m33",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Hunan University"
+        ]
+      },
+      {
+        "name": "Xiaolong Zhu",
+        "openalex_author_id": "https://openalex.org/A5135694640",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Hunan University",
+            "ror": "https://ror.org/05htk5m33",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Hunan University"
+        ]
+      },
+      {
+        "name": "Yinfeng He",
+        "openalex_author_id": "https://openalex.org/A5030969292",
+        "orcid": "https://orcid.org/0000-0003-0325-8675",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "University of Nottingham",
+            "ror": "https://ror.org/01ee9ar58",
+            "country_code": "GB",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "University of Nottingham"
+        ]
+      },
+      {
+        "name": "Feng Chen",
+        "openalex_author_id": "https://openalex.org/A5135706420",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Hunan University",
+            "ror": "https://ror.org/05htk5m33",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Hunan University"
+        ]
+      },
+      {
+        "name": "Xiaoxiao Han",
+        "openalex_author_id": "https://openalex.org/A5135655549",
+        "orcid": "https://orcid.org/0000-0003-3007-6519",
+        "position": "last",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Hunan University",
+            "ror": "https://ror.org/05htk5m33",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Hunan University"
+        ]
+      }
+    ],
+    "openalex_work_id": "https://openalex.org/W7160643519",
+    "openalex_source_id": "https://openalex.org/S4210231351",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210231351",
+      "issn_l": "2631-7990",
+      "issn": [
+        "2631-7990",
+        "2631-8644"
+      ],
+      "type": "journal",
+      "host_organization_name": "IOP Publishing",
+      "works_count": null,
+      "cited_by_count": null,
+      "two_year_mean_citedness": null,
+      "h_index": null,
+      "i10_index": null,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "id": "10.1088/2631-7990/ae6b19"
+  },
+  "10.3390/mi17020226": {
+    "ai_summary_en": "1. Topic - This paper proposes a digital twin-driven process design framework for high-performance multi-jet polishing.\n2. Problem - It aims to address issues related to maintaining polishing quality and challenges in machining efficiency, system complexity, and stability under varying working conditions.\n3. Method - The approach utilizes a digital twin-based human-centric design framework and a feature-encoded transfer learning model to enhance surface roughness prediction accuracy.\n4. Key Result - The proposed method demonstrated improved predictive performance and cross-condition adaptability through experiments conducted under two different MJP working conditions.\n5. Takeaway - This work provides a predictive modeling component that supports optimizing complex ultra-precision manufacturing processes in data-scarce and uncertainty-dominated environments.",
+    "author_details": [
+      {
+        "name": "Honglei Mo",
+        "openalex_author_id": "https://openalex.org/A5081156914",
+        "orcid": null,
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": [
+          "Shanghai Aerospace Control Technology Institute, Shanghai 201109, China"
+        ]
+      },
+      {
+        "name": "Xie Chen",
+        "openalex_author_id": "https://openalex.org/A5123343302",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Hubei University of Technology",
+            "ror": "https://ror.org/02d3fj342",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Hubei Key Laboratory of Modern Manufacturing Quality Engineering, School of Mechanical Engineering, Hubei University of Technology, Wuhan 430068, China",
+          "Shanghai Aerospace Control Technology Institute, Shanghai 201109, China"
+        ]
+      },
+      {
+        "name": "Lingxi Guo",
+        "openalex_author_id": "https://openalex.org/A5061302382",
+        "orcid": "https://orcid.org/0000-0003-1191-8397",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": [
+          "Shanghai Aerospace Control Technology Institute, Shanghai 201109, China"
+        ]
+      },
+      {
+        "name": "Zili Zhang",
+        "openalex_author_id": "https://openalex.org/A5125514422",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Hong Kong Polytechnic University",
+            "ror": "https://ror.org/0030zas98",
+            "country_code": "HK",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "State Key Laboratory of Ultra-Precision Machining Technology, Department of Industrial and Systems Engineering, The Hong Kong Polytechnic University, Hong Kong 999077, China"
+        ]
+      },
+      {
+        "name": "Xiao Chen",
+        "openalex_author_id": "https://openalex.org/A5125584306",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Hubei University of Technology",
+            "ror": "https://ror.org/02d3fj342",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Hubei Key Laboratory of Modern Manufacturing Quality Engineering, School of Mechanical Engineering, Hubei University of Technology, Wuhan 430068, China",
+          "Shanghai Aerospace Control Technology Institute, Shanghai 201109, China"
+        ]
+      },
+      {
+        "name": "Jianning Chu",
+        "openalex_author_id": "https://openalex.org/A5085405826",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Hubei University of Technology",
+            "ror": "https://ror.org/02d3fj342",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Hubei Key Laboratory of Modern Manufacturing Quality Engineering, School of Mechanical Engineering, Hubei University of Technology, Wuhan 430068, China"
+        ]
+      },
+      {
+        "name": "Ruoxin Wang",
+        "openalex_author_id": "https://openalex.org/A5039256081",
+        "orcid": "https://orcid.org/0000-0002-6559-0975",
+        "position": "last",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "University of Maryland, College Park",
+            "ror": "https://ror.org/047s2c258",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering, University of Maryland College Park, College Park, MD 20742, USA"
+        ]
+      }
+    ],
+    "openalex_work_id": "https://openalex.org/W7128525754",
+    "openalex_source_id": "https://openalex.org/S96702057",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S96702057",
+      "issn_l": "2072-666X",
+      "issn": [
+        "2072-666X"
+      ],
+      "type": "journal",
+      "host_organization_name": "Multidisciplinary Digital Publishing Institute",
+      "works_count": null,
+      "cited_by_count": null,
+      "two_year_mean_citedness": null,
+      "h_index": null,
+      "i10_index": null,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "id": "10.3390/mi17020226"
+  },
+  "10.1002/admt.70618": {
+    "ai_summary_en": "1. Topic - This paper discusses volumetric additive manufacturing using thermally expandable resin for shape-memory functional foams.\n2. Problem - It aims to address the limitation of producing structures confined to the print volume in traditional additive manufacturing.\n3. Method - The approach involves using a foaming material developed for tomographic volumetric additive manufacturing to expand printed parts.\n4. Key Result - Expanding the printed parts allows for the creation of structures that exceed the original print volume, significantly affecting their mechanical properties.\n5. Takeaway - The core message of this paper is that utilizing thermally expandable resin can enhance the capabilities of additive manufacturing and improve the performance of structures.",
+    "author_details": [
+      {
+        "name": "Silvio Tisato",
+        "openalex_author_id": "https://openalex.org/A5096885708",
+        "orcid": "https://orcid.org/0009-0001-3970-7316",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "University of Freiburg",
+            "ror": "https://ror.org/0245cg223",
+            "country_code": "DE",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Freiburg Materials Research Center (FMF) University of Freiburg  Stefan‐Meier‐Str. 21 79104 Freiburg im Breisgau Germany"
+        ]
+      },
+      {
+        "name": "Grace Vera",
+        "openalex_author_id": "https://openalex.org/A5054830274",
+        "orcid": "https://orcid.org/0009-0000-8898-4785",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "University of Freiburg",
+            "ror": "https://ror.org/0245cg223",
+            "country_code": "DE",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Freiburg Materials Research Center (FMF) University of Freiburg  Stefan‐Meier‐Str. 21 79104 Freiburg im Breisgau Germany"
+        ]
+      },
+      {
+        "name": "Zahra Hosneolfat",
+        "openalex_author_id": "https://openalex.org/A5116242589",
+        "orcid": "https://orcid.org/0009-0009-6053-5772",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "University of Freiburg",
+            "ror": "https://ror.org/0245cg223",
+            "country_code": "DE",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Freiburg Materials Research Center (FMF) University of Freiburg  Stefan‐Meier‐Str. 21 79104 Freiburg im Breisgau Germany"
+        ]
+      },
+      {
+        "name": "Dorothea Helmer",
+        "openalex_author_id": "https://openalex.org/A5038426363",
+        "orcid": "https://orcid.org/0000-0003-0295-9701",
+        "position": "last",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "University of Freiburg",
+            "ror": "https://ror.org/0245cg223",
+            "country_code": "DE",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Freiburg Center of Interactive Materials and Bioinspired Technologies (FIT) University of Freiburg  Georges‐Köhler‐Allee 105 79110 Freiburg Germany",
+          "Freiburg Materials Research Center (FMF) University of Freiburg  Stefan‐Meier‐Str. 21 79104 Freiburg im Breisgau Germany",
+          "IMTEK – Laboratory of Process Technology University of Freiburg  Georges‐Köhler‐Allee 103 79110 Freiburg im Breisgau Germany"
+        ]
+      }
+    ],
+    "openalex_work_id": "https://openalex.org/W7118993987",
+    "openalex_source_id": "https://openalex.org/S2765038284",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S2765038284",
+      "issn_l": "2365-709X",
+      "issn": [
+        "2365-709X"
+      ],
+      "type": "journal",
+      "host_organization_name": "Wiley",
+      "works_count": null,
+      "cited_by_count": null,
+      "two_year_mean_citedness": null,
+      "h_index": null,
+      "i10_index": null,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "id": "10.1002/admt.70618"
+  },
+  "10.1002/admt.202501355": {
+    "ai_summary_en": "1. Topic - This paper discusses a thermally expandable resin for volumetric additive manufacturing.\n2. Problem - It aims to address the limitation of print sizes imposed by the resin vial in existing TVAM techniques.\n3. Method - The authors developed a foaming resin that expands thermally and is compatible with TVAM.\n4. Key Result - This material enables the rapid printing of lightweight structures with densities as low as 0.16 g/cm³.\n5. Takeaway - The study introduces a new category of materials to TVAM, allowing for the quick production of large structures without altering the printing system.",
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "author_details": [
+      {
+        "name": "Silvio Tisato",
+        "openalex_author_id": "https://openalex.org/A5096885708",
+        "orcid": "https://orcid.org/0009-0001-3970-7316",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "University of Freiburg",
+            "ror": "https://ror.org/0245cg223",
+            "country_code": "DE",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Freiburg Materials Research Center (FMF) University of Freiburg  Stefan‐Meier‐Str. 21 79104 Freiburg im Breisgau Germany"
+        ]
+      },
+      {
+        "name": "Grace Vera",
+        "openalex_author_id": "https://openalex.org/A5054830274",
+        "orcid": "https://orcid.org/0009-0000-8898-4785",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "University of Freiburg",
+            "ror": "https://ror.org/0245cg223",
+            "country_code": "DE",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Freiburg Materials Research Center (FMF) University of Freiburg  Stefan‐Meier‐Str. 21 79104 Freiburg im Breisgau Germany"
+        ]
+      },
+      {
+        "name": "Zahra Hosneolfat",
+        "openalex_author_id": "https://openalex.org/A5116242589",
+        "orcid": "https://orcid.org/0009-0009-6053-5772",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "University of Freiburg",
+            "ror": "https://ror.org/0245cg223",
+            "country_code": "DE",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Freiburg Materials Research Center (FMF) University of Freiburg  Stefan‐Meier‐Str. 21 79104 Freiburg im Breisgau Germany"
+        ]
+      },
+      {
+        "name": "Dorothea Helmer",
+        "openalex_author_id": "https://openalex.org/A5038426363",
+        "orcid": "https://orcid.org/0000-0003-0295-9701",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Freiburg",
+            "ror": "https://ror.org/0245cg223",
+            "country_code": "DE",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Freiburg Center of Interactive Materials and Bioinspired Technologies (FIT) University of Freiburg  Georges‐Köhler‐Allee 105 79110 Freiburg Germany",
+          "Freiburg Materials Research Center (FMF) University of Freiburg  Stefan‐Meier‐Str. 21 79104 Freiburg im Breisgau Germany",
+          "IMTEK – Laboratory of Process Technology University of Freiburg  Georges‐Köhler‐Allee 103 79110 Freiburg im Breisgau Germany"
+        ]
+      }
+    ],
+    "corresponding_authors": [
+      {
+        "name": "Dorothea Helmer",
+        "openalex_author_id": "https://openalex.org/A5038426363",
+        "orcid": "https://orcid.org/0000-0003-0295-9701",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Freiburg",
+            "ror": "https://ror.org/0245cg223",
+            "country_code": "DE",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Freiburg Center of Interactive Materials and Bioinspired Technologies (FIT) University of Freiburg  Georges‐Köhler‐Allee 105 79110 Freiburg Germany",
+          "Freiburg Materials Research Center (FMF) University of Freiburg  Stefan‐Meier‐Str. 21 79104 Freiburg im Breisgau Germany",
+          "IMTEK – Laboratory of Process Technology University of Freiburg  Georges‐Köhler‐Allee 103 79110 Freiburg im Breisgau Germany"
+        ]
+      }
+    ],
+    "openalex_work_id": "https://openalex.org/W4414485162",
+    "openalex_source_id": "https://openalex.org/S2765038284",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S2765038284",
+      "issn_l": "2365-709X",
+      "issn": [
+        "2365-709X"
+      ],
+      "type": "journal",
+      "host_organization_name": "Wiley",
+      "works_count": null,
+      "cited_by_count": null,
+      "two_year_mean_citedness": null,
+      "h_index": null,
+      "i10_index": null,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "id": "10.1002/admt.202501355"
+  },
+  "10.1016/j.susmat.2026.e02096": {
+    "ai_summary_en": "",
+    "author_details": [
+      {
+        "name": "Chiara Olla",
+        "openalex_author_id": "https://openalex.org/A5033182760",
+        "orcid": "https://orcid.org/0000-0002-0345-445X",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Cagliari",
+            "ror": "https://ror.org/003109y17",
+            "country_code": "IT",
+            "type": "education"
+          },
+          {
+            "name": "Istituto Nazionale di Fisica Nucleare, Sezione di Cagliari",
+            "ror": "https://ror.org/03paz5966",
+            "country_code": "IT",
+            "type": "facility"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Physics, University of Cagliari, Cittadella Universitaria, Monserrato, 09042, Italy"
+        ]
+      },
+      {
+        "name": "Alberto Martis",
+        "openalex_author_id": "https://openalex.org/A5017393838",
+        "orcid": "https://orcid.org/0000-0001-8311-1547",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Center for Sustainable Future Technologies",
+            "ror": "https://ror.org/05qp1qg36",
+            "country_code": "IT",
+            "type": "facility"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Center for Sustainable Future Technologies (CSFT)@Polito, Istituto Italiano di Tecnologia, Via Livorno 60, Turin, 10144, Italy"
+        ]
+      },
+      {
+        "name": "Carlo Barontini",
+        "openalex_author_id": "https://openalex.org/A5138130012",
+        "orcid": "https://orcid.org/0009-0009-4369-232X",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "University of Cagliari",
+            "ror": "https://ror.org/003109y17",
+            "country_code": "IT",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Chemical and Geological Sciences, University of Cagliari, Cittadella Universitaria, Monserrato, 09042, Italy"
+        ]
+      },
+      {
+        "name": "Carlo Maria Carbonaro",
+        "openalex_author_id": "https://openalex.org/A5051043137",
+        "orcid": "https://orcid.org/0000-0001-6353-6409",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "University of Cagliari",
+            "ror": "https://ror.org/003109y17",
+            "country_code": "IT",
+            "type": "education"
+          },
+          {
+            "name": "Istituto Nazionale di Fisica Nucleare, Sezione di Cagliari",
+            "ror": "https://ror.org/03paz5966",
+            "country_code": "IT",
+            "type": "facility"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Physics, University of Cagliari, Cittadella Universitaria, Monserrato, 09042, Italy"
+        ]
+      },
+      {
+        "name": "Ignazio Roppolo",
+        "openalex_author_id": "https://openalex.org/A5036705237",
+        "orcid": "https://orcid.org/0000-0001-7602-4015",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Politecnico di Torino",
+            "ror": "https://ror.org/00bgk9508",
+            "country_code": "IT",
+            "type": "education"
+          },
+          {
+            "name": "Center for Sustainable Future Technologies",
+            "ror": "https://ror.org/05qp1qg36",
+            "country_code": "IT",
+            "type": "facility"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Center for Sustainable Future Technologies (CSFT)@Polito, Istituto Italiano di Tecnologia, Via Livorno 60, Turin, 10144, Italy",
+          "Department of Applied Science and Technology, Politecnico di Torino, Corso Duca degli Abruzzi 24, Turin, 10129, Italy"
+        ]
+      },
+      {
+        "name": "Pier Carlo Ricci",
+        "openalex_author_id": "https://openalex.org/A5015517822",
+        "orcid": "https://orcid.org/0000-0001-6191-4613",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "University of Cagliari",
+            "ror": "https://ror.org/003109y17",
+            "country_code": "IT",
+            "type": "education"
+          },
+          {
+            "name": "Istituto Nazionale di Fisica Nucleare, Sezione di Cagliari",
+            "ror": "https://ror.org/03paz5966",
+            "country_code": "IT",
+            "type": "facility"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Physics, University of Cagliari, Cittadella Universitaria, Monserrato, 09042, Italy"
+        ]
+      },
+      {
+        "name": "Francesco Secci",
+        "openalex_author_id": "https://openalex.org/A5058823611",
+        "orcid": "https://orcid.org/0000-0003-0443-2890",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "University of Cagliari",
+            "ror": "https://ror.org/003109y17",
+            "country_code": "IT",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Chemical and Geological Sciences, University of Cagliari, Cittadella Universitaria, Monserrato, 09042, Italy"
+        ]
+      },
+      {
+        "name": "Annalisa Chiappone",
+        "openalex_author_id": "https://openalex.org/A5138190730",
+        "orcid": "https://orcid.org/0000-0003-4651-1140",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Cagliari",
+            "ror": "https://ror.org/003109y17",
+            "country_code": "IT",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Chemical and Geological Sciences, University of Cagliari, Cittadella Universitaria, Monserrato, 09042, Italy"
+        ]
+      }
+    ],
+    "corresponding_authors": [
+      {
+        "name": "Chiara Olla",
+        "openalex_author_id": "https://openalex.org/A5033182760",
+        "orcid": "https://orcid.org/0000-0002-0345-445X",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Cagliari",
+            "ror": "https://ror.org/003109y17",
+            "country_code": "IT",
+            "type": "education"
+          },
+          {
+            "name": "Istituto Nazionale di Fisica Nucleare, Sezione di Cagliari",
+            "ror": "https://ror.org/03paz5966",
+            "country_code": "IT",
+            "type": "facility"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Physics, University of Cagliari, Cittadella Universitaria, Monserrato, 09042, Italy"
+        ]
+      },
+      {
+        "name": "Annalisa Chiappone",
+        "openalex_author_id": "https://openalex.org/A5138190730",
+        "orcid": "https://orcid.org/0000-0003-4651-1140",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Cagliari",
+            "ror": "https://ror.org/003109y17",
+            "country_code": "IT",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Chemical and Geological Sciences, University of Cagliari, Cittadella Universitaria, Monserrato, 09042, Italy"
+        ]
+      }
+    ],
+    "openalex_work_id": "https://openalex.org/W7163884683",
+    "openalex_source_id": "https://openalex.org/S2898501196",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S2898501196",
+      "issn_l": "2214-9929",
+      "issn": [
+        "2214-9929",
+        "2214-9937"
+      ],
+      "type": "journal",
+      "host_organization_name": "Elsevier BV",
+      "works_count": null,
+      "cited_by_count": null,
+      "two_year_mean_citedness": null,
+      "h_index": null,
+      "i10_index": null,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "id": "10.1016/j.susmat.2026.e02096"
+  },
   "10.21203/rs.3.rs-9345215/v1": {
     "ai_summary_en": "1. Topic - This paper addresses a closed-loop machine learning and digital twin framework for the discovery of high-performance solid-state electrolytes.\n2. Problem - It aims to resolve inefficiencies in the optimization and discovery process of solid electrolytes.\n3. Method - The approach combines closed-loop machine learning with digital twin technology to integrate experiments and simulations.\n4. Key Result - The framework significantly improved the speed and accuracy of discovering high-performance solid-state electrolytes.\n5. Takeaway - Thus, the core message of this paper is that the integration of machine learning and digital twins can bring revolutionary changes to material discovery.",
     "author_details": [
@@ -33503,1199 +35069,5 @@
       "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
     },
     "id": "10.1201/9781003343868-4"
-  },
-  "10.3390/jmmp10010005": {
-    "ai_summary_en": "1. Topic - This paper addresses the costs, sustainability, and global adoption of additive manufacturing.\n2. Problem - It aims to resolve the issue of uneven realization of additive manufacturing's advantages across different industries and regions.\n3. Method - The study synthesizes evidence from various additive manufacturing processes to analyze the technical and economic factors involved.\n4. Key Result - It concludes that additive manufacturing can deliver significant improvements in cost efficiency, sustainability, and global adoption when certain conditions are met.\n5. Takeaway - For successful industrial deployment of additive manufacturing, aligning parts and supply chains with suitable processes, decarbonizing feedstock production, and increasing system utilization are essential.",
-    "author_details": [
-      {
-        "name": "Helia Mohammadkamal",
-        "openalex_author_id": "https://openalex.org/A5104987706",
-        "orcid": null,
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "University of Salerno",
-            "ror": "https://ror.org/0192m2k53",
-            "country_code": "IT",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Industrial Engineering, University of Salerno, Via Giovanni Paolo II, 132, 84084 Fisciano, SA, Italy"
-        ]
-      },
-      {
-        "name": "Sina Zinatlou Ajabshir",
-        "openalex_author_id": "https://openalex.org/A5076901975",
-        "orcid": "https://orcid.org/0000-0002-6997-5063",
-        "position": "middle",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "University of Salerno",
-            "ror": "https://ror.org/0192m2k53",
-            "country_code": "IT",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Industrial Engineering, University of Salerno, Via Giovanni Paolo II, 132, 84084 Fisciano, SA, Italy"
-        ]
-      },
-      {
-        "name": "Amir Mostafaei",
-        "openalex_author_id": "https://openalex.org/A5038843621",
-        "orcid": "https://orcid.org/0000-0002-5262-8786",
-        "position": "last",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "Illinois Institute of Technology",
-            "ror": "https://ror.org/037t3ry66",
-            "country_code": "US",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical, Materials, and Aerospace Engineering, Illinois Institute of Technology, 10 W 32nd Street, Chicago, IL 60616, USA"
-        ]
-      }
-    ],
-    "corresponding_authors": [
-      {
-        "name": "Amir Mostafaei",
-        "openalex_author_id": "https://openalex.org/A5038843621",
-        "orcid": "https://orcid.org/0000-0002-5262-8786",
-        "position": "last",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "Illinois Institute of Technology",
-            "ror": "https://ror.org/037t3ry66",
-            "country_code": "US",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical, Materials, and Aerospace Engineering, Illinois Institute of Technology, 10 W 32nd Street, Chicago, IL 60616, USA"
-        ]
-      }
-    ],
-    "openalex_work_id": "https://openalex.org/W7117131513",
-    "openalex_source_id": "https://openalex.org/S4210232045",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S4210232045",
-      "issn_l": "2504-4494",
-      "issn": [
-        "2504-4494"
-      ],
-      "type": "journal",
-      "host_organization_name": "Multidisciplinary Digital Publishing Institute",
-      "works_count": null,
-      "cited_by_count": null,
-      "two_year_mean_citedness": null,
-      "h_index": null,
-      "i10_index": null,
-      "is_oa": true,
-      "is_in_doaj": true
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "id": "10.3390/jmmp10010005"
-  },
-  "10.24853/sintek.19.2.113-131": {
-    "ai_summary_en": "1. Topic - This paper addresses the analysis of mechanical vibrations and their acoustic emissions during the 3D printing process to establish a foundation for machine condition monitoring.\n2. Problem - The vibrations during printing adversely affect dimensional accuracy and interlayer adhesion, highlighting the need for effective process monitoring.\n3. Method - The study utilized five fundamental motion patterns fabricated on an FDM 3D printer, capturing acoustic emissions with two microphones and analyzing them in the time domain.\n4. Key Result - The vertical toolpath exhibited the lowest RMS and Crest Factor values, indicating the most stable acoustic emission, confirming the influence of motion geometry on the printer's acoustic signature.\n5. Takeaway - Time-domain acoustic analysis is a viable technique for characterizing machine performance, laying the groundwork for future real-time sound-based monitoring systems.",
-    "author_details": [
-      {
-        "name": "Mahmud Mahmud",
-        "openalex_author_id": "https://openalex.org/A5126552120",
-        "orcid": null,
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": [
-          "Department of Mechanical Engineering, Politeknik Negeri Lhokseumawe, Lhokseumawe 24301, Indonesia"
-        ]
-      },
-      {
-        "name": "M. Dirhamsyah",
-        "openalex_author_id": "https://openalex.org/A5126557540",
-        "orcid": null,
-        "position": "middle",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Universitas Syiah Kuala",
-            "ror": "https://ror.org/05v4dza81",
-            "country_code": "ID",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical and Industrial Engineering, Universitas Syiah Kuala, Banda Aceh 23111, Indonesia"
-        ]
-      },
-      {
-        "name": "Muhammad Rizal",
-        "openalex_author_id": "https://openalex.org/A5112384719",
-        "orcid": null,
-        "position": "middle",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Universitas Syiah Kuala",
-            "ror": "https://ror.org/05v4dza81",
-            "country_code": "ID",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical and Industrial Engineering, Universitas Syiah Kuala, Banda Aceh 23111, Indonesia"
-        ]
-      },
-      {
-        "name": "Hamdani Hamdani",
-        "openalex_author_id": "https://openalex.org/A5112676907",
-        "orcid": null,
-        "position": "middle",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": [
-          "Department of Mechanical Engineering, Politeknik Negeri Lhokseumawe, Lhokseumawe 24301, Indonesia"
-        ]
-      },
-      {
-        "name": "Azwar Azwar",
-        "openalex_author_id": "https://openalex.org/A5126552572",
-        "orcid": null,
-        "position": "middle",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": [
-          "Department of Mechanical Engineering, Politeknik Negeri Lhokseumawe, Lhokseumawe 24301, Indonesia"
-        ]
-      },
-      {
-        "name": "Sariyusda Sariyusda",
-        "openalex_author_id": "https://openalex.org/A5035988642",
-        "orcid": null,
-        "position": "middle",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": [
-          "Department of Mechanical Engineering, Politeknik Negeri Lhokseumawe, Lhokseumawe 24301, Indonesia"
-        ]
-      },
-      {
-        "name": "Zulfadli Zulfadli",
-        "openalex_author_id": "https://openalex.org/A5126530122",
-        "orcid": null,
-        "position": "last",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Universitas Muhammadiyah Aceh",
-            "ror": "https://ror.org/01pmdrn98",
-            "country_code": "ID",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechatronics, Politeknik Aceh, Banda Aceh 23119, Indonesia"
-        ]
-      }
-    ],
-    "openalex_work_id": "https://openalex.org/W7130881619",
-    "openalex_source_id": "https://openalex.org/S4210216454",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S4210216454",
-      "issn_l": "2088-9038",
-      "issn": [
-        "2088-9038",
-        "2549-9645"
-      ],
-      "type": "journal",
-      "host_organization_name": null,
-      "works_count": null,
-      "cited_by_count": null,
-      "two_year_mean_citedness": null,
-      "h_index": null,
-      "i10_index": null,
-      "is_oa": true,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "id": "10.24853/sintek.19.2.113-131"
-  },
-  "10.1177/08927057251332788": {
-    "ai_summary_en": "1. Topic - This paper addresses the interface between structural optimization for anisotropic materials and modern additive manufacturing methods.\n2. Problem - It aims to solve the issue of narrowing the gap between optimization results and the simulated performance of manufactured parts.\n3. Method - The approach involves a design workflow that optimizes material orientations and topology simultaneously, along with non-planar slicing and load-oriented path planning.\n4. Key Result - The proposed workflow successfully demonstrates the potential for designing parts while considering manufacturability.\n5. Takeaway - The core message of this paper is that the design process for optimizing anisotropic structures must reflect the requirements of additive manufacturing.",
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "author_details": [
-      {
-        "name": "Kai Steltner",
-        "openalex_author_id": "https://openalex.org/A5077987490",
-        "orcid": "https://orcid.org/0000-0003-1590-3707",
-        "position": "first",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "Universität Hamburg",
-            "ror": "https://ror.org/00g30e956",
-            "country_code": "DE",
-            "type": "education"
-          },
-          {
-            "name": "Hamburg University of Technology",
-            "ror": "https://ror.org/04bs1pb34",
-            "country_code": "DE",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Institute for Structural Mechanics in Lightweight Design, Hamburg University of Technology, Hamburg, Germany"
-        ]
-      },
-      {
-        "name": "Johann Kipping",
-        "openalex_author_id": "https://openalex.org/A5066388876",
-        "orcid": "https://orcid.org/0000-0001-7780-2712",
-        "position": "middle",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Universität Hamburg",
-            "ror": "https://ror.org/00g30e956",
-            "country_code": "DE",
-            "type": "education"
-          },
-          {
-            "name": "Hamburg University of Technology",
-            "ror": "https://ror.org/04bs1pb34",
-            "country_code": "DE",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Institute for Aircraft Production Technology, Hamburg University of Technology, Hamburg, Germany"
-        ]
-      },
-      {
-        "name": "Thorsten Schüppstuhl",
-        "openalex_author_id": "https://openalex.org/A5010136138",
-        "orcid": "https://orcid.org/0000-0002-9616-3976",
-        "position": "middle",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Universität Hamburg",
-            "ror": "https://ror.org/00g30e956",
-            "country_code": "DE",
-            "type": "education"
-          },
-          {
-            "name": "Hamburg University of Technology",
-            "ror": "https://ror.org/04bs1pb34",
-            "country_code": "DE",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Institute for Aircraft Production Technology, Hamburg University of Technology, Hamburg, Germany"
-        ]
-      },
-      {
-        "name": "Benedikt Kriegesmann",
-        "openalex_author_id": "https://openalex.org/A5042938851",
-        "orcid": "https://orcid.org/0000-0001-5330-9886",
-        "position": "last",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Universität Hamburg",
-            "ror": "https://ror.org/00g30e956",
-            "country_code": "DE",
-            "type": "education"
-          },
-          {
-            "name": "Hamburg University of Technology",
-            "ror": "https://ror.org/04bs1pb34",
-            "country_code": "DE",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Institute for Structural Mechanics in Lightweight Design, Hamburg University of Technology, Hamburg, Germany"
-        ]
-      }
-    ],
-    "corresponding_authors": [
-      {
-        "name": "Kai Steltner",
-        "openalex_author_id": "https://openalex.org/A5077987490",
-        "orcid": "https://orcid.org/0000-0003-1590-3707",
-        "position": "first",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "Universität Hamburg",
-            "ror": "https://ror.org/00g30e956",
-            "country_code": "DE",
-            "type": "education"
-          },
-          {
-            "name": "Hamburg University of Technology",
-            "ror": "https://ror.org/04bs1pb34",
-            "country_code": "DE",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Institute for Structural Mechanics in Lightweight Design, Hamburg University of Technology, Hamburg, Germany"
-        ]
-      }
-    ],
-    "openalex_work_id": "https://openalex.org/W4410939815",
-    "openalex_source_id": "https://openalex.org/S159246406",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S159246406",
-      "issn_l": "0892-7057",
-      "issn": [
-        "0892-7057",
-        "1530-7980"
-      ],
-      "type": "journal",
-      "host_organization_name": "SAGE Publishing",
-      "works_count": null,
-      "cited_by_count": null,
-      "two_year_mean_citedness": null,
-      "h_index": null,
-      "i10_index": null,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "id": "10.1177/08927057251332788"
-  },
-  "10.3389/fmech.2025.1696957": {
-    "ai_summary_en": "1. Topic - This paper addresses a systematic review of thermodynamic modeling and machine learning integration for optimizing plate heat exchanger performance in Uganda's brewing industry.\n2. Problem - The performance of plate heat exchangers is constrained by fouling, variable thermal loads, and resource limitations, necessitating solutions to these issues.\n3. Method - A systematic review was conducted to compare the performance of traditional approaches with hybrid models utilizing thermodynamic modeling and machine learning techniques.\n4. Key Result - Hybrid models consistently outperformed traditional modeling approaches in predictive accuracy and energy efficiency.\n5. Takeaway - The findings demonstrate the potential of combining thermodynamic modeling with AI-driven methodologies to enhance plate heat exchanger performance in tropical environments like Uganda.",
-    "author_details": [
-      {
-        "name": "Byamanywoha Edgar",
-        "openalex_author_id": null,
-        "orcid": null,
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Kampala International University",
-            "ror": "https://ror.org/017g82c94",
-            "country_code": "UG",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical Engineering, Kampala International University, Bushenyi, Uganda"
-        ]
-      },
-      {
-        "name": "Val Hyginus Udoka Eze",
-        "openalex_author_id": "https://openalex.org/A5037040967",
-        "orcid": "https://orcid.org/0000-0002-6764-1721",
-        "position": "middle",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "Mbarara University of Science and Technology",
-            "ror": "https://ror.org/01bkn5154",
-            "country_code": "UG",
-            "type": "education"
-          },
-          {
-            "name": "Kampala International University",
-            "ror": "https://ror.org/017g82c94",
-            "country_code": "UG",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Electrical and Electronics Engineering, Mbarara University of Science and Technology, Kihumuro, Uganda",
-          "Department of Electrical, Telecom and Computer Engineering, Kampala International University, Bushenyi, Uganda"
-        ]
-      },
-      {
-        "name": "Saadelnour Abdueljabbar Adam Saadelnour",
-        "openalex_author_id": "https://openalex.org/A5002639079",
-        "orcid": null,
-        "position": "middle",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Kampala International University",
-            "ror": "https://ror.org/017g82c94",
-            "country_code": "UG",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical Engineering, Kampala International University, Bushenyi, Uganda"
-        ]
-      },
-      {
-        "name": "Sanusi Yinka",
-        "openalex_author_id": "https://openalex.org/A5120228351",
-        "orcid": null,
-        "position": "middle",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Kampala International University",
-            "ror": "https://ror.org/017g82c94",
-            "country_code": "UG",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical Engineering, Kampala International University, Bushenyi, Uganda"
-        ]
-      },
-      {
-        "name": "Pius Erheyovwe Bubu",
-        "openalex_author_id": "https://openalex.org/A5117702482",
-        "orcid": null,
-        "position": "last",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Kampala International University",
-            "ror": "https://ror.org/017g82c94",
-            "country_code": "UG",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical Engineering, Kampala International University, Bushenyi, Uganda"
-        ]
-      }
-    ],
-    "corresponding_authors": [
-      {
-        "name": "Val Hyginus Udoka Eze",
-        "openalex_author_id": "https://openalex.org/A5037040967",
-        "orcid": "https://orcid.org/0000-0002-6764-1721",
-        "position": "middle",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "Mbarara University of Science and Technology",
-            "ror": "https://ror.org/01bkn5154",
-            "country_code": "UG",
-            "type": "education"
-          },
-          {
-            "name": "Kampala International University",
-            "ror": "https://ror.org/017g82c94",
-            "country_code": "UG",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Electrical and Electronics Engineering, Mbarara University of Science and Technology, Kihumuro, Uganda",
-          "Department of Electrical, Telecom and Computer Engineering, Kampala International University, Bushenyi, Uganda"
-        ]
-      }
-    ],
-    "openalex_work_id": "https://openalex.org/W4416894394",
-    "openalex_source_id": "https://openalex.org/S2596399182",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S2596399182",
-      "issn_l": "2297-3079",
-      "issn": [
-        "2297-3079"
-      ],
-      "type": "journal",
-      "host_organization_name": "Frontiers Media",
-      "works_count": null,
-      "cited_by_count": null,
-      "two_year_mean_citedness": null,
-      "h_index": null,
-      "i10_index": null,
-      "is_oa": true,
-      "is_in_doaj": true
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "id": "10.3389/fmech.2025.1696957"
-  },
-  "10.1038/s41467-025-56025-3": {
-    "ai_summary_en": "1. Topic - This paper proposes a multi-material design and printing framework for soft robots.\n2. Problem - It aims to address the limitations of soft robots related to structural integrity and dependence on open-curve movement paths.\n3. Method - The approach involves 3D printing by blending thermoplastics of varying Shore hardness into a monolithic system.\n4. Key Result - The framework successfully produced a legged soft robotic system capable of operating across various terrains.\n5. Takeaway - This paper presents a cost-effective approach for creating 3D-printed soft robots suitable for real-world applications.",
-    "author_details": [
-      {
-        "name": "Cem Aygül",
-        "openalex_author_id": "https://openalex.org/A5082392495",
-        "orcid": "https://orcid.org/0000-0001-5203-9394",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Tufts University",
-            "ror": "https://ror.org/05wvpxv85",
-            "country_code": "US",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical Engineering, Tufts University, Medford, MA, USA"
-        ]
-      },
-      {
-        "name": "Can Güven",
-        "openalex_author_id": "https://openalex.org/A5116173541",
-        "orcid": "https://orcid.org/0009-0005-0014-1182",
-        "position": "middle",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Worcester Polytechnic Institute",
-            "ror": "https://ror.org/05ejpqr48",
-            "country_code": "US",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Robotics Engineering, Worcester Polytechnic Institute, Worcester, MA, USA"
-        ]
-      },
-      {
-        "name": "Sara Frunzi",
-        "openalex_author_id": "https://openalex.org/A5080479517",
-        "orcid": null,
-        "position": "middle",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Worcester Polytechnic Institute",
-            "ror": "https://ror.org/05ejpqr48",
-            "country_code": "US",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Robotics Engineering, Worcester Polytechnic Institute, Worcester, MA, USA"
-        ]
-      },
-      {
-        "name": "Brian F. G. Katz",
-        "openalex_author_id": "https://openalex.org/A5086050450",
-        "orcid": "https://orcid.org/0000-0001-5118-0943",
-        "position": "middle",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Worcester Polytechnic Institute",
-            "ror": "https://ror.org/05ejpqr48",
-            "country_code": "US",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Robotics Engineering, Worcester Polytechnic Institute, Worcester, MA, USA"
-        ]
-      },
-      {
-        "name": "Markus P. Nemitz",
-        "openalex_author_id": "https://openalex.org/A5075236868",
-        "orcid": "https://orcid.org/0000-0003-0771-5407",
-        "position": "last",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "Tufts University",
-            "ror": "https://ror.org/05wvpxv85",
-            "country_code": "US",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical Engineering, Tufts University, Medford, MA, USA. markus.nemitz@tufts.edu",
-          "Department of Mechanical Engineering, Tufts University, Medford, MA, USA"
-        ]
-      }
-    ],
-    "corresponding_authors": [
-      {
-        "name": "Markus P. Nemitz",
-        "openalex_author_id": "https://openalex.org/A5075236868",
-        "orcid": "https://orcid.org/0000-0003-0771-5407",
-        "position": "last",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "Tufts University",
-            "ror": "https://ror.org/05wvpxv85",
-            "country_code": "US",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical Engineering, Tufts University, Medford, MA, USA. markus.nemitz@tufts.edu",
-          "Department of Mechanical Engineering, Tufts University, Medford, MA, USA"
-        ]
-      }
-    ],
-    "openalex_work_id": "https://openalex.org/W4407204672",
-    "openalex_source_id": "https://openalex.org/S64187185",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S64187185",
-      "issn_l": "2041-1723",
-      "issn": [
-        "2041-1723"
-      ],
-      "type": "journal",
-      "host_organization_name": "Nature Portfolio",
-      "works_count": null,
-      "cited_by_count": null,
-      "two_year_mean_citedness": null,
-      "h_index": null,
-      "i10_index": null,
-      "is_oa": true,
-      "is_in_doaj": true
-    },
-    "journal_quality": {
-      "label": "High-impact general journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "id": "10.1038/s41467-025-56025-3"
-  },
-  "10.31127/tuje.1502587": {
-    "ai_summary_en": "1. Topic - This paper comprehensively discusses the application of artificial intelligence and machine learning in additive manufacturing.\n2. Problem - It presents various challenges that need to be addressed to enhance the performance of additive manufacturing.\n3. Method - The review examines the application of various advanced technologies, including AI, ML, IoT, Digital Twins, and Blockchain.\n4. Key Result - The study demonstrates that the application of AI and ML in additive manufacturing processes can contribute to quality improvement.\n5. Takeaway - Ultimately, the paper conveys that integrating AI and ML is essential for improving the quality of additive manufacturing.",
-    "author_details": [
-      {
-        "name": "N. Ethiraj",
-        "openalex_author_id": "https://openalex.org/A5073515099",
-        "orcid": "https://orcid.org/0000-0002-7174-5443",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Dr. M.G.R. Educational and Research Institute",
-            "ror": "https://ror.org/053hsst90",
-            "country_code": "IN",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Dr.M.G.R Educational and Research Institute"
-        ]
-      },
-      {
-        "name": "T. Sivabalan",
-        "openalex_author_id": "https://openalex.org/A5028621476",
-        "orcid": "https://orcid.org/0000-0003-1683-7481",
-        "position": "middle",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Dr. M.G.R. Educational and Research Institute",
-            "ror": "https://ror.org/053hsst90",
-            "country_code": "IN",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Dr.M.G.R Educational and Research Institute"
-        ]
-      },
-      {
-        "name": "J. Sofia Vincent",
-        "openalex_author_id": "https://openalex.org/A5063504459",
-        "orcid": "https://orcid.org/0000-0002-9565-7712",
-        "position": "middle",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Dr. M.G.R. Educational and Research Institute",
-            "ror": "https://ror.org/053hsst90",
-            "country_code": "IN",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Dr.M.G.R Educational and Research Institute"
-        ]
-      },
-      {
-        "name": "Dommaraju Harika",
-        "openalex_author_id": null,
-        "orcid": "https://orcid.org/0009-0004-1778-6924",
-        "position": "middle",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Dr. M.G.R. Educational and Research Institute",
-            "ror": "https://ror.org/053hsst90",
-            "country_code": "IN",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Dr.M.G.R Educational and Research Institute"
-        ]
-      },
-      {
-        "name": "Maria P. Nikolova",
-        "openalex_author_id": "https://openalex.org/A5025523918",
-        "orcid": "https://orcid.org/0000-0002-0597-7799",
-        "position": "last",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Angel Kanchev University of Ruse",
-            "ror": "https://ror.org/01g09ef73",
-            "country_code": "BG",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "The University of Ruse \"A. Kanchev\","
-        ]
-      }
-    ],
-    "openalex_work_id": "https://openalex.org/W4406001711",
-    "openalex_source_id": "https://openalex.org/S4210214124",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S4210214124",
-      "issn_l": "2587-1366",
-      "issn": [
-        "2587-1366"
-      ],
-      "type": "journal",
-      "host_organization_name": "Süleyman Demirel University",
-      "works_count": null,
-      "cited_by_count": null,
-      "two_year_mean_citedness": null,
-      "h_index": null,
-      "i10_index": null,
-      "is_oa": true,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "id": "10.31127/tuje.1502587"
-  },
-  "10.59828/ijsrmst.v4i8.353": {
-    "ai_summary_en": "1. Topic - This paper provides a comprehensive overview of Wire Arc Additive Manufacturing (WAAM) technology.\n2. Problem - It aims to address major challenges in WAAM such as thermal distortion, residual stresses, anisotropy, porosity, poor surface finish, and low standardization.\n3. Method - The authors discuss the basic principles, major components, working principles, and physics of WAAM, along with current research trends and future prospects.\n4. Key Result - The paper highlights the current state and recent advancements in WAAM technology, emphasizing its applications across various industries.\n5. Takeaway - The core message is that WAAM technology will play a significant role in the field of high-performance additive manufacturing.",
-    "author_details": [
-      {
-        "name": "Parankush Koul",
-        "openalex_author_id": "https://openalex.org/A5114656352",
-        "orcid": null,
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Illinois Institute of Technology",
-            "ror": "https://ror.org/037t3ry66",
-            "country_code": "US",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Student, Department of Mechanical and Aerospace Engineering, Illinois Institute of Technology, Chicago, Illinois, United States of America - 60616"
-        ]
-      },
-      {
-        "name": "Yashavanth Siddaramu",
-        "openalex_author_id": "https://openalex.org/A5117724632",
-        "orcid": null,
-        "position": "last",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Illinois Institute of Technology",
-            "ror": "https://ror.org/037t3ry66",
-            "country_code": "US",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Student, Department of Mechanical and Aerospace Engineering, Illinois Institute of Technology, Chicago, Illinois, United States of America - 60616"
-        ]
-      }
-    ],
-    "openalex_work_id": "https://openalex.org/W4413419822",
-    "openalex_source_id": "https://openalex.org/S4387290148",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S4387290148",
-      "issn_l": "2583-7605",
-      "issn": [
-        "2583-7605"
-      ],
-      "type": "journal",
-      "host_organization_name": null,
-      "works_count": null,
-      "cited_by_count": null,
-      "two_year_mean_citedness": null,
-      "h_index": null,
-      "i10_index": null,
-      "is_oa": true,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "id": "10.59828/ijsrmst.v4i8.353"
-  },
-  "10.36948/ijfmr.2025.v07i06.63507": {
-    "ai_summary_en": "1. Topic - This paper provides a comprehensive review of fatigue life prediction approaches for additively manufactured components.\n2. Problem - The fatigue behavior of additively manufactured components is often worse than that of wrought counterparts, necessitating accurate predictions for safety-critical applications.\n3. Method - The study systematically reviews various fatigue prediction methodologies and suggests a combination of hybrid physics-based and data-driven approaches.\n4. Key Result - It identifies the shortcomings of existing predictive models and emphasizes the need for standardized predictive methods for industrial deployment.\n5. Takeaway - The core message is the necessity of real-time defect trace monitoring and the development of digital twins to ensure safe and reliable performance.",
-    "author_details": [
-      {
-        "name": "Sushma Sahu",
-        "openalex_author_id": null,
-        "orcid": null,
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Hullash Chauhan",
-        "openalex_author_id": "https://openalex.org/A5070049872",
-        "orcid": "https://orcid.org/0000-0002-7636-3065",
-        "position": "last",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "openalex_work_id": "https://openalex.org/W4417506003",
-    "openalex_source_id": "https://openalex.org/S4210207214",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S4210207214",
-      "issn_l": "2582-2160",
-      "issn": [
-        "2582-2160"
-      ],
-      "type": "journal",
-      "host_organization_name": null,
-      "works_count": null,
-      "cited_by_count": null,
-      "two_year_mean_citedness": null,
-      "h_index": null,
-      "i10_index": null,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "id": "10.36948/ijfmr.2025.v07i06.63507"
-  },
-  "10.51534/tiha.1663442": {
-    "ai_summary_en": "1. Topic - This paper discusses 4D printing technology and its application possibilities in Unmanned Aerial Vehicles (UAVs).\n2. Problem - It aims to address issues such as material limitations, the complexity of multi-material printing, and high costs in UAV manufacturing.\n3. Method - The study analyzes the fundamental principles of 4D printing in detail and compares various 4D printing techniques for their suitability in UAV manufacturing.\n4. Key Result - It finds that 4D printing technology holds revolutionary potential for enhancing UAV performance and durability.\n5. Takeaway - The core message is that advancements in material science, printing technologies, and design methods are essential to fully realize the potential of 4D printing technology.",
-    "author_details": [
-      {
-        "name": "Ece Kalay",
-        "openalex_author_id": "https://openalex.org/A5041062277",
-        "orcid": "https://orcid.org/0000-0003-2470-7791",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Massachusetts Eye Research and Surgery Institute",
-            "ror": "https://ror.org/0312k4k82",
-            "country_code": "US",
-            "type": "healthcare"
-          },
-          {
-            "name": "Mersin Üniversitesi",
-            "ror": "https://ror.org/04nqdwb39",
-            "country_code": "TR",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "MERSİN ÜNİVERSİTESİ"
-        ]
-      },
-      {
-        "name": "İskender Özkul",
-        "openalex_author_id": "https://openalex.org/A5082328631",
-        "orcid": "https://orcid.org/0000-0003-4255-0564",
-        "position": "last",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Massachusetts Eye Research and Surgery Institute",
-            "ror": "https://ror.org/0312k4k82",
-            "country_code": "US",
-            "type": "healthcare"
-          },
-          {
-            "name": "Mersin Üniversitesi",
-            "ror": "https://ror.org/04nqdwb39",
-            "country_code": "TR",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "MERSIN UNIVERSITY"
-        ]
-      }
-    ],
-    "openalex_work_id": "https://openalex.org/W4411809017",
-    "openalex_source_id": "https://openalex.org/S4210205591",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S4210205591",
-      "issn_l": "2687-6094",
-      "issn": [
-        "2687-6094"
-      ],
-      "type": "journal",
-      "host_organization_name": null,
-      "works_count": null,
-      "cited_by_count": null,
-      "two_year_mean_citedness": null,
-      "h_index": null,
-      "i10_index": null,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "id": "10.51534/tiha.1663442"
-  },
-  "10.31224/4688": {
-    "ai_summary_en": "1. Topic - This paper discusses 3D-printed microfluidic transistors using multimaterial stereolithography (mSLA).\n2. Problem - Existing microfluidic actuators faced limitations in balancing high resolution and ease of manufacturing.\n3. Method - The researchers developed a photopolymer resin that mimics the mechanical properties of poly(dimethylsiloxane) to fabricate microfluidic transistors via mSLA.\n4. Key Result - The fabricated microfluidic transistors demonstrated proportional pressure amplification, achieving intrinsic gains of over 300.\n5. Takeaway - This work represents a significant advancement towards building more complex microfluidic automation systems.",
-    "author_details": [
-      {
-        "name": "Alireza Ahmadianyazdi",
-        "openalex_author_id": "https://openalex.org/A5079080259",
-        "orcid": "https://orcid.org/0000-0003-1032-9478",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "University of Washington",
-            "ror": "https://ror.org/00cvxb145",
-            "country_code": "US",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "University of Washington"
-        ]
-      },
-      {
-        "name": "Wei Huang",
-        "openalex_author_id": "https://openalex.org/A5032495047",
-        "orcid": "https://orcid.org/0000-0002-7885-4378",
-        "position": "middle",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "National Cheng Kung University",
-            "ror": "https://ror.org/01b8kcc49",
-            "country_code": "TW",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "National Cheng Kung University"
-        ]
-      },
-      {
-        "name": "Kaustav A. Gopinathan",
-        "openalex_author_id": "https://openalex.org/A5064345215",
-        "orcid": "https://orcid.org/0000-0002-4082-1052",
-        "position": "middle",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Lawrence General Hospital",
-            "ror": "https://ror.org/05sb4hv45",
-            "country_code": "US",
-            "type": "healthcare"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "3Center for Engineering in Medicine & Surgery, and Department of Surgery Massachusetts General Hospital"
-        ]
-      },
-      {
-        "name": "Ivan Stepanov",
-        "openalex_author_id": null,
-        "orcid": null,
-        "position": "middle",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "University of Washington",
-            "ror": "https://ror.org/00cvxb145",
-            "country_code": "US",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "University of Washington"
-        ]
-      },
-      {
-        "name": "Lisa Horowitz",
-        "openalex_author_id": null,
-        "orcid": null,
-        "position": "middle",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "National Cheng Kung University",
-            "ror": "https://ror.org/01b8kcc49",
-            "country_code": "TW",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "National Cheng Kung University"
-        ]
-      },
-      {
-        "name": "Ting‐Yuan Tu",
-        "openalex_author_id": "https://openalex.org/A5087954362",
-        "orcid": "https://orcid.org/0000-0002-1816-4615",
-        "position": "middle",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Massachusetts General Hospital",
-            "ror": "https://ror.org/002pd6e78",
-            "country_code": "US",
-            "type": "healthcare"
-          },
-          {
-            "name": "National Cheng Kung University",
-            "ror": "https://ror.org/01b8kcc49",
-            "country_code": "TW",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "National Cheng Kung University",
-          "Center for Engineering in Medicine & Surgery, and Department of Surgery Massachusetts General Hospital"
-        ]
-      },
-      {
-        "name": "Mehmet Toner",
-        "openalex_author_id": "https://openalex.org/A5075867487",
-        "orcid": "https://orcid.org/0000-0002-3647-3665",
-        "position": "middle",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "University of Washington",
-            "ror": "https://ror.org/00cvxb145",
-            "country_code": "US",
-            "type": "education"
-          },
-          {
-            "name": "Massachusetts General Hospital",
-            "ror": "https://ror.org/002pd6e78",
-            "country_code": "US",
-            "type": "healthcare"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Center for Engineering in Medicine & Surgery, and Department of Surgery Massachusetts General Hospital",
-          "University of Washington"
-        ]
-      },
-      {
-        "name": "Albert Folch",
-        "openalex_author_id": "https://openalex.org/A5101735152",
-        "orcid": "https://orcid.org/0000-0002-9198-8100",
-        "position": "last",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "University of Washington",
-            "ror": "https://ror.org/00cvxb145",
-            "country_code": "US",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "University of Washington"
-        ]
-      }
-    ],
-    "openalex_work_id": "https://openalex.org/W4411174917",
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "id": "10.31224/4688"
   }
 }

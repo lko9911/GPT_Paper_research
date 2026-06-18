@@ -1,4 +1,217 @@
 {
+  "10.1002/adfm.202525150": {
+    "ai_summary_en": "1. Topic - This paper addresses the digital actuation control of soft robotic origami.\n2. Problem - It aims to solve the challenge of dynamic shape morphing and reconfiguration in existing soft robotic structures.\n3. Method - The authors designed hybrid self-folding origami robots using reversible shape memory materials and implemented digital actuation control through integrated liquid crystal elastomer hinges.\n4. Key Result - The study successfully fabricated durable soft robotic origami structures that can withstand over 1500 cycles with minimal performance degradation.\n5. Takeaway - The key message of this paper is the efficient fabrication method for soft robotic origami structures with integrated reconfigurable actuation.",
+    "author_details": [
+      {
+        "name": "David Claude Bershadsky",
+        "openalex_author_id": "https://openalex.org/A5104726256",
+        "orcid": "https://orcid.org/0009-0006-5983-1521",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Princeton University",
+            "ror": "https://ror.org/00hx57361",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Electrical and Computer Engineering Princeton University Princeton USA"
+        ]
+      },
+      {
+        "name": "Tuo Zhao",
+        "openalex_author_id": "https://openalex.org/A5130259622",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Princeton University",
+            "ror": "https://ror.org/00hx57361",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Civil and Environmental Engineering Princeton University Princeton USA"
+        ]
+      },
+      {
+        "name": "Glaucio H. Paulino",
+        "openalex_author_id": "https://openalex.org/A5130257078",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Princeton University",
+            "ror": "https://ror.org/00hx57361",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Civil and Environmental Engineering Princeton University Princeton USA",
+          "Princeton Materials Institute Princeton University Princeton USA"
+        ]
+      },
+      {
+        "name": "Emily Davidson",
+        "openalex_author_id": "https://openalex.org/A5036849910",
+        "orcid": "https://orcid.org/0000-0001-5819-9233",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Princeton University",
+            "ror": "https://ror.org/00hx57361",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Chemical and Biological Engineering Princeton University Princeton USA"
+        ]
+      }
+    ],
+    "corresponding_authors": [
+      {
+        "name": "Glaucio H. Paulino",
+        "openalex_author_id": "https://openalex.org/A5130257078",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Princeton University",
+            "ror": "https://ror.org/00hx57361",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Civil and Environmental Engineering Princeton University Princeton USA",
+          "Princeton Materials Institute Princeton University Princeton USA"
+        ]
+      },
+      {
+        "name": "Emily Davidson",
+        "openalex_author_id": "https://openalex.org/A5036849910",
+        "orcid": "https://orcid.org/0000-0001-5819-9233",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Princeton University",
+            "ror": "https://ror.org/00hx57361",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Chemical and Biological Engineering Princeton University Princeton USA"
+        ]
+      }
+    ],
+    "openalex_work_id": "https://openalex.org/W7139969387",
+    "openalex_source_id": "https://openalex.org/S135204980",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S135204980",
+      "issn_l": "1616-301X",
+      "issn": [
+        "1616-301X",
+        "1616-3028"
+      ],
+      "type": "journal",
+      "host_organization_name": "Wiley",
+      "works_count": null,
+      "cited_by_count": null,
+      "two_year_mean_citedness": null,
+      "h_index": null,
+      "i10_index": null,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "High-impact general journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "id": "10.1002/adfm.202525150"
+  },
+  "c10197dd8db7b7ae": {
+    "ai_summary_en": "1. Topic - This paper discusses the use of differentiable hybrid force field models for autonomous electrolyte discovery.\n2. Problem - It aims to address the challenge of creating a computational engine that meets the speed, accuracy, and calibratability requirements for autonomous electrolyte discovery.\n3. Method - The approach combines physically motivated functional forms with neural network short-range corrections in differentiable hybrid force fields.\n4. Key Result - These models achieve throughput rates of tens of nanoseconds per day for 10,000-atom systems and demonstrate zero-shot generalization capabilities.\n5. Takeaway - The study proposes a digital twin that integrates physics-based simulations with experimentally calibratable refinement to enable closed-loop autonomous electrolyte discovery.",
+    "author_details": [
+      {
+        "name": "Xintian Wang",
+        "openalex_author_id": "https://openalex.org/A5073492865",
+        "orcid": null,
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Junmin Chen",
+        "openalex_author_id": "https://openalex.org/A5133434135",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Zhuoying Zhu",
+        "openalex_author_id": "https://openalex.org/A5126771176",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Peichen Zhong",
+        "openalex_author_id": "https://openalex.org/A5133415218",
+        "orcid": null,
+        "position": "last",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "openalex_work_id": "https://openalex.org/W7153670934",
+    "openalex_source_id": "https://openalex.org/S4306400194",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4306400194",
+      "issn_l": null,
+      "issn": [],
+      "type": "repository",
+      "host_organization_name": "Cornell University",
+      "works_count": null,
+      "cited_by_count": null,
+      "two_year_mean_citedness": null,
+      "h_index": null,
+      "i10_index": null,
+      "is_oa": true,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Repository / preprint source",
+      "basis": "metadata_source_type",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "id": "c10197dd8db7b7ae"
+  },
   "10.66754/nase.1901556": {
     "ai_summary_en": "1. Topic - This paper addresses the development of an offline digital twin framework for forging dies based on the Upper Bound Energy Method.\n2. Problem - A critical issue is the reliable prediction of forging load during the early stages of die design to ensure process feasibility and die durability.\n3. Method - The study proposes a method that integrates an analytical framework based on the Upper Bound Energy Method for rapid estimation of forging loads.\n4. Key Result - The proposed model maintains the overall trend of experimental measurements while providing conservative load estimates within acceptable engineering tolerances.\n5. Takeaway - The key message of this paper is that the developed offline digital twin framework serves as an efficient decision-support tool for early-stage die design.",
     "author_details": [
@@ -413,6 +626,26 @@
       "openalex_two_year_mean_citedness": null,
       "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
     },
+    "corresponding_authors": [
+      {
+        "name": "A Borrmann",
+        "openalex_author_id": "https://openalex.org/A5069730794",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Technical University of Munich",
+            "ror": "https://ror.org/02kkvpp62",
+            "country_code": "DE",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Technical University of Munich Chair of Computing in Civil and Building Engineering (CCBE) Arcisstr. 21 80333 München"
+        ]
+      }
+    ],
     "id": "10.1002/best.70147"
   },
   "10.33386/593dp.2026.3.4041": {
@@ -8782,6 +9015,44 @@
       "openalex_two_year_mean_citedness": null,
       "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
     },
+    "corresponding_authors": [
+      {
+        "name": "Tian Li",
+        "openalex_author_id": "https://openalex.org/A5137944960",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Southwest Jiaotong University",
+            "ror": "https://ror.org/00hn7w693",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Materials Science and Engineering Key Laboratory of Advanced Technologies of Materials (Ministry of Education) Southwest Jiaotong University  Chengdu China"
+        ]
+      },
+      {
+        "name": "Fanbin Meng",
+        "openalex_author_id": "https://openalex.org/A5137938305",
+        "orcid": "https://orcid.org/0000-0002-7956-1278",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Southwest Jiaotong University",
+            "ror": "https://ror.org/00hn7w693",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Materials Science and Engineering Key Laboratory of Advanced Technologies of Materials (Ministry of Education) Southwest Jiaotong University  Chengdu China"
+        ]
+      }
+    ],
     "id": "10.1002/adma.73633"
   },
   "10.3390/ma19091789": {
@@ -16646,6 +16917,80 @@
   },
   "759df8e8cc088732": {
     "ai_summary_en": "1. Topic - This paper addresses the acceleration of materials discovery using foundation model-based in-context active learning.\n2. Problem - Current active learning methods struggle with complex composition-property landscapes and produce unreliable uncertainty estimates in small datasets.\n3. Method - The study employs TabPFN, a transformer-based foundation model, to replace conventional surrogates and perform principled Bayesian inference without dataset-specific retraining.\n4. Key Result - TabPFN outperformed GP and RF on 8 out of 10 materials datasets, achieving an average saving of 52% and 29.77% in extra experiments/evaluations, respectively.\n5. Takeaway - The research demonstrates that a foundation model can serve as a highly effective surrogate for accelerating active learning-based materials discovery.",
+    "author_details": [
+      {
+        "name": "Jeffrey Hu",
+        "openalex_author_id": "https://openalex.org/A5129710355",
+        "orcid": null,
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Rongzhi Dong",
+        "openalex_author_id": "https://openalex.org/A5129748223",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Ying Feng",
+        "openalex_author_id": "https://openalex.org/A5129654906",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Ming Hu",
+        "openalex_author_id": "https://openalex.org/A5129706057",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Jianjun Hu",
+        "openalex_author_id": "https://openalex.org/A5129689134",
+        "orcid": null,
+        "position": "last",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "openalex_work_id": "https://openalex.org/W7138824926",
+    "openalex_source_id": "https://openalex.org/S4393918464",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4393918464",
+      "issn_l": "2331-8422",
+      "issn": [
+        "2331-8422"
+      ],
+      "type": "repository",
+      "host_organization_name": null,
+      "works_count": null,
+      "cited_by_count": null,
+      "two_year_mean_citedness": null,
+      "h_index": null,
+      "i10_index": null,
+      "is_oa": true,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Repository / preprint source",
+      "basis": "metadata_source_type",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
     "id": "759df8e8cc088732"
   },
   "10.1007/s00170-025-17219-7": {
@@ -22032,6 +22377,45 @@
       "is_oa": true,
       "is_in_doaj": true
     },
+    "corresponding_authors": [
+      {
+        "name": "Marco Schott",
+        "openalex_author_id": "https://openalex.org/A5005463269",
+        "orcid": "https://orcid.org/0000-0003-2242-9054",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Fraunhofer Institute for Silicate Research",
+            "ror": "https://ror.org/05gnv4a66",
+            "country_code": "DE",
+            "type": "facility"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Fraunhofer Institute for Silicate Research ISC  Würzburg Germany"
+        ]
+      },
+      {
+        "name": "Pascal Friederich",
+        "openalex_author_id": "https://openalex.org/A5052771582",
+        "orcid": "https://orcid.org/0000-0003-4465-1465",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Karlsruhe Institute of Technology",
+            "ror": "https://ror.org/04t3en479",
+            "country_code": "DE",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Institute of Nanotechnology Karlsruhe Institute of Technology  Karlsruhe Germany",
+          "Institute of Theoretical Informatics Karlsruhe Institute of Technology  Karlsruhe Germany"
+        ]
+      }
+    ],
     "id": "10.1002/aisy.202600008"
   },
   "10.64388/irev9i10-1716928": {
@@ -25992,215 +26376,5 @@
       "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
     },
     "id": "10.1021/cbe.5c00152"
-  },
-  "10.1117/12.3090427": {
-    "ai_summary_en": "1. Topic - This paper addresses in-process monitoring using a 3D-printed smart reinforced beam.\n2. Problem - There are challenges in ensuring the quality and durability of structures due to uncertainties arising during the printing process.\n3. Method - A hybrid 3D printing strategy was employed, incorporating graphite powder and carbon microfibers into cement-based mixtures to enable self-sensing capabilities.\n4. Key Result - The study demonstrated the ability to successfully monitor the material state during the printing process of a reinforced concrete beam with a self-sensing composite layer.\n5. Takeaway - This research represents a first step toward developing a digital twin framework for in-process monitoring of additively manufactured concrete components.",
-    "author_details": [
-      {
-        "name": "﻿Han Liu",
-        "openalex_author_id": "https://openalex.org/A5133708439",
-        "orcid": null,
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Iowa State University",
-            "ror": "https://ror.org/04rswrd78",
-            "country_code": "US",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Iowa State Univ. of Science and Technology (United States)"
-        ]
-      },
-      {
-        "name": "Israel Sousa",
-        "openalex_author_id": "https://openalex.org/A5009138201",
-        "orcid": "https://orcid.org/0000-0002-2670-4298",
-        "position": "middle",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Iowa State University",
-            "ror": "https://ror.org/04rswrd78",
-            "country_code": "US",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Iowa State Univ. of Science and Technology (United States)"
-        ]
-      },
-      {
-        "name": "Shelby E. Doyle",
-        "openalex_author_id": "https://openalex.org/A5133716735",
-        "orcid": null,
-        "position": "middle",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Iowa State University",
-            "ror": "https://ror.org/04rswrd78",
-            "country_code": "US",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Iowa State Univ. of Science and Technology (United States)"
-        ]
-      },
-      {
-        "name": "Antonella D'Alessandro",
-        "openalex_author_id": "https://openalex.org/A5133648910",
-        "orcid": null,
-        "position": "middle",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "University of Perugia",
-            "ror": "https://ror.org/00x27da85",
-            "country_code": "IT",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Univ. degli Studi di Perugia (Italy)"
-        ]
-      },
-      {
-        "name": "Andrea Meoni",
-        "openalex_author_id": "https://openalex.org/A5133704971",
-        "orcid": null,
-        "position": "middle",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "University of Perugia",
-            "ror": "https://ror.org/00x27da85",
-            "country_code": "IT",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Univ. degli Studi di Perugia (Italy)"
-        ]
-      },
-      {
-        "name": "Matthias Kollosche",
-        "openalex_author_id": "https://openalex.org/A5089706405",
-        "orcid": "https://orcid.org/0000-0002-7255-8893",
-        "position": "middle",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Nano-C (United States)",
-            "ror": "https://ror.org/047r3w252",
-            "country_code": "US",
-            "type": "company"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Nano-C, Inc. (United States)"
-        ]
-      },
-      {
-        "name": "Filippo Ubertini",
-        "openalex_author_id": "https://openalex.org/A5133710640",
-        "orcid": null,
-        "position": "middle",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "University of Perugia",
-            "ror": "https://ror.org/00x27da85",
-            "country_code": "IT",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Univ. degli Studi di Perugia (Italy)"
-        ]
-      },
-      {
-        "name": "Simon Laflamme",
-        "openalex_author_id": "https://openalex.org/A5133727107",
-        "orcid": null,
-        "position": "last",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Iowa State University",
-            "ror": "https://ror.org/04rswrd78",
-            "country_code": "US",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Iowa State Univ. of Science and Technology (United States)"
-        ]
-      }
-    ],
-    "openalex_work_id": "https://openalex.org/W7154502582",
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "id": "10.1117/12.3090427"
-  },
-  "10.5281/zenodo.20379278": {
-    "ai_summary_en": "1. Topic - This paper discusses soft denture liners utilizing 3D printing technology.\n2. Problem - It aims to address the limitations of existing denture liners and conditions where they cannot be used.\n3. Method - The review analyzes various types of soft liners, their physical and biological properties, and examines 3D printing technologies.\n4. Key Result - Printable soft liners present promising opportunities for personalized prosthetic rehabilitation.\n5. Takeaway - The convergence of digital prosthodontics and modern materials science illuminates the future of personalized prosthetic rehabilitation.",
-    "author_details": [
-      {
-        "name": "Dr. Vikas Punia and Dr. P. Raviteja Dr. LakshmanaRao Bathala",
-        "openalex_author_id": "https://openalex.org/A5137106818",
-        "orcid": null,
-        "position": "first",
-        "is_corresponding": true,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_authors": [
-      {
-        "name": "Dr. Vikas Punia and Dr. P. Raviteja Dr. LakshmanaRao Bathala",
-        "openalex_author_id": "https://openalex.org/A5137106818",
-        "orcid": null,
-        "position": "first",
-        "is_corresponding": true,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "openalex_work_id": "https://openalex.org/W7162489402",
-    "openalex_source_id": "https://openalex.org/S4306400562",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S4306400562",
-      "issn_l": null,
-      "issn": [],
-      "type": "repository",
-      "host_organization_name": "European Organization for Nuclear Research",
-      "works_count": null,
-      "cited_by_count": null,
-      "two_year_mean_citedness": null,
-      "h_index": null,
-      "i10_index": null,
-      "is_oa": true,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Repository / preprint source",
-      "basis": "metadata_source_type",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "id": "10.5281/zenodo.20379278"
   }
 }

@@ -1,4 +1,436 @@
 {
+  "10.1007/s10270-026-01368-8": {
+    "ai_summary_en": "1. Topic - This paper addresses insights and challenges in model-based digital twin engineering (MBDTE).\n2. Problem - It aims to resolve the fragmented solutions in the field of MBDTE.\n3. Method - A systematic literature survey is conducted, introducing a novel taxonomy for categorizing MBDTE approaches.\n4. Key Result - Clear definitions of the MBDTE field and models are provided, highlighting research gaps.\n5. Takeaway - The paper suggests future research directions for the advancement of MBDTE and emphasizes areas needing further exploration.",
+    "author_details": [
+      {
+        "name": "Philipp Zech",
+        "openalex_author_id": "https://openalex.org/A5135237602",
+        "orcid": null,
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Universität Innsbruck",
+            "ror": "https://ror.org/054pv6659",
+            "country_code": "AT",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Computer Science, University of Innsbruck, Innsbruck, Austria"
+        ]
+      },
+      {
+        "name": "Souvik Barat",
+        "openalex_author_id": "https://openalex.org/A5039438854",
+        "orcid": "https://orcid.org/0000-0002-4677-1957",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Tata Consultancy Services (India)",
+            "ror": "https://ror.org/01b9n8m42",
+            "country_code": "IN",
+            "type": "company"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "TCS Research, Tata Consultancy Services, Mumbai, India"
+        ]
+      },
+      {
+        "name": "Benjamin Nast",
+        "openalex_author_id": "https://openalex.org/A5044680152",
+        "orcid": "https://orcid.org/0000-0003-4659-9840",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "University of Rostock",
+            "ror": "https://ror.org/03zdwsf69",
+            "country_code": "DE",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Institute of Informatics, University of Rostock, Rostock, Germany"
+        ]
+      },
+      {
+        "name": "Bentley Oakes",
+        "openalex_author_id": "https://openalex.org/A5135181453",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Polytechnique Montréal",
+            "ror": "https://ror.org/05f8d4e86",
+            "country_code": "CA",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Computer and Software Engineering, Polytechnique Montréal, Montreal, Canada"
+        ]
+      },
+      {
+        "name": "Judith Michael",
+        "openalex_author_id": "https://openalex.org/A5135165101",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "University of Regensburg",
+            "ror": "https://ror.org/01eezs655",
+            "country_code": "DE",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Programming and Software Engineering, University of Regensburg, Regensburg, Germany"
+        ]
+      },
+      {
+        "name": "Steffen Zschaler",
+        "openalex_author_id": "https://openalex.org/A5135168692",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "King's College London",
+            "ror": "https://ror.org/0220mzb33",
+            "country_code": "GB",
+            "type": "education"
+          },
+          {
+            "name": "King's College School",
+            "ror": "https://ror.org/02bbqcn27",
+            "country_code": "GB",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Informatics, King’s College London,  London, United Kingdom"
+        ]
+      },
+      {
+        "name": "Balbir Barn",
+        "openalex_author_id": "https://openalex.org/A5135159092",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Middlesex University",
+            "ror": "https://ror.org/01rv4p989",
+            "country_code": "GB",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Faculty of Science and Technology, Middlesex University, London, England"
+        ]
+      },
+      {
+        "name": "Ruth Breu",
+        "openalex_author_id": "https://openalex.org/A5135238883",
+        "orcid": null,
+        "position": "last",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Universität Innsbruck",
+            "ror": "https://ror.org/054pv6659",
+            "country_code": "AT",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Computer Science, University of Innsbruck, Innsbruck, Austria"
+        ]
+      }
+    ],
+    "corresponding_authors": [
+      {
+        "name": "Philipp Zech",
+        "openalex_author_id": "https://openalex.org/A5135237602",
+        "orcid": null,
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Universität Innsbruck",
+            "ror": "https://ror.org/054pv6659",
+            "country_code": "AT",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Computer Science, University of Innsbruck, Innsbruck, Austria"
+        ]
+      }
+    ],
+    "openalex_work_id": "https://openalex.org/W7160016134",
+    "openalex_source_id": "https://openalex.org/S64245694",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S64245694",
+      "issn_l": "1619-1366",
+      "issn": [
+        "1619-1366",
+        "1619-1374"
+      ],
+      "type": "journal",
+      "host_organization_name": "Springer Science+Business Media",
+      "works_count": null,
+      "cited_by_count": null,
+      "two_year_mean_citedness": null,
+      "h_index": null,
+      "i10_index": null,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "id": "10.1007/s10270-026-01368-8"
+  },
+  "10.1038/s41524-026-02054-5": {
+    "ai_summary_en": "1. Topic - This paper addresses microstructure-based variational deep material networks for robust uncertainty quantification.\n2. Problem - It aims to tackle the challenge of unavoidable variability in microstructure morphology, constituent behavior, and processing conditions.\n3. Method - The study employs a physics-informed and microstructure-aware surrogate model known as the Variational Deep Material Network (VDMN).\n4. Key Result - VDMN successfully predicts and experimentally validates the nonlinear mechanical variability in additively manufactured polymer composites.\n5. Takeaway - This research contributes to establishing a foundation for uncertainty-robust materials digital twins.",
+    "author_details": [
+      {
+        "name": "Andreas E. Robertson",
+        "openalex_author_id": "https://openalex.org/A5044119132",
+        "orcid": null,
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Sandia National Laboratories",
+            "ror": "https://ror.org/01apwpt12",
+            "country_code": "US",
+            "type": "facility"
+          },
+          {
+            "name": "Center for Integrated Nanotechnologies",
+            "ror": "https://ror.org/031yh0y38",
+            "country_code": "US",
+            "type": "facility"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Center for Integrated Nanotechnologies, Sandia National Laboratories, Albuquerque, NM, USA"
+        ]
+      },
+      {
+        "name": "Samuel B. Inman",
+        "openalex_author_id": "https://openalex.org/A5074254364",
+        "orcid": "https://orcid.org/0000-0002-2535-4150",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Sandia National Laboratories",
+            "ror": "https://ror.org/01apwpt12",
+            "country_code": "US",
+            "type": "facility"
+          },
+          {
+            "name": "Center for Integrated Nanotechnologies",
+            "ror": "https://ror.org/031yh0y38",
+            "country_code": "US",
+            "type": "facility"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Center for Integrated Nanotechnologies, Sandia National Laboratories, Albuquerque, NM, USA"
+        ]
+      },
+      {
+        "name": "Ashley T. Lenau",
+        "openalex_author_id": "https://openalex.org/A5135780616",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Sandia National Laboratories",
+            "ror": "https://ror.org/01apwpt12",
+            "country_code": "US",
+            "type": "facility"
+          },
+          {
+            "name": "Center for Integrated Nanotechnologies",
+            "ror": "https://ror.org/031yh0y38",
+            "country_code": "US",
+            "type": "facility"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Center for Integrated Nanotechnologies, Sandia National Laboratories, Albuquerque, NM, USA"
+        ]
+      },
+      {
+        "name": "Ricardo A. Lebensohn",
+        "openalex_author_id": "https://openalex.org/A5123568257",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Los Alamos National Laboratory",
+            "ror": "https://ror.org/01e41cf67",
+            "country_code": "US",
+            "type": "facility"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Theoretical Division, Los Alamos National Laboratory, Albuquerque, NM, USA"
+        ]
+      },
+      {
+        "name": "Dongil Shin",
+        "openalex_author_id": "https://openalex.org/A5123543117",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Pohang University of Science and Technology",
+            "ror": "https://ror.org/04xysgw12",
+            "country_code": "KR",
+            "type": "education"
+          },
+          {
+            "name": "Sandia National Laboratories",
+            "ror": "https://ror.org/01apwpt12",
+            "country_code": "US",
+            "type": "facility"
+          },
+          {
+            "name": "Center for Integrated Nanotechnologies",
+            "ror": "https://ror.org/031yh0y38",
+            "country_code": "US",
+            "type": "facility"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Center for Integrated Nanotechnologies, Sandia National Laboratories, Albuquerque, NM, USA",
+          "Department of Mechanical Engineering, Pohang University of Science and Technology, Pohang, South Korea"
+        ]
+      },
+      {
+        "name": "Brad L. Boyce",
+        "openalex_author_id": "https://openalex.org/A5134411468",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Sandia National Laboratories",
+            "ror": "https://ror.org/01apwpt12",
+            "country_code": "US",
+            "type": "facility"
+          },
+          {
+            "name": "Center for Integrated Nanotechnologies",
+            "ror": "https://ror.org/031yh0y38",
+            "country_code": "US",
+            "type": "facility"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Center for Integrated Nanotechnologies, Sandia National Laboratories, Albuquerque, NM, USA"
+        ]
+      },
+      {
+        "name": "Rémi Dingreville",
+        "openalex_author_id": "https://openalex.org/A5125443569",
+        "orcid": null,
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Sandia National Laboratories",
+            "ror": "https://ror.org/01apwpt12",
+            "country_code": "US",
+            "type": "facility"
+          },
+          {
+            "name": "Center for Integrated Nanotechnologies",
+            "ror": "https://ror.org/031yh0y38",
+            "country_code": "US",
+            "type": "facility"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Center for Integrated Nanotechnologies, Sandia National Laboratories, Albuquerque, NM, USA"
+        ]
+      }
+    ],
+    "corresponding_authors": [
+      {
+        "name": "Rémi Dingreville",
+        "openalex_author_id": "https://openalex.org/A5125443569",
+        "orcid": null,
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Sandia National Laboratories",
+            "ror": "https://ror.org/01apwpt12",
+            "country_code": "US",
+            "type": "facility"
+          },
+          {
+            "name": "Center for Integrated Nanotechnologies",
+            "ror": "https://ror.org/031yh0y38",
+            "country_code": "US",
+            "type": "facility"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Center for Integrated Nanotechnologies, Sandia National Laboratories, Albuquerque, NM, USA"
+        ]
+      }
+    ],
+    "openalex_work_id": "https://openalex.org/W7160719577",
+    "openalex_source_id": "https://openalex.org/S4210232664",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210232664",
+      "issn_l": "2057-3960",
+      "issn": [
+        "2057-3960"
+      ],
+      "type": "journal",
+      "host_organization_name": "Nature Portfolio",
+      "works_count": null,
+      "cited_by_count": null,
+      "two_year_mean_citedness": null,
+      "h_index": null,
+      "i10_index": null,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "id": "10.1038/s41524-026-02054-5"
+  },
   "10.1016/j.ijpvp.2026.105845": {
     "ai_summary_en": "1. Topic - This paper addresses the microstructure and corrosion characteristics of a functionally graded structure made of SS316L and IN718.\n2. Problem - Existing manufacturing methods have limitations in optimizing the microstructure and corrosion resistance of such composite materials.\n3. Method - Samples were fabricated using twin-wire gas tungsten arc-based wire and arc additive manufacturing technology.\n4. Key Result - The produced functionally graded structure exhibited excellent microstructure and enhanced corrosion resistance.\n5. Takeaway - This study demonstrates the potential of manufacturing functionally graded structures to improve material performance.",
     "journal_quality": {
@@ -13053,6 +13485,51 @@
       "is_oa": false,
       "is_in_doaj": false
     },
+    "corresponding_authors": [
+      {
+        "name": "P.S. Rajinikanth",
+        "openalex_author_id": "https://openalex.org/A5135187869",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Babasaheb Bhimrao Ambedkar University",
+            "ror": "https://ror.org/04x7ccp17",
+            "country_code": "IN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Pharmaceutical Sciences, Babasaheb Bhimrao Ambedkar University, Lucknow, Uttar Pradesh 226025, India"
+        ]
+      },
+      {
+        "name": "Prashant Pandey",
+        "openalex_author_id": "https://openalex.org/A5126565393",
+        "orcid": null,
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Babasaheb Bhimrao Ambedkar University",
+            "ror": "https://ror.org/04x7ccp17",
+            "country_code": "IN",
+            "type": "education"
+          },
+          {
+            "name": "University of Alberta",
+            "ror": "https://ror.org/0160cpw27",
+            "country_code": "CA",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Pharmaceutical Sciences, Babasaheb Bhimrao Ambedkar University, Lucknow, Uttar Pradesh 226025, India",
+          "Faculty of Pharmacy and Pharmaceutical Sciences, University of Alberta, Edmonton, Alberta T6G 2E1, Canada"
+        ]
+      }
+    ],
     "id": "10.1016/j.susmat.2026.e02022"
   },
   "10.63385/ipt.v2i3.502": {
@@ -25937,218 +26414,5 @@
       "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
     },
     "id": "10.1016/j.dte.2026.100129"
-  },
-  "10.1002/adfm.202525150": {
-    "ai_summary_en": "1. Topic - This paper addresses the digital actuation control of soft robotic origami.\n2. Problem - It aims to solve the challenge of dynamic shape morphing and reconfiguration in existing soft robotic structures.\n3. Method - The authors designed hybrid self-folding origami robots using reversible shape memory materials and implemented digital actuation control through integrated liquid crystal elastomer hinges.\n4. Key Result - The study successfully fabricated durable soft robotic origami structures that can withstand over 1500 cycles with minimal performance degradation.\n5. Takeaway - The key message of this paper is the efficient fabrication method for soft robotic origami structures with integrated reconfigurable actuation.",
-    "author_details": [
-      {
-        "name": "David Claude Bershadsky",
-        "openalex_author_id": "https://openalex.org/A5104726256",
-        "orcid": "https://orcid.org/0009-0006-5983-1521",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Princeton University",
-            "ror": "https://ror.org/00hx57361",
-            "country_code": "US",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Electrical and Computer Engineering Princeton University Princeton USA"
-        ]
-      },
-      {
-        "name": "Tuo Zhao",
-        "openalex_author_id": "https://openalex.org/A5130259622",
-        "orcid": null,
-        "position": "middle",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Princeton University",
-            "ror": "https://ror.org/00hx57361",
-            "country_code": "US",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Civil and Environmental Engineering Princeton University Princeton USA"
-        ]
-      },
-      {
-        "name": "Glaucio H. Paulino",
-        "openalex_author_id": "https://openalex.org/A5130257078",
-        "orcid": null,
-        "position": "middle",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "Princeton University",
-            "ror": "https://ror.org/00hx57361",
-            "country_code": "US",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Civil and Environmental Engineering Princeton University Princeton USA",
-          "Princeton Materials Institute Princeton University Princeton USA"
-        ]
-      },
-      {
-        "name": "Emily Davidson",
-        "openalex_author_id": "https://openalex.org/A5036849910",
-        "orcid": "https://orcid.org/0000-0001-5819-9233",
-        "position": "last",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "Princeton University",
-            "ror": "https://ror.org/00hx57361",
-            "country_code": "US",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Chemical and Biological Engineering Princeton University Princeton USA"
-        ]
-      }
-    ],
-    "corresponding_authors": [
-      {
-        "name": "Glaucio H. Paulino",
-        "openalex_author_id": "https://openalex.org/A5130257078",
-        "orcid": null,
-        "position": "middle",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "Princeton University",
-            "ror": "https://ror.org/00hx57361",
-            "country_code": "US",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Civil and Environmental Engineering Princeton University Princeton USA",
-          "Princeton Materials Institute Princeton University Princeton USA"
-        ]
-      },
-      {
-        "name": "Emily Davidson",
-        "openalex_author_id": "https://openalex.org/A5036849910",
-        "orcid": "https://orcid.org/0000-0001-5819-9233",
-        "position": "last",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "Princeton University",
-            "ror": "https://ror.org/00hx57361",
-            "country_code": "US",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Chemical and Biological Engineering Princeton University Princeton USA"
-        ]
-      }
-    ],
-    "openalex_work_id": "https://openalex.org/W7139969387",
-    "openalex_source_id": "https://openalex.org/S135204980",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S135204980",
-      "issn_l": "1616-301X",
-      "issn": [
-        "1616-301X",
-        "1616-3028"
-      ],
-      "type": "journal",
-      "host_organization_name": "Wiley",
-      "works_count": null,
-      "cited_by_count": null,
-      "two_year_mean_citedness": null,
-      "h_index": null,
-      "i10_index": null,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "High-impact general journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "id": "10.1002/adfm.202525150"
-  },
-  "c10197dd8db7b7ae": {
-    "ai_summary_en": "1. Topic - This paper discusses the use of differentiable hybrid force field models for autonomous electrolyte discovery.\n2. Problem - It aims to address the challenge of creating a computational engine that meets the speed, accuracy, and calibratability requirements for autonomous electrolyte discovery.\n3. Method - The approach combines physically motivated functional forms with neural network short-range corrections in differentiable hybrid force fields.\n4. Key Result - These models achieve throughput rates of tens of nanoseconds per day for 10,000-atom systems and demonstrate zero-shot generalization capabilities.\n5. Takeaway - The study proposes a digital twin that integrates physics-based simulations with experimentally calibratable refinement to enable closed-loop autonomous electrolyte discovery.",
-    "author_details": [
-      {
-        "name": "Xintian Wang",
-        "openalex_author_id": "https://openalex.org/A5073492865",
-        "orcid": null,
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Junmin Chen",
-        "openalex_author_id": "https://openalex.org/A5133434135",
-        "orcid": null,
-        "position": "middle",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Zhuoying Zhu",
-        "openalex_author_id": "https://openalex.org/A5126771176",
-        "orcid": null,
-        "position": "middle",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Peichen Zhong",
-        "openalex_author_id": "https://openalex.org/A5133415218",
-        "orcid": null,
-        "position": "last",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "openalex_work_id": "https://openalex.org/W7153670934",
-    "openalex_source_id": "https://openalex.org/S4306400194",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S4306400194",
-      "issn_l": null,
-      "issn": [],
-      "type": "repository",
-      "host_organization_name": "Cornell University",
-      "works_count": null,
-      "cited_by_count": null,
-      "two_year_mean_citedness": null,
-      "h_index": null,
-      "i10_index": null,
-      "is_oa": true,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Repository / preprint source",
-      "basis": "metadata_source_type",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "id": "c10197dd8db7b7ae"
   }
 }

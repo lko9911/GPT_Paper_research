@@ -1,4 +1,208 @@
 {
+  "10.22306/asim.v11i1.118": {
+    "ai_summary_en": "1. Topic - This paper discusses the use of SolidWorks software to simulate the assembly intended for 3D printing and the creation of a digital twin of WLKATA robots.\n2. Problem - It aims to address the issues of minimizing design errors and reducing material consumption.\n3. Method - The approach involved using SolidWorks and RoboDK software for simulation and validating designs through 3D printing.\n4. Key Result - The results indicated that the combination of simulation and 3D printing enhances the efficiency of mechanical assembly design while minimizing manufacturing costs and environmental impact.\n5. Takeaway - Thus, the core message of this paper is that the integration of SolidWorks and RoboDK provides an efficient method for designing and testing mechanical assemblies.",
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "author_details": [
+      {
+        "name": "Jan Kopec",
+        "openalex_author_id": "https://openalex.org/A5137029874",
+        "orcid": null,
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Miriam Pekarčíková",
+        "openalex_author_id": "https://openalex.org/A5030354544",
+        "orcid": "https://orcid.org/0000-0002-6898-3774",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Juraj Kováč",
+        "openalex_author_id": "https://openalex.org/A5028180059",
+        "orcid": "https://orcid.org/0000-0001-6443-4201",
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Erik Varjú",
+        "openalex_author_id": "https://openalex.org/A5117514178",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Marek Mizerák",
+        "openalex_author_id": "https://openalex.org/A5014323176",
+        "orcid": null,
+        "position": "last",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "openalex_work_id": "https://openalex.org/W7162424961",
+    "openalex_source_id": "https://openalex.org/S4210233998",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210233998",
+      "issn_l": "1339-9640",
+      "issn": [
+        "1339-9640"
+      ],
+      "type": "journal",
+      "host_organization_name": "4S go, s.r.o.",
+      "works_count": null,
+      "cited_by_count": null,
+      "two_year_mean_citedness": null,
+      "h_index": null,
+      "i10_index": null,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
+    "id": "10.22306/asim.v11i1.118"
+  },
+  "10.1007/s40964-024-00926-0": {
+    "ai_summary_en": "1. Topic - This paper discusses a bi-material FDM system with enhanced mixing and cooling capabilities.\n2. Problem - It aims to address the challenge of achieving uniform material mixing and broad functionality.\n3. Method - The approach involves a single-nozzle/bi-extrusion FDM technology with a mixing device and an air-cooling system.\n4. Key Result - Experiments with six Dryflex TPEs demonstrated precise control over material flows, enabling the creation of multifunctional products.\n5. Takeaway - This technology enhances production flexibility, efficiency, and product quality while expanding material availability for additive manufacturing.",
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "author_details": [
+      {
+        "name": "Li Yang",
+        "openalex_author_id": "https://openalex.org/A5100781091",
+        "orcid": "https://orcid.org/0000-0003-1501-2912",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "RISE Research Institutes of Sweden",
+            "ror": "https://ror.org/03nnxqz81",
+            "country_code": "SE",
+            "type": "other"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "RISE Bioeconomy, Drottning Kristinas Väg 61, 11428, Stockholm, Sweden"
+        ]
+      },
+      {
+        "name": "Henrik Petterson",
+        "openalex_author_id": "https://openalex.org/A5115542935",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "RISE Research Institutes of Sweden",
+            "ror": "https://ror.org/03nnxqz81",
+            "country_code": "SE",
+            "type": "other"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "RISE Bioeconomy, Drottning Kristinas Väg 61, 11428, Stockholm, Sweden"
+        ]
+      },
+      {
+        "name": "Jonathan Olofsson",
+        "openalex_author_id": "https://openalex.org/A5013740552",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "WSP Sverige (Sweden)",
+            "ror": "https://ror.org/03d1dz577",
+            "country_code": "SE",
+            "type": "company"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "KFM Maskin I Sverige AB, Floragatan 7, S-280 40, Skånes Fagerhult, Sweden"
+        ]
+      },
+      {
+        "name": "Philip Palmaer",
+        "openalex_author_id": "https://openalex.org/A5093471277",
+        "orcid": null,
+        "position": "last",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Orexo (Sweden)",
+            "ror": "https://ror.org/01cf25767",
+            "country_code": "SE",
+            "type": "company"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Hexpol TPE AB, Gamla Örnäsgatan 15, S-662 22, Åmål, Sweden"
+        ]
+      }
+    ],
+    "corresponding_authors": [
+      {
+        "name": "Li Yang",
+        "openalex_author_id": "https://openalex.org/A5100781091",
+        "orcid": "https://orcid.org/0000-0003-1501-2912",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "RISE Research Institutes of Sweden",
+            "ror": "https://ror.org/03nnxqz81",
+            "country_code": "SE",
+            "type": "other"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "RISE Bioeconomy, Drottning Kristinas Väg 61, 11428, Stockholm, Sweden"
+        ]
+      }
+    ],
+    "openalex_work_id": "https://openalex.org/W4405573809",
+    "openalex_source_id": "https://openalex.org/S4210206835",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210206835",
+      "issn_l": "2363-9512",
+      "issn": [
+        "2363-9512",
+        "2363-9520"
+      ],
+      "type": "journal",
+      "host_organization_name": "Springer Science+Business Media",
+      "works_count": null,
+      "cited_by_count": null,
+      "two_year_mean_citedness": null,
+      "h_index": null,
+      "i10_index": null,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "id": "10.1007/s40964-024-00926-0"
+  },
   "10.1016/j.eswa.2025.128574": {
     "ai_summary_en": "1. Topic - This paper addresses the use of digital twin technology for object detection in smart industrial manufacturing.\n2. Problem - It aims to solve the issue of improving the accuracy and efficiency of object detection in traditional manufacturing processes.\n3. Method - The approach involves optimizing the object detection process using virtually assisted digital twin technology.\n4. Key Result - It demonstrates a significant improvement in object detection accuracy through the application of digital twin technology.\n5. Takeaway - The core message is that digital twin technology has the potential to enhance object detection performance in smart manufacturing environments.",
     "author_details": [
@@ -29047,310 +29251,5 @@
     ],
     "openalex_work_id": "https://openalex.org/W4403409937",
     "id": "10.1115/msec2024-121253"
-  },
-  "10.1016/j.rcim.2023.102633": {
-    "ai_summary_en": "1. Topic - This paper addresses a hybrid path planning method for robotic additive manufacturing.\n2. Problem - It aims to overcome the limitations of existing path planning methods in handling complex shapes effectively.\n3. Method - A new path planning approach based on skeleton contour partitioning is utilized.\n4. Key Result - The proposed method demonstrates more efficient and accurate path planning compared to existing methods.\n5. Takeaway - This paper proposes a novel approach to enhance the efficiency of path planning in robotic additive manufacturing.",
-    "journal_quality": {
-      "label": "Core manufacturing journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "author_details": [
-      {
-        "name": "Tao Zhao",
-        "openalex_author_id": "https://openalex.org/A5020012026",
-        "orcid": "https://orcid.org/0000-0001-6226-7411",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Beijing University of Technology",
-            "ror": "https://ror.org/037b1pp87",
-            "country_code": "CN",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "College of Mechanical Engineering and Applied Electronics Technology, Beijing University of Technology, Beijing, 100124, China",
-          "Engineering Research Center of Advanced Manufacturing Technology for Automotive Components-Ministry of Education, Beijing University of Technology, Beijing, 100124, China"
-        ]
-      },
-      {
-        "name": "Zhaoyang Yan",
-        "openalex_author_id": "https://openalex.org/A5085651729",
-        "orcid": "https://orcid.org/0000-0001-7392-2493",
-        "position": "middle",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "Beijing University of Technology",
-            "ror": "https://ror.org/037b1pp87",
-            "country_code": "CN",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "College of Mechanical Engineering and Applied Electronics Technology, Beijing University of Technology, Beijing, 100124, China",
-          "Engineering Research Center of Advanced Manufacturing Technology for Automotive Components-Ministry of Education, Beijing University of Technology, Beijing, 100124, China"
-        ]
-      },
-      {
-        "name": "Liwei Wang",
-        "openalex_author_id": "https://openalex.org/A5035789490",
-        "orcid": "https://orcid.org/0000-0001-5329-6835",
-        "position": "middle",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Hebei University of Science and Technology",
-            "ror": "https://ror.org/05h3pkk68",
-            "country_code": "CN",
-            "type": "education"
-          },
-          {
-            "name": "Beijing University of Technology",
-            "ror": "https://ror.org/037b1pp87",
-            "country_code": "CN",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "College of Mechanical Engineering and Applied Electronics Technology, Beijing University of Technology, Beijing, 100124, China",
-          "Engineering Research Center of Advanced Manufacturing Technology for Automotive Components-Ministry of Education, Beijing University of Technology, Beijing, 100124, China",
-          "Hebei Key Laboratory of Material Near-Net Forming Technology, School of Materials Science and Engineering, Hebei University of Science and Technology, Shijiazhuang, 050018, China"
-        ]
-      },
-      {
-        "name": "Rui Pan",
-        "openalex_author_id": "https://openalex.org/A5113205067",
-        "orcid": null,
-        "position": "middle",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Beijing University of Technology",
-            "ror": "https://ror.org/037b1pp87",
-            "country_code": "CN",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "College of Mechanical Engineering and Applied Electronics Technology, Beijing University of Technology, Beijing, 100124, China",
-          "Engineering Research Center of Advanced Manufacturing Technology for Automotive Components-Ministry of Education, Beijing University of Technology, Beijing, 100124, China"
-        ]
-      },
-      {
-        "name": "Xiaowei Wang",
-        "openalex_author_id": "https://openalex.org/A5100460488",
-        "orcid": "https://orcid.org/0000-0002-0181-4546",
-        "position": "middle",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Beijing University of Technology",
-            "ror": "https://ror.org/037b1pp87",
-            "country_code": "CN",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "College of Mechanical Engineering and Applied Electronics Technology, Beijing University of Technology, Beijing, 100124, China",
-          "Engineering Research Center of Advanced Manufacturing Technology for Automotive Components-Ministry of Education, Beijing University of Technology, Beijing, 100124, China"
-        ]
-      },
-      {
-        "name": "Kun Liu",
-        "openalex_author_id": "https://openalex.org/A5100398796",
-        "orcid": "https://orcid.org/0000-0003-0774-3635",
-        "position": "middle",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Beijing University of Technology",
-            "ror": "https://ror.org/037b1pp87",
-            "country_code": "CN",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "College of Mechanical Engineering and Applied Electronics Technology, Beijing University of Technology, Beijing, 100124, China",
-          "Engineering Research Center of Advanced Manufacturing Technology for Automotive Components-Ministry of Education, Beijing University of Technology, Beijing, 100124, China"
-        ]
-      },
-      {
-        "name": "Kaiwei Guo",
-        "openalex_author_id": "https://openalex.org/A5100586648",
-        "orcid": null,
-        "position": "middle",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Beijing University of Technology",
-            "ror": "https://ror.org/037b1pp87",
-            "country_code": "CN",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "College of Mechanical Engineering and Applied Electronics Technology, Beijing University of Technology, Beijing, 100124, China",
-          "Engineering Research Center of Advanced Manufacturing Technology for Automotive Components-Ministry of Education, Beijing University of Technology, Beijing, 100124, China"
-        ]
-      },
-      {
-        "name": "Qingsong Hu",
-        "openalex_author_id": "https://openalex.org/A5052946868",
-        "orcid": "https://orcid.org/0000-0001-8604-9080",
-        "position": "middle",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Beijing University of Technology",
-            "ror": "https://ror.org/037b1pp87",
-            "country_code": "CN",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "College of Mechanical Engineering and Applied Electronics Technology, Beijing University of Technology, Beijing, 100124, China",
-          "Engineering Research Center of Advanced Manufacturing Technology for Automotive Components-Ministry of Education, Beijing University of Technology, Beijing, 100124, China"
-        ]
-      },
-      {
-        "name": "Shujun Chen",
-        "openalex_author_id": "https://openalex.org/A5100759434",
-        "orcid": "https://orcid.org/0000-0002-7521-0665",
-        "position": "last",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Beijing University of Technology",
-            "ror": "https://ror.org/037b1pp87",
-            "country_code": "CN",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "College of Mechanical Engineering and Applied Electronics Technology, Beijing University of Technology, Beijing, 100124, China",
-          "Engineering Research Center of Advanced Manufacturing Technology for Automotive Components-Ministry of Education, Beijing University of Technology, Beijing, 100124, China"
-        ]
-      }
-    ],
-    "corresponding_authors": [
-      {
-        "name": "Zhaoyang Yan",
-        "openalex_author_id": "https://openalex.org/A5085651729",
-        "orcid": "https://orcid.org/0000-0001-7392-2493",
-        "position": "middle",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "Beijing University of Technology",
-            "ror": "https://ror.org/037b1pp87",
-            "country_code": "CN",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "College of Mechanical Engineering and Applied Electronics Technology, Beijing University of Technology, Beijing, 100124, China",
-          "Engineering Research Center of Advanced Manufacturing Technology for Automotive Components-Ministry of Education, Beijing University of Technology, Beijing, 100124, China"
-        ]
-      }
-    ],
-    "openalex_work_id": "https://openalex.org/W4385962714",
-    "openalex_source_id": "https://openalex.org/S118216261",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S118216261",
-      "issn_l": "0736-5845",
-      "issn": [
-        "0736-5845",
-        "1879-2537"
-      ],
-      "type": "journal",
-      "host_organization_name": "Elsevier BV",
-      "works_count": null,
-      "cited_by_count": null,
-      "two_year_mean_citedness": null,
-      "h_index": null,
-      "i10_index": null,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "id": "10.1016/j.rcim.2023.102633"
-  },
-  "10.1007/s00170-024-14876-y": {
-    "ai_summary_en": "1. Topic - This paper addresses hybrid manufacturing and intelligent financial management control in cyber-physical production.\n2. Problem - It aims to solve the lack of integration between hybrid manufacturing and financial management.\n3. Method - An approach combining physical manufacturing processes with intelligent financial management techniques was employed.\n4. Key Result - It demonstrated that hybrid manufacturing systems can significantly enhance financial management efficiency.\n5. Takeaway - The core message of this paper is that the integration of hybrid manufacturing and intelligent financial management can improve both productivity and financial performance.",
-    "author_details": [
-      {
-        "name": "Ting Li",
-        "openalex_author_id": "https://openalex.org/A5100416917",
-        "orcid": "https://orcid.org/0009-0000-6606-7724",
-        "position": "first",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "China Central Television",
-            "ror": "https://ror.org/059h8x781",
-            "country_code": "CN",
-            "type": "company"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Beijing Radio & Television Station, Beijing, 100022, China"
-        ]
-      }
-    ],
-    "corresponding_authors": [
-      {
-        "name": "Ting Li",
-        "openalex_author_id": "https://openalex.org/A5100416917",
-        "orcid": "https://orcid.org/0009-0000-6606-7724",
-        "position": "first",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "China Central Television",
-            "ror": "https://ror.org/059h8x781",
-            "country_code": "CN",
-            "type": "company"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Beijing Radio & Television Station, Beijing, 100022, China"
-        ]
-      }
-    ],
-    "openalex_work_id": "https://openalex.org/W4405157077",
-    "openalex_source_id": "https://openalex.org/S77056576",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S77056576",
-      "issn_l": "0268-3768",
-      "issn": [
-        "0268-3768",
-        "1433-3015"
-      ],
-      "type": "journal",
-      "host_organization_name": "Springer Science+Business Media",
-      "works_count": null,
-      "cited_by_count": null,
-      "two_year_mean_citedness": null,
-      "h_index": null,
-      "i10_index": null,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "id": "10.1007/s00170-024-14876-y"
   }
 }
