@@ -1,5 +1,34 @@
 # AGENT_LOG
 
+## 2026-06-18 18:28
+
+### Change Summary
+- Corrected the source-overlap venue reports to include only the two requested groups.
+
+### Edited Files
+- `reports/source_overlap_openalex_no_crossref_venues_20260618.xlsx`: generated the exact OpenAlex records with no Crossref source venue report.
+- `reports/source_overlap_crossref_no_openalex_venues_20260618.xlsx`: generated the exact Crossref records with no OpenAlex source venue report.
+- `reports/source_overlap_only_openalex_venues_20260618.xlsx`: removed the earlier less-explicit OpenAlex-only filename.
+- `reports/source_overlap_only_crossref_venues_20260618.xlsx`: removed the earlier less-explicit Crossref-only filename.
+- `reports/source_overlap_both_venues_20260618.xlsx`: removed because the user asked for only OpenAlex-no-Crossref and Crossref-no-OpenAlex.
+- `AGENT_LOG.md`: recorded this correction.
+
+### Implemented Features
+- Final report output now has exactly two Excel files:
+  - OpenAlex with no Crossref.
+  - Crossref with no OpenAlex.
+
+### Design Decisions
+- Removed the `Both` report entirely because it was outside the user's corrected scope.
+- Used explicit `NO Crossref` / `NO OpenAlex` naming to avoid ambiguity.
+
+### Remaining Work
+- None for this correction.
+
+### Notes / Cautions
+- The counts are based on current local dataset provenance after DOI/title de-duplication.
+- No OpenAI API was used.
+
 ## 2026-06-18 18:26
 
 ### Change Summary
