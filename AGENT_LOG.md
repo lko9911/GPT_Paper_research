@@ -5079,6 +5079,49 @@
 ### 주의사항
 - OpenAI API는 사용하지 않았습니다.
 - 열려 있는 Excel 프로세스를 강제로 종료하지 않았습니다.
+## 2026-06-18 14:05
+### Change Summary
+- Added a separate manual AML recommendation engine without modifying the existing 6-hour keyword update workflow.
+- Integrated optional AML recommendation display into the website without changing the existing paper fetch paths.
+
+### Modified / Created Files
+- `.github/workflows/aml-recommendation-manual.yml`: new manual-only workflow using `workflow_dispatch`; no schedule, push, or pull_request trigger.
+- `.gitignore`: added private/raw/cache/embedding/log/PDF/environment-file ignore rules.
+- `scripts/aml_common.py`: shared AML paths, scoring helpers, normalization, public-output helpers.
+- `scripts/generate_aml_profile.py`: deterministic AML profile generation with optional AI profile generation disabled by default.
+- `scripts/build_aml_seed_embeddings.py`: OpenAI seed embedding cache under `data/private/`.
+- `scripts/collect_aml_candidates.py`: candidate collection from existing local paper pool and optional OpenAlex/Crossref search.
+- `scripts/score_aml_recommendations.py`: deterministic scoring, optional AI judge/reason, public-safe output generation.
+- `scripts/run_aml_recommendation_pipeline.py`: orchestration entry point for the manual workflow.
+- `index.html`: added an optional AML recommendations section.
+- `assets/app.js`: added optional fetch/render for `public/data/aml_recommended_papers.json`; existing `data/papers.json`, `data/site_meta.json`, and `data/update_status.json` fetch paths remain unchanged.
+- `assets/style.css`: added small AML section/card styling.
+- `README.md`, `ARCHITECTURE.md`, `PROJECT_STATUS.md`: documented manual AML workflow, OpenAI usage policy, public/private outputs, and seed file requirement.
+
+### Implemented Features
+- AML recommendation pipeline runs manually only.
+- OpenAI embeddings are used when an API key is available, but OpenAI is not used as the primary paper search engine.
+- OpenAI relevance judge and OpenAI reason rewriting are optional and disabled by default.
+- Template-based recommendation reasons are used by default.
+- Private outputs are written under ignored `data/private/`.
+- Public output path is `public/data/aml_recommended_papers.json`.
+
+### Design Decisions
+- `.github/workflows/update-papers.yml` was inspected and intentionally not modified.
+- The current website fetch paths must not move: `data/papers.json`, `data/site_meta.json`, and `data/update_status.json`.
+- The AML section is hidden if `public/data/aml_recommended_papers.json` does not exist, preserving existing site behavior.
+- The required repository seed file `data/seed/aml_seed_papers_core_enriched.json` is currently absent. The scripts support `AML_SEED_PATH` for local testing but default to the required path.
+
+### Remaining Work
+- Add the real AML seed file at `data/seed/aml_seed_papers_core_enriched.json`.
+- Run `Actions > AML Recommendation Manual > Run workflow`.
+- Review the generated `public/data/aml_recommended_papers.json` before publishing if using collection modes.
+
+### Notes / Cautions
+- A smoke test used local `private/aml_seed_papers_core_enriched.json` only through `AML_SEED_PATH`; generated public/profile test files were removed and private seed data was not committed.
+- OpenAI API was not used in the smoke test because no key was present.
+- Do not commit `data/private/`, embeddings, logs, raw API payloads, PDFs, or `.env` files.
+
 ## 2026-06-18 09:57
 ### Change Summary
 - Removed the `Metals/Alloys` keyword/subtopic from the tracker taxonomy and collection logic.

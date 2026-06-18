@@ -256,6 +256,7 @@ const UPDATE_STATUS_URLS = [
   "https://raw.githubusercontent.com/lko9911/GPT_Paper_research/main/data/update_status.json",
   "data/update_status.json",
 ];
+const AML_RECOMMENDATIONS_URL = "public/data/aml_recommended_papers.json";
 
 if (localStorage.getItem("preferenceVersion") !== PREFERENCE_VERSION) {
   localStorage.setItem("theme", DEFAULT_THEME);
@@ -265,6 +266,7 @@ localStorage.removeItem("language");
 
 const state = {
   papers: [],
+  amlRecommendations: [],
   siteMeta: null,
   updateStatus: null,
   filtered: [],
@@ -306,6 +308,9 @@ const els = {
   opsNote: document.querySelector("#ops-note"),
   heroStatus: document.querySelector("#hero-status"),
   themeToggle: document.querySelector("#theme-toggle"),
+  amlSection: document.querySelector("#aml-recommendations"),
+  amlList: document.querySelector("#aml-recommendation-list"),
+  amlCount: document.querySelector("#aml-result-count"),
 };
 
 async function init() {
@@ -326,11 +331,13 @@ async function init() {
     console.warn("Failed to load site_meta.json", error);
     state.siteMeta = null;
   }
+  state.amlRecommendations = await loadAmlRecommendations();
   state.updateStatus = await loadUpdateStatus();
 
   buildFilters();
   buildSideNav();
   renderVenueBoard();
+  renderAmlRecommendations();
   updateStats();
   applyFilters();
 
@@ -601,6 +608,67 @@ function renderVenueBoard() {
       scrollToPapers();
     });
   });
+}
+
+async function loadAmlRecommendations() {
+  try {
+    const response = await fetch(`${AML_RECOMMENDATIONS_URL}?ts=${Date.now()}`);
+    if (!response.ok) return [];
+    const data = await response.json();
+    return Array.isArray(data) ? data : [];
+  } catch (error) {
+    console.warn("AML recommendations are not available yet", error);
+    return [];
+  }
+}
+
+function renderAmlRecommendations() {
+  if (!els.amlSection || !els.amlList || !els.amlCount) return;
+  const items = state.amlRecommendations || [];
+  if (!items.length) {
+    els.amlSection.hidden = true;
+    return;
+  }
+  const visible = items
+    .filter((item) => ["High", "Possible", "Watch"].includes(item.recommendation_level))
+    .sort((a, b) => Number(b.aml_score || 0) - Number(a.aml_score || 0))
+    .slice(0, 24);
+  if (!visible.length) {
+    els.amlSection.hidden = true;
+    return;
+  }
+  els.amlSection.hidden = false;
+  els.amlCount.textContent = `${visible.length.toLocaleString("en-US")} recommendations`;
+  els.amlList.innerHTML = visible.map(renderAmlRecommendationCard).join("");
+}
+
+function renderAmlRecommendationCard(item) {
+  const doiUrl = item.url || (item.doi ? `https://doi.org/${item.doi}` : "");
+  const topics = (item.matched_topics || [])
+    .slice(0, 4)
+    .map((topic) => `<span class="badge tag">${escapeHtml(topic)}</span>`)
+    .join("");
+  const routes = (item.discovery_routes || []).slice(0, 3).map((route) => String(route).replace(/_/g, " ")).join(", ");
+  const seed = (item.related_seed_papers || [])[0];
+  const seedText = seed && seed.title ? `Closest seed: ${seed.title}` : "";
+  const authors = Array.isArray(item.authors) ? formatAuthors(item.authors) : "";
+  return `<article class="paper-card aml-card">
+    <div class="card-content">
+      <div class="card-topline">
+        <span class="publication-badge">${escapeHtml(item.recommendation_level || "Recommended")} - AML ${escapeHtml(String(Math.round(Number(item.aml_score || 0) * 100)))}</span>
+        <span class="summary-provider-badge is-openai">Embedding-based</span>
+      </div>
+      <h3 class="paper-title">${escapeHtml(item.title || "Untitled")}</h3>
+      <p class="paper-meta">${escapeHtml([authors, item.journal, item.year].filter(Boolean).join(" - "))}</p>
+      <p class="summary">${escapeHtml(item.why_recommended || "Recommended by the AML profile scoring pipeline.")}</p>
+      ${seedText ? `<p class="relevance-note">${escapeHtml(seedText)}</p>` : ""}
+      <div class="tag-line">${topics}</div>
+      ${routes ? `<p class="aml-route">Routes: ${escapeHtml(routes)}</p>` : ""}
+      <div class="card-links">
+        ${doiUrl ? `<a class="link-pill primary" href="${escapeAttribute(doiUrl)}" target="_blank" rel="noopener noreferrer">Open Paper</a>` : ""}
+      </div>
+    </div>
+  </article>`;
 }
 
 function clearVenueQuickFilters() {

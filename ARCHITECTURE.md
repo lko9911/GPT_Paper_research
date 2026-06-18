@@ -200,6 +200,35 @@ This workflow does not call OpenAI, crawl publisher pages, download PDFs, or sto
 ### IF / Quartile Policy
 
 Official Journal Impact Factor and quartile classification should not be inferred from OpenAlex/Crossref. If those values are needed, add a licensed import such as `data/journal_metrics.csv` with source year, metric source, ISSN, JIF, and quartile fields. Until then the UI must call the automatic label a `Venue signal`, not `Impact Factor`.
+# AML Recommendation Pipeline
+
+The existing scheduled keyword pipeline remains `.github/workflows/update-papers.yml` and must not be renamed, moved, or modified for AML recommendation work. It updates `data/papers.json`, `data/archive_papers.json`, `data/site_meta.json`, `UPDATE_STATUS.md`, and `data/update_status.json`, then deploys the Pages site.
+
+The AML recommendation pipeline is separate and manual-only:
+
+- Workflow: `.github/workflows/aml-recommendation-manual.yml`
+- Trigger: `workflow_dispatch` only
+- Seed input: `data/seed/aml_seed_papers_core_enriched.json`
+- Public output: `public/data/aml_recommended_papers.json`
+- Private outputs: `data/private/aml_seed_embeddings.json`, `data/private/aml_candidate_embeddings.json`, `data/private/aml_candidate_pool.json`, `data/private/aml_scoring_debug.json`, and `data/private/aml_recommendation_log.json`
+
+Frontend integration is additive. `assets/app.js` still fetches the existing site data from:
+
+- `data/papers.json`
+- `data/site_meta.json`
+- `data/update_status.json`
+
+It additionally tries to fetch `public/data/aml_recommended_papers.json`. If that file is missing, the AML section stays hidden and the existing paper list continues to work.
+
+OpenAI use is constrained:
+
+- Embeddings are used when `OPENAI_API_KEY` is available.
+- OpenAI is not used as the paper search engine.
+- Candidate collection uses the existing local paper pool and, in collection modes, OpenAlex/Crossref.
+- OpenAI relevance judging is controlled by `use_ai_judge` and defaults to `false`.
+- OpenAI reason rewriting is controlled by `use_ai_reason` and defaults to `false`.
+- Template-based recommendation reasons are used by default.
+
 # Frontend Density Policy
 
 As of 2026-06-18, the frontend has no runtime density mode.

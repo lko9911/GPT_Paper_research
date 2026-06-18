@@ -6,6 +6,20 @@ The public site is English-only. The previous Korean UI mode has been removed.
 New OpenAI summaries and metadata fallback summaries are generated as English Q5 summaries only.
 Historical Korean summary fields may still exist in older JSON records, but the frontend no longer displays or refreshes them.
 
+## AML Recommendation Engine
+
+The existing keyword-based paper update still runs automatically every 6 hours through
+`.github/workflows/update-papers.yml`. Do not use that workflow for AML recommendation.
+
+AML recommendation is a separate manual-only workflow:
+
+1. Add the AML seed file at `data/seed/aml_seed_papers_core_enriched.json`.
+2. Go to `Actions > AML Recommendation Manual > Run workflow`.
+3. Choose `score_existing`, `collect_and_score`, or `full_refresh`.
+4. Keep `use_ai_judge=false` and `use_ai_reason=false` unless you explicitly want extra OpenAI text-model cost.
+
+The AML pipeline uses OpenAI embeddings when `OPENAI_API_KEY` is available, but it does not use OpenAI as the paper search engine. OpenAI relevance judging and reason rewriting are optional and disabled by default. Private embeddings, candidate pools, debug logs, raw data, and PDFs are ignored by Git. Public-safe recommendations are written to `public/data/aml_recommended_papers.json`.
+
 생산·제조, 3D/4D 프린팅, 로봇틱스, AI 제조 분야를 위한 AI 기반 논문 큐레이션 저장소입니다. GitHub Pages에서 동작하는 정적 웹사이트와 GitHub Actions 기반 자동 업데이트 파이프라인을 포함합니다.
 
 ## 프로젝트 목적
