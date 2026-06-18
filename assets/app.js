@@ -695,6 +695,7 @@ function renderAmlRecommendationCard(item) {
   const routes = (item.discovery_routes || []).slice(0, 3).map((route) => String(route).replace(/_/g, " ")).join(", ");
   const seed = (item.related_seed_papers || [])[0];
   const seedText = seed && seed.title ? `Closest seed: ${seed.title}` : "";
+  const summaryHtml = renderAmlSummaryBlock(item);
   const authorDetailsHtml = renderAuthorDetails({
     authors: Array.isArray(item.authors) ? item.authors : [],
     author_details: Array.isArray(item.author_details) ? item.author_details : [],
@@ -708,7 +709,7 @@ function renderAmlRecommendationCard(item) {
       </div>
       <h4 class="paper-title">${escapeHtml(item.title || "Untitled")}</h4>
       ${authorDetailsHtml}
-      <p class="summary">${escapeHtml(item.why_recommended || "Recommended by the AML profile scoring pipeline.")}</p>
+      ${summaryHtml}
       ${seedText ? `<p class="relevance-note">${escapeHtml(seedText)}</p>` : ""}
       <div class="tag-line">${topics}</div>
       <div class="card-links">
@@ -719,6 +720,58 @@ function renderAmlRecommendationCard(item) {
       <p class="policy-mini">AML recommendation - ${escapeHtml(routes ? `routes: ${routes}` : "manual recommendation output")} - updated ${escapeHtml(formatAmlUpdatedAt(item.updated_at))}</p>
     </div>
   </article>`;
+}
+
+function renderAmlSummaryBlock(item) {
+  return `<dl class="summary summary-qa">
+    ${amlSummarySections(item)
+      .map(
+        (section, index) => `<div class="${index === 4 ? "is-takeaway" : ""}">
+          <dt>${escapeHtml(section.question)}</dt>
+          <dd>${escapeHtml(section.answer)}</dd>
+        </div>`
+      )
+      .join("")}
+  </dl>`;
+}
+
+function amlSummarySections(item) {
+  const labels = UI_TEXT.en.summaryQuestions;
+  const title = item.title || "This paper";
+  const venue = item.journal || "an unknown venue";
+  const year = item.year || "undated";
+  const topics = (item.matched_topics || []).slice(0, 4).map(displayLabel);
+  const topicPhrase = formatEnglishList(topics) || "the AML recommendation profile";
+  const routes = (item.discovery_routes || []).slice(0, 3).map((route) => String(route).replace(/_/g, " "));
+  const routePhrase = formatEnglishList(routes) || "the current recommendation pool";
+  const seed = (item.related_seed_papers || [])[0];
+  const score = Math.round(Number(item.aml_score || 0) * 100);
+  const reason = item.why_recommended || `It matches ${topicPhrase} in the AML recommendation profile.`;
+
+  return [
+    {
+      question: labels[0],
+      answer: `${title} is a ${year} paper from ${venue} recommended for its connection to ${topicPhrase}.`,
+    },
+    {
+      question: labels[1],
+      answer: "It is included because the recommendation engine detected overlap with the lab's target manufacturing and design interests.",
+    },
+    {
+      question: labels[2],
+      answer: `It was selected through ${routePhrase} using metadata, curated topic signals, and AML profile scoring; the detailed method should be checked in the DOI source.`,
+    },
+    {
+      question: labels[3],
+      answer: seed && seed.title
+        ? `The strongest recommendation signal is its similarity to the seed paper "${seed.title}".`
+        : reason,
+    },
+    {
+      question: labels[4],
+      answer: `${reason} Current AML recommendation score is ${score}/100.`,
+    },
+  ];
 }
 
 function attachAmlCitationHandlers(items) {

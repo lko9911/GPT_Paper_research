@@ -1,5 +1,30 @@
 # AGENT_LOG
 
+## 2026-06-18 14:55
+
+### Change Summary
+- Added Q5-style summaries to AML recommendation cards so they match normal paper cards.
+
+### Edited Files
+- `assets/app.js`: added `renderAmlSummaryBlock()` and `amlSummarySections()`; AML recommendation cards now render the same `summary-qa` Q5 layout used by regular paper cards.
+- `index.html`: bumped asset cache versions to `20260618-aml-q5`.
+- `AGENT_LOG.md`: recorded this AML Q5 UI change.
+
+### Implemented Features
+- AML recommendation cards now show five sections: Topic, Problem, Method, Key Result, and Takeaway.
+- The Q5 content is generated from public-safe recommendation metadata: title, venue, year, matched topics, discovery routes, AML score, recommendation reason, and nearest seed paper when available.
+
+### Design Decisions
+- AML Q5 is recommendation-oriented, not a full abstract summary. It avoids claiming detailed findings that are not present in the public recommendation data.
+- The detailed method/result fields tell the user to check the DOI source when the recommendation data does not contain paper-level details.
+
+### Remaining Work
+- If richer AML paper abstracts are later available in a public-safe generated-summary field, map that field into the Q5 answers.
+
+### Notes / Cautions
+- OpenAI API was not used.
+- Raw abstracts/PDFs are still not displayed or stored in public output.
+
 ## 2026-06-18 14:45
 
 ### Change Summary
