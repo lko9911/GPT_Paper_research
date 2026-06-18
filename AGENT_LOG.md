@@ -1,5 +1,33 @@
 # AGENT_LOG
 
+## 2026-06-18 18:31
+
+### Change Summary
+- Corrected the venue reports from dataset provenance-only logic to verified API-coverage logic.
+
+### Edited Files
+- `reports/openalex_only_no_crossref_journal_match_venues_20260618.xlsx`: generated the verified OpenAlex-only venue report using the existing Crossref journal lookup result (`no_crossref_journal_match`).
+- `reports/crossref_only_no_openalex_source_match_venues_20260618.xlsx`: generated the verified Crossref-only venue report using the existing OpenAlex source lookup result (`no_openalex_source_match`).
+- `reports/source_overlap_openalex_no_crossref_venues_20260618.xlsx`: removed the previous provenance-only report.
+- `reports/source_overlap_crossref_no_openalex_venues_20260618.xlsx`: removed the previous provenance-only report.
+- `AGENT_LOG.md`: recorded this correction.
+
+### Implemented Features
+- Final OpenAlex-only report now means OpenAlex-observed venues with no Crossref journal match, not merely records whose local source field lacked Crossref.
+- Final Crossref-only report now means Crossref-observed venues with no OpenAlex source match, not merely records whose local source field lacked OpenAlex.
+
+### Design Decisions
+- Reused the already verified `reports/api_source_coverage_report.xlsx` lookup sheets instead of rerunning external API checks.
+- Used explicit filenames containing `no_crossref_journal_match` and `no_openalex_source_match` to avoid ambiguity.
+
+### Remaining Work
+- None for this correction.
+
+### Notes / Cautions
+- Verified OpenAlex-only venue count: 93.
+- Verified Crossref-only venue count: 202.
+- No OpenAI API was used.
+
 ## 2026-06-18 18:28
 
 ### Change Summary
