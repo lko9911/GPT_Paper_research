@@ -3923,6 +3923,11 @@ h1 {
   gap: 20px;
 }
 
+.aml-score-note {
+  max-width: 58rem;
+  margin-top: 7px;
+}
+
 .aml-recommendation-list {
   --grid-min: 330px;
   display: grid;

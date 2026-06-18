@@ -1,5 +1,31 @@
 # AGENT_LOG
 
+## 2026-06-18 15:32
+
+### Change Summary
+- Explained the AML recommendation score in the UI and removed the recommendation-level badge from AML cards.
+
+### Edited Files
+- `index.html`: added a short AML score explanation under the AML Recommendation Engine heading and bumped the asset cache version.
+- `assets/app.js`: removed the visible `High` / `Possible` / `Watch` badge from AML recommendation cards and simplified the empty-state copy.
+- `assets/style.css`: added lightweight spacing for the AML score explanation.
+- `AGENT_LOG.md`: recorded this display and explanation update.
+
+### Implemented Features
+- AML cards now show only the numerical `AML xx/100` score in the topline.
+- The AML section explains that the score is a 0-100 profile-match score based on seed-paper similarity, topic overlap, discovery route, recency, and venue signal.
+
+### Design Decisions
+- Kept the internal recommendation-level field for filtering and pipeline logic, but removed it from the public card UI because `Possible` and `Watch` were unclear as badges.
+- Clarified that AML score is not a journal ranking or impact metric.
+
+### Remaining Work
+- None for this UI clarification.
+
+### Notes / Cautions
+- No data files were changed.
+- OpenAI API was not used.
+
 ## 2026-06-18 15:29
 
 ### Change Summary

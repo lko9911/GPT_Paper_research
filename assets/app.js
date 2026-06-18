@@ -701,7 +701,7 @@ function renderAmlRecommendations() {
     }
     els.amlSection.hidden = false;
     els.amlCount.textContent = "0 recommendations";
-    els.amlList.innerHTML = amlEmptyMessage("The AML recommendation file exists, but no High, Possible, or Watch papers are available.");
+    els.amlList.innerHTML = amlEmptyMessage("The AML recommendation file exists, but no public recommendations are available.");
     return;
   }
   els.amlSection.hidden = false;
@@ -745,7 +745,6 @@ function renderAmlRecommendationCard(item) {
     <div class="card-content">
       <div class="card-topline">
         <span class="publication-badge">${escapeHtml(publicationLabel)}</span>
-        <span class="summary-provider-badge is-openai">${escapeHtml(item.recommendation_level || "Recommended")}</span>
         <span class="relevance-badge">AML ${escapeHtml(String(score))}/100</span>
       </div>
       <h4 class="paper-title">${escapeHtml(item.title || "Untitled")}</h4>
