@@ -1,5 +1,34 @@
 # AGENT_LOG
 
+## 2026-06-18 18:24
+
+### Change Summary
+- Recreated the OpenAlex / Crossref / Both venue coverage Excel report.
+
+### Edited Files
+- `reports/source_overlap_venues_recreated_20260618.xlsx`: generated a new workbook with `Summary`, `Only_OpenAlex_Venues`, `Only_Crossref_Venues`, `Both_Venues`, and `All_Venues` sheets.
+- `AGENT_LOG.md`: recorded the recreated report and counting method.
+
+### Implemented Features
+- Recomputed source groups from current `data/papers.json` and `data/archive_papers.json`.
+- Used DOI-first and normalized-title fallback de-duplication for paper identity.
+- Counted active site papers separately from archive papers.
+- Grouped venues by observed source provenance:
+  - Only OpenAlex
+  - Only Crossref
+  - Both OpenAlex + Crossref
+
+### Design Decisions
+- Created one consolidated Excel workbook instead of several separate files so the report is easier to keep and compare.
+- Kept `All_Venues` as group-specific venue rows, meaning the same venue can appear in more than one source group; the `Summary` sheet contains the unique venue counts.
+
+### Remaining Work
+- None for this report recreation.
+
+### Notes / Cautions
+- This report describes source provenance in the current local dataset, not universal API coverage for every journal.
+- No OpenAI API was used.
+
 ## 2026-06-18 15:37
 
 ### Change Summary
