@@ -27,6 +27,11 @@ const FIELD_SUBTOPICS = {
   "AI 생산제조": ["Self-driving Labs", "Digital Twins", "Machine Learning", "Design Automation", "제조 자동화"],
 };
 
+const AI_FIELD_KEY = Object.keys(FIELD_SUBTOPICS).find((field) => field.includes("AI"));
+if (AI_FIELD_KEY && !FIELD_SUBTOPICS[AI_FIELD_KEY].includes("AML")) {
+  FIELD_SUBTOPICS[AI_FIELD_KEY].unshift("AML");
+}
+
 const SIDEBAR_OTHER_TOPIC = "__field_other__";
 
 const LOW_SIGNAL_CARD_TAGS = new Set([
@@ -45,6 +50,7 @@ const CARD_TAG_PRIORITY = new Map([
   ["Soft robotics", 1],
   ["LCE", 1],
   ["Digital Twins", 1],
+  ["AML", 1],
   ["Self-driving Labs", 1],
   ["Toolpath strategy", 2],
   ["Material switching", 2],
@@ -217,6 +223,7 @@ const TAG_LABELS = {
     "Path planning": "Path Planning",
     "Process optimization": "Process Optimization",
     "Manufacturing automation": "Manufacturing Automation",
+    AML: "AML",
     "Self-driving Labs": "Self-driving Labs",
     "Digital Twins": "Digital Twins",
     "Robotic autonomous experimentation": "Self-driving Labs",
@@ -1370,9 +1377,14 @@ function collapseMaterialExtrusionTags(tags, paper) {
   return [selected, ...tags.filter((tag) => !cluster.includes(tag))];
 }
 
+function hasAmlSignal(text) {
+  return /\baml\b/.test(text) || text.includes("advanced manufacturing lab") || text.includes("additive manufacturing lab");
+}
+
 function explicitCanonicalAlias(value, text) {
   const raw = String(value || "").trim().toLowerCase();
   if (!raw) return "";
+  if (hasAmlSignal(text) || hasAmlSignal(raw)) return "AML";
 
   const checks = [
     [["적층 제조", "additive manufacturing", "3d printing", "3d 프린팅"], "Additive manufacturing"],
@@ -1769,6 +1781,7 @@ function deriveSubtopics(paper) {
   if (hasAny(text, ["deep learning", "neural", "딥러닝"])) subtopics.add("Deep Learning");
   if (hasAny(text, ["reinforcement learning", "강화학습"])) subtopics.add("Reinforcement Learning");
   if (hasAny(text, ["process control", "monitoring", "closed-loop", "공정제어", "모니터링"])) subtopics.add("AI 공정제어");
+  if (hasAmlSignal(text)) subtopics.add("AML");
   if (paperHasCuratedDigitalTwinTag(paper)) {
     subtopics.add("Digital Twins");
   }

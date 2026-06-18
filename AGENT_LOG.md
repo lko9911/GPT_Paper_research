@@ -1,5 +1,32 @@
 # AGENT_LOG
 
+## 2026-06-18 14:07
+
+### Change Summary
+- Added `AML` as a visible keyword/subtopic in the left sidebar under `AI Manufacturing`.
+
+### Edited Files
+- `assets/app.js`: added `AML` to the AI Manufacturing sidebar subtopics, canonical tag labels, representative tag priority, and conservative AML signal detection.
+- `index.html`: bumped asset cache versions to `20260618-aml-topic`.
+- `AGENT_LOG.md`: recorded this sidebar keyword change.
+
+### Implemented Features
+- The left panel now shows `AML` as a selectable subtopic under `AI Manufacturing`.
+- Papers with an explicit `AML` tag or a title/venue/tag signal such as standalone `AML`, `Advanced Manufacturing Lab`, or `Additive Manufacturing Lab` can be counted and filtered through the AML subtopic.
+
+### Design Decisions
+- `AML` was added as a UI/subtopic signal only; no existing data files or scheduled collection workflow were moved or changed.
+- Matching uses a standalone `AML` acronym or manufacturing-lab phrase to reduce accidental matches against unrelated words.
+
+### Remaining Work
+- Verify the deployed GitHub Pages UI after cache refresh.
+- If the intended meaning of `AML` should be broader than lab/manufacturing-lab wording, expand the matching terms later.
+
+### Notes / Cautions
+- OpenAI API was not used.
+- `node --check` could not be run because `node` is not available in the local PATH.
+- The existing website fetch paths remain unchanged: `data/papers.json`, `data/site_meta.json`, and `data/update_status.json`.
+
 ## 2026-06-17 23:03
 
 ### Change Summary
