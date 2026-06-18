@@ -1,5 +1,33 @@
 # AGENT_LOG
 
+## 2026-06-18 14:18
+
+### Change Summary
+- Reinterpreted `AML` as the recommendation engine entry point, not as a paper keyword/subtopic.
+- Moved AML access to the top of the left sidebar as `AML Recommendations`.
+
+### Edited Files
+- `assets/app.js`: removed `AML` from tag/subtopic classification logic and added a top sidebar shortcut that scrolls to the AML recommendation section when available.
+- `assets/style.css`: added light/dark styling for the top `AML Recommendations` shortcut.
+- `index.html`: bumped asset cache versions to `20260618-aml-top`.
+- `AGENT_LOG.md`: recorded the correction.
+
+### Implemented Features
+- The left panel now starts with an `AML Recommendations` button.
+- The button shows the number of visible AML recommendations when generated, otherwise it shows `Top`.
+- `AML` no longer appears as a normal paper tag or AI Manufacturing subtopic.
+
+### Design Decisions
+- `AML` represents the manual recommendation workflow/section, so it should behave like a navigation shortcut rather than a taxonomy filter.
+- Existing scheduled collection, public data fetch paths, and paper classification data remain unchanged.
+
+### Remaining Work
+- Verify on GitHub Pages after deployment that the top shortcut appears above all fields and that it scrolls correctly when recommendation output exists.
+
+### Notes / Cautions
+- OpenAI API was not used.
+- This corrects the previous `AML` sidebar-topic implementation from commit `f148e6c`.
+
 ## 2026-06-18 14:07
 
 ### Change Summary
