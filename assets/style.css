@@ -3903,6 +3903,28 @@ h1 {
   background: color-mix(in srgb, var(--green), transparent 90%);
 }
 
+.aml-empty-card {
+  padding: 18px;
+  border: 1px dashed color-mix(in srgb, var(--blue), var(--line) 62%);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--panel), var(--blue-soft) 22%);
+  color: var(--text);
+}
+
+.aml-empty-card strong {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--text);
+  font-size: 0.94rem;
+}
+
+.aml-empty-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.55;
+}
+
 .aml-route {
   margin: 0;
   color: var(--muted);

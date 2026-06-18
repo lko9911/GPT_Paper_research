@@ -1,5 +1,37 @@
 # AGENT_LOG
 
+## 2026-06-18 14:31
+
+### Change Summary
+- Corrected the AML sidebar behavior so `AML Recommendations` means opening the recommendation papers, not moving to the page top.
+- Published the existing local AML scoring result as a public-safe recommendation JSON file.
+
+### Edited Files
+- `assets/app.js`: changed the AML sidebar shortcut badge from `Top` to `Open`, made the click always open the AML recommendation section, and added an explicit empty-state message when no public recommendation file exists.
+- `assets/style.css`: added styling for the AML recommendation empty-state card.
+- `index.html`: bumped asset cache versions to `20260618-aml-open`.
+- `public/data/aml_recommended_papers.json`: generated 50 public-safe AML recommendation records from the existing local AML scoring debug output.
+- `AGENT_LOG.md`: recorded this AML recommendation UI/data correction.
+
+### Implemented Features
+- Clicking `AML Recommendations` now opens the recommendation paper area.
+- If recommendation data exists, the user sees related AML recommendation papers.
+- If recommendation data is missing, the section explains that the manual AML Recommendation workflow needs to publish it.
+
+### Design Decisions
+- `Top` was removed from the button because the user meant top position only, not a button label or behavior.
+- The public recommendation file uses the existing `public_paper()` sanitizer and does not include abstracts.
+- The existing scheduled paper update workflow and public paper data paths were not changed.
+
+### Remaining Work
+- Confirm the deployed GitHub Pages UI after Pages finishes rebuilding.
+- Future AML recommendation refreshes should be done through `Actions > AML Recommendation Manual`.
+
+### Notes / Cautions
+- OpenAI API was not used.
+- Validation confirmed `public/data/aml_recommended_papers.json` has 50 records and no `abstract` key.
+- Browser screenshot QA could not be run because the browser automation tool is not available in this session.
+
 ## 2026-06-18 14:18
 
 ### Change Summary

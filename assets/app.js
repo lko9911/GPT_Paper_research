@@ -273,6 +273,7 @@ const state = {
   activeTargetVenue: "",
   activeVenueGroup: "",
   activeSubtopic: "",
+  amlPanelRequested: false,
   theme: localStorage.getItem("theme") || DEFAULT_THEME,
   language: DEFAULT_LANGUAGE,
   collapsedFields: new Set(readStoredArray("collapsedFields")),
@@ -477,7 +478,7 @@ function buildSideNav() {
   const amlCount = amlVisibleRecommendations().length;
   const amlShortcut = `<button class="side-top-link" type="button" data-side-target="aml-recommendations">
     <span class="side-label">AML Recommendations</span>
-    <span class="side-count">${amlCount ? amlCount.toLocaleString("en-US") : "Top"}</span>
+    <span class="side-count">${amlCount ? amlCount.toLocaleString("en-US") : "Open"}</span>
   </button>`;
   const fieldGroups = FIELD_ORDER.filter((field) => fieldCounts.get(field))
     .map((field) => {
@@ -502,11 +503,11 @@ function buildSideNav() {
 
   els.sideTopicNav.querySelectorAll("[data-side-target]").forEach((button) => {
     button.addEventListener("click", () => {
+      state.amlPanelRequested = true;
+      renderAmlRecommendations();
       const target = document.querySelector(`#${button.dataset.sideTarget}`);
-      if (target && !target.hidden) {
+      if (target) {
         target.scrollIntoView({ behavior: "smooth", block: "start" });
-      } else {
-        document.querySelector("#top")?.scrollIntoView({ behavior: "smooth", block: "start" });
       }
     });
   });
@@ -643,17 +644,36 @@ function renderAmlRecommendations() {
   if (!els.amlSection || !els.amlList || !els.amlCount) return;
   const items = state.amlRecommendations || [];
   if (!items.length) {
-    els.amlSection.hidden = true;
+    if (!state.amlPanelRequested) {
+      els.amlSection.hidden = true;
+      return;
+    }
+    els.amlSection.hidden = false;
+    els.amlCount.textContent = "No published recommendations";
+    els.amlList.innerHTML = amlEmptyMessage();
     return;
   }
   const visible = amlVisibleRecommendations();
   if (!visible.length) {
-    els.amlSection.hidden = true;
+    if (!state.amlPanelRequested) {
+      els.amlSection.hidden = true;
+      return;
+    }
+    els.amlSection.hidden = false;
+    els.amlCount.textContent = "0 recommendations";
+    els.amlList.innerHTML = amlEmptyMessage("The AML recommendation file exists, but no High, Possible, or Watch papers are available.");
     return;
   }
   els.amlSection.hidden = false;
   els.amlCount.textContent = `${visible.length.toLocaleString("en-US")} recommendations`;
   els.amlList.innerHTML = visible.map(renderAmlRecommendationCard).join("");
+}
+
+function amlEmptyMessage(message = "No public AML recommendation file is available yet. Run the manual AML Recommendation workflow to publish related papers here.") {
+  return `<div class="aml-empty-card">
+    <strong>AML recommendation papers are not published yet.</strong>
+    <p>${escapeHtml(message)}</p>
+  </div>`;
 }
 
 function amlVisibleRecommendations() {
