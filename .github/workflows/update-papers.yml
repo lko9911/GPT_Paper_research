@@ -67,16 +67,19 @@ jobs:
           CROSSREF_MAX_PAGES: "1"
         run: python scripts/update_papers.py
 
+      - name: Build split data
+        run: python scripts/build_split_data.py
+
       - name: Commit changed data
         id: commit_data
         run: |
-          if git diff --quiet -- data/papers.json data/archive_papers.json data/site_meta.json; then
+          if git diff --quiet -- data/papers.json data/archive_papers.json data/site_meta.json data/papers_index.json data/archive_papers_index.json data/detail_manifest.json data/archive_detail_manifest.json data/details data/archive_details; then
             echo "No paper data changes."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/papers.json data/archive_papers.json data/site_meta.json
+          git add data/papers.json data/archive_papers.json data/site_meta.json data/papers_index.json data/archive_papers_index.json data/detail_manifest.json data/archive_detail_manifest.json data/details data/archive_details
           git commit -m "Update paper metadata"
           git pull --rebase --autostash origin main
           git push

@@ -220,6 +220,41 @@ Frontend integration is additive. `assets/app.js` still fetches the existing sit
 
 It additionally tries to fetch `public/data/aml_recommended_papers.json`. If that file is missing, the AML section stays hidden and the existing paper list continues to work.
 
+# Split Public Data Loading
+
+The source-of-truth paper files remain `data/papers.json` and `data/archive_papers.json`; do not move them because the update, enrichment, OpenAI summary, and AML workflows still use those paths.
+
+For GitHub Pages runtime performance, the public frontend now loads split data:
+
+- Startup active index: `data/papers_index.json`
+- Active detail manifest: `data/detail_manifest.json`
+- Active detail chunks: `data/details/detail_000.json`, `detail_001.json`, ...
+- Archive index: `data/archive_papers_index.json`
+- Archive detail manifest: `data/archive_detail_manifest.json`
+- Archive detail chunks: `data/archive_details/archive_detail_000.json`, ...
+
+`assets/app.js` loads only `data/papers_index.json` at startup. It does not load `data/papers.json` in production. A local-development fallback to `data/papers.json` exists only when `papers_index.json` is missing, and the UI shows a data-loading warning first.
+
+The active index contains only fields needed for first-page filtering, sorting, and compact card rendering: stable id, title, authors, year, venue, DOI/URL, source, categories, tags, relevance score, update dates, summary provider flags, and safety flags. Heavy fields such as `ai_summary_en`, detailed authorship, corresponding-author arrays, OpenAlex venue metrics, journal quality metadata, and long notes live in detail chunks.
+
+When the user clicks `Load details` on a card, the frontend loads `data/detail_manifest.json`, finds the chunk for that paper id, fetches that chunk once, caches it in memory, and re-renders the card with detailed authorship and Q5 summary data. Already-loaded chunks are not fetched again.
+
+`scripts/build_split_data.py` regenerates all split files from `data/papers.json` and `data/archive_papers.json`. It removes Korean duplicate fields from generated public split files, including fields such as `ai_summary_ko`, `relevance_note_ko`, `archive_note_ko`, `title_ko`, `abstract_ko`, and other `_ko` / Korean / translated variants. The original source-of-truth JSON files are not deleted.
+
+The update workflows run `scripts/build_split_data.py` after changing paper data:
+
+- `.github/workflows/update-papers.yml`
+- `.github/workflows/refresh-openai-summaries.yml`
+- `.github/workflows/enrich-openalex-metadata.yml`
+
+The current generated sizes are approximately:
+
+- Original active `papers.json`: 10,781.5 KB
+- Original archive `archive_papers.json`: 11,323.6 KB
+- Generated active index: 1,488.4 KB
+- Generated archive index: 1,839.4 KB, not loaded at startup
+- Default initial JSON load for papers: about 1.49 MB before compression
+
 OpenAI use is constrained:
 
 - Embeddings are used when `OPENAI_API_KEY` is available.

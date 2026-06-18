@@ -1,5 +1,65 @@
 # AGENT_LOG
 
+## 2026-06-18 15:44
+
+### Change Summary
+- Reduced initial GitHub Pages paper-data payload by splitting full paper JSON into lightweight indexes and lazy-loaded detail chunks.
+
+### Edited Files
+- `scripts/build_split_data.py`: added deterministic split-data generator with size reporting and Korean duplicate field stripping.
+- `data/papers_index.json`: generated lightweight active-paper index for startup filtering/sorting/rendering.
+- `data/archive_papers_index.json`: generated lightweight archive index for future archive browsing.
+- `data/detail_manifest.json`: generated active paper id to detail chunk mapping.
+- `data/archive_detail_manifest.json`: generated archive paper id to detail chunk mapping.
+- `data/details/detail_*.json`: generated active detail chunks.
+- `data/archive_details/archive_detail_*.json`: generated archive detail chunks.
+- `assets/app.js`: changed startup fetch from full `data/papers.json` to `data/papers_index.json`, added local fallback warning, lazy detail chunk loading/caching, detail loading/error states, and first-page render limiting.
+- `index.html`: added `Load more papers` control and bumped asset cache version.
+- `assets/style.css`: added minimal `Load more` and detail error styling.
+- `.github/workflows/update-papers.yml`: runs split generation after paper update and commits split outputs.
+- `.github/workflows/refresh-openai-summaries.yml`: runs split generation after manual OpenAI summary refresh when not dry-run.
+- `.github/workflows/enrich-openalex-metadata.yml`: runs split generation after OpenAlex metadata enrichment.
+- `ARCHITECTURE.md`, `README.md`, `PROJECT_STATUS.md`: documented split loading, regeneration, testing, and size results.
+- `AGENT_LOG.md`: recorded this performance refactor.
+
+### Implemented Features
+- Production startup loads `data/papers_index.json` instead of the 10.8 MB full `data/papers.json`.
+- The archive split files are generated but not loaded at startup.
+- Paper details are loaded lazily from `data/details/detail_*.json` only after clicking `Load details`.
+- Loaded detail chunks are cached in memory.
+- The paper list renders only the first 120 filtered records initially, with `Load more papers` for incremental rendering.
+- Generated split public JSON files remove Korean duplicate keys such as `ai_summary_ko`, `relevance_note_ko`, and `archive_note_ko`.
+
+### Design Decisions
+- `data/papers.json` and `data/archive_papers.json` remain source-of-truth files for automation and were not moved.
+- Summary text and detailed authorship moved to detail chunks because they dominate payload size.
+- Initial search no longer includes unloaded summary text; once a detail is loaded, its summary text participates in search.
+- A full `data/papers.json` fallback remains for local development only when `papers_index.json` is missing, and the UI logs/shows an error first.
+
+### Size Report
+- Original active `papers.json`: 10,781.5 KB.
+- Original archive `archive_papers.json`: 11,323.6 KB.
+- Combined original: 22,105.0 KB.
+- New active `papers_index.json`: 1,488.4 KB.
+- New archive `archive_papers_index.json`: 1,839.4 KB, not loaded at startup.
+- Active detail chunks total: 7,914.3 KB.
+- Archive detail chunks total: 7,745.0 KB.
+- Estimated default initial paper JSON load reduction: 93.3%.
+
+### Validation
+- Ran `python scripts/build_split_data.py`.
+- Verified generated split files contain zero Korean duplicate keys.
+- Ran `python -m py_compile scripts/build_split_data.py scripts/update_papers.py scripts/collect_aml_candidates.py scripts/aml_common.py`.
+- Verified `assets/app.js` references `data/papers_index.json` for startup and only keeps `data/papers.json` as fallback.
+
+### Remaining Work
+- Browser Network tab should be checked after deployment: startup should show `data/papers_index.json`, not full `data/papers.json` or `data/archive_papers.json`; `data/details/detail_*.json` should appear only after clicking `Load details`.
+- Add an archive UI later if archived papers should be user-browsable.
+
+### Notes / Cautions
+- OpenAI API was not used.
+- No backend, API key exposure, PDF storage, or publisher crawling was added.
+
 ## 2026-06-18 15:18
 
 ### Change Summary

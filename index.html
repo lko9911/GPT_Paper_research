@@ -9,7 +9,7 @@
       content="An AI-assisted research tracker for manufacturing, 3D/4D printing, robotics, and AI-driven production."
     />
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
-    <link rel="stylesheet" href="assets/style.css?v=20260618-aml-score-reason" />
+    <link rel="stylesheet" href="assets/style.css?v=20260618-split-data" />
   </head>
   <body>
     <header class="site-header" id="top">
@@ -135,6 +135,9 @@
         </section>
 
         <section id="paper-list" class="paper-list" aria-live="polite"></section>
+        <div class="load-more-wrap">
+          <button id="load-more-papers" class="link-pill subtle" type="button" hidden>Load more papers</button>
+        </div>
         <div id="empty-state" class="empty-state" hidden>
           <strong>No papers match the current filters.</strong>
           <p>Adjust the search or filters, or run the GitHub Actions update workflow.</p>
@@ -165,6 +168,6 @@
       </div>
     </footer>
 
-    <script src="assets/app.js?v=20260618-aml-score-reason" defer></script>
+    <script src="assets/app.js?v=20260618-split-data" defer></script>
   </body>
 </html>

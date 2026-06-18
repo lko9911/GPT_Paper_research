@@ -257,6 +257,12 @@ const UPDATE_STATUS_URLS = [
   "data/update_status.json",
 ];
 const AML_RECOMMENDATIONS_URL = "public/data/aml_recommended_papers.json";
+const PAPERS_INDEX_URL = "data/papers_index.json";
+const PAPERS_FALLBACK_URL = "data/papers.json";
+const DETAIL_MANIFEST_URL = "data/detail_manifest.json";
+const DETAILS_BASE_URL = "data/details/";
+const INITIAL_RENDER_LIMIT = 120;
+const RENDER_INCREMENT = 120;
 
 if (localStorage.getItem("preferenceVersion") !== PREFERENCE_VERSION) {
   localStorage.setItem("theme", DEFAULT_THEME);
@@ -270,6 +276,7 @@ const state = {
   siteMeta: null,
   updateStatus: null,
   filtered: [],
+  renderLimit: INITIAL_RENDER_LIMIT,
   activeTargetVenue: "",
   activeVenueGroup: "",
   activeSubtopic: "",
@@ -277,6 +284,11 @@ const state = {
   theme: localStorage.getItem("theme") || DEFAULT_THEME,
   language: DEFAULT_LANGUAGE,
   collapsedFields: new Set(readStoredArray("collapsedFields")),
+  paperDetails: new Map(),
+  detailManifest: null,
+  detailChunks: new Map(),
+  detailLoading: new Set(),
+  detailErrors: new Map(),
 };
 
 function readStoredArray(key) {
@@ -312,18 +324,12 @@ const els = {
   amlSection: document.querySelector("#aml-recommendations"),
   amlList: document.querySelector("#aml-recommendation-list"),
   amlCount: document.querySelector("#aml-result-count"),
+  loadMore: document.querySelector("#load-more-papers"),
 };
 
 async function init() {
   setupPreferences();
-  try {
-    const response = await fetch(`data/papers.json?ts=${Date.now()}`);
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    state.papers = await response.json();
-  } catch (error) {
-    console.error("Failed to load papers.json", error);
-    state.papers = [];
-  }
+  state.papers = await loadPaperIndex();
   try {
     const response = await fetch(`data/site_meta.json?ts=${Date.now()}`);
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
@@ -359,6 +365,40 @@ async function init() {
   if (els.resetFilters) {
     els.resetFilters.addEventListener("click", resetFilters);
   }
+  if (els.loadMore) {
+    els.loadMore.addEventListener("click", () => {
+      state.renderLimit += RENDER_INCREMENT;
+      render();
+    });
+  }
+}
+
+async function loadPaperIndex() {
+  try {
+    const response = await fetch(`${PAPERS_INDEX_URL}?ts=${Date.now()}`);
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    return await response.json();
+  } catch (error) {
+    console.error("Failed to load papers_index.json", error);
+    showDataLoadError("Could not load the lightweight paper index. Trying local fallback data.");
+  }
+
+  try {
+    const response = await fetch(`${PAPERS_FALLBACK_URL}?ts=${Date.now()}`);
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    console.warn("Using full papers.json fallback. Production should serve papers_index.json.");
+    return await response.json();
+  } catch (error) {
+    console.error("Failed to load fallback papers.json", error);
+    showDataLoadError("Paper data could not be loaded. Please regenerate split data files.");
+    return [];
+  }
+}
+
+function showDataLoadError(message) {
+  if (!els.empty) return;
+  els.empty.hidden = false;
+  els.empty.innerHTML = `<strong>Data loading problem.</strong><p>${escapeHtml(message)}</p>`;
 }
 
 function setupPreferences() {
@@ -1059,9 +1099,11 @@ function applyFilters() {
   const sort = els.sort.value;
 
   if (!category) state.activeSubtopic = "";
+  state.renderLimit = INITIAL_RENDER_LIMIT;
   syncSideNavActive();
 
   state.filtered = state.papers.filter((paper) => {
+    const fullPaper = paperWithDetails(paper);
     const paperCategories = paper.categories || [];
     const paperTags = paper.tags || [];
     const paperVisibleTags = visibleTags(paper);
@@ -1071,7 +1113,7 @@ function applyFilters() {
       .filter((topic) => topic !== "Digital Twins" || paperHasCuratedDigitalTwinTag(paper));
     const paperVenue = normalizeVenue(paper.venue);
     const paperField = deriveField(paper);
-    const paperAuthorDetails = authorSearchText(paper);
+    const paperAuthorDetails = authorSearchText(fullPaper);
     const haystack = normalize(
       [
         paperField,
@@ -1083,8 +1125,8 @@ function applyFilters() {
         paperCategories.join(" "),
         paperVisibleTags.join(" "),
         paperSubtopics.join(" "),
-        paper.ai_summary_en,
-        paper.relevance_note_en,
+        fullPaper.ai_summary_en,
+        fullPaper.relevance_note_en,
       ].join(" ")
     );
 
@@ -1151,12 +1193,18 @@ function isOtherVenuePaper(paper) {
 }
 
 function render() {
-  els.count.textContent = `${state.filtered.length.toLocaleString("en-US")} ${t("showing")}`;
+  const visiblePapers = state.filtered.slice(0, state.renderLimit);
+  const totalCount = state.filtered.length;
+  els.count.textContent = `${Math.min(visiblePapers.length, totalCount).toLocaleString("en-US")} / ${totalCount.toLocaleString("en-US")} ${t("showing")}`;
   els.list.innerHTML = "";
-  els.empty.hidden = state.filtered.length > 0;
+  els.empty.hidden = totalCount > 0;
+  if (els.loadMore) {
+    els.loadMore.hidden = visiblePapers.length >= totalCount;
+    els.loadMore.textContent = `Load more papers (${visiblePapers.length.toLocaleString("en-US")} / ${totalCount.toLocaleString("en-US")})`;
+  }
 
   const fragment = document.createDocumentFragment();
-  const groups = groupByPrimaryCategory(state.filtered);
+  const groups = groupByPrimaryCategory(visiblePapers);
   groups.forEach(([category, papers]) => {
     fragment.append(renderGroup(category, papers));
   });
@@ -1190,25 +1238,33 @@ function renderGroup(category, papers) {
 function renderPaperRow(paper) {
   const article = document.createElement("article");
   article.className = "paper-card";
+  const displayPaper = paperWithDetails(paper);
+  const isDetailLoaded = state.paperDetails.has(paper.id);
+  const isDetailLoading = state.detailLoading.has(paper.id);
+  const detailError = state.detailErrors.get(paper.id) || "";
 
-  const doiUrl = paper.url || (paper.doi ? `https://doi.org/${paper.doi}` : "");
-  const authorDetailsHtml = renderAuthorDetails(paper);
-  const publicationLabel = formatPublicationLabel(paper);
-  const summaryProviderLabel = formatSummaryProviderLabel(paper);
-  const summaryHtml = renderSummaryBlock(paper);
-  const relevanceNote = formatRelevanceNote(paper);
-  const representativeBadges = representativeTags(paper)
+  const doiUrl = displayPaper.url || (displayPaper.doi ? `https://doi.org/${displayPaper.doi}` : "");
+  const authorDetailsHtml = renderAuthorDetails(displayPaper);
+  const publicationLabel = formatPublicationLabel(displayPaper);
+  const summaryProviderLabel = formatSummaryProviderLabel(displayPaper);
+  const summaryHtml = renderSummaryBlock(displayPaper);
+  const relevanceNote = formatRelevanceNote(displayPaper);
+  const representativeBadges = representativeTags(displayPaper)
     .map((tag) => badge(displayLabel(tag), "tag"))
     .join("");
+  const detailButton = isDetailLoaded
+    ? `<button class="link-pill subtle" type="button" disabled>Details loaded</button>`
+    : `<button class="link-pill subtle" type="button" data-load-detail="${escapeAttribute(paper.id)}">${escapeHtml(isDetailLoading ? "Loading details..." : "Load details")}</button>`;
+  const detailErrorHtml = detailError ? `<p class="policy-mini detail-error">${escapeHtml(detailError)}</p>` : "";
 
   article.innerHTML = `
     <div class="card-content">
       <div class="card-topline">
         <span class="publication-badge">${escapeHtml(publicationLabel)}</span>
         <span class="${escapeAttribute(summaryProviderLabel.className)}" title="${escapeAttribute(summaryProviderLabel.title)}">${escapeHtml(summaryProviderLabel.text)}</span>
-        <span class="relevance-badge">${escapeHtml(t("relevanceLabel"))} ${escapeHtml(String(paper.relevance_score || "-"))}/10</span>
+        <span class="relevance-badge">${escapeHtml(t("relevanceLabel"))} ${escapeHtml(String(displayPaper.relevance_score || "-"))}/10</span>
       </div>
-      <h4 class="paper-title">${escapeHtml(paper.title || "Untitled")}</h4>
+      <h4 class="paper-title">${escapeHtml(displayPaper.title || "Untitled")}</h4>
       ${authorDetailsHtml}
       ${summaryHtml}
       <p class="relevance-note">${escapeHtml(relevanceNote)}</p>
@@ -1217,19 +1273,29 @@ function renderPaperRow(paper) {
         ${doiUrl ? `<a class="link-pill primary" href="${escapeAttribute(doiUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(t("openPaper"))}</a>` : ""}
         ${doiUrl ? `<a class="link-pill subtle" href="${escapeAttribute(doiUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(t("doiButton"))}</a>` : ""}
         <button class="link-pill subtle" type="button" data-citation>${escapeHtml(t("copyCitation"))}</button>
+        ${detailButton}
       </div>
-      <p class="policy-mini">No abstract/PDF hosted - updated ${escapeHtml(paper.last_updated || "-")}</p>
+      ${detailErrorHtml}
+      <p class="policy-mini">No abstract/PDF hosted - updated ${escapeHtml(displayPaper.last_updated || "-")}</p>
     </div>
   `;
 
   article.querySelector("[data-citation]").addEventListener("click", async (event) => {
-    const citation = buildCitation(paper);
+    const citation = buildCitation(displayPaper);
     await navigator.clipboard.writeText(citation);
     event.currentTarget.textContent = t("copiedCitation");
     window.setTimeout(() => {
       event.currentTarget.textContent = t("copyCitation");
     }, 1400);
   });
+
+  const loadDetailButton = article.querySelector("[data-load-detail]");
+  if (loadDetailButton) {
+    loadDetailButton.addEventListener("click", async () => {
+      await loadPaperDetail(paper.id);
+      render();
+    });
+  }
 
   article.querySelectorAll("[data-tag-filter]").forEach((button) => {
     button.addEventListener("click", () => {
@@ -1515,6 +1581,48 @@ function collapseMaterialExtrusionTags(tags, paper) {
 
   if (!selected) return tags;
   return [selected, ...tags.filter((tag) => !cluster.includes(tag))];
+}
+
+function paperWithDetails(paper) {
+  return { ...paper, ...(state.paperDetails.get(paper.id) || {}) };
+}
+
+async function loadPaperDetail(paperId) {
+  if (!paperId || state.paperDetails.has(paperId) || state.detailLoading.has(paperId)) return;
+  state.detailLoading.add(paperId);
+  state.detailErrors.delete(paperId);
+  render();
+  try {
+    const manifest = await loadDetailManifest();
+    const chunkName = manifest[paperId];
+    if (!chunkName) throw new Error("Detail chunk not found for this paper.");
+    const chunk = await loadDetailChunk(chunkName);
+    const detail = chunk[paperId];
+    if (!detail) throw new Error("Paper detail not found in chunk.");
+    state.paperDetails.set(paperId, detail);
+  } catch (error) {
+    console.error(`Failed to load detail for ${paperId}`, error);
+    state.detailErrors.set(paperId, "Could not load details. Try again later.");
+  } finally {
+    state.detailLoading.delete(paperId);
+  }
+}
+
+async function loadDetailManifest() {
+  if (state.detailManifest) return state.detailManifest;
+  const response = await fetch(`${DETAIL_MANIFEST_URL}?ts=${Date.now()}`);
+  if (!response.ok) throw new Error(`Detail manifest HTTP ${response.status}`);
+  state.detailManifest = await response.json();
+  return state.detailManifest;
+}
+
+async function loadDetailChunk(chunkName) {
+  if (state.detailChunks.has(chunkName)) return state.detailChunks.get(chunkName);
+  const response = await fetch(`${DETAILS_BASE_URL}${encodeURIComponent(chunkName)}?ts=${Date.now()}`);
+  if (!response.ok) throw new Error(`Detail chunk HTTP ${response.status}`);
+  const chunk = await response.json();
+  state.detailChunks.set(chunkName, chunk);
+  return chunk;
 }
 
 function explicitCanonicalAlias(value, text) {

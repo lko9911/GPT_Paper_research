@@ -1092,6 +1092,16 @@ h1 {
   color: var(--muted);
 }
 
+.load-more-wrap {
+  display: flex;
+  justify-content: center;
+  margin: 8px 0 28px;
+}
+
+.detail-error {
+  color: #b42318;
+}
+
 .site-footer {
   padding: 24px 0 36px;
   border-top: 1px solid var(--line);

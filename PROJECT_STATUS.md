@@ -269,6 +269,37 @@ GitHub Pages에서 동작 가능한 정적 논문 큐레이션 사이트와 GitH
 
 ## Current Status
 - `Metals/Alloys` is no longer used as a tracker keyword, sidebar subtopic, or card tag.
+
+# 2026-06-18 Split Data Loading
+
+## Current State
+- The frontend now loads `data/papers_index.json` at startup instead of the full `data/papers.json`.
+- The full active and archive JSON files remain source-of-truth automation inputs and have not been moved.
+- Active detail data is split into `data/details/detail_*.json` and loaded lazily when a user clicks `Load details`.
+- Archive split files are generated but not loaded at startup.
+
+## Completed
+- Added `scripts/build_split_data.py`.
+- Generated `data/papers_index.json`, `data/archive_papers_index.json`, `data/detail_manifest.json`, `data/archive_detail_manifest.json`, `data/details/`, and `data/archive_details/`.
+- Removed Korean duplicate fields from generated public split JSON files.
+- Added first-page rendering limit with a `Load more papers` button.
+- Connected split generation to the update, OpenAI summary refresh, and OpenAlex enrichment workflows.
+
+## Size Result
+- Original active data: about 10,781.5 KB.
+- Original archive data: about 11,323.6 KB.
+- Combined original data: about 22,105.0 KB.
+- New active startup index: about 1,488.4 KB.
+- Archive index: about 1,839.4 KB, not loaded by default.
+- Estimated initial paper JSON reduction: about 93.3% before compression.
+
+## Known Tradeoffs
+- Summary text is no longer part of the initial active index. Search still covers title, authors, venue, DOI, categories, tags, and loaded detail text.
+- Cards show metadata-generated fallback Q5 until the user clicks `Load details`; then the card can use full stored `ai_summary_en`, author details, and corresponding-author data.
+
+## Next Recommended Work
+- Add an explicit archive view if archived papers should be browsable from the UI.
+- Consider compressing JSON via GitHub Pages/CDN behavior where available, but do not rely on compression as the only optimization.
 - The metals-specific collection query was removed.
 - Existing structured `tags` / `categories` were cleaned so `Metals/Alloys` does not reappear from stored data.
 

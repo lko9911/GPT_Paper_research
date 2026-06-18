@@ -20,6 +20,31 @@ AML recommendation is a separate manual-only workflow:
 
 The AML pipeline uses OpenAI embeddings when `OPENAI_API_KEY` is available, but it does not use OpenAI as the paper search engine. OpenAI relevance judging and reason rewriting are optional and disabled by default. Private embeddings, candidate pools, debug logs, raw data, and PDFs are ignored by Git. Public-safe recommendations are written to `public/data/aml_recommended_papers.json`.
 
+## Split Data for Faster GitHub Pages Loading
+
+The production website should load `data/papers_index.json`, not the full `data/papers.json`, on first visit. Full source-of-truth files remain in place for automation:
+
+- Source of truth: `data/papers.json`, `data/archive_papers.json`
+- Startup index: `data/papers_index.json`
+- Lazy details: `data/detail_manifest.json`, `data/details/detail_*.json`
+- Archive split output: `data/archive_papers_index.json`, `data/archive_detail_manifest.json`, `data/archive_details/archive_detail_*.json`
+
+Regenerate split files after changing paper data:
+
+```bash
+python scripts/build_split_data.py
+```
+
+The script prints size reporting for original files, generated indexes, detail chunks, estimated startup load, and reduction ratio. It also removes Korean duplicate fields from generated public split JSON files. The original full JSON files are not deleted.
+
+Local test:
+
+```bash
+python -m http.server 8000
+```
+
+Open `http://localhost:8000`. In the browser Network tab, the first paper-data request should be `data/papers_index.json`. The full `data/papers.json` should not be requested unless `papers_index.json` is missing and the local fallback is triggered. Detail chunks under `data/details/` should appear only after clicking `Load details` on a paper card.
+
 생산·제조, 3D/4D 프린팅, 로봇틱스, AI 제조 분야를 위한 AI 기반 논문 큐레이션 저장소입니다. GitHub Pages에서 동작하는 정적 웹사이트와 GitHub Actions 기반 자동 업데이트 파이프라인을 포함합니다.
 
 ## 프로젝트 목적
