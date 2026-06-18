@@ -5079,3 +5079,87 @@
 ### 주의사항
 - OpenAI API는 사용하지 않았습니다.
 - 열려 있는 Excel 프로세스를 강제로 종료하지 않았습니다.
+## 2026-06-18 09:57
+### Change Summary
+- Removed the `Metals/Alloys` keyword/subtopic from the tracker taxonomy and collection logic.
+- Cleaned existing stored paper metadata so `Metals/Alloys` no longer appears as a tag/category.
+
+### Modified / Created Files
+- `assets/app.js`: Removed `Metals/Alloys` from sidebar subtopics, card tag priority, label maps, tag inference rules, and broad production/manufacturing keyword checks.
+- `data/queries.json`: Removed the metals-specific query `mechanical behaviour additively manufactured metals`.
+- `data/papers.json`: Removed existing `Metals/Alloys` values from stored `tags` / `categories`.
+- `data/archive_papers.json`: Removed metal/alloy raw tag values from archived `tags` / `categories`.
+- `index.html`: Bumped asset cache query version to `20260618-no-metals`.
+- `AGENT_LOG.md`: Recorded this taxonomy cleanup.
+
+### Implemented Features
+- The UI no longer shows `Metals/Alloys` as a sidebar subtopic or card tag.
+- New frontend tag inference no longer assigns `Metals/Alloys`.
+- Scheduled collection no longer uses the metals-only query.
+
+### Design Decisions
+- Paper titles and summaries were not edited, because those describe the actual paper content.
+- Only structured topic fields (`tags`, `categories`) and collection keywords were changed.
+
+### Remaining Work
+- After deployment, visually confirm that `Metals/Alloys` no longer appears in filters or paper cards.
+
+### Notes / Cautions
+- This does not block legitimate metal-related papers from appearing when they match other tracker topics such as AM, MMAM, FGAM, process optimization, DLP, digital twins, or toolpath strategy.
+- OpenAI API was not used.
+
+## 2026-06-18 09:54
+### Change Summary
+- Removed the Compact/Comfort density mode and kept the site on the default comfortable card layout.
+
+### Modified / Created Files
+- `index.html`: Removed the density toggle button and bumped asset cache versions.
+- `assets/app.js`: Removed density state, localStorage handling, toggle event handling, and density UI labels.
+- `assets/style.css`: Removed compact-density CSS overrides.
+- `AGENT_LOG.md`: Recorded this density-mode cleanup.
+
+### Implemented Features
+- The public UI now has only the theme toggle in the header toolbar.
+- Paper cards always use the comfortable/default spacing.
+
+### Design Decisions
+- Density switching was removed entirely instead of hidden, because the user no longer needs compact mode.
+- Default CSS is the comfortable layout, so no replacement setting is necessary.
+
+### Remaining Work
+- Recheck the deployed GitHub Pages page after cache refresh.
+
+### Notes / Cautions
+- This does not affect data collection, OpenAI usage, or paper metadata.
+
+## 2026-06-18 09:50
+### Change Summary
+- Converted the public site and summary generation path to English-only.
+- Removed the Korean language toggle and stopped reading Korean summary fields in the frontend.
+- Changed new OpenAI/manual summary generation to produce English Q5 summaries only.
+
+### Modified / Created Files
+- `index.html`: Removed the language toggle, cleaned static UI copy to English, and bumped asset cache versions.
+- `assets/app.js`: Fixed language state to English, removed Korean-mode branches, stopped displaying/searching `ai_summary_ko` and `relevance_note_ko`, and normalized UI labels to English.
+- `scripts/summarize.py`: Changed OpenAI prompt and fallback summary output to English-only `ai_summary_en` / `relevance_note_en`.
+- `scripts/update_papers.py`: Stopped writing new Korean summary fields during scheduled metadata updates.
+- `scripts/refresh_openai_summaries.py`: Changed manual OpenAI refresh to target English summaries only.
+
+### Implemented Features
+- English-only UI with no visible Korean mode switch.
+- English-only Q5 summary generation for future OpenAI refreshes.
+- Metadata fallback summaries remain available without OpenAI and are also English-only.
+
+### Design Decisions
+- Existing historical `ai_summary_ko` fields in `data/papers.json` were not deleted to avoid a large data-only churn, but the frontend and new scripts no longer use them.
+- Scheduled updates still do not call OpenAI. OpenAI refresh remains manual-only and user-approved.
+- The site now treats `ai_summary_en` as the canonical summary display field.
+
+### Remaining Work
+- If desired later, run a separate cleanup script to remove historical Korean summary fields from stored JSON data.
+- Perform browser visual QA after the next GitHub Pages deployment.
+
+### Notes / Cautions
+- Do not reintroduce automatic OpenAI calls into scheduled update workflows.
+- Do not display publisher abstracts or store PDFs.
+- Tests run: `python -m py_compile scripts/summarize.py scripts/update_papers.py scripts/refresh_openai_summaries.py`, `git diff --check`, and static JS reference checks for removed Korean-mode fields.

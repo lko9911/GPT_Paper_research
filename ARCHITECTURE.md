@@ -200,3 +200,40 @@ This workflow does not call OpenAI, crawl publisher pages, download PDFs, or sto
 ### IF / Quartile Policy
 
 Official Journal Impact Factor and quartile classification should not be inferred from OpenAlex/Crossref. If those values are needed, add a licensed import such as `data/journal_metrics.csv` with source year, metric source, ISSN, JIF, and quartile fields. Until then the UI must call the automatic label a `Venue signal`, not `Impact Factor`.
+# Frontend Density Policy
+
+As of 2026-06-18, the frontend has no runtime density mode.
+The former Compact/Comfort toggle and `data-density="compact"` CSS overrides were removed.
+Paper cards use the default comfortable layout at all viewport sizes, with responsive CSS handling mobile and wide screens.
+
+# English-Only UI And Summary Architecture
+
+As of 2026-06-18, the site is English-only.
+
+## Frontend
+- `index.html` contains English static copy and no language toggle.
+- `assets/app.js` fixes language behavior to English and no longer reads `localStorage.language`.
+- The frontend renders summaries from `ai_summary_en`.
+- If `ai_summary_en` is missing, the frontend creates an English metadata fallback block.
+- Historical `ai_summary_ko` and `relevance_note_ko` values may remain in stored data, but they are not used by the UI.
+
+## Summary Pipeline
+- `scripts/summarize.py` generates `ai_summary_en` and `relevance_note_en`.
+- OpenAI output is requested as a five-question English Q5 summary:
+  1. Topic
+  2. Problem
+  3. Method
+  4. Key Result
+  5. Takeaway
+- Without OpenAI, the fallback summary is also English-only and is generated from metadata plus transient abstract signals without copying abstract text.
+
+## Update Workflows
+- Scheduled metadata updates still do not call OpenAI.
+- Manual OpenAI refreshes remain separate and user-approved.
+- `scripts/refresh_openai_summaries.py` now refreshes `ai_summary_en` only.
+
+## Copyright / Data Policy
+- Publisher abstracts are never displayed.
+- PDFs are not downloaded or stored.
+- DOI/source links remain the authoritative route to original papers.
+- The retained historical Korean summary fields are internal legacy data only and should not be treated as the active display format.

@@ -1,5 +1,11 @@
 # AI Manufacturing and 3D/4D Printing Research
 
+## Current Language Policy
+
+The public site is English-only. The previous Korean UI mode has been removed.
+New OpenAI summaries and metadata fallback summaries are generated as English Q5 summaries only.
+Historical Korean summary fields may still exist in older JSON records, but the frontend no longer displays or refreshes them.
+
 생산·제조, 3D/4D 프린팅, 로봇틱스, AI 제조 분야를 위한 AI 기반 논문 큐레이션 저장소입니다. GitHub Pages에서 동작하는 정적 웹사이트와 GitHub Actions 기반 자동 업데이트 파이프라인을 포함합니다.
 
 ## 프로젝트 목적

@@ -243,3 +243,51 @@ GitHub Pages에서 동작 가능한 정적 논문 큐레이션 사이트와 GitH
 ## Remaining Work
 - Run the manual `Enrich OpenAlex metadata` workflow with `max_records=0` if a full-data refresh is desired.
 - If official Q/IF display is required, add a licensed `data/journal_metrics.csv` or API integration and document the license/source year.
+# 2026-06-18 Metals/Alloys Taxonomy Update
+
+## Current Status
+- `Metals/Alloys` is no longer used as a tracker keyword, sidebar subtopic, or card tag.
+- The metals-specific collection query was removed.
+- Existing structured `tags` / `categories` were cleaned so `Metals/Alloys` does not reappear from stored data.
+
+## Notes
+- Metal-related papers can still be included when they match other active topics, such as additive manufacturing, MMAM, FGAM, toolpath strategy, process optimization, DLP, digital twins, or machine learning.
+- Paper titles and summaries were left unchanged because they are content descriptions, not taxonomy labels.
+
+# 2026-06-18 Density Mode Update
+
+## Current Status
+- The UI no longer exposes a Compact/Comfort density toggle.
+- Paper cards always use the default comfortable spacing.
+- The header toolbar now keeps only display controls that are still active, such as theme switching.
+
+## Notes
+- This change is frontend-only and does not affect paper collection, OpenAI summary refresh, or stored metadata.
+
+# 2026-06-18 English-Only Mode Update
+
+## Current Status
+- The public website is now English-only.
+- The Korean/light language toggle was removed from the header.
+- Paper cards use `ai_summary_en` as the canonical summary field.
+- Future OpenAI summary refreshes generate English Q5 summaries only.
+
+## Completed
+- Removed frontend Korean-mode branches from `assets/app.js`.
+- Removed Korean summary display/search paths from the frontend.
+- Updated scheduled/fallback summary logic to write English summaries only.
+- Updated the manual OpenAI refresh workflow script to refresh English summaries only.
+
+## Partially Implemented
+- Historical records may still contain `ai_summary_ko` and `relevance_note_ko` fields in JSON data. They are retained for data continuity but are no longer displayed or updated.
+
+## Not Implemented
+- A bulk data cleanup that physically removes historical Korean summary fields from all JSON records.
+
+## Known Issues
+- Existing documentation still contains older mojibake/Korean text in some earlier sections. The current English-only policy is documented in this new section and in `AGENT_LOG.md`.
+
+## Recommended Next Steps
+1. Deploy the updated static files through GitHub Pages.
+2. Visually check desktop and mobile pages after deployment.
+3. If repository size or data cleanliness becomes important, add a one-time JSON cleanup script to remove unused Korean fields.
