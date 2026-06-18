@@ -1,5 +1,31 @@
 # AGENT_LOG
 
+## 2026-06-18 15:37
+
+### Change Summary
+- Added a paper-specific explanation for AML recommendation scores.
+
+### Edited Files
+- `assets/app.js`: expanded AML relevance notes with a `Why this score:` sentence based on matched topics, discovery route, and closest seed paper when available.
+- `assets/app.js`: normalized repeated LCE topic variants so notes do not show duplicates such as `LCE, LCE`.
+- `index.html`: bumped the frontend asset cache version for the updated AML note renderer.
+- `AGENT_LOG.md`: recorded this AML score-explanation change.
+
+### Implemented Features
+- AML cards now explain the reason for the displayed score, not just the score calculation scale.
+- Example output: `Relevant to the tracker through LCE and Soft Robotics; AML score: 66/100. Why this score: matched LCE and Soft Robotics and found through existing keyword pool.`
+
+### Design Decisions
+- Did not expose the raw deterministic scoring formula in every card, because the user already understands the calculation and wants item-level reasoning.
+- Used existing public recommendation metadata only; no new API calls were made.
+
+### Remaining Work
+- None for this UI explanation update.
+
+### Notes / Cautions
+- No data files were changed.
+- OpenAI API was not used.
+
 ## 2026-06-18 15:36
 
 ### Change Summary

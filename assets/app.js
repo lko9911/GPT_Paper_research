@@ -764,14 +764,40 @@ function renderAmlRecommendationCard(item) {
 }
 
 function formatAmlRelevanceNote(item) {
-  const topics = (item.matched_topics || [])
-    .map(displayLabel)
-    .filter(Boolean)
-    .filter((topic, index, list) => list.indexOf(topic) === index)
-    .slice(0, 3);
+  const topics = amlMatchedTopicLabels(item);
   const topicPhrase = formatEnglishList(topics) || "the AML recommendation profile";
   const score = Math.max(0, Math.min(100, Math.round(Number(item.aml_score || 0) * 100)));
-  return `Relevant to the tracker through ${topicPhrase}; AML score: ${score}/100.`;
+  const routes = (item.discovery_routes || [])
+    .slice(0, 2)
+    .map((route) => String(route).replace(/_/g, " "))
+    .filter(Boolean);
+  const routePhrase = routes.length ? ` and found through ${formatEnglishList(routes)}` : "";
+  const seed = (item.related_seed_papers || [])[0];
+  const seedPhrase = seed && seed.title ? `; closest seed: ${seed.title}` : "";
+  return `Relevant to the tracker through ${topicPhrase}; AML score: ${score}/100. Why this score: matched ${topicPhrase}${routePhrase}${seedPhrase}.`;
+}
+
+function amlMatchedTopicLabels(item) {
+  const labels = [];
+  const seen = new Set();
+  (item.matched_topics || []).forEach((topic) => {
+    const label = normalizeAmlTopicLabel(displayLabel(topic));
+    const key = label.toLowerCase();
+    if (label && !seen.has(key)) {
+      seen.add(key);
+      labels.push(label);
+    }
+  });
+  return labels.slice(0, 3);
+}
+
+function normalizeAmlTopicLabel(label) {
+  const value = String(label || "").trim();
+  const lower = value.toLowerCase();
+  if (!value) return "";
+  if (lower === "liquid crystal elastomer" || lower === "liquid crystal elastomers") return "LCE";
+  if (lower === "soft robotics") return "Soft Robotics";
+  return value;
 }
 
 function renderAmlSummaryBlock(item) {
