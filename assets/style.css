@@ -3440,6 +3440,16 @@ h1 {
   gap: 20px;
 }
 
+.aml-section {
+  gap: 20px;
+}
+
+.aml-recommendation-list {
+  --grid-min: 330px;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  gap: 20px;
+}
+
 .paper-card {
   position: relative;
   border-color: color-mix(in srgb, var(--line), var(--blue) 8%);
@@ -3631,15 +3641,21 @@ h1 {
 }
 
 @media (min-width: 1200px) {
-  .paper-group {
+  .paper-group,
+  .aml-recommendation-list {
     --grid-min: 330px;
     gap: 18px;
+  }
+
+  .aml-recommendation-list {
+    grid-template-columns: repeat(auto-fill, minmax(var(--grid-min), 1fr));
   }
 
 }
 
 @media (min-width: 1680px) {
-  .paper-group {
+  .paper-group,
+  .aml-recommendation-list {
     --grid-min: 350px;
   }
 
@@ -3663,6 +3679,11 @@ h1 {
 
   .summary-qa div {
     grid-template-columns: 1fr;
+  }
+
+  .aml-recommendation-list {
+    grid-template-columns: 1fr;
+    gap: 16px;
   }
 
   .paper-card:hover {
@@ -3889,13 +3910,14 @@ h1 {
 /* AML recommendation section. Hidden until public/data/aml_recommended_papers.json exists. */
 .aml-section {
   display: grid;
-  gap: 16px;
+  gap: 20px;
 }
 
 .aml-recommendation-list {
+  --grid-min: 330px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(var(--grid-min), 1fr));
+  gap: 20px;
 }
 
 .aml-empty-card {

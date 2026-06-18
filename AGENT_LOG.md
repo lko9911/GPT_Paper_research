@@ -1,5 +1,30 @@
 # AGENT_LOG
 
+## 2026-06-18 15:02
+
+### Change Summary
+- Made the AML recommendation section use the same comfortable grid spacing as the normal paper cards.
+
+### Edited Files
+- `assets/style.css`: aligned AML recommendation grid width and gaps with the main paper-card comfort layout, including desktop and mobile overrides.
+- `index.html`: bumped asset cache versions to `20260618-aml-comfort`.
+- `AGENT_LOG.md`: recorded this comfort-layout change.
+
+### Implemented Features
+- AML recommendation cards now use wider, more relaxed card columns.
+- AML Q5 cards have spacing closer to the main curated paper cards.
+- Mobile AML cards collapse to a single comfortable column.
+
+### Design Decisions
+- Comfort was handled as layout spacing, not as a restored compact/comfort toggle.
+- The site remains default comfortable-only, as requested earlier.
+
+### Remaining Work
+- Check GitHub Pages visually after deployment.
+
+### Notes / Cautions
+- OpenAI API was not used.
+
 ## 2026-06-18 14:55
 
 ### Change Summary
