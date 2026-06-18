@@ -565,7 +565,7 @@ def _classify(record: dict[str, Any], abstract: str) -> list[str]:
         if score:
             scored.append((score, category))
     if not scored:
-        return ["다중재료 적층제조"]
+        return ["Multi-material AM"]
     return [category for _, category in sorted(scored, reverse=True)[:2]]
 
 

@@ -1,5 +1,43 @@
 # AGENT_LOG
 
+## 2026-06-18 16:02
+
+### Change Summary
+- Removed Korean-language content from tracked public/source JSON files.
+
+### Edited Files
+- `data/papers.json`: removed Korean duplicate fields, removed Korean tags, converted categories to English, and romanized the remaining Korean author names.
+- `data/archive_papers.json`: removed Korean duplicate fields, removed Korean tags, and converted categories to English.
+- `data/papers_index.json`, `data/archive_papers_index.json`, `data/details/detail_001.json`: regenerated split data from the cleaned source JSON.
+- `scripts/summarize.py`: changed the fallback category from Korean `다중재료 적층제조` to English `Multi-material AM`.
+- `scripts/update_papers.py`: changed the stored default category from Korean to English.
+- `AGENT_LOG.md`: recorded this English-only JSON cleanup.
+
+### Implemented Features
+- Tracked JSON files no longer contain Korean duplicate fields such as `ai_summary_ko`, `relevance_note_ko`, or `archive_note_ko`.
+- Korean category values were replaced with English category names.
+- Korean tags were removed from source JSON and regenerated split JSON.
+- Remaining Korean author names were replaced with English forms:
+  - `심수안` -> `Suan Sim`
+  - `전승배` -> `Seungbae Jeon`
+
+### Design Decisions
+- Removed Korean tags instead of machine-translating thousands of low-signal API tags, because many were noisy and not central to the current English UI.
+- Preserved source-of-truth `data/papers.json` and `data/archive_papers.json` paths.
+- Regenerated split files after source cleanup so GitHub Pages continues to use the lightweight English-only public data.
+
+### Validation
+- Scanned all tracked `*.json` files for Hangul characters, `_ko` keys, `korean` keys, and `translated_` keys: 0 hits.
+- Ran `python scripts/build_split_data.py`.
+- Ran `python -m py_compile scripts/summarize.py scripts/update_papers.py scripts/build_split_data.py`.
+
+### Remaining Work
+- If future metadata APIs return non-English author display names, decide whether to romanize from trusted source metadata or omit only that name.
+
+### Notes / Cautions
+- OpenAI API was not used.
+- Name romanization was checked against public metadata/search results before replacement.
+
 ## 2026-06-18 15:44
 
 ### Change Summary

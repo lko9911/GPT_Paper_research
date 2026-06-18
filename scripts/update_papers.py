@@ -623,7 +623,7 @@ def _finalize_record(record: dict[str, Any], today: str) -> dict[str, Any]:
         "doi": doi,
         "url": url,
         "source": sorted(set(record.get("source", []))),
-        "categories": record.get("categories", ["다중재료 적층제조"])[:2],
+        "categories": record.get("categories", ["Multi-material AM"])[:2],
         "tags": record.get("tags", [])[:6],
         "relevance_score": int(record.get("relevance_score", 5)),
         "curation_priority": bool(record.get("curation_priority")),
