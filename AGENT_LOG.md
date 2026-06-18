@@ -1,5 +1,31 @@
 # AGENT_LOG
 
+## 2026-06-18 15:29
+
+### Change Summary
+- Moved the AML score reason out of the card badge area and into the normal card body.
+
+### Edited Files
+- `assets/app.js`: removed the `Reason:` badge from AML recommendation cards and added a normal relevance-note sentence using the template `Relevant to the tracker through ...; score: .../10.`
+- `assets/style.css`: removed the unused `score-reason-badge` styling and dark-mode override.
+- `index.html`: bumped the frontend asset cache version so GitHub Pages loads the updated UI files.
+- `AGENT_LOG.md`: recorded this AML recommendation-card display change.
+
+### Implemented Features
+- AML recommendation cards now show the reason as text in the body, not as a badge.
+- The reason uses up to three matched topics and converts the AML score to a 10-point display.
+
+### Design Decisions
+- Kept the score badge as the compact AML score indicator.
+- Treated the explanation as reading content rather than metadata, because the user wanted the reason template but explicitly not as a badge.
+
+### Remaining Work
+- None for this UI correction.
+
+### Notes / Cautions
+- No data files were regenerated.
+- OpenAI API was not used.
+
 ## 2026-06-18 16:02
 
 ### Change Summary

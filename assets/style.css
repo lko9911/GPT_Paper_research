@@ -828,15 +828,6 @@ h1 {
   color: var(--amber);
 }
 
-.card-topline .score-reason-badge {
-  max-width: min(100%, 18rem);
-  background: color-mix(in srgb, var(--blue-soft), #ffffff 42%);
-  color: color-mix(in srgb, var(--blue), var(--text) 20%);
-  overflow-wrap: anywhere;
-  white-space: normal;
-  line-height: 1.28;
-}
-
 .card-topline .publication-badge {
   background: linear-gradient(135deg, #102a56, #2b6cb0);
   color: #ffffff;
@@ -2358,12 +2349,6 @@ h1 {
   border-color: rgba(118, 210, 173, 0.26);
   background: #173329;
   color: #a7e6ca;
-}
-
-:root[data-theme="dark"] .card-topline .score-reason-badge,
-:root[data-theme="dark"] .card-topline .score-reason-badge:last-child {
-  background: rgba(138, 180, 255, 0.12);
-  color: #cfe0ff;
 }
 
 :root[data-theme="dark"] .badge,

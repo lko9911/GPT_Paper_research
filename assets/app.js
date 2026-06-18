@@ -736,8 +736,7 @@ function renderAmlRecommendationCard(item) {
   const seed = (item.related_seed_papers || [])[0];
   const seedText = seed && seed.title ? `Closest seed: ${seed.title}` : "";
   const summaryHtml = renderAmlSummaryBlock(item);
-  const scoreReason = formatAmlScoreReason(item);
-  const scoreReasonTitle = item.why_recommended || scoreReason;
+  const relevanceNote = formatAmlRelevanceNote(item);
   const authorDetailsHtml = renderAuthorDetails({
     authors: Array.isArray(item.authors) ? item.authors : [],
     author_details: Array.isArray(item.author_details) ? item.author_details : [],
@@ -748,12 +747,12 @@ function renderAmlRecommendationCard(item) {
         <span class="publication-badge">${escapeHtml(publicationLabel)}</span>
         <span class="summary-provider-badge is-openai">${escapeHtml(item.recommendation_level || "Recommended")}</span>
         <span class="relevance-badge">AML ${escapeHtml(String(score))}/100</span>
-        <span class="score-reason-badge" title="${escapeAttribute(scoreReasonTitle)}">Reason: ${escapeHtml(scoreReason)}</span>
       </div>
       <h4 class="paper-title">${escapeHtml(item.title || "Untitled")}</h4>
       ${authorDetailsHtml}
       ${summaryHtml}
-      ${seedText ? `<p class="relevance-note">${escapeHtml(seedText)}</p>` : ""}
+      <p class="relevance-note">${escapeHtml(relevanceNote)}</p>
+      ${seedText ? `<p class="policy-mini">${escapeHtml(seedText)}</p>` : ""}
       <div class="tag-line">${topics}</div>
       <div class="card-links">
         ${doiUrl ? `<a class="link-pill primary" href="${escapeAttribute(doiUrl)}" target="_blank" rel="noopener noreferrer">Open Paper</a>` : ""}
@@ -765,17 +764,14 @@ function renderAmlRecommendationCard(item) {
   </article>`;
 }
 
-function formatAmlScoreReason(item) {
+function formatAmlRelevanceNote(item) {
   const topics = (item.matched_topics || [])
-    .slice(0, 2)
+    .slice(0, 3)
     .map(displayLabel)
     .filter(Boolean);
-  if (topics.length) return topics.join(" + ");
-  const seed = (item.related_seed_papers || [])[0];
-  if (seed && seed.title) return "Seed similarity";
-  const routes = (item.discovery_routes || []).slice(0, 1).map((route) => String(route).replace(/_/g, " "));
-  if (routes.length) return routes[0];
-  return "Profile match";
+  const topicPhrase = formatEnglishList(topics) || "the AML recommendation profile";
+  const score = Math.max(0, Math.min(10, Math.round(Number(item.aml_score || 0) * 10)));
+  return `Relevant to the tracker through ${topicPhrase}; score: ${score}/10.`;
 }
 
 function renderAmlSummaryBlock(item) {
