@@ -1,5 +1,31 @@
 # AGENT_LOG
 
+## 2026-06-18 15:36
+
+### Change Summary
+- Revised the AML recommendation relevance sentence to use the actual AML score scale.
+
+### Edited Files
+- `assets/app.js`: changed AML relevance notes from `score: x/10` to `AML score: xx/100` and removed duplicate matched-topic labels before rendering.
+- `index.html`: removed the separate AML score explanation sentence from the section heading and bumped the asset cache version.
+- `assets/style.css`: removed the now-unused AML score explanation style.
+- `AGENT_LOG.md`: recorded this AML score wording correction.
+
+### Implemented Features
+- AML recommendation cards now show relevance notes such as `Relevant to the tracker through LCE and Soft Robotics; AML score: 66/100.`
+- Duplicate matched topics such as `LCE, LCE` are collapsed in the displayed note.
+
+### Design Decisions
+- Used the same 0-100 AML score scale shown in the card badge to avoid implying a separate 10-point relevance score.
+- Removed the section-level explanation because the user wanted the card sentence itself corrected instead.
+
+### Remaining Work
+- None for this wording correction.
+
+### Notes / Cautions
+- No data files were changed.
+- OpenAI API was not used.
+
 ## 2026-06-18 15:32
 
 ### Change Summary

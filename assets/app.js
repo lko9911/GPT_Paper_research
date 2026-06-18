@@ -765,12 +765,13 @@ function renderAmlRecommendationCard(item) {
 
 function formatAmlRelevanceNote(item) {
   const topics = (item.matched_topics || [])
-    .slice(0, 3)
     .map(displayLabel)
-    .filter(Boolean);
+    .filter(Boolean)
+    .filter((topic, index, list) => list.indexOf(topic) === index)
+    .slice(0, 3);
   const topicPhrase = formatEnglishList(topics) || "the AML recommendation profile";
-  const score = Math.max(0, Math.min(10, Math.round(Number(item.aml_score || 0) * 10)));
-  return `Relevant to the tracker through ${topicPhrase}; score: ${score}/10.`;
+  const score = Math.max(0, Math.min(100, Math.round(Number(item.aml_score || 0) * 100)));
+  return `Relevant to the tracker through ${topicPhrase}; AML score: ${score}/100.`;
 }
 
 function renderAmlSummaryBlock(item) {
