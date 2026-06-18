@@ -1,5 +1,32 @@
 # AGENT_LOG
 
+## 2026-06-18 18:26
+
+### Change Summary
+- Replaced the combined source-overlap workbook with exactly the three requested venue Excel files.
+
+### Edited Files
+- `reports/source_overlap_only_openalex_venues_20260618.xlsx`: generated the OpenAlex-only venue list only.
+- `reports/source_overlap_only_crossref_venues_20260618.xlsx`: generated the Crossref-only venue list only.
+- `reports/source_overlap_both_venues_20260618.xlsx`: generated the venues observed in both OpenAlex and Crossref only.
+- `reports/source_overlap_venues_recreated_20260618.xlsx`: removed the previous combined workbook because it included extra `Summary` and `All_Venues` sheets beyond the user's request.
+- `AGENT_LOG.md`: recorded this report replacement.
+
+### Implemented Features
+- Created three separate Excel files instead of one multi-sheet report.
+- Each file contains only venue rows for its source group, with columns for all/site/archive paper counts and sample titles.
+
+### Design Decisions
+- Kept the same DOI-first, normalized-title fallback paper identity logic from the previous analysis.
+- Removed the extra combined report to avoid confusion, because the user asked for only the groups they mentioned.
+
+### Remaining Work
+- None for this report correction.
+
+### Notes / Cautions
+- These reports describe current local dataset provenance, not universal API coverage.
+- No OpenAI API was used.
+
 ## 2026-06-18 18:24
 
 ### Change Summary
