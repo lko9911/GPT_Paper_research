@@ -88,6 +88,9 @@ def _normalize_candidate(paper: dict[str, Any], route: str) -> dict[str, Any]:
         "venue": venue,
         "year": year,
         "authors": paper.get("authors", []) or [],
+        "author_details": paper.get("author_details", []) or [],
+        "corresponding_authors": paper.get("corresponding_authors", []) or [],
+        "corresponding_author_available": bool(paper.get("corresponding_authors")),
         "url": url,
         "citation": paper.get("citation", ""),
         "abstract": abstract,
@@ -107,9 +110,10 @@ def _merge_candidate(candidates: dict[str, dict[str, Any]], record: dict[str, An
     existing_routes = set(existing.get("discovery_routes", []))
     existing_routes.update(record.get("discovery_routes", []))
     existing["discovery_routes"] = sorted(existing_routes)
-    for field in ("abstract", "journal", "venue", "url", "doi"):
+    for field in ("abstract", "journal", "venue", "url", "doi", "author_details", "corresponding_authors"):
         if not existing.get(field) and record.get(field):
             existing[field] = record[field]
+    existing["corresponding_author_available"] = bool(existing.get("corresponding_authors"))
 
 
 def _has_aml_signal(record: dict[str, Any]) -> bool:

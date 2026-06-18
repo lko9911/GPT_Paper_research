@@ -1,5 +1,34 @@
 # AGENT_LOG
 
+## 2026-06-18 15:11
+
+### Change Summary
+- Added corresponding-author support to AML recommendation cards.
+
+### Edited Files
+- `scripts/collect_aml_candidates.py`: preserved `author_details`, `corresponding_authors`, and `corresponding_author_available` when collecting AML candidates.
+- `scripts/aml_common.py`: included public-safe author detail and corresponding-author fields in AML public recommendation output.
+- `public/data/aml_recommended_papers.json`: enriched current AML recommendations with author metadata from `data/papers.json`.
+- `AGENT_LOG.md`: recorded this authorship metadata change.
+
+### Implemented Features
+- AML recommendation cards can now display the same author chips and corresponding-author badges as normal paper cards.
+- Current public AML recommendations now include detailed author metadata for 49 of 50 records.
+- Current public AML recommendations now include corresponding authors for 34 of 50 records.
+
+### Design Decisions
+- Used existing public metadata from `data/papers.json`; no publisher crawling, PDF download, or raw abstract display was introduced.
+- Reused the frontend's existing `renderAuthorDetails()` path instead of creating a separate AML-only author UI.
+
+### Remaining Work
+- Verify the deployed GitHub Pages UI after cache refresh.
+- Future AML recommendation workflow runs will preserve corresponding-author fields when the source candidate has them.
+
+### Notes / Cautions
+- OpenAI API was not used.
+- Validation confirmed the public AML JSON still has no `abstract` key.
+- Tests run: `python -m py_compile scripts/collect_aml_candidates.py scripts/aml_common.py`.
+
 ## 2026-06-18 15:02
 
 ### Change Summary
