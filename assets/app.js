@@ -696,6 +696,8 @@ function renderAmlRecommendationCard(item) {
   const seed = (item.related_seed_papers || [])[0];
   const seedText = seed && seed.title ? `Closest seed: ${seed.title}` : "";
   const summaryHtml = renderAmlSummaryBlock(item);
+  const scoreReason = formatAmlScoreReason(item);
+  const scoreReasonTitle = item.why_recommended || scoreReason;
   const authorDetailsHtml = renderAuthorDetails({
     authors: Array.isArray(item.authors) ? item.authors : [],
     author_details: Array.isArray(item.author_details) ? item.author_details : [],
@@ -706,6 +708,7 @@ function renderAmlRecommendationCard(item) {
         <span class="publication-badge">${escapeHtml(publicationLabel)}</span>
         <span class="summary-provider-badge is-openai">${escapeHtml(item.recommendation_level || "Recommended")}</span>
         <span class="relevance-badge">AML ${escapeHtml(String(score))}/100</span>
+        <span class="score-reason-badge" title="${escapeAttribute(scoreReasonTitle)}">Reason: ${escapeHtml(scoreReason)}</span>
       </div>
       <h4 class="paper-title">${escapeHtml(item.title || "Untitled")}</h4>
       ${authorDetailsHtml}
@@ -720,6 +723,19 @@ function renderAmlRecommendationCard(item) {
       <p class="policy-mini">AML recommendation - ${escapeHtml(routes ? `routes: ${routes}` : "manual recommendation output")} - updated ${escapeHtml(formatAmlUpdatedAt(item.updated_at))}</p>
     </div>
   </article>`;
+}
+
+function formatAmlScoreReason(item) {
+  const topics = (item.matched_topics || [])
+    .slice(0, 2)
+    .map(displayLabel)
+    .filter(Boolean);
+  if (topics.length) return topics.join(" + ");
+  const seed = (item.related_seed_papers || [])[0];
+  if (seed && seed.title) return "Seed similarity";
+  const routes = (item.discovery_routes || []).slice(0, 1).map((route) => String(route).replace(/_/g, " "));
+  if (routes.length) return routes[0];
+  return "Profile match";
 }
 
 function renderAmlSummaryBlock(item) {

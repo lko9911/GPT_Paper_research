@@ -1,5 +1,31 @@
 # AGENT_LOG
 
+## 2026-06-18 15:18
+
+### Change Summary
+- Added a visible score-reason badge to AML recommendation cards.
+
+### Edited Files
+- `assets/app.js`: added `formatAmlScoreReason()` and rendered a compact `Reason: ...` badge next to the AML score.
+- `assets/style.css`: styled the score-reason badge and added a dark-mode override so it does not inherit the amber last-badge styling.
+- `index.html`: bumped asset cache versions to `20260618-aml-score-reason`.
+- `AGENT_LOG.md`: recorded this score-explanation UI change.
+
+### Implemented Features
+- AML cards now keep the `Possible` / `Watch` badge and show a nearby reason badge.
+- The reason badge uses matched topics when available, otherwise seed similarity, discovery route, or profile match.
+- Hovering the reason badge exposes the full `why_recommended` text through the title attribute.
+
+### Design Decisions
+- Kept the score explanation compact to avoid making the card header too heavy.
+- The full score rationale remains in the Q5 Takeaway as readable text.
+
+### Remaining Work
+- Verify the deployed GitHub Pages UI after cache refresh.
+
+### Notes / Cautions
+- OpenAI API was not used.
+
 ## 2026-06-18 15:11
 
 ### Change Summary
