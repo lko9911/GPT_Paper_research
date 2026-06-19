@@ -1,5 +1,52 @@
 # AGENT_LOG
 
+## 2026-06-19 13:00
+
+### Change Summary
+- Implemented Step 1 of the JCR matching workflow: extract a local unique journal list from existing paper data.
+
+### Edited Files
+- `scripts/extract_unique_journals.py`: added a local-only JSON/CSV journal extraction script with journal normalization, ISSN normalization, ISSN/name-based deduplication, and manual-review flags.
+- `docs/jcr_step1_extract_unique_journals.md`: documented the Step 1 purpose, input/output paths, command usage, output columns, normalization behavior, and the no-scraping/no-JCR-matching boundary.
+- `.gitignore`: explicitly ignored `data/private/journals_to_match_jcr.csv` and `data/private/journals_to_match_jcr.json`.
+- `AGENT_LOG.md`: recorded this implementation and validation.
+
+### Implemented Features
+- Default input is `data/papers.json`, the current active source-of-truth paper database.
+- Default outputs are:
+  - `data/private/journals_to_match_jcr.csv`
+  - `data/private/journals_to_match_jcr.json`
+- Supports JSON and CSV input through `--input`.
+- Supports custom CSV and JSON output paths through `--output` and `--json-output`.
+- Extracts journal names from fields such as `journal`, `venue`, `container-title`, `container_title`, `publication`, `source_title`, and related aliases.
+- Extracts ISSN/eISSN-like values from fields such as `issn`, `ISSN`, `issn_l`, `eissn`, `EISSN`, and related aliases.
+- Produces columns requested for later manual JCR matching: `journal_id`, `journal_original`, `journal_normalized`, `issn`, `eissn`, `all_issns`, `paper_count`, `example_doi`, `example_title`, `example_year`, `source_fields`, `manual_review_required`, and `review_note`.
+
+### Validation
+- Ran `python scripts/extract_unique_journals.py`.
+- Input paper data path: `data/papers.json`.
+- Total papers read: 1,155.
+- Total unique journals extracted: 428.
+- Journals with ISSN/eISSN: 297.
+- Journals missing ISSN/eISSN: 131.
+- Journals requiring manual review: 143.
+- Ran `python -m py_compile scripts/extract_unique_journals.py`.
+- Confirmed generated private outputs are ignored by Git.
+
+### Design Decisions
+- Did not scrape or query Web of Science, JCR, Clarivate, Crossref, OpenAlex, or publisher pages.
+- Did not perform JCR matching in this step.
+- Did not modify existing paper data files, update workflows, or website runtime files.
+- Used ISSN/eISSN grouping when available; otherwise used normalized journal names.
+- Marked missing journal names, missing ISSNs, repository/conference/archive-like venues, ambiguous names, and inconsistent ISSN groups for manual review.
+
+### Remaining Work
+- Step 2 should load the manually exported JCR CSV and match it against `data/private/journals_to_match_jcr.csv`.
+- Before Step 2, manually review high-count missing-journal rows and repository/preprint venue rows.
+
+### Notes
+- The generated CSV/JSON outputs are private intermediate files and were not committed.
+
 ## 2026-06-19 12:34
 
 ### Change Summary
