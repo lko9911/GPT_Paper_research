@@ -52,6 +52,7 @@ INDEX_FIELDS = {
     "last_updated",
     "summary_provider",
     "openai_summary_applied",
+    "corresponding_authors",
     "corresponding_author_available",
     "corresponding_author_source",
     "openalex_checked",
@@ -157,6 +158,10 @@ def _build_dataset(
         cleaned["id"] = paper_id
 
         index = {key: cleaned[key] for key in sorted(INDEX_FIELDS) if key in cleaned}
+        if "corresponding_authors" in index:
+            index["corresponding_authors"] = _compact_corresponding_authors(index["corresponding_authors"])
+            if not index["corresponding_authors"]:
+                index.pop("corresponding_authors", None)
         index["id"] = paper_id
         index["status"] = status
         index_records.append(index)
@@ -196,6 +201,46 @@ def _strip_korean_duplicates(record: dict[str, Any]) -> tuple[dict[str, Any], in
             continue
         cleaned[key] = value
     return cleaned, removed
+
+
+def _compact_corresponding_authors(authors: Any) -> list[dict[str, Any]]:
+    if not isinstance(authors, list):
+        return []
+    compact: list[dict[str, Any]] = []
+    for author in authors:
+        if not isinstance(author, dict):
+            continue
+        name = str(author.get("name") or "").strip()
+        if not name:
+            continue
+        compact_author: dict[str, Any] = {
+            "name": name,
+            "position": author.get("position"),
+            "is_corresponding": True,
+        }
+        institution = _primary_institution(author)
+        if institution:
+            compact_author["institutions"] = [institution]
+        compact.append({key: value for key, value in compact_author.items() if value not in (None, "", [])})
+    return compact
+
+
+def _primary_institution(author: dict[str, Any]) -> dict[str, Any]:
+    institutions = author.get("institutions")
+    if not isinstance(institutions, list):
+        return {}
+    for institution in institutions:
+        if not isinstance(institution, dict) or not institution.get("name"):
+            continue
+        return {
+            key: value
+            for key, value in {
+                "name": institution.get("name"),
+                "country_code": institution.get("country_code"),
+            }.items()
+            if value not in (None, "")
+        }
+    return {}
 
 
 def _is_korean_duplicate_key(key: str) -> bool:

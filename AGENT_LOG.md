@@ -1,5 +1,39 @@
 # AGENT_LOG
 
+## 2026-06-19 11:29
+
+### Change Summary
+- Fixed corresponding-author visibility in the GitHub Pages startup data and paper card rendering.
+
+### Edited Files
+- `scripts/build_split_data.py`: added compact `corresponding_authors` entries to the lightweight startup index while omitting empty arrays and reducing each corresponding-author record to display-safe fields.
+- `assets/app.js`: updated author rendering so fallback author lists can still mark OpenAlex-cross-checked corresponding authors when full `author_details` have not been lazy-loaded yet.
+- `data/papers_index.json`, `data/archive_papers_index.json`, `data/details/`, `data/archive_details/`: regenerated split data from the existing Crossref-only source JSON files.
+- `AGENT_LOG.md`: recorded this visibility fix.
+
+### Implemented Features
+- Corresponding authors completed by OpenAlex DOI cross-check are now visible from the initial paper index.
+- Initial card rendering can display the corresponding-author badge even before a detail chunk is loaded.
+
+### Design Decisions
+- Did not rerun Crossref collection or OpenAlex DOI enrichment; this was a presentation/indexing fix only.
+- Kept OpenAlex as corresponding-author cross-check provenance only, not a paper discovery source.
+- Stored only compact corresponding-author display fields in the startup index to avoid undoing the previous initial-payload reduction.
+
+### Validation
+- Verified active startup index has 1,155 records.
+- Verified 711 active records expose `corresponding_authors` in `data/papers_index.json`.
+- Verified 16 archived records expose `corresponding_authors` in `data/archive_papers_index.json`.
+- Verified no empty `corresponding_authors` arrays remain in the active startup index.
+- Ran `python -m py_compile scripts/build_split_data.py`.
+
+### Remaining Work
+- If richer corresponding-author details are desired on cards, load full detail chunks on demand rather than expanding the startup index further.
+
+### Notes
+- Crossref is still the only paper collection source in the rebuilt dataset.
+- OpenAlex is used only for DOI-based missing corresponding-author completion.
+
 ## 2026-06-19 11:11
 
 ### Change Summary

@@ -1340,7 +1340,9 @@ function tagButton(text) {
 function renderAuthorDetails(paper) {
   const details = Array.isArray(paper.author_details) ? paper.author_details : [];
   const fallbackAuthors = Array.isArray(paper.authors) ? paper.authors : [];
-  if (!details.length && !fallbackAuthors.length) return "";
+  const corresponding = Array.isArray(paper.corresponding_authors) ? paper.corresponding_authors : [];
+  if (!details.length && !fallbackAuthors.length && !corresponding.length) return "";
+  const correspondingNames = new Set(corresponding.map((author) => normalizeAuthorName(author && author.name)).filter(Boolean));
   const visibleLimit = 8;
   const visibleDetails = details.length
     ? details.slice(0, visibleLimit).map((author) => ({
@@ -1351,12 +1353,12 @@ function renderAuthorDetails(paper) {
     : fallbackAuthors.slice(0, visibleLimit).map((name) => ({
         name,
         tooltip: name,
-        isCorresponding: false,
+        isCorresponding: correspondingNames.has(normalizeAuthorName(name)),
       }));
   const visibleNames = new Set(visibleDetails.map((author) => normalizeAuthorName(author.name)));
   const hiddenCorresponding = details.length
     ? details.slice(visibleLimit).filter((author) => author && author.is_corresponding && !visibleNames.has(normalizeAuthorName(author.name)))
-    : [];
+    : corresponding.filter((author) => author && author.name && !visibleNames.has(normalizeAuthorName(author.name)));
   const supplementalCorresponding = hiddenCorresponding.slice(0, 2).map((author) => ({
     name: author.name || "",
     tooltip: [author.name, author.position, primaryInstitution(author)].filter(Boolean).join(" - "),
