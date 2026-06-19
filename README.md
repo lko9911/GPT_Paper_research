@@ -16,7 +16,8 @@ Collection policy:
 - Crossref is the only paper discovery/search source.
 - Existing `data/papers.json` and `data/archive_papers.json` are archived before overwrite but are not merged into the new result.
 - OpenAlex general search is disabled.
-- Priority venue / OpenAlex source search is disabled.
+- OpenAlex source/priority venue search is disabled.
+- Selected journals can be searched through Crossref ISSN-targeted queries in `data/crossref_venue_queries.json`; this is still Crossref-only discovery.
 - OpenAlex is used only when a Crossref result has a DOI and lacks corresponding-author metadata.
 - OpenAlex DOI lookup may complete `corresponding_authors`, but it must not add new papers or change `source` away from `["Crossref"]`.
 - OpenAI is not used by the scheduled update.
@@ -28,6 +29,7 @@ Main outputs:
 - `data/papers.csv`: active dataset CSV export.
 - `data/papers.xlsx`: active dataset Excel export.
 - `data/papers_index.json` and `data/details/detail_*.json`: GitHub Pages startup index and lazy detail chunks.
+- `data/crossref_venue_queries.json`: optional Crossref ISSN-targeted venue queries, currently including `ACS Applied Materials & Interfaces` and `Materials & Design`.
 - `data/old_exports/full_rebuild_*/`: compressed backup of the previous dataset/output files.
 
 ## Current Language Policy

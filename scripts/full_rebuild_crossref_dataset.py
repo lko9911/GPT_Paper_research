@@ -21,7 +21,7 @@ from datetime import UTC, date, datetime
 from pathlib import Path
 from typing import Any
 
-from fetch_crossref import fetch_crossref
+from fetch_crossref import fetch_crossref, fetch_crossref_by_issn_query
 from fetch_openalex import fetch_openalex_by_doi
 from summarize import summarize_record
 from update_papers import (
@@ -41,9 +41,11 @@ PAPERS_CSV_PATH = DATA_DIR / "papers.csv"
 PAPERS_XLSX_PATH = DATA_DIR / "papers.xlsx"
 SITE_META_PATH = DATA_DIR / "site_meta.json"
 QUERIES_PATH = DATA_DIR / "queries.json"
+CROSSREF_VENUE_QUERIES_PATH = DATA_DIR / "crossref_venue_queries.json"
 BACKUP_ROOT = DATA_DIR / "old_exports"
 DEFAULT_SINCE_YEAR = 2024
 SEARCH_ROWS = int(os.getenv("SEARCH_PER_PAGE", "200"))
+VENUE_SEARCH_ROWS = int(os.getenv("CROSSREF_VENUE_SEARCH_ROWS", str(SEARCH_ROWS)))
 
 
 def main() -> None:
@@ -62,8 +64,11 @@ def main() -> None:
     print(f"Existing paper dataset archived: {backup_dir.relative_to(ROOT)}")
 
     queries = _filtered_queries(_load_json(QUERIES_PATH, []))
+    venue_targets = _load_json(CROSSREF_VENUE_QUERIES_PATH, [])
     print("Crossref-only search started")
     raw_candidates = _collect_crossref_candidates(queries, since_year)
+    venue_candidates = _collect_crossref_venue_candidates(venue_targets, since_year)
+    raw_candidates.extend(venue_candidates)
     print(f"Crossref-only search completed: {len(raw_candidates)} raw records")
 
     deduped = _dedupe_crossref_records(raw_candidates)
@@ -142,6 +147,52 @@ def _collect_crossref_candidates(queries: list[str], since_year: int) -> list[di
             if _is_plausible(record, since_year):
                 candidates.append(record)
         time.sleep(float(os.getenv("API_SLEEP_SECONDS", "0.2")))
+    return candidates
+
+
+def _collect_crossref_venue_candidates(venue_targets: list[dict[str, Any]], since_year: int) -> list[dict[str, Any]]:
+    candidates: list[dict[str, Any]] = []
+    if not venue_targets:
+        print("Crossref ISSN venue search disabled: no venue query file entries")
+        return candidates
+    if _env_flag("SKIP_CROSSREF_VENUE_QUERIES"):
+        print("Crossref ISSN venue search skipped because SKIP_CROSSREF_VENUE_QUERIES is enabled")
+        return candidates
+
+    print("Crossref ISSN venue search started")
+    for target in venue_targets:
+        venue_name = str(target.get("name") or "Unknown venue")
+        issns = [str(issn).strip() for issn in target.get("issn", []) if str(issn).strip()]
+        queries = [str(query).strip() for query in target.get("queries", []) if str(query).strip()]
+        if not issns or not queries:
+            print(f"Crossref ISSN venue search skipped for {venue_name}: missing ISSN or queries")
+            continue
+        for issn in issns:
+            for query in queries:
+                print(f"Crossref venue search: {venue_name} / ISSN {issn} / {query}")
+                try:
+                    records = fetch_crossref_by_issn_query(
+                        query,
+                        issn=issn,
+                        rows=VENUE_SEARCH_ROWS,
+                        from_year=since_year,
+                    )
+                except Exception as exc:
+                    print(f"Crossref venue search failed for {venue_name} / {issn} / {query!r}: {exc}")
+                    continue
+                for record in records:
+                    record["source"] = ["Crossref"]
+                    record["metadata_source"] = "crossref"
+                    record["crossref_collection_route"] = "issn_venue_query"
+                    record["crossref_target_venue"] = venue_name
+                    record["crossref_target_issn"] = issn
+                    record["openalex_checked"] = False
+                    record["openalex_used_for"] = None
+                    record["corresponding_author_source"] = "crossref" if record.get("corresponding_authors") else None
+                    if _is_plausible(record, since_year):
+                        candidates.append(record)
+                time.sleep(float(os.getenv("API_SLEEP_SECONDS", "0.2")))
+    print(f"Crossref ISSN venue search completed: {len(candidates)} plausible records")
     return candidates
 
 
@@ -260,6 +311,9 @@ def _finalize_crossref_record(record: dict[str, Any], today: str) -> dict[str, A
         "source": ["Crossref"],
         "metadata_source": "crossref",
         "crossref_type": record.get("crossref_type", ""),
+        "crossref_collection_route": record.get("crossref_collection_route", "keyword_query"),
+        "crossref_target_venue": record.get("crossref_target_venue", ""),
+        "crossref_target_issn": record.get("crossref_target_issn", ""),
         "issn": record.get("issn", []),
         "issn_l": record.get("issn_l", ""),
         "publisher": record.get("publisher", ""),
@@ -355,6 +409,9 @@ def _export_fieldnames() -> list[str]:
         "source",
         "metadata_source",
         "crossref_type",
+        "crossref_collection_route",
+        "crossref_target_venue",
+        "crossref_target_issn",
         "issn",
         "issn_l",
         "publisher",
@@ -458,6 +515,10 @@ def _since_year() -> int:
     except ValueError:
         print(f"Invalid SINCE_YEAR={value!r}; using {DEFAULT_SINCE_YEAR}")
         return DEFAULT_SINCE_YEAR
+
+
+def _env_flag(name: str) -> bool:
+    return os.getenv(name, "").strip().lower() in {"1", "true", "yes", "on"}
 
 
 def _load_json(path: Path, default: Any) -> Any:

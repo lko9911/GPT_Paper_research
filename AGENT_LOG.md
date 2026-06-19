@@ -1,5 +1,50 @@
 # AGENT_LOG
 
+## 2026-06-19 11:41
+
+### Change Summary
+- Added Crossref ISSN-targeted venue search for `ACS Applied Materials & Interfaces` and `Materials & Design`.
+- Verified whether those venues already exist in the current active/archive dataset.
+
+### Edited Files
+- `scripts/fetch_crossref.py`: added `fetch_crossref_by_issn_query()` and a venue-specific max-page guard through `CROSSREF_VENUE_MAX_PAGES`.
+- `scripts/full_rebuild_crossref_dataset.py`: added Crossref ISSN venue collection from `data/crossref_venue_queries.json` and provenance fields for the collection route.
+- `scripts/build_split_data.py`: added the new Crossref venue collection provenance fields to the startup index.
+- `data/crossref_venue_queries.json`: added ISSN-based target searches for ACS AMI and Materials & Design.
+- `reports/crossref_target_venue_check_20260619.md`: recorded the current-dataset check and Crossref ISSN probe results.
+- `README.md`, `ARCHITECTURE.md`, `PROJECT_STATUS.md`: documented the new Crossref ISSN target venue search behavior.
+- `AGENT_LOG.md`: recorded this change.
+
+### Implemented Features
+- ACS AMI and Materials & Design can now be searched through Crossref by ISSN plus topical query.
+- The full rebuild still keeps paper discovery Crossref-only.
+- OpenAlex remains limited to DOI-based missing corresponding-author completion.
+- Venue-targeted Crossref records carry `crossref_collection_route`, `crossref_target_venue`, and `crossref_target_issn` provenance.
+
+### Verification
+- Current active dataset check:
+  - `ACS Applied Materials & Interfaces`: 1 active paper, 0 archived papers.
+  - `Materials & Design`: 11 active papers, 0 archived papers.
+- Crossref ISSN lookup confirmed:
+  - ACS AMI: `1944-8244`, `1944-8252`.
+  - Materials & Design: `0264-1275`.
+- Crossref works probes with ISSN filters returned relevant 2024-2026 additive manufacturing records from both venues.
+- Ran `python -m py_compile scripts/fetch_crossref.py scripts/full_rebuild_crossref_dataset.py scripts/build_split_data.py`.
+
+### Design Decisions
+- Did not use Crossref journal title query as the primary mechanism because it was unreliable for these venue names.
+- Used HTML entity normalization during verification because Crossref stores these venues as `ACS Applied Materials &amp; Interfaces` and `Materials &amp; Design` in local JSON.
+- Used ISSN-filtered Crossref works search instead of publisher crawling or OpenAlex discovery.
+- Set venue search to default to one cursor page through `CROSSREF_VENUE_MAX_PAGES=1` to prevent unbounded local/API runs.
+
+### Remaining Work
+- Run the scheduled/manual `Update papers` workflow to rebuild the public dataset with the new venue-targeted candidates.
+- Review newly added ACS AMI and Materials & Design records after rebuild to tune query specificity if needed.
+
+### Notes
+- No OpenAI API was used.
+- No PDFs or raw publisher abstracts were downloaded or stored.
+
 ## 2026-06-19 11:29
 
 ### Change Summary

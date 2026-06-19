@@ -17,6 +17,13 @@
   - Corresponding-author entries completed from OpenAlex: 727.
   - Records with OpenAlex in `source`: 0.
 - Priority venue search and OpenAlex general search are disabled for the scheduled `Update papers` workflow.
+- Crossref ISSN-targeted venue search is enabled through `data/crossref_venue_queries.json` for selected journals while keeping `source: ["Crossref"]`.
+- Current selected Crossref venue targets:
+  - `ACS Applied Materials & Interfaces`
+  - `Materials & Design`
+- Current dataset check on 2026-06-19:
+  - `ACS Applied Materials & Interfaces`: 1 active paper, 0 archived papers.
+  - `Materials & Design`: 11 active papers, 0 archived papers.
 - Core/non-core compatibility fields remain present as schema placeholders: `is_core_venue`, `core_status`, `venue_scope`, and `core_source`.
 - `scripts/build_split_data.py` was rerun after the rebuild. GitHub Pages still loads `data/papers_index.json` first and detail chunks lazily.
 
@@ -25,6 +32,7 @@
 - Existing data was not merged into the new dataset.
 - OpenAlex-only papers were not added.
 - Priority venue based search was not run.
+- Crossref ISSN probes confirmed both ACS AMI and Materials & Design are reachable through Crossref works search by ISSN.
 - CSV and XLSX exports were generated.
 - `data/papers_index.json` contains the new Crossref provenance and core/non-core compatibility fields.
 - `data/site_meta.json` records `collection_mode: "full_rebuild_crossref_only"` and `sources: ["Crossref"]`.

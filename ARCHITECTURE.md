@@ -10,6 +10,7 @@ Current flow:
 ```text
 Archive existing outputs
   -> Search Crossref from scratch using data/queries.json
+  -> Search selected Crossref journals by ISSN using data/crossref_venue_queries.json
   -> De-duplicate by DOI, then title/year/first author
   -> Generate fallback English metadata summaries without OpenAI
   -> For records with DOI and no corresponding author, check OpenAlex by DOI only
@@ -21,7 +22,8 @@ Archive existing outputs
 Important constraints:
 
 - OpenAlex is no longer a general paper search source in `Update papers`.
-- Priority venue / target venue search is disabled for the scheduled dataset update.
+- OpenAlex priority venue / source search is disabled for the scheduled dataset update.
+- Crossref ISSN-targeted venue search is enabled for selected journals in `data/crossref_venue_queries.json`; these records still have `source: ["Crossref"]`.
 - Existing active/archive paper records are archived before overwrite but are not used as collection seeds.
 - OpenAlex DOI results never add new papers to the dataset.
 - Records remain source-provenance clean: `source` is always `["Crossref"]` for rebuilt records.
@@ -39,7 +41,8 @@ Important constraints:
 Main files:
 
 - `scripts/full_rebuild_crossref_dataset.py`: full rebuild orchestrator.
-- `scripts/fetch_crossref.py`: Crossref metadata normalization, including ISSN, publisher, author detail, and any Crossref-provided corresponding-author flag.
+- `scripts/fetch_crossref.py`: Crossref metadata normalization, including ISSN, publisher, author detail, any Crossref-provided corresponding-author flag, and ISSN-targeted works search.
+- `data/crossref_venue_queries.json`: selected Crossref venue targets such as ACS AMI and Materials & Design.
 - `scripts/fetch_openalex.py`: used only through DOI lookup for missing corresponding-author completion.
 - `.github/workflows/update-papers.yml`: calls the full rebuild script, then `scripts/build_split_data.py`.
 

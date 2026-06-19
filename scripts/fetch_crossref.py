@@ -15,6 +15,26 @@ CROSSREF_API = "https://api.crossref.org/works"
 
 
 def fetch_crossref(query: str, rows: int = 20, from_year: int | None = None) -> list[dict[str, Any]]:
+    return _fetch_crossref_works(query=query, rows=rows, from_year=from_year)
+
+
+def fetch_crossref_by_issn_query(
+    query: str,
+    issn: str,
+    rows: int = 20,
+    from_year: int | None = None,
+) -> list[dict[str, Any]]:
+    max_pages = _max_pages_from_env("CROSSREF_VENUE_MAX_PAGES", default=1)
+    return _fetch_crossref_works(query=query, rows=rows, from_year=from_year, issn=issn, max_pages=max_pages)
+
+
+def _fetch_crossref_works(
+    query: str,
+    rows: int = 20,
+    from_year: int | None = None,
+    issn: str | None = None,
+    max_pages: int | None = None,
+) -> list[dict[str, Any]]:
     sort = os.getenv("CROSSREF_SORT", "relevance")
     params: dict[str, Any] = {
         "query.bibliographic": query,
@@ -27,12 +47,17 @@ def fetch_crossref(query: str, rows: int = 20, from_year: int | None = None) -> 
     contact_email = os.getenv("CONTACT_EMAIL")
     if contact_email:
         params["mailto"] = contact_email
+    filters = []
     if from_year:
-        params["filter"] = f"from-pub-date:{from_year}-01-01"
+        filters.append(f"from-pub-date:{from_year}-01-01")
+    if issn:
+        filters.append(f"issn:{issn}")
+    if filters:
+        params["filter"] = ",".join(filters)
 
     works: list[dict[str, Any]] = []
     seen_cursors: set[str] = set()
-    max_pages = _max_pages()
+    max_pages = _max_pages() if max_pages is None else max_pages
     page = 0
 
     while True:
@@ -185,8 +210,12 @@ def _headers() -> dict[str, str]:
 
 
 def _max_pages() -> int:
-    value = os.getenv("CROSSREF_MAX_PAGES", "0")
+    return _max_pages_from_env("CROSSREF_MAX_PAGES", default=0)
+
+
+def _max_pages_from_env(name: str, default: int = 0) -> int:
+    value = os.getenv(name, str(default))
     try:
         return max(0, int(value))
     except ValueError:
-        return 0
+        return default
