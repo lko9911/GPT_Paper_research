@@ -908,8 +908,9 @@ function isNonJournalVenue(venue) {
 
 function venueCard(venue, count, label = "") {
   const badge = label ? `<em class="venue-chip">${escapeHtml(label)}</em>` : "";
-  return `<button class="venue-card" type="button" data-board-venue="${escapeAttribute(venue)}">
-    <strong>${escapeHtml(shortVenue(venue))}</strong>
+  const displayVenue = displayText(shortVenue(venue));
+  return `<button class="venue-card" type="button" data-board-venue="${escapeAttribute(displayText(venue))}">
+    <strong>${escapeHtml(displayVenue)}</strong>
     <span><b>${count}</b> ${escapeHtml(t("papers"))}</span>
     ${badge}
   </button>`;
@@ -1288,7 +1289,7 @@ function renderPaperRow(paper) {
         <span class="${escapeAttribute(summaryProviderLabel.className)}" title="${escapeAttribute(summaryProviderLabel.title)}">${escapeHtml(summaryProviderLabel.text)}</span>
         <span class="relevance-badge">${escapeHtml(t("relevanceLabel"))} ${escapeHtml(String(displayPaper.relevance_score || "-"))}/10</span>
       </div>
-      <h4 class="paper-title">${escapeHtml(displayPaper.title || "Untitled")}</h4>
+      <h4 class="paper-title">${escapeHtml(displayText(displayPaper.title || "Untitled"))}</h4>
       ${authorDetailsHtml}
       ${summaryHtml}
       <p class="relevance-note">${escapeHtml(relevanceNote)}</p>
@@ -2119,7 +2120,7 @@ function sectionId(value) {
 }
 
 function normalizeVenue(venue) {
-  return String(venue || "Venue unknown").trim() || "Venue unknown";
+  return displayText(venue || "Venue unknown").trim() || "Venue unknown";
 }
 
 function normalizeVenueKey(venue) {
@@ -2135,6 +2136,7 @@ function isPriorityVenue(venue) {
 }
 
 function shortVenue(venue) {
+  venue = displayText(venue);
   const replacements = {
     "arXiv (Cornell University)": "arXiv",
     "ArXiv.org": "arXiv",
@@ -2216,7 +2218,7 @@ function flatten(items) {
 }
 
 function escapeHtml(value) {
-  return String(value)
+  return displayText(value)
     .replace(/&/g, "&amp;")
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;")
@@ -2226,6 +2228,15 @@ function escapeHtml(value) {
 
 function escapeAttribute(value) {
   return escapeHtml(value).replace(/`/g, "&#096;");
+}
+
+function displayText(value) {
+  return String(value || "")
+    .replace(/&amp;/gi, "&")
+    .replace(/&quot;/gi, '"')
+    .replace(/&#039;|&apos;/gi, "'")
+    .replace(/&lt;/gi, "<")
+    .replace(/&gt;/gi, ">");
 }
 
 init();

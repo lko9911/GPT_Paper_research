@@ -1,5 +1,32 @@
 # AGENT_LOG
 
+## 2026-06-19 12:10
+
+### Change Summary
+- Fixed HTML entity display so venue names such as `ACS Applied Materials &amp; Interfaces` and `Materials &amp; Design` render with `&`.
+
+### Edited Files
+- `assets/app.js`: added `displayText()` and applied it to venue normalization, venue cards, title rendering, and HTML escaping.
+- `index.html`: bumped CSS/JS asset query version to `20260619-display-entities`.
+- `AGENT_LOG.md`: recorded this display fix.
+
+### Implemented Features
+- Crossref HTML entities are decoded for display before being safely escaped again.
+- Venue board labels now show `ACS Applied Materials & Interfaces` and `Materials & Design`.
+- Venue matching still treats `&amp;` and `&` as the same venue.
+
+### Validation
+- Confirmed `displayText("ACS Applied Materials &amp; Interfaces")` maps to `ACS Applied Materials & Interfaces`.
+- Confirmed `displayText("Materials &amp; Design")` maps to `Materials & Design`.
+- Confirmed `index.html` now references `assets/app.js?v=20260619-display-entities`.
+
+### Design Decisions
+- Decoded entities only for UI display/matching; source JSON was not rewritten.
+- Kept escaping after decoding so rendered text remains safe in `innerHTML`.
+
+### Notes
+- No OpenAI API was used.
+
 ## 2026-06-19 12:03
 
 ### Change Summary
