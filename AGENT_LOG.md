@@ -1,5 +1,29 @@
 # AGENT_LOG
 
+## 2026-06-19 16:48
+
+### Change Summary
+- Deleted local private journal-matching preparation outputs as part of the same conservative JCR cleanup.
+
+### Edited Files
+- `data/private/journals_to_match_jcr.csv`: deleted local ignored journal matching preparation output.
+- `data/private/journals_to_match_jcr.json`: deleted local ignored journal matching preparation output.
+- `AGENT_LOG.md`: recorded this local cleanup.
+
+### Implemented Features
+- No application feature change; this was a local data hygiene cleanup.
+
+### Design Decisions
+- Treated JCR matching preparation artifacts as unnecessary to retain locally after deciding not to proceed with JCR matching.
+- Kept AML private debug files because they are unrelated to JCR/JCR matching.
+
+### Remaining Work
+- Recreate journal extraction later only if a private, license-safe JCR workflow is explicitly resumed.
+
+### Notes / Cautions
+- `data/private/` remains ignored by Git.
+- No external APIs were called.
+
 ## 2026-06-19 16:46
 
 ### Change Summary
