@@ -1,5 +1,31 @@
 # AGENT_LOG
 
+## 2026-06-19 12:03
+
+### Change Summary
+- Fixed GitHub Pages asset cache busting so the newly added core venues appear in the venue board.
+
+### Edited Files
+- `index.html`: changed CSS/JS asset query version from `20260618-aml-score-reason` to `20260619-core-venues`.
+- `AGENT_LOG.md`: recorded the cache-busting fix.
+
+### Implemented Features
+- Forces browsers and GitHub Pages to load the updated `assets/app.js` containing `ACS Applied Materials & Interfaces` and `Materials & Design` in `TARGET_VENUES`.
+
+### Verification
+- Confirmed `data/papers_index.json` contains 1 ACS AMI record and 11 Materials & Design records.
+- Confirmed the same normalization used by the UI matches Crossref HTML entity venue names such as `Materials &amp; Design`.
+
+### Design Decisions
+- Did not change paper data again; the previous core data patch was already correct.
+- Treated this as a deployment/cache visibility fix.
+
+### Remaining Work
+- Wait for GitHub Pages deployment after push, then hard-refresh the browser if the old JS is still cached locally.
+
+### Notes
+- No OpenAI API was used.
+
 ## 2026-06-19 11:55
 
 ### Change Summary
