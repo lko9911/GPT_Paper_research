@@ -1,5 +1,63 @@
 # AGENT_LOG
 
+## 2026-06-19 14:16
+
+### Change Summary
+- Implemented Step 3 of the JCR matching workflow using only local private CSV files.
+
+### Edited Files
+- `scripts/match_jcr_metrics.py`: added local JCR matching script with ISSN/eISSN-first matching, exact name/abbreviation fallback, standard-library fuzzy matching, multiple-category preservation, public JSON generation, and private debug/manual-review outputs.
+- `docs/jcr_step3_match_jcr_metrics.md`: documented inputs, expected JCR columns, matching priority, confidence rules, category handling, public/private outputs, and manual review workflow.
+- `.gitignore`: explicitly ignored the raw JCR export, optional JCR export folder, private debug JSON/CSV, and manual review CSV.
+- `data/journal_metrics.json`: generated public website-safe journal metrics output.
+- `public/data/journal_metrics.json`: generated public website-safe copy for frontend use.
+- `AGENT_LOG.md`: recorded this Step 3 implementation and validation.
+
+### Implemented Features
+- Default inputs:
+  - `data/private/journals_to_match_jcr.csv`
+  - `data/private/jcr_export_original_2025.csv`
+- Supports `--journals`, `--jcr`, `--jcr-dir`, and `--year`.
+- Handles JCR exports with a metadata line before the real CSV header.
+- Maps the requested JCR columns into normalized internal fields.
+- Normalizes valid ISSN/eISSN values to `XXXX-XXXX`.
+- Matches by ISSN/eISSN first, then exact journal name, exact JCR abbreviation, fuzzy journal name, or not found/manual review.
+- Preserves all JCR category rows per journal and chooses `best_quartile` / `selected_category` by Q1-Q4 ranking.
+- Writes public metrics JSON without raw JCR rows, debug notes, private paths, or manual review notes.
+- Writes private debug/review files under `data/private/`.
+
+### Validation
+- Ran `python scripts/match_jcr_metrics.py`.
+- Total local journals loaded: 428.
+- Total JCR rows loaded: 1,087.
+- Total matched journals: 75.
+- Matched by ISSN/eISSN: 67.
+- Matched by exact journal name or abbreviation: 1.
+- Matched by fuzzy journal name: 7.
+- Not found: 353.
+- Manual review count: 362.
+- Public output path: `data/journal_metrics.json`.
+- Public copy path: `public/data/journal_metrics.json`.
+- Private debug output path: `data/private/jcr_matched_debug.csv`.
+- Manual review output path: `data/private/jcr_manual_review.csv`.
+- Ran `python -m py_compile scripts/match_jcr_metrics.py`.
+- Confirmed private raw/debug/review files are ignored by Git.
+
+### Design Decisions
+- Used only local files; no Web of Science/JCR/Clarivate/Crossref/OpenAlex scraping or API calls.
+- Used Python standard library `difflib.SequenceMatcher` for fuzzy matching to avoid adding dependencies.
+- Kept fuzzy matches with confidence below 0.94 in the public output but marked them for manual review.
+- Preserved all category rows because one journal can belong to multiple JCR categories.
+- Did not modify the 6-hour paper update workflow or existing paper collection logic.
+
+### Remaining Work
+- Review `data/private/jcr_manual_review.csv`, especially fuzzy matches and journals missing ISSN/eISSN.
+- Step 4 can integrate `public/data/journal_metrics.json` into the website UI if desired.
+
+### Notes
+- The JCR export appears to be a filtered 2025 export, so many local journals are correctly `not_found` until a broader export is provided.
+- Raw JCR export and private debug/review outputs were not committed.
+
 ## 2026-06-19 13:00
 
 ### Change Summary

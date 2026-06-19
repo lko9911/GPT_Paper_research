@@ -3,6 +3,11 @@
 ## 2026-06-19 Current Status
 
 - The paper dataset has been fully rebuilt from scratch in Crossref-only mode.
+- JCR workflow status:
+  - Step 1 unique journal extraction is implemented in `scripts/extract_unique_journals.py`.
+  - Step 3 local JCR matching is implemented in `scripts/match_jcr_metrics.py`.
+  - Latest Step 3 run loaded 428 local journals and 1,087 JCR rows, matched 75 journals, and wrote public metrics to `data/journal_metrics.json` and `public/data/journal_metrics.json`.
+  - Private JCR raw/debug/review files remain under ignored `data/private/`.
 - The previous active/archive dataset was archived before overwrite at `data/old_exports/full_rebuild_20260619014047/`.
 - The new source-of-truth files are:
   - `data/papers.json`: 1,155 curated active papers.
