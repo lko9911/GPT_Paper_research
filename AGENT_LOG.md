@@ -1,5 +1,76 @@
 # AGENT_LOG
 
+## 2026-06-19 11:11
+
+### Change Summary
+- Replaced the scheduled metadata collection pipeline with a Crossref-only full rebuild flow and executed the rebuild locally.
+
+### Edited Files
+- `scripts/full_rebuild_crossref_dataset.py`: added the full rebuild orchestrator. It archives current outputs, ignores existing paper records as input, searches Crossref from scratch, de-duplicates Crossref results, optionally completes missing corresponding authors through OpenAlex DOI lookup only, and exports JSON/CSV/XLSX.
+- `scripts/fetch_crossref.py`: expanded Crossref normalization to include author details, ISSN, ISSN-L, publisher, Crossref type, metadata provenance, and any Crossref-provided corresponding-author flags.
+- `scripts/build_split_data.py`: added Crossref provenance, OpenAlex cross-check, and core/non-core compatibility fields to the startup index.
+- `.github/workflows/update-papers.yml`: changed the scheduled update from `scripts/update_papers.py` to `scripts/full_rebuild_crossref_dataset.py`; removed Semantic Scholar/OpenAlex search-related environment use from the update step; added CSV/XLSX/backup outputs to the commit step.
+- `requirements.txt`: added `openpyxl` for XLSX export.
+- `data/papers.json`: replaced the previous dataset with 1,155 active records from the Crossref-only rebuild.
+- `data/archive_papers.json`: replaced the previous archive with 48 archived records from the same Crossref-only rebuild.
+- `data/papers.csv`: created the active dataset CSV export.
+- `data/papers.xlsx`: created the active dataset XLSX export.
+- `data/site_meta.json`: recorded `collection_mode=full_rebuild_crossref_only`, `sources=["Crossref"]`, backup path, and OpenAlex corresponding-author completion stats.
+- `data/papers_index.json`, `data/archive_papers_index.json`, `data/detail_manifest.json`, `data/archive_detail_manifest.json`, `data/details/`, `data/archive_details/`: regenerated split GitHub Pages data.
+- `data/old_exports/full_rebuild_20260619014047/`: stored compressed backups of the previous active/archive JSON, split data, and site metadata before overwrite.
+- `README.md`, `ARCHITECTURE.md`, `PROJECT_STATUS.md`: documented the new Crossref-only full rebuild architecture, outputs, and verification results.
+- `AGENT_LOG.md`: recorded this handoff entry.
+
+### Implemented Features
+- Full rebuild mode enabled.
+- Existing paper dataset archived before overwrite.
+- Existing dataset ignored for new collection.
+- Crossref-only search started and completed from `data/queries.json`.
+- Priority venue search disabled.
+- OpenAlex general search disabled.
+- OpenAlex used only for missing corresponding author DOI cross-check.
+- New Crossref-based dataset exported to JSON, CSV, and XLSX.
+- Core/non-core compatibility fields preserved as placeholders.
+
+### Rebuild Results
+- Crossref raw records after relevance filters: 2,762.
+- De-duplicated Crossref records: 1,203.
+- Active curated records: 1,155.
+- Archived records: 48.
+- Records with `source=["Crossref"]`: 1,203.
+- Records with `OpenAlex` in `source`: 0.
+- OpenAlex DOI checks for missing corresponding author: 1,203.
+- Corresponding-author entries completed from OpenAlex: 727.
+- CSV rows including header: 1,156.
+- XLSX rows including header: 1,156.
+
+### Design Decisions
+- Did not reuse existing `data/papers.json` or `data/archive_papers.json` as seeds, merge inputs, or append targets.
+- Kept `source` as `["Crossref"]` even when OpenAlex completed corresponding-author metadata, so paper discovery provenance stays clean.
+- Stored OpenAlex use in explicit fields (`openalex_checked`, `openalex_used_for`, `openalex_crosscheck_work_id`, `corresponding_author_source`) instead of adding OpenAlex as a source.
+- Preserved core/non-core schema fields for UI/export compatibility but did not use priority venue lists to assign them.
+- Compressed old outputs under `data/old_exports/` to preserve rollback material without keeping duplicate raw JSON loose in the data root.
+
+### Validation
+- Verified every rebuilt record has `source=["Crossref"]`.
+- Verified every rebuilt record has `metadata_source="crossref"`.
+- Verified no rebuilt record has `OpenAlex` in the `source` array.
+- Verified no OpenAlex-checked record lacks DOI.
+- Verified `openalex_used_for` is either `null` or `corresponding_author_completion`.
+- Verified core/non-core compatibility fields exist on all records.
+- Verified `data/papers.csv`, `data/papers.xlsx`, and split GitHub Pages data were regenerated.
+- Ran `python -m py_compile scripts/fetch_crossref.py scripts/full_rebuild_crossref_dataset.py scripts/build_split_data.py`.
+- Ran `python scripts/build_split_data.py`.
+
+### Remaining Work
+- Review the 48 archived records and threshold behavior after seeing the new Crossref-only site output.
+- If Crossref title searches miss known journals, add DOI/ISSN-based Crossref verification utilities separately; do not reintroduce OpenAlex as a discovery source.
+
+### Notes / Cautions
+- One Crossref query (`wavelength selective resin multimaterial 3D printing`) timed out during the local run; the job continued and completed successfully.
+- Scheduled updates now perform full rebuilds, which are slower than the old incremental update.
+- No OpenAI API was used.
+
 ## 2026-06-18 18:31
 
 ### Change Summary

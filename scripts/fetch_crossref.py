@@ -77,25 +77,76 @@ def _normalize_work(item: dict[str, Any]) -> dict[str, Any]:
     title = _first(item.get("title")) or "Untitled"
     venue = _first(item.get("container-title")) or _first(item.get("event", {}).get("name")) or ""
     year = _published_year(item)
-    authors = []
-    for author in item.get("author", [])[:12]:
-        given = author.get("given", "")
-        family = author.get("family", "")
-        name = " ".join(part for part in [given, family] if part).strip()
-        if name:
-            authors.append(name)
+    author_details = _normalize_authors(item.get("author", []))
+    authors = [author["name"] for author in author_details[:12] if author.get("name")]
+    corresponding_authors = [
+        author for author in author_details if author.get("is_corresponding")
+    ]
 
     abstract = _strip_markup(item.get("abstract") or "")
+    issn = item.get("ISSN") or []
     return {
         "title": title,
         "authors": authors,
+        "author_details": author_details,
+        "corresponding_authors": corresponding_authors,
+        "corresponding_author_available": bool(corresponding_authors),
         "year": year,
         "venue": venue,
         "doi": doi,
         "url": f"https://doi.org/{quote(doi)}" if doi else item.get("URL", ""),
         "source": ["Crossref"],
+        "metadata_source": "crossref",
+        "crossref_type": item.get("type", ""),
+        "issn": issn,
+        "issn_l": item.get("ISSN-L", ""),
+        "publisher": item.get("publisher", ""),
         "_abstract": abstract,
     }
+
+
+def _normalize_authors(authors: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    details: list[dict[str, Any]] = []
+    total = len(authors)
+    for index, author in enumerate(authors[:100], start=1):
+        given = author.get("given", "")
+        family = author.get("family", "")
+        name = " ".join(part for part in [given, family] if part).strip()
+        if not name:
+            name = author.get("name", "")
+        if not name:
+            continue
+        affiliations = []
+        for affiliation in author.get("affiliation") or []:
+            name_value = affiliation.get("name")
+            if name_value:
+                affiliations.append({"name": name_value})
+        details.append(
+            {
+                "name": name,
+                "orcid": author.get("ORCID", ""),
+                "position": author.get("sequence") or _fallback_author_position(index, total),
+                "is_corresponding": _is_crossref_corresponding_author(author),
+                "institutions": affiliations,
+                "raw_affiliation_strings": [item["name"] for item in affiliations],
+            }
+        )
+    return details
+
+
+def _fallback_author_position(index: int, total: int) -> str:
+    if index == 1:
+        return "first"
+    if index == total:
+        return "last"
+    return "middle"
+
+
+def _is_crossref_corresponding_author(author: dict[str, Any]) -> bool:
+    if bool(author.get("corresponding") or author.get("corresponding-author")):
+        return True
+    role = str(author.get("role") or author.get("contributor_role") or "").lower()
+    return "correspond" in role
 
 
 def _published_year(item: dict[str, Any]) -> int | None:

@@ -1,5 +1,50 @@
 # ARCHITECTURE
 
+## 2026-06-19 Crossref-Only Full Rebuild Architecture
+
+The scheduled paper collection pipeline now rebuilds the dataset from Crossref
+search results instead of incrementally merging old data.
+
+Current flow:
+
+```text
+Archive existing outputs
+  -> Search Crossref from scratch using data/queries.json
+  -> De-duplicate by DOI, then title/year/first author
+  -> Generate fallback English metadata summaries without OpenAI
+  -> For records with DOI and no corresponding author, check OpenAlex by DOI only
+  -> Use OpenAlex only to complete corresponding-author metadata
+  -> Export data/papers.json, data/archive_papers.json, data/papers.csv, data/papers.xlsx
+  -> Regenerate data/papers_index.json and lazy detail chunks
+```
+
+Important constraints:
+
+- OpenAlex is no longer a general paper search source in `Update papers`.
+- Priority venue / target venue search is disabled for the scheduled dataset update.
+- Existing active/archive paper records are archived before overwrite but are not used as collection seeds.
+- OpenAlex DOI results never add new papers to the dataset.
+- Records remain source-provenance clean: `source` is always `["Crossref"]` for rebuilt records.
+- OpenAlex completion is recorded only through provenance fields:
+  - `openalex_checked`
+  - `openalex_used_for`
+  - `openalex_crosscheck_work_id`
+  - `corresponding_author_source`
+- Core/non-core fields are retained for downstream compatibility but are placeholders in this rebuild:
+  - `is_core_venue`
+  - `core_status`
+  - `venue_scope`
+  - `core_source`
+
+Main files:
+
+- `scripts/full_rebuild_crossref_dataset.py`: full rebuild orchestrator.
+- `scripts/fetch_crossref.py`: Crossref metadata normalization, including ISSN, publisher, author detail, and any Crossref-provided corresponding-author flag.
+- `scripts/fetch_openalex.py`: used only through DOI lookup for missing corresponding-author completion.
+- `.github/workflows/update-papers.yml`: calls the full rebuild script, then `scripts/build_split_data.py`.
+
+The previous `scripts/update_papers.py` incremental pipeline remains in the repository for reference/backward compatibility, but the active scheduled workflow does not call it.
+
 ## 2026-06-13 Seed DOI 및 Priority Curation 구조
 
 `data/seed_dois.json`은 일반 검색 쿼리로 놓치면 안 되는 대표 논문을 DOI 기준으로 고정 추적하는 목록입니다. Nature, Science, Nature Materials, Science Advances처럼 중요한 venue의 대표 논문은 broad keyword search 상위 결과에 항상 들어온다고 보장할 수 없으므로 seed DOI로 관리합니다.

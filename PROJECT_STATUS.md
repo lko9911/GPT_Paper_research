@@ -1,5 +1,34 @@
 # PROJECT_STATUS
 
+## 2026-06-19 Current Status
+
+- The paper dataset has been fully rebuilt from scratch in Crossref-only mode.
+- The previous active/archive dataset was archived before overwrite at `data/old_exports/full_rebuild_20260619014047/`.
+- The new source-of-truth files are:
+  - `data/papers.json`: 1,155 curated active papers.
+  - `data/archive_papers.json`: 48 archived records.
+  - `data/papers.csv`: CSV export for the active Crossref-based dataset.
+  - `data/papers.xlsx`: XLSX export for the active Crossref-based dataset.
+- The total rebuilt Crossref dataset contains 1,203 de-duplicated records after DOI-first and title/year/first-author fallback de-duplication.
+- Every rebuilt record has `source: ["Crossref"]` and `metadata_source: "crossref"`.
+- OpenAlex is not used as a paper discovery source. It was used only for DOI-based corresponding-author completion on Crossref records that lacked corresponding-author metadata.
+- OpenAlex corresponding-author cross-check stats from this rebuild:
+  - DOI records checked: 1,203.
+  - Corresponding-author entries completed from OpenAlex: 727.
+  - Records with OpenAlex in `source`: 0.
+- Priority venue search and OpenAlex general search are disabled for the scheduled `Update papers` workflow.
+- Core/non-core compatibility fields remain present as schema placeholders: `is_core_venue`, `core_status`, `venue_scope`, and `core_source`.
+- `scripts/build_split_data.py` was rerun after the rebuild. GitHub Pages still loads `data/papers_index.json` first and detail chunks lazily.
+
+### Verification Summary
+
+- Existing data was not merged into the new dataset.
+- OpenAlex-only papers were not added.
+- Priority venue based search was not run.
+- CSV and XLSX exports were generated.
+- `data/papers_index.json` contains the new Crossref provenance and core/non-core compatibility fields.
+- `data/site_meta.json` records `collection_mode: "full_rebuild_crossref_only"` and `sources: ["Crossref"]`.
+
 ## 2026-06-16 최신 상태
 
 - `Update papers` 정기 실행 주기를 6시간마다로 변경했습니다.

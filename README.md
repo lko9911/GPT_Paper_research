@@ -1,5 +1,35 @@
 # AI Manufacturing and 3D/4D Printing Research
 
+## Current Collection Mode
+
+The main paper dataset is now rebuilt in **Crossref-only full rebuild mode**.
+
+The scheduled `Update papers` workflow runs:
+
+```bash
+python scripts/full_rebuild_crossref_dataset.py
+python scripts/build_split_data.py
+```
+
+Collection policy:
+
+- Crossref is the only paper discovery/search source.
+- Existing `data/papers.json` and `data/archive_papers.json` are archived before overwrite but are not merged into the new result.
+- OpenAlex general search is disabled.
+- Priority venue / OpenAlex source search is disabled.
+- OpenAlex is used only when a Crossref result has a DOI and lacks corresponding-author metadata.
+- OpenAlex DOI lookup may complete `corresponding_authors`, but it must not add new papers or change `source` away from `["Crossref"]`.
+- OpenAI is not used by the scheduled update.
+
+Main outputs:
+
+- `data/papers.json`: active curated Crossref-based records.
+- `data/archive_papers.json`: archived low-relevance/duplicate records from the same Crossref rebuild.
+- `data/papers.csv`: active dataset CSV export.
+- `data/papers.xlsx`: active dataset Excel export.
+- `data/papers_index.json` and `data/details/detail_*.json`: GitHub Pages startup index and lazy detail chunks.
+- `data/old_exports/full_rebuild_*/`: compressed backup of the previous dataset/output files.
+
 ## Current Language Policy
 
 The public site is English-only. The previous Korean UI mode has been removed.
@@ -55,9 +85,10 @@ Open `http://localhost:8000`. In the browser Network tab, the first paper-data r
 
 ## 데이터 출처
 
-- OpenAlex Works API
-- Crossref Works API
-- 선택적 보강: Semantic Scholar Graph API
+- Paper discovery and baseline metadata: Crossref Works API
+- Corresponding-author completion only: OpenAlex Works API by DOI lookup
+- OpenAlex is not used as a general paper search source in the scheduled update.
+- Semantic Scholar is not used by the current Crossref-only full rebuild workflow.
 
 출판사 웹사이트를 직접 크롤링하지 않으며 PDF를 다운로드하거나 저장하지 않습니다.
 
@@ -87,7 +118,8 @@ GitHub 저장소의 `Settings > Secrets and variables > Actions`에서 다음 �
 python -m venv .venv
 . .venv/Scripts/activate
 pip install -r requirements.txt
-python scripts/update_papers.py
+python scripts/full_rebuild_crossref_dataset.py
+python scripts/build_split_data.py
 python -m http.server 8000
 ```
 
@@ -108,7 +140,7 @@ python -m http.server 8000
 - 6시간마다 cron 실행
 - `workflow_dispatch` 수동 실행
 
-워크플로는 Python 의존성을 설치하고 `scripts/update_papers.py`를 실행합니다. `data/papers.json`이 변경된 경우에만 자동 커밋합니다. 새 논문이 없어도 정상 종료되도록 구성해 불필요한 실패 알림을 줄였습니다.
+워크플로는 Python 의존성을 설치하고 `scripts/full_rebuild_crossref_dataset.py`와 `scripts/build_split_data.py`를 실행합니다. `data/papers.json`이 변경된 경우에만 자동 커밋합니다. 새 논문이 없어도 정상 종료되도록 구성해 불필요한 실패 알림을 줄였습니다.
 
 ## OpenAI로 기존 논문 전체 재요약
 
