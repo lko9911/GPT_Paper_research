@@ -1,5 +1,35 @@
 # AGENT_LOG
 
+## 2026-06-19 14:59
+
+### Change Summary
+- Reverted the Step 3 JCR metrics matching commit to avoid possible Clarivate/JCR licensing and public redistribution risk.
+
+### Edited Files
+- `AGENT_LOG.md`: recorded the rollback rationale.
+- Reverted commit `1c2721d Add local JCR metrics matching`.
+
+### Implemented Features
+- Removed public JCR-derived outputs from Git history going forward:
+  - `data/journal_metrics.json`
+  - `public/data/journal_metrics.json`
+- Removed the Step 3 matching script and documentation that were introduced in the reverted commit.
+
+### Design Decisions
+- Treat JCR/JIF/quartile/rank/category values as licensed data that should not be publicly redistributed through GitHub Pages unless the license explicitly permits it.
+- Keep JCR-related work private-only until a safer internal-use design is chosen.
+
+### Validation
+- Reverted commit `1c2721d` with `git revert --no-edit`.
+- Confirmed the public JCR metrics JSON files are deleted from the tracked tree by the revert.
+
+### Remaining Work
+- If JCR data is needed later, redesign Step 3 as private/internal-only or publish only non-sensitive derived labels after confirming license terms.
+
+### Notes
+- No external APIs were called.
+- Private files under `data/private/` remain ignored by Git.
+
 ## 2026-06-19 13:00
 
 ### Change Summary
