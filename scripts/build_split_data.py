@@ -37,35 +37,16 @@ INDEX_FIELDS = {
     "doi",
     "url",
     "source",
-    "metadata_source",
-    "crossref_type",
-    "crossref_collection_route",
-    "crossref_target_venue",
-    "crossref_target_issn",
-    "issn",
-    "issn_l",
-    "publisher",
     "categories",
     "tags",
     "relevance_score",
-    "abstract_used_for_summary",
-    "raw_abstract_displayed",
-    "pdf_stored",
     "first_added",
     "last_updated",
     "summary_provider",
     "openai_summary_applied",
     "corresponding_authors",
-    "corresponding_author_available",
-    "corresponding_author_source",
-    "openalex_checked",
-    "openalex_used_for",
-    "openalex_crosscheck_work_id",
     "curation_priority",
     "is_core_venue",
-    "core_status",
-    "venue_scope",
-    "core_source",
     "archive_reason",
     "archive_scope_reasons",
 }
@@ -218,32 +199,10 @@ def _compact_corresponding_authors(authors: Any) -> list[dict[str, Any]]:
             continue
         compact_author: dict[str, Any] = {
             "name": name,
-            "position": author.get("position"),
             "is_corresponding": True,
         }
-        institution = _primary_institution(author)
-        if institution:
-            compact_author["institutions"] = [institution]
         compact.append({key: value for key, value in compact_author.items() if value not in (None, "", [])})
     return compact
-
-
-def _primary_institution(author: dict[str, Any]) -> dict[str, Any]:
-    institutions = author.get("institutions")
-    if not isinstance(institutions, list):
-        return {}
-    for institution in institutions:
-        if not isinstance(institution, dict) or not institution.get("name"):
-            continue
-        return {
-            key: value
-            for key, value in {
-                "name": institution.get("name"),
-                "country_code": institution.get("country_code"),
-            }.items()
-            if value not in (None, "")
-        }
-    return {}
 
 
 def _is_korean_duplicate_key(key: str) -> bool:

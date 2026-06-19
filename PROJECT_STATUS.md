@@ -31,9 +31,10 @@
 - `scripts/build_split_data.py` was rerun after the rebuild. GitHub Pages still loads `data/papers_index.json` first and detail chunks lazily.
 - Frontend responsiveness pass on 2026-06-19:
   - Initial paper data loads from `data/papers_index.json` instead of full `data/papers.json`.
-  - `data/papers_index.json` is about 2.0 MB raw / 194 KB gzip, compared with `data/papers.json` at about 5.6 MB raw / 391 KB gzip.
+  - `data/papers_index.json` is about 1.1 MB raw / 142 KB gzip, compared with `data/papers.json` at about 5.6 MB raw / 391 KB gzip.
   - Search input is debounced and derived filter/search values are cached in memory.
   - Initial card render batch is 80 records.
+  - Non-first-paint provenance fields now live in lazy detail chunks instead of the startup index.
 
 ### Verification Summary
 

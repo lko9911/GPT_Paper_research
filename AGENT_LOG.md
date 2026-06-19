@@ -1,5 +1,42 @@
 # AGENT_LOG
 
+## 2026-06-19 12:34
+
+### Change Summary
+- Reduced the startup paper index payload by moving non-first-paint provenance fields into lazy detail chunks.
+
+### Edited Files
+- `scripts/build_split_data.py`: removed Crossref/OpenAlex provenance, ISSN, publisher, raw safety flags, and core-source compatibility fields from the startup index; these fields remain in detail chunks.
+- `scripts/build_split_data.py`: compacted startup corresponding-author data to name plus corresponding flag.
+- `data/papers_index.json`, `data/archive_papers_index.json`, `data/details/`, `data/archive_details/`: regenerated split data with the smaller startup index.
+- `AGENT_LOG.md`: recorded this payload reduction.
+
+### Implemented Features
+- Startup index now focuses on first-paint fields: id, title, authors, year, venue, DOI/URL, source, categories, tags, score, dates, summary provider, OpenAI flag, compact corresponding authors, core flag, and status.
+- Heavier metadata remains available after `Load details` through the detail chunk system.
+
+### Performance Notes
+- `data/papers_index.json` changed from about 2.0 MB raw / 194 KB gzip to about 1.1 MB raw / 142 KB gzip.
+- Compared with full `data/papers.json`, startup active paper data is now about 80% smaller raw and about 64% smaller gzip.
+- Split-data report shows about 81.1% raw initial-load reduction against active+archive source JSON.
+
+### Validation
+- Regenerated split data with `python scripts/build_split_data.py`.
+- Verified `data/papers_index.json` still contains 1,155 active records.
+- Verified 711 startup records still expose compact `corresponding_authors`.
+- Ran `python -m py_compile scripts/build_split_data.py`.
+
+### Design Decisions
+- Kept `source` in the startup index for lightweight provenance.
+- Moved detailed provenance such as `metadata_source`, `crossref_type`, ISSN, publisher, OpenAlex cross-check ids, and core-source labels to lazy detail chunks.
+- Did not change source-of-truth `data/papers.json`.
+
+### Remaining Work
+- If the site still feels heavy, the next step is chunked startup loading by year/topic instead of loading all 1,155 index records at once.
+
+### Notes
+- No OpenAI API was used.
+
 ## 2026-06-19 12:24
 
 ### Change Summary
