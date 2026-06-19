@@ -1,5 +1,43 @@
 # AGENT_LOG
 
+## 2026-06-19 12:24
+
+### Change Summary
+- Improved frontend responsiveness after the split-data payload optimization.
+
+### Edited Files
+- `assets/app.js`: added runtime paper caches for derived field, visible tags, subtopics, canonical tag set, normalized venue, summary provider, and search text.
+- `assets/app.js`: changed filtering, venue counting, filter option building, sidebar counts, and grouping to reuse cached runtime values.
+- `assets/app.js`: debounced search input by 120 ms and reduced initial/load-more render batches from 120 to 80 cards.
+- `index.html`: bumped asset query version to `20260619-filter-cache`.
+- `AGENT_LOG.md`: recorded this performance pass.
+
+### Implemented Features
+- Initial network payload remains reduced by loading `data/papers_index.json` instead of `data/papers.json`.
+- Typing in the search field no longer triggers full filtering on every keystroke immediately.
+- Repeated filter/render operations avoid recomputing expensive topic/tag/search strings for all papers.
+
+### Performance Notes
+- Current raw JSON sizes:
+  - `data/papers.json`: about 5.6 MB raw, 391 KB gzip.
+  - `data/papers_index.json`: about 2.0 MB raw, 194 KB gzip.
+- Initial JSON payload is about 65% smaller raw than loading active+archive source JSON, and about 50% smaller gzip than active full JSON alone.
+- Remaining perceived lag is mostly browser-side parsing/filtering/rendering for 1,155 paper records, not only network transfer.
+
+### Validation
+- Confirmed `index.html` now references `assets/app.js?v=20260619-filter-cache`.
+- Confirmed gzip/raw size estimates after the change.
+- Could not run `node --check` because Node.js is not installed in the local shell environment.
+- Browser automation tools were not available in this session, so visual runtime verification was not performed.
+
+### Remaining Work
+- For a larger speedup, generate a smaller `papers_index.json` by removing fields not needed for first paint or by splitting index pages by year/topic.
+- Consider moving search/filter work into a Web Worker if the dataset grows beyond the current 1,155 records.
+- Consider virtual scrolling if rendering hundreds of cards becomes necessary.
+
+### Notes
+- No OpenAI API was used.
+
 ## 2026-06-19 12:10
 
 ### Change Summary

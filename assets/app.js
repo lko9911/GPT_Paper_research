@@ -263,8 +263,9 @@ const PAPERS_INDEX_URL = "data/papers_index.json";
 const PAPERS_FALLBACK_URL = "data/papers.json";
 const DETAIL_MANIFEST_URL = "data/detail_manifest.json";
 const DETAILS_BASE_URL = "data/details/";
-const INITIAL_RENDER_LIMIT = 120;
-const RENDER_INCREMENT = 120;
+const INITIAL_RENDER_LIMIT = 80;
+const RENDER_INCREMENT = 80;
+const FILTER_DEBOUNCE_MS = 120;
 
 if (localStorage.getItem("preferenceVersion") !== PREFERENCE_VERSION) {
   localStorage.setItem("theme", DEFAULT_THEME);
@@ -291,6 +292,7 @@ const state = {
   detailChunks: new Map(),
   detailLoading: new Set(),
   detailErrors: new Map(),
+  filterTimer: null,
 };
 
 function readStoredArray(key) {
@@ -332,6 +334,7 @@ const els = {
 async function init() {
   setupPreferences();
   state.papers = await loadPaperIndex();
+  preparePaperRuntimeCache(state.papers);
   try {
     const response = await fetch(`data/site_meta.json?ts=${Date.now()}`);
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
@@ -355,7 +358,11 @@ async function init() {
     el.addEventListener("input", () => {
       if (el === els.category) state.activeSubtopic = "";
       if (el === els.venue) clearVenueQuickFilters();
-      applyFilters();
+      if (el === els.search) {
+        scheduleApplyFilters();
+      } else {
+        applyFilters();
+      }
     });
     el.addEventListener("change", () => {
       if (el === els.category) state.activeSubtopic = "";
@@ -401,6 +408,49 @@ function showDataLoadError(message) {
   if (!els.empty) return;
   els.empty.hidden = false;
   els.empty.innerHTML = `<strong>Data loading problem.</strong><p>${escapeHtml(message)}</p>`;
+}
+
+function preparePaperRuntimeCache(papers) {
+  papers.forEach(preparePaperRuntime);
+}
+
+function preparePaperRuntime(paper) {
+  const visible = visibleTags(paper);
+  const subtopics = deriveSubtopics(paper);
+  const field = deriveField(paper);
+  const canonicalTags = [...(paper.tags || []), ...visible, ...subtopics]
+    .map(canonicalTopicLabel)
+    .filter((topic) => topic !== "Digital Twins" || paperHasCuratedDigitalTwinTag(paper));
+  const searchText = normalize(
+    [
+      field,
+      paper.title,
+      (paper.authors || []).join(" "),
+      authorSearchText(paper),
+      paper.venue,
+      paper.doi,
+      (paper.categories || []).join(" "),
+      visible.join(" "),
+      subtopics.join(" "),
+      paper.ai_summary_en,
+      paper.relevance_note_en,
+    ].join(" ")
+  );
+
+  paper._runtime = {
+    field,
+    visibleTags: visible,
+    subtopics,
+    canonicalTagSet: new Set(canonicalTags),
+    venue: normalizeVenue(paper.venue),
+    searchText,
+    summaryProvider: summaryProviderForFilter(paper),
+  };
+  return paper._runtime;
+}
+
+function runtimeForPaper(paper) {
+  return paper._runtime || preparePaperRuntime(paper);
 }
 
 function setupPreferences() {
@@ -483,10 +533,11 @@ function buildFilters() {
   const years = new Set();
 
   state.papers.forEach((paper) => {
-    fields.add(deriveField(paper));
-    visibleTags(paper).forEach((tag) => tags.add(tag));
-    deriveSubtopics(paper).forEach((subtopic) => tags.add(canonicalTopicLabel(subtopic)));
-    venues.add(normalizeVenue(paper.venue));
+    const runtime = runtimeForPaper(paper);
+    fields.add(runtime.field);
+    runtime.visibleTags.forEach((tag) => tags.add(tag));
+    runtime.subtopics.forEach((subtopic) => tags.add(canonicalTopicLabel(subtopic)));
+    venues.add(runtime.venue);
     if (paper.year) years.add(String(paper.year));
   });
 
@@ -516,7 +567,7 @@ function buildFilters() {
 }
 
 function buildSideNav() {
-  const fieldCounts = countBy(state.papers, deriveField);
+  const fieldCounts = countBy(state.papers, (paper) => runtimeForPaper(paper).field);
   const amlCount = amlVisibleRecommendations().length;
   const amlShortcut = `<button class="side-top-link" type="button" data-side-target="aml-recommendations">
     <span class="side-label">AML Recommendations</span>
@@ -525,7 +576,7 @@ function buildSideNav() {
   const fieldGroups = FIELD_ORDER.filter((field) => fieldCounts.get(field))
     .map((field) => {
       const subtopics = FIELD_SUBTOPICS[field] || [];
-      const fieldPapers = state.papers.filter((paper) => deriveField(paper) === field);
+      const fieldPapers = state.papers.filter((paper) => runtimeForPaper(paper).field === field);
       const bucketCounts = sidebarBucketCounts(fieldPapers, subtopics);
       const isCollapsed = state.collapsedFields.has(field);
       const subtopicButtons = [...subtopics, SIDEBAR_OTHER_TOPIC]
@@ -620,7 +671,7 @@ function syncSideNavActive() {
 function venueCountEntries() {
   const counts = new Map();
   state.papers.forEach((paper) => {
-    const venue = normalizeVenue(paper.venue);
+    const venue = runtimeForPaper(paper).venue;
     counts.set(venue, (counts.get(venue) || 0) + 1);
   });
   return [...counts.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "ko"));
@@ -763,6 +814,11 @@ function renderAmlRecommendationCard(item) {
       <p class="policy-mini">AML recommendation - ${escapeHtml(routes ? `routes: ${routes}` : "manual recommendation output")} - updated ${escapeHtml(formatAmlUpdatedAt(item.updated_at))}</p>
     </div>
   </article>`;
+}
+
+function scheduleApplyFilters() {
+  window.clearTimeout(state.filterTimer);
+  state.filterTimer = window.setTimeout(applyFilters, FILTER_DEBOUNCE_MS);
 }
 
 function formatAmlRelevanceNote(item) {
@@ -932,7 +988,7 @@ function updateStats() {
   const locale = "en-US";
 
   renderTotalStat(lastRunAt);
-  const venues = new Set(state.papers.map((paper) => normalizeVenue(paper.venue)).filter(Boolean));
+  const venues = new Set(state.papers.map((paper) => runtimeForPaper(paper).venue).filter(Boolean));
   if (els.venues) {
     els.venues.textContent = venues.size.toLocaleString(locale);
   }
@@ -1128,41 +1184,18 @@ function applyFilters() {
   syncSideNavActive();
 
   state.filtered = state.papers.filter((paper) => {
-    const fullPaper = paperWithDetails(paper);
-    const paperCategories = paper.categories || [];
-    const paperTags = paper.tags || [];
-    const paperVisibleTags = visibleTags(paper);
-    const paperSubtopics = deriveSubtopics(paper);
-    const paperCanonicalTags = [...paperTags, ...paperVisibleTags, ...paperSubtopics]
-      .map(canonicalTopicLabel)
-      .filter((topic) => topic !== "Digital Twins" || paperHasCuratedDigitalTwinTag(paper));
-    const paperVenue = normalizeVenue(paper.venue);
-    const paperField = deriveField(paper);
-    const paperAuthorDetails = authorSearchText(fullPaper);
-    const haystack = normalize(
-      [
-        paperField,
-        paper.title,
-        (paper.authors || []).join(" "),
-        paperAuthorDetails,
-        paper.venue,
-        paper.doi,
-        paperCategories.join(" "),
-        paperVisibleTags.join(" "),
-        paperSubtopics.join(" "),
-        fullPaper.ai_summary_en,
-        fullPaper.relevance_note_en,
-      ].join(" ")
-    );
+    const runtime = runtimeForPaper(paper);
+    const paperVenue = runtime.venue;
+    const paperField = runtime.field;
 
-    const matchesQuery = !query || haystack.includes(query);
+    const matchesQuery = !query || runtime.searchText.includes(query);
     const matchesCategory = !category || paperField === category;
-    const matchesTag = !tag || paperCanonicalTags.includes(canonicalTopicLabel(tag));
+    const matchesTag = !tag || runtime.canonicalTagSet.has(canonicalTopicLabel(tag));
     const matchesVenue = !venue || paperVenue === venue;
     const matchesTarget = !state.activeTargetVenue || matchesTargetVenue(paperVenue, state.activeTargetVenue);
     const matchesVenueGroup = !state.activeVenueGroup || isOtherVenuePaper(paper);
     const matchesSubtopic = !state.activeSubtopic || paperMatchesSidebarSubtopic(paper, paperField, state.activeSubtopic);
-    const matchesSummaryProvider = !summaryProvider || summaryProviderForFilter(paper) === summaryProvider;
+    const matchesSummaryProvider = !summaryProvider || runtime.summaryProvider === summaryProvider;
     const matchesYear = !year || String(paper.year || "") === year;
     return (
       matchesQuery &&
@@ -1239,7 +1272,7 @@ function render() {
 function groupByPrimaryCategory(papers) {
   const grouped = new Map();
   papers.forEach((paper) => {
-    const category = deriveField(paper);
+    const category = runtimeForPaper(paper).field;
     if (!grouped.has(category)) grouped.set(category, []);
     grouped.get(category).push(paper);
   });
