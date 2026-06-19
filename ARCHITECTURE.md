@@ -37,6 +37,7 @@ Important constraints:
   - `core_status`
   - `venue_scope`
   - `core_source`
+- Temporary manual core venue overrides currently include `ACS Applied Materials & Interfaces` and `Materials & Design`.
 
 Main files:
 

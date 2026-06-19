@@ -296,6 +296,8 @@ def _finalize_crossref_record(record: dict[str, Any], today: str) -> dict[str, A
     title = record.get("title", "Untitled")
     paper_id = doi or _title_hash(title)
     year = _safe_year(record.get("year"))
+    journal_quality = _journal_quality(record)
+    is_core = _is_manual_core_journal(journal_quality)
     finalized = {
         "id": paper_id,
         "title": title,
@@ -323,11 +325,11 @@ def _finalize_crossref_record(record: dict[str, Any], today: str) -> dict[str, A
         "openalex_work_id": "",
         "openalex_source_id": "",
         "venue_metrics": {},
-        "journal_quality": _journal_quality(record),
-        "is_core_venue": False,
-        "core_status": "non-core",
-        "venue_scope": "non-core",
-        "core_source": "schema_placeholder_crossref_rebuild",
+        "journal_quality": journal_quality,
+        "is_core_venue": is_core,
+        "core_status": "core" if is_core else "non-core",
+        "venue_scope": "core" if is_core else "non-core",
+        "core_source": "manual_core_venue" if is_core else "schema_placeholder_crossref_rebuild",
         "categories": record.get("categories", ["Multi-material AM"])[:2],
         "tags": record.get("tags", [])[:6],
         "relevance_score": int(record.get("relevance_score", 5)),
@@ -343,7 +345,16 @@ def _finalize_crossref_record(record: dict[str, Any], today: str) -> dict[str, A
         "last_updated": today,
     }
     finalized["journal_quality"] = _journal_quality(finalized)
+    is_core = _is_manual_core_journal(finalized["journal_quality"])
+    finalized["is_core_venue"] = is_core
+    finalized["core_status"] = "core" if is_core else "non-core"
+    finalized["venue_scope"] = "core" if is_core else "non-core"
+    finalized["core_source"] = "manual_core_venue" if is_core else "schema_placeholder_crossref_rebuild"
     return finalized
+
+
+def _is_manual_core_journal(journal_quality: dict[str, Any]) -> bool:
+    return journal_quality.get("basis") == "manual_core_venue"
 
 
 def _export_csv(path: Path, records: list[dict[str, Any]]) -> None:

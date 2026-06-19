@@ -71,6 +71,8 @@ const TARGET_VENUES = [
   "Science Advances",
   "Science Robotics",
   "Additive Manufacturing",
+  "ACS Applied Materials & Interfaces",
+  "Materials & Design",
 ];
 
 const UI_TEXT = {
@@ -2121,7 +2123,7 @@ function normalizeVenue(venue) {
 }
 
 function normalizeVenueKey(venue) {
-  return normalize(venue).replace(/&/g, "and");
+  return normalize(venue).replace(/&amp;/g, "and").replace(/&/g, "and");
 }
 
 function matchesTargetVenue(venue, target) {

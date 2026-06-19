@@ -24,6 +24,9 @@
 - Current dataset check on 2026-06-19:
   - `ACS Applied Materials & Interfaces`: 1 active paper, 0 archived papers.
   - `Materials & Design`: 11 active papers, 0 archived papers.
+- Temporary core venue override on 2026-06-19:
+  - `ACS Applied Materials & Interfaces`: 1 active record marked core.
+  - `Materials & Design`: 11 active records marked core.
 - Core/non-core compatibility fields remain present as schema placeholders: `is_core_venue`, `core_status`, `venue_scope`, and `core_source`.
 - `scripts/build_split_data.py` was rerun after the rebuild. GitHub Pages still loads `data/papers_index.json` first and detail chunks lazily.
 

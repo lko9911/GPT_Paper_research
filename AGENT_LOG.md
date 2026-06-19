@@ -1,5 +1,41 @@
 # AGENT_LOG
 
+## 2026-06-19 11:55
+
+### Change Summary
+- Temporarily promoted `ACS Applied Materials & Interfaces` and `Materials & Design` to core venues.
+
+### Edited Files
+- `assets/app.js`: added both venues to `TARGET_VENUES` and fixed venue-key normalization for Crossref HTML entities such as `&amp;`.
+- `scripts/update_papers.py`: added ACS AMI to the manual core manufacturing journal rule and normalized venue names with HTML entity decoding before journal-quality checks.
+- `scripts/full_rebuild_crossref_dataset.py`: changed full rebuild finalization so manual core journal quality sets `is_core_venue`, `core_status`, `venue_scope`, and `core_source` instead of leaving all records as placeholder non-core.
+- `data/papers.json`: updated existing ACS AMI and Materials & Design records to temporary core status.
+- `data/papers.csv`, `data/papers.xlsx`: regenerated active exports from the updated active dataset.
+- `data/papers_index.json`, `data/details/`: regenerated public split data.
+- `AGENT_LOG.md`: recorded this temporary core-venue promotion.
+
+### Implemented Features
+- The venue board treats ACS AMI and Materials & Design as core venues.
+- Existing records from those venues are marked with `is_core_venue=true`, `core_status=core`, and `venue_scope=core`.
+- Future Crossref-only rebuilds will mark manual core journals as core rather than placeholder non-core.
+
+### Verification
+- `ACS Applied Materials & Interfaces`: 1 active paper, 1 marked core.
+- `Materials & Design`: 11 active papers, 11 marked core.
+- `data/papers_index.json` contains the same core status for those 12 active records.
+- Ran `python -m py_compile scripts/fetch_crossref.py scripts/full_rebuild_crossref_dataset.py scripts/build_split_data.py scripts/update_papers.py`.
+
+### Design Decisions
+- Used a temporary manual core label rather than inventing JIF/Q ranking.
+- Kept OpenAlex limited to corresponding-author DOI cross-check; no paper collection source change.
+
+### Remaining Work
+- Later replace temporary core labels with a stable curated core venue policy or licensed JCR/Scopus data if needed.
+
+### Notes
+- No OpenAI API was used.
+- No PDFs or raw publisher abstracts were downloaded or stored.
+
 ## 2026-06-19 11:41
 
 ### Change Summary

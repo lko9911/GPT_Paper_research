@@ -8,6 +8,7 @@ import os
 import re
 import sys
 from datetime import UTC, date, datetime
+from html import unescape
 from pathlib import Path
 from typing import Any
 
@@ -727,7 +728,7 @@ def _strip_transient(record: dict[str, Any]) -> dict[str, Any]:
 def _journal_quality(record: dict[str, Any]) -> dict[str, Any]:
     """Assign a transparent journal-quality label without inventing JIF/Q values."""
 
-    venue = str(record.get("venue") or "").strip()
+    venue = unescape(str(record.get("venue") or "")).strip()
     venue_key = _normalize_title(venue)
     metrics = record.get("venue_metrics") or {}
     openalex_citedness = metrics.get("two_year_mean_citedness")
@@ -758,6 +759,7 @@ def _journal_quality(record: dict[str, Any]) -> dict[str, Any]:
         "robotics and computer integrated manufacturing",
         "international journal of advanced manufacturing technology",
         "computer aided design",
+        "acs applied materials and interfaces",
         "materials and design",
         "journal of intelligent manufacturing",
         "computers in industry",
