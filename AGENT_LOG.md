@@ -1,5 +1,31 @@
 # AGENT_LOG
 
+## 2026-06-19 16:46
+
+### Change Summary
+- Deleted local private JCR source/export artifacts to avoid retaining licensed JCR-derived material in the working copy.
+
+### Edited Files
+- `data/private/jcr_export_original_2025.csv`: deleted local ignored JCR export file.
+- `data/private/jcr_manual_review.csv`: deleted local ignored JCR review output.
+- `data/private/jcr_matched_debug.csv`: deleted local ignored JCR debug output.
+- `data/private/jcr_matched_debug.json`: deleted local ignored JCR debug output.
+- `AGENT_LOG.md`: recorded this local cleanup.
+
+### Implemented Features
+- No application feature change; this was a local data hygiene cleanup.
+
+### Design Decisions
+- Kept `data/private/journals_to_match_jcr.csv` and `.json` because they are generated from the project's own paper database, not from JCR.
+- Did not commit private files or JCR-derived outputs.
+
+### Remaining Work
+- If JCR matching is resumed later, use a private/manual workflow and confirm redistribution permissions before generating any public output.
+
+### Notes / Cautions
+- `data/private/` remains ignored by Git.
+- No external APIs were called.
+
 ## 2026-06-19 14:59
 
 ### Change Summary
