@@ -121,7 +121,11 @@ def _kst_display(value: str) -> str:
 def _load_json(path: Path, default):
     if not path.exists():
         return default
-    return json.loads(path.read_text(encoding="utf-8"))
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as exc:
+        print(f"Could not parse {path.relative_to(ROOT)} while writing OpenAI summary status: {exc}")
+        return default
 
 
 if __name__ == "__main__":

@@ -40,7 +40,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: openai-summary-refresh
+  group: paper-data-writes
   cancel-in-progress: false
 
 jobs:
@@ -88,6 +88,9 @@ jobs:
       - name: Install dependencies
         run: python -m pip install --upgrade pip && pip install -r requirements.txt
 
+      - name: Sync latest data before OpenAI spend
+        run: git pull --rebase --autostash origin main
+
       - name: Confirm explicit OpenAI request
         id: confirm_openai
         env:
@@ -118,6 +121,21 @@ jobs:
       - name: Build split data
         if: ${{ inputs.dry_run == 'false' }}
         run: python scripts/build_split_data.py
+
+      - name: Upload refreshed summary data artifact
+        if: ${{ inputs.dry_run == 'false' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: openai-refreshed-summary-data
+          path: |
+            data/papers.json
+            data/site_meta.json
+            data/papers_index.json
+            data/archive_papers_index.json
+            data/detail_manifest.json
+            data/archive_detail_manifest.json
+            data/details
+            data/archive_details
 
       - name: Commit refreshed summaries
         id: commit_summaries
