@@ -137,6 +137,7 @@ const UI_TEXT = {
     showing: "curated results",
     unknownYear: "Year unknown",
     relevanceLabel: "Relevance",
+    amlScoreLabel: "AML score",
     openaiApplied: "AI summary",
     openaiNotApplied: "Metadata summary",
     openaiAppliedTitle: "This summary was generated with the OpenAI API.",
@@ -800,7 +801,7 @@ function amlRecommendationToPaper(item) {
   const canonicalTopics = matchedTopics.map(canonicalTopicLabel).filter(isKnownCanonicalTag);
   const tags = canonicalTopics.length ? canonicalTopics : matchedTopics;
   const updatedAt = String((item && item.updated_at) || "").slice(0, 10);
-  const score = Math.max(1, Math.min(10, Math.round(Number((item && item.aml_score) || 0) * 10)));
+  const amlScore = Number((item && item.aml_score) || 0);
   const id = doi || `aml:${normalizeTitleKey(item && item.title)}`;
   return {
     id,
@@ -814,13 +815,15 @@ function amlRecommendationToPaper(item) {
     url: (item && item.url) || (doi ? `https://doi.org/${doi}` : ""),
     categories: tags,
     tags,
-    relevance_score: score,
+    aml_score: amlScore,
+    recommendation_level: (item && item.recommendation_level) || "",
+    discovery_routes: Array.isArray(item && item.discovery_routes) ? item.discovery_routes : [],
     summary_provider: "metadata",
     openai_summary_applied: false,
     ai_summary_en: "",
     relevance_note_en:
       (item && item.why_recommended) ||
-      `AML recommendation score: ${Math.round(Number((item && item.aml_score) || 0) * 100)}/100.`,
+      `AML recommendation score: ${Math.round(amlScore * 100)}/100.`,
     first_added: updatedAt,
     last_updated: updatedAt,
     is_aml_recommendation: true,
@@ -1120,6 +1123,9 @@ function applyFilters() {
   });
 
   state.filtered.sort((a, b) => {
+    if (state.activeAmlRecommendations) {
+      return Number(b.aml_score || 0) - Number(a.aml_score || 0) || Number(b.year || 0) - Number(a.year || 0);
+    }
     if (isDefaultNewPapersView()) {
       return dateValue(b.first_added) - dateValue(a.first_added) || dateValue(b.last_updated) - dateValue(a.last_updated);
     }
@@ -1275,6 +1281,7 @@ function renderPaperRow(paper) {
   const summaryProviderLabel = formatSummaryProviderLabel(displayPaper);
   const summaryHtml = renderSummaryBlock(displayPaper);
   const relevanceNote = formatRelevanceNote(displayPaper);
+  const scoreBadgeHtml = renderScoreBadge(displayPaper);
   const representativeBadges = representativeTags(displayPaper)
     .map((tag) => badge(displayLabel(tag), "tag"))
     .join("");
@@ -1290,7 +1297,7 @@ function renderPaperRow(paper) {
         <span class="publication-badge">${escapeHtml(publicationLabel)}</span>
         ${newBadgeHtml}
         <span class="${escapeAttribute(summaryProviderLabel.className)}" title="${escapeAttribute(summaryProviderLabel.title)}">${escapeHtml(summaryProviderLabel.text)}</span>
-        <span class="relevance-badge">${escapeHtml(t("relevanceLabel"))} ${escapeHtml(String(displayPaper.relevance_score || "-"))}/10</span>
+        ${scoreBadgeHtml}
       </div>
       <h4 class="paper-title">${escapeHtml(displayText(displayPaper.title || "Untitled"))}</h4>
       ${authorDetailsHtml}
@@ -1335,6 +1342,15 @@ function renderPaperRow(paper) {
   });
 
   return article;
+}
+
+function renderScoreBadge(paper) {
+  if (paper && paper.is_aml_recommendation) {
+    const score = Number(paper.aml_score || 0);
+    const label = Number.isFinite(score) && score > 0 ? `${Math.round(score * 100)}/100` : "-";
+    return `<span class="relevance-badge aml-score-badge">${escapeHtml(t("amlScoreLabel"))} ${escapeHtml(label)}</span>`;
+  }
+  return `<span class="relevance-badge">${escapeHtml(t("relevanceLabel"))} ${escapeHtml(String(paper.relevance_score || "-"))}/10</span>`;
 }
 
 function badge(text, className = "") {
@@ -1429,11 +1445,55 @@ function formatSummary(paper) {
 }
 
 function renderSummaryBlock(paper) {
+  if (paper && paper.is_aml_recommendation) {
+    return renderAmlSummaryBlock(paper);
+  }
   const sections = formatSummarySections(paper);
   if (!sections.length) {
     return `<p class="summary">${escapeHtml(formatSummary(paper))}</p>`;
   }
 
+  return `<dl class="summary summary-qa">
+    ${sections
+      .map(
+        (item, index) => `<div class="${index === 4 ? "is-takeaway" : ""}">
+          <dt>${escapeHtml(item.question)}</dt>
+          <dd>${escapeHtml(item.answer)}</dd>
+        </div>`
+      )
+      .join("")}
+  </dl>`;
+}
+
+function renderAmlSummaryBlock(paper) {
+  const tags = representativeTags(paper).map((tag) => displayLabel(tag));
+  const tagPhrase = formatEnglishList(tags) || "the AML profile";
+  const score = Number(paper.aml_score || 0);
+  const scoreText = Number.isFinite(score) && score > 0 ? `${Math.round(score * 100)}/100` : "not scored";
+  const routes = Array.isArray(paper.discovery_routes) ? paper.discovery_routes : [];
+  const routeText = routes.length ? routes.join(", ") : "AML recommendation pool";
+  const sections = [
+    {
+      question: "Topic",
+      answer: `${paper.title || "This paper"} is recommended for AML-related tracking through ${tagPhrase}.`,
+    },
+    {
+      question: "Why recommended",
+      answer: paper.relevance_note_en || "It is close to the current AML profile signals.",
+    },
+    {
+      question: "AML score",
+      answer: `${scoreText}${paper.recommendation_level ? ` - ${paper.recommendation_level}` : ""}.`,
+    },
+    {
+      question: "Discovery",
+      answer: `Found through ${routeText}.`,
+    },
+    {
+      question: "Takeaway",
+      answer: "Review this as an AML-profile recommendation, separate from the site's general relevance score.",
+    },
+  ];
   return `<dl class="summary summary-qa">
     ${sections
       .map(
