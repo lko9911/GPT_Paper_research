@@ -199,6 +199,7 @@ def public_paper(record: dict[str, Any], updated_at: str) -> dict[str, Any]:
         "aml_score": round(float(record.get("aml_score", 0.0)), 4),
         "matched_topics": record.get("matched_topics", [])[:8],
         "why_recommended": record.get("why_recommended", ""),
+        "reason_source": record.get("reason_source", "template"),
         "discovery_routes": record.get("discovery_routes", [])[:8],
         "related_seed_papers": record.get("related_seed_papers", [])[:3],
         "updated_at": updated_at,

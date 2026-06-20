@@ -48,9 +48,9 @@ AML recommendation is a separate manual-only workflow:
 1. Add the AML seed file at `data/seed/aml_seed_papers_core_enriched.json`.
 2. Go to `Actions > AML Recommendation Manual > Run workflow`.
 3. Choose `score_existing`, `collect_and_score`, or `full_refresh`.
-4. Keep `use_ai_judge=false` and `use_ai_reason=false` unless you explicitly want extra OpenAI text-model cost.
+4. Keep `use_ai_judge=false`. The default `use_ai_reason=true` writes the public recommendation reason with OpenAI; set it to `false` only when you want template-only, no text-model cost.
 
-The AML pipeline uses OpenAI embeddings when `OPENAI_API_KEY` is available, but it does not use OpenAI as the paper search engine. In `collect_and_score` and `full_refresh`, external AML candidate discovery uses Crossref keyword search only, with no venue-specific filter. OpenAI relevance judging and reason rewriting are optional and disabled by default. Private embeddings, candidate pools, debug logs, raw data, and PDFs are ignored by Git. Public-safe recommendations are written to `public/data/aml_recommended_papers.json`.
+The AML pipeline uses OpenAI embeddings when `OPENAI_API_KEY` is available, but it does not use OpenAI as the paper search engine. In `collect_and_score` and `full_refresh`, external AML candidate discovery uses Crossref keyword search only, with no venue-specific filter. OpenAI relevance judging is optional and disabled by default. OpenAI recommendation-reason writing is enabled by default in the manual workflow and uses structured metadata, AML score, matched topics, and seed similarity rather than internal route names. Private embeddings, candidate pools, debug logs, raw data, and PDFs are ignored by Git. Public-safe recommendations are written to `public/data/aml_recommended_papers.json`.
 
 ## Split Data for Faster GitHub Pages Loading
 

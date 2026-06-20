@@ -25,9 +25,9 @@ on:
           - "true"
           - "false"
       use_ai_reason:
-        description: "Use OpenAI to rewrite recommendation reasons"
+        description: "Use OpenAI to write public AML recommendation reasons from structured metadata"
         required: true
-        default: "false"
+        default: "true"
         type: choice
         options:
           - "true"

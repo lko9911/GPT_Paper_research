@@ -310,8 +310,9 @@ OpenAI use is constrained:
 - OpenAI is not used as the paper search engine.
 - Candidate collection uses the existing local paper pool and, in collection modes, OpenAlex/Crossref.
 - OpenAI relevance judging is controlled by `use_ai_judge` and defaults to `false`.
-- OpenAI reason rewriting is controlled by `use_ai_reason` and defaults to `false`.
-- Template-based recommendation reasons are used by default.
+- OpenAI reason writing is controlled by `use_ai_reason` and defaults to `true` in the manual AML workflow.
+- When `use_ai_reason=true`, OpenAI writes the public recommendation reason from structured metadata, AML score, matched topics, discovery route class, and nearest seed similarity. It should not expose internal route names or deterministic-template wording.
+- Template-based recommendation reasons are used only when `use_ai_reason=false` or `OPENAI_API_KEY` is unavailable.
 
 # Frontend Density Policy
 

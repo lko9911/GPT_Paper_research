@@ -48,7 +48,10 @@ def score_recommendations(
         if use_ai_judge and 0.35 < score["aml_score"] < 0.80:
             score = _apply_ai_judge(score)
         if use_ai_reason and score["recommendation_level"] in {"High", "Possible"}:
-            score["why_recommended"] = _ai_reason(score) or score["why_recommended"]
+            ai_reason = _ai_reason(score)
+            if ai_reason:
+                score["why_recommended"] = ai_reason
+                score["reason_source"] = "openai"
         scored.append(score)
 
     scored.sort(key=lambda item: (item["aml_score"], item.get("year") or 0), reverse=True)
@@ -162,6 +165,7 @@ def _score_one(
             "matched_topics": matched_topics[:8],
             "related_seed_papers": [top_seed] if top_seed else [],
             "why_recommended": _template_reason(matched_topics, top_seed, candidate.get("discovery_routes", []), aml_score),
+            "reason_source": "template",
         }
     )
     return result
@@ -273,6 +277,7 @@ def _apply_ai_judge(score: dict[str, Any]) -> dict[str, Any]:
             score["matched_topics"] = payload["matched_topics"][:8]
         if payload.get("why_recommended"):
             score["why_recommended"] = str(payload["why_recommended"])[:500]
+            score["reason_source"] = "openai_judge"
         if payload.get("exclude_reason"):
             score["exclude_reason"] = str(payload["exclude_reason"])[:300]
     except Exception as exc:
@@ -287,18 +292,47 @@ def _ai_reason(score: dict[str, Any]) -> str:
         from openai import OpenAI
 
         client = OpenAI()
+        top_seed = (score.get("related_seed_papers") or [{}])[0] or {}
+        prompt = {
+            "title": score.get("title", ""),
+            "journal": score.get("journal") or score.get("venue", ""),
+            "year": score.get("year"),
+            "authors": (score.get("authors") or [])[:6],
+            "matched_topics": score.get("matched_topics", [])[:8],
+            "aml_score_0_to_1": score.get("aml_score"),
+            "recommendation_level": score.get("recommendation_level", ""),
+            "discovery_routes": _public_route_labels(score.get("discovery_routes", [])[:5]),
+            "nearest_seed_title": top_seed.get("title", ""),
+            "nearest_seed_similarity": top_seed.get("similarity"),
+        }
         response = client.chat.completions.create(
             model=os.getenv("OPENAI_MODEL", "gpt-4o-mini"),
             temperature=0.2,
             messages=[
-                {"role": "system", "content": "Rewrite the recommendation reason in one concise public-safe English sentence."},
-                {"role": "user", "content": score.get("why_recommended", "")},
+                {
+                    "role": "system",
+                    "content": (
+                        "Write one concise public-safe English sentence explaining why this paper is recommended "
+                        "for an AML research profile. Use the supplied metadata only. Do not mention internal route "
+                        "names such as existing_keyword_pool, deterministic scoring, JSON fields, or hidden data. "
+                        "Do not reproduce abstracts or claim results not present in the metadata."
+                    ),
+                },
+                {"role": "user", "content": str(prompt)},
             ],
         )
         return (response.choices[0].message.content or "").strip()[:500]
     except Exception as exc:
         print(f"AI reason skipped for '{score.get('title', '')}': {exc}")
         return ""
+
+
+def _public_route_labels(routes: list[str]) -> list[str]:
+    labels = {
+        "existing_keyword_pool": "existing curated paper pool",
+        "crossref_keyword_search": "Crossref keyword search",
+    }
+    return [labels.get(route, "candidate screening") for route in routes]
 
 
 def _level_counts(items: list[dict[str, Any]]) -> dict[str, int]:
