@@ -532,8 +532,8 @@ function applyStaticLanguage() {
   setText("#sort-select option[value='title']", t("title"));
   setText("#reset-filters", t("resetFilters"));
   setText(".venue-section-head h2", t("venuesTitle"));
-  setText(".results-head .section-kicker", t("papersByField"));
-  setText(".results-head h2", t("curatedPapers"));
+  setText(".paper-results-head .section-kicker", t("papersByField"));
+  setText(".paper-results-head h2", t("curatedPapers"));
   setText("#empty-state strong", t("emptyTitle"));
   setText("#empty-state p", t("emptyText"));
   setText("#footer-policy", t("footer"));
