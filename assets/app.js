@@ -596,7 +596,7 @@ function buildFilters() {
 
 function buildSideNav() {
   const fieldCounts = countBy(state.papers, (paper) => runtimeForPaper(paper).field);
-  const amlCount = state.papers.filter((paper) => isAmlRecommendedPaper(paper)).length;
+  const amlCount = amlVisibleRecommendations().length;
   const amlShortcut = `<button class="side-top-link" type="button" data-side-target="aml-recommendations">
     <span class="side-label">AML Recommendations</span>
     <span class="side-count">${amlCount.toLocaleString("en-US")}</span>
@@ -787,6 +787,43 @@ function amlVisibleRecommendations() {
     .slice(0, 24);
 }
 
+function amlRecommendedPapersForList() {
+  return amlVisibleRecommendations().map(amlRecommendationToPaper);
+}
+
+function amlRecommendationToPaper(item) {
+  const doi = normalizeDoiKey(item && item.doi);
+  const matchedTopics = Array.isArray(item && item.matched_topics) ? item.matched_topics : [];
+  const canonicalTopics = matchedTopics.map(canonicalTopicLabel).filter(isKnownCanonicalTag);
+  const tags = canonicalTopics.length ? canonicalTopics : matchedTopics;
+  const updatedAt = String((item && item.updated_at) || "").slice(0, 10);
+  const score = Math.max(1, Math.min(10, Math.round(Number((item && item.aml_score) || 0) * 10)));
+  const id = doi || `aml:${normalizeTitleKey(item && item.title)}`;
+  return {
+    id,
+    title: (item && item.title) || "Untitled",
+    authors: Array.isArray(item && item.authors) ? item.authors : [],
+    author_details: Array.isArray(item && item.author_details) ? item.author_details : [],
+    corresponding_authors: Array.isArray(item && item.corresponding_authors) ? item.corresponding_authors : [],
+    year: item && item.year,
+    venue: (item && (item.journal || item.venue)) || "",
+    doi,
+    url: (item && item.url) || (doi ? `https://doi.org/${doi}` : ""),
+    categories: tags,
+    tags,
+    relevance_score: score,
+    summary_provider: "metadata",
+    openai_summary_applied: false,
+    ai_summary_en: "",
+    relevance_note_en:
+      (item && item.why_recommended) ||
+      `AML recommendation score: ${Math.round(Number((item && item.aml_score) || 0) * 100)}/100.`,
+    first_added: updatedAt,
+    last_updated: updatedAt,
+    is_aml_recommendation: true,
+  };
+}
+
 function scheduleApplyFilters() {
   window.clearTimeout(state.filterTimer);
   state.filterTimer = window.setTimeout(applyFilters, FILTER_DEBOUNCE_MS);
@@ -892,16 +929,6 @@ function renderUpdatedStat(lastRunAt) {
     return;
   }
   els.updated.innerHTML = `${escapeHtml(lastRun.date)}<small>${escapeHtml(lastRun.time)} KST</small>`;
-}
-
-function isAmlRecommendedPaper(paper) {
-  const paperDoi = normalizeDoiKey(paper && (paper.doi || paper.id));
-  const paperTitle = normalizeTitleKey(paper && paper.title);
-  return amlVisibleRecommendations().some((item) => {
-    const itemDoi = normalizeDoiKey(item && item.doi);
-    if (paperDoi && itemDoi && paperDoi === itemDoi) return true;
-    return paperTitle && normalizeTitleKey(item && item.title) === paperTitle;
-  });
 }
 
 async function loadUpdateStatus() {
@@ -1058,7 +1085,9 @@ function applyFilters() {
   state.renderLimit = INITIAL_RENDER_LIMIT;
   syncSideNavActive();
 
-  state.filtered = state.papers.filter((paper) => {
+  const sourcePapers = state.activeAmlRecommendations ? amlRecommendedPapersForList() : state.papers;
+
+  state.filtered = sourcePapers.filter((paper) => {
     const runtime = runtimeForPaper(paper);
     const paperVenue = runtime.venue;
     const paperField = runtime.field;
@@ -1070,7 +1099,6 @@ function applyFilters() {
     const matchesTarget = !state.activeTargetVenue || matchesTargetVenue(paperVenue, state.activeTargetVenue);
     const matchesVenueGroup = !state.activeVenueGroup || isOtherVenuePaper(paper);
     const matchesSubtopic = !state.activeSubtopic || paperMatchesSidebarSubtopic(paper, paperField, state.activeSubtopic);
-    const matchesAmlRecommendations = !state.activeAmlRecommendations || isAmlRecommendedPaper(paper);
     const matchesSummaryProvider = !summaryProvider || runtime.summaryProvider === summaryProvider;
     const matchesNewness = !newness || isWeeklyNewPaper(paper);
     const matchesYear = !year || String(paper.year || "") === year;
@@ -1082,7 +1110,6 @@ function applyFilters() {
       matchesTarget &&
       matchesVenueGroup &&
       matchesSubtopic &&
-      matchesAmlRecommendations &&
       matchesSummaryProvider &&
       matchesNewness &&
       matchesYear
@@ -1170,7 +1197,7 @@ function render() {
 
   const fragment = document.createDocumentFragment();
   if (defaultNewView) {
-    visiblePapers.forEach((paper) => fragment.append(renderPaperRow(paper)));
+    fragment.append(renderFlatPaperGroup(visiblePapers));
     els.list.append(fragment);
     return;
   }
@@ -1208,6 +1235,13 @@ function renderGroup(category, papers) {
       <span>${papers.length.toLocaleString("en-US")} ${escapeHtml(t("papers"))}</span>
     </div>
   `;
+  papers.forEach((paper) => section.append(renderPaperRow(paper)));
+  return section;
+}
+
+function renderFlatPaperGroup(papers) {
+  const section = document.createElement("section");
+  section.className = "paper-group paper-group-flat";
   papers.forEach((paper) => section.append(renderPaperRow(paper)));
   return section;
 }
