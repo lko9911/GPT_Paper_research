@@ -60,6 +60,7 @@ def main() -> None:
     print("Existing dataset ignored for new collection")
     print("Priority venue search disabled")
     print("OpenAlex general search disabled")
+    existing_lineage = _existing_date_lineage()
     backup_dir = _archive_existing_outputs(run_started_at)
     print(f"Existing paper dataset archived: {backup_dir.relative_to(ROOT)}")
 
@@ -86,10 +87,11 @@ def main() -> None:
     for record in deduped:
         summarized = summarize_record(record, allow_openai=False)
         completed = _complete_corresponding_author_from_openalex(summarized, openalex_stats)
-        papers.append(_finalize_crossref_record(completed, today))
+        papers.append(_finalize_crossref_record(completed, today, existing_lineage))
 
     cleaned = [_strip_transient(paper) for paper in papers]
     curated, archive, split_stats = _split_curated_archive(cleaned)
+    weekly_added = _count_added_within_days(curated, run_started_at, 7)
     _write_json(PAPERS_PATH, curated)
     _write_json(ARCHIVE_PAPERS_PATH, archive)
     _export_csv(PAPERS_CSV_PATH, curated)
@@ -108,6 +110,8 @@ def main() -> None:
             "duplicate_archived_count": split_stats["duplicate_title"],
             "papers_added": len(curated),
             "raw_records_added": len(cleaned),
+            "weekly_added_count": weekly_added,
+            "weekly_window_days": 7,
             "since_year": since_year,
             "curated_min_score": CURATED_MIN_SCORE,
             "sources": ["Crossref"],
@@ -217,6 +221,16 @@ def _dedupe_key(record: dict[str, Any]) -> str:
     return f"title-year-author:{title}|{year}|{first_author}"
 
 
+def _existing_date_lineage() -> dict[str, str]:
+    lineage: dict[str, str] = {}
+    for record in _load_json(PAPERS_PATH, []) + _load_json(ARCHIVE_PAPERS_PATH, []):
+        key = _dedupe_key(record)
+        first_added = str(record.get("first_added") or "").strip()
+        if key and first_added:
+            lineage[key] = first_added
+    return lineage
+
+
 def _better_record(left: dict[str, Any], right: dict[str, Any]) -> dict[str, Any]:
     def score(record: dict[str, Any]) -> tuple[int, int, int, int, int]:
         return (
@@ -291,10 +305,11 @@ def _complete_corresponding_author_from_openalex(record: dict[str, Any], stats: 
     return record
 
 
-def _finalize_crossref_record(record: dict[str, Any], today: str) -> dict[str, Any]:
+def _finalize_crossref_record(record: dict[str, Any], today: str, existing_lineage: dict[str, str]) -> dict[str, Any]:
     doi = _clean_doi(record.get("doi"))
     title = record.get("title", "Untitled")
     paper_id = doi or _title_hash(title)
+    first_added = existing_lineage.get(_dedupe_key(record), today)
     year = _safe_year(record.get("year"))
     journal_quality = _journal_quality(record)
     is_core = _is_manual_core_journal(journal_quality)
@@ -341,7 +356,7 @@ def _finalize_crossref_record(record: dict[str, Any], today: str) -> dict[str, A
         "abstract_used_for_summary": bool(record.get("_abstract")),
         "raw_abstract_displayed": False,
         "pdf_stored": False,
-        "first_added": today,
+        "first_added": first_added,
         "last_updated": today,
     }
     finalized["journal_quality"] = _journal_quality(finalized)
@@ -351,6 +366,24 @@ def _finalize_crossref_record(record: dict[str, Any], today: str) -> dict[str, A
     finalized["venue_scope"] = "core" if is_core else "non-core"
     finalized["core_source"] = "manual_core_venue" if is_core else "schema_placeholder_crossref_rebuild"
     return finalized
+
+
+def _count_added_within_days(records: list[dict[str, Any]], run_started_at: str, days: int) -> int:
+    try:
+        reference = datetime.fromisoformat(run_started_at.replace("Z", "+00:00")).date()
+    except ValueError:
+        reference = date.today()
+    start = reference.toordinal() - max(0, days - 1)
+    end = reference.toordinal()
+    count = 0
+    for record in records:
+        try:
+            added = date.fromisoformat(str(record.get("first_added") or "")[:10]).toordinal()
+        except ValueError:
+            continue
+        if start <= added <= end:
+            count += 1
+    return count
 
 
 def _is_manual_core_journal(journal_quality: dict[str, Any]) -> bool:

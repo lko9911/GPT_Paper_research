@@ -47,6 +47,8 @@ def main() -> None:
         "collection_mode": site_meta.get("collection_mode", ""),
         "papers_added_last_success": displayed_added,
         "papers_added_raw_last_success": raw_added,
+        "weekly_added_count": site_meta.get("weekly_added_count", 0),
+        "weekly_window_days": site_meta.get("weekly_window_days", 7),
         "openai_scheduled_updates_enabled": False,
     }
 
@@ -90,6 +92,7 @@ This file is written by GitHub Actions so the latest paper-update state can be c
 - Curated papers: `{payload.get('curated_count')}`
 - Raw candidates: `{payload.get('raw_candidate_count')}`
 - Archived hidden: `{payload.get('archived_count')}`
+- Papers added in last `{payload.get('weekly_window_days')}` days: `{payload.get('weekly_added_count')}`
 - Papers added in last successful run: `{payload.get('papers_added_last_success')}`{added_note}
 
 ## Schedule

@@ -90,12 +90,11 @@ const UI_TEXT = {
     sideTitle: "Fields and Subtopics",
     totalPapers: "Papers",
     latestRunAdded: "this update",
-    latestRunRebuilt: "full rebuild",
     noNewPapers: "No new papers",
-    weeklyAddedShort: "weekly new",
+    weeklyAddedShort: "added in 7 days",
     venueCount: "Venues",
     yearRange: "Years",
-    currentUpdate: "Now / Updated",
+    currentUpdate: "Updated",
     subtopicCount: "Collected Candidates",
     latestUpdate: "Last Collection",
     weekAdded: "Hidden Candidates",
@@ -1033,16 +1032,13 @@ function renderOpsNote(rawCount, archivedCount, lastRunAt) {
 
 function renderUpdatedStat(lastRunAt) {
   if (!els.updated) return;
-  const now = formatKstTime(new Date());
   const lastRun = formatRunTime(lastRunAt);
-  const attempt = updateAttemptDisplay();
   els.updated.classList.add("stat-datetime");
   if (!lastRun) {
-    els.updated.innerHTML = `${escapeHtml(now.date)}<small>${escapeHtml(now.time)} KST${attempt ? ` - ${escapeHtml(attempt)}` : ""}</small>`;
+    els.updated.textContent = "-";
     return;
   }
-  const updatedLabel = "updated";
-  els.updated.innerHTML = `${escapeHtml(now.date)}<small>${escapeHtml(now.time)} KST - ${escapeHtml(updatedLabel)} ${escapeHtml(lastRun.date)} ${escapeHtml(lastRun.time)} KST${attempt ? ` - ${escapeHtml(attempt)}` : ""}</small>`;
+  els.updated.innerHTML = `${escapeHtml(lastRun.date)}<small>${escapeHtml(lastRun.time)} KST</small>`;
 }
 
 async function loadUpdateStatus() {
@@ -1118,44 +1114,26 @@ function parseDate(value) {
 function renderTotalStat(lastRunAt) {
   if (!els.total) return;
   const locale = "en-US";
-  const total = state.papers.length;
-  const rebuildRun = isFullRebuildRun();
-  const weeklyCount = rebuildRun ? 0 : countRecentlyAddedPapers(state.papers, lastRunAt, 7);
-  const latestAdded = latestAddedForDisplay(total);
-  const deltaText = formatPaperDeltaText(weeklyCount, latestAdded, locale);
+  const weeklyCount = weeklyAddedForDisplay(lastRunAt);
+  const deltaText = formatPaperDeltaText(weeklyCount, locale);
   els.total.classList.add("stat-with-note");
-  els.total.innerHTML = `${escapeHtml(total.toLocaleString(locale))}${deltaText ? `<small>${escapeHtml(deltaText)}</small>` : ""}`;
+  els.total.innerHTML = `${escapeHtml(state.papers.length.toLocaleString(locale))}${deltaText ? `<small>${escapeHtml(deltaText)}</small>` : ""}`;
 }
 
-function formatPaperDeltaText(weeklyCount, latestAdded, locale) {
-  const parts = [];
-  if (latestAdded.isRebuild) {
-    parts.push(t("latestRunRebuilt"));
-  } else if (latestAdded.count > 0) {
-    const countText = latestAdded.count.toLocaleString(locale);
-    parts.push(`+${countText} ${t("latestRunAdded")}`);
-  }
+function formatPaperDeltaText(weeklyCount, locale) {
   if (weeklyCount > 0) {
     const countText = weeklyCount.toLocaleString(locale);
-    parts.push(`+${countText} ${t("weeklyAddedShort")}`);
+    return `+${countText} ${t("weeklyAddedShort")}`;
   }
-  return parts.join(" - ") || t("noNewPapers");
+  return t("noNewPapers");
 }
 
-function latestAddedForDisplay(total) {
-  const rawAdded = Number(state.siteMeta && state.siteMeta.papers_added);
-  if (!Number.isFinite(rawAdded) || rawAdded <= 0) {
-    return { count: 0, isRebuild: false };
+function weeklyAddedForDisplay(lastRunAt) {
+  const metaWeekly = Number(state.siteMeta && state.siteMeta.weekly_added_count);
+  if (Number.isFinite(metaWeekly) && metaWeekly >= 0) {
+    return metaWeekly;
   }
-  if (isFullRebuildRun() || (total > 0 && rawAdded >= total)) {
-    return { count: 0, isRebuild: true };
-  }
-  return { count: rawAdded, isRebuild: false };
-}
-
-function isFullRebuildRun() {
-  const mode = String((state.siteMeta && state.siteMeta.collection_mode) || "").toLowerCase();
-  return mode.includes("full_rebuild");
+  return countRecentlyAddedPapers(state.papers, lastRunAt, 7);
 }
 
 function countRecentlyAddedPapers(papers, lastRunAt, days) {
