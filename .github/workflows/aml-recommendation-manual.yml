@@ -72,7 +72,6 @@ jobs:
           AML_USE_AI_JUDGE: ${{ inputs.use_ai_judge }}
           AML_USE_AI_REASON: ${{ inputs.use_ai_reason }}
           AML_USE_AI_PROFILE: "false"
-          OPENALEX_MAX_PAGES: "1"
           CROSSREF_MAX_PAGES: "1"
           API_SLEEP_SECONDS: "1.0"
         run: |

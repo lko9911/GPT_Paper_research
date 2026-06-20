@@ -300,7 +300,7 @@ GitHub Pages에서 동작 가능한 정적 논문 큐레이션 사이트와 GitH
 ## Completed
 - Added deterministic AML profile generation from `data/seed/aml_seed_papers_core_enriched.json`.
 - Added OpenAI embedding cache support under ignored `data/private/`.
-- Added candidate collection from the existing paper pool plus optional OpenAlex/Crossref collection modes.
+- Added candidate collection from the existing paper pool plus optional Crossref-only keyword collection modes for AML recommendation candidates.
 - Added deterministic scoring, recommendation levels, and template-based public reasons.
 - Added optional OpenAI relevance judge and optional OpenAI reason rewriting, both disabled by default.
 - Updated `.gitignore` to keep private embeddings, raw data, logs, PDFs, and `.env` files out of Git.

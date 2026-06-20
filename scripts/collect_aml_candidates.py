@@ -1,4 +1,9 @@
-"""Collect AML recommendation candidates without using OpenAI as a search engine."""
+"""Collect AML recommendation candidates without using OpenAI as a search engine.
+
+External AML candidate discovery is intentionally Crossref-only and uses plain
+keyword queries, without venue-specific filtering. OpenAI is used later only for
+embedding-based scoring when the private cache needs new vectors.
+"""
 
 from __future__ import annotations
 
@@ -6,7 +11,6 @@ import os
 from typing import Any
 
 from aml_common import (
-    ARCHIVE_PAPERS_PATH,
     CANDIDATE_POOL_PATH,
     PAPERS_PATH,
     candidate_key,
@@ -16,7 +20,6 @@ from aml_common import (
     write_json,
 )
 from fetch_crossref import fetch_crossref
-from fetch_openalex import fetch_openalex
 
 DEFAULT_QUERIES = [
     "multi-material additive manufacturing",
@@ -60,17 +63,14 @@ def _add_recent_api_candidates(candidates: dict[str, dict[str, Any]], max_candid
     since_year = int(os.getenv("AML_SINCE_YEAR", "2024"))
     per_query = max(5, min(30, max_candidates // max(1, len(DEFAULT_QUERIES))))
     for query in DEFAULT_QUERIES:
-        for fetcher, source_name in [(fetch_openalex, "OpenAlex"), (fetch_crossref, "Crossref")]:
-            try:
-                kwargs = {"per_page": per_query, "from_year": since_year} if source_name == "OpenAlex" else {"rows": per_query, "from_year": since_year}
-                for paper in fetcher(query, **kwargs):
-                    route = "recent_openalex_topic_or_venue" if source_name == "OpenAlex" else "topic_scan_only"
-                    record = _normalize_candidate(paper, route)
-                    record["source_api"] = source_name
-                    if _has_aml_signal(record):
-                        _merge_candidate(candidates, record)
-            except Exception as exc:
-                print(f"Candidate fetch skipped for {source_name} query '{query}': {exc}")
+        try:
+            for paper in fetch_crossref(query, rows=per_query, from_year=since_year):
+                record = _normalize_candidate(paper, "crossref_keyword_search")
+                record["source_api"] = "Crossref"
+                if _has_aml_signal(record):
+                    _merge_candidate(candidates, record)
+        except Exception as exc:
+            print(f"Candidate fetch skipped for Crossref query '{query}': {exc}")
 
 
 def _normalize_candidate(paper: dict[str, Any], route: str) -> dict[str, Any]:
