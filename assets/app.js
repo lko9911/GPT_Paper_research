@@ -104,11 +104,15 @@ const UI_TEXT = {
     tagSubtopic: "Tag/Subtopic",
     venue: "Venue",
     summaryProvider: "Summary type",
+    newness: "Added",
+    allNewness: "All",
+    newThisWeek: "New this week",
     year: "Year",
     sort: "Sort",
     all: "All",
     allSummaries: "All",
     newest: "Newest",
+    recentlyAdded: "Recently added",
     relevance: "Relevance",
     title: "Title",
     resetFilters: "Reset",
@@ -137,6 +141,7 @@ const UI_TEXT = {
     authorsLabel: "Authors",
     correspondingAuthorsLabel: "Corresponding authors",
     correspondingAuthorBadge: "Corresponding",
+    newPaperBadge: "New",
     openPaper: "Open Paper",
     doiButton: "DOI",
     copyCitation: "Copy Cite",
@@ -314,6 +319,7 @@ const els = {
   tag: document.querySelector("#tag-filter"),
   venue: document.querySelector("#venue-filter"),
   summaryProvider: document.querySelector("#summary-provider-filter"),
+  newness: document.querySelector("#newness-filter"),
   year: document.querySelector("#year-filter"),
   sort: document.querySelector("#sort-select"),
   resetFilters: document.querySelector("#reset-filters"),
@@ -354,7 +360,7 @@ async function init() {
   updateStats();
   applyFilters();
 
-  [els.search, els.category, els.tag, els.venue, els.summaryProvider, els.year, els.sort].forEach((el) => {
+  [els.search, els.category, els.tag, els.venue, els.summaryProvider, els.newness, els.year, els.sort].forEach((el) => {
     if (!el) return;
     el.addEventListener("input", () => {
       if (el === els.category) state.activeSubtopic = "";
@@ -487,20 +493,24 @@ function applyStaticLanguage() {
   setText(".stats article:nth-child(3) strong", t("yearRange"));
   setText(".stats article:nth-child(4) strong", t("currentUpdate"));
   setText(".search-label-text", t("search"));
-  setText(".controls label:nth-child(2) span", t("field"));
-  setText(".controls label:nth-child(3) span", t("tagSubtopic"));
-  setText(".controls label:nth-child(4) span", t("venue"));
-  setText(".controls label:nth-child(5) span", t("summaryProvider"));
-  setText(".controls label:nth-child(6) span", t("year"));
-  setText(".controls label:nth-child(7) span", t("sort"));
+  setText(".field-filter > span", t("field"));
+  setText(".tag-filter > span", t("tagSubtopic"));
+  setText(".venue-filter > span", t("venue"));
+  setText(".summary-filter > span", t("summaryProvider"));
+  setText(".new-filter > span", t("newness"));
+  setText(".year-filter > span", t("year"));
+  setText(".sort-filter > span", t("sort"));
   setText("#category-filter option[value='']", t("all"));
   setText("#tag-filter option[value='']", t("all"));
   setText("#venue-filter option[value='']", t("all"));
   setText("#summary-provider-filter option[value='']", t("allSummaries"));
   setText("#summary-provider-filter option[value='openai']", t("openaiApplied"));
   setText("#summary-provider-filter option[value='metadata']", t("openaiNotApplied"));
+  setText("#newness-filter option[value='']", t("allNewness"));
+  setText("#newness-filter option[value='week']", t("newThisWeek"));
   setText("#year-filter option[value='']", t("all"));
   setText("#sort-select option[value='newest']", t("newest"));
+  setText("#sort-select option[value='recently-added']", t("recentlyAdded"));
   setText("#sort-select option[value='relevance']", t("relevance"));
   setText("#sort-select option[value='title']", t("title"));
   setText("#reset-filters", t("resetFilters"));
@@ -1136,6 +1146,18 @@ function weeklyAddedForDisplay(lastRunAt) {
   return countRecentlyAddedPapers(state.papers, lastRunAt, 7);
 }
 
+function isWeeklyNewPaper(paper) {
+  if (!paper) return false;
+  if (paper.is_weekly_new === true || paper.weekly_new === true) return true;
+  if ("is_weekly_new" in paper || "weekly_new" in paper) return false;
+  const addedDate = parseDateOnly(paper.first_added);
+  const referenceDate = referenceDateOnly(state.siteMeta && state.siteMeta.last_run_at_utc);
+  if (!addedDate || !referenceDate) return false;
+  const startDate = new Date(referenceDate);
+  startDate.setUTCDate(startDate.getUTCDate() - 6);
+  return addedDate >= startDate && addedDate <= referenceDate;
+}
+
 function countRecentlyAddedPapers(papers, lastRunAt, days) {
   const referenceDate = referenceDateOnly(lastRunAt);
   if (!referenceDate) return 0;
@@ -1175,6 +1197,7 @@ function applyFilters() {
   const tag = els.tag.value;
   const venue = els.venue.value;
   const summaryProvider = els.summaryProvider ? els.summaryProvider.value : "";
+  const newness = els.newness ? els.newness.value : "";
   const year = els.year.value;
   const sort = els.sort.value;
 
@@ -1195,6 +1218,7 @@ function applyFilters() {
     const matchesVenueGroup = !state.activeVenueGroup || isOtherVenuePaper(paper);
     const matchesSubtopic = !state.activeSubtopic || paperMatchesSidebarSubtopic(paper, paperField, state.activeSubtopic);
     const matchesSummaryProvider = !summaryProvider || runtime.summaryProvider === summaryProvider;
+    const matchesNewness = !newness || isWeeklyNewPaper(paper);
     const matchesYear = !year || String(paper.year || "") === year;
     return (
       matchesQuery &&
@@ -1205,6 +1229,7 @@ function applyFilters() {
       matchesVenueGroup &&
       matchesSubtopic &&
       matchesSummaryProvider &&
+      matchesNewness &&
       matchesYear
     );
   });
@@ -1212,6 +1237,9 @@ function applyFilters() {
   state.filtered.sort((a, b) => {
     if (sort === "newest") {
       return Number(b.year || 0) - Number(a.year || 0) || dateValue(b.last_updated) - dateValue(a.last_updated);
+    }
+    if (sort === "recently-added") {
+      return dateValue(b.first_added) - dateValue(a.first_added) || dateValue(b.last_updated) - dateValue(a.last_updated);
     }
     if (sort === "title") {
       return (a.title || "").localeCompare(b.title || "", "en");
@@ -1228,6 +1256,7 @@ function resetFilters() {
   if (els.tag) els.tag.value = "";
   if (els.venue) els.venue.value = "";
   if (els.summaryProvider) els.summaryProvider.value = "";
+  if (els.newness) els.newness.value = "";
   if (els.year) els.year.value = "";
   if (els.sort) els.sort.value = "newest";
   state.activeTargetVenue = "";
@@ -1294,8 +1323,9 @@ function renderGroup(category, papers) {
 
 function renderPaperRow(paper) {
   const article = document.createElement("article");
-  article.className = "paper-card";
   const displayPaper = paperWithDetails(paper);
+  const weeklyNew = isWeeklyNewPaper(displayPaper);
+  article.className = weeklyNew ? "paper-card is-weekly-new" : "paper-card";
   const isDetailLoaded = state.paperDetails.has(paper.id);
   const isDetailLoading = state.detailLoading.has(paper.id);
   const detailError = state.detailErrors.get(paper.id) || "";
@@ -1313,11 +1343,13 @@ function renderPaperRow(paper) {
     ? `<button class="link-pill subtle" type="button" disabled>Details loaded</button>`
     : `<button class="link-pill subtle" type="button" data-load-detail="${escapeAttribute(paper.id)}">${escapeHtml(isDetailLoading ? "Loading details..." : "Load details")}</button>`;
   const detailErrorHtml = detailError ? `<p class="policy-mini detail-error">${escapeHtml(detailError)}</p>` : "";
+  const newBadgeHtml = weeklyNew ? `<span class="new-paper-badge">${escapeHtml(t("newPaperBadge"))}</span>` : "";
 
   article.innerHTML = `
     <div class="card-content">
       <div class="card-topline">
         <span class="publication-badge">${escapeHtml(publicationLabel)}</span>
+        ${newBadgeHtml}
         <span class="${escapeAttribute(summaryProviderLabel.className)}" title="${escapeAttribute(summaryProviderLabel.title)}">${escapeHtml(summaryProviderLabel.text)}</span>
         <span class="relevance-badge">${escapeHtml(t("relevanceLabel"))} ${escapeHtml(String(displayPaper.relevance_score || "-"))}/10</span>
       </div>

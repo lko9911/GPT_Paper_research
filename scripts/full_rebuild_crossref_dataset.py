@@ -91,7 +91,7 @@ def main() -> None:
 
     cleaned = [_strip_transient(paper) for paper in papers]
     curated, archive, split_stats = _split_curated_archive(cleaned)
-    weekly_added = _count_added_within_days(curated, run_started_at, 7)
+    weekly_added = sum(1 for paper in curated if paper.get("is_weekly_new"))
     _write_json(PAPERS_PATH, curated)
     _write_json(ARCHIVE_PAPERS_PATH, archive)
     _export_csv(PAPERS_CSV_PATH, curated)
@@ -358,6 +358,7 @@ def _finalize_crossref_record(record: dict[str, Any], today: str, existing_linea
         "pdf_stored": False,
         "first_added": first_added,
         "last_updated": today,
+        "is_weekly_new": _is_date_within_days(first_added, today, 7),
     }
     finalized["journal_quality"] = _journal_quality(finalized)
     is_core = _is_manual_core_journal(finalized["journal_quality"])
@@ -368,22 +369,14 @@ def _finalize_crossref_record(record: dict[str, Any], today: str, existing_linea
     return finalized
 
 
-def _count_added_within_days(records: list[dict[str, Any]], run_started_at: str, days: int) -> int:
+def _is_date_within_days(value: str, reference: str, days: int) -> bool:
     try:
-        reference = datetime.fromisoformat(run_started_at.replace("Z", "+00:00")).date()
+        reference_date = date.fromisoformat(reference[:10])
+        value_date = date.fromisoformat(str(value or "")[:10])
     except ValueError:
-        reference = date.today()
-    start = reference.toordinal() - max(0, days - 1)
-    end = reference.toordinal()
-    count = 0
-    for record in records:
-        try:
-            added = date.fromisoformat(str(record.get("first_added") or "")[:10]).toordinal()
-        except ValueError:
-            continue
-        if start <= added <= end:
-            count += 1
-    return count
+        return False
+    start = reference_date.toordinal() - max(0, days - 1)
+    return start <= value_date.toordinal() <= reference_date.toordinal()
 
 
 def _is_manual_core_journal(journal_quality: dict[str, Any]) -> bool:
