@@ -376,6 +376,19 @@ h1 {
   font-weight: 840;
 }
 
+.side-nav .side-top-link {
+  padding: 10px 11px;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.12), rgba(20, 184, 166, 0.1));
+  border: 1px solid rgba(37, 99, 235, 0.16);
+  color: #1d4ed8;
+  font-weight: 850;
+}
+
+.side-nav .side-top-link .side-count {
+  background: rgba(255, 255, 255, 0.78);
+  color: #1d4ed8;
+}
+
 .side-subtopics {
   display: grid;
   gap: 3px;
@@ -2263,6 +2276,17 @@ h1 {
 :root[data-theme="dark"] .side-nav .side-count {
   background: #223757;
   color: #d8e8ff;
+}
+
+:root[data-theme="dark"] .side-nav .side-top-link {
+  background: linear-gradient(135deg, rgba(96, 165, 250, 0.18), rgba(45, 212, 191, 0.13));
+  border-color: rgba(96, 165, 250, 0.28);
+  color: #bfdbfe;
+}
+
+:root[data-theme="dark"] .side-nav .side-top-link .side-count {
+  background: rgba(15, 23, 42, 0.78);
+  color: #dbeafe;
 }
 
 :root[data-theme="dark"] .side-nav button.is-active .side-count,

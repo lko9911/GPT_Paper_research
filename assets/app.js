@@ -116,7 +116,6 @@ const UI_TEXT = {
     relevance: "Relevance",
     title: "Title",
     resetFilters: "Reset",
-    showAmlRecommendations: "AML",
     venuesTitle: "Venues",
     allVenues: "All venues",
     papersByField: "Papers by Field",
@@ -336,7 +335,6 @@ const els = {
   year: document.querySelector("#year-filter"),
   sort: document.querySelector("#sort-select"),
   resetFilters: document.querySelector("#reset-filters"),
-  showAml: document.querySelector("#show-aml-recommendations"),
   sideTopicNav: document.querySelector("#side-topic-nav"),
   venueBoard: document.querySelector("#venue-board"),
   total: document.querySelector("#stat-total"),
@@ -399,9 +397,6 @@ async function init() {
 
   if (els.resetFilters) {
     els.resetFilters.addEventListener("click", resetFilters);
-  }
-  if (els.showAml) {
-    els.showAml.addEventListener("click", showAmlRecommendations);
   }
   if (els.loadMore) {
     els.loadMore.addEventListener("click", () => {
@@ -536,7 +531,6 @@ function applyStaticLanguage() {
   setText("#sort-select option[value='relevance']", t("relevance"));
   setText("#sort-select option[value='title']", t("title"));
   setText("#reset-filters", t("resetFilters"));
-  setText("#show-aml-recommendations", t("showAmlRecommendations"));
   setText(".venue-section-head h2", t("venuesTitle"));
   setText(".results-head .section-kicker", t("papersByField"));
   setText(".results-head h2", t("curatedPapers"));
@@ -602,6 +596,11 @@ function buildFilters() {
 
 function buildSideNav() {
   const fieldCounts = countBy(state.papers, (paper) => runtimeForPaper(paper).field);
+  const amlCount = amlVisibleRecommendations().length;
+  const amlShortcut = `<button class="side-top-link" type="button" data-side-target="aml-recommendations">
+    <span class="side-label">AML Recommendations</span>
+    <span class="side-count">${amlCount ? amlCount.toLocaleString("en-US") : "Open"}</span>
+  </button>`;
   const fieldGroups = FIELD_ORDER.filter((field) => fieldCounts.get(field))
     .map((field) => {
       const subtopics = FIELD_SUBTOPICS[field] || [];
@@ -621,7 +620,11 @@ function buildSideNav() {
       </div>`;
     })
     .join("");
-  els.sideTopicNav.innerHTML = fieldGroups;
+  els.sideTopicNav.innerHTML = `${amlShortcut}${fieldGroups}`;
+
+  els.sideTopicNav.querySelectorAll("[data-side-target]").forEach((button) => {
+    button.addEventListener("click", showAmlRecommendations);
+  });
 
   els.sideTopicNav.querySelectorAll("[data-side-field]").forEach((button) => {
     button.addEventListener("click", (event) => {
@@ -783,6 +786,10 @@ function renderAmlRecommendations() {
     els.amlSection.hidden = false;
     els.amlCount.textContent = "0 recommendations";
     els.amlList.innerHTML = amlEmptyMessage("The AML recommendation file exists, but no public recommendations are available.");
+    return;
+  }
+  if (!state.amlPanelRequested) {
+    els.amlSection.hidden = true;
     return;
   }
   els.amlSection.hidden = false;
