@@ -22,7 +22,7 @@ This file is written by GitHub Actions so the latest paper-update state can be c
 - Curated papers: `1233`
 - Raw candidates: `1285`
 - Archived hidden: `52`
-- Papers added in last successful run: `1233`
+- Papers added in last successful run: `0` (raw rebuild count: `1233`; mode: `full_rebuild_crossref_only`)
 
 ## Schedule
 

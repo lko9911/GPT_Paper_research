@@ -90,6 +90,8 @@ const UI_TEXT = {
     sideTitle: "Fields and Subtopics",
     totalPapers: "Papers",
     latestRunAdded: "this update",
+    latestRunRebuilt: "full rebuild",
+    noNewPapers: "No new papers",
     weeklyAddedShort: "weekly new",
     venueCount: "Venues",
     yearRange: "Years",
@@ -1040,7 +1042,7 @@ function renderUpdatedStat(lastRunAt) {
     return;
   }
   const updatedLabel = "updated";
-  els.updated.innerHTML = `${escapeHtml(now.date)}<small>${escapeHtml(now.time)} KST - ${escapeHtml(updatedLabel)} ${escapeHtml(lastRun.time)} KST${attempt ? ` - ${escapeHtml(attempt)}` : ""}</small>`;
+  els.updated.innerHTML = `${escapeHtml(now.date)}<small>${escapeHtml(now.time)} KST - ${escapeHtml(updatedLabel)} ${escapeHtml(lastRun.date)} ${escapeHtml(lastRun.time)} KST${attempt ? ` - ${escapeHtml(attempt)}` : ""}</small>`;
 }
 
 async function loadUpdateStatus() {
@@ -1067,7 +1069,7 @@ function updateAttemptDisplay() {
   const missedSchedule = missedScheduleDisplay(status);
   if (missedSchedule) return missedSchedule;
   const checked = formatRunTime(status.checked_at_utc);
-  const checkedText = checked ? checked.time : "";
+  const checkedText = checked ? `${checked.date} ${checked.time}` : "";
   if (jobStatus === "failure" || jobStatus === "failed" || updateStep === "failure") {
     return `last attempt failed${checkedText ? ` ${checkedText}` : ""}`;
   }
@@ -1086,7 +1088,7 @@ function missedScheduleDisplay(status) {
   const checkedAt = parseDate(status.checked_at_utc);
   if (checkedAt && checkedAt.getTime() >= dueAt.getTime()) return "";
   const due = formatRunTime(dueAt.toISOString());
-  const dueText = due ? due.time : "";
+  const dueText = due ? `${due.date} ${due.time}` : "";
   return `${dueText} run not seen yet`;
 }
 
@@ -1117,24 +1119,43 @@ function renderTotalStat(lastRunAt) {
   if (!els.total) return;
   const locale = "en-US";
   const total = state.papers.length;
-  const weeklyCount = countRecentlyAddedPapers(state.papers, lastRunAt, 7);
-  const latestAdded = Number(state.siteMeta && state.siteMeta.papers_added);
-  const deltaText = formatPaperDeltaText(total, weeklyCount, latestAdded, locale);
+  const rebuildRun = isFullRebuildRun();
+  const weeklyCount = rebuildRun ? 0 : countRecentlyAddedPapers(state.papers, lastRunAt, 7);
+  const latestAdded = latestAddedForDisplay(total);
+  const deltaText = formatPaperDeltaText(weeklyCount, latestAdded, locale);
   els.total.classList.add("stat-with-note");
   els.total.innerHTML = `${escapeHtml(total.toLocaleString(locale))}${deltaText ? `<small>${escapeHtml(deltaText)}</small>` : ""}`;
 }
 
-function formatPaperDeltaText(total, weeklyCount, latestAdded, locale) {
+function formatPaperDeltaText(weeklyCount, latestAdded, locale) {
   const parts = [];
-  if (Number.isFinite(latestAdded) && latestAdded > 0) {
-    const countText = latestAdded.toLocaleString(locale);
+  if (latestAdded.isRebuild) {
+    parts.push(t("latestRunRebuilt"));
+  } else if (latestAdded.count > 0) {
+    const countText = latestAdded.count.toLocaleString(locale);
     parts.push(`+${countText} ${t("latestRunAdded")}`);
   }
   if (weeklyCount > 0) {
     const countText = weeklyCount.toLocaleString(locale);
     parts.push(`+${countText} ${t("weeklyAddedShort")}`);
   }
-  return parts.join(" - ");
+  return parts.join(" - ") || t("noNewPapers");
+}
+
+function latestAddedForDisplay(total) {
+  const rawAdded = Number(state.siteMeta && state.siteMeta.papers_added);
+  if (!Number.isFinite(rawAdded) || rawAdded <= 0) {
+    return { count: 0, isRebuild: false };
+  }
+  if (isFullRebuildRun() || (total > 0 && rawAdded >= total)) {
+    return { count: 0, isRebuild: true };
+  }
+  return { count: rawAdded, isRebuild: false };
+}
+
+function isFullRebuildRun() {
+  const mode = String((state.siteMeta && state.siteMeta.collection_mode) || "").toLowerCase();
+  return mode.includes("full_rebuild");
 }
 
 function countRecentlyAddedPapers(papers, lastRunAt, days) {

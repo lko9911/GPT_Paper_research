@@ -18,6 +18,8 @@ def main() -> None:
     now_utc = datetime.now(UTC).replace(microsecond=0)
     now_kst = now_utc.astimezone(ZoneInfo("Asia/Seoul"))
     site_meta = _load_json(SITE_META, {})
+    displayed_added = _display_papers_added(site_meta)
+    raw_added = _int(site_meta.get("papers_added", 0))
 
     payload = {
         "checked_at_utc": now_utc.isoformat().replace("+00:00", "Z"),
@@ -42,7 +44,9 @@ def main() -> None:
         "curated_count": site_meta.get("curated_count", site_meta.get("paper_count", 0)),
         "raw_candidate_count": site_meta.get("raw_candidate_count", 0),
         "archived_count": site_meta.get("archived_count", 0),
-        "papers_added_last_success": site_meta.get("papers_added", 0),
+        "collection_mode": site_meta.get("collection_mode", ""),
+        "papers_added_last_success": displayed_added,
+        "papers_added_raw_last_success": raw_added,
         "openai_scheduled_updates_enabled": False,
     }
 
@@ -61,6 +65,7 @@ def _markdown(payload: dict[str, object]) -> str:
     run_url = str(payload.get("run_url") or "")
     run_link = f"[{payload.get('run_id')}]({run_url})" if run_url else str(payload.get("run_id") or "-")
     kst_times = _schedule_kst_times(str(payload.get("schedule") or ""))
+    added_note = _added_note(payload)
     return f"""# Update Status
 
 This file is written by GitHub Actions so the latest paper-update state can be checked without opening the Actions UI.
@@ -85,7 +90,7 @@ This file is written by GitHub Actions so the latest paper-update state can be c
 - Curated papers: `{payload.get('curated_count')}`
 - Raw candidates: `{payload.get('raw_candidate_count')}`
 - Archived hidden: `{payload.get('archived_count')}`
-- Papers added in last successful run: `{payload.get('papers_added_last_success')}`
+- Papers added in last successful run: `{payload.get('papers_added_last_success')}`{added_note}
 
 ## Schedule
 
@@ -121,6 +126,39 @@ def _schedule_kst_times(schedule: str) -> str:
     if schedule == "0 * * * *":
         return "`HH:00` every hour"
     return "`see cron expression`"
+
+
+def _display_papers_added(site_meta: dict[str, object]) -> int:
+    raw_added = _int(site_meta.get("papers_added", 0))
+    total = _int(site_meta.get("paper_count", site_meta.get("curated_count", 0)))
+    if raw_added <= 0:
+        return 0
+    if _is_full_rebuild(site_meta) or (total > 0 and raw_added >= total):
+        return 0
+    return raw_added
+
+
+def _is_full_rebuild(site_meta: dict[str, object]) -> bool:
+    return "full_rebuild" in str(site_meta.get("collection_mode", "")).lower()
+
+
+def _added_note(payload: dict[str, object]) -> str:
+    displayed = _int(payload.get("papers_added_last_success", 0))
+    raw = _int(payload.get("papers_added_raw_last_success", displayed))
+    mode = str(payload.get("collection_mode") or "")
+    if raw == displayed:
+        return ""
+    note = f" (raw rebuild count: `{raw}`"
+    if mode:
+        note += f"; mode: `{mode}`"
+    return note + ")"
+
+
+def _int(value: object, default: int = 0) -> int:
+    try:
+        return int(value)
+    except (TypeError, ValueError):
+        return default
 
 
 def _kst_display(value: str) -> str:
