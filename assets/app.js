@@ -122,6 +122,9 @@ const UI_TEXT = {
     curatedPapers: "Curated Papers",
     newPapersKicker: "New this week",
     newPapersTitle: "Recently Added Papers",
+    amlPapersKicker: "AML Recommendations",
+    amlPapersTitle: "Recommended Papers",
+    amlShowing: "recommendations",
     emptyTitle: "No papers to display.",
     emptyText: "Adjust the search or filters, or run the GitHub Actions update.",
     footer:
@@ -1186,8 +1189,10 @@ function render() {
   const visiblePapers = state.filtered.slice(0, state.renderLimit);
   const totalCount = state.filtered.length;
   const defaultNewView = isDefaultNewPapersView();
-  renderPaperResultsHeading(defaultNewView);
-  els.count.textContent = `${Math.min(visiblePapers.length, totalCount).toLocaleString("en-US")} / ${totalCount.toLocaleString("en-US")} ${t("showing")}`;
+  const amlView = state.activeAmlRecommendations;
+  renderPaperResultsHeading(defaultNewView, amlView);
+  const countLabel = amlView ? t("amlShowing") : t("showing");
+  els.count.textContent = `${Math.min(visiblePapers.length, totalCount).toLocaleString("en-US")} / ${totalCount.toLocaleString("en-US")} ${countLabel}`;
   els.list.innerHTML = "";
   els.empty.hidden = totalCount > 0;
   if (els.loadMore) {
@@ -1201,6 +1206,11 @@ function render() {
     els.list.append(fragment);
     return;
   }
+  if (amlView) {
+    fragment.append(renderGroup(t("amlPapersKicker"), visiblePapers));
+    els.list.append(fragment);
+    return;
+  }
   const groups = groupByPrimaryCategory(visiblePapers);
   groups.forEach(([category, papers]) => {
     fragment.append(renderGroup(category, papers));
@@ -1208,11 +1218,15 @@ function render() {
   els.list.append(fragment);
 }
 
-function renderPaperResultsHeading(defaultNewView) {
+function renderPaperResultsHeading(defaultNewView, amlView = false) {
   const kicker = document.querySelector(".paper-results-head .section-kicker");
   const title = document.querySelector(".paper-results-head h2");
-  if (kicker) kicker.textContent = defaultNewView ? t("newPapersKicker") : t("papersByField");
-  if (title) title.textContent = defaultNewView ? t("newPapersTitle") : t("curatedPapers");
+  if (kicker) {
+    kicker.textContent = amlView ? t("amlPapersKicker") : defaultNewView ? t("newPapersKicker") : t("papersByField");
+  }
+  if (title) {
+    title.textContent = amlView ? t("amlPapersTitle") : defaultNewView ? t("newPapersTitle") : t("curatedPapers");
+  }
 }
 
 function groupByPrimaryCategory(papers) {
