@@ -291,7 +291,7 @@ const state = {
   activeTargetVenue: "",
   activeVenueGroup: "",
   activeSubtopic: "",
-  amlPanelRequested: false,
+  activeAmlRecommendations: false,
   theme: localStorage.getItem("theme") || DEFAULT_THEME,
   language: DEFAULT_LANGUAGE,
   collapsedFields: new Set(readStoredArray("collapsedFields")),
@@ -346,9 +346,6 @@ const els = {
   opsNote: document.querySelector("#ops-note"),
   heroStatus: document.querySelector("#hero-status"),
   themeToggle: document.querySelector("#theme-toggle"),
-  amlSection: document.querySelector("#aml-recommendations"),
-  amlList: document.querySelector("#aml-recommendation-list"),
-  amlCount: document.querySelector("#aml-result-count"),
   loadMore: document.querySelector("#load-more-papers"),
 };
 
@@ -370,7 +367,6 @@ async function init() {
   buildFilters();
   buildSideNav();
   renderVenueBoard();
-  renderAmlRecommendations();
   updateStats();
   setDefaultNewnessFilter();
   applyFilters();
@@ -381,6 +377,7 @@ async function init() {
       if (el === els.newness) state.newnessTouched = true;
       if (el === els.category) state.activeSubtopic = "";
       if (el === els.venue) clearVenueQuickFilters();
+      if (el !== els.sort) state.activeAmlRecommendations = false;
       if (el !== els.newness && el !== els.sort) releaseDefaultNewnessFilter();
       if (el === els.search) {
         scheduleApplyFilters();
@@ -392,6 +389,7 @@ async function init() {
       if (el === els.newness) state.newnessTouched = true;
       if (el === els.category) state.activeSubtopic = "";
       if (el === els.venue) clearVenueQuickFilters();
+      if (el !== els.sort) state.activeAmlRecommendations = false;
       if (el !== els.newness && el !== els.sort) releaseDefaultNewnessFilter();
       applyFilters();
     });
@@ -598,10 +596,10 @@ function buildFilters() {
 
 function buildSideNav() {
   const fieldCounts = countBy(state.papers, (paper) => runtimeForPaper(paper).field);
-  const amlCount = amlVisibleRecommendations().length;
+  const amlCount = state.papers.filter((paper) => isAmlRecommendedPaper(paper)).length;
   const amlShortcut = `<button class="side-top-link" type="button" data-side-target="aml-recommendations">
     <span class="side-label">AML Recommendations</span>
-    <span class="side-count">${amlCount ? amlCount.toLocaleString("en-US") : "Open"}</span>
+    <span class="side-count">${amlCount.toLocaleString("en-US")}</span>
   </button>`;
   const fieldGroups = FIELD_ORDER.filter((field) => fieldCounts.get(field))
     .map((field) => {
@@ -638,6 +636,7 @@ function buildSideNav() {
       }
       els.category.value = field;
       state.activeSubtopic = subtopic;
+      state.activeAmlRecommendations = false;
       releaseDefaultNewnessFilter();
       syncSideNavActive();
       applyFilters();
@@ -647,11 +646,22 @@ function buildSideNav() {
 }
 
 function showAmlRecommendations() {
-  state.amlPanelRequested = true;
-  renderAmlRecommendations();
-  if (els.amlSection) {
-    els.amlSection.scrollIntoView({ behavior: "smooth", block: "start" });
-  }
+  state.activeAmlRecommendations = true;
+  state.activeSubtopic = "";
+  state.activeTargetVenue = "";
+  state.activeVenueGroup = "";
+  if (els.search) els.search.value = "";
+  if (els.category) els.category.value = "";
+  if (els.tag) els.tag.value = "";
+  if (els.venue) els.venue.value = "";
+  if (els.summaryProvider) els.summaryProvider.value = "";
+  if (els.newness) els.newness.value = "";
+  if (els.year) els.year.value = "";
+  releaseDefaultNewnessFilter();
+  clearVenueQuickFilters();
+  syncSideNavActive();
+  applyFilters();
+  scrollToPapers();
 }
 
 function toggleSideField(field) {
@@ -692,6 +702,9 @@ function sideSubtopicButton(field, subtopic, count) {
 }
 
 function syncSideNavActive() {
+  els.sideTopicNav.querySelectorAll("[data-side-target]").forEach((button) => {
+    button.classList.toggle("is-active", state.activeAmlRecommendations);
+  });
   els.sideTopicNav.querySelectorAll("[data-side-field]").forEach((button) => {
     const fieldMatches = button.dataset.sideField === els.category.value;
     const subtopicMatches = (button.dataset.sideSubtopic || "") === state.activeSubtopic;
@@ -737,6 +750,7 @@ function renderVenueBoard() {
       const venue = button.dataset.boardVenue;
       state.activeVenueGroup = button.dataset.boardVenueGroup || "";
       state.activeTargetVenue = isPriorityVenue(venue) ? venue : "";
+      state.activeAmlRecommendations = false;
       els.venue.value = venue && !isPriorityVenue(venue) ? venue : "";
       if (!venue) {
         state.activeTargetVenue = "";
@@ -766,47 +780,6 @@ async function loadAmlRecommendations() {
   }
 }
 
-function renderAmlRecommendations() {
-  if (!els.amlSection || !els.amlList || !els.amlCount) return;
-  const items = state.amlRecommendations || [];
-  if (!items.length) {
-    if (!state.amlPanelRequested) {
-      els.amlSection.hidden = true;
-      return;
-    }
-    els.amlSection.hidden = false;
-    els.amlCount.textContent = "No published recommendations";
-    els.amlList.innerHTML = amlEmptyMessage();
-    return;
-  }
-  const visible = amlVisibleRecommendations();
-  if (!visible.length) {
-    if (!state.amlPanelRequested) {
-      els.amlSection.hidden = true;
-      return;
-    }
-    els.amlSection.hidden = false;
-    els.amlCount.textContent = "0 recommendations";
-    els.amlList.innerHTML = amlEmptyMessage("The AML recommendation file exists, but no public recommendations are available.");
-    return;
-  }
-  if (!state.amlPanelRequested) {
-    els.amlSection.hidden = true;
-    return;
-  }
-  els.amlSection.hidden = false;
-  els.amlCount.textContent = `${visible.length.toLocaleString("en-US")} recommendations`;
-  els.amlList.innerHTML = visible.map(renderAmlRecommendationCard).join("");
-  attachAmlCitationHandlers(visible);
-}
-
-function amlEmptyMessage(message = "No public AML recommendation file is available yet. Run the manual AML Recommendation workflow to publish related papers here.") {
-  return `<div class="aml-empty-card">
-    <strong>AML recommendation papers are not published yet.</strong>
-    <p>${escapeHtml(message)}</p>
-  </div>`;
-}
-
 function amlVisibleRecommendations() {
   return (state.amlRecommendations || [])
     .filter((item) => ["High", "Possible", "Watch"].includes(item.recommendation_level))
@@ -814,165 +787,9 @@ function amlVisibleRecommendations() {
     .slice(0, 24);
 }
 
-function renderAmlRecommendationCard(item) {
-  const doiUrl = item.url || (item.doi ? `https://doi.org/${item.doi}` : "");
-  const publicationLabel = [item.journal || "Venue unknown", item.year].filter(Boolean).join(" ");
-  const score = Math.round(Number(item.aml_score || 0) * 100);
-  const topics = (item.matched_topics || [])
-    .slice(0, 3)
-    .map((topic) => badge(displayLabel(topic), "tag"))
-    .join("");
-  const routes = (item.discovery_routes || []).slice(0, 3).map((route) => String(route).replace(/_/g, " ")).join(", ");
-  const seed = (item.related_seed_papers || [])[0];
-  const seedText = seed && seed.title ? `Closest seed: ${seed.title}` : "";
-  const summaryHtml = renderAmlSummaryBlock(item);
-  const relevanceNote = formatAmlRelevanceNote(item);
-  const authorDetailsHtml = renderAuthorDetails({
-    authors: Array.isArray(item.authors) ? item.authors : [],
-    author_details: Array.isArray(item.author_details) ? item.author_details : [],
-  });
-  return `<article class="paper-card aml-card">
-    <div class="card-content">
-      <div class="card-topline">
-        <span class="publication-badge">${escapeHtml(publicationLabel)}</span>
-        <span class="relevance-badge">AML ${escapeHtml(String(score))}/100</span>
-      </div>
-      <h4 class="paper-title">${escapeHtml(item.title || "Untitled")}</h4>
-      ${authorDetailsHtml}
-      ${summaryHtml}
-      <p class="relevance-note">${escapeHtml(relevanceNote)}</p>
-      ${seedText ? `<p class="policy-mini">${escapeHtml(seedText)}</p>` : ""}
-      <div class="tag-line">${topics}</div>
-      <div class="card-links">
-        ${doiUrl ? `<a class="link-pill primary" href="${escapeAttribute(doiUrl)}" target="_blank" rel="noopener noreferrer">Open Paper</a>` : ""}
-        ${doiUrl ? `<a class="link-pill subtle" href="${escapeAttribute(doiUrl)}" target="_blank" rel="noopener noreferrer">DOI</a>` : ""}
-        <button class="link-pill subtle" type="button" data-aml-citation="${escapeAttribute(item.doi || item.title || "")}">${escapeHtml(t("copyCitation"))}</button>
-      </div>
-      <p class="policy-mini">AML recommendation - ${escapeHtml(routes ? `routes: ${routes}` : "manual recommendation output")} - updated ${escapeHtml(formatAmlUpdatedAt(item.updated_at))}</p>
-    </div>
-  </article>`;
-}
-
 function scheduleApplyFilters() {
   window.clearTimeout(state.filterTimer);
   state.filterTimer = window.setTimeout(applyFilters, FILTER_DEBOUNCE_MS);
-}
-
-function formatAmlRelevanceNote(item) {
-  const topics = amlMatchedTopicLabels(item);
-  const topicPhrase = formatEnglishList(topics) || "the AML recommendation profile";
-  const score = Math.max(0, Math.min(100, Math.round(Number(item.aml_score || 0) * 100)));
-  const routes = (item.discovery_routes || [])
-    .slice(0, 2)
-    .map((route) => String(route).replace(/_/g, " "))
-    .filter(Boolean);
-  const routePhrase = routes.length ? ` and found through ${formatEnglishList(routes)}` : "";
-  const seed = (item.related_seed_papers || [])[0];
-  const seedPhrase = seed && seed.title ? `; closest seed: ${seed.title}` : "";
-  return `Relevant to the tracker through ${topicPhrase}; AML score: ${score}/100. Why this score: matched ${topicPhrase}${routePhrase}${seedPhrase}.`;
-}
-
-function amlMatchedTopicLabels(item) {
-  const labels = [];
-  const seen = new Set();
-  (item.matched_topics || []).forEach((topic) => {
-    const label = normalizeAmlTopicLabel(displayLabel(topic));
-    const key = label.toLowerCase();
-    if (label && !seen.has(key)) {
-      seen.add(key);
-      labels.push(label);
-    }
-  });
-  return labels.slice(0, 3);
-}
-
-function normalizeAmlTopicLabel(label) {
-  const value = String(label || "").trim();
-  const lower = value.toLowerCase();
-  if (!value) return "";
-  if (lower === "liquid crystal elastomer" || lower === "liquid crystal elastomers") return "LCE";
-  if (lower === "soft robotics") return "Soft Robotics";
-  return value;
-}
-
-function renderAmlSummaryBlock(item) {
-  return `<dl class="summary summary-qa">
-    ${amlSummarySections(item)
-      .map(
-        (section, index) => `<div class="${index === 4 ? "is-takeaway" : ""}">
-          <dt>${escapeHtml(section.question)}</dt>
-          <dd>${escapeHtml(section.answer)}</dd>
-        </div>`
-      )
-      .join("")}
-  </dl>`;
-}
-
-function amlSummarySections(item) {
-  const labels = UI_TEXT.en.summaryQuestions;
-  const title = item.title || "This paper";
-  const venue = item.journal || "an unknown venue";
-  const year = item.year || "undated";
-  const topics = (item.matched_topics || []).slice(0, 4).map(displayLabel);
-  const topicPhrase = formatEnglishList(topics) || "the AML recommendation profile";
-  const routes = (item.discovery_routes || []).slice(0, 3).map((route) => String(route).replace(/_/g, " "));
-  const routePhrase = formatEnglishList(routes) || "the current recommendation pool";
-  const seed = (item.related_seed_papers || [])[0];
-  const score = Math.round(Number(item.aml_score || 0) * 100);
-  const reason = item.why_recommended || `It matches ${topicPhrase} in the AML recommendation profile.`;
-
-  return [
-    {
-      question: labels[0],
-      answer: `${title} is a ${year} paper from ${venue} recommended for its connection to ${topicPhrase}.`,
-    },
-    {
-      question: labels[1],
-      answer: "It is included because the recommendation engine detected overlap with the lab's target manufacturing and design interests.",
-    },
-    {
-      question: labels[2],
-      answer: `It was selected through ${routePhrase} using metadata, curated topic signals, and AML profile scoring; the detailed method should be checked in the DOI source.`,
-    },
-    {
-      question: labels[3],
-      answer: seed && seed.title
-        ? `The strongest recommendation signal is its similarity to the seed paper "${seed.title}".`
-        : reason,
-    },
-    {
-      question: labels[4],
-      answer: `${reason} Current AML recommendation score is ${score}/100.`,
-    },
-  ];
-}
-
-function attachAmlCitationHandlers(items) {
-  const citationMap = new Map(items.map((item) => [String(item.doi || item.title || ""), buildAmlCitation(item)]));
-  els.amlList.querySelectorAll("[data-aml-citation]").forEach((button) => {
-    button.addEventListener("click", async (event) => {
-      const key = event.currentTarget.dataset.amlCitation || "";
-      await navigator.clipboard.writeText(citationMap.get(key) || "");
-      event.currentTarget.textContent = t("copiedCitation");
-      window.setTimeout(() => {
-        event.currentTarget.textContent = t("copyCitation");
-      }, 1400);
-    });
-  });
-}
-
-function buildAmlCitation(item) {
-  if (item.citation) return item.citation;
-  const authors = Array.isArray(item.authors) ? item.authors.join(", ") : "";
-  const year = item.year ? `(${item.year})` : "";
-  const venue = item.journal ? ` ${item.journal}.` : "";
-  const doi = item.doi ? ` https://doi.org/${item.doi}` : "";
-  return `${authors} ${year}. ${item.title || "Untitled"}.${venue}${doi}`.replace(/\s+/g, " ").trim();
-}
-
-function formatAmlUpdatedAt(value) {
-  const formatted = formatRunTime(value);
-  return formatted ? `${formatted.date} ${formatted.time} KST` : "-";
 }
 
 function clearVenueQuickFilters() {
@@ -1075,6 +892,16 @@ function renderUpdatedStat(lastRunAt) {
     return;
   }
   els.updated.innerHTML = `${escapeHtml(lastRun.date)}<small>${escapeHtml(lastRun.time)} KST</small>`;
+}
+
+function isAmlRecommendedPaper(paper) {
+  const paperDoi = normalizeDoiKey(paper && (paper.doi || paper.id));
+  const paperTitle = normalizeTitleKey(paper && paper.title);
+  return amlVisibleRecommendations().some((item) => {
+    const itemDoi = normalizeDoiKey(item && item.doi);
+    if (paperDoi && itemDoi && paperDoi === itemDoi) return true;
+    return paperTitle && normalizeTitleKey(item && item.title) === paperTitle;
+  });
 }
 
 async function loadUpdateStatus() {
@@ -1243,6 +1070,7 @@ function applyFilters() {
     const matchesTarget = !state.activeTargetVenue || matchesTargetVenue(paperVenue, state.activeTargetVenue);
     const matchesVenueGroup = !state.activeVenueGroup || isOtherVenuePaper(paper);
     const matchesSubtopic = !state.activeSubtopic || paperMatchesSidebarSubtopic(paper, paperField, state.activeSubtopic);
+    const matchesAmlRecommendations = !state.activeAmlRecommendations || isAmlRecommendedPaper(paper);
     const matchesSummaryProvider = !summaryProvider || runtime.summaryProvider === summaryProvider;
     const matchesNewness = !newness || isWeeklyNewPaper(paper);
     const matchesYear = !year || String(paper.year || "") === year;
@@ -1254,6 +1082,7 @@ function applyFilters() {
       matchesTarget &&
       matchesVenueGroup &&
       matchesSubtopic &&
+      matchesAmlRecommendations &&
       matchesSummaryProvider &&
       matchesNewness &&
       matchesYear
@@ -1292,7 +1121,8 @@ function isDefaultNewPapersView() {
       !(els.year && els.year.value) &&
       !state.activeTargetVenue &&
       !state.activeVenueGroup &&
-      !state.activeSubtopic
+      !state.activeSubtopic &&
+      !state.activeAmlRecommendations
   );
 }
 
@@ -1307,6 +1137,7 @@ function resetFilters() {
   state.activeTargetVenue = "";
   state.activeVenueGroup = "";
   state.activeSubtopic = "";
+  state.activeAmlRecommendations = false;
   setDefaultNewnessFilter();
   clearVenueQuickFilters();
   syncSideNavActive();
@@ -1449,6 +1280,7 @@ function renderPaperRow(paper) {
   article.querySelectorAll("[data-tag-filter]").forEach((button) => {
     button.addEventListener("click", () => {
       els.tag.value = button.dataset.tagFilter;
+      state.activeAmlRecommendations = false;
       releaseDefaultNewnessFilter();
       applyFilters();
     });
@@ -2250,6 +2082,14 @@ function normalizeVenue(venue) {
 
 function normalizeVenueKey(venue) {
   return normalize(venue).replace(/&amp;/g, "and").replace(/&/g, "and");
+}
+
+function normalizeDoiKey(value) {
+  return normalize(value).replace(/^https?:\/\/(dx\.)?doi\.org\//, "");
+}
+
+function normalizeTitleKey(value) {
+  return normalize(value).replace(/[^a-z0-9]+/g, " ").trim();
 }
 
 function matchesTargetVenue(venue, target) {
