@@ -1466,31 +1466,36 @@ function renderSummaryBlock(paper) {
 }
 
 function renderAmlSummaryBlock(paper) {
+  const labels = UI_TEXT.en.summaryQuestions;
   const tags = representativeTags(paper).map((tag) => displayLabel(tag));
   const tagPhrase = formatEnglishList(tags) || "the AML profile";
   const score = Number(paper.aml_score || 0);
   const scoreText = Number.isFinite(score) && score > 0 ? `${Math.round(score * 100)}/100` : "not scored";
   const routes = Array.isArray(paper.discovery_routes) ? paper.discovery_routes : [];
-  const routeText = routes.length ? routes.join(", ") : "AML recommendation pool";
+  const routeText = routes.includes("crossref_keyword_search")
+    ? "Crossref keyword discovery"
+    : routes.includes("existing_keyword_pool")
+      ? "the existing curated paper pool"
+      : "the AML recommendation pool";
   const sections = [
     {
-      question: "Topic",
-      answer: `${paper.title || "This paper"} is recommended for AML-related tracking through ${tagPhrase}.`,
+      question: labels[0],
+      answer: `${paper.title || "This paper"} is a recommended AML-tracking paper connected to ${tagPhrase}.`,
     },
     {
-      question: "Why recommended",
-      answer: paper.relevance_note_en || "It is close to the current AML profile signals.",
+      question: labels[1],
+      answer: paper.relevance_note_en || "It is included because its metadata aligns with the current AML research profile.",
     },
     {
-      question: "AML score",
-      answer: `${scoreText}${paper.recommendation_level ? ` - ${paper.recommendation_level}` : ""}.`,
+      question: labels[2],
+      answer: `The recommendation was produced by matching public metadata and topic signals against the AML profile through ${routeText}.`,
     },
     {
-      question: "Discovery",
-      answer: `Found through ${routeText}.`,
+      question: labels[3],
+      answer: `Its AML recommendation priority is ${scoreText}${paper.recommendation_level ? ` (${paper.recommendation_level})` : ""}; paper-level findings should be checked in the DOI source.`,
     },
     {
-      question: "Takeaway",
+      question: labels[4],
       answer: "Review this as an AML-profile recommendation, separate from the site's general relevance score.",
     },
   ];
