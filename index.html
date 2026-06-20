@@ -9,7 +9,7 @@
       content="An AI-assisted research tracker for manufacturing, 3D/4D printing, robotics, and AI-driven production."
     />
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
-    <link rel="stylesheet" href="assets/style.css?v=20260620-new-week-ui" />
+    <link rel="stylesheet" href="assets/style.css?v=20260620-aml-button" />
   </head>
   <body>
     <header class="site-header" id="top">
@@ -59,7 +59,10 @@
           <label class="search-field">
             <span class="search-field-head">
               <span class="search-label-text">Search</span>
-              <button id="reset-filters" class="reset-filters-button" type="button">Reset filters</button>
+              <span class="search-field-actions">
+                <button id="show-aml-recommendations" class="filter-action-button" type="button">AML</button>
+                <button id="reset-filters" class="filter-action-button" type="button">Reset filters</button>
+              </span>
             </span>
             <input id="search-input" type="search" placeholder="Search keyword, title, tag, summary" autocomplete="off" />
           </label>
@@ -176,6 +179,6 @@
       </div>
     </footer>
 
-    <script src="assets/app.js?v=20260620-new-default-20" defer></script>
+    <script src="assets/app.js?v=20260620-aml-button" defer></script>
   </body>
 </html>
