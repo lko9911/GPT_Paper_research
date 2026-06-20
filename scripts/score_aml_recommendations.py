@@ -79,6 +79,38 @@ def score_recommendations(
     }
 
 
+def refresh_public_recommendation_reasons() -> dict[str, Any]:
+    """Rewrite reasons for the already-published AML recommendations.
+
+    This path is useful on GitHub Actions when the private AML seed file is not
+    available but the public recommendation list already exists.
+    """
+    items = load_json(PUBLIC_OUTPUT_PATH, [])
+    if not isinstance(items, list) or not items:
+        raise FileNotFoundError(f"AML public recommendation output not found: {PUBLIC_OUTPUT_PATH}")
+    refreshed = 0
+    skipped = 0
+    for item in items:
+        if item.get("recommendation_level") not in {"High", "Possible"}:
+            skipped += 1
+            continue
+        reason = _ai_reason(item)
+        if not reason:
+            skipped += 1
+            continue
+        item["why_recommended"] = reason
+        item["reason_source"] = "openai"
+        item["updated_at"] = now_iso()
+        refreshed += 1
+    write_json(PUBLIC_OUTPUT_PATH, items)
+    return {
+        "public_output": str(PUBLIC_OUTPUT_PATH),
+        "public_count": len(items),
+        "reasons_refreshed": refreshed,
+        "reasons_skipped": skipped,
+    }
+
+
 def _build_candidate_embeddings(candidates: list[dict[str, Any]]) -> dict[str, dict[str, Any]]:
     cached = load_json(CANDIDATE_EMBEDDINGS_PATH, {"items": []})
     by_key = {item.get("candidate_key"): item for item in cached.get("items", [])}

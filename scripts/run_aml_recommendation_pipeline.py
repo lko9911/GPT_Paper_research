@@ -6,10 +6,11 @@ import argparse
 import os
 from typing import Any
 
+from aml_common import PUBLIC_OUTPUT_PATH, seed_path
 from build_aml_seed_embeddings import build_seed_embeddings
 from collect_aml_candidates import collect_candidates
 from generate_aml_profile import generate_profile
-from score_aml_recommendations import score_recommendations
+from score_aml_recommendations import refresh_public_recommendation_reasons, score_recommendations
 
 
 def main() -> None:
@@ -40,6 +41,27 @@ def run_pipeline(
     use_ai_reason: bool = False,
     use_ai_profile: bool = False,
 ) -> dict[str, Any]:
+    if not seed_path().exists():
+        if use_ai_reason and PUBLIC_OUTPUT_PATH.exists():
+            reason_result = refresh_public_recommendation_reasons()
+            return {
+                "seed_papers_loaded": 0,
+                "seed_embeddings_generated": 0,
+                "candidate_count": 0,
+                "candidates_scored": 0,
+                "level_counts": {},
+                "ai_judge_used": use_ai_judge,
+                "ai_reason_used": use_ai_reason,
+                "reason_only_refresh": True,
+                "reasons_refreshed": reason_result.get("reasons_refreshed", 0),
+                "reasons_skipped": reason_result.get("reasons_skipped", 0),
+                "public_output": reason_result.get("public_output", ""),
+            }
+        raise FileNotFoundError(
+            f"AML seed file not found: {seed_path()}. "
+            "Add the private seed file on this runner, or run with use_ai_reason=true to refresh "
+            "existing public recommendation reasons only."
+        )
     profile = generate_profile(use_ai_profile=use_ai_profile)
     seed_result = build_seed_embeddings()
     candidate_result = collect_candidates(mode=mode, max_candidates=max_candidates)

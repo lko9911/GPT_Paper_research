@@ -52,6 +52,8 @@ AML recommendation is a separate manual-only workflow:
 
 The AML pipeline uses OpenAI embeddings when `OPENAI_API_KEY` is available, but it does not use OpenAI as the paper search engine. In `collect_and_score` and `full_refresh`, external AML candidate discovery uses Crossref keyword search only, with no venue-specific filter. OpenAI relevance judging is optional and disabled by default. OpenAI recommendation-reason writing is enabled by default in the manual workflow and uses structured metadata, AML score, matched topics, and seed similarity rather than internal route names. Private embeddings, candidate pools, debug logs, raw data, and PDFs are ignored by Git. Public-safe recommendations are written to `public/data/aml_recommended_papers.json`.
 
+If the private AML seed file is not available on the GitHub Actions runner, `use_ai_reason=true` falls back to refreshing only the public `why_recommended` text for the already-published AML recommendations. Full candidate scoring still requires the private seed file locally or on the runner.
+
 ## Split Data for Faster GitHub Pages Loading
 
 The production website should load `data/papers_index.json`, not the full `data/papers.json`, on first visit. Full source-of-truth files remain in place for automation:
