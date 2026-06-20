@@ -20,7 +20,7 @@ ROOT = Path(__file__).resolve().parents[1]
 PAPERS_PATH = ROOT / "data" / "papers.json"
 SITE_META_PATH = ROOT / "data" / "site_meta.json"
 
-SUMMARY_KEYS = ("ai_summary_ko", "ai_summary_en", "relevance_note_ko", "tags", "categories")
+SUMMARY_KEYS = ("ai_summary_en", "relevance_note_en", "tags", "categories")
 
 
 def main() -> None:
@@ -85,7 +85,7 @@ def main() -> None:
 
 
 def _should_refresh(paper: dict[str, Any], mode: str) -> bool:
-    summary = str(paper.get("ai_summary_ko") or "").strip()
+    summary = str(paper.get("ai_summary_en") or "").strip()
     if mode == "all":
         return True
     if mode in {"metadata", "fallback"}:
@@ -93,7 +93,7 @@ def _should_refresh(paper: dict[str, Any], mode: str) -> bool:
         return provider in {"fallback", "metadata", "metadata-based"} or paper.get("openai_summary_applied") is False
     if mode == "missing":
         return not summary
-    return not _is_five_question_summary(summary) or not paper.get("ai_summary_en")
+    return not _is_five_question_summary(summary)
 
 
 def _is_five_question_summary(summary: str) -> bool:

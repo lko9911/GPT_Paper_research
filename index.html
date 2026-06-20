@@ -9,15 +9,13 @@
       content="An AI-assisted research tracker for manufacturing, 3D/4D printing, robotics, and AI-driven production."
     />
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
-    <link rel="stylesheet" href="assets/style.css?v=20260617-author-consistent" />
+    <link rel="stylesheet" href="assets/style.css?v=20260619-filter-cache" />
   </head>
   <body>
     <header class="site-header" id="top">
       <div class="wide-shell">
         <div class="site-toolbar" aria-label="Display settings">
           <button id="theme-toggle" class="toolbar-toggle" type="button" aria-label="Toggle dark mode">Light</button>
-          <button id="language-toggle" class="toolbar-toggle" type="button" aria-label="Toggle language">KO</button>
-          <button id="density-toggle" class="toolbar-toggle" type="button" aria-label="Toggle card density">Compact</button>
         </div>
         <p class="eyebrow">AI Manufacturing Research Tracker</p>
         <h1>
@@ -28,94 +26,104 @@
           An AI-assisted research tracker for manufacturing, 3D/4D printing, robotics, and AI-driven production.
         </p>
         <p id="hero-status" class="hero-status">Loading curated papers...</p>
-
       </div>
     </header>
 
     <main class="wide-shell main-layout">
-      <aside class="sidebar" aria-label="빠른 탐색">
-        <strong>분야 및 서브 토픽</strong>
+      <aside class="sidebar" aria-label="Field navigation">
+        <strong>Fields and subtopics</strong>
         <nav id="side-topic-nav" class="side-nav"></nav>
       </aside>
 
       <div class="content">
-        <section class="stats" aria-label="논문 통계">
+        <section class="stats" aria-label="Paper statistics">
           <article>
             <span id="stat-total">0</span>
-            <strong>논문수</strong>
+            <strong>Papers</strong>
           </article>
           <article>
             <span id="stat-venues">0</span>
-            <strong>게재지</strong>
+            <strong>Venues</strong>
           </article>
           <article>
             <span id="stat-years">-</span>
-            <strong>조사연도</strong>
+            <strong>Years</strong>
           </article>
           <article class="stat-clock-card">
             <span id="stat-updated" class="stat-datetime">-</span>
-            <strong>현재 / 갱신</strong>
+            <strong>Now / Updated</strong>
           </article>
         </section>
 
-        <section class="controls" aria-label="검색 및 필터">
+        <section class="controls" aria-label="Search and filters">
           <label class="search-field">
             <span class="search-field-head">
-              <span class="search-label-text">검색</span>
-              <button id="reset-filters" class="reset-filters-button" type="button">필터 초기화</button>
+              <span class="search-label-text">Search</span>
+              <button id="reset-filters" class="reset-filters-button" type="button">Reset filters</button>
             </span>
-            <input id="search-input" type="search" placeholder="키워드, 저자, 태그, 요약 검색" autocomplete="off" />
+            <input id="search-input" type="search" placeholder="Search keyword, title, tag, summary" autocomplete="off" />
           </label>
           <label class="field-filter">
-            <span>분야</span>
+            <span>Field</span>
             <select id="category-filter">
-              <option value="">전체</option>
+              <option value="">All</option>
             </select>
           </label>
           <label class="tag-filter">
-            <span>태그/서브 토픽</span>
+            <span>Tag / subtopic</span>
             <select id="tag-filter">
-              <option value="">전체</option>
+              <option value="">All</option>
             </select>
           </label>
           <label class="venue-filter">
-            <span>게재지</span>
+            <span>Venue</span>
             <select id="venue-filter">
-              <option value="">전체</option>
+              <option value="">All</option>
             </select>
           </label>
           <label class="summary-filter">
-            <span>요약 유형</span>
+            <span>Summary type</span>
             <select id="summary-provider-filter">
-              <option value="">전체</option>
-              <option value="openai">AI 요약</option>
-              <option value="metadata">메타데이터 요약</option>
+              <option value="">All</option>
+              <option value="openai">AI summary</option>
+              <option value="metadata">Metadata summary</option>
             </select>
           </label>
           <label class="year-filter">
-            <span>연도</span>
+            <span>Year</span>
             <select id="year-filter">
-              <option value="">전체</option>
+              <option value="">All</option>
             </select>
           </label>
           <label class="sort-filter">
-            <span>정렬</span>
+            <span>Sort</span>
             <select id="sort-select">
-              <option value="newest">최신순</option>
-              <option value="relevance">관련성 점수순</option>
-              <option value="title">제목순</option>
+              <option value="newest">Newest</option>
+              <option value="relevance">Relevance</option>
+              <option value="title">Title</option>
             </select>
           </label>
         </section>
 
-        <section class="venue-section" aria-label="게재지별 논문">
+        <section class="venue-section" aria-label="Papers by venue">
           <div class="venue-section-head">
             <div>
               <p class="section-kicker">Venues</p>
-              <h2>주요 게재지</h2>
+              <h2>Core Venues</h2>
             </div>
           </div>
           <div id="venue-board" class="venue-board"></div>
+        </section>
+
+        <section id="aml-recommendations" class="aml-section" aria-label="AML recommended papers" hidden>
+          <div class="results-head">
+            <div>
+              <p class="section-kicker">AML Recommendation Engine</p>
+              <h2>AML Recommended Papers</h2>
+            </div>
+            <p id="aml-result-count">0 recommendations</p>
+          </div>
+          <div id="aml-recommendation-list" class="aml-recommendation-list"></div>
         </section>
 
         <section class="results-head">
@@ -123,13 +131,16 @@
             <p class="section-kicker">Papers by Field</p>
             <h2>Curated Papers</h2>
           </div>
-          <p id="result-count">0편 표시 중</p>
+          <p id="result-count">0 curated results</p>
         </section>
 
         <section id="paper-list" class="paper-list" aria-live="polite"></section>
+        <div class="load-more-wrap">
+          <button id="load-more-papers" class="link-pill subtle" type="button" hidden>Load more papers</button>
+        </div>
         <div id="empty-state" class="empty-state" hidden>
-          <strong>표시할 논문이 없습니다.</strong>
-          <p>검색어와 필터를 조정하거나 GitHub Actions 업데이트를 실행해 보세요.</p>
+          <strong>No papers match the current filters.</strong>
+          <p>Adjust the search or filters, or run the GitHub Actions update workflow.</p>
         </div>
       </div>
     </main>
@@ -157,6 +168,6 @@
       </div>
     </footer>
 
-    <script src="assets/app.js?v=20260617-author-consistent" defer></script>
+    <script src="assets/app.js?v=20260619-filter-cache" defer></script>
   </body>
 </html>

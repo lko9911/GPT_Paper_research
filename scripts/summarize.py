@@ -1,4 +1,4 @@
-"""Generate Korean summaries and relevance metadata for new papers."""
+"""Generate English summaries and relevance metadata for new papers."""
 
 from __future__ import annotations
 
@@ -9,29 +9,29 @@ import ast
 from typing import Any
 
 CATEGORIES = [
-    "리뷰 및 서베이",
-    "다중재료 적층제조",
-    "기능성 구배 적층제조",
+    "Reviews and Surveys",
+    "Multi-material AM",
+    "Functionally Graded AM",
     "Blended FDM / Digital Material Filament",
-    "계산설계",
-    "재료분포 최적화",
-    "툴패스 계획",
-    "재료 전환 / 퍼지 감소",
-    "그래프 탐색 / 경로 계획 알고리즘",
-    "적층제조를 위한 AI 및 머신러닝",
+    "Computational Design",
+    "Material Distribution Optimization",
+    "Toolpath Planning",
+    "Material Switching / Purge Reduction",
+    "Graph Search / Path Planning",
+    "AI and Machine Learning for AM",
 ]
 
 KEYWORDS = {
-    "리뷰 및 서베이": ["review", "survey", "state of the art", "overview"],
-    "다중재료 적층제조": ["multi-material", "multimaterial", "multiple material"],
-    "기능성 구배 적층제조": ["functionally graded", "fgam", "graded material"],
+    "Reviews and Surveys": ["review", "survey", "state of the art", "overview"],
+    "Multi-material AM": ["multi-material", "multimaterial", "multiple material"],
+    "Functionally Graded AM": ["functionally graded", "fgam", "graded material"],
     "Blended FDM / Digital Material Filament": ["blended fdm", "digital material filament", "dm filament", "filament blending"],
-    "계산설계": ["computational design", "inverse design", "design automation", "generative design"],
-    "재료분포 최적화": ["material distribution", "topology optimization", "distribution optimization"],
-    "툴패스 계획": ["toolpath", "tool path", "slicing", "deposition path"],
-    "재료 전환 / 퍼지 감소": ["material switching", "purge", "waste reduction", "transition"],
-    "그래프 탐색 / 경로 계획 알고리즘": ["graph search", "path planning", "traveling salesman", "routing"],
-    "적층제조를 위한 AI 및 머신러닝": ["machine learning", "deep learning", "artificial intelligence", "neural"],
+    "Computational Design": ["computational design", "inverse design", "design automation", "generative design"],
+    "Material Distribution Optimization": ["material distribution", "topology optimization", "distribution optimization"],
+    "Toolpath Planning": ["toolpath", "tool path", "slicing", "deposition path"],
+    "Material Switching / Purge Reduction": ["material switching", "purge", "waste reduction", "transition"],
+    "Graph Search / Path Planning": ["graph search", "path planning", "traveling salesman", "routing"],
+    "AI and Machine Learning for AM": ["machine learning", "deep learning", "artificial intelligence", "neural"],
 }
 
 TAG_MAP = {
@@ -121,15 +121,15 @@ TAG_MAP = {
 }
 
 TAG_CATEGORY_ALIASES = {
-    "Toolpath strategy": "툴패스 계획",
-    "Path planning": "그래프 탐색 / 경로 계획 알고리즘",
-    "Material distribution": "재료분포 최적화",
-    "Material switching": "재료 전환 / 퍼지 감소",
-    "Computational design": "계산설계",
-    "MMAM": "다중재료 적층제조",
-    "FGAM": "기능성 구배 적층제조",
-    "Machine learning": "적층제조를 위한 AI 및 머신러닝",
-    "Soft robotics": "계산설계",
+    "Toolpath strategy": "Toolpath Planning",
+    "Path planning": "Graph Search / Path Planning",
+    "Material distribution": "Material Distribution Optimization",
+    "Material switching": "Material Switching / Purge Reduction",
+    "Computational design": "Computational Design",
+    "MMAM": "Multi-material AM",
+    "FGAM": "Functionally Graded AM",
+    "Machine learning": "AI and Machine Learning for AM",
+    "Soft robotics": "Computational Design",
 }
 
 GENERIC_TAGS = {"적층제조", "문헌추적", "메타데이터", "3D 프린팅"}
@@ -203,10 +203,10 @@ TAG_ALIASES = {
 
 
 def summarize_record(record: dict[str, Any], allow_openai: bool = True) -> dict[str, Any]:
-    """Add Korean summary fields to a record.
+    """Add English summary fields to a record.
 
     OPENAI_API_KEY enables model-based generation. Without it, this function
-    creates a conservative Korean summary from transient abstract signals and
+    creates a conservative English summary from transient abstract signals and
     metadata, avoiding any verbatim abstract reuse.
     """
 
@@ -243,19 +243,13 @@ def _summarize_with_openai(record: dict[str, Any], abstract: str) -> dict[str, A
                 {
                     "role": "system",
                     "content": (
-                        "You write new Korean and English paper summaries. Do not copy or translate abstract sentences verbatim. "
+                        "You write new English paper summaries. Do not copy or translate abstract sentences verbatim. "
                         "Do not closely paraphrase the abstract, preserve its sentence order, or reuse long technical noun-phrase chains from it. "
                         "Each answer must be newly written from the bibliographic facts and high-level meaning only; use compact synthesis, not abstract rewriting. "
-                        "The ai_summary_ko field must answer exactly these five labeled questions in Korean, each in one concise sentence: "
-                        "1. Topic - 이 논문은 무엇을 다루는가? "
-                        "2. Problem - 어떤 문제나 한계를 해결하려는가? "
-                        "3. Method - 어떤 방법이나 접근을 사용했는가? "
-                        "4. Key Result - 가장 중요한 결과는 무엇인가? "
-                        "5. Takeaway - 그래서 이 논문의 핵심 메시지는 무엇인가? "
-                        "Also write ai_summary_en in English with the same five labels: "
+                        "The ai_summary_en field must answer exactly these five labeled questions in English, each in one concise sentence: "
                         "1. Topic -, 2. Problem -, 3. Method -, 4. Key Result -, 5. Takeaway -. "
                         "For ai_summary_en, avoid eight-or-more-word overlaps with the abstract except unavoidable paper titles, material names, or standard method names. "
-                        "Return strict JSON with ai_summary_ko, ai_summary_en, relevance_score, relevance_note_ko, tags, categories."
+                        "Return strict JSON with ai_summary_en, relevance_score, relevance_note_en, tags, categories."
                     ),
                 },
                 {
@@ -273,24 +267,51 @@ def _summarize_with_openai(record: dict[str, Any], abstract: str) -> dict[str, A
 
 
 def _fallback_summary(record: dict[str, Any], abstract: str) -> dict[str, Any]:
-    title = record.get("title", "이 논문")
-    venue = record.get("venue") or "학술 문헌"
-    year = record.get("year") or "연도 미상"
+    title = record.get("title", "This paper")
+    venue = record.get("venue") or "an unknown venue"
+    year = record.get("year") or "an undated year"
     categories = _classify(record, abstract)
     tags = _tags(record, abstract, categories)
     score = _score(record, abstract, categories)
-    summary = _abstract_based_summary(record, abstract, categories, tags, year, venue, score)
-    note = (
-        f"이 트래커에서는 {', '.join(tags[:3])} 키워드를 기준으로 "
-        f"제조·설계 연구와의 관련성을 {score}/10로 평가했습니다."
+    tag_phrase = _english_list(tags[:3] or categories[:2]) or "manufacturing research"
+    summary = _format_english_five_question_summary(
+        f"{title} is a {year} paper from {venue} about {tag_phrase}.",
+        f"It is tracked because it addresses a design, process, material, or automation issue connected to {tag_phrase}.",
+        "The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.",
+        "The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.",
+        f"It is useful for this tracker as comparison or background literature for {tag_phrase}; current relevance score is {score}/10.",
     )
+    note = f"Relevant to the tracker through {tag_phrase}; score: {score}/10."
     return {
-        "ai_summary_ko": summary,
+        "ai_summary_en": summary,
         "relevance_score": score,
-        "relevance_note_ko": note,
+        "relevance_note_en": note,
         "tags": tags[:6],
         "categories": categories[:2],
     }
+
+
+def _format_english_five_question_summary(subject: str, problem: str, approach: str, finding: str, usefulness: str) -> str:
+    return "\n".join(
+        [
+            f"1. Topic - {subject}",
+            f"2. Problem - {problem}",
+            f"3. Method - {approach}",
+            f"4. Key Result - {finding}",
+            f"5. Takeaway - {usefulness}",
+        ]
+    )
+
+
+def _english_list(items: list[str]) -> str:
+    clean = [str(item).strip() for item in items if str(item).strip()]
+    if not clean:
+        return ""
+    if len(clean) == 1:
+        return clean[0]
+    if len(clean) == 2:
+        return f"{clean[0]} and {clean[1]}"
+    return f"{', '.join(clean[:-1])}, and {clean[-1]}"
 
 
 def _abstract_based_summary(
@@ -544,7 +565,7 @@ def _classify(record: dict[str, Any], abstract: str) -> list[str]:
         if score:
             scored.append((score, category))
     if not scored:
-        return ["다중재료 적층제조"]
+        return ["Multi-material AM"]
     return [category for _, category in sorted(scored, reverse=True)[:2]]
 
 
@@ -603,12 +624,11 @@ def _sanitize_generated(payload: dict[str, Any], source_text: str = "") -> dict[
     if source_text and _is_manufacturing_digital_twin(source_text):
         score = max(score, 7)
     return {
-        "ai_summary_ko": _normalize_generated_summary(payload.get("ai_summary_ko"), _ko_summary_labels()),
         "ai_summary_en": _normalize_generated_summary(payload.get("ai_summary_en"), _en_summary_labels()),
         "relevance_score": max(1, min(10, score)),
-        "relevance_note_ko": str(payload.get("relevance_note_ko", "")).strip(),
+        "relevance_note_en": str(payload.get("relevance_note_en", "")).strip(),
         "tags": cleaned_tags,
-        "categories": categories or ["다중재료 적층제조"],
+        "categories": categories or ["Multi-material AM"],
     }
 
 

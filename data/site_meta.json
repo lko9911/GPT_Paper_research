@@ -1,19 +1,29 @@
 {
-  "last_run_at_utc": "2026-06-17T06:26:45Z",
-  "last_run_date": "2026-06-17",
-  "paper_count": 1359,
-  "curated_count": 1359,
-  "raw_candidate_count": 3077,
-  "archived_count": 1718,
-  "hidden_low_relevance_count": 1642,
-  "duplicate_archived_count": 76,
-  "papers_added": 2,
-  "raw_records_added": 2,
+  "last_run_at_utc": "2026-06-19T20:46:12Z",
+  "last_run_date": "2026-06-19",
+  "paper_count": 1233,
+  "curated_count": 1233,
+  "raw_candidate_count": 1285,
+  "archived_count": 52,
+  "hidden_low_relevance_count": 0,
+  "duplicate_archived_count": 52,
+  "papers_added": 1233,
+  "raw_records_added": 1285,
   "since_year": 2024,
   "curated_min_score": 5,
   "sources": [
-    "OpenAlex",
-    "Crossref",
-    "Semantic Scholar optional"
-  ]
+    "Crossref"
+  ],
+  "collection_mode": "full_rebuild_crossref_only",
+  "openalex_general_search_enabled": false,
+  "priority_venue_search_enabled": false,
+  "openalex_used_for": "missing_corresponding_author_doi_cross_check_only",
+  "openalex_corresponding_author_stats": {
+    "checked": 1285,
+    "completed": 801,
+    "not_found": 484,
+    "skipped_has_crossref_corresponding": 0,
+    "skipped_no_doi": 0
+  },
+  "backup_dir": "data/old_exports/full_rebuild_20260619204612"
 }

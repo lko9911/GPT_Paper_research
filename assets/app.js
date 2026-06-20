@@ -20,7 +20,7 @@ const FIELD_ORDER = [
 ];
 
 const FIELD_SUBTOPICS = {
-  "생산/제조": ["금속/합금 제조", "복합재/소재 제조", "공정 최적화"],
+  "생산/제조": ["복합재/소재 제조", "공정 최적화"],
   "3D 프린팅": ["MMAM", "FGAM", "Volumetric AM", "DLP", "SLA", "Vat photopolymerization", "FDM/Material extrusion", "Toolpath", "Material Switching", "Additive manufacturing"],
   "4D 프린팅": ["LCE", "메타물질", "Active materials"],
   "로봇틱스(생산제조)": ["Soft robotics", "제조 자동화", "Robot-based Manufacturing"],
@@ -59,7 +59,6 @@ const CARD_TAG_PRIORITY = new Map([
   ["Metamaterials", 2],
   ["Active materials", 2],
   ["Process optimization", 3],
-  ["Metals/Alloys", 3],
   ["Composites/Materials", 3],
 ]);
 
@@ -72,92 +71,18 @@ const TARGET_VENUES = [
   "Science Advances",
   "Science Robotics",
   "Additive Manufacturing",
+  "ACS Applied Materials & Interfaces",
+  "Materials & Design",
 ];
 
 const UI_TEXT = {
-  ko: {
-    themeDark: "Dark",
-    themeLight: "Light",
-    langToggle: "EN",
-    densityCompact: "간결",
-    densityComfortable: "넓게",
-    heroStatusLoading: "논문 정보를 불러오는 중...",
-    heroStatus:
-      "{papers}편 큐레이션 · {venues}개 게재지 · {years} · {updated} KST 갱신",
-    subtitle: "생산·제조, 3D/4D 프린팅, 로봇틱스, AI 제조 분야를 위한 AI 기반 논문 큐레이션 저장소",
-    noticeMain: "본 저장소는 DOI 링크와 AI 생성 요약만 제공합니다. 저작권이 있는 PDF나 출판사 초록 원문을 호스팅하지 않습니다.",
-    noticeSoft:
-      "본 사이트의 요약은 공개된 논문 메타데이터 및 초록을 바탕으로 AI가 새로 작성한 한글 요약입니다. 원문 및 정확한 내용은 DOI 링크를 통해 확인하세요.",
-    sideTitle: "분야 및 서브 토픽",
-    totalPapers: "논문수",
-    latestRunAdded: "이번 업데이트",
-    weeklyAddedShort: "주간 신규",
-    venueCount: "게재지",
-    yearRange: "조사연도",
-    currentUpdate: "현재 / 갱신",
-    subtopicCount: "수집 후보",
-    latestUpdate: "마지막 수집",
-    weekAdded: "숨긴 후보",
-    search: "검색",
-    searchPlaceholder: "키워드, 저자, 태그, 요약 검색",
-    field: "분야",
-    tagSubtopic: "태그/서브 토픽",
-    venue: "게재지",
-    summaryProvider: "요약 유형",
-    year: "연도",
-    sort: "정렬",
-    all: "전체",
-    allSummaries: "전체",
-    newest: "최신순",
-    relevance: "관련성 점수순",
-    title: "제목순",
-    resetFilters: "필터 초기화",
-    venuesTitle: "게재지",
-    allVenues: "전체 게재지",
-    papersByField: "분야별 논문",
-    curatedPapers: "논문 목록",
-    emptyTitle: "표시할 논문이 없습니다.",
-    emptyText: "검색어와 필터를 조정하거나 GitHub Actions 업데이트를 실행해 보세요.",
-    footer:
-      "Metadata from OpenAlex, Crossref, and optionally Semantic Scholar. Summaries are generated and do not reproduce publisher abstracts.",
-    contactLabel: "문의",
-    papers: "편",
-    priority: "Core",
-    others: "기타",
-    lowCountVenue: "Core 외",
-    showing: "개 큐레이션 결과",
-    unknownYear: "연도 미상",
-    relevanceLabel: "관련성",
-    openaiApplied: "AI 요약",
-    openaiNotApplied: "메타데이터 요약",
-    openaiAppliedTitle: "OpenAI API로 생성한 요약입니다.",
-    openaiNotAppliedTitle: "OpenAI API를 사용하지 않고 제목, 초록 사용 여부, DOI 및 공개 메타데이터 신호를 바탕으로 작성한 요약입니다.",
-    fallbackSummary: "메타데이터 기반 요약",
-    summaryMissing: "요약이 아직 생성되지 않았습니다.",
-    authorsLabel: "저자",
-    correspondingAuthorsLabel: "교신저자",
-    correspondingAuthorBadge: "교신",
-    openPaper: "논문 열기",
-    doiButton: "DOI",
-    copyCitation: "인용 복사",
-    copiedCitation: "복사됨",
-    summaryQuestions: [
-      "Topic",
-      "Problem",
-      "Method",
-      "Key Result",
-      "Takeaway",
-    ],
-  },
+
   en: {
     themeDark: "Dark",
     themeLight: "Light",
-    langToggle: "KO",
-    densityCompact: "Compact",
-    densityComfortable: "Comfort",
     heroStatusLoading: "Loading curated papers...",
     heroStatus:
-      "{papers} curated papers · {venues} venues · {years} · updated {updated} KST",
+      "{papers} curated papers - {venues} venues - {years} - updated {updated} KST",
     subtitle: "An AI-assisted research tracker for manufacturing, 3D/4D printing, robotics, and AI-driven production.",
     noticeMain: "This repository provides DOI links and AI-generated summaries only. It does not host copyrighted PDFs or publisher abstract text.",
     noticeSoft:
@@ -233,7 +158,6 @@ const LABEL_TRANSLATIONS = {
     "로봇틱스(생산제조)": "Robotics for Manufacturing",
     "AI 생산제조": "AI Manufacturing",
     "공정 최적화": "Process Optimization",
-    "금속/합금 제조": "Metals/Alloys",
     "건설/대형 제조": "Construction/Large-scale",
     "복합재/소재 제조": "Composites/Materials",
     "툴패스": "Toolpath",
@@ -270,50 +194,7 @@ const LABEL_TRANSLATIONS = {
 };
 
 const TAG_LABELS = {
-  ko: {
-    "Additive manufacturing": "적층제조",
-    "Volumetric AM": "Volumetric AM",
-    "Soft robotics": "소프트 로보틱스",
-    MMAM: "다중재료",
-    FGAM: "기능성 구배",
-    "DM filament": "DM filament",
-    "FDM/Material extrusion": "FDM",
-    DLP: "Digital Light Processing (DLP)",
-    SLA: "Stereolithography (SLA)",
-    "Vat photopolymerization": "Vat photopolymerization",
-    LCE: "LCE",
-    "4D printing": "4D 프린팅",
-    Metamaterials: "메타물질",
-    "Active materials": "능동 재료",
-    "Digital fabrication": "디지털 제작",
-    "Toolpath strategy": "툴패스 전략",
-    "Material behavior": "재료 거동",
-    "Computational design": "계산설계",
-    "Material distribution": "재료분포",
-    "Material switching": "재료전환",
-    "Path planning": "경로계획",
-    "Process optimization": "공정 최적화",
-    "Manufacturing automation": "제조 자동화",
-    "Self-driving Labs": "자율 실험실",
-    "Digital Twins": "디지털 트윈",
-    "Robotic autonomous experimentation": "자율 실험실",
-    "Design automation": "설계 자동화",
-    "Machine learning": "머신러닝",
-    "Robot-based Manufacturing": "로봇 기반 생산제조",
-    "Metals/Alloys": "금속/합금",
-    "Composites/Materials": "복합재/소재",
-    Sustainability: "지속가능성",
-    "Material property control": "물성 제어",
-    "Micro/Nano manufacturing": "마이크로/나노 제조",
-    "Shape morphing": "형상 변형",
-    "Stimuli-responsive": "자극 반응",
-    "Deep Learning": "딥러닝",
-    "Reinforcement Learning": "강화학습",
-    "AI Process Control": "AI 공정제어",
-    Honeycomb: "허니컴",
-    "Energy absorption": "에너지 흡수",
-    Reusability: "재사용성",
-  },
+
   en: {
     "Additive manufacturing": "Additive Manufacturing",
     "Volumetric AM": "Volumetric AM",
@@ -344,7 +225,6 @@ const TAG_LABELS = {
     "Design automation": "Design Automation",
     "Machine learning": "Machine Learning",
     "Robot-based Manufacturing": "Robot-based Manufacturing",
-    "Metals/Alloys": "Metals/Alloys",
     "Composites/Materials": "Composites/Materials",
     Sustainability: "Sustainability",
     "Material property control": "Material Property Control",
@@ -373,32 +253,46 @@ const TAG_CATEGORY_ALIASES = {
 
 const DEFAULT_THEME = "dark";
 const DEFAULT_LANGUAGE = "en";
-const DEFAULT_DENSITY = "comfortable";
-const PREFERENCE_VERSION = "20260612-en-dark";
+const PREFERENCE_VERSION = "20260618-english-comfort";
 const UPDATE_STATUS_URLS = [
   "https://raw.githubusercontent.com/lko9911/GPT_Paper_research/main/data/update_status.json",
   "data/update_status.json",
 ];
+const AML_RECOMMENDATIONS_URL = "public/data/aml_recommended_papers.json";
+const PAPERS_INDEX_URL = "data/papers_index.json";
+const PAPERS_FALLBACK_URL = "data/papers.json";
+const DETAIL_MANIFEST_URL = "data/detail_manifest.json";
+const DETAILS_BASE_URL = "data/details/";
+const INITIAL_RENDER_LIMIT = 80;
+const RENDER_INCREMENT = 80;
+const FILTER_DEBOUNCE_MS = 120;
 
 if (localStorage.getItem("preferenceVersion") !== PREFERENCE_VERSION) {
   localStorage.setItem("theme", DEFAULT_THEME);
-  localStorage.setItem("language", DEFAULT_LANGUAGE);
-  localStorage.setItem("density", DEFAULT_DENSITY);
   localStorage.setItem("preferenceVersion", PREFERENCE_VERSION);
 }
+localStorage.removeItem("language");
 
 const state = {
   papers: [],
+  amlRecommendations: [],
   siteMeta: null,
   updateStatus: null,
   filtered: [],
+  renderLimit: INITIAL_RENDER_LIMIT,
   activeTargetVenue: "",
   activeVenueGroup: "",
   activeSubtopic: "",
+  amlPanelRequested: false,
   theme: localStorage.getItem("theme") || DEFAULT_THEME,
-  language: localStorage.getItem("language") || DEFAULT_LANGUAGE,
-  density: localStorage.getItem("density") || DEFAULT_DENSITY,
+  language: DEFAULT_LANGUAGE,
   collapsedFields: new Set(readStoredArray("collapsedFields")),
+  paperDetails: new Map(),
+  detailManifest: null,
+  detailChunks: new Map(),
+  detailLoading: new Set(),
+  detailErrors: new Map(),
+  filterTimer: null,
 };
 
 function readStoredArray(key) {
@@ -431,20 +325,16 @@ const els = {
   opsNote: document.querySelector("#ops-note"),
   heroStatus: document.querySelector("#hero-status"),
   themeToggle: document.querySelector("#theme-toggle"),
-  languageToggle: document.querySelector("#language-toggle"),
-  densityToggle: document.querySelector("#density-toggle"),
+  amlSection: document.querySelector("#aml-recommendations"),
+  amlList: document.querySelector("#aml-recommendation-list"),
+  amlCount: document.querySelector("#aml-result-count"),
+  loadMore: document.querySelector("#load-more-papers"),
 };
 
 async function init() {
   setupPreferences();
-  try {
-    const response = await fetch(`data/papers.json?ts=${Date.now()}`);
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    state.papers = await response.json();
-  } catch (error) {
-    console.error("Failed to load papers.json", error);
-    state.papers = [];
-  }
+  state.papers = await loadPaperIndex();
+  preparePaperRuntimeCache(state.papers);
   try {
     const response = await fetch(`data/site_meta.json?ts=${Date.now()}`);
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
@@ -453,11 +343,13 @@ async function init() {
     console.warn("Failed to load site_meta.json", error);
     state.siteMeta = null;
   }
+  state.amlRecommendations = await loadAmlRecommendations();
   state.updateStatus = await loadUpdateStatus();
 
   buildFilters();
   buildSideNav();
   renderVenueBoard();
+  renderAmlRecommendations();
   updateStats();
   applyFilters();
 
@@ -466,7 +358,11 @@ async function init() {
     el.addEventListener("input", () => {
       if (el === els.category) state.activeSubtopic = "";
       if (el === els.venue) clearVenueQuickFilters();
-      applyFilters();
+      if (el === els.search) {
+        scheduleApplyFilters();
+      } else {
+        applyFilters();
+      }
     });
     el.addEventListener("change", () => {
       if (el === els.category) state.activeSubtopic = "";
@@ -478,6 +374,83 @@ async function init() {
   if (els.resetFilters) {
     els.resetFilters.addEventListener("click", resetFilters);
   }
+  if (els.loadMore) {
+    els.loadMore.addEventListener("click", () => {
+      state.renderLimit += RENDER_INCREMENT;
+      render();
+    });
+  }
+}
+
+async function loadPaperIndex() {
+  try {
+    const response = await fetch(`${PAPERS_INDEX_URL}?ts=${Date.now()}`);
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    return await response.json();
+  } catch (error) {
+    console.error("Failed to load papers_index.json", error);
+    showDataLoadError("Could not load the lightweight paper index. Trying local fallback data.");
+  }
+
+  try {
+    const response = await fetch(`${PAPERS_FALLBACK_URL}?ts=${Date.now()}`);
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    console.warn("Using full papers.json fallback. Production should serve papers_index.json.");
+    return await response.json();
+  } catch (error) {
+    console.error("Failed to load fallback papers.json", error);
+    showDataLoadError("Paper data could not be loaded. Please regenerate split data files.");
+    return [];
+  }
+}
+
+function showDataLoadError(message) {
+  if (!els.empty) return;
+  els.empty.hidden = false;
+  els.empty.innerHTML = `<strong>Data loading problem.</strong><p>${escapeHtml(message)}</p>`;
+}
+
+function preparePaperRuntimeCache(papers) {
+  papers.forEach(preparePaperRuntime);
+}
+
+function preparePaperRuntime(paper) {
+  const visible = visibleTags(paper);
+  const subtopics = deriveSubtopics(paper);
+  const field = deriveField(paper);
+  const canonicalTags = [...(paper.tags || []), ...visible, ...subtopics]
+    .map(canonicalTopicLabel)
+    .filter((topic) => topic !== "Digital Twins" || paperHasCuratedDigitalTwinTag(paper));
+  const searchText = normalize(
+    [
+      field,
+      paper.title,
+      (paper.authors || []).join(" "),
+      authorSearchText(paper),
+      paper.venue,
+      paper.doi,
+      (paper.categories || []).join(" "),
+      visible.join(" "),
+      subtopics.join(" "),
+      paper.ai_summary_en,
+      paper.relevance_note_en,
+    ].join(" ")
+  );
+
+  paper._runtime = {
+    field,
+    visibleTags: visible,
+    subtopics,
+    canonicalTagSet: new Set(canonicalTags),
+    venue: normalizeVenue(paper.venue),
+    searchText,
+    summaryProvider: summaryProviderForFilter(paper),
+  };
+  return paper._runtime;
+}
+
+function runtimeForPaper(paper) {
+  return paper._runtime || preparePaperRuntime(paper);
 }
 
 function setupPreferences() {
@@ -489,25 +462,6 @@ function setupPreferences() {
       applyPreferences();
     });
   }
-  if (els.languageToggle) {
-    els.languageToggle.addEventListener("click", () => {
-      state.language = state.language === "ko" ? "en" : "ko";
-      localStorage.setItem("language", state.language);
-      applyPreferences();
-      buildFiltersReset();
-      buildSideNav();
-      renderVenueBoard();
-      updateStats();
-      applyFilters();
-    });
-  }
-  if (els.densityToggle) {
-    els.densityToggle.addEventListener("click", () => {
-      state.density = state.density === "compact" ? "comfortable" : "compact";
-      localStorage.setItem("density", state.density);
-      applyPreferences();
-    });
-  }
   window.setInterval(() => {
     updateStats();
   }, 60000);
@@ -515,16 +469,9 @@ function setupPreferences() {
 
 function applyPreferences() {
   document.documentElement.dataset.theme = state.theme;
-  document.documentElement.dataset.density = state.density;
-  document.documentElement.lang = state.language === "ko" ? "ko" : "en";
+  document.documentElement.lang = "en";
   if (els.themeToggle) {
     els.themeToggle.textContent = state.theme === "dark" ? t("themeLight") : t("themeDark");
-  }
-  if (els.languageToggle) {
-    els.languageToggle.textContent = t("langToggle");
-  }
-  if (els.densityToggle) {
-    els.densityToggle.textContent = state.density === "compact" ? t("densityComfortable") : t("densityCompact");
   }
   applyStaticLanguage();
 }
@@ -586,10 +533,11 @@ function buildFilters() {
   const years = new Set();
 
   state.papers.forEach((paper) => {
-    fields.add(deriveField(paper));
-    visibleTags(paper).forEach((tag) => tags.add(tag));
-    deriveSubtopics(paper).forEach((subtopic) => tags.add(canonicalTopicLabel(subtopic)));
-    venues.add(normalizeVenue(paper.venue));
+    const runtime = runtimeForPaper(paper);
+    fields.add(runtime.field);
+    runtime.visibleTags.forEach((tag) => tags.add(tag));
+    runtime.subtopics.forEach((subtopic) => tags.add(canonicalTopicLabel(subtopic)));
+    venues.add(runtime.venue);
     if (paper.year) years.add(String(paper.year));
   });
 
@@ -619,11 +567,16 @@ function buildFilters() {
 }
 
 function buildSideNav() {
-  const fieldCounts = countBy(state.papers, deriveField);
-  els.sideTopicNav.innerHTML = FIELD_ORDER.filter((field) => fieldCounts.get(field))
+  const fieldCounts = countBy(state.papers, (paper) => runtimeForPaper(paper).field);
+  const amlCount = amlVisibleRecommendations().length;
+  const amlShortcut = `<button class="side-top-link" type="button" data-side-target="aml-recommendations">
+    <span class="side-label">AML Recommendations</span>
+    <span class="side-count">${amlCount ? amlCount.toLocaleString("en-US") : "Open"}</span>
+  </button>`;
+  const fieldGroups = FIELD_ORDER.filter((field) => fieldCounts.get(field))
     .map((field) => {
       const subtopics = FIELD_SUBTOPICS[field] || [];
-      const fieldPapers = state.papers.filter((paper) => deriveField(paper) === field);
+      const fieldPapers = state.papers.filter((paper) => runtimeForPaper(paper).field === field);
       const bucketCounts = sidebarBucketCounts(fieldPapers, subtopics);
       const isCollapsed = state.collapsedFields.has(field);
       const subtopicButtons = [...subtopics, SIDEBAR_OTHER_TOPIC]
@@ -639,6 +592,18 @@ function buildSideNav() {
       </div>`;
     })
     .join("");
+  els.sideTopicNav.innerHTML = `${amlShortcut}${fieldGroups}`;
+
+  els.sideTopicNav.querySelectorAll("[data-side-target]").forEach((button) => {
+    button.addEventListener("click", () => {
+      state.amlPanelRequested = true;
+      renderAmlRecommendations();
+      const target = document.querySelector(`#${button.dataset.sideTarget}`);
+      if (target) {
+        target.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    });
+  });
 
   els.sideTopicNav.querySelectorAll("[data-side-field]").forEach((button) => {
     button.addEventListener("click", (event) => {
@@ -706,7 +671,7 @@ function syncSideNavActive() {
 function venueCountEntries() {
   const counts = new Map();
   state.papers.forEach((paper) => {
-    const venue = normalizeVenue(paper.venue);
+    const venue = runtimeForPaper(paper).venue;
     counts.set(venue, (counts.get(venue) || 0) + 1);
   });
   return [...counts.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "ko"));
@@ -756,6 +721,223 @@ function renderVenueBoard() {
   });
 }
 
+async function loadAmlRecommendations() {
+  try {
+    const response = await fetch(`${AML_RECOMMENDATIONS_URL}?ts=${Date.now()}`);
+    if (!response.ok) return [];
+    const data = await response.json();
+    return Array.isArray(data) ? data : [];
+  } catch (error) {
+    console.warn("AML recommendations are not available yet", error);
+    return [];
+  }
+}
+
+function renderAmlRecommendations() {
+  if (!els.amlSection || !els.amlList || !els.amlCount) return;
+  const items = state.amlRecommendations || [];
+  if (!items.length) {
+    if (!state.amlPanelRequested) {
+      els.amlSection.hidden = true;
+      return;
+    }
+    els.amlSection.hidden = false;
+    els.amlCount.textContent = "No published recommendations";
+    els.amlList.innerHTML = amlEmptyMessage();
+    return;
+  }
+  const visible = amlVisibleRecommendations();
+  if (!visible.length) {
+    if (!state.amlPanelRequested) {
+      els.amlSection.hidden = true;
+      return;
+    }
+    els.amlSection.hidden = false;
+    els.amlCount.textContent = "0 recommendations";
+    els.amlList.innerHTML = amlEmptyMessage("The AML recommendation file exists, but no public recommendations are available.");
+    return;
+  }
+  els.amlSection.hidden = false;
+  els.amlCount.textContent = `${visible.length.toLocaleString("en-US")} recommendations`;
+  els.amlList.innerHTML = visible.map(renderAmlRecommendationCard).join("");
+  attachAmlCitationHandlers(visible);
+}
+
+function amlEmptyMessage(message = "No public AML recommendation file is available yet. Run the manual AML Recommendation workflow to publish related papers here.") {
+  return `<div class="aml-empty-card">
+    <strong>AML recommendation papers are not published yet.</strong>
+    <p>${escapeHtml(message)}</p>
+  </div>`;
+}
+
+function amlVisibleRecommendations() {
+  return (state.amlRecommendations || [])
+    .filter((item) => ["High", "Possible", "Watch"].includes(item.recommendation_level))
+    .sort((a, b) => Number(b.aml_score || 0) - Number(a.aml_score || 0))
+    .slice(0, 24);
+}
+
+function renderAmlRecommendationCard(item) {
+  const doiUrl = item.url || (item.doi ? `https://doi.org/${item.doi}` : "");
+  const publicationLabel = [item.journal || "Venue unknown", item.year].filter(Boolean).join(" ");
+  const score = Math.round(Number(item.aml_score || 0) * 100);
+  const topics = (item.matched_topics || [])
+    .slice(0, 3)
+    .map((topic) => badge(displayLabel(topic), "tag"))
+    .join("");
+  const routes = (item.discovery_routes || []).slice(0, 3).map((route) => String(route).replace(/_/g, " ")).join(", ");
+  const seed = (item.related_seed_papers || [])[0];
+  const seedText = seed && seed.title ? `Closest seed: ${seed.title}` : "";
+  const summaryHtml = renderAmlSummaryBlock(item);
+  const relevanceNote = formatAmlRelevanceNote(item);
+  const authorDetailsHtml = renderAuthorDetails({
+    authors: Array.isArray(item.authors) ? item.authors : [],
+    author_details: Array.isArray(item.author_details) ? item.author_details : [],
+  });
+  return `<article class="paper-card aml-card">
+    <div class="card-content">
+      <div class="card-topline">
+        <span class="publication-badge">${escapeHtml(publicationLabel)}</span>
+        <span class="relevance-badge">AML ${escapeHtml(String(score))}/100</span>
+      </div>
+      <h4 class="paper-title">${escapeHtml(item.title || "Untitled")}</h4>
+      ${authorDetailsHtml}
+      ${summaryHtml}
+      <p class="relevance-note">${escapeHtml(relevanceNote)}</p>
+      ${seedText ? `<p class="policy-mini">${escapeHtml(seedText)}</p>` : ""}
+      <div class="tag-line">${topics}</div>
+      <div class="card-links">
+        ${doiUrl ? `<a class="link-pill primary" href="${escapeAttribute(doiUrl)}" target="_blank" rel="noopener noreferrer">Open Paper</a>` : ""}
+        ${doiUrl ? `<a class="link-pill subtle" href="${escapeAttribute(doiUrl)}" target="_blank" rel="noopener noreferrer">DOI</a>` : ""}
+        <button class="link-pill subtle" type="button" data-aml-citation="${escapeAttribute(item.doi || item.title || "")}">${escapeHtml(t("copyCitation"))}</button>
+      </div>
+      <p class="policy-mini">AML recommendation - ${escapeHtml(routes ? `routes: ${routes}` : "manual recommendation output")} - updated ${escapeHtml(formatAmlUpdatedAt(item.updated_at))}</p>
+    </div>
+  </article>`;
+}
+
+function scheduleApplyFilters() {
+  window.clearTimeout(state.filterTimer);
+  state.filterTimer = window.setTimeout(applyFilters, FILTER_DEBOUNCE_MS);
+}
+
+function formatAmlRelevanceNote(item) {
+  const topics = amlMatchedTopicLabels(item);
+  const topicPhrase = formatEnglishList(topics) || "the AML recommendation profile";
+  const score = Math.max(0, Math.min(100, Math.round(Number(item.aml_score || 0) * 100)));
+  const routes = (item.discovery_routes || [])
+    .slice(0, 2)
+    .map((route) => String(route).replace(/_/g, " "))
+    .filter(Boolean);
+  const routePhrase = routes.length ? ` and found through ${formatEnglishList(routes)}` : "";
+  const seed = (item.related_seed_papers || [])[0];
+  const seedPhrase = seed && seed.title ? `; closest seed: ${seed.title}` : "";
+  return `Relevant to the tracker through ${topicPhrase}; AML score: ${score}/100. Why this score: matched ${topicPhrase}${routePhrase}${seedPhrase}.`;
+}
+
+function amlMatchedTopicLabels(item) {
+  const labels = [];
+  const seen = new Set();
+  (item.matched_topics || []).forEach((topic) => {
+    const label = normalizeAmlTopicLabel(displayLabel(topic));
+    const key = label.toLowerCase();
+    if (label && !seen.has(key)) {
+      seen.add(key);
+      labels.push(label);
+    }
+  });
+  return labels.slice(0, 3);
+}
+
+function normalizeAmlTopicLabel(label) {
+  const value = String(label || "").trim();
+  const lower = value.toLowerCase();
+  if (!value) return "";
+  if (lower === "liquid crystal elastomer" || lower === "liquid crystal elastomers") return "LCE";
+  if (lower === "soft robotics") return "Soft Robotics";
+  return value;
+}
+
+function renderAmlSummaryBlock(item) {
+  return `<dl class="summary summary-qa">
+    ${amlSummarySections(item)
+      .map(
+        (section, index) => `<div class="${index === 4 ? "is-takeaway" : ""}">
+          <dt>${escapeHtml(section.question)}</dt>
+          <dd>${escapeHtml(section.answer)}</dd>
+        </div>`
+      )
+      .join("")}
+  </dl>`;
+}
+
+function amlSummarySections(item) {
+  const labels = UI_TEXT.en.summaryQuestions;
+  const title = item.title || "This paper";
+  const venue = item.journal || "an unknown venue";
+  const year = item.year || "undated";
+  const topics = (item.matched_topics || []).slice(0, 4).map(displayLabel);
+  const topicPhrase = formatEnglishList(topics) || "the AML recommendation profile";
+  const routes = (item.discovery_routes || []).slice(0, 3).map((route) => String(route).replace(/_/g, " "));
+  const routePhrase = formatEnglishList(routes) || "the current recommendation pool";
+  const seed = (item.related_seed_papers || [])[0];
+  const score = Math.round(Number(item.aml_score || 0) * 100);
+  const reason = item.why_recommended || `It matches ${topicPhrase} in the AML recommendation profile.`;
+
+  return [
+    {
+      question: labels[0],
+      answer: `${title} is a ${year} paper from ${venue} recommended for its connection to ${topicPhrase}.`,
+    },
+    {
+      question: labels[1],
+      answer: "It is included because the recommendation engine detected overlap with the lab's target manufacturing and design interests.",
+    },
+    {
+      question: labels[2],
+      answer: `It was selected through ${routePhrase} using metadata, curated topic signals, and AML profile scoring; the detailed method should be checked in the DOI source.`,
+    },
+    {
+      question: labels[3],
+      answer: seed && seed.title
+        ? `The strongest recommendation signal is its similarity to the seed paper "${seed.title}".`
+        : reason,
+    },
+    {
+      question: labels[4],
+      answer: `${reason} Current AML recommendation score is ${score}/100.`,
+    },
+  ];
+}
+
+function attachAmlCitationHandlers(items) {
+  const citationMap = new Map(items.map((item) => [String(item.doi || item.title || ""), buildAmlCitation(item)]));
+  els.amlList.querySelectorAll("[data-aml-citation]").forEach((button) => {
+    button.addEventListener("click", async (event) => {
+      const key = event.currentTarget.dataset.amlCitation || "";
+      await navigator.clipboard.writeText(citationMap.get(key) || "");
+      event.currentTarget.textContent = t("copiedCitation");
+      window.setTimeout(() => {
+        event.currentTarget.textContent = t("copyCitation");
+      }, 1400);
+    });
+  });
+}
+
+function buildAmlCitation(item) {
+  if (item.citation) return item.citation;
+  const authors = Array.isArray(item.authors) ? item.authors.join(", ") : "";
+  const year = item.year ? `(${item.year})` : "";
+  const venue = item.journal ? ` ${item.journal}.` : "";
+  const doi = item.doi ? ` https://doi.org/${item.doi}` : "";
+  return `${authors} ${year}. ${item.title || "Untitled"}.${venue}${doi}`.replace(/\s+/g, " ").trim();
+}
+
+function formatAmlUpdatedAt(value) {
+  const formatted = formatRunTime(value);
+  return formatted ? `${formatted.date} ${formatted.time} KST` : "-";
+}
+
 function clearVenueQuickFilters() {
   state.activeTargetVenue = "";
   state.activeVenueGroup = "";
@@ -782,8 +964,9 @@ function isNonJournalVenue(venue) {
 
 function venueCard(venue, count, label = "") {
   const badge = label ? `<em class="venue-chip">${escapeHtml(label)}</em>` : "";
-  return `<button class="venue-card" type="button" data-board-venue="${escapeAttribute(venue)}">
-    <strong>${escapeHtml(shortVenue(venue))}</strong>
+  const displayVenue = displayText(shortVenue(venue));
+  return `<button class="venue-card" type="button" data-board-venue="${escapeAttribute(displayText(venue))}">
+    <strong>${escapeHtml(displayVenue)}</strong>
     <span><b>${count}</b> ${escapeHtml(t("papers"))}</span>
     ${badge}
   </button>`;
@@ -802,10 +985,10 @@ function updateStats() {
   const rawCount = meta.raw_candidate_count || state.papers.length;
   const archivedCount = meta.archived_count || Math.max(0, rawCount - state.papers.length);
   const lastRunAt = state.siteMeta && state.siteMeta.last_run_at_utc;
-  const locale = state.language === "ko" ? "ko-KR" : "en-US";
+  const locale = "en-US";
 
   renderTotalStat(lastRunAt);
-  const venues = new Set(state.papers.map((paper) => normalizeVenue(paper.venue)).filter(Boolean));
+  const venues = new Set(state.papers.map((paper) => runtimeForPaper(paper).venue).filter(Boolean));
   if (els.venues) {
     els.venues.textContent = venues.size.toLocaleString(locale);
   }
@@ -825,7 +1008,7 @@ function updateStats() {
 
 function renderHeroStatus({ paperCount, venueCount, yearRange, lastRunAt }) {
   if (!els.heroStatus) return;
-  const locale = state.language === "ko" ? "ko-KR" : "en-US";
+  const locale = "en-US";
   const lastRun = formatRunTime(lastRunAt);
   const updated = lastRun ? `${lastRun.date} ${lastRun.time}` : "-";
   els.heroStatus.textContent = t("heroStatus")
@@ -837,18 +1020,13 @@ function renderHeroStatus({ paperCount, venueCount, yearRange, lastRunAt }) {
 
 function renderOpsNote(rawCount, archivedCount, lastRunAt) {
   if (!els.opsNote) return;
-  const locale = state.language === "ko" ? "ko-KR" : "en-US";
+  const locale = "en-US";
   const shownCount = state.papers.length.toLocaleString(locale);
   const rawText = rawCount.toLocaleString(locale);
   const archivedText = archivedCount.toLocaleString(locale);
   const lastRun = formatRunTime(lastRunAt);
   const timeText = lastRun ? `${lastRun.date} ${lastRun.time} KST` : "-";
-
-  if (state.language === "ko") {
-    els.opsNote.textContent = `운영 정보: 표시 ${shownCount}편 / 수집 후보 ${rawText}개 / 하단 숨김 ${archivedText}개 · 마지막 수집 ${timeText}`;
-  } else {
-    els.opsNote.textContent = `Ops note: ${shownCount} shown / ${rawText} collected candidates / ${archivedText} hidden at the bottom layer · last collection ${timeText}`;
-  }
+  els.opsNote.textContent = `Ops note: ${shownCount} shown / ${rawText} collected candidates / ${archivedText} hidden at the bottom layer - last collection ${timeText}`;
 }
 
 function renderUpdatedStat(lastRunAt) {
@@ -858,11 +1036,11 @@ function renderUpdatedStat(lastRunAt) {
   const attempt = updateAttemptDisplay();
   els.updated.classList.add("stat-datetime");
   if (!lastRun) {
-    els.updated.innerHTML = `${escapeHtml(now.date)}<small>${escapeHtml(now.time)} KST${attempt ? ` · ${escapeHtml(attempt)}` : ""}</small>`;
+    els.updated.innerHTML = `${escapeHtml(now.date)}<small>${escapeHtml(now.time)} KST${attempt ? ` - ${escapeHtml(attempt)}` : ""}</small>`;
     return;
   }
-  const updatedLabel = state.language === "ko" ? "수집" : "updated";
-  els.updated.innerHTML = `${escapeHtml(now.date)}<small>${escapeHtml(now.time)} KST · ${escapeHtml(updatedLabel)} ${escapeHtml(lastRun.time)} KST${attempt ? ` · ${escapeHtml(attempt)}` : ""}</small>`;
+  const updatedLabel = "updated";
+  els.updated.innerHTML = `${escapeHtml(now.date)}<small>${escapeHtml(now.time)} KST - ${escapeHtml(updatedLabel)} ${escapeHtml(lastRun.time)} KST${attempt ? ` - ${escapeHtml(attempt)}` : ""}</small>`;
 }
 
 async function loadUpdateStatus() {
@@ -884,24 +1062,20 @@ function updateAttemptDisplay() {
   const jobStatus = String(status.job_status || "").toLowerCase();
   const updateStep = String(status.update_step_outcome || "").toLowerCase();
   if (phase === "in_progress" || jobStatus === "in_progress" || updateStep === "running") {
-    return state.language === "ko" ? "업데이트 중" : "updating now";
+    return "updating now";
   }
   const missedSchedule = missedScheduleDisplay(status);
   if (missedSchedule) return missedSchedule;
   const checked = formatRunTime(status.checked_at_utc);
   const checkedText = checked ? checked.time : "";
   if (jobStatus === "failure" || jobStatus === "failed" || updateStep === "failure") {
-    return state.language === "ko"
-      ? `최근 시도 실패${checkedText ? ` ${checkedText}` : ""}`
-      : `last attempt failed${checkedText ? ` ${checkedText}` : ""}`;
+    return `last attempt failed${checkedText ? ` ${checkedText}` : ""}`;
   }
   if (jobStatus === "cancelled" || updateStep === "cancelled") {
-    return state.language === "ko"
-      ? `최근 시도 취소${checkedText ? ` ${checkedText}` : ""}`
-      : `last attempt cancelled${checkedText ? ` ${checkedText}` : ""}`;
+    return `last attempt cancelled${checkedText ? ` ${checkedText}` : ""}`;
   }
   if (jobStatus === "success" && checkedText) {
-    return state.language === "ko" ? `최근 확인 ${checkedText}` : `checked ${checkedText}`;
+    return `checked ${checkedText}`;
   }
   return "";
 }
@@ -913,9 +1087,7 @@ function missedScheduleDisplay(status) {
   if (checkedAt && checkedAt.getTime() >= dueAt.getTime()) return "";
   const due = formatRunTime(dueAt.toISOString());
   const dueText = due ? due.time : "";
-  return state.language === "ko"
-    ? `${dueText} 시도 미감지`
-    : `${dueText} run not seen yet`;
+  return `${dueText} run not seen yet`;
 }
 
 function latestScheduledRunUtc(schedule) {
@@ -943,7 +1115,7 @@ function parseDate(value) {
 
 function renderTotalStat(lastRunAt) {
   if (!els.total) return;
-  const locale = state.language === "ko" ? "ko-KR" : "en-US";
+  const locale = "en-US";
   const total = state.papers.length;
   const weeklyCount = countRecentlyAddedPapers(state.papers, lastRunAt, 7);
   const latestAdded = Number(state.siteMeta && state.siteMeta.papers_added);
@@ -956,13 +1128,13 @@ function formatPaperDeltaText(total, weeklyCount, latestAdded, locale) {
   const parts = [];
   if (Number.isFinite(latestAdded) && latestAdded > 0) {
     const countText = latestAdded.toLocaleString(locale);
-    parts.push(state.language === "ko" ? `${t("latestRunAdded")} +${countText}` : `+${countText} ${t("latestRunAdded")}`);
+    parts.push(`+${countText} ${t("latestRunAdded")}`);
   }
   if (weeklyCount > 0) {
     const countText = weeklyCount.toLocaleString(locale);
-    parts.push(state.language === "ko" ? `${t("weeklyAddedShort")} +${countText}` : `+${countText} ${t("weeklyAddedShort")}`);
+    parts.push(`+${countText} ${t("weeklyAddedShort")}`);
   }
-  return parts.join(" · ");
+  return parts.join(" - ");
 }
 
 function countRecentlyAddedPapers(papers, lastRunAt, days) {
@@ -1008,43 +1180,22 @@ function applyFilters() {
   const sort = els.sort.value;
 
   if (!category) state.activeSubtopic = "";
+  state.renderLimit = INITIAL_RENDER_LIMIT;
   syncSideNavActive();
 
   state.filtered = state.papers.filter((paper) => {
-    const paperCategories = paper.categories || [];
-    const paperTags = paper.tags || [];
-    const paperVisibleTags = visibleTags(paper);
-    const paperSubtopics = deriveSubtopics(paper);
-    const paperCanonicalTags = [...paperTags, ...paperVisibleTags, ...paperSubtopics]
-      .map(canonicalTopicLabel)
-      .filter((topic) => topic !== "Digital Twins" || paperHasCuratedDigitalTwinTag(paper));
-    const paperVenue = normalizeVenue(paper.venue);
-    const paperField = deriveField(paper);
-    const paperAuthorDetails = authorSearchText(paper);
-    const haystack = normalize(
-      [
-        paperField,
-        paper.title,
-        (paper.authors || []).join(" "),
-        paperAuthorDetails,
-        paper.venue,
-        paper.doi,
-        paperCategories.join(" "),
-        paperVisibleTags.join(" "),
-        paperSubtopics.join(" "),
-        paper.ai_summary_ko,
-        paper.relevance_note_ko,
-      ].join(" ")
-    );
+    const runtime = runtimeForPaper(paper);
+    const paperVenue = runtime.venue;
+    const paperField = runtime.field;
 
-    const matchesQuery = !query || haystack.includes(query);
+    const matchesQuery = !query || runtime.searchText.includes(query);
     const matchesCategory = !category || paperField === category;
-    const matchesTag = !tag || paperCanonicalTags.includes(canonicalTopicLabel(tag));
+    const matchesTag = !tag || runtime.canonicalTagSet.has(canonicalTopicLabel(tag));
     const matchesVenue = !venue || paperVenue === venue;
     const matchesTarget = !state.activeTargetVenue || matchesTargetVenue(paperVenue, state.activeTargetVenue);
     const matchesVenueGroup = !state.activeVenueGroup || isOtherVenuePaper(paper);
     const matchesSubtopic = !state.activeSubtopic || paperMatchesSidebarSubtopic(paper, paperField, state.activeSubtopic);
-    const matchesSummaryProvider = !summaryProvider || summaryProviderForFilter(paper) === summaryProvider;
+    const matchesSummaryProvider = !summaryProvider || runtime.summaryProvider === summaryProvider;
     const matchesYear = !year || String(paper.year || "") === year;
     return (
       matchesQuery &&
@@ -1064,7 +1215,7 @@ function applyFilters() {
       return Number(b.year || 0) - Number(a.year || 0) || dateValue(b.last_updated) - dateValue(a.last_updated);
     }
     if (sort === "title") {
-      return (a.title || "").localeCompare(b.title || "", "ko");
+      return (a.title || "").localeCompare(b.title || "", "en");
     }
     return Number(b.relevance_score || 0) - Number(a.relevance_score || 0) || Number(b.year || 0) - Number(a.year || 0);
   });
@@ -1100,15 +1251,18 @@ function isOtherVenuePaper(paper) {
 }
 
 function render() {
-  els.count.textContent =
-    state.language === "ko"
-      ? `${state.filtered.length.toLocaleString("ko-KR")}${t("showing")}`
-      : `${state.filtered.length.toLocaleString("en-US")} ${t("showing")}`;
+  const visiblePapers = state.filtered.slice(0, state.renderLimit);
+  const totalCount = state.filtered.length;
+  els.count.textContent = `${Math.min(visiblePapers.length, totalCount).toLocaleString("en-US")} / ${totalCount.toLocaleString("en-US")} ${t("showing")}`;
   els.list.innerHTML = "";
-  els.empty.hidden = state.filtered.length > 0;
+  els.empty.hidden = totalCount > 0;
+  if (els.loadMore) {
+    els.loadMore.hidden = visiblePapers.length >= totalCount;
+    els.loadMore.textContent = `Load more papers (${visiblePapers.length.toLocaleString("en-US")} / ${totalCount.toLocaleString("en-US")})`;
+  }
 
   const fragment = document.createDocumentFragment();
-  const groups = groupByPrimaryCategory(state.filtered);
+  const groups = groupByPrimaryCategory(visiblePapers);
   groups.forEach(([category, papers]) => {
     fragment.append(renderGroup(category, papers));
   });
@@ -1118,7 +1272,7 @@ function render() {
 function groupByPrimaryCategory(papers) {
   const grouped = new Map();
   papers.forEach((paper) => {
-    const category = deriveField(paper);
+    const category = runtimeForPaper(paper).field;
     if (!grouped.has(category)) grouped.set(category, []);
     grouped.get(category).push(paper);
   });
@@ -1132,7 +1286,7 @@ function renderGroup(category, papers) {
   section.innerHTML = `
       <div class="group-heading">
         <h3>${escapeHtml(displayLabel(category))}</h3>
-      <span>${papers.length.toLocaleString(state.language === "ko" ? "ko-KR" : "en-US")} ${escapeHtml(t("papers"))}</span>
+      <span>${papers.length.toLocaleString("en-US")} ${escapeHtml(t("papers"))}</span>
     </div>
   `;
   papers.forEach((paper) => section.append(renderPaperRow(paper)));
@@ -1142,25 +1296,33 @@ function renderGroup(category, papers) {
 function renderPaperRow(paper) {
   const article = document.createElement("article");
   article.className = "paper-card";
+  const displayPaper = paperWithDetails(paper);
+  const isDetailLoaded = state.paperDetails.has(paper.id);
+  const isDetailLoading = state.detailLoading.has(paper.id);
+  const detailError = state.detailErrors.get(paper.id) || "";
 
-  const doiUrl = paper.url || (paper.doi ? `https://doi.org/${paper.doi}` : "");
-  const authorDetailsHtml = renderAuthorDetails(paper);
-  const publicationLabel = formatPublicationLabel(paper);
-  const summaryProviderLabel = formatSummaryProviderLabel(paper);
-  const summaryHtml = renderSummaryBlock(paper);
-  const relevanceNote = formatRelevanceNote(paper);
-  const representativeBadges = representativeTags(paper)
+  const doiUrl = displayPaper.url || (displayPaper.doi ? `https://doi.org/${displayPaper.doi}` : "");
+  const authorDetailsHtml = renderAuthorDetails(displayPaper);
+  const publicationLabel = formatPublicationLabel(displayPaper);
+  const summaryProviderLabel = formatSummaryProviderLabel(displayPaper);
+  const summaryHtml = renderSummaryBlock(displayPaper);
+  const relevanceNote = formatRelevanceNote(displayPaper);
+  const representativeBadges = representativeTags(displayPaper)
     .map((tag) => badge(displayLabel(tag), "tag"))
     .join("");
+  const detailButton = isDetailLoaded
+    ? `<button class="link-pill subtle" type="button" disabled>Details loaded</button>`
+    : `<button class="link-pill subtle" type="button" data-load-detail="${escapeAttribute(paper.id)}">${escapeHtml(isDetailLoading ? "Loading details..." : "Load details")}</button>`;
+  const detailErrorHtml = detailError ? `<p class="policy-mini detail-error">${escapeHtml(detailError)}</p>` : "";
 
   article.innerHTML = `
     <div class="card-content">
       <div class="card-topline">
         <span class="publication-badge">${escapeHtml(publicationLabel)}</span>
         <span class="${escapeAttribute(summaryProviderLabel.className)}" title="${escapeAttribute(summaryProviderLabel.title)}">${escapeHtml(summaryProviderLabel.text)}</span>
-        <span class="relevance-badge">${escapeHtml(t("relevanceLabel"))} ${escapeHtml(String(paper.relevance_score || "-"))}/10</span>
+        <span class="relevance-badge">${escapeHtml(t("relevanceLabel"))} ${escapeHtml(String(displayPaper.relevance_score || "-"))}/10</span>
       </div>
-      <h4 class="paper-title">${escapeHtml(paper.title || "Untitled")}</h4>
+      <h4 class="paper-title">${escapeHtml(displayText(displayPaper.title || "Untitled"))}</h4>
       ${authorDetailsHtml}
       ${summaryHtml}
       <p class="relevance-note">${escapeHtml(relevanceNote)}</p>
@@ -1169,19 +1331,29 @@ function renderPaperRow(paper) {
         ${doiUrl ? `<a class="link-pill primary" href="${escapeAttribute(doiUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(t("openPaper"))}</a>` : ""}
         ${doiUrl ? `<a class="link-pill subtle" href="${escapeAttribute(doiUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(t("doiButton"))}</a>` : ""}
         <button class="link-pill subtle" type="button" data-citation>${escapeHtml(t("copyCitation"))}</button>
+        ${detailButton}
       </div>
-      <p class="policy-mini">No abstract/PDF hosted · updated ${escapeHtml(paper.last_updated || "-")}</p>
+      ${detailErrorHtml}
+      <p class="policy-mini">No abstract/PDF hosted - updated ${escapeHtml(displayPaper.last_updated || "-")}</p>
     </div>
   `;
 
   article.querySelector("[data-citation]").addEventListener("click", async (event) => {
-    const citation = buildCitation(paper);
+    const citation = buildCitation(displayPaper);
     await navigator.clipboard.writeText(citation);
     event.currentTarget.textContent = t("copiedCitation");
     window.setTimeout(() => {
       event.currentTarget.textContent = t("copyCitation");
     }, 1400);
   });
+
+  const loadDetailButton = article.querySelector("[data-load-detail]");
+  if (loadDetailButton) {
+    loadDetailButton.addEventListener("click", async () => {
+      await loadPaperDetail(paper.id);
+      render();
+    });
+  }
 
   article.querySelectorAll("[data-tag-filter]").forEach((button) => {
     button.addEventListener("click", () => {
@@ -1204,26 +1376,28 @@ function tagButton(text) {
 function renderAuthorDetails(paper) {
   const details = Array.isArray(paper.author_details) ? paper.author_details : [];
   const fallbackAuthors = Array.isArray(paper.authors) ? paper.authors : [];
-  if (!details.length && !fallbackAuthors.length) return "";
+  const corresponding = Array.isArray(paper.corresponding_authors) ? paper.corresponding_authors : [];
+  if (!details.length && !fallbackAuthors.length && !corresponding.length) return "";
+  const correspondingNames = new Set(corresponding.map((author) => normalizeAuthorName(author && author.name)).filter(Boolean));
   const visibleLimit = 8;
   const visibleDetails = details.length
     ? details.slice(0, visibleLimit).map((author) => ({
         name: author.name || "",
-        tooltip: [author.name, author.position, primaryInstitution(author)].filter(Boolean).join(" · "),
+        tooltip: [author.name, author.position, primaryInstitution(author)].filter(Boolean).join(" - "),
         isCorresponding: Boolean(author.is_corresponding),
       }))
     : fallbackAuthors.slice(0, visibleLimit).map((name) => ({
         name,
         tooltip: name,
-        isCorresponding: false,
+        isCorresponding: correspondingNames.has(normalizeAuthorName(name)),
       }));
   const visibleNames = new Set(visibleDetails.map((author) => normalizeAuthorName(author.name)));
   const hiddenCorresponding = details.length
     ? details.slice(visibleLimit).filter((author) => author && author.is_corresponding && !visibleNames.has(normalizeAuthorName(author.name)))
-    : [];
+    : corresponding.filter((author) => author && author.name && !visibleNames.has(normalizeAuthorName(author.name)));
   const supplementalCorresponding = hiddenCorresponding.slice(0, 2).map((author) => ({
     name: author.name || "",
-    tooltip: [author.name, author.position, primaryInstitution(author)].filter(Boolean).join(" · "),
+    tooltip: [author.name, author.position, primaryInstitution(author)].filter(Boolean).join(" - "),
     isCorresponding: true,
   }));
   const allChips = [...visibleDetails, ...supplementalCorresponding];
@@ -1272,10 +1446,6 @@ function authorSearchText(paper) {
 
 
 function formatSummary(paper) {
-  if (state.language !== "en") {
-    return paper.ai_summary_ko || t("summaryMissing");
-  }
-
   const yearPhrase = paper.year ? `${paper.year}` : "undated";
   const venue = paper.venue || "an unknown venue";
   const tags = representativeTags(paper).map((tag) => displayLabel(tag));
@@ -1305,10 +1475,6 @@ function renderSummaryBlock(paper) {
 }
 
 function formatSummarySections(paper) {
-  const sections = parseStoredSummarySections(paper.ai_summary_ko || "");
-  if (state.language !== "en") {
-    return sections;
-  }
   const storedEnglish = parseStoredSummarySections(paper.ai_summary_en || "");
   if (storedEnglish.length) {
     return storedEnglish.map((section, index) => ({
@@ -1316,7 +1482,7 @@ function formatSummarySections(paper) {
       answer: section.answer,
     }));
   }
-  return sections.length ? englishSummarySections(paper) : [];
+  return englishSummarySections(paper);
 }
 
 function formatSummaryProviderLabel(paper) {
@@ -1327,7 +1493,7 @@ function formatSummaryProviderLabel(paper) {
 }
 
 function parseStoredSummarySections(summary) {
-  const labels = UI_TEXT.ko.summaryQuestions;
+  const labels = UI_TEXT.en.summaryQuestions;
   const lines = String(summary || "")
     .split(/\n+/)
     .map((line) => line.trim())
@@ -1384,10 +1550,7 @@ function englishSummarySections(paper) {
 }
 
 function formatRelevanceNote(paper) {
-  if (state.language !== "en") {
-    return paper.relevance_note_ko || "";
-  }
-
+  if (paper.relevance_note_en) return paper.relevance_note_en;
   const tags = representativeTags(paper).map((tag) => displayLabel(tag));
   const tagPhrase = formatEnglishList(tags);
   const score = paper.relevance_score ? `${paper.relevance_score}/10` : "pending";
@@ -1480,6 +1643,48 @@ function collapseMaterialExtrusionTags(tags, paper) {
   return [selected, ...tags.filter((tag) => !cluster.includes(tag))];
 }
 
+function paperWithDetails(paper) {
+  return { ...paper, ...(state.paperDetails.get(paper.id) || {}) };
+}
+
+async function loadPaperDetail(paperId) {
+  if (!paperId || state.paperDetails.has(paperId) || state.detailLoading.has(paperId)) return;
+  state.detailLoading.add(paperId);
+  state.detailErrors.delete(paperId);
+  render();
+  try {
+    const manifest = await loadDetailManifest();
+    const chunkName = manifest[paperId];
+    if (!chunkName) throw new Error("Detail chunk not found for this paper.");
+    const chunk = await loadDetailChunk(chunkName);
+    const detail = chunk[paperId];
+    if (!detail) throw new Error("Paper detail not found in chunk.");
+    state.paperDetails.set(paperId, detail);
+  } catch (error) {
+    console.error(`Failed to load detail for ${paperId}`, error);
+    state.detailErrors.set(paperId, "Could not load details. Try again later.");
+  } finally {
+    state.detailLoading.delete(paperId);
+  }
+}
+
+async function loadDetailManifest() {
+  if (state.detailManifest) return state.detailManifest;
+  const response = await fetch(`${DETAIL_MANIFEST_URL}?ts=${Date.now()}`);
+  if (!response.ok) throw new Error(`Detail manifest HTTP ${response.status}`);
+  state.detailManifest = await response.json();
+  return state.detailManifest;
+}
+
+async function loadDetailChunk(chunkName) {
+  if (state.detailChunks.has(chunkName)) return state.detailChunks.get(chunkName);
+  const response = await fetch(`${DETAILS_BASE_URL}${encodeURIComponent(chunkName)}?ts=${Date.now()}`);
+  if (!response.ok) throw new Error(`Detail chunk HTTP ${response.status}`);
+  const chunk = await response.json();
+  state.detailChunks.set(chunkName, chunk);
+  return chunk;
+}
+
 function explicitCanonicalAlias(value, text) {
   const raw = String(value || "").trim().toLowerCase();
   if (!raw) return "";
@@ -1504,7 +1709,6 @@ function explicitCanonicalAlias(value, text) {
     [["제조 자동화", "자동화", "스마트 제조", "manufacturing automation", "automated manufacturing"], "Manufacturing automation"],
     [["자율 실험", "자율 실험실", "self-driving lab", "autonomous laboratory", "bayesian optimization"], "Self-driving Labs"],
     [["로봇 기반 생산제조", "로봇 기반 제조", "robot-based manufacturing", "robotic manufacturing", "robotic fabrication", "robot-assisted manufacturing", "robotic additive manufacturing", "robotic am", "robot-assisted additive", "robotic 3d printing", "robotic 4d printing"], "Robot-based Manufacturing"],
-    [["금속", "합금", "alloy", "alloys", "metal", "metals"], "Metals/Alloys"],
     [["복합재", "복합재료", "복합 재료", "composite", "composites"], "Composites/Materials"],
     [["지속 가능성", "지속가능성", "재활용", "sustainability", "recycling", "circular"], "Sustainability"],
     [["stereolithography", "stereo lithography"], "SLA"],
@@ -1618,10 +1822,7 @@ function formatPublicationLabel(paper) {
 function formatAuthors(authors) {
   if (!authors.length) return "";
   if (authors.length <= 3) return authors.join(", ");
-  if (state.language === "en") {
-    return `${authors.slice(0, 3).join(", ")} et al.`;
-  }
-  return `${authors.slice(0, 3).join(", ")} 외 ${authors.length - 3}명`;
+  return `${authors.slice(0, 3).join(", ")} et al.`;
 }
 
 function categoryIndex(category) {
@@ -1736,8 +1937,6 @@ function deriveField(paper) {
     text.includes("manufacturing") ||
     text.includes("production") ||
     text.includes("process") ||
-    text.includes("metals") ||
-    text.includes("alloys") ||
     text.includes("construction") ||
     text.includes("fabrication") ||
     text.includes("제조") ||
@@ -1843,7 +2042,6 @@ function deriveSubtopics(paper) {
   if (hasAny(text, ["process", "parameter", "optimization", "path planning", "trajectory", "공정", "최적화", "경로계획", "경로 계획"])) {
     subtopics.add("공정 최적화");
   }
-  if (hasAny(text, ["metal", "metals", "alloy", "steel", "inconel", "ss316", "금속", "합금"])) subtopics.add("금속/합금 제조");
   if (hasAny(text, ["construction", "large-scale", "concrete", "building", "건설", "대형"])) subtopics.add("건설/대형 제조");
   if (hasAny(text, ["composite", "fiber", "polymer", "복합재", "섬유", "고분자"])) subtopics.add("복합재/소재 제조");
 
@@ -1921,23 +2119,19 @@ function scrollToPapers() {
 }
 
 function t(key) {
-  const table = UI_TEXT[state.language] || UI_TEXT.ko;
-  return table[key] || UI_TEXT.ko[key] || key;
+  return (UI_TEXT.en && UI_TEXT.en[key]) || key;
 }
 
 function displayLabel(value) {
   if (FIELD_ORDER.includes(value)) {
-    if (state.language === "ko") return value;
     return (LABEL_TRANSLATIONS.en && LABEL_TRANSLATIONS.en[value]) || value;
   }
   if (CATEGORY_ORDER.includes(value)) {
-    if (state.language === "ko") return value;
     return (LABEL_TRANSLATIONS.en && LABEL_TRANSLATIONS.en[value]) || value;
   }
   const canonical = canonicalTopicLabel(value);
-  const tagLabel = TAG_LABELS[state.language] && TAG_LABELS[state.language][canonical];
+  const tagLabel = TAG_LABELS.en && TAG_LABELS.en[canonical];
   if (tagLabel) return tagLabel;
-  if (state.language === "ko") return value;
   return (LABEL_TRANSLATIONS.en && LABEL_TRANSLATIONS.en[value]) || value;
 }
 
@@ -1959,11 +2153,11 @@ function sectionId(value) {
 }
 
 function normalizeVenue(venue) {
-  return String(venue || "Venue unknown").trim() || "Venue unknown";
+  return displayText(venue || "Venue unknown").trim() || "Venue unknown";
 }
 
 function normalizeVenueKey(venue) {
-  return normalize(venue).replace(/&/g, "and");
+  return normalize(venue).replace(/&amp;/g, "and").replace(/&/g, "and");
 }
 
 function matchesTargetVenue(venue, target) {
@@ -1975,6 +2169,7 @@ function isPriorityVenue(venue) {
 }
 
 function shortVenue(venue) {
+  venue = displayText(venue);
   const replacements = {
     "arXiv (Cornell University)": "arXiv",
     "ArXiv.org": "arXiv",
@@ -2031,7 +2226,7 @@ function formatRunTime(value) {
   if (!value) return "";
   const date = new Date(value);
   if (Number.isNaN(date.getTime())) return "";
-  const parts = new Intl.DateTimeFormat("ko-KR", {
+  const parts = new Intl.DateTimeFormat("en-US", {
     timeZone: "Asia/Seoul",
     year: "numeric",
     month: "2-digit",
@@ -2056,7 +2251,7 @@ function flatten(items) {
 }
 
 function escapeHtml(value) {
-  return String(value)
+  return displayText(value)
     .replace(/&/g, "&amp;")
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;")
@@ -2066,6 +2261,15 @@ function escapeHtml(value) {
 
 function escapeAttribute(value) {
   return escapeHtml(value).replace(/`/g, "&#096;");
+}
+
+function displayText(value) {
+  return String(value || "")
+    .replace(/&amp;/gi, "&")
+    .replace(/&quot;/gi, '"')
+    .replace(/&#039;|&apos;/gi, "'")
+    .replace(/&lt;/gi, "<")
+    .replace(/&gt;/gi, ">");
 }
 
 init();

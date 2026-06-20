@@ -8,6 +8,7 @@ import os
 import re
 import sys
 from datetime import UTC, date, datetime
+from html import unescape
 from pathlib import Path
 from typing import Any
 
@@ -623,15 +624,14 @@ def _finalize_record(record: dict[str, Any], today: str) -> dict[str, Any]:
         "doi": doi,
         "url": url,
         "source": sorted(set(record.get("source", []))),
-        "categories": record.get("categories", ["다중재료 적층제조"])[:2],
+        "categories": record.get("categories", ["Multi-material AM"])[:2],
         "tags": record.get("tags", [])[:6],
         "relevance_score": int(record.get("relevance_score", 5)),
         "curation_priority": bool(record.get("curation_priority")),
-        "ai_summary_ko": record.get("ai_summary_ko", ""),
         "ai_summary_en": record.get("ai_summary_en", ""),
         "summary_provider": record.get("_summary_provider", "fallback"),
         "openai_summary_applied": record.get("_summary_provider") == "openai",
-        "relevance_note_ko": record.get("relevance_note_ko", ""),
+        "relevance_note_en": record.get("relevance_note_en", ""),
         "abstract_used_for_summary": bool(record.get("_abstract")),
         "raw_abstract_displayed": False,
         "pdf_stored": False,
@@ -686,7 +686,7 @@ def _merge_existing_record(existing: dict[str, Any], candidate: dict[str, Any], 
     refresh_record = dict(existing)
     refresh_record.update({key: value for key, value in candidate.items() if value})
     summarized = summarize_record(refresh_record, allow_openai=False)
-    for key in ("ai_summary_ko", "ai_summary_en", "relevance_note_ko", "relevance_score", "tags", "categories"):
+    for key in ("ai_summary_en", "relevance_note_en", "relevance_score", "tags", "categories"):
         if summarized.get(key):
             existing[key] = summarized[key]
     existing["summary_provider"] = "fallback"
@@ -697,12 +697,11 @@ def _merge_existing_record(existing: dict[str, Any], candidate: dict[str, Any], 
 def _should_refresh_generic_summary(existing: dict[str, Any], candidate: dict[str, Any]) -> bool:
     if not candidate.get("_abstract"):
         return False
-    summary = str(existing.get("ai_summary_ko") or "")
+    summary = str(existing.get("ai_summary_en") or "")
     generic_markers = [
-        "제목과 공개 메타데이터",
-        "공개 메타데이터를 기준",
         "public metadata",
         "metadata and curated topic signals",
+        "metadata-based summary",
     ]
     return any(marker in summary for marker in generic_markers)
 
@@ -729,7 +728,7 @@ def _strip_transient(record: dict[str, Any]) -> dict[str, Any]:
 def _journal_quality(record: dict[str, Any]) -> dict[str, Any]:
     """Assign a transparent journal-quality label without inventing JIF/Q values."""
 
-    venue = str(record.get("venue") or "").strip()
+    venue = unescape(str(record.get("venue") or "")).strip()
     venue_key = _normalize_title(venue)
     metrics = record.get("venue_metrics") or {}
     openalex_citedness = metrics.get("two_year_mean_citedness")
@@ -760,6 +759,7 @@ def _journal_quality(record: dict[str, Any]) -> dict[str, Any]:
         "robotics and computer integrated manufacturing",
         "international journal of advanced manufacturing technology",
         "computer aided design",
+        "acs applied materials and interfaces",
         "materials and design",
         "journal of intelligent manufacturing",
         "computers in industry",

@@ -1,5 +1,980 @@
 # AGENT_LOG
 
+## 2026-06-19 16:48
+
+### Change Summary
+- Deleted local private journal-matching preparation outputs as part of the same conservative JCR cleanup.
+
+### Edited Files
+- `data/private/journals_to_match_jcr.csv`: deleted local ignored journal matching preparation output.
+- `data/private/journals_to_match_jcr.json`: deleted local ignored journal matching preparation output.
+- `AGENT_LOG.md`: recorded this local cleanup.
+
+### Implemented Features
+- No application feature change; this was a local data hygiene cleanup.
+
+### Design Decisions
+- Treated JCR matching preparation artifacts as unnecessary to retain locally after deciding not to proceed with JCR matching.
+- Kept AML private debug files because they are unrelated to JCR/JCR matching.
+
+### Remaining Work
+- Recreate journal extraction later only if a private, license-safe JCR workflow is explicitly resumed.
+
+### Notes / Cautions
+- `data/private/` remains ignored by Git.
+- No external APIs were called.
+
+## 2026-06-19 16:46
+
+### Change Summary
+- Deleted local private JCR source/export artifacts to avoid retaining licensed JCR-derived material in the working copy.
+
+### Edited Files
+- `data/private/jcr_export_original_2025.csv`: deleted local ignored JCR export file.
+- `data/private/jcr_manual_review.csv`: deleted local ignored JCR review output.
+- `data/private/jcr_matched_debug.csv`: deleted local ignored JCR debug output.
+- `data/private/jcr_matched_debug.json`: deleted local ignored JCR debug output.
+- `AGENT_LOG.md`: recorded this local cleanup.
+
+### Implemented Features
+- No application feature change; this was a local data hygiene cleanup.
+
+### Design Decisions
+- Kept `data/private/journals_to_match_jcr.csv` and `.json` because they are generated from the project's own paper database, not from JCR.
+- Did not commit private files or JCR-derived outputs.
+
+### Remaining Work
+- If JCR matching is resumed later, use a private/manual workflow and confirm redistribution permissions before generating any public output.
+
+### Notes / Cautions
+- `data/private/` remains ignored by Git.
+- No external APIs were called.
+
+## 2026-06-19 14:59
+
+### Change Summary
+- Reverted the Step 3 JCR metrics matching commit to avoid possible Clarivate/JCR licensing and public redistribution risk.
+
+### Edited Files
+- `AGENT_LOG.md`: recorded the rollback rationale.
+- Reverted commit `1c2721d Add local JCR metrics matching`.
+
+### Implemented Features
+- Removed public JCR-derived outputs from Git history going forward:
+  - `data/journal_metrics.json`
+  - `public/data/journal_metrics.json`
+- Removed the Step 3 matching script and documentation that were introduced in the reverted commit.
+
+### Design Decisions
+- Treat JCR/JIF/quartile/rank/category values as licensed data that should not be publicly redistributed through GitHub Pages unless the license explicitly permits it.
+- Keep JCR-related work private-only until a safer internal-use design is chosen.
+
+### Validation
+- Reverted commit `1c2721d` with `git revert --no-edit`.
+- Confirmed the public JCR metrics JSON files are deleted from the tracked tree by the revert.
+
+### Remaining Work
+- If JCR data is needed later, redesign Step 3 as private/internal-only or publish only non-sensitive derived labels after confirming license terms.
+
+### Notes
+- No external APIs were called.
+- Private files under `data/private/` remain ignored by Git.
+
+## 2026-06-19 13:00
+
+### Change Summary
+- Implemented Step 1 of the JCR matching workflow: extract a local unique journal list from existing paper data.
+
+### Edited Files
+- `scripts/extract_unique_journals.py`: added a local-only JSON/CSV journal extraction script with journal normalization, ISSN normalization, ISSN/name-based deduplication, and manual-review flags.
+- `docs/jcr_step1_extract_unique_journals.md`: documented the Step 1 purpose, input/output paths, command usage, output columns, normalization behavior, and the no-scraping/no-JCR-matching boundary.
+- `.gitignore`: explicitly ignored `data/private/journals_to_match_jcr.csv` and `data/private/journals_to_match_jcr.json`.
+- `AGENT_LOG.md`: recorded this implementation and validation.
+
+### Implemented Features
+- Default input is `data/papers.json`, the current active source-of-truth paper database.
+- Default outputs are:
+  - `data/private/journals_to_match_jcr.csv`
+  - `data/private/journals_to_match_jcr.json`
+- Supports JSON and CSV input through `--input`.
+- Supports custom CSV and JSON output paths through `--output` and `--json-output`.
+- Extracts journal names from fields such as `journal`, `venue`, `container-title`, `container_title`, `publication`, `source_title`, and related aliases.
+- Extracts ISSN/eISSN-like values from fields such as `issn`, `ISSN`, `issn_l`, `eissn`, `EISSN`, and related aliases.
+- Produces columns requested for later manual JCR matching: `journal_id`, `journal_original`, `journal_normalized`, `issn`, `eissn`, `all_issns`, `paper_count`, `example_doi`, `example_title`, `example_year`, `source_fields`, `manual_review_required`, and `review_note`.
+
+### Validation
+- Ran `python scripts/extract_unique_journals.py`.
+- Input paper data path: `data/papers.json`.
+- Total papers read: 1,155.
+- Total unique journals extracted: 428.
+- Journals with ISSN/eISSN: 297.
+- Journals missing ISSN/eISSN: 131.
+- Journals requiring manual review: 143.
+- Ran `python -m py_compile scripts/extract_unique_journals.py`.
+- Confirmed generated private outputs are ignored by Git.
+
+### Design Decisions
+- Did not scrape or query Web of Science, JCR, Clarivate, Crossref, OpenAlex, or publisher pages.
+- Did not perform JCR matching in this step.
+- Did not modify existing paper data files, update workflows, or website runtime files.
+- Used ISSN/eISSN grouping when available; otherwise used normalized journal names.
+- Marked missing journal names, missing ISSNs, repository/conference/archive-like venues, ambiguous names, and inconsistent ISSN groups for manual review.
+
+### Remaining Work
+- Step 2 should load the manually exported JCR CSV and match it against `data/private/journals_to_match_jcr.csv`.
+- Before Step 2, manually review high-count missing-journal rows and repository/preprint venue rows.
+
+### Notes
+- The generated CSV/JSON outputs are private intermediate files and were not committed.
+
+## 2026-06-19 12:34
+
+### Change Summary
+- Reduced the startup paper index payload by moving non-first-paint provenance fields into lazy detail chunks.
+
+### Edited Files
+- `scripts/build_split_data.py`: removed Crossref/OpenAlex provenance, ISSN, publisher, raw safety flags, and core-source compatibility fields from the startup index; these fields remain in detail chunks.
+- `scripts/build_split_data.py`: compacted startup corresponding-author data to name plus corresponding flag.
+- `data/papers_index.json`, `data/archive_papers_index.json`, `data/details/`, `data/archive_details/`: regenerated split data with the smaller startup index.
+- `AGENT_LOG.md`: recorded this payload reduction.
+
+### Implemented Features
+- Startup index now focuses on first-paint fields: id, title, authors, year, venue, DOI/URL, source, categories, tags, score, dates, summary provider, OpenAI flag, compact corresponding authors, core flag, and status.
+- Heavier metadata remains available after `Load details` through the detail chunk system.
+
+### Performance Notes
+- `data/papers_index.json` changed from about 2.0 MB raw / 194 KB gzip to about 1.1 MB raw / 142 KB gzip.
+- Compared with full `data/papers.json`, startup active paper data is now about 80% smaller raw and about 64% smaller gzip.
+- Split-data report shows about 81.1% raw initial-load reduction against active+archive source JSON.
+
+### Validation
+- Regenerated split data with `python scripts/build_split_data.py`.
+- Verified `data/papers_index.json` still contains 1,155 active records.
+- Verified 711 startup records still expose compact `corresponding_authors`.
+- Ran `python -m py_compile scripts/build_split_data.py`.
+
+### Design Decisions
+- Kept `source` in the startup index for lightweight provenance.
+- Moved detailed provenance such as `metadata_source`, `crossref_type`, ISSN, publisher, OpenAlex cross-check ids, and core-source labels to lazy detail chunks.
+- Did not change source-of-truth `data/papers.json`.
+
+### Remaining Work
+- If the site still feels heavy, the next step is chunked startup loading by year/topic instead of loading all 1,155 index records at once.
+
+### Notes
+- No OpenAI API was used.
+
+## 2026-06-19 12:24
+
+### Change Summary
+- Improved frontend responsiveness after the split-data payload optimization.
+
+### Edited Files
+- `assets/app.js`: added runtime paper caches for derived field, visible tags, subtopics, canonical tag set, normalized venue, summary provider, and search text.
+- `assets/app.js`: changed filtering, venue counting, filter option building, sidebar counts, and grouping to reuse cached runtime values.
+- `assets/app.js`: debounced search input by 120 ms and reduced initial/load-more render batches from 120 to 80 cards.
+- `index.html`: bumped asset query version to `20260619-filter-cache`.
+- `AGENT_LOG.md`: recorded this performance pass.
+
+### Implemented Features
+- Initial network payload remains reduced by loading `data/papers_index.json` instead of `data/papers.json`.
+- Typing in the search field no longer triggers full filtering on every keystroke immediately.
+- Repeated filter/render operations avoid recomputing expensive topic/tag/search strings for all papers.
+
+### Performance Notes
+- Current raw JSON sizes:
+  - `data/papers.json`: about 5.6 MB raw, 391 KB gzip.
+  - `data/papers_index.json`: about 2.0 MB raw, 194 KB gzip.
+- Initial JSON payload is about 65% smaller raw than loading active+archive source JSON, and about 50% smaller gzip than active full JSON alone.
+- Remaining perceived lag is mostly browser-side parsing/filtering/rendering for 1,155 paper records, not only network transfer.
+
+### Validation
+- Confirmed `index.html` now references `assets/app.js?v=20260619-filter-cache`.
+- Confirmed gzip/raw size estimates after the change.
+- Could not run `node --check` because Node.js is not installed in the local shell environment.
+- Browser automation tools were not available in this session, so visual runtime verification was not performed.
+
+### Remaining Work
+- For a larger speedup, generate a smaller `papers_index.json` by removing fields not needed for first paint or by splitting index pages by year/topic.
+- Consider moving search/filter work into a Web Worker if the dataset grows beyond the current 1,155 records.
+- Consider virtual scrolling if rendering hundreds of cards becomes necessary.
+
+### Notes
+- No OpenAI API was used.
+
+## 2026-06-19 12:10
+
+### Change Summary
+- Fixed HTML entity display so venue names such as `ACS Applied Materials &amp; Interfaces` and `Materials &amp; Design` render with `&`.
+
+### Edited Files
+- `assets/app.js`: added `displayText()` and applied it to venue normalization, venue cards, title rendering, and HTML escaping.
+- `index.html`: bumped CSS/JS asset query version to `20260619-display-entities`.
+- `AGENT_LOG.md`: recorded this display fix.
+
+### Implemented Features
+- Crossref HTML entities are decoded for display before being safely escaped again.
+- Venue board labels now show `ACS Applied Materials & Interfaces` and `Materials & Design`.
+- Venue matching still treats `&amp;` and `&` as the same venue.
+
+### Validation
+- Confirmed `displayText("ACS Applied Materials &amp; Interfaces")` maps to `ACS Applied Materials & Interfaces`.
+- Confirmed `displayText("Materials &amp; Design")` maps to `Materials & Design`.
+- Confirmed `index.html` now references `assets/app.js?v=20260619-display-entities`.
+
+### Design Decisions
+- Decoded entities only for UI display/matching; source JSON was not rewritten.
+- Kept escaping after decoding so rendered text remains safe in `innerHTML`.
+
+### Notes
+- No OpenAI API was used.
+
+## 2026-06-19 12:03
+
+### Change Summary
+- Fixed GitHub Pages asset cache busting so the newly added core venues appear in the venue board.
+
+### Edited Files
+- `index.html`: changed CSS/JS asset query version from `20260618-aml-score-reason` to `20260619-core-venues`.
+- `AGENT_LOG.md`: recorded the cache-busting fix.
+
+### Implemented Features
+- Forces browsers and GitHub Pages to load the updated `assets/app.js` containing `ACS Applied Materials & Interfaces` and `Materials & Design` in `TARGET_VENUES`.
+
+### Verification
+- Confirmed `data/papers_index.json` contains 1 ACS AMI record and 11 Materials & Design records.
+- Confirmed the same normalization used by the UI matches Crossref HTML entity venue names such as `Materials &amp; Design`.
+
+### Design Decisions
+- Did not change paper data again; the previous core data patch was already correct.
+- Treated this as a deployment/cache visibility fix.
+
+### Remaining Work
+- Wait for GitHub Pages deployment after push, then hard-refresh the browser if the old JS is still cached locally.
+
+### Notes
+- No OpenAI API was used.
+
+## 2026-06-19 11:55
+
+### Change Summary
+- Temporarily promoted `ACS Applied Materials & Interfaces` and `Materials & Design` to core venues.
+
+### Edited Files
+- `assets/app.js`: added both venues to `TARGET_VENUES` and fixed venue-key normalization for Crossref HTML entities such as `&amp;`.
+- `scripts/update_papers.py`: added ACS AMI to the manual core manufacturing journal rule and normalized venue names with HTML entity decoding before journal-quality checks.
+- `scripts/full_rebuild_crossref_dataset.py`: changed full rebuild finalization so manual core journal quality sets `is_core_venue`, `core_status`, `venue_scope`, and `core_source` instead of leaving all records as placeholder non-core.
+- `data/papers.json`: updated existing ACS AMI and Materials & Design records to temporary core status.
+- `data/papers.csv`, `data/papers.xlsx`: regenerated active exports from the updated active dataset.
+- `data/papers_index.json`, `data/details/`: regenerated public split data.
+- `AGENT_LOG.md`: recorded this temporary core-venue promotion.
+
+### Implemented Features
+- The venue board treats ACS AMI and Materials & Design as core venues.
+- Existing records from those venues are marked with `is_core_venue=true`, `core_status=core`, and `venue_scope=core`.
+- Future Crossref-only rebuilds will mark manual core journals as core rather than placeholder non-core.
+
+### Verification
+- `ACS Applied Materials & Interfaces`: 1 active paper, 1 marked core.
+- `Materials & Design`: 11 active papers, 11 marked core.
+- `data/papers_index.json` contains the same core status for those 12 active records.
+- Ran `python -m py_compile scripts/fetch_crossref.py scripts/full_rebuild_crossref_dataset.py scripts/build_split_data.py scripts/update_papers.py`.
+
+### Design Decisions
+- Used a temporary manual core label rather than inventing JIF/Q ranking.
+- Kept OpenAlex limited to corresponding-author DOI cross-check; no paper collection source change.
+
+### Remaining Work
+- Later replace temporary core labels with a stable curated core venue policy or licensed JCR/Scopus data if needed.
+
+### Notes
+- No OpenAI API was used.
+- No PDFs or raw publisher abstracts were downloaded or stored.
+
+## 2026-06-19 11:41
+
+### Change Summary
+- Added Crossref ISSN-targeted venue search for `ACS Applied Materials & Interfaces` and `Materials & Design`.
+- Verified whether those venues already exist in the current active/archive dataset.
+
+### Edited Files
+- `scripts/fetch_crossref.py`: added `fetch_crossref_by_issn_query()` and a venue-specific max-page guard through `CROSSREF_VENUE_MAX_PAGES`.
+- `scripts/full_rebuild_crossref_dataset.py`: added Crossref ISSN venue collection from `data/crossref_venue_queries.json` and provenance fields for the collection route.
+- `scripts/build_split_data.py`: added the new Crossref venue collection provenance fields to the startup index.
+- `data/crossref_venue_queries.json`: added ISSN-based target searches for ACS AMI and Materials & Design.
+- `reports/crossref_target_venue_check_20260619.md`: recorded the current-dataset check and Crossref ISSN probe results.
+- `README.md`, `ARCHITECTURE.md`, `PROJECT_STATUS.md`: documented the new Crossref ISSN target venue search behavior.
+- `AGENT_LOG.md`: recorded this change.
+
+### Implemented Features
+- ACS AMI and Materials & Design can now be searched through Crossref by ISSN plus topical query.
+- The full rebuild still keeps paper discovery Crossref-only.
+- OpenAlex remains limited to DOI-based missing corresponding-author completion.
+- Venue-targeted Crossref records carry `crossref_collection_route`, `crossref_target_venue`, and `crossref_target_issn` provenance.
+
+### Verification
+- Current active dataset check:
+  - `ACS Applied Materials & Interfaces`: 1 active paper, 0 archived papers.
+  - `Materials & Design`: 11 active papers, 0 archived papers.
+- Crossref ISSN lookup confirmed:
+  - ACS AMI: `1944-8244`, `1944-8252`.
+  - Materials & Design: `0264-1275`.
+- Crossref works probes with ISSN filters returned relevant 2024-2026 additive manufacturing records from both venues.
+- Ran `python -m py_compile scripts/fetch_crossref.py scripts/full_rebuild_crossref_dataset.py scripts/build_split_data.py`.
+
+### Design Decisions
+- Did not use Crossref journal title query as the primary mechanism because it was unreliable for these venue names.
+- Used HTML entity normalization during verification because Crossref stores these venues as `ACS Applied Materials &amp; Interfaces` and `Materials &amp; Design` in local JSON.
+- Used ISSN-filtered Crossref works search instead of publisher crawling or OpenAlex discovery.
+- Set venue search to default to one cursor page through `CROSSREF_VENUE_MAX_PAGES=1` to prevent unbounded local/API runs.
+
+### Remaining Work
+- Run the scheduled/manual `Update papers` workflow to rebuild the public dataset with the new venue-targeted candidates.
+- Review newly added ACS AMI and Materials & Design records after rebuild to tune query specificity if needed.
+
+### Notes
+- No OpenAI API was used.
+- No PDFs or raw publisher abstracts were downloaded or stored.
+
+## 2026-06-19 11:29
+
+### Change Summary
+- Fixed corresponding-author visibility in the GitHub Pages startup data and paper card rendering.
+
+### Edited Files
+- `scripts/build_split_data.py`: added compact `corresponding_authors` entries to the lightweight startup index while omitting empty arrays and reducing each corresponding-author record to display-safe fields.
+- `assets/app.js`: updated author rendering so fallback author lists can still mark OpenAlex-cross-checked corresponding authors when full `author_details` have not been lazy-loaded yet.
+- `data/papers_index.json`, `data/archive_papers_index.json`, `data/details/`, `data/archive_details/`: regenerated split data from the existing Crossref-only source JSON files.
+- `AGENT_LOG.md`: recorded this visibility fix.
+
+### Implemented Features
+- Corresponding authors completed by OpenAlex DOI cross-check are now visible from the initial paper index.
+- Initial card rendering can display the corresponding-author badge even before a detail chunk is loaded.
+
+### Design Decisions
+- Did not rerun Crossref collection or OpenAlex DOI enrichment; this was a presentation/indexing fix only.
+- Kept OpenAlex as corresponding-author cross-check provenance only, not a paper discovery source.
+- Stored only compact corresponding-author display fields in the startup index to avoid undoing the previous initial-payload reduction.
+
+### Validation
+- Verified active startup index has 1,155 records.
+- Verified 711 active records expose `corresponding_authors` in `data/papers_index.json`.
+- Verified 16 archived records expose `corresponding_authors` in `data/archive_papers_index.json`.
+- Verified no empty `corresponding_authors` arrays remain in the active startup index.
+- Ran `python -m py_compile scripts/build_split_data.py`.
+
+### Remaining Work
+- If richer corresponding-author details are desired on cards, load full detail chunks on demand rather than expanding the startup index further.
+
+### Notes
+- Crossref is still the only paper collection source in the rebuilt dataset.
+- OpenAlex is used only for DOI-based missing corresponding-author completion.
+
+## 2026-06-19 11:11
+
+### Change Summary
+- Replaced the scheduled metadata collection pipeline with a Crossref-only full rebuild flow and executed the rebuild locally.
+
+### Edited Files
+- `scripts/full_rebuild_crossref_dataset.py`: added the full rebuild orchestrator. It archives current outputs, ignores existing paper records as input, searches Crossref from scratch, de-duplicates Crossref results, optionally completes missing corresponding authors through OpenAlex DOI lookup only, and exports JSON/CSV/XLSX.
+- `scripts/fetch_crossref.py`: expanded Crossref normalization to include author details, ISSN, ISSN-L, publisher, Crossref type, metadata provenance, and any Crossref-provided corresponding-author flags.
+- `scripts/build_split_data.py`: added Crossref provenance, OpenAlex cross-check, and core/non-core compatibility fields to the startup index.
+- `.github/workflows/update-papers.yml`: changed the scheduled update from `scripts/update_papers.py` to `scripts/full_rebuild_crossref_dataset.py`; removed Semantic Scholar/OpenAlex search-related environment use from the update step; added CSV/XLSX/backup outputs to the commit step.
+- `requirements.txt`: added `openpyxl` for XLSX export.
+- `data/papers.json`: replaced the previous dataset with 1,155 active records from the Crossref-only rebuild.
+- `data/archive_papers.json`: replaced the previous archive with 48 archived records from the same Crossref-only rebuild.
+- `data/papers.csv`: created the active dataset CSV export.
+- `data/papers.xlsx`: created the active dataset XLSX export.
+- `data/site_meta.json`: recorded `collection_mode=full_rebuild_crossref_only`, `sources=["Crossref"]`, backup path, and OpenAlex corresponding-author completion stats.
+- `data/papers_index.json`, `data/archive_papers_index.json`, `data/detail_manifest.json`, `data/archive_detail_manifest.json`, `data/details/`, `data/archive_details/`: regenerated split GitHub Pages data.
+- `data/old_exports/full_rebuild_20260619014047/`: stored compressed backups of the previous active/archive JSON, split data, and site metadata before overwrite.
+- `README.md`, `ARCHITECTURE.md`, `PROJECT_STATUS.md`: documented the new Crossref-only full rebuild architecture, outputs, and verification results.
+- `AGENT_LOG.md`: recorded this handoff entry.
+
+### Implemented Features
+- Full rebuild mode enabled.
+- Existing paper dataset archived before overwrite.
+- Existing dataset ignored for new collection.
+- Crossref-only search started and completed from `data/queries.json`.
+- Priority venue search disabled.
+- OpenAlex general search disabled.
+- OpenAlex used only for missing corresponding author DOI cross-check.
+- New Crossref-based dataset exported to JSON, CSV, and XLSX.
+- Core/non-core compatibility fields preserved as placeholders.
+
+### Rebuild Results
+- Crossref raw records after relevance filters: 2,762.
+- De-duplicated Crossref records: 1,203.
+- Active curated records: 1,155.
+- Archived records: 48.
+- Records with `source=["Crossref"]`: 1,203.
+- Records with `OpenAlex` in `source`: 0.
+- OpenAlex DOI checks for missing corresponding author: 1,203.
+- Corresponding-author entries completed from OpenAlex: 727.
+- CSV rows including header: 1,156.
+- XLSX rows including header: 1,156.
+
+### Design Decisions
+- Did not reuse existing `data/papers.json` or `data/archive_papers.json` as seeds, merge inputs, or append targets.
+- Kept `source` as `["Crossref"]` even when OpenAlex completed corresponding-author metadata, so paper discovery provenance stays clean.
+- Stored OpenAlex use in explicit fields (`openalex_checked`, `openalex_used_for`, `openalex_crosscheck_work_id`, `corresponding_author_source`) instead of adding OpenAlex as a source.
+- Preserved core/non-core schema fields for UI/export compatibility but did not use priority venue lists to assign them.
+- Compressed old outputs under `data/old_exports/` to preserve rollback material without keeping duplicate raw JSON loose in the data root.
+
+### Validation
+- Verified every rebuilt record has `source=["Crossref"]`.
+- Verified every rebuilt record has `metadata_source="crossref"`.
+- Verified no rebuilt record has `OpenAlex` in the `source` array.
+- Verified no OpenAlex-checked record lacks DOI.
+- Verified `openalex_used_for` is either `null` or `corresponding_author_completion`.
+- Verified core/non-core compatibility fields exist on all records.
+- Verified `data/papers.csv`, `data/papers.xlsx`, and split GitHub Pages data were regenerated.
+- Ran `python -m py_compile scripts/fetch_crossref.py scripts/full_rebuild_crossref_dataset.py scripts/build_split_data.py`.
+- Ran `python scripts/build_split_data.py`.
+
+### Remaining Work
+- Review the 48 archived records and threshold behavior after seeing the new Crossref-only site output.
+- If Crossref title searches miss known journals, add DOI/ISSN-based Crossref verification utilities separately; do not reintroduce OpenAlex as a discovery source.
+
+### Notes / Cautions
+- One Crossref query (`wavelength selective resin multimaterial 3D printing`) timed out during the local run; the job continued and completed successfully.
+- Scheduled updates now perform full rebuilds, which are slower than the old incremental update.
+- No OpenAI API was used.
+
+## 2026-06-18 18:31
+
+### Change Summary
+- Corrected the venue reports from dataset provenance-only logic to verified API-coverage logic.
+
+### Edited Files
+- `reports/openalex_only_no_crossref_journal_match_venues_20260618.xlsx`: generated the verified OpenAlex-only venue report using the existing Crossref journal lookup result (`no_crossref_journal_match`).
+- `reports/crossref_only_no_openalex_source_match_venues_20260618.xlsx`: generated the verified Crossref-only venue report using the existing OpenAlex source lookup result (`no_openalex_source_match`).
+- `reports/source_overlap_openalex_no_crossref_venues_20260618.xlsx`: removed the previous provenance-only report.
+- `reports/source_overlap_crossref_no_openalex_venues_20260618.xlsx`: removed the previous provenance-only report.
+- `AGENT_LOG.md`: recorded this correction.
+
+### Implemented Features
+- Final OpenAlex-only report now means OpenAlex-observed venues with no Crossref journal match, not merely records whose local source field lacked Crossref.
+- Final Crossref-only report now means Crossref-observed venues with no OpenAlex source match, not merely records whose local source field lacked OpenAlex.
+
+### Design Decisions
+- Reused the already verified `reports/api_source_coverage_report.xlsx` lookup sheets instead of rerunning external API checks.
+- Used explicit filenames containing `no_crossref_journal_match` and `no_openalex_source_match` to avoid ambiguity.
+
+### Remaining Work
+- None for this correction.
+
+### Notes / Cautions
+- Verified OpenAlex-only venue count: 93.
+- Verified Crossref-only venue count: 202.
+- No OpenAI API was used.
+
+## 2026-06-18 18:28
+
+### Change Summary
+- Corrected the source-overlap venue reports to include only the two requested groups.
+
+### Edited Files
+- `reports/source_overlap_openalex_no_crossref_venues_20260618.xlsx`: generated the exact OpenAlex records with no Crossref source venue report.
+- `reports/source_overlap_crossref_no_openalex_venues_20260618.xlsx`: generated the exact Crossref records with no OpenAlex source venue report.
+- `reports/source_overlap_only_openalex_venues_20260618.xlsx`: removed the earlier less-explicit OpenAlex-only filename.
+- `reports/source_overlap_only_crossref_venues_20260618.xlsx`: removed the earlier less-explicit Crossref-only filename.
+- `reports/source_overlap_both_venues_20260618.xlsx`: removed because the user asked for only OpenAlex-no-Crossref and Crossref-no-OpenAlex.
+- `AGENT_LOG.md`: recorded this correction.
+
+### Implemented Features
+- Final report output now has exactly two Excel files:
+  - OpenAlex with no Crossref.
+  - Crossref with no OpenAlex.
+
+### Design Decisions
+- Removed the `Both` report entirely because it was outside the user's corrected scope.
+- Used explicit `NO Crossref` / `NO OpenAlex` naming to avoid ambiguity.
+
+### Remaining Work
+- None for this correction.
+
+### Notes / Cautions
+- The counts are based on current local dataset provenance after DOI/title de-duplication.
+- No OpenAI API was used.
+
+## 2026-06-18 18:26
+
+### Change Summary
+- Replaced the combined source-overlap workbook with exactly the three requested venue Excel files.
+
+### Edited Files
+- `reports/source_overlap_only_openalex_venues_20260618.xlsx`: generated the OpenAlex-only venue list only.
+- `reports/source_overlap_only_crossref_venues_20260618.xlsx`: generated the Crossref-only venue list only.
+- `reports/source_overlap_both_venues_20260618.xlsx`: generated the venues observed in both OpenAlex and Crossref only.
+- `reports/source_overlap_venues_recreated_20260618.xlsx`: removed the previous combined workbook because it included extra `Summary` and `All_Venues` sheets beyond the user's request.
+- `AGENT_LOG.md`: recorded this report replacement.
+
+### Implemented Features
+- Created three separate Excel files instead of one multi-sheet report.
+- Each file contains only venue rows for its source group, with columns for all/site/archive paper counts and sample titles.
+
+### Design Decisions
+- Kept the same DOI-first, normalized-title fallback paper identity logic from the previous analysis.
+- Removed the extra combined report to avoid confusion, because the user asked for only the groups they mentioned.
+
+### Remaining Work
+- None for this report correction.
+
+### Notes / Cautions
+- These reports describe current local dataset provenance, not universal API coverage.
+- No OpenAI API was used.
+
+## 2026-06-18 18:24
+
+### Change Summary
+- Recreated the OpenAlex / Crossref / Both venue coverage Excel report.
+
+### Edited Files
+- `reports/source_overlap_venues_recreated_20260618.xlsx`: generated a new workbook with `Summary`, `Only_OpenAlex_Venues`, `Only_Crossref_Venues`, `Both_Venues`, and `All_Venues` sheets.
+- `AGENT_LOG.md`: recorded the recreated report and counting method.
+
+### Implemented Features
+- Recomputed source groups from current `data/papers.json` and `data/archive_papers.json`.
+- Used DOI-first and normalized-title fallback de-duplication for paper identity.
+- Counted active site papers separately from archive papers.
+- Grouped venues by observed source provenance:
+  - Only OpenAlex
+  - Only Crossref
+  - Both OpenAlex + Crossref
+
+### Design Decisions
+- Created one consolidated Excel workbook instead of several separate files so the report is easier to keep and compare.
+- Kept `All_Venues` as group-specific venue rows, meaning the same venue can appear in more than one source group; the `Summary` sheet contains the unique venue counts.
+
+### Remaining Work
+- None for this report recreation.
+
+### Notes / Cautions
+- This report describes source provenance in the current local dataset, not universal API coverage for every journal.
+- No OpenAI API was used.
+
+## 2026-06-18 15:37
+
+### Change Summary
+- Added a paper-specific explanation for AML recommendation scores.
+
+### Edited Files
+- `assets/app.js`: expanded AML relevance notes with a `Why this score:` sentence based on matched topics, discovery route, and closest seed paper when available.
+- `assets/app.js`: normalized repeated LCE topic variants so notes do not show duplicates such as `LCE, LCE`.
+- `index.html`: bumped the frontend asset cache version for the updated AML note renderer.
+- `AGENT_LOG.md`: recorded this AML score-explanation change.
+
+### Implemented Features
+- AML cards now explain the reason for the displayed score, not just the score calculation scale.
+- Example output: `Relevant to the tracker through LCE and Soft Robotics; AML score: 66/100. Why this score: matched LCE and Soft Robotics and found through existing keyword pool.`
+
+### Design Decisions
+- Did not expose the raw deterministic scoring formula in every card, because the user already understands the calculation and wants item-level reasoning.
+- Used existing public recommendation metadata only; no new API calls were made.
+
+### Remaining Work
+- None for this UI explanation update.
+
+### Notes / Cautions
+- No data files were changed.
+- OpenAI API was not used.
+
+## 2026-06-18 15:36
+
+### Change Summary
+- Revised the AML recommendation relevance sentence to use the actual AML score scale.
+
+### Edited Files
+- `assets/app.js`: changed AML relevance notes from `score: x/10` to `AML score: xx/100` and removed duplicate matched-topic labels before rendering.
+- `index.html`: removed the separate AML score explanation sentence from the section heading and bumped the asset cache version.
+- `assets/style.css`: removed the now-unused AML score explanation style.
+- `AGENT_LOG.md`: recorded this AML score wording correction.
+
+### Implemented Features
+- AML recommendation cards now show relevance notes such as `Relevant to the tracker through LCE and Soft Robotics; AML score: 66/100.`
+- Duplicate matched topics such as `LCE, LCE` are collapsed in the displayed note.
+
+### Design Decisions
+- Used the same 0-100 AML score scale shown in the card badge to avoid implying a separate 10-point relevance score.
+- Removed the section-level explanation because the user wanted the card sentence itself corrected instead.
+
+### Remaining Work
+- None for this wording correction.
+
+### Notes / Cautions
+- No data files were changed.
+- OpenAI API was not used.
+
+## 2026-06-18 15:32
+
+### Change Summary
+- Explained the AML recommendation score in the UI and removed the recommendation-level badge from AML cards.
+
+### Edited Files
+- `index.html`: added a short AML score explanation under the AML Recommendation Engine heading and bumped the asset cache version.
+- `assets/app.js`: removed the visible `High` / `Possible` / `Watch` badge from AML recommendation cards and simplified the empty-state copy.
+- `assets/style.css`: added lightweight spacing for the AML score explanation.
+- `AGENT_LOG.md`: recorded this display and explanation update.
+
+### Implemented Features
+- AML cards now show only the numerical `AML xx/100` score in the topline.
+- The AML section explains that the score is a 0-100 profile-match score based on seed-paper similarity, topic overlap, discovery route, recency, and venue signal.
+
+### Design Decisions
+- Kept the internal recommendation-level field for filtering and pipeline logic, but removed it from the public card UI because `Possible` and `Watch` were unclear as badges.
+- Clarified that AML score is not a journal ranking or impact metric.
+
+### Remaining Work
+- None for this UI clarification.
+
+### Notes / Cautions
+- No data files were changed.
+- OpenAI API was not used.
+
+## 2026-06-18 15:29
+
+### Change Summary
+- Moved the AML score reason out of the card badge area and into the normal card body.
+
+### Edited Files
+- `assets/app.js`: removed the `Reason:` badge from AML recommendation cards and added a normal relevance-note sentence using the template `Relevant to the tracker through ...; score: .../10.`
+- `assets/style.css`: removed the unused `score-reason-badge` styling and dark-mode override.
+- `index.html`: bumped the frontend asset cache version so GitHub Pages loads the updated UI files.
+- `AGENT_LOG.md`: recorded this AML recommendation-card display change.
+
+### Implemented Features
+- AML recommendation cards now show the reason as text in the body, not as a badge.
+- The reason uses up to three matched topics and converts the AML score to a 10-point display.
+
+### Design Decisions
+- Kept the score badge as the compact AML score indicator.
+- Treated the explanation as reading content rather than metadata, because the user wanted the reason template but explicitly not as a badge.
+
+### Remaining Work
+- None for this UI correction.
+
+### Notes / Cautions
+- No data files were regenerated.
+- OpenAI API was not used.
+
+## 2026-06-18 16:02
+
+### Change Summary
+- Removed Korean-language content from tracked public/source JSON files.
+
+### Edited Files
+- `data/papers.json`: removed Korean duplicate fields, removed Korean tags, converted categories to English, and romanized the remaining Korean author names.
+- `data/archive_papers.json`: removed Korean duplicate fields, removed Korean tags, and converted categories to English.
+- `data/papers_index.json`, `data/archive_papers_index.json`, `data/details/detail_001.json`: regenerated split data from the cleaned source JSON.
+- `scripts/summarize.py`: changed the fallback category from Korean `다중재료 적층제조` to English `Multi-material AM`.
+- `scripts/update_papers.py`: changed the stored default category from Korean to English.
+- `AGENT_LOG.md`: recorded this English-only JSON cleanup.
+
+### Implemented Features
+- Tracked JSON files no longer contain Korean duplicate fields such as `ai_summary_ko`, `relevance_note_ko`, or `archive_note_ko`.
+- Korean category values were replaced with English category names.
+- Korean tags were removed from source JSON and regenerated split JSON.
+- Remaining Korean author names were replaced with English forms:
+  - `심수안` -> `Suan Sim`
+  - `전승배` -> `Seungbae Jeon`
+
+### Design Decisions
+- Removed Korean tags instead of machine-translating thousands of low-signal API tags, because many were noisy and not central to the current English UI.
+- Preserved source-of-truth `data/papers.json` and `data/archive_papers.json` paths.
+- Regenerated split files after source cleanup so GitHub Pages continues to use the lightweight English-only public data.
+
+### Validation
+- Scanned all tracked `*.json` files for Hangul characters, `_ko` keys, `korean` keys, and `translated_` keys: 0 hits.
+- Ran `python scripts/build_split_data.py`.
+- Ran `python -m py_compile scripts/summarize.py scripts/update_papers.py scripts/build_split_data.py`.
+
+### Remaining Work
+- If future metadata APIs return non-English author display names, decide whether to romanize from trusted source metadata or omit only that name.
+
+### Notes / Cautions
+- OpenAI API was not used.
+- Name romanization was checked against public metadata/search results before replacement.
+
+## 2026-06-18 15:44
+
+### Change Summary
+- Reduced initial GitHub Pages paper-data payload by splitting full paper JSON into lightweight indexes and lazy-loaded detail chunks.
+
+### Edited Files
+- `scripts/build_split_data.py`: added deterministic split-data generator with size reporting and Korean duplicate field stripping.
+- `data/papers_index.json`: generated lightweight active-paper index for startup filtering/sorting/rendering.
+- `data/archive_papers_index.json`: generated lightweight archive index for future archive browsing.
+- `data/detail_manifest.json`: generated active paper id to detail chunk mapping.
+- `data/archive_detail_manifest.json`: generated archive paper id to detail chunk mapping.
+- `data/details/detail_*.json`: generated active detail chunks.
+- `data/archive_details/archive_detail_*.json`: generated archive detail chunks.
+- `assets/app.js`: changed startup fetch from full `data/papers.json` to `data/papers_index.json`, added local fallback warning, lazy detail chunk loading/caching, detail loading/error states, and first-page render limiting.
+- `index.html`: added `Load more papers` control and bumped asset cache version.
+- `assets/style.css`: added minimal `Load more` and detail error styling.
+- `.github/workflows/update-papers.yml`: runs split generation after paper update and commits split outputs.
+- `.github/workflows/refresh-openai-summaries.yml`: runs split generation after manual OpenAI summary refresh when not dry-run.
+- `.github/workflows/enrich-openalex-metadata.yml`: runs split generation after OpenAlex metadata enrichment.
+- `ARCHITECTURE.md`, `README.md`, `PROJECT_STATUS.md`: documented split loading, regeneration, testing, and size results.
+- `AGENT_LOG.md`: recorded this performance refactor.
+
+### Implemented Features
+- Production startup loads `data/papers_index.json` instead of the 10.8 MB full `data/papers.json`.
+- The archive split files are generated but not loaded at startup.
+- Paper details are loaded lazily from `data/details/detail_*.json` only after clicking `Load details`.
+- Loaded detail chunks are cached in memory.
+- The paper list renders only the first 120 filtered records initially, with `Load more papers` for incremental rendering.
+- Generated split public JSON files remove Korean duplicate keys such as `ai_summary_ko`, `relevance_note_ko`, and `archive_note_ko`.
+
+### Design Decisions
+- `data/papers.json` and `data/archive_papers.json` remain source-of-truth files for automation and were not moved.
+- Summary text and detailed authorship moved to detail chunks because they dominate payload size.
+- Initial search no longer includes unloaded summary text; once a detail is loaded, its summary text participates in search.
+- A full `data/papers.json` fallback remains for local development only when `papers_index.json` is missing, and the UI logs/shows an error first.
+
+### Size Report
+- Original active `papers.json`: 10,781.5 KB.
+- Original archive `archive_papers.json`: 11,323.6 KB.
+- Combined original: 22,105.0 KB.
+- New active `papers_index.json`: 1,488.4 KB.
+- New archive `archive_papers_index.json`: 1,839.4 KB, not loaded at startup.
+- Active detail chunks total: 7,914.3 KB.
+- Archive detail chunks total: 7,745.0 KB.
+- Estimated default initial paper JSON load reduction: 93.3%.
+
+### Validation
+- Ran `python scripts/build_split_data.py`.
+- Verified generated split files contain zero Korean duplicate keys.
+- Ran `python -m py_compile scripts/build_split_data.py scripts/update_papers.py scripts/collect_aml_candidates.py scripts/aml_common.py`.
+- Verified `assets/app.js` references `data/papers_index.json` for startup and only keeps `data/papers.json` as fallback.
+
+### Remaining Work
+- Browser Network tab should be checked after deployment: startup should show `data/papers_index.json`, not full `data/papers.json` or `data/archive_papers.json`; `data/details/detail_*.json` should appear only after clicking `Load details`.
+- Add an archive UI later if archived papers should be user-browsable.
+
+### Notes / Cautions
+- OpenAI API was not used.
+- No backend, API key exposure, PDF storage, or publisher crawling was added.
+
+## 2026-06-18 15:18
+
+### Change Summary
+- Added a visible score-reason badge to AML recommendation cards.
+
+### Edited Files
+- `assets/app.js`: added `formatAmlScoreReason()` and rendered a compact `Reason: ...` badge next to the AML score.
+- `assets/style.css`: styled the score-reason badge and added a dark-mode override so it does not inherit the amber last-badge styling.
+- `index.html`: bumped asset cache versions to `20260618-aml-score-reason`.
+- `AGENT_LOG.md`: recorded this score-explanation UI change.
+
+### Implemented Features
+- AML cards now keep the `Possible` / `Watch` badge and show a nearby reason badge.
+- The reason badge uses matched topics when available, otherwise seed similarity, discovery route, or profile match.
+- Hovering the reason badge exposes the full `why_recommended` text through the title attribute.
+
+### Design Decisions
+- Kept the score explanation compact to avoid making the card header too heavy.
+- The full score rationale remains in the Q5 Takeaway as readable text.
+
+### Remaining Work
+- Verify the deployed GitHub Pages UI after cache refresh.
+
+### Notes / Cautions
+- OpenAI API was not used.
+
+## 2026-06-18 15:11
+
+### Change Summary
+- Added corresponding-author support to AML recommendation cards.
+
+### Edited Files
+- `scripts/collect_aml_candidates.py`: preserved `author_details`, `corresponding_authors`, and `corresponding_author_available` when collecting AML candidates.
+- `scripts/aml_common.py`: included public-safe author detail and corresponding-author fields in AML public recommendation output.
+- `public/data/aml_recommended_papers.json`: enriched current AML recommendations with author metadata from `data/papers.json`.
+- `AGENT_LOG.md`: recorded this authorship metadata change.
+
+### Implemented Features
+- AML recommendation cards can now display the same author chips and corresponding-author badges as normal paper cards.
+- Current public AML recommendations now include detailed author metadata for 49 of 50 records.
+- Current public AML recommendations now include corresponding authors for 34 of 50 records.
+
+### Design Decisions
+- Used existing public metadata from `data/papers.json`; no publisher crawling, PDF download, or raw abstract display was introduced.
+- Reused the frontend's existing `renderAuthorDetails()` path instead of creating a separate AML-only author UI.
+
+### Remaining Work
+- Verify the deployed GitHub Pages UI after cache refresh.
+- Future AML recommendation workflow runs will preserve corresponding-author fields when the source candidate has them.
+
+### Notes / Cautions
+- OpenAI API was not used.
+- Validation confirmed the public AML JSON still has no `abstract` key.
+- Tests run: `python -m py_compile scripts/collect_aml_candidates.py scripts/aml_common.py`.
+
+## 2026-06-18 15:02
+
+### Change Summary
+- Made the AML recommendation section use the same comfortable grid spacing as the normal paper cards.
+
+### Edited Files
+- `assets/style.css`: aligned AML recommendation grid width and gaps with the main paper-card comfort layout, including desktop and mobile overrides.
+- `index.html`: bumped asset cache versions to `20260618-aml-comfort`.
+- `AGENT_LOG.md`: recorded this comfort-layout change.
+
+### Implemented Features
+- AML recommendation cards now use wider, more relaxed card columns.
+- AML Q5 cards have spacing closer to the main curated paper cards.
+- Mobile AML cards collapse to a single comfortable column.
+
+### Design Decisions
+- Comfort was handled as layout spacing, not as a restored compact/comfort toggle.
+- The site remains default comfortable-only, as requested earlier.
+
+### Remaining Work
+- Check GitHub Pages visually after deployment.
+
+### Notes / Cautions
+- OpenAI API was not used.
+
+## 2026-06-18 14:55
+
+### Change Summary
+- Added Q5-style summaries to AML recommendation cards so they match normal paper cards.
+
+### Edited Files
+- `assets/app.js`: added `renderAmlSummaryBlock()` and `amlSummarySections()`; AML recommendation cards now render the same `summary-qa` Q5 layout used by regular paper cards.
+- `index.html`: bumped asset cache versions to `20260618-aml-q5`.
+- `AGENT_LOG.md`: recorded this AML Q5 UI change.
+
+### Implemented Features
+- AML recommendation cards now show five sections: Topic, Problem, Method, Key Result, and Takeaway.
+- The Q5 content is generated from public-safe recommendation metadata: title, venue, year, matched topics, discovery routes, AML score, recommendation reason, and nearest seed paper when available.
+
+### Design Decisions
+- AML Q5 is recommendation-oriented, not a full abstract summary. It avoids claiming detailed findings that are not present in the public recommendation data.
+- The detailed method/result fields tell the user to check the DOI source when the recommendation data does not contain paper-level details.
+
+### Remaining Work
+- If richer AML paper abstracts are later available in a public-safe generated-summary field, map that field into the Q5 answers.
+
+### Notes / Cautions
+- OpenAI API was not used.
+- Raw abstracts/PDFs are still not displayed or stored in public output.
+
+## 2026-06-18 14:45
+
+### Change Summary
+- Changed AML recommendation cards to use the same visual/card structure as the main paper cards.
+
+### Edited Files
+- `assets/app.js`: reworked `renderAmlRecommendationCard()` to use the same card topline, title, author chips, summary, relevance note, tag line, links, copy citation button, and policy footer pattern as `renderPaperRow()`.
+- `assets/style.css`: removed AML-specific publication badge and route styling so AML cards inherit the normal paper-card design.
+- `index.html`: bumped asset cache versions to `20260618-aml-card`.
+- `AGENT_LOG.md`: recorded this UI alignment.
+
+### Implemented Features
+- AML recommendation cards now visually match regular paper cards.
+- AML cards now include `Open Paper`, `DOI`, and `Copy Cite` actions.
+- AML score remains visible as a normal relevance-style badge.
+
+### Design Decisions
+- Kept only the content-specific labels (`Possible`, `Watch`, `AML xx/100`) while reusing the main paper-card design system.
+- Removed the special AML route text block and moved route/update information into the same `policy-mini` area used by regular cards.
+
+### Remaining Work
+- Verify the deployed GitHub Pages UI after cache refresh.
+
+### Notes / Cautions
+- OpenAI API was not used.
+- `node --check` is still unavailable locally because `node` is not in PATH.
+
+## 2026-06-18 14:31
+
+### Change Summary
+- Corrected the AML sidebar behavior so `AML Recommendations` means opening the recommendation papers, not moving to the page top.
+- Published the existing local AML scoring result as a public-safe recommendation JSON file.
+
+### Edited Files
+- `assets/app.js`: changed the AML sidebar shortcut badge from `Top` to `Open`, made the click always open the AML recommendation section, and added an explicit empty-state message when no public recommendation file exists.
+- `assets/style.css`: added styling for the AML recommendation empty-state card.
+- `index.html`: bumped asset cache versions to `20260618-aml-open`.
+- `public/data/aml_recommended_papers.json`: generated 50 public-safe AML recommendation records from the existing local AML scoring debug output.
+- `AGENT_LOG.md`: recorded this AML recommendation UI/data correction.
+
+### Implemented Features
+- Clicking `AML Recommendations` now opens the recommendation paper area.
+- If recommendation data exists, the user sees related AML recommendation papers.
+- If recommendation data is missing, the section explains that the manual AML Recommendation workflow needs to publish it.
+
+### Design Decisions
+- `Top` was removed from the button because the user meant top position only, not a button label or behavior.
+- The public recommendation file uses the existing `public_paper()` sanitizer and does not include abstracts.
+- The existing scheduled paper update workflow and public paper data paths were not changed.
+
+### Remaining Work
+- Confirm the deployed GitHub Pages UI after Pages finishes rebuilding.
+- Future AML recommendation refreshes should be done through `Actions > AML Recommendation Manual`.
+
+### Notes / Cautions
+- OpenAI API was not used.
+- Validation confirmed `public/data/aml_recommended_papers.json` has 50 records and no `abstract` key.
+- Browser screenshot QA could not be run because the browser automation tool is not available in this session.
+
+## 2026-06-18 14:18
+
+### Change Summary
+- Reinterpreted `AML` as the recommendation engine entry point, not as a paper keyword/subtopic.
+- Moved AML access to the top of the left sidebar as `AML Recommendations`.
+
+### Edited Files
+- `assets/app.js`: removed `AML` from tag/subtopic classification logic and added a top sidebar shortcut that scrolls to the AML recommendation section when available.
+- `assets/style.css`: added light/dark styling for the top `AML Recommendations` shortcut.
+- `index.html`: bumped asset cache versions to `20260618-aml-top`.
+- `AGENT_LOG.md`: recorded the correction.
+
+### Implemented Features
+- The left panel now starts with an `AML Recommendations` button.
+- The button shows the number of visible AML recommendations when generated, otherwise it shows `Top`.
+- `AML` no longer appears as a normal paper tag or AI Manufacturing subtopic.
+
+### Design Decisions
+- `AML` represents the manual recommendation workflow/section, so it should behave like a navigation shortcut rather than a taxonomy filter.
+- Existing scheduled collection, public data fetch paths, and paper classification data remain unchanged.
+
+### Remaining Work
+- Verify on GitHub Pages after deployment that the top shortcut appears above all fields and that it scrolls correctly when recommendation output exists.
+
+### Notes / Cautions
+- OpenAI API was not used.
+- This corrects the previous `AML` sidebar-topic implementation from commit `f148e6c`.
+
+## 2026-06-18 14:07
+
+### Change Summary
+- Added `AML` as a visible keyword/subtopic in the left sidebar under `AI Manufacturing`.
+
+### Edited Files
+- `assets/app.js`: added `AML` to the AI Manufacturing sidebar subtopics, canonical tag labels, representative tag priority, and conservative AML signal detection.
+- `index.html`: bumped asset cache versions to `20260618-aml-topic`.
+- `AGENT_LOG.md`: recorded this sidebar keyword change.
+
+### Implemented Features
+- The left panel now shows `AML` as a selectable subtopic under `AI Manufacturing`.
+- Papers with an explicit `AML` tag or a title/venue/tag signal such as standalone `AML`, `Advanced Manufacturing Lab`, or `Additive Manufacturing Lab` can be counted and filtered through the AML subtopic.
+
+### Design Decisions
+- `AML` was added as a UI/subtopic signal only; no existing data files or scheduled collection workflow were moved or changed.
+- Matching uses a standalone `AML` acronym or manufacturing-lab phrase to reduce accidental matches against unrelated words.
+
+### Remaining Work
+- Verify the deployed GitHub Pages UI after cache refresh.
+- If the intended meaning of `AML` should be broader than lab/manufacturing-lab wording, expand the matching terms later.
+
+### Notes / Cautions
+- OpenAI API was not used.
+- `node --check` could not be run because `node` is not available in the local PATH.
+- The existing website fetch paths remain unchanged: `data/papers.json`, `data/site_meta.json`, and `data/update_status.json`.
+
 ## 2026-06-17 23:03
 
 ### Change Summary
@@ -5079,3 +6054,130 @@
 ### 주의사항
 - OpenAI API는 사용하지 않았습니다.
 - 열려 있는 Excel 프로세스를 강제로 종료하지 않았습니다.
+## 2026-06-18 14:05
+### Change Summary
+- Added a separate manual AML recommendation engine without modifying the existing 6-hour keyword update workflow.
+- Integrated optional AML recommendation display into the website without changing the existing paper fetch paths.
+
+### Modified / Created Files
+- `.github/workflows/aml-recommendation-manual.yml`: new manual-only workflow using `workflow_dispatch`; no schedule, push, or pull_request trigger.
+- `.gitignore`: added private/raw/cache/embedding/log/PDF/environment-file ignore rules.
+- `scripts/aml_common.py`: shared AML paths, scoring helpers, normalization, public-output helpers.
+- `scripts/generate_aml_profile.py`: deterministic AML profile generation with optional AI profile generation disabled by default.
+- `scripts/build_aml_seed_embeddings.py`: OpenAI seed embedding cache under `data/private/`.
+- `scripts/collect_aml_candidates.py`: candidate collection from existing local paper pool and optional OpenAlex/Crossref search.
+- `scripts/score_aml_recommendations.py`: deterministic scoring, optional AI judge/reason, public-safe output generation.
+- `scripts/run_aml_recommendation_pipeline.py`: orchestration entry point for the manual workflow.
+- `index.html`: added an optional AML recommendations section.
+- `assets/app.js`: added optional fetch/render for `public/data/aml_recommended_papers.json`; existing `data/papers.json`, `data/site_meta.json`, and `data/update_status.json` fetch paths remain unchanged.
+- `assets/style.css`: added small AML section/card styling.
+- `README.md`, `ARCHITECTURE.md`, `PROJECT_STATUS.md`: documented manual AML workflow, OpenAI usage policy, public/private outputs, and seed file requirement.
+
+### Implemented Features
+- AML recommendation pipeline runs manually only.
+- OpenAI embeddings are used when an API key is available, but OpenAI is not used as the primary paper search engine.
+- OpenAI relevance judge and OpenAI reason rewriting are optional and disabled by default.
+- Template-based recommendation reasons are used by default.
+- Private outputs are written under ignored `data/private/`.
+- Public output path is `public/data/aml_recommended_papers.json`.
+
+### Design Decisions
+- `.github/workflows/update-papers.yml` was inspected and intentionally not modified.
+- The current website fetch paths must not move: `data/papers.json`, `data/site_meta.json`, and `data/update_status.json`.
+- The AML section is hidden if `public/data/aml_recommended_papers.json` does not exist, preserving existing site behavior.
+- The required repository seed file `data/seed/aml_seed_papers_core_enriched.json` is currently absent. The scripts support `AML_SEED_PATH` for local testing but default to the required path.
+
+### Remaining Work
+- Add the real AML seed file at `data/seed/aml_seed_papers_core_enriched.json`.
+- Run `Actions > AML Recommendation Manual > Run workflow`.
+- Review the generated `public/data/aml_recommended_papers.json` before publishing if using collection modes.
+
+### Notes / Cautions
+- A smoke test used local `private/aml_seed_papers_core_enriched.json` only through `AML_SEED_PATH`; generated public/profile test files were removed and private seed data was not committed.
+- OpenAI API was not used in the smoke test because no key was present.
+- Do not commit `data/private/`, embeddings, logs, raw API payloads, PDFs, or `.env` files.
+
+## 2026-06-18 09:57
+### Change Summary
+- Removed the `Metals/Alloys` keyword/subtopic from the tracker taxonomy and collection logic.
+- Cleaned existing stored paper metadata so `Metals/Alloys` no longer appears as a tag/category.
+
+### Modified / Created Files
+- `assets/app.js`: Removed `Metals/Alloys` from sidebar subtopics, card tag priority, label maps, tag inference rules, and broad production/manufacturing keyword checks.
+- `data/queries.json`: Removed the metals-specific query `mechanical behaviour additively manufactured metals`.
+- `data/papers.json`: Removed existing `Metals/Alloys` values from stored `tags` / `categories`.
+- `data/archive_papers.json`: Removed metal/alloy raw tag values from archived `tags` / `categories`.
+- `index.html`: Bumped asset cache query version to `20260618-no-metals`.
+- `AGENT_LOG.md`: Recorded this taxonomy cleanup.
+
+### Implemented Features
+- The UI no longer shows `Metals/Alloys` as a sidebar subtopic or card tag.
+- New frontend tag inference no longer assigns `Metals/Alloys`.
+- Scheduled collection no longer uses the metals-only query.
+
+### Design Decisions
+- Paper titles and summaries were not edited, because those describe the actual paper content.
+- Only structured topic fields (`tags`, `categories`) and collection keywords were changed.
+
+### Remaining Work
+- After deployment, visually confirm that `Metals/Alloys` no longer appears in filters or paper cards.
+
+### Notes / Cautions
+- This does not block legitimate metal-related papers from appearing when they match other tracker topics such as AM, MMAM, FGAM, process optimization, DLP, digital twins, or toolpath strategy.
+- OpenAI API was not used.
+
+## 2026-06-18 09:54
+### Change Summary
+- Removed the Compact/Comfort density mode and kept the site on the default comfortable card layout.
+
+### Modified / Created Files
+- `index.html`: Removed the density toggle button and bumped asset cache versions.
+- `assets/app.js`: Removed density state, localStorage handling, toggle event handling, and density UI labels.
+- `assets/style.css`: Removed compact-density CSS overrides.
+- `AGENT_LOG.md`: Recorded this density-mode cleanup.
+
+### Implemented Features
+- The public UI now has only the theme toggle in the header toolbar.
+- Paper cards always use the comfortable/default spacing.
+
+### Design Decisions
+- Density switching was removed entirely instead of hidden, because the user no longer needs compact mode.
+- Default CSS is the comfortable layout, so no replacement setting is necessary.
+
+### Remaining Work
+- Recheck the deployed GitHub Pages page after cache refresh.
+
+### Notes / Cautions
+- This does not affect data collection, OpenAI usage, or paper metadata.
+
+## 2026-06-18 09:50
+### Change Summary
+- Converted the public site and summary generation path to English-only.
+- Removed the Korean language toggle and stopped reading Korean summary fields in the frontend.
+- Changed new OpenAI/manual summary generation to produce English Q5 summaries only.
+
+### Modified / Created Files
+- `index.html`: Removed the language toggle, cleaned static UI copy to English, and bumped asset cache versions.
+- `assets/app.js`: Fixed language state to English, removed Korean-mode branches, stopped displaying/searching `ai_summary_ko` and `relevance_note_ko`, and normalized UI labels to English.
+- `scripts/summarize.py`: Changed OpenAI prompt and fallback summary output to English-only `ai_summary_en` / `relevance_note_en`.
+- `scripts/update_papers.py`: Stopped writing new Korean summary fields during scheduled metadata updates.
+- `scripts/refresh_openai_summaries.py`: Changed manual OpenAI refresh to target English summaries only.
+
+### Implemented Features
+- English-only UI with no visible Korean mode switch.
+- English-only Q5 summary generation for future OpenAI refreshes.
+- Metadata fallback summaries remain available without OpenAI and are also English-only.
+
+### Design Decisions
+- Existing historical `ai_summary_ko` fields in `data/papers.json` were not deleted to avoid a large data-only churn, but the frontend and new scripts no longer use them.
+- Scheduled updates still do not call OpenAI. OpenAI refresh remains manual-only and user-approved.
+- The site now treats `ai_summary_en` as the canonical summary display field.
+
+### Remaining Work
+- If desired later, run a separate cleanup script to remove historical Korean summary fields from stored JSON data.
+- Perform browser visual QA after the next GitHub Pages deployment.
+
+### Notes / Cautions
+- Do not reintroduce automatic OpenAI calls into scheduled update workflows.
+- Do not display publisher abstracts or store PDFs.
+- Tests run: `python -m py_compile scripts/summarize.py scripts/update_papers.py scripts/refresh_openai_summaries.py`, `git diff --check`, and static JS reference checks for removed Korean-mode fields.

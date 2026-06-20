@@ -1,5 +1,54 @@
 # ARCHITECTURE
 
+## 2026-06-19 Crossref-Only Full Rebuild Architecture
+
+The scheduled paper collection pipeline now rebuilds the dataset from Crossref
+search results instead of incrementally merging old data.
+
+Current flow:
+
+```text
+Archive existing outputs
+  -> Search Crossref from scratch using data/queries.json
+  -> Search selected Crossref journals by ISSN using data/crossref_venue_queries.json
+  -> De-duplicate by DOI, then title/year/first author
+  -> Generate fallback English metadata summaries without OpenAI
+  -> For records with DOI and no corresponding author, check OpenAlex by DOI only
+  -> Use OpenAlex only to complete corresponding-author metadata
+  -> Export data/papers.json, data/archive_papers.json, data/papers.csv, data/papers.xlsx
+  -> Regenerate data/papers_index.json and lazy detail chunks
+```
+
+Important constraints:
+
+- OpenAlex is no longer a general paper search source in `Update papers`.
+- OpenAlex priority venue / source search is disabled for the scheduled dataset update.
+- Crossref ISSN-targeted venue search is enabled for selected journals in `data/crossref_venue_queries.json`; these records still have `source: ["Crossref"]`.
+- Existing active/archive paper records are archived before overwrite but are not used as collection seeds.
+- OpenAlex DOI results never add new papers to the dataset.
+- Records remain source-provenance clean: `source` is always `["Crossref"]` for rebuilt records.
+- OpenAlex completion is recorded only through provenance fields:
+  - `openalex_checked`
+  - `openalex_used_for`
+  - `openalex_crosscheck_work_id`
+  - `corresponding_author_source`
+- Core/non-core fields are retained for downstream compatibility but are placeholders in this rebuild:
+  - `is_core_venue`
+  - `core_status`
+  - `venue_scope`
+  - `core_source`
+- Temporary manual core venue overrides currently include `ACS Applied Materials & Interfaces` and `Materials & Design`.
+
+Main files:
+
+- `scripts/full_rebuild_crossref_dataset.py`: full rebuild orchestrator.
+- `scripts/fetch_crossref.py`: Crossref metadata normalization, including ISSN, publisher, author detail, any Crossref-provided corresponding-author flag, and ISSN-targeted works search.
+- `data/crossref_venue_queries.json`: selected Crossref venue targets such as ACS AMI and Materials & Design.
+- `scripts/fetch_openalex.py`: used only through DOI lookup for missing corresponding-author completion.
+- `.github/workflows/update-papers.yml`: calls the full rebuild script, then `scripts/build_split_data.py`.
+
+The previous `scripts/update_papers.py` incremental pipeline remains in the repository for reference/backward compatibility, but the active scheduled workflow does not call it.
+
 ## 2026-06-13 Seed DOI 및 Priority Curation 구조
 
 `data/seed_dois.json`은 일반 검색 쿼리로 놓치면 안 되는 대표 논문을 DOI 기준으로 고정 추적하는 목록입니다. Nature, Science, Nature Materials, Science Advances처럼 중요한 venue의 대표 논문은 broad keyword search 상위 결과에 항상 들어온다고 보장할 수 없으므로 seed DOI로 관리합니다.
@@ -200,3 +249,104 @@ This workflow does not call OpenAI, crawl publisher pages, download PDFs, or sto
 ### IF / Quartile Policy
 
 Official Journal Impact Factor and quartile classification should not be inferred from OpenAlex/Crossref. If those values are needed, add a licensed import such as `data/journal_metrics.csv` with source year, metric source, ISSN, JIF, and quartile fields. Until then the UI must call the automatic label a `Venue signal`, not `Impact Factor`.
+# AML Recommendation Pipeline
+
+The existing scheduled keyword pipeline remains `.github/workflows/update-papers.yml` and must not be renamed, moved, or modified for AML recommendation work. It updates `data/papers.json`, `data/archive_papers.json`, `data/site_meta.json`, `UPDATE_STATUS.md`, and `data/update_status.json`, then deploys the Pages site.
+
+The AML recommendation pipeline is separate and manual-only:
+
+- Workflow: `.github/workflows/aml-recommendation-manual.yml`
+- Trigger: `workflow_dispatch` only
+- Seed input: `data/seed/aml_seed_papers_core_enriched.json`
+- Public output: `public/data/aml_recommended_papers.json`
+- Private outputs: `data/private/aml_seed_embeddings.json`, `data/private/aml_candidate_embeddings.json`, `data/private/aml_candidate_pool.json`, `data/private/aml_scoring_debug.json`, and `data/private/aml_recommendation_log.json`
+
+Frontend integration is additive. `assets/app.js` still fetches the existing site data from:
+
+- `data/papers.json`
+- `data/site_meta.json`
+- `data/update_status.json`
+
+It additionally tries to fetch `public/data/aml_recommended_papers.json`. If that file is missing, the AML section stays hidden and the existing paper list continues to work.
+
+# Split Public Data Loading
+
+The source-of-truth paper files remain `data/papers.json` and `data/archive_papers.json`; do not move them because the update, enrichment, OpenAI summary, and AML workflows still use those paths.
+
+For GitHub Pages runtime performance, the public frontend now loads split data:
+
+- Startup active index: `data/papers_index.json`
+- Active detail manifest: `data/detail_manifest.json`
+- Active detail chunks: `data/details/detail_000.json`, `detail_001.json`, ...
+- Archive index: `data/archive_papers_index.json`
+- Archive detail manifest: `data/archive_detail_manifest.json`
+- Archive detail chunks: `data/archive_details/archive_detail_000.json`, ...
+
+`assets/app.js` loads only `data/papers_index.json` at startup. It does not load `data/papers.json` in production. A local-development fallback to `data/papers.json` exists only when `papers_index.json` is missing, and the UI shows a data-loading warning first.
+
+The active index contains only fields needed for first-page filtering, sorting, and compact card rendering: stable id, title, authors, year, venue, DOI/URL, source, categories, tags, relevance score, update dates, summary provider flags, and safety flags. Heavy fields such as `ai_summary_en`, detailed authorship, corresponding-author arrays, OpenAlex venue metrics, journal quality metadata, and long notes live in detail chunks.
+
+When the user clicks `Load details` on a card, the frontend loads `data/detail_manifest.json`, finds the chunk for that paper id, fetches that chunk once, caches it in memory, and re-renders the card with detailed authorship and Q5 summary data. Already-loaded chunks are not fetched again.
+
+`scripts/build_split_data.py` regenerates all split files from `data/papers.json` and `data/archive_papers.json`. It removes Korean duplicate fields from generated public split files, including fields such as `ai_summary_ko`, `relevance_note_ko`, `archive_note_ko`, `title_ko`, `abstract_ko`, and other `_ko` / Korean / translated variants. The original source-of-truth JSON files are not deleted.
+
+The update workflows run `scripts/build_split_data.py` after changing paper data:
+
+- `.github/workflows/update-papers.yml`
+- `.github/workflows/refresh-openai-summaries.yml`
+- `.github/workflows/enrich-openalex-metadata.yml`
+
+The current generated sizes are approximately:
+
+- Original active `papers.json`: 10,781.5 KB
+- Original archive `archive_papers.json`: 11,323.6 KB
+- Generated active index: 1,488.4 KB
+- Generated archive index: 1,839.4 KB, not loaded at startup
+- Default initial JSON load for papers: about 1.49 MB before compression
+
+OpenAI use is constrained:
+
+- Embeddings are used when `OPENAI_API_KEY` is available.
+- OpenAI is not used as the paper search engine.
+- Candidate collection uses the existing local paper pool and, in collection modes, OpenAlex/Crossref.
+- OpenAI relevance judging is controlled by `use_ai_judge` and defaults to `false`.
+- OpenAI reason rewriting is controlled by `use_ai_reason` and defaults to `false`.
+- Template-based recommendation reasons are used by default.
+
+# Frontend Density Policy
+
+As of 2026-06-18, the frontend has no runtime density mode.
+The former Compact/Comfort toggle and `data-density="compact"` CSS overrides were removed.
+Paper cards use the default comfortable layout at all viewport sizes, with responsive CSS handling mobile and wide screens.
+
+# English-Only UI And Summary Architecture
+
+As of 2026-06-18, the site is English-only.
+
+## Frontend
+- `index.html` contains English static copy and no language toggle.
+- `assets/app.js` fixes language behavior to English and no longer reads `localStorage.language`.
+- The frontend renders summaries from `ai_summary_en`.
+- If `ai_summary_en` is missing, the frontend creates an English metadata fallback block.
+- Historical `ai_summary_ko` and `relevance_note_ko` values may remain in stored data, but they are not used by the UI.
+
+## Summary Pipeline
+- `scripts/summarize.py` generates `ai_summary_en` and `relevance_note_en`.
+- OpenAI output is requested as a five-question English Q5 summary:
+  1. Topic
+  2. Problem
+  3. Method
+  4. Key Result
+  5. Takeaway
+- Without OpenAI, the fallback summary is also English-only and is generated from metadata plus transient abstract signals without copying abstract text.
+
+## Update Workflows
+- Scheduled metadata updates still do not call OpenAI.
+- Manual OpenAI refreshes remain separate and user-approved.
+- `scripts/refresh_openai_summaries.py` now refreshes `ai_summary_en` only.
+
+## Copyright / Data Policy
+- Publisher abstracts are never displayed.
+- PDFs are not downloaded or stored.
+- DOI/source links remain the authoritative route to original papers.
+- The retained historical Korean summary fields are internal legacy data only and should not be treated as the active display format.
