@@ -120,6 +120,8 @@ const UI_TEXT = {
     allVenues: "All venues",
     papersByField: "Papers by Field",
     curatedPapers: "Curated Papers",
+    newPapersKicker: "New this week",
+    newPapersTitle: "Recently Added Papers",
     emptyTitle: "No papers to display.",
     emptyText: "Adjust the search or filters, or run the GitHub Actions update.",
     footer:
@@ -1259,6 +1261,9 @@ function applyFilters() {
   });
 
   state.filtered.sort((a, b) => {
+    if (isDefaultNewPapersView()) {
+      return dateValue(b.first_added) - dateValue(a.first_added) || dateValue(b.last_updated) - dateValue(a.last_updated);
+    }
     if (sort === "newest") {
       return Number(b.year || 0) - Number(a.year || 0) || dateValue(b.last_updated) - dateValue(a.last_updated);
     }
@@ -1272,6 +1277,23 @@ function applyFilters() {
   });
 
   render();
+}
+
+function isDefaultNewPapersView() {
+  return Boolean(
+    els.newness &&
+      els.newness.value === "week" &&
+      !state.newnessTouched &&
+      !normalize(els.search && els.search.value) &&
+      !(els.category && els.category.value) &&
+      !(els.tag && els.tag.value) &&
+      !(els.venue && els.venue.value) &&
+      !(els.summaryProvider && els.summaryProvider.value) &&
+      !(els.year && els.year.value) &&
+      !state.activeTargetVenue &&
+      !state.activeVenueGroup &&
+      !state.activeSubtopic
+  );
 }
 
 function resetFilters() {
@@ -1305,6 +1327,8 @@ function isOtherVenuePaper(paper) {
 function render() {
   const visiblePapers = state.filtered.slice(0, state.renderLimit);
   const totalCount = state.filtered.length;
+  const defaultNewView = isDefaultNewPapersView();
+  renderPaperResultsHeading(defaultNewView);
   els.count.textContent = `${Math.min(visiblePapers.length, totalCount).toLocaleString("en-US")} / ${totalCount.toLocaleString("en-US")} ${t("showing")}`;
   els.list.innerHTML = "";
   els.empty.hidden = totalCount > 0;
@@ -1314,11 +1338,23 @@ function render() {
   }
 
   const fragment = document.createDocumentFragment();
+  if (defaultNewView) {
+    visiblePapers.forEach((paper) => fragment.append(renderPaperRow(paper)));
+    els.list.append(fragment);
+    return;
+  }
   const groups = groupByPrimaryCategory(visiblePapers);
   groups.forEach(([category, papers]) => {
     fragment.append(renderGroup(category, papers));
   });
   els.list.append(fragment);
+}
+
+function renderPaperResultsHeading(defaultNewView) {
+  const kicker = document.querySelector(".paper-results-head .section-kicker");
+  const title = document.querySelector(".paper-results-head h2");
+  if (kicker) kicker.textContent = defaultNewView ? t("newPapersKicker") : t("papersByField");
+  if (title) title.textContent = defaultNewView ? t("newPapersTitle") : t("curatedPapers");
 }
 
 function groupByPrimaryCategory(papers) {
