@@ -269,8 +269,8 @@ const PAPERS_INDEX_URL = "data/papers_index.json";
 const PAPERS_FALLBACK_URL = "data/papers.json";
 const DETAIL_MANIFEST_URL = "data/detail_manifest.json";
 const DETAILS_BASE_URL = "data/details/";
-const INITIAL_RENDER_LIMIT = 80;
-const RENDER_INCREMENT = 80;
+const INITIAL_RENDER_LIMIT = 20;
+const RENDER_INCREMENT = 20;
 const FILTER_DEBOUNCE_MS = 120;
 
 if (localStorage.getItem("preferenceVersion") !== PREFERENCE_VERSION) {
@@ -298,6 +298,7 @@ const state = {
   detailChunks: new Map(),
   detailLoading: new Set(),
   detailErrors: new Map(),
+  newnessTouched: false,
   filterTimer: null,
 };
 
@@ -308,6 +309,17 @@ function readStoredArray(key) {
   } catch (error) {
     return [];
   }
+}
+
+function setDefaultNewnessFilter() {
+  if (!els.newness) return;
+  els.newness.value = "week";
+  state.newnessTouched = false;
+}
+
+function releaseDefaultNewnessFilter() {
+  if (!els.newness || state.newnessTouched || !els.newness.value) return;
+  els.newness.value = "";
 }
 
 const els = {
@@ -358,13 +370,16 @@ async function init() {
   renderVenueBoard();
   renderAmlRecommendations();
   updateStats();
+  setDefaultNewnessFilter();
   applyFilters();
 
   [els.search, els.category, els.tag, els.venue, els.summaryProvider, els.newness, els.year, els.sort].forEach((el) => {
     if (!el) return;
     el.addEventListener("input", () => {
+      if (el === els.newness) state.newnessTouched = true;
       if (el === els.category) state.activeSubtopic = "";
       if (el === els.venue) clearVenueQuickFilters();
+      if (el !== els.newness && el !== els.sort) releaseDefaultNewnessFilter();
       if (el === els.search) {
         scheduleApplyFilters();
       } else {
@@ -372,8 +387,10 @@ async function init() {
       }
     });
     el.addEventListener("change", () => {
+      if (el === els.newness) state.newnessTouched = true;
       if (el === els.category) state.activeSubtopic = "";
       if (el === els.venue) clearVenueQuickFilters();
+      if (el !== els.newness && el !== els.sort) releaseDefaultNewnessFilter();
       applyFilters();
     });
   });
@@ -626,6 +643,7 @@ function buildSideNav() {
       }
       els.category.value = field;
       state.activeSubtopic = subtopic;
+      releaseDefaultNewnessFilter();
       syncSideNavActive();
       applyFilters();
       scrollToPapers();
@@ -726,6 +744,7 @@ function renderVenueBoard() {
         const sameGroup = (card.dataset.boardVenueGroup || "") === state.activeVenueGroup;
         card.classList.toggle("is-active", sameVenue && sameGroup);
       });
+      releaseDefaultNewnessFilter();
       applyFilters();
       scrollToPapers();
     });
@@ -1256,12 +1275,12 @@ function resetFilters() {
   if (els.tag) els.tag.value = "";
   if (els.venue) els.venue.value = "";
   if (els.summaryProvider) els.summaryProvider.value = "";
-  if (els.newness) els.newness.value = "";
   if (els.year) els.year.value = "";
   if (els.sort) els.sort.value = "newest";
   state.activeTargetVenue = "";
   state.activeVenueGroup = "";
   state.activeSubtopic = "";
+  setDefaultNewnessFilter();
   clearVenueQuickFilters();
   syncSideNavActive();
   applyFilters();
@@ -1389,6 +1408,7 @@ function renderPaperRow(paper) {
   article.querySelectorAll("[data-tag-filter]").forEach((button) => {
     button.addEventListener("click", () => {
       els.tag.value = button.dataset.tagFilter;
+      releaseDefaultNewnessFilter();
       applyFilters();
     });
   });
