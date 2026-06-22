@@ -1,76 +1,4 @@
 {
-  "10.1002/admt.202502447": {
-    "author_details": [
-      {
-        "name": "Kun Zhou",
-        "orcid": "https://orcid.org/0000-0003-4109-5926",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "School of Chemical Engineering UNSW Sydney  Sydney New South Wales Australia"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "School of Chemical Engineering UNSW Sydney  Sydney New South Wales Australia"
-        ]
-      },
-      {
-        "name": "Cyrille Boyer",
-        "orcid": "https://orcid.org/0000-0002-4564-4702",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "School of Chemical Engineering UNSW Sydney  Sydney New South Wales Australia"
-          },
-          {
-            "name": "Austrilian Centre for Nanomedicine (ACN) UNSW Sydney  Sydney New South Wales Australia"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "School of Chemical Engineering UNSW Sydney  Sydney New South Wales Australia",
-          "Austrilian Centre for Nanomedicine (ACN) UNSW Sydney  Sydney New South Wales Australia"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2365-709X",
-      "2365-709X"
-    ],
-    "issn_l": "",
-    "publisher": "Wiley",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W7142328690",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The study focuses on enhancing multi-material 3D printing techniques.\n2. Problem - Traditional methods are limited by layer-by-layer assembly and optical constraints.\n3. Method - A hybrid approach combines masked stereolithography with Xolography to utilize different resin types effectively.\n4. Key Result - This method allows for the integration of diverse materials, including opaque and transparent resins, without compromising structural integrity.\n5. Takeaway - The proposed strategy significantly increases design flexibility and paves the way for advanced multifunctional soft robotics.",
-    "relevance_note_en": "The paper addresses key limitations in multi-material 3D printing and presents a novel solution.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "id": "10.1002/admt.202502447"
-  },
   "10.2139/ssrn.6469735": {
     "author_details": [
       {
@@ -517,6 +445,136 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "id": "10.1080/09544828.2025.2552096"
+  },
+  "10.1021/acsami.6c07049": {
+    "author_details": [
+      {
+        "name": "Huan Jiang",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Mechanical Engineering"
+          },
+          {
+            "name": "University of Colorado Denver"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering",
+          "University of Colorado Denver"
+        ]
+      },
+      {
+        "name": "Alston X. Gracego",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Mechanical Engineering"
+          },
+          {
+            "name": "University of Colorado Denver"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering",
+          "University of Colorado Denver"
+        ]
+      },
+      {
+        "name": "Martin L. Dunn",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Mechanical Engineering"
+          },
+          {
+            "name": "University of Colorado Denver"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering",
+          "University of Colorado Denver"
+        ]
+      },
+      {
+        "name": "Kevin Long",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Engineering Sciences Center"
+          },
+          {
+            "name": "Sandia National Laboratories"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Engineering Sciences Center",
+          "Sandia National Laboratories"
+        ]
+      },
+      {
+        "name": "Kai Yu",
+        "orcid": "https://orcid.org/0000-0001-9067-1673",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Mechanical Engineering"
+          },
+          {
+            "name": "University of Colorado Denver"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering",
+          "University of Colorado Denver"
+        ]
+      }
+    ],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "1944-8244",
+      "1944-8252"
+    ],
+    "issn_l": "",
+    "publisher": "American Chemical Society (ACS)",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - Energy Dissipation of 3D Printed Monodomain Liquid Crystal Elastomer Composites with Continuous Fibers is a 2026 paper from ACS Applied Materials & Interfaces about LCE.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to LCE.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for LCE; current relevance score is 5/10.",
+    "relevance_note_en": "Relevant to the tracker through LCE; score: 5/10.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "id": "10.1021/acsami.6c07049"
   },
   "10.1080/00084433.2026.2635285": {
     "author_details": [
@@ -12050,6 +12108,74 @@
     "pdf_stored": false,
     "id": "10.1177/14644207241262183"
   },
+  "10.1002/amp2.70044": {
+    "author_details": [
+      {
+        "name": "Hussam Tawfik",
+        "orcid": "https://orcid.org/0009-0001-2427-2356",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Mechanical Engineering, Schulich School of Engineering University of Calgary  Calgary Canada"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering, Schulich School of Engineering University of Calgary  Calgary Canada"
+        ]
+      },
+      {
+        "name": "Peter Goldsmith",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Mechanical Engineering, Schulich School of Engineering University of Calgary  Calgary Canada"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering, Schulich School of Engineering University of Calgary  Calgary Canada"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2637-403X",
+      "2637-403X"
+    ],
+    "issn_l": "",
+    "publisher": "Wiley",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4415427366",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - Maneuverability-Based Speed and Temperature Adaptive Robotic Control (M-STARC) for Fiber Steering in Additive Manufacturing is a 2025 paper from Journal of Advanced Manufacturing and Processing about Manufacturing automation.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Manufacturing automation.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Manufacturing automation; current relevance score is 7/10.",
+    "relevance_note_en": "Relevant to the tracker through Manufacturing automation; score: 7/10.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "id": "10.1002/amp2.70044"
+  },
   "10.1080/27525783.2025.2533863": {
     "author_details": [
       {
@@ -16177,70 +16303,6 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "id": "10.1007/s10845-025-02591-8"
-  },
-  "10.1007/978-981-95-0063-5_18": {
-    "author_details": [
-      {
-        "name": "Praveen G. Kohak",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Kanif M. Markad",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Achchhe Lal",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "book-chapter",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2195-4356",
-      "2195-4364"
-    ],
-    "issn_l": "",
-    "publisher": "Springer Nature Singapore",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4416135755",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The paper discusses the integration of machine learning in multi-material additive manufacturing (MMAM).\n2. Problem - It addresses the challenges faced in MMAM, including material compatibility and process optimization.\n3. Method - The authors review recent advancements and propose machine learning techniques to enhance MMAM processes.\n4. Key Result - Findings indicate that machine learning can significantly improve efficiency and quality in MMAM applications.\n5. Takeaway - The integration of AI in MMAM presents promising solutions to existing manufacturing challenges.",
-    "relevance_note_en": "The summary captures the essence of the paper's focus on MMAM and machine learning.",
-    "abstract_used_for_summary": false,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "id": "10.1007/978-981-95-0063-5_18"
   },
   "10.21203/rs.3.rs-7643824/v1": {
     "author_details": [
