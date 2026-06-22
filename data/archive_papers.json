@@ -148,7 +148,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-21",
+    "last_updated": "2026-06-22",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -331,7 +331,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-21",
+    "last_updated": "2026-06-22",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -422,7 +422,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-21",
+    "last_updated": "2026-06-22",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -542,12 +542,12 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-21",
+    "last_updated": "2026-06-22",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
   {
-    "id": "10.1002/aisy.70218",
+    "id": "10.1002/aisy.202500430",
     "title": "Toward More Autonomous Soft Robots: Development and Characterization of a 3D-Printed Pneumatic Contact Sensor for a Six-Legged Soft Robotic Walker",
     "authors": [
       "Philipp Auth",
@@ -703,7 +703,8 @@
         ],
         "raw_affiliation_strings": [
           "Cluster of Excellence livMatS @ FIT ‐ Freiburg Center for Interactive Materials and Bioinspired Technologies  79110 Freiburg i. Br. Germany",
-          "Plant Biomechanics Group Freiburg, Botanic Garden University of Freiburg  79104 Freiburg i. Br. Germany"
+          "Plant Biomechanics Group Freiburg, Botanic Garden University of Freiburg  79104 Freiburg i. Br. Germany",
+          "Plant Biomechanics Group Freiburg, Botanic Garden, University of Freiburg, 79104 Freiburg i. Br., Germany"
         ]
       }
     ],
@@ -711,8 +712,8 @@
     "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Advanced Intelligent Systems",
-    "doi": "10.1002/aisy.70218",
-    "url": "https://doi.org/10.1002/aisy.70218",
+    "doi": "10.1002/aisy.202500430",
+    "url": "https://doi.org/10.1002/aisy.202500430",
     "source": [
       "Crossref"
     ],
@@ -729,7 +730,7 @@
     "publisher": "Wiley",
     "openalex_checked": true,
     "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W7130522311",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4414949582",
     "openalex_work_id": "",
     "openalex_source_id": "",
     "venue_metrics": {},
@@ -746,23 +747,26 @@
     "venue_scope": "non-core",
     "core_source": "schema_placeholder_crossref_rebuild",
     "categories": [
-      "Multi-material AM"
+      "Multi-material AM",
+      "Functionally Graded AM"
     ],
     "tags": [
-      "Soft robotics",
-      "Manufacturing automation"
+      "soft robotics",
+      "pneumatic sensors",
+      "autonomous systems",
+      "3D printing"
     ],
     "relevance_score": 5,
     "curation_priority": false,
-    "ai_summary_en": "1. Topic - Toward More Autonomous Soft Robots: Development and Characterization of a 3D‐Printed Pneumatic Contact Sensor for a Six‐Legged Soft Robotic Walker is a 2026 paper from Advanced Intelligent Systems about Soft robotics and Manufacturing automation.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Soft robotics and Manufacturing automation.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Soft robotics and Manufacturing automation; current relevance score is 5/10.",
-    "summary_provider": "fallback",
-    "openai_summary_applied": false,
-    "relevance_note_en": "Relevant to the tracker through Soft robotics and Manufacturing automation; score: 5/10.",
-    "abstract_used_for_summary": false,
+    "ai_summary_en": "1. Topic - The paper discusses the development of a 3D-printed pneumatic contact sensor for a soft robotic walker.\n2. Problem - Current soft robots rely on electronic sensors, which complicate systems and limit adaptability in challenging environments.\n3. Method - The authors created an electronics-free sensory system using pneumatic logic gates integrated into a six-legged soft robot.\n4. Key Result - The robot demonstrated rapid sensor response times and the ability to walk autonomously while effectively detecting obstacles.\n5. Takeaway - This work advances the field of soft robotics by enhancing autonomy and adaptability through electronics-free control systems.",
+    "summary_provider": "openai",
+    "openai_summary_applied": true,
+    "relevance_note_en": "The summary captures the essence of the research on enhancing soft robot autonomy without electronics.",
+    "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-21",
+    "last_updated": "2026-06-22",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -976,7 +980,7 @@
     ],
     "relevance_score": 5,
     "curation_priority": false,
-    "ai_summary_en": "1. Topic - Non‐Radical Photocured 3D Printing of Liquid Crystal Elastomers is a 2026 paper from Angewandte Chemie International Edition about LCE, DLP, and Soft robotics.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to LCE, DLP, and Soft robotics.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for LCE, DLP, and Soft robotics; current relevance score is 5/10.",
+    "ai_summary_en": "1. Topic - Non-Radical Photocured 3D Printing of Liquid Crystal Elastomers is a 2026 paper from Angewandte Chemie International Edition about LCE, DLP, and Soft robotics.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to LCE, DLP, and Soft robotics.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for LCE, DLP, and Soft robotics; current relevance score is 5/10.",
     "summary_provider": "fallback",
     "openai_summary_applied": false,
     "relevance_note_en": "Relevant to the tracker through LCE, DLP, and Soft robotics; score: 5/10.",
@@ -984,7 +988,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-21",
+    "last_updated": "2026-06-22",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -1067,7 +1071,7 @@
     ],
     "relevance_score": 5,
     "curation_priority": false,
-    "ai_summary_en": "1. Topic - Developing Interactive Visualisation Systems to Support Design–Engineering Decision-Making in 4D Printing Evaluation is a 2026 paper from an unknown venue about 4D printing.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to 4D printing.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for 4D printing; current relevance score is 5/10.",
+    "ai_summary_en": "1. Topic - Developing Interactive Visualisation Systems to Support Design-Engineering Decision-Making in 4D Printing Evaluation is a 2026 paper from an unknown venue about 4D printing.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to 4D printing.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for 4D printing; current relevance score is 5/10.",
     "summary_provider": "fallback",
     "openai_summary_applied": false,
     "relevance_note_en": "Relevant to the tracker through 4D printing; score: 5/10.",
@@ -1075,7 +1079,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-21",
+    "last_updated": "2026-06-22",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -1223,7 +1227,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-21",
+    "last_updated": "2026-06-22",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -1346,7 +1350,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-21",
+    "last_updated": "2026-06-22",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -1454,7 +1458,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-21",
+    "last_updated": "2026-06-22",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -1537,7 +1541,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-21",
+    "last_updated": "2026-06-22",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -1646,7 +1650,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-21",
+    "last_updated": "2026-06-22",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -1737,115 +1741,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-21",
-    "is_weekly_new": true,
-    "archive_reason": "duplicate_title"
-  },
-  {
-    "id": "10.2139/ssrn.5159002",
-    "title": "Multimaterial 3d Printing of Structured Surfaces for Increased Hydrophobicity of Biocomposite Materials",
-    "authors": [
-      "Kayah St. Germain",
-      "Damien Marchand",
-      "Laurence Chocinski-Arnault",
-      "Hani  E. Naguib",
-      "Fabienne Touchard"
-    ],
-    "author_details": [
-      {
-        "name": "Kayah St. Germain",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Damien Marchand",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Laurence Chocinski-Arnault",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Hani  E. Naguib",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Fabienne Touchard",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
-    "year": 2025,
-    "venue": "",
-    "doi": "10.2139/ssrn.5159002",
-    "url": "https://doi.org/10.2139/ssrn.5159002",
-    "source": [
-      "Crossref"
-    ],
-    "metadata_source": "crossref",
-    "crossref_type": "posted-content",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [],
-    "issn_l": "",
-    "publisher": "Elsevier BV",
-    "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "https://openalex.org/W4408018870",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "is_core_venue": false,
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "categories": [
-      "Multi-material AM"
-    ],
-    "tags": [
-      "Additive manufacturing"
-    ],
-    "relevance_score": 6,
-    "curation_priority": false,
-    "ai_summary_en": "1. Topic - Multimaterial 3d Printing of Structured Surfaces for Increased Hydrophobicity of Biocomposite Materials is a 2025 paper from an unknown venue about Additive manufacturing.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Additive manufacturing.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Additive manufacturing; current relevance score is 6/10.",
-    "summary_provider": "fallback",
-    "openai_summary_applied": false,
-    "relevance_note_en": "Relevant to the tracker through Additive manufacturing; score: 6/10.",
-    "abstract_used_for_summary": false,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "first_added": "2026-06-19",
-    "last_updated": "2026-06-21",
+    "last_updated": "2026-06-22",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -1981,7 +1877,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-21",
+    "last_updated": "2026-06-22",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -2091,7 +1987,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-21",
+    "last_updated": "2026-06-22",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -2240,7 +2136,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-21",
+    "last_updated": "2026-06-22",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -2367,7 +2263,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-21",
+    "last_updated": "2026-06-22",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -2504,7 +2400,7 @@
     ],
     "relevance_score": 5,
     "curation_priority": false,
-    "ai_summary_en": "1. Topic - Microscale 4d Printing-Templated  In-Situ Nanoparticle Synthesis (Prins) Technique for Modular Shape-Morphing Microrobots is a 2025 paper from an unknown venue about 4D printing and Manufacturing automation.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to 4D printing and Manufacturing automation.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for 4D printing and Manufacturing automation; current relevance score is 5/10.",
+    "ai_summary_en": "1. Topic - Microscale 4d Printing-Templated In-Situ Nanoparticle Synthesis (Prins) Technique for Modular Shape-Morphing Microrobots is a 2025 paper from an unknown venue about 4D printing and Manufacturing automation.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to 4D printing and Manufacturing automation.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for 4D printing and Manufacturing automation; current relevance score is 5/10.",
     "summary_provider": "fallback",
     "openai_summary_applied": false,
     "relevance_note_en": "Relevant to the tracker through 4D printing and Manufacturing automation; score: 5/10.",
@@ -2512,7 +2408,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-21",
+    "last_updated": "2026-06-22",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -2649,7 +2545,7 @@
     ],
     "relevance_score": 5,
     "curation_priority": false,
-    "ai_summary_en": "1. Topic - Magnetic Beneficiation - a Novel Approach to Facilitate Additive Manufacturing of Lunar Regolith Ceramics by Vat Photopolymerization is a 2025 paper from an unknown venue about Vat photopolymerization.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Vat photopolymerization.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Vat photopolymerization; current relevance score is 5/10.",
+    "ai_summary_en": "1. Topic - Magnetic Beneficiation-a Novel Approach to Facilitate Additive Manufacturing of Lunar Regolith Ceramics by Vat Photopolymerization is a 2025 paper from an unknown venue about Vat photopolymerization.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Vat photopolymerization.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Vat photopolymerization; current relevance score is 5/10.",
     "summary_provider": "fallback",
     "openai_summary_applied": false,
     "relevance_note_en": "Relevant to the tracker through Vat photopolymerization; score: 5/10.",
@@ -2657,7 +2553,207 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-21",
+    "last_updated": "2026-06-22",
+    "is_weekly_new": true,
+    "archive_reason": "duplicate_title"
+  },
+  {
+    "id": "10.1101/2025.02.17.638591",
+    "title": "Exploring the Impact of Volumetric Additive Manufacturing of Photo-crosslinkable Gelatin on Mesenchymal Stromal Cell Behavior and Differentiation",
+    "authors": [
+      "Nele Pien",
+      "Bryan Bogaert",
+      "Marguerite Meeremans",
+      "Cezar-Stefan Popovici",
+      "Peter Dubruel",
+      "Catharina De Schauwer",
+      "Sandra Van Vlierberghe"
+    ],
+    "author_details": [
+      {
+        "name": "Nele Pien",
+        "orcid": "https://orcid.org/0000-0002-3208-8890",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Polymer Chemistry and Biomaterials Group, Centre of Macromolecular Chemistry (CMaC), Department of Organic and Macromolecular Chemistry, Ghent University, Krijgslaan 281 building S4, 9000 Ghent, Belgium"
+          },
+          {
+            "name": "Veterinary Stem Cell Research Unit, Department of Translational Physiology, Infectiology and Public Health, Faculty of Veterinary Medicine, Ghent University, Salisburylaan 133, 9280 Merelbeke, Belgium"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Polymer Chemistry and Biomaterials Group, Centre of Macromolecular Chemistry (CMaC), Department of Organic and Macromolecular Chemistry, Ghent University, Krijgslaan 281 building S4, 9000 Ghent, Belgium",
+          "Veterinary Stem Cell Research Unit, Department of Translational Physiology, Infectiology and Public Health, Faculty of Veterinary Medicine, Ghent University, Salisburylaan 133, 9280 Merelbeke, Belgium"
+        ]
+      },
+      {
+        "name": "Bryan Bogaert",
+        "orcid": "https://orcid.org/0000-0002-7190-3886",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Polymer Chemistry and Biomaterials Group, Centre of Macromolecular Chemistry (CMaC), Department of Organic and Macromolecular Chemistry, Ghent University, Krijgslaan 281 building S4, 9000 Ghent, Belgium"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Polymer Chemistry and Biomaterials Group, Centre of Macromolecular Chemistry (CMaC), Department of Organic and Macromolecular Chemistry, Ghent University, Krijgslaan 281 building S4, 9000 Ghent, Belgium"
+        ]
+      },
+      {
+        "name": "Marguerite Meeremans",
+        "orcid": "https://orcid.org/0000-0003-1521-3378",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Polymer Chemistry and Biomaterials Group, Centre of Macromolecular Chemistry (CMaC), Department of Organic and Macromolecular Chemistry, Ghent University, Krijgslaan 281 building S4, 9000 Ghent, Belgium"
+          },
+          {
+            "name": "Veterinary Stem Cell Research Unit, Department of Translational Physiology, Infectiology and Public Health, Faculty of Veterinary Medicine, Ghent University, Salisburylaan 133, 9280 Merelbeke, Belgium"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Polymer Chemistry and Biomaterials Group, Centre of Macromolecular Chemistry (CMaC), Department of Organic and Macromolecular Chemistry, Ghent University, Krijgslaan 281 building S4, 9000 Ghent, Belgium",
+          "Veterinary Stem Cell Research Unit, Department of Translational Physiology, Infectiology and Public Health, Faculty of Veterinary Medicine, Ghent University, Salisburylaan 133, 9280 Merelbeke, Belgium"
+        ]
+      },
+      {
+        "name": "Cezar-Stefan Popovici",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Polymer Chemistry and Biomaterials Group, Centre of Macromolecular Chemistry (CMaC), Department of Organic and Macromolecular Chemistry, Ghent University, Krijgslaan 281 building S4, 9000 Ghent, Belgium"
+          },
+          {
+            "name": "Veterinary Stem Cell Research Unit, Department of Translational Physiology, Infectiology and Public Health, Faculty of Veterinary Medicine, Ghent University, Salisburylaan 133, 9280 Merelbeke, Belgium"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Polymer Chemistry and Biomaterials Group, Centre of Macromolecular Chemistry (CMaC), Department of Organic and Macromolecular Chemistry, Ghent University, Krijgslaan 281 building S4, 9000 Ghent, Belgium",
+          "Veterinary Stem Cell Research Unit, Department of Translational Physiology, Infectiology and Public Health, Faculty of Veterinary Medicine, Ghent University, Salisburylaan 133, 9280 Merelbeke, Belgium"
+        ]
+      },
+      {
+        "name": "Peter Dubruel",
+        "orcid": "https://orcid.org/0000-0002-5928-7726",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Polymer Chemistry and Biomaterials Group, Centre of Macromolecular Chemistry (CMaC), Department of Organic and Macromolecular Chemistry, Ghent University, Krijgslaan 281 building S4, 9000 Ghent, Belgium"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Polymer Chemistry and Biomaterials Group, Centre of Macromolecular Chemistry (CMaC), Department of Organic and Macromolecular Chemistry, Ghent University, Krijgslaan 281 building S4, 9000 Ghent, Belgium"
+        ]
+      },
+      {
+        "name": "Catharina De Schauwer",
+        "orcid": "https://orcid.org/0000-0002-4475-7094",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Veterinary Stem Cell Research Unit, Department of Translational Physiology, Infectiology and Public Health, Faculty of Veterinary Medicine, Ghent University, Salisburylaan 133, 9280 Merelbeke, Belgium"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Veterinary Stem Cell Research Unit, Department of Translational Physiology, Infectiology and Public Health, Faculty of Veterinary Medicine, Ghent University, Salisburylaan 133, 9280 Merelbeke, Belgium"
+        ]
+      },
+      {
+        "name": "Sandra Van Vlierberghe",
+        "orcid": "https://orcid.org/0000-0001-7688-1682",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Polymer Chemistry and Biomaterials Group, Centre of Macromolecular Chemistry (CMaC), Department of Organic and Macromolecular Chemistry, Ghent University, Krijgslaan 281 building S4, 9000 Ghent, Belgium"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Polymer Chemistry and Biomaterials Group, Centre of Macromolecular Chemistry (CMaC), Department of Organic and Macromolecular Chemistry, Ghent University, Krijgslaan 281 building S4, 9000 Ghent, Belgium"
+        ]
+      }
+    ],
+    "corresponding_authors": [
+      {
+        "name": "Catharina De Schauwer",
+        "openalex_author_id": "https://openalex.org/A5066185123",
+        "orcid": "https://orcid.org/0000-0002-4475-7094",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Ghent University",
+            "ror": "https://ror.org/00cv9y106",
+            "country_code": "BE",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Veterinary Stem Cell Research Unit, Department of Translational Physiology, Infectiology and Public Health, Faculty of Veterinary Medicine, Ghent University, Salisburylaan 133, 9280 Merelbeke, Belgium",
+          "Veterinary Stem Cell Research Unit, Faculty of Veterinary Medicine, Ghent University, Belgium"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "year": 2025,
+    "venue": "",
+    "doi": "10.1101/2025.02.17.638591",
+    "url": "https://doi.org/10.1101/2025.02.17.638591",
+    "source": [
+      "Crossref"
+    ],
+    "metadata_source": "crossref",
+    "crossref_type": "posted-content",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [],
+    "issn_l": "",
+    "publisher": "openRxiv",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4407815739",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "is_core_venue": false,
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "categories": [
+      "Multi-material AM"
+    ],
+    "tags": [
+      "Volumetric AM"
+    ],
+    "relevance_score": 5,
+    "curation_priority": false,
+    "ai_summary_en": "1. Topic - Exploring the Impact of Volumetric Additive Manufacturing of Photo-crosslinkable Gelatin on Mesenchymal Stromal Cell Behavior and Differentiation is a 2025 paper from an unknown venue about Volumetric AM.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Volumetric AM.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Volumetric AM; current relevance score is 5/10.",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_en": "Relevant to the tracker through Volumetric AM; score: 5/10.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-06-22",
+    "last_updated": "2026-06-22",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -2740,7 +2836,7 @@
     ],
     "relevance_score": 5,
     "curation_priority": false,
-    "ai_summary_en": "1. Topic - Design and Application of Stimuli‐Responsive Hydrogels for 4D Printing: A Review of Adaptive Materials in Engineering is a 2025 paper from an unknown venue about 4D printing and Soft robotics.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to 4D printing and Soft robotics.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for 4D printing and Soft robotics; current relevance score is 5/10.",
+    "ai_summary_en": "1. Topic - Design and Application of Stimuli-Responsive Hydrogels for 4D Printing: A Review of Adaptive Materials in Engineering is a 2025 paper from an unknown venue about 4D printing and Soft robotics.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to 4D printing and Soft robotics.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for 4D printing and Soft robotics; current relevance score is 5/10.",
     "summary_provider": "fallback",
     "openai_summary_applied": false,
     "relevance_note_en": "Relevant to the tracker through 4D printing and Soft robotics; score: 5/10.",
@@ -2748,7 +2844,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-21",
+    "last_updated": "2026-06-22",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -2935,7 +3031,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-21",
+    "last_updated": "2026-06-22",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -3044,7 +3140,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-21",
+    "last_updated": "2026-06-22",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -3232,7 +3328,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-21",
+    "last_updated": "2026-06-22",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -3293,7 +3389,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-21",
+    "last_updated": "2026-06-22",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -3420,7 +3516,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-21",
+    "last_updated": "2026-06-22",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -3540,7 +3636,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-21",
+    "last_updated": "2026-06-22",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -3685,7 +3781,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-21",
+    "last_updated": "2026-06-22",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -3853,7 +3949,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-21",
+    "last_updated": "2026-06-22",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -3953,190 +4049,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-21",
-    "is_weekly_new": true,
-    "archive_reason": "duplicate_title"
-  },
-  {
-    "id": "10.26434/chemrxiv-2024-f94sf",
-    "title": "Multimaterial 3D Laser Printing of Cell-Adhesive and Cell-Repellent Hydrogels",
-    "authors": [
-      "Niklas Schwegler",
-      "Tanisha Gebert",
-      "Maria Villiou",
-      "Federico Colombo",
-      "Barbara Schamberger",
-      "Christine Selhuber-Unkel",
-      "Franziska Thomas",
-      "Eva Blasco"
-    ],
-    "author_details": [
-      {
-        "name": "Niklas Schwegler",
-        "orcid": "https://orcid.org/0000-0002-0954-7956",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Heidelberg University"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Heidelberg University"
-        ]
-      },
-      {
-        "name": "Tanisha Gebert",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Heidelberg University"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Heidelberg University"
-        ]
-      },
-      {
-        "name": "Maria Villiou",
-        "orcid": "https://orcid.org/0000-0001-8966-3852",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Heidelberg University"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Heidelberg University"
-        ]
-      },
-      {
-        "name": "Federico Colombo",
-        "orcid": "https://orcid.org/0000-0003-3396-6023",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Heidelberg University"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Heidelberg University"
-        ]
-      },
-      {
-        "name": "Barbara Schamberger",
-        "orcid": "https://orcid.org/0000-0001-5491-3620",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Heidelberg University"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Heidelberg University"
-        ]
-      },
-      {
-        "name": "Christine Selhuber-Unkel",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Heidelberg University"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Heidelberg University"
-        ]
-      },
-      {
-        "name": "Franziska Thomas",
-        "orcid": "https://orcid.org/0000-0002-1176-7018",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Heidelberg University"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Heidelberg University"
-        ]
-      },
-      {
-        "name": "Eva Blasco",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Heidelberg University"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Heidelberg University"
-        ]
-      }
-    ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
-    "year": 2024,
-    "venue": "",
-    "doi": "10.26434/chemrxiv-2024-f94sf",
-    "url": "https://doi.org/10.26434/chemrxiv-2024-f94sf",
-    "source": [
-      "Crossref"
-    ],
-    "metadata_source": "crossref",
-    "crossref_type": "posted-content",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [],
-    "issn_l": "",
-    "publisher": "American Chemical Society (ACS)",
-    "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "https://openalex.org/W4390944768",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "is_core_venue": false,
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "categories": [
-      "Multi-material AM"
-    ],
-    "tags": [
-      "Additive manufacturing"
-    ],
-    "relevance_score": 6,
-    "curation_priority": false,
-    "ai_summary_en": "1. Topic - Multimaterial 3D Laser Printing of Cell-Adhesive and Cell-Repellent Hydrogels is a 2024 paper from an unknown venue about Additive manufacturing.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Additive manufacturing.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Additive manufacturing; current relevance score is 6/10.",
-    "summary_provider": "fallback",
-    "openai_summary_applied": false,
-    "relevance_note_en": "Relevant to the tracker through Additive manufacturing; score: 6/10.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "first_added": "2026-06-19",
-    "last_updated": "2026-06-21",
+    "last_updated": "2026-06-22",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -4229,177 +4142,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-21",
-    "is_weekly_new": true,
-    "archive_reason": "duplicate_title"
-  },
-  {
-    "id": "10.21203/rs.3.rs-4237033/v1",
-    "title": "Hybrid Epoxy-Acrylate Resins for Wavelength-Selective Multimaterial 3D Printing",
-    "authors": [
-      "Zachariah Page",
-      "Ji-Won Kim",
-      "Marshall Allen",
-      "Henry Cater",
-      "Ain Uddin",
-      "Elizabeth Recker",
-      "Benny Freeman"
-    ],
-    "author_details": [
-      {
-        "name": "Zachariah Page",
-        "orcid": "https://orcid.org/0000-0002-1013-5422",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "The University of Texas at Austin"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "The University of Texas at Austin"
-        ]
-      },
-      {
-        "name": "Ji-Won Kim",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "The University of Texas at Austin"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "The University of Texas at Austin"
-        ]
-      },
-      {
-        "name": "Marshall Allen",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "The University of Texas at Austin"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "The University of Texas at Austin"
-        ]
-      },
-      {
-        "name": "Henry Cater",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "The University of Texas at Austin"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "The University of Texas at Austin"
-        ]
-      },
-      {
-        "name": "Ain Uddin",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "The University of Texas at Austin"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "The University of Texas at Austin"
-        ]
-      },
-      {
-        "name": "Elizabeth Recker",
-        "orcid": "https://orcid.org/0000-0002-8469-6628",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "The University of Texas at Austin"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "The University of Texas at Austin"
-        ]
-      },
-      {
-        "name": "Benny Freeman",
-        "orcid": "https://orcid.org/0000-0003-2779-7788",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "The University of Texas at Austin"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "The University of Texas at Austin"
-        ]
-      }
-    ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
-    "year": 2024,
-    "venue": "",
-    "doi": "10.21203/rs.3.rs-4237033/v1",
-    "url": "https://doi.org/10.21203/rs.3.rs-4237033/v1",
-    "source": [
-      "Crossref"
-    ],
-    "metadata_source": "crossref",
-    "crossref_type": "posted-content",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [],
-    "issn_l": "",
-    "publisher": "Springer Science and Business Media LLC",
-    "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "https://openalex.org/W4396576018",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "is_core_venue": false,
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "categories": [
-      "Multi-material AM"
-    ],
-    "tags": [
-      "Metamaterials",
-      "DLP",
-      "Soft robotics"
-    ],
-    "relevance_score": 6,
-    "curation_priority": false,
-    "ai_summary_en": "1. Topic - Hybrid Epoxy-Acrylate Resins for Wavelength-Selective Multimaterial 3D Printing is a 2024 paper from an unknown venue about Metamaterials, DLP, and Soft robotics.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Metamaterials, DLP, and Soft robotics.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Metamaterials, DLP, and Soft robotics; current relevance score is 6/10.",
-    "summary_provider": "fallback",
-    "openai_summary_applied": false,
-    "relevance_note_en": "Relevant to the tracker through Metamaterials, DLP, and Soft robotics; score: 6/10.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "first_added": "2026-06-19",
-    "last_updated": "2026-06-21",
+    "last_updated": "2026-06-22",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -4480,7 +4223,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-21",
+    "last_updated": "2026-06-22",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -4576,7 +4319,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-21",
+    "last_updated": "2026-06-22",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -4715,7 +4458,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-21",
+    "last_updated": "2026-06-22",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -4860,7 +4603,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-21",
+    "last_updated": "2026-06-22",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -4951,7 +4694,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-21",
+    "last_updated": "2026-06-22",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -5050,7 +4793,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-21",
+    "last_updated": "2026-06-22",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -5176,7 +4919,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-21",
+    "last_updated": "2026-06-22",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -5303,7 +5046,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-21",
+    "last_updated": "2026-06-22",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -5420,132 +5163,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-21",
-    "is_weekly_new": true,
-    "archive_reason": "duplicate_title"
-  },
-  {
-    "id": "10.26434/chemrxiv-2024-pqzct",
-    "title": "Fabrication of High-Density Microarchitected Tungsten via DLP 3D Printing",
-    "authors": [
-      "Junyu Cai",
-      "Songhua Ma",
-      "Wenbin Yi",
-      "Jieping Wang"
-    ],
-    "author_details": [
-      {
-        "name": "Junyu Cai",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Nanjing University of Science and Technology"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Nanjing University of Science and Technology"
-        ]
-      },
-      {
-        "name": "Songhua Ma",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Nanjing University of Science and Technology"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Nanjing University of Science and Technology"
-        ]
-      },
-      {
-        "name": "Wenbin Yi",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Nanjing University of Science and Technology"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Nanjing University of Science and Technology"
-        ]
-      },
-      {
-        "name": "Jieping Wang",
-        "orcid": "https://orcid.org/0000-0003-4879-9248",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Nanjing University of Science and Technology"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Nanjing University of Science and Technology"
-        ]
-      }
-    ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
-    "year": 2024,
-    "venue": "",
-    "doi": "10.26434/chemrxiv-2024-pqzct",
-    "url": "https://doi.org/10.26434/chemrxiv-2024-pqzct",
-    "source": [
-      "Crossref"
-    ],
-    "metadata_source": "crossref",
-    "crossref_type": "posted-content",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [],
-    "issn_l": "",
-    "publisher": "American Chemical Society (ACS)",
-    "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "https://openalex.org/W4395009925",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "is_core_venue": false,
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "categories": [
-      "Multi-material AM"
-    ],
-    "tags": [
-      "Metamaterials",
-      "DLP",
-      "Vat photopolymerization"
-    ],
-    "relevance_score": 5,
-    "curation_priority": false,
-    "ai_summary_en": "1. Topic - Fabrication of High-Density Microarchitected Tungsten via DLP 3D Printing is a 2024 paper from an unknown venue about Metamaterials, DLP, and Vat photopolymerization.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Metamaterials, DLP, and Vat photopolymerization.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Metamaterials, DLP, and Vat photopolymerization; current relevance score is 5/10.",
-    "summary_provider": "fallback",
-    "openai_summary_applied": false,
-    "relevance_note_en": "Relevant to the tracker through Metamaterials, DLP, and Vat photopolymerization; score: 5/10.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "first_added": "2026-06-19",
-    "last_updated": "2026-06-21",
+    "last_updated": "2026-06-22",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -5718,7 +5336,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-21",
+    "last_updated": "2026-06-22",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -5809,7 +5427,7 @@
     ],
     "relevance_score": 5,
     "curation_priority": false,
-    "ai_summary_en": "1. Topic - An Analytical Study on Computed Tomography-Based Volumetric Additive Manufacturing: Resin Properties and Part Size Interrelationship- Part I is a 2024 paper from an unknown venue about Volumetric AM.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Volumetric AM.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Volumetric AM; current relevance score is 5/10.",
+    "ai_summary_en": "1. Topic - An Analytical Study on Computed Tomography-Based Volumetric Additive Manufacturing: Resin Properties and Part Size Interrelationship-Part I is a 2024 paper from an unknown venue about Volumetric AM.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Volumetric AM.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Volumetric AM; current relevance score is 5/10.",
     "summary_provider": "fallback",
     "openai_summary_applied": false,
     "relevance_note_en": "Relevant to the tracker through Volumetric AM; score: 5/10.",
@@ -5817,12 +5435,12 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-21",
+    "last_updated": "2026-06-22",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
   {
-    "id": "10.1002/rpm.20240008",
+    "id": "10.1002/rpm2.62",
     "title": "Advances in 4D printing of biodegradable photopolymers",
     "authors": [
       "Yue Ma",
@@ -5835,71 +5453,33 @@
         "orcid": "",
         "position": "first",
         "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Chemistry and Applied Biosciences ETH Zurich  Zurich Switzerland"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Chemistry and Applied Biosciences ETH Zurich  Zurich Switzerland"
-        ]
+        "institutions": [],
+        "raw_affiliation_strings": []
       },
       {
         "name": "Chih‐Jen Shih",
         "orcid": "",
         "position": "additional",
         "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Chemistry and Applied Biosciences ETH Zurich  Zurich Switzerland"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Chemistry and Applied Biosciences ETH Zurich  Zurich Switzerland"
-        ]
+        "institutions": [],
+        "raw_affiliation_strings": []
       },
       {
         "name": "Yinyin Bao",
-        "orcid": "https://orcid.org/0000-0001-5264-1211",
+        "orcid": "",
         "position": "additional",
         "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Chemistry and Applied Biosciences ETH Zurich  Zurich Switzerland"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Chemistry and Applied Biosciences ETH Zurich  Zurich Switzerland"
-        ]
+        "institutions": [],
+        "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [
-      {
-        "name": "Yinyin Bao",
-        "openalex_author_id": "https://openalex.org/A5002852218",
-        "orcid": "https://orcid.org/0000-0001-5264-1211",
-        "position": "last",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "ETH Zurich",
-            "ror": "https://ror.org/05a28rw58",
-            "country_code": "CH",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Chemistry and Applied Biosciences ETH Zurich  Zurich Switzerland",
-          "Department of Chemistry and Applied Biosciences, ETH Zurich, Zurich, Switzerland"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
     "year": 2024,
     "venue": "Responsive Materials",
-    "doi": "10.1002/rpm.20240008",
-    "url": "https://doi.org/10.1002/rpm.20240008",
+    "doi": "10.1002/rpm2.62",
+    "url": "https://doi.org/10.1002/rpm2.62",
     "source": [
       "Crossref"
     ],
@@ -5915,8 +5495,8 @@
     "issn_l": "",
     "publisher": "Wiley",
     "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4399383333",
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "https://openalex.org/W4402097955",
     "openalex_work_id": "",
     "openalex_source_id": "",
     "venue_metrics": {},
@@ -5933,26 +5513,23 @@
     "venue_scope": "non-core",
     "core_source": "schema_placeholder_crossref_rebuild",
     "categories": [
-      "Reviews and Surveys"
+      "Multi-material AM"
     ],
     "tags": [
-      "4D printing",
-      "DLP",
-      "SLA",
-      "Vat photopolymerization"
+      "4D printing"
     ],
     "relevance_score": 5,
     "curation_priority": false,
-    "ai_summary_en": "1. Topic - Advances in 4D printing of biodegradable photopolymers is a 2024 paper from Responsive Materials about 4D printing, DLP, and SLA.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to 4D printing, DLP, and SLA.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for 4D printing, DLP, and SLA; current relevance score is 5/10.",
+    "ai_summary_en": "1. Topic - Advances in 4D printing of biodegradable photopolymers is a 2024 paper from Responsive Materials about 4D printing.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to 4D printing.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for 4D printing; current relevance score is 5/10.",
     "summary_provider": "fallback",
     "openai_summary_applied": false,
-    "relevance_note_en": "Relevant to the tracker through 4D printing, DLP, and SLA; score: 5/10.",
-    "abstract_used_for_summary": true,
+    "relevance_note_en": "Relevant to the tracker through 4D printing; score: 5/10.",
+    "abstract_used_for_summary": false,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "first_added": "2026-06-12",
-    "last_updated": "2026-06-21",
-    "is_weekly_new": false,
+    "first_added": "2026-06-19",
+    "last_updated": "2026-06-22",
+    "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
   {
@@ -6055,7 +5632,7 @@
     ],
     "relevance_score": 5,
     "curation_priority": false,
-    "ai_summary_en": "1. Topic - A Self-Driving Lab for Nano- and Advanced Materials Synthesis is a 2024 paper from an unknown venue about Self-driving Labs.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Self-driving Labs.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Self-driving Labs; current relevance score is 5/10.",
+    "ai_summary_en": "1. Topic - A Self-Driving Lab for Nano-and Advanced Materials Synthesis is a 2024 paper from an unknown venue about Self-driving Labs.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Self-driving Labs.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Self-driving Labs; current relevance score is 5/10.",
     "summary_provider": "fallback",
     "openai_summary_applied": false,
     "relevance_note_en": "Relevant to the tracker through Self-driving Labs; score: 5/10.",
@@ -6063,7 +5640,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-21",
+    "last_updated": "2026-06-22",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -6210,7 +5787,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-21",
+    "last_updated": "2026-06-22",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -6337,12 +5914,12 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-21",
+    "last_updated": "2026-06-22",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
   {
-    "id": "10.1007/978-981-97-1614-2_26",
+    "id": "10.1007/978-981-19-2797-3_26-1",
     "title": "4D Printing of Liquid Metals",
     "authors": [
       "Jianye Gao"
@@ -6381,8 +5958,8 @@
     "corresponding_author_source": "openalex_cross_check",
     "year": 2024,
     "venue": "Handbook of Liquid Metals",
-    "doi": "10.1007/978-981-97-1614-2_26",
-    "url": "https://doi.org/10.1007/978-981-97-1614-2_26",
+    "doi": "10.1007/978-981-19-2797-3_26-1",
+    "url": "https://doi.org/10.1007/978-981-19-2797-3_26-1",
     "source": [
       "Crossref"
     ],
@@ -6396,7 +5973,7 @@
     "publisher": "Springer Nature Singapore",
     "openalex_checked": true,
     "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4403875921",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4401329838",
     "openalex_work_id": "",
     "openalex_source_id": "",
     "venue_metrics": {},
@@ -6427,9 +6004,9 @@
     "abstract_used_for_summary": false,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "first_added": "2026-06-12",
-    "last_updated": "2026-06-21",
-    "is_weekly_new": false,
+    "first_added": "2026-06-19",
+    "last_updated": "2026-06-22",
+    "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
   {
@@ -6510,7 +6087,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-21",
+    "last_updated": "2026-06-22",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   }
