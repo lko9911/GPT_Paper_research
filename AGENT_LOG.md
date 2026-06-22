@@ -1,5 +1,31 @@
 # AGENT_LOG
 
+## 2026-06-22 11:42
+
+### Change Summary
+- Limited public AML recommendations to papers with `AML score >= 0.60`.
+
+### Edited Files
+- `scripts/score_aml_recommendations.py`: added `PUBLIC_AML_SCORE_THRESHOLD` and filters public AML output by score.
+- `public/data/aml_recommended_papers.json`: reduced current public AML recommendations from 1,112 to 641 entries by removing 471 papers below 0.60.
+- `assets/app.js`: added a frontend defense so recommendations below 0.60 are not displayed even if present in the JSON.
+- `README.md`: documented the public AML recommendation threshold.
+- `AGENT_LOG.md`: recorded this threshold change.
+
+### Implemented Features
+- AML recommendation output now shows only recommendations with score 60/100 or higher.
+
+### Design Decisions
+- Kept lower-scoring candidates out of the public recommendation JSON instead of only hiding them in the UI, so the published file is smaller and cleaner.
+- The UI still shows the top visible AML recommendations first.
+
+### Remaining Work
+- If the user wants to browse all 641 visible recommendations, add pagination or a `Load more AML recommendations` button because the current UI renders the top subset.
+
+### Notes / Cautions
+- The latest successful AML workflow did update `public/data/aml_recommended_papers.json`; it expanded from 50 to 1,112 before this threshold cleanup.
+- No OpenAI, Crossref, or OpenAlex API calls were made during this cleanup.
+
 ## 2026-06-22 11:28
 
 ### Change Summary

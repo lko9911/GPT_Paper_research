@@ -31,6 +31,8 @@ from aml_common import (
     write_json,
 )
 
+PUBLIC_AML_SCORE_THRESHOLD = float(os.getenv("AML_PUBLIC_SCORE_THRESHOLD", "0.60"))
+
 
 def score_recommendations(
     max_candidates: int = 0,
@@ -57,7 +59,11 @@ def score_recommendations(
 
     scored.sort(key=lambda item: (item["aml_score"], item.get("year") or 0), reverse=True)
     updated_at = now_iso()
-    public_items = [public_paper(item, updated_at) for item in scored if item["recommendation_level"] != "Exclude"]
+    public_items = [
+        public_paper(item, updated_at)
+        for item in scored
+        if item["recommendation_level"] != "Exclude" and float(item.get("aml_score") or 0.0) >= PUBLIC_AML_SCORE_THRESHOLD
+    ]
     write_json(PUBLIC_OUTPUT_PATH, public_items)
     write_json(SCORING_DEBUG_PATH, {"updated_at": updated_at, "items": scored})
     write_json(
@@ -68,6 +74,7 @@ def score_recommendations(
             "candidate_pool_count": len(pool_candidates),
             "score_limit": "all" if max_candidates <= 0 else max_candidates,
             "public_count": len(public_items),
+            "public_score_threshold": PUBLIC_AML_SCORE_THRESHOLD,
             "use_ai_judge": use_ai_judge,
             "use_ai_reason": use_ai_reason,
             "level_counts": _level_counts(scored),
@@ -79,6 +86,7 @@ def score_recommendations(
         "level_counts": _level_counts(scored),
         "candidate_count": len(candidates),
         "candidate_pool_count": len(pool_candidates),
+        "public_score_threshold": PUBLIC_AML_SCORE_THRESHOLD,
         "public_output": str(PUBLIC_OUTPUT_PATH),
     }
 

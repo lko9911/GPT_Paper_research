@@ -271,6 +271,7 @@ const UPDATE_STATUS_URLS = [
   "data/update_status.json",
 ];
 const AML_RECOMMENDATIONS_URL = "public/data/aml_recommended_papers.json";
+const AML_PUBLIC_SCORE_THRESHOLD = 0.6;
 const PAPERS_INDEX_URL = "data/papers_index.json";
 const PAPERS_FALLBACK_URL = "data/papers.json";
 const DETAIL_MANIFEST_URL = "data/detail_manifest.json";
@@ -787,6 +788,7 @@ async function loadAmlRecommendations() {
 function amlVisibleRecommendations() {
   return (state.amlRecommendations || [])
     .filter((item) => ["High", "Possible", "Watch"].includes(item.recommendation_level))
+    .filter((item) => Number(item.aml_score || 0) >= AML_PUBLIC_SCORE_THRESHOLD)
     .sort((a, b) => Number(b.aml_score || 0) - Number(a.aml_score || 0))
     .slice(0, 24);
 }
