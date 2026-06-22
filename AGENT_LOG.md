@@ -1,5 +1,32 @@
 # AGENT_LOG
 
+## 2026-06-22 12:02
+
+### Change Summary
+- Reused existing curated-paper summaries in AML recommendation cards.
+
+### Edited Files
+- `scripts/score_aml_recommendations.py`: merges `data/papers.json` summary fields into AML candidates before scoring/public export.
+- `scripts/aml_common.py`: includes summary fields in `public/data/aml_recommended_papers.json`.
+- `assets/app.js`: uses AML item summary metadata instead of forcing AML cards to metadata-only summaries.
+- `public/data/aml_recommended_papers.json`: backfilled existing source summaries into current AML recommendations.
+- `index.html`: bumped frontend asset cache version to `20260622-aml-source-summary`.
+- `AGENT_LOG.md`: recorded this summary reuse update.
+
+### Implemented Features
+- AML recommendation cards now reuse existing `ai_summary_en`, `relevance_note_en`, `summary_provider`, and `openai_summary_applied` from the original curated paper when available.
+- Current AML recommendations: 641/641 matched to source summaries, with 638 OpenAI summaries reused.
+
+### Design Decisions
+- Reused existing summaries by DOI/title key to avoid additional OpenAI cost.
+- Kept AML-specific score/recommendation metadata while borrowing the source paper's summary content.
+
+### Remaining Work
+- If the three non-OpenAI AML recommendations matter, refresh only those with the manual OpenAI summary workflow later.
+
+### Notes / Cautions
+- No OpenAI, Crossref, or OpenAlex API calls were made.
+
 ## 2026-06-22 11:56
 
 ### Change Summary

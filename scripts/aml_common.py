@@ -202,5 +202,10 @@ def public_paper(record: dict[str, Any], updated_at: str) -> dict[str, Any]:
         "reason_source": record.get("reason_source", "template"),
         "discovery_routes": record.get("discovery_routes", [])[:8],
         "related_seed_papers": record.get("related_seed_papers", [])[:3],
+        "ai_summary_en": record.get("ai_summary_en", ""),
+        "relevance_note_en": record.get("relevance_note_en", ""),
+        "summary_provider": record.get("summary_provider", "metadata"),
+        "openai_summary_applied": bool(record.get("openai_summary_applied")),
+        "summary_source": record.get("summary_source", ""),
         "updated_at": updated_at,
     }

@@ -7,6 +7,7 @@ from typing import Any
 
 from aml_common import (
     AML_TERMS,
+    PAPERS_PATH,
     CANDIDATE_EMBEDDINGS_PATH,
     CANDIDATE_POOL_PATH,
     EMBEDDING_MODEL,
@@ -43,10 +44,12 @@ def score_recommendations(
     pool = load_json(CANDIDATE_POOL_PATH, {"candidates": []})
     pool_candidates = pool.get("candidates", [])
     candidates = pool_candidates if max_candidates <= 0 else pool_candidates[:max_candidates]
+    source_summaries = _source_paper_summaries()
     seed_embeddings = load_json(SEED_EMBEDDINGS_PATH, {"items": []}).get("items", [])
     candidate_embeddings = _build_candidate_embeddings(candidates)
     scored = []
     for candidate in candidates:
+        _merge_source_summary(candidate, source_summaries)
         score = _score_one(candidate, profile, seed_embeddings, candidate_embeddings)
         if use_ai_judge and 0.35 < score["aml_score"] < 0.80:
             score = _apply_ai_judge(score)
@@ -89,6 +92,32 @@ def score_recommendations(
         "public_score_threshold": PUBLIC_AML_SCORE_THRESHOLD,
         "public_output": str(PUBLIC_OUTPUT_PATH),
     }
+
+
+def _source_paper_summaries() -> dict[str, dict[str, Any]]:
+    summaries: dict[str, dict[str, Any]] = {}
+    for paper in load_json(PAPERS_PATH, []):
+        summary = str(paper.get("ai_summary_en") or "").strip()
+        if not summary:
+            continue
+        key = candidate_key(paper)
+        summaries[key] = {
+            "ai_summary_en": summary,
+            "relevance_note_en": paper.get("relevance_note_en", ""),
+            "summary_provider": paper.get("summary_provider", "metadata"),
+            "openai_summary_applied": bool(paper.get("openai_summary_applied")),
+            "summary_source": "curated_paper_pool",
+        }
+    return summaries
+
+
+def _merge_source_summary(candidate: dict[str, Any], source_summaries: dict[str, dict[str, Any]]) -> None:
+    source = source_summaries.get(candidate_key(candidate))
+    if not source:
+        return
+    for key, value in source.items():
+        if value:
+            candidate[key] = value
 
 
 def refresh_public_recommendation_reasons() -> dict[str, Any]:

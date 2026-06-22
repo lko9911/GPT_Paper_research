@@ -819,9 +819,9 @@ function amlRecommendationToPaper(item) {
     aml_score: amlScore,
     recommendation_level: (item && item.recommendation_level) || "",
     discovery_routes: Array.isArray(item && item.discovery_routes) ? item.discovery_routes : [],
-    summary_provider: "metadata",
-    openai_summary_applied: false,
-    ai_summary_en: "",
+    summary_provider: (item && item.summary_provider) || "metadata",
+    openai_summary_applied: Boolean(item && item.openai_summary_applied),
+    ai_summary_en: (item && item.ai_summary_en) || "",
     relevance_note_en:
       (item && item.why_recommended) ||
       `AML recommendation score: ${Math.round(amlScore * 100)}/100.`,
