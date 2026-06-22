@@ -1,5 +1,34 @@
 # AGENT_LOG
 
+## 2026-06-22 10:27
+
+### Change Summary
+- Changed the manual AML recommendation workflow so `max_candidates` value `0` or blank means score all collected AML candidates.
+
+### Edited Files
+- `.github/workflows/aml-recommendation-manual.yml`: updated the `max_candidates` input description, made it optional, and changed the default to `0`.
+- `scripts/collect_aml_candidates.py`: treats `max_candidates <= 0` as unlimited for the selected candidate pool and records `score_limit`.
+- `scripts/score_aml_recommendations.py`: scores the full candidate pool when `max_candidates <= 0` and records pool/limit metadata in the recommendation log.
+- `scripts/run_aml_recommendation_pipeline.py`: added safe parsing so blank `--max-candidates` values become `0`.
+- `README.md`: documented that `0` or blank means score all collected AML candidates.
+- `AGENT_LOG.md`: recorded this AML workflow behavior change.
+
+### Implemented Features
+- AML manual runs now support full candidate scoring without requiring the user to guess a large upper bound.
+- Positive `max_candidates` values remain available for quick test runs.
+
+### Design Decisions
+- `collect_and_score` still limits Crossref fetch breadth per query to avoid runaway API requests, but it no longer truncates the collected candidate pool before scoring when the limit is `0`.
+- The default manual workflow behavior now matches the recommendation-system intent: rank all AML-keyword candidates that were collected.
+
+### Remaining Work
+- Run the GitHub Actions manual workflow once after push to confirm the UI input behaves as expected on GitHub.
+
+### Notes / Cautions
+- No OpenAI API calls were made during this code change.
+- No Crossref/OpenAlex API calls were made during validation.
+- Validation: `python -m py_compile scripts\collect_aml_candidates.py scripts\score_aml_recommendations.py scripts\run_aml_recommendation_pipeline.py`.
+
 ## 2026-06-19 16:48
 
 ### Change Summary

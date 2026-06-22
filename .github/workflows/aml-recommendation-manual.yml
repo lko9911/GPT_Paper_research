@@ -13,9 +13,9 @@ on:
           - collect_and_score
           - full_refresh
       max_candidates:
-        description: "Maximum number of candidate papers to score"
-        required: true
-        default: "200"
+        description: "Maximum AML candidate papers to score. Use 0 or blank to score all collected candidates."
+        required: false
+        default: "0"
       use_ai_judge:
         description: "Use OpenAI relevance judge for ambiguous candidates"
         required: true

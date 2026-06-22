@@ -33,13 +33,14 @@ from aml_common import (
 
 
 def score_recommendations(
-    max_candidates: int = 200,
+    max_candidates: int = 0,
     use_ai_judge: bool = False,
     use_ai_reason: bool = False,
 ) -> dict[str, Any]:
     profile = load_json(PROFILE_PATH, {})
     pool = load_json(CANDIDATE_POOL_PATH, {"candidates": []})
-    candidates = pool.get("candidates", [])[: max(1, max_candidates)]
+    pool_candidates = pool.get("candidates", [])
+    candidates = pool_candidates if max_candidates <= 0 else pool_candidates[:max_candidates]
     seed_embeddings = load_json(SEED_EMBEDDINGS_PATH, {"items": []}).get("items", [])
     candidate_embeddings = _build_candidate_embeddings(candidates)
     scored = []
@@ -64,6 +65,8 @@ def score_recommendations(
         {
             "updated_at": updated_at,
             "candidate_count": len(candidates),
+            "candidate_pool_count": len(pool_candidates),
+            "score_limit": "all" if max_candidates <= 0 else max_candidates,
             "public_count": len(public_items),
             "use_ai_judge": use_ai_judge,
             "use_ai_reason": use_ai_reason,
@@ -75,6 +78,7 @@ def score_recommendations(
         "public_items": public_items,
         "level_counts": _level_counts(scored),
         "candidate_count": len(candidates),
+        "candidate_pool_count": len(pool_candidates),
         "public_output": str(PUBLIC_OUTPUT_PATH),
     }
 
@@ -376,7 +380,7 @@ def _level_counts(items: list[dict[str, Any]]) -> dict[str, int]:
 
 if __name__ == "__main__":
     result = score_recommendations(
-        max_candidates=int(os.getenv("AML_MAX_CANDIDATES", "200")),
+        max_candidates=int((os.getenv("AML_MAX_CANDIDATES") or "0").strip() or "0"),
         use_ai_judge=os.getenv("AML_USE_AI_JUDGE", "false").lower() == "true",
         use_ai_reason=os.getenv("AML_USE_AI_REASON", "false").lower() == "true",
     )

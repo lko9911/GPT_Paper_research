@@ -35,16 +35,20 @@ DEFAULT_QUERIES = [
 ]
 
 
-def collect_candidates(mode: str = "score_existing", max_candidates: int = 200) -> dict[str, Any]:
+def collect_candidates(mode: str = "score_existing", max_candidates: int = 0) -> dict[str, Any]:
     candidates: dict[str, dict[str, Any]] = {}
     _add_existing_pool(candidates, PAPERS_PATH, "existing_keyword_pool")
     if mode in {"collect_and_score", "full_refresh"}:
         _add_recent_api_candidates(candidates, max_candidates=max_candidates)
-    selected = list(candidates.values())[: max(1, max_candidates)]
+    all_candidates = list(candidates.values())
+    selected = all_candidates if max_candidates <= 0 else all_candidates[:max_candidates]
     payload = {
         "updated_at": now_iso(),
         "mode": mode,
+        "max_candidates": max_candidates,
+        "score_limit": "all" if max_candidates <= 0 else max_candidates,
         "candidate_count": len(selected),
+        "candidate_pool_count": len(all_candidates),
         "candidates": selected,
     }
     write_json(CANDIDATE_POOL_PATH, payload)
@@ -61,7 +65,7 @@ def _add_existing_pool(candidates: dict[str, dict[str, Any]], path, route: str) 
 
 def _add_recent_api_candidates(candidates: dict[str, dict[str, Any]], max_candidates: int) -> None:
     since_year = int(os.getenv("AML_SINCE_YEAR", "2024"))
-    per_query = max(5, min(30, max_candidates // max(1, len(DEFAULT_QUERIES))))
+    per_query = 30 if max_candidates <= 0 else max(5, min(30, max_candidates // max(1, len(DEFAULT_QUERIES))))
     for query in DEFAULT_QUERIES:
         try:
             for paper in fetch_crossref(query, rows=per_query, from_year=since_year):
@@ -144,6 +148,6 @@ def _has_aml_signal(record: dict[str, Any]) -> bool:
 
 if __name__ == "__main__":
     mode = os.getenv("AML_MODE", "score_existing")
-    max_candidates = int(os.getenv("AML_MAX_CANDIDATES", "200"))
+    max_candidates = int((os.getenv("AML_MAX_CANDIDATES") or "0").strip() or "0")
     result = collect_candidates(mode=mode, max_candidates=max_candidates)
     print(f"AML candidates collected: {result['candidate_count']}")

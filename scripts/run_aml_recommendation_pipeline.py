@@ -13,10 +13,20 @@ from generate_aml_profile import generate_profile
 from score_aml_recommendations import refresh_public_recommendation_reasons, score_recommendations
 
 
+def parse_max_candidates(value: str | int | None) -> int:
+    if value is None:
+        return 0
+    text = str(value).strip()
+    if not text:
+        return 0
+    parsed = int(text)
+    return max(0, parsed)
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Run AML recommendation pipeline")
     parser.add_argument("--mode", default=os.getenv("AML_MODE", "score_existing"), choices=["score_existing", "collect_and_score", "full_refresh"])
-    parser.add_argument("--max-candidates", type=int, default=int(os.getenv("AML_MAX_CANDIDATES", "200")))
+    parser.add_argument("--max-candidates", type=parse_max_candidates, default=parse_max_candidates(os.getenv("AML_MAX_CANDIDATES")))
     parser.add_argument("--use-ai-judge", action="store_true", default=os.getenv("AML_USE_AI_JUDGE", "false").lower() == "true")
     parser.add_argument("--use-ai-reason", action="store_true", default=os.getenv("AML_USE_AI_REASON", "false").lower() == "true")
     parser.add_argument("--use-ai-profile", action="store_true", default=os.getenv("AML_USE_AI_PROFILE", "false").lower() == "true")
@@ -74,6 +84,8 @@ def run_pipeline(
         "seed_papers_loaded": profile.get("seed_count", 0),
         "seed_embeddings_generated": seed_result.get("generated", 0),
         "candidate_count": candidate_result.get("candidate_count", 0),
+        "candidate_pool_count": candidate_result.get("candidate_pool_count", 0),
+        "score_limit": "all" if max_candidates <= 0 else max_candidates,
         "candidates_scored": score_result.get("candidate_count", 0),
         "level_counts": score_result.get("level_counts", {}),
         "ai_judge_used": use_ai_judge,
