@@ -52,7 +52,7 @@ def run_pipeline(
     use_ai_profile: bool = False,
 ) -> dict[str, Any]:
     if not seed_path().exists():
-        if use_ai_reason and PUBLIC_OUTPUT_PATH.exists():
+        if mode == "score_existing" and use_ai_reason and PUBLIC_OUTPUT_PATH.exists():
             reason_result = refresh_public_recommendation_reasons()
             return {
                 "seed_papers_loaded": 0,
@@ -69,8 +69,8 @@ def run_pipeline(
             }
         raise FileNotFoundError(
             f"AML seed file not found: {seed_path()}. "
-            "Add the private seed file on this runner, or run with use_ai_reason=true to refresh "
-            "existing public recommendation reasons only."
+            "Add the AML seed file on this runner before running collect_and_score/full_refresh. "
+            "Reason-only refresh without the seed file is allowed only in score_existing mode."
         )
     profile = generate_profile(use_ai_profile=use_ai_profile)
     seed_result = build_seed_embeddings()

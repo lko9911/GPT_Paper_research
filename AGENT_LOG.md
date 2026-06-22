@@ -1,5 +1,28 @@
 # AGENT_LOG
 
+## 2026-06-22 10:39
+
+### Change Summary
+- Fixed the AML manual workflow behavior so external discovery modes do not silently fall back to reason-only refresh when the AML seed file is missing.
+
+### Edited Files
+- `scripts/run_aml_recommendation_pipeline.py`: allows seed-missing reason-only refresh only in `score_existing` mode; `collect_and_score` and `full_refresh` now fail clearly without the seed file.
+- `README.md`: documented that external AML discovery modes require the seed file on the runner.
+- `AGENT_LOG.md`: recorded the silent-fallback issue and fix.
+
+### Implemented Features
+- Manual `collect_and_score` / `full_refresh` runs now make the missing-seed problem visible instead of completing quickly with no recommendation changes.
+
+### Design Decisions
+- Kept the existing reason-only fallback for `score_existing`, because that path can still update public recommendation wording without collecting/scoring new candidates.
+- Required the seed file for external candidate collection and scoring because AML scoring depends on the seed-profile/embedding workflow.
+
+### Remaining Work
+- Add or provide `data/seed/aml_seed_papers_core_enriched.json` on the GitHub Actions runner before expecting external AML discovery to update recommendations.
+
+### Notes / Cautions
+- No OpenAI, Crossref, or OpenAlex API calls were made during this fix.
+
 ## 2026-06-22 10:27
 
 ### Change Summary

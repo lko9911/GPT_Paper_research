@@ -55,6 +55,8 @@ The AML pipeline uses OpenAI embeddings when `OPENAI_API_KEY` is available, but 
 
 If the private AML seed file is not available on the GitHub Actions runner, `use_ai_reason=true` falls back to refreshing only the public `why_recommended` text for the already-published AML recommendations. Full candidate scoring still requires the private seed file locally or on the runner.
 
+For external AML discovery, use `collect_and_score` or `full_refresh` only after the seed file is available on the runner. These modes intentionally fail when the seed file is missing, so a manual run does not appear to succeed while doing only a reason refresh.
+
 ## Split Data for Faster GitHub Pages Loading
 
 The production website should load `data/papers_index.json`, not the full `data/papers.json`, on first visit. Full source-of-truth files remain in place for automation:
