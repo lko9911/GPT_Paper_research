@@ -156,11 +156,23 @@ jobs:
         if: ${{ inputs.dry_run == 'false' }}
         uses: actions/configure-pages@v5
 
+      - name: Build public Pages artifact
+        if: ${{ inputs.dry_run == 'false' }}
+        run: |
+          mkdir -p _site
+          rsync -a --delete \
+            --exclude ".git" \
+            --exclude ".github" \
+            --exclude "_site" \
+            --exclude "private" \
+            --exclude "data/private" \
+            ./ _site/
+
       - name: Upload Pages artifact
         if: ${{ inputs.dry_run == 'false' }}
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: _site
 
       - name: Deploy to GitHub Pages
         if: ${{ inputs.dry_run == 'false' }}

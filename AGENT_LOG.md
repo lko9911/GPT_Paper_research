@@ -1,5 +1,30 @@
 # AGENT_LOG
 
+## 2026-06-22 11:10
+
+### Change Summary
+- Investigated why the June 20 OpenAI summary refresh did not remain visible and fixed the overwrite path.
+
+### Edited Files
+- `scripts/full_rebuild_crossref_dataset.py`: preserves existing OpenAI summaries by DOI/title dedupe key during Crossref-only full rebuilds.
+- `.github/workflows/refresh-openai-summaries.yml`: changed Pages deployment to use a staged artifact that excludes `data/private/` and root `private/`.
+- `AGENT_LOG.md`: recorded the root cause and fix.
+
+### Implemented Features
+- OpenAI summaries are no longer reset to metadata fallback just because the scheduled Crossref full rebuild runs later.
+- OpenAI summary refresh deployments no longer upload private seed/debug folders to Pages.
+
+### Design Decisions
+- Preserved only records explicitly marked `summary_provider=openai` or `openai_summary_applied=true`.
+- Matched preserved summaries by the existing DOI/title-year-author dedupe key, so the rebuild remains Crossref-only for discovery while keeping user-approved OpenAI summary work.
+
+### Remaining Work
+- To restore OpenAI summaries already overwritten by later rebuilds, either rerun the OpenAI summary refresh or recover from the `a105670` commit before the overwrite.
+
+### Notes / Cautions
+- Historical check: commit `a105670 Refresh OpenAI paper summaries` had 1,237 OpenAI-applied summaries, but later `Update paper metadata` commits reset the active dataset to fallback summaries.
+- No OpenAI, Crossref, or OpenAlex API calls were made during this investigation/fix.
+
 ## 2026-06-22 10:52
 
 ### Change Summary

@@ -61,6 +61,7 @@ def main() -> None:
     print("Priority venue search disabled")
     print("OpenAlex general search disabled")
     existing_lineage = _existing_date_lineage()
+    existing_openai_summaries = _existing_openai_summaries()
     backup_dir = _archive_existing_outputs(run_started_at)
     print(f"Existing paper dataset archived: {backup_dir.relative_to(ROOT)}")
 
@@ -87,7 +88,7 @@ def main() -> None:
     for record in deduped:
         summarized = summarize_record(record, allow_openai=False)
         completed = _complete_corresponding_author_from_openalex(summarized, openalex_stats)
-        papers.append(_finalize_crossref_record(completed, today, existing_lineage))
+        papers.append(_finalize_crossref_record(completed, today, existing_lineage, existing_openai_summaries))
 
     cleaned = [_strip_transient(paper) for paper in papers]
     curated, archive, split_stats = _split_curated_archive(cleaned)
@@ -231,6 +232,29 @@ def _existing_date_lineage() -> dict[str, str]:
     return lineage
 
 
+def _existing_openai_summaries() -> dict[str, dict[str, Any]]:
+    summaries: dict[str, dict[str, Any]] = {}
+    for record in _load_json(PAPERS_PATH, []) + _load_json(ARCHIVE_PAPERS_PATH, []):
+        if record.get("summary_provider") != "openai" and record.get("openai_summary_applied") is not True:
+            continue
+        key = _dedupe_key(record)
+        summary = str(record.get("ai_summary_en") or "").strip()
+        if not key or not summary:
+            continue
+        summaries[key] = {
+            "ai_summary_en": summary,
+            "relevance_note_en": record.get("relevance_note_en", ""),
+            "tags": record.get("tags", []),
+            "categories": record.get("categories", []),
+            "relevance_score": record.get("relevance_score"),
+            "summary_provider": "openai",
+            "openai_summary_applied": True,
+            "abstract_used_for_summary": bool(record.get("abstract_used_for_summary")),
+        }
+    print(f"Existing OpenAI summaries available for preservation: {len(summaries)}")
+    return summaries
+
+
 def _better_record(left: dict[str, Any], right: dict[str, Any]) -> dict[str, Any]:
     def score(record: dict[str, Any]) -> tuple[int, int, int, int, int]:
         return (
@@ -305,11 +329,18 @@ def _complete_corresponding_author_from_openalex(record: dict[str, Any], stats: 
     return record
 
 
-def _finalize_crossref_record(record: dict[str, Any], today: str, existing_lineage: dict[str, str]) -> dict[str, Any]:
+def _finalize_crossref_record(
+    record: dict[str, Any],
+    today: str,
+    existing_lineage: dict[str, str],
+    existing_openai_summaries: dict[str, dict[str, Any]],
+) -> dict[str, Any]:
     doi = _clean_doi(record.get("doi"))
     title = record.get("title", "Untitled")
     paper_id = doi or _title_hash(title)
-    first_added = existing_lineage.get(_dedupe_key(record), today)
+    dedupe_key = _dedupe_key(record)
+    first_added = existing_lineage.get(dedupe_key, today)
+    preserved_summary = existing_openai_summaries.get(dedupe_key, {})
     year = _safe_year(record.get("year"))
     journal_quality = _journal_quality(record)
     is_core = _is_manual_core_journal(journal_quality)
@@ -345,15 +376,15 @@ def _finalize_crossref_record(record: dict[str, Any], today: str, existing_linea
         "core_status": "core" if is_core else "non-core",
         "venue_scope": "core" if is_core else "non-core",
         "core_source": "manual_core_venue" if is_core else "schema_placeholder_crossref_rebuild",
-        "categories": record.get("categories", ["Multi-material AM"])[:2],
-        "tags": record.get("tags", [])[:6],
-        "relevance_score": int(record.get("relevance_score", 5)),
+        "categories": (preserved_summary.get("categories") or record.get("categories", ["Multi-material AM"]))[:2],
+        "tags": (preserved_summary.get("tags") or record.get("tags", []))[:6],
+        "relevance_score": int(preserved_summary.get("relevance_score") or record.get("relevance_score", 5)),
         "curation_priority": False,
-        "ai_summary_en": record.get("ai_summary_en", ""),
-        "summary_provider": record.get("_summary_provider", "fallback"),
-        "openai_summary_applied": False,
-        "relevance_note_en": record.get("relevance_note_en", ""),
-        "abstract_used_for_summary": bool(record.get("_abstract")),
+        "ai_summary_en": preserved_summary.get("ai_summary_en") or record.get("ai_summary_en", ""),
+        "summary_provider": preserved_summary.get("summary_provider") or record.get("_summary_provider", "fallback"),
+        "openai_summary_applied": bool(preserved_summary.get("openai_summary_applied")),
+        "relevance_note_en": preserved_summary.get("relevance_note_en") or record.get("relevance_note_en", ""),
+        "abstract_used_for_summary": bool(preserved_summary.get("abstract_used_for_summary") or record.get("_abstract")),
         "raw_abstract_displayed": False,
         "pdf_stored": False,
         "first_added": first_added,
