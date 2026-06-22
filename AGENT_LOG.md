@@ -1,5 +1,27 @@
 # AGENT_LOG
 
+## 2026-06-22 11:56
+
+### Change Summary
+- Bumped frontend asset cache version so the AML sidebar count and recommendation list use the latest no-cap logic.
+
+### Edited Files
+- `index.html`: updated `assets/style.css` and `assets/app.js` query versions to `20260622-aml-all-visible`.
+- `AGENT_LOG.md`: recorded the cache-busting fix.
+
+### Implemented Features
+- Browsers should now load the app.js version where AML recommendations are not capped at 24.
+- The left sidebar AML count should reflect all visible recommendations above the 0.60 threshold.
+
+### Design Decisions
+- The sidebar already used `amlVisibleRecommendations().length`; the missing piece was forcing clients to fetch the updated JS.
+
+### Remaining Work
+- Wait for GitHub Pages deployment, then hard-refresh the browser if the old cached JS is still visible.
+
+### Notes / Cautions
+- No external APIs were called.
+
 ## 2026-06-22 11:50
 
 ### Change Summary
