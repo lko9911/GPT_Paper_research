@@ -1,5 +1,28 @@
 # AGENT_LOG
 
+## 2026-06-22 11:50
+
+### Change Summary
+- Removed the frontend 24-item cap from AML recommendation display.
+
+### Edited Files
+- `assets/app.js`: removed `.slice(0, 24)` from `amlVisibleRecommendations()`.
+- `AGENT_LOG.md`: recorded the correction.
+
+### Implemented Features
+- The site now displays all AML recommendations that pass the public threshold (`AML score >= 0.60`), not just the first 24.
+
+### Design Decisions
+- Kept the 60/100 threshold filter and score sorting.
+- Removed the hard cap because it made the updated recommendation file look unchanged on the site.
+
+### Remaining Work
+- If rendering all recommendations feels heavy on mobile, add a clear `Load more` button later instead of silently truncating.
+
+### Notes / Cautions
+- Root cause of the user's report: `public/data/aml_recommended_papers.json` had 641 eligible recommendations, but the UI rendered only 24 due to a leftover frontend cap.
+- No OpenAI, Crossref, or OpenAlex API calls were made.
+
 ## 2026-06-22 11:42
 
 ### Change Summary

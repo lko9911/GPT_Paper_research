@@ -789,8 +789,7 @@ function amlVisibleRecommendations() {
   return (state.amlRecommendations || [])
     .filter((item) => ["High", "Possible", "Watch"].includes(item.recommendation_level))
     .filter((item) => Number(item.aml_score || 0) >= AML_PUBLIC_SCORE_THRESHOLD)
-    .sort((a, b) => Number(b.aml_score || 0) - Number(a.aml_score || 0))
-    .slice(0, 24);
+    .sort((a, b) => Number(b.aml_score || 0) - Number(a.aml_score || 0));
 }
 
 function amlRecommendedPapersForList() {
