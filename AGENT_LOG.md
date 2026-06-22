@@ -1,5 +1,31 @@
 # AGENT_LOG
 
+## 2026-06-22 11:16
+
+### Change Summary
+- Restored OpenAI summary fields from historical commit `a105670` without making new OpenAI API calls.
+
+### Edited Files
+- `data/papers.json`: restored OpenAI summary fields for currently matching papers.
+- `data/papers_index.json`: regenerated split startup index after restoration.
+- `data/details/detail_000.json` through `data/details/detail_004.json`: regenerated lazy detail chunks after restoration.
+- `AGENT_LOG.md`: recorded the restoration.
+
+### Implemented Features
+- Recovered previously generated OpenAI summaries for 1,231 of 1,236 current curated papers.
+- Preserved metadata/fallback summaries for 5 current papers that did not match the historical OpenAI-summary commit by DOI/title dedupe key.
+
+### Design Decisions
+- Restored only summary-related fields: `ai_summary_en`, `relevance_note_en`, `tags`, `categories`, `relevance_score`, `summary_provider`, `openai_summary_applied`, and `abstract_used_for_summary`.
+- Did not restore older paper metadata wholesale, so current Crossref rebuild metadata remains the source of truth.
+
+### Remaining Work
+- The remaining 5 fallback papers can be refreshed with the manual OpenAI summary workflow if needed.
+
+### Notes / Cautions
+- No OpenAI, Crossref, or OpenAlex API calls were made.
+- Source used for restoration: `git show a105670:data/papers.json`.
+
 ## 2026-06-22 11:10
 
 ### Change Summary
