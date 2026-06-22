@@ -45,17 +45,20 @@ The existing keyword-based paper update still runs automatically every 6 hours t
 
 AML recommendation is a separate manual-only workflow:
 
-1. Add the AML seed file at `data/seed/aml_seed_papers_core_enriched.json`.
-2. Go to `Actions > AML Recommendation Manual > Run workflow`.
-3. Choose `score_existing`, `collect_and_score`, or `full_refresh`.
-4. Leave `max_candidates` as `0` or blank to score all collected AML candidates. Set a positive number only for quick testing.
-5. Keep `use_ai_judge=false`. The default `use_ai_reason=true` writes the public recommendation reason with OpenAI; set it to `false` only when you want template-only, no text-model cost.
+1. Keep the AML seed JSON at `data/private/aml_seed_papers_core_enriched.json`.
+2. This single private seed JSON is intentionally tracked for the private repository, but GitHub Pages deployment excludes `data/private/` so it is not served by the website.
+3. Go to `Actions > AML Recommendation Manual > Run workflow`.
+4. Choose `score_existing`, `collect_and_score`, or `full_refresh`.
+5. Leave `max_candidates` as `0` or blank to score all collected AML candidates. Set a positive number only for quick testing.
+6. Keep `use_ai_judge=false`. The default `use_ai_reason=true` writes the public recommendation reason with OpenAI; set it to `false` only when you want template-only, no text-model cost.
 
 The AML pipeline uses OpenAI embeddings when `OPENAI_API_KEY` is available, but it does not use OpenAI as the paper search engine. In `collect_and_score` and `full_refresh`, external AML candidate discovery uses Crossref keyword search only, with no venue-specific filter. OpenAI relevance judging is optional and disabled by default. OpenAI recommendation-reason writing is enabled by default in the manual workflow and uses structured metadata, AML score, matched topics, and seed similarity rather than internal route names. Private embeddings, candidate pools, debug logs, raw data, and PDFs are ignored by Git. Public-safe recommendations are written to `public/data/aml_recommended_papers.json`.
 
-If the private AML seed file is not available on the GitHub Actions runner, `use_ai_reason=true` falls back to refreshing only the public `why_recommended` text for the already-published AML recommendations. Full candidate scoring still requires the private seed file locally or on the runner.
+If the private AML seed file is not available on the GitHub Actions runner, `use_ai_reason=true` falls back to refreshing only the public `why_recommended` text for the already-published AML recommendations in `score_existing` mode. Full candidate scoring still requires the private seed file locally or on the runner.
 
 For external AML discovery, use `collect_and_score` or `full_refresh` only after the seed file is available on the runner. These modes intentionally fail when the seed file is missing, so a manual run does not appear to succeed while doing only a reason refresh.
+
+Optional secret override is still supported through `AML_SEED_PAPERS_JSON_B64` or `AML_SEED_PAPERS_JSON`, but the normal path is the tracked private seed file.
 
 ## Split Data for Faster GitHub Pages Loading
 

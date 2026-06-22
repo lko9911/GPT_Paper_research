@@ -1,5 +1,37 @@
 # AGENT_LOG
 
+## 2026-06-22 10:52
+
+### Change Summary
+- Added the AML seed JSON as the only allowed tracked file under `data/private/` and protected it from GitHub Pages deployment.
+
+### Edited Files
+- `data/private/aml_seed_papers_core_enriched.json`: copied from the local private seed source so GitHub Actions can run the AML recommendation pipeline.
+- `scripts/aml_common.py`: changed the default AML seed path to `data/private/aml_seed_papers_core_enriched.json`.
+- `.github/workflows/aml-recommendation-manual.yml`: added optional secret restore support and recognition of the tracked private seed file.
+- `.github/workflows/deploy-pages.yml`: changed Pages deployment to build a staging artifact that excludes `data/private/` and root `private/`.
+- `.github/workflows/update-papers.yml`: applied the same Pages artifact exclusion to scheduled paper update deployments.
+- `README.md`: documented the tracked private seed file, Pages exclusion, and optional secret override.
+- `ARCHITECTURE.md`: documented the private seed path and deployment exclusion.
+- `PROJECT_STATUS.md`: updated the AML setup status.
+- `AGENT_LOG.md`: recorded this private seed setup.
+
+### Implemented Features
+- `collect_and_score` and `full_refresh` can now use the AML seed file on GitHub Actions without requiring a large Actions secret.
+- GitHub Pages artifacts exclude private seed/debug folders.
+
+### Design Decisions
+- Did not commit root `private/` files, CSV/XLSX seed exports, or AML debug outputs.
+- Allowed only `data/private/aml_seed_papers_core_enriched.json` to be tracked because the user explicitly approved that JSON.
+- Excluded `data/private/` from Pages artifacts because the Pages workflow previously uploaded the repository root.
+
+### Remaining Work
+- Run `Actions > AML Recommendation Manual` with `collect_and_score`, `max_candidates=0`, `use_ai_judge=false`, and the desired `use_ai_reason` setting.
+
+### Notes / Cautions
+- The AML seed includes private seed metadata and should remain in the private repository.
+- No OpenAI, Crossref, or OpenAlex API calls were made during this setup.
+
 ## 2026-06-22 10:39
 
 ### Change Summary

@@ -298,7 +298,7 @@ GitHub Pages에서 동작 가능한 정적 논문 큐레이션 사이트와 GitH
 - The website optionally loads `public/data/aml_recommended_papers.json`; if it is missing, the AML section remains hidden.
 
 ## Completed
-- Added deterministic AML profile generation from `data/seed/aml_seed_papers_core_enriched.json`.
+- Added deterministic AML profile generation from a private seed file restored at `data/private/aml_seed_papers_core_enriched.json`.
 - Added OpenAI embedding cache support under ignored `data/private/`.
 - Added candidate collection from the existing paper pool plus optional Crossref-only keyword collection modes for AML recommendation candidates.
 - Added deterministic scoring, recommendation levels, and template-based public reasons.
@@ -306,10 +306,12 @@ GitHub Pages에서 동작 가능한 정적 논문 큐레이션 사이트와 GitH
 - Updated `.gitignore` to keep private embeddings, raw data, logs, PDFs, and `.env` files out of Git.
 
 ## Known Setup Requirement
-- `data/seed/aml_seed_papers_core_enriched.json` is not currently present in the repository. Add that seed file before running the manual AML workflow in GitHub Actions.
+- `data/private/aml_seed_papers_core_enriched.json` is the only allowed tracked seed file under `data/private/`.
+- GitHub Pages deployment excludes `data/private/` and root `private/`, so the seed is available to GitHub Actions but not served by the website.
+- Optional secret override remains available through `AML_SEED_PAPERS_JSON_B64` or `AML_SEED_PAPERS_JSON`.
 
 ## Validation Note
-- A local smoke test was run with `AML_SEED_PATH=private/aml_seed_papers_core_enriched.json`, `mode=score_existing`, and `max_candidates=50`. It loaded 46 seed records, scored 50 candidates, and used no OpenAI judge or reason generation. The generated public/profile test outputs were deleted because the local seed file is private and not the required repository seed path.
+- A local smoke test was run with `AML_SEED_PATH=private/aml_seed_papers_core_enriched.json`, `mode=score_existing`, and `max_candidates=50`. It loaded 46 seed records, scored 50 candidates, and used no OpenAI judge or reason generation. The generated public/profile test outputs were deleted because the local seed file is private.
 
 # 2026-06-18 Metals/Alloys Taxonomy Update
 

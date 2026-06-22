@@ -86,10 +86,21 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
+      - name: Build public Pages artifact
+        run: |
+          mkdir -p _site
+          rsync -a --delete \
+            --exclude ".git" \
+            --exclude ".github" \
+            --exclude "_site" \
+            --exclude "private" \
+            --exclude "data/private" \
+            ./ _site/
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: _site
 
       - name: Deploy to GitHub Pages
         id: deployment

@@ -63,10 +63,29 @@ jobs:
       - name: Install dependencies
         run: python -m pip install --upgrade pip && pip install -r requirements.txt
 
+      - name: Restore private AML seed file
+        env:
+          AML_SEED_PAPERS_JSON_B64: ${{ secrets.AML_SEED_PAPERS_JSON_B64 }}
+          AML_SEED_PAPERS_JSON: ${{ secrets.AML_SEED_PAPERS_JSON }}
+        run: |
+          mkdir -p data/private
+          if [ -n "$AML_SEED_PAPERS_JSON_B64" ]; then
+            printf '%s' "$AML_SEED_PAPERS_JSON_B64" | base64 -d > data/private/aml_seed_papers_core_enriched.json
+            echo "Restored AML seed file from AML_SEED_PAPERS_JSON_B64."
+          elif [ -n "$AML_SEED_PAPERS_JSON" ]; then
+            printf '%s' "$AML_SEED_PAPERS_JSON" > data/private/aml_seed_papers_core_enriched.json
+            echo "Restored AML seed file from AML_SEED_PAPERS_JSON."
+          elif [ -f data/private/aml_seed_papers_core_enriched.json ]; then
+            echo "Using tracked private AML seed file."
+          else
+            echo "No AML seed secret found. collect_and_score/full_refresh will fail clearly."
+          fi
+
       - name: Run AML recommendation pipeline
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           CONTACT_EMAIL: ${{ secrets.CONTACT_EMAIL }}
+          AML_SEED_PATH: data/private/aml_seed_papers_core_enriched.json
           AML_MODE: ${{ inputs.mode }}
           AML_MAX_CANDIDATES: ${{ inputs.max_candidates }}
           AML_USE_AI_JUDGE: ${{ inputs.use_ai_judge }}

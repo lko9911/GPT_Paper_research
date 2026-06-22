@@ -12,11 +12,11 @@ from pathlib import Path
 from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_SEED_PATH = ROOT / "data" / "seed" / "aml_seed_papers_core_enriched.json"
 PAPERS_PATH = ROOT / "data" / "papers.json"
 ARCHIVE_PAPERS_PATH = ROOT / "data" / "archive_papers.json"
 PROFILE_PATH = ROOT / "data" / "profiles" / "aml_lab_profile.json"
 PRIVATE_DIR = ROOT / "data" / "private"
+DEFAULT_SEED_PATH = PRIVATE_DIR / "aml_seed_papers_core_enriched.json"
 SEED_EMBEDDINGS_PATH = PRIVATE_DIR / "aml_seed_embeddings.json"
 CANDIDATE_POOL_PATH = PRIVATE_DIR / "aml_candidate_pool.json"
 CANDIDATE_EMBEDDINGS_PATH = PRIVATE_DIR / "aml_candidate_embeddings.json"

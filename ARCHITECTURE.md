@@ -257,9 +257,11 @@ The AML recommendation pipeline is separate and manual-only:
 
 - Workflow: `.github/workflows/aml-recommendation-manual.yml`
 - Trigger: `workflow_dispatch` only
-- Seed input: `data/seed/aml_seed_papers_core_enriched.json`
+- Seed input: `data/private/aml_seed_papers_core_enriched.json`
 - Public output: `public/data/aml_recommended_papers.json`
 - Private outputs: `data/private/aml_seed_embeddings.json`, `data/private/aml_candidate_embeddings.json`, `data/private/aml_candidate_pool.json`, `data/private/aml_scoring_debug.json`, and `data/private/aml_recommendation_log.json`
+
+Only `data/private/aml_seed_papers_core_enriched.json` is allowed to be tracked from `data/private/` for the private repository. GitHub Pages deployment builds a staging artifact and excludes `data/private/` and root `private/`, so the seed and private debug files are not served by the website. Optional secret override is still supported by `AML_SEED_PAPERS_JSON_B64` or `AML_SEED_PAPERS_JSON`.
 
 Frontend integration is additive. `assets/app.js` still fetches the existing site data from:
 
