@@ -99,8 +99,8 @@ def fetch_crossref_by_doi(doi: str) -> dict[str, Any] | None:
 
 def _normalize_work(item: dict[str, Any]) -> dict[str, Any]:
     doi = _clean_doi(item.get("DOI"))
-    title = _first(item.get("title")) or "Untitled"
-    venue = _first(item.get("container-title")) or _first(item.get("event", {}).get("name")) or ""
+    title = _clean_markup_text(_first(item.get("title"))) or "Untitled"
+    venue = _clean_markup_text(_first(item.get("container-title")) or _first(item.get("event", {}).get("name")) or "")
     year = _published_year(item)
     author_details = _normalize_authors(item.get("author", []))
     authors = [author["name"] for author in author_details[:12] if author.get("name")]
@@ -191,6 +191,19 @@ def _first(value: Any) -> str:
 def _strip_markup(value: str) -> str:
     value = re.sub(r"<[^>]+>", " ", value)
     return re.sub(r"\s+", " ", unescape(value)).strip()
+
+
+def _clean_markup_text(value: str) -> str:
+    text = unescape(str(value or "")).replace("\xa0", " ")
+    text = re.sub(r"</?(?:scp|i|italic|em|b|strong)\b[^>]*>", "", text, flags=re.I)
+    text = re.sub(r"\s*</?(?:sub|sup)\b[^>]*>\s*", "", text, flags=re.I)
+    text = re.sub(r"<[^>]+>", " ", text)
+    text = re.sub(r"[\u2010-\u2015\u2212]", "-", text)
+    text = re.sub(r"\s+", " ", text).strip()
+    text = re.sub(r"\s+([),.;:])", r"\1", text)
+    text = re.sub(r"([(])\s+", r"\1", text)
+    text = re.sub(r"(?<=\w)\s*-\s*(?=\w)", "-", text)
+    return text
 
 
 def _clean_doi(value: str | None) -> str:

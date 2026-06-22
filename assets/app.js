@@ -2314,7 +2314,17 @@ function displayText(value) {
     .replace(/&quot;/gi, '"')
     .replace(/&#039;|&apos;/gi, "'")
     .replace(/&lt;/gi, "<")
-    .replace(/&gt;/gi, ">");
+    .replace(/&gt;/gi, ">")
+    .replace(/<\/?(scp|i|italic|em|b|strong)\b[^>]*>/gi, "")
+    .replace(/\s*<\/?(sub|sup)\b[^>]*>\s*/gi, "")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/[\u2010-\u2015\u2212]/g, "-")
+    .replace(/\u00a0/g, " ")
+    .replace(/\s+/g, " ")
+    .replace(/\s+([),.;:])/g, "$1")
+    .replace(/([(])\s+/g, "$1")
+    .replace(/(\w)\s*-\s*(\w)/g, "$1-$2")
+    .trim();
 }
 
 init();

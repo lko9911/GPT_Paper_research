@@ -1,5 +1,32 @@
 # AGENT_LOG
 
+## 2026-06-22 11:28
+
+### Change Summary
+- Fixed Crossref/JATS markup artifacts in paper titles such as `(M- <scp>STARC</scp>)`.
+
+### Edited Files
+- `scripts/fetch_crossref.py`: cleans Crossref title and venue strings by removing inline markup tags, decoding HTML entities, normalizing whitespace, and preserving sub/sup text compactly.
+- `assets/app.js`: added frontend display cleanup so any future residual markup is not shown to users.
+- `data/papers.json`, `data/archive_papers.json`: cleaned existing title/venue strings.
+- `data/papers_index.json`, `data/archive_papers_index.json`, `data/details/detail_*.json`: regenerated split public data after cleanup.
+- `data/papers.csv`, `data/papers.xlsx`: cleaned exported title/venue fields.
+- `AGENT_LOG.md`: recorded this cleanup.
+
+### Implemented Features
+- Paper titles now render without raw tags such as `<scp>`, `<i>`, and `<sub>`.
+- Examples now display as readable text such as `M-STARC`, `via`, and `Al2O3`.
+
+### Design Decisions
+- Kept tag contents while removing the markup, because the words/chemical indices are part of the title.
+- Added both ingestion-time cleanup and frontend display-time defense to prevent recurrence.
+
+### Remaining Work
+- Watch the next Crossref rebuild to confirm no new JATS tags appear in titles or venues.
+
+### Notes / Cautions
+- No external APIs were called.
+
 ## 2026-06-22 11:16
 
 ### Change Summary
