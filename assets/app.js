@@ -1446,10 +1446,10 @@ function formatSummary(paper) {
 }
 
 function renderSummaryBlock(paper) {
-  if (paper && paper.is_aml_recommendation) {
+  const sections = formatSummarySections(paper);
+  if (paper && paper.is_aml_recommendation && !sections.length) {
     return renderAmlSummaryBlock(paper);
   }
-  const sections = formatSummarySections(paper);
   if (!sections.length) {
     return `<p class="summary">${escapeHtml(formatSummary(paper))}</p>`;
   }
@@ -1472,12 +1472,6 @@ function renderAmlSummaryBlock(paper) {
   const tagPhrase = formatEnglishList(tags) || "the AML profile";
   const score = Number(paper.aml_score || 0);
   const scoreText = Number.isFinite(score) && score > 0 ? `${Math.round(score * 100)}/100` : "not scored";
-  const routes = Array.isArray(paper.discovery_routes) ? paper.discovery_routes : [];
-  const routeText = routes.includes("crossref_keyword_search")
-    ? "Crossref keyword discovery"
-    : routes.includes("existing_keyword_pool")
-      ? "the existing curated paper pool"
-      : "the AML recommendation pool";
   const sections = [
     {
       question: labels[0],
@@ -1489,7 +1483,7 @@ function renderAmlSummaryBlock(paper) {
     },
     {
       question: labels[2],
-      answer: `The recommendation was produced by matching public metadata and topic signals against the AML profile through ${routeText}.`,
+      answer: "The recommendation was produced by comparing the paper metadata and available summary signals with the AML seed-paper profile.",
     },
     {
       question: labels[3],

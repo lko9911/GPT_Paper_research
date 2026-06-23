@@ -11,11 +11,9 @@ from aml_common import (
     CANDIDATE_EMBEDDINGS_PATH,
     CANDIDATE_POOL_PATH,
     EMBEDDING_MODEL,
-    NEGATIVE_TERMS,
     PROFILE_PATH,
     PUBLIC_OUTPUT_PATH,
     RECOMMENDATION_LOG_PATH,
-    ROUTE_SCORES,
     SCORING_DEBUG_PATH,
     SEED_EMBEDDINGS_PATH,
     average_embedding,
@@ -33,6 +31,11 @@ from aml_common import (
 )
 
 PUBLIC_AML_SCORE_THRESHOLD = float(os.getenv("AML_PUBLIC_SCORE_THRESHOLD", "0.60"))
+SCORE_WEIGHTS = {
+    "semantic_similarity": 0.80,
+    "recency_score": 0.10,
+    "venue_score": 0.10,
+}
 
 
 def score_recommendations(
@@ -202,23 +205,19 @@ def _score_one(
     semantic_similarity = 0.50 * profile_similarity + 0.35 * max_seed_similarity + 0.15 * mean_seed_similarity
 
     matched_topics = _matched_topics(text_lower, profile)
-    keyword_score = _keyword_score(text_lower, matched_topics, profile)
-    route_score = _route_score(candidate.get("discovery_routes", []))
     recency_score = _recency_score(candidate.get("year"))
     venue_score = _venue_score(candidate.get("journal") or candidate.get("venue", ""))
 
     if not candidate_embedding:
-        semantic_similarity = 0.65 * keyword_score + 0.20 * route_score + 0.10 * recency_score + 0.05 * venue_score
+        semantic_similarity = 0.0
         profile_similarity = semantic_similarity
         max_seed_similarity = semantic_similarity
         mean_seed_similarity = semantic_similarity
 
     aml_score = clamp01(
-        0.60 * semantic_similarity
-        + 0.20 * keyword_score
-        + 0.10 * route_score
-        + 0.05 * recency_score
-        + 0.05 * venue_score
+        SCORE_WEIGHTS["semantic_similarity"] * semantic_similarity
+        + SCORE_WEIGHTS["recency_score"] * recency_score
+        + SCORE_WEIGHTS["venue_score"] * venue_score
     )
     top_seed = _top_seed(seed_embeddings, seed_sims)
     level = recommendation_level(aml_score)
@@ -229,15 +228,14 @@ def _score_one(
             "max_seed_similarity": round(max_seed_similarity, 4),
             "mean_seed_similarity": round(mean_seed_similarity, 4),
             "semantic_similarity": round(semantic_similarity, 4),
-            "keyword_score": round(keyword_score, 4),
-            "route_score": round(route_score, 4),
             "recency_score": round(recency_score, 4),
             "venue_score": round(venue_score, 4),
+            "score_weights": SCORE_WEIGHTS,
             "aml_score": round(aml_score, 4),
             "recommendation_level": level,
             "matched_topics": matched_topics[:8],
             "related_seed_papers": [top_seed] if top_seed else [],
-            "why_recommended": _template_reason(matched_topics, top_seed, candidate.get("discovery_routes", []), aml_score),
+            "why_recommended": _template_reason(matched_topics, top_seed, aml_score),
             "reason_source": "template",
         }
     )
@@ -247,20 +245,6 @@ def _score_one(
 def _matched_topics(text_lower: str, profile: dict[str, Any]) -> list[str]:
     terms = list(dict.fromkeys((profile.get("positive_keywords") or []) + AML_TERMS))
     return [term for term in terms if term.lower() in text_lower][:12]
-
-
-def _keyword_score(text_lower: str, matched_topics: list[str], profile: dict[str, Any]) -> float:
-    positive_terms = list(dict.fromkeys((profile.get("positive_keywords") or []) + AML_TERMS))
-    negative_terms = list(dict.fromkeys((profile.get("negative_keywords") or []) + NEGATIVE_TERMS))
-    positive_hits = sum(1 for term in positive_terms if term.lower() in text_lower)
-    negative_hits = sum(1 for term in negative_terms if term.lower() in text_lower)
-    return clamp01((positive_hits / 8.0) - (negative_hits * 0.08) + (0.05 if matched_topics else 0.0))
-
-
-def _route_score(routes: list[str]) -> float:
-    if not routes:
-        return 0.0
-    return max(ROUTE_SCORES.get(route, 0.3) for route in routes)
 
 
 def _recency_score(year: Any) -> float:
@@ -298,12 +282,11 @@ def _top_seed(seed_embeddings: list[dict[str, Any]], seed_sims: list[float]) -> 
     return {"title": seed.get("title", ""), "doi": seed.get("doi", ""), "similarity": round(seed_sims[index], 4)}
 
 
-def _template_reason(matched_topics: list[str], top_seed: dict[str, Any] | None, routes: list[str], score: float) -> str:
+def _template_reason(matched_topics: list[str], top_seed: dict[str, Any] | None, score: float) -> str:
     topics = ", ".join(matched_topics[:3]) if matched_topics else "AML seed-paper topics"
     seed_title = (top_seed or {}).get("title") or "the AML core seed set"
-    route_text = ", ".join(routes) if routes else "candidate screening"
     return (
-        f"Recommended because this paper matches {topics} and was found through {route_text}. "
+        f"Recommended because this paper matches {topics}. "
         f"It is closest to {seed_title}; deterministic AML score: {score:.2f}."
     )
 
@@ -374,7 +357,6 @@ def _ai_reason(score: dict[str, Any]) -> str:
             "matched_topics": score.get("matched_topics", [])[:8],
             "aml_score_0_to_1": score.get("aml_score"),
             "recommendation_level": score.get("recommendation_level", ""),
-            "discovery_routes": _public_route_labels(score.get("discovery_routes", [])[:5]),
             "nearest_seed_title": top_seed.get("title", ""),
             "nearest_seed_similarity": top_seed.get("similarity"),
         }
@@ -398,14 +380,6 @@ def _ai_reason(score: dict[str, Any]) -> str:
     except Exception as exc:
         print(f"AI reason skipped for '{score.get('title', '')}': {exc}")
         return ""
-
-
-def _public_route_labels(routes: list[str]) -> list[str]:
-    labels = {
-        "existing_keyword_pool": "existing curated paper pool",
-        "crossref_keyword_search": "Crossref keyword search",
-    }
-    return [labels.get(route, "candidate screening") for route in routes]
 
 
 def _level_counts(items: list[dict[str, Any]]) -> dict[str, int]:

@@ -313,7 +313,8 @@ OpenAI use is constrained:
 - Candidate collection uses the existing local paper pool and, in collection modes, OpenAlex/Crossref.
 - OpenAI relevance judging is controlled by `use_ai_judge` and defaults to `false`.
 - OpenAI reason writing is controlled by `use_ai_reason` and defaults to `true` in the manual AML workflow.
-- When `use_ai_reason=true`, OpenAI writes the public recommendation reason from structured metadata, AML score, matched topics, discovery route class, and nearest seed similarity. It should not expose internal route names or deterministic-template wording.
+- When `use_ai_reason=true`, OpenAI writes the public recommendation reason from structured metadata, AML score, matched topics, and nearest seed similarity. It should not expose internal route names or deterministic-template wording.
+- AML score is calculated from semantic similarity, recency, and venue signal only. Keyword and discovery-route scores are not used in the score because candidates are already collected through AML keyword/search routes.
 - Template-based recommendation reasons are used only when `use_ai_reason=false` or `OPENAI_API_KEY` is unavailable.
 
 # Frontend Density Policy

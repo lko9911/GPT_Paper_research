@@ -56,6 +56,14 @@ The AML pipeline uses OpenAI embeddings when `OPENAI_API_KEY` is available, but 
 
 Only recommendations with `AML score >= 0.60` are published to the public recommendation JSON and displayed on the site.
 
+AML score uses only:
+
+- 80% semantic similarity to the AML seed-paper profile
+- 10% recency score
+- 10% venue score
+
+Keyword score and discovery-route score are intentionally not part of the AML score because candidates are already collected through AML keyword/search routes.
+
 If the private AML seed file is not available on the GitHub Actions runner, `use_ai_reason=true` falls back to refreshing only the public `why_recommended` text for the already-published AML recommendations in `score_existing` mode. Full candidate scoring still requires the private seed file locally or on the runner.
 
 For external AML discovery, use `collect_and_score` or `full_refresh` only after the seed file is available on the runner. These modes intentionally fail when the seed file is missing, so a manual run does not appear to succeed while doing only a reason refresh.

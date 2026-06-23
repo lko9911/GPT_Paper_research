@@ -1,5 +1,33 @@
 # AGENT_LOG
 
+## 2026-06-23 12:51
+
+### Change Summary
+- Removed keyword score and discovery-route score from AML scoring.
+
+### Edited Files
+- `scripts/score_aml_recommendations.py`: changed AML score formula to 80% semantic similarity, 10% recency, and 10% venue; removed keyword/route score calculations and route text from OpenAI reason prompts.
+- `assets/app.js`: AML fallback explanation no longer describes discovery route as part of the recommendation method, and source summaries are still prioritized when available.
+- `public/data/aml_recommended_papers.json`: recomputed current public AML scores using nearest-seed similarity as the available semantic proxy, plus recency and venue; kept only score >= 0.60.
+- `README.md`: documented the new AML scoring formula and the rationale for excluding keyword/route scores.
+- `ARCHITECTURE.md`: documented the new AML scoring basis.
+- `index.html`: bumped frontend asset cache version to `20260623-aml-semantic-score`.
+- `AGENT_LOG.md`: recorded this scoring change.
+
+### Implemented Features
+- AML score no longer rewards papers just because they matched collection keywords or came from a particular discovery route.
+- Negative keyword effects, such as penalizing scaffold-related future research directions, no longer affect AML score.
+
+### Design Decisions
+- Matched topics remain available for labels/explanations, but they are not score components.
+- For the current public JSON only, nearest seed similarity was used as the available semantic proxy. Future AML workflow runs compute semantic similarity from candidate/profile/seed embeddings in the scoring script.
+
+### Remaining Work
+- Run `AML Recommendation Manual` again when convenient so every public recommendation score is recomputed from the full embedding-based semantic formula.
+
+### Notes / Cautions
+- No OpenAI, Crossref, or OpenAlex API calls were made during this code/data update.
+
 ## 2026-06-22 12:02
 
 ### Change Summary
