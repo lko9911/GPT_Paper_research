@@ -296,6 +296,7 @@ const state = {
   activeTargetVenue: "",
   activeVenueGroup: "",
   activeSubtopic: "",
+  activeSubtopics: new Set(),
   activeAmlRecommendations: false,
   theme: localStorage.getItem("theme") || DEFAULT_THEME,
   language: DEFAULT_LANGUAGE,
@@ -380,7 +381,7 @@ async function init() {
     if (!el) return;
     el.addEventListener("input", () => {
       if (el === els.newness) state.newnessTouched = true;
-      if (el === els.category) state.activeSubtopic = "";
+      if (el === els.category || el === els.tag) clearActiveSubtopics();
       if (el === els.venue) clearVenueQuickFilters();
       if (el !== els.sort) state.activeAmlRecommendations = false;
       if (el !== els.newness && el !== els.sort) releaseDefaultNewnessFilter();
@@ -392,7 +393,7 @@ async function init() {
     });
     el.addEventListener("change", () => {
       if (el === els.newness) state.newnessTouched = true;
-      if (el === els.category) state.activeSubtopic = "";
+      if (el === els.category || el === els.tag) clearActiveSubtopics();
       if (el === els.venue) clearVenueQuickFilters();
       if (el !== els.sort) state.activeAmlRecommendations = false;
       if (el !== els.newness && el !== els.sort) releaseDefaultNewnessFilter();
@@ -641,8 +642,14 @@ function buildSideNav() {
         toggleSideField(field);
         return;
       }
-      els.category.value = field;
-      state.activeSubtopic = subtopic;
+      if (subtopic) {
+        toggleActiveSubtopic(field, subtopic);
+        els.category.value = "";
+        if (els.tag) els.tag.value = "";
+      } else {
+        els.category.value = field;
+        clearActiveSubtopics();
+      }
       state.activeAmlRecommendations = false;
       releaseDefaultNewnessFilter();
       syncSideNavActive();
@@ -654,7 +661,7 @@ function buildSideNav() {
 
 function showAmlRecommendations() {
   state.activeAmlRecommendations = true;
-  state.activeSubtopic = "";
+  clearActiveSubtopics();
   state.activeTargetVenue = "";
   state.activeVenueGroup = "";
   if (els.search) els.search.value = "";
@@ -680,6 +687,36 @@ function toggleSideField(field) {
   localStorage.setItem("collapsedFields", JSON.stringify([...state.collapsedFields]));
   buildSideNav();
   syncSideNavActive();
+}
+
+function sideSubtopicKey(field, subtopic) {
+  return JSON.stringify([field, subtopic]);
+}
+
+function selectedSidebarSubtopics() {
+  return [...state.activeSubtopics].map((key) => {
+    try {
+      const [field, subtopic] = JSON.parse(key);
+      return { field, subtopic };
+    } catch (error) {
+      return { field: "", subtopic: "" };
+    }
+  }).filter((item) => item.field && item.subtopic);
+}
+
+function toggleActiveSubtopic(field, subtopic) {
+  const key = sideSubtopicKey(field, subtopic);
+  if (state.activeSubtopics.has(key)) {
+    state.activeSubtopics.delete(key);
+  } else {
+    state.activeSubtopics.add(key);
+  }
+  state.activeSubtopic = "";
+}
+
+function clearActiveSubtopics() {
+  state.activeSubtopic = "";
+  state.activeSubtopics.clear();
 }
 
 function sidebarBucketCounts(papers, subtopics) {
@@ -709,14 +746,23 @@ function sideSubtopicButton(field, subtopic, count) {
 }
 
 function syncSideNavActive() {
+  const selectedKeys = state.activeSubtopics;
+  const selectedFilters = selectedSidebarSubtopics();
   els.sideTopicNav.querySelectorAll("[data-side-target]").forEach((button) => {
     button.classList.toggle("is-active", state.activeAmlRecommendations);
   });
   els.sideTopicNav.querySelectorAll("[data-side-field]").forEach((button) => {
-    const fieldMatches = button.dataset.sideField === els.category.value;
-    const subtopicMatches = (button.dataset.sideSubtopic || "") === state.activeSubtopic;
+    const field = button.dataset.sideField || "";
+    const subtopic = button.dataset.sideSubtopic || "";
+    const fieldMatches = field === els.category.value;
     const isFieldButton = !button.dataset.sideSubtopic;
-    button.classList.toggle("is-active", fieldMatches && (isFieldButton ? !state.activeSubtopic : subtopicMatches));
+    const subtopicActive = Boolean(subtopic && selectedKeys.has(sideSubtopicKey(field, subtopic)));
+    const fieldHasActiveChild = selectedFilters.some((item) => item.field === field);
+    button.classList.toggle("is-active", isFieldButton ? fieldMatches && !selectedKeys.size : subtopicActive);
+    button.classList.toggle("has-active-child", isFieldButton && fieldHasActiveChild);
+    if (!isFieldButton) {
+      button.setAttribute("aria-pressed", subtopicActive ? "true" : "false");
+    }
   });
 }
 
@@ -1090,7 +1136,8 @@ function applyFilters() {
   const year = els.year.value;
   const sort = els.sort.value;
 
-  if (!category) state.activeSubtopic = "";
+  if (category) clearActiveSubtopics();
+  const selectedSubtopics = selectedSidebarSubtopics();
   state.renderLimit = INITIAL_RENDER_LIMIT;
   syncSideNavActive();
 
@@ -1107,7 +1154,9 @@ function applyFilters() {
     const matchesVenue = !venue || paperVenue === venue;
     const matchesTarget = !state.activeTargetVenue || matchesTargetVenue(paperVenue, state.activeTargetVenue);
     const matchesVenueGroup = !state.activeVenueGroup || isOtherVenuePaper(paper);
-    const matchesSubtopic = !state.activeSubtopic || paperMatchesSidebarSubtopic(paper, paperField, state.activeSubtopic);
+    const matchesSubtopic =
+      !selectedSubtopics.length ||
+      selectedSubtopics.some((item) => paperField === item.field && paperMatchesSidebarSubtopic(paper, item.field, item.subtopic));
     const matchesSummaryProvider = !summaryProvider || runtime.summaryProvider === summaryProvider;
     const matchesNewness = !newness || isWeeklyNewPaper(paper);
     const matchesYear = !year || String(paper.year || "") === year;
@@ -1160,7 +1209,7 @@ function isDefaultNewPapersView() {
       !(els.year && els.year.value) &&
       !state.activeTargetVenue &&
       !state.activeVenueGroup &&
-      !state.activeSubtopic &&
+      !state.activeSubtopics.size &&
       !state.activeAmlRecommendations
   );
 }
@@ -1175,7 +1224,7 @@ function resetFilters() {
   if (els.sort) els.sort.value = "newest";
   state.activeTargetVenue = "";
   state.activeVenueGroup = "";
-  state.activeSubtopic = "";
+  clearActiveSubtopics();
   state.activeAmlRecommendations = false;
   setDefaultNewnessFilter();
   clearVenueQuickFilters();

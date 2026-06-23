@@ -410,6 +410,11 @@ h1 {
   color: var(--blue);
 }
 
+.side-nav .side-field.has-active-child {
+  background: color-mix(in srgb, var(--blue-soft), white 32%);
+  color: var(--blue);
+}
+
 .side-nav button.is-empty {
   opacity: 0.52;
   cursor: default;
@@ -2317,6 +2322,12 @@ h1 {
   color: #071224;
 }
 
+:root[data-theme="dark"] .side-nav .side-field.has-active-child {
+  border-color: rgba(96, 165, 250, 0.46);
+  background: rgba(96, 165, 250, 0.14);
+  color: #dbeafe;
+}
+
 :root[data-theme="dark"] .side-nav button.is-empty:hover {
   background: transparent;
   color: var(--muted);
@@ -3460,6 +3471,11 @@ h1 {
 .side-nav .side-field:hover {
   transform: translateX(2px);
   border-color: color-mix(in srgb, var(--blue), var(--line) 54%);
+}
+
+.side-nav .side-field.has-active-child {
+  border-color: color-mix(in srgb, var(--blue), var(--line) 46%);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--blue), transparent 84%) inset;
 }
 
 .side-nav .side-subtopic {

@@ -1,5 +1,35 @@
 # AGENT_LOG
 
+## 2026-06-23 15:51
+
+### Change Summary
+- Added multi-select behavior for left-panel subtopic keywords.
+- Updated sidebar active-state styling so selected subtopics remain visible in light and dark modes.
+
+### Edited Files
+- `assets/app.js`: changed sidebar subtopic filtering from a single active subtopic to a multi-select `Set`, added toggle/clear helpers, and updated filter logic.
+- `assets/style.css`: added visual styling for fields that contain selected subtopics.
+- `index.html`: bumped the CSS/JS cache version for GitHub Pages.
+- `AGENT_LOG.md`: recorded this update.
+
+### Implemented Features
+- Multiple left-panel subtopics can be selected at the same time.
+- Selected subtopics are combined with OR logic: a paper appears if it matches any selected subtopic.
+- Clicking a field title still works as a single field filter and clears multi-selected subtopics.
+- Changing the top `Field` or `Tag/Subtopic` dropdown clears sidebar multi-selection to avoid conflicting filter states.
+
+### Design Decisions
+- Kept the existing top dropdowns as single-select controls and used the left panel for multi-select keyword filtering.
+- Preserved the current AML Recommendations, venue, year, summary, search, and sort behavior.
+- Did not call OpenAI, Crossref, or OpenAlex.
+
+### Remaining Work
+- After deployment, verify the sidebar multi-select interaction on desktop and mobile.
+
+### Notes / Cautions
+- Multi-selected subtopics are not persisted across page reloads.
+- The filter uses OR logic rather than AND logic so selecting more keywords expands the result set instead of narrowing it.
+
 ## 2026-06-23 15:47
 
 ### Change Summary
