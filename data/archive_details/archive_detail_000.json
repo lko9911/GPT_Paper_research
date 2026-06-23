@@ -269,7 +269,7 @@
     "pdf_stored": false,
     "id": "10.21203/rs.3.rs-8564809/v1"
   },
-  "10.2139/ssrn.6833705": {
+  "10.2139/ssrn.6178599": {
     "author_details": [
       {
         "name": "Yifei Li",
@@ -308,7 +308,7 @@
     "publisher": "Elsevier BV",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "https://openalex.org/W7162439402",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7127645639",
     "openalex_work_id": "",
     "openalex_source_id": "",
     "venue_metrics": {},
@@ -328,7 +328,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "id": "10.2139/ssrn.6833705"
+    "id": "10.2139/ssrn.6178599"
   },
   "10.1016/j.addlet.2026.100396": {
     "author_details": [
@@ -4308,35 +4308,53 @@
     "pdf_stored": false,
     "id": "10.2139/ssrn.4881757"
   },
-  "10.1002/rpm2.62": {
+  "10.1002/rpm.20240008": {
     "author_details": [
       {
         "name": "Yue Ma",
         "orcid": "",
         "position": "first",
         "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
+        "institutions": [
+          {
+            "name": "Department of Chemistry and Applied Biosciences ETH Zurich  Zurich Switzerland"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Chemistry and Applied Biosciences ETH Zurich  Zurich Switzerland"
+        ]
       },
       {
         "name": "Chih‐Jen Shih",
         "orcid": "",
         "position": "additional",
         "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
+        "institutions": [
+          {
+            "name": "Department of Chemistry and Applied Biosciences ETH Zurich  Zurich Switzerland"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Chemistry and Applied Biosciences ETH Zurich  Zurich Switzerland"
+        ]
       },
       {
         "name": "Yinyin Bao",
-        "orcid": "",
+        "orcid": "https://orcid.org/0000-0001-5264-1211",
         "position": "additional",
         "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
+        "institutions": [
+          {
+            "name": "Department of Chemistry and Applied Biosciences ETH Zurich  Zurich Switzerland"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Chemistry and Applied Biosciences ETH Zurich  Zurich Switzerland"
+        ]
       }
     ],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
     "crossref_collection_route": "keyword_query",
@@ -4349,8 +4367,8 @@
     "issn_l": "",
     "publisher": "Wiley",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "https://openalex.org/W4402097955",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4399383333",
     "openalex_work_id": "",
     "openalex_source_id": "",
     "venue_metrics": {},
@@ -4365,12 +4383,12 @@
     "core_status": "non-core",
     "venue_scope": "non-core",
     "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - Advances in 4D printing of biodegradable photopolymers is a 2024 paper from Responsive Materials about 4D printing.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to 4D printing.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for 4D printing; current relevance score is 5/10.",
-    "relevance_note_en": "Relevant to the tracker through 4D printing; score: 5/10.",
-    "abstract_used_for_summary": false,
+    "ai_summary_en": "1. Topic - Advances in 4D printing of biodegradable photopolymers is a 2024 paper from Responsive Materials about 4D printing, DLP, and SLA.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to 4D printing, DLP, and SLA.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for 4D printing, DLP, and SLA; current relevance score is 5/10.",
+    "relevance_note_en": "Relevant to the tracker through 4D printing, DLP, and SLA; score: 5/10.",
+    "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "id": "10.1002/rpm2.62"
+    "id": "10.1002/rpm.20240008"
   },
   "10.26434/chemrxiv-2024-f13l1": {
     "author_details": [
