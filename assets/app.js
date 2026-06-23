@@ -1599,10 +1599,15 @@ function formatSummarySections(paper) {
 }
 
 function formatSummaryProviderLabel(paper) {
-  if (paper.openai_summary_applied === true || paper.summary_provider === "openai") {
+  if (hasDisplayableOpenAiSummary(paper)) {
     return { text: t("openaiApplied"), title: t("openaiAppliedTitle"), className: "summary-provider-badge is-openai" };
   }
   return { text: t("openaiNotApplied"), title: t("openaiNotAppliedTitle"), className: "summary-provider-badge is-fallback" };
+}
+
+function hasDisplayableOpenAiSummary(paper) {
+  if (!paper || (paper.openai_summary_applied !== true && paper.summary_provider !== "openai")) return false;
+  return parseStoredSummarySections(paper.ai_summary_en || "").length > 0;
 }
 
 function parseStoredSummarySections(summary) {

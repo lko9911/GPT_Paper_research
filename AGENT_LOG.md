@@ -1,5 +1,31 @@
 # AGENT_LOG
 
+## 2026-06-23 15:57
+
+### Change Summary
+- Fixed misleading `AI summary` badges on cards that do not currently display an AI-written summary.
+
+### Edited Files
+- `assets/app.js`: changed summary badge logic to require a displayable stored OpenAI/Q5 summary, not just the `summary_provider` or `openai_summary_applied` flag.
+- `index.html`: bumped the CSS/JS cache version for GitHub Pages.
+- `AGENT_LOG.md`: recorded this update.
+
+### Implemented Features
+- Initial lightweight index cards no longer show `AI summary` when the actual OpenAI summary text is not present in the loaded card data.
+- Cards show `AI summary` only when a parseable stored Q5 summary is available for display.
+- Metadata fallback summaries continue to show as `Metadata summary`.
+
+### Design Decisions
+- Preserved the lightweight `papers_index.json` loading strategy instead of putting all AI summaries back into the initial payload.
+- Kept original OpenAI summary data in `data/papers.json` and detail chunks unchanged.
+- Did not call OpenAI, Crossref, or OpenAlex.
+
+### Remaining Work
+- If desired later, add a separate `AI summary available` state for index cards whose full detail chunk contains an OpenAI summary but has not yet been loaded.
+
+### Notes / Cautions
+- After clicking `Load details`, a card with a stored Q5 OpenAI summary can switch from `Metadata summary` to `AI summary`.
+
 ## 2026-06-23 15:51
 
 ### Change Summary
