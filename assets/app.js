@@ -306,6 +306,7 @@ const state = {
   detailChunks: new Map(),
   detailLoading: new Set(),
   detailErrors: new Map(),
+  autoDetailAttempted: new Set(),
   newnessTouched: false,
   filterTimer: null,
 };
@@ -1262,11 +1263,13 @@ function render() {
   if (defaultNewView) {
     fragment.append(renderFlatPaperGroup(visiblePapers));
     els.list.append(fragment);
+    scheduleVisibleOpenAiDetailLoad(visiblePapers);
     return;
   }
   if (amlView) {
     fragment.append(renderGroup(t("amlPapersKicker"), visiblePapers));
     els.list.append(fragment);
+    scheduleVisibleOpenAiDetailLoad(visiblePapers);
     return;
   }
   const groups = groupByPrimaryCategory(visiblePapers);
@@ -1274,6 +1277,7 @@ function render() {
     fragment.append(renderGroup(category, papers));
   });
   els.list.append(fragment);
+  scheduleVisibleOpenAiDetailLoad(visiblePapers);
 }
 
 function renderPaperResultsHeading(defaultNewView, amlView = false) {
@@ -1765,11 +1769,12 @@ function paperWithDetails(paper) {
   return { ...paper, ...(state.paperDetails.get(paper.id) || {}) };
 }
 
-async function loadPaperDetail(paperId) {
+async function loadPaperDetail(paperId, options = {}) {
   if (!paperId || state.paperDetails.has(paperId) || state.detailLoading.has(paperId)) return;
+  const silent = Boolean(options.silent);
   state.detailLoading.add(paperId);
   state.detailErrors.delete(paperId);
-  render();
+  if (!silent) render();
   try {
     const manifest = await loadDetailManifest();
     const chunkName = manifest[paperId];
@@ -1784,6 +1789,24 @@ async function loadPaperDetail(paperId) {
   } finally {
     state.detailLoading.delete(paperId);
   }
+}
+
+function scheduleVisibleOpenAiDetailLoad(papers) {
+  const candidates = papers
+    .filter((paper) => paper && !paper.is_aml_recommendation)
+    .filter((paper) => paper.openai_summary_applied === true || paper.summary_provider === "openai")
+    .filter((paper) => !hasDisplayableOpenAiSummary(paperWithDetails(paper)))
+    .filter((paper) => !state.paperDetails.has(paper.id))
+    .filter((paper) => !state.detailLoading.has(paper.id))
+    .filter((paper) => !state.autoDetailAttempted.has(paper.id))
+    .slice(0, RENDER_INCREMENT);
+  if (!candidates.length) return;
+
+  candidates.forEach((paper) => state.autoDetailAttempted.add(paper.id));
+  window.setTimeout(async () => {
+    await Promise.all(candidates.map((paper) => loadPaperDetail(paper.id, { silent: true })));
+    render();
+  }, 0);
 }
 
 async function loadDetailManifest() {

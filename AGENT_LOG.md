@@ -1,5 +1,33 @@
 # AGENT_LOG
 
+## 2026-06-23 16:01
+
+### Change Summary
+- Added automatic lazy loading of OpenAI/Q5 summaries for visible paper cards.
+- Confirmed that the OpenAI summary data was not lost; it remains in `data/papers.json` and detail chunks.
+
+### Edited Files
+- `assets/app.js`: added visible-card detail preloading for papers marked with OpenAI summaries, while keeping the lightweight index loading strategy.
+- `index.html`: bumped the CSS/JS cache version for GitHub Pages.
+- `AGENT_LOG.md`: recorded this update.
+
+### Implemented Features
+- Visible non-AML cards with `summary_provider=openai` or `openai_summary_applied=true` now automatically load their detail chunk.
+- Once the detail chunk is loaded, the card can show the stored Q5 AI summary and the `AI summary` badge without requiring the user to click `Load details`.
+- Auto-loading is limited to the currently rendered cards, so the site does not fetch all 1,148 AI summaries at startup.
+
+### Design Decisions
+- Preserved the reduced initial payload from `data/papers_index.json`.
+- Used lazy detail loading instead of putting `ai_summary_en` back into the index file.
+- Did not call OpenAI, Crossref, or OpenAlex.
+
+### Remaining Work
+- Verify on the deployed site that visible cards switch from fallback metadata text to Q5 AI summaries shortly after initial render.
+
+### Notes / Cautions
+- The first paint may briefly show metadata fallback text before the detail chunk finishes loading.
+- AML recommendation cards already carry their AI summaries directly in `public/data/aml_recommended_papers.json`.
+
 ## 2026-06-23 15:57
 
 ### Change Summary
