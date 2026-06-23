@@ -463,6 +463,8 @@ function preparePaperRuntime(paper) {
       subtopics.join(" "),
       paper.ai_summary_en,
       paper.relevance_note_en,
+      paper.is_aml_recommendation ? "AML Recommendations AML recommendation AML score" : "",
+      correspondingSearchText(paper),
     ].join(" ")
   );
 
@@ -1124,7 +1126,7 @@ function applyFilters() {
   });
 
   state.filtered.sort((a, b) => {
-    if (state.activeAmlRecommendations) {
+    if (state.activeAmlRecommendations && sort === "relevance") {
       return Number(b.aml_score || 0) - Number(a.aml_score || 0) || Number(b.year || 0) - Number(a.year || 0);
     }
     if (isDefaultNewPapersView()) {
@@ -1278,6 +1280,7 @@ function renderPaperRow(paper) {
 
   const doiUrl = displayPaper.url || (displayPaper.doi ? `https://doi.org/${displayPaper.doi}` : "");
   const authorDetailsHtml = renderAuthorDetails(displayPaper);
+  const correspondingAuthorsHtml = renderCorrespondingAuthorsLine(displayPaper);
   const publicationLabel = formatPublicationLabel(displayPaper);
   const summaryProviderLabel = formatSummaryProviderLabel(displayPaper);
   const summaryHtml = renderSummaryBlock(displayPaper);
@@ -1302,6 +1305,7 @@ function renderPaperRow(paper) {
       </div>
       <h4 class="paper-title">${escapeHtml(displayText(displayPaper.title || "Untitled"))}</h4>
       ${authorDetailsHtml}
+      ${correspondingAuthorsHtml}
       ${summaryHtml}
       <p class="relevance-note">${escapeHtml(relevanceNote)}</p>
       <div class="tag-line">${representativeBadges}</div>
@@ -1406,6 +1410,15 @@ function renderAuthorDetails(paper) {
   return `<div class="author-line author-detail-line" aria-label="Author details"><span>${escapeHtml(t("authorsLabel"))}</span><div>${chips}${remaining}</div></div>`;
 }
 
+function renderCorrespondingAuthorsLine(paper) {
+  const corresponding = Array.isArray(paper.corresponding_authors) ? paper.corresponding_authors : [];
+  const names = [...new Set(corresponding.map((author) => String((author && author.name) || "").trim()).filter(Boolean))];
+  if (!names.length) return "";
+  const visible = names.slice(0, 4).map((name) => `<span class="author-chip is-corresponding"><span class="author-chip-name">${escapeHtml(name)}</span></span>`).join("");
+  const remaining = names.length > 4 ? `<span class="author-chip muted">+${names.length - 4}</span>` : "";
+  return `<div class="author-line corresponding-author-line" aria-label="${escapeAttribute(t("correspondingAuthorsLabel"))}"><span>${escapeHtml(t("correspondingAuthorsLabel"))}</span><div>${visible}${remaining}</div></div>`;
+}
+
 function normalizeAuthorName(name) {
   return String(name || "").trim().toLowerCase();
 }
@@ -1431,6 +1444,25 @@ function authorSearchText(paper) {
       (author.raw_affiliation_strings || []).join(" "),
     ].filter(Boolean).join(" ");
   }).join(" ");
+}
+
+function correspondingSearchText(paper) {
+  const corresponding = Array.isArray(paper.corresponding_authors) ? paper.corresponding_authors : [];
+  if (!corresponding.length) return "";
+  return [
+    "corresponding author corresponding authors",
+    ...corresponding.map((author) => {
+      const institutions = Array.isArray(author && author.institutions) ? author.institutions : [];
+      return [
+        author && author.name,
+        author && author.orcid,
+        author && author.openalex_author_id,
+        institutions.map((institution) => institution.name).join(" "),
+        institutions.map((institution) => institution.country_code).join(" "),
+        ((author && author.raw_affiliation_strings) || []).join(" "),
+      ].filter(Boolean).join(" ");
+    }),
+  ].join(" ");
 }
 
 

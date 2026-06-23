@@ -936,6 +936,28 @@ h1 {
   gap: 5px;
 }
 
+.corresponding-author-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin: 3px 0 7px;
+}
+
+.corresponding-author-line > span {
+  color: var(--green);
+  font-size: 0.7rem;
+  font-weight: 900;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+.corresponding-author-line > div {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
 .author-chip.muted {
   background: var(--ink-soft);
   color: var(--muted);

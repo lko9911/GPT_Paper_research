@@ -1,5 +1,35 @@
 # AGENT_LOG
 
+## 2026-06-23 15:47
+
+### Change Summary
+- Improved AML Recommendation cards to show corresponding authors explicitly.
+- Added corresponding-author metadata to the existing search index.
+- Allowed normal sort modes to work in AML Recommendations view while preserving AML-score sorting for relevance.
+
+### Edited Files
+- `assets/app.js`: added a corresponding-author line, included corresponding-author names/affiliations in search text, and adjusted AML sorting behavior.
+- `assets/style.css`: added styling for the corresponding-author line.
+- `index.html`: bumped the CSS/JS cache version for GitHub Pages.
+- `AGENT_LOG.md`: recorded this update.
+
+### Implemented Features
+- AML recommendation cards now display `Corresponding authors` when the data exists.
+- Search can match corresponding author names, ORCID/OpenAlex author IDs, institutions, country codes, and raw affiliation strings.
+- In AML Recommendations view, `Relevance` sorts by AML score; `Newest`, `Recently added`, and `Title` use the normal site sort behavior.
+
+### Design Decisions
+- Reused the existing paper card design instead of creating a separate AML-specific card.
+- Treated corresponding-author metadata as part of the general keyword/search surface instead of adding another filter.
+- Did not call OpenAI, Crossref, or OpenAlex.
+
+### Remaining Work
+- Verify the deployed GitHub Pages page after cache refresh.
+
+### Notes / Cautions
+- Papers without `corresponding_authors` still hide the corresponding-author line.
+- This change does not rescore or recollect AML recommendations.
+
 ## 2026-06-23 12:58
 
 ### Change Summary
