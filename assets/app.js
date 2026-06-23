@@ -1327,9 +1327,6 @@ function renderPaperRow(paper) {
   const displayPaper = paperWithDetails(paper);
   const weeklyNew = isWeeklyNewPaper(displayPaper);
   article.className = weeklyNew ? "paper-card is-weekly-new" : "paper-card";
-  const isDetailLoaded = state.paperDetails.has(paper.id);
-  const isDetailLoading = state.detailLoading.has(paper.id);
-  const detailError = state.detailErrors.get(paper.id) || "";
 
   const doiUrl = displayPaper.url || (displayPaper.doi ? `https://doi.org/${displayPaper.doi}` : "");
   const authorDetailsHtml = renderAuthorDetails(displayPaper);
@@ -1342,10 +1339,6 @@ function renderPaperRow(paper) {
   const representativeBadges = representativeTags(displayPaper)
     .map((tag) => badge(displayLabel(tag), "tag"))
     .join("");
-  const detailButton = isDetailLoaded
-    ? `<button class="link-pill subtle" type="button" disabled>Details loaded</button>`
-    : `<button class="link-pill subtle" type="button" data-load-detail="${escapeAttribute(paper.id)}">${escapeHtml(isDetailLoading ? "Loading details..." : "Load details")}</button>`;
-  const detailErrorHtml = detailError ? `<p class="policy-mini detail-error">${escapeHtml(detailError)}</p>` : "";
   const newBadgeHtml = weeklyNew ? `<span class="new-paper-badge">${escapeHtml(t("newPaperBadge"))}</span>` : "";
 
   article.innerHTML = `
@@ -1366,9 +1359,7 @@ function renderPaperRow(paper) {
         ${doiUrl ? `<a class="link-pill primary" href="${escapeAttribute(doiUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(t("openPaper"))}</a>` : ""}
         ${doiUrl ? `<a class="link-pill subtle" href="${escapeAttribute(doiUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(t("doiButton"))}</a>` : ""}
         <button class="link-pill subtle" type="button" data-citation>${escapeHtml(t("copyCitation"))}</button>
-        ${detailButton}
       </div>
-      ${detailErrorHtml}
       <p class="policy-mini">No abstract/PDF hosted - updated ${escapeHtml(displayPaper.last_updated || "-")}</p>
     </div>
   `;
@@ -1381,14 +1372,6 @@ function renderPaperRow(paper) {
       event.currentTarget.textContent = t("copyCitation");
     }, 1400);
   });
-
-  const loadDetailButton = article.querySelector("[data-load-detail]");
-  if (loadDetailButton) {
-    loadDetailButton.addEventListener("click", async () => {
-      await loadPaperDetail(paper.id);
-      render();
-    });
-  }
 
   article.querySelectorAll("[data-tag-filter]").forEach((button) => {
     button.addEventListener("click", () => {

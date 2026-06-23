@@ -1,5 +1,30 @@
 # AGENT_LOG
 
+## 2026-06-23 16:02
+
+### Change Summary
+- Removed the visible `Load details` / `Details loaded` control from paper cards.
+
+### Edited Files
+- `assets/app.js`: removed the manual detail-load button and click handler from paper cards while keeping automatic lazy loading for AI/Q5 summaries.
+- `index.html`: bumped the CSS/JS cache version for GitHub Pages.
+- `AGENT_LOG.md`: recorded this update.
+
+### Implemented Features
+- Users no longer see internal detail-loading state on cards.
+- If an AI/Q5 summary is available, the automatic detail loader still brings it into the card.
+
+### Design Decisions
+- Treated detail chunks as an internal performance implementation detail, not a user-facing feature.
+- Kept DOI, Open Paper, and Copy Cite actions visible.
+- Did not call OpenAI, Crossref, or OpenAlex.
+
+### Remaining Work
+- Verify on GitHub Pages that paper cards no longer show `Load details` or `Details loaded`.
+
+### Notes / Cautions
+- Automatic detail loading is still limited to visible cards to preserve initial-load performance.
+
 ## 2026-06-23 16:01
 
 ### Change Summary
