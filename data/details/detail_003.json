@@ -1,4 +1,278 @@
 {
+  "10.1117/12.3043502": {
+    "author_details": [
+      {
+        "name": "Jason E. Johnson",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Ishat Raihan Jamil",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Liang Pan",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Guang Lin",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Xianfan Xu",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "proceedings-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [],
+    "issn_l": "",
+    "publisher": "SPIE",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "https://openalex.org/W4408608206",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - This paper focuses on optimizing process parameters in projection multi-photon lithography for additive manufacturing.\n2. Problem - There is a continuous need to explore and optimize new parameters in rapidly evolving additive manufacturing techniques.\n3. Method - An active machine learning framework utilizing Bayesian optimization and Gaussian process regression is proposed to guide the experimentation process.\n4. Key Result - The framework successfully predicts optimal parameters for printing various 2D shapes and discusses its potential for 3D structures.\n5. Takeaway - The integration of machine learning with Bayesian optimization can significantly enhance the parameter optimization process in advanced manufacturing techniques.",
+    "relevance_note_en": "The summary captures the core aspects of the paper, including its focus on optimization in multi-photon lithography and the proposed machine learning framework.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "id": "10.1117/12.3043502"
+  },
+  "10.1038/s41524-025-01828-7": {
+    "author_details": [
+      {
+        "name": "Ryo Toyama",
+        "orcid": "https://orcid.org/0000-0002-7398-5803",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Ryo Tamura",
+        "orcid": "https://orcid.org/0000-0002-0349-358X",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Shoichi Matsuda",
+        "orcid": "https://orcid.org/0000-0002-0640-3404",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Yuma Iwasaki",
+        "orcid": "https://orcid.org/0000-0002-7117-277X",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Yuya Sakuraba",
+        "orcid": "https://orcid.org/0000-0003-4618-9550",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2057-3960"
+    ],
+    "issn_l": "",
+    "publisher": "Springer Science and Business Media LLC",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4416393025",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The study focuses on the autonomous exploration of composition-spread films to enhance the anomalous Hall effect.\n2. Problem - A significant challenge in materials discovery is the lack of effective optimization strategies for combinatorial experimentation in closed-loop systems.\n3. Method - The authors developed a Bayesian optimization approach tailored for composition-spread films to identify optimal compositions and grading of elements.\n4. Key Result - The autonomous exploration led to a maximum anomalous Hall resistivity of 10.9 µΩ cm in a specific five-element alloy system.\n5. Takeaway - This research demonstrates the potential of autonomous high-throughput methods in optimizing materials for specific properties.",
+    "relevance_note_en": "The paper presents a novel optimization method for material discovery, which is highly relevant to the field of computational materials.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "id": "10.1038/s41524-025-01828-7"
+  },
+  "10.1002/aidi.202400037": {
+    "author_details": [
+      {
+        "name": "Erick J. Braham",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Materials and Manufacturing Directorate Air Force Research Laboratory 2977 Hobson Way  Wright‐Patterson AFB OH USA"
+          },
+          {
+            "name": "Blue Halo  Dayton OH USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Materials and Manufacturing Directorate Air Force Research Laboratory 2977 Hobson Way  Wright‐Patterson AFB OH USA",
+          "Blue Halo  Dayton OH USA"
+        ]
+      },
+      {
+        "name": "Marshall Johnson",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Woodruff School of Mechanical Engineering Georgia Institute of Technology  Atlanta GA USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Woodruff School of Mechanical Engineering Georgia Institute of Technology  Atlanta GA USA"
+        ]
+      },
+      {
+        "name": "Andrew Fassler",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Materials and Manufacturing Directorate Air Force Research Laboratory 2977 Hobson Way  Wright‐Patterson AFB OH USA"
+          },
+          {
+            "name": "Blue Halo  Dayton OH USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Materials and Manufacturing Directorate Air Force Research Laboratory 2977 Hobson Way  Wright‐Patterson AFB OH USA",
+          "Blue Halo  Dayton OH USA"
+        ]
+      },
+      {
+        "name": "Surya R. Kalidindi",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Woodruff School of Mechanical Engineering Georgia Institute of Technology  Atlanta GA USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Woodruff School of Mechanical Engineering Georgia Institute of Technology  Atlanta GA USA"
+        ]
+      },
+      {
+        "name": "James Hardin",
+        "orcid": "https://orcid.org/0000-0001-8360-3242",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Materials and Manufacturing Directorate Air Force Research Laboratory 2977 Hobson Way  Wright‐Patterson AFB OH USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Materials and Manufacturing Directorate Air Force Research Laboratory 2977 Hobson Way  Wright‐Patterson AFB OH USA"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2943-9981",
+      "2943-9981"
+    ],
+    "issn_l": "",
+    "publisher": "Wiley",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4409763493",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The paper discusses the use of autonomous intuition in advanced manufacturing systems, particularly focusing on presampling for parameter optimization.\n2. Problem - High-mix, low-volume manufacturing methods face challenges in process optimization due to the complexity of new materials and geometries.\n3. Method - A case study on direct ink write 3D printing is conducted, comparing presampling with traditional design of experiments and active learning against optimizing without initial data.\n4. Key Result - The study finds that presampling can enhance the optimization process, leading to faster adaptation to new materials and improved development times.\n5. Takeaway - Implementing presampling in parameterization can significantly benefit autonomous systems in manufacturing by streamlining the optimization of complex designs.",
+    "relevance_note_en": "The summary captures the core themes and findings of the paper while maintaining a concise format.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "id": "10.1002/aidi.202400037"
+  },
   "10.5220/0013944900003982": {
     "author_details": [
       {
@@ -20605,210 +20879,5 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "id": "10.46254/gc02.20240078"
-  },
-  "10.1016/j.jajp.2023.100174": {
-    "author_details": [
-      {
-        "name": "Hadi Tagimalek",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Masoud Mahmoodi",
-        "orcid": "https://orcid.org/0000-0002-7446-6140",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2666-3309"
-    ],
-    "issn_l": "",
-    "publisher": "Elsevier BV",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4389329604",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - This study investigates the T-peel strength of tri-laminated composites made from functionally graded Al5083 and HDPE.\n2. Problem - The research addresses the weaknesses in metal-polymer hybrid structures by exploring functionally graded composites.\n3. Method - The composites were produced using cold-assisted friction stir additive manufacturing and their bond strength was evaluated through T-peel tests.\n4. Key Result - Results indicated that cooling during the manufacturing process significantly enhanced the bond strength between the laminates.\n5. Takeaway - The findings suggest that optimizing the manufacturing process can improve the performance of functionally graded metal-polymer composites.",
-    "relevance_note_en": "The summary captures the core aspects of the study, focusing on the materials, methods, and findings.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "id": "10.1016/j.jajp.2023.100174"
-  },
-  "10.1016/j.addma.2024.104048": {
-    "author_details": [
-      {
-        "name": "Guoxin Fang",
-        "orcid": "https://orcid.org/0000-0001-8741-3227",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Tianyu Zhang",
-        "orcid": "https://orcid.org/0000-0003-0372-0049",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Yuming Huang",
-        "orcid": "https://orcid.org/0000-0001-5900-2164",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Zhizhou Zhang",
-        "orcid": "https://orcid.org/0000-0003-1258-283X",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Kunal Masania",
-        "orcid": "https://orcid.org/0000-0001-9498-1505",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Charlie C.L. Wang",
-        "orcid": "https://orcid.org/0000-0003-4406-8480",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2214-8604"
-    ],
-    "issn_l": "",
-    "publisher": "Elsevier BV",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4391886991",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Core manufacturing journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - This study investigates a novel spatial printing technique for creating continuous fiber-reinforced thermoplastic composites.\n2. Problem - Traditional planar-layer fiber placement methods struggle to provide adequate reinforcement for complex 3D stress distributions.\n3. Method - The authors developed a computational method to generate optimized 3D toolpaths that align fiber orientations with principal stress directions and ensure continuity across load-bearing regions.\n4. Key Result - The spatial printing approach resulted in significant improvements, achieving up to 644% higher failure load and 240% greater stiffness compared to conventional methods.\n5. Takeaway - This research highlights the potential of multi-axis additive manufacturing to enhance the mechanical performance of 3D-printed composites through strategic fiber placement.",
-    "relevance_note_en": "The summary captures the core contributions and findings of the paper, emphasizing the innovative approach and its impact on mechanical performance.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "id": "10.1016/j.addma.2024.104048"
-  },
-  "10.1016/j.procir.2024.10.001": {
-    "author_details": [
-      {
-        "name": "Johannes Vetter",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Samuel Beneder",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Michael Schmidt",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2212-8271"
-    ],
-    "issn_l": "",
-    "publisher": "Elsevier BV",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4403910823",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - This paper addresses the development of tool inserts for injection molding through advanced additive manufacturing techniques.\n2. Problem - The original publication contained errors that needed correction to ensure accurate representation of the research findings.\n3. Method - The erratum corrects specific inaccuracies in the methodology and results presented in the initial paper.\n4. Key Result - The corrections clarify the effectiveness of the material-tailored inserts in improving injection molding processes.\n5. Takeaway - Accurate reporting in scientific publications is crucial for the advancement of additive manufacturing technologies.",
-    "relevance_note_en": "The erratum highlights the importance of precision in reporting research findings.",
-    "abstract_used_for_summary": false,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "id": "10.1016/j.procir.2024.10.001"
   }
 }

@@ -1,4 +1,209 @@
 {
+  "10.1016/j.jajp.2023.100174": {
+    "author_details": [
+      {
+        "name": "Hadi Tagimalek",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Masoud Mahmoodi",
+        "orcid": "https://orcid.org/0000-0002-7446-6140",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2666-3309"
+    ],
+    "issn_l": "",
+    "publisher": "Elsevier BV",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4389329604",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - This study investigates the T-peel strength of tri-laminated composites made from functionally graded Al5083 and HDPE.\n2. Problem - The research addresses the weaknesses in metal-polymer hybrid structures by exploring functionally graded composites.\n3. Method - The composites were produced using cold-assisted friction stir additive manufacturing and their bond strength was evaluated through T-peel tests.\n4. Key Result - Results indicated that cooling during the manufacturing process significantly enhanced the bond strength between the laminates.\n5. Takeaway - The findings suggest that optimizing the manufacturing process can improve the performance of functionally graded metal-polymer composites.",
+    "relevance_note_en": "The summary captures the core aspects of the study, focusing on the materials, methods, and findings.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "id": "10.1016/j.jajp.2023.100174"
+  },
+  "10.1016/j.addma.2024.104048": {
+    "author_details": [
+      {
+        "name": "Guoxin Fang",
+        "orcid": "https://orcid.org/0000-0001-8741-3227",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Tianyu Zhang",
+        "orcid": "https://orcid.org/0000-0003-0372-0049",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Yuming Huang",
+        "orcid": "https://orcid.org/0000-0001-5900-2164",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Zhizhou Zhang",
+        "orcid": "https://orcid.org/0000-0003-1258-283X",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Kunal Masania",
+        "orcid": "https://orcid.org/0000-0001-9498-1505",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Charlie C.L. Wang",
+        "orcid": "https://orcid.org/0000-0003-4406-8480",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2214-8604"
+    ],
+    "issn_l": "",
+    "publisher": "Elsevier BV",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4391886991",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - This study investigates a novel spatial printing technique for creating continuous fiber-reinforced thermoplastic composites.\n2. Problem - Traditional planar-layer fiber placement methods struggle to provide adequate reinforcement for complex 3D stress distributions.\n3. Method - The authors developed a computational method to generate optimized 3D toolpaths that align fiber orientations with principal stress directions and ensure continuity across load-bearing regions.\n4. Key Result - The spatial printing approach resulted in significant improvements, achieving up to 644% higher failure load and 240% greater stiffness compared to conventional methods.\n5. Takeaway - This research highlights the potential of multi-axis additive manufacturing to enhance the mechanical performance of 3D-printed composites through strategic fiber placement.",
+    "relevance_note_en": "The summary captures the core contributions and findings of the paper, emphasizing the innovative approach and its impact on mechanical performance.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "id": "10.1016/j.addma.2024.104048"
+  },
+  "10.1016/j.procir.2024.10.001": {
+    "author_details": [
+      {
+        "name": "Johannes Vetter",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Samuel Beneder",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Michael Schmidt",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2212-8271"
+    ],
+    "issn_l": "",
+    "publisher": "Elsevier BV",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4403910823",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - This paper addresses the development of tool inserts for injection molding through advanced additive manufacturing techniques.\n2. Problem - The original publication contained errors that needed correction to ensure accurate representation of the research findings.\n3. Method - The erratum corrects specific inaccuracies in the methodology and results presented in the initial paper.\n4. Key Result - The corrections clarify the effectiveness of the material-tailored inserts in improving injection molding processes.\n5. Takeaway - Accurate reporting in scientific publications is crucial for the advancement of additive manufacturing technologies.",
+    "relevance_note_en": "The erratum highlights the importance of precision in reporting research findings.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "id": "10.1016/j.procir.2024.10.001"
+  },
   "10.1089/3dp.2022.0196": {
     "author_details": [
       {
@@ -17801,6 +18006,69 @@
     "pdf_stored": false,
     "id": "10.1016/j.addma.2024.104417"
   },
+  "10.1016/j.matpr.2024.01.006": {
+    "author_details": [
+      {
+        "name": "Hardik D Sondagar",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Shailendra Kumar",
+        "orcid": "https://orcid.org/0000-0001-5249-3917",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Vishal S Sharma",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2214-7853"
+    ],
+    "issn_l": "",
+    "publisher": "Elsevier BV",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4391071495",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - A state-of-the-art review of 4D printing techniques, stimuli activated materials and future perspectives is a 2024 paper from Materials Today: Proceedings about 4D printing.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to 4D printing.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for 4D printing; current relevance score is 5/10.",
+    "relevance_note_en": "Relevant to the tracker through 4D printing; score: 5/10.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "id": "10.1016/j.matpr.2024.01.006"
+  },
   "10.1002/marc.202470023": {
     "author_details": [
       {
@@ -18771,6 +19039,67 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "id": "10.1016/j.mtcomm.2024.109147"
+  },
+  "10.1016/b978-0-443-13673-3.00003-1": {
+    "author_details": [
+      {
+        "name": "Yuchuan Cheng",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Huilan Jing",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Ruqing Ye",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "book-chapter",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [],
+    "issn_l": "",
+    "publisher": "Elsevier",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "https://openalex.org/W4401183898",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - 4D printing of hydrogel soft actuators is a 2024 paper from Smart Materials in Additive Manufacturing, Volume 3 about 4D printing.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to 4D printing.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for 4D printing; current relevance score is 5/10.",
+    "relevance_note_en": "Relevant to the tracker through 4D printing; score: 5/10.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "id": "10.1016/b978-0-443-13673-3.00003-1"
   },
   "10.1016/b978-0-443-21518-6.00001-6": {
     "author_details": [
@@ -20851,406 +21180,5 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "id": "10.1016/j.giant.2024.100331"
-  },
-  "10.1016/j.jmrt.2024.10.197": {
-    "author_details": [
-      {
-        "name": "Yao zhao",
-        "orcid": "https://orcid.org/0009-0007-7512-8841",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Jianyang Li",
-        "orcid": "https://orcid.org/0009-0000-9323-5121",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Lei Ren",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Qingping Liu",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Luquan Ren",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Kunyang Wang",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Bingqian Li",
-        "orcid": "https://orcid.org/0000-0002-3359-8200",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2238-7854"
-    ],
-    "issn_l": "",
-    "publisher": "Elsevier BV",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4403902381",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The study focuses on 3D printing biomimetic liquid crystal elastomers (LCEs) that replicate the structure of spider dragline silks.\n2. Problem - Understanding the mechanisms behind the exceptional toughness of spider silks has been challenging when applied to synthetic materials.\n3. Method - The researchers developed an LCE-based structure through 3D printing to mimic the primary structure of spider silk and tested its energy absorption properties.\n4. Key Result - The LCEs-based structure demonstrated a remarkable damping capacity of 90%, outperforming both artificial and biological viscoelastic materials.\n5. Takeaway - This research highlights the potential of biomimetic materials in enhancing energy absorption capabilities, paving the way for new applications in kinetic energy management.",
-    "relevance_note_en": "The summary captures the essence of the study, emphasizing the innovative approach and significant findings related to energy absorption.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "id": "10.1016/j.jmrt.2024.10.197"
-  },
-  "10.1016/j.matdes.2024.113305": {
-    "author_details": [
-      {
-        "name": "Muhammad Yasir Khalid",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Zia Ullah Arif",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Ali Tariq",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Mokarram Hossain",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Rehan Umer",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Mahdi Bodaghi",
-        "orcid": "https://orcid.org/0000-0002-0707-944X",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "Materials & Design",
-    "crossref_target_issn": "0264-1275",
-    "issn": [
-      "0264-1275"
-    ],
-    "issn_l": "",
-    "publisher": "Elsevier BV",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4402468473",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The review focuses on 4D printed mechanical metamaterials and their multifunctional capabilities.\n2. Problem - It addresses the challenges and limitations faced in the development and application of these advanced materials.\n3. Method - The authors systematically analyze existing literature on 4D printing technology and its applications in creating mechanical metamaterials.\n4. Key Result - The review highlights the exceptional mechanical performance and diverse applications of 4D-printed metamaterials, including energy absorption and shape morphing.\n5. Takeaway - Advancements in 4D printing could revolutionize the design and functionality of smart materials for various engineering and scientific applications.",
-    "relevance_note_en": "The summary captures the essence of the review's focus on 4D printed mechanical metamaterials and their applications.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "id": "10.1016/j.matdes.2024.113305"
-  },
-  "10.1016/j.matdes.2024.113119": {
-    "author_details": [
-      {
-        "name": "Yazhou Yuan",
-        "orcid": "https://orcid.org/0009-0003-5699-2539",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Suqian Ma",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Xianyan Sun",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Boya Chen",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Yuchao Luo",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Zhaohua Lin",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Yunhong Liang",
-        "orcid": "https://orcid.org/0000-0002-0285-0418",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "Materials & Design",
-    "crossref_target_issn": "0264-1275",
-    "issn": [
-      "0264-1275"
-    ],
-    "issn_l": "",
-    "publisher": "Elsevier BV",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4399993027",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The study focuses on auxetic metamaterials with adjustable mechanical properties and shape-fitting capabilities.\n2. Problem - Traditional auxetic metamaterials face challenges with limited tunability of Poisson's ratio and transverse deformation.\n3. Method - The researchers designed and 3D printed symmetric antichiral structures using shape memory polymers to enhance auxetic effects.\n4. Key Result - The developed metamaterials demonstrated a Poisson's ratio of -5 and exhibited programmable shape memory behaviors, enabling effective shape and size fitting.\n5. Takeaway - These advancements allow for the creation of self-adaptive wearable devices that can conform to human limbs, improving EMG signal collection.",
-    "relevance_note_en": "The summary captures the core findings and implications of the research on auxetic metamaterials.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "id": "10.1016/j.matdes.2024.113119"
-  },
-  "10.3389/fbioe.2024.1347666": {
-    "author_details": [
-      {
-        "name": "Soheyl Mirzababaei",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Lily Alyssa Kera Towery",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Molly Kozminsky",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2296-4185"
-    ],
-    "issn_l": "",
-    "publisher": "Frontiers Media SA",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4393255974",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The paper explores the use of shape-morphing materials for creating 3D and 4D functional structures in biological contexts.\n2. Problem - It addresses the need for advanced fabrication techniques that can adapt the properties of materials for specific biomedical applications.\n3. Method - The authors review manufacturing techniques like lithography and 3D printing, which leverage origami and kirigami principles for transforming materials.\n4. Key Result - They highlight various architectures developed through these methods, including gripping and rolling structures, and their applications in sensors and medical devices.\n5. Takeaway - The study emphasizes the potential of shape-morphing materials in developing innovative biomimetic designs while also noting existing challenges and future research directions.",
-    "relevance_note_en": "The summary captures the core themes and findings of the paper without directly paraphrasing the abstract.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "id": "10.3389/fbioe.2024.1347666"
-  },
-  "10.1515/9783111215112-014": {
-    "author_details": [
-      {
-        "name": "Sachin Sharma",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Ranu Tyagi",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Seshadri Mohan",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
-    "metadata_source": "crossref",
-    "crossref_type": "book-chapter",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [],
-    "issn_l": "",
-    "publisher": "De Gruyter",
-    "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "https://openalex.org/W4390908900",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The chapter explores the applications of additive manufacturing and 4D printing in the biomedical and pharmaceutical sectors.\n2. Problem - Challenges such as regulatory approval, scalability, and safety hinder the implementation of these technologies.\n3. Method - The authors analyze the potential of AM and 4D printing to enhance drug delivery systems and medical devices.\n4. Key Result - These technologies can significantly improve drug efficacy and patient outcomes while reducing healthcare costs.\n5. Takeaway - AM and 4D printing hold transformative potential for the healthcare industry, despite existing implementation challenges.",
-    "relevance_note_en": "The summary captures the core themes and findings of the paper while addressing the specified questions.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "id": "10.1515/9783111215112-014"
   }
 }
