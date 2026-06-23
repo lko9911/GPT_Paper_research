@@ -1,5 +1,32 @@
 # AGENT_LOG
 
+## 2026-06-23 12:58
+
+### Change Summary
+- Tightened the public AML recommendation threshold from 0.60 to 0.75.
+
+### Edited Files
+- `scripts/score_aml_recommendations.py`: changed the default `PUBLIC_AML_SCORE_THRESHOLD` to `0.75`, so future AML Recommendation Manual runs publish only stronger recommendations unless explicitly overridden.
+- `assets/app.js`: changed the frontend AML threshold defense to `0.75`.
+- `public/data/aml_recommended_papers.json`: filtered current recommendations from 641 to 564 by removing 77 papers below 0.75.
+- `README.md`: documented the stricter public threshold.
+- `index.html`: bumped frontend asset cache version to `20260623-aml-threshold-075`.
+- `AGENT_LOG.md`: recorded this threshold update.
+
+### Implemented Features
+- Pressing the AML Recommendation Manual button now uses the stricter 0.75 default threshold for public output.
+- The site displays only AML recommendations scoring 75/100 or higher.
+
+### Design Decisions
+- Used 0.75 because it aligns with the existing `High` recommendation boundary and narrows the list without jumping straight to a very small top-only set.
+- Kept `AML_PUBLIC_SCORE_THRESHOLD` as an environment-variable override for future experimentation.
+
+### Remaining Work
+- If the list is still too broad, test 0.80 or 0.85 after reviewing the 0.75 output.
+
+### Notes / Cautions
+- No OpenAI, Crossref, or OpenAlex API calls were made.
+
 ## 2026-06-23 12:51
 
 ### Change Summary

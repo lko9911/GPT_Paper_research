@@ -271,7 +271,7 @@ const UPDATE_STATUS_URLS = [
   "data/update_status.json",
 ];
 const AML_RECOMMENDATIONS_URL = "public/data/aml_recommended_papers.json";
-const AML_PUBLIC_SCORE_THRESHOLD = 0.6;
+const AML_PUBLIC_SCORE_THRESHOLD = 0.75;
 const PAPERS_INDEX_URL = "data/papers_index.json";
 const PAPERS_FALLBACK_URL = "data/papers.json";
 const DETAIL_MANIFEST_URL = "data/detail_manifest.json";

@@ -30,7 +30,7 @@ from aml_common import (
     write_json,
 )
 
-PUBLIC_AML_SCORE_THRESHOLD = float(os.getenv("AML_PUBLIC_SCORE_THRESHOLD", "0.60"))
+PUBLIC_AML_SCORE_THRESHOLD = float(os.getenv("AML_PUBLIC_SCORE_THRESHOLD", "0.75"))
 SCORE_WEIGHTS = {
     "semantic_similarity": 0.80,
     "recency_score": 0.10,
