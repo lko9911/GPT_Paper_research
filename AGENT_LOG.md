@@ -1,5 +1,33 @@
 # AGENT_LOG
 
+## 2026-06-24 09:43
+
+### Change Summary
+- Removed duplicate corresponding-author display from paper cards.
+- Added a conservative last-author proxy marker for records without confirmed corresponding-author metadata.
+
+### Edited Files
+- `assets/app.js`: removed the separate `Corresponding authors` line, kept confirmed corresponding authors as badges inside the author chip list, and added `Last author` proxy marking/search text when no confirmed corresponding author exists.
+- `assets/style.css`: added styling for the `Last author` proxy chip/badge.
+- `index.html`: bumped the CSS/JS cache version for GitHub Pages.
+- `AGENT_LOG.md`: recorded this update.
+
+### Implemented Features
+- Confirmed corresponding authors are no longer shown twice.
+- If Crossref/OpenAlex do not provide corresponding-author metadata, the final listed author is marked as `Last author` instead of being mislabeled as a corresponding author.
+- Search can match `last author`, `senior author proxy`, and the final author's name.
+
+### Design Decisions
+- Did not infer or store the last author as an actual corresponding author.
+- Kept confirmed corresponding-author display distinct from last-author proxy display.
+- Did not call OpenAI, Crossref, or OpenAlex.
+
+### Remaining Work
+- Verify on GitHub Pages that author chips no longer duplicate confirmed corresponding authors.
+
+### Notes / Cautions
+- `Last author` is only a proxy marker. It is not a claim that the person is the corresponding author.
+
 ## 2026-06-23 16:02
 
 ### Change Summary

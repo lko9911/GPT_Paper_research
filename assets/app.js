@@ -145,8 +145,9 @@ const UI_TEXT = {
     fallbackSummary: "Metadata-based summary",
     summaryMissing: "Summary has not been generated yet.",
     authorsLabel: "Authors",
-    correspondingAuthorsLabel: "Corresponding authors",
     correspondingAuthorBadge: "Corresponding",
+    lastAuthorProxyBadge: "Last author",
+    lastAuthorProxyTitle: "Corresponding author is not available in metadata; this marks the final listed author as a senior-author proxy, not a confirmed corresponding author.",
     newPaperBadge: "New",
     openPaper: "Open Paper",
     doiButton: "DOI",
@@ -467,6 +468,7 @@ function preparePaperRuntime(paper) {
       paper.relevance_note_en,
       paper.is_aml_recommendation ? "AML Recommendations AML recommendation AML score" : "",
       correspondingSearchText(paper),
+      lastAuthorProxySearchText(paper),
     ].join(" ")
   );
 
@@ -1330,7 +1332,6 @@ function renderPaperRow(paper) {
 
   const doiUrl = displayPaper.url || (displayPaper.doi ? `https://doi.org/${displayPaper.doi}` : "");
   const authorDetailsHtml = renderAuthorDetails(displayPaper);
-  const correspondingAuthorsHtml = renderCorrespondingAuthorsLine(displayPaper);
   const publicationLabel = formatPublicationLabel(displayPaper);
   const summaryProviderLabel = formatSummaryProviderLabel(displayPaper);
   const summaryHtml = renderSummaryBlock(displayPaper);
@@ -1351,7 +1352,6 @@ function renderPaperRow(paper) {
       </div>
       <h4 class="paper-title">${escapeHtml(displayText(displayPaper.title || "Untitled"))}</h4>
       ${authorDetailsHtml}
-      ${correspondingAuthorsHtml}
       ${summaryHtml}
       <p class="relevance-note">${escapeHtml(relevanceNote)}</p>
       <div class="tag-line">${representativeBadges}</div>
@@ -1408,17 +1408,22 @@ function renderAuthorDetails(paper) {
   const corresponding = Array.isArray(paper.corresponding_authors) ? paper.corresponding_authors : [];
   if (!details.length && !fallbackAuthors.length && !corresponding.length) return "";
   const correspondingNames = new Set(corresponding.map((author) => normalizeAuthorName(author && author.name)).filter(Boolean));
+  const hasConfirmedCorresponding = correspondingNames.size > 0 || details.some((author) => author && author.is_corresponding);
+  const lastAuthorName = !hasConfirmedCorresponding ? lastListedAuthorName(details, fallbackAuthors) : "";
+  const lastAuthorKey = normalizeAuthorName(lastAuthorName);
   const visibleLimit = 8;
   const visibleDetails = details.length
     ? details.slice(0, visibleLimit).map((author) => ({
         name: author.name || "",
         tooltip: [author.name, author.position, primaryInstitution(author)].filter(Boolean).join(" - "),
         isCorresponding: Boolean(author.is_corresponding),
+        isLastAuthorProxy: Boolean(lastAuthorKey && normalizeAuthorName(author.name) === lastAuthorKey),
       }))
     : fallbackAuthors.slice(0, visibleLimit).map((name) => ({
         name,
         tooltip: name,
         isCorresponding: correspondingNames.has(normalizeAuthorName(name)),
+        isLastAuthorProxy: Boolean(lastAuthorKey && normalizeAuthorName(name) === lastAuthorKey),
       }));
   const visibleNames = new Set(visibleDetails.map((author) => normalizeAuthorName(author.name)));
   const hiddenCorresponding = details.length
@@ -1428,31 +1433,47 @@ function renderAuthorDetails(paper) {
     name: author.name || "",
     tooltip: [author.name, author.position, primaryInstitution(author)].filter(Boolean).join(" - "),
     isCorresponding: true,
+    isLastAuthorProxy: false,
   }));
-  const allChips = [...visibleDetails, ...supplementalCorresponding];
+  const needsSupplementalLastAuthor = Boolean(lastAuthorName && !visibleNames.has(lastAuthorKey));
+  const supplementalLastAuthor = needsSupplementalLastAuthor
+    ? [{
+        name: lastAuthorName,
+        tooltip: t("lastAuthorProxyTitle"),
+        isCorresponding: false,
+        isLastAuthorProxy: true,
+      }]
+    : [];
+  const allChips = [...visibleDetails, ...supplementalCorresponding, ...supplementalLastAuthor];
   const chips = allChips.map((author) => {
     const name = author.name || "";
     if (!name) return "";
     const corrBadge = author.isCorresponding
       ? `<span class="author-chip-badge">${escapeHtml(t("correspondingAuthorBadge"))}</span>`
       : "";
-    const className = `author-chip${author.isCorresponding ? " is-corresponding" : ""}`;
-    return `<span class="${escapeAttribute(className)}" title="${escapeAttribute(author.tooltip)}"><span class="author-chip-name">${escapeHtml(name)}</span>${corrBadge}</span>`;
+    const proxyBadge = author.isLastAuthorProxy
+      ? `<span class="author-chip-badge proxy">${escapeHtml(t("lastAuthorProxyBadge"))}</span>`
+      : "";
+    const className = `author-chip${author.isCorresponding ? " is-corresponding" : ""}${author.isLastAuthorProxy ? " is-last-author-proxy" : ""}`;
+    const title = author.isLastAuthorProxy ? t("lastAuthorProxyTitle") : author.tooltip;
+    return `<span class="${escapeAttribute(className)}" title="${escapeAttribute(title)}"><span class="author-chip-name">${escapeHtml(name)}</span>${corrBadge}${proxyBadge}</span>`;
   }).join("");
   if (!chips) return "";
   const total = details.length || fallbackAuthors.length;
-  const remainingCount = Math.max(0, total - visibleLimit - supplementalCorresponding.length);
+  const remainingCount = Math.max(0, total - visibleLimit - supplementalCorresponding.length - supplementalLastAuthor.length);
   const remaining = remainingCount > 0 ? `<span class="author-chip muted">+${remainingCount}</span>` : "";
   return `<div class="author-line author-detail-line" aria-label="Author details"><span>${escapeHtml(t("authorsLabel"))}</span><div>${chips}${remaining}</div></div>`;
 }
 
-function renderCorrespondingAuthorsLine(paper) {
-  const corresponding = Array.isArray(paper.corresponding_authors) ? paper.corresponding_authors : [];
-  const names = [...new Set(corresponding.map((author) => String((author && author.name) || "").trim()).filter(Boolean))];
-  if (!names.length) return "";
-  const visible = names.slice(0, 4).map((name) => `<span class="author-chip is-corresponding"><span class="author-chip-name">${escapeHtml(name)}</span></span>`).join("");
-  const remaining = names.length > 4 ? `<span class="author-chip muted">+${names.length - 4}</span>` : "";
-  return `<div class="author-line corresponding-author-line" aria-label="${escapeAttribute(t("correspondingAuthorsLabel"))}"><span>${escapeHtml(t("correspondingAuthorsLabel"))}</span><div>${visible}${remaining}</div></div>`;
+function lastListedAuthorName(details, fallbackAuthors) {
+  if (Array.isArray(details) && details.length) {
+    const last = [...details].reverse().find((author) => author && author.name);
+    return last ? String(last.name || "").trim() : "";
+  }
+  if (Array.isArray(fallbackAuthors) && fallbackAuthors.length) {
+    return String(fallbackAuthors[fallbackAuthors.length - 1] || "").trim();
+  }
+  return "";
 }
 
 function normalizeAuthorName(name) {
@@ -1499,6 +1520,16 @@ function correspondingSearchText(paper) {
       ].filter(Boolean).join(" ");
     }),
   ].join(" ");
+}
+
+function lastAuthorProxySearchText(paper) {
+  const corresponding = Array.isArray(paper.corresponding_authors) ? paper.corresponding_authors : [];
+  if (corresponding.length) return "";
+  const name = lastListedAuthorName(
+    Array.isArray(paper.author_details) ? paper.author_details : [],
+    Array.isArray(paper.authors) ? paper.authors : []
+  );
+  return name ? `last author senior author proxy ${name}` : "";
 }
 
 
