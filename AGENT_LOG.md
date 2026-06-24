@@ -1,5 +1,36 @@
 # AGENT_LOG
 
+## 2026-06-24 09:52
+
+### Change Summary
+- Expanded Crossref collection coverage for multimaterial 3D-printed soft robotics papers.
+- Added `Science Advances` to ISSN-targeted Crossref venue search.
+
+### Edited Files
+- `data/queries.json`: added soft-robotics/MMAM queries for multimaterial 3D printed soft robots with embedded actuation and sensing.
+- `data/crossref_venue_queries.json`: added `Science Advances` with ISSN `2375-2548` and AM/soft-robotics/4D-printing/materials-discovery queries.
+- `AGENT_LOG.md`: recorded this update.
+
+### Implemented Features
+- Future Crossref full rebuilds can capture papers like `Multimaterial 3D printed soft robots with embedded actuation and sensing`.
+- Science Advances now has an ISSN-based venue-search route, so relevant Sci. Adv. papers are less dependent on broad keyword rank.
+
+### Design Decisions
+- Used Crossref official metadata and ISSN-targeted search only.
+- Did not use OpenAlex as a paper discovery source.
+- Did not call OpenAI.
+
+### Validation
+- Confirmed Crossref has DOI `10.1126/sciadv.adz2928` for `Multimaterial 3D printed soft robots with embedded actuation and sensing`.
+- Confirmed the new general query `multimaterial 3D printed soft robot` finds the DOI in Crossref top results.
+- Confirmed the repository's `fetch_crossref_by_issn_query()` finds the DOI at rank 1 for Science Advances ISSN `2375-2548`.
+
+### Remaining Work
+- Run the normal `Update papers` workflow to rebuild the public dataset with the new query coverage.
+
+### Notes / Cautions
+- This change updates collection criteria only; it does not itself rebuild `data/papers.json`.
+
 ## 2026-06-24 09:43
 
 ### Change Summary
