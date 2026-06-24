@@ -68,9 +68,11 @@ const TARGET_VENUES = [
   "Nature Communications",
   "Nature Materials",
   "Nature Reviews Materials",
+  "Nature Synthesis",
   "Science",
   "Science Advances",
   "Science Robotics",
+  "Materials Horizons",
   "Additive Manufacturing",
   "ACS Applied Materials & Interfaces",
   "Materials & Design",
@@ -1866,7 +1868,7 @@ function explicitCanonicalAlias(value, text) {
     [["머신러닝", "머신 러닝", "기계 학습", "딥러닝", "강화 학습", "machine learning", "deep learning", "neural", "reinforcement learning"], "Machine learning"],
     [["인공지능", "ai", "artificial intelligence"], "Machine learning"],
     [["제조 자동화", "자동화", "스마트 제조", "manufacturing automation", "automated manufacturing"], "Manufacturing automation"],
-    [["자율 실험", "자율 실험실", "self-driving lab", "autonomous laboratory", "bayesian optimization"], "Self-driving Labs"],
+    [["자율 실험", "자율 실험실", "self-driving lab", "self-driving laboratory", "autonomous laboratory", "bayesian optimization", "automated reaction optimization", "reaction optimization", "photochemical synthesis", "microfluidic reactor", "formulation discovery", "polymer formulation", "polymer nanoparticle", "thermoresponsive polymer", "lcst", "homogeneous catalysis", "robochem", "robotic fluid handling"], "Self-driving Labs"],
     [["로봇 기반 생산제조", "로봇 기반 제조", "robot-based manufacturing", "robotic manufacturing", "robotic fabrication", "robot-assisted manufacturing", "robotic additive manufacturing", "robotic am", "robot-assisted additive", "robotic 3d printing", "robotic 4d printing"], "Robot-based Manufacturing"],
     [["복합재", "복합재료", "복합 재료", "composite", "composites"], "Composites/Materials"],
     [["지속 가능성", "지속가능성", "재활용", "sustainability", "recycling", "circular"], "Sustainability"],
@@ -1916,7 +1918,7 @@ function canonicalTopicLabel(tag) {
   if (hasAny(text, ["material behavior", "material behaviour", "material intelligence", "재료 거동"])) return "Material behavior";
   if (hasAny(text, ["path planning", "trajectory", "graph search", "경로계획", "경로 계획", "그래프 탐색"])) return "Path planning";
   if (hasAny(text, ["process optimization", "process optimisation", "parameter optimization", "parameter optimisation", "공정 최적화"])) return "Process optimization";
-  if (hasAny(text, ["robotic autonomous experimentation", "self-driving lab", "self driving lab", "self-driving laboratory", "autonomous laboratory", "autonomous lab", "autonomous experimentation", "autonomous experiment", "closed-loop experimentation", "closed loop experimentation", "closed-loop experiment", "robotic experiment", "robot scientist", "active learning", "bayesian optimization", "자율 실험실", "자동화 실험", "로봇 자율 실험"])) {
+  if (hasAny(text, ["robotic autonomous experimentation", "self-driving lab", "self driving lab", "self-driving laboratory", "autonomous laboratory", "autonomous lab", "autonomous experimentation", "autonomous experiment", "closed-loop experimentation", "closed loop experimentation", "closed-loop experiment", "robotic experiment", "robot scientist", "active learning", "bayesian optimization", "automated reaction optimization", "reaction optimization", "photochemical synthesis", "microfluidic reactor", "formulation discovery", "polymer formulation", "polymer nanoparticle", "thermoresponsive polymer", "lcst", "homogeneous catalysis", "robochem", "robotic fluid handling", "자율 실험실", "자동화 실험", "로봇 자율 실험"])) {
     return "Self-driving Labs";
   }
   if (hasAny(text, ["digital twin", "digital twins", "digital-twin", "digital-twins", "digital twinning", "virtual twin", "real-to-twin", "twin-enabled", "twin-driven", "process twin", "machine twin", "디지털 트윈"])) return "Digital Twins";
@@ -2232,7 +2234,7 @@ function deriveSubtopics(paper) {
   if (hasAny(text, ["soft robotics", "soft robotic", "soft robot", "soft robots", "soft actuator", "soft actuators", "soft gripper", "soft finger", "embedded actuation", "embedded sensing", "fin-ray", "fin ray", "pneumatic actuator"])) {
     subtopics.add("Soft robotics");
   }
-  if (hasAny(text, ["self-driving lab", "self driving lab", "self-driving laboratory", "autonomous laboratory", "autonomous lab", "autonomous experiment", "autonomous experimentation", "closed-loop experimentation", "closed loop experimentation", "closed-loop experiment", "closed loop experiment", "robot scientist", "active learning", "bayesian optimization", "자율 실험실", "자동화 실험", "자율 실험", "로봇 자율 실험"])) {
+  if (hasAny(text, ["self-driving lab", "self driving lab", "self-driving laboratory", "autonomous laboratory", "autonomous lab", "autonomous experiment", "autonomous experimentation", "closed-loop experimentation", "closed loop experimentation", "closed-loop experiment", "closed loop experiment", "robot scientist", "active learning", "bayesian optimization", "automated reaction optimization", "reaction optimization", "photochemical synthesis", "microfluidic reactor", "formulation discovery", "polymer formulation", "polymer nanoparticle", "thermoresponsive polymer", "lcst", "homogeneous catalysis", "robochem", "robotic fluid handling", "자율 실험실", "자동화 실험", "자율 실험", "로봇 자율 실험"])) {
     subtopics.add("Self-driving Labs");
   }
   if (hasAny(text, ["automation", "automated", "autonomous", "closed-loop", "closed loop", "monitoring", "in-situ", "in situ", "자동화", "자율", "모니터링"])) {

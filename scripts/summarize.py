@@ -31,7 +31,20 @@ KEYWORDS = {
     "Toolpath Planning": ["toolpath", "tool path", "slicing", "deposition path"],
     "Material Switching / Purge Reduction": ["material switching", "purge", "waste reduction", "transition"],
     "Graph Search / Path Planning": ["graph search", "path planning", "traveling salesman", "routing"],
-    "AI and Machine Learning for AM": ["machine learning", "deep learning", "artificial intelligence", "neural"],
+    "AI and Machine Learning for AM": [
+        "machine learning",
+        "deep learning",
+        "artificial intelligence",
+        "neural",
+        "self-driving lab",
+        "self-driving laboratory",
+        "autonomous laboratory",
+        "autonomous lab",
+        "closed-loop experimentation",
+        "reaction optimization",
+        "formulation discovery",
+        "bayesian optimization",
+    ],
 }
 
 TAG_MAP = {
@@ -91,6 +104,18 @@ TAG_MAP = {
         "robot scientist",
         "active learning",
         "bayesian optimization",
+        "automated reaction optimization",
+        "reaction optimization",
+        "photochemical synthesis",
+        "microfluidic reactor",
+        "formulation discovery",
+        "polymer formulation",
+        "polymer nanoparticle",
+        "thermoresponsive polymer",
+        "lcst",
+        "homogeneous catalysis",
+        "robochem",
+        "robotic fluid handling",
     ],
     "Digital Twins": [
         "digital twin",
@@ -609,6 +634,22 @@ def _score(record: dict[str, Any], abstract: str, categories: list[str]) -> int:
     score = 4 + sum(1 for term in core_terms if term in text)
     score += min(len(categories), 2)
     if _is_manufacturing_digital_twin(text):
+        score = max(score, 7)
+    if any(
+        term in text
+        for term in (
+            "self-driving lab",
+            "self-driving laboratory",
+            "autonomous laboratory",
+            "autonomous lab",
+            "reaction optimization",
+            "formulation discovery",
+            "polymer nanoparticle",
+            "thermoresponsive polymer",
+            "homogeneous catalysis",
+            "robotic fluid handling",
+        )
+    ):
         score = max(score, 7)
     return max(1, min(10, score))
 

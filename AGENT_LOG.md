@@ -1,5 +1,45 @@
 # AGENT_LOG
 
+## 2026-06-24 13:40
+
+### Change Summary
+- Expanded self-driving laboratory discovery for reaction optimization, formulation discovery, polymer nanoparticle synthesis, and chemistry/materials automation papers.
+
+### Edited Files
+- `data/queries.json`: added general and title-fragment Crossref queries for SDL reaction/formulation/polymer/nanoparticle/catalysis papers.
+- `data/crossref_venue_queries.json`: added Nature Synthesis, Polymer Chemistry, Digital Discovery, and Materials Horizons as ISSN-targeted venue routes, and added SDL/formulation queries to selected high-impact/core venues.
+- `scripts/summarize.py`: expanded `Self-driving Labs` tag signals and ensured SDL/formulation papers classify under `AI and Machine Learning for AM` with a minimum relevance score of 7.
+- `scripts/update_papers.py`: expanded legacy relevance/plausibility signals and core venue labels for the new SDL-relevant journals.
+- `scripts/collect_aml_candidates.py`: added SDL/formulation/polymer/catalysis queries and signals to AML recommendation external candidate collection.
+- `assets/app.js`: expanded frontend `Self-driving Labs` matching and added Nature Synthesis / Materials Horizons to priority venue display.
+- `index.html`: bumped static asset cache versions.
+- `AGENT_LOG.md`: recorded this update.
+
+### Implemented Features
+- Papers about automated reaction optimization, photochemical SDLs, polymer nanoparticle SDLs, formulation discovery, LCST optimization, homogeneous catalysis, polymer processing SDLs, and SDL 2.0 reviews are more likely to be discovered and tagged.
+- AML recommendation external search now includes these SDL/formulation routes.
+- Future cards can filter these records under `Self-driving Labs`.
+
+### Design Decisions
+- Treated chemistry/materials SDL papers as relevant to the tracker because they are close to DLP resin/additive formulation and DM-filament/material-search workflows.
+- Added exact title-fragment queries for the user-supplied priority examples to reduce missed discovery from generic keyword mismatch.
+- Did not run a full paper update in this change; the new discovery paths apply on the next scheduled/manual update.
+
+### Validation
+- Confirmed `data/queries.json` has 95 default queries, including 23 SDL-related queries.
+- Confirmed `data/crossref_venue_queries.json` has 30 venue targets and 435 ISSN-query routes.
+- Confirmed Nature Synthesis, Polymer Chemistry, Digital Discovery, and Materials Horizons venue routes exist with ISSNs.
+- Sample fallback summaries for three SDL titles produced `Self-driving Labs`, `AI and Machine Learning for AM`, and relevance score 7.
+- `python -m py_compile scripts/summarize.py scripts/update_papers.py scripts/collect_aml_candidates.py`
+
+### Remaining Work
+- Run the normal paper update workflow to collect these papers into the public dataset.
+- Inspect the resulting SDL papers after collection to tighten overly broad chemistry-only matches if needed.
+
+### Notes / Cautions
+- OpenAI API was not used.
+- This change expands Crossref discovery and AML candidate discovery only; it does not itself add new papers until an update run occurs.
+
 ## 2026-06-24 13:34
 
 ### Change Summary
