@@ -1,16 +1,217 @@
 [
   {
-    "name": "ACS Applied Materials & Interfaces",
-    "issn": ["1944-8244", "1944-8252"],
+    "name": "Nature",
+    "issn": ["0028-0836"],
+    "queries": [
+      "additive manufacturing",
+      "3D printing",
+      "4D printing",
+      "volumetric printing",
+      "photopolymerization",
+      "soft robotics",
+      "liquid crystal elastomer",
+      "metamaterial manufacturing",
+      "robotic manufacturing",
+      "materials discovery machine learning",
+      "self-driving laboratory",
+      "digital twin manufacturing"
+    ]
+  },
+  {
+    "name": "Nature Communications",
+    "issn": ["2041-1723"],
+    "queries": [
+      "additive manufacturing",
+      "3D printing",
+      "4D printing",
+      "multi-material 3D printing",
+      "multimaterial 3D printing",
+      "functionally graded materials",
+      "volumetric printing",
+      "photopolymerization",
+      "liquid crystal elastomer",
+      "soft robotics",
+      "metamaterial manufacturing",
+      "robotic manufacturing",
+      "materials discovery machine learning",
+      "self-driving laboratory",
+      "digital twin manufacturing"
+    ]
+  },
+  {
+    "name": "Nature Materials",
+    "issn": ["1476-1122"],
+    "queries": [
+      "additive manufacturing",
+      "3D printing",
+      "4D printing",
+      "photopolymerization",
+      "liquid crystal elastomer",
+      "active materials",
+      "metamaterials",
+      "functionally graded materials",
+      "soft robotics",
+      "materials discovery machine learning",
+      "self-driving laboratory"
+    ]
+  },
+  {
+    "name": "Nature Reviews Materials",
+    "issn": ["2058-8437"],
+    "queries": [
+      "additive manufacturing",
+      "3D printing",
+      "4D printing",
+      "soft robotics",
+      "liquid crystal elastomer",
+      "metamaterials",
+      "materials discovery machine learning",
+      "self-driving laboratory",
+      "digital manufacturing"
+    ]
+  },
+  {
+    "name": "Science",
+    "issn": ["0036-8075"],
+    "queries": [
+      "additive manufacturing",
+      "3D printing",
+      "4D printing",
+      "volumetric printing",
+      "photopolymerization",
+      "liquid crystal elastomer",
+      "soft robotics",
+      "metamaterials",
+      "robotic manufacturing",
+      "materials discovery machine learning",
+      "self-driving laboratory",
+      "digital twin manufacturing"
+    ]
+  },
+  {
+    "name": "Science Advances",
+    "issn": ["2375-2548"],
     "queries": [
       "additive manufacturing",
       "3D printing",
       "4D printing",
       "multi-material additive manufacturing",
+      "multi-material 3D printing",
+      "multimaterial 3D printing",
+      "multimaterial 3D printed soft robot",
+      "soft robotics multimaterial 3D printing",
+      "embedded actuation sensing soft robot",
+      "digital light processing 3D printing",
+      "stereolithography 3D printing",
+      "volumetric additive manufacturing",
+      "volumetric printing",
+      "computed axial lithography",
+      "liquid crystal elastomer 4D printing",
+      "materials discovery machine learning",
+      "self-driving laboratory materials",
+      "digital twin manufacturing"
+    ]
+  },
+  {
+    "name": "Science Robotics",
+    "issn": ["2470-9476"],
+    "queries": [
+      "additive manufacturing",
+      "3D printing",
+      "4D printing",
+      "soft robotics",
+      "soft robot 3D printing",
+      "multimaterial soft robot",
+      "embedded actuation sensing",
+      "robotic manufacturing",
+      "robotic fabrication",
+      "autonomous manufacturing",
+      "self-driving laboratory"
+    ]
+  },
+  {
+    "name": "Proceedings of the National Academy of Sciences",
+    "issn": ["0027-8424"],
+    "queries": [
+      "additive manufacturing",
+      "3D printing",
+      "4D printing",
+      "volumetric printing",
+      "photopolymerization",
+      "liquid crystal elastomer",
+      "soft robotics",
+      "metamaterials",
+      "materials discovery machine learning",
+      "self-driving laboratory"
+    ]
+  },
+  {
+    "name": "Advanced Materials",
+    "issn": ["0935-9648"],
+    "queries": [
+      "additive manufacturing",
+      "3D printing",
+      "4D printing",
+      "multi-material 3D printing",
+      "photopolymerization",
+      "liquid crystal elastomer",
+      "active materials",
+      "soft robotics",
+      "metamaterials",
+      "materials discovery machine learning",
+      "self-driving laboratory"
+    ]
+  },
+  {
+    "name": "Advanced Functional Materials",
+    "issn": ["1616-301X"],
+    "queries": [
+      "additive manufacturing",
+      "3D printing",
+      "4D printing",
+      "multi-material 3D printing",
+      "photopolymerization",
+      "liquid crystal elastomer",
+      "active materials",
+      "soft robotics",
+      "metamaterials",
+      "materials discovery machine learning"
+    ]
+  },
+  {
+    "name": "Advanced Science",
+    "issn": ["2198-3844"],
+    "queries": [
+      "additive manufacturing",
+      "3D printing",
+      "4D printing",
+      "multi-material 3D printing",
+      "photopolymerization",
+      "liquid crystal elastomer",
+      "active materials",
+      "soft robotics",
+      "metamaterials",
+      "materials discovery machine learning",
+      "self-driving laboratory"
+    ]
+  },
+  {
+    "name": "ACS Applied Materials & Interfaces",
+    "issn": ["1944-8244"],
+    "queries": [
+      "additive manufacturing",
+      "3D printing",
+      "4D printing",
+      "multi-material additive manufacturing",
+      "multi-material 3D printing",
       "functionally graded additive manufacturing",
       "digital light processing 3D printing",
       "stereolithography 3D printing",
       "material extrusion additive manufacturing",
+      "photopolymerization 3D printing",
+      "liquid crystal elastomer 4D printing",
+      "soft robotics 3D printing",
+      "metamaterials 3D printing",
       "computational design additive manufacturing",
       "toolpath additive manufacturing",
       "self-driving laboratory materials",
@@ -25,10 +226,13 @@
       "3D printing",
       "4D printing",
       "multi-material additive manufacturing",
+      "multi-material 3D printing",
       "functionally graded additive manufacturing",
       "digital light processing 3D printing",
       "stereolithography 3D printing",
       "material extrusion additive manufacturing",
+      "photopolymerization 3D printing",
+      "soft robotics 3D printing",
       "computational design additive manufacturing",
       "toolpath additive manufacturing",
       "digital twin additive manufacturing",
@@ -37,22 +241,214 @@
     ]
   },
   {
-    "name": "Science Advances",
-    "issn": ["2375-2548"],
+    "name": "Additive Manufacturing",
+    "issn": ["2214-8604"],
+    "queries": [
+      "multi-material additive manufacturing",
+      "multi-material 3D printing",
+      "functionally graded additive manufacturing",
+      "digital material filament",
+      "material extrusion additive manufacturing",
+      "digital light processing 3D printing",
+      "stereolithography 3D printing",
+      "volumetric additive manufacturing",
+      "computed axial lithography",
+      "toolpath additive manufacturing",
+      "material switching additive manufacturing",
+      "soft robotics 3D printing",
+      "robotic additive manufacturing",
+      "digital twin additive manufacturing",
+      "machine learning additive manufacturing"
+    ]
+  },
+  {
+    "name": "Virtual and Physical Prototyping",
+    "issn": ["1745-2759"],
     "queries": [
       "additive manufacturing",
       "3D printing",
       "4D printing",
+      "multi-material 3D printing",
+      "functionally graded additive manufacturing",
+      "digital light processing",
+      "material extrusion",
+      "toolpath",
+      "soft robotics",
+      "robotic fabrication",
+      "digital twin"
+    ]
+  },
+  {
+    "name": "3D Printing and Additive Manufacturing",
+    "issn": ["2329-7662"],
+    "queries": [
       "multi-material additive manufacturing",
-      "multimaterial 3D printing",
-      "multimaterial 3D printed soft robot",
-      "soft robotics multimaterial 3D printing",
-      "embedded actuation sensing soft robot",
-      "digital light processing 3D printing",
-      "volumetric additive manufacturing",
-      "liquid crystal elastomer 4D printing",
-      "materials discovery machine learning",
-      "self-driving laboratory materials"
+      "multi-material 3D printing",
+      "functionally graded additive manufacturing",
+      "digital material filament",
+      "material extrusion",
+      "digital light processing",
+      "stereolithography",
+      "volumetric printing",
+      "toolpath",
+      "material switching",
+      "soft robotics",
+      "robotic additive manufacturing",
+      "machine learning"
+    ]
+  },
+  {
+    "name": "Progress in Additive Manufacturing",
+    "issn": ["2363-9512"],
+    "queries": [
+      "multi-material additive manufacturing",
+      "multi-material 3D printing",
+      "functionally graded additive manufacturing",
+      "material extrusion",
+      "digital light processing",
+      "toolpath",
+      "material switching",
+      "soft robotics",
+      "robotic additive manufacturing",
+      "digital twin",
+      "machine learning"
+    ]
+  },
+  {
+    "name": "Rapid Prototyping Journal",
+    "issn": ["1355-2546"],
+    "queries": [
+      "additive manufacturing",
+      "3D printing",
+      "4D printing",
+      "multi-material 3D printing",
+      "functionally graded additive manufacturing",
+      "material extrusion",
+      "digital light processing",
+      "toolpath",
+      "robotic fabrication",
+      "digital twin"
+    ]
+  },
+  {
+    "name": "Journal of Manufacturing Processes",
+    "issn": ["1526-6125"],
+    "queries": [
+      "additive manufacturing",
+      "3D printing",
+      "robotic manufacturing",
+      "robotic welding additive manufacturing",
+      "process optimization additive manufacturing",
+      "closed-loop manufacturing",
+      "digital twin manufacturing",
+      "machine learning manufacturing",
+      "toolpath additive manufacturing"
+    ]
+  },
+  {
+    "name": "Journal of Manufacturing Systems",
+    "issn": ["0278-6125"],
+    "queries": [
+      "additive manufacturing",
+      "3D printing",
+      "robotic manufacturing",
+      "manufacturing automation",
+      "closed-loop manufacturing",
+      "digital twin manufacturing",
+      "machine learning manufacturing",
+      "self-driving laboratory",
+      "autonomous manufacturing"
+    ]
+  },
+  {
+    "name": "Manufacturing Letters",
+    "issn": ["2213-8463"],
+    "queries": [
+      "additive manufacturing",
+      "3D printing",
+      "robotic manufacturing",
+      "manufacturing automation",
+      "digital twin manufacturing",
+      "machine learning manufacturing",
+      "toolpath additive manufacturing"
+    ]
+  },
+  {
+    "name": "Robotics and Computer-Integrated Manufacturing",
+    "issn": ["0736-5845"],
+    "queries": [
+      "additive manufacturing",
+      "3D printing",
+      "robotic manufacturing",
+      "robotic additive manufacturing",
+      "robotic fabrication",
+      "soft robotics manufacturing",
+      "manufacturing automation",
+      "path planning manufacturing",
+      "digital twin manufacturing",
+      "machine learning manufacturing",
+      "autonomous manufacturing"
+    ]
+  },
+  {
+    "name": "International Journal of Advanced Manufacturing Technology",
+    "issn": ["0268-3768"],
+    "queries": [
+      "additive manufacturing",
+      "3D printing",
+      "4D printing",
+      "multi-material 3D printing",
+      "functionally graded additive manufacturing",
+      "material extrusion",
+      "toolpath",
+      "robotic manufacturing",
+      "manufacturing automation",
+      "digital twin",
+      "machine learning"
+    ]
+  },
+  {
+    "name": "Computer-Aided Design",
+    "issn": ["0010-4485"],
+    "queries": [
+      "additive manufacturing",
+      "3D printing",
+      "computational design additive manufacturing",
+      "generative design additive manufacturing",
+      "toolpath additive manufacturing",
+      "material distribution optimization",
+      "functionally graded design",
+      "digital fabrication",
+      "topology optimization additive manufacturing"
+    ]
+  },
+  {
+    "name": "Journal of Intelligent Manufacturing",
+    "issn": ["0956-5515"],
+    "queries": [
+      "additive manufacturing",
+      "3D printing",
+      "manufacturing automation",
+      "digital twin manufacturing",
+      "machine learning manufacturing",
+      "closed-loop manufacturing",
+      "autonomous manufacturing",
+      "self-driving laboratory",
+      "robotic manufacturing"
+    ]
+  },
+  {
+    "name": "Computers in Industry",
+    "issn": ["0166-3615"],
+    "queries": [
+      "additive manufacturing",
+      "3D printing",
+      "manufacturing automation",
+      "digital twin manufacturing",
+      "machine learning manufacturing",
+      "closed-loop manufacturing",
+      "autonomous manufacturing",
+      "robotic manufacturing"
     ]
   }
 ]

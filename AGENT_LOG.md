@@ -1,5 +1,35 @@
 # AGENT_LOG
 
+## 2026-06-24 13:03
+
+### Change Summary
+- Expanded Crossref ISSN-based core venue searches so important journals are searched more broadly before the existing relevance/curation filters narrow the public site.
+
+### Edited Files
+- `data/crossref_venue_queries.json`: expanded from 3 venue targets to 26 core/high-impact/manufacturing venue targets and added broader manufacturing-adjacent queries.
+- `AGENT_LOG.md`: recorded this update.
+
+### Implemented Features
+- Core venue search now covers Nature, Science, Nature Communications, Nature Materials, Nature Reviews Materials, Science Advances, Science Robotics, PNAS, Advanced Materials, Advanced Functional Materials, Advanced Science, ACS Applied Materials & Interfaces, Materials & Design, Additive Manufacturing, and several core manufacturing journals.
+- Query coverage now includes broader phrases such as volumetric printing, photopolymerization, liquid crystal elastomers, soft robotics, metamaterials, robotic manufacturing, digital twins, self-driving laboratories, and machine-learning-driven materials/manufacturing.
+
+### Design Decisions
+- Used Crossref ISSN venue search as the broad discovery layer and kept the existing relevance score / archive split as the narrow public-display layer.
+- Kept mostly one representative ISSN per venue to avoid multiplying API calls unnecessarily.
+- Did not run a full data rebuild in this change; the expanded search scope will apply on the next scheduled or manual paper update.
+
+### Validation
+- Parsed `data/crossref_venue_queries.json` successfully as JSON.
+- Counted 26 venue targets, 296 query entries, and 296 ISSN-query routes.
+
+### Remaining Work
+- Run the manual paper update or wait for the scheduled update to collect new papers under the broader core-venue search scope.
+- After collection, inspect whether newly added core-venue papers are relevant enough or whether specific broad terms should be tightened.
+
+### Notes / Cautions
+- OpenAI API was not used.
+- This expands discovery breadth, so the next update may add more candidates; relevance filtering should still decide what appears publicly.
+
 ## 2026-06-24 12:49
 
 ### Change Summary
