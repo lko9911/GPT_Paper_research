@@ -1,5 +1,35 @@
 # AGENT_LOG
 
+## 2026-06-24 12:07
+
+### Change Summary
+- Fixed AML Recommendation Manual deployment behavior so updated recommendation JSON is deployed to GitHub Pages.
+- Investigated why the site still showed 564 AML recommendations after the workflow produced 604.
+
+### Edited Files
+- `.github/workflows/aml-recommendation-manual.yml`: added Pages permissions, github-pages environment metadata, artifact build/upload, and `actions/deploy-pages@v4` deployment steps after publishing AML recommendation output.
+- `AGENT_LOG.md`: recorded this update and the root cause.
+
+### Implemented Features
+- Running AML Recommendation Manual with `publish_output=true` now commits `public/data/aml_recommended_papers.json` and deploys the current site artifact in the same workflow.
+- The site no longer depends on a separate push-triggered Pages workflow after an Actions bot commit.
+
+### Design Decisions
+- Kept the existing standalone `Deploy GitHub Pages` workflow for normal user pushes.
+- Added deployment directly to the AML workflow because GitHub Actions commits made with `GITHUB_TOKEN` do not reliably trigger downstream push workflows.
+- Did not call OpenAI, Crossref, or OpenAlex.
+
+### Validation
+- Confirmed raw GitHub `main` had 604 AML recommendations updated at `2026-06-24T02:50:07Z`.
+- Confirmed GitHub Pages was still serving the older 564-recommendation JSON updated at `2026-06-22T02:48:47Z`.
+- Confirmed the latest deploy-pages run predated the AML recommendation commit, explaining the mismatch.
+
+### Remaining Work
+- After this workflow change is pushed, GitHub Pages should redeploy from the new commit and start serving the 604-recommendation JSON.
+
+### Notes / Cautions
+- If `publish_output=false`, the AML workflow still uploads an artifact only and does not deploy public Pages output.
+
 ## 2026-06-24 10:37
 
 ### Change Summary

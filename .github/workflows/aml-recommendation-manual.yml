@@ -43,6 +43,8 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: aml-recommendation-manual
@@ -50,6 +52,9 @@ concurrency:
 
 jobs:
   recommend:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -118,3 +123,30 @@ jobs:
           git commit -m "Update AML recommended papers"
           git pull --rebase --autostash origin main
           git push
+
+      - name: Setup Pages
+        if: ${{ inputs.publish_output == 'true' }}
+        uses: actions/configure-pages@v5
+
+      - name: Build public Pages artifact
+        if: ${{ inputs.publish_output == 'true' }}
+        run: |
+          mkdir -p _site
+          rsync -a --delete \
+            --exclude ".git" \
+            --exclude ".github" \
+            --exclude "_site" \
+            --exclude "private" \
+            --exclude "data/private" \
+            ./ _site/
+
+      - name: Upload Pages artifact
+        if: ${{ inputs.publish_output == 'true' }}
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        if: ${{ inputs.publish_output == 'true' }}
+        id: deployment
+        uses: actions/deploy-pages@v4
