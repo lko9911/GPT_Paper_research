@@ -320,6 +320,8 @@ def _is_plausible(record: dict[str, Any], since_year: int) -> bool:
         "high-throughput additive manufacturing",
         "toolpath",
         "computational design",
+        "inverse design",
+        "inverse-designed",
         "material distribution",
         "material switching",
         "purge",

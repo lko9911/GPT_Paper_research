@@ -1,5 +1,40 @@
 # AGENT_LOG
 
+## 2026-06-24 13:34
+
+### Change Summary
+- Added `Inverse Design` as a searchable, taggable, and sidebar-visible topic.
+
+### Edited Files
+- `data/queries.json`: added default Crossref search queries for inverse design in additive manufacturing, 3D printing, and metamaterials/manufacturing.
+- `data/crossref_venue_queries.json`: added `inverse design` to each core venue ISSN-targeted query set.
+- `assets/app.js`: added `Inverse Design` to the left sidebar under AI Manufacturing, tag display labels, card tag priority, canonical topic matching, and runtime subtopic derivation.
+- `scripts/summarize.py`: added `Inverse Design` as a generated tag and included inverse design in relevance scoring terms.
+- `scripts/update_papers.py`: added inverse-design terms to the legacy relevance/plausibility signal list.
+- `index.html`: bumped static asset cache versions.
+- `AGENT_LOG.md`: recorded this update.
+
+### Implemented Features
+- New and existing metadata can be classified/displayed with the `Inverse Design` tag.
+- The left sidebar can filter papers by `Inverse Design`.
+- Future scheduled/manual paper updates will search for inverse-design papers through both the default query list and core-venue ISSN query routes.
+
+### Design Decisions
+- Treated `Inverse Design` as an independent subtopic instead of folding it only into `Design Automation`, because it is a specific research method users may want to filter directly.
+- Kept the broader `Design Automation` tag for computational/generative/topology-design papers.
+
+### Validation
+- Parsed `data/queries.json` and `data/crossref_venue_queries.json` successfully.
+- Confirmed 3 inverse-design default queries and 26 core-venue inverse-design query routes.
+- `python -m py_compile scripts/summarize.py scripts/update_papers.py`
+- `git diff --check`
+
+### Remaining Work
+- Run the normal paper update workflow to collect newly discoverable inverse-design papers.
+
+### Notes / Cautions
+- OpenAI API was not used.
+
 ## 2026-06-24 13:03
 
 ### Change Summary

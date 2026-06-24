@@ -1,4 +1,4 @@
-const CATEGORY_ORDER = [
+﻿const CATEGORY_ORDER = [
   "리뷰 및 서베이",
   "다중재료 적층제조",
   "기능성 구배 적층제조",
@@ -24,7 +24,7 @@ const FIELD_SUBTOPICS = {
   "3D 프린팅": ["MMAM", "FGAM", "Volumetric AM", "DLP", "SLA", "Vat photopolymerization", "FDM/Material extrusion", "Toolpath", "Material Switching", "Additive manufacturing"],
   "4D 프린팅": ["LCE", "메타물질", "Active materials"],
   "로봇틱스(생산제조)": ["Soft robotics", "제조 자동화", "Robot-based Manufacturing"],
-  "AI 생산제조": ["Self-driving Labs", "Digital Twins", "Machine Learning", "Design Automation", "제조 자동화"],
+  "AI 생산제조": ["Self-driving Labs", "Digital Twins", "Machine Learning", "Inverse Design", "Design Automation", "제조 자동화"],
 };
 
 const SIDEBAR_OTHER_TOPIC = "__field_other__";
@@ -55,6 +55,7 @@ const CARD_TAG_PRIORITY = new Map([
   ["Robot-based Manufacturing", 2],
   ["Manufacturing automation", 2],
   ["Machine learning", 2],
+  ["Inverse Design", 2],
   ["Design automation", 2],
   ["Metamaterials", 2],
   ["Active materials", 2],
@@ -235,6 +236,7 @@ const TAG_LABELS = {
     "Self-driving Labs": "Self-driving Labs",
     "Digital Twins": "Digital Twins",
     "Robotic autonomous experimentation": "Self-driving Labs",
+    "Inverse Design": "Inverse Design",
     "Design automation": "Design Automation",
     "Machine learning": "Machine Learning",
     "Robot-based Manufacturing": "Robot-based Manufacturing",
@@ -1859,6 +1861,7 @@ function explicitCanonicalAlias(value, text) {
     [["공정 최적화", "제조 최적화", "최적화", "process optimization", "parameter optimization"], "Process optimization"],
     [["재료 전환", "material switching", "purge"], "Material switching"],
     [["소재 분포", "재료 분포", "material distribution"], "Material distribution"],
+    [["inverse design"], "Inverse Design"],
     [["계산 설계", "계산설계", "설계 자동화", "computational design", "design automation", "generative design"], "Design automation"],
     [["머신러닝", "머신 러닝", "기계 학습", "딥러닝", "강화 학습", "machine learning", "deep learning", "neural", "reinforcement learning"], "Machine learning"],
     [["인공지능", "ai", "artificial intelligence"], "Machine learning"],
@@ -1917,6 +1920,7 @@ function canonicalTopicLabel(tag) {
     return "Self-driving Labs";
   }
   if (hasAny(text, ["digital twin", "digital twins", "digital-twin", "digital-twins", "digital twinning", "virtual twin", "real-to-twin", "twin-enabled", "twin-driven", "process twin", "machine twin", "디지털 트윈"])) return "Digital Twins";
+  if (hasAny(text, ["inverse design", "inverse-designed", "inverse designed"])) return "Inverse Design";
   if (hasAny(text, ["design automation", "computational design", "generative design", "topology optimization", "계산설계", "설계 자동화"])) return "Design automation";
   if (hasAny(text, ["manufacturing automation", "automated manufacturing", "factory automation", "process automation", "production automation", "automation", "automated", "autonomous", "closed-loop", "closed loop", "monitoring", "in-situ", "in situ", "제조 자동화", "생산 자동화", "공정 자동화", "자동화", "자율", "모니터링"])) return "Manufacturing automation";
   if (hasAny(text, ["machine learning", "deep learning", "reinforcement learning", "ai/ml", "머신러닝", "머신 러닝", "기계 학습", "딥러닝", "강화 학습", "인공지능"])) return "Machine learning";
@@ -2242,6 +2246,9 @@ function deriveSubtopics(paper) {
   if (hasAny(text, ["process control", "monitoring", "closed-loop", "공정제어", "모니터링"])) subtopics.add("AI 공정제어");
   if (paperHasCuratedDigitalTwinTag(paper)) {
     subtopics.add("Digital Twins");
+  }
+  if (hasAny(text, ["inverse design", "inverse-designed", "inverse designed"])) {
+    subtopics.add("Inverse Design");
   }
   if (hasAny(text, ["computational design", "generative design", "topology optimization", "design automation", "계산설계", "설계 자동화"])) {
     subtopics.add("설계 자동화");
