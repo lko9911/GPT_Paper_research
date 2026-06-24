@@ -1874,7 +1874,7 @@ function explicitCanonicalAlias(value, text) {
     [["기능성 구배", "구배 재료", "functionally graded", "fgam"], "FGAM"],
     [["다중재료", "다중 재료", "multi-material", "multimaterial", "mmam"], "MMAM"],
     [["volumetric additive manufacturing", "volumetric am", "volumetric printing", "computed axial lithography", "tomographic printing", "tomographic volumetric", "xolography"], "Volumetric AM"],
-    [["소프트 로보틱스", "소프트 로봇", "소프트 액추에이터", "soft robotics", "soft robotic", "soft gripper", "soft finger", "fin-ray", "fin ray", "pneumatic actuator"], "Soft robotics"],
+    [["소프트 로보틱스", "소프트 로봇", "소프트 액추에이터", "soft robotics", "soft robotic", "soft robot", "soft robots", "soft actuator", "soft actuators", "soft gripper", "soft finger", "embedded actuation", "embedded sensing", "fin-ray", "fin ray", "pneumatic actuator"], "Soft robotics"],
     [["fdm", "fused deposition", "material extrusion", "filament"], "FDM/Material extrusion"],
     [["dm filament", "digital material", "blended fdm"], "DM filament"],
     [["리뷰", "review", "survey"], "Review"],
@@ -1896,7 +1896,7 @@ function canonicalTopicLabel(tag) {
   if (explicit) return explicit;
   if (hasAny(text, ["multi-material", "multi material", "multimaterial", "mmam", "다중재료", "다중 재료"])) return "MMAM";
   if (hasAny(text, ["volumetric additive manufacturing", "volumetric am", "volumetric printing", "computed axial lithography", "tomographic printing", "tomographic volumetric", "xolography"])) return "Volumetric AM";
-  if (hasAny(text, ["소프트 로보틱스", "소프트 로봇", "소프트 액추에이터", "soft robotics", "soft robotic", "soft gripper", "soft finger", "fin-ray", "fin ray", "pneumatic actuator"])) return "Soft robotics";
+  if (hasAny(text, ["소프트 로보틱스", "소프트 로봇", "소프트 액추에이터", "soft robotics", "soft robotic", "soft robot", "soft robots", "soft actuator", "soft actuators", "soft gripper", "soft finger", "embedded actuation", "embedded sensing", "fin-ray", "fin ray", "pneumatic actuator"])) return "Soft robotics";
   if (hasAny(text, ["functionally graded", "functional gradient", "graded material", "fgam", "기능성 구배", "구배"])) return "FGAM";
   if (hasAny(text, ["dm filament", "digital material", "blended fdm"])) return "DM filament";
   if (hasAny(text, ["fdm", "fused deposition", "material extrusion"])) return "FDM/Material extrusion";
@@ -2224,7 +2224,7 @@ function deriveSubtopics(paper) {
   ) {
     subtopics.add("Robot-based Manufacturing");
   }
-  if (hasAny(text, ["soft robotics", "soft robotic", "soft gripper", "soft finger", "fin-ray", "fin ray", "pneumatic actuator"])) {
+  if (hasAny(text, ["soft robotics", "soft robotic", "soft robot", "soft robots", "soft actuator", "soft actuators", "soft gripper", "soft finger", "embedded actuation", "embedded sensing", "fin-ray", "fin ray", "pneumatic actuator"])) {
     subtopics.add("Soft robotics");
   }
   if (hasAny(text, ["self-driving lab", "self driving lab", "self-driving laboratory", "autonomous laboratory", "autonomous lab", "autonomous experiment", "autonomous experimentation", "closed-loop experimentation", "closed loop experimentation", "closed-loop experiment", "closed loop experiment", "robot scientist", "active learning", "bayesian optimization", "자율 실험실", "자동화 실험", "자율 실험", "로봇 자율 실험"])) {

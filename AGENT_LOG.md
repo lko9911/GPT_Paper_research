@@ -1,5 +1,35 @@
 # AGENT_LOG
 
+## 2026-06-24 10:37
+
+### Change Summary
+- Strengthened `Soft robotics` tag detection for soft robot / soft robots wording.
+
+### Edited Files
+- `scripts/summarize.py`: added `soft robot`, `soft robots`, `soft actuator(s)`, `embedded actuation`, and `embedded sensing` to the `Soft robotics` tag map.
+- `scripts/update_papers.py`: added the same soft-robotics terms to the legacy relevance/topic signal list.
+- `assets/app.js`: added the same terms to canonical topic and runtime subtopic derivation.
+- `index.html`: bumped the CSS/JS cache version for GitHub Pages.
+- `AGENT_LOG.md`: recorded this update.
+
+### Implemented Features
+- Papers titled like `Multimaterial 3D printed soft robots with embedded actuation and sensing` now receive the `Soft robotics` tag in fallback metadata summarization.
+- Frontend filtering/card tagging can recognize `soft robot`, `soft robots`, embedded actuation, and embedded sensing as soft-robotics signals.
+
+### Design Decisions
+- Kept the existing canonical tag name as `Soft robotics` / displayed as `Soft Robotics`.
+- Did not create a separate `Soft robot` tag because it would fragment the topic taxonomy.
+- Did not call OpenAI, Crossref, or OpenAlex.
+
+### Validation
+- Local fallback summary test for `Multimaterial 3D printed soft robots with embedded actuation and sensing` produced `tags: ['Soft robotics']`.
+
+### Remaining Work
+- Run the normal paper update workflow so newly collected papers receive this improved tag metadata.
+
+### Notes / Cautions
+- `MMAM` may still be represented as the `Multi-material AM` category in stored metadata; frontend topic derivation can still surface MMAM-like filtering from title text.
+
 ## 2026-06-24 09:52
 
 ### Change Summary
