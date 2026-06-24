@@ -145,9 +145,9 @@ const UI_TEXT = {
     fallbackSummary: "Metadata-based summary",
     summaryMissing: "Summary has not been generated yet.",
     authorsLabel: "Authors",
+    authorNoData: "No author data",
     correspondingAuthorBadge: "Corresponding",
-    lastAuthorProxyBadge: "Last author",
-    lastAuthorProxyTitle: "Corresponding author is not available in metadata; this marks the final listed author as a senior-author proxy, not a confirmed corresponding author.",
+    fallbackCorrespondingTitle: "Corresponding author is not available in metadata; showing the final listed author as the corresponding-author fallback.",
     newPaperBadge: "New",
     openPaper: "Open Paper",
     doiButton: "DOI",
@@ -468,7 +468,7 @@ function preparePaperRuntime(paper) {
       paper.relevance_note_en,
       paper.is_aml_recommendation ? "AML Recommendations AML recommendation AML score" : "",
       correspondingSearchText(paper),
-      lastAuthorProxySearchText(paper),
+      fallbackCorrespondingSearchText(paper),
     ].join(" ")
   );
 
@@ -1406,24 +1406,26 @@ function renderAuthorDetails(paper) {
   const details = Array.isArray(paper.author_details) ? paper.author_details : [];
   const fallbackAuthors = Array.isArray(paper.authors) ? paper.authors : [];
   const corresponding = Array.isArray(paper.corresponding_authors) ? paper.corresponding_authors : [];
-  if (!details.length && !fallbackAuthors.length && !corresponding.length) return "";
+  if (!details.length && !fallbackAuthors.length && !corresponding.length) {
+    return `<div class="author-line author-detail-line" aria-label="Author details"><span>${escapeHtml(t("authorsLabel"))}</span><div><span class="author-chip muted">${escapeHtml(t("authorNoData"))}</span></div></div>`;
+  }
   const correspondingNames = new Set(corresponding.map((author) => normalizeAuthorName(author && author.name)).filter(Boolean));
   const hasConfirmedCorresponding = correspondingNames.size > 0 || details.some((author) => author && author.is_corresponding);
-  const lastAuthorName = !hasConfirmedCorresponding ? lastListedAuthorName(details, fallbackAuthors) : "";
-  const lastAuthorKey = normalizeAuthorName(lastAuthorName);
+  const fallbackCorrespondingName = !hasConfirmedCorresponding ? lastListedAuthorName(details, fallbackAuthors) : "";
+  const fallbackCorrespondingKey = normalizeAuthorName(fallbackCorrespondingName);
   const visibleLimit = 8;
   const visibleDetails = details.length
     ? details.slice(0, visibleLimit).map((author) => ({
         name: author.name || "",
         tooltip: [author.name, author.position, primaryInstitution(author)].filter(Boolean).join(" - "),
         isCorresponding: Boolean(author.is_corresponding),
-        isLastAuthorProxy: Boolean(lastAuthorKey && normalizeAuthorName(author.name) === lastAuthorKey),
+        isFallbackCorresponding: Boolean(fallbackCorrespondingKey && normalizeAuthorName(author.name) === fallbackCorrespondingKey),
       }))
     : fallbackAuthors.slice(0, visibleLimit).map((name) => ({
         name,
         tooltip: name,
         isCorresponding: correspondingNames.has(normalizeAuthorName(name)),
-        isLastAuthorProxy: Boolean(lastAuthorKey && normalizeAuthorName(name) === lastAuthorKey),
+        isFallbackCorresponding: Boolean(fallbackCorrespondingKey && normalizeAuthorName(name) === fallbackCorrespondingKey),
       }));
   const visibleNames = new Set(visibleDetails.map((author) => normalizeAuthorName(author.name)));
   const hiddenCorresponding = details.length
@@ -1433,34 +1435,33 @@ function renderAuthorDetails(paper) {
     name: author.name || "",
     tooltip: [author.name, author.position, primaryInstitution(author)].filter(Boolean).join(" - "),
     isCorresponding: true,
-    isLastAuthorProxy: false,
+    isFallbackCorresponding: false,
   }));
-  const needsSupplementalLastAuthor = Boolean(lastAuthorName && !visibleNames.has(lastAuthorKey));
-  const supplementalLastAuthor = needsSupplementalLastAuthor
+  const needsSupplementalFallbackCorresponding = Boolean(fallbackCorrespondingName && !visibleNames.has(fallbackCorrespondingKey));
+  const supplementalFallbackCorresponding = needsSupplementalFallbackCorresponding
     ? [{
-        name: lastAuthorName,
-        tooltip: t("lastAuthorProxyTitle"),
-        isCorresponding: false,
-        isLastAuthorProxy: true,
+        name: fallbackCorrespondingName,
+        tooltip: t("fallbackCorrespondingTitle"),
+        isCorresponding: true,
+        isFallbackCorresponding: true,
       }]
     : [];
-  const allChips = [...visibleDetails, ...supplementalCorresponding, ...supplementalLastAuthor];
+  const allChips = [...visibleDetails, ...supplementalCorresponding, ...supplementalFallbackCorresponding];
   const chips = allChips.map((author) => {
     const name = author.name || "";
     if (!name) return "";
-    const corrBadge = author.isCorresponding
+    const isFallbackCorresponding = Boolean(author.isFallbackCorresponding);
+    const isCorresponding = Boolean(author.isCorresponding || isFallbackCorresponding);
+    const corrBadge = isCorresponding
       ? `<span class="author-chip-badge">${escapeHtml(t("correspondingAuthorBadge"))}</span>`
       : "";
-    const proxyBadge = author.isLastAuthorProxy
-      ? `<span class="author-chip-badge proxy">${escapeHtml(t("lastAuthorProxyBadge"))}</span>`
-      : "";
-    const className = `author-chip${author.isCorresponding ? " is-corresponding" : ""}${author.isLastAuthorProxy ? " is-last-author-proxy" : ""}`;
-    const title = author.isLastAuthorProxy ? t("lastAuthorProxyTitle") : author.tooltip;
-    return `<span class="${escapeAttribute(className)}" title="${escapeAttribute(title)}"><span class="author-chip-name">${escapeHtml(name)}</span>${corrBadge}${proxyBadge}</span>`;
+    const className = `author-chip${isCorresponding ? " is-corresponding" : ""}${isFallbackCorresponding ? " is-fallback-corresponding" : ""}`;
+    const title = isFallbackCorresponding ? t("fallbackCorrespondingTitle") : author.tooltip;
+    return `<span class="${escapeAttribute(className)}" title="${escapeAttribute(title)}"><span class="author-chip-name">${escapeHtml(name)}</span>${corrBadge}</span>`;
   }).join("");
   if (!chips) return "";
   const total = details.length || fallbackAuthors.length;
-  const remainingCount = Math.max(0, total - visibleLimit - supplementalCorresponding.length - supplementalLastAuthor.length);
+  const remainingCount = Math.max(0, total - visibleLimit - supplementalCorresponding.length - supplementalFallbackCorresponding.length);
   const remaining = remainingCount > 0 ? `<span class="author-chip muted">+${remainingCount}</span>` : "";
   return `<div class="author-line author-detail-line" aria-label="Author details"><span>${escapeHtml(t("authorsLabel"))}</span><div>${chips}${remaining}</div></div>`;
 }
@@ -1522,14 +1523,14 @@ function correspondingSearchText(paper) {
   ].join(" ");
 }
 
-function lastAuthorProxySearchText(paper) {
+function fallbackCorrespondingSearchText(paper) {
   const corresponding = Array.isArray(paper.corresponding_authors) ? paper.corresponding_authors : [];
   if (corresponding.length) return "";
   const name = lastListedAuthorName(
     Array.isArray(paper.author_details) ? paper.author_details : [],
     Array.isArray(paper.authors) ? paper.authors : []
   );
-  return name ? `last author senior author proxy ${name}` : "";
+  return name ? `corresponding author fallback last author senior author ${name}` : "";
 }
 
 

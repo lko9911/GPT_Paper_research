@@ -976,12 +976,12 @@ h1 {
   box-shadow: 0 0 0 1px rgba(21, 122, 91, 0.12) inset;
 }
 
-.author-chip.is-last-author-proxy {
+.author-chip.is-fallback-corresponding {
   max-width: 260px;
-  border-color: rgba(89, 102, 122, 0.52);
-  background: color-mix(in srgb, var(--ink-soft), white 34%);
-  color: #344054;
-  box-shadow: 0 0 0 1px rgba(89, 102, 122, 0.1) inset;
+  border-color: rgba(21, 122, 91, 0.54);
+  background: color-mix(in srgb, var(--green), white 84%);
+  color: #075b45;
+  box-shadow: 0 0 0 1px rgba(21, 122, 91, 0.08) inset;
 }
 
 .author-chip-badge {
@@ -996,11 +996,6 @@ h1 {
   color: #fff;
   font-size: 0.62rem;
   font-weight: 900;
-}
-
-.author-chip-badge.proxy {
-  background: #667085;
-  color: #ffffff;
 }
 
 .summary {

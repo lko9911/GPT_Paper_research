@@ -1,5 +1,46 @@
 # AGENT_LOG
 
+## 2026-06-24 12:49
+
+### Change Summary
+- Fixed author display fallback so papers without confirmed corresponding-author metadata use the final listed author as a corresponding-author fallback.
+- Backfilled missing author lists for current local paper data where OpenAlex DOI metadata could provide authors.
+- Fixed the Crossref full-rebuild path so OpenAlex DOI lookup preserves author lists even when OpenAlex does not provide confirmed corresponding authors.
+
+### Edited Files
+- `assets/app.js`: replaced the old last-author proxy UI with a corresponding-author fallback, added fallback author search text, and displays `No author data` when neither Crossref nor OpenAlex provides authors.
+- `assets/style.css`: updated the fallback author chip styling and removed obsolete proxy-badge styling.
+- `scripts/full_rebuild_crossref_dataset.py`: stores OpenAlex `authors` / `author_details` during missing-corresponding-author DOI cross-checks, even if no corresponding author is found.
+- `data/papers.json`: backfilled available author lists for existing records that had DOI but no author list.
+- `data/papers_index.json` and `data/details/`: regenerated split public data from the updated paper database.
+- `public/data/aml_recommended_papers.json`: synchronized author/corresponding fields from the main paper database for matching DOI records.
+- `index.html`: bumped static asset cache version.
+- `AGENT_LOG.md`: recorded this update.
+
+### Implemented Features
+- Cards now show confirmed `Corresponding` authors when available.
+- If confirmed corresponding-author metadata is missing but the paper has an author list, the final listed author is shown with a `Corresponding` badge as a metadata fallback.
+- If no author list exists in Crossref/OpenAlex metadata, the card explicitly shows `No author data` instead of leaving the author area blank.
+- Future Crossref full rebuilds can still support last-author fallback when OpenAlex supplies author lists but no corresponding-author flags.
+
+### Design Decisions
+- The UI no longer uses a separate `Last author` badge, because the intended behavior is to use the final listed author as the corresponding-author fallback.
+- The fallback tooltip explains that the displayed author is based on missing corresponding-author metadata, not a confirmed publisher/OpenAlex flag.
+- OpenAlex was used only for DOI-based metadata backfill; it was not used as a general paper discovery source.
+
+### Validation
+- `python -m py_compile scripts/full_rebuild_crossref_dataset.py scripts/build_split_data.py scripts/update_papers.py`
+- Current curated data: 876 papers with confirmed corresponding authors, 485 papers with last-author fallback possible, 11 papers with no author data available.
+- Current AML recommendations: 391 papers with confirmed corresponding authors, 204 papers with last-author fallback possible, 9 papers with no author data available.
+- `node --check assets/app.js` could not be run because Node.js is not installed in the local shell.
+
+### Remaining Work
+- After deployment, visually confirm a few cards with missing confirmed corresponding authors to ensure the fallback chip reads naturally.
+
+### Notes / Cautions
+- OpenAI API was not used.
+- Do not infer a last author when no author list exists; those cases remain marked as `No author data`.
+
 ## 2026-06-24 12:07
 
 ### Change Summary

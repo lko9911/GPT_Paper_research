@@ -80,6 +80,7 @@ def main() -> None:
     openalex_stats = {
         "checked": 0,
         "completed": 0,
+        "authors_completed": 0,
         "not_found": 0,
         "skipped_has_crossref_corresponding": 0,
         "skipped_no_doi": 0,
@@ -310,14 +311,13 @@ def _complete_corresponding_author_from_openalex(record: dict[str, Any], stats: 
         return record
 
     record["openalex_crosscheck_work_id"] = openalex_record.get("openalex_work_id", "")
+    _merge_openalex_author_metadata(record, openalex_record, stats)
     corresponding = openalex_record.get("corresponding_authors") or []
     if corresponding:
         record["corresponding_authors"] = corresponding
         record["corresponding_author_available"] = True
         record["corresponding_author_source"] = "openalex_cross_check"
         record["openalex_used_for"] = "corresponding_author_completion"
-        if not record.get("author_details"):
-            record["author_details"] = openalex_record.get("author_details", [])
         stats["completed"] += 1
         print(f"corresponding author completed from OpenAlex: {doi}")
         return record
@@ -327,6 +327,22 @@ def _complete_corresponding_author_from_openalex(record: dict[str, Any], stats: 
     record["corresponding_author_source"] = None
     print(f"corresponding author not found in Crossref or OpenAlex: {doi}")
     return record
+
+
+def _merge_openalex_author_metadata(
+    record: dict[str, Any],
+    openalex_record: dict[str, Any],
+    stats: dict[str, int],
+) -> None:
+    copied = False
+    if openalex_record.get("authors") and not record.get("authors"):
+        record["authors"] = openalex_record["authors"]
+        copied = True
+    if openalex_record.get("author_details") and not record.get("author_details"):
+        record["author_details"] = openalex_record["author_details"]
+        copied = True
+    if copied:
+        stats["authors_completed"] = stats.get("authors_completed", 0) + 1
 
 
 def _finalize_crossref_record(
