@@ -148,7 +148,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -331,12 +331,12 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
   {
-    "id": "10.2139/ssrn.6178599",
+    "id": "10.2139/ssrn.6833705",
     "title": "Tailored Infill Path Design using Surface Mesh Deformation: A Strategy for Boosting Mechanical Performance in Fused Filament Fabrication",
     "authors": [
       "Yifei Li",
@@ -374,8 +374,8 @@
     "corresponding_author_source": null,
     "year": 2026,
     "venue": "",
-    "doi": "10.2139/ssrn.6178599",
-    "url": "https://doi.org/10.2139/ssrn.6178599",
+    "doi": "10.2139/ssrn.6833705",
+    "url": "https://doi.org/10.2139/ssrn.6833705",
     "source": [
       "Crossref"
     ],
@@ -389,7 +389,7 @@
     "publisher": "Elsevier BV",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "https://openalex.org/W7127645639",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7162439402",
     "openalex_work_id": "",
     "openalex_source_id": "",
     "venue_metrics": {},
@@ -422,7 +422,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -542,7 +542,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -678,12 +678,12 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-22",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
   {
-    "id": "10.1002/aisy.70218",
+    "id": "10.1002/aisy.202500430",
     "title": "Toward More Autonomous Soft Robots: Development and Characterization of a 3D-Printed Pneumatic Contact Sensor for a Six-Legged Soft Robotic Walker",
     "authors": [
       "Philipp Auth",
@@ -839,7 +839,8 @@
         ],
         "raw_affiliation_strings": [
           "Cluster of Excellence livMatS @ FIT ‐ Freiburg Center for Interactive Materials and Bioinspired Technologies  79110 Freiburg i. Br. Germany",
-          "Plant Biomechanics Group Freiburg, Botanic Garden University of Freiburg  79104 Freiburg i. Br. Germany"
+          "Plant Biomechanics Group Freiburg, Botanic Garden University of Freiburg  79104 Freiburg i. Br. Germany",
+          "Plant Biomechanics Group Freiburg, Botanic Garden, University of Freiburg, 79104 Freiburg i. Br., Germany"
         ]
       }
     ],
@@ -847,8 +848,8 @@
     "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Advanced Intelligent Systems",
-    "doi": "10.1002/aisy.70218",
-    "url": "https://doi.org/10.1002/aisy.70218",
+    "doi": "10.1002/aisy.202500430",
+    "url": "https://doi.org/10.1002/aisy.202500430",
     "source": [
       "Crossref"
     ],
@@ -865,7 +866,7 @@
     "publisher": "Wiley",
     "openalex_checked": true,
     "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W7130522311",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4414949582",
     "openalex_work_id": "",
     "openalex_source_id": "",
     "venue_metrics": {},
@@ -882,23 +883,26 @@
     "venue_scope": "non-core",
     "core_source": "schema_placeholder_crossref_rebuild",
     "categories": [
-      "Multi-material AM"
+      "Multi-material AM",
+      "Functionally Graded AM"
     ],
     "tags": [
-      "Soft robotics",
-      "Manufacturing automation"
+      "soft robotics",
+      "pneumatic sensors",
+      "autonomous systems",
+      "3D printing"
     ],
     "relevance_score": 5,
     "curation_priority": false,
-    "ai_summary_en": "1. Topic - Toward More Autonomous Soft Robots: Development and Characterization of a 3D-Printed Pneumatic Contact Sensor for a Six-Legged Soft Robotic Walker is a 2026 paper from Advanced Intelligent Systems about Soft robotics and Manufacturing automation.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Soft robotics and Manufacturing automation.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Soft robotics and Manufacturing automation; current relevance score is 5/10.",
-    "summary_provider": "fallback",
-    "openai_summary_applied": false,
-    "relevance_note_en": "Relevant to the tracker through Soft robotics and Manufacturing automation; score: 5/10.",
-    "abstract_used_for_summary": false,
+    "ai_summary_en": "1. Topic - The paper discusses the development of a 3D-printed pneumatic contact sensor for a soft robotic walker.\n2. Problem - Current soft robots rely on electronic sensors, which complicate systems and limit adaptability in challenging environments.\n3. Method - The authors created an electronics-free sensory system using pneumatic logic gates integrated into a six-legged soft robot.\n4. Key Result - The robot demonstrated rapid sensor response times and the ability to walk autonomously while effectively detecting obstacles.\n5. Takeaway - This work advances the field of soft robotics by enhancing autonomy and adaptability through electronics-free control systems.",
+    "summary_provider": "openai",
+    "openai_summary_applied": true,
+    "relevance_note_en": "The summary captures the essence of the research on enhancing soft robot autonomy without electronics.",
+    "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -1120,7 +1124,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -1211,7 +1215,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -1363,7 +1367,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-12",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": false,
     "archive_reason": "duplicate_title"
   },
@@ -1486,7 +1490,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -1594,7 +1598,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -1677,7 +1681,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -1786,7 +1790,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -1877,7 +1881,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -1997,7 +2001,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-12",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": false,
     "archive_reason": "duplicate_title"
   },
@@ -2105,7 +2109,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-22",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -2223,7 +2227,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-24",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -2323,7 +2327,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -2459,7 +2463,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -2599,7 +2603,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-12",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": false,
     "archive_reason": "duplicate_title"
   },
@@ -2711,7 +2715,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-12",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": false,
     "archive_reason": "duplicate_title"
   },
@@ -2860,7 +2864,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -2987,7 +2991,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -3096,7 +3100,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-24",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -3273,7 +3277,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-24",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -3418,7 +3422,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -3563,7 +3567,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -3763,7 +3767,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-24",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -3950,7 +3954,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -4041,7 +4045,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -4228,7 +4232,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -4337,7 +4341,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -4476,7 +4480,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-12",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": false,
     "archive_reason": "duplicate_title"
   },
@@ -4664,7 +4668,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -4725,7 +4729,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -5074,7 +5078,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-24",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -5201,7 +5205,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -5344,7 +5348,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -5464,7 +5468,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -5609,7 +5613,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -5777,7 +5781,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -5867,7 +5871,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-24",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -5967,7 +5971,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -6150,7 +6154,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-22",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -6267,7 +6271,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-24",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -6360,7 +6364,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -6530,7 +6534,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-22",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -6698,7 +6702,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-24",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -6779,7 +6783,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -6875,7 +6879,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -7017,7 +7021,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-12",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": false,
     "archive_reason": "duplicate_title"
   },
@@ -7162,7 +7166,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -7253,7 +7257,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -7352,7 +7356,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -7478,7 +7482,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -7605,7 +7609,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -7722,7 +7726,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -7847,7 +7851,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-22",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -8025,7 +8029,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-12",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": false,
     "archive_reason": "duplicate_title"
   },
@@ -8124,7 +8128,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -8258,7 +8262,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-12",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": false,
     "archive_reason": "duplicate_title"
   },
@@ -8554,7 +8558,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-12",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": false,
     "archive_reason": "duplicate_title"
   },
@@ -8635,7 +8639,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-24",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -8762,7 +8766,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   },
@@ -8853,7 +8857,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-12",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": false,
     "archive_reason": "duplicate_title"
   },
@@ -8935,7 +8939,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-06-24",
+    "last_updated": "2026-06-25",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
   }
