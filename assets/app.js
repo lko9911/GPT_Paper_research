@@ -1429,7 +1429,7 @@ function renderAuthorDetails(paper) {
     ? details.slice(0, visibleLimit).map((author) => ({
         name: author.name,
         tooltip: [author.name, author.position, primaryInstitution(author)].filter(Boolean).join(" - "),
-        isCorresponding: Boolean(author.is_corresponding),
+        isCorresponding: Boolean(author.is_corresponding || correspondingNames.has(normalizeAuthorName(author.name))),
         isFallbackCorresponding: Boolean(fallbackCorrespondingKey && normalizeAuthorName(author.name) === fallbackCorrespondingKey),
       }))
     : fallbackAuthors.slice(0, visibleLimit).map((name) => ({
@@ -1439,9 +1439,7 @@ function renderAuthorDetails(paper) {
         isFallbackCorresponding: Boolean(fallbackCorrespondingKey && normalizeAuthorName(name) === fallbackCorrespondingKey),
       }));
   const visibleNames = new Set(visibleDetails.map((author) => normalizeAuthorName(author.name)));
-  const hiddenCorresponding = details.length
-    ? details.slice(visibleLimit).filter((author) => author && author.is_corresponding && !visibleNames.has(normalizeAuthorName(author.name)))
-    : corresponding.filter((author) => author.name && !visibleNames.has(normalizeAuthorName(author.name)));
+  const hiddenCorresponding = corresponding.filter((author) => author.name && !visibleNames.has(normalizeAuthorName(author.name)));
   const supplementalCorresponding = hiddenCorresponding.slice(0, 2).map((author) => ({
     name: author.name || "",
     tooltip: [author.name, author.position, primaryInstitution(author)].filter(Boolean).join(" - "),

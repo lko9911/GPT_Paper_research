@@ -1,5 +1,35 @@
 # AGENT_LOG
 
+## 2026-06-25 12:06
+
+### Change Summary
+- Fixed AML/general author badge logic so existing corresponding-author metadata is always shown before falling back to last author.
+
+### Edited Files
+- `assets/app.js`: author chips now mark a visible author as `Corresponding` when their name appears in `corresponding_authors`, even if `author_details.is_corresponding` is missing. Last-author fallback is used only when no corresponding-author metadata exists.
+- `index.html`: bumped static asset cache versions.
+- `AGENT_LOG.md`: recorded this correction.
+
+### Implemented Features
+- If `corresponding_authors` exists, the matching author chip shows `Corresponding`.
+- If `corresponding_authors` exists but the author is not in the visible first author chips, the corresponding author is added as a supplemental chip.
+- Only records with no corresponding-author metadata use `Last author`.
+
+### Design Decisions
+- Treated `corresponding_authors` as the authoritative display source over `author_details.is_corresponding`, because AML recommendation records may have `corresponding_authors` without per-author flags.
+- Kept `Last author` separate from `Corresponding` to avoid implying the final author is confirmed as corresponding author.
+
+### Validation
+- Current AML recommendation data: 391 records have corresponding-author metadata; 204 records have no corresponding-author metadata and can use last-author fallback; 9 have no author data.
+- `git diff --check`
+
+### Remaining Work
+- Visually confirm AML recommendation cards after deployment.
+
+### Notes / Cautions
+- OpenAI API was not used.
+- No metadata collection was run; this is a frontend display correction.
+
 ## 2026-06-25 12:01
 
 ### Change Summary
