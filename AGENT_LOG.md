@@ -1,5 +1,37 @@
 # AGENT_LOG
 
+## 2026-06-25 10:25
+
+### Change Summary
+- Hardened the frontend corresponding-author fallback so papers without confirmed corresponding-author metadata more reliably show the final listed author.
+
+### Edited Files
+- `assets/app.js`: normalized author details and author-name arrays before rendering/search/citation, made last-author fallback choose the longer available author source, and added support for author objects with `display_name` / `full_name` fields.
+- `index.html`: bumped static asset cache versions.
+- `AGENT_LOG.md`: recorded this update.
+
+### Implemented Features
+- If `corresponding_authors` is empty but `authors` exists, the UI now reliably uses the final author in `authors` as the corresponding-author fallback.
+- If `author_details` exists but is incomplete, the UI falls back to `authors` instead of returning no fallback.
+- Search text and copied citations now use the same robust author-name normalization.
+
+### Design Decisions
+- The fallback remains a display fallback only; the data still distinguishes confirmed `corresponding_authors` from inferred final-author fallback.
+- The final author is chosen from the longer available author list to avoid using the last item of a truncated `author_details` list.
+- Records with no author list in Crossref/OpenAlex metadata still show `No author data` rather than inventing a name.
+
+### Validation
+- Current curated/index data: 485 papers have renderable last-author fallback and 11 have no author data available.
+- Current AML recommendations: 204 papers have renderable last-author fallback and 9 have no author data available.
+- `git diff --check`
+
+### Remaining Work
+- Visually confirm deployed cards that previously looked blank in the author row.
+
+### Notes / Cautions
+- OpenAI API was not used.
+- No metadata collection was run; this is a frontend hardening change.
+
 ## 2026-06-24 13:40
 
 ### Change Summary

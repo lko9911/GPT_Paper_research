@@ -1407,20 +1407,20 @@ function tagButton(text) {
 }
 
 function renderAuthorDetails(paper) {
-  const details = Array.isArray(paper.author_details) ? paper.author_details : [];
-  const fallbackAuthors = Array.isArray(paper.authors) ? paper.authors : [];
-  const corresponding = Array.isArray(paper.corresponding_authors) ? paper.corresponding_authors : [];
+  const details = normalizeAuthorDetails(paper.author_details);
+  const fallbackAuthors = normalizeAuthorNames(paper.authors);
+  const corresponding = normalizeAuthorDetails(paper.corresponding_authors);
   if (!details.length && !fallbackAuthors.length && !corresponding.length) {
     return `<div class="author-line author-detail-line" aria-label="Author details"><span>${escapeHtml(t("authorsLabel"))}</span><div><span class="author-chip muted">${escapeHtml(t("authorNoData"))}</span></div></div>`;
   }
-  const correspondingNames = new Set(corresponding.map((author) => normalizeAuthorName(author && author.name)).filter(Boolean));
+  const correspondingNames = new Set(corresponding.map((author) => normalizeAuthorName(author.name)).filter(Boolean));
   const hasConfirmedCorresponding = correspondingNames.size > 0 || details.some((author) => author && author.is_corresponding);
   const fallbackCorrespondingName = !hasConfirmedCorresponding ? lastListedAuthorName(details, fallbackAuthors) : "";
   const fallbackCorrespondingKey = normalizeAuthorName(fallbackCorrespondingName);
   const visibleLimit = 8;
   const visibleDetails = details.length
     ? details.slice(0, visibleLimit).map((author) => ({
-        name: author.name || "",
+        name: author.name,
         tooltip: [author.name, author.position, primaryInstitution(author)].filter(Boolean).join(" - "),
         isCorresponding: Boolean(author.is_corresponding),
         isFallbackCorresponding: Boolean(fallbackCorrespondingKey && normalizeAuthorName(author.name) === fallbackCorrespondingKey),
@@ -1434,7 +1434,7 @@ function renderAuthorDetails(paper) {
   const visibleNames = new Set(visibleDetails.map((author) => normalizeAuthorName(author.name)));
   const hiddenCorresponding = details.length
     ? details.slice(visibleLimit).filter((author) => author && author.is_corresponding && !visibleNames.has(normalizeAuthorName(author.name)))
-    : corresponding.filter((author) => author && author.name && !visibleNames.has(normalizeAuthorName(author.name)));
+    : corresponding.filter((author) => author.name && !visibleNames.has(normalizeAuthorName(author.name)));
   const supplementalCorresponding = hiddenCorresponding.slice(0, 2).map((author) => ({
     name: author.name || "",
     tooltip: [author.name, author.position, primaryInstitution(author)].filter(Boolean).join(" - "),
@@ -1470,14 +1470,44 @@ function renderAuthorDetails(paper) {
   return `<div class="author-line author-detail-line" aria-label="Author details"><span>${escapeHtml(t("authorsLabel"))}</span><div>${chips}${remaining}</div></div>`;
 }
 
+function normalizeAuthorDetails(value) {
+  if (!Array.isArray(value)) return [];
+  return value
+    .map((author) => {
+      if (typeof author === "string") return { name: author.trim() };
+      if (!author || typeof author !== "object") return null;
+      const name = authorDisplayName(author);
+      if (!name) return null;
+      return { ...author, name };
+    })
+    .filter(Boolean);
+}
+
+function normalizeAuthorNames(value) {
+  if (!Array.isArray(value)) return [];
+  return value.map(authorDisplayName).filter(Boolean);
+}
+
+function authorDisplayName(author) {
+  if (typeof author === "string") return author.trim();
+  if (!author || typeof author !== "object") return "";
+  return String(
+    author.name ||
+    author.display_name ||
+    author.full_name ||
+    author.given ||
+    author.family ||
+    ""
+  ).trim();
+}
+
 function lastListedAuthorName(details, fallbackAuthors) {
-  if (Array.isArray(details) && details.length) {
-    const last = [...details].reverse().find((author) => author && author.name);
-    return last ? String(last.name || "").trim() : "";
-  }
-  if (Array.isArray(fallbackAuthors) && fallbackAuthors.length) {
-    return String(fallbackAuthors[fallbackAuthors.length - 1] || "").trim();
-  }
+  const detailNames = Array.isArray(details) ? details.map(authorDisplayName).filter(Boolean) : [];
+  const authorNames = Array.isArray(fallbackAuthors) ? fallbackAuthors.map(authorDisplayName).filter(Boolean) : [];
+  const preferred = authorNames.length >= detailNames.length ? authorNames : detailNames;
+  const secondary = preferred === authorNames ? detailNames : authorNames;
+  if (preferred.length) return preferred[preferred.length - 1];
+  if (secondary.length) return secondary[secondary.length - 1];
   return "";
 }
 
@@ -1492,8 +1522,8 @@ function primaryInstitution(author) {
 }
 
 function authorSearchText(paper) {
-  const details = Array.isArray(paper.author_details) ? paper.author_details : [];
-  const corresponding = Array.isArray(paper.corresponding_authors) ? paper.corresponding_authors : [];
+  const details = normalizeAuthorDetails(paper.author_details);
+  const corresponding = normalizeAuthorDetails(paper.corresponding_authors);
   return [...details, ...corresponding].map((author) => {
     const institutions = Array.isArray(author.institutions) ? author.institutions : [];
     return [
@@ -1509,7 +1539,7 @@ function authorSearchText(paper) {
 }
 
 function correspondingSearchText(paper) {
-  const corresponding = Array.isArray(paper.corresponding_authors) ? paper.corresponding_authors : [];
+  const corresponding = normalizeAuthorDetails(paper.corresponding_authors);
   if (!corresponding.length) return "";
   return [
     "corresponding author corresponding authors",
@@ -1528,11 +1558,11 @@ function correspondingSearchText(paper) {
 }
 
 function fallbackCorrespondingSearchText(paper) {
-  const corresponding = Array.isArray(paper.corresponding_authors) ? paper.corresponding_authors : [];
+  const corresponding = normalizeAuthorDetails(paper.corresponding_authors);
   if (corresponding.length) return "";
   const name = lastListedAuthorName(
-    Array.isArray(paper.author_details) ? paper.author_details : [],
-    Array.isArray(paper.authors) ? paper.authors : []
+    normalizeAuthorDetails(paper.author_details),
+    normalizeAuthorNames(paper.authors)
   );
   return name ? `corresponding author fallback last author senior author ${name}` : "";
 }
@@ -1964,7 +1994,7 @@ function visibleTags(paper) {
 }
 
 function buildCitation(paper) {
-  const authors = (paper.authors || []).join(", ");
+  const authors = normalizeAuthorNames(paper.authors).join(", ");
   const year = paper.year ? `(${paper.year})` : "";
   const venue = paper.venue ? ` ${paper.venue}.` : "";
   const doi = paper.doi ? ` https://doi.org/${paper.doi}` : "";
