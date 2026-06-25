@@ -150,7 +150,8 @@ const UI_TEXT = {
     authorsLabel: "Authors",
     authorNoData: "No author data",
     correspondingAuthorBadge: "Corresponding",
-    fallbackCorrespondingTitle: "Corresponding author is not available in metadata; showing the final listed author as the corresponding-author fallback.",
+    lastAuthorBadge: "Last author",
+    lastAuthorTitle: "Corresponding author is not available in metadata; showing the final listed author instead.",
     newPaperBadge: "New",
     openPaper: "Open Paper",
     doiButton: "DOI",
@@ -472,7 +473,7 @@ function preparePaperRuntime(paper) {
       paper.relevance_note_en,
       paper.is_aml_recommendation ? "AML Recommendations AML recommendation AML score" : "",
       correspondingSearchText(paper),
-      fallbackCorrespondingSearchText(paper),
+      lastAuthorSearchText(paper),
     ].join(" ")
   );
 
@@ -1445,8 +1446,8 @@ function renderAuthorDetails(paper) {
   const supplementalFallbackCorresponding = needsSupplementalFallbackCorresponding
     ? [{
         name: fallbackCorrespondingName,
-        tooltip: t("fallbackCorrespondingTitle"),
-        isCorresponding: true,
+        tooltip: t("lastAuthorTitle"),
+        isCorresponding: false,
         isFallbackCorresponding: true,
       }]
     : [];
@@ -1465,13 +1466,15 @@ function authorChipHtml(author) {
   const name = author.name || "";
   if (!name) return "";
   const isFallbackCorresponding = Boolean(author.isFallbackCorresponding);
-  const isCorresponding = Boolean(author.isCorresponding || isFallbackCorresponding);
-  const corrBadge = isCorresponding
-    ? `<span class="author-chip-badge">${escapeHtml(t("correspondingAuthorBadge"))}</span>`
-    : "";
-  const className = `author-chip${isCorresponding ? " is-corresponding" : ""}${isFallbackCorresponding ? " is-fallback-corresponding" : ""}`;
-  const title = isFallbackCorresponding ? t("fallbackCorrespondingTitle") : author.tooltip;
-  return `<span class="${escapeAttribute(className)}" title="${escapeAttribute(title)}"><span class="author-chip-name">${escapeHtml(name)}</span>${corrBadge}</span>`;
+  const isCorresponding = Boolean(author.isCorresponding);
+  const markerBadge = isFallbackCorresponding
+    ? `<span class="author-chip-badge is-last-author">${escapeHtml(t("lastAuthorBadge"))}</span>`
+    : (isCorresponding ? `<span class="author-chip-badge">${escapeHtml(t("correspondingAuthorBadge"))}</span>` : "");
+  const className = `author-chip${isCorresponding ? " is-corresponding" : ""}${isFallbackCorresponding ? " is-last-author-fallback" : ""}`;
+  const title = isFallbackCorresponding
+    ? t("lastAuthorTitle")
+    : author.tooltip;
+  return `<span class="${escapeAttribute(className)}" title="${escapeAttribute(title)}"><span class="author-chip-name">${escapeHtml(name)}</span>${markerBadge}</span>`;
 }
 
 function normalizeAuthorDetails(value) {
@@ -1561,14 +1564,14 @@ function correspondingSearchText(paper) {
   ].join(" ");
 }
 
-function fallbackCorrespondingSearchText(paper) {
+function lastAuthorSearchText(paper) {
   const corresponding = normalizeAuthorDetails(paper.corresponding_authors);
   if (corresponding.length) return "";
   const name = lastListedAuthorName(
     normalizeAuthorDetails(paper.author_details),
     normalizeAuthorNames(paper.authors)
   );
-  return name ? `corresponding author fallback last author senior author ${name}` : "";
+  return name ? `last author senior author ${name}` : "";
 }
 
 

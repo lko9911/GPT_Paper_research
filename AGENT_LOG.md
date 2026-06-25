@@ -1,5 +1,36 @@
 # AGENT_LOG
 
+## 2026-06-25 10:35
+
+### Change Summary
+- Changed the missing-corresponding-author fallback label from `Corresponding` to `Last author`.
+
+### Edited Files
+- `assets/app.js`: confirmed corresponding authors still receive `Corresponding`; fallback final authors now receive `Last author` and a tooltip explaining that corresponding-author metadata is unavailable.
+- `assets/style.css`: changed fallback chip styling to a neutral last-author style instead of green corresponding-author styling.
+- `index.html`: bumped static asset cache versions.
+- `AGENT_LOG.md`: recorded this correction.
+
+### Implemented Features
+- The UI no longer implies that the last author is definitely the corresponding author.
+- Papers with confirmed corresponding-author metadata still show `Corresponding`.
+- Papers without confirmed corresponding-author metadata show `Last author` on the final listed author.
+
+### Design Decisions
+- Used a neutral badge color for `Last author` to separate inferred display fallback from confirmed corresponding-author metadata.
+- Kept the last-author fallback in the authors row only, with no duplicate author row.
+
+### Validation
+- Confirmed no stale references to `fallbackCorrespondingTitle`, `fallbackCorrespondingSearchText`, or `.is-fallback-corresponding`.
+- `git diff --check`
+
+### Remaining Work
+- Visually confirm deployed cards after Pages deployment.
+
+### Notes / Cautions
+- OpenAI API was not used.
+- No metadata collection was run; this is a frontend label correction.
+
 ## 2026-06-25 10:33
 
 ### Change Summary
