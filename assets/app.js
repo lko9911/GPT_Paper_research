@@ -149,6 +149,7 @@ const UI_TEXT = {
     summaryMissing: "Summary has not been generated yet.",
     authorsLabel: "Authors",
     authorNoData: "No author data",
+    correspondingAuthorLabel: "Corresponding Author",
     correspondingAuthorBadge: "Corresponding",
     fallbackCorrespondingTitle: "Corresponding author is not available in metadata; showing the final listed author as the corresponding-author fallback.",
     newPaperBadge: "New",
@@ -1414,9 +1415,11 @@ function renderAuthorDetails(paper) {
     return `<div class="author-line author-detail-line" aria-label="Author details"><span>${escapeHtml(t("authorsLabel"))}</span><div><span class="author-chip muted">${escapeHtml(t("authorNoData"))}</span></div></div>`;
   }
   const correspondingNames = new Set(corresponding.map((author) => normalizeAuthorName(author.name)).filter(Boolean));
-  const hasConfirmedCorresponding = correspondingNames.size > 0 || details.some((author) => author && author.is_corresponding);
+  const confirmedCorresponding = corresponding.length ? corresponding : details.filter((author) => author && author.is_corresponding);
+  const hasConfirmedCorresponding = confirmedCorresponding.length > 0;
   const fallbackCorrespondingName = !hasConfirmedCorresponding ? lastListedAuthorName(details, fallbackAuthors) : "";
   const fallbackCorrespondingKey = normalizeAuthorName(fallbackCorrespondingName);
+  const correspondingLine = renderCorrespondingAuthorLine(confirmedCorresponding, fallbackCorrespondingName);
   const visibleLimit = 8;
   const visibleDetails = details.length
     ? details.slice(0, visibleLimit).map((author) => ({
@@ -1452,22 +1455,45 @@ function renderAuthorDetails(paper) {
     : [];
   const allChips = [...visibleDetails, ...supplementalCorresponding, ...supplementalFallbackCorresponding];
   const chips = allChips.map((author) => {
-    const name = author.name || "";
-    if (!name) return "";
-    const isFallbackCorresponding = Boolean(author.isFallbackCorresponding);
-    const isCorresponding = Boolean(author.isCorresponding || isFallbackCorresponding);
-    const corrBadge = isCorresponding
-      ? `<span class="author-chip-badge">${escapeHtml(t("correspondingAuthorBadge"))}</span>`
-      : "";
-    const className = `author-chip${isCorresponding ? " is-corresponding" : ""}${isFallbackCorresponding ? " is-fallback-corresponding" : ""}`;
-    const title = isFallbackCorresponding ? t("fallbackCorrespondingTitle") : author.tooltip;
-    return `<span class="${escapeAttribute(className)}" title="${escapeAttribute(title)}"><span class="author-chip-name">${escapeHtml(name)}</span>${corrBadge}</span>`;
+    return authorChipHtml(author);
   }).join("");
   if (!chips) return "";
   const total = details.length || fallbackAuthors.length;
   const remainingCount = Math.max(0, total - visibleLimit - supplementalCorresponding.length - supplementalFallbackCorresponding.length);
   const remaining = remainingCount > 0 ? `<span class="author-chip muted">+${remainingCount}</span>` : "";
-  return `<div class="author-line author-detail-line" aria-label="Author details"><span>${escapeHtml(t("authorsLabel"))}</span><div>${chips}${remaining}</div></div>`;
+  return `${correspondingLine}<div class="author-line author-detail-line" aria-label="Author details"><span>${escapeHtml(t("authorsLabel"))}</span><div>${chips}${remaining}</div></div>`;
+}
+
+function renderCorrespondingAuthorLine(confirmedCorresponding, fallbackCorrespondingName) {
+  const confirmed = normalizeAuthorDetails(confirmedCorresponding);
+  const chips = confirmed.length
+    ? confirmed.map((author) => authorChipHtml({
+        name: author.name,
+        tooltip: [author.name, author.position, primaryInstitution(author)].filter(Boolean).join(" - "),
+        isCorresponding: true,
+        isFallbackCorresponding: false,
+      })).join("")
+    : (fallbackCorrespondingName ? authorChipHtml({
+        name: fallbackCorrespondingName,
+        tooltip: t("fallbackCorrespondingTitle"),
+        isCorresponding: true,
+        isFallbackCorresponding: true,
+      }) : "");
+  if (!chips) return "";
+  return `<div class="corresponding-author-line" aria-label="Corresponding author"><span>${escapeHtml(t("correspondingAuthorLabel"))}</span><div>${chips}</div></div>`;
+}
+
+function authorChipHtml(author) {
+  const name = author.name || "";
+  if (!name) return "";
+  const isFallbackCorresponding = Boolean(author.isFallbackCorresponding);
+  const isCorresponding = Boolean(author.isCorresponding || isFallbackCorresponding);
+  const corrBadge = isCorresponding
+    ? `<span class="author-chip-badge">${escapeHtml(t("correspondingAuthorBadge"))}</span>`
+    : "";
+  const className = `author-chip${isCorresponding ? " is-corresponding" : ""}${isFallbackCorresponding ? " is-fallback-corresponding" : ""}`;
+  const title = isFallbackCorresponding ? t("fallbackCorrespondingTitle") : author.tooltip;
+  return `<span class="${escapeAttribute(className)}" title="${escapeAttribute(title)}"><span class="author-chip-name">${escapeHtml(name)}</span>${corrBadge}</span>`;
 }
 
 function normalizeAuthorDetails(value) {

@@ -1,5 +1,36 @@
 # AGENT_LOG
 
+## 2026-06-25 10:29
+
+### Change Summary
+- Changed the author UI so papers without confirmed corresponding-author metadata show the last author in a dedicated `Corresponding Author` line.
+
+### Edited Files
+- `assets/app.js`: added a dedicated corresponding-author row, displays confirmed corresponding authors when available, and displays the final listed author in that same row when no confirmed corresponding author exists.
+- `index.html`: bumped static asset cache versions.
+- `AGENT_LOG.md`: recorded this update.
+
+### Implemented Features
+- Cards no longer rely on a small badge hidden inside the author list to communicate the fallback.
+- For records with no `corresponding_authors` but with `authors`, the UI explicitly shows the last author under `Corresponding Author`.
+- Records with no author list still show `No author data`.
+
+### Design Decisions
+- The public UI now treats last-author fallback as a display rule, while the underlying data still keeps confirmed corresponding authors separate from fallback display.
+- Kept the full authors row below the corresponding-author row so users can still inspect the author list.
+
+### Validation
+- Current `data/papers_index.json`: 560 records will show last-author fallback in the `Corresponding Author` line; 12 records have no author data.
+- Current `public/data/aml_recommended_papers.json`: 204 records will show last-author fallback in the `Corresponding Author` line; 9 records have no author data.
+- `git diff --check`
+
+### Remaining Work
+- Visually confirm the deployed card layout after Pages deployment.
+
+### Notes / Cautions
+- OpenAI API was not used.
+- No metadata collection was run; this is a frontend display change.
+
 ## 2026-06-25 10:25
 
 ### Change Summary
