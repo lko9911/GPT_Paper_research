@@ -184,12 +184,14 @@ def recommendation_level(score: float) -> str:
 def public_paper(record: dict[str, Any], updated_at: str) -> dict[str, Any]:
     doi = normalize_doi(record.get("doi", ""))
     url = record.get("url") or (f"https://doi.org/{doi}" if doi else "")
+    authors = record.get("authors", []) or []
     return {
         "title": record.get("title", ""),
         "doi": doi,
         "journal": record.get("journal") or record.get("venue", ""),
         "year": record.get("year"),
-        "authors": record.get("authors", []) or [],
+        "authors": authors,
+        "last_author": _last_author_name(record, authors),
         "author_details": record.get("author_details", []) or [],
         "corresponding_authors": record.get("corresponding_authors", []) or [],
         "corresponding_author_available": bool(record.get("corresponding_authors")),
@@ -209,3 +211,30 @@ def public_paper(record: dict[str, Any], updated_at: str) -> dict[str, Any]:
         "summary_source": record.get("summary_source", ""),
         "updated_at": updated_at,
     }
+
+
+def _last_author_name(record: dict[str, Any], authors: list[Any]) -> str:
+    for author in reversed(authors):
+        if isinstance(author, str) and author.strip():
+            return author.strip()
+        if isinstance(author, dict):
+            name = str(
+                author.get("name")
+                or author.get("display_name")
+                or author.get("full_name")
+                or ""
+            ).strip()
+            if name:
+                return name
+    details = record.get("author_details", []) or []
+    for author in reversed(details):
+        if isinstance(author, dict):
+            name = str(
+                author.get("name")
+                or author.get("display_name")
+                or author.get("full_name")
+                or ""
+            ).strip()
+            if name:
+                return name
+    return ""

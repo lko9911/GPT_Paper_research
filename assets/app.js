@@ -866,6 +866,10 @@ function amlRecommendationToPaper(item) {
     authors: Array.isArray(item && item.authors) ? item.authors : [],
     author_details: Array.isArray(item && item.author_details) ? item.author_details : [],
     corresponding_authors: Array.isArray(item && item.corresponding_authors) ? item.corresponding_authors : [],
+    last_author: (item && item.last_author) || lastListedAuthorName(
+      normalizeAuthorDetails(item && item.author_details),
+      normalizeAuthorNames(item && item.authors)
+    ),
     year: item && item.year,
     venue: (item && (item.journal || item.venue)) || "",
     doi,
@@ -1416,7 +1420,9 @@ function renderAuthorDetails(paper) {
   }
   const correspondingNames = new Set(corresponding.map((author) => normalizeAuthorName(author.name)).filter(Boolean));
   const hasConfirmedCorresponding = correspondingNames.size > 0 || details.some((author) => author && author.is_corresponding);
-  const fallbackCorrespondingName = !hasConfirmedCorresponding ? lastListedAuthorName(details, fallbackAuthors) : "";
+  const fallbackCorrespondingName = !hasConfirmedCorresponding
+    ? (authorDisplayName(paper.last_author) || lastListedAuthorName(details, fallbackAuthors))
+    : "";
   const fallbackCorrespondingKey = normalizeAuthorName(fallbackCorrespondingName);
   const visibleLimit = 8;
   const visibleDetails = details.length

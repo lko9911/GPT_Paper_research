@@ -1,5 +1,39 @@
 # AGENT_LOG
 
+## 2026-06-25 12:01
+
+### Change Summary
+- Made AML recommendation last-author display explicit by adding and consuming a `last_author` field.
+
+### Edited Files
+- `assets/app.js`: AML recommendation records now carry `last_author` into the common paper-card renderer, and the author renderer uses explicit `last_author` before recomputing from author arrays.
+- `scripts/aml_common.py`: public AML recommendation output now includes `last_author` computed from the candidate author list.
+- `public/data/aml_recommended_papers.json`: backfilled `last_author` for current AML recommendation records.
+- `index.html`: bumped static asset cache versions.
+- `AGENT_LOG.md`: recorded this update.
+
+### Implemented Features
+- AML recommendation cards no longer depend only on implicit author-array fallback to show the final author.
+- Records with no confirmed `corresponding_authors` and a known final author can show `Last author` consistently.
+
+### Design Decisions
+- Kept `Last author` separate from `Corresponding`, because the final author is not guaranteed to be the corresponding author.
+- Stored `last_author` in AML public output to make the recommendation data self-contained for the frontend.
+
+### Validation
+- Current AML public data: 595 records have `last_author`.
+- Current AML public data: 204 records have no confirmed corresponding author but do have `last_author`.
+- Current AML public data: 9 records still have no corresponding author and no author data.
+- `python -m py_compile scripts/aml_common.py`
+- `git diff --check`
+
+### Remaining Work
+- After deployment, verify an AML recommendation card with no corresponding-author metadata shows `Last author`.
+
+### Notes / Cautions
+- OpenAI API was not used.
+- No external metadata API was called; this was a local/public JSON and frontend path correction.
+
 ## 2026-06-25 10:35
 
 ### Change Summary
