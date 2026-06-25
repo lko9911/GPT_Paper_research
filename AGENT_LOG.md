@@ -1,5 +1,38 @@
 # AGENT_LOG
 
+## 2026-06-25 10:33
+
+### Change Summary
+- Removed the duplicate dedicated `Corresponding Author` row and kept only the requested inline last-author fallback inside the existing authors row.
+
+### Edited Files
+- `assets/app.js`: removed the separate corresponding-author row logic and kept the rule that if no corresponding author is marked, the final listed author receives the `Corresponding` badge inside the authors list.
+- `assets/style.css`: removed unused CSS for the deleted corresponding-author row.
+- `index.html`: bumped static asset cache versions.
+- `AGENT_LOG.md`: recorded this correction.
+
+### Implemented Features
+- The UI no longer duplicates corresponding author information.
+- Papers with confirmed corresponding authors still show the `Corresponding` badge on those authors in the authors row.
+- Papers without confirmed corresponding authors show the `Corresponding` badge on the last listed author in the same authors row.
+
+### Design Decisions
+- Followed the user-requested behavior exactly: do not create another author section; only fill the missing corresponding-author indication with the last author.
+- Kept robust author normalization from the previous hardening work.
+
+### Validation
+- Confirmed no remaining references to `correspondingAuthorLabel`, `renderCorrespondingAuthorLine`, or `.corresponding-author-line`.
+- Current `data/papers_index.json`: 560 records have inline last-author fallback candidates; 12 records have no author data.
+- Current `public/data/aml_recommended_papers.json`: 204 records have inline last-author fallback candidates; 9 records have no author data.
+- `git diff --check`
+
+### Remaining Work
+- Visually confirm deployed cards show only one author row.
+
+### Notes / Cautions
+- OpenAI API was not used.
+- No metadata collection was run; this is a frontend display correction.
+
 ## 2026-06-25 10:29
 
 ### Change Summary
