@@ -6221,9 +6221,104 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Siying Chen",
+        "openalex_author_id": "https://openalex.org/A5100762805",
+        "orcid": "https://orcid.org/0000-0002-2708-6559",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [],
+        "raw_affiliation_strings": [
+          "585 Purdue Mall, Room 3061D West Lafayette, IN 47907"
+        ]
+      },
+      {
+        "name": "Xingyu Fu",
+        "openalex_author_id": "https://openalex.org/A5023599556",
+        "orcid": "https://orcid.org/0000-0002-2543-3975",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [],
+        "raw_affiliation_strings": [
+          "585 Purdue Mall W Lafayette, IN 47907-2088"
+        ]
+      },
+      {
+        "name": "Hyunmin Park",
+        "openalex_author_id": "https://openalex.org/A5139288887",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Ulsan",
+            "ror": "https://ror.org/02c2f8975",
+            "country_code": "KR",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "93, Daehak-ro, Nam-gu, Ulsan, Republic of Korea Buidling 2 (Mechanical Engineering) Ulsan, 44610 Republic of Korea"
+        ]
+      },
+      {
+        "name": "Yuseop Sim",
+        "openalex_author_id": "https://openalex.org/A5139291730",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Louisiana at Lafayette",
+            "ror": "https://ror.org/01x8rc503",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "324 Ferry street, Room 201 Lafayette, IN 47901"
+        ]
+      },
+      {
+        "name": "Fengfeng Zhou",
+        "openalex_author_id": "https://openalex.org/A5008432697",
+        "orcid": "https://orcid.org/0000-0002-9334-638X",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Louisiana Tech University",
+            "ror": "https://ror.org/04q9esz89",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "505 Tech Dr. Rustion, LA 71272"
+        ]
+      },
+      {
+        "name": "Eunseob Kim",
+        "openalex_author_id": "https://openalex.org/A5036508826",
+        "orcid": "https://orcid.org/0000-0001-8391-944X",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Northwestern University",
+            "ror": "https://ror.org/00m6w7z96",
+            "country_code": "PH",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "465 Northwestern Ave West Lafayette, IN 47907"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Journal of Manufacturing Science and Engineering",
     "doi": "10.1115/1.4072228",
@@ -6243,8 +6338,8 @@
     "issn_l": "",
     "publisher": "ASME International",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7165762348",
     "openalex_work_id": "",
     "openalex_source_id": "",
     "venue_metrics": {},
@@ -8074,51 +8169,9 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [
-      {
-        "name": "Xianhua Tan",
-        "openalex_author_id": "https://openalex.org/A5110618619",
-        "orcid": "https://orcid.org/0000-0002-6285-6774",
-        "position": "first",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "Central South University",
-            "ror": "https://ror.org/00f1zfq44",
-            "country_code": "CN",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "School of Mechanical and Electrical Engineering, Central South University, Changsha, 410083, China",
-          "Central South University"
-        ]
-      },
-      {
-        "name": "Yongcheng Lin",
-        "openalex_author_id": null,
-        "orcid": null,
-        "position": "middle",
-        "is_corresponding": true,
-        "institutions": [],
-        "raw_affiliation_strings": [
-          "School of Mechanical and Electrical Engineering, Central South University, Changsha, 410083, China"
-        ]
-      },
-      {
-        "name": "Ming-Song Chen",
-        "openalex_author_id": "https://openalex.org/A5102865504",
-        "orcid": "https://orcid.org/0000-0003-3828-4996",
-        "position": "middle",
-        "is_corresponding": true,
-        "institutions": [],
-        "raw_affiliation_strings": [
-          "State Key Laboratory of Precision Manufacturing for Extreme Service Performance, Changsha, 410083, China"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
     "year": 2026,
     "venue": "The International Journal of Advanced Manufacturing Technology",
     "doi": "10.1007/s00170-026-18289-x",
@@ -8138,7 +8191,7 @@
     "issn_l": "",
     "publisher": "Springer Science and Business Media LLC",
     "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
+    "openalex_used_for": null,
     "openalex_crosscheck_work_id": "https://openalex.org/W4410432611",
     "openalex_work_id": "",
     "openalex_source_id": "",
@@ -11332,6 +11385,89 @@
     "first_added": "2026-06-12",
     "last_updated": "2026-06-25",
     "is_weekly_new": false
+  },
+  {
+    "id": "10.5592/co/cetra.2026.1839",
+    "title": "Leveraging Data-Driven Safety Assurance and Digital-Twin Validation for Safe and Reliable Autonomous Public Transport Systems",
+    "authors": [
+      "Tom Jansen",
+      "Rolf Graafland"
+    ],
+    "author_details": [
+      {
+        "name": "Tom Jansen",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Rolf Graafland",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "year": 2026,
+    "venue": "International Conference on Road and Rail Infrastructure",
+    "doi": "10.5592/co/cetra.2026.1839",
+    "url": "https://doi.org/10.5592/co/cetra.2026.1839",
+    "source": [
+      "Crossref"
+    ],
+    "metadata_source": "crossref",
+    "crossref_type": "proceedings-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "1848-9850"
+    ],
+    "issn_l": "",
+    "publisher": "University of Zagreb Faculty of Civil Engineering",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "is_core_venue": false,
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "categories": [
+      "Multi-material AM"
+    ],
+    "tags": [
+      "Digital Twins",
+      "Manufacturing automation"
+    ],
+    "relevance_score": 7,
+    "curation_priority": false,
+    "ai_summary_en": "1. Topic - Leveraging Data-Driven Safety Assurance and Digital-Twin Validation for Safe and Reliable Autonomous Public Transport Systems is a 2026 paper from International Conference on Road and Rail Infrastructure about Digital Twins and Manufacturing automation.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Digital Twins and Manufacturing automation.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Digital Twins and Manufacturing automation; current relevance score is 7/10.",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_en": "Relevant to the tracker through Digital Twins and Manufacturing automation; score: 7/10.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-06-25",
+    "last_updated": "2026-06-25",
+    "is_weekly_new": true
   },
   {
     "id": "10.1007/s00366-026-02334-0",
@@ -24782,10 +24918,10 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Assia Belbachir",
-        "openalex_author_id": "https://openalex.org/A5051482797",
-        "orcid": "https://orcid.org/0000-0002-1294-8478",
-        "position": "first",
+        "name": "Antonio M. Ortiz",
+        "openalex_author_id": "https://openalex.org/A5114032187",
+        "orcid": "https://orcid.org/0000-0002-7145-8241",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -36847,9 +36983,9 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Hyungseok Lee",
-        "openalex_author_id": "https://openalex.org/A5103070060",
-        "orcid": "https://orcid.org/0000-0003-0630-5772",
+        "name": "Minkyoung Lee",
+        "openalex_author_id": "https://openalex.org/A5049716312",
+        "orcid": null,
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -43202,9 +43338,52 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Zhihao Ren",
+        "openalex_author_id": "https://openalex.org/A5089290405",
+        "orcid": "https://orcid.org/0000-0002-4343-7072",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Chongqing University of Posts and Telecommunications",
+            "ror": "https://ror.org/03dgaqz26",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Integrated Circuits, Chongqing University of Posts and Telecommunications, Chongqing, 400065, China"
+        ]
+      },
+      {
+        "name": "Chengsong Yuan",
+        "openalex_author_id": "https://openalex.org/A5100563232",
+        "orcid": null,
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Army Medical University",
+            "ror": "https://ror.org/05w21nn13",
+            "country_code": "CN",
+            "type": "education"
+          },
+          {
+            "name": "Southwest Hospital",
+            "ror": "https://ror.org/02jn36537",
+            "country_code": "CN",
+            "type": "healthcare"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Sports Medicine, Southwest Hospital, Army Medical University, Chongqing, 400038, China"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Surface and Coatings Technology",
     "doi": "10.1016/j.surfcoat.2026.133710",
@@ -43223,8 +43402,8 @@
     "issn_l": "",
     "publisher": "Elsevier BV",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7165796206",
     "openalex_work_id": "",
     "openalex_source_id": "",
     "venue_metrics": {},
@@ -53464,7 +53643,7 @@
     "is_weekly_new": false
   },
   {
-    "id": "10.1002/aisy.70218",
+    "id": "10.1002/aisy.202500430",
     "title": "Toward More Autonomous Soft Robots: Development and Characterization of a 3D-Printed Pneumatic Contact Sensor for a Six-Legged Soft Robotic Walker",
     "authors": [
       "Philipp Auth",
@@ -53620,7 +53799,8 @@
         ],
         "raw_affiliation_strings": [
           "Cluster of Excellence livMatS @ FIT ‐ Freiburg Center for Interactive Materials and Bioinspired Technologies  79110 Freiburg i. Br. Germany",
-          "Plant Biomechanics Group Freiburg, Botanic Garden University of Freiburg  79104 Freiburg i. Br. Germany"
+          "Plant Biomechanics Group Freiburg, Botanic Garden University of Freiburg  79104 Freiburg i. Br. Germany",
+          "Plant Biomechanics Group Freiburg, Botanic Garden, University of Freiburg, 79104 Freiburg i. Br., Germany"
         ]
       }
     ],
@@ -53628,8 +53808,8 @@
     "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Advanced Intelligent Systems",
-    "doi": "10.1002/aisy.70218",
-    "url": "https://doi.org/10.1002/aisy.70218",
+    "doi": "10.1002/aisy.202500430",
+    "url": "https://doi.org/10.1002/aisy.202500430",
     "source": [
       "Crossref"
     ],
@@ -53646,7 +53826,7 @@
     "publisher": "Wiley",
     "openalex_checked": true,
     "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W7130522311",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4414949582",
     "openalex_work_id": "",
     "openalex_source_id": "",
     "venue_metrics": {},
@@ -53663,19 +53843,22 @@
     "venue_scope": "non-core",
     "core_source": "schema_placeholder_crossref_rebuild",
     "categories": [
-      "Multi-material AM"
+      "Multi-material AM",
+      "Functionally Graded AM"
     ],
     "tags": [
-      "Soft robotics",
-      "Manufacturing automation"
+      "soft robotics",
+      "pneumatic sensors",
+      "autonomous systems",
+      "3D printing"
     ],
     "relevance_score": 5,
     "curation_priority": false,
-    "ai_summary_en": "1. Topic - Toward More Autonomous Soft Robots: Development and Characterization of a 3D-Printed Pneumatic Contact Sensor for a Six-Legged Soft Robotic Walker is a 2026 paper from Advanced Intelligent Systems about Soft robotics and Manufacturing automation.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Soft robotics and Manufacturing automation.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Soft robotics and Manufacturing automation; current relevance score is 5/10.",
-    "summary_provider": "fallback",
-    "openai_summary_applied": false,
-    "relevance_note_en": "Relevant to the tracker through Soft robotics and Manufacturing automation; score: 5/10.",
-    "abstract_used_for_summary": false,
+    "ai_summary_en": "1. Topic - The paper discusses the development of a 3D-printed pneumatic contact sensor for a soft robotic walker.\n2. Problem - Current soft robots rely on electronic sensors, which complicate systems and limit adaptability in challenging environments.\n3. Method - The authors created an electronics-free sensory system using pneumatic logic gates integrated into a six-legged soft robot.\n4. Key Result - The robot demonstrated rapid sensor response times and the ability to walk autonomously while effectively detecting obstacles.\n5. Takeaway - This work advances the field of soft robotics by enhancing autonomy and adaptability through electronics-free control systems.",
+    "summary_provider": "openai",
+    "openai_summary_applied": true,
+    "relevance_note_en": "The summary captures the essence of the research on enhancing soft robot autonomy without electronics.",
+    "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
@@ -69303,7 +69486,7 @@
         "name": "Hong Wang",
         "openalex_author_id": null,
         "orcid": "https://orcid.org/0000-0001-6799-1732",
-        "position": "last",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -73293,9 +73476,9 @@
     ],
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "3D Printing and Additive Manufacturing",
-    "crossref_target_issn": "2329-7662",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
     "issn": [
       "2329-7662",
       "2329-7670"
@@ -75952,135 +76135,6 @@
     "openai_summary_applied": false,
     "relevance_note_en": "Relevant to the tracker through Metamaterials; score: 5/10.",
     "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "first_added": "2026-06-24",
-    "last_updated": "2026-06-25",
-    "is_weekly_new": true
-  },
-  {
-    "id": "10.1080/15376494.2025.2471033",
-    "title": "Design and additive manufacturing of metamaterials for orthopedic implants and its mechanical characterization",
-    "authors": [
-      "Chetana Madhukar Suryawanshi",
-      "Ravi Bhallamudi",
-      "Sushil Mishra"
-    ],
-    "author_details": [
-      {
-        "name": "Chetana Madhukar Suryawanshi",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Mechanical Engineering Department, Indian Institute of Technology Bombay"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Mechanical Engineering Department, Indian Institute of Technology Bombay"
-        ]
-      },
-      {
-        "name": "Ravi Bhallamudi",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Mechanical Engineering Department, Indian Institute of Technology Bombay"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Mechanical Engineering Department, Indian Institute of Technology Bombay"
-        ]
-      },
-      {
-        "name": "Sushil Mishra",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Mechanical Engineering Department, Indian Institute of Technology Bombay"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Mechanical Engineering Department, Indian Institute of Technology Bombay"
-        ]
-      }
-    ],
-    "corresponding_authors": [
-      {
-        "name": "Sushil Mishra",
-        "openalex_author_id": "https://openalex.org/A5032216219",
-        "orcid": "https://orcid.org/0000-0002-8302-0626",
-        "position": "last",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "Indian Institute of Technology Bombay",
-            "ror": "https://ror.org/02qyf5152",
-            "country_code": "IN",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Mechanical Engineering Department, Indian Institute of Technology Bombay"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "year": 2026,
-    "venue": "Mechanics of Advanced Materials and Structures",
-    "doi": "10.1080/15376494.2025.2471033",
-    "url": "https://doi.org/10.1080/15376494.2025.2471033",
-    "source": [
-      "Crossref"
-    ],
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "1537-6494",
-      "1537-6532"
-    ],
-    "issn_l": "",
-    "publisher": "Informa UK Limited",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4408196901",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "is_core_venue": false,
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "categories": [
-      "Multi-material AM"
-    ],
-    "tags": [
-      "Metamaterials"
-    ],
-    "relevance_score": 5,
-    "curation_priority": false,
-    "ai_summary_en": "1. Topic - Design and additive manufacturing of metamaterials for orthopedic implants and its mechanical characterization is a 2026 paper from Mechanics of Advanced Materials and Structures about Metamaterials.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Metamaterials.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Metamaterials; current relevance score is 5/10.",
-    "summary_provider": "fallback",
-    "openai_summary_applied": false,
-    "relevance_note_en": "Relevant to the tracker through Metamaterials; score: 5/10.",
-    "abstract_used_for_summary": false,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-24",
@@ -79953,8 +80007,8 @@
         ]
       },
       {
-        "name": "Luquan Ren",
-        "openalex_author_id": "https://openalex.org/A5133795267",
+        "name": "Lei Ren",
+        "openalex_author_id": "https://openalex.org/A5133749330",
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -85628,8 +85682,8 @@
         ]
       },
       {
-        "name": "Ishanathan Guteng",
-        "openalex_author_id": "https://openalex.org/A5120110580",
+        "name": "Victor Kehinde",
+        "openalex_author_id": "https://openalex.org/A5091964598",
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -85656,7 +85710,7 @@
         "name": "Erin Lavik",
         "openalex_author_id": "https://openalex.org/A5079335476",
         "orcid": "https://orcid.org/0000-0002-0644-744X",
-        "position": "last",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -101030,7 +101084,7 @@
     "publisher": "Japan Society of Mechanical Engineers",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7165765125",
     "openalex_work_id": "",
     "openalex_source_id": "",
     "venue_metrics": {},
@@ -102739,6 +102793,98 @@
     "is_weekly_new": false
   },
   {
+    "id": "10.1109/icca66035.2025.11430951",
+    "title": "Robotic Digital Twins in Smart Manufacturing: Resolving Real-Time Synchronisation Gaps",
+    "authors": [
+      "Loso Judijanto",
+      "Sri Nurhayati"
+    ],
+    "author_details": [
+      {
+        "name": "Loso Judijanto",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "IPOSS,Jakarta,Indonesia"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "IPOSS,Jakarta,Indonesia"
+        ]
+      },
+      {
+        "name": "Sri Nurhayati",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Community Education IKIP Siliwangi,Cimahi,Indonesia"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Community Education IKIP Siliwangi,Cimahi,Indonesia"
+        ]
+      }
+    ],
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "year": 2025,
+    "venue": "2025 International Conference on Computer and Applications (ICCA)",
+    "doi": "10.1109/icca66035.2025.11430951",
+    "url": "https://doi.org/10.1109/icca66035.2025.11430951",
+    "source": [
+      "Crossref"
+    ],
+    "metadata_source": "crossref",
+    "crossref_type": "proceedings-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [],
+    "issn_l": "",
+    "publisher": "IEEE",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "https://openalex.org/W7138024384",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "is_core_venue": false,
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "categories": [
+      "Multi-material AM"
+    ],
+    "tags": [
+      "Digital Twins"
+    ],
+    "relevance_score": 7,
+    "curation_priority": false,
+    "ai_summary_en": "1. Topic - Robotic Digital Twins in Smart Manufacturing: Resolving Real-Time Synchronisation Gaps is a 2025 paper from 2025 International Conference on Computer and Applications (ICCA) about Digital Twins.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Digital Twins.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Digital Twins; current relevance score is 7/10.",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_en": "Relevant to the tracker through Digital Twins; score: 7/10.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-06-25",
+    "last_updated": "2026-06-25",
+    "is_weekly_new": true
+  },
+  {
     "id": "10.1007/s00170-025-15190-x",
     "title": "Risk response capability assessment for the digital twin-based human-robot collaboration",
     "authors": [
@@ -102893,9 +103039,28 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Wuyi Ming",
+        "openalex_author_id": "https://openalex.org/A5065050407",
+        "orcid": "https://orcid.org/0000-0001-8402-9326",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Zhengzhou University of Light Industry",
+            "ror": "https://ror.org/05fwr8z16",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Correspondence to: Prof. Wuyi Ming, Henan Key Lab of Intelligent Manufacturing of Mechanical Equipment, Doctor of Engineering, Zhengzhou University of Light Industry, No.5 Dongfeng Road, Jin Shui District, Zhengzhou 450002, Henan, China. E-mail: mingwuyi@163.com"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2025,
     "venue": "Green Manufacturing Open",
     "doi": "10.20517/gmo.2024.120501",
@@ -102914,7 +103079,7 @@
     "issn_l": "",
     "publisher": "OAE Publishing Inc.",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4408241611",
     "openalex_work_id": "",
     "openalex_source_id": "",
@@ -107111,9 +107276,9 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Sichao Liu",
-        "openalex_author_id": "https://openalex.org/A5068371109",
-        "orcid": "https://orcid.org/0000-0002-1909-0507",
+        "name": "Cheng Zhang",
+        "openalex_author_id": "https://openalex.org/A5100769098",
+        "orcid": "https://orcid.org/0000-0001-8282-9901",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -122170,9 +122335,9 @@
     ],
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "Journal of Manufacturing Systems",
-    "crossref_target_issn": "0278-6125",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
     "issn": [
       "0278-6125"
     ],
@@ -125057,8 +125222,8 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Aoming Zhang",
-        "openalex_author_id": "https://openalex.org/A5111021439",
+        "name": "Zhangdong Chen",
+        "openalex_author_id": "https://openalex.org/A5070746638",
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -125075,9 +125240,9 @@
         ]
       },
       {
-        "name": "Xiaoqi Chen",
-        "openalex_author_id": "https://openalex.org/A5100704656",
-        "orcid": "https://orcid.org/0000-0003-3227-4607",
+        "name": "Di Wang",
+        "openalex_author_id": "https://openalex.org/A5100401383",
+        "orcid": "https://orcid.org/0000-0001-5727-2777",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -127818,6 +127983,188 @@
     "is_weekly_new": true
   },
   {
+    "id": "10.1080/0951192x.2025.2544550",
+    "title": "A digital twin approach for online reconfiguration of robotic manufacturing systems toward plug-and-produce",
+    "authors": [
+      "Ling Peng",
+      "Zhijian Yang",
+      "Xun Ye",
+      "Wenjun Xu",
+      "Ruifang Li"
+    ],
+    "author_details": [
+      {
+        "name": "Ling Peng",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Wuhan University of Technology"
+          },
+          {
+            "name": "China Ship Development and Design Center"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Wuhan University of Technology",
+          "China Ship Development and Design Center"
+        ]
+      },
+      {
+        "name": "Zhijian Yang",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Wuhan University of Technology"
+          },
+          {
+            "name": "Wuhan University of Technology"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Wuhan University of Technology",
+          "Wuhan University of Technology"
+        ]
+      },
+      {
+        "name": "Xun Ye",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Wuhan University of Technology"
+          },
+          {
+            "name": "Wuhan University of Technology"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Wuhan University of Technology",
+          "Wuhan University of Technology"
+        ]
+      },
+      {
+        "name": "Wenjun Xu",
+        "orcid": "https://orcid.org/0000-0001-5370-3437",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Wuhan University of Technology"
+          },
+          {
+            "name": "Wuhan University of Technology"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Wuhan University of Technology",
+          "Wuhan University of Technology"
+        ]
+      },
+      {
+        "name": "Ruifang Li",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Wuhan University of Technology"
+          },
+          {
+            "name": "Wuhan University of Technology"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Wuhan University of Technology",
+          "Wuhan University of Technology"
+        ]
+      }
+    ],
+    "corresponding_authors": [
+      {
+        "name": "Xun Ye",
+        "openalex_author_id": "https://openalex.org/A5103031212",
+        "orcid": "https://orcid.org/0000-0001-8132-8590",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Wuhan University of Technology",
+            "ror": "https://ror.org/03fe7t173",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Wuhan University of Technology",
+          "School of Information Engineering, Wuhan University of Technology, Wuhan, China",
+          "Hubei Key Laboratory of Broadband Wireless Communication and Sensor Networks, Wuhan University of Technology, Wuhan, China"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "year": 2025,
+    "venue": "International Journal of Computer Integrated Manufacturing",
+    "doi": "10.1080/0951192x.2025.2544550",
+    "url": "https://doi.org/10.1080/0951192x.2025.2544550",
+    "source": [
+      "Crossref"
+    ],
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "0951-192X",
+      "1362-3052"
+    ],
+    "issn_l": "",
+    "publisher": "Informa UK Limited",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4413434386",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "is_core_venue": false,
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "categories": [
+      "Multi-material AM"
+    ],
+    "tags": [
+      "Digital Twins",
+      "Robot-based Manufacturing"
+    ],
+    "relevance_score": 7,
+    "curation_priority": false,
+    "ai_summary_en": "1. Topic - A digital twin approach for online reconfiguration of robotic manufacturing systems toward plug-and-produce is a 2025 paper from International Journal of Computer Integrated Manufacturing about Digital Twins and Robot-based Manufacturing.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Digital Twins and Robot-based Manufacturing.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Digital Twins and Robot-based Manufacturing; current relevance score is 7/10.",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_en": "Relevant to the tracker through Digital Twins and Robot-based Manufacturing; score: 7/10.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-06-25",
+    "last_updated": "2026-06-25",
+    "is_weekly_new": true
+  },
+  {
     "id": "10.1016/j.mfglet.2025.06.149",
     "title": "A cognitive digital twin modeling method of robotic production line",
     "authors": [
@@ -130393,7 +130740,7 @@
     "publisher": "Japan Society of Mechanical Engineers",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7165789726",
     "openalex_work_id": "",
     "openalex_source_id": "",
     "venue_metrics": {},
@@ -130971,8 +131318,8 @@
       },
       {
         "name": "Wenzhuo Liu",
-        "openalex_author_id": "https://openalex.org/A5107441690",
-        "orcid": "https://orcid.org/0009-0004-3542-8418",
+        "openalex_author_id": null,
+        "orcid": null,
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -134257,9 +134604,9 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Zhicheng Cheng",
-        "openalex_author_id": "https://openalex.org/A5021709615",
-        "orcid": "https://orcid.org/0000-0001-5771-1872",
+        "name": "Xinyu Huang",
+        "openalex_author_id": "https://openalex.org/A5028148644",
+        "orcid": "https://orcid.org/0000-0002-5786-3101",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -159534,158 +159881,6 @@
     "is_weekly_new": false
   },
   {
-    "id": "10.1109/nmitcon65824.2025.11188115",
-    "title": "An Optimized Hybrid MPCNN Model Using Termite Alate Algorithm for Enhancing FDM 3D Printing Parameters in Multi-Material Fabrication",
-    "authors": [
-      "Dhiren Ramanbhai Patel",
-      "Putchakayala Yanna Reddy",
-      "T. G. Sakthivel",
-      "J. Immanuel Durai Raj",
-      "Sarthak Prasad Sahoo",
-      "A Sunny Kumar"
-    ],
-    "author_details": [
-      {
-        "name": "Dhiren Ramanbhai Patel",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Indus University,Dept. of Mechanical Engg.,Ahmedabad,India"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Indus University,Dept. of Mechanical Engg.,Ahmedabad,India"
-        ]
-      },
-      {
-        "name": "Putchakayala Yanna Reddy",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Bharat Institute of Engg., and Tech.,,Dept. of EEE,Ranga Reddy,India"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Bharat Institute of Engg., and Tech.,,Dept. of EEE,Ranga Reddy,India"
-        ]
-      },
-      {
-        "name": "T. G. Sakthivel",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Saveetha School of Engg.,Dept. of Mechanical Engg.,Chennai,India"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Saveetha School of Engg.,Dept. of Mechanical Engg.,Chennai,India"
-        ]
-      },
-      {
-        "name": "J. Immanuel Durai Raj",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "St. Joseph&#x0027;s Institute of Technology,Dept. of Mechanical Engg.,Chennai,India"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "St. Joseph&#x0027;s Institute of Technology,Dept. of Mechanical Engg.,Chennai,India"
-        ]
-      },
-      {
-        "name": "Sarthak Prasad Sahoo",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Centurion University of Technology and Management,Dept. of Mechanical Engg.,Bhubaneswar,India"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Centurion University of Technology and Management,Dept. of Mechanical Engg.,Bhubaneswar,India"
-        ]
-      },
-      {
-        "name": "A Sunny Kumar",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "GITAM Institute of Technology,Dept. of Mechanical Engg.,Chennai,India"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "GITAM Institute of Technology,Dept. of Mechanical Engg.,Chennai,India"
-        ]
-      }
-    ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
-    "year": 2025,
-    "venue": "2025 Third International Conference on Networks, Multimedia and Information Technology (NMITCON)",
-    "doi": "10.1109/nmitcon65824.2025.11188115",
-    "url": "https://doi.org/10.1109/nmitcon65824.2025.11188115",
-    "source": [
-      "Crossref"
-    ],
-    "metadata_source": "crossref",
-    "crossref_type": "proceedings-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [],
-    "issn_l": "",
-    "publisher": "IEEE",
-    "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "https://openalex.org/W4415034133",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "is_core_venue": false,
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "categories": [
-      "Multi-material AM"
-    ],
-    "tags": [
-      "FDM/Material extrusion"
-    ],
-    "relevance_score": 6,
-    "curation_priority": false,
-    "ai_summary_en": "1. Topic - An Optimized Hybrid MPCNN Model Using Termite Alate Algorithm for Enhancing FDM 3D Printing Parameters in Multi-Material Fabrication is a 2025 paper from 2025 Third International Conference on Networks, Multimedia and Information Technology (NMITCON) about FDM/Material extrusion.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to FDM/Material extrusion.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for FDM/Material extrusion; current relevance score is 6/10.",
-    "summary_provider": "fallback",
-    "openai_summary_applied": false,
-    "relevance_note_en": "Relevant to the tracker through FDM/Material extrusion; score: 6/10.",
-    "abstract_used_for_summary": false,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "first_added": "2026-06-24",
-    "last_updated": "2026-06-25",
-    "is_weekly_new": true
-  },
-  {
     "id": "10.1002/adma.202507503",
     "title": "All-3D-Printed Multi-Environment Modular Microrobots Powered by Large-Displacement Dielectric Elastomer Microactuators",
     "authors": [
@@ -164873,168 +165068,6 @@
     "is_weekly_new": true
   },
   {
-    "id": "10.1021/acsbiomaterials.4c01837",
-    "title": "Volumetric Additive Manufacturing for Cell Printing: Bridging Industry Adaptation and Regulatory Frontiers",
-    "authors": [
-      "Vidhi Mathur",
-      "Vinita Dsouza",
-      "Varadharajan Srinivasan",
-      "Kirthanashri S Vasanthan"
-    ],
-    "author_details": [
-      {
-        "name": "Vidhi Mathur",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Manipal Centre for Biotherapeutics Research, Manipal Academy of Higher Education, Manipal, 576104 Karnataka, India"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Manipal Centre for Biotherapeutics Research, Manipal Academy of Higher Education, Manipal, 576104 Karnataka, India"
-        ]
-      },
-      {
-        "name": "Vinita Dsouza",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Manipal Centre for Biotherapeutics Research, Manipal Academy of Higher Education, Manipal, 576104 Karnataka, India"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Manipal Centre for Biotherapeutics Research, Manipal Academy of Higher Education, Manipal, 576104 Karnataka, India"
-        ]
-      },
-      {
-        "name": "Varadharajan Srinivasan",
-        "orcid": "https://orcid.org/0000-0001-5527-1375",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Civil Engineering, Manipal Institute of Technology, Manipal Academy of Higher Education, Manipal, 576104 Karnataka, India"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Civil Engineering, Manipal Institute of Technology, Manipal Academy of Higher Education, Manipal, 576104 Karnataka, India"
-        ]
-      },
-      {
-        "name": "Kirthanashri S Vasanthan",
-        "orcid": "https://orcid.org/0000-0003-2115-153X",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Manipal Centre for Biotherapeutics Research, Manipal Academy of Higher Education, Manipal, 576104 Karnataka, India"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Manipal Centre for Biotherapeutics Research, Manipal Academy of Higher Education, Manipal, 576104 Karnataka, India"
-        ]
-      }
-    ],
-    "corresponding_authors": [
-      {
-        "name": "Varadharajan Srinivasan",
-        "openalex_author_id": "https://openalex.org/A5085787998",
-        "orcid": "https://orcid.org/0000-0001-5527-1375",
-        "position": "middle",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "Manipal Academy of Higher Education",
-            "ror": "https://ror.org/02xzytt36",
-            "country_code": "IN",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Civil Engineering, Manipal Institute of Technology, Manipal Academy of Higher Education, Manipal, 576104 Karnataka, India"
-        ]
-      },
-      {
-        "name": "Kirthanashri S. Vasanthan",
-        "openalex_author_id": "https://openalex.org/A5063348067",
-        "orcid": "https://orcid.org/0000-0003-2115-153X",
-        "position": "last",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "Manipal Academy of Higher Education",
-            "ror": "https://ror.org/02xzytt36",
-            "country_code": "IN",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Manipal Centre for Biotherapeutics Research, Manipal Academy of Higher Education, Manipal, 576104 Karnataka, India"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "year": 2025,
-    "venue": "ACS Biomaterials Science & Engineering",
-    "doi": "10.1021/acsbiomaterials.4c01837",
-    "url": "https://doi.org/10.1021/acsbiomaterials.4c01837",
-    "source": [
-      "Crossref"
-    ],
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2373-9878",
-      "2373-9878"
-    ],
-    "issn_l": "",
-    "publisher": "American Chemical Society (ACS)",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4406010202",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "is_core_venue": false,
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "categories": [
-      "Multi-material AM"
-    ],
-    "tags": [
-      "Volumetric AM"
-    ],
-    "relevance_score": 5,
-    "curation_priority": false,
-    "ai_summary_en": "1. Topic - Volumetric Additive Manufacturing for Cell Printing: Bridging Industry Adaptation and Regulatory Frontiers is a 2025 paper from ACS Biomaterials Science & Engineering about Volumetric AM.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Volumetric AM.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Volumetric AM; current relevance score is 5/10.",
-    "summary_provider": "fallback",
-    "openai_summary_applied": false,
-    "relevance_note_en": "Relevant to the tracker through Volumetric AM; score: 5/10.",
-    "abstract_used_for_summary": false,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "first_added": "2026-06-25",
-    "last_updated": "2026-06-25",
-    "is_weekly_new": true
-  },
-  {
     "id": "10.1038/s41467-025-59502-x",
     "title": "Visualization of photocuring and 4D printing with real-time phosphorescence",
     "authors": [
@@ -165979,9 +166012,9 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Ning Li",
-        "openalex_author_id": "https://openalex.org/A5089190523",
-        "orcid": "https://orcid.org/0000-0002-7994-9504",
+        "name": "Jing‐Feng Li",
+        "openalex_author_id": "https://openalex.org/A5100747643",
+        "orcid": "https://orcid.org/0000-0002-0185-0512",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -167264,8 +167297,8 @@
     "corresponding_authors": [
       {
         "name": "Xinyu Wang",
-        "openalex_author_id": null,
-        "orcid": null,
+        "openalex_author_id": "https://openalex.org/A5100352846",
+        "orcid": "https://orcid.org/0009-0001-2925-1466",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -167323,7 +167356,7 @@
         "name": "Xiaofeng Wang",
         "openalex_author_id": null,
         "orcid": "https://orcid.org/0000-0002-9913-1064",
-        "position": "middle",
+        "position": "last",
         "is_corresponding": true,
         "institutions": [
           {
@@ -171120,6 +171153,249 @@
     "first_added": "2026-06-12",
     "last_updated": "2026-06-25",
     "is_weekly_new": false
+  },
+  {
+    "id": "10.1038/s41563-025-02146-5",
+    "title": "Stiff and self-healing hydrogels by polymer entanglements in co-planar nanoconfinement",
+    "authors": [
+      "Chen Liang",
+      "Volodymyr Dudko",
+      "Olena Khoruzhenko",
+      "Xiaodan Hong",
+      "Zhong-Peng Lv",
+      "Isabell Tunn",
+      "Muhammad Umer",
+      "Jaakko V. I. Timonen",
+      "Markus B. Linder",
+      "Josef Breu",
+      "Olli Ikkala",
+      "Hang Zhang"
+    ],
+    "author_details": [
+      {
+        "name": "Chen Liang",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Volodymyr Dudko",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Olena Khoruzhenko",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Xiaodan Hong",
+        "orcid": "https://orcid.org/0000-0003-0007-9356",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Zhong-Peng Lv",
+        "orcid": "https://orcid.org/0000-0002-0868-5126",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Isabell Tunn",
+        "orcid": "https://orcid.org/0000-0003-0853-8908",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Muhammad Umer",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Jaakko V. I. Timonen",
+        "orcid": "https://orcid.org/0000-0002-5499-1482",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Markus B. Linder",
+        "orcid": "https://orcid.org/0000-0002-7271-6441",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Josef Breu",
+        "orcid": "https://orcid.org/0000-0002-2547-3950",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Olli Ikkala",
+        "orcid": "https://orcid.org/0000-0002-0470-1889",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Hang Zhang",
+        "orcid": "https://orcid.org/0000-0003-4949-3371",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_authors": [
+      {
+        "name": "Josef Breu",
+        "openalex_author_id": "https://openalex.org/A5069743496",
+        "orcid": "https://orcid.org/0000-0002-2547-3950",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Bavarian Polymer Institute",
+            "ror": "https://ror.org/054zwas39",
+            "country_code": "DE",
+            "type": "facility"
+          },
+          {
+            "name": "University of Bayreuth",
+            "ror": "https://ror.org/0234wmv40",
+            "country_code": "DE",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Bavarian Polymer Institute and Department of Chemistry, University of Bayreuth, Bayreuth, Germany. josef.breu@uni-bayreuth.de",
+          "Bavarian Polymer Institute and Department of Chemistry, University of Bayreuth, Bayreuth, Germany"
+        ]
+      },
+      {
+        "name": "Olli Ikkala",
+        "openalex_author_id": "https://openalex.org/A5048981642",
+        "orcid": "https://orcid.org/0000-0002-0470-1889",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Aalto University",
+            "ror": "https://ror.org/020hwjq30",
+            "country_code": "FI",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Center of Excellence in Life-Inspired Hybrid Materials (LIBER), Aalto University, Espoo, Finland. olli.ikkala@aalto.fi",
+          "Department of Applied Physics, Aalto University, Espoo, Finland. olli.ikkala@aalto.fi",
+          "Center of Excellence in Life-Inspired Hybrid Materials (LIBER), Aalto University, Espoo, Finland",
+          "Department of Applied Physics, Aalto University, Espoo, Finland"
+        ]
+      },
+      {
+        "name": "Hang Zhang",
+        "openalex_author_id": "https://openalex.org/A5049081481",
+        "orcid": "https://orcid.org/0000-0003-4949-3371",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Aalto University",
+            "ror": "https://ror.org/020hwjq30",
+            "country_code": "FI",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Center of Excellence in Life-Inspired Hybrid Materials (LIBER), Aalto University, Espoo, Finland. hang.zhang@aalto.fi",
+          "Department of Applied Physics, Aalto University, Espoo, Finland. hang.zhang@aalto.fi",
+          "Department of Bioproducts and Biosystems, School of Chemical Engineering, Aalto University, Espoo, Finland. hang.zhang@aalto.fi",
+          "Center of Excellence in Life-Inspired Hybrid Materials (LIBER), Aalto University, Espoo, Finland",
+          "Department of Applied Physics, Aalto University, Espoo, Finland",
+          "Department of Bioproducts and Biosystems, School of Chemical Engineering, Aalto University, Espoo, Finland"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "year": 2025,
+    "venue": "Nature Materials",
+    "doi": "10.1038/s41563-025-02146-5",
+    "url": "https://doi.org/10.1038/s41563-025-02146-5",
+    "source": [
+      "Crossref"
+    ],
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Nature Materials",
+    "crossref_target_issn": "1476-1122",
+    "issn": [
+      "1476-1122",
+      "1476-4660"
+    ],
+    "issn_l": "",
+    "publisher": "Springer Science and Business Media LLC",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4408234740",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "High-impact general journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "is_core_venue": true,
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "categories": [
+      "Multi-material AM"
+    ],
+    "tags": [
+      "Soft robotics"
+    ],
+    "relevance_score": 5,
+    "curation_priority": false,
+    "ai_summary_en": "1. Topic - Stiff and self-healing hydrogels by polymer entanglements in co-planar nanoconfinement is a 2025 paper from Nature Materials about Soft robotics.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Soft robotics.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Soft robotics; current relevance score is 5/10.",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_en": "Relevant to the tracker through Soft robotics; score: 5/10.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-06-25",
+    "last_updated": "2026-06-25",
+    "is_weekly_new": true
   },
   {
     "id": "10.1126/sciadv.aeb2289",
@@ -178890,171 +179166,6 @@
     "first_added": "2026-06-12",
     "last_updated": "2026-06-25",
     "is_weekly_new": false
-  },
-  {
-    "id": "10.3390/app15052576",
-    "title": "Parallel Fin Ray Soft Gripper with Embedded Mechano-Optical Force Sensor",
-    "authors": [
-      "Eduardo Navas",
-      "Daniel Rodríguez-Nieto",
-      "Alain Antonio Rodríguez-González",
-      "Roemi Fernández"
-    ],
-    "author_details": [
-      {
-        "name": "Eduardo Navas",
-        "orcid": "https://orcid.org/0000-0002-4314-4448",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Centre for Automation and Robotics, UPM-CSIC, Carretera CAMPO-REAL Km 0.2, Arganda del Rey, 28500 Madrid, Spain"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Centre for Automation and Robotics, UPM-CSIC, Carretera CAMPO-REAL Km 0.2, Arganda del Rey, 28500 Madrid, Spain"
-        ]
-      },
-      {
-        "name": "Daniel Rodríguez-Nieto",
-        "orcid": "https://orcid.org/0009-0004-5885-3783",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Centre for Automation and Robotics, UPM-CSIC, Carretera CAMPO-REAL Km 0.2, Arganda del Rey, 28500 Madrid, Spain"
-          },
-          {
-            "name": "PhD Program in Automation and Robotics, Polytechnic University of Madrid, Calle de José Gutiérrez Abascal 2, 28006 Madrid, Spain"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Centre for Automation and Robotics, UPM-CSIC, Carretera CAMPO-REAL Km 0.2, Arganda del Rey, 28500 Madrid, Spain",
-          "PhD Program in Automation and Robotics, Polytechnic University of Madrid, Calle de José Gutiérrez Abascal 2, 28006 Madrid, Spain"
-        ]
-      },
-      {
-        "name": "Alain Antonio Rodríguez-González",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Centre for Automation and Robotics, UPM-CSIC, Carretera CAMPO-REAL Km 0.2, Arganda del Rey, 28500 Madrid, Spain"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Centre for Automation and Robotics, UPM-CSIC, Carretera CAMPO-REAL Km 0.2, Arganda del Rey, 28500 Madrid, Spain"
-        ]
-      },
-      {
-        "name": "Roemi Fernández",
-        "orcid": "https://orcid.org/0000-0003-0552-5407",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Centre for Automation and Robotics, UPM-CSIC, Carretera CAMPO-REAL Km 0.2, Arganda del Rey, 28500 Madrid, Spain"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Centre for Automation and Robotics, UPM-CSIC, Carretera CAMPO-REAL Km 0.2, Arganda del Rey, 28500 Madrid, Spain"
-        ]
-      }
-    ],
-    "corresponding_authors": [
-      {
-        "name": "Eduardo Navas",
-        "openalex_author_id": "https://openalex.org/A5037396569",
-        "orcid": "https://orcid.org/0000-0002-4314-4448",
-        "position": "first",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "Centre for Automation and Robotics",
-            "ror": "https://ror.org/02wh02235",
-            "country_code": "ES",
-            "type": "facility"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Centre for Automation and Robotics, UPM-CSIC, Carretera CAMPO-REAL Km 0.2, Arganda del Rey, 28500 Madrid, Spain"
-        ]
-      },
-      {
-        "name": "Roemí Fernández",
-        "openalex_author_id": "https://openalex.org/A5046665645",
-        "orcid": "https://orcid.org/0000-0003-0552-5407",
-        "position": "last",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "Centre for Automation and Robotics",
-            "ror": "https://ror.org/02wh02235",
-            "country_code": "ES",
-            "type": "facility"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Centre for Automation and Robotics, UPM-CSIC, Carretera CAMPO-REAL Km 0.2, Arganda del Rey, 28500 Madrid, Spain"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "year": 2025,
-    "venue": "Applied Sciences",
-    "doi": "10.3390/app15052576",
-    "url": "https://doi.org/10.3390/app15052576",
-    "source": [
-      "Crossref"
-    ],
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2076-3417"
-    ],
-    "issn_l": "",
-    "publisher": "MDPI AG",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4408033902",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "is_core_venue": false,
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "categories": [
-      "Multi-material AM"
-    ],
-    "tags": [
-      "Soft robotics"
-    ],
-    "relevance_score": 5,
-    "curation_priority": false,
-    "ai_summary_en": "1. Topic - Parallel Fin Ray Soft Gripper with Embedded Mechano-Optical Force Sensor is a 2025 paper from Applied Sciences about Soft robotics.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Soft robotics.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Soft robotics; current relevance score is 5/10.",
-    "summary_provider": "fallback",
-    "openai_summary_applied": false,
-    "relevance_note_en": "Relevant to the tracker through Soft robotics; score: 5/10.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "first_added": "2026-06-25",
-    "last_updated": "2026-06-25",
-    "is_weekly_new": true
   },
   {
     "id": "10.1117/12.3048438",
@@ -189315,8 +189426,17 @@
         "orcid": "https://orcid.org/0000-0003-3141-0160",
         "position": "first",
         "is_corresponding": true,
-        "institutions": [],
-        "raw_affiliation_strings": []
+        "institutions": [
+          {
+            "name": "Adıyaman University",
+            "ror": "https://ror.org/02s4gkg68",
+            "country_code": "TR",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Adıyaman Üniversitesi"
+        ]
       }
     ],
     "corresponding_author_available": true,
@@ -208309,199 +208429,6 @@
     "is_weekly_new": false
   },
   {
-    "id": "10.1007/s40964-024-00734-6",
-    "title": "A comprehensive review on realization of self-cleaning surfaces by additive manufacturing",
-    "authors": [
-      "Thanseeha Sherin",
-      "Mallikarjuna Rao Motapothula",
-      "Goutam Kumar Dalapati",
-      "Seeram Ramakrishna",
-      "Sambasivam Sangaraju",
-      "Sabyasachi Chakrabortty",
-      "Satheesh Krishnamurthy",
-      "Siddhartha Ghosh"
-    ],
-    "author_details": [
-      {
-        "name": "Thanseeha Sherin",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Mallikarjuna Rao Motapothula",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Goutam Kumar Dalapati",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Seeram Ramakrishna",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Sambasivam Sangaraju",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Sabyasachi Chakrabortty",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Satheesh Krishnamurthy",
-        "orcid": "https://orcid.org/0000-0001-7237-9206",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Siddhartha Ghosh",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_authors": [
-      {
-        "name": "Sabyasachi Chakrabortty",
-        "openalex_author_id": "https://openalex.org/A5045617028",
-        "orcid": "https://orcid.org/0000-0002-2759-2208",
-        "position": "middle",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "SRM University",
-            "ror": "https://ror.org/037skf023",
-            "country_code": "IN",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Chemistry, SRM University AP Andhra Pradesh, Amaravati, Andhra Pradesh, 522502, India"
-        ]
-      },
-      {
-        "name": "Satheesh Krishnamurthy",
-        "openalex_author_id": "https://openalex.org/A5026318269",
-        "orcid": "https://orcid.org/0000-0001-7237-9206",
-        "position": "middle",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "University of Surrey",
-            "ror": "https://ror.org/00ks66431",
-            "country_code": "GB",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Advanced Technology Institute, Surrey Ion Beam Centre, University of Surrey, Guildford, GU2 7XH, UK"
-        ]
-      },
-      {
-        "name": "Siddhartha Ghosh",
-        "openalex_author_id": "https://openalex.org/A5101499236",
-        "orcid": "https://orcid.org/0000-0003-0550-8287",
-        "position": "last",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "SRM University",
-            "ror": "https://ror.org/037skf023",
-            "country_code": "IN",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Physics, SRM University AP Andhra Pradesh, Amaravati, Andhra Pradesh, 522502, India"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "year": 2025,
-    "venue": "Progress in Additive Manufacturing",
-    "doi": "10.1007/s40964-024-00734-6",
-    "url": "https://doi.org/10.1007/s40964-024-00734-6",
-    "source": [
-      "Crossref"
-    ],
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "Progress in Additive Manufacturing",
-    "crossref_target_issn": "2363-9512",
-    "issn": [
-      "2363-9512",
-      "2363-9520"
-    ],
-    "issn_l": "",
-    "publisher": "Springer Science and Business Media LLC",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4401298347",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Core manufacturing journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "is_core_venue": true,
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "categories": [
-      "Reviews and Surveys"
-    ],
-    "tags": [
-      "Vat photopolymerization",
-      "FDM/Material extrusion"
-    ],
-    "relevance_score": 5,
-    "curation_priority": false,
-    "ai_summary_en": "1. Topic - A comprehensive review on realization of self-cleaning surfaces by additive manufacturing is a 2025 paper from Progress in Additive Manufacturing about Vat photopolymerization and FDM/Material extrusion.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Vat photopolymerization and FDM/Material extrusion.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Vat photopolymerization and FDM/Material extrusion; current relevance score is 5/10.",
-    "summary_provider": "fallback",
-    "openai_summary_applied": false,
-    "relevance_note_en": "Relevant to the tracker through Vat photopolymerization and FDM/Material extrusion; score: 5/10.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "first_added": "2026-06-25",
-    "last_updated": "2026-06-25",
-    "is_weekly_new": true
-  },
-  {
     "id": "10.1007/s40964-024-00746-2",
     "title": "A TSP-based continuous path planning for additive manufacturing of concrete",
     "authors": [
@@ -221046,9 +220973,9 @@
     ],
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "International Journal of Advanced Manufacturing Technology",
-    "crossref_target_issn": "0268-3768",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
     "issn": [
       "0268-3768",
       "1433-3015"
@@ -230845,9 +230772,9 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Aoming Zhang",
-        "openalex_author_id": "https://openalex.org/A5111021439",
-        "orcid": null,
+        "name": "Xiaoqi Chen",
+        "openalex_author_id": "https://openalex.org/A5100704656",
+        "orcid": "https://orcid.org/0000-0003-3227-4607",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -231366,10 +231293,10 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Likun Wang",
-        "openalex_author_id": "https://openalex.org/A5100623561",
-        "orcid": "https://orcid.org/0000-0001-5646-9746",
-        "position": "middle",
+        "name": "Zi Wang",
+        "openalex_author_id": "https://openalex.org/A5100338326",
+        "orcid": "https://orcid.org/0000-0001-9081-7185",
+        "position": "first",
         "is_corresponding": true,
         "institutions": [
           {
@@ -232620,6 +232547,104 @@
     "first_added": "2026-06-12",
     "last_updated": "2026-06-25",
     "is_weekly_new": false
+  },
+  {
+    "id": "10.1201/9781032630748-4",
+    "title": "Digital Twin Technology Use Cases in Intelligent Manufacturing",
+    "authors": [
+      "Shuchi Sethi",
+      "Naeem Ahmad",
+      "Seema Rani",
+      "Misbah Anjum"
+    ],
+    "author_details": [
+      {
+        "name": "Shuchi Sethi",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Naeem Ahmad",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Seema Rani",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Misbah Anjum",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "year": 2024,
+    "venue": "Intelligent Manufacturing and Industry 4.0",
+    "doi": "10.1201/9781032630748-4",
+    "url": "https://doi.org/10.1201/9781032630748-4",
+    "source": [
+      "Crossref"
+    ],
+    "metadata_source": "crossref",
+    "crossref_type": "book-chapter",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [],
+    "issn_l": "",
+    "publisher": "CRC Press",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "https://openalex.org/W4403293739",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "is_core_venue": false,
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "categories": [
+      "Multi-material AM"
+    ],
+    "tags": [
+      "Digital Twins"
+    ],
+    "relevance_score": 7,
+    "curation_priority": false,
+    "ai_summary_en": "1. Topic - Digital Twin Technology Use Cases in Intelligent Manufacturing is a 2024 paper from Intelligent Manufacturing and Industry 4.0 about Digital Twins.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Digital Twins.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Digital Twins; current relevance score is 7/10.",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_en": "Relevant to the tracker through Digital Twins; score: 7/10.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-06-25",
+    "last_updated": "2026-06-25",
+    "is_weekly_new": true
   },
   {
     "id": "10.1115/imece2024-146882",
@@ -239758,6 +239783,174 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
+    "last_updated": "2026-06-25",
+    "is_weekly_new": true
+  },
+  {
+    "id": "10.1115/imece2024-145821",
+    "title": "A Novel Digital Twin Model to Support Intelligent Robotic Manufacturing System According to Industry 4.0 Trends",
+    "authors": [
+      "David A. Guerra-Zubiaga",
+      "Melody Colani",
+      "Gershom Richards",
+      "Katrina Cavens",
+      "Logan Block",
+      "George Olliff",
+      "Murat Aksu"
+    ],
+    "author_details": [
+      {
+        "name": "David A. Guerra-Zubiaga",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Kennesaw State University , , ,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Kennesaw State University , , ,"
+        ]
+      },
+      {
+        "name": "Melody Colani",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Kennesaw State University , , ,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Kennesaw State University , , ,"
+        ]
+      },
+      {
+        "name": "Gershom Richards",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Kennesaw State University , , ,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Kennesaw State University , , ,"
+        ]
+      },
+      {
+        "name": "Katrina Cavens",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Kennesaw State University , , ,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Kennesaw State University , , ,"
+        ]
+      },
+      {
+        "name": "Logan Block",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Kennesaw State University , , ,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Kennesaw State University , , ,"
+        ]
+      },
+      {
+        "name": "George Olliff",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Kennesaw State University , , ,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Kennesaw State University , , ,"
+        ]
+      },
+      {
+        "name": "Murat Aksu",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "National Institute of Standards and Technologies , , ,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "National Institute of Standards and Technologies , , ,"
+        ]
+      }
+    ],
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "year": 2024,
+    "venue": "Volume 2: Advanced Manufacturing",
+    "doi": "10.1115/imece2024-145821",
+    "url": "https://doi.org/10.1115/imece2024-145821",
+    "source": [
+      "Crossref"
+    ],
+    "metadata_source": "crossref",
+    "crossref_type": "proceedings-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [],
+    "issn_l": "",
+    "publisher": "American Society of Mechanical Engineers",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "https://openalex.org/W4406764666",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "is_core_venue": false,
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "categories": [
+      "Multi-material AM"
+    ],
+    "tags": [
+      "Digital Twins",
+      "Robot-based Manufacturing"
+    ],
+    "relevance_score": 7,
+    "curation_priority": false,
+    "ai_summary_en": "1. Topic - A Novel Digital Twin Model to Support Intelligent Robotic Manufacturing System According to Industry 4.0 Trends is a 2024 paper from Volume 2: Advanced Manufacturing about Digital Twins and Robot-based Manufacturing.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Digital Twins and Robot-based Manufacturing.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Digital Twins and Robot-based Manufacturing; current relevance score is 7/10.",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_en": "Relevant to the tracker through Digital Twins and Robot-based Manufacturing; score: 7/10.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-06-25",
     "last_updated": "2026-06-25",
     "is_weekly_new": true
   },
@@ -268294,8 +268487,8 @@
         "raw_affiliation_strings": [
           "Department of Orthopedics, Central Hospital of Dalian University of Technology, Dalian, People’s Republic of China",
           "School of Materials Science and Engineering, Dalian University of Technology, Dalian, People’s Republic of China",
-          "Department of Orthopedics, Central Hospital of Dalian University of Technology, Dalian, People's Republic of China",
-          "School of Materials Science and Engineering, Dalian University of Technology, Dalian, People's Republic of China"
+          "School of Materials Science and Engineering, Dalian University of Technology, Dalian, People's Republic of China",
+          "Department of Orthopedics, Central Hospital of Dalian University of Technology, Dalian, People's Republic of China"
         ]
       },
       {
@@ -268328,7 +268521,7 @@
         "name": "Hao Zhang",
         "openalex_author_id": null,
         "orcid": null,
-        "position": "last",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -276470,6 +276663,152 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
+    "last_updated": "2026-06-25",
+    "is_weekly_new": true
+  },
+  {
+    "id": "10.1038/s41467-024-46498-z",
+    "title": "Programming mechanics in knitted materials, stitch by stitch",
+    "authors": [
+      "Krishma Singal",
+      "Michael S. Dimitriyev",
+      "Sarah E. Gonzalez",
+      "A. Patrick Cachine",
+      "Sam Quinn",
+      "Elisabetta A. Matsumoto"
+    ],
+    "author_details": [
+      {
+        "name": "Krishma Singal",
+        "orcid": "https://orcid.org/0000-0002-6101-1884",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Michael S. Dimitriyev",
+        "orcid": "https://orcid.org/0000-0001-6384-3644",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Sarah E. Gonzalez",
+        "orcid": "https://orcid.org/0000-0001-7054-6517",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "A. Patrick Cachine",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Sam Quinn",
+        "orcid": "https://orcid.org/0000-0002-5043-3934",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Elisabetta A. Matsumoto",
+        "orcid": "https://orcid.org/0000-0002-1173-5163",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_authors": [
+      {
+        "name": "Elisabetta A. Matsumoto",
+        "openalex_author_id": "https://openalex.org/A5002678020",
+        "orcid": "https://orcid.org/0000-0002-1173-5163",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Hiroshima University",
+            "ror": "https://ror.org/03t78wx29",
+            "country_code": "JP",
+            "type": "education"
+          },
+          {
+            "name": "Georgia Institute of Technology",
+            "ror": "https://ror.org/01zkghx44",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "International Institute for Sustainability with Knotted Chiral Meta Matter (WPI-SKCM2), Hiroshima University, Higashihiroshima, 739-8526, Japan. sabetta@gatech.edu",
+          "School of Physics, Georgia Institute of Technology, Atlanta, GA, 30332, USA. sabetta@gatech.edu",
+          "International Institute for Sustainability with Knotted Chiral Meta Matter (WPI-SKCM2), Hiroshima University, Higashihiroshima, 739-8526, Japan"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "year": 2024,
+    "venue": "Nature Communications",
+    "doi": "10.1038/s41467-024-46498-z",
+    "url": "https://doi.org/10.1038/s41467-024-46498-z",
+    "source": [
+      "Crossref"
+    ],
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Nature Communications",
+    "crossref_target_issn": "2041-1723",
+    "issn": [
+      "2041-1723"
+    ],
+    "issn_l": "",
+    "publisher": "Springer Science and Business Media LLC",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4393112043",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "High-impact general journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "is_core_venue": true,
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "categories": [
+      "Multi-material AM"
+    ],
+    "tags": [
+      "Metamaterials",
+      "Soft robotics"
+    ],
+    "relevance_score": 5,
+    "curation_priority": false,
+    "ai_summary_en": "1. Topic - Programming mechanics in knitted materials, stitch by stitch is a 2024 paper from Nature Communications about Metamaterials and Soft robotics.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Metamaterials and Soft robotics.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Metamaterials and Soft robotics; current relevance score is 5/10.",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_en": "Relevant to the tracker through Metamaterials and Soft robotics; score: 5/10.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-06-25",
     "last_updated": "2026-06-25",
     "is_weekly_new": true
   },
@@ -298581,9 +298920,9 @@
         ]
       },
       {
-        "name": "Bo Li",
-        "openalex_author_id": "https://openalex.org/A5100628411",
-        "orcid": "https://orcid.org/0000-0001-5633-936X",
+        "name": "Ji Zhou",
+        "openalex_author_id": "https://openalex.org/A5063427028",
+        "orcid": "https://orcid.org/0000-0003-1502-2504",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -302598,7 +302937,7 @@
     "is_weekly_new": true
   },
   {
-    "id": "10.1002/marc.202470023",
+    "id": "10.1002/marc.202300717",
     "title": "A Molecular Rheology Dynamics Study on 3D Printing of Liquid Crystal Elastomers",
     "authors": [
       "Senay Ustunel",
@@ -302614,84 +302953,232 @@
     "author_details": [
       {
         "name": "Senay Ustunel",
-        "orcid": "",
+        "orcid": "https://orcid.org/0000-0001-7860-3870",
         "position": "first",
         "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
+        "institutions": [
+          {
+            "name": "Materials Science Graduate Program Kent State University  Kent OH 44240 USA"
+          },
+          {
+            "name": "Advanced Materials and Liquid Crystal Institute Kent State University  Kent OH 44240 USA"
+          },
+          {
+            "name": "Department of Biological Sciences Kent State University Kent State University  Kent OH 44240 USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Materials Science Graduate Program Kent State University  Kent OH 44240 USA",
+          "Advanced Materials and Liquid Crystal Institute Kent State University  Kent OH 44240 USA",
+          "Department of Biological Sciences Kent State University Kent State University  Kent OH 44240 USA"
+        ]
       },
       {
         "name": "Harsh Pandya",
         "orcid": "",
         "position": "additional",
         "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
+        "institutions": [
+          {
+            "name": "School of Polymer Science and Polymer Engineering University of Akron  Akron OH 44325 USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Polymer Science and Polymer Engineering University of Akron  Akron OH 44325 USA"
+        ]
       },
       {
         "name": "Marianne E. Prévôt",
-        "orcid": "",
+        "orcid": "https://orcid.org/0000-0002-1828-414X",
         "position": "additional",
         "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
+        "institutions": [
+          {
+            "name": "Advanced Materials and Liquid Crystal Institute Kent State University  Kent OH 44240 USA"
+          },
+          {
+            "name": "Department of Chemistry and Biochemistry Kent State University Kent State University  Kent OH 44240 USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Advanced Materials and Liquid Crystal Institute Kent State University  Kent OH 44240 USA",
+          "Department of Chemistry and Biochemistry Kent State University Kent State University  Kent OH 44240 USA"
+        ]
       },
       {
         "name": "Gisele Pegorin",
         "orcid": "",
         "position": "additional",
         "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
+        "institutions": [
+          {
+            "name": "Materials Science Graduate Program Kent State University  Kent OH 44240 USA"
+          },
+          {
+            "name": "Advanced Materials and Liquid Crystal Institute Kent State University  Kent OH 44240 USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Materials Science Graduate Program Kent State University  Kent OH 44240 USA",
+          "Advanced Materials and Liquid Crystal Institute Kent State University  Kent OH 44240 USA"
+        ]
       },
       {
         "name": "Faeze Shiralipour",
-        "orcid": "",
+        "orcid": "https://orcid.org/0000-0001-8987-2240",
         "position": "additional",
         "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
+        "institutions": [
+          {
+            "name": "Materials Science Graduate Program Kent State University  Kent OH 44240 USA"
+          },
+          {
+            "name": "Advanced Materials and Liquid Crystal Institute Kent State University  Kent OH 44240 USA"
+          },
+          {
+            "name": "Department of Biological Sciences Kent State University Kent State University  Kent OH 44240 USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Materials Science Graduate Program Kent State University  Kent OH 44240 USA",
+          "Advanced Materials and Liquid Crystal Institute Kent State University  Kent OH 44240 USA",
+          "Department of Biological Sciences Kent State University Kent State University  Kent OH 44240 USA"
+        ]
       },
       {
         "name": "Rajib Paul",
         "orcid": "",
         "position": "additional",
         "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
+        "institutions": [
+          {
+            "name": "Advanced Materials and Liquid Crystal Institute Kent State University  Kent OH 44240 USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Advanced Materials and Liquid Crystal Institute Kent State University  Kent OH 44240 USA"
+        ]
       },
       {
         "name": "Robert J. Clements",
-        "orcid": "",
+        "orcid": "https://orcid.org/0000-0002-9349-1990",
         "position": "additional",
         "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
+        "institutions": [
+          {
+            "name": "Advanced Materials and Liquid Crystal Institute Kent State University  Kent OH 44240 USA"
+          },
+          {
+            "name": "Biomedical Sciences Program Kent State University Kent State University  Kent OH 44240 USA"
+          },
+          {
+            "name": "Brain Health Research Institute Kent State University Kent State University  Kent OH 44240 USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Advanced Materials and Liquid Crystal Institute Kent State University  Kent OH 44240 USA",
+          "Biomedical Sciences Program Kent State University Kent State University  Kent OH 44240 USA",
+          "Brain Health Research Institute Kent State University Kent State University  Kent OH 44240 USA"
+        ]
       },
       {
         "name": "Fardin Khabaz",
-        "orcid": "",
+        "orcid": "https://orcid.org/0000-0002-6879-8587",
         "position": "additional",
         "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
+        "institutions": [
+          {
+            "name": "School of Polymer Science and Polymer Engineering University of Akron  Akron OH 44325 USA"
+          },
+          {
+            "name": "Department of Chemical Biomolecular and Corrosion Engineering University of Akron  Akron OH 44325 USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Polymer Science and Polymer Engineering University of Akron  Akron OH 44325 USA",
+          "Department of Chemical Biomolecular and Corrosion Engineering University of Akron  Akron OH 44325 USA"
+        ]
       },
       {
         "name": "Elda Hegmann",
-        "orcid": "",
+        "orcid": "https://orcid.org/0000-0003-3287-5103",
         "position": "additional",
         "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
+        "institutions": [
+          {
+            "name": "Materials Science Graduate Program Kent State University  Kent OH 44240 USA"
+          },
+          {
+            "name": "Advanced Materials and Liquid Crystal Institute Kent State University  Kent OH 44240 USA"
+          },
+          {
+            "name": "Department of Biological Sciences Kent State University Kent State University  Kent OH 44240 USA"
+          },
+          {
+            "name": "Biomedical Sciences Program Kent State University Kent State University  Kent OH 44240 USA"
+          },
+          {
+            "name": "Brain Health Research Institute Kent State University Kent State University  Kent OH 44240 USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Materials Science Graduate Program Kent State University  Kent OH 44240 USA",
+          "Advanced Materials and Liquid Crystal Institute Kent State University  Kent OH 44240 USA",
+          "Department of Biological Sciences Kent State University Kent State University  Kent OH 44240 USA",
+          "Biomedical Sciences Program Kent State University Kent State University  Kent OH 44240 USA",
+          "Brain Health Research Institute Kent State University Kent State University  Kent OH 44240 USA"
+        ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Fardin Khabaz",
+        "openalex_author_id": "https://openalex.org/A5067616114",
+        "orcid": "https://orcid.org/0000-0002-6879-8587",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Akron",
+            "ror": "https://ror.org/02kyckx55",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Chemical Biomolecular and Corrosion Engineering University of Akron  Akron OH 44325 USA",
+          "School of Polymer Science and Polymer Engineering University of Akron  Akron OH 44325 USA"
+        ]
+      },
+      {
+        "name": "Elda Hegmann",
+        "openalex_author_id": "https://openalex.org/A5078979765",
+        "orcid": "https://orcid.org/0000-0003-3287-5103",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Kent State University",
+            "ror": "https://ror.org/049pfb863",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Advanced Materials and Liquid Crystal Institute Kent State University  Kent OH 44240 USA",
+          "Biomedical Sciences Program Kent State University Kent State University  Kent OH 44240 USA",
+          "Brain Health Research Institute Kent State University Kent State University  Kent OH 44240 USA",
+          "Department of Biological Sciences Kent State University Kent State University  Kent OH 44240 USA",
+          "Materials Science Graduate Program Kent State University  Kent OH 44240 USA"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2024,
     "venue": "Macromolecular Rapid Communications",
-    "doi": "10.1002/marc.202470023",
-    "url": "https://doi.org/10.1002/marc.202470023",
+    "doi": "10.1002/marc.202300717",
+    "url": "https://doi.org/10.1002/marc.202300717",
     "source": [
       "Crossref"
     ],
@@ -302707,8 +303194,8 @@
     "issn_l": "",
     "publisher": "Wiley",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "https://openalex.org/W4399435380",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4392508950",
     "openalex_work_id": "",
     "openalex_source_id": "",
     "venue_metrics": {},
@@ -302728,20 +303215,21 @@
       "Multi-material AM"
     ],
     "tags": [
-      "LCE"
+      "LCE",
+      "Soft robotics"
     ],
     "relevance_score": 5,
     "curation_priority": false,
-    "ai_summary_en": "1. Topic - A Molecular Rheology Dynamics Study on 3D Printing of Liquid Crystal Elastomers is a 2024 paper from Macromolecular Rapid Communications about LCE.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to LCE.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for LCE; current relevance score is 5/10.",
+    "ai_summary_en": "1. Topic - A Molecular Rheology Dynamics Study on 3D Printing of Liquid Crystal Elastomers is a 2024 paper from Macromolecular Rapid Communications about LCE and Soft robotics.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to LCE and Soft robotics.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for LCE and Soft robotics; current relevance score is 5/10.",
     "summary_provider": "fallback",
     "openai_summary_applied": false,
-    "relevance_note_en": "Relevant to the tracker through LCE; score: 5/10.",
-    "abstract_used_for_summary": false,
+    "relevance_note_en": "Relevant to the tracker through LCE and Soft robotics; score: 5/10.",
+    "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "first_added": "2026-06-19",
+    "first_added": "2026-06-12",
     "last_updated": "2026-06-25",
-    "is_weekly_new": true
+    "is_weekly_new": false
   },
   {
     "id": "10.3390/mi15010158",
@@ -311381,8 +311869,8 @@
           "Engineering Technology Research Center for Rapid Manufacturing of Shaanxi Province, Xi'an Jiaotong University, Xi'an, People’s Republic of China",
           "School of Mechanical Engineering, Xi'an Jiaotong University, Xi'an, People’s Republic of China",
           "State Key Laboratory for Manufacturing System Engineering, Xi'an Jiaotong University, Xi'an, People’s Republic of China",
-          "School of Mechanical Engineering, Xi'an Jiaotong University, Xi'an, People's Republic of China",
           "State Key Laboratory for Manufacturing System Engineering, Xi'an Jiaotong University, Xi'an, People's Republic of China",
+          "School of Mechanical Engineering, Xi'an Jiaotong University, Xi'an, People's Republic of China",
           "Engineering Technology Research Center for Rapid Manufacturing of Shaanxi Province, Xi'an Jiaotong University, Xi'an, People's Republic of China"
         ]
       },
@@ -311390,7 +311878,7 @@
         "name": "Ling Wang",
         "openalex_author_id": "https://openalex.org/A5115592675",
         "orcid": "https://orcid.org/0000-0002-5176-7469",
-        "position": "middle",
+        "position": "last",
         "is_corresponding": true,
         "institutions": [
           {

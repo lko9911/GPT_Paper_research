@@ -1793,6 +1793,32 @@
       "Toolpath Planning",
       "Graph Search / Path Planning"
     ],
+    "corresponding_authors": [
+      {
+        "name": "Siying Chen",
+        "is_corresponding": true
+      },
+      {
+        "name": "Xingyu Fu",
+        "is_corresponding": true
+      },
+      {
+        "name": "Hyunmin Park",
+        "is_corresponding": true
+      },
+      {
+        "name": "Yuseop Sim",
+        "is_corresponding": true
+      },
+      {
+        "name": "Fengfeng Zhou",
+        "is_corresponding": true
+      },
+      {
+        "name": "Eunseob Kim",
+        "is_corresponding": true
+      }
+    ],
     "curation_priority": false,
     "doi": "10.1115/1.4072228",
     "first_added": "2026-06-24",
@@ -2319,20 +2345,6 @@
     ],
     "categories": [
       "Multi-material AM"
-    ],
-    "corresponding_authors": [
-      {
-        "name": "Xianhua Tan",
-        "is_corresponding": true
-      },
-      {
-        "name": "Yongcheng Lin",
-        "is_corresponding": true
-      },
-      {
-        "name": "Ming-Song Chen",
-        "is_corresponding": true
-      }
     ],
     "curation_priority": false,
     "doi": "10.1007/s00170-026-18289-x",
@@ -3304,6 +3316,37 @@
     "title": "Leveraging Digital Twin Technologies for Resource-Efficient Manufacturing in Circular Economy Models",
     "url": "https://doi.org/10.2139/ssrn.6318000",
     "venue": "",
+    "year": 2026,
+    "status": "active"
+  },
+  {
+    "authors": [
+      "Tom Jansen",
+      "Rolf Graafland"
+    ],
+    "categories": [
+      "Multi-material AM"
+    ],
+    "curation_priority": false,
+    "doi": "10.5592/co/cetra.2026.1839",
+    "first_added": "2026-06-25",
+    "id": "10.5592/co/cetra.2026.1839",
+    "is_core_venue": false,
+    "is_weekly_new": true,
+    "last_updated": "2026-06-25",
+    "openai_summary_applied": false,
+    "relevance_score": 7,
+    "source": [
+      "Crossref"
+    ],
+    "summary_provider": "fallback",
+    "tags": [
+      "Digital Twins",
+      "Manufacturing automation"
+    ],
+    "title": "Leveraging Data-Driven Safety Assurance and Digital-Twin Validation for Safe and Reliable Autonomous Public Transport Systems",
+    "url": "https://doi.org/10.5592/co/cetra.2026.1839",
+    "venue": "International Conference on Road and Rail Infrastructure",
     "year": 2026,
     "status": "active"
   },
@@ -7193,7 +7236,7 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Assia Belbachir",
+        "name": "Antonio M. Ortiz",
         "is_corresponding": true
       },
       {
@@ -10435,7 +10478,7 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Hyungseok Lee",
+        "name": "Minkyoung Lee",
         "is_corresponding": true
       },
       {
@@ -11982,6 +12025,16 @@
     ],
     "categories": [
       "Functionally Graded AM"
+    ],
+    "corresponding_authors": [
+      {
+        "name": "Zhihao Ren",
+        "is_corresponding": true
+      },
+      {
+        "name": "Chengsong Yuan",
+        "is_corresponding": true
+      }
     ],
     "curation_priority": false,
     "doi": "10.1016/j.surfcoat.2026.133710",
@@ -14753,7 +14806,8 @@
       "Falk Tauber"
     ],
     "categories": [
-      "Multi-material AM"
+      "Multi-material AM",
+      "Functionally Graded AM"
     ],
     "corresponding_authors": [
       {
@@ -14762,24 +14816,26 @@
       }
     ],
     "curation_priority": false,
-    "doi": "10.1002/aisy.70218",
+    "doi": "10.1002/aisy.202500430",
     "first_added": "2026-06-19",
-    "id": "10.1002/aisy.70218",
+    "id": "10.1002/aisy.202500430",
     "is_core_venue": false,
     "is_weekly_new": true,
     "last_updated": "2026-06-25",
-    "openai_summary_applied": false,
+    "openai_summary_applied": true,
     "relevance_score": 5,
     "source": [
       "Crossref"
     ],
-    "summary_provider": "fallback",
+    "summary_provider": "openai",
     "tags": [
-      "Soft robotics",
-      "Manufacturing automation"
+      "soft robotics",
+      "pneumatic sensors",
+      "autonomous systems",
+      "3D printing"
     ],
     "title": "Toward More Autonomous Soft Robots: Development and Characterization of a 3D-Printed Pneumatic Contact Sensor for a Six-Legged Soft Robotic Walker",
-    "url": "https://doi.org/10.1002/aisy.70218",
+    "url": "https://doi.org/10.1002/aisy.202500430",
     "venue": "Advanced Intelligent Systems",
     "year": 2026,
     "status": "active"
@@ -20116,43 +20172,6 @@
   },
   {
     "authors": [
-      "Chetana Madhukar Suryawanshi",
-      "Ravi Bhallamudi",
-      "Sushil Mishra"
-    ],
-    "categories": [
-      "Multi-material AM"
-    ],
-    "corresponding_authors": [
-      {
-        "name": "Sushil Mishra",
-        "is_corresponding": true
-      }
-    ],
-    "curation_priority": false,
-    "doi": "10.1080/15376494.2025.2471033",
-    "first_added": "2026-06-24",
-    "id": "10.1080/15376494.2025.2471033",
-    "is_core_venue": false,
-    "is_weekly_new": true,
-    "last_updated": "2026-06-25",
-    "openai_summary_applied": false,
-    "relevance_score": 5,
-    "source": [
-      "Crossref"
-    ],
-    "summary_provider": "fallback",
-    "tags": [
-      "Metamaterials"
-    ],
-    "title": "Design and additive manufacturing of metamaterials for orthopedic implants and its mechanical characterization",
-    "url": "https://doi.org/10.1080/15376494.2025.2471033",
-    "venue": "Mechanics of Advanced Materials and Structures",
-    "year": 2026,
-    "status": "active"
-  },
-  {
-    "authors": [
       "Basil Mohammed Al-Hadithi",
       "Carlos Pastor",
       "Tian Yao Lin"
@@ -21081,7 +21100,7 @@
         "is_corresponding": true
       },
       {
-        "name": "Luquan Ren",
+        "name": "Lei Ren",
         "is_corresponding": true
       },
       {
@@ -22483,7 +22502,7 @@
         "is_corresponding": true
       },
       {
-        "name": "Ishanathan Guteng",
+        "name": "Victor Kehinde",
         "is_corresponding": true
       },
       {
@@ -26855,6 +26874,36 @@
   },
   {
     "authors": [
+      "Loso Judijanto",
+      "Sri Nurhayati"
+    ],
+    "categories": [
+      "Multi-material AM"
+    ],
+    "curation_priority": false,
+    "doi": "10.1109/icca66035.2025.11430951",
+    "first_added": "2026-06-25",
+    "id": "10.1109/icca66035.2025.11430951",
+    "is_core_venue": false,
+    "is_weekly_new": true,
+    "last_updated": "2026-06-25",
+    "openai_summary_applied": false,
+    "relevance_score": 7,
+    "source": [
+      "Crossref"
+    ],
+    "summary_provider": "fallback",
+    "tags": [
+      "Digital Twins"
+    ],
+    "title": "Robotic Digital Twins in Smart Manufacturing: Resolving Real-Time Synchronisation Gaps",
+    "url": "https://doi.org/10.1109/icca66035.2025.11430951",
+    "venue": "2025 International Conference on Computer and Applications (ICCA)",
+    "year": 2025,
+    "status": "active"
+  },
+  {
+    "authors": [
       "Xin Liu",
       "Gongfa Li",
       "Feng Xiang",
@@ -26899,6 +26948,12 @@
     ],
     "categories": [
       "Reviews and Surveys"
+    ],
+    "corresponding_authors": [
+      {
+        "name": "Wuyi Ming",
+        "is_corresponding": true
+      }
     ],
     "curation_priority": false,
     "doi": "10.20517/gmo.2024.120501",
@@ -28197,7 +28252,7 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Sichao Liu",
+        "name": "Cheng Zhang",
         "is_corresponding": true
       },
       {
@@ -33604,11 +33659,11 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Aoming Zhang",
+        "name": "Zhangdong Chen",
         "is_corresponding": true
       },
       {
-        "name": "Xiaoqi Chen",
+        "name": "Di Wang",
         "is_corresponding": true
       },
       {
@@ -34391,6 +34446,46 @@
     "title": "A digital twin approach for weld penetration prediction of tig welding with dual ellipsoid heat source",
     "url": "https://doi.org/10.1007/s10845-024-02431-1",
     "venue": "Journal of Intelligent Manufacturing",
+    "year": 2025,
+    "status": "active"
+  },
+  {
+    "authors": [
+      "Ling Peng",
+      "Zhijian Yang",
+      "Xun Ye",
+      "Wenjun Xu",
+      "Ruifang Li"
+    ],
+    "categories": [
+      "Multi-material AM"
+    ],
+    "corresponding_authors": [
+      {
+        "name": "Xun Ye",
+        "is_corresponding": true
+      }
+    ],
+    "curation_priority": false,
+    "doi": "10.1080/0951192x.2025.2544550",
+    "first_added": "2026-06-25",
+    "id": "10.1080/0951192x.2025.2544550",
+    "is_core_venue": false,
+    "is_weekly_new": true,
+    "last_updated": "2026-06-25",
+    "openai_summary_applied": false,
+    "relevance_score": 7,
+    "source": [
+      "Crossref"
+    ],
+    "summary_provider": "fallback",
+    "tags": [
+      "Digital Twins",
+      "Robot-based Manufacturing"
+    ],
+    "title": "A digital twin approach for online reconfiguration of robotic manufacturing systems toward plug-and-produce",
+    "url": "https://doi.org/10.1080/0951192x.2025.2544550",
+    "venue": "International Journal of Computer Integrated Manufacturing",
     "year": 2025,
     "status": "active"
   },
@@ -36198,7 +36293,7 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Zhicheng Cheng",
+        "name": "Xinyu Huang",
         "is_corresponding": true
       },
       {
@@ -43014,40 +43109,6 @@
   },
   {
     "authors": [
-      "Dhiren Ramanbhai Patel",
-      "Putchakayala Yanna Reddy",
-      "T. G. Sakthivel",
-      "J. Immanuel Durai Raj",
-      "Sarthak Prasad Sahoo",
-      "A Sunny Kumar"
-    ],
-    "categories": [
-      "Multi-material AM"
-    ],
-    "curation_priority": false,
-    "doi": "10.1109/nmitcon65824.2025.11188115",
-    "first_added": "2026-06-24",
-    "id": "10.1109/nmitcon65824.2025.11188115",
-    "is_core_venue": false,
-    "is_weekly_new": true,
-    "last_updated": "2026-06-25",
-    "openai_summary_applied": false,
-    "relevance_score": 6,
-    "source": [
-      "Crossref"
-    ],
-    "summary_provider": "fallback",
-    "tags": [
-      "FDM/Material extrusion"
-    ],
-    "title": "An Optimized Hybrid MPCNN Model Using Termite Alate Algorithm for Enhancing FDM 3D Printing Parameters in Multi-Material Fabrication",
-    "url": "https://doi.org/10.1109/nmitcon65824.2025.11188115",
-    "venue": "2025 Third International Conference on Networks, Multimedia and Information Technology (NMITCON)",
-    "year": 2025,
-    "status": "active"
-  },
-  {
-    "authors": [
       "Won Jun Song",
       "Yong‐Woo Kang",
       "Yun Hyeok Lee",
@@ -44446,48 +44507,6 @@
   },
   {
     "authors": [
-      "Vidhi Mathur",
-      "Vinita Dsouza",
-      "Varadharajan Srinivasan",
-      "Kirthanashri S Vasanthan"
-    ],
-    "categories": [
-      "Multi-material AM"
-    ],
-    "corresponding_authors": [
-      {
-        "name": "Varadharajan Srinivasan",
-        "is_corresponding": true
-      },
-      {
-        "name": "Kirthanashri S. Vasanthan",
-        "is_corresponding": true
-      }
-    ],
-    "curation_priority": false,
-    "doi": "10.1021/acsbiomaterials.4c01837",
-    "first_added": "2026-06-25",
-    "id": "10.1021/acsbiomaterials.4c01837",
-    "is_core_venue": false,
-    "is_weekly_new": true,
-    "last_updated": "2026-06-25",
-    "openai_summary_applied": false,
-    "relevance_score": 5,
-    "source": [
-      "Crossref"
-    ],
-    "summary_provider": "fallback",
-    "tags": [
-      "Volumetric AM"
-    ],
-    "title": "Volumetric Additive Manufacturing for Cell Printing: Bridging Industry Adaptation and Regulatory Frontiers",
-    "url": "https://doi.org/10.1021/acsbiomaterials.4c01837",
-    "venue": "ACS Biomaterials Science & Engineering",
-    "year": 2025,
-    "status": "active"
-  },
-  {
-    "authors": [
       "Fan Gu",
       "Mengxing Ji",
       "Lisha Zhang",
@@ -44734,7 +44753,7 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Ning Li",
+        "name": "Jing‐Feng Li",
         "is_corresponding": true
       },
       {
@@ -45917,6 +45936,60 @@
     "title": "Stimuli in 4D Printing of Foods",
     "url": "https://doi.org/10.1002/9781394305285.ch7",
     "venue": "4D Printing of Foods",
+    "year": 2025,
+    "status": "active"
+  },
+  {
+    "authors": [
+      "Chen Liang",
+      "Volodymyr Dudko",
+      "Olena Khoruzhenko",
+      "Xiaodan Hong",
+      "Zhong-Peng Lv",
+      "Isabell Tunn",
+      "Muhammad Umer",
+      "Jaakko V. I. Timonen",
+      "Markus B. Linder",
+      "Josef Breu",
+      "Olli Ikkala",
+      "Hang Zhang"
+    ],
+    "categories": [
+      "Multi-material AM"
+    ],
+    "corresponding_authors": [
+      {
+        "name": "Josef Breu",
+        "is_corresponding": true
+      },
+      {
+        "name": "Olli Ikkala",
+        "is_corresponding": true
+      },
+      {
+        "name": "Hang Zhang",
+        "is_corresponding": true
+      }
+    ],
+    "curation_priority": false,
+    "doi": "10.1038/s41563-025-02146-5",
+    "first_added": "2026-06-25",
+    "id": "10.1038/s41563-025-02146-5",
+    "is_core_venue": true,
+    "is_weekly_new": true,
+    "last_updated": "2026-06-25",
+    "openai_summary_applied": false,
+    "relevance_score": 5,
+    "source": [
+      "Crossref"
+    ],
+    "summary_provider": "fallback",
+    "tags": [
+      "Soft robotics"
+    ],
+    "title": "Stiff and self-healing hydrogels by polymer entanglements in co-planar nanoconfinement",
+    "url": "https://doi.org/10.1038/s41563-025-02146-5",
+    "venue": "Nature Materials",
     "year": 2025,
     "status": "active"
   },
@@ -47879,48 +47952,6 @@
     "title": "Path Planning Design for Robot Based Non-Planar Additive Manufacturing Case Study: Coronary Stent",
     "url": "https://doi.org/10.1109/icmerr64601.2025.10949923",
     "venue": "2025 9th International Conference on Mechanical Engineering and Robotics Research (ICMERR)",
-    "year": 2025,
-    "status": "active"
-  },
-  {
-    "authors": [
-      "Eduardo Navas",
-      "Daniel Rodríguez-Nieto",
-      "Alain Antonio Rodríguez-González",
-      "Roemi Fernández"
-    ],
-    "categories": [
-      "Multi-material AM"
-    ],
-    "corresponding_authors": [
-      {
-        "name": "Eduardo Navas",
-        "is_corresponding": true
-      },
-      {
-        "name": "Roemí Fernández",
-        "is_corresponding": true
-      }
-    ],
-    "curation_priority": false,
-    "doi": "10.3390/app15052576",
-    "first_added": "2026-06-25",
-    "id": "10.3390/app15052576",
-    "is_core_venue": false,
-    "is_weekly_new": true,
-    "last_updated": "2026-06-25",
-    "openai_summary_applied": false,
-    "relevance_score": 5,
-    "source": [
-      "Crossref"
-    ],
-    "summary_provider": "fallback",
-    "tags": [
-      "Soft robotics"
-    ],
-    "title": "Parallel Fin Ray Soft Gripper with Embedded Mechano-Optical Force Sensor",
-    "url": "https://doi.org/10.3390/app15052576",
-    "venue": "Applied Sciences",
     "year": 2025,
     "status": "active"
   },
@@ -55345,57 +55376,6 @@
   },
   {
     "authors": [
-      "Thanseeha Sherin",
-      "Mallikarjuna Rao Motapothula",
-      "Goutam Kumar Dalapati",
-      "Seeram Ramakrishna",
-      "Sambasivam Sangaraju",
-      "Sabyasachi Chakrabortty",
-      "Satheesh Krishnamurthy",
-      "Siddhartha Ghosh"
-    ],
-    "categories": [
-      "Reviews and Surveys"
-    ],
-    "corresponding_authors": [
-      {
-        "name": "Sabyasachi Chakrabortty",
-        "is_corresponding": true
-      },
-      {
-        "name": "Satheesh Krishnamurthy",
-        "is_corresponding": true
-      },
-      {
-        "name": "Siddhartha Ghosh",
-        "is_corresponding": true
-      }
-    ],
-    "curation_priority": false,
-    "doi": "10.1007/s40964-024-00734-6",
-    "first_added": "2026-06-25",
-    "id": "10.1007/s40964-024-00734-6",
-    "is_core_venue": true,
-    "is_weekly_new": true,
-    "last_updated": "2026-06-25",
-    "openai_summary_applied": false,
-    "relevance_score": 5,
-    "source": [
-      "Crossref"
-    ],
-    "summary_provider": "fallback",
-    "tags": [
-      "Vat photopolymerization",
-      "FDM/Material extrusion"
-    ],
-    "title": "A comprehensive review on realization of self-cleaning surfaces by additive manufacturing",
-    "url": "https://doi.org/10.1007/s40964-024-00734-6",
-    "venue": "Progress in Additive Manufacturing",
-    "year": 2025,
-    "status": "active"
-  },
-  {
-    "authors": [
       "Akshay Sahu",
       "Biranchi Panda"
     ],
@@ -61831,7 +61811,7 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Aoming Zhang",
+        "name": "Xiaoqi Chen",
         "is_corresponding": true
       },
       {
@@ -61997,7 +61977,7 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Likun Wang",
+        "name": "Zi Wang",
         "is_corresponding": true
       },
       {
@@ -62408,6 +62388,38 @@
     "title": "Digital Twin Technology in Manufacturing: Tools for Real-Time Process Optimization",
     "url": "https://doi.org/10.62311/nesx/rb978-81-979057-7-3",
     "venue": "",
+    "year": 2024,
+    "status": "active"
+  },
+  {
+    "authors": [
+      "Shuchi Sethi",
+      "Naeem Ahmad",
+      "Seema Rani",
+      "Misbah Anjum"
+    ],
+    "categories": [
+      "Multi-material AM"
+    ],
+    "curation_priority": false,
+    "doi": "10.1201/9781032630748-4",
+    "first_added": "2026-06-25",
+    "id": "10.1201/9781032630748-4",
+    "is_core_venue": false,
+    "is_weekly_new": true,
+    "last_updated": "2026-06-25",
+    "openai_summary_applied": false,
+    "relevance_score": 7,
+    "source": [
+      "Crossref"
+    ],
+    "summary_provider": "fallback",
+    "tags": [
+      "Digital Twins"
+    ],
+    "title": "Digital Twin Technology Use Cases in Intelligent Manufacturing",
+    "url": "https://doi.org/10.1201/9781032630748-4",
+    "venue": "Intelligent Manufacturing and Industry 4.0",
     "year": 2024,
     "status": "active"
   },
@@ -64570,6 +64582,42 @@
     "title": "A Self-Driving Lab for Nano-and Advanced Materials Synthesis",
     "url": "https://doi.org/10.26434/chemrxiv-2024-f13l1",
     "venue": "",
+    "year": 2024,
+    "status": "active"
+  },
+  {
+    "authors": [
+      "David A. Guerra-Zubiaga",
+      "Melody Colani",
+      "Gershom Richards",
+      "Katrina Cavens",
+      "Logan Block",
+      "George Olliff",
+      "Murat Aksu"
+    ],
+    "categories": [
+      "Multi-material AM"
+    ],
+    "curation_priority": false,
+    "doi": "10.1115/imece2024-145821",
+    "first_added": "2026-06-25",
+    "id": "10.1115/imece2024-145821",
+    "is_core_venue": false,
+    "is_weekly_new": true,
+    "last_updated": "2026-06-25",
+    "openai_summary_applied": false,
+    "relevance_score": 7,
+    "source": [
+      "Crossref"
+    ],
+    "summary_provider": "fallback",
+    "tags": [
+      "Digital Twins",
+      "Robot-based Manufacturing"
+    ],
+    "title": "A Novel Digital Twin Model to Support Intelligent Robotic Manufacturing System According to Industry 4.0 Trends",
+    "url": "https://doi.org/10.1115/imece2024-145821",
+    "venue": "Volume 2: Advanced Manufacturing",
     "year": 2024,
     "status": "active"
   },
@@ -74691,6 +74739,47 @@
   },
   {
     "authors": [
+      "Krishma Singal",
+      "Michael S. Dimitriyev",
+      "Sarah E. Gonzalez",
+      "A. Patrick Cachine",
+      "Sam Quinn",
+      "Elisabetta A. Matsumoto"
+    ],
+    "categories": [
+      "Multi-material AM"
+    ],
+    "corresponding_authors": [
+      {
+        "name": "Elisabetta A. Matsumoto",
+        "is_corresponding": true
+      }
+    ],
+    "curation_priority": false,
+    "doi": "10.1038/s41467-024-46498-z",
+    "first_added": "2026-06-25",
+    "id": "10.1038/s41467-024-46498-z",
+    "is_core_venue": true,
+    "is_weekly_new": true,
+    "last_updated": "2026-06-25",
+    "openai_summary_applied": false,
+    "relevance_score": 5,
+    "source": [
+      "Crossref"
+    ],
+    "summary_provider": "fallback",
+    "tags": [
+      "Metamaterials",
+      "Soft robotics"
+    ],
+    "title": "Programming mechanics in knitted materials, stitch by stitch",
+    "url": "https://doi.org/10.1038/s41467-024-46498-z",
+    "venue": "Nature Communications",
+    "year": 2024,
+    "status": "active"
+  },
+  {
+    "authors": [
       "Huiru Wang",
       "Qingbo Lai",
       "Dingcong Zhang",
@@ -80612,7 +80701,7 @@
         "is_corresponding": true
       },
       {
-        "name": "Bo Li",
+        "name": "Ji Zhou",
         "is_corresponding": true
       },
       {
@@ -81707,12 +81796,22 @@
     "categories": [
       "Multi-material AM"
     ],
+    "corresponding_authors": [
+      {
+        "name": "Fardin Khabaz",
+        "is_corresponding": true
+      },
+      {
+        "name": "Elda Hegmann",
+        "is_corresponding": true
+      }
+    ],
     "curation_priority": false,
-    "doi": "10.1002/marc.202470023",
-    "first_added": "2026-06-19",
-    "id": "10.1002/marc.202470023",
+    "doi": "10.1002/marc.202300717",
+    "first_added": "2026-06-12",
+    "id": "10.1002/marc.202300717",
     "is_core_venue": false,
-    "is_weekly_new": true,
+    "is_weekly_new": false,
     "last_updated": "2026-06-25",
     "openai_summary_applied": false,
     "relevance_score": 5,
@@ -81721,10 +81820,11 @@
     ],
     "summary_provider": "fallback",
     "tags": [
-      "LCE"
+      "LCE",
+      "Soft robotics"
     ],
     "title": "A Molecular Rheology Dynamics Study on 3D Printing of Liquid Crystal Elastomers",
-    "url": "https://doi.org/10.1002/marc.202470023",
+    "url": "https://doi.org/10.1002/marc.202300717",
     "venue": "Macromolecular Rapid Communications",
     "year": 2024,
     "status": "active"

@@ -1,4 +1,57 @@
 {
+  "10.1016/b978-0-443-15487-4.00007-8": {
+    "author_details": [
+      {
+        "name": "Longqiu Li",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Zhiyuan Huang",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "book-chapter",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [],
+    "issn_l": "",
+    "publisher": "Elsevier",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "https://openalex.org/W4394994460",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The paper discusses the application of vat photopolymerization in 3D printing ceramics.\n2. Problem - It addresses the challenges associated with achieving high-quality ceramic parts through additive manufacturing.\n3. Method - The authors review various techniques and advancements in vat photopolymerization tailored for ceramic materials.\n4. Key Result - The findings highlight significant improvements in the mechanical properties and resolution of ceramic components produced via this method.\n5. Takeaway - Vat photopolymerization presents a promising approach for enhancing the production of ceramic parts in 3D printing.",
+    "relevance_note_en": "The summary captures the essence of the paper's focus on ceramic 3D printing using vat photopolymerization.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "id": "10.1016/b978-0-443-15487-4.00007-8"
+  },
   "10.1016/b978-0-443-15487-4.00006-6": {
     "author_details": [
       {
@@ -7243,6 +7296,93 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "id": "10.1117/12.3008523"
+  },
+  "10.1038/s41467-024-46498-z": {
+    "author_details": [
+      {
+        "name": "Krishma Singal",
+        "orcid": "https://orcid.org/0000-0002-6101-1884",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Michael S. Dimitriyev",
+        "orcid": "https://orcid.org/0000-0001-6384-3644",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Sarah E. Gonzalez",
+        "orcid": "https://orcid.org/0000-0001-7054-6517",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "A. Patrick Cachine",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Sam Quinn",
+        "orcid": "https://orcid.org/0000-0002-5043-3934",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Elisabetta A. Matsumoto",
+        "orcid": "https://orcid.org/0000-0002-1173-5163",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Nature Communications",
+    "crossref_target_issn": "2041-1723",
+    "issn": [
+      "2041-1723"
+    ],
+    "issn_l": "",
+    "publisher": "Springer Science and Business Media LLC",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4393112043",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "High-impact general journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - Programming mechanics in knitted materials, stitch by stitch is a 2024 paper from Nature Communications about Metamaterials and Soft robotics.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Metamaterials and Soft robotics.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Metamaterials and Soft robotics; current relevance score is 5/10.",
+    "relevance_note_en": "Relevant to the tracker through Metamaterials and Soft robotics; score: 5/10.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "id": "10.1038/s41467-024-46498-z"
   },
   "10.2139/ssrn.4988168": {
     "author_details": [
@@ -24257,83 +24397,189 @@
     "pdf_stored": false,
     "id": "10.1089/soro.2023.0102"
   },
-  "10.1002/marc.202470023": {
+  "10.1002/marc.202300717": {
     "author_details": [
       {
         "name": "Senay Ustunel",
-        "orcid": "",
+        "orcid": "https://orcid.org/0000-0001-7860-3870",
         "position": "first",
         "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
+        "institutions": [
+          {
+            "name": "Materials Science Graduate Program Kent State University  Kent OH 44240 USA"
+          },
+          {
+            "name": "Advanced Materials and Liquid Crystal Institute Kent State University  Kent OH 44240 USA"
+          },
+          {
+            "name": "Department of Biological Sciences Kent State University Kent State University  Kent OH 44240 USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Materials Science Graduate Program Kent State University  Kent OH 44240 USA",
+          "Advanced Materials and Liquid Crystal Institute Kent State University  Kent OH 44240 USA",
+          "Department of Biological Sciences Kent State University Kent State University  Kent OH 44240 USA"
+        ]
       },
       {
         "name": "Harsh Pandya",
         "orcid": "",
         "position": "additional",
         "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
+        "institutions": [
+          {
+            "name": "School of Polymer Science and Polymer Engineering University of Akron  Akron OH 44325 USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Polymer Science and Polymer Engineering University of Akron  Akron OH 44325 USA"
+        ]
       },
       {
         "name": "Marianne E. Prévôt",
-        "orcid": "",
+        "orcid": "https://orcid.org/0000-0002-1828-414X",
         "position": "additional",
         "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
+        "institutions": [
+          {
+            "name": "Advanced Materials and Liquid Crystal Institute Kent State University  Kent OH 44240 USA"
+          },
+          {
+            "name": "Department of Chemistry and Biochemistry Kent State University Kent State University  Kent OH 44240 USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Advanced Materials and Liquid Crystal Institute Kent State University  Kent OH 44240 USA",
+          "Department of Chemistry and Biochemistry Kent State University Kent State University  Kent OH 44240 USA"
+        ]
       },
       {
         "name": "Gisele Pegorin",
         "orcid": "",
         "position": "additional",
         "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
+        "institutions": [
+          {
+            "name": "Materials Science Graduate Program Kent State University  Kent OH 44240 USA"
+          },
+          {
+            "name": "Advanced Materials and Liquid Crystal Institute Kent State University  Kent OH 44240 USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Materials Science Graduate Program Kent State University  Kent OH 44240 USA",
+          "Advanced Materials and Liquid Crystal Institute Kent State University  Kent OH 44240 USA"
+        ]
       },
       {
         "name": "Faeze Shiralipour",
-        "orcid": "",
+        "orcid": "https://orcid.org/0000-0001-8987-2240",
         "position": "additional",
         "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
+        "institutions": [
+          {
+            "name": "Materials Science Graduate Program Kent State University  Kent OH 44240 USA"
+          },
+          {
+            "name": "Advanced Materials and Liquid Crystal Institute Kent State University  Kent OH 44240 USA"
+          },
+          {
+            "name": "Department of Biological Sciences Kent State University Kent State University  Kent OH 44240 USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Materials Science Graduate Program Kent State University  Kent OH 44240 USA",
+          "Advanced Materials and Liquid Crystal Institute Kent State University  Kent OH 44240 USA",
+          "Department of Biological Sciences Kent State University Kent State University  Kent OH 44240 USA"
+        ]
       },
       {
         "name": "Rajib Paul",
         "orcid": "",
         "position": "additional",
         "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
+        "institutions": [
+          {
+            "name": "Advanced Materials and Liquid Crystal Institute Kent State University  Kent OH 44240 USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Advanced Materials and Liquid Crystal Institute Kent State University  Kent OH 44240 USA"
+        ]
       },
       {
         "name": "Robert J. Clements",
-        "orcid": "",
+        "orcid": "https://orcid.org/0000-0002-9349-1990",
         "position": "additional",
         "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
+        "institutions": [
+          {
+            "name": "Advanced Materials and Liquid Crystal Institute Kent State University  Kent OH 44240 USA"
+          },
+          {
+            "name": "Biomedical Sciences Program Kent State University Kent State University  Kent OH 44240 USA"
+          },
+          {
+            "name": "Brain Health Research Institute Kent State University Kent State University  Kent OH 44240 USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Advanced Materials and Liquid Crystal Institute Kent State University  Kent OH 44240 USA",
+          "Biomedical Sciences Program Kent State University Kent State University  Kent OH 44240 USA",
+          "Brain Health Research Institute Kent State University Kent State University  Kent OH 44240 USA"
+        ]
       },
       {
         "name": "Fardin Khabaz",
-        "orcid": "",
+        "orcid": "https://orcid.org/0000-0002-6879-8587",
         "position": "additional",
         "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
+        "institutions": [
+          {
+            "name": "School of Polymer Science and Polymer Engineering University of Akron  Akron OH 44325 USA"
+          },
+          {
+            "name": "Department of Chemical Biomolecular and Corrosion Engineering University of Akron  Akron OH 44325 USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Polymer Science and Polymer Engineering University of Akron  Akron OH 44325 USA",
+          "Department of Chemical Biomolecular and Corrosion Engineering University of Akron  Akron OH 44325 USA"
+        ]
       },
       {
         "name": "Elda Hegmann",
-        "orcid": "",
+        "orcid": "https://orcid.org/0000-0003-3287-5103",
         "position": "additional",
         "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
+        "institutions": [
+          {
+            "name": "Materials Science Graduate Program Kent State University  Kent OH 44240 USA"
+          },
+          {
+            "name": "Advanced Materials and Liquid Crystal Institute Kent State University  Kent OH 44240 USA"
+          },
+          {
+            "name": "Department of Biological Sciences Kent State University Kent State University  Kent OH 44240 USA"
+          },
+          {
+            "name": "Biomedical Sciences Program Kent State University Kent State University  Kent OH 44240 USA"
+          },
+          {
+            "name": "Brain Health Research Institute Kent State University Kent State University  Kent OH 44240 USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Materials Science Graduate Program Kent State University  Kent OH 44240 USA",
+          "Advanced Materials and Liquid Crystal Institute Kent State University  Kent OH 44240 USA",
+          "Department of Biological Sciences Kent State University Kent State University  Kent OH 44240 USA",
+          "Biomedical Sciences Program Kent State University Kent State University  Kent OH 44240 USA",
+          "Brain Health Research Institute Kent State University Kent State University  Kent OH 44240 USA"
+        ]
       }
     ],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
     "crossref_collection_route": "keyword_query",
@@ -24346,8 +24592,8 @@
     "issn_l": "",
     "publisher": "Wiley",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "https://openalex.org/W4399435380",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4392508950",
     "openalex_work_id": "",
     "openalex_source_id": "",
     "venue_metrics": {},
@@ -24362,12 +24608,12 @@
     "core_status": "non-core",
     "venue_scope": "non-core",
     "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - A Molecular Rheology Dynamics Study on 3D Printing of Liquid Crystal Elastomers is a 2024 paper from Macromolecular Rapid Communications about LCE.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to LCE.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for LCE; current relevance score is 5/10.",
-    "relevance_note_en": "Relevant to the tracker through LCE; score: 5/10.",
-    "abstract_used_for_summary": false,
+    "ai_summary_en": "1. Topic - A Molecular Rheology Dynamics Study on 3D Printing of Liquid Crystal Elastomers is a 2024 paper from Macromolecular Rapid Communications about LCE and Soft robotics.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to LCE and Soft robotics.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for LCE and Soft robotics; current relevance score is 5/10.",
+    "relevance_note_en": "Relevant to the tracker through LCE and Soft robotics; score: 5/10.",
+    "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "id": "10.1002/marc.202470023"
+    "id": "10.1002/marc.202300717"
   },
   "10.3390/mi15010158": {
     "author_details": [
@@ -25037,171 +25283,5 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "id": "10.1080/17452759.2024.2406408"
-  },
-  "10.1016/j.jmapro.2024.04.017": {
-    "author_details": [
-      {
-        "name": "Rafael Braga da Cunha",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Louise Brasileiro Quirino Brito",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Pankaj Agrawal",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Gustavo de Figueiredo Brito",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Tomás Jeferson Alves de Mélo",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "Journal of Manufacturing Processes",
-    "crossref_target_issn": "1526-6125",
-    "issn": [
-      "1526-6125"
-    ],
-    "issn_l": "",
-    "publisher": "Elsevier BV",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4394018565",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Core manufacturing journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - 4D printing of shape memory polyethylene terephthalate glycol/thermoplastic polyurethane (PETG/TPU) blends is a 2024 paper from Journal of Manufacturing Processes about 4D printing.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to 4D printing.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for 4D printing; current relevance score is 5/10.",
-    "relevance_note_en": "Relevant to the tracker through 4D printing; score: 5/10.",
-    "abstract_used_for_summary": false,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "id": "10.1016/j.jmapro.2024.04.017"
-  },
-  "10.1016/j.matdes.2024.112725": {
-    "author_details": [
-      {
-        "name": "Lorenzo Bonetti",
-        "orcid": "https://orcid.org/0000-0003-3724-225X",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Daniele Natali",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Stefano Pandini",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Massimo Messori",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Maurizio Toselli",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Giulia Scalet",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "Materials & Design",
-    "crossref_target_issn": "0264-1275",
-    "issn": [
-      "0264-1275"
-    ],
-    "issn_l": "",
-    "publisher": "Elsevier BV",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4391486648",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The study focuses on 4D printing of polymer networks with a two-way shape-memory effect.\n2. Problem - It addresses the challenge of creating structures that can change shape in response to stimuli using extrusion technology.\n3. Method - The researchers synthesized methacrylated poly(ε-caprolactone) and optimized printing parameters for creating UV-crosslinked 3D structures.\n4. Key Result - The printed structures demonstrated effective one-way and two-way shape-memory properties under load.\n5. Takeaway - This approach highlights the potential of extrusion-based 4D printing for applications in smart actuators and soft robotics.",
-    "relevance_note_en": "The summary captures the essence of the research while addressing the key aspects of the study.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "id": "10.1016/j.matdes.2024.112725"
   }
 }
