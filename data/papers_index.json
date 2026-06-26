@@ -438,45 +438,6 @@
   },
   {
     "authors": [
-      "K. Rajesh Kannan",
-      "Vishal Mishra",
-      "Dhinakaran Veeman",
-      "R. Vaira Vignesh"
-    ],
-    "categories": [
-      "Multi-material AM",
-      "Functionally Graded AM"
-    ],
-    "corresponding_authors": [
-      {
-        "name": "Vishal Mishra",
-        "is_corresponding": true
-      }
-    ],
-    "curation_priority": false,
-    "doi": "10.1177/08927057261434198",
-    "first_added": "2026-06-26",
-    "id": "10.1177/08927057261434198",
-    "is_core_venue": false,
-    "is_weekly_new": true,
-    "last_updated": "2026-06-26",
-    "openai_summary_applied": false,
-    "relevance_score": 8,
-    "source": [
-      "Crossref"
-    ],
-    "summary_provider": "fallback",
-    "tags": [
-      "Additive manufacturing"
-    ],
-    "title": "Investigation of physico-mechanical and flammability performance of 3D printed functionally graded polyamide carbon fibre and glass fibre multi-material composites",
-    "url": "https://doi.org/10.1177/08927057261434198",
-    "venue": "Journal of Thermoplastic Composite Materials",
-    "year": 2026,
-    "status": "active"
-  },
-  {
-    "authors": [
       "Lichao Gong",
       "Zhaoliang Jiang",
       "Siliang Wang",
@@ -10469,55 +10430,6 @@
   },
   {
     "authors": [
-      "Decai Ouyang",
-      "Puyun Fan",
-      "Wangjia Zhang",
-      "Mengxiong Chen",
-      "Keyi Zhang",
-      "Huiwen Xiong",
-      "Xiao Kang",
-      "Lei Zhang",
-      "Kechao Zhou",
-      "Yun Liu",
-      "Borui Liu"
-    ],
-    "categories": [
-      "Multi-material AM"
-    ],
-    "corresponding_authors": [
-      {
-        "name": "Huiwen Xiong",
-        "is_corresponding": true
-      },
-      {
-        "name": "Xiao Kang",
-        "is_corresponding": true
-      }
-    ],
-    "curation_priority": false,
-    "doi": "10.1016/j.apmate.2026.100415",
-    "first_added": "2026-06-25",
-    "id": "10.1016/j.apmate.2026.100415",
-    "is_core_venue": false,
-    "is_weekly_new": true,
-    "last_updated": "2026-06-26",
-    "openai_summary_applied": false,
-    "relevance_score": 6,
-    "source": [
-      "Crossref"
-    ],
-    "summary_provider": "fallback",
-    "tags": [
-      "Additive manufacturing"
-    ],
-    "title": "Multimaterial 3D printing of high-strength metal-cermet inert anodes for aluminum electrolysis via interface-structure design",
-    "url": "https://doi.org/10.1016/j.apmate.2026.100415",
-    "venue": "Advanced Powder Materials",
-    "year": 2026,
-    "status": "active"
-  },
-  {
-    "authors": [
       "Haowei Guo",
       "Haoyuan Zhu",
       "Jingrun Chen",
@@ -14969,7 +14881,8 @@
       "Falk Tauber"
     ],
     "categories": [
-      "Multi-material AM"
+      "Multi-material AM",
+      "Functionally Graded AM"
     ],
     "corresponding_authors": [
       {
@@ -14978,24 +14891,26 @@
       }
     ],
     "curation_priority": false,
-    "doi": "10.1002/aisy.70218",
+    "doi": "10.1002/aisy.202500430",
     "first_added": "2026-06-19",
-    "id": "10.1002/aisy.70218",
+    "id": "10.1002/aisy.202500430",
     "is_core_venue": false,
     "is_weekly_new": false,
     "last_updated": "2026-06-26",
-    "openai_summary_applied": false,
+    "openai_summary_applied": true,
     "relevance_score": 5,
     "source": [
       "Crossref"
     ],
-    "summary_provider": "fallback",
+    "summary_provider": "openai",
     "tags": [
-      "Soft robotics",
-      "Manufacturing automation"
+      "soft robotics",
+      "pneumatic sensors",
+      "autonomous systems",
+      "3D printing"
     ],
     "title": "Toward More Autonomous Soft Robots: Development and Characterization of a 3D-Printed Pneumatic Contact Sensor for a Six-Legged Soft Robotic Walker",
-    "url": "https://doi.org/10.1002/aisy.70218",
+    "url": "https://doi.org/10.1002/aisy.202500430",
     "venue": "Advanced Intelligent Systems",
     "year": 2026,
     "status": "active"
@@ -24032,42 +23947,6 @@
   },
   {
     "authors": [
-      "Rishabha Malviya",
-      "Suraj Kumar",
-      "Sathvik Belagodu Sridhar",
-      "Pooja Shivappa"
-    ],
-    "categories": [
-      "Reviews and Surveys",
-      "Multi-material AM"
-    ],
-    "curation_priority": false,
-    "doi": "10.1515/9783111634609",
-    "first_added": "2026-06-12",
-    "id": "10.1515/9783111634609",
-    "is_core_venue": false,
-    "is_weekly_new": false,
-    "last_updated": "2026-06-26",
-    "openai_summary_applied": true,
-    "relevance_score": 5,
-    "source": [
-      "Crossref"
-    ],
-    "summary_provider": "openai",
-    "tags": [
-      "4D printing",
-      "Healthcare",
-      "Medical Devices",
-      "Adaptive Technology"
-    ],
-    "title": "4D Printing in Healthcare",
-    "url": "https://doi.org/10.1515/9783111634609",
-    "venue": "",
-    "year": 2026,
-    "status": "active"
-  },
-  {
-    "authors": [
       "Ruijue Cao",
       "Guancong Chen",
       "Linhong Wang",
@@ -28986,6 +28865,43 @@
     "title": "Manufacturing and behavioral analysis of functionally graded material fabricated via wire arc additive manufacturing",
     "url": "https://doi.org/10.1177/14644207241262183",
     "venue": "Proceedings of the Institution of Mechanical Engineers, Part L: Journal of Materials: Design and Applications",
+    "year": 2025,
+    "status": "active"
+  },
+  {
+    "authors": [
+      "Hussam Tawfik",
+      "Peter Goldsmith"
+    ],
+    "categories": [
+      "Toolpath Planning",
+      "Graph Search / Path Planning"
+    ],
+    "corresponding_authors": [
+      {
+        "name": "Hussam Tawfik",
+        "is_corresponding": true
+      }
+    ],
+    "curation_priority": false,
+    "doi": "10.1002/amp2.70044",
+    "first_added": "2026-06-26",
+    "id": "10.1002/amp2.70044",
+    "is_core_venue": false,
+    "is_weekly_new": true,
+    "last_updated": "2026-06-26",
+    "openai_summary_applied": false,
+    "relevance_score": 7,
+    "source": [
+      "Crossref"
+    ],
+    "summary_provider": "fallback",
+    "tags": [
+      "Manufacturing automation"
+    ],
+    "title": "Maneuverability-Based Speed and Temperature Adaptive Robotic Control (M-STARC) for Fiber Steering in Additive Manufacturing",
+    "url": "https://doi.org/10.1002/amp2.70044",
+    "venue": "Journal of Advanced Manufacturing and Processing",
     "year": 2025,
     "status": "active"
   },
@@ -62591,6 +62507,38 @@
   },
   {
     "authors": [
+      "Shuchi Sethi",
+      "Naeem Ahmad",
+      "Seema Rani",
+      "Misbah Anjum"
+    ],
+    "categories": [
+      "Multi-material AM"
+    ],
+    "curation_priority": false,
+    "doi": "10.1201/9781032630748-4",
+    "first_added": "2026-06-26",
+    "id": "10.1201/9781032630748-4",
+    "is_core_venue": false,
+    "is_weekly_new": true,
+    "last_updated": "2026-06-26",
+    "openai_summary_applied": false,
+    "relevance_score": 7,
+    "source": [
+      "Crossref"
+    ],
+    "summary_provider": "fallback",
+    "tags": [
+      "Digital Twins"
+    ],
+    "title": "Digital Twin Technology Use Cases in Intelligent Manufacturing",
+    "url": "https://doi.org/10.1201/9781032630748-4",
+    "venue": "Intelligent Manufacturing and Industry 4.0",
+    "year": 2024,
+    "status": "active"
+  },
+  {
+    "authors": [
       "Malik Marks",
       "Poojith Chowdary Chigurupati",
       "Hossein Taheri"
@@ -81962,20 +81910,10 @@
     "categories": [
       "Multi-material AM"
     ],
-    "corresponding_authors": [
-      {
-        "name": "Fardin Khabaz",
-        "is_corresponding": true
-      },
-      {
-        "name": "Elda Hegmann",
-        "is_corresponding": true
-      }
-    ],
     "curation_priority": false,
-    "doi": "10.1002/marc.202300717",
-    "first_added": "2026-06-12",
-    "id": "10.1002/marc.202300717",
+    "doi": "10.1002/marc.202470023",
+    "first_added": "2026-06-19",
+    "id": "10.1002/marc.202470023",
     "is_core_venue": false,
     "is_weekly_new": false,
     "last_updated": "2026-06-26",
@@ -81986,11 +81924,10 @@
     ],
     "summary_provider": "fallback",
     "tags": [
-      "LCE",
-      "Soft robotics"
+      "LCE"
     ],
     "title": "A Molecular Rheology Dynamics Study on 3D Printing of Liquid Crystal Elastomers",
-    "url": "https://doi.org/10.1002/marc.202300717",
+    "url": "https://doi.org/10.1002/marc.202470023",
     "venue": "Macromolecular Rapid Communications",
     "year": 2024,
     "status": "active"
@@ -82656,6 +82593,38 @@
     "title": "4D printing of lattice structures to test their behavior by repetitive shape processing cycles",
     "url": "https://doi.org/10.1016/j.mtcomm.2024.109147",
     "venue": "Materials Today Communications",
+    "year": 2024,
+    "status": "active"
+  },
+  {
+    "authors": [
+      "Yuchuan Cheng",
+      "Huilan Jing",
+      "Ruqing Ye"
+    ],
+    "categories": [
+      "Multi-material AM"
+    ],
+    "curation_priority": false,
+    "doi": "10.1016/b978-0-443-13673-3.00003-1",
+    "first_added": "2026-06-26",
+    "id": "10.1016/b978-0-443-13673-3.00003-1",
+    "is_core_venue": false,
+    "is_weekly_new": true,
+    "last_updated": "2026-06-26",
+    "openai_summary_applied": false,
+    "relevance_score": 5,
+    "source": [
+      "Crossref"
+    ],
+    "summary_provider": "fallback",
+    "tags": [
+      "4D printing",
+      "Soft robotics"
+    ],
+    "title": "4D printing of hydrogel soft actuators",
+    "url": "https://doi.org/10.1016/b978-0-443-13673-3.00003-1",
+    "venue": "Smart Materials in Additive Manufacturing, Volume 3",
     "year": 2024,
     "status": "active"
   },
