@@ -7138,3 +7138,27 @@
 - Archive reasons after rebuild: 488 `low_venue_trust`, 48 `duplicate_title`, and 5 `low_relevance`.
 - AML public recommendations after filtering: 545 records with 0 low-trust venue records.
 - OpenAI, Crossref, and OpenAlex APIs were not called for this cleanup; only local JSON/CSV/XLSX regeneration was performed.
+
+## 2026-06-27 09:33
+### Change Summary
+- Moved `Journal` / `Conference` publication-type text out of the venue label and into a separate paper-card badge.
+
+### Modified / Created Files
+- `assets/app.js`: Rendered `publication_type` as a separate `publication-type-badge`; restored venue label text to venue/year only.
+- `assets/style.css`: Added light/dark styling for the new publication-type badge.
+- `index.html`: Bumped CSS/JS cache query versions for deployment.
+- `AGENT_LOG.md`: Recorded this UI adjustment.
+
+### Implemented Features
+- Paper cards now show publication type separately from the journal or conference name.
+- Venue labels remain compact and readable, for example `Nat. Commun. 2026`.
+
+### Design Decisions
+- Publication type is a small outlined badge so it helps scanning without competing with the venue badge.
+- No data files or API workflows were changed.
+
+### Remaining Work
+- Visually verify the badge spacing after GitHub Pages deployment.
+
+### Notes / Cautions
+- OpenAI, Crossref, and OpenAlex APIs were not called.

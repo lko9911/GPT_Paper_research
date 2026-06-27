@@ -1342,6 +1342,10 @@ function renderPaperRow(paper) {
   const doiUrl = displayPaper.url || (displayPaper.doi ? `https://doi.org/${displayPaper.doi}` : "");
   const authorDetailsHtml = renderAuthorDetails(displayPaper);
   const publicationLabel = formatPublicationLabel(displayPaper);
+  const publicationType = publicationTypeLabel(displayPaper.publication_type);
+  const publicationTypeHtml = publicationType
+    ? `<span class="publication-type-badge">${escapeHtml(publicationType)}</span>`
+    : "";
   const summaryProviderLabel = formatSummaryProviderLabel(displayPaper);
   const summaryHtml = renderSummaryBlock(displayPaper);
   const relevanceNote = formatRelevanceNote(displayPaper);
@@ -1354,6 +1358,7 @@ function renderPaperRow(paper) {
   article.innerHTML = `
     <div class="card-content">
       <div class="card-topline">
+        ${publicationTypeHtml}
         <span class="publication-badge">${escapeHtml(publicationLabel)}</span>
         ${newBadgeHtml}
         <span class="${escapeAttribute(summaryProviderLabel.className)}" title="${escapeAttribute(summaryProviderLabel.title)}">${escapeHtml(summaryProviderLabel.text)}</span>
@@ -2016,13 +2021,10 @@ function formatPublicationLabel(paper) {
   const year = paper.year ? String(paper.year) : "";
   const venue = normalizeVenue(paper.venue);
   const compactVenue = shortVenue(venue);
-  const typeLabel = publicationTypeLabel(paper.publication_type);
   if (!compactVenue || compactVenue === "Venue unknown") {
-    const unknown = year ? `Venue unknown ${year}` : "Venue unknown";
-    return typeLabel ? `${typeLabel} · ${unknown}` : unknown;
+    return year ? `Venue unknown ${year}` : "Venue unknown";
   }
-  const label = year ? `${compactVenue} ${year}` : compactVenue;
-  return typeLabel ? `${typeLabel} · ${label}` : label;
+  return year ? `${compactVenue} ${year}` : compactVenue;
 }
 
 function publicationTypeLabel(type) {
