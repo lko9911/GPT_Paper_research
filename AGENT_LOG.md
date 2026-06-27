@@ -7162,3 +7162,26 @@
 
 ### Notes / Cautions
 - OpenAI, Crossref, and OpenAlex APIs were not called.
+
+## 2026-06-27 09:45
+### Change Summary
+- Fixed sidebar subtopic counting/filtering so clicked subtopics use the same representative-topic logic as the displayed paper cards.
+
+### Modified / Created Files
+- `assets/app.js`: Added `sidebarTopics` to each paper runtime cache and made sidebar matching use representative tags instead of broad hidden tag inference.
+- `index.html`: Bumped CSS/JS cache query versions for deployment.
+- `AGENT_LOG.md`: Recorded this sidebar filtering fix.
+
+### Implemented Features
+- Sidebar subtopic counts and clicked paper results now use the same paper-to-subtopic bucket.
+- Papers should no longer appear under a sidebar topic only because of broad hidden tags that are not representative of the card.
+
+### Design Decisions
+- Kept the exact one-bucket-per-field behavior so subtopic counts remain understandable and sum cleanly inside each main field.
+- The global tag dropdown still uses the broader canonical tag set; this fix targets the left sidebar only.
+
+### Remaining Work
+- Visually test a few sidebar topics after deployment, especially broad topics such as `MMAM`, `Machine Learning`, and `Process Optimization`.
+
+### Notes / Cautions
+- OpenAI, Crossref, and OpenAlex APIs were not called.

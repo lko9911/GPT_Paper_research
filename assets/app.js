@@ -454,6 +454,7 @@ function preparePaperRuntimeCache(papers) {
 function preparePaperRuntime(paper) {
   const visible = visibleTags(paper);
   const subtopics = deriveSubtopics(paper);
+  const representative = representativeTagsFromCandidates(paper, [...subtopics, ...visible]);
   const field = deriveField(paper);
   const canonicalTags = [...(paper.tags || []), ...visible, ...subtopics]
     .map(canonicalTopicLabel)
@@ -481,6 +482,7 @@ function preparePaperRuntime(paper) {
     field,
     visibleTags: visible,
     subtopics,
+    sidebarTopics: representative,
     canonicalTagSet: new Set(canonicalTags),
     venue: normalizeVenue(paper.venue),
     searchText,
@@ -1754,6 +1756,10 @@ function formatEnglishList(items) {
 
 function representativeTags(paper) {
   const candidates = [...deriveSubtopics(paper), ...visibleTags(paper)];
+  return representativeTagsFromCandidates(paper, candidates);
+}
+
+function representativeTagsFromCandidates(paper, candidates) {
   if (candidates.length < 3) {
     candidates.push(...(paper.categories || []));
   }
@@ -1794,11 +1800,8 @@ function paperMatchesSidebarSubtopic(paper, field, topic) {
 function paperHasRepresentativeTopic(paper, topic) {
   const target = normalizeTopicKey(canonicalTopicLabel(topic));
   if (target === normalizeTopicKey("Digital Twins")) return paperHasCuratedDigitalTwinTag(paper);
-  const candidates = [
-    ...(paper.tags || []),
-    ...visibleTags(paper),
-    ...deriveSubtopics(paper),
-  ];
+  const runtime = runtimeForPaper(paper);
+  const candidates = runtime.sidebarTopics || representativeTags(paper);
   return candidates.some((tag) => normalizeTopicKey(canonicalTopicLabel(tag)) === target);
 }
 
