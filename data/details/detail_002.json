@@ -1,4 +1,84 @@
 {
+  "10.1016/j.addma.2024.104631": {
+    "author_details": [
+      {
+        "name": "Yanzhou Fu",
+        "orcid": "https://orcid.org/0000-0002-5471-9972",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Austin R.J. Downey",
+        "orcid": "https://orcid.org/0000-0002-5524-2416",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Lang Yuan",
+        "orcid": "https://orcid.org/0000-0002-6894-5030",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Hung-Tien Huang",
+        "orcid": "https://orcid.org/0000-0001-9046-3022",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Emmanuel A. Ogunniyi",
+        "orcid": "https://orcid.org/0000-0001-5456-5929",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2214-8604"
+    ],
+    "issn_l": "",
+    "publisher": "Elsevier BV",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4406140470",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - The paper discusses the integration of simulation-in-the-loop techniques in additive manufacturing.\n2. Problem - It addresses the challenge of validating structural integrity in real-time during the manufacturing process.\n3. Method - The authors propose a framework that combines simulation with additive manufacturing to create digital twins for structural validation.\n4. Key Result - The approach enables immediate feedback on structural performance, enhancing the reliability of the manufacturing process.\n5. Takeaway - This method represents a significant advancement in real-time validation and digital twin development for additive manufacturing.",
+    "relevance_note_en": "The summary captures the core aspects of the paper's focus on simulation and validation in additive manufacturing.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "id": "10.1016/j.addma.2024.104631"
+  },
   "10.1007/s00170-025-15290-8": {
     "author_details": [
       {
@@ -23495,77 +23575,5 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "id": "10.1007/s00170-025-16204-4"
-  },
-  "10.1016/j.matdes.2025.114394": {
-    "author_details": [
-      {
-        "name": "Yifei Miao",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Xiaokang Liu",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Shenglin Yang",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Jinghong Ma",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "0264-1275"
-    ],
-    "issn_l": "",
-    "publisher": "Elsevier BV",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4412453948",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The study focuses on the development of self-sensing soft robots using advanced 3D printing techniques.\n2. Problem - Integrating actuation and sensing in soft robots is crucial for enhancing their functionality.\n3. Method - The researchers utilized multi-material digital light processing 3D printing to create a bilayer soft robot from two specialized hydrogels.\n4. Key Result - The fabricated robot demonstrated high strain sensitivity, rapid response to heat, and the ability to monitor its movements in real time.\n5. Takeaway - This work paves the way for more intelligent soft robotic systems by merging actuation and sensing capabilities.",
-    "relevance_note_en": "The summary captures the essence of the research, highlighting the innovative approach and its implications for soft robotics.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "id": "10.1016/j.matdes.2025.114394"
   }
 }

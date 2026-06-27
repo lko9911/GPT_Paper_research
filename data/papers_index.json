@@ -8086,6 +8086,57 @@
   },
   {
     "authors": [
+      "Decai Ouyang",
+      "Puyun Fan",
+      "Wangjia Zhang",
+      "Mengxiong Chen",
+      "Keyi Zhang",
+      "Huiwen Xiong",
+      "Xiao Kang",
+      "Lei Zhang",
+      "Kechao Zhou",
+      "Yun Liu",
+      "Borui Liu"
+    ],
+    "categories": [
+      "Multi-material AM"
+    ],
+    "corresponding_authors": [
+      {
+        "name": "Huiwen Xiong",
+        "is_corresponding": true
+      },
+      {
+        "name": "Xiao Kang",
+        "is_corresponding": true
+      }
+    ],
+    "curation_priority": false,
+    "doi": "10.1016/j.apmate.2026.100415",
+    "first_added": "2026-06-27",
+    "id": "10.1016/j.apmate.2026.100415",
+    "is_core_venue": false,
+    "is_weekly_new": true,
+    "last_updated": "2026-06-27",
+    "openai_summary_applied": false,
+    "publication_type": "journal_article",
+    "relevance_score": 6,
+    "source": [
+      "Crossref"
+    ],
+    "summary_provider": "fallback",
+    "tags": [
+      "Additive manufacturing"
+    ],
+    "title": "Multimaterial 3D printing of high-strength metal-cermet inert anodes for aluminum electrolysis via interface-structure design",
+    "url": "https://doi.org/10.1016/j.apmate.2026.100415",
+    "venue": "Advanced Powder Materials",
+    "venue_trust": "trusted",
+    "year": 2026,
+    "status": "active"
+  },
+  {
+    "authors": [
       "Haowei Guo",
       "Haoyuan Zhu",
       "Jingrun Chen",
@@ -10772,7 +10823,7 @@
     "tags": [
       "Additive manufacturing"
     ],
-    "title": "Beyond The Material-Per-Function Paradigm: Functionally Graded Active Structures via Laser Powder Bed Fusion Additive Manufacturing of Nickel-Titanium Shape Memory Alloys",
+    "title": "Beyond the material-per-function paradigm: Functionally graded active structures via laser powder bed fusion additive manufacturing of nickel-titanium shape memory alloys",
     "url": "https://doi.org/10.1016/j.addma.2026.105276",
     "venue": "Additive Manufacturing",
     "venue_trust": "trusted",
@@ -11946,7 +11997,8 @@
       "Falk Tauber"
     ],
     "categories": [
-      "Multi-material AM"
+      "Multi-material AM",
+      "Functionally Graded AM"
     ],
     "corresponding_authors": [
       {
@@ -11955,25 +12007,27 @@
       }
     ],
     "curation_priority": false,
-    "doi": "10.1002/aisy.70218",
+    "doi": "10.1002/aisy.202500430",
     "first_added": "2026-06-19",
-    "id": "10.1002/aisy.70218",
+    "id": "10.1002/aisy.202500430",
     "is_core_venue": false,
     "is_weekly_new": false,
     "last_updated": "2026-06-27",
-    "openai_summary_applied": false,
+    "openai_summary_applied": true,
     "publication_type": "journal_article",
     "relevance_score": 5,
     "source": [
       "Crossref"
     ],
-    "summary_provider": "fallback",
+    "summary_provider": "openai",
     "tags": [
-      "Soft robotics",
-      "Manufacturing automation"
+      "soft robotics",
+      "pneumatic sensors",
+      "autonomous systems",
+      "3D printing"
     ],
     "title": "Toward More Autonomous Soft Robots: Development and Characterization of a 3D-Printed Pneumatic Contact Sensor for a Six-Legged Soft Robotic Walker",
-    "url": "https://doi.org/10.1002/aisy.70218",
+    "url": "https://doi.org/10.1002/aisy.202500430",
     "venue": "Advanced Intelligent Systems",
     "venue_trust": "trusted",
     "year": 2026,
@@ -38672,50 +38726,6 @@
   },
   {
     "authors": [
-      "Eduardo Navas",
-      "Daniel Rodríguez-Nieto",
-      "Alain Antonio Rodríguez-González",
-      "Roemi Fernández"
-    ],
-    "categories": [
-      "Multi-material AM"
-    ],
-    "corresponding_authors": [
-      {
-        "name": "Eduardo Navas",
-        "is_corresponding": true
-      },
-      {
-        "name": "Roemí Fernández",
-        "is_corresponding": true
-      }
-    ],
-    "curation_priority": false,
-    "doi": "10.3390/app15052576",
-    "first_added": "2026-06-27",
-    "id": "10.3390/app15052576",
-    "is_core_venue": false,
-    "is_weekly_new": true,
-    "last_updated": "2026-06-27",
-    "openai_summary_applied": false,
-    "publication_type": "journal_article",
-    "relevance_score": 5,
-    "source": [
-      "Crossref"
-    ],
-    "summary_provider": "fallback",
-    "tags": [
-      "Soft robotics"
-    ],
-    "title": "Parallel Fin Ray Soft Gripper with Embedded Mechano-Optical Force Sensor",
-    "url": "https://doi.org/10.3390/app15052576",
-    "venue": "Applied Sciences",
-    "venue_trust": "trusted",
-    "year": 2025,
-    "status": "active"
-  },
-  {
-    "authors": [
       "Xiang Dong",
       "Xing Li",
       "Jizhai Cui",
@@ -55010,51 +55020,6 @@
     "title": "Directly 3D Printed, Pneumatically Actuated Multi-Material Robotic Hand",
     "url": "https://doi.org/10.1109/icra57147.2024.10610016",
     "venue": "2024 IEEE International Conference on Robotics and Automation (ICRA)",
-    "venue_trust": "trusted",
-    "year": 2024,
-    "status": "active"
-  },
-  {
-    "authors": [
-      "Xuexin Yu",
-      "Dongjiang Wu",
-      "Weiming Bi",
-      "Xiao Feng",
-      "Ziyuan Zhao",
-      "Yunbo Hao",
-      "Guangyi Ma",
-      "Cong Zhou",
-      "Fangyong Niu"
-    ],
-    "categories": [
-      "Functionally Graded AM"
-    ],
-    "corresponding_authors": [
-      {
-        "name": "Fangyong Niu",
-        "is_corresponding": true
-      }
-    ],
-    "curation_priority": false,
-    "doi": "10.1111/jace.19653",
-    "first_added": "2026-06-27",
-    "id": "10.1111/jace.19653",
-    "is_core_venue": false,
-    "is_weekly_new": true,
-    "last_updated": "2026-06-27",
-    "openai_summary_applied": false,
-    "publication_type": "journal_article",
-    "relevance_score": 6,
-    "source": [
-      "Crossref"
-    ],
-    "summary_provider": "fallback",
-    "tags": [
-      "Additive manufacturing"
-    ],
-    "title": "Direct additive manufacturing of Al2O3-TiCp functionally graded ceramics by laser-directed energy deposition",
-    "url": "https://doi.org/10.1111/jace.19653",
-    "venue": "Journal of the American Ceramic Society",
     "venue_trust": "trusted",
     "year": 2024,
     "status": "active"
