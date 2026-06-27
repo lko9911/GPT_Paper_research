@@ -15,7 +15,6 @@ CATEGORIES = [
     "Blended FDM / Digital Material Filament",
     "Computational Design",
     "Material Distribution Optimization",
-    "Toolpath Planning",
     "Graph Search / Path Planning",
     "AI and Machine Learning for AM",
 ]
@@ -27,7 +26,6 @@ KEYWORDS = {
     "Blended FDM / Digital Material Filament": ["blended fdm", "digital material filament", "dm filament", "filament blending"],
     "Computational Design": ["computational design", "inverse design", "design automation", "generative design"],
     "Material Distribution Optimization": ["material distribution", "topology optimization", "distribution optimization"],
-    "Toolpath Planning": ["toolpath", "tool path", "slicing", "deposition path"],
     "Graph Search / Path Planning": ["graph search", "path planning", "traveling salesman", "routing"],
     "AI and Machine Learning for AM": [
         "machine learning",
@@ -53,7 +51,6 @@ TAG_MAP = {
     "4D printing": ["4d printing", "4-d printing", "four-dimensional printing", "shape morphing", "shape-morphing"],
     "Metamaterials": ["metamaterial", "metamaterials", "mechanical metamaterial"],
     "Digital fabrication": ["digital tectonics", "digital craftsmanship", "large-scale additive manufacturing"],
-    "Toolpath strategy": ["toolpath", "tool path", "woven toolpath", "slicing"],
     "Material behavior": ["material behaviour", "material behavior", "material intelligence"],
     "Inverse Design": ["inverse design", "inverse-designed", "inverse designed"],
     "Computational design": ["computational design", "inverse design", "generative design"],
@@ -150,7 +147,6 @@ TAG_MAP = {
 }
 
 TAG_CATEGORY_ALIASES = {
-    "Toolpath strategy": "Toolpath Planning",
     "Path planning": "Graph Search / Path Planning",
     "Material distribution": "Material Distribution Optimization",
     "Computational design": "Computational Design",
@@ -172,10 +168,6 @@ TAG_ALIASES = {
     "multimaterial": "MMAM",
     "기능성 구배": "FGAM",
     "디지털 제작": "Digital fabrication",
-    "툴패스 전략": "Toolpath strategy",
-    "툴패스": "Toolpath strategy",
-    "Toolpath": "Toolpath strategy",
-    "Toolpath planning": "Toolpath strategy",
     "재료 거동": "Material behavior",
     "계산설계": "Computational design",
     "Computational Design": "Computational design",
@@ -365,7 +357,6 @@ def _abstract_based_summary(
                 ("graded", "구배 재료"),
                 ("blended fdm", "혼합 FDM 공정"),
                 ("digital material filament", "디지털 재료 필라멘트"),
-                ("toolpath", "툴패스 설계"),
                 ("path planning", "경로 계획"),
                 ("topology optimization", "위상 최적화"),
                 ("computational design", "계산설계"),
@@ -443,8 +434,6 @@ def _study_subject(title: str, text: str, focus: str) -> str:
         return "액정 엘라스토머를 4D 프린팅으로 제작해 열이나 자극에 따라 형상이 변하는 구조를 구현합니다."
     if has_terms(text, ["continuous fiber", "liquid crystal elastomer"]):
         return "연속섬유 보강과 액정 엘라스토머 프린팅을 결합해 변형 성능과 구조적 강성을 함께 다룹니다."
-    if has_terms(text, ["toolpath", "optimization"]):
-        return "툴패스와 공정 조건을 설계 변수로 삼아 적층제조 결과의 품질과 효율을 개선하는 방법을 다룹니다."
     if has_terms(text, ["multi-material", "3d printing"]) or has_terms(text, ["multimaterial", "3d printing"]):
         return "서로 다른 재료를 한 구조 안에 배치하거나 전환하는 다중재료 3D 프린팅 문제를 다룹니다."
     if has_terms(text, ["functionally graded"]) or has_terms(text, ["graded", "additive manufacturing"]):
@@ -464,8 +453,6 @@ def _study_approach(text: str, method: str) -> str:
         details.append("agent-based 조형 로직을 활용하며")
     if has_terms(text, ["data-informed"]):
         details.append("데이터 기반 변조를 적용하고")
-    if has_terms(text, ["woven toolpath"]):
-        details.append("직조형 툴패스 전략을 설계에 통합합니다")
     if has_terms(text, ["simulation"]):
         details.append("시뮬레이션으로 거동을 예측합니다")
     if has_terms(text, ["experiment"]) or has_terms(text, ["fabrication"]):
@@ -484,8 +471,6 @@ def _study_approach(text: str, method: str) -> str:
 
 
 def _study_contribution(text: str, outcome: str) -> str:
-    if has_terms(text, ["toolpath", "material behaviour"]) or has_terms(text, ["toolpath", "material behavior"]):
-        return "핵심 기여는 툴패스와 재료 반응을 단순 제작 수단이 아니라 형태와 공간 구성을 만드는 설계 언어로 연결한 점입니다."
     if has_terms(text, ["matter", "performance", "application"]):
         return "핵심 기여는 재료, 성능, 적용 가능성을 하나의 설계 논리 안에서 함께 해석한 점입니다."
     if has_terms(text, ["mechanical", "performance"]):
@@ -497,13 +482,11 @@ def _study_contribution(text: str, outcome: str) -> str:
 
 def _study_problem(text: str, focus: str) -> str:
     if has_terms(text, ["ornament", "large-scale additive manufacturing"]):
-        return "대형 적층제조에서 장식, 툴패스, 재료 거동이 분리되어 해석되는 문제를 다룹니다."
+        return "대형 적층제조에서 장식, 재료 거동, 제작 맥락이 분리되어 해석되는 문제를 다룹니다."
     if has_terms(text, ["liquid crystal elastomer", "4d printing"]):
         return "자극 반응 재료를 원하는 형상 변화와 구조 성능으로 안정적으로 프린팅하는 문제를 다룹니다."
     if has_terms(text, ["multi-material", "3d printing"]) or has_terms(text, ["multimaterial", "3d printing"]):
         return "서로 다른 재료의 배치, 전환, 계면 특성을 원하는 기능으로 연결하는 문제를 다룹니다."
-    if has_terms(text, ["toolpath", "optimization"]):
-        return "툴패스 선택이 품질, 시간, 재료 사용량, 성능에 미치는 영향을 줄이는 문제를 다룹니다."
     if has_terms(text, ["robot", "path planning"]):
         return "로봇 제조에서 경로 계획과 제작 가능성을 동시에 만족시키는 문제를 다룹니다."
     if has_terms(text, ["machine learning"]) or has_terms(text, ["deep learning"]):
@@ -513,8 +496,6 @@ def _study_problem(text: str, focus: str) -> str:
 
 def _study_takeaway(tags: list[str], categories: list[str], score: int, text: str) -> str:
     topic = _join_phrases(tags[:3] or categories[:2], "제조·설계")
-    if has_terms(text, ["toolpath"]) and ("material behaviour" in text or "material behavior" in text):
-        return "툴패스와 재료 거동은 단순한 제작 조건이 아니라 구조 성능과 표현을 결정하는 설계 변수라는 점이 핵심 메시지입니다."
     if any(tag in tags for tag in ["LCE", "4D printing", "Metamaterials"]):
         return "자극 반응 재료와 4D 프린팅을 결합하면 형상 변화 구조를 설계 가능한 제조 대상으로 다룰 수 있다는 점이 핵심 메시지입니다."
     if any(tag in tags for tag in ["MMAM", "FGAM", "DM filament", "FDM/Material extrusion"]):
@@ -622,7 +603,6 @@ def _score(record: dict[str, Any], abstract: str, categories: list[str]) -> int:
         "computational design",
         "inverse design",
         "material distribution",
-        "toolpath",
     ]
     score = 4 + sum(1 for term in core_terms if term in text)
     score += min(len(categories), 2)
@@ -828,8 +808,6 @@ def _canonical_tag(tag: str) -> str:
 
 
 def _fallback_tags(text: str, categories: list[str]) -> list[str]:
-    if "툴패스 계획" in categories:
-        return ["Toolpath strategy"]
     if "그래프 탐색 / 경로 계획 알고리즘" in categories:
         return ["Path planning"]
     if "재료분포 최적화" in categories:

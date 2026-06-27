@@ -7219,3 +7219,37 @@
 ### Notes / Cautions
 - OpenAI, Crossref, and OpenAlex APIs were not called.
 - Active paper count remains 1,587; this cleanup changes topic/tag visibility, not venue trust filtering.
+
+## 2026-06-27 10:13
+### Change Summary
+- Removed `Toolpath Strategy` / toolpath-related keywords from collection, classification, sidebar aggregation, and structured paper tags.
+
+### Modified / Created Files
+- `assets/app.js`: Removed `Toolpath` / `Toolpath strategy` from sidebar subtopics, tag labels, canonical aliases, representative tag priority, field inference, and frontend subtopic inference.
+- `data/queries.json`: Removed the toolpath-specific collection query.
+- `scripts/update_papers.py`: Removed `toolpath` as a relevance topic term for future updates.
+- `scripts/summarize.py`: Removed the toolpath category, keyword map, tag map, aliases, fallback tags, score boost, and old fallback text branches.
+- `scripts/aml_common.py`: Removed toolpath-related AML recommendation profile terms.
+- `scripts/collect_aml_candidates.py`: Removed toolpath from AML candidate search and signal matching.
+- `scripts/generate_aml_profile.py`: Removed toolpath-aware design from generated profile interests and high-relevance criteria.
+- `data/papers.json`, `data/archive_papers.json`, `public/data/aml_recommended_papers.json`: Removed toolpath-related values from structured `categories`, `tags`, and `matched_topics`.
+- `data/papers_index.json`, `data/archive_papers_index.json`, `data/details/*`, `data/archive_details/*`: Rebuilt split website data.
+- `data/papers.csv`, `data/papers.xlsx`: Regenerated exports from the cleaned active dataset.
+- `index.html`: Bumped CSS/JS cache query versions for deployment.
+- `AGENT_LOG.md`: Recorded this keyword removal.
+
+### Implemented Features
+- `Toolpath Strategy` no longer appears as a left-sidebar subtopic or representative card tag.
+- Existing structured paper metadata no longer contributes toolpath-related values to tag or sidebar aggregation.
+- Future scheduled/manual metadata updates no longer use toolpath-specific queries or classification boosts.
+
+### Design Decisions
+- `Path Planning` / graph-search style topics were left intact because the request targeted `Toolpath Strategy`, not all path-planning concepts.
+- Paper titles and scientific summary sentences were not broadly rewritten just because they mention toolpath; those are paper content, not tracker keywords.
+
+### Remaining Work
+- After deployment, confirm the left sidebar and tag dropdown no longer expose `Toolpath Strategy` or `Toolpath`.
+
+### Notes / Cautions
+- OpenAI, Crossref, and OpenAlex APIs were not called.
+- Active paper count remains 1,587; this cleanup changes topic/tag visibility, not venue trust filtering.
