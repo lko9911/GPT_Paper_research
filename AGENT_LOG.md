@@ -7277,3 +7277,32 @@
 
 ### Notes / Cautions
 - OpenAI, Crossref, and OpenAlex APIs were not called.
+
+## 2026-06-27 10:31
+### Change Summary
+- Merged `Inverse Design` into `Machine Learning` as a unified AI-manufacturing topic.
+
+### Modified / Created Files
+- `assets/app.js`: Removed `Inverse Design` as a standalone sidebar subtopic/tag label and remapped inverse-design text signals to `Machine learning`.
+- `scripts/summarize.py`: Removed standalone `Inverse Design` tag generation and moved inverse-design keywords into `Machine learning`.
+- `data/papers.json`, `data/archive_papers.json`: Replaced structured `Inverse Design` category/tag/matched-topic values with `Machine learning`.
+- `data/papers_index.json`, `data/archive_papers_index.json`, `data/details/*`, `data/archive_details/*`: Rebuilt split website data.
+- `data/papers.csv`, `data/papers.xlsx`: Regenerated exports from the cleaned active dataset.
+- `index.html`: Bumped CSS/JS cache query versions for deployment.
+- `AGENT_LOG.md`: Recorded this taxonomy merge.
+
+### Implemented Features
+- `Inverse Design` no longer appears as a separate left-sidebar subtopic or representative tag.
+- Papers with inverse-design signals are now grouped under `Machine Learning`.
+- Existing structured metadata has no remaining standalone `Inverse Design` values.
+
+### Design Decisions
+- Kept inverse-design search queries in `data/queries.json` because they are useful for finding ML/design papers; only the displayed taxonomy was merged.
+- Paper titles and summary prose were not rewritten when they mention inverse design as paper content.
+
+### Remaining Work
+- After deployment, confirm `AI Manufacturing > Machine Learning` includes the previous inverse-design papers and `Inverse Design` no longer appears as a filter item.
+
+### Notes / Cautions
+- OpenAI, Crossref, and OpenAlex APIs were not called.
+- Active paper count remains 1,587; this cleanup changes taxonomy display, not collection count.
