@@ -7306,3 +7306,26 @@
 ### Notes / Cautions
 - OpenAI, Crossref, and OpenAlex APIs were not called.
 - Active paper count remains 1,587; this cleanup changes taxonomy display, not collection count.
+
+## 2026-06-27 10:39
+### Change Summary
+- Fixed AML recommendation cards so they also show the separate `Journal` / `Conference` publication-type badge.
+
+### Modified / Created Files
+- `assets/app.js`: Passed `publication_type`, `venue_trust`, and `venue_trust_reason` through `amlRecommendationToPaper()`.
+- `index.html`: Bumped CSS/JS cache query versions for deployment.
+- `AGENT_LOG.md`: Recorded this AML card display fix.
+
+### Implemented Features
+- AML recommendation cards now use the same publication-type badge rendering as normal paper cards.
+- Existing AML recommendation data already had publication-type metadata, so no data rebuild was required.
+
+### Design Decisions
+- Reused the existing card renderer instead of adding a separate AML-specific badge path.
+- No collection or recommendation scoring behavior was changed.
+
+### Remaining Work
+- After deployment, visually confirm AML recommendation cards show `Journal` or `Conference` before the venue badge.
+
+### Notes / Cautions
+- OpenAI, Crossref, and OpenAlex APIs were not called.
