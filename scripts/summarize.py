@@ -16,7 +16,6 @@ CATEGORIES = [
     "Computational Design",
     "Material Distribution Optimization",
     "Toolpath Planning",
-    "Material Switching / Purge Reduction",
     "Graph Search / Path Planning",
     "AI and Machine Learning for AM",
 ]
@@ -29,7 +28,6 @@ KEYWORDS = {
     "Computational Design": ["computational design", "inverse design", "design automation", "generative design"],
     "Material Distribution Optimization": ["material distribution", "topology optimization", "distribution optimization"],
     "Toolpath Planning": ["toolpath", "tool path", "slicing", "deposition path"],
-    "Material Switching / Purge Reduction": ["material switching", "purge", "waste reduction", "transition"],
     "Graph Search / Path Planning": ["graph search", "path planning", "traveling salesman", "routing"],
     "AI and Machine Learning for AM": [
         "machine learning",
@@ -60,7 +58,6 @@ TAG_MAP = {
     "Inverse Design": ["inverse design", "inverse-designed", "inverse designed"],
     "Computational design": ["computational design", "inverse design", "generative design"],
     "Material distribution": ["material distribution", "topology optimization"],
-    "Material switching": ["purge", "material switching", "waste reduction"],
     "Path planning": ["path planning", "graph search", "routing"],
     "Machine learning": ["machine learning", "deep learning", "neural", "artificial intelligence"],
     "DLP": ["dlp", "digital light process", "digital light processing", "digital light projection"],
@@ -156,7 +153,6 @@ TAG_CATEGORY_ALIASES = {
     "Toolpath strategy": "Toolpath Planning",
     "Path planning": "Graph Search / Path Planning",
     "Material distribution": "Material Distribution Optimization",
-    "Material switching": "Material Switching / Purge Reduction",
     "Computational design": "Computational Design",
     "MMAM": "Multi-material AM",
     "FGAM": "Functionally Graded AM",
@@ -185,7 +181,6 @@ TAG_ALIASES = {
     "Computational Design": "Computational design",
     "재료분포": "Material distribution",
     "Material Distribution": "Material distribution",
-    "퍼지 감소": "Material switching",
     "경로계획": "Path planning",
     "Path Planning": "Path planning",
     "AI/ML": "Machine learning",
@@ -628,8 +623,6 @@ def _score(record: dict[str, Any], abstract: str, categories: list[str]) -> int:
         "inverse design",
         "material distribution",
         "toolpath",
-        "material switching",
-        "purge",
     ]
     score = 4 + sum(1 for term in core_terms if term in text)
     score += min(len(categories), 2)
@@ -841,8 +834,6 @@ def _fallback_tags(text: str, categories: list[str]) -> list[str]:
         return ["Path planning"]
     if "재료분포 최적화" in categories:
         return ["Material distribution"]
-    if "재료 전환 / 퍼지 감소" in categories:
-        return ["Material switching"]
     if "계산설계" in categories:
         return ["Computational design"]
     if "기능성 구배 적층제조" in categories:

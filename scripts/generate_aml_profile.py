@@ -57,7 +57,6 @@ def _fallback_profile(seeds: list[dict[str, Any]]) -> dict[str, Any]:
         "methodological_interests": [
             "fused filament fabrication",
             "toolpath-aware design",
-            "material switching control",
             "embedding-based literature recommendation",
             "deterministic topic scoring",
         ],
@@ -70,7 +69,7 @@ def _fallback_profile(seeds: list[dict[str, Any]]) -> dict[str, Any]:
             "projection micro-stereolithography",
         ],
         "high_relevance_criteria": [
-            "Directly connects material distribution, toolpaths, or material switching to multi-material AM.",
+            "Directly connects material distribution or toolpaths to multi-material AM.",
             "Uses FDM/FFF, DM filament, FGAM, 4D printing, LCEs, hydrogels, sensors, or metamaterials.",
             "Provides design or fabrication methods useful for AML lab research directions.",
         ],

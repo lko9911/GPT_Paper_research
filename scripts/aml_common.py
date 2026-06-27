@@ -39,7 +39,6 @@ AML_TERMS = [
     "functional gradients",
     "computational design",
     "material distribution control",
-    "material switching",
     "toolpath-aware design",
     "toolpath",
     "4d printing",

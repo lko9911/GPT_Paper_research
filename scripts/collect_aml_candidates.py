@@ -150,7 +150,6 @@ def _has_aml_signal(record: dict[str, Any]) -> bool:
         "fff",
         "material extrusion",
         "toolpath",
-        "material switching",
         "4d printing",
         "soft robotic",
         "metamaterial",

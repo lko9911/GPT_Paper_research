@@ -324,8 +324,6 @@ def _is_plausible(record: dict[str, Any], since_year: int) -> bool:
         "inverse design",
         "inverse-designed",
         "material distribution",
-        "material switching",
-        "purge",
         "path planning",
         "digital material",
         "self-driving lab",

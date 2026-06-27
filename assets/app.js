@@ -6,7 +6,6 @@
   "계산설계",
   "재료분포 최적화",
   "툴패스 계획",
-  "재료 전환 / 퍼지 감소",
   "그래프 탐색 / 경로 계획 알고리즘",
   "적층제조를 위한 AI 및 머신러닝",
 ];
@@ -21,7 +20,7 @@ const FIELD_ORDER = [
 
 const FIELD_SUBTOPICS = {
   "생산/제조": ["복합재/소재 제조", "공정 최적화"],
-  "3D 프린팅": ["MMAM", "FGAM", "Volumetric AM", "DLP", "SLA", "Vat photopolymerization", "FDM/Material extrusion", "Toolpath", "Material Switching", "Additive manufacturing"],
+  "3D 프린팅": ["MMAM", "FGAM", "Volumetric AM", "DLP", "SLA", "Vat photopolymerization", "FDM/Material extrusion", "Toolpath", "Additive manufacturing"],
   "4D 프린팅": ["LCE", "메타물질", "Active materials"],
   "로봇틱스(생산제조)": ["Soft robotics", "제조 자동화", "Robot-based Manufacturing"],
   "AI 생산제조": ["Self-driving Labs", "Digital Twins", "Machine Learning", "Inverse Design", "Design Automation", "제조 자동화"],
@@ -47,7 +46,6 @@ const CARD_TAG_PRIORITY = new Map([
   ["Digital Twins", 1],
   ["Self-driving Labs", 1],
   ["Toolpath strategy", 2],
-  ["Material switching", 2],
   ["FDM/Material extrusion", 2],
   ["DLP", 2],
   ["SLA", 2],
@@ -178,7 +176,6 @@ const LABEL_TRANSLATIONS = {
     "건설/대형 제조": "Construction/Large-scale",
     "복합재/소재 제조": "Composites/Materials",
     "툴패스": "Toolpath",
-    "퍼지/재료전환": "Purge/Material Switching",
     "제조 자동화": "Manufacturing Automation",
     "경로계획": "Path Planning",
     "메타물질": "Metamaterials",
@@ -191,17 +188,13 @@ const LABEL_TRANSLATIONS = {
     "계산설계": "Computational Design",
     "재료분포 최적화": "Material Distribution Optimization",
     "툴패스 계획": "Toolpath Planning",
-    "재료 전환 / 퍼지 감소": "Material Switching / Purge Reduction",
     "그래프 탐색 / 경로 계획 알고리즘": "Graph Search / Path Planning",
     "적층제조를 위한 AI 및 머신러닝": "AI and ML for AM",
     "재료분포": "Material Distribution",
-    "퍼지 감소": "Purge Reduction",
     "툴패스": "Toolpath",
     "툴패스 전략": "Toolpath Strategy",
     "경로계획": "Path Planning",
     "공정 최적화": "Process Optimization",
-    "재료 전환": "Material Switching",
-    "퍼지/재료전환": "Purge/Material Switching",
     "리뷰": "Review",
     "서베이": "Survey",
     "메타물질": "Metamaterials",
@@ -232,7 +225,6 @@ const TAG_LABELS = {
     "Material behavior": "Material Behavior",
     "Computational design": "Computational Design",
     "Material distribution": "Material Distribution",
-    "Material switching": "Material Switching",
     "Path planning": "Path Planning",
     "Process optimization": "Process Optimization",
     "Manufacturing automation": "Manufacturing Automation",
@@ -262,7 +254,6 @@ const TAG_CATEGORY_ALIASES = {
   "Toolpath strategy": "툴패스 계획",
   "Path planning": "그래프 탐색 / 경로 계획 알고리즘",
   "Material distribution": "재료분포 최적화",
-  "Material switching": "재료 전환 / 퍼지 감소",
   "Computational design": "계산설계",
   MMAM: "다중재료 적층제조",
   FGAM: "기능성 구배 적층제조",
@@ -1910,7 +1901,6 @@ function explicitCanonicalAlias(value, text) {
     [["툴패스", "toolpath", "tool path"], "Toolpath strategy"],
     [["경로 계획", "path planning", "trajectory"], "Path planning"],
     [["공정 최적화", "제조 최적화", "최적화", "process optimization", "parameter optimization"], "Process optimization"],
-    [["재료 전환", "material switching", "purge"], "Material switching"],
     [["소재 분포", "재료 분포", "material distribution"], "Material distribution"],
     [["inverse design"], "Inverse Design"],
     [["계산 설계", "계산설계", "설계 자동화", "computational design", "design automation", "generative design"], "Design automation"],
@@ -1977,7 +1967,6 @@ function canonicalTopicLabel(tag) {
   if (hasAny(text, ["machine learning", "deep learning", "reinforcement learning", "ai/ml", "머신러닝", "머신 러닝", "기계 학습", "딥러닝", "강화 학습", "인공지능"])) return "Machine learning";
   if (hasAny(text, ["review", "survey", "리뷰", "서베이"])) return "Review";
   if (hasAny(text, ["material distribution", "재료분포", "재료 분포"])) return "Material distribution";
-  if (hasAny(text, ["material switching", "purge", "재료 전환", "퍼지"])) return "Material switching";
   if (hasAny(text, ["honeycomb", "벌집"])) return "Honeycomb";
   if (hasAny(text, ["energy absorption", "energy dissipation", "에너지 소산", "에너지 흡수"])) return "Energy absorption";
   if (hasAny(text, ["reusable", "reusability", "재사용"])) return "Reusability";
@@ -2138,7 +2127,6 @@ function deriveField(paper) {
     titleText.includes("다중재료") ||
     titleText.includes("기능성 구배") ||
     titleText.includes("툴패스") ||
-    titleText.includes("재료 전환") ||
     titleText.includes("3d 프린팅")
   ) {
     return "3D 프린팅";
@@ -2274,7 +2262,6 @@ function deriveSubtopics(paper) {
   if (hasSlaSignal(text)) subtopics.add("SLA");
   if (hasAny(text, ["vat photopolymerization", "vat photopolymerisation", "vat polymerization", "vat polymerisation"])) subtopics.add("Vat photopolymerization");
   if (hasAny(text, ["toolpath", "path planning", "graph search", "trajectory", "툴패스", "경로계획", "경로 계획"])) subtopics.add("툴패스");
-  if (hasAny(text, ["purge", "switching", "transition", "waste", "퍼지", "재료 전환", "전환"])) subtopics.add("퍼지/재료전환");
 
   if (hasAny(text, ["4d printing", "4d printed", "4d-printed", "4d print", "4d 프린팅"])) subtopics.add("4D printing");
   if (hasAny(text, ["lce", "liquid crystal elastomer", "liquid-crystal elastomer"])) subtopics.add("LCE");

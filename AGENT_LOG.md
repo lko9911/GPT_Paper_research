@@ -7185,3 +7185,37 @@
 
 ### Notes / Cautions
 - OpenAI, Crossref, and OpenAlex APIs were not called.
+
+## 2026-06-27 10:02
+### Change Summary
+- Removed `Material Switching` / purge-related keywords from collection, classification, sidebar aggregation, and structured paper tags.
+
+### Modified / Created Files
+- `assets/app.js`: Removed `Material Switching` from sidebar subtopics, tag labels, canonical aliases, representative tag priority, and frontend subtopic inference.
+- `data/queries.json`: Removed material-switching and purge-reduction collection queries.
+- `scripts/update_papers.py`: Removed material switching / purge as relevance topic terms for future updates.
+- `scripts/summarize.py`: Removed the material-switching category, keyword map, tag map, aliases, fallback tags, and score boosts for future summaries.
+- `scripts/aml_common.py`: Removed material switching from AML recommendation profile terms.
+- `scripts/collect_aml_candidates.py`: Removed material switching from AML candidate signal matching.
+- `scripts/generate_aml_profile.py`: Removed material switching from generated profile interests and high-relevance criteria.
+- `data/papers.json`, `data/archive_papers.json`, `public/data/aml_recommended_papers.json`: Removed material-switching/purge values from structured `categories`, `tags`, and `matched_topics`.
+- `data/papers_index.json`, `data/archive_papers_index.json`, `data/details/*`, `data/archive_details/*`: Rebuilt split website data.
+- `data/papers.csv`, `data/papers.xlsx`: Regenerated exports from the cleaned active dataset.
+- `index.html`: Bumped CSS/JS cache query versions for deployment.
+- `AGENT_LOG.md`: Recorded this keyword removal.
+
+### Implemented Features
+- `Material Switching` no longer appears as a left-sidebar subtopic or representative card tag.
+- Existing structured paper metadata no longer contributes material-switching/purge values to tag or sidebar aggregation.
+- Future scheduled/manual metadata updates no longer use material-switching/purge queries or classification boosts.
+
+### Design Decisions
+- Paper titles and scientific summary sentences were not edited just because they mention material switching; those are paper content, not tracker keywords.
+- Only structured filtering/aggregation fields and future keyword logic were changed.
+
+### Remaining Work
+- After deployment, confirm the left sidebar and tag dropdown no longer expose `Material Switching` or purge-related labels.
+
+### Notes / Cautions
+- OpenAI, Crossref, and OpenAlex APIs were not called.
+- Active paper count remains 1,587; this cleanup changes topic/tag visibility, not venue trust filtering.
