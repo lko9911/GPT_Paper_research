@@ -4527,9 +4527,9 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Zhenlu Xu",
-        "openalex_author_id": "https://openalex.org/A5056473819",
-        "orcid": "https://orcid.org/0009-0007-0580-017X",
+        "name": "Wenjun Xu",
+        "openalex_author_id": "https://openalex.org/A5059180329",
+        "orcid": "https://orcid.org/0000-0001-5370-3437",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -6014,51 +6014,9 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [
-      {
-        "name": "Xianhua Tan",
-        "openalex_author_id": "https://openalex.org/A5110618619",
-        "orcid": "https://orcid.org/0000-0002-6285-6774",
-        "position": "first",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "Central South University",
-            "ror": "https://ror.org/00f1zfq44",
-            "country_code": "CN",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "School of Mechanical and Electrical Engineering, Central South University, Changsha, 410083, China",
-          "Central South University"
-        ]
-      },
-      {
-        "name": "Yongcheng Lin",
-        "openalex_author_id": null,
-        "orcid": null,
-        "position": "middle",
-        "is_corresponding": true,
-        "institutions": [],
-        "raw_affiliation_strings": [
-          "School of Mechanical and Electrical Engineering, Central South University, Changsha, 410083, China"
-        ]
-      },
-      {
-        "name": "Ming-Song Chen",
-        "openalex_author_id": "https://openalex.org/A5102865504",
-        "orcid": "https://orcid.org/0000-0003-3828-4996",
-        "position": "middle",
-        "is_corresponding": true,
-        "institutions": [],
-        "raw_affiliation_strings": [
-          "State Key Laboratory of Precision Manufacturing for Extreme Service Performance, Changsha, 410083, China"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
     "year": 2026,
     "venue": "The International Journal of Advanced Manufacturing Technology",
     "doi": "10.1007/s00170-026-18289-x",
@@ -6078,7 +6036,7 @@
     "issn_l": "",
     "publisher": "Springer Science and Business Media LLC",
     "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
+    "openalex_used_for": null,
     "openalex_crosscheck_work_id": "https://openalex.org/W4410432611",
     "openalex_work_id": "",
     "openalex_source_id": "",
@@ -19027,10 +18985,10 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Antonio M. Ortiz",
-        "openalex_author_id": "https://openalex.org/A5114032187",
-        "orcid": "https://orcid.org/0000-0002-7145-8241",
-        "position": "middle",
+        "name": "Assia Belbachir",
+        "openalex_author_id": "https://openalex.org/A5051482797",
+        "orcid": "https://orcid.org/0000-0002-1294-8478",
+        "position": "first",
         "is_corresponding": true,
         "institutions": [
           {
@@ -19045,28 +19003,28 @@
         ]
       },
       {
-        "name": "An Ngoc Lam",
-        "openalex_author_id": "https://openalex.org/A5090441887",
-        "orcid": "https://orcid.org/0000-0003-4929-054X",
+        "name": "Wissam Mallouli",
+        "openalex_author_id": "https://openalex.org/A5084443011",
+        "orcid": "https://orcid.org/0000-0003-2548-6628",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
-          {
-            "name": "SINTEF",
-            "ror": "https://ror.org/01f677e56",
-            "country_code": "NO",
-            "type": "facility"
-          },
           {
             "name": "NORCE Research AS",
             "ror": "https://ror.org/02gagpf75",
             "country_code": "NO",
             "type": "facility"
+          },
+          {
+            "name": "Montimage (France)",
+            "ror": "https://ror.org/02a8qtz61",
+            "country_code": "FR",
+            "type": "company"
           }
         ],
         "raw_affiliation_strings": [
           "NORCE Research AS, Grimstad, Norway",
-          "SINTEF AS, Oslo/Porsgrunn, Norway"
+          "Montimage, Paris, France"
         ]
       }
     ],
@@ -29319,9 +29277,9 @@
     ],
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "Journal of Manufacturing Processes",
-    "crossref_target_issn": "1526-6125",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
     "issn": [
       "1526-6125"
     ],
@@ -39018,7 +38976,7 @@
     "publisher": "Elsevier BV",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4415200143",
     "openalex_work_id": "",
     "openalex_source_id": "",
     "venue_metrics": {},
@@ -43673,7 +43631,7 @@
     "is_weekly_new": false
   },
   {
-    "id": "10.1002/aisy.202500430",
+    "id": "10.1002/aisy.70218",
     "title": "Toward More Autonomous Soft Robots: Development and Characterization of a 3D-Printed Pneumatic Contact Sensor for a Six-Legged Soft Robotic Walker",
     "authors": [
       "Philipp Auth",
@@ -43829,8 +43787,7 @@
         ],
         "raw_affiliation_strings": [
           "Cluster of Excellence livMatS @ FIT ‐ Freiburg Center for Interactive Materials and Bioinspired Technologies  79110 Freiburg i. Br. Germany",
-          "Plant Biomechanics Group Freiburg, Botanic Garden University of Freiburg  79104 Freiburg i. Br. Germany",
-          "Plant Biomechanics Group Freiburg, Botanic Garden, University of Freiburg, 79104 Freiburg i. Br., Germany"
+          "Plant Biomechanics Group Freiburg, Botanic Garden University of Freiburg  79104 Freiburg i. Br. Germany"
         ]
       }
     ],
@@ -43838,8 +43795,8 @@
     "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Advanced Intelligent Systems",
-    "doi": "10.1002/aisy.202500430",
-    "url": "https://doi.org/10.1002/aisy.202500430",
+    "doi": "10.1002/aisy.70218",
+    "url": "https://doi.org/10.1002/aisy.70218",
     "source": [
       "Crossref"
     ],
@@ -43856,7 +43813,7 @@
     "publisher": "Wiley",
     "openalex_checked": true,
     "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4414949582",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7130522311",
     "openalex_work_id": "",
     "openalex_source_id": "",
     "venue_metrics": {},
@@ -43876,22 +43833,19 @@
     "venue_scope": "non-core",
     "core_source": "schema_placeholder_crossref_rebuild",
     "categories": [
-      "Multi-material AM",
-      "Functionally Graded AM"
+      "Multi-material AM"
     ],
     "tags": [
-      "soft robotics",
-      "pneumatic sensors",
-      "autonomous systems",
-      "3D printing"
+      "Soft robotics",
+      "Manufacturing automation"
     ],
     "relevance_score": 5,
     "curation_priority": false,
-    "ai_summary_en": "1. Topic - The paper discusses the development of a 3D-printed pneumatic contact sensor for a soft robotic walker.\n2. Problem - Current soft robots rely on electronic sensors, which complicate systems and limit adaptability in challenging environments.\n3. Method - The authors created an electronics-free sensory system using pneumatic logic gates integrated into a six-legged soft robot.\n4. Key Result - The robot demonstrated rapid sensor response times and the ability to walk autonomously while effectively detecting obstacles.\n5. Takeaway - This work advances the field of soft robotics by enhancing autonomy and adaptability through electronics-free control systems.",
-    "summary_provider": "openai",
-    "openai_summary_applied": true,
-    "relevance_note_en": "The summary captures the essence of the research on enhancing soft robot autonomy without electronics.",
-    "abstract_used_for_summary": true,
+    "ai_summary_en": "1. Topic - Toward More Autonomous Soft Robots: Development and Characterization of a 3D-Printed Pneumatic Contact Sensor for a Six-Legged Soft Robotic Walker is a 2026 paper from Advanced Intelligent Systems about Soft robotics and Manufacturing automation.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Soft robotics and Manufacturing automation.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Soft robotics and Manufacturing automation; current relevance score is 5/10.",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_en": "Relevant to the tracker through Soft robotics and Manufacturing automation; score: 5/10.",
+    "abstract_used_for_summary": false,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
@@ -61302,9 +61256,9 @@
     ],
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "3D Printing and Additive Manufacturing",
+    "crossref_target_issn": "2329-7662",
     "issn": [
       "2329-7662",
       "2329-7670"
@@ -67706,8 +67660,8 @@
         ]
       },
       {
-        "name": "Luquan Ren",
-        "openalex_author_id": "https://openalex.org/A5133795267",
+        "name": "Lei Ren",
+        "openalex_author_id": "https://openalex.org/A5133749330",
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -72850,18 +72804,12 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Narendra Pandala",
-        "openalex_author_id": "https://openalex.org/A5025179556",
-        "orcid": "https://orcid.org/0000-0002-3057-8327",
-        "position": "middle",
+        "name": "Maria A. Bieberich",
+        "openalex_author_id": "https://openalex.org/A5081851152",
+        "orcid": "https://orcid.org/0000-0002-1518-5330",
+        "position": "first",
         "is_corresponding": true,
         "institutions": [
-          {
-            "name": "University of Iowa",
-            "ror": "https://ror.org/036jqmy94",
-            "country_code": "US",
-            "type": "education"
-          },
           {
             "name": "University of Maryland, Baltimore County",
             "ror": "https://ror.org/02qskvh78",
@@ -72870,8 +72818,7 @@
           }
         ],
         "raw_affiliation_strings": [
-          "University of Maryland, Baltimore County, Baltimore, Maryland, USA",
-          "Institute for Vision Research, Carver College of Medicine, University of Iowa, Iowa City, Iowa, USA"
+          "University of Maryland, Baltimore County, Baltimore, Maryland, USA"
         ]
       },
       {
@@ -72903,7 +72850,7 @@
         "name": "Erin Lavik",
         "openalex_author_id": "https://openalex.org/A5079335476",
         "orcid": "https://orcid.org/0000-0002-0644-744X",
-        "position": "last",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -78270,8 +78217,8 @@
         ]
       },
       {
-        "name": "Lei Ren",
-        "openalex_author_id": null,
+        "name": "L. Ren",
+        "openalex_author_id": "https://openalex.org/A5003419669",
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -98693,8 +98640,8 @@
           "Department of Mechanical and Aerospace Engineering The Hong Kong University of Science and Technology  Hong Kong SAR 999077 China",
           "Division of Emerging Interdisciplinary Areas Academy of Interdisciplinary Studies The Hong Kong University of Science and Technology  Hong Kong SAR 999077 China",
           "Smart Manufacturing Thrust Systems Hub The Hong Kong University of Science and Technology (Guangzhou)  Guangzhou 511400 China",
-          "Department of Mechanical and Aerospace Engineering, The Hong Kong University of Science and Technology, Hong Kong SAR, 999077 China",
-          "Division of Emerging Interdisciplinary Areas, Academy of Interdisciplinary Studies, The Hong Kong University of Science and Technology, Hong Kong SAR, 999077 China"
+          "Division of Emerging Interdisciplinary Areas, Academy of Interdisciplinary Studies, The Hong Kong University of Science and Technology, Hong Kong SAR, 999077 China",
+          "Department of Mechanical and Aerospace Engineering, The Hong Kong University of Science and Technology, Hong Kong SAR, 999077 China"
         ]
       }
     ],
@@ -103818,8 +103765,8 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Zhangdong Chen",
-        "openalex_author_id": "https://openalex.org/A5070746638",
+        "name": "Aoming Zhang",
+        "openalex_author_id": "https://openalex.org/A5111021439",
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -103836,9 +103783,9 @@
         ]
       },
       {
-        "name": "Xiaoqi Chen",
-        "openalex_author_id": "https://openalex.org/A5100704656",
-        "orcid": "https://orcid.org/0000-0003-3227-4607",
+        "name": "Di Wang",
+        "openalex_author_id": "https://openalex.org/A5100401383",
+        "orcid": "https://orcid.org/0000-0001-5727-2777",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -108884,8 +108831,8 @@
       },
       {
         "name": "Wenzhuo Liu",
-        "openalex_author_id": null,
-        "orcid": null,
+        "openalex_author_id": "https://openalex.org/A5107441690",
+        "orcid": "https://orcid.org/0009-0004-3542-8418",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -124271,6 +124218,12 @@
             "type": "education"
           },
           {
+            "name": "Universität Ulm",
+            "ror": "https://ror.org/032000t02",
+            "country_code": "DE",
+            "type": "education"
+          },
+          {
             "name": "University of Manchester",
             "ror": "https://ror.org/027m9bs27",
             "country_code": "GB",
@@ -124287,16 +124240,14 @@
           "Department of Mechanical, Aerospace, and Civil Engineering University of Manchester  Manchester M13 9PL UK",
           "Institute of Structured and Architected Materials Liaoning Academy of Materials  Shenyang 110167 China",
           "Key Laboratory of Bionic Engineering Ministry of Education Jilin University  Changchun 130022 China",
-          "Institute of Structured and Architected Materials, Liaoning Academy of Materials, Shenyang, 110167 China",
-          "Key Laboratory of Bionic Engineering, Ministry of Education, Jilin University, Changchun, 130022 China",
-          "Department of Mechanical, Aerospace, and Civil Engineering, University of Manchester, Manchester, M13 9PL UK"
+          "Institute of Orthopaedic Research and Biomechanics, Ulm University Medical Centre, University of Ulm, 89081 Ulm, Germany"
         ]
       },
       {
         "name": "Luquan Ren",
         "openalex_author_id": null,
         "orcid": null,
-        "position": "last",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -136906,7 +136857,7 @@
         "name": "Xiaofeng Wang",
         "openalex_author_id": null,
         "orcid": "https://orcid.org/0000-0002-9913-1064",
-        "position": "middle",
+        "position": "last",
         "is_corresponding": true,
         "institutions": [
           {
@@ -158776,9 +158727,9 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Zhilei Hao",
-        "openalex_author_id": "https://openalex.org/A5108304651",
-        "orcid": null,
+        "name": "Pei Liu",
+        "openalex_author_id": "https://openalex.org/A5086175031",
+        "orcid": "https://orcid.org/0009-0003-4285-053X",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -189457,9 +189408,9 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Xiaoqi Chen",
-        "openalex_author_id": "https://openalex.org/A5100704656",
-        "orcid": "https://orcid.org/0000-0003-3227-4607",
+        "name": "Aoming Zhang",
+        "openalex_author_id": "https://openalex.org/A5111021439",
+        "orcid": null,
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -189990,10 +189941,10 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Likun Wang",
-        "openalex_author_id": "https://openalex.org/A5100623561",
-        "orcid": "https://orcid.org/0000-0001-5646-9746",
-        "position": "middle",
+        "name": "Zi Wang",
+        "openalex_author_id": "https://openalex.org/A5100338326",
+        "orcid": "https://orcid.org/0000-0001-9081-7185",
+        "position": "first",
         "is_corresponding": true,
         "institutions": [
           {
@@ -202021,10 +201972,10 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Ratnesh Kumar Raj Singh",
-        "openalex_author_id": "https://openalex.org/A5066015004",
-        "orcid": "https://orcid.org/0000-0001-9377-6753",
-        "position": "middle",
+        "name": "Manish Pratap Singh",
+        "openalex_author_id": "https://openalex.org/A5021211339",
+        "orcid": "https://orcid.org/0000-0002-9530-2348",
+        "position": "first",
         "is_corresponding": true,
         "institutions": [
           {
@@ -208246,229 +208197,6 @@
     "first_added": "2026-06-19",
     "last_updated": "2026-06-27",
     "is_weekly_new": false
-  },
-  {
-    "id": "10.1111/jace.19653",
-    "title": "Direct additive manufacturing of Al2O3-TiCp functionally graded ceramics by laser-directed energy deposition",
-    "authors": [
-      "Xuexin Yu",
-      "Dongjiang Wu",
-      "Weiming Bi",
-      "Xiao Feng",
-      "Ziyuan Zhao",
-      "Yunbo Hao",
-      "Guangyi Ma",
-      "Cong Zhou",
-      "Fangyong Niu"
-    ],
-    "author_details": [
-      {
-        "name": "Xuexin Yu",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "State Key Laboratory of High‐Performance Precision Manufacturing Dalian University of Technology  Dalian Liaoning P. R. China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "State Key Laboratory of High‐Performance Precision Manufacturing Dalian University of Technology  Dalian Liaoning P. R. China"
-        ]
-      },
-      {
-        "name": "Dongjiang Wu",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "State Key Laboratory of High‐Performance Precision Manufacturing Dalian University of Technology  Dalian Liaoning P. R. China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "State Key Laboratory of High‐Performance Precision Manufacturing Dalian University of Technology  Dalian Liaoning P. R. China"
-        ]
-      },
-      {
-        "name": "Weiming Bi",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "State Key Laboratory of High‐Performance Precision Manufacturing Dalian University of Technology  Dalian Liaoning P. R. China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "State Key Laboratory of High‐Performance Precision Manufacturing Dalian University of Technology  Dalian Liaoning P. R. China"
-        ]
-      },
-      {
-        "name": "Xiao Feng",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "State Key Laboratory of High‐Performance Precision Manufacturing Dalian University of Technology  Dalian Liaoning P. R. China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "State Key Laboratory of High‐Performance Precision Manufacturing Dalian University of Technology  Dalian Liaoning P. R. China"
-        ]
-      },
-      {
-        "name": "Ziyuan Zhao",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "State Key Laboratory of High‐Performance Precision Manufacturing Dalian University of Technology  Dalian Liaoning P. R. China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "State Key Laboratory of High‐Performance Precision Manufacturing Dalian University of Technology  Dalian Liaoning P. R. China"
-        ]
-      },
-      {
-        "name": "Yunbo Hao",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Shanghai Aerospace Equipments Manufacturer Co., Ltd  Shanghai P. R. China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Shanghai Aerospace Equipments Manufacturer Co., Ltd  Shanghai P. R. China"
-        ]
-      },
-      {
-        "name": "Guangyi Ma",
-        "orcid": "https://orcid.org/0000-0002-4480-7936",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "State Key Laboratory of High‐Performance Precision Manufacturing Dalian University of Technology  Dalian Liaoning P. R. China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "State Key Laboratory of High‐Performance Precision Manufacturing Dalian University of Technology  Dalian Liaoning P. R. China"
-        ]
-      },
-      {
-        "name": "Cong Zhou",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Mechanical and Energy Engineering Southern University of Science and Technology  Shenzhen Guangdong P. R. China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical and Energy Engineering Southern University of Science and Technology  Shenzhen Guangdong P. R. China"
-        ]
-      },
-      {
-        "name": "Fangyong Niu",
-        "orcid": "https://orcid.org/0000-0002-9403-2761",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "State Key Laboratory of High‐Performance Precision Manufacturing Dalian University of Technology  Dalian Liaoning P. R. China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "State Key Laboratory of High‐Performance Precision Manufacturing Dalian University of Technology  Dalian Liaoning P. R. China"
-        ]
-      }
-    ],
-    "corresponding_authors": [
-      {
-        "name": "Fangyong Niu",
-        "openalex_author_id": "https://openalex.org/A5054625300",
-        "orcid": "https://orcid.org/0000-0002-9403-2761",
-        "position": "last",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "Dalian University of Technology",
-            "ror": "https://ror.org/023hj5876",
-            "country_code": "CN",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "State Key Laboratory of High‐Performance Precision Manufacturing Dalian University of Technology  Dalian Liaoning P. R. China",
-          "State Key Laboratory of High-Performance Precision Manufacturing, Dalian University of Technology, Dalian, Liaoning, P. R. China"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "year": 2024,
-    "venue": "Journal of the American Ceramic Society",
-    "doi": "10.1111/jace.19653",
-    "url": "https://doi.org/10.1111/jace.19653",
-    "source": [
-      "Crossref"
-    ],
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "0002-7820",
-      "1551-2916"
-    ],
-    "issn_l": "",
-    "publisher": "Wiley",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4390541027",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "publication_type": "journal_article",
-    "venue_trust": "trusted",
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "is_core_venue": false,
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "categories": [
-      "Functionally Graded AM"
-    ],
-    "tags": [
-      "Additive manufacturing"
-    ],
-    "relevance_score": 6,
-    "curation_priority": false,
-    "ai_summary_en": "1. Topic - Direct additive manufacturing of Al2O3-TiCp functionally graded ceramics by laser-directed energy deposition is a 2024 paper from Journal of the American Ceramic Society about Additive manufacturing.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Additive manufacturing.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Additive manufacturing; current relevance score is 6/10.",
-    "summary_provider": "fallback",
-    "openai_summary_applied": false,
-    "relevance_note_en": "Relevant to the tracker through Additive manufacturing; score: 6/10.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "first_added": "2026-06-26",
-    "last_updated": "2026-06-27",
-    "is_weekly_new": true
   },
   {
     "id": "10.1002/adfm.202470270",
@@ -217266,9 +216994,9 @@
         ]
       },
       {
-        "name": "Zihuan Chen",
-        "openalex_author_id": "https://openalex.org/A5024222220",
-        "orcid": null,
+        "name": "Shan Li",
+        "openalex_author_id": "https://openalex.org/A5021433428",
+        "orcid": "https://orcid.org/0000-0002-1005-3216",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -218383,7 +218111,7 @@
       },
       {
         "name": "Huanyue Zhang",
-        "openalex_author_id": null,
+        "openalex_author_id": "https://openalex.org/A5014806689",
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -218404,7 +218132,7 @@
         "raw_affiliation_strings": [
           "Department of Orthopedics, Central Hospital of Dalian University of Technology, Dalian, People’s Republic of China",
           "Instrumental Analysis Center, Dalian University of Technology, Dalian, People’s Republic of China",
-          "Department of Orthopedics, Central Hospital of Dalian University of Technology, Dalian, People's Republic of China"
+          "Instrumental Analysis Center, Dalian University of Technology, Dalian, People's Republic of China"
         ]
       },
       {
@@ -244920,9 +244648,9 @@
         ]
       },
       {
-        "name": "Ji Zhou",
-        "openalex_author_id": "https://openalex.org/A5063427028",
-        "orcid": "https://orcid.org/0000-0003-1502-2504",
+        "name": "Bo Li",
+        "openalex_author_id": "https://openalex.org/A5100628411",
+        "orcid": "https://orcid.org/0000-0001-5633-936X",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -255277,9 +255005,9 @@
           "Engineering Technology Research Center for Rapid Manufacturing of Shaanxi Province, Xi'an Jiaotong University, Xi'an, People’s Republic of China",
           "School of Mechanical Engineering, Xi'an Jiaotong University, Xi'an, People’s Republic of China",
           "State Key Laboratory for Manufacturing System Engineering, Xi'an Jiaotong University, Xi'an, People’s Republic of China",
+          "School of Mechanical Engineering, Xi'an Jiaotong University, Xi'an, People's Republic of China",
           "State Key Laboratory for Manufacturing System Engineering, Xi'an Jiaotong University, Xi'an, People's Republic of China",
-          "Engineering Technology Research Center for Rapid Manufacturing of Shaanxi Province, Xi'an Jiaotong University, Xi'an, People's Republic of China",
-          "School of Mechanical Engineering, Xi'an Jiaotong University, Xi'an, People's Republic of China"
+          "Engineering Technology Research Center for Rapid Manufacturing of Shaanxi Province, Xi'an Jiaotong University, Xi'an, People's Republic of China"
         ]
       },
       {

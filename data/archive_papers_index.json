@@ -2671,7 +2671,8 @@
       "Falk Tauber"
     ],
     "categories": [
-      "Multi-material AM"
+      "Multi-material AM",
+      "Functionally Graded AM"
     ],
     "corresponding_authors": [
       {
@@ -2680,25 +2681,27 @@
       }
     ],
     "curation_priority": false,
-    "doi": "10.1002/aisy.70218",
+    "doi": "10.1002/aisy.202500430",
     "first_added": "2026-06-19",
-    "id": "10.1002/aisy.70218",
+    "id": "10.1002/aisy.202500430",
     "is_core_venue": false,
     "is_weekly_new": false,
     "last_updated": "2026-06-27",
-    "openai_summary_applied": false,
+    "openai_summary_applied": true,
     "publication_type": "journal_article",
     "relevance_score": 5,
     "source": [
       "Crossref"
     ],
-    "summary_provider": "fallback",
+    "summary_provider": "openai",
     "tags": [
-      "Soft robotics",
-      "Manufacturing automation"
+      "soft robotics",
+      "pneumatic sensors",
+      "autonomous systems",
+      "3D printing"
     ],
     "title": "Toward More Autonomous Soft Robots: Development and Characterization of a 3D-Printed Pneumatic Contact Sensor for a Six-Legged Soft Robotic Walker",
-    "url": "https://doi.org/10.1002/aisy.70218",
+    "url": "https://doi.org/10.1002/aisy.202500430",
     "venue": "Advanced Intelligent Systems",
     "venue_trust": "trusted",
     "year": 2026,
@@ -4101,26 +4104,23 @@
   {
     "archive_reason": "low_venue_trust",
     "authors": [
-      "Hamed Yazdani Nezhad"
+      "Rishabha Malviya",
+      "Suraj Kumar",
+      "Sathvik Belagodu Sridhar",
+      "Pooja Shivappa"
     ],
     "categories": [
       "Multi-material AM"
     ],
-    "corresponding_authors": [
-      {
-        "name": "Hamed Yazdani Nezhad",
-        "is_corresponding": true
-      }
-    ],
     "curation_priority": false,
-    "doi": "10.1016/b978-0-443-28820-3.00014-7",
+    "doi": "10.1515/9783111634609",
     "first_added": "2026-06-27",
-    "id": "10.1016/b978-0-443-28820-3.00014-7",
+    "id": "10.1515/9783111634609",
     "is_core_venue": false,
     "is_weekly_new": true,
     "last_updated": "2026-06-27",
     "openai_summary_applied": false,
-    "publication_type": "book_or_chapter",
+    "publication_type": "unknown",
     "relevance_score": 5,
     "source": [
       "Crossref"
@@ -4129,9 +4129,9 @@
     "tags": [
       "4D printing"
     ],
-    "title": "3D/4D printing of electromagnetic field-assisted multifunctional polymer composites",
-    "url": "https://doi.org/10.1016/b978-0-443-28820-3.00014-7",
-    "venue": "Innovations in Advanced Materials and Manufacturing",
+    "title": "4D Printing in Healthcare",
+    "url": "https://doi.org/10.1515/9783111634609",
+    "venue": "",
     "venue_trust": "low",
     "year": 2026,
     "status": "archived"
@@ -13277,6 +13277,44 @@
     "title": "Molecularly imprinted polymer nanoparticles: solid-phase synthesis and molecularly imprinted nanoparticle assay",
     "url": "https://doi.org/10.1016/b978-0-443-15359-4.00004-8",
     "venue": "Biophysics at the Nanoscale",
+    "venue_trust": "low",
+    "year": 2024,
+    "status": "archived"
+  },
+  {
+    "archive_reason": "low_venue_trust",
+    "authors": [
+      "G. ERTUGRUL"
+    ],
+    "categories": [
+      "AI and Machine Learning for AM"
+    ],
+    "corresponding_authors": [
+      {
+        "name": "G. ERTUGRUL",
+        "is_corresponding": true
+      }
+    ],
+    "curation_priority": false,
+    "doi": "10.21741/9781644903131-31",
+    "first_added": "2026-06-27",
+    "id": "10.21741/9781644903131-31",
+    "is_core_venue": false,
+    "is_weekly_new": true,
+    "last_updated": "2026-06-27",
+    "openai_summary_applied": false,
+    "publication_type": "conference_proceedings",
+    "relevance_score": 7,
+    "source": [
+      "Crossref"
+    ],
+    "summary_provider": "fallback",
+    "tags": [
+      "Digital Twins"
+    ],
+    "title": "Machine learning application for optimization of laser directed energy deposition process for aerospace component rapid prototyping in additive manufacturing",
+    "url": "https://doi.org/10.21741/9781644903131-31",
+    "venue": "Materials Research Proceedings",
     "venue_trust": "low",
     "year": 2024,
     "status": "archived"

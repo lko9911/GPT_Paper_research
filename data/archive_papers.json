@@ -193,7 +193,7 @@
     "publisher": "Elsevier BV",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7166070461",
     "openalex_work_id": "",
     "openalex_source_id": "",
     "venue_metrics": {},
@@ -7711,7 +7711,7 @@
     "archive_reason": "low_venue_trust"
   },
   {
-    "id": "10.1002/aisy.70218",
+    "id": "10.1002/aisy.202500430",
     "title": "Toward More Autonomous Soft Robots: Development and Characterization of a 3D-Printed Pneumatic Contact Sensor for a Six-Legged Soft Robotic Walker",
     "authors": [
       "Philipp Auth",
@@ -7867,7 +7867,8 @@
         ],
         "raw_affiliation_strings": [
           "Cluster of Excellence livMatS @ FIT ‐ Freiburg Center for Interactive Materials and Bioinspired Technologies  79110 Freiburg i. Br. Germany",
-          "Plant Biomechanics Group Freiburg, Botanic Garden University of Freiburg  79104 Freiburg i. Br. Germany"
+          "Plant Biomechanics Group Freiburg, Botanic Garden University of Freiburg  79104 Freiburg i. Br. Germany",
+          "Plant Biomechanics Group Freiburg, Botanic Garden, University of Freiburg, 79104 Freiburg i. Br., Germany"
         ]
       }
     ],
@@ -7875,8 +7876,8 @@
     "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Advanced Intelligent Systems",
-    "doi": "10.1002/aisy.70218",
-    "url": "https://doi.org/10.1002/aisy.70218",
+    "doi": "10.1002/aisy.202500430",
+    "url": "https://doi.org/10.1002/aisy.202500430",
     "source": [
       "Crossref"
     ],
@@ -7893,7 +7894,7 @@
     "publisher": "Wiley",
     "openalex_checked": true,
     "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W7130522311",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4414949582",
     "openalex_work_id": "",
     "openalex_source_id": "",
     "venue_metrics": {},
@@ -7913,19 +7914,22 @@
     "venue_scope": "non-core",
     "core_source": "schema_placeholder_crossref_rebuild",
     "categories": [
-      "Multi-material AM"
+      "Multi-material AM",
+      "Functionally Graded AM"
     ],
     "tags": [
-      "Soft robotics",
-      "Manufacturing automation"
+      "soft robotics",
+      "pneumatic sensors",
+      "autonomous systems",
+      "3D printing"
     ],
     "relevance_score": 5,
     "curation_priority": false,
-    "ai_summary_en": "1. Topic - Toward More Autonomous Soft Robots: Development and Characterization of a 3D-Printed Pneumatic Contact Sensor for a Six-Legged Soft Robotic Walker is a 2026 paper from Advanced Intelligent Systems about Soft robotics and Manufacturing automation.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Soft robotics and Manufacturing automation.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Soft robotics and Manufacturing automation; current relevance score is 5/10.",
-    "summary_provider": "fallback",
-    "openai_summary_applied": false,
-    "relevance_note_en": "Relevant to the tracker through Soft robotics and Manufacturing automation; score: 5/10.",
-    "abstract_used_for_summary": false,
+    "ai_summary_en": "1. Topic - The paper discusses the development of a 3D-printed pneumatic contact sensor for a soft robotic walker.\n2. Problem - Current soft robots rely on electronic sensors, which complicate systems and limit adaptability in challenging environments.\n3. Method - The authors created an electronics-free sensory system using pneumatic logic gates integrated into a six-legged soft robot.\n4. Key Result - The robot demonstrated rapid sensor response times and the ability to walk autonomously while effectively detecting obstacles.\n5. Takeaway - This work advances the field of soft robotics by enhancing autonomy and adaptability through electronics-free control systems.",
+    "summary_provider": "openai",
+    "openai_summary_applied": true,
+    "relevance_note_en": "The summary captures the essence of the research on enhancing soft robot autonomy without electronics.",
+    "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
@@ -12387,61 +12391,69 @@
     "archive_reason": "low_venue_trust"
   },
   {
-    "id": "10.1016/b978-0-443-28820-3.00014-7",
-    "title": "3D/4D printing of electromagnetic field-assisted multifunctional polymer composites",
+    "id": "10.1515/9783111634609",
+    "title": "4D Printing in Healthcare",
     "authors": [
-      "Hamed Yazdani Nezhad"
+      "Rishabha Malviya",
+      "Suraj Kumar",
+      "Sathvik Belagodu Sridhar",
+      "Pooja Shivappa"
     ],
     "author_details": [
       {
-        "name": "Hamed Yazdani Nezhad",
+        "name": "Rishabha Malviya",
         "orcid": "",
         "position": "first",
         "is_corresponding": false,
         "institutions": [],
         "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_authors": [
+      },
       {
-        "name": "Hamed Yazdani Nezhad",
-        "openalex_author_id": "https://openalex.org/A5086144566",
-        "orcid": "https://orcid.org/0000-0003-0832-3579",
-        "position": "first",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "University of Leeds",
-            "ror": "https://ror.org/024mrxd33",
-            "country_code": "GB",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Faculty of Engineering and Physical Sciences, University of Leeds, Leeds, United Kingdom"
-        ]
+        "name": "Suraj Kumar",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Sathvik Belagodu Sridhar",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Pooja Shivappa",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
       }
     ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
     "year": 2026,
-    "venue": "Innovations in Advanced Materials and Manufacturing",
-    "doi": "10.1016/b978-0-443-28820-3.00014-7",
-    "url": "https://doi.org/10.1016/b978-0-443-28820-3.00014-7",
+    "venue": "",
+    "doi": "10.1515/9783111634609",
+    "url": "https://doi.org/10.1515/9783111634609",
     "source": [
       "Crossref"
     ],
     "metadata_source": "crossref",
-    "crossref_type": "book-chapter",
+    "crossref_type": "edited-book",
     "crossref_collection_route": "keyword_query",
     "crossref_target_venue": "",
     "crossref_target_issn": "",
     "issn": [],
     "issn_l": "",
-    "publisher": "Elsevier",
+    "publisher": "De Gruyter",
     "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W7139921186",
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
     "openalex_work_id": "",
     "openalex_source_id": "",
     "venue_metrics": {},
@@ -12453,9 +12465,9 @@
       "openalex_two_year_mean_citedness": null,
       "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
     },
-    "publication_type": "book_or_chapter",
+    "publication_type": "unknown",
     "venue_trust": "low",
-    "venue_trust_reason": "book/chapter output rather than journal or trusted conference article",
+    "venue_trust_reason": "missing venue metadata",
     "is_core_venue": false,
     "core_status": "non-core",
     "venue_scope": "non-core",
@@ -12468,7 +12480,7 @@
     ],
     "relevance_score": 5,
     "curation_priority": false,
-    "ai_summary_en": "1. Topic - 3D/4D printing of electromagnetic field-assisted multifunctional polymer composites is a 2026 paper from Innovations in Advanced Materials and Manufacturing about 4D printing.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to 4D printing.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for 4D printing; current relevance score is 5/10.",
+    "ai_summary_en": "1. Topic - 4D Printing in Healthcare is a 2026 paper from an unknown venue about 4D printing.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to 4D printing.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for 4D printing; current relevance score is 5/10.",
     "summary_provider": "fallback",
     "openai_summary_applied": false,
     "relevance_note_en": "Relevant to the tracker through 4D printing; score: 5/10.",
@@ -24791,7 +24803,7 @@
     "publisher": "Elsevier BV",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "https://openalex.org/W4415200143",
+    "openalex_crosscheck_work_id": "",
     "openalex_work_id": "",
     "openalex_source_id": "",
     "venue_metrics": {},
@@ -39531,6 +39543,102 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-24",
+    "last_updated": "2026-06-27",
+    "is_weekly_new": true,
+    "archive_reason": "low_venue_trust"
+  },
+  {
+    "id": "10.21741/9781644903131-31",
+    "title": "Machine learning application for optimization of laser directed energy deposition process for aerospace component rapid prototyping in additive manufacturing",
+    "authors": [
+      "G. ERTUGRUL"
+    ],
+    "author_details": [
+      {
+        "name": "G. ERTUGRUL",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_authors": [
+      {
+        "name": "G. ERTUGRUL",
+        "openalex_author_id": "https://openalex.org/A5095778492",
+        "orcid": null,
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Brandenburg University of Technology Cottbus-Senftenberg",
+            "ror": "https://ror.org/02wxx3e24",
+            "country_code": "DE",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Chair of Hybrid Manufacturing, Brandenburg University of Technology, Cottbus, Germany"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "year": 2024,
+    "venue": "Materials Research Proceedings",
+    "doi": "10.21741/9781644903131-31",
+    "url": "https://doi.org/10.21741/9781644903131-31",
+    "source": [
+      "Crossref"
+    ],
+    "metadata_source": "crossref",
+    "crossref_type": "proceedings-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2474-395X"
+    ],
+    "issn_l": "",
+    "publisher": "Materials Research Forum LLC",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4394952367",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "publication_type": "conference_proceedings",
+    "venue_trust": "low",
+    "venue_trust_reason": "conference/proceedings not in trusted allowlist",
+    "is_core_venue": false,
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "categories": [
+      "AI and Machine Learning for AM"
+    ],
+    "tags": [
+      "Digital Twins"
+    ],
+    "relevance_score": 7,
+    "curation_priority": false,
+    "ai_summary_en": "1. Topic - Machine learning application for optimization of laser directed energy deposition process for aerospace component rapid prototyping in additive manufacturing is a 2024 paper from Materials Research Proceedings about Digital Twins.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Digital Twins.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Digital Twins; current relevance score is 7/10.",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_en": "Relevant to the tracker through Digital Twins; score: 7/10.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-06-27",
     "last_updated": "2026-06-27",
     "is_weekly_new": true,
     "archive_reason": "low_venue_trust"
