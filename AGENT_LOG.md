@@ -7253,3 +7253,27 @@
 ### Notes / Cautions
 - OpenAI, Crossref, and OpenAlex APIs were not called.
 - Active paper count remains 1,587; this cleanup changes topic/tag visibility, not venue trust filtering.
+
+## 2026-06-27 10:23
+### Change Summary
+- Changed the left sidebar to show only main fields by default, with subtopics collapsed until a field is opened.
+
+### Modified / Created Files
+- `assets/app.js`: Added a sidebar collapse version and default-collapsed field state; clicking a collapsed main field now opens its subtopics while applying the field filter.
+- `index.html`: Bumped CSS/JS cache query versions for deployment.
+- `AGENT_LOG.md`: Recorded this sidebar behavior change.
+
+### Implemented Features
+- The left panel is shorter on first load because all field subtopic groups are collapsed by default.
+- Users can click a main field to expand its subtopics and browse deeper.
+- The existing caret collapse/expand behavior remains available.
+
+### Design Decisions
+- Existing local sidebar state is reset once with `SIDEBAR_COLLAPSE_VERSION` so previously expanded panels do not keep the sidebar long after deployment.
+- No paper data, collection workflow, or API behavior was changed.
+
+### Remaining Work
+- After deployment, visually confirm the left sidebar starts compact on desktop and mobile.
+
+### Notes / Cautions
+- OpenAI, Crossref, and OpenAlex APIs were not called.

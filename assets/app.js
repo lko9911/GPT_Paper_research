@@ -255,6 +255,7 @@ const TAG_CATEGORY_ALIASES = {
 const DEFAULT_THEME = "dark";
 const DEFAULT_LANGUAGE = "en";
 const PREFERENCE_VERSION = "20260618-english-comfort";
+const SIDEBAR_COLLAPSE_VERSION = "20260627-fields-collapsed-default";
 const UPDATE_STATUS_URLS = [
   "https://raw.githubusercontent.com/lko9911/GPT_Paper_research/main/data/update_status.json",
   "data/update_status.json",
@@ -272,6 +273,10 @@ const FILTER_DEBOUNCE_MS = 120;
 if (localStorage.getItem("preferenceVersion") !== PREFERENCE_VERSION) {
   localStorage.setItem("theme", DEFAULT_THEME);
   localStorage.setItem("preferenceVersion", PREFERENCE_VERSION);
+}
+if (localStorage.getItem("sidebarCollapseVersion") !== SIDEBAR_COLLAPSE_VERSION) {
+  localStorage.setItem("collapsedFields", JSON.stringify(FIELD_ORDER));
+  localStorage.setItem("sidebarCollapseVersion", SIDEBAR_COLLAPSE_VERSION);
 }
 localStorage.removeItem("language");
 
@@ -640,6 +645,9 @@ function buildSideNav() {
         els.category.value = "";
         if (els.tag) els.tag.value = "";
       } else {
+        if (state.collapsedFields.has(field)) {
+          toggleSideField(field);
+        }
         els.category.value = field;
         clearActiveSubtopics();
       }
