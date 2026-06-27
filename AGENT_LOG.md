@@ -7132,9 +7132,9 @@
 - Consider adding a dedicated UI filter for `Journal` versus `Conference` if the user wants explicit browsing by publication type.
 
 ### Notes / Cautions
-- Active dataset after filtering: 1,586 records; archive dataset: 544 records.
-- Active publication types: 1,574 journal articles and 12 trusted conference proceedings.
+- Active dataset after filtering: 1,587 records; archive dataset: 541 records.
+- Active publication types: 1,575 journal articles and 12 trusted conference proceedings.
 - Active low-trust venue count: 0.
-- Archive reasons after rebuild: 484 `low_venue_trust`, 55 `duplicate_title`, and 5 `low_relevance`.
-- AML public recommendations after filtering: 541 records with 0 low-trust venue records.
+- Archive reasons after rebuild: 488 `low_venue_trust`, 48 `duplicate_title`, and 5 `low_relevance`.
+- AML public recommendations after filtering: 545 records with 0 low-trust venue records.
 - OpenAI, Crossref, and OpenAlex APIs were not called for this cleanup; only local JSON/CSV/XLSX regeneration was performed.
