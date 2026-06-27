@@ -47,6 +47,8 @@ INDEX_FIELDS = {
     "corresponding_authors",
     "curation_priority",
     "is_core_venue",
+    "publication_type",
+    "venue_trust",
     "is_weekly_new",
     "archive_reason",
     "archive_scope_reasons",

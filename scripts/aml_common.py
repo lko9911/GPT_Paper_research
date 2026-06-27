@@ -185,10 +185,14 @@ def public_paper(record: dict[str, Any], updated_at: str) -> dict[str, Any]:
     doi = normalize_doi(record.get("doi", ""))
     url = record.get("url") or (f"https://doi.org/{doi}" if doi else "")
     authors = record.get("authors", []) or []
+    venue_classification = venue_classification_for_record(record)
     return {
         "title": record.get("title", ""),
         "doi": doi,
         "journal": record.get("journal") or record.get("venue", ""),
+        "publication_type": venue_classification["publication_type"],
+        "venue_trust": venue_classification["venue_trust"],
+        "venue_trust_reason": venue_classification["venue_trust_reason"],
         "year": record.get("year"),
         "authors": authors,
         "last_author": _last_author_name(record, authors),
@@ -238,3 +242,60 @@ def _last_author_name(record: dict[str, Any], authors: list[Any]) -> str:
             if name:
                 return name
     return ""
+
+
+def venue_classification_for_record(record: dict[str, Any]) -> dict[str, str]:
+    venue = normalize_text(record.get("journal") or record.get("venue") or "")
+    venue_key = normalize_key(venue)
+    crossref_type = normalize_key(record.get("crossref_type", "")).replace(" ", "-")
+    doi = normalize_doi(record.get("doi", ""))
+    text = f"{venue_key} {crossref_type} {doi}"
+    low_trust_markers = (
+        "international journal for research in applied science",
+        "ijraset",
+        "irjmets",
+        "international research journal of modernization",
+        "project repository journal",
+        "nexus",
+        "world journal",
+        "global journal",
+        "universal journal",
+        "multidisciplinary science journal",
+        "multidiszciplinaris tudomanyok",
+        "nusantara science and technology proceedings",
+    )
+    repository_markers = ("arxiv", "chemrxiv", "research square", "ssrn", "techrxiv", "zenodo", "figshare", "repository", "preprint")
+    trusted_conferences = (
+        "proceedings of the chi conference on human factors in computing systems",
+        "proceedings of the extended abstracts of the chi conference on human factors in computing systems",
+        "proceedings of the acm symposium on computational fabrication",
+        "ieee international conference on robotics and automation",
+        "ieee rsj international conference on intelligent robots and systems",
+        "ieee/rsj international conference on intelligent robots and systems",
+        "ieee international conference on soft robotics",
+        "ieee international conference on automation science and engineering",
+    )
+    if not venue or venue_key == "venue unknown":
+        return {"publication_type": "unknown", "venue_trust": "low", "venue_trust_reason": "missing venue metadata"}
+    if any(marker in text for marker in low_trust_markers):
+        return {"publication_type": "low_trust_journal_or_proceedings", "venue_trust": "low", "venue_trust_reason": "venue matches local low-trust marker list"}
+    if crossref_type == "posted-content" or any(marker in text for marker in repository_markers):
+        return {"publication_type": "preprint_or_repository", "venue_trust": "low", "venue_trust_reason": "preprint or repository source"}
+    if crossref_type in {"book-chapter", "book", "edited-book", "monograph", "reference-book", "reference-entry"}:
+        return {"publication_type": "book_or_chapter", "venue_trust": "low", "venue_trust_reason": "book/chapter output rather than journal or trusted conference article"}
+    if venue_key == "proceedings of the national academy of sciences":
+        return {"publication_type": "journal_article", "venue_trust": "trusted", "venue_trust_reason": "PNAS journal article"}
+    if crossref_type == "proceedings-article" or "proceedings" in venue_key or "conference" in venue_key:
+        trusted = any(item in venue_key for item in trusted_conferences)
+        return {
+            "publication_type": "conference_proceedings",
+            "venue_trust": "trusted" if trusted else "low",
+            "venue_trust_reason": "trusted conference allowlist" if trusted else "conference/proceedings not in trusted allowlist",
+        }
+    if crossref_type in {"journal-article", ""}:
+        return {"publication_type": "journal_article", "venue_trust": "trusted", "venue_trust_reason": "journal article with named venue and no low-trust marker"}
+    return {"publication_type": crossref_type or "other", "venue_trust": "low", "venue_trust_reason": "unsupported publication type"}
+
+
+def is_trusted_publication(record: dict[str, Any]) -> bool:
+    return venue_classification_for_record(record)["venue_trust"] != "low"

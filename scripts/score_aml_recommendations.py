@@ -26,6 +26,7 @@ from aml_common import (
     paper_text,
     public_paper,
     recommendation_level,
+    is_trusted_publication,
     stable_hash,
     write_json,
 )
@@ -68,8 +69,17 @@ def score_recommendations(
     public_items = [
         public_paper(item, updated_at)
         for item in scored
-        if item["recommendation_level"] != "Exclude" and float(item.get("aml_score") or 0.0) >= PUBLIC_AML_SCORE_THRESHOLD
+        if item["recommendation_level"] != "Exclude"
+        and float(item.get("aml_score") or 0.0) >= PUBLIC_AML_SCORE_THRESHOLD
+        and is_trusted_publication(item)
     ]
+    low_venue_trust_excluded = sum(
+        1
+        for item in scored
+        if item["recommendation_level"] != "Exclude"
+        and float(item.get("aml_score") or 0.0) >= PUBLIC_AML_SCORE_THRESHOLD
+        and not is_trusted_publication(item)
+    )
     write_json(PUBLIC_OUTPUT_PATH, public_items)
     write_json(SCORING_DEBUG_PATH, {"updated_at": updated_at, "items": scored})
     write_json(
@@ -81,6 +91,7 @@ def score_recommendations(
             "score_limit": "all" if max_candidates <= 0 else max_candidates,
             "public_count": len(public_items),
             "public_score_threshold": PUBLIC_AML_SCORE_THRESHOLD,
+            "public_low_venue_trust_excluded": low_venue_trust_excluded,
             "use_ai_judge": use_ai_judge,
             "use_ai_reason": use_ai_reason,
             "level_counts": _level_counts(scored),

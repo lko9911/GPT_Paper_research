@@ -2016,10 +2016,22 @@ function formatPublicationLabel(paper) {
   const year = paper.year ? String(paper.year) : "";
   const venue = normalizeVenue(paper.venue);
   const compactVenue = shortVenue(venue);
+  const typeLabel = publicationTypeLabel(paper.publication_type);
   if (!compactVenue || compactVenue === "Venue unknown") {
-    return year ? `Venue unknown ${year}` : "Venue unknown";
+    const unknown = year ? `Venue unknown ${year}` : "Venue unknown";
+    return typeLabel ? `${typeLabel} · ${unknown}` : unknown;
   }
-  return year ? `${compactVenue} ${year}` : compactVenue;
+  const label = year ? `${compactVenue} ${year}` : compactVenue;
+  return typeLabel ? `${typeLabel} · ${label}` : label;
+}
+
+function publicationTypeLabel(type) {
+  const value = String(type || "").toLowerCase();
+  if (value === "journal_article") return "Journal";
+  if (value === "conference_proceedings") return "Conference";
+  if (value === "preprint_or_repository") return "Preprint";
+  if (value === "book_or_chapter") return "Book";
+  return "";
 }
 
 function formatAuthors(authors) {

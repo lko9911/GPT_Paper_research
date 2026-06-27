@@ -7091,3 +7091,50 @@
 - Do not reintroduce automatic OpenAI calls into scheduled update workflows.
 - Do not display publisher abstracts or store PDFs.
 - Tests run: `python -m py_compile scripts/summarize.py scripts/update_papers.py scripts/refresh_openai_summaries.py`, `git diff --check`, and static JS reference checks for removed Korean-mode fields.
+
+## 2026-06-27 09:17
+### Change Summary
+- Added journal/conference publication-type classification and venue-trust filtering.
+- Moved low-trust or unsupported venues out of the active website dataset into the archive layer.
+- Regenerated active indexes, detail chunks, CSV/XLSX exports, and AML recommendation output using the new trusted-venue rule.
+
+### Modified / Created Files
+- `scripts/update_papers.py`: Added `_venue_classification`, `publication_type`, `venue_trust`, and `venue_trust_reason`; low-trust venues now archive as `low_venue_trust`.
+- `scripts/full_rebuild_crossref_dataset.py`: Preserved the same venue classification fields during Crossref full rebuild exports.
+- `scripts/build_split_data.py`: Added `publication_type` and `venue_trust` to lightweight index records for frontend filtering/display.
+- `scripts/aml_common.py`: Added matching trusted-publication classification for AML recommendations.
+- `scripts/score_aml_recommendations.py`: Prevented low-trust AML candidates from being published to `public/data/aml_recommended_papers.json`.
+- `assets/app.js`: Displayed publication type labels such as `Journal` and `Conference` in paper cards.
+- `data/papers.json`: Rebuilt active dataset after venue filtering.
+- `data/archive_papers.json`: Archived low-trust venue records while preserving traceability.
+- `data/papers_index.json`, `data/detail_manifest.json`, `data/details/*`: Rebuilt active lazy-load data.
+- `data/archive_papers_index.json`, `data/archive_detail_manifest.json`, `data/archive_details/*`: Rebuilt archive lazy-load data.
+- `data/papers.csv`, `data/papers.xlsx`: Regenerated exports from the active trusted dataset.
+- `data/site_meta.json`: Added/updated hidden low-venue-trust counts.
+- `public/data/aml_recommended_papers.json`: Rewrote AML public recommendations with venue-trust metadata.
+- `AGENT_LOG.md`: Recorded this venue-quality cleanup.
+
+### Implemented Features
+- Active site papers are now classified as journal articles or trusted conference proceedings.
+- Low-trust venue records, repository/preprint records, book/chapter records, unknown venues, and non-allowlisted proceedings are hidden from the main site list.
+- Trusted conference allowlist includes selected manufacturing/robotics/HCI venues such as ICRA, IROS, RoboSoft, CASE, CHI, and ACM computational fabrication proceedings.
+- AML recommendations use the same venue-trust gate before publication.
+
+### Design Decisions
+- Records were archived rather than permanently deleted so the filtering decision remains reversible.
+- General journal articles with named venues are trusted by default unless they match local low-trust markers.
+- Conferences are stricter than journals: only allowlisted reputable venues remain visible.
+- Preprints and repositories are hidden from the main curated layer because the user requested cleaner trusted journal/conference coverage.
+
+### Remaining Work
+- If the lab wants additional conference venues displayed, extend the trusted conference allowlist in both `scripts/update_papers.py` and `scripts/aml_common.py`.
+- Visually verify the deployed site after GitHub Pages refresh.
+- Consider adding a dedicated UI filter for `Journal` versus `Conference` if the user wants explicit browsing by publication type.
+
+### Notes / Cautions
+- Active dataset after filtering: 1,586 records; archive dataset: 544 records.
+- Active publication types: 1,574 journal articles and 12 trusted conference proceedings.
+- Active low-trust venue count: 0.
+- Archive reasons after rebuild: 484 `low_venue_trust`, 55 `duplicate_title`, and 5 `low_relevance`.
+- AML public recommendations after filtering: 541 records with 0 low-trust venue records.
+- OpenAI, Crossref, and OpenAlex APIs were not called for this cleanup; only local JSON/CSV/XLSX regeneration was performed.

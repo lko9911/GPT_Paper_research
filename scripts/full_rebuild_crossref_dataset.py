@@ -28,6 +28,7 @@ from update_papers import (
     CURATED_MIN_SCORE,
     _is_plausible,
     _journal_quality,
+    _venue_classification,
     _safe_year,
     _split_curated_archive,
     _strip_transient,
@@ -109,6 +110,7 @@ def main() -> None:
             "raw_candidate_count": len(cleaned),
             "archived_count": len(archive),
             "hidden_low_relevance_count": split_stats["low_relevance"],
+            "hidden_low_venue_trust_count": split_stats.get("low_venue_trust", 0),
             "duplicate_archived_count": split_stats["duplicate_title"],
             "papers_added": len(curated),
             "raw_records_added": len(cleaned),
@@ -360,6 +362,7 @@ def _finalize_crossref_record(
     year = _safe_year(record.get("year"))
     journal_quality = _journal_quality(record)
     is_core = _is_manual_core_journal(journal_quality)
+    venue_classification = _venue_classification(record)
     finalized = {
         "id": paper_id,
         "title": title,
@@ -388,6 +391,9 @@ def _finalize_crossref_record(
         "openalex_source_id": "",
         "venue_metrics": {},
         "journal_quality": journal_quality,
+        "publication_type": venue_classification["publication_type"],
+        "venue_trust": venue_classification["venue_trust"],
+        "venue_trust_reason": venue_classification["venue_trust_reason"],
         "is_core_venue": is_core,
         "core_status": "core" if is_core else "non-core",
         "venue_scope": "core" if is_core else "non-core",
@@ -408,6 +414,10 @@ def _finalize_crossref_record(
         "is_weekly_new": _is_date_within_days(first_added, today, 7),
     }
     finalized["journal_quality"] = _journal_quality(finalized)
+    venue_classification = _venue_classification(finalized)
+    finalized["publication_type"] = venue_classification["publication_type"]
+    finalized["venue_trust"] = venue_classification["venue_trust"]
+    finalized["venue_trust_reason"] = venue_classification["venue_trust_reason"]
     is_core = _is_manual_core_journal(finalized["journal_quality"])
     finalized["is_core_venue"] = is_core
     finalized["core_status"] = "core" if is_core else "non-core"
@@ -499,6 +509,9 @@ def _export_fieldnames() -> list[str]:
         "issn",
         "issn_l",
         "publisher",
+        "publication_type",
+        "venue_trust",
+        "venue_trust_reason",
         "corresponding_authors",
         "corresponding_author_available",
         "corresponding_author_source",

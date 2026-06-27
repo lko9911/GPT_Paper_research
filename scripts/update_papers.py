@@ -138,6 +138,7 @@ def main() -> None:
             "raw_candidate_count": len(cleaned),
             "archived_count": len(archive),
             "hidden_low_relevance_count": split_stats["low_relevance"],
+            "hidden_low_venue_trust_count": split_stats.get("low_venue_trust", 0),
             "duplicate_archived_count": split_stats["duplicate_title"],
             "papers_added": added,
             "raw_records_added": added,
@@ -540,7 +541,7 @@ def _split_curated_archive(records: list[dict[str, Any]]) -> tuple[list[dict[str
 
     curated: list[dict[str, Any]] = []
     archive: list[dict[str, Any]] = []
-    stats = {"low_relevance": 0, "duplicate_title": 0}
+    stats = {"low_relevance": 0, "duplicate_title": 0, "low_venue_trust": 0}
 
     for group in groups.values():
         ranked = sorted(group, key=_curation_rank, reverse=True)
@@ -552,8 +553,9 @@ def _split_curated_archive(records: list[dict[str, Any]]) -> tuple[list[dict[str
                 stats["duplicate_title"] += 1
         else:
             for record in ranked:
-                archive.append(_with_archive_reason(record, "low_relevance"))
-                stats["low_relevance"] += 1
+                reason = "low_venue_trust" if _is_low_venue_trust(record) else "low_relevance"
+                archive.append(_with_archive_reason(record, reason))
+                stats[reason] = stats.get(reason, 0) + 1
 
     curated.sort(key=_sort_key, reverse=True)
     archive.sort(key=_sort_key, reverse=True)
@@ -564,7 +566,12 @@ def _is_curated_candidate(record: dict[str, Any]) -> bool:
     return (
         bool(record.get("curation_priority"))
         or int(record.get("relevance_score") or 0) >= CURATED_MIN_SCORE
-    ) and not _is_non_research_output(record.get("title", ""))
+    ) and not _is_non_research_output(record.get("title", "")) and not _is_low_venue_trust(record)
+
+
+def _is_low_venue_trust(record: dict[str, Any]) -> bool:
+    classification = _venue_classification(record)
+    return classification["venue_trust"] == "low"
 
 
 def _curation_rank(record: dict[str, Any]) -> tuple[int, int, int, int, int, str]:
@@ -597,6 +604,110 @@ def _is_repository_like(venue: str, doi: str = "") -> bool:
     )
 
 
+def _venue_classification(record: dict[str, Any]) -> dict[str, str]:
+    venue = unescape(str(record.get("venue") or record.get("journal") or "")).strip()
+    venue_key = _normalize_title(venue)
+    crossref_type = str(record.get("crossref_type") or "").lower()
+    doi = str(record.get("doi") or "").lower()
+    text = f"{venue_key} {crossref_type} {doi}"
+
+    trusted_conferences = {
+        "proceedings of the chi conference on human factors in computing systems",
+        "proceedings of the 2025 chi conference on human factors in computing systems",
+        "proceedings of the 2026 chi conference on human factors in computing systems",
+        "proceedings of the extended abstracts of the chi conference on human factors in computing systems",
+        "proceedings of the acm symposium on computational fabrication",
+        "adjunct proceedings of the 10th acm symposium on computational fabrication",
+        "ieee international conference on robotics and automation",
+        "ieee/rsj international conference on intelligent robots and systems",
+        "ieee rsj international conference on intelligent robots and systems",
+        "ieee international conference on soft robotics",
+        "ieee international conference on automation science and engineering",
+    }
+    low_trust_markers = (
+        "international journal for research in applied science",
+        "ijraset",
+        "irjmets",
+        "international research journal of modernization",
+        "project repository journal",
+        "nexus",
+        "world journal",
+        "global journal",
+        "universal journal",
+        "multidisciplinary science journal",
+        "multidiszciplinaris tudomanyok",
+        "nusantara science and technology proceedings",
+    )
+    repository_markers = (
+        "arxiv",
+        "chemrxiv",
+        "research square",
+        "ssrn",
+        "techrxiv",
+        "zenodo",
+        "figshare",
+        "repository",
+        "preprint",
+    )
+    book_types = {
+        "book-chapter",
+        "book",
+        "edited-book",
+        "monograph",
+        "reference-book",
+        "reference-entry",
+    }
+
+    if not venue or venue_key == "venue unknown":
+        return {
+            "publication_type": "unknown",
+            "venue_trust": "low",
+            "venue_trust_reason": "missing venue metadata",
+        }
+    if any(marker in text for marker in low_trust_markers):
+        return {
+            "publication_type": "low_trust_journal_or_proceedings",
+            "venue_trust": "low",
+            "venue_trust_reason": "venue matches local low-trust marker list",
+        }
+    if crossref_type == "posted-content" or any(marker in text for marker in repository_markers):
+        return {
+            "publication_type": "preprint_or_repository",
+            "venue_trust": "low",
+            "venue_trust_reason": "preprint or repository source",
+        }
+    if crossref_type in book_types:
+        return {
+            "publication_type": "book_or_chapter",
+            "venue_trust": "low",
+            "venue_trust_reason": "book/chapter output rather than journal or trusted conference article",
+        }
+    if "proceedings of the national academy of sciences" == venue_key:
+        return {
+            "publication_type": "journal_article",
+            "venue_trust": "trusted",
+            "venue_trust_reason": "PNAS journal article",
+        }
+    if crossref_type == "proceedings-article" or "proceedings" in venue_key or "conference" in venue_key:
+        trusted = any(conference in venue_key for conference in trusted_conferences)
+        return {
+            "publication_type": "conference_proceedings",
+            "venue_trust": "trusted" if trusted else "low",
+            "venue_trust_reason": "trusted conference allowlist" if trusted else "conference/proceedings not in trusted allowlist",
+        }
+    if crossref_type == "journal-article" or not crossref_type:
+        return {
+            "publication_type": "journal_article",
+            "venue_trust": "trusted",
+            "venue_trust_reason": "journal article with named venue and no low-trust marker",
+        }
+    return {
+        "publication_type": crossref_type or "other",
+        "venue_trust": "low",
+        "venue_trust_reason": "unsupported publication type",
+    }
+
+
 def _with_archive_reason(record: dict[str, Any], reason: str) -> dict[str, Any]:
     archived = dict(record)
     archived["archive_reason"] = reason
@@ -627,6 +738,7 @@ def _finalize_record(record: dict[str, Any], today: str) -> dict[str, Any]:
     paper_id = doi or _title_hash(record.get("title", ""))
     url = record.get("url") or (f"https://doi.org/{doi}" if doi else "")
     year = _safe_year(record.get("year"))
+    venue_classification = _venue_classification(record)
     return {
         "id": paper_id,
         "title": record.get("title", "Untitled"),
@@ -640,6 +752,9 @@ def _finalize_record(record: dict[str, Any], today: str) -> dict[str, Any]:
         "openalex_source_id": record.get("openalex_source_id", ""),
         "venue_metrics": record.get("venue_metrics", {}),
         "journal_quality": _journal_quality(record),
+        "publication_type": venue_classification["publication_type"],
+        "venue_trust": venue_classification["venue_trust"],
+        "venue_trust_reason": venue_classification["venue_trust_reason"],
         "doi": doi,
         "url": url,
         "source": sorted(set(record.get("source", []))),
