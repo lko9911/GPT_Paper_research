@@ -7393,3 +7393,27 @@
 - OpenAI, Crossref, and OpenAlex APIs were not called.
 - Active public paper count after filtering: 1,502 journal papers.
 - AML recommendation count after filtering: 737 journal papers.
+
+## 2026-06-28 09:42
+### Change Summary
+- Removed the redundant `Journal` publication-type badge from paper cards now that all public records are journal papers.
+
+### Modified / Created Files
+- `assets/app.js`: Removed publication-type badge rendering and the unused `publicationTypeLabel()` helper.
+- `assets/style.css`: Removed light/dark styling for `.publication-type-badge`.
+- `index.html`: Bumped CSS/JS cache query versions for deployment.
+- `AGENT_LOG.md`: Recorded this UI cleanup.
+
+### Implemented Features
+- Paper cards now show only the venue/year badge, summary-provider badge, score badge, and other meaningful badges.
+- AML recommendation cards follow the same simplified card header.
+
+### Design Decisions
+- Kept `publication_type` metadata in JSON and runtime objects for internal validation and future filtering, but removed it from the visible card UI.
+- No paper data, collection workflow, or recommendation scoring behavior was changed.
+
+### Remaining Work
+- After deployment, visually confirm the card header no longer shows a `Journal` badge.
+
+### Notes / Cautions
+- OpenAI, Crossref, and OpenAlex APIs were not called.

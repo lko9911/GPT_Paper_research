@@ -1336,10 +1336,6 @@ function renderPaperRow(paper) {
   const doiUrl = displayPaper.url || (displayPaper.doi ? `https://doi.org/${displayPaper.doi}` : "");
   const authorDetailsHtml = renderAuthorDetails(displayPaper);
   const publicationLabel = formatPublicationLabel(displayPaper);
-  const publicationType = publicationTypeLabel(displayPaper.publication_type);
-  const publicationTypeHtml = publicationType
-    ? `<span class="publication-type-badge">${escapeHtml(publicationType)}</span>`
-    : "";
   const summaryProviderLabel = formatSummaryProviderLabel(displayPaper);
   const summaryHtml = renderSummaryBlock(displayPaper);
   const relevanceNote = formatRelevanceNote(displayPaper);
@@ -1352,7 +1348,6 @@ function renderPaperRow(paper) {
   article.innerHTML = `
     <div class="card-content">
       <div class="card-topline">
-        ${publicationTypeHtml}
         <span class="publication-badge">${escapeHtml(publicationLabel)}</span>
         ${newBadgeHtml}
         <span class="${escapeAttribute(summaryProviderLabel.className)}" title="${escapeAttribute(summaryProviderLabel.title)}">${escapeHtml(summaryProviderLabel.text)}</span>
@@ -2016,15 +2011,6 @@ function formatPublicationLabel(paper) {
     return year ? `Venue unknown ${year}` : "Venue unknown";
   }
   return year ? `${compactVenue} ${year}` : compactVenue;
-}
-
-function publicationTypeLabel(type) {
-  const value = String(type || "").toLowerCase();
-  if (value === "journal_article") return "Journal";
-  if (value === "conference_proceedings") return "Conference";
-  if (value === "preprint_or_repository") return "Preprint";
-  if (value === "book_or_chapter") return "Book";
-  return "";
 }
 
 function formatAuthors(authors) {
