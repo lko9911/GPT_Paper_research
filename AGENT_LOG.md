@@ -7360,5 +7360,5 @@
 
 ### Notes / Cautions
 - OpenAI, Crossref, and OpenAlex APIs were not called.
-- Active public paper count after filtering: 1,575 journal articles.
-- AML recommendation count after filtering: 541 journal articles.
+- Active public paper count after filtering: 1,512 journal articles.
+- AML recommendation count after filtering: 740 journal articles.
