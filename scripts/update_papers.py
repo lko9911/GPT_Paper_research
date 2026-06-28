@@ -563,7 +563,12 @@ def _is_curated_candidate(record: dict[str, Any]) -> bool:
     return (
         bool(record.get("curation_priority"))
         or int(record.get("relevance_score") or 0) >= CURATED_MIN_SCORE
-    ) and not _is_non_research_output(record.get("title", "")) and not _is_low_venue_trust(record)
+    ) and not _is_non_research_output(record.get("title", "")) and _is_journal_article(record)
+
+
+def _is_journal_article(record: dict[str, Any]) -> bool:
+    classification = _venue_classification(record)
+    return classification["publication_type"] == "journal_article" and classification["venue_trust"] != "low"
 
 
 def _is_low_venue_trust(record: dict[str, Any]) -> bool:

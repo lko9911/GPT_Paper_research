@@ -295,4 +295,5 @@ def venue_classification_for_record(record: dict[str, Any]) -> dict[str, str]:
 
 
 def is_trusted_publication(record: dict[str, Any]) -> bool:
-    return venue_classification_for_record(record)["venue_trust"] != "low"
+    classification = venue_classification_for_record(record)
+    return classification["publication_type"] == "journal_article" and classification["venue_trust"] != "low"

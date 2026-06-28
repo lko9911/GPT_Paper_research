@@ -7329,3 +7329,36 @@
 
 ### Notes / Cautions
 - OpenAI, Crossref, and OpenAlex APIs were not called.
+
+## 2026-06-28 09:20
+### Change Summary
+- Tightened the public site and AML recommendations to journal articles only.
+- Removed all conference proceedings from active public paper lists, even if the conference venue had previously been allowlisted as trusted.
+
+### Modified / Created Files
+- `scripts/update_papers.py`: Changed curated-candidate eligibility so only `publication_type == journal_article` with non-low venue trust can remain active.
+- `scripts/aml_common.py`: Changed AML public recommendation eligibility so only journal articles are published.
+- `data/papers.json`: Rebuilt active public data as journal articles only.
+- `data/archive_papers.json`: Moved non-journal active records into the archive layer.
+- `data/papers_index.json`, `data/archive_papers_index.json`, `data/details/*`, `data/archive_details/*`: Rebuilt split website data.
+- `data/papers.csv`, `data/papers.xlsx`: Regenerated exports from the journal-only active dataset.
+- `data/site_meta.json`: Updated active/archive/paper counts after journal-only filtering.
+- `public/data/aml_recommended_papers.json`: Removed non-journal AML recommendation records.
+- `AGENT_LOG.md`: Recorded this journal-only policy change.
+
+### Implemented Features
+- Main site active records now contain only `journal_article` publications.
+- AML recommendation records now contain only `journal_article` publications.
+- Conference proceedings, preprints, repositories, books/chapters, unknown venues, and unsupported publication types are excluded from the public active layer.
+
+### Design Decisions
+- Non-journal records were archived rather than permanently deleted so the decision remains reversible.
+- Existing `Conference` badge rendering remains in the UI for defensive compatibility, but active public data should no longer produce it.
+
+### Remaining Work
+- After deployment, verify no `Conference` badge appears in normal paper cards or AML recommendation cards.
+
+### Notes / Cautions
+- OpenAI, Crossref, and OpenAlex APIs were not called.
+- Active public paper count after filtering: 1,575 journal articles.
+- AML recommendation count after filtering: 541 journal articles.
