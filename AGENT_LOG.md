@@ -7362,3 +7362,34 @@
 - OpenAI, Crossref, and OpenAlex APIs were not called.
 - Active public paper count after filtering: 1,512 journal articles.
 - AML recommendation count after filtering: 740 journal articles.
+
+## 2026-06-28 09:34
+### Change Summary
+- Tightened journal-only filtering further by excluding non-paper journal content such as corrections, errata, editorials, retractions, and publisher corrections.
+
+### Modified / Created Files
+- `scripts/update_papers.py`: Expanded `_is_non_research_output()` and archived matching journal records as `non_research_output`.
+- `scripts/aml_common.py`: Added `is_non_research_output()` and excluded matching records from public AML recommendations.
+- `data/papers.json`: Rebuilt active data after removing non-paper journal content.
+- `data/archive_papers.json`: Archived removed correction/editorial/erratum records.
+- `data/papers_index.json`, `data/archive_papers_index.json`, `data/details/*`, `data/archive_details/*`: Rebuilt split website data.
+- `data/papers.csv`, `data/papers.xlsx`: Regenerated exports from the stricter active dataset.
+- `data/site_meta.json`: Updated active/archive/paper counts and `hidden_non_research_output_count`.
+- `public/data/aml_recommended_papers.json`: Removed correction/erratum records from AML recommendations.
+- `AGENT_LOG.md`: Recorded this stricter journal-paper policy.
+
+### Implemented Features
+- Active public data now excludes records whose titles start with terms such as `Correction`, `Author Correction`, `Erratum`, `Editorial`, `Corrigendum`, `Retraction`, and similar non-paper outputs.
+- AML recommendations use the same non-paper exclusion rule.
+
+### Design Decisions
+- Review and perspective-style research articles remain allowed, because they are legitimate journal-paper content.
+- Removed records are archived rather than permanently deleted.
+
+### Remaining Work
+- After deployment, verify no correction/editorial/erratum records appear in normal cards or AML recommendation cards.
+
+### Notes / Cautions
+- OpenAI, Crossref, and OpenAlex APIs were not called.
+- Active public paper count after filtering: 1,502 journal papers.
+- AML recommendation count after filtering: 737 journal papers.

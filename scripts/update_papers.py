@@ -514,6 +514,20 @@ def _mark_curation_priority(record: dict[str, Any]) -> None:
 def _is_non_research_output(title: str) -> bool:
     normalized_title = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", title)).strip().lower()
     blocked_prefixes = (
+        "addendum",
+        "author correction",
+        "comment on ",
+        "correction",
+        "correction:",
+        "correction to",
+        "corrigendum",
+        "editorial",
+        "editorial:",
+        "erratum",
+        "erratum to",
+        "expression of concern",
+        "publisher correction",
+        "retraction",
         "review for ",
         "decision letter for ",
         "author response for ",
@@ -538,7 +552,7 @@ def _split_curated_archive(records: list[dict[str, Any]]) -> tuple[list[dict[str
 
     curated: list[dict[str, Any]] = []
     archive: list[dict[str, Any]] = []
-    stats = {"low_relevance": 0, "duplicate_title": 0, "low_venue_trust": 0}
+    stats = {"low_relevance": 0, "duplicate_title": 0, "low_venue_trust": 0, "non_research_output": 0}
 
     for group in groups.values():
         ranked = sorted(group, key=_curation_rank, reverse=True)
@@ -550,7 +564,12 @@ def _split_curated_archive(records: list[dict[str, Any]]) -> tuple[list[dict[str
                 stats["duplicate_title"] += 1
         else:
             for record in ranked:
-                reason = "low_venue_trust" if _is_low_venue_trust(record) else "low_relevance"
+                if _is_low_venue_trust(record):
+                    reason = "low_venue_trust"
+                elif _is_non_research_output(record.get("title", "")):
+                    reason = "non_research_output"
+                else:
+                    reason = "low_relevance"
                 archive.append(_with_archive_reason(record, reason))
                 stats[reason] = stats.get(reason, 0) + 1
 

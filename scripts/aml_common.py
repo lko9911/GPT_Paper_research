@@ -296,4 +296,29 @@ def venue_classification_for_record(record: dict[str, Any]) -> dict[str, str]:
 
 def is_trusted_publication(record: dict[str, Any]) -> bool:
     classification = venue_classification_for_record(record)
-    return classification["publication_type"] == "journal_article" and classification["venue_trust"] != "low"
+    return (
+        classification["publication_type"] == "journal_article"
+        and classification["venue_trust"] != "low"
+        and not is_non_research_output(record.get("title", ""))
+    )
+
+
+def is_non_research_output(title: str) -> bool:
+    normalized = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", str(title or ""))).strip().lower()
+    blocked_prefixes = (
+        "addendum",
+        "author correction",
+        "comment on ",
+        "correction",
+        "correction:",
+        "correction to",
+        "corrigendum",
+        "editorial",
+        "editorial:",
+        "erratum",
+        "erratum to",
+        "expression of concern",
+        "publisher correction",
+        "retraction",
+    )
+    return normalized.startswith(blocked_prefixes)
