@@ -7417,3 +7417,27 @@
 
 ### Notes / Cautions
 - OpenAI, Crossref, and OpenAlex APIs were not called.
+## 2026-06-29 13:18
+### 변경 요약
+- 학위논문/대학 dissertation 항목은 저널 논문 사이트의 범위가 아니므로 수집 및 AML 추천 공개 후보에서 제외되도록 방어 규칙을 추가했습니다.
+- 현재 공개 데이터와 AML 추천 공개 데이터에는 학위논문 후보가 남아 있지 않음을 확인했습니다.
+
+### 수정/생성한 파일
+- `scripts/update_papers.py`: `dissertation`, `doctoral thesis`, `master thesis`, `PhD thesis`, `university dissertation`, `electronic thesis`, `ETD` 계열을 low-trust `thesis_or_dissertation`으로 분류하고 curated paper에서 제외하도록 보강했습니다.
+- `scripts/aml_common.py`: AML 추천 후보 점수화/공개 필터에서도 같은 thesis/dissertation 판별 규칙을 적용했습니다.
+- `AGENT_LOG.md`: 이번 필터 보강과 검증 결과를 기록했습니다.
+
+### 구현한 기능
+- Crossref type 또는 venue/title/DOI 텍스트에 학위논문 신호가 있으면 `publication_type = thesis_or_dissertation`, `venue_trust = low`로 분류합니다.
+- 학위논문으로 판별된 항목은 일반 curated paper와 AML 추천 공개 목록에 들어가지 않습니다.
+
+### 설계 결정
+- 현재 사이트는 저널 논문 중심으로 운영하기로 했으므로, 학위논문은 archive/비공개 후보로만 남기고 공개 UI에서는 제외합니다.
+- `repository` 판정보다 `thesis/dissertation` 판정을 먼저 적용해 제외 이유가 더 명확하게 남도록 했습니다.
+
+### 남은 작업
+- 다음 자동/수동 업데이트 이후에도 공개 데이터에 thesis/dissertation 후보가 0개인지 재확인하면 좋습니다.
+
+### 주의사항
+- 현재 `data/papers.json`, `data/papers_index.json`, `public/data/aml_recommended_papers.json` 검사 결과 학위논문 후보는 0개였습니다.
+- OpenAI API는 호출하지 않았습니다.

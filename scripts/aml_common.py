@@ -262,6 +262,18 @@ def venue_classification_for_record(record: dict[str, Any]) -> dict[str, str]:
         "nusantara science and technology proceedings",
     )
     repository_markers = ("arxiv", "chemrxiv", "research square", "ssrn", "techrxiv", "zenodo", "figshare", "repository", "preprint")
+    thesis_markers = (
+        "dissertation",
+        "doctoral thesis",
+        "master thesis",
+        "master's thesis",
+        "masters thesis",
+        "phd thesis",
+        "ph.d. thesis",
+        "university dissertation",
+        "etd",
+        "electronic thesis",
+    )
     trusted_conferences = (
         "proceedings of the chi conference on human factors in computing systems",
         "proceedings of the extended abstracts of the chi conference on human factors in computing systems",
@@ -276,6 +288,8 @@ def venue_classification_for_record(record: dict[str, Any]) -> dict[str, str]:
         return {"publication_type": "unknown", "venue_trust": "low", "venue_trust_reason": "missing venue metadata"}
     if any(marker in text for marker in low_trust_markers):
         return {"publication_type": "low_trust_journal_or_proceedings", "venue_trust": "low", "venue_trust_reason": "venue matches local low-trust marker list"}
+    if crossref_type in {"dissertation", "posted-content:dissertation"} or any(marker in text for marker in thesis_markers):
+        return {"publication_type": "thesis_or_dissertation", "venue_trust": "low", "venue_trust_reason": "thesis/dissertation output rather than journal article"}
     if crossref_type == "posted-content" or any(marker in text for marker in repository_markers):
         return {"publication_type": "preprint_or_repository", "venue_trust": "low", "venue_trust_reason": "preprint or repository source"}
     if crossref_type in {"book-chapter", "book", "edited-book", "monograph", "reference-book", "reference-entry"}:
@@ -320,5 +334,16 @@ def is_non_research_output(title: str) -> bool:
         "expression of concern",
         "publisher correction",
         "retraction",
+        "doctoral dissertation",
+        "doctoral thesis",
+        "master thesis",
+        "master's thesis",
+        "masters thesis",
+        "phd thesis",
+        "ph.d. thesis",
     )
-    return normalized.startswith(blocked_prefixes)
+    blocked_fragments = (
+        " dissertation submitted ",
+        " thesis submitted ",
+    )
+    return normalized.startswith(blocked_prefixes) or any(fragment in normalized for fragment in blocked_fragments)

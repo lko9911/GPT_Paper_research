@@ -534,12 +534,21 @@ def _is_non_research_output(title: str) -> bool:
         "response to reviewers",
         "peer review for ",
         "title pending",
+        "doctoral dissertation",
+        "doctoral thesis",
+        "master thesis",
+        "master's thesis",
+        "masters thesis",
+        "phd thesis",
+        "ph.d. thesis",
     )
     if normalized_title.startswith(blocked_prefixes):
         return True
     blocked_fragments = (
         "llm guided hypothesis generation in self-driving lab",
         "(invited)",
+        " dissertation submitted ",
+        " thesis submitted ",
     )
     return any(fragment in normalized_title for fragment in blocked_fragments)
 
@@ -670,6 +679,18 @@ def _venue_classification(record: dict[str, Any]) -> dict[str, str]:
         "repository",
         "preprint",
     )
+    thesis_markers = (
+        "dissertation",
+        "doctoral thesis",
+        "master thesis",
+        "master's thesis",
+        "masters thesis",
+        "phd thesis",
+        "ph.d. thesis",
+        "university dissertation",
+        "etd",
+        "electronic thesis",
+    )
     book_types = {
         "book-chapter",
         "book",
@@ -677,6 +698,10 @@ def _venue_classification(record: dict[str, Any]) -> dict[str, str]:
         "monograph",
         "reference-book",
         "reference-entry",
+    }
+    thesis_types = {
+        "dissertation",
+        "posted-content:dissertation",
     }
 
     if not venue or venue_key == "venue unknown":
@@ -690,6 +715,12 @@ def _venue_classification(record: dict[str, Any]) -> dict[str, str]:
             "publication_type": "low_trust_journal_or_proceedings",
             "venue_trust": "low",
             "venue_trust_reason": "venue matches local low-trust marker list",
+        }
+    if crossref_type in thesis_types or any(marker in text for marker in thesis_markers):
+        return {
+            "publication_type": "thesis_or_dissertation",
+            "venue_trust": "low",
+            "venue_trust_reason": "thesis/dissertation output rather than journal article",
         }
     if crossref_type == "posted-content" or any(marker in text for marker in repository_markers):
         return {
