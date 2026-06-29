@@ -2915,7 +2915,7 @@
     "pdf_stored": false,
     "id": "10.1039/d5mh01984b"
   },
-  "10.1002/aisy.202500430": {
+  "10.1002/aisy.70218": {
     "author_details": [
       {
         "name": "Philipp Auth",
@@ -3059,7 +3059,7 @@
     "publisher": "Wiley",
     "openalex_checked": true,
     "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4414949582",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7130522311",
     "openalex_work_id": "",
     "openalex_source_id": "",
     "venue_metrics": {},
@@ -3075,12 +3075,12 @@
     "core_status": "non-core",
     "venue_scope": "non-core",
     "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The paper discusses the development of a 3D-printed pneumatic contact sensor for a soft robotic walker.\n2. Problem - Current soft robots rely on electronic sensors, which complicate systems and limit adaptability in challenging environments.\n3. Method - The authors created an electronics-free sensory system using pneumatic logic gates integrated into a six-legged soft robot.\n4. Key Result - The robot demonstrated rapid sensor response times and the ability to walk autonomously while effectively detecting obstacles.\n5. Takeaway - This work advances the field of soft robotics by enhancing autonomy and adaptability through electronics-free control systems.",
-    "relevance_note_en": "The summary captures the essence of the research on enhancing soft robot autonomy without electronics.",
-    "abstract_used_for_summary": true,
+    "ai_summary_en": "1. Topic - Toward More Autonomous Soft Robots: Development and Characterization of a 3D-Printed Pneumatic Contact Sensor for a Six-Legged Soft Robotic Walker is a 2026 paper from Advanced Intelligent Systems about Soft robotics and Manufacturing automation.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Soft robotics and Manufacturing automation.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Soft robotics and Manufacturing automation; current relevance score is 5/10.",
+    "relevance_note_en": "Relevant to the tracker through Soft robotics and Manufacturing automation; score: 5/10.",
+    "abstract_used_for_summary": false,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "id": "10.1002/aisy.202500430"
+    "id": "10.1002/aisy.70218"
   },
   "10.1016/j.rcim.2025.103182": {
     "author_details": [
@@ -4279,6 +4279,314 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "id": "10.1039/d6ma00166a"
+  },
+  "10.1002/adfm.76743": {
+    "author_details": [
+      {
+        "name": "Sundas Iqbal",
+        "orcid": "https://orcid.org/0000-0003-2313-2914",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "State Key Laboratory of Flexible Electronics (LoFE) and Institute of Flexible Electronics (IFE) MIIT Key Laboratory of Flexible Electronics Shaanxi Key Laboratory of Flexible Electronics Northwestern Polytechnical University  Xi'an China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "State Key Laboratory of Flexible Electronics (LoFE) and Institute of Flexible Electronics (IFE) MIIT Key Laboratory of Flexible Electronics Shaanxi Key Laboratory of Flexible Electronics Northwestern Polytechnical University  Xi'an China"
+        ]
+      },
+      {
+        "name": "Hailan Wang",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "State Key Laboratory of Flexible Electronics (LoFE) and Institute of Flexible Electronics (IFE) MIIT Key Laboratory of Flexible Electronics Shaanxi Key Laboratory of Flexible Electronics Northwestern Polytechnical University  Xi'an China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "State Key Laboratory of Flexible Electronics (LoFE) and Institute of Flexible Electronics (IFE) MIIT Key Laboratory of Flexible Electronics Shaanxi Key Laboratory of Flexible Electronics Northwestern Polytechnical University  Xi'an China"
+        ]
+      },
+      {
+        "name": "Jiaqi Liu",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "State Key Laboratory of Flexible Electronics (LoFE) and Institute of Flexible Electronics (IFE) MIIT Key Laboratory of Flexible Electronics Shaanxi Key Laboratory of Flexible Electronics Northwestern Polytechnical University  Xi'an China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "State Key Laboratory of Flexible Electronics (LoFE) and Institute of Flexible Electronics (IFE) MIIT Key Laboratory of Flexible Electronics Shaanxi Key Laboratory of Flexible Electronics Northwestern Polytechnical University  Xi'an China"
+        ]
+      },
+      {
+        "name": "Xiayu Zhang",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "State Key Laboratory of Flexible Electronics (LoFE) and Institute of Flexible Electronics (IFE) MIIT Key Laboratory of Flexible Electronics Shaanxi Key Laboratory of Flexible Electronics Northwestern Polytechnical University  Xi'an China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "State Key Laboratory of Flexible Electronics (LoFE) and Institute of Flexible Electronics (IFE) MIIT Key Laboratory of Flexible Electronics Shaanxi Key Laboratory of Flexible Electronics Northwestern Polytechnical University  Xi'an China"
+        ]
+      },
+      {
+        "name": "Chin‐Yiu Chan",
+        "orcid": "https://orcid.org/0000-0001-7721-9244",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Materials Science and Engineering City University of Hong Kong  Hong Kong China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Materials Science and Engineering City University of Hong Kong  Hong Kong China"
+        ]
+      },
+      {
+        "name": "Tao Yu",
+        "orcid": "https://orcid.org/0000-0002-2855-3104",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "State Key Laboratory of Flexible Electronics (LoFE) and Institute of Flexible Electronics (IFE) MIIT Key Laboratory of Flexible Electronics Shaanxi Key Laboratory of Flexible Electronics Northwestern Polytechnical University  Xi'an China"
+          },
+          {
+            "name": "Key Laboratory of Flexible Electronics of Zhejiang Province Ningbo Institute of Northwestern Polytechnical University  Ningbo China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "State Key Laboratory of Flexible Electronics (LoFE) and Institute of Flexible Electronics (IFE) MIIT Key Laboratory of Flexible Electronics Shaanxi Key Laboratory of Flexible Electronics Northwestern Polytechnical University  Xi'an China",
+          "Key Laboratory of Flexible Electronics of Zhejiang Province Ningbo Institute of Northwestern Polytechnical University  Ningbo China"
+        ]
+      },
+      {
+        "name": "Wei Huang",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "State Key Laboratory of Flexible Electronics (LoFE) and Institute of Flexible Electronics (IFE) MIIT Key Laboratory of Flexible Electronics Shaanxi Key Laboratory of Flexible Electronics Northwestern Polytechnical University  Xi'an China"
+          },
+          {
+            "name": "Key Laboratory of Flexible Electronics of Zhejiang Province Ningbo Institute of Northwestern Polytechnical University  Ningbo China"
+          },
+          {
+            "name": "State Key Laboratory of Flexible Electronics (LoFE) and Institute of Advanced Materials (IAM) Nanjing Tech University  Nanjing China"
+          },
+          {
+            "name": "State Key Laboratory of Flexible Electronics (LoFE) and Institute of Advanced Materials (IAM) Nanjing University of Posts and Telecommunications  Nanjing China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "State Key Laboratory of Flexible Electronics (LoFE) and Institute of Flexible Electronics (IFE) MIIT Key Laboratory of Flexible Electronics Shaanxi Key Laboratory of Flexible Electronics Northwestern Polytechnical University  Xi'an China",
+          "Key Laboratory of Flexible Electronics of Zhejiang Province Ningbo Institute of Northwestern Polytechnical University  Ningbo China",
+          "State Key Laboratory of Flexible Electronics (LoFE) and Institute of Advanced Materials (IAM) Nanjing Tech University  Nanjing China",
+          "State Key Laboratory of Flexible Electronics (LoFE) and Institute of Advanced Materials (IAM) Nanjing University of Posts and Telecommunications  Nanjing China"
+        ]
+      }
+    ],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Advanced Functional Materials",
+    "crossref_target_issn": "1616-301X",
+    "issn": [
+      "1616-301X",
+      "1616-3028"
+    ],
+    "issn_l": "",
+    "publisher": "Wiley",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "High-impact general journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - Stimuli-Responsive and Tunable Host-Guest Ultralong Organic Phosphorescence: Design Strategies and Multifunctional Applications is a 2026 paper from Advanced Functional Materials about Additive manufacturing.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Additive manufacturing.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Additive manufacturing; current relevance score is 5/10.",
+    "relevance_note_en": "Relevant to the tracker through Additive manufacturing; score: 5/10.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "id": "10.1002/adfm.76743"
+  },
+  "10.1002/adfm.76757": {
+    "author_details": [
+      {
+        "name": "Wei Xiao",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Pen‐Tung Sah Institute of Micro‐Nano Science and Technology Xiamen University  Xiamen P. R. China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Pen‐Tung Sah Institute of Micro‐Nano Science and Technology Xiamen University  Xiamen P. R. China"
+        ]
+      },
+      {
+        "name": "Yuanbao Wang",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Pen‐Tung Sah Institute of Micro‐Nano Science and Technology Xiamen University  Xiamen P. R. China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Pen‐Tung Sah Institute of Micro‐Nano Science and Technology Xiamen University  Xiamen P. R. China"
+        ]
+      },
+      {
+        "name": "Yiyi Zhang",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Pen‐Tung Sah Institute of Micro‐Nano Science and Technology Xiamen University  Xiamen P. R. China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Pen‐Tung Sah Institute of Micro‐Nano Science and Technology Xiamen University  Xiamen P. R. China"
+        ]
+      },
+      {
+        "name": "Qibin Zhuang",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Pen‐Tung Sah Institute of Micro‐Nano Science and Technology Xiamen University  Xiamen P. R. China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Pen‐Tung Sah Institute of Micro‐Nano Science and Technology Xiamen University  Xiamen P. R. China"
+        ]
+      },
+      {
+        "name": "Xianwei Qian",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Pen‐Tung Sah Institute of Micro‐Nano Science and Technology Xiamen University  Xiamen P. R. China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Pen‐Tung Sah Institute of Micro‐Nano Science and Technology Xiamen University  Xiamen P. R. China"
+        ]
+      },
+      {
+        "name": "Fanhong Chen",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Sensor and Network Control Center Instrumentation Technology and Economy Institute  Beijing P. R. China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Sensor and Network Control Center Instrumentation Technology and Economy Institute  Beijing P. R. China"
+        ]
+      },
+      {
+        "name": "Xiaohui Du",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Sensor and Network Control Center Instrumentation Technology and Economy Institute  Beijing P. R. China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Sensor and Network Control Center Instrumentation Technology and Economy Institute  Beijing P. R. China"
+        ]
+      },
+      {
+        "name": "Dezhi Wu",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Pen‐Tung Sah Institute of Micro‐Nano Science and Technology Xiamen University  Xiamen P. R. China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Pen‐Tung Sah Institute of Micro‐Nano Science and Technology Xiamen University  Xiamen P. R. China"
+        ]
+      }
+    ],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Advanced Functional Materials",
+    "crossref_target_issn": "1616-301X",
+    "issn": [
+      "1616-301X",
+      "1616-3028"
+    ],
+    "issn_l": "",
+    "publisher": "Wiley",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "High-impact general journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - Stiffness-Gradient Auxetic Metamaterials Engineering Enables High Linearity of Strain Sensor for Facial Expression Recognition is a 2026 paper from Advanced Functional Materials about Metamaterials, Soft robotics, and Manufacturing automation.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Metamaterials, Soft robotics, and Manufacturing automation.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Metamaterials, Soft robotics, and Manufacturing automation; current relevance score is 5/10.",
+    "relevance_note_en": "Relevant to the tracker through Metamaterials, Soft robotics, and Manufacturing automation; score: 5/10.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "id": "10.1002/adfm.76757"
   },
   "10.1016/j.amf.2026.200359": {
     "author_details": [
@@ -31054,161 +31362,5 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "id": "10.20517/gmo.2024.120501"
-  },
-  "10.3390/app15179703": {
-    "author_details": [
-      {
-        "name": "Savvas Koltsakidis",
-        "orcid": "https://orcid.org/0000-0002-3305-4545",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Digital Manufacturing and Materials Characterization Laboratory, School of Science and Technology, International Hellenic University, 57001 Thessaloniki, Greece"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Digital Manufacturing and Materials Characterization Laboratory, School of Science and Technology, International Hellenic University, 57001 Thessaloniki, Greece"
-        ]
-      },
-      {
-        "name": "Dimitrios Tzetzis",
-        "orcid": "https://orcid.org/0000-0001-5006-5759",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Digital Manufacturing and Materials Characterization Laboratory, School of Science and Technology, International Hellenic University, 57001 Thessaloniki, Greece"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Digital Manufacturing and Materials Characterization Laboratory, School of Science and Technology, International Hellenic University, 57001 Thessaloniki, Greece"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2076-3417"
-    ],
-    "issn_l": "",
-    "publisher": "MDPI AG",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4413991112",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The review focuses on the integration of fused filament fabrication with complementary methods for creating hierarchically porous polymers.\n2. Problem - Traditional methods struggle to produce polymers with both macro-scale voids and micro-scale pores, limiting their functional applications.\n3. Method - The authors analyze various design strategies and material approaches for achieving multiscale porosity, including case studies and comparative analyses.\n4. Key Result - The review identifies key challenges in the fabrication process and discusses emerging solutions to enhance the capabilities of fused filament fabrication.\n5. Takeaway - A comprehensive understanding of integrating different techniques can significantly improve the production of complex porous polymer structures.",
-    "relevance_note_en": "The summary captures the essence of the review's focus on hierarchical porous polymers and the integration of fabrication methods.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "id": "10.3390/app15179703"
-  },
-  "10.1016/j.matdes.2025.114870": {
-    "author_details": [
-      {
-        "name": "Rafaël Viano",
-        "orcid": "https://orcid.org/0000-0002-1537-2443",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Léo Demont",
-        "orcid": "https://orcid.org/0000-0002-5833-8683",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Pierre Margerit",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Romain Mesnil",
-        "orcid": "https://orcid.org/0000-0001-5762-6037",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Jean-François Caron",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Daniel Weisz-Patrault",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "0264-1275"
-    ],
-    "issn_l": "",
-    "publisher": "Elsevier BV",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4415210787",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The study focuses on controlling residual stress in large-format additive manufacturing of polylactic acid.\n2. Problem - Challenges arise from slow cooling rates and heat accumulation, leading to deformation and residual stresses that can cause debonding.\n3. Method - A digital twin is developed using two modeling approaches, ScanFast and QuadWire, validated through experimental measurements of temperature and displacement.\n4. Key Result - The digital twin shows strong correlation with experimental data, enabling assessment of process parameters on residual stress and manufacturing quality.\n5. Takeaway - This approach serves as an effective tool for optimizing manufacturing processes and improving the quality of parts produced through LFAM.",
-    "relevance_note_en": "The summary captures the essence of the study, emphasizing the integration of digital twin technology in addressing manufacturing challenges.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "id": "10.1016/j.matdes.2025.114870"
   }
 }
