@@ -11799,7 +11799,8 @@
       "Falk Tauber"
     ],
     "categories": [
-      "Multi-material AM"
+      "Multi-material AM",
+      "Functionally Graded AM"
     ],
     "corresponding_authors": [
       {
@@ -11808,25 +11809,27 @@
       }
     ],
     "curation_priority": false,
-    "doi": "10.1002/aisy.70218",
+    "doi": "10.1002/aisy.202500430",
     "first_added": "2026-06-19",
-    "id": "10.1002/aisy.70218",
+    "id": "10.1002/aisy.202500430",
     "is_core_venue": false,
     "is_weekly_new": false,
     "last_updated": "2026-06-29",
-    "openai_summary_applied": false,
+    "openai_summary_applied": true,
     "publication_type": "journal_article",
     "relevance_score": 5,
     "source": [
       "Crossref"
     ],
-    "summary_provider": "fallback",
+    "summary_provider": "openai",
     "tags": [
-      "Soft robotics",
-      "Manufacturing automation"
+      "soft robotics",
+      "pneumatic sensors",
+      "autonomous systems",
+      "3D printing"
     ],
     "title": "Toward More Autonomous Soft Robots: Development and Characterization of a 3D-Printed Pneumatic Contact Sensor for a Six-Legged Soft Robotic Walker",
-    "url": "https://doi.org/10.1002/aisy.70218",
+    "url": "https://doi.org/10.1002/aisy.202500430",
     "venue": "Advanced Intelligent Systems",
     "venue_trust": "trusted",
     "year": 2026,
@@ -38312,6 +38315,50 @@
   },
   {
     "authors": [
+      "Eduardo Navas",
+      "Daniel Rodríguez-Nieto",
+      "Alain Antonio Rodríguez-González",
+      "Roemi Fernández"
+    ],
+    "categories": [
+      "Multi-material AM"
+    ],
+    "corresponding_authors": [
+      {
+        "name": "Eduardo Navas",
+        "is_corresponding": true
+      },
+      {
+        "name": "Roemí Fernández",
+        "is_corresponding": true
+      }
+    ],
+    "curation_priority": false,
+    "doi": "10.3390/app15052576",
+    "first_added": "2026-06-29",
+    "id": "10.3390/app15052576",
+    "is_core_venue": false,
+    "is_weekly_new": true,
+    "last_updated": "2026-06-29",
+    "openai_summary_applied": false,
+    "publication_type": "journal_article",
+    "relevance_score": 5,
+    "source": [
+      "Crossref"
+    ],
+    "summary_provider": "fallback",
+    "tags": [
+      "Soft robotics"
+    ],
+    "title": "Parallel Fin Ray Soft Gripper with Embedded Mechano-Optical Force Sensor",
+    "url": "https://doi.org/10.3390/app15052576",
+    "venue": "Applied Sciences",
+    "venue_trust": "trusted",
+    "year": 2025,
+    "status": "active"
+  },
+  {
+    "authors": [
       "Xiang Dong",
       "Xing Li",
       "Jizhai Cui",
@@ -54491,6 +54538,51 @@
     "title": "Effect of Core Material Thickness on the Shore Hardness of the Sandwich-Structured Multi-Material 3D-Printed Parts",
     "url": "https://doi.org/10.4028/p-zs9z6i",
     "venue": "Applied Mechanics and Materials",
+    "venue_trust": "trusted",
+    "year": 2024,
+    "status": "active"
+  },
+  {
+    "authors": [
+      "Xuexin Yu",
+      "Dongjiang Wu",
+      "Weiming Bi",
+      "Xiao Feng",
+      "Ziyuan Zhao",
+      "Yunbo Hao",
+      "Guangyi Ma",
+      "Cong Zhou",
+      "Fangyong Niu"
+    ],
+    "categories": [
+      "Functionally Graded AM"
+    ],
+    "corresponding_authors": [
+      {
+        "name": "Fangyong Niu",
+        "is_corresponding": true
+      }
+    ],
+    "curation_priority": false,
+    "doi": "10.1111/jace.19653",
+    "first_added": "2026-06-29",
+    "id": "10.1111/jace.19653",
+    "is_core_venue": false,
+    "is_weekly_new": true,
+    "last_updated": "2026-06-29",
+    "openai_summary_applied": false,
+    "publication_type": "journal_article",
+    "relevance_score": 6,
+    "source": [
+      "Crossref"
+    ],
+    "summary_provider": "fallback",
+    "tags": [
+      "Additive manufacturing"
+    ],
+    "title": "Direct additive manufacturing of Al2O3-TiCp functionally graded ceramics by laser-directed energy deposition",
+    "url": "https://doi.org/10.1111/jace.19653",
+    "venue": "Journal of the American Ceramic Society",
     "venue_trust": "trusted",
     "year": 2024,
     "status": "active"
