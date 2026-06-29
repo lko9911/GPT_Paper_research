@@ -2671,8 +2671,7 @@
       "Falk Tauber"
     ],
     "categories": [
-      "Multi-material AM",
-      "Functionally Graded AM"
+      "Multi-material AM"
     ],
     "corresponding_authors": [
       {
@@ -2681,27 +2680,25 @@
       }
     ],
     "curation_priority": false,
-    "doi": "10.1002/aisy.202500430",
+    "doi": "10.1002/aisy.70218",
     "first_added": "2026-06-19",
-    "id": "10.1002/aisy.202500430",
+    "id": "10.1002/aisy.70218",
     "is_core_venue": false,
     "is_weekly_new": false,
     "last_updated": "2026-06-29",
-    "openai_summary_applied": true,
+    "openai_summary_applied": false,
     "publication_type": "journal_article",
     "relevance_score": 5,
     "source": [
       "Crossref"
     ],
-    "summary_provider": "openai",
+    "summary_provider": "fallback",
     "tags": [
-      "soft robotics",
-      "pneumatic sensors",
-      "autonomous systems",
-      "3D printing"
+      "Soft robotics",
+      "Manufacturing automation"
     ],
     "title": "Toward More Autonomous Soft Robots: Development and Characterization of a 3D-Printed Pneumatic Contact Sensor for a Six-Legged Soft Robotic Walker",
-    "url": "https://doi.org/10.1002/aisy.202500430",
+    "url": "https://doi.org/10.1002/aisy.70218",
     "venue": "Advanced Intelligent Systems",
     "venue_trust": "trusted",
     "year": 2026,
@@ -2825,6 +2822,39 @@
     "title": "Shape-Morphing 4D Printed Quadcopter UAV: Design, Fabrication, and Flight Validation",
     "url": "https://doi.org/10.2139/ssrn.6308199",
     "venue": "",
+    "venue_trust": "low",
+    "year": 2026,
+    "status": "archived"
+  },
+  {
+    "archive_reason": "low_venue_trust",
+    "authors": [
+      "Naresh Veldurthi",
+      "Jan Torgersen"
+    ],
+    "categories": [
+      "Multi-material AM"
+    ],
+    "curation_priority": false,
+    "doi": "10.1016/b978-0-443-33953-0.00019-3",
+    "first_added": "2026-06-29",
+    "id": "10.1016/b978-0-443-33953-0.00019-3",
+    "is_core_venue": false,
+    "is_weekly_new": true,
+    "last_updated": "2026-06-29",
+    "openai_summary_applied": false,
+    "publication_type": "book_or_chapter",
+    "relevance_score": 5,
+    "source": [
+      "Crossref"
+    ],
+    "summary_provider": "fallback",
+    "tags": [
+      "Metamaterials"
+    ],
+    "title": "Permeability to fluid, microfluidic, biological properties in additive manufacturing of architected metamaterials",
+    "url": "https://doi.org/10.1016/b978-0-443-33953-0.00019-3",
+    "venue": "Additive Manufacturing of Architected Metamaterials",
     "venue_trust": "low",
     "year": 2026,
     "status": "archived"
@@ -3190,6 +3220,41 @@
     "title": "High efficiency light engine for holographic tomographic volumetric additive manufacturing using phase light modulator (PLM)",
     "url": "https://doi.org/10.1117/12.3099950",
     "venue": "Lasers and Photonics for Advanced Manufacturing II",
+    "venue_trust": "low",
+    "year": 2026,
+    "status": "archived"
+  },
+  {
+    "archive_reason": "low_venue_trust",
+    "authors": [
+      "Pasquale Gallo",
+      "Erin Komi",
+      "Sunatthacha Singhara Na Ayuthaya",
+      "Richard Prate"
+    ],
+    "categories": [
+      "Multi-material AM"
+    ],
+    "curation_priority": false,
+    "doi": "10.1016/b978-0-443-33953-0.00011-9",
+    "first_added": "2026-06-29",
+    "id": "10.1016/b978-0-443-33953-0.00011-9",
+    "is_core_venue": false,
+    "is_weekly_new": true,
+    "last_updated": "2026-06-29",
+    "openai_summary_applied": false,
+    "publication_type": "book_or_chapter",
+    "relevance_score": 5,
+    "source": [
+      "Crossref"
+    ],
+    "summary_provider": "fallback",
+    "tags": [
+      "Metamaterials"
+    ],
+    "title": "From pixel to products: industrial transformation with additive manufacturing metamaterials",
+    "url": "https://doi.org/10.1016/b978-0-443-33953-0.00011-9",
+    "venue": "Additive Manufacturing of Architected Metamaterials",
     "venue_trust": "low",
     "year": 2026,
     "status": "archived"
@@ -3580,6 +3645,40 @@
   {
     "archive_reason": "low_venue_trust",
     "authors": [
+      "Miao Zhao",
+      "Xinwei Li",
+      "Wei Zhai"
+    ],
+    "categories": [
+      "Multi-material AM"
+    ],
+    "curation_priority": false,
+    "doi": "10.1016/b978-0-443-33953-0.00005-3",
+    "first_added": "2026-06-29",
+    "id": "10.1016/b978-0-443-33953-0.00005-3",
+    "is_core_venue": false,
+    "is_weekly_new": true,
+    "last_updated": "2026-06-29",
+    "openai_summary_applied": false,
+    "publication_type": "book_or_chapter",
+    "relevance_score": 5,
+    "source": [
+      "Crossref"
+    ],
+    "summary_provider": "fallback",
+    "tags": [
+      "Metamaterials"
+    ],
+    "title": "Design of metamaterials for additive manufacturing",
+    "url": "https://doi.org/10.1016/b978-0-443-33953-0.00005-3",
+    "venue": "Additive Manufacturing of Architected Metamaterials",
+    "venue_trust": "low",
+    "year": 2026,
+    "status": "archived"
+  },
+  {
+    "archive_reason": "low_venue_trust",
+    "authors": [
       "Zhenhua He",
       "Hongyi Guo",
       "Saihua Jiang",
@@ -3732,6 +3831,70 @@
     ],
     "title": "Additive manufacturing of stainless steel with complex structures via vat photopolymerization: slurry, printing, debinding and sintering",
     "url": "https://doi.org/10.2139/ssrn.6403081",
+    "venue": "",
+    "venue_trust": "low",
+    "year": 2026,
+    "status": "archived"
+  },
+  {
+    "archive_reason": "low_venue_trust",
+    "authors": [
+      "Anton du Plessis",
+      "Tebogo Ledwaba",
+      "Christine Steenkamp"
+    ],
+    "categories": [
+      "Multi-material AM"
+    ],
+    "curation_priority": false,
+    "doi": "10.1016/b978-0-443-33953-0.00008-9",
+    "first_added": "2026-06-29",
+    "id": "10.1016/b978-0-443-33953-0.00008-9",
+    "is_core_venue": false,
+    "is_weekly_new": true,
+    "last_updated": "2026-06-29",
+    "openai_summary_applied": false,
+    "publication_type": "book_or_chapter",
+    "relevance_score": 5,
+    "source": [
+      "Crossref"
+    ],
+    "summary_provider": "fallback",
+    "tags": [
+      "Metamaterials"
+    ],
+    "title": "Additive manufacturing of metamaterials: constraints, errors, defects, and inspection",
+    "url": "https://doi.org/10.1016/b978-0-443-33953-0.00008-9",
+    "venue": "Additive Manufacturing of Architected Metamaterials",
+    "venue_trust": "low",
+    "year": 2026,
+    "status": "archived"
+  },
+  {
+    "archive_reason": "low_venue_trust",
+    "authors": [],
+    "categories": [
+      "Multi-material AM"
+    ],
+    "curation_priority": false,
+    "doi": "10.1016/c2024-0-01012-0",
+    "first_added": "2026-06-29",
+    "id": "10.1016/c2024-0-01012-0",
+    "is_core_venue": false,
+    "is_weekly_new": true,
+    "last_updated": "2026-06-29",
+    "openai_summary_applied": false,
+    "publication_type": "unknown",
+    "relevance_score": 5,
+    "source": [
+      "Crossref"
+    ],
+    "summary_provider": "fallback",
+    "tags": [
+      "Metamaterials"
+    ],
+    "title": "Additive Manufacturing of Architected Metamaterials",
+    "url": "https://doi.org/10.1016/c2024-0-01012-0",
     "venue": "",
     "venue_trust": "low",
     "year": 2026,
@@ -4096,41 +4259,6 @@
     ],
     "title": "4D Printing of Electrically Actuated Continuous Fiber-Reinforced Composite Sandwich Structures",
     "url": "https://doi.org/10.2139/ssrn.6815757",
-    "venue": "",
-    "venue_trust": "low",
-    "year": 2026,
-    "status": "archived"
-  },
-  {
-    "archive_reason": "low_venue_trust",
-    "authors": [
-      "Rishabha Malviya",
-      "Suraj Kumar",
-      "Sathvik Belagodu Sridhar",
-      "Pooja Shivappa"
-    ],
-    "categories": [
-      "Multi-material AM"
-    ],
-    "curation_priority": false,
-    "doi": "10.1515/9783111634609",
-    "first_added": "2026-06-28",
-    "id": "10.1515/9783111634609",
-    "is_core_venue": false,
-    "is_weekly_new": true,
-    "last_updated": "2026-06-29",
-    "openai_summary_applied": false,
-    "publication_type": "unknown",
-    "relevance_score": 5,
-    "source": [
-      "Crossref"
-    ],
-    "summary_provider": "fallback",
-    "tags": [
-      "4D printing"
-    ],
-    "title": "4D Printing in Healthcare",
-    "url": "https://doi.org/10.1515/9783111634609",
     "venue": "",
     "venue_trust": "low",
     "year": 2026,
@@ -11747,46 +11875,6 @@
     "status": "archived"
   },
   {
-    "archive_reason": "low_venue_trust",
-    "authors": [
-      "Bosco Yu",
-      "Derek Aranguren van Egmond",
-      "Khaled Abu Samk"
-    ],
-    "categories": [
-      "Multi-material AM"
-    ],
-    "corresponding_authors": [
-      {
-        "name": "Bosco Yu",
-        "is_corresponding": true
-      }
-    ],
-    "curation_priority": false,
-    "doi": "10.1007/978-3-031-67398-6_18",
-    "first_added": "2026-06-24",
-    "id": "10.1007/978-3-031-67398-6_18",
-    "is_core_venue": false,
-    "is_weekly_new": true,
-    "last_updated": "2026-06-29",
-    "openai_summary_applied": false,
-    "publication_type": "book_or_chapter",
-    "relevance_score": 5,
-    "source": [
-      "Crossref"
-    ],
-    "summary_provider": "fallback",
-    "tags": [
-      "Metamaterials"
-    ],
-    "title": "Additive Manufacturing and the Design of Multifunctional Heterogeneous/Aperiodic Architected Metamaterials: A Mechanical Perspective",
-    "url": "https://doi.org/10.1007/978-3-031-67398-6_18",
-    "venue": "Proceedings of the 63rd Conference of Metallurgists, COM 2024",
-    "venue_trust": "low",
-    "year": 2025,
-    "status": "archived"
-  },
-  {
     "archive_reason": "duplicate_title",
     "authors": [
       "Yiyang Yan",
@@ -15051,39 +15139,6 @@
     "title": "The Development and Characterisation of 3d-Printed Multi-Material Thermistor",
     "url": "https://doi.org/10.2139/ssrn.4806332",
     "venue": "",
-    "venue_trust": "low",
-    "year": 2024,
-    "status": "archived"
-  },
-  {
-    "archive_reason": "low_venue_trust",
-    "authors": [
-      "Nida Naveed",
-      "Muhammad Naveed Anwar"
-    ],
-    "categories": [
-      "Multi-material AM"
-    ],
-    "curation_priority": false,
-    "doi": "10.1109/icac61394.2024.10718858",
-    "first_added": "2026-06-28",
-    "id": "10.1109/icac61394.2024.10718858",
-    "is_core_venue": false,
-    "is_weekly_new": true,
-    "last_updated": "2026-06-29",
-    "openai_summary_applied": false,
-    "publication_type": "conference_proceedings",
-    "relevance_score": 6,
-    "source": [
-      "Crossref"
-    ],
-    "summary_provider": "fallback",
-    "tags": [
-      "Manufacturing automation"
-    ],
-    "title": "Sustainable Manufacturing through Digital Multi-Material 3D Printing",
-    "url": "https://doi.org/10.1109/icac61394.2024.10718858",
-    "venue": "2024 29th International Conference on Automation and Computing (ICAC)",
     "venue_trust": "low",
     "year": 2024,
     "status": "archived"

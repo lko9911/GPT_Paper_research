@@ -5075,7 +5075,7 @@
     "pdf_stored": false,
     "id": "10.2172/3021939"
   },
-  "10.1002/aisy.202500430": {
+  "10.1002/aisy.70218": {
     "author_details": [
       {
         "name": "Philipp Auth",
@@ -5219,7 +5219,7 @@
     "publisher": "Wiley",
     "openalex_checked": true,
     "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4414949582",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7130522311",
     "openalex_work_id": "",
     "openalex_source_id": "",
     "venue_metrics": {},
@@ -5235,12 +5235,12 @@
     "core_status": "non-core",
     "venue_scope": "non-core",
     "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The paper discusses the development of a 3D-printed pneumatic contact sensor for a soft robotic walker.\n2. Problem - Current soft robots rely on electronic sensors, which complicate systems and limit adaptability in challenging environments.\n3. Method - The authors created an electronics-free sensory system using pneumatic logic gates integrated into a six-legged soft robot.\n4. Key Result - The robot demonstrated rapid sensor response times and the ability to walk autonomously while effectively detecting obstacles.\n5. Takeaway - This work advances the field of soft robotics by enhancing autonomy and adaptability through electronics-free control systems.",
-    "relevance_note_en": "The summary captures the essence of the research on enhancing soft robot autonomy without electronics.",
-    "abstract_used_for_summary": true,
+    "ai_summary_en": "1. Topic - Toward More Autonomous Soft Robots: Development and Characterization of a 3D-Printed Pneumatic Contact Sensor for a Six-Legged Soft Robotic Walker is a 2026 paper from Advanced Intelligent Systems about Soft robotics and Manufacturing automation.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Soft robotics and Manufacturing automation.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Soft robotics and Manufacturing automation; current relevance score is 5/10.",
+    "relevance_note_en": "Relevant to the tracker through Soft robotics and Manufacturing automation; score: 5/10.",
+    "abstract_used_for_summary": false,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "id": "10.1002/aisy.202500430"
+    "id": "10.1002/aisy.70218"
   },
   "10.2139/ssrn.6717859": {
     "author_details": [
@@ -5475,6 +5475,60 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "id": "10.2139/ssrn.6308199"
+  },
+  "10.1016/b978-0-443-33953-0.00019-3": {
+    "author_details": [
+      {
+        "name": "Naresh Veldurthi",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Jan Torgersen",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "book-chapter",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [],
+    "issn_l": "",
+    "publisher": "Elsevier",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "venue_trust_reason": "book/chapter output rather than journal or trusted conference article",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - Permeability to fluid, microfluidic, biological properties in additive manufacturing of architected metamaterials is a 2026 paper from Additive Manufacturing of Architected Metamaterials about Metamaterials.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Metamaterials.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Metamaterials; current relevance score is 5/10.",
+    "relevance_note_en": "Relevant to the tracker through Metamaterials; score: 5/10.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "id": "10.1016/b978-0-443-33953-0.00019-3"
   },
   "10.1016/b978-0-443-33645-4.00014-0": {
     "author_details": [
@@ -6205,6 +6259,76 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "id": "10.1117/12.3099950"
+  },
+  "10.1016/b978-0-443-33953-0.00011-9": {
+    "author_details": [
+      {
+        "name": "Pasquale Gallo",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Erin Komi",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Sunatthacha Singhara Na Ayuthaya",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Richard Prate",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "book-chapter",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [],
+    "issn_l": "",
+    "publisher": "Elsevier",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "venue_trust_reason": "book/chapter output rather than journal or trusted conference article",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - From pixel to products: industrial transformation with additive manufacturing metamaterials is a 2026 paper from Additive Manufacturing of Architected Metamaterials about Metamaterials.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Metamaterials.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Metamaterials; current relevance score is 5/10.",
+    "relevance_note_en": "Relevant to the tracker through Metamaterials; score: 5/10.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "id": "10.1016/b978-0-443-33953-0.00011-9"
   },
   "10.1117/12.3100156": {
     "author_details": [
@@ -7045,6 +7169,68 @@
     "pdf_stored": false,
     "id": "10.2139/ssrn.6616510"
   },
+  "10.1016/b978-0-443-33953-0.00005-3": {
+    "author_details": [
+      {
+        "name": "Miao Zhao",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Xinwei Li",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Wei Zhai",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "book-chapter",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [],
+    "issn_l": "",
+    "publisher": "Elsevier",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "venue_trust_reason": "book/chapter output rather than journal or trusted conference article",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - Design of metamaterials for additive manufacturing is a 2026 paper from Additive Manufacturing of Architected Metamaterials about Metamaterials.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Metamaterials.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Metamaterials; current relevance score is 5/10.",
+    "relevance_note_en": "Relevant to the tracker through Metamaterials; score: 5/10.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "id": "10.1016/b978-0-443-33953-0.00005-3"
+  },
   "10.2139/ssrn.6730311": {
     "author_details": [
       {
@@ -7388,6 +7574,105 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "id": "10.2139/ssrn.6403081"
+  },
+  "10.1016/b978-0-443-33953-0.00008-9": {
+    "author_details": [
+      {
+        "name": "Anton du Plessis",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Tebogo Ledwaba",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Christine Steenkamp",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "book-chapter",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [],
+    "issn_l": "",
+    "publisher": "Elsevier",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "venue_trust_reason": "book/chapter output rather than journal or trusted conference article",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - Additive manufacturing of metamaterials: constraints, errors, defects, and inspection is a 2026 paper from Additive Manufacturing of Architected Metamaterials about Metamaterials.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Metamaterials.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Metamaterials; current relevance score is 5/10.",
+    "relevance_note_en": "Relevant to the tracker through Metamaterials; score: 5/10.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "id": "10.1016/b978-0-443-33953-0.00008-9"
+  },
+  "10.1016/c2024-0-01012-0": {
+    "author_details": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "edited-book",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [],
+    "issn_l": "",
+    "publisher": "Elsevier",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "venue_trust_reason": "missing venue metadata",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - Additive Manufacturing of Architected Metamaterials is a 2026 paper from an unknown venue about Metamaterials.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Metamaterials.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Metamaterials; current relevance score is 5/10.",
+    "relevance_note_en": "Relevant to the tracker through Metamaterials; score: 5/10.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "id": "10.1016/c2024-0-01012-0"
   },
   "10.26434/chemrxiv-2026-8c93m": {
     "author_details": [
@@ -8300,76 +8585,6 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "id": "10.2139/ssrn.6815757"
-  },
-  "10.1515/9783111634609": {
-    "author_details": [
-      {
-        "name": "Rishabha Malviya",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Suraj Kumar",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Sathvik Belagodu Sridhar",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Pooja Shivappa",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
-    "metadata_source": "crossref",
-    "crossref_type": "edited-book",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [],
-    "issn_l": "",
-    "publisher": "De Gruyter",
-    "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "venue_trust_reason": "missing venue metadata",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - 4D Printing in Healthcare is a 2026 paper from an unknown venue about 4D printing.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to 4D printing.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for 4D printing; current relevance score is 5/10.",
-    "relevance_note_en": "Relevant to the tracker through 4D printing; score: 5/10.",
-    "abstract_used_for_summary": false,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "id": "10.1515/9783111634609"
   },
   "10.1016/b978-0-443-28820-3.00014-7": {
     "author_details": [
@@ -18932,294 +19147,5 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "id": "10.2139/ssrn.5221178"
-  },
-  "10.21203/rs.3.rs-6650269/v1": {
-    "author_details": [
-      {
-        "name": "Chaoran Dou",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Jihoon Chung",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Raghav Gnanasambandam",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Yuhao Wu",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Jianzhi Li",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Zhenyu Kong",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Virginia Tech: Virginia Polytechnic Institute and State University"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Virginia Tech: Virginia Polytechnic Institute and State University"
-        ]
-      }
-    ],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
-    "metadata_source": "crossref",
-    "crossref_type": "posted-content",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [],
-    "issn_l": "",
-    "publisher": "Springer Science and Business Media LLC",
-    "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "https://openalex.org/W4410428963",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "venue_trust_reason": "missing venue metadata",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - This paper discusses a method for optimizing laser scan paths in powder bed fusion additive manufacturing using reinforcement learning.\n2. Problem - The challenge addressed is the inefficiency in traditional laser scan path planning that can lead to suboptimal manufacturing outcomes.\n3. Method - The authors propose a reinforcement learning framework that learns optimal scan paths by simulating various manufacturing scenarios.\n4. Key Result - The proposed method demonstrates significant improvements in scan path efficiency and overall manufacturing quality compared to conventional techniques.\n5. Takeaway - Integrating reinforcement learning into laser scan path planning can enhance the effectiveness of powder bed fusion processes.",
-    "relevance_note_en": "The summary captures the core aspects of the research, focusing on the application of reinforcement learning in additive manufacturing.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "id": "10.21203/rs.3.rs-6650269/v1"
-  },
-  "10.1117/12.3047764": {
-    "author_details": [
-      {
-        "name": "Chi Chung Li",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Robert R. McLeod",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
-    "metadata_source": "crossref",
-    "crossref_type": "proceedings-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [],
-    "issn_l": "",
-    "publisher": "SPIE",
-    "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "https://openalex.org/W4408601838",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "venue_trust_reason": "conference/proceedings not in trusted allowlist",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The study focuses on the challenges posed by occlusions in volumetric additive manufacturing.\n2. Problem - Occlusions can significantly limit the effectiveness and quality of the manufacturing process.\n3. Method - The authors employ quantitative analysis to assess the impact of occlusions on manufacturing outcomes.\n4. Key Result - Findings indicate specific limits on manufacturing capabilities due to occlusions, providing insights for improvement.\n5. Takeaway - Understanding occlusion effects is crucial for enhancing volumetric additive manufacturing techniques.",
-    "relevance_note_en": "The summary captures the essence of the study's focus on occlusions in additive manufacturing.",
-    "abstract_used_for_summary": false,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "id": "10.1117/12.3047764"
-  },
-  "10.1007/978-981-96-4214-4_7": {
-    "author_details": [
-      {
-        "name": "Supriya Rana",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Sujit Kumar Guchhait",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Krishna K. Yadav",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "book-chapter",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "1612-1317",
-      "1868-1212"
-    ],
-    "issn_l": "",
-    "publisher": "Springer Nature Singapore",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4410059224",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "venue_trust_reason": "book/chapter output rather than journal or trusted conference article",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The study focuses on the development of polymer-graphene and graphene oxide nanocomposites through advanced 3D and 4D printing techniques.\n2. Problem - There is a need for multifunctional materials that can be tailored for specific applications in various fields.\n3. Method - The authors explore the integration of nanocomposites with additive manufacturing technologies to enhance material properties.\n4. Key Result - The research demonstrates that these nanocomposites exhibit improved mechanical, thermal, and electrical properties suitable for diverse applications.\n5. Takeaway - Utilizing 3D and 4D printing for creating polymer-graphene composites can significantly advance the functionality of materials in engineering.",
-    "relevance_note_en": "The summary captures the essence of the research on nanocomposites and their applications in additive manufacturing.",
-    "abstract_used_for_summary": false,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "id": "10.1007/978-981-96-4214-4_7"
-  },
-  "10.1002/9781394213795.ch6": {
-    "author_details": [
-      {
-        "name": "Sivanagaraju Namathoti",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Pavan Kumar Gurrala",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Prakash Chandra",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "G. Naga Mallikarjun Rao",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "M. R. K. Vakkalagadda",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
-    "metadata_source": "crossref",
-    "crossref_type": "other",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [],
-    "issn_l": "",
-    "publisher": "Wiley",
-    "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "https://openalex.org/W4410549252",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "venue_trust_reason": "unsupported publication type",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The chapter explores the use of polymer blends and reinforcements in 4D printing, particularly focusing on shape memory polymers.\n2. Problem - A significant challenge with shape memory polymers is their reliance on non-biodegradable, petroleum-based materials, contributing to environmental pollution.\n3. Method - The authors discuss the potential of eco-friendly alternatives like poly(lactic acid) and the benefits of blending and reinforcing these materials to enhance their properties.\n4. Key Result - Blending PLA with materials like Fe3O4 can improve functionality, enabling multi-stimuli responses and tunable shape recovery.\n5. Takeaway - Advancements in 3D printing of biodegradable shape memory blends can lead to cost-effective solutions while maintaining desirable material properties.",
-    "relevance_note_en": "The summary captures the core themes and findings of the chapter on polymer blends and reinforcements in 4D printing.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "id": "10.1002/9781394213795.ch6"
   }
 }
