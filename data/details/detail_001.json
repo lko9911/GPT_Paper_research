@@ -1,4 +1,130 @@
 {
+  "10.1002/lpor.71200": {
+    "author_details": [
+      {
+        "name": "Jason E. Johnson",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "School of Mechanical Engineering and Birck Nanotechnology Center Purdue University  West Lafayette Indiana USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Mechanical Engineering and Birck Nanotechnology Center Purdue University  West Lafayette Indiana USA"
+        ]
+      },
+      {
+        "name": "Xianfan Xu",
+        "orcid": "https://orcid.org/0000-0003-0580-4625",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "School of Mechanical Engineering and Birck Nanotechnology Center Purdue University  West Lafayette Indiana USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Mechanical Engineering and Birck Nanotechnology Center Purdue University  West Lafayette Indiana USA"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "1863-8880",
+      "1863-8899"
+    ],
+    "issn_l": "",
+    "publisher": "Wiley",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7161036350",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The study focuses on improving layer-height accuracy in projection multi-photon lithography (PMPL) through Bayesian optimization.\n2. Problem - Achieving precise geometric accuracy in PMPL is challenging due to nonlinear polymerization kinetics and optical exposure conditions affecting layer height.\n3. Method - A Bayesian optimization framework is developed that combines grayscale patterning with in situ quantitative phase imaging to correct layer-height deviations autonomously.\n4. Key Result - The proposed method significantly enhances layer uniformity and accuracy, achieving improvements in under 300 prints while reducing experimental efforts compared to traditional methods.\n5. Takeaway - This approach demonstrates the potential of integrating physics-informed modeling and machine learning for optimizing micro- and nano-fabrication processes.",
+    "relevance_note_en": "The summary captures the core aspects of the study, including its focus, challenges addressed, methodology, results, and implications.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "id": "10.1002/lpor.71200"
+  },
+  "10.1007/s40964-025-01383-z": {
+    "author_details": [
+      {
+        "name": "Jesse P. de Alva",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Markus Buehler",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Progress in Additive Manufacturing",
+    "crossref_target_issn": "2363-9512",
+    "issn": [
+      "2363-9512",
+      "2363-9520"
+    ],
+    "issn_l": "",
+    "publisher": "Springer Science and Business Media LLC",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4415418152",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - The development of a dual-extruder 3D printer for biotic materials.\n2. Problem - Traditional 3D printing methods often rely on non-renewable plastics and generate considerable waste.\n3. Method - The printer employs a syringe-based mechanical extruder to deposit natural biomaterials like pectin and chitosan.\n4. Key Result - This system allows for multi-material printing and is designed to be accessible for non-experts with open-source components.\n5. Takeaway - The printer promotes sustainable manufacturing and supports the advancement of biomaterials research through community collaboration.",
+    "relevance_note_en": "The summary captures the essence of the paper's contributions and innovations in biotic 3D printing.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "id": "10.1007/s40964-025-01383-z"
+  },
   "10.1016/j.nxmate.2026.102285": {
     "author_details": [
       {
@@ -2858,7 +2984,7 @@
     "pdf_stored": false,
     "id": "10.1039/d5mh01984b"
   },
-  "10.1002/aisy.202500430": {
+  "10.1002/aisy.70218": {
     "author_details": [
       {
         "name": "Philipp Auth",
@@ -3002,7 +3128,7 @@
     "publisher": "Wiley",
     "openalex_checked": true,
     "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4414949582",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7130522311",
     "openalex_work_id": "",
     "openalex_source_id": "",
     "venue_metrics": {},
@@ -3018,12 +3144,12 @@
     "core_status": "non-core",
     "venue_scope": "non-core",
     "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The paper discusses the development of a 3D-printed pneumatic contact sensor for a soft robotic walker.\n2. Problem - Current soft robots rely on electronic sensors, which complicate systems and limit adaptability in challenging environments.\n3. Method - The authors created an electronics-free sensory system using pneumatic logic gates integrated into a six-legged soft robot.\n4. Key Result - The robot demonstrated rapid sensor response times and the ability to walk autonomously while effectively detecting obstacles.\n5. Takeaway - This work advances the field of soft robotics by enhancing autonomy and adaptability through electronics-free control systems.",
-    "relevance_note_en": "The summary captures the essence of the research on enhancing soft robot autonomy without electronics.",
-    "abstract_used_for_summary": true,
+    "ai_summary_en": "1. Topic - Toward More Autonomous Soft Robots: Development and Characterization of a 3D-Printed Pneumatic Contact Sensor for a Six-Legged Soft Robotic Walker is a 2026 paper from Advanced Intelligent Systems about Soft robotics and Manufacturing automation.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Soft robotics and Manufacturing automation.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Soft robotics and Manufacturing automation; current relevance score is 5/10.",
+    "relevance_note_en": "Relevant to the tracker through Soft robotics and Manufacturing automation; score: 5/10.",
+    "abstract_used_for_summary": false,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "id": "10.1002/aisy.202500430"
+    "id": "10.1002/aisy.70218"
   },
   "10.1016/j.rcim.2025.103182": {
     "author_details": [
@@ -21143,6 +21269,78 @@
     "pdf_stored": false,
     "id": "10.1002/adfm.202529302"
   },
+  "10.1016/j.msea.2026.150197": {
+    "author_details": [
+      {
+        "name": "Jing Wang",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Shuai Long",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Zujian Yu",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Peng Peng",
+        "orcid": "https://orcid.org/0000-0002-1862-4968",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "0921-5093"
+    ],
+    "issn_l": "",
+    "publisher": "Elsevier BV",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7147236746",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - Active learning-guided design of TiB2-reinforced 316L stainless steel via additive manufacturing: Process optimization and experimental validation is a 2026 paper from Materials Science and Engineering: A about Self-driving Labs and Process optimization.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Self-driving Labs and Process optimization.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Self-driving Labs and Process optimization; current relevance score is 5/10.",
+    "relevance_note_en": "Relevant to the tracker through Self-driving Labs and Process optimization; score: 5/10.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "id": "10.1016/j.msea.2026.150197"
+  },
   "10.1016/j.rineng.2026.110240": {
     "author_details": [
       {
@@ -31151,210 +31349,5 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "id": "10.3389/fnuen.2025.1603437"
-  },
-  "10.1007/s00170-025-15190-x": {
-    "author_details": [
-      {
-        "name": "Xin Liu",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Gongfa Li",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Feng Xiang",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Bo Tao",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Guozhang Jiang",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "International Journal of Advanced Manufacturing Technology",
-    "crossref_target_issn": "0268-3768",
-    "issn": [
-      "0268-3768",
-      "1433-3015"
-    ],
-    "issn_l": "",
-    "publisher": "Springer Science and Business Media LLC",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4407566415",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The study focuses on assessing risk response capabilities in human-robot collaboration using digital twin technology.\n2. Problem - There is a need to evaluate how effectively risk responses can be managed in collaborative environments involving humans and robots.\n3. Method - The authors propose a framework that integrates digital twin models to analyze and enhance risk response strategies.\n4. Key Result - The framework demonstrates improved risk management capabilities in human-robot collaborative settings.\n5. Takeaway - Implementing digital twins can significantly enhance the assessment and management of risks in collaborative robotics.",
-    "relevance_note_en": "The summary captures the essence of the paper's focus on risk assessment in human-robot collaboration through digital twins.",
-    "abstract_used_for_summary": false,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "id": "10.1007/s00170-025-15190-x"
-  },
-  "10.20517/gmo.2024.120501": {
-    "author_details": [
-      {
-        "name": "Qiao Yang",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Wuyi Ming",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2835-7590"
-    ],
-    "issn_l": "",
-    "publisher": "OAE Publishing Inc.",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4408241611",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The review focuses on green manufacturing processes in precision machining for automotive components.\n2. Problem - Challenges include high equipment costs and technical complexities that hinder the adoption of green manufacturing.\n3. Method - The study analyzes core elements of green manufacturing and advanced technologies through case studies.\n4. Key Result - Implementing green manufacturing can lead to reduced energy use and waste, while enhancing material efficiency.\n5. Takeaway - Future advancements in digitalization and intelligence are crucial for promoting sustainable practices in the automotive sector.",
-    "relevance_note_en": "The summary captures the essence of the review on green manufacturing in automotive precision machining.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "id": "10.20517/gmo.2024.120501"
-  },
-  "10.3390/app15179703": {
-    "author_details": [
-      {
-        "name": "Savvas Koltsakidis",
-        "orcid": "https://orcid.org/0000-0002-3305-4545",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Digital Manufacturing and Materials Characterization Laboratory, School of Science and Technology, International Hellenic University, 57001 Thessaloniki, Greece"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Digital Manufacturing and Materials Characterization Laboratory, School of Science and Technology, International Hellenic University, 57001 Thessaloniki, Greece"
-        ]
-      },
-      {
-        "name": "Dimitrios Tzetzis",
-        "orcid": "https://orcid.org/0000-0001-5006-5759",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Digital Manufacturing and Materials Characterization Laboratory, School of Science and Technology, International Hellenic University, 57001 Thessaloniki, Greece"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Digital Manufacturing and Materials Characterization Laboratory, School of Science and Technology, International Hellenic University, 57001 Thessaloniki, Greece"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2076-3417"
-    ],
-    "issn_l": "",
-    "publisher": "MDPI AG",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4413991112",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The review focuses on the integration of fused filament fabrication with complementary methods for creating hierarchically porous polymers.\n2. Problem - Traditional methods struggle to produce polymers with both macro-scale voids and micro-scale pores, limiting their functional applications.\n3. Method - The authors analyze various design strategies and material approaches for achieving multiscale porosity, including case studies and comparative analyses.\n4. Key Result - The review identifies key challenges in the fabrication process and discusses emerging solutions to enhance the capabilities of fused filament fabrication.\n5. Takeaway - A comprehensive understanding of integrating different techniques can significantly improve the production of complex porous polymer structures.",
-    "relevance_note_en": "The summary captures the essence of the review's focus on hierarchical porous polymers and the integration of fabrication methods.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "id": "10.3390/app15179703"
   }
 }
