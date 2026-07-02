@@ -559,6 +559,103 @@
     "pdf_stored": false,
     "id": "10.1039/d5ma01130b"
   },
+  "10.1177/08927057261434198": {
+    "author_details": [
+      {
+        "name": "K. Rajesh Kannan",
+        "orcid": "https://orcid.org/0000-0001-8817-4440",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Chennai Institute of Technology"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Chennai Institute of Technology"
+        ]
+      },
+      {
+        "name": "Vishal Mishra",
+        "orcid": "https://orcid.org/0000-0001-8399-2591",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Chennai Institute of Technology"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Chennai Institute of Technology"
+        ]
+      },
+      {
+        "name": "Dhinakaran Veeman",
+        "orcid": "https://orcid.org/0000-0001-6604-8910",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Chennai Institute of Technology"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Chennai Institute of Technology"
+        ]
+      },
+      {
+        "name": "R. Vaira Vignesh",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Amrita School of Engineering, Amrita Vishwa Vidyapeetham"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Amrita School of Engineering, Amrita Vishwa Vidyapeetham"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "0892-7057",
+      "1530-7980"
+    ],
+    "issn_l": "",
+    "publisher": "SAGE Publications",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7134935384",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - Investigation of physico-mechanical and flammability performance of 3D printed functionally graded polyamide carbon fibre and glass fibre multi-material composites is a 2026 paper from Journal of Thermoplastic Composite Materials about Additive manufacturing.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Additive manufacturing.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Additive manufacturing; current relevance score is 8/10.",
+    "relevance_note_en": "Relevant to the tracker through Additive manufacturing; score: 8/10.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "id": "10.1177/08927057261434198"
+  },
   "10.1108/rpj-05-2025-0206": {
     "author_details": [
       {
@@ -2783,9 +2880,9 @@
     "corresponding_author_source": "openalex_cross_check",
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Virtual and Physical Prototyping",
+    "crossref_target_issn": "1745-2759",
     "issn": [
       "1745-2759",
       "1745-2767"
@@ -3809,8 +3906,8 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
     "crossref_collection_route": "issn_venue_query",
@@ -3823,7 +3920,7 @@
     "issn_l": "",
     "publisher": "Springer Science and Business Media LLC",
     "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
+    "openalex_used_for": null,
     "openalex_crosscheck_work_id": "https://openalex.org/W4410432611",
     "openalex_work_id": "",
     "openalex_source_id": "",
@@ -5509,6 +5606,60 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "id": "10.1007/s00170-026-18133-2"
+  },
+  "10.1080/27525783.2026.2674370": {
+    "author_details": [
+      {
+        "name": "Anthony Bagherian",
+        "orcid": "https://orcid.org/0000-0003-2308-2021",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "International Business Management, International School of Management (ISM)"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "International Business Management, International School of Management (ISM)"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2752-5783"
+    ],
+    "issn_l": "",
+    "publisher": "Informa UK Limited",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7162630977",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - Integrating Digital Twin technology in Quality 5.0 and operational excellence: a Fuzzy COPRAS and Monte Carlo uncertainty simulation approach is a 2026 paper from Digital Twin about Digital Twins.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Digital Twins.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Digital Twins; current relevance score is 7/10.",
+    "relevance_note_en": "Relevant to the tracker through Digital Twins; score: 7/10.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "id": "10.1080/27525783.2026.2674370"
   },
   "10.54097/30b91y36": {
     "author_details": [
@@ -7906,7 +8057,7 @@
     "publisher": "Emerging Innovations Society: Science, Technology, and Social Studies",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7166833996",
     "openalex_work_id": "",
     "openalex_source_id": "",
     "venue_metrics": {},
@@ -13021,6 +13172,54 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "id": "10.1007/s00170-026-18354-5"
+  },
+  "10.22399/ijcesen.4882": {
+    "author_details": [
+      {
+        "name": "Tarini Prasad Samanta",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2149-9144"
+    ],
+    "issn_l": "",
+    "publisher": "Iskender AKKURT",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7128422031",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - AI in Smart Manufacturing: Driving Efficiency and Sustainability is a 2026 paper from International Journal of Computational and Experimental Science and Engineering about Digital Twins and Manufacturing automation.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Digital Twins and Manufacturing automation.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Digital Twins and Manufacturing automation; current relevance score is 7/10.",
+    "relevance_note_en": "Relevant to the tracker through Digital Twins and Manufacturing automation; score: 7/10.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "id": "10.22399/ijcesen.4882"
   },
   "10.1007/s00170-026-18091-9": {
     "author_details": [
@@ -24139,103 +24338,6 @@
     "pdf_stored": false,
     "id": "10.1080/17452759.2026.2638103"
   },
-  "10.1002/adem.70986": {
-    "author_details": [
-      {
-        "name": "Ahmed M. H. Ibrahim",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Chemical and Biological Engineering College of Engineering Drexel University  Philadelphia Pennsylvania USA"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Chemical and Biological Engineering College of Engineering Drexel University  Philadelphia Pennsylvania USA"
-        ]
-      },
-      {
-        "name": "Li Meng",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Mechanical Engineering and Mechanics College of Engineering Drexel University  Philadelphia Pennsylvania USA"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical Engineering and Mechanics College of Engineering Drexel University  Philadelphia Pennsylvania USA"
-        ]
-      },
-      {
-        "name": "Ahmad R. Najafi",
-        "orcid": "https://orcid.org/0000-0001-5432-9440",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Mechanical Engineering and Mechanics College of Engineering Drexel University  Philadelphia Pennsylvania USA"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical Engineering and Mechanics College of Engineering Drexel University  Philadelphia Pennsylvania USA"
-        ]
-      },
-      {
-        "name": "Nicolas J. Alvarez",
-        "orcid": "https://orcid.org/0000-0002-0976-6542",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Chemical and Biological Engineering College of Engineering Drexel University  Philadelphia Pennsylvania USA"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Chemical and Biological Engineering College of Engineering Drexel University  Philadelphia Pennsylvania USA"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "1438-1656",
-      "1527-2648"
-    ],
-    "issn_l": "",
-    "publisher": "Wiley",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W7164606345",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The study focuses on the toughness and interfacial failure of 3D-printed multimaterial composites using methacrylate-based resins.\n2. Problem - Thermosetting polymers are often limited by their low toughness, which affects their performance in load-bearing applications.\n3. Method - The research employs digital light processing (DLP) 3D printing to create structures with various resin formulations and patterns, alongside a phase-field fracture model to analyze failure behavior.\n4. Key Result - Blended resin structures demonstrated significantly improved toughness compared to pure formulations, highlighting the importance of transitional interfaces for effective stress transfer.\n5. Takeaway - Designing multimaterial composites with tailored interfacial properties can enhance mechanical performance in thermosetting polymers.",
-    "relevance_note_en": "The summary captures the core findings and methodologies of the study while maintaining a focus on the implications for material design.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "id": "10.1002/adem.70986"
-  },
   "10.1002/advs.202520526": {
     "author_details": [
       {
@@ -24592,131 +24694,5 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "id": "10.1111/jace.70419"
-  },
-  "10.1002/lpor.71200": {
-    "author_details": [
-      {
-        "name": "Jason E. Johnson",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "School of Mechanical Engineering and Birck Nanotechnology Center Purdue University  West Lafayette Indiana USA"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "School of Mechanical Engineering and Birck Nanotechnology Center Purdue University  West Lafayette Indiana USA"
-        ]
-      },
-      {
-        "name": "Xianfan Xu",
-        "orcid": "https://orcid.org/0000-0003-0580-4625",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "School of Mechanical Engineering and Birck Nanotechnology Center Purdue University  West Lafayette Indiana USA"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "School of Mechanical Engineering and Birck Nanotechnology Center Purdue University  West Lafayette Indiana USA"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "1863-8880",
-      "1863-8899"
-    ],
-    "issn_l": "",
-    "publisher": "Wiley",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W7161036350",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - Bayesian Optimization of Grayscale Patterns for Layer-Height Accuracy in Projection Multi-Photon 3D Printing is a 2026 paper from Laser & Photonics Reviews about Self-driving Labs and Manufacturing automation.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Self-driving Labs and Manufacturing automation.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Self-driving Labs and Manufacturing automation; current relevance score is 6/10.",
-    "relevance_note_en": "Relevant to the tracker through Self-driving Labs and Manufacturing automation; score: 6/10.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "id": "10.1002/lpor.71200"
-  },
-  "10.1007/s40964-025-01383-z": {
-    "author_details": [
-      {
-        "name": "Jesse P. de Alva",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Markus Buehler",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "Progress in Additive Manufacturing",
-    "crossref_target_issn": "2363-9512",
-    "issn": [
-      "2363-9512",
-      "2363-9520"
-    ],
-    "issn_l": "",
-    "publisher": "Springer Science and Business Media LLC",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4415418152",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Core manufacturing journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - The development of a dual-extruder 3D printer for biotic materials.\n2. Problem - Traditional 3D printing methods often rely on non-renewable plastics and generate considerable waste.\n3. Method - The printer employs a syringe-based mechanical extruder to deposit natural biomaterials like pectin and chitosan.\n4. Key Result - This system allows for multi-material printing and is designed to be accessible for non-experts with open-source components.\n5. Takeaway - The printer promotes sustainable manufacturing and supports the advancement of biomaterials research through community collaboration.",
-    "relevance_note_en": "The summary captures the essence of the paper's contributions and innovations in biotic 3D printing.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "id": "10.1007/s40964-025-01383-z"
   }
 }
