@@ -1424,100 +1424,6 @@
     "archive_reason": "low_venue_trust"
   },
   {
-    "id": "10.1201/9781003504825",
-    "title": "Manufacturing Process Optimization for Sustainable Development Using Digital Twin Applications",
-    "authors": [
-      "Santosh Kumar Tamang",
-      "Vishnu Vijay Kumar",
-      "J. Paulo Davim"
-    ],
-    "author_details": [
-      {
-        "name": "Santosh Kumar Tamang",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Vishnu Vijay Kumar",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "J. Paulo Davim",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
-    "year": 2026,
-    "venue": "",
-    "doi": "10.1201/9781003504825",
-    "url": "https://doi.org/10.1201/9781003504825",
-    "source": [
-      "Crossref"
-    ],
-    "metadata_source": "crossref",
-    "crossref_type": "book",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [],
-    "issn_l": "",
-    "publisher": "CRC Press",
-    "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "https://openalex.org/W7134977571",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "publication_type": "unknown",
-    "venue_trust": "low",
-    "venue_trust_reason": "missing venue metadata",
-    "is_core_venue": false,
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "categories": [
-      "Multi-material AM"
-    ],
-    "tags": [
-      "Digital Twins",
-      "Process optimization"
-    ],
-    "relevance_score": 7,
-    "curation_priority": false,
-    "ai_summary_en": "1. Topic - Manufacturing Process Optimization for Sustainable Development Using Digital Twin Applications is a 2026 paper from an unknown venue about Digital Twins and Process optimization.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Digital Twins and Process optimization.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Digital Twins and Process optimization; current relevance score is 7/10.",
-    "summary_provider": "fallback",
-    "openai_summary_applied": false,
-    "relevance_note_en": "Relevant to the tracker through Digital Twins and Process optimization; score: 7/10.",
-    "abstract_used_for_summary": false,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "first_added": "2026-07-04",
-    "last_updated": "2026-07-04",
-    "is_weekly_new": true,
-    "archive_reason": "low_venue_trust"
-  },
-  {
     "id": "10.2139/ssrn.6318000",
     "title": "Leveraging Digital Twin Technologies for Resource-Efficient Manufacturing in Circular Economy Models",
     "authors": [
@@ -4729,7 +4635,7 @@
     "first_added": "2026-06-19",
     "last_updated": "2026-07-04",
     "is_weekly_new": false,
-    "archive_reason": "low_venue_trust"
+    "archive_reason": "duplicate_title"
   },
   {
     "id": "10.2139/ssrn.6178599",
@@ -13279,6 +13185,100 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-30",
+    "last_updated": "2026-07-04",
+    "is_weekly_new": true,
+    "archive_reason": "low_venue_trust"
+  },
+  {
+    "id": "10.1016/b978-0-443-28820-3.00014-7",
+    "title": "3D/4D printing of electromagnetic field-assisted multifunctional polymer composites",
+    "authors": [
+      "Hamed Yazdani Nezhad"
+    ],
+    "author_details": [
+      {
+        "name": "Hamed Yazdani Nezhad",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_authors": [
+      {
+        "name": "Hamed Yazdani Nezhad",
+        "openalex_author_id": "https://openalex.org/A5086144566",
+        "orcid": "https://orcid.org/0000-0003-0832-3579",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Leeds",
+            "ror": "https://ror.org/024mrxd33",
+            "country_code": "GB",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Faculty of Engineering and Physical Sciences, University of Leeds, Leeds, United Kingdom"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "year": 2026,
+    "venue": "Innovations in Advanced Materials and Manufacturing",
+    "doi": "10.1016/b978-0-443-28820-3.00014-7",
+    "url": "https://doi.org/10.1016/b978-0-443-28820-3.00014-7",
+    "source": [
+      "Crossref"
+    ],
+    "metadata_source": "crossref",
+    "crossref_type": "book-chapter",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [],
+    "issn_l": "",
+    "publisher": "Elsevier",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7139921186",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "publication_type": "book_or_chapter",
+    "venue_trust": "low",
+    "venue_trust_reason": "book/chapter output rather than journal or trusted conference article",
+    "is_core_venue": false,
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "categories": [
+      "Multi-material AM"
+    ],
+    "tags": [
+      "4D printing"
+    ],
+    "relevance_score": 5,
+    "curation_priority": false,
+    "ai_summary_en": "1. Topic - 3D/4D printing of electromagnetic field-assisted multifunctional polymer composites is a 2026 paper from Innovations in Advanced Materials and Manufacturing about 4D printing.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to 4D printing.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for 4D printing; current relevance score is 5/10.",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_en": "Relevant to the tracker through 4D printing; score: 5/10.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-07-04",
     "last_updated": "2026-07-04",
     "is_weekly_new": true,
     "archive_reason": "low_venue_trust"
@@ -38329,6 +38329,106 @@
     "archive_reason": "low_venue_trust"
   },
   {
+    "id": "10.1109/wsc63780.2024.10838771",
+    "title": "The Economic Impact of Digital Twin Technology on Manufacturing Systems",
+    "authors": [
+      "Ali Ahmad Malik"
+    ],
+    "author_details": [
+      {
+        "name": "Ali Ahmad Malik",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Oakland University,Dept. of Industrial and Systems Engineering,Rochester,MI,USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Oakland University,Dept. of Industrial and Systems Engineering,Rochester,MI,USA"
+        ]
+      }
+    ],
+    "corresponding_authors": [
+      {
+        "name": "Ali Ahmad Malik",
+        "openalex_author_id": "https://openalex.org/A5041464552",
+        "orcid": "https://orcid.org/0000-0001-7191-3614",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Oakland University",
+            "ror": "https://ror.org/01ythxj32",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Oakland University,Dept. of Industrial and Systems Engineering,Rochester,MI,USA"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "year": 2024,
+    "venue": "2024 Winter Simulation Conference (WSC)",
+    "doi": "10.1109/wsc63780.2024.10838771",
+    "url": "https://doi.org/10.1109/wsc63780.2024.10838771",
+    "source": [
+      "Crossref"
+    ],
+    "metadata_source": "crossref",
+    "crossref_type": "proceedings-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [],
+    "issn_l": "",
+    "publisher": "IEEE",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4406612353",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "publication_type": "conference_proceedings",
+    "venue_trust": "low",
+    "venue_trust_reason": "conference/proceedings not in trusted allowlist",
+    "is_core_venue": false,
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "categories": [
+      "Multi-material AM"
+    ],
+    "tags": [
+      "Digital Twins"
+    ],
+    "relevance_score": 7,
+    "curation_priority": false,
+    "ai_summary_en": "1. Topic - The Economic Impact of Digital Twin Technology on Manufacturing Systems is a 2024 paper from 2024 Winter Simulation Conference (WSC) about Digital Twins.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Digital Twins.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Digital Twins; current relevance score is 7/10.",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_en": "Relevant to the tracker through Digital Twins; score: 7/10.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-07-04",
+    "last_updated": "2026-07-04",
+    "is_weekly_new": true,
+    "archive_reason": "low_venue_trust"
+  },
+  {
     "id": "10.1109/asmc61125.2024.10545457",
     "title": "The Digital Twin Difference-a Blueprint for the Semiconductor Manufacturing Metaverse",
     "authors": [
@@ -45453,102 +45553,6 @@
     "last_updated": "2026-07-04",
     "is_weekly_new": true,
     "archive_reason": "duplicate_title"
-  },
-  {
-    "id": "10.1109/icac61394.2024.10718858",
-    "title": "Sustainable Manufacturing through Digital Multi-Material 3D Printing",
-    "authors": [
-      "Nida Naveed",
-      "Muhammad Naveed Anwar"
-    ],
-    "author_details": [
-      {
-        "name": "Nida Naveed",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "University of Sunderland,Faculty of Technology, School of Engineering,UK"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "University of Sunderland,Faculty of Technology, School of Engineering,UK"
-        ]
-      },
-      {
-        "name": "Muhammad Naveed Anwar",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Northumbria University,Faculty of Engineering and Environment,Department of Computer and Information Sciences,UK"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Northumbria University,Faculty of Engineering and Environment,Department of Computer and Information Sciences,UK"
-        ]
-      }
-    ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
-    "year": 2024,
-    "venue": "2024 29th International Conference on Automation and Computing (ICAC)",
-    "doi": "10.1109/icac61394.2024.10718858",
-    "url": "https://doi.org/10.1109/icac61394.2024.10718858",
-    "source": [
-      "Crossref"
-    ],
-    "metadata_source": "crossref",
-    "crossref_type": "proceedings-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [],
-    "issn_l": "",
-    "publisher": "IEEE",
-    "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "https://openalex.org/W4403678228",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "publication_type": "conference_proceedings",
-    "venue_trust": "low",
-    "venue_trust_reason": "conference/proceedings not in trusted allowlist",
-    "is_core_venue": false,
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "categories": [
-      "Multi-material AM"
-    ],
-    "tags": [
-      "Manufacturing automation"
-    ],
-    "relevance_score": 6,
-    "curation_priority": false,
-    "ai_summary_en": "1. Topic - Sustainable Manufacturing through Digital Multi-Material 3D Printing is a 2024 paper from 2024 29th International Conference on Automation and Computing (ICAC) about Manufacturing automation.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Manufacturing automation.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Manufacturing automation; current relevance score is 6/10.",
-    "summary_provider": "fallback",
-    "openai_summary_applied": false,
-    "relevance_note_en": "Relevant to the tracker through Manufacturing automation; score: 6/10.",
-    "abstract_used_for_summary": false,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "first_added": "2026-07-04",
-    "last_updated": "2026-07-04",
-    "is_weekly_new": true,
-    "archive_reason": "low_venue_trust"
   },
   {
     "id": "10.32604/icces.2024.011371",
