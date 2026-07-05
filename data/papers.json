@@ -4437,9 +4437,9 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Zhenlu Xu",
-        "openalex_author_id": "https://openalex.org/A5056473819",
-        "orcid": "https://orcid.org/0009-0007-0580-017X",
+        "name": "Wenjun Xu",
+        "openalex_author_id": "https://openalex.org/A5059180329",
+        "orcid": "https://orcid.org/0000-0001-5370-3437",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -9421,29 +9421,9 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [
-      {
-        "name": "Peter Frohn-Sörensen",
-        "openalex_author_id": "https://openalex.org/A5074380260",
-        "orcid": "https://orcid.org/0000-0003-0896-7083",
-        "position": "middle",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "University of Siegen",
-            "ror": "https://ror.org/02azyry73",
-            "country_code": "DE",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Forming Technology Siegen UTS, University of Siegen, Siegen, Germany",
-          "University of Siegen"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
     "year": 2026,
     "venue": "International Journal of Material Forming",
     "doi": "10.1007/s12289-026-02009-7",
@@ -9463,7 +9443,7 @@
     "issn_l": "",
     "publisher": "Springer Science and Business Media LLC",
     "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
+    "openalex_used_for": null,
     "openalex_crosscheck_work_id": "https://openalex.org/W4416417041",
     "openalex_work_id": "",
     "openalex_source_id": "",
@@ -50087,9 +50067,28 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Stelios K. Georgantzinos",
+        "openalex_author_id": "https://openalex.org/A5076091608",
+        "orcid": "https://orcid.org/0000-0003-2520-2568",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "National and Kapodistrian University of Athens",
+            "ror": "https://ror.org/04gnjpq42",
+            "country_code": "GR",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Laboratory for Advanced Materials, Structures, and Digitalization, Department of Aerospace Science and Technology National and Kapodistrian University of Athens  Psachna Greece"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Polymer Engineering & Science",
     "doi": "10.1002/pen.70689",
@@ -50109,8 +50108,8 @@
     "issn_l": "",
     "publisher": "Wiley",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7167345845",
     "openalex_work_id": "",
     "openalex_source_id": "",
     "venue_metrics": {},
@@ -60285,9 +60284,69 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Ricky D. Wildman",
+        "openalex_author_id": "https://openalex.org/A5008929056",
+        "orcid": "https://orcid.org/0000-0003-2329-8471",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Nottingham",
+            "ror": "https://ror.org/01ee9ar58",
+            "country_code": "GB",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Centre of Additive Manufacturing, Faculty of Engineering, Engineering, University Park, University of Nottingham, Nottingham, NG7 2RD, UK. ricky.wildman@nottingham.ac.uk",
+          "Department of Chemical and Environmental Engineering, Faculty of Engineering, University Park, University of Nottingham, Nottingham, NG7 2RD, UK. ricky.wildman@nottingham.ac.uk",
+          "University of Nottingham"
+        ]
+      },
+      {
+        "name": "Hayden Taylor",
+        "openalex_author_id": "https://openalex.org/A5060055066",
+        "orcid": "https://orcid.org/0000-0001-9810-6505",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of California, Berkeley",
+            "ror": "https://ror.org/01an7q238",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Dept. of Mechanical Engineering, University of California, Berkeley, CA, USA. hkt@berkeley.edu",
+          "University of California, Berkeley"
+        ]
+      },
+      {
+        "name": "Derek J. Irvine",
+        "openalex_author_id": "https://openalex.org/A5064718443",
+        "orcid": "https://orcid.org/0000-0003-1461-9851",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Nottingham",
+            "ror": "https://ror.org/01ee9ar58",
+            "country_code": "GB",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Centre of Additive Manufacturing, Faculty of Engineering, Engineering, University Park, University of Nottingham, Nottingham, NG7 2RD, UK. derek.irvine@nottingham.ac.uk",
+          "Department of Chemical and Environmental Engineering, Faculty of Engineering, University Park, University of Nottingham, Nottingham, NG7 2RD, UK. derek.irvine@nottingham.ac.uk",
+          "University of Nottingham"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Nature Communications",
     "doi": "10.1038/s41467-026-73456-8",
@@ -60306,7 +60365,7 @@
     "issn_l": "",
     "publisher": "Springer Science and Business Media LLC",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4412585581",
     "openalex_work_id": "",
     "openalex_source_id": "",
@@ -62059,9 +62118,9 @@
     ],
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "3D Printing and Additive Manufacturing",
-    "crossref_target_issn": "2329-7662",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
     "issn": [
       "2329-7662",
       "2329-7670"
@@ -74039,12 +74098,18 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Maria A. Bieberich",
-        "openalex_author_id": "https://openalex.org/A5081851152",
-        "orcid": "https://orcid.org/0000-0002-1518-5330",
-        "position": "first",
+        "name": "Narendra Pandala",
+        "openalex_author_id": "https://openalex.org/A5025179556",
+        "orcid": "https://orcid.org/0000-0002-3057-8327",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
+          {
+            "name": "University of Iowa",
+            "ror": "https://ror.org/036jqmy94",
+            "country_code": "US",
+            "type": "education"
+          },
           {
             "name": "University of Maryland, Baltimore County",
             "ror": "https://ror.org/02qskvh78",
@@ -74053,12 +74118,13 @@
           }
         ],
         "raw_affiliation_strings": [
-          "University of Maryland, Baltimore County, Baltimore, Maryland, USA"
+          "University of Maryland, Baltimore County, Baltimore, Maryland, USA",
+          "Institute for Vision Research, Carver College of Medicine, University of Iowa, Iowa City, Iowa, USA"
         ]
       },
       {
-        "name": "Victor Kehinde",
-        "openalex_author_id": "https://openalex.org/A5091964598",
+        "name": "Ishanathan Guteng",
+        "openalex_author_id": "https://openalex.org/A5120110580",
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -79546,7 +79612,7 @@
         "name": "Luquan Ren",
         "openalex_author_id": null,
         "orcid": null,
-        "position": "last",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -80461,7 +80527,7 @@
     "publisher": "Wiley",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7167347342",
     "openalex_work_id": "",
     "openalex_source_id": "",
     "venue_metrics": {},
@@ -91375,9 +91441,9 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Sichao Liu",
-        "openalex_author_id": "https://openalex.org/A5068371109",
-        "orcid": "https://orcid.org/0000-0002-1909-0507",
+        "name": "Cheng Zhang",
+        "openalex_author_id": "https://openalex.org/A5100769098",
+        "orcid": "https://orcid.org/0000-0001-8282-9901",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -125284,8 +125350,8 @@
         "raw_affiliation_strings": [
           "Institute of Structured and Architected Materials Liaoning Academy of Materials  Shenyang 110167 China",
           "Key Laboratory of Bionic Engineering Ministry of Education Jilin University  Changchun 130022 China",
-          "Key Laboratory of Bionic Engineering, Ministry of Education, Jilin University, Changchun, 130022 China",
-          "Institute of Structured and Architected Materials, Liaoning Academy of Materials, Shenyang, 110167 China"
+          "Institute of Structured and Architected Materials, Liaoning Academy of Materials, Shenyang, 110167 China",
+          "Key Laboratory of Bionic Engineering, Ministry of Education, Jilin University, Changchun, 130022 China"
         ]
       },
       {
@@ -125299,12 +125365,6 @@
             "name": "Jilin University",
             "ror": "https://ror.org/00js3aw79",
             "country_code": "CN",
-            "type": "education"
-          },
-          {
-            "name": "Universität Ulm",
-            "ror": "https://ror.org/032000t02",
-            "country_code": "DE",
             "type": "education"
           },
           {
@@ -125324,7 +125384,9 @@
           "Department of Mechanical, Aerospace, and Civil Engineering University of Manchester  Manchester M13 9PL UK",
           "Institute of Structured and Architected Materials Liaoning Academy of Materials  Shenyang 110167 China",
           "Key Laboratory of Bionic Engineering Ministry of Education Jilin University  Changchun 130022 China",
-          "Institute of Orthopaedic Research and Biomechanics, Ulm University Medical Centre, University of Ulm, 89081 Ulm, Germany"
+          "Institute of Structured and Architected Materials, Liaoning Academy of Materials, Shenyang, 110167 China",
+          "Department of Mechanical, Aerospace, and Civil Engineering, University of Manchester, Manchester, M13 9PL UK",
+          "Key Laboratory of Bionic Engineering, Ministry of Education, Jilin University, Changchun, 130022 China"
         ]
       },
       {
@@ -135464,171 +135526,6 @@
     "is_weekly_new": false
   },
   {
-    "id": "10.1021/acsbiomaterials.4c01837",
-    "title": "Volumetric Additive Manufacturing for Cell Printing: Bridging Industry Adaptation and Regulatory Frontiers",
-    "authors": [
-      "Vidhi Mathur",
-      "Vinita Dsouza",
-      "Varadharajan Srinivasan",
-      "Kirthanashri S Vasanthan"
-    ],
-    "author_details": [
-      {
-        "name": "Vidhi Mathur",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Manipal Centre for Biotherapeutics Research, Manipal Academy of Higher Education, Manipal, 576104 Karnataka, India"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Manipal Centre for Biotherapeutics Research, Manipal Academy of Higher Education, Manipal, 576104 Karnataka, India"
-        ]
-      },
-      {
-        "name": "Vinita Dsouza",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Manipal Centre for Biotherapeutics Research, Manipal Academy of Higher Education, Manipal, 576104 Karnataka, India"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Manipal Centre for Biotherapeutics Research, Manipal Academy of Higher Education, Manipal, 576104 Karnataka, India"
-        ]
-      },
-      {
-        "name": "Varadharajan Srinivasan",
-        "orcid": "https://orcid.org/0000-0001-5527-1375",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Civil Engineering, Manipal Institute of Technology, Manipal Academy of Higher Education, Manipal, 576104 Karnataka, India"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Civil Engineering, Manipal Institute of Technology, Manipal Academy of Higher Education, Manipal, 576104 Karnataka, India"
-        ]
-      },
-      {
-        "name": "Kirthanashri S Vasanthan",
-        "orcid": "https://orcid.org/0000-0003-2115-153X",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Manipal Centre for Biotherapeutics Research, Manipal Academy of Higher Education, Manipal, 576104 Karnataka, India"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Manipal Centre for Biotherapeutics Research, Manipal Academy of Higher Education, Manipal, 576104 Karnataka, India"
-        ]
-      }
-    ],
-    "corresponding_authors": [
-      {
-        "name": "Varadharajan Srinivasan",
-        "openalex_author_id": "https://openalex.org/A5085787998",
-        "orcid": "https://orcid.org/0000-0001-5527-1375",
-        "position": "middle",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "Manipal Academy of Higher Education",
-            "ror": "https://ror.org/02xzytt36",
-            "country_code": "IN",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Civil Engineering, Manipal Institute of Technology, Manipal Academy of Higher Education, Manipal, 576104 Karnataka, India"
-        ]
-      },
-      {
-        "name": "Kirthanashri S. Vasanthan",
-        "openalex_author_id": "https://openalex.org/A5063348067",
-        "orcid": "https://orcid.org/0000-0003-2115-153X",
-        "position": "last",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "Manipal Academy of Higher Education",
-            "ror": "https://ror.org/02xzytt36",
-            "country_code": "IN",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Manipal Centre for Biotherapeutics Research, Manipal Academy of Higher Education, Manipal, 576104 Karnataka, India"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "year": 2025,
-    "venue": "ACS Biomaterials Science & Engineering",
-    "doi": "10.1021/acsbiomaterials.4c01837",
-    "url": "https://doi.org/10.1021/acsbiomaterials.4c01837",
-    "source": [
-      "Crossref"
-    ],
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2373-9878",
-      "2373-9878"
-    ],
-    "issn_l": "",
-    "publisher": "American Chemical Society (ACS)",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4406010202",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "publication_type": "journal_article",
-    "venue_trust": "trusted",
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "is_core_venue": false,
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "categories": [
-      "Multi-material AM"
-    ],
-    "tags": [
-      "Volumetric AM"
-    ],
-    "relevance_score": 5,
-    "curation_priority": false,
-    "ai_summary_en": "1. Topic - Volumetric Additive Manufacturing for Cell Printing: Bridging Industry Adaptation and Regulatory Frontiers is a 2025 paper from ACS Biomaterials Science & Engineering about Volumetric AM.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Volumetric AM.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Volumetric AM; current relevance score is 5/10.",
-    "summary_provider": "fallback",
-    "openai_summary_applied": false,
-    "relevance_note_en": "Relevant to the tracker through Volumetric AM; score: 5/10.",
-    "abstract_used_for_summary": false,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "first_added": "2026-07-05",
-    "last_updated": "2026-07-05",
-    "is_weekly_new": true
-  },
-  {
     "id": "10.1038/s41467-025-59502-x",
     "title": "Visualization of photocuring and 4D printing with real-time phosphorescence",
     "authors": [
@@ -137622,7 +137519,7 @@
         "name": "Xiaofeng Wang",
         "openalex_author_id": null,
         "orcid": "https://orcid.org/0000-0002-9913-1064",
-        "position": "middle",
+        "position": "last",
         "is_corresponding": true,
         "institutions": [
           {
@@ -148469,174 +148366,6 @@
     "first_added": "2026-06-19",
     "last_updated": "2026-07-05",
     "is_weekly_new": false
-  },
-  {
-    "id": "10.3390/app15052576",
-    "title": "Parallel Fin Ray Soft Gripper with Embedded Mechano-Optical Force Sensor",
-    "authors": [
-      "Eduardo Navas",
-      "Daniel Rodríguez-Nieto",
-      "Alain Antonio Rodríguez-González",
-      "Roemi Fernández"
-    ],
-    "author_details": [
-      {
-        "name": "Eduardo Navas",
-        "orcid": "https://orcid.org/0000-0002-4314-4448",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Centre for Automation and Robotics, UPM-CSIC, Carretera CAMPO-REAL Km 0.2, Arganda del Rey, 28500 Madrid, Spain"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Centre for Automation and Robotics, UPM-CSIC, Carretera CAMPO-REAL Km 0.2, Arganda del Rey, 28500 Madrid, Spain"
-        ]
-      },
-      {
-        "name": "Daniel Rodríguez-Nieto",
-        "orcid": "https://orcid.org/0009-0004-5885-3783",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Centre for Automation and Robotics, UPM-CSIC, Carretera CAMPO-REAL Km 0.2, Arganda del Rey, 28500 Madrid, Spain"
-          },
-          {
-            "name": "PhD Program in Automation and Robotics, Polytechnic University of Madrid, Calle de José Gutiérrez Abascal 2, 28006 Madrid, Spain"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Centre for Automation and Robotics, UPM-CSIC, Carretera CAMPO-REAL Km 0.2, Arganda del Rey, 28500 Madrid, Spain",
-          "PhD Program in Automation and Robotics, Polytechnic University of Madrid, Calle de José Gutiérrez Abascal 2, 28006 Madrid, Spain"
-        ]
-      },
-      {
-        "name": "Alain Antonio Rodríguez-González",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Centre for Automation and Robotics, UPM-CSIC, Carretera CAMPO-REAL Km 0.2, Arganda del Rey, 28500 Madrid, Spain"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Centre for Automation and Robotics, UPM-CSIC, Carretera CAMPO-REAL Km 0.2, Arganda del Rey, 28500 Madrid, Spain"
-        ]
-      },
-      {
-        "name": "Roemi Fernández",
-        "orcid": "https://orcid.org/0000-0003-0552-5407",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Centre for Automation and Robotics, UPM-CSIC, Carretera CAMPO-REAL Km 0.2, Arganda del Rey, 28500 Madrid, Spain"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Centre for Automation and Robotics, UPM-CSIC, Carretera CAMPO-REAL Km 0.2, Arganda del Rey, 28500 Madrid, Spain"
-        ]
-      }
-    ],
-    "corresponding_authors": [
-      {
-        "name": "Eduardo Navas",
-        "openalex_author_id": "https://openalex.org/A5037396569",
-        "orcid": "https://orcid.org/0000-0002-4314-4448",
-        "position": "first",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "Centre for Automation and Robotics",
-            "ror": "https://ror.org/02wh02235",
-            "country_code": "ES",
-            "type": "facility"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Centre for Automation and Robotics, UPM-CSIC, Carretera CAMPO-REAL Km 0.2, Arganda del Rey, 28500 Madrid, Spain"
-        ]
-      },
-      {
-        "name": "Roemí Fernández",
-        "openalex_author_id": "https://openalex.org/A5046665645",
-        "orcid": "https://orcid.org/0000-0003-0552-5407",
-        "position": "last",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "Centre for Automation and Robotics",
-            "ror": "https://ror.org/02wh02235",
-            "country_code": "ES",
-            "type": "facility"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Centre for Automation and Robotics, UPM-CSIC, Carretera CAMPO-REAL Km 0.2, Arganda del Rey, 28500 Madrid, Spain"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "year": 2025,
-    "venue": "Applied Sciences",
-    "doi": "10.3390/app15052576",
-    "url": "https://doi.org/10.3390/app15052576",
-    "source": [
-      "Crossref"
-    ],
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2076-3417"
-    ],
-    "issn_l": "",
-    "publisher": "MDPI AG",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4408033902",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "publication_type": "journal_article",
-    "venue_trust": "trusted",
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "is_core_venue": false,
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "categories": [
-      "Multi-material AM"
-    ],
-    "tags": [
-      "Soft robotics"
-    ],
-    "relevance_score": 5,
-    "curation_priority": false,
-    "ai_summary_en": "1. Topic - Parallel Fin Ray Soft Gripper with Embedded Mechano-Optical Force Sensor is a 2025 paper from Applied Sciences about Soft robotics.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Soft robotics.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Soft robotics; current relevance score is 5/10.",
-    "summary_provider": "fallback",
-    "openai_summary_applied": false,
-    "relevance_note_en": "Relevant to the tracker through Soft robotics; score: 5/10.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "first_added": "2026-07-05",
-    "last_updated": "2026-07-05",
-    "is_weekly_new": true
   },
   {
     "id": "10.1002/adma.202510883",
@@ -159780,9 +159509,9 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Zhilei Hao",
-        "openalex_author_id": "https://openalex.org/A5108304651",
-        "orcid": null,
+        "name": "Pei Liu",
+        "openalex_author_id": "https://openalex.org/A5086175031",
+        "orcid": "https://orcid.org/0009-0003-4285-053X",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -166671,10 +166400,10 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Songhao Wang",
-        "openalex_author_id": "https://openalex.org/A5057228007",
-        "orcid": "https://orcid.org/0000-0003-3643-4698",
-        "position": "first",
+        "name": "Weiming Ou",
+        "openalex_author_id": "https://openalex.org/A5113870546",
+        "orcid": null,
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -190309,9 +190038,9 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Aoming Zhang",
-        "openalex_author_id": "https://openalex.org/A5111021439",
-        "orcid": null,
+        "name": "Xiaoqi Chen",
+        "openalex_author_id": "https://openalex.org/A5100704656",
+        "orcid": "https://orcid.org/0000-0003-3227-4607",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -217758,9 +217487,9 @@
         ]
       },
       {
-        "name": "Shan Li",
-        "openalex_author_id": "https://openalex.org/A5021433428",
-        "orcid": "https://orcid.org/0000-0002-1005-3216",
+        "name": "Zihuan Chen",
+        "openalex_author_id": "https://openalex.org/A5024222220",
+        "orcid": null,
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -218890,7 +218619,7 @@
         "name": "Hao Zhang",
         "openalex_author_id": null,
         "orcid": null,
-        "position": "middle",
+        "position": "last",
         "is_corresponding": true,
         "institutions": [
           {
@@ -245318,9 +245047,9 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Peipei Li",
-        "openalex_author_id": "https://openalex.org/A5100371522",
-        "orcid": "https://orcid.org/0000-0002-9389-9419",
+        "name": "Lingyun Qian",
+        "openalex_author_id": "https://openalex.org/A5106451798",
+        "orcid": null,
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -255727,15 +255456,15 @@
           "School of Mechanical Engineering, Xi'an Jiaotong University, Xi'an, People’s Republic of China",
           "State Key Laboratory for Manufacturing System Engineering, Xi'an Jiaotong University, Xi'an, People’s Republic of China",
           "Engineering Technology Research Center for Rapid Manufacturing of Shaanxi Province, Xi'an Jiaotong University, Xi'an, People's Republic of China",
-          "School of Mechanical Engineering, Xi'an Jiaotong University, Xi'an, People's Republic of China",
-          "State Key Laboratory for Manufacturing System Engineering, Xi'an Jiaotong University, Xi'an, People's Republic of China"
+          "State Key Laboratory for Manufacturing System Engineering, Xi'an Jiaotong University, Xi'an, People's Republic of China",
+          "School of Mechanical Engineering, Xi'an Jiaotong University, Xi'an, People's Republic of China"
         ]
       },
       {
         "name": "Ling Wang",
         "openalex_author_id": "https://openalex.org/A5115592675",
         "orcid": "https://orcid.org/0000-0002-5176-7469",
-        "position": "middle",
+        "position": "last",
         "is_corresponding": true,
         "institutions": [
           {
