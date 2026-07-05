@@ -61935,9 +61935,9 @@
     ],
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "3D Printing and Additive Manufacturing",
-    "crossref_target_issn": "2329-7662",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
     "issn": [
       "2329-7662",
       "2329-7670"
@@ -108221,6 +108221,148 @@
     "first_added": "2026-06-12",
     "last_updated": "2026-07-05",
     "is_weekly_new": false
+  },
+  {
+    "id": "10.3390/systems13080651",
+    "title": "A System Dynamics-Based Hybrid Digital Twin Model for Driving Green Manufacturing",
+    "authors": [
+      "Sucheng Fan",
+      "Huagang Tong",
+      "Song Wang"
+    ],
+    "author_details": [
+      {
+        "name": "Sucheng Fan",
+        "orcid": "https://orcid.org/0009-0004-9624-150X",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "School of Economics and Management, Nanjing Tech University, Nanjing 211186, China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Economics and Management, Nanjing Tech University, Nanjing 211186, China"
+        ]
+      },
+      {
+        "name": "Huagang Tong",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "School of Economics and Management, Nanjing Tech University, Nanjing 211186, China"
+          },
+          {
+            "name": "School of Economics and Management, Nanjing University of Aeronautics and Astronautics, Nanjing 210016, China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Economics and Management, Nanjing Tech University, Nanjing 211186, China",
+          "School of Economics and Management, Nanjing University of Aeronautics and Astronautics, Nanjing 210016, China"
+        ]
+      },
+      {
+        "name": "Song Wang",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "School of Economics and Management, Nanjing Tech University, Nanjing 211186, China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Economics and Management, Nanjing Tech University, Nanjing 211186, China"
+        ]
+      }
+    ],
+    "corresponding_authors": [
+      {
+        "name": "Huagang Tong",
+        "openalex_author_id": "https://openalex.org/A5086563860",
+        "orcid": "https://orcid.org/0000-0002-6076-9669",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Nanjing Tech University",
+            "ror": "https://ror.org/03sd35x91",
+            "country_code": "CN",
+            "type": "education"
+          },
+          {
+            "name": "Nanjing University of Aeronautics and Astronautics",
+            "ror": "https://ror.org/01scyh794",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Economics and Management, Nanjing Tech University, Nanjing 211186, China",
+          "School of Economics and Management, Nanjing University of Aeronautics and Astronautics, Nanjing 210016, China"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "year": 2025,
+    "venue": "Systems",
+    "doi": "10.3390/systems13080651",
+    "url": "https://doi.org/10.3390/systems13080651",
+    "source": [
+      "Crossref"
+    ],
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2079-8954"
+    ],
+    "issn_l": "",
+    "publisher": "MDPI AG",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4412954268",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "publication_type": "journal_article",
+    "venue_trust": "trusted",
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "is_core_venue": false,
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "categories": [
+      "Multi-material AM"
+    ],
+    "tags": [
+      "Digital Twins"
+    ],
+    "relevance_score": 7,
+    "curation_priority": false,
+    "ai_summary_en": "1. Topic - A System Dynamics-Based Hybrid Digital Twin Model for Driving Green Manufacturing is a 2025 paper from Systems about Digital Twins.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Digital Twins.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Digital Twins; current relevance score is 7/10.",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_en": "Relevant to the tracker through Digital Twins; score: 7/10.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-07-05",
+    "last_updated": "2026-07-05",
+    "is_weekly_new": true
   },
   {
     "id": "10.3390/jmmp9120400",
@@ -237044,125 +237186,6 @@
     "is_weekly_new": true
   },
   {
-    "id": "10.36652/1813-1336-2024-20-1-41-45",
-    "title": "Features for production of dissimilar graded materials using additive manufacturing methods",
-    "authors": [
-      "R.V. Mendagaliev",
-      "S.A. Shalnova",
-      "M.O. Gushchina",
-      "E.V. Zemlyakov",
-      "G.A. Turichin",
-      "O.G. Klimova-Korsmik"
-    ],
-    "author_details": [
-      {
-        "name": "R.V. Mendagaliev",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "S.A. Shalnova",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "M.O. Gushchina",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "E.V. Zemlyakov",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "G.A. Turichin",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "O.G. Klimova-Korsmik",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
-    "year": 2024,
-    "venue": "Strengthening Technologies and Coatings",
-    "doi": "10.36652/1813-1336-2024-20-1-41-45",
-    "url": "https://doi.org/10.36652/1813-1336-2024-20-1-41-45",
-    "source": [
-      "Crossref"
-    ],
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [],
-    "issn_l": "",
-    "publisher": "Innovative Mashinostroenie Publishing",
-    "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "https://openalex.org/W4391852759",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "publication_type": "journal_article",
-    "venue_trust": "trusted",
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "is_core_venue": false,
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "categories": [
-      "Functionally Graded AM"
-    ],
-    "tags": [
-      "Additive manufacturing"
-    ],
-    "relevance_score": 5,
-    "curation_priority": false,
-    "ai_summary_en": "1. Topic - Features for production of dissimilar graded materials using additive manufacturing methods is a 2024 paper from Strengthening Technologies and Coatings about Additive manufacturing.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Additive manufacturing.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Additive manufacturing; current relevance score is 5/10.",
-    "summary_provider": "fallback",
-    "openai_summary_applied": false,
-    "relevance_note_en": "Relevant to the tracker through Additive manufacturing; score: 5/10.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "first_added": "2026-07-04",
-    "last_updated": "2026-07-05",
-    "is_weekly_new": true
-  },
-  {
     "id": "10.1002/adma.202307632",
     "title": "Fast and Facile Liquid Metal Printing via Projection Lithography for Highly Stretchable Electronic Circuits",
     "authors": [
@@ -245659,9 +245682,9 @@
     ],
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "Additive Manufacturing",
-    "crossref_target_issn": "2214-8604",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
     "issn": [
       "2214-8604"
     ],
