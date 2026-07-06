@@ -1388,9 +1388,9 @@
     "corresponding_author_source": "openalex_cross_check",
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Journal of Manufacturing Systems",
+    "crossref_target_issn": "0278-6125",
     "issn": [
       "0278-6125"
     ],
@@ -1589,88 +1589,6 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "id": "10.1002/adem.202501811"
-  },
-  "10.3389/fmech.2026.1847187": {
-    "author_details": [
-      {
-        "name": "Bahman Nouri Rahmat Abadi",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Civil and Mechanical Engineering, Technical University of Denmark"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Civil and Mechanical Engineering, Technical University of Denmark"
-        ]
-      },
-      {
-        "name": "Kaveh Rashvand",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Wind and Energy Systems, Technical University of Denmark"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Wind and Energy Systems, Technical University of Denmark"
-        ]
-      },
-      {
-        "name": "Ali Sarhadi",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Civil and Mechanical Engineering, Technical University of Denmark"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Civil and Mechanical Engineering, Technical University of Denmark"
-        ]
-      }
-    ],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2297-3079"
-    ],
-    "issn_l": "",
-    "publisher": "Frontiers Media SA",
-    "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "https://openalex.org/W7162797269",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The study focuses on robotic repair techniques for wind turbine blades using additive manufacturing.\n2. Problem - It addresses the challenge of repairing blades that suffer from rain erosion damage.\n3. Method - A hybrid approach is employed, utilizing a digital twin model for real-time visualization and a custom slicer for generating waypoints.\n4. Key Result - The method demonstrated effective repair of surface defects and reduced overall repair time through the use of robotic manipulators.\n5. Takeaway - Integrating digital twin technology with robotic systems can enhance the efficiency of wind turbine blade repairs.",
-    "relevance_note_en": "The summary captures the core aspects of the research, including its focus on robotic methods and digital twin technology.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "id": "10.3389/fmech.2026.1847187"
   },
   "10.1108/rpj-06-2025-0257": {
     "author_details": [
@@ -3206,145 +3124,6 @@
     "pdf_stored": false,
     "id": "10.1016/j.rcim.2026.103318"
   },
-  "10.1002/admt.202502312": {
-    "author_details": [
-      {
-        "name": "Luxuan Sun",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "School of Mechanical Engineering Yanshan University  Qinhuangdao China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "School of Mechanical Engineering Yanshan University  Qinhuangdao China"
-        ]
-      },
-      {
-        "name": "Wei Cai",
-        "orcid": "https://orcid.org/0009-0005-8991-0127",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "School of Mechanical Engineering Yanshan University  Qinhuangdao China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "School of Mechanical Engineering Yanshan University  Qinhuangdao China"
-        ]
-      },
-      {
-        "name": "Yirui Zhang",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "School of Mechanical Engineering Yanshan University  Qinhuangdao China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "School of Mechanical Engineering Yanshan University  Qinhuangdao China"
-        ]
-      },
-      {
-        "name": "Yunpeng Zhang",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "School of Mechanical Engineering Yanshan University  Qinhuangdao China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "School of Mechanical Engineering Yanshan University  Qinhuangdao China"
-        ]
-      },
-      {
-        "name": "Zhuonan Jiang",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "School of Mechanical Engineering Yanshan University  Qinhuangdao China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "School of Mechanical Engineering Yanshan University  Qinhuangdao China"
-        ]
-      },
-      {
-        "name": "Momiao Qin",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "School of Mechanical Engineering Yanshan University  Qinhuangdao China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "School of Mechanical Engineering Yanshan University  Qinhuangdao China"
-        ]
-      },
-      {
-        "name": "Qi Cui",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "School of Mechanical Engineering Yanshan University  Qinhuangdao China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "School of Mechanical Engineering Yanshan University  Qinhuangdao China"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2365-709X",
-      "2365-709X"
-    ],
-    "issn_l": "",
-    "publisher": "Wiley",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W7117873806",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - Regulation Strategies for Extruded Filament in Material Extrusion Additive Manufacturing: A Review and Perspective is a 2026 paper from Advanced Materials Technologies about FDM/Material extrusion.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to FDM/Material extrusion.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for FDM/Material extrusion; current relevance score is 7/10.",
-    "relevance_note_en": "Relevant to the tracker through FDM/Material extrusion; score: 7/10.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "id": "10.1002/admt.202502312"
-  },
   "10.1108/4dp-03-2026-0005": {
     "author_details": [
       {
@@ -3676,88 +3455,6 @@
     "pdf_stored": false,
     "id": "10.1007/s10845-026-02879-3"
   },
-  "10.1080/27525783.2026.2613469": {
-    "author_details": [
-      {
-        "name": "Mohammad Vahid Ehteshamfar",
-        "orcid": "https://orcid.org/0009-0001-7100-3482",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Mechanical Engineering, University of Guelph"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical Engineering, University of Guelph"
-        ]
-      },
-      {
-        "name": "Xun Xu",
-        "orcid": "https://orcid.org/0000-0001-6294-8153",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Mechanical and Mechatronics Engineering, University of Auckland"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical and Mechatronics Engineering, University of Auckland"
-        ]
-      },
-      {
-        "name": "Sheng Yang",
-        "orcid": "https://orcid.org/0000-0002-6286-2779",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Mechanical Engineering, University of Guelph"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical Engineering, University of Guelph"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2752-5783"
-    ],
-    "issn_l": "",
-    "publisher": "Informa UK Limited",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W7124296674",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The paper reviews the role of Digital Twins in enhancing quality in Additive Manufacturing.\n2. Problem - Quality challenges in Additive Manufacturing limit its potential despite technological advancements.\n3. Method - The authors conducted a systematic review of existing literature on quality-centric Digital Twins in Additive Manufacturing.\n4. Key Result - Only 16 studies were identified that meet the criteria for effective quality-centric Digital Twins, indicating a fragmented field.\n5. Takeaway - Future research should focus on developing a comprehensive framework for quality-centric Digital Twins and improving their capabilities across various manufacturing processes.",
-    "relevance_note_en": "The summary accurately reflects the main themes and findings of the paper, emphasizing the need for advancements in Digital Twins for quality in Additive Manufacturing.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "id": "10.1080/27525783.2026.2613469"
-  },
   "10.1007/s00170-026-18289-x": {
     "author_details": [
       {
@@ -3984,97 +3681,6 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "id": "10.1007/s00170-026-17723-4"
-  },
-  "10.1115/1.4069976": {
-    "author_details": [
-      {
-        "name": "Ana Kochovski",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Fondazione Istituto Italiano di Tecnologia (IIT) Manufacturing and Design Facility, Center for Robotics and Intelligent Systems (CRIS), , Via S. Quirico 19/D,   , ;"
-          },
-          {
-            "name": "University of Genova Department of Mechanical, Energy, Management and Transportation Engineering (DIME), , Via all’Opera Pia 15/A,   ,"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Fondazione Istituto Italiano di Tecnologia (IIT) Manufacturing and Design Facility, Center for Robotics and Intelligent Systems (CRIS), , Via S. Quirico 19/D,   , ;",
-          "University of Genova Department of Mechanical, Energy, Management and Transportation Engineering (DIME), , Via all’Opera Pia 15/A,   ,"
-        ]
-      },
-      {
-        "name": "Giovanni Berselli",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "University of Genova Department of Mechanical, Energy, Management and Transportation Engineering (DIME), , Via all’Opera Pia 15/A,   , ;"
-          },
-          {
-            "name": "Fondazione Istituto Italiano di Tecnologia (IIT) Advanced Robotics Department (ADVR), , Via S. Quirico 19/D,   ,"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "University of Genova Department of Mechanical, Energy, Management and Transportation Engineering (DIME), , Via all’Opera Pia 15/A,   , ;",
-          "Fondazione Istituto Italiano di Tecnologia (IIT) Advanced Robotics Department (ADVR), , Via S. Quirico 19/D,   ,"
-        ]
-      },
-      {
-        "name": "Alberto Parmiggiani",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Fondazione Istituto Italiano di Tecnologia (IIT) Manufacturing and Design Facility, Center for Robotics and Intelligent Systems (CRIS), , Via S. Quirico 19/D,   ,"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Fondazione Istituto Italiano di Tecnologia (IIT) Manufacturing and Design Facility, Center for Robotics and Intelligent Systems (CRIS), , Via S. Quirico 19/D,   ,"
-        ]
-      }
-    ],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "1942-4302",
-      "1942-4310"
-    ],
-    "issn_l": "",
-    "publisher": "ASME International",
-    "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "https://openalex.org/W4414502543",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - OrigaMatic: A Computational Workflow for Multi-Material Design Bridging Thick-Panel Origami and Additive Manufacturing is a 2026 paper from Journal of Mechanisms and Robotics about FDM/Material extrusion.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to FDM/Material extrusion.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for FDM/Material extrusion; current relevance score is 7/10.",
-    "relevance_note_en": "Relevant to the tracker through FDM/Material extrusion; score: 7/10.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "id": "10.1115/1.4069976"
   },
   "10.3390/pr14030571": {
     "author_details": [
@@ -5263,75 +4869,6 @@
     "pdf_stored": false,
     "id": "10.1007/s10845-025-02606-4"
   },
-  "10.33042/2079-424x.2026.65.1.01": {
-    "author_details": [
-      {
-        "name": "Ihor Biletskyi",
-        "orcid": "https://orcid.org/0000-0002-4125-3931",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "O.M. Beketov National University of Urban Economy in Kharkiv"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "O.M. Beketov National University of Urban Economy in Kharkiv"
-        ]
-      },
-      {
-        "name": "Vladyslav Voronko",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "O.M. Beketov National University of Urban Economy in Kharkiv"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "O.M. Beketov National University of Urban Economy in Kharkiv"
-        ]
-      }
-    ],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2079-424X",
-      "2415-3923"
-    ],
-    "issn_l": "",
-    "publisher": "O.M.Beketov National University of Urban Economy in Kharkiv",
-    "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "https://openalex.org/W7144211788",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The paper discusses advanced control strategies for CNC-based filament winding processes using digital twin technology.\n2. Problem - Composite manufacturing processes are becoming increasingly complex, necessitating improved precision and adaptability in control systems.\n3. Method - An intelligent control framework is developed that integrates digital twin technology with machine learning to optimize filament winding operations.\n4. Key Result - The proposed approach significantly reduces positioning errors by up to 65% compared to traditional methods and enhances setup efficiency.\n5. Takeaway - This research lays the groundwork for smart manufacturing systems in composite production by leveraging digital twins and adaptive control techniques.",
-    "relevance_note_en": "The paper presents a novel approach to improve CNC filament winding processes, which is highly relevant to advancements in manufacturing technology.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "id": "10.33042/2079-424x.2026.65.1.01"
-  },
   "10.1007/s10845-025-02626-0": {
     "author_details": [
       {
@@ -5379,9 +4916,9 @@
     "corresponding_author_source": "openalex_cross_check",
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Journal of Intelligent Manufacturing",
+    "crossref_target_issn": "0956-5515",
     "issn": [
       "0956-5515",
       "1572-8145"
@@ -6657,117 +6194,6 @@
     "pdf_stored": false,
     "id": "10.1002/adfm.202528142"
   },
-  "10.1049/cim2.70055": {
-    "author_details": [
-      {
-        "name": "Elena Manoli",
-        "orcid": "https://orcid.org/0009-0003-0583-3036",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Chemical Materials and Production Engineering University of Naples ‘Federico II’  Naples Italy"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Chemical Materials and Production Engineering University of Naples ‘Federico II’  Naples Italy"
-        ]
-      },
-      {
-        "name": "Giulio Mattera",
-        "orcid": "https://orcid.org/0000-0001-8686-1474",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Chemical Materials and Production Engineering University of Naples ‘Federico II’  Naples Italy"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Chemical Materials and Production Engineering University of Naples ‘Federico II’  Naples Italy"
-        ]
-      },
-      {
-        "name": "Alessandra Caggiano",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Industrial Electronic and Mechanical Engineering University of Roma Tre  Rome Italy"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Industrial Electronic and Mechanical Engineering University of Roma Tre  Rome Italy"
-        ]
-      },
-      {
-        "name": "Adelaide Marzano",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "School of Computing Engineering and Build Environment Edinburgh Napier University  Edinburgh UK"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "School of Computing Engineering and Build Environment Edinburgh Napier University  Edinburgh UK"
-        ]
-      },
-      {
-        "name": "Luigi Nele",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Chemical Materials and Production Engineering University of Naples ‘Federico II’  Naples Italy"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Chemical Materials and Production Engineering University of Naples ‘Federico II’  Naples Italy"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2516-8398",
-      "2516-8398"
-    ],
-    "issn_l": "",
-    "publisher": "Institution of Engineering and Technology (IET)",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W7127900063",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - From Digital Twins to Immersive Manufacturing: XR and Gesture-Based Control for Enhancing Human-Robot Collaboration is a 2026 paper from IET Collaborative Intelligent Manufacturing about Digital Twins.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Digital Twins.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Digital Twins; current relevance score is 7/10.",
-    "relevance_note_en": "Relevant to the tracker through Digital Twins; score: 7/10.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "id": "10.1049/cim2.70055"
-  },
   "10.1002/admt.202501789": {
     "author_details": [
       {
@@ -7916,74 +7342,6 @@
     "pdf_stored": false,
     "id": "10.1007/s00170-025-17221-z"
   },
-  "10.1080/27525783.2025.2598085": {
-    "author_details": [
-      {
-        "name": "Amirreza Mostafavi",
-        "orcid": "https://orcid.org/0009-0008-6321-8126",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Faculty of Mechanical Engieering, University of Guilan"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Faculty of Mechanical Engieering, University of Guilan"
-        ]
-      },
-      {
-        "name": "Ali Chaibakhsh",
-        "orcid": "https://orcid.org/0000-0001-9529-1784",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Intelligent Systems and Advanced Control Lab, University of Guilan"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Intelligent Systems and Advanced Control Lab, University of Guilan"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2752-5783"
-    ],
-    "issn_l": "",
-    "publisher": "Informa UK Limited",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4417335359",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - Dynamic physics-based digital twin for supervisory, condition monitoring and fault diagnosis of industrial turboshaft engines is a 2026 paper from Digital Twin about Digital Twins and Manufacturing automation.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Digital Twins and Manufacturing automation.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Digital Twins and Manufacturing automation; current relevance score is 7/10.",
-    "relevance_note_en": "Relevant to the tracker through Digital Twins and Manufacturing automation; score: 7/10.",
-    "abstract_used_for_summary": false,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "id": "10.1080/27525783.2025.2598085"
-  },
   "10.64917/ircee.v13.i04.a02": {
     "author_details": [
       {
@@ -8585,62 +7943,6 @@
     "pdf_stored": false,
     "id": "10.1016/j.rcim.2025.103151"
   },
-  "10.1038/s41598-026-58348-7": {
-    "author_details": [
-      {
-        "name": "Rami Alfattani",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Majed M. Hotami",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2045-2322"
-    ],
-    "issn_l": "",
-    "publisher": "Springer Science and Business Media LLC",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W7164736062",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The study focuses on a digital twin-based multiscale modeling system for defect prediction in metal additive manufacturing.\n2. Problem - It addresses the challenge of real-time defect detection during the Laser Powder Bed Fusion process.\n3. Method - The approach integrates microscale, mesoscale, and macroscale modeling using physics-informed neural networks and IoT sensors.\n4. Key Result - The system achieved a defect detection rate of 98.72% with a low inference latency of 11.3ms, surpassing existing methods.\n5. Takeaway - This framework enhances quality control and reduces waste in metal additive manufacturing processes.",
-    "relevance_note_en": "The paper presents a novel approach to defect prediction in metal additive manufacturing, making it highly relevant to current advancements in the field.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "id": "10.1038/s41598-026-58348-7"
-  },
   "10.1016/j.rcim.2026.103322": {
     "author_details": [
       {
@@ -9051,116 +8353,6 @@
     "pdf_stored": false,
     "id": "10.1007/s00170-026-17405-1"
   },
-  "10.1080/27525783.2026.2682042": {
-    "author_details": [
-      {
-        "name": "Yongli Wei",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "School of Rehabilitation Sciences and Engineering, University of Health and Rehabilitation Sciences"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "School of Rehabilitation Sciences and Engineering, University of Health and Rehabilitation Sciences"
-        ]
-      },
-      {
-        "name": "Shuai Yin",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "School of Rehabilitation Sciences and Engineering, University of Health and Rehabilitation Sciences"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "School of Rehabilitation Sciences and Engineering, University of Health and Rehabilitation Sciences"
-        ]
-      },
-      {
-        "name": "Fangfang Duan",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "School of Rehabilitation Sciences and Engineering, University of Health and Rehabilitation Sciences"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "School of Rehabilitation Sciences and Engineering, University of Health and Rehabilitation Sciences"
-        ]
-      },
-      {
-        "name": "Jinshi Liu",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Networked Intelligence, Peng Cheng Laboratory"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Networked Intelligence, Peng Cheng Laboratory"
-        ]
-      },
-      {
-        "name": "Weichao Luo",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Networked Intelligence, Peng Cheng Laboratory"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Networked Intelligence, Peng Cheng Laboratory"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2752-5783"
-    ],
-    "issn_l": "",
-    "publisher": "Informa UK Limited",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W7163707344",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - Digital twin-based optimal design method for industrial vibration isolation equipment is a 2026 paper from Digital Twin about Digital Twins.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Digital Twins.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Digital Twins; current relevance score is 7/10.",
-    "relevance_note_en": "Relevant to the tracker through Digital Twins; score: 7/10.",
-    "abstract_used_for_summary": false,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "id": "10.1080/27525783.2026.2682042"
-  },
   "10.1016/j.jmsy.2026.02.019": {
     "author_details": [
       {
@@ -9426,62 +8618,6 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "id": "10.1007/s00170-026-18221-3"
-  },
-  "10.36652/0869-4931-2026-80-1-29-34": {
-    "author_details": [
-      {
-        "name": "Nafikov A.M.",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Stuchilin V.V.",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "0869-4931"
-    ],
-    "issn_l": "",
-    "publisher": "Innovative Mashinostroenie Publishing",
-    "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "https://openalex.org/W7129746981",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The paper discusses the development of digital twin models for smart manufacturing.\n2. Problem - It addresses the challenges involved in creating effective digital twin models in a manufacturing context.\n3. Method - The authors propose a modeling algorithm that consists of three interconnected stages.\n4. Key Result - They outline the layers of a digital twin and emphasize the role of artificial intelligence in enhancing these models.\n5. Takeaway - The study provides a structured approach to implementing digital twins in smart factories, highlighting the integration of AI technologies.",
-    "relevance_note_en": "The summary captures the essence of the paper's focus on digital twin modeling in smart manufacturing.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "id": "10.36652/0869-4931-2026-80-1-29-34"
   },
   "10.1007/s10845-026-02884-6": {
     "author_details": [
@@ -10469,74 +9605,6 @@
     "pdf_stored": false,
     "id": "10.1002/best.70147"
   },
-  "10.1080/27525783.2026.2618303": {
-    "author_details": [
-      {
-        "name": "Daniel Krob",
-        "orcid": "https://orcid.org/0000-0003-4418-8300",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Systemic Intelligence Group – 10, rue de Penthièvre, 75008"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Systemic Intelligence Group – 10, rue de Penthièvre, 75008"
-        ]
-      },
-      {
-        "name": "Antoine Rauzy",
-        "orcid": "https://orcid.org/0000-0003-0926-5286",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Norges teknisk-naturvitenskapelige universitet, Fakultet for ingeniørvitenskap – Verkstedteknisk"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Norges teknisk-naturvitenskapelige universitet, Fakultet for ingeniørvitenskap – Verkstedteknisk"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2752-5783"
-    ],
-    "issn_l": "",
-    "publisher": "Informa UK Limited",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W7125675782",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - Developing the systemic digital twin of an industrial enterprise with Σ is a 2026 paper from Digital Twin about Digital Twins.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Digital Twins.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Digital Twins; current relevance score is 7/10.",
-    "relevance_note_en": "Relevant to the tracker through Digital Twins; score: 7/10.",
-    "abstract_used_for_summary": false,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "id": "10.1080/27525783.2026.2618303"
-  },
   "10.1007/s00170-026-18236-w": {
     "author_details": [
       {
@@ -11420,116 +10488,6 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "id": "10.1016/j.rcim.2025.103105"
-  },
-  "10.3390/info17020195": {
-    "author_details": [
-      {
-        "name": "Gulshat Amirkhanova",
-        "orcid": "https://orcid.org/0000-0003-3933-5476",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Artificial Intelligence and Big Data, Al-Farabi Kazakh National University, Almaty 050040, Kazakhstan"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Artificial Intelligence and Big Data, Al-Farabi Kazakh National University, Almaty 050040, Kazakhstan"
-        ]
-      },
-      {
-        "name": "Nazly Yusubova",
-        "orcid": "https://orcid.org/0009-0006-9843-5732",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Artificial Intelligence and Big Data, Al-Farabi Kazakh National University, Almaty 050040, Kazakhstan"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Artificial Intelligence and Big Data, Al-Farabi Kazakh National University, Almaty 050040, Kazakhstan"
-        ]
-      },
-      {
-        "name": "Bauyrzhan Amirkhanov",
-        "orcid": "https://orcid.org/0000-0002-4915-0347",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Artificial Intelligence and Big Data, Al-Farabi Kazakh National University, Almaty 050040, Kazakhstan"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Artificial Intelligence and Big Data, Al-Farabi Kazakh National University, Almaty 050040, Kazakhstan"
-        ]
-      },
-      {
-        "name": "Meruyert Sakypbekova",
-        "orcid": "https://orcid.org/0000-0002-6652-1357",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Artificial Intelligence and Big Data, Al-Farabi Kazakh National University, Almaty 050040, Kazakhstan"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Artificial Intelligence and Big Data, Al-Farabi Kazakh National University, Almaty 050040, Kazakhstan"
-        ]
-      },
-      {
-        "name": "Siming Chen",
-        "orcid": "https://orcid.org/0000-0002-2690-3588",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "School of Data Science, Fudan University, Shanghai 200433, China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "School of Data Science, Fudan University, Shanghai 200433, China"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2078-2489"
-    ],
-    "issn_l": "",
-    "publisher": "MDPI AG",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W7128805573",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - Closed-Loop Digital Twin for Energy-Efficient Scheduling in Food Manufacturing Systems is a 2026 paper from Information about Digital Twins and Manufacturing automation.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Digital Twins and Manufacturing automation.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Digital Twins and Manufacturing automation; current relevance score is 7/10.",
-    "relevance_note_en": "Relevant to the tracker through Digital Twins and Manufacturing automation; score: 7/10.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "id": "10.3390/info17020195"
   },
   "10.1007/s10845-026-02899-z": {
     "author_details": [
@@ -14746,94 +13704,6 @@
     "pdf_stored": false,
     "id": "10.1016/j.mfglet.2026.06.004"
   },
-  "10.32604/cmc.2026.075197": {
-    "author_details": [
-      {
-        "name": "Chinmai Bhat",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Mayur Jiyalal Prajapati",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Yulius Shan Romario",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Wojciech Macek",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Maziar Ramezani",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Cho-Pei Jiang",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "1546-2226"
-    ],
-    "issn_l": "",
-    "publisher": "Tech Science Press",
-    "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "https://openalex.org/W7143654623",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The paper presents a digital twin framework for additive manufacturing in automotive component production.\n2. Problem - It addresses challenges in ensuring accurate and efficient fabrication of automotive parts using additive manufacturing.\n3. Method - The study employs topology optimization, finite element analysis, and fabrication analysis to design and fabricate an automotive flange fork using Inconel-718.\n4. Key Result - The optimized design achieved a significant reduction in fabrication out-of-tolerance from 18% to 6.1% and demonstrated excellent performance under torque testing.\n5. Takeaway - Integrating digital twin technology with additive manufacturing can enhance production efficiency and support sustainable development in various industries.",
-    "relevance_note_en": "The summary captures the essence of the study's objectives, methods, and findings related to additive manufacturing and digital twins.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "id": "10.32604/cmc.2026.075197"
-  },
   "10.1002/advs.202518923": {
     "author_details": [
       {
@@ -15597,110 +14467,6 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "id": "10.1002/adma.202515461"
-  },
-  "10.1038/s44334-026-00092-x": {
-    "author_details": [
-      {
-        "name": "Zeyu Ma",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Jue Wang",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Renkun Wang",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Jeonghoon Lee",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Pokuang Zhou",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Evan Zhang",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Yu She",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Alex Chortos",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "3004-8621"
-    ],
-    "issn_l": "",
-    "publisher": "Springer Science and Business Media LLC",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W7163895136",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - Thermally elongated thermoplastic nozzles unlock micro-scale multimaterial direct ink writing is a 2026 paper from npj Advanced Manufacturing about FDM/Material extrusion.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to FDM/Material extrusion.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for FDM/Material extrusion; current relevance score is 6/10.",
-    "relevance_note_en": "Relevant to the tracker through FDM/Material extrusion; score: 6/10.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "id": "10.1038/s44334-026-00092-x"
   },
   "10.1007/s41939-025-01103-8": {
     "author_details": [
@@ -17046,89 +15812,6 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "id": "10.1108/ec-10-2025-1127"
-  },
-  "10.1177/08927057261441528": {
-    "author_details": [
-      {
-        "name": "Vijay Chouhan",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Thapar Institute of Engineering and Technology"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Thapar Institute of Engineering and Technology"
-        ]
-      },
-      {
-        "name": "Ratnesh Kumar Raj Singh",
-        "orcid": "https://orcid.org/0000-0001-9377-6753",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Thapar Institute of Engineering and Technology"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Thapar Institute of Engineering and Technology"
-        ]
-      },
-      {
-        "name": "Deepa Mudgal",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Thapar Institute of Engineering and Technology"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Thapar Institute of Engineering and Technology"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "0892-7057",
-      "1530-7980"
-    ],
-    "issn_l": "",
-    "publisher": "SAGE Publications",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W7151789748",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - Optimization of FDM printing parameters for high-speed fabrication of PLA-ABS Bi-layer laminate structures is a 2026 paper from Journal of Thermoplastic Composite Materials about FDM/Material extrusion.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to FDM/Material extrusion.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for FDM/Material extrusion; current relevance score is 6/10.",
-    "relevance_note_en": "Relevant to the tracker through FDM/Material extrusion; score: 6/10.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "id": "10.1177/08927057261441528"
   },
   "10.1590/1517-7076-rmat-2025-0888": {
     "author_details": [
@@ -18621,9 +17304,9 @@
     "corresponding_author_source": "openalex_cross_check",
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Journal of Manufacturing Processes",
+    "crossref_target_issn": "1526-6125",
     "issn": [
       "1526-6125"
     ],
@@ -19730,87 +18413,6 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "id": "10.1109/lsens.2026.3698280"
-  },
-  "10.1007/s00170-026-17902-3": {
-    "author_details": [
-      {
-        "name": "Chi Zhang",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Yinchuan He",
-        "orcid": "https://orcid.org/0009-0002-1797-0196",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Kan Wang",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Kwong Ming Tse",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Tingting Wang",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "International Journal of Advanced Manufacturing Technology",
-    "crossref_target_issn": "0268-3768",
-    "issn": [
-      "0268-3768",
-      "1433-3015"
-    ],
-    "issn_l": "",
-    "publisher": "Springer Science and Business Media LLC",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W7141993793",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - Mechanical performance of bi-material FDM rigid-flexible joints: effects of alternate deposition and mechanical interlocking is a 2026 paper from The International Journal of Advanced Manufacturing Technology about Metamaterials and FDM/Material extrusion.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Metamaterials and FDM/Material extrusion.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Metamaterials and FDM/Material extrusion; current relevance score is 6/10.",
-    "relevance_note_en": "Relevant to the tracker through Metamaterials and FDM/Material extrusion; score: 6/10.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "id": "10.1007/s00170-026-17902-3"
   },
   "10.1016/j.cemconcomp.2025.106308": {
     "author_details": [
@@ -21113,6 +19715,78 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "id": "10.3389/fmech.2026.1774457"
+  },
+  "10.1038/s44172-026-00601-y": {
+    "author_details": [
+      {
+        "name": "Saeed Zolfaghary Pour",
+        "orcid": "https://orcid.org/0000-0002-5056-589X",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Hanxiang Zhang",
+        "orcid": "https://orcid.org/0000-0002-1693-6570",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Po Wei Liu",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Bayaner Arigong",
+        "orcid": "https://orcid.org/0000-0001-7738-7088",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2731-3395"
+    ],
+    "issn_l": "",
+    "publisher": "Springer Science and Business Media LLC",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7128432180",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - Inverse design and 3D printing of a multiport microwave power splitter: a scalable electromagnetic design framework is a 2026 paper from Communications Engineering about Additive manufacturing.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Additive manufacturing.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Additive manufacturing; current relevance score is 6/10.",
+    "relevance_note_en": "Relevant to the tracker through Additive manufacturing; score: 6/10.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "id": "10.1038/s44172-026-00601-y"
   },
   "10.1115/1.4071306": {
     "author_details": [
@@ -24519,6 +23193,89 @@
     "pdf_stored": false,
     "id": "10.1016/j.addma.2026.105276"
   },
+  "10.1111/jace.70419": {
+    "author_details": [
+      {
+        "name": "Teruyoshi Kanno",
+        "orcid": "https://orcid.org/0000-0001-8686-4114",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Frontier Sciences for Advanced Environment, Graduate School of Environmental Studies Tohoku University  Sendai Japan"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Frontier Sciences for Advanced Environment, Graduate School of Environmental Studies Tohoku University  Sendai Japan"
+        ]
+      },
+      {
+        "name": "Hiroki Kurita",
+        "orcid": "https://orcid.org/0000-0002-1224-2942",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Frontier Sciences for Advanced Environment, Graduate School of Environmental Studies Tohoku University  Sendai Japan"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Frontier Sciences for Advanced Environment, Graduate School of Environmental Studies Tohoku University  Sendai Japan"
+        ]
+      },
+      {
+        "name": "Fumio Narita",
+        "orcid": "https://orcid.org/0000-0002-0957-1948",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Frontier Sciences for Advanced Environment, Graduate School of Environmental Studies Tohoku University  Sendai Japan"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Frontier Sciences for Advanced Environment, Graduate School of Environmental Studies Tohoku University  Sendai Japan"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "0002-7820",
+      "1551-2916"
+    ],
+    "issn_l": "",
+    "publisher": "Wiley",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4417152507",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - Bending strength of density-controlled alumina fabricated by direct ink writing is a 2026 paper from Journal of the American Ceramic Society about FDM/Material extrusion.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to FDM/Material extrusion.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for FDM/Material extrusion; current relevance score is 6/10.",
+    "relevance_note_en": "Relevant to the tracker through FDM/Material extrusion; score: 6/10.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "id": "10.1111/jace.70419"
+  },
   "10.1002/lpor.71200": {
     "author_details": [
       {
@@ -24644,5 +23401,1534 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "id": "10.1007/s40964-025-01383-z"
+  },
+  "10.1016/j.nxmate.2026.102285": {
+    "author_details": [
+      {
+        "name": "Naila Nasir",
+        "orcid": "https://orcid.org/0000-0001-6526-2894",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Arne Röttger",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2949-8228"
+    ],
+    "issn_l": "",
+    "publisher": "Elsevier BV",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7161765704",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The paper discusses the advancements and challenges in the additive manufacturing of functionally graded materials (FGMs).\n2. Problem - Despite progress in FGM manufacturing, issues such as interfacial defects and process optimization hinder their performance and scalability.\n3. Method - The authors review both conventional and additive manufacturing techniques for FGMs, highlighting recent advancements and ongoing challenges.\n4. Key Result - The review identifies critical areas for future research to enhance the fabrication and application of FGMs in various industries.\n5. Takeaway - The study emphasizes the need for continued innovation in AM technologies to fully realize the potential of FGMs in practical applications.",
+    "relevance_note_en": "The summary accurately reflects the core themes and findings of the paper.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "id": "10.1016/j.nxmate.2026.102285"
+  },
+  "10.1007/s00170-025-16984-9": {
+    "author_details": [
+      {
+        "name": "Mayur Jiyalal Prajapati",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Hong-You Chen",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Wojciech Macek",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Libor Beránek",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Marziar Ramezani",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Cho-Pei Jiang",
+        "orcid": "https://orcid.org/0000-0002-7933-7356",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "0268-3768",
+      "1433-3015"
+    ],
+    "issn_l": "",
+    "publisher": "Springer Science and Business Media LLC",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4416979575",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The study focuses on the hybrid vat photopolymerization technique for producing functionally graded materials.\n2. Problem - There is a need for advanced manufacturing methods that can create materials with varying properties for specific applications.\n3. Method - The authors developed a hybrid approach that combines vat photopolymerization with other techniques to enhance material performance.\n4. Key Result - The results demonstrate improved mechanical properties and material gradation, showcasing the effectiveness of the hybrid process.\n5. Takeaway - This research highlights the potential of hybrid manufacturing methods in producing tailored materials for diverse engineering applications.",
+    "relevance_note_en": "The paper addresses innovative manufacturing techniques relevant to functionally graded materials.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "id": "10.1007/s00170-025-16984-9"
+  },
+  "10.1007/s40964-025-01405-w": {
+    "author_details": [
+      {
+        "name": "Siegfried Arneitz",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Walid Bin Ali",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Shintaro Adachi",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Shigeru Horii",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Christof Sommitsch",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2363-9512",
+      "2363-9520"
+    ],
+    "issn_l": "",
+    "publisher": "Springer Science and Business Media LLC",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4415960214",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - The study focuses on the additive manufacturing of Fe–Cr–Co magnet structures with variable chemical compositions.\n2. Problem - It addresses the challenge of creating components with tailored magnetic properties through functionally graded materials.\n3. Method - The researchers utilized laser powder bed fusion (LPBF) to produce the alloy and modified it with in-situ alloying to alter magnetic characteristics.\n4. Key Result - The investigation revealed that the boundary layer thickness remained consistent regardless of the printing process, with significant variations in magnetic properties linked to alloying concentrations.\n5. Takeaway - These findings enhance the understanding of designing functionally graded materials for advanced applications in magnetic devices.",
+    "relevance_note_en": "The summary captures the core aspects of the research, including its focus, methodology, and implications for future applications.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "id": "10.1007/s40964-025-01405-w"
+  },
+  "10.1016/j.addlet.2025.100353": {
+    "author_details": [
+      {
+        "name": "Christian Maximilian Hechtl",
+        "orcid": "https://orcid.org/0000-0003-3119-850X",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Maximilian Dahlenburg",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Freek Bos",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Thomas Kränkel",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Christoph Gehlen",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2772-3690"
+    ],
+    "issn_l": "",
+    "publisher": "Elsevier BV",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "https://openalex.org/W7117753210",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The paper discusses a new method for 3D concrete printing using a novel mixing technique.\n2. Problem - Traditional 3D concrete printing faces challenges due to conflicting requirements for material workability and structural integrity.\n3. Method - The authors propose Adaptive-Binder-Aggregate Mixing (ABAM), which prepares a pumpable cementitious compound separately and combines it with aggregates at the nozzle.\n4. Key Result - The ABAM process allows for functional material gradation and spatial property tailoring in printed elements.\n5. Takeaway - This innovative approach enhances the versatility and performance of multi-material 3D concrete printing.",
+    "relevance_note_en": "The summary accurately reflects the core contributions and findings of the paper.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "id": "10.1016/j.addlet.2025.100353"
+  },
+  "10.1007/s12008-026-02532-6": {
+    "author_details": [
+      {
+        "name": "L. Natrayan",
+        "orcid": "https://orcid.org/0000-0003-1001-3422",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Kathi Venkataramana",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "K. Vijetha",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Seeniappan Kaliappan",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Ramya Maranan",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Anand Rajendran",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "1955-2513",
+      "1955-2505"
+    ],
+    "issn_l": "",
+    "publisher": "Springer Science and Business Media LLC",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7135210488",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The paper focuses on the design of hybrid functionally graded metal matrix composites for additive manufacturing.\n2. Problem - It addresses the challenges in optimizing material properties for multifunctional engineering applications.\n3. Method - The authors employ AI techniques to enhance the design process and material distribution in additive manufacturing.\n4. Key Result - The study demonstrates significant improvements in the mechanical properties and performance of the composites through optimized designs.\n5. Takeaway - AI-driven design strategies can effectively advance the capabilities of hybrid composites in engineering applications.",
+    "relevance_note_en": "The summary captures the core aspects of the research, focusing on AI optimization in composite design.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "id": "10.1007/s12008-026-02532-6"
+  },
+  "10.1007/s00170-026-17787-2": {
+    "author_details": [
+      {
+        "name": "Tien-Dat Hoang",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Chu Van Nhat",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Nguyen Thanh Dang",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Bui Tien Son",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Nguyen Ba Thuan",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Thanh Q. Nguyen",
+        "orcid": "https://orcid.org/0000-0003-4898-091X",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "International Journal of Advanced Manufacturing Technology",
+    "crossref_target_issn": "0268-3768",
+    "issn": [
+      "0268-3768",
+      "1433-3015"
+    ],
+    "issn_l": "",
+    "publisher": "Springer Science and Business Media LLC",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7142117150",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The study focuses on the application of AI for designing 3D-printed continuous fiber composites.\n2. Problem - There is a need for efficient design methods that optimize the properties of composite materials.\n3. Method - The authors utilize multiscale homogenization techniques combined with dual neural networks for the design process.\n4. Key Result - The proposed approach successfully enhances the performance characteristics of the composites compared to traditional methods.\n5. Takeaway - AI-driven design can significantly improve the efficiency and effectiveness of creating advanced composite materials.",
+    "relevance_note_en": "The summary captures the essence of the paper's focus on AI and composite material design.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "id": "10.1007/s00170-026-17787-2"
+  },
+  "10.1007/s40964-025-01363-3": {
+    "author_details": [
+      {
+        "name": "Zixing Cai",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Weidong Yang",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Huangping Gao",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Yunji Li",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Richard Yang",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Progress in Additive Manufacturing",
+    "crossref_target_issn": "2363-9512",
+    "issn": [
+      "2363-9512",
+      "2363-9520"
+    ],
+    "issn_l": "",
+    "publisher": "Springer Science and Business Media LLC",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4414374621",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - This paper presents a voxelization technique tailored for 3D printing models that utilize multiple colors and materials.\n2. Problem - The challenge addressed is the effective conversion of complex multi-material designs into a format suitable for 3D printing.\n3. Method - The authors propose a slice-to-volume reconstruction approach to achieve the voxelization of these intricate models.\n4. Key Result - The method demonstrates improved accuracy and efficiency in representing multi-material and multi-color structures for 3D printing.\n5. Takeaway - This voxelization technique enhances the capability of 3D printing technologies to handle diverse material compositions.",
+    "relevance_note_en": "The summary captures the essence of the paper's focus on voxelization for multi-material 3D printing.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "id": "10.1007/s40964-025-01363-3"
+  },
+  "10.1002/adsr.70169": {
+    "author_details": [
+      {
+        "name": "Vincenzo Saroli",
+        "orcid": "https://orcid.org/0009-0001-9573-9806",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Unit of Measurements and Biomedical Instrumentation Department of Engineering Università Campus Bio‐Medico di Roma  Rome Italy"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Unit of Measurements and Biomedical Instrumentation Department of Engineering Università Campus Bio‐Medico di Roma  Rome Italy"
+        ]
+      },
+      {
+        "name": "Marta Saracino",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Unit of Measurements and Biomedical Instrumentation Department of Engineering Università Campus Bio‐Medico di Roma  Rome Italy"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Unit of Measurements and Biomedical Instrumentation Department of Engineering Università Campus Bio‐Medico di Roma  Rome Italy"
+        ]
+      },
+      {
+        "name": "Emiliano Schena",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Unit of Measurements and Biomedical Instrumentation Department of Engineering Università Campus Bio‐Medico di Roma  Rome Italy"
+          },
+          {
+            "name": "Fondazione Policlinico Universitario Campus Bio‐Medico  Rome Italy"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Unit of Measurements and Biomedical Instrumentation Department of Engineering Università Campus Bio‐Medico di Roma  Rome Italy",
+          "Fondazione Policlinico Universitario Campus Bio‐Medico  Rome Italy"
+        ]
+      },
+      {
+        "name": "Carlo Massaroni",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Unit of Measurements and Biomedical Instrumentation Department of Engineering Università Campus Bio‐Medico di Roma  Rome Italy"
+          },
+          {
+            "name": "Fondazione Policlinico Universitario Campus Bio‐Medico  Rome Italy"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Unit of Measurements and Biomedical Instrumentation Department of Engineering Università Campus Bio‐Medico di Roma  Rome Italy",
+          "Fondazione Policlinico Universitario Campus Bio‐Medico  Rome Italy"
+        ]
+      }
+    ],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2751-1219",
+      "2751-1219"
+    ],
+    "issn_l": "",
+    "publisher": "Wiley",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "https://openalex.org/W7165529413",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The study focuses on a novel wearable system for health monitoring.\n2. Problem - Existing wearable sensors face challenges such as high costs, complexity, and limited flexibility.\n3. Method - The authors developed a fully 3D-printed flexible device combining auxetic strain sensors and dry ECG electrodes.\n4. Key Result - The system demonstrated high accuracy in monitoring respiratory and cardiac parameters with stable performance over time.\n5. Takeaway - This innovative wearable platform offers a cost-effective and customizable solution for continuous physiological monitoring.",
+    "relevance_note_en": "The summary captures the essence of the research, highlighting the innovation and its implications for health monitoring.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "id": "10.1002/adsr.70169"
+  },
+  "10.1063/5.0307420": {
+    "author_details": [
+      {
+        "name": "Junshi Zhang",
+        "orcid": "https://orcid.org/0000-0003-0844-7643",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "School of Mechanical Engineering, Northwestern Polytechnical University 1 , Xi'an 710072,"
+          },
+          {
+            "name": "Research & Development Institute of Northwestern Polytechnical University in Shenzhen 2 , Shenzhen 518057,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Mechanical Engineering, Northwestern Polytechnical University 1 , Xi'an 710072,",
+          "Research & Development Institute of Northwestern Polytechnical University in Shenzhen 2 , Shenzhen 518057,"
+        ]
+      },
+      {
+        "name": "Lei Liu",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "School of Mechanical Engineering, Northwestern Polytechnical University 1 , Xi'an 710072,"
+          },
+          {
+            "name": "Research & Development Institute of Northwestern Polytechnical University in Shenzhen 2 , Shenzhen 518057,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Mechanical Engineering, Northwestern Polytechnical University 1 , Xi'an 710072,",
+          "Research & Development Institute of Northwestern Polytechnical University in Shenzhen 2 , Shenzhen 518057,"
+        ]
+      },
+      {
+        "name": "Haohang Zhang",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "School of Mechanical Engineering, Northwestern Polytechnical University 1 , Xi'an 710072,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Mechanical Engineering, Northwestern Polytechnical University 1 , Xi'an 710072,"
+        ]
+      },
+      {
+        "name": "Mingliang Zhu",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "School of Mechanical and Precision Instrument Engineering, Xi'an University of Technology 3 , Xi'an 710048,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Mechanical and Precision Instrument Engineering, Xi'an University of Technology 3 , Xi'an 710048,"
+        ]
+      },
+      {
+        "name": "Yifan Li",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "School of Mechanical Engineering, Northwestern Polytechnical University 1 , Xi'an 710072,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Mechanical Engineering, Northwestern Polytechnical University 1 , Xi'an 710072,"
+        ]
+      },
+      {
+        "name": "Liyi Xu",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "School of Mechanical Engineering, Northwestern Polytechnical University 1 , Xi'an 710072,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Mechanical Engineering, Northwestern Polytechnical University 1 , Xi'an 710072,"
+        ]
+      },
+      {
+        "name": "Pengfei Li",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "School of Mechanical and Precision Instrument Engineering, Xi'an University of Technology 3 , Xi'an 710048,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Mechanical and Precision Instrument Engineering, Xi'an University of Technology 3 , Xi'an 710048,"
+        ]
+      },
+      {
+        "name": "Jihong Zhu",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "School of Mechanical Engineering, Northwestern Polytechnical University 1 , Xi'an 710072,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Mechanical Engineering, Northwestern Polytechnical University 1 , Xi'an 710072,"
+        ]
+      },
+      {
+        "name": "Weihong Zhang",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "School of Mechanical Engineering, Northwestern Polytechnical University 1 , Xi'an 710072,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Mechanical Engineering, Northwestern Polytechnical University 1 , Xi'an 710072,"
+        ]
+      }
+    ],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "1931-9401"
+    ],
+    "issn_l": "",
+    "publisher": "AIP Publishing",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "https://openalex.org/W7139050683",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The study focuses on a soft robotic arm designed for various interventional tasks.\n2. Problem - Existing soft robotic arms lack multifunctional integration and effective motion perception and control.\n3. Method - The authors developed a multi-segmented arm with integrated functions and employed LSTM for sensory perception and trajectory tracking.\n4. Key Result - The robotic arm demonstrated effective deep intervention capabilities and accurate trajectory tracking, aligning calculated and actual movements.\n5. Takeaway - This advancement enhances the practical utility of soft robotic arms in complex environments through improved functionality and control.",
+    "relevance_note_en": "The paper presents significant innovations in soft robotics, addressing key limitations in functionality and control.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "id": "10.1063/5.0307420"
+  },
+  "10.1016/j.mtla.2026.102748": {
+    "author_details": [
+      {
+        "name": "S. Panahkhahi",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "M.H. Zwart",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "V. Moosabeiki",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "L.B. Kunkels",
+        "orcid": "https://orcid.org/0009-0007-7612-0315",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "M.A. Leeflang",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "M. Klimopoulou",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "N.E. Putra",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "L.E. Fratila-Apachitei",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "J. Zhou",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "M.J. Mirzaali",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "A.A. Zadpoor",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2589-1529"
+    ],
+    "issn_l": "",
+    "publisher": "Elsevier BV",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7154466897",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - 3D printed multi-material scaffolds: integrating bioceramic with metal for enhanced bone scaffold performance is a 2026 paper from Materialia about Additive manufacturing.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Additive manufacturing.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Additive manufacturing; current relevance score is 6/10.",
+    "relevance_note_en": "Relevant to the tracker through Additive manufacturing; score: 6/10.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "id": "10.1016/j.mtla.2026.102748"
+  },
+  "10.1002/admt.202501509": {
+    "author_details": [
+      {
+        "name": "Alireza Ahmadianyazdi",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Bioengineering University of Washington  Seattle Washington USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Bioengineering University of Washington  Seattle Washington USA"
+        ]
+      },
+      {
+        "name": "Wei Huang",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Bioengineering University of Washington  Seattle Washington USA"
+          },
+          {
+            "name": "Department of Biomedical Engineering College of Engineering National Cheng Kung University  Tainan Taiwan (R.O.C)"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Bioengineering University of Washington  Seattle Washington USA",
+          "Department of Biomedical Engineering College of Engineering National Cheng Kung University  Tainan Taiwan (R.O.C)"
+        ]
+      },
+      {
+        "name": "Kaustav A. Gopinathan",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Center For Engineering in Medicine &amp; Surgery and Department of Surgery Massachusetts General Hospital  Boston Massachusetts USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Center For Engineering in Medicine &amp; Surgery and Department of Surgery Massachusetts General Hospital  Boston Massachusetts USA"
+        ]
+      },
+      {
+        "name": "Ivan Stepanov",
+        "orcid": "https://orcid.org/0009-0003-4242-0011",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Bioengineering University of Washington  Seattle Washington USA"
+          },
+          {
+            "name": "Department of Mechanical Engineering University of Washington  Seattle Washington USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Bioengineering University of Washington  Seattle Washington USA",
+          "Department of Mechanical Engineering University of Washington  Seattle Washington USA"
+        ]
+      },
+      {
+        "name": "Lisa Horowitz",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Bioengineering University of Washington  Seattle Washington USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Bioengineering University of Washington  Seattle Washington USA"
+        ]
+      },
+      {
+        "name": "Ting‐Yuan Tu",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Biomedical Engineering College of Engineering National Cheng Kung University  Tainan Taiwan (R.O.C)"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Biomedical Engineering College of Engineering National Cheng Kung University  Tainan Taiwan (R.O.C)"
+        ]
+      },
+      {
+        "name": "Mehmet Toner",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Center For Engineering in Medicine &amp; Surgery and Department of Surgery Massachusetts General Hospital  Boston Massachusetts USA"
+          },
+          {
+            "name": "Shriners Children's  Boston Massachusetts USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Center For Engineering in Medicine &amp; Surgery and Department of Surgery Massachusetts General Hospital  Boston Massachusetts USA",
+          "Shriners Children's  Boston Massachusetts USA"
+        ]
+      },
+      {
+        "name": "Albert Folch",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Bioengineering University of Washington  Seattle Washington USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Bioengineering University of Washington  Seattle Washington USA"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2365-709X",
+      "2365-709X"
+    ],
+    "issn_l": "",
+    "publisher": "Wiley",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7134171448",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The study focuses on the development of 3D printed multimaterial microfluidic transistors.\n2. Problem - Traditional microfluidic actuators face challenges in integrating high-resolution and easily manufacturable membranes.\n3. Method - The authors introduce a photopolymer resin that mimics the properties of PDMS and utilize multimaterial stereolithography for fabrication.\n4. Key Result - The resulting microfluidic transistors demonstrate significant pressure amplification and eliminate hysteresis issues common in existing devices.\n5. Takeaway - This advancement paves the way for more complex and efficient microfluidic systems.",
+    "relevance_note_en": "The summary captures the core findings and implications of the research without directly paraphrasing the abstract.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "id": "10.1002/admt.202501509"
+  },
+  "10.1002/adma.202523664": {
+    "author_details": [
+      {
+        "name": "Federica Sbordone",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Institute of Functional Interfaces (IFG) Karlsruhe Institute of Technology (KIT)  Hermann‐von‐Helmholtz‐Platz 1 Eggenstein‐Leopoldshafen Germany"
+          },
+          {
+            "name": "School of Chemistry and Physics Centre for Materials Science Queensland University of Technology (QUT)  2 George Street Brisbane Queensland Australia"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Institute of Functional Interfaces (IFG) Karlsruhe Institute of Technology (KIT)  Hermann‐von‐Helmholtz‐Platz 1 Eggenstein‐Leopoldshafen Germany",
+          "School of Chemistry and Physics Centre for Materials Science Queensland University of Technology (QUT)  2 George Street Brisbane Queensland Australia"
+        ]
+      },
+      {
+        "name": "Lauren Geurds",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "School of Chemistry and Physics Centre for Materials Science Queensland University of Technology (QUT)  2 George Street Brisbane Queensland Australia"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Chemistry and Physics Centre for Materials Science Queensland University of Technology (QUT)  2 George Street Brisbane Queensland Australia"
+        ]
+      },
+      {
+        "name": "Joshua A. Carroll",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "School of Chemistry and Physics Centre for Materials Science Queensland University of Technology (QUT)  2 George Street Brisbane Queensland Australia"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Chemistry and Physics Centre for Materials Science Queensland University of Technology (QUT)  2 George Street Brisbane Queensland Australia"
+        ]
+      },
+      {
+        "name": "Yanan Xu",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Central Analytical Research Facility Queensland University of Technology  2 George Street Brisbane Queensland Australia"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Central Analytical Research Facility Queensland University of Technology  2 George Street Brisbane Queensland Australia"
+        ]
+      },
+      {
+        "name": "Alicia K. Finch",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "School of Chemistry and Physics Centre for Materials Science Queensland University of Technology (QUT)  2 George Street Brisbane Queensland Australia"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Chemistry and Physics Centre for Materials Science Queensland University of Technology (QUT)  2 George Street Brisbane Queensland Australia"
+        ]
+      },
+      {
+        "name": "Filip Petko",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Biotechnology and Physical Chemistry Faculty of Chemical Engineering and Technology Cracow University of Technology  Warszawska 24 Cracow Poland"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Biotechnology and Physical Chemistry Faculty of Chemical Engineering and Technology Cracow University of Technology  Warszawska 24 Cracow Poland"
+        ]
+      },
+      {
+        "name": "Andrzej Świeży",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Biotechnology and Physical Chemistry Faculty of Chemical Engineering and Technology Cracow University of Technology  Warszawska 24 Cracow Poland"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Biotechnology and Physical Chemistry Faculty of Chemical Engineering and Technology Cracow University of Technology  Warszawska 24 Cracow Poland"
+        ]
+      },
+      {
+        "name": "Joanna Ortyl",
+        "orcid": "https://orcid.org/0000-0002-4789-7199",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Biotechnology and Physical Chemistry Faculty of Chemical Engineering and Technology Cracow University of Technology  Warszawska 24 Cracow Poland"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Biotechnology and Physical Chemistry Faculty of Chemical Engineering and Technology Cracow University of Technology  Warszawska 24 Cracow Poland"
+        ]
+      },
+      {
+        "name": "Christopher Barner‐Kowollik",
+        "orcid": "https://orcid.org/0000-0002-6745-0570",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Institute of Functional Interfaces (IFG) Karlsruhe Institute of Technology (KIT)  Hermann‐von‐Helmholtz‐Platz 1 Eggenstein‐Leopoldshafen Germany"
+          },
+          {
+            "name": "School of Chemistry and Physics Centre for Materials Science Queensland University of Technology (QUT)  2 George Street Brisbane Queensland Australia"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Institute of Functional Interfaces (IFG) Karlsruhe Institute of Technology (KIT)  Hermann‐von‐Helmholtz‐Platz 1 Eggenstein‐Leopoldshafen Germany",
+          "School of Chemistry and Physics Centre for Materials Science Queensland University of Technology (QUT)  2 George Street Brisbane Queensland Australia"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "0935-9648",
+      "1521-4095"
+    ],
+    "issn_l": "",
+    "publisher": "Wiley",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7154607903",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "High-impact general journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - The study focuses on the impact of wavelength on 3D printing processes.\n2. Problem - There is a gap in understanding how solution-based photopolymerization action plots relate to light-driven 3D printing.\n3. Method - The researchers utilized a stereolithography setup with a tunable laser to analyze the effects of different monochromatic wavelengths on a photoresin system.\n4. Key Result - The findings indicate that longer wavelengths enhance the efficiency of 3D printing and improve the mechanical properties of the printed materials.\n5. Takeaway - This research introduces the concept of 3D Printed Action Plots, demonstrating the potential for optimizing 3D printing through wavelength selection.",
+    "relevance_note_en": "The summary captures the core aspects of the study, including its focus on wavelength effects in 3D printing and the introduction of a novel methodology.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "id": "10.1002/adma.202523664"
+  },
+  "10.1038/s41598-026-35258-2": {
+    "author_details": [
+      {
+        "name": "Ahmad Bagheri",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Mohammad Reza Zakerzadeh",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Mohammad Jafar Sadigh",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Reyhaneh Salehabadi",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2045-2322"
+    ],
+    "issn_l": "",
+    "publisher": "Springer Science and Business Media LLC",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7125901115",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The study focuses on volumetric additive manufacturing (VAM) for creating complex geometries around intricate inserts.\n2. Problem - Challenges arise when attempting to print around heavily occluding inserts, which have not been thoroughly investigated in VAM.\n3. Method - An orientation optimization method based on light occlusion is proposed to enhance print quality by maximizing light exposure to the print model.\n4. Key Result - The proposed method significantly improves print fidelity and reduces unprinted areas, as confirmed by simulations and physical prints.\n5. Takeaway - This research demonstrates that optimized orientation can enable successful printing of complex structures around challenging inserts, expanding the capabilities of conventional manufacturing.",
+    "relevance_note_en": "The summary captures the core aspects of the study, including its focus, challenges, methods, results, and implications.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "id": "10.1038/s41598-026-35258-2"
+  },
+  "10.1002/advs.73664": {
+    "author_details": [
+      {
+        "name": "Johanna A. Vandenbrande",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Martin P. De Beer",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Erika J. Fong",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Aftab Bhanvadia",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Massimiliano Ferrucci",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Wilson Kong",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Daniel Wang",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Ryan M. Hensleigh",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Michell Marufu",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "James S. Oakdale",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Fangyou Xie",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Maxim Shusteff",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Johanna J. Schwartz",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Advanced Science",
+    "crossref_target_issn": "2198-3844",
+    "issn": [
+      "2198-3844",
+      "2198-3844"
+    ],
+    "issn_l": "",
+    "publisher": "Wiley",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "https://openalex.org/W7127387312",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "High-impact general journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - The study focuses on volumetric additive manufacturing techniques for creating silicone devices.\n2. Problem - It addresses the challenge of efficiently producing silicone molds with high fidelity.\n3. Method - The authors utilize zero-dose optimization in tomographic volumetric additive manufacturing to enhance the printing process.\n4. Key Result - The approach enables the rapid production of silicone molds within minutes while maintaining shape accuracy.\n5. Takeaway - This method represents a significant advancement in the field of additive manufacturing, particularly for creating functional silicone components.",
+    "relevance_note_en": "The summary accurately reflects the main contributions and findings of the research.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "id": "10.1002/advs.73664"
   }
 }
