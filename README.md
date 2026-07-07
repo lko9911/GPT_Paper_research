@@ -174,11 +174,10 @@ python -m http.server 8000
 ```txt
 max_summaries: 400
 refresh_mode: non_qa
-dry_run: false
 confirm_openai_cost: true
 ```
 
-`confirm_openai_cost=true`를 선택해야 실제 OpenAI API 호출이 허용됩니다. 기본값은 `dry_run=false`라서 실행하면 결과가 저장됩니다. 비용 테스트만 하고 사이트에 반영하지 않으려면 `max_summaries=5`, `dry_run=true`, `confirm_openai_cost=true`로 바꿔 실행하세요.
+`confirm_openai_cost=true`를 선택해야 실제 OpenAI API 호출이 허용됩니다. 이 workflow는 수동 실행 전용이며, 실행되면 요약 결과를 저장하고 GitHub Pages에 배포합니다. 비용을 작게 테스트하려면 `max_summaries=5`, `refresh_mode=metadata`, `confirm_openai_cost=true`처럼 작은 batch로 실행하세요.
 
 이 workflow는 정기 실행되지 않고 수동 실행만 지원합니다. 따라서 OpenAI 비용이 주기적으로 반복 발생하지 않습니다.
 

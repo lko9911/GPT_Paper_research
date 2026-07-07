@@ -54,7 +54,7 @@
 - GitHub Actions schedule이 예정 시각에 run을 만들지 않으면 사이트의 `Now / Updated` 패널은 `run not seen yet` / `시도 미감지` 상태를 표시합니다.
 - OpenAI 요약은 별도 `OpenAI summary refresh` 수동 workflow에서 사용자가 `confirm_openai_cost=true`를 선택한 경우에만 실행됩니다. 별도의 `OPENAI_REFRESH_ENABLED` repository variable을 열 필요는 없습니다.
 - OpenAI 요약 workflow 상태는 `OPENAI_SUMMARY_STATUS.md`와 `data/openai_summary_status.json`에 기록되며, 논문 수집 상태인 `UPDATE_STATUS.md`와 분리됩니다.
-- `OpenAI summary refresh`의 `dry_run` 기본값은 `false`입니다. 버튼 실행 시 실제 저장/배포가 기본이며, 테스트만 하려면 사용자가 직접 `dry_run=true`로 바꿔야 합니다.
+- `OpenAI summary refresh`는 더 이상 `dry_run` 입력을 받지 않습니다. 수동 실행 시 `confirm_openai_cost=true`를 선택하면 실제 OpenAI 요약을 저장하고 배포합니다.
 
 ## 2026-06-15 최신 상태
 
@@ -224,7 +224,7 @@ GitHub Pages에서 동작 가능한 정적 논문 큐레이션 사이트와 GitH
 4. OpenAI 요약 품질을 보고 프롬프트와 카테고리 분류를 개선합니다.
 5. GitHub Pages 배포 후 모바일 화면과 citation 복사 동작을 브라우저에서 확인합니다.
 6. Nature/Science/Additive Manufacturing 논문을 더 정확히 모으려면 OpenAlex source ID 기반 venue-specific 검색을 추가합니다.
-7. 기존 전체 논문을 5문항 한글/영문 형식으로 통일하려면 `Refresh OpenAI summaries` workflow를 `max_summaries=400`, `refresh_mode=non_qa`, `dry_run=false`로 수동 실행합니다.
+7. 기존 전체 논문을 5문항 한글/영문 형식으로 통일하려면 `OpenAI summary refresh` workflow를 `max_summaries=400`, `refresh_mode=non_qa`, `confirm_openai_cost=true`로 수동 실행합니다.
 ## 2026-06-12 추가 상태
 
 - 논문 총량 100편 제한을 제거했고, 현재 `data/papers.json`에는 145편이 저장되어 있습니다.

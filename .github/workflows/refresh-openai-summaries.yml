@@ -17,14 +17,6 @@ on:
           - metadata
           - all
           - missing
-      dry_run:
-        description: "Run without writing data changes."
-        required: true
-        default: "false"
-        type: choice
-        options:
-          - "false"
-          - "true"
       confirm_openai_cost:
         description: "Required cost guard. Select true only when you intentionally want to call the OpenAI API."
         required: true
@@ -63,7 +55,6 @@ jobs:
           DEPLOY_STEP_OUTCOME: "pending"
           MAX_OPENAI_SUMMARIES: ${{ inputs.max_summaries }}
           REFRESH_MODE: ${{ inputs.refresh_mode }}
-          DRY_RUN: ${{ inputs.dry_run }}
           CONFIRM_OPENAI_COST: ${{ inputs.confirm_openai_cost }}
         run: python scripts/write_openai_summary_status.py
 
@@ -113,17 +104,14 @@ jobs:
           OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-4o-mini' }}
           MAX_OPENAI_SUMMARIES: ${{ inputs.max_summaries }}
           REFRESH_MODE: ${{ inputs.refresh_mode }}
-          DRY_RUN: ${{ inputs.dry_run }}
           API_SLEEP_SECONDS: "1.0"
           OPENAI_REFRESH_SLEEP_SECONDS: "0.5"
         run: python scripts/refresh_openai_summaries.py
 
       - name: Build split data
-        if: ${{ inputs.dry_run == 'false' }}
         run: python scripts/build_split_data.py
 
       - name: Upload refreshed summary data artifact
-        if: ${{ inputs.dry_run == 'false' }}
         uses: actions/upload-artifact@v4
         with:
           name: openai-refreshed-summary-data
@@ -139,7 +127,6 @@ jobs:
 
       - name: Commit refreshed summaries
         id: commit_summaries
-        if: ${{ inputs.dry_run == 'false' }}
         run: |
           if git diff --quiet -- data/papers.json data/site_meta.json data/papers_index.json data/archive_papers_index.json data/detail_manifest.json data/archive_detail_manifest.json data/details data/archive_details; then
             echo "No summary changes."
@@ -153,11 +140,9 @@ jobs:
           git push
 
       - name: Setup Pages
-        if: ${{ inputs.dry_run == 'false' }}
         uses: actions/configure-pages@v5
 
       - name: Build public Pages artifact
-        if: ${{ inputs.dry_run == 'false' }}
         run: |
           mkdir -p _site
           rsync -a --delete \
@@ -169,13 +154,11 @@ jobs:
             ./ _site/
 
       - name: Upload Pages artifact
-        if: ${{ inputs.dry_run == 'false' }}
         uses: actions/upload-pages-artifact@v3
         with:
           path: _site
 
       - name: Deploy to GitHub Pages
-        if: ${{ inputs.dry_run == 'false' }}
         id: deployment
         uses: actions/deploy-pages@v4
 
@@ -190,7 +173,6 @@ jobs:
           DEPLOY_STEP_OUTCOME: ${{ steps.deployment.outcome }}
           MAX_OPENAI_SUMMARIES: ${{ inputs.max_summaries }}
           REFRESH_MODE: ${{ inputs.refresh_mode }}
-          DRY_RUN: ${{ inputs.dry_run }}
           CONFIRM_OPENAI_COST: ${{ inputs.confirm_openai_cost }}
         run: python scripts/write_openai_summary_status.py
 

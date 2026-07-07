@@ -38,7 +38,6 @@ def main() -> None:
         "deploy_step_outcome": os.getenv("DEPLOY_STEP_OUTCOME", ""),
         "max_summaries": os.getenv("MAX_OPENAI_SUMMARIES", ""),
         "refresh_mode": os.getenv("REFRESH_MODE", ""),
-        "dry_run": os.getenv("DRY_RUN", ""),
         "confirm_openai_cost": os.getenv("CONFIRM_OPENAI_COST", ""),
         "summary_refresh_model": site_meta.get("summary_refresh_model", ""),
         "summaries_refreshed_last_success": site_meta.get("summaries_refreshed", 0),
@@ -82,7 +81,6 @@ This file is written by the manual OpenAI summary workflow. It is separate from 
 
 - Max summaries: `{payload.get('max_summaries') or '-'}`
 - Refresh mode: `{payload.get('refresh_mode') or '-'}`
-- Dry run: `{payload.get('dry_run') or '-'}`
 - Confirm OpenAI cost: `{payload.get('confirm_openai_cost') or '-'}`
 
 ## Last Recorded Summary Refresh

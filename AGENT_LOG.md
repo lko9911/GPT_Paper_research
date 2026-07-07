@@ -7476,3 +7476,29 @@
 ### 주의사항
 - 이번 복구 기준 old ref는 `32bb8fe`입니다.
 - 복구 결과: old active 1502편, 최신 active 1451편, 신규 current-only 19편, 최종 active 1520편입니다.
+## 2026-07-07 10:28
+### 변경 요약
+- `OpenAI summary refresh` GitHub Actions 수동 실행 화면에서 `dry_run` 입력을 제거했습니다.
+- OpenAI 요약 workflow는 이제 `confirm_openai_cost=true`를 선택한 경우 실제 요약 저장, split data 재생성, 커밋, Pages 배포까지 수행합니다.
+
+### 수정/생성한 파일
+- `.github/workflows/refresh-openai-summaries.yml`: `dry_run` workflow_dispatch 입력과 관련 조건문을 제거하고 항상 저장/배포 경로로 실행되도록 정리했습니다.
+- `scripts/write_openai_summary_status.py`: 공개 상태 문서에서 `Dry run` 항목을 제거했습니다.
+- `OPENAI_SUMMARY_STATUS.md`, `data/openai_summary_status.json`: 새 status schema로 재생성했습니다.
+- `README.md`: OpenAI 요약 실행 예시에서 `dry_run`을 제거하고, 작은 batch 테스트는 `max_summaries`로 제어한다고 설명했습니다.
+- `PROJECT_STATUS.md`: 운영 정책 설명에서 `dry_run` 사용 안내를 제거했습니다.
+- `AGENT_LOG.md`: 이번 변경 기록을 추가했습니다.
+
+### 구현한 기능
+- 사용자는 OpenAI 요약 workflow에서 `max_summaries`, `refresh_mode`, `confirm_openai_cost`만 선택하면 됩니다.
+- 비용 방지는 `confirm_openai_cost=true` 확인과 `max_summaries` batch 크기로 유지합니다.
+
+### 설계 결정
+- `dry_run`은 실제 운영에서 혼동을 만들고, 이미 비용 확인 guard가 있으므로 수동 UI에서 제거했습니다.
+- 테스트는 데이터를 쓰지 않는 dry-run 대신 작은 batch 실제 실행으로 확인하는 쪽이 사이트 운영 의도에 더 맞습니다.
+
+### 남은 작업
+- GitHub Actions 화면에서 `OpenAI summary refresh` 실행 입력에 `dry_run`이 더 이상 보이지 않는지 확인하세요.
+
+### 주의사항
+- OpenAI API는 호출하지 않았습니다.
