@@ -4,24 +4,24 @@ This file is written by the manual OpenAI summary workflow. It is separate from 
 
 ## Latest Workflow Check
 
-- Checked at: `2026-07-07T10:28:48+09:00` KST
+- Checked at: `2026-07-07T10:30:20+09:00` KST
 - Workflow: `OpenAI summary refresh`
-- Event: ``
-- Run: -
-- Job status: `not_run`
-- Summary phase: `workflow_config_updated`
-- Confirm step: `-`
-- Refresh step: `-`
-- Commit step: `-`
-- Deploy step: `-`
-- Ref: ``
-- Commit SHA: ``
+- Event: `workflow_dispatch`
+- Run: [28835076321](https://github.com/lko9911/GPT_Paper_research/actions/runs/28835076321)
+- Job status: `in_progress`
+- Summary phase: `in_progress`
+- Confirm step: `pending`
+- Refresh step: `pending`
+- Commit step: `pending`
+- Deploy step: `pending`
+- Ref: `main`
+- Commit SHA: `fb3b18ae106a6b046dfad7834440b79d02251a66`
 
 ## Requested Inputs
 
-- Max summaries: `-`
-- Refresh mode: `-`
-- Confirm OpenAI cost: `false`
+- Max summaries: `300`
+- Refresh mode: `metadata`
+- Confirm OpenAI cost: `true`
 
 ## Last Recorded Summary Refresh
 
