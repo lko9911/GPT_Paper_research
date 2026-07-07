@@ -7502,3 +7502,28 @@
 
 ### 주의사항
 - OpenAI API는 호출하지 않았습니다.
+## 2026-07-07 11:08
+### 변경 요약
+- AML 추천 카드 중 원본 `data/papers.json`에는 OpenAI 요약이 있는데 `public/data/aml_recommended_papers.json`에는 metadata/fallback summary로 남아 있던 항목을 동기화했습니다.
+- 앞으로 `OpenAI summary refresh` workflow가 끝나면 AML 추천 공개 파일도 같이 OpenAI 요약 상태를 동기화하도록 자동화했습니다.
+
+### 수정/생성한 파일
+- `scripts/sync_aml_recommendation_summaries.py`: curated paper pool의 OpenAI 요약을 DOI/title 기준으로 AML 추천 공개 JSON에 복사하는 스크립트를 추가했습니다.
+- `.github/workflows/refresh-openai-summaries.yml`: OpenAI 요약 refresh 후 `scripts/sync_aml_recommendation_summaries.py`를 실행하고, `public/data/aml_recommended_papers.json`도 artifact/commit 대상에 포함했습니다.
+- `public/data/aml_recommended_papers.json`: 원본 curated paper에 OpenAI 요약이 존재하는 AML 추천 282편을 `summary_provider=openai`로 동기화했습니다.
+- `AGENT_LOG.md`: 이번 원인 조사와 동기화 작업을 기록했습니다.
+
+### 구현한 기능
+- AML 추천 공개 파일의 stale summary metadata를 curated paper source-of-truth와 동기화합니다.
+- OpenAI 요약 workflow 이후 AML 추천 카드에서도 가능한 경우 AI summary badge와 Q5 요약이 일관되게 표시됩니다.
+
+### 설계 결정
+- OpenAI 요약의 source-of-truth는 `data/papers.json`으로 두고, AML 추천 공개 파일은 그 값을 복사해서 표시합니다.
+- AML 외부 추천 전용 논문처럼 `data/papers.json`에 없는 항목은 새 OpenAI API 호출 없이 metadata/fallback 상태로 유지합니다.
+
+### 남은 작업
+- 남은 AML 추천 metadata/fallback 142편을 AI summary로 바꾸려면, 별도 OpenAI 허가 후 AML 추천 공개 파일 대상 요약 refresh 기능을 추가/실행해야 합니다.
+
+### 주의사항
+- 이번 작업에서 OpenAI API는 호출하지 않았습니다.
+- 동기화 결과 AML 추천 737편 중 OpenAI summary 항목은 313편에서 595편으로 증가했고, metadata/fallback 항목은 142편 남았습니다.

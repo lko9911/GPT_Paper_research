@@ -108,6 +108,9 @@ jobs:
           OPENAI_REFRESH_SLEEP_SECONDS: "0.5"
         run: python scripts/refresh_openai_summaries.py
 
+      - name: Sync AML recommendation summaries
+        run: python scripts/sync_aml_recommendation_summaries.py
+
       - name: Build split data
         run: python scripts/build_split_data.py
 
@@ -124,17 +127,18 @@ jobs:
             data/archive_detail_manifest.json
             data/details
             data/archive_details
+            public/data/aml_recommended_papers.json
 
       - name: Commit refreshed summaries
         id: commit_summaries
         run: |
-          if git diff --quiet -- data/papers.json data/site_meta.json data/papers_index.json data/archive_papers_index.json data/detail_manifest.json data/archive_detail_manifest.json data/details data/archive_details; then
+          if git diff --quiet -- data/papers.json data/site_meta.json data/papers_index.json data/archive_papers_index.json data/detail_manifest.json data/archive_detail_manifest.json data/details data/archive_details public/data/aml_recommended_papers.json; then
             echo "No summary changes."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/papers.json data/site_meta.json data/papers_index.json data/archive_papers_index.json data/detail_manifest.json data/archive_detail_manifest.json data/details data/archive_details
+          git add data/papers.json data/site_meta.json data/papers_index.json data/archive_papers_index.json data/detail_manifest.json data/archive_detail_manifest.json data/details data/archive_details public/data/aml_recommended_papers.json
           git commit -m "Refresh OpenAI paper summaries"
           git pull --rebase --autostash origin main
           git push
