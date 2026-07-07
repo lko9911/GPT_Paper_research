@@ -1,9 +1,10 @@
-"""Rebuild the paper dataset from Crossref search results only.
+"""Update the paper dataset from Crossref search results.
 
-This script intentionally ignores the existing paper dataset as an input. It
-archives current outputs, searches Crossref from scratch, de-duplicates the new
-Crossref results, and uses OpenAlex only for DOI-based corresponding-author
-completion when Crossref does not provide a corresponding-author flag.
+The updater preserves the existing active paper set because many records contain
+paid OpenAI summaries. New Crossref results are merged by DOI/title key; existing
+papers that are not returned by the latest Crossref search remain active.
+OpenAlex is used only for DOI-based corresponding-author completion when
+Crossref does not provide a corresponding-author flag.
 """
 
 from __future__ import annotations
@@ -57,14 +58,17 @@ def main() -> None:
     run_started_at = datetime.now(UTC).replace(microsecond=0).isoformat().replace("+00:00", "Z")
     since_year = _since_year()
 
-    print("Full rebuild mode enabled")
-    print("Existing dataset ignored for new collection")
+    print("Incremental merge mode enabled")
+    print("Existing active paper dataset will be preserved")
     print("Priority venue search disabled")
     print("OpenAlex general search disabled")
+    existing_active = _load_json(PAPERS_PATH, [])
+    existing_archive = _load_json(ARCHIVE_PAPERS_PATH, [])
     existing_lineage = _existing_date_lineage()
     existing_openai_summaries = _existing_openai_summaries()
     backup_dir = _archive_existing_outputs(run_started_at)
     print(f"Existing paper dataset archived: {backup_dir.relative_to(ROOT)}")
+    print(f"Existing active papers loaded for preservation: {len(existing_active)}")
 
     queries = _filtered_queries(_load_json(QUERIES_PATH, []))
     venue_targets = _load_json(CROSSREF_VENUE_QUERIES_PATH, [])
@@ -92,8 +96,11 @@ def main() -> None:
         completed = _complete_corresponding_author_from_openalex(summarized, openalex_stats)
         papers.append(_finalize_crossref_record(completed, today, existing_lineage, existing_openai_summaries))
 
-    cleaned = [_strip_transient(paper) for paper in papers]
-    curated, archive, split_stats = _split_curated_archive(cleaned)
+    new_cleaned = [_strip_transient(paper) for paper in papers]
+    merged_input, merge_stats = _merge_existing_active_with_new(existing_active, new_cleaned, today)
+    cleaned = [_strip_transient(paper) for paper in merged_input]
+    curated, new_archive, split_stats = _split_curated_archive(cleaned)
+    archive = _merge_archives(existing_archive, new_archive, curated)
     weekly_added = sum(1 for paper in curated if paper.get("is_weekly_new"))
     _write_json(PAPERS_PATH, curated)
     _write_json(ARCHIVE_PAPERS_PATH, archive)
@@ -107,19 +114,25 @@ def main() -> None:
             "last_run_date": today,
             "paper_count": len(curated),
             "curated_count": len(curated),
-            "raw_candidate_count": len(cleaned),
+            "raw_candidate_count": len(new_cleaned),
+            "merged_candidate_count": len(cleaned),
             "archived_count": len(archive),
+            "new_archived_count": len(new_archive),
             "hidden_low_relevance_count": split_stats["low_relevance"],
             "hidden_low_venue_trust_count": split_stats.get("low_venue_trust", 0),
             "duplicate_archived_count": split_stats["duplicate_title"],
-            "papers_added": len(curated),
-            "raw_records_added": len(cleaned),
+            "papers_added": merge_stats["new_added"],
+            "raw_records_added": len(new_cleaned),
             "weekly_added_count": weekly_added,
             "weekly_window_days": 7,
             "since_year": since_year,
             "curated_min_score": CURATED_MIN_SCORE,
             "sources": ["Crossref"],
-            "collection_mode": "full_rebuild_crossref_only",
+            "collection_mode": "incremental_crossref_merge",
+            "existing_active_preserved": True,
+            "existing_active_count_before": len(existing_active),
+            "new_crossref_curated_candidates": len(new_cleaned),
+            "merge_stats": merge_stats,
             "openalex_general_search_enabled": False,
             "priority_venue_search_enabled": False,
             "openalex_used_for": "missing_corresponding_author_doi_cross_check_only",
@@ -128,10 +141,12 @@ def main() -> None:
         },
     )
 
-    print("New Crossref-based dataset exported")
+    print("Incremental Crossref-based dataset exported")
     print(
-        "Full rebuild complete. "
-        f"Curated {len(curated)} papers; archived {len(archive)} of {len(cleaned)} Crossref records. "
+        "Incremental update complete. "
+        f"Curated {len(curated)} papers; added {merge_stats['new_added']} new papers; "
+        f"updated {merge_stats['existing_updated']} existing papers; preserved "
+        f"{merge_stats['existing_preserved_without_current_match']} existing papers without a current Crossref hit. "
         f"OpenAlex checked {openalex_stats['checked']} DOI records and completed "
         f"{openalex_stats['completed']} corresponding-author entries."
     )
@@ -156,6 +171,137 @@ def _collect_crossref_candidates(queries: list[str], since_year: int) -> list[di
                 candidates.append(record)
         time.sleep(float(os.getenv("API_SLEEP_SECONDS", "0.2")))
     return candidates
+
+
+def _merge_existing_active_with_new(
+    existing_active: list[dict[str, Any]],
+    new_records: list[dict[str, Any]],
+    today: str,
+) -> tuple[list[dict[str, Any]], dict[str, int]]:
+    """Keep existing active papers and merge in newly observed Crossref papers.
+
+    The previous full-rebuild behavior allowed a paper to disappear from the
+    public site when Crossref relevance results changed. That is not acceptable
+    for paid/manual OpenAI summaries, so active records are now sticky unless a
+    later curation rule explicitly archives them.
+    """
+
+    existing_by_key: dict[str, dict[str, Any]] = {}
+    for record in existing_active:
+        key = _dedupe_key(record)
+        if key:
+            existing_by_key[key] = _refresh_preserved_existing_record(record, today)
+
+    merged_by_key = dict(existing_by_key)
+    stats = {
+        "existing_active_before": len(existing_by_key),
+        "new_crossref_records": len(new_records),
+        "existing_updated": 0,
+        "new_added": 0,
+        "existing_preserved_without_current_match": 0,
+    }
+    seen_current_keys: set[str] = set()
+
+    for record in new_records:
+        key = _dedupe_key(record)
+        if not key:
+            continue
+        seen_current_keys.add(key)
+        existing = existing_by_key.get(key)
+        if existing:
+            merged_by_key[key] = _merge_existing_and_current_record(existing, record, today)
+            stats["existing_updated"] += 1
+        else:
+            current = dict(record)
+            current["not_seen_in_latest_crossref_run"] = False
+            current["last_seen_in_crossref_run"] = today
+            merged_by_key[key] = current
+            stats["new_added"] += 1
+
+    missing_current = set(existing_by_key) - seen_current_keys
+    stats["existing_preserved_without_current_match"] = len(missing_current)
+    for key in missing_current:
+        merged_by_key[key]["not_seen_in_latest_crossref_run"] = True
+
+    return list(merged_by_key.values()), stats
+
+
+def _refresh_preserved_existing_record(record: dict[str, Any], today: str) -> dict[str, Any]:
+    refreshed = dict(record)
+    refreshed["is_weekly_new"] = _is_date_within_days(str(refreshed.get("first_added") or ""), today, 7)
+    refreshed.setdefault("last_seen_in_crossref_run", refreshed.get("last_updated", ""))
+    refreshed.setdefault("not_seen_in_latest_crossref_run", False)
+    return refreshed
+
+
+def _merge_existing_and_current_record(
+    existing: dict[str, Any],
+    current: dict[str, Any],
+    today: str,
+) -> dict[str, Any]:
+    merged = dict(existing)
+    merged.update(current)
+    merged["first_added"] = existing.get("first_added") or current.get("first_added") or today
+    merged["last_updated"] = today
+    merged["is_weekly_new"] = _is_date_within_days(str(merged.get("first_added") or ""), today, 7)
+    merged["last_seen_in_crossref_run"] = today
+    merged["not_seen_in_latest_crossref_run"] = False
+
+    if existing.get("summary_provider") == "openai" or existing.get("openai_summary_applied") is True:
+        for key in (
+            "ai_summary_en",
+            "relevance_note_en",
+            "categories",
+            "tags",
+            "relevance_score",
+            "summary_provider",
+            "openai_summary_applied",
+            "abstract_used_for_summary",
+        ):
+            if existing.get(key) not in (None, "", []):
+                merged[key] = existing[key]
+        merged["summary_provider"] = "openai"
+        merged["openai_summary_applied"] = True
+
+    return merged
+
+
+def _merge_archives(
+    existing_archive: list[dict[str, Any]],
+    new_archive: list[dict[str, Any]],
+    curated: list[dict[str, Any]],
+) -> list[dict[str, Any]]:
+    active_keys = {_dedupe_key(record) for record in curated if _dedupe_key(record)}
+    merged: dict[str, dict[str, Any]] = {}
+    for record in existing_archive + new_archive:
+        key = _dedupe_key(record)
+        if not key or key in active_keys:
+            continue
+        if key not in merged:
+            merged[key] = record
+        else:
+            merged[key] = _better_archive_record(merged[key], record)
+    return sorted(merged.values(), key=_archive_sort_key, reverse=True)
+
+
+def _better_archive_record(left: dict[str, Any], right: dict[str, Any]) -> dict[str, Any]:
+    def score(record: dict[str, Any]) -> tuple[int, int, int, int]:
+        return (
+            1 if record.get("summary_provider") == "openai" or record.get("openai_summary_applied") else 0,
+            1 if record.get("doi") else 0,
+            int(record.get("relevance_score") or 0),
+            int(record.get("year") or 0),
+        )
+
+    return right if score(right) > score(left) else left
+
+
+def _archive_sort_key(record: dict[str, Any]) -> tuple[int, int, str]:
+    return (
+        int(record.get("year") or 0),
+        int(record.get("relevance_score") or 0),
+        str(record.get("title") or ""),
+    )
 
 
 def _collect_crossref_venue_candidates(venue_targets: list[dict[str, Any]], since_year: int) -> list[dict[str, Any]]:
@@ -571,7 +717,7 @@ def _archive_existing_outputs(run_started_at: str) -> Path:
         json.dumps(
             {
                 "created_at_utc": run_started_at,
-                "mode": "full_rebuild_crossref_only",
+                "mode": "incremental_crossref_merge",
                 "archived_paths": manifest,
             },
             ensure_ascii=False,

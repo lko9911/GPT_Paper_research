@@ -7441,3 +7441,38 @@
 ### 주의사항
 - 현재 `data/papers.json`, `data/papers_index.json`, `public/data/aml_recommended_papers.json` 검사 결과 학위논문 후보는 0개였습니다.
 - OpenAI API는 호출하지 않았습니다.
+## 2026-07-07 10:14
+### 변경 요약
+- 논문 업데이트 방식을 full rebuild 교체 방식에서 `기존 active 논문 유지 + 새 Crossref 결과 추가/갱신` 방식으로 변경했습니다.
+- OpenAI 요약이 적용된 기존 논문은 비용이 들어간 자산이므로, Crossref 검색 결과에서 일시적으로 빠져도 공개 데이터에서 삭제되지 않도록 했습니다.
+- 이미 줄어든 최신 데이터도 복구하기 위해 `32bb8fe` 시점의 1502편 active 논문과 최신 1451편 active 논문을 DOI/title 기준으로 병합했습니다.
+
+### 수정/생성한 파일
+- `scripts/full_rebuild_crossref_dataset.py`: incremental Crossref merge 로직을 추가하고, 기존 active 논문 보존/신규 논문 추가/기존 논문 갱신 통계를 `site_meta.json`에 기록하도록 변경했습니다.
+- `data/papers.json`: 기존 1502편과 최신 신규 19편을 병합해 1520편으로 복구했습니다.
+- `data/archive_papers.json`: active로 복구된 논문을 제외하고 기존 archive와 신규 archive를 병합했습니다.
+- `data/papers.csv`, `data/papers.xlsx`: 복구된 active 데이터 기준으로 재생성했습니다.
+- `data/papers_index.json`, `data/details/`, `data/detail_manifest.json`: GitHub Pages 초기 로딩/상세 로딩용 split data를 재생성했습니다.
+- `data/archive_papers_index.json`, `data/archive_details/`, `data/archive_detail_manifest.json`: archive split data를 재생성했습니다.
+- `data/site_meta.json`: `collection_mode = manual_restore_incremental_union`, `paper_count = 1520`, `papers_added = 19`, 기존 보존/신규 추가 통계를 기록했습니다.
+- `UPDATE_STATUS.md`, `data/update_status.json`: 현재 복구 상태와 논문 수가 보이도록 갱신했습니다.
+- `AGENT_LOG.md`: 이번 정책 변경과 복구 작업을 기록했습니다.
+
+### 구현한 기능
+- 기존 active 논문은 다음 업데이트에서 기본 보존됩니다.
+- 새 Crossref 결과가 기존 DOI/title과 일치하면 메타데이터는 갱신하되 OpenAI 요약, 태그, 관련성 점수 등 유료 요약 결과는 보존합니다.
+- 새 DOI/title이면 active 논문으로 추가합니다.
+- Crossref 결과에서 잠시 사라진 기존 논문은 `not_seen_in_latest_crossref_run = true`로 표시할 수 있지만, 공개 데이터에서는 유지합니다.
+
+### 설계 결정
+- Crossref relevance 결과는 실행마다 흔들릴 수 있으므로, 공개 사이트의 논문 목록을 Crossref 최신 검색 결과와 1:1로 교체하지 않기로 했습니다.
+- `papers_added`는 이제 full rebuild 총량이 아니라 실제 신규 추가 수를 의미합니다.
+- OpenAI API는 호출하지 않았고, 기존 저장 요약만 보존했습니다.
+
+### 남은 작업
+- 다음 scheduled update 이후 `collection_mode = incremental_crossref_merge`와 `papers_added`가 실제 신규 논문 수로 기록되는지 확인하세요.
+- 필요하면 UI에서 `not_seen_in_latest_crossref_run`를 개발자용/숨김 상태로 표시할 수 있습니다.
+
+### 주의사항
+- 이번 복구 기준 old ref는 `32bb8fe`입니다.
+- 복구 결과: old active 1502편, 최신 active 1451편, 신규 current-only 19편, 최종 active 1520편입니다.
