@@ -1,4 +1,169 @@
 {
+  "10.1007/s40964-025-00988-8": {
+    "author_details": [
+      {
+        "name": "Alessio Pricci",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Gianluca Percoco",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2363-9512",
+      "2363-9520"
+    ],
+    "issn_l": "",
+    "publisher": "Springer Science and Business Media LLC",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4407253661",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - The study focuses on developing a numerical model for optimizing the ironing process in extrusion-based additive manufacturing.\n2. Problem - The challenge addressed is reducing porosity and manufacturing time while improving the mechanical properties of 3D printed PLA parts.\n3. Method - A multiphase non-Newtonian CFD simulation was employed to analyze the effects of various parameters like extrusion temperature and strand overlap on the ironing process.\n4. Key Result - The findings indicate that optimal ironing parameters can significantly reduce manufacturing time by up to 31.97% and enhance ultimate tensile strength by up to 21.49%.\n5. Takeaway - This research lays the groundwork for a digital twin of material extrusion processes, aiming to enhance part quality and efficiency in additive manufacturing.",
+    "relevance_note_en": "The summary captures the core aspects of the study, including its focus, methods, and implications for additive manufacturing.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-07-07",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1007/s40964-025-00988-8"
+  },
+  "10.1016/j.rcim.2025.103043": {
+    "author_details": [
+      {
+        "name": "Guoyi Xia",
+        "orcid": "https://orcid.org/0000-0003-4019-7242",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Zied Ghrairi",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Thorsten Wuest",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Karl Hribernik",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Aaron Heuermann",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Furui Liu",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Hui Liu",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Klaus-Dieter Thoben",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Robotics and Computer-Integrated Manufacturing",
+    "crossref_target_issn": "0736-5845",
+    "issn": [
+      "0736-5845"
+    ],
+    "issn_l": "",
+    "publisher": "Elsevier BV",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4409978762",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - The paper reviews the current state of human modeling in Human-Robot Collaboration and Digital Twins within industrial settings.\n2. Problem - There is a lack of comprehensive understanding regarding human models and their enabling technologies in the context of HRC and DT.\n3. Method - A Systematic Literature Review is conducted, along with the proposal of a framework categorizing human modeling aspects and technologies.\n4. Key Result - The study identifies key applications of human models across various lifecycle stages and highlights current limitations and future prospects in the field.\n5. Takeaway - Advancing human modeling is crucial for enhancing safety, efficiency, and well-being in industrial environments, despite existing challenges.",
+    "relevance_note_en": "The paper provides a thorough review and framework for understanding human modeling in industrial applications, which is highly relevant to current trends in robotics and digital transformation.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-07-07",
+    "not_seen_in_latest_crossref_run": true,
+    "id": "10.1016/j.rcim.2025.103043"
+  },
   "10.1016/j.jmsy.2025.06.020": {
     "author_details": [
       {
@@ -453,7 +618,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "last_seen_in_crossref_run": "2026-07-07",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "id": "10.1080/27525783.2025.2565246"
   },
   "10.1016/j.rineng.2025.108087": {
@@ -1909,9 +2074,9 @@
     "corresponding_author_source": "openalex_cross_check",
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Virtual and Physical Prototyping",
+    "crossref_target_issn": "1745-2759",
     "issn": [
       "1745-2759",
       "1745-2767"
@@ -2327,7 +2492,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "last_seen_in_crossref_run": "2026-07-07",
-    "not_seen_in_latest_crossref_run": true,
+    "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/adfm.202511349"
   },
   "10.3390/ma18184370": {
@@ -2967,7 +3132,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "last_seen_in_crossref_run": "2026-07-07",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "id": "10.18523/2617-3808.2025.8.132-137"
   },
   "10.20535/2521-1943.2025.9.3(106).338860": {
@@ -5530,7 +5695,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "last_seen_in_crossref_run": "2026-07-07",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "id": "10.36922/esam025110006"
   },
   "10.1016/j.jmsy.2025.08.013": {
@@ -6429,9 +6594,9 @@
     "corresponding_author_source": "openalex_cross_check",
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Robotics and Computer-Integrated Manufacturing",
+    "crossref_target_issn": "0736-5845",
     "issn": [
       "0736-5845"
     ],
@@ -7239,7 +7404,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "last_seen_in_crossref_run": "2026-07-07",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "id": "10.62306/dwsfqaeeoimatha"
   },
   "10.1016/j.jmsy.2025.05.008": {
@@ -7836,7 +8001,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "last_seen_in_crossref_run": "2026-07-07",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "id": "10.1016/j.rcim.2024.102902"
   },
   "10.1016/j.mfglet.2025.06.191": {
@@ -7984,7 +8149,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "last_seen_in_crossref_run": "2026-07-07",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "id": "10.54691/f83ht194"
   },
   "10.1089/3dp.2023.0325": {
@@ -8748,9 +8913,9 @@
     "corresponding_author_source": "openalex_cross_check",
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "Journal of Intelligent Manufacturing",
-    "crossref_target_issn": "0956-5515",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
     "issn": [
       "0956-5515",
       "1572-8145"
@@ -9393,7 +9558,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "last_seen_in_crossref_run": "2026-07-07",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "id": "10.1126/sciadv.adr7571"
   },
   "10.1016/j.jmsy.2025.10.004": {
@@ -9669,7 +9834,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "last_seen_in_crossref_run": "2026-07-07",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "id": "10.17482/uumfd.1604638"
   },
   "10.1016/j.mfglet.2025.06.147": {
@@ -10691,9 +10856,9 @@
     "corresponding_author_source": "openalex_cross_check",
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Journal of Intelligent Manufacturing",
+    "crossref_target_issn": "0956-5515",
     "issn": [
       "0956-5515",
       "1572-8145"
@@ -11651,9 +11816,9 @@
     "corresponding_author_source": "openalex_cross_check",
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Journal of Manufacturing Systems",
+    "crossref_target_issn": "0278-6125",
     "issn": [
       "0278-6125"
     ],
@@ -13746,7 +13911,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "last_seen_in_crossref_run": "2026-07-07",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "id": "10.22306/asim.v11i1.118"
   },
   "10.1007/s40964-024-00926-0": {
@@ -16354,9 +16519,9 @@
     "corresponding_author_source": "openalex_cross_check",
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Materials & Design",
+    "crossref_target_issn": "0264-1275",
     "issn": [
       "0264-1275"
     ],
@@ -18984,7 +19149,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "last_seen_in_crossref_run": "2026-07-07",
-    "not_seen_in_latest_crossref_run": true,
+    "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.cirpj.2025.09.009"
   },
   "10.1016/j.cirpj.2025.07.001": {
@@ -20662,7 +20827,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "last_seen_in_crossref_run": "2026-07-07",
-    "not_seen_in_latest_crossref_run": true,
+    "not_seen_in_latest_crossref_run": false,
     "id": "10.36922/msam025220045"
   },
   "10.1007/s11223-025-00791-4": {
@@ -23502,7 +23667,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "last_seen_in_crossref_run": "2026-07-07",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "id": "10.1126/sciadv.adv2169"
   },
   "10.1007/s00366-025-02130-2": {
@@ -23627,9 +23792,9 @@
     "corresponding_author_source": "openalex_cross_check",
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "Journal of Manufacturing Processes",
-    "crossref_target_issn": "1526-6125",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
     "issn": [
       "1526-6125"
     ],
@@ -23661,384 +23826,5 @@
     "last_seen_in_crossref_run": "2026-07-07",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.jmapro.2025.04.048"
-  },
-  "10.1016/j.scriptamat.2024.116351": {
-    "author_details": [
-      {
-        "name": "Jia-Ning Zhu",
-        "orcid": "https://orcid.org/0000-0003-0432-5542",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Zhaorui Yan",
-        "orcid": "https://orcid.org/0000-0003-0652-8108",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Yi-Chieh Yang",
-        "orcid": "https://orcid.org/0000-0002-4437-0199",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Zhaoying Ding",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Marcel J.M. Hermans",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Joerg R. Jinschek",
-        "orcid": "https://orcid.org/0000-0003-1574-0899",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Vera Popovich",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "1359-6462"
-    ],
-    "issn_l": "",
-    "publisher": "Elsevier BV",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4402231240",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The research focuses on the creation of functionally graded nickel-titanium alloys using additive manufacturing techniques.\n2. Problem - There is a need for materials with tailored properties that can exhibit specific functionalities based on their composition.\n3. Method - The authors employed laser powder bed fusion to fabricate NiTi materials with a gradient composition by adding nickel powder to equiatomic NiTi powder.\n4. Key Result - The resulting materials displayed location-specific functionalities, including varying superelasticity and phase transformation temperatures due to the compositional gradient.\n5. Takeaway - This study highlights the potential of in-situ additive manufacturing to design advanced multifunctional materials with customized properties.",
-    "relevance_note_en": "The paper presents innovative methods for creating tailored materials, which is highly relevant to current advancements in additive manufacturing.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-07-07",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1016/j.scriptamat.2024.116351"
-  },
-  "10.1002/adma.202417355": {
-    "author_details": [
-      {
-        "name": "Marco Caliari",
-        "orcid": "https://orcid.org/0000-0002-6353-366X",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "POLYMAT and Department of Polymers and Advanced Materials: Physics Chemistry and Technology Faculty of Chemistry University of the Basque Country UPV/EHU  Paseo Manuel de Lardizábal 3 Donostia‐San Sebastián 20018 Spain"
-          },
-          {
-            "name": "Center for Education and Research on Macromolecules (CERM) CESAM Research Unit University of Liege  Sart‐Tilman B6a Liege 4000 Belgium"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "POLYMAT and Department of Polymers and Advanced Materials: Physics Chemistry and Technology Faculty of Chemistry University of the Basque Country UPV/EHU  Paseo Manuel de Lardizábal 3 Donostia‐San Sebastián 20018 Spain",
-          "Center for Education and Research on Macromolecules (CERM) CESAM Research Unit University of Liege  Sart‐Tilman B6a Liege 4000 Belgium"
-        ]
-      },
-      {
-        "name": "Fernando Vidal",
-        "orcid": "https://orcid.org/0000-0002-3027-768X",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "POLYMAT and Department of Polymers and Advanced Materials: Physics Chemistry and Technology Faculty of Chemistry University of the Basque Country UPV/EHU  Paseo Manuel de Lardizábal 3 Donostia‐San Sebastián 20018 Spain"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "POLYMAT and Department of Polymers and Advanced Materials: Physics Chemistry and Technology Faculty of Chemistry University of the Basque Country UPV/EHU  Paseo Manuel de Lardizábal 3 Donostia‐San Sebastián 20018 Spain"
-        ]
-      },
-      {
-        "name": "Daniele Mantione",
-        "orcid": "https://orcid.org/0000-0001-5495-9856",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "POLYMAT and Department of Polymers and Advanced Materials: Physics Chemistry and Technology Faculty of Chemistry University of the Basque Country UPV/EHU  Paseo Manuel de Lardizábal 3 Donostia‐San Sebastián 20018 Spain"
-          },
-          {
-            "name": "Ikerbasque Basque Foundation for Science  Plaza Euskadi 5 Bilbao 48009 Spain"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "POLYMAT and Department of Polymers and Advanced Materials: Physics Chemistry and Technology Faculty of Chemistry University of the Basque Country UPV/EHU  Paseo Manuel de Lardizábal 3 Donostia‐San Sebastián 20018 Spain",
-          "Ikerbasque Basque Foundation for Science  Plaza Euskadi 5 Bilbao 48009 Spain"
-        ]
-      },
-      {
-        "name": "Guillem Seychal",
-        "orcid": "https://orcid.org/0000-0001-7751-8818",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "POLYMAT and Department of Polymers and Advanced Materials: Physics Chemistry and Technology Faculty of Chemistry University of the Basque Country UPV/EHU  Paseo Manuel de Lardizábal 3 Donostia‐San Sebastián 20018 Spain"
-          },
-          {
-            "name": "Laboratory of Polymeric and Composite Materials Center of Innovation and Research in Materials and Polymers (CIRMAP) University of Mons  Place du Parc 23 Mons 7000 Belgium"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "POLYMAT and Department of Polymers and Advanced Materials: Physics Chemistry and Technology Faculty of Chemistry University of the Basque Country UPV/EHU  Paseo Manuel de Lardizábal 3 Donostia‐San Sebastián 20018 Spain",
-          "Laboratory of Polymeric and Composite Materials Center of Innovation and Research in Materials and Polymers (CIRMAP) University of Mons  Place du Parc 23 Mons 7000 Belgium"
-        ]
-      },
-      {
-        "name": "Mariano Campoy‐Quiles",
-        "orcid": "https://orcid.org/0000-0002-8911-640X",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Institute of Materials Science of Barcelona ICMAB‐CSIC  Campus UAB Bellaterra 08193 Spain"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Institute of Materials Science of Barcelona ICMAB‐CSIC  Campus UAB Bellaterra 08193 Spain"
-        ]
-      },
-      {
-        "name": "Lourdes Irusta",
-        "orcid": "https://orcid.org/0000-0003-2079-8016",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "POLYMAT and Department of Polymers and Advanced Materials: Physics Chemistry and Technology Faculty of Chemistry University of the Basque Country UPV/EHU  Paseo Manuel de Lardizábal 3 Donostia‐San Sebastián 20018 Spain"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "POLYMAT and Department of Polymers and Advanced Materials: Physics Chemistry and Technology Faculty of Chemistry University of the Basque Country UPV/EHU  Paseo Manuel de Lardizábal 3 Donostia‐San Sebastián 20018 Spain"
-        ]
-      },
-      {
-        "name": "Mercedes Fernandez",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "POLYMAT and Department of Polymers and Advanced Materials: Physics Chemistry and Technology Faculty of Chemistry University of the Basque Country UPV/EHU  Paseo Manuel de Lardizábal 3 Donostia‐San Sebastián 20018 Spain"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "POLYMAT and Department of Polymers and Advanced Materials: Physics Chemistry and Technology Faculty of Chemistry University of the Basque Country UPV/EHU  Paseo Manuel de Lardizábal 3 Donostia‐San Sebastián 20018 Spain"
-        ]
-      },
-      {
-        "name": "Xabier Lopez de Pariza",
-        "orcid": "https://orcid.org/0000-0002-0758-1712",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "POLYMAT and Department of Polymers and Advanced Materials: Physics Chemistry and Technology Faculty of Chemistry University of the Basque Country UPV/EHU  Paseo Manuel de Lardizábal 3 Donostia‐San Sebastián 20018 Spain"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "POLYMAT and Department of Polymers and Advanced Materials: Physics Chemistry and Technology Faculty of Chemistry University of the Basque Country UPV/EHU  Paseo Manuel de Lardizábal 3 Donostia‐San Sebastián 20018 Spain"
-        ]
-      },
-      {
-        "name": "Thomas Habets",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Center for Education and Research on Macromolecules (CERM) CESAM Research Unit University of Liege  Sart‐Tilman B6a Liege 4000 Belgium"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Center for Education and Research on Macromolecules (CERM) CESAM Research Unit University of Liege  Sart‐Tilman B6a Liege 4000 Belgium"
-        ]
-      },
-      {
-        "name": "Nora Aramburu",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "POLYMAT and Department of Polymers and Advanced Materials: Physics Chemistry and Technology Faculty of Chemistry University of the Basque Country UPV/EHU  Paseo Manuel de Lardizábal 3 Donostia‐San Sebastián 20018 Spain"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "POLYMAT and Department of Polymers and Advanced Materials: Physics Chemistry and Technology Faculty of Chemistry University of the Basque Country UPV/EHU  Paseo Manuel de Lardizábal 3 Donostia‐San Sebastián 20018 Spain"
-        ]
-      },
-      {
-        "name": "Jean‐Marie Raquez",
-        "orcid": "https://orcid.org/0000-0003-1940-7129",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Laboratory of Polymeric and Composite Materials Center of Innovation and Research in Materials and Polymers (CIRMAP) University of Mons  Place du Parc 23 Mons 7000 Belgium"
-          },
-          {
-            "name": "WEL Research Institute  Avenue Pasteur 6 Wavre 1300 Belgium"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Laboratory of Polymeric and Composite Materials Center of Innovation and Research in Materials and Polymers (CIRMAP) University of Mons  Place du Parc 23 Mons 7000 Belgium",
-          "WEL Research Institute  Avenue Pasteur 6 Wavre 1300 Belgium"
-        ]
-      },
-      {
-        "name": "Bruno Grignard",
-        "orcid": "https://orcid.org/0000-0002-6016-3317",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Center for Education and Research on Macromolecules (CERM) CESAM Research Unit University of Liege  Sart‐Tilman B6a Liege 4000 Belgium"
-          },
-          {
-            "name": "FRITCO2T Platform University of Liege  Sart‐Tilman B6a Liege 4000 Belgium"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Center for Education and Research on Macromolecules (CERM) CESAM Research Unit University of Liege  Sart‐Tilman B6a Liege 4000 Belgium",
-          "FRITCO2T Platform University of Liege  Sart‐Tilman B6a Liege 4000 Belgium"
-        ]
-      },
-      {
-        "name": "Alejandro J. Müller",
-        "orcid": "https://orcid.org/0000-0002-0648-438X",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "POLYMAT and Department of Polymers and Advanced Materials: Physics Chemistry and Technology Faculty of Chemistry University of the Basque Country UPV/EHU  Paseo Manuel de Lardizábal 3 Donostia‐San Sebastián 20018 Spain"
-          },
-          {
-            "name": "Ikerbasque Basque Foundation for Science  Plaza Euskadi 5 Bilbao 48009 Spain"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "POLYMAT and Department of Polymers and Advanced Materials: Physics Chemistry and Technology Faculty of Chemistry University of the Basque Country UPV/EHU  Paseo Manuel de Lardizábal 3 Donostia‐San Sebastián 20018 Spain",
-          "Ikerbasque Basque Foundation for Science  Plaza Euskadi 5 Bilbao 48009 Spain"
-        ]
-      },
-      {
-        "name": "Christophe Detrembleur",
-        "orcid": "https://orcid.org/0000-0001-7849-6796",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Center for Education and Research on Macromolecules (CERM) CESAM Research Unit University of Liege  Sart‐Tilman B6a Liege 4000 Belgium"
-          },
-          {
-            "name": "WEL Research Institute  Avenue Pasteur 6 Wavre 1300 Belgium"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Center for Education and Research on Macromolecules (CERM) CESAM Research Unit University of Liege  Sart‐Tilman B6a Liege 4000 Belgium",
-          "WEL Research Institute  Avenue Pasteur 6 Wavre 1300 Belgium"
-        ]
-      },
-      {
-        "name": "Haritz Sardon",
-        "orcid": "https://orcid.org/0000-0002-6268-0916",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "POLYMAT and Department of Polymers and Advanced Materials: Physics Chemistry and Technology Faculty of Chemistry University of the Basque Country UPV/EHU  Paseo Manuel de Lardizábal 3 Donostia‐San Sebastián 20018 Spain"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "POLYMAT and Department of Polymers and Advanced Materials: Physics Chemistry and Technology Faculty of Chemistry University of the Basque Country UPV/EHU  Paseo Manuel de Lardizábal 3 Donostia‐San Sebastián 20018 Spain"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "Advanced Materials",
-    "crossref_target_issn": "0935-9648",
-    "issn": [
-      "0935-9648",
-      "1521-4095"
-    ],
-    "issn_l": "",
-    "publisher": "Wiley",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4408106195",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "High-impact general journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - The study focuses on enhancing 3D printing through fully recyclable pluripotent networks.\n2. Problem - Current additive manufacturing methods are limited by the one-polymer-one-property approach, hindering the production of functional objects.\n3. Method - The authors developed CO2-derived dissociative polymer networks that utilize dynamic reaction-induced phase-separation to create tunable mechanical properties.\n4. Key Result - The resulting materials exhibit a significant range of mechanical properties, with moduli varying from 2 MPa to 3 GPa and stress at break increasing from 2 to 70 MPa.\n5. Takeaway - This research opens new avenues for 3D printing applications, particularly in soft robotics and compliant mechanics.",
-    "relevance_note_en": "The paper presents innovative solutions for improving 3D printing capabilities, addressing key limitations in material properties.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-07-07",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1002/adma.202417355"
   }
 }
