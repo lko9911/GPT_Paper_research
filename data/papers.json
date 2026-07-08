@@ -4637,9 +4637,9 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Zhenlu Xu",
-        "openalex_author_id": "https://openalex.org/A5056473819",
-        "orcid": "https://orcid.org/0009-0007-0580-017X",
+        "name": "Wenjun Xu",
+        "openalex_author_id": "https://openalex.org/A5059180329",
+        "orcid": "https://orcid.org/0000-0001-5370-3437",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -6165,51 +6165,9 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [
-      {
-        "name": "Xianhua Tan",
-        "openalex_author_id": "https://openalex.org/A5110618619",
-        "orcid": "https://orcid.org/0000-0002-6285-6774",
-        "position": "first",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "Central South University",
-            "ror": "https://ror.org/00f1zfq44",
-            "country_code": "CN",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "School of Mechanical and Electrical Engineering, Central South University, Changsha, 410083, China",
-          "Central South University"
-        ]
-      },
-      {
-        "name": "Yongcheng Lin",
-        "openalex_author_id": null,
-        "orcid": null,
-        "position": "middle",
-        "is_corresponding": true,
-        "institutions": [],
-        "raw_affiliation_strings": [
-          "School of Mechanical and Electrical Engineering, Central South University, Changsha, 410083, China"
-        ]
-      },
-      {
-        "name": "Ming-Song Chen",
-        "openalex_author_id": "https://openalex.org/A5102865504",
-        "orcid": "https://orcid.org/0000-0003-3828-4996",
-        "position": "middle",
-        "is_corresponding": true,
-        "institutions": [],
-        "raw_affiliation_strings": [
-          "State Key Laboratory of Precision Manufacturing for Extreme Service Performance, Changsha, 410083, China"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
     "year": 2026,
     "venue": "The International Journal of Advanced Manufacturing Technology",
     "doi": "10.1007/s00170-026-18289-x",
@@ -6229,7 +6187,7 @@
     "issn_l": "",
     "publisher": "Springer Science and Business Media LLC",
     "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
+    "openalex_used_for": null,
     "openalex_crosscheck_work_id": "https://openalex.org/W4410432611",
     "openalex_work_id": "",
     "openalex_source_id": "",
@@ -31805,7 +31763,7 @@
     "last_updated": "2026-07-08",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-07-08",
-    "not_seen_in_latest_crossref_run": false
+    "not_seen_in_latest_crossref_run": true
   },
   {
     "id": "10.1617/s11527-026-03057-w",
@@ -40117,9 +40075,28 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Alaa Elwany",
+        "openalex_author_id": "https://openalex.org/A5008572675",
+        "orcid": "https://orcid.org/0000-0002-9315-1603",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Texas A&M University",
+            "ror": "https://ror.org/01f5ytq51",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Industrial and Systems Engineering, Texas A&M University, College Station, TX 77843, USA"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Additive Manufacturing",
     "doi": "10.1016/j.addma.2026.105276",
@@ -40138,7 +40115,7 @@
     "issn_l": "",
     "publisher": "Elsevier BV",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4415200143",
     "openalex_work_id": "",
     "openalex_source_id": "",
@@ -61130,7 +61107,7 @@
         "name": "Hong Wang",
         "openalex_author_id": null,
         "orcid": "https://orcid.org/0000-0001-6799-1732",
-        "position": "middle",
+        "position": "last",
         "is_corresponding": true,
         "institutions": [
           {
@@ -62381,9 +62358,64 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Tingrui Pan",
+        "openalex_author_id": "https://openalex.org/A5140185959",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Suzhou University of Science and Technology",
+            "ror": "https://ror.org/04en8wb91",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Suzhou Institute for Advanced Research University of Science and Technology of China  Suzhou China"
+        ]
+      },
+      {
+        "name": "Shiwu Zhang",
+        "openalex_author_id": "https://openalex.org/A5061049387",
+        "orcid": "https://orcid.org/0000-0001-7118-7704",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Precision Research (United States)",
+            "ror": "https://ror.org/04y784b90",
+            "country_code": "US",
+            "type": "company"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Institute of Humanoid Robots Department of Precision Machinery and Precision Instrumentation University of Science and Technology of China  Hefei China"
+        ]
+      },
+      {
+        "name": "Mujun Li",
+        "openalex_author_id": "https://openalex.org/A5102971419",
+        "orcid": "https://orcid.org/0000-0001-7488-5364",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Precision Research (United States)",
+            "ror": "https://ror.org/04y784b90",
+            "country_code": "US",
+            "type": "company"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Institute of Humanoid Robots Department of Precision Machinery and Precision Instrumentation University of Science and Technology of China  Hefei China"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Advanced Materials",
     "doi": "10.1002/adma.74018",
@@ -62403,8 +62435,8 @@
     "issn_l": "",
     "publisher": "Wiley",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7167632817",
     "openalex_work_id": "",
     "openalex_source_id": "",
     "venue_metrics": {},
@@ -70436,7 +70468,7 @@
           }
         ],
         "raw_affiliation_strings": [
-          "Department of Mechanical Engineering, Marwadi University, Rajkot–Morbi Road, Rajkot, 360003, India"
+          "Department of Mechanical Engineering, Marwadi University, Rajkot-Morbi Road, Rajkot, 360003, India. amit.sata@marwadieducation.edu.in"
         ]
       },
       {
@@ -70454,7 +70486,7 @@
           }
         ],
         "raw_affiliation_strings": [
-          "Department of Applied Sciences and Humanities, PIET, Faculty of Engineering and Technology, Parul University, Vadodara, India"
+          "Department of Applied Sciences and Humanities, PIET, Faculty of Engineering and Technology, Parul University, Vadodara, India. minal.vadhel42536@paruluniversity.ac.in"
         ]
       }
     ],
@@ -71594,7 +71626,7 @@
         "name": "Luquan Ren",
         "openalex_author_id": null,
         "orcid": null,
-        "position": "last",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -76866,7 +76898,7 @@
         "name": "Erin Lavik",
         "openalex_author_id": "https://openalex.org/A5079335476",
         "orcid": "https://orcid.org/0000-0002-0644-744X",
-        "position": "middle",
+        "position": "last",
         "is_corresponding": true,
         "institutions": [
           {
@@ -82344,8 +82376,8 @@
         ]
       },
       {
-        "name": "L. Ren",
-        "openalex_author_id": "https://openalex.org/A5003419669",
+        "name": "Lei Ren",
+        "openalex_author_id": null,
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -94462,9 +94494,9 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Cheng Zhang",
-        "openalex_author_id": "https://openalex.org/A5100769098",
-        "orcid": "https://orcid.org/0000-0001-8282-9901",
+        "name": "Sichao Liu",
+        "openalex_author_id": "https://openalex.org/A5068371109",
+        "orcid": "https://orcid.org/0000-0002-1909-0507",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -129368,8 +129400,8 @@
         "raw_affiliation_strings": [
           "Institute of Structured and Architected Materials Liaoning Academy of Materials  Shenyang 110167 China",
           "Key Laboratory of Bionic Engineering Ministry of Education Jilin University  Changchun 130022 China",
-          "Institute of Structured and Architected Materials, Liaoning Academy of Materials, Shenyang, 110167 China",
-          "Key Laboratory of Bionic Engineering, Ministry of Education, Jilin University, Changchun, 130022 China"
+          "Key Laboratory of Bionic Engineering, Ministry of Education, Jilin University, Changchun, 130022 China",
+          "Institute of Structured and Architected Materials, Liaoning Academy of Materials, Shenyang, 110167 China"
         ]
       },
       {
@@ -129383,12 +129415,6 @@
             "name": "Jilin University",
             "ror": "https://ror.org/00js3aw79",
             "country_code": "CN",
-            "type": "education"
-          },
-          {
-            "name": "Universität Ulm",
-            "ror": "https://ror.org/032000t02",
-            "country_code": "DE",
             "type": "education"
           },
           {
@@ -129408,7 +129434,9 @@
           "Department of Mechanical, Aerospace, and Civil Engineering University of Manchester  Manchester M13 9PL UK",
           "Institute of Structured and Architected Materials Liaoning Academy of Materials  Shenyang 110167 China",
           "Key Laboratory of Bionic Engineering Ministry of Education Jilin University  Changchun 130022 China",
-          "Institute of Orthopaedic Research and Biomechanics, Ulm University Medical Centre, University of Ulm, 89081 Ulm, Germany"
+          "Department of Mechanical, Aerospace, and Civil Engineering, University of Manchester, Manchester, M13 9PL UK",
+          "Key Laboratory of Bionic Engineering, Ministry of Education, Jilin University, Changchun, 130022 China",
+          "Institute of Structured and Architected Materials, Liaoning Academy of Materials, Shenyang, 110167 China"
         ]
       },
       {
@@ -130960,7 +130988,7 @@
     "last_updated": "2026-07-08",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-07-08",
-    "not_seen_in_latest_crossref_run": true
+    "not_seen_in_latest_crossref_run": false
   },
   {
     "id": "10.1007/s11663-025-03696-4",
@@ -142133,8 +142161,8 @@
     "corresponding_authors": [
       {
         "name": "Xinyu Wang",
-        "openalex_author_id": null,
-        "orcid": null,
+        "openalex_author_id": "https://openalex.org/A5100352846",
+        "orcid": "https://orcid.org/0009-0001-2925-1466",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -196510,10 +196538,10 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Likun Wang",
-        "openalex_author_id": "https://openalex.org/A5100623561",
-        "orcid": "https://orcid.org/0000-0001-5646-9746",
-        "position": "middle",
+        "name": "Zi Wang",
+        "openalex_author_id": "https://openalex.org/A5100338326",
+        "orcid": "https://orcid.org/0000-0001-9081-7185",
+        "position": "first",
         "is_corresponding": true,
         "institutions": [
           {
@@ -208854,10 +208882,10 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Ratnesh Kumar Raj Singh",
-        "openalex_author_id": "https://openalex.org/A5066015004",
-        "orcid": "https://orcid.org/0000-0001-9377-6753",
-        "position": "middle",
+        "name": "Manish Pratap Singh",
+        "openalex_author_id": "https://openalex.org/A5021211339",
+        "orcid": "https://orcid.org/0000-0002-9530-2348",
+        "position": "first",
         "is_corresponding": true,
         "institutions": [
           {
@@ -213669,7 +213697,7 @@
     "last_updated": "2026-07-08",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-07-08",
-    "not_seen_in_latest_crossref_run": true
+    "not_seen_in_latest_crossref_run": false
   },
   {
     "id": "10.1016/j.jmapro.2024.06.017",
@@ -224081,9 +224109,9 @@
         ]
       },
       {
-        "name": "Shan Li",
-        "openalex_author_id": "https://openalex.org/A5021433428",
-        "orcid": "https://orcid.org/0000-0002-1005-3216",
+        "name": "Zihuan Chen",
+        "openalex_author_id": "https://openalex.org/A5024222220",
+        "orcid": null,
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -225205,13 +225233,13 @@
         "raw_affiliation_strings": [
           "Department of Orthopedics, Central Hospital of Dalian University of Technology, Dalian, People’s Republic of China",
           "School of Materials Science and Engineering, Dalian University of Technology, Dalian, People’s Republic of China",
-          "Department of Orthopedics, Central Hospital of Dalian University of Technology, Dalian, People's Republic of China",
-          "School of Materials Science and Engineering, Dalian University of Technology, Dalian, People's Republic of China"
+          "School of Materials Science and Engineering, Dalian University of Technology, Dalian, People's Republic of China",
+          "Department of Orthopedics, Central Hospital of Dalian University of Technology, Dalian, People's Republic of China"
         ]
       },
       {
         "name": "Huanyue Zhang",
-        "openalex_author_id": null,
+        "openalex_author_id": "https://openalex.org/A5014806689",
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -225232,7 +225260,7 @@
         "raw_affiliation_strings": [
           "Department of Orthopedics, Central Hospital of Dalian University of Technology, Dalian, People’s Republic of China",
           "Instrumental Analysis Center, Dalian University of Technology, Dalian, People’s Republic of China",
-          "Department of Orthopedics, Central Hospital of Dalian University of Technology, Dalian, People's Republic of China"
+          "Instrumental Analysis Center, Dalian University of Technology, Dalian, People's Republic of China"
         ]
       },
       {
@@ -252241,9 +252269,9 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Peipei Li",
-        "openalex_author_id": "https://openalex.org/A5100371522",
-        "orcid": "https://orcid.org/0000-0002-9389-9419",
+        "name": "Lingyun Qian",
+        "openalex_author_id": "https://openalex.org/A5106451798",
+        "orcid": null,
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -252273,9 +252301,9 @@
         ]
       },
       {
-        "name": "Bo Li",
-        "openalex_author_id": "https://openalex.org/A5100628411",
-        "orcid": "https://orcid.org/0000-0001-5633-936X",
+        "name": "Ji Zhou",
+        "openalex_author_id": "https://openalex.org/A5063427028",
+        "orcid": "https://orcid.org/0000-0003-1502-2504",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -262781,8 +262809,8 @@
           "Engineering Technology Research Center for Rapid Manufacturing of Shaanxi Province, Xi'an Jiaotong University, Xi'an, People’s Republic of China",
           "School of Mechanical Engineering, Xi'an Jiaotong University, Xi'an, People’s Republic of China",
           "State Key Laboratory for Manufacturing System Engineering, Xi'an Jiaotong University, Xi'an, People’s Republic of China",
-          "School of Mechanical Engineering, Xi'an Jiaotong University, Xi'an, People's Republic of China",
           "State Key Laboratory for Manufacturing System Engineering, Xi'an Jiaotong University, Xi'an, People's Republic of China",
+          "School of Mechanical Engineering, Xi'an Jiaotong University, Xi'an, People's Republic of China",
           "Engineering Technology Research Center for Rapid Manufacturing of Shaanxi Province, Xi'an Jiaotong University, Xi'an, People's Republic of China"
         ]
       },
