@@ -5329,8 +5329,8 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
     "crossref_collection_route": "keyword_query",
@@ -5342,7 +5342,7 @@
     "issn_l": "",
     "publisher": "Elsevier BV",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4416344539",
     "openalex_work_id": "",
     "openalex_source_id": "",
@@ -11902,51 +11902,87 @@
     "author_details": [
       {
         "name": "Seunghwan Lee",
-        "orcid": "",
+        "orcid": "https://orcid.org/0009-0004-1693-426X",
         "position": "first",
         "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
+        "institutions": [
+          {
+            "name": "Department of Mechanical Engineering, Korea Advanced Institute of Science and Technology, Daejeon 34141, Republic of Korea"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering, Korea Advanced Institute of Science and Technology, Daejeon 34141, Republic of Korea"
+        ]
       },
       {
         "name": "Gisoo Lee",
-        "orcid": "",
+        "orcid": "https://orcid.org/0000-0002-4662-4519",
         "position": "additional",
         "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
+        "institutions": [
+          {
+            "name": "Department of Aerospace Engineering, Korea Advanced Institute of Science and Technology, Daejeon 34141, Republic of Korea"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Aerospace Engineering, Korea Advanced Institute of Science and Technology, Daejeon 34141, Republic of Korea"
+        ]
       },
       {
         "name": "Seounghee Yun",
-        "orcid": "",
+        "orcid": "https://orcid.org/0009-0006-9547-6256",
         "position": "additional",
         "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
+        "institutions": [
+          {
+            "name": "Department of Mechanical Engineering, Korea Advanced Institute of Science and Technology, Daejeon 34141, Republic of Korea"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering, Korea Advanced Institute of Science and Technology, Daejeon 34141, Republic of Korea"
+        ]
       },
       {
         "name": "Sumin Lee",
-        "orcid": "",
+        "orcid": "https://orcid.org/0009-0000-0715-7180",
         "position": "additional",
         "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
+        "institutions": [
+          {
+            "name": "Department of Aerospace Engineering, Korea Advanced Institute of Science and Technology, Daejeon 34141, Republic of Korea"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Aerospace Engineering, Korea Advanced Institute of Science and Technology, Daejeon 34141, Republic of Korea"
+        ]
       },
       {
         "name": "Jeonyoon Lee",
         "orcid": "",
         "position": "additional",
         "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
+        "institutions": [
+          {
+            "name": "Department of Aerospace Engineering, Korea Advanced Institute of Science and Technology, Daejeon 34141, Republic of Korea"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Aerospace Engineering, Korea Advanced Institute of Science and Technology, Daejeon 34141, Republic of Korea"
+        ]
       },
       {
         "name": "Hansohl Cho",
-        "orcid": "",
+        "orcid": "https://orcid.org/0000-0001-7914-5402",
         "position": "additional",
         "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
+        "institutions": [
+          {
+            "name": "Department of Mechanical Engineering, Korea Advanced Institute of Science and Technology, Daejeon 34141, Republic of Korea"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering, Korea Advanced Institute of Science and Technology, Daejeon 34141, Republic of Korea"
+        ]
       }
     ],
     "corresponding_author_available": false,
