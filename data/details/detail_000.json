@@ -3582,6 +3582,86 @@
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1080/17452759.2026.2675817"
   },
+  "10.1002/admt.71147": {
+    "author_details": [
+      {
+        "name": "Jochen Mueller",
+        "orcid": "https://orcid.org/0000-0002-4808-2223",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Civil and Systems Engineering Johns Hopkins University Baltimore Maryland USA"
+          },
+          {
+            "name": "Hopkins Extreme Materials Institute Baltimore Maryland USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Civil and Systems Engineering Johns Hopkins University Baltimore Maryland USA",
+          "Hopkins Extreme Materials Institute Baltimore Maryland USA"
+        ]
+      }
+    ],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2365-709X",
+      "2365-709X"
+    ],
+    "issn_l": "",
+    "publisher": "Wiley",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S2765038284",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S2765038284",
+      "issn_l": "2365-709X",
+      "issn": [
+        "2365-709X"
+      ],
+      "type": "journal",
+      "host_organization_name": "Wiley",
+      "works_count": 6302,
+      "cited_by_count": 132117,
+      "two_year_mean_citedness": 4.245998315080033,
+      "h_index": 131,
+      "i10_index": 2825,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 4.245998315080033,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 2",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - Scaling Direct Ink Writing: A Multiscale Materials-Process-System Framework is a 2026 paper from Advanced Materials Technologies about FDM/Material extrusion.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to FDM/Material extrusion.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for FDM/Material extrusion; current relevance score is 7/10.",
+    "relevance_note_en": "Relevant to the tracker through FDM/Material extrusion; score: 7/10.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-07-10",
+    "id": "10.1002/admt.71147"
+  },
   "10.1016/j.rcim.2025.103132": {
     "author_details": [
       {
@@ -9421,7 +9501,7 @@
     "publisher": "Elsevier BV",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7167839485",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2764842179",
     "venue_metrics": {
@@ -17526,8 +17606,8 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
     "crossref_collection_route": "issn_venue_query",
@@ -17540,7 +17620,7 @@
     "issn_l": "",
     "publisher": "Springer Science and Business Media LLC",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7167714726",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S77056576",
@@ -24143,8 +24223,8 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-07-09",
-    "not_seen_in_latest_crossref_run": true,
+    "last_seen_in_crossref_run": "2026-07-10",
+    "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/adhm.71261"
   },
   "10.1617/s11527-026-03057-w": {
@@ -29935,196 +30015,5 @@
     "last_seen_in_crossref_run": "2026-07-10",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.matdes.2026.116257"
-  },
-  "10.1080/17452759.2026.2638103": {
-    "author_details": [
-      {
-        "name": "Yue He",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Chongqing Institute of Green and Intelligent Technology"
-          },
-          {
-            "name": "University of Chinese Academy of Sciences"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Chongqing Institute of Green and Intelligent Technology",
-          "University of Chinese Academy of Sciences"
-        ]
-      },
-      {
-        "name": "Linzhi Wang",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Chongqing Institute of Green and Intelligent Technology"
-          },
-          {
-            "name": "Binzhou Institute of Technology, Weiqiao-UCAS Science and Technology Park"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Chongqing Institute of Green and Intelligent Technology",
-          "Binzhou Institute of Technology, Weiqiao-UCAS Science and Technology Park"
-        ]
-      },
-      {
-        "name": "Qiuju Zheng",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Chongqing Institute of Green and Intelligent Technology"
-          },
-          {
-            "name": "Binzhou Institute of Technology, Weiqiao-UCAS Science and Technology Park"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Chongqing Institute of Green and Intelligent Technology",
-          "Binzhou Institute of Technology, Weiqiao-UCAS Science and Technology Park"
-        ]
-      },
-      {
-        "name": "Ze Wen",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Chongqing Institute of Green and Intelligent Technology"
-          },
-          {
-            "name": "University of Chinese Academy of Sciences"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Chongqing Institute of Green and Intelligent Technology",
-          "University of Chinese Academy of Sciences"
-        ]
-      },
-      {
-        "name": "Ying Gao",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Binzhou Institute of Technology, Weiqiao-UCAS Science and Technology Park"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Binzhou Institute of Technology, Weiqiao-UCAS Science and Technology Park"
-        ]
-      },
-      {
-        "name": "Xiaofei Li",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Binzhou Institute of Technology, Weiqiao-UCAS Science and Technology Park"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Binzhou Institute of Technology, Weiqiao-UCAS Science and Technology Park"
-        ]
-      },
-      {
-        "name": "Jing Li",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Chongqing Institute of Green and Intelligent Technology"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Chongqing Institute of Green and Intelligent Technology"
-        ]
-      },
-      {
-        "name": "Shuqian Fan",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Chongqing Institute of Green and Intelligent Technology"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Chongqing Institute of Green and Intelligent Technology"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "Virtual and Physical Prototyping",
-    "crossref_target_issn": "1745-2759",
-    "issn": [
-      "1745-2759",
-      "1745-2767"
-    ],
-    "issn_l": "",
-    "publisher": "Informa UK Limited",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W7135068336",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S152936027",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S152936027",
-      "issn_l": "1745-2759",
-      "issn": [
-        "1745-2759",
-        "1745-2767"
-      ],
-      "type": "journal",
-      "host_organization_name": "Taylor & Francis",
-      "works_count": 1288,
-      "cited_by_count": 39605,
-      "two_year_mean_citedness": 10.10738255033557,
-      "h_index": 92,
-      "i10_index": 718,
-      "is_core": true,
-      "is_oa": true,
-      "is_in_doaj": true
-    },
-    "journal_quality": {
-      "label": "Core manufacturing journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 10.10738255033557,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 1",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - The study focuses on designing aluminum alloys with exceptional thermal conductivity for additive manufacturing.\n2. Problem - The challenge is to create aluminum alloys that not only exhibit high thermal conductivity but also resist cracking during the manufacturing process.\n3. Method - A multi-property optimization framework called HTCM combines high-throughput CALPHAD and a multi-objective genetic algorithm to optimize alloy properties.\n4. Key Result - The newly developed Al-2.12Ni-0.41Zr-0.22Sc alloy demonstrates a thermal conductivity of 201–207 W/(m·K) and a tensile strength of 323–330 MPa, while another alloy achieves a record thermal conductivity of 215 W/(m·K).\n5. Takeaway - HTCM significantly accelerates the design of high-performance aluminum alloys, providing a more efficient alternative to traditional methods.",
-    "relevance_note_en": "The summary captures the core aspects of the research, including its focus, methodology, and findings.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-07-10",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1080/17452759.2026.2638103"
   }
 }
