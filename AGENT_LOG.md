@@ -1,5 +1,37 @@
 # AGENT_LOG
 
+## 2026-07-10 10:38
+
+### Change Summary
+- Restored the top dropdown to a true Venue selector and kept the large rank board on OpenAlex OA Rank for both normal papers and AML Recommendations.
+
+### Edited Files
+- `assets/app.js`: changed the top `venue-filter` back to venue-name options, added separate `activeRankFilter` state for OA Rank cards, and applied venue and OA Rank filters independently.
+- `index.html`: bumped static asset cache versions.
+- `AGENT_LOG.md`: recorded this dropdown/rank separation.
+
+### Implemented Features
+- The top dropdown now filters by venue/journal again.
+- The large board controls only OpenAlex OA Rank filtering.
+- AML Recommendations mode uses OA Rank from each recommendation record, not a separate AML score rank.
+- AML Recommendations mode can still be filtered by venue using the top dropdown.
+
+### Design Decisions
+- Avoided overloading one `<select>` for both venues and ranks because that made the UI ambiguous.
+- Kept rank selection as a board-level quick filter so the top filter row remains conventional search/filter UI.
+- Removed the temporary AML score-derived rank behavior because the intended rank signal is OA Rank.
+
+### Validation
+- Confirmed `activeRankFilter` is separate from `venue-filter`.
+- Confirmed `git diff --check` passes.
+
+### Remaining Work
+- Confirm deployed GitHub Pages UI after cache refresh.
+
+### Notes / Cautions
+- OpenAI API was not used.
+- Crossref/OpenAlex collection was not run.
+
 ## 2026-07-10 10:33
 
 ### Change Summary
