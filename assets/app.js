@@ -103,7 +103,7 @@ const UI_TEXT = {
     venuesTitle: "OA Rank",
     allVenues: "All ranks",
     amlRanksTitle: "AML Rank",
-    allAmlRanks: "All AML ranks",
+    allAmlRanks: "All ranks",
     papersByField: "Papers by Field",
     curatedPapers: "Curated Papers",
     newPapersKicker: "New this week",
@@ -257,10 +257,10 @@ const RENDER_INCREMENT = 20;
 const FILTER_DEBOUNCE_MS = 120;
 
 const AML_RANK_DEFS = [
-  { key: "AML Rank 1", min: 0.9, label: "AML Rank 1", range: "90-100" },
-  { key: "AML Rank 2", min: 0.8, label: "AML Rank 2", range: "80-89" },
-  { key: "AML Rank 3", min: 0.75, label: "AML Rank 3", range: "75-79" },
-  { key: "AML Rank 4", min: 0, label: "AML Rank 4", range: "<75" },
+  { key: "Rank 1", min: 0.9 },
+  { key: "Rank 2", min: 0.8 },
+  { key: "Rank 3", min: 0.75 },
+  { key: "Rank 4", min: 0 },
 ];
 
 if (localStorage.getItem("preferenceVersion") !== PREFERENCE_VERSION) {
@@ -950,9 +950,9 @@ function syncRankBoardActive() {
 
 function rankDisplayLabel(rank, mode = currentRankMode()) {
   if (mode === "aml") {
-    if (rank === "__no_aml_rank") return "No AML rank";
+    if (rank === "__no_aml_rank") return "No rank";
     const def = AML_RANK_DEFS.find((item) => item.key === rank);
-    return def ? `${def.label} (${def.range})` : rank;
+    return def ? def.key : rank;
   }
   return rank === "__no_rank" ? "No OA rank" : `OA ${rank}`;
 }

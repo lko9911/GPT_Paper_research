@@ -1,5 +1,31 @@
 # AGENT_LOG
 
+## 2026-07-10 10:33
+
+### Change Summary
+- Adjusted AML recommendation rank labels to match the normal paper rank style.
+
+### Edited Files
+- `assets/app.js`: changed AML recommendation rank display from `AML Rank 1 (90-100)` style labels to plain `Rank 1`, `Rank 2`, `Rank 3`, and `Rank 4`.
+- `index.html`: bumped static asset cache versions.
+- `AGENT_LOG.md`: recorded this label correction.
+
+### Implemented Features
+- AML Recommendations still use a separate AML score-derived rank mode, but the visible rank labels now match the existing `Rank 1/2/3/4` convention.
+
+### Design Decisions
+- Kept the AML score thresholds internally, while removing score ranges from the UI labels to avoid making the filter look like a different ranking system.
+
+### Validation
+- `git diff --check`
+
+### Remaining Work
+- Confirm the deployed UI after GitHub Pages cache refresh.
+
+### Notes / Cautions
+- OpenAI API was not used.
+- Crossref/OpenAlex collection was not run.
+
 ## 2026-07-10 10:30
 
 ### Change Summary
