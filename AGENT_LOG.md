@@ -7567,3 +7567,27 @@
 - 이번 작업은 OpenAlex 공식 API만 사용했고, OpenAI API는 호출하지 않았습니다.
 - `OA Rank`는 공식 저널 등급이 아니며 JCR Impact Factor 또는 JCR quartile을 대체하지 않습니다.
 - 적용 결과 active papers 1520편 중 1512편에 rank가 붙었고, 8편은 OpenAlex source 매칭이 없어 rank가 없습니다.
+## 2026-07-10 10:21
+### 변경 요약
+- 상단 검색/필터 영역의 `Venue` 드롭다운을 `OA Rank` 선택 필터로 변경했습니다.
+- 아래 `Core Venues` 보드는 유지하여 저널별 빠른 보기와 OA Rank 필터를 동시에 사용할 수 있게 했습니다.
+
+### 수정/생성한 파일
+- `assets/app.js`: 기존 venue select 옵션을 venue 목록 대신 `OA Rank 1`~`OA Rank 4`, `No OA rank`로 채우고, 필터 조건을 `openalex_venue_rank` 기준으로 변경했습니다.
+- `index.html`: 필터 라벨을 `Venue`에서 `OA Rank`로 변경하고 asset cache version을 `20260710-rank-filter`로 갱신했습니다.
+- `AGENT_LOG.md`: 이번 UI 필터 변경 기록을 추가했습니다.
+
+### 구현한 기능
+- 상단 드롭다운에서 `OA Rank 1`, `OA Rank 2`, `OA Rank 3`, `OA Rank 4`, `No OA rank`를 선택해 논문을 필터링할 수 있습니다.
+- 각 rank 옵션에는 현재 논문 수가 함께 표시됩니다.
+- `Core Venues` 보드 클릭은 더 이상 rank 드롭다운 값을 지우지 않으므로, venue board와 rank filter를 조합해 볼 수 있습니다.
+
+### 설계 결정
+- DOM id/class는 기존 `venue-filter`를 재사용해 CSS/layout 변경을 최소화했습니다.
+- `OA Rank`는 OpenAlex 기반 내부 venue signal이며 공식 Q등급이 아니므로 기존 `Core Venues` 보드와 역할을 분리했습니다.
+
+### 남은 작업
+- 사용자가 원하면 `OA Rank`를 정렬 기준에도 추가할 수 있습니다.
+
+### 주의사항
+- 데이터 파일은 변경하지 않았고 OpenAlex/OpenAI API도 호출하지 않았습니다.

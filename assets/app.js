@@ -100,7 +100,7 @@ const UI_TEXT = {
     searchPlaceholder: "Search keywords, authors, tags, summaries",
     field: "Field",
     tagSubtopic: "Tag/Subtopic",
-    venue: "Venue",
+    venue: "OA Rank",
     summaryProvider: "Summary type",
     newness: "Added",
     allNewness: "All",
@@ -375,7 +375,6 @@ async function init() {
     el.addEventListener("input", () => {
       if (el === els.newness) state.newnessTouched = true;
       if (el === els.category || el === els.tag) clearActiveSubtopics();
-      if (el === els.venue) clearVenueQuickFilters();
       if (el !== els.sort) state.activeAmlRecommendations = false;
       if (el !== els.newness && el !== els.sort) releaseDefaultNewnessFilter();
       if (el === els.search) {
@@ -387,7 +386,6 @@ async function init() {
     el.addEventListener("change", () => {
       if (el === els.newness) state.newnessTouched = true;
       if (el === els.category || el === els.tag) clearActiveSubtopics();
-      if (el === els.venue) clearVenueQuickFilters();
       if (el !== els.sort) state.activeAmlRecommendations = false;
       if (el !== els.newness && el !== els.sort) releaseDefaultNewnessFilter();
       applyFilters();
@@ -563,7 +561,7 @@ function buildFiltersReset() {
 function buildFilters() {
   const fields = new Set();
   const tags = new Set();
-  const venues = new Set();
+  const venueRanks = new Map();
   const years = new Set();
 
   state.papers.forEach((paper) => {
@@ -571,7 +569,8 @@ function buildFilters() {
     fields.add(runtime.field);
     runtime.visibleTags.forEach((tag) => tags.add(tag));
     runtime.subtopics.forEach((subtopic) => tags.add(canonicalTopicLabel(subtopic)));
-    venues.add(runtime.venue);
+    const rankKey = paper.openalex_venue_rank || "__no_rank";
+    venueRanks.set(rankKey, (venueRanks.get(rankKey) || 0) + 1);
     if (paper.year) years.add(String(paper.year));
   });
 
@@ -591,9 +590,13 @@ function buildFilters() {
     els.tag.append(new Option(displayLabel(tag), tag));
   });
 
-  [...venues].sort((a, b) => a.localeCompare(b, "ko")).forEach((venue) => {
-    els.venue.append(new Option(venue, venue));
+  ["Rank 1", "Rank 2", "Rank 3", "Rank 4"].forEach((rank) => {
+    const count = venueRanks.get(rank) || 0;
+    if (count) els.venue.append(new Option(`OA ${rank} (${count})`, rank));
   });
+  if (venueRanks.has("__no_rank")) {
+    els.venue.append(new Option(`No OA rank (${venueRanks.get("__no_rank")})`, "__no_rank"));
+  }
 
   [...years]
     .sort((a, b) => Number(b) - Number(a))
@@ -805,10 +808,8 @@ function renderVenueBoard() {
       state.activeVenueGroup = button.dataset.boardVenueGroup || "";
       state.activeTargetVenue = isPriorityVenue(venue) ? venue : "";
       state.activeAmlRecommendations = false;
-      els.venue.value = venue && !isPriorityVenue(venue) ? venue : "";
       if (!venue) {
         state.activeTargetVenue = "";
-        els.venue.value = "";
       }
       els.venueBoard.querySelectorAll(".venue-card").forEach((card) => {
         const sameVenue = card.dataset.boardVenue === venue;
@@ -1143,7 +1144,7 @@ function applyFilters() {
   const query = normalize(els.search.value);
   const category = els.category.value;
   const tag = els.tag.value;
-  const venue = els.venue.value;
+  const venueRank = els.venue.value;
   const summaryProvider = els.summaryProvider ? els.summaryProvider.value : "";
   const newness = els.newness ? els.newness.value : "";
   const year = els.year.value;
@@ -1164,7 +1165,9 @@ function applyFilters() {
     const matchesQuery = !query || runtime.searchText.includes(query);
     const matchesCategory = !category || paperField === category;
     const matchesTag = !tag || runtime.canonicalTagSet.has(canonicalTopicLabel(tag));
-    const matchesVenue = !venue || paperVenue === venue;
+    const matchesVenueRank =
+      !venueRank ||
+      (venueRank === "__no_rank" ? !paper.openalex_venue_rank : paper.openalex_venue_rank === venueRank);
     const matchesTarget = !state.activeTargetVenue || matchesTargetVenue(paperVenue, state.activeTargetVenue);
     const matchesVenueGroup = !state.activeVenueGroup || isOtherVenuePaper(paper);
     const matchesSubtopic =
@@ -1177,7 +1180,7 @@ function applyFilters() {
       matchesQuery &&
       matchesCategory &&
       matchesTag &&
-      matchesVenue &&
+      matchesVenueRank &&
       matchesTarget &&
       matchesVenueGroup &&
       matchesSubtopic &&
