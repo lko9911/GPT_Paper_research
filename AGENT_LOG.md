@@ -1,5 +1,36 @@
 # AGENT_LOG
 
+## 2026-07-10 10:30
+
+### Change Summary
+- Added a separate `AML Rank` mode for the rank filter and rank board when AML Recommendations are active.
+- Kept general paper filtering on OpenAlex `OA Rank`, while AML recommendation filtering now uses AML score bands.
+
+### Edited Files
+- `assets/app.js`: added AML score rank bands, dynamic rank-filter mode switching, AML rank board rendering, and AML rank filtering logic.
+- `index.html`: bumped static asset cache versions to force browsers to load the updated frontend.
+- `AGENT_LOG.md`: recorded this AML rank mode update.
+
+### Implemented Features
+- Clicking `AML Recommendations` changes the rank dropdown and large board from `OA Rank` to `AML Rank`.
+- AML recommendations can be filtered by score-derived ranks: `AML Rank 1` 90-100, `AML Rank 2` 80-89, `AML Rank 3` 75-79, and `AML Rank 4` below 75.
+- Leaving AML mode restores the normal OpenAlex `OA Rank` filter.
+
+### Design Decisions
+- AML rank is derived only from `aml_score`; it is not mixed with OpenAlex venue rank.
+- The current public AML threshold still controls which recommendations are visible, so rank counts reflect only visible AML recommendation records.
+
+### Validation
+- Current AML recommendation distribution: `AML Rank 2` 419 papers, `AML Rank 3` 318 papers.
+- `git diff --check`
+
+### Remaining Work
+- Confirm the deployed GitHub Pages UI after cache refresh.
+
+### Notes / Cautions
+- OpenAI API was not used.
+- Crossref/OpenAlex collection was not run.
+
 ## 2026-07-10 10:24
 
 ### Change Summary

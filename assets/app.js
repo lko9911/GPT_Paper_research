@@ -86,6 +86,7 @@ const UI_TEXT = {
     field: "Field",
     tagSubtopic: "Tag/Subtopic",
     venue: "OA Rank",
+    amlRank: "AML Rank",
     summaryProvider: "Summary type",
     newness: "Added",
     allNewness: "All",
@@ -101,6 +102,8 @@ const UI_TEXT = {
     resetFilters: "Reset",
     venuesTitle: "OA Rank",
     allVenues: "All ranks",
+    amlRanksTitle: "AML Rank",
+    allAmlRanks: "All AML ranks",
     papersByField: "Papers by Field",
     curatedPapers: "Curated Papers",
     newPapersKicker: "New this week",
@@ -253,6 +256,13 @@ const INITIAL_RENDER_LIMIT = 20;
 const RENDER_INCREMENT = 20;
 const FILTER_DEBOUNCE_MS = 120;
 
+const AML_RANK_DEFS = [
+  { key: "AML Rank 1", min: 0.9, label: "AML Rank 1", range: "90-100" },
+  { key: "AML Rank 2", min: 0.8, label: "AML Rank 2", range: "80-89" },
+  { key: "AML Rank 3", min: 0.75, label: "AML Rank 3", range: "75-79" },
+  { key: "AML Rank 4", min: 0, label: "AML Rank 4", range: "<75" },
+];
+
 if (localStorage.getItem("preferenceVersion") !== PREFERENCE_VERSION) {
   localStorage.setItem("theme", DEFAULT_THEME);
   localStorage.setItem("preferenceVersion", PREFERENCE_VERSION);
@@ -356,10 +366,12 @@ async function init() {
   [els.search, els.category, els.tag, els.venue, els.summaryProvider, els.newness, els.year, els.sort].forEach((el) => {
     if (!el) return;
     el.addEventListener("input", () => {
+      const wasAmlMode = state.activeAmlRecommendations;
       if (el === els.newness) state.newnessTouched = true;
       if (el === els.category || el === els.tag) clearActiveSubtopics();
       if (el === els.venue) syncRankBoardActive();
-      if (el !== els.sort) state.activeAmlRecommendations = false;
+      if (el !== els.sort && !(wasAmlMode && el === els.venue)) state.activeAmlRecommendations = false;
+      if (wasAmlMode && !state.activeAmlRecommendations) switchRankFilterMode("oa", false);
       if (el !== els.newness && el !== els.sort) releaseDefaultNewnessFilter();
       if (el === els.search) {
         scheduleApplyFilters();
@@ -368,10 +380,12 @@ async function init() {
       }
     });
     el.addEventListener("change", () => {
+      const wasAmlMode = state.activeAmlRecommendations;
       if (el === els.newness) state.newnessTouched = true;
       if (el === els.category || el === els.tag) clearActiveSubtopics();
       if (el === els.venue) syncRankBoardActive();
-      if (el !== els.sort) state.activeAmlRecommendations = false;
+      if (el !== els.sort && !(wasAmlMode && el === els.venue)) state.activeAmlRecommendations = false;
+      if (wasAmlMode && !state.activeAmlRecommendations) switchRankFilterMode("oa", false);
       if (el !== els.newness && el !== els.sort) releaseDefaultNewnessFilter();
       applyFilters();
     });
@@ -533,12 +547,12 @@ function applyStaticLanguage() {
   if (els.search) {
     els.search.placeholder = t("searchPlaceholder");
   }
+  updateRankFilterLabels(currentRankMode());
 }
 
 function buildFiltersReset() {
   resetSelect(els.category, t("all"));
   resetSelect(els.tag, t("all"));
-  resetSelect(els.venue, t("all"));
   resetSelect(els.year, t("all"));
   buildFilters();
 }
@@ -546,7 +560,6 @@ function buildFiltersReset() {
 function buildFilters() {
   const fields = new Set();
   const tags = new Set();
-  const venueRanks = new Map();
   const years = new Set();
 
   state.papers.forEach((paper) => {
@@ -554,8 +567,6 @@ function buildFilters() {
     fields.add(runtime.field);
     runtime.visibleTags.forEach((tag) => tags.add(tag));
     runtime.subtopics.forEach((subtopic) => tags.add(canonicalTopicLabel(subtopic)));
-    const rankKey = paper.openalex_venue_rank || "__no_rank";
-    venueRanks.set(rankKey, (venueRanks.get(rankKey) || 0) + 1);
     if (paper.year) years.add(String(paper.year));
   });
 
@@ -575,13 +586,7 @@ function buildFilters() {
     els.tag.append(new Option(displayLabel(tag), tag));
   });
 
-  ["Rank 1", "Rank 2", "Rank 3", "Rank 4"].forEach((rank) => {
-    const count = venueRanks.get(rank) || 0;
-    if (count) els.venue.append(new Option(`OA ${rank} (${count})`, rank));
-  });
-  if (venueRanks.has("__no_rank")) {
-    els.venue.append(new Option(`No OA rank (${venueRanks.get("__no_rank")})`, "__no_rank"));
-  }
+  populateRankFilterOptions("oa");
 
   [...years]
     .sort((a, b) => Number(b) - Number(a))
@@ -640,6 +645,7 @@ function buildSideNav() {
         clearActiveSubtopics();
       }
       state.activeAmlRecommendations = false;
+      switchRankFilterMode("oa", false);
       releaseDefaultNewnessFilter();
       syncSideNavActive();
       applyFilters();
@@ -659,7 +665,7 @@ function showAmlRecommendations() {
   if (els.newness) els.newness.value = "";
   if (els.year) els.year.value = "";
   releaseDefaultNewnessFilter();
-  clearVenueQuickFilters();
+  switchRankFilterMode("aml", false);
   syncSideNavActive();
   applyFilters();
   scrollToPapers();
@@ -754,14 +760,17 @@ function syncSideNavActive() {
 }
 
 function renderVenueBoard() {
-  const rankEntries = rankCountEntries();
+  const mode = currentRankMode();
+  const rankEntries = rankCountEntries(mode);
+  const allLabel = mode === "aml" ? t("allAmlRanks") : t("allVenues");
+  const total = mode === "aml" ? amlVisibleRecommendations().length : state.papers.length;
 
   const mainCards = [
     `<button class="venue-card is-all is-active" type="button" data-board-rank="">
-      <strong>${escapeHtml(t("allVenues"))}</strong>
-      <span>${state.papers.length} ${escapeHtml(t("papers"))}</span>
+      <strong>${escapeHtml(allLabel)}</strong>
+      <span>${total} ${escapeHtml(t("papers"))}</span>
     </button>`,
-    ...rankEntries.map(([rank, count]) => rankCard(rank, count)),
+    ...rankEntries.map(([rank, count]) => rankCard(rank, count, mode)),
   ].join("");
 
   els.venueBoard.innerHTML = `
@@ -771,7 +780,6 @@ function renderVenueBoard() {
   els.venueBoard.querySelectorAll("[data-board-rank]").forEach((button) => {
     button.addEventListener("click", () => {
       const rank = button.dataset.boardRank || "";
-      state.activeAmlRecommendations = false;
       if (els.venue) els.venue.value = rank;
       els.venueBoard.querySelectorAll(".venue-card").forEach((card) => {
         card.classList.toggle("is-active", (card.dataset.boardRank || "") === rank);
@@ -783,19 +791,75 @@ function renderVenueBoard() {
   });
 }
 
-function rankCountEntries() {
+function currentRankMode() {
+  return state.activeAmlRecommendations ? "aml" : "oa";
+}
+
+function switchRankFilterMode(mode, preserveSelection = true) {
+  const previous = preserveSelection && els.venue ? els.venue.value : "";
+  populateRankFilterOptions(mode);
+  if (previous && els.venue && [...els.venue.options].some((option) => option.value === previous)) {
+    els.venue.value = previous;
+  }
+  updateRankFilterLabels(mode);
+  renderVenueBoard();
+  syncRankBoardActive();
+}
+
+function populateRankFilterOptions(mode) {
+  if (!els.venue) return;
+  resetSelect(els.venue, mode === "aml" ? t("allAmlRanks") : t("all"));
+  rankCountEntries(mode).forEach(([rank, count]) => {
+    els.venue.append(new Option(rankOptionLabel(rank, count, mode), rank));
+  });
+}
+
+function updateRankFilterLabels(mode) {
+  setText(".venue-filter > span", mode === "aml" ? t("amlRank") : t("venue"));
+  setText(".venue-section-head .section-kicker", mode === "aml" ? "AML Signal" : "Venue Signal");
+  setText(".venue-section-head h2", mode === "aml" ? t("amlRanksTitle") : t("venuesTitle"));
+}
+
+function rankCountEntries(mode = currentRankMode()) {
   const counts = new Map();
-  state.papers.forEach((paper) => {
-    const rank = paper.openalex_venue_rank || "__no_rank";
+  const source = mode === "aml" ? amlRecommendedPapersForList() : state.papers;
+  source.forEach((paper) => {
+    const rank = rankKeyForPaper(paper, mode);
     counts.set(rank, (counts.get(rank) || 0) + 1);
   });
-  const entries = ["Rank 1", "Rank 2", "Rank 3", "Rank 4"]
+  const order = mode === "aml" ? AML_RANK_DEFS.map((item) => item.key) : ["Rank 1", "Rank 2", "Rank 3", "Rank 4"];
+  const entries = order
     .map((rank) => [rank, counts.get(rank) || 0])
     .filter(([, count]) => count > 0);
-  if (counts.get("__no_rank")) {
+  if (mode === "aml" && counts.get("__no_aml_rank")) {
+    entries.push(["__no_aml_rank", counts.get("__no_aml_rank")]);
+  } else if (counts.get("__no_rank")) {
     entries.push(["__no_rank", counts.get("__no_rank")]);
   }
   return entries;
+}
+
+function rankKeyForPaper(paper, mode = currentRankMode()) {
+  if (mode === "aml") return amlRankForScore(paper && paper.aml_score);
+  return (paper && paper.openalex_venue_rank) || "__no_rank";
+}
+
+function normalizedAmlScore(score) {
+  const numeric = Number(score || 0);
+  if (!Number.isFinite(numeric) || numeric <= 0) return 0;
+  return numeric > 1 ? numeric / 100 : numeric;
+}
+
+function amlRankForScore(score) {
+  const normalized = normalizedAmlScore(score);
+  if (!normalized) return "__no_aml_rank";
+  const matched = AML_RANK_DEFS.find((item) => normalized >= item.min);
+  return matched ? matched.key : "__no_aml_rank";
+}
+
+function rankOptionLabel(rank, count, mode = currentRankMode()) {
+  const label = rankDisplayLabel(rank, mode);
+  return `${label} (${count})`;
 }
 
 async function loadAmlRecommendations() {
@@ -813,8 +877,8 @@ async function loadAmlRecommendations() {
 function amlVisibleRecommendations() {
   return (state.amlRecommendations || [])
     .filter((item) => ["High", "Possible", "Watch"].includes(item.recommendation_level))
-    .filter((item) => Number(item.aml_score || 0) >= AML_PUBLIC_SCORE_THRESHOLD)
-    .sort((a, b) => Number(b.aml_score || 0) - Number(a.aml_score || 0));
+    .filter((item) => normalizedAmlScore(item.aml_score) >= AML_PUBLIC_SCORE_THRESHOLD)
+    .sort((a, b) => normalizedAmlScore(b.aml_score) - normalizedAmlScore(a.aml_score));
 }
 
 function amlRecommendedPapersForList() {
@@ -884,9 +948,20 @@ function syncRankBoardActive() {
   });
 }
 
-function rankCard(rank, count) {
-  const label = rank === "__no_rank" ? "No OA rank" : `OA ${rank}`;
-  const chip = rank === "__no_rank" ? "unmatched" : "OpenAlex";
+function rankDisplayLabel(rank, mode = currentRankMode()) {
+  if (mode === "aml") {
+    if (rank === "__no_aml_rank") return "No AML rank";
+    const def = AML_RANK_DEFS.find((item) => item.key === rank);
+    return def ? `${def.label} (${def.range})` : rank;
+  }
+  return rank === "__no_rank" ? "No OA rank" : `OA ${rank}`;
+}
+
+function rankCard(rank, count, mode = currentRankMode()) {
+  const label = rankDisplayLabel(rank, mode);
+  const chip = mode === "aml"
+    ? "AML score"
+    : rank === "__no_rank" ? "unmatched" : "OpenAlex";
   return `<button class="venue-card" type="button" data-board-rank="${escapeAttribute(rank)}">
     <strong>${escapeHtml(label)}</strong>
     <span><b>${count}</b> ${escapeHtml(t("papers"))}</span>
@@ -1114,7 +1189,8 @@ function applyFilters() {
   const query = normalize(els.search.value);
   const category = els.category.value;
   const tag = els.tag.value;
-  const venueRank = els.venue.value;
+  const selectedRank = els.venue.value;
+  const rankMode = currentRankMode();
   const summaryProvider = els.summaryProvider ? els.summaryProvider.value : "";
   const newness = els.newness ? els.newness.value : "";
   const year = els.year.value;
@@ -1134,9 +1210,7 @@ function applyFilters() {
     const matchesQuery = !query || runtime.searchText.includes(query);
     const matchesCategory = !category || paperField === category;
     const matchesTag = !tag || runtime.canonicalTagSet.has(canonicalTopicLabel(tag));
-    const matchesVenueRank =
-      !venueRank ||
-      (venueRank === "__no_rank" ? !paper.openalex_venue_rank : paper.openalex_venue_rank === venueRank);
+    const matchesVenueRank = !selectedRank || rankKeyForPaper(paper, rankMode) === selectedRank;
     const matchesSubtopic =
       !selectedSubtopics.length ||
       selectedSubtopics.some((item) => paperField === item.field && paperMatchesSidebarSubtopic(paper, item.field, item.subtopic));
@@ -1203,6 +1277,7 @@ function resetFilters() {
   if (els.sort) els.sort.value = "newest";
   clearActiveSubtopics();
   state.activeAmlRecommendations = false;
+  switchRankFilterMode("oa", false);
   setDefaultNewnessFilter();
   clearVenueQuickFilters();
   syncSideNavActive();
@@ -1348,6 +1423,7 @@ function renderPaperRow(paper) {
     button.addEventListener("click", () => {
       els.tag.value = button.dataset.tagFilter;
       state.activeAmlRecommendations = false;
+      switchRankFilterMode("oa", false);
       releaseDefaultNewnessFilter();
       applyFilters();
     });
@@ -1358,7 +1434,7 @@ function renderPaperRow(paper) {
 
 function renderScoreBadge(paper) {
   if (paper && paper.is_aml_recommendation) {
-    const score = Number(paper.aml_score || 0);
+    const score = normalizedAmlScore(paper.aml_score);
     const label = Number.isFinite(score) && score > 0 ? `${Math.round(score * 100)}/100` : "-";
     return `<span class="relevance-badge aml-score-badge">${escapeHtml(t("amlScoreLabel"))} ${escapeHtml(label)}</span>`;
   }
@@ -1585,7 +1661,7 @@ function renderAmlSummaryBlock(paper) {
   const labels = UI_TEXT.en.summaryQuestions;
   const tags = representativeTags(paper).map((tag) => displayLabel(tag));
   const tagPhrase = formatEnglishList(tags) || "the AML profile";
-  const score = Number(paper.aml_score || 0);
+  const score = normalizedAmlScore(paper.aml_score);
   const scoreText = Number.isFinite(score) && score > 0 ? `${Math.round(score * 100)}/100` : "not scored";
   const sections = [
     {
