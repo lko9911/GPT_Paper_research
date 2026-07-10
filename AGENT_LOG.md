@@ -1,5 +1,35 @@
 # AGENT_LOG
 
+## 2026-07-10 10:24
+
+### Change Summary
+- Replaced the large `Venues / Core Venues` board with an OpenAlex-based `OA Rank` board.
+- Synced the top `OA Rank` dropdown with the large rank board cards.
+
+### Edited Files
+- `assets/app.js`: changed venue-board rendering from journal-name cards to `All ranks`, `OA Rank 1-4`, and `No OA rank` cards; clicking a card now applies the `openalex_venue_rank` filter.
+- `index.html`: changed the board section label to `Venue Signal / OA Rank` and bumped asset cache versions.
+- `AGENT_LOG.md`: recorded this UI filter-board update.
+
+### Implemented Features
+- The large board now filters papers by OpenAlex venue rank instead of core venue names.
+- Dropdown selection and rank-card selection stay visually synchronized.
+
+### Design Decisions
+- Reused the existing `venue-board` layout classes to avoid unnecessary UI churn.
+- Kept the change frontend-only; no paper data, private data, or collection logic was changed.
+
+### Validation
+- Confirmed the static `Core Venues` label is removed from `index.html` and `assets/app.js`.
+- `git diff --check`
+
+### Remaining Work
+- Verify the deployed GitHub Pages site after the cache-busted assets are published.
+
+### Notes / Cautions
+- OpenAI API was not used.
+- Crossref/OpenAlex collection was not run.
+
 ## 2026-06-25 12:06
 
 ### Change Summary

@@ -58,21 +58,6 @@ const CARD_TAG_PRIORITY = new Map([
   ["Composites/Materials", 3],
 ]);
 
-const TARGET_VENUES = [
-  "Nature",
-  "Nature Communications",
-  "Nature Materials",
-  "Nature Reviews Materials",
-  "Nature Synthesis",
-  "Science",
-  "Science Advances",
-  "Science Robotics",
-  "Materials Horizons",
-  "Additive Manufacturing",
-  "ACS Applied Materials & Interfaces",
-  "Materials & Design",
-];
-
 const UI_TEXT = {
 
   en: {
@@ -114,8 +99,8 @@ const UI_TEXT = {
     relevance: "Relevance",
     title: "Title",
     resetFilters: "Reset",
-    venuesTitle: "Venues",
-    allVenues: "All venues",
+    venuesTitle: "OA Rank",
+    allVenues: "All ranks",
     papersByField: "Papers by Field",
     curatedPapers: "Curated Papers",
     newPapersKicker: "New this week",
@@ -285,8 +270,6 @@ const state = {
   updateStatus: null,
   filtered: [],
   renderLimit: INITIAL_RENDER_LIMIT,
-  activeTargetVenue: "",
-  activeVenueGroup: "",
   activeSubtopic: "",
   activeSubtopics: new Set(),
   activeAmlRecommendations: false,
@@ -375,6 +358,7 @@ async function init() {
     el.addEventListener("input", () => {
       if (el === els.newness) state.newnessTouched = true;
       if (el === els.category || el === els.tag) clearActiveSubtopics();
+      if (el === els.venue) syncRankBoardActive();
       if (el !== els.sort) state.activeAmlRecommendations = false;
       if (el !== els.newness && el !== els.sort) releaseDefaultNewnessFilter();
       if (el === els.search) {
@@ -386,6 +370,7 @@ async function init() {
     el.addEventListener("change", () => {
       if (el === els.newness) state.newnessTouched = true;
       if (el === els.category || el === els.tag) clearActiveSubtopics();
+      if (el === els.venue) syncRankBoardActive();
       if (el !== els.sort) state.activeAmlRecommendations = false;
       if (el !== els.newness && el !== els.sort) releaseDefaultNewnessFilter();
       applyFilters();
@@ -666,8 +651,6 @@ function buildSideNav() {
 function showAmlRecommendations() {
   state.activeAmlRecommendations = true;
   clearActiveSubtopics();
-  state.activeTargetVenue = "";
-  state.activeVenueGroup = "";
   if (els.search) els.search.value = "";
   if (els.category) els.category.value = "";
   if (els.tag) els.tag.value = "";
@@ -770,57 +753,49 @@ function syncSideNavActive() {
   });
 }
 
-function venueCountEntries() {
-  const counts = new Map();
-  state.papers.forEach((paper) => {
-    const venue = runtimeForPaper(paper).venue;
-    counts.set(venue, (counts.get(venue) || 0) + 1);
-  });
-  return [...counts.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "ko"));
-}
-
 function renderVenueBoard() {
-  const entries = venueCountEntries();
-  const priorityEntries = TARGET_VENUES.map((target) => {
-    const matched = entries.find(([venue]) => matchesTargetVenue(venue, target));
-    return matched || [target, 0];
-  }).filter(([, count]) => count > 0);
-  const visibleVenueKeys = new Set(priorityEntries.map(([venue]) => normalizeVenueKey(venue)));
-  const hiddenEntries = entries.filter(([venue]) => !visibleVenueKeys.has(normalizeVenueKey(venue)));
-  const hiddenPaperCount = hiddenEntries.reduce((sum, [, count]) => sum + count, 0);
+  const rankEntries = rankCountEntries();
 
   const mainCards = [
-    `<button class="venue-card is-all is-active" type="button" data-board-venue="">
+    `<button class="venue-card is-all is-active" type="button" data-board-rank="">
       <strong>${escapeHtml(t("allVenues"))}</strong>
       <span>${state.papers.length} ${escapeHtml(t("papers"))}</span>
     </button>`,
-    ...priorityEntries.map(([venue, count]) => venueCard(venue, count, t("priority"))),
-    hiddenPaperCount ? otherVenueCard(hiddenPaperCount) : "",
+    ...rankEntries.map(([rank, count]) => rankCard(rank, count)),
   ].join("");
 
   els.venueBoard.innerHTML = `
     <div class="venue-featured">${mainCards}</div>
   `;
 
-  els.venueBoard.querySelectorAll("[data-board-venue]").forEach((button) => {
+  els.venueBoard.querySelectorAll("[data-board-rank]").forEach((button) => {
     button.addEventListener("click", () => {
-      const venue = button.dataset.boardVenue;
-      state.activeVenueGroup = button.dataset.boardVenueGroup || "";
-      state.activeTargetVenue = isPriorityVenue(venue) ? venue : "";
+      const rank = button.dataset.boardRank || "";
       state.activeAmlRecommendations = false;
-      if (!venue) {
-        state.activeTargetVenue = "";
-      }
+      if (els.venue) els.venue.value = rank;
       els.venueBoard.querySelectorAll(".venue-card").forEach((card) => {
-        const sameVenue = card.dataset.boardVenue === venue;
-        const sameGroup = (card.dataset.boardVenueGroup || "") === state.activeVenueGroup;
-        card.classList.toggle("is-active", sameVenue && sameGroup);
+        card.classList.toggle("is-active", (card.dataset.boardRank || "") === rank);
       });
       releaseDefaultNewnessFilter();
       applyFilters();
       scrollToPapers();
     });
   });
+}
+
+function rankCountEntries() {
+  const counts = new Map();
+  state.papers.forEach((paper) => {
+    const rank = paper.openalex_venue_rank || "__no_rank";
+    counts.set(rank, (counts.get(rank) || 0) + 1);
+  });
+  const entries = ["Rank 1", "Rank 2", "Rank 3", "Rank 4"]
+    .map((rank) => [rank, counts.get(rank) || 0])
+    .filter(([, count]) => count > 0);
+  if (counts.get("__no_rank")) {
+    entries.push(["__no_rank", counts.get("__no_rank")]);
+  }
+  return entries;
 }
 
 async function loadAmlRecommendations() {
@@ -899,11 +874,24 @@ function scheduleApplyFilters() {
 }
 
 function clearVenueQuickFilters() {
-  state.activeTargetVenue = "";
-  state.activeVenueGroup = "";
+  syncRankBoardActive();
+}
+
+function syncRankBoardActive() {
+  const selectedRank = els.venue ? els.venue.value : "";
   els.venueBoard.querySelectorAll(".venue-card").forEach((card) => {
-    card.classList.toggle("is-active", !card.dataset.boardVenue && !card.dataset.boardVenueGroup);
+    card.classList.toggle("is-active", (card.dataset.boardRank || "") === selectedRank);
   });
+}
+
+function rankCard(rank, count) {
+  const label = rank === "__no_rank" ? "No OA rank" : `OA ${rank}`;
+  const chip = rank === "__no_rank" ? "unmatched" : "OpenAlex";
+  return `<button class="venue-card" type="button" data-board-rank="${escapeAttribute(rank)}">
+    <strong>${escapeHtml(label)}</strong>
+    <span><b>${count}</b> ${escapeHtml(t("papers"))}</span>
+    <em class="venue-chip">${escapeHtml(chip)}</em>
+  </button>`;
 }
 
 function isNonJournalVenue(venue) {
@@ -920,24 +908,6 @@ function isNonJournalVenue(venue) {
     "proceedings",
     "repository",
   ]);
-}
-
-function venueCard(venue, count, label = "") {
-  const badge = label ? `<em class="venue-chip">${escapeHtml(label)}</em>` : "";
-  const displayVenue = displayText(shortVenue(venue));
-  return `<button class="venue-card" type="button" data-board-venue="${escapeAttribute(displayText(venue))}">
-    <strong>${escapeHtml(displayVenue)}</strong>
-    <span><b>${count}</b> ${escapeHtml(t("papers"))}</span>
-    ${badge}
-  </button>`;
-}
-
-function otherVenueCard(paperCount) {
-  return `<button class="venue-card venue-card-muted" type="button" data-board-venue="" data-board-venue-group="other">
-    <strong>${escapeHtml(t("others"))}</strong>
-    <span><b>${paperCount}</b> ${escapeHtml(t("papers"))}</span>
-    <em class="venue-chip">${escapeHtml(t("lowCountVenue"))}</em>
-  </button>`;
 }
 
 function updateStats() {
@@ -1159,7 +1129,6 @@ function applyFilters() {
 
   state.filtered = sourcePapers.filter((paper) => {
     const runtime = runtimeForPaper(paper);
-    const paperVenue = runtime.venue;
     const paperField = runtime.field;
 
     const matchesQuery = !query || runtime.searchText.includes(query);
@@ -1168,8 +1137,6 @@ function applyFilters() {
     const matchesVenueRank =
       !venueRank ||
       (venueRank === "__no_rank" ? !paper.openalex_venue_rank : paper.openalex_venue_rank === venueRank);
-    const matchesTarget = !state.activeTargetVenue || matchesTargetVenue(paperVenue, state.activeTargetVenue);
-    const matchesVenueGroup = !state.activeVenueGroup || isOtherVenuePaper(paper);
     const matchesSubtopic =
       !selectedSubtopics.length ||
       selectedSubtopics.some((item) => paperField === item.field && paperMatchesSidebarSubtopic(paper, item.field, item.subtopic));
@@ -1181,8 +1148,6 @@ function applyFilters() {
       matchesCategory &&
       matchesTag &&
       matchesVenueRank &&
-      matchesTarget &&
-      matchesVenueGroup &&
       matchesSubtopic &&
       matchesSummaryProvider &&
       matchesNewness &&
@@ -1223,8 +1188,6 @@ function isDefaultNewPapersView() {
       !(els.venue && els.venue.value) &&
       !(els.summaryProvider && els.summaryProvider.value) &&
       !(els.year && els.year.value) &&
-      !state.activeTargetVenue &&
-      !state.activeVenueGroup &&
       !state.activeSubtopics.size &&
       !state.activeAmlRecommendations
   );
@@ -1238,8 +1201,6 @@ function resetFilters() {
   if (els.summaryProvider) els.summaryProvider.value = "";
   if (els.year) els.year.value = "";
   if (els.sort) els.sort.value = "newest";
-  state.activeTargetVenue = "";
-  state.activeVenueGroup = "";
   clearActiveSubtopics();
   state.activeAmlRecommendations = false;
   setDefaultNewnessFilter();
@@ -1252,11 +1213,6 @@ function summaryProviderForFilter(paper) {
   return paper.openai_summary_applied === true || paper.summary_provider === "openai"
     ? "openai"
     : "metadata";
-}
-
-function isOtherVenuePaper(paper) {
-  const venue = normalizeVenue(paper.venue);
-  return !isPriorityVenue(venue);
 }
 
 function render() {
@@ -2378,14 +2334,6 @@ function normalizeDoiKey(value) {
 
 function normalizeTitleKey(value) {
   return normalize(value).replace(/[^a-z0-9]+/g, " ").trim();
-}
-
-function matchesTargetVenue(venue, target) {
-  return normalizeVenueKey(venue) === normalizeVenueKey(target);
-}
-
-function isPriorityVenue(venue) {
-  return TARGET_VENUES.some((target) => matchesTargetVenue(venue, target));
 }
 
 function shortVenue(venue) {
