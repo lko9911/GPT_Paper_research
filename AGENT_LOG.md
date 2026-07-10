@@ -1,5 +1,33 @@
 # AGENT_LOG
 
+## 2026-07-10 10:43
+
+### Change Summary
+- Adjusted OA Rank card labels to the compact `Rank1`, `Rank2`, `Rank3`, `Rank4` style.
+
+### Edited Files
+- `assets/app.js`: changed rank card display labels from `OA Rank N` / spaced rank labels to compact `RankN` labels while keeping the underlying signal as OpenAlex OA Rank.
+- `index.html`: bumped static asset cache versions.
+- `AGENT_LOG.md`: recorded this display-label correction.
+
+### Implemented Features
+- The board remains `OA Rank`, but individual cards now show `Rank1`, `Rank2`, `Rank3`, and `Rank4`.
+- AML Recommendations also use the same OA Rank card labels because they now share the same OA Rank board behavior.
+
+### Design Decisions
+- Kept the section title as `OA Rank` to make the metric source clear.
+- Removed `OA` from each card label to match the requested compact rank notation.
+
+### Validation
+- Pending final diff check before commit.
+
+### Remaining Work
+- Confirm deployed GitHub Pages UI after cache refresh.
+
+### Notes / Cautions
+- OpenAI API was not used.
+- Crossref/OpenAlex collection was not run.
+
 ## 2026-07-10 10:38
 
 ### Change Summary

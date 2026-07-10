@@ -930,7 +930,7 @@ function syncRankBoardActive() {
 }
 
 function rankDisplayLabel(rank, mode = currentRankMode()) {
-  return rank === "__no_rank" ? "No OA rank" : `OA ${rank}`;
+  return rank === "__no_rank" ? "No rank" : rank.replace("Rank ", "Rank");
 }
 
 function rankCard(rank, count, mode = currentRankMode()) {
