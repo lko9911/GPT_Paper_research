@@ -37113,7 +37113,7 @@
     "last_updated": "2026-07-10",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-07-10",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 7.329281469475959,
@@ -37976,7 +37976,7 @@
     "last_updated": "2026-07-10",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-07-10",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 3.7044257112750265,
@@ -54752,6 +54752,145 @@
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 6.023041474654378,
     "openalex_venue_rank_percentile": 0.7554,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+  },
+  {
+    "id": "10.1016/j.compind.2026.104522",
+    "title": "Structuring scientific knowledge for smart materials and 4D printing: An ontology enrichment framework using retrieval-augmented multimodal large language models",
+    "authors": [
+      "Oualid Bougzime",
+      "Christophe Cruz",
+      "Kun Zhou",
+      "H. Jerry Qi",
+      "Frédéric Demoly"
+    ],
+    "author_details": [
+      {
+        "name": "Oualid Bougzime",
+        "orcid": "https://orcid.org/0009-0007-4307-3161",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Christophe Cruz",
+        "orcid": "https://orcid.org/0000-0002-5611-9479",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Kun Zhou",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "H. Jerry Qi",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Frédéric Demoly",
+        "orcid": "https://orcid.org/0000-0002-5825-6573",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "year": 2026,
+    "venue": "Computers in Industry",
+    "doi": "10.1016/j.compind.2026.104522",
+    "url": "https://doi.org/10.1016/j.compind.2026.104522",
+    "source": [
+      "Crossref"
+    ],
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Computers in Industry",
+    "crossref_target_issn": "0166-3615",
+    "issn": [
+      "0166-3615"
+    ],
+    "issn_l": "",
+    "publisher": "Elsevier BV",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S60779006",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S60779006",
+      "issn_l": "0166-3615",
+      "issn": [
+        "0166-3615",
+        "1872-6194"
+      ],
+      "type": "journal",
+      "host_organization_name": "Elsevier BV",
+      "works_count": 4719,
+      "cited_by_count": 163168,
+      "two_year_mean_citedness": 9.761744966442953,
+      "h_index": 167,
+      "i10_index": 2508,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 9.761744966442953,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "publication_type": "journal_article",
+    "venue_trust": "trusted",
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "is_core_venue": true,
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "categories": [
+      "Multi-material AM"
+    ],
+    "tags": [
+      "4D printing"
+    ],
+    "relevance_score": 5,
+    "curation_priority": false,
+    "ai_summary_en": "1. Topic - Structuring scientific knowledge for smart materials and 4D printing: An ontology enrichment framework using retrieval-augmented multimodal large language models is a 2026 paper from Computers in Industry about 4D printing.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to 4D printing.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for 4D printing; current relevance score is 5/10.",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_en": "Relevant to the tracker through 4D printing; score: 5/10.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-07-10",
+    "last_updated": "2026-07-10",
+    "is_weekly_new": true,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-07-10",
+    "openalex_venue_rank": "Rank 1",
+    "openalex_venue_rank_number": 1,
+    "openalex_venue_rank_score": 9.761744966442953,
+    "openalex_venue_rank_percentile": 0.8899,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
@@ -83820,6 +83959,183 @@
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 5.543417366946779,
     "openalex_venue_rank_percentile": 0.7156,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+  },
+  {
+    "id": "10.1038/s41467-026-75368-z",
+    "title": "Alignment switching in 3D-printed smectic liquid crystal elastomers",
+    "authors": [
+      "Jin-Hyeong Lee",
+      "Kyeong Pyo Kim",
+      "Lijie Ding",
+      "Michael Li",
+      "Min Chan Kim",
+      "Kyu Hyun",
+      "Ji Hoon Kim",
+      "Jan-Michael Y. Carrillo",
+      "Suk-kyun Ahn"
+    ],
+    "author_details": [
+      {
+        "name": "Jin-Hyeong Lee",
+        "orcid": "https://orcid.org/0000-0003-1998-5156",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Kyeong Pyo Kim",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Lijie Ding",
+        "orcid": "https://orcid.org/0000-0002-2745-4606",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Michael Li",
+        "orcid": "https://orcid.org/0009-0007-8552-7512",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Min Chan Kim",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Kyu Hyun",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Ji Hoon Kim",
+        "orcid": "https://orcid.org/0000-0001-9334-0503",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Jan-Michael Y. Carrillo",
+        "orcid": "https://orcid.org/0000-0001-8774-697X",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Suk-kyun Ahn",
+        "orcid": "https://orcid.org/0000-0002-6841-4213",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "year": 2026,
+    "venue": "Nature Communications",
+    "doi": "10.1038/s41467-026-75368-z",
+    "url": "https://doi.org/10.1038/s41467-026-75368-z",
+    "source": [
+      "Crossref"
+    ],
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Nature Communications",
+    "crossref_target_issn": "2041-1723",
+    "issn": [
+      "2041-1723"
+    ],
+    "issn_l": "",
+    "publisher": "Springer Science and Business Media LLC",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S64187185",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S64187185",
+      "issn_l": "2041-1723",
+      "issn": [
+        "2041-1723"
+      ],
+      "type": "journal",
+      "host_organization_name": "Nature Portfolio",
+      "works_count": 90441,
+      "cited_by_count": 7551319,
+      "two_year_mean_citedness": 16.130086313193587,
+      "h_index": 743,
+      "i10_index": 68559,
+      "is_core": true,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
+    "journal_quality": {
+      "label": "High-impact general journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 16.130086313193587,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "publication_type": "journal_article",
+    "venue_trust": "trusted",
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "is_core_venue": true,
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "categories": [
+      "Multi-material AM"
+    ],
+    "tags": [
+      "LCE",
+      "4D printing",
+      "FDM/Material extrusion",
+      "Soft robotics"
+    ],
+    "relevance_score": 5,
+    "curation_priority": false,
+    "ai_summary_en": "1. Topic - Alignment switching in 3D-printed smectic liquid crystal elastomers is a 2026 paper from Nature Communications about LCE, 4D printing, and FDM/Material extrusion.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to LCE, 4D printing, and FDM/Material extrusion.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for LCE, 4D printing, and FDM/Material extrusion; current relevance score is 5/10.",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_en": "Relevant to the tracker through LCE, 4D printing, and FDM/Material extrusion; score: 5/10.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-07-10",
+    "last_updated": "2026-07-10",
+    "is_weekly_new": true,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-07-10",
+    "openalex_venue_rank": "Rank 1",
+    "openalex_venue_rank_number": 1,
+    "openalex_venue_rank_score": 16.130086313193587,
+    "openalex_venue_rank_percentile": 0.9725,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
@@ -161209,7 +161525,7 @@
     "last_updated": "2026-07-10",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-07-10",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 5.911634756995582,
