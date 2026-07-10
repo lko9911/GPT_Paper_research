@@ -1905,15 +1905,35 @@
     "openalex_used_for": null,
     "openalex_crosscheck_work_id": "https://openalex.org/W7165935001",
     "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
+    "openalex_source_id": "https://openalex.org/S4220651134",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4220651134",
+      "issn_l": "1848-9842",
+      "issn": [
+        "1848-9842",
+        "1848-9850"
+      ],
+      "type": "journal",
+      "host_organization_name": null,
+      "works_count": 772,
+      "cited_by_count": 498,
+      "two_year_mean_citedness": 0.15,
+      "h_index": 7,
+      "i10_index": 4,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
     "journal_quality": {
       "label": "Not classified",
       "basis": "insufficient_open_metric",
       "official_jif": null,
       "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+      "openalex_two_year_mean_citedness": 0.15,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 4",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
     },
     "publication_type": "conference_proceedings",
     "venue_trust": "low",
@@ -1941,7 +1961,12 @@
     "first_added": "2026-06-25",
     "last_updated": "2026-06-28",
     "is_weekly_new": true,
-    "archive_reason": "low_venue_trust"
+    "archive_reason": "low_venue_trust",
+    "openalex_venue_rank": "Rank 4",
+    "openalex_venue_rank_number": 4,
+    "openalex_venue_rank_score": 0.15,
+    "openalex_venue_rank_percentile": 0.0428,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
     "id": "10.2139/ssrn.6862781",
@@ -4566,15 +4591,34 @@
     "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7154578562",
     "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
+    "openalex_source_id": "https://openalex.org/S4404663355",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4404663355",
+      "issn_l": "2732-4494",
+      "issn": [
+        "2732-4494"
+      ],
+      "type": "journal",
+      "host_organization_name": "Institution of Engineering and Technology",
+      "works_count": 19157,
+      "cited_by_count": 13820,
+      "two_year_mean_citedness": 0.2795240456122955,
+      "h_index": 20,
+      "i10_index": 139,
+      "is_core": false,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
     "journal_quality": {
       "label": "Not classified",
       "basis": "insufficient_open_metric",
       "official_jif": null,
       "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+      "openalex_two_year_mean_citedness": 0.2795240456122955,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 4",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
     },
     "publication_type": "conference_proceedings",
     "venue_trust": "low",
@@ -4605,7 +4649,12 @@
     "first_added": "2026-06-12",
     "last_updated": "2026-06-28",
     "is_weekly_new": false,
-    "archive_reason": "low_venue_trust"
+    "archive_reason": "low_venue_trust",
+    "openalex_venue_rank": "Rank 4",
+    "openalex_venue_rank_number": 4,
+    "openalex_venue_rank_score": 0.2795240456122955,
+    "openalex_venue_rank_percentile": 0.0673,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
     "id": "10.26434/chemrxiv.15001858/v1",
@@ -6639,15 +6688,35 @@
     "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7126062470",
     "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
+    "openalex_source_id": "https://openalex.org/S30799303",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S30799303",
+      "issn_l": "0043-2288",
+      "issn": [
+        "0043-2288",
+        "1878-6669"
+      ],
+      "type": "journal",
+      "host_organization_name": "Springer Science+Business Media",
+      "works_count": 3322,
+      "cited_by_count": 38021,
+      "two_year_mean_citedness": 2.7077625570776256,
+      "h_index": 64,
+      "i10_index": 1225,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
     "journal_quality": {
       "label": "Not classified",
       "basis": "insufficient_open_metric",
       "official_jif": null,
       "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+      "openalex_two_year_mean_citedness": 2.7077625570776256,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 3",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
     },
     "publication_type": "low_trust_journal_or_proceedings",
     "venue_trust": "low",
@@ -6678,7 +6747,12 @@
     "first_added": "2026-06-12",
     "last_updated": "2026-06-28",
     "is_weekly_new": false,
-    "archive_reason": "low_venue_trust"
+    "archive_reason": "low_venue_trust",
+    "openalex_venue_rank": "Rank 3",
+    "openalex_venue_rank_number": 3,
+    "openalex_venue_rank_score": 2.7077625570776256,
+    "openalex_venue_rank_percentile": 0.3792,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
     "id": "10.21203/rs.3.rs-8864892/v1",
@@ -7257,15 +7331,34 @@
     "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7163755932",
     "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
+    "openalex_source_id": "https://openalex.org/S4210237284",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210237284",
+      "issn_l": "2772-3690",
+      "issn": [
+        "2772-3690"
+      ],
+      "type": "journal",
+      "host_organization_name": "Elsevier BV",
+      "works_count": 381,
+      "cited_by_count": 3706,
+      "two_year_mean_citedness": 3.5346534653465347,
+      "h_index": 29,
+      "i10_index": 134,
+      "is_core": true,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
     "journal_quality": {
       "label": "Not classified",
       "basis": "insufficient_open_metric",
       "official_jif": null,
       "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+      "openalex_two_year_mean_citedness": 3.5346534653465347,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 2",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
     },
     "publication_type": "journal_article",
     "venue_trust": "trusted",
@@ -7292,7 +7385,12 @@
     "first_added": "2026-06-19",
     "last_updated": "2026-06-28",
     "is_weekly_new": false,
-    "archive_reason": "low_relevance"
+    "archive_reason": "low_relevance",
+    "openalex_venue_rank": "Rank 2",
+    "openalex_venue_rank_number": 2,
+    "openalex_venue_rank_score": 3.5346534653465347,
+    "openalex_venue_rank_percentile": 0.5015,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
     "id": "10.2139/ssrn.7020639",
@@ -8576,15 +8674,34 @@
     "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4414949582",
     "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
+    "openalex_source_id": "https://openalex.org/S4210212817",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210212817",
+      "issn_l": "2640-4567",
+      "issn": [
+        "2640-4567"
+      ],
+      "type": "journal",
+      "host_organization_name": "Wiley",
+      "works_count": 2504,
+      "cited_by_count": 45024,
+      "two_year_mean_citedness": 4.790365744870651,
+      "h_index": 90,
+      "i10_index": 967,
+      "is_core": true,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
     "journal_quality": {
       "label": "Not classified",
       "basis": "insufficient_open_metric",
       "official_jif": null,
       "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+      "openalex_two_year_mean_citedness": 4.790365744870651,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 2",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
     },
     "publication_type": "journal_article",
     "venue_trust": "trusted",
@@ -8615,7 +8732,12 @@
     "first_added": "2026-06-19",
     "last_updated": "2026-06-28",
     "is_weekly_new": false,
-    "archive_reason": "duplicate_title"
+    "archive_reason": "duplicate_title",
+    "openalex_venue_rank": "Rank 2",
+    "openalex_venue_rank_number": 2,
+    "openalex_venue_rank_score": 4.790365744870651,
+    "openalex_venue_rank_percentile": 0.6544,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
     "id": "10.2139/ssrn.6717859",
@@ -9463,15 +9585,35 @@
     "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4417520210",
     "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
+    "openalex_source_id": "https://openalex.org/S67393510",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S67393510",
+      "issn_l": "1433-7851",
+      "issn": [
+        "1433-7851",
+        "1521-3773"
+      ],
+      "type": "journal",
+      "host_organization_name": "Wiley",
+      "works_count": 81445,
+      "cited_by_count": 6578455,
+      "two_year_mean_citedness": 14.205291084373366,
+      "h_index": 730,
+      "i10_index": 58823,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
     "journal_quality": {
       "label": "Not classified",
       "basis": "insufficient_open_metric",
       "official_jif": null,
       "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+      "openalex_two_year_mean_citedness": 14.205291084373366,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
     },
     "publication_type": "journal_article",
     "venue_trust": "trusted",
@@ -9500,7 +9642,12 @@
     "first_added": "2026-06-19",
     "last_updated": "2026-06-28",
     "is_weekly_new": false,
-    "archive_reason": "duplicate_title"
+    "archive_reason": "duplicate_title",
+    "openalex_venue_rank": "Rank 1",
+    "openalex_venue_rank_number": 1,
+    "openalex_venue_rank_score": 14.205291084373366,
+    "openalex_venue_rank_percentile": 0.9572,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
     "id": "10.1109/educon67543.2026.11574083",
@@ -12997,15 +13144,34 @@
     "openalex_used_for": null,
     "openalex_crosscheck_work_id": "https://openalex.org/W7163045495",
     "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
+    "openalex_source_id": "https://openalex.org/S4220651532",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4220651532",
+      "issn_l": "2398-3132",
+      "issn": [
+        "2398-3132"
+      ],
+      "type": "journal",
+      "host_organization_name": null,
+      "works_count": 3191,
+      "cited_by_count": 7838,
+      "two_year_mean_citedness": 0.41385281385281386,
+      "h_index": 32,
+      "i10_index": 162,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
     "journal_quality": {
       "label": "Not classified",
       "basis": "insufficient_open_metric",
       "official_jif": null,
       "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+      "openalex_two_year_mean_citedness": 0.41385281385281386,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 4",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
     },
     "publication_type": "conference_proceedings",
     "venue_trust": "low",
@@ -13036,7 +13202,12 @@
     "first_added": "2026-06-12",
     "last_updated": "2026-06-28",
     "is_weekly_new": false,
-    "archive_reason": "low_venue_trust"
+    "archive_reason": "low_venue_trust",
+    "openalex_venue_rank": "Rank 4",
+    "openalex_venue_rank_number": 4,
+    "openalex_venue_rank_score": 0.41385281385281386,
+    "openalex_venue_rank_percentile": 0.0948,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
     "id": "10.21203/rs.3.rs-9410398/v1",
@@ -15184,15 +15355,35 @@
     "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4407943627",
     "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
+    "openalex_source_id": "https://openalex.org/S4210218293",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210218293",
+      "issn_l": "2474-3941",
+      "issn": [
+        "2474-3941",
+        "2474-395X"
+      ],
+      "type": "journal",
+      "host_organization_name": null,
+      "works_count": 3940,
+      "cited_by_count": 4614,
+      "two_year_mean_citedness": 0.562753036437247,
+      "h_index": 19,
+      "i10_index": 49,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
     "journal_quality": {
       "label": "Not classified",
       "basis": "insufficient_open_metric",
       "official_jif": null,
       "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+      "openalex_two_year_mean_citedness": 0.562753036437247,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 4",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
     },
     "publication_type": "conference_proceedings",
     "venue_trust": "low",
@@ -15224,7 +15415,12 @@
     "first_added": "2026-06-12",
     "last_updated": "2026-06-28",
     "is_weekly_new": false,
-    "archive_reason": "low_venue_trust"
+    "archive_reason": "low_venue_trust",
+    "openalex_venue_rank": "Rank 4",
+    "openalex_venue_rank_number": 4,
+    "openalex_venue_rank_score": 0.562753036437247,
+    "openalex_venue_rank_percentile": 0.1223,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
     "id": "10.1145/3706598.3714080",
@@ -16735,15 +16931,34 @@
     "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7117110172",
     "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
+    "openalex_source_id": "https://openalex.org/S4404673935",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4404673935",
+      "issn_l": "3029-0511",
+      "issn": [
+        "3029-0511"
+      ],
+      "type": "journal",
+      "host_organization_name": null,
+      "works_count": 131,
+      "cited_by_count": 301,
+      "two_year_mean_citedness": 2.230769230769231,
+      "h_index": 7,
+      "i10_index": 3,
+      "is_core": false,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
     "journal_quality": {
       "label": "Not classified",
       "basis": "insufficient_open_metric",
       "official_jif": null,
       "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+      "openalex_two_year_mean_citedness": 2.230769230769231,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 3",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
     },
     "publication_type": "book_or_chapter",
     "venue_trust": "low",
@@ -16774,7 +16989,12 @@
     "first_added": "2026-06-12",
     "last_updated": "2026-06-28",
     "is_weekly_new": false,
-    "archive_reason": "low_venue_trust"
+    "archive_reason": "low_venue_trust",
+    "openalex_venue_rank": "Rank 3",
+    "openalex_venue_rank_number": 3,
+    "openalex_venue_rank_score": 2.230769230769231,
+    "openalex_venue_rank_percentile": 0.318,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
     "id": "10.1109/icca66035.2025.11430951",
@@ -17946,15 +18166,35 @@
     "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4399600661",
     "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
+    "openalex_source_id": "https://openalex.org/S986594421",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S986594421",
+      "issn_l": "1464-4207",
+      "issn": [
+        "1464-4207",
+        "2041-3076"
+      ],
+      "type": "journal",
+      "host_organization_name": "SAGE Publishing",
+      "works_count": 2310,
+      "cited_by_count": 22658,
+      "two_year_mean_citedness": 2.058467741935484,
+      "h_index": 51,
+      "i10_index": 686,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
     "journal_quality": {
       "label": "Not classified",
       "basis": "insufficient_open_metric",
       "official_jif": null,
       "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+      "openalex_two_year_mean_citedness": 2.058467741935484,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 3",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
     },
     "publication_type": "conference_proceedings",
     "venue_trust": "low",
@@ -17985,7 +18225,12 @@
     "first_added": "2026-06-12",
     "last_updated": "2026-06-28",
     "is_weekly_new": false,
-    "archive_reason": "low_venue_trust"
+    "archive_reason": "low_venue_trust",
+    "openalex_venue_rank": "Rank 3",
+    "openalex_venue_rank_number": 3,
+    "openalex_venue_rank_score": 2.058467741935484,
+    "openalex_venue_rank_percentile": 0.2966,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
     "id": "10.36227/techrxiv.176425541.18099212/v1",
@@ -18824,15 +19069,34 @@
     "openalex_used_for": null,
     "openalex_crosscheck_work_id": "https://openalex.org/W4411714946",
     "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
+    "openalex_source_id": "https://openalex.org/S4404663355",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4404663355",
+      "issn_l": "2732-4494",
+      "issn": [
+        "2732-4494"
+      ],
+      "type": "journal",
+      "host_organization_name": "Institution of Engineering and Technology",
+      "works_count": 19157,
+      "cited_by_count": 13820,
+      "two_year_mean_citedness": 0.2795240456122955,
+      "h_index": 20,
+      "i10_index": 139,
+      "is_core": false,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
     "journal_quality": {
       "label": "Not classified",
       "basis": "insufficient_open_metric",
       "official_jif": null,
       "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+      "openalex_two_year_mean_citedness": 0.2795240456122955,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 4",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
     },
     "publication_type": "conference_proceedings",
     "venue_trust": "low",
@@ -18863,7 +19127,12 @@
     "first_added": "2026-06-12",
     "last_updated": "2026-06-28",
     "is_weekly_new": false,
-    "archive_reason": "low_venue_trust"
+    "archive_reason": "low_venue_trust",
+    "openalex_venue_rank": "Rank 4",
+    "openalex_venue_rank_number": 4,
+    "openalex_venue_rank_score": 0.2795240456122955,
+    "openalex_venue_rank_percentile": 0.0673,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
     "id": "10.1049/pbpc071e_ch8",
@@ -22783,15 +23052,34 @@
     "openalex_used_for": null,
     "openalex_crosscheck_work_id": "https://openalex.org/W7131868639",
     "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
+    "openalex_source_id": "https://openalex.org/S4393919075",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4393919075",
+      "issn_l": "2684-1843",
+      "issn": [
+        "2684-1843"
+      ],
+      "type": "journal",
+      "host_organization_name": null,
+      "works_count": 4089,
+      "cited_by_count": 9720,
+      "two_year_mean_citedness": 0.325,
+      "h_index": 28,
+      "i10_index": 218,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
     "journal_quality": {
       "label": "Not classified",
       "basis": "insufficient_open_metric",
       "official_jif": null,
       "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+      "openalex_two_year_mean_citedness": 0.325,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 4",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
     },
     "publication_type": "conference_proceedings",
     "venue_trust": "low",
@@ -22820,7 +23108,12 @@
     "first_added": "2026-06-12",
     "last_updated": "2026-06-28",
     "is_weekly_new": false,
-    "archive_reason": "low_venue_trust"
+    "archive_reason": "low_venue_trust",
+    "openalex_venue_rank": "Rank 4",
+    "openalex_venue_rank_number": 4,
+    "openalex_venue_rank_score": 0.325,
+    "openalex_venue_rank_percentile": 0.0826,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
     "id": "10.1115/imece-india2025-161364",
@@ -23599,15 +23892,34 @@
     "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4413753349",
     "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
+    "openalex_source_id": "https://openalex.org/S4210235135",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210235135",
+      "issn_l": "2632-4067",
+      "issn": [
+        "2632-4067"
+      ],
+      "type": "journal",
+      "host_organization_name": null,
+      "works_count": 332,
+      "cited_by_count": 65,
+      "two_year_mean_citedness": 0.049723756906077346,
+      "h_index": 3,
+      "i10_index": 1,
+      "is_core": false,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
     "journal_quality": {
       "label": "Not classified",
       "basis": "insufficient_open_metric",
       "official_jif": null,
       "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+      "openalex_two_year_mean_citedness": 0.049723756906077346,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 4",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
     },
     "publication_type": "low_trust_journal_or_proceedings",
     "venue_trust": "low",
@@ -23637,7 +23949,12 @@
     "first_added": "2026-06-12",
     "last_updated": "2026-06-28",
     "is_weekly_new": false,
-    "archive_reason": "low_venue_trust"
+    "archive_reason": "low_venue_trust",
+    "openalex_venue_rank": "Rank 4",
+    "openalex_venue_rank_number": 4,
+    "openalex_venue_rank_score": 0.049723756906077346,
+    "openalex_venue_rank_percentile": 0.0092,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
     "id": "10.54050/prj2524082",
@@ -23697,15 +24014,34 @@
     "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4417186106",
     "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
+    "openalex_source_id": "https://openalex.org/S4210235135",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210235135",
+      "issn_l": "2632-4067",
+      "issn": [
+        "2632-4067"
+      ],
+      "type": "journal",
+      "host_organization_name": null,
+      "works_count": 332,
+      "cited_by_count": 65,
+      "two_year_mean_citedness": 0.049723756906077346,
+      "h_index": 3,
+      "i10_index": 1,
+      "is_core": false,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
     "journal_quality": {
       "label": "Not classified",
       "basis": "insufficient_open_metric",
       "official_jif": null,
       "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+      "openalex_two_year_mean_citedness": 0.049723756906077346,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 4",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
     },
     "publication_type": "low_trust_journal_or_proceedings",
     "venue_trust": "low",
@@ -23735,7 +24071,12 @@
     "first_added": "2026-06-12",
     "last_updated": "2026-06-28",
     "is_weekly_new": false,
-    "archive_reason": "low_venue_trust"
+    "archive_reason": "low_venue_trust",
+    "openalex_venue_rank": "Rank 4",
+    "openalex_venue_rank_number": 4,
+    "openalex_venue_rank_score": 0.049723756906077346,
+    "openalex_venue_rank_percentile": 0.0092,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
     "id": "10.1016/b978-0-443-29228-6.00007-4",
@@ -24503,15 +24844,35 @@
     "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4409253148",
     "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
+    "openalex_source_id": "https://openalex.org/S4393919381",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4393919381",
+      "issn_l": "2731-9040",
+      "issn": [
+        "2731-9040",
+        "2731-9059"
+      ],
+      "type": "journal",
+      "host_organization_name": null,
+      "works_count": 157,
+      "cited_by_count": 204,
+      "two_year_mean_citedness": 1.0990990990990992,
+      "h_index": 6,
+      "i10_index": 1,
+      "is_core": false,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
     "journal_quality": {
       "label": "Not classified",
       "basis": "insufficient_open_metric",
       "official_jif": null,
       "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+      "openalex_two_year_mean_citedness": 1.0990990990990992,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 4",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
     },
     "publication_type": "book_or_chapter",
     "venue_trust": "low",
@@ -24542,7 +24903,12 @@
     "first_added": "2026-06-19",
     "last_updated": "2026-06-28",
     "is_weekly_new": false,
-    "archive_reason": "low_venue_trust"
+    "archive_reason": "low_venue_trust",
+    "openalex_venue_rank": "Rank 4",
+    "openalex_venue_rank_number": 4,
+    "openalex_venue_rank_score": 1.0990990990990992,
+    "openalex_venue_rank_percentile": 0.1774,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
     "id": "10.1145/3786995.3787020",
@@ -25940,15 +26306,35 @@
     "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4413351550",
     "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
+    "openalex_source_id": "https://openalex.org/S4210218293",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210218293",
+      "issn_l": "2474-3941",
+      "issn": [
+        "2474-3941",
+        "2474-395X"
+      ],
+      "type": "journal",
+      "host_organization_name": null,
+      "works_count": 3940,
+      "cited_by_count": 4614,
+      "two_year_mean_citedness": 0.562753036437247,
+      "h_index": 19,
+      "i10_index": 49,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
     "journal_quality": {
       "label": "Not classified",
       "basis": "insufficient_open_metric",
       "official_jif": null,
       "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+      "openalex_two_year_mean_citedness": 0.562753036437247,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 4",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
     },
     "publication_type": "conference_proceedings",
     "venue_trust": "low",
@@ -25980,7 +26366,12 @@
     "first_added": "2026-06-12",
     "last_updated": "2026-06-28",
     "is_weekly_new": false,
-    "archive_reason": "low_venue_trust"
+    "archive_reason": "low_venue_trust",
+    "openalex_venue_rank": "Rank 4",
+    "openalex_venue_rank_number": 4,
+    "openalex_venue_rank_score": 0.562753036437247,
+    "openalex_venue_rank_percentile": 0.1223,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
     "id": "10.1115/imece-india2025-161262",
@@ -27288,15 +27679,36 @@
     "openalex_used_for": null,
     "openalex_crosscheck_work_id": "https://openalex.org/W4413314843",
     "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
+    "openalex_source_id": "https://openalex.org/S2764696622",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S2764696622",
+      "issn_l": "0094-243X",
+      "issn": [
+        "0094-243X",
+        "1551-7616",
+        "1935-0465"
+      ],
+      "type": "journal",
+      "host_organization_name": "American Institute of Physics",
+      "works_count": 281435,
+      "cited_by_count": 672541,
+      "two_year_mean_citedness": 0.4509628627346751,
+      "h_index": 126,
+      "i10_index": 14929,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
     "journal_quality": {
       "label": "Not classified",
       "basis": "insufficient_open_metric",
       "official_jif": null,
       "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+      "openalex_two_year_mean_citedness": 0.4509628627346751,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 4",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
     },
     "publication_type": "conference_proceedings",
     "venue_trust": "low",
@@ -27327,7 +27739,12 @@
     "first_added": "2026-06-12",
     "last_updated": "2026-06-28",
     "is_weekly_new": false,
-    "archive_reason": "low_venue_trust"
+    "archive_reason": "low_venue_trust",
+    "openalex_venue_rank": "Rank 4",
+    "openalex_venue_rank_number": 4,
+    "openalex_venue_rank_score": 0.4509628627346751,
+    "openalex_venue_rank_percentile": 0.107,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
     "id": "10.1201/9781003569633-3",
@@ -27579,15 +27996,35 @@
     "openalex_used_for": null,
     "openalex_crosscheck_work_id": "https://openalex.org/W4410009644",
     "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
+    "openalex_source_id": "https://openalex.org/S2764842179",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S2764842179",
+      "issn_l": "2214-7810",
+      "issn": [
+        "2214-7810",
+        "2214-8604"
+      ],
+      "type": "journal",
+      "host_organization_name": "Elsevier BV",
+      "works_count": 5106,
+      "cited_by_count": 246110,
+      "two_year_mean_citedness": 7.721680420105026,
+      "h_index": 193,
+      "i10_index": 3661,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
     "journal_quality": {
       "label": "Core manufacturing journal",
       "basis": "manual_core_venue",
       "official_jif": null,
       "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+      "openalex_two_year_mean_citedness": 7.721680420105026,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
     },
     "publication_type": "book_or_chapter",
     "venue_trust": "low",
@@ -27618,7 +28055,12 @@
     "first_added": "2026-06-12",
     "last_updated": "2026-06-28",
     "is_weekly_new": false,
-    "archive_reason": "low_venue_trust"
+    "archive_reason": "low_venue_trust",
+    "openalex_venue_rank": "Rank 1",
+    "openalex_venue_rank_number": 1,
+    "openalex_venue_rank_score": 7.721680420105026,
+    "openalex_venue_rank_percentile": 0.8257,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
     "id": "10.23919/eumc65286.2025.11235175",
@@ -28247,15 +28689,34 @@
     "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4412156502",
     "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
+    "openalex_source_id": "https://openalex.org/S4210213087",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210213087",
+      "issn_l": "2639-4979",
+      "issn": [
+        "2639-4979"
+      ],
+      "type": "journal",
+      "host_organization_name": "American Chemical Society",
+      "works_count": 2506,
+      "cited_by_count": 60834,
+      "two_year_mean_citedness": 8.898073836276083,
+      "h_index": 105,
+      "i10_index": 1369,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
     "journal_quality": {
       "label": "Not classified",
       "basis": "insufficient_open_metric",
       "official_jif": null,
       "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+      "openalex_two_year_mean_citedness": 8.898073836276083,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
     },
     "publication_type": "journal_article",
     "venue_trust": "trusted",
@@ -28282,7 +28743,12 @@
     "first_added": "2026-06-19",
     "last_updated": "2026-06-28",
     "is_weekly_new": false,
-    "archive_reason": "low_relevance"
+    "archive_reason": "low_relevance",
+    "openalex_venue_rank": "Rank 1",
+    "openalex_venue_rank_number": 1,
+    "openalex_venue_rank_score": 8.898073836276083,
+    "openalex_venue_rank_percentile": 0.8807,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
     "id": "10.1109/icat66432.2025.11189288",
@@ -30908,15 +31374,35 @@
     "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4413351871",
     "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
+    "openalex_source_id": "https://openalex.org/S4210218293",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210218293",
+      "issn_l": "2474-3941",
+      "issn": [
+        "2474-3941",
+        "2474-395X"
+      ],
+      "type": "journal",
+      "host_organization_name": null,
+      "works_count": 3940,
+      "cited_by_count": 4614,
+      "two_year_mean_citedness": 0.562753036437247,
+      "h_index": 19,
+      "i10_index": 49,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
     "journal_quality": {
       "label": "Not classified",
       "basis": "insufficient_open_metric",
       "official_jif": null,
       "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+      "openalex_two_year_mean_citedness": 0.562753036437247,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 4",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
     },
     "publication_type": "conference_proceedings",
     "venue_trust": "low",
@@ -30944,7 +31430,12 @@
     "first_added": "2026-06-24",
     "last_updated": "2026-06-28",
     "is_weekly_new": true,
-    "archive_reason": "low_venue_trust"
+    "archive_reason": "low_venue_trust",
+    "openalex_venue_rank": "Rank 4",
+    "openalex_venue_rank_number": 4,
+    "openalex_venue_rank_score": 0.562753036437247,
+    "openalex_venue_rank_percentile": 0.1223,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
     "id": "10.1117/12.3039575",
@@ -34410,15 +34901,35 @@
     "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4413351793",
     "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
+    "openalex_source_id": "https://openalex.org/S4210218293",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210218293",
+      "issn_l": "2474-3941",
+      "issn": [
+        "2474-3941",
+        "2474-395X"
+      ],
+      "type": "journal",
+      "host_organization_name": null,
+      "works_count": 3940,
+      "cited_by_count": 4614,
+      "two_year_mean_citedness": 0.562753036437247,
+      "h_index": 19,
+      "i10_index": 49,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
     "journal_quality": {
       "label": "Not classified",
       "basis": "insufficient_open_metric",
       "official_jif": null,
       "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+      "openalex_two_year_mean_citedness": 0.562753036437247,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 4",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
     },
     "publication_type": "conference_proceedings",
     "venue_trust": "low",
@@ -34445,7 +34956,12 @@
     "first_added": "2026-06-24",
     "last_updated": "2026-06-28",
     "is_weekly_new": true,
-    "archive_reason": "low_venue_trust"
+    "archive_reason": "low_venue_trust",
+    "openalex_venue_rank": "Rank 4",
+    "openalex_venue_rank_number": 4,
+    "openalex_venue_rank_score": 0.562753036437247,
+    "openalex_venue_rank_percentile": 0.1223,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
     "id": "10.1109/icrera66237.2025.11284131",
@@ -36751,15 +37267,35 @@
     "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4407920207",
     "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
+    "openalex_source_id": "https://openalex.org/S145476921",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S145476921",
+      "issn_l": "1936-0851",
+      "issn": [
+        "1936-0851",
+        "1936-086X"
+      ],
+      "type": "journal",
+      "host_organization_name": "American Chemical Society",
+      "works_count": 29110,
+      "cited_by_count": 2718704,
+      "two_year_mean_citedness": 15.583400053376034,
+      "h_index": 562,
+      "i10_index": 23176,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
     "journal_quality": {
       "label": "Not classified",
       "basis": "insufficient_open_metric",
       "official_jif": null,
       "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+      "openalex_two_year_mean_citedness": 15.583400053376034,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
     },
     "publication_type": "journal_article",
     "venue_trust": "trusted",
@@ -36791,7 +37327,12 @@
     "first_added": "2026-06-12",
     "last_updated": "2026-06-28",
     "is_weekly_new": false,
-    "archive_reason": "low_relevance"
+    "archive_reason": "low_relevance",
+    "openalex_venue_rank": "Rank 1",
+    "openalex_venue_rank_number": 1,
+    "openalex_venue_rank_score": 15.583400053376034,
+    "openalex_venue_rank_percentile": 0.9664,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
     "id": "10.2139/ssrn.5491686",
@@ -37855,15 +38396,35 @@
     "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4404578529",
     "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
+    "openalex_source_id": "https://openalex.org/S67393510",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S67393510",
+      "issn_l": "1433-7851",
+      "issn": [
+        "1433-7851",
+        "1521-3773"
+      ],
+      "type": "journal",
+      "host_organization_name": "Wiley",
+      "works_count": 81445,
+      "cited_by_count": 6578455,
+      "two_year_mean_citedness": 14.205291084373366,
+      "h_index": 730,
+      "i10_index": 58823,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
     "journal_quality": {
       "label": "Not classified",
       "basis": "insufficient_open_metric",
       "official_jif": null,
       "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+      "openalex_two_year_mean_citedness": 14.205291084373366,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
     },
     "publication_type": "journal_article",
     "venue_trust": "trusted",
@@ -37891,7 +38452,12 @@
     "first_added": "2026-06-19",
     "last_updated": "2026-06-28",
     "is_weekly_new": false,
-    "archive_reason": "duplicate_title"
+    "archive_reason": "duplicate_title",
+    "openalex_venue_rank": "Rank 1",
+    "openalex_venue_rank_number": 1,
+    "openalex_venue_rank_score": 14.205291084373366,
+    "openalex_venue_rank_percentile": 0.9572,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
     "id": "10.1002/9781394305285",
@@ -38343,15 +38909,35 @@
     "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4410029263",
     "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
+    "openalex_source_id": "https://openalex.org/S4210218293",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210218293",
+      "issn_l": "2474-3941",
+      "issn": [
+        "2474-3941",
+        "2474-395X"
+      ],
+      "type": "journal",
+      "host_organization_name": null,
+      "works_count": 3940,
+      "cited_by_count": 4614,
+      "two_year_mean_citedness": 0.562753036437247,
+      "h_index": 19,
+      "i10_index": 49,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
     "journal_quality": {
       "label": "Not classified",
       "basis": "insufficient_open_metric",
       "official_jif": null,
       "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+      "openalex_two_year_mean_citedness": 0.562753036437247,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 4",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
     },
     "publication_type": "conference_proceedings",
     "venue_trust": "low",
@@ -38379,7 +38965,12 @@
     "first_added": "2026-06-24",
     "last_updated": "2026-06-28",
     "is_weekly_new": true,
-    "archive_reason": "low_venue_trust"
+    "archive_reason": "low_venue_trust",
+    "openalex_venue_rank": "Rank 4",
+    "openalex_venue_rank_number": 4,
+    "openalex_venue_rank_score": 0.562753036437247,
+    "openalex_venue_rank_percentile": 0.1223,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
     "id": "10.1201/9781003539612-11",
@@ -38793,15 +39384,35 @@
     "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4390536588",
     "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
+    "openalex_source_id": "https://openalex.org/S4393919381",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4393919381",
+      "issn_l": "2731-9040",
+      "issn": [
+        "2731-9040",
+        "2731-9059"
+      ],
+      "type": "journal",
+      "host_organization_name": null,
+      "works_count": 157,
+      "cited_by_count": 204,
+      "two_year_mean_citedness": 1.0990990990990992,
+      "h_index": 6,
+      "i10_index": 1,
+      "is_core": false,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
     "journal_quality": {
       "label": "Not classified",
       "basis": "insufficient_open_metric",
       "official_jif": null,
       "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+      "openalex_two_year_mean_citedness": 1.0990990990990992,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 4",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
     },
     "publication_type": "book_or_chapter",
     "venue_trust": "low",
@@ -38833,7 +39444,12 @@
     "first_added": "2026-06-19",
     "last_updated": "2026-06-28",
     "is_weekly_new": false,
-    "archive_reason": "low_venue_trust"
+    "archive_reason": "low_venue_trust",
+    "openalex_venue_rank": "Rank 4",
+    "openalex_venue_rank_number": 4,
+    "openalex_venue_rank_score": 1.0990990990990992,
+    "openalex_venue_rank_percentile": 0.1774,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
     "id": "10.1007/978-981-99-8405-3_43",
@@ -38904,15 +39520,35 @@
     "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4390537411",
     "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
+    "openalex_source_id": "https://openalex.org/S4393919381",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4393919381",
+      "issn_l": "2731-9040",
+      "issn": [
+        "2731-9040",
+        "2731-9059"
+      ],
+      "type": "journal",
+      "host_organization_name": null,
+      "works_count": 157,
+      "cited_by_count": 204,
+      "two_year_mean_citedness": 1.0990990990990992,
+      "h_index": 6,
+      "i10_index": 1,
+      "is_core": false,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
     "journal_quality": {
       "label": "Not classified",
       "basis": "insufficient_open_metric",
       "official_jif": null,
       "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+      "openalex_two_year_mean_citedness": 1.0990990990990992,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 4",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
     },
     "publication_type": "book_or_chapter",
     "venue_trust": "low",
@@ -38942,7 +39578,12 @@
     "first_added": "2026-06-19",
     "last_updated": "2026-06-28",
     "is_weekly_new": false,
-    "archive_reason": "low_venue_trust"
+    "archive_reason": "low_venue_trust",
+    "openalex_venue_rank": "Rank 4",
+    "openalex_venue_rank_number": 4,
+    "openalex_venue_rank_score": 1.0990990990990992,
+    "openalex_venue_rank_percentile": 0.1774,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
     "id": "10.4018/978-1-6684-5638-5.ch013",
@@ -41838,15 +42479,35 @@
     "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4394952367",
     "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
+    "openalex_source_id": "https://openalex.org/S4210218293",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210218293",
+      "issn_l": "2474-3941",
+      "issn": [
+        "2474-3941",
+        "2474-395X"
+      ],
+      "type": "journal",
+      "host_organization_name": null,
+      "works_count": 3940,
+      "cited_by_count": 4614,
+      "two_year_mean_citedness": 0.562753036437247,
+      "h_index": 19,
+      "i10_index": 49,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
     "journal_quality": {
       "label": "Not classified",
       "basis": "insufficient_open_metric",
       "official_jif": null,
       "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+      "openalex_two_year_mean_citedness": 0.562753036437247,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 4",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
     },
     "publication_type": "conference_proceedings",
     "venue_trust": "low",
@@ -41875,7 +42536,12 @@
     "is_weekly_new": true,
     "not_seen_in_latest_crossref_run": false,
     "last_seen_in_crossref_run": "2026-07-07",
-    "archive_reason": "low_venue_trust"
+    "archive_reason": "low_venue_trust",
+    "openalex_venue_rank": "Rank 4",
+    "openalex_venue_rank_number": 4,
+    "openalex_venue_rank_score": 0.562753036437247,
+    "openalex_venue_rank_percentile": 0.1223,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
     "id": "10.1016/c2022-0-00102-1",
@@ -42029,15 +42695,34 @@
     "openalex_used_for": null,
     "openalex_crosscheck_work_id": "https://openalex.org/W4393262154",
     "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
+    "openalex_source_id": "https://openalex.org/S4210238617",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210238617",
+      "issn_l": "2752-5783",
+      "issn": [
+        "2752-5783"
+      ],
+      "type": "journal",
+      "host_organization_name": "Faculty of 1000",
+      "works_count": 190,
+      "cited_by_count": 1338,
+      "two_year_mean_citedness": 2.0,
+      "h_index": 16,
+      "i10_index": 29,
+      "is_core": false,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
     "journal_quality": {
       "label": "Not classified",
       "basis": "insufficient_open_metric",
       "official_jif": null,
       "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+      "openalex_two_year_mean_citedness": 2.0,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 3",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
     },
     "publication_type": "journal_article",
     "venue_trust": "trusted",
@@ -42065,7 +42750,12 @@
     "first_added": "2026-06-19",
     "last_updated": "2026-06-28",
     "is_weekly_new": false,
-    "archive_reason": "duplicate_title"
+    "archive_reason": "duplicate_title",
+    "openalex_venue_rank": "Rank 3",
+    "openalex_venue_rank_number": 3,
+    "openalex_venue_rank_score": 2.0,
+    "openalex_venue_rank_percentile": 0.2813,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
     "id": "10.1109/case59546.2024.10711510",
@@ -44626,15 +45316,35 @@
     "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4390753410",
     "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
+    "openalex_source_id": "https://openalex.org/S71829577",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S71829577",
+      "issn_l": "1522-4600",
+      "issn": [
+        "1522-4600",
+        "1590-5896"
+      ],
+      "type": "journal",
+      "host_organization_name": "Birkhäuser",
+      "works_count": 1306,
+      "cited_by_count": 7697,
+      "two_year_mean_citedness": 1.0266666666666666,
+      "h_index": 32,
+      "i10_index": 203,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
     "journal_quality": {
       "label": "Not classified",
       "basis": "insufficient_open_metric",
       "official_jif": null,
       "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+      "openalex_two_year_mean_citedness": 1.0266666666666666,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 4",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
     },
     "publication_type": "low_trust_journal_or_proceedings",
     "venue_trust": "low",
@@ -44664,7 +45374,12 @@
     "is_weekly_new": true,
     "not_seen_in_latest_crossref_run": false,
     "last_seen_in_crossref_run": "2026-07-07",
-    "archive_reason": "low_venue_trust"
+    "archive_reason": "low_venue_trust",
+    "openalex_venue_rank": "Rank 4",
+    "openalex_venue_rank_number": 4,
+    "openalex_venue_rank_score": 1.0266666666666666,
+    "openalex_venue_rank_percentile": 0.1743,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
     "id": "10.26434/chemrxiv-2024-8dkh0",
@@ -45597,15 +46312,34 @@
     "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4353048806",
     "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
+    "openalex_source_id": "https://openalex.org/S2898407351",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S2898407351",
+      "issn_l": "2214-7853",
+      "issn": [
+        "2214-7853"
+      ],
+      "type": "journal",
+      "host_organization_name": "Elsevier BV",
+      "works_count": 41644,
+      "cited_by_count": 501359,
+      "two_year_mean_citedness": 4.616803278688525,
+      "h_index": 145,
+      "i10_index": 15268,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
     "journal_quality": {
       "label": "Not classified",
       "basis": "insufficient_open_metric",
       "official_jif": null,
       "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+      "openalex_two_year_mean_citedness": 4.616803278688525,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 2",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
     },
     "publication_type": "conference_proceedings",
     "venue_trust": "low",
@@ -45636,7 +46370,12 @@
     "first_added": "2026-06-12",
     "last_updated": "2026-06-28",
     "is_weekly_new": false,
-    "archive_reason": "low_venue_trust"
+    "archive_reason": "low_venue_trust",
+    "openalex_venue_rank": "Rank 2",
+    "openalex_venue_rank_number": 2,
+    "openalex_venue_rank_score": 4.616803278688525,
+    "openalex_venue_rank_percentile": 0.6269,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
     "id": "10.1115/msec2024-124383",
@@ -46325,15 +47064,35 @@
     "openalex_used_for": null,
     "openalex_crosscheck_work_id": "https://openalex.org/W4403303310",
     "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
+    "openalex_source_id": "https://openalex.org/S4404670259",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4404670259",
+      "issn_l": "2994-4023",
+      "issn": [
+        "2994-4023",
+        "2994-4031"
+      ],
+      "type": "journal",
+      "host_organization_name": "ASM International",
+      "works_count": 765,
+      "cited_by_count": 1168,
+      "two_year_mean_citedness": 0.3445378151260504,
+      "h_index": 12,
+      "i10_index": 27,
+      "is_core": false,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
     "journal_quality": {
       "label": "Not classified",
       "basis": "insufficient_open_metric",
       "official_jif": null,
       "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+      "openalex_two_year_mean_citedness": 0.3445378151260504,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 4",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
     },
     "publication_type": "conference_proceedings",
     "venue_trust": "low",
@@ -46365,7 +47124,12 @@
     "first_added": "2026-06-12",
     "last_updated": "2026-06-28",
     "is_weekly_new": false,
-    "archive_reason": "low_venue_trust"
+    "archive_reason": "low_venue_trust",
+    "openalex_venue_rank": "Rank 4",
+    "openalex_venue_rank_number": 4,
+    "openalex_venue_rank_score": 0.3445378151260504,
+    "openalex_venue_rank_percentile": 0.0856,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
     "id": "10.1117/12.3001274",
@@ -48091,15 +48855,36 @@
     "openalex_used_for": null,
     "openalex_crosscheck_work_id": "https://openalex.org/W4400190560",
     "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
+    "openalex_source_id": "https://openalex.org/S2764696622",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S2764696622",
+      "issn_l": "0094-243X",
+      "issn": [
+        "0094-243X",
+        "1551-7616",
+        "1935-0465"
+      ],
+      "type": "journal",
+      "host_organization_name": "American Institute of Physics",
+      "works_count": 281435,
+      "cited_by_count": 672541,
+      "two_year_mean_citedness": 0.4509628627346751,
+      "h_index": 126,
+      "i10_index": 14929,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
     "journal_quality": {
       "label": "Not classified",
       "basis": "insufficient_open_metric",
       "official_jif": null,
       "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+      "openalex_two_year_mean_citedness": 0.4509628627346751,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 4",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
     },
     "publication_type": "conference_proceedings",
     "venue_trust": "low",
@@ -48129,7 +48914,12 @@
     "first_added": "2026-06-12",
     "last_updated": "2026-06-28",
     "is_weekly_new": false,
-    "archive_reason": "low_venue_trust"
+    "archive_reason": "low_venue_trust",
+    "openalex_venue_rank": "Rank 4",
+    "openalex_venue_rank_number": 4,
+    "openalex_venue_rank_score": 0.4509628627346751,
+    "openalex_venue_rank_percentile": 0.107,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
     "id": "10.52842/conf.ecaade.2024.1.381",
@@ -48207,15 +48997,34 @@
     "openalex_used_for": null,
     "openalex_crosscheck_work_id": "https://openalex.org/W4404455894",
     "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
+    "openalex_source_id": "https://openalex.org/S4393919075",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4393919075",
+      "issn_l": "2684-1843",
+      "issn": [
+        "2684-1843"
+      ],
+      "type": "journal",
+      "host_organization_name": null,
+      "works_count": 4089,
+      "cited_by_count": 9720,
+      "two_year_mean_citedness": 0.325,
+      "h_index": 28,
+      "i10_index": 218,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
     "journal_quality": {
       "label": "Not classified",
       "basis": "insufficient_open_metric",
       "official_jif": null,
       "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+      "openalex_two_year_mean_citedness": 0.325,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 4",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
     },
     "publication_type": "conference_proceedings",
     "venue_trust": "low",
@@ -48245,7 +49054,12 @@
     "first_added": "2026-06-19",
     "last_updated": "2026-06-28",
     "is_weekly_new": false,
-    "archive_reason": "low_venue_trust"
+    "archive_reason": "low_venue_trust",
+    "openalex_venue_rank": "Rank 4",
+    "openalex_venue_rank_number": 4,
+    "openalex_venue_rank_score": 0.325,
+    "openalex_venue_rank_percentile": 0.0826,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
     "id": "10.3390/engproc2024076086",
@@ -49894,15 +50708,35 @@
     "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4404074703",
     "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
+    "openalex_source_id": "https://openalex.org/S4393919392",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4393919392",
+      "issn_l": "2731-9695",
+      "issn": [
+        "2731-9695",
+        "2731-9709"
+      ],
+      "type": "journal",
+      "host_organization_name": null,
+      "works_count": 189,
+      "cited_by_count": 236,
+      "two_year_mean_citedness": 1.2484472049689441,
+      "h_index": 8,
+      "i10_index": 3,
+      "is_core": false,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
     "journal_quality": {
       "label": "Not classified",
       "basis": "insufficient_open_metric",
       "official_jif": null,
       "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+      "openalex_two_year_mean_citedness": 1.2484472049689441,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 4",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
     },
     "publication_type": "book_or_chapter",
     "venue_trust": "low",
@@ -49933,7 +50767,12 @@
     "first_added": "2026-06-12",
     "last_updated": "2026-06-28",
     "is_weekly_new": false,
-    "archive_reason": "low_venue_trust"
+    "archive_reason": "low_venue_trust",
+    "openalex_venue_rank": "Rank 4",
+    "openalex_venue_rank_number": 4,
+    "openalex_venue_rank_score": 1.2484472049689441,
+    "openalex_venue_rank_percentile": 0.1896,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
     "id": "10.62311/nesx/46618",
@@ -52076,15 +52915,35 @@
     "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4403953358",
     "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
+    "openalex_source_id": "https://openalex.org/S19068271",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S19068271",
+      "issn_l": "2100-014X",
+      "issn": [
+        "2100-014X",
+        "2101-6275"
+      ],
+      "type": "journal",
+      "host_organization_name": "EDP Sciences",
+      "works_count": 27162,
+      "cited_by_count": 64992,
+      "two_year_mean_citedness": 0.38911742707554225,
+      "h_index": 53,
+      "i10_index": 1422,
+      "is_core": true,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
     "journal_quality": {
       "label": "Not classified",
       "basis": "insufficient_open_metric",
       "official_jif": null,
       "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+      "openalex_two_year_mean_citedness": 0.38911742707554225,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 4",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
     },
     "publication_type": "conference_proceedings",
     "venue_trust": "low",
@@ -52111,7 +52970,12 @@
     "first_added": "2026-06-22",
     "last_updated": "2026-06-28",
     "is_weekly_new": true,
-    "archive_reason": "low_venue_trust"
+    "archive_reason": "low_venue_trust",
+    "openalex_venue_rank": "Rank 4",
+    "openalex_venue_rank_number": 4,
+    "openalex_venue_rank_score": 0.38911742707554225,
+    "openalex_venue_rank_percentile": 0.0917,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
     "id": "10.20944/preprints202403.0176.v1",
@@ -53411,15 +54275,34 @@
     "openalex_used_for": null,
     "openalex_crosscheck_work_id": "https://openalex.org/W4399478795",
     "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
+    "openalex_source_id": "https://openalex.org/S4220651959",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4220651959",
+      "issn_l": "2771-0718",
+      "issn": [
+        "2771-0718"
+      ],
+      "type": "journal",
+      "host_organization_name": null,
+      "works_count": 8071,
+      "cited_by_count": 5444,
+      "two_year_mean_citedness": 0.28232699200441136,
+      "h_index": 16,
+      "i10_index": 56,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
     "journal_quality": {
       "label": "Not classified",
       "basis": "insufficient_open_metric",
       "official_jif": null,
       "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+      "openalex_two_year_mean_citedness": 0.28232699200441136,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 4",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
     },
     "publication_type": "conference_proceedings",
     "venue_trust": "low",
@@ -53446,7 +54329,12 @@
     "first_added": "2026-06-22",
     "last_updated": "2026-06-28",
     "is_weekly_new": true,
-    "archive_reason": "low_venue_trust"
+    "archive_reason": "low_venue_trust",
+    "openalex_venue_rank": "Rank 4",
+    "openalex_venue_rank_number": 4,
+    "openalex_venue_rank_score": 0.28232699200441136,
+    "openalex_venue_rank_percentile": 0.0703,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
     "id": "10.2139/ssrn.4868307",
@@ -53913,15 +54801,34 @@
     "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4311525347",
     "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
+    "openalex_source_id": "https://openalex.org/S2898407351",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S2898407351",
+      "issn_l": "2214-7853",
+      "issn": [
+        "2214-7853"
+      ],
+      "type": "journal",
+      "host_organization_name": "Elsevier BV",
+      "works_count": 41644,
+      "cited_by_count": 501359,
+      "two_year_mean_citedness": 4.616803278688525,
+      "h_index": 145,
+      "i10_index": 15268,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
     "journal_quality": {
       "label": "Not classified",
       "basis": "insufficient_open_metric",
       "official_jif": null,
       "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+      "openalex_two_year_mean_citedness": 4.616803278688525,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 2",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
     },
     "publication_type": "conference_proceedings",
     "venue_trust": "low",
@@ -53953,7 +54860,12 @@
     "first_added": "2026-06-12",
     "last_updated": "2026-06-28",
     "is_weekly_new": false,
-    "archive_reason": "low_venue_trust"
+    "archive_reason": "low_venue_trust",
+    "openalex_venue_rank": "Rank 2",
+    "openalex_venue_rank_number": 2,
+    "openalex_venue_rank_score": 4.616803278688525,
+    "openalex_venue_rank_percentile": 0.6269,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
     "id": "10.1016/b978-0-443-21518-6.00006-5",
@@ -56924,15 +57836,35 @@
     "openalex_used_for": null,
     "openalex_crosscheck_work_id": "https://openalex.org/W4392749161",
     "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
+    "openalex_source_id": "https://openalex.org/S4210187594",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210187594",
+      "issn_l": "1742-6588",
+      "issn": [
+        "1742-6588",
+        "1742-6596"
+      ],
+      "type": "journal",
+      "host_organization_name": "IOP Publishing",
+      "works_count": 218253,
+      "cited_by_count": 801410,
+      "two_year_mean_citedness": 0.4610348910091232,
+      "h_index": 133,
+      "i10_index": 19012,
+      "is_core": true,
+      "is_oa": true,
+      "is_in_doaj": false
+    },
     "journal_quality": {
       "label": "Not classified",
       "basis": "insufficient_open_metric",
       "official_jif": null,
       "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+      "openalex_two_year_mean_citedness": 0.4610348910091232,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 4",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
     },
     "publication_type": "conference_proceedings",
     "venue_trust": "low",
@@ -56964,7 +57896,12 @@
     "first_added": "2026-06-12",
     "last_updated": "2026-06-28",
     "is_weekly_new": false,
-    "archive_reason": "low_venue_trust"
+    "archive_reason": "low_venue_trust",
+    "openalex_venue_rank": "Rank 4",
+    "openalex_venue_rank_number": 4,
+    "openalex_venue_rank_score": 0.4610348910091232,
+    "openalex_venue_rank_percentile": 0.1101,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
     "id": "10.1515/9783110668544-004",
@@ -57489,15 +58426,34 @@
     "openalex_used_for": null,
     "openalex_crosscheck_work_id": "https://openalex.org/W4399208173",
     "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
+    "openalex_source_id": "https://openalex.org/S4210202120",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210202120",
+      "issn_l": "2635-098X",
+      "issn": [
+        "2635-098X"
+      ],
+      "type": "journal",
+      "host_organization_name": "Royal Society of Chemistry",
+      "works_count": 1150,
+      "cited_by_count": 10379,
+      "two_year_mean_citedness": 4.973747016706444,
+      "h_index": 43,
+      "i10_index": 306,
+      "is_core": true,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
     "journal_quality": {
       "label": "Core manufacturing journal",
       "basis": "manual_core_venue",
       "official_jif": null,
       "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+      "openalex_two_year_mean_citedness": 4.973747016706444,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 2",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
     },
     "publication_type": "journal_article",
     "venue_trust": "trusted",
@@ -57528,7 +58484,12 @@
     "first_added": "2026-06-12",
     "last_updated": "2026-06-28",
     "is_weekly_new": false,
-    "archive_reason": "low_relevance"
+    "archive_reason": "low_relevance",
+    "openalex_venue_rank": "Rank 2",
+    "openalex_venue_rank_number": 2,
+    "openalex_venue_rank_score": 4.973747016706444,
+    "openalex_venue_rank_percentile": 0.6728,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
     "id": "10.21203/rs.3.rs-5467009/v1",
@@ -58029,15 +58990,35 @@
     "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4399383333",
     "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
+    "openalex_source_id": "https://openalex.org/S4393919739",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4393919739",
+      "issn_l": "2834-894X",
+      "issn": [
+        "2834-894X",
+        "2834-8966"
+      ],
+      "type": "journal",
+      "host_organization_name": null,
+      "works_count": 154,
+      "cited_by_count": 2454,
+      "two_year_mean_citedness": 12.684615384615384,
+      "h_index": 27,
+      "i10_index": 63,
+      "is_core": false,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
     "journal_quality": {
       "label": "Not classified",
       "basis": "insufficient_open_metric",
       "official_jif": null,
       "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+      "openalex_two_year_mean_citedness": 12.684615384615384,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
     },
     "publication_type": "journal_article",
     "venue_trust": "trusted",
@@ -58067,7 +59048,12 @@
     "first_added": "2026-06-12",
     "last_updated": "2026-06-28",
     "is_weekly_new": false,
-    "archive_reason": "duplicate_title"
+    "archive_reason": "duplicate_title",
+    "openalex_venue_rank": "Rank 1",
+    "openalex_venue_rank_number": 1,
+    "openalex_venue_rank_score": 12.684615384615384,
+    "openalex_venue_rank_percentile": 0.9419,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
     "id": "10.2139/ssrn.5064801",
@@ -58654,15 +59640,35 @@
     "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4392508950",
     "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
+    "openalex_source_id": "https://openalex.org/S130615878",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S130615878",
+      "issn_l": "1022-1336",
+      "issn": [
+        "1022-1336",
+        "1521-3927"
+      ],
+      "type": "journal",
+      "host_organization_name": "Wiley",
+      "works_count": 11262,
+      "cited_by_count": 304324,
+      "two_year_mean_citedness": 3.824750192159877,
+      "h_index": 188,
+      "i10_index": 5972,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
     "journal_quality": {
       "label": "Not classified",
       "basis": "insufficient_open_metric",
       "official_jif": null,
       "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+      "openalex_two_year_mean_citedness": 3.824750192159877,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 2",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
     },
     "publication_type": "journal_article",
     "venue_trust": "trusted",
@@ -58690,7 +59696,12 @@
     "first_added": "2026-06-12",
     "last_updated": "2026-06-28",
     "is_weekly_new": false,
-    "archive_reason": "duplicate_title"
+    "archive_reason": "duplicate_title",
+    "openalex_venue_rank": "Rank 2",
+    "openalex_venue_rank_number": 2,
+    "openalex_venue_rank_score": 3.824750192159877,
+    "openalex_venue_rank_percentile": 0.5474,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
     "id": "10.1109/aim55361.2024.10637207",
@@ -60290,15 +61301,34 @@
     "openalex_used_for": null,
     "openalex_crosscheck_work_id": "https://openalex.org/W4403231941",
     "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
+    "openalex_source_id": "https://openalex.org/S4404673935",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4404673935",
+      "issn_l": "3029-0511",
+      "issn": [
+        "3029-0511"
+      ],
+      "type": "journal",
+      "host_organization_name": null,
+      "works_count": 131,
+      "cited_by_count": 301,
+      "two_year_mean_citedness": 2.230769230769231,
+      "h_index": 7,
+      "i10_index": 3,
+      "is_core": false,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
     "journal_quality": {
       "label": "Not classified",
       "basis": "insufficient_open_metric",
       "official_jif": null,
       "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+      "openalex_two_year_mean_citedness": 2.230769230769231,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 3",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
     },
     "publication_type": "book_or_chapter",
     "venue_trust": "low",
@@ -60329,7 +61359,12 @@
     "first_added": "2026-06-12",
     "last_updated": "2026-06-28",
     "is_weekly_new": false,
-    "archive_reason": "low_venue_trust"
+    "archive_reason": "low_venue_trust",
+    "openalex_venue_rank": "Rank 3",
+    "openalex_venue_rank_number": 3,
+    "openalex_venue_rank_score": 2.230769230769231,
+    "openalex_venue_rank_percentile": 0.318,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
     "id": "10.5151/sigradi2023-28",

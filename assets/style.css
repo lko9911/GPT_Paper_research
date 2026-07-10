@@ -871,6 +871,13 @@ h1 {
   color: var(--green);
 }
 
+.venue-rank-badge {
+  border: 1px solid rgba(76, 91, 219, 0.2);
+  background: #eef0ff;
+  color: #3340a3;
+  letter-spacing: 0.01em;
+}
+
 .paper-title {
   flex: 0;
   margin: 0 0 8px;
@@ -2379,6 +2386,12 @@ h1 {
   border-color: rgba(118, 210, 173, 0.26);
   background: #173329;
   color: #a7e6ca;
+}
+
+:root[data-theme="dark"] .venue-rank-badge {
+  border-color: rgba(160, 174, 255, 0.28);
+  background: #222a56;
+  color: #cbd3ff;
 }
 
 :root[data-theme="dark"] .badge,

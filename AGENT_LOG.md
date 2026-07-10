@@ -7527,3 +7527,43 @@
 ### 주의사항
 - 이번 작업에서 OpenAI API는 호출하지 않았습니다.
 - 동기화 결과 AML 추천 737편 중 OpenAI summary 항목은 313편에서 595편으로 증가했고, metadata/fallback 항목은 142편 남았습니다.
+## 2026-07-10 10:07
+### 변경 요약
+- OpenAlex Sources API 기반의 내부 저널/venue 랭크 `OA Rank 1`~`OA Rank 4`를 추가했습니다.
+- 공식 JCR Q등급이 아니라, 현재 tracker에 등장한 OpenAlex 매칭 저널들의 `summary_stats.2yr_mean_citedness` 분위 기준으로 단순 분류했습니다.
+- 논문 카드 상단에 `OA Rank N` 뱃지를 표시하고, tooltip에 OpenAlex 기반 내부 지표이며 JCR이 아님을 명시했습니다.
+
+### 수정/생성한 파일
+- `scripts/enrich_openalex_venue_ranks.py`: `data/papers.json`, `data/archive_papers.json`, `public/data/aml_recommended_papers.json`에 OpenAlex venue rank를 부여하는 스크립트를 추가했습니다.
+- `.github/workflows/update-papers.yml`: 정기 논문 업데이트 후 OpenAlex venue rank enrichment를 실행하도록 추가했습니다.
+- `data/openalex_source_metrics.json`: OpenAlex Sources API 조회 결과와 내부 rank 기준을 캐시하는 파일을 생성했습니다.
+- `data/papers.json`, `data/archive_papers.json`, `public/data/aml_recommended_papers.json`: OpenAlex venue rank 필드를 추가했습니다.
+- `data/papers_index.json`, `data/archive_papers_index.json`, `data/details/`, `data/archive_details/`, manifests: split data를 재생성했습니다.
+- `data/papers.csv`, `data/papers.xlsx`: OpenAlex venue rank 필드를 포함하도록 재생성했습니다.
+- `scripts/build_split_data.py`: 초기 로딩 index에 OpenAlex venue rank 필드를 포함했습니다.
+- `scripts/full_rebuild_crossref_dataset.py`: CSV/XLSX export schema에 OpenAlex venue rank 필드를 추가했습니다.
+- `assets/app.js`: 논문 카드에 `OA Rank N` 뱃지를 렌더링하고 검색 텍스트에 OpenAlex venue rank를 포함했습니다.
+- `assets/style.css`: light/dark mode용 venue rank badge 스타일을 추가했습니다.
+- `index.html`: asset cache version을 `20260710-openalex-rank`로 갱신했습니다.
+- `README.md`: `OA Rank`가 JCR/Scopus 공식 등급이 아닌 내부 OpenAlex 기반 지표임을 문서화했습니다.
+- `AGENT_LOG.md`: 이번 작업 기록을 추가했습니다.
+
+### 구현한 기능
+- OpenAlex Sources API를 ISSN 기준으로 조회해 venue/source 메타데이터를 수집합니다.
+- 매칭된 journal source를 `summary_stats.2yr_mean_citedness` 기준으로 tracker 내부 4분위로 나눕니다.
+- 각 논문에 `openalex_venue_rank`, `openalex_venue_rank_score`, `openalex_venue_rank_percentile`, `openalex_venue_rank_basis`를 저장합니다.
+- AML 추천 카드도 같은 rank 필드를 표시할 수 있도록 동기화했습니다.
+
+### 설계 결정
+- 공식 Q1/Q2/Q3/Q4와 혼동을 피하기 위해 UI 명칭은 `OA Rank 1`~`OA Rank 4`로 표시합니다.
+- 랭크 기준은 단순하게 OpenAlex `2yr_mean_citedness` 분위로만 잡았습니다. 복합 점수나 JCR/IF 추정은 하지 않았습니다.
+- OpenAlex source lookup 결과는 `data/openalex_source_metrics.json`에 캐시해서 다음 자동 업데이트에서 새 venue만 추가 조회되도록 했습니다.
+
+### 남은 작업
+- 사용자가 원하면 venue filter나 정렬 기준에 `OA Rank`를 추가할 수 있습니다.
+- 랭크 기준을 더 엄격하게 바꾸려면 `h_index`, `is_core`, `works_count` 등을 포함하는 복합 점수로 확장할 수 있습니다.
+
+### 주의사항
+- 이번 작업은 OpenAlex 공식 API만 사용했고, OpenAI API는 호출하지 않았습니다.
+- `OA Rank`는 공식 저널 등급이 아니며 JCR Impact Factor 또는 JCR quartile을 대체하지 않습니다.
+- 적용 결과 active papers 1520편 중 1512편에 rank가 붙었고, 8편은 OpenAlex source 매칭이 없어 rank가 없습니다.

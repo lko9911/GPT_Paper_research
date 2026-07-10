@@ -980,15 +980,34 @@
     "openalex_used_for": null,
     "openalex_crosscheck_work_id": "https://openalex.org/W4403231941",
     "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
+    "openalex_source_id": "https://openalex.org/S4404673935",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4404673935",
+      "issn_l": "3029-0511",
+      "issn": [
+        "3029-0511"
+      ],
+      "type": "journal",
+      "host_organization_name": null,
+      "works_count": 131,
+      "cited_by_count": 301,
+      "two_year_mean_citedness": 2.230769230769231,
+      "h_index": 7,
+      "i10_index": 3,
+      "is_core": false,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
     "journal_quality": {
       "label": "Not classified",
       "basis": "insufficient_open_metric",
       "official_jif": null,
       "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+      "openalex_two_year_mean_citedness": 2.230769230769231,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 3",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
     },
     "venue_trust_reason": "book/chapter output rather than journal or trusted conference article",
     "core_status": "non-core",

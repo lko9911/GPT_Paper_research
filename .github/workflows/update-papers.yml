@@ -65,19 +65,25 @@ jobs:
           CROSSREF_MAX_PAGES: "1"
         run: python scripts/full_rebuild_crossref_dataset.py
 
+      - name: Enrich OpenAlex venue ranks
+        env:
+          CONTACT_EMAIL: ${{ secrets.CONTACT_EMAIL }}
+          API_SLEEP_SECONDS: "1.0"
+        run: python scripts/enrich_openalex_venue_ranks.py
+
       - name: Build split data
         run: python scripts/build_split_data.py
 
       - name: Commit changed data
         id: commit_data
         run: |
-          if git diff --quiet -- data/papers.json data/archive_papers.json data/papers.csv data/papers.xlsx data/site_meta.json data/old_exports data/papers_index.json data/archive_papers_index.json data/detail_manifest.json data/archive_detail_manifest.json data/details data/archive_details; then
+          if git diff --quiet -- data/papers.json data/archive_papers.json data/papers.csv data/papers.xlsx data/site_meta.json data/openalex_source_metrics.json data/old_exports data/papers_index.json data/archive_papers_index.json data/detail_manifest.json data/archive_detail_manifest.json data/details data/archive_details public/data/aml_recommended_papers.json; then
             echo "No paper data changes."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/papers.json data/archive_papers.json data/papers.csv data/site_meta.json data/old_exports data/papers_index.json data/archive_papers_index.json data/detail_manifest.json data/archive_detail_manifest.json data/details data/archive_details
+          git add data/papers.json data/archive_papers.json data/papers.csv data/site_meta.json data/openalex_source_metrics.json data/old_exports data/papers_index.json data/archive_papers_index.json data/detail_manifest.json data/archive_detail_manifest.json data/details data/archive_details public/data/aml_recommended_papers.json
           git add -f data/papers.xlsx
           git commit -m "Update paper metadata"
           git pull --rebase --autostash origin main

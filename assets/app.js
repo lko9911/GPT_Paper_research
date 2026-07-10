@@ -458,6 +458,8 @@ function preparePaperRuntime(paper) {
       subtopics.join(" "),
       paper.ai_summary_en,
       paper.relevance_note_en,
+      paper.openalex_venue_rank,
+      paper.openalex_venue_rank ? `OA ${paper.openalex_venue_rank} OpenAlex venue rank` : "",
       paper.is_aml_recommendation ? "AML Recommendations AML recommendation AML score" : "",
       correspondingSearchText(paper),
       lastAuthorSearchText(paper),
@@ -866,6 +868,11 @@ function amlRecommendationToPaper(item) {
     publication_type: (item && item.publication_type) || "",
     venue_trust: (item && item.venue_trust) || "",
     venue_trust_reason: (item && item.venue_trust_reason) || "",
+    openalex_venue_rank: (item && item.openalex_venue_rank) || "",
+    openalex_venue_rank_number: item && item.openalex_venue_rank_number,
+    openalex_venue_rank_score: item && item.openalex_venue_rank_score,
+    openalex_venue_rank_percentile: item && item.openalex_venue_rank_percentile,
+    openalex_venue_rank_basis: (item && item.openalex_venue_rank_basis) || "",
     doi,
     url: (item && item.url) || (doi ? `https://doi.org/${doi}` : ""),
     categories: tags,
@@ -1340,6 +1347,7 @@ function renderPaperRow(paper) {
   const summaryHtml = renderSummaryBlock(displayPaper);
   const relevanceNote = formatRelevanceNote(displayPaper);
   const scoreBadgeHtml = renderScoreBadge(displayPaper);
+  const venueRankBadgeHtml = renderVenueRankBadge(displayPaper);
   const representativeBadges = representativeTags(displayPaper)
     .map((tag) => badge(displayLabel(tag), "tag"))
     .join("");
@@ -1351,6 +1359,7 @@ function renderPaperRow(paper) {
         <span class="publication-badge">${escapeHtml(publicationLabel)}</span>
         ${newBadgeHtml}
         <span class="${escapeAttribute(summaryProviderLabel.className)}" title="${escapeAttribute(summaryProviderLabel.title)}">${escapeHtml(summaryProviderLabel.text)}</span>
+        ${venueRankBadgeHtml}
         ${scoreBadgeHtml}
       </div>
       <h4 class="paper-title">${escapeHtml(displayText(displayPaper.title || "Untitled"))}</h4>
@@ -1395,6 +1404,14 @@ function renderScoreBadge(paper) {
     return `<span class="relevance-badge aml-score-badge">${escapeHtml(t("amlScoreLabel"))} ${escapeHtml(label)}</span>`;
   }
   return `<span class="relevance-badge">${escapeHtml(t("relevanceLabel"))} ${escapeHtml(String(paper.relevance_score || "-"))}/10</span>`;
+}
+
+function renderVenueRankBadge(paper) {
+  if (!paper || !paper.openalex_venue_rank) return "";
+  const score = Number(paper.openalex_venue_rank_score);
+  const scoreText = Number.isFinite(score) && score > 0 ? ` - 2yr mean citedness ${score.toFixed(2)}` : "";
+  const basis = paper.openalex_venue_rank_basis || "Internal OpenAlex-based venue signal; not JCR.";
+  return `<span class="venue-rank-badge" title="${escapeAttribute(basis + scoreText)}">OA ${escapeHtml(paper.openalex_venue_rank)}</span>`;
 }
 
 function badge(text, className = "") {
