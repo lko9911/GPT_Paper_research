@@ -1,5 +1,34 @@
 # AGENT_LOG
 
+## 2026-07-11 14:02
+
+### Change Summary
+- Backfilled OpenAlex OA Rank metadata into the current public AML recommendation JSON after a full-refresh output dropped those fields.
+
+### Edited Files
+- `public/data/aml_recommended_papers.json`: restored OA Rank fields by matching AML recommendations to `data/papers.json` by DOI/title.
+- `AGENT_LOG.md`: recorded the data backfill and corrected current counts.
+
+### Implemented Features
+- AML recommendation cards and the OA Rank board can again use `openalex_venue_rank` for matched recommendations.
+
+### Design Decisions
+- Used only local metadata from `data/papers.json`; no external API or OpenAI calls were made.
+- Left unmatched or unranked recommendations as `No rank`.
+
+### Validation
+- Before backfill: 763 AML recommendations, 0 with OA Rank.
+- After backfill: 763 AML recommendations, 700 with OA Rank, 63 with `No rank`.
+- Current distribution: Rank 1 = 386, Rank 2 = 176, Rank 3 = 103, Rank 4 = 35, No rank = 63.
+
+### Remaining Work
+- Future AML full-refresh runs should preserve OA Rank through the pipeline changes added in the previous commit.
+- If newly discovered Crossref-only AML candidates need OA Rank, add an OpenAlex source-rank enrichment step for AML outputs.
+
+### Notes / Cautions
+- OpenAI API was not used.
+- Crossref/OpenAlex API was not called.
+
 ## 2026-07-11 13:52
 
 ### Change Summary
