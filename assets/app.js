@@ -870,6 +870,11 @@ function amlRecommendationToPaper(item) {
   const canonicalTopics = matchedTopics.map(canonicalTopicLabel).filter(isKnownCanonicalTag);
   const tags = canonicalTopics.length ? canonicalTopics : matchedTopics;
   const updatedAt = String((item && item.updated_at) || "").slice(0, 10);
+  const firstAdded = String((item && (item.first_added || item.updated_at)) || "").slice(0, 10);
+  const lastUpdated = String((item && (item.last_updated || item.updated_at)) || "").slice(0, 10);
+  const isNewRecommendation = Boolean(
+    item && (item.is_new_recommendation === true || item.is_weekly_new === true || item.weekly_new === true)
+  );
   const amlScore = Number((item && item.aml_score) || 0);
   const id = doi || `aml:${normalizeTitleKey(item && item.title)}`;
   return {
@@ -905,8 +910,10 @@ function amlRecommendationToPaper(item) {
     relevance_note_en:
       (item && item.why_recommended) ||
       `AML recommendation score: ${Math.round(amlScore * 100)}/100.`,
-    first_added: updatedAt,
-    last_updated: updatedAt,
+    first_added: firstAdded || updatedAt,
+    last_updated: lastUpdated || updatedAt,
+    is_weekly_new: isNewRecommendation,
+    weekly_new: isNewRecommendation,
     is_aml_recommendation: true,
   };
 }

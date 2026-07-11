@@ -66,6 +66,7 @@ def score_recommendations(
 
     scored.sort(key=lambda item: (item["aml_score"], item.get("year") or 0), reverse=True)
     updated_at = now_iso()
+    previous_public = _previous_public_recommendations()
     public_items = [
         public_paper(item, updated_at)
         for item in scored
@@ -73,6 +74,7 @@ def score_recommendations(
         and float(item.get("aml_score") or 0.0) >= PUBLIC_AML_SCORE_THRESHOLD
         and is_trusted_publication(item)
     ]
+    public_items = _mark_new_recommendations(public_items, previous_public, updated_at)
     low_venue_trust_excluded = sum(
         1
         for item in scored
@@ -106,6 +108,39 @@ def score_recommendations(
         "public_score_threshold": PUBLIC_AML_SCORE_THRESHOLD,
         "public_output": str(PUBLIC_OUTPUT_PATH),
     }
+
+
+def _previous_public_recommendations() -> dict[str, dict[str, Any]]:
+    items = load_json(PUBLIC_OUTPUT_PATH, [])
+    if not isinstance(items, list):
+        return {}
+    return {
+        candidate_key(item): item
+        for item in items
+        if candidate_key(item) not in {"doi:", "title:"}
+    }
+
+
+def _mark_new_recommendations(
+    public_items: list[dict[str, Any]],
+    previous_public: dict[str, dict[str, Any]],
+    updated_at: str,
+) -> list[dict[str, Any]]:
+    for item in public_items:
+        key = candidate_key(item)
+        previous = previous_public.get(key)
+        is_new = previous is None
+        first_added = (
+            item.get("first_added")
+            if is_new
+            else previous.get("first_added") or previous.get("updated_at") or item.get("updated_at")
+        )
+        item["first_added"] = first_added or updated_at
+        item["last_updated"] = updated_at
+        item["is_new_recommendation"] = is_new
+        item["is_weekly_new"] = is_new
+        item["weekly_new"] = is_new
+    return public_items
 
 
 def _source_paper_summaries() -> dict[str, dict[str, Any]]:

@@ -7849,3 +7849,37 @@
 
 ### 주의사항
 - 데이터 파일은 변경하지 않았고 OpenAlex/OpenAI API도 호출하지 않았습니다.
+## 2026-07-11 14:09
+### 변경 요약
+- AML manual workflow에서 full refresh 후 기존 추천 전체가 NEW로 보이지 않도록 이전 공개 추천 목록과 비교하는 로직을 추가했습니다.
+- AML seed/candidate embedding vector cache를 `data/private/`에서 `data/aml_embeddings/`로 옮겨 재사용 및 커밋 가능하게 변경했습니다.
+- AML workflow에 `reset_embeddings` 입력을 추가해 seed 파일 수정 시 명시적으로 임베딩 캐시를 초기화할 수 있게 했습니다.
+
+### 수정/생성한 파일
+- `.github/workflows/aml-recommendation-manual.yml`: `reset_embeddings` workflow input, OpenAI key 확인이 포함된 cache reset step, embedding cache commit 대상을 추가했습니다.
+- `scripts/aml_common.py`: seed/candidate embedding cache 경로를 `data/aml_embeddings/`로 변경했습니다.
+- `scripts/score_aml_recommendations.py`: 이전 `public/data/aml_recommended_papers.json`과 비교해 신규 추천만 `is_new_recommendation`, `is_weekly_new`, `weekly_new`로 표시하도록 했습니다.
+- `assets/app.js`: AML 추천 카드가 명시적인 new flag만 보고 NEW badge를 표시하도록 조정했습니다.
+- `public/data/aml_recommended_papers.json`: 현재 공개 추천 763개는 기존 항목으로 처리되도록 new flag를 `false`로 채웠습니다.
+- `README.md`: AML embedding cache 저장 위치, reset 규칙, full refresh NEW 표시 정책을 문서화했습니다.
+- `ARCHITECTURE.md`: AML embedding cache 구조와 seed 변경 시 reset 절차를 업데이트했습니다.
+- `PROJECT_STATUS.md`: 현재 AML embedding 재사용 정책과 NEW 표시 정책을 상태 문서에 반영했습니다.
+- `AGENT_LOG.md`: 본 변경 기록을 추가했습니다.
+
+### 구현한 기능
+- AML `full_refresh`에서 새로 추가된 추천 논문만 NEW badge가 붙습니다.
+- 저장된 seed/candidate embedding vector를 후속 AML workflow 실행에서 재사용합니다.
+- seed 파일이 바뀐 경우 `reset_embeddings=true`로 캐시를 삭제하고 새로 임베딩할 수 있습니다.
+
+### 설계 결정
+- embedding vector 자체는 secret이 아니므로 `data/aml_embeddings/`에 저장하고 GitHub Actions가 커밋하도록 했습니다.
+- candidate pool, scoring debug, recommendation log는 여전히 `data/private/` 아래에 두어 Pages 배포와 Git 추적에서 제외합니다.
+- 기존 AML 추천 항목은 `first_added`를 보존하고 명시적으로 `is_weekly_new=false`를 넣어 날짜 기반 추론으로 전체가 NEW 처리되는 일을 막았습니다.
+
+### 남은 작업
+- 다음 AML manual workflow 실행에서 `data/aml_embeddings/` 파일이 생성/갱신되어 함께 커밋되는지 확인합니다.
+- seed 파일을 실제로 수정한 뒤에는 `reset_embeddings=true`로 한 번 실행해 캐시 초기화 동작을 확인합니다.
+
+### 주의사항
+- `reset_embeddings=true`는 OpenAI embedding API를 다시 호출하게 만들 수 있으므로 seed 변경이 있을 때만 사용합니다. OpenAI key가 없으면 캐시만 지워지는 상황을 막기 위해 workflow가 실패하도록 했습니다.
+- 이 변경은 OpenAI API를 직접 호출하지 않았고, 현재 공개 JSON의 flag 보정만 수행했습니다.

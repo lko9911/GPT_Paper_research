@@ -40,6 +40,14 @@ on:
         options:
           - "true"
           - "false"
+      reset_embeddings:
+        description: "Reset stored AML embedding vectors before scoring. Use true after changing the seed file."
+        required: true
+        default: "false"
+        type: choice
+        options:
+          - "true"
+          - "false"
 
 permissions:
   contents: write
@@ -86,6 +94,20 @@ jobs:
             echo "No AML seed secret found. collect_and_score/full_refresh will fail clearly."
           fi
 
+      - name: Reset stored AML embedding vectors
+        if: ${{ inputs.reset_embeddings == 'true' }}
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          if [ -z "$OPENAI_API_KEY" ]; then
+            echo "reset_embeddings=true requires OPENAI_API_KEY so the embedding cache can be rebuilt."
+            exit 1
+          fi
+          mkdir -p data/aml_embeddings
+          rm -f data/aml_embeddings/aml_seed_embeddings.json
+          rm -f data/aml_embeddings/aml_candidate_embeddings.json
+          echo "AML embedding vector cache reset requested."
+
       - name: Run AML recommendation pipeline
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
@@ -113,13 +135,14 @@ jobs:
       - name: Commit public AML recommendations
         if: ${{ inputs.publish_output == 'true' }}
         run: |
-          if git diff --quiet -- public/data/aml_recommended_papers.json; then
-            echo "No AML recommendation output changes."
+          CHANGES="$(git status --porcelain -- public/data/aml_recommended_papers.json data/aml_embeddings/aml_seed_embeddings.json data/aml_embeddings/aml_candidate_embeddings.json)"
+          if [ -z "$CHANGES" ]; then
+            echo "No AML recommendation output or embedding cache changes."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add public/data/aml_recommended_papers.json
+          git add public/data/aml_recommended_papers.json data/aml_embeddings/aml_seed_embeddings.json data/aml_embeddings/aml_candidate_embeddings.json
           git commit -m "Update AML recommended papers"
           git pull --rebase --autostash origin main
           git push

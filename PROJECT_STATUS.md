@@ -299,16 +299,18 @@ GitHub Pages에서 동작 가능한 정적 논문 큐레이션 사이트와 GitH
 
 ## Completed
 - Added deterministic AML profile generation from a private seed file restored at `data/private/aml_seed_papers_core_enriched.json`.
-- Added OpenAI embedding cache support under ignored `data/private/`.
+- Added OpenAI embedding cache support. The active cache path is now tracked under `data/aml_embeddings/` so manual AML runs can reuse stored vectors.
 - Added candidate collection from the existing paper pool plus optional Crossref-only keyword collection modes for AML recommendation candidates.
 - Added deterministic scoring, recommendation levels, and template-based public reasons.
 - Added optional OpenAI relevance judge and optional OpenAI reason rewriting, both disabled by default.
-- Updated `.gitignore` to keep private embeddings, raw data, logs, PDFs, and `.env` files out of Git.
+- Updated `.gitignore` to keep private candidate pools, debug logs, raw data, PDFs, and `.env` files out of Git.
 
 ## Known Setup Requirement
 - `data/private/aml_seed_papers_core_enriched.json` is the only allowed tracked seed file under `data/private/`.
 - GitHub Pages deployment excludes `data/private/` and root `private/`, so the seed is available to GitHub Actions but not served by the website.
 - Optional secret override remains available through `AML_SEED_PAPERS_JSON_B64` or `AML_SEED_PAPERS_JSON`.
+- AML embedding vectors are reused from `data/aml_embeddings/`. Use the AML workflow input `reset_embeddings=true` only when the seed file has changed and the embedding cache should be rebuilt from scratch.
+- AML `full_refresh` compares against the previous public recommendation JSON and marks `New` only for recommendations that were not already present.
 
 ## Validation Note
 - A local smoke test was run with `AML_SEED_PATH=private/aml_seed_papers_core_enriched.json`, `mode=score_existing`, and `max_candidates=50`. It loaded 46 seed records, scored 50 candidates, and used no OpenAI judge or reason generation. The generated public/profile test outputs were deleted because the local seed file is private.

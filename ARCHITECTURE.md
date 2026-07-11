@@ -259,9 +259,14 @@ The AML recommendation pipeline is separate and manual-only:
 - Trigger: `workflow_dispatch` only
 - Seed input: `data/private/aml_seed_papers_core_enriched.json`
 - Public output: `public/data/aml_recommended_papers.json`
-- Private outputs: `data/private/aml_seed_embeddings.json`, `data/private/aml_candidate_embeddings.json`, `data/private/aml_candidate_pool.json`, `data/private/aml_scoring_debug.json`, and `data/private/aml_recommendation_log.json`
+- Reusable embedding cache: `data/aml_embeddings/aml_seed_embeddings.json` and `data/aml_embeddings/aml_candidate_embeddings.json`
+- Private outputs: `data/private/aml_candidate_pool.json`, `data/private/aml_scoring_debug.json`, and `data/private/aml_recommendation_log.json`
 
 Only `data/private/aml_seed_papers_core_enriched.json` is allowed to be tracked from `data/private/` for the private repository. GitHub Pages deployment builds a staging artifact and excludes `data/private/` and root `private/`, so the seed and private debug files are not served by the website. Optional secret override is still supported by `AML_SEED_PAPERS_JSON_B64` or `AML_SEED_PAPERS_JSON`.
+
+AML embedding vectors are intentionally stored outside `data/private/` so the manual workflow can commit and reuse them. Normal AML runs keep `reset_embeddings=false`; when the seed file changes, run the workflow with `reset_embeddings=true` to delete the old seed/candidate embedding cache before scoring. The scoring script also uses text hashes, so unchanged seed and candidate records reuse existing vectors.
+
+During AML `full_refresh`, `public/data/aml_recommended_papers.json` is compared with the previous public recommendation file. Only papers absent from the previous file receive `is_new_recommendation=true`, `is_weekly_new=true`, and the visible `New` badge.
 
 Frontend integration is additive. `assets/app.js` still fetches the existing site data from:
 
