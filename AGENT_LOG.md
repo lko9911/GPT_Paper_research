@@ -1,5 +1,30 @@
 # AGENT_LOG
 
+## 2026-07-11 12:20
+
+### Change Summary
+- Corrected the static HTML label for the top dropdown so the source file also says `Venue`.
+
+### Edited Files
+- `index.html`: changed the initial `.venue-filter` label from `OA Rank` to `Venue`.
+- `AGENT_LOG.md`: recorded this static-label correction.
+
+### Implemented Features
+- The source HTML and runtime JavaScript now agree that the top dropdown is a venue selector.
+
+### Design Decisions
+- Kept the large board as `OA Rank`; only the top dropdown label was corrected.
+
+### Validation
+- Confirmed `assets/app.js` rank cards use OpenAlex OA Rank and compact `Rank1/Rank2/...` labels.
+
+### Remaining Work
+- Confirm deployed GitHub Pages UI after cache refresh.
+
+### Notes / Cautions
+- OpenAI API was not used.
+- Crossref/OpenAlex collection was not run.
+
 ## 2026-07-10 10:43
 
 ### Change Summary
