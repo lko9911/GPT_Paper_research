@@ -121,6 +121,11 @@ def _source_paper_summaries() -> dict[str, dict[str, Any]]:
             "summary_provider": paper.get("summary_provider", "metadata"),
             "openai_summary_applied": bool(paper.get("openai_summary_applied")),
             "summary_source": "curated_paper_pool",
+            "openalex_venue_rank": paper.get("openalex_venue_rank", ""),
+            "openalex_venue_rank_number": paper.get("openalex_venue_rank_number"),
+            "openalex_venue_rank_score": paper.get("openalex_venue_rank_score"),
+            "openalex_venue_rank_percentile": paper.get("openalex_venue_rank_percentile"),
+            "openalex_venue_rank_basis": paper.get("openalex_venue_rank_basis", ""),
         }
     return summaries
 

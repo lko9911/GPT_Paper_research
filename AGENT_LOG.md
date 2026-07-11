@@ -1,5 +1,62 @@
 # AGENT_LOG
 
+## 2026-07-11 13:52
+
+### Change Summary
+- Fixed AML recommendation pipeline paths so OpenAlex OA Rank metadata is preserved in AML recommendation outputs.
+
+### Edited Files
+- `scripts/collect_aml_candidates.py`: carries `openalex_venue_rank` fields from existing curated papers into AML candidates and preserves them during candidate merges.
+- `scripts/aml_common.py`: exports OpenAlex venue rank fields in `public_paper()`.
+- `scripts/score_aml_recommendations.py`: merges OpenAlex venue rank fields from the curated paper pool when an AML candidate matches an existing paper.
+- `AGENT_LOG.md`: recorded this AML OA Rank metadata fix.
+
+### Implemented Features
+- Future AML `score_existing`, `collect_and_score`, and `full_refresh` runs preserve OA Rank when the candidate came from or matches the curated paper dataset.
+- The frontend can keep using the same OA Rank board and paper-card badge for AML recommendations.
+
+### Design Decisions
+- Kept OA Rank as OpenAlex venue metadata, not an AML score-derived rank.
+- Did not call external APIs or OpenAI; this is a local metadata propagation fix.
+
+### Validation
+- Current `public/data/aml_recommended_papers.json`: 686 of 737 AML recommendations already have OA Rank; 51 are `No rank`.
+- Current rank distribution: Rank 1 = 369, Rank 2 = 184, Rank 3 = 98, Rank 4 = 35, No rank = 51.
+
+### Remaining Work
+- Run the AML recommendation workflow when ready to regenerate public recommendations with the updated propagation logic.
+
+### Notes / Cautions
+- Some AML recommendations may still show `No rank` when their venue has no OpenAlex venue-rank metadata in the curated dataset.
+
+## 2026-07-11 13:50
+
+### Change Summary
+- Unified the sort UI by removing the separate `Recently added` option.
+
+### Edited Files
+- `index.html`: removed the `Recently added` sort option and bumped static asset cache versions.
+- `assets/app.js`: removed the `recentlyAdded` label and `recently-added` sorting branch.
+- `AGENT_LOG.md`: recorded this sort simplification.
+
+### Implemented Features
+- The sort dropdown now keeps `Newest`, `Relevance`, and `Title` only.
+- `Newest` remains the single recency-style sort option.
+
+### Design Decisions
+- `Newest` and `Recently added` were intentionally unified because their distinction was too subtle for the current UI.
+- The `New this week` filter still covers the explicit “recently collected” use case.
+
+### Validation
+- Pending final grep/diff check.
+
+### Remaining Work
+- Confirm the deployed UI after cache refresh if this change is pushed.
+
+### Notes / Cautions
+- OpenAI API was not used.
+- Crossref/OpenAlex collection was not run.
+
 ## 2026-07-11 12:20
 
 ### Change Summary

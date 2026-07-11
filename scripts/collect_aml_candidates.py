@@ -116,6 +116,11 @@ def _normalize_candidate(paper: dict[str, Any], route: str) -> dict[str, Any]:
         "abstract": abstract,
         "tags": paper.get("tags", []) or [],
         "categories": paper.get("categories", []) or [],
+        "openalex_venue_rank": paper.get("openalex_venue_rank", ""),
+        "openalex_venue_rank_number": paper.get("openalex_venue_rank_number"),
+        "openalex_venue_rank_score": paper.get("openalex_venue_rank_score"),
+        "openalex_venue_rank_percentile": paper.get("openalex_venue_rank_percentile"),
+        "openalex_venue_rank_basis": paper.get("openalex_venue_rank_basis", ""),
         "discovery_routes": [route],
         "source": paper.get("source", []) or [],
     }
@@ -130,7 +135,20 @@ def _merge_candidate(candidates: dict[str, dict[str, Any]], record: dict[str, An
     existing_routes = set(existing.get("discovery_routes", []))
     existing_routes.update(record.get("discovery_routes", []))
     existing["discovery_routes"] = sorted(existing_routes)
-    for field in ("abstract", "journal", "venue", "url", "doi", "author_details", "corresponding_authors"):
+    for field in (
+        "abstract",
+        "journal",
+        "venue",
+        "url",
+        "doi",
+        "author_details",
+        "corresponding_authors",
+        "openalex_venue_rank",
+        "openalex_venue_rank_number",
+        "openalex_venue_rank_score",
+        "openalex_venue_rank_percentile",
+        "openalex_venue_rank_basis",
+    ):
         if not existing.get(field) and record.get(field):
             existing[field] = record[field]
     existing["corresponding_author_available"] = bool(existing.get("corresponding_authors"))

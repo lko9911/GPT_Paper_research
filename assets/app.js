@@ -95,7 +95,6 @@ const UI_TEXT = {
     all: "All",
     allSummaries: "All",
     newest: "Newest",
-    recentlyAdded: "Recently added",
     relevance: "Relevance",
     title: "Title",
     resetFilters: "Reset",
@@ -519,7 +518,6 @@ function applyStaticLanguage() {
   setText("#newness-filter option[value='week']", t("newThisWeek"));
   setText("#year-filter option[value='']", t("all"));
   setText("#sort-select option[value='newest']", t("newest"));
-  setText("#sort-select option[value='recently-added']", t("recentlyAdded"));
   setText("#sort-select option[value='relevance']", t("relevance"));
   setText("#sort-select option[value='title']", t("title"));
   setText("#reset-filters", t("resetFilters"));
@@ -1215,9 +1213,6 @@ function applyFilters() {
     }
     if (sort === "newest") {
       return Number(b.year || 0) - Number(a.year || 0) || dateValue(b.last_updated) - dateValue(a.last_updated);
-    }
-    if (sort === "recently-added") {
-      return dateValue(b.first_added) - dateValue(a.first_added) || dateValue(b.last_updated) - dateValue(a.last_updated);
     }
     if (sort === "title") {
       return (a.title || "").localeCompare(b.title || "", "en");
