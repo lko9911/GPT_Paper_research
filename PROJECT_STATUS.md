@@ -311,6 +311,7 @@ GitHub Pages에서 동작 가능한 정적 논문 큐레이션 사이트와 GitH
 - Optional secret override remains available through `AML_SEED_PAPERS_JSON_B64` or `AML_SEED_PAPERS_JSON`.
 - AML embedding vectors are reused from `data/aml_embeddings/`. Use the AML workflow input `reset_embeddings=true` only when the seed file has changed and the embedding cache should be rebuilt from scratch.
 - AML `full_refresh` compares against the previous public recommendation JSON and marks `New` only for recommendations that were not already present.
+- AML manual workflow now runs an AML-only OA Rank enrichment step after recommendation scoring, so newly discovered Crossref AML candidates can receive OpenAlex-based venue ranks when ISSN/source metadata is available.
 
 ## Validation Note
 - A local smoke test was run with `AML_SEED_PATH=private/aml_seed_papers_core_enriched.json`, `mode=score_existing`, and `max_candidates=50`. It loaded 46 seed records, scored 50 candidates, and used no OpenAI judge or reason generation. The generated public/profile test outputs were deleted because the local seed file is private.

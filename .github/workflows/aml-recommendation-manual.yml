@@ -125,24 +125,33 @@ jobs:
             --mode "${{ inputs.mode }}" \
             --max-candidates "${{ inputs.max_candidates }}"
 
+      - name: Enrich AML recommendation OA ranks
+        env:
+          CONTACT_EMAIL: ${{ secrets.CONTACT_EMAIL }}
+          API_SLEEP_SECONDS: "1.0"
+          OPENALEX_RANK_TARGETS: "aml"
+        run: python scripts/enrich_openalex_venue_ranks.py
+
       - name: Upload AML recommendation artifact
         if: ${{ inputs.publish_output == 'false' }}
         uses: actions/upload-artifact@v4
         with:
           name: aml-recommended-papers
-          path: public/data/aml_recommended_papers.json
+          path: |
+            public/data/aml_recommended_papers.json
+            data/openalex_source_metrics.json
 
       - name: Commit public AML recommendations
         if: ${{ inputs.publish_output == 'true' }}
         run: |
-          CHANGES="$(git status --porcelain -- public/data/aml_recommended_papers.json data/aml_embeddings/aml_seed_embeddings.json data/aml_embeddings/aml_candidate_embeddings.json)"
+          CHANGES="$(git status --porcelain -- public/data/aml_recommended_papers.json data/openalex_source_metrics.json data/aml_embeddings/aml_seed_embeddings.json data/aml_embeddings/aml_candidate_embeddings.json)"
           if [ -z "$CHANGES" ]; then
             echo "No AML recommendation output or embedding cache changes."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add public/data/aml_recommended_papers.json data/aml_embeddings/aml_seed_embeddings.json data/aml_embeddings/aml_candidate_embeddings.json
+          git add public/data/aml_recommended_papers.json data/openalex_source_metrics.json data/aml_embeddings/aml_seed_embeddings.json data/aml_embeddings/aml_candidate_embeddings.json
           git commit -m "Update AML recommended papers"
           git pull --rebase --autostash origin main
           git push

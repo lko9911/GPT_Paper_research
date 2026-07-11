@@ -268,6 +268,8 @@ AML embedding vectors are intentionally stored outside `data/private/` so the ma
 
 During AML `full_refresh`, `public/data/aml_recommended_papers.json` is compared with the previous public recommendation file. Only papers absent from the previous file receive `is_new_recommendation=true`, `is_weekly_new=true`, and the visible `New` badge.
 
+After the AML recommendation pipeline writes the public recommendation JSON, the manual workflow runs `scripts/enrich_openalex_venue_ranks.py` with `OPENALEX_RANK_TARGETS=aml`. This mode reads the public AML recommendation file, uses cached `data/openalex_source_metrics.json` when possible, and fetches OpenAlex Sources metadata only for AML recommendation venues that need a source match. It updates `public/data/aml_recommended_papers.json` and the shared OpenAlex source metrics cache, but does not rewrite `data/papers.json` or `data/archive_papers.json`.
+
 Frontend integration is additive. `assets/app.js` still fetches the existing site data from:
 
 - `data/papers.json`

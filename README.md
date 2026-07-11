@@ -57,6 +57,8 @@ The AML pipeline uses OpenAI embeddings when `OPENAI_API_KEY` is available, but 
 
 During `full_refresh`, the site marks `New` only for recommendations that were not present in the previous `public/data/aml_recommended_papers.json`. Existing recommendations keep their prior `first_added` value and are not relabeled as new just because the refresh ran.
 
+After AML recommendations are scored, the manual workflow runs an AML-only OpenAlex Sources rank enrichment step. Existing papers keep their stored OA Rank, and newly discovered Crossref AML candidates can receive `OA Rank 1` through `OA Rank 4` when their journal ISSN can be matched through OpenAlex Sources. This rank remains an internal venue signal, not JCR.
+
 Venue cards and paper cards may show `OA Rank 1` through `OA Rank 4`. This is an internal OpenAlex-based venue signal, calculated from OpenAlex Sources metadata for journals in this tracker. It is not JCR Impact Factor, not an official quartile, and not a Scopus ranking.
 
 Only recommendations with `AML score >= 0.75` are published to the public recommendation JSON and displayed on the site.

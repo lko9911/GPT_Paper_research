@@ -33,12 +33,18 @@ def main() -> None:
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(encoding="utf-8")
 
+    targets = _rank_targets()
     active = _load_list(PAPERS_PATH)
     archive = _load_list(ARCHIVE_PATH)
     aml_recommendations = _load_list(AML_RECOMMENDATIONS_PATH) if AML_RECOMMENDATIONS_PATH.exists() else []
     cache = _load_cache()
 
-    records = active + archive
+    records = []
+    if _should_rank_papers(targets):
+        records.extend(active)
+        records.extend(archive)
+    if _should_rank_aml(targets):
+        records.extend(aml_recommendations)
     venue_requests = _unique_venue_requests(records)
     fetched = 0
     for venue_key, request in sorted(venue_requests.items()):
@@ -50,9 +56,9 @@ def main() -> None:
         time.sleep(float(os.getenv("API_SLEEP_SECONDS", "0.2")))
 
     _assign_ranks(cache)
-    active_changed = _apply_ranks(active, cache)
-    archive_changed = _apply_ranks(archive, cache)
-    aml_changed = _apply_aml_ranks(aml_recommendations, active, cache) if aml_recommendations else 0
+    active_changed = _apply_ranks(active, cache) if _should_rank_papers(targets) else 0
+    archive_changed = _apply_ranks(archive, cache) if _should_rank_papers(targets) else 0
+    aml_changed = _apply_aml_ranks(aml_recommendations, active, cache) if _should_rank_aml(targets) and aml_recommendations else 0
 
     cache["rank_basis"] = RANK_BASIS
     cache["venue_count"] = len(cache["venues"])
@@ -60,8 +66,9 @@ def main() -> None:
     if fetched or active_changed or archive_changed or aml_changed:
         cache["updated_at"] = _now_iso()
     _write_json(SOURCE_METRICS_PATH, cache)
-    _write_json(PAPERS_PATH, active)
-    _write_json(ARCHIVE_PATH, archive)
+    if _should_rank_papers(targets):
+        _write_json(PAPERS_PATH, active)
+        _write_json(ARCHIVE_PATH, archive)
     if aml_recommendations:
         _write_json(AML_RECOMMENDATIONS_PATH, aml_recommendations)
 
@@ -70,6 +77,20 @@ def main() -> None:
         f"venues={len(venue_requests)}, fetched={fetched}, matched={cache['matched_venue_count']}, "
         f"active_changed={active_changed}, archive_changed={archive_changed}, aml_changed={aml_changed}"
     )
+
+
+def _rank_targets() -> set[str]:
+    raw = os.getenv("OPENALEX_RANK_TARGETS", "all")
+    targets = {item.strip().lower() for item in raw.split(",") if item.strip()}
+    return targets or {"all"}
+
+
+def _should_rank_papers(targets: set[str]) -> bool:
+    return "all" in targets or "papers" in targets
+
+
+def _should_rank_aml(targets: set[str]) -> bool:
+    return "all" in targets or "aml" in targets
 
 
 def _unique_venue_requests(records: list[dict[str, Any]]) -> dict[str, dict[str, Any]]:

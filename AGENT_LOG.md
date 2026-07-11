@@ -7849,6 +7849,36 @@
 
 ### 주의사항
 - 데이터 파일은 변경하지 않았고 OpenAlex/OpenAI API도 호출하지 않았습니다.
+## 2026-07-11 14:14
+### 변경 요약
+- AML 외부탐색 후보도 OA Rank 보강 대상에 포함되도록 수집, 공개 출력, workflow, rank enrichment 로직을 연결했습니다.
+
+### 수정/생성한 파일
+- `scripts/collect_aml_candidates.py`: Crossref 후보에서 `issn`, `issn_l`, `crossref_type`을 보존하도록 추가했습니다.
+- `scripts/aml_common.py`: AML 공개 추천 JSON에도 `issn`, `issn_l`, `crossref_type`을 포함하도록 했습니다.
+- `scripts/enrich_openalex_venue_ranks.py`: `OPENALEX_RANK_TARGETS=aml` 모드를 추가해 AML 추천 venue만 rank 보강할 수 있게 했습니다.
+- `.github/workflows/aml-recommendation-manual.yml`: 추천 생성 후 AML-only OA Rank enrichment step을 실행하고, `data/openalex_source_metrics.json`도 커밋/아티팩트 대상에 포함했습니다.
+- `README.md`: AML 추천 후 OA Rank 보강 정책을 문서화했습니다.
+- `ARCHITECTURE.md`: `OPENALEX_RANK_TARGETS=aml` 동작과 쓰기 대상 파일을 설명했습니다.
+- `PROJECT_STATUS.md`: AML 외부탐색 후보의 OA Rank 보강 상태를 업데이트했습니다.
+- `AGENT_LOG.md`: 본 변경 기록을 추가했습니다.
+
+### 구현한 기능
+- AML manual workflow에서 외부탐색으로 새로 들어온 Crossref 후보도 ISSN 기반 OpenAlex Sources lookup을 통해 OA Rank를 받을 수 있습니다.
+- AML-only rank mode는 `public/data/aml_recommended_papers.json`과 `data/openalex_source_metrics.json`만 갱신하고, 일반 논문 데이터셋은 다시 쓰지 않습니다.
+
+### 설계 결정
+- 기존 일반 논문 rank enrichment는 기본값 `OPENALEX_RANK_TARGETS=all`을 유지해 동작을 깨지 않도록 했습니다.
+- AML workflow에서는 `OPENALEX_RANK_TARGETS=aml`을 지정해 새 추천 결과만 보강합니다.
+- OA Rank는 계속 “OpenAlex 기반 내부 venue signal”로만 표시하며 JCR/IF/Q 등 공식 지표로 표현하지 않습니다.
+
+### 남은 작업
+- 다음 AML manual workflow 실행 후 새 외부탐색 후보 중 ISSN이 있는 항목에 OA Rank가 채워지는지 확인합니다.
+
+### 주의사항
+- OpenAlex Sources에서 ISSN으로 source match가 되지 않는 venue는 여전히 `No rank`로 남을 수 있습니다.
+- 이 변경 과정에서는 OpenAlex API를 직접 호출하지 않았고, workflow가 실행될 때만 호출됩니다.
+
 ## 2026-07-11 14:09
 ### 변경 요약
 - AML manual workflow에서 full refresh 후 기존 추천 전체가 NEW로 보이지 않도록 이전 공개 추천 목록과 비교하는 로직을 추가했습니다.
