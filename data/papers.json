@@ -1416,7 +1416,7 @@
     "first_added": "2026-07-12",
     "last_updated": "2026-07-13",
     "is_weekly_new": true,
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "last_seen_in_crossref_run": "2026-07-13",
     "openalex_venue_rank": "Rank 3",
     "openalex_venue_rank_number": 3,
@@ -37424,7 +37424,7 @@
     "last_updated": "2026-07-13",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-07-13",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 7.329281469475959,
@@ -58719,6 +58719,145 @@
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 12.005587372538065,
     "openalex_venue_rank_percentile": 0.9286,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+  },
+  {
+    "id": "10.1016/j.addma.2026.105298",
+    "title": "Rheological insights into vat photopolymerization 3D printing of colloidal suspensions",
+    "authors": [
+      "Ejajul Hoque",
+      "Anna Klear",
+      "Maliha Marzana",
+      "Seyed A. Golsorkhi",
+      "Benjamin M. Yavitt"
+    ],
+    "author_details": [
+      {
+        "name": "Ejajul Hoque",
+        "orcid": "https://orcid.org/0000-0002-9315-5962",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Anna Klear",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Maliha Marzana",
+        "orcid": "https://orcid.org/0000-0001-7323-093X",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Seyed A. Golsorkhi",
+        "orcid": "https://orcid.org/0009-0002-8485-1402",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Benjamin M. Yavitt",
+        "orcid": "https://orcid.org/0000-0001-9308-7472",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "year": 2026,
+    "venue": "Additive Manufacturing",
+    "doi": "10.1016/j.addma.2026.105298",
+    "url": "https://doi.org/10.1016/j.addma.2026.105298",
+    "source": [
+      "Crossref"
+    ],
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Additive Manufacturing",
+    "crossref_target_issn": "2214-8604",
+    "issn": [
+      "2214-8604"
+    ],
+    "issn_l": "",
+    "publisher": "Elsevier BV",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S2764842179",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S2764842179",
+      "issn_l": "2214-7810",
+      "issn": [
+        "2214-7810",
+        "2214-8604"
+      ],
+      "type": "journal",
+      "host_organization_name": "Elsevier BV",
+      "works_count": 5106,
+      "cited_by_count": 246110,
+      "two_year_mean_citedness": 7.721680420105026,
+      "h_index": 193,
+      "i10_index": 3661,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 7.721680420105026,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "publication_type": "journal_article",
+    "venue_trust": "trusted",
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "is_core_venue": true,
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "categories": [
+      "Multi-material AM"
+    ],
+    "tags": [
+      "Vat photopolymerization"
+    ],
+    "relevance_score": 5,
+    "curation_priority": false,
+    "ai_summary_en": "1. Topic - Rheological insights into vat photopolymerization 3D printing of colloidal suspensions is a 2026 paper from Additive Manufacturing about Vat photopolymerization.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Vat photopolymerization.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Vat photopolymerization; current relevance score is 5/10.",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_en": "Relevant to the tracker through Vat photopolymerization; score: 5/10.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-07-13",
+    "last_updated": "2026-07-13",
+    "is_weekly_new": true,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-07-13",
+    "openalex_venue_rank": "Rank 1",
+    "openalex_venue_rank_number": 1,
+    "openalex_venue_rank_score": 7.721680420105026,
+    "openalex_venue_rank_percentile": 0.8244,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
@@ -101317,7 +101456,7 @@
     "last_updated": "2026-07-13",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-07-13",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 4.7158026233604,
@@ -129947,7 +130086,7 @@
     "last_updated": "2026-07-13",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-07-13",
-    "not_seen_in_latest_crossref_run": true,
+    "not_seen_in_latest_crossref_run": false,
     "openalex_venue_rank": "Rank 3",
     "openalex_venue_rank_number": 3,
     "openalex_venue_rank_score": 3.456932773109244,
@@ -161959,7 +162098,7 @@
     "last_updated": "2026-07-13",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-07-13",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 5.911634756995582,
