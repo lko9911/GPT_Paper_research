@@ -1,4 +1,90 @@
 {
+  "10.1016/j.addma.2025.104963": {
+    "author_details": [
+      {
+        "name": "Charles Wade",
+        "orcid": "https://orcid.org/0000-0002-6056-7717",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Devon Beck",
+        "orcid": "https://orcid.org/0000-0001-5010-579X",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Robert MacCurdy",
+        "orcid": "https://orcid.org/0000-0002-1726-151X",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2214-8604"
+    ],
+    "issn_l": "",
+    "publisher": "Elsevier BV",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4415389163",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S2764842179",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S2764842179",
+      "issn_l": "2214-7810",
+      "issn": [
+        "2214-7810",
+        "2214-8604"
+      ],
+      "type": "journal",
+      "host_organization_name": "Elsevier BV",
+      "works_count": 5106,
+      "cited_by_count": 246110,
+      "two_year_mean_citedness": 7.721680420105026,
+      "h_index": 193,
+      "i10_index": 3661,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 7.721680420105026,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - This paper discusses a method for generating toolpaths in functionally graded additive manufacturing.\n2. Problem - The challenge addressed is the complexity of creating efficient toolpaths that accommodate varying material properties.\n3. Method - The authors propose a gradient-informed slicing technique to facilitate implicit toolpath generation.\n4. Key Result - The approach demonstrates improved efficiency and accuracy in producing functionally graded components.\n5. Takeaway - Gradient-informed slicing can significantly enhance the additive manufacturing process by optimizing toolpath generation.",
+    "relevance_note_en": "The summary captures the core aspects of the paper's focus on toolpath generation for additive manufacturing.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-07-13",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1016/j.addma.2025.104963"
+  },
   "10.34133/research.0889": {
     "author_details": [
       {
@@ -28689,131 +28775,5 @@
     "last_seen_in_crossref_run": "2026-07-13",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.addlet.2025.100274"
-  },
-  "10.1016/j.addma.2025.104817": {
-    "author_details": [
-      {
-        "name": "Donghua Zhao",
-        "orcid": "https://orcid.org/0000-0002-6134-4929",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Zhaowei Zhou",
-        "orcid": "https://orcid.org/0009-0002-1630-9793",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Kaicheng Ruan",
-        "orcid": "https://orcid.org/0000-0003-1806-0629",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Xuguang Xu",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Guoquan Zhang",
-        "orcid": "https://orcid.org/0000-0002-1028-1059",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Ziwen Chen",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Kui Wang",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Yi Xiong",
-        "orcid": "https://orcid.org/0000-0002-0184-8607",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2214-8604"
-    ],
-    "issn_l": "",
-    "publisher": "Elsevier BV",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4410314642",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S2764842179",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S2764842179",
-      "issn_l": "2214-7810",
-      "issn": [
-        "2214-7810",
-        "2214-8604"
-      ],
-      "type": "journal",
-      "host_organization_name": "Elsevier BV",
-      "works_count": 5106,
-      "cited_by_count": 246110,
-      "two_year_mean_citedness": 7.721680420105026,
-      "h_index": 193,
-      "i10_index": 3661,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Core manufacturing journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 7.721680420105026,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 1",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - This paper focuses on the in-process density measurement for optimizing functionally graded foam structures in additive manufacturing.\n2. Problem - The challenge addressed is the need for effective monitoring and control of density during the manufacturing process to enhance material properties.\n3. Method - The authors propose a model-based approach that integrates real-time density measurements into the optimization of the manufacturing process.\n4. Key Result - The study demonstrates that the proposed method significantly improves the consistency and quality of the produced foam structures.\n5. Takeaway - Incorporating in-process density measurement can lead to better control and optimization in additive manufacturing of complex materials.",
-    "relevance_note_en": "The summary captures the essence of the research focus and findings without direct paraphrasing.",
-    "abstract_used_for_summary": false,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-07-13",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1016/j.addma.2025.104817"
   }
 }
