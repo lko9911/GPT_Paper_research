@@ -1,4 +1,171 @@
 {
+  "10.1089/3dp.2025.0043": {
+    "author_details": [
+      {
+        "name": "Xishuang Jing",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Research Institute of Aero-Engine, Beihang University, Beijing, China"
+          },
+          {
+            "name": "School of Mechanical Engineering &amp; Automation, Beihang University, Beijing, China."
+          },
+          {
+            "name": "Hangzhou International Innovation Institute, Beihang University, Hangzhou, China."
+          },
+          {
+            "name": "Key Laboratory of Intelligent Manufacturing Technology for Aeronautics Advanced Equipment (Beihang University), Ministry of Industry and Information Technology, Beijing, China."
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Research Institute of Aero-Engine, Beihang University, Beijing, China",
+          "School of Mechanical Engineering &amp; Automation, Beihang University, Beijing, China.",
+          "Hangzhou International Innovation Institute, Beihang University, Hangzhou, China.",
+          "Key Laboratory of Intelligent Manufacturing Technology for Aeronautics Advanced Equipment (Beihang University), Ministry of Industry and Information Technology, Beijing, China."
+        ]
+      },
+      {
+        "name": "Boyan Shen",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Research Institute of Aero-Engine, Beihang University, Beijing, China"
+          },
+          {
+            "name": "Hangzhou International Innovation Institute, Beihang University, Hangzhou, China."
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Research Institute of Aero-Engine, Beihang University, Beijing, China",
+          "Hangzhou International Innovation Institute, Beihang University, Hangzhou, China."
+        ]
+      },
+      {
+        "name": "Lesheng Yang",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "School of Mechanical Engineering &amp; Automation, Beihang University, Beijing, China."
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Mechanical Engineering &amp; Automation, Beihang University, Beijing, China."
+        ]
+      },
+      {
+        "name": "Jihao Ran",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "School of Mechanical Engineering &amp; Automation, Beihang University, Beijing, China."
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Mechanical Engineering &amp; Automation, Beihang University, Beijing, China."
+        ]
+      },
+      {
+        "name": "Xunsheng Du",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Research Institute of Aero-Engine, Beihang University, Beijing, China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Research Institute of Aero-Engine, Beihang University, Beijing, China"
+        ]
+      },
+      {
+        "name": "Fubao Xie",
+        "orcid": "https://orcid.org/0000-0002-2652-246X",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Research Institute of Aero-Engine, Beihang University, Beijing, China"
+          },
+          {
+            "name": "Hangzhou International Innovation Institute, Beihang University, Hangzhou, China."
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Research Institute of Aero-Engine, Beihang University, Beijing, China",
+          "Hangzhou International Innovation Institute, Beihang University, Hangzhou, China."
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2329-7662",
+      "2329-7670"
+    ],
+    "issn_l": "",
+    "publisher": "SAGE Publications",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4411696204",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S4210174904",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210174904",
+      "issn_l": "2329-7662",
+      "issn": [
+        "2329-7662",
+        "2329-7670"
+      ],
+      "type": "journal",
+      "host_organization_name": "Mary Ann Liebert, Inc.",
+      "works_count": 768,
+      "cited_by_count": 14262,
+      "two_year_mean_citedness": 2.4384615384615387,
+      "h_index": 55,
+      "i10_index": 325,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 2.4384615384615387,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 3",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - The study focuses on enhancing multi-material direct ink writing (M-DIW) technology.\n2. Problem - Challenges such as switching lag and coextrusion during material switching hinder printing accuracy.\n3. Method - An M-DIW system with a pneumatic extrusion control and multichannel printhead is developed, alongside a flow rate–pressure model and a static ink pre-extrusion control strategy.\n4. Key Result - The proposed system significantly improves material switching precision and enables high-resolution printing of complex structures.\n5. Takeaway - This research optimizes M-DIW printing, allowing for the efficient creation of intricate soft polymeric designs.",
+    "relevance_note_en": "The summary captures the core aspects of the research, including the technology, challenges, methods, results, and implications.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-07-14",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1089/3dp.2025.0043"
+  },
   "10.3390/jcs9110588": {
     "author_details": [
       {
@@ -18754,7 +18921,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "last_seen_in_crossref_run": "2026-07-14",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "id": "10.3390/systems13080651"
   },
   "10.3390/jmmp9120400": {
@@ -18857,7 +19024,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "last_seen_in_crossref_run": "2026-07-14",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "id": "10.3390/jmmp9120400"
   },
   "10.64229/t20sy660": {
@@ -28688,146 +28855,5 @@
     "last_seen_in_crossref_run": "2026-07-14",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.jmrt.2025.09.159"
-  },
-  "10.1016/j.mtadv.2025.100584": {
-    "author_details": [
-      {
-        "name": "Oliver Nelson-Dummett",
-        "orcid": "https://orcid.org/0000-0002-4633-7536",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Thomas Whittaker",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "William Whittow",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Jacek Wojcik",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Juan Francisco Reyes Luna",
-        "orcid": "https://orcid.org/0000-0002-1096-524X",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Caitlin McCall",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Ahmet Koca",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Christopher J. Tuck",
-        "orcid": "https://orcid.org/0000-0003-0146-3851",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Richard J.M. Hague",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Lyudmila Turyanska",
-        "orcid": "https://orcid.org/0000-0002-9552-6501",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2590-0498"
-    ],
-    "issn_l": "",
-    "publisher": "Elsevier BV",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4410250800",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S4210206330",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S4210206330",
-      "issn_l": "2590-0498",
-      "issn": [
-        "2590-0498"
-      ],
-      "type": "journal",
-      "host_organization_name": "Elsevier BV",
-      "works_count": 835,
-      "cited_by_count": 18269,
-      "two_year_mean_citedness": 3.235148514851485,
-      "h_index": 67,
-      "i10_index": 353,
-      "is_core": true,
-      "is_oa": true,
-      "is_in_doaj": true
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 3.235148514851485,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 3",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The study focuses on inkjet printing techniques for creating complex 3D structures using silver and polymers.\n2. Problem - Current limitations in inkjet deposition hinder the production of intricate 3D geometries, restricting their practical applications.\n3. Method - The authors developed a method for printing self-supporting silver micropillars and lattices, achieving significant height and precision.\n4. Key Result - The printed structures exhibit unique dielectric properties that can be adjusted based on the arrangement of silver elements, showcasing their potential in advanced applications.\n5. Takeaway - This research advances the capabilities of inkjet printing, paving the way for innovative manufacturing in electronics and metamaterials.",
-    "relevance_note_en": "The paper presents significant advancements in inkjet printing technology for 3D structures, relevant to materials science and engineering.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-07-14",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1016/j.mtadv.2025.100584"
   }
 }
