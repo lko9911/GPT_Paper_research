@@ -1,4 +1,165 @@
 {
+  "10.1089/soro.2023.0134": {
+    "author_details": [
+      {
+        "name": "Xing Wang",
+        "orcid": "https://orcid.org/0000-0002-8676-7821",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Robotics and Autonomous Systems, Data61, CSIRO, Brisbane, Australia."
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Robotics and Autonomous Systems, Data61, CSIRO, Brisbane, Australia."
+        ]
+      },
+      {
+        "name": "Bing Wang",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "School of Engineering and Information Technology, UNSW, Canberra, Australia."
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Engineering and Information Technology, UNSW, Canberra, Australia."
+        ]
+      },
+      {
+        "name": "Joshua Pinskier",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Robotics and Autonomous Systems, Data61, CSIRO, Brisbane, Australia."
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Robotics and Autonomous Systems, Data61, CSIRO, Brisbane, Australia."
+        ]
+      },
+      {
+        "name": "Yue Xie",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Robotics and Autonomous Systems, Data61, CSIRO, Brisbane, Australia."
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Robotics and Autonomous Systems, Data61, CSIRO, Brisbane, Australia."
+        ]
+      },
+      {
+        "name": "James Brett",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Robotics and Autonomous Systems, Data61, CSIRO, Brisbane, Australia."
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Robotics and Autonomous Systems, Data61, CSIRO, Brisbane, Australia."
+        ]
+      },
+      {
+        "name": "Richard Scalzo",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Computational Modelling Group, Data61, CSIRO, Melbourne, Australia."
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Computational Modelling Group, Data61, CSIRO, Melbourne, Australia."
+        ]
+      },
+      {
+        "name": "David Howard",
+        "orcid": "https://orcid.org/0000-0002-5012-7224",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Robotics and Autonomous Systems, Data61, CSIRO, Brisbane, Australia."
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Robotics and Autonomous Systems, Data61, CSIRO, Brisbane, Australia."
+        ]
+      }
+    ],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2169-5172",
+      "2169-5180"
+    ],
+    "issn_l": "",
+    "publisher": "SAGE Publications",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "https://openalex.org/W4392909235",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S2764443376",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S2764443376",
+      "issn_l": "2169-5172",
+      "issn": [
+        "2169-5172",
+        "2169-5180"
+      ],
+      "type": "journal",
+      "host_organization_name": "Mary Ann Liebert, Inc.",
+      "works_count": 868,
+      "cited_by_count": 44334,
+      "two_year_mean_citedness": 4.570135746606335,
+      "h_index": 106,
+      "i10_index": 569,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 4.570135746606335,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 2",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The paper presents a framework for optimizing soft robotic fingers using Bayesian methods.\n2. Problem - Existing computational design methods for soft robotics often lack fidelity, sufficient iterations, and focus on single objectives.\n3. Method - The authors employ a nonlinear Finite Element Modeling suite and a multi-objective Bayesian optimizer to explore a larger design space.\n4. Key Result - The framework successfully identifies optimal designs for Fin Ray grippers, demonstrating improved performance and usability.\n5. Takeaway - This approach enhances the design process for soft robotics by balancing multiple objectives and leveraging extensive experimental validation.",
+    "relevance_note_en": "The summary captures the essence of the paper's contributions and findings.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-07-14",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1089/soro.2023.0134"
+  },
   "10.36652/1813-1336-2024-20-1-41-45": {
     "author_details": [
       {
@@ -32598,98 +32759,5 @@
     "last_seen_in_crossref_run": "2026-07-14",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1007/s00170-024-14605-5"
-  },
-  "10.1038/s41467-024-52716-5": {
-    "author_details": [
-      {
-        "name": "Huan Jiang",
-        "orcid": "https://orcid.org/0000-0003-2597-4576",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Christopher Chung",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Martin L. Dunn",
-        "orcid": "https://orcid.org/0000-0002-4531-9176",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Kai Yu",
-        "orcid": "https://orcid.org/0000-0001-9067-1673",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2041-1723"
-    ],
-    "issn_l": "",
-    "publisher": "Springer Science and Business Media LLC",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4403037757",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S64187185",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S64187185",
-      "issn_l": "2041-1723",
-      "issn": [
-        "2041-1723"
-      ],
-      "type": "journal",
-      "host_organization_name": "Nature Portfolio",
-      "works_count": 90441,
-      "cited_by_count": 7551319,
-      "two_year_mean_citedness": 16.130086313193587,
-      "h_index": 743,
-      "i10_index": 68559,
-      "is_core": true,
-      "is_oa": true,
-      "is_in_doaj": true
-    },
-    "journal_quality": {
-      "label": "High-impact general journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 16.130086313193587,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 1",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - The study focuses on a novel 4D printing technique for liquid crystal elastomer composites reinforced with continuous fibers.\n2. Problem - There is a need for advanced materials that can adapt and respond dynamically to external stimuli for various applications.\n3. Method - The authors developed a 4D printing process that aligns mesogens in the LCE matrix through shear forces generated during the printing of fiber-reinforced composites.\n4. Key Result - The resulting composites exhibit programmable reversible deformations and enhanced mechanical properties, including high actuation forces and energy absorption.\n5. Takeaway - This innovative 4D printing approach offers a cost-effective solution for creating multifunctional LCE composites suitable for applications in soft robotics and wearable technology.",
-    "relevance_note_en": "The summary captures the essence of the study's contributions and findings related to 4D printing of LCE composites.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-07-14",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1038/s41467-024-52716-5"
   }
 }

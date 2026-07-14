@@ -1,4 +1,137 @@
 {
+  "10.1080/17452759.2026.2676407": {
+    "author_details": [
+      {
+        "name": "Cheng Wen",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Sichuan University"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Sichuan University"
+        ]
+      },
+      {
+        "name": "Xiangjun Zha",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Affiliated Hospital of Southwest Jiaotong University, The Third People's Hospital of Chengdu"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Affiliated Hospital of Southwest Jiaotong University, The Third People's Hospital of Chengdu"
+        ]
+      },
+      {
+        "name": "Lin Chen",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Sichuan University"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Sichuan University"
+        ]
+      },
+      {
+        "name": "Rui Li",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Sichuan University"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Sichuan University"
+        ]
+      },
+      {
+        "name": "Jigang Huang",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Sichuan University"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Sichuan University"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Virtual and Physical Prototyping",
+    "crossref_target_issn": "1745-2759",
+    "issn": [
+      "1745-2759",
+      "1745-2767"
+    ],
+    "issn_l": "",
+    "publisher": "Informa UK Limited",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7163167279",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S152936027",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S152936027",
+      "issn_l": "1745-2759",
+      "issn": [
+        "1745-2759",
+        "1745-2767"
+      ],
+      "type": "journal",
+      "host_organization_name": "Taylor & Francis",
+      "works_count": 1288,
+      "cited_by_count": 39605,
+      "two_year_mean_citedness": 10.10738255033557,
+      "h_index": 92,
+      "i10_index": 718,
+      "is_core": true,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 10.10738255033557,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - The study focuses on enhancing the design of DLP 3D printed nanocomposites using deep learning techniques.\n2. Problem - A key challenge is the complex relationship between material composition and the resulting mechanical properties and printing precision.\n3. Method - The authors propose a machine learning framework that combines a forward model for performance prediction and an inverse design method using a Gradient Refinement Loop.\n4. Key Result - The framework achieves high predictive accuracy for printing precision and mechanical properties, successfully identifying optimized material formulations.\n5. Takeaway - This data-driven approach significantly streamlines the material design process, enabling the creation of high-performance 3D printed parts.",
+    "relevance_note_en": "The paper presents a novel machine learning approach to optimize the design of 3D printed nanocomposites, addressing key challenges in material performance.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-07-14",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1080/17452759.2026.2676407"
+  },
   "10.1016/j.matdes.2026.116463": {
     "author_details": [
       {
@@ -37067,136 +37200,5 @@
     "last_seen_in_crossref_run": "2026-07-14",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1089/3dp.2025.0043"
-  },
-  "10.3390/jcs9110588": {
-    "author_details": [
-      {
-        "name": "Savvas Koltsakidis",
-        "orcid": "https://orcid.org/0000-0002-3305-4545",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Digital Manufacturing and Materials Characterization Laboratory, School of Science and Technology, International Hellenic University, 57001 Thessaloniki, Greece"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Digital Manufacturing and Materials Characterization Laboratory, School of Science and Technology, International Hellenic University, 57001 Thessaloniki, Greece"
-        ]
-      },
-      {
-        "name": "Konstantinos Tsongas",
-        "orcid": "https://orcid.org/0000-0001-7050-5432",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Industrial Engineering and Management, School of Engineering, International Hellenic University, 57001 Thessaloniki, Greece"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Industrial Engineering and Management, School of Engineering, International Hellenic University, 57001 Thessaloniki, Greece"
-        ]
-      },
-      {
-        "name": "Nikolaos Papas",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Digital Manufacturing and Materials Characterization Laboratory, School of Science and Technology, International Hellenic University, 57001 Thessaloniki, Greece"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Digital Manufacturing and Materials Characterization Laboratory, School of Science and Technology, International Hellenic University, 57001 Thessaloniki, Greece"
-        ]
-      },
-      {
-        "name": "Eleftheria Maria Pechlivani",
-        "orcid": "https://orcid.org/0000-0001-6385-2815",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Information Technologies Institute, Centre for Research and Technology Hellas, 57001 Thessaloniki, Greece"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Information Technologies Institute, Centre for Research and Technology Hellas, 57001 Thessaloniki, Greece"
-        ]
-      },
-      {
-        "name": "Dimitrios Tzetzis",
-        "orcid": "https://orcid.org/0000-0001-5006-5759",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Digital Manufacturing and Materials Characterization Laboratory, School of Science and Technology, International Hellenic University, 57001 Thessaloniki, Greece"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Digital Manufacturing and Materials Characterization Laboratory, School of Science and Technology, International Hellenic University, 57001 Thessaloniki, Greece"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2504-477X"
-    ],
-    "issn_l": "",
-    "publisher": "MDPI AG",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4415820487",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S4210181540",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S4210181540",
-      "issn_l": "2504-477X",
-      "issn": [
-        "2504-477X"
-      ],
-      "type": "journal",
-      "host_organization_name": "Multidisciplinary Digital Publishing Institute",
-      "works_count": 3252,
-      "cited_by_count": 40934,
-      "two_year_mean_citedness": 4.7158026233604,
-      "h_index": 75,
-      "i10_index": 1089,
-      "is_core": true,
-      "is_oa": true,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 4.7158026233604,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 2",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - This study focuses on the development of honeycomb structures with gradient stiffness using multi-material fused filament fabrication.\n2. Problem - Existing methods primarily adjust thickness to create gradient stiffness, which limits design flexibility and performance.\n3. Method - The authors employed a dual-head 3D printer to fabricate honeycombs with varying TPU materials, achieving controlled stiffness gradients through material distribution.\n4. Key Result - Testing showed that the gradient stiffness honeycombs provided superior energy absorption across a wider range of stress levels compared to uniform materials.\n5. Takeaway - The innovative design and fabrication approach enhances the mechanical performance of honeycomb structures, making them suitable for diverse applications.",
-    "relevance_note_en": "The summary captures the essence of the study's focus on gradient stiffness and its implications for material performance.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-07-14",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.3390/jcs9110588"
   }
 }
