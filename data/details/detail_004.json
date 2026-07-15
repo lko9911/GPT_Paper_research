@@ -1,4 +1,165 @@
 {
+  "10.1002/adma.202416621": {
+    "author_details": [
+      {
+        "name": "Alicia Ng",
+        "orcid": "https://orcid.org/0009-0003-5553-3533",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Materials Science and Engineering University of Pennsylvania  3231 Walnut Street Philadelphia PA 19104 USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Materials Science and Engineering University of Pennsylvania  3231 Walnut Street Philadelphia PA 19104 USA"
+        ]
+      },
+      {
+        "name": "Rodrigo Telles",
+        "orcid": "https://orcid.org/0000-0001-5785-6289",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "John A. Paulson School of Engineering and Applied Sciences and Wyss Institute for Biologically Inspired Engineering Harvard University  Cambridge MA 02138 USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "John A. Paulson School of Engineering and Applied Sciences and Wyss Institute for Biologically Inspired Engineering Harvard University  Cambridge MA 02138 USA"
+        ]
+      },
+      {
+        "name": "Katherine S. Riley",
+        "orcid": "https://orcid.org/0000-0002-8832-5146",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Lawrence Livermore National Laboratory  Livermore CA 94550 USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Lawrence Livermore National Laboratory  Livermore CA 94550 USA"
+        ]
+      },
+      {
+        "name": "Jennifer A. Lewis",
+        "orcid": "https://orcid.org/0000-0002-0280-2774",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "John A. Paulson School of Engineering and Applied Sciences and Wyss Institute for Biologically Inspired Engineering Harvard University  Cambridge MA 02138 USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "John A. Paulson School of Engineering and Applied Sciences and Wyss Institute for Biologically Inspired Engineering Harvard University  Cambridge MA 02138 USA"
+        ]
+      },
+      {
+        "name": "Caitlyn C. Cook",
+        "orcid": "https://orcid.org/0000-0002-3290-6988",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Lawrence Livermore National Laboratory  Livermore CA 94550 USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Lawrence Livermore National Laboratory  Livermore CA 94550 USA"
+        ]
+      },
+      {
+        "name": "Elaine Lee",
+        "orcid": "https://orcid.org/0000-0003-2015-8529",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Lawrence Livermore National Laboratory  Livermore CA 94550 USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Lawrence Livermore National Laboratory  Livermore CA 94550 USA"
+        ]
+      },
+      {
+        "name": "Shu Yang",
+        "orcid": "https://orcid.org/0000-0001-8834-3320",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Materials Science and Engineering University of Pennsylvania  3231 Walnut Street Philadelphia PA 19104 USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Materials Science and Engineering University of Pennsylvania  3231 Walnut Street Philadelphia PA 19104 USA"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Advanced Materials",
+    "crossref_target_issn": "0935-9648",
+    "issn": [
+      "0935-9648",
+      "1521-4095"
+    ],
+    "issn_l": "",
+    "publisher": "Wiley",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4406848823",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S99352657",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S99352657",
+      "issn_l": "0935-9648",
+      "issn": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "type": "journal",
+      "host_organization_name": null,
+      "works_count": 44789,
+      "cited_by_count": 4803689,
+      "two_year_mean_citedness": 21.19633376740459,
+      "h_index": 743,
+      "i10_index": 31001,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "High-impact general journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 21.19633376740459,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - This study focuses on the 3D printing of cholesteric liquid crystal elastomers (CLCEs).\n2. Problem - The challenge lies in fabricating complex 3D structures due to conflicting rheological properties required for cholesteric alignment.\n3. Method - Coaxial direct ink writing (DIW) is employed to print a cholesteric liquid crystal ink within a silicone ink, allowing for effective layer-by-layer construction.\n4. Key Result - The method successfully produces free-standing bistable thin-shell domes that exhibit color changes under mechanical stress, functioning as mechanical sensors.\n5. Takeaway - This innovative approach enhances the potential applications of CLCEs in areas like anti-counterfeiting and soft robotics through rapid 3D fabrication.",
+    "relevance_note_en": "The summary captures the core aspects of the research, including its focus, challenges, methods, results, and implications.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-07-15",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1002/adma.202416621"
+  },
   "10.1002/adma.71106": {
     "author_details": [
       {
@@ -30122,124 +30283,5 @@
     "last_seen_in_crossref_run": "2026-07-15",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/srin.202400100"
-  },
-  "10.1007/s00170-024-13608-6": {
-    "author_details": [
-      {
-        "name": "Adam Zuyyinal Adib",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Juan Pratama",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Muhammad Imawan Badranaya",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Muslim Mahardika",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Suyitno",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Urip Agus Salim",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Budi Arifvianto",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "International Journal of Advanced Manufacturing Technology",
-    "crossref_target_issn": "0268-3768",
-    "issn": [
-      "0268-3768",
-      "1433-3015"
-    ],
-    "issn_l": "",
-    "publisher": "Springer Science and Business Media LLC",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4395456556",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S77056576",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S77056576",
-      "issn_l": "0268-3768",
-      "issn": [
-        "0268-3768",
-        "1433-3015"
-      ],
-      "type": "journal",
-      "host_organization_name": "Springer Science+Business Media",
-      "works_count": 31026,
-      "cited_by_count": 730438,
-      "two_year_mean_citedness": 3.7044257112750265,
-      "h_index": 199,
-      "i10_index": 18166,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 3.7044257112750265,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 2",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The study investigates the flexural strength of sandwich-structured components made from polylactic acid and thermoplastic polyurethane.\n2. Problem - There is a need to understand the mechanical properties of multi-material structures produced through additive manufacturing techniques.\n3. Method - The research employs extrusion-based multi-material additive manufacturing to fabricate the sandwich structures and assess their flexural strength.\n4. Key Result - Findings indicate that the flexural strength of the fabricated parts varies significantly based on the material composition and structure.\n5. Takeaway - Optimizing material combinations in multi-material additive manufacturing can enhance the mechanical performance of sandwich-structured components.",
-    "relevance_note_en": "The paper addresses a specific aspect of multi-material additive manufacturing relevant to mechanical properties.",
-    "abstract_used_for_summary": false,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-07-15",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1007/s00170-024-13608-6"
   }
 }

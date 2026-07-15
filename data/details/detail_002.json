@@ -1,4 +1,123 @@
 {
+  "10.1080/17452759.2025.2546671": {
+    "author_details": [
+      {
+        "name": "Xiaochen Yu",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Imperial College London"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Imperial College London"
+        ]
+      },
+      {
+        "name": "Jacklyn Griffis",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Pennsylvania State University"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Pennsylvania State University"
+        ]
+      },
+      {
+        "name": "Guha Manogharan",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Pennsylvania State University"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Pennsylvania State University"
+        ]
+      },
+      {
+        "name": "Ajit Panesar",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Imperial College London"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Imperial College London"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "1745-2759",
+      "1745-2767"
+    ],
+    "issn_l": "",
+    "publisher": "Informa UK Limited",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4413640020",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S152936027",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S152936027",
+      "issn_l": "1745-2759",
+      "issn": [
+        "1745-2759",
+        "1745-2767"
+      ],
+      "type": "journal",
+      "host_organization_name": "Taylor & Francis",
+      "works_count": 1288,
+      "cited_by_count": 39605,
+      "two_year_mean_citedness": 10.10738255033557,
+      "h_index": 92,
+      "i10_index": 718,
+      "is_core": true,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 10.10738255033557,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - The paper discusses multi-material additive manufacturing (MMAM) from a computational design viewpoint.\n2. Problem - It addresses the challenges of fully utilizing MMAM's capabilities due to the need for advanced design tools and fabrication techniques.\n3. Method - The review evaluates various computational algorithms for multi-material design, including numerical methods and data-driven strategies.\n4. Key Result - Identified challenges in MMAM include interface management, material response modeling, and the need for an integrated design-manufacturing-validation workflow.\n5. Takeaway - The study suggests incorporating specific considerations into optimization frameworks and outlines future research directions for enhancing MMAM applications.",
+    "relevance_note_en": "The summary captures the essence of the paper's focus on computational design in MMAM and its associated challenges.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-07-15",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1080/17452759.2025.2546671"
+  },
   "10.36922/esam025180010": {
     "author_details": [
       {
@@ -1035,7 +1154,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "last_seen_in_crossref_run": "2026-07-15",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "id": "10.3390/jcs9100534"
   },
   "10.1007/s10845-024-02488-y": {
@@ -28703,116 +28822,5 @@
     "last_seen_in_crossref_run": "2026-07-15",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.jmsy.2024.12.016"
-  },
-  "10.1108/rpj-05-2024-0205": {
-    "author_details": [
-      {
-        "name": "Haoqin Yang",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Zhongde Shan",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Dandan Yan",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Jianpei Shi",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Jian Huang",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Shijie Dong",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "Rapid Prototyping Journal",
-    "crossref_target_issn": "1355-2546",
-    "issn": [
-      "1355-2546",
-      "1355-2546"
-    ],
-    "issn_l": "",
-    "publisher": "Emerald",
-    "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "https://openalex.org/W4404484105",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S173500210",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S173500210",
-      "issn_l": "1355-2546",
-      "issn": [
-        "1355-2546",
-        "1758-7670"
-      ],
-      "type": "journal",
-      "host_organization_name": "Emerald Publishing Limited",
-      "works_count": 2524,
-      "cited_by_count": 98147,
-      "two_year_mean_citedness": 3.0,
-      "h_index": 139,
-      "i10_index": 1507,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Core manufacturing journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 3.0,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 3",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - The paper presents a novel method for manufacturing multimaterial sand molds using binder jetting.\n2. Problem - It addresses the challenge of optimizing the quality of powder beds in multimaterial sand mold production.\n3. Method - The study employs numerical simulations and X-ray Computed Tomography to analyze the effects of various parameters on resin penetration and curing in different sand types.\n4. Key Result - Optimal printing conditions were identified, resulting in a multimaterial powder bed with suitable surface roughness and porosity for additive manufacturing.\n5. Takeaway - The developed sand-laying device demonstrates the capability to produce high-quality multimaterial sand molds, fulfilling the requirements for effective additive manufacturing.",
-    "relevance_note_en": "The summary accurately captures the core contributions and findings of the research.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-07-15",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1108/rpj-05-2024-0205"
   }
 }

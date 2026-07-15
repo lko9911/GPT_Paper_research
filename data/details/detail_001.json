@@ -1,4 +1,73 @@
 {
+  "10.31031/eme.2026.06.000641": {
+    "author_details": [
+      {
+        "name": "Zhuo Meng",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2640-9690"
+    ],
+    "issn_l": "",
+    "publisher": "Crimson Publishers",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7132850820",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S4210220979",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210220979",
+      "issn_l": "2640-9690",
+      "issn": [
+        "2640-9690"
+      ],
+      "type": "journal",
+      "host_organization_name": null,
+      "works_count": 209,
+      "cited_by_count": 102,
+      "two_year_mean_citedness": 0.12244897959183673,
+      "h_index": 5,
+      "i10_index": 1,
+      "is_core": true,
+      "is_oa": true,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 0.12244897959183673,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 4",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The study focuses on the development of a soft robotic gripper using advanced additive manufacturing techniques.\n2. Problem - Challenges in creating complex, multi-material structures with integrated sensing capabilities are addressed.\n3. Method - The research utilizes Multi-Material PolyJet technology for the fabrication of a monolithic gripper incorporating various materials.\n4. Key Result - The approach successfully enables the production of functionally graded materials and the integration of sensors within the gripper.\n5. Takeaway - This work highlights the potential of additive manufacturing to overcome traditional fabrication limitations in robotics.",
+    "relevance_note_en": "The summary captures the essence of the paper's focus on soft robotics and additive manufacturing techniques.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-07-15",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.31031/eme.2026.06.000641"
+  },
   "10.1002/adrr.202500054": {
     "author_details": [
       {
@@ -37100,124 +37169,5 @@
     "last_seen_in_crossref_run": "2026-07-15",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.oceram.2025.100741"
-  },
-  "10.1080/17452759.2025.2546671": {
-    "author_details": [
-      {
-        "name": "Xiaochen Yu",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Imperial College London"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Imperial College London"
-        ]
-      },
-      {
-        "name": "Jacklyn Griffis",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Pennsylvania State University"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Pennsylvania State University"
-        ]
-      },
-      {
-        "name": "Guha Manogharan",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Pennsylvania State University"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Pennsylvania State University"
-        ]
-      },
-      {
-        "name": "Ajit Panesar",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Imperial College London"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Imperial College London"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "1745-2759",
-      "1745-2767"
-    ],
-    "issn_l": "",
-    "publisher": "Informa UK Limited",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4413640020",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S152936027",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S152936027",
-      "issn_l": "1745-2759",
-      "issn": [
-        "1745-2759",
-        "1745-2767"
-      ],
-      "type": "journal",
-      "host_organization_name": "Taylor & Francis",
-      "works_count": 1288,
-      "cited_by_count": 39605,
-      "two_year_mean_citedness": 10.10738255033557,
-      "h_index": 92,
-      "i10_index": 718,
-      "is_core": true,
-      "is_oa": true,
-      "is_in_doaj": true
-    },
-    "journal_quality": {
-      "label": "Core manufacturing journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 10.10738255033557,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 1",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - The paper discusses multi-material additive manufacturing (MMAM) from a computational design viewpoint.\n2. Problem - It addresses the challenges of fully utilizing MMAM's capabilities due to the need for advanced design tools and fabrication techniques.\n3. Method - The review evaluates various computational algorithms for multi-material design, including numerical methods and data-driven strategies.\n4. Key Result - Identified challenges in MMAM include interface management, material response modeling, and the need for an integrated design-manufacturing-validation workflow.\n5. Takeaway - The study suggests incorporating specific considerations into optimization frameworks and outlines future research directions for enhancing MMAM applications.",
-    "relevance_note_en": "The summary captures the essence of the paper's focus on computational design in MMAM and its associated challenges.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-07-15",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1080/17452759.2025.2546671"
   }
 }
