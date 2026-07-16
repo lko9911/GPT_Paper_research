@@ -4189,9 +4189,9 @@
     "corresponding_author_source": "openalex_cross_check",
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "3D Printing and Additive Manufacturing",
-    "crossref_target_issn": "2329-7662",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
     "issn": [
       "2329-7662",
       "2329-7670"
@@ -16515,6 +16515,168 @@
     "last_seen_in_crossref_run": "2026-07-16",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1007/s00170-025-17219-7"
+  },
+  "10.1149/ma2026-016664mtgabs": {
+    "author_details": [
+      {
+        "name": "Sarish Rehman",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "National Research Council Canada,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "National Research Council Canada,"
+        ]
+      },
+      {
+        "name": "Luis Martin Mejia Mendoza",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "National Research Council Canada"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "National Research Council Canada"
+        ]
+      },
+      {
+        "name": "Zoya Sadighi",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "National Research Council Canada"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "National Research Council Canada"
+        ]
+      },
+      {
+        "name": "Farhan Raza",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "National Research Council of Canada (NRC)"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "National Research Council of Canada (NRC)"
+        ]
+      },
+      {
+        "name": "Derek Li",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "National Research Council of Canada (NRC)"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "National Research Council of Canada (NRC)"
+        ]
+      },
+      {
+        "name": "Ethan Park",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "National Research Council Canada"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "National Research Council Canada"
+        ]
+      },
+      {
+        "name": "Yaser A. Abu-Lebdeh",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "National Research Council Canada"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "National Research Council Canada"
+        ]
+      }
+    ],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2151-2043"
+    ],
+    "issn_l": "",
+    "publisher": "The Electrochemical Society",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S4210168594",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210168594",
+      "issn_l": "1091-8213",
+      "issn": [
+        "1091-8213",
+        "2151-2035",
+        "2151-2043",
+        "2152-8365"
+      ],
+      "type": "journal",
+      "host_organization_name": "Institute of Physics",
+      "works_count": 104672,
+      "cited_by_count": 28439,
+      "two_year_mean_citedness": 0.09672796751850968,
+      "h_index": 41,
+      "i10_index": 184,
+      "is_core": false,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 0.09672796751850968,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 4",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - Accelerating Next-Generation Lithium-Ion Battery Development through Self-Driving Automated Lab and Machine Learning is a 2026 paper from ECS Meeting Abstracts about Self-driving Labs and Manufacturing automation.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Self-driving Labs and Manufacturing automation.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Self-driving Labs and Manufacturing automation; current relevance score is 7/10.",
+    "relevance_note_en": "Relevant to the tracker through Self-driving Labs and Manufacturing automation; score: 7/10.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-07-16",
+    "id": "10.1149/ma2026-016664mtgabs"
   },
   "10.1007/s00170-026-18109-2": {
     "author_details": [
@@ -30060,108 +30222,5 @@
     "last_seen_in_crossref_run": "2026-07-16",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1007/s40964-026-01608-9"
-  },
-  "10.1007/s40964-025-01399-5": {
-    "author_details": [
-      {
-        "name": "Bunty Tomar",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Akhil Khajuria",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Raman Bedi",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Saurav Goel",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "S. Shiva",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2363-9512",
-      "2363-9520"
-    ],
-    "issn_l": "",
-    "publisher": "Springer Science and Business Media LLC",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4415603571",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S4210206835",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S4210206835",
-      "issn_l": "2363-9512",
-      "issn": [
-        "2363-9512",
-        "2363-9520"
-      ],
-      "type": "journal",
-      "host_organization_name": "Springer Science+Business Media",
-      "works_count": 1809,
-      "cited_by_count": 21422,
-      "two_year_mean_citedness": 4.039043824701195,
-      "h_index": 63,
-      "i10_index": 494,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Core manufacturing journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 4.039043824701195,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 2",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - The study focuses on the development of a metal-metal functionally graded material combining SS316L and copper.\n2. Problem - There is a need for advanced materials that exhibit improved properties through graded compositions.\n3. Method - Wire arc additive manufacturing was employed to create and test the functionally graded material.\n4. Key Result - The produced material demonstrated enhanced mechanical properties compared to traditional homogeneous materials.\n5. Takeaway - This research highlights the potential of additive manufacturing in creating innovative materials with tailored properties.",
-    "relevance_note_en": "The summary captures the essence of the study's focus on functionally graded materials and their manufacturing process.",
-    "abstract_used_for_summary": false,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-07-16",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1007/s40964-025-01399-5"
   }
 }
