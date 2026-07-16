@@ -1,4 +1,98 @@
 {
+  "10.1109/ames64994.2025.11184376": {
+    "author_details": [
+      {
+        "name": "Iván Revenga Riesco",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Imperial College London"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Imperial College London"
+        ]
+      },
+      {
+        "name": "Borut Lampret",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Imperial College London"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Imperial College London"
+        ]
+      },
+      {
+        "name": "Connor Myant",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Imperial College London"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Imperial College London"
+        ]
+      },
+      {
+        "name": "David Boyle",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Imperial College London"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Imperial College London"
+        ]
+      }
+    ],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "proceedings-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [],
+    "issn_l": "",
+    "publisher": "IEEE",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "https://openalex.org/W4414956462",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "venue_trust_reason": "conference/proceedings not in trusted allowlist",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The paper focuses on the innovative application of 5-axis multi-material additive manufacturing for creating conformal antennas.\n2. Problem - Traditional methods for antenna fabrication often struggle with complex geometries and efficiency.\n3. Method - A customized open-source 5-axis desktop printer was utilized to produce S-band and Ultra-Wide Band antennas using conductive filaments.\n4. Key Result - The study demonstrated that the 5-axis approach offers improved impedance matching, faster production times, and cost efficiency compared to planar printing methods.\n5. Takeaway - This research underscores the advantages of multi-material 3D printing for developing advanced antennas with intricate designs.",
+    "relevance_note_en": "The paper presents a significant advancement in additive manufacturing techniques for antennas, making it highly relevant to the field.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "id": "10.1109/ames64994.2025.11184376"
+  },
   "10.46620/ursiaprasc25/mooq4873": {
     "author_details": [
       {
@@ -19732,52 +19826,5 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "id": "10.1515/9783110668544-004"
-  },
-  "10.1515/9783110668544-003": {
-    "author_details": [
-      {
-        "name": "Suong V. Hoa",
-        "openalex_author_id": null,
-        "orcid": null,
-        "position": "first",
-        "is_corresponding": true,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "book-chapter",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [],
-    "issn_l": "",
-    "publisher": "De Gruyter",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4403632986",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "venue_trust_reason": "book/chapter output rather than journal or trusted conference article",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - This chapter discusses the procedures involved in 4D printing of composite materials.\n2. Problem - It addresses the challenges associated with the integration of time-dependent properties in printed composites.\n3. Method - The chapter outlines specific techniques and methodologies for achieving effective 4D printing processes.\n4. Key Result - It highlights advancements in material behavior and design flexibility that 4D printing can offer.\n5. Takeaway - The procedures detailed can enhance the functionality and adaptability of composite materials in various applications.",
-    "relevance_note_en": "The summary captures the essence of the chapter's focus on 4D printing procedures and their implications.",
-    "abstract_used_for_summary": false,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "id": "10.1515/9783110668544-003"
   }
 }
