@@ -10308,7 +10308,7 @@
     "id": "10.1002/adhm.71261",
     "is_core_venue": false,
     "is_weekly_new": false,
-    "last_updated": "2026-07-15",
+    "last_updated": "2026-07-16",
     "openai_summary_applied": true,
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
@@ -10496,6 +10496,16 @@
     ],
     "categories": [
       "Functionally Graded AM"
+    ],
+    "corresponding_authors": [
+      {
+        "name": "Syed Maisam Tammar Ali",
+        "is_corresponding": true
+      },
+      {
+        "name": "Sara Ali",
+        "is_corresponding": true
+      }
     ],
     "curation_priority": false,
     "doi": "10.1016/j.mtcomm.2026.115733",
@@ -10786,6 +10796,12 @@
     "categories": [
       "Reviews and Surveys",
       "AI and Machine Learning for AM"
+    ],
+    "corresponding_authors": [
+      {
+        "name": "Xiaoyan Li",
+        "is_corresponding": true
+      }
     ],
     "curation_priority": false,
     "doi": "10.1002/adfm.202526917",
@@ -12762,6 +12778,46 @@
     "title": "Data-driven process maps for functionally graded foams in foam additive manufacturing: Accuracy and interpretability across six models",
     "url": "https://doi.org/10.1016/j.matdes.2026.116463",
     "venue": "Materials & Design",
+    "venue_trust": "trusted",
+    "year": 2026,
+    "status": "active"
+  },
+  {
+    "authors": [
+      "Niklas Schwegler",
+      "Thomas Heim",
+      "Philipp Mainik",
+      "Eva Blasco",
+      "Franziska Thomas"
+    ],
+    "categories": [
+      "Multi-material AM"
+    ],
+    "curation_priority": false,
+    "doi": "10.1002/advs.76505",
+    "first_added": "2026-07-16",
+    "id": "10.1002/advs.76505",
+    "is_core_venue": true,
+    "is_weekly_new": true,
+    "last_updated": "2026-07-16",
+    "openai_summary_applied": false,
+    "openalex_venue_rank": "Rank 1",
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
+    "openalex_venue_rank_number": 1,
+    "openalex_venue_rank_percentile": 0.8665,
+    "openalex_venue_rank_score": 8.402641353693769,
+    "publication_type": "journal_article",
+    "relevance_score": 6,
+    "source": [
+      "Crossref"
+    ],
+    "summary_provider": "fallback",
+    "tags": [
+      "Additive manufacturing"
+    ],
+    "title": "Controlled Peptide Capture and Release in 3D-Printed Multimaterial Microstructures",
+    "url": "https://doi.org/10.1002/advs.76505",
+    "venue": "Advanced Science",
     "venue_trust": "trusted",
     "year": 2026,
     "status": "active"
@@ -66911,6 +66967,12 @@
     "categories": [
       "Reviews and Surveys",
       "Multi-material AM"
+    ],
+    "corresponding_authors": [
+      {
+        "name": "Dong Wang",
+        "is_corresponding": true
+      }
     ],
     "curation_priority": false,
     "doi": "10.1002/advs.202309932",

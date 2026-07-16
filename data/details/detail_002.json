@@ -1,4 +1,109 @@
 {
+  "10.1089/3dp.2023.0356": {
+    "author_details": [
+      {
+        "name": "Elena Petruzzi",
+        "orcid": "https://orcid.org/0000-0001-7169-0473",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "CASE, School of Architecture, Rensselaer Polytechnic Institute, Brooklyn, New York, USA."
+          }
+        ],
+        "raw_affiliation_strings": [
+          "CASE, School of Architecture, Rensselaer Polytechnic Institute, Brooklyn, New York, USA."
+        ]
+      },
+      {
+        "name": "Alexandros Tsamis",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "CASE, School of Architecture, Rensselaer Polytechnic Institute, Brooklyn, New York, USA."
+          }
+        ],
+        "raw_affiliation_strings": [
+          "CASE, School of Architecture, Rensselaer Polytechnic Institute, Brooklyn, New York, USA."
+        ]
+      },
+      {
+        "name": "Chaitanya Ullal",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Material Science and Engineering, Rensselaer Polytechnic Institute, Brooklyn, New York, USA."
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Material Science and Engineering, Rensselaer Polytechnic Institute, Brooklyn, New York, USA."
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2329-7662",
+      "2329-7670"
+    ],
+    "issn_l": "",
+    "publisher": "SAGE Publications",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4395663332",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S4210174904",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210174904",
+      "issn_l": "2329-7662",
+      "issn": [
+        "2329-7662",
+        "2329-7670"
+      ],
+      "type": "journal",
+      "host_organization_name": "Mary Ann Liebert, Inc.",
+      "works_count": 768,
+      "cited_by_count": 14262,
+      "two_year_mean_citedness": 2.4384615384615387,
+      "h_index": 55,
+      "i10_index": 325,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 2.4384615384615387,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 3",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - This paper discusses a digital design framework for enhancing the thermal performance of 3D printed building envelopes.\n2. Problem - Current large-scale 3D printed structures are limited to single materials, restricting their functionality and energy efficiency.\n3. Method - The authors propose a methodology that utilizes functionally graded materials (FGMs) by optimizing the distribution of clay and microencapsulated phase change materials (mPCMs) during the additive manufacturing process.\n4. Key Result - Simulations and tests indicate that optimizing the material distribution can lead to significant annual energy savings compared to traditional homogeneous envelopes.\n5. Takeaway - The study highlights the potential of multimaterial additive manufacturing to improve the thermal efficiency of 3D printed structures through innovative material combinations.",
+    "relevance_note_en": "The summary captures the core contributions and findings of the research effectively.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-07-16",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1089/3dp.2023.0356"
+  },
   "10.1007/s40964-025-01112-6": {
     "author_details": [
       {
@@ -19424,7 +19529,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "last_seen_in_crossref_run": "2026-07-16",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "id": "10.3390/jmmp9120400"
   },
   "10.64229/t20sy660": {
@@ -28569,83 +28674,5 @@
     "last_seen_in_crossref_run": "2026-07-16",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.rineng.2025.108303"
-  },
-  "10.1016/j.matdes.2025.113688": {
-    "author_details": [
-      {
-        "name": "Felix Richter",
-        "orcid": "https://orcid.org/0009-0002-7080-6985",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Dazhong Wu",
-        "orcid": "https://orcid.org/0000-0002-0215-4906",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "0264-1275"
-    ],
-    "issn_l": "",
-    "publisher": "Elsevier BV",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4407132879",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S8792693",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S8792693",
-      "issn_l": "0264-1275",
-      "issn": [
-        "0264-1275",
-        "1873-4197"
-      ],
-      "type": "journal",
-      "host_organization_name": "Elsevier BV",
-      "works_count": 14476,
-      "cited_by_count": 516286,
-      "two_year_mean_citedness": 5.543417366946779,
-      "h_index": 222,
-      "i10_index": 8917,
-      "is_core": true,
-      "is_oa": true,
-      "is_in_doaj": true
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 5.543417366946779,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 2",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - This study focuses on the interfacial adhesion of different thermoplastics produced through multi-material additive manufacturing.\n2. Problem - The bonding strength between dissimilar polymers is often lower than the strength of the individual materials, which limits their applications.\n3. Method - The research employs mechanical testing and correlation analysis based on polymer adhesion theory to quantify bonding strength between thermoplastic combinations.\n4. Key Result - Certain combinations, like PLA-PETG and PETG-PC, show bonding strengths that meet or exceed the strength of the individual materials, while others, such as those involving PP and PE, demonstrate significantly weaker bonds.\n5. Takeaway - The study highlights that compatibility in thermoplastics, indicated by solubility parameters and thermal expansion differences, is crucial for achieving strong interfacial adhesion.",
-    "relevance_note_en": "The summary captures the essence of the study's focus on interfacial adhesion in multi-material additive manufacturing.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-07-16",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1016/j.matdes.2025.113688"
   }
 }

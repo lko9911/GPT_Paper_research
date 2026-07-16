@@ -1,4 +1,82 @@
 {
+  "10.1016/j.matdes.2025.113688": {
+    "author_details": [
+      {
+        "name": "Felix Richter",
+        "orcid": "https://orcid.org/0009-0002-7080-6985",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Dazhong Wu",
+        "orcid": "https://orcid.org/0000-0002-0215-4906",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "0264-1275"
+    ],
+    "issn_l": "",
+    "publisher": "Elsevier BV",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4407132879",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S8792693",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S8792693",
+      "issn_l": "0264-1275",
+      "issn": [
+        "0264-1275",
+        "1873-4197"
+      ],
+      "type": "journal",
+      "host_organization_name": "Elsevier BV",
+      "works_count": 14476,
+      "cited_by_count": 516286,
+      "two_year_mean_citedness": 5.543417366946779,
+      "h_index": 222,
+      "i10_index": 8917,
+      "is_core": true,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 5.543417366946779,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 2",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - This study focuses on the interfacial adhesion of different thermoplastics produced through multi-material additive manufacturing.\n2. Problem - The bonding strength between dissimilar polymers is often lower than the strength of the individual materials, which limits their applications.\n3. Method - The research employs mechanical testing and correlation analysis based on polymer adhesion theory to quantify bonding strength between thermoplastic combinations.\n4. Key Result - Certain combinations, like PLA-PETG and PETG-PC, show bonding strengths that meet or exceed the strength of the individual materials, while others, such as those involving PP and PE, demonstrate significantly weaker bonds.\n5. Takeaway - The study highlights that compatibility in thermoplastics, indicated by solubility parameters and thermal expansion differences, is crucial for achieving strong interfacial adhesion.",
+    "relevance_note_en": "The summary captures the essence of the study's focus on interfacial adhesion in multi-material additive manufacturing.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-07-16",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1016/j.matdes.2025.113688"
+  },
   "10.1080/17452759.2025.2525985": {
     "author_details": [
       {
@@ -34249,122 +34327,5 @@
     "last_seen_in_crossref_run": "2026-07-16",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/adfm.202506062"
-  },
-  "10.3390/jmmp9060178": {
-    "author_details": [
-      {
-        "name": "Amir H. Behravesh",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Faculty of Engineering and Applied Science, Ontario Tech University, Oshawa, ON L1G 0C5, Canada"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Faculty of Engineering and Applied Science, Ontario Tech University, Oshawa, ON L1G 0C5, Canada"
-        ]
-      },
-      {
-        "name": "Asra Tariq",
-        "orcid": "https://orcid.org/0000-0002-7665-1921",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Faculty of Engineering and Applied Science, Ontario Tech University, Oshawa, ON L1G 0C5, Canada"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Faculty of Engineering and Applied Science, Ontario Tech University, Oshawa, ON L1G 0C5, Canada"
-        ]
-      },
-      {
-        "name": "John Buni",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Faculty of Engineering and Applied Science, Ontario Tech University, Oshawa, ON L1G 0C5, Canada"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Faculty of Engineering and Applied Science, Ontario Tech University, Oshawa, ON L1G 0C5, Canada"
-        ]
-      },
-      {
-        "name": "Ghaus Rizvi",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Faculty of Engineering and Applied Science, Ontario Tech University, Oshawa, ON L1G 0C5, Canada"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Faculty of Engineering and Applied Science, Ontario Tech University, Oshawa, ON L1G 0C5, Canada"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2504-4494"
-    ],
-    "issn_l": "",
-    "publisher": "MDPI AG",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4410818704",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S4210232045",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S4210232045",
-      "issn_l": "2504-4494",
-      "issn": [
-        "2504-4494"
-      ],
-      "type": "journal",
-      "host_organization_name": "Multidisciplinary Digital Publishing Institute",
-      "works_count": 1816,
-      "cited_by_count": 19084,
-      "two_year_mean_citedness": 3.456932773109244,
-      "h_index": 55,
-      "i10_index": 507,
-      "is_core": true,
-      "is_oa": true,
-      "is_in_doaj": true
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 3.456932773109244,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 3",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The study focuses on the volumetric additive manufacturing process using computed tomography and its relationship with resin properties and part dimensions.\n2. Problem - It addresses the challenge of understanding the dimensional limitations of objects produced through this manufacturing technique.\n3. Method - An analytical model is developed to predict product size based on resin penetration depth, vial size, and formation time, supported by experimental verification.\n4. Key Result - The findings reveal significant correlations between the resin properties and the maximum achievable product dimensions, highlighting the importance of penetration depth.\n5. Takeaway - This research provides insights that can guide material selection and process design in volumetric additive manufacturing.",
-    "relevance_note_en": "The summary captures the core aspects of the study, including its focus, problem, methodology, results, and implications.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-07-16",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.3390/jmmp9060178"
   }
 }
