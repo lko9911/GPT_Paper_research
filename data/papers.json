@@ -52,7 +52,7 @@
           }
         ],
         "raw_affiliation_strings": [
-          "Department of Industrial Engineering, College of Engineering, Prince Sattam bin Abdulaziz University, Al-Kharj 11942, Saudi Arabia"
+          "Department of Mechanical Engineering, College of Engineering, Prince Sattam bin Abdulaziz University, Al-Kharj 11942, Saudi Arabia"
         ]
       }
     ],
@@ -11650,9 +11650,29 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Peter Frohn-Sörensen",
+        "openalex_author_id": "https://openalex.org/A5074380260",
+        "orcid": "https://orcid.org/0000-0003-0896-7083",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Siegen",
+            "ror": "https://ror.org/02azyry73",
+            "country_code": "DE",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Forming Technology Siegen UTS, University of Siegen, Siegen, Germany",
+          "University of Siegen"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "International Journal of Material Forming",
     "doi": "10.1007/s12289-026-02009-7",
@@ -11672,7 +11692,7 @@
     "issn_l": "",
     "publisher": "Springer Science and Business Media LLC",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4416417041",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S105347196",
@@ -22845,10 +22865,10 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Assia Belbachir",
-        "openalex_author_id": "https://openalex.org/A5051482797",
-        "orcid": "https://orcid.org/0000-0002-1294-8478",
-        "position": "first",
+        "name": "Antonio M. Ortiz",
+        "openalex_author_id": "https://openalex.org/A5114032187",
+        "orcid": "https://orcid.org/0000-0002-7145-8241",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -22863,28 +22883,28 @@
         ]
       },
       {
-        "name": "Wissam Mallouli",
-        "openalex_author_id": "https://openalex.org/A5084443011",
-        "orcid": "https://orcid.org/0000-0003-2548-6628",
+        "name": "An Ngoc Lam",
+        "openalex_author_id": "https://openalex.org/A5090441887",
+        "orcid": "https://orcid.org/0000-0003-4929-054X",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
+          {
+            "name": "SINTEF",
+            "ror": "https://ror.org/01f677e56",
+            "country_code": "NO",
+            "type": "facility"
+          },
           {
             "name": "NORCE Research AS",
             "ror": "https://ror.org/02gagpf75",
             "country_code": "NO",
             "type": "facility"
-          },
-          {
-            "name": "Montimage (France)",
-            "ror": "https://ror.org/02a8qtz61",
-            "country_code": "FR",
-            "type": "company"
           }
         ],
         "raw_affiliation_strings": [
           "NORCE Research AS, Grimstad, Norway",
-          "Montimage, Paris, France"
+          "SINTEF AS, Oslo/Porsgrunn, Norway"
         ]
       }
     ],
@@ -42242,9 +42262,60 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Yong Yang",
+        "openalex_author_id": "https://openalex.org/A5140653774",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Chongqing Institute of Green and Intelligent Technology",
+            "ror": "https://ror.org/031npqv35",
+            "country_code": "CN",
+            "type": "facility"
+          },
+          {
+            "name": "University of Chinese Academy of Sciences",
+            "ror": "https://ror.org/05qbk4x57",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Chongqing Institute of Green and Intelligent Technology, Chinese Academy of Sciences, Chongqing 400714, P. R. China",
+          "Chongqing School, University of Chinese Academy of Sciences, Chongqing 400714, P. R. China"
+        ]
+      },
+      {
+        "name": "Shoufeng Yang",
+        "openalex_author_id": "https://openalex.org/A5140690591",
+        "orcid": null,
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Chongqing Institute of Green and Intelligent Technology",
+            "ror": "https://ror.org/031npqv35",
+            "country_code": "CN",
+            "type": "facility"
+          },
+          {
+            "name": "University of Chinese Academy of Sciences",
+            "ror": "https://ror.org/05qbk4x57",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Chongqing Institute of Green and Intelligent Technology, Chinese Academy of Sciences, Chongqing 400714, P. R. China",
+          "Chongqing School, University of Chinese Academy of Sciences, Chongqing 400714, P. R. China"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Journal of Materials Research and Technology",
     "doi": "10.1016/j.jmrt.2026.07.096",
@@ -42263,7 +42334,7 @@
     "issn_l": "",
     "publisher": "Elsevier BV",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7168244340",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2765010971",
@@ -86201,9 +86272,21 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Chong-Yun Kang",
+        "openalex_author_id": "https://openalex.org/A5140602895",
+        "orcid": "https://orcid.org/0000-0002-4516-8160",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [],
+        "raw_affiliation_strings": [
+          "Korea University"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "International Journal of Extreme Manufacturing",
     "doi": "10.1088/2631-7990/ae8aca",
@@ -86223,7 +86306,7 @@
     "issn_l": "",
     "publisher": "IOP Publishing",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7168276325",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S4210231351",
@@ -91256,8 +91339,8 @@
         ]
       },
       {
-        "name": "Ishanathan Guteng",
-        "openalex_author_id": "https://openalex.org/A5120110580",
+        "name": "Victor Kehinde",
+        "openalex_author_id": "https://openalex.org/A5091964598",
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -109203,9 +109286,8 @@
           }
         ],
         "raw_affiliation_strings": [
-          "Department of Materials Science &amp; Engineering University of Maryland  College Park MD USA",
-          "Maryland Energy Innovation Institute University of Maryland  College Park MD USA",
-          "Department of Materials Science & Engineering, University of Maryland, College Park, MD, USA"
+          "Department of Materials Science &amp; Engineering University of Maryland  College Park Maryland USA",
+          "Maryland Energy Innovation Institute University of Maryland  College Park Maryland USA"
         ]
       }
     ],
@@ -127738,8 +127820,8 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Zhangdong Chen",
-        "openalex_author_id": "https://openalex.org/A5070746638",
+        "name": "Aoming Zhang",
+        "openalex_author_id": "https://openalex.org/A5111021439",
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -131894,7 +131976,7 @@
     "last_updated": "2026-07-16",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-07-16",
-    "not_seen_in_latest_crossref_run": true,
+    "not_seen_in_latest_crossref_run": false,
     "openalex_venue_rank": "Rank 3",
     "openalex_venue_rank_number": 3,
     "openalex_venue_rank_score": 3.456932773109244,
@@ -151545,7 +151627,7 @@
         "name": "Luquan Ren",
         "openalex_author_id": null,
         "orcid": null,
-        "position": "middle",
+        "position": "last",
         "is_corresponding": true,
         "institutions": [
           {
@@ -163899,10 +163981,10 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-26",
-    "last_updated": "2026-07-15",
+    "last_updated": "2026-07-16",
     "is_weekly_new": false,
-    "last_seen_in_crossref_run": "2026-07-15",
-    "not_seen_in_latest_crossref_run": true,
+    "last_seen_in_crossref_run": "2026-07-16",
+    "not_seen_in_latest_crossref_run": false,
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 5.911634756995582,
@@ -166125,7 +166207,7 @@
         "name": "Xiaofeng Wang",
         "openalex_author_id": null,
         "orcid": "https://orcid.org/0000-0002-9913-1064",
-        "position": "middle",
+        "position": "last",
         "is_corresponding": true,
         "institutions": [
           {
@@ -199443,10 +199525,10 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Songhao Wang",
-        "openalex_author_id": "https://openalex.org/A5057228007",
-        "orcid": "https://orcid.org/0000-0003-3643-4698",
-        "position": "first",
+        "name": "Weiming Ou",
+        "openalex_author_id": "https://openalex.org/A5113870546",
+        "orcid": null,
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -228011,10 +228093,10 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Likun Wang",
-        "openalex_author_id": "https://openalex.org/A5100623561",
-        "orcid": "https://orcid.org/0000-0001-5646-9746",
-        "position": "middle",
+        "name": "Zi Wang",
+        "openalex_author_id": "https://openalex.org/A5100338326",
+        "orcid": "https://orcid.org/0000-0001-9081-7185",
+        "position": "first",
         "is_corresponding": true,
         "institutions": [
           {
@@ -261120,7 +261202,7 @@
       },
       {
         "name": "Huanyue Zhang",
-        "openalex_author_id": null,
+        "openalex_author_id": "https://openalex.org/A5014806689",
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -261141,7 +261223,7 @@
         "raw_affiliation_strings": [
           "Department of Orthopedics, Central Hospital of Dalian University of Technology, Dalian, People’s Republic of China",
           "Instrumental Analysis Center, Dalian University of Technology, Dalian, People’s Republic of China",
-          "Department of Orthopedics, Central Hospital of Dalian University of Technology, Dalian, People's Republic of China"
+          "Instrumental Analysis Center, Dalian University of Technology, Dalian, People's Republic of China"
         ]
       },
       {
@@ -291888,9 +291970,9 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Peipei Li",
-        "openalex_author_id": "https://openalex.org/A5100371522",
-        "orcid": "https://orcid.org/0000-0002-9389-9419",
+        "name": "Lingyun Qian",
+        "openalex_author_id": "https://openalex.org/A5106451798",
+        "orcid": null,
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -291920,9 +292002,9 @@
         ]
       },
       {
-        "name": "Ji Zhou",
-        "openalex_author_id": "https://openalex.org/A5063427028",
-        "orcid": "https://orcid.org/0000-0003-1502-2504",
+        "name": "Bo Li",
+        "openalex_author_id": "https://openalex.org/A5100628411",
+        "orcid": "https://orcid.org/0000-0001-5633-936X",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
