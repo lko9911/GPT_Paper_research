@@ -12734,6 +12734,138 @@
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
+    "id": "10.1007/s40964-026-01843-0",
+    "title": "Fully coupled three-dimensional non-Newtonian CFD modeling of interlayer adhesion in material extrusion additive manufacturing",
+    "authors": [
+      "Alessio Pricci",
+      "Md. Tusher Mollah",
+      "Jon Spangenberg",
+      "Gianluca Percoco"
+    ],
+    "author_details": [
+      {
+        "name": "Alessio Pricci",
+        "orcid": "https://orcid.org/0000-0003-3330-3801",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Md. Tusher Mollah",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Jon Spangenberg",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Gianluca Percoco",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "year": 2026,
+    "venue": "Progress in Additive Manufacturing",
+    "doi": "10.1007/s40964-026-01843-0",
+    "url": "https://doi.org/10.1007/s40964-026-01843-0",
+    "source": [
+      "Crossref"
+    ],
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Progress in Additive Manufacturing",
+    "crossref_target_issn": "2363-9512",
+    "issn": [
+      "2363-9512",
+      "2363-9520"
+    ],
+    "issn_l": "",
+    "publisher": "Springer Science and Business Media LLC",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S4210206835",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210206835",
+      "issn_l": "2363-9512",
+      "issn": [
+        "2363-9512",
+        "2363-9520"
+      ],
+      "type": "journal",
+      "host_organization_name": "Springer Science+Business Media",
+      "works_count": 1809,
+      "cited_by_count": 21422,
+      "two_year_mean_citedness": 4.039043824701195,
+      "h_index": 63,
+      "i10_index": 494,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 4.039043824701195,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 2",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "publication_type": "journal_article",
+    "venue_trust": "trusted",
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "is_core_venue": true,
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "categories": [
+      "Multi-material AM"
+    ],
+    "tags": [
+      "FDM/Material extrusion",
+      "Digital Twins"
+    ],
+    "relevance_score": 7,
+    "curation_priority": false,
+    "ai_summary_en": "1. Topic - Fully coupled three-dimensional non-Newtonian CFD modeling of interlayer adhesion in material extrusion additive manufacturing is a 2026 paper from Progress in Additive Manufacturing about FDM/Material extrusion and Digital Twins.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to FDM/Material extrusion and Digital Twins.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for FDM/Material extrusion and Digital Twins; current relevance score is 7/10.",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_en": "Relevant to the tracker through FDM/Material extrusion and Digital Twins; score: 7/10.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-07-17",
+    "last_updated": "2026-07-17",
+    "is_weekly_new": true,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-07-17",
+    "openalex_venue_rank": "Rank 2",
+    "openalex_venue_rank_number": 2,
+    "openalex_venue_rank_score": 4.039043824701195,
+    "openalex_venue_rank_percentile": 0.5727,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+  },
+  {
     "id": "10.1016/j.rcim.2025.103176",
     "title": "From insight to autonomous execution: VLM-enhanced embodied agents towards digital twin-assisted human-robot collaborative assembly",
     "authors": [
@@ -25676,7 +25808,7 @@
     "publisher": "The Electrochemical Society",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7168860032",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S4210168594",
     "venue_metrics": {
@@ -37669,7 +37801,7 @@
     "last_updated": "2026-07-17",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-07-17",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 7.329281469475959,
@@ -47189,9 +47321,47 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Eva Blasco",
+        "openalex_author_id": "https://openalex.org/A5029954997",
+        "orcid": "https://orcid.org/0000-0002-0849-4223",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Heidelberg University",
+            "ror": "https://ror.org/038t36y30",
+            "country_code": "DE",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Institute for Molecular Systems Engineering and Advanced Materials Heidelberg University  Heidelberg Germany",
+          "Institute of Organic Chemistry Heidelberg University  Heidelberg Germany"
+        ]
+      },
+      {
+        "name": "Franziska Thomas",
+        "openalex_author_id": "https://openalex.org/A5035821392",
+        "orcid": "https://orcid.org/0000-0002-1176-7018",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Heidelberg University",
+            "ror": "https://ror.org/038t36y30",
+            "country_code": "DE",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Institute of Organic Chemistry Heidelberg University  Heidelberg Germany"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Advanced Science",
     "doi": "10.1002/advs.76505",
@@ -47211,8 +47381,8 @@
     "issn_l": "",
     "publisher": "Wiley",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7168875373",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2737737698",
     "venue_metrics": {
@@ -72608,7 +72778,7 @@
         "name": "Hong Wang",
         "openalex_author_id": null,
         "orcid": "https://orcid.org/0000-0001-6799-1732",
-        "position": "last",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -91339,8 +91509,8 @@
         ]
       },
       {
-        "name": "Victor Kehinde",
-        "openalex_author_id": "https://openalex.org/A5091964598",
+        "name": "Ishanathan Guteng",
+        "openalex_author_id": "https://openalex.org/A5120110580",
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -91367,7 +91537,7 @@
         "name": "Erin Lavik",
         "openalex_author_id": "https://openalex.org/A5079335476",
         "orcid": "https://orcid.org/0000-0002-0644-744X",
-        "position": "middle",
+        "position": "last",
         "is_corresponding": true,
         "institutions": [
           {
@@ -97436,8 +97606,8 @@
         ]
       },
       {
-        "name": "L. Ren",
-        "openalex_author_id": "https://openalex.org/A5003419669",
+        "name": "Lei Ren",
+        "openalex_author_id": null,
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -111330,9 +111500,9 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Sichao Liu",
-        "openalex_author_id": "https://openalex.org/A5068371109",
-        "orcid": "https://orcid.org/0000-0002-1909-0507",
+        "name": "Cheng Zhang",
+        "openalex_author_id": "https://openalex.org/A5100769098",
+        "orcid": "https://orcid.org/0000-0001-8282-9901",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -163984,7 +164154,7 @@
     "last_updated": "2026-07-17",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-07-17",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 5.911634756995582,
@@ -166148,8 +166318,8 @@
     "corresponding_authors": [
       {
         "name": "Xinyu Wang",
-        "openalex_author_id": "https://openalex.org/A5100352846",
-        "orcid": "https://orcid.org/0009-0001-2925-1466",
+        "openalex_author_id": null,
+        "orcid": null,
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -166207,7 +166377,7 @@
         "name": "Xiaofeng Wang",
         "openalex_author_id": null,
         "orcid": "https://orcid.org/0000-0002-9913-1064",
-        "position": "last",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -174945,10 +175115,10 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-07-16",
+    "last_updated": "2026-07-17",
     "is_weekly_new": false,
-    "last_seen_in_crossref_run": "2026-07-16",
-    "not_seen_in_latest_crossref_run": true,
+    "last_seen_in_crossref_run": "2026-07-17",
+    "not_seen_in_latest_crossref_run": false,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 5.572056737588652,
@@ -191588,9 +191758,9 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Zhilei Hao",
-        "openalex_author_id": "https://openalex.org/A5108304651",
-        "orcid": null,
+        "name": "Pei Liu",
+        "openalex_author_id": "https://openalex.org/A5086175031",
+        "orcid": "https://orcid.org/0009-0003-4285-053X",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -261196,8 +261366,8 @@
         "raw_affiliation_strings": [
           "Department of Orthopedics, Central Hospital of Dalian University of Technology, Dalian, People’s Republic of China",
           "School of Materials Science and Engineering, Dalian University of Technology, Dalian, People’s Republic of China",
-          "School of Materials Science and Engineering, Dalian University of Technology, Dalian, People's Republic of China",
-          "Department of Orthopedics, Central Hospital of Dalian University of Technology, Dalian, People's Republic of China"
+          "Department of Orthopedics, Central Hospital of Dalian University of Technology, Dalian, People's Republic of China",
+          "School of Materials Science and Engineering, Dalian University of Technology, Dalian, People's Republic of China"
         ]
       },
       {
@@ -261230,7 +261400,7 @@
         "name": "Hao Zhang",
         "openalex_author_id": null,
         "orcid": null,
-        "position": "middle",
+        "position": "last",
         "is_corresponding": true,
         "institutions": [
           {
@@ -303921,9 +304091,9 @@
           "Engineering Technology Research Center for Rapid Manufacturing of Shaanxi Province, Xi'an Jiaotong University, Xi'an, People’s Republic of China",
           "School of Mechanical Engineering, Xi'an Jiaotong University, Xi'an, People’s Republic of China",
           "State Key Laboratory for Manufacturing System Engineering, Xi'an Jiaotong University, Xi'an, People’s Republic of China",
-          "School of Mechanical Engineering, Xi'an Jiaotong University, Xi'an, People's Republic of China",
           "Engineering Technology Research Center for Rapid Manufacturing of Shaanxi Province, Xi'an Jiaotong University, Xi'an, People's Republic of China",
-          "State Key Laboratory for Manufacturing System Engineering, Xi'an Jiaotong University, Xi'an, People's Republic of China"
+          "State Key Laboratory for Manufacturing System Engineering, Xi'an Jiaotong University, Xi'an, People's Republic of China",
+          "School of Mechanical Engineering, Xi'an Jiaotong University, Xi'an, People's Republic of China"
         ]
       },
       {

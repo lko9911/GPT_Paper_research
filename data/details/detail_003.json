@@ -1,4 +1,89 @@
 {
+  "10.1016/j.rineng.2025.108303": {
+    "author_details": [
+      {
+        "name": "Ammar Batwa",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Juha Song",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Yaning Li",
+        "orcid": "https://orcid.org/0000-0002-8789-7900",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2590-1230"
+    ],
+    "issn_l": "",
+    "publisher": "Elsevier BV",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4416426524",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S4210226253",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210226253",
+      "issn_l": "2590-1230",
+      "issn": [
+        "2590-1230"
+      ],
+      "type": "journal",
+      "host_organization_name": "Elsevier BV",
+      "works_count": 11754,
+      "cited_by_count": 115950,
+      "two_year_mean_citedness": 6.500249128051818,
+      "h_index": 95,
+      "i10_index": 3285,
+      "is_core": true,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 6.500249128051818,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The study focuses on the interphase effects in multi-material 3D-printed polymer laminae.\n2. Problem - Challenges in multi-material 3D printing lead to mechanical inconsistencies due to resolution limitations and material mixing at boundaries.\n3. Method - The research employs macro- and micro-scale mechanical experiments alongside finite element simulations to analyze the impact of printing direction and layer thickness on mechanical properties.\n4. Key Result - Findings indicate that both printing direction and layer thickness significantly affect the in-plane mechanical properties of the printed laminae.\n5. Takeaway - Understanding the interphase effects can enhance the mechanical performance of multi-material 3D printed components.",
+    "relevance_note_en": "The summary captures the core aspects of the study, including its focus, challenges, methodology, findings, and implications.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-07-17",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1016/j.rineng.2025.108303"
+  },
   "10.1016/j.matdes.2025.113688": {
     "author_details": [
       {
@@ -11563,7 +11648,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "last_seen_in_crossref_run": "2026-07-17",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "id": "10.1021/acsbiomaterials.4c01837"
   },
   "10.1038/s41467-025-59502-x": {
@@ -18640,8 +18725,8 @@
     "abstract_used_for_summary": false,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-07-16",
-    "not_seen_in_latest_crossref_run": true,
+    "last_seen_in_crossref_run": "2026-07-17",
+    "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.ceramint.2025.03.248"
   },
   "10.1080/17452759.2025.2505621": {
@@ -34134,198 +34219,5 @@
     "last_seen_in_crossref_run": "2026-07-17",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.addma.2025.104977"
-  },
-  "10.1002/adfm.202506062": {
-    "author_details": [
-      {
-        "name": "Benyamin Shahryari",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Bioresource Engineering McGill University Montreal QC H9X 3V9 Canada"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Bioresource Engineering McGill University Montreal QC H9X 3V9 Canada"
-        ]
-      },
-      {
-        "name": "Armin Mirabolghasemi",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Bioresource Engineering McGill University Montreal QC H9X 3V9 Canada"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Bioresource Engineering McGill University Montreal QC H9X 3V9 Canada"
-        ]
-      },
-      {
-        "name": "Shahin Eskandari",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Bioresource Engineering McGill University Montreal QC H9X 3V9 Canada"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Bioresource Engineering McGill University Montreal QC H9X 3V9 Canada"
-        ]
-      },
-      {
-        "name": "Xin Chen",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Bioresource Engineering McGill University Montreal QC H9X 3V9 Canada"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Bioresource Engineering McGill University Montreal QC H9X 3V9 Canada"
-        ]
-      },
-      {
-        "name": "Jean‐François Deü",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Laboratoire de Mécanique des Structures et des Systèmes Couplés (LMSSC) Conservatoire national des arts et métiers (Cnam) Paris 75003 France"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Laboratoire de Mécanique des Structures et des Systèmes Couplés (LMSSC) Conservatoire national des arts et métiers (Cnam) Paris 75003 France"
-        ]
-      },
-      {
-        "name": "Roger Ohayon",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Laboratoire de Mécanique des Structures et des Systèmes Couplés (LMSSC) Conservatoire national des arts et métiers (Cnam) Paris 75003 France"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Laboratoire de Mécanique des Structures et des Systèmes Couplés (LMSSC) Conservatoire national des arts et métiers (Cnam) Paris 75003 France"
-        ]
-      },
-      {
-        "name": "Atef Mohany",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Fluid‐Structure Interaction and Noise Control Laboratory, Faculty of Engineering and Applied Science Ontario Tech. University Oshawa ON L1G 0C5 Canada"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Fluid‐Structure Interaction and Noise Control Laboratory, Faculty of Engineering and Applied Science Ontario Tech. University Oshawa ON L1G 0C5 Canada"
-        ]
-      },
-      {
-        "name": "Alex Kalamkarov",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Mechanical Engineering Dalhousie University Halifax NS B3H 4R2 Canada"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical Engineering Dalhousie University Halifax NS B3H 4R2 Canada"
-        ]
-      },
-      {
-        "name": "Abdolhamid Akbarzadeh",
-        "orcid": "https://orcid.org/0000-0003-0097-0341",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Bioresource Engineering McGill University Montreal QC H9X 3V9 Canada"
-          },
-          {
-            "name": "Department of Mechanical Engineering McGill University Montreal QC H3A 0C3 Canada"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Bioresource Engineering McGill University Montreal QC H9X 3V9 Canada",
-          "Department of Mechanical Engineering McGill University Montreal QC H3A 0C3 Canada"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "Advanced Functional Materials",
-    "crossref_target_issn": "1616-301X",
-    "issn": [
-      "1616-301X",
-      "1616-3028"
-    ],
-    "issn_l": "",
-    "publisher": "Wiley",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4410570132",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S135204980",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S135204980",
-      "issn_l": "1616-301X",
-      "issn": [
-        "1616-301X",
-        "1616-3028"
-      ],
-      "type": "journal",
-      "host_organization_name": "Wiley",
-      "works_count": 42483,
-      "cited_by_count": 2508008,
-      "two_year_mean_citedness": 14.256403502995983,
-      "h_index": 476,
-      "i10_index": 26898,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "High-impact general journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 14.256403502995983,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 1",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - The study explores Conformally Perforated Shellular Metamaterials (CPSMs) with adjustable thermomechanical and acoustic characteristics.\n2. Problem - Traditional Triply Periodic Minimal Surfaces (TPMSs) limit tunability to shell thickness variations.\n3. Method - The authors employ discrete conformal mapping of 2D cellular structures onto TPMS to enhance property tunability, supported by computational analyses and experiments on 3D-printed samples.\n4. Key Result - CPSMs exhibit improved thermal conductivity and elastic stiffness, with a 79% increase in acoustic bandwidth and a 34% reduction in density compared to standard P-shellular designs.\n5. Takeaway - CPSMs represent a significant advancement in multifunctional metamaterials for structural, thermal, and acoustic applications.",
-    "relevance_note_en": "The summary captures the core findings and significance of the research on CPSMs.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-07-17",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1002/adfm.202506062"
   }
 }
