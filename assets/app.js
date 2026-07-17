@@ -795,13 +795,13 @@ function renderVenueBoard() {
   const coreCards = coreEntries.map(([venue, count]) => coreVenueCard(venue, count)).join("");
 
   els.venueBoard.innerHTML = `
-    <div class="venue-board-group venue-board-panel venue-rank-panel">
+    <div class="venue-board-group">
       <div class="venue-board-title">
         <span>OA Rank</span>
       </div>
       <div class="venue-featured">${mainCards}</div>
     </div>
-    <div class="venue-board-group venue-board-panel venue-core-panel">
+    <div class="venue-board-group venue-core-panel">
       <div class="venue-board-title">
         <span>Core venues</span>
       </div>

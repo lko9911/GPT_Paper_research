@@ -633,24 +633,13 @@ h1 {
 
 .venue-board {
   display: grid;
-  gap: 14px;
+  gap: 12px;
   padding: 14px;
 }
 
 .venue-board-group {
   display: grid;
   gap: 8px;
-}
-
-.venue-board-panel {
-  padding: 10px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: #ffffff;
-}
-
-.venue-core-panel {
-  background: #f7f9fc;
 }
 
 .venue-board-title {
@@ -663,6 +652,12 @@ h1 {
   font-weight: 850;
   letter-spacing: 0.07em;
   text-transform: uppercase;
+}
+
+.venue-core-panel {
+  margin-top: 2px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
 }
 
 .venue-featured {
@@ -2666,7 +2661,7 @@ h1 {
 }
 
 .venue-board {
-  gap: 12px;
+  gap: 10px;
   padding: 12px;
 }
 
@@ -3933,7 +3928,7 @@ h1 {
 }
 
 .venue-board {
-  gap: 10px;
+  gap: 8px;
   padding: 10px;
 }
 
