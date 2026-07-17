@@ -633,13 +633,24 @@ h1 {
 
 .venue-board {
   display: grid;
-  gap: 12px;
+  gap: 14px;
   padding: 14px;
 }
 
 .venue-board-group {
   display: grid;
   gap: 8px;
+}
+
+.venue-board-panel {
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.venue-core-panel {
+  background: #f7f9fc;
 }
 
 .venue-board-title {
@@ -2655,7 +2666,7 @@ h1 {
 }
 
 .venue-board {
-  gap: 10px;
+  gap: 12px;
   padding: 12px;
 }
 
@@ -3922,7 +3933,7 @@ h1 {
 }
 
 .venue-board {
-  gap: 8px;
+  gap: 10px;
   padding: 10px;
 }
 
