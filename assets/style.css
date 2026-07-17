@@ -637,10 +637,31 @@ h1 {
   padding: 14px;
 }
 
+.venue-board-group {
+  display: grid;
+  gap: 8px;
+}
+
+.venue-board-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 18px;
+  color: var(--muted);
+  font-size: 0.74rem;
+  font-weight: 850;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
 .venue-featured {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
   gap: 10px;
+}
+
+.venue-featured-core {
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
 }
 
 .venue-card {
@@ -665,6 +686,12 @@ h1 {
 .venue-card-muted {
   border-style: dashed;
   background: #fbfcff;
+}
+
+.venue-card.is-empty,
+.venue-card:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
 }
 
 .venue-card strong {

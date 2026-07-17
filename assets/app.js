@@ -251,6 +251,18 @@ const DETAILS_BASE_URL = "data/details/";
 const INITIAL_RENDER_LIMIT = 20;
 const RENDER_INCREMENT = 20;
 const FILTER_DEBOUNCE_MS = 120;
+const CORE_VENUE_FILTERS = [
+  "Nature",
+  "Nature Communications",
+  "Nature Materials",
+  "Nature Reviews Materials",
+  "Science",
+  "Science Advances",
+  "Science Robotics",
+  "Additive Manufacturing",
+  "ACS Applied Materials & Interfaces",
+  "Materials & Design",
+];
 
 if (localStorage.getItem("preferenceVersion") !== PREFERENCE_VERSION) {
   localStorage.setItem("theme", DEFAULT_THEME);
@@ -273,6 +285,7 @@ const state = {
   activeSubtopics: new Set(),
   activeAmlRecommendations: false,
   activeRankFilter: "",
+  activeCoreVenueFilter: "",
   theme: localStorage.getItem("theme") || DEFAULT_THEME,
   language: DEFAULT_LANGUAGE,
   collapsedFields: new Set(readStoredArray("collapsedFields")),
@@ -360,6 +373,11 @@ async function init() {
       if (el === els.newness) state.newnessTouched = true;
       if (el === els.category || el === els.tag) clearActiveSubtopics();
       if (el === els.category || el === els.tag) state.activeAmlRecommendations = false;
+      if (el === els.venue) {
+        state.activeRankFilter = "";
+        state.activeCoreVenueFilter = "";
+        syncRankBoardActive();
+      }
       if (wasAmlMode && !state.activeAmlRecommendations) switchRankFilterMode("oa", false);
       if (el !== els.newness && el !== els.sort) releaseDefaultNewnessFilter();
       if (el === els.search) {
@@ -373,6 +391,11 @@ async function init() {
       if (el === els.newness) state.newnessTouched = true;
       if (el === els.category || el === els.tag) clearActiveSubtopics();
       if (el === els.category || el === els.tag) state.activeAmlRecommendations = false;
+      if (el === els.venue) {
+        state.activeRankFilter = "";
+        state.activeCoreVenueFilter = "";
+        syncRankBoardActive();
+      }
       if (wasAmlMode && !state.activeAmlRecommendations) switchRankFilterMode("oa", false);
       if (el !== els.newness && el !== els.sort) releaseDefaultNewnessFilter();
       applyFilters();
@@ -758,6 +781,7 @@ function syncSideNavActive() {
 function renderVenueBoard() {
   const mode = currentRankMode();
   const rankEntries = rankCountEntries(mode);
+  const coreEntries = coreVenueEntries();
   const allLabel = t("allVenues");
   const total = state.activeAmlRecommendations ? amlVisibleRecommendations().length : state.papers.length;
 
@@ -768,18 +792,44 @@ function renderVenueBoard() {
     </button>`,
     ...rankEntries.map(([rank, count]) => rankCard(rank, count, mode)),
   ].join("");
+  const coreCards = coreEntries.map(([venue, count]) => coreVenueCard(venue, count)).join("");
 
   els.venueBoard.innerHTML = `
-    <div class="venue-featured">${mainCards}</div>
+    <div class="venue-board-group">
+      <div class="venue-board-title">
+        <span>OA Rank</span>
+      </div>
+      <div class="venue-featured">${mainCards}</div>
+    </div>
+    <div class="venue-board-group">
+      <div class="venue-board-title">
+        <span>Core venues</span>
+      </div>
+      <div class="venue-featured venue-featured-core">${coreCards}</div>
+    </div>
   `;
 
   els.venueBoard.querySelectorAll("[data-board-rank]").forEach((button) => {
     button.addEventListener("click", () => {
       const rank = button.dataset.boardRank || "";
       state.activeRankFilter = rank;
-      els.venueBoard.querySelectorAll(".venue-card").forEach((card) => {
-        card.classList.toggle("is-active", (card.dataset.boardRank || "") === rank);
-      });
+      state.activeCoreVenueFilter = "";
+      syncRankBoardActive();
+      releaseDefaultNewnessFilter();
+      applyFilters();
+      scrollToPapers();
+    });
+  });
+
+  els.venueBoard.querySelectorAll("[data-core-venue]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const venue = button.dataset.coreVenue || "";
+      state.activeCoreVenueFilter = venue;
+      if (venue) {
+        state.activeRankFilter = "";
+        if (els.venue) els.venue.value = "";
+      }
+      syncRankBoardActive();
       releaseDefaultNewnessFilter();
       applyFilters();
       scrollToPapers();
@@ -829,6 +879,17 @@ function rankCountEntries(mode = currentRankMode()) {
     entries.push(["__no_rank", counts.get("__no_rank")]);
   }
   return entries;
+}
+
+function coreVenueEntries() {
+  const counts = new Map(CORE_VENUE_FILTERS.map((venue) => [venue, 0]));
+  const source = state.activeAmlRecommendations ? amlRecommendedPapersForList() : state.papers;
+  source.forEach((paper) => {
+    const venueKey = normalizeVenueKey(paper && paper.venue);
+    const matched = CORE_VENUE_FILTERS.find((coreVenue) => venueKey === normalizeVenueKey(coreVenue));
+    if (matched) counts.set(matched, (counts.get(matched) || 0) + 1);
+  });
+  return CORE_VENUE_FILTERS.map((venue) => [venue, counts.get(venue) || 0]);
 }
 
 function rankKeyForPaper(paper, mode = currentRankMode()) {
@@ -929,8 +990,15 @@ function clearVenueQuickFilters() {
 
 function syncRankBoardActive() {
   const selectedRank = state.activeRankFilter || "";
+  const selectedCoreVenue = state.activeCoreVenueFilter || "";
   els.venueBoard.querySelectorAll(".venue-card").forEach((card) => {
-    card.classList.toggle("is-active", (card.dataset.boardRank || "") === selectedRank);
+    const rankMatches =
+      Object.prototype.hasOwnProperty.call(card.dataset, "boardRank") &&
+      !selectedCoreVenue &&
+      (card.dataset.boardRank || "") === selectedRank;
+    const coreMatches =
+      Object.prototype.hasOwnProperty.call(card.dataset, "coreVenue") && (card.dataset.coreVenue || "") === selectedCoreVenue;
+    card.classList.toggle("is-active", rankMatches || coreMatches);
   });
 }
 
@@ -945,6 +1013,15 @@ function rankCard(rank, count, mode = currentRankMode()) {
     <strong>${escapeHtml(label)}</strong>
     <span><b>${count}</b> ${escapeHtml(t("papers"))}</span>
     <em class="venue-chip">${escapeHtml(chip)}</em>
+  </button>`;
+}
+
+function coreVenueCard(venue, count) {
+  const disabled = count ? "" : " disabled";
+  return `<button class="venue-card core-venue-card${count ? "" : " is-empty"}" type="button" data-core-venue="${escapeAttribute(normalizeVenueKey(venue))}"${disabled}>
+    <strong>${escapeHtml(shortVenue(venue))}</strong>
+    <span><b>${count}</b> ${escapeHtml(t("papers"))}</span>
+    <em class="venue-chip">${escapeHtml(count ? "Core" : "No papers")}</em>
   </button>`;
 }
 
@@ -1170,6 +1247,7 @@ function applyFilters() {
   const tag = els.tag.value;
   const selectedVenue = els.venue.value;
   const selectedRank = state.activeRankFilter || "";
+  const selectedCoreVenue = state.activeCoreVenueFilter || "";
   const rankMode = currentRankMode();
   const summaryProvider = els.summaryProvider ? els.summaryProvider.value : "";
   const newness = els.newness ? els.newness.value : "";
@@ -1192,6 +1270,7 @@ function applyFilters() {
     const matchesTag = !tag || runtime.canonicalTagSet.has(canonicalTopicLabel(tag));
     const matchesVenue = !selectedVenue || normalizeVenueKey(runtime.venue) === selectedVenue;
     const matchesVenueRank = !selectedRank || rankKeyForPaper(paper, rankMode) === selectedRank;
+    const matchesCoreVenue = !selectedCoreVenue || normalizeVenueKey(runtime.venue) === selectedCoreVenue;
     const matchesSubtopic =
       !selectedSubtopics.length ||
       selectedSubtopics.some((item) => paperField === item.field && paperMatchesSidebarSubtopic(paper, item.field, item.subtopic));
@@ -1204,6 +1283,7 @@ function applyFilters() {
       matchesTag &&
       matchesVenue &&
       matchesVenueRank &&
+      matchesCoreVenue &&
       matchesSubtopic &&
       matchesSummaryProvider &&
       matchesNewness &&
@@ -1240,6 +1320,7 @@ function isDefaultNewPapersView() {
       !(els.tag && els.tag.value) &&
       !(els.venue && els.venue.value) &&
       !state.activeRankFilter &&
+      !state.activeCoreVenueFilter &&
       !(els.summaryProvider && els.summaryProvider.value) &&
       !(els.year && els.year.value) &&
       !state.activeSubtopics.size &&
@@ -1256,6 +1337,7 @@ function resetFilters() {
   if (els.year) els.year.value = "";
   if (els.sort) els.sort.value = "newest";
   state.activeRankFilter = "";
+  state.activeCoreVenueFilter = "";
   clearActiveSubtopics();
   state.activeAmlRecommendations = false;
   switchRankFilterMode("oa", false);
