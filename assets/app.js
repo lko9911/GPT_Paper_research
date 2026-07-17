@@ -98,7 +98,7 @@ const UI_TEXT = {
     relevance: "Relevance",
     title: "Title",
     resetFilters: "Reset",
-    venuesTitle: "OA Rank",
+    venuesTitle: "Rank & Core Venues",
     allVenues: "All ranks",
     papersByField: "Papers by Field",
     curatedPapers: "Curated Papers",
@@ -860,7 +860,7 @@ function populateVenueFilterOptions(venues) {
 
 function updateRankFilterLabels(mode) {
   setText(".venue-filter > span", t("venue"));
-  setText(".venue-section-head .section-kicker", "Venue Signal");
+  setText(".venue-section-head .section-kicker", "Venue Filters");
   setText(".venue-section-head h2", t("venuesTitle"));
 }
 
