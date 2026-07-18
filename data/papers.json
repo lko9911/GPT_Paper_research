@@ -46,7 +46,7 @@
     "publisher": "AMO Publisher",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7169566141",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S4404676487",
     "venue_metrics": {
@@ -5969,9 +5969,9 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Wenjun Xu",
-        "openalex_author_id": "https://openalex.org/A5059180329",
-        "orcid": "https://orcid.org/0000-0001-5370-3437",
+        "name": "Zhenlu Xu",
+        "openalex_author_id": "https://openalex.org/A5056473819",
+        "orcid": "https://orcid.org/0009-0007-0580-017X",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -12891,9 +12891,28 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Alessio Pricci",
+        "openalex_author_id": "https://openalex.org/A5072368140",
+        "orcid": "https://orcid.org/0000-0003-3330-3801",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Polytechnic University of Bari",
+            "ror": "https://ror.org/03c44v465",
+            "country_code": "IT",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanics, Mathematics and Management Engineering, Polytechnic University of Bari, Bari, Italy"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Progress in Additive Manufacturing",
     "doi": "10.1007/s40964-026-01843-0",
@@ -12913,8 +12932,8 @@
     "issn_l": "",
     "publisher": "Springer Science and Business Media LLC",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7169577072",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S4210206835",
     "venue_metrics": {
@@ -57608,9 +57627,46 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Bingqian Li",
+        "openalex_author_id": "https://openalex.org/A5052577366",
+        "orcid": "https://orcid.org/0000-0002-3359-8200",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Jilin University",
+            "ror": "https://ror.org/00js3aw79",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Key Laboratory of Bionic Engineering, Jilin University, Changchun, 130025, China"
+        ]
+      },
+      {
+        "name": "Lu Zhang",
+        "openalex_author_id": "https://openalex.org/A5100388724",
+        "orcid": "https://orcid.org/0009-0000-4316-6842",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Jilin University",
+            "ror": "https://ror.org/00js3aw79",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Key Laboratory of Bionic Engineering, Jilin University, Changchun, 130025, China"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Additive Manufacturing Frontiers",
     "doi": "10.1016/j.amf.2026.200359",
@@ -57629,7 +57685,7 @@
     "issn_l": "",
     "publisher": "Elsevier BV",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4416344539",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S5407037061",
@@ -84790,8 +84846,8 @@
         ]
       },
       {
-        "name": "Luquan Ren",
-        "openalex_author_id": "https://openalex.org/A5133795267",
+        "name": "Lei Ren",
+        "openalex_author_id": "https://openalex.org/A5133749330",
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -84819,7 +84875,7 @@
         "name": "Luquan Ren",
         "openalex_author_id": null,
         "orcid": null,
-        "position": "last",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -91606,12 +91662,18 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Maria A. Bieberich",
-        "openalex_author_id": "https://openalex.org/A5081851152",
-        "orcid": "https://orcid.org/0000-0002-1518-5330",
-        "position": "first",
+        "name": "Narendra Pandala",
+        "openalex_author_id": "https://openalex.org/A5025179556",
+        "orcid": "https://orcid.org/0000-0002-3057-8327",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
+          {
+            "name": "University of Iowa",
+            "ror": "https://ror.org/036jqmy94",
+            "country_code": "US",
+            "type": "education"
+          },
           {
             "name": "University of Maryland, Baltimore County",
             "ror": "https://ror.org/02qskvh78",
@@ -91620,12 +91682,13 @@
           }
         ],
         "raw_affiliation_strings": [
-          "University of Maryland, Baltimore County, Baltimore, Maryland, USA"
+          "University of Maryland, Baltimore County, Baltimore, Maryland, USA",
+          "Institute for Vision Research, Carver College of Medicine, University of Iowa, Iowa City, Iowa, USA"
         ]
       },
       {
-        "name": "Ishanathan Guteng",
-        "openalex_author_id": "https://openalex.org/A5120110580",
+        "name": "Victor Kehinde",
+        "openalex_author_id": "https://openalex.org/A5091964598",
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -91652,7 +91715,7 @@
         "name": "Erin Lavik",
         "openalex_author_id": "https://openalex.org/A5079335476",
         "orcid": "https://orcid.org/0000-0002-0644-744X",
-        "position": "last",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -97721,8 +97784,8 @@
         ]
       },
       {
-        "name": "Lei Ren",
-        "openalex_author_id": null,
+        "name": "L. Ren",
+        "openalex_author_id": "https://openalex.org/A5003419669",
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -97768,7 +97831,7 @@
         "name": "Luquan Ren",
         "openalex_author_id": null,
         "orcid": null,
-        "position": "middle",
+        "position": "last",
         "is_corresponding": true,
         "institutions": [
           {
@@ -111615,9 +111678,9 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Cheng Zhang",
-        "openalex_author_id": "https://openalex.org/A5100769098",
-        "orcid": "https://orcid.org/0000-0001-8282-9901",
+        "name": "Sichao Liu",
+        "openalex_author_id": "https://openalex.org/A5068371109",
+        "orcid": "https://orcid.org/0000-0002-1909-0507",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -128105,8 +128168,8 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Aoming Zhang",
-        "openalex_author_id": "https://openalex.org/A5111021439",
+        "name": "Zhangdong Chen",
+        "openalex_author_id": "https://openalex.org/A5070746638",
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -128123,9 +128186,9 @@
         ]
       },
       {
-        "name": "Di Wang",
-        "openalex_author_id": "https://openalex.org/A5100401383",
-        "orcid": "https://orcid.org/0000-0001-5727-2777",
+        "name": "Zhangdong Chen",
+        "openalex_author_id": "https://openalex.org/A5070746638",
+        "orcid": null,
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -134332,8 +134395,8 @@
       },
       {
         "name": "Wenzhuo Liu",
-        "openalex_author_id": null,
-        "orcid": null,
+        "openalex_author_id": "https://openalex.org/A5107441690",
+        "orcid": "https://orcid.org/0009-0004-3542-8418",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -199810,10 +199873,10 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Weiming Ou",
-        "openalex_author_id": "https://openalex.org/A5113870546",
-        "orcid": null,
-        "position": "middle",
+        "name": "Songhao Wang",
+        "openalex_author_id": "https://openalex.org/A5057228007",
+        "orcid": "https://orcid.org/0000-0003-3643-4698",
+        "position": "first",
         "is_corresponding": true,
         "institutions": [
           {
@@ -260234,9 +260297,9 @@
         ]
       },
       {
-        "name": "Shan Li",
-        "openalex_author_id": "https://openalex.org/A5021433428",
-        "orcid": "https://orcid.org/0000-0002-1005-3216",
+        "name": "Zihuan Chen",
+        "openalex_author_id": "https://openalex.org/A5024222220",
+        "orcid": null,
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -261487,7 +261550,7 @@
       },
       {
         "name": "Huanyue Zhang",
-        "openalex_author_id": "https://openalex.org/A5014806689",
+        "openalex_author_id": null,
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -261508,14 +261571,14 @@
         "raw_affiliation_strings": [
           "Department of Orthopedics, Central Hospital of Dalian University of Technology, Dalian, People’s Republic of China",
           "Instrumental Analysis Center, Dalian University of Technology, Dalian, People’s Republic of China",
-          "Instrumental Analysis Center, Dalian University of Technology, Dalian, People's Republic of China"
+          "Department of Orthopedics, Central Hospital of Dalian University of Technology, Dalian, People's Republic of China"
         ]
       },
       {
         "name": "Hao Zhang",
         "openalex_author_id": null,
         "orcid": null,
-        "position": "last",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -292287,9 +292350,9 @@
         ]
       },
       {
-        "name": "Bo Li",
-        "openalex_author_id": "https://openalex.org/A5100628411",
-        "orcid": "https://orcid.org/0000-0001-5633-936X",
+        "name": "Ji Zhou",
+        "openalex_author_id": "https://openalex.org/A5063427028",
+        "orcid": "https://orcid.org/0000-0003-1502-2504",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -304206,8 +304269,8 @@
           "Engineering Technology Research Center for Rapid Manufacturing of Shaanxi Province, Xi'an Jiaotong University, Xi'an, People’s Republic of China",
           "School of Mechanical Engineering, Xi'an Jiaotong University, Xi'an, People’s Republic of China",
           "State Key Laboratory for Manufacturing System Engineering, Xi'an Jiaotong University, Xi'an, People’s Republic of China",
-          "Engineering Technology Research Center for Rapid Manufacturing of Shaanxi Province, Xi'an Jiaotong University, Xi'an, People's Republic of China",
           "State Key Laboratory for Manufacturing System Engineering, Xi'an Jiaotong University, Xi'an, People's Republic of China",
+          "Engineering Technology Research Center for Rapid Manufacturing of Shaanxi Province, Xi'an Jiaotong University, Xi'an, People's Republic of China",
           "School of Mechanical Engineering, Xi'an Jiaotong University, Xi'an, People's Republic of China"
         ]
       },
@@ -304215,7 +304278,7 @@
         "name": "Ling Wang",
         "openalex_author_id": "https://openalex.org/A5115592675",
         "orcid": "https://orcid.org/0000-0002-5176-7469",
-        "position": "middle",
+        "position": "last",
         "is_corresponding": true,
         "institutions": [
           {
