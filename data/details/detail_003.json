@@ -1,4 +1,153 @@
 {
+  "10.1002/adfm.202412901": {
+    "author_details": [
+      {
+        "name": "Jeonghoon Park",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Mechanical Engineering Pohang University of Science and Technology (POSTECH)  Pohang 37673 Republic of Korea"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering Pohang University of Science and Technology (POSTECH)  Pohang 37673 Republic of Korea"
+        ]
+      },
+      {
+        "name": "Jaebum Noh",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Mechanical Engineering Pohang University of Science and Technology (POSTECH)  Pohang 37673 Republic of Korea"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering Pohang University of Science and Technology (POSTECH)  Pohang 37673 Republic of Korea"
+        ]
+      },
+      {
+        "name": "Jehyeon Shin",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Graduate School of Artificial Intelligence Pohang University of Science and Technology (POSTECH)  Pohang 37673 Republic of Korea"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Graduate School of Artificial Intelligence Pohang University of Science and Technology (POSTECH)  Pohang 37673 Republic of Korea"
+        ]
+      },
+      {
+        "name": "Grace X. Gu",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Mechanical Engineering University of California  Berkeley CA 94720 USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering University of California  Berkeley CA 94720 USA"
+        ]
+      },
+      {
+        "name": "Junsuk Rho",
+        "orcid": "https://orcid.org/0000-0002-2179-2890",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Mechanical Engineering Pohang University of Science and Technology (POSTECH)  Pohang 37673 Republic of Korea"
+          },
+          {
+            "name": "Graduate School of Artificial Intelligence Pohang University of Science and Technology (POSTECH)  Pohang 37673 Republic of Korea"
+          },
+          {
+            "name": "Department of Chemical Engineering Pohang University of Science and Technology (POSTECH)  Pohang 37673 Republic of Korea"
+          },
+          {
+            "name": "Department of Electrical Engineering Pohang University of Science and Technology (POSTECH)  Pohang 37673 Republic of Korea"
+          },
+          {
+            "name": "POSCO‐POSTECH‐RIST Convergence Research Center for Flat Optics and Metaphotonics  Pohang 37673 Republic of Korea"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering Pohang University of Science and Technology (POSTECH)  Pohang 37673 Republic of Korea",
+          "Graduate School of Artificial Intelligence Pohang University of Science and Technology (POSTECH)  Pohang 37673 Republic of Korea",
+          "Department of Chemical Engineering Pohang University of Science and Technology (POSTECH)  Pohang 37673 Republic of Korea",
+          "Department of Electrical Engineering Pohang University of Science and Technology (POSTECH)  Pohang 37673 Republic of Korea",
+          "POSCO‐POSTECH‐RIST Convergence Research Center for Flat Optics and Metaphotonics  Pohang 37673 Republic of Korea"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Advanced Functional Materials",
+    "crossref_target_issn": "1616-301X",
+    "issn": [
+      "1616-301X",
+      "1616-3028"
+    ],
+    "issn_l": "",
+    "publisher": "Wiley",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4402604970",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S135204980",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S135204980",
+      "issn_l": "1616-301X",
+      "issn": [
+        "1616-301X",
+        "1616-3028"
+      ],
+      "type": "journal",
+      "host_organization_name": "Wiley",
+      "works_count": 42483,
+      "cited_by_count": 2508008,
+      "two_year_mean_citedness": 14.256403502995983,
+      "h_index": 476,
+      "i10_index": 26898,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "High-impact general journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 14.256403502995983,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - The study focuses on 3D chiral mechanical metamaterials and their unique properties.\n2. Problem - Existing design methods for these materials often overlook their static and dynamic behaviors.\n3. Method - The researchers employed conditional generative adversarial networks to inverse design metamaterials with specific mechanical properties.\n4. Key Result - The fabricated metamaterials demonstrated effective wave attenuation and low stress concentrations, showcasing a variety of mechanical responses.\n5. Takeaway - This work enhances the design capabilities of chiral metamaterials, paving the way for advanced applications in mechanical engineering.",
+    "relevance_note_en": "The paper presents a novel approach to designing chiral metamaterials, addressing gaps in current methodologies.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-07-18",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1002/adfm.202412901"
+  },
   "10.1016/j.engstruct.2025.120844": {
     "author_details": [
       {
@@ -11766,7 +11915,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "last_seen_in_crossref_run": "2026-07-18",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "id": "10.1021/acsbiomaterials.4c01837"
   },
   "10.1038/s41467-025-59502-x": {
@@ -24289,7 +24438,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "last_seen_in_crossref_run": "2026-07-18",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "id": "10.1002/amp2.70044"
   },
   "10.1016/j.addma.2025.104863": {
@@ -34040,192 +34189,5 @@
     "last_seen_in_crossref_run": "2026-07-18",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1080/24725854.2024.2312905"
-  },
-  "10.1126/sciadv.adv4646": {
-    "author_details": [
-      {
-        "name": "Jiaxin Shi",
-        "orcid": "https://orcid.org/0000-0002-8854-1367",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Advanced Materials Laboratory of Ministry of Education (MOE), Department of Chemical Engineering, Tsinghua University, Beijing 100084, China."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Advanced Materials Laboratory of Ministry of Education (MOE), Department of Chemical Engineering, Tsinghua University, Beijing 100084, China."
-        ]
-      },
-      {
-        "name": "Fei Xia",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "State Key Laboratory for Quality Ensurance and Sustainable Use of Dao-di Herbs, Artemisinin Research Center, and Institute of Chinese Materia Medica, China Academy of Chinese Medical Sciences, Beijing 100700, China."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "State Key Laboratory for Quality Ensurance and Sustainable Use of Dao-di Herbs, Artemisinin Research Center, and Institute of Chinese Materia Medica, China Academy of Chinese Medical Sciences, Beijing 100700, China."
-        ]
-      },
-      {
-        "name": "Qingchao Tu",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "State Key Laboratory for Quality Ensurance and Sustainable Use of Dao-di Herbs, Artemisinin Research Center, and Institute of Chinese Materia Medica, China Academy of Chinese Medical Sciences, Beijing 100700, China."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "State Key Laboratory for Quality Ensurance and Sustainable Use of Dao-di Herbs, Artemisinin Research Center, and Institute of Chinese Materia Medica, China Academy of Chinese Medical Sciences, Beijing 100700, China."
-        ]
-      },
-      {
-        "name": "Chen Wang",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "State Key Laboratory for Quality Ensurance and Sustainable Use of Dao-di Herbs, Artemisinin Research Center, and Institute of Chinese Materia Medica, China Academy of Chinese Medical Sciences, Beijing 100700, China."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "State Key Laboratory for Quality Ensurance and Sustainable Use of Dao-di Herbs, Artemisinin Research Center, and Institute of Chinese Materia Medica, China Academy of Chinese Medical Sciences, Beijing 100700, China."
-        ]
-      },
-      {
-        "name": "Zhiqi Wang",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Advanced Materials Laboratory of Ministry of Education (MOE), Department of Chemical Engineering, Tsinghua University, Beijing 100084, China."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Advanced Materials Laboratory of Ministry of Education (MOE), Department of Chemical Engineering, Tsinghua University, Beijing 100084, China."
-        ]
-      },
-      {
-        "name": "Bo Li",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Advanced Materials Laboratory of Ministry of Education (MOE), Department of Chemical Engineering, Tsinghua University, Beijing 100084, China."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Advanced Materials Laboratory of Ministry of Education (MOE), Department of Chemical Engineering, Tsinghua University, Beijing 100084, China."
-        ]
-      },
-      {
-        "name": "Baohua Guo",
-        "orcid": "https://orcid.org/0000-0002-4859-0893",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Advanced Materials Laboratory of Ministry of Education (MOE), Department of Chemical Engineering, Tsinghua University, Beijing 100084, China."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Advanced Materials Laboratory of Ministry of Education (MOE), Department of Chemical Engineering, Tsinghua University, Beijing 100084, China."
-        ]
-      },
-      {
-        "name": "Chong Qiu",
-        "orcid": "https://orcid.org/0000-0001-6343-5480",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "State Key Laboratory for Quality Ensurance and Sustainable Use of Dao-di Herbs, Artemisinin Research Center, and Institute of Chinese Materia Medica, China Academy of Chinese Medical Sciences, Beijing 100700, China."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "State Key Laboratory for Quality Ensurance and Sustainable Use of Dao-di Herbs, Artemisinin Research Center, and Institute of Chinese Materia Medica, China Academy of Chinese Medical Sciences, Beijing 100700, China."
-        ]
-      },
-      {
-        "name": "Jun Xu",
-        "orcid": "https://orcid.org/0000-0003-2345-0541",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Advanced Materials Laboratory of Ministry of Education (MOE), Department of Chemical Engineering, Tsinghua University, Beijing 100084, China."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Advanced Materials Laboratory of Ministry of Education (MOE), Department of Chemical Engineering, Tsinghua University, Beijing 100084, China."
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "Science Advances",
-    "crossref_target_issn": "2375-2548",
-    "issn": [
-      "2375-2548"
-    ],
-    "issn_l": "",
-    "publisher": "American Association for the Advancement of Science (AAAS)",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4411258959",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S2737427234",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S2737427234",
-      "issn_l": "2375-2548",
-      "issn": [
-        "2375-2548"
-      ],
-      "type": "journal",
-      "host_organization_name": "American Association for the Advancement of Science",
-      "works_count": 19454,
-      "cited_by_count": 1254678,
-      "two_year_mean_citedness": 12.005587372538065,
-      "h_index": 374,
-      "i10_index": 14182,
-      "is_core": true,
-      "is_oa": true,
-      "is_in_doaj": true
-    },
-    "journal_quality": {
-      "label": "High-impact general journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 12.005587372538065,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 1",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - This paper discusses a novel elastomer designed to mimic skin for biomedical uses.\n2. Problem - Creating a single material that combines high strength, toughness, damage resistance, and biosafety has been challenging.\n3. Method - The authors developed a polyurethane elastomer by designing multilevel structures and optimizing chemical properties.\n4. Key Result - The resulting material exhibits impressive mechanical properties and body-temperature shape memory, making it suitable for 4D printing.\n5. Takeaway - This elastomer shows promise for applications in biomedical fields, particularly in enhancing cell proliferation and aiding DNA repair.",
-    "relevance_note_en": "The summary captures the core aspects of the research, focusing on the innovative material and its biomedical applications.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-07-18",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1126/sciadv.adv4646"
   }
 }
