@@ -1,4 +1,137 @@
 {
+  "10.1080/24725854.2024.2312905": {
+    "author_details": [
+      {
+        "name": "Raghav Gnanasambandam",
+        "orcid": "https://orcid.org/0009-0004-2159-4837",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Grado Department of Industrial and Systems Engineering, Virginia Tech, Blacksburg, VA, USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Grado Department of Industrial and Systems Engineering, Virginia Tech, Blacksburg, VA, USA"
+        ]
+      },
+      {
+        "name": "Bo Shen",
+        "orcid": "https://orcid.org/0000-0002-2643-3600",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Mechanical &amp; Industrial Engineering, NJIT, Newark, NJ, USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical &amp; Industrial Engineering, NJIT, Newark, NJ, USA"
+        ]
+      },
+      {
+        "name": "Andrew Chung Chee Law",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "IoTeX, Menlo Park, CA, USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "IoTeX, Menlo Park, CA, USA"
+        ]
+      },
+      {
+        "name": "Chaoran Dou",
+        "orcid": "https://orcid.org/0000-0002-6546-7774",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Grado Department of Industrial and Systems Engineering, Virginia Tech, Blacksburg, VA, USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Grado Department of Industrial and Systems Engineering, Virginia Tech, Blacksburg, VA, USA"
+        ]
+      },
+      {
+        "name": "Zhenyu (James) Kong",
+        "orcid": "https://orcid.org/0000-0002-8827-502X",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Grado Department of Industrial and Systems Engineering, Virginia Tech, Blacksburg, VA, USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Grado Department of Industrial and Systems Engineering, Virginia Tech, Blacksburg, VA, USA"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2472-5854",
+      "2472-5862"
+    ],
+    "issn_l": "",
+    "publisher": "Informa UK Limited",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4391381017",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S4210225672",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210225672",
+      "issn_l": "2472-5854",
+      "issn": [
+        "2472-5854",
+        "2472-5862"
+      ],
+      "type": "journal",
+      "host_organization_name": "Taylor & Francis",
+      "works_count": 933,
+      "cited_by_count": 13356,
+      "two_year_mean_citedness": 2.5560538116591927,
+      "h_index": 49,
+      "i10_index": 378,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 2.5560538116591927,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 3",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The paper discusses a novel approach to Bayesian optimization using Deep Gaussian Processes in the context of additive manufacturing.\n2. Problem - Traditional Gaussian Process models struggle with non-stationary functions, which are common in additive manufacturing processes.\n3. Method - The authors introduce a bootstrap aggregation-based procedure that employs Stochastic Imputation for inference in a Deep Gaussian Process surrogate model for Bayesian optimization.\n4. Key Result - The proposed DGP-SI-BO algorithm outperforms existing state-of-the-art methods in optimizing non-stationary functions, demonstrating improved speed and accuracy.\n5. Takeaway - This research highlights the effectiveness of Deep Gaussian Processes in enhancing Bayesian optimization for complex engineering design problems in additive manufacturing.",
+    "relevance_note_en": "The summary captures the core contributions and findings of the paper while addressing the specific context of additive manufacturing.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-07-20",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1080/24725854.2024.2312905"
+  },
   "10.1126/sciadv.adv4646": {
     "author_details": [
       {
@@ -30331,91 +30464,5 @@
     "last_seen_in_crossref_run": "2026-07-20",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.addma.2024.104117"
-  },
-  "10.1016/j.matdes.2024.112710": {
-    "author_details": [
-      {
-        "name": "M. Mahmoudi",
-        "orcid": "https://orcid.org/0000-0003-3014-1413",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "S.A.M. Ghannadpour",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "K. Hossein Nedjad",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "0264-1275"
-    ],
-    "issn_l": "",
-    "publisher": "Elsevier BV",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4391310285",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S8792693",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S8792693",
-      "issn_l": "0264-1275",
-      "issn": [
-        "0264-1275",
-        "1873-4197"
-      ],
-      "type": "journal",
-      "host_organization_name": "Elsevier BV",
-      "works_count": 14476,
-      "cited_by_count": 516286,
-      "two_year_mean_citedness": 5.543417366946779,
-      "h_index": 222,
-      "i10_index": 8917,
-      "is_core": true,
-      "is_oa": true,
-      "is_in_doaj": true
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 5.543417366946779,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 2",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The study focuses on creating a high-strength sandwich core using functionally graded multi-morphology lattice structures.\n2. Problem - There is a need for improved sandwich core designs that enhance mechanical performance while being manufacturable through additive manufacturing.\n3. Method - The research employs digital light processing to fabricate lattice structures from photopolymer resin, analyzing their mechanical properties through finite element analysis and experimental validation.\n4. Key Result - The optimized lattice core achieved a 96% increase in maximum fracture force and a 174% increase in stiffness compared to traditional homogeneous designs.\n5. Takeaway - This innovative approach offers a significant advancement in high-strength design by utilizing multiple morphologies, providing a faster alternative to conventional optimization methods.",
-    "relevance_note_en": "The summary captures the essence of the study's objectives, methods, and findings without directly paraphrasing the abstract.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-07-20",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1016/j.matdes.2024.112710"
   }
 }

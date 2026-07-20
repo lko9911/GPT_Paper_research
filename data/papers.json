@@ -39025,10 +39025,10 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-24",
-    "last_updated": "2026-07-19",
+    "last_updated": "2026-07-20",
     "is_weekly_new": false,
-    "last_seen_in_crossref_run": "2026-07-19",
-    "not_seen_in_latest_crossref_run": true,
+    "last_seen_in_crossref_run": "2026-07-20",
+    "not_seen_in_latest_crossref_run": false,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 3.7044257112750265,
@@ -48004,6 +48004,151 @@
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
+    "id": "10.1108/rpj-08-2025-0414",
+    "title": "Comprehensive investigation of the mechanical performance of the direct transition functional graded materials",
+    "authors": [
+      "Burak Özel",
+      "Altug Bakirci",
+      "Mehmet Kivanc Turan"
+    ],
+    "author_details": [
+      {
+        "name": "Burak Özel",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Ermetal Otomotiv ve Esya San. Tic. A.S. R&D Department, , Bursa,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Ermetal Otomotiv ve Esya San. Tic. A.S. R&D Department, , Bursa,"
+        ]
+      },
+      {
+        "name": "Altug Bakirci",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Ermetal Otomotiv ve Esya San. Tic. A.S. R&D Department, , Bursa,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Ermetal Otomotiv ve Esya San. Tic. A.S. R&D Department, , Bursa,"
+        ]
+      },
+      {
+        "name": "Mehmet Kivanc Turan",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Bursa Uludag University Department of Mechanical Engineering, , Bursa,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Bursa Uludag University Department of Mechanical Engineering, , Bursa,"
+        ]
+      }
+    ],
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "year": 2026,
+    "venue": "Rapid Prototyping Journal",
+    "doi": "10.1108/rpj-08-2025-0414",
+    "url": "https://doi.org/10.1108/rpj-08-2025-0414",
+    "source": [
+      "Crossref"
+    ],
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Rapid Prototyping Journal",
+    "crossref_target_issn": "1355-2546",
+    "issn": [
+      "1355-2546",
+      "1758-7670"
+    ],
+    "issn_l": "",
+    "publisher": "Emerald",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "https://openalex.org/W7103658438",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S173500210",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S173500210",
+      "issn_l": "1355-2546",
+      "issn": [
+        "1355-2546",
+        "1758-7670"
+      ],
+      "type": "journal",
+      "host_organization_name": "Emerald Publishing Limited",
+      "works_count": 2524,
+      "cited_by_count": 98147,
+      "two_year_mean_citedness": 3.0,
+      "h_index": 139,
+      "i10_index": 1507,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 3.0,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 3",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "publication_type": "journal_article",
+    "venue_trust": "trusted",
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "is_core_venue": true,
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "categories": [
+      "Multi-material AM",
+      "Functionally Graded AM"
+    ],
+    "tags": [
+      "mechanical performance",
+      "additive manufacturing",
+      "composite materials",
+      "Fused Deposition Modeling",
+      "tensile strength"
+    ],
+    "relevance_score": 6,
+    "curation_priority": false,
+    "ai_summary_en": "1. Topic - The study focuses on the mechanical properties of composite parts made from various materials using additive manufacturing.\n2. Problem - It addresses the need to understand the tensile and flexural strengths of different material combinations in butt joints.\n3. Method - The research utilized Fused Deposition Modeling and followed ISO standards for specimen design, testing six material combinations including PLA and PETG.\n4. Key Result - The findings revealed that pure PLA exhibited the highest strength, while the weakest adhesion was found between PETG and PLA–wood composite.\n5. Takeaway - This research enhances knowledge on the performance of functionally graded materials in additive manufacturing, particularly highlighting the benefits of wood-reinforced PLA composites.",
+    "summary_provider": "openai",
+    "openai_summary_applied": true,
+    "relevance_note_en": "The summary captures the core findings and methodologies of the study, emphasizing its contributions to the field.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-06-24",
+    "last_updated": "2026-07-20",
+    "is_weekly_new": false,
+    "last_seen_in_crossref_run": "2026-07-20",
+    "not_seen_in_latest_crossref_run": false,
+    "openalex_venue_rank": "Rank 3",
+    "openalex_venue_rank_number": 3,
+    "openalex_venue_rank_score": 3.0,
+    "openalex_venue_rank_percentile": 0.426,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+  },
+  {
     "id": "10.1002/adem.70986",
     "title": "Compatibility of Methacrylate Based Resins Controls Interfacial Failure and Toughness in 3D-Printed Multimaterial Composites",
     "authors": [
@@ -50593,6 +50738,289 @@
     "openalex_venue_rank_number": 3,
     "openalex_venue_rank_score": 2.9569160997732427,
     "openalex_venue_rank_percentile": 0.4201,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+  },
+  {
+    "id": "10.1002/advs.76524",
+    "title": "A Closed-Loop Framework for Inverse Design: Dynamic Training and Intelligent Optimization for Heterostructured Materials",
+    "authors": [
+      "Zhiyan Zhong",
+      "Xueru Zheng",
+      "Xiao Zhou",
+      "Zhengheng Tao",
+      "Wan Han",
+      "Jingyi Pan",
+      "Dian Wu",
+      "Ning Gao",
+      "Lei Liu",
+      "Zhongyang Wang",
+      "Fanchao Meng",
+      "Tongxiang Fan"
+    ],
+    "author_details": [
+      {
+        "name": "Zhiyan Zhong",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "State Key Lab of Metal Matrix Composites School of Material Science and Engineering Shanghai Jiao Tong University  Shanghai P. R. China"
+          },
+          {
+            "name": "Shanghai Innovation Institute  Shanghai P. R. China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "State Key Lab of Metal Matrix Composites School of Material Science and Engineering Shanghai Jiao Tong University  Shanghai P. R. China",
+          "Shanghai Innovation Institute  Shanghai P. R. China"
+        ]
+      },
+      {
+        "name": "Xueru Zheng",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "State Key Lab of Metal Matrix Composites School of Material Science and Engineering Shanghai Jiao Tong University  Shanghai P. R. China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "State Key Lab of Metal Matrix Composites School of Material Science and Engineering Shanghai Jiao Tong University  Shanghai P. R. China"
+        ]
+      },
+      {
+        "name": "Xiao Zhou",
+        "orcid": "https://orcid.org/0000-0003-3273-1820",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "State Key Lab of Metal Matrix Composites School of Material Science and Engineering Shanghai Jiao Tong University  Shanghai P. R. China"
+          },
+          {
+            "name": "Institute of Medical Robotics Shanghai Jiao Tong University  Shanghai P. R. China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "State Key Lab of Metal Matrix Composites School of Material Science and Engineering Shanghai Jiao Tong University  Shanghai P. R. China",
+          "Institute of Medical Robotics Shanghai Jiao Tong University  Shanghai P. R. China"
+        ]
+      },
+      {
+        "name": "Zhengheng Tao",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "State Key Lab of Metal Matrix Composites School of Material Science and Engineering Shanghai Jiao Tong University  Shanghai P. R. China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "State Key Lab of Metal Matrix Composites School of Material Science and Engineering Shanghai Jiao Tong University  Shanghai P. R. China"
+        ]
+      },
+      {
+        "name": "Wan Han",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "State Key Lab of Metal Matrix Composites School of Material Science and Engineering Shanghai Jiao Tong University  Shanghai P. R. China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "State Key Lab of Metal Matrix Composites School of Material Science and Engineering Shanghai Jiao Tong University  Shanghai P. R. China"
+        ]
+      },
+      {
+        "name": "Jingyi Pan",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "State Key Lab of Metal Matrix Composites School of Material Science and Engineering Shanghai Jiao Tong University  Shanghai P. R. China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "State Key Lab of Metal Matrix Composites School of Material Science and Engineering Shanghai Jiao Tong University  Shanghai P. R. China"
+        ]
+      },
+      {
+        "name": "Dian Wu",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "School of Mathematical Sciences Peking University  Beijing P. R. China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Mathematical Sciences Peking University  Beijing P. R. China"
+        ]
+      },
+      {
+        "name": "Ning Gao",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "State Key Lab of Metal Matrix Composites School of Material Science and Engineering Shanghai Jiao Tong University  Shanghai P. R. China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "State Key Lab of Metal Matrix Composites School of Material Science and Engineering Shanghai Jiao Tong University  Shanghai P. R. China"
+        ]
+      },
+      {
+        "name": "Lei Liu",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "State Key Lab of Metal Matrix Composites School of Material Science and Engineering Shanghai Jiao Tong University  Shanghai P. R. China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "State Key Lab of Metal Matrix Composites School of Material Science and Engineering Shanghai Jiao Tong University  Shanghai P. R. China"
+        ]
+      },
+      {
+        "name": "Zhongyang Wang",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "State Key Lab of Metal Matrix Composites School of Material Science and Engineering Shanghai Jiao Tong University  Shanghai P. R. China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "State Key Lab of Metal Matrix Composites School of Material Science and Engineering Shanghai Jiao Tong University  Shanghai P. R. China"
+        ]
+      },
+      {
+        "name": "Fanchao Meng",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Institute of Advanced Studies in Precision Materials Yantai University  Yantai Shandong P. R. China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Institute of Advanced Studies in Precision Materials Yantai University  Yantai Shandong P. R. China"
+        ]
+      },
+      {
+        "name": "Tongxiang Fan",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "State Key Lab of Metal Matrix Composites School of Material Science and Engineering Shanghai Jiao Tong University  Shanghai P. R. China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "State Key Lab of Metal Matrix Composites School of Material Science and Engineering Shanghai Jiao Tong University  Shanghai P. R. China"
+        ]
+      }
+    ],
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "year": 2026,
+    "venue": "Advanced Science",
+    "doi": "10.1002/advs.76524",
+    "url": "https://doi.org/10.1002/advs.76524",
+    "source": [
+      "Crossref"
+    ],
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Advanced Science",
+    "crossref_target_issn": "2198-3844",
+    "issn": [
+      "2198-3844",
+      "2198-3844"
+    ],
+    "issn_l": "",
+    "publisher": "Wiley",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S2737737698",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S2737737698",
+      "issn_l": "2198-3844",
+      "issn": [
+        "2198-3844"
+      ],
+      "type": "journal",
+      "host_organization_name": "Wiley",
+      "works_count": 20558,
+      "cited_by_count": 647035,
+      "two_year_mean_citedness": 8.402641353693769,
+      "h_index": 276,
+      "i10_index": 9993,
+      "is_core": true,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
+    "journal_quality": {
+      "label": "High-impact general journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 8.402641353693769,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "publication_type": "journal_article",
+    "venue_trust": "trusted",
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "is_core_venue": true,
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "categories": [
+      "AI and Machine Learning for AM"
+    ],
+    "tags": [
+      "Self-driving Labs",
+      "Manufacturing automation"
+    ],
+    "relevance_score": 6,
+    "curation_priority": false,
+    "ai_summary_en": "1. Topic - A Closed-Loop Framework for Inverse Design: Dynamic Training and Intelligent Optimization for Heterostructured Materials is a 2026 paper from Advanced Science about Self-driving Labs and Manufacturing automation.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Self-driving Labs and Manufacturing automation.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Self-driving Labs and Manufacturing automation; current relevance score is 6/10.",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_en": "Relevant to the tracker through Self-driving Labs and Manufacturing automation; score: 6/10.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-07-20",
+    "last_updated": "2026-07-20",
+    "is_weekly_new": true,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-07-20",
+    "openalex_venue_rank": "Rank 1",
+    "openalex_venue_rank_number": 1,
+    "openalex_venue_rank_score": 8.402641353693769,
+    "openalex_venue_rank_percentile": 0.8669,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
@@ -157130,151 +157558,6 @@
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
-    "id": "10.1108/rpj-08-2025-0414",
-    "title": "Comprehensive investigation of the mechanical performance of the direct transition functional graded materials",
-    "authors": [
-      "Burak Özel",
-      "Altug Bakirci",
-      "Mehmet Kivanc Turan"
-    ],
-    "author_details": [
-      {
-        "name": "Burak Özel",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Ermetal Otomotiv ve Esya San. Tic. A.S. R&D Department, , Bursa,"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Ermetal Otomotiv ve Esya San. Tic. A.S. R&D Department, , Bursa,"
-        ]
-      },
-      {
-        "name": "Altug Bakirci",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Ermetal Otomotiv ve Esya San. Tic. A.S. R&D Department, , Bursa,"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Ermetal Otomotiv ve Esya San. Tic. A.S. R&D Department, , Bursa,"
-        ]
-      },
-      {
-        "name": "Mehmet Kivanc Turan",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Bursa Uludag University Department of Mechanical Engineering, , Bursa,"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Bursa Uludag University Department of Mechanical Engineering, , Bursa,"
-        ]
-      }
-    ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
-    "year": 2025,
-    "venue": "Rapid Prototyping Journal",
-    "doi": "10.1108/rpj-08-2025-0414",
-    "url": "https://doi.org/10.1108/rpj-08-2025-0414",
-    "source": [
-      "Crossref"
-    ],
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "Rapid Prototyping Journal",
-    "crossref_target_issn": "1355-2546",
-    "issn": [
-      "1355-2546",
-      "1758-7670"
-    ],
-    "issn_l": "",
-    "publisher": "Emerald",
-    "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "https://openalex.org/W7103658438",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S173500210",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S173500210",
-      "issn_l": "1355-2546",
-      "issn": [
-        "1355-2546",
-        "1758-7670"
-      ],
-      "type": "journal",
-      "host_organization_name": "Emerald Publishing Limited",
-      "works_count": 2524,
-      "cited_by_count": 98147,
-      "two_year_mean_citedness": 3.0,
-      "h_index": 139,
-      "i10_index": 1507,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Core manufacturing journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 3.0,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 3",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "publication_type": "journal_article",
-    "venue_trust": "trusted",
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "is_core_venue": true,
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "categories": [
-      "Multi-material AM",
-      "Functionally Graded AM"
-    ],
-    "tags": [
-      "mechanical performance",
-      "additive manufacturing",
-      "composite materials",
-      "Fused Deposition Modeling",
-      "tensile strength"
-    ],
-    "relevance_score": 6,
-    "curation_priority": false,
-    "ai_summary_en": "1. Topic - The study focuses on the mechanical properties of composite parts made from various materials using additive manufacturing.\n2. Problem - It addresses the need to understand the tensile and flexural strengths of different material combinations in butt joints.\n3. Method - The research utilized Fused Deposition Modeling and followed ISO standards for specimen design, testing six material combinations including PLA and PETG.\n4. Key Result - The findings revealed that pure PLA exhibited the highest strength, while the weakest adhesion was found between PETG and PLA–wood composite.\n5. Takeaway - This research enhances knowledge on the performance of functionally graded materials in additive manufacturing, particularly highlighting the benefits of wood-reinforced PLA composites.",
-    "summary_provider": "openai",
-    "openai_summary_applied": true,
-    "relevance_note_en": "The summary captures the core findings and methodologies of the study, emphasizing its contributions to the field.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "first_added": "2026-06-24",
-    "last_updated": "2026-07-20",
-    "is_weekly_new": false,
-    "last_seen_in_crossref_run": "2026-07-20",
-    "not_seen_in_latest_crossref_run": false,
-    "openalex_venue_rank": "Rank 3",
-    "openalex_venue_rank_number": 3,
-    "openalex_venue_rank_score": 3.0,
-    "openalex_venue_rank_percentile": 0.426,
-    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-  },
-  {
     "id": "10.1007/s00170-025-16874-0",
     "title": "Compact multi-nozzle 3D printer for multi-material direct ink writing using bent needles",
     "authors": [
@@ -175446,7 +175729,7 @@
     "last_updated": "2026-07-20",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-07-20",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 5.572056737588652,
@@ -183777,7 +184060,7 @@
     "last_updated": "2026-07-20",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-07-20",
-    "not_seen_in_latest_crossref_run": true,
+    "not_seen_in_latest_crossref_run": false,
     "openalex_venue_rank": "Rank 4",
     "openalex_venue_rank_number": 4,
     "openalex_venue_rank_score": 1.105263157894737,

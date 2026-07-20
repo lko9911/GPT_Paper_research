@@ -10697,7 +10697,7 @@
     "id": "10.1007/s00170-026-17902-3",
     "is_core_venue": false,
     "is_weekly_new": false,
-    "last_updated": "2026-07-19",
+    "last_updated": "2026-07-20",
     "openai_summary_applied": true,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
@@ -13039,6 +13039,49 @@
   },
   {
     "authors": [
+      "Burak Özel",
+      "Altug Bakirci",
+      "Mehmet Kivanc Turan"
+    ],
+    "categories": [
+      "Multi-material AM",
+      "Functionally Graded AM"
+    ],
+    "curation_priority": false,
+    "doi": "10.1108/rpj-08-2025-0414",
+    "first_added": "2026-06-24",
+    "id": "10.1108/rpj-08-2025-0414",
+    "is_core_venue": true,
+    "is_weekly_new": false,
+    "last_updated": "2026-07-20",
+    "openai_summary_applied": true,
+    "openalex_venue_rank": "Rank 3",
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
+    "openalex_venue_rank_number": 3,
+    "openalex_venue_rank_percentile": 0.426,
+    "openalex_venue_rank_score": 3.0,
+    "publication_type": "journal_article",
+    "relevance_score": 6,
+    "source": [
+      "Crossref"
+    ],
+    "summary_provider": "openai",
+    "tags": [
+      "mechanical performance",
+      "additive manufacturing",
+      "composite materials",
+      "Fused Deposition Modeling",
+      "tensile strength"
+    ],
+    "title": "Comprehensive investigation of the mechanical performance of the direct transition functional graded materials",
+    "url": "https://doi.org/10.1108/rpj-08-2025-0414",
+    "venue": "Rapid Prototyping Journal",
+    "venue_trust": "trusted",
+    "year": 2026,
+    "status": "active"
+  },
+  {
+    "authors": [
       "Ahmed M. H. Ibrahim",
       "Li Meng",
       "Ahmad R. Najafi",
@@ -13807,6 +13850,54 @@
     "title": "A Systematic Methodology for Design in Multi-Material Additive Manufacturing Derived by a Reverse-Traced Workflow",
     "url": "https://doi.org/10.3390/eng7010013",
     "venue": "Eng",
+    "venue_trust": "trusted",
+    "year": 2026,
+    "status": "active"
+  },
+  {
+    "authors": [
+      "Zhiyan Zhong",
+      "Xueru Zheng",
+      "Xiao Zhou",
+      "Zhengheng Tao",
+      "Wan Han",
+      "Jingyi Pan",
+      "Dian Wu",
+      "Ning Gao",
+      "Lei Liu",
+      "Zhongyang Wang",
+      "Fanchao Meng",
+      "Tongxiang Fan"
+    ],
+    "categories": [
+      "AI and Machine Learning for AM"
+    ],
+    "curation_priority": false,
+    "doi": "10.1002/advs.76524",
+    "first_added": "2026-07-20",
+    "id": "10.1002/advs.76524",
+    "is_core_venue": true,
+    "is_weekly_new": true,
+    "last_updated": "2026-07-20",
+    "openai_summary_applied": false,
+    "openalex_venue_rank": "Rank 1",
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
+    "openalex_venue_rank_number": 1,
+    "openalex_venue_rank_percentile": 0.8669,
+    "openalex_venue_rank_score": 8.402641353693769,
+    "publication_type": "journal_article",
+    "relevance_score": 6,
+    "source": [
+      "Crossref"
+    ],
+    "summary_provider": "fallback",
+    "tags": [
+      "Self-driving Labs",
+      "Manufacturing automation"
+    ],
+    "title": "A Closed-Loop Framework for Inverse Design: Dynamic Training and Intelligent Optimization for Heterostructured Materials",
+    "url": "https://doi.org/10.1002/advs.76524",
+    "venue": "Advanced Science",
     "venue_trust": "trusted",
     "year": 2026,
     "status": "active"
@@ -41113,49 +41204,6 @@
     "title": "Computational design methodology for additive manufacturing to enhance customised products and process management efficiency",
     "url": "https://doi.org/10.1016/j.rineng.2025.105480",
     "venue": "Results in Engineering",
-    "venue_trust": "trusted",
-    "year": 2025,
-    "status": "active"
-  },
-  {
-    "authors": [
-      "Burak Özel",
-      "Altug Bakirci",
-      "Mehmet Kivanc Turan"
-    ],
-    "categories": [
-      "Multi-material AM",
-      "Functionally Graded AM"
-    ],
-    "curation_priority": false,
-    "doi": "10.1108/rpj-08-2025-0414",
-    "first_added": "2026-06-24",
-    "id": "10.1108/rpj-08-2025-0414",
-    "is_core_venue": true,
-    "is_weekly_new": false,
-    "last_updated": "2026-07-20",
-    "openai_summary_applied": true,
-    "openalex_venue_rank": "Rank 3",
-    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
-    "openalex_venue_rank_number": 3,
-    "openalex_venue_rank_percentile": 0.426,
-    "openalex_venue_rank_score": 3.0,
-    "publication_type": "journal_article",
-    "relevance_score": 6,
-    "source": [
-      "Crossref"
-    ],
-    "summary_provider": "openai",
-    "tags": [
-      "mechanical performance",
-      "additive manufacturing",
-      "composite materials",
-      "Fused Deposition Modeling",
-      "tensile strength"
-    ],
-    "title": "Comprehensive investigation of the mechanical performance of the direct transition functional graded materials",
-    "url": "https://doi.org/10.1108/rpj-08-2025-0414",
-    "venue": "Rapid Prototyping Journal",
     "venue_trust": "trusted",
     "year": 2025,
     "status": "active"
