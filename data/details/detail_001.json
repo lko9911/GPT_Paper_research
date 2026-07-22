@@ -1700,6 +1700,124 @@
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/adem.70986"
   },
+  "10.1016/j.matdes.2026.116653": {
+    "author_details": [
+      {
+        "name": "S. Dehgahi",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "H. Lee",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "E. Marzban Shirkharkolaei",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "M. Kumaravel",
+        "orcid": "https://orcid.org/0009-0000-3600-4589",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "A.K. Singh",
+        "orcid": "https://orcid.org/0000-0003-0218-9305",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "S. Bagherifard",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "D. Jafari",
+        "orcid": "https://orcid.org/0000-0003-3894-8844",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Materials & Design",
+    "crossref_target_issn": "0264-1275",
+    "issn": [
+      "0264-1275"
+    ],
+    "issn_l": "",
+    "publisher": "Elsevier BV",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S8792693",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S8792693",
+      "issn_l": "0264-1275",
+      "issn": [
+        "0264-1275",
+        "1873-4197"
+      ],
+      "type": "journal",
+      "host_organization_name": "Elsevier BV",
+      "works_count": 14476,
+      "cited_by_count": 516286,
+      "two_year_mean_citedness": 5.543417366946779,
+      "h_index": 222,
+      "i10_index": 8917,
+      "is_core": true,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 5.543417366946779,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 2",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - Cold spray additive manufacturing of Inconel 718/Cu and Inconel 718/GRCop-42 multi-materials: effects of deposition sequence on interface and thermal conductivity is a 2026 paper from Materials & Design about Additive manufacturing.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Additive manufacturing.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Additive manufacturing; current relevance score is 6/10.",
+    "relevance_note_en": "Relevant to the tracker through Additive manufacturing; score: 6/10.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-07-22",
+    "id": "10.1016/j.matdes.2026.116653"
+  },
   "10.1002/advs.202520526": {
     "author_details": [
       {
@@ -20048,8 +20166,8 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
     "crossref_collection_route": "issn_venue_query",
@@ -20061,7 +20179,7 @@
     "issn_l": "",
     "publisher": "Springer Science and Business Media LLC",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4412585581",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S64187185",
@@ -36769,136 +36887,5 @@
     "last_seen_in_crossref_run": "2026-07-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/advs.202521820"
-  },
-  "10.1108/4dp-02-2025-0004": {
-    "author_details": [
-      {
-        "name": "Danchen Zhang",
-        "orcid": "https://orcid.org/0009-0008-0451-7070",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Chair of Textile Technology in Mechanical Engineering, RWTH Aachen University Faculty of Mechanical Engineering, , ,"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Chair of Textile Technology in Mechanical Engineering, RWTH Aachen University Faculty of Mechanical Engineering, , ,"
-        ]
-      },
-      {
-        "name": "Jan Lampe",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Chair of Textile Technology in Mechanical Engineering, RWTH Aachen University Faculty of Mechanical Engineering, , ,"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Chair of Textile Technology in Mechanical Engineering, RWTH Aachen University Faculty of Mechanical Engineering, , ,"
-        ]
-      },
-      {
-        "name": "Katarina Winands",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Chair of Textile Technology in Mechanical Engineering, RWTH Aachen University Faculty of Mechanical Engineering, , ,"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Chair of Textile Technology in Mechanical Engineering, RWTH Aachen University Faculty of Mechanical Engineering, , ,"
-        ]
-      },
-      {
-        "name": "Robert Tadej Boich",
-        "orcid": "https://orcid.org/0009-0009-0212-9346",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Chair of Textile Technology in Mechanical Engineering, RWTH Aachen University Faculty of Mechanical Engineering, , ,"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Chair of Textile Technology in Mechanical Engineering, RWTH Aachen University Faculty of Mechanical Engineering, , ,"
-        ]
-      },
-      {
-        "name": "Thomas Gries",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Chair of Textile Technology in Mechanical Engineering, RWTH Aachen University Faculty of Mechanical Engineering, , ,"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Chair of Textile Technology in Mechanical Engineering, RWTH Aachen University Faculty of Mechanical Engineering, , ,"
-        ]
-      }
-    ],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "3049-9569"
-    ],
-    "issn_l": "",
-    "publisher": "Emerald",
-    "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "https://openalex.org/W7127274416",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S5407047337",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S5407047337",
-      "issn_l": "3049-9569",
-      "issn": [
-        "3049-9569"
-      ],
-      "type": "journal",
-      "host_organization_name": null,
-      "works_count": 35,
-      "cited_by_count": 26,
-      "two_year_mean_citedness": 0.6842105263157895,
-      "h_index": 3,
-      "i10_index": 0,
-      "is_core": false,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 0.6842105263157895,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 4",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - This paper investigates the adhesion factors in 4D textiles produced through 3D printing on pre-stressed textiles.\n2. Problem - Ensuring reliable bonding between the 3D-printed elements and the textile substrate is crucial to prevent delamination.\n3. Method - A systematic analysis using a 2^n factorial design was conducted to evaluate the effects of various parameters on adhesion strength, assessed through 180° peel tests.\n4. Key Result - The study identified that optimal nozzle distance and temperature, along with specific textile structures, significantly enhance adhesion, while higher pre-tension negatively impacts it.\n5. Takeaway - Understanding these adhesion factors allows for more efficient production of 4D textiles, reducing material waste and improving process reliability.",
-    "relevance_note_en": "The summary captures the core findings and implications of the study on adhesion in 4D textiles.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-07-22",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1108/4dp-02-2025-0004"
   }
 }
