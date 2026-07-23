@@ -5,8 +5,8 @@
       "Saida Sultana Setu"
     ],
     "categories": [
-      "Functionally Graded AM",
-      "Reviews and Surveys"
+      "Reviews and Surveys",
+      "Multi-material AM"
     ],
     "curation_priority": false,
     "doi": "10.59324/stss.2026.3(7).09",
@@ -14,8 +14,8 @@
     "id": "10.59324/stss.2026.3(7).09",
     "is_core_venue": false,
     "is_weekly_new": true,
-    "last_updated": "2026-07-22",
-    "openai_summary_applied": false,
+    "last_updated": "2026-07-23",
+    "openai_summary_applied": true,
     "openalex_venue_rank": "Rank 4",
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
     "openalex_venue_rank_number": 4,
@@ -26,12 +26,13 @@
     "source": [
       "Crossref"
     ],
-    "summary_provider": "fallback",
+    "summary_provider": "openai",
     "tags": [
-      "MMAM",
-      "Material behavior",
-      "Computational design",
-      "Material distribution"
+      "Functionally Graded Materials",
+      "Additive Manufacturing",
+      "Design Strategies",
+      "Metallic Materials",
+      "Engineering Applications"
     ],
     "title": "Additive Manufacturing of Functionally Graded Metallic Materials: Design Strategies and Applications",
     "url": "https://doi.org/10.59324/stss.2026.3%287%29.09",
@@ -47,7 +48,7 @@
     ],
     "categories": [
       "Multi-material AM",
-      "Material Distribution Optimization"
+      "Functionally Graded AM"
     ],
     "corresponding_authors": [
       {
@@ -61,8 +62,8 @@
     "id": "10.3390/jcs10070371",
     "is_core_venue": false,
     "is_weekly_new": false,
-    "last_updated": "2026-07-22",
-    "openai_summary_applied": false,
+    "last_updated": "2026-07-23",
+    "openai_summary_applied": true,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
     "openalex_venue_rank_number": 2,
@@ -73,10 +74,11 @@
     "source": [
       "Crossref"
     ],
-    "summary_provider": "fallback",
+    "summary_provider": "openai",
     "tags": [
-      "FGAM",
-      "FDM/Material extrusion"
+      "additive manufacturing",
+      "mechanical performance",
+      "decision-making framework"
     ],
     "title": "An Intelligent CRITIC-WASPAS Decision Framework for Sustainable Multi-Material Additive Manufacturing of Architected Structures",
     "url": "https://doi.org/10.3390/jcs10070371",
@@ -397,8 +399,8 @@
     "id": "10.1177/08927057261434198",
     "is_core_venue": false,
     "is_weekly_new": false,
-    "last_updated": "2026-07-13",
-    "openai_summary_applied": false,
+    "last_updated": "2026-07-23",
+    "openai_summary_applied": true,
     "openalex_venue_rank": "Rank 3",
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
     "openalex_venue_rank_number": 3,
@@ -409,9 +411,13 @@
     "source": [
       "Crossref"
     ],
-    "summary_provider": "fallback",
+    "summary_provider": "openai",
     "tags": [
-      "Additive manufacturing"
+      "3D Printing",
+      "Composite Materials",
+      "Functionally Graded Composites",
+      "Mechanical Properties",
+      "Flammability"
     ],
     "title": "Investigation of physico-mechanical and flammability performance of 3D printed functionally graded polyamide carbon fibre and glass fibre multi-material composites",
     "url": "https://doi.org/10.1177/08927057261434198",
@@ -1657,8 +1663,8 @@
     "id": "10.1002/admt.71147",
     "is_core_venue": false,
     "is_weekly_new": false,
-    "last_updated": "2026-07-22",
-    "openai_summary_applied": false,
+    "last_updated": "2026-07-23",
+    "openai_summary_applied": true,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
     "openalex_venue_rank_number": 2,
@@ -1669,9 +1675,12 @@
     "source": [
       "Crossref"
     ],
-    "summary_provider": "fallback",
+    "summary_provider": "openai",
     "tags": [
-      "FDM/Material extrusion"
+      "Direct Ink Writing",
+      "Additive Manufacturing",
+      "Scalability",
+      "Materials Science"
     ],
     "title": "Scaling Direct Ink Writing: A Multiscale Materials-Process-System Framework",
     "url": "https://doi.org/10.1002/admt.71147",
@@ -2339,7 +2348,8 @@
       "Miriam Cobo"
     ],
     "categories": [
-      "Multi-material AM"
+      "AI and Machine Learning for AM",
+      "Computational Design"
     ],
     "curation_priority": false,
     "doi": "10.1007/s10845-026-02933-0",
@@ -2347,8 +2357,8 @@
     "id": "10.1007/s10845-026-02933-0",
     "is_core_venue": true,
     "is_weekly_new": true,
-    "last_updated": "2026-07-22",
-    "openai_summary_applied": false,
+    "last_updated": "2026-07-23",
+    "openai_summary_applied": true,
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
     "openalex_venue_rank_number": 1,
@@ -2359,9 +2369,12 @@
     "source": [
       "Crossref"
     ],
-    "summary_provider": "fallback",
+    "summary_provider": "openai",
     "tags": [
-      "Digital Twins"
+      "energy optimization",
+      "induction furnace",
+      "digital twin",
+      "steel production"
     ],
     "title": "Optimization of the energy consumption of an induction furnace for steel billets using a reinforcement learning framework applied to a finite element digital twin",
     "url": "https://doi.org/10.1007/s10845-026-02933-0",
@@ -2527,6 +2540,7 @@
       "Feng-Chieh Lin"
     ],
     "categories": [
+      "Computational Design",
       "Graph Search / Path Planning"
     ],
     "corresponding_authors": [
@@ -2541,8 +2555,8 @@
     "id": "10.1007/s00170-026-18701-6",
     "is_core_venue": false,
     "is_weekly_new": true,
-    "last_updated": "2026-07-22",
-    "openai_summary_applied": false,
+    "last_updated": "2026-07-23",
+    "openai_summary_applied": true,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
     "openalex_venue_rank_number": 2,
@@ -2553,10 +2567,12 @@
     "source": [
       "Crossref"
     ],
-    "summary_provider": "fallback",
+    "summary_provider": "openai",
     "tags": [
-      "Digital Twins",
-      "Manufacturing automation"
+      "Digital Twin",
+      "Multi-objective scheduling",
+      "Oil processing",
+      "Dynamic optimization"
     ],
     "title": "Multi-objective dynamic operation scheduling framework: practical application of digital twin in an edible oil processing plant",
     "url": "https://doi.org/10.1007/s00170-026-18701-6",
@@ -3771,6 +3787,7 @@
       "Gianluca Percoco"
     ],
     "categories": [
+      "Computational Design",
       "Multi-material AM"
     ],
     "corresponding_authors": [
@@ -3785,8 +3802,8 @@
     "id": "10.1007/s40964-026-01843-0",
     "is_core_venue": true,
     "is_weekly_new": true,
-    "last_updated": "2026-07-22",
-    "openai_summary_applied": false,
+    "last_updated": "2026-07-23",
+    "openai_summary_applied": true,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
     "openalex_venue_rank_number": 2,
@@ -3797,10 +3814,12 @@
     "source": [
       "Crossref"
     ],
-    "summary_provider": "fallback",
+    "summary_provider": "openai",
     "tags": [
-      "FDM/Material extrusion",
-      "Digital Twins"
+      "Additive Manufacturing",
+      "CFD Modeling",
+      "Interlayer Adhesion",
+      "Material Extrusion"
     ],
     "title": "Fully coupled three-dimensional non-Newtonian CFD modeling of interlayer adhesion in material extrusion additive manufacturing",
     "url": "https://doi.org/10.1007/s40964-026-01843-0",
@@ -4385,7 +4404,7 @@
     ],
     "categories": [
       "Multi-material AM",
-      "Material Distribution Optimization"
+      "Computational Design"
     ],
     "curation_priority": false,
     "doi": "10.1016/j.addma.2026.105292",
@@ -4393,8 +4412,8 @@
     "id": "10.1016/j.addma.2026.105292",
     "is_core_venue": true,
     "is_weekly_new": false,
-    "last_updated": "2026-07-22",
-    "openai_summary_applied": false,
+    "last_updated": "2026-07-23",
+    "openai_summary_applied": true,
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
     "openalex_venue_rank_number": 1,
@@ -4405,9 +4424,11 @@
     "source": [
       "Crossref"
     ],
-    "summary_provider": "fallback",
+    "summary_provider": "openai",
     "tags": [
-      "Additive manufacturing"
+      "additive manufacturing",
+      "topology optimization",
+      "joint design"
     ],
     "title": "Enabling interlocking joint design for multi-material additive manufacturing via topology optimization with discontinuous interfacial property",
     "url": "https://doi.org/10.1016/j.addma.2026.105292",
@@ -7400,7 +7421,8 @@
       "Yaser A. Abu-Lebdeh"
     ],
     "categories": [
-      "AI and Machine Learning for AM"
+      "AI and Machine Learning for AM",
+      "Computational Design"
     ],
     "curation_priority": false,
     "doi": "10.1149/ma2026-016664mtgabs",
@@ -7408,8 +7430,8 @@
     "id": "10.1149/ma2026-016664mtgabs",
     "is_core_venue": false,
     "is_weekly_new": true,
-    "last_updated": "2026-07-22",
-    "openai_summary_applied": false,
+    "last_updated": "2026-07-23",
+    "openai_summary_applied": true,
     "openalex_venue_rank": "Rank 4",
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
     "openalex_venue_rank_number": 4,
@@ -7420,10 +7442,13 @@
     "source": [
       "Crossref"
     ],
-    "summary_provider": "fallback",
+    "summary_provider": "openai",
     "tags": [
-      "Self-driving Labs",
-      "Manufacturing automation"
+      "lithium-ion batteries",
+      "machine learning",
+      "automation",
+      "battery materials",
+      "self-driving laboratory"
     ],
     "title": "Accelerating Next-Generation Lithium-Ion Battery Development through Self-Driving Automated Lab and Machine Learning",
     "url": "https://doi.org/10.1149/ma2026-016664mtgabs",
@@ -7986,7 +8011,8 @@
       "Yiping Gao"
     ],
     "categories": [
-      "Multi-material AM"
+      "Reviews and Surveys",
+      "Computational Design"
     ],
     "corresponding_authors": [
       {
@@ -8000,8 +8026,8 @@
     "id": "10.1007/s00170-026-18546-z",
     "is_core_venue": false,
     "is_weekly_new": false,
-    "last_updated": "2026-07-22",
-    "openai_summary_applied": false,
+    "last_updated": "2026-07-23",
+    "openai_summary_applied": true,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
     "openalex_venue_rank_number": 2,
@@ -8012,9 +8038,12 @@
     "source": [
       "Crossref"
     ],
-    "summary_provider": "fallback",
+    "summary_provider": "openai",
     "tags": [
-      "Digital Twins"
+      "robotics",
+      "digital twin",
+      "modeling",
+      "mechanism-data fusion"
     ],
     "title": "A modular multi-domain mechanism-data fusion framework for high-fidelity robot digital twin modeling",
     "url": "https://doi.org/10.1007/s00170-026-18546-z",
@@ -10675,6 +10704,7 @@
       "Aqib Pervaiz"
     ],
     "categories": [
+      "Multi-material AM",
       "Functionally Graded AM"
     ],
     "corresponding_authors": [
@@ -10693,8 +10723,8 @@
     "id": "10.1016/j.mtcomm.2026.115733",
     "is_core_venue": false,
     "is_weekly_new": false,
-    "last_updated": "2026-07-22",
-    "openai_summary_applied": false,
+    "last_updated": "2026-07-23",
+    "openai_summary_applied": true,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
     "openalex_venue_rank_number": 2,
@@ -10705,9 +10735,12 @@
     "source": [
       "Crossref"
     ],
-    "summary_provider": "fallback",
+    "summary_provider": "openai",
     "tags": [
-      "Additive manufacturing"
+      "3D printing",
+      "WAAM",
+      "functionally graded materials",
+      "tri-metallic structures"
     ],
     "title": "Metal 3D printing of functionally graded tri-metallic structure using Wire Arc Additive Manufacturing (WAAM)",
     "url": "https://doi.org/10.1016/j.mtcomm.2026.115733",
@@ -10975,7 +11008,7 @@
     ],
     "categories": [
       "Reviews and Surveys",
-      "AI and Machine Learning for AM"
+      "Multi-material AM"
     ],
     "corresponding_authors": [
       {
@@ -10989,8 +11022,8 @@
     "id": "10.1002/adfm.202526917",
     "is_core_venue": true,
     "is_weekly_new": false,
-    "last_updated": "2026-07-22",
-    "openai_summary_applied": false,
+    "last_updated": "2026-07-23",
+    "openai_summary_applied": true,
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
     "openalex_venue_rank_number": 1,
@@ -11001,9 +11034,13 @@
     "source": [
       "Crossref"
     ],
-    "summary_provider": "fallback",
+    "summary_provider": "openai",
     "tags": [
-      "Metamaterials"
+      "mechanical metamaterials",
+      "additive manufacturing",
+      "AI",
+      "fabrication techniques",
+      "multifunctional materials"
     ],
     "title": "Mechanical Metamaterials: Emerging Trends in Fabrication, Geometry, Properties, and Functionalities",
     "url": "https://doi.org/10.1002/adfm.202526917",
@@ -11547,7 +11584,8 @@
       "Simon Bulou"
     ],
     "categories": [
-      "Multi-material AM"
+      "Multi-material AM",
+      "Functionally Graded AM"
     ],
     "corresponding_authors": [
       {
@@ -11561,8 +11599,8 @@
     "id": "10.1007/s40964-026-01818-1",
     "is_core_venue": true,
     "is_weekly_new": false,
-    "last_updated": "2026-07-22",
-    "openai_summary_applied": false,
+    "last_updated": "2026-07-23",
+    "openai_summary_applied": true,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
     "openalex_venue_rank_number": 2,
@@ -11573,9 +11611,12 @@
     "source": [
       "Crossref"
     ],
-    "summary_provider": "fallback",
+    "summary_provider": "openai",
     "tags": [
-      "Additive manufacturing"
+      "3D Printing",
+      "Plasma Torch",
+      "Mechanical Properties",
+      "Multi-material Adhesion"
     ],
     "title": "Integrated plasma torch module for enhanced mechanical properties and multi-material adhesion in FFF 3D printing",
     "url": "https://doi.org/10.1007/s40964-026-01818-1",
@@ -11641,7 +11682,8 @@
       "Shoufeng Yang"
     ],
     "categories": [
-      "Functionally Graded AM"
+      "Functionally Graded AM",
+      "Multi-material AM"
     ],
     "corresponding_authors": [
       {
@@ -11659,8 +11701,8 @@
     "id": "10.1016/j.jmrt.2026.07.096",
     "is_core_venue": false,
     "is_weekly_new": false,
-    "last_updated": "2026-07-22",
-    "openai_summary_applied": false,
+    "last_updated": "2026-07-23",
+    "openai_summary_applied": true,
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
     "openalex_venue_rank_number": 1,
@@ -11671,9 +11713,12 @@
     "source": [
       "Crossref"
     ],
-    "summary_provider": "fallback",
+    "summary_provider": "openai",
     "tags": [
-      "Manufacturing automation"
+      "Functionally Graded Materials",
+      "Titanium Composites",
+      "Additive Manufacturing",
+      "Laser Powder Bed Fusion"
     ],
     "title": "In-situ synthesis of functionally graded TiN/pure Ti composites via reactive atmosphere additive manufacturing",
     "url": "https://doi.org/10.1016/j.jmrt.2026.07.096",
@@ -12981,7 +13026,8 @@
       "Franziska Thomas"
     ],
     "categories": [
-      "Multi-material AM"
+      "Multi-material AM",
+      "Functionally Graded AM"
     ],
     "corresponding_authors": [
       {
@@ -12999,8 +13045,8 @@
     "id": "10.1002/advs.76505",
     "is_core_venue": true,
     "is_weekly_new": true,
-    "last_updated": "2026-07-22",
-    "openai_summary_applied": false,
+    "last_updated": "2026-07-23",
+    "openai_summary_applied": true,
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
     "openalex_venue_rank_number": 1,
@@ -13011,9 +13057,13 @@
     "source": [
       "Crossref"
     ],
-    "summary_provider": "fallback",
+    "summary_provider": "openai",
     "tags": [
-      "Additive manufacturing"
+      "3D Printing",
+      "Hydrogel",
+      "Peptides",
+      "Biomaterials",
+      "Stimuli-responsive"
     ],
     "title": "Controlled Peptide Capture and Release in 3D-Printed Multimaterial Microstructures",
     "url": "https://doi.org/10.1002/advs.76505",
@@ -13228,7 +13278,8 @@
       "D. Jafari"
     ],
     "categories": [
-      "Multi-material AM"
+      "Multi-material AM",
+      "Functionally Graded AM"
     ],
     "curation_priority": false,
     "doi": "10.1016/j.matdes.2026.116653",
@@ -13236,8 +13287,8 @@
     "id": "10.1016/j.matdes.2026.116653",
     "is_core_venue": false,
     "is_weekly_new": true,
-    "last_updated": "2026-07-22",
-    "openai_summary_applied": false,
+    "last_updated": "2026-07-23",
+    "openai_summary_applied": true,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
     "openalex_venue_rank_number": 2,
@@ -13248,9 +13299,13 @@
     "source": [
       "Crossref"
     ],
-    "summary_provider": "fallback",
+    "summary_provider": "openai",
     "tags": [
-      "Additive manufacturing"
+      "Cold Spray",
+      "Additive Manufacturing",
+      "Multi-materials",
+      "Inconel 718",
+      "Thermal Conductivity"
     ],
     "title": "Cold spray additive manufacturing of Inconel 718/Cu and Inconel 718/GRCop-42 multi-materials: effects of deposition sequence on interface and thermal conductivity",
     "url": "https://doi.org/10.1016/j.matdes.2026.116653",
@@ -13745,6 +13800,7 @@
       "Riad Badji"
     ],
     "categories": [
+      "Multi-material AM",
       "Functionally Graded AM"
     ],
     "corresponding_authors": [
@@ -13759,8 +13815,8 @@
     "id": "10.1007/s00170-026-18776-1",
     "is_core_venue": false,
     "is_weekly_new": true,
-    "last_updated": "2026-07-22",
-    "openai_summary_applied": false,
+    "last_updated": "2026-07-23",
+    "openai_summary_applied": true,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
     "openalex_venue_rank_number": 2,
@@ -13771,9 +13827,13 @@
     "source": [
       "Crossref"
     ],
-    "summary_provider": "fallback",
+    "summary_provider": "openai",
     "tags": [
-      "Additive manufacturing"
+      "dissimilar steels",
+      "functionally graded materials",
+      "additive manufacturing",
+      "cold metal transfer",
+      "dual-metal inert gas"
     ],
     "title": "AISI 308LSi/ER70S-6 dissimilar steel functionally graded materials fabricated by cold metal transfer and dual-metal inert gas wire arc additive manufacturing",
     "url": "https://doi.org/10.1007/s00170-026-18776-1",
@@ -13946,7 +14006,8 @@
       "Gianpaolo Savio"
     ],
     "categories": [
-      "Multi-material AM"
+      "Multi-material AM",
+      "Computational Design"
     ],
     "corresponding_authors": [
       {
@@ -13960,8 +14021,8 @@
     "id": "10.3390/eng7010013",
     "is_core_venue": false,
     "is_weekly_new": false,
-    "last_updated": "2026-07-07",
-    "openai_summary_applied": false,
+    "last_updated": "2026-07-23",
+    "openai_summary_applied": true,
     "openalex_venue_rank": "Rank 3",
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
     "openalex_venue_rank_number": 3,
@@ -13972,9 +14033,13 @@
     "source": [
       "Crossref"
     ],
-    "summary_provider": "fallback",
+    "summary_provider": "openai",
     "tags": [
-      "Additive manufacturing"
+      "multi-material additive manufacturing",
+      "design methodology",
+      "product architecture",
+      "consolidation",
+      "functional independence"
     ],
     "title": "A Systematic Methodology for Design in Multi-Material Additive Manufacturing Derived by a Reverse-Traced Workflow",
     "url": "https://doi.org/10.3390/eng7010013",
@@ -13999,6 +14064,7 @@
       "Tongxiang Fan"
     ],
     "categories": [
+      "Computational Design",
       "AI and Machine Learning for AM"
     ],
     "corresponding_authors": [
@@ -14021,8 +14087,8 @@
     "id": "10.1002/advs.76524",
     "is_core_venue": true,
     "is_weekly_new": true,
-    "last_updated": "2026-07-22",
-    "openai_summary_applied": false,
+    "last_updated": "2026-07-23",
+    "openai_summary_applied": true,
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
     "openalex_venue_rank_number": 1,
@@ -14033,10 +14099,12 @@
     "source": [
       "Crossref"
     ],
-    "summary_provider": "fallback",
+    "summary_provider": "openai",
     "tags": [
-      "Self-driving Labs",
-      "Manufacturing automation"
+      "machine learning",
+      "material design",
+      "heterostructured materials",
+      "optimization"
     ],
     "title": "A Closed-Loop Framework for Inverse Design: Dynamic Training and Intelligent Optimization for Heterostructured Materials",
     "url": "https://doi.org/10.1002/advs.76524",
@@ -14210,7 +14278,8 @@
       "F. Bartolomeu"
     ],
     "categories": [
-      "Multi-material AM"
+      "Multi-material AM",
+      "Functionally Graded AM"
     ],
     "corresponding_authors": [
       {
@@ -14224,8 +14293,8 @@
     "id": "10.1007/s40964-026-01840-3",
     "is_core_venue": true,
     "is_weekly_new": false,
-    "last_updated": "2026-07-22",
-    "openai_summary_applied": false,
+    "last_updated": "2026-07-23",
+    "openai_summary_applied": true,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
     "openalex_venue_rank_number": 2,
@@ -14236,9 +14305,11 @@
     "source": [
       "Crossref"
     ],
-    "summary_provider": "fallback",
+    "summary_provider": "openai",
     "tags": [
-      "Additive manufacturing"
+      "3D printing",
+      "thermal conductivity",
+      "laser powder bed fusion"
     ],
     "title": "3D multi-material 420 stainless steel-copper parts for improved thermal conductivity of plastic injection moulds: a step forward in laser powder bed fusion",
     "url": "https://doi.org/10.1007/s40964-026-01840-3",
@@ -14369,7 +14440,8 @@
       "Paolo Colombo"
     ],
     "categories": [
-      "Multi-material AM"
+      "Multi-material AM",
+      "Functionally Graded AM"
     ],
     "curation_priority": false,
     "doi": "10.1016/j.mattod.2026.103435",
@@ -14377,8 +14449,8 @@
     "id": "10.1016/j.mattod.2026.103435",
     "is_core_venue": false,
     "is_weekly_new": false,
-    "last_updated": "2026-07-07",
-    "openai_summary_applied": false,
+    "last_updated": "2026-07-23",
+    "openai_summary_applied": true,
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
     "openalex_venue_rank_number": 1,
@@ -14389,9 +14461,12 @@
     "source": [
       "Crossref"
     ],
-    "summary_provider": "fallback",
+    "summary_provider": "openai",
     "tags": [
-      "Volumetric AM"
+      "additive manufacturing",
+      "silica glass",
+      "xolography",
+      "optical materials"
     ],
     "title": "Volumetric additive manufacturing of transparent silica glass with tunable refractive index and color by xolography",
     "url": "https://doi.org/10.1016/j.mattod.2026.103435",
@@ -15483,7 +15558,8 @@
       "Frédéric Demoly"
     ],
     "categories": [
-      "Multi-material AM"
+      "AI and Machine Learning for AM",
+      "Computational Design"
     ],
     "corresponding_authors": [
       {
@@ -15497,8 +15573,8 @@
     "id": "10.1016/j.compind.2026.104522",
     "is_core_venue": true,
     "is_weekly_new": false,
-    "last_updated": "2026-07-22",
-    "openai_summary_applied": false,
+    "last_updated": "2026-07-23",
+    "openai_summary_applied": true,
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
     "openalex_venue_rank_number": 1,
@@ -15509,9 +15585,13 @@
     "source": [
       "Crossref"
     ],
-    "summary_provider": "fallback",
+    "summary_provider": "openai",
     "tags": [
-      "4D printing"
+      "4D printing",
+      "ontology",
+      "multimodal models",
+      "knowledge graphs",
+      "material science"
     ],
     "title": "Structuring scientific knowledge for smart materials and 4D printing: An ontology enrichment framework using retrieval-augmented multimodal large language models",
     "url": "https://doi.org/10.1016/j.compind.2026.104522",
@@ -16368,7 +16448,8 @@
       "Benjamin M. Yavitt"
     ],
     "categories": [
-      "Multi-material AM"
+      "Multi-material AM",
+      "Computational Design"
     ],
     "corresponding_authors": [
       {
@@ -16382,8 +16463,8 @@
     "id": "10.1016/j.addma.2026.105298",
     "is_core_venue": true,
     "is_weekly_new": false,
-    "last_updated": "2026-07-22",
-    "openai_summary_applied": false,
+    "last_updated": "2026-07-23",
+    "openai_summary_applied": true,
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
     "openalex_venue_rank_number": 1,
@@ -16394,9 +16475,12 @@
     "source": [
       "Crossref"
     ],
-    "summary_provider": "fallback",
+    "summary_provider": "openai",
     "tags": [
-      "Vat photopolymerization"
+      "Vat photopolymerization",
+      "rheology",
+      "3D printing",
+      "colloidal suspensions"
     ],
     "title": "Rheological insights into vat photopolymerization 3D printing of colloidal suspensions",
     "url": "https://doi.org/10.1016/j.addma.2026.105298",
@@ -16845,7 +16929,8 @@
       "Stelios K. Georgantzinos"
     ],
     "categories": [
-      "Multi-material AM"
+      "Multi-material AM",
+      "Computational Design"
     ],
     "corresponding_authors": [
       {
@@ -16859,8 +16944,8 @@
     "id": "10.1002/pen.70689",
     "is_core_venue": false,
     "is_weekly_new": false,
-    "last_updated": "2026-07-22",
-    "openai_summary_applied": false,
+    "last_updated": "2026-07-23",
+    "openai_summary_applied": true,
     "openalex_venue_rank": "Rank 3",
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
     "openalex_venue_rank_number": 3,
@@ -16871,10 +16956,13 @@
     "source": [
       "Crossref"
     ],
-    "summary_provider": "fallback",
+    "summary_provider": "openai",
     "tags": [
       "4D printing",
-      "FDM/Material extrusion"
+      "Thermal Morphing",
+      "ABS",
+      "Finite Element Modeling",
+      "Material Science"
     ],
     "title": "Process-Structure-Morphing Coupling in Thermally Activated ABS 4D Printing",
     "url": "https://doi.org/10.1002/pen.70689",
@@ -18277,7 +18365,8 @@
       "H. Jerry Qi"
     ],
     "categories": [
-      "Multi-material AM"
+      "Multi-material AM",
+      "Functionally Graded AM"
     ],
     "corresponding_authors": [
       {
@@ -18291,8 +18380,8 @@
     "id": "10.1002/adma.73986",
     "is_core_venue": true,
     "is_weekly_new": false,
-    "last_updated": "2026-07-22",
-    "openai_summary_applied": false,
+    "last_updated": "2026-07-23",
+    "openai_summary_applied": true,
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
     "openalex_venue_rank_number": 1,
@@ -18303,10 +18392,13 @@
     "source": [
       "Crossref"
     ],
-    "summary_provider": "fallback",
+    "summary_provider": "openai",
     "tags": [
-      "DLP",
-      "FDM/Material extrusion"
+      "sustainable polymers",
+      "additive manufacturing",
+      "recyclability",
+      "3D printing",
+      "polyester"
     ],
     "title": "Mechanically Robust and Depolymerizable Polyesters With Near-Complete Monomer Recovery for Circular Additive Manufacturing",
     "url": "https://doi.org/10.1002/adma.73986",
@@ -19632,7 +19724,8 @@
       "Weihua Li"
     ],
     "categories": [
-      "Multi-material AM"
+      "Multi-material AM",
+      "Functionally Graded AM"
     ],
     "corresponding_authors": [
       {
@@ -19654,8 +19747,8 @@
     "id": "10.1002/adma.74018",
     "is_core_venue": true,
     "is_weekly_new": false,
-    "last_updated": "2026-07-22",
-    "openai_summary_applied": false,
+    "last_updated": "2026-07-23",
+    "openai_summary_applied": true,
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
     "openalex_venue_rank_number": 1,
@@ -19666,10 +19759,13 @@
     "source": [
       "Crossref"
     ],
-    "summary_provider": "fallback",
+    "summary_provider": "openai",
     "tags": [
-      "Soft robotics",
-      "Manufacturing automation"
+      "flexible sensors",
+      "wearable electronics",
+      "robotic perception",
+      "feed-draw printing",
+      "microcone capacitive sensor"
     ],
     "title": "Feed-Draw Printing Enables Monolithically Integrated Flexible Sensors With High Interfacial Toughness and Wide Linear Range",
     "url": "https://doi.org/10.1002/adma.74018",
@@ -22598,7 +22694,8 @@
       "Suk-kyun Ahn"
     ],
     "categories": [
-      "Multi-material AM"
+      "Multi-material AM",
+      "Functionally Graded AM"
     ],
     "corresponding_authors": [
       {
@@ -22616,8 +22713,8 @@
     "id": "10.1038/s41467-026-75368-z",
     "is_core_venue": true,
     "is_weekly_new": false,
-    "last_updated": "2026-07-22",
-    "openai_summary_applied": false,
+    "last_updated": "2026-07-23",
+    "openai_summary_applied": true,
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
     "openalex_venue_rank_number": 1,
@@ -22628,12 +22725,12 @@
     "source": [
       "Crossref"
     ],
-    "summary_provider": "fallback",
+    "summary_provider": "openai",
     "tags": [
-      "LCE",
-      "4D printing",
-      "FDM/Material extrusion",
-      "Soft robotics"
+      "3D Printing",
+      "Liquid Crystal Elastomers",
+      "Material Science",
+      "Additive Manufacturing"
     ],
     "title": "Alignment switching in 3D-printed smectic liquid crystal elastomers",
     "url": "https://doi.org/10.1038/s41467-026-75368-z",
@@ -22698,7 +22795,8 @@
       "Chong-Yun Kang"
     ],
     "categories": [
-      "Reviews and Surveys"
+      "Reviews and Surveys",
+      "Multi-material AM"
     ],
     "corresponding_authors": [
       {
@@ -22712,8 +22810,8 @@
     "id": "10.1088/2631-7990/ae8aca",
     "is_core_venue": false,
     "is_weekly_new": false,
-    "last_updated": "2026-07-22",
-    "openai_summary_applied": false,
+    "last_updated": "2026-07-23",
+    "openai_summary_applied": true,
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
     "openalex_venue_rank_number": 1,
@@ -22724,9 +22822,12 @@
     "source": [
       "Crossref"
     ],
-    "summary_provider": "fallback",
+    "summary_provider": "openai",
     "tags": [
-      "Metamaterials",
+      "piezoelectric",
+      "3D printing",
+      "composites",
+      "additive manufacturing",
       "Vat photopolymerization"
     ],
     "title": "Advances in Piezoelectric Ceramic-Polymer Composites for Vat Photopolymerization-Based Additive Manufacturing",
@@ -23480,7 +23581,8 @@
       "Minho Kang"
     ],
     "categories": [
-      "Multi-material AM"
+      "Multi-material AM",
+      "AI and Machine Learning for AM"
     ],
     "curation_priority": false,
     "doi": "10.1002/adma.73938",
@@ -23488,8 +23590,8 @@
     "id": "10.1002/adma.73938",
     "is_core_venue": true,
     "is_weekly_new": false,
-    "last_updated": "2026-07-22",
-    "openai_summary_applied": false,
+    "last_updated": "2026-07-23",
+    "openai_summary_applied": true,
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
     "openalex_venue_rank_number": 1,
@@ -23500,9 +23602,13 @@
     "source": [
       "Crossref"
     ],
-    "summary_provider": "fallback",
+    "summary_provider": "openai",
     "tags": [
-      "4D printing"
+      "4D printing",
+      "Microneedles",
+      "Wound Healing",
+      "AI",
+      "Biomimicry"
     ],
     "title": "AI-Guided 4D Printing of Carnivorous Plants-Inspired Microneedles for Accelerated Wound Healing (Adv. Mater. 39/2026)",
     "url": "https://doi.org/10.1002/adma.73938",
@@ -54014,7 +54120,8 @@
       "Siddhartha Ghosh"
     ],
     "categories": [
-      "Reviews and Surveys"
+      "Reviews and Surveys",
+      "Multi-material AM"
     ],
     "corresponding_authors": [
       {
@@ -54036,8 +54143,8 @@
     "id": "10.1007/s40964-024-00734-6",
     "is_core_venue": true,
     "is_weekly_new": false,
-    "last_updated": "2026-07-22",
-    "openai_summary_applied": false,
+    "last_updated": "2026-07-23",
+    "openai_summary_applied": true,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
     "openalex_venue_rank_number": 2,
@@ -54048,10 +54155,12 @@
     "source": [
       "Crossref"
     ],
-    "summary_provider": "fallback",
+    "summary_provider": "openai",
     "tags": [
-      "Vat photopolymerization",
-      "FDM/Material extrusion"
+      "self-cleaning surfaces",
+      "additive manufacturing",
+      "super-hydrophobic",
+      "sustainability"
     ],
     "title": "A comprehensive review on realization of self-cleaning surfaces by additive manufacturing",
     "url": "https://doi.org/10.1007/s40964-024-00734-6",

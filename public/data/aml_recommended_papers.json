@@ -2921,10 +2921,10 @@
         "similarity": 0.8511
       }
     ],
-    "ai_summary_en": "1. Topic - Alignment switching in 3D-printed smectic liquid crystal elastomers is a 2026 paper from Nature Communications about LCE, 4D printing, and FDM/Material extrusion.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to LCE, 4D printing, and FDM/Material extrusion.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for LCE, 4D printing, and FDM/Material extrusion; current relevance score is 5/10.",
-    "relevance_note_en": "Relevant to the tracker through LCE, 4D printing, and FDM/Material extrusion; score: 5/10.",
-    "summary_provider": "fallback",
-    "openai_summary_applied": false,
+    "ai_summary_en": "1. Topic - The study focuses on enhancing the programmability of liquid crystal elastomers through 3D printing techniques.\n2. Problem - Current methods for aligning materials during printing are limited to a single flow-induced alignment mode.\n3. Method - The authors introduce a direct-ink-writing technique that utilizes two alignment modes in a smectic liquid crystal ink, allowing for orientation switching based on shear and temperature.\n4. Key Result - The research demonstrates that this dual-mode alignment enables reversible switching between contractile and elongational actuation in printed structures.\n5. Takeaway - This innovative approach significantly broadens the design possibilities for adaptive materials and soft actuators.",
+    "relevance_note_en": "The summary accurately captures the essence and findings of the research while maintaining originality.",
+    "summary_provider": "openai",
+    "openai_summary_applied": true,
     "summary_source": "curated_paper_pool",
     "updated_at": "2026-07-11T06:06:17Z",
     "first_added": "2026-07-11T03:57:18Z",
@@ -2932,7 +2932,8 @@
     "is_new_recommendation": false,
     "is_weekly_new": false,
     "weekly_new": false,
-    "openalex_source_id": "https://openalex.org/S64187185"
+    "openalex_source_id": "https://openalex.org/S64187185",
+    "abstract_used_for_summary": true
   },
   {
     "title": "Bio-inspired 4D printing: From multi-dimensional and multi-type shape morphing to applications",
@@ -4261,10 +4262,10 @@
         "similarity": 0.8193
       }
     ],
-    "ai_summary_en": "1. Topic - Process-Structure-Morphing Coupling in Thermally Activated ABS 4D Printing is a 2026 paper from Polymer Engineering & Science about 4D printing and FDM/Material extrusion.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to 4D printing and FDM/Material extrusion.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for 4D printing and FDM/Material extrusion; current relevance score is 5/10.",
-    "relevance_note_en": "Relevant to the tracker through 4D printing and FDM/Material extrusion; score: 5/10.",
-    "summary_provider": "fallback",
-    "openai_summary_applied": false,
+    "ai_summary_en": "1. Topic - The study focuses on thermally activated shape morphing in 4D-printed ABS materials.\n2. Problem - Predicting the deformation response of ABS during thermal activation is challenging due to its sensitivity to processing conditions.\n3. Method - A combination of experimental parameter screening and finite element modeling was employed to analyze the effects of various printing parameters on deformation.\n4. Key Result - Nozzle temperature was found to be the most significant factor influencing deformation, with regression models showing high predictive accuracy.\n5. Takeaway - The research demonstrates that ABS can be effectively utilized for one-way thermally activated morphing applications.",
+    "relevance_note_en": "The summary captures the essential aspects of the study, including its focus, challenges, methodology, findings, and implications.",
+    "summary_provider": "openai",
+    "openai_summary_applied": true,
     "summary_source": "curated_paper_pool",
     "updated_at": "2026-07-11T06:06:17Z",
     "first_added": "2026-07-11T03:57:18Z",
@@ -4272,7 +4273,8 @@
     "is_new_recommendation": false,
     "is_weekly_new": false,
     "weekly_new": false,
-    "openalex_source_id": "https://openalex.org/S114499311"
+    "openalex_source_id": "https://openalex.org/S114499311",
+    "abstract_used_for_summary": true
   },
   {
     "title": "Rotational 3D printing of active-passive filaments and lattices with programmable shape morphing",
@@ -8066,10 +8068,10 @@
         "similarity": 0.832
       }
     ],
-    "ai_summary_en": "1. Topic - Scaling Direct Ink Writing: A Multiscale Materials-Process-System Framework is a 2026 paper from Advanced Materials Technologies about FDM/Material extrusion.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to FDM/Material extrusion.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for FDM/Material extrusion; current relevance score is 7/10.",
-    "relevance_note_en": "Relevant to the tracker through FDM/Material extrusion; score: 7/10.",
-    "summary_provider": "fallback",
-    "openai_summary_applied": false,
+    "ai_summary_en": "1. Topic - The paper discusses the scalability challenges of direct ink writing (DIW) in additive manufacturing.\n2. Problem - Current DIW processes struggle with a significant gap between laboratory-scale resolution and manufacturing-scale throughput.\n3. Method - A multiscale framework is proposed to analyze six interconnected limitations affecting DIW scalability, including material properties and process dynamics.\n4. Key Result - The study identifies distinct scaling barriers related to materials and suggests that some limitations can be addressed through innovative architectural and control strategies.\n5. Takeaway - Understanding the multiscale constraints of DIW is essential for enhancing its scalability and manufacturability in practical applications.",
+    "relevance_note_en": "The summary captures the core themes and findings of the paper while adhering to the specified guidelines.",
+    "summary_provider": "openai",
+    "openai_summary_applied": true,
     "summary_source": "curated_paper_pool",
     "updated_at": "2026-07-11T06:06:17Z",
     "first_added": "2026-07-11T03:57:18Z",
@@ -8077,7 +8079,8 @@
     "is_new_recommendation": false,
     "is_weekly_new": false,
     "weekly_new": false,
-    "openalex_source_id": "https://openalex.org/S2765038284"
+    "openalex_source_id": "https://openalex.org/S2765038284",
+    "abstract_used_for_summary": true
   },
   {
     "title": "Nanoparticle-enhanced vat photopolymerization in additive manufacturing",
@@ -17865,10 +17868,10 @@
         "similarity": 0.8124
       }
     ],
-    "ai_summary_en": "1. Topic - 3D multi-material 420 stainless steel-copper parts for improved thermal conductivity of plastic injection moulds: a step forward in laser powder bed fusion is a 2026 paper from Progress in Additive Manufacturing about Additive manufacturing.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Additive manufacturing.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Additive manufacturing; current relevance score is 6/10.",
-    "relevance_note_en": "Relevant to the tracker through Additive manufacturing; score: 6/10.",
-    "summary_provider": "fallback",
-    "openai_summary_applied": false,
+    "ai_summary_en": "1. Topic - The study focuses on the development of 3D multi-material parts using laser powder bed fusion technology.\n2. Problem - There is a growing need for plastic injection moulds that can effectively manage heat while maintaining mechanical strength.\n3. Method - The research involves printing a multi-material component combining 420 stainless steel and copper in a single process to enhance thermal conductivity.\n4. Key Result - The addition of copper significantly improved the thermal conductivity of the printed parts, achieving a notable reduction in electrical resistivity without compromising structural integrity.\n5. Takeaway - This advancement in multi-material manufacturing demonstrates potential for improved performance in plastic injection moulds through effective heat management.",
+    "relevance_note_en": "The summary captures the essence of the study's focus on multi-material manufacturing and its implications for thermal management in moulds.",
+    "summary_provider": "openai",
+    "openai_summary_applied": true,
     "summary_source": "curated_paper_pool",
     "updated_at": "2026-07-11T06:06:17Z",
     "first_added": "2026-07-11T03:57:18Z",
@@ -17876,7 +17879,8 @@
     "is_new_recommendation": false,
     "is_weekly_new": false,
     "weekly_new": false,
-    "openalex_source_id": "https://openalex.org/S4210206835"
+    "openalex_source_id": "https://openalex.org/S4210206835",
+    "abstract_used_for_summary": true
   },
   {
     "title": "3D-AJP: Fabrication of Advanced Microarchitected Multimaterial Ceramic Structures via Binder-Free and Auxiliary-Free Aerosol Jet 3D Nanoprinting",
@@ -37066,10 +37070,10 @@
         "similarity": 0.8075
       }
     ],
-    "ai_summary_en": "1. Topic - A comprehensive review on realization of self-cleaning surfaces by additive manufacturing is a 2025 paper from Progress in Additive Manufacturing about Vat photopolymerization and FDM/Material extrusion.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Vat photopolymerization and FDM/Material extrusion.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Vat photopolymerization and FDM/Material extrusion; current relevance score is 5/10.",
-    "relevance_note_en": "Relevant to the tracker through Vat photopolymerization and FDM/Material extrusion; score: 5/10.",
-    "summary_provider": "fallback",
-    "openai_summary_applied": false,
+    "ai_summary_en": "1. Topic - The article reviews the development of self-cleaning surfaces using additive manufacturing techniques.\n2. Problem - It addresses the challenges in achieving effective self-cleaning properties through various surface wettability methods.\n3. Method - The review analyzes different additive manufacturing processes, including powder bed fusion and vat photopolymerization, for creating super-hydrophobic surfaces.\n4. Key Result - Additive manufacturing is highlighted as a leading method for producing complex micro-structures that enhance the self-cleaning capabilities of surfaces.\n5. Takeaway - The advancements in self-cleaning surfaces via additive manufacturing are crucial for sustainable manufacturing practices.",
+    "relevance_note_en": "The summary captures the essence of the review on self-cleaning surfaces and additive manufacturing techniques.",
+    "summary_provider": "openai",
+    "openai_summary_applied": true,
     "summary_source": "curated_paper_pool",
     "updated_at": "2026-07-11T06:06:17Z",
     "first_added": "2026-07-11T03:57:18Z",
@@ -37077,7 +37081,8 @@
     "is_new_recommendation": false,
     "is_weekly_new": false,
     "weekly_new": false,
-    "openalex_source_id": "https://openalex.org/S4210206835"
+    "openalex_source_id": "https://openalex.org/S4210206835",
+    "abstract_used_for_summary": true
   },
   {
     "title": "High-performance electromagnetic micropumps fabricated via multi-material jetting additive manufacturing",
@@ -49527,10 +49532,10 @@
         "similarity": 0.7774
       }
     ],
-    "ai_summary_en": "1. Topic - Feed-Draw Printing Enables Monolithically Integrated Flexible Sensors With High Interfacial Toughness and Wide Linear Range is a 2026 paper from Advanced Materials about Soft robotics and Manufacturing automation.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Soft robotics and Manufacturing automation.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Soft robotics and Manufacturing automation; current relevance score is 5/10.",
-    "relevance_note_en": "Relevant to the tracker through Soft robotics and Manufacturing automation; score: 5/10.",
-    "summary_provider": "fallback",
-    "openai_summary_applied": false,
+    "ai_summary_en": "1. Topic - The study focuses on the development of flexible sensors for wearable electronics and robotic applications.\n2. Problem - Existing flexible sensors struggle with balancing sensitivity and durability while integrating with other components.\n3. Method - A monolithic microcone capacitive sensor is created using a feed-draw printing technique that allows for programmable microcone shapes and in situ curing.\n4. Key Result - The resulting sensor shows exceptional interfacial toughness and durability, with stable performance over 200,000 cycles and a wide sensitivity range.\n5. Takeaway - This approach provides a new pathway for creating robust, sensitive, and integrated soft sensors for practical applications in wearables and robotics.",
+    "relevance_note_en": "The summary captures the core contributions and findings of the research, highlighting its significance in sensor technology.",
+    "summary_provider": "openai",
+    "openai_summary_applied": true,
     "summary_source": "curated_paper_pool",
     "updated_at": "2026-07-11T06:06:17Z",
     "first_added": "2026-07-11T03:57:18Z",
@@ -49538,7 +49543,8 @@
     "is_new_recommendation": false,
     "is_weekly_new": false,
     "weekly_new": false,
-    "openalex_source_id": "https://openalex.org/S99352657"
+    "openalex_source_id": "https://openalex.org/S99352657",
+    "abstract_used_for_summary": true
   },
   {
     "title": "All 3D-printed high-sensitivity adaptive hydrogel strain sensor for accurate plant growth monitoring",
@@ -54034,10 +54040,10 @@
         "similarity": 0.8092
       }
     ],
-    "ai_summary_en": "1. Topic - Mechanically Robust and Depolymerizable Polyesters With Near-Complete Monomer Recovery for Circular Additive Manufacturing is a 2026 paper from Advanced Materials about DLP and FDM/Material extrusion.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to DLP and FDM/Material extrusion.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for DLP and FDM/Material extrusion; current relevance score is 5/10.",
-    "relevance_note_en": "Relevant to the tracker through DLP and FDM/Material extrusion; score: 5/10.",
-    "summary_provider": "fallback",
-    "openai_summary_applied": false,
+    "ai_summary_en": "1. Topic - The study focuses on developing a new class of polyesters that are both mechanically robust and chemically recyclable for use in additive manufacturing.\n2. Problem - Creating polymers that are both customizable in structure and fully recyclable poses significant challenges in sustainable polymer chemistry.\n3. Method - The researchers synthesized a δ-lactone copolymer using controlled ring-opening polymerization, allowing for the adjustment of molecular architecture and mechanical properties.\n4. Key Result - The resulting materials exhibit a significant increase in stiffness and can be efficiently depolymerized to recover monomers with high efficiency, even from crosslinked structures.\n5. Takeaway - This approach enables the production of recyclable 3D printing materials that maintain their chemical integrity and can be reprocessed into new polymers.",
+    "relevance_note_en": "The paper presents innovative solutions for sustainable polymer design in additive manufacturing, aligning closely with current trends in material science.",
+    "summary_provider": "openai",
+    "openai_summary_applied": true,
     "summary_source": "curated_paper_pool",
     "updated_at": "2026-07-11T06:06:17Z",
     "first_added": "2026-07-11T03:57:18Z",
@@ -54045,7 +54051,8 @@
     "is_new_recommendation": false,
     "is_weekly_new": false,
     "weekly_new": false,
-    "openalex_source_id": "https://openalex.org/S99352657"
+    "openalex_source_id": "https://openalex.org/S99352657",
+    "abstract_used_for_summary": true
   },
   {
     "title": "Multiscale Heterogeneous Polymer Composites for High Stiffness 4D Printed Electrically Controllable Multifunctional Structures (Adv. Mater. 8/2024)",
@@ -57367,10 +57374,10 @@
         "similarity": 0.7874
       }
     ],
-    "ai_summary_en": "1. Topic - Enabling Interlocking Joint Design for Multi-Material Additive Manufacturing via Topology Optimization with Discontinuous Interfacial Property is a 2026 paper from Additive Manufacturing about Additive manufacturing.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Additive manufacturing.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Additive manufacturing; current relevance score is 7/10.",
-    "relevance_note_en": "Relevant to the tracker through Additive manufacturing; score: 7/10.",
-    "summary_provider": "fallback",
-    "openai_summary_applied": false,
+    "ai_summary_en": "1. Topic - The paper focuses on the design of interlocking joints for multi-material additive manufacturing.\n2. Problem - It addresses the challenge of optimizing joint designs that accommodate discontinuous interfacial properties between different materials.\n3. Method - The authors employ topology optimization techniques to enhance the performance of these interlocking joints.\n4. Key Result - The study demonstrates improved joint performance and material efficiency through the proposed optimization approach.\n5. Takeaway - This research highlights the potential of topology optimization in advancing multi-material additive manufacturing applications.",
+    "relevance_note_en": "The summary captures the essence of the paper's focus on joint design and optimization in additive manufacturing.",
+    "summary_provider": "openai",
+    "openai_summary_applied": true,
     "summary_source": "curated_paper_pool",
     "updated_at": "2026-07-11T06:06:17Z",
     "first_added": "2026-07-11T03:57:18Z",
@@ -57378,7 +57385,8 @@
     "is_new_recommendation": false,
     "is_weekly_new": false,
     "weekly_new": false,
-    "openalex_source_id": "https://openalex.org/S2764842179"
+    "openalex_source_id": "https://openalex.org/S2764842179",
+    "abstract_used_for_summary": false
   },
   {
     "title": "Volumetric 3D Printing and Melt-Electrowriting to Fabricate Implantable Reinforced Cardiac Tissue Patches",
@@ -105000,10 +105008,10 @@
         "similarity": 0.7846
       }
     ],
-    "ai_summary_en": "1. Topic - Structuring scientific knowledge for smart materials and 4D printing: An ontology enrichment framework using retrieval-augmented multimodal large language models is a 2026 paper from Computers in Industry about 4D printing.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to 4D printing.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for 4D printing; current relevance score is 5/10.",
-    "relevance_note_en": "Relevant to the tracker through 4D printing; score: 5/10.",
-    "summary_provider": "fallback",
-    "openai_summary_applied": false,
+    "ai_summary_en": "1. Topic - The paper discusses the integration of scientific knowledge in the field of 4D printing through an ontology enrichment framework.\n2. Problem - The rapid advancement of 4D printing presents challenges in synthesizing knowledge across various scientific disciplines.\n3. Method - A framework utilizing multimodal large language models and retrieval-augmented generation is proposed for ontology learning specific to 4D printing.\n4. Key Result - The framework effectively creates interconnected knowledge graphs that enhance understanding of material properties, interactions, and design strategies.\n5. Takeaway - This approach facilitates better material selection and innovation in programmable structures, marking a significant step in organizing scientific knowledge in 4D printing.",
+    "relevance_note_en": "The summary accurately captures the essence and contributions of the paper regarding 4D printing and ontology enrichment.",
+    "summary_provider": "openai",
+    "openai_summary_applied": true,
     "summary_source": "curated_paper_pool",
     "updated_at": "2026-07-11T06:06:17Z",
     "first_added": "2026-07-11T03:57:18Z",
@@ -105011,7 +105019,8 @@
     "is_new_recommendation": false,
     "is_weekly_new": false,
     "weekly_new": false,
-    "openalex_source_id": "https://openalex.org/S60779006"
+    "openalex_source_id": "https://openalex.org/S60779006",
+    "abstract_used_for_summary": true
   },
   {
     "title": "Tribological Analysis of Fused Filament Fabrication PETG Parts Coated with IGUS",
@@ -113028,10 +113037,10 @@
         "similarity": 0.8072
       }
     ],
-    "ai_summary_en": "1. Topic - A Systematic Methodology for Design in Multi-Material Additive Manufacturing Derived by a Reverse-Traced Workflow is a 2026 paper from Eng about Additive manufacturing.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Additive manufacturing.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Additive manufacturing; current relevance score is 6/10.",
-    "relevance_note_en": "Relevant to the tracker through Additive manufacturing; score: 6/10.",
-    "summary_provider": "fallback",
-    "openai_summary_applied": false,
+    "ai_summary_en": "1. Topic - The paper discusses a systematic methodology for design in multi-material additive manufacturing (MMAM).\n2. Problem - Current design methodologies do not effectively link detailed consolidation decisions to functional requirements at the product level.\n3. Method - The authors propose a reverse-traced workflow that connects part-level decisions to product architecture, incorporating a Level of Process Integration (LPI) framework.\n4. Key Result - A qualitative case study on trail running shoe design demonstrates significant consolidation potential and clarifies redesign scope across different integration levels.\n5. Takeaway - This framework aids designers in balancing the benefits of material consolidation with the complexities of validation throughout the design process.",
+    "relevance_note_en": "The summary captures the core aspects of the paper, including its methodology and implications for design in MMAM.",
+    "summary_provider": "openai",
+    "openai_summary_applied": true,
     "summary_source": "curated_paper_pool",
     "updated_at": "2026-07-11T06:06:17Z",
     "first_added": "2026-07-11T03:57:18Z",
@@ -113039,7 +113048,8 @@
     "is_new_recommendation": false,
     "is_weekly_new": false,
     "weekly_new": false,
-    "openalex_source_id": "https://openalex.org/S4210179454"
+    "openalex_source_id": "https://openalex.org/S4210179454",
+    "abstract_used_for_summary": true
   },
   {
     "title": "Multi-Material Torque Sensor Embedding One-Shot 3D-Printed Deformable Capacitive Structures",
