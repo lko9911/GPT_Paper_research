@@ -16660,7 +16660,7 @@
     "first_added": "2026-07-01",
     "last_updated": "2026-07-23",
     "is_weekly_new": false,
-    "not_seen_in_latest_crossref_run": true,
+    "not_seen_in_latest_crossref_run": false,
     "last_seen_in_crossref_run": "2026-07-23",
     "openalex_venue_rank": "Rank 4",
     "openalex_venue_rank_number": 4,
@@ -30758,6 +30758,128 @@
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 8.402641353693769,
     "openalex_venue_rank_percentile": 0.8669,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+  },
+  {
+    "id": "10.1007/s10845-026-02922-3",
+    "title": "A Bidirectional Physics-Inspired Digital Twin for Melt-Pool-Process Parameter Interplay in Laser Powder-Bed Fusion",
+    "authors": [
+      "Sabbir Alom Shuvo",
+      "Xiyuan Liu",
+      "M Shafiqur Rahman"
+    ],
+    "author_details": [
+      {
+        "name": "Sabbir Alom Shuvo",
+        "orcid": "https://orcid.org/0000-0002-7124-2459",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Xiyuan Liu",
+        "orcid": "https://orcid.org/0000-0002-0456-7931",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "M Shafiqur Rahman",
+        "orcid": "https://orcid.org/0000-0002-5842-8486",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "year": 2026,
+    "venue": "Journal of Intelligent Manufacturing",
+    "doi": "10.1007/s10845-026-02922-3",
+    "url": "https://doi.org/10.1007/s10845-026-02922-3",
+    "source": [
+      "Crossref"
+    ],
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "0956-5515",
+      "1572-8145"
+    ],
+    "issn_l": "",
+    "publisher": "Springer Science and Business Media LLC",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S161464388",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S161464388",
+      "issn_l": "0956-5515",
+      "issn": [
+        "0956-5515",
+        "1572-8145"
+      ],
+      "type": "journal",
+      "host_organization_name": "Springer Science+Business Media",
+      "works_count": 3654,
+      "cited_by_count": 127309,
+      "two_year_mean_citedness": 6.610223642172524,
+      "h_index": 139,
+      "i10_index": 2475,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 6.610223642172524,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "publication_type": "journal_article",
+    "venue_trust": "trusted",
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "is_core_venue": true,
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "categories": [
+      "Multi-material AM"
+    ],
+    "tags": [
+      "Digital Twins"
+    ],
+    "relevance_score": 7,
+    "curation_priority": false,
+    "ai_summary_en": "1. Topic - A Bidirectional Physics-Inspired Digital Twin for Melt-Pool-Process Parameter Interplay in Laser Powder-Bed Fusion is a 2026 paper from Journal of Intelligent Manufacturing about Digital Twins.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Digital Twins.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Digital Twins; current relevance score is 7/10.",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_en": "Relevant to the tracker through Digital Twins; score: 7/10.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-07-23",
+    "last_updated": "2026-07-23",
+    "is_weekly_new": true,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-07-23",
+    "openalex_venue_rank": "Rank 1",
+    "openalex_venue_rank_number": 1,
+    "openalex_venue_rank_score": 6.610223642172524,
+    "openalex_venue_rank_percentile": 0.784,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
@@ -49057,7 +49179,7 @@
     "publisher": "Elsevier BV",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7170085415",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S8792693",
     "venue_metrics": {
@@ -71493,6 +71615,151 @@
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 12.005587372538065,
     "openalex_venue_rank_percentile": 0.929,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+  },
+  {
+    "id": "10.1002/smll.74756",
+    "title": "Light-Responsive 4D Printing of Carbon Nanotube-Liquid Crystal Elastomers for Directional Actuated Bending and Biomimetic Robotics",
+    "authors": [
+      "Cunping Bai",
+      "Jingtian Kang",
+      "Yan Qing Wang"
+    ],
+    "author_details": [
+      {
+        "name": "Cunping Bai",
+        "orcid": "https://orcid.org/0000-0003-3584-9189",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Key Laboratory of Structural Dynamics of Liaoning Province College of Sciences Northeastern University  Shenyang China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Key Laboratory of Structural Dynamics of Liaoning Province College of Sciences Northeastern University  Shenyang China"
+        ]
+      },
+      {
+        "name": "Jingtian Kang",
+        "orcid": "https://orcid.org/0000-0002-3218-193X",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Key Laboratory of Structural Dynamics of Liaoning Province College of Sciences Northeastern University  Shenyang China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Key Laboratory of Structural Dynamics of Liaoning Province College of Sciences Northeastern University  Shenyang China"
+        ]
+      },
+      {
+        "name": "Yan Qing Wang",
+        "orcid": "https://orcid.org/0000-0003-0193-3999",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Key Laboratory of Structural Dynamics of Liaoning Province College of Sciences Northeastern University  Shenyang China"
+          },
+          {
+            "name": "State Key Laboratory of Intelligent Deep Metal Mining and Equipment Northeastern University  Shenyang China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Key Laboratory of Structural Dynamics of Liaoning Province College of Sciences Northeastern University  Shenyang China",
+          "State Key Laboratory of Intelligent Deep Metal Mining and Equipment Northeastern University  Shenyang China"
+        ]
+      }
+    ],
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "year": 2026,
+    "venue": "Small",
+    "doi": "10.1002/smll.74756",
+    "url": "https://doi.org/10.1002/smll.74756",
+    "source": [
+      "Crossref"
+    ],
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "1613-6810",
+      "1613-6829"
+    ],
+    "issn_l": "",
+    "publisher": "Wiley",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S94619837",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S94619837",
+      "issn_l": "1613-6810",
+      "issn": [
+        "1613-6810",
+        "1613-6829"
+      ],
+      "type": "journal",
+      "host_organization_name": "Wiley",
+      "works_count": 33290,
+      "cited_by_count": 1273883,
+      "two_year_mean_citedness": 8.463642428285524,
+      "h_index": 348,
+      "i10_index": 18721,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 8.463642428285524,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "publication_type": "journal_article",
+    "venue_trust": "trusted",
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "is_core_venue": false,
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "categories": [
+      "Multi-material AM"
+    ],
+    "tags": [
+      "LCE",
+      "4D printing"
+    ],
+    "relevance_score": 5,
+    "curation_priority": false,
+    "ai_summary_en": "1. Topic - Light-Responsive 4D Printing of Carbon Nanotube-Liquid Crystal Elastomers for Directional Actuated Bending and Biomimetic Robotics is a 2026 paper from Small about LCE and 4D printing.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to LCE and 4D printing.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for LCE and 4D printing; current relevance score is 5/10.",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_en": "Relevant to the tracker through LCE and 4D printing; score: 5/10.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-07-23",
+    "last_updated": "2026-07-23",
+    "is_weekly_new": true,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-07-23",
+    "openalex_venue_rank": "Rank 1",
+    "openalex_venue_rank_number": 1,
+    "openalex_venue_rank_score": 8.463642428285524,
+    "openalex_venue_rank_percentile": 0.8698,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
@@ -165732,7 +165999,7 @@
     "last_updated": "2026-07-23",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-07-23",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 5.911634756995582,
@@ -219828,7 +220095,7 @@
     "publisher": "IOP Publishing",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "https://openalex.org/W4403628644",
+    "openalex_crosscheck_work_id": "",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S11146949",
     "venue_metrics": {
@@ -224696,28 +224963,9 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [
-      {
-        "name": "Nada Ouahabi",
-        "openalex_author_id": "https://openalex.org/A5091087620",
-        "orcid": "https://orcid.org/0009-0001-3731-8536",
-        "position": "first",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "Université Mohammed VI Polytechnique",
-            "ror": "https://ror.org/03xc55g68",
-            "country_code": "MA",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Green Tech Institute (GTI), Mohammed VI Polytechnic University (UM6P), Benguerir, Morocco"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
     "year": 2024,
     "venue": "Robotics and Computer-Integrated Manufacturing",
     "doi": "10.1016/j.rcim.2024.102778",
@@ -224736,8 +224984,8 @@
     "issn_l": "",
     "publisher": "Elsevier BV",
     "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4396650681",
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S118216261",
     "venue_metrics": {
@@ -229491,28 +229739,9 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [
-      {
-        "name": "Jumyung Um",
-        "openalex_author_id": "https://openalex.org/A5023136694",
-        "orcid": "https://orcid.org/0000-0002-8040-6144",
-        "position": "last",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "Kyung Hee University",
-            "ror": "https://ror.org/01zqcg218",
-            "country_code": "KR",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Artificial Intelligence, KyungHee University, 1732, Deogyeong-daero, Yongin-si, 17104, Gyeonggi-do, Republic of Korea"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
     "year": 2024,
     "venue": "Robotics and Computer-Integrated Manufacturing",
     "doi": "10.1016/j.rcim.2023.102632",
@@ -229531,8 +229760,8 @@
     "issn_l": "",
     "publisher": "Elsevier BV",
     "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4386328356",
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S118216261",
     "venue_metrics": {
