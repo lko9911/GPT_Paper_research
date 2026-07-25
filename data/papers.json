@@ -16728,7 +16728,7 @@
     "first_added": "2026-07-01",
     "last_updated": "2026-07-25",
     "is_weekly_new": false,
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "last_seen_in_crossref_run": "2026-07-25",
     "openalex_venue_rank": "Rank 4",
     "openalex_venue_rank_number": 4,
@@ -39839,7 +39839,7 @@
     "last_updated": "2026-07-25",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-07-25",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 3.7044257112750265,
@@ -50572,6 +50572,182 @@
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 3.7044257112750265,
     "openalex_venue_rank_percentile": 0.5325,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+  },
+  {
+    "id": "10.1007/s40964-026-01868-5",
+    "title": "Additive manufacturing of functional CuSn10-IN718 multi-material structure: thermal, electrical, and mechanical properties and bonding mechanisms",
+    "authors": [
+      "Manikanta Grandhi",
+      "Aditya Nagaraj",
+      "Fan Zhou",
+      "Yulin Liu",
+      "Cesar-Octavio Romo-De-La-Cruz",
+      "Fuda Ning",
+      "Xueyan Song",
+      "Sangkee Min",
+      "Zhichao Liu"
+    ],
+    "author_details": [
+      {
+        "name": "Manikanta Grandhi",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Aditya Nagaraj",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Fan Zhou",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Yulin Liu",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Cesar-Octavio Romo-De-La-Cruz",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Fuda Ning",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Xueyan Song",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Sangkee Min",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Zhichao Liu",
+        "orcid": "https://orcid.org/0000-0003-0630-821X",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "year": 2026,
+    "venue": "Progress in Additive Manufacturing",
+    "doi": "10.1007/s40964-026-01868-5",
+    "url": "https://doi.org/10.1007/s40964-026-01868-5",
+    "source": [
+      "Crossref"
+    ],
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2363-9512",
+      "2363-9520"
+    ],
+    "issn_l": "",
+    "publisher": "Springer Science and Business Media LLC",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S4210206835",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210206835",
+      "issn_l": "2363-9512",
+      "issn": [
+        "2363-9512",
+        "2363-9520"
+      ],
+      "type": "journal",
+      "host_organization_name": "Springer Science+Business Media",
+      "works_count": 1809,
+      "cited_by_count": 21422,
+      "two_year_mean_citedness": 4.039043824701195,
+      "h_index": 63,
+      "i10_index": 494,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 4.039043824701195,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 2",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "publication_type": "journal_article",
+    "venue_trust": "trusted",
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "is_core_venue": true,
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "categories": [
+      "Multi-material AM"
+    ],
+    "tags": [
+      "Additive manufacturing"
+    ],
+    "relevance_score": 6,
+    "curation_priority": false,
+    "ai_summary_en": "1. Topic - Additive manufacturing of functional CuSn10-IN718 multi-material structure: thermal, electrical, and mechanical properties and bonding mechanisms is a 2026 paper from Progress in Additive Manufacturing about Additive manufacturing.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Additive manufacturing.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Additive manufacturing; current relevance score is 6/10.",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_en": "Relevant to the tracker through Additive manufacturing; score: 6/10.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-07-25",
+    "last_updated": "2026-07-25",
+    "is_weekly_new": true,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-07-25",
+    "openalex_venue_rank": "Rank 2",
+    "openalex_venue_rank_number": 2,
+    "openalex_venue_rank_score": 4.039043824701195,
+    "openalex_venue_rank_percentile": 0.574,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
@@ -94425,6 +94601,248 @@
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 8.402641353693769,
     "openalex_venue_rank_percentile": 0.8669,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+  },
+  {
+    "id": "10.1002/adfm.76881",
+    "title": "A Flexible Integration of Photo-Thermal Driven Monolithic Soft Intelligent Gripper Directed by Tactile Perception as Cross-talk-free Control Feedback",
+    "authors": [
+      "Huan Gao",
+      "Yuxu Huangfu",
+      "Yugang Chen",
+      "Yaning Xie",
+      "Mengyu Cao",
+      "Shasha Wang",
+      "Haifeng Ling",
+      "Linhai Xie",
+      "Wei Huang"
+    ],
+    "author_details": [
+      {
+        "name": "Huan Gao",
+        "orcid": "https://orcid.org/0009-0003-4517-4477",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Centre for Molecular Systems and Organic Devices (CMSOD) Jiangsu Key Laboratory of Neuromorphic Electronic (LoNE) State Key Laboratory of Flexible Electronics (LoFE) &amp; Institute of Advanced Materials (IAM) Nanjing University of Posts and Telecommunications  Nanjing China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Centre for Molecular Systems and Organic Devices (CMSOD) Jiangsu Key Laboratory of Neuromorphic Electronic (LoNE) State Key Laboratory of Flexible Electronics (LoFE) &amp; Institute of Advanced Materials (IAM) Nanjing University of Posts and Telecommunications  Nanjing China"
+        ]
+      },
+      {
+        "name": "Yuxu Huangfu",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Centre for Molecular Systems and Organic Devices (CMSOD) Jiangsu Key Laboratory of Neuromorphic Electronic (LoNE) State Key Laboratory of Flexible Electronics (LoFE) &amp; Institute of Advanced Materials (IAM) Nanjing University of Posts and Telecommunications  Nanjing China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Centre for Molecular Systems and Organic Devices (CMSOD) Jiangsu Key Laboratory of Neuromorphic Electronic (LoNE) State Key Laboratory of Flexible Electronics (LoFE) &amp; Institute of Advanced Materials (IAM) Nanjing University of Posts and Telecommunications  Nanjing China"
+        ]
+      },
+      {
+        "name": "Yugang Chen",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Centre for Molecular Systems and Organic Devices (CMSOD) Jiangsu Key Laboratory of Neuromorphic Electronic (LoNE) State Key Laboratory of Flexible Electronics (LoFE) &amp; Institute of Advanced Materials (IAM) Nanjing University of Posts and Telecommunications  Nanjing China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Centre for Molecular Systems and Organic Devices (CMSOD) Jiangsu Key Laboratory of Neuromorphic Electronic (LoNE) State Key Laboratory of Flexible Electronics (LoFE) &amp; Institute of Advanced Materials (IAM) Nanjing University of Posts and Telecommunications  Nanjing China"
+        ]
+      },
+      {
+        "name": "Yaning Xie",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Centre for Molecular Systems and Organic Devices (CMSOD) Jiangsu Key Laboratory of Neuromorphic Electronic (LoNE) State Key Laboratory of Flexible Electronics (LoFE) &amp; Institute of Advanced Materials (IAM) Nanjing University of Posts and Telecommunications  Nanjing China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Centre for Molecular Systems and Organic Devices (CMSOD) Jiangsu Key Laboratory of Neuromorphic Electronic (LoNE) State Key Laboratory of Flexible Electronics (LoFE) &amp; Institute of Advanced Materials (IAM) Nanjing University of Posts and Telecommunications  Nanjing China"
+        ]
+      },
+      {
+        "name": "Mengyu Cao",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Centre for Molecular Systems and Organic Devices (CMSOD) Jiangsu Key Laboratory of Neuromorphic Electronic (LoNE) State Key Laboratory of Flexible Electronics (LoFE) &amp; Institute of Advanced Materials (IAM) Nanjing University of Posts and Telecommunications  Nanjing China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Centre for Molecular Systems and Organic Devices (CMSOD) Jiangsu Key Laboratory of Neuromorphic Electronic (LoNE) State Key Laboratory of Flexible Electronics (LoFE) &amp; Institute of Advanced Materials (IAM) Nanjing University of Posts and Telecommunications  Nanjing China"
+        ]
+      },
+      {
+        "name": "Shasha Wang",
+        "orcid": "https://orcid.org/0000-0002-8724-4627",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Centre for Molecular Systems and Organic Devices (CMSOD) Jiangsu Key Laboratory of Neuromorphic Electronic (LoNE) State Key Laboratory of Flexible Electronics (LoFE) &amp; Institute of Advanced Materials (IAM) Nanjing University of Posts and Telecommunications  Nanjing China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Centre for Molecular Systems and Organic Devices (CMSOD) Jiangsu Key Laboratory of Neuromorphic Electronic (LoNE) State Key Laboratory of Flexible Electronics (LoFE) &amp; Institute of Advanced Materials (IAM) Nanjing University of Posts and Telecommunications  Nanjing China"
+        ]
+      },
+      {
+        "name": "Haifeng Ling",
+        "orcid": "https://orcid.org/0000-0001-8555-0391",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Centre for Molecular Systems and Organic Devices (CMSOD) Jiangsu Key Laboratory of Neuromorphic Electronic (LoNE) State Key Laboratory of Flexible Electronics (LoFE) &amp; Institute of Advanced Materials (IAM) Nanjing University of Posts and Telecommunications  Nanjing China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Centre for Molecular Systems and Organic Devices (CMSOD) Jiangsu Key Laboratory of Neuromorphic Electronic (LoNE) State Key Laboratory of Flexible Electronics (LoFE) &amp; Institute of Advanced Materials (IAM) Nanjing University of Posts and Telecommunications  Nanjing China"
+        ]
+      },
+      {
+        "name": "Linhai Xie",
+        "orcid": "https://orcid.org/0000-0001-6294-5833",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Centre for Molecular Systems and Organic Devices (CMSOD) Jiangsu Key Laboratory of Neuromorphic Electronic (LoNE) State Key Laboratory of Flexible Electronics (LoFE) &amp; Institute of Advanced Materials (IAM) Nanjing University of Posts and Telecommunications  Nanjing China"
+          },
+          {
+            "name": "School of Flexible Electronics (SoFE) and Henan Institute of Flexible Electronics (HIFE) Henan University  Zhengzhou China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Centre for Molecular Systems and Organic Devices (CMSOD) Jiangsu Key Laboratory of Neuromorphic Electronic (LoNE) State Key Laboratory of Flexible Electronics (LoFE) &amp; Institute of Advanced Materials (IAM) Nanjing University of Posts and Telecommunications  Nanjing China",
+          "School of Flexible Electronics (SoFE) and Henan Institute of Flexible Electronics (HIFE) Henan University  Zhengzhou China"
+        ]
+      },
+      {
+        "name": "Wei Huang",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Centre for Molecular Systems and Organic Devices (CMSOD) Jiangsu Key Laboratory of Neuromorphic Electronic (LoNE) State Key Laboratory of Flexible Electronics (LoFE) &amp; Institute of Advanced Materials (IAM) Nanjing University of Posts and Telecommunications  Nanjing China"
+          },
+          {
+            "name": "School of Flexible Electronics (SoFE) and Henan Institute of Flexible Electronics (HIFE) Henan University  Zhengzhou China"
+          },
+          {
+            "name": "Frontiers Science Center for Flexible Electronics (FSCFE) MIIT Key Laboratory of Flexible Electronics (KLoFE) Northwestern Polytechnical University  Xi'an China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Centre for Molecular Systems and Organic Devices (CMSOD) Jiangsu Key Laboratory of Neuromorphic Electronic (LoNE) State Key Laboratory of Flexible Electronics (LoFE) &amp; Institute of Advanced Materials (IAM) Nanjing University of Posts and Telecommunications  Nanjing China",
+          "School of Flexible Electronics (SoFE) and Henan Institute of Flexible Electronics (HIFE) Henan University  Zhengzhou China",
+          "Frontiers Science Center for Flexible Electronics (FSCFE) MIIT Key Laboratory of Flexible Electronics (KLoFE) Northwestern Polytechnical University  Xi'an China"
+        ]
+      }
+    ],
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "year": 2026,
+    "venue": "Advanced Functional Materials",
+    "doi": "10.1002/adfm.76881",
+    "url": "https://doi.org/10.1002/adfm.76881",
+    "source": [
+      "Crossref"
+    ],
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Advanced Functional Materials",
+    "crossref_target_issn": "1616-301X",
+    "issn": [
+      "1616-301X",
+      "1616-3028"
+    ],
+    "issn_l": "",
+    "publisher": "Wiley",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S135204980",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S135204980",
+      "issn_l": "1616-301X",
+      "issn": [
+        "1616-301X",
+        "1616-3028"
+      ],
+      "type": "journal",
+      "host_organization_name": "Wiley",
+      "works_count": 42483,
+      "cited_by_count": 2508008,
+      "two_year_mean_citedness": 14.256403502995983,
+      "h_index": 476,
+      "i10_index": 26898,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "High-impact general journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 14.256403502995983,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "publication_type": "journal_article",
+    "venue_trust": "trusted",
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "is_core_venue": true,
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "categories": [
+      "AI and Machine Learning for AM"
+    ],
+    "tags": [
+      "Soft robotics"
+    ],
+    "relevance_score": 5,
+    "curation_priority": false,
+    "ai_summary_en": "1. Topic - A Flexible Integration of Photo-Thermal Driven Monolithic Soft Intelligent Gripper Directed by Tactile Perception as Cross-talk-free Control Feedback is a 2026 paper from Advanced Functional Materials about Soft robotics.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Soft robotics.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Soft robotics; current relevance score is 5/10.",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_en": "Relevant to the tracker through Soft robotics; score: 5/10.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-07-25",
+    "last_updated": "2026-07-25",
+    "is_weekly_new": true,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-07-25",
+    "openalex_venue_rank": "Rank 1",
+    "openalex_venue_rank_number": 1,
+    "openalex_venue_rank_score": 14.256403502995983,
+    "openalex_venue_rank_percentile": 0.9615,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
@@ -166078,7 +166496,7 @@
     "last_updated": "2026-07-25",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-07-25",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 5.911634756995582,
@@ -181040,7 +181458,7 @@
     "last_updated": "2026-07-25",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-07-25",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 3.7044257112750265,
