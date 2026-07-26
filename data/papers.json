@@ -5978,9 +5978,9 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Wenjun Xu",
-        "openalex_author_id": "https://openalex.org/A5059180329",
-        "orcid": "https://orcid.org/0000-0001-5370-3437",
+        "name": "Zhenlu Xu",
+        "openalex_author_id": "https://openalex.org/A5056473819",
+        "orcid": "https://orcid.org/0009-0007-0580-017X",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -16747,7 +16747,7 @@
     "first_added": "2026-07-01",
     "last_updated": "2026-07-26",
     "is_weekly_new": false,
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "last_seen_in_crossref_run": "2026-07-26",
     "openalex_venue_rank": "Rank 4",
     "openalex_venue_rank_number": 4,
@@ -23707,9 +23707,9 @@
     "corresponding_authors": [
       {
         "name": "Assia Belbachir",
-        "openalex_author_id": null,
+        "openalex_author_id": "https://openalex.org/A5051482797",
         "orcid": "https://orcid.org/0000-0002-1294-8478",
-        "position": "middle",
+        "position": "first",
         "is_corresponding": true,
         "institutions": [
           {
@@ -32436,8 +32436,8 @@
         "raw_affiliation_strings": [
           "Department of Materials Science and Metallurgy University of Cambridge  27 Charles Babbage Road Cambridge CB3 0FS UK",
           "School of Engineering College of Science and Engineering University of Derby  Markeaton Street Derby DE22 3AW UK",
-          "School of Engineering, College of Science and Engineering, University of Derby, Markeaton Street, Derby, DE22 3AW UK",
-          "Department of Materials Science and Metallurgy, University of Cambridge, 27 Charles Babbage Road, Cambridge, CB3 0FS UK"
+          "Department of Materials Science and Metallurgy, University of Cambridge, 27 Charles Babbage Road, Cambridge, CB3 0FS UK",
+          "School of Engineering, College of Science and Engineering, University of Derby, Markeaton Street, Derby, DE22 3AW UK"
         ]
       },
       {
@@ -50721,9 +50721,28 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Zhichao Liu",
+        "openalex_author_id": "https://openalex.org/A5100459808",
+        "orcid": "https://orcid.org/0000-0003-0630-821X",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "West Virginia University",
+            "ror": "https://ror.org/011vxgd24",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "West Virginia University, Morgantown, USA"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Progress in Additive Manufacturing",
     "doi": "10.1007/s40964-026-01868-5",
@@ -50743,8 +50762,8 @@
     "issn_l": "",
     "publisher": "Springer Science and Business Media LLC",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7171107950",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S4210206835",
     "venue_metrics": {
@@ -61589,8 +61608,8 @@
         "raw_affiliation_strings": [
           "State Key Laboratory of Baiyunobo Rare Earth Resource Researches and Comprehensive Utilization Baotou Research Institute of Rare Earths  Baotou 014030 China",
           "State Key Laboratory of Natural Product Chemistry Key Laboratory of Nonferrous Metal Chemistry and Resources Utilization of Gansu Province College of Chemistry and Chemical Engineering Lanzhou University  Lanzhou 730000 China",
-          "State Key Laboratory of Natural Product Chemistry, Key Laboratory of Nonferrous Metal Chemistry and Resources Utilization of Gansu Province, College of Chemistry and Chemical Engineering, Lanzhou University, Lanzhou, 730000 China",
-          "State Key Laboratory of Baiyunobo Rare Earth Resource Researches and Comprehensive Utilization, Baotou Research Institute of Rare Earths, Baotou, 014030 China"
+          "State Key Laboratory of Baiyunobo Rare Earth Resource Researches and Comprehensive Utilization, Baotou Research Institute of Rare Earths, Baotou, 014030 China",
+          "State Key Laboratory of Natural Product Chemistry, Key Laboratory of Nonferrous Metal Chemistry and Resources Utilization of Gansu Province, College of Chemistry and Chemical Engineering, Lanzhou University, Lanzhou, 730000 China"
         ]
       }
     ],
@@ -67239,10 +67258,10 @@
           "The Center for Nanoscience and Nanotechnology Tel Aviv University  Tel Aviv 6997801 Israel",
           "The Shmunis School of Biomedicine and Cancer Research Faculty of Life Sciences Tel Aviv University  Tel Aviv 6997801 Israel",
           "The Shmunis School of Biomedicine and Cancer Research, Faculty of Life Sciences, Tel Aviv University, Tel Aviv, 6997801 Israel",
-          "Department of Biomedical Engineering, Faculty of Engineering, Tel Aviv University, Tel Aviv, 6997801 Israel",
           "Sagol School for Neuroscience, Tel Aviv University, Tel Aviv, 6997801 Israel",
-          "The Center for Nanoscience and Nanotechnology, Tel Aviv University, Tel Aviv, 6997801 Israel",
-          "Sagol Center for Regenerative Biotechnology, Tel Aviv University, Tel Aviv, 6997801 Israel"
+          "Department of Biomedical Engineering, Faculty of Engineering, Tel Aviv University, Tel Aviv, 6997801 Israel",
+          "Sagol Center for Regenerative Biotechnology, Tel Aviv University, Tel Aviv, 6997801 Israel",
+          "The Center for Nanoscience and Nanotechnology, Tel Aviv University, Tel Aviv, 6997801 Israel"
         ]
       }
     ],
@@ -93805,17 +93824,11 @@
     "corresponding_authors": [
       {
         "name": "Maria A. Bieberich",
-        "openalex_author_id": null,
-        "orcid": null,
-        "position": "middle",
+        "openalex_author_id": "https://openalex.org/A5081851152",
+        "orcid": "https://orcid.org/0000-0002-1518-5330",
+        "position": "first",
         "is_corresponding": true,
         "institutions": [
-          {
-            "name": "University of Iowa",
-            "ror": "https://ror.org/036jqmy94",
-            "country_code": "US",
-            "type": "education"
-          },
           {
             "name": "University of Maryland, Baltimore County",
             "ror": "https://ror.org/02qskvh78",
@@ -93824,8 +93837,7 @@
           }
         ],
         "raw_affiliation_strings": [
-          "University of Maryland, Baltimore County, Baltimore, Maryland, USA",
-          "Institute for Vision Research, Carver College of Medicine, University of Iowa, Iowa City, Iowa, USA"
+          "University of Maryland, Baltimore County, Baltimore, Maryland, USA"
         ]
       },
       {
@@ -93857,7 +93869,7 @@
         "name": "Erin Lavik",
         "openalex_author_id": "https://openalex.org/A5079335476",
         "orcid": "https://orcid.org/0000-0002-0644-744X",
-        "position": "middle",
+        "position": "last",
         "is_corresponding": true,
         "institutions": [
           {
@@ -94836,9 +94848,103 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Shasha Wang",
+        "openalex_author_id": "https://openalex.org/A5100434088",
+        "orcid": "https://orcid.org/0000-0002-8724-4627",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Nanjing University of Posts and Telecommunications",
+            "ror": "https://ror.org/043bpky34",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Centre for Molecular Systems and Organic Devices (CMSOD) Jiangsu Key Laboratory of Neuromorphic Electronic (LoNE) State Key Laboratory of Flexible Electronics (LoFE) &amp; Institute of Advanced Materials (IAM) Nanjing University of Posts and Telecommunications  Nanjing China"
+        ]
+      },
+      {
+        "name": "Haifeng Ling",
+        "openalex_author_id": "https://openalex.org/A5020958148",
+        "orcid": "https://orcid.org/0000-0001-8555-0391",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Nanjing University of Posts and Telecommunications",
+            "ror": "https://ror.org/043bpky34",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Centre for Molecular Systems and Organic Devices (CMSOD) Jiangsu Key Laboratory of Neuromorphic Electronic (LoNE) State Key Laboratory of Flexible Electronics (LoFE) &amp; Institute of Advanced Materials (IAM) Nanjing University of Posts and Telecommunications  Nanjing China"
+        ]
+      },
+      {
+        "name": "Linghai Xie",
+        "openalex_author_id": "https://openalex.org/A5100741337",
+        "orcid": "https://orcid.org/0000-0001-6294-5833",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Henan University",
+            "ror": "https://ror.org/003xyzq10",
+            "country_code": "CN",
+            "type": "education"
+          },
+          {
+            "name": "Nanjing University of Posts and Telecommunications",
+            "ror": "https://ror.org/043bpky34",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Centre for Molecular Systems and Organic Devices (CMSOD) Jiangsu Key Laboratory of Neuromorphic Electronic (LoNE) State Key Laboratory of Flexible Electronics (LoFE) &amp; Institute of Advanced Materials (IAM) Nanjing University of Posts and Telecommunications  Nanjing China",
+          "School of Flexible Electronics (SoFE) and Henan Institute of Flexible Electronics (HIFE) Henan University  Zhengzhou China"
+        ]
+      },
+      {
+        "name": "W Huang",
+        "openalex_author_id": "https://openalex.org/A5123463811",
+        "orcid": null,
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Northwestern Polytechnical University",
+            "ror": "https://ror.org/01y0j0j86",
+            "country_code": "CN",
+            "type": "education"
+          },
+          {
+            "name": "Henan University",
+            "ror": "https://ror.org/003xyzq10",
+            "country_code": "CN",
+            "type": "education"
+          },
+          {
+            "name": "Nanjing University of Posts and Telecommunications",
+            "ror": "https://ror.org/043bpky34",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Centre for Molecular Systems and Organic Devices (CMSOD) Jiangsu Key Laboratory of Neuromorphic Electronic (LoNE) State Key Laboratory of Flexible Electronics (LoFE) &amp; Institute of Advanced Materials (IAM) Nanjing University of Posts and Telecommunications  Nanjing China",
+          "Frontiers Science Center for Flexible Electronics (FSCFE) MIIT Key Laboratory of Flexible Electronics (KLoFE) Northwestern Polytechnical University  Xi'an China",
+          "School of Flexible Electronics (SoFE) and Henan Institute of Flexible Electronics (HIFE) Henan University  Zhengzhou China"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Advanced Functional Materials",
     "doi": "10.1002/adfm.76881",
@@ -94858,8 +94964,8 @@
     "issn_l": "",
     "publisher": "Wiley",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7171085342",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S135204980",
     "venue_metrics": {
@@ -118097,8 +118203,8 @@
         ],
         "raw_affiliation_strings": [
           "Chongqing University",
-          "College of Mechanical and Vehicle Engineering, Chongqing University, Chongqing, China",
-          "Chongqing Key Laboratory of Metal Additive Manufacturing (3D Printing), Chongqing University, Chongqing, China"
+          "Chongqing Key Laboratory of Metal Additive Manufacturing (3D Printing), Chongqing University, Chongqing, China",
+          "College of Mechanical and Vehicle Engineering, Chongqing University, Chongqing, China"
         ]
       },
       {
@@ -118117,8 +118223,8 @@
         ],
         "raw_affiliation_strings": [
           "Chongqing University",
-          "Chongqing Key Laboratory of Metal Additive Manufacturing (3D Printing), Chongqing University, Chongqing, China",
-          "College of Mechanical and Vehicle Engineering, Chongqing University, Chongqing, China"
+          "College of Mechanical and Vehicle Engineering, Chongqing University, Chongqing, China",
+          "Chongqing Key Laboratory of Metal Additive Manufacturing (3D Printing), Chongqing University, Chongqing, China"
         ]
       }
     ],
@@ -135929,8 +136035,8 @@
           "Department of Civil and Environmental Engineering, University of California, Los Angeles, CA, USA. rayne23@berkeley.edu",
           "Lawrence Berkeley National Laboratory, Berkeley, CA, USA. rayne23@berkeley.edu",
           "Lawrence Berkeley National Laboratory, Berkeley, CA, USA",
-          "Advanced Manufacturing and Metamaterials Laboratory, Department of Material Science and Engineering, University of California, Berkeley, CA, USA",
-          "Department of Civil and Environmental Engineering, University of California, Los Angeles, CA, USA"
+          "Department of Civil and Environmental Engineering, University of California, Los Angeles, CA, USA",
+          "Advanced Manufacturing and Metamaterials Laboratory, Department of Material Science and Engineering, University of California, Berkeley, CA, USA"
         ]
       }
     ],
@@ -136779,8 +136885,8 @@
       },
       {
         "name": "Wenzhuo Liu",
-        "openalex_author_id": "https://openalex.org/A5107441690",
-        "orcid": "https://orcid.org/0009-0004-3542-8418",
+        "openalex_author_id": null,
+        "orcid": null,
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -140004,8 +140110,8 @@
         "raw_affiliation_strings": [
           "Institute of Nanotechnology (INT) Karlsruhe Institute of Technology (KIT)  76131 Karlsruhe Germany",
           "School of Chemistry and Physics and Centre for Materials Science Queensland University of Technology (QUT)  2 George Street Brisbane QLD 4000 Australia",
-          "Institute of Nanotechnology (INT), Karlsruhe Institute of Technology (KIT), 76131 Karlsruhe, Germany",
-          "School of Chemistry and Physics and Centre for Materials Science, Queensland University of Technology (QUT), 2 George Street, Brisbane, QLD, 4000 Australia"
+          "School of Chemistry and Physics and Centre for Materials Science, Queensland University of Technology (QUT), 2 George Street, Brisbane, QLD, 4000 Australia",
+          "Institute of Nanotechnology (INT), Karlsruhe Institute of Technology (KIT), 76131 Karlsruhe, Germany"
         ]
       },
       {
@@ -140872,8 +140978,8 @@
         "raw_affiliation_strings": [
           "Division of Soft Matter Physics Institute for Experimental Physics Johannes Kepler University  Altenberger Str. 69 Linz 4040 Austria",
           "Soft Materials Lab Linz Institute of Technology Johannes Kepler University  Altenberger Str. 69 Linz 4040 Austria",
-          "Division of Soft Matter Physics, Institute for Experimental Physics, Johannes Kepler University, Altenberger Str. 69, Linz, 4040 Austria",
-          "Soft Materials Lab, Linz Institute of Technology, Johannes Kepler University, Altenberger Str. 69, Linz, 4040 Austria"
+          "Soft Materials Lab, Linz Institute of Technology, Johannes Kepler University, Altenberger Str. 69, Linz, 4040 Austria",
+          "Division of Soft Matter Physics, Institute for Experimental Physics, Johannes Kepler University, Altenberger Str. 69, Linz, 4040 Austria"
         ]
       }
     ],
@@ -141596,8 +141702,8 @@
         "raw_affiliation_strings": [
           "Meta Robotics Institute, Shanghai Jiao Tong University, Shanghai, China. guguoying@sjtu.edu.cn",
           "Robotics Institute and State Key Laboratory of Mechanical System and Vibration, School of Mechanical Engineering, Shanghai Jiao Tong University, Shanghai, China. guguoying@sjtu.edu.cn",
-          "Robotics Institute and State Key Laboratory of Mechanical System and Vibration, School of Mechanical Engineering, Shanghai Jiao Tong University, Shanghai, China",
-          "Meta Robotics Institute, Shanghai Jiao Tong University, Shanghai, China"
+          "Meta Robotics Institute, Shanghai Jiao Tong University, Shanghai, China",
+          "Robotics Institute and State Key Laboratory of Mechanical System and Vibration, School of Mechanical Engineering, Shanghai Jiao Tong University, Shanghai, China"
         ]
       }
     ],
@@ -142890,8 +142996,8 @@
           "Department of Mechanical Science and Engineering University of Illinois Urbana‐Champaign  Urbana IL 61801 USA",
           "Grainger College of Engineering University of Illinois Urbana‐Champaign  Urbana IL 61801 USA",
           "Materials Research Laboratory University of Illinois Urbana‐Champaign  Urbana IL 61801 USA",
-          "Department of Chemistry, University of Illinois Urbana-Champaign, Urbana, IL, 61801 USA",
-          "Email: [email protected]"
+          "Email: [email protected]",
+          "Department of Chemistry, University of Illinois Urbana-Champaign, Urbana, IL, 61801 USA"
         ]
       }
     ],
@@ -145371,9 +145477,9 @@
           "National Medical Products Administration (NMPA) Key Laboratory for Research and Evaluation of Additive Manufacturing Medical Devices Xi'an Jiaotong University  Xi'an 710049 P. R. China",
           "State Industry‐Education Integration Center for Medical Innovations Xi'an Jiaotong University  Xi'an 710049 P. R. China",
           "State Key Laboratory for Manufacturing Systems Engineering Xi'an Jiaotong University  Xi'an 710049 P. R. China",
-          "National Medical Products Administration (NMPA) Key Laboratory for Research and Evaluation of Additive Manufacturing Medical Devices, Xi'an Jiaotong University, Xi'an, 710049 P. R. China",
           "State Key Laboratory for Manufacturing Systems Engineering, Xi'an Jiaotong University, Xi'an, 710049 P. R. China",
-          "State Industry-Education Integration Center for Medical Innovations, Xi'an Jiaotong University, Xi'an, 710049 P. R. China"
+          "State Industry-Education Integration Center for Medical Innovations, Xi'an Jiaotong University, Xi'an, 710049 P. R. China",
+          "National Medical Products Administration (NMPA) Key Laboratory for Research and Evaluation of Additive Manufacturing Medical Devices, Xi'an Jiaotong University, Xi'an, 710049 P. R. China"
         ]
       }
     ],
@@ -154350,9 +154456,9 @@
           "Department of Mechanical, Aerospace, and Civil Engineering University of Manchester  Manchester M13 9PL UK",
           "Institute of Structured and Architected Materials Liaoning Academy of Materials  Shenyang 110167 China",
           "Key Laboratory of Bionic Engineering Ministry of Education Jilin University  Changchun 130022 China",
-          "Key Laboratory of Bionic Engineering, Ministry of Education, Jilin University, Changchun, 130022 China",
+          "Institute of Structured and Architected Materials, Liaoning Academy of Materials, Shenyang, 110167 China",
           "Department of Mechanical, Aerospace, and Civil Engineering, University of Manchester, Manchester, M13 9PL UK",
-          "Institute of Structured and Architected Materials, Liaoning Academy of Materials, Shenyang, 110167 China"
+          "Key Laboratory of Bionic Engineering, Ministry of Education, Jilin University, Changchun, 130022 China"
         ]
       },
       {
@@ -164335,8 +164441,8 @@
           "Basic Science and Engineering Initiative Children's Heart Center Stanford University  Stanford CA 94304 USA",
           "Chan Zuckerberg Biohub  San Francisco CA 94158 USA",
           "Department of Bioengineering Stanford University  Stanford CA 94305 USA",
-          "Chan Zuckerberg Biohub, San Francisco, CA, 94158 USA",
           "Department of Bioengineering, Stanford University, Stanford, CA, 94305 USA",
+          "Chan Zuckerberg Biohub, San Francisco, CA, 94158 USA",
           "Basic Science and Engineering Initiative, Children's Heart Center, Stanford University, Stanford, CA, 94304 USA"
         ]
       }
@@ -168794,7 +168900,7 @@
         "name": "Xiaofeng Wang",
         "openalex_author_id": null,
         "orcid": "https://orcid.org/0000-0002-9913-1064",
-        "position": "middle",
+        "position": "last",
         "is_corresponding": true,
         "institutions": [
           {
@@ -172885,8 +172991,8 @@
           "Center of Excellence in Life-Inspired Hybrid Materials (LIBER), Aalto University, Espoo, Finland. hang.zhang@aalto.fi",
           "Department of Applied Physics, Aalto University, Espoo, Finland. hang.zhang@aalto.fi",
           "Department of Bioproducts and Biosystems, School of Chemical Engineering, Aalto University, Espoo, Finland. hang.zhang@aalto.fi",
-          "Department of Applied Physics, Aalto University, Espoo, Finland",
           "Center of Excellence in Life-Inspired Hybrid Materials (LIBER), Aalto University, Espoo, Finland",
+          "Department of Applied Physics, Aalto University, Espoo, Finland",
           "Department of Bioproducts and Biosystems, School of Chemical Engineering, Aalto University, Espoo, Finland"
         ]
       }
@@ -174315,9 +174421,9 @@
         "raw_affiliation_strings": [
           "Life‐Like Materials and Systems, Department of Chemistry University of Mainz Duesbergweg 10‐14 55128 Mainz Germany",
           "Max Planck Institute for Polymer Research  Ackermannweg 10 55128 Mainz Germany",
-          "Life-Like Materials and Systems, Department of Chemistry, University of Mainz, Duesbergweg 10-14, 55128 Mainz, Germany",
           "Max Planck Institute for Polymer Research, Ackermannweg 10, 55128 Mainz, Germany",
-          "Email: [email protected][email protected]"
+          "Email: [email protected][email protected]",
+          "Life-Like Materials and Systems, Department of Chemistry, University of Mainz, Duesbergweg 10-14, 55128 Mainz, Germany"
         ]
       }
     ],
@@ -177535,7 +177641,7 @@
     "last_updated": "2026-07-26",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-07-26",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 5.572056737588652,
@@ -179577,8 +179683,8 @@
         "raw_affiliation_strings": [
           "The Laboratory for Advanced Functional/Medicinal Polymers &amp; Smart Drug Delivery Technologies The Wolfson Faculty of Chemical Engineering Technion‐Israel Institute of Technology  Haifa 3200003 Israel",
           "The Russell Berrie Nanotechnology Institute Technion‐Israel Institute of Technology  Haifa 3200003 Israel",
-          "The Laboratory for Advanced Functional/Medicinal Polymers & Smart Drug Delivery Technologies, The Wolfson Faculty of Chemical Engineering, Technion-Israel Institute of Technology, Haifa, 3200003 Israel",
-          "The Russell Berrie Nanotechnology Institute, Technion-Israel Institute of Technology, Haifa, 3200003 Israel"
+          "The Russell Berrie Nanotechnology Institute, Technion-Israel Institute of Technology, Haifa, 3200003 Israel",
+          "The Laboratory for Advanced Functional/Medicinal Polymers & Smart Drug Delivery Technologies, The Wolfson Faculty of Chemical Engineering, Technion-Israel Institute of Technology, Haifa, 3200003 Israel"
         ]
       }
     ],
@@ -181533,7 +181639,7 @@
     "last_updated": "2026-07-26",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-07-26",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 3.7044257112750265,
@@ -189072,8 +189178,8 @@
         "raw_affiliation_strings": [
           "Department of Electronic Engineering Kyung Hee University  Deogyeong‐daero, Giheung‐gu Yongin‐si Gyeonggi‐do 17104 Republic of Korea",
           "Institute for Wearable Convergence Electronics, Department of Electronics and Information Convergence Engineering Kyung Hee University  Deogyeong‐daero, Giheung‐gu Yongin‐si Gyeonggi‐do 17104 Republic of Korea",
-          "Institute for Wearable Convergence Electronics, Department of Electronics and Information Convergence Engineering, Kyung Hee University, Deogyeong-daero, Giheung-gu, Yongin-si, Gyeonggi-do, 17104 Republic of Korea",
-          "Department of Electronic Engineering, Kyung Hee University, Deogyeong-daero, Giheung-gu, Yongin-si, Gyeonggi-do, 17104 Republic of Korea"
+          "Department of Electronic Engineering, Kyung Hee University, Deogyeong-daero, Giheung-gu, Yongin-si, Gyeonggi-do, 17104 Republic of Korea",
+          "Institute for Wearable Convergence Electronics, Department of Electronics and Information Convergence Engineering, Kyung Hee University, Deogyeong-daero, Giheung-gu, Yongin-si, Gyeonggi-do, 17104 Republic of Korea"
         ]
       },
       {
@@ -203004,8 +203110,8 @@
         "raw_affiliation_strings": [
           "Advanced Materials Division Korea Research Institute of Chemical Technology  141 Gajeong‐ro Yuseong‐gu Daejeon 34114 Republic of Korea",
           "Advanced Materials and Chemical Engineering KRICT School University of Science and Technology  217 Gajeong‐ro, Yuseong‐gu Daejeon 34114 Republic of Korea",
-          "Advanced Materials and Chemical Engineering, KRICT School, University of Science and Technology, 217 Gajeong-ro, Yuseong-gu, Daejeon, 34114, Republic of Korea",
-          "Advanced Materials Division, Korea Research Institute of Chemical Technology, 141 Gajeong-ro, Yuseong-gu, Daejeon, 34114, Republic of Korea"
+          "Advanced Materials Division, Korea Research Institute of Chemical Technology, 141 Gajeong-ro, Yuseong-gu, Daejeon, 34114, Republic of Korea",
+          "Advanced Materials and Chemical Engineering, KRICT School, University of Science and Technology, 217 Gajeong-ro, Yuseong-gu, Daejeon, 34114, Republic of Korea"
         ]
       },
       {
@@ -203046,13 +203152,13 @@
           "Human‐Tech Convergence Program Hanyang University  222 Wangsimni‐ro, Seondong‐gu Seoul 04763 Republic of Korea",
           "Institute of Nano Science and Technology Hanyang University  222 Wangsimni‐ro, Seondong‐gu Seoul 04763 Republic of Korea",
           "The Research Institute of Industrial Science Hanyang University  222 Wangsimni‐ro, Seondong‐gu Seoul 04763 Republic of Korea",
-          "Institute of Nano Science and Technology, Hanyang University, 222 Wangsimni-ro, Seondong-gu, Seoul, 04763, Republic of Korea",
           "Department of Chemical Engineering, Hanyang University, 222 Wangsimni-ro, Seondong-gu, Seoul, 04763, Republic of Korea",
-          "The Michael M. Szwarc Polymer Research Institute, State University of New York College of Environmental Science and Forestry, Syracuse, NY, 13210, USA",
+          "Institute of Nano Science and Technology, Hanyang University, 222 Wangsimni-ro, Seondong-gu, Seoul, 04763, Republic of Korea",
           "Human-Tech Convergence Program, Hanyang University, 222 Wangsimni-ro, Seondong-gu, Seoul, 04763, Republic of Korea",
           "Department of Chemical Engineering, State University of New York College of Environmental Science and Forestry, Syracuse, NY, 13210, USA",
           "The Research Institute of Industrial Science, Hanyang University, 222 Wangsimni-ro, Seondong-gu, Seoul, 04763, Republic of Korea",
-          "Department of Organic and Nano Engineering, Hanyang University, 222 Wangsimni-ro, Seondong-gu, Seoul, 04763, Republic of Korea"
+          "Department of Organic and Nano Engineering, Hanyang University, 222 Wangsimni-ro, Seondong-gu, Seoul, 04763, Republic of Korea",
+          "The Michael M. Szwarc Polymer Research Institute, State University of New York College of Environmental Science and Forestry, Syracuse, NY, 13210, USA"
         ]
       },
       {
@@ -208810,8 +208916,8 @@
         "raw_affiliation_strings": [
           "Department of Clinical Sciences, Faculty of Veterinary Medicine, Utrecht University, Utrecht, The Netherlands. r.levato@uu.nl",
           "Department of Orthopaedics, University Medical Centre Utrecht, Utrecht University, Utrecht, The Netherlands. r.levato@uu.nl",
-          "Department of Clinical Sciences, Faculty of Veterinary Medicine, Utrecht University, Utrecht, The Netherlands",
-          "Department of Orthopaedics, University Medical Centre Utrecht, Utrecht University, Utrecht, The Netherlands"
+          "Department of Orthopaedics, University Medical Centre Utrecht, Utrecht University, Utrecht, The Netherlands",
+          "Department of Clinical Sciences, Faculty of Veterinary Medicine, Utrecht University, Utrecht, The Netherlands"
         ]
       }
     ],
@@ -215289,8 +215395,8 @@
           "Richard and Loan Hill Department of Biomedical Engineering",
           "University of Illinois at Chicago",
           "Richard and Loan Hill Department of Biomedical Engineering, University of Illinois at Chicago, Chicago, Illinois 60612, United States",
-          "Jesse Brown Veterans Affairs Medical Center (JBVAMC), Chicago, Illinois 60612, United States",
-          "Departments of Mechanical & Industrial Engineering, Orthopaedic Surgery, and Pharmacology and Regenerative Medicine, University of Illinois at Chicago, Chicago, Illinois 60612, United States"
+          "Departments of Mechanical & Industrial Engineering, Orthopaedic Surgery, and Pharmacology and Regenerative Medicine, University of Illinois at Chicago, Chicago, Illinois 60612, United States",
+          "Jesse Brown Veterans Affairs Medical Center (JBVAMC), Chicago, Illinois 60612, United States"
         ]
       }
     ],
@@ -217442,8 +217548,8 @@
         ],
         "raw_affiliation_strings": [
           "CIMAINA and Dipartimento di Fisica Università degli Studi di Milano  via Celoria 16 Milano 20133 Italy",
-          "[email protected]",
-          "E-mail [email protected]"
+          "E-mail [email protected]",
+          "[email protected]"
         ]
       },
       {
@@ -217475,9 +217581,9 @@
         "institutions": [],
         "raw_affiliation_strings": [
           "Department of Industrial Chemistry “Toso Montanari”  V. Piero Gobetti 85 Bologna 40129 Italy",
+          "E-mail [email protected]",
           "[email protected]",
-          "Department of Industrial Chemistry \"Toso Montanari\", V. Piero Gobetti 85, Bologna, 40129 Italy",
-          "E-mail [email protected]"
+          "Department of Industrial Chemistry \"Toso Montanari\", V. Piero Gobetti 85, Bologna, 40129 Italy"
         ]
       }
     ],
@@ -218322,8 +218428,8 @@
         "raw_affiliation_strings": [
           "Consorzio Interuniversitario Nazionale per la Scienza e Tecnologia dei Materiali (INSTM)  Florence Italy",
           "Politecnico di Torino Dipartimento di Scienza Applicata e Tecnologia (DISAT)  Torino Italy",
-          "Politecnico di Torino, Dipartimento di Scienza Applicata e Tecnologia (DISAT), Torino, Italy",
-          "Consorzio Interuniversitario Nazionale per la Scienza e Tecnologia dei Materiali (INSTM), Florence, Italy"
+          "Consorzio Interuniversitario Nazionale per la Scienza e Tecnologia dei Materiali (INSTM), Florence, Italy",
+          "Politecnico di Torino, Dipartimento di Scienza Applicata e Tecnologia (DISAT), Torino, Italy"
         ]
       }
     ],
@@ -240921,9 +241027,9 @@
         ],
         "raw_affiliation_strings": [
           "School of Mechanical Engineering Georgia Institute of Technology  Atlanta GA 30332 USA",
+          "[email protected]",
           "Email: [email protected]",
-          "School of Mechanical Engineering, Georgia Institute of Technology, Atlanta, GA, 30332 USA",
-          "[email protected]"
+          "School of Mechanical Engineering, Georgia Institute of Technology, Atlanta, GA, 30332 USA"
         ]
       },
       {
@@ -240944,8 +241050,8 @@
           "HP–NTU Digital Manufacturing Corporate Lab School of Mechanical and Aerospace Engineering Nanyang Technological University  Singapore 639798 Singapore",
           "Singapore Centre for 3D Printing School of Mechanical and Aerospace Engineering Nanyang Technological University  Singapore 639798 Singapore",
           "Singapore Centre for 3D Printing, School of Mechanical and Aerospace Engineering, Nanyang Technological University, Singapore, 639798 Singapore",
-          "Email: [email protected]",
-          "[email protected]"
+          "[email protected]",
+          "Email: [email protected]"
         ]
       }
     ],
@@ -241339,8 +241445,8 @@
           "Department of Mechanical Engineering, Tsinghua University, Beijing 100084, China",
           "Key Laboratory of Advanced Materials Processing Technology, Ministry of Education, Tsinghua University, Beijing 100084, China",
           "State Key Laboratory of Clean and Efficient Turbomachinery Power Equipment, Tsinghua University, Beijing 100084, China",
-          "Department of Mechanical Engineering, Tsinghua University, Beijing 100084, China",
           "Key Laboratory of Advanced Materials Processing Technology, Ministry of Education, Tsinghua University, Beijing 100084, China",
+          "Department of Mechanical Engineering, Tsinghua University, Beijing 100084, China",
           "State Key Laboratory of Clean and Efficient Turbomachinery Power Equipment, Tsinghua University, Beijing, 100084, China"
         ]
       }
@@ -242772,8 +242878,8 @@
         "raw_affiliation_strings": [
           "Institute for Molecular Systems Engineering and Advanced Materials Heidelberg University  Im Neuenheimer Feld 225 69120 Heidelberg Germany",
           "Institute of Organic Chemistry Heidelberg University  Im Neuenheimer Feld 270 69120 Heidelberg Germany",
-          "Institute for Molecular Systems Engineering and Advanced Materials, Heidelberg University, Im Neuenheimer Feld 225, 69120 Heidelberg, Germany",
-          "Institute of Organic Chemistry, Heidelberg University, Im Neuenheimer Feld 270, 69120 Heidelberg, Germany"
+          "Institute of Organic Chemistry, Heidelberg University, Im Neuenheimer Feld 270, 69120 Heidelberg, Germany",
+          "Institute for Molecular Systems Engineering and Advanced Materials, Heidelberg University, Im Neuenheimer Feld 225, 69120 Heidelberg, Germany"
         ]
       }
     ],
@@ -244125,9 +244231,9 @@
           "Department of Chemical and Biological Engineering College of Engineering and Applied Science University of Colorado Boulder  Boulder CO 80303 USA",
           "Material Science and Engineering Program College of Engineering and Applied Science University of Colorado Boulder  Boulder CO 80303 USA",
           "Department of Bioengineering, School of Engineering and Applied Sciences, University of Pennsylvania, Philadelphia, PA, 19104 USA",
-          "Department of Chemical and Biological Engineering, College of Engineering and Applied Science, University of Colorado Boulder, Boulder, CO, 80303 USA",
           "BioFrontiers Institute, University of Colorado Boulder, Boulder, CO, 80303 USA",
-          "Material Science and Engineering Program, College of Engineering and Applied Science, University of Colorado Boulder, Boulder, CO, 80303 USA"
+          "Material Science and Engineering Program, College of Engineering and Applied Science, University of Colorado Boulder, Boulder, CO, 80303 USA",
+          "Department of Chemical and Biological Engineering, College of Engineering and Applied Science, University of Colorado Boulder, Boulder, CO, 80303 USA"
         ]
       }
     ],
@@ -245005,10 +245111,10 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Ratnesh Kumar Raj Singh",
-        "openalex_author_id": "https://openalex.org/A5066015004",
-        "orcid": "https://orcid.org/0000-0001-9377-6753",
-        "position": "middle",
+        "name": "Manish Pratap Singh",
+        "openalex_author_id": "https://openalex.org/A5021211339",
+        "orcid": "https://orcid.org/0000-0002-9530-2348",
+        "position": "first",
         "is_corresponding": true,
         "institutions": [
           {
@@ -245634,8 +245740,8 @@
         "raw_affiliation_strings": [
           "John A. Paulson School of Engineering and Applied Sciences Harvard University Cambridge MA 02138 USA",
           "Wyss Institute for Biologically Inspired Engineering Harvard University Cambridge MA 02138 USA",
-          "John A. Paulson School of Engineering and Applied Sciences, Harvard University Cambridge, MA, 02138 USA",
-          "Wyss Institute for Biologically Inspired Engineering, Harvard University Cambridge, MA, 02138 USA"
+          "Wyss Institute for Biologically Inspired Engineering, Harvard University Cambridge, MA, 02138 USA",
+          "John A. Paulson School of Engineering and Applied Sciences, Harvard University Cambridge, MA, 02138 USA"
         ]
       }
     ],
@@ -249068,8 +249174,8 @@
         "raw_affiliation_strings": [
           "Advanced Institute for Life and Health Zhongda Hospital Southeast University  Dingjiaqiao 87 Nanjing 210009 China",
           "Centre for Membrane Separations Adsorption Catalysis and Spectroscopy (cMACS) KU Leuven  Celestijnenlaan 200F Leuven 3001 Belgium",
-          "Advanced Institute for Life and Health, Zhongda Hospital, Southeast University, Dingjiaqiao 87, Nanjing, 210009 China",
-          "Centre for Membrane Separations, Adsorption, Catalysis and Spectroscopy (cMACS), KU Leuven, Celestijnenlaan 200F, Leuven, 3001 Belgium"
+          "Centre for Membrane Separations, Adsorption, Catalysis and Spectroscopy (cMACS), KU Leuven, Celestijnenlaan 200F, Leuven, 3001 Belgium",
+          "Advanced Institute for Life and Health, Zhongda Hospital, Southeast University, Dingjiaqiao 87, Nanjing, 210009 China"
         ]
       },
       {
@@ -249277,8 +249383,8 @@
         "raw_affiliation_strings": [
           "Department of Metallurgy and Materials Engineering, Faculty of Technology Gazi University  06560 Ankara Turkey",
           "Faculty of Materials Engineering Sahand University of Technology  53318/17634 Tabriz Iran",
-          "Faculty of Materials Engineering, Sahand University of Technology, 53318/17634 Tabriz, Iran",
-          "Department of Metallurgy and Materials Engineering, Faculty of Technology, Gazi University, 06560 Ankara, Turkey"
+          "Department of Metallurgy and Materials Engineering, Faculty of Technology, Gazi University, 06560 Ankara, Turkey",
+          "Faculty of Materials Engineering, Sahand University of Technology, 53318/17634 Tabriz, Iran"
         ]
       }
     ],
@@ -251556,8 +251662,8 @@
         "raw_affiliation_strings": [
           "School of Mechatronics Engineering Harbin Institute of Technology  Harbin Heilongjiang 150001 China",
           "State Key Laboratory of Robotics and System Harbin Institute of Technology  Harbin Heilongjiang 150001 China",
-          "School of Mechatronics Engineering, Harbin Institute of Technology, Harbin, Heilongjiang, 150001 China",
-          "State Key Laboratory of Robotics and System, Harbin Institute of Technology, Harbin, Heilongjiang, 150001 China"
+          "State Key Laboratory of Robotics and System, Harbin Institute of Technology, Harbin, Heilongjiang, 150001 China",
+          "School of Mechatronics Engineering, Harbin Institute of Technology, Harbin, Heilongjiang, 150001 China"
         ]
       }
     ],
@@ -257977,8 +258083,8 @@
         "raw_affiliation_strings": [
           "Department of Materials Department of Bioengineering and Institute of Biomedical Engineering Imperial College London  London SW7 2AZ UK",
           "Department of Physiology Anatomy and Genetics Department of Engineering Science and Kavli Institute for Nanoscience Discovery University of Oxford  Oxford OX1 3QU UK",
-          "Department of Physiology, Anatomy and Genetics, Department of Engineering Science, and Kavli Institute for Nanoscience Discovery, University of Oxford, Oxford, OX1 3QU UK",
-          "Department of Materials, Department of Bioengineering, and Institute of Biomedical Engineering, Imperial College London, London, SW7 2AZ UK"
+          "Department of Materials, Department of Bioengineering, and Institute of Biomedical Engineering, Imperial College London, London, SW7 2AZ UK",
+          "Department of Physiology, Anatomy and Genetics, Department of Engineering Science, and Kavli Institute for Nanoscience Discovery, University of Oxford, Oxford, OX1 3QU UK"
         ]
       }
     ],
@@ -258813,9 +258919,31 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Dong Wang",
+        "openalex_author_id": "https://openalex.org/A5100391512",
+        "orcid": "https://orcid.org/0000-0002-8569-8713",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Shanghai Jiao Tong University",
+            "ror": "https://ror.org/0220qvk04",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Meta Robotics Institute Shanghai Jiao Tong University Shanghai 200240 China",
+          "State Key Laboratory of Mechanical System and Vibration School of Mechanical Engineering Shanghai Jiao Tong University Shanghai 200240 China",
+          "Meta Robotics Institute, Shanghai Jiao Tong University, Shanghai, 200240 China",
+          "State Key Laboratory of Mechanical System and Vibration, School of Mechanical Engineering, Shanghai Jiao Tong University, Shanghai, 200240 China"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2024,
     "venue": "Advanced Science",
     "doi": "10.1002/advs.202309932",
@@ -258835,8 +258963,8 @@
     "issn_l": "",
     "publisher": "Wiley",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "https://openalex.org/W38769665",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4398180905",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2737737698",
     "venue_metrics": {
@@ -262034,8 +262162,8 @@
         "raw_affiliation_strings": [
           "Department of Bioresource Engineering McGill University Montreal QC H9X 3V9 Canada",
           "Department of Mechanical Engineering McGill University Montreal QC H3A 0C3 Canada",
-          "Department of Bioresource Engineering, McGill University, Montreal, QC, H9X 3V9 Canada",
-          "Department of Mechanical Engineering, McGill University, Montreal, QC, H3A 0C3 Canada"
+          "Department of Mechanical Engineering, McGill University, Montreal, QC, H3A 0C3 Canada",
+          "Department of Bioresource Engineering, McGill University, Montreal, QC, H9X 3V9 Canada"
         ]
       }
     ],
@@ -262460,7 +262588,7 @@
       },
       {
         "name": "Zihuan Chen",
-        "openalex_author_id": null,
+        "openalex_author_id": "https://openalex.org/A5024222220",
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -263706,13 +263834,13 @@
         "raw_affiliation_strings": [
           "Department of Orthopedics, Central Hospital of Dalian University of Technology, Dalian, People’s Republic of China",
           "School of Materials Science and Engineering, Dalian University of Technology, Dalian, People’s Republic of China",
-          "School of Materials Science and Engineering, Dalian University of Technology, Dalian, People's Republic of China",
-          "Department of Orthopedics, Central Hospital of Dalian University of Technology, Dalian, People's Republic of China"
+          "Department of Orthopedics, Central Hospital of Dalian University of Technology, Dalian, People's Republic of China",
+          "School of Materials Science and Engineering, Dalian University of Technology, Dalian, People's Republic of China"
         ]
       },
       {
         "name": "Huanyue Zhang",
-        "openalex_author_id": "https://openalex.org/A5014806689",
+        "openalex_author_id": null,
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -263733,7 +263861,7 @@
         "raw_affiliation_strings": [
           "Department of Orthopedics, Central Hospital of Dalian University of Technology, Dalian, People’s Republic of China",
           "Instrumental Analysis Center, Dalian University of Technology, Dalian, People’s Republic of China",
-          "Instrumental Analysis Center, Dalian University of Technology, Dalian, People's Republic of China"
+          "Department of Orthopedics, Central Hospital of Dalian University of Technology, Dalian, People's Republic of China"
         ]
       },
       {
@@ -267572,9 +267700,9 @@
           "School of Chemistry and Chemical Engineering State Key Laboratory Incubation Base for Green Processing of Chemical Engineering Shihezi University  Shihezi 832003 China",
           "Shandong Laboratory of Advanced Materials and Green Manufacturing at Yantai Yantai Zhongke Research Institute of Advanced Materials and Green Chemical Engineering  Yantai 264006 China",
           "State Key Laboratory of Solid Lubrication Lanzhou Institute of Chemical Physics Chinese Academy of Sciences  Lanzhou 730000 China",
-          "Shandong Laboratory of Advanced Materials and Green Manufacturing at Yantai, Yantai Zhongke Research Institute of Advanced Materials and Green Chemical Engineering, Yantai, 264006 China",
           "School of Chemistry and Chemical Engineering, State Key Laboratory Incubation Base for Green Processing of Chemical Engineering, Shihezi University, Shihezi, 832003 China",
-          "State Key Laboratory of Solid Lubrication, Lanzhou Institute of Chemical Physics, Chinese Academy of Sciences, Lanzhou, 730000 China"
+          "State Key Laboratory of Solid Lubrication, Lanzhou Institute of Chemical Physics, Chinese Academy of Sciences, Lanzhou, 730000 China",
+          "Shandong Laboratory of Advanced Materials and Green Manufacturing at Yantai, Yantai Zhongke Research Institute of Advanced Materials and Green Chemical Engineering, Yantai, 264006 China"
         ]
       }
     ],
@@ -269883,10 +270011,10 @@
           "Grado Department of Industrial and Systems Engineering",
           "Macromolecules Innovation Institute",
           "Virginia Tech",
+          "Macromolecules Innovation Institute, Virginia Tech, Blacksburg, Virginia 24061, United States",
           "Department of Chemical Engineering, Virginia Tech, Blacksburg, Virginia 24061, United States",
-          "Department of Materials Science and Engineering, Virginia Tech, Blacksburg, Virginia 24061, United States",
           "Grado Department of Industrial and Systems Engineering, Virginia Tech, Blacksburg, Virginia 24061, United States",
-          "Macromolecules Innovation Institute, Virginia Tech, Blacksburg, Virginia 24061, United States"
+          "Department of Materials Science and Engineering, Virginia Tech, Blacksburg, Virginia 24061, United States"
         ]
       }
     ],
@@ -272717,8 +272845,8 @@
         "raw_affiliation_strings": [
           "Department of Electrical Engineering and Computer Science, University of Missouri, Columbia, MO 65211, United States",
           "Department of Mechanical and Aerospace Engineering, University of Missouri, Columbia, MO 65211, United States",
-          "Department of Electrical Engineering and Computer Science, University of Missouri, Columbia, Missouri 65211, United States",
-          "Department of Mechanical and Aerospace Engineering, University of Missouri, Columbia, Missouri 65211, United States"
+          "Department of Mechanical and Aerospace Engineering, University of Missouri, Columbia, Missouri 65211, United States",
+          "Department of Electrical Engineering and Computer Science, University of Missouri, Columbia, Missouri 65211, United States"
         ]
       }
     ],
@@ -273221,8 +273349,8 @@
         "raw_affiliation_strings": [
           "Department of Chemical and Biological Engineering University of Colorado Boulder  Boulder CO 80303 USA",
           "Materials Science and Engineering Program University of Colorado Boulder  Boulder CO 80303 USA",
-          "Materials Science and Engineering Program, University of Colorado Boulder, Boulder, CO, 80303 USA",
           "Department of Chemical and Biological Engineering, University of Colorado Boulder, Boulder, CO, 80303 USA",
+          "Materials Science and Engineering Program, University of Colorado Boulder, Boulder, CO, 80303 USA",
           "The BioFrontiers Institute, University of Colorado Boulder, Boulder, CO, 80303 USA"
         ]
       }
@@ -277891,8 +278019,8 @@
           "Fujian Science &amp; Technology Innovation Laboratory for Optoelectronic Information of China  Fuzhou Fujian 350002 P. R. China",
           "State Key Laboratory of Structural Chemistry Fujian Institute of Research on the Structure of Matter Chinese Academy of Sciences  155 Yangqiao West Road Fuzhou Fujian 350002 P. R. China",
           "University of Chinese Academy of Sciences  19A Yuquan Road Beijing 100049 P. R. China",
-          "University of Chinese Academy of Sciences, 19A Yuquan Road, Beijing, 100049 P. R. China",
           "State Key Laboratory of Structural Chemistry, Fujian Institute of Research on the Structure of Matter, Chinese Academy of Sciences, 155 Yangqiao West Road, Fuzhou, Fujian, 350002 P. R. China",
+          "University of Chinese Academy of Sciences, 19A Yuquan Road, Beijing, 100049 P. R. China",
           "Fujian Science &amp; Technology Innovation Laboratory for Optoelectronic Information of China Fuzhou Fujian 350002 P. R. China"
         ]
       }
@@ -278995,8 +279123,8 @@
         "raw_affiliation_strings": [
           "School of Mechanical Engineering, Xi’an Jiaotong University, Xi’an 710054, China",
           "The State Key Laboratory for Manufacturing Systems Engineering, Xi’an Jiaotong University, Xi’an 710049, China",
-          "The State Key Laboratory for Manufacturing Systems Engineering, Xi'an Jiaotong University, Xi'an 710049, China",
-          "School of Mechanical Engineering, Xi'an Jiaotong University, Xi'an 710054, China"
+          "School of Mechanical Engineering, Xi'an Jiaotong University, Xi'an 710054, China",
+          "The State Key Laboratory for Manufacturing Systems Engineering, Xi'an Jiaotong University, Xi'an 710049, China"
         ]
       },
       {
@@ -279017,9 +279145,9 @@
           "National Innovation Institute of Additive Manufacturing, No. 997, Shanglinyuan 8th Road, Gaoxin District, Xi’an 710300, China",
           "School of Mechanical Engineering, Xi’an Jiaotong University, Xi’an 710054, China",
           "The State Key Laboratory for Manufacturing Systems Engineering, Xi’an Jiaotong University, Xi’an 710049, China",
-          "The State Key Laboratory for Manufacturing Systems Engineering, Xi'an Jiaotong University, Xi'an 710049, China",
           "National Innovation Institute of Additive Manufacturing, No. 997, Shanglinyuan 8th Road, Gaoxin District, Xi'an 710300, China",
-          "School of Mechanical Engineering, Xi'an Jiaotong University, Xi'an 710054, China"
+          "School of Mechanical Engineering, Xi'an Jiaotong University, Xi'an 710054, China",
+          "The State Key Laboratory for Manufacturing Systems Engineering, Xi'an Jiaotong University, Xi'an 710049, China"
         ]
       }
     ],
@@ -280811,8 +280939,8 @@
         "raw_affiliation_strings": [
           "Key Laboratory of Railway Industry on Safety Service Key Technologies for High-speed Train, Dalian Jiaotong University, Dalian, People’s Republic of China",
           "School of Locomotive and Rolling Stock Engineering, Dalian Jiaotong University, Dalian, People’s Republic of China",
-          "School of Locomotive and Rolling Stock Engineering, Dalian Jiaotong University, Dalian, People's Republic of China",
-          "Key Laboratory of Railway Industry on Safety Service Key Technologies for High-speed Train, Dalian Jiaotong University, Dalian, People's Republic of China"
+          "Key Laboratory of Railway Industry on Safety Service Key Technologies for High-speed Train, Dalian Jiaotong University, Dalian, People's Republic of China",
+          "School of Locomotive and Rolling Stock Engineering, Dalian Jiaotong University, Dalian, People's Republic of China"
         ]
       },
       {
@@ -280832,8 +280960,8 @@
         "raw_affiliation_strings": [
           "Key Laboratory of Railway Industry on Safety Service Key Technologies for High-speed Train, Dalian Jiaotong University, Dalian, People’s Republic of China",
           "School of Locomotive and Rolling Stock Engineering, Dalian Jiaotong University, Dalian, People’s Republic of China",
-          "Key Laboratory of Railway Industry on Safety Service Key Technologies for High-speed Train, Dalian Jiaotong University, Dalian, People's Republic of China",
-          "School of Locomotive and Rolling Stock Engineering, Dalian Jiaotong University, Dalian, People's Republic of China"
+          "School of Locomotive and Rolling Stock Engineering, Dalian Jiaotong University, Dalian, People's Republic of China",
+          "Key Laboratory of Railway Industry on Safety Service Key Technologies for High-speed Train, Dalian Jiaotong University, Dalian, People's Republic of China"
         ]
       }
     ],
@@ -282547,10 +282675,10 @@
           "CityU‐Shenzhen Futian Research Institute  Shenzhen China",
           "Department of Mechanical Engineering City University of Hong Kong  Hong Kong China",
           "Laboratory of Nanomaterials &amp; Nanomechanics City University of Hong Kong  Hong Kong China",
-          "Centre for Advanced Structural Materials, City University of Hong Kong Shenzhen Research Institute, Greater Bay Joint Division, Shenyang National Laboratory for Materials Science, Shenzhen, China",
-          "CityU-Shenzhen Futian Research Institute, Shenzhen, China",
           "Laboratory of Nanomaterials &amp; Nanomechanics City University of Hong Kong Hong Kong China",
-          "Department of Mechanical Engineering, City University of Hong Kong, Hong Kong, China"
+          "Department of Mechanical Engineering, City University of Hong Kong, Hong Kong, China",
+          "CityU-Shenzhen Futian Research Institute, Shenzhen, China",
+          "Centre for Advanced Structural Materials, City University of Hong Kong Shenzhen Research Institute, Greater Bay Joint Division, Shenyang National Laboratory for Materials Science, Shenzhen, China"
         ]
       }
     ],
@@ -288844,8 +288972,8 @@
         "raw_affiliation_strings": [
           "School of Materials Science and Engineering Nanyang Technological University  Singapore 639798 Singapore",
           "Temasek Laboratories Nanyang Technological University  Singapore 637553 Singapore",
-          "School of Materials Science and Engineering, Nanyang Technological University, Singapore, 639798 Singapore",
-          "Temasek Laboratories, Nanyang Technological University, Singapore, 637553 Singapore"
+          "Temasek Laboratories, Nanyang Technological University, Singapore, 637553 Singapore",
+          "School of Materials Science and Engineering, Nanyang Technological University, Singapore, 639798 Singapore"
         ]
       },
       {
@@ -289252,9 +289380,9 @@
           "Core Facility Center National Cheng Kung University  Tainan 70101 Taiwan",
           "Department of Chemical Engineering National Cheng Kung University  Tainan 70101 Taiwan",
           "Program on Smart and Sustainable Manufacturing, Academy of Innovative Semiconductor and Sustainable Manufacturing National Cheng Kung University  Tainan 70101 Taiwan",
-          "Department of Chemical Engineering, National Cheng Kung University, Tainan, 70101 Taiwan",
+          "Program on Smart and Sustainable Manufacturing, Academy of Innovative Semiconductor and Sustainable Manufacturing, National Cheng Kung University, Tainan, 70101 Taiwan",
           "Core Facility Center, National Cheng Kung University, Tainan, 70101 Taiwan",
-          "Program on Smart and Sustainable Manufacturing, Academy of Innovative Semiconductor and Sustainable Manufacturing, National Cheng Kung University, Tainan, 70101 Taiwan"
+          "Department of Chemical Engineering, National Cheng Kung University, Tainan, 70101 Taiwan"
         ]
       }
     ],
@@ -293107,8 +293235,8 @@
         "raw_affiliation_strings": [
           "Rewable Bioproduct Institute Georgia Institute of Technology  Atlanta GA 30332 USA",
           "The George W. Woodruff School of Mechanical Engineering Georgia Institute of Technology  Atlanta GA 30332 USA",
-          "Rewable Bioproduct Institute, Georgia Institute of Technology, Atlanta, GA, 30332 USA",
-          "The George W. Woodruff School of Mechanical Engineering, Georgia Institute of Technology, Atlanta, GA, 30332 USA"
+          "The George W. Woodruff School of Mechanical Engineering, Georgia Institute of Technology, Atlanta, GA, 30332 USA",
+          "Rewable Bioproduct Institute, Georgia Institute of Technology, Atlanta, GA, 30332 USA"
         ]
       }
     ],
@@ -294512,9 +294640,9 @@
         ]
       },
       {
-        "name": "Bo Li",
-        "openalex_author_id": "https://openalex.org/A5100628411",
-        "orcid": "https://orcid.org/0000-0001-5633-936X",
+        "name": "Ying Li",
+        "openalex_author_id": null,
+        "orcid": null,
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -301972,8 +302100,8 @@
         "raw_affiliation_strings": [
           "Institute for Molecular Systems Engineering and Advanced Materials Heidelberg University  69120 Heidelberg Germany",
           "Institute of Organic Chemistry Heidelberg University  69120 Heidelberg Germany",
-          "Institute for Molecular Systems Engineering and Advanced Materials, Heidelberg University, 69120 Heidelberg, Germany",
-          "Institute of Organic Chemistry, Heidelberg University, 69120 Heidelberg, Germany"
+          "Institute of Organic Chemistry, Heidelberg University, 69120 Heidelberg, Germany",
+          "Institute for Molecular Systems Engineering and Advanced Materials, Heidelberg University, 69120 Heidelberg, Germany"
         ]
       },
       {
@@ -301993,8 +302121,8 @@
         "raw_affiliation_strings": [
           "Institute for Molecular Systems Engineering and Advanced Materials Heidelberg University  69120 Heidelberg Germany",
           "Institute of Organic Chemistry Heidelberg University  69120 Heidelberg Germany",
-          "Institute for Molecular Systems Engineering and Advanced Materials, Heidelberg University, 69120 Heidelberg, Germany",
-          "Institute of Organic Chemistry, Heidelberg University, 69120 Heidelberg, Germany"
+          "Institute of Organic Chemistry, Heidelberg University, 69120 Heidelberg, Germany",
+          "Institute for Molecular Systems Engineering and Advanced Materials, Heidelberg University, 69120 Heidelberg, Germany"
         ]
       }
     ],
@@ -303567,8 +303695,8 @@
         "raw_affiliation_strings": [
           "National Key Laboratory of Strength and Structural Integrity, Xi'an, People’s Republic of China",
           "School of Aeronautics, Northwestern Polytechnical University, Xi'an, People’s Republic of China",
-          "National Key Laboratory of Strength and Structural Integrity, Xi'an, People's Republic of China",
-          "School of Aeronautics, Northwestern Polytechnical University, Xi'an, People's Republic of China"
+          "School of Aeronautics, Northwestern Polytechnical University, Xi'an, People's Republic of China",
+          "National Key Laboratory of Strength and Structural Integrity, Xi'an, People's Republic of China"
         ]
       },
       {
@@ -304656,8 +304784,8 @@
         "raw_affiliation_strings": [
           "Digital Manufacturing and Design Centre Singapore University of Technology and Design  8 Somapah Road Singapore 487372 Singapore",
           "Singapore‐HUJ Alliance for Research and Enterprise (SHARE) The Smart Grippers for Soft Robotics (SGSR) Programme Campus for Research Excellence and Technological Enterprise (CREATE)  Singapore 138602 Singapore",
-          "Singapore-HUJ Alliance for Research and Enterprise (SHARE), The Smart Grippers for Soft Robotics (SGSR) Programme, Campus for Research Excellence and Technological Enterprise (CREATE), Singapore, 138602 Singapore",
-          "Digital Manufacturing and Design Centre, Singapore University of Technology and Design, 8 Somapah Road, Singapore, 487372 Singapore"
+          "Digital Manufacturing and Design Centre, Singapore University of Technology and Design, 8 Somapah Road, Singapore, 487372 Singapore",
+          "Singapore-HUJ Alliance for Research and Enterprise (SHARE), The Smart Grippers for Soft Robotics (SGSR) Programme, Campus for Research Excellence and Technological Enterprise (CREATE), Singapore, 138602 Singapore"
         ]
       },
       {
@@ -304696,9 +304824,9 @@
           "Casali Center for Applied Chemistry Institute of Chemistry The Hebrew University of Jerusalem  Jerusalem 91904 Israel",
           "School of Materials Science and Engineering Nanyang Technological University  Singapore 639798 Singapore",
           "Singapore‐HUJ Alliance for Research and Enterprise (SHARE) The Smart Grippers for Soft Robotics (SGSR) Programme Campus for Research Excellence and Technological Enterprise (CREATE)  Singapore 138602 Singapore",
-          "School of Materials Science and Engineering, Nanyang Technological University, Singapore, 639798 Singapore",
+          "Singapore-HUJ Alliance for Research and Enterprise (SHARE), The Smart Grippers for Soft Robotics (SGSR) Programme, Campus for Research Excellence and Technological Enterprise (CREATE), Singapore, 138602 Singapore",
           "Casali Center for Applied Chemistry, Institute of Chemistry, The Hebrew University of Jerusalem, Jerusalem, 91904 Israel",
-          "Singapore-HUJ Alliance for Research and Enterprise (SHARE), The Smart Grippers for Soft Robotics (SGSR) Programme, Campus for Research Excellence and Technological Enterprise (CREATE), Singapore, 138602 Singapore"
+          "School of Materials Science and Engineering, Nanyang Technological University, Singapore, 639798 Singapore"
         ]
       }
     ],
@@ -306438,15 +306566,15 @@
           "School of Mechanical Engineering, Xi'an Jiaotong University, Xi'an, People’s Republic of China",
           "State Key Laboratory for Manufacturing System Engineering, Xi'an Jiaotong University, Xi'an, People’s Republic of China",
           "Engineering Technology Research Center for Rapid Manufacturing of Shaanxi Province, Xi'an Jiaotong University, Xi'an, People's Republic of China",
-          "School of Mechanical Engineering, Xi'an Jiaotong University, Xi'an, People's Republic of China",
-          "State Key Laboratory for Manufacturing System Engineering, Xi'an Jiaotong University, Xi'an, People's Republic of China"
+          "State Key Laboratory for Manufacturing System Engineering, Xi'an Jiaotong University, Xi'an, People's Republic of China",
+          "School of Mechanical Engineering, Xi'an Jiaotong University, Xi'an, People's Republic of China"
         ]
       },
       {
         "name": "Ling Wang",
         "openalex_author_id": "https://openalex.org/A5115592675",
         "orcid": "https://orcid.org/0000-0002-5176-7469",
-        "position": "middle",
+        "position": "last",
         "is_corresponding": true,
         "institutions": [
           {
@@ -307483,8 +307611,8 @@
         "raw_affiliation_strings": [
           "Key Laboratory of Additive Manufacturing and Applications in Universities of Shandong Qingdao University of Technology  Qingdao 266520 China",
           "Shandong Engineering Research Center for Additive Manufacturing Qingdao University of Technology  Qingdao 266520 China",
-          "Shandong Engineering Research Center for Additive Manufacturing, Qingdao University of Technology, Qingdao, 266520 China",
-          "Key Laboratory of Additive Manufacturing and Applications in Universities of Shandong, Qingdao University of Technology, Qingdao, 266520 China"
+          "Key Laboratory of Additive Manufacturing and Applications in Universities of Shandong, Qingdao University of Technology, Qingdao, 266520 China",
+          "Shandong Engineering Research Center for Additive Manufacturing, Qingdao University of Technology, Qingdao, 266520 China"
         ]
       }
     ],
