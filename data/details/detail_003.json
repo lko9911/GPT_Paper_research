@@ -1,4 +1,125 @@
 {
+  "10.1080/17452759.2025.2457580": {
+    "author_details": [
+      {
+        "name": "Shidhin Mappoli",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Brno University of Technology (CEITEC-BUT)"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Brno University of Technology (CEITEC-BUT)"
+        ]
+      },
+      {
+        "name": "Kalyan Ghosh",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Brno University of Technology (CEITEC-BUT)"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Brno University of Technology (CEITEC-BUT)"
+        ]
+      },
+      {
+        "name": "Martin Pumera",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Brno University of Technology (CEITEC-BUT)"
+          },
+          {
+            "name": "Energy Research Institute@NTU (ERI@N), Research Techno Plaza"
+          },
+          {
+            "name": "VSB – Technical University of Ostrava"
+          },
+          {
+            "name": "China Medical University Hospital, China Medical University"
+          },
+          {
+            "name": "Yonsei University"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Brno University of Technology (CEITEC-BUT)",
+          "Energy Research Institute@NTU (ERI@N), Research Techno Plaza",
+          "VSB – Technical University of Ostrava",
+          "China Medical University Hospital, China Medical University",
+          "Yonsei University"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "1745-2759",
+      "1745-2767"
+    ],
+    "issn_l": "",
+    "publisher": "Informa UK Limited",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4408415883",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S152936027",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S152936027",
+      "issn_l": "1745-2759",
+      "issn": [
+        "1745-2759",
+        "1745-2767"
+      ],
+      "type": "journal",
+      "host_organization_name": "Taylor & Francis",
+      "works_count": 1288,
+      "cited_by_count": 39605,
+      "two_year_mean_citedness": 10.10738255033557,
+      "h_index": 92,
+      "i10_index": 718,
+      "is_core": true,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 10.10738255033557,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - The study focuses on the development of smart floor tiles that integrate energy generation and security monitoring capabilities.\n2. Problem - There is a growing need for efficient and self-sustaining sensors in smart home systems, but traditional fabrication methods for energy harvesting devices are complex and time-consuming.\n3. Method - A novel multi-material 3D printing technique is employed to create a triboelectric nanogenerator (TENG) in a single step, utilizing various specialized filaments for different components.\n4. Key Result - The resulting MMP-TENG device successfully integrates with electronics for real-time monitoring applications, such as fall detection and security in smart homes.\n5. Takeaway - This research demonstrates the potential of 3D printed smart tiles for enhancing energy efficiency and security in modern smart buildings.",
+    "relevance_note_en": "The summary captures the essence of the research, highlighting the innovative approach and its implications for smart home technology.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-07-29",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1080/17452759.2025.2457580"
+  },
   "10.1002/advs.202503694": {
     "author_details": [
       {
@@ -4143,8 +4264,8 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-07-28",
-    "not_seen_in_latest_crossref_run": true,
+    "last_seen_in_crossref_run": "2026-07-29",
+    "not_seen_in_latest_crossref_run": false,
     "id": "10.1126/sciadv.adv2169"
   },
   "10.1007/s00366-025-02130-2": {
@@ -20377,7 +20498,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "last_seen_in_crossref_run": "2026-07-29",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "id": "10.1016/j.smaim.2025.09.001"
   },
   "10.1089/3dp.2024.0059": {
@@ -33831,176 +33952,5 @@
     "last_seen_in_crossref_run": "2026-07-29",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/adfm.202413965"
-  },
-  "10.1021/acsami.5c13996": {
-    "author_details": [
-      {
-        "name": "Sophie Paul",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Mechanical Engineering"
-          },
-          {
-            "name": "University of California, Santa Barbara"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical Engineering",
-          "University of California, Santa Barbara"
-        ]
-      },
-      {
-        "name": "Jesus Guillen Campos",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Chemistry and Biochemistry"
-          },
-          {
-            "name": "University of California, Santa Barbara"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Chemistry and Biochemistry",
-          "University of California, Santa Barbara"
-        ]
-      },
-      {
-        "name": "Michael J. Ford",
-        "orcid": "https://orcid.org/0000-0001-7118-2479",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Materials Science Division"
-          },
-          {
-            "name": "Lawrence Livermore National Laboratory"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Materials Science Division",
-          "Lawrence Livermore National Laboratory"
-        ]
-      },
-      {
-        "name": "Arnab Nandi",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Chemistry and Biochemistry"
-          },
-          {
-            "name": "University of California, Santa Barbara"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Chemistry and Biochemistry",
-          "University of California, Santa Barbara"
-        ]
-      },
-      {
-        "name": "Elliot Hawkes",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Mechanical Engineering"
-          },
-          {
-            "name": "University of California, Santa Barbara"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical Engineering",
-          "University of California, Santa Barbara"
-        ]
-      },
-      {
-        "name": "Javier Read de Alaniz",
-        "orcid": "https://orcid.org/0000-0003-2770-9477",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Chemistry and Biochemistry"
-          },
-          {
-            "name": "University of California, Santa Barbara"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Chemistry and Biochemistry",
-          "University of California, Santa Barbara"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "ACS Applied Materials & Interfaces",
-    "crossref_target_issn": "1944-8244",
-    "issn": [
-      "1944-8244",
-      "1944-8252"
-    ],
-    "issn_l": "",
-    "publisher": "American Chemical Society (ACS)",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4415681681",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S164001016",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S164001016",
-      "issn_l": "1944-8244",
-      "issn": [
-        "1944-8244",
-        "1944-8252"
-      ],
-      "type": "journal",
-      "host_organization_name": "American Chemical Society",
-      "works_count": 69722,
-      "cited_by_count": 3298786,
-      "two_year_mean_citedness": 7.780907972281588,
-      "h_index": 372,
-      "i10_index": 53076,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 7.780907972281588,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 1",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The study focuses on enhancing 3D-printed liquid crystal elastomers (LCEs) using donor-acceptor Stenhouse adducts (DASAs).\n2. Problem - Challenges include DASA's sensitivity to heat and radicals during printing, and the need for reoptimization of ink formulations due to concentration variations.\n3. Method - A post-printing functionalization technique is introduced, utilizing residual secondary amines for covalent attachment of DASAs to the printed LCEs.\n4. Key Result - This method allows for the creation of DASA-LCEs with tunable properties and rapid functionalization, enabling spatial control over DASA concentration.\n5. Takeaway - The approach facilitates the production of complex, light-responsive LCEs without altering established 3D printing processes.",
-    "relevance_note_en": "The summary captures the core contributions and findings of the research while maintaining clarity and conciseness.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-07-29",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1021/acsami.5c13996"
   }
 }
