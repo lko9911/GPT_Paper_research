@@ -27911,9 +27911,28 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Sungchul Jee",
+        "openalex_author_id": "https://openalex.org/A5047942958",
+        "orcid": "https://orcid.org/0000-0003-0610-0590",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Dankook University",
+            "ror": "https://ror.org/058pdbn81",
+            "country_code": "KR",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering, Dankook University, Yongin, 16890, Republic of Korea"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "The International Journal of Advanced Manufacturing Technology",
     "doi": "10.1007/s00170-026-18746-7",
@@ -27933,8 +27952,8 @@
     "issn_l": "",
     "publisher": "Springer Science and Business Media LLC",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7171793410",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S77056576",
     "venue_metrics": {
@@ -38568,9 +38587,46 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Huiwen Xiong",
+        "openalex_author_id": "https://openalex.org/A5135569395",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Central South University",
+            "ror": "https://ror.org/00f1zfq44",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "State Key Laboratory of Powder Metallurgy, Central South University, Changsha, Hunan, 410083, China"
+        ]
+      },
+      {
+        "name": "Kang Xiao",
+        "openalex_author_id": "https://openalex.org/A5033388228",
+        "orcid": "https://orcid.org/0000-0002-7666-2460",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Central South University",
+            "ror": "https://ror.org/00f1zfq44",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "State Key Laboratory of Powder Metallurgy, Central South University, Changsha, Hunan, 410083, China"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Journal of Manufacturing Processes",
     "doi": "10.1016/j.jmapro.2026.05.019",
@@ -38589,8 +38645,8 @@
     "issn_l": "",
     "publisher": "Elsevier BV",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7160508914",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S120037611",
     "venue_metrics": {
@@ -52268,9 +52324,9 @@
     ],
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Progress in Additive Manufacturing",
+    "crossref_target_issn": "2363-9512",
     "issn": [
       "2363-9512",
       "2363-9520"
@@ -72703,9 +72759,60 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Chengjun Wang",
+        "openalex_author_id": "https://openalex.org/A5123561958",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "First Affiliated Hospital Zhejiang University",
+            "ror": "https://ror.org/05m1p5x56",
+            "country_code": "CN",
+            "type": "healthcare"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Huanjiang Laboratory State Key Laboratory of Brain‐Machine Intelligence The First Affiliated Hospital School of Medicine Zhejiang University  Zhejiang China"
+        ]
+      },
+      {
+        "name": "Jizhou Song",
+        "openalex_author_id": "https://openalex.org/A5079655750",
+        "orcid": "https://orcid.org/0000-0003-2821-9429",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Zhejiang University of Science and Technology",
+            "ror": "https://ror.org/05mx0wr29",
+            "country_code": "CN",
+            "type": "education"
+          },
+          {
+            "name": "Interface (United States)",
+            "ror": "https://ror.org/04nvtmr42",
+            "country_code": "US",
+            "type": "company"
+          },
+          {
+            "name": "First Affiliated Hospital Zhejiang University",
+            "ror": "https://ror.org/05m1p5x56",
+            "country_code": "CN",
+            "type": "healthcare"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Engineering Mechanics Key Laboratory of Soft Machines and Smart Devices of Zhejiang Province Zhejiang University  Zhejiang China",
+          "Huanjiang Laboratory State Key Laboratory of Brain‐Machine Intelligence The First Affiliated Hospital School of Medicine Zhejiang University  Zhejiang China",
+          "Nanhu Brain‐Computer Interface Institute  Zhejiang China"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Advanced Materials",
     "doi": "10.1002/adma.74397",
@@ -72725,8 +72832,8 @@
     "issn_l": "",
     "publisher": "Wiley",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7171808321",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S99352657",
     "venue_metrics": {
@@ -158669,7 +158776,7 @@
     "last_updated": "2026-07-31",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-07-31",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 11.943181818181818,
@@ -179839,7 +179946,7 @@
     "last_updated": "2026-07-31",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-07-31",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 5.821917808219178,
@@ -184158,10 +184265,10 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-24",
-    "last_updated": "2026-07-30",
+    "last_updated": "2026-07-31",
     "is_weekly_new": false,
-    "last_seen_in_crossref_run": "2026-07-30",
-    "not_seen_in_latest_crossref_run": true,
+    "last_seen_in_crossref_run": "2026-07-31",
+    "not_seen_in_latest_crossref_run": false,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 3.7044257112750265,
@@ -253620,9 +253727,28 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "C. T. Duarte",
+        "openalex_author_id": "https://openalex.org/A5104125020",
+        "orcid": null,
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Federal Center for Technological Education Celso Suckow da Fonseca",
+            "ror": "https://ror.org/03j8tnm47",
+            "country_code": "BR",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Federal Center for Technological Education Celso Suckow da Fonseca, Av. Maracanã 229, 20271-110, Rio de Janeiro, RJ, Brazil"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2024,
     "venue": "Procedia Structural Integrity",
     "doi": "10.1016/j.prostr.2024.01.037",
@@ -253641,8 +253767,8 @@
     "issn_l": "",
     "publisher": "Elsevier BV",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4391690310",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2764766352",
     "venue_metrics": {
@@ -271185,13 +271311,54 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Minardi Hono",
-        "openalex_author_id": "https://openalex.org/A5087646838",
-        "orcid": null,
-        "position": "first",
+        "name": "Biao Ma",
+        "openalex_author_id": "https://openalex.org/A5058961125",
+        "orcid": "https://orcid.org/0000-0002-6387-0957",
+        "position": "middle",
         "is_corresponding": true,
-        "institutions": [],
-        "raw_affiliation_strings": []
+        "institutions": [
+          {
+            "name": "State Key Laboratory of Digital Medical Engineering",
+            "ror": "https://ror.org/03ab0at74",
+            "country_code": "CN",
+            "type": "facility"
+          },
+          {
+            "name": "Southeast University",
+            "ror": "https://ror.org/04ct4d772",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "State Key Laboratory of Digital Medical Engineering School of Biological Science and Medical Engineering Southeast University  Nanjing 210096 China",
+          "State Key Laboratory of Digital Medical Engineering, School of Biological Science and Medical Engineering, Southeast University, Nanjing, 210096 China"
+        ]
+      },
+      {
+        "name": "Hong Liu",
+        "openalex_author_id": "https://openalex.org/A5100410341",
+        "orcid": "https://orcid.org/0000-0002-9841-1603",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "State Key Laboratory of Digital Medical Engineering",
+            "ror": "https://ror.org/03ab0at74",
+            "country_code": "CN",
+            "type": "facility"
+          },
+          {
+            "name": "Southeast University",
+            "ror": "https://ror.org/04ct4d772",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "State Key Laboratory of Digital Medical Engineering School of Biological Science and Medical Engineering Southeast University  Nanjing 210096 China",
+          "State Key Laboratory of Digital Medical Engineering, School of Biological Science and Medical Engineering, Southeast University, Nanjing, 210096 China"
+        ]
       }
     ],
     "corresponding_author_available": true,
@@ -271216,7 +271383,7 @@
     "publisher": "Wiley",
     "openalex_checked": true,
     "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W38447146",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4392504494",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2737737698",
     "venue_metrics": {
