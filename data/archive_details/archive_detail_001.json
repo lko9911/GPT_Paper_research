@@ -1,4 +1,72 @@
 {
+  "10.21741/9781644903735-65": {
+    "author_details": [
+      {
+        "name": "Gabriele Marabello",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "proceedings-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2474-395X"
+    ],
+    "issn_l": "",
+    "publisher": "Materials Research Forum LLC",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4413351550",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S4210218293",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210218293",
+      "issn_l": "2474-3941",
+      "issn": [
+        "2474-3941",
+        "2474-395X"
+      ],
+      "type": "journal",
+      "host_organization_name": null,
+      "works_count": 3940,
+      "cited_by_count": 4614,
+      "two_year_mean_citedness": 0.562753036437247,
+      "h_index": 19,
+      "i10_index": 49,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 0.562753036437247,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 4",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "conference/proceedings not in trusted allowlist",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The study focuses on the design and testing of functionally graded sandwich structures using TPMS cores.\n2. Problem - There is a need for lightweight structures that maintain high mechanical performance and strength-to-weight ratios.\n3. Method - A Field-Driven Design approach was employed to create these structures, which were then fabricated using Material Extrusion techniques.\n4. Key Result - Mechanical tests indicated that functional gradients enhance mechanical efficiency, especially at higher fill percentages, with strength improvements of up to 55% over uniform structures.\n5. Takeaway - Identifying the critical fill percentage threshold for effective gradient application offers valuable insights for optimizing TPMS-based sandwich structures.",
+    "relevance_note_en": "The paper presents significant advancements in the design and performance of TPMS-based structures, relevant to lightweight applications.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "id": "10.21741/9781644903735-65"
+  },
   "10.1115/imece-india2025-161262": {
     "author_details": [
       {
@@ -19894,75 +19962,5 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "id": "10.1364/dh.2024.w5b.5"
-  },
-  "10.1117/12.3008459": {
-    "author_details": [
-      {
-        "name": "Chi Chung Li",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Joseph T. Toombs",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Hayden K. Taylor",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Thomas J. Wallin",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
-    "metadata_source": "crossref",
-    "crossref_type": "proceedings-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [],
-    "issn_l": "",
-    "publisher": "SPIE",
-    "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "https://openalex.org/W4392691844",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "venue_trust_reason": "conference/proceedings not in trusted allowlist",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - Generalized projection optimization model for tomographic volumetric additive manufacturing is a 2024 paper from Advanced Fabrication Technologies for Micro/Nano Optics and Photonics XVII about Volumetric AM.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Volumetric AM.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Volumetric AM; current relevance score is 5/10.",
-    "relevance_note_en": "Relevant to the tracker through Volumetric AM; score: 5/10.",
-    "abstract_used_for_summary": false,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "id": "10.1117/12.3008459"
   }
 }
