@@ -160916,9 +160916,46 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Ningji Wei",
+        "openalex_author_id": "https://openalex.org/A5064878667",
+        "orcid": "https://orcid.org/0000-0002-2045-0979",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Texas Tech University",
+            "ror": "https://ror.org/0405mnx93",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Industrial, Manufacturing and Systems Engineering, Texas Tech University, Lubbock, TX 79409, USA"
+        ]
+      },
+      {
+        "name": "Minxiang Zeng",
+        "openalex_author_id": "https://openalex.org/A5023724066",
+        "orcid": "https://orcid.org/0000-0002-3513-9200",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Texas Tech University",
+            "ror": "https://ror.org/0405mnx93",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Chemical Engineering, Texas Tech University, Lubbock, TX 79409, USA"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2025,
     "venue": "Additive Manufacturing",
     "doi": "10.1016/j.addma.2024.104609",
@@ -160937,8 +160974,8 @@
     "issn_l": "",
     "publisher": "Elsevier BV",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4405398452",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2764842179",
     "venue_metrics": {
@@ -185076,7 +185113,7 @@
     "last_updated": "2026-08-03",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-08-03",
-    "not_seen_in_latest_crossref_run": true,
+    "not_seen_in_latest_crossref_run": false,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 3.7044257112750265,
@@ -197806,10 +197843,10 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-24",
-    "last_updated": "2026-08-02",
+    "last_updated": "2026-08-03",
     "is_weekly_new": false,
-    "last_seen_in_crossref_run": "2026-08-02",
-    "not_seen_in_latest_crossref_run": true,
+    "last_seen_in_crossref_run": "2026-08-03",
+    "not_seen_in_latest_crossref_run": false,
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 7.721680420105026,
@@ -225551,9 +225588,9 @@
     ],
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "International Journal of Advanced Manufacturing Technology",
-    "crossref_target_issn": "0268-3768",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
     "issn": [
       "0268-3768",
       "1433-3015"
@@ -242988,9 +243025,28 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "P. Miranzo",
+        "openalex_author_id": "https://openalex.org/A5058136682",
+        "orcid": "https://orcid.org/0000-0001-7795-7706",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Instituto de Cerámica y Vidrio",
+            "ror": "https://ror.org/02h7vfp25",
+            "country_code": "ES",
+            "type": "facility"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Institute of Ceramics and Glass (ICV-CSIC), Kelsen 5, 28049, Madrid, Spain"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2024,
     "venue": "Additive Manufacturing",
     "doi": "10.1016/j.addma.2024.104018",
@@ -243009,8 +243065,8 @@
     "issn_l": "",
     "publisher": "Elsevier BV",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4391508562",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2764842179",
     "venue_metrics": {
@@ -298789,9 +298845,9 @@
     ],
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "Additive Manufacturing",
-    "crossref_target_issn": "2214-8604",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
     "issn": [
       "2214-8604"
     ],
