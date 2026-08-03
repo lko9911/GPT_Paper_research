@@ -1,4 +1,614 @@
 {
+  "10.1038/s41467-024-48159-7": {
+    "author_details": [
+      {
+        "name": "Kyle C. H. Chin",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Grant Ovsepyan",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Andrew J. Boydston",
+        "orcid": "https://orcid.org/0000-0001-7192-4903",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2041-1723"
+    ],
+    "issn_l": "",
+    "publisher": "Springer Science and Business Media LLC",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4396746035",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S64187185",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S64187185",
+      "issn_l": "2041-1723",
+      "issn": [
+        "2041-1723"
+      ],
+      "type": "journal",
+      "host_organization_name": "Nature Portfolio",
+      "works_count": 90441,
+      "cited_by_count": 7551319,
+      "two_year_mean_citedness": 16.130086313193587,
+      "h_index": 743,
+      "i10_index": 68559,
+      "is_core": true,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
+    "journal_quality": {
+      "label": "High-impact general journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 16.130086313193587,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - The study focuses on dual wavelength vat photopolymerization for 3D printing multi-color objects.\n2. Problem - Existing methods for creating multimaterial objects have limited property ranges.\n3. Method - The researchers utilized a photoacid generator with pH responsive dyes to control color through local acidity, using both visible and UV light.\n4. Key Result - This approach enabled the successful 3D printing of vibrant multi-color objects from a single resin vat.\n5. Takeaway - The technique allows for enhanced color and pattern diversity in 3D printed materials through controlled light exposure.",
+    "relevance_note_en": "The summary captures the essence of the research on multi-color 3D printing using dual wavelength techniques.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-08-03",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1038/s41467-024-48159-7"
+  },
+  "10.1002/adma.202309026": {
+    "author_details": [
+      {
+        "name": "Morgan B. Riffe",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Material Science and Engineering Program College of Engineering and Applied Science University of Colorado Boulder  Boulder CO 80303 USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Material Science and Engineering Program College of Engineering and Applied Science University of Colorado Boulder  Boulder CO 80303 USA"
+        ]
+      },
+      {
+        "name": "Matthew D. Davidson",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "BioFrontiers Institute University of Colorado Boulder  Boulder CO 80303 USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "BioFrontiers Institute University of Colorado Boulder  Boulder CO 80303 USA"
+        ]
+      },
+      {
+        "name": "Gabriel Seymour",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Electrical, Computer, and Energy Engineering College of Engineering and Applied Science University of Colorado Boulder  Boulder CO 80303 USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Electrical, Computer, and Energy Engineering College of Engineering and Applied Science University of Colorado Boulder  Boulder CO 80303 USA"
+        ]
+      },
+      {
+        "name": "Abhishek P. Dhand",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Bioengineering School of Engineering and Applied Sciences University of Pennsylvania  Philadelphia PA 19104 USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Bioengineering School of Engineering and Applied Sciences University of Pennsylvania  Philadelphia PA 19104 USA"
+        ]
+      },
+      {
+        "name": "Megan E. Cooke",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "BioFrontiers Institute University of Colorado Boulder  Boulder CO 80303 USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "BioFrontiers Institute University of Colorado Boulder  Boulder CO 80303 USA"
+        ]
+      },
+      {
+        "name": "Hannah M. Zlotnick",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "BioFrontiers Institute University of Colorado Boulder  Boulder CO 80303 USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "BioFrontiers Institute University of Colorado Boulder  Boulder CO 80303 USA"
+        ]
+      },
+      {
+        "name": "Robert R. McLeod",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Material Science and Engineering Program College of Engineering and Applied Science University of Colorado Boulder  Boulder CO 80303 USA"
+          },
+          {
+            "name": "Department of Electrical, Computer, and Energy Engineering College of Engineering and Applied Science University of Colorado Boulder  Boulder CO 80303 USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Material Science and Engineering Program College of Engineering and Applied Science University of Colorado Boulder  Boulder CO 80303 USA",
+          "Department of Electrical, Computer, and Energy Engineering College of Engineering and Applied Science University of Colorado Boulder  Boulder CO 80303 USA"
+        ]
+      },
+      {
+        "name": "Jason A. Burdick",
+        "orcid": "https://orcid.org/0000-0002-2006-332X",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Material Science and Engineering Program College of Engineering and Applied Science University of Colorado Boulder  Boulder CO 80303 USA"
+          },
+          {
+            "name": "BioFrontiers Institute University of Colorado Boulder  Boulder CO 80303 USA"
+          },
+          {
+            "name": "Department of Bioengineering School of Engineering and Applied Sciences University of Pennsylvania  Philadelphia PA 19104 USA"
+          },
+          {
+            "name": "Department of Chemical and Biological Engineering College of Engineering and Applied Science University of Colorado Boulder  Boulder CO 80303 USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Material Science and Engineering Program College of Engineering and Applied Science University of Colorado Boulder  Boulder CO 80303 USA",
+          "BioFrontiers Institute University of Colorado Boulder  Boulder CO 80303 USA",
+          "Department of Bioengineering School of Engineering and Applied Sciences University of Pennsylvania  Philadelphia PA 19104 USA",
+          "Department of Chemical and Biological Engineering College of Engineering and Applied Science University of Colorado Boulder  Boulder CO 80303 USA"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Advanced Materials",
+    "crossref_target_issn": "0935-9648",
+    "issn": [
+      "0935-9648",
+      "1521-4095"
+    ],
+    "issn_l": "",
+    "publisher": "Wiley",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4391045014",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S99352657",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S99352657",
+      "issn_l": "0935-9648",
+      "issn": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "type": "journal",
+      "host_organization_name": null,
+      "works_count": 44789,
+      "cited_by_count": 4803689,
+      "two_year_mean_citedness": 21.19633376740459,
+      "h_index": 743,
+      "i10_index": 31001,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "High-impact general journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 21.19633376740459,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - The study focuses on volumetric additive manufacturing (VAM) of hydrogels using gelatin as a sacrificial network.\n2. Problem - Challenges exist in printing soft hydrogel materials from low-viscosity precursors, particularly for multi-material constructs.\n3. Method - The researchers employed gelatin to adjust resin viscosity and utilized it as a suspension bath for printing multi-material constructs with various macromers.\n4. Key Result - Proof-of-concept multi-material constructs were successfully printed, demonstrating controlled hydrogel properties that influence cell behavior.\n5. Takeaway - This approach enhances the capability of VAM for creating complex hydrogel structures with potential applications in tissue engineering.",
+    "relevance_note_en": "The summary captures the essence of the study's focus on VAM and its innovations in hydrogel printing.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-08-03",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1002/adma.202309026"
+  },
+  "10.1109/lsens.2024.3440195": {
+    "author_details": [
+      {
+        "name": "Jose Eduardo Aguilar-Segovia",
+        "orcid": "https://orcid.org/0009-0001-4083-9586",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Universit&#x00E9; Rennes, INSA Rennes, Inria, CNRS, IRISA&#x2014;UMR 6074, Rennes, France"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Universit&#x00E9; Rennes, INSA Rennes, Inria, CNRS, IRISA&#x2014;UMR 6074, Rennes, France"
+        ]
+      },
+      {
+        "name": "Maxime Manzano",
+        "orcid": "https://orcid.org/0009-0001-7535-2663",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Universit&#x00E9; Rennes, INSA Rennes, Inria, CNRS, IRISA&#x2014;UMR 6074, Rennes, France"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Universit&#x00E9; Rennes, INSA Rennes, Inria, CNRS, IRISA&#x2014;UMR 6074, Rennes, France"
+        ]
+      },
+      {
+        "name": "Sylvain Guégan",
+        "orcid": "https://orcid.org/0000-0002-8797-6078",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Universit&#x00E9; Rennes, INSA Rennes, LGCGM, Rennes, France"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Universit&#x00E9; Rennes, INSA Rennes, LGCGM, Rennes, France"
+        ]
+      },
+      {
+        "name": "Ronan Le Breton",
+        "orcid": "https://orcid.org/0000-0002-2663-9983",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Universit&#x00E9; Rennes, INSA Rennes, LGCGM, Rennes, France"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Universit&#x00E9; Rennes, INSA Rennes, LGCGM, Rennes, France"
+        ]
+      },
+      {
+        "name": "Alice Farhi-Rivasseau",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "ENS Rennes, Bruz, France"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "ENS Rennes, Bruz, France"
+        ]
+      },
+      {
+        "name": "Sylvain Lefebvre",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Universit&#x00E9; de Lorraine, CNRS, Inria, LORIA, Nancy, France"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Universit&#x00E9; de Lorraine, CNRS, Inria, LORIA, Nancy, France"
+        ]
+      },
+      {
+        "name": "Marie Babel",
+        "orcid": "https://orcid.org/0000-0001-6425-389X",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Universit&#x00E9; Rennes, INSA Rennes, Inria, CNRS, IRISA&#x2014;UMR 6074, Rennes, France"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Universit&#x00E9; Rennes, INSA Rennes, Inria, CNRS, IRISA&#x2014;UMR 6074, Rennes, France"
+        ]
+      }
+    ],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2475-1472"
+    ],
+    "issn_l": "",
+    "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "https://openalex.org/W4401387019",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S4210220808",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210220808",
+      "issn_l": "2475-1472",
+      "issn": [
+        "2475-1472"
+      ],
+      "type": "journal",
+      "host_organization_name": "Institute of Electrical and Electronics Engineers",
+      "works_count": 3100,
+      "cited_by_count": 21549,
+      "two_year_mean_citedness": 1.9742120343839542,
+      "h_index": 50,
+      "i10_index": 681,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 1.9742120343839542,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 3",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The paper discusses a new type of torque sensor designed for human-robot interaction.\n2. Problem - Existing force/torque sensors are often bulky, expensive, and rigid, limiting their application in soft robotics.\n3. Method - The authors developed a compact torque sensor using one-shot 3D printing of deformable capacitive structures.\n4. Key Result - The sensor can accurately measure torques within a range of ±2.5 N·m with a maximum error of 6% and deformation angles with a maximum error of 0.4°.\n5. Takeaway - This innovative sensor design enhances the potential for precise control in physical human-robot interactions.",
+    "relevance_note_en": "The summary captures the core contributions and findings of the research.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-08-03",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1109/lsens.2024.3440195"
+  },
+  "10.1177/13621718241266702": {
+    "author_details": [
+      {
+        "name": "Jian Han",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "School of Materials Science and Engineering, Tianjin University of Technology, Tianjin, China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Materials Science and Engineering, Tianjin University of Technology, Tianjin, China"
+        ]
+      },
+      {
+        "name": "Meiqing Meng",
+        "orcid": "https://orcid.org/0009-0005-5288-3831",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "School of Materials Science and Engineering, Tianjin University of Technology, Tianjin, China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Materials Science and Engineering, Tianjin University of Technology, Tianjin, China"
+        ]
+      },
+      {
+        "name": "Hongqiang Liu",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "HBIS Materials Technology Research Institute, Hebei, PR China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "HBIS Materials Technology Research Institute, Hebei, PR China"
+        ]
+      },
+      {
+        "name": "Zhengyi Jiang",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "School of Mechanical, Materials, Mechatronic and Biomedical Engineering, Faculty of Engineering and Information Sciences, University of Wollongong, Wollongong, Australia"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Mechanical, Materials, Mechatronic and Biomedical Engineering, Faculty of Engineering and Information Sciences, University of Wollongong, Wollongong, Australia"
+        ]
+      },
+      {
+        "name": "Xiaoxin Zhao",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Research Center of Energy Engineering Advanced Joining Technology, Beijing Institute of Petrochemical Technology, Beijing, China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Research Center of Energy Engineering Advanced Joining Technology, Beijing Institute of Petrochemical Technology, Beijing, China"
+        ]
+      },
+      {
+        "name": "Youwei Xu",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "State Key Laboratory of Advanced Processing and Recycling of Non-ferrous Metals, Lanzhou University of Technology, Lanzhou, PR China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "State Key Laboratory of Advanced Processing and Recycling of Non-ferrous Metals, Lanzhou University of Technology, Lanzhou, PR China"
+        ]
+      },
+      {
+        "name": "Yinbao Tian",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "School of Materials Science and Engineering, Tianjin University of Technology, Tianjin, China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Materials Science and Engineering, Tianjin University of Technology, Tianjin, China"
+        ]
+      },
+      {
+        "name": "Xin Zhang",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "School of Materials Science and Engineering, Tianjin University of Technology, Tianjin, China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Materials Science and Engineering, Tianjin University of Technology, Tianjin, China"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "1362-1718",
+      "1743-2936"
+    ],
+    "issn_l": "",
+    "publisher": "SAGE Publications",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4401241573",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S140152165",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S140152165",
+      "issn_l": "1362-1718",
+      "issn": [
+        "1362-1718",
+        "1743-2936"
+      ],
+      "type": "journal",
+      "host_organization_name": "Maney Publishing",
+      "works_count": 2444,
+      "cited_by_count": 69372,
+      "two_year_mean_citedness": 2.0234375,
+      "h_index": 102,
+      "i10_index": 1665,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 2.0234375,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 3",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The study focuses on the fabrication and analysis of a Ti-6Al-4V/Ni-Ti functionally graded material.\n2. Problem - It addresses the need to understand the microstructural and mechanical properties of this material produced via multi-wire arc additive manufacturing.\n3. Method - The researchers employed multi-wire arc additive manufacturing to create the material and conducted a series of tests to evaluate its properties.\n4. Key Result - Findings indicate significant changes in microstructure and mechanical properties, including variations in corrosion current density and microhardness with increasing Ni content.\n5. Takeaway - The study demonstrates that the Ti-6Al-4V/Ni-Ti functionally graded material exhibits enhanced mechanical properties, making it suitable for various applications.",
+    "relevance_note_en": "The summary captures the essence of the study, highlighting the fabrication method and key findings.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-08-03",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1177/13621718241266702"
+  },
   "10.1016/j.cirpj.2024.02.002": {
     "author_details": [
       {
@@ -32321,423 +32931,5 @@
     "last_seen_in_crossref_run": "2026-08-03",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1007/s00170-024-14216-0"
-  },
-  "10.1089/3dp.2023.0165": {
-    "author_details": [
-      {
-        "name": "Jing Zhao",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Industrial Engineering, Pennsylvania State University, Erie, Pennsylvania, USA."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Industrial Engineering, Pennsylvania State University, Erie, Pennsylvania, USA."
-        ]
-      },
-      {
-        "name": "Muyue Han",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Industrial and Systems Engineering, North Carolina Agricultural and Technical State University, North Carolina, USA."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Industrial and Systems Engineering, North Carolina Agricultural and Technical State University, North Carolina, USA."
-        ]
-      },
-      {
-        "name": "Lin Li",
-        "orcid": "https://orcid.org/0000-0001-8879-8704",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Mechanical and Industrial Engineering, University of Illinois Chicago, Illinois, USA."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical and Industrial Engineering, University of Illinois Chicago, Illinois, USA."
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2329-7662",
-      "2329-7670"
-    ],
-    "issn_l": "",
-    "publisher": "SAGE Publications",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4391823804",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S4210174904",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S4210174904",
-      "issn_l": "2329-7662",
-      "issn": [
-        "2329-7662",
-        "2329-7670"
-      ],
-      "type": "journal",
-      "host_organization_name": "Mary Ann Liebert, Inc.",
-      "works_count": 768,
-      "cited_by_count": 14262,
-      "two_year_mean_citedness": 2.4384615384615387,
-      "h_index": 55,
-      "i10_index": 325,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Core manufacturing journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 2.4384615384615387,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 3",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - The study focuses on the anisotropic shape memory behavior of thermoresponsive components in 4D printing.\n2. Problem - There is a lack of comprehensive understanding regarding how process parameters affect shape memory properties and the anisotropy resulting from layer-wise fabrication.\n3. Method - The research mathematically quantifies the impact of key process parameters on anisotropic shape memory behaviors and evaluates different scanning patterns experimentally.\n4. Key Result - The Triangle scanning pattern was found to optimize shape memory behaviors, while a smaller scanning angle reduced anisotropy and fabrication time.\n5. Takeaway - Understanding and controlling anisotropic behaviors in 4D printing can enhance the performance of shape memory materials.",
-    "relevance_note_en": "The summary captures the core findings and implications of the research while addressing the key aspects of the study.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-08-03",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1089/3dp.2023.0165"
-  },
-  "10.1089/3dp.2022.0153": {
-    "author_details": [
-      {
-        "name": "James D. Banks",
-        "orcid": "https://orcid.org/0000-0001-5853-4740",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Materials Science, Engineering, &amp; Commercialization, Ingram School of Engineering, Texas State University, San Marcos, Texas, USA."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Materials Science, Engineering, &amp; Commercialization, Ingram School of Engineering, Texas State University, San Marcos, Texas, USA."
-        ]
-      },
-      {
-        "name": "Anahita Emami",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Mechanical Engineering, Ingram School of Engineering, Texas State University, San Marcos, Texas, USA."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Mechanical Engineering, Ingram School of Engineering, Texas State University, San Marcos, Texas, USA."
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2329-7662",
-      "2329-7670"
-    ],
-    "issn_l": "",
-    "publisher": "SAGE Publications",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4313289367",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S4210174904",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S4210174904",
-      "issn_l": "2329-7662",
-      "issn": [
-        "2329-7662",
-        "2329-7670"
-      ],
-      "type": "journal",
-      "host_organization_name": "Mary Ann Liebert, Inc.",
-      "works_count": 768,
-      "cited_by_count": 14262,
-      "two_year_mean_citedness": 2.4384615384615387,
-      "h_index": 55,
-      "i10_index": 325,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Core manufacturing journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 2.4384615384615387,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 3",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - The article focuses on the development of carbon-based piezoresistive polymer nanocomposites through extrusion additive manufacturing.\n2. Problem - There is a growing need for multifunctional materials that can be produced with complex geometries using additive manufacturing techniques.\n3. Method - The review discusses various carbon-based nanoparticles used as fillers in piezoresistive composites and their integration with extrusion additive manufacturing methods.\n4. Key Result - Applications of these materials include wearable sensors, structural health monitoring, and soft robotics, highlighting the importance of material and manufacturing method selection.\n5. Takeaway - The study emphasizes the potential of additive manufacturing to create advanced materials that meet specific application requirements.",
-    "relevance_note_en": "The summary captures the core themes and findings of the paper without direct paraphrasing.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-08-03",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1089/3dp.2022.0153"
-  },
-  "10.1080/19475411.2024.2332645": {
-    "author_details": [
-      {
-        "name": "Yuliang Xia",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Centre for Composite Materials and Structures, Harbin Institute of Technology (HIT), Harbin, People’s Republic of China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Centre for Composite Materials and Structures, Harbin Institute of Technology (HIT), Harbin, People’s Republic of China"
-        ]
-      },
-      {
-        "name": "Tong Mu",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Centre for Composite Materials and Structures, Harbin Institute of Technology (HIT), Harbin, People’s Republic of China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Centre for Composite Materials and Structures, Harbin Institute of Technology (HIT), Harbin, People’s Republic of China"
-        ]
-      },
-      {
-        "name": "Yanju Liu",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Astronautical Science and Mechanics, Harbin Institute of Technology (HIT), Harbin, People’s Republic of China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Astronautical Science and Mechanics, Harbin Institute of Technology (HIT), Harbin, People’s Republic of China"
-        ]
-      },
-      {
-        "name": "Jinsong Leng",
-        "orcid": "https://orcid.org/0000-0001-5098-9871",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Centre for Composite Materials and Structures, Harbin Institute of Technology (HIT), Harbin, People’s Republic of China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Centre for Composite Materials and Structures, Harbin Institute of Technology (HIT), Harbin, People’s Republic of China"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "1947-5411",
-      "1947-542X"
-    ],
-    "issn_l": "",
-    "publisher": "Informa UK Limited",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4393313420",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S93280953",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S93280953",
-      "issn_l": "1947-5411",
-      "issn": [
-        "1947-5411",
-        "1947-542X"
-      ],
-      "type": "journal",
-      "host_organization_name": "Taylor & Francis",
-      "works_count": 419,
-      "cited_by_count": 9126,
-      "two_year_mean_citedness": 7.655913978494624,
-      "h_index": 45,
-      "i10_index": 243,
-      "is_core": true,
-      "is_oa": true,
-      "is_in_doaj": true
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 7.655913978494624,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 1",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The study focuses on enhancing the mechanical properties of liquid crystal elastomers (LCEs) through the incorporation of carbon fiber in a 4D printing process.\n2. Problem - A significant challenge in the field is to improve the mechanical strength of LCEs while preserving their unique reversible deformation capabilities.\n3. Method - The researchers developed a composite material by integrating carbon fiber fabric with LCE using 4D printing, adjusting the fiber alignment to explore various deformation patterns.\n4. Key Result - The resulting composite exhibited an eightfold increase in tensile strength while allowing for diverse deformation modes, such as bending and twisting, which are not present in pure LCEs.\n5. Takeaway - This work provides valuable insights into creating high-strength, flexible smart materials, marking a notable advancement in the development of LCE composites.",
-    "relevance_note_en": "The summary captures the essence of the research, highlighting the innovative approach and significant findings.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-08-03",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1080/19475411.2024.2332645"
-  },
-  "10.46519/ij3dptdi.1349314": {
-    "author_details": [
-      {
-        "name": "Ozan Arslan",
-        "orcid": "https://orcid.org/0000-0001-6681-5518",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Turkish Aerospace Industries"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Turkish Aerospace Industries"
-        ]
-      },
-      {
-        "name": "Özgün Selvi",
-        "orcid": "https://orcid.org/0000-0003-4937-1489",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "University of central lancashire"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "University of central lancashire"
-        ]
-      },
-      {
-        "name": "Onat Halis Totuk",
-        "orcid": "https://orcid.org/0000-0002-9314-9204",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "CANKAYA UNIVERSITY"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "CANKAYA UNIVERSITY"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2602-3350"
-    ],
-    "issn_l": "",
-    "publisher": "International Journal of 3D Printing Technologies and Digital Industry",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4392017438",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S4210214343",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S4210214343",
-      "issn_l": "2602-3350",
-      "issn": [
-        "2602-3350"
-      ],
-      "type": "journal",
-      "host_organization_name": null,
-      "works_count": 350,
-      "cited_by_count": 829,
-      "two_year_mean_citedness": 0.6333333333333333,
-      "h_index": 13,
-      "i10_index": 20,
-      "is_core": false,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 0.6333333333333333,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 4",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - This study focuses on the characterization of 3D printed conductive flexible materials for soft robotics.\n2. Problem - Integrating electronics into soft robotic structures poses challenges due to limited understanding of their electromechanical behavior under strain.\n3. Method - The research employs 3D printing to create various geometries of conductive materials, followed by bending and tensile tests to assess their mechanical and electrical properties.\n4. Key Result - Findings indicate a direct relationship between the shape changes of the materials and their electrical resistance, with honeycomb profiles demonstrating optimal performance.\n5. Takeaway - The insights gained from this research can enhance the design of responsive soft robotic devices by integrating flexible conductive materials.",
-    "relevance_note_en": "The summary captures the core aspects of the research, including its focus, challenges, methods, findings, and implications for soft robotics.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-08-03",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.46519/ij3dptdi.1349314"
   }
 }

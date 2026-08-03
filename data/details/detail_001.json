@@ -1,4 +1,82 @@
 {
+  "10.1016/j.jmapro.2026.04.001": {
+    "author_details": [
+      {
+        "name": "Surendhar Kumaran",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Rajeev Nair",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "1526-6125"
+    ],
+    "issn_l": "",
+    "publisher": "Elsevier BV",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7151268276",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S120037611",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S120037611",
+      "issn_l": "1526-6125",
+      "issn": [
+        "1526-6125",
+        "2212-4616"
+      ],
+      "type": "journal",
+      "host_organization_name": "Elsevier BV",
+      "works_count": 8195,
+      "cited_by_count": 224910,
+      "two_year_mean_citedness": 8.200902151283831,
+      "h_index": 135,
+      "i10_index": 5394,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 8.200902151283831,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - This paper discusses the fabrication of copper/aluminum wick structures using functionally graded additive manufacturing.\n2. Problem - The challenge addressed is the need for improved thermal performance in wick structures for various applications.\n3. Method - The authors employed a hot-pressing technique to create the functionally graded materials.\n4. Key Result - The resulting structures demonstrated enhanced thermal performance compared to traditional manufacturing methods.\n5. Takeaway - The study highlights the potential of functionally graded additive manufacturing to optimize thermal management in engineering applications.",
+    "relevance_note_en": "The summary captures the essence of the paper's focus on thermal performance and manufacturing methods.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-08-03",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1016/j.jmapro.2026.04.001"
+  },
   "10.1016/j.rineng.2026.109873": {
     "author_details": [
       {
@@ -99,6 +177,93 @@
     "last_seen_in_crossref_run": "2026-08-03",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.rineng.2026.109873"
+  },
+  "10.1007/s40964-026-01892-5": {
+    "author_details": [
+      {
+        "name": "Kaan Nuhoglu",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Vikas Varshney",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Emrah Celik",
+        "orcid": "https://orcid.org/0000-0003-4362-1395",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2363-9512",
+      "2363-9520"
+    ],
+    "issn_l": "",
+    "publisher": "Springer Science and Business Media LLC",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S4210206835",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210206835",
+      "issn_l": "2363-9512",
+      "issn": [
+        "2363-9512",
+        "2363-9520"
+      ],
+      "type": "journal",
+      "host_organization_name": "Springer Science+Business Media",
+      "works_count": 1809,
+      "cited_by_count": 21422,
+      "two_year_mean_citedness": 4.039043824701195,
+      "h_index": 63,
+      "i10_index": 494,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 4.039043824701195,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 2",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - Functionally graded 3D-printed composite materials with tailorable anisotropy: nozzle oscillation infill pattern is a 2026 paper from Progress in Additive Manufacturing about Manufacturing automation.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Manufacturing automation.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Manufacturing automation; current relevance score is 6/10.",
+    "relevance_note_en": "Relevant to the tracker through Manufacturing automation; score: 6/10.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-08-03",
+    "id": "10.1007/s40964-026-01892-5"
   },
   "10.1007/s40684-025-00766-5": {
     "author_details": [
@@ -1599,6 +1764,97 @@
     "last_seen_in_crossref_run": "2026-08-03",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1007/s40964-026-01608-9"
+  },
+  "10.1108/rpj-12-2024-0513": {
+    "author_details": [
+      {
+        "name": "Prasanna Nagasai Bellamkonda",
+        "orcid": "https://orcid.org/0000-0002-8560-1643",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Chennai Institute of Technology Department of Mechanical Engineering, Centre for Sustainable Materials and Surface Metamorphosis, , Chennai, , and Department of Mechanical Engineering, SRM University AP, Mangalagiri, India"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Chennai Institute of Technology Department of Mechanical Engineering, Centre for Sustainable Materials and Surface Metamorphosis, , Chennai, , and Department of Mechanical Engineering, SRM University AP, Mangalagiri, India"
+        ]
+      },
+      {
+        "name": "Maheshwar Dwivedy",
+        "orcid": "https://orcid.org/0000-0001-9842-4108",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "BML Munjal University Department of Mechanical Engineering, , Gurugram, , and Department of Mechanical Engineering, SRM University AP, Mangalagiri, India"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "BML Munjal University Department of Mechanical Engineering, , Gurugram, , and Department of Mechanical Engineering, SRM University AP, Mangalagiri, India"
+        ]
+      }
+    ],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "1355-2546",
+      "1758-7670"
+    ],
+    "issn_l": "",
+    "publisher": "Emerald",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S173500210",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S173500210",
+      "issn_l": "1355-2546",
+      "issn": [
+        "1355-2546",
+        "1758-7670"
+      ],
+      "type": "journal",
+      "host_organization_name": "Emerald Publishing Limited",
+      "works_count": 2524,
+      "cited_by_count": 98147,
+      "two_year_mean_citedness": 3.0,
+      "h_index": 139,
+      "i10_index": 1507,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 3.0,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 3",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - Development and characterization of Inconel 825/309LSi stainless steel functionally graded material fabricated by wire arc additive manufacturing is a 2026 paper from Rapid Prototyping Journal about Additive manufacturing.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Additive manufacturing.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Additive manufacturing; current relevance score is 6/10.",
+    "relevance_note_en": "Relevant to the tracker through Additive manufacturing; score: 6/10.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-08-03",
+    "id": "10.1108/rpj-12-2024-0513"
   },
   "10.1007/s40964-025-01399-5": {
     "author_details": [
@@ -21455,6 +21711,155 @@
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1108/prt-10-2025-0110"
   },
+  "10.1002/adfm.77047": {
+    "author_details": [
+      {
+        "name": "Alice Berardo",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Industrial Engineering University of Padova  Padova Italy"
+          },
+          {
+            "name": "Centre for Mechanics of Biological Materials University of Padova Padova Italy"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Industrial Engineering University of Padova  Padova Italy",
+          "Centre for Mechanics of Biological Materials University of Padova Padova Italy"
+        ]
+      },
+      {
+        "name": "Gianmarco Dolino",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Industrial Engineering University of Padova  Padova Italy"
+          },
+          {
+            "name": "Institute of Biomedical and Neural Engineering Reykjavík University  Reykjavík Iceland"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Industrial Engineering University of Padova  Padova Italy",
+          "Institute of Biomedical and Neural Engineering Reykjavík University  Reykjavík Iceland"
+        ]
+      },
+      {
+        "name": "Damiano Coato",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Industrial Engineering University of Padova  Padova Italy"
+          },
+          {
+            "name": "Institute of Biomedical and Neural Engineering Reykjavík University  Reykjavík Iceland"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Industrial Engineering University of Padova  Padova Italy",
+          "Institute of Biomedical and Neural Engineering Reykjavík University  Reykjavík Iceland"
+        ]
+      },
+      {
+        "name": "Paolo Gargiulo",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Institute of Biomedical and Neural Engineering Reykjavík University  Reykjavík Iceland"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Institute of Biomedical and Neural Engineering Reykjavík University  Reykjavík Iceland"
+        ]
+      },
+      {
+        "name": "Emanuele Luigi Carniel",
+        "orcid": "https://orcid.org/0000-0002-1195-2096",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Industrial Engineering University of Padova  Padova Italy"
+          },
+          {
+            "name": "Centre for Mechanics of Biological Materials University of Padova Padova Italy"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Industrial Engineering University of Padova  Padova Italy",
+          "Centre for Mechanics of Biological Materials University of Padova Padova Italy"
+        ]
+      }
+    ],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Advanced Functional Materials",
+    "crossref_target_issn": "1616-301X",
+    "issn": [
+      "1616-301X",
+      "1616-3028"
+    ],
+    "issn_l": "",
+    "publisher": "Wiley",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S135204980",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S135204980",
+      "issn_l": "1616-301X",
+      "issn": [
+        "1616-301X",
+        "1616-3028"
+      ],
+      "type": "journal",
+      "host_organization_name": "Wiley",
+      "works_count": 42483,
+      "cited_by_count": 2508008,
+      "two_year_mean_citedness": 14.256403502995983,
+      "h_index": 476,
+      "i10_index": 26898,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "High-impact general journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 14.256403502995983,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - From Geometry to Function: Programmable Mechanical Response in 3D-Printed Adipose-Inspired Soft Metamaterials is a 2026 paper from Advanced Functional Materials about Metamaterials.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Metamaterials.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Metamaterials; current relevance score is 5/10.",
+    "relevance_note_en": "Relevant to the tracker through Metamaterials; score: 5/10.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-08-03",
+    "id": "10.1002/adfm.77047"
+  },
   "10.1108/4dp-12-2025-0024": {
     "author_details": [
       {
@@ -35833,512 +36238,5 @@
     "last_seen_in_crossref_run": "2026-08-03",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/adfm.202530585"
-  },
-  "10.1038/s41467-026-68370-y": {
-    "author_details": [
-      {
-        "name": "Huan Jiang",
-        "orcid": "https://orcid.org/0000-0003-2597-4576",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Christopher Chung",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Alston X. Gracego",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "James Breedlove",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Yuchen Ding",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Xiao Kuang",
-        "orcid": "https://orcid.org/0000-0001-6596-1417",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Martin L. Dunn",
-        "orcid": "https://orcid.org/0000-0002-4531-9176",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Kai Yu",
-        "orcid": "https://orcid.org/0000-0001-9067-1673",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2041-1723"
-    ],
-    "issn_l": "",
-    "publisher": "Springer Science and Business Media LLC",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W7124249597",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S64187185",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S64187185",
-      "issn_l": "2041-1723",
-      "issn": [
-        "2041-1723"
-      ],
-      "type": "journal",
-      "host_organization_name": "Nature Portfolio",
-      "works_count": 90441,
-      "cited_by_count": 7551319,
-      "two_year_mean_citedness": 16.130086313193587,
-      "h_index": 743,
-      "i10_index": 68559,
-      "is_core": true,
-      "is_oa": true,
-      "is_in_doaj": true
-    },
-    "journal_quality": {
-      "label": "High-impact general journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 16.130086313193587,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 1",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - The study focuses on advancing 4D printing using liquid crystal elastomers (LCEs).\n2. Problem - Existing 4D printing methods face limitations in resolution and the ability to control liquid crystal orientation in complex structures.\n3. Method - A novel approach is proposed that integrates two-stage UV-curable LCEs with vat photopolymerization techniques like digital light processing.\n4. Key Result - This method enables the creation of intricate geometries that can undergo reversible shape transformations through thermal treatment.\n5. Takeaway - The developed strategy enhances the design possibilities for programmable structures in various applications, including soft robotics and metamaterials.",
-    "relevance_note_en": "The paper presents a significant advancement in 4D printing technology, addressing key challenges in the field.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-08-03",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1038/s41467-026-68370-y"
-  },
-  "10.1039/d5ma01396h": {
-    "author_details": [
-      {
-        "name": "Domenico Sagnelli",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Institute of Applied Sciences and Intelligent Systems of CNR, Pozzuoli 80072, Italy"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Institute of Applied Sciences and Intelligent Systems of CNR, Pozzuoli 80072, Italy"
-        ]
-      },
-      {
-        "name": "Amalia D’Avino",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Institute of Applied Sciences and Intelligent Systems of CNR, Pozzuoli 80072, Italy"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Institute of Applied Sciences and Intelligent Systems of CNR, Pozzuoli 80072, Italy"
-        ]
-      },
-      {
-        "name": "Bryan Guilcapi",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Institute of Applied Sciences and Intelligent Systems of CNR, Pozzuoli 80072, Italy"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Institute of Applied Sciences and Intelligent Systems of CNR, Pozzuoli 80072, Italy"
-        ]
-      },
-      {
-        "name": "Tommaso Fasolino",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Energy and Sustainable Economic Development, ENEA, Italian National Agency for New Technologies, Portici Research Centre, Portici, Naples 80055, Italy"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Energy and Sustainable Economic Development, ENEA, Italian National Agency for New Technologies, Portici Research Centre, Portici, Naples 80055, Italy"
-        ]
-      },
-      {
-        "name": "Anna De Girolamo Del Mauro",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Energy and Sustainable Economic Development, ENEA, Italian National Agency for New Technologies, Portici Research Centre, Portici, Naples 80055, Italy"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Energy and Sustainable Economic Development, ENEA, Italian National Agency for New Technologies, Portici Research Centre, Portici, Naples 80055, Italy"
-        ]
-      },
-      {
-        "name": "Fausta Loffredo",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Energy and Sustainable Economic Development, ENEA, Italian National Agency for New Technologies, Portici Research Centre, Portici, Naples 80055, Italy"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Energy and Sustainable Economic Development, ENEA, Italian National Agency for New Technologies, Portici Research Centre, Portici, Naples 80055, Italy"
-        ]
-      },
-      {
-        "name": "Fulvia Villani",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Energy and Sustainable Economic Development, ENEA, Italian National Agency for New Technologies, Portici Research Centre, Portici, Naples 80055, Italy"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Energy and Sustainable Economic Development, ENEA, Italian National Agency for New Technologies, Portici Research Centre, Portici, Naples 80055, Italy"
-        ]
-      },
-      {
-        "name": "Giuseppe Nenna",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Energy and Sustainable Economic Development, ENEA, Italian National Agency for New Technologies, Portici Research Centre, Portici, Naples 80055, Italy"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Energy and Sustainable Economic Development, ENEA, Italian National Agency for New Technologies, Portici Research Centre, Portici, Naples 80055, Italy"
-        ]
-      },
-      {
-        "name": "Lucia Petti",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Institute of Applied Sciences and Intelligent Systems of CNR, Pozzuoli 80072, Italy"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Institute of Applied Sciences and Intelligent Systems of CNR, Pozzuoli 80072, Italy"
-        ]
-      }
-    ],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2633-5409"
-    ],
-    "issn_l": "",
-    "publisher": "Royal Society of Chemistry (RSC)",
-    "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "https://openalex.org/W7115907602",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S4210182508",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S4210182508",
-      "issn_l": "2633-5409",
-      "issn": [
-        "2633-5409"
-      ],
-      "type": "journal",
-      "host_organization_name": "Royal Society of Chemistry",
-      "works_count": 4883,
-      "cited_by_count": 73777,
-      "two_year_mean_citedness": 5.70960295475531,
-      "h_index": 96,
-      "i10_index": 1850,
-      "is_core": true,
-      "is_oa": true,
-      "is_in_doaj": true
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 5.70960295475531,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 2",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The study focuses on a new method for 4D printing using unaligned liquid crystal elastomers (LCE).\n2. Problem - Traditional 4D printing methods require complex alignment processes that can be cumbersome.\n3. Method - The authors propose a straightforward approach by incorporating ZnO nanoparticles into LCE ink to facilitate direct-write printing.\n4. Key Result - This method successfully simplifies the printing process while maintaining the desired properties of the materials.\n5. Takeaway - The integration of nanoparticles allows for easier and more efficient 4D printing of mobile polymers without the need for alignment.",
-    "relevance_note_en": "The summary captures the essence of the study's innovation and its implications for 4D printing technology.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-08-03",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1039/d5ma01396h"
-  },
-  "10.1016/j.matdes.2026.116433": {
-    "author_details": [
-      {
-        "name": "Minsung Kim",
-        "orcid": "https://orcid.org/0009-0000-6574-7285",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Eui-Hyun Kim",
-        "orcid": "https://orcid.org/0009-0008-1519-828X",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Seung Jae Lee",
-        "orcid": "https://orcid.org/0000-0003-1674-3733",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Keun Park",
-        "orcid": "https://orcid.org/0000-0003-3823-0672",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "Materials & Design",
-    "crossref_target_issn": "0264-1275",
-    "issn": [
-      "0264-1275"
-    ],
-    "issn_l": "",
-    "publisher": "Elsevier BV",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W7165049204",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S8792693",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S8792693",
-      "issn_l": "0264-1275",
-      "issn": [
-        "0264-1275",
-        "1873-4197"
-      ],
-      "type": "journal",
-      "host_organization_name": "Elsevier BV",
-      "works_count": 14476,
-      "cited_by_count": 516286,
-      "two_year_mean_citedness": 5.543417366946779,
-      "h_index": 222,
-      "i10_index": 8917,
-      "is_core": true,
-      "is_oa": true,
-      "is_in_doaj": true
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 5.543417366946779,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 2",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The study focuses on 4D printing of shape memory polymers to create transformable auxetic metastructures for wearable protection.\n2. Problem - There is a need for adaptive protective devices that can change shape while maintaining structural integrity and performance.\n3. Method - The researchers designed and fabricated re-entrant auxetic structures using 4D printing and conducted finite element analyses to study their thermal programming behavior.\n4. Key Result - The developed structures demonstrated superior stretchability and recovery, achieving over 97% recovery ratio after multiple transformations.\n5. Takeaway - Integrating shape memory polymers with 4D printing techniques can lead to innovative, lightweight, and effective wearable protective devices.",
-    "relevance_note_en": "The summary captures the essence of the study's focus on 4D printing and its application in wearable technology.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-08-03",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1016/j.matdes.2026.116433"
-  },
-  "10.1016/j.metadv.2026.01.008": {
-    "author_details": [
-      {
-        "name": "Shiqing Wang",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Hao Cheng",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Xiangru Li",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Bo Song",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Yusheng Shi",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "3117-7220"
-    ],
-    "issn_l": "",
-    "publisher": "Elsevier BV",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W7125782220",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S5407055709",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S5407055709",
-      "issn_l": "3117-7220",
-      "issn": [
-        "3117-7220"
-      ],
-      "type": "journal",
-      "host_organization_name": null,
-      "works_count": 81,
-      "cited_by_count": 110,
-      "two_year_mean_citedness": 1.3580246913580247,
-      "h_index": 4,
-      "i10_index": 3,
-      "is_core": false,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 1.3580246913580247,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 4",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The paper focuses on 4D printing of shape memory alloy metamaterials.\n2. Problem - It addresses the challenges and potential of integrating stimulus-responsive functionalities in materials through 4D printing.\n3. Method - The authors review various additive manufacturing techniques for shape memory alloys and discuss their transformation behaviors and applications.\n4. Key Result - The study highlights the advantages of 4D-printed SMA metamaterials in lightweight and adaptive applications, along with emerging uses in medicine and engineering.\n5. Takeaway - The paper provides insights into current challenges and future directions for research in the field of 4D printing of SMA metamaterials.",
-    "relevance_note_en": "The summary captures the essence of the paper's focus on 4D printing and its implications for shape memory alloys.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-08-03",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1016/j.metadv.2026.01.008"
   }
 }
