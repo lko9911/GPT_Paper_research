@@ -1,4 +1,395 @@
 {
+  "10.1038/s43588-024-00669-6": {
+    "author_details": [
+      {
+        "name": "Keith A. Brown",
+        "orcid": "https://orcid.org/0000-0002-2379-2018",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Grace X. Gu",
+        "orcid": "https://orcid.org/0000-0001-7118-3228",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2662-8457"
+    ],
+    "issn_l": "",
+    "publisher": "Springer Science and Business Media LLC",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4401907322",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S4210228084",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210228084",
+      "issn_l": "2662-8457",
+      "issn": [
+        "2662-8457"
+      ],
+      "type": "journal",
+      "host_organization_name": "Nature Portfolio",
+      "works_count": 1016,
+      "cited_by_count": 21891,
+      "two_year_mean_citedness": 9.681603773584905,
+      "h_index": 73,
+      "i10_index": 340,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 9.681603773584905,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The paper discusses the computational challenges faced in the design of metamaterials for additive manufacturing.\n2. Problem - It highlights the complexities and limitations in current computational methods that hinder effective metamaterial design.\n3. Method - The authors review existing computational techniques and propose potential improvements to address these challenges.\n4. Key Result - They identify critical areas where advancements in computational design can enhance the efficiency and effectiveness of metamaterial production.\n5. Takeaway - The study emphasizes the need for innovative computational strategies to overcome existing barriers in metamaterial additive manufacturing.",
+    "relevance_note_en": "The summary captures the essence of the paper's focus on computational challenges in metamaterials design.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-08-04",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1038/s43588-024-00669-6"
+  },
+  "10.1002/adma.202310040": {
+    "author_details": [
+      {
+        "name": "Liang Yue",
+        "orcid": "https://orcid.org/0000-0002-3901-9572",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "The George W. Woodruff School of Mechanical Engineering Georgia Institute of Technology  Atlanta GA 30332 USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "The George W. Woodruff School of Mechanical Engineering Georgia Institute of Technology  Atlanta GA 30332 USA"
+        ]
+      },
+      {
+        "name": "Yong‐Liang Su",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "School of Chemistry and Biochemistry Georgia Institute of Technology  Atlanta GA 30332 USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Chemistry and Biochemistry Georgia Institute of Technology  Atlanta GA 30332 USA"
+        ]
+      },
+      {
+        "name": "Mingzhe Li",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "The George W. Woodruff School of Mechanical Engineering Georgia Institute of Technology  Atlanta GA 30332 USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "The George W. Woodruff School of Mechanical Engineering Georgia Institute of Technology  Atlanta GA 30332 USA"
+        ]
+      },
+      {
+        "name": "Luxia Yu",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "The George W. Woodruff School of Mechanical Engineering Georgia Institute of Technology  Atlanta GA 30332 USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "The George W. Woodruff School of Mechanical Engineering Georgia Institute of Technology  Atlanta GA 30332 USA"
+        ]
+      },
+      {
+        "name": "Xiaohao Sun",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "The George W. Woodruff School of Mechanical Engineering Georgia Institute of Technology  Atlanta GA 30332 USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "The George W. Woodruff School of Mechanical Engineering Georgia Institute of Technology  Atlanta GA 30332 USA"
+        ]
+      },
+      {
+        "name": "Jaehyun Cho",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "School of Chemical and Biomolecular Engineering Georgia Institute of Technology  Atlanta GA 30332 USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Chemical and Biomolecular Engineering Georgia Institute of Technology  Atlanta GA 30332 USA"
+        ]
+      },
+      {
+        "name": "Blair Brettmann",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "School of Chemical and Biomolecular Engineering Georgia Institute of Technology  Atlanta GA 30332 USA"
+          },
+          {
+            "name": "School of Materials Science and Engineering Georgia Institute of Technology  Atlanta GA 30332 USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Chemical and Biomolecular Engineering Georgia Institute of Technology  Atlanta GA 30332 USA",
+          "School of Materials Science and Engineering Georgia Institute of Technology  Atlanta GA 30332 USA"
+        ]
+      },
+      {
+        "name": "Will R. Gutekunst",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "School of Chemistry and Biochemistry Georgia Institute of Technology  Atlanta GA 30332 USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Chemistry and Biochemistry Georgia Institute of Technology  Atlanta GA 30332 USA"
+        ]
+      },
+      {
+        "name": "Rampi Ramprasad",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "School of Materials Science and Engineering Georgia Institute of Technology  Atlanta GA 30332 USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Materials Science and Engineering Georgia Institute of Technology  Atlanta GA 30332 USA"
+        ]
+      },
+      {
+        "name": "H. Jerry Qi",
+        "orcid": "https://orcid.org/0000-0002-3212-5284",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "The George W. Woodruff School of Mechanical Engineering Georgia Institute of Technology  Atlanta GA 30332 USA"
+          },
+          {
+            "name": "Rewable Bioproduct Institute Georgia Institute of Technology  Atlanta GA 30332 USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "The George W. Woodruff School of Mechanical Engineering Georgia Institute of Technology  Atlanta GA 30332 USA",
+          "Rewable Bioproduct Institute Georgia Institute of Technology  Atlanta GA 30332 USA"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Advanced Materials",
+    "crossref_target_issn": "0935-9648",
+    "issn": [
+      "0935-9648",
+      "1521-4095"
+    ],
+    "issn_l": "",
+    "publisher": "Wiley",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4391420167",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S99352657",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S99352657",
+      "issn_l": "0935-9648",
+      "issn": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "type": "journal",
+      "host_organization_name": null,
+      "works_count": 44789,
+      "cited_by_count": 4803689,
+      "two_year_mean_citedness": 21.19633376740459,
+      "h_index": 743,
+      "i10_index": 31001,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "High-impact general journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 21.19633376740459,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - The study focuses on enhancing chemical circularity in 3D printing using biobased δ-valerolactone.\n2. Problem - There is a growing need for sustainable materials in the rapidly expanding Digital Light Processing (DLP) 3D printing market.\n3. Method - The researchers synthesized acrylate-functionalized poly(δ-valerolactone) as a photoprecursor and incorporated reactive diluents to create a printable ink.\n4. Key Result - The process achieved a 93% recovery yield of virgin quality δ-valerolactone monomer from printed structures through thermolysis.\n5. Takeaway - This work demonstrates the potential of using depolymerizable materials to promote sustainability in DLP printing.",
+    "relevance_note_en": "The summary accurately reflects the core findings and implications of the research.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-08-04",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1002/adma.202310040"
+  },
+  "10.1007/s40964-023-00562-0": {
+    "author_details": [
+      {
+        "name": "Viswanath Meenakshisundaram",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Keyton Feller",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Nicholas Chartrain",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Timothy Long",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Christopher Williams",
+        "orcid": "https://orcid.org/0000-0002-0499-2444",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2363-9512",
+      "2363-9520"
+    ],
+    "issn_l": "",
+    "publisher": "Springer Science and Business Media LLC",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4391968136",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S4210206835",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210206835",
+      "issn_l": "2363-9512",
+      "issn": [
+        "2363-9512",
+        "2363-9520"
+      ],
+      "type": "journal",
+      "host_organization_name": "Springer Science+Business Media",
+      "works_count": 1809,
+      "cited_by_count": 21422,
+      "two_year_mean_citedness": 4.039043824701195,
+      "h_index": 63,
+      "i10_index": 494,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 4.039043824701195,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 2",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - The study focuses on high-temperature vat photopolymerization for processing viscous photopolymer resins.\n2. Problem - Standard vat photopolymerization systems struggle with high-viscosity resins, limiting the available engineering polymers.\n3. Method - Characterization techniques such as thermogravimetric analysis, rheology, and differential scanning calorimetry were employed to establish safe printing temperatures for these resins.\n4. Key Result - The research successfully identified the printing temperature for a resin that is solid at room temperature and another with a viscosity of 21 Pa s, preventing thermally induced polymerization.\n5. Takeaway - This work provides a framework for characterizing materials and developing process parameters, broadening the range of engineering materials usable in vat photopolymerization.",
+    "relevance_note_en": "The summary directly addresses the core aspects of the research, including its focus, challenges, methods, findings, and implications.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-06-28",
+    "not_seen_in_latest_crossref_run": true,
+    "id": "10.1007/s40964-023-00562-0"
+  },
   "10.1007/s00170-024-14216-0": {
     "author_details": [
       {
@@ -970,9 +1361,9 @@
     "corresponding_author_source": "openalex_cross_check",
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Additive Manufacturing",
+    "crossref_target_issn": "2214-8604",
     "issn": [
       "2214-8604"
     ],

@@ -10355,6 +10355,141 @@
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
+    "id": "10.1007/s40964-026-01847-w",
+    "title": "Multi-material additive manufacturing for microfluidic applications",
+    "authors": [
+      "Stavros Skrepetos",
+      "Misha Ruijgrok",
+      "Marcel Tichem",
+      "Paola Fanzio"
+    ],
+    "author_details": [
+      {
+        "name": "Stavros Skrepetos",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Misha Ruijgrok",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Marcel Tichem",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Paola Fanzio",
+        "orcid": "https://orcid.org/0009-0009-5947-7640",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "year": 2026,
+    "venue": "Progress in Additive Manufacturing",
+    "doi": "10.1007/s40964-026-01847-w",
+    "url": "https://doi.org/10.1007/s40964-026-01847-w",
+    "source": [
+      "Crossref"
+    ],
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2363-9512",
+      "2363-9520"
+    ],
+    "issn_l": "",
+    "publisher": "Springer Science and Business Media LLC",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S4210206835",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210206835",
+      "issn_l": "2363-9512",
+      "issn": [
+        "2363-9512",
+        "2363-9520"
+      ],
+      "type": "journal",
+      "host_organization_name": "Springer Science+Business Media",
+      "works_count": 1809,
+      "cited_by_count": 21422,
+      "two_year_mean_citedness": 4.039043824701195,
+      "h_index": 63,
+      "i10_index": 494,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 4.039043824701195,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 2",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "publication_type": "journal_article",
+    "venue_trust": "trusted",
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "is_core_venue": true,
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "categories": [
+      "Reviews and Surveys",
+      "Multi-material AM"
+    ],
+    "tags": [
+      "DLP",
+      "SLA",
+      "FDM/Material extrusion",
+      "Process optimization"
+    ],
+    "relevance_score": 7,
+    "curation_priority": false,
+    "ai_summary_en": "1. Topic - Multi-material additive manufacturing for microfluidic applications is a 2026 paper from Progress in Additive Manufacturing about DLP, SLA, and FDM/Material extrusion.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to DLP, SLA, and FDM/Material extrusion.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for DLP, SLA, and FDM/Material extrusion; current relevance score is 7/10.",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_en": "Relevant to the tracker through DLP, SLA, and FDM/Material extrusion; score: 7/10.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-08-04",
+    "last_updated": "2026-08-04",
+    "is_weekly_new": true,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-08-04",
+    "openalex_venue_rank": "Rank 2",
+    "openalex_venue_rank_number": 2,
+    "openalex_venue_rank_score": 4.039043824701195,
+    "openalex_venue_rank_percentile": 0.574,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+  },
+  {
     "id": "10.1002/adrr.202500064",
     "title": "Multi-Material Additive Manufacturing of Soft Robotic Systems: A Comprehensive Review",
     "authors": [
@@ -24781,9 +24916,9 @@
     "corresponding_authors": [
       {
         "name": "Assia Belbachir",
-        "openalex_author_id": "https://openalex.org/A5051482797",
+        "openalex_author_id": null,
         "orcid": "https://orcid.org/0000-0002-1294-8478",
-        "position": "first",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -24805,21 +24940,21 @@
         "is_corresponding": true,
         "institutions": [
           {
-            "name": "NORCE Research AS",
-            "ror": "https://ror.org/02gagpf75",
+            "name": "SINTEF",
+            "ror": "https://ror.org/01f677e56",
             "country_code": "NO",
             "type": "facility"
           },
           {
-            "name": "Montimage (France)",
-            "ror": "https://ror.org/02a8qtz61",
-            "country_code": "FR",
-            "type": "company"
+            "name": "NORCE Research AS",
+            "ror": "https://ror.org/02gagpf75",
+            "country_code": "NO",
+            "type": "facility"
           }
         ],
         "raw_affiliation_strings": [
           "NORCE Research AS, Grimstad, Norway",
-          "Montimage, Paris, France"
+          "SINTEF AS, Oslo/Porsgrunn, Norway"
         ]
       }
     ],
@@ -28452,6 +28587,202 @@
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
+    "id": "10.1021/acs.chemrev.6c00154",
+    "title": "AI for Accelerated Materials Discovery: From Generative Design to Autonomous Realization",
+    "authors": [
+      "Jaehwan Choi",
+      "Seongmin Kim",
+      "Junkil Park",
+      "Junyoung Choi",
+      "Sunggi An",
+      "Yousung Jung"
+    ],
+    "author_details": [
+      {
+        "name": "Jaehwan Choi",
+        "orcid": "https://orcid.org/0009-0003-2057-0764",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Seoul National University , , 1 Gwanak-ro, Gwanak-gu , ,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Seoul National University , , 1 Gwanak-ro, Gwanak-gu , ,"
+        ]
+      },
+      {
+        "name": "Seongmin Kim",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Seoul National University , , 1 Gwanak-ro, Gwanak-gu , ,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Seoul National University , , 1 Gwanak-ro, Gwanak-gu , ,"
+        ]
+      },
+      {
+        "name": "Junkil Park",
+        "orcid": "https://orcid.org/0000-0003-1770-7291",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Seoul National University , , 1 Gwanak-ro, Gwanak-gu , ,"
+          },
+          {
+            "name": "Seoul National University , , 1 Gwanak-ro, Gwanak-gu , ,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Seoul National University , , 1 Gwanak-ro, Gwanak-gu , ,",
+          "Seoul National University , , 1 Gwanak-ro, Gwanak-gu , ,"
+        ]
+      },
+      {
+        "name": "Junyoung Choi",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Seoul National University , , 1 Gwanak-ro, Gwanak-gu , ,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Seoul National University , , 1 Gwanak-ro, Gwanak-gu , ,"
+        ]
+      },
+      {
+        "name": "Sunggi An",
+        "orcid": "https://orcid.org/0009-0006-2735-9234",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Korea Advanced Institute of Science and Technology (KAIST) , , ,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Korea Advanced Institute of Science and Technology (KAIST) , , ,"
+        ]
+      },
+      {
+        "name": "Yousung Jung",
+        "orcid": "https://orcid.org/0000-0003-2615-8394",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Seoul National University , , 1 Gwanak-ro, Gwanak-gu , ,"
+          },
+          {
+            "name": "Seoul National University , , 1 Gwanak-ro, Gwanak-gu , ,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Seoul National University , , 1 Gwanak-ro, Gwanak-gu , ,",
+          "Seoul National University , , 1 Gwanak-ro, Gwanak-gu , ,"
+        ]
+      }
+    ],
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "year": 2026,
+    "venue": "Chemical Reviews",
+    "doi": "10.1021/acs.chemrev.6c00154",
+    "url": "https://doi.org/10.1021/acs.chemrev.6c00154",
+    "source": [
+      "Crossref"
+    ],
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "0009-2665",
+      "1520-6890"
+    ],
+    "issn_l": "",
+    "publisher": "American Chemical Society (ACS)",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S41143188",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S41143188",
+      "issn_l": "0009-2665",
+      "issn": [
+        "0009-2665",
+        "1520-6890"
+      ],
+      "type": "journal",
+      "host_organization_name": "American Chemical Society",
+      "works_count": 10635,
+      "cited_by_count": 4093191,
+      "two_year_mean_citedness": 50.32514450867052,
+      "h_index": 1007,
+      "i10_index": 8001,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 50.32514450867052,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "publication_type": "journal_article",
+    "venue_trust": "trusted",
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "is_core_venue": false,
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "categories": [
+      "Reviews and Surveys",
+      "Computational Design"
+    ],
+    "tags": [
+      "Machine learning",
+      "Self-driving Labs",
+      "Manufacturing automation"
+    ],
+    "relevance_score": 7,
+    "curation_priority": false,
+    "ai_summary_en": "1. Topic - AI for Accelerated Materials Discovery: From Generative Design to Autonomous Realization is a 2026 paper from Chemical Reviews about Machine learning, Self-driving Labs, and Manufacturing automation.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Machine learning, Self-driving Labs, and Manufacturing automation.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Machine learning, Self-driving Labs, and Manufacturing automation; current relevance score is 7/10.",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_en": "Relevant to the tracker through Machine learning, Self-driving Labs, and Manufacturing automation; score: 7/10.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-08-04",
+    "last_updated": "2026-08-04",
+    "is_weekly_new": true,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-08-04",
+    "openalex_venue_rank": "Rank 1",
+    "openalex_venue_rank_number": 1,
+    "openalex_venue_rank_score": 50.32514450867052,
+    "openalex_venue_rank_percentile": 1.0,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+  },
+  {
     "id": "10.1007/s00170-026-18091-9",
     "title": "ACL-DT: adaptive continuous learning digital twin framework for resilient manufacturing",
     "authors": [
@@ -31678,9 +32009,28 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Louie Webb",
+        "openalex_author_id": "https://openalex.org/A5144244815",
+        "orcid": "https://orcid.org/0000-0003-3485-7945",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "London South Bank University",
+            "ror": "https://ror.org/02vwnat91",
+            "country_code": "GB",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Human-Centred Industrial Intelligence Lab, School of Computer Science and Digital Technologies, College of Technology and Environment, London South Bank University, 103 Borough Road, London, SE1 0AA, UK"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "The International Journal of Advanced Manufacturing Technology",
     "doi": "10.1007/s00170-026-18802-2",
@@ -31700,8 +32050,8 @@
     "issn_l": "",
     "publisher": "Springer Science and Business Media LLC",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7172247175",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S77056576",
     "venue_metrics": {
@@ -46723,9 +47073,28 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Emrah Çelik",
+        "openalex_author_id": "https://openalex.org/A5001386775",
+        "orcid": "https://orcid.org/0000-0003-4362-1395",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Miami",
+            "ror": "https://ror.org/02dgjyy92",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "University of Miami, Coral Gables, USA"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Progress in Additive Manufacturing",
     "doi": "10.1007/s40964-026-01892-5",
@@ -46745,8 +47114,8 @@
     "issn_l": "",
     "publisher": "Springer Science and Business Media LLC",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7172301063",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S4210206835",
     "venue_metrics": {
@@ -49167,9 +49536,28 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Maheshwar Dwivedy",
+        "openalex_author_id": "https://openalex.org/A5089649384",
+        "orcid": "https://orcid.org/0000-0001-9842-4108",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "BML Munjal University",
+            "ror": "https://ror.org/058ay3j75",
+            "country_code": "IN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "BML Munjal University Department of Mechanical Engineering, , Gurugram, , and Department of Mechanical Engineering, SRM University AP, Mangalagiri, India"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Rapid Prototyping Journal",
     "doi": "10.1108/rpj-12-2024-0513",
@@ -49189,8 +49577,8 @@
     "issn_l": "",
     "publisher": "Emerald",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7172326918",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S173500210",
     "venue_metrics": {
@@ -51803,9 +52191,28 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Alaa Elwany",
+        "openalex_author_id": "https://openalex.org/A5008572675",
+        "orcid": "https://orcid.org/0000-0002-9315-1603",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Texas A&M University",
+            "ror": "https://ror.org/01f5ytq51",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Industrial and Systems Engineering, Texas A&M University, College Station, TX 77843, USA"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Additive Manufacturing",
     "doi": "10.1016/j.addma.2026.105276",
@@ -51824,7 +52231,7 @@
     "issn_l": "",
     "publisher": "Elsevier BV",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4415200143",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2764842179",
@@ -52336,7 +52743,7 @@
     "last_updated": "2026-08-04",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-08-04",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 4.039043824701195,
@@ -78884,7 +79291,7 @@
     "publisher": "Wiley",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7172296282",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S135204980",
     "venue_metrics": {
@@ -90277,7 +90684,7 @@
         "name": "Mondher Nasri",
         "openalex_author_id": "https://openalex.org/A5006405851",
         "orcid": null,
-        "position": "middle",
+        "position": "first",
         "is_corresponding": true,
         "institutions": [
           {
@@ -97038,17 +97445,11 @@
     "corresponding_authors": [
       {
         "name": "Maria A. Bieberich",
-        "openalex_author_id": null,
-        "orcid": null,
-        "position": "middle",
+        "openalex_author_id": "https://openalex.org/A5081851152",
+        "orcid": "https://orcid.org/0000-0002-1518-5330",
+        "position": "first",
         "is_corresponding": true,
         "institutions": [
-          {
-            "name": "University of Iowa",
-            "ror": "https://ror.org/036jqmy94",
-            "country_code": "US",
-            "type": "education"
-          },
           {
             "name": "University of Maryland, Baltimore County",
             "ror": "https://ror.org/02qskvh78",
@@ -97057,8 +97458,7 @@
           }
         ],
         "raw_affiliation_strings": [
-          "University of Maryland, Baltimore County, Baltimore, Maryland, USA",
-          "Institute for Vision Research, Carver College of Medicine, University of Iowa, Iowa City, Iowa, USA"
+          "University of Maryland, Baltimore County, Baltimore, Maryland, USA"
         ]
       },
       {
@@ -97090,7 +97490,7 @@
         "name": "Erin Lavik",
         "openalex_author_id": "https://openalex.org/A5079335476",
         "orcid": "https://orcid.org/0000-0002-0644-744X",
-        "position": "middle",
+        "position": "last",
         "is_corresponding": true,
         "institutions": [
           {
@@ -104673,6 +105073,200 @@
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
+    "id": "10.1021/acsami.6c09727",
+    "title": "3D-Printed Hierarchical Bilayer Metasurfaces for Simultaneous Self-Cleaning, Multispectral Protection, and Subambient Cooling",
+    "authors": [
+      "Jingyi Chen",
+      "Xiaotong Chen",
+      "Junzhe Xin",
+      "Wenqing Wang",
+      "Ying Li",
+      "Rujie He"
+    ],
+    "author_details": [
+      {
+        "name": "Jingyi Chen",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Beijing Institute of Technology , , ,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Beijing Institute of Technology , , ,"
+        ]
+      },
+      {
+        "name": "Xiaotong Chen",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Beijing Institute of Technology , , ,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Beijing Institute of Technology , , ,"
+        ]
+      },
+      {
+        "name": "Junzhe Xin",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Beijing Institute of Technology , , ,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Beijing Institute of Technology , , ,"
+        ]
+      },
+      {
+        "name": "Wenqing Wang",
+        "orcid": "https://orcid.org/0009-0007-1453-4299",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Beijing Institute of Technology , , ,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Beijing Institute of Technology , , ,"
+        ]
+      },
+      {
+        "name": "Ying Li",
+        "orcid": "https://orcid.org/0000-0001-9834-7376",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Beijing Institute of Technology , , ,"
+          },
+          {
+            "name": "Beijing Institute of Technology , , ,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Beijing Institute of Technology , , ,",
+          "Beijing Institute of Technology , , ,"
+        ]
+      },
+      {
+        "name": "Rujie He",
+        "orcid": "https://orcid.org/0000-0003-2498-2363",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Beijing Institute of Technology , , ,"
+          },
+          {
+            "name": "Beijing Institute of Technology , , ,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Beijing Institute of Technology , , ,",
+          "Beijing Institute of Technology , , ,"
+        ]
+      }
+    ],
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "year": 2026,
+    "venue": "ACS Applied Materials & Interfaces",
+    "doi": "10.1021/acsami.6c09727",
+    "url": "https://doi.org/10.1021/acsami.6c09727",
+    "source": [
+      "Crossref"
+    ],
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "ACS Applied Materials & Interfaces",
+    "crossref_target_issn": "1944-8244",
+    "issn": [
+      "1944-8244",
+      "1944-8252"
+    ],
+    "issn_l": "",
+    "publisher": "American Chemical Society (ACS)",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S164001016",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S164001016",
+      "issn_l": "1944-8244",
+      "issn": [
+        "1944-8244",
+        "1944-8252"
+      ],
+      "type": "journal",
+      "host_organization_name": "American Chemical Society",
+      "works_count": 69722,
+      "cited_by_count": 3298786,
+      "two_year_mean_citedness": 7.780907972281588,
+      "h_index": 372,
+      "i10_index": 53076,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 7.780907972281588,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "publication_type": "journal_article",
+    "venue_trust": "trusted",
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "is_core_venue": false,
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "categories": [
+      "Multi-material AM"
+    ],
+    "tags": [
+      "Vat photopolymerization",
+      "Manufacturing automation"
+    ],
+    "relevance_score": 5,
+    "curation_priority": false,
+    "ai_summary_en": "1. Topic - 3D-Printed Hierarchical Bilayer Metasurfaces for Simultaneous Self-Cleaning, Multispectral Protection, and Subambient Cooling is a 2026 paper from ACS Applied Materials & Interfaces about Vat photopolymerization and Manufacturing automation.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Vat photopolymerization and Manufacturing automation.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Vat photopolymerization and Manufacturing automation; current relevance score is 5/10.",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_en": "Relevant to the tracker through Vat photopolymerization and Manufacturing automation; score: 5/10.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-08-04",
+    "last_updated": "2026-08-04",
+    "is_weekly_new": true,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-08-04",
+    "openalex_venue_rank": "Rank 1",
+    "openalex_venue_rank_number": 1,
+    "openalex_venue_rank_score": 7.780907972281588,
+    "openalex_venue_rank_percentile": 0.8314,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+  },
+  {
     "id": "10.1002/adma.202523039",
     "title": "3D-Printed Dynamic Liquid Crystal Elastomer Composites with Adaptive Reconfiguration Showing Multimodal, Light-Driven, Strider-Inspired Locomotion at the Air-Water Interface",
     "authors": [
@@ -111234,35 +111828,9 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [
-      {
-        "name": "Guodong Sa",
-        "openalex_author_id": "https://openalex.org/A5074617674",
-        "orcid": "https://orcid.org/0000-0001-7803-2270",
-        "position": "middle",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "Ningbo University",
-            "ror": "https://ror.org/03et85d35",
-            "country_code": "CN",
-            "type": "education"
-          },
-          {
-            "name": "Zhejiang University",
-            "ror": "https://ror.org/00a2xv884",
-            "country_code": "CN",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Ningbo Innovation Center, Zhejiang University, Ningbo 315100, China",
-          "School of Mechanical Engineering, Zhejiang University, Hangzhou 310058, China"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
     "year": 2025,
     "venue": "Journal of Manufacturing Systems",
     "doi": "10.1016/j.jmsy.2025.02.021",
@@ -111281,7 +111849,7 @@
     "issn_l": "",
     "publisher": "Elsevier BV",
     "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
+    "openalex_used_for": null,
     "openalex_crosscheck_work_id": "https://openalex.org/W4408176073",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S201698446",
@@ -117472,8 +118040,8 @@
     "corresponding_authors": [
       {
         "name": "Cheng Zhang",
-        "openalex_author_id": "https://openalex.org/A5100769098",
-        "orcid": "https://orcid.org/0000-0001-8282-9901",
+        "openalex_author_id": null,
+        "orcid": null,
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -157971,7 +158539,7 @@
         "name": "Luquan Ren",
         "openalex_author_id": null,
         "orcid": null,
-        "position": "last",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -171013,8 +171581,8 @@
     "corresponding_authors": [
       {
         "name": "Ning Li",
-        "openalex_author_id": "https://openalex.org/A5089190523",
-        "orcid": "https://orcid.org/0000-0002-7994-9504",
+        "openalex_author_id": null,
+        "orcid": null,
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -180939,7 +181507,7 @@
     "last_updated": "2026-08-04",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-08-04",
-    "not_seen_in_latest_crossref_run": true,
+    "not_seen_in_latest_crossref_run": false,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 5.821917808219178,
@@ -185261,7 +185829,7 @@
     "last_updated": "2026-08-04",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-08-04",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 3.7044257112750265,
@@ -197864,7 +198432,7 @@
     "corresponding_authors": [
       {
         "name": "Pei Liu",
-        "openalex_author_id": null,
+        "openalex_author_id": "https://openalex.org/A5086175031",
         "orcid": "https://orcid.org/0009-0003-4285-053X",
         "position": "middle",
         "is_corresponding": true,
@@ -205824,9 +206392,9 @@
     "corresponding_authors": [
       {
         "name": "Songhao Wang",
-        "openalex_author_id": null,
+        "openalex_author_id": "https://openalex.org/A5057228007",
         "orcid": "https://orcid.org/0000-0003-3643-4698",
-        "position": "middle",
+        "position": "first",
         "is_corresponding": true,
         "institutions": [
           {
@@ -233796,7 +234364,7 @@
     "corresponding_authors": [
       {
         "name": "Aoming Zhang",
-        "openalex_author_id": "https://openalex.org/A5111021439",
+        "openalex_author_id": null,
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -234445,10 +235013,10 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Likun Wang",
-        "openalex_author_id": "https://openalex.org/A5100623561",
-        "orcid": "https://orcid.org/0000-0001-5646-9746",
-        "position": "middle",
+        "name": "Zi Wang",
+        "openalex_author_id": "https://openalex.org/A5100338326",
+        "orcid": "https://orcid.org/0000-0001-9081-7185",
+        "position": "first",
         "is_corresponding": true,
         "institutions": [
           {
@@ -258793,9 +259361,68 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Mingchao Zhang",
+        "openalex_author_id": "https://openalex.org/A5101513933",
+        "orcid": "https://orcid.org/0000-0001-8915-0459",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Max Planck Institute for Intelligent Systems",
+            "ror": "https://ror.org/04fq9j139",
+            "country_code": "DE",
+            "type": "facility"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Physical Intelligence Department, Max Planck Institute for Intelligent Systems, Stuttgart, Germany. zhangmc16@tsinghua.org.cn",
+          "Physical Intelligence Department, Max Planck Institute for Intelligent Systems, Stuttgart, Germany"
+        ]
+      },
+      {
+        "name": "Metin Sitti",
+        "openalex_author_id": "https://openalex.org/A5079968392",
+        "orcid": "https://orcid.org/0000-0001-8249-3854",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Koç University",
+            "ror": "https://ror.org/00jzwgz36",
+            "country_code": "TR",
+            "type": "education"
+          },
+          {
+            "name": "ETH Zurich",
+            "ror": "https://ror.org/05a28rw58",
+            "country_code": "CH",
+            "type": "education"
+          },
+          {
+            "name": "Institute for Biomedical Engineering",
+            "ror": "https://ror.org/00baskk38",
+            "country_code": "CH",
+            "type": "facility"
+          },
+          {
+            "name": "Max Planck Institute for Intelligent Systems",
+            "ror": "https://ror.org/04fq9j139",
+            "country_code": "DE",
+            "type": "facility"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Institute for Biomedical Engineering, ETH Zürich, Zürich, Switzerland. sitti@is.mpg.de",
+          "Physical Intelligence Department, Max Planck Institute for Intelligent Systems, Stuttgart, Germany. sitti@is.mpg.de",
+          "School of Medicine and College of Engineering, Koç University, Istanbul, Turkey. sitti@is.mpg.de",
+          "Institute for Biomedical Engineering, ETH Zürich, Zürich, Switzerland"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2024,
     "venue": "Nature Communications",
     "doi": "10.1038/s41467-024-51086-2",
@@ -258814,8 +259441,8 @@
     "issn_l": "",
     "publisher": "Springer Science and Business Media LLC",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "https://openalex.org/W39107326",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4401354360",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S64187185",
     "venue_metrics": {
@@ -266392,7 +267019,7 @@
       },
       {
         "name": "Zihuan Chen",
-        "openalex_author_id": null,
+        "openalex_author_id": "https://openalex.org/A5024222220",
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -267672,7 +268299,7 @@
         "name": "Hao Zhang",
         "openalex_author_id": null,
         "orcid": null,
-        "position": "middle",
+        "position": "last",
         "is_corresponding": true,
         "institutions": [
           {
@@ -298474,7 +299101,7 @@
     "corresponding_authors": [
       {
         "name": "Peipei Li",
-        "openalex_author_id": "https://openalex.org/A5100371522",
+        "openalex_author_id": null,
         "orcid": "https://orcid.org/0000-0002-9389-9419",
         "position": "middle",
         "is_corresponding": true,
@@ -298505,9 +299132,9 @@
         ]
       },
       {
-        "name": "Bo Li",
-        "openalex_author_id": "https://openalex.org/A5100628411",
-        "orcid": "https://orcid.org/0000-0001-5633-936X",
+        "name": "Ying Li",
+        "openalex_author_id": null,
+        "orcid": null,
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -298993,9 +299620,9 @@
     ],
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Additive Manufacturing",
+    "crossref_target_issn": "2214-8604",
     "issn": [
       "2214-8604"
     ],
