@@ -1,4 +1,90 @@
 {
+  "10.1117/12.3040656": {
+    "author_details": [
+      {
+        "name": "Pratyaksh Yemulwar",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Fatemeh Rajabasadi",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Tanya Saxena",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Man Ho Wong",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Josua Zscheile",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Robert Kirchner",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "proceedings-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [],
+    "issn_l": "",
+    "publisher": "SPIE",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "https://openalex.org/W4408654191",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "venue_trust_reason": "conference/proceedings not in trusted allowlist",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The paper focuses on advancements in two-photon absorption (2PA) 3D printing technology.\n2. Problem - It addresses the challenges of material exchange and flow dynamics in multi-material 3D printing.\n3. Method - The authors utilized the MergeOne system for in-situ material exchange and employed fluorescence microscopy alongside computational simulations.\n4. Key Result - They achieved successful fabrication of complex structures and demonstrated effective control over material properties during the printing process.\n5. Takeaway - This research highlights the potential for enhanced design flexibility and functionality in additive manufacturing through improved multi-material printing techniques.",
+    "relevance_note_en": "The summary captures the essence of the study's contributions to 3D printing technology.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "id": "10.1117/12.3040656"
+  },
   "10.21741/9781644903735-65": {
     "author_details": [
       {
@@ -19908,59 +19994,5 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "id": "10.1016/b978-0-443-15917-6.00006-2"
-  },
-  "10.1364/dh.2024.w5b.5": {
-    "author_details": [
-      {
-        "name": "Jesper Glückstad",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Andreas Erik Gejl Madsen",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
-    "metadata_source": "crossref",
-    "crossref_type": "proceedings-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [],
-    "issn_l": "",
-    "publisher": "Optica Publishing Group",
-    "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "https://openalex.org/W4401389857",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "venue_trust_reason": "conference/proceedings not in trusted allowlist",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The paper introduces HoloTile, a new approach to digital holographic light sculpting for volumetric additive manufacturing.\n2. Problem - It addresses the challenges associated with transitioning from traditional imaging-based methods to holographic techniques in volumetric printing.\n3. Method - The authors explore the implications of adopting a holographic configuration for volumetric additive manufacturing.\n4. Key Result - HoloTile demonstrates potential enhancements in the efficiency and quality of volumetric printing processes.\n5. Takeaway - The study suggests that holographic methods can significantly advance the capabilities of volumetric additive manufacturing.",
-    "relevance_note_en": "The paper is highly relevant as it presents a novel approach to improve volumetric additive manufacturing.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "id": "10.1364/dh.2024.w5b.5"
   }
 }
