@@ -1,4 +1,105 @@
 {
+  "10.1016/j.addlet.2025.100286": {
+    "author_details": [
+      {
+        "name": "Kayah St. Germain",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Damien Marchand",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Laurence Chocinski-Arnault",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Hani E. Naguib",
+        "orcid": "https://orcid.org/0000-0003-4822-9990",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Fabienne Touchard",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2772-3690"
+    ],
+    "issn_l": "",
+    "publisher": "Elsevier BV",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4410198916",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S4210237284",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210237284",
+      "issn_l": "2772-3690",
+      "issn": [
+        "2772-3690"
+      ],
+      "type": "journal",
+      "host_organization_name": "Elsevier BV",
+      "works_count": 381,
+      "cited_by_count": 3706,
+      "two_year_mean_citedness": 3.5346534653465347,
+      "h_index": 29,
+      "i10_index": 134,
+      "is_core": true,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 3.5346534653465347,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 2",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - This study investigates the enhancement of hydrophobicity in biocomposite materials through multimaterial 3D printing.\n2. Problem - The introduction of biofillers in PLA biocomposites leads to increased hydrophilicity and hygroscopicity.\n3. Method - The researchers applied a structured outer layer using multimaterial 3D printing to create a moisture barrier on the biocomposite.\n4. Key Result - The patterned surfaces exhibited higher water contact angles compared to flat prints, indicating improved hydrophobicity.\n5. Takeaway - Utilizing structured outer layers in 3D printing can effectively enhance the surface properties of biocomposite materials.",
+    "relevance_note_en": "The study directly addresses the challenges of hydrophilicity in biocomposites and presents a novel solution through 3D printing techniques.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-08-07",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1016/j.addlet.2025.100286"
+  },
   "10.1016/j.ifset.2024.103901": {
     "author_details": [
       {
@@ -25717,7 +25818,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "last_seen_in_crossref_run": "2026-08-07",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "id": "10.1007/s00170-025-16110-9"
   },
   "10.1016/j.matdes.2025.114118": {
@@ -33908,92 +34009,5 @@
     "last_seen_in_crossref_run": "2026-08-07",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.addma.2025.104850"
-  },
-  "10.1108/rpj-07-2024-0306": {
-    "author_details": [
-      {
-        "name": "Kieran D. Beaumont",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Joseph R. Kubalak",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Christopher B. Williams",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "Rapid Prototyping Journal",
-    "crossref_target_issn": "1355-2546",
-    "issn": [
-      "1355-2546",
-      "1758-7670"
-    ],
-    "issn_l": "",
-    "publisher": "Emerald",
-    "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "https://openalex.org/W4405849943",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S173500210",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S173500210",
-      "issn_l": "1355-2546",
-      "issn": [
-        "1355-2546",
-        "1758-7670"
-      ],
-      "type": "journal",
-      "host_organization_name": "Emerald Publishing Limited",
-      "works_count": 2524,
-      "cited_by_count": 98147,
-      "two_year_mean_citedness": 3.0,
-      "h_index": 139,
-      "i10_index": 1507,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Core manufacturing journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 3.0,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 3",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - The study focuses on the influence of build direction on overhang design constraints in multiaxis material extrusion.\n2. Problem - There is a lack of established design guidelines for support-free overhangs in multi-axis additive manufacturing.\n3. Method - The research utilized a 6-degree-of-freedom robotic arm to print test pieces with varying overhang angles and build directions to assess surface quality.\n4. Key Result - The findings indicated that the overhang threshold for traditional XY-planar printing remains applicable across different build directions without compromising surface fidelity.\n5. Takeaway - Designers can optimize tool orientation in multi-axis printing to enhance part accuracy while minimizing the need for support structures.",
-    "relevance_note_en": "The paper addresses a significant gap in additive manufacturing design guidelines, making it highly relevant for practitioners.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-08-07",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1108/rpj-07-2024-0306"
   }
 }
