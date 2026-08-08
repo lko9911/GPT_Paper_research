@@ -1,4 +1,103 @@
 {
+  "10.1177/1045389x251332442": {
+    "author_details": [
+      {
+        "name": "Farzad Gholami",
+        "orcid": "https://orcid.org/0009-0002-9205-3929",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "The George W. Woodruff School of Mechanical Engineering, Georgia Institute of Technology, Atlanta, GA, USA"
+          },
+          {
+            "name": "School of Materials Science and Engineering, Georgia Institute of Technology, Atlanta, GA, USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "The George W. Woodruff School of Mechanical Engineering, Georgia Institute of Technology, Atlanta, GA, USA",
+          "School of Materials Science and Engineering, Georgia Institute of Technology, Atlanta, GA, USA"
+        ]
+      },
+      {
+        "name": "H. Jerry Qi",
+        "orcid": "https://orcid.org/0000-0002-3212-5284",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "The George W. Woodruff School of Mechanical Engineering, Georgia Institute of Technology, Atlanta, GA, USA"
+          },
+          {
+            "name": "School of Materials Science and Engineering, Georgia Institute of Technology, Atlanta, GA, USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "The George W. Woodruff School of Mechanical Engineering, Georgia Institute of Technology, Atlanta, GA, USA",
+          "School of Materials Science and Engineering, Georgia Institute of Technology, Atlanta, GA, USA"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "1045-389X",
+      "1530-8138"
+    ],
+    "issn_l": "",
+    "publisher": "SAGE Publications",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4411298293",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S45331193",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S45331193",
+      "issn_l": "1045-389X",
+      "issn": [
+        "1045-389X",
+        "1530-8138"
+      ],
+      "type": "journal",
+      "host_organization_name": "SAGE Publishing",
+      "works_count": 5110,
+      "cited_by_count": 147092,
+      "two_year_mean_citedness": 2.859848484848485,
+      "h_index": 146,
+      "i10_index": 3084,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 2.859848484848485,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 3",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The paper discusses advancements in multimaterial additive manufacturing using grayscale digital light processing (g-DLP).\n2. Problem - Traditional digital light processing (DLP) is limited by its inability to produce parts with varied material properties from a single resin vat.\n3. Method - The authors explore g-DLP, which modulates UV light intensity at the pixel level to achieve spatially resolved tuning of material properties.\n4. Key Result - g-DLP enables the creation of complex structures with enhanced mechanical, optical, and electrical properties, along with applications in multicolor printing and functional electronics.\n5. Takeaway - This technique significantly expands design possibilities and efficiency in manufacturing advanced materials and devices.",
+    "relevance_note_en": "The summary captures the core advancements and implications of g-DLP in multimaterial additive manufacturing.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-08-08",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1177/1045389x251332442"
+  },
   "10.1038/s41563-025-02250-6": {
     "author_details": [],
     "corresponding_author_available": false,
@@ -25880,7 +25979,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "last_seen_in_crossref_run": "2026-08-08",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "id": "10.1007/s00170-025-16110-9"
   },
   "10.1016/j.matdes.2025.114118": {
@@ -33779,179 +33878,5 @@
     "last_seen_in_crossref_run": "2026-08-08",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/advs.202407825"
-  },
-  "10.1016/j.addma.2025.104661": {
-    "author_details": [
-      {
-        "name": "Wei Xiao",
-        "orcid": "https://orcid.org/0009-0003-2804-0477",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Shaoqi Shi",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Pei Liu",
-        "orcid": "https://orcid.org/0009-0003-4285-053X",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Zhilei Hao",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Zhaoxia Tian",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Qingqing Gao",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Kai Xu",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Yinxu Ni",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Jin Chen",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Changtian Zhu",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Zhixiang Li",
-        "orcid": "https://orcid.org/0000-0002-7821-846X",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Gaojie Xu",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Hui Zhang",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Fenghua Liu",
-        "orcid": "https://orcid.org/0000-0002-1785-2766",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "Additive Manufacturing",
-    "crossref_target_issn": "2214-8604",
-    "issn": [
-      "2214-8604"
-    ],
-    "issn_l": "",
-    "publisher": "Elsevier BV",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4406560861",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S2764842179",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S2764842179",
-      "issn_l": "2214-7810",
-      "issn": [
-        "2214-7810",
-        "2214-8604"
-      ],
-      "type": "journal",
-      "host_organization_name": "Elsevier BV",
-      "works_count": 5106,
-      "cited_by_count": 246110,
-      "two_year_mean_citedness": 7.721680420105026,
-      "h_index": 193,
-      "i10_index": 3661,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Core manufacturing journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 7.721680420105026,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 1",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - The study focuses on creating a flexible double-layer honeycomb structure for microwave absorption.\n2. Problem - There is a need for tunable microwave absorbers that can adapt to different frequencies.\n3. Method - The authors utilized 4D printing techniques to construct the intelligent sandwich structure.\n4. Key Result - The developed structure demonstrates effective tunability in microwave absorption properties.\n5. Takeaway - This innovative approach offers a promising solution for designing adaptable materials in microwave applications.",
-    "relevance_note_en": "The summary captures the essence of the research on microwave absorption and 4D printing.",
-    "abstract_used_for_summary": false,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-08-04",
-    "not_seen_in_latest_crossref_run": true,
-    "id": "10.1016/j.addma.2025.104661"
   }
 }
