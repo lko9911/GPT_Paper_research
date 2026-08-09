@@ -6,6 +6,8 @@ import json
 import os
 import re
 import ast
+import urllib.error
+import urllib.request
 from typing import Any
 
 CATEGORIES = [
@@ -223,7 +225,7 @@ TAG_ALIASES = {
 }
 
 
-def summarize_record(record: dict[str, Any], allow_openai: bool = True) -> dict[str, Any]:
+def summarize_record(record: dict[str, Any], allow_openai: bool = True, allow_local: bool = False) -> dict[str, Any]:
     """Add English summary fields to a record.
 
     OPENAI_API_KEY enables model-based generation. Without it, this function
@@ -237,6 +239,14 @@ def summarize_record(record: dict[str, Any], allow_openai: bool = True) -> dict[
         if generated:
             record.update(generated)
             record["_summary_provider"] = "openai"
+            return record
+
+    if allow_local:
+        generated = _summarize_with_local_ollama(record, abstract)
+        if generated:
+            record.update(generated)
+            record["_summary_provider"] = "local"
+            record["_summary_model"] = os.getenv("LOCAL_LLM_MODEL", "qwen2.5:7b")
             return record
 
     record.update(_fallback_summary(record, abstract))
@@ -284,6 +294,74 @@ def _summarize_with_openai(record: dict[str, Any], abstract: str) -> dict[str, A
         return _sanitize_generated(payload, _text(record, abstract))
     except Exception as exc:  # Fallback keeps scheduled jobs from failing on optional AI issues.
         print(f"OpenAI summary fallback for '{record.get('title', '')}': {exc}")
+        return None
+
+
+def _summarize_with_local_ollama(record: dict[str, Any], abstract: str) -> dict[str, Any] | None:
+    """Generate a local LLM summary through Ollama's localhost API."""
+
+    endpoint = os.getenv("LOCAL_LLM_URL", "http://localhost:11434").rstrip("/") + "/api/chat"
+    model = os.getenv("LOCAL_LLM_MODEL", "qwen2.5:7b")
+    timeout = float(os.getenv("LOCAL_LLM_TIMEOUT_SECONDS", "180"))
+    prompt = {
+        "title": record.get("title"),
+        "authors": record.get("authors", []),
+        "year": record.get("year"),
+        "venue": record.get("venue"),
+        "abstract_for_private_summary_only": abstract,
+        "known_tags": record.get("tags", []),
+        "known_categories": record.get("categories", []),
+        "allowed_categories": CATEGORIES,
+    }
+    payload = {
+        "model": model,
+        "stream": False,
+        "format": "json",
+        "options": {
+            "temperature": float(os.getenv("LOCAL_LLM_TEMPERATURE", "0.2")),
+            "num_ctx": int(os.getenv("LOCAL_LLM_NUM_CTX", "4096")),
+        },
+        "messages": [
+            {
+                "role": "system",
+                "content": (
+                    "You write new English paper summaries for a manufacturing research tracker. "
+                    "Do not copy, translate, or closely paraphrase abstract sentences. "
+                    "Write compact synthesis only. Return strict JSON with ai_summary_en, relevance_score, "
+                    "relevance_note_en, tags, categories. ai_summary_en must answer exactly five labeled lines: "
+                    "1. Topic -, 2. Problem -, 3. Method -, 4. Key Result -, 5. Takeaway -. "
+                    "Use only the allowed category names."
+                ),
+            },
+            {"role": "user", "content": json.dumps(prompt, ensure_ascii=False)},
+        ],
+    }
+    try:
+        request = urllib.request.Request(
+            endpoint,
+            data=json.dumps(payload).encode("utf-8"),
+            headers={"Content-Type": "application/json"},
+            method="POST",
+        )
+        with urllib.request.urlopen(request, timeout=timeout) as response:
+            data = json.loads(response.read().decode("utf-8"))
+        content = ((data.get("message") or {}).get("content") or data.get("response") or "{}").strip()
+        parsed = json.loads(_extract_json(content))
+        sanitized = _sanitize_generated(parsed, _text(record, abstract))
+        sanitized["categories"] = _merge_generated_labels(
+            record.get("categories", []),
+            sanitized.get("categories", []),
+            allowed=set(CATEGORIES),
+            limit=2,
+        ) or sanitized["categories"]
+        sanitized["tags"] = _dedupe_tags(
+            _as_text_list(record.get("tags", [])) + _as_text_list(sanitized.get("tags", [])),
+            sanitized["categories"],
+            _text(record, abstract),
+        )[:6] or sanitized["tags"]
+        return sanitized
+    except (urllib.error.URLError, TimeoutError, json.JSONDecodeError, ValueError) as exc:
+        print(f"Local LLM summary fallback for '{record.get('title', '')}': {exc}")
         return None
 
 
@@ -644,7 +722,7 @@ def _sanitize_generated(payload: dict[str, Any], source_text: str = "") -> dict[
     categories = [category for category in payload.get("categories", []) if category in CATEGORIES][:2]
     tags = [str(tag).strip() for tag in payload.get("tags", []) if str(tag).strip()]
     cleaned_tags = _dedupe_tags(tags, categories, source_text)[:6] or _fallback_tags("", categories)
-    score = int(payload.get("relevance_score", 5))
+    score = _safe_score(payload.get("relevance_score", 5))
     if source_text and _is_manufacturing_digital_twin(source_text):
         score = max(score, 7)
     return {
@@ -654,6 +732,31 @@ def _sanitize_generated(payload: dict[str, Any], source_text: str = "") -> dict[
         "tags": cleaned_tags,
         "categories": categories or ["Multi-material AM"],
     }
+
+
+def _safe_score(value: Any) -> int:
+    if isinstance(value, (int, float)):
+        return int(value)
+    match = re.search(r"\d+", str(value or ""))
+    return int(match.group(0)) if match else 5
+
+
+def _merge_generated_labels(existing: Any, generated: Any, allowed: set[str] | None = None, limit: int = 6) -> list[str]:
+    labels: list[str] = []
+    for value in _as_text_list(existing) + _as_text_list(generated):
+        if allowed is not None and value not in allowed:
+            continue
+        if value not in labels:
+            labels.append(value)
+        if len(labels) >= limit:
+            break
+    return labels
+
+
+def _as_text_list(value: Any) -> list[str]:
+    if not isinstance(value, list):
+        return []
+    return [str(item).strip() for item in value if str(item).strip()]
 
 
 def _ko_summary_labels() -> list[str]:

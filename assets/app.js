@@ -121,8 +121,10 @@ const UI_TEXT = {
     relevanceLabel: "Relevance",
     amlScoreLabel: "AML score",
     openaiApplied: "AI summary",
+    localApplied: "Local AI summary",
     openaiNotApplied: "Metadata summary",
     openaiAppliedTitle: "This summary was generated with the OpenAI API.",
+    localAppliedTitle: "This summary was generated locally with an Ollama model.",
     openaiNotAppliedTitle: "This summary was written without the OpenAI API, using title, abstract-availability, DOI, and public metadata signals.",
     fallbackSummary: "Metadata-based summary",
     summaryMissing: "Summary has not been generated yet.",
@@ -536,6 +538,7 @@ function applyStaticLanguage() {
   setText("#venue-filter option[value='']", t("all"));
   setText("#summary-provider-filter option[value='']", t("allSummaries"));
   setText("#summary-provider-filter option[value='openai']", t("openaiApplied"));
+  setText("#summary-provider-filter option[value='local']", t("localApplied"));
   setText("#summary-provider-filter option[value='metadata']", t("openaiNotApplied"));
   setText("#newness-filter option[value='']", t("allNewness"));
   setText("#newness-filter option[value='week']", t("newThisWeek"));
@@ -1348,9 +1351,10 @@ function resetFilters() {
 }
 
 function summaryProviderForFilter(paper) {
-  return paper.openai_summary_applied === true || paper.summary_provider === "openai"
-    ? "openai"
-    : "metadata";
+  const provider = String((paper && paper.summary_provider) || "").toLowerCase();
+  if (paper && (paper.openai_summary_applied === true || provider === "openai")) return "openai";
+  if (provider === "local" || (paper && paper.local_summary_applied === true)) return "local";
+  return "metadata";
 }
 
 function render() {
@@ -1775,11 +1779,19 @@ function formatSummaryProviderLabel(paper) {
   if (hasDisplayableOpenAiSummary(paper)) {
     return { text: t("openaiApplied"), title: t("openaiAppliedTitle"), className: "summary-provider-badge is-openai" };
   }
+  if (hasDisplayableLocalSummary(paper)) {
+    return { text: t("localApplied"), title: t("localAppliedTitle"), className: "summary-provider-badge is-local" };
+  }
   return { text: t("openaiNotApplied"), title: t("openaiNotAppliedTitle"), className: "summary-provider-badge is-fallback" };
 }
 
 function hasDisplayableOpenAiSummary(paper) {
   if (!paper || (paper.openai_summary_applied !== true && paper.summary_provider !== "openai")) return false;
+  return parseStoredSummarySections(paper.ai_summary_en || "").length > 0;
+}
+
+function hasDisplayableLocalSummary(paper) {
+  if (!paper || (paper.summary_provider !== "local" && paper.local_summary_applied !== true)) return false;
   return parseStoredSummarySections(paper.ai_summary_en || "").length > 0;
 }
 
@@ -1964,8 +1976,8 @@ async function loadPaperDetail(paperId, options = {}) {
 function scheduleVisibleOpenAiDetailLoad(papers) {
   const candidates = papers
     .filter((paper) => paper && !paper.is_aml_recommendation)
-    .filter((paper) => paper.openai_summary_applied === true || paper.summary_provider === "openai")
-    .filter((paper) => !hasDisplayableOpenAiSummary(paperWithDetails(paper)))
+    .filter((paper) => paper.openai_summary_applied === true || paper.summary_provider === "openai" || paper.summary_provider === "local" || paper.local_summary_applied === true)
+    .filter((paper) => !hasDisplayableOpenAiSummary(paperWithDetails(paper)) && !hasDisplayableLocalSummary(paperWithDetails(paper)))
     .filter((paper) => !state.paperDetails.has(paper.id))
     .filter((paper) => !state.detailLoading.has(paper.id))
     .filter((paper) => !state.autoDetailAttempted.has(paper.id))

@@ -51,8 +51,8 @@
       "Yong Hoon Jang"
     ],
     "categories": [
-      "Multi-material AM",
-      "Functionally Graded AM"
+      "Functionally Graded AM",
+      "Multi-material AM"
     ],
     "curation_priority": false,
     "doi": "10.1021/acsami.6c13885",
@@ -61,6 +61,7 @@
     "is_core_venue": false,
     "is_weekly_new": true,
     "last_updated": "2026-08-09",
+    "local_summary_applied": true,
     "openai_summary_applied": false,
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
@@ -72,10 +73,11 @@
     "source": [
       "Crossref"
     ],
-    "summary_provider": "fallback",
+    "summary_model": "qwen2.5:7b",
+    "summary_provider": "local",
     "tags": [
-      "Machine learning",
-      "FDM/Material extrusion"
+      "Additive manufacturing",
+      "Functionally graded materials"
     ],
     "title": "Curvature-Programmable Sheet-to-3D Morphing of Single-Material Architected Laminates: A Functionally Graded Framework for Foaming-Induced Bending",
     "url": "https://doi.org/10.1021/acsami.6c13885",
