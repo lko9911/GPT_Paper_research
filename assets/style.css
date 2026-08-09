@@ -99,29 +99,63 @@ select {
   top: 0;
   left: 0;
   z-index: 9998;
-  width: var(--trail-size, 10px);
-  height: var(--trail-size, 10px);
-  border-radius: 999px;
-  background:
-    radial-gradient(circle, color-mix(in srgb, var(--green), white 18%) 0 28%, transparent 62%),
-    radial-gradient(circle, color-mix(in srgb, var(--blue), transparent 42%) 0 42%, transparent 72%);
-  box-shadow: 0 0 18px color-mix(in srgb, var(--green), transparent 58%);
-  opacity: 0.38;
+  width: 0;
+  height: 0;
+  opacity: 0;
   pointer-events: none;
-  transform: translate(-50%, -50%) scale(0.86);
-  animation: pointer-trail-fade 620ms ease-out forwards;
+  transition: opacity 0.22s ease;
 }
 
-@keyframes pointer-trail-fade {
-  0% {
-    opacity: 0.38;
-    transform: translate(-50%, -50%) scale(0.86);
-  }
+.pointer-trail.is-visible {
+  opacity: 1;
+}
 
-  100% {
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(2.1);
-  }
+.pointer-trail.is-text {
+  opacity: 0;
+}
+
+.pointer-trail span {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  width: calc(7px + (3 - var(--trail-index)) * 3px);
+  height: calc(7px + (3 - var(--trail-index)) * 3px);
+  border-radius: 999px;
+  background:
+    radial-gradient(circle, color-mix(in srgb, var(--green), white 14%) 0 34%, transparent 68%),
+    radial-gradient(circle, color-mix(in srgb, var(--blue), transparent 55%) 0 46%, transparent 76%);
+  box-shadow:
+    0 0 14px color-mix(in srgb, var(--green), transparent 54%),
+    0 0 28px color-mix(in srgb, var(--blue), transparent 84%);
+  opacity: calc(0.3 - var(--trail-index) * 0.045);
+  transform: translate3d(-100px, -100px, 0);
+  translate: -50% -50%;
+  transition:
+    width 0.18s ease,
+    height 0.18s ease,
+    background 0.18s ease,
+    box-shadow 0.18s ease,
+    opacity 0.18s ease;
+  will-change: transform;
+}
+
+.pointer-trail.is-interactive span {
+  width: calc(10px + (3 - var(--trail-index)) * 3px);
+  height: calc(10px + (3 - var(--trail-index)) * 3px);
+  background:
+    radial-gradient(circle, color-mix(in srgb, var(--blue), white 16%) 0 38%, transparent 70%),
+    radial-gradient(circle, color-mix(in srgb, var(--green), transparent 58%) 0 48%, transparent 76%);
+  box-shadow:
+    0 0 16px color-mix(in srgb, var(--blue), transparent 48%),
+    0 0 30px color-mix(in srgb, var(--green), transparent 82%);
+  opacity: calc(0.38 - var(--trail-index) * 0.05);
+}
+
+.pointer-trail.is-pressed span {
+  width: calc(5px + (3 - var(--trail-index)) * 2px);
+  height: calc(5px + (3 - var(--trail-index)) * 2px);
+  opacity: calc(0.46 - var(--trail-index) * 0.06);
 }
 
 .shell,

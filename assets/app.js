@@ -516,36 +516,70 @@ function setupPointerTrail() {
   const reducedMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   if (!canHover || reducedMotion) return;
 
-  let lastX = 0;
-  let lastY = 0;
-  let lastTime = 0;
+  const trail = document.createElement("div");
+  trail.className = "pointer-trail";
+  trail.setAttribute("aria-hidden", "true");
+  trail.innerHTML = [0, 1, 2, 3].map((index) => `<span style="--trail-index:${index}"></span>`).join("");
+  document.body.append(trail);
+
+  const dots = [...trail.querySelectorAll("span")].map((dot, index) => ({
+    element: dot,
+    x: window.innerWidth / 2,
+    y: window.innerHeight / 2,
+    ease: 0.18 - index * 0.025,
+  }));
+  const target = {
+    x: window.innerWidth / 2,
+    y: window.innerHeight / 2,
+  };
+  let rafId = 0;
   const textSelector = 'input, textarea, select, [contenteditable="true"]';
+  const interactiveSelector = [
+    "a",
+    "button",
+    "summary",
+    '[role="button"]',
+    ".link-pill",
+    ".badge.tag",
+    ".venue-pill",
+    ".venue-card",
+    ".filter-action-button",
+    ".side-nav a",
+    ".side-nav button",
+  ].join(",");
+
+  const animate = () => {
+    dots.forEach((dot) => {
+      dot.x += (target.x - dot.x) * dot.ease;
+      dot.y += (target.y - dot.y) * dot.ease;
+      dot.element.style.transform = `translate3d(${dot.x}px, ${dot.y}px, 0)`;
+    });
+    rafId = window.requestAnimationFrame(animate);
+  };
 
   window.addEventListener(
     "pointermove",
     (event) => {
       if (event.pointerType && event.pointerType !== "mouse") return;
-      const target = event.target instanceof Element ? event.target : null;
-      if (target && target.closest(textSelector)) return;
-
-      const now = performance.now();
-      const distance = Math.hypot(event.clientX - lastX, event.clientY - lastY);
-      if (now - lastTime < 28 || distance < 18) return;
-
-      lastX = event.clientX;
-      lastY = event.clientY;
-      lastTime = now;
-
-      const trail = document.createElement("span");
-      trail.className = "pointer-trail";
-      trail.style.left = `${event.clientX}px`;
-      trail.style.top = `${event.clientY}px`;
-      trail.style.setProperty("--trail-size", `${Math.min(18, 8 + distance * 0.08)}px`);
-      document.body.append(trail);
-      trail.addEventListener("animationend", () => trail.remove(), { once: true });
+      const targetElement = event.target instanceof Element ? event.target : null;
+      trail.classList.toggle("is-text", Boolean(targetElement && targetElement.closest(textSelector)));
+      trail.classList.toggle("is-interactive", Boolean(targetElement && targetElement.closest(interactiveSelector)));
+      trail.classList.add("is-visible");
+      target.x = event.clientX;
+      target.y = event.clientY;
     },
     { passive: true },
   );
+
+  window.addEventListener("pointerdown", () => trail.classList.add("is-pressed"));
+  window.addEventListener("pointerup", () => trail.classList.remove("is-pressed"));
+  document.addEventListener("mouseleave", () => trail.classList.remove("is-visible"));
+  document.addEventListener("mouseenter", () => trail.classList.add("is-visible"));
+  rafId = window.requestAnimationFrame(animate);
+
+  window.addEventListener("pagehide", () => {
+    if (rafId) window.cancelAnimationFrame(rafId);
+  });
 }
 
 function applyPreferences() {
