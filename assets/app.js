@@ -351,6 +351,7 @@ const els = {
 
 async function init() {
   setupPreferences();
+  setupCustomCursor();
   state.papers = await loadPaperIndex();
   preparePaperRuntimeCache(state.papers);
   try {
@@ -1357,6 +1358,68 @@ function summaryProviderForFilter(paper) {
   if (paper && (paper.openai_summary_applied === true || provider === "openai")) return "openai";
   if (provider === "local" || (paper && paper.local_summary_applied === true)) return "openai";
   return "metadata";
+}
+
+function setupCustomCursor() {
+  const canHover = window.matchMedia && window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+  const reducedMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (!canHover || reducedMotion) return;
+
+  const cursor = document.createElement("div");
+  cursor.className = "site-cursor";
+  cursor.setAttribute("aria-hidden", "true");
+  cursor.innerHTML = '<span class="site-cursor-dot"></span><span class="site-cursor-ring"></span>';
+  document.body.append(cursor);
+  document.documentElement.classList.add("has-custom-cursor");
+
+  const interactiveSelector = [
+    "a",
+    "button",
+    "select",
+    "summary",
+    '[role="button"]',
+    ".link-pill",
+    ".badge.tag",
+    ".venue-pill",
+    ".venue-card",
+    ".filter-action-button",
+    ".side-nav a",
+    ".side-nav button",
+  ].join(",");
+  const textSelector = 'input, textarea, [contenteditable="true"]';
+
+  let targetX = window.innerWidth / 2;
+  let targetY = window.innerHeight / 2;
+  let currentX = targetX;
+  let currentY = targetY;
+  let rafId = 0;
+
+  const animate = () => {
+    currentX += (targetX - currentX) * 0.28;
+    currentY += (targetY - currentY) * 0.28;
+    cursor.style.transform = `translate3d(${currentX}px, ${currentY}px, 0)`;
+    rafId = window.requestAnimationFrame(animate);
+  };
+
+  window.addEventListener("pointermove", (event) => {
+    if (event.pointerType && event.pointerType !== "mouse") return;
+    targetX = event.clientX;
+    targetY = event.clientY;
+    cursor.classList.add("is-visible");
+    const target = event.target instanceof Element ? event.target : null;
+    cursor.classList.toggle("is-interactive", Boolean(target && target.closest(interactiveSelector)));
+    cursor.classList.toggle("is-text", Boolean(target && target.closest(textSelector)));
+  });
+
+  window.addEventListener("pointerdown", () => cursor.classList.add("is-pressed"));
+  window.addEventListener("pointerup", () => cursor.classList.remove("is-pressed"));
+  document.addEventListener("mouseleave", () => cursor.classList.remove("is-visible"));
+  document.addEventListener("mouseenter", () => cursor.classList.add("is-visible"));
+  rafId = window.requestAnimationFrame(animate);
+
+  window.addEventListener("pagehide", () => {
+    if (rafId) window.cancelAnimationFrame(rafId);
+  });
 }
 
 function render() {
