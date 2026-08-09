@@ -1780,10 +1780,10 @@ function formatSummarySections(paper) {
 
 function formatSummaryProviderLabel(paper) {
   if (hasDisplayableOpenAiSummary(paper)) {
-    return { text: t("openaiApplied"), title: t("openaiAppliedTitle"), className: "summary-provider-badge is-openai" };
+    return { text: `${t("openaiApplied")} · ${t("openaiSource")}`, title: t("openaiAppliedTitle"), className: "summary-provider-badge is-openai" };
   }
   if (hasDisplayableLocalSummary(paper)) {
-    return { text: t("localApplied"), title: t("localAppliedTitle"), className: "summary-provider-badge is-openai" };
+    return { text: `${t("localApplied")} · ${t("localSource")}`, title: t("localAppliedTitle"), className: "summary-provider-badge is-local" };
   }
   return { text: t("openaiNotApplied"), title: t("openaiNotAppliedTitle"), className: "summary-provider-badge is-fallback" };
 }
