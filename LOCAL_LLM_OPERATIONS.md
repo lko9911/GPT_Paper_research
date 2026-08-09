@@ -122,3 +122,17 @@ Local embedding caches are stored separately from OpenAI embedding caches:
 - `data/aml_embeddings/aml_candidate_embeddings_local_nomic-embed-text.json`
 
 OpenAI and local embedding vectors must not be mixed because their dimensions and score distributions differ. The local provider therefore uses a stricter default public AML threshold.
+
+## Local AML Recommendation Summaries
+
+AML recommendations are stored separately from the main paper list, so remaining metadata summaries there must be refreshed separately:
+
+```powershell
+$env:LOCAL_LLM_MODEL = "qwen2.5:7b"
+$env:LOCAL_REQUIRE_ABSTRACT = "false"
+$env:MAX_LOCAL_AML_SUMMARIES = "0"
+Remove-Item Env:DRY_RUN -ErrorAction SilentlyContinue
+& "C:\Users\user\anaconda3\python.exe" scripts\refresh_local_aml_summaries.py
+```
+
+Use `MAX_LOCAL_AML_SUMMARIES` with a positive number for a small test batch. `0` means refresh every AML recommendation that is still metadata-only.

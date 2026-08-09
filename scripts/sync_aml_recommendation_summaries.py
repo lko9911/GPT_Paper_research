@@ -1,4 +1,4 @@
-"""Sync stored OpenAI summaries into public AML recommendation records."""
+"""Sync stored AI summaries into public AML recommendation records."""
 
 from __future__ import annotations
 
@@ -16,14 +16,14 @@ AML_RECOMMENDATIONS_PATH = ROOT / "public" / "data" / "aml_recommended_papers.js
 def main() -> None:
     papers = _load_list(PAPERS_PATH)
     recommendations = _load_list(AML_RECOMMENDATIONS_PATH)
-    summaries = _openai_summary_index(papers)
+    summaries = _ai_summary_index(papers)
 
     updated = 0
-    already_openai = 0
+    already_ai = 0
     missing_source = 0
     for item in recommendations:
-        if item.get("summary_provider") == "openai" or item.get("openai_summary_applied") is True:
-            already_openai += 1
+        if _has_ai_summary(item):
+            already_ai += 1
             continue
         source = summaries.get(_record_key(item))
         if not source:
@@ -32,23 +32,21 @@ def main() -> None:
         for key, value in source.items():
             if value not in (None, "", []):
                 item[key] = value
-        item["summary_provider"] = "openai"
-        item["openai_summary_applied"] = True
         item["summary_source"] = "curated_paper_pool"
         updated += 1
 
     _write_json(AML_RECOMMENDATIONS_PATH, recommendations)
     print(
         "AML recommendation summary sync complete: "
-        f"updated={updated}, already_openai={already_openai}, missing_source={missing_source}, "
+        f"updated={updated}, already_ai={already_ai}, missing_source={missing_source}, "
         f"total={len(recommendations)}"
     )
 
 
-def _openai_summary_index(papers: list[dict[str, Any]]) -> dict[str, dict[str, Any]]:
+def _ai_summary_index(papers: list[dict[str, Any]]) -> dict[str, dict[str, Any]]:
     summaries: dict[str, dict[str, Any]] = {}
     for paper in papers:
-        if paper.get("summary_provider") != "openai" and paper.get("openai_summary_applied") is not True:
+        if not _has_ai_summary(paper):
             continue
         summary = str(paper.get("ai_summary_en") or "").strip()
         if not summary:
@@ -56,14 +54,32 @@ def _openai_summary_index(papers: list[dict[str, Any]]) -> dict[str, dict[str, A
         key = _record_key(paper)
         if not key:
             continue
+        provider = _summary_provider(paper)
         summaries[key] = {
             "ai_summary_en": summary,
             "relevance_note_en": paper.get("relevance_note_en", ""),
-            "summary_provider": "openai",
-            "openai_summary_applied": True,
+            "summary_provider": provider,
+            "openai_summary_applied": provider == "openai",
+            "local_summary_applied": provider == "local",
+            "summary_model": paper.get("summary_model", ""),
             "abstract_used_for_summary": bool(paper.get("abstract_used_for_summary")),
         }
     return summaries
+
+
+def _has_ai_summary(record: dict[str, Any]) -> bool:
+    return _summary_provider(record) in {"openai", "local"}
+
+
+def _summary_provider(record: dict[str, Any]) -> str:
+    provider = str(record.get("summary_provider") or "").strip().lower()
+    if provider in {"openai", "local"}:
+        return provider
+    if record.get("openai_summary_applied") is True:
+        return "openai"
+    if record.get("local_summary_applied") is True:
+        return "local"
+    return provider
 
 
 def _record_key(record: dict[str, Any]) -> str:

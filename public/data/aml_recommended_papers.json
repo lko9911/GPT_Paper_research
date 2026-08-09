@@ -13970,18 +13970,31 @@
         "similarity": 0.7854
       }
     ],
-    "ai_summary_en": "",
-    "relevance_note_en": "",
-    "summary_provider": "metadata",
+    "ai_summary_en": "1. Topic - Rheological properties of composite filament materials in material extrusion processes\n2. Problem - Understanding the rheological behavior of composite filaments to improve green part shaping quality.\n3. Method - Studying three high-filling-ratio self-made composite filaments, measuring pressure drop during shaping and establishing a theoretical model for rheological properties.\n4. Key Result - The nozzle diameter has the most significant effect on the rheological property of the molten material, followed by building speed, while extrusion temperature's influence is relatively weak.\n5. Takeaway - A reliable theoretical model was developed to predict the rheological behavior of composite filaments, aiding in optimizing manufacturing conditions.",
+    "relevance_note_en": "Highly relevant as it addresses the rheological properties crucial for material extrusion processes and provides insights into parameter optimization.",
+    "summary_provider": "local",
     "openai_summary_applied": false,
-    "summary_source": "",
+    "summary_source": "local_aml_recommendation_refresh",
     "updated_at": "2026-07-11T06:06:17Z",
     "first_added": "2026-07-11T03:57:18Z",
     "last_updated": "2026-07-11T06:06:17Z",
     "is_new_recommendation": false,
     "is_weekly_new": false,
     "weekly_new": false,
-    "openalex_source_id": "https://openalex.org/S4210174904"
+    "openalex_source_id": "https://openalex.org/S4210174904",
+    "tags": [
+      "MMAM",
+      "Blended FDM / Digital Material Filament"
+    ],
+    "categories": [
+      "Material Distribution Optimization"
+    ],
+    "relevance_score": 9,
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "local_summary_applied": true,
+    "summary_model": "qwen2.5:7b"
   },
   {
     "title": "4D printing of shape memory polymer composites via glass fiber-regulated shape morphing",
@@ -16885,18 +16898,32 @@
         "similarity": 0.8527
       }
     ],
-    "ai_summary_en": "",
-    "relevance_note_en": "",
-    "summary_provider": "metadata",
+    "ai_summary_en": "1. Topic - Machine learning-guided tuning of shape memory behavior in 4D-printed single-layer elastomer strip\n2. Problem - Optimizing the mechanical properties and shape memory performance of biocompatible 4D-printed materials.\n3. Method - Using machine learning algorithms to predict critical response variables such as ultimate tensile strength (UTS) and shape memory programming stages. Optimizing key printing parameters like nozzle temperature, raster angle, and printing speed through a dataset of 72 instances per response.\n4. Key Result - Achieved a significant shape-recovery ratio of 89.43% and an UTS of 11.15 MPa with the optimized conditions.\n5. Takeaway - The integration of machine learning with 4D-printed biocompatible composites can enhance both mechanical properties and shape memory behavior, making them suitable for targeted drug delivery applications.",
+    "relevance_note_en": "Highly relevant to the use of AI in additive manufacturing, specifically focusing on 4D printing and its application in biocompatible materials.",
+    "summary_provider": "local",
     "openai_summary_applied": false,
-    "summary_source": "",
+    "summary_source": "local_aml_recommendation_refresh",
     "updated_at": "2026-07-11T06:06:17Z",
     "first_added": "2026-07-11T03:57:18Z",
     "last_updated": "2026-07-11T06:06:17Z",
     "is_new_recommendation": false,
     "is_weekly_new": false,
     "weekly_new": false,
-    "openalex_source_id": "https://openalex.org/S5407047337"
+    "openalex_source_id": "https://openalex.org/S5407047337",
+    "tags": [
+      "4d printing",
+      "machine learning",
+      "biocompatible materials"
+    ],
+    "categories": [
+      "AI and Machine Learning for AM"
+    ],
+    "relevance_score": 9,
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "local_summary_applied": true,
+    "summary_model": "qwen2.5:7b"
   },
   {
     "title": "Closed-Loop and Sustainable 4D Printing of Multi-Stimuli-Responsive Sulfur-Rich Polymer Composites for Autonomous Task Execution (Adv. Mater. 44/2025)",
@@ -28007,18 +28034,32 @@
         "similarity": 0.7053
       }
     ],
-    "ai_summary_en": "",
-    "relevance_note_en": "",
-    "summary_provider": "metadata",
+    "ai_summary_en": "1. Topic - Self-driving laboratory platform\n2. Problem - High costs, complex infrastructure, and limited accessibility hinder the widespread adoption of self-driving laboratories.\n3. Method - Developing RoboChem-Flex with customizable hardware and a flexible Python-based software framework integrating Bayesian optimization strategies.\n4. Key Result - Demonstrated versatility across six diverse case studies including photocatalysis, biocatalysis, thermal cross-couplings, and enantioselective catalysis.\n5. Takeaway - RoboChem-Flex provides an affordable, scalable, and open platform for automated chemical experimentation, promoting broader participation in research.",
+    "relevance_note_en": "Highly relevant as it addresses the key challenges of self-driving laboratories through a practical solution.",
+    "summary_provider": "local",
     "openai_summary_applied": false,
-    "summary_source": "",
+    "summary_source": "local_aml_recommendation_refresh",
     "updated_at": "2026-07-11T06:06:17Z",
     "first_added": "2026-07-11T03:57:18Z",
     "last_updated": "2026-07-11T06:06:17Z",
     "is_new_recommendation": false,
     "is_weekly_new": false,
     "weekly_new": false,
-    "openalex_source_id": "https://openalex.org/S4210215815"
+    "openalex_source_id": "https://openalex.org/S4210215815",
+    "tags": [
+      "automated reaction optimization",
+      "self-driving laboratory",
+      "affordable laboratory solutions"
+    ],
+    "categories": [
+      "AI and Machine Learning for AM"
+    ],
+    "relevance_score": 9,
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "local_summary_applied": true,
+    "summary_model": "qwen2.5:7b"
   },
   {
     "title": "4D Printed Hydrogel Expanders for Personalized and Accelerated Soft Tissue Regeneration",
@@ -32835,18 +32876,34 @@
         "similarity": 0.8013
       }
     ],
-    "ai_summary_en": "",
-    "relevance_note_en": "",
-    "summary_provider": "metadata",
+    "ai_summary_en": "1. Topic - Eliminating structural defects in large area mechanical metamaterials\n2. Problem - Structural defects in large-area mechanical metamaterials produced using stereolithography techniques.\n3. Method - Utilizing hot lithography within a large-area projection micro-stereolithography process to improve material properties and eliminate defects.\n4. Key Result - Successful elimination of structural defects, leading to improved mechanical performance of the metamaterials.\n5. Takeaway - Hot lithography can significantly enhance the quality and reliability of large-scale stereolithographic manufacturing processes.",
+    "relevance_note_en": "Highly relevant as it addresses a critical issue in the production of mechanical metamaterials using stereolithography.",
+    "summary_provider": "local",
     "openai_summary_applied": false,
-    "summary_source": "",
+    "summary_source": "local_aml_recommendation_refresh",
     "updated_at": "2026-07-11T06:06:17Z",
     "first_added": "2026-07-11T03:57:18Z",
     "last_updated": "2026-07-11T06:06:17Z",
     "is_new_recommendation": false,
     "is_weekly_new": false,
     "weekly_new": false,
-    "openalex_source_id": "https://openalex.org/S2764842179"
+    "openalex_source_id": "https://openalex.org/S2764842179",
+    "tags": [
+      "SLA",
+      "metamaterial",
+      "projection micro-stereolithography",
+      "micro-stereolithography",
+      "mechanical metamaterials"
+    ],
+    "categories": [
+      "Multi-material AM"
+    ],
+    "relevance_score": 9,
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "local_summary_applied": true,
+    "summary_model": "qwen2.5:7b"
   },
   {
     "title": "4D-Printed Dual-Functional Hydrogels Breaking the Trade-Off Between Rapid Kinetics and Ultrahigh Water Uptake for Atmospheric Water Harvesting",
@@ -38938,18 +38995,32 @@
         "similarity": 0.782
       }
     ],
-    "ai_summary_en": "",
-    "relevance_note_en": "",
-    "summary_provider": "metadata",
+    "ai_summary_en": "1. Topic - Strength characteristics of agricultural machine parts manufactured by FDM technology\n2. Problem - Determining the mechanical properties of polymer parts intended for use in agricultural machinery.\n3. Method - Experimental studies using PLA filament with different infill types and densities, conducted on a da Vinci Pro 3x1 3D printer.\n4. Key Result - Concentric infill density at 50% showed the best elastic modulus results.\n5. Takeaway - A seeding unit prototype was designed and tested, showing improved metering performance for small-seeded crops with an operating speed range of 40-60 rpm.",
+    "relevance_note_en": "Highly relevant to additive manufacturing in the context of agricultural machinery.",
+    "summary_provider": "local",
     "openai_summary_applied": false,
-    "summary_source": "",
+    "summary_source": "local_aml_recommendation_refresh",
     "updated_at": "2026-07-11T06:06:17Z",
     "first_added": "2026-07-11T03:57:18Z",
     "last_updated": "2026-07-11T06:06:17Z",
     "is_new_recommendation": false,
     "is_weekly_new": false,
     "weekly_new": false,
-    "openalex_source_id": "https://openalex.org/S4210217655"
+    "openalex_source_id": "https://openalex.org/S4210217655",
+    "tags": [
+      "fdm",
+      "agricultural machinery"
+    ],
+    "categories": [
+      "Multi-material AM",
+      "Material Distribution Optimization"
+    ],
+    "relevance_score": 8,
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "local_summary_applied": true,
+    "summary_model": "qwen2.5:7b"
   },
   {
     "title": "Multi-material top-down vat photopolymerization 3D printing based on liquid surface supported printing",
@@ -42234,18 +42305,31 @@
         "similarity": 0.7995
       }
     ],
-    "ai_summary_en": "",
-    "relevance_note_en": "",
-    "summary_provider": "metadata",
+    "ai_summary_en": "1. Topic - Mechanical characterization of 3D-printable soft materials\n2. Problem - Limited availability of material models for predicting the behavior of soft matter in additive manufacturing.\n3. Method - Detailed mechanical testing and constitutive modeling of 14 soft materials suitable for fabricating soft robots.\n4. Key Result - Providing test procedures, raw data, model coefficients, and fitting code publicly accessible online.\n5. Takeaway - This work facilitates the extension of research by other analysts working with similar materials.",
+    "relevance_note_en": "Highly relevant to computational design and material distribution optimization in additive manufacturing.",
+    "summary_provider": "local",
     "openai_summary_applied": false,
-    "summary_source": "",
+    "summary_source": "local_aml_recommendation_refresh",
     "updated_at": "2026-07-11T06:06:17Z",
     "first_added": "2026-07-11T03:57:18Z",
     "last_updated": "2026-07-11T06:06:17Z",
     "is_new_recommendation": false,
     "is_weekly_new": false,
     "weekly_new": false,
-    "openalex_source_id": "https://openalex.org/S4210174904"
+    "openalex_source_id": "https://openalex.org/S4210174904",
+    "tags": [
+      "Material Characterization"
+    ],
+    "categories": [
+      "Computational Design",
+      "Material Distribution Optimization"
+    ],
+    "relevance_score": 8,
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "local_summary_applied": true,
+    "summary_model": "qwen2.5:7b"
   },
   {
     "title": "Minimizing stress concentrations through material optimization with grayscale vat photopolymerization",
@@ -48186,18 +48270,31 @@
         "similarity": 0.7873
       }
     ],
-    "ai_summary_en": "",
-    "relevance_note_en": "",
-    "summary_provider": "metadata",
+    "ai_summary_en": "1. Topic - Thermoelectric material fabrication using a hybrid process\n2. Problem - Current limitations in manufacturing thermoelectric (TE) devices due to complexity and density constraints\n3. Method - Combining stereolithography with hot pressing for TE device production\n4. Key Result - Optimal heating temperature and compressive force identified through experiments\n5. Takeaway - Hybrid process offers a solution for fabricating complex thermoelectric components",
+    "relevance_note_en": "Highly relevant to the development of advanced manufacturing techniques for thermoelectric devices.",
+    "summary_provider": "local",
     "openai_summary_applied": false,
-    "summary_source": "",
+    "summary_source": "local_aml_recommendation_refresh",
     "updated_at": "2026-07-11T06:06:17Z",
     "first_added": "2026-07-11T03:57:18Z",
     "last_updated": "2026-07-11T06:06:17Z",
     "is_new_recommendation": false,
     "is_weekly_new": false,
     "weekly_new": false,
-    "openalex_source_id": "https://openalex.org/S4210235068"
+    "openalex_source_id": "https://openalex.org/S4210235068",
+    "tags": [
+      "SLA",
+      "thermoelectric materials"
+    ],
+    "categories": [
+      "Multi-material AM"
+    ],
+    "relevance_score": 8,
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "local_summary_applied": true,
+    "summary_model": "qwen2.5:7b"
   },
   {
     "title": "Emerging trends in additive manufacturing of shape memory and stimuli-responsive materials: 3D and 4D printing technologies explored-a critical review",
@@ -50117,18 +50214,31 @@
         "similarity": 0.795
       }
     ],
-    "ai_summary_en": "",
-    "relevance_note_en": "",
-    "summary_provider": "metadata",
+    "ai_summary_en": "1. Topic - Optimization of multi-material nozzle geometry design for bioprinting\n2. Problem - Current limitations in achieving precise control over material distribution during bioprinting processes.\n3. Method - Utilizing computational design and graph search/path planning algorithms to optimize nozzle geometry.\n4. Key Result - Improved accuracy and efficiency in multi-material deposition, enabling better control of material distribution.\n5. Takeaway - The approach can be applied to enhance the versatility and precision of bioprinting technologies.",
+    "relevance_note_en": "Highly relevant for advancements in bioprinting technology focusing on multi-material deposition.",
+    "summary_provider": "local",
     "openai_summary_applied": false,
-    "summary_source": "",
+    "summary_source": "local_aml_recommendation_refresh",
     "updated_at": "2026-07-11T06:06:17Z",
     "first_added": "2026-07-11T03:57:18Z",
     "last_updated": "2026-07-11T06:06:17Z",
     "is_new_recommendation": false,
     "is_weekly_new": false,
     "weekly_new": false,
-    "openalex_source_id": "https://openalex.org/S2764842179"
+    "openalex_source_id": "https://openalex.org/S2764842179",
+    "tags": [
+      "Computational design",
+      "Graph Search / Path Planning"
+    ],
+    "categories": [
+      "Multi-material AM"
+    ],
+    "relevance_score": 8,
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "local_summary_applied": true,
+    "summary_model": "qwen2.5:7b"
   },
   {
     "title": "Coaxial Direct Ink Writing of Cholesteric Liquid Crystal Elastomers in 3D Architectures",
@@ -68469,18 +68579,30 @@
         "similarity": 0.7532
       }
     ],
-    "ai_summary_en": "",
-    "relevance_note_en": "",
-    "summary_provider": "metadata",
+    "ai_summary_en": "1. Topic - Theoretical modeling of solid/melt interface in material extrusion additive manufacturing\n2. Problem - Understanding the temperature distribution and phase changes at the core during the printing process.\n3. Method - Developing a theoretical model to simulate the behavior of materials transitioning from solid to melt states within the core of printed parts.\n4. Key Result - Predicted temperature profiles and interface dynamics that can optimize material properties in additive manufacturing processes.\n5. Takeaway - This research aids in enhancing the accuracy and efficiency of multi-material AM by providing insights into core material handling.",
+    "relevance_note_en": "Highly relevant to computational design and material distribution optimization in additive manufacturing.",
+    "summary_provider": "local",
     "openai_summary_applied": false,
-    "summary_source": "",
+    "summary_source": "local_aml_recommendation_refresh",
     "updated_at": "2026-07-11T06:06:17Z",
     "first_added": "2026-07-11T03:57:18Z",
     "last_updated": "2026-07-11T06:06:17Z",
     "is_new_recommendation": false,
     "is_weekly_new": false,
     "weekly_new": false,
-    "openalex_source_id": "https://openalex.org/S4210206835"
+    "openalex_source_id": "https://openalex.org/S4210206835",
+    "tags": [
+      "Material Distribution Optimization"
+    ],
+    "categories": [
+      "Computational Design"
+    ],
+    "relevance_score": 8,
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "local_summary_applied": true,
+    "summary_model": "qwen2.5:7b"
   },
   {
     "title": "From Soft Lithography to 3D Printing: Current Status and Future of Microfluidic Device Fabrication",
@@ -69048,18 +69170,31 @@
         "similarity": 0.867
       }
     ],
-    "ai_summary_en": "",
-    "relevance_note_en": "",
-    "summary_provider": "metadata",
+    "ai_summary_en": "1. Topic - Stereolithography-based multi-material hydrogel patterning in microfluidic chips\n2. Problem - The challenge of achieving high-resolution, multi-material 2D photo-patterning within microfluidic environments.\n3. Method - Using a standard SLA 3D printer with integrated miniaturized syringe pump system for sequential injection and photopolymerization of hydrogels.\n4. Key Result - Successfully created intricate, multi-material (PEGDA and HAMA) hydrogel patterns with high spatial resolution in microfluidic chips.\n5. Takeaway - This technique offers a versatile platform for fabricating biologically relevant microenvironments on chip, enhancing research in microsystems engineering.",
+    "relevance_note_en": "Highly relevant to multi-material additive manufacturing and hydrogel patterning within microfluidic systems.",
+    "summary_provider": "local",
     "openai_summary_applied": false,
-    "summary_source": "",
+    "summary_source": "local_aml_recommendation_refresh",
     "updated_at": "2026-07-11T06:06:17Z",
     "first_added": "2026-07-11T03:57:18Z",
     "last_updated": "2026-07-11T06:06:17Z",
     "is_new_recommendation": false,
     "is_weekly_new": false,
     "weekly_new": false,
-    "openalex_source_id": "https://openalex.org/S4210214524"
+    "openalex_source_id": "https://openalex.org/S4210214524",
+    "tags": [
+      "SLA",
+      "hydrogel"
+    ],
+    "categories": [
+      "Multi-material AM"
+    ],
+    "relevance_score": 9,
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "local_summary_applied": true,
+    "summary_model": "qwen2.5:7b"
   },
   {
     "title": "Drop-on-demand 3D printing of programable magnetic composites for soft robotics",
@@ -78025,18 +78160,33 @@
         "similarity": 0.7417
       }
     ],
-    "ai_summary_en": "",
-    "relevance_note_en": "",
-    "summary_provider": "metadata",
+    "ai_summary_en": "1. Topic - AI-guided design of polymer-supported metal catalysts\n2. Problem - Designing efficient polymer-supported metal catalysts is challenging due to the complex, mixed-variable design space.\n3. Method - Using predictive machine learning and Bayesian optimization for accelerated design and optimization.\n4. Key Result - Highlighting case studies where Bayesian optimization has been successfully applied in polymer-supported catalytic systems.\n5. Takeaway - An integrated hybrid workflow combining experimental data with physics-aware surrogate models and uncertainty-guided Bayesian optimization is proposed as the most promising approach.",
+    "relevance_note_en": "Highly relevant to AI and machine learning applications in polymer science, particularly for catalyst design.",
+    "summary_provider": "local",
     "openai_summary_applied": false,
-    "summary_source": "",
+    "summary_source": "local_aml_recommendation_refresh",
     "updated_at": "2026-07-11T06:06:17Z",
     "first_added": "2026-07-11T03:57:18Z",
     "last_updated": "2026-07-11T06:06:17Z",
     "is_new_recommendation": false,
     "is_weekly_new": false,
     "weekly_new": false,
-    "openalex_source_id": "https://openalex.org/S200764475"
+    "openalex_source_id": "https://openalex.org/S200764475",
+    "tags": [
+      "AI",
+      "Machine learning",
+      "Catalysts",
+      "Polymer Science"
+    ],
+    "categories": [
+      "Reviews and Surveys"
+    ],
+    "relevance_score": 9,
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "local_summary_applied": true,
+    "summary_model": "qwen2.5:7b"
   },
   {
     "title": "Compatibility of Methacrylate Based Resins Controls Interfacial Failure and Toughness in 3D-Printed Multimaterial Composites",
@@ -78504,18 +78654,31 @@
         "similarity": 0.8067
       }
     ],
-    "ai_summary_en": "",
-    "relevance_note_en": "",
-    "summary_provider": "metadata",
+    "ai_summary_en": "1. Topic - Thermo-mechanical simulation of fused filament fabrication (FFF) process\n2. Problem - Residual stresses, geometric distortions, and interlayer debonding in FFF parts due to dynamic thermal profiles.\n3. Method - A computational framework using ABAQUS for coupled thermo-mechanical simulations with an automated G-code conversion subroutine.\n4. Key Result - Prediction of adhesive loss, post-process warpage, residual stresses, and warping through transient thermal modeling.\n5. Takeaway - The simulation model provides practical insights for process optimization and design validation in FFF fabrication.",
+    "relevance_note_en": "Highly relevant to the computational design and process optimization of fused filament fabrication, addressing key challenges in material extrusion.",
+    "summary_provider": "local",
     "openai_summary_applied": false,
-    "summary_source": "",
+    "summary_source": "local_aml_recommendation_refresh",
     "updated_at": "2026-07-11T06:06:17Z",
     "first_added": "2026-07-11T03:57:18Z",
     "last_updated": "2026-07-11T06:06:17Z",
     "is_new_recommendation": false,
     "is_weekly_new": false,
     "weekly_new": false,
-    "openalex_source_id": "https://openalex.org/S18714766"
+    "openalex_source_id": "https://openalex.org/S18714766",
+    "tags": [
+      "fused filament fabrication",
+      "fff"
+    ],
+    "categories": [
+      "Computational Design"
+    ],
+    "relevance_score": 9,
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "local_summary_applied": true,
+    "summary_model": "qwen2.5:7b"
   },
   {
     "title": "Digital Actuation Control of Soft Robotic Origami With Self-Folding Liquid Crystal Elastomer Hinges",
@@ -82364,18 +82527,34 @@
         "similarity": 0.7362
       }
     ],
-    "ai_summary_en": "",
-    "relevance_note_en": "",
-    "summary_provider": "metadata",
+    "ai_summary_en": "1. Topic - Self-driving laboratory platform\n2. Problem - Optimizing the synthesis of polymer nanoparticles using RAFT dispersion polymerisation.\n3. Method - Combining automated synthesis, characterisation, and cloud-based AI.\n4. Key Result - Achieved self-optimization through machine learning and orthogonal online analytics.\n5. Takeaway - This approach enhances efficiency in material science research by integrating automation with advanced data analysis.",
+    "relevance_note_en": "Highly relevant to AI and Machine Learning for AM, as it integrates cloud-based AI and machine learning techniques into a self-driving laboratory platform.",
+    "summary_provider": "local",
     "openai_summary_applied": false,
-    "summary_source": "",
+    "summary_source": "local_aml_recommendation_refresh",
     "updated_at": "2026-07-11T06:06:17Z",
     "first_added": "2026-07-11T06:06:17Z",
     "last_updated": "2026-07-11T06:06:17Z",
     "is_new_recommendation": true,
     "is_weekly_new": true,
     "weekly_new": true,
-    "openalex_source_id": "https://openalex.org/S187215728"
+    "openalex_source_id": "https://openalex.org/S187215728",
+    "tags": [
+      "self-driving laboratories",
+      "machine learning",
+      "polymer synthesis",
+      "cloud integration",
+      "online analytics"
+    ],
+    "categories": [
+      "AI and Machine Learning for AM"
+    ],
+    "relevance_score": 9,
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "local_summary_applied": true,
+    "summary_model": "qwen2.5:7b"
   },
   {
     "title": "On-line inspection of lattice structures and metamaterials via in-situ imaging in additive manufacturing",
@@ -85307,18 +85486,33 @@
         "similarity": 0.9036
       }
     ],
-    "ai_summary_en": "",
-    "relevance_note_en": "",
-    "summary_provider": "metadata",
+    "ai_summary_en": "1. Topic - Material-efficient multimaterial projection micro-stereolithography\n2. Problem - Traditional stereolithography methods often suffer from material waste due to inefficient resin supply.\n3. Method - The use of droplet-based resin supply in a projection micro-stereolithography setup to reduce material usage.\n4. Key Result - Significantly reduced material consumption while maintaining high-resolution printing capabilities.\n5. Takeaway - This approach can enhance the sustainability and efficiency of multimaterial 3D printing processes.",
+    "relevance_note_en": "Highly relevant to Multi-material AM and Material Distribution Optimization categories, addressing material efficiency in stereolithography.",
+    "summary_provider": "local",
     "openai_summary_applied": false,
-    "summary_source": "",
+    "summary_source": "local_aml_recommendation_refresh",
     "updated_at": "2026-07-11T06:06:17Z",
     "first_added": "2026-07-11T03:57:18Z",
     "last_updated": "2026-07-11T06:06:17Z",
     "is_new_recommendation": false,
     "is_weekly_new": false,
     "weekly_new": false,
-    "openalex_source_id": "https://openalex.org/S2764410448"
+    "openalex_source_id": "https://openalex.org/S2764410448",
+    "tags": [
+      "SLA",
+      "projection micro-stereolithography",
+      "micro-stereolithography"
+    ],
+    "categories": [
+      "Multi-material AM",
+      "Material Distribution Optimization"
+    ],
+    "relevance_score": 8,
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "local_summary_applied": true,
+    "summary_model": "qwen2.5:7b"
   },
   {
     "title": "Design and Fabrication of a Monolithic, Sensorized Soft Robotic Gripper using Multi-Material PolyJet Additive Manufacturing",
@@ -85478,18 +85672,32 @@
         "similarity": 0.801
       }
     ],
-    "ai_summary_en": "",
-    "relevance_note_en": "",
-    "summary_provider": "metadata",
+    "ai_summary_en": "1. Topic - Reprogrammable hydrogel scaffolds for tissue engineering\n2. Problem - Current morphable hydrogels are complex to fabricate, limited in deformation directions, and lack reprogramming capabilities.\n3. Method - Developed a transformable hydrogel system using ion-transfer printing (ITP) technology to create tunable crosslinking density gradients.\n4. Key Result - Hydrogels can be programmed for shape morphing and reprogrammed via secondary ITP processes, supporting long-term cell differentiation.\n5. Takeaway - This approach enables sophisticated spatiotemporal control over construct shape evolution in tissue engineering applications.",
+    "relevance_note_en": "Highly relevant to the development of advanced hydrogel scaffolds for tissue engineering, addressing key limitations.",
+    "summary_provider": "local",
     "openai_summary_applied": false,
-    "summary_source": "",
+    "summary_source": "local_aml_recommendation_refresh",
     "updated_at": "2026-07-11T06:06:17Z",
     "first_added": "2026-07-11T03:57:18Z",
     "last_updated": "2026-07-11T06:06:17Z",
     "is_new_recommendation": false,
     "is_weekly_new": false,
     "weekly_new": false,
-    "openalex_source_id": "https://openalex.org/S2898508902"
+    "openalex_source_id": "https://openalex.org/S2898508902",
+    "tags": [
+      "hydrogel",
+      "tissue engineering"
+    ],
+    "categories": [
+      "Functionally Graded AM",
+      "AI and Machine Learning for AM"
+    ],
+    "relevance_score": 8,
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "local_summary_applied": true,
+    "summary_model": "qwen2.5:7b"
   },
   {
     "title": "Assessment of the Development Performance of Additive Manufacturing VPP Parts Using Digital Light Processing (DLP) and Liquid Crystal Display (LCD) Technologies",
@@ -88558,18 +88766,31 @@
         "similarity": 0.8219
       }
     ],
-    "ai_summary_en": "",
-    "relevance_note_en": "",
-    "summary_provider": "metadata",
+    "ai_summary_en": "1. Topic - Simultaneous manufacture of magnetic and locally conductive devices\n2. Problem - Challenges in fabricating bifunctional devices using conventional multi-material processes, including low efficiency and accuracy.\n3. Method - Utilizing chemical deposition to modify graphene nanoplatelets with Fe3O4 magnetic particles and incorporating them into photosensitive resin for single-material projection-based stereolithography.\n4. Key Result - Successfully fabricated millimeter-scale bifunctional devices without switching between multiple materials or processes, demonstrating a magnetically driven circuit switch and signal coding gear.\n5. Takeaway - This approach significantly improves the efficiency and accuracy of fabricating miniaturized and integrated devices.",
+    "relevance_note_en": "Highly relevant to multi-material additive manufacturing techniques, specifically addressing challenges in bifunctional device fabrication.",
+    "summary_provider": "local",
     "openai_summary_applied": false,
-    "summary_source": "",
+    "summary_source": "local_aml_recommendation_refresh",
     "updated_at": "2026-07-11T06:06:17Z",
     "first_added": "2026-07-11T03:57:18Z",
     "last_updated": "2026-07-11T06:06:17Z",
     "is_new_recommendation": false,
     "is_weekly_new": false,
     "weekly_new": false,
-    "openalex_source_id": "https://openalex.org/S135204980"
+    "openalex_source_id": "https://openalex.org/S135204980",
+    "tags": [
+      "SLA",
+      "bifunctional devices"
+    ],
+    "categories": [
+      "Multi-material AM"
+    ],
+    "relevance_score": 9,
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "local_summary_applied": true,
+    "summary_model": "qwen2.5:7b"
   },
   {
     "title": "4D printing of soft actuators using functionally graded hydrogels with shape-morphing behavior",
@@ -89098,18 +89319,32 @@
         "similarity": 0.7676
       }
     ],
-    "ai_summary_en": "",
-    "relevance_note_en": "",
-    "summary_provider": "metadata",
+    "ai_summary_en": "1. Topic - Ultrastable soft capacitive tactile sensor\n2. Problem - Electrical connections between soft sensors and measurement circuits introduce parasitic capacitance and series resistance, compromising stability.\n3. Method - Proposes an impedance-modulated signal to convert capacitive signals into stable impedance-modulated signals using a series resonant circuit.\n4. Key Result - The sensor achieves ultrastability against parasitic and stray capacitance as well as series resistance.\n5. Takeaway - Compressive stress affects the equivalent series resistance (ESR) of liquid metal elastomer, impacting the impedance-modulated signal.",
+    "relevance_note_en": "Highly relevant to soft robotics and sensor technology, addressing stability issues in flexible electronic devices.",
+    "summary_provider": "local",
     "openai_summary_applied": false,
-    "summary_source": "",
+    "summary_source": "local_aml_recommendation_refresh",
     "updated_at": "2026-07-11T06:06:17Z",
     "first_added": "2026-07-11T03:57:18Z",
     "last_updated": "2026-07-11T06:06:17Z",
     "is_new_recommendation": false,
     "is_weekly_new": false,
     "weekly_new": false,
-    "openalex_source_id": "https://openalex.org/S2764443376"
+    "openalex_source_id": "https://openalex.org/S2764443376",
+    "tags": [
+      "sensor",
+      "soft robotics",
+      "sensors"
+    ],
+    "categories": [
+      "Reviews and Surveys"
+    ],
+    "relevance_score": 8,
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "local_summary_applied": true,
+    "summary_model": "qwen2.5:7b"
   },
   {
     "title": "Soft Robotic Engines with Non-Reciprocal Motion by Physical Intelligence",
@@ -91267,18 +91502,32 @@
         "similarity": 0.8146
       }
     ],
-    "ai_summary_en": "",
-    "relevance_note_en": "",
-    "summary_provider": "metadata",
+    "ai_summary_en": "1. Topic - Micro-optofluidic devices via Projection Micro-Stereolithography\n2. Problem - Investigating the impact of resin reuse on optical sensing performance in micro-optofluidic (MoF) devices.\n3. Method - Using a Design of Experiment approach to compare MoF devices manufactured with fresh, one-time, or two-times reused methacrylate-based photocurable resin.\n4. Key Result - No significant difference in optical detection performance was observed between devices made from different resin batches.\n5. Takeaway - Recovering and regenerating uncured resin for reuse can be a sustainable solution without compromising the optical sensing performance of MoF devices.",
+    "relevance_note_en": "Highly relevant to manufacturing research, particularly in the areas of stereolithography and micro-optofluidic device fabrication.",
+    "summary_provider": "local",
     "openai_summary_applied": false,
-    "summary_source": "",
+    "summary_source": "local_aml_recommendation_refresh",
     "updated_at": "2026-07-11T06:06:17Z",
     "first_added": "2026-07-11T03:57:18Z",
     "last_updated": "2026-07-11T06:06:17Z",
     "is_new_recommendation": false,
     "is_weekly_new": false,
     "weekly_new": false,
-    "openalex_source_id": "https://openalex.org/S77056576"
+    "openalex_source_id": "https://openalex.org/S77056576",
+    "tags": [
+      "SLA",
+      "projection micro-stereolithography",
+      "micro-stereolithography"
+    ],
+    "categories": [
+      "Material Distribution Optimization"
+    ],
+    "relevance_score": 8,
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "local_summary_applied": true,
+    "summary_model": "qwen2.5:7b"
   },
   {
     "title": "Design Optimization of a Variable Stiffness Robotic Gripper with Passive Restoration Fabricated by Multimaterial 3D Printing",
@@ -99563,18 +99812,31 @@
         "similarity": 0.7712
       }
     ],
-    "ai_summary_en": "",
-    "relevance_note_en": "",
-    "summary_provider": "metadata",
+    "ai_summary_en": "1. Topic - Bidirectional thermoresponsive smart windows\n2. Problem - Need for dimensionally stable, transparent materials with superior optical modulation properties.\n3. Method - Development of microgel–hydrogel composites that synergize upper critical solution temperature (UCST) and lower critical solution temperature (LCST) behaviors.\n4. Key Result - Exceptional transparency and solar modulation capabilities without shrinkage during phase transitions.\n5. Takeaway - This material offers a promising solution for smart windows in buildings and greenhouses.",
+    "relevance_note_en": "Highly relevant to the development of advanced materials for smart window applications, focusing on optical modulation and dimensional stability.",
+    "summary_provider": "local",
     "openai_summary_applied": false,
-    "summary_source": "",
+    "summary_source": "local_aml_recommendation_refresh",
     "updated_at": "2026-07-11T06:06:17Z",
     "first_added": "2026-07-11T03:57:18Z",
     "last_updated": "2026-07-11T06:06:17Z",
     "is_new_recommendation": false,
     "is_weekly_new": false,
     "weekly_new": false,
-    "openalex_source_id": "https://openalex.org/S2764437742"
+    "openalex_source_id": "https://openalex.org/S2764437742",
+    "tags": [
+      "hydrogel",
+      "smart windows"
+    ],
+    "categories": [
+      "Material Distribution Optimization"
+    ],
+    "relevance_score": 8,
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "local_summary_applied": true,
+    "summary_model": "qwen2.5:7b"
   },
   {
     "title": "Microstructural and mechanical properties examination of SS316L-Cu functionally graded material fabricated by wire arc additive manufacturing",
@@ -101507,18 +101769,32 @@
         "similarity": 0.7708
       }
     ],
-    "ai_summary_en": "",
-    "relevance_note_en": "",
-    "summary_provider": "metadata",
+    "ai_summary_en": "1. Topic - Polymer processing using a self-driving lab\n2. Problem - Studying the processing-dependent properties of polymers in a modular manner.\n3. Method - Designing an autonomous experimentation system to test spray coating polymer films and identifying conditions for high iridescence.\n4. Key Result - Conditions were found under which polymer films exhibit high iridescence through self-driven experiments.\n5. Takeaway - A modular approach with a self-driving lab can efficiently explore various processing parameters in polymer manufacturing.",
+    "relevance_note_en": "Highly relevant to the study of polymer processing and autonomous experimentation systems.",
+    "summary_provider": "local",
     "openai_summary_applied": false,
-    "summary_source": "",
+    "summary_source": "local_aml_recommendation_refresh",
     "updated_at": "2026-07-11T06:06:17Z",
     "first_added": "2026-07-11T03:57:18Z",
     "last_updated": "2026-07-11T06:06:17Z",
     "is_new_recommendation": false,
     "is_weekly_new": false,
     "weekly_new": false,
-    "openalex_source_id": "https://openalex.org/S4210202120"
+    "openalex_source_id": "https://openalex.org/S4210202120",
+    "tags": [
+      "polymer processing",
+      "self-driving lab",
+      "modular approach"
+    ],
+    "categories": [
+      "AI and Machine Learning for AM"
+    ],
+    "relevance_score": 9,
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "local_summary_applied": true,
+    "summary_model": "qwen2.5:7b"
   },
   {
     "title": "Optimal Design and Additive Manufacturing of Polymeric Metamaterials for Energy Absorption and Impact Mitigation",
@@ -102155,18 +102431,33 @@
         "similarity": 0.7682
       }
     ],
-    "ai_summary_en": "",
-    "relevance_note_en": "",
-    "summary_provider": "metadata",
+    "ai_summary_en": "1. Topic - Thermoresponsive injectable self-healing hydrogel for pancreatic cancer therapy\n2. Problem - Poor prognosis of pancreatic ductal adenocarcinoma due to its dense tumor microenvironment limiting conventional chemotherapy efficacy and causing severe side-effects.\n3. Method - Developing a Schiff-base crosslinked thermoresponsive hydrogel loaded with copper–metal organic framework (Cu-MOF) nanoparticles co-loaded with 2,2′-azobis(2-methylimidazoline) dihydrochloride (AIPH) and 2,2′-azinobis(3-ethylbenzothiazoline-6-sulfonic acid) cationic radicals (ABTS·+).\n4. Key Result - Achieved a cumulative release rate of 81.1% upon heating, realizing triple synergistic efficacy of photothermal therapy (PTT), thermodynamic therapy (TDT), and chemodynamic therapy (CDT).\n5. Takeaway - The system offers an intelligent platform for precise local treatment of pancreatic cancer with excellent biocompatibility.",
+    "relevance_note_en": "Highly relevant to the development of advanced drug delivery systems and multi-modal therapies for cancer treatment.",
+    "summary_provider": "local",
     "openai_summary_applied": false,
-    "summary_source": "",
+    "summary_source": "local_aml_recommendation_refresh",
     "updated_at": "2026-07-11T06:06:17Z",
     "first_added": "2026-07-11T06:06:17Z",
     "last_updated": "2026-07-11T06:06:17Z",
     "is_new_recommendation": true,
     "is_weekly_new": true,
     "weekly_new": true,
-    "openalex_source_id": "https://openalex.org/S123288148"
+    "openalex_source_id": "https://openalex.org/S123288148",
+    "tags": [
+      "hydrogel",
+      "thermoresponsive",
+      "photothermal therapy",
+      "chemodynamic therapy"
+    ],
+    "categories": [
+      "Reviews and Surveys"
+    ],
+    "relevance_score": 8,
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "local_summary_applied": true,
+    "summary_model": "qwen2.5:7b"
   },
   {
     "title": "Pellet-based 3D printing of soft thermoplastic elastomeric membranes for soft robotic applications",
@@ -103389,18 +103680,32 @@
         "similarity": 0.8339
       }
     ],
-    "ai_summary_en": "",
-    "relevance_note_en": "",
-    "summary_provider": "metadata",
+    "ai_summary_en": "1. Topic - Flexible 3D force sensor based on polymer nanocomposite\n2. Problem - Rigidity, complexity, and high cost of conventional 3D force sensors hinder their application in soft robotics and medical fields.\n3. Method - Fabrication of MWCNT/PVDF sensing elements using spray coating technique and integration into a cross-beam structure with silicone rubber layers for flexibility.\n4. Key Result - The sensor demonstrated excellent sensitivity to forces in the 3D space, distinguishing between tension and compression force directions.\n5. Takeaway - This flexible 3D force sensor can be implemented in various applications including soft robotics and prostheses.",
+    "relevance_note_en": "Highly relevant to the development of advanced sensors for soft robotics and medical applications, addressing key challenges with conventional sensors.",
+    "summary_provider": "local",
     "openai_summary_applied": false,
-    "summary_source": "",
+    "summary_source": "local_aml_recommendation_refresh",
     "updated_at": "2026-07-11T06:06:17Z",
     "first_added": "2026-07-11T03:57:18Z",
     "last_updated": "2026-07-11T06:06:17Z",
     "is_new_recommendation": false,
     "is_weekly_new": false,
     "weekly_new": false,
-    "openalex_source_id": "https://openalex.org/S101949793"
+    "openalex_source_id": "https://openalex.org/S101949793",
+    "tags": [
+      "sensor",
+      "soft robotics",
+      "sensors"
+    ],
+    "categories": [
+      "Reviews and Surveys"
+    ],
+    "relevance_score": 8,
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "local_summary_applied": true,
+    "summary_model": "qwen2.5:7b"
   },
   {
     "title": "Delocalized Deformation Enhanced Reusable Energy Absorption Metamaterials Based on Bistable Tensegrity",
@@ -104111,18 +104416,32 @@
         "similarity": 0.7863
       }
     ],
-    "ai_summary_en": "",
-    "relevance_note_en": "",
-    "summary_provider": "metadata",
+    "ai_summary_en": "1. Topic - An ultrasensitive and robust soft optical 3D tactile sensor\n2. Problem - Low sensitivity and large size of existing optical tactile sensors limit their application.\n3. Method - Developing a Foldable Optical Circuit Embedded in Rigid-Soft-coupled (FOCERS) structure for enhanced performance.\n4. Key Result - High sensitivity (1228.7 kPa−1 under normal pressure, 7399.5 kPa−1 under sheer pressure), fast response time (5 ms), and high linearity (95.3%).\n5. Takeaway - FOCERS structure increases both the sensitivity and robustness of optical tactile sensors, enabling their use in various applications.",
+    "relevance_note_en": "The paper focuses on developing a new sensor technology that could be relevant to material distribution optimization and computational design for additive manufacturing.",
+    "summary_provider": "local",
     "openai_summary_applied": false,
-    "summary_source": "",
+    "summary_source": "local_aml_recommendation_refresh",
     "updated_at": "2026-07-11T06:06:17Z",
     "first_added": "2026-07-11T03:57:18Z",
     "last_updated": "2026-07-11T06:06:17Z",
     "is_new_recommendation": false,
     "is_weekly_new": false,
     "weekly_new": false,
-    "openalex_source_id": "https://openalex.org/S2764443376"
+    "openalex_source_id": "https://openalex.org/S2764443376",
+    "tags": [
+      "sensor",
+      "soft robotics",
+      "sensors"
+    ],
+    "categories": [
+      "Computational Design"
+    ],
+    "relevance_score": 8,
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "local_summary_applied": true,
+    "summary_model": "qwen2.5:7b"
   },
   {
     "title": "Numerical/experimental investigation of energy absorption and compressive properties in 3D-printed bi/multi-material polymeric metamaterials",
@@ -105655,18 +105974,32 @@
         "similarity": 0.739
       }
     ],
-    "ai_summary_en": "",
-    "relevance_note_en": "",
-    "summary_provider": "metadata",
+    "ai_summary_en": "1. Topic - Self-driving lab for the synthesis of plasmonic nanoparticles\n2. Problem - Time-consuming trial-and-error process in synthesizing nanoparticles with specific optical properties.\n3. Method - Integration of a microfluidic reactor, real-time spectroscopic characterization, and machine learning.\n4. Key Result - AFION lab successfully identifies reaction conditions for synthesizing different types of plasmonic nanoparticles.\n5. Takeaway - Automated synthesis platforms can significantly accelerate the exploration of chemical spaces in nanoparticle production.",
+    "relevance_note_en": "Highly relevant to AI and Machine Learning for AM as it demonstrates an application of machine learning in automating a complex manufacturing process.",
+    "summary_provider": "local",
     "openai_summary_applied": false,
-    "summary_source": "",
+    "summary_source": "local_aml_recommendation_refresh",
     "updated_at": "2026-07-11T06:06:17Z",
     "first_added": "2026-07-11T06:06:17Z",
     "last_updated": "2026-07-11T06:06:17Z",
     "is_new_recommendation": true,
     "is_weekly_new": true,
     "weekly_new": true,
-    "openalex_source_id": "https://openalex.org/S64187185"
+    "openalex_source_id": "https://openalex.org/S64187185",
+    "tags": [
+      "self-driving lab",
+      "photochemical synthesis",
+      "plasmonic nanoparticles"
+    ],
+    "categories": [
+      "AI and Machine Learning for AM"
+    ],
+    "relevance_score": 9,
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "local_summary_applied": true,
+    "summary_model": "qwen2.5:7b"
   },
   {
     "title": "Multimaterial 3D Laser Printing of Cell-Adhesive and Cell-Repellent Hydrogels",
@@ -108497,18 +108830,31 @@
         "similarity": 0.7772
       }
     ],
-    "ai_summary_en": "",
-    "relevance_note_en": "",
-    "summary_provider": "metadata",
+    "ai_summary_en": "1. Topic - Optimizing viscosity of HAMA/GelMA hybrid hydrogels using an interactive Bayesian optimization (IBO) framework\n2. Problem - Challenges in optimizing rheological properties due to complex nonlinear and high-dimensional design space.\n3. Method - Integrating a multilayer perceptron-based environment model with a support vector machine-based discriminator for IBO.\n4. Key Result - Achieved 80% experimental success by the third round, converging mean viscosity from 66.01 ± 8.76 Pa·s to 51.81 ± 4.38 Pa·s.\n5. Takeaway - IBO provides an efficient and reliable paradigm for viscosity-guided formulation design of HAMA/GelMA hybrid hydrogels, scalable for soft matter and polymer systems.",
+    "relevance_note_en": "Highly relevant to AI and Machine Learning for AM as it uses advanced machine learning techniques to optimize material properties.",
+    "summary_provider": "local",
     "openai_summary_applied": false,
-    "summary_source": "",
+    "summary_source": "local_aml_recommendation_refresh",
     "updated_at": "2026-07-11T06:06:17Z",
     "first_added": "2026-07-11T03:57:18Z",
     "last_updated": "2026-07-11T06:06:17Z",
     "is_new_recommendation": false,
     "is_weekly_new": false,
     "weekly_new": false,
-    "openalex_source_id": "https://openalex.org/S157859649"
+    "openalex_source_id": "https://openalex.org/S157859649",
+    "tags": [
+      "hydrogel",
+      "hydrogels"
+    ],
+    "categories": [
+      "AI and Machine Learning for AM"
+    ],
+    "relevance_score": 9,
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "local_summary_applied": true,
+    "summary_model": "qwen2.5:7b"
   },
   {
     "title": "Accelerating fused filament fabrication FFF optimization with AI-Powered digital twins and High-Fidelity simulations",
@@ -113844,18 +114190,30 @@
         "similarity": 0.7169
       }
     ],
-    "ai_summary_en": "",
-    "relevance_note_en": "",
-    "summary_provider": "metadata",
+    "ai_summary_en": "1. Topic - Formulation of Bacitracin Zinc Hydrogel\n2. Problem - Improving wound healing qualities through hydrogel optimization.\n3. Method - Using sodium alginate and carbopol-934 as gelling agents, developing various formulations, assessing physicochemical properties, evaluating drug release rates, and testing stability under different conditions.\n4. Key Result - An optimized formulation with desirable viscosity, pH, and sustained drug release over 24 hours was developed.\n5. Takeaway - The hydrogel holds potential for enhanced wound healing as a topical treatment.",
+    "relevance_note_en": "Highly relevant to the development of advanced wound care products using hydrogels, which is an area of interest in medical manufacturing.",
+    "summary_provider": "local",
     "openai_summary_applied": false,
-    "summary_source": "",
+    "summary_source": "local_aml_recommendation_refresh",
     "updated_at": "2026-07-11T06:06:17Z",
     "first_added": "2026-07-11T03:57:18Z",
     "last_updated": "2026-07-11T06:06:17Z",
     "is_new_recommendation": false,
     "is_weekly_new": false,
     "weekly_new": false,
-    "openalex_source_id": "https://openalex.org/S4210219788"
+    "openalex_source_id": "https://openalex.org/S4210219788",
+    "tags": [
+      "hydrogel"
+    ],
+    "categories": [
+      "Reviews and Surveys"
+    ],
+    "relevance_score": 8,
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "local_summary_applied": true,
+    "summary_model": "qwen2.5:7b"
   },
   {
     "title": "Study on the Microstructure and Properties of In625/316L Functionally Graded Material Fabricated by Wire Arc Additive Manufacturing",
@@ -115635,18 +115993,32 @@
         "similarity": 0.7073
       }
     ],
-    "ai_summary_en": "",
-    "relevance_note_en": "",
-    "summary_provider": "metadata",
+    "ai_summary_en": "1. Topic - Autonomous lab for data-driven homogeneous catalysis\n2. Problem - Efficient discovery and optimization of homogeneous catalysts remain challenging.\n3. Method - Flex-Cat platform uses parallel miniaturized batch reactors with Bayesian optimization for ligand identity and process variables.\n4. Key Result - Achieved over 2.5-fold improvements in turnover frequency and expanded regioselectivity range.\n5. Takeaway - Establishes a scalable approach linking discovery-scale experiments to process-relevant outcomes.",
+    "relevance_note_en": "Highly relevant as it focuses on autonomous catalysis, which is directly related to the development of efficient chemical transformations and aligns with the use of AI in manufacturing.",
+    "summary_provider": "local",
     "openai_summary_applied": false,
-    "summary_source": "",
+    "summary_source": "local_aml_recommendation_refresh",
     "updated_at": "2026-07-11T06:06:17Z",
     "first_added": "2026-07-11T03:57:18Z",
     "last_updated": "2026-07-11T06:06:17Z",
     "is_new_recommendation": false,
     "is_weekly_new": false,
     "weekly_new": false,
-    "openalex_source_id": "https://openalex.org/S64187185"
+    "openalex_source_id": "https://openalex.org/S64187185",
+    "tags": [
+      "autonomous lab",
+      "data-driven research",
+      "catalysis"
+    ],
+    "categories": [
+      "AI and Machine Learning for AM"
+    ],
+    "relevance_score": 9,
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "local_summary_applied": true,
+    "summary_model": "qwen2.5:7b"
   },
   {
     "title": "A Soft Inductive Bimodal Sensor for Proprioception and Tactile Sensing of Soft Machines",
@@ -115769,18 +116141,31 @@
         "similarity": 0.776
       }
     ],
-    "ai_summary_en": "",
-    "relevance_note_en": "",
-    "summary_provider": "metadata",
+    "ai_summary_en": "1. Topic - A soft inductive bimodal sensor (SIBS) for proprioception and tactile sensing.\n2. Problem - The need for sensors that can provide both bending angle and force information to enable embodied intelligence in soft robots.\n3. Method - Using a flexible planar coil, a porous ferrite film, and a soft conductive film to measure inductance at two frequencies.\n4. Key Result - Achieving high resolution (0.44° bending and 1.09 mN force), rapid response, excellent repeatability, and high durability.\n5. Takeaway - The SIBS can be implemented in various applications for reliable bimodal sensing, enhancing the interaction between soft robots and their environment.",
+    "relevance_note_en": "Highly relevant to soft robotics and sensor technology within the field of soft machines.",
+    "summary_provider": "local",
     "openai_summary_applied": false,
-    "summary_source": "",
+    "summary_source": "local_aml_recommendation_refresh",
     "updated_at": "2026-07-11T06:06:17Z",
     "first_added": "2026-07-11T03:57:18Z",
     "last_updated": "2026-07-11T06:06:17Z",
     "is_new_recommendation": false,
     "is_weekly_new": false,
     "weekly_new": false,
-    "openalex_source_id": "https://openalex.org/S2764443376"
+    "openalex_source_id": "https://openalex.org/S2764443376",
+    "tags": [
+      "sensor",
+      "soft robotics"
+    ],
+    "categories": [
+      "Reviews and Surveys"
+    ],
+    "relevance_score": 8,
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "local_summary_applied": true,
+    "summary_model": "qwen2.5:7b"
   },
   {
     "title": "Laser additive manufacturing of Miura-origami tube inspired quasi-zero stiffness metamaterial with prominent longitudinal wave propagation",
@@ -116854,18 +117239,32 @@
         "similarity": 0.801
       }
     ],
-    "ai_summary_en": "",
-    "relevance_note_en": "",
-    "summary_provider": "metadata",
+    "ai_summary_en": "1. Topic - Coupled field modeling of thermoresponsive hydrogels\n2. Problem - Understanding the behavior of hydrogels with upper/lower critical solution temperature (UCST/LCST) under thermal stimuli.\n3. Method - Using coupled field modeling techniques to simulate and analyze the properties of these hydrogels.\n4. Key Result - The model accurately predicts phase transitions and mechanical responses of thermoresponsive hydrogels.\n5. Takeaway - Coupled field models are effective tools for optimizing the design and performance of thermoresponsive hydrogels in various applications.",
+    "relevance_note_en": "The research focuses on a specific type of material (thermoresponsive hydrogels) which is relevant to manufacturing processes, particularly those involving additive manufacturing and computational design.",
+    "summary_provider": "local",
     "openai_summary_applied": false,
-    "summary_source": "",
+    "summary_source": "local_aml_recommendation_refresh",
     "updated_at": "2026-07-11T06:06:17Z",
     "first_added": "2026-07-11T03:57:18Z",
     "last_updated": "2026-07-11T06:06:17Z",
     "is_new_recommendation": false,
     "is_weekly_new": false,
     "weekly_new": false,
-    "openalex_source_id": "https://openalex.org/S2764369487"
+    "openalex_source_id": "https://openalex.org/S2764369487",
+    "tags": [
+      "hydrogel",
+      "hydrogels",
+      "thermoresponsive materials"
+    ],
+    "categories": [
+      "Computational Design"
+    ],
+    "relevance_score": 8,
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "local_summary_applied": true,
+    "summary_model": "qwen2.5:7b"
   },
   {
     "title": "Two-Photon Polymerization 4D Printing Magnetic Probe on a Fiber for Magnetic Vector Measurement",
@@ -117507,18 +117906,32 @@
         "similarity": 0.7418
       }
     ],
-    "ai_summary_en": "",
-    "relevance_note_en": "",
-    "summary_provider": "metadata",
+    "ai_summary_en": "1. Topic - A modular, affordable self-driving laboratory for vision-guided optimization of metal electrodeposition\n2. Problem - Optimizing complex precursor formulations and electrodeposition parameters in metal electrodeposition is slow and inefficient.\n3. Method - Developing a roll-to-roll automated electrochemistry platform using machine learning to guide the optimization process.\n4. Key Result - Performed 300 identical Cu electrodeposition experiments over 35 hours, demonstrating high repeatability and continuous experimentation.\n5. Takeaway - Vision-guided Bayesian optimization was used to identify benzotriazole as a key additive for controlling the brightness of deposited Cu films.",
+    "relevance_note_en": "Highly relevant as it addresses the optimization challenges in metal electrodeposition using an automated and machine learning-driven approach.",
+    "summary_provider": "local",
     "openai_summary_applied": false,
-    "summary_source": "",
+    "summary_source": "local_aml_recommendation_refresh",
     "updated_at": "2026-07-11T06:06:17Z",
     "first_added": "2026-07-11T03:57:18Z",
     "last_updated": "2026-07-11T06:06:17Z",
     "is_new_recommendation": false,
     "is_weekly_new": false,
     "weekly_new": false,
-    "openalex_source_id": "https://openalex.org/S164001016"
+    "openalex_source_id": "https://openalex.org/S164001016",
+    "tags": [
+      "self-driving laboratory",
+      "vision-guided optimization",
+      "metal electrodeposition"
+    ],
+    "categories": [
+      "AI and Machine Learning for AM"
+    ],
+    "relevance_score": 9,
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "local_summary_applied": true,
+    "summary_model": "qwen2.5:7b"
   },
   {
     "title": "Crawling, climbing, perching, and flying by FiBa soft robots",
@@ -119245,18 +119658,31 @@
         "similarity": 0.7661
       }
     ],
-    "ai_summary_en": "",
-    "relevance_note_en": "",
-    "summary_provider": "metadata",
+    "ai_summary_en": "1. Topic - High-performance tunable terahertz metamaterial perfect absorber\n2. Problem - Development of advanced materials for early cancer detection in the terahertz range.\n3. Method - Theoretical exploration and design of a tunable metamaterial structure.\n4. Key Result - Achievement of high absorption efficiency across a wide frequency band.\n5. Takeaway - Tunable terahertz metamaterials show promise for non-invasive cancer detection applications.",
+    "relevance_note_en": "The paper focuses on advanced material design, which is relevant to computational design and AI-driven material optimization in manufacturing.",
+    "summary_provider": "local",
     "openai_summary_applied": false,
-    "summary_source": "",
+    "summary_source": "local_aml_recommendation_refresh",
     "updated_at": "2026-07-11T06:06:17Z",
     "first_added": "2026-07-11T06:06:17Z",
     "last_updated": "2026-07-11T06:06:17Z",
     "is_new_recommendation": true,
     "is_weekly_new": true,
     "weekly_new": true,
-    "openalex_source_id": "https://openalex.org/S4210180586"
+    "openalex_source_id": "https://openalex.org/S4210180586",
+    "tags": [
+      "metamaterial"
+    ],
+    "categories": [
+      "Computational Design",
+      "Material Distribution Optimization"
+    ],
+    "relevance_score": 8,
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "local_summary_applied": true,
+    "summary_model": "qwen2.5:7b"
   },
   {
     "title": "An Optimization-Driven Design Scheme of Lightweight Acoustic Metamaterials for Additive Manufacturing",
