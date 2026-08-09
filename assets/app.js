@@ -1476,7 +1476,7 @@ function renderPaperRow(paper) {
         ${doiUrl ? `<a class="link-pill subtle" href="${escapeAttribute(doiUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(t("doiButton"))}</a>` : ""}
         <button class="link-pill subtle" type="button" data-citation>${escapeHtml(t("copyCitation"))}</button>
       </div>
-      <p class="policy-mini">No abstract/PDF hosted${summarySourceMeta ? ` - ${escapeHtml(summarySourceMeta)}` : ""} - updated ${escapeHtml(displayPaper.last_updated || "-")}</p>
+      <p class="policy-mini">Source linked via DOI${summarySourceMeta ? ` - ${escapeHtml(summarySourceMeta)}` : ""} - updated ${escapeHtml(displayPaper.last_updated || "-")}</p>
     </div>
   `;
 
