@@ -1,5 +1,7 @@
 # AI Manufacturing and 3D/4D Printing Research
 
+Local refresh commands for site updates are summarized in [`LOCAL_SITE_REFRESH_GUIDE.md`](LOCAL_SITE_REFRESH_GUIDE.md).
+
 ## Current Collection Mode
 
 The main paper dataset is now rebuilt in **Crossref-only full rebuild mode**.
