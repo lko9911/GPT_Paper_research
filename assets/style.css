@@ -119,16 +119,16 @@ select {
   top: 0;
   left: 0;
   display: block;
-  width: calc(7px + (3 - var(--trail-index)) * 3px);
-  height: calc(7px + (3 - var(--trail-index)) * 3px);
+  width: calc(4px + (3 - var(--trail-index)) * 2px);
+  height: calc(4px + (3 - var(--trail-index)) * 2px);
   border-radius: 999px;
   background:
-    radial-gradient(circle, color-mix(in srgb, var(--green), white 14%) 0 34%, transparent 68%),
-    radial-gradient(circle, color-mix(in srgb, var(--blue), transparent 55%) 0 46%, transparent 76%);
+    radial-gradient(circle, color-mix(in srgb, var(--green), white 18%) 0 24%, transparent 62%),
+    radial-gradient(circle, color-mix(in srgb, var(--blue), transparent 72%) 0 42%, transparent 78%);
   box-shadow:
-    0 0 14px color-mix(in srgb, var(--green), transparent 54%),
-    0 0 28px color-mix(in srgb, var(--blue), transparent 84%);
-  opacity: calc(0.3 - var(--trail-index) * 0.045);
+    0 0 9px color-mix(in srgb, var(--green), transparent 74%),
+    0 0 18px color-mix(in srgb, var(--blue), transparent 92%);
+  opacity: calc(0.16 - var(--trail-index) * 0.027);
   transform: translate3d(-100px, -100px, 0);
   translate: -50% -50%;
   transition:
@@ -141,21 +141,21 @@ select {
 }
 
 .pointer-trail.is-interactive span {
-  width: calc(10px + (3 - var(--trail-index)) * 3px);
-  height: calc(10px + (3 - var(--trail-index)) * 3px);
+  width: calc(5px + (3 - var(--trail-index)) * 2px);
+  height: calc(5px + (3 - var(--trail-index)) * 2px);
   background:
-    radial-gradient(circle, color-mix(in srgb, var(--blue), white 16%) 0 38%, transparent 70%),
-    radial-gradient(circle, color-mix(in srgb, var(--green), transparent 58%) 0 48%, transparent 76%);
+    radial-gradient(circle, color-mix(in srgb, var(--blue), white 18%) 0 28%, transparent 68%),
+    radial-gradient(circle, color-mix(in srgb, var(--green), transparent 76%) 0 46%, transparent 78%);
   box-shadow:
-    0 0 16px color-mix(in srgb, var(--blue), transparent 48%),
-    0 0 30px color-mix(in srgb, var(--green), transparent 82%);
-  opacity: calc(0.38 - var(--trail-index) * 0.05);
+    0 0 10px color-mix(in srgb, var(--blue), transparent 70%),
+    0 0 20px color-mix(in srgb, var(--green), transparent 91%);
+  opacity: calc(0.22 - var(--trail-index) * 0.032);
 }
 
 .pointer-trail.is-pressed span {
-  width: calc(5px + (3 - var(--trail-index)) * 2px);
-  height: calc(5px + (3 - var(--trail-index)) * 2px);
-  opacity: calc(0.46 - var(--trail-index) * 0.06);
+  width: calc(4px + (3 - var(--trail-index)) * 1.5px);
+  height: calc(4px + (3 - var(--trail-index)) * 1.5px);
+  opacity: calc(0.24 - var(--trail-index) * 0.035);
 }
 
 .shell,
