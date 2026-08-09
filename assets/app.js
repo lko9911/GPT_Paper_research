@@ -351,6 +351,7 @@ const els = {
 
 async function init() {
   setupPreferences();
+  setupPointerTrail();
   state.papers = await loadPaperIndex();
   preparePaperRuntimeCache(state.papers);
   try {
@@ -508,6 +509,43 @@ function setupPreferences() {
   window.setInterval(() => {
     updateStats();
   }, 60000);
+}
+
+function setupPointerTrail() {
+  const canHover = window.matchMedia && window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+  const reducedMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (!canHover || reducedMotion) return;
+
+  let lastX = 0;
+  let lastY = 0;
+  let lastTime = 0;
+  const textSelector = 'input, textarea, select, [contenteditable="true"]';
+
+  window.addEventListener(
+    "pointermove",
+    (event) => {
+      if (event.pointerType && event.pointerType !== "mouse") return;
+      const target = event.target instanceof Element ? event.target : null;
+      if (target && target.closest(textSelector)) return;
+
+      const now = performance.now();
+      const distance = Math.hypot(event.clientX - lastX, event.clientY - lastY);
+      if (now - lastTime < 28 || distance < 18) return;
+
+      lastX = event.clientX;
+      lastY = event.clientY;
+      lastTime = now;
+
+      const trail = document.createElement("span");
+      trail.className = "pointer-trail";
+      trail.style.left = `${event.clientX}px`;
+      trail.style.top = `${event.clientY}px`;
+      trail.style.setProperty("--trail-size", `${Math.min(18, 8 + distance * 0.08)}px`);
+      document.body.append(trail);
+      trail.addEventListener("animationend", () => trail.remove(), { once: true });
+    },
+    { passive: true },
+  );
 }
 
 function applyPreferences() {
