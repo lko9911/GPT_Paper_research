@@ -104,6 +104,18 @@ $env:OPENALEX_RANK_TARGETS = "aml"
 & "C:\Users\user\anaconda3\python.exe" scripts\enrich_openalex_venue_ranks.py
 ```
 
+By default, local embedding runs write a private preview file instead of replacing the public AML recommendation list:
+
+```text
+data/private/aml_recommended_papers_local_preview.json
+```
+
+Only publish local-embedding AML recommendations intentionally:
+
+```powershell
+$env:AML_ALLOW_LOCAL_PUBLIC_WRITE = "true"
+```
+
 Local embedding caches are stored separately from OpenAI embedding caches:
 
 - `data/aml_embeddings/aml_seed_embeddings_local_nomic-embed-text.json`

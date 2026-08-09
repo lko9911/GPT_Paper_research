@@ -12,6 +12,7 @@ from aml_common import (
     CANDIDATE_POOL_PATH,
     EMBEDDING_MODEL,
     EMBEDDING_PROVIDER,
+    PRIVATE_DIR,
     PROFILE_PATH,
     PUBLIC_OUTPUT_PATH,
     RECOMMENDATION_LOG_PATH,
@@ -37,6 +38,7 @@ from aml_common import (
 PUBLIC_AML_SCORE_THRESHOLD = float(
     os.getenv("AML_PUBLIC_SCORE_THRESHOLD", "0.905" if EMBEDDING_PROVIDER == "local" else "0.75")
 )
+ALLOW_LOCAL_PUBLIC_WRITE = os.getenv("AML_ALLOW_LOCAL_PUBLIC_WRITE", "false").strip().lower() in {"1", "true", "yes", "y"}
 SCORE_WEIGHTS = {
     "semantic_similarity": 0.80,
     "recency_score": 0.10,
@@ -87,7 +89,8 @@ def score_recommendations(
         and float(item.get("aml_score") or 0.0) >= PUBLIC_AML_SCORE_THRESHOLD
         and not is_trusted_publication(item)
     )
-    write_json(PUBLIC_OUTPUT_PATH, public_items)
+    public_output_path = _public_output_path()
+    write_json(public_output_path, public_items)
     write_json(SCORING_DEBUG_PATH, {"updated_at": updated_at, "items": scored})
     write_json(
         RECOMMENDATION_LOG_PATH,
@@ -97,6 +100,8 @@ def score_recommendations(
             "candidate_pool_count": len(pool_candidates),
             "score_limit": "all" if max_candidates <= 0 else max_candidates,
             "public_count": len(public_items),
+            "public_write_enabled": public_output_path == PUBLIC_OUTPUT_PATH,
+            "public_output": str(public_output_path),
             "public_score_threshold": PUBLIC_AML_SCORE_THRESHOLD,
             "public_low_venue_trust_excluded": low_venue_trust_excluded,
             "use_ai_judge": use_ai_judge,
@@ -111,8 +116,14 @@ def score_recommendations(
         "candidate_count": len(candidates),
         "candidate_pool_count": len(pool_candidates),
         "public_score_threshold": PUBLIC_AML_SCORE_THRESHOLD,
-        "public_output": str(PUBLIC_OUTPUT_PATH),
+        "public_output": str(public_output_path),
     }
+
+
+def _public_output_path():
+    if EMBEDDING_PROVIDER == "local" and not ALLOW_LOCAL_PUBLIC_WRITE:
+        return PRIVATE_DIR / "aml_recommended_papers_local_preview.json"
+    return PUBLIC_OUTPUT_PATH
 
 
 def _previous_public_recommendations() -> dict[str, dict[str, Any]]:
