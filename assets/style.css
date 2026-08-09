@@ -898,16 +898,11 @@ h1 {
   color: #475467;
 }
 
-.summary-provider-badge.is-openai {
+.summary-provider-badge.is-openai,
+.summary-provider-badge.is-local {
   border-color: rgba(21, 122, 91, 0.22);
   background: var(--green-soft);
   color: var(--green);
-}
-
-.summary-provider-badge.is-local {
-  border-color: rgba(76, 91, 219, 0.24);
-  background: #eef0ff;
-  color: #3340a3;
 }
 
 .venue-rank-badge {
@@ -2421,16 +2416,11 @@ h1 {
   color: #c4ccda;
 }
 
-:root[data-theme="dark"] .summary-provider-badge.is-openai {
+:root[data-theme="dark"] .summary-provider-badge.is-openai,
+:root[data-theme="dark"] .summary-provider-badge.is-local {
   border-color: rgba(118, 210, 173, 0.26);
   background: #173329;
   color: #a7e6ca;
-}
-
-:root[data-theme="dark"] .summary-provider-badge.is-local {
-  border-color: rgba(160, 174, 255, 0.28);
-  background: #222a56;
-  color: #cbd3ff;
 }
 
 :root[data-theme="dark"] .venue-rank-badge {

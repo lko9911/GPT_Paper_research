@@ -128,6 +128,7 @@ const UI_TEXT = {
     openaiNotAppliedTitle: "This summary was written without the OpenAI API, using title, abstract-availability, DOI, and public metadata signals.",
     openaiSource: "OpenAI",
     localSource: "Ollama",
+    summarySourceLabel: "AI source",
     fallbackSummary: "Metadata-based summary",
     summaryMissing: "Summary has not been generated yet.",
     authorsLabel: "Authors",
@@ -1450,6 +1451,7 @@ function renderPaperRow(paper) {
   const relevanceNote = formatRelevanceNote(displayPaper);
   const scoreBadgeHtml = renderScoreBadge(displayPaper);
   const venueRankBadgeHtml = renderVenueRankBadge(displayPaper);
+  const summarySourceMeta = formatSummarySourceMeta(displayPaper);
   const representativeBadges = representativeTags(displayPaper)
     .map((tag) => badge(displayLabel(tag), "tag"))
     .join("");
@@ -1474,7 +1476,7 @@ function renderPaperRow(paper) {
         ${doiUrl ? `<a class="link-pill subtle" href="${escapeAttribute(doiUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(t("doiButton"))}</a>` : ""}
         <button class="link-pill subtle" type="button" data-citation>${escapeHtml(t("copyCitation"))}</button>
       </div>
-      <p class="policy-mini">No abstract/PDF hosted - updated ${escapeHtml(displayPaper.last_updated || "-")}</p>
+      <p class="policy-mini">No abstract/PDF hosted${summarySourceMeta ? ` - ${escapeHtml(summarySourceMeta)}` : ""} - updated ${escapeHtml(displayPaper.last_updated || "-")}</p>
     </div>
   `;
 
@@ -1778,12 +1780,23 @@ function formatSummarySections(paper) {
 
 function formatSummaryProviderLabel(paper) {
   if (hasDisplayableOpenAiSummary(paper)) {
-    return { text: `${t("openaiApplied")} · ${t("openaiSource")}`, title: t("openaiAppliedTitle"), className: "summary-provider-badge is-openai" };
+    return { text: t("openaiApplied"), title: t("openaiAppliedTitle"), className: "summary-provider-badge is-openai" };
   }
   if (hasDisplayableLocalSummary(paper)) {
-    return { text: `${t("localApplied")} · ${t("localSource")}`, title: t("localAppliedTitle"), className: "summary-provider-badge is-local" };
+    return { text: t("localApplied"), title: t("localAppliedTitle"), className: "summary-provider-badge is-openai" };
   }
   return { text: t("openaiNotApplied"), title: t("openaiNotAppliedTitle"), className: "summary-provider-badge is-fallback" };
+}
+
+function formatSummarySourceMeta(paper) {
+  if (hasDisplayableOpenAiSummary(paper)) {
+    return `${t("summarySourceLabel")}: ${t("openaiSource")}`;
+  }
+  if (hasDisplayableLocalSummary(paper)) {
+    const model = String(paper.summary_model || "").trim();
+    return `${t("summarySourceLabel")}: ${t("localSource")}${model ? ` (${model})` : ""}`;
+  }
+  return "";
 }
 
 function hasDisplayableOpenAiSummary(paper) {
