@@ -143,6 +143,33 @@ select {
   pointer-events: none;
 }
 
+.visitor-counter {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 3;
+  display: inline-flex;
+  align-items: center;
+  min-height: 20px;
+  opacity: 0.38;
+  filter: saturate(0.82);
+  transition:
+    opacity 0.18s ease,
+    filter 0.18s ease;
+}
+
+.visitor-counter:hover,
+.visitor-counter:focus-visible {
+  opacity: 0.82;
+  filter: saturate(1);
+}
+
+.visitor-counter img {
+  display: block;
+  max-width: 82px;
+  height: 20px;
+}
+
 .site-toolbar {
   position: absolute;
   top: 16px;
