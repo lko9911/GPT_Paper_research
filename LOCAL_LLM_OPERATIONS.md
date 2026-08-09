@@ -83,3 +83,30 @@ $env:LOCAL_LLM_MODEL = "gpt-oss:20b"
 ```
 
 If that model is too slow or unstable, keep using `qwen2.5:7b` or test a 14B/32B quantized model.
+
+## Local AML Embeddings
+
+AML recommendation scoring can also run without OpenAI embeddings by using an Ollama embedding model.
+
+Install the local embedding model:
+
+```powershell
+& "$env:LOCALAPPDATA\Programs\Ollama\ollama.exe" pull nomic-embed-text
+```
+
+Run the AML external/internal recommendation refresh with local embeddings:
+
+```powershell
+$env:AML_EMBEDDING_PROVIDER = "local"
+$env:LOCAL_EMBEDDING_MODEL = "nomic-embed-text"
+& "C:\Users\user\anaconda3\python.exe" scripts\run_aml_recommendation_pipeline.py --mode collect_and_score --max-candidates 0
+$env:OPENALEX_RANK_TARGETS = "aml"
+& "C:\Users\user\anaconda3\python.exe" scripts\enrich_openalex_venue_ranks.py
+```
+
+Local embedding caches are stored separately from OpenAI embedding caches:
+
+- `data/aml_embeddings/aml_seed_embeddings_local_nomic-embed-text.json`
+- `data/aml_embeddings/aml_candidate_embeddings_local_nomic-embed-text.json`
+
+OpenAI and local embedding vectors must not be mixed because their dimensions and score distributions differ. The local provider therefore uses a stricter default public AML threshold.

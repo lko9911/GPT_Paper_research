@@ -11,6 +11,7 @@ from aml_common import (
     CANDIDATE_EMBEDDINGS_PATH,
     CANDIDATE_POOL_PATH,
     EMBEDDING_MODEL,
+    EMBEDDING_PROVIDER,
     PROFILE_PATH,
     PUBLIC_OUTPUT_PATH,
     RECOMMENDATION_LOG_PATH,
@@ -20,6 +21,8 @@ from aml_common import (
     candidate_key,
     clamp01,
     cosine_similarity,
+    embed_text,
+    embedding_provider_available,
     load_json,
     normalize_key,
     now_iso,
@@ -31,7 +34,9 @@ from aml_common import (
     write_json,
 )
 
-PUBLIC_AML_SCORE_THRESHOLD = float(os.getenv("AML_PUBLIC_SCORE_THRESHOLD", "0.75"))
+PUBLIC_AML_SCORE_THRESHOLD = float(
+    os.getenv("AML_PUBLIC_SCORE_THRESHOLD", "0.905" if EMBEDDING_PROVIDER == "local" else "0.75")
+)
 SCORE_WEIGHTS = {
     "semantic_similarity": 0.80,
     "recency_score": 0.10,
@@ -209,11 +214,9 @@ def refresh_public_recommendation_reasons() -> dict[str, Any]:
 def _build_candidate_embeddings(candidates: list[dict[str, Any]]) -> dict[str, dict[str, Any]]:
     cached = load_json(CANDIDATE_EMBEDDINGS_PATH, {"items": []})
     by_key = {item.get("candidate_key"): item for item in cached.get("items", [])}
-    if not os.getenv("OPENAI_API_KEY"):
+    if not embedding_provider_available():
+        print(f"{EMBEDDING_PROVIDER} embedding provider is not available; using existing candidate embedding cache only.")
         return by_key
-    from openai import OpenAI
-
-    client = OpenAI()
     changed = False
     for candidate in candidates:
         key = candidate_key(candidate)
@@ -222,19 +225,30 @@ def _build_candidate_embeddings(candidates: list[dict[str, Any]]) -> dict[str, d
         existing = by_key.get(key)
         if existing and existing.get("text_hash") == text_hash and existing.get("embedding"):
             continue
-        response = client.embeddings.create(model=EMBEDDING_MODEL, input=text[:8000])
+        embedding = embed_text(text)
+        if not embedding:
+            continue
         by_key[key] = {
             "candidate_key": key,
             "title": candidate.get("title", ""),
             "doi": candidate.get("doi", ""),
             "text_hash": text_hash,
-            "embedding": response.data[0].embedding,
+            "embedding": embedding,
             "embedding_model": EMBEDDING_MODEL,
+            "embedding_provider": EMBEDDING_PROVIDER,
             "created_at": now_iso(),
         }
         changed = True
     if changed:
-        write_json(CANDIDATE_EMBEDDINGS_PATH, {"items": list(by_key.values()), "updated_at": now_iso()})
+        write_json(
+            CANDIDATE_EMBEDDINGS_PATH,
+            {
+                "items": list(by_key.values()),
+                "embedding_model": EMBEDDING_MODEL,
+                "embedding_provider": EMBEDDING_PROVIDER,
+                "updated_at": now_iso(),
+            },
+        )
     return by_key
 
 

@@ -300,6 +300,9 @@ def _summarize_with_openai(record: dict[str, Any], abstract: str) -> dict[str, A
 def _summarize_with_local_ollama(record: dict[str, Any], abstract: str) -> dict[str, Any] | None:
     """Generate a local LLM summary through Ollama's localhost API."""
 
+    if not abstract and os.getenv("LOCAL_REQUIRE_ABSTRACT", "true").strip().lower() not in {"0", "false", "no", "n"}:
+        return None
+
     endpoint = os.getenv("LOCAL_LLM_URL", "http://localhost:11434").rstrip("/") + "/api/chat"
     model = os.getenv("LOCAL_LLM_MODEL", "qwen2.5:7b")
     timeout = float(os.getenv("LOCAL_LLM_TIMEOUT_SECONDS", "180"))
@@ -328,8 +331,10 @@ def _summarize_with_local_ollama(record: dict[str, Any], abstract: str) -> dict[
                     "You write new English paper summaries for a manufacturing research tracker. "
                     "Do not copy, translate, or closely paraphrase abstract sentences. "
                     "Write compact synthesis only. Return strict JSON with ai_summary_en, relevance_score, "
-                    "relevance_note_en, tags, categories. ai_summary_en must answer exactly five labeled lines: "
-                    "1. Topic -, 2. Problem -, 3. Method -, 4. Key Result -, 5. Takeaway -. "
+                    "relevance_note_en, tags, categories. ai_summary_en must be either a string with exactly five "
+                    "labeled lines or an object with topic, problem, method, key_result, takeaway. The displayed "
+                    "summary must answer exactly: 1. Topic -, 2. Problem -, 3. Method -, 4. Key Result -, 5. Takeaway -. "
+                    "Do not invent numeric results, percentages, claims, or performance values that are not in the provided metadata. "
                     "Use only the allowed category names."
                 ),
             },
@@ -782,9 +787,23 @@ def _en_summary_labels() -> list[str]:
 def _normalize_generated_summary(value: Any, labels: list[str]) -> str:
     if isinstance(value, dict):
         lines = []
+        aliases = [
+            ("topic", "subject", "1"),
+            ("problem", "challenge", "2"),
+            ("method", "approach", "methods", "3"),
+            ("key_result", "key result", "result", "finding", "findings", "4"),
+            ("takeaway", "conclusion", "implication", "5"),
+        ]
         for index, label in enumerate(labels, start=1):
             short_label = label.split("-", 1)[0].strip()
-            answer = value.get(str(index)) or value.get(index) or value.get(label) or value.get(short_label) or ""
+            normalized = {str(key).strip().lower().replace("-", "_"): item for key, item in value.items()}
+            answer = (
+                value.get(str(index))
+                or value.get(index)
+                or value.get(label)
+                or value.get(short_label)
+                or next((normalized.get(alias.replace(" ", "_")) for alias in aliases[index - 1] if normalized.get(alias.replace(" ", "_"))), "")
+            )
             answer = str(answer).strip()
             if answer:
                 lines.append(f"{index}. {label} {answer}")

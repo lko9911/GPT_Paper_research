@@ -1,11 +1,22 @@
-"""Build cached OpenAI embeddings for AML seed papers."""
+"""Build cached embeddings for AML seed papers."""
 
 from __future__ import annotations
 
-import os
 from typing import Any
 
-from aml_common import EMBEDDING_MODEL, SEED_EMBEDDINGS_PATH, load_json, now_iso, paper_text, seed_path, stable_hash, write_json
+from aml_common import (
+    EMBEDDING_MODEL,
+    EMBEDDING_PROVIDER,
+    SEED_EMBEDDINGS_PATH,
+    embed_text,
+    embedding_provider_available,
+    load_json,
+    now_iso,
+    paper_text,
+    seed_path,
+    stable_hash,
+    write_json,
+)
 
 
 def build_seed_embeddings() -> dict[str, Any]:
@@ -16,13 +27,10 @@ def build_seed_embeddings() -> dict[str, Any]:
     cached = load_json(SEED_EMBEDDINGS_PATH, {"items": []})
     cache_by_id = {item.get("seed_id"): item for item in cached.get("items", [])}
 
-    if not os.getenv("OPENAI_API_KEY"):
-        print("OPENAI_API_KEY is not set; skipping seed embedding generation.")
-        return {"items": list(cache_by_id.values()), "generated": 0, "skipped_no_key": True}
+    if not embedding_provider_available():
+        print(f"{EMBEDDING_PROVIDER} embedding provider is not available; skipping seed embedding generation.")
+        return {"items": list(cache_by_id.values()), "generated": 0, "skipped_unavailable": True}
 
-    from openai import OpenAI
-
-    client = OpenAI()
     items = []
     generated = 0
     for seed in seeds:
@@ -33,8 +41,9 @@ def build_seed_embeddings() -> dict[str, Any]:
         if existing and existing.get("text_hash") == text_hash and existing.get("embedding"):
             items.append(existing)
             continue
-        response = client.embeddings.create(model=EMBEDDING_MODEL, input=text[:8000])
-        embedding = response.data[0].embedding
+        embedding = embed_text(text)
+        if not embedding:
+            continue
         items.append(
             {
                 "seed_id": seed_id,
@@ -43,14 +52,20 @@ def build_seed_embeddings() -> dict[str, Any]:
                 "text_hash": text_hash,
                 "embedding": embedding,
                 "embedding_model": EMBEDDING_MODEL,
+                "embedding_provider": EMBEDDING_PROVIDER,
                 "created_at": now_iso(),
             }
         )
         generated += 1
 
-    payload = {"items": items, "embedding_model": EMBEDDING_MODEL, "updated_at": now_iso()}
+    payload = {
+        "items": items,
+        "embedding_model": EMBEDDING_MODEL,
+        "embedding_provider": EMBEDDING_PROVIDER,
+        "updated_at": now_iso(),
+    }
     write_json(SEED_EMBEDDINGS_PATH, payload)
-    return {"items": items, "generated": generated, "skipped_no_key": False}
+    return {"items": items, "generated": generated, "skipped_unavailable": False}
 
 
 if __name__ == "__main__":

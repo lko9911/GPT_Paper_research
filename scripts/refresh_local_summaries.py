@@ -61,8 +61,11 @@ def main() -> None:
             openalex_record = _openalex_record(paper)
             if openalex_record:
                 record.update({key: value for key, value in openalex_record.items() if value})
-            summarized = summarize_record(record, allow_openai=False, allow_local=True)
-            if summarized.get("_summary_provider") != "local":
+            has_abstract = bool(record.get("_abstract"))
+            require_abstract = _env_bool("LOCAL_REQUIRE_ABSTRACT", True)
+            summarized = summarize_record(record, allow_openai=False, allow_local=not (require_abstract and not has_abstract))
+            provider = summarized.get("_summary_provider")
+            if provider not in {"local", "fallback"}:
                 skipped += 1
                 print(f"[{index}/{len(candidates)}] skipped fallback-only: {title}")
                 continue
@@ -73,10 +76,13 @@ def main() -> None:
                 paper["abstract_used_for_summary"] = bool(record.get("_abstract"))
                 paper["raw_abstract_displayed"] = False
                 paper["pdf_stored"] = False
-                paper["summary_provider"] = "local"
+                paper["summary_provider"] = provider
                 paper["openai_summary_applied"] = False
-                paper["local_summary_applied"] = True
-                paper["summary_model"] = summarized.get("_summary_model") or model
+                paper["local_summary_applied"] = provider == "local"
+                if provider == "local":
+                    paper["summary_model"] = summarized.get("_summary_model") or model
+                else:
+                    paper.pop("summary_model", None)
                 paper["last_updated"] = today
                 for key in list(paper):
                     if key.startswith("_"):

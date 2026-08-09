@@ -7,6 +7,8 @@ import json
 import math
 import os
 import re
+import urllib.error
+import urllib.request
 from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
@@ -18,14 +20,34 @@ PROFILE_PATH = ROOT / "data" / "profiles" / "aml_lab_profile.json"
 PRIVATE_DIR = ROOT / "data" / "private"
 EMBEDDING_DIR = ROOT / "data" / "aml_embeddings"
 DEFAULT_SEED_PATH = PRIVATE_DIR / "aml_seed_papers_core_enriched.json"
-SEED_EMBEDDINGS_PATH = EMBEDDING_DIR / "aml_seed_embeddings.json"
 CANDIDATE_POOL_PATH = PRIVATE_DIR / "aml_candidate_pool.json"
-CANDIDATE_EMBEDDINGS_PATH = EMBEDDING_DIR / "aml_candidate_embeddings.json"
 SCORING_DEBUG_PATH = PRIVATE_DIR / "aml_scoring_debug.json"
 RECOMMENDATION_LOG_PATH = PRIVATE_DIR / "aml_recommendation_log.json"
 PUBLIC_OUTPUT_PATH = ROOT / "public" / "data" / "aml_recommended_papers.json"
 
-EMBEDDING_MODEL = os.getenv("OPENAI_EMBEDDING_MODEL", "text-embedding-3-small")
+EMBEDDING_PROVIDER = os.getenv("AML_EMBEDDING_PROVIDER", "openai").strip().lower()
+if EMBEDDING_PROVIDER not in {"openai", "local"}:
+    EMBEDDING_PROVIDER = "openai"
+EMBEDDING_MODEL = (
+    os.getenv("LOCAL_EMBEDDING_MODEL", "nomic-embed-text")
+    if EMBEDDING_PROVIDER == "local"
+    else os.getenv("OPENAI_EMBEDDING_MODEL", "text-embedding-3-small")
+)
+
+
+def _safe_file_token(value: str) -> str:
+    return re.sub(r"[^a-zA-Z0-9_.-]+", "_", value).strip("_").lower() or "default"
+
+
+def _embedding_cache_path(kind: str) -> Path:
+    if EMBEDDING_PROVIDER == "openai":
+        return EMBEDDING_DIR / f"aml_{kind}_embeddings.json"
+    suffix = _safe_file_token(f"{EMBEDDING_PROVIDER}_{EMBEDDING_MODEL}")
+    return EMBEDDING_DIR / f"aml_{kind}_embeddings_{suffix}.json"
+
+
+SEED_EMBEDDINGS_PATH = _embedding_cache_path("seed")
+CANDIDATE_EMBEDDINGS_PATH = _embedding_cache_path("candidate")
 
 AML_TERMS = [
     "multi-material additive manufacturing",
@@ -102,6 +124,73 @@ def load_json(path: Path, fallback: Any) -> Any:
 def write_json(path: Path, data: Any) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+
+def embedding_provider_available() -> bool:
+    if EMBEDDING_PROVIDER == "openai":
+        return bool(os.getenv("OPENAI_API_KEY"))
+    return _ollama_model_available(EMBEDDING_MODEL)
+
+
+def embed_text(text: str) -> list[float]:
+    text = str(text or "")[:8000]
+    if not text:
+        return []
+    if EMBEDDING_PROVIDER == "local":
+        return _embed_text_with_ollama(text)
+    if not os.getenv("OPENAI_API_KEY"):
+        return []
+    from openai import OpenAI
+
+    client = OpenAI()
+    response = client.embeddings.create(model=EMBEDDING_MODEL, input=text)
+    return response.data[0].embedding
+
+
+def _embed_text_with_ollama(text: str) -> list[float]:
+    endpoint = os.getenv("LOCAL_LLM_URL", "http://localhost:11434").rstrip("/")
+    timeout = float(os.getenv("LOCAL_EMBEDDING_TIMEOUT_SECONDS", "180"))
+    payload = {"model": EMBEDDING_MODEL, "input": text}
+    try:
+        data = _ollama_post_json(endpoint + "/api/embed", payload, timeout)
+        embeddings = data.get("embeddings") or []
+        if embeddings and isinstance(embeddings[0], list):
+            return [float(value) for value in embeddings[0]]
+    except Exception:
+        pass
+
+    fallback = {"model": EMBEDDING_MODEL, "prompt": text}
+    data = _ollama_post_json(endpoint + "/api/embeddings", fallback, timeout)
+    embedding = data.get("embedding") or []
+    return [float(value) for value in embedding]
+
+
+def _ollama_model_available(model: str) -> bool:
+    endpoint = os.getenv("LOCAL_LLM_URL", "http://localhost:11434").rstrip("/")
+    try:
+        request = urllib.request.Request(endpoint + "/api/tags", method="GET")
+        with urllib.request.urlopen(request, timeout=10) as response:
+            payload = json.loads(response.read().decode("utf-8"))
+        models = payload.get("models") or []
+        requested = model.split(":", 1)[0]
+        for item in models:
+            name = str(item.get("name") or item.get("model") or "")
+            if name == model or name.split(":", 1)[0] == requested:
+                return True
+        return False
+    except (urllib.error.URLError, TimeoutError, json.JSONDecodeError):
+        return False
+
+
+def _ollama_post_json(url: str, payload: dict[str, Any], timeout: float) -> dict[str, Any]:
+    request = urllib.request.Request(
+        url,
+        data=json.dumps(payload).encode("utf-8"),
+        headers={"Content-Type": "application/json"},
+        method="POST",
+    )
+    with urllib.request.urlopen(request, timeout=timeout) as response:
+        return json.loads(response.read().decode("utf-8"))
 
 
 def seed_path() -> Path:
