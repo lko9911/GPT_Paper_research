@@ -858,8 +858,8 @@
     "core_status": "core",
     "venue_scope": "core",
     "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - A flexible integration of photo-thermal driven soft grippers with tactile perception\n2. Problem - Achieving physical decoupling between electro-tactile sensing and photo-thermal actuation in a single system without signal crosstalk.\n3. Method - Designing a monolithic cross-talk-free gripper using structurally partitioned, biomimetic design; fabricating the tactile sensor and bilayer actuator via patternable screen printing on a single matrix.\n4. Key Result - The tactile sensor has a wide pressure range of 0-2500 kPa, a response time of 5 ms, and over 40,000 cycle durability; the bilayer actuator is multi-responsive to light, heat, and humidity, bending 360° under infrared heat.\n5. Takeaway - The system can recognize objects in real-time using a 1D convolutional neural network and perform closed-loop feedback grasping of specific objects under light irradiation.",
-    "relevance_note_en": "Highly relevant to the development of intelligent, integrated soft robotic systems through AI and machine learning techniques.",
+    "ai_summary_en": "1. Topic - A Flexible Integration of Photo-Thermal Driven Monolithic Soft Intelligent Gripper Directed by Tactile Perception as Cross-talk-free Control Feedback is a 2026 paper from Advanced Functional Materials about Soft robotics.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Soft robotics.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Soft robotics; current relevance score is 5/10.",
+    "relevance_note_en": "Relevant to the tracker through Soft robotics; score: 5/10.",
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
@@ -2717,7 +2717,7 @@
       "official_quartile": null,
       "openalex_two_year_mean_citedness": 5.70960295475531,
       "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 2",
+      "openalex_venue_rank": "Rank 1",
       "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
     },
     "venue_trust_reason": "journal article with named venue and no low-trust marker",
@@ -5307,8 +5307,8 @@
     "core_status": "non-core",
     "venue_scope": "non-core",
     "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - 3D-printed hierarchical bilayer metasurfaces\n2. Problem - Achieving simultaneous self-cleaning, multispectral protection, and subambient cooling in a single coating.\n3. Method - Using vat photopolymerization with in situ slurry switching to fabricate 3D-printed hierarchical bilayer metasurfaces comprising a porous TPU-ZnO substrate and a gradient-refractive-index metasurface (TZP/MS).\n4. Key Result - The top metasurface provides hydrophobic self-cleaning, broadband solar reflection, and laser protection, while the porous underlayer enables electromagnetic absorption and high infrared emissivity for subambient radiative cooling.\n5. Takeaway - This work establishes a design paradigm for durable functional coatings in demanding environments by integrating self-sustained cleanliness as an integral component of multispectral protection.",
-    "relevance_note_en": "Highly relevant to multi-material additive manufacturing and functional coatings.",
+    "ai_summary_en": "1. Topic - 3D-Printed Hierarchical Bilayer Metasurfaces for Simultaneous Self-Cleaning, Multispectral Protection, and Subambient Cooling is a 2026 paper from ACS Applied Materials & Interfaces about Vat photopolymerization and Manufacturing automation.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Vat photopolymerization and Manufacturing automation.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Vat photopolymerization and Manufacturing automation; current relevance score is 5/10.",
+    "relevance_note_en": "Relevant to the tracker through Vat photopolymerization and Manufacturing automation; score: 5/10.",
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
@@ -5582,6 +5582,153 @@
     "last_seen_in_crossref_run": "2026-08-09",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/adma.202523039"
+  },
+  "10.1002/adma.74517": {
+    "author_details": [
+      {
+        "name": "Pei Zhang",
+        "orcid": "https://orcid.org/0009-0008-4184-6148",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Mechanical and Energy Engineering Southern University of Science and Technology Shenzhen China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical and Energy Engineering Southern University of Science and Technology Shenzhen China"
+        ]
+      },
+      {
+        "name": "Chang Wang",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Mechanical and Energy Engineering Southern University of Science and Technology Shenzhen China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical and Energy Engineering Southern University of Science and Technology Shenzhen China"
+        ]
+      },
+      {
+        "name": "Runyi Yan",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Mechanical and Energy Engineering Southern University of Science and Technology Shenzhen China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical and Energy Engineering Southern University of Science and Technology Shenzhen China"
+        ]
+      },
+      {
+        "name": "Lingfeng Yuan",
+        "orcid": "https://orcid.org/0009-0005-3673-7009",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Mechanical and Energy Engineering Southern University of Science and Technology Shenzhen China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical and Energy Engineering Southern University of Science and Technology Shenzhen China"
+        ]
+      },
+      {
+        "name": "Zhipeng Ni",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Mechanical and Energy Engineering Southern University of Science and Technology Shenzhen China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical and Energy Engineering Southern University of Science and Technology Shenzhen China"
+        ]
+      },
+      {
+        "name": "Ji Liu",
+        "orcid": "https://orcid.org/0000-0001-7171-405X",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Mechanical and Energy Engineering Southern University of Science and Technology Shenzhen China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical and Energy Engineering Southern University of Science and Technology Shenzhen China"
+        ]
+      }
+    ],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Advanced Materials",
+    "crossref_target_issn": "0935-9648",
+    "issn": [
+      "0935-9648",
+      "1521-4095"
+    ],
+    "issn_l": "",
+    "publisher": "Wiley",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S99352657",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S99352657",
+      "issn_l": "0935-9648",
+      "issn": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "type": "journal",
+      "host_organization_name": null,
+      "works_count": 44789,
+      "cited_by_count": 4803689,
+      "two_year_mean_citedness": 21.19633376740459,
+      "h_index": 743,
+      "i10_index": 31001,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "High-impact general journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 21.19633376740459,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - 3D-Printed Architected Cholesteric Liquid Crystal Displays With Spatiotemporal Color Modulation is a 2026 paper from Advanced Materials about Soft robotics.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Soft robotics.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Soft robotics; current relevance score is 5/10.",
+    "relevance_note_en": "Relevant to the tracker through Soft robotics; score: 5/10.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-08-09",
+    "id": "10.1002/adma.74517"
   },
   "10.1002/advs.202521820": {
     "author_details": [
@@ -6548,8 +6695,8 @@
     "core_status": "non-core",
     "venue_scope": "non-core",
     "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - 3D printing of stretchable, compressible, and conductive porous polyurethane\n2. Problem - Developing materials suitable for soft robotics applications that can withstand mechanical stress while maintaining functionality.\n3. Method - Using advanced 3D printing techniques to fabricate porous polyurethane with desired properties.\n4. Key Result - Successful creation of stretchable, compressible, and conductive polyurethane structures through 3D printing.\n5. Takeaway - This research opens new possibilities for soft robotics by providing materials that can be tailored for specific applications.",
-    "relevance_note_en": "Highly relevant to the development of advanced materials for soft robotics, focusing on multi-material additive manufacturing techniques.",
+    "ai_summary_en": "1. Topic - 3D Printing of Stretchable, Compressible and Conductive Porous Polyurethane for Soft Robotics (Adv. Mater. Technol. 15/2026) is a 2026 paper from Advanced Materials Technologies about Soft robotics.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Soft robotics.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Soft robotics; current relevance score is 5/10.",
+    "relevance_note_en": "Relevant to the tracker through Soft robotics; score: 5/10.",
     "abstract_used_for_summary": false,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
@@ -10917,7 +11064,7 @@
       "official_quartile": null,
       "openalex_two_year_mean_citedness": 1.7,
       "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 4",
+      "openalex_venue_rank": "Rank 3",
       "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
     },
     "venue_trust_reason": "journal article with named venue and no low-trust marker",
@@ -11006,7 +11153,7 @@
       "official_quartile": null,
       "openalex_two_year_mean_citedness": 3.4639217413185706,
       "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 3",
+      "openalex_venue_rank": "Rank 2",
       "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
     },
     "venue_trust_reason": "journal article with named venue and no low-trust marker",
@@ -30407,148 +30554,5 @@
     "last_seen_in_crossref_run": "2026-08-09",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1007/s40964-024-00911-7"
-  },
-  "10.1021/acscentsci.5c00986": {
-    "author_details": [
-      {
-        "name": "Elizabeth A. Recker",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "McKetta Department of Chemical Engineering"
-          },
-          {
-            "name": "The University of Texas at Austin"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "McKetta Department of Chemical Engineering",
-          "The University of Texas at Austin"
-        ]
-      },
-      {
-        "name": "Xiaofeng Chen",
-        "orcid": "https://orcid.org/0000-0002-5399-9781",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Chemistry"
-          },
-          {
-            "name": "The University of Texas at Austin"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Chemistry",
-          "The University of Texas at Austin"
-        ]
-      },
-      {
-        "name": "Ji-Won Kim",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Chemistry"
-          },
-          {
-            "name": "The University of Texas at Austin"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Chemistry",
-          "The University of Texas at Austin"
-        ]
-      },
-      {
-        "name": "Zachariah A. Page",
-        "orcid": "https://orcid.org/0000-0002-1013-5422",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "McKetta Department of Chemical Engineering"
-          },
-          {
-            "name": "The University of Texas at Austin"
-          },
-          {
-            "name": "Department of Chemistry"
-          },
-          {
-            "name": "The University of Texas at Austin"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "McKetta Department of Chemical Engineering",
-          "The University of Texas at Austin",
-          "Department of Chemistry",
-          "The University of Texas at Austin"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2374-7943",
-      "2374-7951"
-    ],
-    "issn_l": "",
-    "publisher": "American Chemical Society (ACS)",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4413252500",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S2765035057",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S2765035057",
-      "issn_l": "2374-7943",
-      "issn": [
-        "2374-7943",
-        "2374-7951"
-      ],
-      "type": "journal",
-      "host_organization_name": "American Chemical Society",
-      "works_count": 2826,
-      "cited_by_count": 158408,
-      "two_year_mean_citedness": 8.051698670605614,
-      "h_index": 189,
-      "i10_index": 1645,
-      "is_core": true,
-      "is_oa": true,
-      "is_in_doaj": true
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 8.051698670605614,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 1",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The paper discusses advancements in single-vat multimaterial 3D printing using vat photopolymerization.\n2. Problem - Current 3D printing methods primarily utilize a single material, limiting the functionality of printed parts.\n3. Method - The authors explore strategies that involve selective activation of different chemical reactions within a single vat to create complex multimaterial structures.\n4. Key Result - Progress in resin chemistry, reaction selectivity, and light control techniques is essential for enhancing the capabilities of multimaterial printing.\n5. Takeaway - The future of multimaterial vat photopolymerization holds promise for significant innovations across various fields, including medicine and aerospace.",
-    "relevance_note_en": "The summary captures the core themes and findings of the paper while maintaining originality.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-08-09",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1021/acscentsci.5c00986"
   }
 }
