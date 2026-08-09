@@ -94,70 +94,6 @@ select {
   font: inherit;
 }
 
-.pointer-trail {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9998;
-  width: 0;
-  height: 0;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.22s ease;
-}
-
-.pointer-trail.is-visible {
-  opacity: 1;
-}
-
-.pointer-trail.is-text {
-  opacity: 0;
-}
-
-.pointer-trail span {
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: block;
-  width: calc(4px + (3 - var(--trail-index)) * 2px);
-  height: calc(4px + (3 - var(--trail-index)) * 2px);
-  border-radius: 999px;
-  background:
-    radial-gradient(circle, color-mix(in srgb, var(--green), white 18%) 0 24%, transparent 62%),
-    radial-gradient(circle, color-mix(in srgb, var(--blue), transparent 72%) 0 42%, transparent 78%);
-  box-shadow:
-    0 0 9px color-mix(in srgb, var(--green), transparent 74%),
-    0 0 18px color-mix(in srgb, var(--blue), transparent 92%);
-  opacity: calc(0.16 - var(--trail-index) * 0.027);
-  transform: translate3d(-100px, -100px, 0);
-  translate: -50% -50%;
-  transition:
-    width 0.18s ease,
-    height 0.18s ease,
-    background 0.18s ease,
-    box-shadow 0.18s ease,
-    opacity 0.18s ease;
-  will-change: transform;
-}
-
-.pointer-trail.is-interactive span {
-  width: calc(5px + (3 - var(--trail-index)) * 2px);
-  height: calc(5px + (3 - var(--trail-index)) * 2px);
-  background:
-    radial-gradient(circle, color-mix(in srgb, var(--blue), white 18%) 0 28%, transparent 68%),
-    radial-gradient(circle, color-mix(in srgb, var(--green), transparent 76%) 0 46%, transparent 78%);
-  box-shadow:
-    0 0 10px color-mix(in srgb, var(--blue), transparent 70%),
-    0 0 20px color-mix(in srgb, var(--green), transparent 91%);
-  opacity: calc(0.22 - var(--trail-index) * 0.032);
-}
-
-.pointer-trail.is-pressed span {
-  width: calc(4px + (3 - var(--trail-index)) * 1.5px);
-  height: calc(4px + (3 - var(--trail-index)) * 1.5px);
-  opacity: calc(0.24 - var(--trail-index) * 0.035);
-}
-
 .shell,
 .wide-shell {
   width: min(1180px, calc(100% - 32px));
@@ -2391,9 +2327,6 @@ h1 {
     transform: none;
   }
 
-  .pointer-trail {
-    display: none;
-  }
 }
 
 /* Dark contrast pass: keep surfaces readable and avoid light-mode color leftovers. */
