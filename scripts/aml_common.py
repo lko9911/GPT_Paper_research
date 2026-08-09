@@ -307,6 +307,8 @@ def public_paper(record: dict[str, Any], updated_at: str) -> dict[str, Any]:
         "relevance_note_en": record.get("relevance_note_en", ""),
         "summary_provider": record.get("summary_provider", "metadata"),
         "openai_summary_applied": bool(record.get("openai_summary_applied")),
+        "local_summary_applied": bool(record.get("local_summary_applied")),
+        "summary_model": record.get("summary_model", ""),
         "summary_source": record.get("summary_source", ""),
         "updated_at": updated_at,
     }

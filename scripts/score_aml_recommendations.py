@@ -74,14 +74,15 @@ def score_recommendations(
     scored.sort(key=lambda item: (item["aml_score"], item.get("year") or 0), reverse=True)
     updated_at = now_iso()
     previous_public = _previous_public_recommendations()
-    public_items = [
+    current_public_items = [
         public_paper(item, updated_at)
         for item in scored
         if item["recommendation_level"] != "Exclude"
         and float(item.get("aml_score") or 0.0) >= PUBLIC_AML_SCORE_THRESHOLD
         and is_trusted_publication(item)
     ]
-    public_items = _mark_new_recommendations(public_items, previous_public, updated_at)
+    current_public_items = _mark_new_recommendations(current_public_items, previous_public, updated_at)
+    public_items = _merge_public_recommendations(current_public_items, previous_public, updated_at)
     low_venue_trust_excluded = sum(
         1
         for item in scored
@@ -159,6 +160,60 @@ def _mark_new_recommendations(
     return public_items
 
 
+def _merge_public_recommendations(
+    current_items: list[dict[str, Any]],
+    previous_public: dict[str, dict[str, Any]],
+    updated_at: str,
+) -> list[dict[str, Any]]:
+    merged = {key: dict(item) for key, item in previous_public.items()}
+    for item in current_items:
+        key = candidate_key(item)
+        if not key or key in {"doi:", "title:"}:
+            continue
+        previous = merged.get(key)
+        if previous:
+            merged[key] = _merge_public_item(previous, item, updated_at)
+        else:
+            merged[key] = item
+    return sorted(
+        merged.values(),
+        key=lambda item: (float(item.get("aml_score") or 0.0), int(item.get("year") or 0), str(item.get("title") or "")),
+        reverse=True,
+    )
+
+
+def _merge_public_item(previous: dict[str, Any], current: dict[str, Any], updated_at: str) -> dict[str, Any]:
+    merged = dict(previous)
+    for key, value in current.items():
+        if _has_value(value):
+            merged[key] = value
+    merged["first_added"] = previous.get("first_added") or previous.get("updated_at") or current.get("first_added") or updated_at
+    merged["last_updated"] = updated_at
+    if _has_ai_summary(previous) and not _has_ai_summary(current):
+        for key in (
+            "ai_summary_en",
+            "relevance_note_en",
+            "summary_provider",
+            "openai_summary_applied",
+            "local_summary_applied",
+            "summary_model",
+            "summary_source",
+            "abstract_used_for_summary",
+        ):
+            if key in previous:
+                merged[key] = previous[key]
+    return merged
+
+
+def _has_ai_summary(item: dict[str, Any]) -> bool:
+    provider = str(item.get("summary_provider") or "").strip().lower()
+    return provider in {"openai", "local"} or item.get("openai_summary_applied") is True or item.get("local_summary_applied") is True
+
+
+def _has_value(value: Any) -> bool:
+    return value is not None and value != "" and value != []
+
+
 def _source_paper_summaries() -> dict[str, dict[str, Any]]:
     summaries: dict[str, dict[str, Any]] = {}
     for paper in load_json(PAPERS_PATH, []):
@@ -171,6 +226,8 @@ def _source_paper_summaries() -> dict[str, dict[str, Any]]:
             "relevance_note_en": paper.get("relevance_note_en", ""),
             "summary_provider": paper.get("summary_provider", "metadata"),
             "openai_summary_applied": bool(paper.get("openai_summary_applied")),
+            "local_summary_applied": bool(paper.get("local_summary_applied")),
+            "summary_model": paper.get("summary_model", ""),
             "summary_source": "curated_paper_pool",
             "openalex_venue_rank": paper.get("openalex_venue_rank", ""),
             "openalex_venue_rank_number": paper.get("openalex_venue_rank_number"),
