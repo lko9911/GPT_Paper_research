@@ -279,17 +279,18 @@
     "venue_scope": "non-core",
     "core_source": "schema_placeholder_crossref_rebuild",
     "categories": [
-      "Functionally Graded AM"
+      "Functionally Graded AM",
+      "Multi-material AM"
     ],
     "tags": [
       "Additive manufacturing"
     ],
-    "relevance_score": 6,
+    "relevance_score": 9,
     "curation_priority": false,
-    "ai_summary_en": "1. Topic - Curvature-Programmable Sheet-to-3D Morphing of Single-Material Architected Laminates: A Functionally Graded Framework for Foaming-Induced Bending is a 2026 paper from ACS Applied Materials & Interfaces about Additive manufacturing.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Additive manufacturing.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Additive manufacturing; current relevance score is 6/10.",
-    "summary_provider": "fallback",
+    "ai_summary_en": "1. Topic - Curvature-programmable sheet-to-3D morphing of single-material architected laminates\n2. Problem - Developing a framework to achieve functionally graded bending in single-material structures using foaming-induced processes.\n3. Method - Creating a functionally graded framework that utilizes additive manufacturing techniques, specifically focusing on blended FDM and digital material filament approaches.\n4. Key Result - Successfully demonstrated curvature-programmable morphing of single-material laminates through optimized material distribution and computational design.\n5. Takeaway - The proposed method enables the creation of complex 3D structures from a single material by leveraging foaming-induced bending, offering new possibilities in additive manufacturing.",
+    "summary_provider": "local",
     "openai_summary_applied": false,
-    "relevance_note_en": "Relevant to the tracker through Additive manufacturing; score: 6/10.",
+    "relevance_note_en": "Highly relevant to Functionally Graded AM and Multi-material AM categories.",
     "abstract_used_for_summary": false,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
@@ -303,7 +304,8 @@
     "openalex_venue_rank_score": 7.780907972281588,
     "openalex_venue_rank_percentile": 0.8319,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
-    "local_summary_applied": false
+    "local_summary_applied": true,
+    "summary_model": "qwen2.5:7b"
   },
   {
     "id": "10.3390/jcs10070371",
@@ -1097,10 +1099,10 @@
     ],
     "relevance_score": 9,
     "curation_priority": false,
-    "ai_summary_en": "1. Topic - Recent advances in additively manufactured auxetic metamaterials\n2. Problem - The mechanical performance of auxetic metamaterials is strongly influenced by structural topology, material selection, printing process, loading mode, and measurement method.\n3. Method - A structured overview of recent advances, summarizing representative configurations and discussing main AM routes with their advantages and limitations.\n4. Key Result - The relationship among architecture, manufacturing route, and mechanical performance, including Poisson’s ratio, lightweight characteristics, energy absorption, impact resistance, programmability, and biomedical adaptability.\n5. Takeaway - Current challenges include manufacturing fidelity, standardized testing, fatigue and damage tolerance, multi-material and functionally graded design, and application-oriented validation.",
+    "ai_summary_en": "1. Topic - Recent Advances in Additively Manufactured Auxetic Metamaterials\n2. Problem - The mechanical performance of auxetic metamaterials is strongly influenced by structural topology, material selection, printing process, loading mode, and measurement method.\n3. Method - A structured overview of recent advances in additively manufactured auxetic metamaterials was provided, summarizing representative configurations and discussing main AM routes used for their fabrication.\n4. Key Result - The relationship among architecture, manufacturing route, and mechanical performance, including Poisson’s ratio, lightweight characteristics, energy absorption (EA), impact resistance, programmability, and biomedical adaptability, was emphasized.\n5. Takeaway - Current challenges include manufacturing fidelity, standardized testing, fatigue and damage tolerance, multi-material and functionally graded design, and application-oriented validation.",
     "summary_provider": "local",
     "openai_summary_applied": false,
-    "relevance_note_en": "Highly relevant to the topic of additively manufactured metamaterials with a focus on auxetic structures.",
+    "relevance_note_en": "Highly relevant to the topic of additively manufactured auxetic metamaterials with a focus on recent advances and challenges.",
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
@@ -8819,10 +8821,10 @@
     ],
     "relevance_score": 9,
     "curation_priority": false,
-    "ai_summary_en": "1. Topic - Probabilistic digital twin for aerosol jet printing\n2. Problem - Print inconsistencies due to unobservable states in the AJ process limit its adoption.\n3. Method - Developing a physics-based reduced-order model and using probabilistic sequential estimation with real-time sensor data.\n4. Key Result - Enables monitoring of hidden characteristics, anomaly detection, prediction, and forecasting of control adjustments.\n5. Takeaway - The framework can be transferred to other advanced manufacturing processes.",
+    "ai_summary_en": "1. Topic - Probabilistic digital twin for aerosol jet printing\n2. Problem - Print inconsistencies due to unobservable states in the AJ process limit its widespread adoption.\n3. Method - Developing a physics-based reduced-order model and using probabilistic sequential estimation with real-time sensor data.\n4. Key Result - A digital twin that monitors hidden characteristics, detects anomalies, and forecasts control adjustments for improved part quality.\n5. Takeaway - The framework can be adapted to other advanced manufacturing processes beyond aerosol jet printing.",
     "summary_provider": "local",
     "openai_summary_applied": false,
-    "relevance_note_en": "Highly relevant as it addresses a key challenge in aerosol jet printing and proposes a solution that could be applicable across multiple AM technologies.",
+    "relevance_note_en": "Highly relevant as it addresses a key challenge in aerosol jet printing and proposes a solution that could be applicable across multiple manufacturing technologies.",
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
@@ -9181,10 +9183,10 @@
     ],
     "relevance_score": 9,
     "curation_priority": false,
-    "ai_summary_en": "1. Topic - Physics-driven digital twin architecture for Wire Arc Additive Manufacturing (WAAM)\n2. Problem - Need for efficient monitoring, prediction, and closed-loop control in WAAM processes\n3. Method - Integration of high-fidelity simulations with data-driven surrogate models through a multilayer framework\n4. Key Result - Surrogate models reproduce the responses of finite-element models with over 95% accuracy while reducing computational time by 85-90%\n5. Takeaway - Unified architecture supports adaptive closed-loop manufacturing systems in WAAM",
+    "ai_summary_en": "1. Topic - Physics-driven digital twin architecture for Wire Arc Additive Manufacturing (WAAM)\n2. Problem - Need for efficient monitoring, prediction, and closed-loop control in WAAM processes\n3. Method - Integration of high-fidelity thermo-mechanical simulations with data-driven surrogate models within a multilayer framework\n4. Key Result - Surrogate models reproduce responses of finite-element models with over 95% accuracy while reducing computational time by 85-90%\n5. Takeaway - Unified WAAM-DT framework enables adaptive closed-loop manufacturing systems",
     "summary_provider": "local",
     "openai_summary_applied": false,
-    "relevance_note_en": "Highly relevant to Wire Arc Additive Manufacturing and Digital Twins, with specific focus on multi-material AM.",
+    "relevance_note_en": "Highly relevant to Wire Arc Additive Manufacturing and Digital Twin technologies.",
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
@@ -10964,10 +10966,10 @@
     ],
     "relevance_score": 9,
     "curation_priority": false,
-    "ai_summary_en": "1. Topic - Multi-material additive manufacturing techniques for microfluidic devices\n2. Problem - Limited resolution in extrusion-based methods and single-material constraints in light-based techniques hinder the fabrication of complex microfluidic devices.\n3. Method - Reviewing various additive manufacturing technologies, including extrusion (FDM/Material extrusion) and light-based (DLP/SLA) methods, along with strategies to overcome their limitations.\n4. Key Result - Multi-vat printers, resin swapping systems, fluidic resin exchange, and dual-curing resins enable the fabrication of microfluidic devices with integrated functionalities.\n5. Takeaway - While challenges remain in material compatibility and biocompatibility, ongoing developments are improving the reliability of multi-material printing for diverse applications.",
+    "ai_summary_en": "1. Topic - Multi-material additive manufacturing techniques for microfluidic devices\n2. Problem - Limited resolution in extrusion-based methods and single-material constraints in light-based techniques hinder the seamless integration of multiple functionalities.\n3. Method - Reviewing state-of-the-art technologies, including extrusion (FDM/Material extrusion) and light-based (DLP/SLA) additive manufacturing, as well as innovative approaches to overcome limitations.\n4. Key Result - Multi-vat printers, resin swapping systems, fluidic resin exchange, and wavelength-controlled dual-curing resins enable the fabrication of integrated microfluidic devices with diverse material properties.\n5. Takeaway - While challenges remain in material compatibility, biocompatibility, and balancing resolution with throughput, advancements are driving the adoption of multi-material AM for microfluidic applications.",
     "summary_provider": "local",
     "openai_summary_applied": false,
-    "relevance_note_en": "Highly relevant to the topic of multi-material additive manufacturing with a strong focus on microfluidic devices.",
+    "relevance_note_en": "Highly relevant to multi-material additive manufacturing techniques specifically addressing microfluidic device fabrication.",
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
@@ -12321,12 +12323,12 @@
       "Robotic systems",
       "Fault diagnosis"
     ],
-    "relevance_score": 8,
+    "relevance_score": 9,
     "curation_priority": false,
-    "ai_summary_en": "1. Topic - Large language models in intelligent manufacturing\n2. Problem - Integrating large language models (LLMs) into engineering workflows to enhance efficiency without replacing traditional tools.\n3. Method - Reviewing recent studies across robotics, fault diagnosis, design and simulation, industrial knowledge workflows, and manufacturing knowledge systems.\n4. Key Result - Hybrid architectures combining LLMs with retrieval-augmented generation, knowledge graphs, multimodal perception, digital twins, validation modules, or downstream engineering tools yield the strongest results.\n5. Takeaway - LLMs are becoming useful semantic and coordination layers in engineering workflows but not dependable substitutes. Their most credible role is in human-in-the-loop systems where they assist with retrieval, validation, tool use, and structured knowledge.",
+    "ai_summary_en": "1. Topic - Large language models (LLMs) in intelligent manufacturing and mechanical engineering\n2. Problem - The integration of LLMs into various engineering workflows, including robotics, fault diagnosis, design, and knowledge management.\n3. Method - A review surveying recent studies across multiple domains to identify effective methods and limitations.\n4. Key Result - Hybrid architectures combining LLMs with RAG, knowledge graphs, multimodal perception, digital twins, validation modules, or downstream engineering tools yield the strongest results.\n5. Takeaway - LLMs are becoming useful semantic and coordination layers in engineering workflows but are not yet dependable substitutes. Their most credible near-term role is in human-in-the-loop systems.",
     "summary_provider": "local",
     "openai_summary_applied": false,
-    "relevance_note_en": "Highly relevant to the integration of AI and machine learning in manufacturing processes.",
+    "relevance_note_en": "Highly relevant to the integration of AI and machine learning techniques in manufacturing, particularly focusing on LLMs.",
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
@@ -16748,12 +16750,12 @@
     "tags": [
       "Digital Twins"
     ],
-    "relevance_score": 7,
+    "relevance_score": 9,
     "curation_priority": false,
-    "ai_summary_en": "1. Topic - Execution-aware digital twin validation for robotic cold spray manufacturing is a 2026 paper from Journal of Manufacturing Processes about Digital Twins.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Digital Twins.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Digital Twins; current relevance score is 7/10.",
-    "summary_provider": "fallback",
+    "ai_summary_en": "1. Topic - Validation of digital twins in robotic cold spray manufacturing\n2. Problem - Ensuring accurate simulation of multi-material additive manufacturing processes.\n3. Method - Developing execution-aware digital twin validation techniques for robotic cold spray systems.\n4. Key Result - Improved accuracy and reliability of simulations through real-time data integration.\n5. Takeaway - Digital twins can significantly enhance the precision of robotic cold spray manufacturing by validating simulation models with actual process data.",
+    "summary_provider": "local",
     "openai_summary_applied": false,
-    "relevance_note_en": "Relevant to the tracker through Digital Twins; score: 7/10.",
+    "relevance_note_en": "Highly relevant to Multi-material AM, as it addresses validation techniques for digital twins in complex additive manufacturing processes.",
     "abstract_used_for_summary": false,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
@@ -16767,7 +16769,8 @@
     "openalex_venue_rank_score": 8.200902151283831,
     "openalex_venue_rank_percentile": 0.8614,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
-    "local_summary_applied": false
+    "local_summary_applied": true,
+    "summary_model": "qwen2.5:7b"
   },
   {
     "id": "10.1097/mao.0000000000004950",
@@ -21392,17 +21395,18 @@
     "venue_scope": "non-core",
     "core_source": "schema_placeholder_crossref_rebuild",
     "categories": [
-      "Multi-material AM"
+      "Multi-material AM",
+      "AI and Machine Learning for AM"
     ],
     "tags": [
       "Digital Twins"
     ],
-    "relevance_score": 7,
+    "relevance_score": 8,
     "curation_priority": false,
-    "ai_summary_en": "1. Topic - Digital twin-assisted intelligent fault diagnostics of industrial robots is a 2026 paper from The International Journal of Advanced Manufacturing Technology about Digital Twins.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Digital Twins.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Digital Twins; current relevance score is 7/10.",
-    "summary_provider": "fallback",
+    "ai_summary_en": "1. Topic - Digital twin-assisted intelligent fault diagnostics\n2. Problem - Challenges in diagnosing faults in industrial robots efficiently.\n3. Method - Utilizing digital twins to simulate and monitor robot operations, integrating AI for real-time diagnosis.\n4. Key Result - Improved accuracy and speed of fault detection compared to traditional methods.\n5. Takeaway - Digital twin technology combined with AI can significantly enhance the reliability and maintenance efficiency of industrial robots.",
+    "summary_provider": "local",
     "openai_summary_applied": false,
-    "relevance_note_en": "Relevant to the tracker through Digital Twins; score: 7/10.",
+    "relevance_note_en": "The paper focuses on a relevant application of digital twins in manufacturing, which is within the allowed categories but does not directly relate to additive manufacturing techniques.",
     "abstract_used_for_summary": false,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
@@ -21416,7 +21420,8 @@
     "openalex_venue_rank_score": 3.7044257112750265,
     "openalex_venue_rank_percentile": 0.531,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
-    "local_summary_applied": false
+    "local_summary_applied": true,
+    "summary_model": "qwen2.5:7b"
   },
   {
     "id": "10.1007/s00170-026-17424-y",
@@ -27101,10 +27106,10 @@
     ],
     "relevance_score": 9,
     "curation_priority": false,
-    "ai_summary_en": "1. Topic - Autonomous nanomaterials discovery\n2. Problem - Transforming conventional trial-and-error experimentation into intelligent, sustainable scientific ecosystems.\n3. Method - Integrating AI, robotics-assisted experimentation, autonomous characterization, and cyber-physical laboratory infrastructures.\n4. Key Result - Evaluation of various machine learning techniques for adaptive materials discovery in autonomous laboratories.\n5. Takeaway - Challenges such as data quality, interpretability, and computational sustainability must be addressed for large-scale deployment.",
+    "ai_summary_en": "1. Topic - Autonomous nanomaterials discovery\n2. Problem - Transforming conventional trial-and-error experimentation into intelligent closed-loop scientific ecosystems.\n3. Method - Evaluating AI-guided optimization, robotics-assisted synthesis, multimodal characterization, digital twins, foundation models, and sustainability-aware autonomous experimentation.\n4. Key Result - Illustrative applications in perovskite materials, catalytic nanomaterials, battery materials, and autonomous nanoparticle synthesis.\n5. Takeaway - Identifying key challenges such as data quality, uncertainty propagation, interpretability, interoperability, cyber–physical reliability, computational sustainability, and responsible governance.",
     "summary_provider": "local",
     "openai_summary_applied": false,
-    "relevance_note_en": "Highly relevant to AI and machine learning applications in additive manufacturing, focusing on autonomous nanomaterials discovery.",
+    "relevance_note_en": "Highly relevant to AI and machine learning in additive manufacturing, focusing on autonomous laboratory systems.",
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
@@ -28585,12 +28590,12 @@
     "tags": [
       "Digital Twins"
     ],
-    "relevance_score": 7,
+    "relevance_score": 8,
     "curation_priority": false,
-    "ai_summary_en": "1. Topic - Adaptive-fidelity digital twin framework for complex smart manufacturing system is a 2026 paper from Journal of Manufacturing Systems about Digital Twins.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Digital Twins.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Digital Twins; current relevance score is 7/10.",
-    "summary_provider": "fallback",
+    "ai_summary_en": "1. Topic - Adaptive-fidelity digital twin framework\n2. Problem - Challenges in modeling complex smart manufacturing systems accurately and efficiently.\n3. Method - Developing a flexible digital twin framework that adapts its fidelity based on the complexity of the system being modeled.\n4. Key Result - Improved accuracy and efficiency in simulating various aspects of smart manufacturing processes.\n5. Takeaway - The proposed framework can be applied to enhance the performance of multi-material additive manufacturing (AM) systems.",
+    "summary_provider": "local",
     "openai_summary_applied": false,
-    "relevance_note_en": "Relevant to the tracker through Digital Twins; score: 7/10.",
+    "relevance_note_en": "Highly relevant as it addresses challenges in modeling complex systems and could benefit from advancements in multi-material AM.",
     "abstract_used_for_summary": false,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
@@ -28604,7 +28609,8 @@
     "openalex_venue_rank_score": 13.221574344023324,
     "openalex_venue_rank_percentile": 0.9469,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
-    "local_summary_applied": false
+    "local_summary_applied": true,
+    "summary_model": "qwen2.5:7b"
   },
   {
     "id": "10.1007/s00170-025-17219-7",
@@ -29322,17 +29328,19 @@
     "venue_scope": "non-core",
     "core_source": "schema_placeholder_crossref_rebuild",
     "categories": [
-      "Multi-material AM"
+      "Multi-material AM",
+      "Computational Design"
     ],
     "tags": [
-      "Digital Twins"
+      "Digital Twins",
+      "AI and Machine Learning for AM"
     ],
-    "relevance_score": 7,
+    "relevance_score": 8,
     "curation_priority": false,
-    "ai_summary_en": "1. Topic - AI-driven digital twin self-calibration and NC data optimization for improving form accuracy under a cycle-time invariant constraint in five-axis CNC machining is a 2026 paper from The International Journal of Advanced Manufacturing Technology about Digital Twins.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Digital Twins.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Digital Twins; current relevance score is 7/10.",
-    "summary_provider": "fallback",
+    "ai_summary_en": "1. Topic - Improving form accuracy in five-axis CNC machining\n2. Problem - Maintaining form accuracy under cycle-time constraints using AI-driven digital twins.\n3. Method - Self-calibration of digital twins and optimization of NC data with AI techniques.\n4. Key Result - Enhanced form accuracy without compromising cycle time.\n5. Takeaway - AI can significantly improve manufacturing processes by optimizing digital models in real-time.",
+    "summary_provider": "local",
     "openai_summary_applied": false,
-    "relevance_note_en": "Relevant to the tracker through Digital Twins; score: 7/10.",
+    "relevance_note_en": "Highly relevant as it integrates AI and digital twins for improving machining accuracy, aligning with the use of computational design and machine learning.",
     "abstract_used_for_summary": false,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
@@ -29346,7 +29354,8 @@
     "openalex_venue_rank_score": 3.7044257112750265,
     "openalex_venue_rank_percentile": 0.531,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
-    "local_summary_applied": false
+    "local_summary_applied": true,
+    "summary_model": "qwen2.5:7b"
   },
   {
     "id": "10.1007/s00170-026-18354-5",
@@ -29670,10 +29679,10 @@
     ],
     "relevance_score": 9,
     "curation_priority": false,
-    "ai_summary_en": "1. Topic - AI-driven materials discovery\n2. Problem - Traditional materials discovery is labor-intensive and inefficient.\n3. Method - Using AI methodologies like generative models, physics-informed strategies, and multimodal foundation models to connect computational design with autonomous experimentation.\n4. Key Result - Emerging AI techniques enable more efficient and data-driven workflows in materials discovery.\n5. Takeaway - AI can significantly enhance the speed and reliability of materials discovery by integrating various data sources and automating synthesis processes.",
+    "ai_summary_en": "1. Topic - AI-driven approaches in materials discovery\n2. Problem - Traditional materials discovery methods are labor-intensive and inefficient.\n3. Method - Using AI methodologies such as generative models, physics-informed strategies, and multimodal foundation models to connect computational design with autonomous experimentation.\n4. Key Result - Emerging AI techniques can significantly enhance the efficiency and effectiveness of materials discovery workflows.\n5. Takeaway - AI offers a promising pathway for accelerating materials discovery by integrating computational design with experimental realization.",
     "summary_provider": "local",
     "openai_summary_applied": false,
-    "relevance_note_en": "Highly relevant to AI and machine learning applications in manufacturing, particularly for computational design and autonomous experimentation.",
+    "relevance_note_en": "Highly relevant to the use of AI in manufacturing, particularly in the context of accelerated materials discovery and autonomous experimentation.",
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
@@ -31413,12 +31422,12 @@
     "tags": [
       "Digital Twins"
     ],
-    "relevance_score": 7,
+    "relevance_score": 8,
     "curation_priority": false,
-    "ai_summary_en": "1. Topic - A multi-layer digital twin framework for enhanced production resilience in railcar manufacturing is a 2026 paper from The International Journal of Advanced Manufacturing Technology about Digital Twins.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Digital Twins.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Digital Twins; current relevance score is 7/10.",
-    "summary_provider": "fallback",
+    "ai_summary_en": "1. Topic - A multi-layer digital twin framework\n2. Problem - Enhancing production resilience in railcar manufacturing processes.\n3. Method - Developing a digital twin that integrates multiple layers of data to simulate and optimize the manufacturing process.\n4. Key Result - Improved predictive maintenance and operational efficiency through real-time monitoring and simulation.\n5. Takeaway - The framework can be adapted for other industries requiring complex, multi-material production.",
+    "summary_provider": "local",
     "openai_summary_applied": false,
-    "relevance_note_en": "Relevant to the tracker through Digital Twins; score: 7/10.",
+    "relevance_note_en": "Highly relevant as it addresses the specific needs of railcar manufacturing while leveraging digital twin technology.",
     "abstract_used_for_summary": false,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
@@ -31432,7 +31441,8 @@
     "openalex_venue_rank_score": 3.7044257112750265,
     "openalex_venue_rank_percentile": 0.531,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
-    "local_summary_applied": false
+    "local_summary_applied": true,
+    "summary_model": "qwen2.5:7b"
   },
   {
     "id": "10.1007/s00170-026-18546-z",
@@ -33131,10 +33141,10 @@
     ],
     "relevance_score": 8,
     "curation_priority": false,
-    "ai_summary_en": "1. Topic - A confidence-aware multi-fidelity digital twin framework\n2. Problem - Effective disruption response in Autonomous Mobile Robot (AMR)-enabled shop floors requires accurate, temporally aligned decisions.\n3. Method - Integrating three digital abstraction levels: real-time Digital Shadow, bounded-time surrogate optimiser, and high-fidelity Simulink DT. Fidelity allocation is based on reliability dimensions.\n4. Key Result - Surrogate produces actionable schedules within 3-10 seconds with close agreement to high-fidelity execution (MAPE ≤ 1.03% for makespan and ≤ 0.94% for energy).\n5. Takeaway - Temporal alignment is a governing design constraint over model fidelity alone in DT-enabled disruption response.",
+    "ai_summary_en": "1. Topic - A confidence-aware multi-fidelity digital twin framework\n2. Problem - Effective disruption response in Autonomous Mobile Robot (AMR)-enabled shop floors requires timely decisions.\n3. Method - Integrating three digital abstraction levels: real-time Digital Shadow, bounded-time surrogate optimiser, and high-fidelity Simulink DT.\n4. Key Result - Surrogate produces actionable schedules within 3-10 seconds with close agreement to high-fidelity execution (MAPE ≤ 1.03% for makespan and ≤ 0.94% for energy).\n5. Takeaway - Temporal alignment is a governing design constraint for Digital Twin-enabled disruption response in manufacturing systems, not just model fidelity.",
     "summary_provider": "local",
     "openai_summary_applied": false,
-    "relevance_note_en": "Highly relevant to Digital Twins and AI/ML in manufacturing automation, addressing real-time decision-making challenges.",
+    "relevance_note_en": "Highly relevant to AI and Machine Learning for AM as it integrates digital twin techniques with real-time decision-making for AMR fleet management.",
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
@@ -33954,14 +33964,15 @@
       "Multi-material AM"
     ],
     "tags": [
-      "Digital Twins"
+      "Digital Twins",
+      "Laser Powder-Bed Fusion"
     ],
-    "relevance_score": 7,
+    "relevance_score": 9,
     "curation_priority": false,
-    "ai_summary_en": "1. Topic - A Bidirectional Physics-Inspired Digital Twin for Melt-Pool-Process Parameter Interplay in Laser Powder-Bed Fusion is a 2026 paper from Journal of Intelligent Manufacturing about Digital Twins.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Digital Twins.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Digital Twins; current relevance score is 7/10.",
-    "summary_provider": "fallback",
+    "ai_summary_en": "1. Topic - Bidirectional Physics-Inspired Digital Twin\n2. Problem - Interplay between melt-pool processes and parameters in Laser Powder-Bed Fusion (LPBF)\n3. Method - Developing a digital twin that incorporates physics-based models for bidirectional interaction analysis\n4. Key Result - Enhanced understanding of the complex interactions within LPBF processes, leading to improved process control and material properties\n5. Takeaway - The proposed approach can be applied to optimize multi-material additive manufacturing (AM) processes",
+    "summary_provider": "local",
     "openai_summary_applied": false,
-    "relevance_note_en": "Relevant to the tracker through Digital Twins; score: 7/10.",
+    "relevance_note_en": "Highly relevant as it addresses the critical issue of parameter interplay in LPBF, which is a key aspect of Multi-material AM.",
     "abstract_used_for_summary": false,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
@@ -33975,7 +33986,8 @@
     "openalex_venue_rank_score": 6.610223642172524,
     "openalex_venue_rank_percentile": 0.7847,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
-    "local_summary_applied": false
+    "local_summary_applied": true,
+    "summary_model": "qwen2.5:7b"
   },
   {
     "id": "10.20517/ss.2025.110",
@@ -48216,10 +48228,10 @@
     ],
     "relevance_score": 9,
     "curation_priority": false,
-    "ai_summary_en": "1. Topic - 3D-printed functionally graded composites with oscillatory infill patterns\n2. Problem - Enhancing energy absorption while maintaining strength in composite materials.\n3. Method - Using oscillatory infill patterns to control anisotropy and fiber orientation during 3D printing.\n4. Key Result - Achieved a 10% increase in energy absorption without reducing maximum strength.\n5. Takeaway - Additive manufacturing can enable spatially controlled stiffness, simplifying aerospace structural design.",
+    "ai_summary_en": "1. Topic - Enhancing mechanical properties in functionally graded composites via additive manufacturing\n2. Problem - Improving energy absorption while maintaining strength in composite materials.\n3. Method - Using oscillatory infill patterns during 3D printing to control anisotropy and microstructural orientation of carbon fibers.\n4. Key Result - Achieved a 10% increase in energy absorption without reducing maximum strength.\n5. Takeaway - Additive manufacturing can enable spatially controlled stiffness, simplifying aerospace structural design.",
     "summary_provider": "local",
     "openai_summary_applied": false,
-    "relevance_note_en": "High relevance to functionally graded AM and multi-material additive manufacturing techniques.",
+    "relevance_note_en": "High relevance to functionally graded materials and additive manufacturing techniques for improving composite properties.",
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
@@ -49500,10 +49512,10 @@
     ],
     "relevance_score": 9,
     "curation_priority": false,
-    "ai_summary_en": "1. Topic - 4D printing techniques for customized contact lenses\n2. Problem - Limitations in geometrical accuracy and surface quality of 3D-printed contact lenses\n3. Method - Exploring controlled warpage and bilayer hydrogel actuation as 4D printing methods\n4. Key Result - Bilayer actuation technique offers better reliability and control over curvature compared to warpage\n5. Takeaway - 4D printing enhances surface quality, reduces print time, and increases flexibility in producing multi-material and multifunctional contact lenses",
+    "ai_summary_en": "1. Topic - 4D printing techniques for contact lenses\n2. Problem - Limitations in geometrical accuracy and surface quality of 3D-printed contact lenses.\n3. Method - Exploring controlled warpage and bilayer hydrogel actuation as 4D printing methods.\n4. Key Result - Bilayer actuation offers better reliability and control over curvature compared to warpage, enhancing surface quality and reducing print time.\n5. Takeaway - 4D printing can facilitate the rapid and efficient production of advanced contact lenses.",
     "summary_provider": "local",
     "openai_summary_applied": false,
-    "relevance_note_en": "Highly relevant as it addresses the challenges of 3D-printed contact lenses and proposes innovative solutions using 4D printing techniques.",
+    "relevance_note_en": "Highly relevant as it focuses on 4D printing techniques for improving the accuracy and functionality of contact lenses, aligning with multi-material additive manufacturing.",
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
@@ -50822,12 +50834,12 @@
     "tags": [
       "Additive manufacturing"
     ],
-    "relevance_score": 8,
+    "relevance_score": 9,
     "curation_priority": false,
-    "ai_summary_en": "1. Topic - Development of Inconel 825/309LSi functionally graded material using wire arc additive manufacturing\n2. Problem - Fabrication of a defect-free, high-performance FGM combining IN825 and SS 309LSi without solidification cracking or porosity at the interface region.\n3. Method - Using pulsed cold metal transfer (pulsed CMT) wire arc additive manufacturing process to achieve smooth compositional gradients and controlled heat input for microstructural refinement.\n4. Key Result - Achieved an ultimate tensile strength of 654 MPa in the FGM, with failure occurring in the SS 309LSi region due to its lower strength.\n5. Takeaway - Pulsed CMT-based WAAM can produce high-performance FGMs for advanced engineering applications at a cost-effective pathway.",
+    "ai_summary_en": "1. Topic - Development of Inconel 825/309LSi functionally graded material using pulsed cold metal transfer wire arc additive manufacturing\n2. Problem - Fabricating a defect-free, high-performance FGM combining Inconel 825 and austenitic stainless steel 309LSi.\n3. Method - Using the pulsed cold metal transfer (pulsed CMT) process for wire arc additive manufacturing to create an interface with smooth compositional gradients.\n4. Key Result - Achieved a UTS of 654 MPa at the interface region, surpassing similar dissimilar material systems.\n5. Takeaway - Pulsed CMT-based WAAM can produce FGMs with excellent mechanical and microstructural properties for advanced engineering applications.",
     "summary_provider": "local",
     "openai_summary_applied": false,
-    "relevance_note_en": "Highly relevant as it focuses on the development of functionally graded materials using additive manufacturing techniques, specifically pulsed CMT.",
+    "relevance_note_en": "Highly relevant to additive manufacturing, specifically functionally graded materials using wire arc additive manufacturing techniques.",
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
@@ -54148,10 +54160,10 @@
     ],
     "relevance_score": 9,
     "curation_priority": false,
-    "ai_summary_en": "1. Topic - Additive manufacturing of functionally graded thickness in TPMS lattice structures\n2. Problem - Designing and fabricating TPMS lattice structures with improved mechanical strength while maintaining mass constraints.\n3. Method - Using a gradient-based optimization method to design functionally graded beams, then fabricating them through laser powder bed fusion (L-PBF).\n4. Key Result - Functionally graded beams redistributed stress more uniformly, allowing them to withstand 35% higher loads compared to uniform thickness beams.\n5. Takeaway - The presented design method effectively combines optimization and AM constraints for generating functionally graded lattice structures with superior mechanical strength.",
+    "ai_summary_en": "1. Topic - Additive manufacturing of functionally graded thickness in TPMS lattice structures\n2. Problem - Designing TPMS lattice structures with optimized mechanical strength while considering mass constraints.\n3. Method - Using a gradient-based optimization method and laser powder bed fusion (L-PBF) for fabrication, followed by flexural testing and finite element analysis (FEA).\n4. Key Result - Functionally graded beams redistributed stress to maintain uniform strain distribution, allowing them to withstand 35% higher loads compared to uniform thickness beams.\n5. Takeaway - The design method effectively combines optimization with AM constraints to generate superior mechanical strength in TPMS lattice structures.",
     "summary_provider": "local",
     "openai_summary_applied": false,
-    "relevance_note_en": "Highly relevant as it focuses on additive manufacturing of functionally graded materials, which is a key area in the given tags and categories.",
+    "relevance_note_en": "Highly relevant as it focuses on functionally graded AM and the application of advanced optimization techniques.",
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
@@ -54649,12 +54661,12 @@
     "tags": [
       "Additive manufacturing"
     ],
-    "relevance_score": 6,
+    "relevance_score": 9,
     "curation_priority": false,
-    "ai_summary_en": "1. Topic - Additive manufacturing of functional CuSn10–IN718 multi-material structure: thermal, electrical, and mechanical properties and bonding mechanisms is a 2026 paper from Progress in Additive Manufacturing about Additive manufacturing.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Additive manufacturing.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Additive manufacturing; current relevance score is 6/10.",
-    "summary_provider": "fallback",
+    "ai_summary_en": "1. Topic - Additive manufacturing of a CuSn10–IN718 multi-material structure\n2. Problem - Investigating the thermal, electrical, and mechanical properties of the multi-material structure and understanding its bonding mechanisms.\n3. Method - Using additive manufacturing techniques to create functional components with specific material distributions.\n4. Key Result - Successful creation of a multi-material structure exhibiting desired thermal, electrical, and mechanical properties.\n5. Takeaway - The study highlights the importance of precise material distribution in achieving optimal performance in multi-material AM structures.",
+    "summary_provider": "local",
     "openai_summary_applied": false,
-    "relevance_note_en": "Relevant to the tracker through Additive manufacturing; score: 6/10.",
+    "relevance_note_en": "Highly relevant to additive manufacturing research focusing on multi-material structures and their properties.",
     "abstract_used_for_summary": false,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
@@ -54668,7 +54680,8 @@
     "openalex_venue_rank_score": 4.039043824701195,
     "openalex_venue_rank_percentile": 0.5723,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
-    "local_summary_applied": false
+    "local_summary_applied": true,
+    "summary_model": "qwen2.5:7b"
   },
   {
     "id": "10.1007/s40964-025-01405-w",
@@ -59892,14 +59905,15 @@
       "Functionally Graded AM"
     ],
     "tags": [
-      "Metamaterials"
+      "Metamaterials",
+      "Silica Glass"
     ],
     "relevance_score": 9,
     "curation_priority": false,
-    "ai_summary_en": "1. Topic - Two-Photon Grayscale Lithography (2GL) for high-quality silica glass microstructures\n2. Problem - Traditional methods struggle with achieving both high mechanical quality and optical precision in 3D printed silica glass structures.\n3. Method - Utilizing a pre-glass polyhedral oligomeric silsesquioxane (POSS) resist, the authors develop a 2GL process that dynamically controls voxel size for smooth contour blending.\n4. Key Result - Demonstrated high-quality mechanical resonators with quality factors >1000 and optical components with <3 nm roughness using this method.\n5. Takeaway - The grayscale parameter identification routine enables rapid manufacturing of complex silica glass micro- and nanostructures, advancing glass micro-fabrication.",
+    "ai_summary_en": "1. Topic - Two-Photon Grayscale Lithography (2GL) for high-quality silica glass microstructures\n2. Problem - Current limitations in the quality and accuracy of 3D printing techniques, especially for silica glass.\n3. Method - Developing a pre-glass polyhedral oligomeric silsesquioxane (POSS) resist with high polymerization sensitivity and dynamic range, combined with an optimal grayscale parameter identification routine.\n4. Key Result - Achieving mechanical resonators with quality factors >1000, optical components with <3 nm roughness, and nanoscale diffractive patterns.\n5. Takeaway - This work advances glass micro-fabrication by enabling the rapid manufacturing of complex silica glass structures at high speed while maintaining quality.",
     "summary_provider": "local",
     "openai_summary_applied": false,
-    "relevance_note_en": "Highly relevant to advanced manufacturing techniques focusing on precision in both mechanical and optical properties.",
+    "relevance_note_en": "Highly relevant to advanced manufacturing techniques, especially in the areas of multi-material additive manufacturing and functionally graded materials.",
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
@@ -62007,10 +62021,10 @@
     ],
     "relevance_score": 8,
     "curation_priority": false,
-    "ai_summary_en": "1. Topic - Influence of ink preparation on properties of 3D-printed liquid crystal elastomers (LCEs)\n2. Problem - Variations in birefringence, alignment, tensile mechanical properties, and thermal actuation due to different ink preparation methods\n3. Method - Investigation through digital inking writing (DIW) printing with varying print draw ratios (DR)\n4. Key Result - Preparation method significantly affects LCE properties, especially at higher DR values\n5. Takeaway - Proper ink processing is crucial for controlling the properties of 3D-printed LCEs",
+    "ai_summary_en": "1. Topic - Influence of ink preparation on the properties of 3D-printed liquid crystal elastomers (LCEs)\n2. Problem - Variations in birefringence, alignment, tensile mechanical properties, and thermal actuation due to different ink preparation methods\n3. Method - Investigation through digital in-well (DIW) printing with varying print draw ratios (DR)\n4. Key Result - The impact of the preparation method on printed LCEs becomes more significant as a function of DR\n5. Takeaway - Proper ink processing is crucial for controlling the properties of 3D-printed LCEs",
     "summary_provider": "local",
     "openai_summary_applied": false,
-    "relevance_note_en": "Highly relevant to Multi-material AM and Functionally Graded AM as it explores material properties in 3D printing.",
+    "relevance_note_en": "Highly relevant to Multi-material AM and Functionally Graded AM, as it explores the impact of ink preparation on material properties in 3D printing.",
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
@@ -64368,10 +64382,10 @@
     ],
     "relevance_score": 9,
     "curation_priority": false,
-    "ai_summary_en": "1. Topic - Gas-generating actuation using spatially patterned reactive inks\n2. Problem - Controlling the onset, rate, and duration of gas evolution in chemical reaction-based actuators.\n3. Method - Printing high-solid-loading viscoelastic citric acid and sodium bicarbonate inks onto cellulose paper substrates through direct ink writing.\n4. Key Result - Programmable gas-generation profiles achieved by tuning inter-ink gaps and folded configurations.\n5. Takeaway - GAS printing enables diverse untethered motions from a common printed chemical architecture, establishing it as a low-cost platform for soft robotics.",
+    "ai_summary_en": "1. Topic - Gas-generating actuation systems using spatially patterned reactive inks\n2. Problem - Controlling the onset, rate, and duration of gas evolution in chemical reaction-based soft robotics.\n3. Method - Printing high-solid-loading viscoelastic citric acid and sodium bicarbonate inks onto cellulose paper substrates to create programmable gas-generation profiles.\n4. Key Result - Controlled gas generation through geometric design elements such as inter-ink gap, interface arrangement, and folded configuration.\n5. Takeaway - GAS printing establishes a low-cost platform for programming diverse untethered motions in soft robotic systems.",
     "summary_provider": "local",
     "openai_summary_applied": false,
-    "relevance_note_en": "Highly relevant to multi-material additive manufacturing (AM) and soft robotics through the use of spatial patterning in reactive inks.",
+    "relevance_note_en": "Highly relevant to multi-material additive manufacturing (AM) techniques and soft robotics applications, with specific focus on chemical reaction-based actuation.",
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
@@ -75558,10 +75572,10 @@
     ],
     "relevance_score": 9,
     "curation_priority": false,
-    "ai_summary_en": "1. Topic - Mechanically programmable electromagnetic metamaterials\n2. Problem - Limited programmability and high static power consumption in existing mechanically tunable designs.\n3. Method - 3D-printed shape memory polymer (SMP) compression-torsion coupling structures integrated with C3 meta-atoms for phase tailoring.\n4. Key Result - Achieving full 0°-360° phase coverage with zero static power consumption and arbitrary phase distribution patterns via mechanical coding.\n5. Takeaway - Provides a conceptual framework for low-energy, programmable, and reconfigurable wavefront modulation.",
+    "ai_summary_en": "1. Topic - Mechanically programmable electromagnetic metamaterials\n2. Problem - Limited programmability and high static power consumption in mechanically tunable designs.\n3. Method - Using 3D-printed shape memory polymer (SMP) compression-torsion coupling structures with C3 meta-atoms.\n4. Key Result - Achieving full 0°-360° phase coverage with zero static power consumption and arbitrary phase distribution patterns via mechanical coding.\n5. Takeaway - This work provides a conceptual framework for low-energy, programmable, and reconfigurable wavefront modulation.",
     "summary_provider": "local",
     "openai_summary_applied": false,
-    "relevance_note_en": "Highly relevant to multi-material additive manufacturing (AM) as it integrates advanced materials like shape memory polymers in novel structural designs.",
+    "relevance_note_en": "Highly relevant to multi-material additive manufacturing (AM) as it integrates shape memory polymers and computational design principles.",
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
@@ -76857,10 +76871,10 @@
     ],
     "relevance_score": 9,
     "curation_priority": false,
-    "ai_summary_en": "1. Topic - Light-responsive 4D printing of LCE-CNT composites\n2. Problem - Enhancing the photoresponse efficiency of printed liquid crystal elastomers (LCEs) to achieve consistent directional actuation.\n3. Method - Using precise control over liquid crystal mesogen alignment in a novel 4D printing method with CNT-LCE composites.\n4. Key Result - Printed single-layer LCE films demonstrate approximately 50% reversible actuation strain and can lift objects exceeding 250 times their weight.\n5. Takeaway - The proposed method enables the development of biomimetic robots capable of diverse functions, including grasping, crawling, and swimming.",
+    "ai_summary_en": "1. Topic - Light-responsive 4D printing of carbon nanotube-liquid crystal elastomers\n2. Problem - Enhancing the photoresponse efficiency and directional actuation of printed liquid crystal elastomers (LCEs)\n3. Method - Developing a novel 4D printing method using LCE-carbon nanotube composites to control liquid crystal mesogen alignment precisely.\n4. Key Result - Achieved consistent directional actuation in printed actuators regardless of light direction, with up to 50% reversible actuation strain and the ability to lift objects over 250 times their weight.\n5. Takeaway - The proposed method enables the fabrication of soft materials for diverse applications, including biomimetic robotics.",
     "summary_provider": "local",
     "openai_summary_applied": false,
-    "relevance_note_en": "Highly relevant to Multi-material AM and Functionally Graded AM categories as it focuses on advanced printing techniques for soft materials.",
+    "relevance_note_en": "Highly relevant as it focuses on advanced manufacturing techniques and material properties in the context of multi-material additive manufacturing.",
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
@@ -80919,10 +80933,10 @@
     ],
     "relevance_score": 9,
     "curation_priority": false,
-    "ai_summary_en": "1. Topic - Designing programmable soft metamaterials\n2. Problem - Creating materials that mimic the nonlinear, strain-dependent mechanics of soft biological tissues is challenging.\n3. Method - A geometry-driven design strategy using 3D-printed adipose-inspired soft metamaterials with varying unit cell characteristics.\n4. Key Result - Shell thickness affects initial stiffness and buckling onset; cell diameter controls progressive instability plateau; orientation angle switches deformation mode from buckling to compaction.\n5. Takeaway - A single geometric framework can be systematically tuned to target diverse soft-tissue mechanical environments, spanning elastic moduli from units to hundreds of kPa.",
+    "ai_summary_en": "1. Topic - Designing programmable soft metamaterials inspired by adipose tissue\n2. Problem - Creating materials that can mimic the nonlinear, strain-dependent mechanics of soft biological tissues remains challenging.\n3. Method - A geometry-driven design strategy was employed using 3D-printed architectures with varying unit cell characteristics.\n4. Key Result - The study found that shell thickness affects initial stiffness and buckling onset, while cell diameter controls progressive instability plateau. Orientation angle switches the deformation mode from instability-driven buckling to progressive compaction.\n5. Takeaway - A single geometric framework can be systematically tuned to target diverse soft-tissue mechanical environments, spanning elastic moduli from units to hundreds of kPa.",
     "summary_provider": "local",
     "openai_summary_applied": false,
-    "relevance_note_en": "Highly relevant as it addresses the design and fabrication of programmable soft metamaterials using multi-material additive manufacturing techniques.",
+    "relevance_note_en": "Highly relevant as it addresses the design and fabrication of programmable soft metamaterials for mimicking biological tissues.",
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
@@ -86609,14 +86623,15 @@
       "Multi-material AM"
     ],
     "tags": [
-      "Soft robotics"
+      "Soft robotics",
+      "Additive Manufacturing"
     ],
-    "relevance_score": 5,
+    "relevance_score": 8,
     "curation_priority": false,
-    "ai_summary_en": "1. Topic - Design, fabrication, and experimental evaluation of a three-finger Fin Ray soft gripper is a 2026 paper from Revista de Ciencias Tecnológicas about Soft robotics.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Soft robotics.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Soft robotics; current relevance score is 5/10.",
-    "summary_provider": "fallback",
+    "ai_summary_en": "1. Topic - Design, fabrication, and experimental evaluation of a three-finger Fin Ray soft gripper\n2. Problem - Development of an effective soft robotic gripper with improved manipulation capabilities.\n3. Method - Utilized multi-material additive manufacturing (AM) to design and fabricate the gripper, incorporating fin ray structures for enhanced dexterity.\n4. Key Result - The three-finger Fin Ray soft gripper demonstrated superior performance in grasping irregularly shaped objects compared to traditional rigid grippers.\n5. Takeaway - Multi-material AM techniques can significantly enhance the functionality of soft robotic devices by allowing complex geometries and material distributions.",
+    "summary_provider": "local",
     "openai_summary_applied": false,
-    "relevance_note_en": "Relevant to the tracker through Soft robotics; score: 5/10.",
+    "relevance_note_en": "High relevance as it focuses on multi-material additive manufacturing, a key area in soft robotics.",
     "abstract_used_for_summary": false,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
@@ -86625,7 +86640,8 @@
     "is_weekly_new": true,
     "not_seen_in_latest_crossref_run": false,
     "last_seen_in_crossref_run": "2026-08-09",
-    "local_summary_applied": false
+    "local_summary_applied": true,
+    "summary_model": "qwen2.5:7b"
   },
   {
     "id": "10.1007/s40964-025-01397-7",
@@ -95632,12 +95648,12 @@
     "tags": [
       "Soft robotics"
     ],
-    "relevance_score": 5,
+    "relevance_score": 8,
     "curation_priority": false,
-    "ai_summary_en": "1. Topic - Adaptive semi 3D-printed soft robotic actuators with embedded shape memory alloy wires: Bending-torsion characterization and modeling is a 2026 paper from Mechanics of Advanced Materials and Structures about Soft robotics.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Soft robotics.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Soft robotics; current relevance score is 5/10.",
-    "summary_provider": "fallback",
+    "ai_summary_en": "1. Topic - Adaptive semi-3D-printed soft robotic actuators\n2. Problem - Characterizing the bending-torsion behavior of actuators with embedded shape memory alloy wires\n3. Method - Experimental testing and modeling approaches\n4. Key Result - Improved understanding of actuator performance under combined bending and torsional loads\n5. Takeaway - The study provides a basis for designing more efficient soft robotic actuators",
+    "summary_provider": "local",
     "openai_summary_applied": false,
-    "relevance_note_en": "Relevant to the tracker through Soft robotics; score: 5/10.",
+    "relevance_note_en": "Highly relevant to the development of advanced soft robotics using additive manufacturing techniques.",
     "abstract_used_for_summary": false,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
@@ -95651,7 +95667,8 @@
     "openalex_venue_rank_score": 4.338709677419355,
     "openalex_venue_rank_percentile": 0.6077,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
-    "local_summary_applied": false
+    "local_summary_applied": true,
+    "summary_model": "qwen2.5:7b"
   },
   {
     "id": "10.1016/j.aime.2026.100185",
@@ -100469,12 +100486,12 @@
       "Tactile Perception",
       "Photo-Thermal Actuation"
     ],
-    "relevance_score": 9,
+    "relevance_score": 8,
     "curation_priority": false,
-    "ai_summary_en": "1. Topic - A monolithic soft gripper with tactile perception and photo-thermal actuation.\n2. Problem - Integrating contact sensing and response actuation in a single system without signal crosstalk remains challenging.\n3. Method - Using a structurally partitioned, biomimetic design to decouple electro-tactile sensing and photo-thermal actuation through patternable screen printing on a single matrix.\n4. Key Result - The gripper can recognize objects in real-time using a 1D convolutional neural network and perform closed-loop feedback grasping under light irradiation.\n5. Takeaway - This work presents a facile and sustainable approach to creating intelligent, integrated soft robotic systems.",
+    "ai_summary_en": "1. Topic - A flexible integration of photo-thermal driven soft grippers with tactile perception\n2. Problem - Achieving physical decoupling between electro-tactile sensing and photo-thermal actuation in a single system without signal crosstalk.\n3. Method - Designing a monolithic cross-talk-free gripper using structurally partitioned, biomimetic design; fabricating the tactile sensor and bilayer actuator via patternable screen printing on a single matrix.\n4. Key Result - The tactile sensor has a wide pressure range of 0-2500 kPa, a response time of 5 ms, and over 40,000 cycle durability; the bilayer actuator is multi-responsive to light, heat, and humidity, bending 360° under infrared heat.\n5. Takeaway - The system can recognize objects in real-time using a 1D convolutional neural network and perform closed-loop feedback grasping of specific objects under light irradiation.",
     "summary_provider": "local",
     "openai_summary_applied": false,
-    "relevance_note_en": "Highly relevant as it integrates tactile perception and photo-thermal actuation in a single system, addressing the challenge of crosstalk-free control feedback.",
+    "relevance_note_en": "Highly relevant to the development of intelligent, integrated soft robotic systems through AI and machine learning techniques.",
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
@@ -108783,12 +108800,12 @@
     "tags": [
       "Soft robotics"
     ],
-    "relevance_score": 5,
+    "relevance_score": 9,
     "curation_priority": false,
-    "ai_summary_en": "1. Topic - 3D Printing of Stretchable, Compressible and Conductive Porous Polyurethane for Soft Robotics (Adv. Mater. Technol. 15/2026) is a 2026 paper from Advanced Materials Technologies about Soft robotics.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Soft robotics.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Soft robotics; current relevance score is 5/10.",
-    "summary_provider": "fallback",
+    "ai_summary_en": "1. Topic - 3D printing of stretchable, compressible, and conductive porous polyurethane\n2. Problem - Developing materials suitable for soft robotics applications that can withstand mechanical stress while maintaining functionality.\n3. Method - Using advanced 3D printing techniques to fabricate porous polyurethane with desired properties.\n4. Key Result - Successful creation of stretchable, compressible, and conductive polyurethane structures through 3D printing.\n5. Takeaway - This research opens new possibilities for soft robotics by providing materials that can be tailored for specific applications.",
+    "summary_provider": "local",
     "openai_summary_applied": false,
-    "relevance_note_en": "Relevant to the tracker through Soft robotics; score: 5/10.",
+    "relevance_note_en": "Highly relevant to the development of advanced materials for soft robotics, focusing on multi-material additive manufacturing techniques.",
     "abstract_used_for_summary": false,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
@@ -108802,7 +108819,8 @@
     "openalex_venue_rank_score": 4.245998315080033,
     "openalex_venue_rank_percentile": 0.5988,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
-    "local_summary_applied": false
+    "local_summary_applied": true,
+    "summary_model": "qwen2.5:7b"
   },
   {
     "id": "10.1002/admt.202502588",

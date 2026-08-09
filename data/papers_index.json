@@ -51,7 +51,8 @@
       "Yong Hoon Jang"
     ],
     "categories": [
-      "Functionally Graded AM"
+      "Functionally Graded AM",
+      "Multi-material AM"
     ],
     "curation_priority": false,
     "doi": "10.1021/acsami.6c13885",
@@ -60,7 +61,7 @@
     "is_core_venue": false,
     "is_weekly_new": true,
     "last_updated": "2026-08-09",
-    "local_summary_applied": false,
+    "local_summary_applied": true,
     "openai_summary_applied": false,
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
@@ -68,11 +69,12 @@
     "openalex_venue_rank_percentile": 0.8319,
     "openalex_venue_rank_score": 7.780907972281588,
     "publication_type": "journal_article",
-    "relevance_score": 6,
+    "relevance_score": 9,
     "source": [
       "Crossref"
     ],
-    "summary_provider": "fallback",
+    "summary_model": "qwen2.5:7b",
+    "summary_provider": "local",
     "tags": [
       "Additive manufacturing"
     ],
@@ -3485,7 +3487,7 @@
     "openalex_venue_rank_percentile": 0.7847,
     "openalex_venue_rank_score": 6.610223642172524,
     "publication_type": "journal_article",
-    "relevance_score": 8,
+    "relevance_score": 9,
     "source": [
       "Crossref"
     ],
@@ -4756,7 +4758,7 @@
     "is_core_venue": true,
     "is_weekly_new": true,
     "last_updated": "2026-08-09",
-    "local_summary_applied": false,
+    "local_summary_applied": true,
     "openai_summary_applied": false,
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
@@ -4764,11 +4766,12 @@
     "openalex_venue_rank_percentile": 0.8614,
     "openalex_venue_rank_score": 8.200902151283831,
     "publication_type": "journal_article",
-    "relevance_score": 7,
+    "relevance_score": 9,
     "source": [
       "Crossref"
     ],
-    "summary_provider": "fallback",
+    "summary_model": "qwen2.5:7b",
+    "summary_provider": "local",
     "tags": [
       "Digital Twins"
     ],
@@ -6045,7 +6048,8 @@
       "Varun Balachandra"
     ],
     "categories": [
-      "Multi-material AM"
+      "Multi-material AM",
+      "AI and Machine Learning for AM"
     ],
     "corresponding_authors": [
       {
@@ -6060,7 +6064,7 @@
     "is_core_venue": false,
     "is_weekly_new": false,
     "last_updated": "2026-08-09",
-    "local_summary_applied": false,
+    "local_summary_applied": true,
     "openai_summary_applied": false,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
@@ -6068,11 +6072,12 @@
     "openalex_venue_rank_percentile": 0.531,
     "openalex_venue_rank_score": 3.7044257112750265,
     "publication_type": "journal_article",
-    "relevance_score": 7,
+    "relevance_score": 8,
     "source": [
       "Crossref"
     ],
-    "summary_provider": "fallback",
+    "summary_model": "qwen2.5:7b",
+    "summary_provider": "local",
     "tags": [
       "Digital Twins"
     ],
@@ -8075,7 +8080,7 @@
     "is_core_venue": true,
     "is_weekly_new": false,
     "last_updated": "2026-08-09",
-    "local_summary_applied": false,
+    "local_summary_applied": true,
     "openai_summary_applied": false,
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
@@ -8083,11 +8088,12 @@
     "openalex_venue_rank_percentile": 0.9469,
     "openalex_venue_rank_score": 13.221574344023324,
     "publication_type": "journal_article",
-    "relevance_score": 7,
+    "relevance_score": 8,
     "source": [
       "Crossref"
     ],
-    "summary_provider": "fallback",
+    "summary_model": "qwen2.5:7b",
+    "summary_provider": "local",
     "tags": [
       "Digital Twins"
     ],
@@ -8261,7 +8267,8 @@
       "Sungchul Jee"
     ],
     "categories": [
-      "Multi-material AM"
+      "Multi-material AM",
+      "Computational Design"
     ],
     "corresponding_authors": [
       {
@@ -8276,7 +8283,7 @@
     "is_core_venue": false,
     "is_weekly_new": false,
     "last_updated": "2026-08-09",
-    "local_summary_applied": false,
+    "local_summary_applied": true,
     "openai_summary_applied": false,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
@@ -8284,13 +8291,15 @@
     "openalex_venue_rank_percentile": 0.531,
     "openalex_venue_rank_score": 3.7044257112750265,
     "publication_type": "journal_article",
-    "relevance_score": 7,
+    "relevance_score": 8,
     "source": [
       "Crossref"
     ],
-    "summary_provider": "fallback",
+    "summary_model": "qwen2.5:7b",
+    "summary_provider": "local",
     "tags": [
-      "Digital Twins"
+      "Digital Twins",
+      "AI and Machine Learning for AM"
     ],
     "title": "AI-driven digital twin self-calibration and NC data optimization for improving form accuracy under a cycle-time invariant constraint in five-axis CNC machining",
     "url": "https://doi.org/10.1007/s00170-026-18746-7",
@@ -8864,7 +8873,7 @@
     "is_core_venue": false,
     "is_weekly_new": true,
     "last_updated": "2026-08-09",
-    "local_summary_applied": false,
+    "local_summary_applied": true,
     "openai_summary_applied": false,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
@@ -8872,11 +8881,12 @@
     "openalex_venue_rank_percentile": 0.531,
     "openalex_venue_rank_score": 3.7044257112750265,
     "publication_type": "journal_article",
-    "relevance_score": 7,
+    "relevance_score": 8,
     "source": [
       "Crossref"
     ],
-    "summary_provider": "fallback",
+    "summary_model": "qwen2.5:7b",
+    "summary_provider": "local",
     "tags": [
       "Digital Twins"
     ],
@@ -9583,7 +9593,7 @@
     "is_core_venue": true,
     "is_weekly_new": false,
     "last_updated": "2026-08-09",
-    "local_summary_applied": false,
+    "local_summary_applied": true,
     "openai_summary_applied": false,
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
@@ -9591,13 +9601,15 @@
     "openalex_venue_rank_percentile": 0.7847,
     "openalex_venue_rank_score": 6.610223642172524,
     "publication_type": "journal_article",
-    "relevance_score": 7,
+    "relevance_score": 9,
     "source": [
       "Crossref"
     ],
-    "summary_provider": "fallback",
+    "summary_model": "qwen2.5:7b",
+    "summary_provider": "local",
     "tags": [
-      "Digital Twins"
+      "Digital Twins",
+      "Laser Powder-Bed Fusion"
     ],
     "title": "A Bidirectional Physics-Inspired Digital Twin for Melt-Pool-Process Parameter Interplay in Laser Powder-Bed Fusion",
     "url": "https://doi.org/10.1007/s10845-026-02922-3",
@@ -13880,7 +13892,7 @@
     "openalex_venue_rank_percentile": 0.4248,
     "openalex_venue_rank_score": 3.0,
     "publication_type": "journal_article",
-    "relevance_score": 8,
+    "relevance_score": 9,
     "source": [
       "Crossref"
     ],
@@ -14953,7 +14965,7 @@
     "is_core_venue": true,
     "is_weekly_new": false,
     "last_updated": "2026-08-09",
-    "local_summary_applied": false,
+    "local_summary_applied": true,
     "openai_summary_applied": false,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
@@ -14961,11 +14973,12 @@
     "openalex_venue_rank_percentile": 0.5723,
     "openalex_venue_rank_score": 4.039043824701195,
     "publication_type": "journal_article",
-    "relevance_score": 6,
+    "relevance_score": 9,
     "source": [
       "Crossref"
     ],
-    "summary_provider": "fallback",
+    "summary_model": "qwen2.5:7b",
+    "summary_provider": "local",
     "tags": [
       "Additive manufacturing"
     ],
@@ -16234,7 +16247,8 @@
     "summary_model": "qwen2.5:7b",
     "summary_provider": "local",
     "tags": [
-      "Metamaterials"
+      "Metamaterials",
+      "Silica Glass"
     ],
     "title": "Two-Photon Grayscale Lithography (2GL) of High Mechanical and Optical Quality 3D Silica Glass Microstructures",
     "url": "https://doi.org/10.1002/adfm.77318",
@@ -22569,16 +22583,18 @@
     "is_core_venue": false,
     "is_weekly_new": true,
     "last_updated": "2026-08-09",
-    "local_summary_applied": false,
+    "local_summary_applied": true,
     "openai_summary_applied": false,
     "publication_type": "journal_article",
-    "relevance_score": 5,
+    "relevance_score": 8,
     "source": [
       "Crossref"
     ],
-    "summary_provider": "fallback",
+    "summary_model": "qwen2.5:7b",
+    "summary_provider": "local",
     "tags": [
-      "Soft robotics"
+      "Soft robotics",
+      "Additive Manufacturing"
     ],
     "title": "Design, fabrication, and experimental evaluation of a three-finger Fin Ray soft gripper",
     "url": "https://doi.org/10.37636/recit.v9n3e502",
@@ -24864,7 +24880,7 @@
     "is_core_venue": false,
     "is_weekly_new": true,
     "last_updated": "2026-08-09",
-    "local_summary_applied": false,
+    "local_summary_applied": true,
     "openai_summary_applied": false,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
@@ -24872,11 +24888,12 @@
     "openalex_venue_rank_percentile": 0.6077,
     "openalex_venue_rank_score": 4.338709677419355,
     "publication_type": "journal_article",
-    "relevance_score": 5,
+    "relevance_score": 8,
     "source": [
       "Crossref"
     ],
-    "summary_provider": "fallback",
+    "summary_model": "qwen2.5:7b",
+    "summary_provider": "local",
     "tags": [
       "Soft robotics"
     ],
@@ -25966,7 +25983,7 @@
     "openalex_venue_rank_percentile": 0.9617,
     "openalex_venue_rank_score": 14.256403502995983,
     "publication_type": "journal_article",
-    "relevance_score": 9,
+    "relevance_score": 8,
     "source": [
       "Crossref"
     ],
@@ -27776,7 +27793,7 @@
     "is_core_venue": false,
     "is_weekly_new": true,
     "last_updated": "2026-08-09",
-    "local_summary_applied": false,
+    "local_summary_applied": true,
     "openai_summary_applied": false,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
@@ -27784,11 +27801,12 @@
     "openalex_venue_rank_percentile": 0.5988,
     "openalex_venue_rank_score": 4.245998315080033,
     "publication_type": "journal_article",
-    "relevance_score": 5,
+    "relevance_score": 9,
     "source": [
       "Crossref"
     ],
-    "summary_provider": "fallback",
+    "summary_model": "qwen2.5:7b",
+    "summary_provider": "local",
     "tags": [
       "Soft robotics"
     ],
