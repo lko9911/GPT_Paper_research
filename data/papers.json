@@ -187923,7 +187923,7 @@
     "last_updated": "2026-08-10",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-08-10",
-    "not_seen_in_latest_crossref_run": true,
+    "not_seen_in_latest_crossref_run": false,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 3.7044257112750265,
@@ -217121,6 +217121,7 @@
           }
         ],
         "raw_affiliation_strings": [
+          "Department of Chemistry, SRM University AP Andhra Pradesh, Amaravati, India",
           "Department of Chemistry, SRM University AP Andhra Pradesh, Amaravati, Andhra Pradesh, 522502, India"
         ]
       },
@@ -217139,6 +217140,7 @@
           }
         ],
         "raw_affiliation_strings": [
+          "Advanced Technology Institute, Surrey Ion Beam Centre, University of Surrey, Guildford, UK",
           "Advanced Technology Institute, Surrey Ion Beam Centre, University of Surrey, Guildford, GU2 7XH, UK"
         ]
       },
@@ -217157,6 +217159,7 @@
           }
         ],
         "raw_affiliation_strings": [
+          "Department of Physics, SRM University AP Andhra Pradesh, Amaravati, India",
           "Department of Physics, SRM University AP Andhra Pradesh, Amaravati, Andhra Pradesh, 522502, India"
         ]
       }
@@ -217242,10 +217245,10 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-07-09",
-    "last_updated": "2026-07-28",
+    "last_updated": "2026-08-10",
     "is_weekly_new": false,
-    "not_seen_in_latest_crossref_run": true,
-    "last_seen_in_crossref_run": "2026-07-28",
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-08-10",
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 4.039043824701195,
@@ -228417,9 +228420,9 @@
     ],
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "International Journal of Advanced Manufacturing Technology",
+    "crossref_target_issn": "0268-3768",
     "issn": [
       "0268-3768",
       "1433-3015"
