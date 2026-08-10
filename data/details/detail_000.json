@@ -2900,8 +2900,8 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
     "crossref_collection_route": "issn_venue_query",
@@ -2914,8 +2914,8 @@
     "issn_l": "",
     "publisher": "Springer Science and Business Media LLC",
     "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W7126109560",
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S161464388",
     "venue_metrics": {
@@ -9447,6 +9447,117 @@
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1108/rpj-09-2025-0421"
   },
+  "10.3390/ma19163379": {
+    "author_details": [
+      {
+        "name": "Filipa G. Cunha",
+        "orcid": "https://orcid.org/0000-0003-2334-3332",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Research and Development Unit for Mechanical and Industrial Engineering (UNIDEMI), Department of Mechanical and Industrial Engineering (DEMI), NOVA School of Science and Technology, NOVA University Lisbon, 2829-516 Caparica, Portugal"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Research and Development Unit for Mechanical and Industrial Engineering (UNIDEMI), Department of Mechanical and Industrial Engineering (DEMI), NOVA School of Science and Technology, NOVA University Lisbon, 2829-516 Caparica, Portugal"
+        ]
+      },
+      {
+        "name": "Telmo G. Santos",
+        "orcid": "https://orcid.org/0000-0001-9072-5010",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Research and Development Unit for Mechanical and Industrial Engineering (UNIDEMI), Department of Mechanical and Industrial Engineering (DEMI), NOVA School of Science and Technology, NOVA University Lisbon, 2829-516 Caparica, Portugal"
+          },
+          {
+            "name": "Intelligent Systems Associate Laboratory (LASI), Campus Azurém, 4800-058 Guimarães, Portugal"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Research and Development Unit for Mechanical and Industrial Engineering (UNIDEMI), Department of Mechanical and Industrial Engineering (DEMI), NOVA School of Science and Technology, NOVA University Lisbon, 2829-516 Caparica, Portugal",
+          "Intelligent Systems Associate Laboratory (LASI), Campus Azurém, 4800-058 Guimarães, Portugal"
+        ]
+      },
+      {
+        "name": "José Xavier",
+        "orcid": "https://orcid.org/0000-0002-7836-4598",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Research and Development Unit for Mechanical and Industrial Engineering (UNIDEMI), Department of Mechanical and Industrial Engineering (DEMI), NOVA School of Science and Technology, NOVA University Lisbon, 2829-516 Caparica, Portugal"
+          },
+          {
+            "name": "Intelligent Systems Associate Laboratory (LASI), Campus Azurém, 4800-058 Guimarães, Portugal"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Research and Development Unit for Mechanical and Industrial Engineering (UNIDEMI), Department of Mechanical and Industrial Engineering (DEMI), NOVA School of Science and Technology, NOVA University Lisbon, 2829-516 Caparica, Portugal",
+          "Intelligent Systems Associate Laboratory (LASI), Campus Azurém, 4800-058 Guimarães, Portugal"
+        ]
+      }
+    ],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "1996-1944"
+    ],
+    "issn_l": "",
+    "publisher": "MDPI AG",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S18714766",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S18714766",
+      "issn_l": "1996-1944",
+      "issn": [
+        "1996-1944"
+      ],
+      "type": "journal",
+      "host_organization_name": "Multidisciplinary Digital Publishing Institute",
+      "works_count": 57248,
+      "cited_by_count": 1049662,
+      "two_year_mean_citedness": 4.095050580487474,
+      "h_index": 243,
+      "i10_index": 27683,
+      "is_core": true,
+      "is_oa": true,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 4.095050580487474,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 2",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - Functionally Graded Materials by Wire Arc Additive Manufacturing: Material-Pair Compatibility and Spatial Mechanical Characterisation-A Systematic Review is a 2026 paper from Materials about Process optimization.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Process optimization.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Process optimization; current relevance score is 7/10.",
+    "relevance_note_en": "Relevant to the tracker through Process optimization; score: 7/10.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-08-10",
+    "id": "10.3390/ma19163379"
+  },
   "10.1155/joro/6401146": {
     "author_details": [
       {
@@ -12425,7 +12536,7 @@
     "publisher": "Springer Science and Business Media LLC",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7202032211",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S77056576",
     "venue_metrics": {
@@ -29746,115 +29857,5 @@
     "last_seen_in_crossref_run": "2026-08-10",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1115/1.4071306"
-  },
-  "10.1016/j.rcim.2025.103156": {
-    "author_details": [
-      {
-        "name": "Zhengren Tong",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Lai Xu",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Xianglong Li",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Chen Yang",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Qinfeng Wang",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Hongyao Shen",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "0736-5845"
-    ],
-    "issn_l": "",
-    "publisher": "Elsevier BV",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4414714167",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S118216261",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S118216261",
-      "issn_l": "0736-5845",
-      "issn": [
-        "0736-5845",
-        "1879-2537"
-      ],
-      "type": "journal",
-      "host_organization_name": "Elsevier BV",
-      "works_count": 3891,
-      "cited_by_count": 147298,
-      "two_year_mean_citedness": 10.130597014925373,
-      "h_index": 157,
-      "i10_index": 2463,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Core manufacturing journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 10.130597014925373,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 1",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - The paper discusses a novel approach to path planning in additive manufacturing without the need for support structures.\n2. Problem - Existing methods often require support materials, which can complicate the manufacturing process and increase material costs.\n3. Method - The authors propose a method that combines a library of techniques with neural networks to optimize path planning.\n4. Key Result - The proposed approach demonstrates improved efficiency and effectiveness in generating support-free paths for additive manufacturing.\n5. Takeaway - Integrating neural networks with a method library can significantly enhance path planning in additive manufacturing, reducing reliance on support structures.",
-    "relevance_note_en": "The summary captures the essence of the paper's contributions to path planning in additive manufacturing.",
-    "abstract_used_for_summary": false,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-08-10",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1016/j.rcim.2025.103156"
   }
 }
