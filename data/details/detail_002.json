@@ -1,4 +1,105 @@
 {
+  "10.1016/j.rineng.2026.110883": {
+    "author_details": [
+      {
+        "name": "Horia-Petru Nazarie",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Jorge Muñoz",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Dolores Blanco",
+        "orcid": "https://orcid.org/0000-0001-6300-5165",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Concepción A. Monje",
+        "orcid": "https://orcid.org/0000-0001-8295-127X",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Dorin Copaci",
+        "orcid": "https://orcid.org/0000-0002-3070-0994",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2590-1230"
+    ],
+    "issn_l": "",
+    "publisher": "Elsevier BV",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7161115678",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S4210226253",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210226253",
+      "issn_l": "2590-1230",
+      "issn": [
+        "2590-1230"
+      ],
+      "type": "journal",
+      "host_organization_name": "Elsevier BV",
+      "works_count": 11754,
+      "cited_by_count": 115950,
+      "two_year_mean_citedness": 6.500249128051818,
+      "h_index": 95,
+      "i10_index": 3285,
+      "is_core": true,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 6.500249128051818,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The study focuses on a lightweight soft robotic finger powered by shape memory alloy (SMA) artificial muscles.\n2. Problem - Current prosthetic fingers are often heavy, noisy, and costly, limiting their usability.\n3. Method - The authors developed a 3D-printed finger using thermoplastic elastomer and a dual-wire SMA actuation system, controlled by a PID algorithm with feedback from embedded sensors.\n4. Key Result - The prototype achieved significant flexion and fingertip force, demonstrating improved actuation speed and repeatability in its second iteration.\n5. Takeaway - This innovative design offers a promising foundation for future prosthetic hand development, emphasizing simplicity, cost-effectiveness, and adaptability.",
+    "relevance_note_en": "The paper presents a novel approach to soft robotics that addresses key limitations in prosthetic design.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-08-11",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1016/j.rineng.2026.110883"
+  },
   "10.1007/s40964-026-01669-w": {
     "author_details": [
       {
@@ -30284,132 +30385,5 @@
     "last_seen_in_crossref_run": "2026-08-11",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.62051/ijcsit.v6n1.10"
-  },
-  "10.1089/soro.2024.0166": {
-    "author_details": [
-      {
-        "name": "Wenbo Xue",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Shenzhen Key Laboratory for Additive Manufacturing of High-Performance Materials, Department of Mechanical and Energy Engineering, Southern University of Science and Technology, Shenzhen, China."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Shenzhen Key Laboratory for Additive Manufacturing of High-Performance Materials, Department of Mechanical and Energy Engineering, Southern University of Science and Technology, Shenzhen, China."
-        ]
-      },
-      {
-        "name": "Liuchao Jin",
-        "orcid": "https://orcid.org/0000-0001-6204-1922",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Shenzhen Key Laboratory for Additive Manufacturing of High-Performance Materials, Department of Mechanical and Energy Engineering, Southern University of Science and Technology, Shenzhen, China."
-          },
-          {
-            "name": "Department of Mechanical and Automation Engineering, The Chinese University of Hong Kong, Hong Kong, China."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Shenzhen Key Laboratory for Additive Manufacturing of High-Performance Materials, Department of Mechanical and Energy Engineering, Southern University of Science and Technology, Shenzhen, China.",
-          "Department of Mechanical and Automation Engineering, The Chinese University of Hong Kong, Hong Kong, China."
-        ]
-      },
-      {
-        "name": "Bingcong Jian",
-        "orcid": "https://orcid.org/0000-0002-0115-8657",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Shenzhen Key Laboratory for Additive Manufacturing of High-Performance Materials, Department of Mechanical and Energy Engineering, Southern University of Science and Technology, Shenzhen, China."
-          },
-          {
-            "name": "School of Mechanical Engineering, Tongji University, Shanghai, China."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Shenzhen Key Laboratory for Additive Manufacturing of High-Performance Materials, Department of Mechanical and Energy Engineering, Southern University of Science and Technology, Shenzhen, China.",
-          "School of Mechanical Engineering, Tongji University, Shanghai, China."
-        ]
-      },
-      {
-        "name": "Qi Ge",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Shenzhen Key Laboratory for Additive Manufacturing of High-Performance Materials, Department of Mechanical and Energy Engineering, Southern University of Science and Technology, Shenzhen, China."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Shenzhen Key Laboratory for Additive Manufacturing of High-Performance Materials, Department of Mechanical and Energy Engineering, Southern University of Science and Technology, Shenzhen, China."
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2169-5172",
-      "2169-5180"
-    ],
-    "issn_l": "",
-    "publisher": "SAGE Publications",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4408321370",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S2764443376",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S2764443376",
-      "issn_l": "2169-5172",
-      "issn": [
-        "2169-5172",
-        "2169-5180"
-      ],
-      "type": "journal",
-      "host_organization_name": "Mary Ann Liebert, Inc.",
-      "works_count": 868,
-      "cited_by_count": 44334,
-      "two_year_mean_citedness": 4.570135746606335,
-      "h_index": 106,
-      "i10_index": 569,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 4.570135746606335,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 2",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The paper focuses on origami-based robotic grippers created using multimaterial 3D printing techniques.\n2. Problem - It addresses the challenge of optimizing the design parameters that affect the gripper's kinematic and mechanical performance.\n3. Method - The authors utilize a kinematic model to analyze the gripper's motion capabilities and conduct experiments to assess the impact of various geometric parameters.\n4. Key Result - Findings indicate that design variations significantly affect the gripper's performance, particularly in terms of bending angles and stiffness.\n5. Takeaway - This research underscores the potential of multimaterial 3D printing in enhancing the functionality of flexible robotic systems.",
-    "relevance_note_en": "The summary captures the core aspects of the study, including its focus on design optimization and experimental validation.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-08-11",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1089/soro.2024.0166"
   }
 }
