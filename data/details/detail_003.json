@@ -1,4 +1,106 @@
 {
+  "10.1016/j.matdes.2025.113650": {
+    "author_details": [
+      {
+        "name": "Said El Turk",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Dileep Chekkaramkodi",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Murad Ali",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Abdulrahim A. Sajini",
+        "orcid": "https://orcid.org/0000-0002-8600-3899",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Haider Butt",
+        "orcid": "https://orcid.org/0000-0003-2434-9525",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "0264-1275"
+    ],
+    "issn_l": "",
+    "publisher": "Elsevier BV",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4406662824",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S8792693",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S8792693",
+      "issn_l": "0264-1275",
+      "issn": [
+        "0264-1275",
+        "1873-4197"
+      ],
+      "type": "journal",
+      "host_organization_name": "Elsevier BV",
+      "works_count": 14476,
+      "cited_by_count": 516286,
+      "two_year_mean_citedness": 5.543417366946779,
+      "h_index": 222,
+      "i10_index": 8917,
+      "is_core": true,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 5.543417366946779,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 2",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The study focuses on the integration of gold nanoparticles into multi-material 3D printed hydrogels.\n2. Problem - There is a need for precise fabrication techniques to incorporate nanoparticles into complex geometries for enhanced functionality.\n3. Method - An in-situ synthesis method is employed to selectively incorporate gold nanoparticles into specific regions of 3D printed pHEMA hydrogel structures.\n4. Key Result - The approach allows for the targeted formation of gold nanoparticles with tunable optical properties and demonstrates scalability for producing nanocomposite hydrogels.\n5. Takeaway - This innovative method offers a fast, economical, and environmentally friendly way to enhance the properties of 3D printed devices through selective nanoparticle integration.",
+    "relevance_note_en": "The paper presents a novel method for integrating nanoparticles into 3D printed materials, which is highly relevant to advancements in multi-material additive manufacturing.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-08-13",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1016/j.matdes.2025.113650"
+  },
   "10.1080/17452759.2025.2523545": {
     "author_details": [
       {
@@ -10772,7 +10874,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "last_seen_in_crossref_run": "2026-08-13",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "id": "10.34133/cbsystems.0406"
   },
   "10.1007/s11663-025-03696-4": {
@@ -29502,9 +29604,9 @@
     "corresponding_author_source": "openalex_cross_check",
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Progress in Additive Manufacturing",
+    "crossref_target_issn": "2363-9512",
     "issn": [
       "2363-9512",
       "2363-9520"
@@ -33933,152 +34035,5 @@
     "last_seen_in_crossref_run": "2026-08-13",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1038/s41467-025-65378-8"
-  },
-  "10.1039/d5cc02247a": {
-    "author_details": [
-      {
-        "name": "Tong Lan",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "State Key Laboratory of Advanced Technology for Materials Synthesis and Processing, International School of Materials Science and Engineering, Wuhan University of Technology, Wuhan 430070, China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "State Key Laboratory of Advanced Technology for Materials Synthesis and Processing, International School of Materials Science and Engineering, Wuhan University of Technology, Wuhan 430070, China"
-        ]
-      },
-      {
-        "name": "Qiong Wu",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "State Key Laboratory of Advanced Technology for Materials Synthesis and Processing, International School of Materials Science and Engineering, Wuhan University of Technology, Wuhan 430070, China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "State Key Laboratory of Advanced Technology for Materials Synthesis and Processing, International School of Materials Science and Engineering, Wuhan University of Technology, Wuhan 430070, China"
-        ]
-      },
-      {
-        "name": "Chengyong Zhao",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "State Key Laboratory of Advanced Technology for Materials Synthesis and Processing, International School of Materials Science and Engineering, Wuhan University of Technology, Wuhan 430070, China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "State Key Laboratory of Advanced Technology for Materials Synthesis and Processing, International School of Materials Science and Engineering, Wuhan University of Technology, Wuhan 430070, China"
-        ]
-      },
-      {
-        "name": "Haoyu Li",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "State Key Laboratory of Advanced Technology for Materials Synthesis and Processing, International School of Materials Science and Engineering, Wuhan University of Technology, Wuhan 430070, China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "State Key Laboratory of Advanced Technology for Materials Synthesis and Processing, International School of Materials Science and Engineering, Wuhan University of Technology, Wuhan 430070, China"
-        ]
-      },
-      {
-        "name": "Jianguo Guan",
-        "orcid": "https://orcid.org/0000-0002-2223-4524",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "State Key Laboratory of Advanced Technology for Materials Synthesis and Processing, International School of Materials Science and Engineering, Wuhan University of Technology, Wuhan 430070, China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "State Key Laboratory of Advanced Technology for Materials Synthesis and Processing, International School of Materials Science and Engineering, Wuhan University of Technology, Wuhan 430070, China"
-        ]
-      },
-      {
-        "name": "Fangzhi Mou",
-        "orcid": "https://orcid.org/0000-0002-9644-8277",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "State Key Laboratory of Advanced Technology for Materials Synthesis and Processing, International School of Materials Science and Engineering, Wuhan University of Technology, Wuhan 430070, China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "State Key Laboratory of Advanced Technology for Materials Synthesis and Processing, International School of Materials Science and Engineering, Wuhan University of Technology, Wuhan 430070, China"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "1359-7345",
-      "1364-548X"
-    ],
-    "issn_l": "",
-    "publisher": "Royal Society of Chemistry (RSC)",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4411574986",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S152760256",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S152760256",
-      "issn_l": "1359-7345",
-      "issn": [
-        "1359-7345",
-        "1364-548X"
-      ],
-      "type": "journal",
-      "host_organization_name": "Royal Society of Chemistry",
-      "works_count": 78007,
-      "cited_by_count": 3201073,
-      "two_year_mean_citedness": 3.89945068067829,
-      "h_index": 400,
-      "i10_index": 54813,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 3.89945068067829,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 2",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The study focuses on the development of glucose-responsive magnetic microrobots using 4D printing techniques.\n2. Problem - There is a need for advanced targeted embolization methods in medical interventions.\n3. Method - The researchers created a magnetic hydrogel ink for 4D printing, enabling the fabrication of microrobots with complex shapes.\n4. Key Result - These microrobots can be guided magnetically and respond to glucose levels, allowing for precise targeting and controlled embolization in a vascular model.\n5. Takeaway - The findings suggest that these microrobots could significantly enhance intelligent therapeutic interventions.",
-    "relevance_note_en": "The summary captures the essence of the research on microrobots and their applications in targeted therapies.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "not_seen_in_latest_crossref_run": true,
-    "last_seen_in_crossref_run": "2026-07-07",
-    "id": "10.1039/d5cc02247a"
   }
 }
