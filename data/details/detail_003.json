@@ -1,4 +1,252 @@
 {
+  "10.1016/j.addma.2025.104992": {
+    "author_details": [
+      {
+        "name": "Hichem Seriket",
+        "orcid": "https://orcid.org/0009-0001-5118-0625",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Oualid Bougzime",
+        "orcid": "https://orcid.org/0009-0007-4307-3161",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Yuyang Song",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "H. Jerry Qi",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Frédéric Demoly",
+        "orcid": "https://orcid.org/0000-0002-5825-6573",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2214-8604"
+    ],
+    "issn_l": "",
+    "publisher": "Elsevier BV",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4415069964",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S2764842179",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S2764842179",
+      "issn_l": "2214-7810",
+      "issn": [
+        "2214-7810",
+        "2214-8604"
+      ],
+      "type": "journal",
+      "host_organization_name": "Elsevier BV",
+      "works_count": 5106,
+      "cited_by_count": 246110,
+      "two_year_mean_citedness": 7.721680420105026,
+      "h_index": 193,
+      "i10_index": 3661,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 7.721680420105026,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - The study focuses on the design of topological interlocking materials for multi-material additive manufacturing.\n2. Problem - Challenges in multi-material additive manufacturing include printability issues and the need for sustainable disassembly and recyclability.\n3. Method - A computational design strategy using reinforcement learning, specifically Q-learning, is applied to optimize the arrangement of materials in a voxel-based approach.\n4. Key Result - The approach was validated through various structural configurations, demonstrating potential for sustainable and recyclable multi-material manufacturing.\n5. Takeaway - This research paves the way for innovative, resource-efficient designs in additive manufacturing, promoting circular manufacturing practices.",
+    "relevance_note_en": "The summary captures the core aspects of the research, including its focus, challenges addressed, methodology, findings, and implications for sustainability.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-08-13",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1016/j.addma.2025.104992"
+  },
+  "10.1002/admt.202401660": {
+    "author_details": [
+      {
+        "name": "Dinh Hai Le",
+        "orcid": "https://orcid.org/0009-0009-1377-0913",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "School of Engineering and Technology University of New South Wales  Northcott Drive Canberra ACT 2600 Australia"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Engineering and Technology University of New South Wales  Northcott Drive Canberra ACT 2600 Australia"
+        ]
+      },
+      {
+        "name": "Felix Kronowetter",
+        "orcid": "https://orcid.org/0000-0002-2018-1510",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Chair of Vibroacoustics of Vehicles and Machines Department of Engineering Physics and Computation TUM School of Engineering and Design Technical University of Munich  München 85748 Garching b Germany"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Chair of Vibroacoustics of Vehicles and Machines Department of Engineering Physics and Computation TUM School of Engineering and Design Technical University of Munich  München 85748 Garching b Germany"
+        ]
+      },
+      {
+        "name": "Yan Kei Chiang",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "School of Engineering and Technology University of New South Wales  Northcott Drive Canberra ACT 2600 Australia"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Engineering and Technology University of New South Wales  Northcott Drive Canberra ACT 2600 Australia"
+        ]
+      },
+      {
+        "name": "Marcus Maeder",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Chair of Vibroacoustics of Vehicles and Machines Department of Engineering Physics and Computation TUM School of Engineering and Design Technical University of Munich  München 85748 Garching b Germany"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Chair of Vibroacoustics of Vehicles and Machines Department of Engineering Physics and Computation TUM School of Engineering and Design Technical University of Munich  München 85748 Garching b Germany"
+        ]
+      },
+      {
+        "name": "Steffen Marburg",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Chair of Vibroacoustics of Vehicles and Machines Department of Engineering Physics and Computation TUM School of Engineering and Design Technical University of Munich  München 85748 Garching b Germany"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Chair of Vibroacoustics of Vehicles and Machines Department of Engineering Physics and Computation TUM School of Engineering and Design Technical University of Munich  München 85748 Garching b Germany"
+        ]
+      },
+      {
+        "name": "David A. Powell",
+        "orcid": "https://orcid.org/0000-0003-2123-1345",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "School of Engineering and Technology University of New South Wales  Northcott Drive Canberra ACT 2600 Australia"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Engineering and Technology University of New South Wales  Northcott Drive Canberra ACT 2600 Australia"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2365-709X",
+      "2365-709X"
+    ],
+    "issn_l": "",
+    "publisher": "Wiley",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4406698037",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S2765038284",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S2765038284",
+      "issn_l": "2365-709X",
+      "issn": [
+        "2365-709X"
+      ],
+      "type": "journal",
+      "host_organization_name": "Wiley",
+      "works_count": 6302,
+      "cited_by_count": 132117,
+      "two_year_mean_citedness": 4.245998315080033,
+      "h_index": 131,
+      "i10_index": 2825,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 4.245998315080033,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 2",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The paper focuses on the development of a reconfigurable metasurface for sound manipulation using origami-inspired designs.\n2. Problem - Existing methods for controlling acoustic metasurfaces are often inefficient, cumbersome, and limited by fabrication challenges.\n3. Method - The authors utilize multimaterial 3D printing to create a bistable origami structure that allows for programmable manipulation of sound waves.\n4. Key Result - The proposed metasurface can achieve distinct reflective behaviors by switching between two equilibrium states with minimal mechanical input.\n5. Takeaway - This approach simplifies acoustic wave shaping, removing the need for complex control systems and enabling practical applications.",
+    "relevance_note_en": "The summary captures the essence of the research, highlighting its innovative approach and practical implications.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-08-13",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1002/admt.202401660"
+  },
   "10.1016/j.matdes.2025.113650": {
     "author_details": [
       {
@@ -10874,7 +11122,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "last_seen_in_crossref_run": "2026-08-13",
-    "not_seen_in_latest_crossref_run": true,
+    "not_seen_in_latest_crossref_run": false,
     "id": "10.34133/cbsystems.0406"
   },
   "10.1007/s11663-025-03696-4": {
@@ -33766,274 +34014,5 @@
     "last_seen_in_crossref_run": "2026-08-13",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/adfm.202509712"
-  },
-  "10.1002/advs.202507931": {
-    "author_details": [
-      {
-        "name": "Wonjin Choi",
-        "orcid": "https://orcid.org/0000-0001-6303-8899",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Physical and Life Sciences Materials Science Division Lawrence Livermore National Laboratory  Livermore CA 94550 USA"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Physical and Life Sciences Materials Science Division Lawrence Livermore National Laboratory  Livermore CA 94550 USA"
-        ]
-      },
-      {
-        "name": "Widianto P. Moestopo",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Center for Engineered Materials and Manufacturing Lawrence Livermore National Laboratory  Livermore CA 94550 USA"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Center for Engineered Materials and Manufacturing Lawrence Livermore National Laboratory  Livermore CA 94550 USA"
-        ]
-      },
-      {
-        "name": "Songyun Gu",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Center for Engineered Materials and Manufacturing Lawrence Livermore National Laboratory  Livermore CA 94550 USA"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Center for Engineered Materials and Manufacturing Lawrence Livermore National Laboratory  Livermore CA 94550 USA"
-        ]
-      },
-      {
-        "name": "Taeil Lee",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Materials Science and Engineering Department Gachon University Gyeonggi‐do 13120 Republic of Korea"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Materials Science and Engineering Department Gachon University Gyeonggi‐do 13120 Republic of Korea"
-        ]
-      },
-      {
-        "name": "Jae‐Hyuck Yoo",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Physical and Life Sciences Materials Science Division Lawrence Livermore National Laboratory  Livermore CA 94550 USA"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Physical and Life Sciences Materials Science Division Lawrence Livermore National Laboratory  Livermore CA 94550 USA"
-        ]
-      },
-      {
-        "name": "Xiaoxing Xia",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Center for Engineered Materials and Manufacturing Lawrence Livermore National Laboratory  Livermore CA 94550 USA"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Center for Engineered Materials and Manufacturing Lawrence Livermore National Laboratory  Livermore CA 94550 USA"
-        ]
-      },
-      {
-        "name": "Michael R. Armstrong",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Physical and Life Sciences Materials Science Division Lawrence Livermore National Laboratory  Livermore CA 94550 USA"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Physical and Life Sciences Materials Science Division Lawrence Livermore National Laboratory  Livermore CA 94550 USA"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "Advanced Science",
-    "crossref_target_issn": "2198-3844",
-    "issn": [
-      "2198-3844",
-      "2198-3844"
-    ],
-    "issn_l": "",
-    "publisher": "Wiley",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4412551796",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S2737737698",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S2737737698",
-      "issn_l": "2198-3844",
-      "issn": [
-        "2198-3844"
-      ],
-      "type": "journal",
-      "host_organization_name": "Wiley",
-      "works_count": 20558,
-      "cited_by_count": 647035,
-      "two_year_mean_citedness": 8.402641353693769,
-      "h_index": 276,
-      "i10_index": 9993,
-      "is_core": true,
-      "is_oa": true,
-      "is_in_doaj": true
-    },
-    "journal_quality": {
-      "label": "High-impact general journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 8.402641353693769,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 1",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - The study focuses on helical photonic metamaterials and their chiral properties.\n2. Problem - There is a lack of understanding regarding the relationship between helical structure parameters and their optical properties due to fabrication difficulties.\n3. Method - The research employs parametric analysis, theoretical modeling, and experimental validation through 3D printing and terahertz spectroscopy.\n4. Key Result - Optimized helical structures exhibit significant optical properties and can be used as stretchable sensors and holograms for secure information encoding.\n5. Takeaway - Chiral QR codes created from helical structures show promise for advanced encryption applications.",
-    "relevance_note_en": "The paper presents innovative applications of helical metamaterials in security and optical sensing.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-08-13",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1002/advs.202507931"
-  },
-  "10.1038/s41467-025-65378-8": {
-    "author_details": [
-      {
-        "name": "Haoqing Yang",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Haotian Li",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Juchen Zhang",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Tengxiao Liu",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "H. Jerry Qi",
-        "orcid": "https://orcid.org/0000-0002-3212-5284",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Hongtao Sun",
-        "orcid": "https://orcid.org/0000-0003-3259-6091",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "Nature Communications",
-    "crossref_target_issn": "2041-1723",
-    "issn": [
-      "2041-1723"
-    ],
-    "issn_l": "",
-    "publisher": "Springer Science and Business Media LLC",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4416133404",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S64187185",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S64187185",
-      "issn_l": "2041-1723",
-      "issn": [
-        "2041-1723"
-      ],
-      "type": "journal",
-      "host_organization_name": "Nature Portfolio",
-      "works_count": 90441,
-      "cited_by_count": 7551319,
-      "two_year_mean_citedness": 16.130086313193587,
-      "h_index": 743,
-      "i10_index": 68559,
-      "is_core": true,
-      "is_oa": true,
-      "is_in_doaj": true
-    },
-    "journal_quality": {
-      "label": "High-impact general journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 16.130086313193587,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 1",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - This study focuses on a novel 4D printing technique for creating smart materials inspired by cephalopod capabilities.\n2. Problem - The challenge addressed is the difficulty in achieving dynamic control over multiple features in synthetic materials.\n3. Method - The authors developed a halftone-encoded 4D printing method that allows for programmable control of various properties in a single hydrogel film.\n4. Key Result - This method enables simultaneous adjustments in optical appearance, mechanical properties, surface texture, and shape in response to external stimuli.\n5. Takeaway - The binary encoding strategy presents a versatile framework for designing advanced synthetic materials with multifunctional and reconfigurable properties.",
-    "relevance_note_en": "The summary captures the essence of the research, highlighting the innovative method and its implications.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-08-13",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1038/s41467-025-65378-8"
   }
 }

@@ -1,4 +1,269 @@
 {
+  "10.1016/j.matdes.2025.115331": {
+    "author_details": [
+      {
+        "name": "Tuba Dolar",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Nicolò Maria della Ventura",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Florent Mignerot",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Zihan Wang",
+        "orcid": "https://orcid.org/0000-0001-7396-1556",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Hannah C. Howard",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Christopher T. Kassner",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Haydn N.G. Wadley",
+        "orcid": "https://orcid.org/0000-0001-8449-9547",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Daniel S. Gianola",
+        "orcid": "https://orcid.org/0000-0003-4660-0805",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Wei Chen",
+        "orcid": "https://orcid.org/0000-0002-4653-7124",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Materials & Design",
+    "crossref_target_issn": "0264-1275",
+    "issn": [
+      "0264-1275"
+    ],
+    "issn_l": "",
+    "publisher": "Elsevier BV",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4417410489",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S8792693",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S8792693",
+      "issn_l": "0264-1275",
+      "issn": [
+        "0264-1275",
+        "1873-4197"
+      ],
+      "type": "journal",
+      "host_organization_name": "Elsevier BV",
+      "works_count": 14476,
+      "cited_by_count": 516286,
+      "two_year_mean_citedness": 5.543417366946779,
+      "h_index": 222,
+      "i10_index": 8917,
+      "is_core": true,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 5.543417366946779,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 2",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The paper discusses a collaborative Bayesian optimization framework for materials discovery.\n2. Problem - Traditional Bayesian optimization struggles with heterogeneous composition-property relationships in materials design.\n3. Method - The authors propose a multi-agent Bayesian optimization approach where agents model specific subregions of the design space and share information to enhance exploration.\n4. Key Result - This collaborative method significantly accelerates the discovery of HfTiTaNb alloys while reducing the number of iterations needed for adaptive learning.\n5. Takeaway - The multi-agent framework demonstrates potential for efficient materials screening and can be applied to various optimization challenges involving diverse data sources.",
+    "relevance_note_en": "The summary accurately captures the core contributions and findings of the paper.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-08-13",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1016/j.matdes.2025.115331"
+  },
+  "10.1021/acscentsci.5c01624": {
+    "author_details": [
+      {
+        "name": "Amanda K. Brown",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Chemistry, The University of British Columbia, 2036 Main Mall, Vancouver, British Columbia V6T 1Z1, Canada"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Chemistry, The University of British Columbia, 2036 Main Mall, Vancouver, British Columbia V6T 1Z1, Canada"
+        ]
+      },
+      {
+        "name": "Abhishek Soni",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Chemistry, The University of British Columbia, 2036 Main Mall, Vancouver, British Columbia V6T 1Z1, Canada"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Chemistry, The University of British Columbia, 2036 Main Mall, Vancouver, British Columbia V6T 1Z1, Canada"
+        ]
+      },
+      {
+        "name": "Daniel Lin",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Chemistry, The University of British Columbia, 2036 Main Mall, Vancouver, British Columbia V6T 1Z1, Canada"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Chemistry, The University of British Columbia, 2036 Main Mall, Vancouver, British Columbia V6T 1Z1, Canada"
+        ]
+      },
+      {
+        "name": "Curtis P. Berlinguette",
+        "orcid": "https://orcid.org/0000-0001-6875-849X",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Chemistry, The University of British Columbia, 2036 Main Mall, Vancouver, British Columbia V6T 1Z1, Canada"
+          },
+          {
+            "name": "Department of Chemical and Biological Engineering, The University of British Columbia, 2360 East Mall, Vancouver, British Columbia V6T 1Z3, Canada"
+          },
+          {
+            "name": "Stewart Blusson Quantum Matter Institute, The University of British Columbia, 2355 East Mall, Vancouver, British Columbia V6T 1Z4, Canada"
+          },
+          {
+            "name": "Canadian Institute for Advanced Research (CIFAR), 661 University Avenue, Toronto, Ontario M5G 1M1, Canada"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Chemistry, The University of British Columbia, 2036 Main Mall, Vancouver, British Columbia V6T 1Z1, Canada",
+          "Department of Chemical and Biological Engineering, The University of British Columbia, 2360 East Mall, Vancouver, British Columbia V6T 1Z3, Canada",
+          "Stewart Blusson Quantum Matter Institute, The University of British Columbia, 2355 East Mall, Vancouver, British Columbia V6T 1Z4, Canada",
+          "Canadian Institute for Advanced Research (CIFAR), 661 University Avenue, Toronto, Ontario M5G 1M1, Canada"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2374-7943",
+      "2374-7951"
+    ],
+    "issn_l": "",
+    "publisher": "American Chemical Society (ACS)",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7130356745",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S2765035057",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S2765035057",
+      "issn_l": "2374-7943",
+      "issn": [
+        "2374-7943",
+        "2374-7951"
+      ],
+      "type": "journal",
+      "host_organization_name": "American Chemical Society",
+      "works_count": 2826,
+      "cited_by_count": 158408,
+      "two_year_mean_citedness": 8.051698670605614,
+      "h_index": 189,
+      "i10_index": 1645,
+      "is_core": true,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 8.051698670605614,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The development of self-driving laboratories in materials science.\n2. Problem - Traditional methods of materials discovery are often slow and inefficient.\n3. Method - Utilizing automation and machine learning to enhance the exploration of chemical landscapes.\n4. Key Result - Self-driving laboratories are significantly accelerating the pace of materials discovery and commercialization.\n5. Takeaway - The SDL ecosystem is transforming materials science by enabling faster and more efficient research processes.",
+    "relevance_note_en": "The summary captures the essence of the paper's focus on SDLs and their impact on materials discovery.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-08-13",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1021/acscentsci.5c01624"
+  },
   "10.1002/adma.73938": {
     "author_details": [
       {
@@ -30548,253 +30813,5 @@
     "last_seen_in_crossref_run": "2026-08-13",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.jmrt.2025.05.075"
-  },
-  "10.1016/j.addma.2025.104992": {
-    "author_details": [
-      {
-        "name": "Hichem Seriket",
-        "orcid": "https://orcid.org/0009-0001-5118-0625",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Oualid Bougzime",
-        "orcid": "https://orcid.org/0009-0007-4307-3161",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Yuyang Song",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "H. Jerry Qi",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Frédéric Demoly",
-        "orcid": "https://orcid.org/0000-0002-5825-6573",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2214-8604"
-    ],
-    "issn_l": "",
-    "publisher": "Elsevier BV",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4415069964",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S2764842179",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S2764842179",
-      "issn_l": "2214-7810",
-      "issn": [
-        "2214-7810",
-        "2214-8604"
-      ],
-      "type": "journal",
-      "host_organization_name": "Elsevier BV",
-      "works_count": 5106,
-      "cited_by_count": 246110,
-      "two_year_mean_citedness": 7.721680420105026,
-      "h_index": 193,
-      "i10_index": 3661,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Core manufacturing journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 7.721680420105026,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 1",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - The study focuses on the design of topological interlocking materials for multi-material additive manufacturing.\n2. Problem - Challenges in multi-material additive manufacturing include printability issues and the need for sustainable disassembly and recyclability.\n3. Method - A computational design strategy using reinforcement learning, specifically Q-learning, is applied to optimize the arrangement of materials in a voxel-based approach.\n4. Key Result - The approach was validated through various structural configurations, demonstrating potential for sustainable and recyclable multi-material manufacturing.\n5. Takeaway - This research paves the way for innovative, resource-efficient designs in additive manufacturing, promoting circular manufacturing practices.",
-    "relevance_note_en": "The summary captures the core aspects of the research, including its focus, challenges addressed, methodology, findings, and implications for sustainability.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-08-13",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1016/j.addma.2025.104992"
-  },
-  "10.1002/admt.202401660": {
-    "author_details": [
-      {
-        "name": "Dinh Hai Le",
-        "orcid": "https://orcid.org/0009-0009-1377-0913",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "School of Engineering and Technology University of New South Wales  Northcott Drive Canberra ACT 2600 Australia"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "School of Engineering and Technology University of New South Wales  Northcott Drive Canberra ACT 2600 Australia"
-        ]
-      },
-      {
-        "name": "Felix Kronowetter",
-        "orcid": "https://orcid.org/0000-0002-2018-1510",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Chair of Vibroacoustics of Vehicles and Machines Department of Engineering Physics and Computation TUM School of Engineering and Design Technical University of Munich  München 85748 Garching b Germany"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Chair of Vibroacoustics of Vehicles and Machines Department of Engineering Physics and Computation TUM School of Engineering and Design Technical University of Munich  München 85748 Garching b Germany"
-        ]
-      },
-      {
-        "name": "Yan Kei Chiang",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "School of Engineering and Technology University of New South Wales  Northcott Drive Canberra ACT 2600 Australia"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "School of Engineering and Technology University of New South Wales  Northcott Drive Canberra ACT 2600 Australia"
-        ]
-      },
-      {
-        "name": "Marcus Maeder",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Chair of Vibroacoustics of Vehicles and Machines Department of Engineering Physics and Computation TUM School of Engineering and Design Technical University of Munich  München 85748 Garching b Germany"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Chair of Vibroacoustics of Vehicles and Machines Department of Engineering Physics and Computation TUM School of Engineering and Design Technical University of Munich  München 85748 Garching b Germany"
-        ]
-      },
-      {
-        "name": "Steffen Marburg",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Chair of Vibroacoustics of Vehicles and Machines Department of Engineering Physics and Computation TUM School of Engineering and Design Technical University of Munich  München 85748 Garching b Germany"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Chair of Vibroacoustics of Vehicles and Machines Department of Engineering Physics and Computation TUM School of Engineering and Design Technical University of Munich  München 85748 Garching b Germany"
-        ]
-      },
-      {
-        "name": "David A. Powell",
-        "orcid": "https://orcid.org/0000-0003-2123-1345",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "School of Engineering and Technology University of New South Wales  Northcott Drive Canberra ACT 2600 Australia"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "School of Engineering and Technology University of New South Wales  Northcott Drive Canberra ACT 2600 Australia"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2365-709X",
-      "2365-709X"
-    ],
-    "issn_l": "",
-    "publisher": "Wiley",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4406698037",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S2765038284",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S2765038284",
-      "issn_l": "2365-709X",
-      "issn": [
-        "2365-709X"
-      ],
-      "type": "journal",
-      "host_organization_name": "Wiley",
-      "works_count": 6302,
-      "cited_by_count": 132117,
-      "two_year_mean_citedness": 4.245998315080033,
-      "h_index": 131,
-      "i10_index": 2825,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 4.245998315080033,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 2",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The paper focuses on the development of a reconfigurable metasurface for sound manipulation using origami-inspired designs.\n2. Problem - Existing methods for controlling acoustic metasurfaces are often inefficient, cumbersome, and limited by fabrication challenges.\n3. Method - The authors utilize multimaterial 3D printing to create a bistable origami structure that allows for programmable manipulation of sound waves.\n4. Key Result - The proposed metasurface can achieve distinct reflective behaviors by switching between two equilibrium states with minimal mechanical input.\n5. Takeaway - This approach simplifies acoustic wave shaping, removing the need for complex control systems and enabling practical applications.",
-    "relevance_note_en": "The summary captures the essence of the research, highlighting its innovative approach and practical implications.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-08-13",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1002/admt.202401660"
   }
 }
