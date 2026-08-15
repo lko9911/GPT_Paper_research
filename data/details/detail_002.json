@@ -156,8 +156,8 @@
         ]
       }
     ],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
     "crossref_collection_route": "issn_venue_query",
@@ -170,8 +170,8 @@
     "issn_l": "",
     "publisher": "Wiley",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7203473974",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S135204980",
     "venue_metrics": {
@@ -430,17 +430,17 @@
   "10.1021/acscentsci.5c01624": {
     "author_details": [
       {
-        "name": "Amanda K. Brown",
+        "name": "Amanda\nK. Brown",
         "orcid": "",
         "position": "first",
         "is_corresponding": false,
         "institutions": [
           {
-            "name": "Department of Chemistry, The University of British Columbia, 2036 Main Mall, Vancouver, British Columbia V6T 1Z1, Canada"
+            "name": "The University of British Columbia , , 2036 Main Mall , , ,"
           }
         ],
         "raw_affiliation_strings": [
-          "Department of Chemistry, The University of British Columbia, 2036 Main Mall, Vancouver, British Columbia V6T 1Z1, Canada"
+          "The University of British Columbia , , 2036 Main Mall , , ,"
         ]
       },
       {
@@ -450,11 +450,11 @@
         "is_corresponding": false,
         "institutions": [
           {
-            "name": "Department of Chemistry, The University of British Columbia, 2036 Main Mall, Vancouver, British Columbia V6T 1Z1, Canada"
+            "name": "The University of British Columbia , , 2036 Main Mall , , ,"
           }
         ],
         "raw_affiliation_strings": [
-          "Department of Chemistry, The University of British Columbia, 2036 Main Mall, Vancouver, British Columbia V6T 1Z1, Canada"
+          "The University of British Columbia , , 2036 Main Mall , , ,"
         ]
       },
       {
@@ -464,11 +464,11 @@
         "is_corresponding": false,
         "institutions": [
           {
-            "name": "Department of Chemistry, The University of British Columbia, 2036 Main Mall, Vancouver, British Columbia V6T 1Z1, Canada"
+            "name": "The University of British Columbia , , 2036 Main Mall , , ,"
           }
         ],
         "raw_affiliation_strings": [
-          "Department of Chemistry, The University of British Columbia, 2036 Main Mall, Vancouver, British Columbia V6T 1Z1, Canada"
+          "The University of British Columbia , , 2036 Main Mall , , ,"
         ]
       },
       {
@@ -478,23 +478,23 @@
         "is_corresponding": false,
         "institutions": [
           {
-            "name": "Department of Chemistry, The University of British Columbia, 2036 Main Mall, Vancouver, British Columbia V6T 1Z1, Canada"
+            "name": "The University of British Columbia , , 2036 Main Mall , , ,"
           },
           {
-            "name": "Department of Chemical and Biological Engineering, The University of British Columbia, 2360 East Mall, Vancouver, British Columbia V6T 1Z3, Canada"
+            "name": "The University of British Columbia , , 2360 East Mall , , ,"
           },
           {
-            "name": "Stewart Blusson Quantum Matter Institute, The University of British Columbia, 2355 East Mall, Vancouver, British Columbia V6T 1Z4, Canada"
+            "name": "The University of British Columbia , , 2355 East Mall , , ,"
           },
           {
-            "name": "Canadian Institute for Advanced Research (CIFAR), 661 University Avenue, Toronto, Ontario M5G 1M1, Canada"
+            "name": "Canadian Institute for Advanced Research (CIFAR) , 661 University Avenue , , ,"
           }
         ],
         "raw_affiliation_strings": [
-          "Department of Chemistry, The University of British Columbia, 2036 Main Mall, Vancouver, British Columbia V6T 1Z1, Canada",
-          "Department of Chemical and Biological Engineering, The University of British Columbia, 2360 East Mall, Vancouver, British Columbia V6T 1Z3, Canada",
-          "Stewart Blusson Quantum Matter Institute, The University of British Columbia, 2355 East Mall, Vancouver, British Columbia V6T 1Z4, Canada",
-          "Canadian Institute for Advanced Research (CIFAR), 661 University Avenue, Toronto, Ontario M5G 1M1, Canada"
+          "The University of British Columbia , , 2036 Main Mall , , ,",
+          "The University of British Columbia , , 2360 East Mall , , ,",
+          "The University of British Columbia , , 2355 East Mall , , ,",
+          "Canadian Institute for Advanced Research (CIFAR) , 661 University Avenue , , ,"
         ]
       }
     ],
