@@ -1,4 +1,97 @@
 {
+  "10.1016/j.aime.2026.100185": {
+    "author_details": [
+      {
+        "name": "Yiyang Yan",
+        "orcid": "https://orcid.org/0009-0006-9079-145X",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Iason Sideris",
+        "orcid": "https://orcid.org/0000-0002-4584-9601",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Markus Bambach",
+        "orcid": "https://orcid.org/0000-0002-8790-0807",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Mohamadreza Afrasiabi",
+        "orcid": "https://orcid.org/0000-0003-1802-1857",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2666-9129"
+    ],
+    "issn_l": "",
+    "publisher": "Elsevier BV",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7133682859",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S4210227429",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210227429",
+      "issn_l": "2666-9129",
+      "issn": [
+        "2666-9129"
+      ],
+      "type": "journal",
+      "host_organization_name": "Elsevier BV",
+      "works_count": 162,
+      "cited_by_count": 2301,
+      "two_year_mean_citedness": 2.5689655172413794,
+      "h_index": 27,
+      "i10_index": 52,
+      "is_core": true,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 2.5689655172413794,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 3",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The study focuses on enhancing path planning in additive manufacturing.\n2. Problem - Existing algorithms often fail with complex geometries, resulting in defects that affect part quality.\n3. Method - An adaptive framework is introduced, utilizing convex decomposition and a partial-contour-guided hatching strategy for toolpath generation.\n4. Key Result - The approach successfully minimizes defects and ensures geometric conformity across various geometries in wire arc additive manufacturing.\n5. Takeaway - This framework significantly improves the reliability and quality of additive manufacturing processes for intricate designs.",
+    "relevance_note_en": "The summary captures the core contributions and findings of the paper effectively.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-08-16",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1016/j.aime.2026.100185"
+  },
   "10.1002/adfm.202521468": {
     "author_details": [
       {
@@ -30788,138 +30881,5 @@
     "last_seen_in_crossref_run": "2026-08-16",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.mfglet.2025.06.201"
-  },
-  "10.1038/s41467-025-64092-9": {
-    "author_details": [
-      {
-        "name": "Michael Göschl",
-        "orcid": "https://orcid.org/0009-0000-6359-879X",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Dominik Laa",
-        "orcid": "https://orcid.org/0009-0007-9721-2446",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Thomas Koch",
-        "orcid": "https://orcid.org/0000-0003-2801-3113",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Evan Constable",
-        "orcid": "https://orcid.org/0000-0002-3047-1239",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Xin Liu",
-        "orcid": "https://orcid.org/0000-0002-2631-277X",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Andrei Pimenov",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Jürgen Stampfl",
-        "orcid": "https://orcid.org/0000-0002-3626-5647",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Robert Liska",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Katharina Ehrmann",
-        "orcid": "https://orcid.org/0000-0002-0161-0527",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "Nature Communications",
-    "crossref_target_issn": "2041-1723",
-    "issn": [
-      "2041-1723"
-    ],
-    "issn_l": "",
-    "publisher": "Springer Science and Business Media LLC",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4415208878",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S64187185",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S64187185",
-      "issn_l": "2041-1723",
-      "issn": [
-        "2041-1723"
-      ],
-      "type": "journal",
-      "host_organization_name": "Nature Portfolio",
-      "works_count": 90441,
-      "cited_by_count": 7551319,
-      "two_year_mean_citedness": 16.130086313193587,
-      "h_index": 743,
-      "i10_index": 68559,
-      "is_core": true,
-      "is_oa": true,
-      "is_in_doaj": true
-    },
-    "journal_quality": {
-      "label": "High-impact general journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 16.130086313193587,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 1",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - The study focuses on multi-material 3D printing using a single formulation.\n2. Problem - Traditional methods require multiple feedstocks to achieve distinct material properties in 3D printed parts.\n3. Method - The researchers utilized a liquid crystalline monomer and a trifunctional thiol crosslinker, adjusting printing temperature and light intensity to create varied material properties.\n4. Key Result - Significant changes in mechanical and optical characteristics were achieved, demonstrating pixel-to-pixel resolution in material properties during 3D printing.\n5. Takeaway - This approach enables the production of versatile composite parts for applications like shape memory and chemical data storage.",
-    "relevance_note_en": "The paper presents innovative techniques in multi-material 3D printing that align with current trends in additive manufacturing.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-08-16",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1038/s41467-025-64092-9"
   }
 }
