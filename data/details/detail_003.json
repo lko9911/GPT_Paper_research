@@ -1,4 +1,82 @@
 {
+  "10.1016/j.compstruc.2024.107632": {
+    "author_details": [
+      {
+        "name": "Nima Yaghoobi",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Mohammad Hossein Abolbashari",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "0045-7949"
+    ],
+    "issn_l": "",
+    "publisher": "Elsevier BV",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4405624821",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S111482492",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S111482492",
+      "issn_l": "0045-7949",
+      "issn": [
+        "0045-7949",
+        "1879-2243"
+      ],
+      "type": "journal",
+      "host_organization_name": "Elsevier BV",
+      "works_count": 13283,
+      "cited_by_count": 368803,
+      "two_year_mean_citedness": 4.7329910141206675,
+      "h_index": 201,
+      "i10_index": 7085,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 4.7329910141206675,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 2",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The paper focuses on optimizing the design of three-dimensional structures in additive manufacturing.\n2. Problem - It addresses the issue of local heat accumulation that can occur during the layer-upon-layer manufacturing process.\n3. Method - The authors propose a simultaneous optimization approach for both topology and bi-material distribution.\n4. Key Result - The optimization technique effectively reduces heat accumulation, enhancing the performance of the additive manufacturing process.\n5. Takeaway - This study highlights the importance of integrated design strategies in improving thermal management in additive manufacturing.",
+    "relevance_note_en": "The summary captures the core aspects of the paper's focus on optimization in additive manufacturing.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-08-17",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1016/j.compstruc.2024.107632"
+  },
   "10.1016/j.mfglet.2025.06.201": {
     "author_details": [
       {
@@ -30666,9 +30744,9 @@
     "corresponding_author_source": "openalex_cross_check",
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Progress in Additive Manufacturing",
+    "crossref_target_issn": "2363-9512",
     "issn": [
       "2363-9512",
       "2363-9520"
@@ -33646,155 +33724,5 @@
     "last_seen_in_crossref_run": "2026-08-17",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/advs.202415159"
-  },
-  "10.1016/j.addma.2025.104844": {
-    "author_details": [
-      {
-        "name": "Yujie Zhang",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Hendrick de Haan",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Katherine Houlahan",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Kathleen L. Sampson",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Daniel Webber",
-        "orcid": "https://orcid.org/0009-0003-7821-4041",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Antony Orth",
-        "orcid": "https://orcid.org/0000-0001-5937-6254",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Thomas Lacelle",
-        "orcid": "https://orcid.org/0000-0002-4224-8413",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Liliana Gaburici",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Rene Lam",
-        "orcid": "https://orcid.org/0000-0002-1715-6808",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Bhavana Deore",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Chantal Paquet",
-        "orcid": "https://orcid.org/0000-0002-9344-8810",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2214-8604"
-    ],
-    "issn_l": "",
-    "publisher": "Elsevier BV",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4411139633",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S2764842179",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S2764842179",
-      "issn_l": "2214-7810",
-      "issn": [
-        "2214-7810",
-        "2214-8604"
-      ],
-      "type": "journal",
-      "host_organization_name": "Elsevier BV",
-      "works_count": 5106,
-      "cited_by_count": 246110,
-      "two_year_mean_citedness": 7.721680420105026,
-      "h_index": 193,
-      "i10_index": 3661,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Core manufacturing journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 7.721680420105026,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 1",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - The study focuses on the effects of oxygen inhibition during the photopolymerization process of (meth)acrylate materials in tomographic volumetric printing.\n2. Problem - Oxygen inhibition can significantly hinder the efficiency and quality of photopolymerization, impacting the performance of additive manufacturing techniques.\n3. Method - The research employs experimental analysis to investigate the influence of oxygen levels on the polymerization kinetics and final properties of printed materials.\n4. Key Result - Findings reveal that controlling oxygen exposure can enhance the polymerization process, leading to improved mechanical properties and print fidelity.\n5. Takeaway - Optimizing oxygen levels is crucial for advancing the effectiveness of (meth)acrylate photopolymerization in volumetric printing applications.",
-    "relevance_note_en": "The summary captures the essence of the study's focus on oxygen inhibition and its implications for photopolymerization in additive manufacturing.",
-    "abstract_used_for_summary": false,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-08-17",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1016/j.addma.2025.104844"
   }
 }
