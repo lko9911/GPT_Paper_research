@@ -84891,9 +84891,69 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Ricky D. Wildman",
+        "openalex_author_id": "https://openalex.org/A5008929056",
+        "orcid": "https://orcid.org/0000-0003-2329-8471",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Nottingham",
+            "ror": "https://ror.org/01ee9ar58",
+            "country_code": "GB",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Centre of Additive Manufacturing, Faculty of Engineering, Engineering, University Park, University of Nottingham, Nottingham, NG7 2RD, UK. ricky.wildman@nottingham.ac.uk",
+          "Department of Chemical and Environmental Engineering, Faculty of Engineering, University Park, University of Nottingham, Nottingham, NG7 2RD, UK. ricky.wildman@nottingham.ac.uk",
+          "University of Nottingham"
+        ]
+      },
+      {
+        "name": "Hayden Taylor",
+        "openalex_author_id": "https://openalex.org/A5060055066",
+        "orcid": "https://orcid.org/0000-0001-9810-6505",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of California, Berkeley",
+            "ror": "https://ror.org/01an7q238",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Dept. of Mechanical Engineering, University of California, Berkeley, CA, USA. hkt@berkeley.edu",
+          "University of California, Berkeley"
+        ]
+      },
+      {
+        "name": "Derek J. Irvine",
+        "openalex_author_id": "https://openalex.org/A5064718443",
+        "orcid": "https://orcid.org/0000-0003-1461-9851",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Nottingham",
+            "ror": "https://ror.org/01ee9ar58",
+            "country_code": "GB",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Centre of Additive Manufacturing, Faculty of Engineering, Engineering, University Park, University of Nottingham, Nottingham, NG7 2RD, UK. derek.irvine@nottingham.ac.uk",
+          "Department of Chemical and Environmental Engineering, Faculty of Engineering, University Park, University of Nottingham, Nottingham, NG7 2RD, UK. derek.irvine@nottingham.ac.uk",
+          "University of Nottingham"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Nature Communications",
     "doi": "10.1038/s41467-026-73456-8",
@@ -84912,8 +84972,8 @@
     "issn_l": "",
     "publisher": "Springer Science and Business Media LLC",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "https://openalex.org/W7162500732",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4412585581",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S64187185",
     "venue_metrics": {
@@ -97316,7 +97376,7 @@
     "first_added": "2026-07-15",
     "last_updated": "2026-08-18",
     "is_weekly_new": false,
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "last_seen_in_crossref_run": "2026-08-18",
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
@@ -186621,10 +186681,10 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-12",
-    "last_updated": "2026-08-07",
+    "last_updated": "2026-08-18",
     "is_weekly_new": false,
-    "last_seen_in_crossref_run": "2026-08-07",
-    "not_seen_in_latest_crossref_run": true,
+    "last_seen_in_crossref_run": "2026-08-18",
+    "not_seen_in_latest_crossref_run": false,
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 5.821917808219178,
