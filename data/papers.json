@@ -6588,7 +6588,7 @@
     "publisher": "Elsevier BV",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7203651120",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S4387287712",
     "venue_metrics": {
@@ -6859,9 +6859,9 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Wenjun Xu",
-        "openalex_author_id": "https://openalex.org/A5059180329",
-        "orcid": "https://orcid.org/0000-0001-5370-3437",
+        "name": "Zhenlu Xu",
+        "openalex_author_id": "https://openalex.org/A5056473819",
+        "orcid": "https://orcid.org/0009-0007-0580-017X",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -9841,15 +9841,15 @@
         "is_corresponding": true,
         "institutions": [
           {
-            "name": "Sakarya University",
-            "ror": "https://ror.org/04ttnw109",
+            "name": "Karabük University",
+            "ror": "https://ror.org/04wy7gp54",
             "country_code": "TR",
             "type": "education"
           },
           {
-            "name": "Karabük University",
-            "ror": "https://ror.org/04wy7gp54",
-            "country_code": "TR",
+            "name": "Sakarya Uygulamalı Bilimler Üniversitesi",
+            "ror": "https://ror.org/01shwhq58",
+            "country_code": null,
             "type": "education"
           }
         ],
@@ -26179,9 +26179,29 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Yu Long",
+        "openalex_author_id": "https://openalex.org/A5054669502",
+        "orcid": "https://orcid.org/0000-0001-7486-3675",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Guangxi University",
+            "ror": "https://ror.org/02c9qn167",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Institute of Laser Intelligent Manufacturing and Precision Processing, School of Mechanical Engineering Guangxi University  Nanning China",
+          "State Key Laboratory of Featured Metal Materials and Life‐Cycle Safety for Composite Structures Guangxi University  Nanning China"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Journal of Polymer Science",
     "doi": "10.1002/pola.70303",
@@ -26201,8 +26221,8 @@
     "issn_l": "",
     "publisher": "Wiley",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7203570333",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S4210188590",
     "venue_metrics": {
@@ -26687,9 +26707,9 @@
     "corresponding_authors": [
       {
         "name": "Assia Belbachir",
-        "openalex_author_id": "https://openalex.org/A5051482797",
+        "openalex_author_id": null,
         "orcid": "https://orcid.org/0000-0002-1294-8478",
-        "position": "first",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -35272,9 +35292,40 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Sébastien Blanquer",
+        "openalex_author_id": "https://openalex.org/A5056182008",
+        "orcid": "https://orcid.org/0000-0002-5366-6530",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "École Nationale Supérieure de Chimie de Montpellier",
+            "ror": "https://ror.org/03sgyqj04",
+            "country_code": "FR",
+            "type": "education"
+          },
+          {
+            "name": "Centre National de la Recherche Scientifique",
+            "ror": "https://ror.org/02feahw73",
+            "country_code": "FR",
+            "type": "government"
+          },
+          {
+            "name": "Université de Montpellier",
+            "ror": "https://ror.org/051escj72",
+            "country_code": "FR",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "ICGM, CNRS, ENSCM University of Montpellier  Montpellier France"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Advanced Materials Technologies",
     "doi": "10.1002/admt.71255",
@@ -35294,8 +35345,8 @@
     "issn_l": "",
     "publisher": "Wiley",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7203579618",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2765038284",
     "venue_metrics": {
@@ -59042,9 +59093,28 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Ghulam Destgeer",
+        "openalex_author_id": "https://openalex.org/A5005736661",
+        "orcid": "https://orcid.org/0000-0002-4498-1643",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Technical University of Munich",
+            "ror": "https://ror.org/02kkvpp62",
+            "country_code": "DE",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Control and Manipulation of Microscale Living Objects Center For Translational Cancer Research (TranslaTUM) Munich Institute of Biomedical Engineering (MIBE) Munich Institute of Integrated Materials Energy and Process Engineering (MEP) Department of Electrical Engineering School of Computation Information and Technology (CIT) Technical University of Munich (TUM)  Munich Germany"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Advanced Functional Materials",
     "doi": "10.1002/adfm.77590",
@@ -59064,8 +59134,8 @@
     "issn_l": "",
     "publisher": "Wiley",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4415617155",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S135204980",
     "venue_metrics": {
@@ -73349,9 +73419,29 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Sungjoon Lim",
+        "openalex_author_id": "https://openalex.org/A5006339259",
+        "orcid": "https://orcid.org/0000-0002-5049-9300",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Chung-Ang University",
+            "ror": "https://ror.org/01r024a98",
+            "country_code": "KR",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Intelligent Semiconductor Engineering, Chung-Ang University, 84 Heukseok-ro, Dongjak-gu, Seoul 06974, the Republic of Korea",
+          "School of Electrical and Electronic Engineering, Chung-Ang University, 84 Heukseok-ro, Dongjak-gu, Seoul 06974, the Republic of Korea"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Materials & Design",
     "doi": "10.1016/j.matdes.2026.116805",
@@ -73370,8 +73460,8 @@
     "issn_l": "",
     "publisher": "Elsevier BV",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7203586459",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S8792693",
     "venue_metrics": {
@@ -77225,7 +77315,7 @@
     "publisher": "Springer Science and Business Media LLC",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7203648882",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S4210226500",
     "venue_metrics": {
@@ -95705,7 +95795,7 @@
         "name": "Mondher Nasri",
         "openalex_author_id": "https://openalex.org/A5006405851",
         "orcid": null,
-        "position": "first",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -135265,8 +135355,17 @@
         "orcid": null,
         "position": "first",
         "is_corresponding": true,
-        "institutions": [],
-        "raw_affiliation_strings": []
+        "institutions": [
+          {
+            "name": "World Health Organization - Uganda",
+            "ror": "https://ror.org/02vvkyr96",
+            "country_code": "UG",
+            "type": "government"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "OMESOL Global , Uganda"
+        ]
       }
     ],
     "corresponding_author_available": true,
@@ -176758,8 +176857,8 @@
     "corresponding_authors": [
       {
         "name": "Ning Li",
-        "openalex_author_id": null,
-        "orcid": null,
+        "openalex_author_id": "https://openalex.org/A5089190523",
+        "orcid": "https://orcid.org/0000-0002-7994-9504",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -178205,8 +178304,8 @@
     "corresponding_authors": [
       {
         "name": "Xinyu Wang",
-        "openalex_author_id": "https://openalex.org/A5100352846",
-        "orcid": "https://orcid.org/0009-0001-2925-1466",
+        "openalex_author_id": null,
+        "orcid": null,
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -178264,7 +178363,7 @@
         "name": "Xiaofeng Wang",
         "openalex_author_id": null,
         "orcid": "https://orcid.org/0000-0002-9913-1064",
-        "position": "middle",
+        "position": "last",
         "is_corresponding": true,
         "institutions": [
           {
@@ -186684,7 +186783,7 @@
     "last_updated": "2026-08-18",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-08-18",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 5.821917808219178,
@@ -211588,9 +211687,9 @@
     "corresponding_authors": [
       {
         "name": "Songhao Wang",
-        "openalex_author_id": "https://openalex.org/A5057228007",
+        "openalex_author_id": null,
         "orcid": "https://orcid.org/0000-0003-3643-4698",
-        "position": "first",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -230820,10 +230919,17 @@
             "ror": "https://ror.org/000e0be47",
             "country_code": "US",
             "type": "education"
+          },
+          {
+            "name": "Case Western Reserve University",
+            "ror": "https://ror.org/051fd9666",
+            "country_code": "US",
+            "type": "education"
           }
         ],
         "raw_affiliation_strings": [
-          "Northwestern University, Evanston, IL 60208, USA"
+          "Northwestern University, Evanston, IL 60208, USA",
+          "Case Western Reserve University, Cleveland, OH 44106, USA"
         ]
       },
       {
@@ -231496,9 +231602,9 @@
     ],
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "International Journal of Advanced Manufacturing Technology",
-    "crossref_target_issn": "0268-3768",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
     "issn": [
       "0268-3768",
       "1433-3015"
@@ -240205,10 +240311,10 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Likun Wang",
-        "openalex_author_id": "https://openalex.org/A5100623561",
-        "orcid": "https://orcid.org/0000-0001-5646-9746",
-        "position": "middle",
+        "name": "Zi Wang",
+        "openalex_author_id": "https://openalex.org/A5100338326",
+        "orcid": "https://orcid.org/0000-0001-9081-7185",
+        "position": "first",
         "is_corresponding": true,
         "institutions": [
           {
@@ -243885,8 +243991,17 @@
         "orcid": null,
         "position": "first",
         "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
+        "institutions": [
+          {
+            "name": "Safran (United Kingdom)",
+            "ror": "https://ror.org/00dymss37",
+            "country_code": "GB",
+            "type": "company"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Metrologist , Safran Nacelles , Burnley , United Kingdom"
+        ]
       },
       {
         "name": "Ashwin Sailesh",
@@ -243894,8 +244009,17 @@
         "orcid": null,
         "position": "middle",
         "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
+        "institutions": [
+          {
+            "name": "SRM Institute of Science and Technology",
+            "ror": "https://ror.org/050113w36",
+            "country_code": "IN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering , Sri Sairam Institute of Technology , Chennai , Tamil Nadu 600044 , India"
+        ]
       },
       {
         "name": "S. N. Padhi",
@@ -243903,8 +244027,17 @@
         "orcid": null,
         "position": "middle",
         "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
+        "institutions": [
+          {
+            "name": "Koneru Lakshmaiah Education Foundation",
+            "ror": "https://ror.org/02k949197",
+            "country_code": "IN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering , Koneru Lakshmaiah Education Foundation , Andhra Pradesh 522302 , India"
+        ]
       },
       {
         "name": "Dhivakar Poosapadi",
@@ -243912,8 +244045,17 @@
         "orcid": null,
         "position": "middle",
         "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
+        "institutions": [
+          {
+            "name": "Global Services (Slovakia)",
+            "ror": "https://ror.org/047kbmp67",
+            "country_code": "SK",
+            "type": "company"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Lead Engineer -Mechanical , Quest Global Services , Bangalore , Karnataka 560103 , India"
+        ]
       },
       {
         "name": "M. Venkatasudhahar",
@@ -243921,8 +244063,17 @@
         "orcid": null,
         "position": "middle",
         "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
+        "institutions": [
+          {
+            "name": "Vel Tech Rangarajan Dr. Sagunthala R&D Institute of Science and Technology",
+            "ror": "https://ror.org/05bc5bx80",
+            "country_code": "IN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering , Vel Tech Rangarajan Dr.Sagunthala R&D Institute of Science and Technology , Chennai , Tamil Nadu 600062 , India"
+        ]
       },
       {
         "name": "Praveen Vundrajavarapu",
@@ -243930,8 +244081,17 @@
         "orcid": null,
         "position": "middle",
         "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
+        "institutions": [
+          {
+            "name": "Hindu College of Pharmacy",
+            "ror": "https://ror.org/04sadrh19",
+            "country_code": "IN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering , S.R.K.R Engineering College , Bhimavaram , Andhra Pradesh 534204 , India"
+        ]
       },
       {
         "name": "T. Mayavan",
@@ -243939,8 +244099,17 @@
         "orcid": null,
         "position": "middle",
         "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
+        "institutions": [
+          {
+            "name": "CPCL Polytechnic College",
+            "ror": "https://ror.org/05gebng48",
+            "country_code": "IN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering , Panimalar Engineering College , Chennai , Tamil Nadu 600123 , India"
+        ]
       },
       {
         "name": "Nagaraj Ashok",
@@ -243948,8 +244117,17 @@
         "orcid": null,
         "position": "middle",
         "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
+        "institutions": [
+          {
+            "name": "Jimma University",
+            "ror": "https://ror.org/05eer8g02",
+            "country_code": "ET",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Faculty of Mechanical Engineering , Jimma Institute of Technology , Jimma University , Jimma , Ethiopia -378 "
+        ]
       },
       {
         "name": "T. S. Senthil",
@@ -243957,8 +244135,17 @@
         "orcid": null,
         "position": "last",
         "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
+        "institutions": [
+          {
+            "name": "Noorul Islam University",
+            "ror": "https://ror.org/01y2gf490",
+            "country_code": "IN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Marine Engineering , Noorul Islam Centre for Higher Education , Kanyakumari -629180 "
+        ]
       }
     ],
     "corresponding_authors": [],
@@ -254663,10 +254850,10 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Ratnesh Kumar Raj Singh",
-        "openalex_author_id": "https://openalex.org/A5066015004",
-        "orcid": "https://orcid.org/0000-0001-9377-6753",
-        "position": "middle",
+        "name": "Manish Pratap Singh",
+        "openalex_author_id": "https://openalex.org/A5021211339",
+        "orcid": "https://orcid.org/0000-0002-9530-2348",
+        "position": "first",
         "is_corresponding": true,
         "institutions": [
           {
@@ -273479,7 +273666,7 @@
         "name": "Hao Zhang",
         "openalex_author_id": null,
         "orcid": null,
-        "position": "middle",
+        "position": "last",
         "is_corresponding": true,
         "institutions": [
           {
