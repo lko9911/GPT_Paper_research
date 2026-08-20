@@ -1,4 +1,238 @@
 {
+  "10.1097/mao.0000000000004546": {
+    "author_details": [
+      {
+        "name": "Stéphanie Rançon",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Juliette Prebot",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "PRIM 3D–3D Design and Printing Platform of Assistance Publique–Hôpitaux de Paris"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "PRIM 3D–3D Design and Printing Platform of Assistance Publique–Hôpitaux de Paris"
+        ]
+      },
+      {
+        "name": "Françoise Denoyelle",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Roman Hossein Khonsari",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "François Simon",
+        "orcid": "https://orcid.org/0000-0003-0082-538X",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "1537-4505",
+      "1531-7129"
+    ],
+    "issn_l": "",
+    "publisher": "Ovid Technologies (Wolters Kluwer Health)",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4411016158",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S19176856",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S19176856",
+      "issn_l": "1531-7129",
+      "issn": [
+        "1531-7129",
+        "1537-4505"
+      ],
+      "type": "journal",
+      "host_organization_name": "Lippincott Williams & Wilkins",
+      "works_count": 8730,
+      "cited_by_count": 199358,
+      "two_year_mean_citedness": 1.3927392739273927,
+      "h_index": 141,
+      "i10_index": 4512,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 1.3927392739273927,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 4",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The study focuses on a 3D-printed multimaterial simulator for tympanoplasty in endoscopic ear surgery.\n2. Problem - Traditional training methods for total endoscopic ear surgery have limitations that this simulator aims to address.\n3. Method - The simulator was developed using Polyjet technology, with validation assessed through performance evaluations by residents and experts.\n4. Key Result - The simulator achieved high validity scores and was deemed beneficial for surgical training and competency evaluation.\n5. Takeaway - This innovative simulator represents a significant advancement in otology training, particularly for transcanal procedures.",
+    "relevance_note_en": "The summary captures the core findings and implications of the study without directly paraphrasing the abstract.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-08-20",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1097/mao.0000000000004546"
+  },
+  "10.1038/s41467-024-53513-w": {
+    "author_details": [
+      {
+        "name": "Zhen Wang",
+        "orcid": "https://orcid.org/0000-0001-7279-4055",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Ryan Hensleigh",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Zhenpeng Xu",
+        "orcid": "https://orcid.org/0000-0002-2380-4744",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Junbo Wang",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "James JuYoung Park",
+        "orcid": "https://orcid.org/0009-0004-8537-3064",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Anastasios Papathanasopoulos",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Yahya Rahmat-Samii",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Xiaoyu (Rayne) Zheng",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Nature Communications",
+    "crossref_target_issn": "2041-1723",
+    "issn": [
+      "2041-1723"
+    ],
+    "issn_l": "",
+    "publisher": "Springer Science and Business Media LLC",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4406152298",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S64187185",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S64187185",
+      "issn_l": "2041-1723",
+      "issn": [
+        "2041-1723"
+      ],
+      "type": "journal",
+      "host_organization_name": "Nature Portfolio",
+      "works_count": 90441,
+      "cited_by_count": 7551319,
+      "two_year_mean_citedness": 16.130086313193587,
+      "h_index": 743,
+      "i10_index": 68559,
+      "is_core": true,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
+    "journal_quality": {
+      "label": "High-impact general journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 16.130086313193587,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - The study focuses on a novel additive manufacturing technique for lightweight antennas.\n2. Problem - Traditional manufacturing methods struggle with the complexity and integration of various materials in antenna design.\n3. Method - A charge programmed multi-material additive manufacturing platform is introduced to enable intricate antenna structures.\n4. Key Result - The new method achieved a 94% reduction in mass for a transmitarray antenna compared to conventional designs.\n5. Takeaway - This innovative approach facilitates rapid production and optimization of advanced antenna designs, essential for future communication technologies.",
+    "relevance_note_en": "The summary captures the essence of the study's contributions and findings related to antenna manufacturing.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-08-20",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1038/s41467-024-53513-w"
+  },
   "10.1080/17452759.2025.2534466": {
     "author_details": [
       {
@@ -33228,239 +33462,5 @@
     "last_seen_in_crossref_run": "2026-08-20",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.addma.2025.104665"
-  },
-  "10.1080/17452759.2025.2590577": {
-    "author_details": [
-      {
-        "name": "Zhiqiang Meng",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Nanyang Technological University"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Nanyang Technological University"
-        ]
-      },
-      {
-        "name": "Boyuan Hou",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Nanyang Technological University"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Nanyang Technological University"
-        ]
-      },
-      {
-        "name": "Peidong Lei",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Tsinghua University"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Tsinghua University"
-        ]
-      },
-      {
-        "name": "Yang Liu",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Tsinghua University"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Tsinghua University"
-        ]
-      },
-      {
-        "name": "Changfang Zhao",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Tsinghua University"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Tsinghua University"
-        ]
-      },
-      {
-        "name": "Yifan Wang",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Nanyang Technological University"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Nanyang Technological University"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "Virtual and Physical Prototyping",
-    "crossref_target_issn": "1745-2759",
-    "issn": [
-      "1745-2759",
-      "1745-2767"
-    ],
-    "issn_l": "",
-    "publisher": "Informa UK Limited",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W7155037263",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S152936027",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S152936027",
-      "issn_l": "1745-2759",
-      "issn": [
-        "1745-2759",
-        "1745-2767"
-      ],
-      "type": "journal",
-      "host_organization_name": "Taylor & Francis",
-      "works_count": 1288,
-      "cited_by_count": 39605,
-      "two_year_mean_citedness": 10.10738255033557,
-      "h_index": 92,
-      "i10_index": 718,
-      "is_core": true,
-      "is_oa": true,
-      "is_in_doaj": true
-    },
-    "journal_quality": {
-      "label": "Core manufacturing journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 10.10738255033557,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 1",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - The paper presents a novel lace 3D printing technique for creating deployable mechanical metamaterials.\n2. Problem - Traditional FDM 3D printing methods are limited in their ability to efficiently produce complex, deployable structures.\n3. Method - The authors utilize a continuous zig-zag filament path with adjustable geometries to fabricate metamaterials that can transition from a compact form to a stable cellular structure under tension.\n4. Key Result - The study demonstrates that varying printing parameters and geometries significantly influence the quality, deployment behavior, and mechanical properties of the metamaterials.\n5. Takeaway - The developed lace 3D printing method shows promise for applications in aerospace and biomedical fields due to its ability to create programmable and mechanically robust structures.",
-    "relevance_note_en": "The summary captures the core contributions and findings of the paper while avoiding direct language from the abstract.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-08-20",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1080/17452759.2025.2590577"
-  },
-  "10.1007/s40964-025-00951-7": {
-    "author_details": [
-      {
-        "name": "Delan Winston Dsilva",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Kevin Amith Mathias",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Shivashankar Hiremath",
-        "orcid": "https://orcid.org/0000-0001-7613-9832",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "Progress in Additive Manufacturing",
-    "crossref_target_issn": "2363-9512",
-    "issn": [
-      "2363-9512",
-      "2363-9520"
-    ],
-    "issn_l": "",
-    "publisher": "Springer Science and Business Media LLC",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4407064274",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S4210206835",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S4210206835",
-      "issn_l": "2363-9512",
-      "issn": [
-        "2363-9512",
-        "2363-9520"
-      ],
-      "type": "journal",
-      "host_organization_name": "Springer Science+Business Media",
-      "works_count": 1809,
-      "cited_by_count": 21422,
-      "two_year_mean_citedness": 4.039043824701195,
-      "h_index": 63,
-      "i10_index": 494,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Core manufacturing journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 4.039043824701195,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 2",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - The study focuses on the design and performance of uni- and bi-directional pneumatic grippers.\n2. Problem - It addresses the need for enhanced versatility and multi-directional gripping capabilities in material handling.\n3. Method - The research employs rapid prototyping, finite element analysis, and experimental testing to evaluate gripper functionality.\n4. Key Result - Optimizations led to significant improvements in deformation and flexibility, with the bi-directional gripper demonstrating effective performance.\n5. Takeaway - The findings highlight the potential of advanced pneumatic grippers to enhance adaptability and efficiency in industrial applications.",
-    "relevance_note_en": "The summary captures the core aspects of the study, including its focus, methods, and implications for industry.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-08-20",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1007/s40964-025-00951-7"
   }
 }
