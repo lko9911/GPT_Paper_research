@@ -1,4 +1,332 @@
 {
+  "10.3390/hardware3010002": {
+    "author_details": [
+      {
+        "name": "Jonathan E. Thompson",
+        "orcid": "https://orcid.org/0000-0003-1550-2823",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Chemistry and Biochemistry, School of Veterinary Medicine, Texas Tech University, Amarillo, TX 79106, USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Chemistry and Biochemistry, School of Veterinary Medicine, Texas Tech University, Amarillo, TX 79106, USA"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2813-6640"
+    ],
+    "issn_l": "",
+    "publisher": "MDPI AG",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4408155949",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S4387288406",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4387288406",
+      "issn_l": "2813-6640",
+      "issn": [
+        "2813-6640"
+      ],
+      "type": "journal",
+      "host_organization_name": "Multidisciplinary Digital Publishing Institute",
+      "works_count": 50,
+      "cited_by_count": 107,
+      "two_year_mean_citedness": 2.1777777777777776,
+      "h_index": 5,
+      "i10_index": 2,
+      "is_core": true,
+      "is_oa": true,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 2.1777777777777776,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 3",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The paper discusses the advancements in additive manufacturing, particularly volumetric additive manufacturing.\n2. Problem - It addresses the limitations of traditional manufacturing methods and the challenges in scalability and material diversity.\n3. Method - The author reviews recent innovations and applications in AM, emphasizing interdisciplinary collaboration for future developments.\n4. Key Result - Volumetric additive manufacturing enables rapid, high-resolution fabrication and the integration of multiple functionalities in devices.\n5. Takeaway - The future of AM is promising, but overcoming existing challenges will be crucial for its widespread adoption across various sectors.",
+    "relevance_note_en": "The summary captures the essence of the advancements and challenges in additive manufacturing as discussed in the paper.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-08-21",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.3390/hardware3010002"
+  },
+  "10.1002/adma.202504765": {
+    "author_details": [
+      {
+        "name": "Lewis S. Jones",
+        "orcid": "https://orcid.org/0000-0003-0381-2285",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Soft Robotics Laboratory ETH Zurich  Tannenstrasse 3 Zurich 8092 Switzerland"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Soft Robotics Laboratory ETH Zurich  Tannenstrasse 3 Zurich 8092 Switzerland"
+        ]
+      },
+      {
+        "name": "Hector Rodriguez Cetina Biefer",
+        "orcid": "https://orcid.org/0000-0002-5855-8993",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Cardiac Surgery University Hospital Zurich  Rämistrasse 100 Zurich 8091 Switzerland"
+          },
+          {
+            "name": "Department of Cardiac Surgery City Hospital Zurich—Triemli Center for Experimental and Translational Cardiology (CTEC) University of Zurich  Zurich 8952 Switzerland"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Cardiac Surgery University Hospital Zurich  Rämistrasse 100 Zurich 8091 Switzerland",
+          "Department of Cardiac Surgery City Hospital Zurich—Triemli Center for Experimental and Translational Cardiology (CTEC) University of Zurich  Zurich 8952 Switzerland"
+        ]
+      },
+      {
+        "name": "Manuel Mekkattu",
+        "orcid": "https://orcid.org/0009-0007-1774-9578",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Soft Robotics Laboratory ETH Zurich  Tannenstrasse 3 Zurich 8092 Switzerland"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Soft Robotics Laboratory ETH Zurich  Tannenstrasse 3 Zurich 8092 Switzerland"
+        ]
+      },
+      {
+        "name": "Quinten Thijssen",
+        "orcid": "https://orcid.org/0000-0003-3428-7946",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Polymer Chemistry and Biomaterials Group Centre of Macromolecular Chemistry Department of Organic and Macromolecular Chemistry Ghent University  Krijgslaan 281 S4 Ghent 9000 Belgium"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Polymer Chemistry and Biomaterials Group Centre of Macromolecular Chemistry Department of Organic and Macromolecular Chemistry Ghent University  Krijgslaan 281 S4 Ghent 9000 Belgium"
+        ]
+      },
+      {
+        "name": "Alessio Amicone",
+        "orcid": "https://orcid.org/0009-0009-8781-005X",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Institute for Biomechanics ETH Zurich  Gloriastrasse 37–39 Zurich 8092 Switzerland"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Institute for Biomechanics ETH Zurich  Gloriastrasse 37–39 Zurich 8092 Switzerland"
+        ]
+      },
+      {
+        "name": "Anna Bock",
+        "orcid": "https://orcid.org/0009-0004-8840-8904",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Soft Robotics Laboratory ETH Zurich  Tannenstrasse 3 Zurich 8092 Switzerland"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Soft Robotics Laboratory ETH Zurich  Tannenstrasse 3 Zurich 8092 Switzerland"
+        ]
+      },
+      {
+        "name": "Miriam Weisskopf",
+        "orcid": "https://orcid.org/0000-0001-6012-3051",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Center for Preclinical Development University Hospital Zurich University of Zurich  Strickhofstrasse 40a Zürich 8057 Switzerland"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Center for Preclinical Development University Hospital Zurich University of Zurich  Strickhofstrasse 40a Zürich 8057 Switzerland"
+        ]
+      },
+      {
+        "name": "Dennis Zorndt",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Institute for Regenerative Medicine (IREM) University of Zurich  Schlieren 8952 Switzerland"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Institute for Regenerative Medicine (IREM) University of Zurich  Schlieren 8952 Switzerland"
+        ]
+      },
+      {
+        "name": "Debora Meier",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Institute for Regenerative Medicine (IREM) University of Zurich  Schlieren 8952 Switzerland"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Institute for Regenerative Medicine (IREM) University of Zurich  Schlieren 8952 Switzerland"
+        ]
+      },
+      {
+        "name": "Li Zheng",
+        "orcid": "https://orcid.org/0000-0002-2488-3237",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Mechanics &amp; Materials Lab Department of Mechanical and Process Engineering ETH Zürich  Leonhardstrasse 21 Zürich 8092 Switzerland"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Mechanics &amp; Materials Lab Department of Mechanical and Process Engineering ETH Zürich  Leonhardstrasse 21 Zürich 8092 Switzerland"
+        ]
+      },
+      {
+        "name": "Melanie Generali",
+        "orcid": "https://orcid.org/0000-0001-8396-3256",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Institute for Regenerative Medicine (IREM) University of Zurich  Schlieren 8952 Switzerland"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Institute for Regenerative Medicine (IREM) University of Zurich  Schlieren 8952 Switzerland"
+        ]
+      },
+      {
+        "name": "Robert K. Katzschmann",
+        "orcid": "https://orcid.org/0000-0001-7143-7259",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Soft Robotics Laboratory ETH Zurich  Tannenstrasse 3 Zurich 8092 Switzerland"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Soft Robotics Laboratory ETH Zurich  Tannenstrasse 3 Zurich 8092 Switzerland"
+        ]
+      },
+      {
+        "name": "Omer Dzemali",
+        "orcid": "https://orcid.org/0000-0001-7910-5152",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Cardiac Surgery University Hospital Zurich  Rämistrasse 100 Zurich 8091 Switzerland"
+          },
+          {
+            "name": "Department of Cardiac Surgery City Hospital Zurich—Triemli Center for Experimental and Translational Cardiology (CTEC) University of Zurich  Zurich 8952 Switzerland"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Cardiac Surgery University Hospital Zurich  Rämistrasse 100 Zurich 8091 Switzerland",
+          "Department of Cardiac Surgery City Hospital Zurich—Triemli Center for Experimental and Translational Cardiology (CTEC) University of Zurich  Zurich 8952 Switzerland"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Advanced Materials",
+    "crossref_target_issn": "0935-9648",
+    "issn": [
+      "0935-9648",
+      "1521-4095"
+    ],
+    "issn_l": "",
+    "publisher": "Wiley",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4412954892",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S99352657",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S99352657",
+      "issn_l": "0935-9648",
+      "issn": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "type": "journal",
+      "host_organization_name": null,
+      "works_count": 44789,
+      "cited_by_count": 4803689,
+      "two_year_mean_citedness": 21.19633376740459,
+      "h_index": 743,
+      "i10_index": 31001,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "High-impact general journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 21.19633376740459,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - The study focuses on developing reinforced cardiac tissue patches for myocardial repair.\n2. Problem - Current bovine pericardial patches lack degradation and integration with heart tissue, limiting their effectiveness.\n3. Method - The researchers created a multimaterial patch using volumetric 3D printing and melt-electrowriting techniques.\n4. Key Result - The new cardiac patch demonstrated the ability to withstand blood pressure and prevent bleeding in an animal trial.\n5. Takeaway - This innovative approach combines mechanical reinforcement with biological functionality, paving the way for improved cardiac repair solutions.",
+    "relevance_note_en": "The summary captures the essence of the study's objectives, methods, and findings.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-08-21",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1002/adma.202504765"
+  },
   "10.1097/mao.0000000000004546": {
     "author_details": [
       {
@@ -33131,336 +33459,5 @@
     "last_seen_in_crossref_run": "2026-08-21",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.37188/lam.2025.063"
-  },
-  "10.1126/sciadv.adr9038": {
-    "author_details": [
-      {
-        "name": "Rui Ding",
-        "orcid": "https://orcid.org/0009-0004-5909-8759",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Pritzker School of Molecular Engineering, University of Chicago, 5640 S Ellis Ave., Chicago, IL 60637, USA."
-          },
-          {
-            "name": "Chemical Sciences and Engineering Division, Physical Sciences and Engineering Directorate, Argonne National Laboratory, 9700 S Cass Ave., Lemont, IL 60439, USA."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Pritzker School of Molecular Engineering, University of Chicago, 5640 S Ellis Ave., Chicago, IL 60637, USA.",
-          "Chemical Sciences and Engineering Division, Physical Sciences and Engineering Directorate, Argonne National Laboratory, 9700 S Cass Ave., Lemont, IL 60439, USA."
-        ]
-      },
-      {
-        "name": "Jianguo Liu",
-        "orcid": "https://orcid.org/0000-0002-9229-4936",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Institute of Energy Power Innovation, North China Electric Power University, 2 Beinong Road, Beijing 102206, P. R. China."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Institute of Energy Power Innovation, North China Electric Power University, 2 Beinong Road, Beijing 102206, P. R. China."
-        ]
-      },
-      {
-        "name": "Kang Hua",
-        "orcid": "https://orcid.org/0009-0003-3669-3187",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Institute of Energy Power Innovation, North China Electric Power University, 2 Beinong Road, Beijing 102206, P. R. China."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Institute of Energy Power Innovation, North China Electric Power University, 2 Beinong Road, Beijing 102206, P. R. China."
-        ]
-      },
-      {
-        "name": "Xuebin Wang",
-        "orcid": "https://orcid.org/0000-0002-7894-1922",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "National Laboratory of Solid State Microstructures, College of Engineering and Applied Sciences, Nanjing University, 22 Hankou Road, Nanjing 210093, P. R. China."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "National Laboratory of Solid State Microstructures, College of Engineering and Applied Sciences, Nanjing University, 22 Hankou Road, Nanjing 210093, P. R. China."
-        ]
-      },
-      {
-        "name": "Xiaoben Zhang",
-        "orcid": "https://orcid.org/0000-0001-5033-2642",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Pritzker School of Molecular Engineering, University of Chicago, 5640 S Ellis Ave., Chicago, IL 60637, USA."
-          },
-          {
-            "name": "Chemical Sciences and Engineering Division, Physical Sciences and Engineering Directorate, Argonne National Laboratory, 9700 S Cass Ave., Lemont, IL 60439, USA."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Pritzker School of Molecular Engineering, University of Chicago, 5640 S Ellis Ave., Chicago, IL 60637, USA.",
-          "Chemical Sciences and Engineering Division, Physical Sciences and Engineering Directorate, Argonne National Laboratory, 9700 S Cass Ave., Lemont, IL 60439, USA."
-        ]
-      },
-      {
-        "name": "Minhua Shao",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Chemical and Biological Engineering, The Hong Kong University of Science and Technology, Clear Water Bay, Kowloon, Hong Kong 999077, China."
-          },
-          {
-            "name": "Energy Institute, The Hong Kong University of Science and Technology, Clear Water Bay, Kowloon, Hong Kong 999077, China."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Chemical and Biological Engineering, The Hong Kong University of Science and Technology, Clear Water Bay, Kowloon, Hong Kong 999077, China.",
-          "Energy Institute, The Hong Kong University of Science and Technology, Clear Water Bay, Kowloon, Hong Kong 999077, China."
-        ]
-      },
-      {
-        "name": "Yuxin Chen",
-        "orcid": "https://orcid.org/0000-0003-2133-140X",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Computer Science, University of Chicago, 5730 S Ellis Ave., Chicago, IL 60637, USA."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Computer Science, University of Chicago, 5730 S Ellis Ave., Chicago, IL 60637, USA."
-        ]
-      },
-      {
-        "name": "Junhong Chen",
-        "orcid": "https://orcid.org/0000-0002-2615-1347",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Pritzker School of Molecular Engineering, University of Chicago, 5640 S Ellis Ave., Chicago, IL 60637, USA."
-          },
-          {
-            "name": "Chemical Sciences and Engineering Division, Physical Sciences and Engineering Directorate, Argonne National Laboratory, 9700 S Cass Ave., Lemont, IL 60439, USA."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Pritzker School of Molecular Engineering, University of Chicago, 5640 S Ellis Ave., Chicago, IL 60637, USA.",
-          "Chemical Sciences and Engineering Division, Physical Sciences and Engineering Directorate, Argonne National Laboratory, 9700 S Cass Ave., Lemont, IL 60439, USA."
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "Science Advances",
-    "crossref_target_issn": "2375-2548",
-    "issn": [
-      "2375-2548"
-    ],
-    "issn_l": "",
-    "publisher": "American Association for the Advancement of Science (AAAS)",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4409157280",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S2737427234",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S2737427234",
-      "issn_l": "2375-2548",
-      "issn": [
-        "2375-2548"
-      ],
-      "type": "journal",
-      "host_organization_name": "American Association for the Advancement of Science",
-      "works_count": 19454,
-      "cited_by_count": 1254678,
-      "two_year_mean_citedness": 12.005587372538065,
-      "h_index": 374,
-      "i10_index": 14182,
-      "is_core": true,
-      "is_oa": true,
-      "is_in_doaj": true
-    },
-    "journal_quality": {
-      "label": "High-impact general journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 12.005587372538065,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 1",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - The study focuses on the development of advanced catalysts for the oxygen evolution reaction in acidic conditions.\n2. Problem - Efficient discovery and optimization of complex multimetallic catalysts for sustainable hydrogen production is a significant challenge.\n3. Method - A multistage machine learning approach is employed, integrating data mining, active learning, and domain adaptation to streamline the materials discovery process.\n4. Key Result - The research led to the identification of a promising Ru-Mn-Ca-Pr oxide catalyst, enhancing both experimental and theoretical insights.\n5. Takeaway - This innovative, data-driven methodology signifies a major advancement in the field of electrocatalyst research.",
-    "relevance_note_en": "The summary captures the essence of the study's focus on catalyst discovery using advanced methodologies.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-08-21",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1126/sciadv.adr9038"
-  },
-  "10.1016/j.addma.2025.104665": {
-    "author_details": [
-      {
-        "name": "Changshun Wang",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Qingchun Yang",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Huaying You",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Yumeng Hu",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Chunze Yan",
-        "orcid": "https://orcid.org/0000-0001-9052-9175",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Annan Chen",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Shixiang Zhou",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Guizhou Liu",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Siqi Wu",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Yusheng Shi",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "Additive Manufacturing",
-    "crossref_target_issn": "2214-8604",
-    "issn": [
-      "2214-8604"
-    ],
-    "issn_l": "",
-    "publisher": "Elsevier BV",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4406998510",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S2764842179",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S2764842179",
-      "issn_l": "2214-7810",
-      "issn": [
-        "2214-7810",
-        "2214-8604"
-      ],
-      "type": "journal",
-      "host_organization_name": "Elsevier BV",
-      "works_count": 5106,
-      "cited_by_count": 246110,
-      "two_year_mean_citedness": 7.721680420105026,
-      "h_index": 193,
-      "i10_index": 3661,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Core manufacturing journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 7.721680420105026,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 1",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - The study focuses on the development of a 3D all-fiber-structured SiC metamaterial inspired by compound eyes for enhanced electromagnetic absorption.\n2. Problem - There is a need for materials that can achieve ultra-broadband electromagnetic absorption for various applications.\n3. Method - The researchers employed laser powder bed fusion printing techniques to fabricate the metamaterial.\n4. Key Result - The resulting SiC metamaterial demonstrated effective impedance matching and broad absorption capabilities across a wide frequency range.\n5. Takeaway - This work highlights the potential of additive manufacturing in creating advanced materials with tailored electromagnetic properties.",
-    "relevance_note_en": "The summary captures the essence of the research, focusing on the innovative approach and its implications.",
-    "abstract_used_for_summary": false,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-08-21",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1016/j.addma.2025.104665"
   }
 }
