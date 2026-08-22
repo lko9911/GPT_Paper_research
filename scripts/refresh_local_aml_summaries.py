@@ -29,15 +29,16 @@ def main() -> None:
 
     recommendations = _load_json(AML_RECOMMENDATIONS_PATH, [])
     max_items = _env_int("MAX_LOCAL_AML_SUMMARIES", 0)
+    mode = os.getenv("LOCAL_AML_REFRESH_MODE", os.getenv("REFRESH_MODE", "metadata")).strip().lower()
     dry_run = _env_bool("DRY_RUN", False)
     sleep_seconds = float(os.getenv("LOCAL_REFRESH_SLEEP_SECONDS", os.getenv("API_SLEEP_SECONDS", "0.5")))
 
-    candidates = [paper for paper in recommendations if not _has_ai_summary(paper)]
+    candidates = [paper for paper in recommendations if _should_refresh(paper, mode)]
     if max_items > 0:
         candidates = candidates[:max_items]
 
     print(
-        f"Local AML summary refresh model={model}, candidates={len(candidates)}, dry_run={dry_run}"
+        f"Local AML summary refresh model={model}, mode={mode}, candidates={len(candidates)}, dry_run={dry_run}"
     )
 
     refreshed = 0
@@ -89,6 +90,17 @@ def _has_ai_summary(paper: dict[str, Any]) -> bool:
     return provider in {"openai", "local"} or paper.get("openai_summary_applied") is True or paper.get("local_summary_applied") is True
 
 
+def _should_refresh(paper: dict[str, Any], mode: str) -> bool:
+    provider = str(paper.get("summary_provider") or "").strip().lower()
+    if mode in {"local", "local_rewrite", "qwen_rewrite"}:
+        return provider == "local" or paper.get("local_summary_applied") is True
+    if mode in {"all_non_openai", "non_openai"}:
+        return provider != "openai" and paper.get("openai_summary_applied") is not True
+    if mode == "missing":
+        return not str(paper.get("ai_summary_en") or "").strip()
+    return not _has_ai_summary(paper)
+
+
 def _record_for_summary(paper: dict[str, Any]) -> dict[str, Any]:
     tags = _as_list(paper.get("tags")) or _as_list(paper.get("matched_topics"))
     categories = _as_list(paper.get("categories"))
@@ -102,6 +114,8 @@ def _record_for_summary(paper: dict[str, Any]) -> dict[str, Any]:
         "source": paper.get("source", []),
         "categories": categories,
         "tags": tags,
+        "existing_q5_summary": paper.get("ai_summary_en", ""),
+        "existing_relevance_note_en": paper.get("relevance_note_en", ""),
     }
 
 

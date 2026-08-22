@@ -100,6 +100,18 @@ git commit -m "Refresh local AI summaries"
 git push
 ```
 
+기존 Ollama 요약의 문장 품질만 다시 다듬고 싶으면 Q5 기반 재작성 모드를 쓴다.
+
+```powershell
+$env:LOCAL_LLM_MODEL = "qwen2.5:7b"
+$env:MAX_LOCAL_SUMMARIES = "0"
+$env:REFRESH_MODE = "local_rewrite"
+$env:LOCAL_REQUIRE_ABSTRACT = "false"
+Remove-Item Env:DRY_RUN -ErrorAction SilentlyContinue
+& "C:\Users\user\anaconda3\python.exe" scripts\refresh_local_summaries.py
+& "C:\Users\user\anaconda3\python.exe" scripts\build_split_data.py
+```
+
 ## 4. AML 추천 외부/내부 탐색
 
 AML 추천 시스템을 로컬 임베딩으로 갱신한다.
@@ -163,6 +175,17 @@ Remove-Item Env:DRY_RUN -ErrorAction SilentlyContinue
 git add public/data/aml_recommended_papers.json
 git commit -m "Refresh AML local summaries"
 git push
+```
+
+기존 Ollama AML 요약의 품질만 다시 다듬을 때:
+
+```powershell
+$env:LOCAL_LLM_MODEL = "qwen2.5:7b"
+$env:LOCAL_REQUIRE_ABSTRACT = "false"
+$env:LOCAL_AML_REFRESH_MODE = "local_rewrite"
+$env:MAX_LOCAL_AML_SUMMARIES = "0"
+Remove-Item Env:DRY_RUN -ErrorAction SilentlyContinue
+& "C:\Users\user\anaconda3\python.exe" scripts\refresh_local_aml_summaries.py
 ```
 
 ## 6. 전체 로컬 갱신 순서

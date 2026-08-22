@@ -59,6 +59,7 @@ Then inspect the diff before committing.
 - `REFRESH_MODE=missing`: refresh records without a stored summary.
 - `REFRESH_MODE=non_qa`: refresh records that are not in the five-question format.
 - `REFRESH_MODE=all`: refresh all non-OpenAI records.
+- `REFRESH_MODE=local_rewrite`: rewrite existing Ollama summaries using the stored Q5 summary as the factual outline.
 
 By default, OpenAI summaries are not overwritten. To overwrite them intentionally:
 
@@ -136,3 +137,14 @@ Remove-Item Env:DRY_RUN -ErrorAction SilentlyContinue
 ```
 
 Use `MAX_LOCAL_AML_SUMMARIES` with a positive number for a small test batch. `0` means refresh every AML recommendation that is still metadata-only.
+
+To improve existing Ollama AML summaries without touching OpenAI summaries:
+
+```powershell
+$env:LOCAL_LLM_MODEL = "qwen2.5:7b"
+$env:LOCAL_REQUIRE_ABSTRACT = "false"
+$env:LOCAL_AML_REFRESH_MODE = "local_rewrite"
+$env:MAX_LOCAL_AML_SUMMARIES = "0"
+Remove-Item Env:DRY_RUN -ErrorAction SilentlyContinue
+& "C:\Users\user\anaconda3\python.exe" scripts\refresh_local_aml_summaries.py
+```

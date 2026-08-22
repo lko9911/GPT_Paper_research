@@ -60,7 +60,7 @@
     "id": "10.1021/acsami.6c13885",
     "is_core_venue": false,
     "is_weekly_new": false,
-    "last_updated": "2026-08-21",
+    "last_updated": "2026-08-22",
     "local_summary_applied": true,
     "openai_summary_applied": false,
     "openalex_venue_rank": "Rank 1",
@@ -74,10 +74,11 @@
       "Crossref"
     ],
     "summary_model": "qwen2.5:7b",
-    "summary_provider": "fallback",
+    "summary_provider": "local",
     "tags": [
       "Machine learning",
-      "FDM/Material extrusion"
+      "FDM/Material extrusion",
+      "Additive manufacturing"
     ],
     "title": "Curvature-Programmable Sheet-to-3D Morphing of Single-Material Architected Laminates: A Functionally Graded Framework for Foaming-Induced Bending",
     "url": "https://doi.org/10.1021/acsami.6c13885",
@@ -261,7 +262,7 @@
     "id": "10.1177/23297662261466733",
     "is_core_venue": true,
     "is_weekly_new": false,
-    "last_updated": "2026-08-21",
+    "last_updated": "2026-08-22",
     "local_summary_applied": true,
     "openai_summary_applied": false,
     "openalex_venue_rank": "Rank 3",
@@ -275,7 +276,7 @@
       "Crossref"
     ],
     "summary_model": "qwen2.5:7b",
-    "summary_provider": "fallback",
+    "summary_provider": "local",
     "tags": [
       "FGAM",
       "Metamaterials"
@@ -2582,7 +2583,7 @@
     "id": "10.1038/s44334-026-00102-y",
     "is_core_venue": false,
     "is_weekly_new": false,
-    "last_updated": "2026-08-21",
+    "last_updated": "2026-08-22",
     "local_summary_applied": true,
     "openai_summary_applied": false,
     "openalex_venue_rank": "Rank 2",
@@ -2596,7 +2597,7 @@
       "Crossref"
     ],
     "summary_model": "qwen2.5:7b",
-    "summary_provider": "fallback",
+    "summary_provider": "local",
     "tags": [
       "Digital Twins"
     ],
@@ -2687,7 +2688,7 @@
     "id": "10.1007/s00170-026-18661-x",
     "is_core_venue": false,
     "is_weekly_new": false,
-    "last_updated": "2026-08-21",
+    "last_updated": "2026-08-22",
     "local_summary_applied": true,
     "openai_summary_applied": false,
     "openalex_venue_rank": "Rank 2",
@@ -2701,7 +2702,7 @@
       "Crossref"
     ],
     "summary_model": "qwen2.5:7b",
-    "summary_provider": "fallback",
+    "summary_provider": "local",
     "tags": [
       "Digital Twins"
     ],
@@ -3279,7 +3280,7 @@
     "id": "10.1007/s40964-026-01847-w",
     "is_core_venue": true,
     "is_weekly_new": false,
-    "last_updated": "2026-08-21",
+    "last_updated": "2026-08-22",
     "local_summary_applied": true,
     "openai_summary_applied": false,
     "openalex_venue_rank": "Rank 2",
@@ -3293,7 +3294,7 @@
       "Crossref"
     ],
     "summary_model": "qwen2.5:7b",
-    "summary_provider": "fallback",
+    "summary_provider": "local",
     "tags": [
       "DLP",
       "SLA",
@@ -3669,7 +3670,7 @@
     "id": "10.1007/s10845-026-02927-y",
     "is_core_venue": true,
     "is_weekly_new": false,
-    "last_updated": "2026-08-21",
+    "last_updated": "2026-08-22",
     "local_summary_applied": true,
     "openai_summary_applied": false,
     "openalex_venue_rank": "Rank 1",
@@ -3683,7 +3684,7 @@
       "Crossref"
     ],
     "summary_model": "qwen2.5:7b",
-    "summary_provider": "fallback",
+    "summary_provider": "local",
     "tags": [
       "Digital Twins"
     ],
@@ -4984,7 +4985,7 @@
     "id": "10.1016/j.jmapro.2026.07.064",
     "is_core_venue": true,
     "is_weekly_new": false,
-    "last_updated": "2026-08-21",
+    "last_updated": "2026-08-22",
     "local_summary_applied": true,
     "openai_summary_applied": false,
     "openalex_venue_rank": "Rank 1",
@@ -4998,9 +4999,10 @@
       "Crossref"
     ],
     "summary_model": "qwen2.5:7b",
-    "summary_provider": "fallback",
+    "summary_provider": "local",
     "tags": [
-      "Digital Twins"
+      "Digital Twins",
+      "Additive manufacturing"
     ],
     "title": "Execution-aware digital twin validation for robotic cold spray manufacturing",
     "url": "https://doi.org/10.1016/j.jmapro.2026.07.064",
@@ -6377,7 +6379,7 @@
     "id": "10.1007/s00170-026-18775-2",
     "is_core_venue": false,
     "is_weekly_new": false,
-    "last_updated": "2026-08-21",
+    "last_updated": "2026-08-22",
     "local_summary_applied": true,
     "openai_summary_applied": false,
     "openalex_venue_rank": "Rank 2",
@@ -6391,9 +6393,10 @@
       "Crossref"
     ],
     "summary_model": "qwen2.5:7b",
-    "summary_provider": "fallback",
+    "summary_provider": "local",
     "tags": [
-      "Digital Twins"
+      "Digital Twins",
+      "Additive manufacturing"
     ],
     "title": "Digital twin-assisted intelligent fault diagnostics of industrial robots",
     "url": "https://doi.org/10.1007/s00170-026-18775-2",
@@ -7978,7 +7981,8 @@
       "Ketankumar A. Ganure"
     ],
     "categories": [
-      "AI and Machine Learning for AM"
+      "AI and Machine Learning for AM",
+      "Reviews and Surveys"
     ],
     "corresponding_authors": [
       {
@@ -7992,7 +7996,7 @@
     "id": "10.1016/j.nxmate.2026.102883",
     "is_core_venue": false,
     "is_weekly_new": false,
-    "last_updated": "2026-08-21",
+    "last_updated": "2026-08-22",
     "local_summary_applied": true,
     "openai_summary_applied": false,
     "openalex_venue_rank": "Rank 3",
@@ -8006,7 +8010,7 @@
       "Crossref"
     ],
     "summary_model": "qwen2.5:7b",
-    "summary_provider": "fallback",
+    "summary_provider": "local",
     "tags": [
       "Self-driving Labs",
       "Manufacturing automation"
@@ -8438,7 +8442,7 @@
     "id": "10.1016/j.jmsy.2026.07.016",
     "is_core_venue": true,
     "is_weekly_new": false,
-    "last_updated": "2026-08-21",
+    "last_updated": "2026-08-22",
     "local_summary_applied": true,
     "openai_summary_applied": false,
     "openalex_venue_rank": "Rank 1",
@@ -8452,7 +8456,7 @@
       "Crossref"
     ],
     "summary_model": "qwen2.5:7b",
-    "summary_provider": "fallback",
+    "summary_provider": "local",
     "tags": [
       "Digital Twins"
     ],
@@ -8640,7 +8644,7 @@
     "id": "10.1007/s00170-026-18746-7",
     "is_core_venue": false,
     "is_weekly_new": false,
-    "last_updated": "2026-08-21",
+    "last_updated": "2026-08-22",
     "local_summary_applied": true,
     "openai_summary_applied": false,
     "openalex_venue_rank": "Rank 2",
@@ -8654,9 +8658,10 @@
       "Crossref"
     ],
     "summary_model": "qwen2.5:7b",
-    "summary_provider": "fallback",
+    "summary_provider": "local",
     "tags": [
-      "Digital Twins"
+      "Digital Twins",
+      "Additive manufacturing"
     ],
     "title": "AI-driven digital twin self-calibration and NC data optimization for improving form accuracy under a cycle-time invariant constraint in five-axis CNC machining",
     "url": "https://doi.org/10.1007/s00170-026-18746-7",
@@ -8731,7 +8736,7 @@
     "id": "10.1021/acs.chemrev.6c00154",
     "is_core_venue": false,
     "is_weekly_new": false,
-    "last_updated": "2026-08-21",
+    "last_updated": "2026-08-22",
     "local_summary_applied": true,
     "openai_summary_applied": false,
     "openalex_venue_rank": "Rank 1",
@@ -8745,7 +8750,7 @@
       "Crossref"
     ],
     "summary_model": "qwen2.5:7b",
-    "summary_provider": "fallback",
+    "summary_provider": "local",
     "tags": [
       "Machine learning",
       "Self-driving Labs",
@@ -9235,7 +9240,7 @@
     "id": "10.1007/s00170-026-18901-0",
     "is_core_venue": false,
     "is_weekly_new": false,
-    "last_updated": "2026-08-21",
+    "last_updated": "2026-08-22",
     "local_summary_applied": true,
     "openai_summary_applied": false,
     "openalex_venue_rank": "Rank 2",
@@ -9249,7 +9254,7 @@
       "Crossref"
     ],
     "summary_model": "qwen2.5:7b",
-    "summary_provider": "fallback",
+    "summary_provider": "local",
     "tags": [
       "Digital Twins",
       "Robot-based Manufacturing"
@@ -9787,7 +9792,7 @@
     "id": "10.1007/s00170-026-18802-2",
     "is_core_venue": false,
     "is_weekly_new": false,
-    "last_updated": "2026-08-21",
+    "last_updated": "2026-08-22",
     "local_summary_applied": true,
     "openai_summary_applied": false,
     "openalex_venue_rank": "Rank 2",
@@ -9801,7 +9806,7 @@
       "Crossref"
     ],
     "summary_model": "qwen2.5:7b",
-    "summary_provider": "fallback",
+    "summary_provider": "local",
     "tags": [
       "Digital Twins",
       "Manufacturing automation"
@@ -9996,7 +10001,7 @@
     "id": "10.1007/s10845-026-02922-3",
     "is_core_venue": true,
     "is_weekly_new": false,
-    "last_updated": "2026-08-21",
+    "last_updated": "2026-08-22",
     "local_summary_applied": true,
     "openai_summary_applied": false,
     "openalex_venue_rank": "Rank 1",
@@ -10010,7 +10015,7 @@
       "Crossref"
     ],
     "summary_model": "qwen2.5:7b",
-    "summary_provider": "fallback",
+    "summary_provider": "local",
     "tags": [
       "Digital Twins"
     ],
@@ -13881,7 +13886,7 @@
     "id": "10.1007/s40964-026-01892-5",
     "is_core_venue": true,
     "is_weekly_new": false,
-    "last_updated": "2026-08-21",
+    "last_updated": "2026-08-22",
     "local_summary_applied": true,
     "openai_summary_applied": false,
     "openalex_venue_rank": "Rank 2",
@@ -13895,7 +13900,7 @@
       "Crossref"
     ],
     "summary_model": "qwen2.5:7b",
-    "summary_provider": "fallback",
+    "summary_provider": "local",
     "tags": [
       "Manufacturing automation"
     ],
@@ -14196,7 +14201,7 @@
     "id": "10.1108/rpj-10-2025-0528",
     "is_core_venue": true,
     "is_weekly_new": false,
-    "last_updated": "2026-08-21",
+    "last_updated": "2026-08-22",
     "local_summary_applied": true,
     "openai_summary_applied": false,
     "openalex_venue_rank": "Rank 3",
@@ -14210,7 +14215,7 @@
       "Crossref"
     ],
     "summary_model": "qwen2.5:7b",
-    "summary_provider": "fallback",
+    "summary_provider": "local",
     "tags": [
       "4D printing"
     ],
@@ -14581,7 +14586,7 @@
     "id": "10.1108/rpj-12-2024-0513",
     "is_core_venue": true,
     "is_weekly_new": false,
-    "last_updated": "2026-08-21",
+    "last_updated": "2026-08-22",
     "local_summary_applied": true,
     "openai_summary_applied": false,
     "openalex_venue_rank": "Rank 3",
@@ -14595,7 +14600,7 @@
       "Crossref"
     ],
     "summary_model": "qwen2.5:7b",
-    "summary_provider": "fallback",
+    "summary_provider": "local",
     "tags": [
       "Additive manufacturing"
     ],
@@ -15504,7 +15509,8 @@
       "Guha Manogharan"
     ],
     "categories": [
-      "Functionally Graded AM"
+      "Functionally Graded AM",
+      "Multi-material AM"
     ],
     "curation_priority": false,
     "doi": "10.1080/17452759.2026.2686063",
@@ -15512,7 +15518,7 @@
     "id": "10.1080/17452759.2026.2686063",
     "is_core_venue": true,
     "is_weekly_new": false,
-    "last_updated": "2026-08-21",
+    "last_updated": "2026-08-22",
     "local_summary_applied": true,
     "openai_summary_applied": false,
     "openalex_venue_rank": "Rank 1",
@@ -15526,7 +15532,7 @@
       "Crossref"
     ],
     "summary_model": "qwen2.5:7b",
-    "summary_provider": "fallback",
+    "summary_provider": "local",
     "tags": [
       "Additive manufacturing"
     ],
@@ -15662,7 +15668,7 @@
     "id": "10.1007/s40964-026-01868-5",
     "is_core_venue": true,
     "is_weekly_new": false,
-    "last_updated": "2026-08-21",
+    "last_updated": "2026-08-22",
     "local_summary_applied": true,
     "openai_summary_applied": false,
     "openalex_venue_rank": "Rank 2",
@@ -15676,7 +15682,7 @@
       "Crossref"
     ],
     "summary_model": "qwen2.5:7b",
-    "summary_provider": "fallback",
+    "summary_provider": "local",
     "tags": [
       "Additive manufacturing"
     ],
@@ -17016,7 +17022,7 @@
     "id": "10.1002/adfm.77318",
     "is_core_venue": true,
     "is_weekly_new": false,
-    "last_updated": "2026-08-21",
+    "last_updated": "2026-08-22",
     "local_summary_applied": true,
     "openai_summary_applied": false,
     "openalex_venue_rank": "Rank 1",
@@ -17030,7 +17036,7 @@
       "Crossref"
     ],
     "summary_model": "qwen2.5:7b",
-    "summary_provider": "fallback",
+    "summary_provider": "local",
     "tags": [
       "Metamaterials"
     ],
@@ -17495,7 +17501,7 @@
     "id": "10.1039/d6sm00533k",
     "is_core_venue": false,
     "is_weekly_new": false,
-    "last_updated": "2026-08-21",
+    "last_updated": "2026-08-22",
     "local_summary_applied": true,
     "openai_summary_applied": false,
     "openalex_venue_rank": "Rank 3",
@@ -17509,7 +17515,7 @@
       "Crossref"
     ],
     "summary_model": "qwen2.5:7b",
-    "summary_provider": "fallback",
+    "summary_provider": "local",
     "tags": [
       "LCE"
     ],
@@ -18071,7 +18077,7 @@
     "id": "10.1021/acsami.6c07865",
     "is_core_venue": false,
     "is_weekly_new": false,
-    "last_updated": "2026-08-21",
+    "last_updated": "2026-08-22",
     "local_summary_applied": true,
     "openai_summary_applied": false,
     "openalex_venue_rank": "Rank 1",
@@ -18085,9 +18091,10 @@
       "Crossref"
     ],
     "summary_model": "qwen2.5:7b",
-    "summary_provider": "fallback",
+    "summary_provider": "local",
     "tags": [
-      "Soft robotics"
+      "Soft robotics",
+      "Additive manufacturing"
     ],
     "title": "Spatial Patterning of Reactive Inks for Programmable Gas-Generation Profiles in Untethered Soft Actuation",
     "url": "https://doi.org/10.1021/acsami.6c07865",
@@ -21017,7 +21024,7 @@
     "id": "10.1002/adma.74397",
     "is_core_venue": true,
     "is_weekly_new": false,
-    "last_updated": "2026-08-21",
+    "last_updated": "2026-08-22",
     "local_summary_applied": true,
     "openai_summary_applied": false,
     "openalex_venue_rank": "Rank 1",
@@ -21031,9 +21038,10 @@
       "Crossref"
     ],
     "summary_model": "qwen2.5:7b",
-    "summary_provider": "fallback",
+    "summary_provider": "local",
     "tags": [
-      "Metamaterials"
+      "Metamaterials",
+      "Additive manufacturing"
     ],
     "title": "Mechanically Programmable Electromagnetic Metamaterials for Generalized Phase Tailoring With Zero Static Power Consumption",
     "url": "https://doi.org/10.1002/adma.74397",
@@ -21329,7 +21337,7 @@
     "id": "10.1002/smll.74756",
     "is_core_venue": false,
     "is_weekly_new": false,
-    "last_updated": "2026-08-21",
+    "last_updated": "2026-08-22",
     "local_summary_applied": true,
     "openai_summary_applied": false,
     "openalex_venue_rank": "Rank 1",
@@ -21343,10 +21351,11 @@
       "Crossref"
     ],
     "summary_model": "qwen2.5:7b",
-    "summary_provider": "fallback",
+    "summary_provider": "local",
     "tags": [
       "LCE",
-      "4D printing"
+      "4D printing",
+      "Additive manufacturing"
     ],
     "title": "Light-Responsive 4D Printing of Carbon Nanotube-Liquid Crystal Elastomers for Directional Actuated Bending and Biomimetic Robotics",
     "url": "https://doi.org/10.1002/smll.74756",
@@ -22369,7 +22378,7 @@
     "id": "10.1002/adfm.77047",
     "is_core_venue": true,
     "is_weekly_new": false,
-    "last_updated": "2026-08-21",
+    "last_updated": "2026-08-22",
     "local_summary_applied": true,
     "openai_summary_applied": false,
     "openalex_venue_rank": "Rank 1",
@@ -22383,7 +22392,7 @@
       "Crossref"
     ],
     "summary_model": "qwen2.5:7b",
-    "summary_provider": "fallback",
+    "summary_provider": "local",
     "tags": [
       "Metamaterials"
     ],
@@ -23758,7 +23767,7 @@
     "id": "10.37636/recit.v9n3e502",
     "is_core_venue": false,
     "is_weekly_new": false,
-    "last_updated": "2026-08-21",
+    "last_updated": "2026-08-22",
     "local_summary_applied": true,
     "openai_summary_applied": false,
     "publication_type": "journal_article",
@@ -23767,9 +23776,10 @@
       "Crossref"
     ],
     "summary_model": "qwen2.5:7b",
-    "summary_provider": "fallback",
+    "summary_provider": "local",
     "tags": [
-      "Soft robotics"
+      "Soft robotics",
+      "Additive manufacturing"
     ],
     "title": "Design, fabrication, and experimental evaluation of a three-finger Fin Ray soft gripper",
     "url": "https://doi.org/10.37636/recit.v9n3e502",
@@ -26202,7 +26212,7 @@
     "id": "10.1080/15376494.2026.2708213",
     "is_core_venue": false,
     "is_weekly_new": false,
-    "last_updated": "2026-08-21",
+    "last_updated": "2026-08-22",
     "local_summary_applied": true,
     "openai_summary_applied": false,
     "openalex_venue_rank": "Rank 2",
@@ -26216,9 +26226,10 @@
       "Crossref"
     ],
     "summary_model": "qwen2.5:7b",
-    "summary_provider": "fallback",
+    "summary_provider": "local",
     "tags": [
-      "Soft robotics"
+      "Soft robotics",
+      "Additive manufacturing"
     ],
     "title": "Adaptive semi 3D-printed soft robotic actuators with embedded shape memory alloy wires: Bending-torsion characterization and modeling",
     "url": "https://doi.org/10.1080/15376494.2026.2708213",
@@ -27322,7 +27333,8 @@
       "Wei Huang"
     ],
     "categories": [
-      "AI and Machine Learning for AM"
+      "AI and Machine Learning for AM",
+      "Multi-material AM"
     ],
     "corresponding_authors": [
       {
@@ -27348,7 +27360,7 @@
     "id": "10.1002/adfm.76881",
     "is_core_venue": true,
     "is_weekly_new": false,
-    "last_updated": "2026-08-21",
+    "last_updated": "2026-08-22",
     "local_summary_applied": true,
     "openai_summary_applied": false,
     "openalex_venue_rank": "Rank 1",
@@ -27362,9 +27374,10 @@
       "Crossref"
     ],
     "summary_model": "qwen2.5:7b",
-    "summary_provider": "fallback",
+    "summary_provider": "local",
     "tags": [
-      "Soft robotics"
+      "Soft robotics",
+      "Additive manufacturing"
     ],
     "title": "A Flexible Integration of Photo-Thermal Driven Monolithic Soft Intelligent Gripper Directed by Tactile Perception as Cross-talk-free Control Feedback",
     "url": "https://doi.org/10.1002/adfm.76881",
@@ -28833,7 +28846,7 @@
     "id": "10.1021/acsami.6c09727",
     "is_core_venue": false,
     "is_weekly_new": false,
-    "last_updated": "2026-08-21",
+    "last_updated": "2026-08-22",
     "local_summary_applied": true,
     "openai_summary_applied": false,
     "openalex_venue_rank": "Rank 1",
@@ -28847,7 +28860,7 @@
       "Crossref"
     ],
     "summary_model": "qwen2.5:7b",
-    "summary_provider": "fallback",
+    "summary_provider": "local",
     "tags": [
       "Vat photopolymerization",
       "Manufacturing automation"
@@ -29250,7 +29263,7 @@
     "id": "10.1002/admt.71196",
     "is_core_venue": false,
     "is_weekly_new": false,
-    "last_updated": "2026-08-21",
+    "last_updated": "2026-08-22",
     "local_summary_applied": true,
     "openai_summary_applied": false,
     "openalex_venue_rank": "Rank 2",
@@ -29264,7 +29277,7 @@
       "Crossref"
     ],
     "summary_model": "qwen2.5:7b",
-    "summary_provider": "fallback",
+    "summary_provider": "local",
     "tags": [
       "Soft robotics"
     ],

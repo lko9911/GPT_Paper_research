@@ -312,6 +312,16 @@ def _summarize_with_local_ollama(record: dict[str, Any], abstract: str) -> dict[
         "year": record.get("year"),
         "venue": record.get("venue"),
         "abstract_for_private_summary_only": abstract,
+        "existing_q5_summary_for_rewrite": record.get("existing_q5_summary") or record.get("ai_summary_en") or "",
+        "existing_relevance_note": record.get("existing_relevance_note_en") or record.get("relevance_note_en") or "",
+        "style_rules": [
+            "Use the existing Q5 summary as a factual outline when available.",
+            "Rewrite into direct, natural research-summary English.",
+            "Do not reuse style-rule wording or generic template sentences.",
+            "Do not start Topic with '<title> is a paper from <venue>'.",
+            "Prefer 'This paper studies...', 'This work proposes...', or a direct noun phrase focused on the research contribution.",
+            "Keep each Q5 answer to one concise sentence.",
+        ],
         "known_tags": record.get("tags", []),
         "known_categories": record.get("categories", []),
         "allowed_categories": CATEGORIES,
@@ -328,14 +338,19 @@ def _summarize_with_local_ollama(record: dict[str, Any], abstract: str) -> dict[
             {
                 "role": "system",
                 "content": (
-                    "You write new English paper summaries for a manufacturing research tracker. "
+                    "You write polished English paper summaries for a manufacturing research tracker. "
                     "Do not copy, translate, or closely paraphrase abstract sentences. "
-                    "Write compact synthesis only. Return strict JSON with ai_summary_en, relevance_score, "
+                    "Write compact synthesis only. If existing_q5_summary_for_rewrite is provided, use it only as the outline "
+                    "and factual scaffold, then rewrite it into natural OpenAI-style English. Do not translate it literally, "
+                    "and do not copy generic style-rule wording into the answer. "
+                    "Avoid awkward metadata phrasing such as '<title> is a 2026 paper from <venue>'. Instead, describe the research focus directly. "
+                    "Each Q5 answer should be one concise sentence, specific enough for researchers, and free of hype. "
+                    "Return strict JSON with ai_summary_en, relevance_score, "
                     "relevance_note_en, tags, categories. ai_summary_en must be either a string with exactly five "
                     "labeled lines or an object with topic, problem, method, key_result, takeaway. The displayed "
                     "summary must answer exactly: 1. Topic -, 2. Problem -, 3. Method -, 4. Key Result -, 5. Takeaway -. "
                     "Do not invent numeric results, percentages, claims, or performance values that are not in the provided metadata. "
-                    "Use only the allowed category names."
+                    "Use only the allowed category names. The output must be specific to the provided paper, not a reusable template."
                 ),
             },
             {"role": "user", "content": json.dumps(prompt, ensure_ascii=False)},

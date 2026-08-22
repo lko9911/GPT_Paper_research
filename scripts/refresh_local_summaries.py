@@ -116,6 +116,8 @@ def _should_refresh(paper: dict[str, Any], mode: str, overwrite_openai: bool) ->
         return provider in {"", "fallback", "metadata", "metadata-based"}
     if mode == "missing":
         return not summary
+    if mode in {"local", "local_rewrite", "qwen_rewrite"}:
+        return provider == "local" or paper.get("local_summary_applied") is True
     return not _is_five_question_summary(summary)
 
 
@@ -137,6 +139,8 @@ def _record_for_summary(paper: dict[str, Any]) -> dict[str, Any]:
         "source": paper.get("source", []),
         "categories": paper.get("categories", []),
         "tags": paper.get("tags", []),
+        "existing_q5_summary": paper.get("ai_summary_en", ""),
+        "existing_relevance_note_en": paper.get("relevance_note_en", ""),
     }
 
 
