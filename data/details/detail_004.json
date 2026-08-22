@@ -1,4 +1,94 @@
 {
+  "10.1002/amp2.70044": {
+    "author_details": [
+      {
+        "name": "Hussam Tawfik",
+        "orcid": "https://orcid.org/0009-0001-2427-2356",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Mechanical Engineering, Schulich School of Engineering University of Calgary  Calgary Canada"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering, Schulich School of Engineering University of Calgary  Calgary Canada"
+        ]
+      },
+      {
+        "name": "Peter Goldsmith",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Mechanical Engineering, Schulich School of Engineering University of Calgary  Calgary Canada"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering, Schulich School of Engineering University of Calgary  Calgary Canada"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2637-403X",
+      "2637-403X"
+    ],
+    "issn_l": "",
+    "publisher": "Wiley",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4415427366",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S4210178136",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210178136",
+      "issn_l": "2637-403X",
+      "issn": [
+        "2637-403X"
+      ],
+      "type": "journal",
+      "host_organization_name": "Wiley",
+      "works_count": 251,
+      "cited_by_count": 2221,
+      "two_year_mean_citedness": 1.105263157894737,
+      "h_index": 20,
+      "i10_index": 50,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 1.105263157894737,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 4",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The paper discusses a new control method for robotic fiber steering in additive manufacturing.\n2. Problem - Current methods struggle with maintaining precision in fiber placement due to the challenges of robotic maneuverability and speed adjustments.\n3. Method - The authors propose Maneuverability-based Speed and Temperature Adaptive Robotic Control (M-STARC), which adapts printing speed and temperature based on the required joint movements of the robot.\n4. Key Result - This approach allows for faster printing speeds and higher temperatures when less maneuvering is needed, improving the overall precision of fiber placement.\n5. Takeaway - M-STARC provides a framework for optimizing robotic control in fiber steering, which could enhance the efficiency and accuracy of additive manufacturing processes.",
+    "relevance_note_en": "The summary captures the core contributions and findings of the research while addressing the specified questions.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-07-24",
+    "not_seen_in_latest_crossref_run": true,
+    "id": "10.1002/amp2.70044"
+  },
   "10.1016/j.addma.2025.104863": {
     "author_details": [
       {
@@ -31930,91 +32020,5 @@
     "last_seen_in_crossref_run": "2026-08-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.46519/ij3dptdi.1452734"
-  },
-  "10.1016/j.jmsy.2024.10.002": {
-    "author_details": [
-      {
-        "name": "Saahil Chand",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Hao Zheng",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Yuqian Lu",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "Journal of Manufacturing Systems",
-    "crossref_target_issn": "0278-6125",
-    "issn": [
-      "0278-6125"
-    ],
-    "issn_l": "",
-    "publisher": "Elsevier BV",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4403456823",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S201698446",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S201698446",
-      "issn_l": "0278-6125",
-      "issn": [
-        "0278-6125",
-        "1878-6642"
-      ],
-      "type": "journal",
-      "host_organization_name": "Elsevier BV",
-      "works_count": 4126,
-      "cited_by_count": 172778,
-      "two_year_mean_citedness": 13.221574344023324,
-      "h_index": 165,
-      "i10_index": 2357,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Core manufacturing journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 13.221574344023324,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 1",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - The study focuses on integrating a vision-enabled fatigue-sensitive human digital twin within human-robot collaboration systems.\n2. Problem - Current monitoring systems assess human factors independently, lacking a comprehensive approach to operator well-being in manufacturing environments.\n3. Method - The authors developed a video-based fatigue estimation method using a dual-stream MS-TCN and LSTM to analyze assembly process videos for physical fatigue assessment, alongside a real-time physiological signal tracking tool for cognitive fatigue.\n4. Key Result - The proposed method demonstrated improved accuracy in operation segmentation and target arm detection compared to existing models, effectively assessing both physical and cognitive fatigue during a 26-task assembly process.\n5. Takeaway - This research highlights the potential of a Human Digital Twin framework to enhance operator well-being and efficiency in human-robot collaboration through integrated fatigue monitoring.",
-    "relevance_note_en": "The paper presents innovative methods for fatigue assessment in human-robot collaboration, aligning closely with current trends in manufacturing systems.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-08-22",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1016/j.jmsy.2024.10.002"
   }
 }

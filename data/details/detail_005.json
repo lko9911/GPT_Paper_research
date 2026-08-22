@@ -1,4 +1,90 @@
 {
+  "10.1016/j.jmsy.2024.10.002": {
+    "author_details": [
+      {
+        "name": "Saahil Chand",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Hao Zheng",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Yuqian Lu",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Journal of Manufacturing Systems",
+    "crossref_target_issn": "0278-6125",
+    "issn": [
+      "0278-6125"
+    ],
+    "issn_l": "",
+    "publisher": "Elsevier BV",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4403456823",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S201698446",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S201698446",
+      "issn_l": "0278-6125",
+      "issn": [
+        "0278-6125",
+        "1878-6642"
+      ],
+      "type": "journal",
+      "host_organization_name": "Elsevier BV",
+      "works_count": 4126,
+      "cited_by_count": 172778,
+      "two_year_mean_citedness": 13.221574344023324,
+      "h_index": 165,
+      "i10_index": 2357,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 13.221574344023324,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - The study focuses on integrating a vision-enabled fatigue-sensitive human digital twin within human-robot collaboration systems.\n2. Problem - Current monitoring systems assess human factors independently, lacking a comprehensive approach to operator well-being in manufacturing environments.\n3. Method - The authors developed a video-based fatigue estimation method using a dual-stream MS-TCN and LSTM to analyze assembly process videos for physical fatigue assessment, alongside a real-time physiological signal tracking tool for cognitive fatigue.\n4. Key Result - The proposed method demonstrated improved accuracy in operation segmentation and target arm detection compared to existing models, effectively assessing both physical and cognitive fatigue during a 26-task assembly process.\n5. Takeaway - This research highlights the potential of a Human Digital Twin framework to enhance operator well-being and efficiency in human-robot collaboration through integrated fatigue monitoring.",
+    "relevance_note_en": "The paper presents innovative methods for fatigue assessment in human-robot collaboration, aligning closely with current trends in manufacturing systems.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-08-22",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1016/j.jmsy.2024.10.002"
+  },
   "10.1016/j.jmapro.2024.10.026": {
     "author_details": [
       {
@@ -32049,123 +32135,5 @@
     "last_seen_in_crossref_run": "2026-08-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1021/acsami.4c12021"
-  },
-  "10.1002/advs.202470270": {
-    "author_details": [
-      {
-        "name": "Brett Emery",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Kelsey L. Snapp",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Daniel Revier",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Vivek Sarkar",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Masa Nakura",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Keith A. Brown",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Jeffrey Ian Lipton",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "Advanced Science",
-    "crossref_target_issn": "2198-3844",
-    "issn": [
-      "2198-3844",
-      "2198-3844"
-    ],
-    "issn_l": "",
-    "publisher": "Wiley",
-    "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "https://openalex.org/W4404764425",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S2737737698",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S2737737698",
-      "issn_l": "2198-3844",
-      "issn": [
-        "2198-3844"
-      ],
-      "type": "journal",
-      "host_organization_name": "Wiley",
-      "works_count": 20558,
-      "cited_by_count": 647035,
-      "two_year_mean_citedness": 8.402641353693769,
-      "h_index": 276,
-      "i10_index": 9993,
-      "is_core": true,
-      "is_oa": true,
-      "is_in_doaj": true
-    },
-    "journal_quality": {
-      "label": "High-impact general journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 8.402641353693769,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 1",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - The study focuses on the development of foams with customizable mechanical properties through viscous thread printing.\n2. Problem - There is a need for advanced methods to predict and control the mechanical characteristics of 3D printed foams.\n3. Method - The authors utilize Gaussian process regression combined with a self-driving lab to correlate process parameters with foam performance.\n4. Key Result - This approach allows for the design of complex foam structures with specific stiffness and deformation characteristics in three-dimensional space.\n5. Takeaway - The research significantly enhances the potential for innovative foam manufacturing by enabling tailored mechanical properties.",
-    "relevance_note_en": "The summary captures the core aspects of the research, including its innovative method and implications for foam manufacturing.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-08-22",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1002/advs.202470270"
   }
 }

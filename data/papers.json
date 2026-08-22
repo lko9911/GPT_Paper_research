@@ -4072,7 +4072,7 @@
     "publisher": "American Association for the Advancement of Science (AAAS)",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7203874529",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2737427234",
     "venue_metrics": {
@@ -6347,7 +6347,7 @@
     "publisher": "Elsevier BV",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7203938676",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S112674977",
     "venue_metrics": {
@@ -52532,6 +52532,164 @@
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
+    "id": "10.1039/d6tb01916a",
+    "title": "Fabrication of bilayer nerve conduits with sustained drug release using a multimaterial, embedded 3D printing strategy",
+    "authors": [
+      "Betty Cai",
+      "Sarah C. Heilshorn",
+      "Sadegh Ghorbani",
+      "Lili He",
+      "David Kilian",
+      "Wen-Chieh Chao",
+      "Jon-Paul Pepper"
+    ],
+    "author_details": [
+      {
+        "name": "Betty Cai",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Sarah C. Heilshorn",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Sadegh Ghorbani",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Lili He",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "David Kilian",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Wen-Chieh Chao",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Jon-Paul Pepper",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "year": 2026,
+    "venue": "Journal of Materials Chemistry B",
+    "doi": "10.1039/d6tb01916a",
+    "url": "https://doi.org/10.1039/d6tb01916a",
+    "source": [
+      "Crossref"
+    ],
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2050-750X",
+      "2050-7518"
+    ],
+    "issn_l": "",
+    "publisher": "Royal Society of Chemistry (RSC)",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S2479884170",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S2479884170",
+      "issn_l": "2050-750X",
+      "issn": [
+        "2050-750X",
+        "2050-7518"
+      ],
+      "type": "journal",
+      "host_organization_name": "Royal Society of Chemistry",
+      "works_count": 14078,
+      "cited_by_count": 398992,
+      "two_year_mean_citedness": 5.1259869550291794,
+      "h_index": 181,
+      "i10_index": 8566,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 5.1259869550291794,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 2",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "publication_type": "journal_article",
+    "venue_trust": "trusted",
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "is_core_venue": false,
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "categories": [
+      "Multi-material AM"
+    ],
+    "tags": [
+      "Additive manufacturing"
+    ],
+    "relevance_score": 6,
+    "curation_priority": false,
+    "ai_summary_en": "1. Topic - Fabrication of bilayer nerve conduits with sustained drug release using a multimaterial, embedded 3D printing strategy is a 2026 paper from Journal of Materials Chemistry B about Additive manufacturing.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Additive manufacturing.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Additive manufacturing; current relevance score is 6/10.",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_en": "Relevant to the tracker through Additive manufacturing; score: 6/10.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-08-22",
+    "last_updated": "2026-08-22",
+    "is_weekly_new": true,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-08-22",
+    "openalex_venue_rank": "Rank 2",
+    "openalex_venue_rank_number": 2,
+    "openalex_venue_rank_score": 5.1259869550291794,
+    "openalex_venue_rank_percentile": 0.6992,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+  },
+  {
     "id": "10.1016/j.ceramint.2026.01.207",
     "title": "Fabrication and characterisation of Al2O3-ZrO2 functionally graded ceramics via DLP-based additive manufacturing",
     "authors": [
@@ -72522,7 +72680,7 @@
     "publisher": "American Association for the Advancement of Science (AAAS)",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7203918522",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2737427234",
     "venue_metrics": {
@@ -85435,7 +85593,7 @@
         "name": "Hong Wang",
         "openalex_author_id": null,
         "orcid": "https://orcid.org/0000-0001-6799-1732",
-        "position": "last",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -112367,8 +112525,8 @@
         ]
       },
       {
-        "name": "L. Ren",
-        "openalex_author_id": "https://openalex.org/A5003419669",
+        "name": "Lei Ren",
+        "openalex_author_id": "https://openalex.org/A5147038673",
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -112414,7 +112572,7 @@
         "name": "Luquan Ren",
         "openalex_author_id": "https://openalex.org/A5147005198",
         "orcid": null,
-        "position": "middle",
+        "position": "last",
         "is_corresponding": true,
         "institutions": [
           {
@@ -116893,9 +117051,9 @@
     ],
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Progress in Additive Manufacturing",
+    "crossref_target_issn": "2363-9512",
     "issn": [
       "2363-9512",
       "2363-9520"
@@ -126638,8 +126796,8 @@
     "corresponding_authors": [
       {
         "name": "Cheng Zhang",
-        "openalex_author_id": null,
-        "orcid": null,
+        "openalex_author_id": "https://openalex.org/A5100769098",
+        "orcid": "https://orcid.org/0000-0001-8282-9901",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -138992,10 +139150,10 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-12",
-    "last_updated": "2026-08-21",
+    "last_updated": "2026-08-22",
     "is_weekly_new": false,
-    "last_seen_in_crossref_run": "2026-08-21",
-    "not_seen_in_latest_crossref_run": true,
+    "last_seen_in_crossref_run": "2026-08-22",
+    "not_seen_in_latest_crossref_run": false,
     "openalex_venue_rank": "Rank 3",
     "openalex_venue_rank_number": 3,
     "openalex_venue_rank_score": 1.7105263157894737,
@@ -149159,8 +149317,8 @@
       },
       {
         "name": "Wenzhuo Liu",
-        "openalex_author_id": "https://openalex.org/A5107441690",
-        "orcid": "https://orcid.org/0009-0004-3542-8418",
+        "openalex_author_id": null,
+        "orcid": null,
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -166680,12 +166838,6 @@
             "type": "education"
           },
           {
-            "name": "Universität Ulm",
-            "ror": "https://ror.org/032000t02",
-            "country_code": "DE",
-            "type": "education"
-          },
-          {
             "name": "University of Manchester",
             "ror": "https://ror.org/027m9bs27",
             "country_code": "GB",
@@ -166702,7 +166854,9 @@
           "Department of Mechanical, Aerospace, and Civil Engineering University of Manchester  Manchester M13 9PL UK",
           "Institute of Structured and Architected Materials Liaoning Academy of Materials  Shenyang 110167 China",
           "Key Laboratory of Bionic Engineering Ministry of Education Jilin University  Changchun 130022 China",
-          "Institute of Orthopaedic Research and Biomechanics, Ulm University Medical Centre, University of Ulm, 89081 Ulm, Germany"
+          "Department of Mechanical, Aerospace, and Civil Engineering, University of Manchester, Manchester, M13 9PL UK",
+          "Institute of Structured and Architected Materials, Liaoning Academy of Materials, Shenyang, 110167 China",
+          "Key Laboratory of Bionic Engineering, Ministry of Education, Jilin University, Changchun, 130022 China"
         ]
       },
       {
@@ -179751,8 +179905,8 @@
     "corresponding_authors": [
       {
         "name": "Ning Li",
-        "openalex_author_id": "https://openalex.org/A5089190523",
-        "orcid": "https://orcid.org/0000-0002-7994-9504",
+        "openalex_author_id": null,
+        "orcid": null,
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -243140,10 +243294,10 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Likun Wang",
-        "openalex_author_id": "https://openalex.org/A5100623561",
-        "orcid": "https://orcid.org/0000-0001-5646-9746",
-        "position": "middle",
+        "name": "Zi Wang",
+        "openalex_author_id": "https://openalex.org/A5100338326",
+        "orcid": "https://orcid.org/0000-0001-9081-7185",
+        "position": "first",
         "is_corresponding": true,
         "institutions": [
           {
@@ -276290,7 +276444,7 @@
       },
       {
         "name": "Huanyue Zhang",
-        "openalex_author_id": null,
+        "openalex_author_id": "https://openalex.org/A5014806689",
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -276311,14 +276465,14 @@
         "raw_affiliation_strings": [
           "Department of Orthopedics, Central Hospital of Dalian University of Technology, Dalian, People’s Republic of China",
           "Instrumental Analysis Center, Dalian University of Technology, Dalian, People’s Republic of China",
-          "Department of Orthopedics, Central Hospital of Dalian University of Technology, Dalian, People's Republic of China"
+          "Instrumental Analysis Center, Dalian University of Technology, Dalian, People's Republic of China"
         ]
       },
       {
         "name": "Hao Zhang",
         "openalex_author_id": null,
         "orcid": null,
-        "position": "last",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -319007,7 +319161,7 @@
         "name": "Ling Wang",
         "openalex_author_id": "https://openalex.org/A5115592675",
         "orcid": "https://orcid.org/0000-0002-5176-7469",
-        "position": "last",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
