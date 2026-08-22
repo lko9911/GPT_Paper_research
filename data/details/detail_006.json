@@ -1,4 +1,164 @@
 {
+  "10.1002/advs.202408062": {
+    "author_details": [
+      {
+        "name": "Brett Emery",
+        "orcid": "https://orcid.org/0000-0002-3163-225X",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Mechanical and Industrial Engineering Northeastern University  815 Columbus Ave Boston MA 02120 USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical and Industrial Engineering Northeastern University  815 Columbus Ave Boston MA 02120 USA"
+        ]
+      },
+      {
+        "name": "Kelsey L. Snapp",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Mechanical Engineering Boston University  110 Cummington Mall College of Engineering Boston MA 02215 USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering Boston University  110 Cummington Mall College of Engineering Boston MA 02215 USA"
+        ]
+      },
+      {
+        "name": "Daniel Revier",
+        "orcid": "https://orcid.org/0000-0001-6246-7819",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Computer Science and Engineering University of Washington  185 E Stevens Way NE Seattle WA 98195 USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Computer Science and Engineering University of Washington  185 E Stevens Way NE Seattle WA 98195 USA"
+        ]
+      },
+      {
+        "name": "Vivek Sarkar",
+        "orcid": "https://orcid.org/0009-0000-4120-8973",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Computer Science and Engineering University of Washington  185 E Stevens Way NE Seattle WA 98195 USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Computer Science and Engineering University of Washington  185 E Stevens Way NE Seattle WA 98195 USA"
+        ]
+      },
+      {
+        "name": "Masa Nakura",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Computer Science and Engineering University of Washington  185 E Stevens Way NE Seattle WA 98195 USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Computer Science and Engineering University of Washington  185 E Stevens Way NE Seattle WA 98195 USA"
+        ]
+      },
+      {
+        "name": "Keith A. Brown",
+        "orcid": "https://orcid.org/0000-0002-2379-2018",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Mechanical Engineering Boston University  110 Cummington Mall College of Engineering Boston MA 02215 USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering Boston University  110 Cummington Mall College of Engineering Boston MA 02215 USA"
+        ]
+      },
+      {
+        "name": "Jeffrey Ian Lipton",
+        "orcid": "https://orcid.org/0000-0003-0843-0999",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Mechanical and Industrial Engineering Northeastern University  815 Columbus Ave Boston MA 02120 USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical and Industrial Engineering Northeastern University  815 Columbus Ave Boston MA 02120 USA"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Advanced Science",
+    "crossref_target_issn": "2198-3844",
+    "issn": [
+      "2198-3844",
+      "2198-3844"
+    ],
+    "issn_l": "",
+    "publisher": "Wiley",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4402914432",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S2737737698",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S2737737698",
+      "issn_l": "2198-3844",
+      "issn": [
+        "2198-3844"
+      ],
+      "type": "journal",
+      "host_organization_name": "Wiley",
+      "works_count": 20558,
+      "cited_by_count": 647035,
+      "two_year_mean_citedness": 8.402641353693769,
+      "h_index": 276,
+      "i10_index": 9993,
+      "is_core": true,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
+    "journal_quality": {
+      "label": "High-impact general journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 8.402641353693769,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - The study focuses on enhancing the mechanical properties of 3D printed foams using Viscous Thread Printing (VTP).\n2. Problem - Previous research lacked reliable process-property relationships, limiting the predictability of foam characteristics.\n3. Method - A self-driving lab integrates automated experimentation with machine learning to explore the processing space for producing dimensionally consistent foams with programmable mechanics.\n4. Key Result - The research identifies a self-stabilizing feature in VTP layer thickness and demonstrates the production of complex foam structures with varied mechanical properties.\n5. Takeaway - The findings suggest that predictive models can be developed for various materials in 3D printing, enhancing the versatility of foam applications.",
+    "relevance_note_en": "The summary captures the core aspects of the research, including its focus on VTP and the integration of machine learning.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-08-22",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1002/advs.202408062"
+  },
   "10.1002/adfm.202406916": {
     "author_details": [
       {
