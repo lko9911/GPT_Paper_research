@@ -35392,9 +35392,28 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Rennan Santos de Araujo",
+        "openalex_author_id": "https://openalex.org/A5042418208",
+        "orcid": null,
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Universidade de São Paulo",
+            "ror": "https://ror.org/036rp1748",
+            "country_code": "BR",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Polytechnic School, University of São Paulo, São Paulo, SP, 05508-010, Brazil"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "The International Journal of Advanced Manufacturing Technology",
     "doi": "10.1007/s00170-026-18940-7",
@@ -35414,8 +35433,8 @@
     "issn_l": "",
     "publisher": "Springer Science and Business Media LLC",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7203967415",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S77056576",
     "venue_metrics": {
