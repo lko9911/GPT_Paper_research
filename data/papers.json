@@ -7248,9 +7248,9 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Zhenlu Xu",
-        "openalex_author_id": "https://openalex.org/A5056473819",
-        "orcid": "https://orcid.org/0009-0007-0580-017X",
+        "name": "Wenjun Xu",
+        "openalex_author_id": "https://openalex.org/A5059180329",
+        "orcid": "https://orcid.org/0000-0001-5370-3437",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -12912,9 +12912,65 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Shaoan Zhang",
+        "openalex_author_id": "https://openalex.org/A5103196903",
+        "orcid": "https://orcid.org/0000-0002-5306-9998",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Ningbo University",
+            "ror": "https://ror.org/03et85d35",
+            "country_code": "CN",
+            "type": "education"
+          },
+          {
+            "name": "Ningbo University of Technology",
+            "ror": "https://ror.org/037dym702",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Institute of Light+X Science and Technology Faculty of Electrical Engineering and Computer Science Ningbo University  Ningbo People's Republic of China"
+        ]
+      },
+      {
+        "name": "Yang Li",
+        "openalex_author_id": "https://openalex.org/A5100421672",
+        "orcid": "https://orcid.org/0000-0002-9544-5840",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Ningbo University",
+            "ror": "https://ror.org/03et85d35",
+            "country_code": "CN",
+            "type": "education"
+          },
+          {
+            "name": "Ningbo University of Technology",
+            "ror": "https://ror.org/037dym702",
+            "country_code": "CN",
+            "type": "education"
+          },
+          {
+            "name": "Guangzhou Medical University",
+            "ror": "https://ror.org/00zat6v61",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Institute of Light+X Science and Technology Faculty of Electrical Engineering and Computer Science Ningbo University  Ningbo People's Republic of China",
+          "School of Biomedical Engineering Guangzhou Medical University  Guangzhou Guangdong People's Republic of China"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Advanced Optical Materials",
     "doi": "10.1002/adom.202503353",
@@ -12934,8 +12990,8 @@
     "issn_l": "",
     "publisher": "Wiley",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7203985307",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S108229257",
     "venue_metrics": {
@@ -27529,9 +27585,9 @@
     "corresponding_authors": [
       {
         "name": "Assia Belbachir",
-        "openalex_author_id": "https://openalex.org/A5051482797",
+        "openalex_author_id": null,
         "orcid": "https://orcid.org/0000-0002-1294-8478",
-        "position": "first",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -27553,21 +27609,21 @@
         "is_corresponding": true,
         "institutions": [
           {
-            "name": "SINTEF",
-            "ror": "https://ror.org/01f677e56",
-            "country_code": "NO",
-            "type": "facility"
-          },
-          {
             "name": "NORCE Research AS",
             "ror": "https://ror.org/02gagpf75",
             "country_code": "NO",
             "type": "facility"
+          },
+          {
+            "name": "Montimage (France)",
+            "ror": "https://ror.org/02a8qtz61",
+            "country_code": "FR",
+            "type": "company"
           }
         ],
         "raw_affiliation_strings": [
           "NORCE Research AS, Grimstad, Norway",
-          "SINTEF AS, Oslo/Porsgrunn, Norway"
+          "Montimage, Paris, France"
         ]
       }
     ],
@@ -52652,7 +52708,7 @@
     "publisher": "Royal Society of Chemistry (RSC)",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7203867411",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2479884170",
     "venue_metrics": {
@@ -81586,28 +81642,9 @@
         ]
       }
     ],
-    "corresponding_authors": [
-      {
-        "name": "H. Guler",
-        "openalex_author_id": "https://openalex.org/A5105526968",
-        "orcid": "https://orcid.org/0000-0001-5312-171X",
-        "position": "first",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "Kilis 7 Aralık University",
-            "ror": "https://ror.org/048b6qs33",
-            "country_code": "TR",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "KILIS 7 ARALIK UNIVERSITY"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
     "year": 2026,
     "venue": "Journal of Materials and Mechatronics: A",
     "doi": "10.55546/jmm.1753727",
@@ -81626,8 +81663,8 @@
     "issn_l": "",
     "publisher": "Journal of Materials and Mechatronics: A",
     "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W7164878187",
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S4387278868",
     "venue_metrics": {
@@ -98503,7 +98540,7 @@
         "name": "Mondher Nasri",
         "openalex_author_id": "https://openalex.org/A5006405851",
         "orcid": null,
-        "position": "first",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -112600,7 +112637,7 @@
         "name": "Luquan Ren",
         "openalex_author_id": "https://openalex.org/A5147005198",
         "orcid": null,
-        "position": "last",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -117079,9 +117116,9 @@
     ],
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Progress in Additive Manufacturing",
+    "crossref_target_issn": "2363-9512",
     "issn": [
       "2363-9512",
       "2363-9520"
@@ -143119,7 +143156,7 @@
     "corresponding_authors": [
       {
         "name": "Aoming Zhang",
-        "openalex_author_id": "https://openalex.org/A5111021439",
+        "openalex_author_id": null,
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -214726,9 +214763,9 @@
     "corresponding_authors": [
       {
         "name": "Songhao Wang",
-        "openalex_author_id": "https://openalex.org/A5057228007",
+        "openalex_author_id": null,
         "orcid": "https://orcid.org/0000-0003-3643-4698",
-        "position": "first",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -234613,9 +234650,9 @@
     ],
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "International Journal of Advanced Manufacturing Technology",
-    "crossref_target_issn": "0268-3768",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
     "issn": [
       "0268-3768",
       "1433-3015"
@@ -239996,52 +240033,9 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [
-      {
-        "name": "Philip F. Yuan",
-        "openalex_author_id": "https://openalex.org/A5045526090",
-        "orcid": "https://orcid.org/0000-0002-2871-377X",
-        "position": "middle",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "Tongji University",
-            "ror": "https://ror.org/03rc6as71",
-            "country_code": "CN",
-            "type": "education"
-          },
-          {
-            "name": "Shanghai Tongji Urban Planning and Design Institute",
-            "ror": "https://ror.org/03gb38m78",
-            "country_code": "CN",
-            "type": "facility"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "College of Architecture and Urban Planning, Tongji University, Shanghai, 200092, China"
-        ]
-      },
-      {
-        "name": "Yi Min Xie",
-        "openalex_author_id": "https://openalex.org/A5074236799",
-        "orcid": "https://orcid.org/0000-0001-5720-6649",
-        "position": "last",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "RMIT University",
-            "ror": "https://ror.org/04ttjf776",
-            "country_code": "AU",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Centre for Innovative Structures and Materials, School of Engineering, RMIT University, Melbourne, 3001, Australia"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
     "year": 2024,
     "venue": "Additive Manufacturing",
     "doi": "10.1016/j.addma.2024.104012",
@@ -240060,8 +240054,8 @@
     "issn_l": "",
     "publisher": "Elsevier BV",
     "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4391481406",
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2764842179",
     "venue_metrics": {
