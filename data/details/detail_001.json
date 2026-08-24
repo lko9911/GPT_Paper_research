@@ -1,4 +1,98 @@
 {
+  "10.1016/j.ijpvp.2026.105845": {
+    "author_details": [
+      {
+        "name": "Denny Jacob John",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "S.R. Koteswara Rao",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "A.K. Lakshminarayanan",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "S. Ramesh Kumar",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "0308-0161"
+    ],
+    "issn_l": "",
+    "publisher": "Elsevier BV",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7155554512",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S14064848",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S14064848",
+      "issn_l": "0308-0161",
+      "issn": [
+        "0308-0161",
+        "1879-3541"
+      ],
+      "type": "journal",
+      "host_organization_name": "Elsevier BV",
+      "works_count": 6273,
+      "cited_by_count": 93915,
+      "two_year_mean_citedness": 3.7286821705426356,
+      "h_index": 102,
+      "i10_index": 2538,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 3.7286821705426356,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 2",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The study investigates the microstructure and corrosion properties of a functionally graded structure made from SS316L and IN718 using a twin-wire gas tungsten arc process.\n2. Problem - Understanding how varying compositions in functionally graded materials affect microstructural characteristics and corrosion resistance.\n3. Method - The researchers employed a twin-filler GTA welding system to create layers with controlled compositions, analyzing the resulting microstructure and corrosion behavior.\n4. Key Result - The findings indicate that the layer with 75% Inconel 718 and 25% stainless steel shows properties similar to the pure Inconel 718 layer, suggesting durability under service conditions.\n5. Takeaway - This study highlights the potential for functionally graded materials to maintain performance even when subjected to wear or degradation.",
+    "relevance_note_en": "The paper provides significant insights into the performance of functionally graded materials in corrosive environments.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-08-24",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1016/j.ijpvp.2026.105845"
+  },
   "10.1016/j.mtcomm.2026.115733": {
     "author_details": [
       {
@@ -12153,13 +12247,13 @@
     "core_status": "core",
     "venue_scope": "core",
     "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - Two-Photon Grayscale Lithography (2GL) for high-quality 3D silica glass microstructures\n2. Problem - Improving the precision and mechanical properties of 3D printed silica glass components\n3. Method - Developing a pre-glass polyhedral oligomeric silsesquioxane (POSS) resist and optimizing grayscale parameters\n4. Key Result - Achieving quality factors >1000 for mechanical resonators and <3 nm roughness for optical components\n5. Takeaway - This work advances glass microfabrication by enabling rapid, high-quality 3D printing of complex structures",
-    "relevance_note_en": "Relevant to the tracker through advancements in multi-material additive manufacturing and metamaterials.",
+    "ai_summary_en": "1. Topic - Two-Photon Grayscale Lithography (2GL) of High Mechanical and Optical Quality 3D Silica Glass Microstructures is a 2026 paper from Advanced Functional Materials about Metamaterials.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Metamaterials.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Metamaterials; current relevance score is 5/10.",
+    "relevance_note_en": "Relevant to the tracker through Metamaterials; score: 5/10.",
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "not_seen_in_latest_crossref_run": true,
-    "last_seen_in_crossref_run": "2026-08-21",
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-08-24",
     "id": "10.1002/adfm.77318"
   },
   "10.1002/advs.202600009": {
@@ -35062,107 +35156,5 @@
     "last_seen_in_crossref_run": "2026-08-24",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/adma.73633"
-  },
-  "10.1016/j.mser.2026.101231": {
-    "author_details": [
-      {
-        "name": "Wenzheng Wu",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Qi Tian",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Guiwei Li",
-        "orcid": "https://orcid.org/0000-0001-8418-0018",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Lei Ren",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Luquan Ren",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "0927-796X"
-    ],
-    "issn_l": "",
-    "publisher": "Elsevier BV",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W7154587416",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S1018252914",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S1018252914",
-      "issn_l": "0927-796X",
-      "issn": [
-        "0927-796X",
-        "1879-212X"
-      ],
-      "type": "journal",
-      "host_organization_name": "Elsevier BV",
-      "works_count": 1096,
-      "cited_by_count": 172188,
-      "two_year_mean_citedness": 17.87786259541985,
-      "h_index": 204,
-      "i10_index": 638,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 17.87786259541985,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 1",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The paper discusses advancements in bio-inspired 4D printing technologies.\n2. Problem - It addresses the challenges of achieving multi-dimensional and multi-type shape morphing in printed materials.\n3. Method - The authors review various techniques and materials used in 4D printing to enable dynamic transformations.\n4. Key Result - The study highlights successful applications of 4D printing in diverse fields, showcasing its potential for innovative designs.\n5. Takeaway - Bio-inspired 4D printing offers significant opportunities for creating adaptable materials and structures.",
-    "relevance_note_en": "The summary captures the essence of the paper's focus on 4D printing and its applications.",
-    "abstract_used_for_summary": false,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-08-24",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1016/j.mser.2026.101231"
   }
 }
