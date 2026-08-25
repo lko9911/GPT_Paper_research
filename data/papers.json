@@ -46743,10 +46743,10 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-24",
-    "last_updated": "2026-08-18",
+    "last_updated": "2026-08-25",
     "is_weekly_new": false,
-    "last_seen_in_crossref_run": "2026-08-18",
-    "not_seen_in_latest_crossref_run": true,
+    "last_seen_in_crossref_run": "2026-08-25",
+    "not_seen_in_latest_crossref_run": false,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 3.7044257112750265,
@@ -106475,6 +106475,170 @@
     "openalex_venue_rank_number": 4,
     "openalex_venue_rank_score": 1.2727272727272727,
     "openalex_venue_rank_percentile": 0.2211,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+  },
+  {
+    "id": "10.1002/adfm.77951",
+    "title": "A Versatile Photoresist Scaffolding for Tunable Material Property, High-Contrast Tomographic Volumetric Additive Manufacturing",
+    "authors": [
+      "Alexander J. Osterbaan",
+      "Gabriel T. Seymour",
+      "Robert R. McLeod",
+      "Christopher N. Bowman"
+    ],
+    "author_details": [
+      {
+        "name": "Alexander J. Osterbaan",
+        "orcid": "https://orcid.org/0009-0006-6484-7528",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Chemical and Biological Engineering University of Colorado Boulder  Boulder Colorado USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Chemical and Biological Engineering University of Colorado Boulder  Boulder Colorado USA"
+        ]
+      },
+      {
+        "name": "Gabriel T. Seymour",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Electrical Computer, and Energy Engineering University of Colorado Boulder  Boulder Colorado USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Electrical Computer, and Energy Engineering University of Colorado Boulder  Boulder Colorado USA"
+        ]
+      },
+      {
+        "name": "Robert R. McLeod",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Electrical Computer, and Energy Engineering University of Colorado Boulder  Boulder Colorado USA"
+          },
+          {
+            "name": "Materials Science and Engineering Program University of Colorado Boulder  Boulder Colorado USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Electrical Computer, and Energy Engineering University of Colorado Boulder  Boulder Colorado USA",
+          "Materials Science and Engineering Program University of Colorado Boulder  Boulder Colorado USA"
+        ]
+      },
+      {
+        "name": "Christopher N. Bowman",
+        "orcid": "https://orcid.org/0000-0001-8458-7723",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Chemical and Biological Engineering University of Colorado Boulder  Boulder Colorado USA"
+          },
+          {
+            "name": "Materials Science and Engineering Program University of Colorado Boulder  Boulder Colorado USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Chemical and Biological Engineering University of Colorado Boulder  Boulder Colorado USA",
+          "Materials Science and Engineering Program University of Colorado Boulder  Boulder Colorado USA"
+        ]
+      }
+    ],
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "year": 2026,
+    "venue": "Advanced Functional Materials",
+    "doi": "10.1002/adfm.77951",
+    "url": "https://doi.org/10.1002/adfm.77951",
+    "source": [
+      "Crossref"
+    ],
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "1616-301X",
+      "1616-3028"
+    ],
+    "issn_l": "",
+    "publisher": "Wiley",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S135204980",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S135204980",
+      "issn_l": "1616-301X",
+      "issn": [
+        "1616-301X",
+        "1616-3028"
+      ],
+      "type": "journal",
+      "host_organization_name": "Wiley",
+      "works_count": 42483,
+      "cited_by_count": 2508008,
+      "two_year_mean_citedness": 14.256403502995983,
+      "h_index": 476,
+      "i10_index": 26898,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "High-impact general journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 14.256403502995983,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "publication_type": "journal_article",
+    "venue_trust": "trusted",
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "is_core_venue": true,
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "categories": [
+      "Multi-material AM"
+    ],
+    "tags": [
+      "Vat photopolymerization",
+      "Volumetric AM"
+    ],
+    "relevance_score": 5,
+    "curation_priority": false,
+    "ai_summary_en": "1. Topic - A Versatile Photoresist Scaffolding for Tunable Material Property, High-Contrast Tomographic Volumetric Additive Manufacturing is a 2026 paper from Advanced Functional Materials about Vat photopolymerization and Volumetric AM.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Vat photopolymerization and Volumetric AM.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Vat photopolymerization and Volumetric AM; current relevance score is 5/10.",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_en": "Relevant to the tracker through Vat photopolymerization and Volumetric AM; score: 5/10.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-08-25",
+    "last_updated": "2026-08-25",
+    "is_weekly_new": true,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-08-25",
+    "openalex_venue_rank": "Rank 1",
+    "openalex_venue_rank_number": 1,
+    "openalex_venue_rank_score": 14.256403502995983,
+    "openalex_venue_rank_percentile": 0.964,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {

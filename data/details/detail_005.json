@@ -1,4 +1,91 @@
 {
+  "10.1007/s00170-024-14607-3": {
+    "author_details": [
+      {
+        "name": "Yassmin Seid Ahmed",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Waguih ElMaraghy",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Hoda ElMaraghy",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "International Journal of Advanced Manufacturing Technology",
+    "crossref_target_issn": "0268-3768",
+    "issn": [
+      "0268-3768",
+      "1433-3015"
+    ],
+    "issn_l": "",
+    "publisher": "Springer Science and Business Media LLC",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4403438487",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S77056576",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S77056576",
+      "issn_l": "0268-3768",
+      "issn": [
+        "0268-3768",
+        "1433-3015"
+      ],
+      "type": "journal",
+      "host_organization_name": "Springer Science+Business Media",
+      "works_count": 31026,
+      "cited_by_count": 730438,
+      "two_year_mean_citedness": 3.7044257112750265,
+      "h_index": 199,
+      "i10_index": 18166,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 3.7044257112750265,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 2",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The study focuses on an adaptive digital twin aimed at enhancing product surface quality.\n2. Problem - It addresses the challenge of controlling surface roughness in manufacturing processes.\n3. Method - The authors propose a supervisory controller integrated with the digital twin to monitor and adjust surface quality parameters.\n4. Key Result - The implementation of this system demonstrates improved control over surface roughness, leading to better product quality.\n5. Takeaway - Utilizing an adaptive digital twin can significantly enhance surface quality management in manufacturing.",
+    "relevance_note_en": "The paper presents a novel approach to surface quality control using digital twin technology, which is highly relevant to advanced manufacturing.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-08-25",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1007/s00170-024-14607-3"
+  },
   "10.1007/s00170-024-14005-9": {
     "author_details": [
       {
@@ -31946,123 +32033,5 @@
     "last_seen_in_crossref_run": "2026-08-25",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1080/29963176.2024.2431816"
-  },
-  "10.1016/j.addma.2024.104351": {
-    "author_details": [
-      {
-        "name": "Xinhui Wang",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Jinghang Liu",
-        "orcid": "https://orcid.org/0000-0002-3929-3176",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Yufan Liu",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Yan Zhao",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Yinghao Li",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Michael D. Gilchrist",
-        "orcid": "https://orcid.org/0000-0003-1765-429X",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Nan Zhang",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2214-8604"
-    ],
-    "issn_l": "",
-    "publisher": "Elsevier BV",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4401585680",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S2764842179",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S2764842179",
-      "issn_l": "2214-7810",
-      "issn": [
-        "2214-7810",
-        "2214-8604"
-      ],
-      "type": "journal",
-      "host_organization_name": "Elsevier BV",
-      "works_count": 5106,
-      "cited_by_count": 246110,
-      "two_year_mean_citedness": 7.721680420105026,
-      "h_index": 193,
-      "i10_index": 3661,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Core manufacturing journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 7.721680420105026,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 1",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - The paper discusses a new method for improving vat photopolymerization printing accuracy and scale.\n2. Problem - Controlling stitching errors in large-scale printing while maintaining high precision is a significant challenge.\n3. Method - The authors propose the Spatial-Pixel Integration Compensation (SPIC) method, which combines Spatial Motion Compensation and Pixel Compensation techniques.\n4. Key Result - SPIC reduces stitching errors by over 40 times, achieving less than 4 µm error between sub-images and enabling high-precision prints of complex structures.\n5. Takeaway - This advancement in VPP technology enhances the feasibility of producing intricate, large-scale 3D structures with high precision.",
-    "relevance_note_en": "The summary captures the core contributions and findings of the paper effectively.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-08-25",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1016/j.addma.2024.104351"
   }
 }
