@@ -32337,9 +32337,46 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Xiaoyu Zhao",
+        "openalex_author_id": "https://openalex.org/A5148043582",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Zhaoqing University",
+            "ror": "https://ror.org/025n5kj18",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "College of Mechanical and Automotive Engineering, Zhaoqing University, Zhaoqing, 526061, China"
+        ]
+      },
+      {
+        "name": "Yimin Zhang",
+        "openalex_author_id": "https://openalex.org/A5148162713",
+        "orcid": null,
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Zhaoqing University",
+            "ror": "https://ror.org/025n5kj18",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "College of Mechanical and Automotive Engineering, Zhaoqing University, Zhaoqing, 526061, China"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Journal of Alloys and Compounds",
     "doi": "10.1016/j.jallcom.2026.190653",
@@ -32358,7 +32395,7 @@
     "issn_l": "",
     "publisher": "Elsevier BV",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7204163747",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S67716761",
@@ -86721,7 +86758,7 @@
         "name": "Hong Wang",
         "openalex_author_id": null,
         "orcid": "https://orcid.org/0000-0001-6799-1732",
-        "position": "last",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -94590,28 +94627,9 @@
         ]
       }
     ],
-    "corresponding_authors": [
-      {
-        "name": "Farag Omar",
-        "openalex_author_id": "https://openalex.org/A5108464277",
-        "orcid": "https://orcid.org/0000-0003-0154-5267",
-        "position": "middle",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "United Arab Emirates University",
-            "ror": "https://ror.org/01km6p862",
-            "country_code": "AE",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Mechanical and Aerospace Engineering Department, College of Engineering, United Arab Emirates University, Al Ain 15551, United Arab Emirates"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
     "year": 2026,
     "venue": "Gels",
     "doi": "10.3390/gels12020138",
@@ -94630,8 +94648,8 @@
     "issn_l": "",
     "publisher": "MDPI AG",
     "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W7127356606",
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2737559645",
     "venue_metrics": {
@@ -96502,7 +96520,7 @@
           {
             "name": "Institute of Science Tokyo",
             "ror": "https://ror.org/05dqf9946",
-            "country_code": null,
+            "country_code": "JP",
             "type": "education"
           }
         ],
@@ -99122,8 +99140,8 @@
         ]
       },
       {
-        "name": "Luquan Ren",
-        "openalex_author_id": "https://openalex.org/A5133795267",
+        "name": "Lei Ren",
+        "openalex_author_id": "https://openalex.org/A5133749330",
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -99603,7 +99621,7 @@
         "name": "Mondher Nasri",
         "openalex_author_id": "https://openalex.org/A5006405851",
         "orcid": null,
-        "position": "middle",
+        "position": "first",
         "is_corresponding": true,
         "institutions": [
           {
@@ -107435,7 +107453,7 @@
         "name": "Erin Lavik",
         "openalex_author_id": "https://openalex.org/A5079335476",
         "orcid": "https://orcid.org/0000-0002-0644-744X",
-        "position": "middle",
+        "position": "last",
         "is_corresponding": true,
         "institutions": [
           {
@@ -114273,8 +114291,8 @@
         ]
       },
       {
-        "name": "L. Ren",
-        "openalex_author_id": "https://openalex.org/A5003419669",
+        "name": "Lei Ren",
+        "openalex_author_id": "https://openalex.org/A5147038673",
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -114320,7 +114338,7 @@
         "name": "Luquan Ren",
         "openalex_author_id": "https://openalex.org/A5147005198",
         "orcid": null,
-        "position": "last",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -140928,7 +140946,7 @@
         "is_corresponding": true,
         "institutions": [
           {
-            "name": "Austrian Institute of Technology",
+            "name": "AIT Austrian Institute of Technology GmbH",
             "ror": "https://ror.org/04knbh022",
             "country_code": "AT",
             "type": "facility"
@@ -144816,7 +144834,7 @@
     "corresponding_authors": [
       {
         "name": "Aoming Zhang",
-        "openalex_author_id": null,
+        "openalex_author_id": "https://openalex.org/A5111021439",
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -151042,8 +151060,8 @@
       },
       {
         "name": "Wenzhuo Liu",
-        "openalex_author_id": null,
-        "orcid": null,
+        "openalex_author_id": "https://openalex.org/A5107441690",
+        "orcid": "https://orcid.org/0009-0004-3542-8418",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -168563,12 +168581,6 @@
             "type": "education"
           },
           {
-            "name": "Universität Ulm",
-            "ror": "https://ror.org/032000t02",
-            "country_code": "DE",
-            "type": "education"
-          },
-          {
             "name": "University of Manchester",
             "ror": "https://ror.org/027m9bs27",
             "country_code": "GB",
@@ -168585,14 +168597,16 @@
           "Department of Mechanical, Aerospace, and Civil Engineering University of Manchester  Manchester M13 9PL UK",
           "Institute of Structured and Architected Materials Liaoning Academy of Materials  Shenyang 110167 China",
           "Key Laboratory of Bionic Engineering Ministry of Education Jilin University  Changchun 130022 China",
-          "Institute of Orthopaedic Research and Biomechanics, Ulm University Medical Centre, University of Ulm, 89081 Ulm, Germany"
+          "Department of Mechanical, Aerospace, and Civil Engineering, University of Manchester, Manchester, M13 9PL UK",
+          "Institute of Structured and Architected Materials, Liaoning Academy of Materials, Shenyang, 110167 China",
+          "Key Laboratory of Bionic Engineering, Ministry of Education, Jilin University, Changchun, 130022 China"
         ]
       },
       {
         "name": "Luquan Ren",
         "openalex_author_id": null,
         "orcid": null,
-        "position": "last",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -181634,8 +181648,8 @@
     "corresponding_authors": [
       {
         "name": "Ning Li",
-        "openalex_author_id": null,
-        "orcid": null,
+        "openalex_author_id": "https://openalex.org/A5089190523",
+        "orcid": "https://orcid.org/0000-0002-7994-9504",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -183081,8 +183095,8 @@
     "corresponding_authors": [
       {
         "name": "Xinyu Wang",
-        "openalex_author_id": "https://openalex.org/A5100352846",
-        "orcid": "https://orcid.org/0009-0001-2925-1466",
+        "openalex_author_id": null,
+        "orcid": null,
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -183140,7 +183154,7 @@
         "name": "Xiaofeng Wang",
         "openalex_author_id": null,
         "orcid": "https://orcid.org/0000-0002-9913-1064",
-        "position": "last",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -199476,7 +199490,7 @@
             "type": "company"
           },
           {
-            "name": "Huaiyin Institute of Technology",
+            "name": "Huai'an University",
             "ror": "https://ror.org/0555ezg60",
             "country_code": "CN",
             "type": "education"
@@ -213269,7 +213283,7 @@
             "type": "education"
           },
           {
-            "name": "University of Colorado Anschutz Medical Campus",
+            "name": "University of Colorado Anschutz",
             "ror": "https://ror.org/03wmf1y16",
             "country_code": "US",
             "type": "education"
@@ -245023,10 +245037,10 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Likun Wang",
-        "openalex_author_id": "https://openalex.org/A5100623561",
-        "orcid": "https://orcid.org/0000-0001-5646-9746",
-        "position": "middle",
+        "name": "Zi Wang",
+        "openalex_author_id": "https://openalex.org/A5100338326",
+        "orcid": "https://orcid.org/0000-0001-9081-7185",
+        "position": "first",
         "is_corresponding": true,
         "institutions": [
           {
@@ -259432,10 +259446,10 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Manish Pratap Singh",
-        "openalex_author_id": "https://openalex.org/A5021211339",
-        "orcid": "https://orcid.org/0000-0002-9530-2348",
-        "position": "first",
+        "name": "Ratnesh Kumar Raj Singh",
+        "openalex_author_id": "https://openalex.org/A5066015004",
+        "orcid": "https://orcid.org/0000-0001-9377-6753",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -276902,7 +276916,7 @@
       },
       {
         "name": "Zihuan Chen",
-        "openalex_author_id": "https://openalex.org/A5024222220",
+        "openalex_author_id": null,
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -278154,7 +278168,7 @@
       },
       {
         "name": "Huanyue Zhang",
-        "openalex_author_id": null,
+        "openalex_author_id": "https://openalex.org/A5014806689",
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -278175,14 +278189,14 @@
         "raw_affiliation_strings": [
           "Department of Orthopedics, Central Hospital of Dalian University of Technology, Dalian, People’s Republic of China",
           "Instrumental Analysis Center, Dalian University of Technology, Dalian, People’s Republic of China",
-          "Department of Orthopedics, Central Hospital of Dalian University of Technology, Dalian, People's Republic of China"
+          "Instrumental Analysis Center, Dalian University of Technology, Dalian, People's Republic of China"
         ]
       },
       {
         "name": "Hao Zhang",
         "openalex_author_id": null,
         "orcid": null,
-        "position": "middle",
+        "position": "last",
         "is_corresponding": true,
         "institutions": [
           {
@@ -320871,7 +320885,7 @@
         "name": "Ling Wang",
         "openalex_author_id": "https://openalex.org/A5115592675",
         "orcid": "https://orcid.org/0000-0002-5176-7469",
-        "position": "last",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
