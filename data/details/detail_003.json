@@ -1,4 +1,114 @@
 {
+  "10.1016/j.jmsy.2024.12.006": {
+    "author_details": [
+      {
+        "name": "Chao Yang",
+        "orcid": "https://orcid.org/0000-0002-6220-0660",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Hao Yu",
+        "orcid": "https://orcid.org/0000-0003-3522-3426",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Yuan Zheng",
+        "orcid": "https://orcid.org/0000-0002-9845-1138",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Lei Feng",
+        "orcid": "https://orcid.org/0000-0001-5703-5923",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Riku Ala-Laurinaho",
+        "orcid": "https://orcid.org/0000-0002-3246-8199",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Kari Tammi",
+        "orcid": "https://orcid.org/0000-0001-9376-2386",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Journal of Manufacturing Systems",
+    "crossref_target_issn": "0278-6125",
+    "issn": [
+      "0278-6125"
+    ],
+    "issn_l": "",
+    "publisher": "Elsevier BV",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4405795723",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S201698446",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S201698446",
+      "issn_l": "0278-6125",
+      "issn": [
+        "0278-6125",
+        "1878-6642"
+      ],
+      "type": "journal",
+      "host_organization_name": "Elsevier BV",
+      "works_count": 4126,
+      "cited_by_count": 172778,
+      "two_year_mean_citedness": 13.221574344023324,
+      "h_index": 165,
+      "i10_index": 2357,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 13.221574344023324,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - The paper discusses a context-aware system driven by digital twin technology for overhead crane operations.\n2. Problem - There is a need for an integrated approach to manage diverse data sources and provide real-time contextual information to operators in dynamic manufacturing environments.\n3. Method - The authors propose a user-centered Context-Aware System that combines digital twin and semantic technologies, featuring real-time data integration, ontology-based context modeling, and augmented reality for visualization.\n4. Key Result - The system was implemented and tested in a lab setting, demonstrating its effectiveness in delivering contextual information to users during crane operations.\n5. Takeaway - This research highlights the potential of digital twin-driven systems to enhance operational efficiency and decision-making in manufacturing.",
+    "relevance_note_en": "The paper is highly relevant as it addresses the integration of digital twin technology in manufacturing operations.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-08-28",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1016/j.jmsy.2024.12.006"
+  },
   "10.1007/s10845-024-02498-w": {
     "author_details": [
       {
@@ -9054,7 +9164,7 @@
       "official_quartile": null,
       "openalex_two_year_mean_citedness": 5.659574468085107,
       "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank": "Rank 2",
       "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
     },
     "venue_trust_reason": "journal article with named venue and no low-trust marker",
@@ -33192,249 +33302,5 @@
     "last_seen_in_crossref_run": "2026-08-28",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/smll.202508079"
-  },
-  "10.1002/advs.202405835": {
-    "author_details": [
-      {
-        "name": "Winston Wai Shing Ma",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Mechanical and Automation Engineering Chinese University of Hong Kong  Sha Tin Hong Kong 999077 China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical and Automation Engineering Chinese University of Hong Kong  Sha Tin Hong Kong 999077 China"
-        ]
-      },
-      {
-        "name": "Hang Yang",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Mechanical Engineering National University of Singapore  Singapore 117575 Singapore"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical Engineering National University of Singapore  Singapore 117575 Singapore"
-        ]
-      },
-      {
-        "name": "Yijing Zhao",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Mechanical Engineering National University of Singapore  Singapore 117575 Singapore"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical Engineering National University of Singapore  Singapore 117575 Singapore"
-        ]
-      },
-      {
-        "name": "Xinwei Li",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Faculty of Science, Agriculture, and Engineering Newcastle University  Singapore 567739 Singapore"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Faculty of Science, Agriculture, and Engineering Newcastle University  Singapore 567739 Singapore"
-        ]
-      },
-      {
-        "name": "Junhao Ding",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Mechanical and Automation Engineering Chinese University of Hong Kong  Sha Tin Hong Kong 999077 China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical and Automation Engineering Chinese University of Hong Kong  Sha Tin Hong Kong 999077 China"
-        ]
-      },
-      {
-        "name": "Shuo Qu",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Mechanical and Automation Engineering Chinese University of Hong Kong  Sha Tin Hong Kong 999077 China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical and Automation Engineering Chinese University of Hong Kong  Sha Tin Hong Kong 999077 China"
-        ]
-      },
-      {
-        "name": "Quyang Liu",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Mechanical Engineering National University of Singapore  Singapore 117575 Singapore"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical Engineering National University of Singapore  Singapore 117575 Singapore"
-        ]
-      },
-      {
-        "name": "Zongxin Hu",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Mechanical and Automation Engineering Chinese University of Hong Kong  Sha Tin Hong Kong 999077 China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical and Automation Engineering Chinese University of Hong Kong  Sha Tin Hong Kong 999077 China"
-        ]
-      },
-      {
-        "name": "Rui Li",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Mechanical and Automation Engineering Chinese University of Hong Kong  Sha Tin Hong Kong 999077 China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical and Automation Engineering Chinese University of Hong Kong  Sha Tin Hong Kong 999077 China"
-        ]
-      },
-      {
-        "name": "Quanqing Tao",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Mechanical and Automation Engineering Chinese University of Hong Kong  Sha Tin Hong Kong 999077 China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical and Automation Engineering Chinese University of Hong Kong  Sha Tin Hong Kong 999077 China"
-        ]
-      },
-      {
-        "name": "Haoming Mo",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Mechanical and Automation Engineering Chinese University of Hong Kong  Sha Tin Hong Kong 999077 China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical and Automation Engineering Chinese University of Hong Kong  Sha Tin Hong Kong 999077 China"
-        ]
-      },
-      {
-        "name": "Wei Zhai",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Mechanical Engineering National University of Singapore  Singapore 117575 Singapore"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical Engineering National University of Singapore  Singapore 117575 Singapore"
-        ]
-      },
-      {
-        "name": "Xu Song",
-        "orcid": "https://orcid.org/0000-0001-9811-9883",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Mechanical and Automation Engineering Chinese University of Hong Kong  Sha Tin Hong Kong 999077 China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical and Automation Engineering Chinese University of Hong Kong  Sha Tin Hong Kong 999077 China"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "Advanced Science",
-    "crossref_target_issn": "2198-3844",
-    "issn": [
-      "2198-3844",
-      "2198-3844"
-    ],
-    "issn_l": "",
-    "publisher": "Wiley",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4406629728",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S2737737698",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S2737737698",
-      "issn_l": "2198-3844",
-      "issn": [
-        "2198-3844"
-      ],
-      "type": "journal",
-      "host_organization_name": "Wiley",
-      "works_count": 20558,
-      "cited_by_count": 647035,
-      "two_year_mean_citedness": 8.402641353693769,
-      "h_index": 276,
-      "i10_index": 9993,
-      "is_core": true,
-      "is_oa": true,
-      "is_in_doaj": true
-    },
-    "journal_quality": {
-      "label": "High-impact general journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 8.402641353693769,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 1",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - The paper discusses multi-physical lattice metamaterials and their applications enabled by additive manufacturing.\n2. Problem - Existing literature primarily addresses single physical properties of lattice metamaterials, neglecting their multi-physical interactions and applications.\n3. Method - The authors review design principles, structure-mechanism-property relationships, and interaction mechanisms of lattice metamaterials, categorizing them and evaluating various additive manufacturing techniques.\n4. Key Result - The study identifies critical design guidelines and summarizes the multifunctional applications of lattice metamaterials across different physical fields.\n5. Takeaway - This work provides insights into the potential of lattice metamaterials for diverse applications, emphasizing the importance of their multi-physical properties.",
-    "relevance_note_en": "The summary captures the essence of the paper's focus on multi-physical lattice metamaterials and their design and application.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-08-28",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1002/advs.202405835"
   }
 }
