@@ -1,4 +1,393 @@
 {
+  "10.1007/s00170-025-15012-0": {
+    "author_details": [
+      {
+        "name": "Garima Dixit",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Pulak Mohan Pandey",
+        "orcid": "https://orcid.org/0000-0002-5048-8388",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "International Journal of Advanced Manufacturing Technology",
+    "crossref_target_issn": "0268-3768",
+    "issn": [
+      "0268-3768",
+      "1433-3015"
+    ],
+    "issn_l": "",
+    "publisher": "Springer Science and Business Media LLC",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4406593121",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S77056576",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S77056576",
+      "issn_l": "0268-3768",
+      "issn": [
+        "0268-3768",
+        "1433-3015"
+      ],
+      "type": "journal",
+      "host_organization_name": "Springer Science+Business Media",
+      "works_count": 31026,
+      "cited_by_count": 730438,
+      "two_year_mean_citedness": 3.7044257112750265,
+      "h_index": 199,
+      "i10_index": 18166,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 3.7044257112750265,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 2",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The study focuses on optimizing the properties of 4D printed polymer composites.\n2. Problem - It addresses the challenge of balancing shrinkage, mechanical strength, and shape-memory characteristics in these materials.\n3. Method - The authors employ a multi-objective optimization approach to evaluate and enhance the performance of the composites.\n4. Key Result - The optimization process yields improved material properties, demonstrating effective control over the desired behaviors.\n5. Takeaway - This research highlights the potential of multi-objective optimization in advancing the functionality of 4D printed materials.",
+    "relevance_note_en": "The summary captures the essence of the study's focus on optimization in 4D printed materials.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-08-29",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1007/s00170-025-15012-0"
+  },
+  "10.1039/d4dd00281d": {
+    "author_details": [
+      {
+        "name": "Jay I. Myung",
+        "orcid": "https://orcid.org/0000-0003-0003-6495",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Psychology, Ohio State University, Columbus, OH 43016, USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Psychology, Ohio State University, Columbus, OH 43016, USA"
+        ]
+      },
+      {
+        "name": "James R. Deneault",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Additive Manufacturing Research Engineer, Stillwater, MN 55082, USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Additive Manufacturing Research Engineer, Stillwater, MN 55082, USA"
+        ]
+      },
+      {
+        "name": "Jorge Chang",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Psychology, Ohio State University, Columbus, OH 43016, USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Psychology, Ohio State University, Columbus, OH 43016, USA"
+        ]
+      },
+      {
+        "name": "Inhan Kang",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Psychology, Ohio State University, Columbus, OH 43016, USA"
+          },
+          {
+            "name": "Department of Psychology, Yonsei University, Seoul, Korea"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Psychology, Ohio State University, Columbus, OH 43016, USA",
+          "Department of Psychology, Yonsei University, Seoul, Korea"
+        ]
+      },
+      {
+        "name": "Benji Maruyama",
+        "orcid": "https://orcid.org/0000-0002-3832-628X",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Materials and Manufacturing Directorate, Air Force Research Laboratory, Dayton, OH 45433, USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Materials and Manufacturing Directorate, Air Force Research Laboratory, Dayton, OH 45433, USA"
+        ]
+      },
+      {
+        "name": "Mark A. Pitt",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Psychology, Ohio State University, Columbus, OH 43016, USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Psychology, Ohio State University, Columbus, OH 43016, USA"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Digital Discovery",
+    "crossref_target_issn": "2635-098X",
+    "issn": [
+      "2635-098X"
+    ],
+    "issn_l": "",
+    "publisher": "Royal Society of Chemistry (RSC)",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4406087434",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S4210202120",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210202120",
+      "issn_l": "2635-098X",
+      "issn": [
+        "2635-098X"
+      ],
+      "type": "journal",
+      "host_organization_name": "Royal Society of Chemistry",
+      "works_count": 1150,
+      "cited_by_count": 10379,
+      "two_year_mean_citedness": 4.973747016706444,
+      "h_index": 43,
+      "i10_index": 306,
+      "is_core": true,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 4.973747016706444,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 2",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - The study focuses on multi-objective Bayesian optimization in the context of material extrusion.\n2. Problem - The challenge addressed is optimizing multiple parameters for efficient and accurate FDM printing.\n3. Method - The authors compare multi-objective Bayesian optimization with simulated annealing and random sampling techniques.\n4. Key Result - Multi-objective Bayesian optimization demonstrated superior efficiency in optimizing six parameters for printing the Air Force logo.\n5. Takeaway - This approach can significantly enhance the speed and accuracy of additive manufacturing processes.",
+    "relevance_note_en": "The summary captures the essence of the study's focus on optimization techniques in material extrusion.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-08-29",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1039/d4dd00281d"
+  },
+  "10.1002/adfm.202402923": {
+    "author_details": [
+      {
+        "name": "Ning Qu",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "MOE Key Laboratory of Materials Physics and Chemistry in Extraordinary Conditions Shaanxi Key Laboratory of Macromolecular Science and Technology School of Chemistry and Chemical Engineering Northwestern Polytechnical University  Xi'an 710072 P. R. China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "MOE Key Laboratory of Materials Physics and Chemistry in Extraordinary Conditions Shaanxi Key Laboratory of Macromolecular Science and Technology School of Chemistry and Chemical Engineering Northwestern Polytechnical University  Xi'an 710072 P. R. China"
+        ]
+      },
+      {
+        "name": "Guoxuan Xu",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "MOE Key Laboratory of Materials Physics and Chemistry in Extraordinary Conditions Shaanxi Key Laboratory of Macromolecular Science and Technology School of Chemistry and Chemical Engineering Northwestern Polytechnical University  Xi'an 710072 P. R. China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "MOE Key Laboratory of Materials Physics and Chemistry in Extraordinary Conditions Shaanxi Key Laboratory of Macromolecular Science and Technology School of Chemistry and Chemical Engineering Northwestern Polytechnical University  Xi'an 710072 P. R. China"
+        ]
+      },
+      {
+        "name": "Yekun Liu",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "MOE Key Laboratory of Materials Physics and Chemistry in Extraordinary Conditions Shaanxi Key Laboratory of Macromolecular Science and Technology School of Chemistry and Chemical Engineering Northwestern Polytechnical University  Xi'an 710072 P. R. China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "MOE Key Laboratory of Materials Physics and Chemistry in Extraordinary Conditions Shaanxi Key Laboratory of Macromolecular Science and Technology School of Chemistry and Chemical Engineering Northwestern Polytechnical University  Xi'an 710072 P. R. China"
+        ]
+      },
+      {
+        "name": "Mukun He",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "MOE Key Laboratory of Materials Physics and Chemistry in Extraordinary Conditions Shaanxi Key Laboratory of Macromolecular Science and Technology School of Chemistry and Chemical Engineering Northwestern Polytechnical University  Xi'an 710072 P. R. China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "MOE Key Laboratory of Materials Physics and Chemistry in Extraordinary Conditions Shaanxi Key Laboratory of Macromolecular Science and Technology School of Chemistry and Chemical Engineering Northwestern Polytechnical University  Xi'an 710072 P. R. China"
+        ]
+      },
+      {
+        "name": "Ruizhe Xing",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "MOE Key Laboratory of Materials Physics and Chemistry in Extraordinary Conditions Shaanxi Key Laboratory of Macromolecular Science and Technology School of Chemistry and Chemical Engineering Northwestern Polytechnical University  Xi'an 710072 P. R. China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "MOE Key Laboratory of Materials Physics and Chemistry in Extraordinary Conditions Shaanxi Key Laboratory of Macromolecular Science and Technology School of Chemistry and Chemical Engineering Northwestern Polytechnical University  Xi'an 710072 P. R. China"
+        ]
+      },
+      {
+        "name": "Junwei Gu",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "MOE Key Laboratory of Materials Physics and Chemistry in Extraordinary Conditions Shaanxi Key Laboratory of Macromolecular Science and Technology School of Chemistry and Chemical Engineering Northwestern Polytechnical University  Xi'an 710072 P. R. China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "MOE Key Laboratory of Materials Physics and Chemistry in Extraordinary Conditions Shaanxi Key Laboratory of Macromolecular Science and Technology School of Chemistry and Chemical Engineering Northwestern Polytechnical University  Xi'an 710072 P. R. China"
+        ]
+      },
+      {
+        "name": "Jie Kong",
+        "orcid": "https://orcid.org/0000-0002-9405-3204",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "MOE Key Laboratory of Materials Physics and Chemistry in Extraordinary Conditions Shaanxi Key Laboratory of Macromolecular Science and Technology School of Chemistry and Chemical Engineering Northwestern Polytechnical University  Xi'an 710072 P. R. China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "MOE Key Laboratory of Materials Physics and Chemistry in Extraordinary Conditions Shaanxi Key Laboratory of Macromolecular Science and Technology School of Chemistry and Chemical Engineering Northwestern Polytechnical University  Xi'an 710072 P. R. China"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Advanced Functional Materials",
+    "crossref_target_issn": "1616-301X",
+    "issn": [
+      "1616-301X",
+      "1616-3028"
+    ],
+    "issn_l": "",
+    "publisher": "Wiley",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4392703442",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S135204980",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S135204980",
+      "issn_l": "1616-301X",
+      "issn": [
+        "1616-301X",
+        "1616-3028"
+      ],
+      "type": "journal",
+      "host_organization_name": "Wiley",
+      "works_count": 42483,
+      "cited_by_count": 2508008,
+      "two_year_mean_citedness": 14.256403502995983,
+      "h_index": 476,
+      "i10_index": 26898,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "High-impact general journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 14.256403502995983,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - The study focuses on the design of metal-organic framework metamaterials for microwave absorption.\n2. Problem - Existing microwave absorbers face issues with stability and achieving a wide absorption bandwidth.\n3. Method - A multi-scale design approach is introduced, utilizing bimetallic SC-MOF crystals and 3D-printed structures to enhance absorption properties.\n4. Key Result - The developed metamaterial absorbers achieved a remarkable absorption bandwidth of 11.33 GHz and a minimum reflection loss of -61 dB.\n5. Takeaway - This innovative design strategy provides valuable insights for creating effective broadband microwave absorbers.",
+    "relevance_note_en": "The summary captures the core aspects of the research, including its focus, challenges, methods, results, and implications.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-08-29",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1002/adfm.202402923"
+  },
   "10.1002/smll.202508079": {
     "author_details": [
       {
@@ -5711,7 +6100,7 @@
     "publisher": "Springer Science and Business Media LLC",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "https://openalex.org/W4408983246",
+    "openalex_crosscheck_work_id": "",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S4210206835",
     "venue_metrics": {
@@ -19478,8 +19867,8 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
     "crossref_collection_route": "keyword_query",
@@ -19491,8 +19880,8 @@
     "issn_l": "",
     "publisher": "Elsevier BV",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4404513815",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S135472351",
     "venue_metrics": {
@@ -20227,8 +20616,8 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
     "crossref_collection_route": "issn_venue_query",
@@ -20241,8 +20630,8 @@
     "issn_l": "",
     "publisher": "Springer Science and Business Media LLC",
     "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4410034014",
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S4210206835",
     "venue_metrics": {
@@ -20793,8 +21182,8 @@
         ]
       }
     ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
     "crossref_collection_route": "issn_venue_query",
@@ -20807,8 +21196,8 @@
     "issn_l": "",
     "publisher": "Informa UK Limited",
     "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4406923665",
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S152936027",
     "venue_metrics": {
@@ -27714,8 +28103,8 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
     "crossref_collection_route": "keyword_query",
@@ -27727,8 +28116,8 @@
     "issn_l": "",
     "publisher": "Elsevier BV",
     "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4403279948",
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2898405271",
     "venue_metrics": {
@@ -31888,312 +32277,5 @@
     "last_seen_in_crossref_run": "2026-08-29",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.jmsy.2024.09.006"
-  },
-  "10.1016/j.matdes.2024.113086": {
-    "author_details": [
-      {
-        "name": "Liuchao Jin",
-        "orcid": "https://orcid.org/0000-0001-6204-1922",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Xiaoya Zhai",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Kang Wang",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Kang Zhang",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Dazhong Wu",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Aamer Nazir",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Jingchao Jiang",
-        "orcid": "https://orcid.org/0000-0002-0446-3454",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Wei-Hsin Liao",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "0264-1275"
-    ],
-    "issn_l": "",
-    "publisher": "Elsevier BV",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4400020165",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S8792693",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S8792693",
-      "issn_l": "0264-1275",
-      "issn": [
-        "0264-1275",
-        "1873-4197"
-      ],
-      "type": "journal",
-      "host_organization_name": "Elsevier BV",
-      "works_count": 14476,
-      "cited_by_count": 516286,
-      "two_year_mean_citedness": 5.543417366946779,
-      "h_index": 222,
-      "i10_index": 8917,
-      "is_core": true,
-      "is_oa": true,
-      "is_in_doaj": true
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 5.543417366946779,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 2",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The integration of big data, machine learning, and digital twins in additive manufacturing.\n2. Problem - Existing literature lacks a comprehensive framework connecting big data, machine learning, and digital twins in the context of additive manufacturing.\n3. Method - This review synthesizes current research on machine learning techniques and digital twin applications in additive manufacturing.\n4. Key Result - The paper proposes a cohesive framework that illustrates how these technologies can enhance the efficiency, accuracy, and sustainability of additive manufacturing processes.\n5. Takeaway - Integrating big data, machine learning, and digital twins presents significant opportunities for advancing additive manufacturing.",
-    "relevance_note_en": "The paper provides a comprehensive review and framework that connects key concepts in additive manufacturing.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-08-29",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1016/j.matdes.2024.113086"
-  },
-  "10.1007/s00170-024-14132-3": {
-    "author_details": [
-      {
-        "name": "Paul Qvale",
-        "orcid": "https://orcid.org/0000-0002-7007-2865",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Eirik B. Njaastad",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "International Journal of Advanced Manufacturing Technology",
-    "crossref_target_issn": "0268-3768",
-    "issn": [
-      "0268-3768",
-      "1433-3015"
-    ],
-    "issn_l": "",
-    "publisher": "Springer Science and Business Media LLC",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4400836560",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S77056576",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S77056576",
-      "issn_l": "0268-3768",
-      "issn": [
-        "0268-3768",
-        "1433-3015"
-      ],
-      "type": "journal",
-      "host_organization_name": "Springer Science+Business Media",
-      "works_count": 31026,
-      "cited_by_count": 730438,
-      "two_year_mean_citedness": 3.7044257112750265,
-      "h_index": 199,
-      "i10_index": 18166,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 3.7044257112750265,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 2",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The study focuses on toolpath planning for wire arc additive manufacturing (WAAM) in repairing metal structures.\n2. Problem - Effective repair requires accurate prediction of material deposition and appropriate toolpath strategies to address damage.\n3. Method - A new planner was developed that combines contour and raster paths, utilizing a paraboloid deposition model to adjust for uneven surfaces.\n4. Key Result - The toolpath plan successfully filled a 13 mm repair with minimal voids, achieving deposition prediction errors within ±1 mm.\n5. Takeaway - The approach enhances the reliability of WAAM repairs by improving toolpath planning and material deposition accuracy.",
-    "relevance_note_en": "The summary captures the essence of the study's contributions to toolpath planning and material deposition in WAAM.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-08-29",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1007/s00170-024-14132-3"
-  },
-  "10.1016/j.jmsy.2023.12.008": {
-    "author_details": [
-      {
-        "name": "Lixiang Zhang",
-        "orcid": "https://orcid.org/0000-0002-0329-9242",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Chen Yang",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Yan Yan",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Ze Cai",
-        "orcid": "https://orcid.org/0000-0002-1922-0471",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Yaoguang Hu",
-        "orcid": "https://orcid.org/0000-0002-5585-2556",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "Journal of Manufacturing Systems",
-    "crossref_target_issn": "0278-6125",
-    "issn": [
-      "0278-6125"
-    ],
-    "issn_l": "",
-    "publisher": "Elsevier BV",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4390645236",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S201698446",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S201698446",
-      "issn_l": "0278-6125",
-      "issn": [
-        "0278-6125",
-        "1878-6642"
-      ],
-      "type": "journal",
-      "host_organization_name": "Elsevier BV",
-      "works_count": 4126,
-      "cited_by_count": 172778,
-      "two_year_mean_citedness": 13.221574344023324,
-      "h_index": 165,
-      "i10_index": 2357,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Core manufacturing journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 13.221574344023324,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 1",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - The paper discusses the integration of digital twin technology with deep reinforcement learning for dispatching and routing automated guided vehicles.\n2. Problem - It addresses the challenges of optimizing the dispatching and routing processes in automated guided vehicle systems.\n3. Method - The authors propose a framework that utilizes deep reinforcement learning algorithms within a digital twin environment to enhance decision-making for vehicle operations.\n4. Key Result - The integration of these technologies significantly improves the efficiency and effectiveness of vehicle dispatching and routing.\n5. Takeaway - This approach demonstrates the potential of combining digital twins and AI to optimize logistics and manufacturing processes.",
-    "relevance_note_en": "The summary captures the core focus and findings of the research, emphasizing the innovative use of digital twins and AI.",
-    "abstract_used_for_summary": false,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-08-29",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1016/j.jmsy.2023.12.008"
   }
 }

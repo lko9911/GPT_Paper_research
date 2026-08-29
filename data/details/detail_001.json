@@ -64,7 +64,7 @@
     "publisher": "Elsevier BV",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7204586109",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S205118121",
     "venue_metrics": {
@@ -997,7 +997,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "last_seen_in_crossref_run": "2026-08-29",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "id": "10.1007/s00170-026-17902-3"
   },
   "10.1016/j.cemconcomp.2025.106308": {
@@ -3611,6 +3611,100 @@
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1108/rpj-08-2025-0402"
   },
+  "10.1016/j.matdes.2026.116888": {
+    "author_details": [
+      {
+        "name": "S.L. Karthik",
+        "orcid": "https://orcid.org/0009-0004-9093-9229",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "D. Manikandan",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "B. Mallikarjuna",
+        "orcid": "https://orcid.org/0000-0001-5598-0219",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Shivashankarayya Hiremath",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Materials & Design",
+    "crossref_target_issn": "0264-1275",
+    "issn": [
+      "0264-1275"
+    ],
+    "issn_l": "",
+    "publisher": "Elsevier BV",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S8792693",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S8792693",
+      "issn_l": "0264-1275",
+      "issn": [
+        "0264-1275",
+        "1873-4197"
+      ],
+      "type": "journal",
+      "host_organization_name": "Elsevier BV",
+      "works_count": 14476,
+      "cited_by_count": 516286,
+      "two_year_mean_citedness": 5.543417366946779,
+      "h_index": 222,
+      "i10_index": 8917,
+      "is_core": true,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 5.543417366946779,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 2",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - In situ fabrication and thermo-mechanical performance of alternating layer TPU-PLA multi-material structures by dual-nozzle fused deposition modelling is a 2026 paper from Materials & Design about FDM/Material extrusion and Manufacturing automation.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to FDM/Material extrusion and Manufacturing automation.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for FDM/Material extrusion and Manufacturing automation; current relevance score is 6/10.",
+    "relevance_note_en": "Relevant to the tracker through FDM/Material extrusion and Manufacturing automation; score: 6/10.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-08-29",
+    "id": "10.1016/j.matdes.2026.116888"
+  },
   "10.1002/adfm.74625": {
     "author_details": [
       {
@@ -6019,6 +6113,133 @@
     "last_seen_in_crossref_run": "2026-08-29",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.polymertesting.2026.109183"
+  },
+  "10.1007/s40964-026-01939-7": {
+    "author_details": [
+      {
+        "name": "Victor M. Villapun",
+        "orcid": "https://orcid.org/0000-0001-6400-528X",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Luke N. Carter",
+        "orcid": "https://orcid.org/0000-0003-3696-1156",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Daisy Rabbitt",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Ming Huang",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Daniel Wilmot",
+        "orcid": "https://orcid.org/0000-0003-2677-076X",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Jonathan D. Stevenson",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Richard J. M. Hague",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Sophie C. Cox",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Progress in Additive Manufacturing",
+    "crossref_target_issn": "2363-9512",
+    "issn": [
+      "2363-9512",
+      "2363-9520"
+    ],
+    "issn_l": "",
+    "publisher": "Springer Science and Business Media LLC",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S4210206835",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210206835",
+      "issn_l": "2363-9512",
+      "issn": [
+        "2363-9512",
+        "2363-9520"
+      ],
+      "type": "journal",
+      "host_organization_name": "Springer Science+Business Media",
+      "works_count": 1809,
+      "cited_by_count": 21422,
+      "two_year_mean_citedness": 4.039043824701195,
+      "h_index": 63,
+      "i10_index": 494,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 4.039043824701195,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 2",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - Enabling alloy screening via multi-material printing using a production PBF-LB machine is a 2026 paper from Progress in Additive Manufacturing about Additive manufacturing.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Additive manufacturing.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Additive manufacturing; current relevance score is 6/10.",
+    "relevance_note_en": "Relevant to the tracker through Additive manufacturing; score: 6/10.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-08-29",
+    "id": "10.1007/s40964-026-01939-7"
   },
   "10.1177/13621718261421662": {
     "author_details": [
@@ -13013,8 +13234,8 @@
         ]
       }
     ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
     "crossref_collection_route": "issn_venue_query",
@@ -13027,8 +13248,8 @@
     "issn_l": "",
     "publisher": "Wiley",
     "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W7135059950",
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S135204980",
     "venue_metrics": {
@@ -13953,8 +14174,8 @@
         ]
       }
     ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
     "crossref_collection_route": "issn_venue_query",
@@ -13966,8 +14187,8 @@
     "issn_l": "",
     "publisher": "American Association for the Advancement of Science (AAAS)",
     "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W7128200678",
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2737427234",
     "venue_metrics": {
@@ -14840,6 +15061,84 @@
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.amf.2026.200353"
   },
+  "10.1016/j.addma.2026.105363": {
+    "author_details": [
+      {
+        "name": "Hyoseop Kang",
+        "orcid": "https://orcid.org/0000-0002-8085-7287",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Woong-Ryeol Yu",
+        "orcid": "https://orcid.org/0000-0001-5916-3339",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2214-8604"
+    ],
+    "issn_l": "",
+    "publisher": "Elsevier BV",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S2764842179",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S2764842179",
+      "issn_l": "2214-7810",
+      "issn": [
+        "2214-7810",
+        "2214-8604"
+      ],
+      "type": "journal",
+      "host_organization_name": "Elsevier BV",
+      "works_count": 5106,
+      "cited_by_count": 246110,
+      "two_year_mean_citedness": 7.721680420105026,
+      "h_index": 193,
+      "i10_index": 3661,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 7.721680420105026,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - Support-free 4D printing of self-sensing shape-memory piezoelectric multifunctional structures via frontal polymerization is a 2026 paper from Additive Manufacturing about 4D printing.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to 4D printing.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for 4D printing; current relevance score is 5/10.",
+    "relevance_note_en": "Relevant to the tracker through 4D printing; score: 5/10.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-08-29",
+    "id": "10.1016/j.addma.2026.105363"
+  },
   "10.1016/j.compind.2026.104522": {
     "author_details": [
       {
@@ -15204,7 +15503,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "last_seen_in_crossref_run": "2026-08-29",
     "id": "10.1002/adfm.76743"
   },
@@ -29068,8 +29367,8 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
     "crossref_collection_route": "issn_venue_query",
@@ -29081,8 +29380,8 @@
     "issn_l": "",
     "publisher": "Springer Science and Business Media LLC",
     "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4412585581",
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "https://openalex.org/W7162500732",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S64187185",
     "venue_metrics": {
@@ -32576,8 +32875,8 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
     "crossref_collection_route": "keyword_query",
@@ -32589,8 +32888,8 @@
     "issn_l": "",
     "publisher": "Elsevier BV",
     "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W7126379370",
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S4210203200",
     "venue_metrics": {
@@ -34719,355 +35018,5 @@
     "last_seen_in_crossref_run": "2026-08-29",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.3390/polym18101213"
-  },
-  "10.1002/admt.202600001": {
-    "author_details": [
-      {
-        "name": "Xiaolin Jiang",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "State Key Laboratory of Analytical Chemistry for Life Science MOE Key Laboratory of High‐Performance Polymer Materials &amp; Technology School of Chemistry and Chemical Engineering Nanjing University  Nanjing China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "State Key Laboratory of Analytical Chemistry for Life Science MOE Key Laboratory of High‐Performance Polymer Materials &amp; Technology School of Chemistry and Chemical Engineering Nanjing University  Nanjing China"
-        ]
-      },
-      {
-        "name": "Haonan Yang",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "State Key Laboratory of Analytical Chemistry for Life Science MOE Key Laboratory of High‐Performance Polymer Materials &amp; Technology School of Chemistry and Chemical Engineering Nanjing University  Nanjing China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "State Key Laboratory of Analytical Chemistry for Life Science MOE Key Laboratory of High‐Performance Polymer Materials &amp; Technology School of Chemistry and Chemical Engineering Nanjing University  Nanjing China"
-        ]
-      },
-      {
-        "name": "Yandong Wang",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "State Key Laboratory of Analytical Chemistry for Life Science MOE Key Laboratory of High‐Performance Polymer Materials &amp; Technology School of Chemistry and Chemical Engineering Nanjing University  Nanjing China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "State Key Laboratory of Analytical Chemistry for Life Science MOE Key Laboratory of High‐Performance Polymer Materials &amp; Technology School of Chemistry and Chemical Engineering Nanjing University  Nanjing China"
-        ]
-      },
-      {
-        "name": "Zhaobo Wei",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "State Key Laboratory of Analytical Chemistry for Life Science MOE Key Laboratory of High‐Performance Polymer Materials &amp; Technology School of Chemistry and Chemical Engineering Nanjing University  Nanjing China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "State Key Laboratory of Analytical Chemistry for Life Science MOE Key Laboratory of High‐Performance Polymer Materials &amp; Technology School of Chemistry and Chemical Engineering Nanjing University  Nanjing China"
-        ]
-      },
-      {
-        "name": "Chaochen Shao",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "State Key Laboratory of Analytical Chemistry for Life Science MOE Key Laboratory of High‐Performance Polymer Materials &amp; Technology School of Chemistry and Chemical Engineering Nanjing University  Nanjing China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "State Key Laboratory of Analytical Chemistry for Life Science MOE Key Laboratory of High‐Performance Polymer Materials &amp; Technology School of Chemistry and Chemical Engineering Nanjing University  Nanjing China"
-        ]
-      },
-      {
-        "name": "Kai Xi",
-        "orcid": "https://orcid.org/0000-0002-8770-5956",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "State Key Laboratory of Analytical Chemistry for Life Science MOE Key Laboratory of High‐Performance Polymer Materials &amp; Technology School of Chemistry and Chemical Engineering Nanjing University  Nanjing China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "State Key Laboratory of Analytical Chemistry for Life Science MOE Key Laboratory of High‐Performance Polymer Materials &amp; Technology School of Chemistry and Chemical Engineering Nanjing University  Nanjing China"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2365-709X",
-      "2365-709X"
-    ],
-    "issn_l": "",
-    "publisher": "Wiley",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W7128585778",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S2765038284",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S2765038284",
-      "issn_l": "2365-709X",
-      "issn": [
-        "2365-709X"
-      ],
-      "type": "journal",
-      "host_organization_name": "Wiley",
-      "works_count": 6302,
-      "cited_by_count": 132117,
-      "two_year_mean_citedness": 4.245998315080033,
-      "h_index": 131,
-      "i10_index": 2825,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 4.245998315080033,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 2",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The study focuses on a novel approach to 3D printing ceramics using a new polysiloxane precursor resin.\n2. Problem - Existing methods for 3D printing ceramics often struggle with achieving low viscosity and high ceramic yield.\n3. Method - The researchers developed a hyperbranched polysiloxane resin that enables rapid photocuring and high ceramic yield, facilitating the creation of complex ceramic structures.\n4. Key Result - The resulting ceramic materials demonstrated impressive microwave absorption capabilities, with an effective bandwidth of 9.82 GHz.\n5. Takeaway - This innovative precursor resin has significant implications for advancing the field of 3D-printed ceramic materials.",
-    "relevance_note_en": "The summary captures the core aspects of the research, including the novel material, its properties, and its applications.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-08-29",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1002/admt.202600001"
-  },
-  "10.1007/s40964-026-01667-y": {
-    "author_details": [
-      {
-        "name": "Gilbert T. Carranza",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Christopher Curtis",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "William Stricklan",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Raymond Rumpf",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Christopher Stricklan",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2363-9512",
-      "2363-9520"
-    ],
-    "issn_l": "",
-    "publisher": "Springer Science and Business Media LLC",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W7155210678",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S4210206835",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S4210206835",
-      "issn_l": "2363-9512",
-      "issn": [
-        "2363-9512",
-        "2363-9520"
-      ],
-      "type": "journal",
-      "host_organization_name": "Springer Science+Business Media",
-      "works_count": 1809,
-      "cited_by_count": 21422,
-      "two_year_mean_citedness": 4.039043824701195,
-      "h_index": 63,
-      "i10_index": 494,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Core manufacturing journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 4.039043824701195,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 2",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - This paper discusses the development of processes for creating functionally-graded materials using direct-ink write additive manufacturing.\n2. Problem - The challenge addressed is the need for effective methods to produce functionally-graded materials that meet specific performance requirements.\n3. Method - The authors propose a systematic approach to optimize the build processes for these materials through direct-ink writing techniques.\n4. Key Result - The study demonstrates that the proposed methods can successfully enhance the material properties and performance of functionally-graded components.\n5. Takeaway - The findings highlight the potential of direct-ink write additive manufacturing in advancing the production of tailored materials for various applications.",
-    "relevance_note_en": "The summary captures the essence of the paper's focus on additive manufacturing processes for functionally-graded materials.",
-    "abstract_used_for_summary": false,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-08-29",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1007/s40964-026-01667-y"
-  },
-  "10.1038/s41598-026-52065-x": {
-    "author_details": [
-      {
-        "name": "Dhal A. Matoc",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Bhavesh Kanabar",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Amit Sata",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Minal Shukla",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Slaheddine Jarboui",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2045-2322"
-    ],
-    "issn_l": "",
-    "publisher": "Springer Science and Business Media LLC",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W7167465630",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S196734849",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S196734849",
-      "issn_l": "2045-2322",
-      "issn": [
-        "2045-2322"
-      ],
-      "type": "journal",
-      "host_organization_name": "Nature Portfolio",
-      "works_count": 303297,
-      "cited_by_count": 7878312,
-      "two_year_mean_citedness": 4.5789508110936685,
-      "h_index": 459,
-      "i10_index": 166393,
-      "is_core": true,
-      "is_oa": true,
-      "is_in_doaj": true
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 4.5789508110936685,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 2",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The integration of blockchain technology with IoT in additive manufacturing.\n2. Problem - Ensuring security and transparency in the VAT photopolymerization process.\n3. Method - Utilizing blockchain to enhance data integrity and traceability in manufacturing workflows.\n4. Key Result - The proposed system significantly improves the security and transparency of the additive manufacturing process.\n5. Takeaway - Blockchain can effectively address critical challenges in the additive manufacturing sector by providing a secure and transparent framework.",
-    "relevance_note_en": "The paper discusses a novel approach to enhance additive manufacturing processes using blockchain and IoT.",
-    "abstract_used_for_summary": false,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "not_seen_in_latest_crossref_run": false,
-    "last_seen_in_crossref_run": "2026-08-29",
-    "id": "10.1038/s41598-026-52065-x"
   }
 }
