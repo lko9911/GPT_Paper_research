@@ -51394,7 +51394,7 @@
     "publisher": "Elsevier BV",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7204633116",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S8792693",
     "venue_metrics": {
@@ -55230,9 +55230,46 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Victor Manuel Villapun Puzas",
+        "openalex_author_id": "https://openalex.org/A5091897488",
+        "orcid": "https://orcid.org/0000-0001-6400-528X",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Birmingham",
+            "ror": "https://ror.org/03angcq70",
+            "country_code": "GB",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Mechanical Engineering, University of Birmingham, Birmingham, UK"
+        ]
+      },
+      {
+        "name": "Sophie C. Cox",
+        "openalex_author_id": "https://openalex.org/A5135756429",
+        "orcid": null,
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Birmingham",
+            "ror": "https://ror.org/03angcq70",
+            "country_code": "GB",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Chemical Engineering, University of Birmingham, Birmingham, UK"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Progress in Additive Manufacturing",
     "doi": "10.1007/s40964-026-01939-7",
@@ -55252,8 +55289,8 @@
     "issn_l": "",
     "publisher": "Springer Science and Business Media LLC",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7204623115",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S4210206835",
     "venue_metrics": {
@@ -68483,7 +68520,7 @@
     "publisher": "Elsevier BV",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7160243458",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2764842179",
     "venue_metrics": {
