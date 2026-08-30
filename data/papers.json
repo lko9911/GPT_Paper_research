@@ -435,9 +435,58 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Melanie L. Hart",
+        "openalex_author_id": "https://openalex.org/A5065325280",
+        "orcid": "https://orcid.org/0000-0002-1876-2201",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Freiburg",
+            "ror": "https://ror.org/0245cg223",
+            "country_code": "DE",
+            "type": "education"
+          },
+          {
+            "name": "University Medical Center Freiburg",
+            "ror": "https://ror.org/03vzbgh69",
+            "country_code": "DE",
+            "type": "healthcare"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Medical Center - University of Freiburg"
+        ]
+      },
+      {
+        "name": "Michael Seidenstuecker",
+        "openalex_author_id": "https://openalex.org/A5063087515",
+        "orcid": "https://orcid.org/0000-0001-6643-6358",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Freiburg",
+            "ror": "https://ror.org/0245cg223",
+            "country_code": "DE",
+            "type": "education"
+          },
+          {
+            "name": "University Medical Center Freiburg",
+            "ror": "https://ror.org/03vzbgh69",
+            "country_code": "DE",
+            "type": "healthcare"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Medical Center - University of Freiburg"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Biomedical Materials",
     "doi": "10.1088/1748-605x/aea047",
@@ -457,7 +506,7 @@
     "issn_l": "",
     "publisher": "IOP Publishing",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7204520752",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S110088896",
@@ -7658,9 +7707,9 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Zhenlu Xu",
-        "openalex_author_id": "https://openalex.org/A5056473819",
-        "orcid": "https://orcid.org/0009-0007-0580-017X",
+        "name": "Wenjun Xu",
+        "openalex_author_id": "https://openalex.org/A5059180329",
+        "orcid": "https://orcid.org/0000-0001-5370-3437",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -40293,9 +40342,9 @@
     ],
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "ACS Applied Materials & Interfaces",
+    "crossref_target_issn": "1944-8244",
     "issn": [
       "1944-8244",
       "1944-8252"
@@ -45946,9 +45995,53 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Zhengzhi Mu",
+        "openalex_author_id": "https://openalex.org/A5101853950",
+        "orcid": "https://orcid.org/0000-0001-9200-5498",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Jilin University",
+            "ror": "https://ror.org/00js3aw79",
+            "country_code": "CN",
+            "type": "education"
+          },
+          {
+            "name": "Liaoning Academy of Materials",
+            "ror": "https://ror.org/0394yh759",
+            "country_code": null,
+            "type": "facility"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Institute of Structured and Architected Materials, Liaoning Academy of Materials, Shenyang, 110167, China",
+          "Key Laboratory of Bionic Engineering, Ministry of Education, Jilin University, Changchun, 130022, China"
+        ]
+      },
+      {
+        "name": "Fu Liu",
+        "openalex_author_id": "https://openalex.org/A5148560164",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Jilin University",
+            "ror": "https://ror.org/00js3aw79",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "College of Communication Engineering, Jilin University, Changchun, 130022, China"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Thin-Walled Structures",
     "doi": "10.1016/j.tws.2026.115554",
@@ -45967,7 +46060,7 @@
     "issn_l": "",
     "publisher": "Elsevier BV",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7204586109",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S205118121",
@@ -87575,7 +87668,7 @@
         "name": "Hong Wang",
         "openalex_author_id": null,
         "orcid": "https://orcid.org/0000-0001-6799-1732",
-        "position": "middle",
+        "position": "last",
         "is_corresponding": true,
         "institutions": [
           {
@@ -108177,17 +108270,11 @@
     "corresponding_authors": [
       {
         "name": "Maria A. Bieberich",
-        "openalex_author_id": null,
-        "orcid": null,
-        "position": "middle",
+        "openalex_author_id": "https://openalex.org/A5081851152",
+        "orcid": "https://orcid.org/0000-0002-1518-5330",
+        "position": "first",
         "is_corresponding": true,
         "institutions": [
-          {
-            "name": "University of Iowa",
-            "ror": "https://ror.org/036jqmy94",
-            "country_code": "US",
-            "type": "education"
-          },
           {
             "name": "University of Maryland, Baltimore County",
             "ror": "https://ror.org/02qskvh78",
@@ -108196,8 +108283,7 @@
           }
         ],
         "raw_affiliation_strings": [
-          "University of Maryland, Baltimore County, Baltimore, Maryland, USA",
-          "Institute for Vision Research, Carver College of Medicine, University of Iowa, Iowa City, Iowa, USA"
+          "University of Maryland, Baltimore County, Baltimore, Maryland, USA"
         ]
       },
       {
@@ -129419,8 +129505,8 @@
     "corresponding_authors": [
       {
         "name": "Cheng Zhang",
-        "openalex_author_id": null,
-        "orcid": null,
+        "openalex_author_id": "https://openalex.org/A5100769098",
+        "orcid": "https://orcid.org/0000-0001-8282-9901",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -145705,7 +145791,7 @@
     "corresponding_authors": [
       {
         "name": "Aoming Zhang",
-        "openalex_author_id": null,
+        "openalex_author_id": "https://openalex.org/A5111021439",
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -169481,7 +169567,7 @@
         "name": "Luquan Ren",
         "openalex_author_id": null,
         "orcid": null,
-        "position": "middle",
+        "position": "last",
         "is_corresponding": true,
         "institutions": [
           {
@@ -182523,8 +182609,8 @@
     "corresponding_authors": [
       {
         "name": "Ning Li",
-        "openalex_author_id": null,
-        "orcid": null,
+        "openalex_author_id": "https://openalex.org/A5089190523",
+        "orcid": "https://orcid.org/0000-0002-7994-9504",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -183970,8 +184056,8 @@
     "corresponding_authors": [
       {
         "name": "Xinyu Wang",
-        "openalex_author_id": "https://openalex.org/A5100352846",
-        "orcid": "https://orcid.org/0009-0001-2925-1466",
+        "openalex_author_id": null,
+        "orcid": null,
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -184029,7 +184115,7 @@
         "name": "Xiaofeng Wang",
         "openalex_author_id": null,
         "orcid": "https://orcid.org/0000-0002-9913-1064",
-        "position": "middle",
+        "position": "last",
         "is_corresponding": true,
         "institutions": [
           {
@@ -260321,10 +260407,10 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Ratnesh Kumar Raj Singh",
-        "openalex_author_id": "https://openalex.org/A5066015004",
-        "orcid": "https://orcid.org/0000-0001-9377-6753",
-        "position": "middle",
+        "name": "Manish Pratap Singh",
+        "openalex_author_id": "https://openalex.org/A5021211339",
+        "orcid": "https://orcid.org/0000-0002-9530-2348",
+        "position": "first",
         "is_corresponding": true,
         "institutions": [
           {
@@ -277791,7 +277877,7 @@
       },
       {
         "name": "Zihuan Chen",
-        "openalex_author_id": "https://openalex.org/A5024222220",
+        "openalex_author_id": null,
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -279043,7 +279129,7 @@
       },
       {
         "name": "Huanyue Zhang",
-        "openalex_author_id": "https://openalex.org/A5014806689",
+        "openalex_author_id": null,
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -279064,7 +279150,7 @@
         "raw_affiliation_strings": [
           "Department of Orthopedics, Central Hospital of Dalian University of Technology, Dalian, People’s Republic of China",
           "Instrumental Analysis Center, Dalian University of Technology, Dalian, People’s Republic of China",
-          "Instrumental Analysis Center, Dalian University of Technology, Dalian, People's Republic of China"
+          "Department of Orthopedics, Central Hospital of Dalian University of Technology, Dalian, People's Republic of China"
         ]
       },
       {
@@ -310315,9 +310401,9 @@
     ],
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Additive Manufacturing",
+    "crossref_target_issn": "2214-8604",
     "issn": [
       "2214-8604"
     ],
