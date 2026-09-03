@@ -1,4 +1,107 @@
 {
+  "10.1109/tla.2024.10620386": {
+    "author_details": [
+      {
+        "name": "Joao Vítor Arantes Cabral",
+        "orcid": "https://orcid.org/0000-0001-7045-1614",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Mechanical Engineering at the University of Brasilia"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering at the University of Brasilia"
+        ]
+      },
+      {
+        "name": "Alberto José Álvares",
+        "orcid": "https://orcid.org/0000-0001-6745-1437",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Mechanical Engineering at the University of Brasilia"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering at the University of Brasilia"
+        ]
+      },
+      {
+        "name": "Guilherme Caribé de Carvalho",
+        "orcid": "https://orcid.org/0000-0002-7426-0687",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Mechanical Engineering at the University of Brasilia"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering at the University of Brasilia"
+        ]
+      }
+    ],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "1548-0992"
+    ],
+    "issn_l": "",
+    "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "https://openalex.org/W4401210382",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S86124554",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S86124554",
+      "issn_l": "1548-0992",
+      "issn": [
+        "1548-0992"
+      ],
+      "type": "journal",
+      "host_organization_name": "Institute of Electrical and Electronics Engineers",
+      "works_count": 5019,
+      "cited_by_count": 31548,
+      "two_year_mean_citedness": 2.0082872928176796,
+      "h_index": 45,
+      "i10_index": 1026,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 2.0082872928176796,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 3",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The paper discusses the implementation of a Digital Twin for a robotic cell in additive manufacturing.\n2. Problem - It addresses the challenges of monitoring and ensuring quality in additive manufacturing processes.\n3. Method - The authors propose a Digital Twin architecture based on the ISO 23247 standard, focusing on data collection and cloud storage.\n4. Key Result - The framework allows for near real-time simulation and analysis of process data to identify instabilities.\n5. Takeaway - Integrating Digital Twin technology enhances the capabilities of additive manufacturing by improving process monitoring and quality assurance.",
+    "relevance_note_en": "The paper is highly relevant as it explores advanced technologies in additive manufacturing.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-09-03",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1109/tla.2024.10620386"
+  },
   "10.1016/j.ifacol.2025.01.106": {
     "author_details": [
       {
@@ -31561,128 +31664,5 @@
     "last_seen_in_crossref_run": "2026-09-03",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1126/sciadv.adl1549"
-  },
-  "10.1089/3dp.2023.0198": {
-    "author_details": [
-      {
-        "name": "Vera G. Kortman",
-        "orcid": "https://orcid.org/0000-0002-2370-0013",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of BioMechanical Engineering, Faculty of 3mE, Delft University of Technology, Delft, the Netherlands."
-          },
-          {
-            "name": "Department of Marine and Transport Technology, Faculty of 3mE, Delft University of Technology, Delft, the Netherlands."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of BioMechanical Engineering, Faculty of 3mE, Delft University of Technology, Delft, the Netherlands.",
-          "Department of Marine and Transport Technology, Faculty of 3mE, Delft University of Technology, Delft, the Netherlands."
-        ]
-      },
-      {
-        "name": "Ellen de Vries",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of BioMechanical Engineering, Faculty of 3mE, Delft University of Technology, Delft, the Netherlands."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of BioMechanical Engineering, Faculty of 3mE, Delft University of Technology, Delft, the Netherlands."
-        ]
-      },
-      {
-        "name": "Jovana Jovanova",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Marine and Transport Technology, Faculty of 3mE, Delft University of Technology, Delft, the Netherlands."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Marine and Transport Technology, Faculty of 3mE, Delft University of Technology, Delft, the Netherlands."
-        ]
-      },
-      {
-        "name": "Aimée Sakes",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of BioMechanical Engineering, Faculty of 3mE, Delft University of Technology, Delft, the Netherlands."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of BioMechanical Engineering, Faculty of 3mE, Delft University of Technology, Delft, the Netherlands."
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2329-7662",
-      "2329-7670"
-    ],
-    "issn_l": "",
-    "publisher": "SAGE Publications",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4389988724",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S4210174904",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S4210174904",
-      "issn_l": "2329-7662",
-      "issn": [
-        "2329-7662",
-        "2329-7670"
-      ],
-      "type": "journal",
-      "host_organization_name": "Mary Ann Liebert, Inc.",
-      "works_count": 768,
-      "cited_by_count": 14262,
-      "two_year_mean_citedness": 2.4384615384615387,
-      "h_index": 55,
-      "i10_index": 325,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Core manufacturing journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 2.4384615384615387,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 3",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - The review focuses on magnetic stimulation in four-dimensional (4D) printing for creating shape-morphing structures.\n2. Problem - It addresses the challenges of developing effective magnetically responsive materials that can morph in response to stimuli.\n3. Method - The authors conducted a literature review to analyze various strategies and manufacturing techniques for magnetically stimulated 4D-printed structures.\n4. Key Result - The findings highlight the impact of magnetic particle orientation and the potential for both single and multi-stimuli responsive designs.\n5. Takeaway - This overview serves as a resource for selecting appropriate manufacturing methods to achieve desired shape-morphing effects in smart materials.",
-    "relevance_note_en": "The summary captures the essence of the review's focus on magnetic stimulation and 4D printing.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-09-03",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1089/3dp.2023.0198"
   }
 }
