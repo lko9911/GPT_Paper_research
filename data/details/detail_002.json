@@ -1,4 +1,164 @@
 {
+  "10.1002/advs.202516989": {
+    "author_details": [
+      {
+        "name": "Mengtao Wang",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Electronic and Computer Engineering Ritsumeikan University Shiga 525‐8577 Japan"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Electronic and Computer Engineering Ritsumeikan University Shiga 525‐8577 Japan"
+        ]
+      },
+      {
+        "name": "Yifan Xu",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Electronic and Computer Engineering Ritsumeikan University Shiga 525‐8577 Japan"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Electronic and Computer Engineering Ritsumeikan University Shiga 525‐8577 Japan"
+        ]
+      },
+      {
+        "name": "Zaiyang Liu",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Robotics Ritsumeikan University Shiga 525‐8577 Japan"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Robotics Ritsumeikan University Shiga 525‐8577 Japan"
+        ]
+      },
+      {
+        "name": "Hidemitsu Furukawa",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Mechanical Systems Engineering Yamagata University Yonezawa 992‐8510 Japan"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Systems Engineering Yamagata University Yonezawa 992‐8510 Japan"
+        ]
+      },
+      {
+        "name": "Zhongkui Wang",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Robotics Ritsumeikan University Shiga 525‐8577 Japan"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Robotics Ritsumeikan University Shiga 525‐8577 Japan"
+        ]
+      },
+      {
+        "name": "Ren Xu",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "School of Medicine Xiamen University Xiamen Fujian 361100 China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Medicine Xiamen University Xiamen Fujian 361100 China"
+        ]
+      },
+      {
+        "name": "Lin Meng",
+        "orcid": "https://orcid.org/0000-0003-4351-6923",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Electronic and Computer Engineering Ritsumeikan University Shiga 525‐8577 Japan"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Electronic and Computer Engineering Ritsumeikan University Shiga 525‐8577 Japan"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Advanced Science",
+    "crossref_target_issn": "2198-3844",
+    "issn": [
+      "2198-3844",
+      "2198-3844"
+    ],
+    "issn_l": "",
+    "publisher": "Wiley",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4416723823",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S2737737698",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S2737737698",
+      "issn_l": "2198-3844",
+      "issn": [
+        "2198-3844"
+      ],
+      "type": "journal",
+      "host_organization_name": "Wiley",
+      "works_count": 20558,
+      "cited_by_count": 647035,
+      "two_year_mean_citedness": 8.402641353693769,
+      "h_index": 276,
+      "i10_index": 9993,
+      "is_core": true,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
+    "journal_quality": {
+      "label": "High-impact general journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 8.402641353693769,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - The study focuses on predicting deformation in 4D-printed active composite structures.\n2. Problem - The exponential growth of design space due to increased voxel numbers complicates deformation prediction.\n3. Method - A data mining-based approach is introduced, utilizing a feature database and a curvature-driven sequence point generation algorithm for efficient deformation predictions.\n4. Key Result - This method outperforms traditional finite element analysis in efficiency and accuracy, particularly for structures not included in the training data of deep learning models.\n5. Takeaway - An interactive web platform is developed to facilitate user customization of voxel encodings and streamline deformation predictions for complex intelligent structures.",
+    "relevance_note_en": "The paper presents a novel method for deformation prediction that addresses significant challenges in 4D printing.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-09-04",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1002/advs.202516989"
+  },
   "10.1177/23297662261443751": {
     "author_details": [
       {
@@ -31936,105 +32096,5 @@
     "last_seen_in_crossref_run": "2026-09-04",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1063/5.0271688"
-  },
-  "10.52152/d11346": {
-    "author_details": [
-      {
-        "name": "JOSÉ ANTONIO GOMEZ ALONSO",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "ALEXANDRA ALLUE SALVADOR",
-        "orcid": "https://orcid.org/0000-0003-3820-1425",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "SANTIAGO NEIRA HERNANDEZ",
-        "orcid": "https://orcid.org/0000-0001-5685-4150",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "GAIKER (España)"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "GAIKER (España)"
-        ]
-      },
-      {
-        "name": "DIEGO PINEDA MATABUENA",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "1989-1490"
-    ],
-    "issn_l": "",
-    "publisher": "UK Zhende Publishing Limited Company",
-    "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "https://openalex.org/W4408047608",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S135704260",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S135704260",
-      "issn_l": "0012-7361",
-      "issn": [
-        "0012-7361",
-        "1989-1490"
-      ],
-      "type": "journal",
-      "host_organization_name": "National University of Colombia",
-      "works_count": 1877,
-      "cited_by_count": 3190,
-      "two_year_mean_citedness": 0.2962962962962963,
-      "h_index": 14,
-      "i10_index": 51,
-      "is_core": false,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 0.2962962962962963,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 4",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The study focuses on the use of 3D printing for creating multi-material hollow polymer parts.\n2. Problem - There is a need for efficient production methods for complex multi-material components, particularly for applications like hydrogen storage tanks.\n3. Method - The research employs various 3D printing techniques, including extrusion and laser sintering, combined with post-processing using reactive resin casting.\n4. Key Result - The developed hollow multi-material liner demonstrated the ability to endure stresses from filament winding, enhancing the functionality of hydrogen tanks.\n5. Takeaway - This approach highlights the potential of 3D printing as a viable method for manufacturing advanced components in pressurized gas storage applications.",
-    "relevance_note_en": "The paper presents innovative methods in 3D printing for multi-material applications, relevant to current advancements in manufacturing technologies.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-09-04",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.52152/d11346"
   }
 }

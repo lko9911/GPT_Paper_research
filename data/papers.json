@@ -7707,9 +7707,9 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Wenjun Xu",
-        "openalex_author_id": "https://openalex.org/A5059180329",
-        "orcid": "https://orcid.org/0000-0001-5370-3437",
+        "name": "Zhenlu Xu",
+        "openalex_author_id": "https://openalex.org/A5056473819",
+        "orcid": "https://orcid.org/0009-0007-0580-017X",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -8148,9 +8148,9 @@
     ],
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "3D Printing and Additive Manufacturing",
-    "crossref_target_issn": "2329-7662",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
     "issn": [
       "2329-7662",
       "2329-7670"
@@ -28158,9 +28158,9 @@
     "corresponding_authors": [
       {
         "name": "Assia Belbachir",
-        "openalex_author_id": "https://openalex.org/A5051482797",
+        "openalex_author_id": null,
         "orcid": "https://orcid.org/0000-0002-1294-8478",
-        "position": "first",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -28182,21 +28182,21 @@
         "is_corresponding": true,
         "institutions": [
           {
-            "name": "SINTEF",
-            "ror": "https://ror.org/01f677e56",
-            "country_code": "NO",
-            "type": "facility"
-          },
-          {
             "name": "NORCE Research AS",
             "ror": "https://ror.org/02gagpf75",
             "country_code": "NO",
             "type": "facility"
+          },
+          {
+            "name": "Montimage (France)",
+            "ror": "https://ror.org/02a8qtz61",
+            "country_code": "FR",
+            "type": "company"
           }
         ],
         "raw_affiliation_strings": [
           "NORCE Research AS, Grimstad, Norway",
-          "SINTEF AS, Oslo/Porsgrunn, Norway"
+          "Montimage, Paris, France"
         ]
       }
     ],
@@ -29898,9 +29898,57 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Kunfeng Chen",
+        "openalex_author_id": "https://openalex.org/A5018357834",
+        "orcid": "https://orcid.org/0000-0001-9253-1885",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Shandong University",
+            "ror": "https://ror.org/0207yh398",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Institute of Novel Semiconductors, State Key Laboratory of Crystal Materials Shandong University  Jinan China"
+        ]
+      },
+      {
+        "name": "Jun Liu",
+        "openalex_author_id": "https://openalex.org/A5100361915",
+        "orcid": "https://orcid.org/0000-0002-7078-8046",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "South China University of Technology",
+            "ror": "https://ror.org/0530pts50",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Materials Science and Engineering and Guangdong Provincial Key Laboratory of Advanced Energy Storage Materials South China University of Technology  Guangzhou China"
+        ]
+      },
+      {
+        "name": "Dongfeng Xue",
+        "openalex_author_id": "https://openalex.org/A5052820004",
+        "orcid": "https://orcid.org/0000-0002-0748-0962",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [],
+        "raw_affiliation_strings": [
+          "Shenzhen Institute for Advanced Study University of Electronic Science and Technology of China  Shenzhen China"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Advanced Functional Materials",
     "doi": "10.1002/adfm.78176",
@@ -29920,8 +29968,8 @@
     "issn_l": "",
     "publisher": "Wiley",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7207730127",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S135204980",
     "venue_metrics": {
@@ -35572,7 +35620,7 @@
     "corresponding_authors": [
       {
         "name": "Yang Zhang",
-        "openalex_author_id": null,
+        "openalex_author_id": "https://openalex.org/A5101942357",
         "orcid": "https://orcid.org/0000-0002-3214-766X",
         "position": "middle",
         "is_corresponding": true,
@@ -37092,6 +37140,214 @@
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 8.200902151283831,
     "openalex_venue_rank_percentile": 0.8706,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+  },
+  {
+    "id": "10.1097/mao.0000000000005062",
+    "title": "A Novel Tool to Create Digital Twin Temporal Bone Models for Virtual and 3D-Printing: Proof-of-Concept and Evaluation",
+    "authors": [
+      "Peter Trier Mikkelsen",
+      "Adam Omari",
+      "Andreas Frithioff",
+      "Thomas Winther Frederiksen",
+      "Martin Reznitsky",
+      "Mads Sølvsten Sørensen",
+      "Steven Arild Wuyts Andersen"
+    ],
+    "author_details": [
+      {
+        "name": "Peter Trier Mikkelsen",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Otorhinolaryngology—Head and Neck Surgery, Copenhagen Hearing and Balance Center, Rigshospitalet, Copenhagen"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Otorhinolaryngology—Head and Neck Surgery, Copenhagen Hearing and Balance Center, Rigshospitalet, Copenhagen"
+        ]
+      },
+      {
+        "name": "Adam Omari",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Otorhinolaryngology—Head and Neck Surgery, Copenhagen Hearing and Balance Center, Rigshospitalet, Copenhagen"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Otorhinolaryngology—Head and Neck Surgery, Copenhagen Hearing and Balance Center, Rigshospitalet, Copenhagen"
+        ]
+      },
+      {
+        "name": "Andreas Frithioff",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Otorhinolaryngology—Head and Neck Surgery, Copenhagen Hearing and Balance Center, Rigshospitalet, Copenhagen"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Otorhinolaryngology—Head and Neck Surgery, Copenhagen Hearing and Balance Center, Rigshospitalet, Copenhagen"
+        ]
+      },
+      {
+        "name": "Thomas Winther Frederiksen",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Otorhinolaryngology, Aarhus University Hospital, Aarhus"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Otorhinolaryngology, Aarhus University Hospital, Aarhus"
+        ]
+      },
+      {
+        "name": "Martin Reznitsky",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Otorhinolaryngology—Head and Neck Surgery, Copenhagen Hearing and Balance Center, Rigshospitalet, Copenhagen"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Otorhinolaryngology—Head and Neck Surgery, Copenhagen Hearing and Balance Center, Rigshospitalet, Copenhagen"
+        ]
+      },
+      {
+        "name": "Mads Sølvsten Sørensen",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Otorhinolaryngology—Head and Neck Surgery, Copenhagen Hearing and Balance Center, Rigshospitalet, Copenhagen"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Otorhinolaryngology—Head and Neck Surgery, Copenhagen Hearing and Balance Center, Rigshospitalet, Copenhagen"
+        ]
+      },
+      {
+        "name": "Steven Arild Wuyts Andersen",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Otorhinolaryngology—Head and Neck Surgery, Copenhagen Hearing and Balance Center, Rigshospitalet, Copenhagen"
+          },
+          {
+            "name": "Department of Clinical Medicine, Faculty of Health & Medical Sciences, University of Copenhagen, Copenhagen"
+          },
+          {
+            "name": "Copenhagen Academy for Medical Education and Simulation (CAMES), Center for HR & Education, RegionH, Denmark"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Otorhinolaryngology—Head and Neck Surgery, Copenhagen Hearing and Balance Center, Rigshospitalet, Copenhagen",
+          "Department of Clinical Medicine, Faculty of Health & Medical Sciences, University of Copenhagen, Copenhagen",
+          "Copenhagen Academy for Medical Education and Simulation (CAMES), Center for HR & Education, RegionH, Denmark"
+        ]
+      }
+    ],
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "year": 2026,
+    "venue": "Otology & Neurotology",
+    "doi": "10.1097/mao.0000000000005062",
+    "url": "https://doi.org/10.1097/mao.0000000000005062",
+    "source": [
+      "Crossref"
+    ],
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "1531-7129",
+      "1537-4505"
+    ],
+    "issn_l": "",
+    "publisher": "Ovid Technologies (Wolters Kluwer Health)",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S19176856",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S19176856",
+      "issn_l": "1531-7129",
+      "issn": [
+        "1531-7129",
+        "1537-4505"
+      ],
+      "type": "journal",
+      "host_organization_name": "Lippincott Williams & Wilkins",
+      "works_count": 8730,
+      "cited_by_count": 199358,
+      "two_year_mean_citedness": 1.3927392739273927,
+      "h_index": 141,
+      "i10_index": 4512,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 1.3927392739273927,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 4",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "publication_type": "journal_article",
+    "venue_trust": "trusted",
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "is_core_venue": false,
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "categories": [
+      "Multi-material AM"
+    ],
+    "tags": [
+      "Digital Twins"
+    ],
+    "relevance_score": 7,
+    "curation_priority": false,
+    "ai_summary_en": "1. Topic - A Novel Tool to Create Digital Twin Temporal Bone Models for Virtual and 3D-Printing: Proof-of-Concept and Evaluation is a 2026 paper from Otology & Neurotology about Digital Twins.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Digital Twins.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Digital Twins; current relevance score is 7/10.",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_en": "Relevant to the tracker through Digital Twins; score: 7/10.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-09-04",
+    "last_updated": "2026-09-04",
+    "is_weekly_new": true,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-09-04",
+    "openalex_venue_rank": "Rank 4",
+    "openalex_venue_rank_number": 4,
+    "openalex_venue_rank_score": 1.3927392739273927,
+    "openalex_venue_rank_percentile": 0.2411,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
@@ -45140,7 +45396,7 @@
     "first_added": "2026-07-03",
     "last_updated": "2026-09-04",
     "is_weekly_new": false,
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "last_seen_in_crossref_run": "2026-09-04",
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
@@ -80369,7 +80625,7 @@
     "publisher": "Wiley",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "https://openalex.org/W7124136841",
+    "openalex_crosscheck_work_id": "",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S99352657",
     "venue_metrics": {
@@ -87101,7 +87357,7 @@
     "corresponding_authors": [
       {
         "name": "Sachin Singh",
-        "openalex_author_id": null,
+        "openalex_author_id": "https://openalex.org/A5100604698",
         "orcid": "https://orcid.org/0000-0003-0079-6064",
         "position": "middle",
         "is_corresponding": true,
@@ -89260,7 +89516,7 @@
         "name": "Hong Wang",
         "openalex_author_id": null,
         "orcid": "https://orcid.org/0000-0001-6799-1732",
-        "position": "middle",
+        "position": "last",
         "is_corresponding": true,
         "institutions": [
           {
@@ -91649,9 +91905,69 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Ricky D. Wildman",
+        "openalex_author_id": "https://openalex.org/A5008929056",
+        "orcid": "https://orcid.org/0000-0003-2329-8471",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Nottingham",
+            "ror": "https://ror.org/01ee9ar58",
+            "country_code": "GB",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Centre of Additive Manufacturing, Faculty of Engineering, Engineering, University Park, University of Nottingham, Nottingham, NG7 2RD, UK. ricky.wildman@nottingham.ac.uk",
+          "Department of Chemical and Environmental Engineering, Faculty of Engineering, University Park, University of Nottingham, Nottingham, NG7 2RD, UK. ricky.wildman@nottingham.ac.uk",
+          "University of Nottingham"
+        ]
+      },
+      {
+        "name": "Hayden Taylor",
+        "openalex_author_id": "https://openalex.org/A5060055066",
+        "orcid": "https://orcid.org/0000-0001-9810-6505",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of California, Berkeley",
+            "ror": "https://ror.org/01an7q238",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Dept. of Mechanical Engineering, University of California, Berkeley, CA, USA. hkt@berkeley.edu",
+          "University of California, Berkeley"
+        ]
+      },
+      {
+        "name": "Derek J. Irvine",
+        "openalex_author_id": "https://openalex.org/A5064718443",
+        "orcid": "https://orcid.org/0000-0003-1461-9851",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Nottingham",
+            "ror": "https://ror.org/01ee9ar58",
+            "country_code": "GB",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Centre of Additive Manufacturing, Faculty of Engineering, Engineering, University Park, University of Nottingham, Nottingham, NG7 2RD, UK. derek.irvine@nottingham.ac.uk",
+          "Department of Chemical and Environmental Engineering, Faculty of Engineering, University Park, University of Nottingham, Nottingham, NG7 2RD, UK. derek.irvine@nottingham.ac.uk",
+          "University of Nottingham"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Nature Communications",
     "doi": "10.1038/s41467-026-73456-8",
@@ -91670,8 +91986,8 @@
     "issn_l": "",
     "publisher": "Springer Science and Business Media LLC",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "https://openalex.org/W7162500732",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4412585581",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S64187185",
     "venue_metrics": {
@@ -93668,9 +93984,9 @@
     ],
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "3D Printing and Additive Manufacturing",
+    "crossref_target_issn": "2329-7662",
     "issn": [
       "2329-7662",
       "2329-7670"
@@ -99593,7 +99909,7 @@
       },
       {
         "name": "Yonggang Yang",
-        "openalex_author_id": null,
+        "openalex_author_id": "https://openalex.org/A5001573736",
         "orcid": "https://orcid.org/0000-0003-0185-7471",
         "position": "last",
         "is_corresponding": true,
@@ -131593,8 +131909,8 @@
     "corresponding_authors": [
       {
         "name": "Cheng Zhang",
-        "openalex_author_id": "https://openalex.org/A5100769098",
-        "orcid": "https://orcid.org/0000-0001-8282-9901",
+        "openalex_author_id": null,
+        "orcid": null,
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -147879,7 +148195,7 @@
     "corresponding_authors": [
       {
         "name": "Aoming Zhang",
-        "openalex_author_id": "https://openalex.org/A5111021439",
+        "openalex_author_id": null,
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -171286,7 +171602,7 @@
         "name": "Luquan Ren",
         "openalex_author_id": null,
         "orcid": null,
-        "position": "middle",
+        "position": "last",
         "is_corresponding": true,
         "institutions": [
           {
@@ -184328,8 +184644,8 @@
     "corresponding_authors": [
       {
         "name": "Ning Li",
-        "openalex_author_id": "https://openalex.org/A5089190523",
-        "orcid": "https://orcid.org/0000-0002-7994-9504",
+        "openalex_author_id": null,
+        "orcid": null,
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -219121,9 +219437,9 @@
     "corresponding_authors": [
       {
         "name": "Songhao Wang",
-        "openalex_author_id": "https://openalex.org/A5057228007",
+        "openalex_author_id": null,
         "orcid": "https://orcid.org/0000-0003-3643-4698",
-        "position": "first",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -247717,10 +248033,10 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Likun Wang",
-        "openalex_author_id": "https://openalex.org/A5100623561",
-        "orcid": "https://orcid.org/0000-0001-5646-9746",
-        "position": "middle",
+        "name": "Zi Wang",
+        "openalex_author_id": "https://openalex.org/A5100338326",
+        "orcid": "https://orcid.org/0000-0001-9081-7185",
+        "position": "first",
         "is_corresponding": true,
         "institutions": [
           {
@@ -279596,7 +279912,7 @@
       },
       {
         "name": "Zihuan Chen",
-        "openalex_author_id": "https://openalex.org/A5024222220",
+        "openalex_author_id": null,
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -280848,7 +281164,7 @@
       },
       {
         "name": "Huanyue Zhang",
-        "openalex_author_id": "https://openalex.org/A5014806689",
+        "openalex_author_id": null,
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -280869,7 +281185,7 @@
         "raw_affiliation_strings": [
           "Department of Orthopedics, Central Hospital of Dalian University of Technology, Dalian, People’s Republic of China",
           "Instrumental Analysis Center, Dalian University of Technology, Dalian, People’s Republic of China",
-          "Instrumental Analysis Center, Dalian University of Technology, Dalian, People's Republic of China"
+          "Department of Orthopedics, Central Hospital of Dalian University of Technology, Dalian, People's Republic of China"
         ]
       },
       {
@@ -323565,7 +323881,7 @@
         "name": "Ling Wang",
         "openalex_author_id": "https://openalex.org/A5115592675",
         "orcid": "https://orcid.org/0000-0002-5176-7469",
-        "position": "middle",
+        "position": "last",
         "is_corresponding": true,
         "institutions": [
           {

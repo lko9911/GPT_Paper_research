@@ -1,4 +1,83 @@
 {
+  "10.1007/s11081-026-10098-1": {
+    "author_details": [
+      {
+        "name": "Luise Blank",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Maximilian Urmann",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "1389-4420",
+      "1573-2924"
+    ],
+    "issn_l": "",
+    "publisher": "Springer Science and Business Media LLC",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4417102526",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S26994821",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S26994821",
+      "issn_l": "1389-4420",
+      "issn": [
+        "1389-4420",
+        "1573-2924"
+      ],
+      "type": "journal",
+      "host_organization_name": "Springer Science+Business Media",
+      "works_count": 1245,
+      "cited_by_count": 23960,
+      "two_year_mean_citedness": 1.6563876651982379,
+      "h_index": 65,
+      "i10_index": 528,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 1.6563876651982379,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 3",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The study focuses on optimizing multi-material structures for additive manufacturing.\n2. Problem - There is a need for effective methods to enhance the performance and efficiency of multi-material additive manufacturing processes.\n3. Method - A phase field approach is employed to facilitate the structural optimization of materials in additive manufacturing.\n4. Key Result - The proposed method demonstrates significant improvements in material distribution and structural integrity.\n5. Takeaway - This research provides a novel framework for advancing multi-material additive manufacturing through optimized design strategies.",
+    "relevance_note_en": "The paper addresses critical aspects of multi-material optimization in additive manufacturing.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-09-04",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1007/s11081-026-10098-1"
+  },
   "10.1108/rpj-11-2024-0473": {
     "author_details": [
       {
@@ -23291,7 +23370,7 @@
     "publisher": "Wiley",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "https://openalex.org/W7124136841",
+    "openalex_crosscheck_work_id": "",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S99352657",
     "venue_metrics": {
@@ -30967,8 +31046,8 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
     "crossref_collection_route": "issn_venue_query",
@@ -30980,8 +31059,8 @@
     "issn_l": "",
     "publisher": "Springer Science and Business Media LLC",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "https://openalex.org/W7162500732",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4412585581",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S64187185",
     "venue_metrics": {
@@ -32333,9 +32412,9 @@
     "corresponding_author_source": "openalex_cross_check",
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "3D Printing and Additive Manufacturing",
+    "crossref_target_issn": "2329-7662",
     "issn": [
       "2329-7662",
       "2329-7670"
@@ -34827,165 +34906,5 @@
     "last_seen_in_crossref_run": "2026-09-04",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.3390/gels12020138"
-  },
-  "10.1002/advs.202516989": {
-    "author_details": [
-      {
-        "name": "Mengtao Wang",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Electronic and Computer Engineering Ritsumeikan University Shiga 525‐8577 Japan"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Electronic and Computer Engineering Ritsumeikan University Shiga 525‐8577 Japan"
-        ]
-      },
-      {
-        "name": "Yifan Xu",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Electronic and Computer Engineering Ritsumeikan University Shiga 525‐8577 Japan"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Electronic and Computer Engineering Ritsumeikan University Shiga 525‐8577 Japan"
-        ]
-      },
-      {
-        "name": "Zaiyang Liu",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Robotics Ritsumeikan University Shiga 525‐8577 Japan"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Robotics Ritsumeikan University Shiga 525‐8577 Japan"
-        ]
-      },
-      {
-        "name": "Hidemitsu Furukawa",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Mechanical Systems Engineering Yamagata University Yonezawa 992‐8510 Japan"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical Systems Engineering Yamagata University Yonezawa 992‐8510 Japan"
-        ]
-      },
-      {
-        "name": "Zhongkui Wang",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Robotics Ritsumeikan University Shiga 525‐8577 Japan"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Robotics Ritsumeikan University Shiga 525‐8577 Japan"
-        ]
-      },
-      {
-        "name": "Ren Xu",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "School of Medicine Xiamen University Xiamen Fujian 361100 China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "School of Medicine Xiamen University Xiamen Fujian 361100 China"
-        ]
-      },
-      {
-        "name": "Lin Meng",
-        "orcid": "https://orcid.org/0000-0003-4351-6923",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Electronic and Computer Engineering Ritsumeikan University Shiga 525‐8577 Japan"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Electronic and Computer Engineering Ritsumeikan University Shiga 525‐8577 Japan"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "Advanced Science",
-    "crossref_target_issn": "2198-3844",
-    "issn": [
-      "2198-3844",
-      "2198-3844"
-    ],
-    "issn_l": "",
-    "publisher": "Wiley",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4416723823",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S2737737698",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S2737737698",
-      "issn_l": "2198-3844",
-      "issn": [
-        "2198-3844"
-      ],
-      "type": "journal",
-      "host_organization_name": "Wiley",
-      "works_count": 20558,
-      "cited_by_count": 647035,
-      "two_year_mean_citedness": 8.402641353693769,
-      "h_index": 276,
-      "i10_index": 9993,
-      "is_core": true,
-      "is_oa": true,
-      "is_in_doaj": true
-    },
-    "journal_quality": {
-      "label": "High-impact general journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 8.402641353693769,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 1",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - The study focuses on predicting deformation in 4D-printed active composite structures.\n2. Problem - The exponential growth of design space due to increased voxel numbers complicates deformation prediction.\n3. Method - A data mining-based approach is introduced, utilizing a feature database and a curvature-driven sequence point generation algorithm for efficient deformation predictions.\n4. Key Result - This method outperforms traditional finite element analysis in efficiency and accuracy, particularly for structures not included in the training data of deep learning models.\n5. Takeaway - An interactive web platform is developed to facilitate user customization of voxel encodings and streamline deformation predictions for complex intelligent structures.",
-    "relevance_note_en": "The paper presents a novel method for deformation prediction that addresses significant challenges in 4D printing.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-09-04",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1002/advs.202516989"
   }
 }

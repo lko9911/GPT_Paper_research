@@ -1,4 +1,98 @@
 {
+  "10.1016/j.matdes.2025.114589": {
+    "author_details": [
+      {
+        "name": "Nick Willemstein",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Mohammad Ebrahim Imanian",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Herman van der Kooij",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Ali Sadeghi",
+        "orcid": "https://orcid.org/0000-0003-2987-9541",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "0264-1275"
+    ],
+    "issn_l": "",
+    "publisher": "Elsevier BV",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4413419288",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S8792693",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S8792693",
+      "issn_l": "0264-1275",
+      "issn": [
+        "0264-1275",
+        "1873-4197"
+      ],
+      "type": "journal",
+      "host_organization_name": "Elsevier BV",
+      "works_count": 14476,
+      "cited_by_count": 516286,
+      "two_year_mean_citedness": 5.543417366946779,
+      "h_index": 222,
+      "i10_index": 8917,
+      "is_core": true,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 5.543417366946779,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 2",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - This study investigates the use of pellet-based 3D printing for soft thermoplastic elastomers in soft robotics.\n2. Problem - The additive manufacturing of hyperelastic materials faces challenges due to a limited selection of suitable materials.\n3. Method - The authors explored 3D printing techniques for very soft thermoplastic elastomers, producing thin, airtight membranes and bending actuators.\n4. Key Result - The printed TPE membranes demonstrated significant stretchability and the ability to function as both actuators and sensors, achieving impressive performance metrics.\n5. Takeaway - The findings highlight the potential of using soft TPEs in additive manufacturing for creating versatile soft robotic components.",
+    "relevance_note_en": "The summary captures the core aspects of the research, including the topic, challenges, methods, results, and implications.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-09-04",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1016/j.matdes.2025.114589"
+  },
   "10.3390/app15052576": {
     "author_details": [
       {
@@ -32406,122 +32500,5 @@
     "last_seen_in_crossref_run": "2026-09-04",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.3390/electronics13173550"
-  },
-  "10.12688/digitaltwin.17807.2": {
-    "author_details": [
-      {
-        "name": "Guillaume Pronost",
-        "orcid": "https://orcid.org/0000-0002-0642-1709",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Université de Lorraine, ERPI"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Université de Lorraine, ERPI"
-        ]
-      },
-      {
-        "name": "Frédérique Mayer",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Université de Lorraine, ERPI"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Université de Lorraine, ERPI"
-        ]
-      },
-      {
-        "name": "Mauricio Camargo",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Université de Lorraine, ERPI"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Université de Lorraine, ERPI"
-        ]
-      },
-      {
-        "name": "Laurent Dupont",
-        "orcid": "https://orcid.org/0000-0002-8279-9690",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Université de Lorraine, ERPI"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Université de Lorraine, ERPI"
-        ]
-      }
-    ],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2752-5783"
-    ],
-    "issn_l": "",
-    "publisher": "Informa UK Limited",
-    "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "https://openalex.org/W4392596511",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S4210238617",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S4210238617",
-      "issn_l": "2752-5783",
-      "issn": [
-        "2752-5783"
-      ],
-      "type": "journal",
-      "host_organization_name": "Faculty of 1000",
-      "works_count": 190,
-      "cited_by_count": 1338,
-      "two_year_mean_citedness": 2.0,
-      "h_index": 16,
-      "i10_index": 29,
-      "is_core": false,
-      "is_oa": true,
-      "is_in_doaj": true
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 2.0,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 3",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The paper reviews the applications of digital twins in manufacturing throughout the product lifecycle.\n2. Problem - There is a need to understand the factors that facilitate or hinder the adoption of digital twins in manufacturing processes.\n3. Method - A systematic literature review was conducted, analyzing 188 scientific papers focused on digital twin applications in the manufacturing sector.\n4. Key Result - Findings indicate that while digital twins are widely referenced, their practical implementation in manufacturing remains limited, primarily focusing on production and operational phases.\n5. Takeaway - The study highlights the necessity for further exploration of digital twin applications in the design and disposal phases to enhance their integration across the product lifecycle.",
-    "relevance_note_en": "The summary captures the essence of the paper's focus on digital twins in manufacturing and their lifecycle applications.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-09-04",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.12688/digitaltwin.17807.2"
   }
 }
