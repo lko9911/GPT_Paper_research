@@ -1,4 +1,105 @@
 {
+  "10.1088/2515-7639/ade73e": {
+    "author_details": [
+      {
+        "name": "Alexander M Richter",
+        "orcid": "https://orcid.org/0000-0003-1253-1071",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Adam M Krajewski",
+        "orcid": "https://orcid.org/0000-0002-2266-0099",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Zhening Yang",
+        "orcid": "https://orcid.org/0000-0003-1850-7646",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Allison M Beese",
+        "orcid": "https://orcid.org/0000-0002-7022-3387",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Zi-Kui Liu",
+        "orcid": "https://orcid.org/0000-0003-3346-3696",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2515-7639"
+    ],
+    "issn_l": "",
+    "publisher": "IOP Publishing",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4411544940",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S4210204056",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210204056",
+      "issn_l": "2515-7639",
+      "issn": [
+        "2515-7639"
+      ],
+      "type": "journal",
+      "host_organization_name": "IOP Publishing",
+      "works_count": 577,
+      "cited_by_count": 10007,
+      "two_year_mean_citedness": 3.2615384615384615,
+      "h_index": 46,
+      "i10_index": 233,
+      "is_core": true,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 3.2615384615384615,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 3",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The paper introduces AMMap, a tool for designing additive manufacturing processes and discovering new alloys.\n2. Problem - Additive manufacturing of compositionally complex materials often leads to defects like undesired phases and cracks.\n3. Method - The tool employs thermodynamic calculations and solidification simulations to predict viable compositions and optimize path planning.\n4. Key Result - AMMap automates the design process by representing high-dimensional chemical systems as graphs, facilitating efficient exploration and optimization.\n5. Takeaway - This innovative approach enhances the manufacturability of functionally graded materials by integrating advanced computational techniques.",
+    "relevance_note_en": "The summary captures the core contributions and findings of the paper effectively.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-09-04",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1088/2515-7639/ade73e"
+  },
   "10.1016/j.jmsy.2025.07.006": {
     "author_details": [
       {
@@ -32808,126 +32909,5 @@
     "last_seen_in_crossref_run": "2026-09-04",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.matdes.2025.114589"
-  },
-  "10.3390/app15052576": {
-    "author_details": [
-      {
-        "name": "Eduardo Navas",
-        "orcid": "https://orcid.org/0000-0002-4314-4448",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Centre for Automation and Robotics, UPM-CSIC, Carretera CAMPO-REAL Km 0.2, Arganda del Rey, 28500 Madrid, Spain"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Centre for Automation and Robotics, UPM-CSIC, Carretera CAMPO-REAL Km 0.2, Arganda del Rey, 28500 Madrid, Spain"
-        ]
-      },
-      {
-        "name": "Daniel Rodríguez-Nieto",
-        "orcid": "https://orcid.org/0009-0004-5885-3783",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Centre for Automation and Robotics, UPM-CSIC, Carretera CAMPO-REAL Km 0.2, Arganda del Rey, 28500 Madrid, Spain"
-          },
-          {
-            "name": "PhD Program in Automation and Robotics, Polytechnic University of Madrid, Calle de José Gutiérrez Abascal 2, 28006 Madrid, Spain"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Centre for Automation and Robotics, UPM-CSIC, Carretera CAMPO-REAL Km 0.2, Arganda del Rey, 28500 Madrid, Spain",
-          "PhD Program in Automation and Robotics, Polytechnic University of Madrid, Calle de José Gutiérrez Abascal 2, 28006 Madrid, Spain"
-        ]
-      },
-      {
-        "name": "Alain Antonio Rodríguez-González",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Centre for Automation and Robotics, UPM-CSIC, Carretera CAMPO-REAL Km 0.2, Arganda del Rey, 28500 Madrid, Spain"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Centre for Automation and Robotics, UPM-CSIC, Carretera CAMPO-REAL Km 0.2, Arganda del Rey, 28500 Madrid, Spain"
-        ]
-      },
-      {
-        "name": "Roemi Fernández",
-        "orcid": "https://orcid.org/0000-0003-0552-5407",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Centre for Automation and Robotics, UPM-CSIC, Carretera CAMPO-REAL Km 0.2, Arganda del Rey, 28500 Madrid, Spain"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Centre for Automation and Robotics, UPM-CSIC, Carretera CAMPO-REAL Km 0.2, Arganda del Rey, 28500 Madrid, Spain"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2076-3417"
-    ],
-    "issn_l": "",
-    "publisher": "MDPI AG",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4408033902",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S4210205812",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S4210205812",
-      "issn_l": "2076-3417",
-      "issn": [
-        "2076-3417"
-      ],
-      "type": "journal",
-      "host_organization_name": "Multidisciplinary Digital Publishing Institute",
-      "works_count": 90221,
-      "cited_by_count": 1102660,
-      "two_year_mean_citedness": 3.4639217413185706,
-      "h_index": 222,
-      "i10_index": 30588,
-      "is_core": true,
-      "is_oa": true,
-      "is_in_doaj": true
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 3.4639217413185706,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 2",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - This paper focuses on a novel soft gripper design inspired by the Fin Ray effect, featuring an integrated mechano-optical force sensor.\n2. Problem - The main challenge addressed is the difficulty of incorporating force sensors into soft grippers without sacrificing their flexibility and compliance.\n3. Method - The researchers developed a parallel soft gripper that is fully 3D printed using thermoplastic elastomers and includes a sensor with a gyroid lattice structure for accurate force measurement.\n4. Key Result - The embedded sensor provides linear force measurements up to 150 N with a high correlation coefficient, indicating effective performance across different force ranges.\n5. Takeaway - This work enhances the functionality of soft robotic grippers by integrating advanced sensing capabilities while maintaining their inherent soft characteristics.",
-    "relevance_note_en": "The study presents significant advancements in soft robotics, particularly in sensor integration for enhanced functionality.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "not_seen_in_latest_crossref_run": true,
-    "last_seen_in_crossref_run": "2026-07-07",
-    "id": "10.3390/app15052576"
   }
 }
