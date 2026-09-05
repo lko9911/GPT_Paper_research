@@ -4152,6 +4152,115 @@ h1 {
   padding: 10px;
 }
 
+.ontology-svg {
+  display: block;
+  width: 100%;
+  min-height: 410px;
+  border-radius: 7px;
+  background:
+    radial-gradient(circle at 50% 50%, color-mix(in srgb, var(--blue), transparent 90%), transparent 15rem),
+    linear-gradient(90deg, color-mix(in srgb, var(--line), transparent 58%) 1px, transparent 1px),
+    linear-gradient(color-mix(in srgb, var(--line), transparent 62%) 1px, transparent 1px),
+    color-mix(in srgb, var(--panel), var(--ink-soft) 26%);
+  background-size: auto, 42px 42px, 42px 42px, auto;
+}
+
+.ontology-link {
+  fill: none;
+  stroke-linecap: round;
+  stroke-width: 1.45;
+}
+
+.ontology-link-field {
+  stroke: color-mix(in srgb, var(--blue), transparent 42%);
+}
+
+.ontology-link-subtopic {
+  stroke: color-mix(in srgb, var(--green), transparent 56%);
+  stroke-width: 1.15;
+}
+
+.ontology-center-node circle {
+  fill: color-mix(in srgb, var(--blue), var(--green) 18%);
+  filter: url("#ontology-node-shadow");
+  stroke: color-mix(in srgb, #ffffff, var(--blue) 18%);
+  stroke-width: 1.5;
+}
+
+.ontology-center-node text {
+  fill: #ffffff;
+  font-size: 15px;
+  font-weight: 900;
+  letter-spacing: 0;
+}
+
+.ontology-svg-node {
+  cursor: pointer;
+  outline: none;
+}
+
+.ontology-svg-node rect {
+  fill: color-mix(in srgb, var(--panel), #ffffff 42%);
+  stroke: var(--line-strong);
+  stroke-width: 1;
+  filter: url("#ontology-node-shadow");
+  transition:
+    fill var(--motion-fast),
+    stroke var(--motion-fast),
+    transform var(--motion-med);
+}
+
+.ontology-field-node rect {
+  fill: color-mix(in srgb, var(--blue-soft), #ffffff 28%);
+  stroke: color-mix(in srgb, var(--blue), var(--line-strong) 44%);
+}
+
+.ontology-subtopic-node rect {
+  fill: color-mix(in srgb, var(--panel), var(--green-soft) 18%);
+  stroke: color-mix(in srgb, var(--line), var(--green) 18%);
+}
+
+.ontology-svg-node:hover rect,
+.ontology-svg-node.is-active rect {
+  fill: var(--blue-soft);
+  stroke: var(--blue);
+}
+
+.ontology-svg-node:hover .ontology-label-text,
+.ontology-svg-node.is-active .ontology-label-text {
+  fill: var(--blue);
+}
+
+.ontology-label-text {
+  fill: var(--text);
+  font-size: 11px;
+  font-weight: 850;
+  letter-spacing: 0;
+  pointer-events: none;
+}
+
+.ontology-field-node .ontology-label-text {
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.ontology-count-text {
+  fill: var(--muted);
+  font-size: 10px;
+  font-weight: 880;
+  pointer-events: none;
+}
+
+.ontology-svg-node.is-empty {
+  cursor: default;
+  opacity: 0.42;
+}
+
+.ontology-svg-node.is-empty:hover rect {
+  fill: color-mix(in srgb, var(--panel), var(--green-soft) 18%);
+  stroke: color-mix(in srgb, var(--line), var(--green) 18%);
+}
+
 .ontology-field {
   display: grid;
   grid-template-columns: minmax(150px, 0.52fr) minmax(0, 1fr);
@@ -4296,6 +4405,30 @@ h1 {
   background: color-mix(in srgb, var(--panel), #0c111c 18%);
 }
 
+:root[data-theme="dark"] .ontology-svg {
+  background:
+    radial-gradient(circle at 50% 50%, color-mix(in srgb, var(--blue), transparent 88%), transparent 15rem),
+    linear-gradient(90deg, color-mix(in srgb, var(--line), transparent 72%) 1px, transparent 1px),
+    linear-gradient(color-mix(in srgb, var(--line), transparent 76%) 1px, transparent 1px),
+    color-mix(in srgb, var(--panel), #0c111c 20%);
+}
+
+:root[data-theme="dark"] .ontology-center-node circle {
+  stroke: color-mix(in srgb, var(--blue), #ffffff 18%);
+}
+
+:root[data-theme="dark"] .ontology-svg-node rect {
+  fill: color-mix(in srgb, var(--panel), #0c111c 10%);
+}
+
+:root[data-theme="dark"] .ontology-field-node rect {
+  fill: color-mix(in srgb, var(--blue-soft), var(--panel) 40%);
+}
+
+:root[data-theme="dark"] .ontology-subtopic-node rect {
+  fill: color-mix(in srgb, var(--panel), var(--green-soft) 24%);
+}
+
 :root[data-theme="dark"] .ontology-root {
   background: linear-gradient(135deg, color-mix(in srgb, var(--blue-soft), var(--panel) 34%), var(--panel));
 }
@@ -4333,6 +4466,14 @@ h1 {
 
   .ontology-map {
     padding: 9px;
+    overflow-x: auto;
+    scrollbar-width: thin;
+  }
+
+  .ontology-svg {
+    width: 860px;
+    max-width: none;
+    min-height: 390px;
   }
 
   .ontology-field {

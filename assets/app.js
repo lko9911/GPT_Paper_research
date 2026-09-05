@@ -893,20 +893,38 @@ function renderOntologyMap() {
     els.ontologyCount.textContent = `${totalLinks.toLocaleString("en-US")} ${t("ontologyCount")}`;
   }
 
-  els.ontologyMap.innerHTML = FIELD_ORDER.map((field) => {
-    const fieldCount = state.papers.filter((paper) => runtimeForPaper(paper).field === field).length;
-    if (!fieldCount) return "";
-    const subtopics = ontologySubtopicEntries(field)
-      .map((entry) => ontologySubtopicNode(field, entry.subtopic, entry.count))
-      .join("");
-    return `<div class="ontology-field">
-      <button class="ontology-node ontology-root" type="button" data-ontology-field="${escapeAttribute(field)}">
-        <span>${escapeHtml(displayLabel(field))}</span>
-        <strong>${fieldCount.toLocaleString("en-US")}</strong>
-      </button>
-      <div class="ontology-branches">${subtopics}</div>
-    </div>`;
-  }).join("");
+  const center = { x: 460, y: 58 };
+  const layouts = ontologyFieldLayouts();
+  const links = [];
+  const nodes = [];
+
+  layouts.forEach((layout) => {
+    const fieldCount = state.papers.filter((paper) => runtimeForPaper(paper).field === layout.field).length;
+    if (!fieldCount) return;
+    links.push(ontologyPath(center, layout, "ontology-link ontology-link-field"));
+    nodes.push(ontologyFieldNode(layout, fieldCount));
+    ontologySubtopicEntries(layout.field).forEach((entry, index, entries) => {
+      const subNode = ontologySubtopicPosition(layout, index, entries.length);
+      links.push(ontologyPath(layout, subNode, "ontology-link ontology-link-subtopic"));
+      nodes.push(ontologySubtopicSvgNode(layout.field, entry.subtopic, entry.count, subNode));
+    });
+  });
+
+  els.ontologyMap.innerHTML = `
+    <svg class="ontology-svg" viewBox="0 0 920 520" role="img" aria-label="Ontology map of research fields and subtopics">
+      <defs>
+        <filter id="ontology-node-shadow" x="-20%" y="-30%" width="140%" height="160%">
+          <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="rgba(22, 32, 51, 0.16)" />
+        </filter>
+      </defs>
+      <g class="ontology-links">${links.join("")}</g>
+      <g class="ontology-center-node">
+        <circle cx="${center.x}" cy="${center.y}" r="46"></circle>
+        <text x="${center.x}" y="${center.y - 8}" text-anchor="middle">Research</text>
+        <text x="${center.x}" y="${center.y + 13}" text-anchor="middle">Tracker</text>
+      </g>
+      <g class="ontology-nodes">${nodes.join("")}</g>
+    </svg>`;
 
   els.ontologyMap.querySelectorAll("[data-ontology-field]").forEach((button) => {
     button.addEventListener("click", () => {
@@ -930,7 +948,7 @@ function renderOntologyMap() {
     button.addEventListener("click", () => {
       const field = button.dataset.ontologyParent || "";
       const subtopic = button.dataset.ontologySubtopic || "";
-      if (!field || !subtopic || button.disabled) return;
+      if (!field || !subtopic || button.getAttribute("aria-disabled") === "true") return;
       state.activeAmlRecommendations = false;
       clearActiveSubtopics();
       state.activeSubtopics.add(sideSubtopicKey(field, subtopic));
@@ -947,6 +965,111 @@ function renderOntologyMap() {
   });
 
   syncOntologyActive();
+}
+
+function ontologyFieldLayouts() {
+  return [
+    { field: "생산/제조", x: 96, y: 150 },
+    { field: "3D 프린팅", x: 278, y: 150 },
+    { field: "4D 프린팅", x: 460, y: 150 },
+    { field: "로봇틱스(생산제조)", x: 642, y: 150 },
+    { field: "AI 생산제조", x: 824, y: 150 },
+  ];
+}
+
+function ontologySubtopicPosition(layout, index, total) {
+  const spacing = total >= 7 ? 38 : 42;
+  const start = 230;
+  return {
+    x: layout.x,
+    y: start + index * spacing,
+  };
+}
+
+function ontologyPath(from, to, className) {
+  const midX = (from.x + to.x) / 2;
+  return `<path class="${escapeAttribute(className)}" d="M ${from.x} ${from.y} C ${midX} ${from.y}, ${midX} ${to.y}, ${to.x} ${to.y}" />`;
+}
+
+function ontologyFieldNode(layout, count) {
+  const width = 146;
+  const height = 54;
+  const x = layout.x - width / 2;
+  const y = layout.y - height / 2;
+  return `<g class="ontology-svg-node ontology-field-node" tabindex="0" role="button" data-ontology-field="${escapeAttribute(layout.field)}" transform="translate(${x} ${y})">
+    <rect width="${width}" height="${height}" rx="14"></rect>
+    ${ontologyText(displayLabel(layout.field), width / 2, 22, 16, 2)}
+    <text class="ontology-count-text" x="${width / 2}" y="43" text-anchor="middle">${count.toLocaleString("en-US")}</text>
+  </g>`;
+}
+
+function ontologySubtopicSvgNode(field, subtopic, count, position) {
+  const width = 136;
+  const height = 34;
+  const x = position.x - width / 2;
+  const y = position.y - height / 2;
+  const disabledClass = count ? "" : " is-empty";
+  return `<g class="ontology-svg-node ontology-subtopic-node${disabledClass}" tabindex="${count ? "0" : "-1"}" role="button" data-ontology-parent="${escapeAttribute(field)}" data-ontology-subtopic="${escapeAttribute(subtopic)}" aria-disabled="${count ? "false" : "true"}" transform="translate(${x} ${y})">
+    <rect width="${width}" height="${height}" rx="11"></rect>
+    ${ontologyText(displayLabel(subtopic), 12, 21, 17, 1, "start")}
+    <text class="ontology-count-text" x="${width - 12}" y="21" text-anchor="end">${count.toLocaleString("en-US")}</text>
+  </g>`;
+}
+
+function ontologyText(label, x, y, maxChars, maxLines = 1, anchor = "middle") {
+  const lines = wrapSvgLabel(compactOntologyLabel(label), maxChars, maxLines);
+  const offset = lines.length > 1 ? -5 : 0;
+  return `<text class="ontology-label-text" x="${x}" y="${y + offset}" text-anchor="${anchor}">
+    ${lines.map((line, index) => `<tspan x="${x}" dy="${index ? 13 : 0}">${escapeHtml(line)}</tspan>`).join("")}
+  </text>`;
+}
+
+function wrapSvgLabel(label, maxChars, maxLines) {
+  const words = String(label || "").split(/\s+/).filter(Boolean);
+  const lines = [];
+  let current = "";
+  words.forEach((word) => {
+    const next = current ? `${current} ${word}` : word;
+    if (next.length <= maxChars || !current) {
+      current = next;
+      return;
+    }
+    lines.push(current);
+    current = word;
+  });
+  if (current) lines.push(current);
+  if (lines.length <= maxLines) return lines;
+  const kept = lines.slice(0, maxLines);
+  kept[kept.length - 1] = truncateLabel(kept[kept.length - 1], maxChars);
+  return kept;
+}
+
+function compactOntologyLabel(label) {
+  const replacements = {
+    "Production / Manufacturing": "Production / Mfg.",
+    "Robotics for Manufacturing": "Mfg. Robotics",
+    "Manufacturing Automation": "Mfg. Automation",
+    "Process Optimization": "Process Opt.",
+    "Composites/Materials": "Composites",
+    "Additive Manufacturing": "AM",
+    "Functionally Graded AM": "FGAM",
+    "Multi-material AM": "MMAM",
+    "Vat Photopolymerization": "Vat Photo.",
+    "FDM": "FDM",
+    "Digital Light Processing (DLP)": "DLP",
+    "Self-driving Labs": "Self-driving Labs",
+    "Digital Twins": "Digital Twins",
+    "Machine Learning": "Machine Learning",
+    "Design Automation": "Design Automation",
+    "Robot-based Manufacturing": "Robot Mfg.",
+    "Active Materials": "Active Materials",
+  };
+  return replacements[label] || label;
+}
+
+function truncateLabel(label, maxChars) {
+  const value = String(label || "");
+  return value.length <= maxChars ? value : `${value.slice(0, Math.max(1, maxChars - 3))}...`;
 }
 
 function ontologySubtopicEntries(field) {
