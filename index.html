@@ -9,7 +9,7 @@
       content="An AI-assisted research tracker for manufacturing, 3D/4D printing, robotics, and AI-driven production."
     />
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
-    <link rel="stylesheet" href="assets/style.css?v=20260809-visitor-pill" />
+    <link rel="stylesheet" href="assets/style.css?v=20260905-workbench" />
   </head>
   <body>
     <header class="site-header" id="top">
@@ -129,6 +129,38 @@
           </label>
         </section>
 
+        <section class="research-workbench" aria-label="Research workbench">
+          <article class="workbench-panel ontology-panel">
+            <div class="workbench-head">
+              <div>
+                <p class="section-kicker">Ontology Map</p>
+                <h2>Topic Structure</h2>
+              </div>
+              <p id="ontology-count">0 linked topics</p>
+            </div>
+            <div id="ontology-map" class="ontology-map"></div>
+          </article>
+
+          <article class="workbench-panel llm-helper-panel">
+            <div class="workbench-head">
+              <div>
+                <p class="section-kicker">LLM Helper</p>
+                <h2>Prompt Builder</h2>
+              </div>
+              <button id="copy-llm-prompt" class="link-pill subtle" type="button">Copy prompt</button>
+            </div>
+            <label class="helper-mode">
+              <span>Mode</span>
+              <select id="llm-helper-mode">
+                <option value="scan">Literature scan</option>
+                <option value="compare">Compare papers</option>
+                <option value="meeting">Meeting brief</option>
+              </select>
+            </label>
+            <textarea id="llm-helper-prompt" class="llm-helper-prompt" rows="9" readonly></textarea>
+          </article>
+        </section>
+
         <section class="venue-section" aria-label="Papers by OpenAlex venue rank">
           <div class="venue-section-head">
             <div>
@@ -181,6 +213,6 @@
       </div>
     </footer>
 
-    <script src="assets/app.js?v=20260809-visitor-pill" defer></script>
+    <script src="assets/app.js?v=20260905-workbench" defer></script>
   </body>
 </html>

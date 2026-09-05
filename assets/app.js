@@ -141,6 +141,17 @@ const UI_TEXT = {
     doiButton: "DOI",
     copyCitation: "Copy Cite",
     copiedCitation: "Copied",
+    ontologyKicker: "Ontology Map",
+    ontologyTitle: "Topic Structure",
+    ontologyCount: "linked topics",
+    llmHelperKicker: "LLM Helper",
+    llmHelperTitle: "Prompt Builder",
+    llmHelperMode: "Mode",
+    copyLlmPrompt: "Copy prompt",
+    copiedLlmPrompt: "Copied",
+    llmModeScan: "Literature scan",
+    llmModeCompare: "Compare papers",
+    llmModeMeeting: "Meeting brief",
     summaryQuestions: [
       "Topic",
       "Problem",
@@ -302,6 +313,7 @@ const state = {
   autoDetailAttempted: new Set(),
   newnessTouched: false,
   filterTimer: null,
+  filtersApplied: false,
 };
 
 function readStoredArray(key) {
@@ -347,6 +359,11 @@ const els = {
   heroStatus: document.querySelector("#hero-status"),
   themeToggle: document.querySelector("#theme-toggle"),
   loadMore: document.querySelector("#load-more-papers"),
+  ontologyMap: document.querySelector("#ontology-map"),
+  ontologyCount: document.querySelector("#ontology-count"),
+  llmHelperMode: document.querySelector("#llm-helper-mode"),
+  llmHelperPrompt: document.querySelector("#llm-helper-prompt"),
+  copyLlmPrompt: document.querySelector("#copy-llm-prompt"),
 };
 
 async function init() {
@@ -367,6 +384,7 @@ async function init() {
   buildFilters();
   buildSideNav();
   renderVenueBoard();
+  renderResearchWorkbench();
   updateStats();
   setDefaultNewnessFilter();
   applyFilters();
@@ -414,6 +432,18 @@ async function init() {
     els.loadMore.addEventListener("click", () => {
       state.renderLimit += RENDER_INCREMENT;
       render();
+    });
+  }
+  if (els.llmHelperMode) {
+    els.llmHelperMode.addEventListener("change", renderLlmHelperPrompt);
+  }
+  if (els.copyLlmPrompt) {
+    els.copyLlmPrompt.addEventListener("click", async () => {
+      await copyText(els.llmHelperPrompt ? els.llmHelperPrompt.value : "");
+      els.copyLlmPrompt.textContent = t("copiedLlmPrompt");
+      window.setTimeout(() => {
+        els.copyLlmPrompt.textContent = t("copyLlmPrompt");
+      }, 1400);
     });
   }
 }
@@ -549,6 +579,15 @@ function applyStaticLanguage() {
   setText("#sort-select option[value='relevance']", t("relevance"));
   setText("#sort-select option[value='title']", t("title"));
   setText("#reset-filters", t("resetFilters"));
+  setText(".ontology-panel .section-kicker", t("ontologyKicker"));
+  setText(".ontology-panel h2", t("ontologyTitle"));
+  setText(".llm-helper-panel .section-kicker", t("llmHelperKicker"));
+  setText(".llm-helper-panel h2", t("llmHelperTitle"));
+  setText(".helper-mode > span", t("llmHelperMode"));
+  setText("#llm-helper-mode option[value='scan']", t("llmModeScan"));
+  setText("#llm-helper-mode option[value='compare']", t("llmModeCompare"));
+  setText("#llm-helper-mode option[value='meeting']", t("llmModeMeeting"));
+  setText("#copy-llm-prompt", t("copyLlmPrompt"));
   setText(".venue-section-head h2", t("venuesTitle"));
   setText(".paper-results-head .section-kicker", t("papersByField"));
   setText(".paper-results-head h2", t("curatedPapers"));
@@ -839,6 +878,103 @@ function renderVenueBoard() {
       applyFilters();
       scrollToPapers();
     });
+  });
+}
+
+function renderResearchWorkbench() {
+  renderOntologyMap();
+  renderLlmHelperPrompt();
+}
+
+function renderOntologyMap() {
+  if (!els.ontologyMap) return;
+  const totalLinks = FIELD_ORDER.reduce((sum, field) => sum + ontologySubtopicEntries(field).filter((entry) => entry.count > 0).length, 0);
+  if (els.ontologyCount) {
+    els.ontologyCount.textContent = `${totalLinks.toLocaleString("en-US")} ${t("ontologyCount")}`;
+  }
+
+  els.ontologyMap.innerHTML = FIELD_ORDER.map((field) => {
+    const fieldCount = state.papers.filter((paper) => runtimeForPaper(paper).field === field).length;
+    if (!fieldCount) return "";
+    const subtopics = ontologySubtopicEntries(field)
+      .map((entry) => ontologySubtopicNode(field, entry.subtopic, entry.count))
+      .join("");
+    return `<div class="ontology-field">
+      <button class="ontology-node ontology-root" type="button" data-ontology-field="${escapeAttribute(field)}">
+        <span>${escapeHtml(displayLabel(field))}</span>
+        <strong>${fieldCount.toLocaleString("en-US")}</strong>
+      </button>
+      <div class="ontology-branches">${subtopics}</div>
+    </div>`;
+  }).join("");
+
+  els.ontologyMap.querySelectorAll("[data-ontology-field]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const field = button.dataset.ontologyField || "";
+      if (!field) return;
+      state.activeAmlRecommendations = false;
+      clearActiveSubtopics();
+      if (els.search) els.search.value = "";
+      if (els.category) els.category.value = field;
+      if (els.tag) els.tag.value = "";
+      if (els.newness) els.newness.value = "";
+      releaseDefaultNewnessFilter();
+      switchRankFilterMode("oa", false);
+      syncSideNavActive();
+      applyFilters();
+      scrollToPapers();
+    });
+  });
+
+  els.ontologyMap.querySelectorAll("[data-ontology-subtopic]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const field = button.dataset.ontologyParent || "";
+      const subtopic = button.dataset.ontologySubtopic || "";
+      if (!field || !subtopic || button.disabled) return;
+      state.activeAmlRecommendations = false;
+      clearActiveSubtopics();
+      state.activeSubtopics.add(sideSubtopicKey(field, subtopic));
+      if (els.search) els.search.value = "";
+      if (els.category) els.category.value = "";
+      if (els.tag) els.tag.value = "";
+      if (els.newness) els.newness.value = "";
+      releaseDefaultNewnessFilter();
+      switchRankFilterMode("oa", false);
+      syncSideNavActive();
+      applyFilters();
+      scrollToPapers();
+    });
+  });
+
+  syncOntologyActive();
+}
+
+function ontologySubtopicEntries(field) {
+  const subtopics = FIELD_SUBTOPICS[field] || [];
+  const fieldPapers = state.papers.filter((paper) => runtimeForPaper(paper).field === field);
+  const counts = sidebarBucketCounts(fieldPapers, subtopics);
+  return subtopics.map((subtopic) => ({ subtopic, count: counts.get(subtopic) || 0 }));
+}
+
+function ontologySubtopicNode(field, subtopic, count) {
+  const disabled = count ? "" : " disabled";
+  return `<button class="ontology-node ontology-leaf${count ? "" : " is-empty"}" type="button" data-ontology-parent="${escapeAttribute(field)}" data-ontology-subtopic="${escapeAttribute(subtopic)}"${disabled}>
+    <span>${escapeHtml(displayLabel(subtopic))}</span>
+    <strong>${count.toLocaleString("en-US")}</strong>
+  </button>`;
+}
+
+function syncOntologyActive() {
+  if (!els.ontologyMap) return;
+  const selectedSubtopics = state.activeSubtopics;
+  els.ontologyMap.querySelectorAll("[data-ontology-field]").forEach((button) => {
+    const field = button.dataset.ontologyField || "";
+    button.classList.toggle("is-active", !selectedSubtopics.size && !state.activeAmlRecommendations && els.category && els.category.value === field);
+  });
+  els.ontologyMap.querySelectorAll("[data-ontology-subtopic]").forEach((button) => {
+    const field = button.dataset.ontologyParent || "";
+    const subtopic = button.dataset.ontologySubtopic || "";
+    button.classList.toggle("is-active", selectedSubtopics.has(sideSubtopicKey(field, subtopic)));
   });
 }
 
@@ -1295,6 +1431,7 @@ function applyFilters() {
       matchesYear
     );
   });
+  state.filtersApplied = true;
 
   state.filtered.sort((a, b) => {
     if (state.activeAmlRecommendations && sort === "relevance") {
@@ -1365,6 +1502,8 @@ function render() {
   const defaultNewView = isDefaultNewPapersView();
   const amlView = state.activeAmlRecommendations;
   renderPaperResultsHeading(defaultNewView, amlView);
+  syncOntologyActive();
+  renderLlmHelperPrompt();
   const countLabel = amlView ? t("amlShowing") : t("showing");
   els.count.textContent = `${Math.min(visiblePapers.length, totalCount).toLocaleString("en-US")} / ${totalCount.toLocaleString("en-US")} ${countLabel}`;
   els.list.innerHTML = "";
@@ -1393,6 +1532,81 @@ function render() {
   });
   els.list.append(fragment);
   scheduleVisibleOpenAiDetailLoad(visiblePapers);
+}
+
+function renderLlmHelperPrompt() {
+  if (!els.llmHelperPrompt) return;
+  const mode = els.llmHelperMode ? els.llmHelperMode.value : "scan";
+  const sourcePapers = state.filtersApplied ? state.filtered : state.papers;
+  const papers = sourcePapers
+    .slice(0, 12)
+    .map((paper) => paperWithDetails(paper));
+  const scope = activeResearchScopeText();
+  const paperLines = papers.length
+    ? papers.map((paper, index) => `${index + 1}. ${llmPaperLine(paper)}`).join("\n")
+    : "No papers are currently visible.";
+  const task = llmTaskInstruction(mode);
+  els.llmHelperPrompt.value = [
+    task,
+    "",
+    `Scope: ${scope}`,
+    `Visible result count: ${sourcePapers.length.toLocaleString("en-US")}`,
+    "",
+    "Papers:",
+    paperLines,
+    "",
+    "Output:",
+    "- Group the papers by research direction.",
+    "- Point out what is directly useful for AI manufacturing, 3D/4D printing, robotics, or AML work.",
+    "- Avoid claiming results that are not supported by the listed metadata or Q5 summaries.",
+  ].join("\n");
+}
+
+function llmTaskInstruction(mode) {
+  if (mode === "compare") {
+    return "You are helping compare papers from an AI-assisted manufacturing literature tracker.";
+  }
+  if (mode === "meeting") {
+    return "You are preparing a concise meeting brief from an AI-assisted manufacturing literature tracker.";
+  }
+  return "You are scanning recent literature from an AI-assisted manufacturing literature tracker.";
+}
+
+function activeResearchScopeText() {
+  const parts = [];
+  if (state.activeAmlRecommendations) parts.push("AML Recommendations");
+  if (els.search && els.search.value.trim()) parts.push(`Search: ${els.search.value.trim()}`);
+  if (els.category && els.category.value) parts.push(`Field: ${displayLabel(els.category.value)}`);
+  selectedSidebarSubtopics().forEach((item) => parts.push(`Subtopic: ${displayLabel(item.field)} > ${displayLabel(item.subtopic)}`));
+  if (els.tag && els.tag.value) parts.push(`Tag: ${displayLabel(els.tag.value)}`);
+  if (els.venue && els.venue.value) parts.push(`Venue: ${selectedOptionText(els.venue)}`);
+  if (state.activeRankFilter) parts.push(`Venue rank: ${rankDisplayLabel(state.activeRankFilter)}`);
+  if (state.activeCoreVenueFilter) parts.push(`Core venue: ${selectedCoreVenueLabel(state.activeCoreVenueFilter)}`);
+  if (els.newness && els.newness.value) parts.push(`Added: ${selectedOptionText(els.newness)}`);
+  if (els.year && els.year.value) parts.push(`Year: ${els.year.value}`);
+  return parts.length ? parts.join(" | ") : "Default new-paper view";
+}
+
+function llmPaperLine(paper) {
+  const year = paper.year || "n.d.";
+  const venue = shortVenue(normalizeVenue(paper.venue));
+  const score = paper.is_aml_recommendation
+    ? `AML ${Math.round(normalizedAmlScore(paper.aml_score) * 100)}/100`
+    : `relevance ${paper.relevance_score || "-"}/10`;
+  const tags = representativeTags(paper).map((tag) => displayLabel(tag)).slice(0, 3).join(", ");
+  const summary = formatSummarySections(paper).slice(0, 2).map((section) => section.answer).join(" ");
+  const doi = paper.doi ? ` DOI: ${paper.doi}` : "";
+  return `${paper.title || "Untitled"} (${year}, ${venue}; ${score}${tags ? `; ${tags}` : ""}). ${summary}${doi}`;
+}
+
+function selectedOptionText(select) {
+  if (!select) return "";
+  const option = select.options[select.selectedIndex];
+  return option ? option.textContent.trim() : select.value;
+}
+
+function selectedCoreVenueLabel(key) {
+  return CORE_VENUE_FILTERS.find((venue) => normalizeVenueKey(venue) === key) || key;
 }
 
 function renderPaperResultsHeading(defaultNewView, amlView = false) {
@@ -1482,7 +1696,7 @@ function renderPaperRow(paper) {
 
   article.querySelector("[data-citation]").addEventListener("click", async (event) => {
     const citation = buildCitation(displayPaper);
-    await navigator.clipboard.writeText(citation);
+    await copyText(citation);
     event.currentTarget.textContent = t("copiedCitation");
     window.setTimeout(() => {
       event.currentTarget.textContent = t("copyCitation");
@@ -2479,6 +2693,23 @@ function resetSelect(select, defaultLabel) {
   if (!select) return;
   select.innerHTML = "";
   select.append(new Option(defaultLabel, ""));
+}
+
+async function copyText(text) {
+  const value = String(text || "");
+  if (navigator.clipboard && window.isSecureContext) {
+    await navigator.clipboard.writeText(value);
+    return;
+  }
+  const textarea = document.createElement("textarea");
+  textarea.value = value;
+  textarea.setAttribute("readonly", "");
+  textarea.style.position = "fixed";
+  textarea.style.left = "-9999px";
+  document.body.append(textarea);
+  textarea.select();
+  document.execCommand("copy");
+  textarea.remove();
 }
 
 function sectionId(value) {
