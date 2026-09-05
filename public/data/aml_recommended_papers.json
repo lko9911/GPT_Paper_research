@@ -1,512 +1,5 @@
 [
   {
-    "title": "DLP 4D Printing of Programmable Molecularly-Engineered Liquid Crystal Elastomer Actuators",
-    "doi": "10.1002/advs.202517605",
-    "journal": "Advanced Science",
-    "publication_type": "journal_article",
-    "venue_trust": "trusted",
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "openalex_venue_rank": "Rank 1",
-    "openalex_venue_rank_number": 1,
-    "openalex_venue_rank_score": 8.402641353693769,
-    "openalex_venue_rank_percentile": 0.8756,
-    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
-    "year": 2026,
-    "issn": [
-      "2198-3844",
-      "2198-3844"
-    ],
-    "issn_l": "",
-    "crossref_type": "journal-article",
-    "authors": [
-      "Rakine Mouhoubi",
-      "Vincent Lapinte",
-      "Sébastien Blanquer"
-    ],
-    "last_author": "Sébastien Blanquer",
-    "author_details": [
-      {
-        "name": "Rakine Mouhoubi",
-        "orcid": "https://orcid.org/0009-0004-1318-3800",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Institut Charles Gerhardt Montpellier (ICGM), CNRS Université de Montpellier, ENSCM  Montpellier France"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Institut Charles Gerhardt Montpellier (ICGM), CNRS Université de Montpellier, ENSCM  Montpellier France"
-        ]
-      },
-      {
-        "name": "Vincent Lapinte",
-        "orcid": "https://orcid.org/0000-0002-6089-6027",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Institut Charles Gerhardt Montpellier (ICGM), CNRS Université de Montpellier, ENSCM  Montpellier France"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Institut Charles Gerhardt Montpellier (ICGM), CNRS Université de Montpellier, ENSCM  Montpellier France"
-        ]
-      },
-      {
-        "name": "Sébastien Blanquer",
-        "orcid": "https://orcid.org/0000-0002-5366-6530",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Institut Charles Gerhardt Montpellier (ICGM), CNRS Université de Montpellier, ENSCM  Montpellier France"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Institut Charles Gerhardt Montpellier (ICGM), CNRS Université de Montpellier, ENSCM  Montpellier France"
-        ]
-      }
-    ],
-    "corresponding_authors": [
-      {
-        "name": "Sébastien Blanquer",
-        "openalex_author_id": "https://openalex.org/A5056182008",
-        "orcid": "https://orcid.org/0000-0002-5366-6530",
-        "position": "last",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "Centre National de la Recherche Scientifique",
-            "ror": "https://ror.org/02feahw73",
-            "country_code": "FR",
-            "type": "government"
-          },
-          {
-            "name": "Institut Charles Gerhardt Montpellier",
-            "ror": "https://ror.org/028wq3277",
-            "country_code": "FR",
-            "type": "facility"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Institut Charles Gerhardt Montpellier (ICGM), CNRS Université de Montpellier, ENSCM  Montpellier France"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "url": "https://doi.org/10.1002/advs.202517605",
-    "citation": "",
-    "recommendation_level": "High",
-    "aml_score": 0.9301,
-    "matched_topics": [
-      "lce",
-      "4d printing",
-      "liquid crystal elastomer",
-      "liquid crystal elastomers",
-      "computational design"
-    ],
-    "why_recommended": "Recommended because this paper matches lce, 4d printing, liquid crystal elastomer. It is closest to Recent Advances in Molecular Programming of Liquid Crystal Elastomers with Additive Manufacturing for 4D Printing; deterministic AML score: 0.93.",
-    "reason_source": "template",
-    "discovery_routes": [
-      "crossref_keyword_search",
-      "existing_keyword_pool"
-    ],
-    "related_seed_papers": [
-      {
-        "title": "Recent Advances in Molecular Programming of Liquid Crystal Elastomers with Additive Manufacturing for 4D Printing",
-        "doi": "10.1039/d2me00124a",
-        "similarity": 0.9287
-      }
-    ],
-    "ai_summary_en": "1. Topic - The paper discusses advancements in 4D printing of liquid crystal elastomers (LCEs).\n2. Problem - Existing methods like direct ink writing (DIW) have limitations in resolution and complexity for LCE fabrication.\n3. Method - A novel two-stage photo-crosslinking strategy is introduced for DLP 4D printing, allowing for mechanical programming and mesogen alignment.\n4. Key Result - This approach enables the creation of LCEs with significant actuation capabilities and complex geometries, demonstrated through various models.\n5. Takeaway - DLP offers a promising alternative to DIW for producing versatile and functional soft actuators with programmable behaviors.",
-    "relevance_note_en": "The summary captures the core contributions and findings of the paper related to 4D printing and LCEs.",
-    "summary_provider": "openai",
-    "openai_summary_applied": true,
-    "summary_source": "curated_paper_pool",
-    "updated_at": "2026-08-09T09:03:33Z",
-    "first_added": "2026-07-11T03:57:18Z",
-    "last_updated": "2026-08-09T09:03:33Z",
-    "is_new_recommendation": false,
-    "is_weekly_new": false,
-    "weekly_new": false,
-    "openalex_source_id": "https://openalex.org/S2737737698",
-    "local_summary_applied": false
-  },
-  {
-    "title": "4D printing through vat photopolymerization of two-stage UV-curable liquid crystal elastomers",
-    "doi": "10.1038/s41467-026-68370-y",
-    "journal": "Nature Communications",
-    "publication_type": "journal_article",
-    "venue_trust": "trusted",
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "openalex_venue_rank": "Rank 1",
-    "openalex_venue_rank_number": 1,
-    "openalex_venue_rank_score": 16.130086313193587,
-    "openalex_venue_rank_percentile": 0.9746,
-    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
-    "year": 2026,
-    "issn": [
-      "2041-1723"
-    ],
-    "issn_l": "",
-    "crossref_type": "journal-article",
-    "authors": [
-      "Huan Jiang",
-      "Christopher Chung",
-      "Alston X. Gracego",
-      "James Breedlove",
-      "Yuchen Ding",
-      "Xiao Kuang",
-      "Martin L. Dunn",
-      "Kai Yu"
-    ],
-    "last_author": "Kai Yu",
-    "author_details": [
-      {
-        "name": "Huan Jiang",
-        "orcid": "https://orcid.org/0000-0003-2597-4576",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Christopher Chung",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Alston X. Gracego",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "James Breedlove",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Yuchen Ding",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Xiao Kuang",
-        "orcid": "https://orcid.org/0000-0001-6596-1417",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Martin L. Dunn",
-        "orcid": "https://orcid.org/0000-0002-4531-9176",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Kai Yu",
-        "orcid": "https://orcid.org/0000-0001-9067-1673",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_authors": [
-      {
-        "name": "Martin L. Dunn",
-        "openalex_author_id": "https://openalex.org/A5029506293",
-        "orcid": "https://orcid.org/0000-0002-4531-9176",
-        "position": "middle",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "University of Denver",
-            "ror": "https://ror.org/04w7skc03",
-            "country_code": "US",
-            "type": "education"
-          },
-          {
-            "name": "University of Colorado Denver",
-            "ror": "https://ror.org/02hh7en24",
-            "country_code": "US",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical Engineering, University of Colorado Denver, Denver, CO, USA. martin.dunn@ucdenver.edu"
-        ]
-      },
-      {
-        "name": "Kai Yu",
-        "openalex_author_id": "https://openalex.org/A5033008289",
-        "orcid": "https://orcid.org/0000-0001-9067-1673",
-        "position": "last",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "University of Denver",
-            "ror": "https://ror.org/04w7skc03",
-            "country_code": "US",
-            "type": "education"
-          },
-          {
-            "name": "University of Colorado Denver",
-            "ror": "https://ror.org/02hh7en24",
-            "country_code": "US",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical Engineering, University of Colorado Denver, Denver, CO, USA. kai.2.yu@ucdenver.edu"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "url": "https://doi.org/10.1038/s41467-026-68370-y",
-    "citation": "",
-    "recommendation_level": "High",
-    "aml_score": 0.9279,
-    "matched_topics": [
-      "metamaterial",
-      "lce",
-      "4d printing",
-      "liquid crystal elastomer",
-      "soft robotics",
-      "liquid crystal elastomers",
-      "computational design"
-    ],
-    "why_recommended": "Recommended because this paper matches metamaterial, lce, 4d printing. It is closest to Recent Advances in Molecular Programming of Liquid Crystal Elastomers with Additive Manufacturing for 4D Printing; deterministic AML score: 0.93.",
-    "reason_source": "template",
-    "discovery_routes": [
-      "crossref_keyword_search",
-      "existing_keyword_pool"
-    ],
-    "related_seed_papers": [
-      {
-        "title": "Recent Advances in Molecular Programming of Liquid Crystal Elastomers with Additive Manufacturing for 4D Printing",
-        "doi": "10.1039/d2me00124a",
-        "similarity": 0.9276
-      }
-    ],
-    "ai_summary_en": "1. Topic - The study focuses on advancing 4D printing using liquid crystal elastomers (LCEs).\n2. Problem - Existing 4D printing methods face limitations in resolution and the ability to control liquid crystal orientation in complex structures.\n3. Method - A novel approach is proposed that integrates two-stage UV-curable LCEs with vat photopolymerization techniques like digital light processing.\n4. Key Result - This method enables the creation of intricate geometries that can undergo reversible shape transformations through thermal treatment.\n5. Takeaway - The developed strategy enhances the design possibilities for programmable structures in various applications, including soft robotics and metamaterials.",
-    "relevance_note_en": "The paper presents a significant advancement in 4D printing technology, addressing key challenges in the field.",
-    "summary_provider": "openai",
-    "openai_summary_applied": true,
-    "summary_source": "curated_paper_pool",
-    "updated_at": "2026-08-09T09:03:33Z",
-    "first_added": "2026-07-11T03:57:18Z",
-    "last_updated": "2026-08-09T09:03:33Z",
-    "is_new_recommendation": false,
-    "is_weekly_new": false,
-    "weekly_new": false,
-    "openalex_source_id": "https://openalex.org/S64187185",
-    "local_summary_applied": false
-  },
-  {
-    "title": "Multi-material additive manufacturing for microfluidic applications",
-    "doi": "10.1007/s40964-026-01847-w",
-    "journal": "Progress in Additive Manufacturing",
-    "publication_type": "journal_article",
-    "venue_trust": "trusted",
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "openalex_venue_rank": "Rank 2",
-    "openalex_venue_rank_number": 2,
-    "openalex_venue_rank_score": 4.039043824701195,
-    "openalex_venue_rank_percentile": 0.5964,
-    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
-    "year": 2026,
-    "issn": [
-      "2363-9512",
-      "2363-9520"
-    ],
-    "issn_l": "",
-    "crossref_type": "journal-article",
-    "authors": [
-      "Stavros Skrepetos",
-      "Misha Ruijgrok",
-      "Marcel Tichem",
-      "Paola Fanzio"
-    ],
-    "last_author": "Paola Fanzio",
-    "author_details": [
-      {
-        "name": "Stavros Skrepetos",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Misha Ruijgrok",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Marcel Tichem",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Paola Fanzio",
-        "orcid": "https://orcid.org/0009-0009-5947-7640",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_authors": [
-      {
-        "name": "Stavros Skrepetos",
-        "openalex_author_id": "https://openalex.org/A5092738302",
-        "orcid": null,
-        "position": "first",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "Delft University of Technology",
-            "ror": "https://ror.org/02e2c7k09",
-            "country_code": "NL",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Deparment of Precision and Microsystem Engineering, Faculty of Mechanical Engineering, Delft University of Technology, Delft, Netherlands"
-        ]
-      },
-      {
-        "name": "Misha Ruijgrok",
-        "openalex_author_id": "https://openalex.org/A5144385140",
-        "orcid": null,
-        "position": "middle",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "Delft University of Technology",
-            "ror": "https://ror.org/02e2c7k09",
-            "country_code": "NL",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Deparment of Precision and Microsystem Engineering, Faculty of Mechanical Engineering, Delft University of Technology, Delft, Netherlands"
-        ]
-      },
-      {
-        "name": "Marcel Tichem",
-        "openalex_author_id": "https://openalex.org/A5049247562",
-        "orcid": "https://orcid.org/0000-0001-6441-5748",
-        "position": "middle",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "Delft University of Technology",
-            "ror": "https://ror.org/02e2c7k09",
-            "country_code": "NL",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Deparment of Precision and Microsystem Engineering, Faculty of Mechanical Engineering, Delft University of Technology, Delft, Netherlands"
-        ]
-      },
-      {
-        "name": "Paola Fanzio",
-        "openalex_author_id": "https://openalex.org/A5013966734",
-        "orcid": "https://orcid.org/0009-0009-5947-7640",
-        "position": "last",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "Delft University of Technology",
-            "ror": "https://ror.org/02e2c7k09",
-            "country_code": "NL",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Deparment of Precision and Microsystem Engineering, Faculty of Mechanical Engineering, Delft University of Technology, Delft, Netherlands"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "url": "https://doi.org/10.1007/s40964-026-01847-w",
-    "citation": "",
-    "recommendation_level": "High",
-    "aml_score": 0.927,
-    "matched_topics": [
-      "stereolithography",
-      "fdm",
-      "multi-material additive manufacturing",
-      "fused filament fabrication"
-    ],
-    "why_recommended": "Recommended because this paper matches stereolithography, fdm, multi-material additive manufacturing. It is closest to Rapid Multi-Material 3D Printing with Projection Micro-Stereolithography Using Dynamic Fluidic Control; deterministic AML score: 0.93.",
-    "reason_source": "template",
-    "discovery_routes": [
-      "crossref_keyword_search",
-      "existing_keyword_pool"
-    ],
-    "related_seed_papers": [
-      {
-        "title": "Rapid Multi-Material 3D Printing with Projection Micro-Stereolithography Using Dynamic Fluidic Control",
-        "doi": "10.1016/j.addma.2019.03.031",
-        "similarity": 0.9305
-      }
-    ],
-    "ai_summary_en": "1. Topic - Multi-material additive manufacturing techniques for microfluidic devices\n2. Problem - Limited resolution in extrusion-based methods and single-material constraints in light-based techniques hinder the seamless integration of multiple functionalities.\n3. Method - Reviewing state-of-the-art technologies, including extrusion (FDM/Material extrusion) and light-based (DLP/SLA) additive manufacturing, as well as innovative approaches to overcome limitations.\n4. Key Result - Multi-vat printers, resin swapping systems, fluidic resin exchange, and wavelength-controlled dual-curing resins enable the fabrication of integrated microfluidic devices with diverse material properties.\n5. Takeaway - While challenges remain in material compatibility, biocompatibility, and balancing resolution with throughput, advancements are driving the adoption of multi-material AM for microfluidic applications.",
-    "relevance_note_en": "Highly relevant to multi-material additive manufacturing techniques specifically addressing microfluidic device fabrication.",
-    "summary_provider": "local",
-    "openai_summary_applied": false,
-    "local_summary_applied": true,
-    "summary_model": "qwen2.5:7b",
-    "summary_source": "local_aml_recommendation_refresh",
-    "updated_at": "2026-08-09T09:03:33Z",
-    "first_added": "2026-08-09T09:03:33Z",
-    "last_updated": "2026-08-09T09:03:33Z",
-    "is_new_recommendation": true,
-    "is_weekly_new": true,
-    "weekly_new": true,
-    "openalex_source_id": "https://openalex.org/S4210206835",
-    "tags": [
-      "SLA",
-      "fdm",
-      "multi-material additive manufacturing",
-      "fused filament fabrication"
-    ],
-    "categories": [
-      "Reviews and Surveys",
-      "Multi-material AM"
-    ],
-    "relevance_score": 9,
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false
-  },
-  {
     "title": "Spatially programmable 4D printing of photoresponsive liquid crystal elastomers for adaptive energy dissipation",
     "doi": "10.1016/j.amf.2026.200359",
     "journal": "Additive Manufacturing Frontiers",
@@ -644,7 +137,6 @@
     "why_recommended": "Recommended because this paper matches 4d printing, liquid crystal elastomer, liquid crystal elastomers. It is closest to Recent Advances in Molecular Programming of Liquid Crystal Elastomers with Additive Manufacturing for 4D Printing; deterministic AML score: 0.92.",
     "reason_source": "template",
     "discovery_routes": [
-      "crossref_keyword_search",
       "existing_keyword_pool"
     ],
     "related_seed_papers": [
@@ -659,9 +151,9 @@
     "summary_provider": "openai",
     "openai_summary_applied": true,
     "summary_source": "curated_paper_pool",
-    "updated_at": "2026-08-09T09:03:33Z",
+    "updated_at": "2026-09-05T02:46:10Z",
     "first_added": "2026-07-11T03:57:18Z",
-    "last_updated": "2026-08-09T09:03:33Z",
+    "last_updated": "2026-09-05T02:46:10Z",
     "is_new_recommendation": false,
     "is_weekly_new": false,
     "weekly_new": false,
@@ -808,25 +300,22 @@
     "url": "https://doi.org/10.1126/sciadv.aeb2417",
     "citation": "",
     "recommendation_level": "High",
-    "aml_score": 0.9221,
+    "aml_score": 0.9209,
     "matched_topics": [
-      "lce",
       "4d printing",
       "liquid crystal elastomer",
-      "soft robotics",
       "liquid crystal elastomers"
     ],
-    "why_recommended": "Recommended because this paper matches lce, 4d printing, liquid crystal elastomer. It is closest to Recent Advances in Molecular Programming of Liquid Crystal Elastomers with Additive Manufacturing for 4D Printing; deterministic AML score: 0.92.",
+    "why_recommended": "Recommended because this paper matches 4d printing, liquid crystal elastomer, liquid crystal elastomers. It is closest to Recent Advances in Molecular Programming of Liquid Crystal Elastomers with Additive Manufacturing for 4D Printing; deterministic AML score: 0.92.",
     "reason_source": "template",
     "discovery_routes": [
-      "crossref_keyword_search",
       "existing_keyword_pool"
     ],
     "related_seed_papers": [
       {
         "title": "Recent Advances in Molecular Programming of Liquid Crystal Elastomers with Additive Manufacturing for 4D Printing",
         "doi": "10.1039/d2me00124a",
-        "similarity": 0.9228
+        "similarity": 0.9289
       }
     ],
     "ai_summary_en": "1. Topic - This paper discusses the advancement of 4D printing technology for liquid crystal elastomers (LCEs).\n2. Problem - Traditional 4D printing methods are limited by their ability to align mesogens only in 2D, restricting deformation capabilities.\n3. Method - The authors introduce a robotic direct-ink-writing approach that allows for conformal 4D printing on complex 3D surfaces using a six-axis robotic arm.\n4. Key Result - The new method successfully demonstrates the ability to print on various nonplanar substrates, enabling a wider range of shape-changing behaviors.\n5. Takeaway - This technology enhances the design possibilities for applications in soft robotics and adaptive systems by allowing for printing on irregular geometries.",
@@ -834,9 +323,9 @@
     "summary_provider": "openai",
     "openai_summary_applied": true,
     "summary_source": "curated_paper_pool",
-    "updated_at": "2026-08-09T09:03:33Z",
+    "updated_at": "2026-09-05T02:46:10Z",
     "first_added": "2026-07-11T03:57:18Z",
-    "last_updated": "2026-08-09T09:03:33Z",
+    "last_updated": "2026-09-05T02:46:10Z",
     "is_new_recommendation": false,
     "is_weekly_new": false,
     "weekly_new": false,
@@ -1053,9 +542,9 @@
     "summary_provider": "openai",
     "openai_summary_applied": true,
     "summary_source": "curated_paper_pool",
-    "updated_at": "2026-08-09T09:03:33Z",
+    "updated_at": "2026-09-05T02:46:10Z",
     "first_added": "2026-07-11T03:57:18Z",
-    "last_updated": "2026-08-09T09:03:33Z",
+    "last_updated": "2026-09-05T02:46:10Z",
     "is_new_recommendation": false,
     "is_weekly_new": false,
     "weekly_new": false,
@@ -1128,8 +617,17 @@
         "orcid": null,
         "position": "first",
         "is_corresponding": true,
-        "institutions": [],
-        "raw_affiliation_strings": []
+        "institutions": [
+          {
+            "name": "Aalto University",
+            "ror": "https://ror.org/020hwjq30",
+            "country_code": "FI",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Energy and Mechanical Engineering , Aalto University , Espoo , Finland Materials Science in Additive Manufacturing"
+        ]
       }
     ],
     "corresponding_author_available": true,
@@ -1155,127 +653,13 @@
     "summary_provider": "openai",
     "openai_summary_applied": true,
     "summary_source": "curated_paper_pool",
-    "updated_at": "2026-08-09T09:03:33Z",
+    "updated_at": "2026-09-05T02:46:10Z",
     "first_added": "2026-07-11T03:57:18Z",
-    "last_updated": "2026-08-09T09:03:33Z",
+    "last_updated": "2026-09-05T02:46:10Z",
     "is_new_recommendation": false,
     "is_weekly_new": false,
     "weekly_new": false,
     "openalex_source_id": "https://openalex.org/S4387280566",
-    "local_summary_applied": false
-  },
-  {
-    "title": "4D-Printed Liquid Crystal Elastomers: Printing Strategies, Actuation Mechanisms, and Emerging Applications",
-    "doi": "10.3390/jcs9110633",
-    "journal": "Journal of Composites Science",
-    "publication_type": "journal_article",
-    "venue_trust": "trusted",
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "openalex_venue_rank": "Rank 2",
-    "openalex_venue_rank_number": 2,
-    "openalex_venue_rank_score": 4.7158026233604,
-    "openalex_venue_rank_percentile": 0.6624,
-    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
-    "year": 2025,
-    "issn": [
-      "2504-477X"
-    ],
-    "issn_l": "",
-    "crossref_type": "journal-article",
-    "authors": [
-      "Mehrab Hasan",
-      "Yingtao Liu"
-    ],
-    "last_author": "Yingtao Liu",
-    "author_details": [
-      {
-        "name": "Mehrab Hasan",
-        "orcid": "https://orcid.org/0009-0000-1674-0546",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "School of Aerospace and Mechanical Engineering, The University of Oklahoma, Norman, OK 73019, USA"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "School of Aerospace and Mechanical Engineering, The University of Oklahoma, Norman, OK 73019, USA"
-        ]
-      },
-      {
-        "name": "Yingtao Liu",
-        "orcid": "https://orcid.org/0000-0002-6232-9704",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "School of Aerospace and Mechanical Engineering, The University of Oklahoma, Norman, OK 73019, USA"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "School of Aerospace and Mechanical Engineering, The University of Oklahoma, Norman, OK 73019, USA"
-        ]
-      }
-    ],
-    "corresponding_authors": [
-      {
-        "name": "Yingtao Liu",
-        "openalex_author_id": "https://openalex.org/A5060697699",
-        "orcid": "https://orcid.org/0000-0002-6232-9704",
-        "position": "last",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "University of Oklahoma",
-            "ror": "https://ror.org/02aqsxs83",
-            "country_code": "US",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "School of Aerospace and Mechanical Engineering, The University of Oklahoma, Norman, OK 73019, USA"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "url": "https://doi.org/10.3390/jcs9110633",
-    "citation": "",
-    "recommendation_level": "High",
-    "aml_score": 0.9193,
-    "matched_topics": [
-      "lce",
-      "4d printing",
-      "sensor",
-      "liquid crystal elastomer",
-      "soft robotics",
-      "sensors",
-      "liquid crystal elastomers"
-    ],
-    "why_recommended": "Recommended because this paper matches lce, 4d printing, sensor. It is closest to Recent Advances in Molecular Programming of Liquid Crystal Elastomers with Additive Manufacturing for 4D Printing; deterministic AML score: 0.92.",
-    "reason_source": "template",
-    "discovery_routes": [
-      "crossref_keyword_search",
-      "existing_keyword_pool"
-    ],
-    "related_seed_papers": [
-      {
-        "title": "Recent Advances in Molecular Programming of Liquid Crystal Elastomers with Additive Manufacturing for 4D Printing",
-        "doi": "10.1039/d2me00124a",
-        "similarity": 0.9351
-      }
-    ],
-    "ai_summary_en": "1. Topic - The paper explores 4D-printed liquid crystal elastomers (LCEs) and their applications.\n2. Problem - Despite advancements, challenges such as biocompatibility and manufacturing scalability persist.\n3. Method - The review evaluates various additive manufacturing techniques, particularly direct ink writing and vat photopolymerization, for LCEs.\n4. Key Result - Recent developments in LCE actuators have shown promising functionalities in soft robotics and biomedical fields.\n5. Takeaway - 4D printing of LCEs presents significant potential for innovative applications while highlighting existing challenges.",
-    "relevance_note_en": "The summary captures the main themes and findings of the paper effectively.",
-    "summary_provider": "openai",
-    "openai_summary_applied": true,
-    "summary_source": "curated_paper_pool",
-    "updated_at": "2026-08-09T09:03:33Z",
-    "first_added": "2026-07-11T03:57:18Z",
-    "last_updated": "2026-08-09T09:03:33Z",
-    "is_new_recommendation": false,
-    "is_weekly_new": false,
-    "weekly_new": false,
-    "openalex_source_id": "https://openalex.org/S4210181540",
     "local_summary_applied": false
   },
   {
@@ -1445,14 +829,242 @@
     "summary_provider": "openai",
     "openai_summary_applied": true,
     "summary_source": "curated_paper_pool",
-    "updated_at": "2026-08-09T09:03:33Z",
+    "updated_at": "2026-09-05T02:46:10Z",
     "first_added": "2026-07-11T03:57:18Z",
-    "last_updated": "2026-08-09T09:03:33Z",
+    "last_updated": "2026-09-05T02:46:10Z",
     "is_new_recommendation": false,
     "is_weekly_new": false,
     "weekly_new": false,
     "openalex_source_id": "https://openalex.org/S4210206835",
     "local_summary_applied": false
+  },
+  {
+    "title": "DLP 4D Printing of Programmable Molecularly-Engineered Liquid Crystal Elastomer Actuators",
+    "doi": "10.1002/advs.202517605",
+    "journal": "Advanced Science",
+    "publication_type": "journal_article",
+    "venue_trust": "trusted",
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "openalex_venue_rank": "Rank 1",
+    "openalex_venue_rank_number": 1,
+    "openalex_venue_rank_score": 8.402641353693769,
+    "openalex_venue_rank_percentile": 0.8756,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
+    "year": 2026,
+    "issn": [
+      "2198-3844",
+      "2198-3844"
+    ],
+    "issn_l": "",
+    "crossref_type": "journal-article",
+    "authors": [
+      "Rakine Mouhoubi",
+      "Vincent Lapinte",
+      "Sébastien Blanquer"
+    ],
+    "last_author": "Sébastien Blanquer",
+    "author_details": [
+      {
+        "name": "Rakine Mouhoubi",
+        "orcid": "https://orcid.org/0009-0004-1318-3800",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Institut Charles Gerhardt Montpellier (ICGM), CNRS Université de Montpellier, ENSCM  Montpellier France"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Institut Charles Gerhardt Montpellier (ICGM), CNRS Université de Montpellier, ENSCM  Montpellier France"
+        ]
+      },
+      {
+        "name": "Vincent Lapinte",
+        "orcid": "https://orcid.org/0000-0002-6089-6027",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Institut Charles Gerhardt Montpellier (ICGM), CNRS Université de Montpellier, ENSCM  Montpellier France"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Institut Charles Gerhardt Montpellier (ICGM), CNRS Université de Montpellier, ENSCM  Montpellier France"
+        ]
+      },
+      {
+        "name": "Sébastien Blanquer",
+        "orcid": "https://orcid.org/0000-0002-5366-6530",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Institut Charles Gerhardt Montpellier (ICGM), CNRS Université de Montpellier, ENSCM  Montpellier France"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Institut Charles Gerhardt Montpellier (ICGM), CNRS Université de Montpellier, ENSCM  Montpellier France"
+        ]
+      }
+    ],
+    "corresponding_authors": [
+      {
+        "name": "Sébastien Blanquer",
+        "openalex_author_id": "https://openalex.org/A5056182008",
+        "orcid": "https://orcid.org/0000-0002-5366-6530",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Centre National de la Recherche Scientifique",
+            "ror": "https://ror.org/02feahw73",
+            "country_code": "FR",
+            "type": "government"
+          },
+          {
+            "name": "Institut Charles Gerhardt Montpellier",
+            "ror": "https://ror.org/028wq3277",
+            "country_code": "FR",
+            "type": "facility"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Institut Charles Gerhardt Montpellier (ICGM), CNRS Université de Montpellier, ENSCM  Montpellier France"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "url": "https://doi.org/10.1002/advs.202517605",
+    "citation": "",
+    "recommendation_level": "High",
+    "aml_score": 0.9182,
+    "matched_topics": [
+      "4d printing",
+      "liquid crystal elastomer",
+      "liquid crystal elastomers",
+      "computational design"
+    ],
+    "why_recommended": "Recommended because this paper matches 4d printing, liquid crystal elastomer, liquid crystal elastomers. It is closest to Recent Advances in Molecular Programming of Liquid Crystal Elastomers with Additive Manufacturing for 4D Printing; deterministic AML score: 0.92.",
+    "reason_source": "template",
+    "discovery_routes": [
+      "existing_keyword_pool"
+    ],
+    "related_seed_papers": [
+      {
+        "title": "Recent Advances in Molecular Programming of Liquid Crystal Elastomers with Additive Manufacturing for 4D Printing",
+        "doi": "10.1039/d2me00124a",
+        "similarity": 0.9373
+      }
+    ],
+    "ai_summary_en": "1. Topic - The paper discusses advancements in 4D printing of liquid crystal elastomers (LCEs).\n2. Problem - Existing methods like direct ink writing (DIW) have limitations in resolution and complexity for LCE fabrication.\n3. Method - A novel two-stage photo-crosslinking strategy is introduced for DLP 4D printing, allowing for mechanical programming and mesogen alignment.\n4. Key Result - This approach enables the creation of LCEs with significant actuation capabilities and complex geometries, demonstrated through various models.\n5. Takeaway - DLP offers a promising alternative to DIW for producing versatile and functional soft actuators with programmable behaviors.",
+    "relevance_note_en": "The summary captures the core contributions and findings of the paper related to 4D printing and LCEs.",
+    "summary_provider": "openai",
+    "openai_summary_applied": true,
+    "summary_source": "curated_paper_pool",
+    "updated_at": "2026-09-05T02:46:10Z",
+    "first_added": "2026-07-11T03:57:18Z",
+    "last_updated": "2026-09-05T02:46:10Z",
+    "is_new_recommendation": false,
+    "is_weekly_new": false,
+    "weekly_new": false,
+    "openalex_source_id": "https://openalex.org/S2737737698",
+    "local_summary_applied": false
+  },
+  {
+    "title": "Support-free 4D printing of self-sensing shape-memory piezoelectric multifunctional structures via frontal polymerization",
+    "doi": "10.1016/j.addma.2026.105363",
+    "journal": "Additive Manufacturing",
+    "publication_type": "journal_article",
+    "venue_trust": "trusted",
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "openalex_venue_rank": "Rank 1",
+    "openalex_venue_rank_number": 1,
+    "openalex_venue_rank_score": 7.721680420105026,
+    "openalex_venue_rank_percentile": 0.8376,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
+    "year": 2026,
+    "issn": [
+      "2214-8604"
+    ],
+    "issn_l": "",
+    "crossref_type": "journal-article",
+    "authors": [
+      "Hyoseop Kang",
+      "Woong-Ryeol Yu"
+    ],
+    "last_author": "Woong-Ryeol Yu",
+    "author_details": [
+      {
+        "name": "Hyoseop Kang",
+        "orcid": "https://orcid.org/0000-0002-8085-7287",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Woong-Ryeol Yu",
+        "orcid": "https://orcid.org/0000-0001-5916-3339",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_authors": [
+      {
+        "name": "Woong‐Ryeol Yu",
+        "openalex_author_id": "https://openalex.org/A5082818381",
+        "orcid": "https://orcid.org/0000-0001-5916-3339",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Seoul National University",
+            "ror": "https://ror.org/04h9pn542",
+            "country_code": "KR",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Materials Science and Engineering and Research Institute of Advanced Materials, Seoul National University, Seoul, 08826, Republic of Korea"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "url": "https://doi.org/10.1016/j.addma.2026.105363",
+    "citation": "",
+    "recommendation_level": "High",
+    "aml_score": 0.9175,
+    "matched_topics": [
+      "4d printing"
+    ],
+    "why_recommended": "Recommended because this paper matches 4d printing. It is closest to 4D Printing Reconfigurable, Deployable and Mechanically Tunable Metamaterials; deterministic AML score: 0.92.",
+    "reason_source": "template",
+    "discovery_routes": [
+      "existing_keyword_pool"
+    ],
+    "related_seed_papers": [
+      {
+        "title": "4D Printing Reconfigurable, Deployable and Mechanically Tunable Metamaterials",
+        "doi": "10.1039/c9mh00302a",
+        "similarity": 0.9165
+      }
+    ],
+    "ai_summary_en": "1. Topic - Support-free 4D printing of self-sensing shape-memory piezoelectric multifunctional structures\n2. Problem - Developing a method for 4D printing that integrates sensing capabilities into shape-memory structures\n3. Method - Using frontal polymerization to create multifunctional piezoelectric structures without support materials\n4. Key Result - Successfully printed self-sensing piezoelectric structures capable of shape memory and sensing functions\n5. Takeaway - This work advances 4D printing by enabling the creation of multifunctional, self-sensing objects via frontal polymerization",
+    "relevance_note_en": "Relevant to the tracker through advancements in 4D printing and multifunctional object creation.",
+    "summary_provider": "local",
+    "openai_summary_applied": false,
+    "local_summary_applied": true,
+    "summary_model": "qwen2.5:7b",
+    "summary_source": "curated_paper_pool",
+    "updated_at": "2026-09-05T02:46:10Z",
+    "first_added": "2026-09-05T02:46:10Z",
+    "last_updated": "2026-09-05T02:46:10Z",
+    "is_new_recommendation": true,
+    "is_weekly_new": true,
+    "weekly_new": true,
+    "openalex_source_id": "https://openalex.org/S2764842179"
   },
   {
     "title": "Rheological insights into vat photopolymerization 3D printing of colloidal suspensions",
@@ -1570,12 +1182,12 @@
     "local_summary_applied": false,
     "summary_model": "",
     "summary_source": "curated_paper_pool",
-    "updated_at": "2026-08-09T09:03:33Z",
+    "updated_at": "2026-09-05T02:46:10Z",
     "first_added": "2026-08-09T09:03:33Z",
-    "last_updated": "2026-08-09T09:03:33Z",
-    "is_new_recommendation": true,
-    "is_weekly_new": true,
-    "weekly_new": true,
+    "last_updated": "2026-09-05T02:46:10Z",
+    "is_new_recommendation": false,
+    "is_weekly_new": false,
+    "weekly_new": false,
     "openalex_source_id": "https://openalex.org/S2764842179"
   },
   {
@@ -2089,14 +1701,223 @@
     "summary_provider": "openai",
     "openai_summary_applied": true,
     "summary_source": "curated_paper_pool",
-    "updated_at": "2026-08-09T09:03:33Z",
+    "updated_at": "2026-09-05T02:46:10Z",
     "first_added": "2026-07-11T03:57:18Z",
-    "last_updated": "2026-08-09T09:03:33Z",
+    "last_updated": "2026-09-05T02:46:10Z",
     "is_new_recommendation": false,
     "is_weekly_new": false,
     "weekly_new": false,
     "openalex_source_id": "https://openalex.org/S2737427234",
     "local_summary_applied": false
+  },
+  {
+    "title": "4D printing for biomedical implants: smart materials, stimuli-responsive mechanisms, shape transformation strategies, and future clinical perspectives",
+    "doi": "10.1007/s40964-026-01927-x",
+    "journal": "Progress in Additive Manufacturing",
+    "publication_type": "journal_article",
+    "venue_trust": "trusted",
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "openalex_venue_rank": "Rank 2",
+    "openalex_venue_rank_number": 2,
+    "openalex_venue_rank_score": 4.039043824701195,
+    "openalex_venue_rank_percentile": 0.5964,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
+    "year": 2026,
+    "issn": [
+      "2363-9512",
+      "2363-9520"
+    ],
+    "issn_l": "",
+    "crossref_type": "journal-article",
+    "authors": [
+      "Praveen Kumar Verma",
+      "Hitesh Vasudev",
+      "Suresh Singh",
+      "Gaddam Ashok",
+      "H. M. Manjula",
+      "C. Durga Prasad"
+    ],
+    "last_author": "C. Durga Prasad",
+    "author_details": [
+      {
+        "name": "Praveen Kumar Verma",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Hitesh Vasudev",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Suresh Singh",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Gaddam Ashok",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "H. M. Manjula",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "C. Durga Prasad",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_authors": [
+      {
+        "name": "Praveen Kumar Verma",
+        "openalex_author_id": "https://openalex.org/A5148469298",
+        "orcid": null,
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Lovely Professional University",
+            "ror": "https://ror.org/00et6q107",
+            "country_code": "IN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Research and Development Cell, Lovely Professional University, Phagwāra, India"
+        ]
+      },
+      {
+        "name": "Hitesh Vasudev",
+        "openalex_author_id": "https://openalex.org/A5088020934",
+        "orcid": "https://orcid.org/0000-0002-1668-8765",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Lovely Professional University",
+            "ror": "https://ror.org/00et6q107",
+            "country_code": "IN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Research and Development Cell, Lovely Professional University, Phagwāra, India"
+        ]
+      },
+      {
+        "name": "Suresh Singh",
+        "openalex_author_id": "https://openalex.org/A5068360596",
+        "orcid": "https://orcid.org/0000-0002-1509-0497",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Chitkara University",
+            "ror": "https://ror.org/057d6z539",
+            "country_code": "IN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Centre for Research Impact and Outcome, Chitkara University Institute of Engineering and Technology, Chitkara University, Rajpura, India"
+        ]
+      },
+      {
+        "name": "Gaddam Ashok",
+        "openalex_author_id": "https://openalex.org/A5148435245",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering, SR University, Warangal, India"
+        ]
+      },
+      {
+        "name": "H. M. Manjula",
+        "openalex_author_id": "https://openalex.org/A5148454165",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Nitte University",
+            "ror": "https://ror.org/029nydt37",
+            "country_code": "IN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Computer Science and Engineering, Nitte (Deemed to be University), Nitte Meenakshi Institute of Technology (NMIT), Bengaluru, India"
+        ]
+      },
+      {
+        "name": "C. Durga Prasad",
+        "openalex_author_id": "https://openalex.org/A5148469752",
+        "orcid": null,
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering, RV Institute of Technology and Management, Bengaluru, India"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "url": "https://doi.org/10.1007/s40964-026-01927-x",
+    "citation": "",
+    "recommendation_level": "High",
+    "aml_score": 0.9123,
+    "matched_topics": [
+      "4d printing"
+    ],
+    "why_recommended": "Recommended because this paper matches 4d printing. It is closest to 4D Printing Reconfigurable, Deployable and Mechanically Tunable Metamaterials; deterministic AML score: 0.91.",
+    "reason_source": "template",
+    "discovery_routes": [
+      "existing_keyword_pool"
+    ],
+    "related_seed_papers": [
+      {
+        "title": "4D Printing Reconfigurable, Deployable and Mechanically Tunable Metamaterials",
+        "doi": "10.1039/c9mh00302a",
+        "similarity": 0.9018
+      }
+    ],
+    "ai_summary_en": "1. Topic - 4D printing for biomedical implants\n2. Problem - Design and process challenges in creating shape-transforming biomedical implants\n3. Method - Review of smart materials, stimuli-responsive mechanisms, and shape transformation strategies\n4. Key Result - Identifies key materials and mechanisms for 4D printing in biomedical applications\n5. Takeaway - Valuable for understanding current state and future directions in 4D printing for medical devices",
+    "relevance_note_en": "Relevant to the tracker through 4D printing; score: 5/10.",
+    "summary_provider": "local",
+    "openai_summary_applied": false,
+    "local_summary_applied": true,
+    "summary_model": "qwen2.5:7b",
+    "summary_source": "curated_paper_pool",
+    "updated_at": "2026-09-05T02:46:10Z",
+    "first_added": "2026-09-05T02:46:10Z",
+    "last_updated": "2026-09-05T02:46:10Z",
+    "is_new_recommendation": true,
+    "is_weekly_new": true,
+    "weekly_new": true,
+    "openalex_source_id": "https://openalex.org/S4210206835"
   },
   {
     "title": "Designing advanced 4D printing thermo-sensitive shape memory polymer blends for enhanced mechanical and shape memory performances",
@@ -2214,13 +2035,196 @@
     "summary_provider": "openai",
     "openai_summary_applied": true,
     "summary_source": "curated_paper_pool",
-    "updated_at": "2026-08-09T09:03:33Z",
+    "updated_at": "2026-09-05T02:46:10Z",
     "first_added": "2026-07-11T03:57:18Z",
-    "last_updated": "2026-08-09T09:03:33Z",
+    "last_updated": "2026-09-05T02:46:10Z",
     "is_new_recommendation": false,
     "is_weekly_new": false,
     "weekly_new": false,
     "openalex_source_id": "https://openalex.org/S4210206835",
+    "local_summary_applied": false
+  },
+  {
+    "title": "4D printing through vat photopolymerization of two-stage UV-curable liquid crystal elastomers",
+    "doi": "10.1038/s41467-026-68370-y",
+    "journal": "Nature Communications",
+    "publication_type": "journal_article",
+    "venue_trust": "trusted",
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "openalex_venue_rank": "Rank 1",
+    "openalex_venue_rank_number": 1,
+    "openalex_venue_rank_score": 16.130086313193587,
+    "openalex_venue_rank_percentile": 0.9746,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
+    "year": 2026,
+    "issn": [
+      "2041-1723"
+    ],
+    "issn_l": "",
+    "crossref_type": "journal-article",
+    "authors": [
+      "Huan Jiang",
+      "Christopher Chung",
+      "Alston X. Gracego",
+      "James Breedlove",
+      "Yuchen Ding",
+      "Xiao Kuang",
+      "Martin L. Dunn",
+      "Kai Yu"
+    ],
+    "last_author": "Kai Yu",
+    "author_details": [
+      {
+        "name": "Huan Jiang",
+        "orcid": "https://orcid.org/0000-0003-2597-4576",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Christopher Chung",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Alston X. Gracego",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "James Breedlove",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Yuchen Ding",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Xiao Kuang",
+        "orcid": "https://orcid.org/0000-0001-6596-1417",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Martin L. Dunn",
+        "orcid": "https://orcid.org/0000-0002-4531-9176",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Kai Yu",
+        "orcid": "https://orcid.org/0000-0001-9067-1673",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_authors": [
+      {
+        "name": "Martin L. Dunn",
+        "openalex_author_id": "https://openalex.org/A5029506293",
+        "orcid": "https://orcid.org/0000-0002-4531-9176",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Denver",
+            "ror": "https://ror.org/04w7skc03",
+            "country_code": "US",
+            "type": "education"
+          },
+          {
+            "name": "University of Colorado Denver",
+            "ror": "https://ror.org/02hh7en24",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering, University of Colorado Denver, Denver, CO, USA. martin.dunn@ucdenver.edu"
+        ]
+      },
+      {
+        "name": "Kai Yu",
+        "openalex_author_id": "https://openalex.org/A5033008289",
+        "orcid": "https://orcid.org/0000-0001-9067-1673",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Denver",
+            "ror": "https://ror.org/04w7skc03",
+            "country_code": "US",
+            "type": "education"
+          },
+          {
+            "name": "University of Colorado Denver",
+            "ror": "https://ror.org/02hh7en24",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering, University of Colorado Denver, Denver, CO, USA. kai.2.yu@ucdenver.edu"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "url": "https://doi.org/10.1038/s41467-026-68370-y",
+    "citation": "",
+    "recommendation_level": "High",
+    "aml_score": 0.911,
+    "matched_topics": [
+      "4d printing",
+      "liquid crystal elastomer",
+      "soft robotics",
+      "liquid crystal elastomers",
+      "computational design"
+    ],
+    "why_recommended": "Recommended because this paper matches 4d printing, liquid crystal elastomer, soft robotics. It is closest to Recent Advances in Molecular Programming of Liquid Crystal Elastomers with Additive Manufacturing for 4D Printing; deterministic AML score: 0.91.",
+    "reason_source": "template",
+    "discovery_routes": [
+      "existing_keyword_pool"
+    ],
+    "related_seed_papers": [
+      {
+        "title": "Recent Advances in Molecular Programming of Liquid Crystal Elastomers with Additive Manufacturing for 4D Printing",
+        "doi": "10.1039/d2me00124a",
+        "similarity": 0.9009
+      }
+    ],
+    "ai_summary_en": "1. Topic - The study focuses on advancing 4D printing using liquid crystal elastomers (LCEs).\n2. Problem - Existing 4D printing methods face limitations in resolution and the ability to control liquid crystal orientation in complex structures.\n3. Method - A novel approach is proposed that integrates two-stage UV-curable LCEs with vat photopolymerization techniques like digital light processing.\n4. Key Result - This method enables the creation of intricate geometries that can undergo reversible shape transformations through thermal treatment.\n5. Takeaway - The developed strategy enhances the design possibilities for programmable structures in various applications, including soft robotics and metamaterials.",
+    "relevance_note_en": "The paper presents a significant advancement in 4D printing technology, addressing key challenges in the field.",
+    "summary_provider": "openai",
+    "openai_summary_applied": true,
+    "summary_source": "curated_paper_pool",
+    "updated_at": "2026-09-05T02:46:10Z",
+    "first_added": "2026-07-11T03:57:18Z",
+    "last_updated": "2026-09-05T02:46:10Z",
+    "is_new_recommendation": false,
+    "is_weekly_new": false,
+    "weekly_new": false,
+    "openalex_source_id": "https://openalex.org/S64187185",
     "local_summary_applied": false
   },
   {
@@ -2289,7 +2293,7 @@
           }
         ],
         "raw_affiliation_strings": [
-          "Institute of Machinery , Materials, and Transport , Peter the Great St. Petersburg Polytechnic University , Saint Petersburg , Russia"
+          "Institute of Machinery, Materials, and Transport , Peter the Great St. Petersburg Polytechnic University , Saint Petersburg , Russia"
         ]
       }
     ],
@@ -2320,9 +2324,9 @@
     "summary_provider": "openai",
     "openai_summary_applied": true,
     "summary_source": "curated_paper_pool",
-    "updated_at": "2026-08-09T09:03:33Z",
+    "updated_at": "2026-09-05T02:46:10Z",
     "first_added": "2026-07-11T03:57:18Z",
-    "last_updated": "2026-08-09T09:03:33Z",
+    "last_updated": "2026-09-05T02:46:10Z",
     "is_new_recommendation": false,
     "is_weekly_new": false,
     "weekly_new": false,
@@ -2565,14 +2569,198 @@
     "summary_provider": "openai",
     "openai_summary_applied": true,
     "summary_source": "curated_paper_pool",
-    "updated_at": "2026-08-09T09:03:33Z",
+    "updated_at": "2026-09-05T02:46:10Z",
     "first_added": "2026-07-11T03:57:18Z",
-    "last_updated": "2026-08-09T09:03:33Z",
+    "last_updated": "2026-09-05T02:46:10Z",
     "is_new_recommendation": false,
     "is_weekly_new": false,
     "weekly_new": false,
     "openalex_source_id": "https://openalex.org/S4210174904",
     "local_summary_applied": false
+  },
+  {
+    "title": "Multi-material additive manufacturing for microfluidic applications",
+    "doi": "10.1007/s40964-026-01847-w",
+    "journal": "Progress in Additive Manufacturing",
+    "publication_type": "journal_article",
+    "venue_trust": "trusted",
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "openalex_venue_rank": "Rank 2",
+    "openalex_venue_rank_number": 2,
+    "openalex_venue_rank_score": 4.039043824701195,
+    "openalex_venue_rank_percentile": 0.5964,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
+    "year": 2026,
+    "issn": [
+      "2363-9512",
+      "2363-9520"
+    ],
+    "issn_l": "",
+    "crossref_type": "journal-article",
+    "authors": [
+      "Stavros Skrepetos",
+      "Misha Ruijgrok",
+      "Marcel Tichem",
+      "Paola Fanzio"
+    ],
+    "last_author": "Paola Fanzio",
+    "author_details": [
+      {
+        "name": "Stavros Skrepetos",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Misha Ruijgrok",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Marcel Tichem",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Paola Fanzio",
+        "orcid": "https://orcid.org/0009-0009-5947-7640",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_authors": [
+      {
+        "name": "Stavros Skrepetos",
+        "openalex_author_id": "https://openalex.org/A5092738302",
+        "orcid": null,
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Delft University of Technology",
+            "ror": "https://ror.org/02e2c7k09",
+            "country_code": "NL",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Deparment of Precision and Microsystem Engineering, Faculty of Mechanical Engineering, Delft University of Technology, Delft, Netherlands"
+        ]
+      },
+      {
+        "name": "Misha Ruijgrok",
+        "openalex_author_id": "https://openalex.org/A5144385140",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Delft University of Technology",
+            "ror": "https://ror.org/02e2c7k09",
+            "country_code": "NL",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Deparment of Precision and Microsystem Engineering, Faculty of Mechanical Engineering, Delft University of Technology, Delft, Netherlands"
+        ]
+      },
+      {
+        "name": "Marcel Tichem",
+        "openalex_author_id": "https://openalex.org/A5049247562",
+        "orcid": "https://orcid.org/0000-0001-6441-5748",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Delft University of Technology",
+            "ror": "https://ror.org/02e2c7k09",
+            "country_code": "NL",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Deparment of Precision and Microsystem Engineering, Faculty of Mechanical Engineering, Delft University of Technology, Delft, Netherlands"
+        ]
+      },
+      {
+        "name": "Paola Fanzio",
+        "openalex_author_id": "https://openalex.org/A5013966734",
+        "orcid": "https://orcid.org/0009-0009-5947-7640",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Delft University of Technology",
+            "ror": "https://ror.org/02e2c7k09",
+            "country_code": "NL",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Deparment of Precision and Microsystem Engineering, Faculty of Mechanical Engineering, Delft University of Technology, Delft, Netherlands"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "url": "https://doi.org/10.1007/s40964-026-01847-w",
+    "citation": "",
+    "recommendation_level": "High",
+    "aml_score": 0.9094,
+    "matched_topics": [
+      "fdm",
+      "multi-material additive manufacturing"
+    ],
+    "why_recommended": "Recommended because this paper matches fdm, multi-material additive manufacturing. It is closest to Recent Advances in Multi-Material Additive Manufacturing: Methods and Applications; deterministic AML score: 0.91.",
+    "reason_source": "template",
+    "discovery_routes": [
+      "existing_keyword_pool"
+    ],
+    "related_seed_papers": [
+      {
+        "title": "Recent Advances in Multi-Material Additive Manufacturing: Methods and Applications",
+        "doi": "10.1016/j.coche.2020.03.004",
+        "similarity": 0.9267
+      }
+    ],
+    "ai_summary_en": "1. Topic - This paper studies multi-material additive manufacturing for microfluidic applications.\n2. Problem - It addresses the challenge of integrating multiple functional materials in microfluidic devices using various additive manufacturing technologies.\n3. Method - The work reviews different additive manufacturing techniques, including extrusion-based and light-based methods, and discusses strategies to enable multi-material fabrication.\n4. Key Result - The paper highlights the use of multi-vat printers, resin swapping systems, and dual-curing resins to achieve integrated microfluidic devices with diverse material properties.\n5. Takeaway - This research is useful for understanding the current state of multi-material AM in microfluidics and serves as background literature for DLP, SLA, and FDM/Material extrusion.",
+    "relevance_note_en": "Relevant to the tracker through DLP, SLA, and FDM/Material extrusion; score: 7/10.",
+    "summary_provider": "local",
+    "openai_summary_applied": false,
+    "local_summary_applied": true,
+    "summary_model": "qwen2.5:7b",
+    "summary_source": "curated_paper_pool",
+    "updated_at": "2026-09-05T02:46:10Z",
+    "first_added": "2026-08-09T09:03:33Z",
+    "last_updated": "2026-09-05T02:46:10Z",
+    "is_new_recommendation": false,
+    "is_weekly_new": false,
+    "weekly_new": false,
+    "openalex_source_id": "https://openalex.org/S4210206835",
+    "tags": [
+      "SLA",
+      "fdm",
+      "multi-material additive manufacturing",
+      "fused filament fabrication"
+    ],
+    "categories": [
+      "Reviews and Surveys",
+      "Multi-material AM"
+    ],
+    "relevance_score": 9,
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false
   },
   {
     "title": "Diffusion-guided 4D microprinting of soft microactuators",
@@ -2688,9 +2876,9 @@
     "summary_provider": "openai",
     "openai_summary_applied": true,
     "summary_source": "curated_paper_pool",
-    "updated_at": "2026-08-09T09:03:33Z",
+    "updated_at": "2026-09-05T02:46:10Z",
     "first_added": "2026-07-11T03:57:18Z",
-    "last_updated": "2026-08-09T09:03:33Z",
+    "last_updated": "2026-09-05T02:46:10Z",
     "is_new_recommendation": false,
     "is_weekly_new": false,
     "weekly_new": false,
@@ -2786,8 +2974,8 @@
         ]
       },
       {
-        "name": "Lei Ren",
-        "openalex_author_id": "https://openalex.org/A5133749330",
+        "name": "Luquan Ren",
+        "openalex_author_id": "https://openalex.org/A5133795267",
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -2813,7 +3001,7 @@
       },
       {
         "name": "Luquan Ren",
-        "openalex_author_id": null,
+        "openalex_author_id": "https://openalex.org/A5133795267",
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -2863,14 +3051,304 @@
     "summary_provider": "openai",
     "openai_summary_applied": true,
     "summary_source": "curated_paper_pool",
-    "updated_at": "2026-08-09T09:03:33Z",
+    "updated_at": "2026-09-05T02:46:10Z",
     "first_added": "2026-07-11T03:57:18Z",
-    "last_updated": "2026-08-09T09:03:33Z",
+    "last_updated": "2026-09-05T02:46:10Z",
     "is_new_recommendation": false,
     "is_weekly_new": false,
     "weekly_new": false,
     "openalex_source_id": "https://openalex.org/S1018252914",
     "local_summary_applied": false
+  },
+  {
+    "title": "Rapid fabrication of stretchable, ultratough, and rigid polymer materials",
+    "doi": "10.1126/sciadv.aeh7273",
+    "journal": "Science Advances",
+    "publication_type": "journal_article",
+    "venue_trust": "trusted",
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "openalex_venue_rank": "Rank 1",
+    "openalex_venue_rank_number": 1,
+    "openalex_venue_rank_score": 12.005587372538065,
+    "openalex_venue_rank_percentile": 0.9365,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
+    "year": 2026,
+    "issn": [
+      "2375-2548"
+    ],
+    "issn_l": "",
+    "crossref_type": "journal-article",
+    "authors": [
+      "Yuxuan Qiao",
+      "Kai Guo",
+      "Dongzhao Hao",
+      "Na Li",
+      "Xiaojiao Shi",
+      "Boyao Wang",
+      "Ya Liang",
+      "Tifeng Jiao",
+      "Junjie Li",
+      "Zhihui Qin"
+    ],
+    "last_author": "Zhihui Qin",
+    "author_details": [
+      {
+        "name": "Yuxuan Qiao",
+        "orcid": "https://orcid.org/0009-0009-0932-7812",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "State Key Laboratory of Metastable Materials Science and Technology, Hebei Key Laboratory of Applied Chemistry, Hebei Key Laboratory of Nanobiotechnology, Hebei Key Laboratory of Heavy Metal Deep-Remediation in Water and Resource Reuse, Yanshan University, Qinhuangdao 066004, China."
+          }
+        ],
+        "raw_affiliation_strings": [
+          "State Key Laboratory of Metastable Materials Science and Technology, Hebei Key Laboratory of Applied Chemistry, Hebei Key Laboratory of Nanobiotechnology, Hebei Key Laboratory of Heavy Metal Deep-Remediation in Water and Resource Reuse, Yanshan University, Qinhuangdao 066004, China."
+        ]
+      },
+      {
+        "name": "Kai Guo",
+        "orcid": "https://orcid.org/0000-0002-3197-7776",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "State Key Laboratory of Metastable Materials Science and Technology, Hebei Key Laboratory of Applied Chemistry, Hebei Key Laboratory of Nanobiotechnology, Hebei Key Laboratory of Heavy Metal Deep-Remediation in Water and Resource Reuse, Yanshan University, Qinhuangdao 066004, China."
+          }
+        ],
+        "raw_affiliation_strings": [
+          "State Key Laboratory of Metastable Materials Science and Technology, Hebei Key Laboratory of Applied Chemistry, Hebei Key Laboratory of Nanobiotechnology, Hebei Key Laboratory of Heavy Metal Deep-Remediation in Water and Resource Reuse, Yanshan University, Qinhuangdao 066004, China."
+        ]
+      },
+      {
+        "name": "Dongzhao Hao",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "School of Chemical Engineering and Technology, Tianjin University, Tianjin 300350, China."
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Chemical Engineering and Technology, Tianjin University, Tianjin 300350, China."
+        ]
+      },
+      {
+        "name": "Na Li",
+        "orcid": "https://orcid.org/0009-0007-7220-9224",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "State Key Laboratory of Metastable Materials Science and Technology, Hebei Key Laboratory of Applied Chemistry, Hebei Key Laboratory of Nanobiotechnology, Hebei Key Laboratory of Heavy Metal Deep-Remediation in Water and Resource Reuse, Yanshan University, Qinhuangdao 066004, China."
+          }
+        ],
+        "raw_affiliation_strings": [
+          "State Key Laboratory of Metastable Materials Science and Technology, Hebei Key Laboratory of Applied Chemistry, Hebei Key Laboratory of Nanobiotechnology, Hebei Key Laboratory of Heavy Metal Deep-Remediation in Water and Resource Reuse, Yanshan University, Qinhuangdao 066004, China."
+        ]
+      },
+      {
+        "name": "Xiaojiao Shi",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "State Key Laboratory of Metastable Materials Science and Technology, Hebei Key Laboratory of Applied Chemistry, Hebei Key Laboratory of Nanobiotechnology, Hebei Key Laboratory of Heavy Metal Deep-Remediation in Water and Resource Reuse, Yanshan University, Qinhuangdao 066004, China."
+          }
+        ],
+        "raw_affiliation_strings": [
+          "State Key Laboratory of Metastable Materials Science and Technology, Hebei Key Laboratory of Applied Chemistry, Hebei Key Laboratory of Nanobiotechnology, Hebei Key Laboratory of Heavy Metal Deep-Remediation in Water and Resource Reuse, Yanshan University, Qinhuangdao 066004, China."
+        ]
+      },
+      {
+        "name": "Boyao Wang",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "State Key Laboratory of Metastable Materials Science and Technology, Hebei Key Laboratory of Applied Chemistry, Hebei Key Laboratory of Nanobiotechnology, Hebei Key Laboratory of Heavy Metal Deep-Remediation in Water and Resource Reuse, Yanshan University, Qinhuangdao 066004, China."
+          }
+        ],
+        "raw_affiliation_strings": [
+          "State Key Laboratory of Metastable Materials Science and Technology, Hebei Key Laboratory of Applied Chemistry, Hebei Key Laboratory of Nanobiotechnology, Hebei Key Laboratory of Heavy Metal Deep-Remediation in Water and Resource Reuse, Yanshan University, Qinhuangdao 066004, China."
+        ]
+      },
+      {
+        "name": "Ya Liang",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "State Key Laboratory of Metastable Materials Science and Technology, Hebei Key Laboratory of Applied Chemistry, Hebei Key Laboratory of Nanobiotechnology, Hebei Key Laboratory of Heavy Metal Deep-Remediation in Water and Resource Reuse, Yanshan University, Qinhuangdao 066004, China."
+          }
+        ],
+        "raw_affiliation_strings": [
+          "State Key Laboratory of Metastable Materials Science and Technology, Hebei Key Laboratory of Applied Chemistry, Hebei Key Laboratory of Nanobiotechnology, Hebei Key Laboratory of Heavy Metal Deep-Remediation in Water and Resource Reuse, Yanshan University, Qinhuangdao 066004, China."
+        ]
+      },
+      {
+        "name": "Tifeng Jiao",
+        "orcid": "https://orcid.org/0000-0003-1238-0277",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "State Key Laboratory of Metastable Materials Science and Technology, Hebei Key Laboratory of Applied Chemistry, Hebei Key Laboratory of Nanobiotechnology, Hebei Key Laboratory of Heavy Metal Deep-Remediation in Water and Resource Reuse, Yanshan University, Qinhuangdao 066004, China."
+          }
+        ],
+        "raw_affiliation_strings": [
+          "State Key Laboratory of Metastable Materials Science and Technology, Hebei Key Laboratory of Applied Chemistry, Hebei Key Laboratory of Nanobiotechnology, Hebei Key Laboratory of Heavy Metal Deep-Remediation in Water and Resource Reuse, Yanshan University, Qinhuangdao 066004, China."
+        ]
+      },
+      {
+        "name": "Junjie Li",
+        "orcid": "https://orcid.org/0000-0003-2152-6952",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "School of Chemical Engineering and Technology, Tianjin University, Tianjin 300350, China."
+          },
+          {
+            "name": "State Key Laboratory of Synthetic Biology, Tianjin University, Tianjin 300350, China."
+          },
+          {
+            "name": "Frontiers Science Center for Synthetic Biology (Ministry of Education), Tianjin University, Tianjin 300350, China."
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Chemical Engineering and Technology, Tianjin University, Tianjin 300350, China.",
+          "State Key Laboratory of Synthetic Biology, Tianjin University, Tianjin 300350, China.",
+          "Frontiers Science Center for Synthetic Biology (Ministry of Education), Tianjin University, Tianjin 300350, China."
+        ]
+      },
+      {
+        "name": "Zhihui Qin",
+        "orcid": "https://orcid.org/0000-0003-3338-9713",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "State Key Laboratory of Metastable Materials Science and Technology, Hebei Key Laboratory of Applied Chemistry, Hebei Key Laboratory of Nanobiotechnology, Hebei Key Laboratory of Heavy Metal Deep-Remediation in Water and Resource Reuse, Yanshan University, Qinhuangdao 066004, China."
+          }
+        ],
+        "raw_affiliation_strings": [
+          "State Key Laboratory of Metastable Materials Science and Technology, Hebei Key Laboratory of Applied Chemistry, Hebei Key Laboratory of Nanobiotechnology, Hebei Key Laboratory of Heavy Metal Deep-Remediation in Water and Resource Reuse, Yanshan University, Qinhuangdao 066004, China."
+        ]
+      }
+    ],
+    "corresponding_authors": [
+      {
+        "name": "Tifeng Jiao",
+        "openalex_author_id": "https://openalex.org/A5004556206",
+        "orcid": "https://orcid.org/0000-0003-1238-0277",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Yanshan University",
+            "ror": "https://ror.org/02txfnf15",
+            "country_code": "CN",
+            "type": "education"
+          },
+          {
+            "name": "State Key Laboratory of Metastable Materials Science and Technology",
+            "ror": "https://ror.org/00g51hv48",
+            "country_code": null,
+            "type": "facility"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "State Key Laboratory of Metastable Materials Science and Technology, Hebei Key Laboratory of Applied Chemistry, Hebei Key Laboratory of Nanobiotechnology, Hebei Key Laboratory of Heavy Metal Deep-Remediation in Water and Resource Reuse, Yanshan University, Qinhuangdao 066004, China"
+        ]
+      },
+      {
+        "name": "Junjie Li",
+        "openalex_author_id": "https://openalex.org/A5100367671",
+        "orcid": "https://orcid.org/0000-0003-2152-6952",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Tianjin University",
+            "ror": "https://ror.org/012tb2g32",
+            "country_code": "CN",
+            "type": "education"
+          },
+          {
+            "name": "Tianjin Synthetic Material Research Institute (China)",
+            "ror": "https://ror.org/005n4dc83",
+            "country_code": "CN",
+            "type": "company"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Frontiers Science Center for Synthetic Biology (Ministry of Education), Tianjin University, Tianjin 300350, China",
+          "School of Chemical Engineering and Technology, Tianjin University, Tianjin 300350, China",
+          "State Key Laboratory of Synthetic Biology, Tianjin University, Tianjin 300350, China"
+        ]
+      },
+      {
+        "name": "Zhihui Qin",
+        "openalex_author_id": "https://openalex.org/A5003167438",
+        "orcid": "https://orcid.org/0000-0003-3338-9713",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Yanshan University",
+            "ror": "https://ror.org/02txfnf15",
+            "country_code": "CN",
+            "type": "education"
+          },
+          {
+            "name": "State Key Laboratory of Metastable Materials Science and Technology",
+            "ror": "https://ror.org/00g51hv48",
+            "country_code": null,
+            "type": "facility"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "State Key Laboratory of Metastable Materials Science and Technology, Hebei Key Laboratory of Applied Chemistry, Hebei Key Laboratory of Nanobiotechnology, Hebei Key Laboratory of Heavy Metal Deep-Remediation in Water and Resource Reuse, Yanshan University, Qinhuangdao 066004, China"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "url": "https://doi.org/10.1126/sciadv.aeh7273",
+    "citation": "",
+    "recommendation_level": "High",
+    "aml_score": 0.9079,
+    "matched_topics": [],
+    "why_recommended": "Recommended because this paper matches AML seed-paper topics. It is closest to Recent Advances in Multi-Material Additive Manufacturing: Methods and Applications; deterministic AML score: 0.91.",
+    "reason_source": "template",
+    "discovery_routes": [
+      "existing_keyword_pool"
+    ],
+    "related_seed_papers": [
+      {
+        "title": "Recent Advances in Multi-Material Additive Manufacturing: Methods and Applications",
+        "doi": "10.1016/j.coche.2020.03.004",
+        "similarity": 0.8998
+      }
+    ],
+    "ai_summary_en": "1. Topic - Rapid fabrication of stretchable, ultratough, and rigid polymer materials\n2. Problem - Addressing the trade-offs in polymer materials for stiffness, toughness, stretchability, and scalable fabrication\n3. Method - Integrating dense side-chain hydrogen-bonding motifs into a highly entangled flexible polymer network through photocuring copolymerization\n4. Key Result - Achieving high Young's modulus (515.0 ± 100.9 MPa) and yield strength (57.8 ± 1.8 MPa) while maintaining exceptional toughness (135.7 ± 10.7 MJ/m³) and fracture strain (400.1 ± 46.1%)\n5. Takeaway - This work establishes a generalizable strategy for designing high-performance polymer materials through simple photopolymerization, useful for additive manufacturing",
+    "relevance_note_en": "Relevant to the tracker through additive manufacturing, specifically in the context of multi-material additive manufacturing.",
+    "summary_provider": "local",
+    "openai_summary_applied": false,
+    "local_summary_applied": true,
+    "summary_model": "qwen2.5:7b",
+    "summary_source": "curated_paper_pool",
+    "updated_at": "2026-09-05T02:46:10Z",
+    "first_added": "2026-09-05T02:46:10Z",
+    "last_updated": "2026-09-05T02:46:10Z",
+    "is_new_recommendation": true,
+    "is_weekly_new": true,
+    "weekly_new": true,
+    "openalex_source_id": "https://openalex.org/S2737427234"
   },
   {
     "title": "Shape memory polymers and composites in 4D printing: techniques and applications",
@@ -2975,9 +3453,9 @@
     "summary_provider": "openai",
     "openai_summary_applied": true,
     "summary_source": "curated_paper_pool",
-    "updated_at": "2026-08-09T09:03:33Z",
+    "updated_at": "2026-09-05T02:46:10Z",
     "first_added": "2026-07-11T03:57:18Z",
-    "last_updated": "2026-08-09T09:03:33Z",
+    "last_updated": "2026-09-05T02:46:10Z",
     "is_new_recommendation": false,
     "is_weekly_new": false,
     "weekly_new": false,
@@ -3133,6 +3611,116 @@
     "local_summary_applied": false
   },
   {
+    "title": "4D-Printed Liquid Crystal Elastomers: Printing Strategies, Actuation Mechanisms, and Emerging Applications",
+    "doi": "10.3390/jcs9110633",
+    "journal": "Journal of Composites Science",
+    "publication_type": "journal_article",
+    "venue_trust": "trusted",
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "openalex_venue_rank": "Rank 2",
+    "openalex_venue_rank_number": 2,
+    "openalex_venue_rank_score": 4.7158026233604,
+    "openalex_venue_rank_percentile": 0.6624,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
+    "year": 2025,
+    "issn": [
+      "2504-477X"
+    ],
+    "issn_l": "",
+    "crossref_type": "journal-article",
+    "authors": [
+      "Mehrab Hasan",
+      "Yingtao Liu"
+    ],
+    "last_author": "Yingtao Liu",
+    "author_details": [
+      {
+        "name": "Mehrab Hasan",
+        "orcid": "https://orcid.org/0009-0000-1674-0546",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "School of Aerospace and Mechanical Engineering, The University of Oklahoma, Norman, OK 73019, USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Aerospace and Mechanical Engineering, The University of Oklahoma, Norman, OK 73019, USA"
+        ]
+      },
+      {
+        "name": "Yingtao Liu",
+        "orcid": "https://orcid.org/0000-0002-6232-9704",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "School of Aerospace and Mechanical Engineering, The University of Oklahoma, Norman, OK 73019, USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Aerospace and Mechanical Engineering, The University of Oklahoma, Norman, OK 73019, USA"
+        ]
+      }
+    ],
+    "corresponding_authors": [
+      {
+        "name": "Yingtao Liu",
+        "openalex_author_id": "https://openalex.org/A5060697699",
+        "orcid": "https://orcid.org/0000-0002-6232-9704",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Oklahoma",
+            "ror": "https://ror.org/02aqsxs83",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Aerospace and Mechanical Engineering, The University of Oklahoma, Norman, OK 73019, USA"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "url": "https://doi.org/10.3390/jcs9110633",
+    "citation": "",
+    "recommendation_level": "High",
+    "aml_score": 0.9072,
+    "matched_topics": [
+      "4d printing",
+      "liquid crystal elastomer",
+      "soft robotics",
+      "liquid crystal elastomers"
+    ],
+    "why_recommended": "Recommended because this paper matches 4d printing, liquid crystal elastomer, soft robotics. It is closest to Recent Advances in Molecular Programming of Liquid Crystal Elastomers with Additive Manufacturing for 4D Printing; deterministic AML score: 0.91.",
+    "reason_source": "template",
+    "discovery_routes": [
+      "existing_keyword_pool"
+    ],
+    "related_seed_papers": [
+      {
+        "title": "Recent Advances in Molecular Programming of Liquid Crystal Elastomers with Additive Manufacturing for 4D Printing",
+        "doi": "10.1039/d2me00124a",
+        "similarity": 0.9376
+      }
+    ],
+    "ai_summary_en": "1. Topic - The paper explores 4D-printed liquid crystal elastomers (LCEs) and their applications.\n2. Problem - Despite advancements, challenges such as biocompatibility and manufacturing scalability persist.\n3. Method - The review evaluates various additive manufacturing techniques, particularly direct ink writing and vat photopolymerization, for LCEs.\n4. Key Result - Recent developments in LCE actuators have shown promising functionalities in soft robotics and biomedical fields.\n5. Takeaway - 4D printing of LCEs presents significant potential for innovative applications while highlighting existing challenges.",
+    "relevance_note_en": "The summary captures the main themes and findings of the paper effectively.",
+    "summary_provider": "openai",
+    "openai_summary_applied": true,
+    "summary_source": "curated_paper_pool",
+    "updated_at": "2026-09-05T02:46:10Z",
+    "first_added": "2026-07-11T03:57:18Z",
+    "last_updated": "2026-09-05T02:46:10Z",
+    "is_new_recommendation": false,
+    "is_weekly_new": false,
+    "weekly_new": false,
+    "openalex_source_id": "https://openalex.org/S4210181540",
+    "local_summary_applied": false
+  },
+  {
     "title": "High-strength, programmable energy-dissipating liquid crystal elastomers via hydrogen-bond-locked 4D printing",
     "doi": "10.1016/j.isci.2026.115746",
     "journal": "iScience",
@@ -3223,7 +3811,6 @@
     "why_recommended": "Recommended because this paper matches 4d printing, liquid crystal elastomer, liquid crystal elastomers. It is closest to Recent Advances in Molecular Programming of Liquid Crystal Elastomers with Additive Manufacturing for 4D Printing; deterministic AML score: 0.91.",
     "reason_source": "template",
     "discovery_routes": [
-      "crossref_keyword_search",
       "existing_keyword_pool"
     ],
     "related_seed_papers": [
@@ -3238,9 +3825,9 @@
     "summary_provider": "openai",
     "openai_summary_applied": true,
     "summary_source": "curated_paper_pool",
-    "updated_at": "2026-08-09T09:03:33Z",
+    "updated_at": "2026-09-05T02:46:10Z",
     "first_added": "2026-07-11T03:57:18Z",
-    "last_updated": "2026-08-09T09:03:33Z",
+    "last_updated": "2026-09-05T02:46:10Z",
     "is_new_recommendation": false,
     "is_weekly_new": false,
     "weekly_new": false,
@@ -3780,9 +4367,9 @@
     "summary_provider": "openai",
     "openai_summary_applied": true,
     "summary_source": "curated_paper_pool",
-    "updated_at": "2026-08-09T09:03:33Z",
+    "updated_at": "2026-09-05T02:46:10Z",
     "first_added": "2026-07-11T03:57:18Z",
-    "last_updated": "2026-08-09T09:03:33Z",
+    "last_updated": "2026-09-05T02:46:10Z",
     "is_new_recommendation": false,
     "is_weekly_new": false,
     "weekly_new": false,
@@ -3875,9 +4462,9 @@
     "summary_provider": "openai",
     "openai_summary_applied": true,
     "summary_source": "curated_paper_pool",
-    "updated_at": "2026-08-09T09:03:33Z",
+    "updated_at": "2026-09-05T02:46:10Z",
     "first_added": "2026-07-11T03:57:18Z",
-    "last_updated": "2026-08-09T09:03:33Z",
+    "last_updated": "2026-09-05T02:46:10Z",
     "is_new_recommendation": false,
     "is_weekly_new": false,
     "weekly_new": false,
@@ -4062,12 +4649,12 @@
     "local_summary_applied": false,
     "summary_model": "",
     "summary_source": "curated_paper_pool",
-    "updated_at": "2026-08-09T09:03:33Z",
+    "updated_at": "2026-09-05T02:46:10Z",
     "first_added": "2026-08-09T09:03:33Z",
-    "last_updated": "2026-08-09T09:03:33Z",
-    "is_new_recommendation": true,
-    "is_weekly_new": true,
-    "weekly_new": true,
+    "last_updated": "2026-09-05T02:46:10Z",
+    "is_new_recommendation": false,
+    "is_weekly_new": false,
+    "weekly_new": false,
     "openalex_source_id": "https://openalex.org/S2737737698"
   },
   {
@@ -4155,9 +4742,9 @@
     "summary_provider": "openai",
     "openai_summary_applied": true,
     "summary_source": "curated_paper_pool",
-    "updated_at": "2026-08-09T09:03:33Z",
+    "updated_at": "2026-09-05T02:46:10Z",
     "first_added": "2026-07-11T03:57:18Z",
-    "last_updated": "2026-08-09T09:03:33Z",
+    "last_updated": "2026-09-05T02:46:10Z",
     "is_new_recommendation": false,
     "is_weekly_new": false,
     "weekly_new": false,
