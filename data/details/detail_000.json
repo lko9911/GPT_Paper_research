@@ -23804,7 +23804,7 @@
     "publisher": "Ovid Technologies (Wolters Kluwer Health)",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7208721790",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S19176856",
     "venue_metrics": {
@@ -25345,6 +25345,129 @@
     "last_seen_in_crossref_run": "2026-09-05",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/adma.202515461"
+  },
+  "10.1080/17452759.2026.2720703": {
+    "author_details": [
+      {
+        "name": "Dominik Laa",
+        "orcid": "https://orcid.org/0009-0007-9721-2446",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Technische Universität Wien"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Technische Universität Wien"
+        ]
+      },
+      {
+        "name": "Sebastian Geyer",
+        "orcid": "https://orcid.org/0009-0000-6882-4178",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Technische Universität Wien"
+          },
+          {
+            "name": "University of Applied Sciences"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Technische Universität Wien",
+          "University of Applied Sciences"
+        ]
+      },
+      {
+        "name": "Thomas Koch",
+        "orcid": "https://orcid.org/0000-0003-2801-3113",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Technische Universität Wien"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Technische Universität Wien"
+        ]
+      },
+      {
+        "name": "Jürgen Stampfl",
+        "orcid": "https://orcid.org/0000-0002-3626-5647",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Technische Universität Wien"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Technische Universität Wien"
+        ]
+      }
+    ],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "1745-2759",
+      "1745-2767"
+    ],
+    "issn_l": "",
+    "publisher": "Informa UK Limited",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S152936027",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S152936027",
+      "issn_l": "1745-2759",
+      "issn": [
+        "1745-2759",
+        "1745-2767"
+      ],
+      "type": "journal",
+      "host_organization_name": "Taylor & Francis",
+      "works_count": 1288,
+      "cited_by_count": 39605,
+      "two_year_mean_citedness": 10.10738255033557,
+      "h_index": 92,
+      "i10_index": 718,
+      "is_core": true,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 10.10738255033557,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - Topological influence on the tensile performance of multi-material SLA 3D printed cellular structures is a 2026 paper from Virtual and Physical Prototyping about SLA.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to SLA.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for SLA; current relevance score is 6/10.",
+    "relevance_note_en": "Relevant to the tracker through SLA; score: 6/10.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-09-05",
+    "id": "10.1080/17452759.2026.2720703"
   },
   "10.1038/s44334-026-00092-x": {
     "author_details": [
@@ -29340,156 +29463,5 @@
     "not_seen_in_latest_crossref_run": false,
     "last_seen_in_crossref_run": "2026-09-05",
     "id": "10.1016/j.apmate.2026.100415"
-  },
-  "10.1080/17452759.2026.2666479": {
-    "author_details": [
-      {
-        "name": "Haowei Guo",
-        "orcid": "https://orcid.org/0009-0004-9276-5365",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Xiamen University"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Xiamen University"
-        ]
-      },
-      {
-        "name": "Haoyuan Zhu",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Xiamen University"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Xiamen University"
-        ]
-      },
-      {
-        "name": "Jingrun Chen",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Xiamen University"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Xiamen University"
-        ]
-      },
-      {
-        "name": "Kehan Xu",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Xiamen University"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Xiamen University"
-        ]
-      },
-      {
-        "name": "Wenjun Wang",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Xiamen University"
-          },
-          {
-            "name": "AECC Hunan Aviation Powerplant Research Institute"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Xiamen University",
-          "AECC Hunan Aviation Powerplant Research Institute"
-        ]
-      },
-      {
-        "name": "Cheng Yan",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Xiamen University"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Xiamen University"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "Virtual and Physical Prototyping",
-    "crossref_target_issn": "1745-2759",
-    "issn": [
-      "1745-2759",
-      "1745-2767"
-    ],
-    "issn_l": "",
-    "publisher": "Informa UK Limited",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W7161974917",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S152936027",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S152936027",
-      "issn_l": "1745-2759",
-      "issn": [
-        "1745-2759",
-        "1745-2767"
-      ],
-      "type": "journal",
-      "host_organization_name": "Taylor & Francis",
-      "works_count": 1288,
-      "cited_by_count": 39605,
-      "two_year_mean_citedness": 10.10738255033557,
-      "h_index": 92,
-      "i10_index": 718,
-      "is_core": true,
-      "is_oa": true,
-      "is_in_doaj": true
-    },
-    "journal_quality": {
-      "label": "Core manufacturing journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 10.10738255033557,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 1",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - The study focuses on optimizing multi-material interfaces in additive manufacturing.\n2. Problem - Interfaces in multi-material structures often fail due to tension-compression asymmetry, impacting load capacity.\n3. Method - A novel topology optimization method is developed, linking interfacial behavior to composite failure theory and employing an adaptive constraint approach.\n4. Key Result - The proposed method significantly enhances load capacity, achieving a 55.4% increase compared to traditional designs.\n5. Takeaway - This research demonstrates the potential of improved interface designs in multi-material additive manufacturing for better structural performance.",
-    "relevance_note_en": "The summary captures the essence of the study's focus on interface optimization in multi-material additive manufacturing.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-09-05",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1080/17452759.2026.2666479"
   }
 }
