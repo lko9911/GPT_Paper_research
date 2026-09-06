@@ -4180,11 +4180,25 @@ h1 {
 .trend-edge {
   stroke: rgba(168, 178, 197, 0.55);
   stroke-linecap: round;
+  transition:
+    opacity var(--motion-med),
+    stroke var(--motion-fast),
+    stroke-width var(--motion-med);
+}
+
+.trend-edge.is-connected {
+  opacity: 0.92 !important;
+  stroke: rgba(158, 197, 255, 0.86);
+}
+
+.trend-edge.is-dimmed {
+  opacity: 0.08 !important;
 }
 
 .trend-node {
   cursor: pointer;
   outline: none;
+  transition: opacity var(--motion-med);
 }
 
 .trend-node circle {
@@ -4212,12 +4226,23 @@ h1 {
 }
 
 .trend-node:hover circle,
-.trend-node.is-active circle {
+.trend-node.is-active circle,
+.trend-node.is-near circle {
   stroke: #9ec5ff;
   stroke-width: 2;
   filter:
     drop-shadow(0 0 8px rgba(158, 197, 255, 0.72))
     drop-shadow(0 0 16px rgba(118, 210, 173, 0.2));
+}
+
+.trend-node.is-dimmed {
+  opacity: 0.24;
+}
+
+.trend-node.is-near .trend-node-label,
+.trend-node:hover .trend-node-label,
+.trend-node.is-active .trend-node-label {
+  fill: #ffffff;
 }
 
 .trend-node-label {

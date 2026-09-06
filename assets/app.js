@@ -316,6 +316,7 @@ const state = {
   newnessTouched: false,
   filterTimer: null,
   filtersApplied: false,
+  trendMotionFrame: null,
 };
 
 function readStoredArray(key) {
@@ -991,7 +992,7 @@ function renderTrendKeywordMap() {
       const target = nodeById.get(edge.target);
       const width = Math.min(5.2, 0.7 + Math.sqrt(Number(edge.count || 1)) * 0.35);
       const opacity = Math.min(0.74, 0.14 + Math.sqrt(Number(edge.count || 1)) * 0.045 + Number(edge.recent_count || 0) * 0.018);
-      return `<line class="trend-edge" x1="${source.x}" y1="${source.y}" x2="${target.x}" y2="${target.y}" stroke-width="${width.toFixed(2)}" opacity="${opacity.toFixed(2)}" />`;
+      return `<line class="trend-edge" data-source="${escapeAttribute(edge.source)}" data-target="${escapeAttribute(edge.target)}" x1="${source.x}" y1="${source.y}" x2="${target.x}" y2="${target.y}" stroke-width="${width.toFixed(2)}" opacity="${opacity.toFixed(2)}" />`;
     })
     .join("");
 
@@ -1001,7 +1002,7 @@ function renderTrendKeywordMap() {
       const radius = Math.max(8, Math.min(24, Number(node.radius || 10)));
       const label = trendNodeLabel(node.label);
       const countText = Number(node.recent_count || 0) > 0 ? `+${node.recent_count} recent` : `${node.count} papers`;
-      return `<g class="trend-node${trendClass}" tabindex="0" role="button" data-trend-keyword="${escapeAttribute(node.label)}" transform="translate(${node.x} ${node.y})">
+      return `<g class="trend-node${trendClass}" tabindex="0" role="button" data-node-id="${escapeAttribute(node.id)}" data-base-x="${escapeAttribute(node.x)}" data-base-y="${escapeAttribute(node.y)}" data-trend-keyword="${escapeAttribute(node.label)}" transform="translate(${node.x} ${node.y})">
         <circle r="${radius.toFixed(1)}"></circle>
         <text class="trend-node-label" y="${radius + 15}" text-anchor="middle">${escapeHtml(label)}</text>
         <text class="trend-node-count" y="${radius + 29}" text-anchor="middle">${escapeHtml(countText)}</text>
@@ -1042,9 +1043,89 @@ function renderTrendKeywordMap() {
       applyFilters();
       scrollToPapers();
     });
+    node.addEventListener("pointerenter", () => highlightTrendNeighborhood(node.dataset.nodeId || ""));
+    node.addEventListener("pointerleave", clearTrendNeighborhood);
+    node.addEventListener("focus", () => highlightTrendNeighborhood(node.dataset.nodeId || ""));
+    node.addEventListener("blur", clearTrendNeighborhood);
   });
 
+  startTrendMapMotion();
   syncOntologyActive();
+}
+
+function startTrendMapMotion() {
+  if (state.trendMotionFrame) {
+    window.cancelAnimationFrame(state.trendMotionFrame);
+    state.trendMotionFrame = null;
+  }
+  if (!els.ontologyMap || !window.requestAnimationFrame || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  const svg = els.ontologyMap.querySelector(".trend-keyword-svg");
+  if (!svg) return;
+  const nodes = [...svg.querySelectorAll(".trend-node")].map((node, index) => {
+    return {
+      el: node,
+      id: node.dataset.nodeId || "",
+      x: Number(node.dataset.baseX || 0),
+      y: Number(node.dataset.baseY || 0),
+      phase: index * 0.74,
+      speed: 0.00045 + (index % 5) * 0.000055,
+      amp: 2.2 + (index % 4) * 0.55,
+    };
+  });
+  const nodeById = new Map(nodes.map((node) => [node.id, node]));
+  const edges = [...svg.querySelectorAll(".trend-edge")].map((edge) => ({
+    el: edge,
+    source: edge.dataset.source || "",
+    target: edge.dataset.target || "",
+  }));
+  const tick = (time) => {
+    nodes.forEach((node) => {
+      const x = node.x + Math.sin(time * node.speed + node.phase) * node.amp;
+      const y = node.y + Math.cos(time * (node.speed * 0.82) + node.phase) * (node.amp * 0.7);
+      node.currentX = x;
+      node.currentY = y;
+      node.el.setAttribute("transform", `translate(${x.toFixed(2)} ${y.toFixed(2)})`);
+    });
+    edges.forEach((edge) => {
+      const source = nodeById.get(edge.source);
+      const target = nodeById.get(edge.target);
+      if (!source || !target) return;
+      edge.el.setAttribute("x1", source.currentX.toFixed(2));
+      edge.el.setAttribute("y1", source.currentY.toFixed(2));
+      edge.el.setAttribute("x2", target.currentX.toFixed(2));
+      edge.el.setAttribute("y2", target.currentY.toFixed(2));
+    });
+    state.trendMotionFrame = window.requestAnimationFrame(tick);
+  };
+  state.trendMotionFrame = window.requestAnimationFrame(tick);
+}
+
+function highlightTrendNeighborhood(nodeId) {
+  if (!els.ontologyMap || !nodeId) return;
+  const connected = new Set([nodeId]);
+  els.ontologyMap.querySelectorAll(".trend-edge").forEach((edge) => {
+    const source = edge.dataset.source || "";
+    const target = edge.dataset.target || "";
+    const isConnected = source === nodeId || target === nodeId;
+    edge.classList.toggle("is-connected", isConnected);
+    edge.classList.toggle("is-dimmed", !isConnected);
+    if (isConnected) {
+      connected.add(source);
+      connected.add(target);
+    }
+  });
+  els.ontologyMap.querySelectorAll(".trend-node").forEach((node) => {
+    const id = node.dataset.nodeId || "";
+    node.classList.toggle("is-near", connected.has(id));
+    node.classList.toggle("is-dimmed", !connected.has(id));
+  });
+}
+
+function clearTrendNeighborhood() {
+  if (!els.ontologyMap) return;
+  els.ontologyMap.querySelectorAll(".trend-edge, .trend-node").forEach((item) => {
+    item.classList.remove("is-connected", "is-dimmed", "is-near");
+  });
 }
 
 function trendNodeLabel(label) {
