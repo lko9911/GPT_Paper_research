@@ -141,9 +141,9 @@ const UI_TEXT = {
     doiButton: "DOI",
     copyCitation: "Copy Cite",
     copiedCitation: "Copied",
-    ontologyKicker: "Ontology Map",
-    ontologyTitle: "Topic Structure",
-    ontologyCount: "linked topics",
+    ontologyKicker: "Trend Map",
+    ontologyTitle: "Keyword Network",
+    ontologyCount: "keyword links",
     llmHelperKicker: "LLM Helper",
     llmHelperTitle: "Prompt Builder",
     llmHelperMode: "Mode",
@@ -259,6 +259,7 @@ const UPDATE_STATUS_URLS = [
   "data/update_status.json",
 ];
 const AML_RECOMMENDATIONS_URL = "public/data/aml_recommended_papers.json";
+const TREND_KEYWORD_MAP_URL = "data/trend_keyword_map.json";
 const AML_PUBLIC_SCORE_THRESHOLD = 0.75;
 const PAPERS_INDEX_URL = "data/papers_index.json";
 const PAPERS_FALLBACK_URL = "data/papers.json";
@@ -293,6 +294,7 @@ localStorage.removeItem("language");
 const state = {
   papers: [],
   amlRecommendations: [],
+  trendKeywordMap: null,
   siteMeta: null,
   updateStatus: null,
   filtered: [],
@@ -380,6 +382,7 @@ async function init() {
   }
   state.amlRecommendations = await loadAmlRecommendations();
   state.updateStatus = await loadUpdateStatus();
+  state.trendKeywordMap = await loadTrendKeywordMap();
 
   buildFilters();
   buildSideNav();
@@ -888,6 +891,10 @@ function renderResearchWorkbench() {
 
 function renderOntologyMap() {
   if (!els.ontologyMap) return;
+  if (state.trendKeywordMap && Array.isArray(state.trendKeywordMap.nodes) && state.trendKeywordMap.nodes.length) {
+    renderTrendKeywordMap();
+    return;
+  }
   const totalLinks = FIELD_ORDER.reduce((sum, field) => sum + ontologySubtopicEntries(field).filter((entry) => entry.count > 0).length, 0);
   if (els.ontologyCount) {
     els.ontologyCount.textContent = `${totalLinks.toLocaleString("en-US")} ${t("ontologyCount")}`;
@@ -965,6 +972,83 @@ function renderOntologyMap() {
   });
 
   syncOntologyActive();
+}
+
+function renderTrendKeywordMap() {
+  const map = state.trendKeywordMap || {};
+  const nodes = Array.isArray(map.nodes) ? map.nodes : [];
+  const edges = Array.isArray(map.edges) ? map.edges : [];
+  const nodeById = new Map(nodes.map((node) => [node.id, node]));
+  if (els.ontologyCount) {
+    els.ontologyCount.textContent = `${nodes.length.toLocaleString("en-US")} keywords · ${edges.length.toLocaleString("en-US")} links`;
+  }
+
+  const edgeMarkup = edges
+    .filter((edge) => nodeById.has(edge.source) && nodeById.has(edge.target))
+    .sort((a, b) => Number(a.count || 0) - Number(b.count || 0))
+    .map((edge) => {
+      const source = nodeById.get(edge.source);
+      const target = nodeById.get(edge.target);
+      const width = Math.min(5.2, 0.7 + Math.sqrt(Number(edge.count || 1)) * 0.35);
+      const opacity = Math.min(0.74, 0.14 + Math.sqrt(Number(edge.count || 1)) * 0.045 + Number(edge.recent_count || 0) * 0.018);
+      return `<line class="trend-edge" x1="${source.x}" y1="${source.y}" x2="${target.x}" y2="${target.y}" stroke-width="${width.toFixed(2)}" opacity="${opacity.toFixed(2)}" />`;
+    })
+    .join("");
+
+  const nodeMarkup = nodes
+    .map((node) => {
+      const trendClass = Number(node.trend_score || 0) >= 0.62 ? " is-hot" : Number(node.recent_count || 0) > 0 ? " is-warm" : "";
+      const radius = Math.max(8, Math.min(24, Number(node.radius || 10)));
+      const label = trendNodeLabel(node.label);
+      const countText = Number(node.recent_count || 0) > 0 ? `+${node.recent_count} recent` : `${node.count} papers`;
+      return `<g class="trend-node${trendClass}" tabindex="0" role="button" data-trend-keyword="${escapeAttribute(node.label)}" transform="translate(${node.x} ${node.y})">
+        <circle r="${radius.toFixed(1)}"></circle>
+        <text class="trend-node-label" y="${radius + 15}" text-anchor="middle">${escapeHtml(label)}</text>
+        <text class="trend-node-count" y="${radius + 29}" text-anchor="middle">${escapeHtml(countText)}</text>
+      </g>`;
+    })
+    .join("");
+
+  els.ontologyMap.innerHTML = `
+    <svg class="trend-keyword-svg" viewBox="0 0 920 520" role="img" aria-label="Keyword co-occurrence map for recent research trends">
+      <defs>
+        <radialGradient id="trend-hot-gradient" cx="40%" cy="35%" r="70%">
+          <stop offset="0%" stop-color="#fff6d7" />
+          <stop offset="62%" stop-color="#f0c36d" />
+          <stop offset="100%" stop-color="#b85f2b" />
+        </radialGradient>
+      </defs>
+      <rect class="trend-map-bg" x="0" y="0" width="920" height="520" rx="16"></rect>
+      <g class="trend-edges">${edgeMarkup}</g>
+      <g class="trend-nodes">${nodeMarkup}</g>
+    </svg>`;
+
+  els.ontologyMap.querySelectorAll("[data-trend-keyword]").forEach((node) => {
+    node.addEventListener("click", () => {
+      const keyword = node.dataset.trendKeyword || "";
+      if (!keyword) return;
+      state.activeAmlRecommendations = false;
+      clearActiveSubtopics();
+      if (els.search) els.search.value = keyword;
+      if (els.category) els.category.value = "";
+      if (els.tag) els.tag.value = "";
+      if (els.venue) els.venue.value = "";
+      if (els.summaryProvider) els.summaryProvider.value = "";
+      if (els.newness) els.newness.value = "";
+      if (els.year) els.year.value = "";
+      releaseDefaultNewnessFilter();
+      switchRankFilterMode("oa", false);
+      syncSideNavActive();
+      applyFilters();
+      scrollToPapers();
+    });
+  });
+
+  syncOntologyActive();
+}
+
+function trendNodeLabel(label) {
+  return compactOntologyLabel(label).replace(" / ", "/");
 }
 
 function ontologyFieldLayouts() {
@@ -1089,6 +1173,11 @@ function ontologySubtopicNode(field, subtopic, count) {
 
 function syncOntologyActive() {
   if (!els.ontologyMap) return;
+  els.ontologyMap.querySelectorAll("[data-trend-keyword]").forEach((node) => {
+    const keyword = normalize(node.dataset.trendKeyword || "");
+    const query = normalize(els.search && els.search.value);
+    node.classList.toggle("is-active", Boolean(keyword && query && keyword === query));
+  });
   const selectedSubtopics = state.activeSubtopics;
   els.ontologyMap.querySelectorAll("[data-ontology-field]").forEach((button) => {
     const field = button.dataset.ontologyField || "";
@@ -1175,6 +1264,19 @@ async function loadAmlRecommendations() {
   } catch (error) {
     console.warn("AML recommendations are not available yet", error);
     return [];
+  }
+}
+
+async function loadTrendKeywordMap() {
+  try {
+    const response = await fetch(`${TREND_KEYWORD_MAP_URL}?ts=${Date.now()}`);
+    if (!response.ok) return null;
+    const data = await response.json();
+    if (!data || !Array.isArray(data.nodes) || !Array.isArray(data.edges)) return null;
+    return data;
+  } catch (error) {
+    console.warn("Trend keyword map is not available yet", error);
+    return null;
   }
 }
 

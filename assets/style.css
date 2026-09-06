@@ -4165,6 +4165,83 @@ h1 {
   background-size: auto, 42px 42px, 42px 42px, auto;
 }
 
+.trend-keyword-svg {
+  display: block;
+  width: 100%;
+  min-height: 410px;
+  border-radius: 7px;
+  background: #05070b;
+}
+
+.trend-map-bg {
+  fill: #05070b;
+}
+
+.trend-edge {
+  stroke: rgba(168, 178, 197, 0.55);
+  stroke-linecap: round;
+}
+
+.trend-node {
+  cursor: pointer;
+  outline: none;
+}
+
+.trend-node circle {
+  fill: rgba(232, 237, 247, 0.9);
+  stroke: rgba(255, 255, 255, 0.72);
+  stroke-width: 1.2;
+  filter: drop-shadow(0 0 5px rgba(232, 237, 247, 0.36));
+  transition:
+    fill var(--motion-fast),
+    r var(--motion-med),
+    stroke var(--motion-fast),
+    filter var(--motion-med);
+}
+
+.trend-node.is-warm circle {
+  fill: #f2d37e;
+  stroke: rgba(255, 246, 215, 0.85);
+  filter: drop-shadow(0 0 7px rgba(240, 195, 109, 0.46));
+}
+
+.trend-node.is-hot circle {
+  fill: url("#trend-hot-gradient");
+  stroke: rgba(255, 246, 215, 0.96);
+  filter: drop-shadow(0 0 11px rgba(240, 195, 109, 0.72));
+}
+
+.trend-node:hover circle,
+.trend-node.is-active circle {
+  stroke: #9ec5ff;
+  stroke-width: 2;
+  filter:
+    drop-shadow(0 0 8px rgba(158, 197, 255, 0.72))
+    drop-shadow(0 0 16px rgba(118, 210, 173, 0.2));
+}
+
+.trend-node-label {
+  fill: rgba(237, 242, 251, 0.92);
+  font-size: 11px;
+  font-weight: 850;
+  letter-spacing: 0;
+  paint-order: stroke;
+  pointer-events: none;
+  stroke: rgba(5, 7, 11, 0.88);
+  stroke-width: 3px;
+}
+
+.trend-node-count {
+  fill: rgba(168, 178, 197, 0.86);
+  font-size: 9px;
+  font-weight: 780;
+  letter-spacing: 0;
+  paint-order: stroke;
+  pointer-events: none;
+  stroke: rgba(5, 7, 11, 0.88);
+  stroke-width: 3px;
+}
+
 .ontology-link {
   fill: none;
   stroke-linecap: round;
@@ -4471,6 +4548,12 @@ h1 {
   }
 
   .ontology-svg {
+    width: 860px;
+    max-width: none;
+    min-height: 390px;
+  }
+
+  .trend-keyword-svg {
     width: 860px;
     max-width: none;
     min-height: 390px;

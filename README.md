@@ -11,6 +11,7 @@ The scheduled `Update papers` workflow runs:
 ```bash
 python scripts/full_rebuild_crossref_dataset.py
 python scripts/build_split_data.py
+python scripts/build_trend_keyword_map.py
 ```
 
 Collection policy:
@@ -31,6 +32,7 @@ Main outputs:
 - `data/papers.csv`: active dataset CSV export.
 - `data/papers.xlsx`: active dataset Excel export.
 - `data/papers_index.json` and `data/details/detail_*.json`: GitHub Pages startup index and lazy detail chunks.
+- `data/trend_keyword_map.json`: public keyword co-occurrence network for the trend map. It stores derived keyword/link counts only, not abstracts.
 - `data/crossref_venue_queries.json`: optional Crossref ISSN-targeted venue queries, currently including `ACS Applied Materials & Interfaces` and `Materials & Design`.
 - `data/old_exports/full_rebuild_*/`: compressed backup of the previous dataset/output files.
 
