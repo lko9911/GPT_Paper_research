@@ -1,4 +1,90 @@
 {
+  "10.1016/j.rcim.2024.102877": {
+    "author_details": [
+      {
+        "name": "Sam Pratt",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Tadeusz Kosmal",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Christopher Williams",
+        "orcid": "https://orcid.org/0000-0002-0499-2444",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Robotics and Computer-Integrated Manufacturing",
+    "crossref_target_issn": "0736-5845",
+    "issn": [
+      "0736-5845"
+    ],
+    "issn_l": "",
+    "publisher": "Elsevier BV",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4403854756",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S118216261",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S118216261",
+      "issn_l": "0736-5845",
+      "issn": [
+        "0736-5845",
+        "1879-2537"
+      ],
+      "type": "journal",
+      "host_organization_name": "Elsevier BV",
+      "works_count": 3891,
+      "cited_by_count": 147298,
+      "two_year_mean_citedness": 10.130597014925373,
+      "h_index": 157,
+      "i10_index": 2463,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 10.130597014925373,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - The paper discusses a novel representation for digital twins in advanced manufacturing.\n2. Problem - It addresses the challenge of effectively modeling complex geometries and material distributions in manufacturing processes.\n3. Method - The authors propose an adaptively sampled distance function approach to create a unified representation.\n4. Key Result - This method enhances the accuracy and efficiency of simulations in manufacturing environments.\n5. Takeaway - The proposed framework can significantly improve the integration of digital twins in advanced manufacturing applications.",
+    "relevance_note_en": "The paper is highly relevant as it introduces a new method for digital twin representation in manufacturing.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-09-07",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1016/j.rcim.2024.102877"
+  },
   "10.1115/1.4067616": {
     "author_details": [
       {
@@ -32653,114 +32739,5 @@
     "last_seen_in_crossref_run": "2026-09-07",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/adfm.202424390"
-  },
-  "10.1038/s44455-025-00009-2": {
-    "author_details": [
-      {
-        "name": "Saurav Sharma",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Satya K. Ammu",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Prakash Thakolkaran",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Jovana Jovanova",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Kunal Masania",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Siddhant Kumar",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "3059-3727"
-    ],
-    "issn_l": "",
-    "publisher": "Springer Science and Business Media LLC",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4416936251",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S5407051366",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S5407051366",
-      "issn_l": "3059-3727",
-      "issn": [
-        "3059-3727"
-      ],
-      "type": "journal",
-      "host_organization_name": null,
-      "works_count": 33,
-      "cited_by_count": 42,
-      "two_year_mean_citedness": 1.2727272727272727,
-      "h_index": 4,
-      "i10_index": 0,
-      "is_core": false,
-      "is_oa": true,
-      "is_in_doaj": true
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 1.2727272727272727,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 4",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The study focuses on the design and manufacturing of piezoelectric truss metamaterials.\n2. Problem - Traditional piezoelectric materials are limited by their crystal symmetry, restricting their functional properties.\n3. Method - A framework utilizing generative machine learning and in-gel 3D printing is developed to create customizable truss metamaterials.\n4. Key Result - The optimized metamaterials exhibit over 48% improvement in hydrostatic piezoelectric coefficient compared to bulk PZT, with unique transverse piezoelectric properties.\n5. Takeaway - This approach allows for the creation of advanced electro-active materials with tailored piezoelectric responses.",
-    "relevance_note_en": "The summary captures the essence of the research, highlighting the innovative methods and significant findings.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-09-07",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1038/s44455-025-00009-2"
   }
 }

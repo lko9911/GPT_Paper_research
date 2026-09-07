@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-07T14:47:40+00:00",
+  "updated_at": "2026-09-07T23:08:08+00:00",
   "source": "derived from titles, tags, AI Q5 summaries, relevance notes, and public metadata; abstract text is not published",
   "recent_basis": "publication year 2026, plus records explicitly marked weekly-new",
   "node_count": 30,
@@ -42,9 +42,9 @@
       "id": "machine-learning",
       "label": "Machine Learning",
       "group": "AI",
-      "count": 354,
-      "recent_count": 160,
-      "trend_score": 0.3712,
+      "count": 355,
+      "recent_count": 161,
+      "trend_score": 0.3732,
       "x": 620.0,
       "y": 68.0,
       "radius": 15.8
@@ -98,8 +98,8 @@
       "label": "Metamaterials",
       "group": "Materials",
       "count": 188,
-      "recent_count": 78,
-      "trend_score": 0.1849,
+      "recent_count": 79,
+      "trend_score": 0.1866,
       "x": 249.0,
       "y": 170.0,
       "radius": 13.4
@@ -259,6 +259,17 @@
       "radius": 10.0
     },
     {
+      "id": "self-driving-lab",
+      "label": "Self-driving Lab",
+      "group": "AML",
+      "count": 25,
+      "recent_count": 21,
+      "trend_score": 0.0432,
+      "x": 710.0,
+      "y": 248.0,
+      "radius": 9.3
+    },
+    {
       "id": "volumetric-am",
       "label": "Volumetric AM",
       "group": "AM",
@@ -270,23 +281,12 @@
       "radius": 10.4
     },
     {
-      "id": "self-driving-lab",
-      "label": "Self-driving Lab",
-      "group": "AML",
-      "count": 24,
-      "recent_count": 20,
-      "trend_score": 0.0412,
-      "x": 710.0,
-      "y": 248.0,
-      "radius": 9.3
-    },
-    {
       "id": "formulation-discovery",
       "label": "Formulation Discovery",
       "group": "AML",
-      "count": 24,
-      "recent_count": 19,
-      "trend_score": 0.0395,
+      "count": 25,
+      "recent_count": 20,
+      "trend_score": 0.0415,
       "x": 774.0,
       "y": 300.0,
       "radius": 9.3
@@ -656,6 +656,12 @@
       "recent_count": 19
     },
     {
+      "source": "formulation-discovery",
+      "target": "machine-learning",
+      "count": 23,
+      "recent_count": 19
+    },
+    {
       "source": "additive-manufacturing",
       "target": "sustainability",
       "count": 58,
@@ -674,9 +680,9 @@
       "recent_count": 18
     },
     {
-      "source": "formulation-discovery",
-      "target": "machine-learning",
-      "count": 22,
+      "source": "machine-learning",
+      "target": "self-driving-lab",
+      "count": 21,
       "recent_count": 18
     },
     {
@@ -710,12 +716,6 @@
       "recent_count": 17
     },
     {
-      "source": "machine-learning",
-      "target": "self-driving-lab",
-      "count": 20,
-      "recent_count": 17
-    },
-    {
       "source": "4d-printing",
       "target": "soft-robotics",
       "count": 48,
@@ -740,15 +740,15 @@
       "recent_count": 15
     },
     {
+      "source": "formulation-discovery",
+      "target": "self-driving-lab",
+      "count": 16,
+      "recent_count": 15
+    },
+    {
       "source": "composites",
       "target": "fdm-material-extrusion",
       "count": 31,
-      "recent_count": 14
-    },
-    {
-      "source": "formulation-discovery",
-      "target": "self-driving-lab",
-      "count": 15,
       "recent_count": 14
     },
     {
