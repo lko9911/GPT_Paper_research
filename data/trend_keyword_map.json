@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T18:30:20+00:00",
+  "updated_at": "2026-09-08T23:05:17+00:00",
   "source": "derived from titles, tags, AI Q5 summaries, relevance notes, and public metadata; abstract text is not published",
   "recent_basis": "publication year 2026, plus records explicitly marked weekly-new",
   "node_count": 30,
@@ -11,7 +11,7 @@
       "group": "AM",
       "count": 1132,
       "recent_count": 399,
-      "trend_score": 0.9893,
+      "trend_score": 0.989,
       "x": 310.0,
       "y": 148.0,
       "radius": 22.7
@@ -20,9 +20,9 @@
       "id": "additive-manufacturing",
       "label": "Additive Manufacturing",
       "group": "AM",
-      "count": 1174,
-      "recent_count": 391,
-      "trend_score": 0.986,
+      "count": 1175,
+      "recent_count": 392,
+      "trend_score": 0.9877,
       "x": 369.8,
       "y": 170.5,
       "radius": 23.0
@@ -33,7 +33,7 @@
       "group": "AM",
       "count": 654,
       "recent_count": 203,
-      "trend_score": 0.5233,
+      "trend_score": 0.5231,
       "x": 359.4,
       "y": 233.5,
       "radius": 18.9
@@ -44,7 +44,7 @@
       "group": "AI",
       "count": 355,
       "recent_count": 161,
-      "trend_score": 0.3732,
+      "trend_score": 0.3731,
       "x": 620.0,
       "y": 68.0,
       "radius": 15.8
@@ -55,7 +55,7 @@
       "group": "AI",
       "count": 357,
       "recent_count": 146,
-      "trend_score": 0.3474,
+      "trend_score": 0.3473,
       "x": 684.0,
       "y": 120.0,
       "radius": 15.8
@@ -64,9 +64,9 @@
       "id": "process-optimization",
       "label": "Process Optimization",
       "group": "Automation",
-      "count": 299,
-      "recent_count": 110,
-      "trend_score": 0.2694,
+      "count": 300,
+      "recent_count": 111,
+      "trend_score": 0.2713,
       "x": 525.0,
       "y": 158.0,
       "radius": 15.1
@@ -77,7 +77,7 @@
       "group": "4D",
       "count": 266,
       "recent_count": 92,
-      "trend_score": 0.2294,
+      "trend_score": 0.2293,
       "x": 285.0,
       "y": 298.0,
       "radius": 14.6
@@ -88,7 +88,7 @@
       "group": "Materials",
       "count": 212,
       "recent_count": 81,
-      "trend_score": 0.1963,
+      "trend_score": 0.1962,
       "x": 185.0,
       "y": 118.0,
       "radius": 13.8
@@ -110,7 +110,7 @@
       "group": "Automation",
       "count": 204,
       "recent_count": 74,
-      "trend_score": 0.182,
+      "trend_score": 0.1819,
       "x": 589.0,
       "y": 210.0,
       "radius": 13.7
@@ -121,7 +121,7 @@
       "group": "Robotics",
       "count": 201,
       "recent_count": 74,
-      "trend_score": 0.1812,
+      "trend_score": 0.1811,
       "x": 540.0,
       "y": 318.0,
       "radius": 13.6
@@ -132,7 +132,7 @@
       "group": "AM",
       "count": 217,
       "recent_count": 61,
-      "trend_score": 0.1625,
+      "trend_score": 0.1624,
       "x": 310.0,
       "y": 274.0,
       "radius": 13.9
@@ -163,12 +163,12 @@
       "id": "fdm-material-extrusion",
       "label": "FDM / Material Extrusion",
       "group": "AM",
-      "count": 141,
-      "recent_count": 50,
-      "trend_score": 0.1237,
+      "count": 142,
+      "recent_count": 51,
+      "trend_score": 0.1257,
       "x": 260.6,
       "y": 233.5,
-      "radius": 12.5
+      "radius": 12.6
     },
     {
       "id": "biomedical",
@@ -176,7 +176,7 @@
       "group": "Application",
       "count": 132,
       "recent_count": 41,
-      "trend_score": 0.1057,
+      "trend_score": 0.1056,
       "x": 160.0,
       "y": 285.5,
       "radius": 12.4
@@ -204,6 +204,17 @@
       "radius": 11.5
     },
     {
+      "id": "toolpath-planning",
+      "label": "Toolpath / Path Planning",
+      "group": "Automation",
+      "count": 75,
+      "recent_count": 27,
+      "trend_score": 0.0665,
+      "x": 525.0,
+      "y": 262.0,
+      "radius": 11.0
+    },
+    {
       "id": "lce",
       "label": "LCE",
       "group": "4D",
@@ -213,17 +224,6 @@
       "x": 221.0,
       "y": 350.0,
       "radius": 10.7
-    },
-    {
-      "id": "toolpath-planning",
-      "label": "Toolpath / Path Planning",
-      "group": "Automation",
-      "count": 74,
-      "recent_count": 26,
-      "trend_score": 0.0645,
-      "x": 525.0,
-      "y": 262.0,
-      "radius": 11.0
     },
     {
       "id": "hydrogels",
@@ -368,16 +368,16 @@
       "recent_count": 85
     },
     {
+      "source": "additive-manufacturing",
+      "target": "process-optimization",
+      "count": 217,
+      "recent_count": 71
+    },
+    {
       "source": "multi-material-am",
       "target": "soft-robotics",
       "count": 192,
       "recent_count": 71
-    },
-    {
-      "source": "additive-manufacturing",
-      "target": "process-optimization",
-      "count": 216,
-      "recent_count": 70
     },
     {
       "source": "metamaterials",
@@ -482,6 +482,12 @@
       "recent_count": 42
     },
     {
+      "source": "additive-manufacturing",
+      "target": "fdm-material-extrusion",
+      "count": 126,
+      "recent_count": 40
+    },
+    {
       "source": "multi-material-am",
       "target": "process-optimization",
       "count": 117,
@@ -491,12 +497,6 @@
       "source": "4d-printing",
       "target": "functionally-graded-am",
       "count": 148,
-      "recent_count": 39
-    },
-    {
-      "source": "additive-manufacturing",
-      "target": "fdm-material-extrusion",
-      "count": 125,
       "recent_count": 39
     },
     {
@@ -602,6 +602,12 @@
       "recent_count": 24
     },
     {
+      "source": "additive-manufacturing",
+      "target": "toolpath-planning",
+      "count": 61,
+      "recent_count": 24
+    },
+    {
       "source": "functionally-graded-am",
       "target": "vat-photopolymerization",
       "count": 112,
@@ -611,12 +617,6 @@
       "source": "digital-twin",
       "target": "monitoring",
       "count": 67,
-      "recent_count": 23
-    },
-    {
-      "source": "additive-manufacturing",
-      "target": "toolpath-planning",
-      "count": 60,
       "recent_count": 23
     },
     {
@@ -837,6 +837,12 @@
     },
     {
       "source": "fdm-material-extrusion",
+      "target": "process-optimization",
+      "count": 23,
+      "recent_count": 11
+    },
+    {
+      "source": "fdm-material-extrusion",
       "target": "metamaterials",
       "count": 20,
       "recent_count": 11
@@ -896,12 +902,6 @@
       "recent_count": 10
     },
     {
-      "source": "fdm-material-extrusion",
-      "target": "process-optimization",
-      "count": 22,
-      "recent_count": 10
-    },
-    {
       "source": "composites",
       "target": "lce",
       "count": 20,
@@ -912,6 +912,12 @@
       "target": "digital-twin",
       "count": 18,
       "recent_count": 10
+    },
+    {
+      "source": "process-optimization",
+      "target": "toolpath-planning",
+      "count": 27,
+      "recent_count": 9
     },
     {
       "source": "4d-printing",
@@ -977,12 +983,6 @@
       "source": "metamaterials",
       "target": "process-optimization",
       "count": 28,
-      "recent_count": 8
-    },
-    {
-      "source": "process-optimization",
-      "target": "toolpath-planning",
-      "count": 26,
       "recent_count": 8
     },
     {

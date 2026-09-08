@@ -71145,7 +71145,7 @@
     "first_added": "2026-06-29",
     "last_updated": "2026-09-08",
     "is_weekly_new": false,
-    "not_seen_in_latest_crossref_run": true,
+    "not_seen_in_latest_crossref_run": false,
     "last_seen_in_crossref_run": "2026-09-08",
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
@@ -107174,6 +107174,177 @@
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
     "local_summary_applied": true,
     "summary_model": "qwen2.5:7b"
+  },
+  {
+    "id": "10.1177/23297662261475740",
+    "title": "Adaptive Path Planning and Process Optimization for FDM of Structural Components with Complex Geometric Features",
+    "authors": [
+      "Fei Zhang",
+      "Meilin Gong",
+      "Min Wang",
+      "Baoguo Yao",
+      "Hepeng Ye"
+    ],
+    "author_details": [
+      {
+        "name": "Fei Zhang",
+        "orcid": "https://orcid.org/0000-0002-4216-2572",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "School of Mechanical and Electrical Engineering, China Jiliang University, Hangzhou, China."
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Mechanical and Electrical Engineering, China Jiliang University, Hangzhou, China."
+        ]
+      },
+      {
+        "name": "Meilin Gong",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "School of Mechanical and Electrical Engineering, China Jiliang University, Hangzhou, China."
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Mechanical and Electrical Engineering, China Jiliang University, Hangzhou, China."
+        ]
+      },
+      {
+        "name": "Min Wang",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "School of Mechanical and Electrical Engineering, China Jiliang University, Hangzhou, China."
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Mechanical and Electrical Engineering, China Jiliang University, Hangzhou, China."
+        ]
+      },
+      {
+        "name": "Baoguo Yao",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "School of Mechanical and Electrical Engineering, China Jiliang University, Hangzhou, China."
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Mechanical and Electrical Engineering, China Jiliang University, Hangzhou, China."
+        ]
+      },
+      {
+        "name": "Hepeng Ye",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "School of Mechanical and Electrical Engineering, China Jiliang University, Hangzhou, China."
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Mechanical and Electrical Engineering, China Jiliang University, Hangzhou, China."
+        ]
+      }
+    ],
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "year": 2026,
+    "venue": "3D Printing and Additive Manufacturing",
+    "doi": "10.1177/23297662261475740",
+    "url": "https://doi.org/10.1177/23297662261475740",
+    "source": [
+      "Crossref"
+    ],
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2329-7662",
+      "2329-7670"
+    ],
+    "issn_l": "",
+    "publisher": "SAGE Publications",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S4210174904",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210174904",
+      "issn_l": "2329-7662",
+      "issn": [
+        "2329-7662",
+        "2329-7670"
+      ],
+      "type": "journal",
+      "host_organization_name": "Mary Ann Liebert, Inc.",
+      "works_count": 768,
+      "cited_by_count": 14262,
+      "two_year_mean_citedness": 2.4384615384615387,
+      "h_index": 55,
+      "i10_index": 325,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 2.4384615384615387,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 3",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "publication_type": "journal_article",
+    "venue_trust": "trusted",
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "is_core_venue": true,
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "categories": [
+      "Graph Search / Path Planning"
+    ],
+    "tags": [
+      "FDM/Material extrusion",
+      "Process optimization"
+    ],
+    "relevance_score": 5,
+    "curation_priority": false,
+    "ai_summary_en": "1. Topic - Adaptive Path Planning and Process Optimization for FDM of Structural Components with Complex Geometric Features is a 2026 paper from 3D Printing and Additive Manufacturing about FDM/Material extrusion and Process optimization.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to FDM/Material extrusion and Process optimization.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for FDM/Material extrusion and Process optimization; current relevance score is 5/10.",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_en": "Relevant to the tracker through FDM/Material extrusion and Process optimization; score: 5/10.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-09-08",
+    "last_updated": "2026-09-08",
+    "is_weekly_new": true,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-09-08",
+    "openalex_venue_rank": "Rank 3",
+    "openalex_venue_rank_number": 3,
+    "openalex_venue_rank_score": 2.4384615384615387,
+    "openalex_venue_rank_percentile": 0.3646,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
     "id": "10.1002/adfm.202521468",
@@ -260505,7 +260676,7 @@
     "last_updated": "2026-09-08",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-09-08",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 8.898073836276083,
@@ -313037,9 +313208,9 @@
     ],
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "Additive Manufacturing",
-    "crossref_target_issn": "2214-8604",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
     "issn": [
       "2214-8604"
     ],
