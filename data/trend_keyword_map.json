@@ -1,39 +1,39 @@
 {
-  "updated_at": "2026-09-09T18:21:55+00:00",
+  "updated_at": "2026-09-09T22:50:06+00:00",
   "source": "derived from titles, tags, AI Q5 summaries, relevance notes, and public metadata; abstract text is not published",
   "recent_basis": "publication year 2026, plus records explicitly marked weekly-new",
   "node_count": 30,
   "edge_count": 130,
   "nodes": [
     {
+      "id": "additive-manufacturing",
+      "label": "Additive Manufacturing",
+      "group": "AM",
+      "count": 1177,
+      "recent_count": 394,
+      "trend_score": 0.9895,
+      "x": 310.0,
+      "y": 148.0,
+      "radius": 23.0
+    },
+    {
       "id": "multi-material-am",
       "label": "Multi-material AM",
       "group": "AM",
       "count": 1133,
       "recent_count": 400,
-      "trend_score": 0.989,
-      "x": 310.0,
-      "y": 148.0,
-      "radius": 22.7
-    },
-    {
-      "id": "additive-manufacturing",
-      "label": "Additive Manufacturing",
-      "group": "AM",
-      "count": 1176,
-      "recent_count": 393,
-      "trend_score": 0.9877,
+      "trend_score": 0.9888,
       "x": 369.8,
       "y": 170.5,
-      "radius": 23.0
+      "radius": 22.7
     },
     {
       "id": "functionally-graded-am",
       "label": "Functionally Graded AM",
       "group": "AM",
-      "count": 654,
-      "recent_count": 203,
-      "trend_score": 0.5221,
+      "count": 655,
+      "recent_count": 204,
+      "trend_score": 0.5239,
       "x": 359.4,
       "y": 233.5,
       "radius": 18.9
@@ -44,7 +44,7 @@
       "group": "AI",
       "count": 355,
       "recent_count": 161,
-      "trend_score": 0.3723,
+      "trend_score": 0.3722,
       "x": 620.0,
       "y": 68.0,
       "radius": 15.8
@@ -55,7 +55,7 @@
       "group": "AI",
       "count": 357,
       "recent_count": 146,
-      "trend_score": 0.3466,
+      "trend_score": 0.3465,
       "x": 684.0,
       "y": 120.0,
       "radius": 15.8
@@ -66,7 +66,7 @@
       "group": "Automation",
       "count": 300,
       "recent_count": 111,
-      "trend_score": 0.2708,
+      "trend_score": 0.2707,
       "x": 525.0,
       "y": 158.0,
       "radius": 15.1
@@ -77,7 +77,7 @@
       "group": "4D",
       "count": 266,
       "recent_count": 92,
-      "trend_score": 0.2289,
+      "trend_score": 0.2288,
       "x": 285.0,
       "y": 298.0,
       "radius": 14.6
@@ -121,7 +121,7 @@
       "group": "Robotics",
       "count": 201,
       "recent_count": 74,
-      "trend_score": 0.1808,
+      "trend_score": 0.1807,
       "x": 540.0,
       "y": 318.0,
       "radius": 13.6
@@ -141,9 +141,9 @@
       "id": "alloys-metals",
       "label": "Metals / Alloys",
       "group": "Materials",
-      "count": 163,
-      "recent_count": 66,
-      "trend_score": 0.1571,
+      "count": 164,
+      "recent_count": 67,
+      "trend_score": 0.1591,
       "x": 185.0,
       "y": 222.0,
       "radius": 13.0
@@ -165,7 +165,7 @@
       "group": "AM",
       "count": 142,
       "recent_count": 51,
-      "trend_score": 0.1255,
+      "trend_score": 0.1254,
       "x": 260.6,
       "y": 233.5,
       "radius": 12.6
@@ -201,7 +201,7 @@
       "trend_score": 0.0862,
       "x": 430.0,
       "y": 240.5,
-      "radius": 11.5
+      "radius": 11.4
     },
     {
       "id": "toolpath-planning",
@@ -256,7 +256,7 @@
       "trend_score": 0.0452,
       "x": 461.0,
       "y": 210.0,
-      "radius": 10.0
+      "radius": 9.9
     },
     {
       "id": "self-driving-lab",
@@ -352,8 +352,8 @@
     {
       "source": "additive-manufacturing",
       "target": "functionally-graded-am",
-      "count": 572,
-      "recent_count": 178
+      "count": 573,
+      "recent_count": 179
     },
     {
       "source": "digital-twin",
@@ -406,8 +406,8 @@
     {
       "source": "additive-manufacturing",
       "target": "alloys-metals",
-      "count": 147,
-      "recent_count": 60
+      "count": 148,
+      "recent_count": 61
     },
     {
       "source": "4d-printing",
@@ -470,15 +470,15 @@
       "recent_count": 44
     },
     {
+      "source": "alloys-metals",
+      "target": "functionally-graded-am",
+      "count": 107,
+      "recent_count": 43
+    },
+    {
       "source": "fdm-material-extrusion",
       "target": "multi-material-am",
       "count": 124,
-      "recent_count": 42
-    },
-    {
-      "source": "alloys-metals",
-      "target": "functionally-graded-am",
-      "count": 106,
       "recent_count": 42
     },
     {

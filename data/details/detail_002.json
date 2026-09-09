@@ -1,4 +1,89 @@
 {
+  "10.1016/j.rinma.2026.100906": {
+    "author_details": [
+      {
+        "name": "Ciro Moreno Garces",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Gustavo Morales Pavez",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Rafael Guerra Silva",
+        "orcid": "https://orcid.org/0000-0002-3438-4335",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2590-048X"
+    ],
+    "issn_l": "",
+    "publisher": "Elsevier BV",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7126379370",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S4210203200",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210203200",
+      "issn_l": "2590-048X",
+      "issn": [
+        "2590-048X"
+      ],
+      "type": "journal",
+      "host_organization_name": "Elsevier BV",
+      "works_count": 979,
+      "cited_by_count": 9687,
+      "two_year_mean_citedness": 3.2938689217758985,
+      "h_index": 41,
+      "i10_index": 282,
+      "is_core": true,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 3.2938689217758985,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 3",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The study focuses on the design and evaluation of 3D-printed soft pneumatic actuators for robotics.\n2. Problem - It addresses the need for flexible and safe manipulation of delicate objects in soft robotics.\n3. Method - The research involved designing, simulating, fabricating, and testing various actuator designs using finite element analysis and the Mooney–Rivlin model.\n4. Key Result - The findings revealed that rectangular chamber actuators provided the highest blocking force, while channel-based designs improved flexion significantly.\n5. Takeaway - This work demonstrates the potential of Fused Filament Fabrication for creating effective pneumatic actuators and outlines important design considerations for soft robotics.",
+    "relevance_note_en": "The summary captures the main aspects of the study, including its focus, methodology, and findings.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-09-09",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1016/j.rinma.2026.100906"
+  },
   "10.36922/msam025360082": {
     "author_details": [
       {
@@ -31892,151 +31977,5 @@
     "last_seen_in_crossref_run": "2026-09-09",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1007/s10845-025-02591-8"
-  },
-  "10.1002/aisy.202400699": {
-    "author_details": [
-      {
-        "name": "Hao Liu",
-        "orcid": "https://orcid.org/0000-0002-0110-1693",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Mechanical Engineering The University of Hong Kong  Hong Kong 999077 China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical Engineering The University of Hong Kong  Hong Kong 999077 China"
-        ]
-      },
-      {
-        "name": "Changchun Wu",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Mechanical Engineering The University of Hong Kong  Hong Kong 999077 China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical Engineering The University of Hong Kong  Hong Kong 999077 China"
-        ]
-      },
-      {
-        "name": "Senyuan Lin",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Mechanical Engineering The University of Hong Kong  Hong Kong 999077 China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical Engineering The University of Hong Kong  Hong Kong 999077 China"
-        ]
-      },
-      {
-        "name": "James Lam",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Mechanical Engineering The University of Hong Kong  Hong Kong 999077 China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical Engineering The University of Hong Kong  Hong Kong 999077 China"
-        ]
-      },
-      {
-        "name": "Ning Xi",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Data and Systems Engineering The University of Hong Kong  Hong Kong 999077 China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Data and Systems Engineering The University of Hong Kong  Hong Kong 999077 China"
-        ]
-      },
-      {
-        "name": "Yonghua Chen",
-        "orcid": "https://orcid.org/0000-0003-4020-1977",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Mechanical Engineering The University of Hong Kong  Hong Kong 999077 China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical Engineering The University of Hong Kong  Hong Kong 999077 China"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2640-4567",
-      "2640-4567"
-    ],
-    "issn_l": "",
-    "publisher": "Wiley",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4408475515",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S4210212817",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S4210212817",
-      "issn_l": "2640-4567",
-      "issn": [
-        "2640-4567"
-      ],
-      "type": "journal",
-      "host_organization_name": "Wiley",
-      "works_count": 2504,
-      "cited_by_count": 45024,
-      "two_year_mean_citedness": 4.790365744870651,
-      "h_index": 90,
-      "i10_index": 967,
-      "is_core": true,
-      "is_oa": true,
-      "is_in_doaj": true
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 4.790365744870651,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 2",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The paper discusses advancements in 3D and 4D printing technologies for soft robotics.\n2. Problem - It addresses the challenges in fabricating soft robots that can leverage smart materials and actuation principles.\n3. Method - The review covers various 3D printing techniques and their applications in creating soft robots.\n4. Key Result - It highlights the potential of these technologies to enhance the design and functionality of soft robots.\n5. Takeaway - The article serves as a resource for researchers interested in the intersection of 3D printing and soft robotics.",
-    "relevance_note_en": "The summary accurately reflects the core themes and findings of the paper.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-09-09",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1002/aisy.202400699"
   }
 }
