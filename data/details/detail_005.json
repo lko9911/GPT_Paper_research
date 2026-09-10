@@ -1,4 +1,83 @@
 {
+  "10.1007/s00170-024-13739-w": {
+    "author_details": [
+      {
+        "name": "Ivan Popov",
+        "orcid": "https://orcid.org/0000-0001-8098-1811",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Christian A. Griffiths",
+        "orcid": "https://orcid.org/0000-0002-7054-6135",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "International Journal of Advanced Manufacturing Technology",
+    "crossref_target_issn": "0268-3768",
+    "issn": [
+      "0268-3768",
+      "1433-3015"
+    ],
+    "issn_l": "",
+    "publisher": "Springer Science and Business Media LLC",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4396973462",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S77056576",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S77056576",
+      "issn_l": "0268-3768",
+      "issn": [
+        "0268-3768",
+        "1433-3015"
+      ],
+      "type": "journal",
+      "host_organization_name": "Springer Science+Business Media",
+      "works_count": 31026,
+      "cited_by_count": 730438,
+      "two_year_mean_citedness": 3.7044257112750265,
+      "h_index": 199,
+      "i10_index": 18166,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 3.7044257112750265,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 2",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The study focuses on a digital twin model for a hot molten metal ladle pouring system used in steel-making.\n2. Problem - The operation of pouring large quantities of liquid metal poses safety risks, including spillage and heat emissions.\n3. Method - A digital twin model simulates the overhead gantry crane and ladle system, utilizing multi-body dynamics to accurately model crane movements and HM flow rates.\n4. Key Result - The digital twin effectively simulates real crane movements and predicts changes in molten metal weight, eliminating the need for physical testing.\n5. Takeaway - This digital twin approach enhances safety and efficiency in the pouring process by allowing for thorough testing and optimization of automated systems.",
+    "relevance_note_en": "The summary captures the essence of the study's focus on safety and automation in metal pouring processes.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-09-10",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1007/s00170-024-13739-w"
+  },
   "10.1016/j.rcim.2023.102632": {
     "author_details": [
       {
@@ -30896,142 +30975,5 @@
     "last_seen_in_crossref_run": "2026-09-10",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/adma.202470061"
-  },
-  "10.1002/adma.202405505": {
-    "author_details": [
-      {
-        "name": "Javier M. Morales Ferrer",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Mechanical Engineering Department Boston University  Boston MA 02215 USA"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Mechanical Engineering Department Boston University  Boston MA 02215 USA"
-        ]
-      },
-      {
-        "name": "Ramón E. Sánchez Cruz",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Mechanical Engineering Department Boston University  Boston MA 02215 USA"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Mechanical Engineering Department Boston University  Boston MA 02215 USA"
-        ]
-      },
-      {
-        "name": "Sophie Caplan",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Mechanical Engineering Department Boston University  Boston MA 02215 USA"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Mechanical Engineering Department Boston University  Boston MA 02215 USA"
-        ]
-      },
-      {
-        "name": "Wim M. Van Rees",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Mechanical Engineering Massachusetts Institute of Technology  Cambridge MA 02139 USA"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical Engineering Massachusetts Institute of Technology  Cambridge MA 02139 USA"
-        ]
-      },
-      {
-        "name": "J. William Boley",
-        "orcid": "https://orcid.org/0000-0003-0020-0988",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Mechanical Engineering Department Boston University  Boston MA 02215 USA"
-          },
-          {
-            "name": "Division of Materials Science and Engineering Boston University  Boston MA 02215 USA"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Mechanical Engineering Department Boston University  Boston MA 02215 USA",
-          "Division of Materials Science and Engineering Boston University  Boston MA 02215 USA"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "Advanced Materials",
-    "crossref_target_issn": "0935-9648",
-    "issn": [
-      "0935-9648",
-      "1521-4095"
-    ],
-    "issn_l": "",
-    "publisher": "Wiley",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4398134487",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S99352657",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S99352657",
-      "issn_l": "0935-9648",
-      "issn": [
-        "0935-9648",
-        "1521-4095"
-      ],
-      "type": "journal",
-      "host_organization_name": null,
-      "works_count": 44789,
-      "cited_by_count": 4803689,
-      "two_year_mean_citedness": 21.19633376740459,
-      "h_index": 743,
-      "i10_index": 31001,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "High-impact general journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 21.19633376740459,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 1",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - The study focuses on multiscale heterogeneous polymer composites for 4D printing applications.\n2. Problem - Existing 4D printed materials are limited by their low stiffness and load-bearing capacity.\n3. Method - The authors developed stiff, thermally responsive polymer composites with enhanced electrical conductivity for 4D printing.\n4. Key Result - These materials achieved significant improvements in actuation stress and load capacity, enabling the creation of complex morphing structures.\n5. Takeaway - The advancements in these composites allow for the development of multifunctional structures that can support substantial weights while undergoing shape transformations.",
-    "relevance_note_en": "The paper presents innovative materials that enhance the capabilities of 4D printed structures.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-09-10",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1002/adma.202405505"
   }
 }
