@@ -28182,9 +28182,9 @@
     "corresponding_authors": [
       {
         "name": "Assia Belbachir",
-        "openalex_author_id": "https://openalex.org/A5051482797",
+        "openalex_author_id": null,
         "orcid": "https://orcid.org/0000-0002-1294-8478",
-        "position": "first",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -28206,21 +28206,21 @@
         "is_corresponding": true,
         "institutions": [
           {
-            "name": "SINTEF",
-            "ror": "https://ror.org/01f677e56",
-            "country_code": "NO",
-            "type": "facility"
-          },
-          {
             "name": "NORCE Research AS",
             "ror": "https://ror.org/02gagpf75",
             "country_code": "NO",
             "type": "facility"
+          },
+          {
+            "name": "Montimage (France)",
+            "ror": "https://ror.org/02a8qtz61",
+            "country_code": "FR",
+            "type": "company"
           }
         ],
         "raw_affiliation_strings": [
           "NORCE Research AS, Grimstad, Norway",
-          "SINTEF AS, Oslo/Porsgrunn, Norway"
+          "Montimage, Paris, France"
         ]
       }
     ],
@@ -34964,7 +34964,7 @@
     "publisher": "Elsevier BV",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7212053923",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S201698446",
     "venue_metrics": {
@@ -40811,7 +40811,7 @@
     "publisher": "Springer Science and Business Media LLC",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7212045849",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S116826539",
     "venue_metrics": {
@@ -62380,7 +62380,7 @@
     "publisher": "American Chemical Society (ACS)",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7212016232",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S164001016",
     "venue_metrics": {
@@ -90526,7 +90526,7 @@
         "name": "Hong Wang",
         "openalex_author_id": null,
         "orcid": "https://orcid.org/0000-0001-6799-1732",
-        "position": "last",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -95017,9 +95017,9 @@
     ],
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "3D Printing and Additive Manufacturing",
-    "crossref_target_issn": "2329-7662",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
     "issn": [
       "2329-7662",
       "2329-7670"
@@ -103292,8 +103292,8 @@
         ]
       },
       {
-        "name": "Lei Ren",
-        "openalex_author_id": "https://openalex.org/A5133749330",
+        "name": "Luquan Ren",
+        "openalex_author_id": "https://openalex.org/A5133795267",
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -103321,7 +103321,7 @@
         "name": "Luquan Ren",
         "openalex_author_id": "https://openalex.org/A5133795267",
         "orcid": null,
-        "position": "middle",
+        "position": "last",
         "is_corresponding": true,
         "institutions": [
           {
@@ -103775,7 +103775,7 @@
         "name": "Mondher Nasri",
         "openalex_author_id": "https://openalex.org/A5006405851",
         "orcid": null,
-        "position": "middle",
+        "position": "first",
         "is_corresponding": true,
         "institutions": [
           {
@@ -107793,9 +107793,28 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Fei Zhang",
+        "openalex_author_id": "https://openalex.org/A5013872735",
+        "orcid": "https://orcid.org/0000-0002-4216-2572",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "China Jiliang University",
+            "ror": "https://ror.org/05v1y0t93",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Mechanical and Electrical Engineering, China Jiliang University, Hangzhou, China"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "3D Printing and Additive Manufacturing",
     "doi": "10.1177/23297662261475740",
@@ -107815,7 +107834,7 @@
     "issn_l": "",
     "publisher": "SAGE Publications",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7211936359",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S4210174904",
@@ -111734,11 +111753,17 @@
     "corresponding_authors": [
       {
         "name": "Maria A. Bieberich",
-        "openalex_author_id": "https://openalex.org/A5081851152",
-        "orcid": "https://orcid.org/0000-0002-1518-5330",
-        "position": "first",
+        "openalex_author_id": null,
+        "orcid": null,
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
+          {
+            "name": "University of Iowa",
+            "ror": "https://ror.org/036jqmy94",
+            "country_code": "US",
+            "type": "education"
+          },
           {
             "name": "University of Maryland, Baltimore County",
             "ror": "https://ror.org/02qskvh78",
@@ -111747,7 +111772,8 @@
           }
         ],
         "raw_affiliation_strings": [
-          "University of Maryland, Baltimore County, Baltimore, Maryland, USA"
+          "University of Maryland, Baltimore County, Baltimore, Maryland, USA",
+          "Institute for Vision Research, Carver College of Medicine, University of Iowa, Iowa City, Iowa, USA"
         ]
       },
       {
@@ -118869,8 +118895,8 @@
         ]
       },
       {
-        "name": "L. Ren",
-        "openalex_author_id": "https://openalex.org/A5003419669",
+        "name": "Lei Ren",
+        "openalex_author_id": "https://openalex.org/A5147038673",
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -133329,8 +133355,8 @@
     "corresponding_authors": [
       {
         "name": "Cheng Zhang",
-        "openalex_author_id": null,
-        "orcid": null,
+        "openalex_author_id": "https://openalex.org/A5100769098",
+        "orcid": "https://orcid.org/0000-0001-8282-9901",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -155625,8 +155651,8 @@
       },
       {
         "name": "Wenzhuo Liu",
-        "openalex_author_id": "https://openalex.org/A5107441690",
-        "orcid": "https://orcid.org/0009-0004-3542-8418",
+        "openalex_author_id": null,
+        "orcid": null,
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -172644,10 +172670,10 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-24",
-    "last_updated": "2026-09-09",
+    "last_updated": "2026-09-10",
     "is_weekly_new": false,
-    "last_seen_in_crossref_run": "2026-09-09",
-    "not_seen_in_latest_crossref_run": true,
+    "last_seen_in_crossref_run": "2026-09-10",
+    "not_seen_in_latest_crossref_run": false,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 3.7044257112750265,
@@ -187515,8 +187541,8 @@
     "corresponding_authors": [
       {
         "name": "Xinyu Wang",
-        "openalex_author_id": "https://openalex.org/A5100352846",
-        "orcid": "https://orcid.org/0009-0001-2925-1466",
+        "openalex_author_id": null,
+        "orcid": null,
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -187574,7 +187600,7 @@
         "name": "Xiaofeng Wang",
         "openalex_author_id": null,
         "orcid": "https://orcid.org/0000-0002-9913-1064",
-        "position": "last",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -249238,10 +249264,10 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Zi Wang",
-        "openalex_author_id": "https://openalex.org/A5100338326",
-        "orcid": "https://orcid.org/0000-0001-9081-7185",
-        "position": "first",
+        "name": "Likun Wang",
+        "openalex_author_id": "https://openalex.org/A5100623561",
+        "orcid": "https://orcid.org/0000-0001-5646-9746",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -261216,7 +261242,7 @@
     "last_updated": "2026-09-10",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-09-10",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 8.898073836276083,
@@ -263647,10 +263673,10 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Ratnesh Kumar Raj Singh",
-        "openalex_author_id": "https://openalex.org/A5066015004",
-        "orcid": "https://orcid.org/0000-0001-9377-6753",
-        "position": "middle",
+        "name": "Manish Pratap Singh",
+        "openalex_author_id": "https://openalex.org/A5021211339",
+        "orcid": "https://orcid.org/0000-0002-9530-2348",
+        "position": "first",
         "is_corresponding": true,
         "institutions": [
           {
@@ -281117,7 +281143,7 @@
       },
       {
         "name": "Zihuan Chen",
-        "openalex_author_id": null,
+        "openalex_author_id": "https://openalex.org/A5024222220",
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -282369,7 +282395,7 @@
       },
       {
         "name": "Huanyue Zhang",
-        "openalex_author_id": "https://openalex.org/A5014806689",
+        "openalex_author_id": null,
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -282390,7 +282416,7 @@
         "raw_affiliation_strings": [
           "Department of Orthopedics, Central Hospital of Dalian University of Technology, Dalian, People’s Republic of China",
           "Instrumental Analysis Center, Dalian University of Technology, Dalian, People’s Republic of China",
-          "Instrumental Analysis Center, Dalian University of Technology, Dalian, People's Republic of China"
+          "Department of Orthopedics, Central Hospital of Dalian University of Technology, Dalian, People's Republic of China"
         ]
       },
       {
@@ -313748,9 +313774,9 @@
     ],
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "Additive Manufacturing",
-    "crossref_target_issn": "2214-8604",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
     "issn": [
       "2214-8604"
     ],
