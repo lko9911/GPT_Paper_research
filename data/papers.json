@@ -40957,9 +40957,35 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Yanhu Wang",
+        "openalex_author_id": "https://openalex.org/A5150983254",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Valve (United States)",
+            "ror": "https://ror.org/020esap58",
+            "country_code": "US",
+            "type": "company"
+          },
+          {
+            "name": "Wenzhou University",
+            "ror": "https://ror.org/020hxh324",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Provincial Key Laboratory of Equipment Monitoring and Intelligent Operation & Maintenance under Extreme Working Conditions, College of Mechanical and Electrical Engineering, Wenzhou University, Wenzhou, 325035, Zhejiang, China",
+          "Shenjiang Valve Co., Ltd., Wenzhou, 325035, Zhejiang, China"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "JOM",
     "doi": "10.1007/s11837-026-08742-3",
@@ -40979,7 +41005,7 @@
     "issn_l": "",
     "publisher": "Springer Science and Business Media LLC",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7212045849",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S116826539",
@@ -261588,7 +261614,7 @@
     "last_updated": "2026-09-11",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-09-11",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 8.898073836276083,
