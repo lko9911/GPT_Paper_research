@@ -1,4 +1,105 @@
 {
+  "10.1016/j.mtcomm.2023.107883": {
+    "author_details": [
+      {
+        "name": "Xiaojun Peng",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Zhangdong Chen",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Aoming Zhang",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Xiaoqi Chen",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Yingjie Zhang",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2352-4928"
+    ],
+    "issn_l": "",
+    "publisher": "Elsevier BV",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4389870339",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S2765035490",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S2765035490",
+      "issn_l": "2352-4928",
+      "issn": [
+        "2352-4928"
+      ],
+      "type": "journal",
+      "host_organization_name": "Elsevier BV",
+      "works_count": 15641,
+      "cited_by_count": 165809,
+      "two_year_mean_citedness": 4.165016931492576,
+      "h_index": 92,
+      "i10_index": 5292,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 4.165016931492576,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 2",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The study focuses on predicting temperature fields in laser powder bed fusion using digital twin technology.\n2. Problem - Accurate temperature field prediction is crucial for optimizing the laser powder bed fusion process.\n3. Method - The authors employed proper orthogonal decomposition combined with radial basis function techniques for their analysis.\n4. Key Result - The proposed method effectively enhances the accuracy of temperature field predictions in the laser powder bed fusion process.\n5. Takeaway - Utilizing advanced computational techniques can significantly improve the predictive capabilities in additive manufacturing processes.",
+    "relevance_note_en": "The paper addresses a significant issue in additive manufacturing with a novel computational approach.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-09-11",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1016/j.mtcomm.2023.107883"
+  },
   "10.1007/s00170-024-13739-w": {
     "author_details": [
       {
@@ -30838,142 +30939,5 @@
     "last_seen_in_crossref_run": "2026-09-11",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1073/pnas.2313464121"
-  },
-  "10.1002/adma.202470061": {
-    "author_details": [
-      {
-        "name": "Javier M. Morales Ferrer",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Mechanical Engineering Department Boston University  110 Cummington Mall Boston MA 02215 USA"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Mechanical Engineering Department Boston University  110 Cummington Mall Boston MA 02215 USA"
-        ]
-      },
-      {
-        "name": "Ramón E. Sánchez Cruz",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Mechanical Engineering Department Boston University  110 Cummington Mall Boston MA 02215 USA"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Mechanical Engineering Department Boston University  110 Cummington Mall Boston MA 02215 USA"
-        ]
-      },
-      {
-        "name": "Sophie Caplan",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Mechanical Engineering Department Boston University  110 Cummington Mall Boston MA 02215 USA"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Mechanical Engineering Department Boston University  110 Cummington Mall Boston MA 02215 USA"
-        ]
-      },
-      {
-        "name": "Wim M. van Rees",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Mechanical Engineering Massachusetts Institute of Technology  77 Massachusetts Avenue Cambridge MA 02139 USA"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical Engineering Massachusetts Institute of Technology  77 Massachusetts Avenue Cambridge MA 02139 USA"
-        ]
-      },
-      {
-        "name": "J. William Boley",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Mechanical Engineering Department Boston University  110 Cummington Mall Boston MA 02215 USA"
-          },
-          {
-            "name": "Division of Materials Science and Engineering Boston University  Boston MA 02215 USA"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Mechanical Engineering Department Boston University  110 Cummington Mall Boston MA 02215 USA",
-          "Division of Materials Science and Engineering Boston University  Boston MA 02215 USA"
-        ]
-      }
-    ],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "Advanced Materials",
-    "crossref_target_issn": "0935-9648",
-    "issn": [
-      "0935-9648",
-      "1521-4095"
-    ],
-    "issn_l": "",
-    "publisher": "Wiley",
-    "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "https://openalex.org/W4392059798",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S99352657",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S99352657",
-      "issn_l": "0935-9648",
-      "issn": [
-        "0935-9648",
-        "1521-4095"
-      ],
-      "type": "journal",
-      "host_organization_name": null,
-      "works_count": 44789,
-      "cited_by_count": 4803689,
-      "two_year_mean_citedness": 21.19633376740459,
-      "h_index": 743,
-      "i10_index": 31001,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "High-impact general journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 21.19633376740459,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 1",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - The study focuses on the development of multiscale heterogeneous polymer composites for 4D printing.\n2. Problem - There is a need for high stiffness structures that can be electrically controlled and exhibit morphing capabilities.\n3. Method - The authors utilize 4D printing techniques to create these advanced composites, integrating them with lattice designs for enhanced functionality.\n4. Key Result - The resulting structures demonstrate significant actuation stress and specific force, enabling complex, load-bearing 3D surfaces.\n5. Takeaway - This research paves the way for innovative applications in robotics and autonomous systems through advanced material design.",
-    "relevance_note_en": "The summary captures the essence of the research on 4D printed polymer composites and their applications.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-09-11",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1002/adma.202470061"
   }
 }
