@@ -1,4 +1,106 @@
 {
+  "10.1016/j.jmsy.2024.06.004": {
+    "author_details": [
+      {
+        "name": "Zepeng Liu",
+        "orcid": "https://orcid.org/0000-0003-4533-252X",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Zi-Qiang Lang",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Yufei Gui",
+        "orcid": "https://orcid.org/0009-0006-4652-8195",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Yun-Peng Zhu",
+        "orcid": "https://orcid.org/0000-0002-4337-2328",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Hatim Laalej",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Journal of Manufacturing Systems",
+    "crossref_target_issn": "0278-6125",
+    "issn": [
+      "0278-6125"
+    ],
+    "issn_l": "",
+    "publisher": "Elsevier BV",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4400086860",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S201698446",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S201698446",
+      "issn_l": "0278-6125",
+      "issn": [
+        "0278-6125",
+        "1878-6642"
+      ],
+      "type": "journal",
+      "host_organization_name": "Elsevier BV",
+      "works_count": 4126,
+      "cited_by_count": 172778,
+      "two_year_mean_citedness": 13.221574344023324,
+      "h_index": 165,
+      "i10_index": 2357,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 13.221574344023324,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - The paper discusses a digital twin-based framework for monitoring tool conditions in machining processes.\n2. Problem - Real-time tool condition monitoring is essential for enhancing manufacturing efficiency and reducing costs.\n3. Method - The authors propose a framework that integrates physical and virtual products with data flow connections to analyze vibration data and diagnose tool wear.\n4. Key Result - Field studies validate the effectiveness of the digital twin framework in improving anomaly detection and diagnostics in machining.\n5. Takeaway - The integration of digital twins in tool condition monitoring represents a significant advancement in managing complex machining processes.",
+    "relevance_note_en": "The study presents a novel approach to tool condition monitoring using digital twins, which is highly relevant to advancements in smart manufacturing.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-09-12",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1016/j.jmsy.2024.06.004"
+  },
   "10.1016/j.mtcomm.2023.107883": {
     "author_details": [
       {
@@ -4745,7 +4847,7 @@
       "official_quartile": null,
       "openalex_two_year_mean_citedness": 1.4699115044247788,
       "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 4",
+      "openalex_venue_rank": "Rank 3",
       "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
     },
     "venue_trust_reason": "journal article with named venue and no low-trust marker",
@@ -8085,8 +8187,8 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-09-11",
-    "not_seen_in_latest_crossref_run": true,
+    "last_seen_in_crossref_run": "2026-09-12",
+    "not_seen_in_latest_crossref_run": false,
     "id": "10.1021/acsmaterialslett.3c01359"
   },
   "10.1002/smll.202401344": {
@@ -30592,352 +30694,5 @@
     "last_seen_in_crossref_run": "2026-09-12",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.jmapro.2024.03.031"
-  },
-  "10.1073/pnas.2313464121": {
-    "author_details": [
-      {
-        "name": "Cheng Zhang",
-        "orcid": "https://orcid.org/0000-0002-6398-1606",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Mechanical Engineering, University of Nevada, Reno, NV 89557"
-          },
-          {
-            "name": "State Key Laboratory of High-Performance Precision Manufacturing, School of Mechanical Engineering, Dalian University of Technology, Dalian 116024, China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical Engineering, University of Nevada, Reno, NV 89557",
-          "State Key Laboratory of High-Performance Precision Manufacturing, School of Mechanical Engineering, Dalian University of Technology, Dalian 116024, China"
-        ]
-      },
-      {
-        "name": "Weijian Hua",
-        "orcid": "https://orcid.org/0000-0002-5083-712X",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Mechanical Engineering, University of Nevada, Reno, NV 89557"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical Engineering, University of Nevada, Reno, NV 89557"
-        ]
-      },
-      {
-        "name": "Kellen Mitchell",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Mechanical Engineering, University of Nevada, Reno, NV 89557"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical Engineering, University of Nevada, Reno, NV 89557"
-        ]
-      },
-      {
-        "name": "Lily Raymond",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Mechanical Engineering, University of Nevada, Reno, NV 89557"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical Engineering, University of Nevada, Reno, NV 89557"
-        ]
-      },
-      {
-        "name": "Fatemeh Delzendehrooy",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Industrial and Manufacturing Systems Engineering, Iowa State University, Ames, IA 50011"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Industrial and Manufacturing Systems Engineering, Iowa State University, Ames, IA 50011"
-        ]
-      },
-      {
-        "name": "Lai Wen",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Pharmacology, Center for Molecular and Cellular Signaling in the Cardiovascular System, School of Medicine, University of Nevada, Reno, NV 89557"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Pharmacology, Center for Molecular and Cellular Signaling in the Cardiovascular System, School of Medicine, University of Nevada, Reno, NV 89557"
-        ]
-      },
-      {
-        "name": "Changwoo Do",
-        "orcid": "https://orcid.org/0000-0001-8358-8417",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Neutron Scattering Division, Oak Ridge National Laboratory, Oak Ridge, TN 37831-6475"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Neutron Scattering Division, Oak Ridge National Laboratory, Oak Ridge, TN 37831-6475"
-        ]
-      },
-      {
-        "name": "Jihua Chen",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Center for Nanophase Materials Sciences, Oak Ridge National Laboratory, Oak Ridge, TN 37830"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Center for Nanophase Materials Sciences, Oak Ridge National Laboratory, Oak Ridge, TN 37830"
-        ]
-      },
-      {
-        "name": "Ying Yang",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Chemistry, University of Nevada, Reno, NV 89557"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Chemistry, University of Nevada, Reno, NV 89557"
-        ]
-      },
-      {
-        "name": "Gabe Linke",
-        "orcid": "https://orcid.org/0009-0002-5054-392X",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Three-Dimensional Advanced Visualization Laboratory, Department of Pediatric Radiology, Children’s Hospital &amp; Medical Center, Omaha, NE 68114"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Three-Dimensional Advanced Visualization Laboratory, Department of Pediatric Radiology, Children’s Hospital &amp; Medical Center, Omaha, NE 68114"
-        ]
-      },
-      {
-        "name": "Zhengyi Zhang",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "School of Naval Architecture and Ocean Engineering, Huazhong University of Science and Technology, Wuhan 430074, China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "School of Naval Architecture and Ocean Engineering, Huazhong University of Science and Technology, Wuhan 430074, China"
-        ]
-      },
-      {
-        "name": "Mena Asha Krishnan",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Mary &amp; Dick Holland Regenerative Medicine Program, Division of Cardiovascular Medicine, Department of Internal Medicine, University of Nebraska Medical Center, Omaha, NE 68198"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Mary &amp; Dick Holland Regenerative Medicine Program, Division of Cardiovascular Medicine, Department of Internal Medicine, University of Nebraska Medical Center, Omaha, NE 68198"
-        ]
-      },
-      {
-        "name": "Mitchell Kuss",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Mary &amp; Dick Holland Regenerative Medicine Program, Division of Cardiovascular Medicine, Department of Internal Medicine, University of Nebraska Medical Center, Omaha, NE 68198"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Mary &amp; Dick Holland Regenerative Medicine Program, Division of Cardiovascular Medicine, Department of Internal Medicine, University of Nebraska Medical Center, Omaha, NE 68198"
-        ]
-      },
-      {
-        "name": "Ryan Coulter",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Mechanical Engineering, University of Nevada, Reno, NV 89557"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical Engineering, University of Nevada, Reno, NV 89557"
-        ]
-      },
-      {
-        "name": "Erick Bandala",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Mechanical Engineering, University of Nevada, Reno, NV 89557"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical Engineering, University of Nevada, Reno, NV 89557"
-        ]
-      },
-      {
-        "name": "Yiliang Liao",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Industrial and Manufacturing Systems Engineering, Iowa State University, Ames, IA 50011"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Industrial and Manufacturing Systems Engineering, Iowa State University, Ames, IA 50011"
-        ]
-      },
-      {
-        "name": "Bin Duan",
-        "orcid": "https://orcid.org/0000-0002-5647-3793",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Mary &amp; Dick Holland Regenerative Medicine Program, Division of Cardiovascular Medicine, Department of Internal Medicine, University of Nebraska Medical Center, Omaha, NE 68198"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Mary &amp; Dick Holland Regenerative Medicine Program, Division of Cardiovascular Medicine, Department of Internal Medicine, University of Nebraska Medical Center, Omaha, NE 68198"
-        ]
-      },
-      {
-        "name": "Danyang Zhao",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "State Key Laboratory of High-Performance Precision Manufacturing, School of Mechanical Engineering, Dalian University of Technology, Dalian 116024, China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "State Key Laboratory of High-Performance Precision Manufacturing, School of Mechanical Engineering, Dalian University of Technology, Dalian 116024, China"
-        ]
-      },
-      {
-        "name": "Guangrui Chai",
-        "orcid": "https://orcid.org/0000-0003-4284-6584",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Ophthalmology, Shengjing Hospital of China Medical University, Shenyang 110004, China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Ophthalmology, Shengjing Hospital of China Medical University, Shenyang 110004, China"
-        ]
-      },
-      {
-        "name": "Yifei Jin",
-        "orcid": "https://orcid.org/0000-0003-4336-1802",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Mechanical Engineering, University of Nevada, Reno, NV 89557"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical Engineering, University of Nevada, Reno, NV 89557"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "Proceedings of the National Academy of Sciences",
-    "crossref_target_issn": "0027-8424",
-    "issn": [
-      "0027-8424",
-      "1091-6490"
-    ],
-    "issn_l": "",
-    "publisher": "National Academy of Sciences",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4391756637",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S125754415",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S125754415",
-      "issn_l": "0027-8424",
-      "issn": [
-        "0027-8424",
-        "1091-6490"
-      ],
-      "type": "journal",
-      "host_organization_name": "National Academy of Sciences",
-      "works_count": 171289,
-      "cited_by_count": 22844642,
-      "two_year_mean_citedness": 7.93880351262349,
-      "h_index": 1171,
-      "i10_index": 144829,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "High-impact general journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 7.93880351262349,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 1",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "PNAS journal article",
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - The study focuses on a new method for printing engineered human tissues and organs.\n2. Problem - Current printing techniques struggle to replicate the complex structures of human tissues due to size limitations.\n3. Method - A multiscale embedded printing strategy using a stimuli-responsive fluid and dynamic layer height control is introduced.\n4. Key Result - This method allows for the creation of tissues with feature sizes from microns to centimeters, including complex structures like human hearts and eyeballs.\n5. Takeaway - The proposed technique offers a promising solution for advancing tissue and organ printing capabilities.",
-    "relevance_note_en": "The summary accurately captures the essence of the study's contributions and findings.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-09-12",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1073/pnas.2313464121"
   }
 }
