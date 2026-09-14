@@ -140431,7 +140431,7 @@
     "last_updated": "2026-09-14",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-09-14",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 7.311827956989247,
@@ -255369,9 +255369,29 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Jia Kang",
+        "openalex_author_id": "https://openalex.org/A5101068304",
+        "orcid": "https://orcid.org/0000-0001-7600-4540",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Xi'an Jiaotong University",
+            "ror": "https://ror.org/017zhmm22",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Key Laboratory of Education Ministry for Modern Design and Rotor-Bearing System, Xi’an Jiaotong University, Xi’an 710054, PR China",
+          "School of Mechanical Engineering, Xi’an Jiaotong Univeristy, Xi’an 710054, PR China"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2024,
     "venue": "Journal of Manufacturing Systems",
     "doi": "10.1016/j.jmsy.2024.09.007",
@@ -255390,8 +255410,8 @@
     "issn_l": "",
     "publisher": "Elsevier BV",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4402809722",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S201698446",
     "venue_metrics": {
