@@ -1,4 +1,109 @@
 {
+  "10.1080/0951192x.2024.2314787": {
+    "author_details": [
+      {
+        "name": "Amel Jaoua",
+        "orcid": "https://orcid.org/0000-0003-3260-8048",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Industrial Engineering, LR-OASIS, National Engineering School of Tunis, University of Tunis El Manar, Tunis, Tunisia"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Industrial Engineering, LR-OASIS, National Engineering School of Tunis, University of Tunis El Manar, Tunis, Tunisia"
+        ]
+      },
+      {
+        "name": "Samar Masmoudi",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Industrial Engineering, LR-OASIS, National Engineering School of Tunis, University of Tunis El Manar, Tunis, Tunisia"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Industrial Engineering, LR-OASIS, National Engineering School of Tunis, University of Tunis El Manar, Tunis, Tunisia"
+        ]
+      },
+      {
+        "name": "Elisa Negri",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Management, Economics and Industrial Engineering, Politecnico di Milano, Milano, Italy"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Management, Economics and Industrial Engineering, Politecnico di Milano, Milano, Italy"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "0951-192X",
+      "1362-3052"
+    ],
+    "issn_l": "",
+    "publisher": "Informa UK Limited",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4391845034",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S57062392",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S57062392",
+      "issn_l": "0951-192X",
+      "issn": [
+        "0951-192X",
+        "1362-3052"
+      ],
+      "type": "journal",
+      "host_organization_name": "Taylor & Francis",
+      "works_count": 2680,
+      "cited_by_count": 56291,
+      "two_year_mean_citedness": 3.334841628959276,
+      "h_index": 88,
+      "i10_index": 1451,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 3.334841628959276,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 3",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The paper introduces a framework that integrates an Intelligent Digital Twin into production systems for enhanced planning and control.\n2. Problem - It addresses the challenge of achieving efficient real-time production planning and control in manufacturing environments.\n3. Method - The framework utilizes Reinforcement Learning and Deep Reinforcement Learning algorithms, emphasizing a separation between training and execution phases.\n4. Key Result - Experiments demonstrate that the proposed approach significantly improves efficiency and robustness in dispatching tasks for Autonomous Mobile Robots.\n5. Takeaway - The implementation of a Digital Twin-based Deep Reinforcement Learning solution outperforms traditional dispatching methods in complex production scenarios.",
+    "relevance_note_en": "The paper is highly relevant as it explores innovative applications of AI in manufacturing through a Digital Twin framework.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-09-14",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1080/0951192x.2024.2314787"
+  },
   "10.1016/j.jmsy.2024.06.004": {
     "author_details": [
       {
@@ -3972,8 +4077,8 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
     "crossref_collection_route": "keyword_query",
@@ -3985,8 +4090,8 @@
     "issn_l": "",
     "publisher": "Elsevier BV",
     "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4402809722",
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S201698446",
     "venue_metrics": {
@@ -8188,7 +8293,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "last_seen_in_crossref_run": "2026-09-14",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "id": "10.1021/acsmaterialslett.3c01359"
   },
   "10.1002/smll.202401344": {
@@ -29086,8 +29191,8 @@
     "abstract_used_for_summary": false,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-09-13",
-    "not_seen_in_latest_crossref_run": true,
+    "last_seen_in_crossref_run": "2026-09-14",
+    "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.cej.2024.155140"
   },
   "10.1002/adfm.202401431": {
@@ -30600,99 +30705,5 @@
     "last_seen_in_crossref_run": "2026-09-14",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1108/rpj-01-2024-0020"
-  },
-  "10.1016/j.jmapro.2024.03.031": {
-    "author_details": [
-      {
-        "name": "Anushrut Jignasu",
-        "orcid": "https://orcid.org/0000-0001-6547-0706",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Jeremy D. Rurup",
-        "orcid": "https://orcid.org/0009-0006-9879-6407",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Ethan B. Secor",
-        "orcid": "https://orcid.org/0000-0003-2324-1686",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Adarsh Krishnamurthy",
-        "orcid": "https://orcid.org/0000-0002-5900-1863",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "Journal of Manufacturing Processes",
-    "crossref_target_issn": "1526-6125",
-    "issn": [
-      "1526-6125"
-    ],
-    "issn_l": "",
-    "publisher": "Elsevier BV",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4392975551",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S120037611",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S120037611",
-      "issn_l": "1526-6125",
-      "issn": [
-        "1526-6125",
-        "2212-4616"
-      ],
-      "type": "journal",
-      "host_organization_name": "Elsevier BV",
-      "works_count": 8195,
-      "cited_by_count": 224910,
-      "two_year_mean_citedness": 8.200902151283831,
-      "h_index": 135,
-      "i10_index": 5394,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Core manufacturing journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 8.200902151283831,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 1",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - The study focuses on path planning for aerosol jet printing in the context of conformal electronics.\n2. Problem - Efficiently generating optimal printing paths is challenging due to the complex geometries involved in conformal electronics.\n3. Method - The authors propose a NURBS-based approach to enhance the path planning process for aerosol jet printing.\n4. Key Result - The proposed method demonstrates improved path efficiency and accuracy compared to traditional techniques.\n5. Takeaway - Utilizing NURBS for path planning can significantly optimize aerosol jet printing processes in manufacturing conformal electronics.",
-    "relevance_note_en": "The summary captures the core aspects of the research, including its focus, challenges, methodology, findings, and implications.",
-    "abstract_used_for_summary": false,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-09-14",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1016/j.jmapro.2024.03.031"
   }
 }
