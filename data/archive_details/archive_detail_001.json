@@ -1,4 +1,72 @@
 {
+  "10.2172/3000821": {
+    "author_details": [
+      {
+        "name": "USDOE National Nuclear Security Administration (NNSA)",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Kaila Bertsch",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Lawrence Livermore National Laboratory (LLNL), Livermore, CA (United States)"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Lawrence Livermore National Laboratory (LLNL), Livermore, CA (United States)"
+        ]
+      },
+      {
+        "name": "Lawrence Livermore National Laboratory (LLNL), Livermore, CA (United States)",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "report",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [],
+    "issn_l": "",
+    "publisher": "Office of Scientific and Technical Information (OSTI)",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4415947448",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "venue_trust_reason": "missing venue metadata",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The study focuses on optimizing functionally graded materials through additive manufacturing techniques.\n2. Problem - There is a need for improved methods to enhance the performance and efficiency of functionally graded materials in manufacturing.\n3. Method - An integrated approach combining experimental work and computational modeling was employed to address the optimization challenges.\n4. Key Result - The findings demonstrate significant advancements in the material properties and manufacturing processes of functionally graded materials.\n5. Takeaway - This research highlights the potential of combining experimental and computational strategies to optimize additive manufacturing of advanced materials.",
+    "relevance_note_en": "The paper presents a comprehensive approach to enhancing functionally graded materials, aligning well with current trends in additive manufacturing.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "id": "10.2172/3000821"
+  },
   "10.2139/ssrn.5462354": {
     "author_details": [
       {
@@ -20259,85 +20327,5 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "id": "10.2139/ssrn.4956469"
-  },
-  "10.1109/icemce64157.2024.10862094": {
-    "author_details": [
-      {
-        "name": "Huan She",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Shanghai Institute of Technology, SIT,School of Mechanical Engineering,Shanghai,China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Shanghai Institute of Technology, SIT,School of Mechanical Engineering,Shanghai,China"
-        ]
-      },
-      {
-        "name": "Cheng Wang",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Shanghai Institute of Technology, SIT,School of Mechanical Engineering,Shanghai,China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Shanghai Institute of Technology, SIT,School of Mechanical Engineering,Shanghai,China"
-        ]
-      },
-      {
-        "name": "Yuan Kong",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Shanghai Jiao Tong University, SJTU,School of Materials Science and Engineering,Shanghai,China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Shanghai Jiao Tong University, SJTU,School of Materials Science and Engineering,Shanghai,China"
-        ]
-      }
-    ],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
-    "metadata_source": "crossref",
-    "crossref_type": "proceedings-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [],
-    "issn_l": "",
-    "publisher": "IEEE",
-    "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "https://openalex.org/W4407403258",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "venue_trust_reason": "conference/proceedings not in trusted allowlist",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The study focuses on defect prediction in laser-arc hybrid additive manufacturing.\n2. Problem - Defects in the cladding layer of TC4 alloy parts pose significant challenges in manufacturing.\n3. Method - A binary classification model using Bayesian optimization with extreme gradient boosting was developed to predict defects based on experimental data.\n4. Key Result - The proposed model achieved high accuracy rates, including 92.9% accuracy and 100% recall in defect identification.\n5. Takeaway - The BO-XGBoost model offers a reliable approach for detecting internal defects in additive manufacturing processes.",
-    "relevance_note_en": "The summary captures the core aspects of the research, including its focus, methodology, and results.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "id": "10.1109/icemce64157.2024.10862094"
   }
 }
