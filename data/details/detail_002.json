@@ -1,4 +1,127 @@
 {
+  "10.1002/adfm.202525150": {
+    "author_details": [
+      {
+        "name": "David C. Bershadsky",
+        "orcid": "https://orcid.org/0009-0006-5983-1521",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Electrical and Computer Engineering Princeton University Princeton USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Electrical and Computer Engineering Princeton University Princeton USA"
+        ]
+      },
+      {
+        "name": "Tuo Zhao",
+        "orcid": "https://orcid.org/0000-0001-6004-8602",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Civil and Environmental Engineering Princeton University Princeton USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Civil and Environmental Engineering Princeton University Princeton USA"
+        ]
+      },
+      {
+        "name": "Glaucio H. Paulino",
+        "orcid": "https://orcid.org/0000-0002-3493-6857",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Civil and Environmental Engineering Princeton University Princeton USA"
+          },
+          {
+            "name": "Princeton Materials Institute Princeton University Princeton USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Civil and Environmental Engineering Princeton University Princeton USA",
+          "Princeton Materials Institute Princeton University Princeton USA"
+        ]
+      },
+      {
+        "name": "Emily C. Davidson",
+        "orcid": "https://orcid.org/0000-0001-5819-9233",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Chemical and Biological Engineering Princeton University Princeton USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Chemical and Biological Engineering Princeton University Princeton USA"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Advanced Functional Materials",
+    "crossref_target_issn": "1616-301X",
+    "issn": [
+      "1616-301X",
+      "1616-3028"
+    ],
+    "issn_l": "",
+    "publisher": "Wiley",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7139969387",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S135204980",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S135204980",
+      "issn_l": "1616-301X",
+      "issn": [
+        "1616-301X",
+        "1616-3028"
+      ],
+      "type": "journal",
+      "host_organization_name": "Wiley",
+      "works_count": 42483,
+      "cited_by_count": 2508008,
+      "two_year_mean_citedness": 14.256403502995983,
+      "h_index": 476,
+      "i10_index": 26898,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "High-impact general journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 14.256403502995983,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - The study focuses on the development of soft robotic origami using self-folding hinges made from liquid crystal elastomers.\n2. Problem - There is a need for effective actuation control in soft robotics to enable programmable shape morphing in complex structures.\n3. Method - The authors employ a design-for-manufacturing strategy that integrates Joule heating for digital actuation control and utilizes a hybrid additive manufacturing system.\n4. Key Result - The resulting origami robots exhibit over 1500 cycles of actuation with minimal performance loss, showcasing their durability and effectiveness.\n5. Takeaway - This work highlights the potential of combining advanced materials and manufacturing techniques to create versatile soft robotic systems.",
+    "relevance_note_en": "The summary captures the essence of the research, emphasizing the innovative approach and its implications in soft robotics.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-09-16",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1002/adfm.202525150"
+  },
   "10.1038/s41467-026-73035-x": {
     "author_details": [
       {
@@ -31980,92 +32103,5 @@
     "last_seen_in_crossref_run": "2026-09-16",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1007/s00170-025-15755-w"
-  },
-  "10.1007/s00170-025-15465-3": {
-    "author_details": [
-      {
-        "name": "Jihong Yan",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Huaqiu Ding",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Hanglong Liang",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "International Journal of Advanced Manufacturing Technology",
-    "crossref_target_issn": "0268-3768",
-    "issn": [
-      "0268-3768",
-      "1433-3015"
-    ],
-    "issn_l": "",
-    "publisher": "Springer Science and Business Media LLC",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4410035900",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S77056576",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S77056576",
-      "issn_l": "0268-3768",
-      "issn": [
-        "0268-3768",
-        "1433-3015"
-      ],
-      "type": "journal",
-      "host_organization_name": "Springer Science+Business Media",
-      "works_count": 31026,
-      "cited_by_count": 730438,
-      "two_year_mean_citedness": 3.7044257112750265,
-      "h_index": 199,
-      "i10_index": 18166,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 3.7044257112750265,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 2",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The study focuses on the use of Digital Twin technology in the assembly of large-scale equipment.\n2. Problem - It addresses challenges related to structural accuracy and the need for rework in high-precision assembly processes.\n3. Method - The authors employ Digital Twin technology to analyze structural accuracy and optimize rework strategies.\n4. Key Result - The application of this technology leads to improved accuracy and reduced rework times in assembly operations.\n5. Takeaway - Digital Twin technology can significantly enhance the efficiency and precision of large-scale equipment assembly.",
-    "relevance_note_en": "The summary captures the essence of the research on Digital Twin technology in assembly processes.",
-    "abstract_used_for_summary": false,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-09-16",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1007/s00170-025-15465-3"
   }
 }
