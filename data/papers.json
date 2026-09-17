@@ -31904,9 +31904,28 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Muhammad Waseem",
+        "openalex_author_id": "https://openalex.org/A5060291407",
+        "orcid": "https://orcid.org/0000-0002-7609-3739",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Tennessee at Knoxville",
+            "ror": "https://ror.org/020f3ap87",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Oak-Ridge Innovation Institute, University of Tennessee, Knoxville, TN 37914, USA"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Journal of Manufacturing Systems",
     "doi": "10.1016/j.jmsy.2026.07.016",
@@ -31925,8 +31944,8 @@
     "issn_l": "",
     "publisher": "Elsevier BV",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7171927800",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S201698446",
     "venue_metrics": {
@@ -44609,7 +44628,7 @@
     "first_added": "2026-07-06",
     "last_updated": "2026-09-17",
     "is_weekly_new": false,
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "last_seen_in_crossref_run": "2026-09-17",
     "openalex_venue_rank": "Rank 3",
     "openalex_venue_rank_number": 3,
@@ -83119,6 +83138,215 @@
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
+    "id": "10.1002/adfm.78532",
+    "title": "Novel Columnar 4D-Printed Adaptive Metamaterials for Extreme Environments Inspired by Crinoids",
+    "authors": [
+      "Julien Deschamps",
+      "Christelle Combescure",
+      "Mickaël Castro",
+      "Bertrand Galpin",
+      "Ugo Lafont",
+      "Nadia Améziane",
+      "Antoine Le Duigou"
+    ],
+    "author_details": [
+      {
+        "name": "Julien Deschamps",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Université de Bretagne Sud IRDL UMR CNRS 6027, BIONICS Group  Lorient France"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Université de Bretagne Sud IRDL UMR CNRS 6027, BIONICS Group  Lorient France"
+        ]
+      },
+      {
+        "name": "Christelle Combescure",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Université de Bretagne Sud IRDL UMR CNRS 6027, BIONICS Group  Lorient France"
+          },
+          {
+            "name": "Saint‐Cyr Coëtquidan Military Academy, CReC Saint‐Cyr  Guer France"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Université de Bretagne Sud IRDL UMR CNRS 6027, BIONICS Group  Lorient France",
+          "Saint‐Cyr Coëtquidan Military Academy, CReC Saint‐Cyr  Guer France"
+        ]
+      },
+      {
+        "name": "Mickaël Castro",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Université de Bretagne Sud IRDL UMR CNRS 6027, BIONICS Group  Lorient France"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Université de Bretagne Sud IRDL UMR CNRS 6027, BIONICS Group  Lorient France"
+        ]
+      },
+      {
+        "name": "Bertrand Galpin",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Saint‐Cyr Coëtquidan Military Academy, CReC Saint‐Cyr  Guer France"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Saint‐Cyr Coëtquidan Military Academy, CReC Saint‐Cyr  Guer France"
+        ]
+      },
+      {
+        "name": "Ugo Lafont",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "European Space Agency European Space Technology and Research Centre  Noordwijk AZ The Netherlands"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "European Space Agency European Space Technology and Research Centre  Noordwijk AZ The Netherlands"
+        ]
+      },
+      {
+        "name": "Nadia Améziane",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Muséum National d'Histoire Naturelle UMR 7205 CNRS‐MNHN‐EPHE‐SU ISYEB Station Marine de Concarneau Sorbonne Université  Concarneau France"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Muséum National d'Histoire Naturelle UMR 7205 CNRS‐MNHN‐EPHE‐SU ISYEB Station Marine de Concarneau Sorbonne Université  Concarneau France"
+        ]
+      },
+      {
+        "name": "Antoine Le Duigou",
+        "orcid": "https://orcid.org/0000-0002-7102-3491",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Université de Bretagne Sud IRDL UMR CNRS 6027, BIONICS Group  Lorient France"
+          },
+          {
+            "name": "Institut Universitaire de France (IUF)  Paris France"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Université de Bretagne Sud IRDL UMR CNRS 6027, BIONICS Group  Lorient France",
+          "Institut Universitaire de France (IUF)  Paris France"
+        ]
+      }
+    ],
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "year": 2026,
+    "venue": "Advanced Functional Materials",
+    "doi": "10.1002/adfm.78532",
+    "url": "https://doi.org/10.1002/adfm.78532",
+    "source": [
+      "Crossref"
+    ],
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Advanced Functional Materials",
+    "crossref_target_issn": "1616-301X",
+    "issn": [
+      "1616-301X",
+      "1616-3028"
+    ],
+    "issn_l": "",
+    "publisher": "Wiley",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S135204980",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S135204980",
+      "issn_l": "1616-301X",
+      "issn": [
+        "1616-301X",
+        "1616-3028"
+      ],
+      "type": "journal",
+      "host_organization_name": "Wiley",
+      "works_count": 42483,
+      "cited_by_count": 2508008,
+      "two_year_mean_citedness": 14.256403502995983,
+      "h_index": 476,
+      "i10_index": 26898,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "High-impact general journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 14.256403502995983,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "publication_type": "journal_article",
+    "venue_trust": "trusted",
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "is_core_venue": true,
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "categories": [
+      "Multi-material AM"
+    ],
+    "tags": [
+      "Metamaterials",
+      "Manufacturing automation"
+    ],
+    "relevance_score": 5,
+    "curation_priority": false,
+    "ai_summary_en": "1. Topic - Novel Columnar 4D-Printed Adaptive Metamaterials for Extreme Environments Inspired by Crinoids is a 2026 paper from Advanced Functional Materials about Metamaterials and Manufacturing automation.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Metamaterials and Manufacturing automation.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Metamaterials and Manufacturing automation; current relevance score is 5/10.",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_en": "Relevant to the tracker through Metamaterials and Manufacturing automation; score: 5/10.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-09-17",
+    "last_updated": "2026-09-17",
+    "is_weekly_new": true,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-09-17",
+    "openalex_venue_rank": "Rank 1",
+    "openalex_venue_rank_number": 1,
+    "openalex_venue_rank_score": 14.256403502995983,
+    "openalex_venue_rank_percentile": 0.9648,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+  },
+  {
     "id": "10.1002/ange.202523022",
     "title": "Non-Radical Photocured 3D Printing of Liquid Crystal Elastomers",
     "authors": [
@@ -90006,6 +90234,176 @@
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 8.402641353693769,
     "openalex_venue_rank_percentile": 0.8769,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+  },
+  {
+    "id": "10.1002/adfm.78464",
+    "title": "In Situ Magnetic Ordering and Microfabrication of Liquid Crystal Networks with Discretized Alignment",
+    "authors": [
+      "Matthew Gene Scarfo",
+      "Ramón S. Herrera Restrepo",
+      "Irving Hafed Tejedor Garcia",
+      "Hamed Shahsavan"
+    ],
+    "author_details": [
+      {
+        "name": "Matthew Gene Scarfo",
+        "orcid": "https://orcid.org/0009-0003-6132-5431",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Chemical Engineering University of Waterloo  Ontario Canada"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Chemical Engineering University of Waterloo  Ontario Canada"
+        ]
+      },
+      {
+        "name": "Ramón S. Herrera Restrepo",
+        "orcid": "https://orcid.org/0000-0002-0154-1648",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Chemical Engineering University of Waterloo  Ontario Canada"
+          },
+          {
+            "name": "Departament de Ciència de Materials i Química Física Universitat de Barcelona  Barcelona Spain"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Chemical Engineering University of Waterloo  Ontario Canada",
+          "Departament de Ciència de Materials i Química Física Universitat de Barcelona  Barcelona Spain"
+        ]
+      },
+      {
+        "name": "Irving Hafed Tejedor Garcia",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Chemical Engineering University of Waterloo  Ontario Canada"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Chemical Engineering University of Waterloo  Ontario Canada"
+        ]
+      },
+      {
+        "name": "Hamed Shahsavan",
+        "orcid": "https://orcid.org/0000-0003-1498-5114",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Chemical Engineering University of Waterloo  Ontario Canada"
+          },
+          {
+            "name": "Institute for Polymer Research University of Waterloo  Ontario Canada"
+          },
+          {
+            "name": "Waterloo Institute for Nanotechnology University of Waterloo  Ontario Canada"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Chemical Engineering University of Waterloo  Ontario Canada",
+          "Institute for Polymer Research University of Waterloo  Ontario Canada",
+          "Waterloo Institute for Nanotechnology University of Waterloo  Ontario Canada"
+        ]
+      }
+    ],
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "year": 2026,
+    "venue": "Advanced Functional Materials",
+    "doi": "10.1002/adfm.78464",
+    "url": "https://doi.org/10.1002/adfm.78464",
+    "source": [
+      "Crossref"
+    ],
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Advanced Functional Materials",
+    "crossref_target_issn": "1616-301X",
+    "issn": [
+      "1616-301X",
+      "1616-3028"
+    ],
+    "issn_l": "",
+    "publisher": "Wiley",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S135204980",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S135204980",
+      "issn_l": "1616-301X",
+      "issn": [
+        "1616-301X",
+        "1616-3028"
+      ],
+      "type": "journal",
+      "host_organization_name": "Wiley",
+      "works_count": 42483,
+      "cited_by_count": 2508008,
+      "two_year_mean_citedness": 14.256403502995983,
+      "h_index": 476,
+      "i10_index": 26898,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "High-impact general journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 14.256403502995983,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "publication_type": "journal_article",
+    "venue_trust": "trusted",
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "is_core_venue": true,
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "categories": [
+      "Multi-material AM"
+    ],
+    "tags": [
+      "LCE",
+      "DLP",
+      "Soft robotics",
+      "Manufacturing automation"
+    ],
+    "relevance_score": 5,
+    "curation_priority": false,
+    "ai_summary_en": "1. Topic - In Situ Magnetic Ordering and Microfabrication of Liquid Crystal Networks with Discretized Alignment is a 2026 paper from Advanced Functional Materials about LCE, DLP, and Soft robotics.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to LCE, DLP, and Soft robotics.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for LCE, DLP, and Soft robotics; current relevance score is 5/10.",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_en": "Relevant to the tracker through LCE, DLP, and Soft robotics; score: 5/10.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-09-17",
+    "last_updated": "2026-09-17",
+    "is_weekly_new": true,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-09-17",
+    "openalex_venue_rank": "Rank 1",
+    "openalex_venue_rank_number": 1,
+    "openalex_venue_rank_score": 14.256403502995983,
+    "openalex_venue_rank_percentile": 0.9648,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
@@ -203671,7 +204069,7 @@
     "last_updated": "2026-09-17",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-09-17",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 8.463642428285524,

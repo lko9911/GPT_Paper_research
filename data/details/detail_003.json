@@ -1,4 +1,202 @@
 {
+  "10.1007/s00170-025-16575-8": {
+    "author_details": [
+      {
+        "name": "Amir M. Horr",
+        "orcid": "https://orcid.org/0000-0002-7168-1056",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Sindre Hovden",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Johannes Kronsteiner",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "International Journal of Advanced Manufacturing Technology",
+    "crossref_target_issn": "0268-3768",
+    "issn": [
+      "0268-3768",
+      "1433-3015"
+    ],
+    "issn_l": "",
+    "publisher": "Springer Science and Business Media LLC",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4414561931",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S77056576",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S77056576",
+      "issn_l": "0268-3768",
+      "issn": [
+        "0268-3768",
+        "1433-3015"
+      ],
+      "type": "journal",
+      "host_organization_name": "Springer Science+Business Media",
+      "works_count": 31026,
+      "cited_by_count": 730438,
+      "two_year_mean_citedness": 3.7044257112750265,
+      "h_index": 199,
+      "i10_index": 18166,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 3.7044257112750265,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 2",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The study focuses on real-time modeling for predicting material processes across multiple scales.\n2. Problem - There is a need for effective monitoring and control of material processes due to their complex multi-physical and multi-scale nature.\n3. Method - The authors developed data solvers, interpolators, and trainers to model macro-micro evolutions, utilizing a partitioned database technique for accuracy.\n4. Key Result - The approach was successfully applied to a real-world extrusion case, predicting the evolution of material properties along defined streamlines.\n5. Takeaway - Integrating real-time models into digital frameworks enhances the predictive capabilities for optimizing material manufacturing processes.",
+    "relevance_note_en": "The summary captures the core aspects of the research, including its focus, methodology, and outcomes.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-09-17",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1007/s00170-025-16575-8"
+  },
+  "10.1007/s00170-025-15755-w": {
+    "author_details": [
+      {
+        "name": "Roberto F. Pitzalis",
+        "orcid": "https://orcid.org/0000-0003-1464-6219",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Alessio Giordano",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Andrea Di Spigno",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Andrew Cowell",
+        "orcid": "https://orcid.org/0000-0003-4867-033X",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Octavian Niculita",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Giovanni Berselli",
+        "orcid": "https://orcid.org/0000-0003-0093-3006",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "International Journal of Advanced Manufacturing Technology",
+    "crossref_target_issn": "0268-3768",
+    "issn": [
+      "0268-3768",
+      "1433-3015"
+    ],
+    "issn_l": "",
+    "publisher": "Springer Science and Business Media LLC",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4410594914",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S77056576",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S77056576",
+      "issn_l": "0268-3768",
+      "issn": [
+        "0268-3768",
+        "1433-3015"
+      ],
+      "type": "journal",
+      "host_organization_name": "Springer Science+Business Media",
+      "works_count": 31026,
+      "cited_by_count": 730438,
+      "two_year_mean_citedness": 3.7044257112750265,
+      "h_index": 199,
+      "i10_index": 18166,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 3.7044257112750265,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 2",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The study explores the integration of augmented reality and digital twin technologies in industrial applications.\n2. Problem - It addresses the challenges of monitoring and maintaining industrial equipment effectively.\n3. Method - The authors developed a digital twin model and augmented reality experiences for a motorized planetary gearbox using CAD software and sensors.\n4. Key Result - The implementation revealed a malfunction in the gearbox, identified through AR, leading to the discovery of rusted components.\n5. Takeaway - This research demonstrates the practical benefits of using digital twins and augmented reality for improving industrial processes and education.",
+    "relevance_note_en": "The paper is highly relevant as it discusses advanced technologies applicable to industrial equipment.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-09-17",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1007/s00170-025-15755-w"
+  },
   "10.1007/s00170-025-15465-3": {
     "author_details": [
       {
@@ -31906,208 +32104,5 @@
     "last_seen_in_crossref_run": "2026-09-17",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.54254/2755-2721/2025.gl27143"
-  },
-  "10.1016/j.jmapro.2025.11.020": {
-    "author_details": [
-      {
-        "name": "Vigneshwaran Muniyandi",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Weiqiang Chen",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Dhandapani Kuzhandaivel",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Abilash Rosario Arockiyasamy",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Zixiang Weng",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Naveen Thirunavukkarasu",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Lixin Wu",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "Journal of Manufacturing Processes",
-    "crossref_target_issn": "1526-6125",
-    "issn": [
-      "1526-6125"
-    ],
-    "issn_l": "",
-    "publisher": "Elsevier BV",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4416427556",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S120037611",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S120037611",
-      "issn_l": "1526-6125",
-      "issn": [
-        "1526-6125",
-        "2212-4616"
-      ],
-      "type": "journal",
-      "host_organization_name": "Elsevier BV",
-      "works_count": 8195,
-      "cited_by_count": 224910,
-      "two_year_mean_citedness": 8.200902151283831,
-      "h_index": 135,
-      "i10_index": 5394,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Core manufacturing journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 8.200902151283831,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 1",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - The paper discusses a novel laser scanning vat photopolymerization system.\n2. Problem - It addresses challenges related to printing accuracy, efficiency, and scalability in additive manufacturing.\n3. Method - An algorithmic approach is proposed to optimize the printing process.\n4. Key Result - The system demonstrates improved performance metrics in terms of accuracy and efficiency.\n5. Takeaway - This research offers a promising solution for enhancing the capabilities of vat photopolymerization in manufacturing.",
-    "relevance_note_en": "The summary captures the core aspects of the research, focusing on the innovative approach and its implications.",
-    "abstract_used_for_summary": false,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-09-17",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1016/j.jmapro.2025.11.020"
-  },
-  "10.1016/j.smaim.2025.09.001": {
-    "author_details": [
-      {
-        "name": "Ziwen Wang",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Zebang Zhang",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Xiao Kuang",
-        "orcid": "https://orcid.org/0000-0001-6596-1417",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2590-1834"
-    ],
-    "issn_l": "",
-    "publisher": "Elsevier BV",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4414111305",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S4210221327",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S4210221327",
-      "issn_l": "2590-1834",
-      "issn": [
-        "2590-1834"
-      ],
-      "type": "journal",
-      "host_organization_name": "Elsevier BV",
-      "works_count": 224,
-      "cited_by_count": 5490,
-      "two_year_mean_citedness": 5.821917808219178,
-      "h_index": 39,
-      "i10_index": 137,
-      "is_core": true,
-      "is_oa": true,
-      "is_in_doaj": true
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 5.821917808219178,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 1",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The review focuses on advancements in polymer 4D printing.\n2. Problem - It addresses the need for smart materials that can adapt over time for various applications.\n3. Method - The authors analyze different 3D printing techniques and smart material designs relevant to healthcare.\n4. Key Result - The review highlights significant applications of 4D-printed polymers in medical devices and other healthcare innovations.\n5. Takeaway - Future developments in 4D printing technology hold promise for enhancing healthcare solutions through innovative material design.",
-    "relevance_note_en": "The summary captures the essence of the paper's focus on 4D printing advancements and their implications in healthcare.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-08-18",
-    "not_seen_in_latest_crossref_run": true,
-    "id": "10.1016/j.smaim.2025.09.001"
   }
 }
