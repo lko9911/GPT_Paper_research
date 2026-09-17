@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-17T07:40:24+00:00",
+  "updated_at": "2026-09-17T14:00:34+00:00",
   "source": "derived from titles, tags, AI Q5 summaries, relevance notes, and public metadata; abstract text is not published",
   "recent_basis": "publication year 2026, plus records explicitly marked weekly-new",
   "node_count": 30,
@@ -43,8 +43,8 @@
       "label": "Machine Learning",
       "group": "AI",
       "count": 356,
-      "recent_count": 161,
-      "trend_score": 0.3672,
+      "recent_count": 162,
+      "trend_score": 0.3689,
       "x": 620.0,
       "y": 68.0,
       "radius": 15.8
@@ -54,8 +54,8 @@
       "label": "Digital Twin",
       "group": "AI",
       "count": 361,
-      "recent_count": 151,
-      "trend_score": 0.3513,
+      "recent_count": 152,
+      "trend_score": 0.353,
       "x": 684.0,
       "y": 120.0,
       "radius": 15.8
@@ -65,8 +65,8 @@
       "label": "Process Optimization",
       "group": "Automation",
       "count": 302,
-      "recent_count": 113,
-      "trend_score": 0.2709,
+      "recent_count": 114,
+      "trend_score": 0.2727,
       "x": 525.0,
       "y": 158.0,
       "radius": 15.1
@@ -237,6 +237,17 @@
       "radius": 11.1
     },
     {
+      "id": "closed-loop-control",
+      "label": "Closed-loop Control",
+      "group": "Automation",
+      "count": 41,
+      "recent_count": 22,
+      "trend_score": 0.0482,
+      "x": 461.0,
+      "y": 210.0,
+      "radius": 10.0
+    },
+    {
       "id": "inverse-design",
       "label": "Inverse Design",
       "group": "AI",
@@ -246,17 +257,6 @@
       "x": 620.0,
       "y": 172.0,
       "radius": 10.1
-    },
-    {
-      "id": "closed-loop-control",
-      "label": "Closed-loop Control",
-      "group": "Automation",
-      "count": 41,
-      "recent_count": 21,
-      "trend_score": 0.0465,
-      "x": 461.0,
-      "y": 210.0,
-      "radius": 10.0
     },
     {
       "id": "volumetric-am",
@@ -318,8 +318,8 @@
       "label": "Robotic Manufacturing",
       "group": "Robotics",
       "count": 13,
-      "recent_count": 6,
-      "trend_score": 0.0136,
+      "recent_count": 7,
+      "trend_score": 0.0153,
       "x": 540.0,
       "y": 424.0,
       "radius": 8.7
@@ -359,7 +359,7 @@
       "source": "digital-twin",
       "target": "machine-learning",
       "count": 228,
-      "recent_count": 99
+      "recent_count": 100
     },
     {
       "source": "4d-printing",
@@ -467,7 +467,7 @@
       "source": "machine-learning",
       "target": "process-optimization",
       "count": 97,
-      "recent_count": 45
+      "recent_count": 46
     },
     {
       "source": "fdm-material-extrusion",
@@ -530,15 +530,15 @@
       "recent_count": 34
     },
     {
-      "source": "functionally-graded-am",
-      "target": "soft-robotics",
-      "count": 107,
-      "recent_count": 33
-    },
-    {
       "source": "digital-twin",
       "target": "process-optimization",
       "count": 82,
+      "recent_count": 34
+    },
+    {
+      "source": "functionally-graded-am",
+      "target": "soft-robotics",
+      "count": 107,
       "recent_count": 33
     },
     {
@@ -758,6 +758,12 @@
       "recent_count": 13
     },
     {
+      "source": "closed-loop-control",
+      "target": "machine-learning",
+      "count": 18,
+      "recent_count": 13
+    },
+    {
       "source": "functionally-graded-am",
       "target": "sustainability",
       "count": 36,
@@ -801,8 +807,8 @@
     },
     {
       "source": "closed-loop-control",
-      "target": "machine-learning",
-      "count": 18,
+      "target": "digital-twin",
+      "count": 19,
       "recent_count": 12
     },
     {
@@ -855,8 +861,8 @@
     },
     {
       "source": "closed-loop-control",
-      "target": "digital-twin",
-      "count": 19,
+      "target": "process-optimization",
+      "count": 17,
       "recent_count": 11
     },
     {
@@ -922,12 +928,6 @@
     {
       "source": "composites",
       "target": "metamaterials",
-      "count": 17,
-      "recent_count": 10
-    },
-    {
-      "source": "closed-loop-control",
-      "target": "process-optimization",
       "count": 17,
       "recent_count": 10
     },
