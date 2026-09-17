@@ -44628,7 +44628,7 @@
     "first_added": "2026-07-06",
     "last_updated": "2026-09-17",
     "is_weekly_new": false,
-    "not_seen_in_latest_crossref_run": true,
+    "not_seen_in_latest_crossref_run": false,
     "last_seen_in_crossref_run": "2026-09-17",
     "openalex_venue_rank": "Rank 3",
     "openalex_venue_rank_number": 3,
@@ -83257,9 +83257,40 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Julien Deschamps",
+        "openalex_author_id": "https://openalex.org/A5017350777",
+        "orcid": "https://orcid.org/0000-0002-6119-2419",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Centre National de la Recherche Scientifique",
+            "ror": "https://ror.org/02feahw73",
+            "country_code": "FR",
+            "type": "government"
+          },
+          {
+            "name": "Université de Bretagne Sud",
+            "ror": "https://ror.org/04ed7fw48",
+            "country_code": "FR",
+            "type": "education"
+          },
+          {
+            "name": "Institut de Recherche Dupuy de Lôme",
+            "ror": "https://ror.org/03011gg73",
+            "country_code": "FR",
+            "type": "facility"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Université de Bretagne Sud IRDL UMR CNRS 6027, BIONICS Group  Lorient France"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Advanced Functional Materials",
     "doi": "10.1002/adfm.78532",
@@ -83279,8 +83310,8 @@
     "issn_l": "",
     "publisher": "Wiley",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7213459949",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S135204980",
     "venue_metrics": {
@@ -90315,9 +90346,30 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Hamed Shahsavan",
+        "openalex_author_id": "https://openalex.org/A5043927634",
+        "orcid": "https://orcid.org/0000-0003-1498-5114",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Waterloo",
+            "ror": "https://ror.org/01aff2v68",
+            "country_code": "CA",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Chemical Engineering University of Waterloo  Ontario Canada",
+          "Institute for Polymer Research University of Waterloo  Ontario Canada",
+          "Waterloo Institute for Nanotechnology University of Waterloo  Ontario Canada"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Advanced Functional Materials",
     "doi": "10.1002/adfm.78464",
@@ -90337,8 +90389,8 @@
     "issn_l": "",
     "publisher": "Wiley",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7213472106",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S135204980",
     "venue_metrics": {
@@ -197941,10 +197993,10 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-09-16",
+    "last_updated": "2026-09-17",
     "is_weekly_new": false,
-    "last_seen_in_crossref_run": "2026-09-16",
-    "not_seen_in_latest_crossref_run": true,
+    "last_seen_in_crossref_run": "2026-09-17",
+    "not_seen_in_latest_crossref_run": false,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 5.572056737588652,
@@ -204069,7 +204121,7 @@
     "last_updated": "2026-09-17",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-09-17",
-    "not_seen_in_latest_crossref_run": true,
+    "not_seen_in_latest_crossref_run": false,
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 8.463642428285524,
@@ -258520,7 +258572,7 @@
     "last_updated": "2026-09-17",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-09-17",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 5.572056737588652,
