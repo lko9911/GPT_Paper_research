@@ -1,4 +1,149 @@
 {
+  "10.3390/modelling5040105": {
+    "author_details": [
+      {
+        "name": "Alexey Shcherbakov",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Power Engineering Machine Building and Mechanics, National Research University Moscow Power Engineering Institute, 14 Krasnokazarmennaya Street, 111250 Moscow, Russia"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Power Engineering Machine Building and Mechanics, National Research University Moscow Power Engineering Institute, 14 Krasnokazarmennaya Street, 111250 Moscow, Russia"
+        ]
+      },
+      {
+        "name": "Alexander Gudenko",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Power Engineering Machine Building and Mechanics, National Research University Moscow Power Engineering Institute, 14 Krasnokazarmennaya Street, 111250 Moscow, Russia"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Power Engineering Machine Building and Mechanics, National Research University Moscow Power Engineering Institute, 14 Krasnokazarmennaya Street, 111250 Moscow, Russia"
+        ]
+      },
+      {
+        "name": "Andrey Sliva",
+        "orcid": "https://orcid.org/0000-0001-7351-5708",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Power Engineering Machine Building and Mechanics, National Research University Moscow Power Engineering Institute, 14 Krasnokazarmennaya Street, 111250 Moscow, Russia"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Power Engineering Machine Building and Mechanics, National Research University Moscow Power Engineering Institute, 14 Krasnokazarmennaya Street, 111250 Moscow, Russia"
+        ]
+      },
+      {
+        "name": "Daria Gaponova",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "FSUE “RFNC—VNIITF Named After Academ. E.I. Zababakhin”, 111250 Moscow, Russia"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "FSUE “RFNC—VNIITF Named After Academ. E.I. Zababakhin”, 111250 Moscow, Russia"
+        ]
+      },
+      {
+        "name": "Artem Marchenkov",
+        "orcid": "https://orcid.org/0000-0002-0806-7336",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Power Engineering Machine Building and Mechanics, National Research University Moscow Power Engineering Institute, 14 Krasnokazarmennaya Street, 111250 Moscow, Russia"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Power Engineering Machine Building and Mechanics, National Research University Moscow Power Engineering Institute, 14 Krasnokazarmennaya Street, 111250 Moscow, Russia"
+        ]
+      },
+      {
+        "name": "Alexey Goncharov",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Power Engineering Machine Building and Mechanics, National Research University Moscow Power Engineering Institute, 14 Krasnokazarmennaya Street, 111250 Moscow, Russia"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Power Engineering Machine Building and Mechanics, National Research University Moscow Power Engineering Institute, 14 Krasnokazarmennaya Street, 111250 Moscow, Russia"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2673-3951"
+    ],
+    "issn_l": "",
+    "publisher": "MDPI AG",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4405502493",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S4210205587",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210205587",
+      "issn_l": "2673-3951",
+      "issn": [
+        "2673-3951"
+      ],
+      "type": "journal",
+      "host_organization_name": "Multidisciplinary Digital Publishing Institute",
+      "works_count": 537,
+      "cited_by_count": 1914,
+      "two_year_mean_citedness": 1.8691358024691358,
+      "h_index": 19,
+      "i10_index": 50,
+      "is_core": true,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 1.8691358024691358,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 3",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - This paper discusses a method for path planning in wire-based additive manufacturing.\n2. Problem - The challenge addressed is ensuring a continuous surfacing trajectory during the 3D printing process.\n3. Method - The proposed approach involves a two-stage process: numerical analysis of a 2D region with boundary conditions followed by a heuristic algorithm for the surfacing head's movement.\n4. Key Result - The algorithm's effectiveness is demonstrated through an example involving a section with holes, highlighting the use of numerical methods for temperature field calculations.\n5. Takeaway - The study emphasizes the importance of specialized software in converting 3D models into machine code for improved additive manufacturing processes.",
+    "relevance_note_en": "The summary captures the core elements of the paper's focus on path planning and the proposed method.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-09-18",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.3390/modelling5040105"
+  },
   "10.35631/ijirev.619002": {
     "author_details": [
       {

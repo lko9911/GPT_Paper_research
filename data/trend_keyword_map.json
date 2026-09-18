@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-18T18:15:29+00:00",
+  "updated_at": "2026-09-18T22:57:05+00:00",
   "source": "derived from titles, tags, AI Q5 summaries, relevance notes, and public metadata; abstract text is not published",
   "recent_basis": "publication year 2026, plus records explicitly marked weekly-new",
   "node_count": 30,
@@ -9,8 +9,8 @@
       "id": "multi-material-am",
       "label": "Multi-material AM",
       "group": "AM",
-      "count": 1145,
-      "recent_count": 413,
+      "count": 1146,
+      "recent_count": 414,
       "trend_score": 0.9896,
       "x": 310.0,
       "y": 148.0,
@@ -20,8 +20,8 @@
       "id": "additive-manufacturing",
       "label": "Additive Manufacturing",
       "group": "AM",
-      "count": 1186,
-      "recent_count": 403,
+      "count": 1187,
+      "recent_count": 404,
       "trend_score": 0.9831,
       "x": 369.8,
       "y": 170.5,
@@ -33,7 +33,7 @@
       "group": "AM",
       "count": 656,
       "recent_count": 205,
-      "trend_score": 0.5134,
+      "trend_score": 0.5124,
       "x": 359.4,
       "y": 233.5,
       "radius": 18.9
@@ -44,7 +44,7 @@
       "group": "AI",
       "count": 357,
       "recent_count": 163,
-      "trend_score": 0.3666,
+      "trend_score": 0.3658,
       "x": 620.0,
       "y": 68.0,
       "radius": 15.8
@@ -55,7 +55,7 @@
       "group": "AI",
       "count": 362,
       "recent_count": 153,
-      "trend_score": 0.3509,
+      "trend_score": 0.3502,
       "x": 684.0,
       "y": 120.0,
       "radius": 15.8
@@ -66,7 +66,7 @@
       "group": "Automation",
       "count": 303,
       "recent_count": 115,
-      "trend_score": 0.2716,
+      "trend_score": 0.271,
       "x": 525.0,
       "y": 158.0,
       "radius": 15.1
@@ -77,7 +77,7 @@
       "group": "4D",
       "count": 268,
       "recent_count": 94,
-      "trend_score": 0.2271,
+      "trend_score": 0.2267,
       "x": 285.0,
       "y": 298.0,
       "radius": 14.6
@@ -88,7 +88,7 @@
       "group": "Materials",
       "count": 214,
       "recent_count": 83,
-      "trend_score": 0.1948,
+      "trend_score": 0.1944,
       "x": 185.0,
       "y": 118.0,
       "radius": 13.8
@@ -99,10 +99,21 @@
       "group": "Materials",
       "count": 190,
       "recent_count": 81,
-      "trend_score": 0.1853,
+      "trend_score": 0.185,
       "x": 249.0,
       "y": 170.0,
       "radius": 13.4
+    },
+    {
+      "id": "soft-robotics",
+      "label": "Soft Robotics",
+      "group": "Robotics",
+      "count": 204,
+      "recent_count": 77,
+      "trend_score": 0.1818,
+      "x": 540.0,
+      "y": 318.0,
+      "radius": 13.6
     },
     {
       "id": "monitoring",
@@ -110,20 +121,9 @@
       "group": "Automation",
       "count": 205,
       "recent_count": 76,
-      "trend_score": 0.1807,
+      "trend_score": 0.1803,
       "x": 589.0,
       "y": 210.0,
-      "radius": 13.7
-    },
-    {
-      "id": "soft-robotics",
-      "label": "Soft Robotics",
-      "group": "Robotics",
-      "count": 203,
-      "recent_count": 76,
-      "trend_score": 0.1802,
-      "x": 540.0,
-      "y": 318.0,
       "radius": 13.6
     },
     {
@@ -132,7 +132,7 @@
       "group": "AM",
       "count": 221,
       "recent_count": 65,
-      "trend_score": 0.1661,
+      "trend_score": 0.1658,
       "x": 310.0,
       "y": 274.0,
       "radius": 13.9
@@ -143,7 +143,7 @@
       "group": "Materials",
       "count": 165,
       "recent_count": 68,
-      "trend_score": 0.157,
+      "trend_score": 0.1567,
       "x": 185.0,
       "y": 222.0,
       "radius": 13.0
@@ -154,7 +154,7 @@
       "group": "4D",
       "count": 167,
       "recent_count": 58,
-      "trend_score": 0.1405,
+      "trend_score": 0.1403,
       "x": 349.0,
       "y": 350.0,
       "radius": 13.0
@@ -165,7 +165,7 @@
       "group": "AM",
       "count": 143,
       "recent_count": 52,
-      "trend_score": 0.1243,
+      "trend_score": 0.1241,
       "x": 260.6,
       "y": 233.5,
       "radius": 12.6
@@ -176,7 +176,7 @@
       "group": "Application",
       "count": 133,
       "recent_count": 42,
-      "trend_score": 0.1048,
+      "trend_score": 0.1046,
       "x": 160.0,
       "y": 285.5,
       "radius": 12.4
@@ -187,7 +187,7 @@
       "group": "4D",
       "count": 129,
       "recent_count": 38,
-      "trend_score": 0.097,
+      "trend_score": 0.0969,
       "x": 285.0,
       "y": 402.0,
       "radius": 12.3
@@ -198,7 +198,7 @@
       "group": "Manufacturing",
       "count": 91,
       "recent_count": 36,
-      "trend_score": 0.084,
+      "trend_score": 0.0839,
       "x": 430.0,
       "y": 240.5,
       "radius": 11.4
@@ -209,7 +209,7 @@
       "group": "4D",
       "count": 63,
       "recent_count": 29,
-      "trend_score": 0.0651,
+      "trend_score": 0.065,
       "x": 221.0,
       "y": 350.0,
       "radius": 10.7
@@ -220,7 +220,7 @@
       "group": "Automation",
       "count": 75,
       "recent_count": 27,
-      "trend_score": 0.0647,
+      "trend_score": 0.0646,
       "x": 525.0,
       "y": 262.0,
       "radius": 11.0
@@ -231,7 +231,7 @@
       "group": "Materials",
       "count": 78,
       "recent_count": 24,
-      "trend_score": 0.0604,
+      "trend_score": 0.0603,
       "x": 121.0,
       "y": 170.0,
       "radius": 11.1
@@ -242,7 +242,7 @@
       "group": "Automation",
       "count": 42,
       "recent_count": 23,
-      "trend_score": 0.0496,
+      "trend_score": 0.0495,
       "x": 461.0,
       "y": 210.0,
       "radius": 10.0
@@ -253,7 +253,7 @@
       "group": "AI",
       "count": 44,
       "recent_count": 21,
-      "trend_score": 0.0467,
+      "trend_score": 0.0466,
       "x": 620.0,
       "y": 172.0,
       "radius": 10.1
@@ -264,7 +264,7 @@
       "group": "AM",
       "count": 53,
       "recent_count": 18,
-      "trend_score": 0.0439,
+      "trend_score": 0.0438,
       "x": 250.2,
       "y": 170.5,
       "radius": 10.4
@@ -275,7 +275,7 @@
       "group": "AML",
       "count": 25,
       "recent_count": 20,
-      "trend_score": 0.0402,
+      "trend_score": 0.0401,
       "x": 710.0,
       "y": 248.0,
       "radius": 9.3
@@ -286,7 +286,7 @@
       "group": "AML",
       "count": 25,
       "recent_count": 19,
-      "trend_score": 0.0385,
+      "trend_score": 0.0384,
       "x": 774.0,
       "y": 300.0,
       "radius": 9.3
@@ -297,7 +297,7 @@
       "group": "AML",
       "count": 31,
       "recent_count": 12,
-      "trend_score": 0.0282,
+      "trend_score": 0.0281,
       "x": 710.0,
       "y": 352.0,
       "radius": 9.6
@@ -308,7 +308,7 @@
       "group": "AI",
       "count": 13,
       "recent_count": 7,
-      "trend_score": 0.0152,
+      "trend_score": 0.0151,
       "x": 556.0,
       "y": 120.0,
       "radius": 8.7
@@ -319,7 +319,7 @@
       "group": "Robotics",
       "count": 13,
       "recent_count": 7,
-      "trend_score": 0.0152,
+      "trend_score": 0.0151,
       "x": 540.0,
       "y": 424.0,
       "radius": 8.7
@@ -340,8 +340,8 @@
     {
       "source": "additive-manufacturing",
       "target": "multi-material-am",
-      "count": 972,
-      "recent_count": 322
+      "count": 973,
+      "recent_count": 323
     },
     {
       "source": "functionally-graded-am",
@@ -368,15 +368,15 @@
       "recent_count": 87
     },
     {
+      "source": "multi-material-am",
+      "target": "soft-robotics",
+      "count": 195,
+      "recent_count": 74
+    },
+    {
       "source": "additive-manufacturing",
       "target": "process-optimization",
       "count": 219,
-      "recent_count": 73
-    },
-    {
-      "source": "multi-material-am",
-      "target": "soft-robotics",
-      "count": 194,
       "recent_count": 73
     },
     {
@@ -441,15 +441,15 @@
     },
     {
       "source": "additive-manufacturing",
-      "target": "machine-learning",
-      "count": 136,
+      "target": "soft-robotics",
+      "count": 162,
       "recent_count": 53
     },
     {
       "source": "additive-manufacturing",
-      "target": "soft-robotics",
-      "count": 161,
-      "recent_count": 52
+      "target": "machine-learning",
+      "count": 136,
+      "recent_count": 53
     },
     {
       "source": "additive-manufacturing",
