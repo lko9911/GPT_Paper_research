@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-18T22:57:05+00:00",
+  "updated_at": "2026-09-19T06:58:52+00:00",
   "source": "derived from titles, tags, AI Q5 summaries, relevance notes, and public metadata; abstract text is not published",
   "recent_basis": "publication year 2026, plus records explicitly marked weekly-new",
   "node_count": 30,
@@ -21,8 +21,8 @@
       "label": "Additive Manufacturing",
       "group": "AM",
       "count": 1187,
-      "recent_count": 404,
-      "trend_score": 0.9831,
+      "recent_count": 403,
+      "trend_score": 0.9814,
       "x": 369.8,
       "y": 170.5,
       "radius": 23.0
@@ -43,8 +43,8 @@
       "label": "Machine Learning",
       "group": "AI",
       "count": 357,
-      "recent_count": 163,
-      "trend_score": 0.3658,
+      "recent_count": 162,
+      "trend_score": 0.3641,
       "x": 620.0,
       "y": 68.0,
       "radius": 15.8
@@ -54,8 +54,8 @@
       "label": "Digital Twin",
       "group": "AI",
       "count": 362,
-      "recent_count": 153,
-      "trend_score": 0.3502,
+      "recent_count": 152,
+      "trend_score": 0.3485,
       "x": 684.0,
       "y": 120.0,
       "radius": 15.8
@@ -65,8 +65,8 @@
       "label": "Process Optimization",
       "group": "Automation",
       "count": 303,
-      "recent_count": 115,
-      "trend_score": 0.271,
+      "recent_count": 114,
+      "trend_score": 0.2693,
       "x": 525.0,
       "y": 158.0,
       "radius": 15.1
@@ -241,8 +241,8 @@
       "label": "Closed-loop Control",
       "group": "Automation",
       "count": 42,
-      "recent_count": 23,
-      "trend_score": 0.0495,
+      "recent_count": 22,
+      "trend_score": 0.0478,
       "x": 461.0,
       "y": 210.0,
       "radius": 10.0
@@ -359,7 +359,7 @@
       "source": "digital-twin",
       "target": "machine-learning",
       "count": 228,
-      "recent_count": 100
+      "recent_count": 99
     },
     {
       "source": "4d-printing",
@@ -377,7 +377,7 @@
       "source": "additive-manufacturing",
       "target": "process-optimization",
       "count": 219,
-      "recent_count": 73
+      "recent_count": 72
     },
     {
       "source": "metamaterials",
@@ -449,7 +449,7 @@
       "source": "additive-manufacturing",
       "target": "machine-learning",
       "count": 136,
-      "recent_count": 53
+      "recent_count": 52
     },
     {
       "source": "additive-manufacturing",
@@ -467,7 +467,7 @@
       "source": "machine-learning",
       "target": "process-optimization",
       "count": 97,
-      "recent_count": 46
+      "recent_count": 45
     },
     {
       "source": "fdm-material-extrusion",
@@ -518,27 +518,27 @@
       "recent_count": 35
     },
     {
-      "source": "digital-twin",
-      "target": "process-optimization",
-      "count": 83,
-      "recent_count": 35
-    },
-    {
       "source": "multi-material-am",
       "target": "stimuli-responsive",
       "count": 117,
       "recent_count": 34
     },
     {
-      "source": "additive-manufacturing",
-      "target": "digital-twin",
-      "count": 84,
+      "source": "digital-twin",
+      "target": "process-optimization",
+      "count": 83,
       "recent_count": 34
     },
     {
       "source": "functionally-graded-am",
       "target": "soft-robotics",
       "count": 107,
+      "recent_count": 33
+    },
+    {
+      "source": "additive-manufacturing",
+      "target": "digital-twin",
+      "count": 84,
       "recent_count": 33
     },
     {
@@ -758,18 +758,6 @@
       "recent_count": 13
     },
     {
-      "source": "closed-loop-control",
-      "target": "digital-twin",
-      "count": 20,
-      "recent_count": 13
-    },
-    {
-      "source": "closed-loop-control",
-      "target": "machine-learning",
-      "count": 18,
-      "recent_count": 13
-    },
-    {
       "source": "functionally-graded-am",
       "target": "sustainability",
       "count": 36,
@@ -819,7 +807,13 @@
     },
     {
       "source": "closed-loop-control",
-      "target": "process-optimization",
+      "target": "digital-twin",
+      "count": 20,
+      "recent_count": 12
+    },
+    {
+      "source": "closed-loop-control",
+      "target": "machine-learning",
       "count": 18,
       "recent_count": 12
     },
@@ -863,6 +857,12 @@
       "source": "fdm-material-extrusion",
       "target": "metamaterials",
       "count": 20,
+      "recent_count": 11
+    },
+    {
+      "source": "closed-loop-control",
+      "target": "process-optimization",
+      "count": 18,
       "recent_count": 11
     },
     {
@@ -914,12 +914,6 @@
       "recent_count": 10
     },
     {
-      "source": "additive-manufacturing",
-      "target": "closed-loop-control",
-      "count": 22,
-      "recent_count": 10
-    },
-    {
       "source": "composites",
       "target": "lce",
       "count": 20,
@@ -965,6 +959,12 @@
       "source": "metamaterials",
       "target": "soft-robotics",
       "count": 23,
+      "recent_count": 9
+    },
+    {
+      "source": "additive-manufacturing",
+      "target": "closed-loop-control",
+      "count": 22,
       "recent_count": 9
     },
     {
