@@ -3981,9 +3981,28 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Kunal Dewangan",
+        "openalex_author_id": "https://openalex.org/A5003922474",
+        "orcid": "https://orcid.org/0000-0002-3337-9745",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "National Institute of Technology Raipur",
+            "ror": "https://ror.org/02y553197",
+            "country_code": "IN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering, National Institute of Technology Raipur"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Journal of Thermoplastic Composite Materials",
     "doi": "10.1177/08927057261490769",
@@ -4003,8 +4022,8 @@
     "issn_l": "",
     "publisher": "SAGE Publications",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7213638295",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S159246406",
     "venue_metrics": {
@@ -7830,9 +7849,9 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Zhenlu Xu",
-        "openalex_author_id": "https://openalex.org/A5056473819",
-        "orcid": "https://orcid.org/0009-0007-0580-017X",
+        "name": "Wenjun Xu",
+        "openalex_author_id": "https://openalex.org/A5059180329",
+        "orcid": "https://orcid.org/0000-0001-5370-3437",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -38599,7 +38618,7 @@
     "corresponding_authors": [
       {
         "name": "Nasirov E.E. Rza A.A.",
-        "openalex_author_id": "https://openalex.org/A5152087142",
+        "openalex_author_id": "https://openalex.org/A5152224679",
         "orcid": null,
         "position": "first",
         "is_corresponding": true,
@@ -71603,9 +71622,28 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Nicole Pellizzon",
+        "openalex_author_id": "https://openalex.org/A5099160239",
+        "orcid": "https://orcid.org/0009-0001-6490-1356",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Technical University of Denmark",
+            "ror": "https://ror.org/04qtj9h94",
+            "country_code": "DK",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Civil and Mechanical Engineering, Technical University of Denmark, Kongens Lyngby, 2800, Denmark"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Additive Manufacturing",
     "doi": "10.1016/j.addma.2026.105379",
@@ -71624,8 +71662,8 @@
     "issn_l": "",
     "publisher": "Elsevier BV",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7128822928",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2764842179",
     "venue_metrics": {
@@ -105833,8 +105871,8 @@
         ]
       },
       {
-        "name": "Lei Ren",
-        "openalex_author_id": "https://openalex.org/A5133749330",
+        "name": "Luquan Ren",
+        "openalex_author_id": "https://openalex.org/A5133795267",
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -106446,7 +106484,7 @@
         "name": "Mondher Nasri",
         "openalex_author_id": "https://openalex.org/A5006405851",
         "orcid": null,
-        "position": "middle",
+        "position": "first",
         "is_corresponding": true,
         "institutions": [
           {
@@ -114562,11 +114600,17 @@
     "corresponding_authors": [
       {
         "name": "Maria A. Bieberich",
-        "openalex_author_id": "https://openalex.org/A5081851152",
-        "orcid": "https://orcid.org/0000-0002-1518-5330",
-        "position": "first",
+        "openalex_author_id": null,
+        "orcid": null,
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
+          {
+            "name": "University of Iowa",
+            "ror": "https://ror.org/036jqmy94",
+            "country_code": "US",
+            "type": "education"
+          },
           {
             "name": "University of Maryland, Baltimore County",
             "ror": "https://ror.org/02qskvh78",
@@ -114575,7 +114619,8 @@
           }
         ],
         "raw_affiliation_strings": [
-          "University of Maryland, Baltimore County, Baltimore, Maryland, USA"
+          "University of Maryland, Baltimore County, Baltimore, Maryland, USA",
+          "Institute for Vision Research, Carver College of Medicine, University of Iowa, Iowa City, Iowa, USA"
         ]
       },
       {
@@ -114607,7 +114652,7 @@
         "name": "Erin Lavik",
         "openalex_author_id": "https://openalex.org/A5079335476",
         "orcid": "https://orcid.org/0000-0002-0644-744X",
-        "position": "middle",
+        "position": "last",
         "is_corresponding": true,
         "institutions": [
           {
@@ -118622,7 +118667,7 @@
     "publisher": "Royal Society of Chemistry (RSC)",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "https://openalex.org/W7115907602",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7213649507",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S4210182508",
     "venue_metrics": {
@@ -152530,7 +152575,7 @@
     "corresponding_authors": [
       {
         "name": "Aoming Zhang",
-        "openalex_author_id": "https://openalex.org/A5111021439",
+        "openalex_author_id": null,
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -176793,7 +176838,7 @@
     "last_updated": "2026-09-20",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-09-20",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 5.1259869550291794,
@@ -188979,8 +189024,8 @@
     "corresponding_authors": [
       {
         "name": "Ning Li",
-        "openalex_author_id": "https://openalex.org/A5089190523",
-        "orcid": "https://orcid.org/0000-0002-7994-9504",
+        "openalex_author_id": null,
+        "orcid": null,
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -223553,9 +223598,9 @@
     "corresponding_authors": [
       {
         "name": "Songhao Wang",
-        "openalex_author_id": "https://openalex.org/A5057228007",
+        "openalex_author_id": null,
         "orcid": "https://orcid.org/0000-0003-3643-4698",
-        "position": "first",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -256167,10 +256212,10 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-09-19",
+    "last_updated": "2026-09-20",
     "is_weekly_new": false,
-    "last_seen_in_crossref_run": "2026-09-19",
-    "not_seen_in_latest_crossref_run": true,
+    "last_seen_in_crossref_run": "2026-09-20",
+    "not_seen_in_latest_crossref_run": false,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 4.095050580487474,
@@ -264124,10 +264169,10 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-24",
-    "last_updated": "2026-09-19",
+    "last_updated": "2026-09-20",
     "is_weekly_new": false,
-    "last_seen_in_crossref_run": "2026-09-19",
-    "not_seen_in_latest_crossref_run": true,
+    "last_seen_in_crossref_run": "2026-09-20",
+    "not_seen_in_latest_crossref_run": false,
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 8.898073836276083,
@@ -266558,10 +266603,10 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Ratnesh Kumar Raj Singh",
-        "openalex_author_id": "https://openalex.org/A5066015004",
-        "orcid": "https://orcid.org/0000-0001-9377-6753",
-        "position": "middle",
+        "name": "Manish Pratap Singh",
+        "openalex_author_id": "https://openalex.org/A5021211339",
+        "orcid": "https://orcid.org/0000-0002-9530-2348",
+        "position": "first",
         "is_corresponding": true,
         "institutions": [
           {
@@ -328104,7 +328149,7 @@
         "name": "Ling Wang",
         "openalex_author_id": "https://openalex.org/A5115592675",
         "orcid": "https://orcid.org/0000-0002-5176-7469",
-        "position": "last",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
