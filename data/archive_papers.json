@@ -2275,7 +2275,7 @@
     "openalex_venue_rank": "Rank 4",
     "openalex_venue_rank_number": 4,
     "openalex_venue_rank_score": 0.15,
-    "openalex_venue_rank_percentile": 0.0576,
+    "openalex_venue_rank_percentile": 0.0575,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
@@ -6340,7 +6340,7 @@
     "openalex_venue_rank": "Rank 4",
     "openalex_venue_rank_number": 4,
     "openalex_venue_rank_score": 0.6,
-    "openalex_venue_rank_percentile": 0.1479,
+    "openalex_venue_rank_percentile": 0.1475,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
@@ -6660,7 +6660,7 @@
     "openalex_venue_rank": "Rank 4",
     "openalex_venue_rank_number": 4,
     "openalex_venue_rank_score": 0.2795240456122955,
-    "openalex_venue_rank_percentile": 0.0902,
+    "openalex_venue_rank_percentile": 0.09,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
@@ -7168,7 +7168,7 @@
     "openalex_venue_rank": "Rank 4",
     "openalex_venue_rank_number": 4,
     "openalex_venue_rank_score": 0.58,
-    "openalex_venue_rank_percentile": 0.1454,
+    "openalex_venue_rank_percentile": 0.145,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
@@ -9537,7 +9537,7 @@
     "openalex_venue_rank": "Rank 3",
     "openalex_venue_rank_number": 3,
     "openalex_venue_rank_score": 2.7077625570776256,
-    "openalex_venue_rank_percentile": 0.4035,
+    "openalex_venue_rank_percentile": 0.405,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
@@ -9677,7 +9677,7 @@
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 7.721680420105026,
-    "openalex_venue_rank_percentile": 0.8396,
+    "openalex_venue_rank_percentile": 0.84,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
@@ -10541,6 +10541,204 @@
     "is_weekly_new": true,
     "not_seen_in_latest_crossref_run": false,
     "last_seen_in_crossref_run": "2026-07-23",
+    "archive_reason": "low_venue_trust"
+  },
+  {
+    "id": "10.26434/chemrxiv.15009224/v1",
+    "title": "Direct Ink Writing (DIW) of Mechanically Graded and Programmable Crosslinked Polymers with Seamless Interlayer Fusion",
+    "authors": [
+      "F. Serpe",
+      "L. Scozzafava",
+      "R. Angelini",
+      "A. Martinelli",
+      "M.C. Tirelli",
+      "M. Costantini",
+      "A. Barbetta",
+      "V. Rosciardi",
+      "Vanessa Rosciardi"
+    ],
+    "author_details": [
+      {
+        "name": "F. Serpe",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Institute of Physical Chemistry, Polish Academy of Sciences, Marcina Kasprzaka, Warsaw, Poland"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Institute of Physical Chemistry, Polish Academy of Sciences, Marcina Kasprzaka, Warsaw, Poland"
+        ]
+      },
+      {
+        "name": "L. Scozzafava",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Chemistry, Sapienza University of Rome, Piazzale Aldo Moro 5, Rome, Italy, 00185"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Chemistry, Sapienza University of Rome, Piazzale Aldo Moro 5, Rome, Italy, 00185"
+        ]
+      },
+      {
+        "name": "R. Angelini",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Physics, Sapienza University of Rome, Piazzale Aldo Moro 5, Rome, Italy, 00185"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Physics, Sapienza University of Rome, Piazzale Aldo Moro 5, Rome, Italy, 00185"
+        ]
+      },
+      {
+        "name": "A. Martinelli",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Chemistry, Sapienza University of Rome, Piazzale Aldo Moro 5, Rome, Italy, 00185"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Chemistry, Sapienza University of Rome, Piazzale Aldo Moro 5, Rome, Italy, 00185"
+        ]
+      },
+      {
+        "name": "M.C. Tirelli",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Institute of Physical Chemistry, Polish Academy of Sciences, Marcina Kasprzaka, Warsaw, Poland"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Institute of Physical Chemistry, Polish Academy of Sciences, Marcina Kasprzaka, Warsaw, Poland"
+        ]
+      },
+      {
+        "name": "M. Costantini",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Institute of Physical Chemistry, Polish Academy of Sciences, Marcina Kasprzaka, Warsaw, Poland"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Institute of Physical Chemistry, Polish Academy of Sciences, Marcina Kasprzaka, Warsaw, Poland"
+        ]
+      },
+      {
+        "name": "A. Barbetta",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Chemistry, Sapienza University of Rome, Piazzale Aldo Moro 5, Rome, Italy, 00185"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Chemistry, Sapienza University of Rome, Piazzale Aldo Moro 5, Rome, Italy, 00185"
+        ]
+      },
+      {
+        "name": "V. Rosciardi",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Physics, Sapienza University of Rome, Piazzale Aldo Moro 5, Rome, Italy, 00185"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Physics, Sapienza University of Rome, Piazzale Aldo Moro 5, Rome, Italy, 00185"
+        ]
+      },
+      {
+        "name": "Vanessa Rosciardi",
+        "orcid": "https://orcid.org/0000-0001-9902-1247",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "year": 2026,
+    "venue": "",
+    "doi": "10.26434/chemrxiv.15009224/v1",
+    "url": "https://doi.org/10.26434/chemrxiv.15009224/v1",
+    "source": [
+      "Crossref"
+    ],
+    "metadata_source": "crossref",
+    "crossref_type": "posted-content",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [],
+    "issn_l": "",
+    "publisher": "American Chemical Society (ACS)",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "publication_type": "unknown",
+    "venue_trust": "low",
+    "venue_trust_reason": "missing venue metadata",
+    "is_core_venue": false,
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "categories": [
+      "Multi-material AM"
+    ],
+    "tags": [
+      "FGAM",
+      "FDM/Material extrusion"
+    ],
+    "relevance_score": 6,
+    "curation_priority": false,
+    "ai_summary_en": "1. Topic - Direct Ink Writing (DIW) of Mechanically Graded and Programmable Crosslinked Polymers with Seamless Interlayer Fusion is a 2026 paper from an unknown venue about FGAM and FDM/Material extrusion.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to FGAM and FDM/Material extrusion.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for FGAM and FDM/Material extrusion; current relevance score is 6/10.",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_en": "Relevant to the tracker through FGAM and FDM/Material extrusion; score: 6/10.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-09-22",
+    "last_updated": "2026-09-22",
+    "is_weekly_new": true,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-09-22",
     "archive_reason": "low_venue_trust"
   },
   {
@@ -11495,7 +11693,7 @@
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 3.5346534653465347,
-    "openalex_venue_rank_percentile": 0.5238,
+    "openalex_venue_rank_percentile": 0.525,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
@@ -13375,7 +13573,7 @@
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 4.790365744870651,
-    "openalex_venue_rank_percentile": 0.6792,
+    "openalex_venue_rank_percentile": 0.68,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
@@ -14601,7 +14799,7 @@
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 14.205291084373366,
-    "openalex_venue_rank_percentile": 0.9624,
+    "openalex_venue_rank_percentile": 0.9625,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
@@ -18542,7 +18740,7 @@
     "openalex_venue_rank": "Rank 4",
     "openalex_venue_rank_number": 4,
     "openalex_venue_rank_score": 0.41385281385281386,
-    "openalex_venue_rank_percentile": 0.1178,
+    "openalex_venue_rank_percentile": 0.1175,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
@@ -21086,7 +21284,7 @@
     "openalex_venue_rank": "Rank 4",
     "openalex_venue_rank_number": 4,
     "openalex_venue_rank_score": 0.562753036437247,
-    "openalex_venue_rank_percentile": 0.1429,
+    "openalex_venue_rank_percentile": 0.1425,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
@@ -22660,7 +22858,7 @@
     "openalex_venue_rank": "Rank 3",
     "openalex_venue_rank_number": 3,
     "openalex_venue_rank_score": 2.230769230769231,
-    "openalex_venue_rank_percentile": 0.3459,
+    "openalex_venue_rank_percentile": 0.3475,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
@@ -23896,7 +24094,7 @@
     "openalex_venue_rank": "Rank 3",
     "openalex_venue_rank_number": 3,
     "openalex_venue_rank_score": 2.058467741935484,
-    "openalex_venue_rank_percentile": 0.3283,
+    "openalex_venue_rank_percentile": 0.33,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
@@ -24798,7 +24996,7 @@
     "openalex_venue_rank": "Rank 4",
     "openalex_venue_rank_number": 4,
     "openalex_venue_rank_score": 0.2795240456122955,
-    "openalex_venue_rank_percentile": 0.0902,
+    "openalex_venue_rank_percentile": 0.09,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
@@ -28779,7 +28977,7 @@
     "openalex_venue_rank": "Rank 4",
     "openalex_venue_rank_number": 4,
     "openalex_venue_rank_score": 0.325,
-    "openalex_venue_rank_percentile": 0.1053,
+    "openalex_venue_rank_percentile": 0.105,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
@@ -30574,7 +30772,7 @@
     "openalex_venue_rank": "Rank 4",
     "openalex_venue_rank_number": 4,
     "openalex_venue_rank_score": 1.0990990990990992,
-    "openalex_venue_rank_percentile": 0.2055,
+    "openalex_venue_rank_percentile": 0.205,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
@@ -32037,7 +32235,7 @@
     "openalex_venue_rank": "Rank 4",
     "openalex_venue_rank_number": 4,
     "openalex_venue_rank_score": 0.562753036437247,
-    "openalex_venue_rank_percentile": 0.1429,
+    "openalex_venue_rank_percentile": 0.1425,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
@@ -33410,7 +33608,7 @@
     "openalex_venue_rank": "Rank 4",
     "openalex_venue_rank_number": 4,
     "openalex_venue_rank_score": 0.4509628627346751,
-    "openalex_venue_rank_percentile": 0.1303,
+    "openalex_venue_rank_percentile": 0.13,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
@@ -33726,7 +33924,7 @@
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 7.721680420105026,
-    "openalex_venue_rank_percentile": 0.8396,
+    "openalex_venue_rank_percentile": 0.84,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
@@ -34414,7 +34612,7 @@
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 8.898073836276083,
-    "openalex_venue_rank_percentile": 0.8897,
+    "openalex_venue_rank_percentile": 0.89,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
@@ -37128,7 +37326,7 @@
     "openalex_venue_rank": "Rank 4",
     "openalex_venue_rank_number": 4,
     "openalex_venue_rank_score": 0.562753036437247,
-    "openalex_venue_rank_percentile": 0.1429,
+    "openalex_venue_rank_percentile": 0.1425,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
@@ -40654,7 +40852,7 @@
     "openalex_venue_rank": "Rank 4",
     "openalex_venue_rank_number": 4,
     "openalex_venue_rank_score": 0.562753036437247,
-    "openalex_venue_rank_percentile": 0.1429,
+    "openalex_venue_rank_percentile": 0.1425,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
@@ -43025,7 +43223,7 @@
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 15.583400053376034,
-    "openalex_venue_rank_percentile": 0.9699,
+    "openalex_venue_rank_percentile": 0.97,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
@@ -44150,7 +44348,7 @@
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 14.205291084373366,
-    "openalex_venue_rank_percentile": 0.9624,
+    "openalex_venue_rank_percentile": 0.9625,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
@@ -44663,7 +44861,7 @@
     "openalex_venue_rank": "Rank 4",
     "openalex_venue_rank_number": 4,
     "openalex_venue_rank_score": 0.562753036437247,
-    "openalex_venue_rank_percentile": 0.1429,
+    "openalex_venue_rank_percentile": 0.1425,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
@@ -45142,7 +45340,7 @@
     "openalex_venue_rank": "Rank 4",
     "openalex_venue_rank_number": 4,
     "openalex_venue_rank_score": 1.0990990990990992,
-    "openalex_venue_rank_percentile": 0.2055,
+    "openalex_venue_rank_percentile": 0.205,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
@@ -45276,7 +45474,7 @@
     "openalex_venue_rank": "Rank 4",
     "openalex_venue_rank_number": 4,
     "openalex_venue_rank_score": 1.0990990990990992,
-    "openalex_venue_rank_percentile": 0.2055,
+    "openalex_venue_rank_percentile": 0.205,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
@@ -48234,7 +48432,7 @@
     "openalex_venue_rank": "Rank 4",
     "openalex_venue_rank_number": 4,
     "openalex_venue_rank_score": 0.562753036437247,
-    "openalex_venue_rank_percentile": 0.1429,
+    "openalex_venue_rank_percentile": 0.1425,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
@@ -48448,7 +48646,7 @@
     "openalex_venue_rank": "Rank 3",
     "openalex_venue_rank_number": 3,
     "openalex_venue_rank_score": 2.0,
-    "openalex_venue_rank_percentile": 0.3158,
+    "openalex_venue_rank_percentile": 0.3175,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
@@ -51072,7 +51270,7 @@
     "openalex_venue_rank": "Rank 4",
     "openalex_venue_rank_number": 4,
     "openalex_venue_rank_score": 1.0266666666666666,
-    "openalex_venue_rank_percentile": 0.2005,
+    "openalex_venue_rank_percentile": 0.2,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
@@ -52068,7 +52266,7 @@
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 4.616803278688525,
-    "openalex_venue_rank_percentile": 0.6541,
+    "openalex_venue_rank_percentile": 0.655,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
@@ -52822,7 +53020,7 @@
     "openalex_venue_rank": "Rank 4",
     "openalex_venue_rank_number": 4,
     "openalex_venue_rank_score": 0.3445378151260504,
-    "openalex_venue_rank_percentile": 0.1078,
+    "openalex_venue_rank_percentile": 0.1075,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
@@ -54612,7 +54810,7 @@
     "openalex_venue_rank": "Rank 4",
     "openalex_venue_rank_number": 4,
     "openalex_venue_rank_score": 0.4509628627346751,
-    "openalex_venue_rank_percentile": 0.1303,
+    "openalex_venue_rank_percentile": 0.13,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
@@ -54752,7 +54950,7 @@
     "openalex_venue_rank": "Rank 4",
     "openalex_venue_rank_number": 4,
     "openalex_venue_rank_score": 0.325,
-    "openalex_venue_rank_percentile": 0.1053,
+    "openalex_venue_rank_percentile": 0.105,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
@@ -56465,7 +56663,7 @@
     "openalex_venue_rank": "Rank 4",
     "openalex_venue_rank_number": 4,
     "openalex_venue_rank_score": 1.2484472049689441,
-    "openalex_venue_rank_percentile": 0.218,
+    "openalex_venue_rank_percentile": 0.2175,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
@@ -58668,7 +58866,7 @@
     "openalex_venue_rank": "Rank 4",
     "openalex_venue_rank_number": 4,
     "openalex_venue_rank_score": 0.38911742707554225,
-    "openalex_venue_rank_percentile": 0.1153,
+    "openalex_venue_rank_percentile": 0.115,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
@@ -60205,7 +60403,7 @@
     "openalex_venue_rank": "Rank 4",
     "openalex_venue_rank_number": 4,
     "openalex_venue_rank_score": 0.28232699200441136,
-    "openalex_venue_rank_percentile": 0.0927,
+    "openalex_venue_rank_percentile": 0.0925,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
@@ -60736,7 +60934,7 @@
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 4.616803278688525,
-    "openalex_venue_rank_percentile": 0.6541,
+    "openalex_venue_rank_percentile": 0.655,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
@@ -63867,7 +64065,7 @@
     "openalex_venue_rank": "Rank 4",
     "openalex_venue_rank_number": 4,
     "openalex_venue_rank_score": 0.4610348910091232,
-    "openalex_venue_rank_percentile": 0.1328,
+    "openalex_venue_rank_percentile": 0.1325,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
@@ -64455,7 +64653,7 @@
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 4.973747016706444,
-    "openalex_venue_rank_percentile": 0.6967,
+    "openalex_venue_rank_percentile": 0.6975,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
@@ -65019,7 +65217,7 @@
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 12.684615384615384,
-    "openalex_venue_rank_percentile": 0.9474,
+    "openalex_venue_rank_percentile": 0.9475,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
@@ -65667,7 +65865,7 @@
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 3.824750192159877,
-    "openalex_venue_rank_percentile": 0.5714,
+    "openalex_venue_rank_percentile": 0.5725,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
@@ -67330,7 +67528,7 @@
     "openalex_venue_rank": "Rank 3",
     "openalex_venue_rank_number": 3,
     "openalex_venue_rank_score": 2.230769230769231,
-    "openalex_venue_rank_percentile": 0.3459,
+    "openalex_venue_rank_percentile": 0.3475,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {

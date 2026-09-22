@@ -1,4 +1,79 @@
 {
+  "10.52842/conf.ecaade.2025.2.313": {
+    "author_details": [
+      {
+        "name": "Pablo Banda",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "David A. Torreblanca-Díaz",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "proceedings-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2684-1843"
+    ],
+    "issn_l": "",
+    "publisher": "eCAADe",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "https://openalex.org/W7131868639",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S4393919075",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4393919075",
+      "issn_l": "2684-1843",
+      "issn": [
+        "2684-1843"
+      ],
+      "type": "journal",
+      "host_organization_name": null,
+      "works_count": 4089,
+      "cited_by_count": 9720,
+      "two_year_mean_citedness": 0.325,
+      "h_index": 28,
+      "i10_index": 218,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 0.325,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 4",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "conference/proceedings not in trusted allowlist",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The paper explores the design of a stool series using radiolaria-inspired forms.\n2. Problem - It addresses the challenge of integrating computational design with additive manufacturing techniques.\n3. Method - The authors employ a synergistic approach that combines advanced computational design methods with 3D printing technologies.\n4. Key Result - The resulting stool designs demonstrate enhanced aesthetic and functional qualities through this integration.\n5. Takeaway - This work highlights the potential of merging computational design with additive manufacturing to create innovative and efficient product designs.",
+    "relevance_note_en": "The paper is highly relevant as it discusses the intersection of design and manufacturing technologies.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "id": "10.52842/conf.ecaade.2025.2.313"
+  },
   "10.1115/imece-india2025-161364": {
     "author_details": [
       {
@@ -20305,59 +20380,5 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "id": "10.1117/12.3008445"
-  },
-  "10.1016/b978-0-443-13673-3.00001-8": {
-    "author_details": [
-      {
-        "name": "Ali Zolfagharian",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Mahdi Bodaghi",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
-    "metadata_source": "crossref",
-    "crossref_type": "book-chapter",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [],
-    "issn_l": "",
-    "publisher": "Elsevier",
-    "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "https://openalex.org/W4401183888",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "venue_trust_reason": "book/chapter output rather than journal or trusted conference article",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The paper discusses advancements in 4D printing using robotic materials.\n2. Problem - It addresses the challenges in achieving dynamic material properties and functionalities in printed structures.\n3. Method - The authors review various techniques and technologies employed in the field of robotic 4D printing.\n4. Key Result - The findings highlight the potential of robotic materials to create adaptive and responsive structures.\n5. Takeaway - Robotic 4D printing represents a significant step forward in material science and engineering, enabling innovative applications.",
-    "relevance_note_en": "The summary captures the essence of the paper's focus on robotic materials in 4D printing.",
-    "abstract_used_for_summary": false,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "id": "10.1016/b978-0-443-13673-3.00001-8"
   }
 }
