@@ -1,4 +1,82 @@
 {
+  "10.1016/j.ijmecsci.2025.110299": {
+    "author_details": [
+      {
+        "name": "Gašper Krivic",
+        "orcid": "https://orcid.org/0009-0008-1548-231X",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Janko Slavič",
+        "orcid": "https://orcid.org/0000-0002-5982-8377",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "0020-7403"
+    ],
+    "issn_l": "",
+    "publisher": "Elsevier BV",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4410119755",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S72716621",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S72716621",
+      "issn_l": "0020-7403",
+      "issn": [
+        "0020-7403",
+        "1879-2162"
+      ],
+      "type": "journal",
+      "host_organization_name": "Elsevier BV",
+      "works_count": 13958,
+      "cited_by_count": 429953,
+      "two_year_mean_citedness": 10.31578947368421,
+      "h_index": 185,
+      "i10_index": 9045,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 10.31578947368421,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - This paper discusses the development of a novel method for creating bimorph electrothermal soft actuators using single-process 3D printing.\n2. Problem - Traditional manufacturing of these actuators involves multiple steps, limiting their design flexibility and customization options.\n3. Method - The authors propose a new 3D-printing technique along with an analytical model that predicts the actuators' performance based on material properties and stress relaxation effects.\n4. Key Result - Experimental validation shows that the model accurately predicts the time-dependent behavior of the actuators, confirming the effectiveness of the proposed method.\n5. Takeaway - This research highlights the potential for scalable, high-performance actuators that can be integrated into smart devices through single-process manufacturing.",
+    "relevance_note_en": "The summary captures the core contributions and findings of the study, emphasizing the innovative manufacturing approach and its implications.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-09-22",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1016/j.ijmecsci.2025.110299"
+  },
   "10.1016/j.mfglet.2024.11.005": {
     "author_details": [
       {
@@ -25901,8 +25979,8 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
     "crossref_collection_route": "issn_venue_query",
@@ -25915,8 +25993,8 @@
     "issn_l": "",
     "publisher": "Springer Science and Business Media LLC",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4410034014",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S4210206835",
     "venue_metrics": {
@@ -33446,99 +33524,5 @@
     "last_seen_in_crossref_run": "2026-09-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.ifacol.2024.09.215"
-  },
-  "10.1016/j.addma.2023.103950": {
-    "author_details": [
-      {
-        "name": "Joseph R. Kubalak",
-        "orcid": "https://orcid.org/0000-0003-4628-8620",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Nathaniel J. Root",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Alfred L. Wicks",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Christopher B. Williams",
-        "orcid": "https://orcid.org/0000-0002-0499-2444",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2214-8604"
-    ],
-    "issn_l": "",
-    "publisher": "Elsevier BV",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4390321609",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S2764842179",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S2764842179",
-      "issn_l": "2214-7810",
-      "issn": [
-        "2214-7810",
-        "2214-8604"
-      ],
-      "type": "journal",
-      "host_organization_name": "Elsevier BV",
-      "works_count": 5106,
-      "cited_by_count": 246110,
-      "two_year_mean_citedness": 7.721680420105026,
-      "h_index": 193,
-      "i10_index": 3661,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Core manufacturing journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 7.721680420105026,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 1",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - The study focuses on enhancing the mechanical properties of parts produced through material extrusion.\n2. Problem - Current toolpath strategies may not optimize the mechanical performance of extruded materials.\n3. Method - The authors propose a method for toolpath planning that aims to improve the distribution of material during the extrusion process.\n4. Key Result - Optimized toolpath planning significantly enhances the mechanical performance of the produced parts.\n5. Takeaway - Implementing advanced toolpath strategies can lead to better mechanical outcomes in additive manufacturing.",
-    "relevance_note_en": "The paper addresses critical aspects of toolpath planning in additive manufacturing, which is highly relevant to the field.",
-    "abstract_used_for_summary": false,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-09-22",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1016/j.addma.2023.103950"
   }
 }
