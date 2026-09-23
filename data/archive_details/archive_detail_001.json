@@ -1,4 +1,98 @@
 {
+  "10.1109/robosoft63089.2025.11020895": {
+    "author_details": [
+      {
+        "name": "Ellis Capp",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "University of Oxford,Oxford Robotics Institute,UK"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "University of Oxford,Oxford Robotics Institute,UK"
+        ]
+      },
+      {
+        "name": "Marco Pontin",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "University of Oxford,Oxford Robotics Institute,UK"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "University of Oxford,Oxford Robotics Institute,UK"
+        ]
+      },
+      {
+        "name": "Peter Walters",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "University of Oxford,Department of Engineering Science,UK"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "University of Oxford,Department of Engineering Science,UK"
+        ]
+      },
+      {
+        "name": "Perla Maiolino",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "University of Oxford,Oxford Robotics Institute,UK"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "University of Oxford,Oxford Robotics Institute,UK"
+        ]
+      }
+    ],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "proceedings-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [],
+    "issn_l": "",
+    "publisher": "IEEE",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "https://openalex.org/W4411019113",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "venue_trust_reason": "conference/proceedings not in trusted allowlist",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - This paper discusses the development of optical fiber bending sensors for proprioception in soft robotic fingers.\n2. Problem - Existing sensor integration methods are complex and labor-intensive, hindering effective proprioception in soft robots.\n3. Method - The authors introduce a semi-automated printing technique that embeds optical fibers with electronics into 3D printed structures, allowing for efficient manufacturing.\n4. Key Result - The sensors demonstrate significant performance with 70% linearity and an average RMS error of 4.81°, while maintaining fingertip position accuracy under external forces.\n5. Takeaway - This innovative approach enhances the integration of sensors in soft robotics, facilitating improved control and interaction with the environment.",
+    "relevance_note_en": "The paper presents a novel method for integrating sensors in soft robotics, addressing a significant challenge in the field.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "id": "10.1109/robosoft63089.2025.11020895"
+  },
   "10.22541/au.174940808.86837002/v1": {
     "author_details": [
       {
@@ -20352,71 +20446,5 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "id": "10.20944/preprints202403.0176.v1"
-  },
-  "10.2172/2540487": {
-    "author_details": [
-      {
-        "name": "Samuel Leguizamon",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Sandia National Laboratories (SNL-NM), Albuquerque, NM (United States)"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Sandia National Laboratories (SNL-NM), Albuquerque, NM (United States)"
-        ]
-      },
-      {
-        "name": "Alex Commisso",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Sandia National Laboratories (SNL-NM), Albuquerque, NM (United States)"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Sandia National Laboratories (SNL-NM), Albuquerque, NM (United States)"
-        ]
-      }
-    ],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
-    "metadata_source": "crossref",
-    "crossref_type": "proceedings-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [],
-    "issn_l": "",
-    "publisher": "US DOE",
-    "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "https://openalex.org/W4409053373",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "venue_trust_reason": "conference/proceedings not in trusted allowlist",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The paper discusses the use of stereolithographic additive manufacturing for creating functionally-graded materials.\n2. Problem - It addresses the challenges associated with producing materials that have varying properties within a single component.\n3. Method - The authors explore various techniques and approaches to optimize the additive manufacturing process for these materials.\n4. Key Result - The findings indicate significant improvements in material performance and application versatility through the proposed methods.\n5. Takeaway - The study highlights the potential of functionally-graded materials in advancing additive manufacturing technologies.",
-    "relevance_note_en": "The summary captures the essence of the paper's focus on functionally-graded materials in additive manufacturing.",
-    "abstract_used_for_summary": false,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "id": "10.2172/2540487"
   }
 }
