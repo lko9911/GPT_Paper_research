@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T07:14:42+00:00",
+  "updated_at": "2026-09-23T14:04:48+00:00",
   "source": "derived from titles, tags, AI Q5 summaries, relevance notes, and public metadata; abstract text is not published",
   "recent_basis": "publication year 2026, plus records explicitly marked weekly-new",
   "node_count": 30,
@@ -11,7 +11,7 @@
       "group": "AM",
       "count": 1153,
       "recent_count": 421,
-      "trend_score": 0.9899,
+      "trend_score": 0.9897,
       "x": 310.0,
       "y": 148.0,
       "radius": 22.7
@@ -20,9 +20,9 @@
       "id": "additive-manufacturing",
       "label": "Additive Manufacturing",
       "group": "AM",
-      "count": 1193,
-      "recent_count": 409,
-      "trend_score": 0.98,
+      "count": 1194,
+      "recent_count": 410,
+      "trend_score": 0.9817,
       "x": 369.8,
       "y": 170.5,
       "radius": 23.0
@@ -33,7 +33,7 @@
       "group": "AM",
       "count": 657,
       "recent_count": 206,
-      "trend_score": 0.5077,
+      "trend_score": 0.5076,
       "x": 359.4,
       "y": 233.5,
       "radius": 18.9
@@ -47,7 +47,7 @@
       "trend_score": 0.3591,
       "x": 620.0,
       "y": 68.0,
-      "radius": 15.8
+      "radius": 15.7
     },
     {
       "id": "digital-twin",
@@ -55,7 +55,7 @@
       "group": "AI",
       "count": 362,
       "recent_count": 152,
-      "trend_score": 0.3438,
+      "trend_score": 0.3437,
       "x": 684.0,
       "y": 120.0,
       "radius": 15.8
@@ -77,7 +77,7 @@
       "group": "4D",
       "count": 268,
       "recent_count": 94,
-      "trend_score": 0.2237,
+      "trend_score": 0.2236,
       "x": 285.0,
       "y": 298.0,
       "radius": 14.6
@@ -86,9 +86,9 @@
       "id": "composites",
       "label": "Composites",
       "group": "Materials",
-      "count": 216,
-      "recent_count": 85,
-      "trend_score": 0.1956,
+      "count": 217,
+      "recent_count": 86,
+      "trend_score": 0.1975,
       "x": 185.0,
       "y": 118.0,
       "radius": 13.8
@@ -99,7 +99,7 @@
       "group": "Robotics",
       "count": 206,
       "recent_count": 79,
-      "trend_score": 0.1832,
+      "trend_score": 0.1831,
       "x": 540.0,
       "y": 318.0,
       "radius": 13.6
@@ -110,7 +110,7 @@
       "group": "Materials",
       "count": 190,
       "recent_count": 81,
-      "trend_score": 0.1825,
+      "trend_score": 0.1824,
       "x": 249.0,
       "y": 170.0,
       "radius": 13.4
@@ -130,9 +130,9 @@
       "id": "vat-photopolymerization",
       "label": "Vat Photopolymerization",
       "group": "AM",
-      "count": 223,
-      "recent_count": 67,
-      "trend_score": 0.1675,
+      "count": 224,
+      "recent_count": 68,
+      "trend_score": 0.1693,
       "x": 310.0,
       "y": 274.0,
       "radius": 13.9
@@ -143,10 +143,10 @@
       "group": "Materials",
       "count": 165,
       "recent_count": 68,
-      "trend_score": 0.1546,
+      "trend_score": 0.1545,
       "x": 185.0,
       "y": 222.0,
-      "radius": 13.0
+      "radius": 12.9
     },
     {
       "id": "shape-morphing",
@@ -165,7 +165,7 @@
       "group": "AM",
       "count": 146,
       "recent_count": 55,
-      "trend_score": 0.1282,
+      "trend_score": 0.1281,
       "x": 260.6,
       "y": 233.5,
       "radius": 12.6
@@ -198,7 +198,7 @@
       "group": "Manufacturing",
       "count": 92,
       "recent_count": 37,
-      "trend_score": 0.0847,
+      "trend_score": 0.0846,
       "x": 430.0,
       "y": 240.5,
       "radius": 11.4
@@ -209,7 +209,7 @@
       "group": "4D",
       "count": 63,
       "recent_count": 29,
-      "trend_score": 0.0641,
+      "trend_score": 0.064,
       "x": 221.0,
       "y": 350.0,
       "radius": 10.7
@@ -220,7 +220,7 @@
       "group": "Automation",
       "count": 75,
       "recent_count": 27,
-      "trend_score": 0.0638,
+      "trend_score": 0.0637,
       "x": 525.0,
       "y": 262.0,
       "radius": 11.0
@@ -388,8 +388,8 @@
     {
       "source": "additive-manufacturing",
       "target": "composites",
-      "count": 173,
-      "recent_count": 65
+      "count": 174,
+      "recent_count": 66
     },
     {
       "source": "composites",
@@ -410,16 +410,16 @@
       "recent_count": 62
     },
     {
+      "source": "additive-manufacturing",
+      "target": "vat-photopolymerization",
+      "count": 211,
+      "recent_count": 60
+    },
+    {
       "source": "multi-material-am",
       "target": "vat-photopolymerization",
       "count": 203,
       "recent_count": 60
-    },
-    {
-      "source": "additive-manufacturing",
-      "target": "vat-photopolymerization",
-      "count": 210,
-      "recent_count": 59
     },
     {
       "source": "4d-printing",
@@ -782,6 +782,12 @@
       "recent_count": 12
     },
     {
+      "source": "composites",
+      "target": "vat-photopolymerization",
+      "count": 26,
+      "recent_count": 12
+    },
+    {
       "source": "4d-printing",
       "target": "metamaterials",
       "count": 24,
@@ -844,12 +850,6 @@
     {
       "source": "alloys-metals",
       "target": "monitoring",
-      "count": 25,
-      "recent_count": 11
-    },
-    {
-      "source": "composites",
-      "target": "vat-photopolymerization",
       "count": 25,
       "recent_count": 11
     },
