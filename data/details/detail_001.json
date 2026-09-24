@@ -5976,6 +5976,111 @@
     "not_seen_in_latest_crossref_run": false,
     "id": "10.3389/fmech.2026.1774457"
   },
+  "10.1080/17452759.2026.2731318": {
+    "author_details": [
+      {
+        "name": "Shawn Ravanbod",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Nottingham Trent University"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Nottingham Trent University"
+        ]
+      },
+      {
+        "name": "Kaveh Rahmani",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Nottingham Trent University"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Nottingham Trent University"
+        ]
+      },
+      {
+        "name": "Mahdi Bodaghi",
+        "orcid": "https://orcid.org/0000-0002-0707-944X",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Nottingham Trent University"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Nottingham Trent University"
+        ]
+      }
+    ],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "1745-2759",
+      "1745-2767"
+    ],
+    "issn_l": "",
+    "publisher": "Informa UK Limited",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S152936027",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S152936027",
+      "issn_l": "1745-2759",
+      "issn": [
+        "1745-2759",
+        "1745-2767"
+      ],
+      "type": "journal",
+      "host_organization_name": "Taylor & Francis",
+      "works_count": 1288,
+      "cited_by_count": 39605,
+      "two_year_mean_citedness": 10.10738255033557,
+      "h_index": 92,
+      "i10_index": 718,
+      "is_core": true,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 10.10738255033557,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - Inverse design and 3D printing of programmable functional metamaterials: thermomechanical performance, vibration isolation & durability is a 2026 paper from Virtual and Physical Prototyping about Metamaterials.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Metamaterials.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Metamaterials; current relevance score is 6/10.",
+    "relevance_note_en": "Relevant to the tracker through Metamaterials; score: 6/10.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-09-24",
+    "id": "10.1080/17452759.2026.2731318"
+  },
   "10.1038/s44172-026-00601-y": {
     "author_details": [
       {
@@ -10141,8 +10246,8 @@
         ]
       }
     ],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
     "crossref_collection_route": "issn_venue_query",
@@ -10155,8 +10260,8 @@
     "issn_l": "",
     "publisher": "Emerald",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "https://openalex.org/W7116224686",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7119940103",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S173500210",
     "venue_metrics": {
@@ -24552,7 +24657,7 @@
     "publisher": "Elsevier BV",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7214079858",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S5407037061",
     "venue_metrics": {
@@ -31282,8 +31387,8 @@
     "abstract_used_for_summary": false,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "not_seen_in_latest_crossref_run": true,
-    "last_seen_in_crossref_run": "2026-09-23",
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-09-24",
     "id": "10.1007/s00170-026-18888-8"
   },
   "10.1039/d5dd00479a": {
@@ -34560,8 +34665,8 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
     "crossref_collection_route": "issn_venue_query",
@@ -34573,8 +34678,8 @@
     "issn_l": "",
     "publisher": "Springer Science and Business Media LLC",
     "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4412585581",
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "https://openalex.org/W7162500732",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S64187185",
     "venue_metrics": {
@@ -34768,158 +34873,5 @@
     "last_seen_in_crossref_run": "2026-09-24",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1080/09544828.2025.2552096"
-  },
-  "10.1021/acsami.6c07049": {
-    "author_details": [
-      {
-        "name": "Huan Jiang",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Mechanical Engineering"
-          },
-          {
-            "name": "University of Colorado Denver"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical Engineering",
-          "University of Colorado Denver"
-        ]
-      },
-      {
-        "name": "Alston X. Gracego",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Mechanical Engineering"
-          },
-          {
-            "name": "University of Colorado Denver"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical Engineering",
-          "University of Colorado Denver"
-        ]
-      },
-      {
-        "name": "Martin L. Dunn",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Mechanical Engineering"
-          },
-          {
-            "name": "University of Colorado Denver"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical Engineering",
-          "University of Colorado Denver"
-        ]
-      },
-      {
-        "name": "Kevin Long",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Engineering Sciences Center"
-          },
-          {
-            "name": "Sandia National Laboratories"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Engineering Sciences Center",
-          "Sandia National Laboratories"
-        ]
-      },
-      {
-        "name": "Kai Yu",
-        "orcid": "https://orcid.org/0000-0001-9067-1673",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Mechanical Engineering"
-          },
-          {
-            "name": "University of Colorado Denver"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical Engineering",
-          "University of Colorado Denver"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "1944-8244",
-      "1944-8252"
-    ],
-    "issn_l": "",
-    "publisher": "American Chemical Society (ACS)",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W7165531696",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S164001016",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S164001016",
-      "issn_l": "1944-8244",
-      "issn": [
-        "1944-8244",
-        "1944-8252"
-      ],
-      "type": "journal",
-      "host_organization_name": "American Chemical Society",
-      "works_count": 69722,
-      "cited_by_count": 3298786,
-      "two_year_mean_citedness": 7.780907972281588,
-      "h_index": 372,
-      "i10_index": 53076,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 7.780907972281588,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 1",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - This study focuses on the development of 3D printed monodomain liquid crystal elastomer composites reinforced with continuous fibers.\n2. Problem - Traditional liquid crystal elastomers lack the necessary stiffness for structural applications while maintaining energy dissipation capabilities.\n3. Method - The authors employed direct ink writing to create composites that enhance structural integrity along the fiber axis while allowing for significant deformation and energy dissipation.\n4. Key Result - The composites demonstrated a 40-fold increase in longitudinal strength and a 4-5 times enhancement in transverse energy absorption compared to neat monodomain LCEs.\n5. Takeaway - The findings provide insights into optimizing the mechanical properties and energy dissipation of LCE composites for applications in vibration and impact resistance.",
-    "relevance_note_en": "The summary captures the core aspects of the research, including the innovative approach and significant findings.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-09-24",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1021/acsami.6c07049"
   }
 }
