@@ -1,4 +1,74 @@
 {
+  "10.70477/rmrq2973": {
+    "author_details": [
+      {
+        "name": "Muhammad Mubashar Saeed",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Eadaoin Carthy",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Nicholas Dunne",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "David Kinahan",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "proceedings-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [],
+    "issn_l": "",
+    "publisher": "Chemical and Biological Microsystems Society",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "https://openalex.org/W7138848941",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "venue_trust_reason": "conference/proceedings not in trusted allowlist",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - TUNABLE GOLD NANOPARTICLE SYNTHESIS IN MICROFLUIDIC PLATFORMS ENABLED BY REUSABLE 3D-PRINTED MULTIMATERIAL CONNECTORS is a 2025 paper from 2025 MicroTAS Book of Abstracts about Additive manufacturing.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Additive manufacturing.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Additive manufacturing; current relevance score is 6/10.",
+    "relevance_note_en": "Relevant to the tracker through Additive manufacturing; score: 6/10.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "id": "10.70477/rmrq2973"
+  },
   "10.1109/robosoft63089.2025.11020895": {
     "author_details": [
       {
@@ -20400,51 +20470,5 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "id": "10.1051/epjconf/202430903024"
-  },
-  "10.20944/preprints202403.0176.v1": {
-    "author_details": [
-      {
-        "name": "Tayssir Hamieh",
-        "orcid": "https://orcid.org/0000-0003-2153-7408",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "posted-content",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [],
-    "issn_l": "",
-    "publisher": "MDPI AG",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4392514892",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "venue_trust_reason": "missing venue metadata",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - This study focuses on the surface thermodynamic properties of poly lactic acid (PLA) relevant to 3D and 4D printing.\n2. Problem - Understanding the surface properties of PLA is crucial for optimizing its performance in printing applications.\n3. Method - The research utilized inverse gas chromatography to measure the retention volumes of various molecules on PLA at different temperatures.\n4. Key Result - The findings revealed the dispersive and polar free surface energy of PLA, along with its glass transition characteristics and Lewis acid-base constants.\n5. Takeaway - The study identified distinct temperature intervals that influence the surface properties of PLA, which can inform better material selection and processing in printing technologies.",
-    "relevance_note_en": "The paper provides significant insights into PLA's surface properties, essential for 3D/4D printing.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "id": "10.20944/preprints202403.0176.v1"
   }
 }

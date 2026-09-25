@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-25T14:00:33+00:00",
+  "updated_at": "2026-09-25T19:10:29+00:00",
   "source": "derived from titles, tags, AI Q5 summaries, relevance notes, and public metadata; abstract text is not published",
   "recent_basis": "publication year 2026, plus records explicitly marked weekly-new",
   "node_count": 30,
@@ -31,9 +31,9 @@
       "id": "functionally-graded-am",
       "label": "Functionally Graded AM",
       "group": "AM",
-      "count": 657,
-      "recent_count": 206,
-      "trend_score": 0.5065,
+      "count": 658,
+      "recent_count": 207,
+      "trend_score": 0.5084,
       "x": 359.4,
       "y": 233.5,
       "radius": 18.9
@@ -130,23 +130,23 @@
       "id": "vat-photopolymerization",
       "label": "Vat Photopolymerization",
       "group": "AM",
-      "count": 225,
-      "recent_count": 68,
-      "trend_score": 0.1692,
+      "count": 226,
+      "recent_count": 69,
+      "trend_score": 0.1711,
       "x": 310.0,
       "y": 274.0,
-      "radius": 13.9
+      "radius": 14.0
     },
     {
       "id": "alloys-metals",
       "label": "Metals / Alloys",
       "group": "Materials",
-      "count": 165,
-      "recent_count": 68,
-      "trend_score": 0.1542,
+      "count": 166,
+      "recent_count": 69,
+      "trend_score": 0.1561,
       "x": 185.0,
       "y": 222.0,
-      "radius": 12.9
+      "radius": 13.0
     },
     {
       "id": "shape-morphing",
@@ -476,15 +476,15 @@
       "recent_count": 45
     },
     {
+      "source": "alloys-metals",
+      "target": "functionally-graded-am",
+      "count": 108,
+      "recent_count": 44
+    },
+    {
       "source": "additive-manufacturing",
       "target": "fdm-material-extrusion",
       "count": 129,
-      "recent_count": 43
-    },
-    {
-      "source": "alloys-metals",
-      "target": "functionally-graded-am",
-      "count": 107,
       "recent_count": 43
     },
     {
@@ -602,6 +602,12 @@
       "recent_count": 25
     },
     {
+      "source": "functionally-graded-am",
+      "target": "vat-photopolymerization",
+      "count": 113,
+      "recent_count": 24
+    },
+    {
       "source": "digital-twin",
       "target": "monitoring",
       "count": 67,
@@ -612,12 +618,6 @@
       "target": "toolpath-planning",
       "count": 61,
       "recent_count": 24
-    },
-    {
-      "source": "functionally-graded-am",
-      "target": "vat-photopolymerization",
-      "count": 112,
-      "recent_count": 23
     },
     {
       "source": "hydrogels",
