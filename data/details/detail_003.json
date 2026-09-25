@@ -1,4 +1,123 @@
 {
+  "10.1089/3dp.2023.0325": {
+    "author_details": [
+      {
+        "name": "Santiago Ochoa",
+        "orcid": "https://orcid.org/0000-0002-0066-9295",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "New Materials and Transformation Processes Research Group GiMaT, Universidad Politécnica Salesiana, Cuenca, Ecuador."
+          }
+        ],
+        "raw_affiliation_strings": [
+          "New Materials and Transformation Processes Research Group GiMaT, Universidad Politécnica Salesiana, Cuenca, Ecuador."
+        ]
+      },
+      {
+        "name": "Santiago Ferrándiz",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "ITM, Plaça Ferrándiz i Carbonell, Universitat Politècnica de València, s/n, Alcoi, Spain."
+          }
+        ],
+        "raw_affiliation_strings": [
+          "ITM, Plaça Ferrándiz i Carbonell, Universitat Politècnica de València, s/n, Alcoi, Spain."
+        ]
+      },
+      {
+        "name": "Luis Garzón",
+        "orcid": "https://orcid.org/0000-0001-6700-9788",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "New Materials and Transformation Processes Research Group GiMaT, Universidad Politécnica Salesiana, Cuenca, Ecuador."
+          }
+        ],
+        "raw_affiliation_strings": [
+          "New Materials and Transformation Processes Research Group GiMaT, Universidad Politécnica Salesiana, Cuenca, Ecuador."
+        ]
+      },
+      {
+        "name": "Christian Cobos",
+        "orcid": "https://orcid.org/0000-0002-1254-1205",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "New Materials and Transformation Processes Research Group GiMaT, Universidad Politécnica Salesiana, Cuenca, Ecuador."
+          }
+        ],
+        "raw_affiliation_strings": [
+          "New Materials and Transformation Processes Research Group GiMaT, Universidad Politécnica Salesiana, Cuenca, Ecuador."
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2329-7662",
+      "2329-7670"
+    ],
+    "issn_l": "",
+    "publisher": "SAGE Publications",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4401487253",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S4210174904",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210174904",
+      "issn_l": "2329-7662",
+      "issn": [
+        "2329-7662",
+        "2329-7670"
+      ],
+      "type": "journal",
+      "host_organization_name": "Mary Ann Liebert, Inc.",
+      "works_count": 768,
+      "cited_by_count": 14262,
+      "two_year_mean_citedness": 2.4384615384615387,
+      "h_index": 55,
+      "i10_index": 325,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 2.4384615384615387,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 3",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - The study focuses on creating digital twins for 3D-printed parts using G-code reverse engineering.\n2. Problem - Understanding the mechanical behavior of 3D-printed components is essential for effective finite element analysis.\n3. Method - The authors developed a method to reverse engineer G-code to create digital twins and performed tensile tests on samples printed with varying nozzle diameters and layer heights.\n4. Key Result - The research found that larger nozzle diameters increased tensile strength and stiffness, with a 90% similarity between simulated and actual mechanical test results.\n5. Takeaway - This approach effectively predicts mechanical stresses in 3D-printed parts, enhancing the reliability of additive manufacturing simulations.",
+    "relevance_note_en": "The summary accurately reflects the core findings and methods of the paper.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-09-25",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1089/3dp.2023.0325"
+  },
   "10.1016/j.mfglet.2025.06.139": {
     "author_details": [
       {
@@ -19249,7 +19368,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "last_seen_in_crossref_run": "2026-09-25",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "id": "10.1007/s00170-025-16354-5"
   },
   "10.1016/j.msea.2025.148034": {
@@ -20020,7 +20139,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "last_seen_in_crossref_run": "2026-09-25",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "id": "10.1039/d5tb01601k"
   },
   "10.1002/adma.202505504": {
@@ -31824,178 +31943,5 @@
     "last_seen_in_crossref_run": "2026-09-25",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1038/s41563-025-02146-5"
-  },
-  "10.1126/sciadv.aeb2289": {
-    "author_details": [
-      {
-        "name": "Huiyao Zhao",
-        "orcid": "https://orcid.org/0009-0007-9494-2566",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "School of Chemistry and Chemical Engineering, Ningxia University, Yinchuan 750021, China."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "School of Chemistry and Chemical Engineering, Ningxia University, Yinchuan 750021, China."
-        ]
-      },
-      {
-        "name": "Zike Chen",
-        "orcid": "https://orcid.org/0009-0008-8340-8349",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "State Key Laboratory of Fluid Power and Mechatronic Systems, Department of Engineering Mechanics, Zhejiang University, Hangzhou 310027, China."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "State Key Laboratory of Fluid Power and Mechatronic Systems, Department of Engineering Mechanics, Zhejiang University, Hangzhou 310027, China."
-        ]
-      },
-      {
-        "name": "Jiahao Li",
-        "orcid": "https://orcid.org/0009-0003-2889-0965",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "School of Chemistry and Chemical Engineering, Ningxia University, Yinchuan 750021, China."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "School of Chemistry and Chemical Engineering, Ningxia University, Yinchuan 750021, China."
-        ]
-      },
-      {
-        "name": "Yingwu Luo",
-        "orcid": "https://orcid.org/0000-0003-2487-5226",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "State Key Laboratory of Chemical Engineering, College of Chemical and Biological Engineering, Zhejiang University, Hangzhou 310058, China."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "State Key Laboratory of Chemical Engineering, College of Chemical and Biological Engineering, Zhejiang University, Hangzhou 310058, China."
-        ]
-      },
-      {
-        "name": "Zhike Peng",
-        "orcid": "https://orcid.org/0000-0002-2095-7075",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "School of Mechanical Engineering, Ningxia University, Yinchuan 750021, China."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "School of Mechanical Engineering, Ningxia University, Yinchuan 750021, China."
-        ]
-      },
-      {
-        "name": "Guoyong Mao",
-        "orcid": "https://orcid.org/0000-0002-7570-6206",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "State Key Laboratory of Fluid Power and Mechatronic Systems, Department of Engineering Mechanics, Zhejiang University, Hangzhou 310027, China."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "State Key Laboratory of Fluid Power and Mechatronic Systems, Department of Engineering Mechanics, Zhejiang University, Hangzhou 310027, China."
-        ]
-      },
-      {
-        "name": "Rui Xiao",
-        "orcid": "https://orcid.org/0000-0002-4380-9542",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "State Key Laboratory of Fluid Power and Mechatronic Systems, Department of Engineering Mechanics, Zhejiang University, Hangzhou 310027, China."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "State Key Laboratory of Fluid Power and Mechatronic Systems, Department of Engineering Mechanics, Zhejiang University, Hangzhou 310027, China."
-        ]
-      },
-      {
-        "name": "Jie Mao",
-        "orcid": "https://orcid.org/0000-0002-6635-4886",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "School of Chemistry and Chemical Engineering, Ningxia University, Yinchuan 750021, China."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "School of Chemistry and Chemical Engineering, Ningxia University, Yinchuan 750021, China."
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2375-2548"
-    ],
-    "issn_l": "",
-    "publisher": "American Association for the Advancement of Science (AAAS)",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4416775312",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S2737427234",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S2737427234",
-      "issn_l": "2375-2548",
-      "issn": [
-        "2375-2548"
-      ],
-      "type": "journal",
-      "host_organization_name": "American Association for the Advancement of Science",
-      "works_count": 19454,
-      "cited_by_count": 1254678,
-      "two_year_mean_citedness": 12.005587372538065,
-      "h_index": 374,
-      "i10_index": 14182,
-      "is_core": true,
-      "is_oa": true,
-      "is_in_doaj": true
-    },
-    "journal_quality": {
-      "label": "High-impact general journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 12.005587372538065,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 1",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - The study focuses on programmable dielectric liquid crystal elastomers for 3D morphing applications.\n2. Problem - Achieving precise and reversible control over complex 3D deformations in soft materials is challenging.\n3. Method - A shear-assisted digital light-processing 4D printing technique is employed to program the mechanical properties of the elastomers.\n4. Key Result - The actuators demonstrate reversible multidimensional shape morphing with high fidelity in recreating intricate geometries.\n5. Takeaway - This approach enhances the capabilities of soft robotics and adaptive systems through advanced material design and printing techniques.",
-    "relevance_note_en": "The summary captures the essence of the research, highlighting the innovative method and its implications.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-09-25",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1126/sciadv.aeb2289"
   }
 }

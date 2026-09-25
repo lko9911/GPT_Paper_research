@@ -53771,9 +53771,28 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Mahdi Bodaghi",
+        "openalex_author_id": "https://openalex.org/A5043306953",
+        "orcid": "https://orcid.org/0000-0002-0707-944X",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Nottingham Trent University",
+            "ror": "https://ror.org/04xyxjd90",
+            "country_code": "GB",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Nottingham Trent University"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Virtual and Physical Prototyping",
     "doi": "10.1080/17452759.2026.2731318",
@@ -53793,8 +53812,8 @@
     "issn_l": "",
     "publisher": "Informa UK Limited",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7214220503",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S152936027",
     "venue_metrics": {
@@ -60273,28 +60292,9 @@
         ]
       }
     ],
-    "corresponding_authors": [
-      {
-        "name": "Laurane Roumy",
-        "openalex_author_id": "https://openalex.org/A5018108548",
-        "orcid": "https://orcid.org/0000-0002-6273-2800",
-        "position": "first",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "Institut Pprime",
-            "ror": "https://ror.org/05vjdsn22",
-            "country_code": "FR",
-            "type": "facility"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "CNRS-ENSMA-Université de Poitiers Institut PPRIME, Dpt Physique et Mécanique des Matériaux, , Futuroscope Cedex, ; ESTACA’Lab-Laval, ESTACA, Laval, and School of Engineering, Institute for Infrastructure and Environment, University of Edinburgh, Edinburgh,"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
     "year": 2026,
     "venue": "Rapid Prototyping Journal",
     "doi": "10.1108/rpj-07-2025-0320",
@@ -60314,8 +60314,8 @@
     "issn_l": "",
     "publisher": "Emerald",
     "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W7119940103",
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "https://openalex.org/W7116224686",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S173500210",
     "venue_metrics": {
@@ -96310,9 +96310,69 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Ricky D. Wildman",
+        "openalex_author_id": "https://openalex.org/A5008929056",
+        "orcid": "https://orcid.org/0000-0003-2329-8471",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Nottingham",
+            "ror": "https://ror.org/01ee9ar58",
+            "country_code": "GB",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Centre of Additive Manufacturing, Faculty of Engineering, Engineering, University Park, University of Nottingham, Nottingham, NG7 2RD, UK. ricky.wildman@nottingham.ac.uk",
+          "Department of Chemical and Environmental Engineering, Faculty of Engineering, University Park, University of Nottingham, Nottingham, NG7 2RD, UK. ricky.wildman@nottingham.ac.uk",
+          "University of Nottingham"
+        ]
+      },
+      {
+        "name": "Hayden Taylor",
+        "openalex_author_id": "https://openalex.org/A5060055066",
+        "orcid": "https://orcid.org/0000-0001-9810-6505",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of California, Berkeley",
+            "ror": "https://ror.org/01an7q238",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Dept. of Mechanical Engineering, University of California, Berkeley, CA, USA. hkt@berkeley.edu",
+          "University of California, Berkeley"
+        ]
+      },
+      {
+        "name": "Derek J. Irvine",
+        "openalex_author_id": "https://openalex.org/A5064718443",
+        "orcid": "https://orcid.org/0000-0003-1461-9851",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Nottingham",
+            "ror": "https://ror.org/01ee9ar58",
+            "country_code": "GB",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Centre of Additive Manufacturing, Faculty of Engineering, Engineering, University Park, University of Nottingham, Nottingham, NG7 2RD, UK. derek.irvine@nottingham.ac.uk",
+          "Department of Chemical and Environmental Engineering, Faculty of Engineering, University Park, University of Nottingham, Nottingham, NG7 2RD, UK. derek.irvine@nottingham.ac.uk",
+          "University of Nottingham"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Nature Communications",
     "doi": "10.1038/s41467-026-73456-8",
@@ -96331,8 +96391,8 @@
     "issn_l": "",
     "publisher": "Springer Science and Business Media LLC",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "https://openalex.org/W7162500732",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4412585581",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S64187185",
     "venue_metrics": {
@@ -97366,7 +97426,7 @@
     "publisher": "Springer Science and Business Media LLC",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7214146899",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S77056576",
     "venue_metrics": {
@@ -119851,7 +119911,7 @@
     "publisher": "Royal Society of Chemistry (RSC)",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "https://openalex.org/W7213649507",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7115907602",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S4210182508",
     "venue_metrics": {
@@ -122890,6 +122950,205 @@
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 8.402641353693769,
     "openalex_venue_rank_percentile": 0.8778,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+  },
+  {
+    "id": "10.1021/acsapm.6c02456",
+    "title": "4D Printing of Ionic Liquid-Based Acrylate-Spin Crossover Composite Resins",
+    "authors": [
+      "Michel Habib",
+      "Alejandro Enriquez-Cabrera",
+      "Rafał Bielas",
+      "Nagham Mawassy",
+      "Jean François Meunier",
+      "Lionel Salmon",
+      "Azzedine Bousseksou"
+    ],
+    "author_details": [
+      {
+        "name": "Michel Habib",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "CNRS & Université de Toulouse (UPS, INP) , , ,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "CNRS & Université de Toulouse (UPS, INP) , , ,"
+        ]
+      },
+      {
+        "name": "Alejandro Enriquez-Cabrera",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "CNRS & Université de Toulouse (UPS, INP) , , ,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "CNRS & Université de Toulouse (UPS, INP) , , ,"
+        ]
+      },
+      {
+        "name": "Rafał Bielas",
+        "orcid": "https://orcid.org/0000-0002-5129-063X",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "CNRS & Université de Toulouse (UPS, INP) , , ,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "CNRS & Université de Toulouse (UPS, INP) , , ,"
+        ]
+      },
+      {
+        "name": "Nagham Mawassy",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "CNRS & Université de Toulouse (UPS, INP) , , ,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "CNRS & Université de Toulouse (UPS, INP) , , ,"
+        ]
+      },
+      {
+        "name": "Jean François Meunier",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "CNRS & Université de Toulouse (UPS, INP) , , ,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "CNRS & Université de Toulouse (UPS, INP) , , ,"
+        ]
+      },
+      {
+        "name": "Lionel Salmon",
+        "orcid": "https://orcid.org/0000-0002-8064-8960",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "CNRS & Université de Toulouse (UPS, INP) , , ,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "CNRS & Université de Toulouse (UPS, INP) , , ,"
+        ]
+      },
+      {
+        "name": "Azzedine Bousseksou",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "CNRS & Université de Toulouse (UPS, INP) , , ,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "CNRS & Université de Toulouse (UPS, INP) , , ,"
+        ]
+      }
+    ],
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "year": 2026,
+    "venue": "ACS Applied Polymer Materials",
+    "doi": "10.1021/acsapm.6c02456",
+    "url": "https://doi.org/10.1021/acsapm.6c02456",
+    "source": [
+      "Crossref"
+    ],
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2637-6105"
+    ],
+    "issn_l": "",
+    "publisher": "American Chemical Society (ACS)",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S4210221646",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210221646",
+      "issn_l": "2637-6105",
+      "issn": [
+        "2637-6105"
+      ],
+      "type": "journal",
+      "host_organization_name": "American Chemical Society",
+      "works_count": 7946,
+      "cited_by_count": 105523,
+      "two_year_mean_citedness": 5.057156696536691,
+      "h_index": 85,
+      "i10_index": 3410,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 5.057156696536691,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 2",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "publication_type": "journal_article",
+    "venue_trust": "trusted",
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "is_core_venue": false,
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "categories": [
+      "Multi-material AM"
+    ],
+    "tags": [
+      "4D printing",
+      "DLP"
+    ],
+    "relevance_score": 5,
+    "curation_priority": false,
+    "ai_summary_en": "1. Topic - 4D Printing of Ionic Liquid-Based Acrylate-Spin Crossover Composite Resins is a 2026 paper from ACS Applied Polymer Materials about 4D printing and DLP.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to 4D printing and DLP.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for 4D printing and DLP; current relevance score is 5/10.",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_en": "Relevant to the tracker through 4D printing and DLP; score: 5/10.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-09-25",
+    "last_updated": "2026-09-25",
+    "is_weekly_new": true,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-09-25",
+    "openalex_venue_rank": "Rank 2",
+    "openalex_venue_rank_number": 2,
+    "openalex_venue_rank_score": 5.057156696536691,
+    "openalex_venue_rank_percentile": 0.7007,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
@@ -176784,7 +177043,7 @@
     "last_updated": "2026-09-25",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-09-25",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 3.7044257112750265,
@@ -178019,7 +178278,7 @@
     "last_updated": "2026-09-25",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-09-25",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 5.1259869550291794,
@@ -265268,7 +265527,7 @@
     "last_updated": "2026-09-25",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-09-25",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 8.898073836276083,
@@ -322215,7 +322474,7 @@
       {
         "name": "Henry Jäger",
         "openalex_author_id": "https://openalex.org/A5114248128",
-        "orcid": null,
+        "orcid": "https://orcid.org/0000-0003-3369-0397",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [

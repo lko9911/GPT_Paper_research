@@ -542,7 +542,7 @@
     "publisher": "Springer Science and Business Media LLC",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7214146899",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S77056576",
     "venue_metrics": {
@@ -15564,7 +15564,7 @@
     "publisher": "Royal Society of Chemistry (RSC)",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "https://openalex.org/W7213649507",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7115907602",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S4210182508",
     "venue_metrics": {
@@ -17581,6 +17581,165 @@
     "last_seen_in_crossref_run": "2026-09-25",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/advs.202513091"
+  },
+  "10.1021/acsapm.6c02456": {
+    "author_details": [
+      {
+        "name": "Michel Habib",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "CNRS & Université de Toulouse (UPS, INP) , , ,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "CNRS & Université de Toulouse (UPS, INP) , , ,"
+        ]
+      },
+      {
+        "name": "Alejandro Enriquez-Cabrera",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "CNRS & Université de Toulouse (UPS, INP) , , ,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "CNRS & Université de Toulouse (UPS, INP) , , ,"
+        ]
+      },
+      {
+        "name": "Rafał Bielas",
+        "orcid": "https://orcid.org/0000-0002-5129-063X",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "CNRS & Université de Toulouse (UPS, INP) , , ,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "CNRS & Université de Toulouse (UPS, INP) , , ,"
+        ]
+      },
+      {
+        "name": "Nagham Mawassy",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "CNRS & Université de Toulouse (UPS, INP) , , ,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "CNRS & Université de Toulouse (UPS, INP) , , ,"
+        ]
+      },
+      {
+        "name": "Jean François Meunier",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "CNRS & Université de Toulouse (UPS, INP) , , ,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "CNRS & Université de Toulouse (UPS, INP) , , ,"
+        ]
+      },
+      {
+        "name": "Lionel Salmon",
+        "orcid": "https://orcid.org/0000-0002-8064-8960",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "CNRS & Université de Toulouse (UPS, INP) , , ,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "CNRS & Université de Toulouse (UPS, INP) , , ,"
+        ]
+      },
+      {
+        "name": "Azzedine Bousseksou",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "CNRS & Université de Toulouse (UPS, INP) , , ,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "CNRS & Université de Toulouse (UPS, INP) , , ,"
+        ]
+      }
+    ],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2637-6105"
+    ],
+    "issn_l": "",
+    "publisher": "American Chemical Society (ACS)",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S4210221646",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210221646",
+      "issn_l": "2637-6105",
+      "issn": [
+        "2637-6105"
+      ],
+      "type": "journal",
+      "host_organization_name": "American Chemical Society",
+      "works_count": 7946,
+      "cited_by_count": 105523,
+      "two_year_mean_citedness": 5.057156696536691,
+      "h_index": 85,
+      "i10_index": 3410,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 5.057156696536691,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 2",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - 4D Printing of Ionic Liquid-Based Acrylate-Spin Crossover Composite Resins is a 2026 paper from ACS Applied Polymer Materials about 4D printing and DLP.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to 4D printing and DLP.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for 4D printing and DLP; current relevance score is 5/10.",
+    "relevance_note_en": "Relevant to the tracker through 4D printing and DLP; score: 5/10.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-09-25",
+    "id": "10.1021/acsapm.6c02456"
   },
   "10.1002/adma.202516070": {
     "author_details": [
@@ -32553,124 +32712,5 @@
     "last_seen_in_crossref_run": "2026-09-25",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.54691/f83ht194"
-  },
-  "10.1089/3dp.2023.0325": {
-    "author_details": [
-      {
-        "name": "Santiago Ochoa",
-        "orcid": "https://orcid.org/0000-0002-0066-9295",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "New Materials and Transformation Processes Research Group GiMaT, Universidad Politécnica Salesiana, Cuenca, Ecuador."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "New Materials and Transformation Processes Research Group GiMaT, Universidad Politécnica Salesiana, Cuenca, Ecuador."
-        ]
-      },
-      {
-        "name": "Santiago Ferrándiz",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "ITM, Plaça Ferrándiz i Carbonell, Universitat Politècnica de València, s/n, Alcoi, Spain."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "ITM, Plaça Ferrándiz i Carbonell, Universitat Politècnica de València, s/n, Alcoi, Spain."
-        ]
-      },
-      {
-        "name": "Luis Garzón",
-        "orcid": "https://orcid.org/0000-0001-6700-9788",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "New Materials and Transformation Processes Research Group GiMaT, Universidad Politécnica Salesiana, Cuenca, Ecuador."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "New Materials and Transformation Processes Research Group GiMaT, Universidad Politécnica Salesiana, Cuenca, Ecuador."
-        ]
-      },
-      {
-        "name": "Christian Cobos",
-        "orcid": "https://orcid.org/0000-0002-1254-1205",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "New Materials and Transformation Processes Research Group GiMaT, Universidad Politécnica Salesiana, Cuenca, Ecuador."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "New Materials and Transformation Processes Research Group GiMaT, Universidad Politécnica Salesiana, Cuenca, Ecuador."
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2329-7662",
-      "2329-7670"
-    ],
-    "issn_l": "",
-    "publisher": "SAGE Publications",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4401487253",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S4210174904",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S4210174904",
-      "issn_l": "2329-7662",
-      "issn": [
-        "2329-7662",
-        "2329-7670"
-      ],
-      "type": "journal",
-      "host_organization_name": "Mary Ann Liebert, Inc.",
-      "works_count": 768,
-      "cited_by_count": 14262,
-      "two_year_mean_citedness": 2.4384615384615387,
-      "h_index": 55,
-      "i10_index": 325,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Core manufacturing journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 2.4384615384615387,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 3",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - The study focuses on creating digital twins for 3D-printed parts using G-code reverse engineering.\n2. Problem - Understanding the mechanical behavior of 3D-printed components is essential for effective finite element analysis.\n3. Method - The authors developed a method to reverse engineer G-code to create digital twins and performed tensile tests on samples printed with varying nozzle diameters and layer heights.\n4. Key Result - The research found that larger nozzle diameters increased tensile strength and stiffness, with a 90% similarity between simulated and actual mechanical test results.\n5. Takeaway - This approach effectively predicts mechanical stresses in 3D-printed parts, enhancing the reliability of additive manufacturing simulations.",
-    "relevance_note_en": "The summary accurately reflects the core findings and methods of the paper.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-09-25",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1089/3dp.2023.0325"
   }
 }
