@@ -1046,7 +1046,7 @@
       },
       {
         "name": "Mohsen Khajehzadeh",
-        "orcid": "",
+        "orcid": "https://orcid.org/0000-0002-8358-6427",
         "position": "additional",
         "is_corresponding": false,
         "institutions": [
@@ -2242,7 +2242,7 @@
     "author_details": [
       {
         "name": "Sajjad Rajabi",
-        "orcid": "",
+        "orcid": "https://orcid.org/0009-0002-3984-8562",
         "position": "first",
         "is_corresponding": false,
         "institutions": [
@@ -2256,7 +2256,7 @@
       },
       {
         "name": "Alireza Khodabandeh",
-        "orcid": "",
+        "orcid": "https://orcid.org/0009-0004-7911-455X",
         "position": "additional",
         "is_corresponding": false,
         "institutions": [
@@ -2270,7 +2270,7 @@
       },
       {
         "name": "Masood Amirshami",
-        "orcid": "",
+        "orcid": "https://orcid.org/0009-0004-9310-4251",
         "position": "additional",
         "is_corresponding": false,
         "institutions": [
@@ -2284,7 +2284,7 @@
       },
       {
         "name": "Ardeshir Hemasian Etefagh",
-        "orcid": "",
+        "orcid": "https://orcid.org/0000-0002-4274-5380",
         "position": "additional",
         "is_corresponding": false,
         "institutions": [
@@ -2298,7 +2298,7 @@
       },
       {
         "name": "Mohsen Khajehzadeh",
-        "orcid": "",
+        "orcid": "https://orcid.org/0000-0002-8358-6427",
         "position": "additional",
         "is_corresponding": false,
         "institutions": [
@@ -16469,7 +16469,7 @@
     "author_details": [
       {
         "name": "Mathias Fleisch",
-        "orcid": "",
+        "orcid": "https://orcid.org/0000-0002-9715-5409",
         "position": "first",
         "is_corresponding": false,
         "institutions": [
@@ -16525,7 +16525,7 @@
       },
       {
         "name": "Michael Berer",
-        "orcid": "",
+        "orcid": "https://orcid.org/0000-0001-8863-2667",
         "position": "additional",
         "is_corresponding": false,
         "institutions": [
@@ -30100,7 +30100,7 @@
     "publisher": "Springer Science and Business Media LLC",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7214282231",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S77056576",
     "venue_metrics": {
@@ -55157,7 +55157,7 @@
     "author_details": [
       {
         "name": "Rijie Zhao",
-        "orcid": "",
+        "orcid": "https://orcid.org/0000-0002-6814-353X",
         "position": "first",
         "is_corresponding": false,
         "institutions": [
@@ -55171,7 +55171,7 @@
       },
       {
         "name": "Chunbin Li",
-        "orcid": "",
+        "orcid": "https://orcid.org/0009-0009-4960-4618",
         "position": "additional",
         "is_corresponding": false,
         "institutions": [
@@ -55213,7 +55213,7 @@
       },
       {
         "name": "Tingting Yang",
-        "orcid": "",
+        "orcid": "https://orcid.org/0000-0003-4992-8208",
         "position": "additional",
         "is_corresponding": false,
         "institutions": [
@@ -89396,7 +89396,7 @@
     "publisher": "American Association for the Advancement of Science (AAAS)",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7214368390",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2737427234",
     "venue_metrics": {
@@ -94075,9 +94075,76 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Stefan Zechel",
+        "openalex_author_id": "https://openalex.org/A5004949170",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Helmholtz Institute Jena",
+            "ror": "https://ror.org/02rzw6h69",
+            "country_code": "DE",
+            "type": "facility"
+          },
+          {
+            "name": "Helmholtz-Zentrum Berlin für Materialien und Energie",
+            "ror": "https://ror.org/02aj13c28",
+            "country_code": "DE",
+            "type": "facility"
+          },
+          {
+            "name": "Friedrich Schiller University Jena",
+            "ror": "https://ror.org/05qpz1x62",
+            "country_code": "DE",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Helmholtz Zentrum Berlin Für Materialien und Energie (HZB)  Berlin Germany",
+          "Helmholtz‐Institute for Polymers in Energy Applications Jena (HIPOLE Jena)  Jena Germany",
+          "Jena Center For Soft Matter (JCSM) Friedrich Schiller University Jena  Jena Germany",
+          "Laboratory of Organic and Macromolecular Chemistry (IOMC) Friedrich Schiller University Jena  Jena Germany"
+        ]
+      },
+      {
+        "name": "Ulrich S. Schubert",
+        "openalex_author_id": "https://openalex.org/A5075012306",
+        "orcid": "https://orcid.org/0000-0003-4978-4670",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Helmholtz Institute Jena",
+            "ror": "https://ror.org/02rzw6h69",
+            "country_code": "DE",
+            "type": "facility"
+          },
+          {
+            "name": "Helmholtz-Zentrum Berlin für Materialien und Energie",
+            "ror": "https://ror.org/02aj13c28",
+            "country_code": "DE",
+            "type": "facility"
+          },
+          {
+            "name": "Friedrich Schiller University Jena",
+            "ror": "https://ror.org/05qpz1x62",
+            "country_code": "DE",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Helmholtz Zentrum Berlin Für Materialien und Energie (HZB)  Berlin Germany",
+          "Helmholtz‐Institute for Polymers in Energy Applications Jena (HIPOLE Jena)  Jena Germany",
+          "Jena Center For Soft Matter (JCSM) Friedrich Schiller University Jena  Jena Germany",
+          "Laboratory of Organic and Macromolecular Chemistry (IOMC) Friedrich Schiller University Jena  Jena Germany"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Advanced Functional Materials",
     "doi": "10.1002/adfm.78393",
@@ -94097,8 +94164,8 @@
     "issn_l": "",
     "publisher": "Wiley",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7214338001",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S135204980",
     "venue_metrics": {
@@ -96898,69 +96965,9 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [
-      {
-        "name": "Ricky D. Wildman",
-        "openalex_author_id": "https://openalex.org/A5008929056",
-        "orcid": "https://orcid.org/0000-0003-2329-8471",
-        "position": "middle",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "University of Nottingham",
-            "ror": "https://ror.org/01ee9ar58",
-            "country_code": "GB",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Centre of Additive Manufacturing, Faculty of Engineering, Engineering, University Park, University of Nottingham, Nottingham, NG7 2RD, UK. ricky.wildman@nottingham.ac.uk",
-          "Department of Chemical and Environmental Engineering, Faculty of Engineering, University Park, University of Nottingham, Nottingham, NG7 2RD, UK. ricky.wildman@nottingham.ac.uk",
-          "University of Nottingham"
-        ]
-      },
-      {
-        "name": "Hayden Taylor",
-        "openalex_author_id": "https://openalex.org/A5060055066",
-        "orcid": "https://orcid.org/0000-0001-9810-6505",
-        "position": "middle",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "University of California, Berkeley",
-            "ror": "https://ror.org/01an7q238",
-            "country_code": "US",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Dept. of Mechanical Engineering, University of California, Berkeley, CA, USA. hkt@berkeley.edu",
-          "University of California, Berkeley"
-        ]
-      },
-      {
-        "name": "Derek J. Irvine",
-        "openalex_author_id": "https://openalex.org/A5064718443",
-        "orcid": "https://orcid.org/0000-0003-1461-9851",
-        "position": "last",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "University of Nottingham",
-            "ror": "https://ror.org/01ee9ar58",
-            "country_code": "GB",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Centre of Additive Manufacturing, Faculty of Engineering, Engineering, University Park, University of Nottingham, Nottingham, NG7 2RD, UK. derek.irvine@nottingham.ac.uk",
-          "Department of Chemical and Environmental Engineering, Faculty of Engineering, University Park, University of Nottingham, Nottingham, NG7 2RD, UK. derek.irvine@nottingham.ac.uk",
-          "University of Nottingham"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
     "year": 2026,
     "venue": "Nature Communications",
     "doi": "10.1038/s41467-026-73456-8",
@@ -96979,8 +96986,8 @@
     "issn_l": "",
     "publisher": "Springer Science and Business Media LLC",
     "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4412585581",
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "https://openalex.org/W7162500732",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S64187185",
     "venue_metrics": {
@@ -120518,7 +120525,7 @@
     "publisher": "Royal Society of Chemistry (RSC)",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "https://openalex.org/W7115907602",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7213649507",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S4210182508",
     "venue_metrics": {
@@ -123693,7 +123700,7 @@
     "publisher": "American Chemical Society (ACS)",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7214306198",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S4210221646",
     "venue_metrics": {
@@ -177647,10 +177654,10 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-24",
-    "last_updated": "2026-09-25",
+    "last_updated": "2026-09-26",
     "is_weekly_new": false,
-    "last_seen_in_crossref_run": "2026-09-25",
-    "not_seen_in_latest_crossref_run": true,
+    "last_seen_in_crossref_run": "2026-09-26",
+    "not_seen_in_latest_crossref_run": false,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 3.7044257112750265,
