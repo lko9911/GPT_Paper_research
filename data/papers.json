@@ -2786,7 +2786,7 @@
     "corresponding_authors": [
       {
         "name": "Jianguang Fang",
-        "openalex_author_id": "https://openalex.org/A5125136724",
+        "openalex_author_id": "https://openalex.org/A5009826094",
         "orcid": "https://orcid.org/0000-0003-0119-6108",
         "position": "last",
         "is_corresponding": true,
@@ -4927,8 +4927,8 @@
     "corresponding_authors": [
       {
         "name": "Ke Huang",
-        "openalex_author_id": "https://openalex.org/A5124731291",
-        "orcid": null,
+        "openalex_author_id": "https://openalex.org/A5034412866",
+        "orcid": "https://orcid.org/0000-0002-0741-3188",
         "position": "last",
         "is_corresponding": true,
         "institutions": [
@@ -5325,7 +5325,7 @@
     "corresponding_authors": [
       {
         "name": "Zhengcai Zhao",
-        "openalex_author_id": "https://openalex.org/A5102625450",
+        "openalex_author_id": "https://openalex.org/A5090218524",
         "orcid": "https://orcid.org/0000-0003-3614-9627",
         "position": "middle",
         "is_corresponding": true,
@@ -5461,8 +5461,8 @@
     ],
     "corresponding_authors": [
       {
-        "name": "G. Jeffrey Snyder",
-        "openalex_author_id": "https://openalex.org/A5135325517",
+        "name": "Gerald Jeffrey Snyder",
+        "openalex_author_id": "https://openalex.org/A5049121943",
         "orcid": "https://orcid.org/0000-0003-1414-8682",
         "position": "first",
         "is_corresponding": true,
@@ -5966,7 +5966,7 @@
     "corresponding_authors": [
       {
         "name": "Muhammad Hassan",
-        "openalex_author_id": "https://openalex.org/A5124470681",
+        "openalex_author_id": "https://openalex.org/A5032378832",
         "orcid": "https://orcid.org/0000-0002-5683-4819",
         "position": "first",
         "is_corresponding": true,
@@ -6561,7 +6561,7 @@
       {
         "name": "Qing Chang",
         "openalex_author_id": "https://openalex.org/A5136776360",
-        "orcid": null,
+        "orcid": "https://orcid.org/0000-0003-3744-1371",
         "position": "last",
         "is_corresponding": true,
         "institutions": [
@@ -14251,6 +14251,145 @@
     "summary_model": "qwen2.5:7b"
   },
   {
+    "id": "10.1038/s44172-026-00787-1",
+    "title": "Inverse design of metamaterials for wideband multi-beam former",
+    "authors": [
+      "Ilir Gashi",
+      "Scott Twiddy",
+      "Zachary Nelson",
+      "Stefano Maci",
+      "Matteo Albani"
+    ],
+    "author_details": [
+      {
+        "name": "Ilir Gashi",
+        "orcid": "https://orcid.org/0000-0003-4462-7350",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Scott Twiddy",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Zachary Nelson",
+        "orcid": "https://orcid.org/0000-0002-3949-682X",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Stefano Maci",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Matteo Albani",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "year": 2026,
+    "venue": "Communications Engineering",
+    "doi": "10.1038/s44172-026-00787-1",
+    "url": "https://doi.org/10.1038/s44172-026-00787-1",
+    "source": [
+      "Crossref"
+    ],
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2731-3395"
+    ],
+    "issn_l": "",
+    "publisher": "Springer Science and Business Media LLC",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S4387280558",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4387280558",
+      "issn_l": "2731-3395",
+      "issn": [
+        "2731-3395"
+      ],
+      "type": "journal",
+      "host_organization_name": null,
+      "works_count": 733,
+      "cited_by_count": 6575,
+      "two_year_mean_citedness": 6.40418118466899,
+      "h_index": 36,
+      "i10_index": 224,
+      "is_core": true,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 6.40418118466899,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "publication_type": "journal_article",
+    "venue_trust": "trusted",
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "is_core_venue": false,
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "categories": [
+      "Material Distribution Optimization",
+      "AI and Machine Learning for AM"
+    ],
+    "tags": [
+      "Metamaterials"
+    ],
+    "relevance_score": 7,
+    "curation_priority": false,
+    "ai_summary_en": "1. Topic - Inverse design of metamaterials for wideband multi-beam former is a 2026 paper from Communications Engineering about Metamaterials.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Metamaterials.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Metamaterials; current relevance score is 7/10.",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_en": "Relevant to the tracker through Metamaterials; score: 7/10.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-09-26",
+    "last_updated": "2026-09-26",
+    "is_weekly_new": true,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-09-26",
+    "openalex_venue_rank": "Rank 1",
+    "openalex_venue_rank_number": 1,
+    "openalex_venue_rank_score": 6.40418118466899,
+    "openalex_venue_rank_percentile": 0.7955,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+  },
+  {
     "id": "10.1007/s10845-025-02606-4",
     "title": "Intelligent real-time tool life prediction for a digital twin framework",
     "authors": [
@@ -16151,7 +16290,7 @@
       },
       {
         "name": "Pai Zheng",
-        "openalex_author_id": "https://openalex.org/A5122365829",
+        "openalex_author_id": "https://openalex.org/A5079101040",
         "orcid": "https://orcid.org/0000-0002-2329-8634",
         "position": "last",
         "is_corresponding": true,
@@ -20174,8 +20313,8 @@
     "corresponding_authors": [
       {
         "name": "Neng Wan",
-        "openalex_author_id": "https://openalex.org/A5092470902",
-        "orcid": "https://orcid.org/0000-0002-9895-5205",
+        "openalex_author_id": "https://openalex.org/A5101443510",
+        "orcid": "https://orcid.org/0000-0003-0939-1071",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -23018,7 +23157,7 @@
     "corresponding_authors": [
       {
         "name": "Qinglin Qi",
-        "openalex_author_id": "https://openalex.org/A5130780337",
+        "openalex_author_id": "https://openalex.org/A5038939124",
         "orcid": "https://orcid.org/0000-0002-3247-0440",
         "position": "middle",
         "is_corresponding": true,
@@ -23197,8 +23336,8 @@
       },
       {
         "name": "Lin Hua",
-        "openalex_author_id": "https://openalex.org/A5134118392",
-        "orcid": null,
+        "openalex_author_id": "https://openalex.org/A5100393800",
+        "orcid": "https://orcid.org/0000-0003-2993-3333",
         "position": "last",
         "is_corresponding": true,
         "institutions": [
@@ -23907,8 +24046,8 @@
     "corresponding_authors": [
       {
         "name": "Zhigang Xu",
-        "openalex_author_id": "https://openalex.org/A5127125389",
-        "orcid": "https://orcid.org/0000-0001-8056-2174",
+        "openalex_author_id": "https://openalex.org/A5123347232",
+        "orcid": null,
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -24410,8 +24549,8 @@
     "corresponding_authors": [
       {
         "name": "Haihong Huang",
-        "openalex_author_id": "https://openalex.org/A5126878991",
-        "orcid": null,
+        "openalex_author_id": "https://openalex.org/A5002877441",
+        "orcid": "https://orcid.org/0000-0001-9382-1059",
         "position": "last",
         "is_corresponding": true,
         "institutions": [
@@ -29014,9 +29153,9 @@
     "corresponding_authors": [
       {
         "name": "Assia Belbachir",
-        "openalex_author_id": "https://openalex.org/A5051482797",
+        "openalex_author_id": null,
         "orcid": "https://orcid.org/0000-0002-1294-8478",
-        "position": "first",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -29708,8 +29847,8 @@
         ]
       },
       {
-        "name": "Chaoxing Wu",
-        "openalex_author_id": "https://openalex.org/A5121083202",
+        "name": "Chaoxing Wu",
+        "openalex_author_id": "https://openalex.org/A5123984803",
         "orcid": "https://orcid.org/0000-0002-1231-2699",
         "position": "middle",
         "is_corresponding": true,
@@ -31677,7 +31816,7 @@
       },
       {
         "name": "J.P. Oliveira",
-        "openalex_author_id": "https://openalex.org/A5125925083",
+        "openalex_author_id": "https://openalex.org/A5100674390",
         "orcid": "https://orcid.org/0000-0001-6906-1870",
         "position": "last",
         "is_corresponding": true,
@@ -36802,8 +36941,8 @@
       },
       {
         "name": "Yongkang Lu",
-        "openalex_author_id": "https://openalex.org/A5122104768",
-        "orcid": null,
+        "openalex_author_id": "https://openalex.org/A5061148194",
+        "orcid": "https://orcid.org/0000-0002-2906-5591",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -36821,7 +36960,7 @@
       },
       {
         "name": "Pai Zheng",
-        "openalex_author_id": "https://openalex.org/A5126263924",
+        "openalex_author_id": "https://openalex.org/A5079101040",
         "orcid": "https://orcid.org/0000-0002-2329-8634",
         "position": "middle",
         "is_corresponding": true,
@@ -37493,8 +37632,8 @@
       },
       {
         "name": "Antonella Petrillo",
-        "openalex_author_id": "https://openalex.org/A5129663494",
-        "orcid": null,
+        "openalex_author_id": "https://openalex.org/A5023670492",
+        "orcid": "https://orcid.org/0000-0002-5154-5428",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -41841,8 +41980,8 @@
       },
       {
         "name": "Qingxian Hu",
-        "openalex_author_id": "https://openalex.org/A5121147389",
-        "orcid": null,
+        "openalex_author_id": "https://openalex.org/A5088755755",
+        "orcid": "https://orcid.org/0000-0003-2243-6713",
         "position": "last",
         "is_corresponding": true,
         "institutions": [
@@ -45747,7 +45886,7 @@
     "corresponding_authors": [
       {
         "name": "Qiguang He",
-        "openalex_author_id": "https://openalex.org/A5147538109",
+        "openalex_author_id": "https://openalex.org/A5136804525",
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -45765,8 +45904,8 @@
       },
       {
         "name": "Xu Song",
-        "openalex_author_id": "https://openalex.org/A5128702882",
-        "orcid": null,
+        "openalex_author_id": "https://openalex.org/A5126365672",
+        "orcid": "https://orcid.org/0000-0001-9811-9883",
         "position": "last",
         "is_corresponding": true,
         "institutions": [
@@ -47028,8 +47167,8 @@
     "corresponding_authors": [
       {
         "name": "Huiwen Xiong",
-        "openalex_author_id": "https://openalex.org/A5123942656",
-        "orcid": null,
+        "openalex_author_id": "https://openalex.org/A5040415968",
+        "orcid": "https://orcid.org/0000-0002-8291-5612",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -47045,7 +47184,7 @@
         ]
       },
       {
-        "name": "Xiao Kang",
+        "name": "Xiao Ling Kang",
         "openalex_author_id": "https://openalex.org/A5071074675",
         "orcid": "https://orcid.org/0000-0002-0614-8554",
         "position": "middle",
@@ -48340,8 +48479,8 @@
     "corresponding_authors": [
       {
         "name": "Huiwen Xiong",
-        "openalex_author_id": "https://openalex.org/A5135569395",
-        "orcid": null,
+        "openalex_author_id": "https://openalex.org/A5040415968",
+        "orcid": "https://orcid.org/0000-0002-8291-5612",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -49236,8 +49375,8 @@
       },
       {
         "name": "Xu Song",
-        "openalex_author_id": "https://openalex.org/A5128702882",
-        "orcid": null,
+        "openalex_author_id": "https://openalex.org/A5126365672",
+        "orcid": "https://orcid.org/0000-0001-9811-9883",
         "position": "last",
         "is_corresponding": true,
         "institutions": [
@@ -53381,8 +53520,8 @@
     "corresponding_authors": [
       {
         "name": "Jianping Zhou",
-        "openalex_author_id": "https://openalex.org/A5137726921",
-        "orcid": null,
+        "openalex_author_id": "https://openalex.org/A5101644832",
+        "orcid": "https://orcid.org/0000-0002-7468-7891",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -53399,7 +53538,7 @@
       },
       {
         "name": "Yang Ding",
-        "openalex_author_id": "https://openalex.org/A5128366009",
+        "openalex_author_id": "https://openalex.org/A5124839257",
         "orcid": "https://orcid.org/0000-0003-2894-7303",
         "position": "last",
         "is_corresponding": true,
@@ -55029,8 +55168,8 @@
       },
       {
         "name": "Shoufeng Yang",
-        "openalex_author_id": "https://openalex.org/A5140690591",
-        "orcid": null,
+        "openalex_author_id": "https://openalex.org/A5122400478",
+        "orcid": "https://orcid.org/0000-0002-3888-3211",
         "position": "last",
         "is_corresponding": true,
         "institutions": [
@@ -59944,7 +60083,7 @@
     "corresponding_authors": [
       {
         "name": "Harpreet Singh",
-        "openalex_author_id": "https://openalex.org/A5146649085",
+        "openalex_author_id": "https://openalex.org/A5128307568",
         "orcid": null,
         "position": "last",
         "is_corresponding": true,
@@ -65639,8 +65778,8 @@
       },
       {
         "name": "Tongxiang Fan",
-        "openalex_author_id": "https://openalex.org/A5120983215",
-        "orcid": "https://orcid.org/0000-0003-4255-5138",
+        "openalex_author_id": "https://openalex.org/A5070670554",
+        "orcid": "https://orcid.org/0000-0002-4591-6093",
         "position": "last",
         "is_corresponding": true,
         "institutions": [
@@ -78527,9 +78666,9 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Zhenyu James Kong",
-        "openalex_author_id": "https://openalex.org/A5123777382",
-        "orcid": null,
+        "name": "Zhenyu Kong",
+        "openalex_author_id": "https://openalex.org/A5085867168",
+        "orcid": "https://orcid.org/0000-0002-8827-502X",
         "position": "last",
         "is_corresponding": true,
         "institutions": [
@@ -82574,7 +82713,7 @@
     "corresponding_authors": [
       {
         "name": "Andrij Pich",
-        "openalex_author_id": "https://openalex.org/A5130055088",
+        "openalex_author_id": "https://openalex.org/A5009494312",
         "orcid": "https://orcid.org/0000-0003-1825-7798",
         "position": "last",
         "is_corresponding": true,
@@ -90814,7 +90953,7 @@
     "corresponding_authors": [
       {
         "name": "Guiwei Li",
-        "openalex_author_id": "https://openalex.org/A5123492672",
+        "openalex_author_id": "https://openalex.org/A5078305789",
         "orcid": "https://orcid.org/0000-0001-8418-0018",
         "position": "first",
         "is_corresponding": true,
@@ -93797,7 +93936,7 @@
     "corresponding_authors": [
       {
         "name": "Zeqi Hu",
-        "openalex_author_id": "https://openalex.org/A5124696024",
+        "openalex_author_id": "https://openalex.org/A5008676521",
         "orcid": "https://orcid.org/0000-0002-0559-3824",
         "position": "middle",
         "is_corresponding": true,
@@ -95410,8 +95549,8 @@
     ],
     "corresponding_authors": [
       {
-        "name": "M. M. Elsawy",
-        "openalex_author_id": "https://openalex.org/A5127931131",
+        "name": "Maha Mohammed Elsawy",
+        "openalex_author_id": "https://openalex.org/A5032638669",
         "orcid": "https://orcid.org/0000-0001-8751-3885",
         "position": "first",
         "is_corresponding": true,
@@ -96387,7 +96526,7 @@
       {
         "name": "Tingrui Pan",
         "openalex_author_id": "https://openalex.org/A5126256478",
-        "orcid": null,
+        "orcid": "https://orcid.org/0000-0002-8851-0667",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -97998,9 +98137,34 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Ginu Rajan",
+        "openalex_author_id": "https://openalex.org/A5045313379",
+        "orcid": "https://orcid.org/0000-0001-6152-6848",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Cardiff University",
+            "ror": "https://ror.org/03kk7td41",
+            "country_code": "GB",
+            "type": "education"
+          },
+          {
+            "name": "Cardiff Metropolitan University",
+            "ror": "https://ror.org/00bqvf857",
+            "country_code": "GB",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Centre for Engineering Research in Intelligent Sensors and Systems, Cardiff School of Technologies, Cardiff Metropolitan University, Cardiff, UK"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "The International Journal of Advanced Manufacturing Technology",
     "doi": "10.1007/s00170-026-19192-1",
@@ -98020,7 +98184,7 @@
     "issn_l": "",
     "publisher": "Springer Science and Business Media LLC",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7214146899",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S77056576",
@@ -99679,8 +99843,8 @@
       },
       {
         "name": "Fei Zhang",
-        "openalex_author_id": "https://openalex.org/A5135040441",
-        "orcid": null,
+        "openalex_author_id": "https://openalex.org/A5100412183",
+        "orcid": "https://orcid.org/0000-0002-6044-8339",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -100714,8 +100878,8 @@
       },
       {
         "name": "Ren Liu",
-        "openalex_author_id": "https://openalex.org/A5121340048",
-        "orcid": null,
+        "openalex_author_id": "https://openalex.org/A5109301878",
+        "orcid": "https://orcid.org/0000-0002-8252-9180",
         "position": "last",
         "is_corresponding": true,
         "institutions": [
@@ -101489,7 +101653,7 @@
     "corresponding_authors": [
       {
         "name": "Guiwei Li",
-        "openalex_author_id": "https://openalex.org/A5123492672",
+        "openalex_author_id": "https://openalex.org/A5078305789",
         "orcid": "https://orcid.org/0000-0001-8418-0018",
         "position": "first",
         "is_corresponding": true,
@@ -107548,7 +107712,7 @@
       },
       {
         "name": "Fanbin Meng",
-        "openalex_author_id": "https://openalex.org/A5137938305",
+        "openalex_author_id": "https://openalex.org/A5087459629",
         "orcid": "https://orcid.org/0000-0002-7956-1278",
         "position": "last",
         "is_corresponding": true,
@@ -107756,9 +107920,9 @@
       },
       {
         "name": "Luquan Ren",
-        "openalex_author_id": "https://openalex.org/A5133795267",
+        "openalex_author_id": "https://openalex.org/A5147005198",
         "orcid": null,
-        "position": "middle",
+        "position": "last",
         "is_corresponding": true,
         "institutions": [
           {
@@ -111357,8 +111521,8 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Cyrille Boyer",
-        "openalex_author_id": "https://openalex.org/A5129463693",
+        "name": "Cyrille Andre Boyer",
+        "openalex_author_id": "https://openalex.org/A5001395511",
         "orcid": "https://orcid.org/0000-0002-4564-4702",
         "position": "last",
         "is_corresponding": true,
@@ -113206,8 +113370,8 @@
     "corresponding_authors": [
       {
         "name": "Shuai Long",
-        "openalex_author_id": "https://openalex.org/A5123046214",
-        "orcid": null,
+        "openalex_author_id": "https://openalex.org/A5080453941",
+        "orcid": "https://orcid.org/0000-0002-6395-4026",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -113224,7 +113388,7 @@
       },
       {
         "name": "Peng Peng",
-        "openalex_author_id": "https://openalex.org/A5132705178",
+        "openalex_author_id": "https://openalex.org/A5100416320",
         "orcid": "https://orcid.org/0000-0002-1862-4968",
         "position": "last",
         "is_corresponding": true,
@@ -115649,8 +115813,8 @@
         ]
       },
       {
-        "name": "Bhavesh Kanabar",
-        "openalex_author_id": "https://openalex.org/A5116085751",
+        "name": "Bhavesh K. Kanabar",
+        "openalex_author_id": "https://openalex.org/A5106639355",
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -116504,7 +116668,7 @@
         "name": "Erin Lavik",
         "openalex_author_id": "https://openalex.org/A5079335476",
         "orcid": "https://orcid.org/0000-0002-0644-744X",
-        "position": "last",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -116974,8 +117138,8 @@
     "corresponding_authors": [
       {
         "name": "Lin Xu",
-        "openalex_author_id": "https://openalex.org/A5136760007",
-        "orcid": "https://orcid.org/0000-0002-9037-983X",
+        "openalex_author_id": "https://openalex.org/A5134818254",
+        "orcid": null,
         "position": "last",
         "is_corresponding": true,
         "institutions": [
@@ -117805,6 +117969,136 @@
     "summary_model": "qwen2.5:7b"
   },
   {
+    "id": "10.1016/j.eurpolymj.2026.115117",
+    "title": "4D-printed soft materials with shape morphing ability and non-flamability",
+    "authors": [
+      "Amul Jain",
+      "Sudipta Paul",
+      "Bhanendra Sahu",
+      "Sanjib Banerjee"
+    ],
+    "author_details": [
+      {
+        "name": "Amul Jain",
+        "orcid": "https://orcid.org/0000-0002-8652-2752",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Sudipta Paul",
+        "orcid": "https://orcid.org/0009-0009-6670-8021",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Bhanendra Sahu",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Sanjib Banerjee",
+        "orcid": "https://orcid.org/0000-0003-4841-4408",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "year": 2026,
+    "venue": "European Polymer Journal",
+    "doi": "10.1016/j.eurpolymj.2026.115117",
+    "url": "https://doi.org/10.1016/j.eurpolymj.2026.115117",
+    "source": [
+      "Crossref"
+    ],
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "0014-3057"
+    ],
+    "issn_l": "",
+    "publisher": "Elsevier BV",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S135472351",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S135472351",
+      "issn_l": "0014-3057",
+      "issn": [
+        "0014-3057",
+        "1873-1945"
+      ],
+      "type": "journal",
+      "host_organization_name": "Elsevier BV",
+      "works_count": 19730,
+      "cited_by_count": 535888,
+      "two_year_mean_citedness": 6.122129436325679,
+      "h_index": 206,
+      "i10_index": 12139,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 6.122129436325679,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "publication_type": "journal_article",
+    "venue_trust": "trusted",
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "is_core_venue": false,
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "categories": [
+      "Multi-material AM"
+    ],
+    "tags": [
+      "4D printing"
+    ],
+    "relevance_score": 5,
+    "curation_priority": false,
+    "ai_summary_en": "1. Topic - 4D-printed soft materials with shape morphing ability and non-flamability is a 2026 paper from European Polymer Journal about 4D printing.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to 4D printing.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for 4D printing; current relevance score is 5/10.",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_en": "Relevant to the tracker through 4D printing; score: 5/10.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-09-26",
+    "last_updated": "2026-09-26",
+    "is_weekly_new": true,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-09-26",
+    "openalex_venue_rank": "Rank 1",
+    "openalex_venue_rank_number": 1,
+    "openalex_venue_rank_score": 6.122129436325679,
+    "openalex_venue_rank_percentile": 0.7805,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+  },
+  {
     "id": "10.1002/adfm.202524106",
     "title": "4D-Printed “Ori-Lattice” With Ultrahigh Foldability and Load-Bearing Capacity",
     "authors": [
@@ -117934,8 +118228,8 @@
     "corresponding_authors": [
       {
         "name": "Zeang Zhao",
-        "openalex_author_id": "https://openalex.org/A5133950371",
-        "orcid": "https://orcid.org/0009-0008-7171-6942",
+        "openalex_author_id": "https://openalex.org/A5121365596",
+        "orcid": null,
         "position": "first",
         "is_corresponding": true,
         "institutions": [
@@ -121424,7 +121718,7 @@
     "corresponding_authors": [
       {
         "name": "Anfu Guo",
-        "openalex_author_id": "https://openalex.org/A5121331498",
+        "openalex_author_id": "https://openalex.org/A5082140833",
         "orcid": "https://orcid.org/0000-0001-5629-2098",
         "position": "middle",
         "is_corresponding": true,
@@ -122232,8 +122526,8 @@
       },
       {
         "name": "Hongbo Lan",
-        "openalex_author_id": "https://openalex.org/A5052517831",
-        "orcid": null,
+        "openalex_author_id": "https://openalex.org/A5101826596",
+        "orcid": "https://orcid.org/0000-0002-0959-5413",
         "position": "last",
         "is_corresponding": true,
         "institutions": [
@@ -122869,8 +123163,8 @@
         ]
       },
       {
-        "name": "C. Durga Prasad",
-        "openalex_author_id": "https://openalex.org/A5122957510",
+        "name": "Ch. Durga Prasad",
+        "openalex_author_id": "https://openalex.org/A5073176555",
         "orcid": "https://orcid.org/0000-0002-6632-0037",
         "position": "last",
         "is_corresponding": true,
@@ -123971,8 +124265,8 @@
         ]
       },
       {
-        "name": "L. Ren",
-        "openalex_author_id": "https://openalex.org/A5003419669",
+        "name": "Lei Ren",
+        "openalex_author_id": "https://openalex.org/A5126201977",
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -124018,7 +124312,7 @@
         "name": "Luquan Ren",
         "openalex_author_id": "https://openalex.org/A5147005198",
         "orcid": null,
-        "position": "last",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -125811,8 +126105,8 @@
       },
       {
         "name": "Hesheng Xia",
-        "openalex_author_id": "https://openalex.org/A5112324856",
-        "orcid": "https://orcid.org/0000-0003-2309-1403",
+        "openalex_author_id": "https://openalex.org/A5061800686",
+        "orcid": "https://orcid.org/0000-0001-8087-7272",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -126998,8 +127292,8 @@
     "corresponding_authors": [
       {
         "name": "Xiaoyong Tian",
-        "openalex_author_id": "https://openalex.org/A5122393027",
-        "orcid": null,
+        "openalex_author_id": "https://openalex.org/A5101419968",
+        "orcid": "https://orcid.org/0000-0002-9618-3272",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -127855,7 +128149,7 @@
     "corresponding_authors": [
       {
         "name": "Kenan Song",
-        "openalex_author_id": "https://openalex.org/A5138439499",
+        "openalex_author_id": "https://openalex.org/A5122347679",
         "orcid": null,
         "position": "last",
         "is_corresponding": true,
@@ -128121,7 +128415,7 @@
     "corresponding_authors": [
       {
         "name": "Zhendong Li",
-        "openalex_author_id": "https://openalex.org/A5136415839",
+        "openalex_author_id": "https://openalex.org/A5124054484",
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -145746,8 +146040,8 @@
     "corresponding_authors": [
       {
         "name": "Fei Tao",
-        "openalex_author_id": "https://openalex.org/A5138270045",
-        "orcid": null,
+        "openalex_author_id": "https://openalex.org/A5072705483",
+        "orcid": "https://orcid.org/0000-0002-9020-0633",
         "position": "first",
         "is_corresponding": true,
         "institutions": [
@@ -154656,8 +154950,8 @@
     "corresponding_authors": [
       {
         "name": "Aoming Zhang",
-        "openalex_author_id": null,
-        "orcid": null,
+        "openalex_author_id": "https://openalex.org/A5111021439",
+        "orcid": "https://orcid.org/0009-0000-1296-6484",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -170193,8 +170487,8 @@
       },
       {
         "name": "Haoqin Yang",
-        "openalex_author_id": "https://openalex.org/A5092006736",
-        "orcid": "https://orcid.org/0009-0000-2295-8058",
+        "openalex_author_id": "https://openalex.org/A5087313512",
+        "orcid": null,
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -177657,7 +177951,7 @@
     "last_updated": "2026-09-26",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-09-26",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 3.7044257112750265,
@@ -178032,7 +178326,7 @@
         "name": "Luquan Ren",
         "openalex_author_id": null,
         "orcid": null,
-        "position": "middle",
+        "position": "last",
         "is_corresponding": true,
         "institutions": [
           {
@@ -179520,7 +179814,7 @@
       {
         "name": "Emma Kanaganayagam",
         "openalex_author_id": "https://openalex.org/A5114982614",
-        "orcid": null,
+        "orcid": "https://orcid.org/0000-0001-9511-8586",
         "position": "first",
         "is_corresponding": true,
         "institutions": [
@@ -179891,8 +180185,8 @@
     "corresponding_authors": [
       {
         "name": "Zhijiang Wang",
-        "openalex_author_id": "https://openalex.org/A5108145919",
-        "orcid": null,
+        "openalex_author_id": "https://openalex.org/A5100653701",
+        "orcid": "https://orcid.org/0000-0002-3580-3976",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -191080,8 +191374,8 @@
     "corresponding_authors": [
       {
         "name": "Ning Li",
-        "openalex_author_id": "https://openalex.org/A5089190523",
-        "orcid": "https://orcid.org/0000-0002-7994-9504",
+        "openalex_author_id": null,
+        "orcid": null,
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -192200,7 +192494,7 @@
         ]
       },
       {
-        "name": "Robert Hernández Aguirresarobe",
+        "name": "Robert Aguirresarobe",
         "openalex_author_id": "https://openalex.org/A5032892633",
         "orcid": "https://orcid.org/0000-0001-9736-9098",
         "position": "middle",
@@ -192527,8 +192821,8 @@
     "corresponding_authors": [
       {
         "name": "Xinyu Wang",
-        "openalex_author_id": null,
-        "orcid": null,
+        "openalex_author_id": "https://openalex.org/A5100352846",
+        "orcid": "https://orcid.org/0009-0001-2925-1466",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -193697,7 +193991,7 @@
     "corresponding_authors": [
       {
         "name": "Abdolhamid Akbarzadeh",
-        "openalex_author_id": "https://openalex.org/A5015437588",
+        "openalex_author_id": "https://openalex.org/A5110802637",
         "orcid": "https://orcid.org/0000-0003-0097-0341",
         "position": "last",
         "is_corresponding": true,
@@ -216680,7 +216974,7 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Yuan Jin",
+        "name": "Yuan Qing Jin",
         "openalex_author_id": "https://openalex.org/A5101764943",
         "orcid": "https://orcid.org/0000-0003-3775-6162",
         "position": "first",
@@ -225091,7 +225385,7 @@
     "corresponding_authors": [
       {
         "name": "Abdolhamid Akbarzadeh",
-        "openalex_author_id": "https://openalex.org/A5015437588",
+        "openalex_author_id": "https://openalex.org/A5110802637",
         "orcid": "https://orcid.org/0000-0003-0097-0341",
         "position": "last",
         "is_corresponding": true,
@@ -235499,8 +235793,8 @@
     "corresponding_authors": [
       {
         "name": "Xinhua Xu",
-        "openalex_author_id": "https://openalex.org/A5103101571",
-        "orcid": "https://orcid.org/0000-0002-7864-3044",
+        "openalex_author_id": "https://openalex.org/A5100619101",
+        "orcid": "https://orcid.org/0000-0001-7795-4089",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -242105,8 +242399,8 @@
       },
       {
         "name": "Hongbo Lan",
-        "openalex_author_id": "https://openalex.org/A5052517831",
-        "orcid": null,
+        "openalex_author_id": "https://openalex.org/A5101826596",
+        "orcid": "https://orcid.org/0000-0002-0959-5413",
         "position": "last",
         "is_corresponding": true,
         "institutions": [
@@ -247396,7 +247690,7 @@
         ]
       },
       {
-        "name": "M.A. Elbestawi",
+        "name": "Mohamed A. Elbestawi",
         "openalex_author_id": "https://openalex.org/A5007111458",
         "orcid": "https://orcid.org/0000-0003-0982-6127",
         "position": "last",
@@ -249397,7 +249691,7 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Wei Fan",
+        "name": "Wei Haw Fan",
         "openalex_author_id": "https://openalex.org/A5080900528",
         "orcid": "https://orcid.org/0000-0003-0460-7021",
         "position": "middle",
@@ -253586,8 +253880,8 @@
       },
       {
         "name": "Yingjie Zhang",
-        "openalex_author_id": "https://openalex.org/A5147536693",
-        "orcid": null,
+        "openalex_author_id": "https://openalex.org/A5123335672",
+        "orcid": "https://orcid.org/0000-0003-3602-4533",
         "position": "last",
         "is_corresponding": true,
         "institutions": [
@@ -263177,7 +263471,7 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Ayşe Çelik Bedeloğlu",
+        "name": "Ayse Celik Bedeloglu",
         "openalex_author_id": "https://openalex.org/A5073361482",
         "orcid": "https://orcid.org/0000-0003-2960-5188",
         "position": "last",
@@ -266155,7 +266449,7 @@
     "last_updated": "2026-09-26",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-09-26",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 8.898073836276083,
@@ -268586,10 +268880,10 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Ratnesh Kumar Raj Singh",
-        "openalex_author_id": "https://openalex.org/A5066015004",
-        "orcid": "https://orcid.org/0000-0001-9377-6753",
-        "position": "middle",
+        "name": "Manish Pratap Singh",
+        "openalex_author_id": "https://openalex.org/A5021211339",
+        "orcid": "https://orcid.org/0000-0002-9530-2348",
+        "position": "first",
         "is_corresponding": true,
         "institutions": [
           {
@@ -270775,7 +271069,7 @@
         ]
       },
       {
-        "name": "Jin Tao Liang",
+        "name": "Liang Jin",
         "openalex_author_id": "https://openalex.org/A5011242155",
         "orcid": "https://orcid.org/0000-0003-4189-3776",
         "position": "last",
@@ -287342,7 +287636,7 @@
         "name": "Hao Zhang",
         "openalex_author_id": null,
         "orcid": null,
-        "position": "middle",
+        "position": "last",
         "is_corresponding": true,
         "institutions": [
           {
@@ -295986,7 +296280,7 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Henry Alonso Colorado",
+        "name": "Henry A. Colorado",
         "openalex_author_id": "https://openalex.org/A5076360098",
         "orcid": "https://orcid.org/0000-0003-4948-0482",
         "position": "last",
@@ -311088,9 +311382,9 @@
     ],
     "corresponding_authors": [
       {
-        "name": "David Tilve-Martinez",
-        "openalex_author_id": "https://openalex.org/A5063120952",
-        "orcid": null,
+        "name": "David Tilve-Martínez",
+        "openalex_author_id": "https://openalex.org/A5077256823",
+        "orcid": "https://orcid.org/0000-0002-5550-4631",
         "position": "first",
         "is_corresponding": true,
         "institutions": [
@@ -320816,7 +321110,7 @@
     "last_updated": "2026-09-26",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-09-26",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 3",
     "openalex_venue_rank_number": 3,
     "openalex_venue_rank_score": 2.43312101910828,
@@ -329893,8 +330187,8 @@
     "corresponding_authors": [
       {
         "name": "Shlomo Magdassi",
-        "openalex_author_id": "https://openalex.org/A5108907993",
-        "orcid": null,
+        "openalex_author_id": "https://openalex.org/A5001377522",
+        "orcid": "https://orcid.org/0000-0002-6794-0553",
         "position": "last",
         "is_corresponding": true,
         "institutions": [
