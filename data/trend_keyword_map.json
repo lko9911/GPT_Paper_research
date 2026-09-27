@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-27T07:59:21+00:00",
+  "updated_at": "2026-09-27T14:10:56+00:00",
   "source": "derived from titles, tags, AI Q5 summaries, relevance notes, and public metadata; abstract text is not published",
   "recent_basis": "publication year 2026, plus records explicitly marked weekly-new",
   "node_count": 30,
@@ -42,9 +42,9 @@
       "id": "machine-learning",
       "label": "Machine Learning",
       "group": "AI",
-      "count": 359,
-      "recent_count": 163,
-      "trend_score": 0.3584,
+      "count": 360,
+      "recent_count": 164,
+      "trend_score": 0.3603,
       "x": 620.0,
       "y": 68.0,
       "radius": 15.8
@@ -251,9 +251,9 @@
       "id": "closed-loop-control",
       "label": "Closed-loop Control",
       "group": "Automation",
-      "count": 42,
-      "recent_count": 22,
-      "trend_score": 0.0468,
+      "count": 43,
+      "recent_count": 23,
+      "trend_score": 0.0487,
       "x": 461.0,
       "y": 210.0,
       "radius": 10.0
@@ -273,23 +273,23 @@
       "id": "self-driving-lab",
       "label": "Self-driving Lab",
       "group": "AML",
-      "count": 25,
-      "recent_count": 20,
-      "trend_score": 0.0392,
+      "count": 26,
+      "recent_count": 21,
+      "trend_score": 0.0411,
       "x": 710.0,
       "y": 248.0,
-      "radius": 9.3
+      "radius": 9.4
     },
     {
       "id": "formulation-discovery",
       "label": "Formulation Discovery",
       "group": "AML",
-      "count": 25,
-      "recent_count": 19,
-      "trend_score": 0.0376,
+      "count": 26,
+      "recent_count": 20,
+      "trend_score": 0.0395,
       "x": 774.0,
       "y": 300.0,
-      "radius": 9.3
+      "radius": 9.4
     },
     {
       "id": "active-learning",
@@ -680,15 +680,21 @@
       "recent_count": 19
     },
     {
+      "source": "formulation-discovery",
+      "target": "machine-learning",
+      "count": 24,
+      "recent_count": 19
+    },
+    {
       "source": "additive-manufacturing",
       "target": "hydrogels",
       "count": 55,
       "recent_count": 18
     },
     {
-      "source": "formulation-discovery",
-      "target": "machine-learning",
-      "count": 23,
+      "source": "machine-learning",
+      "target": "self-driving-lab",
+      "count": 22,
       "recent_count": 18
     },
     {
@@ -722,12 +728,6 @@
       "recent_count": 17
     },
     {
-      "source": "machine-learning",
-      "target": "self-driving-lab",
-      "count": 21,
-      "recent_count": 17
-    },
-    {
       "source": "additive-manufacturing",
       "target": "lce",
       "count": 40,
@@ -748,8 +748,8 @@
     {
       "source": "formulation-discovery",
       "target": "self-driving-lab",
-      "count": 16,
-      "recent_count": 14
+      "count": 17,
+      "recent_count": 15
     },
     {
       "source": "additive-manufacturing",
@@ -773,6 +773,12 @@
       "source": "4d-printing",
       "target": "metamaterials",
       "count": 25,
+      "recent_count": 13
+    },
+    {
+      "source": "closed-loop-control",
+      "target": "machine-learning",
+      "count": 19,
       "recent_count": 13
     },
     {
@@ -833,12 +839,6 @@
       "source": "closed-loop-control",
       "target": "digital-twin",
       "count": 20,
-      "recent_count": 12
-    },
-    {
-      "source": "closed-loop-control",
-      "target": "machine-learning",
-      "count": 18,
       "recent_count": 12
     },
     {
