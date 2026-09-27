@@ -19344,8 +19344,8 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
     "crossref_collection_route": "issn_venue_query",
@@ -19358,7 +19358,7 @@
     "issn_l": "",
     "publisher": "Springer Science and Business Media LLC",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7214282231",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S77056576",
@@ -23549,6 +23549,76 @@
     "last_seen_in_crossref_run": "2026-09-27",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.jmsy.2026.04.017"
+  },
+  "10.1016/j.jpcs.2026.114154": {
+    "author_details": [
+      {
+        "name": "Mohammadmahdi Abedi",
+        "orcid": "https://orcid.org/0000-0002-2920-9284",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "0022-3697"
+    ],
+    "issn_l": "",
+    "publisher": "Elsevier BV",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S171512606",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S171512606",
+      "issn_l": "0022-3697",
+      "issn": [
+        "0022-3697",
+        "1879-2553"
+      ],
+      "type": "journal",
+      "host_organization_name": "Elsevier BV",
+      "works_count": 22511,
+      "cited_by_count": 623762,
+      "two_year_mean_citedness": 6.019970774476376,
+      "h_index": 229,
+      "i10_index": 12419,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 6.019970774476376,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - A low-carbon waste-valorised electromechanical cementitious composite from deinking paper sludge and metakaolin for 3D printing construction: A hybrid ML-FEM digital twin is a 2026 paper from Journal of Physics and Chemistry of Solids about Digital Twins.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Digital Twins.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Digital Twins; current relevance score is 7/10.",
+    "relevance_note_en": "Relevant to the tracker through Digital Twins; score: 7/10.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-09-27",
+    "id": "10.1016/j.jpcs.2026.114154"
   },
   "10.1016/j.jmsy.2026.02.010": {
     "author_details": [
@@ -28628,154 +28698,5 @@
     "last_seen_in_crossref_run": "2026-09-27",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/advs.202519147"
-  },
-  "10.3390/s26103204": {
-    "author_details": [
-      {
-        "name": "Han Liu",
-        "orcid": "https://orcid.org/0000-0003-3057-522X",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Civil, Construction, and Environmental Engineering, Iowa State University, Ames, IA 50010, USA"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Civil, Construction, and Environmental Engineering, Iowa State University, Ames, IA 50010, USA"
-        ]
-      },
-      {
-        "name": "Israel Sousa",
-        "orcid": "https://orcid.org/0000-0002-2670-4298",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Civil and Environmental Engineering, University of Perugia, Via G. Duranti, 93, 06125 Perugia, Italy"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Civil and Environmental Engineering, University of Perugia, Via G. Duranti, 93, 06125 Perugia, Italy"
-        ]
-      },
-      {
-        "name": "Shelby E. Doyle",
-        "orcid": "https://orcid.org/0000-0001-5742-9076",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Architecture, Iowa State University, Ames, IA 50010, USA"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Architecture, Iowa State University, Ames, IA 50010, USA"
-        ]
-      },
-      {
-        "name": "Antonella D’Alessandro",
-        "orcid": "https://orcid.org/0000-0003-2928-1961",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Civil and Environmental Engineering, University of Perugia, Via G. Duranti, 93, 06125 Perugia, Italy"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Civil and Environmental Engineering, University of Perugia, Via G. Duranti, 93, 06125 Perugia, Italy"
-        ]
-      },
-      {
-        "name": "Filippo Ubertini",
-        "orcid": "https://orcid.org/0000-0002-5044-8482",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Civil and Environmental Engineering, University of Perugia, Via G. Duranti, 93, 06125 Perugia, Italy"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Civil and Environmental Engineering, University of Perugia, Via G. Duranti, 93, 06125 Perugia, Italy"
-        ]
-      },
-      {
-        "name": "Simon Laflamme",
-        "orcid": "https://orcid.org/0000-0002-0601-9664",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Civil, Construction, and Environmental Engineering, Iowa State University, Ames, IA 50010, USA"
-          },
-          {
-            "name": "Department of Electrical and Computer Engineering, Iowa State University, Ames, IA 50010, USA"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Civil, Construction, and Environmental Engineering, Iowa State University, Ames, IA 50010, USA",
-          "Department of Electrical and Computer Engineering, Iowa State University, Ames, IA 50010, USA"
-        ]
-      }
-    ],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "1424-8220"
-    ],
-    "issn_l": "",
-    "publisher": "MDPI AG",
-    "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "https://openalex.org/W7161623227",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S101949793",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S101949793",
-      "issn_l": "1424-8220",
-      "issn": [
-        "1424-8220"
-      ],
-      "type": "journal",
-      "host_organization_name": "Multidisciplinary Digital Publishing Institute",
-      "works_count": 79902,
-      "cited_by_count": 1876666,
-      "two_year_mean_citedness": 4.713964076649822,
-      "h_index": 332,
-      "i10_index": 41733,
-      "is_core": true,
-      "is_oa": true,
-      "is_in_doaj": true
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 4.713964076649822,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 2",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - This study focuses on the sensing capabilities of a smart layer in 3D-printed reinforced cementitious beams.\n2. Problem - The structural performance of 3D concrete printing is affected by factors like anisotropy and mix design, complicating quality control.\n3. Method - A hybrid multi-material printing approach was employed, utilizing a conductive cement mix and various beam configurations to assess electromechanical responses.\n4. Key Result - The best sensing performance was achieved with a specific configuration, yielding a gauge factor of 556 and a signal-to-noise ratio of 31.\n5. Takeaway - The placement of the conductive layer significantly influences sensing performance, with optimal configurations enhancing strain monitoring capabilities.",
-    "relevance_note_en": "The paper presents innovative methods for improving sensing in 3D-printed cementitious materials, addressing key challenges in structural performance.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-09-27",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.3390/s26103204"
   }
 }

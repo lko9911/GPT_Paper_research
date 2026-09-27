@@ -1,4 +1,122 @@
 {
+  "10.1016/j.rcim.2025.103042": {
+    "author_details": [
+      {
+        "name": "Sai Geng",
+        "orcid": "https://orcid.org/0009-0005-9135-692X",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Shaohua Huang",
+        "orcid": "https://orcid.org/0000-0003-4446-1733",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Yu Guo",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Weiwei Qian",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Weiguang Fang",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Litong Zhang",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Shengbo Wang",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Robotics and Computer-Integrated Manufacturing",
+    "crossref_target_issn": "0736-5845",
+    "issn": [
+      "0736-5845"
+    ],
+    "issn_l": "",
+    "publisher": "Elsevier BV",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4409978627",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S118216261",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S118216261",
+      "issn_l": "0736-5845",
+      "issn": [
+        "0736-5845",
+        "1879-2537"
+      ],
+      "type": "journal",
+      "host_organization_name": "Elsevier BV",
+      "works_count": 3891,
+      "cited_by_count": 147298,
+      "two_year_mean_citedness": 10.130597014925373,
+      "h_index": 157,
+      "i10_index": 2463,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 10.130597014925373,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - The study focuses on optimizing scheduling in discrete manufacturing workshops.\n2. Problem - It addresses the challenges of scheduling while considering constraints related to transportation resources.\n3. Method - The authors employ a multi-agent deep reinforcement learning approach to tackle the scheduling problem.\n4. Key Result - The proposed method demonstrates improved efficiency in scheduling compared to traditional techniques.\n5. Takeaway - Integrating digital twin technology with advanced AI methods can significantly enhance manufacturing scheduling processes.",
+    "relevance_note_en": "The paper presents a novel approach to scheduling in manufacturing, which is highly relevant to current trends in AI and automation.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-09-27",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1016/j.rcim.2025.103042"
+  },
   "10.1007/s10845-024-02426-y": {
     "author_details": [
       {
@@ -19913,7 +20031,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "last_seen_in_crossref_run": "2026-09-27",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "id": "10.1007/s00170-025-16354-5"
   },
   "10.1016/j.msea.2025.148034": {
@@ -31522,128 +31640,5 @@
     "last_seen_in_crossref_run": "2026-09-27",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1038/s41467-025-66034-x"
-  },
-  "10.1080/02678292.2025.2499853": {
-    "author_details": [
-      {
-        "name": "Youyang Zhu",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Southern University of Science and Technology"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Southern University of Science and Technology"
-        ]
-      },
-      {
-        "name": "Zhongjie Ma",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Southern University of Science and Technology"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Southern University of Science and Technology"
-        ]
-      },
-      {
-        "name": "Aile Sun",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Southern University of Science and Technology"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Southern University of Science and Technology"
-        ]
-      },
-      {
-        "name": "Qi-Huo Wei",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Southern University of Science and Technology"
-          },
-          {
-            "name": "Southern University of Science and Technology"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Southern University of Science and Technology",
-          "Southern University of Science and Technology"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "0267-8292",
-      "1366-5855"
-    ],
-    "issn_l": "",
-    "publisher": "Informa UK Limited",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4410093059",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S15647332",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S15647332",
-      "issn_l": "0267-8292",
-      "issn": [
-        "0267-8292",
-        "1366-5855"
-      ],
-      "type": "journal",
-      "host_organization_name": "Taylor & Francis",
-      "works_count": 8096,
-      "cited_by_count": 146074,
-      "two_year_mean_citedness": 2.0458452722063036,
-      "h_index": 107,
-      "i10_index": 4401,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 2.0458452722063036,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 3",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - This study investigates the thermal behavior of 3D-printed liquid crystal elastomer microcubes.\n2. Problem - A significant challenge exists in creating micron-sized LCE structures with defined director patterns.\n3. Method - The authors produced LCE microcubes with a uniform director orientation and analyzed their thermal transitions.\n4. Key Result - The microcubes demonstrated anisotropic shape changes when heated, influenced by the orientation of the director.\n5. Takeaway - These results advance the potential for designing LCE microstructures capable of programmable shape morphing.",
-    "relevance_note_en": "The summary captures the core findings and implications of the research without direct paraphrasing.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-09-27",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1080/02678292.2025.2499853"
   }
 }

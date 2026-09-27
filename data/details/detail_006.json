@@ -1,4 +1,151 @@
 {
+  "10.3390/act13070249": {
+    "author_details": [
+      {
+        "name": "Xingguo Han",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "School of Mechanical and Electrical Engineering, Guilin University of Electronic Technology, Guilin 541004, China"
+          },
+          {
+            "name": "Guangxi Key Laboratory of Special Engineering Equipment and Control, Guilin University of Aerospace Technology, Guilin 541004, China"
+          },
+          {
+            "name": "Key Laboratory of Special Engineering Equipment Design and Intelligent Driving Technology, Education Department of Guangxi Zhuang Autonomous Region, Guilin University of Aerospace Technology, Guilin 541004, China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Mechanical and Electrical Engineering, Guilin University of Electronic Technology, Guilin 541004, China",
+          "Guangxi Key Laboratory of Special Engineering Equipment and Control, Guilin University of Aerospace Technology, Guilin 541004, China",
+          "Key Laboratory of Special Engineering Equipment Design and Intelligent Driving Technology, Education Department of Guangxi Zhuang Autonomous Region, Guilin University of Aerospace Technology, Guilin 541004, China"
+        ]
+      },
+      {
+        "name": "Xuan Liu",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "School of Mechanical and Electrical Engineering, Guilin University of Electronic Technology, Guilin 541004, China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Mechanical and Electrical Engineering, Guilin University of Electronic Technology, Guilin 541004, China"
+        ]
+      },
+      {
+        "name": "Gaofei Wu",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "College of Mechanical and Control Engineering, Guilin University of Technology, Guilin 541006, China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "College of Mechanical and Control Engineering, Guilin University of Technology, Guilin 541006, China"
+        ]
+      },
+      {
+        "name": "Xiaohui Song",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Guangxi Key Laboratory of Special Engineering Equipment and Control, Guilin University of Aerospace Technology, Guilin 541004, China"
+          },
+          {
+            "name": "Key Laboratory of Special Engineering Equipment Design and Intelligent Driving Technology, Education Department of Guangxi Zhuang Autonomous Region, Guilin University of Aerospace Technology, Guilin 541004, China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Guangxi Key Laboratory of Special Engineering Equipment and Control, Guilin University of Aerospace Technology, Guilin 541004, China",
+          "Key Laboratory of Special Engineering Equipment Design and Intelligent Driving Technology, Education Department of Guangxi Zhuang Autonomous Region, Guilin University of Aerospace Technology, Guilin 541004, China"
+        ]
+      },
+      {
+        "name": "Lixiu Cui",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Guangxi Key Laboratory of Special Engineering Equipment and Control, Guilin University of Aerospace Technology, Guilin 541004, China"
+          },
+          {
+            "name": "Key Laboratory of Special Engineering Equipment Design and Intelligent Driving Technology, Education Department of Guangxi Zhuang Autonomous Region, Guilin University of Aerospace Technology, Guilin 541004, China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Guangxi Key Laboratory of Special Engineering Equipment and Control, Guilin University of Aerospace Technology, Guilin 541004, China",
+          "Key Laboratory of Special Engineering Equipment Design and Intelligent Driving Technology, Education Department of Guangxi Zhuang Autonomous Region, Guilin University of Aerospace Technology, Guilin 541004, China"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2076-0825"
+    ],
+    "issn_l": "",
+    "publisher": "MDPI AG",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4400201188",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S2736557103",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S2736557103",
+      "issn_l": "2076-0825",
+      "issn": [
+        "2076-0825"
+      ],
+      "type": "journal",
+      "host_organization_name": "Multidisciplinary Digital Publishing Institute",
+      "works_count": 3169,
+      "cited_by_count": 25919,
+      "two_year_mean_citedness": 2.4223684210526315,
+      "h_index": 54,
+      "i10_index": 770,
+      "is_core": true,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 2.4223684210526315,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 3",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - This study investigates path planning for additive manufacturing using a six-degree-of-freedom manipulator.\n2. Problem - Existing research primarily addresses three-axis and five-DOF path planning, neglecting the complexities of six-DOF systems.\n3. Method - The authors developed an optimized path planning algorithm that integrates contour offset filling and Hilbert curve filling with cubic uniform B-spline curves.\n4. Key Result - The proposed algorithm significantly reduces printing time by up to 43.70% compared to traditional methods and decreases warpage deformation by up to 37.81%.\n5. Takeaway - Implementing the new path planning approach enhances the quality and efficiency of additive manufacturing with six-DOF manipulators.",
+    "relevance_note_en": "The summary captures the essence of the research, focusing on the novel contributions and outcomes related to six-DOF additive manufacturing.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-09-27",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.3390/act13070249"
+  },
   "10.1002/adfm.202470051": {
     "author_details": [
       {
@@ -10531,9 +10678,9 @@
     "corresponding_author_source": "openalex_cross_check",
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "Advanced Materials",
-    "crossref_target_issn": "0935-9648",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
     "issn": [
       "0935-9648",
       "1521-4095"
