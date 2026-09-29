@@ -1,4 +1,217 @@
 {
+  "10.1016/j.jii.2024.100563": {
+    "author_details": [
+      {
+        "name": "Haochen Mu",
+        "orcid": "https://orcid.org/0000-0003-2823-4661",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Fengyang He",
+        "orcid": "https://orcid.org/0000-0002-4995-6877",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Lei Yuan",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Houman Hatamian",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Philip Commins",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Zengxi Pan",
+        "orcid": "https://orcid.org/0000-0002-1788-2543",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2452-414X"
+    ],
+    "issn_l": "",
+    "publisher": "Elsevier BV",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4390748783",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S2898195457",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S2898195457",
+      "issn_l": "2452-414X",
+      "issn": [
+        "2452-414X",
+        "2467-964X"
+      ],
+      "type": "journal",
+      "host_organization_name": "Elsevier BV",
+      "works_count": 900,
+      "cited_by_count": 32039,
+      "two_year_mean_citedness": 7.980119284294235,
+      "h_index": 75,
+      "i10_index": 443,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 7.980119284294235,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The study focuses on online distortion simulation in metallic additive manufacturing.\n2. Problem - Current online simulation methods face challenges in computing time and accuracy, hindering the development of a Digital Twin.\n3. Method - An adaptive online simulation model is proposed, utilizing a VQVAE-GAN architecture and RNN for predicting distortion fields from laser-scanned point clouds.\n4. Key Result - The model demonstrated superior performance with an RMSE below 0.9 m, significantly outperforming traditional FEM and ANN methods.\n5. Takeaway - This research represents a major advancement towards achieving a Digital Twin for additive manufacturing processes.",
+    "relevance_note_en": "The summary accurately captures the essence and findings of the research paper.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-09-29",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1016/j.jii.2024.100563"
+  },
+  "10.3390/jmmp8010040": {
+    "author_details": [
+      {
+        "name": "Devashish Dubey",
+        "orcid": "https://orcid.org/0009-0002-6027-5519",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Mechanical Engineering, McMaster University, Hamilton, ON L8S 4L7, Canada"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering, McMaster University, Hamilton, ON L8S 4L7, Canada"
+        ]
+      },
+      {
+        "name": "Anooshe Sadat Mirhakimi",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Mechanical Engineering, McMaster University, Hamilton, ON L8S 4L7, Canada"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering, McMaster University, Hamilton, ON L8S 4L7, Canada"
+        ]
+      },
+      {
+        "name": "Mohamed A. Elbestawi",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Mechanical Engineering, McMaster University, Hamilton, ON L8S 4L7, Canada"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering, McMaster University, Hamilton, ON L8S 4L7, Canada"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2504-4494"
+    ],
+    "issn_l": "",
+    "publisher": "MDPI AG",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4391811814",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S4210232045",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210232045",
+      "issn_l": "2504-4494",
+      "issn": [
+        "2504-4494"
+      ],
+      "type": "journal",
+      "host_organization_name": "Multidisciplinary Digital Publishing Institute",
+      "works_count": 1816,
+      "cited_by_count": 19084,
+      "two_year_mean_citedness": 3.456932773109244,
+      "h_index": 55,
+      "i10_index": 507,
+      "is_core": true,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 3.456932773109244,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 2",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The review focuses on negative thermal expansion (NTE) metamaterials and their applications.\n2. Problem - Conventional materials expand with heat, causing thermal distortions in precision instruments.\n3. Method - The article reviews various design and fabrication methods for NTE metamaterials, including additive manufacturing techniques.\n4. Key Result - It highlights the successful use of advanced manufacturing processes to create complex NTE structures.\n5. Takeaway - The review addresses a significant gap in literature by providing a comprehensive overview of NTE metamaterials and their potential applications.",
+    "relevance_note_en": "The summary captures the main themes and findings of the review without directly paraphrasing the abstract.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-09-29",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.3390/jmmp8010040"
+  },
   "10.1007/s12289-024-01811-5": {
     "author_details": [
       {
@@ -29549,403 +29762,5 @@
     "last_seen_in_crossref_run": "2026-09-29",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1007/s00170-024-13398-x"
-  },
-  "10.1021/acsami.4c16614": {
-    "author_details": [
-      {
-        "name": "Yang Liu",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Grado Department of Industrial and Systems Engineering"
-          },
-          {
-            "name": "Virginia Tech"
-          },
-          {
-            "name": "Macromolecules Innovation Institute"
-          },
-          {
-            "name": "Virginia Tech"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Grado Department of Industrial and Systems Engineering",
-          "Virginia Tech",
-          "Macromolecules Innovation Institute",
-          "Virginia Tech"
-        ]
-      },
-      {
-        "name": "Xubo Yue",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Mechanical and Industrial Engineering"
-          },
-          {
-            "name": "Northeastern University"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical and Industrial Engineering",
-          "Northeastern University"
-        ]
-      },
-      {
-        "name": "Junru Zhang",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Grado Department of Industrial and Systems Engineering"
-          },
-          {
-            "name": "Virginia Tech"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Grado Department of Industrial and Systems Engineering",
-          "Virginia Tech"
-        ]
-      },
-      {
-        "name": "Zhenghao Zhai",
-        "orcid": "https://orcid.org/0000-0002-9312-7750",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Macromolecules Innovation Institute"
-          },
-          {
-            "name": "Virginia Tech"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Macromolecules Innovation Institute",
-          "Virginia Tech"
-        ]
-      },
-      {
-        "name": "Ali Moammeri",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Grado Department of Industrial and Systems Engineering"
-          },
-          {
-            "name": "Virginia Tech"
-          },
-          {
-            "name": "Department of Chemical Engineering"
-          },
-          {
-            "name": "Virginia Tech"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Grado Department of Industrial and Systems Engineering",
-          "Virginia Tech",
-          "Department of Chemical Engineering",
-          "Virginia Tech"
-        ]
-      },
-      {
-        "name": "Kevin J. Edgar",
-        "orcid": "https://orcid.org/0000-0002-9459-9477",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Macromolecules Innovation Institute"
-          },
-          {
-            "name": "Virginia Tech"
-          },
-          {
-            "name": "Department of Sustainable Biomaterials"
-          },
-          {
-            "name": "Virginia Tech"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Macromolecules Innovation Institute",
-          "Virginia Tech",
-          "Department of Sustainable Biomaterials",
-          "Virginia Tech"
-        ]
-      },
-      {
-        "name": "Albert S. Berahas",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Industrial and Operations Engineering"
-          },
-          {
-            "name": "University of Michigan"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Industrial and Operations Engineering",
-          "University of Michigan"
-        ]
-      },
-      {
-        "name": "Raed Al Kontar",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Industrial and Operations Engineering"
-          },
-          {
-            "name": "University of Michigan"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Industrial and Operations Engineering",
-          "University of Michigan"
-        ]
-      },
-      {
-        "name": "Blake N. Johnson",
-        "orcid": "https://orcid.org/0000-0003-4668-2011",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Grado Department of Industrial and Systems Engineering"
-          },
-          {
-            "name": "Virginia Tech"
-          },
-          {
-            "name": "Macromolecules Innovation Institute"
-          },
-          {
-            "name": "Virginia Tech"
-          },
-          {
-            "name": "Department of Chemical Engineering"
-          },
-          {
-            "name": "Virginia Tech"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Grado Department of Industrial and Systems Engineering",
-          "Virginia Tech",
-          "Macromolecules Innovation Institute",
-          "Virginia Tech",
-          "Department of Chemical Engineering",
-          "Virginia Tech"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "1944-8244",
-      "1944-8252"
-    ],
-    "issn_l": "",
-    "publisher": "American Chemical Society (ACS)",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4405273119",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S164001016",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S164001016",
-      "issn_l": "1944-8244",
-      "issn": [
-        "1944-8244",
-        "1944-8252"
-      ],
-      "type": "journal",
-      "host_organization_name": "American Chemical Society",
-      "works_count": 69722,
-      "cited_by_count": 3298786,
-      "two_year_mean_citedness": 7.780907972281588,
-      "h_index": 372,
-      "i10_index": 53076,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 7.780907972281588,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 1",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The study focuses on enhancing materials discovery through autonomous experimentation and collaborative learning.\n2. Problem - The challenge lies in effectively coordinating multiple stakeholders and workflows to accelerate the discovery of new materials.\n3. Method - A scalable paradigm combining autonomous experimentation with a novel consensus Bayesian optimization model was employed for discovering polysaccharide-based hydrogels.\n4. Key Result - The collaborative approach significantly outperformed traditional independent learning methods, leading to improved material performance after several iterations.\n5. Takeaway - Integrating collaborative learning with autonomous experimentation can optimize material discovery processes by leveraging the strengths of both human and machine collaboration.",
-    "relevance_note_en": "The summary captures the core aspects of the research, including the innovative methods and significant findings.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-09-29",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1021/acsami.4c16614"
-  },
-  "10.1089/3dp.2023.0127": {
-    "author_details": [
-      {
-        "name": "Hui Dong",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "School of Mechanical Engineering and Automation, Fuzhou University, Fuzhou, China."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "School of Mechanical Engineering and Automation, Fuzhou University, Fuzhou, China."
-        ]
-      },
-      {
-        "name": "Tao Weng",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "School of Mechanical Engineering and Automation, Fuzhou University, Fuzhou, China."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "School of Mechanical Engineering and Automation, Fuzhou University, Fuzhou, China."
-        ]
-      },
-      {
-        "name": "Kexin Zheng",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "School of Mechanical Engineering and Automation, Fuzhou University, Fuzhou, China."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "School of Mechanical Engineering and Automation, Fuzhou University, Fuzhou, China."
-        ]
-      },
-      {
-        "name": "Hao Sun",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "School of Mechanical Engineering and Automation, Fuzhou University, Fuzhou, China."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "School of Mechanical Engineering and Automation, Fuzhou University, Fuzhou, China."
-        ]
-      },
-      {
-        "name": "Bingxing Chen",
-        "orcid": "https://orcid.org/0000-0002-5442-8040",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "School of Mechanical Engineering and Automation, Fuzhou University, Fuzhou, China."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "School of Mechanical Engineering and Automation, Fuzhou University, Fuzhou, China."
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2329-7662",
-      "2329-7670"
-    ],
-    "issn_l": "",
-    "publisher": "SAGE Publications",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4391659078",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S4210174904",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S4210174904",
-      "issn_l": "2329-7662",
-      "issn": [
-        "2329-7662",
-        "2329-7670"
-      ],
-      "type": "journal",
-      "host_organization_name": "Mary Ann Liebert, Inc.",
-      "works_count": 768,
-      "cited_by_count": 14262,
-      "two_year_mean_citedness": 2.4384615384615387,
-      "h_index": 55,
-      "i10_index": 325,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Core manufacturing journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 2.4384615384615387,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 3",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - The review focuses on the use of 3D printing technology in the development of soft robots.\n2. Problem - Manufacturing soft robots with complex functionalities efficiently poses significant challenges.\n3. Method - The authors analyze various 3D printing techniques and materials applicable to soft robotics.\n4. Key Result - The review highlights the advantages of 3D printing over traditional methods and discusses existing soft robot applications.\n5. Takeaway - Future advancements in 3D printing technology could enhance the capabilities and applications of soft robots.",
-    "relevance_note_en": "The summary captures the main themes and findings of the review without direct paraphrasing.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-09-29",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1089/3dp.2023.0127"
   }
 }
