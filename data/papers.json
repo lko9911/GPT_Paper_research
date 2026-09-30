@@ -7535,9 +7535,29 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Israel V.M.V. Enoch",
+        "openalex_author_id": "https://openalex.org/A5024838157",
+        "orcid": "https://orcid.org/0000-0002-8489-531X",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Karunya University",
+            "ror": "https://ror.org/03k23nv15",
+            "country_code": "IN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Centre for Nanoscience and Genomics, Karunya Institute of Technology and Sciences (Deemed University), Coimbatore, Tamil Nadu 641114, India",
+          "Division of Physical Sciences, Karunya Institute of Technology and Sciences (Deemed University), Coimbatore, Tamil Nadu 641114, India"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Next Materials",
     "doi": "10.1016/j.nxmate.2026.103218",
@@ -7556,7 +7576,7 @@
     "issn_l": "",
     "publisher": "Elsevier BV",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7203651120",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S4387287712",
@@ -7830,9 +7850,9 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Zhenlu Xu",
-        "openalex_author_id": "https://openalex.org/A5056473819",
-        "orcid": "https://orcid.org/0009-0007-0580-017X",
+        "name": "Wenjun Xu",
+        "openalex_author_id": "https://openalex.org/A5059180329",
+        "orcid": "https://orcid.org/0000-0001-5370-3437",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -14170,9 +14190,52 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Zhen Chang",
+        "openalex_author_id": "https://openalex.org/A5103050560",
+        "orcid": "https://orcid.org/0009-0006-6123-817X",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "82th Hospital of Pla",
+            "ror": "https://ror.org/02ddfy797",
+            "country_code": "CN",
+            "type": "healthcare"
+          },
+          {
+            "name": "458th Hospital PLA",
+            "ror": "https://ror.org/05bhd7f62",
+            "country_code": "CN",
+            "type": "healthcare"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Orthopedics, 960th Hospital of PLA, Jinan,"
+        ]
+      },
+      {
+        "name": "Gaoqi Wang",
+        "openalex_author_id": "https://openalex.org/A5044158994",
+        "orcid": "https://orcid.org/0000-0003-2926-0642",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Jinan",
+            "ror": "https://ror.org/02mjz6f26",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Shandong Key Laboratory of Surface Engineering and Intelligent Equipment for Key Metal Components, School of Mechanical Engineering, University of Jinan , Jinan,"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Rapid Prototyping Journal",
     "doi": "10.1108/rpj-05-2026-0329",
@@ -14192,8 +14255,8 @@
     "issn_l": "",
     "publisher": "Emerald",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7214709050",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S173500210",
     "venue_metrics": {
@@ -22897,9 +22960,60 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Ming Huang",
+        "openalex_author_id": "https://openalex.org/A5110575591",
+        "orcid": null,
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Beijing Institute of Technology",
+            "ror": "https://ror.org/01skt4w74",
+            "country_code": "CN",
+            "type": "education"
+          },
+          {
+            "name": "Ministry of Industry and Information Technology",
+            "ror": "https://ror.org/0385nmy68",
+            "country_code": "CN",
+            "type": "government"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Key Laboratory of High-end Equipment Knowledge & Data Fusion Technology and Application, Ministry of Industry and Information Technology, Beijing 100081, China",
+          "School of Mechanical Engineering, Beijing Institute of Technology, Beijing 10081, China"
+        ]
+      },
+      {
+        "name": "Sihan Huang",
+        "openalex_author_id": "https://openalex.org/A5135214858",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Beijing Institute of Technology",
+            "ror": "https://ror.org/01skt4w74",
+            "country_code": "CN",
+            "type": "education"
+          },
+          {
+            "name": "Ministry of Industry and Information Technology",
+            "ror": "https://ror.org/0385nmy68",
+            "country_code": "CN",
+            "type": "government"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Key Laboratory of High-end Equipment Knowledge & Data Fusion Technology and Application, Ministry of Industry and Information Technology, Beijing 100081, China",
+          "School of Mechanical Engineering, Beijing Institute of Technology, Beijing 10081, China"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Robotics and Computer-Integrated Manufacturing",
     "doi": "10.1016/j.rcim.2026.103322",
@@ -22918,7 +23032,7 @@
     "issn_l": "",
     "publisher": "Elsevier BV",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7160072301",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S118216261",
@@ -29546,21 +29660,21 @@
         "is_corresponding": true,
         "institutions": [
           {
-            "name": "NORCE Research AS",
-            "ror": "https://ror.org/02gagpf75",
+            "name": "SINTEF",
+            "ror": "https://ror.org/01f677e56",
             "country_code": "NO",
             "type": "facility"
           },
           {
-            "name": "Montimage (France)",
-            "ror": "https://ror.org/02a8qtz61",
-            "country_code": "FR",
-            "type": "company"
+            "name": "NORCE Research AS",
+            "ror": "https://ror.org/02gagpf75",
+            "country_code": "NO",
+            "type": "facility"
           }
         ],
         "raw_affiliation_strings": [
           "NORCE Research AS, Grimstad, Norway",
-          "Montimage, Paris, France"
+          "SINTEF AS, Oslo/Porsgrunn, Norway"
         ]
       }
     ],
@@ -43597,9 +43711,47 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Zachariah A. Page",
+        "openalex_author_id": "https://openalex.org/A5015417245",
+        "orcid": "https://orcid.org/0000-0002-1013-5422",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "The University of Texas at Austin",
+            "ror": "https://ror.org/00hj54h04",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Chemistry The University of Texas at Austin  Austin Texas USA",
+          "McKetta Department of Chemical Engineering The University of Texas at Austin  Austin Texas USA"
+        ]
+      },
+      {
+        "name": "Lillian Chin",
+        "openalex_author_id": "https://openalex.org/A5067958726",
+        "orcid": "https://orcid.org/0000-0003-4083-5275",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "The University of Texas at Austin",
+            "ror": "https://ror.org/00hj54h04",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Chandra Family Department of Electrical and Computer Engineering The University of Texas at Austin  Austin Texas USA"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Advanced Materials",
     "doi": "10.1002/adma.75168",
@@ -43619,8 +43771,8 @@
     "issn_l": "",
     "publisher": "Wiley",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7214772867",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S99352657",
     "venue_metrics": {
@@ -61235,6 +61387,119 @@
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
+    "id": "10.1007/s40964-026-01979-z",
+    "title": "Design principles of additively manufactured multi-material blank holder systems for adaptive pressure control in paper deep drawing",
+    "authors": [
+      "Cédric Brunk",
+      "Peter Groche"
+    ],
+    "author_details": [
+      {
+        "name": "Cédric Brunk",
+        "orcid": "https://orcid.org/0000-0003-1740-6915",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Peter Groche",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "year": 2026,
+    "venue": "Progress in Additive Manufacturing",
+    "doi": "10.1007/s40964-026-01979-z",
+    "url": "https://doi.org/10.1007/s40964-026-01979-z",
+    "source": [
+      "Crossref"
+    ],
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Progress in Additive Manufacturing",
+    "crossref_target_issn": "2363-9512",
+    "issn": [
+      "2363-9512",
+      "2363-9520"
+    ],
+    "issn_l": "",
+    "publisher": "Springer Science and Business Media LLC",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S4210206835",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210206835",
+      "issn_l": "2363-9512",
+      "issn": [
+        "2363-9512",
+        "2363-9520"
+      ],
+      "type": "journal",
+      "host_organization_name": "Springer Science+Business Media",
+      "works_count": 1809,
+      "cited_by_count": 21422,
+      "two_year_mean_citedness": 4.039043824701195,
+      "h_index": 63,
+      "i10_index": 494,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 4.039043824701195,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 2",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "publication_type": "journal_article",
+    "venue_trust": "trusted",
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "is_core_venue": true,
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "categories": [
+      "Multi-material AM"
+    ],
+    "tags": [
+      "Additive manufacturing"
+    ],
+    "relevance_score": 6,
+    "curation_priority": false,
+    "ai_summary_en": "1. Topic - Design principles of additively manufactured multi-material blank holder systems for adaptive pressure control in paper deep drawing is a 2026 paper from Progress in Additive Manufacturing about Additive manufacturing.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Additive manufacturing.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Additive manufacturing; current relevance score is 6/10.",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_en": "Relevant to the tracker through Additive manufacturing; score: 6/10.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-09-30",
+    "last_updated": "2026-09-30",
+    "is_weekly_new": true,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-09-30",
+    "openalex_venue_rank": "Rank 2",
+    "openalex_venue_rank_number": 2,
+    "openalex_venue_rank_score": 4.039043824701195,
+    "openalex_venue_rank_percentile": 0.598,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+  },
+  {
     "id": "10.1108/rpj-07-2025-0320",
     "title": "Design and performance of an electrically triggered 4D-printed hinge: electro-thermo-mechanical behaviour of carbon black/polylactic acid",
     "authors": [
@@ -61953,9 +62218,36 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Andrea Lorenzo Henri Sergio Detry",
+        "openalex_author_id": "https://openalex.org/A5098801209",
+        "orcid": "https://orcid.org/0000-0002-7566-5109",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Milan",
+            "ror": "https://ror.org/00wjc7c48",
+            "country_code": "IT",
+            "type": "education"
+          },
+          {
+            "name": "University of Naples Federico II",
+            "ror": "https://ror.org/05290cv24",
+            "country_code": "IT",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Chemical Materials and Production Engineering, University of Naples Federico II, Piazzale Vincenzo Tecchio, 80, Napoli, 80125 NA, Italy",
+          "Department of Physics, Center for Complexity and Biosystems, University of Milan, Via Celoria 16, Milan, 20133 MI, Italy",
+          "Oniro S.r.l., Via S. Anna dei Lombardi 16, Napoli, 80134, Italy"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Materials & Design",
     "doi": "10.1016/j.matdes.2026.116463",
@@ -61974,7 +62266,7 @@
     "issn_l": "",
     "publisher": "Elsevier BV",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7165367725",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S8792693",
@@ -63097,9 +63389,28 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Davoud Jafari",
+        "openalex_author_id": "https://openalex.org/A5086733083",
+        "orcid": "https://orcid.org/0000-0003-3894-8844",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Twente",
+            "ror": "https://ror.org/006hf6230",
+            "country_code": "NL",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Faculty of Engineering Technology, University of Twente, P.O. Box 217, 7500 AE Enschede, The Netherlands"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Materials & Design",
     "doi": "10.1016/j.matdes.2026.116653",
@@ -63118,7 +63429,7 @@
     "issn_l": "",
     "publisher": "Elsevier BV",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7170085415",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S8792693",
@@ -74688,7 +74999,7 @@
     "first_added": "2026-06-29",
     "last_updated": "2026-09-30",
     "is_weekly_new": false,
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "last_seen_in_crossref_run": "2026-09-30",
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
@@ -88336,9 +88647,40 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Wissem Haouas",
+        "openalex_author_id": "https://openalex.org/A5023098184",
+        "orcid": "https://orcid.org/0000-0002-0314-6887",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Centre National de la Recherche Scientifique",
+            "ror": "https://ror.org/02feahw73",
+            "country_code": "FR",
+            "type": "government"
+          },
+          {
+            "name": "Franche-Comté Électronique Mécanique Thermique et Optique - Sciences et Technologies",
+            "ror": "https://ror.org/004fmxv66",
+            "country_code": "FR",
+            "type": "facility"
+          },
+          {
+            "name": "Université Marie et Louis Pasteur",
+            "ror": "https://ror.org/04asdee31",
+            "country_code": "FR",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Université Marie et Louis Pasteur, SUPMICROTECH, CNRS, institut FEMTO-ST, Besançon, F-25000, France"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Journal of Micro and Bio Robotics",
     "doi": "10.1007/s12213-026-00211-z",
@@ -88358,7 +88700,7 @@
     "issn_l": "",
     "publisher": "Springer Science and Business Media LLC",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7203648882",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S4210226500",
@@ -92700,10 +93042,10 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-08-10",
-    "last_updated": "2026-09-29",
+    "last_updated": "2026-09-30",
     "is_weekly_new": false,
-    "not_seen_in_latest_crossref_run": true,
-    "last_seen_in_crossref_run": "2026-09-29",
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-09-30",
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 3.7044257112750265,
@@ -94877,7 +95219,7 @@
     "publisher": "Elsevier BV",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7214768765",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S120037611",
     "venue_metrics": {
@@ -95419,7 +95761,7 @@
         "name": "Hong Wang",
         "openalex_author_id": null,
         "orcid": "https://orcid.org/0000-0001-6799-1732",
-        "position": "middle",
+        "position": "last",
         "is_corresponding": true,
         "institutions": [
           {
@@ -108857,7 +109199,7 @@
         "name": "Luquan Ren",
         "openalex_author_id": "https://openalex.org/A5147005198",
         "orcid": null,
-        "position": "middle",
+        "position": "last",
         "is_corresponding": true,
         "institutions": [
           {
@@ -109664,7 +110006,7 @@
         "name": "Mondher Nasri",
         "openalex_author_id": "https://openalex.org/A5006405851",
         "orcid": "https://orcid.org/0000-0001-7848-4365",
-        "position": "middle",
+        "position": "first",
         "is_corresponding": true,
         "institutions": [
           {
@@ -130122,9 +130464,9 @@
     ],
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "Progress in Additive Manufacturing",
-    "crossref_target_issn": "2363-9512",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
     "issn": [
       "2363-9512",
       "2363-9520"
@@ -130228,9 +130570,28 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Sinan Abdul-Sattar Shwailiya",
+        "openalex_author_id": "https://openalex.org/A5000236238",
+        "orcid": "https://orcid.org/0000-0002-5174-0469",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Babylon",
+            "ror": "https://ror.org/0170edc15",
+            "country_code": "IQ",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Lecturer in the Department of Conservative Dentistry, College of Dentistry, University of Babylon, Hilla, Iraq"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2025,
     "venue": "Open Ceramics",
     "doi": "10.1016/j.oceram.2025.100741",
@@ -130249,7 +130610,7 @@
     "issn_l": "",
     "publisher": "Elsevier BV",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4406564239",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S4210174163",
@@ -136948,9 +137309,35 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Patrick Link",
+        "openalex_author_id": "https://openalex.org/A5052786388",
+        "orcid": "https://orcid.org/0000-0002-1451-6396",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Fraunhofer Institute for Machine Tools and Forming Technology",
+            "ror": "https://ror.org/026taa863",
+            "country_code": "DE",
+            "type": "facility"
+          },
+          {
+            "name": "Technische Universität Dresden",
+            "ror": "https://ror.org/042aqky30",
+            "country_code": "DE",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Chair of Machine Tool Development and Adaptive Controls, Institute of Mechatronic Engineering, TUD Dresden University of Technology, 01062, Dresden, Germany",
+          "Fraunhofer Institute for Machine Tools and Forming Technology IWU, 09126, Chemnitz, Germany"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2025,
     "venue": "Robotics and Computer-Integrated Manufacturing",
     "doi": "10.1016/j.rcim.2024.102848",
@@ -136969,7 +137356,7 @@
     "issn_l": "",
     "publisher": "Elsevier BV",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4401449888",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S118216261",
@@ -146729,9 +147116,28 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Yuqian Lu",
+        "openalex_author_id": "https://openalex.org/A5043548798",
+        "orcid": "https://orcid.org/0000-0001-5954-0421",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Auckland",
+            "ror": "https://ror.org/03b94tp07",
+            "country_code": "NZ",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical and Mechatronics Engineering, The University of Auckland, Auckland 1010, New Zealand"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2025,
     "venue": "Journal of Manufacturing Systems",
     "doi": "10.1016/j.jmsy.2025.01.005",
@@ -146750,7 +147156,7 @@
     "issn_l": "",
     "publisher": "Elsevier BV",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4406584142",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S201698446",
@@ -156176,8 +156582,8 @@
     "corresponding_authors": [
       {
         "name": "Aoming Zhang",
-        "openalex_author_id": null,
-        "orcid": null,
+        "openalex_author_id": "https://openalex.org/A5111021439",
+        "orcid": "https://orcid.org/0009-0000-1296-6484",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -164703,9 +165109,46 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Said El Turk",
+        "openalex_author_id": "https://openalex.org/A5103274799",
+        "orcid": "https://orcid.org/0009-0000-8962-8141",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Khalifa University of Science and Technology",
+            "ror": "https://ror.org/05hffr360",
+            "country_code": "AE",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical & Nuclear Engineering, Khalifa University of Science and Technology, 127788 Abu Dhabi, United Arab Emirates"
+        ]
+      },
+      {
+        "name": "Haider Butt",
+        "openalex_author_id": "https://openalex.org/A5012312110",
+        "orcid": "https://orcid.org/0000-0003-2434-9525",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Khalifa University of Science and Technology",
+            "ror": "https://ror.org/05hffr360",
+            "country_code": "AE",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical & Nuclear Engineering, Khalifa University of Science and Technology, 127788 Abu Dhabi, United Arab Emirates"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2025,
     "venue": "Materials & Design",
     "doi": "10.1016/j.matdes.2025.113650",
@@ -164724,7 +165167,7 @@
     "issn_l": "",
     "publisher": "Elsevier BV",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4406662824",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S8792693",
@@ -179168,10 +179611,10 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-24",
-    "last_updated": "2026-09-29",
+    "last_updated": "2026-09-30",
     "is_weekly_new": false,
-    "last_seen_in_crossref_run": "2026-09-29",
-    "not_seen_in_latest_crossref_run": true,
+    "last_seen_in_crossref_run": "2026-09-30",
+    "not_seen_in_latest_crossref_run": false,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 3.7044257112750265,
@@ -179521,6 +179964,12 @@
             "type": "education"
           },
           {
+            "name": "Universität Ulm",
+            "ror": "https://ror.org/032000t02",
+            "country_code": "DE",
+            "type": "education"
+          },
+          {
             "name": "University of Manchester",
             "ror": "https://ror.org/027m9bs27",
             "country_code": "GB",
@@ -179537,16 +179986,14 @@
           "Department of Mechanical, Aerospace, and Civil Engineering University of Manchester  Manchester M13 9PL UK",
           "Institute of Structured and Architected Materials Liaoning Academy of Materials  Shenyang 110167 China",
           "Key Laboratory of Bionic Engineering Ministry of Education Jilin University  Changchun 130022 China",
-          "Department of Mechanical, Aerospace, and Civil Engineering, University of Manchester, Manchester, M13 9PL UK",
-          "Institute of Structured and Architected Materials, Liaoning Academy of Materials, Shenyang, 110167 China",
-          "Key Laboratory of Bionic Engineering, Ministry of Education, Jilin University, Changchun, 130022 China"
+          "Institute of Orthopaedic Research and Biomechanics, Ulm University Medical Centre, University of Ulm, 89081 Ulm, Germany"
         ]
       },
       {
         "name": "Luquan Ren",
         "openalex_author_id": null,
         "orcid": null,
-        "position": "last",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -194118,7 +194565,7 @@
         "name": "Xiaofeng Wang",
         "openalex_author_id": null,
         "orcid": "https://orcid.org/0000-0002-9913-1064",
-        "position": "middle",
+        "position": "last",
         "is_corresponding": true,
         "institutions": [
           {
@@ -200177,9 +200624,46 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Mahdi Bodaghi",
+        "openalex_author_id": "https://openalex.org/A5043306953",
+        "orcid": "https://orcid.org/0000-0002-0707-944X",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Nottingham Trent University",
+            "ror": "https://ror.org/04xyxjd90",
+            "country_code": "GB",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Engineering, School of Science and Technology, Nottingham Trent University, Nottingham NG11 8NS, UK"
+        ]
+      },
+      {
+        "name": "Mostafa Baghani",
+        "openalex_author_id": "https://openalex.org/A5077063736",
+        "orcid": "https://orcid.org/0000-0001-6695-3128",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Tehran",
+            "ror": "https://ror.org/05vf56z40",
+            "country_code": "IR",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Mechanical Engineering, College of Engineering, University of Tehran, Tehran, Iran"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2025,
     "venue": "Manufacturing Letters",
     "doi": "10.1016/j.mfglet.2024.11.005",
@@ -200198,7 +200682,7 @@
     "issn_l": "",
     "publisher": "Elsevier BV",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4405121198",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2764828758",
@@ -239076,9 +239560,28 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "S. Siddharth Kumar",
+        "openalex_author_id": "https://openalex.org/A5100755124",
+        "orcid": "https://orcid.org/0000-0001-5360-8712",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Aalto University",
+            "ror": "https://ror.org/020hwjq30",
+            "country_code": "FI",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering, Aalto University, 02150 Espoo, Finland"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2025,
     "venue": "Materials & Design",
     "doi": "10.1016/j.matdes.2025.113674",
@@ -239097,7 +239600,7 @@
     "issn_l": "",
     "publisher": "Elsevier BV",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4406865720",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S8792693",
@@ -255714,10 +256217,10 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Zi Wang",
-        "openalex_author_id": "https://openalex.org/A5100338326",
-        "orcid": "https://orcid.org/0000-0001-9081-7185",
-        "position": "first",
+        "name": "Likun Wang",
+        "openalex_author_id": "https://openalex.org/A5100623561",
+        "orcid": "https://orcid.org/0000-0001-5646-9746",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -257071,9 +257574,104 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Frank Y. Lai",
+        "openalex_author_id": null,
+        "orcid": null,
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Michigan",
+            "ror": "https://ror.org/00jmfr291",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "University of Michigan, Ann Arbor, MI 48109 USA"
+        ]
+      },
+      {
+        "name": "Eric Shen",
+        "openalex_author_id": "https://openalex.org/A5029552327",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Michigan",
+            "ror": "https://ror.org/00jmfr291",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "University of Michigan, Ann Arbor, MI 48109 USA"
+        ]
+      },
+      {
+        "name": "James W. Fonda",
+        "openalex_author_id": "https://openalex.org/A5054581816",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [],
+        "raw_affiliation_strings": [
+          "Boeing Additive Manufacturing Intelligence Center"
+        ]
+      },
+      {
+        "name": "Al Salour",
+        "openalex_author_id": "https://openalex.org/A5110120418",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [],
+        "raw_affiliation_strings": [
+          "Boeing Additive Manufacturing Intelligence Center"
+        ]
+      },
+      {
+        "name": "Dawn M. Tilbury",
+        "openalex_author_id": "https://openalex.org/A5025730901",
+        "orcid": "https://orcid.org/0000-0002-2510-0556",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Michigan",
+            "ror": "https://ror.org/00jmfr291",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "University of Michigan, Ann Arbor, MI 48109 USA"
+        ]
+      },
+      {
+        "name": "Kira L. Barton",
+        "openalex_author_id": "https://openalex.org/A5084847741",
+        "orcid": "https://orcid.org/0000-0003-1047-8078",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Michigan",
+            "ror": "https://ror.org/00jmfr291",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "University of Michigan, Ann Arbor, MI 48109 USA"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2024,
     "venue": "IFAC-PapersOnLine",
     "doi": "10.1016/j.ifacol.2025.01.106",
@@ -257092,7 +257690,7 @@
     "issn_l": "",
     "publisher": "Elsevier BV",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4406764088",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2898405271",
@@ -270120,10 +270718,10 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Ratnesh Kumar Raj Singh",
-        "openalex_author_id": "https://openalex.org/A5066015004",
-        "orcid": "https://orcid.org/0000-0001-9377-6753",
-        "position": "middle",
+        "name": "Manish Pratap Singh",
+        "openalex_author_id": "https://openalex.org/A5021211339",
+        "orcid": "https://orcid.org/0000-0002-9530-2348",
+        "position": "first",
         "is_corresponding": true,
         "institutions": [
           {
@@ -278176,9 +278774,28 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Jürgen Stampfl",
+        "openalex_author_id": "https://openalex.org/A5010673680",
+        "orcid": "https://orcid.org/0000-0002-3626-5647",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "TU Wien",
+            "ror": "https://ror.org/04d836q62",
+            "country_code": "AT",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Institute of Materials Science and Technology, TU Wien, Getreidemarkt 9, Vienna 1060, Austria"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2024,
     "venue": "Additive Manufacturing",
     "doi": "10.1016/j.addma.2024.104394",
@@ -278197,7 +278814,7 @@
     "issn_l": "",
     "publisher": "Elsevier BV",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4401933433",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2764842179",
@@ -282803,50 +283420,9 @@
         ]
       }
     ],
-    "corresponding_authors": [
-      {
-        "name": "Hongchao Cui",
-        "openalex_author_id": "https://openalex.org/A5108964334",
-        "orcid": "https://orcid.org/0000-0002-1614-2455",
-        "position": "middle",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "Beijing Jiaotong University",
-            "ror": "https://ror.org/01yj56c84",
-            "country_code": "CN",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Beijing Key Laboratory of Flow and Heat Transfer of Phase Changing in Micro and Small Scale, School of Mechanical, Electronic and Control Engineering, Beijing Jiaotong University, Beijing, China",
-          "Key Laboratory of Vehicle Advanced Manufacturing, Measuring and Control Technology (Beijing Jiaotong University), Ministry of Education, Beijing, China",
-          "School of Mechanical, Electronic and Control Engineering, Beijing Jiaotong Uninversity, Beijing, China"
-        ]
-      },
-      {
-        "name": "Zhenkun Li",
-        "openalex_author_id": "https://openalex.org/A5114201939",
-        "orcid": "https://orcid.org/0009-0007-5977-5141",
-        "position": "last",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "Beijing Jiaotong University",
-            "ror": "https://ror.org/01yj56c84",
-            "country_code": "CN",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Beijing Key Laboratory of Flow and Heat Transfer of Phase Changing in Micro and Small Scale, School of Mechanical, Electronic and Control Engineering, Beijing Jiaotong University, Beijing, China",
-          "Key Laboratory of Vehicle Advanced Manufacturing, Measuring and Control Technology (Beijing Jiaotong University), Ministry of Education, Beijing, China",
-          "School of Mechanical, Electronic and Control Engineering, Beijing Jiaotong Uninversity, Beijing, China"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
     "year": 2024,
     "venue": "3D Printing and Additive Manufacturing",
     "doi": "10.1089/3dp.2023.0125",
@@ -282866,8 +283442,8 @@
     "issn_l": "",
     "publisher": "SAGE Publications",
     "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4386213192",
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S4210174904",
     "venue_metrics": {
@@ -287660,7 +288236,7 @@
       },
       {
         "name": "Zihuan Chen",
-        "openalex_author_id": "https://openalex.org/A5024222220",
+        "openalex_author_id": null,
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -288924,7 +289500,7 @@
       },
       {
         "name": "Huanyue Zhang",
-        "openalex_author_id": "https://openalex.org/A5014806689",
+        "openalex_author_id": null,
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -288939,7 +289515,7 @@
         "raw_affiliation_strings": [
           "Department of Orthopedics, Central Hospital of Dalian University of Technology, Dalian, People’s Republic of China",
           "Instrumental Analysis Center, Dalian University of Technology, Dalian, People’s Republic of China",
-          "Instrumental Analysis Center, Dalian University of Technology, Dalian, People's Republic of China"
+          "Department of Orthopedics, Central Hospital of Dalian University of Technology, Dalian, People's Republic of China"
         ]
       },
       {
@@ -305437,29 +306013,9 @@
         ]
       }
     ],
-    "corresponding_authors": [
-      {
-        "name": "Vera Gesina Kortman",
-        "openalex_author_id": "https://openalex.org/A5037436525",
-        "orcid": "https://orcid.org/0000-0002-2370-0013",
-        "position": "first",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "Delft University of Technology",
-            "ror": "https://ror.org/02e2c7k09",
-            "country_code": "NL",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of BioMechanical Engineering, Faculty of 3mE, Delft University of Technology, Delft, the Netherlands",
-          "Department of Marine and Transport Technology, Faculty of 3mE, Delft University of Technology, Delft, the Netherlands"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
     "year": 2024,
     "venue": "3D Printing and Additive Manufacturing",
     "doi": "10.1089/3dp.2023.0198",
@@ -305479,8 +306035,8 @@
     "issn_l": "",
     "publisher": "SAGE Publications",
     "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4389988724",
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S4210174904",
     "venue_metrics": {
@@ -316408,9 +316964,50 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Jeng‐Ywan Jeng",
+        "openalex_author_id": "https://openalex.org/A5005502516",
+        "orcid": "https://orcid.org/0000-0001-5418-0703",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Indian Institute of Technology Guwahati",
+            "ror": "https://ror.org/0022nd079",
+            "country_code": "IN",
+            "type": "education"
+          },
+          {
+            "name": "National Taiwan University of Science and Technology",
+            "ror": "https://ror.org/00q09pe49",
+            "country_code": "TW",
+            "type": "education"
+          },
+          {
+            "name": "Extreme Light Infrastructure Beamlines",
+            "ror": "https://ror.org/00yzpcc69",
+            "country_code": "CZ",
+            "type": "facility"
+          },
+          {
+            "name": "National Cheng Kung University",
+            "ror": "https://ror.org/01b8kcc49",
+            "country_code": "TW",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Academy of Innovative Semiconductor and Sustainable Manufacturing, National Cheng Kung University, No. 1, Dasyue Rd., Tainan City 701, Taiwan, ROC",
+          "Department of Design, Indian Institute of Technology Guwahati, Guwahati 781039, Assam, India",
+          "Department of Mechanical Engineering, National Taiwan University of Science and Technology, No. 43, Sec. 4, Keelung Rd., Taipei 106, Taiwan, ROC",
+          "Taiwan High-Speed 3D Printing Research Center, National Taiwan University of Science and Technology, No. 43, Sec. 4, Keelung Rd., Taipei 106, Taiwan, ROC",
+          "Visiting Scholar, The Extreme Light Infrastructure ERIC, Za Radnicí 835, 252 41 Dolní Břežany, Prague, Czechia"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2024,
     "venue": "Materials & Design",
     "doi": "10.1016/j.matdes.2024.113268",
@@ -316429,7 +317026,7 @@
     "issn_l": "",
     "publisher": "Elsevier BV",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4401801606",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S8792693",
@@ -322547,7 +323144,7 @@
     "last_updated": "2026-09-30",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-09-30",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 3",
     "openalex_venue_rank_number": 3,
     "openalex_venue_rank_score": 2.43312101910828,
@@ -331273,54 +331870,9 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [
-      {
-        "name": "Kunyang Wang",
-        "openalex_author_id": "https://openalex.org/A5064955660",
-        "orcid": "https://orcid.org/0000-0003-3807-3697",
-        "position": "middle",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "Jilin University",
-            "ror": "https://ror.org/00js3aw79",
-            "country_code": "CN",
-            "type": "education"
-          },
-          {
-            "name": "Liaoning Academy of Materials",
-            "ror": "https://ror.org/0394yh759",
-            "country_code": null,
-            "type": "facility"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Institute of Structured and Architected Materials, Liaoning Academy of Materials, Shenyang, 110167, China",
-          "Key Laboratory of Bionic Engineering (Ministry of Education), Jilin University, Changchun, 130022, China"
-        ]
-      },
-      {
-        "name": "Bingqian Li",
-        "openalex_author_id": "https://openalex.org/A5052577366",
-        "orcid": "https://orcid.org/0000-0002-3359-8200",
-        "position": "last",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "Jilin University",
-            "ror": "https://ror.org/00js3aw79",
-            "country_code": "CN",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Key Laboratory of Bionic Engineering (Ministry of Education), Jilin University, Changchun, 130022, China",
-          "Weihai Institute for Bionics, Jilin University, Weihai, 264207, China"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
     "year": 2024,
     "venue": "Journal of Materials Research and Technology",
     "doi": "10.1016/j.jmrt.2024.10.197",
@@ -331339,8 +331891,8 @@
     "issn_l": "",
     "publisher": "Elsevier BV",
     "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4403902381",
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2765010971",
     "venue_metrics": {
@@ -331936,7 +332488,7 @@
         "name": "Ling Wang",
         "openalex_author_id": "https://openalex.org/A5115592675",
         "orcid": "https://orcid.org/0000-0002-5176-7469",
-        "position": "last",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
