@@ -1,4 +1,81 @@
 {
+  "10.1007/s43684-024-00082-w": {
+    "author_details": [
+      {
+        "name": "Farzad Azizi Zade",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Arvin Ebrahimkhanlou",
+        "orcid": "https://orcid.org/0000-0002-0740-5807",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2730-616X"
+    ],
+    "issn_l": "",
+    "publisher": "Springer Science and Business Media LLC",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4404829227",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S4210227358",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210227358",
+      "issn_l": "2730-616X",
+      "issn": [
+        "2730-616X"
+      ],
+      "type": "journal",
+      "host_organization_name": "Springer Nature",
+      "works_count": 130,
+      "cited_by_count": 1365,
+      "two_year_mean_citedness": 4.826666666666667,
+      "h_index": 16,
+      "i10_index": 35,
+      "is_core": true,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 4.826666666666667,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 2",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The study introduces a method for converting point clouds into two-node wireframe models for digital twin applications.\n2. Problem - Existing methods have largely overlooked the transformation of point clouds into as-built wireframe models suitable for structural elements.\n3. Method - The authors utilize building framing patterns and the OpenSeesPy package for modal analysis to facilitate this conversion.\n4. Key Result - The method successfully converted a 4-story mass timber building point cloud into a 3D model with a 7.5% average error and processed data at approximately 593 points per second.\n5. Takeaway - This approach enhances the capability for structural modeling and supports autonomous robotic inspection by directly utilizing point cloud data.",
+    "relevance_note_en": "The paper presents a novel method relevant to digital twinning and robotic inspection, addressing a gap in existing research.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-10-01",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1007/s43684-024-00082-w"
+  },
   "10.1016/j.jmsy.2024.04.014": {
     "author_details": [
       {
@@ -29598,96 +29675,5 @@
     "last_seen_in_crossref_run": "2026-10-01",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.3390/aerospace11020134"
-  },
-  "10.1089/3dp.2022.0269": {
-    "author_details": [
-      {
-        "name": "Mohit Kumar",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Additive and Subtractive Manufacturing Lab, Department of Mechanical and Industrial Engineering, IIT Roorkee, Roorkee, India."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Additive and Subtractive Manufacturing Lab, Department of Mechanical and Industrial Engineering, IIT Roorkee, Roorkee, India."
-        ]
-      },
-      {
-        "name": "Varun Sharma",
-        "orcid": "https://orcid.org/0000-0002-1241-4441",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Additive and Subtractive Manufacturing Lab, Department of Mechanical and Industrial Engineering, IIT Roorkee, Roorkee, India."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Additive and Subtractive Manufacturing Lab, Department of Mechanical and Industrial Engineering, IIT Roorkee, Roorkee, India."
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2329-7662",
-      "2329-7670"
-    ],
-    "issn_l": "",
-    "publisher": "SAGE Publications",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4321767085",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S4210174904",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S4210174904",
-      "issn_l": "2329-7662",
-      "issn": [
-        "2329-7662",
-        "2329-7670"
-      ],
-      "type": "journal",
-      "host_organization_name": "Mary Ann Liebert, Inc.",
-      "works_count": 768,
-      "cited_by_count": 14262,
-      "two_year_mean_citedness": 2.4384615384615387,
-      "h_index": 55,
-      "i10_index": 325,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Core manufacturing journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 2.4384615384615387,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 3",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - This study explores the shape memory effect in four-dimensional printed polylactic acid-based scaffolds with nature-inspired designs.\n2. Problem - The research addresses the need for advanced scaffolding materials that can adapt to external stimuli for biomedical applications.\n3. Method - The authors fabricated PLA-based composite scaffolds with various nature-inspired architectures and incorporated different percentages of Calcium Phosphate, followed by thermomechanical testing.\n4. Key Result - The honeycomb structure exhibited superior shape memory and mechanical properties, with Calcium Phosphate enhancing strength but negatively impacting surface integrity.\n5. Takeaway - The findings suggest potential for developing innovative self-fitting scaffolds for bone repair that leverage shape memory characteristics.",
-    "relevance_note_en": "The summary captures the core aspects of the research, including its focus, methodology, and implications for biomedical applications.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-01",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1089/3dp.2022.0269"
   }
 }

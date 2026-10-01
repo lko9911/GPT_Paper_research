@@ -29636,9 +29636,9 @@
     "corresponding_authors": [
       {
         "name": "Assia Belbachir",
-        "openalex_author_id": "https://openalex.org/A5051482797",
+        "openalex_author_id": null,
         "orcid": "https://orcid.org/0000-0002-1294-8478",
-        "position": "first",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -29660,21 +29660,21 @@
         "is_corresponding": true,
         "institutions": [
           {
-            "name": "SINTEF",
-            "ror": "https://ror.org/01f677e56",
-            "country_code": "NO",
-            "type": "facility"
-          },
-          {
             "name": "NORCE Research AS",
             "ror": "https://ror.org/02gagpf75",
             "country_code": "NO",
             "type": "facility"
+          },
+          {
+            "name": "Montimage (France)",
+            "ror": "https://ror.org/02a8qtz61",
+            "country_code": "FR",
+            "type": "company"
           }
         ],
         "raw_affiliation_strings": [
           "NORCE Research AS, Grimstad, Norway",
-          "SINTEF AS, Oslo/Porsgrunn, Norway"
+          "Montimage, Paris, France"
         ]
       }
     ],
@@ -37481,7 +37481,7 @@
     "first_added": "2026-09-27",
     "last_updated": "2026-10-01",
     "is_weekly_new": true,
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "last_seen_in_crossref_run": "2026-10-01",
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
@@ -61411,9 +61411,28 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Cédric Brunk",
+        "openalex_author_id": "https://openalex.org/A5125360816",
+        "orcid": "https://orcid.org/0000-0003-1740-6915",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Technische Universität Darmstadt",
+            "ror": "https://ror.org/05n911h24",
+            "country_code": "DE",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Institute for Production Engineering and Forming Machines, Technische Universität Darmstadt, Darmstadt, Germany"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Progress in Additive Manufacturing",
     "doi": "10.1007/s40964-026-01979-z",
@@ -61433,8 +61452,8 @@
     "issn_l": "",
     "publisher": "Springer Science and Business Media LLC",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7214971081",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S4210206835",
     "venue_metrics": {
@@ -95197,9 +95216,28 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Xiaoyong Tian",
+        "openalex_author_id": "https://openalex.org/A5104345416",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Xi'an Jiaotong University",
+            "ror": "https://ror.org/017zhmm22",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "State Key Laboratory for Manufacturing Systems Engineering, School of Mechanical Engineering, Xi'an Jiaotong University, Xi'an, 710045, China"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Journal of Manufacturing Processes",
     "doi": "10.1016/j.jmapro.2026.09.080",
@@ -95218,7 +95256,7 @@
     "issn_l": "",
     "publisher": "Elsevier BV",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7214768765",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S120037611",
@@ -107826,6 +107864,128 @@
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
+    "id": "10.1038/s41598-026-73675-5",
+    "title": "Breaking the $$\\:{\\varvec{T}}_{\\varvec{g}}$$ barrier in 4D printing: ultra-high temperature GF/TPI shape memory composite",
+    "authors": [
+      "Krishna Kumar",
+      "Sumodh Kumar",
+      "Mrityunjay Doddamani"
+    ],
+    "author_details": [
+      {
+        "name": "Krishna Kumar",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Sumodh Kumar",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Mrityunjay Doddamani",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "year": 2026,
+    "venue": "Scientific Reports",
+    "doi": "10.1038/s41598-026-73675-5",
+    "url": "https://doi.org/10.1038/s41598-026-73675-5",
+    "source": [
+      "Crossref"
+    ],
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2045-2322"
+    ],
+    "issn_l": "",
+    "publisher": "Springer Science and Business Media LLC",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S196734849",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S196734849",
+      "issn_l": "2045-2322",
+      "issn": [
+        "2045-2322"
+      ],
+      "type": "journal",
+      "host_organization_name": "Nature Portfolio",
+      "works_count": 303297,
+      "cited_by_count": 7878312,
+      "two_year_mean_citedness": 4.5789508110936685,
+      "h_index": 459,
+      "i10_index": 166393,
+      "is_core": true,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 4.5789508110936685,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 2",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "publication_type": "journal_article",
+    "venue_trust": "trusted",
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "is_core_venue": false,
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "categories": [
+      "Multi-material AM"
+    ],
+    "tags": [
+      "4D printing",
+      "FDM/Material extrusion",
+      "Soft robotics"
+    ],
+    "relevance_score": 5,
+    "curation_priority": false,
+    "ai_summary_en": "1. Topic - Breaking the $$\\:{\\varvec{T}}_{\\varvec{g}}$$ barrier in 4D printing: ultra-high temperature GF/TPI shape memory composite is a 2026 paper from Scientific Reports about 4D printing, FDM/Material extrusion, and Soft robotics.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to 4D printing, FDM/Material extrusion, and Soft robotics.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for 4D printing, FDM/Material extrusion, and Soft robotics; current relevance score is 5/10.",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_en": "Relevant to the tracker through 4D printing, FDM/Material extrusion, and Soft robotics; score: 5/10.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-10-01",
+    "last_updated": "2026-10-01",
+    "is_weekly_new": true,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-10-01",
+    "openalex_venue_rank": "Rank 2",
+    "openalex_venue_rank_number": 2,
+    "openalex_venue_rank_score": 4.5789508110936685,
+    "openalex_venue_rank_percentile": 0.6476,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+  },
+  {
     "id": "10.1038/s41598-026-52065-x",
     "title": "Blockchain-based IoT integration for VAT photopolymerization additive manufacturing process security and transparency",
     "authors": [
@@ -109170,8 +109330,8 @@
         ]
       },
       {
-        "name": "Luquan Ren",
-        "openalex_author_id": "https://openalex.org/A5147005198",
+        "name": "Lei Ren",
+        "openalex_author_id": "https://openalex.org/A5126201977",
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -110006,7 +110166,7 @@
         "name": "Mondher Nasri",
         "openalex_author_id": "https://openalex.org/A5006405851",
         "orcid": "https://orcid.org/0000-0001-7848-4365",
-        "position": "first",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -140274,8 +140434,8 @@
     "corresponding_authors": [
       {
         "name": "Cheng Zhang",
-        "openalex_author_id": null,
-        "orcid": null,
+        "openalex_author_id": "https://openalex.org/A5100769098",
+        "orcid": "https://orcid.org/0000-0001-8282-9901",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -156582,8 +156742,8 @@
     "corresponding_authors": [
       {
         "name": "Aoming Zhang",
-        "openalex_author_id": "https://openalex.org/A5111021439",
-        "orcid": "https://orcid.org/0009-0000-1296-6484",
+        "openalex_author_id": null,
+        "orcid": null,
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -179614,7 +179774,7 @@
     "last_updated": "2026-10-01",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-10-01",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 3.7044257112750265,
@@ -179964,12 +180124,6 @@
             "type": "education"
           },
           {
-            "name": "Universität Ulm",
-            "ror": "https://ror.org/032000t02",
-            "country_code": "DE",
-            "type": "education"
-          },
-          {
             "name": "University of Manchester",
             "ror": "https://ror.org/027m9bs27",
             "country_code": "GB",
@@ -179986,14 +180140,16 @@
           "Department of Mechanical, Aerospace, and Civil Engineering University of Manchester  Manchester M13 9PL UK",
           "Institute of Structured and Architected Materials Liaoning Academy of Materials  Shenyang 110167 China",
           "Key Laboratory of Bionic Engineering Ministry of Education Jilin University  Changchun 130022 China",
-          "Institute of Orthopaedic Research and Biomechanics, Ulm University Medical Centre, University of Ulm, 89081 Ulm, Germany"
+          "Department of Mechanical, Aerospace, and Civil Engineering, University of Manchester, Manchester, M13 9PL UK",
+          "Institute of Structured and Architected Materials, Liaoning Academy of Materials, Shenyang, 110167 China",
+          "Key Laboratory of Bionic Engineering, Ministry of Education, Jilin University, Changchun, 130022 China"
         ]
       },
       {
         "name": "Luquan Ren",
         "openalex_author_id": null,
         "orcid": null,
-        "position": "middle",
+        "position": "last",
         "is_corresponding": true,
         "institutions": [
           {
@@ -193035,8 +193191,8 @@
     "corresponding_authors": [
       {
         "name": "Ning Li",
-        "openalex_author_id": "https://openalex.org/A5089190523",
-        "orcid": "https://orcid.org/0000-0002-7994-9504",
+        "openalex_author_id": null,
+        "orcid": null,
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -194494,8 +194650,8 @@
     "corresponding_authors": [
       {
         "name": "Xinyu Wang",
-        "openalex_author_id": null,
-        "orcid": null,
+        "openalex_author_id": "https://openalex.org/A5100352846",
+        "orcid": "https://orcid.org/0009-0001-2925-1466",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -227641,9 +227797,9 @@
     "corresponding_authors": [
       {
         "name": "Songhao Wang",
-        "openalex_author_id": "https://openalex.org/A5057228007",
+        "openalex_author_id": null,
         "orcid": "https://orcid.org/0000-0003-3643-4698",
-        "position": "first",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -247302,9 +247458,28 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Sheng Long Yang",
+        "openalex_author_id": "https://openalex.org/A5056875120",
+        "orcid": "https://orcid.org/0000-0002-6286-2779",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Guelph",
+            "ror": "https://ror.org/01r7awg59",
+            "country_code": "CA",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Engineering, University of Guelph, Guelph, Canada"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2024,
     "venue": "Manufacturing Letters",
     "doi": "10.1016/j.mfglet.2024.09.152",
@@ -247323,8 +247498,8 @@
     "issn_l": "",
     "publisher": "Elsevier BV",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4403441321",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2764828758",
     "venue_metrics": {
@@ -256198,10 +256373,10 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Likun Wang",
-        "openalex_author_id": "https://openalex.org/A5100623561",
-        "orcid": "https://orcid.org/0000-0001-5646-9746",
-        "position": "middle",
+        "name": "Zi Wang",
+        "openalex_author_id": "https://openalex.org/A5100338326",
+        "orcid": "https://orcid.org/0000-0001-9081-7185",
+        "position": "first",
         "is_corresponding": true,
         "institutions": [
           {
@@ -289522,7 +289697,7 @@
       },
       {
         "name": "Huanyue Zhang",
-        "openalex_author_id": null,
+        "openalex_author_id": "https://openalex.org/A5014806689",
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -289537,14 +289712,14 @@
         "raw_affiliation_strings": [
           "Department of Orthopedics, Central Hospital of Dalian University of Technology, Dalian, People’s Republic of China",
           "Instrumental Analysis Center, Dalian University of Technology, Dalian, People’s Republic of China",
-          "Department of Orthopedics, Central Hospital of Dalian University of Technology, Dalian, People's Republic of China"
+          "Instrumental Analysis Center, Dalian University of Technology, Dalian, People's Republic of China"
         ]
       },
       {
         "name": "Hao Zhang",
         "openalex_author_id": null,
         "orcid": null,
-        "position": "last",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
