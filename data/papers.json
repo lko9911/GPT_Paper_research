@@ -93044,7 +93044,7 @@
     "first_added": "2026-08-10",
     "last_updated": "2026-09-30",
     "is_weekly_new": false,
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "last_seen_in_crossref_run": "2026-09-30",
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
@@ -130464,9 +130464,9 @@
     ],
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Progress in Additive Manufacturing",
+    "crossref_target_issn": "2363-9512",
     "issn": [
       "2363-9512",
       "2363-9520"
@@ -283420,9 +283420,50 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Hongchao Cui",
+        "openalex_author_id": "https://openalex.org/A5108964334",
+        "orcid": "https://orcid.org/0000-0002-1614-2455",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Beijing Jiaotong University",
+            "ror": "https://ror.org/01yj56c84",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Beijing Key Laboratory of Flow and Heat Transfer of Phase Changing in Micro and Small Scale, School of Mechanical, Electronic and Control Engineering, Beijing Jiaotong University, Beijing, China",
+          "Key Laboratory of Vehicle Advanced Manufacturing, Measuring and Control Technology (Beijing Jiaotong University), Ministry of Education, Beijing, China",
+          "School of Mechanical, Electronic and Control Engineering, Beijing Jiaotong Uninversity, Beijing, China"
+        ]
+      },
+      {
+        "name": "Zhenkun Li",
+        "openalex_author_id": "https://openalex.org/A5114201939",
+        "orcid": "https://orcid.org/0009-0007-5977-5141",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Beijing Jiaotong University",
+            "ror": "https://ror.org/01yj56c84",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Beijing Key Laboratory of Flow and Heat Transfer of Phase Changing in Micro and Small Scale, School of Mechanical, Electronic and Control Engineering, Beijing Jiaotong University, Beijing, China",
+          "Key Laboratory of Vehicle Advanced Manufacturing, Measuring and Control Technology (Beijing Jiaotong University), Ministry of Education, Beijing, China",
+          "School of Mechanical, Electronic and Control Engineering, Beijing Jiaotong Uninversity, Beijing, China"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2024,
     "venue": "3D Printing and Additive Manufacturing",
     "doi": "10.1089/3dp.2023.0125",
@@ -283442,8 +283483,8 @@
     "issn_l": "",
     "publisher": "SAGE Publications",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4386213192",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S4210174904",
     "venue_metrics": {
@@ -306013,9 +306054,29 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Vera Gesina Kortman",
+        "openalex_author_id": "https://openalex.org/A5037436525",
+        "orcid": "https://orcid.org/0000-0002-2370-0013",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Delft University of Technology",
+            "ror": "https://ror.org/02e2c7k09",
+            "country_code": "NL",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of BioMechanical Engineering, Faculty of 3mE, Delft University of Technology, Delft, the Netherlands",
+          "Department of Marine and Transport Technology, Faculty of 3mE, Delft University of Technology, Delft, the Netherlands"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2024,
     "venue": "3D Printing and Additive Manufacturing",
     "doi": "10.1089/3dp.2023.0198",
@@ -306035,8 +306096,8 @@
     "issn_l": "",
     "publisher": "SAGE Publications",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4389988724",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S4210174904",
     "venue_metrics": {
@@ -323144,7 +323205,7 @@
     "last_updated": "2026-09-30",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-09-30",
-    "not_seen_in_latest_crossref_run": true,
+    "not_seen_in_latest_crossref_run": false,
     "openalex_venue_rank": "Rank 3",
     "openalex_venue_rank_number": 3,
     "openalex_venue_rank_score": 2.43312101910828,
@@ -331870,9 +331931,54 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Kunyang Wang",
+        "openalex_author_id": "https://openalex.org/A5064955660",
+        "orcid": "https://orcid.org/0000-0003-3807-3697",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Jilin University",
+            "ror": "https://ror.org/00js3aw79",
+            "country_code": "CN",
+            "type": "education"
+          },
+          {
+            "name": "Liaoning Academy of Materials",
+            "ror": "https://ror.org/0394yh759",
+            "country_code": null,
+            "type": "facility"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Institute of Structured and Architected Materials, Liaoning Academy of Materials, Shenyang, 110167, China",
+          "Key Laboratory of Bionic Engineering (Ministry of Education), Jilin University, Changchun, 130022, China"
+        ]
+      },
+      {
+        "name": "Bingqian Li",
+        "openalex_author_id": "https://openalex.org/A5052577366",
+        "orcid": "https://orcid.org/0000-0002-3359-8200",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Jilin University",
+            "ror": "https://ror.org/00js3aw79",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Key Laboratory of Bionic Engineering (Ministry of Education), Jilin University, Changchun, 130022, China",
+          "Weihai Institute for Bionics, Jilin University, Weihai, 264207, China"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2024,
     "venue": "Journal of Materials Research and Technology",
     "doi": "10.1016/j.jmrt.2024.10.197",
@@ -331891,8 +331997,8 @@
     "issn_l": "",
     "publisher": "Elsevier BV",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4403902381",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2765010971",
     "venue_metrics": {
