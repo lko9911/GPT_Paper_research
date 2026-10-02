@@ -4,26 +4,26 @@ This file is written by GitHub Actions so the latest paper-update state can be c
 
 ## Latest Workflow Check
 
-- Checked at: `2026-10-02T22:51:07+09:00` KST
+- Checked at: `2026-10-03T00:01:43+09:00` KST
 - Workflow: `Update papers`
 - Event: `schedule`
 - Run: [37015657237](https://github.com/lko9911/GPT_Paper_research/actions/runs/37015657237)
-- Job status: `in_progress`
-- Update step: `running`
-- Commit step: `pending`
-- Deploy step: `pending`
-- Update phase: `in_progress`
+- Job status: `success`
+- Update step: `success`
+- Commit step: `success`
+- Deploy step: `success`
+- Update phase: `success`
 - Ref: `main`
 - Commit SHA: `0ce56032ff440334c557fed8088ec7e89deb38c5`
 
 ## Last Successful Collection
 
-- Last collection time: `2026-10-02 16:00:56 KST`
-- Curated papers: `1695`
-- Raw candidates: `2183`
+- Last collection time: `2026-10-02 22:51:25 KST`
+- Curated papers: `1696`
+- Raw candidates: `2186`
 - Archived hidden: `597`
-- Papers added in last `7` days: `16`
-- Papers added in last successful run: `547`
+- Papers added in last `7` days: `17`
+- Papers added in last successful run: `548`
 
 ## Schedule
 
