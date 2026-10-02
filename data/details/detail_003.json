@@ -1,4 +1,91 @@
 {
+  "10.1007/s40964-025-01227-w": {
+    "author_details": [
+      {
+        "name": "Abdelhamid Ziadia",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Mohamed Habibi",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Sousso Kelouwani",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2363-9512",
+      "2363-9520"
+    ],
+    "issn_l": "",
+    "publisher": "Springer Science and Business Media LLC",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4412074148",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S4210206835",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210206835",
+      "issn_l": "2363-9512",
+      "issn": [
+        "2363-9512",
+        "2363-9520"
+      ],
+      "type": "journal",
+      "host_organization_name": "Springer Science+Business Media",
+      "works_count": 1809,
+      "cited_by_count": 21422,
+      "two_year_mean_citedness": 4.039043824701195,
+      "h_index": 63,
+      "i10_index": 494,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 4.039043824701195,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 2",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - This paper focuses on optimizing surface roughness in FDM 3D printing using digital twin technology.\n2. Problem - Achieving consistent layer-specific surface quality in additive manufacturing processes remains a significant challenge.\n3. Method - The authors employ a digital twin framework to enable real-time adjustments during the printing process based on surface roughness data.\n4. Key Result - The implementation of this approach leads to improved surface quality and reduced variability in the printed layers.\n5. Takeaway - Utilizing digital twins can significantly enhance the precision of surface finish in 3D printing, offering a pathway for better manufacturing outcomes.",
+    "relevance_note_en": "The summary captures the essence of the paper's focus on digital twin technology for optimizing surface roughness in 3D printing.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-10-02",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1007/s40964-025-01227-w"
+  },
   "10.1007/s00170-025-16363-4": {
     "author_details": [
       {
@@ -21240,8 +21327,8 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-01",
-    "not_seen_in_latest_crossref_run": true,
+    "last_seen_in_crossref_run": "2026-10-02",
+    "not_seen_in_latest_crossref_run": false,
     "id": "10.1007/s00170-025-16354-5"
   },
   "10.1016/j.msea.2025.148034": {
@@ -30833,234 +30920,5 @@
     "last_seen_in_crossref_run": "2026-10-02",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/adfm.202503712"
-  },
-  "10.1021/acsami.4c20608": {
-    "author_details": [
-      {
-        "name": "Zhanhe Liu",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "State Key Laboratory of Powder Metallurgy, Central South University, Changsha 410083, China"
-          },
-          {
-            "name": "School of Materials Science and Engineering, Central South University, Changsha 410083, China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "State Key Laboratory of Powder Metallurgy, Central South University, Changsha 410083, China",
-          "School of Materials Science and Engineering, Central South University, Changsha 410083, China"
-        ]
-      },
-      {
-        "name": "Zirui Liu",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "School of Materials Science and Engineering, Central South University, Changsha 410083, China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "School of Materials Science and Engineering, Central South University, Changsha 410083, China"
-        ]
-      },
-      {
-        "name": "Kechao Zhou",
-        "orcid": "https://orcid.org/0000-0003-2984-1404",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "State Key Laboratory of Powder Metallurgy, Central South University, Changsha 410083, China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "State Key Laboratory of Powder Metallurgy, Central South University, Changsha 410083, China"
-        ]
-      },
-      {
-        "name": "Zihang Chen",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "School of Materials Science and Engineering, Central South University, Changsha 410083, China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "School of Materials Science and Engineering, Central South University, Changsha 410083, China"
-        ]
-      },
-      {
-        "name": "Kaihua Shi",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "China Tungsten and Hightech Materials Co., Ltd., Diamond Road, Zhuzhou 412000, China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "China Tungsten and Hightech Materials Co., Ltd., Diamond Road, Zhuzhou 412000, China"
-        ]
-      },
-      {
-        "name": "Xinyu Wang",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "School of Materials Science and Engineering, Central South University, Changsha 410083, China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "School of Materials Science and Engineering, Central South University, Changsha 410083, China"
-        ]
-      },
-      {
-        "name": "Chaoqun Peng",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "School of Materials Science and Engineering, Central South University, Changsha 410083, China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "School of Materials Science and Engineering, Central South University, Changsha 410083, China"
-        ]
-      },
-      {
-        "name": "Richu Wang",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "School of Materials Science and Engineering, Central South University, Changsha 410083, China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "School of Materials Science and Engineering, Central South University, Changsha 410083, China"
-        ]
-      },
-      {
-        "name": "Shlomo Magdassi",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Casali Center of Applied Chemistry, Institute of Chemistry, The Hebrew University of Jerusalem, Jerusalem 9190401, Israel"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Casali Center of Applied Chemistry, Institute of Chemistry, The Hebrew University of Jerusalem, Jerusalem 9190401, Israel"
-        ]
-      },
-      {
-        "name": "Jin He",
-        "orcid": "https://orcid.org/0000-0002-9570-5921",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Casali Center of Applied Chemistry, Institute of Chemistry, The Hebrew University of Jerusalem, Jerusalem 9190401, Israel"
-          },
-          {
-            "name": "CAS Key Laboratory of Materials for High Power Lasers, Shanghai Institute of Optics and Fine Mechanics, Chinese Academy of Sciences, Shanghai 201800, China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Casali Center of Applied Chemistry, Institute of Chemistry, The Hebrew University of Jerusalem, Jerusalem 9190401, Israel",
-          "CAS Key Laboratory of Materials for High Power Lasers, Shanghai Institute of Optics and Fine Mechanics, Chinese Academy of Sciences, Shanghai 201800, China"
-        ]
-      },
-      {
-        "name": "Xiaofeng Wang",
-        "orcid": "https://orcid.org/0000-0002-9913-1064",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "State Key Laboratory of Powder Metallurgy, Central South University, Changsha 410083, China"
-          },
-          {
-            "name": "School of Materials Science and Engineering, Central South University, Changsha 410083, China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "State Key Laboratory of Powder Metallurgy, Central South University, Changsha 410083, China",
-          "School of Materials Science and Engineering, Central South University, Changsha 410083, China"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "ACS Applied Materials & Interfaces",
-    "crossref_target_issn": "1944-8244",
-    "issn": [
-      "1944-8244",
-      "1944-8252"
-    ],
-    "issn_l": "",
-    "publisher": "American Chemical Society (ACS)",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4406419491",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S164001016",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S164001016",
-      "issn_l": "1944-8244",
-      "issn": [
-        "1944-8244",
-        "1944-8252"
-      ],
-      "type": "journal",
-      "host_organization_name": "American Chemical Society",
-      "works_count": 69722,
-      "cited_by_count": 3298786,
-      "two_year_mean_citedness": 7.780907972281588,
-      "h_index": 372,
-      "i10_index": 53076,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 7.780907972281588,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 1",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The study focuses on the additive manufacturing of hardmetals using vat photopolymerization.\n2. Problem - Challenges in achieving high printing resolution and mechanical strength in hardmetal fabrication are addressed.\n3. Method - The authors employed in situ polymerization-induced microencapsulation of WC powder to enhance the properties of the WC-Co slurry.\n4. Key Result - The modified slurry showed a significant increase in curing depth and produced hardmetal parts with high density and hardness.\n5. Takeaway - This research demonstrates a viable approach for 3D printing complex hardmetal components with superior performance and surface quality.",
-    "relevance_note_en": "The summary captures the core findings and significance of the research without direct paraphrasing.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-02",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1021/acsami.4c20608"
   }
 }

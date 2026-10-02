@@ -4758,7 +4758,7 @@
     "publisher": "Elsevier BV",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7215094482",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S120037611",
     "venue_metrics": {
@@ -7527,9 +7527,28 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Atieh Khodadadi",
+        "openalex_author_id": "https://openalex.org/A5039871924",
+        "orcid": "https://orcid.org/0009-0001-5084-4856",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Karlsruhe Institute of Technology",
+            "ror": "https://ror.org/04t3en479",
+            "country_code": "DE",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Institute AIFB, Karlsruhe Institute of Technology, Karlsruhe, Germany"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Journal of Manufacturing Systems",
     "doi": "10.1016/j.jmsy.2026.09.021",
@@ -7548,8 +7567,8 @@
     "issn_l": "",
     "publisher": "Elsevier BV",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7215074257",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S201698446",
     "venue_metrics": {
@@ -8120,9 +8139,9 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Wenjun Xu",
-        "openalex_author_id": "https://openalex.org/A5059180329",
-        "orcid": "https://orcid.org/0000-0001-5370-3437",
+        "name": "Zhenlu Xu",
+        "openalex_author_id": "https://openalex.org/A5056473819",
+        "orcid": "https://orcid.org/0009-0007-0580-017X",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -29930,21 +29949,21 @@
         "is_corresponding": true,
         "institutions": [
           {
-            "name": "NORCE Research AS",
-            "ror": "https://ror.org/02gagpf75",
+            "name": "SINTEF",
+            "ror": "https://ror.org/01f677e56",
             "country_code": "NO",
             "type": "facility"
           },
           {
-            "name": "Montimage (France)",
-            "ror": "https://ror.org/02a8qtz61",
-            "country_code": "FR",
-            "type": "company"
+            "name": "NORCE Research AS",
+            "ror": "https://ror.org/02gagpf75",
+            "country_code": "NO",
+            "type": "facility"
           }
         ],
         "raw_affiliation_strings": [
           "NORCE Research AS, Grimstad, Norway",
-          "Montimage, Paris, France"
+          "SINTEF AS, Oslo/Porsgrunn, Norway"
         ]
       }
     ],
@@ -42343,7 +42362,7 @@
     "publisher": "Elsevier BV",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7215027434",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S120037611",
     "venue_metrics": {
@@ -48409,7 +48428,7 @@
         ]
       },
       {
-        "name": "Xiao Ling Kang",
+        "name": "Xiao Kang",
         "openalex_author_id": "https://openalex.org/A5071074675",
         "orcid": "https://orcid.org/0000-0002-0614-8554",
         "position": "middle",
@@ -62173,9 +62192,46 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Laurane Roumy",
+        "openalex_author_id": "https://openalex.org/A5018108548",
+        "orcid": "https://orcid.org/0000-0002-6273-2800",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Centre National de la Recherche Scientifique",
+            "ror": "https://ror.org/02feahw73",
+            "country_code": "FR",
+            "type": "government"
+          },
+          {
+            "name": "Institut Pprime",
+            "ror": "https://ror.org/05vjdsn22",
+            "country_code": "FR",
+            "type": "facility"
+          },
+          {
+            "name": "Université de Poitiers",
+            "ror": "https://ror.org/04xhy8q59",
+            "country_code": "FR",
+            "type": "education"
+          },
+          {
+            "name": "University of Edinburgh",
+            "ror": "https://ror.org/01nrxwf90",
+            "country_code": "GB",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "CNRS-ENSMA-Université de Poitiers Institut PPRIME, Dpt Physique et Mécanique des Matériaux, , Futuroscope Cedex, ; ESTACA’Lab-Laval, ESTACA, Laval, and School of Engineering, Institute for Infrastructure and Environment, University of Edinburgh, Edinburgh,"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Rapid Prototyping Journal",
     "doi": "10.1108/rpj-07-2025-0320",
@@ -62195,8 +62251,8 @@
     "issn_l": "",
     "publisher": "Emerald",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "https://openalex.org/W7116224686",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7119940103",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S173500210",
     "venue_metrics": {
@@ -71718,10 +71774,10 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-07-27",
-    "last_updated": "2026-10-01",
+    "last_updated": "2026-10-02",
     "is_weekly_new": false,
-    "not_seen_in_latest_crossref_run": true,
-    "last_seen_in_crossref_run": "2026-10-01",
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-10-02",
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 14.256403502995983,
@@ -73287,7 +73343,7 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Jian Fu Teng",
+        "name": "Jian Teng",
         "openalex_author_id": "https://openalex.org/A5081867386",
         "orcid": "https://orcid.org/0000-0003-0262-5680",
         "position": "first",
@@ -75591,7 +75647,7 @@
     "first_added": "2026-06-29",
     "last_updated": "2026-10-02",
     "is_weekly_new": false,
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "last_seen_in_crossref_run": "2026-10-02",
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
@@ -92142,7 +92198,7 @@
     "publisher": "Royal Society of Chemistry (RSC)",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7215070970",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2764386229",
     "venue_metrics": {
@@ -96505,7 +96561,7 @@
         "name": "Hong Wang",
         "openalex_author_id": null,
         "orcid": "https://orcid.org/0000-0001-6799-1732",
-        "position": "last",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -98028,7 +98084,7 @@
         ]
       },
       {
-        "name": "Prashant Kumar Pandey",
+        "name": "Prashant Pandey",
         "openalex_author_id": "https://openalex.org/A5089348292",
         "orcid": "https://orcid.org/0000-0003-0700-914X",
         "position": "last",
@@ -98142,6 +98198,140 @@
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 5.670454545454546,
     "openalex_venue_rank_percentile": 0.7568,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+  },
+  {
+    "id": "10.1177/23297662261492607",
+    "title": "Flexural Properties and Failure Mechanics of Morphology-Driven Mechanical Metamaterials Fabricated Using Acrylonitrile Butadiene Styrene Material on Fused Deposition Modeling Process",
+    "authors": [
+      "Salem Bashmal",
+      "Aamer Nazir"
+    ],
+    "author_details": [
+      {
+        "name": "Salem Bashmal",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Mechanical Engineering, King Fahd University of Petroleum and Minerals, Dhahran, Saudi Arabia."
+          },
+          {
+            "name": "Interdisciplinary Research Center for Intelligent Manufacturing and Robotics, King Fahd University of Petroleum and Minerals, Dhahran, Saudi Arabia."
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering, King Fahd University of Petroleum and Minerals, Dhahran, Saudi Arabia.",
+          "Interdisciplinary Research Center for Intelligent Manufacturing and Robotics, King Fahd University of Petroleum and Minerals, Dhahran, Saudi Arabia."
+        ]
+      },
+      {
+        "name": "Aamer Nazir",
+        "orcid": "https://orcid.org/0000-0002-2827-0219",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Mechanical Engineering, King Fahd University of Petroleum and Minerals, Dhahran, Saudi Arabia."
+          },
+          {
+            "name": "Interdisciplinary Research Center for Advanced Materials, King Fahd University of Petroleum and Minerals, Dhahran, Saudi Arabia."
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering, King Fahd University of Petroleum and Minerals, Dhahran, Saudi Arabia.",
+          "Interdisciplinary Research Center for Advanced Materials, King Fahd University of Petroleum and Minerals, Dhahran, Saudi Arabia."
+        ]
+      }
+    ],
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "year": 2026,
+    "venue": "3D Printing and Additive Manufacturing",
+    "doi": "10.1177/23297662261492607",
+    "url": "https://doi.org/10.1177/23297662261492607",
+    "source": [
+      "Crossref"
+    ],
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "3D Printing and Additive Manufacturing",
+    "crossref_target_issn": "2329-7662",
+    "issn": [
+      "2329-7662",
+      "2329-7670"
+    ],
+    "issn_l": "",
+    "publisher": "SAGE Publications",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S4210174904",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210174904",
+      "issn_l": "2329-7662",
+      "issn": [
+        "2329-7662",
+        "2329-7670"
+      ],
+      "type": "journal",
+      "host_organization_name": "Mary Ann Liebert, Inc.",
+      "works_count": 768,
+      "cited_by_count": 14262,
+      "two_year_mean_citedness": 2.4384615384615387,
+      "h_index": 55,
+      "i10_index": 325,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 2.4384615384615387,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 3",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "publication_type": "journal_article",
+    "venue_trust": "trusted",
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "is_core_venue": true,
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "categories": [
+      "Multi-material AM"
+    ],
+    "tags": [
+      "Metamaterials",
+      "FDM/Material extrusion"
+    ],
+    "relevance_score": 5,
+    "curation_priority": false,
+    "ai_summary_en": "1. Topic - Flexural Properties and Failure Mechanics of Morphology-Driven Mechanical Metamaterials Fabricated Using Acrylonitrile Butadiene Styrene Material on Fused Deposition Modeling Process is a 2026 paper from 3D Printing and Additive Manufacturing about Metamaterials and FDM/Material extrusion.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Metamaterials and FDM/Material extrusion.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Metamaterials and FDM/Material extrusion; current relevance score is 5/10.",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_en": "Relevant to the tracker through Metamaterials and FDM/Material extrusion; score: 5/10.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-10-02",
+    "last_updated": "2026-10-02",
+    "is_weekly_new": true,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-10-02",
+    "openalex_venue_rank": "Rank 3",
+    "openalex_venue_rank_number": 3,
+    "openalex_venue_rank_score": 2.4384615384615387,
+    "openalex_venue_rank_percentile": 0.3722,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
@@ -100584,7 +100774,7 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Kalyan K. Ghosh",
+        "name": "Kalyan Ghosh",
         "openalex_author_id": "https://openalex.org/A5037168515",
         "orcid": "https://orcid.org/0000-0001-6840-6590",
         "position": "first",
@@ -108603,9 +108793,28 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Mrityunjay R. Doddamani",
+        "openalex_author_id": "https://openalex.org/A5011842558",
+        "orcid": "https://orcid.org/0000-0002-5537-9404",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Indian Institute of Technology Jodhpur",
+            "ror": "https://ror.org/03yacj906",
+            "country_code": "IN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering, Indian Institute of Technology Jodhpur, Jodhpur, 342030, Rajasthan, India"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Scientific Reports",
     "doi": "10.1038/s41598-026-73675-5",
@@ -108624,8 +108833,8 @@
     "issn_l": "",
     "publisher": "Springer Science and Business Media LLC",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7215132722",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S196734849",
     "venue_metrics": {
@@ -110065,7 +110274,7 @@
         "name": "Luquan Ren",
         "openalex_author_id": "https://openalex.org/A5147005198",
         "orcid": null,
-        "position": "last",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -118982,11 +119191,17 @@
     "corresponding_authors": [
       {
         "name": "Maria A. Bieberich",
-        "openalex_author_id": "https://openalex.org/A5081851152",
-        "orcid": "https://orcid.org/0000-0002-1518-5330",
-        "position": "first",
+        "openalex_author_id": null,
+        "orcid": null,
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
+          {
+            "name": "University of Iowa",
+            "ror": "https://ror.org/036jqmy94",
+            "country_code": "US",
+            "type": "education"
+          },
           {
             "name": "University of Maryland, Baltimore County",
             "ror": "https://ror.org/02qskvh78",
@@ -118995,7 +119210,8 @@
           }
         ],
         "raw_affiliation_strings": [
-          "University of Maryland, Baltimore County, Baltimore, Maryland, USA"
+          "University of Maryland, Baltimore County, Baltimore, Maryland, USA",
+          "Institute for Vision Research, Carver College of Medicine, University of Iowa, Iowa City, Iowa, USA"
         ]
       },
       {
@@ -119027,7 +119243,7 @@
         "name": "Erin Lavik",
         "openalex_author_id": "https://openalex.org/A5079335476",
         "orcid": "https://orcid.org/0000-0002-0644-744X",
-        "position": "middle",
+        "position": "last",
         "is_corresponding": true,
         "institutions": [
           {
@@ -125559,7 +125775,7 @@
         ]
       },
       {
-        "name": "Ch. Durga Prasad",
+        "name": "C. Durga Prasad",
         "openalex_author_id": "https://openalex.org/A5073176555",
         "orcid": "https://orcid.org/0000-0002-6632-0037",
         "position": "last",
@@ -132319,7 +132535,7 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Charles C. Wade",
+        "name": "Charles Wade",
         "openalex_author_id": "https://openalex.org/A5083916090",
         "orcid": "https://orcid.org/0000-0002-6056-7717",
         "position": "first",
@@ -141140,8 +141356,8 @@
     "corresponding_authors": [
       {
         "name": "Cheng Zhang",
-        "openalex_author_id": "https://openalex.org/A5100769098",
-        "orcid": "https://orcid.org/0000-0001-8282-9901",
+        "openalex_author_id": null,
+        "orcid": null,
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -163451,8 +163667,8 @@
       },
       {
         "name": "Wenzhuo Liu",
-        "openalex_author_id": "https://openalex.org/A5107441690",
-        "orcid": "https://orcid.org/0009-0004-3542-8418",
+        "openalex_author_id": null,
+        "orcid": null,
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -180477,10 +180693,10 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-24",
-    "last_updated": "2026-10-01",
+    "last_updated": "2026-10-02",
     "is_weekly_new": false,
-    "last_seen_in_crossref_run": "2026-10-01",
-    "not_seen_in_latest_crossref_run": true,
+    "last_seen_in_crossref_run": "2026-10-02",
+    "not_seen_in_latest_crossref_run": false,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 3.7044257112750265,
@@ -195201,8 +195417,8 @@
     "corresponding_authors": [
       {
         "name": "Xinyu Wang",
-        "openalex_author_id": "https://openalex.org/A5100352846",
-        "orcid": "https://orcid.org/0009-0001-2925-1466",
+        "openalex_author_id": null,
+        "orcid": null,
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -195272,7 +195488,7 @@
         "name": "Xiaofeng Wang",
         "openalex_author_id": null,
         "orcid": "https://orcid.org/0000-0002-9913-1064",
-        "position": "last",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -256924,10 +257140,10 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Zi Wang",
-        "openalex_author_id": "https://openalex.org/A5100338326",
-        "orcid": "https://orcid.org/0000-0001-9081-7185",
-        "position": "first",
+        "name": "Likun Wang",
+        "openalex_author_id": "https://openalex.org/A5100623561",
+        "orcid": "https://orcid.org/0000-0001-5646-9746",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -290248,7 +290464,7 @@
       },
       {
         "name": "Huanyue Zhang",
-        "openalex_author_id": "https://openalex.org/A5014806689",
+        "openalex_author_id": null,
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -290263,7 +290479,7 @@
         "raw_affiliation_strings": [
           "Department of Orthopedics, Central Hospital of Dalian University of Technology, Dalian, People’s Republic of China",
           "Instrumental Analysis Center, Dalian University of Technology, Dalian, People’s Republic of China",
-          "Instrumental Analysis Center, Dalian University of Technology, Dalian, People's Republic of China"
+          "Department of Orthopedics, Central Hospital of Dalian University of Technology, Dalian, People's Republic of China"
         ]
       },
       {
@@ -323909,10 +324125,10 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-10-01",
+    "last_updated": "2026-10-02",
     "is_weekly_new": false,
-    "last_seen_in_crossref_run": "2026-10-01",
-    "not_seen_in_latest_crossref_run": true,
+    "last_seen_in_crossref_run": "2026-10-02",
+    "not_seen_in_latest_crossref_run": false,
     "openalex_venue_rank": "Rank 3",
     "openalex_venue_rank_number": 3,
     "openalex_venue_rank_score": 2.43312101910828,
@@ -330155,7 +330371,7 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Kalyan K. Ghosh",
+        "name": "Kalyan Ghosh",
         "openalex_author_id": "https://openalex.org/A5037168515",
         "orcid": "https://orcid.org/0000-0001-6840-6590",
         "position": "first",
