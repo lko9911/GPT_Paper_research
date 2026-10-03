@@ -75815,10 +75815,10 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-29",
-    "last_updated": "2026-10-02",
+    "last_updated": "2026-10-03",
     "is_weekly_new": false,
-    "not_seen_in_latest_crossref_run": true,
-    "last_seen_in_crossref_run": "2026-10-02",
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-10-03",
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 14.256403502995983,
@@ -93995,7 +93995,7 @@
     "first_added": "2026-08-10",
     "last_updated": "2026-10-03",
     "is_weekly_new": false,
-    "not_seen_in_latest_crossref_run": true,
+    "not_seen_in_latest_crossref_run": false,
     "last_seen_in_crossref_run": "2026-10-03",
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
@@ -163479,7 +163479,7 @@
     "publisher": "Emerald",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4403046998",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S173500210",
     "venue_metrics": {
@@ -180859,7 +180859,7 @@
     "last_updated": "2026-10-03",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-10-03",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 3.7044257112750265,
@@ -186110,7 +186110,7 @@
     "last_updated": "2026-10-03",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-10-03",
-    "not_seen_in_latest_crossref_run": true,
+    "not_seen_in_latest_crossref_run": false,
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 6.500249128051818,
@@ -196765,9 +196765,30 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Abdolhamid Akbarzadeh",
+        "openalex_author_id": "https://openalex.org/A5110802637",
+        "orcid": "https://orcid.org/0000-0003-0097-0341",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "McGill University",
+            "ror": "https://ror.org/01pxwe438",
+            "country_code": "CA",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Bioresource Engineering McGill University  Montreal QC H9×3V9 Canada",
+          "Department of Mechanical Engineering McGill University  Montreal QC H3A 0C3 Canada",
+          "Department of Mechanical Engineering, McGill University, Montreal, QC, H3A 0C3 Canada"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2025,
     "venue": "Advanced Functional Materials",
     "doi": "10.1002/adfm.202417618",
@@ -196787,8 +196808,8 @@
     "issn_l": "",
     "publisher": "Wiley",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4405798036",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S135204980",
     "venue_metrics": {
@@ -269340,7 +269361,7 @@
     "last_updated": "2026-10-03",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-10-03",
-    "not_seen_in_latest_crossref_run": true,
+    "not_seen_in_latest_crossref_run": false,
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 8.898073836276083,
@@ -315350,9 +315371,29 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Sandra Schlögl",
+        "openalex_author_id": "https://openalex.org/A5066950702",
+        "orcid": "https://orcid.org/0000-0002-2840-9700",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Polymer Competence Center Leoben (Austria)",
+            "ror": "https://ror.org/02j8sxk20",
+            "country_code": "AT",
+            "type": "company"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Chemistry of Functional Polymers Polymer Competence Center Leoben GmbH  Roseggerstrasse 12 Leoben A‐8700 Austria",
+          "Chemistry of Functional Polymers, Polymer Competence Center Leoben GmbH, Roseggerstrasse 12, Leoben, A-8700 Austria"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2024,
     "venue": "Advanced Engineering Materials",
     "doi": "10.1002/adem.202301699",
@@ -315372,8 +315413,8 @@
     "issn_l": "",
     "publisher": "Wiley",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4392761118",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S156255550",
     "venue_metrics": {
