@@ -1,4 +1,127 @@
 {
+  "10.1002/adma.75168": {
+    "author_details": [
+      {
+        "name": "David C. Bershadsky",
+        "orcid": "https://orcid.org/0009-0006-5983-1521",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Chandra Family Department of Electrical and Computer Engineering The University of Texas at Austin  Austin Texas USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Chandra Family Department of Electrical and Computer Engineering The University of Texas at Austin  Austin Texas USA"
+        ]
+      },
+      {
+        "name": "Franz A. Stolpen",
+        "orcid": "https://orcid.org/0009-0003-6220-9571",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Chemistry The University of Texas at Austin  Austin Texas USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Chemistry The University of Texas at Austin  Austin Texas USA"
+        ]
+      },
+      {
+        "name": "Zachariah A. Page",
+        "orcid": "https://orcid.org/0000-0002-1013-5422",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Chemistry The University of Texas at Austin  Austin Texas USA"
+          },
+          {
+            "name": "McKetta Department of Chemical Engineering The University of Texas at Austin  Austin Texas USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Chemistry The University of Texas at Austin  Austin Texas USA",
+          "McKetta Department of Chemical Engineering The University of Texas at Austin  Austin Texas USA"
+        ]
+      },
+      {
+        "name": "Lillian Chin",
+        "orcid": "https://orcid.org/0000-0003-4083-5275",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Chandra Family Department of Electrical and Computer Engineering The University of Texas at Austin  Austin Texas USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Chandra Family Department of Electrical and Computer Engineering The University of Texas at Austin  Austin Texas USA"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Advanced Materials",
+    "crossref_target_issn": "0935-9648",
+    "issn": [
+      "0935-9648",
+      "1521-4095"
+    ],
+    "issn_l": "",
+    "publisher": "Wiley",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7214772867",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S99352657",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S99352657",
+      "issn_l": "0935-9648",
+      "issn": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "type": "journal",
+      "host_organization_name": null,
+      "works_count": 44789,
+      "cited_by_count": 4803689,
+      "two_year_mean_citedness": 21.19633376740459,
+      "h_index": 743,
+      "i10_index": 31001,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "High-impact general journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 21.19633376740459,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - Seamless Mechanical Programming Through Hybrid Epoxy-Acrylate Printing for Soft-Rigid Robots is a 2026 paper from Advanced Materials about Soft robotics.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Soft robotics.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Soft robotics; current relevance score is 6/10.",
+    "relevance_note_en": "Relevant to the tracker through Soft robotics; score: 6/10.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-10-02",
+    "id": "10.1002/adma.75168"
+  },
   "10.1002/adma.202510141": {
     "author_details": [
       {
@@ -20835,7 +20958,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "not_seen_in_latest_crossref_run": true,
+    "not_seen_in_latest_crossref_run": false,
     "last_seen_in_crossref_run": "2026-10-02",
     "id": "10.1002/adfm.76743"
   },
@@ -33228,7 +33351,7 @@
     "abstract_used_for_summary": false,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "last_seen_in_crossref_run": "2026-10-02",
     "id": "10.1007/s00170-026-18888-8"
   },
@@ -34759,210 +34882,5 @@
     "not_seen_in_latest_crossref_run": false,
     "last_seen_in_crossref_run": "2026-10-02",
     "id": "10.1016/j.jmapro.2026.09.080"
-  },
-  "10.1002/adfm.78393": {
-    "author_details": [
-      {
-        "name": "Michael Klein",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Helmholtz‐Institute for Polymers in Energy Applications Jena (HIPOLE Jena)  Jena Germany"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Helmholtz‐Institute for Polymers in Energy Applications Jena (HIPOLE Jena)  Jena Germany"
-        ]
-      },
-      {
-        "name": "Michael F. Agyemang",
-        "orcid": "https://orcid.org/0009-0003-8667-1066",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Institute of Physical Chemistry (IPC) and Abbe Center of Photonics (ACP) Friedrich Schiller University Jena  Jena Germany"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Institute of Physical Chemistry (IPC) and Abbe Center of Photonics (ACP) Friedrich Schiller University Jena  Jena Germany"
-        ]
-      },
-      {
-        "name": "Michael Schmitt",
-        "orcid": "https://orcid.org/0000-0002-3807-3630",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Institute of Physical Chemistry (IPC) and Abbe Center of Photonics (ACP) Friedrich Schiller University Jena  Jena Germany"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Institute of Physical Chemistry (IPC) and Abbe Center of Photonics (ACP) Friedrich Schiller University Jena  Jena Germany"
-        ]
-      },
-      {
-        "name": "Jürgen Popp",
-        "orcid": "https://orcid.org/0000-0003-4257-593X",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Institute of Physical Chemistry (IPC) and Abbe Center of Photonics (ACP) Friedrich Schiller University Jena  Jena Germany"
-          },
-          {
-            "name": "Jena Center For Soft Matter (JCSM) Friedrich Schiller University Jena  Jena Germany"
-          },
-          {
-            "name": "Leibniz Institute of Photonic Technology e. V. Jena  Jena Germany"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Institute of Physical Chemistry (IPC) and Abbe Center of Photonics (ACP) Friedrich Schiller University Jena  Jena Germany",
-          "Jena Center For Soft Matter (JCSM) Friedrich Schiller University Jena  Jena Germany",
-          "Leibniz Institute of Photonic Technology e. V. Jena  Jena Germany"
-        ]
-      },
-      {
-        "name": "Martin D. Hager",
-        "orcid": "https://orcid.org/0000-0002-6373-6600",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Helmholtz‐Institute for Polymers in Energy Applications Jena (HIPOLE Jena)  Jena Germany"
-          },
-          {
-            "name": "Jena Center For Soft Matter (JCSM) Friedrich Schiller University Jena  Jena Germany"
-          },
-          {
-            "name": "Helmholtz Zentrum Berlin Für Materialien und Energie (HZB)  Berlin Germany"
-          },
-          {
-            "name": "Laboratory of Organic and Macromolecular Chemistry (IOMC) Friedrich Schiller University Jena  Jena Germany"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Helmholtz‐Institute for Polymers in Energy Applications Jena (HIPOLE Jena)  Jena Germany",
-          "Jena Center For Soft Matter (JCSM) Friedrich Schiller University Jena  Jena Germany",
-          "Helmholtz Zentrum Berlin Für Materialien und Energie (HZB)  Berlin Germany",
-          "Laboratory of Organic and Macromolecular Chemistry (IOMC) Friedrich Schiller University Jena  Jena Germany"
-        ]
-      },
-      {
-        "name": "Stefan Zechel",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Helmholtz‐Institute for Polymers in Energy Applications Jena (HIPOLE Jena)  Jena Germany"
-          },
-          {
-            "name": "Jena Center For Soft Matter (JCSM) Friedrich Schiller University Jena  Jena Germany"
-          },
-          {
-            "name": "Helmholtz Zentrum Berlin Für Materialien und Energie (HZB)  Berlin Germany"
-          },
-          {
-            "name": "Laboratory of Organic and Macromolecular Chemistry (IOMC) Friedrich Schiller University Jena  Jena Germany"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Helmholtz‐Institute for Polymers in Energy Applications Jena (HIPOLE Jena)  Jena Germany",
-          "Jena Center For Soft Matter (JCSM) Friedrich Schiller University Jena  Jena Germany",
-          "Helmholtz Zentrum Berlin Für Materialien und Energie (HZB)  Berlin Germany",
-          "Laboratory of Organic and Macromolecular Chemistry (IOMC) Friedrich Schiller University Jena  Jena Germany"
-        ]
-      },
-      {
-        "name": "Ulrich S. Schubert",
-        "orcid": "https://orcid.org/0000-0003-4978-4670",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Helmholtz‐Institute for Polymers in Energy Applications Jena (HIPOLE Jena)  Jena Germany"
-          },
-          {
-            "name": "Jena Center For Soft Matter (JCSM) Friedrich Schiller University Jena  Jena Germany"
-          },
-          {
-            "name": "Helmholtz Zentrum Berlin Für Materialien und Energie (HZB)  Berlin Germany"
-          },
-          {
-            "name": "Laboratory of Organic and Macromolecular Chemistry (IOMC) Friedrich Schiller University Jena  Jena Germany"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Helmholtz‐Institute for Polymers in Energy Applications Jena (HIPOLE Jena)  Jena Germany",
-          "Jena Center For Soft Matter (JCSM) Friedrich Schiller University Jena  Jena Germany",
-          "Helmholtz Zentrum Berlin Für Materialien und Energie (HZB)  Berlin Germany",
-          "Laboratory of Organic and Macromolecular Chemistry (IOMC) Friedrich Schiller University Jena  Jena Germany"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "1616-301X",
-      "1616-3028"
-    ],
-    "issn_l": "",
-    "publisher": "Wiley",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W7214338001",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S135204980",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S135204980",
-      "issn_l": "1616-301X",
-      "issn": [
-        "1616-301X",
-        "1616-3028"
-      ],
-      "type": "journal",
-      "host_organization_name": "Wiley",
-      "works_count": 42483,
-      "cited_by_count": 2508008,
-      "two_year_mean_citedness": 14.256403502995983,
-      "h_index": 476,
-      "i10_index": 26898,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "High-impact general journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 14.256403502995983,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 1",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - Graded Metallopolymer Structures with Shape-Memory Abilities via DLP-Based 3D-Printing is a 2026 paper from Advanced Functional Materials about DLP.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to DLP.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for DLP; current relevance score is 5/10.",
-    "relevance_note_en": "Relevant to the tracker through DLP; score: 5/10.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "not_seen_in_latest_crossref_run": false,
-    "last_seen_in_crossref_run": "2026-10-02",
-    "id": "10.1002/adfm.78393"
   }
 }
