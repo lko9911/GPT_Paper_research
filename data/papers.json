@@ -16943,9 +16943,28 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Md Shafiqul Islam",
+        "openalex_author_id": "https://openalex.org/A5083456021",
+        "orcid": "https://orcid.org/0000-0002-1162-7023",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Blekinge Institute of Technology",
+            "ror": "https://ror.org/0093a8w51",
+            "country_code": "SE",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering, Blekinge Institute of Technology, Valhallavägen 1, Karlskrona, 37179, Blekinge, Sweden"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "The International Journal of Advanced Manufacturing Technology",
     "doi": "10.1007/s00170-026-19184-1",
@@ -16965,7 +16984,7 @@
     "issn_l": "",
     "publisher": "Springer Science and Business Media LLC",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7216279812",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S77056576",
@@ -30082,21 +30101,21 @@
         "is_corresponding": true,
         "institutions": [
           {
-            "name": "SINTEF",
-            "ror": "https://ror.org/01f677e56",
-            "country_code": "NO",
-            "type": "facility"
-          },
-          {
             "name": "NORCE Research AS",
             "ror": "https://ror.org/02gagpf75",
             "country_code": "NO",
             "type": "facility"
+          },
+          {
+            "name": "Montimage (France)",
+            "ror": "https://ror.org/02a8qtz61",
+            "country_code": "FR",
+            "type": "company"
           }
         ],
         "raw_affiliation_strings": [
           "NORCE Research AS, Grimstad, Norway",
-          "SINTEF AS, Oslo/Porsgrunn, Norway"
+          "Montimage, Paris, France"
         ]
       }
     ],
@@ -44240,7 +44259,7 @@
     "last_updated": "2026-10-04",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-10-04",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 3.6969904240766076,
@@ -62362,46 +62381,9 @@
         ]
       }
     ],
-    "corresponding_authors": [
-      {
-        "name": "Laurane Roumy",
-        "openalex_author_id": "https://openalex.org/A5018108548",
-        "orcid": "https://orcid.org/0000-0002-6273-2800",
-        "position": "first",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "Centre National de la Recherche Scientifique",
-            "ror": "https://ror.org/02feahw73",
-            "country_code": "FR",
-            "type": "government"
-          },
-          {
-            "name": "Institut Pprime",
-            "ror": "https://ror.org/05vjdsn22",
-            "country_code": "FR",
-            "type": "facility"
-          },
-          {
-            "name": "Université de Poitiers",
-            "ror": "https://ror.org/04xhy8q59",
-            "country_code": "FR",
-            "type": "education"
-          },
-          {
-            "name": "University of Edinburgh",
-            "ror": "https://ror.org/01nrxwf90",
-            "country_code": "GB",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "CNRS-ENSMA-Université de Poitiers Institut PPRIME, Dpt Physique et Mécanique des Matériaux, , Futuroscope Cedex, ; ESTACA’Lab-Laval, ESTACA, Laval, and School of Engineering, Institute for Infrastructure and Environment, University of Edinburgh, Edinburgh,"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
     "year": 2026,
     "venue": "Rapid Prototyping Journal",
     "doi": "10.1108/rpj-07-2025-0320",
@@ -62421,8 +62403,8 @@
     "issn_l": "",
     "publisher": "Emerald",
     "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W7119940103",
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "https://openalex.org/W7116224686",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S173500210",
     "venue_metrics": {
@@ -75815,10 +75797,10 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-29",
-    "last_updated": "2026-10-03",
+    "last_updated": "2026-10-04",
     "is_weekly_new": false,
-    "not_seen_in_latest_crossref_run": true,
-    "last_seen_in_crossref_run": "2026-10-03",
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-10-04",
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 14.256403502995983,
@@ -93993,10 +93975,10 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-08-10",
-    "last_updated": "2026-10-03",
+    "last_updated": "2026-10-04",
     "is_weekly_new": false,
-    "not_seen_in_latest_crossref_run": true,
-    "last_seen_in_crossref_run": "2026-10-03",
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-10-04",
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 3.7044257112750265,
@@ -96731,7 +96713,7 @@
         "name": "Hong Wang",
         "openalex_author_id": null,
         "orcid": "https://orcid.org/0000-0001-6799-1732",
-        "position": "middle",
+        "position": "last",
         "is_corresponding": true,
         "institutions": [
           {
@@ -110415,8 +110397,8 @@
         ]
       },
       {
-        "name": "Luquan Ren",
-        "openalex_author_id": "https://openalex.org/A5147005198",
+        "name": "Lei Ren",
+        "openalex_author_id": "https://openalex.org/A5126201977",
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -110444,7 +110426,7 @@
         "name": "Luquan Ren",
         "openalex_author_id": "https://openalex.org/A5147005198",
         "orcid": null,
-        "position": "middle",
+        "position": "last",
         "is_corresponding": true,
         "institutions": [
           {
@@ -111251,7 +111233,7 @@
         "name": "Mondher Nasri",
         "openalex_author_id": "https://openalex.org/A5006405851",
         "orcid": "https://orcid.org/0000-0001-7848-4365",
-        "position": "first",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -119361,11 +119343,17 @@
     "corresponding_authors": [
       {
         "name": "Maria A. Bieberich",
-        "openalex_author_id": "https://openalex.org/A5081851152",
-        "orcid": "https://orcid.org/0000-0002-1518-5330",
-        "position": "first",
+        "openalex_author_id": null,
+        "orcid": null,
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
+          {
+            "name": "University of Iowa",
+            "ror": "https://ror.org/036jqmy94",
+            "country_code": "US",
+            "type": "education"
+          },
           {
             "name": "University of Maryland, Baltimore County",
             "ror": "https://ror.org/02qskvh78",
@@ -119374,7 +119362,8 @@
           }
         ],
         "raw_affiliation_strings": [
-          "University of Maryland, Baltimore County, Baltimore, Maryland, USA"
+          "University of Maryland, Baltimore County, Baltimore, Maryland, USA",
+          "Institute for Vision Research, Carver College of Medicine, University of Iowa, Iowa City, Iowa, USA"
         ]
       },
       {
@@ -141519,8 +141508,8 @@
     "corresponding_authors": [
       {
         "name": "Cheng Zhang",
-        "openalex_author_id": "https://openalex.org/A5100769098",
-        "orcid": "https://orcid.org/0000-0001-8282-9901",
+        "openalex_author_id": null,
+        "orcid": null,
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -181209,6 +181198,12 @@
             "type": "education"
           },
           {
+            "name": "Universität Ulm",
+            "ror": "https://ror.org/032000t02",
+            "country_code": "DE",
+            "type": "education"
+          },
+          {
             "name": "University of Manchester",
             "ror": "https://ror.org/027m9bs27",
             "country_code": "GB",
@@ -181225,16 +181220,14 @@
           "Department of Mechanical, Aerospace, and Civil Engineering University of Manchester  Manchester M13 9PL UK",
           "Institute of Structured and Architected Materials Liaoning Academy of Materials  Shenyang 110167 China",
           "Key Laboratory of Bionic Engineering Ministry of Education Jilin University  Changchun 130022 China",
-          "Department of Mechanical, Aerospace, and Civil Engineering, University of Manchester, Manchester, M13 9PL UK",
-          "Institute of Structured and Architected Materials, Liaoning Academy of Materials, Shenyang, 110167 China",
-          "Key Laboratory of Bionic Engineering, Ministry of Education, Jilin University, Changchun, 130022 China"
+          "Institute of Orthopaedic Research and Biomechanics, Ulm University Medical Centre, University of Ulm, 89081 Ulm, Germany"
         ]
       },
       {
         "name": "Luquan Ren",
         "openalex_author_id": null,
         "orcid": null,
-        "position": "middle",
+        "position": "last",
         "is_corresponding": true,
         "institutions": [
           {
@@ -234426,10 +234419,10 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-10-03",
+    "last_updated": "2026-10-04",
     "is_weekly_new": false,
-    "last_seen_in_crossref_run": "2026-10-03",
-    "not_seen_in_latest_crossref_run": true,
+    "last_seen_in_crossref_run": "2026-10-04",
+    "not_seen_in_latest_crossref_run": false,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 4.258809936452917,
@@ -252795,8 +252788,100 @@
   {
     "id": "10.62441/nano-ntp.v20is12.15",
     "title": "Insights into Functionally Graded Materials Fabricated by Wire Arc Additive Manufacturing: A Comprehensive Review",
-    "authors": [],
-    "author_details": [],
+    "authors": [
+      "J. Kavitha",
+      "R.V.V. Krishna",
+      "G.Rathinasabapathi",
+      "R.S.Srikanth Varma",
+      "P Sreenivas",
+      "M. Ravichandran",
+      "M. Manohara",
+      "T. S. Senthilc",
+      "R Rajaprasanna"
+    ],
+    "author_details": [
+      {
+        "name": "J. Kavitha",
+        "openalex_author_id": "https://openalex.org/A5156562153",
+        "orcid": null,
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "R.V.V. Krishna",
+        "openalex_author_id": "https://openalex.org/A5156706867",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "G.Rathinasabapathi",
+        "openalex_author_id": "https://openalex.org/A5156392022",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "R.S.Srikanth Varma",
+        "openalex_author_id": "https://openalex.org/A5156643960",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "P Sreenivas",
+        "openalex_author_id": "https://openalex.org/A5156698147",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "M. Ravichandran",
+        "openalex_author_id": "https://openalex.org/A5156545568",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "M. Manohara",
+        "openalex_author_id": "https://openalex.org/A5156412922",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "T. S. Senthilc",
+        "openalex_author_id": "https://openalex.org/A5156575095",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "R Rajaprasanna",
+        "openalex_author_id": "https://openalex.org/A5156823265",
+        "orcid": null,
+        "position": "last",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
     "corresponding_authors": [],
     "corresponding_author_available": false,
     "corresponding_author_source": null,
@@ -269358,10 +269443,10 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-24",
-    "last_updated": "2026-10-03",
+    "last_updated": "2026-10-04",
     "is_weekly_new": false,
-    "last_seen_in_crossref_run": "2026-10-03",
-    "not_seen_in_latest_crossref_run": true,
+    "last_seen_in_crossref_run": "2026-10-04",
+    "not_seen_in_latest_crossref_run": false,
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 8.898073836276083,
@@ -289363,7 +289448,7 @@
       },
       {
         "name": "Zihuan Chen",
-        "openalex_author_id": null,
+        "openalex_author_id": "https://openalex.org/A5024222220",
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -290627,7 +290712,7 @@
       },
       {
         "name": "Huanyue Zhang",
-        "openalex_author_id": null,
+        "openalex_author_id": "https://openalex.org/A5014806689",
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -290642,7 +290727,7 @@
         "raw_affiliation_strings": [
           "Department of Orthopedics, Central Hospital of Dalian University of Technology, Dalian, People’s Republic of China",
           "Instrumental Analysis Center, Dalian University of Technology, Dalian, People’s Republic of China",
-          "Department of Orthopedics, Central Hospital of Dalian University of Technology, Dalian, People's Republic of China"
+          "Instrumental Analysis Center, Dalian University of Technology, Dalian, People's Republic of China"
         ]
       },
       {
@@ -302206,7 +302291,7 @@
     "last_updated": "2026-10-04",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-10-04",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 4",
     "openalex_venue_rank_number": 4,
     "openalex_venue_rank_score": 0.1440677966101695,
