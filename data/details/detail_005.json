@@ -1,4 +1,89 @@
 {
+  "10.1038/s41467-024-47480-5": {
+    "author_details": [
+      {
+        "name": "Sang-Joon Ahn",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Howon Lee",
+        "orcid": "https://orcid.org/0000-0001-5778-2398",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Kyu-Jin Cho",
+        "orcid": "https://orcid.org/0000-0003-2555-5048",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2041-1723"
+    ],
+    "issn_l": "",
+    "publisher": "Springer Science and Business Media LLC",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4396706029",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S64187185",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S64187185",
+      "issn_l": "2041-1723",
+      "issn": [
+        "2041-1723"
+      ],
+      "type": "journal",
+      "host_organization_name": "Nature Portfolio",
+      "works_count": 90441,
+      "cited_by_count": 7551319,
+      "two_year_mean_citedness": 16.130086313193587,
+      "h_index": 743,
+      "i10_index": 68559,
+      "is_core": true,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
+    "journal_quality": {
+      "label": "High-impact general journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 16.130086313193587,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - The study focuses on 3D printing using a novel digital material filament for creating functionally graded materials.\n2. Problem - Traditional FDM methods struggle to produce spatial gradients of various properties due to their simplistic nature.\n3. Method - The authors developed a digital material filament that combines multiple base materials in specific distributions, which can be printed using standard FDM printers.\n4. Key Result - This approach allows for the precise programming of material properties such as mechanical strength and electrical conductivity in the final printed structure.\n5. Takeaway - The proposed method enables low-cost and versatile production of functionally graded materials using readily available 3D printing technology.",
+    "relevance_note_en": "The summary captures the essence of the research, highlighting the innovation in 3D printing and its implications for material properties.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-10-06",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1038/s41467-024-47480-5"
+  },
   "10.1016/j.jmapro.2024.03.001": {
     "author_details": [
       {
@@ -7418,8 +7503,8 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-05",
-    "not_seen_in_latest_crossref_run": true,
+    "last_seen_in_crossref_run": "2026-10-06",
+    "not_seen_in_latest_crossref_run": false,
     "id": "10.1051/mfreview/2024010"
   },
   "10.3934/acse.2024010": {
@@ -13847,7 +13932,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "last_seen_in_crossref_run": "2026-10-06",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "id": "10.1021/acsmaterialslett.3c01359"
   },
   "10.1002/smll.202401344": {
@@ -29260,136 +29345,5 @@
     "last_seen_in_crossref_run": "2026-10-06",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.rcim.2023.102636"
-  },
-  "10.1126/scirobotics.adn6844": {
-    "author_details": [
-      {
-        "name": "Stephanie J. Woodman",
-        "orcid": "https://orcid.org/0000-0003-4858-6226",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Mechanical Engineering and Materials Science, Yale University, 9 Hillhouse Ave., New Haven, CT 06511, USA."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical Engineering and Materials Science, Yale University, 9 Hillhouse Ave., New Haven, CT 06511, USA."
-        ]
-      },
-      {
-        "name": "Dylan S. Shah",
-        "orcid": "https://orcid.org/0000-0003-3943-6170",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Mechanical Engineering and Materials Science, Yale University, 9 Hillhouse Ave., New Haven, CT 06511, USA."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical Engineering and Materials Science, Yale University, 9 Hillhouse Ave., New Haven, CT 06511, USA."
-        ]
-      },
-      {
-        "name": "Melanie Landesberg",
-        "orcid": "https://orcid.org/0009-0005-3294-844X",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Mechanical Engineering and Materials Science, Yale University, 9 Hillhouse Ave., New Haven, CT 06511, USA."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical Engineering and Materials Science, Yale University, 9 Hillhouse Ave., New Haven, CT 06511, USA."
-        ]
-      },
-      {
-        "name": "Anjali Agrawala",
-        "orcid": "https://orcid.org/0000-0003-2283-0673",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Mechanical Engineering and Materials Science, Yale University, 9 Hillhouse Ave., New Haven, CT 06511, USA."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical Engineering and Materials Science, Yale University, 9 Hillhouse Ave., New Haven, CT 06511, USA."
-        ]
-      },
-      {
-        "name": "Rebecca Kramer-Bottiglio",
-        "orcid": "https://orcid.org/0000-0003-2324-8124",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Mechanical Engineering and Materials Science, Yale University, 9 Hillhouse Ave., New Haven, CT 06511, USA."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical Engineering and Materials Science, Yale University, 9 Hillhouse Ave., New Haven, CT 06511, USA."
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "Science Robotics",
-    "crossref_target_issn": "2470-9476",
-    "issn": [
-      "2470-9476"
-    ],
-    "issn_l": "",
-    "publisher": "American Association for the Advancement of Science (AAAS)",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4402436301",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S4210213233",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S4210213233",
-      "issn_l": "2470-9476",
-      "issn": [
-        "2470-9476"
-      ],
-      "type": "journal",
-      "host_organization_name": "American Association for the Advancement of Science",
-      "works_count": 952,
-      "cited_by_count": 92140,
-      "two_year_mean_citedness": 15.948328267477203,
-      "h_index": 161,
-      "i10_index": 619,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "High-impact general journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 15.948328267477203,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 1",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - The integration of stretchable electronics into soft robots.\n2. Problem - Soft robots require computing capabilities but face limitations with rigid components.\n3. Method - A novel approach is introduced to convert complex two-layer circuits into soft, stretchable formats.\n4. Key Result - This method successfully embeds stretchable Arduino microcontrollers into soft robots, achieving over 300% strain.\n5. Takeaway - The research demonstrates the potential for advanced computational integration in soft robotics using stretchable electronics.",
-    "relevance_note_en": "The paper addresses the integration of computing in soft robots, which is a key challenge in robotics.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-06",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1126/scirobotics.adn6844"
   }
 }
