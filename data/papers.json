@@ -8158,9 +8158,9 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Wenjun Xu",
-        "openalex_author_id": "https://openalex.org/A5059180329",
-        "orcid": "https://orcid.org/0000-0001-5370-3437",
+        "name": "Zhenlu Xu",
+        "openalex_author_id": "https://openalex.org/A5056473819",
+        "orcid": "https://orcid.org/0009-0007-0580-017X",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -8941,7 +8941,7 @@
     "publisher": "Elsevier BV",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7220424601",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2764828758",
     "venue_metrics": {
@@ -14967,7 +14967,7 @@
     "publisher": "Elsevier BV",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7220369455",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2764828758",
     "venue_metrics": {
@@ -15281,7 +15281,7 @@
     "publisher": "Elsevier BV",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7220363893",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2764828758",
     "venue_metrics": {
@@ -27210,7 +27210,7 @@
     "publisher": "Elsevier BV",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7220358116",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2764828758",
     "venue_metrics": {
@@ -29277,6 +29277,120 @@
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
+    "id": "10.1007/s00170-026-19256-2",
+    "title": "Critical review of artificial intelligence in additive manufacturing with simulation-in-the-loop and digital twin development",
+    "authors": [
+      "Omer Farooq",
+      "Shahbaz Khan"
+    ],
+    "author_details": [
+      {
+        "name": "Omer Farooq",
+        "orcid": "https://orcid.org/0009-0001-7948-8058",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Shahbaz Khan",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "year": 2026,
+    "venue": "The International Journal of Advanced Manufacturing Technology",
+    "doi": "10.1007/s00170-026-19256-2",
+    "url": "https://doi.org/10.1007/s00170-026-19256-2",
+    "source": [
+      "Crossref"
+    ],
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "0268-3768",
+      "1433-3015"
+    ],
+    "issn_l": "",
+    "publisher": "Springer Science and Business Media LLC",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S77056576",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S77056576",
+      "issn_l": "0268-3768",
+      "issn": [
+        "0268-3768",
+        "1433-3015"
+      ],
+      "type": "journal",
+      "host_organization_name": "Springer Science+Business Media",
+      "works_count": 31026,
+      "cited_by_count": 730438,
+      "two_year_mean_citedness": 3.7044257112750265,
+      "h_index": 199,
+      "i10_index": 18166,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 3.7044257112750265,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 2",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "publication_type": "journal_article",
+    "venue_trust": "trusted",
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "is_core_venue": false,
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "categories": [
+      "Reviews and Surveys",
+      "AI and Machine Learning for AM"
+    ],
+    "tags": [
+      "Digital Twins"
+    ],
+    "relevance_score": 7,
+    "curation_priority": false,
+    "ai_summary_en": "1. Topic - Critical review of artificial intelligence in additive manufacturing with simulation-in-the-loop and digital twin development is a 2026 paper from The International Journal of Advanced Manufacturing Technology about Digital Twins.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Digital Twins.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Digital Twins; current relevance score is 7/10.",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_en": "Relevant to the tracker through Digital Twins; score: 7/10.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-10-06",
+    "last_updated": "2026-10-06",
+    "is_weekly_new": true,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-10-06",
+    "openalex_venue_rank": "Rank 2",
+    "openalex_venue_rank_number": 2,
+    "openalex_venue_rank_score": 3.7044257112750265,
+    "openalex_venue_rank_percentile": 0.5509,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+  },
+  {
     "id": "10.1007/s00170-025-17195-y",
     "title": "Continued use of virtual commissioning models: A novel approach toward digital twins for automated production systems",
     "authors": [
@@ -30640,9 +30754,9 @@
     "corresponding_authors": [
       {
         "name": "Assia Belbachir",
-        "openalex_author_id": "https://openalex.org/A5051482797",
+        "openalex_author_id": null,
         "orcid": "https://orcid.org/0000-0002-1294-8478",
-        "position": "first",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -30664,21 +30778,21 @@
         "is_corresponding": true,
         "institutions": [
           {
-            "name": "SINTEF",
-            "ror": "https://ror.org/01f677e56",
-            "country_code": "NO",
-            "type": "facility"
-          },
-          {
             "name": "NORCE Research AS",
             "ror": "https://ror.org/02gagpf75",
             "country_code": "NO",
             "type": "facility"
+          },
+          {
+            "name": "Montimage (France)",
+            "ror": "https://ror.org/02a8qtz61",
+            "country_code": "FR",
+            "type": "company"
           }
         ],
         "raw_affiliation_strings": [
           "NORCE Research AS, Grimstad, Norway",
-          "SINTEF AS, Oslo/Porsgrunn, Norway"
+          "Montimage, Paris, France"
         ]
       }
     ],
@@ -36856,7 +36970,7 @@
     "publisher": "Springer Science and Business Media LLC",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7220438040",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S77056576",
     "venue_metrics": {
@@ -44647,9 +44761,9 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Y H Chen",
-        "openalex_author_id": "https://openalex.org/A5090560929",
-        "orcid": "https://orcid.org/0000-0002-5712-1829",
+        "name": "Yong Chen",
+        "openalex_author_id": "https://openalex.org/A5100454424",
+        "orcid": "https://orcid.org/0000-0002-8377-5914",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -59956,6 +60070,144 @@
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
+    "id": "10.1016/j.nxmate.2026.103720",
+    "title": "From permanent bonding to programmable separation: AI-enabled circular design of multimaterial polymer 3D-printed structures",
+    "authors": [
+      "Ahmed Intekhab Rohan",
+      "Mir Al Musaddek Fahim",
+      "Hasnat Jinnurain Mayaz",
+      "Afif Ajjan",
+      "Abtahy Kabir Chowdhury"
+    ],
+    "author_details": [
+      {
+        "name": "Ahmed Intekhab Rohan",
+        "orcid": "https://orcid.org/0009-0004-1107-9225",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Mir Al Musaddek Fahim",
+        "orcid": "https://orcid.org/0009-0004-0493-1790",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Hasnat Jinnurain Mayaz",
+        "orcid": "https://orcid.org/0009-0004-6937-3152",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Afif Ajjan",
+        "orcid": "https://orcid.org/0009-0003-4734-0782",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Abtahy Kabir Chowdhury",
+        "orcid": "https://orcid.org/0009-0007-3274-5268",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "year": 2026,
+    "venue": "Next Materials",
+    "doi": "10.1016/j.nxmate.2026.103720",
+    "url": "https://doi.org/10.1016/j.nxmate.2026.103720",
+    "source": [
+      "Crossref"
+    ],
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2949-8228"
+    ],
+    "issn_l": "",
+    "publisher": "Elsevier BV",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S4387287712",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4387287712",
+      "issn_l": "2949-8228",
+      "issn": [
+        "2949-8228"
+      ],
+      "type": "journal",
+      "host_organization_name": "Elsevier BV",
+      "works_count": 2693,
+      "cited_by_count": 7586,
+      "two_year_mean_citedness": 2.538283955367449,
+      "h_index": 28,
+      "i10_index": 209,
+      "is_core": true,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 2.538283955367449,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 3",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "publication_type": "journal_article",
+    "venue_trust": "trusted",
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "is_core_venue": false,
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "categories": [
+      "Multi-material AM"
+    ],
+    "tags": [
+      "Additive manufacturing"
+    ],
+    "relevance_score": 6,
+    "curation_priority": false,
+    "ai_summary_en": "1. Topic - From permanent bonding to programmable separation: AI-enabled circular design of multimaterial polymer 3D-printed structures is a 2026 paper from Next Materials about Additive manufacturing.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Additive manufacturing.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Additive manufacturing; current relevance score is 6/10.",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_en": "Relevant to the tracker through Additive manufacturing; score: 6/10.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-10-06",
+    "last_updated": "2026-10-06",
+    "is_weekly_new": true,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-10-06",
+    "openalex_venue_rank": "Rank 3",
+    "openalex_venue_rank_number": 3,
+    "openalex_venue_rank_score": 2.538283955367449,
+    "openalex_venue_rank_percentile": 0.3846,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+  },
+  {
     "id": "10.1080/17452759.2026.2655508",
     "title": "Five-axis coordinated multi-material simultaneous 3D printing for geometrically conformal multi-material structures",
     "authors": [
@@ -62744,7 +62996,7 @@
     "publisher": "Elsevier BV",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7220407424",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2764828758",
     "venue_metrics": {
@@ -72800,7 +73052,7 @@
     "publisher": "Elsevier BV",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7220404826",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2764828758",
     "venue_metrics": {
@@ -85623,7 +85875,7 @@
     "publisher": "Elsevier BV",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7204017965",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2764828758",
     "venue_metrics": {
@@ -95287,7 +95539,7 @@
     "first_added": "2026-08-10",
     "last_updated": "2026-10-06",
     "is_weekly_new": false,
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "last_seen_in_crossref_run": "2026-10-06",
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
@@ -111707,8 +111959,8 @@
         ]
       },
       {
-        "name": "Lei Ren",
-        "openalex_author_id": "https://openalex.org/A5126201977",
+        "name": "Luquan Ren",
+        "openalex_author_id": "https://openalex.org/A5147005198",
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -112543,7 +112795,7 @@
         "name": "Mondher Nasri",
         "openalex_author_id": "https://openalex.org/A5006405851",
         "orcid": "https://orcid.org/0000-0001-7848-4365",
-        "position": "first",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -120653,17 +120905,11 @@
     "corresponding_authors": [
       {
         "name": "Maria A. Bieberich",
-        "openalex_author_id": null,
-        "orcid": null,
-        "position": "middle",
+        "openalex_author_id": "https://openalex.org/A5081851152",
+        "orcid": "https://orcid.org/0000-0002-1518-5330",
+        "position": "first",
         "is_corresponding": true,
         "institutions": [
-          {
-            "name": "University of Iowa",
-            "ror": "https://ror.org/036jqmy94",
-            "country_code": "US",
-            "type": "education"
-          },
           {
             "name": "University of Maryland, Baltimore County",
             "ror": "https://ror.org/02qskvh78",
@@ -120672,8 +120918,7 @@
           }
         ],
         "raw_affiliation_strings": [
-          "University of Maryland, Baltimore County, Baltimore, Maryland, USA",
-          "Institute for Vision Research, Carver College of Medicine, University of Iowa, Iowa City, Iowa, USA"
+          "University of Maryland, Baltimore County, Baltimore, Maryland, USA"
         ]
       },
       {
@@ -159126,8 +159371,8 @@
     "corresponding_authors": [
       {
         "name": "Aoming Zhang",
-        "openalex_author_id": "https://openalex.org/A5111021439",
-        "orcid": "https://orcid.org/0009-0000-1296-6484",
+        "openalex_author_id": null,
+        "orcid": null,
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -165129,8 +165374,8 @@
       },
       {
         "name": "Wenzhuo Liu",
-        "openalex_author_id": null,
-        "orcid": null,
+        "openalex_author_id": "https://openalex.org/A5107441690",
+        "orcid": "https://orcid.org/0009-0004-3542-8418",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -182533,7 +182778,7 @@
         "name": "Luquan Ren",
         "openalex_author_id": null,
         "orcid": null,
-        "position": "middle",
+        "position": "last",
         "is_corresponding": true,
         "institutions": [
           {
@@ -183383,7 +183628,7 @@
     "last_updated": "2026-10-06",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-10-06",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 5.1259869550291794,
@@ -195227,8 +195472,8 @@
     "corresponding_authors": [
       {
         "name": "Ning Li",
-        "openalex_author_id": "https://openalex.org/A5089190523",
-        "orcid": "https://orcid.org/0000-0002-7994-9504",
+        "openalex_author_id": null,
+        "orcid": null,
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -196686,8 +196931,8 @@
     "corresponding_authors": [
       {
         "name": "Xinyu Wang",
-        "openalex_author_id": null,
-        "orcid": null,
+        "openalex_author_id": "https://openalex.org/A5100352846",
+        "orcid": "https://orcid.org/0009-0001-2925-1466",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -196757,7 +197002,7 @@
         "name": "Xiaofeng Wang",
         "openalex_author_id": null,
         "orcid": "https://orcid.org/0000-0002-9913-1064",
-        "position": "middle",
+        "position": "last",
         "is_corresponding": true,
         "institutions": [
           {
@@ -229833,9 +230078,9 @@
     "corresponding_authors": [
       {
         "name": "Songhao Wang",
-        "openalex_author_id": null,
+        "openalex_author_id": "https://openalex.org/A5057228007",
         "orcid": "https://orcid.org/0000-0003-3643-4698",
-        "position": "middle",
+        "position": "first",
         "is_corresponding": true,
         "institutions": [
           {
@@ -240831,8 +241076,8 @@
       },
       {
         "name": "Yan Li",
-        "openalex_author_id": "https://openalex.org/A5100380307",
-        "orcid": "https://orcid.org/0000-0002-1699-2337",
+        "openalex_author_id": "https://openalex.org/A5100648834",
+        "orcid": "https://orcid.org/0000-0002-1768-7246",
         "position": "last",
         "is_corresponding": true,
         "institutions": [
@@ -260451,7 +260696,7 @@
     "last_updated": "2026-10-06",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-10-06",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 3",
     "openalex_venue_rank_number": 3,
     "openalex_venue_rank_score": 2.707692307692308,
@@ -290561,7 +290806,7 @@
       },
       {
         "name": "Zihuan Chen",
-        "openalex_author_id": null,
+        "openalex_author_id": "https://openalex.org/A5024222220",
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -334878,7 +335123,7 @@
         "name": "Ling Wang",
         "openalex_author_id": "https://openalex.org/A5115592675",
         "orcid": "https://orcid.org/0000-0002-5176-7469",
-        "position": "middle",
+        "position": "last",
         "is_corresponding": true,
         "institutions": [
           {

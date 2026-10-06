@@ -1,4 +1,50 @@
 {
+  "10.21203/rs.3.rs-7643824/v1": {
+    "author_details": [
+      {
+        "name": "Mohammad Ahnaf Shahriar",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "posted-content",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [],
+    "issn_l": "",
+    "publisher": "Springer Science and Business Media LLC",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4414362734",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "venue_trust_reason": "missing venue metadata",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The paper discusses the additive manufacturing process for herringbone gears.\n2. Problem - It addresses the challenges in producing complex gear assemblies using traditional methods.\n3. Method - The author employs advanced additive manufacturing techniques to fabricate a set of herringbone gears.\n4. Key Result - The study demonstrates successful production and assembly of the gears with improved precision.\n5. Takeaway - Additive manufacturing can effectively enhance the design and functionality of gear systems.",
+    "relevance_note_en": "The summary captures the essence of the paper's focus on additive manufacturing for gear assemblies.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "id": "10.21203/rs.3.rs-7643824/v1"
+  },
   "10.14733/cadconfp.2025.24-28": {
     "author_details": [
       {
@@ -20412,59 +20458,5 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "id": "10.1016/b978-0-443-15487-4.00005-4"
-  },
-  "10.1016/b978-0-443-15487-4.00007-8": {
-    "author_details": [
-      {
-        "name": "Longqiu Li",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Zhiyuan Huang",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
-    "metadata_source": "crossref",
-    "crossref_type": "book-chapter",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [],
-    "issn_l": "",
-    "publisher": "Elsevier",
-    "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "https://openalex.org/W4394994460",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "venue_trust_reason": "book/chapter output rather than journal or trusted conference article",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The paper discusses the application of vat photopolymerization in 3D printing ceramics.\n2. Problem - It addresses the challenges associated with achieving high-quality ceramic parts through additive manufacturing.\n3. Method - The authors review various techniques and advancements in vat photopolymerization tailored for ceramic materials.\n4. Key Result - The findings highlight significant improvements in the mechanical properties and resolution of ceramic components produced via this method.\n5. Takeaway - Vat photopolymerization presents a promising approach for enhancing the production of ceramic parts in 3D printing.",
-    "relevance_note_en": "The summary captures the essence of the paper's focus on ceramic 3D printing using vat photopolymerization.",
-    "abstract_used_for_summary": false,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "id": "10.1016/b978-0-443-15487-4.00007-8"
   }
 }

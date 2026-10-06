@@ -1,4 +1,243 @@
 {
+  "10.1002/aisy.202300505": {
+    "author_details": [
+      {
+        "name": "Josh Pinskier",
+        "orcid": "https://orcid.org/0000-0002-8878-9012",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "CSIRO  1 Technology Ct Pullenvale 4069 QLD Australia"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "CSIRO  1 Technology Ct Pullenvale 4069 QLD Australia"
+        ]
+      },
+      {
+        "name": "Xing Wang",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "CSIRO  1 Technology Ct Pullenvale 4069 QLD Australia"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "CSIRO  1 Technology Ct Pullenvale 4069 QLD Australia"
+        ]
+      },
+      {
+        "name": "Lois Liow",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "CSIRO  1 Technology Ct Pullenvale 4069 QLD Australia"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "CSIRO  1 Technology Ct Pullenvale 4069 QLD Australia"
+        ]
+      },
+      {
+        "name": "Yue Xie",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Bio‐Inspired Robotics Lab University of Cambridge  Trinity Lane Cambridge CB2 1TA UK"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Bio‐Inspired Robotics Lab University of Cambridge  Trinity Lane Cambridge CB2 1TA UK"
+        ]
+      },
+      {
+        "name": "Prabhat Kumar",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Mechanical and Aerospace Engineering Indian Institute of Technology Hyderabad  Kandi 502284 Telangana India"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical and Aerospace Engineering Indian Institute of Technology Hyderabad  Kandi 502284 Telangana India"
+        ]
+      },
+      {
+        "name": "Matthijs Langelaar",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Precision and Microsystems Engineering Delft University of Technology  Delft 2628 The Netherlands"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Precision and Microsystems Engineering Delft University of Technology  Delft 2628 The Netherlands"
+        ]
+      },
+      {
+        "name": "David Howard",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "CSIRO  1 Technology Ct Pullenvale 4069 QLD Australia"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "CSIRO  1 Technology Ct Pullenvale 4069 QLD Australia"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2640-4567",
+      "2640-4567"
+    ],
+    "issn_l": "",
+    "publisher": "Wiley",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4390965737",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S4210212817",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210212817",
+      "issn_l": "2640-4567",
+      "issn": [
+        "2640-4567"
+      ],
+      "type": "journal",
+      "host_organization_name": "Wiley",
+      "works_count": 2504,
+      "cited_by_count": 45024,
+      "two_year_mean_citedness": 4.790365744870651,
+      "h_index": 90,
+      "i10_index": 967,
+      "is_core": true,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 4.790365744870651,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 2",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The study focuses on optimizing the design of soft robotic grippers for better performance in grasping tasks.\n2. Problem - Existing design tools do not effectively combine rapid iteration, simulation accuracy, and optimization for diverse gripper designs.\n3. Method - A novel framework integrates generative design and topology optimization using compositional pattern-producing networks to explore diverse material distributions.\n4. Key Result - The optimized soft grippers demonstrated superior grasp strength compared to commercial alternatives, validated through extensive automated testing.\n5. Takeaway - This approach represents a significant advancement in the design of bespoke soft grippers, applicable across various tasks and environments.",
+    "relevance_note_en": "The summary captures the essence of the research, focusing on the innovative design framework and its implications.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-10-06",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1002/aisy.202300505"
+  },
+  "10.1088/1361-665x/ad8a31": {
+    "author_details": [
+      {
+        "name": "Andreas Walker",
+        "orcid": "https://orcid.org/0009-0009-2744-9661",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Kristina Shea",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "0964-1726",
+      "1361-665X"
+    ],
+    "issn_l": "",
+    "publisher": "IOP Publishing",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "https://openalex.org/W4403628644",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S11146949",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S11146949",
+      "issn_l": "0964-1726",
+      "issn": [
+        "0964-1726",
+        "1361-665X"
+      ],
+      "type": "journal",
+      "host_organization_name": "IOP Publishing",
+      "works_count": 10421,
+      "cited_by_count": 362864,
+      "two_year_mean_citedness": 3.6969904240766076,
+      "h_index": 194,
+      "i10_index": 6985,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 3.6969904240766076,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 2",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The study focuses on the computational design of shape morphing lattices in 4D printing.\n2. Problem - Challenges include managing large deformations, high computational costs, and limited exploration of design alternatives.\n3. Method - An artificial neural network is utilized to create a deformation map, followed by the design of a truss that achieves the desired shape change.\n4. Key Result - The proposed method effectively handles complex deformations and generates diverse design solutions, showcasing enhanced capabilities.\n5. Takeaway - This approach unlocks the full potential of 4D printing for creating responsive and multifunctional structures.",
+    "relevance_note_en": "The summary captures the core aspects of the study, including its focus, challenges, methodology, results, and implications.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-10-06",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1088/1361-665x/ad8a31"
+  },
   "10.1038/s41467-024-47480-5": {
     "author_details": [
       {
@@ -7504,7 +7743,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "last_seen_in_crossref_run": "2026-10-06",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "id": "10.1051/mfreview/2024010"
   },
   "10.3934/acse.2024010": {
@@ -29116,234 +29355,5 @@
     "last_seen_in_crossref_run": "2026-10-06",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1364/prj.519652"
-  },
-  "10.1007/s00170-024-13130-9": {
-    "author_details": [
-      {
-        "name": "Chengcheng Li",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Ting Wu",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Libing Zhang",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Haijun Song",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Chengli Tang",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Mengjie Wu",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "International Journal of Advanced Manufacturing Technology",
-    "crossref_target_issn": "0268-3768",
-    "issn": [
-      "0268-3768",
-      "1433-3015"
-    ],
-    "issn_l": "",
-    "publisher": "Springer Science and Business Media LLC",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4391559969",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S77056576",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S77056576",
-      "issn_l": "0268-3768",
-      "issn": [
-        "0268-3768",
-        "1433-3015"
-      ],
-      "type": "journal",
-      "host_organization_name": "Springer Science+Business Media",
-      "works_count": 31026,
-      "cited_by_count": 730438,
-      "two_year_mean_citedness": 3.7044257112750265,
-      "h_index": 199,
-      "i10_index": 18166,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 3.7044257112750265,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 2",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The study focuses on temperature-responsive deformation in 4D printing using a specific bilayer structure.\n2. Problem - Controlling the deformation of printed structures in response to temperature changes remains a challenge in 4D printing.\n3. Method - The authors developed a programmable heterogeneous laminated bilayer structure to achieve controllable deformation.\n4. Key Result - The proposed method successfully demonstrated the ability to manipulate the shape of printed objects through temperature variations.\n5. Takeaway - This approach offers a novel way to enhance the functionality of 4D printed materials by enabling precise shape changes.",
-    "relevance_note_en": "The summary captures the essence of the study's focus on temperature-driven deformation in 4D printing.",
-    "abstract_used_for_summary": false,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-06",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1007/s00170-024-13130-9"
-  },
-  "10.1016/j.rcim.2023.102636": {
-    "author_details": [
-      {
-        "name": "Moslem Mohammadi",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Abbas Z. Kouzani",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Mahdi Bodaghi",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "John Long",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Sui Yang Khoo",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Yong Xiang",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Ali Zolfagharian",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "Robotics and Computer-Integrated Manufacturing",
-    "crossref_target_issn": "0736-5845",
-    "issn": [
-      "0736-5845"
-    ],
-    "issn_l": "",
-    "publisher": "Elsevier BV",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4386322990",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S118216261",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S118216261",
-      "issn_l": "0736-5845",
-      "issn": [
-        "0736-5845",
-        "1879-2537"
-      ],
-      "type": "journal",
-      "host_organization_name": "Elsevier BV",
-      "works_count": 3891,
-      "cited_by_count": 147298,
-      "two_year_mean_citedness": 10.130597014925373,
-      "h_index": 157,
-      "i10_index": 2463,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Core manufacturing journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 10.130597014925373,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 1",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - The study focuses on the development of sustainable robotic joints using 4D printing techniques.\n2. Problem - Controlling soft robots is more complex compared to traditional rigid robots, despite their advantages.\n3. Method - The authors employ a nonlinear reinforcement learning controller to manage the stiffness of 3D printed soft joints with variable stiffness.\n4. Key Result - The reinforcement learning controller demonstrates effective online adaptation to changing conditions and reduces power consumption significantly.\n5. Takeaway - This approach enhances the functionality of soft robotic joints, making them suitable for sustainable applications in medical and wearable technologies.",
-    "relevance_note_en": "The summary captures the essence of the paper's contributions and findings related to robotic joints and reinforcement learning.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-06",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1016/j.rcim.2023.102636"
   }
 }
