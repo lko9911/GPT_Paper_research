@@ -29301,9 +29301,60 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Omer Farooq",
+        "openalex_author_id": "https://openalex.org/A5123400852",
+        "orcid": "https://orcid.org/0009-0001-7948-8058",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "National University of Technology",
+            "ror": "https://ror.org/05e21fw44",
+            "country_code": "PK",
+            "type": "education"
+          },
+          {
+            "name": "National University of Sciences and Technology",
+            "ror": "https://ror.org/03w2j5y17",
+            "country_code": "PK",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Aerial Robotics Lab, School of Interdisciplinary Engineering and Sciences, National University of Sciences and Technology, Islamabad, Pakistan",
+          "Department of Mechanical Engineering, School of Mechanical and Manufacturing Engineering, National University of Sciences and Technology, Islamabad, Pakistan"
+        ]
+      },
+      {
+        "name": "Shahbaz Khan",
+        "openalex_author_id": "https://openalex.org/A5128172599",
+        "orcid": null,
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "National University of Technology",
+            "ror": "https://ror.org/05e21fw44",
+            "country_code": "PK",
+            "type": "education"
+          },
+          {
+            "name": "National University of Sciences and Technology",
+            "ror": "https://ror.org/03w2j5y17",
+            "country_code": "PK",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Aerial Robotics Lab, School of Interdisciplinary Engineering and Sciences, National University of Sciences and Technology, Islamabad, Pakistan",
+          "Department of Robotics and Artificial Intelligence, School of Mechanical and Manufacturing Engineering, National University of Sciences and Technology, Islamabad, Pakistan"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "The International Journal of Advanced Manufacturing Technology",
     "doi": "10.1007/s00170-026-19256-2",
@@ -29323,8 +29374,8 @@
     "issn_l": "",
     "publisher": "Springer Science and Business Media LLC",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7220712459",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S77056576",
     "venue_metrics": {
@@ -30778,21 +30829,21 @@
         "is_corresponding": true,
         "institutions": [
           {
-            "name": "NORCE Research AS",
-            "ror": "https://ror.org/02gagpf75",
+            "name": "SINTEF",
+            "ror": "https://ror.org/01f677e56",
             "country_code": "NO",
             "type": "facility"
           },
           {
-            "name": "Montimage (France)",
-            "ror": "https://ror.org/02a8qtz61",
-            "country_code": "FR",
-            "type": "company"
+            "name": "NORCE Research AS",
+            "ror": "https://ror.org/02gagpf75",
+            "country_code": "NO",
+            "type": "facility"
           }
         ],
         "raw_affiliation_strings": [
           "NORCE Research AS, Grimstad, Norway",
-          "Montimage, Paris, France"
+          "SINTEF AS, Oslo/Porsgrunn, Norway"
         ]
       }
     ],
@@ -60121,9 +60172,28 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Ahmed Intekhab Rohan",
+        "openalex_author_id": "https://openalex.org/A5119386918",
+        "orcid": "https://orcid.org/0009-0004-1107-9225",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Islamic University of Technology",
+            "ror": "https://ror.org/057gnqw22",
+            "country_code": "BD",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Dept. of Mechanical and Production Engineering, Islamic University of Technology, Gazipur, Bangladesh"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Next Materials",
     "doi": "10.1016/j.nxmate.2026.103720",
@@ -60142,8 +60212,8 @@
     "issn_l": "",
     "publisher": "Elsevier BV",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7220738068",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S4387287712",
     "venue_metrics": {
@@ -235780,7 +235850,7 @@
     "last_updated": "2026-10-07",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-10-07",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 4.258809936452917,
@@ -260696,7 +260766,7 @@
     "last_updated": "2026-10-07",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-10-07",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 3",
     "openalex_venue_rank_number": 3,
     "openalex_venue_rank_score": 2.707692307692308,
@@ -292070,7 +292140,7 @@
       },
       {
         "name": "Huanyue Zhang",
-        "openalex_author_id": "https://openalex.org/A5014806689",
+        "openalex_author_id": null,
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -292085,7 +292155,7 @@
         "raw_affiliation_strings": [
           "Department of Orthopedics, Central Hospital of Dalian University of Technology, Dalian, People’s Republic of China",
           "Instrumental Analysis Center, Dalian University of Technology, Dalian, People’s Republic of China",
-          "Instrumental Analysis Center, Dalian University of Technology, Dalian, People's Republic of China"
+          "Department of Orthopedics, Central Hospital of Dalian University of Technology, Dalian, People's Republic of China"
         ]
       },
       {
