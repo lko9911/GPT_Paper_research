@@ -1,4 +1,98 @@
 {
+  "10.1016/j.compind.2025.104384": {
+    "author_details": [
+      {
+        "name": "Junjie Chen",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Weisheng Lu",
+        "orcid": "https://orcid.org/0000-0003-4674-0357",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Xiang Ji",
+        "orcid": "https://orcid.org/0000-0003-2621-996X",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Yonglin Fu",
+        "orcid": "https://orcid.org/0009-0008-3747-4003",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Computers in Industry",
+    "crossref_target_issn": "0166-3615",
+    "issn": [
+      "0166-3615"
+    ],
+    "issn_l": "",
+    "publisher": "Elsevier BV",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4414679337",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S60779006",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S60779006",
+      "issn_l": "0166-3615",
+      "issn": [
+        "0166-3615",
+        "1872-6194"
+      ],
+      "type": "journal",
+      "host_organization_name": "Elsevier BV",
+      "works_count": 4719,
+      "cited_by_count": 163168,
+      "two_year_mean_citedness": 9.761744966442953,
+      "h_index": 167,
+      "i10_index": 2508,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 9.761744966442953,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - The paper focuses on enhancing interoperability in robot digital twinning for facility management using an IFC-represented RoboAvatar approach.\n2. Problem - There is a challenge in information exchange between robot digital twins and building information models due to differing data formats.\n3. Method - The authors conducted a lab experiment with an indoor trash picking robot to test the effectiveness of IFC-based representations for improving interoperability.\n4. Key Result - The experiment demonstrated that IFC-represented RoboAvatars allow for seamless information exchange and precise mirroring of robot movements within a BIM context.\n5. Takeaway - This research introduces a novel methodology for integrating robot digital twins into BIM environments, enhancing the functionality of robotics in facility management.",
+    "relevance_note_en": "The paper addresses a significant issue in the integration of robotics and facility management, making it highly relevant to the field.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-10-08",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1016/j.compind.2025.104384"
+  },
   "10.1016/j.jmsy.2025.03.022": {
     "author_details": [
       {
@@ -30205,292 +30299,5 @@
     "last_seen_in_crossref_run": "2026-10-08",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/adma.202410292"
-  },
-  "10.1002/adma.202413391": {
-    "author_details": [
-      {
-        "name": "Niklas Felix König",
-        "orcid": "https://orcid.org/0000-0002-9293-3734",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "xolo GmbH  Volmerstraße 9B 12489 Berlin Germany"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "xolo GmbH  Volmerstraße 9B 12489 Berlin Germany"
-        ]
-      },
-      {
-        "name": "Marcus Reuter",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "xolo GmbH  Volmerstraße 9B 12489 Berlin Germany"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "xolo GmbH  Volmerstraße 9B 12489 Berlin Germany"
-        ]
-      },
-      {
-        "name": "Marvin Reuß",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "xolo GmbH  Volmerstraße 9B 12489 Berlin Germany"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "xolo GmbH  Volmerstraße 9B 12489 Berlin Germany"
-        ]
-      },
-      {
-        "name": "Christian Sebastian Fabian Kromer",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "xolo GmbH  Volmerstraße 9B 12489 Berlin Germany"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "xolo GmbH  Volmerstraße 9B 12489 Berlin Germany"
-        ]
-      },
-      {
-        "name": "Martin Herder",
-        "orcid": "https://orcid.org/0000-0002-7250-588X",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "xolo GmbH  Volmerstraße 9B 12489 Berlin Germany"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "xolo GmbH  Volmerstraße 9B 12489 Berlin Germany"
-        ]
-      },
-      {
-        "name": "Yves Garmshausen",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "xolo GmbH  Volmerstraße 9B 12489 Berlin Germany"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "xolo GmbH  Volmerstraße 9B 12489 Berlin Germany"
-        ]
-      },
-      {
-        "name": "Baraa Asfari",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "xolo GmbH  Volmerstraße 9B 12489 Berlin Germany"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "xolo GmbH  Volmerstraße 9B 12489 Berlin Germany"
-        ]
-      },
-      {
-        "name": "Eric Israel",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "xolo GmbH  Volmerstraße 9B 12489 Berlin Germany"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "xolo GmbH  Volmerstraße 9B 12489 Berlin Germany"
-        ]
-      },
-      {
-        "name": "Lucíola Vasconcelos Lima",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "xolo GmbH  Volmerstraße 9B 12489 Berlin Germany"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "xolo GmbH  Volmerstraße 9B 12489 Berlin Germany"
-        ]
-      },
-      {
-        "name": "Nishit Puvati",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "xolo GmbH  Volmerstraße 9B 12489 Berlin Germany"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "xolo GmbH  Volmerstraße 9B 12489 Berlin Germany"
-        ]
-      },
-      {
-        "name": "Jannes Leonhard",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "xolo GmbH  Volmerstraße 9B 12489 Berlin Germany"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "xolo GmbH  Volmerstraße 9B 12489 Berlin Germany"
-        ]
-      },
-      {
-        "name": "Linos Madalo",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "xolo GmbH  Volmerstraße 9B 12489 Berlin Germany"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "xolo GmbH  Volmerstraße 9B 12489 Berlin Germany"
-        ]
-      },
-      {
-        "name": "Steffen Heuschkel",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "xolo GmbH  Volmerstraße 9B 12489 Berlin Germany"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "xolo GmbH  Volmerstraße 9B 12489 Berlin Germany"
-        ]
-      },
-      {
-        "name": "Marcus Engelhard",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "xolo GmbH  Volmerstraße 9B 12489 Berlin Germany"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "xolo GmbH  Volmerstraße 9B 12489 Berlin Germany"
-        ]
-      },
-      {
-        "name": "Yousef Arzhangnia",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "xolo GmbH  Volmerstraße 9B 12489 Berlin Germany"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "xolo GmbH  Volmerstraße 9B 12489 Berlin Germany"
-        ]
-      },
-      {
-        "name": "Dirk Radzinski",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "xolo GmbH  Volmerstraße 9B 12489 Berlin Germany"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "xolo GmbH  Volmerstraße 9B 12489 Berlin Germany"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "Advanced Materials",
-    "crossref_target_issn": "0935-9648",
-    "issn": [
-      "0935-9648",
-      "1521-4095"
-    ],
-    "issn_l": "",
-    "publisher": "Wiley",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4405370368",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S99352657",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S99352657",
-      "issn_l": "0935-9648",
-      "issn": [
-        "0935-9648",
-        "1521-4095"
-      ],
-      "type": "journal",
-      "host_organization_name": null,
-      "works_count": 44789,
-      "cited_by_count": 4803689,
-      "two_year_mean_citedness": 21.19633376740459,
-      "h_index": 743,
-      "i10_index": 31001,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "High-impact general journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 21.19633376740459,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 1",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - The paper discusses Xolography, a novel 3D printing technique suitable for microgravity environments.\n2. Problem - Traditional 3D printing methods often require support structures and are affected by gravity, limiting their application in space.\n3. Method - Xolography employs intersecting light beams for continuous photopolymerization within a photopolymer vat, allowing for complex structures without support.\n4. Key Result - Experiments conducted in microgravity demonstrated that Xolography can utilize low-viscosity resins effectively, enhancing printing speed and precision.\n5. Takeaway - Xolography presents a promising solution for efficient and flexible 3D printing in space, potentially transforming material research and manufacturing.",
-    "relevance_note_en": "The summary captures the core aspects of the paper, focusing on the innovative approach and its implications for microgravity applications.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-08",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1002/adma.202413391"
   }
 }

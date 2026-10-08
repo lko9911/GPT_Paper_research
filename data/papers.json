@@ -25220,8 +25220,8 @@
       },
       {
         "name": "Lei Hou",
-        "openalex_author_id": null,
-        "orcid": null,
+        "openalex_author_id": "https://openalex.org/A5069042007",
+        "orcid": "https://orcid.org/0000-0001-6578-1707",
         "position": "last",
         "is_corresponding": true,
         "institutions": [
@@ -27390,9 +27390,7 @@
             "type": "facility"
           }
         ],
-        "raw_affiliation_strings": [
-          "Indian Institute of Technology Palakkad"
-        ]
+        "raw_affiliation_strings": []
       }
     ],
     "corresponding_author_available": true,
@@ -94096,45 +94094,73 @@
   },
   {
     "id": "10.1039/d6mh01575a",
-    "title": "Liquid Crystal Elastomers by Photopolymerization: From Chemistry and Alignment Strategies to 4D Printing",
+    "title": "Liquid crystal elastomers by photopolymerization: from chemistry and alignment strategies to 4D printing",
     "authors": [
       "Rakine Mouhoubi",
       "Min-Hui Li",
-      "Sebastien Blanquer",
-      "Vincent Lapinte"
+      "Vincent Lapinte",
+      "Sebastien Blanquer"
     ],
     "author_details": [
       {
         "name": "Rakine Mouhoubi",
-        "orcid": "",
+        "orcid": "https://orcid.org/0009-0004-1318-3800",
         "position": "first",
         "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
+        "institutions": [
+          {
+            "name": "Institut Charles Gerhardt Montpellier (ICGM), CNRS, Université de Montpellier, ENSCM, Montpellier 34293, France"
+          },
+          {
+            "name": "School of Chemical Engineering, Pusan National University, Geumjeong-gu, Busan 46241, Republic of Korea"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Institut Charles Gerhardt Montpellier (ICGM), CNRS, Université de Montpellier, ENSCM, Montpellier 34293, France",
+          "School of Chemical Engineering, Pusan National University, Geumjeong-gu, Busan 46241, Republic of Korea"
+        ]
       },
       {
         "name": "Min-Hui Li",
-        "orcid": "",
+        "orcid": "https://orcid.org/0000-0001-5367-0348",
         "position": "additional",
         "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Sebastien Blanquer",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
+        "institutions": [
+          {
+            "name": "Chimie ParisTech, CNRS, Institut de Recherche de Chimie Paris, PSL University, Paris 75005, France"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Chimie ParisTech, CNRS, Institut de Recherche de Chimie Paris, PSL University, Paris 75005, France"
+        ]
       },
       {
         "name": "Vincent Lapinte",
-        "orcid": "",
+        "orcid": "https://orcid.org/0000-0002-6089-6027",
         "position": "additional",
         "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
+        "institutions": [
+          {
+            "name": "Institut Charles Gerhardt Montpellier (ICGM), CNRS, Université de Montpellier, ENSCM, Montpellier 34293, France"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Institut Charles Gerhardt Montpellier (ICGM), CNRS, Université de Montpellier, ENSCM, Montpellier 34293, France"
+        ]
+      },
+      {
+        "name": "Sebastien Blanquer",
+        "orcid": "https://orcid.org/0000-0002-5366-6530",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Institut Charles Gerhardt Montpellier (ICGM), CNRS, Université de Montpellier, ENSCM, Montpellier 34293, France"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Institut Charles Gerhardt Montpellier (ICGM), CNRS, Université de Montpellier, ENSCM, Montpellier 34293, France"
+        ]
       }
     ],
     "corresponding_authors": [],
@@ -94200,7 +94226,7 @@
     "venue_scope": "core",
     "core_source": "manual_core_venue",
     "categories": [
-      "Multi-material AM"
+      "Reviews and Surveys"
     ],
     "tags": [
       "LCE",
@@ -94209,7 +94235,7 @@
     ],
     "relevance_score": 5,
     "curation_priority": false,
-    "ai_summary_en": "1. Topic - Liquid Crystal Elastomers by Photopolymerization: From Chemistry and Alignment Strategies to 4D Printing is a 2026 paper from Materials Horizons about LCE, 4D printing, and Soft robotics.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to LCE, 4D printing, and Soft robotics.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for LCE, 4D printing, and Soft robotics; current relevance score is 5/10.",
+    "ai_summary_en": "1. Topic - Liquid crystal elastomers by photopolymerization: from chemistry and alignment strategies to 4D printing is a 2026 paper from Materials Horizons about LCE, 4D printing, and Soft robotics.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to LCE, 4D printing, and Soft robotics.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for LCE, 4D printing, and Soft robotics; current relevance score is 5/10.",
     "summary_provider": "fallback",
     "openai_summary_applied": false,
     "relevance_note_en": "Relevant to the tracker through LCE, 4D printing, and Soft robotics; score: 5/10.",
@@ -98523,7 +98549,7 @@
         "name": "Hong Wang",
         "openalex_author_id": null,
         "orcid": "https://orcid.org/0000-0001-6799-1732",
-        "position": "last",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -107244,7 +107270,7 @@
           }
         ],
         "raw_affiliation_strings": [
-          "Mechanical and Aerospace Engineering Department, College of Engineering, United Arab Emirates University, Al Ain 15551, United Arab Emirates"
+          "Mechanical and Aerospace Engineering Dept , College of Engineering , UAE University , UAE"
         ]
       }
     ],
@@ -112207,8 +112233,8 @@
         ]
       },
       {
-        "name": "Lei Ren",
-        "openalex_author_id": "https://openalex.org/A5126201977",
+        "name": "Luquan Ren",
+        "openalex_author_id": "https://openalex.org/A5147005198",
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -121153,11 +121179,17 @@
     "corresponding_authors": [
       {
         "name": "Maria A. Bieberich",
-        "openalex_author_id": "https://openalex.org/A5081851152",
-        "orcid": "https://orcid.org/0000-0002-1518-5330",
-        "position": "first",
+        "openalex_author_id": null,
+        "orcid": null,
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
+          {
+            "name": "University of Iowa",
+            "ror": "https://ror.org/036jqmy94",
+            "country_code": "US",
+            "type": "education"
+          },
           {
             "name": "University of Maryland, Baltimore County",
             "ror": "https://ror.org/02qskvh78",
@@ -121166,7 +121198,8 @@
           }
         ],
         "raw_affiliation_strings": [
-          "University of Maryland, Baltimore County, Baltimore, Maryland, USA"
+          "University of Maryland, Baltimore County, Baltimore, Maryland, USA",
+          "Institute for Vision Research, Carver College of Medicine, University of Iowa, Iowa City, Iowa, USA"
         ]
       },
       {
@@ -128849,7 +128882,7 @@
         "name": "Luquan Ren",
         "openalex_author_id": "https://openalex.org/A5147005198",
         "orcid": null,
-        "position": "last",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -132444,6 +132477,233 @@
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 4.245998315080033,
     "openalex_venue_rank_percentile": 0.6228,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+  },
+  {
+    "id": "10.1002/adrr.202500076",
+    "title": "3D Printing of Soft Robotic Systems: Advances in Fabrication Strategies and Future Trends",
+    "authors": [
+      "Changjiang Liu",
+      "Bin Cui",
+      "Xumin Huang",
+      "Xiaoyu (Rayne) Zheng",
+      "T. Thang Vo‐Doan",
+      "Ruirui Qiao"
+    ],
+    "author_details": [
+      {
+        "name": "Changjiang Liu",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Australian Institute for Bioengineering and Nanotechnology The University of Queensland  Brisbane Australia"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Australian Institute for Bioengineering and Nanotechnology The University of Queensland  Brisbane Australia"
+        ]
+      },
+      {
+        "name": "Bin Cui",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Australian Institute for Bioengineering and Nanotechnology The University of Queensland  Brisbane Australia"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Australian Institute for Bioengineering and Nanotechnology The University of Queensland  Brisbane Australia"
+        ]
+      },
+      {
+        "name": "Xumin Huang",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Australian Institute for Bioengineering and Nanotechnology The University of Queensland  Brisbane Australia"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Australian Institute for Bioengineering and Nanotechnology The University of Queensland  Brisbane Australia"
+        ]
+      },
+      {
+        "name": "Xiaoyu (Rayne) Zheng",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Material Science and Engineering University of California  Berkeley California USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Material Science and Engineering University of California  Berkeley California USA"
+        ]
+      },
+      {
+        "name": "T. Thang Vo‐Doan",
+        "orcid": "https://orcid.org/0000-0002-5065-5887",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "School of Mechanical &amp; Mining Engineering The University of Queensland   St Lucia Australia"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Mechanical &amp; Mining Engineering The University of Queensland   St Lucia Australia"
+        ]
+      },
+      {
+        "name": "Ruirui Qiao",
+        "orcid": "https://orcid.org/0000-0002-8351-7093",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Australian Institute for Bioengineering and Nanotechnology The University of Queensland  Brisbane Australia"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Australian Institute for Bioengineering and Nanotechnology The University of Queensland  Brisbane Australia"
+        ]
+      }
+    ],
+    "corresponding_authors": [
+      {
+        "name": "T. Thang Vo‐Doan",
+        "openalex_author_id": "https://openalex.org/A5065360907",
+        "orcid": "https://orcid.org/0000-0002-5065-5887",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "The University of Queensland",
+            "ror": "https://ror.org/00rqy9422",
+            "country_code": "AU",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Mechanical &amp; Mining Engineering The University of Queensland   St Lucia Australia",
+          "School of Mechanical & Mining Engineering, The University of Queensland, \nSt Lucia, Australia"
+        ]
+      },
+      {
+        "name": "Ruirui Qiao",
+        "openalex_author_id": "https://openalex.org/A5047227853",
+        "orcid": "https://orcid.org/0000-0002-8351-7093",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "The University of Queensland",
+            "ror": "https://ror.org/00rqy9422",
+            "country_code": "AU",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Australian Institute for Bioengineering and Nanotechnology The University of Queensland  Brisbane Australia",
+          "Australian Institute for Bioengineering and Nanotechnology, The University of Queensland, Brisbane, Australia"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "year": 2026,
+    "venue": "Advanced Robotics Research",
+    "doi": "10.1002/adrr.202500076",
+    "url": "https://doi.org/10.1002/adrr.202500076",
+    "source": [
+      "Crossref"
+    ],
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2943-9973",
+      "2943-9973"
+    ],
+    "issn_l": "",
+    "publisher": "Wiley",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4414148070",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S5407036553",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S5407036553",
+      "issn_l": "2943-9973",
+      "issn": [
+        "2943-9973"
+      ],
+      "type": "journal",
+      "host_organization_name": null,
+      "works_count": 164,
+      "cited_by_count": 204,
+      "two_year_mean_citedness": 1.2439024390243902,
+      "h_index": 6,
+      "i10_index": 2,
+      "is_core": false,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 1.2439024390243902,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 4",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "publication_type": "journal_article",
+    "venue_trust": "trusted",
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "is_core_venue": false,
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "categories": [
+      "Reviews and Surveys",
+      "Multi-material AM"
+    ],
+    "tags": [
+      "3D Printing",
+      "Soft robotics",
+      "Biomedical Engineering",
+      "Fabrication Strategies"
+    ],
+    "relevance_score": 5,
+    "curation_priority": false,
+    "ai_summary_en": "1. Topic - The paper focuses on advancements in 3D printing techniques for soft robotic systems.\n2. Problem - It addresses the challenges in the fabrication of soft robots, including material selection and manufacturing complexities.\n3. Method - The authors review various matrix materials, functional components, and 3D printing technologies, categorizing fabrication strategies by complexity.\n4. Key Result - The review highlights persistent challenges in soft robotics and proposes solutions while analyzing future trends in the field.\n5. Takeaway - The study emphasizes the importance of reliability and environmental considerations in the development of 3D-printed soft robotic systems.",
+    "summary_provider": "openai",
+    "openai_summary_applied": true,
+    "relevance_note_en": "The summary captures the core themes and findings of the paper without direct paraphrasing.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-06-24",
+    "last_updated": "2026-10-08",
+    "is_weekly_new": false,
+    "last_seen_in_crossref_run": "2026-10-08",
+    "not_seen_in_latest_crossref_run": false,
+    "openalex_venue_rank": "Rank 4",
+    "openalex_venue_rank_number": 4,
+    "openalex_venue_rank_score": 1.2439024390243902,
+    "openalex_venue_rank_percentile": 0.2159,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
@@ -143311,8 +143571,8 @@
     "corresponding_authors": [
       {
         "name": "Cheng Zhang",
-        "openalex_author_id": null,
-        "orcid": null,
+        "openalex_author_id": "https://openalex.org/A5100769098",
+        "orcid": "https://orcid.org/0000-0001-8282-9901",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -159619,8 +159879,8 @@
     "corresponding_authors": [
       {
         "name": "Aoming Zhang",
-        "openalex_author_id": "https://openalex.org/A5111021439",
-        "orcid": "https://orcid.org/0009-0000-1296-6484",
+        "openalex_author_id": null,
+        "orcid": null,
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -172092,7 +172352,7 @@
             "type": "education"
           },
           {
-            "name": "Peking University Stomatological Hospital",
+            "name": "Peking University School and Hospital of Stomatology",
             "ror": "https://ror.org/00s2xkh70",
             "country_code": "CN",
             "type": "healthcare"
@@ -183026,7 +183286,7 @@
         "name": "Luquan Ren",
         "openalex_author_id": null,
         "orcid": null,
-        "position": "last",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -195720,8 +195980,8 @@
     "corresponding_authors": [
       {
         "name": "Ning Li",
-        "openalex_author_id": null,
-        "orcid": null,
+        "openalex_author_id": "https://openalex.org/A5089190523",
+        "orcid": "https://orcid.org/0000-0002-7994-9504",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -197179,8 +197439,8 @@
     "corresponding_authors": [
       {
         "name": "Xinyu Wang",
-        "openalex_author_id": "https://openalex.org/A5100352846",
-        "orcid": "https://orcid.org/0009-0001-2925-1466",
+        "openalex_author_id": null,
+        "orcid": null,
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -197250,7 +197510,7 @@
         "name": "Xiaofeng Wang",
         "openalex_author_id": null,
         "orcid": "https://orcid.org/0000-0002-9913-1064",
-        "position": "last",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -241597,7 +241857,7 @@
     "last_updated": "2026-10-08",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-10-08",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 6.122129436325679,
@@ -246893,233 +247153,6 @@
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 10.40821712498371,
     "openalex_venue_rank_percentile": 0.9156,
-    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-  },
-  {
-    "id": "10.1002/adrr.202500076",
-    "title": "3D Printing of Soft Robotic Systems: Advances in Fabrication Strategies and Future Trends",
-    "authors": [
-      "Changjiang Liu",
-      "Bin Cui",
-      "Xumin Huang",
-      "Xiaoyu (Rayne) Zheng",
-      "T. Thang Vo‐Doan",
-      "Ruirui Qiao"
-    ],
-    "author_details": [
-      {
-        "name": "Changjiang Liu",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Australian Institute for Bioengineering and Nanotechnology The University of Queensland  Brisbane Australia"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Australian Institute for Bioengineering and Nanotechnology The University of Queensland  Brisbane Australia"
-        ]
-      },
-      {
-        "name": "Bin Cui",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Australian Institute for Bioengineering and Nanotechnology The University of Queensland  Brisbane Australia"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Australian Institute for Bioengineering and Nanotechnology The University of Queensland  Brisbane Australia"
-        ]
-      },
-      {
-        "name": "Xumin Huang",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Australian Institute for Bioengineering and Nanotechnology The University of Queensland  Brisbane Australia"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Australian Institute for Bioengineering and Nanotechnology The University of Queensland  Brisbane Australia"
-        ]
-      },
-      {
-        "name": "Xiaoyu (Rayne) Zheng",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Material Science and Engineering University of California  Berkeley California USA"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Material Science and Engineering University of California  Berkeley California USA"
-        ]
-      },
-      {
-        "name": "T. Thang Vo‐Doan",
-        "orcid": "https://orcid.org/0000-0002-5065-5887",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "School of Mechanical &amp; Mining Engineering The University of Queensland   St Lucia Australia"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "School of Mechanical &amp; Mining Engineering The University of Queensland   St Lucia Australia"
-        ]
-      },
-      {
-        "name": "Ruirui Qiao",
-        "orcid": "https://orcid.org/0000-0002-8351-7093",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Australian Institute for Bioengineering and Nanotechnology The University of Queensland  Brisbane Australia"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Australian Institute for Bioengineering and Nanotechnology The University of Queensland  Brisbane Australia"
-        ]
-      }
-    ],
-    "corresponding_authors": [
-      {
-        "name": "T. Thang Vo‐Doan",
-        "openalex_author_id": "https://openalex.org/A5065360907",
-        "orcid": "https://orcid.org/0000-0002-5065-5887",
-        "position": "middle",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "The University of Queensland",
-            "ror": "https://ror.org/00rqy9422",
-            "country_code": "AU",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "School of Mechanical &amp; Mining Engineering The University of Queensland   St Lucia Australia",
-          "School of Mechanical & Mining Engineering, The University of Queensland, \nSt Lucia, Australia"
-        ]
-      },
-      {
-        "name": "Ruirui Qiao",
-        "openalex_author_id": "https://openalex.org/A5047227853",
-        "orcid": "https://orcid.org/0000-0002-8351-7093",
-        "position": "last",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "The University of Queensland",
-            "ror": "https://ror.org/00rqy9422",
-            "country_code": "AU",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Australian Institute for Bioengineering and Nanotechnology The University of Queensland  Brisbane Australia",
-          "Australian Institute for Bioengineering and Nanotechnology, The University of Queensland, Brisbane, Australia"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "year": 2025,
-    "venue": "Advanced Robotics Research",
-    "doi": "10.1002/adrr.202500076",
-    "url": "https://doi.org/10.1002/adrr.202500076",
-    "source": [
-      "Crossref"
-    ],
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2943-9973",
-      "2943-9973"
-    ],
-    "issn_l": "",
-    "publisher": "Wiley",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4414148070",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S5407036553",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S5407036553",
-      "issn_l": "2943-9973",
-      "issn": [
-        "2943-9973"
-      ],
-      "type": "journal",
-      "host_organization_name": null,
-      "works_count": 164,
-      "cited_by_count": 204,
-      "two_year_mean_citedness": 1.2439024390243902,
-      "h_index": 6,
-      "i10_index": 2,
-      "is_core": false,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 1.2439024390243902,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 4",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "publication_type": "journal_article",
-    "venue_trust": "trusted",
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "is_core_venue": false,
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "categories": [
-      "Reviews and Surveys",
-      "Multi-material AM"
-    ],
-    "tags": [
-      "3D Printing",
-      "Soft robotics",
-      "Biomedical Engineering",
-      "Fabrication Strategies"
-    ],
-    "relevance_score": 5,
-    "curation_priority": false,
-    "ai_summary_en": "1. Topic - The paper focuses on advancements in 3D printing techniques for soft robotic systems.\n2. Problem - It addresses the challenges in the fabrication of soft robots, including material selection and manufacturing complexities.\n3. Method - The authors review various matrix materials, functional components, and 3D printing technologies, categorizing fabrication strategies by complexity.\n4. Key Result - The review highlights persistent challenges in soft robotics and proposes solutions while analyzing future trends in the field.\n5. Takeaway - The study emphasizes the importance of reliability and environmental considerations in the development of 3D-printed soft robotic systems.",
-    "summary_provider": "openai",
-    "openai_summary_applied": true,
-    "relevance_note_en": "The summary captures the core themes and findings of the paper without direct paraphrasing.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "first_added": "2026-06-24",
-    "last_updated": "2026-10-08",
-    "is_weekly_new": false,
-    "last_seen_in_crossref_run": "2026-10-08",
-    "not_seen_in_latest_crossref_run": false,
-    "openalex_venue_rank": "Rank 4",
-    "openalex_venue_rank_number": 4,
-    "openalex_venue_rank_score": 1.2439024390243902,
-    "openalex_venue_rank_percentile": 0.2159,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
@@ -258994,10 +259027,10 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Likun Wang",
-        "openalex_author_id": "https://openalex.org/A5100623561",
-        "orcid": "https://orcid.org/0000-0001-5646-9746",
-        "position": "middle",
+        "name": "Zi Wang",
+        "openalex_author_id": "https://openalex.org/A5100338326",
+        "orcid": "https://orcid.org/0000-0001-9081-7185",
+        "position": "first",
         "is_corresponding": true,
         "institutions": [
           {
@@ -273495,10 +273528,10 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Ratnesh Kumar Raj Singh",
-        "openalex_author_id": "https://openalex.org/A5066015004",
-        "orcid": "https://orcid.org/0000-0001-9377-6753",
-        "position": "middle",
+        "name": "Manish Pratap Singh",
+        "openalex_author_id": "https://openalex.org/A5021211339",
+        "orcid": "https://orcid.org/0000-0002-9530-2348",
+        "position": "first",
         "is_corresponding": true,
         "institutions": [
           {
@@ -335371,7 +335404,7 @@
         "name": "Ling Wang",
         "openalex_author_id": "https://openalex.org/A5115592675",
         "orcid": "https://orcid.org/0000-0002-5176-7469",
-        "position": "last",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
