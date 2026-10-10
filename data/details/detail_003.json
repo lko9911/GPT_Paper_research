@@ -1,4 +1,83 @@
 {
+  "10.1007/s10845-024-02340-3": {
+    "author_details": [
+      {
+        "name": "Seon Han Choi",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Byeong Soo Kim",
+        "orcid": "https://orcid.org/0000-0003-2534-7353",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Journal of Intelligent Manufacturing",
+    "crossref_target_issn": "0956-5515",
+    "issn": [
+      "0956-5515",
+      "1572-8145"
+    ],
+    "issn_l": "",
+    "publisher": "Springer Science and Business Media LLC",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4391658021",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S161464388",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S161464388",
+      "issn_l": "0956-5515",
+      "issn": [
+        "0956-5515",
+        "1572-8145"
+      ],
+      "type": "journal",
+      "host_organization_name": "Springer Science+Business Media",
+      "works_count": 3654,
+      "cited_by_count": 127309,
+      "two_year_mean_citedness": 6.610223642172524,
+      "h_index": 139,
+      "i10_index": 2475,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 6.610223642172524,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - The paper discusses a framework for designing intelligent factory layouts.\n2. Problem - It addresses the challenges of optimizing factory layouts to enhance efficiency and productivity.\n3. Method - The authors propose a collaborative approach that integrates optimization techniques, simulation, and digital twin technology.\n4. Key Result - The framework demonstrates improved layout designs that effectively balance operational performance and resource utilization.\n5. Takeaway - A synergistic use of optimization, simulation, and digital twins can significantly advance factory layout design.",
+    "relevance_note_en": "The summary captures the essence of the paper's focus on intelligent factory layout design and its innovative approach.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-10-10",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1007/s10845-024-02340-3"
+  },
   "10.1007/s40964-025-01257-4": {
     "author_details": [
       {
@@ -29844,109 +29923,5 @@
     "last_seen_in_crossref_run": "2026-10-10",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/adma.202414971"
-  },
-  "10.1021/acsaenm.4c00764": {
-    "author_details": [
-      {
-        "name": "Karun Kalia",
-        "orcid": "https://orcid.org/0000-0002-3752-9026",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Plastics Engineering, University of Massachusetts Lowell, 1 University Ave., Lowell, Massachusetts 01854, United States"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Plastics Engineering, University of Massachusetts Lowell, 1 University Ave., Lowell, Massachusetts 01854, United States"
-        ]
-      },
-      {
-        "name": "David Kazmer",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Plastics Engineering, University of Massachusetts Lowell, 1 University Ave., Lowell, Massachusetts 01854, United States"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Plastics Engineering, University of Massachusetts Lowell, 1 University Ave., Lowell, Massachusetts 01854, United States"
-        ]
-      },
-      {
-        "name": "Amir Ameli",
-        "orcid": "https://orcid.org/0000-0002-1616-1162",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Plastics Engineering, University of Massachusetts Lowell, 1 University Ave., Lowell, Massachusetts 01854, United States"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Plastics Engineering, University of Massachusetts Lowell, 1 University Ave., Lowell, Massachusetts 01854, United States"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2771-9545",
-      "2771-9545"
-    ],
-    "issn_l": "",
-    "publisher": "American Chemical Society (ACS)",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4408466746",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S4387282792",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S4387282792",
-      "issn_l": "2771-9545",
-      "issn": [
-        "2771-9545"
-      ],
-      "type": "journal",
-      "host_organization_name": "American Chemical Society",
-      "works_count": 1361,
-      "cited_by_count": 6427,
-      "two_year_mean_citedness": 3.2025948103792414,
-      "h_index": 27,
-      "i10_index": 213,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 3.2025948103792414,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 3",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The paper discusses a novel method for 3D printing functionally graded foams using a co-extrusion process.\n2. Problem - Traditional methods of foam manufacturing lack the ability to dynamically control the composition of blowing agents during the printing process.\n3. Method - The authors developed a co-extrusion additive manufacturing system with a static mixer nozzle to mix two filament types and control the foaming agent content.\n4. Key Result - The resulting foams exhibited uniform cellular structures and improved mechanical properties, with density profiles that could be programmed as needed.\n5. Takeaway - This innovative approach enables the production of complex structures with tailored density profiles, enhancing the potential applications of functionally graded materials.",
-    "relevance_note_en": "The summary captures the essence of the research, focusing on the novel method and its implications.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-10",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1021/acsaenm.4c00764"
   }
 }

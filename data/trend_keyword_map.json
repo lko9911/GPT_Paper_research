@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-10T08:16:41+00:00",
+  "updated_at": "2026-10-10T14:47:11+00:00",
   "source": "derived from titles, tags, AI Q5 summaries, relevance notes, and public metadata; abstract text is not published",
   "recent_basis": "publication year 2026, plus records explicitly marked weekly-new",
   "node_count": 30,
@@ -11,7 +11,7 @@
       "group": "AM",
       "count": 1176,
       "recent_count": 446,
-      "trend_score": 0.9911,
+      "trend_score": 0.9908,
       "x": 310.0,
       "y": 148.0,
       "radius": 22.8
@@ -20,9 +20,9 @@
       "id": "additive-manufacturing",
       "label": "Additive Manufacturing",
       "group": "AM",
-      "count": 1212,
-      "recent_count": 431,
-      "trend_score": 0.9765,
+      "count": 1213,
+      "recent_count": 432,
+      "trend_score": 0.978,
       "x": 369.8,
       "y": 170.5,
       "radius": 23.0
@@ -33,7 +33,7 @@
       "group": "AM",
       "count": 659,
       "recent_count": 209,
-      "trend_score": 0.4911,
+      "trend_score": 0.491,
       "x": 359.4,
       "y": 233.5,
       "radius": 18.8
@@ -44,7 +44,7 @@
       "group": "AI",
       "count": 368,
       "recent_count": 171,
-      "trend_score": 0.3595,
+      "trend_score": 0.3594,
       "x": 620.0,
       "y": 68.0,
       "radius": 15.8
@@ -55,7 +55,7 @@
       "group": "AI",
       "count": 374,
       "recent_count": 164,
-      "trend_score": 0.35,
+      "trend_score": 0.3499,
       "x": 684.0,
       "y": 120.0,
       "radius": 15.9
@@ -66,10 +66,10 @@
       "group": "Automation",
       "count": 307,
       "recent_count": 118,
-      "trend_score": 0.2612,
+      "trend_score": 0.2611,
       "x": 525.0,
       "y": 158.0,
-      "radius": 15.1
+      "radius": 15.0
     },
     {
       "id": "4d-printing",
@@ -77,7 +77,7 @@
       "group": "4D",
       "count": 274,
       "recent_count": 100,
-      "trend_score": 0.2248,
+      "trend_score": 0.2247,
       "x": 285.0,
       "y": 298.0,
       "radius": 14.6
@@ -88,7 +88,7 @@
       "group": "Materials",
       "count": 221,
       "recent_count": 90,
-      "trend_score": 0.196,
+      "trend_score": 0.1959,
       "x": 185.0,
       "y": 118.0,
       "radius": 13.8
@@ -99,10 +99,10 @@
       "group": "Materials",
       "count": 197,
       "recent_count": 88,
-      "trend_score": 0.1869,
+      "trend_score": 0.1868,
       "x": 249.0,
       "y": 170.0,
-      "radius": 13.5
+      "radius": 13.4
     },
     {
       "id": "soft-robotics",
@@ -132,7 +132,7 @@
       "group": "AM",
       "count": 227,
       "recent_count": 70,
-      "trend_score": 0.1661,
+      "trend_score": 0.166,
       "x": 310.0,
       "y": 274.0,
       "radius": 13.9
@@ -187,7 +187,7 @@
       "group": "4D",
       "count": 129,
       "recent_count": 38,
-      "trend_score": 0.0916,
+      "trend_score": 0.0915,
       "x": 285.0,
       "y": 402.0,
       "radius": 12.2
@@ -207,12 +207,12 @@
       "id": "toolpath-planning",
       "label": "Toolpath / Path Planning",
       "group": "Automation",
-      "count": 77,
-      "recent_count": 29,
-      "trend_score": 0.0646,
+      "count": 78,
+      "recent_count": 30,
+      "trend_score": 0.0664,
       "x": 525.0,
       "y": 262.0,
-      "radius": 11.0
+      "radius": 11.1
     },
     {
       "id": "lce",
@@ -245,7 +245,7 @@
       "trend_score": 0.0493,
       "x": 620.0,
       "y": 172.0,
-      "radius": 10.2
+      "radius": 10.1
     },
     {
       "id": "closed-loop-control",
@@ -590,6 +590,12 @@
       "recent_count": 27
     },
     {
+      "source": "additive-manufacturing",
+      "target": "toolpath-planning",
+      "count": 64,
+      "recent_count": 27
+    },
+    {
       "source": "lce",
       "target": "multi-material-am",
       "count": 61,
@@ -605,12 +611,6 @@
       "source": "multi-material-am",
       "target": "sustainability",
       "count": 66,
-      "recent_count": 26
-    },
-    {
-      "source": "additive-manufacturing",
-      "target": "toolpath-planning",
-      "count": 63,
       "recent_count": 26
     },
     {

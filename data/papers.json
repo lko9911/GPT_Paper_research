@@ -8242,7 +8242,7 @@
     "publisher": "American Chemical Society (ACS)",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7221132440",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S66104727",
     "venue_metrics": {
@@ -14893,20 +14893,7 @@
         "orcid": "https://orcid.org/0009-0006-6123-817X",
         "position": "middle",
         "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "82th Hospital of Pla",
-            "ror": "https://ror.org/02ddfy797",
-            "country_code": "CN",
-            "type": "healthcare"
-          },
-          {
-            "name": "458th Hospital PLA",
-            "ror": "https://ror.org/05bhd7f62",
-            "country_code": "CN",
-            "type": "healthcare"
-          }
-        ],
+        "institutions": [],
         "raw_affiliation_strings": [
           "Department of Orthopedics, 960th Hospital of PLA, Jinan,"
         ]
@@ -31118,21 +31105,21 @@
         "is_corresponding": true,
         "institutions": [
           {
-            "name": "NORCE Research AS",
-            "ror": "https://ror.org/02gagpf75",
+            "name": "SINTEF",
+            "ror": "https://ror.org/01f677e56",
             "country_code": "NO",
             "type": "facility"
           },
           {
-            "name": "Montimage (France)",
-            "ror": "https://ror.org/02a8qtz61",
-            "country_code": "FR",
-            "type": "company"
+            "name": "NORCE Research AS",
+            "ror": "https://ror.org/02gagpf75",
+            "country_code": "NO",
+            "type": "facility"
           }
         ],
         "raw_affiliation_strings": [
           "NORCE Research AS, Grimstad, Norway",
-          "Montimage, Paris, France"
+          "SINTEF AS, Oslo/Porsgrunn, Norway"
         ]
       }
     ],
@@ -50386,7 +50373,7 @@
     "first_added": "2026-07-03",
     "last_updated": "2026-10-10",
     "is_weekly_new": false,
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "last_seen_in_crossref_run": "2026-10-10",
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
@@ -57701,9 +57688,83 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Peng Hu",
+        "openalex_author_id": "https://openalex.org/A5111568335",
+        "orcid": "https://orcid.org/0000-0003-0173-3647",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Science and Technology of China",
+            "ror": "https://ror.org/04c4dkn09",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Thermal Science and Energy Engineering University of Science and Technology of China  Hefei China"
+        ]
+      },
+      {
+        "name": "Liqun He",
+        "openalex_author_id": "https://openalex.org/A5101983991",
+        "orcid": "https://orcid.org/0000-0002-5857-0490",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Science and Technology of China",
+            "ror": "https://ror.org/04c4dkn09",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Thermal Science and Energy Engineering University of Science and Technology of China  Hefei China"
+        ]
+      },
+      {
+        "name": "Ying Li",
+        "openalex_author_id": "https://openalex.org/A5100414181",
+        "orcid": "https://orcid.org/0000-0002-2730-7171",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Zhejiang Lab",
+            "ror": "https://ror.org/02m2h7991",
+            "country_code": "CN",
+            "type": "facility"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "International Joint Innovation Center, The Electromagnetics Academy at Zhejiang University Zhejiang University  Haining China",
+          "State Key Laboratory of Extreme Photonics and Instrumentation, Zhejiang Key Laboratory of Intelligent Electromagnetic Control and Advanced Electronic Integration Zhejiang University  Hangzhou China"
+        ]
+      },
+      {
+        "name": "Gang Zhao",
+        "openalex_author_id": "https://openalex.org/A5068723200",
+        "orcid": "https://orcid.org/0000-0002-0201-1825",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Science and Technology of China",
+            "ror": "https://ror.org/04c4dkn09",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Electronic Engineering and Information Science University of Science and Technology of China  Hefei China"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Advanced Functional Materials",
     "doi": "10.1002/adfm.78866",
@@ -57723,7 +57784,7 @@
     "issn_l": "",
     "publisher": "Wiley",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7220900727",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S135204980",
@@ -76253,7 +76314,7 @@
         ]
       },
       {
-        "name": "John S.Y. Ho",
+        "name": "John S. Ho",
         "openalex_author_id": "https://openalex.org/A5082590253",
         "orcid": "https://orcid.org/0000-0002-9458-9033",
         "position": "middle",
@@ -91418,6 +91479,128 @@
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 21.19633376740459,
     "openalex_venue_rank_percentile": 0.9926,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+  },
+  {
+    "id": "10.1007/s40964-026-01996-y",
+    "title": "Multi-axis slicing and toolpath planning for support-free additive manufacturing of thin-walled curvilinear geometries",
+    "authors": [
+      "Neeraj Saini",
+      "A. K. Rai",
+      "C. P. Paul"
+    ],
+    "author_details": [
+      {
+        "name": "Neeraj Saini",
+        "orcid": "https://orcid.org/0009-0007-9949-2154",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "A. K. Rai",
+        "orcid": "https://orcid.org/0000-0002-8015-9315",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "C. P. Paul",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "year": 2026,
+    "venue": "Progress in Additive Manufacturing",
+    "doi": "10.1007/s40964-026-01996-y",
+    "url": "https://doi.org/10.1007/s40964-026-01996-y",
+    "source": [
+      "Crossref"
+    ],
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2363-9512",
+      "2363-9520"
+    ],
+    "issn_l": "",
+    "publisher": "Springer Science and Business Media LLC",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S4210206835",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210206835",
+      "issn_l": "2363-9512",
+      "issn": [
+        "2363-9512",
+        "2363-9520"
+      ],
+      "type": "journal",
+      "host_organization_name": "Springer Science+Business Media",
+      "works_count": 1809,
+      "cited_by_count": 21422,
+      "two_year_mean_citedness": 4.039043824701195,
+      "h_index": 63,
+      "i10_index": 494,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 4.039043824701195,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 2",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "publication_type": "journal_article",
+    "venue_trust": "trusted",
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "is_core_venue": true,
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "categories": [
+      "Graph Search / Path Planning"
+    ],
+    "tags": [
+      "Additive manufacturing"
+    ],
+    "relevance_score": 5,
+    "curation_priority": false,
+    "ai_summary_en": "1. Topic - Multi-axis slicing and toolpath planning for support-free additive manufacturing of thin-walled curvilinear geometries is a 2026 paper from Progress in Additive Manufacturing about Additive manufacturing.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Additive manufacturing.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Additive manufacturing; current relevance score is 5/10.",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_en": "Relevant to the tracker through Additive manufacturing; score: 5/10.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-10-10",
+    "last_updated": "2026-10-10",
+    "is_weekly_new": true,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-10-10",
+    "openalex_venue_rank": "Rank 2",
+    "openalex_venue_rank_number": 2,
+    "openalex_venue_rank_score": 4.039043824701195,
+    "openalex_venue_rank_percentile": 0.5965,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
@@ -113264,7 +113447,7 @@
     "publisher": "Elsevier BV",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7221102935",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S5407037061",
     "venue_metrics": {
@@ -113401,8 +113584,8 @@
         ]
       },
       {
-        "name": "Luquan Ren",
-        "openalex_author_id": "https://openalex.org/A5147005198",
+        "name": "Lei Ren",
+        "openalex_author_id": "https://openalex.org/A5126201977",
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -113430,7 +113613,7 @@
         "name": "Luquan Ren",
         "openalex_author_id": "https://openalex.org/A5147005198",
         "orcid": null,
-        "position": "last",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -124798,7 +124981,7 @@
       },
       {
         "name": "Xiangxiang Zhang",
-        "openalex_author_id": null,
+        "openalex_author_id": "https://openalex.org/A5148925789",
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -124816,7 +124999,7 @@
       },
       {
         "name": "Xiaozhou Xin",
-        "openalex_author_id": null,
+        "openalex_author_id": "https://openalex.org/A5134662968",
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -144745,8 +144928,8 @@
     "corresponding_authors": [
       {
         "name": "Cheng Zhang",
-        "openalex_author_id": "https://openalex.org/A5100769098",
-        "orcid": "https://orcid.org/0000-0001-8282-9901",
+        "openalex_author_id": null,
+        "orcid": null,
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -161053,8 +161236,8 @@
     "corresponding_authors": [
       {
         "name": "Aoming Zhang",
-        "openalex_author_id": "https://openalex.org/A5111021439",
-        "orcid": "https://orcid.org/0009-0000-1296-6484",
+        "openalex_author_id": null,
+        "orcid": null,
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -167056,8 +167239,8 @@
       },
       {
         "name": "Wenzhuo Liu",
-        "openalex_author_id": "https://openalex.org/A5107441690",
-        "orcid": "https://orcid.org/0009-0004-3542-8418",
+        "openalex_author_id": null,
+        "orcid": null,
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -184435,6 +184618,12 @@
             "type": "education"
           },
           {
+            "name": "Universität Ulm",
+            "ror": "https://ror.org/032000t02",
+            "country_code": "DE",
+            "type": "education"
+          },
+          {
             "name": "University of Manchester",
             "ror": "https://ror.org/027m9bs27",
             "country_code": "GB",
@@ -184451,9 +184640,7 @@
           "Department of Mechanical, Aerospace, and Civil Engineering University of Manchester  Manchester M13 9PL UK",
           "Institute of Structured and Architected Materials Liaoning Academy of Materials  Shenyang 110167 China",
           "Key Laboratory of Bionic Engineering Ministry of Education Jilin University  Changchun 130022 China",
-          "Department of Mechanical, Aerospace, and Civil Engineering, University of Manchester, Manchester, M13 9PL UK",
-          "Institute of Structured and Architected Materials, Liaoning Academy of Materials, Shenyang, 110167 China",
-          "Key Laboratory of Bionic Engineering, Ministry of Education, Jilin University, Changchun, 130022 China"
+          "Institute of Orthopaedic Research and Biomechanics, Ulm University Medical Centre, University of Ulm, 89081 Ulm, Germany"
         ]
       },
       {
@@ -198613,8 +198800,8 @@
     "corresponding_authors": [
       {
         "name": "Xinyu Wang",
-        "openalex_author_id": null,
-        "orcid": null,
+        "openalex_author_id": "https://openalex.org/A5100352846",
+        "orcid": "https://orcid.org/0009-0001-2925-1466",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -231760,9 +231947,9 @@
     "corresponding_authors": [
       {
         "name": "Songhao Wang",
-        "openalex_author_id": "https://openalex.org/A5057228007",
+        "openalex_author_id": null,
         "orcid": "https://orcid.org/0000-0003-3643-4698",
-        "position": "first",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -260201,10 +260388,10 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Zi Wang",
-        "openalex_author_id": "https://openalex.org/A5100338326",
-        "orcid": "https://orcid.org/0000-0001-9081-7185",
-        "position": "first",
+        "name": "Likun Wang",
+        "openalex_author_id": "https://openalex.org/A5100623561",
+        "orcid": "https://orcid.org/0000-0001-5646-9746",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -292261,7 +292448,7 @@
       },
       {
         "name": "Zihuan Chen",
-        "openalex_author_id": "https://openalex.org/A5024222220",
+        "openalex_author_id": null,
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -293547,7 +293734,7 @@
         "name": "Hao Zhang",
         "openalex_author_id": null,
         "orcid": null,
-        "position": "last",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
