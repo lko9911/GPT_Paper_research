@@ -1,4 +1,91 @@
 {
+  "10.1007/s40964-025-01257-4": {
+    "author_details": [
+      {
+        "name": "Imran Khan",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Ans Al Rashid",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Muammer Koç",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2363-9512",
+      "2363-9520"
+    ],
+    "issn_l": "",
+    "publisher": "Springer Science and Business Media LLC",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4412552199",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S4210206835",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210206835",
+      "issn_l": "2363-9512",
+      "issn": [
+        "2363-9512",
+        "2363-9520"
+      ],
+      "type": "journal",
+      "host_organization_name": "Springer Science+Business Media",
+      "works_count": 1809,
+      "cited_by_count": 21422,
+      "two_year_mean_citedness": 4.039043824701195,
+      "h_index": 63,
+      "i10_index": 494,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 4.039043824701195,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 2",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - The integration of machine learning and digital twin technologies in additive manufacturing of polymeric materials.\n2. Problem - Additive manufacturing faces challenges such as anisotropy in polymer materials, affecting mechanical and thermal properties.\n3. Method - This review synthesizes current advancements in machine learning and digital twin applications within polymer-based additive manufacturing.\n4. Key Result - The paper highlights the benefits of these technologies for enhancing manufacturing processes, tuning parameters, and improving product performance.\n5. Takeaway - The findings provide a roadmap for future research and practical applications in developing intelligent additive manufacturing systems.",
+    "relevance_note_en": "The paper addresses key advancements and challenges in the integration of ML and digital twin technologies in additive manufacturing.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-10-09",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1007/s40964-025-01257-4"
+  },
   "10.1016/j.mfglet.2025.10.002": {
     "author_details": [
       {
@@ -23125,7 +23212,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "last_seen_in_crossref_run": "2026-10-09",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "id": "10.1007/s00170-025-16354-5"
   },
   "10.1016/j.msea.2025.148034": {
@@ -29861,108 +29948,5 @@
     "last_seen_in_crossref_run": "2026-10-09",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1021/acsaenm.4c00764"
-  },
-  "10.1108/4dp-01-2025-0001": {
-    "author_details": [
-      {
-        "name": "Muhammed Hisham",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "IIT Madras Department of Engineering Design, , ,"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "IIT Madras Department of Engineering Design, , ,"
-        ]
-      },
-      {
-        "name": "Abhijit P. Deshpande",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "IIT Madras Department of Chemical Engineering, , ,"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "IIT Madras Department of Chemical Engineering, , ,"
-        ]
-      },
-      {
-        "name": "Gurunathan Saravana Kumar",
-        "orcid": "https://orcid.org/0000-0001-5549-3170",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "IIT Madras Department of Engineering Design, , ,"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "IIT Madras Department of Engineering Design, , ,"
-        ]
-      }
-    ],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "3049-9569"
-    ],
-    "issn_l": "",
-    "publisher": "Emerald",
-    "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "https://openalex.org/W4409577786",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S5407047337",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S5407047337",
-      "issn_l": "3049-9569",
-      "issn": [
-        "3049-9569"
-      ],
-      "type": "journal",
-      "host_organization_name": null,
-      "works_count": 35,
-      "cited_by_count": 26,
-      "two_year_mean_citedness": 0.6842105263157895,
-      "h_index": 3,
-      "i10_index": 0,
-      "is_core": false,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 0.6842105263157895,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 4",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - This study focuses on the 4D printing of soft actuators using functionally graded hydrogels.\n2. Problem - There is limited understanding of how hydrogel concentration and printer settings affect the properties of 4D-printed hydrogels.\n3. Method - The research examines the swelling and compression behaviors of PEGDA hydrogels, comparing functionally graded and single-composition types.\n4. Key Result - Swelling behavior was significantly influenced by hydrogel concentration, while compression properties were affected by both concentration and printer parameters.\n5. Takeaway - The findings highlight the potential of using varying hydrogel properties in 4D printing to create soft actuators capable of repetitive movements.",
-    "relevance_note_en": "The summary captures the main aspects of the study, including its focus, methodology, and findings.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-09",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1108/4dp-01-2025-0001"
   }
 }
