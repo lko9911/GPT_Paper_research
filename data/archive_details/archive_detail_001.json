@@ -1,4 +1,50 @@
 {
+  "10.1016/b978-0-443-29228-6.00015-3": {
+    "author_details": [
+      {
+        "name": "Michèle Kanhonou",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "book-chapter",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [],
+    "issn_l": "",
+    "publisher": "Elsevier",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4410441286",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "venue_trust_reason": "book/chapter output rather than journal or trusted conference article",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The paper discusses the biocompatibility aspects of multimaterial additive manufacturing in biomedical engineering.\n2. Problem - It addresses the challenges in ensuring that materials used in additive manufacturing are safe and effective for medical applications.\n3. Method - The review synthesizes current research and advancements in multimaterial additive manufacturing techniques and their implications for biocompatibility.\n4. Key Result - Findings indicate that specific material combinations can enhance biocompatibility and functionality in biomedical devices.\n5. Takeaway - The study emphasizes the importance of selecting appropriate materials in additive manufacturing to improve outcomes in biomedical applications.",
+    "relevance_note_en": "The summary captures the core themes of biocompatibility and additive manufacturing in biomedical contexts.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "id": "10.1016/b978-0-443-29228-6.00015-3"
+  },
   "10.22541/au.176419318.88774134/v1": {
     "author_details": [
       {
@@ -20353,73 +20399,5 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "id": "10.62311/nesx/46618"
-  },
-  "10.21203/rs.3.rs-3999221/v1": {
-    "author_details": [
-      {
-        "name": "Juttuka Vamsi Krishna",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Panambur Navin Karanth",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "NITK Surathkal: National Institute of Technology Karnataka"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "NITK Surathkal: National Institute of Technology Karnataka"
-        ]
-      },
-      {
-        "name": "Kannarpadi Ramakrishna Guruprasad",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "posted-content",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [],
-    "issn_l": "",
-    "publisher": "Springer Science and Business Media LLC",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4393392596",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "venue_trust_reason": "missing venue metadata",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The paper presents a new method for path planning in robotic additive manufacturing focused on cylindrical parts.\n2. Problem - Existing path planning techniques are often inadequate for non-planar geometries, leading to inefficiencies in manufacturing and repair processes.\n3. Method - The authors propose a novel algorithm that optimizes toolpath planning specifically for cylindrical geometries in additive manufacturing.\n4. Key Result - The proposed approach demonstrates improved efficiency and accuracy in building and repairing cylindrical components compared to traditional methods.\n5. Takeaway - This innovative path planning technique could significantly enhance the capabilities of robotic additive manufacturing for complex geometries.",
-    "relevance_note_en": "The summary captures the essence of the paper's contributions and findings related to path planning in additive manufacturing.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "id": "10.21203/rs.3.rs-3999221/v1"
   }
 }
