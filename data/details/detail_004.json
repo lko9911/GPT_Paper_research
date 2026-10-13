@@ -1,4 +1,147 @@
 {
+  "10.1007/s40964-025-01120-6": {
+    "author_details": [
+      {
+        "name": "Stefan Brenner",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Marcel Dickmann",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Ricardo Helm",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Johannes Mitteneder",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Georg Schlick",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Maja Lehmann",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Constantin Jugert",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Vesna Nedeljkovic-Groha",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Günther Dollinger",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Michael Mayerhofer",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Progress in Additive Manufacturing",
+    "crossref_target_issn": "2363-9512",
+    "issn": [
+      "2363-9512",
+      "2363-9520"
+    ],
+    "issn_l": "",
+    "publisher": "Springer Science and Business Media LLC",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4409945108",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S4210206835",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210206835",
+      "issn_l": "2363-9512",
+      "issn": [
+        "2363-9512",
+        "2363-9520"
+      ],
+      "type": "journal",
+      "host_organization_name": "Springer Science+Business Media",
+      "works_count": 1809,
+      "cited_by_count": 21422,
+      "two_year_mean_citedness": 4.039043824701195,
+      "h_index": 63,
+      "i10_index": 494,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 4.039043824701195,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 2",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - The study focuses on the additive manufacturing of a multi-material radio-frequency quadrupole (RFQ) prototype.\n2. Problem - High investment costs and performance limitations in conventional manufacturing methods for linear particle accelerators (Linacs) hinder their broader application.\n3. Method - The researchers employed multi-material laser powder bed fusion (PBF-LB/M) to fabricate the RFQ prototype, integrating different materials in a single process.\n4. Key Result - The prototype achieved significant performance metrics, including a vacuum pressure below 8.3 ∙ 10 –8 mbar, although challenges in geometric precision were noted.\n5. Takeaway - This work highlights the potential of multi-material additive manufacturing to improve Linac designs and suggests further optimizations are needed for enhanced performance.",
+    "relevance_note_en": "The summary captures the essence of the study's focus on multi-material additive manufacturing for RFQs and its implications for Linac technology.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-10-13",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1007/s40964-025-01120-6"
+  },
   "10.1016/j.mfglet.2025.06.133": {
     "author_details": [
       {
@@ -5404,8 +5547,8 @@
         ]
       }
     ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
     "crossref_collection_route": "keyword_query",
@@ -5418,8 +5561,8 @@
     "issn_l": "",
     "publisher": "Informa UK Limited",
     "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4410093059",
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S15647332",
     "venue_metrics": {
@@ -14174,7 +14317,7 @@
     "publisher": "Emerald",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "https://openalex.org/W4411969895",
+    "openalex_crosscheck_work_id": "",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S5407047337",
     "venue_metrics": {
@@ -28764,7 +28907,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "last_seen_in_crossref_run": "2026-10-13",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "id": "10.1016/j.polymer.2025.128868"
   },
   "10.1002/adma.71300": {
@@ -32353,7 +32496,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "last_seen_in_crossref_run": "2026-10-13",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "id": "10.1016/j.eurpolymj.2024.113651"
   },
   "10.1039/d5ta01299f": {
@@ -35549,140 +35692,5 @@
     "last_seen_in_crossref_run": "2026-10-13",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.matdes.2025.114352"
-  },
-  "10.1002/pi.6783": {
-    "author_details": [
-      {
-        "name": "Giovanna Colucci",
-        "orcid": "https://orcid.org/0000-0002-8178-6644",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Politecnico di Torino Dipartimento di Scienza Applicata e Tecnologia (DISAT)  Torino Italy"
-          },
-          {
-            "name": "Consorzio Interuniversitario Nazionale per la Scienza e Tecnologia dei Materiali (INSTM)  Florence Italy"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Politecnico di Torino Dipartimento di Scienza Applicata e Tecnologia (DISAT)  Torino Italy",
-          "Consorzio Interuniversitario Nazionale per la Scienza e Tecnologia dei Materiali (INSTM)  Florence Italy"
-        ]
-      },
-      {
-        "name": "Francesca Sacchi",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Politecnico di Torino Dipartimento di Scienza Applicata e Tecnologia (DISAT)  Torino Italy"
-          },
-          {
-            "name": "Consorzio Interuniversitario Nazionale per la Scienza e Tecnologia dei Materiali (INSTM)  Florence Italy"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Politecnico di Torino Dipartimento di Scienza Applicata e Tecnologia (DISAT)  Torino Italy",
-          "Consorzio Interuniversitario Nazionale per la Scienza e Tecnologia dei Materiali (INSTM)  Florence Italy"
-        ]
-      },
-      {
-        "name": "Federica Bondioli",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Politecnico di Torino Dipartimento di Scienza Applicata e Tecnologia (DISAT)  Torino Italy"
-          },
-          {
-            "name": "Consorzio Interuniversitario Nazionale per la Scienza e Tecnologia dei Materiali (INSTM)  Florence Italy"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Politecnico di Torino Dipartimento di Scienza Applicata e Tecnologia (DISAT)  Torino Italy",
-          "Consorzio Interuniversitario Nazionale per la Scienza e Tecnologia dei Materiali (INSTM)  Florence Italy"
-        ]
-      },
-      {
-        "name": "Massimo Messori",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Politecnico di Torino Dipartimento di Scienza Applicata e Tecnologia (DISAT)  Torino Italy"
-          },
-          {
-            "name": "Consorzio Interuniversitario Nazionale per la Scienza e Tecnologia dei Materiali (INSTM)  Florence Italy"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Politecnico di Torino Dipartimento di Scienza Applicata e Tecnologia (DISAT)  Torino Italy",
-          "Consorzio Interuniversitario Nazionale per la Scienza e Tecnologia dei Materiali (INSTM)  Florence Italy"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "0959-8103",
-      "1097-0126"
-    ],
-    "issn_l": "",
-    "publisher": "Wiley",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4410870851",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S162033819",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S162033819",
-      "issn_l": "0959-8103",
-      "issn": [
-        "0959-8103",
-        "1097-0126"
-      ],
-      "type": "journal",
-      "host_organization_name": "Wiley",
-      "works_count": 8838,
-      "cited_by_count": 172275,
-      "two_year_mean_citedness": 2.329113924050633,
-      "h_index": 137,
-      "i10_index": 4203,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 2.329113924050633,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 3",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - This study focuses on the creation of lignin-based polymer composites using 3D printing technology.\n2. Problem - It addresses the need for more sustainable polymer materials in various industries.\n3. Method - The researchers utilized a liquid crystal display (LCD) 3D printer to fabricate composites by incorporating lignin into an acrylate epoxidized soybean oil (AESO) resin.\n4. Key Result - The resulting composites demonstrated high resolution in 3D printed parts, with a uniform dispersion of lignin and specific changes in mechanical properties.\n5. Takeaway - Incorporating lignin into polymer networks can enhance sustainability while producing innovative materials for industrial applications.",
-    "relevance_note_en": "The summary captures the essence of the study's focus on sustainability and 3D printing of lignin-based composites.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-13",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1002/pi.6783"
   }
 }

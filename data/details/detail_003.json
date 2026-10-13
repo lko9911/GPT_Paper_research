@@ -1,4 +1,99 @@
 {
+  "10.1007/s10845-024-02396-1": {
+    "author_details": [
+      {
+        "name": "Ibrahim Yousif",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Liam Burns",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Fadi El Kalach",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Ramy Harik",
+        "orcid": "https://orcid.org/0000-0003-1452-9653",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Journal of Intelligent Manufacturing",
+    "crossref_target_issn": "0956-5515",
+    "issn": [
+      "0956-5515",
+      "1572-8145"
+    ],
+    "issn_l": "",
+    "publisher": "Springer Science and Business Media LLC",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4396581498",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S161464388",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S161464388",
+      "issn_l": "0956-5515",
+      "issn": [
+        "0956-5515",
+        "1572-8145"
+      ],
+      "type": "journal",
+      "host_organization_name": "Springer Science+Business Media",
+      "works_count": 3654,
+      "cited_by_count": 127309,
+      "two_year_mean_citedness": 6.610223642172524,
+      "h_index": 139,
+      "i10_index": 2475,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 6.610223642172524,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - The paper discusses the integration of computer vision in autonomous industrial manufacturing.\n2. Problem - Manufacturers struggle to meet the dual demands for customization and reduced lead times while relying on outdated equipment.\n3. Method - The authors propose a digital twin application that employs advanced computer vision algorithms for quality control at the assembly line's endpoint.\n4. Key Result - This approach effectively identifies assembly errors and autonomously corrects them, significantly reducing the need for human intervention.\n5. Takeaway - Implementing computer vision can enhance manufacturing efficiency and productivity without the need for costly equipment replacements.",
+    "relevance_note_en": "The paper directly addresses the challenges of modern manufacturing and presents a novel solution using computer vision.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-10-13",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1007/s10845-024-02396-1"
+  },
   "10.1016/j.mfglet.2025.06.193": {
     "author_details": [
       {
@@ -29558,148 +29653,5 @@
     "last_seen_in_crossref_run": "2026-10-13",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1080/17452759.2024.2445712"
-  },
-  "10.1007/s40964-025-01120-6": {
-    "author_details": [
-      {
-        "name": "Stefan Brenner",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Marcel Dickmann",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Ricardo Helm",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Johannes Mitteneder",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Georg Schlick",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Maja Lehmann",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Constantin Jugert",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Vesna Nedeljkovic-Groha",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Günther Dollinger",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Michael Mayerhofer",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "Progress in Additive Manufacturing",
-    "crossref_target_issn": "2363-9512",
-    "issn": [
-      "2363-9512",
-      "2363-9520"
-    ],
-    "issn_l": "",
-    "publisher": "Springer Science and Business Media LLC",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4409945108",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S4210206835",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S4210206835",
-      "issn_l": "2363-9512",
-      "issn": [
-        "2363-9512",
-        "2363-9520"
-      ],
-      "type": "journal",
-      "host_organization_name": "Springer Science+Business Media",
-      "works_count": 1809,
-      "cited_by_count": 21422,
-      "two_year_mean_citedness": 4.039043824701195,
-      "h_index": 63,
-      "i10_index": 494,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Core manufacturing journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 4.039043824701195,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 2",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - The study focuses on the additive manufacturing of a multi-material radio-frequency quadrupole (RFQ) prototype.\n2. Problem - High investment costs and performance limitations in conventional manufacturing methods for linear particle accelerators (Linacs) hinder their broader application.\n3. Method - The researchers employed multi-material laser powder bed fusion (PBF-LB/M) to fabricate the RFQ prototype, integrating different materials in a single process.\n4. Key Result - The prototype achieved significant performance metrics, including a vacuum pressure below 8.3 ∙ 10 –8 mbar, although challenges in geometric precision were noted.\n5. Takeaway - This work highlights the potential of multi-material additive manufacturing to improve Linac designs and suggests further optimizations are needed for enhanced performance.",
-    "relevance_note_en": "The summary captures the essence of the study's focus on multi-material additive manufacturing for RFQs and its implications for Linac technology.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-13",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1007/s40964-025-01120-6"
   }
 }

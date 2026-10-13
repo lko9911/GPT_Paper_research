@@ -1,4 +1,127 @@
 {
+  "10.1080/17452759.2026.2720703": {
+    "author_details": [
+      {
+        "name": "Dominik Laa",
+        "orcid": "https://orcid.org/0009-0007-9721-2446",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Technische Universität Wien"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Technische Universität Wien"
+        ]
+      },
+      {
+        "name": "Sebastian Geyer",
+        "orcid": "https://orcid.org/0009-0000-6882-4178",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Technische Universität Wien"
+          },
+          {
+            "name": "University of Applied Sciences"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Technische Universität Wien",
+          "University of Applied Sciences"
+        ]
+      },
+      {
+        "name": "Thomas Koch",
+        "orcid": "https://orcid.org/0000-0003-2801-3113",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Technische Universität Wien"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Technische Universität Wien"
+        ]
+      },
+      {
+        "name": "Jürgen Stampfl",
+        "orcid": "https://orcid.org/0000-0002-3626-5647",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Technische Universität Wien"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Technische Universität Wien"
+        ]
+      }
+    ],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "1745-2759",
+      "1745-2767"
+    ],
+    "issn_l": "",
+    "publisher": "Informa UK Limited",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "https://openalex.org/W7208812546",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S152936027",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S152936027",
+      "issn_l": "1745-2759",
+      "issn": [
+        "1745-2759",
+        "1745-2767"
+      ],
+      "type": "journal",
+      "host_organization_name": "Taylor & Francis",
+      "works_count": 1288,
+      "cited_by_count": 39605,
+      "two_year_mean_citedness": 10.10738255033557,
+      "h_index": 92,
+      "i10_index": 718,
+      "is_core": true,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 10.10738255033557,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - Topological influence on the tensile performance of multi-material SLA 3D printed cellular structures is a 2026 paper from Virtual and Physical Prototyping about SLA.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to SLA.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for SLA; current relevance score is 6/10.",
+    "relevance_note_en": "Relevant to the tracker through SLA; score: 6/10.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-10-13",
+    "id": "10.1080/17452759.2026.2720703"
+  },
   "10.1038/s44334-026-00092-x": {
     "author_details": [
       {
@@ -15410,7 +15533,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "last_seen_in_crossref_run": "2026-10-13",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "id": "10.1111/jace.70419"
   },
   "10.1002/lpor.71200": {
@@ -22052,7 +22175,7 @@
     "core_status": "core",
     "venue_scope": "core",
     "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - Systematic analysis of penalty-optimised illumination design for tomographic volumetric additive manufacturing via the extendable framework TVAM AID using the core imaging library is a 2026 paper from Additive Manufacturing about Volumetric AM.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Volumetric AM.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Volumetric AM; current relevance score is 5/10.",
+    "ai_summary_en": "1. Topic - Systematic analysis of penalty-optimised illumination design for tomographic volumetric additive manufacturing via the extendable framework TVAM AID using the Core Imaging Library is a 2026 paper from Additive Manufacturing about Volumetric AM.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Volumetric AM.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Volumetric AM; current relevance score is 5/10.",
     "relevance_note_en": "Relevant to the tracker through Volumetric AM; score: 5/10.",
     "abstract_used_for_summary": false,
     "raw_abstract_displayed": false,
@@ -22946,7 +23069,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "last_seen_in_crossref_run": "2026-10-13",
     "id": "10.1002/adfm.76743"
   },
@@ -34432,128 +34555,5 @@
     "not_seen_in_latest_crossref_run": false,
     "last_seen_in_crossref_run": "2026-10-13",
     "id": "10.1002/adfm.77938"
-  },
-  "10.1039/d6mh01575a": {
-    "author_details": [
-      {
-        "name": "Rakine Mouhoubi",
-        "orcid": "https://orcid.org/0009-0004-1318-3800",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Institut Charles Gerhardt Montpellier (ICGM), CNRS, Université de Montpellier, ENSCM, Montpellier 34293, France"
-          },
-          {
-            "name": "School of Chemical Engineering, Pusan National University, Geumjeong-gu, Busan 46241, Republic of Korea"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Institut Charles Gerhardt Montpellier (ICGM), CNRS, Université de Montpellier, ENSCM, Montpellier 34293, France",
-          "School of Chemical Engineering, Pusan National University, Geumjeong-gu, Busan 46241, Republic of Korea"
-        ]
-      },
-      {
-        "name": "Min-Hui Li",
-        "orcid": "https://orcid.org/0000-0001-5367-0348",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Chimie ParisTech, CNRS, Institut de Recherche de Chimie Paris, PSL University, Paris 75005, France"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Chimie ParisTech, CNRS, Institut de Recherche de Chimie Paris, PSL University, Paris 75005, France"
-        ]
-      },
-      {
-        "name": "Vincent Lapinte",
-        "orcid": "https://orcid.org/0000-0002-6089-6027",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Institut Charles Gerhardt Montpellier (ICGM), CNRS, Université de Montpellier, ENSCM, Montpellier 34293, France"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Institut Charles Gerhardt Montpellier (ICGM), CNRS, Université de Montpellier, ENSCM, Montpellier 34293, France"
-        ]
-      },
-      {
-        "name": "Sebastien Blanquer",
-        "orcid": "https://orcid.org/0000-0002-5366-6530",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Institut Charles Gerhardt Montpellier (ICGM), CNRS, Université de Montpellier, ENSCM, Montpellier 34293, France"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Institut Charles Gerhardt Montpellier (ICGM), CNRS, Université de Montpellier, ENSCM, Montpellier 34293, France"
-        ]
-      }
-    ],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2051-6347",
-      "2051-6355"
-    ],
-    "issn_l": "",
-    "publisher": "Royal Society of Chemistry (RSC)",
-    "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "https://openalex.org/W7215070970",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S2764386229",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S2764386229",
-      "issn_l": "2051-6347",
-      "issn": [
-        "2051-6347",
-        "2051-6355"
-      ],
-      "type": "journal",
-      "host_organization_name": "Royal Society of Chemistry",
-      "works_count": 4571,
-      "cited_by_count": 161183,
-      "two_year_mean_citedness": 7.407888407888408,
-      "h_index": 173,
-      "i10_index": 2302,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "High-impact general journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 7.407888407888408,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 1",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - Liquid crystal elastomers by photopolymerization: from chemistry and alignment strategies to 4D printing is a 2026 paper from Materials Horizons about LCE, 4D printing, and Soft robotics.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to LCE, 4D printing, and Soft robotics.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for LCE, 4D printing, and Soft robotics; current relevance score is 5/10.",
-    "relevance_note_en": "Relevant to the tracker through LCE, 4D printing, and Soft robotics; score: 5/10.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "not_seen_in_latest_crossref_run": false,
-    "last_seen_in_crossref_run": "2026-10-13",
-    "id": "10.1039/d6mh01575a"
   }
 }
