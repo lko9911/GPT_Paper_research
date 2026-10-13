@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-12T23:00:24+00:00",
+  "updated_at": "2026-10-13T08:47:49+00:00",
   "source": "derived from titles, tags, AI Q5 summaries, relevance notes, and public metadata; abstract text is not published",
   "recent_basis": "publication year 2026, plus records explicitly marked weekly-new",
   "node_count": 30,
@@ -42,9 +42,9 @@
       "id": "machine-learning",
       "label": "Machine Learning",
       "group": "AI",
-      "count": 368,
-      "recent_count": 171,
-      "trend_score": 0.3593,
+      "count": 370,
+      "recent_count": 173,
+      "trend_score": 0.363,
       "x": 620.0,
       "y": 68.0,
       "radius": 15.8
@@ -53,9 +53,9 @@
       "id": "digital-twin",
       "label": "Digital Twin",
       "group": "AI",
-      "count": 374,
-      "recent_count": 164,
-      "trend_score": 0.3498,
+      "count": 375,
+      "recent_count": 165,
+      "trend_score": 0.3516,
       "x": 684.0,
       "y": 120.0,
       "radius": 15.9
@@ -119,12 +119,12 @@
       "id": "monitoring",
       "label": "In-situ Monitoring",
       "group": "Automation",
-      "count": 209,
-      "recent_count": 80,
-      "trend_score": 0.1772,
+      "count": 210,
+      "recent_count": 81,
+      "trend_score": 0.179,
       "x": 589.0,
       "y": 210.0,
-      "radius": 13.6
+      "radius": 13.7
     },
     {
       "id": "vat-photopolymerization",
@@ -262,9 +262,9 @@
       "id": "self-driving-lab",
       "label": "Self-driving Lab",
       "group": "AML",
-      "count": 29,
-      "recent_count": 23,
-      "trend_score": 0.0433,
+      "count": 30,
+      "recent_count": 24,
+      "trend_score": 0.0451,
       "x": 710.0,
       "y": 248.0,
       "radius": 9.5
@@ -306,9 +306,9 @@
       "id": "surrogate-modeling",
       "label": "Surrogate Modeling",
       "group": "AI",
-      "count": 13,
-      "recent_count": 7,
-      "trend_score": 0.0142,
+      "count": 14,
+      "recent_count": 8,
+      "trend_score": 0.016,
       "x": 556.0,
       "y": 120.0,
       "radius": 8.7
@@ -358,8 +358,8 @@
     {
       "source": "digital-twin",
       "target": "machine-learning",
-      "count": 231,
-      "recent_count": 102
+      "count": 232,
+      "recent_count": 103
     },
     {
       "source": "4d-printing",
@@ -556,8 +556,8 @@
     {
       "source": "machine-learning",
       "target": "monitoring",
-      "count": 68,
-      "recent_count": 32
+      "count": 69,
+      "recent_count": 33
     },
     {
       "source": "additive-manufacturing",
@@ -590,6 +590,12 @@
       "recent_count": 27
     },
     {
+      "source": "digital-twin",
+      "target": "monitoring",
+      "count": 70,
+      "recent_count": 27
+    },
+    {
       "source": "additive-manufacturing",
       "target": "toolpath-planning",
       "count": 64,
@@ -600,12 +606,6 @@
       "target": "multi-material-am",
       "count": 61,
       "recent_count": 27
-    },
-    {
-      "source": "digital-twin",
-      "target": "monitoring",
-      "count": 69,
-      "recent_count": 26
     },
     {
       "source": "multi-material-am",
@@ -650,6 +650,12 @@
       "recent_count": 21
     },
     {
+      "source": "machine-learning",
+      "target": "self-driving-lab",
+      "count": 26,
+      "recent_count": 21
+    },
+    {
       "source": "additive-manufacturing",
       "target": "stimuli-responsive",
       "count": 81,
@@ -665,12 +671,6 @@
       "source": "composites",
       "target": "machine-learning",
       "count": 27,
-      "recent_count": 20
-    },
-    {
-      "source": "machine-learning",
-      "target": "self-driving-lab",
-      "count": 25,
       "recent_count": 20
     },
     {
