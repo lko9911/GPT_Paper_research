@@ -1,4 +1,106 @@
 {
+  "10.1016/j.jmsy.2025.03.007": {
+    "author_details": [
+      {
+        "name": "Muhammad Waseem",
+        "orcid": "https://orcid.org/0000-0002-7609-3739",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Changbai Tan",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Seog-Chan Oh",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Jorge Arinez",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Qing Chang",
+        "orcid": "https://orcid.org/0000-0003-3744-1371",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Journal of Manufacturing Systems",
+    "crossref_target_issn": "0278-6125",
+    "issn": [
+      "0278-6125"
+    ],
+    "issn_l": "",
+    "publisher": "Elsevier BV",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4408778997",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S201698446",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S201698446",
+      "issn_l": "0278-6125",
+      "issn": [
+        "0278-6125",
+        "1878-6642"
+      ],
+      "type": "journal",
+      "host_organization_name": "Elsevier BV",
+      "works_count": 4126,
+      "cited_by_count": 172778,
+      "two_year_mean_citedness": 13.221574344023324,
+      "h_index": 165,
+      "i10_index": 2357,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 13.221574344023324,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - The study focuses on enhancing battery pack assembly processes using machine learning and digital twins.\n2. Problem - Optimizing throughput in battery module assembly is difficult due to complex multi-stage processes and bottlenecks.\n3. Method - A digital twin surrogate model is developed, employing various machine learning techniques to predict throughput and machine states.\n4. Key Result - The research highlights the influence of dataset size and aggregation methods on the performance of the predictive models.\n5. Takeaway - This approach provides valuable insights for shop managers to improve production efficiency by understanding the effects of line variations.",
+    "relevance_note_en": "The paper presents a novel application of machine learning in battery assembly, addressing a significant industry challenge.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-10-14",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1016/j.jmsy.2025.03.007"
+  },
   "10.1007/s00170-025-15798-z": {
     "author_details": [
       {
@@ -27451,7 +27553,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "last_seen_in_crossref_run": "2026-10-14",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "id": "10.1016/j.rineng.2025.105480"
   },
   "10.1007/s00170-025-16874-0": {
@@ -29546,82 +29648,5 @@
     "last_seen_in_crossref_run": "2026-10-14",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.3390/polym17131800"
-  },
-  "10.54254/2755-2721/2025.gl27145": {
-    "author_details": [
-      {
-        "name": "Zekai Tian",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Dalian Maritime University"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Dalian Maritime University"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2755-2721",
-      "2755-273X"
-    ],
-    "issn_l": "",
-    "publisher": "EWA Publishing",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4414478164",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S4387281889",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S4387281889",
-      "issn_l": "2755-2721",
-      "issn": [
-        "2755-2721",
-        "2755-273X"
-      ],
-      "type": "journal",
-      "host_organization_name": null,
-      "works_count": 8044,
-      "cited_by_count": 7416,
-      "two_year_mean_citedness": 0.8392716998901272,
-      "h_index": 26,
-      "i10_index": 115,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 0.8392716998901272,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 4",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The paper discusses advancements in adaptive slicing algorithms and path planning for aerospace additive manufacturing.\n2. Problem - Traditional additive manufacturing methods face issues like geometric inaccuracies and inefficiencies due to fixed slicing and inadequate path planning.\n3. Method - The study reviews various adaptive slicing algorithms and path planning techniques, emphasizing their integration with directed energy deposition processes and real-time monitoring.\n4. Key Result - The research demonstrates improved precision in manufacturing complex aerospace components, such as turbine blades and titanium alloys, through dynamic layer adjustments and synchronized robot control.\n5. Takeaway - Challenges remain in optimizing real-time processes and balancing efficiency with precision in complex aerospace manufacturing scenarios.",
-    "relevance_note_en": "The summary captures the core themes and findings of the paper while addressing the specific aspects of adaptive slicing and path planning in aerospace additive manufacturing.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-14",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.54254/2755-2721/2025.gl27145"
   }
 }
