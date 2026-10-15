@@ -5404,9 +5404,28 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Duhwan Mun",
+        "openalex_author_id": "https://openalex.org/A5058335667",
+        "orcid": "https://orcid.org/0000-0002-5477-0671",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Korea University",
+            "ror": "https://ror.org/047dqcg40",
+            "country_code": "KR",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Mechanical Engineering, Korea University, 145 Anam-ro, Seongbuk-gu, Seoul, 02841, Republic of Korea"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "The International Journal of Advanced Manufacturing Technology",
     "doi": "10.1007/s00170-026-19328-3",
@@ -5426,7 +5445,7 @@
     "issn_l": "",
     "publisher": "Springer Science and Business Media LLC",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7221680776",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S77056576",
@@ -9733,9 +9752,34 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Jarosław M. Granda",
+        "openalex_author_id": "https://openalex.org/A5033155636",
+        "orcid": "https://orcid.org/0000-0002-5058-7669",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Institute of Organic Chemistry",
+            "ror": "https://ror.org/01e17d143",
+            "country_code": "PL",
+            "type": "facility"
+          },
+          {
+            "name": "Polish Academy of Sciences",
+            "ror": "https://ror.org/01dr6c206",
+            "country_code": "PL",
+            "type": "government"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Institute of Organic Chemistry, Polish Academy of Sciences, Warsaw, Poland"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Nature Communications",
     "doi": "10.1038/s41467-026-78271-9",
@@ -9754,7 +9798,7 @@
     "issn_l": "",
     "publisher": "Springer Science and Business Media LLC",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7169594671",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S64187185",
@@ -98637,10 +98681,10 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-08-10",
-    "last_updated": "2026-10-14",
+    "last_updated": "2026-10-15",
     "is_weekly_new": false,
-    "not_seen_in_latest_crossref_run": true,
-    "last_seen_in_crossref_run": "2026-10-14",
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-10-15",
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 3.7044257112750265,
@@ -101693,7 +101737,7 @@
         "name": "Hong Wang",
         "openalex_author_id": null,
         "orcid": "https://orcid.org/0000-0001-6799-1732",
-        "position": "last",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -112043,9 +112087,64 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Bingkun Bao",
+        "openalex_author_id": "https://openalex.org/A5000773364",
+        "orcid": "https://orcid.org/0009-0008-2710-8843",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Shanghai Jiao Tong University",
+            "ror": "https://ror.org/0220qvk04",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Biomedical Engineering, Shanghai Jiao Tong University, Shanghai, China"
+        ]
+      },
+      {
+        "name": "Qiuning Lin",
+        "openalex_author_id": "https://openalex.org/A5088258780",
+        "orcid": "https://orcid.org/0000-0002-9418-9590",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Shanghai Jiao Tong University",
+            "ror": "https://ror.org/0220qvk04",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Biomedical Engineering, Shanghai Jiao Tong University, Shanghai, China"
+        ]
+      },
+      {
+        "name": "Boyu Zhang",
+        "openalex_author_id": "https://openalex.org/A5042294334",
+        "orcid": "https://orcid.org/0000-0003-2256-1071",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Shanghai Jiao Tong University",
+            "ror": "https://ror.org/0220qvk04",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Biomedical Engineering, Shanghai Jiao Tong University, Shanghai, China"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Nature Communications",
     "doi": "10.1038/s41467-026-78658-8",
@@ -112064,7 +112163,7 @@
     "issn_l": "",
     "publisher": "Springer Science and Business Media LLC",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7221643973",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S64187185",
@@ -115771,7 +115870,7 @@
         "name": "Luquan Ren",
         "openalex_author_id": "https://openalex.org/A5100389643",
         "orcid": "https://orcid.org/0000-0003-1102-8482",
-        "position": "middle",
+        "position": "last",
         "is_corresponding": true,
         "institutions": [
           {
@@ -116578,7 +116677,7 @@
         "name": "Mondher Nasri",
         "openalex_author_id": "https://openalex.org/A5006405851",
         "orcid": "https://orcid.org/0000-0001-7848-4365",
-        "position": "middle",
+        "position": "first",
         "is_corresponding": true,
         "institutions": [
           {
@@ -124688,17 +124787,11 @@
     "corresponding_authors": [
       {
         "name": "Maria A. Bieberich",
-        "openalex_author_id": null,
-        "orcid": null,
-        "position": "middle",
+        "openalex_author_id": "https://openalex.org/A5081851152",
+        "orcid": "https://orcid.org/0000-0002-1518-5330",
+        "position": "first",
         "is_corresponding": true,
         "institutions": [
-          {
-            "name": "University of Iowa",
-            "ror": "https://ror.org/036jqmy94",
-            "country_code": "US",
-            "type": "education"
-          },
           {
             "name": "University of Maryland, Baltimore County",
             "ror": "https://ror.org/02qskvh78",
@@ -124707,8 +124800,7 @@
           }
         ],
         "raw_affiliation_strings": [
-          "University of Maryland, Baltimore County, Baltimore, Maryland, USA",
-          "Institute for Vision Research, Carver College of Medicine, University of Iowa, Iowa City, Iowa, USA"
+          "University of Maryland, Baltimore County, Baltimore, Maryland, USA"
         ]
       },
       {
@@ -137552,9 +137644,29 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Ajit S. Panesar",
+        "openalex_author_id": "https://openalex.org/A5073757945",
+        "orcid": "https://orcid.org/0000-0001-8801-8288",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Imperial College London",
+            "ror": "https://ror.org/041kmwe10",
+            "country_code": "GB",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Imperial College London",
+          "Department of Aeronautics, Imperial College London, London, UK"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2025,
     "venue": "Virtual and Physical Prototyping",
     "doi": "10.1080/17452759.2025.2546671",
@@ -137574,8 +137686,8 @@
     "issn_l": "",
     "publisher": "Informa UK Limited",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4413640020",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S152936027",
     "venue_metrics": {
@@ -234081,9 +234193,9 @@
     "corresponding_authors": [
       {
         "name": "Songhao Wang",
-        "openalex_author_id": "https://openalex.org/A5057228007",
+        "openalex_author_id": null,
         "orcid": "https://orcid.org/0000-0003-3643-4698",
-        "position": "first",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -277023,10 +277135,10 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Manish Pratap Singh",
-        "openalex_author_id": "https://openalex.org/A5021211339",
-        "orcid": "https://orcid.org/0000-0002-9530-2348",
-        "position": "first",
+        "name": "Ratnesh Kumar Raj Singh",
+        "openalex_author_id": "https://openalex.org/A5066015004",
+        "orcid": "https://orcid.org/0000-0001-9377-6753",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -294582,7 +294694,7 @@
       },
       {
         "name": "Zihuan Chen",
-        "openalex_author_id": "https://openalex.org/A5024222220",
+        "openalex_author_id": null,
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -301862,7 +301974,7 @@
     "last_updated": "2026-10-15",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-10-15",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 3.7044257112750265,
