@@ -18775,6 +18775,100 @@
     "last_seen_in_crossref_run": "2026-10-16",
     "id": "10.1007/s40964-026-01840-3"
   },
+  "10.1016/j.addma.2026.105406": {
+    "author_details": [
+      {
+        "name": "Yizhuo Liu",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Junyu Hua",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Yujie Shan",
+        "orcid": "https://orcid.org/0000-0003-4974-8573",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Huachao Mao",
+        "orcid": "https://orcid.org/0000-0003-2841-8794",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2214-8604"
+    ],
+    "issn_l": "",
+    "publisher": "Elsevier BV",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S2764842179",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S2764842179",
+      "issn_l": "2214-7810",
+      "issn": [
+        "2214-7810",
+        "2214-8604"
+      ],
+      "type": "journal",
+      "host_organization_name": "Elsevier BV",
+      "works_count": 5106,
+      "cited_by_count": 246110,
+      "two_year_mean_citedness": 7.721680420105026,
+      "h_index": 193,
+      "i10_index": 3661,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 7.721680420105026,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - 3D Printing of Diffractive Optical Elements with Programmable Refractive Index and Physics-Aware Differentiable Inverse Design is a 2026 paper from Additive Manufacturing about Additive manufacturing.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Additive manufacturing.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Additive manufacturing; current relevance score is 6/10.",
+    "relevance_note_en": "Relevant to the tracker through Additive manufacturing; score: 6/10.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-10-16",
+    "id": "10.1016/j.addma.2026.105406"
+  },
   "10.1002/admt.202501509": {
     "author_details": [
       {
@@ -29613,8 +29707,8 @@
         ]
       }
     ],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
     "crossref_collection_route": "keyword_query",
@@ -29627,7 +29721,7 @@
     "issn_l": "",
     "publisher": "SAGE Publications",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7221804746",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S179017329",
@@ -34305,152 +34399,5 @@
     "not_seen_in_latest_crossref_run": false,
     "last_seen_in_crossref_run": "2026-10-16",
     "id": "10.1002/adma.74397"
-  },
-  "10.1039/d6sm00036c": {
-    "author_details": [
-      {
-        "name": "Seunghwan Lee",
-        "orcid": "https://orcid.org/0009-0004-1693-426X",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Mechanical Engineering, Korea Advanced Institute of Science and Technology, Daejeon 34141, Republic of Korea"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical Engineering, Korea Advanced Institute of Science and Technology, Daejeon 34141, Republic of Korea"
-        ]
-      },
-      {
-        "name": "Gisoo Lee",
-        "orcid": "https://orcid.org/0000-0002-4662-4519",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Aerospace Engineering, Korea Advanced Institute of Science and Technology, Daejeon 34141, Republic of Korea"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Aerospace Engineering, Korea Advanced Institute of Science and Technology, Daejeon 34141, Republic of Korea"
-        ]
-      },
-      {
-        "name": "Seounghee Yun",
-        "orcid": "https://orcid.org/0009-0006-9547-6256",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Mechanical Engineering, Korea Advanced Institute of Science and Technology, Daejeon 34141, Republic of Korea"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical Engineering, Korea Advanced Institute of Science and Technology, Daejeon 34141, Republic of Korea"
-        ]
-      },
-      {
-        "name": "Sumin Lee",
-        "orcid": "https://orcid.org/0009-0000-0715-7180",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Aerospace Engineering, Korea Advanced Institute of Science and Technology, Daejeon 34141, Republic of Korea"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Aerospace Engineering, Korea Advanced Institute of Science and Technology, Daejeon 34141, Republic of Korea"
-        ]
-      },
-      {
-        "name": "Jeonyoon Lee",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Aerospace Engineering, Korea Advanced Institute of Science and Technology, Daejeon 34141, Republic of Korea"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Aerospace Engineering, Korea Advanced Institute of Science and Technology, Daejeon 34141, Republic of Korea"
-        ]
-      },
-      {
-        "name": "Hansohl Cho",
-        "orcid": "https://orcid.org/0000-0001-7914-5402",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Mechanical Engineering, Korea Advanced Institute of Science and Technology, Daejeon 34141, Republic of Korea"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical Engineering, Korea Advanced Institute of Science and Technology, Daejeon 34141, Republic of Korea"
-        ]
-      }
-    ],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "1744-683X",
-      "1744-6848"
-    ],
-    "issn_l": "",
-    "publisher": "Royal Society of Chemistry (RSC)",
-    "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "https://openalex.org/W7164865290",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S6377669",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S6377669",
-      "issn_l": "1744-683X",
-      "issn": [
-        "1744-683X",
-        "1744-6848"
-      ],
-      "type": "journal",
-      "host_organization_name": "Royal Society of Chemistry",
-      "works_count": 21231,
-      "cited_by_count": 600944,
-      "two_year_mean_citedness": 2.5407619827939367,
-      "h_index": 230,
-      "i10_index": 12080,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 2.5407619827939367,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 3",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The study focuses on the mechanical properties of 3D-printed digital materials under large strains.\n2. Problem - There is a lack of comprehensive understanding regarding the mechanical functionalities of these materials, which limits their application.\n3. Method - The authors investigate the anisotropic behavior of these materials through experimental analysis and characterization techniques.\n4. Key Result - The research reveals significant differences in mechanical performance based on the printing orientation and material composition.\n5. Takeaway - Understanding the mechanical anisotropy of 3D-printed digital materials can enhance their design and application in various fields.",
-    "relevance_note_en": "The summary captures the essence of the research on mechanical anisotropy in 3D-printed materials.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-16",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1039/d6sm00036c"
   }
 }

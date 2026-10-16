@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-16T13:28:49+00:00",
+  "updated_at": "2026-10-16T18:27:09+00:00",
   "source": "derived from titles, tags, AI Q5 summaries, relevance notes, and public metadata; abstract text is not published",
   "recent_basis": "publication year 2026, plus records explicitly marked weekly-new",
   "node_count": 30,
@@ -11,18 +11,18 @@
       "group": "AM",
       "count": 1183,
       "recent_count": 453,
-      "trend_score": 0.9909,
+      "trend_score": 0.9907,
       "x": 310.0,
       "y": 148.0,
-      "radius": 22.8
+      "radius": 22.7
     },
     {
       "id": "additive-manufacturing",
       "label": "Additive Manufacturing",
       "group": "AM",
-      "count": 1220,
-      "recent_count": 439,
-      "trend_score": 0.9784,
+      "count": 1221,
+      "recent_count": 440,
+      "trend_score": 0.9799,
       "x": 369.8,
       "y": 170.5,
       "radius": 23.0
@@ -33,7 +33,7 @@
       "group": "AM",
       "count": 661,
       "recent_count": 211,
-      "trend_score": 0.4886,
+      "trend_score": 0.4885,
       "x": 359.4,
       "y": 233.5,
       "radius": 18.8
@@ -42,12 +42,12 @@
       "id": "machine-learning",
       "label": "Machine Learning",
       "group": "AI",
-      "count": 373,
-      "recent_count": 176,
-      "trend_score": 0.3637,
+      "count": 374,
+      "recent_count": 177,
+      "trend_score": 0.3654,
       "x": 620.0,
       "y": 68.0,
-      "radius": 15.8
+      "radius": 15.9
     },
     {
       "id": "digital-twin",
@@ -55,7 +55,7 @@
       "group": "AI",
       "count": 378,
       "recent_count": 168,
-      "trend_score": 0.3526,
+      "trend_score": 0.3525,
       "x": 684.0,
       "y": 120.0,
       "radius": 15.9
@@ -69,7 +69,7 @@
       "trend_score": 0.2614,
       "x": 525.0,
       "y": 158.0,
-      "radius": 15.1
+      "radius": 15.0
     },
     {
       "id": "4d-printing",
@@ -77,7 +77,7 @@
       "group": "4D",
       "count": 274,
       "recent_count": 100,
-      "trend_score": 0.2219,
+      "trend_score": 0.2218,
       "x": 285.0,
       "y": 298.0,
       "radius": 14.6
@@ -132,7 +132,7 @@
       "group": "AM",
       "count": 228,
       "recent_count": 71,
-      "trend_score": 0.1658,
+      "trend_score": 0.1657,
       "x": 310.0,
       "y": 274.0,
       "radius": 13.9
@@ -154,7 +154,7 @@
       "group": "4D",
       "count": 169,
       "recent_count": 60,
-      "trend_score": 0.1343,
+      "trend_score": 0.1342,
       "x": 349.0,
       "y": 350.0,
       "radius": 13.0
@@ -231,7 +231,7 @@
       "group": "Materials",
       "count": 79,
       "recent_count": 25,
-      "trend_score": 0.0581,
+      "trend_score": 0.058,
       "x": 121.0,
       "y": 170.0,
       "radius": 11.1
@@ -240,9 +240,9 @@
       "id": "inverse-design",
       "label": "Inverse Design",
       "group": "AI",
-      "count": 48,
-      "recent_count": 25,
-      "trend_score": 0.0504,
+      "count": 49,
+      "recent_count": 26,
+      "trend_score": 0.0522,
       "x": 620.0,
       "y": 172.0,
       "radius": 10.2
@@ -253,10 +253,10 @@
       "group": "AML",
       "count": 31,
       "recent_count": 25,
-      "trend_score": 0.0463,
+      "trend_score": 0.0462,
       "x": 710.0,
       "y": 248.0,
-      "radius": 9.6
+      "radius": 9.5
     },
     {
       "id": "closed-loop-control",
@@ -286,7 +286,7 @@
       "group": "AML",
       "count": 26,
       "recent_count": 19,
-      "trend_score": 0.0358,
+      "trend_score": 0.0357,
       "x": 774.0,
       "y": 300.0,
       "radius": 9.3
@@ -429,14 +429,14 @@
     },
     {
       "source": "additive-manufacturing",
-      "target": "soft-robotics",
-      "count": 165,
-      "recent_count": 57
+      "target": "machine-learning",
+      "count": 142,
+      "recent_count": 58
     },
     {
       "source": "additive-manufacturing",
-      "target": "machine-learning",
-      "count": 141,
+      "target": "soft-robotics",
+      "count": 165,
       "recent_count": 57
     },
     {
@@ -748,14 +748,14 @@
     {
       "source": "additive-manufacturing",
       "target": "inverse-design",
-      "count": 34,
-      "recent_count": 14
+      "count": 35,
+      "recent_count": 15
     },
     {
       "source": "inverse-design",
       "target": "machine-learning",
-      "count": 20,
-      "recent_count": 14
+      "count": 21,
+      "recent_count": 15
     },
     {
       "source": "formulation-discovery",
