@@ -1954,8 +1954,8 @@
         ]
       }
     ],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
     "crossref_collection_route": "keyword_query",
@@ -1967,8 +1967,8 @@
     "issn_l": "",
     "publisher": "MDPI AG",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7222010916",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S123288148",
     "venue_metrics": {
@@ -5198,6 +5198,95 @@
     "not_seen_in_latest_crossref_run": false,
     "last_seen_in_crossref_run": "2026-10-16",
     "id": "10.1016/j.jmsy.2026.09.021"
+  },
+  "10.3390/buildings16204092": {
+    "author_details": [
+      {
+        "name": "Stelian Brad",
+        "orcid": "https://orcid.org/0000-0003-1129-3358",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "The Design and Robotics Engineering Department, Technical University of Cluj Napoca, Blv Muncii 103-105, 400641 Cluj Napoca, Romania"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "The Design and Robotics Engineering Department, Technical University of Cluj Napoca, Blv Muncii 103-105, 400641 Cluj Napoca, Romania"
+        ]
+      },
+      {
+        "name": "Eyas Deeb",
+        "orcid": "https://orcid.org/0009-0000-2153-9257",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "The Design and Robotics Engineering Department, Technical University of Cluj Napoca, Blv Muncii 103-105, 400641 Cluj Napoca, Romania"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "The Design and Robotics Engineering Department, Technical University of Cluj Napoca, Blv Muncii 103-105, 400641 Cluj Napoca, Romania"
+        ]
+      }
+    ],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2075-5309"
+    ],
+    "issn_l": "",
+    "publisher": "MDPI AG",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S4210191137",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210191137",
+      "issn_l": "2075-5309",
+      "issn": [
+        "2075-5309"
+      ],
+      "type": "journal",
+      "host_organization_name": "Multidisciplinary Digital Publishing Institute",
+      "works_count": 19892,
+      "cited_by_count": 188485,
+      "two_year_mean_citedness": 4.317721518987342,
+      "h_index": 102,
+      "i10_index": 5604,
+      "is_core": true,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 4.317721518987342,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 2",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - Simulation-Based Evaluation of Lean Robotics for Construction-Scale Robotic 3D Printing in Construction Automation is a 2026 paper from Buildings about Manufacturing automation and Process optimization.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Manufacturing automation and Process optimization.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Manufacturing automation and Process optimization; current relevance score is 7/10.",
+    "relevance_note_en": "Relevant to the tracker through Manufacturing automation and Process optimization; score: 7/10.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-10-16",
+    "id": "10.3390/buildings16204092"
   },
   "10.1080/17452759.2026.2675817": {
     "author_details": [
@@ -28236,108 +28325,5 @@
     "not_seen_in_latest_crossref_run": false,
     "last_seen_in_crossref_run": "2026-10-16",
     "id": "10.1002/admt.71255"
-  },
-  "10.1007/s00604-026-07848-4": {
-    "author_details": [
-      {
-        "name": "Muhammad Mubashar Saeed",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Bilal Javed",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Eadaoin Carthy",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Nicholas Dunne",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "David Kinahan",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "0026-3672",
-      "1436-5073"
-    ],
-    "issn_l": "",
-    "publisher": "Springer Science and Business Media LLC",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W7130517428",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S12065667",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S12065667",
-      "issn_l": "0026-3672",
-      "issn": [
-        "0026-3672",
-        "1436-5073"
-      ],
-      "type": "journal",
-      "host_organization_name": "Springer Science+Business Media",
-      "works_count": 16993,
-      "cited_by_count": 304692,
-      "two_year_mean_citedness": 5.189909566872918,
-      "h_index": 133,
-      "i10_index": 7970,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 5.189909566872918,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 2",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - This study focuses on the development of reusable microfluidic connectors for nanoparticle synthesis.\n2. Problem - Existing microfluidic systems often lack cost-effective and reliable connectors that can be reused without failure.\n3. Method - The authors utilized a multi-material 3D printing technique to create connectors that facilitate the synthesis of gold nanoparticles under controlled flow conditions.\n4. Key Result - The synthesized gold nanoparticles exhibited tunable properties and consistent performance, demonstrating the effectiveness of the flow rate ratio in controlling their characteristics.\n5. Takeaway - This work highlights the potential of 3D printed connectors in enhancing microfluidic systems for nanoparticle production, providing insights into the dynamics of nanoparticle formation.",
-    "relevance_note_en": "The paper presents innovative methods and results relevant to microfluidic technology and nanoparticle synthesis.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-16",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1007/s00604-026-07848-4"
   }
 }

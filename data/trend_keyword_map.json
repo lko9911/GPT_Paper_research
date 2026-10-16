@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-16T06:59:51+00:00",
+  "updated_at": "2026-10-16T13:28:49+00:00",
   "source": "derived from titles, tags, AI Q5 summaries, relevance notes, and public metadata; abstract text is not published",
   "recent_basis": "publication year 2026, plus records explicitly marked weekly-new",
   "node_count": 30,
@@ -11,7 +11,7 @@
       "group": "AM",
       "count": 1183,
       "recent_count": 453,
-      "trend_score": 0.9911,
+      "trend_score": 0.9909,
       "x": 310.0,
       "y": 148.0,
       "radius": 22.8
@@ -20,9 +20,9 @@
       "id": "additive-manufacturing",
       "label": "Additive Manufacturing",
       "group": "AM",
-      "count": 1219,
-      "recent_count": 438,
-      "trend_score": 0.9768,
+      "count": 1220,
+      "recent_count": 439,
+      "trend_score": 0.9784,
       "x": 369.8,
       "y": 170.5,
       "radius": 23.0
@@ -33,7 +33,7 @@
       "group": "AM",
       "count": 661,
       "recent_count": 211,
-      "trend_score": 0.4887,
+      "trend_score": 0.4886,
       "x": 359.4,
       "y": 233.5,
       "radius": 18.8
@@ -44,10 +44,10 @@
       "group": "AI",
       "count": 373,
       "recent_count": 176,
-      "trend_score": 0.3638,
+      "trend_score": 0.3637,
       "x": 620.0,
       "y": 68.0,
-      "radius": 15.9
+      "radius": 15.8
     },
     {
       "id": "digital-twin",
@@ -64,12 +64,12 @@
       "id": "process-optimization",
       "label": "Process Optimization",
       "group": "Automation",
-      "count": 308,
-      "recent_count": 119,
-      "trend_score": 0.2597,
+      "count": 309,
+      "recent_count": 120,
+      "trend_score": 0.2614,
       "x": 525.0,
       "y": 158.0,
-      "radius": 15.0
+      "radius": 15.1
     },
     {
       "id": "4d-printing",
@@ -77,7 +77,7 @@
       "group": "4D",
       "count": 274,
       "recent_count": 100,
-      "trend_score": 0.222,
+      "trend_score": 0.2219,
       "x": 285.0,
       "y": 298.0,
       "radius": 14.6
@@ -88,7 +88,7 @@
       "group": "Materials",
       "count": 221,
       "recent_count": 90,
-      "trend_score": 0.1935,
+      "trend_score": 0.1934,
       "x": 185.0,
       "y": 118.0,
       "radius": 13.8
@@ -99,7 +99,7 @@
       "group": "Materials",
       "count": 198,
       "recent_count": 89,
-      "trend_score": 0.1863,
+      "trend_score": 0.1862,
       "x": 249.0,
       "y": 170.0,
       "radius": 13.4
@@ -110,7 +110,7 @@
       "group": "Robotics",
       "count": 211,
       "recent_count": 85,
-      "trend_score": 0.1833,
+      "trend_score": 0.1832,
       "x": 540.0,
       "y": 318.0,
       "radius": 13.7
@@ -143,7 +143,7 @@
       "group": "Materials",
       "count": 167,
       "recent_count": 70,
-      "trend_score": 0.1493,
+      "trend_score": 0.1492,
       "x": 185.0,
       "y": 222.0,
       "radius": 12.9
@@ -176,7 +176,7 @@
       "group": "Application",
       "count": 134,
       "recent_count": 44,
-      "trend_score": 0.101,
+      "trend_score": 0.1009,
       "x": 160.0,
       "y": 285.5,
       "radius": 12.3
@@ -187,7 +187,7 @@
       "group": "4D",
       "count": 129,
       "recent_count": 38,
-      "trend_score": 0.0905,
+      "trend_score": 0.0904,
       "x": 285.0,
       "y": 402.0,
       "radius": 12.2
@@ -376,8 +376,8 @@
     {
       "source": "additive-manufacturing",
       "target": "process-optimization",
-      "count": 222,
-      "recent_count": 75
+      "count": 223,
+      "recent_count": 76
     },
     {
       "source": "metamaterials",
