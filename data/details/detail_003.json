@@ -1,4 +1,114 @@
 {
+  "10.1016/j.jmsy.2025.09.011": {
+    "author_details": [
+      {
+        "name": "Jinhua Xiao",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Zhiwen Zhang",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Sergio Terzi",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Fei Tao",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Nabil Anwer",
+        "orcid": "https://orcid.org/0000-0002-0771-4685",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Benoit Eynard",
+        "orcid": "https://orcid.org/0000-0002-5393-4363",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Journal of Manufacturing Systems",
+    "crossref_target_issn": "0278-6125",
+    "issn": [
+      "0278-6125"
+    ],
+    "issn_l": "",
+    "publisher": "Elsevier BV",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4414397749",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S201698446",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S201698446",
+      "issn_l": "0278-6125",
+      "issn": [
+        "0278-6125",
+        "1878-6642"
+      ],
+      "type": "journal",
+      "host_organization_name": "Elsevier BV",
+      "works_count": 4126,
+      "cited_by_count": 172778,
+      "two_year_mean_citedness": 13.221574344023324,
+      "h_index": 165,
+      "i10_index": 2357,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 13.221574344023324,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - The study focuses on enhancing human-robot collaboration in disassembly processes for end-of-life products using digital twin technology.\n2. Problem - Challenges arise in efficiently disassembling end-of-life products due to uncertainties and dynamic requirements in recycling.\n3. Method - A digital twin-assisted multi-agent system is proposed, utilizing a dynamic Time Petri Net model and a Dueling-Double deep Q-learning network for optimal task planning.\n4. Key Result - The application of the MADDQN algorithm effectively optimizes disassembly sequences and task allocations, demonstrated through a case study on a specific battery pack.\n5. Takeaway - This approach offers a flexible and efficient solution for complex disassembly tasks in various scenarios, leveraging advanced simulation and AI techniques.",
+    "relevance_note_en": "The paper presents innovative methods for improving disassembly processes, which is highly relevant to current trends in recycling and automation.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-10-17",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1016/j.jmsy.2025.09.011"
+  },
   "10.1016/j.jmsy.2025.06.014": {
     "author_details": [
       {
@@ -29371,83 +29481,5 @@
     "last_seen_in_crossref_run": "2026-10-17",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.3390/jmmp9100334"
-  },
-  "10.1016/j.ijadhadh.2025.104074": {
-    "author_details": [
-      {
-        "name": "Shauvik Pahari",
-        "orcid": "https://orcid.org/0009-0005-0088-3899",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Garrett W. Melenka",
-        "orcid": "https://orcid.org/0000-0002-3885-6926",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "0143-7496"
-    ],
-    "issn_l": "",
-    "publisher": "Elsevier BV",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4411047931",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S86637577",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S86637577",
-      "issn_l": "0143-7496",
-      "issn": [
-        "0143-7496",
-        "1879-0127"
-      ],
-      "type": "journal",
-      "host_organization_name": "Elsevier BV",
-      "works_count": 5561,
-      "cited_by_count": 136843,
-      "two_year_mean_citedness": 3.843505477308294,
-      "h_index": 136,
-      "i10_index": 2848,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 3.843505477308294,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 2",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - This study focuses on the interface properties of multi-material 3D-printed polymer composites.\n2. Problem - Understanding the shear behavior and strength of multi-material joints is essential for predicting structural failure.\n3. Method - The researchers fabricated multi-material single-lap joints using Fused Filament Fabrication and conducted shear testing with digital image correlation analysis.\n4. Key Result - The PETG-PETC joints exhibited a shear strength of 2.701 MPa, closely rivaling the strongest PLA-PLA joints.\n5. Takeaway - Optimizing interface compatibility in multi-material FFF can lead to enhanced mechanical properties, making it viable for advanced engineering applications.",
-    "relevance_note_en": "The paper provides significant insights into multi-material FFF and its mechanical performance.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-17",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1016/j.ijadhadh.2025.104074"
   }
 }

@@ -1529,7 +1529,7 @@
       "official_quartile": null,
       "openalex_two_year_mean_citedness": 3.443413729128015,
       "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 2",
+      "openalex_venue_rank": "Rank 3",
       "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
     },
     "venue_trust_reason": "journal article with named venue and no low-trust marker",
@@ -2879,7 +2879,7 @@
       "official_quartile": null,
       "openalex_two_year_mean_citedness": 3.443413729128015,
       "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 2",
+      "openalex_venue_rank": "Rank 3",
       "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
     },
     "venue_trust_reason": "journal article with named venue and no low-trust marker",
@@ -5230,8 +5230,8 @@
         ]
       }
     ],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
     "crossref_collection_route": "keyword_query",
@@ -5243,8 +5243,8 @@
     "issn_l": "",
     "publisher": "MDPI AG",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7222764065",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S4210191137",
     "venue_metrics": {
@@ -19710,6 +19710,91 @@
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1080/27525783.2026.2645373"
   },
+  "10.1016/j.nxnano.2026.100863": {
+    "author_details": [
+      {
+        "name": "Mangesh Shamrao Deshmukh",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Prashant Thorat",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Nishant Bhore",
+        "orcid": "https://orcid.org/0000-0002-6226-164X",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2949-8295"
+    ],
+    "issn_l": "",
+    "publisher": "Elsevier BV",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S4387288079",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4387288079",
+      "issn_l": "2949-8295",
+      "issn": [
+        "2949-8295"
+      ],
+      "type": "journal",
+      "host_organization_name": "Elsevier BV",
+      "works_count": 857,
+      "cited_by_count": 3461,
+      "two_year_mean_citedness": 3.5628019323671496,
+      "h_index": 23,
+      "i10_index": 92,
+      "is_core": true,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 3.5628019323671496,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 2",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - C³M-OMMT twin: A causal process-structure-property digital twin for morphology-aware mechanical optimization of OMMT-Modified PLA in fused-filament fabrications is a 2026 paper from Next Nanotechnology about FDM/Material extrusion and Digital Twins.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to FDM/Material extrusion and Digital Twins.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for FDM/Material extrusion and Digital Twins; current relevance score is 7/10.",
+    "relevance_note_en": "Relevant to the tracker through FDM/Material extrusion and Digital Twins; score: 7/10.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-10-17",
+    "id": "10.1016/j.nxnano.2026.100863"
+  },
   "10.1007/s00170-026-19256-2": {
     "author_details": [
       {
@@ -28056,7 +28141,7 @@
       "official_quartile": null,
       "openalex_two_year_mean_citedness": 3.443413729128015,
       "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 2",
+      "openalex_venue_rank": "Rank 3",
       "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
     },
     "venue_trust_reason": "journal article with named venue and no low-trust marker",
@@ -28221,109 +28306,5 @@
     "last_seen_in_crossref_run": "2026-10-17",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/advs.202522500"
-  },
-  "10.1002/admt.71255": {
-    "author_details": [
-      {
-        "name": "Fato Niang",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "ICGM, CNRS, ENSCM University of Montpellier  Montpellier France"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "ICGM, CNRS, ENSCM University of Montpellier  Montpellier France"
-        ]
-      },
-      {
-        "name": "Vincent Lapinte",
-        "orcid": "https://orcid.org/0000-0002-6089-6027",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "ICGM, CNRS, ENSCM University of Montpellier  Montpellier France"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "ICGM, CNRS, ENSCM University of Montpellier  Montpellier France"
-        ]
-      },
-      {
-        "name": "Sebastien Blanquer",
-        "orcid": "https://orcid.org/0000-0002-5366-6530",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "ICGM, CNRS, ENSCM University of Montpellier  Montpellier France"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "ICGM, CNRS, ENSCM University of Montpellier  Montpellier France"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2365-709X",
-      "2365-709X"
-    ],
-    "issn_l": "",
-    "publisher": "Wiley",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W7203579618",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S2765038284",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S2765038284",
-      "issn_l": "2365-709X",
-      "issn": [
-        "2365-709X"
-      ],
-      "type": "journal",
-      "host_organization_name": "Wiley",
-      "works_count": 6302,
-      "cited_by_count": 132117,
-      "two_year_mean_citedness": 4.245998315080033,
-      "h_index": 131,
-      "i10_index": 2825,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 4.245998315080033,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 2",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - UCST-Driven Shape Morphing in Digital Light Processing 4D-Printed Hydrogels is a 2026 paper from Advanced Materials Technologies about 4D printing and DLP.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to 4D printing and DLP.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for 4D printing and DLP; current relevance score is 6/10.",
-    "relevance_note_en": "Relevant to the tracker through 4D printing and DLP; score: 6/10.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "not_seen_in_latest_crossref_run": false,
-    "last_seen_in_crossref_run": "2026-10-17",
-    "id": "10.1002/admt.71255"
   }
 }
