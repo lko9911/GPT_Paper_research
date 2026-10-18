@@ -8843,9 +8843,9 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Zhenlu Xu",
-        "openalex_author_id": "https://openalex.org/A5056473819",
-        "orcid": "https://orcid.org/0009-0007-0580-017X",
+        "name": "Wenjun Xu",
+        "openalex_author_id": "https://openalex.org/A5059180329",
+        "orcid": "https://orcid.org/0000-0001-5370-3437",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -31455,7 +31455,7 @@
     "first_added": "2026-09-27",
     "last_updated": "2026-10-18",
     "is_weekly_new": false,
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "last_seen_in_crossref_run": "2026-10-18",
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
@@ -32403,21 +32403,21 @@
         "is_corresponding": true,
         "institutions": [
           {
-            "name": "NORCE Research AS",
-            "ror": "https://ror.org/02gagpf75",
+            "name": "SINTEF",
+            "ror": "https://ror.org/01f677e56",
             "country_code": "NO",
             "type": "facility"
           },
           {
-            "name": "Montimage (France)",
-            "ror": "https://ror.org/02a8qtz61",
-            "country_code": "FR",
-            "type": "company"
+            "name": "NORCE Research AS",
+            "ror": "https://ror.org/02gagpf75",
+            "country_code": "NO",
+            "type": "facility"
           }
         ],
         "raw_affiliation_strings": [
           "NORCE Research AS, Grimstad, Norway",
-          "Montimage, Paris, France"
+          "SINTEF AS, Oslo/Porsgrunn, Norway"
         ]
       }
     ],
@@ -51669,10 +51669,10 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-07-03",
-    "last_updated": "2026-10-17",
+    "last_updated": "2026-10-18",
     "is_weekly_new": false,
-    "not_seen_in_latest_crossref_run": true,
-    "last_seen_in_crossref_run": "2026-10-17",
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-10-18",
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 17.209580838323355,
@@ -117510,7 +117510,7 @@
         "name": "Mondher Nasri",
         "openalex_author_id": "https://openalex.org/A5006405851",
         "orcid": "https://orcid.org/0000-0001-7848-4365",
-        "position": "middle",
+        "position": "first",
         "is_corresponding": true,
         "institutions": [
           {
@@ -125672,7 +125672,7 @@
         "name": "Erin Lavik",
         "openalex_author_id": "https://openalex.org/A5079335476",
         "orcid": "https://orcid.org/0000-0002-0644-744X",
-        "position": "middle",
+        "position": "last",
         "is_corresponding": true,
         "institutions": [
           {
@@ -126962,7 +126962,7 @@
     "first_added": "2026-08-19",
     "last_updated": "2026-10-18",
     "is_weekly_new": false,
-    "not_seen_in_latest_crossref_run": true,
+    "not_seen_in_latest_crossref_run": false,
     "last_seen_in_crossref_run": "2026-10-18",
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
@@ -133323,7 +133323,7 @@
         "name": "Luquan Ren",
         "openalex_author_id": "https://openalex.org/A5100389643",
         "orcid": "https://orcid.org/0000-0003-1102-8482",
-        "position": "last",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -148018,8 +148018,8 @@
     "corresponding_authors": [
       {
         "name": "Cheng Zhang",
-        "openalex_author_id": "https://openalex.org/A5100769098",
-        "orcid": "https://orcid.org/0000-0001-8282-9901",
+        "openalex_author_id": null,
+        "orcid": null,
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -170329,8 +170329,8 @@
       },
       {
         "name": "Wenzhuo Liu",
-        "openalex_author_id": "https://openalex.org/A5107441690",
-        "orcid": "https://orcid.org/0009-0004-3542-8418",
+        "openalex_author_id": null,
+        "orcid": null,
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -187708,6 +187708,12 @@
             "type": "education"
           },
           {
+            "name": "Universität Ulm",
+            "ror": "https://ror.org/032000t02",
+            "country_code": "DE",
+            "type": "education"
+          },
+          {
             "name": "University of Manchester",
             "ror": "https://ror.org/027m9bs27",
             "country_code": "GB",
@@ -187724,9 +187730,7 @@
           "Department of Mechanical, Aerospace, and Civil Engineering University of Manchester  Manchester M13 9PL UK",
           "Institute of Structured and Architected Materials Liaoning Academy of Materials  Shenyang 110167 China",
           "Key Laboratory of Bionic Engineering Ministry of Education Jilin University  Changchun 130022 China",
-          "Department of Mechanical, Aerospace, and Civil Engineering, University of Manchester, Manchester, M13 9PL UK",
-          "Institute of Structured and Architected Materials, Liaoning Academy of Materials, Shenyang, 110167 China",
-          "Key Laboratory of Bionic Engineering, Ministry of Education, Jilin University, Changchun, 130022 China"
+          "Institute of Orthopaedic Research and Biomechanics, Ulm University Medical Centre, University of Ulm, 89081 Ulm, Germany"
         ]
       },
       {
@@ -201957,7 +201961,7 @@
         "name": "Xiaofeng Wang",
         "openalex_author_id": null,
         "orcid": "https://orcid.org/0000-0002-9913-1064",
-        "position": "middle",
+        "position": "last",
         "is_corresponding": true,
         "institutions": [
           {
@@ -235033,9 +235037,9 @@
     "corresponding_authors": [
       {
         "name": "Songhao Wang",
-        "openalex_author_id": null,
+        "openalex_author_id": "https://openalex.org/A5057228007",
         "orcid": "https://orcid.org/0000-0003-3643-4698",
-        "position": "middle",
+        "position": "first",
         "is_corresponding": true,
         "institutions": [
           {
@@ -263474,10 +263478,10 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Zi Wang",
-        "openalex_author_id": "https://openalex.org/A5100338326",
-        "orcid": "https://orcid.org/0000-0001-9081-7185",
-        "position": "first",
+        "name": "Likun Wang",
+        "openalex_author_id": "https://openalex.org/A5100623561",
+        "orcid": "https://orcid.org/0000-0001-5646-9746",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -277975,10 +277979,10 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Manish Pratap Singh",
-        "openalex_author_id": "https://openalex.org/A5021211339",
-        "orcid": "https://orcid.org/0000-0002-9530-2348",
-        "position": "first",
+        "name": "Ratnesh Kumar Raj Singh",
+        "openalex_author_id": "https://openalex.org/A5066015004",
+        "orcid": "https://orcid.org/0000-0001-9377-6753",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -295534,7 +295538,7 @@
       },
       {
         "name": "Zihuan Chen",
-        "openalex_author_id": "https://openalex.org/A5024222220",
+        "openalex_author_id": null,
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -296798,7 +296802,7 @@
       },
       {
         "name": "Huanyue Zhang",
-        "openalex_author_id": null,
+        "openalex_author_id": "https://openalex.org/A5014806689",
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -296813,14 +296817,14 @@
         "raw_affiliation_strings": [
           "Department of Orthopedics, Central Hospital of Dalian University of Technology, Dalian, People’s Republic of China",
           "Instrumental Analysis Center, Dalian University of Technology, Dalian, People’s Republic of China",
-          "Department of Orthopedics, Central Hospital of Dalian University of Technology, Dalian, People's Republic of China"
+          "Instrumental Analysis Center, Dalian University of Technology, Dalian, People's Republic of China"
         ]
       },
       {
         "name": "Hao Zhang",
         "openalex_author_id": null,
         "orcid": null,
-        "position": "middle",
+        "position": "last",
         "is_corresponding": true,
         "institutions": [
           {
@@ -302811,10 +302815,10 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-24",
-    "last_updated": "2026-10-17",
+    "last_updated": "2026-10-18",
     "is_weekly_new": false,
-    "last_seen_in_crossref_run": "2026-10-17",
-    "not_seen_in_latest_crossref_run": true,
+    "last_seen_in_crossref_run": "2026-10-18",
+    "not_seen_in_latest_crossref_run": false,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 3.7044257112750265,
@@ -339851,7 +339855,7 @@
         "name": "Ling Wang",
         "openalex_author_id": "https://openalex.org/A5115592675",
         "orcid": "https://orcid.org/0000-0002-5176-7469",
-        "position": "last",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
