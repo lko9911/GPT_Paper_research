@@ -1,4 +1,80 @@
 {
+  "10.21203/rs.3.rs-7699256/v1": {
+    "author_details": [
+      {
+        "name": "khamiss cheikh",
+        "orcid": "https://orcid.org/0009-0003-4811-8710",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Mohammed V University of Rabat Mohammadia School of Engineering: Universite Mohammed V de Rabat Ecole Mohammadia d'Ingenieurs"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Mohammed V University of Rabat Mohammadia School of Engineering: Universite Mohammed V de Rabat Ecole Mohammadia d'Ingenieurs"
+        ]
+      },
+      {
+        "name": "EL Mostapha Boudi",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Rabi Rabi",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Hamza Mokhliss",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "posted-content",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [],
+    "issn_l": "",
+    "publisher": "Springer Science and Business Media LLC",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "https://openalex.org/W4414945212",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "venue_trust_reason": "missing venue metadata",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The study focuses on the trade-offs between cost and reliability in the maintenance of additive manufacturing systems.\n2. Problem - It addresses the challenges in optimizing maintenance strategies to balance operational costs and system reliability.\n3. Method - The authors employ a combination of digital twin technology, Kaplan-Meier survival analysis, and Monte Carlo simulations to analyze maintenance scenarios.\n4. Key Result - The findings reveal significant insights into how maintenance decisions can be optimized to enhance reliability while managing costs effectively.\n5. Takeaway - This research underscores the importance of integrating advanced analytical methods in maintenance planning for additive manufacturing.",
+    "relevance_note_en": "The summary captures the core aspects of the paper, focusing on the methodologies and implications of the findings.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "id": "10.21203/rs.3.rs-7699256/v1"
+  },
   "10.1016/b978-0-443-29228-6.00012-8": {
     "author_details": [
       {
@@ -20404,59 +20480,5 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "id": "10.1115/msec2024-125262"
-  },
-  "10.2139/ssrn.4903000": {
-    "author_details": [
-      {
-        "name": "Shauvik Pahari",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Garrett  W. Melenka",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
-    "metadata_source": "crossref",
-    "crossref_type": "posted-content",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [],
-    "issn_l": "",
-    "publisher": "Elsevier BV",
-    "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "https://openalex.org/W4400912380",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "venue_trust_reason": "missing venue metadata",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - Analysis of the Interface Properties of Multi-Material Fused Filament Fabricated (Fff) Printed Polymer Composite Structures is a 2024 paper from an unknown venue about FDM/Material extrusion.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to FDM/Material extrusion.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for FDM/Material extrusion; current relevance score is 6/10.",
-    "relevance_note_en": "Relevant to the tracker through FDM/Material extrusion; score: 6/10.",
-    "abstract_used_for_summary": false,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "id": "10.2139/ssrn.4903000"
   }
 }
