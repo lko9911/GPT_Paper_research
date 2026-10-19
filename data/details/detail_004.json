@@ -1,4 +1,93 @@
 {
+  "10.3390/jmmp9100334": {
+    "author_details": [
+      {
+        "name": "Habib Afsharnia",
+        "orcid": "https://orcid.org/0009-0009-4448-8232",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Engineering, Birmingham City University, Birmingham B4 7XG, West Midlands, UK"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Engineering, Birmingham City University, Birmingham B4 7XG, West Midlands, UK"
+        ]
+      },
+      {
+        "name": "Javaid Butt",
+        "orcid": "https://orcid.org/0000-0002-8303-6695",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Engineering, Birmingham City University, Birmingham B4 7XG, West Midlands, UK"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Engineering, Birmingham City University, Birmingham B4 7XG, West Midlands, UK"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2504-4494"
+    ],
+    "issn_l": "",
+    "publisher": "MDPI AG",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4415169465",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S4210232045",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210232045",
+      "issn_l": "2504-4494",
+      "issn": [
+        "2504-4494"
+      ],
+      "type": "journal",
+      "host_organization_name": "Multidisciplinary Digital Publishing Institute",
+      "works_count": 1816,
+      "cited_by_count": 19084,
+      "two_year_mean_citedness": 3.456932773109244,
+      "h_index": 55,
+      "i10_index": 507,
+      "is_core": true,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 3.456932773109244,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 2",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The paper reviews the integration of artificial intelligence and machine learning in Cold Spray Additive Manufacturing (CSAM).\n2. Problem - Key challenges in CSAM include porosity control, geometric accuracy, anisotropy, and cost issues related to gas selection and nozzle wear.\n3. Method - A systematic literature review was conducted to analyze existing studies, employing keyword co-occurrence and clustering techniques.\n4. Key Result - Four main themes emerged: design for CSAM, material analytics, real-time monitoring and defect analytics, and AI-enabled optimization.\n5. Takeaway - The study highlights critical challenges and opportunities for AI/ML in CSAM, providing a roadmap for future research.",
+    "relevance_note_en": "The summary accurately reflects the main themes and findings of the paper.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-10-19",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.3390/jmmp9100334"
+  },
   "10.1016/j.ijadhadh.2025.104074": {
     "author_details": [
       {
@@ -35194,134 +35283,5 @@
     "last_seen_in_crossref_run": "2026-10-19",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1038/s41467-025-66554-6"
-  },
-  "10.1021/acs.chemrev.4c00070": {
-    "author_details": [
-      {
-        "name": "Aixiang Ding",
-        "orcid": "https://orcid.org/0000-0002-0770-7098",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Richard and Loan Hill Department of Biomedical Engineering"
-          },
-          {
-            "name": "University of Illinois at Chicago"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Richard and Loan Hill Department of Biomedical Engineering",
-          "University of Illinois at Chicago"
-        ]
-      },
-      {
-        "name": "Fang Tang",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Surgery"
-          },
-          {
-            "name": "Northwestern University Feinberg School of Medicine"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Surgery",
-          "Northwestern University Feinberg School of Medicine"
-        ]
-      },
-      {
-        "name": "Eben Alsberg",
-        "orcid": "https://orcid.org/0000-0002-3487-4625",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Richard and Loan Hill Department of Biomedical Engineering"
-          },
-          {
-            "name": "University of Illinois at Chicago"
-          },
-          {
-            "name": "Departments of Mechanical & Industrial Engineering, Orthopaedic Surgery, and Pharmacology and Regenerative Medicine"
-          },
-          {
-            "name": "University of Illinois at Chicago"
-          },
-          {
-            "name": "Jesse Brown Veterans Affairs Medical Center (JBVAMC)"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Richard and Loan Hill Department of Biomedical Engineering",
-          "University of Illinois at Chicago",
-          "Departments of Mechanical & Industrial Engineering, Orthopaedic Surgery, and Pharmacology and Regenerative Medicine",
-          "University of Illinois at Chicago",
-          "Jesse Brown Veterans Affairs Medical Center (JBVAMC)"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "0009-2665",
-      "1520-6890"
-    ],
-    "issn_l": "",
-    "publisher": "American Chemical Society (ACS)",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4408647517",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S41143188",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S41143188",
-      "issn_l": "0009-2665",
-      "issn": [
-        "0009-2665",
-        "1520-6890"
-      ],
-      "type": "journal",
-      "host_organization_name": "American Chemical Society",
-      "works_count": 10635,
-      "cited_by_count": 4093191,
-      "two_year_mean_citedness": 50.32514450867052,
-      "h_index": 1007,
-      "i10_index": 8001,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 50.32514450867052,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 1",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The paper reviews advancements in 4D printing technology and its applications.\n2. Problem - Current 4D printing is limited to proof-of-concept demonstrations and faces challenges in material accessibility and fabrication complexities.\n3. Method - The authors analyze various aspects of 4D printing, including technologies, materials, design, and applications across multiple fields.\n4. Key Result - The review highlights the rapid progress in 4D printing and its potential for creating adaptive structures in diverse industries.\n5. Takeaway - Ongoing research and innovation are crucial for overcoming existing limitations and realizing the full potential of 4D printing.",
-    "relevance_note_en": "The summary captures the core themes and findings of the paper effectively.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-19",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1021/acs.chemrev.4c00070"
   }
 }
