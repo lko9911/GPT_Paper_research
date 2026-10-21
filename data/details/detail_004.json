@@ -1,4 +1,183 @@
 {
+  "10.1002/adma.202420063": {
+    "author_details": [
+      {
+        "name": "Hanxun Jin",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Mechanical Engineering Northwestern University  Evanston IL 60208 USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering Northwestern University  Evanston IL 60208 USA"
+        ]
+      },
+      {
+        "name": "Boyu Zhang",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Mechanical Engineering Northwestern University  Evanston IL 60208 USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering Northwestern University  Evanston IL 60208 USA"
+        ]
+      },
+      {
+        "name": "Qianying Cao",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Division of Applied Mathematics Brown University  Providence RI 02912 USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Division of Applied Mathematics Brown University  Providence RI 02912 USA"
+        ]
+      },
+      {
+        "name": "Enrui Zhang",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Division of Applied Mathematics Brown University  Providence RI 02912 USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Division of Applied Mathematics Brown University  Providence RI 02912 USA"
+        ]
+      },
+      {
+        "name": "Aniruddha Bora",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Division of Applied Mathematics Brown University  Providence RI 02912 USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Division of Applied Mathematics Brown University  Providence RI 02912 USA"
+        ]
+      },
+      {
+        "name": "Sridhar Krishnaswamy",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Mechanical Engineering Northwestern University  Evanston IL 60208 USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering Northwestern University  Evanston IL 60208 USA"
+        ]
+      },
+      {
+        "name": "George Em Karniadakis",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Division of Applied Mathematics Brown University  Providence RI 02912 USA"
+          },
+          {
+            "name": "School of Engineering Brown University  Providence RI 02912 USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Division of Applied Mathematics Brown University  Providence RI 02912 USA",
+          "School of Engineering Brown University  Providence RI 02912 USA"
+        ]
+      },
+      {
+        "name": "Horacio D. Espinosa",
+        "orcid": "https://orcid.org/0000-0002-1907-3213",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Mechanical Engineering Northwestern University  Evanston IL 60208 USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering Northwestern University  Evanston IL 60208 USA"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Advanced Materials",
+    "crossref_target_issn": "0935-9648",
+    "issn": [
+      "0935-9648",
+      "1521-4095"
+    ],
+    "issn_l": "",
+    "publisher": "Wiley",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4409649139",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S99352657",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S99352657",
+      "issn_l": "0935-9648",
+      "issn": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "type": "journal",
+      "host_organization_name": null,
+      "works_count": 44789,
+      "cited_by_count": 4803689,
+      "two_year_mean_citedness": 21.19633376740459,
+      "h_index": 743,
+      "i10_index": 31001,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "High-impact general journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 21.19633376740459,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - The study focuses on the use of machine learning for designing mechanical metamaterials.\n2. Problem - Current inverse design methods struggle with the need for large datasets, especially for micro-scale materials with nonlinear behaviors.\n3. Method - An end-to-end machine learning framework utilizing deep neural operators is proposed to learn the relationship between microstructure and mechanical response from limited experimental data.\n4. Key Result - The framework demonstrated a prediction error of 5-10% for mechanical responses in stochastic microstructures created via two-photon lithography.\n5. Takeaway - This research highlights the potential of neural operators to enable the design of complex materials with desired properties, even when data is limited.",
+    "relevance_note_en": "The paper presents a novel approach to material design using machine learning, addressing significant challenges in the field.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-10-21",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1002/adma.202420063"
+  },
   "10.1016/j.matdes.2025.114539": {
     "author_details": [
       {
@@ -35300,122 +35479,5 @@
     "last_seen_in_crossref_run": "2026-10-21",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1039/d5mh00363f"
-  },
-  "10.1108/4dp-04-2025-0008": {
-    "author_details": [
-      {
-        "name": "Morteza Sayah Irani",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "University of Birjand , ,"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "University of Birjand , ,"
-        ]
-      },
-      {
-        "name": "Mohammad Lakhi",
-        "orcid": "https://orcid.org/0000-0003-3742-3616",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Birjand University of Technology , ,"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Birjand University of Technology , ,"
-        ]
-      },
-      {
-        "name": "Sadegh Ranjbar",
-        "orcid": "https://orcid.org/0000-0002-1634-8074",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Urmia University , ,"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Urmia University , ,"
-        ]
-      },
-      {
-        "name": "Ali Zolfagharian",
-        "orcid": "https://orcid.org/0000-0001-5302-360X",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Deakin University – Geelong Campus at Waurn Ponds , ,"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Deakin University – Geelong Campus at Waurn Ponds , ,"
-        ]
-      }
-    ],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "3049-9569"
-    ],
-    "issn_l": "",
-    "publisher": "Emerald",
-    "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "https://openalex.org/W7101572459",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S5407047337",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S5407047337",
-      "issn_l": "3049-9569",
-      "issn": [
-        "3049-9569"
-      ],
-      "type": "journal",
-      "host_organization_name": null,
-      "works_count": 35,
-      "cited_by_count": 26,
-      "two_year_mean_citedness": 0.6842105263157895,
-      "h_index": 3,
-      "i10_index": 0,
-      "is_core": false,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 0.6842105263157895,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 4",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The paper explores damage tolerance in 4D-printed mechanical structures.\n2. Problem - It addresses how material choices and design strategies affect resilience to stress in these structures.\n3. Method - A systematic review of recent literature is conducted, focusing on self-sensing and adaptive mechanisms in 4D printing.\n4. Key Result - The findings indicate that incorporating smart materials and adaptive designs enhances the ability of structures to manage damage effectively.\n5. Takeaway - The study emphasizes the importance of self-adaptive features in improving the durability and performance of 4D-printed structures under mechanical stress.",
-    "relevance_note_en": "The summary accurately captures the main themes and findings of the paper.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1108/4dp-04-2025-0008"
   }
 }
