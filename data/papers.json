@@ -926,7 +926,7 @@
           {
             "name": "Wyss Institute for Biologically Inspired Engineering",
             "ror": "https://ror.org/008cfmj78",
-            "country_code": null,
+            "country_code": "US",
             "type": "facility"
           }
         ],
@@ -8975,9 +8975,9 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Zhenlu Xu",
-        "openalex_author_id": "https://openalex.org/A5056473819",
-        "orcid": "https://orcid.org/0009-0007-0580-017X",
+        "name": "Wenjun Xu",
+        "openalex_author_id": "https://openalex.org/A5059180329",
+        "orcid": "https://orcid.org/0000-0001-5370-3437",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -31940,7 +31940,7 @@
     "first_added": "2026-09-27",
     "last_updated": "2026-10-22",
     "is_weekly_new": false,
-    "not_seen_in_latest_crossref_run": true,
+    "not_seen_in_latest_crossref_run": false,
     "last_seen_in_crossref_run": "2026-10-22",
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
@@ -32707,9 +32707,48 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Liqiao Xia",
+        "openalex_author_id": "https://openalex.org/A5007995577",
+        "orcid": "https://orcid.org/0000-0001-8878-7490",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Hong Kong Polytechnic University",
+            "ror": "https://ror.org/0030zas98",
+            "country_code": "HK",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Industrial and Systems Engineering, The Hong Kong Polytechnic University, Hong Kong, China",
+          "The Hong Kong Polytechnic University, Shenzhen Research Institute, Shenzhen, Guangdong 518057, China"
+        ]
+      },
+      {
+        "name": "Zheng Pai",
+        "openalex_author_id": "https://openalex.org/A5101141870",
+        "orcid": null,
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Hong Kong Polytechnic University",
+            "ror": "https://ror.org/0030zas98",
+            "country_code": "HK",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Industrial and Systems Engineering, The Hong Kong Polytechnic University, Hong Kong, China",
+          "The Hong Kong Polytechnic University, Shenzhen Research Institute, Shenzhen, Guangdong 518057, China"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Journal of Manufacturing Systems",
     "doi": "10.1016/j.jmsy.2026.10.002",
@@ -32728,7 +32767,7 @@
     "issn_l": "",
     "publisher": "Elsevier BV",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7223154959",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S201698446",
@@ -33021,9 +33060,9 @@
     "corresponding_authors": [
       {
         "name": "Assia Belbachir",
-        "openalex_author_id": "https://openalex.org/A5051482797",
+        "openalex_author_id": null,
         "orcid": "https://orcid.org/0000-0002-1294-8478",
-        "position": "first",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -33045,21 +33084,21 @@
         "is_corresponding": true,
         "institutions": [
           {
-            "name": "SINTEF",
-            "ror": "https://ror.org/01f677e56",
-            "country_code": "NO",
-            "type": "facility"
-          },
-          {
             "name": "NORCE Research AS",
             "ror": "https://ror.org/02gagpf75",
             "country_code": "NO",
             "type": "facility"
+          },
+          {
+            "name": "Montimage (France)",
+            "ror": "https://ror.org/02a8qtz61",
+            "country_code": "FR",
+            "type": "company"
           }
         ],
         "raw_affiliation_strings": [
           "NORCE Research AS, Grimstad, Norway",
-          "SINTEF AS, Oslo/Porsgrunn, Norway"
+          "Montimage, Paris, France"
         ]
       }
     ],
@@ -33238,7 +33277,7 @@
     "publisher": "Elsevier BV",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7223174577",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S201698446",
     "venue_metrics": {
@@ -37531,9 +37570,28 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Atefeh Amindoust",
+        "openalex_author_id": "https://openalex.org/A5011067513",
+        "orcid": "https://orcid.org/0000-0003-1791-4864",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Islamic Azad University of Najafabad",
+            "ror": "https://ror.org/015j7c446",
+            "country_code": "IR",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Industrial Engineering, Na.C., Islamic Azad University of Najafabad, Najafābād, Iran, Islamic Republic of"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Progress in Additive Manufacturing",
     "doi": "10.1007/s40964-026-02012-z",
@@ -37553,7 +37611,7 @@
     "issn_l": "",
     "publisher": "Springer Science and Business Media LLC",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7223106150",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S4210206835",
@@ -48474,7 +48532,7 @@
           {
             "name": "Wyss Institute for Biologically Inspired Engineering",
             "ror": "https://ror.org/008cfmj78",
-            "country_code": null,
+            "country_code": "US",
             "type": "facility"
           }
         ],
@@ -52902,7 +52960,7 @@
     "first_added": "2026-07-03",
     "last_updated": "2026-10-22",
     "is_weekly_new": false,
-    "not_seen_in_latest_crossref_run": true,
+    "not_seen_in_latest_crossref_run": false,
     "last_seen_in_crossref_run": "2026-10-22",
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
@@ -70676,7 +70734,7 @@
     "publisher": "Elsevier BV",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7223188719",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S124577123",
     "venue_metrics": {
@@ -73480,9 +73538,28 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Brigitte Städler",
+        "openalex_author_id": "https://openalex.org/A5044749762",
+        "orcid": "https://orcid.org/0000-0002-7335-3945",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Aarhus University",
+            "ror": "https://ror.org/01aj84f44",
+            "country_code": "DK",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Interdisciplinary Nanoscience Center (iNANO) Aarhus University  Aarhus Denmark"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Advanced Materials Technologies",
     "doi": "10.1002/admt.71401",
@@ -73502,8 +73579,8 @@
     "issn_l": "",
     "publisher": "Wiley",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7223172411",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2765038284",
     "venue_metrics": {
@@ -99258,7 +99335,7 @@
             "type": "education"
           },
           {
-            "name": "Swiss Federal Laboratories for Materials Science and Technology",
+            "name": "Empa",
             "ror": "https://ror.org/02x681a42",
             "country_code": "CH",
             "type": "facility"
@@ -99301,7 +99378,7 @@
             "type": "education"
           },
           {
-            "name": "Swiss Federal Laboratories for Materials Science and Technology",
+            "name": "Empa",
             "ror": "https://ror.org/02x681a42",
             "country_code": "CH",
             "type": "facility"
@@ -104332,7 +104409,7 @@
         "name": "Hong Wang",
         "openalex_author_id": null,
         "orcid": "https://orcid.org/0000-0001-6799-1732",
-        "position": "last",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -109326,9 +109403,9 @@
     ],
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "3D Printing and Additive Manufacturing",
-    "crossref_target_issn": "2329-7662",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
     "issn": [
       "2329-7662",
       "2329-7670"
@@ -118465,7 +118542,7 @@
         "name": "Luquan Ren",
         "openalex_author_id": "https://openalex.org/A5100389643",
         "orcid": "https://orcid.org/0000-0003-1102-8482",
-        "position": "last",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -119272,7 +119349,7 @@
         "name": "Mondher Nasri",
         "openalex_author_id": "https://openalex.org/A5006405851",
         "orcid": "https://orcid.org/0000-0001-7848-4365",
-        "position": "middle",
+        "position": "first",
         "is_corresponding": true,
         "institutions": [
           {
@@ -127434,7 +127511,7 @@
         "name": "Erin Lavik",
         "openalex_author_id": "https://openalex.org/A5079335476",
         "orcid": "https://orcid.org/0000-0002-0644-744X",
-        "position": "middle",
+        "position": "last",
         "is_corresponding": true,
         "institutions": [
           {
@@ -141694,7 +141771,7 @@
     "last_updated": "2026-10-22",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-10-22",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 4.095050580487474,
@@ -144969,7 +145046,7 @@
             "type": "education"
           },
           {
-            "name": "University of Pamplona",
+            "name": "Universidad de Pamplona",
             "ror": "https://ror.org/04dfr7a85",
             "country_code": "CO",
             "type": "education"
@@ -145006,7 +145083,7 @@
         "is_corresponding": true,
         "institutions": [
           {
-            "name": "University of Pamplona",
+            "name": "Universidad de Pamplona",
             "ror": "https://ror.org/04dfr7a85",
             "country_code": "CO",
             "type": "education"
@@ -172091,8 +172168,8 @@
       },
       {
         "name": "Wenzhuo Liu",
-        "openalex_author_id": "https://openalex.org/A5107441690",
-        "orcid": "https://orcid.org/0009-0004-3542-8418",
+        "openalex_author_id": null,
+        "orcid": null,
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -187703,7 +187780,7 @@
         "is_corresponding": true,
         "institutions": [
           {
-            "name": "Swiss Federal Laboratories for Materials Science and Technology",
+            "name": "Empa",
             "ror": "https://ror.org/02x681a42",
             "country_code": "CH",
             "type": "facility"
@@ -203723,7 +203800,7 @@
         "name": "Xiaofeng Wang",
         "openalex_author_id": null,
         "orcid": "https://orcid.org/0000-0002-9913-1064",
-        "position": "last",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -208463,7 +208540,7 @@
           {
             "name": "Wyss Institute for Biologically Inspired Engineering",
             "ror": "https://ror.org/008cfmj78",
-            "country_code": null,
+            "country_code": "US",
             "type": "facility"
           }
         ],
@@ -241278,7 +241355,7 @@
           {
             "name": "Wyss Institute for Biologically Inspired Engineering",
             "ror": "https://ror.org/008cfmj78",
-            "country_code": null,
+            "country_code": "US",
             "type": "facility"
           }
         ],
@@ -278168,7 +278245,7 @@
           {
             "name": "Institute for Materials Research, Tohoku University",
             "ror": "https://ror.org/04664mr26",
-            "country_code": null,
+            "country_code": "JP",
             "type": "facility"
           }
         ],
@@ -279741,10 +279818,10 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Ratnesh Kumar Raj Singh",
-        "openalex_author_id": "https://openalex.org/A5066015004",
-        "orcid": "https://orcid.org/0000-0001-9377-6753",
-        "position": "middle",
+        "name": "Manish Pratap Singh",
+        "openalex_author_id": "https://openalex.org/A5021211339",
+        "orcid": "https://orcid.org/0000-0002-9530-2348",
+        "position": "first",
         "is_corresponding": true,
         "institutions": [
           {
@@ -280357,7 +280434,7 @@
           {
             "name": "Wyss Institute for Biologically Inspired Engineering",
             "ror": "https://ror.org/008cfmj78",
-            "country_code": null,
+            "country_code": "US",
             "type": "facility"
           }
         ],
@@ -297300,7 +297377,7 @@
       },
       {
         "name": "Zihuan Chen",
-        "openalex_author_id": "https://openalex.org/A5024222220",
+        "openalex_author_id": null,
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -298564,7 +298641,7 @@
       },
       {
         "name": "Huanyue Zhang",
-        "openalex_author_id": "https://openalex.org/A5014806689",
+        "openalex_author_id": null,
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -298579,7 +298656,7 @@
         "raw_affiliation_strings": [
           "Department of Orthopedics, Central Hospital of Dalian University of Technology, Dalian, People’s Republic of China",
           "Instrumental Analysis Center, Dalian University of Technology, Dalian, People’s Republic of China",
-          "Instrumental Analysis Center, Dalian University of Technology, Dalian, People's Republic of China"
+          "Department of Orthopedics, Central Hospital of Dalian University of Technology, Dalian, People's Republic of China"
         ]
       },
       {
@@ -303082,7 +303159,7 @@
             "type": "education"
           },
           {
-            "name": "Swiss Federal Laboratories for Materials Science and Technology",
+            "name": "Empa",
             "ror": "https://ror.org/02x681a42",
             "country_code": "CH",
             "type": "facility"
@@ -303101,7 +303178,7 @@
         "is_corresponding": true,
         "institutions": [
           {
-            "name": "Swiss Federal Laboratories for Materials Science and Technology",
+            "name": "Empa",
             "ror": "https://ror.org/02x681a42",
             "country_code": "CH",
             "type": "facility"
