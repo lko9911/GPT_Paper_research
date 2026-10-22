@@ -1,4 +1,681 @@
 {
+  "10.1007/s40964-026-01996-y": {
+    "author_details": [
+      {
+        "name": "Neeraj Saini",
+        "orcid": "https://orcid.org/0009-0007-9949-2154",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "A. K. Rai",
+        "orcid": "https://orcid.org/0000-0002-8015-9315",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "C. P. Paul",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2363-9512",
+      "2363-9520"
+    ],
+    "issn_l": "",
+    "publisher": "Springer Science and Business Media LLC",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7221322400",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S4210206835",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210206835",
+      "issn_l": "2363-9512",
+      "issn": [
+        "2363-9512",
+        "2363-9520"
+      ],
+      "type": "journal",
+      "host_organization_name": "Springer Science+Business Media",
+      "works_count": 1809,
+      "cited_by_count": 21422,
+      "two_year_mean_citedness": 4.039043824701195,
+      "h_index": 63,
+      "i10_index": 494,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 4.039043824701195,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 2",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - Multi-axis slicing and toolpath planning for support-free additive manufacturing of thin-walled curvilinear geometries is a 2026 paper from Progress in Additive Manufacturing about Additive manufacturing.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Additive manufacturing.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Additive manufacturing; current relevance score is 5/10.",
+    "relevance_note_en": "Relevant to the tracker through Additive manufacturing; score: 5/10.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-10-22",
+    "id": "10.1007/s40964-026-01996-y"
+  },
+  "10.3390/robotics15050085": {
+    "author_details": [
+      {
+        "name": "Evan Rolland",
+        "orcid": "https://orcid.org/0009-0002-6854-2749",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Systems Engineering, École de Technologie Supérieure, 1100 Notre-Dame Street West, Montreal, QC H3C 1K3, Canada"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Systems Engineering, École de Technologie Supérieure, 1100 Notre-Dame Street West, Montreal, QC H3C 1K3, Canada"
+        ]
+      },
+      {
+        "name": "Ilian A. Bonev",
+        "orcid": "https://orcid.org/0000-0002-9663-2496",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Systems Engineering, École de Technologie Supérieure, 1100 Notre-Dame Street West, Montreal, QC H3C 1K3, Canada"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Systems Engineering, École de Technologie Supérieure, 1100 Notre-Dame Street West, Montreal, QC H3C 1K3, Canada"
+        ]
+      },
+      {
+        "name": "Evan Jones",
+        "orcid": "https://orcid.org/0009-0009-9047-2338",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Mechanical Engineering, Northwestern University, Evanston, IL 60208, USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering, Northwestern University, Evanston, IL 60208, USA"
+        ]
+      },
+      {
+        "name": "Pengpeng Zhang",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Mechanical Engineering, Northwestern University, Evanston, IL 60208, USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering, Northwestern University, Evanston, IL 60208, USA"
+        ]
+      },
+      {
+        "name": "Cheng Sun",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Mechanical Engineering, Northwestern University, Evanston, IL 60208, USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering, Northwestern University, Evanston, IL 60208, USA"
+        ]
+      },
+      {
+        "name": "Nanzhu Zhao",
+        "orcid": "https://orcid.org/0000-0002-7191-1528",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Nissan Technical Center North America, 39001 Sunrise Dr., Farmington Hills, MI 48331, USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Nissan Technical Center North America, 39001 Sunrise Dr., Farmington Hills, MI 48331, USA"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2218-6581"
+    ],
+    "issn_l": "",
+    "publisher": "MDPI AG",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7159887935",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S4210232487",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210232487",
+      "issn_l": "2218-6581",
+      "issn": [
+        "2218-6581"
+      ],
+      "type": "journal",
+      "host_organization_name": "Multidisciplinary Digital Publishing Institute",
+      "works_count": 1380,
+      "cited_by_count": 22580,
+      "two_year_mean_citedness": 3.5242914979757085,
+      "h_index": 64,
+      "i10_index": 556,
+      "is_core": true,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 3.5242914979757085,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 2",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The study focuses on enhancing vat photopolymerization 3D printing through advanced robotic path planning.\n2. Problem - It addresses the challenge of robust path planning for a robotic arm in a complex printing environment.\n3. Method - A multi-stage parameter search algorithm is employed, incorporating inverse kinematics and multi-criteria evaluation metrics.\n4. Key Result - The approach successfully identified feasible printing trajectories for most benchmark parts, though one case revealed a limitation.\n5. Takeaway - Future improvements could enhance the algorithm's effectiveness in addressing the identified limitations.",
+    "relevance_note_en": "The summary captures the core aspects of the research, including its focus, challenges, methods, results, and implications.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-10-22",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.3390/robotics15050085"
+  },
+  "10.1002/adma.202515350": {
+    "author_details": [
+      {
+        "name": "Haoran Pei",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "State Key Laboratory of Advanced Polymer Materials Polymer Research Institute of Sichuan University  Chengdu 610065 China"
+          },
+          {
+            "name": "Department of Mechanical Engineering National University of Singapore  Singapore 117575 Singapore"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "State Key Laboratory of Advanced Polymer Materials Polymer Research Institute of Sichuan University  Chengdu 610065 China",
+          "Department of Mechanical Engineering National University of Singapore  Singapore 117575 Singapore"
+        ]
+      },
+      {
+        "name": "Hang Yang",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Mechanical Engineering National University of Singapore  Singapore 117575 Singapore"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering National University of Singapore  Singapore 117575 Singapore"
+        ]
+      },
+      {
+        "name": "Ning Zhang",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Mechanical Engineering National University of Singapore  Singapore 117575 Singapore"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering National University of Singapore  Singapore 117575 Singapore"
+        ]
+      },
+      {
+        "name": "Tian Li",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Mechanical Engineering National University of Singapore  Singapore 117575 Singapore"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering National University of Singapore  Singapore 117575 Singapore"
+        ]
+      },
+      {
+        "name": "Xinxin Wang",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Mechanical Engineering National University of Singapore  Singapore 117575 Singapore"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering National University of Singapore  Singapore 117575 Singapore"
+        ]
+      },
+      {
+        "name": "Miao Zhao",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "School of Mechanical and Electrical Engineering University of Electronic Science and Technology of China  Chengdu 611731 China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Mechanical and Electrical Engineering University of Electronic Science and Technology of China  Chengdu 611731 China"
+        ]
+      },
+      {
+        "name": "Shuwei Ding",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Mechanical Engineering National University of Singapore  Singapore 117575 Singapore"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering National University of Singapore  Singapore 117575 Singapore"
+        ]
+      },
+      {
+        "name": "Xin Wang",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "State Key Laboratory of Advanced Polymer Materials Polymer Research Institute of Sichuan University  Chengdu 610065 China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "State Key Laboratory of Advanced Polymer Materials Polymer Research Institute of Sichuan University  Chengdu 610065 China"
+        ]
+      },
+      {
+        "name": "Qinniu Lv",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "State Key Laboratory of Advanced Polymer Materials Polymer Research Institute of Sichuan University  Chengdu 610065 China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "State Key Laboratory of Advanced Polymer Materials Polymer Research Institute of Sichuan University  Chengdu 610065 China"
+        ]
+      },
+      {
+        "name": "Zijie Xu",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "State Key Laboratory of Advanced Polymer Materials Polymer Research Institute of Sichuan University  Chengdu 610065 China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "State Key Laboratory of Advanced Polymer Materials Polymer Research Institute of Sichuan University  Chengdu 610065 China"
+        ]
+      },
+      {
+        "name": "Yinghong Chen",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "State Key Laboratory of Advanced Polymer Materials Polymer Research Institute of Sichuan University  Chengdu 610065 China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "State Key Laboratory of Advanced Polymer Materials Polymer Research Institute of Sichuan University  Chengdu 610065 China"
+        ]
+      },
+      {
+        "name": "Xinwei Li",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Newcastle University in Singapore Faculty of Science, Agriculture, and Engineering Newcastle University  Newcastle upon Tyne NE1 7RU UK"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Newcastle University in Singapore Faculty of Science, Agriculture, and Engineering Newcastle University  Newcastle upon Tyne NE1 7RU UK"
+        ]
+      },
+      {
+        "name": "Wei Zhai",
+        "orcid": "https://orcid.org/0000-0003-2307-5243",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Mechanical Engineering National University of Singapore  Singapore 117575 Singapore"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering National University of Singapore  Singapore 117575 Singapore"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Advanced Materials",
+    "crossref_target_issn": "0935-9648",
+    "issn": [
+      "0935-9648",
+      "1521-4095"
+    ],
+    "issn_l": "",
+    "publisher": "Wiley",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4417359822",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S99352657",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S99352657",
+      "issn_l": "0935-9648",
+      "issn": [
+        "0935-9648",
+        "1521-4095"
+      ],
+      "type": "journal",
+      "host_organization_name": null,
+      "works_count": 44789,
+      "cited_by_count": 4803689,
+      "two_year_mean_citedness": 21.19633376740459,
+      "h_index": 743,
+      "i10_index": 31001,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "High-impact general journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 21.19633376740459,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - The study focuses on bioinspired metamaterials modeled after moth wing scales.\n2. Problem - The challenge addressed is the need for materials that can effectively absorb sound, insulate thermally, and dissipate mechanical energy.\n3. Method - The researchers utilized a genetic algorithm for pore design and 3D printing to create the metamaterial.\n4. Key Result - The metamaterial achieved an average acoustic absorption coefficient of 0.742 and demonstrated superior noise reduction compared to traditional foams.\n5. Takeaway - This work highlights the potential of biological designs to create multifunctional materials that combine various properties in a lightweight format.",
+    "relevance_note_en": "The summary captures the essence of the study's innovative approach and findings.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-10-22",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1002/adma.202515350"
+  },
+  "10.1002/advs.202520529": {
+    "author_details": [
+      {
+        "name": "Ramin Montazeri",
+        "orcid": "https://orcid.org/0000-0003-2251-7126",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Laboratory of Process Technology NeptunLab Department of Microsystems Engineering (IMTEK) University of Freiburg  Freiburg Germany"
+          },
+          {
+            "name": "Freiburg Materials Research Center (FMF) University of Freiburg  Freiburg Germany"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Laboratory of Process Technology NeptunLab Department of Microsystems Engineering (IMTEK) University of Freiburg  Freiburg Germany",
+          "Freiburg Materials Research Center (FMF) University of Freiburg  Freiburg Germany"
+        ]
+      },
+      {
+        "name": "Hugo de Souza Oliveira",
+        "orcid": "https://orcid.org/0000-0003-1052-8127",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Laboratory for Soft Machines SoftLab Department of Microsystems Engineering (IMTEK) University of Freiburg  Freiburg Germany"
+          },
+          {
+            "name": "Cluster of Excellence livMatS @ FIT – Freiburg Center For Interactive Materials and Bioinspired Technologies University of Freiburg  Freiburg Germany"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Laboratory for Soft Machines SoftLab Department of Microsystems Engineering (IMTEK) University of Freiburg  Freiburg Germany",
+          "Cluster of Excellence livMatS @ FIT – Freiburg Center For Interactive Materials and Bioinspired Technologies University of Freiburg  Freiburg Germany"
+        ]
+      },
+      {
+        "name": "Xin Li",
+        "orcid": "https://orcid.org/0009-0007-6461-1037",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Laboratory for Soft Machines SoftLab Department of Microsystems Engineering (IMTEK) University of Freiburg  Freiburg Germany"
+          },
+          {
+            "name": "Cluster of Excellence livMatS @ FIT – Freiburg Center For Interactive Materials and Bioinspired Technologies University of Freiburg  Freiburg Germany"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Laboratory for Soft Machines SoftLab Department of Microsystems Engineering (IMTEK) University of Freiburg  Freiburg Germany",
+          "Cluster of Excellence livMatS @ FIT – Freiburg Center For Interactive Materials and Bioinspired Technologies University of Freiburg  Freiburg Germany"
+        ]
+      },
+      {
+        "name": "Qingchuan Song",
+        "orcid": "https://orcid.org/0000-0003-2548-8009",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Laboratory of Process Technology NeptunLab Department of Microsystems Engineering (IMTEK) University of Freiburg  Freiburg Germany"
+          },
+          {
+            "name": "Cluster of Excellence livMatS @ FIT – Freiburg Center For Interactive Materials and Bioinspired Technologies University of Freiburg  Freiburg Germany"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Laboratory of Process Technology NeptunLab Department of Microsystems Engineering (IMTEK) University of Freiburg  Freiburg Germany",
+          "Cluster of Excellence livMatS @ FIT – Freiburg Center For Interactive Materials and Bioinspired Technologies University of Freiburg  Freiburg Germany"
+        ]
+      },
+      {
+        "name": "Bastian E. Rapp",
+        "orcid": "https://orcid.org/0000-0002-3955-0291",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Laboratory of Process Technology NeptunLab Department of Microsystems Engineering (IMTEK) University of Freiburg  Freiburg Germany"
+          },
+          {
+            "name": "Freiburg Materials Research Center (FMF) University of Freiburg  Freiburg Germany"
+          },
+          {
+            "name": "Cluster of Excellence livMatS @ FIT – Freiburg Center For Interactive Materials and Bioinspired Technologies University of Freiburg  Freiburg Germany"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Laboratory of Process Technology NeptunLab Department of Microsystems Engineering (IMTEK) University of Freiburg  Freiburg Germany",
+          "Freiburg Materials Research Center (FMF) University of Freiburg  Freiburg Germany",
+          "Cluster of Excellence livMatS @ FIT – Freiburg Center For Interactive Materials and Bioinspired Technologies University of Freiburg  Freiburg Germany"
+        ]
+      },
+      {
+        "name": "Dorothea Helmer",
+        "orcid": "https://orcid.org/0000-0003-0295-9701",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Laboratory of Process Technology NeptunLab Department of Microsystems Engineering (IMTEK) University of Freiburg  Freiburg Germany"
+          },
+          {
+            "name": "Freiburg Materials Research Center (FMF) University of Freiburg  Freiburg Germany"
+          },
+          {
+            "name": "Cluster of Excellence livMatS @ FIT – Freiburg Center For Interactive Materials and Bioinspired Technologies University of Freiburg  Freiburg Germany"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Laboratory of Process Technology NeptunLab Department of Microsystems Engineering (IMTEK) University of Freiburg  Freiburg Germany",
+          "Freiburg Materials Research Center (FMF) University of Freiburg  Freiburg Germany",
+          "Cluster of Excellence livMatS @ FIT – Freiburg Center For Interactive Materials and Bioinspired Technologies University of Freiburg  Freiburg Germany"
+        ]
+      },
+      {
+        "name": "Edoardo Milana",
+        "orcid": "https://orcid.org/0000-0003-3389-3039",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Laboratory for Soft Machines SoftLab Department of Microsystems Engineering (IMTEK) University of Freiburg  Freiburg Germany"
+          },
+          {
+            "name": "Cluster of Excellence livMatS @ FIT – Freiburg Center For Interactive Materials and Bioinspired Technologies University of Freiburg  Freiburg Germany"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Laboratory for Soft Machines SoftLab Department of Microsystems Engineering (IMTEK) University of Freiburg  Freiburg Germany",
+          "Cluster of Excellence livMatS @ FIT – Freiburg Center For Interactive Materials and Bioinspired Technologies University of Freiburg  Freiburg Germany"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2198-3844",
+      "2198-3844"
+    ],
+    "issn_l": "",
+    "publisher": "Wiley",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7125430002",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S2737737698",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S2737737698",
+      "issn_l": "2198-3844",
+      "issn": [
+        "2198-3844"
+      ],
+      "type": "journal",
+      "host_organization_name": "Wiley",
+      "works_count": 20558,
+      "cited_by_count": 647035,
+      "two_year_mean_citedness": 8.402641353693769,
+      "h_index": 276,
+      "i10_index": 9993,
+      "is_core": true,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
+    "journal_quality": {
+      "label": "High-impact general journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 8.402641353693769,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - The study focuses on creating soft robotics using sustainable materials.\n2. Problem - Current soft robotic devices primarily depend on non-renewable petroleum-based polymers.\n3. Method - A new photocurable bio-based resin derived from soybean oil is developed and utilized for 3D printing soft robots via Digital Light Processing.\n4. Key Result - The resulting origami-inspired actuator demonstrates impressive mechanical performance, operating effectively for 2000 cycles without failure.\n5. Takeaway - This research highlights the potential of bio-based materials in advancing the field of soft robotics while promoting sustainability.",
+    "relevance_note_en": "The summary captures the essence of the research while addressing the key aspects of the study.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-10-22",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1002/advs.202520529"
+  },
   "10.1007/s12213-026-00211-z": {
     "author_details": [
       {
@@ -83,7 +760,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "not_seen_in_latest_crossref_run": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "id": "10.1007/s12213-026-00211-z"
   },
   "10.1016/j.addma.2026.105364": {
@@ -225,7 +902,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "not_seen_in_latest_crossref_run": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "id": "10.1016/j.addma.2026.105364"
   },
   "10.1039/d6gc00136j": {
@@ -680,7 +1357,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1126/science.aeb3456"
   },
@@ -790,7 +1467,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "not_seen_in_latest_crossref_run": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "id": "10.1002/adma.73986"
   },
   "10.1002/adma.74397": {
@@ -981,7 +1658,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "not_seen_in_latest_crossref_run": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "id": "10.1002/adma.74397"
   },
   "10.1039/d6sm00036c": {
@@ -1127,7 +1804,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1039/d6sm00036c"
   },
@@ -1274,7 +1951,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/adma.202521526"
   },
@@ -1428,7 +2105,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "not_seen_in_latest_crossref_run": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "id": "10.1126/sciadv.aeg1744"
   },
   "10.55546/jmm.1753727": {
@@ -1502,7 +2179,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.55546/jmm.1753727"
   },
@@ -1719,7 +2396,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/adfm.202522891"
   },
@@ -1855,7 +2532,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "not_seen_in_latest_crossref_run": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "id": "10.1063/5.0303740"
   },
   "10.1002/adfm.77938": {
@@ -2020,7 +2697,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "not_seen_in_latest_crossref_run": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "id": "10.1002/adfm.77938"
   },
   "10.1039/d6mh01575a": {
@@ -2143,7 +2820,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "not_seen_in_latest_crossref_run": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "id": "10.1039/d6mh01575a"
   },
   "10.1126/sciadv.adz0017": {
@@ -2327,7 +3004,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1126/sciadv.adz0017"
   },
@@ -2437,7 +3114,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "not_seen_in_latest_crossref_run": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "id": "10.1002/smll.74756"
   },
   "10.1038/s41467-026-69378-0": {
@@ -2553,7 +3230,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1038/s41467-026-69378-0"
   },
@@ -2763,7 +3440,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "not_seen_in_latest_crossref_run": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "id": "10.1002/adfm.79026"
   },
   "10.1002/advs.78175": {
@@ -2969,7 +3646,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "not_seen_in_latest_crossref_run": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "id": "10.1002/advs.78175"
   },
   "10.1039/d6mh00166a": {
@@ -3179,7 +3856,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1039/d6mh00166a"
   },
@@ -3378,7 +4055,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/adma.202513205"
   },
@@ -3481,7 +4158,7 @@
     "abstract_used_for_summary": false,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1007/s40436-026-00599-8"
   },
@@ -3688,7 +4365,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "not_seen_in_latest_crossref_run": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "id": "10.1007/s40964-026-02017-8"
   },
   "10.1039/d5dd00479a": {
@@ -3818,7 +4495,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1039/d5dd00479a"
   },
@@ -3964,7 +4641,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/advs.76045"
   },
@@ -4096,7 +4773,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "not_seen_in_latest_crossref_run": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "id": "10.1002/adfm.78464"
   },
   "10.1007/s43621-026-03456-7": {
@@ -4393,7 +5070,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/adma.202519970"
   },
@@ -4502,7 +5179,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.isci.2026.115746"
   },
@@ -4649,7 +5326,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/adma.73794"
   },
@@ -4760,7 +5437,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1007/s00170-025-17055-9"
   },
@@ -4971,7 +5648,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1080/17452759.2026.2640792"
   },
@@ -5113,7 +5790,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "not_seen_in_latest_crossref_run": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "id": "10.1021/acsami.6c15685"
   },
   "10.1016/j.jmapro.2026.03.053": {
@@ -5222,7 +5899,7 @@
     "abstract_used_for_summary": false,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.jmapro.2026.03.053"
   },
@@ -5357,7 +6034,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "not_seen_in_latest_crossref_run": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "id": "10.1016/j.jmapro.2026.09.080"
   },
   "10.1002/adfm.78393": {
@@ -5562,7 +6239,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "not_seen_in_latest_crossref_run": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "id": "10.1002/adfm.78393"
   },
   "10.1002/adfm.202514533": {
@@ -5750,7 +6427,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/adfm.202514533"
   },
@@ -5957,7 +6634,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/adfm.202516315"
   },
@@ -6067,7 +6744,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.matdes.2026.115639"
   },
@@ -6256,7 +6933,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "not_seen_in_latest_crossref_run": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "id": "10.1002/advs.77152"
   },
   "10.3390/textiles6010010": {
@@ -6421,7 +7098,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1108/prt-10-2025-0110"
   },
@@ -6571,7 +7248,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "not_seen_in_latest_crossref_run": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "id": "10.1002/adfm.77047"
   },
   "10.1108/4dp-12-2025-0024": {
@@ -6673,7 +7350,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1108/4dp-12-2025-0024"
   },
@@ -6767,7 +7444,7 @@
     "abstract_used_for_summary": false,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.susmat.2026.e02022"
   },
@@ -6867,7 +7544,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "not_seen_in_latest_crossref_run": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "id": "10.1177/23297662261492607"
   },
   "10.1039/d6lf00281a": {
@@ -6956,7 +7633,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "not_seen_in_latest_crossref_run": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "id": "10.1039/d6lf00281a"
   },
   "10.1002/adma.74018": {
@@ -7229,7 +7906,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "not_seen_in_latest_crossref_run": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "id": "10.1002/adma.74018"
   },
   "10.1007/s40964-026-01955-7": {
@@ -7332,7 +8009,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "not_seen_in_latest_crossref_run": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "id": "10.1007/s40964-026-01955-7"
   },
   "10.1016/j.jmapro.2026.01.043": {
@@ -7473,7 +8150,7 @@
     "abstract_used_for_summary": false,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.jmapro.2026.01.043"
   },
@@ -7598,7 +8275,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1038/s41467-026-73456-8"
   },
@@ -7749,7 +8426,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1080/09544828.2025.2552096"
   },
@@ -7902,7 +8579,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1021/acsami.6c07049"
   },
@@ -8149,7 +8826,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/adfm.202523995"
   },
@@ -8226,7 +8903,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1080/00084433.2026.2635285"
   },
@@ -8338,7 +9015,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "not_seen_in_latest_crossref_run": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "id": "10.1007/s00170-026-19192-1"
   },
   "10.1080/10426914.2026.2622025": {
@@ -8456,7 +9133,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1080/10426914.2026.2622025"
   },
@@ -8592,7 +9269,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/aisy.202501277"
   },
@@ -8809,7 +9486,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/adma.202517556"
   },
@@ -8914,7 +9591,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/adfm.202520484"
   },
@@ -9073,7 +9750,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1177/23297662251390328"
   },
@@ -9288,7 +9965,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1073/pnas.2535645123"
   },
@@ -9499,7 +10176,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/adma.73244"
   },
@@ -9758,7 +10435,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/adfm.202524993"
   },
@@ -9844,7 +10521,7 @@
     "abstract_used_for_summary": false,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.eurpolymj.2026.114895"
   },
@@ -9921,7 +10598,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.36922/esam026080004"
   },
@@ -10072,7 +10749,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/adfm.202531982"
   },
@@ -10174,7 +10851,7 @@
     "abstract_used_for_summary": false,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.cej.2025.172280"
   },
@@ -10279,7 +10956,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1108/rpj-07-2025-0313"
   },
@@ -10402,7 +11079,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/adfm.202525150"
   },
@@ -10503,7 +11180,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1038/s41467-026-73035-x"
   },
@@ -10700,7 +11377,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/rpm2.70038"
   },
@@ -10751,7 +11428,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "not_seen_in_latest_crossref_run": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "id": "10.37636/recit.v9n3e502"
   },
   "10.1007/s40964-025-01397-7": {
@@ -10869,7 +11546,7 @@
     "abstract_used_for_summary": false,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1007/s40964-025-01397-7"
   },
@@ -10975,7 +11652,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "not_seen_in_latest_crossref_run": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "id": "10.1108/rpj-03-2026-0193"
   },
   "10.1016/j.jmapro.2026.06.055": {
@@ -11132,7 +11809,7 @@
     "abstract_used_for_summary": false,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.jmapro.2026.06.055"
   },
@@ -11217,7 +11894,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.rinma.2026.100906"
   },
@@ -11302,7 +11979,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.36922/msam025360082"
   },
@@ -11409,7 +12086,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.3390/electronics15040848"
   },
@@ -11512,7 +12189,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.3390/gels12020138"
   },
@@ -11672,7 +12349,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/advs.202516989"
   },
@@ -11887,7 +12564,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1177/23297662261443751"
   },
@@ -12167,7 +12844,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "not_seen_in_latest_crossref_run": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "id": "10.1002/adfm.78494"
   },
   "10.1002/advs.202517605": {
@@ -12270,7 +12947,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/advs.202517605"
   },
@@ -12365,7 +13042,7 @@
     "abstract_used_for_summary": false,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1007/s00170-026-18019-3"
   },
@@ -12502,7 +13179,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/adfm.202518936"
   },
@@ -12676,7 +13353,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "not_seen_in_latest_crossref_run": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "id": "10.1038/s41467-026-78658-8"
   },
   "10.1002/adfm.75863": {
@@ -12896,7 +13573,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/adfm.75863"
   },
@@ -13054,7 +13731,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.matdes.2026.115547"
   },
@@ -13279,7 +13956,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1039/d5dd00336a"
   },
@@ -13397,7 +14074,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/admt.202502554"
   },
@@ -13478,7 +14155,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "not_seen_in_latest_crossref_run": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "id": "10.1002/advs.77074"
   },
   "10.1126/sciadv.aee3907": {
@@ -13612,7 +14289,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1126/sciadv.aee3907"
   },
@@ -13755,7 +14432,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.3390/polym18101213"
   },
@@ -13901,7 +14578,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/admt.202600001"
   },
@@ -14004,7 +14681,7 @@
     "abstract_used_for_summary": false,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1007/s40964-026-01667-y"
   },
@@ -14191,7 +14868,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "not_seen_in_latest_crossref_run": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "id": "10.1038/s41598-026-52065-x"
   },
   "10.1002/adfm.202523525": {
@@ -14309,7 +14986,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/adfm.202523525"
   },
@@ -14442,7 +15119,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1177/21695172261424024"
   },
@@ -14635,7 +15312,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "not_seen_in_latest_crossref_run": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "id": "10.1002/advs.76403"
   },
   "10.1016/j.jmapro.2026.02.001": {
@@ -14768,7 +15445,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.jmapro.2026.02.001"
   },
@@ -14943,7 +15620,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/adma.73633"
   },
@@ -15037,7 +15714,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "not_seen_in_latest_crossref_run": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "id": "10.1016/j.amf.2026.200410"
   },
   "10.1016/j.mser.2026.101231": {
@@ -15138,7 +15815,7 @@
     "abstract_used_for_summary": false,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.mser.2026.101231"
   },
@@ -15233,7 +15910,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "not_seen_in_latest_crossref_run": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "id": "10.1016/j.matdes.2026.117043"
   },
   "10.1002/adfm.77678": {
@@ -15380,7 +16057,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "not_seen_in_latest_crossref_run": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "id": "10.1002/adfm.77678"
   },
   "10.1002/advs.77984": {
@@ -15564,7 +16241,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "not_seen_in_latest_crossref_run": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "id": "10.1002/advs.77984"
   },
   "10.1108/rpj-06-2025-0238": {
@@ -15724,7 +16401,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1108/rpj-06-2025-0238"
   },
@@ -15958,7 +16635,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "not_seen_in_latest_crossref_run": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "id": "10.1126/sciadv.aeg8849"
   },
   "10.1007/s10845-026-02804-8": {
@@ -16036,7 +16713,7 @@
     "abstract_used_for_summary": false,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1007/s10845-026-02804-8"
   },
@@ -16170,7 +16847,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.jmapro.2025.12.021"
   },
@@ -16289,7 +16966,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/adma.202516809"
   },
@@ -16509,7 +17186,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.matdes.2026.115961"
   },
@@ -16643,7 +17320,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "not_seen_in_latest_crossref_run": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "id": "10.1038/s41467-026-75368-z"
   },
   "10.1108/rpj-12-2024-0532": {
@@ -16789,7 +17466,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1108/rpj-12-2024-0532"
   },
@@ -17087,7 +17764,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/rar2.70320"
   },
@@ -17191,7 +17868,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "not_seen_in_latest_crossref_run": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "id": "10.1126/sciadv.aeg3937"
   },
   "10.1108/rpj-04-2025-0158": {
@@ -17309,7 +17986,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1108/rpj-04-2025-0158"
   },
@@ -17451,7 +18128,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.matdes.2026.115532"
   },
@@ -17530,7 +18207,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1557/s43577-026-01078-y"
   },
@@ -17691,7 +18368,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/adma.73395"
   },
@@ -17850,7 +18527,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/adma.202512806"
   },
@@ -18009,7 +18686,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1177/23297662251377375"
   },
@@ -18129,7 +18806,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "not_seen_in_latest_crossref_run": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "id": "10.1080/15376494.2026.2708213"
   },
   "10.1016/j.aime.2026.100185": {
@@ -18221,7 +18898,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.aime.2026.100185"
   },
@@ -18324,7 +19001,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "not_seen_in_latest_crossref_run": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "id": "10.1016/j.matdes.2026.116885"
   },
   "10.1177/23297662261475740": {
@@ -18457,7 +19134,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "not_seen_in_latest_crossref_run": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "id": "10.1177/23297662261475740"
   },
   "10.1002/adfm.202521468": {
@@ -18705,7 +19382,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/adfm.202521468"
   },
@@ -18866,7 +19543,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/adfm.202529302"
   },
@@ -18960,7 +19637,7 @@
     "abstract_used_for_summary": false,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.msea.2026.150197"
   },
@@ -19084,7 +19761,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "not_seen_in_latest_crossref_run": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "id": "10.1002/adfm.77723"
   },
   "10.1016/j.rineng.2026.110240": {
@@ -19160,7 +19837,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.rineng.2026.110240"
   },
@@ -19294,7 +19971,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.matdes.2025.115331"
   },
@@ -19425,7 +20102,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1021/acscentsci.5c01624"
   },
@@ -19801,7 +20478,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "not_seen_in_latest_crossref_run": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "id": "10.1002/adma.73938"
   },
   "10.1002/adma.202523665": {
@@ -20175,7 +20852,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/adma.202523665"
   },
@@ -20285,7 +20962,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.matdes.2026.115628"
   },
@@ -20488,7 +21165,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1108/rpj-04-2025-0157"
   },
@@ -20589,7 +21266,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.rineng.2026.110883"
   },
@@ -20692,7 +21369,7 @@
     "abstract_used_for_summary": false,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1007/s40964-026-01669-w"
   },
@@ -20801,7 +21478,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1038/s44455-026-00024-x"
   },
@@ -20929,7 +21606,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "not_seen_in_latest_crossref_run": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "id": "10.1002/adfm.77951"
   },
   "10.1002/admt.202501355": {
@@ -21054,7 +21731,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/admt.202501355"
   },
@@ -21215,7 +21892,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1177/23297662251389590"
   },
@@ -21397,7 +22074,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/aisy.202600008"
   },
@@ -21543,7 +22220,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/advs.75817"
   },
@@ -21721,7 +22398,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/advs.202524116"
   },
@@ -21923,7 +22600,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "not_seen_in_latest_crossref_run": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "id": "10.1002/adfm.76881"
   },
   "10.1002/rob.70332": {
@@ -22027,7 +22704,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "last_seen_in_crossref_run": "2026-10-21",
     "id": "10.1002/rob.70332"
   },
@@ -22122,7 +22799,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "not_seen_in_latest_crossref_run": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "id": "10.1016/j.eurpolymj.2026.115117"
   },
   "10.1002/adfm.202524106": {
@@ -22296,7 +22973,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/adfm.202524106"
   },
@@ -22471,7 +23148,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/adma.73426"
   },
@@ -22646,7 +23323,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/adma.202522073"
   },
@@ -22835,7 +23512,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/adma.202518990"
   },
@@ -23066,7 +23743,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/adfm.202518838"
   },
@@ -23253,7 +23930,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/adfm.202530657"
   },
@@ -23450,7 +24127,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/adma.202516698"
   },
@@ -23675,7 +24352,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/adfm.202530585"
   },
@@ -23800,7 +24477,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1038/s41467-026-68370-y"
   },
@@ -23987,7 +24664,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1039/d5ma01396h"
   },
@@ -24081,7 +24758,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.matdes.2026.116433"
   },
@@ -24215,7 +24892,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "not_seen_in_latest_crossref_run": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "id": "10.1039/d6tb01602b"
   },
   "10.1016/j.metadv.2026.01.008": {
@@ -24410,7 +25087,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "not_seen_in_latest_crossref_run": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "id": "10.1016/j.matdes.2026.116941"
   },
   "10.1080/17452759.2026.2635781": {
@@ -24626,7 +25303,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1080/17452759.2026.2635781"
   },
@@ -24871,7 +25548,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1126/sciadv.aed0172"
   },
@@ -25052,7 +25729,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/rpm2.70039"
   },
@@ -25194,7 +25871,7 @@
     "abstract_used_for_summary": false,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.jmapro.2025.11.017"
   },
@@ -25295,7 +25972,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.jcomc.2025.100680"
   },
@@ -25437,7 +26114,7 @@
     "abstract_used_for_summary": false,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.cej.2025.171686"
   },
@@ -25549,7 +26226,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "not_seen_in_latest_crossref_run": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "id": "10.1007/s40964-026-01927-x"
   },
   "10.1002/adfm.202520642": {
@@ -25683,7 +26360,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/adfm.202520642"
   },
@@ -25788,7 +26465,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "not_seen_in_latest_crossref_run": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "id": "10.1002/admt.71264"
   },
   "10.1002/advs.202513091": {
@@ -25961,7 +26638,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/advs.202513091"
   },
@@ -26317,7 +26994,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/adma.202516070"
   },
@@ -26548,7 +27225,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/adma.202512662"
   },
@@ -26747,7 +27424,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "not_seen_in_latest_crossref_run": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "id": "10.1016/j.sna.2026.118468"
   },
   "10.1021/acsami.6c03614": {
@@ -26955,7 +27632,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1021/acsami.6c03614"
   },
@@ -27135,7 +27812,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "not_seen_in_latest_crossref_run": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "id": "10.1002/adma.202523142"
   },
   "10.1021/acsami.6c09727": {
@@ -27290,7 +27967,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "not_seen_in_latest_crossref_run": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "id": "10.1021/acsami.6c09727"
   },
   "10.1002/adma.202523039": {
@@ -27556,7 +28233,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/adma.202523039"
   },
@@ -27704,7 +28381,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "not_seen_in_latest_crossref_run": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "id": "10.1002/adma.74517"
   },
   "10.1002/advs.202521820": {
@@ -27919,7 +28596,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/advs.202521820"
   },
@@ -28050,7 +28727,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1108/4dp-02-2025-0004"
   },
@@ -28267,7 +28944,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1108/rpj-07-2025-0348"
   },
@@ -28428,7 +29105,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1080/17452759.2026.2654243"
   },
@@ -28547,7 +29224,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1108/rpj-04-2025-0155"
   },
@@ -28678,7 +29355,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "not_seen_in_latest_crossref_run": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "id": "10.1002/admt.71196"
   },
   "10.1002/admt.202502588": {
@@ -28807,7 +29484,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/admt.202502588"
   },
@@ -28953,7 +29630,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/adrr.202500076"
   },
@@ -29212,7 +29889,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/adfm.76046"
   },
@@ -29415,7 +30092,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1080/17452759.2026.2669702"
   },
@@ -29504,7 +30181,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.3390/ma19071307"
   },
@@ -29609,7 +30286,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1089/3dp.2023.0356"
   },
@@ -29720,7 +30397,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1007/s40964-025-01112-6"
   },
@@ -29797,7 +30474,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.oceram.2025.100741"
   },
@@ -29916,7 +30593,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1080/17452759.2025.2546671"
   },
@@ -30009,7 +30686,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.36922/esam025180010"
   },
@@ -30176,7 +30853,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1089/3dp.2025.0043"
   },
@@ -30307,7 +30984,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.3390/jcs9110588"
   },
@@ -30393,7 +31070,7 @@
     "abstract_used_for_summary": false,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.addma.2025.104963"
   },
@@ -30554,7 +31231,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.34133/research.0889"
   },
@@ -30689,7 +31366,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1126/sciadv.adx4409"
   },
@@ -30778,7 +31455,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.3390/ma18081820"
   },
@@ -31050,7 +31727,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1007/s10845-024-02488-y"
   },
@@ -31153,7 +31830,7 @@
     "abstract_used_for_summary": false,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1007/s41693-024-00145-7"
   },
@@ -31263,7 +31940,7 @@
     "abstract_used_for_summary": false,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.jmsy.2025.09.019"
   },
@@ -31512,7 +32189,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/adfm.202502042"
   },
@@ -31622,7 +32299,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.rcim.2025.103012"
   },
@@ -31732,7 +32409,7 @@
     "abstract_used_for_summary": false,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.rcim.2025.102965"
   },
@@ -31811,7 +32488,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1007/s40964-025-00988-8"
   },
@@ -31937,7 +32614,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.rcim.2025.103043"
   },
@@ -32063,7 +32740,7 @@
     "abstract_used_for_summary": false,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.jmsy.2025.06.020"
   },
@@ -32181,7 +32858,7 @@
     "abstract_used_for_summary": false,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.jmsy.2025.02.021"
   },
@@ -32312,7 +32989,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1080/27525783.2025.2565246"
   },
@@ -32389,7 +33066,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.rineng.2025.108087"
   },
@@ -32532,7 +33209,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1007/s10845-023-02278-y"
   },
@@ -32642,7 +33319,7 @@
     "abstract_used_for_summary": false,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.jmapro.2025.03.061"
   },
@@ -32745,7 +33422,7 @@
     "abstract_used_for_summary": false,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1007/s00170-025-16379-w"
   },
@@ -32847,7 +33524,7 @@
     "abstract_used_for_summary": false,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.addma.2024.104631"
   },
@@ -32934,7 +33611,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1007/s00170-025-15290-8"
   },
@@ -33019,7 +33696,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.3389/fnuen.2025.1603437"
   },
@@ -33122,7 +33799,7 @@
     "abstract_used_for_summary": false,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1007/s00170-025-15190-x"
   },
@@ -33199,7 +33876,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.20517/gmo.2024.120501"
   },
@@ -33288,7 +33965,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.3390/app15179703"
   },
@@ -33398,7 +34075,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.matdes.2025.114870"
   },
@@ -33517,7 +34194,7 @@
     "abstract_used_for_summary": false,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1007/s00170-025-16580-x"
   },
@@ -33628,7 +34305,7 @@
     "abstract_used_for_summary": false,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1007/s00170-025-15215-5"
   },
@@ -33723,7 +34400,7 @@
     "abstract_used_for_summary": false,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1007/s00170-025-15636-2"
   },
@@ -33810,7 +34487,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.4236/jamp.2025.1312245"
   },
@@ -33913,7 +34590,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.3390/computers14060221"
   },
@@ -34023,7 +34700,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.rcim.2024.102848"
   },
@@ -34156,7 +34833,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1080/17452759.2025.2592734"
   },
@@ -34282,7 +34959,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.jmsy.2025.03.009"
   },
@@ -34375,7 +35052,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1038/s44334-025-00028-x"
   },
@@ -34485,7 +35162,7 @@
     "abstract_used_for_summary": false,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.jmsy.2025.07.015"
   },
@@ -34620,7 +35297,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/adfm.202511349"
   },
@@ -34709,7 +35386,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.3390/ma18184370"
   },
@@ -34811,440 +35488,8 @@
     "abstract_used_for_summary": false,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
+    "last_seen_in_crossref_run": "2026-10-22",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.compind.2025.104267"
-  },
-  "10.1016/j.rcim.2025.103028": {
-    "author_details": [
-      {
-        "name": "Shulong Mei",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Yang Xie",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Jinfeng Liu",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Jianzhao Wu",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Chaoyong Zhang",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "Robotics and Computer-Integrated Manufacturing",
-    "crossref_target_issn": "0736-5845",
-    "issn": [
-      "0736-5845"
-    ],
-    "issn_l": "",
-    "publisher": "Elsevier BV",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4409349590",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S118216261",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S118216261",
-      "issn_l": "0736-5845",
-      "issn": [
-        "0736-5845",
-        "1879-2537"
-      ],
-      "type": "journal",
-      "host_organization_name": "Elsevier BV",
-      "works_count": 3891,
-      "cited_by_count": 147298,
-      "two_year_mean_citedness": 10.130597014925373,
-      "h_index": 157,
-      "i10_index": 2463,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Core manufacturing journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 10.130597014925373,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 1",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - The paper focuses on a digital twin system for CNC equipment.\n2. Problem - It addresses the need for sustainable practices in CNC manufacturing.\n3. Method - The authors propose a physics-based modeling approach combined with intelligent decision-making techniques.\n4. Key Result - The study demonstrates improved sustainability outcomes through the proposed method.\n5. Takeaway - Implementing this approach can enhance the efficiency and sustainability of CNC operations.",
-    "relevance_note_en": "The summary captures the essence of the paper's focus on sustainability in CNC through digital twin technology.",
-    "abstract_used_for_summary": false,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1016/j.rcim.2025.103028"
-  },
-  "10.1007/s00170-025-15840-0": {
-    "author_details": [
-      {
-        "name": "Yi He",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Xiangdong Wang",
-        "orcid": "https://orcid.org/0000-0002-3763-4731",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "International Journal of Advanced Manufacturing Technology",
-    "crossref_target_issn": "0268-3768",
-    "issn": [
-      "0268-3768",
-      "1433-3015"
-    ],
-    "issn_l": "",
-    "publisher": "Springer Science and Business Media LLC",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4411320607",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S77056576",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S77056576",
-      "issn_l": "0268-3768",
-      "issn": [
-        "0268-3768",
-        "1433-3015"
-      ],
-      "type": "journal",
-      "host_organization_name": "Springer Science+Business Media",
-      "works_count": 31026,
-      "cited_by_count": 730438,
-      "two_year_mean_citedness": 3.7044257112750265,
-      "h_index": 199,
-      "i10_index": 18166,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 3.7044257112750265,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 2",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The study focuses on the path planning for multiple digital twin robots used in spot-welding applications.\n2. Problem - Efficiently coordinating the movements of multiple robots to optimize welding processes poses significant challenges.\n3. Method - The authors propose a reinforcement pointer network approach to enhance the path planning of these robots.\n4. Key Result - The proposed method demonstrates improved efficiency and effectiveness in managing the robots' paths compared to traditional techniques.\n5. Takeaway - Utilizing advanced AI techniques like reinforcement learning can significantly enhance the operational efficiency of robotic systems in manufacturing.",
-    "relevance_note_en": "The summary captures the essence of the research on robotic path planning using AI techniques.",
-    "abstract_used_for_summary": false,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1007/s00170-025-15840-0"
-  },
-  "10.1002/admt.202500278": {
-    "author_details": [
-      {
-        "name": "Wenbo Xue",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Shenzhen Key Laboratory for Additive Manufacturing of High‐Performance Materials Department of Mechanical and Energy Engineering Southern University of Science and Technology  Shenzhen 518055 China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Shenzhen Key Laboratory for Additive Manufacturing of High‐Performance Materials Department of Mechanical and Energy Engineering Southern University of Science and Technology  Shenzhen 518055 China"
-        ]
-      },
-      {
-        "name": "Bingcong Jian",
-        "orcid": "https://orcid.org/0000-0002-0115-8657",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "School of Mechanical Engineering Tongji University  Shanghai 200092 China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "School of Mechanical Engineering Tongji University  Shanghai 200092 China"
-        ]
-      },
-      {
-        "name": "Liuchao Jin",
-        "orcid": "https://orcid.org/0000-0001-6204-1922",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Mechanical and Automation Engineering The Chinese University of Hong Kong  Hong Kong China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Mechanical and Automation Engineering The Chinese University of Hong Kong  Hong Kong China"
-        ]
-      },
-      {
-        "name": "Rong Wang",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Shenzhen Key Laboratory for Additive Manufacturing of High‐Performance Materials Department of Mechanical and Energy Engineering Southern University of Science and Technology  Shenzhen 518055 China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Shenzhen Key Laboratory for Additive Manufacturing of High‐Performance Materials Department of Mechanical and Energy Engineering Southern University of Science and Technology  Shenzhen 518055 China"
-        ]
-      },
-      {
-        "name": "Qi Ge",
-        "orcid": "https://orcid.org/0000-0002-8666-8532",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Shenzhen Key Laboratory for Additive Manufacturing of High‐Performance Materials Department of Mechanical and Energy Engineering Southern University of Science and Technology  Shenzhen 518055 China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Shenzhen Key Laboratory for Additive Manufacturing of High‐Performance Materials Department of Mechanical and Energy Engineering Southern University of Science and Technology  Shenzhen 518055 China"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2365-709X",
-      "2365-709X"
-    ],
-    "issn_l": "",
-    "publisher": "Wiley",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4410874111",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S2765038284",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S2765038284",
-      "issn_l": "2365-709X",
-      "issn": [
-        "2365-709X"
-      ],
-      "type": "journal",
-      "host_organization_name": "Wiley",
-      "works_count": 6302,
-      "cited_by_count": 132117,
-      "two_year_mean_citedness": 4.245998315080033,
-      "h_index": 131,
-      "i10_index": 2825,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 4.245998315080033,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 2",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The paper discusses origami robots and their potential in robotics.\n2. Problem - Traditional robots struggle in dynamic environments due to their rigid structures, while soft robots lack load capacity and precision.\n3. Method - The review analyzes the design, actuation, and 3D printing methods used in origami robots.\n4. Key Result - Origami robots combine the strengths of rigid and soft robots, enabled by advanced 3D printing techniques that allow for complex designs.\n5. Takeaway - The integration of origami principles and modern fabrication methods can significantly enhance robotic capabilities and expand their applications.",
-    "relevance_note_en": "The summary captures the essence of the paper's focus on origami robots and their fabrication methods.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1002/admt.202500278"
-  },
-  "10.1007/s10845-024-02537-6": {
-    "author_details": [
-      {
-        "name": "Thomas Sobottka",
-        "orcid": "https://orcid.org/0000-0002-2946-9035",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Christoph Halbwidl",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Alexander Gaal",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Matthias Nausch",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Benedikt Fuchs",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Philipp Hold",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Leonhard Czarnetzki",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "Journal of Intelligent Manufacturing",
-    "crossref_target_issn": "0956-5515",
-    "issn": [
-      "0956-5515",
-      "1572-8145"
-    ],
-    "issn_l": "",
-    "publisher": "Springer Science and Business Media LLC",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4404998514",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S161464388",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S161464388",
-      "issn_l": "0956-5515",
-      "issn": [
-        "0956-5515",
-        "1572-8145"
-      ],
-      "type": "journal",
-      "host_organization_name": "Springer Science+Business Media",
-      "works_count": 3654,
-      "cited_by_count": 127309,
-      "two_year_mean_citedness": 6.610223642172524,
-      "h_index": 139,
-      "i10_index": 2475,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Core manufacturing journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 6.610223642172524,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 1",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - The paper focuses on enhancing flexible manufacturing and assembly systems through optimized planning and control methods.\n2. Problem - The complexity of flexible systems hinders their effective implementation despite their potential benefits for adapting to market changes.\n3. Method - A digital twin-based planning approach is developed, incorporating simulation optimization, synchronization, continuous status updates via sensors, and visualization for practical applications.\n4. Key Result - The implementation in a learning factory demonstrates successful interaction among the method components and highlights the technology's readiness for future industrial applications.\n5. Takeaway - This research illustrates the viability of using digital twins to optimize flexible manufacturing systems, paving the way for broader industrial adoption.",
-    "relevance_note_en": "The paper presents a novel approach to optimizing flexible manufacturing systems, which is highly relevant to current trends in manufacturing technology.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-21",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1007/s10845-024-02537-6"
   }
 }
