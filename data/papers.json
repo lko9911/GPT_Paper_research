@@ -8584,8 +8584,8 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Jochen Mueller",
-        "openalex_author_id": null,
+        "name": "J. Howard Mueller",
+        "openalex_author_id": "https://openalex.org/A5037593534",
         "orcid": "https://orcid.org/0000-0002-4808-2223",
         "position": "first",
         "is_corresponding": true,
@@ -33060,9 +33060,9 @@
     "corresponding_authors": [
       {
         "name": "Assia Belbachir",
-        "openalex_author_id": null,
+        "openalex_author_id": "https://openalex.org/A5051482797",
         "orcid": "https://orcid.org/0000-0002-1294-8478",
-        "position": "middle",
+        "position": "first",
         "is_corresponding": true,
         "institutions": [
           {
@@ -33255,9 +33255,46 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Dunbing Tang",
+        "openalex_author_id": "https://openalex.org/A5159224368",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Nanjing University of Aeronautics and Astronautics",
+            "ror": "https://ror.org/01scyh794",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "College of Mechanical and Electrical Engineering, Nanjing University of Aeronautics and Astronautics, Nanjing, 210016, PR China"
+        ]
+      },
+      {
+        "name": "Qingwei Nie",
+        "openalex_author_id": "https://openalex.org/A5019241051",
+        "orcid": "https://orcid.org/0000-0003-3274-543X",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Yangzhou University",
+            "ror": "https://ror.org/03tqb8s11",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Mechanical Engineering, Yangzhou University, Yangzhou, 225127, PR China"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Journal of Manufacturing Systems",
     "doi": "10.1016/j.jmsy.2026.10.011",
@@ -33276,7 +33313,7 @@
     "issn_l": "",
     "publisher": "Elsevier BV",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7223174577",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S201698446",
@@ -46480,7 +46517,7 @@
       },
       {
         "name": "Changyong Liu",
-        "openalex_author_id": null,
+        "openalex_author_id": "https://openalex.org/A5121985043",
         "orcid": null,
         "position": "last",
         "is_corresponding": true,
@@ -49648,9 +49685,28 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Łukasz Łach",
+        "openalex_author_id": "https://openalex.org/A5040045433",
+        "orcid": "https://orcid.org/0000-0001-9604-8874",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "AGH University of Krakow",
+            "ror": "https://ror.org/00bas1c41",
+            "country_code": "PL",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "AGH University of Krakow, Faculty of Metals Engineering and Industrial Computer Science, Al. Mickiewicza 30, 30-059 Krakow, Poland"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Powder Technology",
     "doi": "10.1016/j.powtec.2026.123391",
@@ -49669,8 +49725,8 @@
     "issn_l": "",
     "publisher": "Elsevier BV",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7223245797",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S122730748",
     "venue_metrics": {
@@ -70683,7 +70739,7 @@
     "publisher": "American Chemical Society (ACS)",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7223244596",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S164001016",
     "venue_metrics": {
@@ -104651,7 +104707,7 @@
         "name": "Hong Wang",
         "openalex_author_id": null,
         "orcid": "https://orcid.org/0000-0001-6799-1732",
-        "position": "middle",
+        "position": "last",
         "is_corresponding": true,
         "institutions": [
           {
@@ -118784,7 +118840,7 @@
         "name": "Luquan Ren",
         "openalex_author_id": "https://openalex.org/A5100389643",
         "orcid": "https://orcid.org/0000-0003-1102-8482",
-        "position": "middle",
+        "position": "last",
         "is_corresponding": true,
         "institutions": [
           {
@@ -127701,17 +127757,11 @@
     "corresponding_authors": [
       {
         "name": "Maria A. Bieberich",
-        "openalex_author_id": null,
-        "orcid": null,
-        "position": "middle",
+        "openalex_author_id": "https://openalex.org/A5081851152",
+        "orcid": "https://orcid.org/0000-0002-1518-5330",
+        "position": "first",
         "is_corresponding": true,
         "institutions": [
-          {
-            "name": "University of Iowa",
-            "ror": "https://ror.org/036jqmy94",
-            "country_code": "US",
-            "type": "education"
-          },
           {
             "name": "University of Maryland, Baltimore County",
             "ror": "https://ror.org/02qskvh78",
@@ -127720,8 +127770,7 @@
           }
         ],
         "raw_affiliation_strings": [
-          "University of Maryland, Baltimore County, Baltimore, Maryland, USA",
-          "Institute for Vision Research, Carver College of Medicine, University of Iowa, Iowa City, Iowa, USA"
+          "University of Maryland, Baltimore County, Baltimore, Maryland, USA"
         ]
       },
       {
@@ -127753,7 +127802,7 @@
         "name": "Erin Lavik",
         "openalex_author_id": "https://openalex.org/A5079335476",
         "orcid": "https://orcid.org/0000-0002-0644-744X",
-        "position": "last",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -135404,7 +135453,7 @@
         "name": "Luquan Ren",
         "openalex_author_id": "https://openalex.org/A5100389643",
         "orcid": "https://orcid.org/0000-0003-1102-8482",
-        "position": "last",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -166407,8 +166456,8 @@
     "corresponding_authors": [
       {
         "name": "Aoming Zhang",
-        "openalex_author_id": "https://openalex.org/A5111021439",
-        "orcid": "https://orcid.org/0009-0000-1296-6484",
+        "openalex_author_id": null,
+        "orcid": null,
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -172410,8 +172459,8 @@
       },
       {
         "name": "Wenzhuo Liu",
-        "openalex_author_id": null,
-        "orcid": null,
+        "openalex_author_id": "https://openalex.org/A5107441690",
+        "orcid": "https://orcid.org/0009-0004-3542-8418",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -189789,12 +189838,6 @@
             "type": "education"
           },
           {
-            "name": "Universität Ulm",
-            "ror": "https://ror.org/032000t02",
-            "country_code": "DE",
-            "type": "education"
-          },
-          {
             "name": "University of Manchester",
             "ror": "https://ror.org/027m9bs27",
             "country_code": "GB",
@@ -189811,14 +189854,16 @@
           "Department of Mechanical, Aerospace, and Civil Engineering University of Manchester  Manchester M13 9PL UK",
           "Institute of Structured and Architected Materials Liaoning Academy of Materials  Shenyang 110167 China",
           "Key Laboratory of Bionic Engineering Ministry of Education Jilin University  Changchun 130022 China",
-          "Institute of Orthopaedic Research and Biomechanics, Ulm University Medical Centre, University of Ulm, 89081 Ulm, Germany"
+          "Department of Mechanical, Aerospace, and Civil Engineering, University of Manchester, Manchester, M13 9PL UK",
+          "Institute of Structured and Architected Materials, Liaoning Academy of Materials, Shenyang, 110167 China",
+          "Key Laboratory of Bionic Engineering, Ministry of Education, Jilin University, Changchun, 130022 China"
         ]
       },
       {
         "name": "Luquan Ren",
         "openalex_author_id": "https://openalex.org/A5100389643",
         "orcid": "https://orcid.org/0000-0003-1102-8482",
-        "position": "last",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -204042,7 +204087,7 @@
         "name": "Xiaofeng Wang",
         "openalex_author_id": null,
         "orcid": "https://orcid.org/0000-0002-9913-1064",
-        "position": "middle",
+        "position": "last",
         "is_corresponding": true,
         "institutions": [
           {
@@ -237118,9 +237163,9 @@
     "corresponding_authors": [
       {
         "name": "Songhao Wang",
-        "openalex_author_id": "https://openalex.org/A5057228007",
+        "openalex_author_id": null,
         "orcid": "https://orcid.org/0000-0003-3643-4698",
-        "position": "first",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -265559,10 +265604,10 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Zi Wang",
-        "openalex_author_id": "https://openalex.org/A5100338326",
-        "orcid": "https://orcid.org/0000-0001-9081-7185",
-        "position": "first",
+        "name": "Likun Wang",
+        "openalex_author_id": "https://openalex.org/A5100623561",
+        "orcid": "https://orcid.org/0000-0001-5646-9746",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -298883,7 +298928,7 @@
       },
       {
         "name": "Huanyue Zhang",
-        "openalex_author_id": null,
+        "openalex_author_id": "https://openalex.org/A5014806689",
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
@@ -298898,7 +298943,7 @@
         "raw_affiliation_strings": [
           "Department of Orthopedics, Central Hospital of Dalian University of Technology, Dalian, People’s Republic of China",
           "Instrumental Analysis Center, Dalian University of Technology, Dalian, People’s Republic of China",
-          "Department of Orthopedics, Central Hospital of Dalian University of Technology, Dalian, People's Republic of China"
+          "Instrumental Analysis Center, Dalian University of Technology, Dalian, People's Republic of China"
         ]
       },
       {
