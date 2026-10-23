@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-23T13:46:06+00:00",
+  "updated_at": "2026-10-23T18:57:11+00:00",
   "source": "derived from titles, tags, AI Q5 summaries, relevance notes, and public metadata; abstract text is not published",
   "recent_basis": "publication year 2026, plus records explicitly marked weekly-new",
   "node_count": 30,
@@ -9,9 +9,9 @@
       "id": "multi-material-am",
       "label": "Multi-material AM",
       "group": "AM",
-      "count": 1193,
-      "recent_count": 463,
-      "trend_score": 0.9919,
+      "count": 1195,
+      "recent_count": 465,
+      "trend_score": 0.9924,
       "x": 310.0,
       "y": 148.0,
       "radius": 22.8
@@ -22,7 +22,7 @@
       "group": "AM",
       "count": 1226,
       "recent_count": 445,
-      "trend_score": 0.9728,
+      "trend_score": 0.9699,
       "x": 369.8,
       "y": 170.5,
       "radius": 23.0
@@ -33,7 +33,7 @@
       "group": "AM",
       "count": 664,
       "recent_count": 214,
-      "trend_score": 0.486,
+      "trend_score": 0.4846,
       "x": 359.4,
       "y": 233.5,
       "radius": 18.8
@@ -44,7 +44,7 @@
       "group": "AI",
       "count": 376,
       "recent_count": 179,
-      "trend_score": 0.3626,
+      "trend_score": 0.3615,
       "x": 620.0,
       "y": 68.0,
       "radius": 15.9
@@ -53,9 +53,9 @@
       "id": "digital-twin",
       "label": "Digital Twin",
       "group": "AI",
-      "count": 384,
-      "recent_count": 174,
-      "trend_score": 0.357,
+      "count": 385,
+      "recent_count": 175,
+      "trend_score": 0.3576,
       "x": 684.0,
       "y": 120.0,
       "radius": 16.0
@@ -66,7 +66,7 @@
       "group": "Automation",
       "count": 311,
       "recent_count": 122,
-      "trend_score": 0.2606,
+      "trend_score": 0.2598,
       "x": 525.0,
       "y": 158.0,
       "radius": 15.1
@@ -77,7 +77,7 @@
       "group": "4D",
       "count": 275,
       "recent_count": 101,
-      "trend_score": 0.22,
+      "trend_score": 0.2193,
       "x": 285.0,
       "y": 298.0,
       "radius": 14.6
@@ -88,10 +88,21 @@
       "group": "Materials",
       "count": 222,
       "recent_count": 91,
-      "trend_score": 0.1919,
+      "trend_score": 0.1913,
       "x": 185.0,
       "y": 118.0,
       "radius": 13.8
+    },
+    {
+      "id": "soft-robotics",
+      "label": "Soft Robotics",
+      "group": "Robotics",
+      "count": 214,
+      "recent_count": 88,
+      "trend_score": 0.1848,
+      "x": 540.0,
+      "y": 318.0,
+      "radius": 13.7
     },
     {
       "id": "metamaterials",
@@ -99,21 +110,10 @@
       "group": "Materials",
       "count": 199,
       "recent_count": 90,
-      "trend_score": 0.1848,
+      "trend_score": 0.1842,
       "x": 249.0,
       "y": 170.0,
       "radius": 13.4
-    },
-    {
-      "id": "soft-robotics",
-      "label": "Soft Robotics",
-      "group": "Robotics",
-      "count": 213,
-      "recent_count": 87,
-      "trend_score": 0.1837,
-      "x": 540.0,
-      "y": 318.0,
-      "radius": 13.7
     },
     {
       "id": "monitoring",
@@ -121,7 +121,7 @@
       "group": "Automation",
       "count": 211,
       "recent_count": 82,
-      "trend_score": 0.1756,
+      "trend_score": 0.1751,
       "x": 589.0,
       "y": 210.0,
       "radius": 13.6
@@ -132,7 +132,7 @@
       "group": "AM",
       "count": 228,
       "recent_count": 71,
-      "trend_score": 0.1631,
+      "trend_score": 0.1627,
       "x": 310.0,
       "y": 274.0,
       "radius": 13.9
@@ -143,7 +143,7 @@
       "group": "Materials",
       "count": 167,
       "recent_count": 70,
-      "trend_score": 0.1467,
+      "trend_score": 0.1462,
       "x": 185.0,
       "y": 222.0,
       "radius": 12.9
@@ -154,7 +154,7 @@
       "group": "4D",
       "count": 170,
       "recent_count": 61,
-      "trend_score": 0.1338,
+      "trend_score": 0.1334,
       "x": 349.0,
       "y": 350.0,
       "radius": 13.0
@@ -165,7 +165,7 @@
       "group": "AM",
       "count": 153,
       "recent_count": 63,
-      "trend_score": 0.1327,
+      "trend_score": 0.1323,
       "x": 260.6,
       "y": 233.5,
       "radius": 12.7
@@ -176,7 +176,7 @@
       "group": "Application",
       "count": 134,
       "recent_count": 44,
-      "trend_score": 0.0993,
+      "trend_score": 0.099,
       "x": 160.0,
       "y": 285.5,
       "radius": 12.3
@@ -187,7 +187,7 @@
       "group": "4D",
       "count": 129,
       "recent_count": 38,
-      "trend_score": 0.089,
+      "trend_score": 0.0888,
       "x": 285.0,
       "y": 402.0,
       "radius": 12.2
@@ -198,7 +198,7 @@
       "group": "Manufacturing",
       "count": 96,
       "recent_count": 41,
-      "trend_score": 0.0855,
+      "trend_score": 0.0852,
       "x": 430.0,
       "y": 240.5,
       "radius": 11.5
@@ -209,7 +209,7 @@
       "group": "Automation",
       "count": 79,
       "recent_count": 31,
-      "trend_score": 0.0662,
+      "trend_score": 0.066,
       "x": 525.0,
       "y": 262.0,
       "radius": 11.1
@@ -220,7 +220,7 @@
       "group": "4D",
       "count": 65,
       "recent_count": 31,
-      "trend_score": 0.0628,
+      "trend_score": 0.0626,
       "x": 221.0,
       "y": 350.0,
       "radius": 10.7
@@ -231,7 +231,7 @@
       "group": "Materials",
       "count": 79,
       "recent_count": 25,
-      "trend_score": 0.0571,
+      "trend_score": 0.057,
       "x": 121.0,
       "y": 170.0,
       "radius": 11.1
@@ -242,7 +242,7 @@
       "group": "AI",
       "count": 50,
       "recent_count": 27,
-      "trend_score": 0.0531,
+      "trend_score": 0.0529,
       "x": 620.0,
       "y": 172.0,
       "radius": 10.2
@@ -253,21 +253,10 @@
       "group": "AML",
       "count": 32,
       "recent_count": 26,
-      "trend_score": 0.0471,
+      "trend_score": 0.047,
       "x": 710.0,
       "y": 248.0,
       "radius": 9.6
-    },
-    {
-      "id": "closed-loop-control",
-      "label": "Closed-loop Control",
-      "group": "Automation",
-      "count": 43,
-      "recent_count": 22,
-      "trend_score": 0.0438,
-      "x": 461.0,
-      "y": 210.0,
-      "radius": 10.0
     },
     {
       "id": "volumetric-am",
@@ -275,10 +264,21 @@
       "group": "AM",
       "count": 55,
       "recent_count": 20,
-      "trend_score": 0.0437,
+      "trend_score": 0.0436,
       "x": 250.2,
       "y": 170.5,
       "radius": 10.4
+    },
+    {
+      "id": "closed-loop-control",
+      "label": "Closed-loop Control",
+      "group": "Automation",
+      "count": 43,
+      "recent_count": 22,
+      "trend_score": 0.0436,
+      "x": 461.0,
+      "y": 210.0,
+      "radius": 10.0
     },
     {
       "id": "formulation-discovery",
@@ -286,7 +286,7 @@
       "group": "AML",
       "count": 26,
       "recent_count": 19,
-      "trend_score": 0.0351,
+      "trend_score": 0.035,
       "x": 774.0,
       "y": 300.0,
       "radius": 9.3
@@ -297,7 +297,7 @@
       "group": "AML",
       "count": 32,
       "recent_count": 13,
-      "trend_score": 0.0275,
+      "trend_score": 0.0274,
       "x": 710.0,
       "y": 352.0,
       "radius": 9.6
@@ -319,7 +319,7 @@
       "group": "Robotics",
       "count": 13,
       "recent_count": 7,
-      "trend_score": 0.0138,
+      "trend_score": 0.0137,
       "x": 540.0,
       "y": 424.0,
       "radius": 8.6
@@ -370,8 +370,8 @@
     {
       "source": "multi-material-am",
       "target": "soft-robotics",
-      "count": 202,
-      "recent_count": 82
+      "count": 203,
+      "recent_count": 83
     },
     {
       "source": "additive-manufacturing",
@@ -470,6 +470,12 @@
       "recent_count": 49
     },
     {
+      "source": "digital-twin",
+      "target": "multi-material-am",
+      "count": 66,
+      "recent_count": 48
+    },
+    {
       "source": "additive-manufacturing",
       "target": "fdm-material-extrusion",
       "count": 132,
@@ -479,12 +485,6 @@
       "source": "machine-learning",
       "target": "process-optimization",
       "count": 99,
-      "recent_count": 47
-    },
-    {
-      "source": "digital-twin",
-      "target": "multi-material-am",
-      "count": 65,
       "recent_count": 47
     },
     {
