@@ -9343,9 +9343,28 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Anastasia Hanifah Muliana",
+        "openalex_author_id": "https://openalex.org/A5073215720",
+        "orcid": "https://orcid.org/0000-0002-5575-3988",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Texas A&M University",
+            "ror": "https://ror.org/01f5ytq51",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Texas A&M University, College Station, USA"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Progress in Additive Manufacturing",
     "doi": "10.1007/s40964-026-01947-7",
@@ -9365,8 +9384,8 @@
     "issn_l": "",
     "publisher": "Springer Science and Business Media LLC",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7212316236",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S4210206835",
     "venue_metrics": {
@@ -18746,9 +18765,21 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Abdessamad Harrandou",
+        "openalex_author_id": "https://openalex.org/A5117444825",
+        "orcid": "https://orcid.org/0009-0003-4267-6797",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [],
+        "raw_affiliation_strings": [
+          "Laboratory of Innovative Technologies, National School of Applied Sciences, UAE, B.P 416 Tanger Principale, Tanger, Morocco"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "The International Journal of Advanced Manufacturing Technology",
     "doi": "10.1007/s00170-026-19404-8",
@@ -18768,7 +18799,7 @@
     "issn_l": "",
     "publisher": "Springer Science and Business Media LLC",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7223401246",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S77056576",
@@ -33172,9 +33203,9 @@
     "corresponding_authors": [
       {
         "name": "Assia Belbachir",
-        "openalex_author_id": null,
+        "openalex_author_id": "https://openalex.org/A5051482797",
         "orcid": "https://orcid.org/0000-0002-1294-8478",
-        "position": "middle",
+        "position": "first",
         "is_corresponding": true,
         "institutions": [
           {
@@ -49587,9 +49618,84 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Wenpeng Xu",
+        "openalex_author_id": "https://openalex.org/A5100738815",
+        "orcid": "https://orcid.org/0000-0002-0852-4904",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Shandong University",
+            "ror": "https://ror.org/0207yh398",
+            "country_code": "CN",
+            "type": "education"
+          },
+          {
+            "name": "Henan Polytechnic University",
+            "ror": "https://ror.org/05vr1c885",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Computer Science and Technology, Henan Polytechnic University, Jiaozuo, 454003, China",
+          "School of Computer Science and Technology, Shandong University, Qingdao, 266237, China"
+        ]
+      },
+      {
+        "name": "Hao Xu",
+        "openalex_author_id": "https://openalex.org/A5100409302",
+        "orcid": "https://orcid.org/0009-0007-7057-5386",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Shandong University",
+            "ror": "https://ror.org/0207yh398",
+            "country_code": "CN",
+            "type": "education"
+          },
+          {
+            "name": "Henan Polytechnic University",
+            "ror": "https://ror.org/05vr1c885",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Computer Science and Technology, Henan Polytechnic University, Jiaozuo, 454003, China",
+          "School of Computer Science and Technology, Shandong University, Qingdao, 266237, China"
+        ]
+      },
+      {
+        "name": "Hongyao Shen",
+        "openalex_author_id": "https://openalex.org/A5159362465",
+        "orcid": null,
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "State Key Laboratory Fluid Power and Mechatronic Systems",
+            "ror": "https://ror.org/01h0g5x34",
+            "country_code": "CN",
+            "type": "facility"
+          },
+          {
+            "name": "Zhejiang University",
+            "ror": "https://ror.org/00a2xv884",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "The State Key Laboratory of Fluid Power and Mechatronic Systems, School of Mechanical Engineering, Zhejiang University, Hangzhou, 310027, China"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Journal of Manufacturing Processes",
     "doi": "10.1016/j.jmapro.2026.10.025",
@@ -49608,7 +49714,7 @@
     "issn_l": "",
     "publisher": "Elsevier BV",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7223317524",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S120037611",
@@ -51523,9 +51629,29 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Christopher M. Bates",
+        "openalex_author_id": "https://openalex.org/A5001435522",
+        "orcid": "https://orcid.org/0000-0002-1598-794X",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of California, Santa Barbara",
+            "ror": "https://ror.org/02t274463",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "BioPACIFIC Materials Innovation Platform, University of California, Santa Barbara and Los Angeles , , ,",
+          "University of California, Santa Barbara , , , ,"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Macromolecules",
     "doi": "10.1021/acs.macromol.6c02209",
@@ -51545,7 +51671,7 @@
     "issn_l": "",
     "publisher": "American Chemical Society (ACS)",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7223345705",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S177196338",
@@ -52385,9 +52511,28 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Ali Zolfagharian",
+        "openalex_author_id": "https://openalex.org/A5072793982",
+        "orcid": "https://orcid.org/0000-0001-5302-360X",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Deakin University",
+            "ror": "https://ror.org/02czsnj07",
+            "country_code": "AU",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Deakin University Faculty of Science Engineering and Built Environment"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Bioinspiration & Biomimetics",
     "doi": "10.1088/1748-3190/aeb77c",
@@ -52407,7 +52552,7 @@
     "issn_l": "",
     "publisher": "IOP Publishing",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7223110608",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S87464931",
@@ -71348,9 +71493,28 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Ye Chen",
+        "openalex_author_id": "https://openalex.org/A5100359097",
+        "orcid": "https://orcid.org/0000-0002-2725-6706",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Donghua University",
+            "ror": "https://ror.org/035psfh38",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Donghua University , , ,"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "ACS Applied Materials & Interfaces",
     "doi": "10.1021/acsami.6c17324",
@@ -71370,7 +71534,7 @@
     "issn_l": "",
     "publisher": "American Chemical Society (ACS)",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7223244596",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S164001016",
@@ -72761,9 +72925,35 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Wei Hao Xiong",
+        "openalex_author_id": "https://openalex.org/A5008776627",
+        "orcid": "https://orcid.org/0000-0002-2532-2503",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Optics Valley Laboratory",
+            "ror": "https://ror.org/01mf47c71",
+            "country_code": "CN",
+            "type": "facility"
+          },
+          {
+            "name": "Huazhong University of Science and Technology",
+            "ror": "https://ror.org/00p991c53",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Huazhong University of Science and Technology , , ,",
+          "Optics Valley Laboratory , ,"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "ACS Applied Materials & Interfaces",
     "doi": "10.1021/acsami.6c15063",
@@ -72783,7 +72973,7 @@
     "issn_l": "",
     "publisher": "American Chemical Society (ACS)",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7212016232",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S164001016",
@@ -90348,9 +90538,58 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Wenbin Wang",
+        "openalex_author_id": "https://openalex.org/A5147240657",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [],
+        "raw_affiliation_strings": [
+          "Suzhou Laboratory , ,",
+          "Suzhou PollyPolymer New Materials Technology Co., Ltd. , ,"
+        ]
+      },
+      {
+        "name": "Zizheng Fang",
+        "openalex_author_id": "https://openalex.org/A5042645946",
+        "orcid": "https://orcid.org/0000-0002-4241-0257",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Zhejiang University",
+            "ror": "https://ror.org/00a2xv884",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Zhejiang University , , ,"
+        ]
+      },
+      {
+        "name": "Jingjun Wu",
+        "openalex_author_id": "https://openalex.org/A5048919560",
+        "orcid": "https://orcid.org/0000-0002-9026-5541",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Zhejiang University",
+            "ror": "https://ror.org/00a2xv884",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Zhejiang University , , ,"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "ACS Applied Materials & Interfaces",
     "doi": "10.1021/acsami.6c11998",
@@ -90370,7 +90609,7 @@
     "issn_l": "",
     "publisher": "American Chemical Society (ACS)",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7203528745",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S164001016",
@@ -104406,9 +104645,64 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Hyeong Seok Kim",
+        "openalex_author_id": "https://openalex.org/A5109763996",
+        "orcid": "https://orcid.org/0000-0001-6923-1710",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Korea Basic Science Institute",
+            "ror": "https://ror.org/0417sdw47",
+            "country_code": "KR",
+            "type": "facility"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Korea Basic Science Institute , , ,"
+        ]
+      },
+      {
+        "name": "Zachariah A. Page",
+        "openalex_author_id": "https://openalex.org/A5015417245",
+        "orcid": "https://orcid.org/0000-0002-1013-5422",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "The University of Texas at Austin",
+            "ror": "https://ror.org/00hj54h04",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "The University of Texas at Austin , , , ,"
+        ]
+      },
+      {
+        "name": "Jong Seung Kim",
+        "openalex_author_id": "https://openalex.org/A5100737773",
+        "orcid": "https://orcid.org/0000-0003-3477-1172",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Korea University",
+            "ror": "https://ror.org/047dqcg40",
+            "country_code": "KR",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Korea University , , ,"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "ACS Applied Materials & Interfaces",
     "doi": "10.1021/acsami.6c15685",
@@ -104428,7 +104722,7 @@
     "issn_l": "",
     "publisher": "American Chemical Society (ACS)",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7221768666",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S164001016",
@@ -106862,7 +107156,7 @@
         ]
       },
       {
-        "name": "Prashant Pandey",
+        "name": "Prashant Kumar Pandey",
         "openalex_author_id": "https://openalex.org/A5089348292",
         "orcid": "https://orcid.org/0000-0003-0700-914X",
         "position": "last",
@@ -119472,7 +119766,7 @@
         "name": "Luquan Ren",
         "openalex_author_id": "https://openalex.org/A5100389643",
         "orcid": "https://orcid.org/0000-0003-1102-8482",
-        "position": "last",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -120279,7 +120573,7 @@
         "name": "Mondher Nasri",
         "openalex_author_id": "https://openalex.org/A5006405851",
         "orcid": "https://orcid.org/0000-0001-7848-4365",
-        "position": "first",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -122941,9 +123235,7 @@
             "type": "facility"
           }
         ],
-        "raw_affiliation_strings": [
-          "Singapore Institute of Manufacturing Technology (SIMTech), Agency for Science, Technology and Research (A*STAR), 5 Cleantech Loop, #01-01 Cleantech Two Block B, Singapore 636732, Republic of Singapore"
-        ]
+        "raw_affiliation_strings": []
       }
     ],
     "corresponding_author_available": true,
@@ -136092,7 +136384,7 @@
         "name": "Luquan Ren",
         "openalex_author_id": "https://openalex.org/A5100389643",
         "orcid": "https://orcid.org/0000-0003-1102-8482",
-        "position": "last",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -190477,12 +190769,6 @@
             "type": "education"
           },
           {
-            "name": "Universität Ulm",
-            "ror": "https://ror.org/032000t02",
-            "country_code": "DE",
-            "type": "education"
-          },
-          {
             "name": "University of Manchester",
             "ror": "https://ror.org/027m9bs27",
             "country_code": "GB",
@@ -190499,7 +190785,9 @@
           "Department of Mechanical, Aerospace, and Civil Engineering University of Manchester  Manchester M13 9PL UK",
           "Institute of Structured and Architected Materials Liaoning Academy of Materials  Shenyang 110167 China",
           "Key Laboratory of Bionic Engineering Ministry of Education Jilin University  Changchun 130022 China",
-          "Institute of Orthopaedic Research and Biomechanics, Ulm University Medical Centre, University of Ulm, 89081 Ulm, Germany"
+          "Department of Mechanical, Aerospace, and Civil Engineering, University of Manchester, Manchester, M13 9PL UK",
+          "Institute of Structured and Architected Materials, Liaoning Academy of Materials, Shenyang, 110167 China",
+          "Key Laboratory of Bionic Engineering, Ministry of Education, Jilin University, Changchun, 130022 China"
         ]
       },
       {
@@ -204659,8 +204947,8 @@
     "corresponding_authors": [
       {
         "name": "Xinyu Wang",
-        "openalex_author_id": "https://openalex.org/A5100352846",
-        "orcid": "https://orcid.org/0009-0001-2925-1466",
+        "openalex_author_id": null,
+        "orcid": null,
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -204730,7 +205018,7 @@
         "name": "Xiaofeng Wang",
         "openalex_author_id": null,
         "orcid": "https://orcid.org/0000-0002-9913-1064",
-        "position": "last",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -225471,29 +225759,9 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [
-      {
-        "name": "Xiaowu Shirley Tang",
-        "openalex_author_id": "https://openalex.org/A5052775902",
-        "orcid": "https://orcid.org/0000-0002-9734-4365",
-        "position": "last",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "University of Waterloo",
-            "ror": "https://ror.org/01aff2v68",
-            "country_code": "CA",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Centre for Eye and Vision Research (CEVR), 17W Hong Kong Science Park, Hong Kong",
-          "Department of Chemistry and Waterloo Institute for Nanotechnology (WIN), University of Waterloo, Waterloo, Ontario, Canada"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
     "year": 2025,
     "venue": "Additive Manufacturing",
     "doi": "10.1016/j.addma.2025.104691",
@@ -225512,8 +225780,8 @@
     "issn_l": "",
     "publisher": "Elsevier BV",
     "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4407158145",
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2764842179",
     "venue_metrics": {
@@ -230512,9 +230780,28 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Pulak M. Pandey",
+        "openalex_author_id": "https://openalex.org/A5043495930",
+        "orcid": "https://orcid.org/0000-0002-5048-8388",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Indian Institute of Technology Delhi",
+            "ror": "https://ror.org/049tgcd06",
+            "country_code": "IN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Indian Institute of Technology Delhi, New Delhi, India"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2025,
     "venue": "Progress in Additive Manufacturing",
     "doi": "10.1007/s40964-025-01076-7",
@@ -230534,8 +230821,8 @@
     "issn_l": "",
     "publisher": "Springer Science and Business Media LLC",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4409131863",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S4210206835",
     "venue_metrics": {
@@ -266237,10 +266524,10 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Likun Wang",
-        "openalex_author_id": "https://openalex.org/A5100623561",
-        "orcid": "https://orcid.org/0000-0001-5646-9746",
-        "position": "middle",
+        "name": "Zi Wang",
+        "openalex_author_id": "https://openalex.org/A5100338326",
+        "orcid": "https://orcid.org/0000-0001-9081-7185",
+        "position": "first",
         "is_corresponding": true,
         "institutions": [
           {
@@ -267038,10 +267325,10 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-12",
-    "last_updated": "2026-10-24",
+    "last_updated": "2026-10-25",
     "is_weekly_new": false,
-    "last_seen_in_crossref_run": "2026-10-24",
-    "not_seen_in_latest_crossref_run": true,
+    "last_seen_in_crossref_run": "2026-10-25",
+    "not_seen_in_latest_crossref_run": false,
     "openalex_venue_rank": "Rank 3",
     "openalex_venue_rank_number": 3,
     "openalex_venue_rank_score": 2.0,
@@ -298303,7 +298590,7 @@
       },
       {
         "name": "Zihuan Chen",
-        "openalex_author_id": null,
+        "openalex_author_id": "https://openalex.org/A5024222220",
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
