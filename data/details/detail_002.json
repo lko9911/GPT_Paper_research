@@ -3390,8 +3390,8 @@
         ]
       }
     ],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
     "crossref_collection_route": "issn_venue_query",
@@ -3403,7 +3403,7 @@
     "issn_l": "",
     "publisher": "American Association for the Advancement of Science (AAAS)",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7214368390",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2737427234",
@@ -11884,8 +11884,8 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
     "crossref_collection_route": "keyword_query",
@@ -11897,7 +11897,7 @@
     "issn_l": "",
     "publisher": "AccScience Publishing",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7154685692",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S5407049595",
@@ -12720,6 +12720,107 @@
     "last_seen_in_crossref_run": "2026-10-26",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/rpm2.70038"
+  },
+  "10.1016/j.isci.2026.118006": {
+    "author_details": [
+      {
+        "name": "Charbel Tawk",
+        "orcid": "https://orcid.org/0000-0002-2917-5985",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "George Saab",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "George Abdallah",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Jason El Khoury",
+        "orcid": "https://orcid.org/0009-0003-6835-8623",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Reynald Aouad",
+        "orcid": "https://orcid.org/0009-0001-4270-8336",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2589-0042"
+    ],
+    "issn_l": "",
+    "publisher": "Elsevier BV",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S2898358376",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S2898358376",
+      "issn_l": "2589-0042",
+      "issn": [
+        "2589-0042"
+      ],
+      "type": "journal",
+      "host_organization_name": "Cell Press",
+      "works_count": 16365,
+      "cited_by_count": 253170,
+      "two_year_mean_citedness": 4.343382928739232,
+      "h_index": 136,
+      "i10_index": 6981,
+      "is_core": true,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 4.343382928739232,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 2",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - Design, modeling, and validation of a computer-vision-enabled 3D-printed soft robotic glove for stroke telerehabilitation is a 2026 paper from iScience about Soft robotics.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Soft robotics.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Soft robotics; current relevance score is 5/10.",
+    "relevance_note_en": "Relevant to the tracker through Soft robotics; score: 5/10.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-10-26",
+    "id": "10.1016/j.isci.2026.118006"
   },
   "10.37636/recit.v9n3e502": {
     "author_details": [
@@ -35830,108 +35931,5 @@
     "last_seen_in_crossref_run": "2026-10-26",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.4236/jamp.2025.1312245"
-  },
-  "10.3390/computers14060221": {
-    "author_details": [
-      {
-        "name": "Stefanie Sell",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Institute for Mechanical Engineering, Ruhr West University of Applied Sciences, 45479 Muelheim an der Ruhr, Germany"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Institute for Mechanical Engineering, Ruhr West University of Applied Sciences, 45479 Muelheim an der Ruhr, Germany"
-        ]
-      },
-      {
-        "name": "Kevin Villani",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Institute for Mechanical Engineering, Ruhr West University of Applied Sciences, 45479 Muelheim an der Ruhr, Germany"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Institute for Mechanical Engineering, Ruhr West University of Applied Sciences, 45479 Muelheim an der Ruhr, Germany"
-        ]
-      },
-      {
-        "name": "Marc Stautner",
-        "orcid": "https://orcid.org/0000-0002-9007-2125",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Institute for Mechanical Engineering, Ruhr West University of Applied Sciences, 45479 Muelheim an der Ruhr, Germany"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Institute for Mechanical Engineering, Ruhr West University of Applied Sciences, 45479 Muelheim an der Ruhr, Germany"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2073-431X"
-    ],
-    "issn_l": "",
-    "publisher": "MDPI AG",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4411091652",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S4210228075",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S4210228075",
-      "issn_l": "2073-431X",
-      "issn": [
-        "2073-431X"
-      ],
-      "type": "journal",
-      "host_organization_name": "Multidisciplinary Digital Publishing Institute",
-      "works_count": 2328,
-      "cited_by_count": 30292,
-      "two_year_mean_citedness": 4.793103448275862,
-      "h_index": 70,
-      "i10_index": 689,
-      "is_core": true,
-      "is_oa": true,
-      "is_in_doaj": true
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 4.793103448275862,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 2",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The paper explores the integration of digital twin methodologies in on-site wire arc additive manufacturing (WAAM).\n2. Problem - It addresses the challenges of logistics and manufacturing efficiency in the context of increasing demand for customized production.\n3. Method - The authors propose a digital twin framework to optimize process planning and resource usage in WAAM.\n4. Key Result - The study highlights the potential for enhanced efficiency and reduced resource consumption in additive manufacturing through digital twin technologies.\n5. Takeaway - Implementing a digital twin framework could significantly transform on-site additive manufacturing processes.",
-    "relevance_note_en": "The paper is highly relevant as it discusses innovative solutions to current manufacturing challenges using digital twin technologies.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-26",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.3390/computers14060221"
   }
 }

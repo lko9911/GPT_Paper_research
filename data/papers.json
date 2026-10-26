@@ -5955,9 +5955,35 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Gerald Jeffrey Snyder",
+        "openalex_author_id": "https://openalex.org/A5049121943",
+        "orcid": "https://orcid.org/0000-0003-1414-8682",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Northwestern University",
+            "ror": "https://ror.org/000e0be47",
+            "country_code": "US",
+            "type": "education"
+          },
+          {
+            "name": "Advanced Research Projects Agency - Energy",
+            "ror": "https://ror.org/03q1rgc19",
+            "country_code": "US",
+            "type": "government"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Advanced Research Projects Agency ‐ Energy ARPA‐E  Washington D.C. USA",
+          "Department of Materials Science and Engineering Northwestern University Evanston IL USA"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Advanced Materials",
     "doi": "10.1002/adma.202518751",
@@ -5977,8 +6003,8 @@
     "issn_l": "",
     "publisher": "Wiley",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7140595243",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S99352657",
     "venue_metrics": {
@@ -8949,9 +8975,9 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Zhenlu Xu",
-        "openalex_author_id": "https://openalex.org/A5056473819",
-        "orcid": "https://orcid.org/0009-0007-0580-017X",
+        "name": "Wenjun Xu",
+        "openalex_author_id": "https://openalex.org/A5059180329",
+        "orcid": "https://orcid.org/0000-0001-5370-3437",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -11999,6 +12025,12 @@
             "ror": "https://ror.org/00wk2mp56",
             "country_code": "CN",
             "type": "education"
+          },
+          {
+            "name": "Ministry of Industry and Information Technology",
+            "ror": "https://ror.org/0385nmy68",
+            "country_code": "CN",
+            "type": "government"
           }
         ],
         "raw_affiliation_strings": [
@@ -27193,6 +27225,12 @@
             "ror": "https://ror.org/02gdcg342",
             "country_code": "FR",
             "type": "education"
+          },
+          {
+            "name": "Laboratoire d’Informatique Signal et Image de la Côte d’Opale",
+            "ror": "https://ror.org/00tm1qp20",
+            "country_code": null,
+            "type": "facility"
           }
         ],
         "raw_affiliation_strings": [
@@ -31486,12 +31524,6 @@
         "is_corresponding": true,
         "institutions": [
           {
-            "name": "National University of Technology",
-            "ror": "https://ror.org/05e21fw44",
-            "country_code": "PK",
-            "type": "education"
-          },
-          {
             "name": "National University of Sciences and Technology",
             "ror": "https://ror.org/03w2j5y17",
             "country_code": "PK",
@@ -31510,12 +31542,6 @@
         "position": "last",
         "is_corresponding": true,
         "institutions": [
-          {
-            "name": "National University of Technology",
-            "ror": "https://ror.org/05e21fw44",
-            "country_code": "PK",
-            "type": "education"
-          },
           {
             "name": "National University of Sciences and Technology",
             "ror": "https://ror.org/03w2j5y17",
@@ -33201,21 +33227,21 @@
         "is_corresponding": true,
         "institutions": [
           {
-            "name": "SINTEF",
-            "ror": "https://ror.org/01f677e56",
-            "country_code": "NO",
-            "type": "facility"
-          },
-          {
             "name": "NORCE Research AS",
             "ror": "https://ror.org/02gagpf75",
             "country_code": "NO",
             "type": "facility"
+          },
+          {
+            "name": "Montimage (France)",
+            "ror": "https://ror.org/02a8qtz61",
+            "country_code": "FR",
+            "type": "company"
           }
         ],
         "raw_affiliation_strings": [
           "NORCE Research AS, Grimstad, Norway",
-          "SINTEF AS, Oslo/Porsgrunn, Norway"
+          "Montimage, Paris, France"
         ]
       }
     ],
@@ -35389,10 +35415,10 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-09-03",
-    "last_updated": "2026-10-25",
+    "last_updated": "2026-10-26",
     "is_weekly_new": false,
-    "not_seen_in_latest_crossref_run": true,
-    "last_seen_in_crossref_run": "2026-10-25",
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-10-26",
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 14.256403502995983,
@@ -36868,9 +36894,28 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Hantang Qin",
+        "openalex_author_id": "https://openalex.org/A5082697804",
+        "orcid": "https://orcid.org/0000-0003-4180-7911",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Wisconsin–Madison",
+            "ror": "https://ror.org/01y2jtd41",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "University of Wisconsin-Madison Department of Industrial and Systems Engineering, , Madison, ,"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Rapid Prototyping Journal",
     "doi": "10.1108/rpj-05-2025-0187",
@@ -36890,7 +36935,7 @@
     "issn_l": "",
     "publisher": "Emerald",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4415301302",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S173500210",
@@ -45141,7 +45186,7 @@
     "publisher": "Wiley",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7223560714",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2737737698",
     "venue_metrics": {
@@ -46824,10 +46869,10 @@
         "is_corresponding": true,
         "institutions": [
           {
-            "name": "Manufacturing Institute",
-            "ror": "https://ror.org/027wewa02",
-            "country_code": "US",
-            "type": "nonprofit"
+            "name": "Shenzhen University",
+            "ror": "https://ror.org/01vy4gh70",
+            "country_code": "CN",
+            "type": "education"
           }
         ],
         "raw_affiliation_strings": [
@@ -61420,10 +61465,10 @@
         "is_corresponding": true,
         "institutions": [
           {
-            "name": "Zhejiang Lab",
-            "ror": "https://ror.org/02m2h7991",
+            "name": "Zhejiang University",
+            "ror": "https://ror.org/00a2xv884",
             "country_code": "CN",
-            "type": "facility"
+            "type": "education"
           }
         ],
         "raw_affiliation_strings": [
@@ -72178,9 +72223,28 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Guha P. Manogharan",
+        "openalex_author_id": "https://openalex.org/A5003160123",
+        "orcid": "https://orcid.org/0000-0002-9756-1220",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Pennsylvania State University",
+            "ror": "https://ror.org/04p491231",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Pennsylvania State University"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Virtual and Physical Prototyping",
     "doi": "10.1080/17452759.2026.2686063",
@@ -72200,7 +72264,7 @@
     "issn_l": "",
     "publisher": "Informa UK Limited",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7171637102",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S152936027",
@@ -91682,9 +91746,28 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Markus P. Nemitz",
+        "openalex_author_id": "https://openalex.org/A5075236868",
+        "orcid": "https://orcid.org/0000-0003-0771-5407",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Tufts University",
+            "ror": "https://ror.org/05wvpxv85",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering Tufts University Medford USA"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Advanced Science",
     "doi": "10.1002/advs.202524237",
@@ -91704,8 +91787,8 @@
     "issn_l": "",
     "publisher": "Wiley",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7140087095",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2737737698",
     "venue_metrics": {
@@ -92180,12 +92263,6 @@
           {
             "name": "Hong Kong University of Science and Technology",
             "ror": "https://ror.org/00q4vv597",
-            "country_code": "HK",
-            "type": "education"
-          },
-          {
-            "name": "University of Hong Kong",
-            "ror": "https://ror.org/02zhqgq86",
             "country_code": "HK",
             "type": "education"
           }
@@ -99445,9 +99522,78 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Xiaozhou Xin",
+        "openalex_author_id": "https://openalex.org/A5028059010",
+        "orcid": "https://orcid.org/0000-0003-3167-7906",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Harbin Institute of Technology",
+            "ror": "https://ror.org/01yqg2h08",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Astronautical Science and Mechanics, Harbin Institute of Technology, Harbin 150001, People’s Republic of China"
+        ]
+      },
+      {
+        "name": "Liwu Liu",
+        "openalex_author_id": "https://openalex.org/A5102813229",
+        "orcid": "https://orcid.org/0000-0003-0781-8385",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Harbin Institute of Technology",
+            "ror": "https://ror.org/01yqg2h08",
+            "country_code": "CN",
+            "type": "education"
+          },
+          {
+            "name": "Suzhou Research Institute",
+            "ror": "https://ror.org/03ebk0c60",
+            "country_code": "CN",
+            "type": "facility"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Astronautical Science and Mechanics, Harbin Institute of Technology, Harbin 150001, People’s Republic of China",
+          "Suzhou Research Institute, Harbin Institute of Technology, Suzhou 215100, People’s Republic of China"
+        ]
+      },
+      {
+        "name": "Yanju Liu",
+        "openalex_author_id": "https://openalex.org/A5100773263",
+        "orcid": "https://orcid.org/0000-0001-8269-1594",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Harbin Institute of Technology",
+            "ror": "https://ror.org/01yqg2h08",
+            "country_code": "CN",
+            "type": "education"
+          },
+          {
+            "name": "Suzhou Research Institute",
+            "ror": "https://ror.org/03ebk0c60",
+            "country_code": "CN",
+            "type": "facility"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Astronautical Science and Mechanics, Harbin Institute of Technology, Harbin 150001, People’s Republic of China",
+          "Suzhou Research Institute, Harbin Institute of Technology, Suzhou 215100, People’s Republic of China"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Science Advances",
     "doi": "10.1126/sciadv.aeg1744",
@@ -99466,7 +99612,7 @@
     "issn_l": "",
     "publisher": "American Association for the Advancement of Science (AAAS)",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7214368390",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2737427234",
@@ -101685,6 +101831,12 @@
         "is_corresponding": true,
         "institutions": [
           {
+            "name": "State Key Laboratory of Metal Porous Materials",
+            "ror": "https://ror.org/03pzgzb61",
+            "country_code": null,
+            "type": "facility"
+          },
+          {
             "name": "Xi'an Jiaotong University",
             "ror": "https://ror.org/017zhmm22",
             "country_code": "CN",
@@ -101703,6 +101855,12 @@
         "position": "last",
         "is_corresponding": true,
         "institutions": [
+          {
+            "name": "State Key Laboratory of Metal Porous Materials",
+            "ror": "https://ror.org/03pzgzb61",
+            "country_code": null,
+            "type": "facility"
+          },
           {
             "name": "Xi'an Jiaotong University",
             "ror": "https://ror.org/017zhmm22",
@@ -111964,9 +112122,19 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Xiayun Zhao",
+        "openalex_author_id": "https://openalex.org/A5006712472",
+        "orcid": "https://orcid.org/0000-0002-6092-1130",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Engineering Science in Additive Manufacturing",
     "doi": "10.36922/esam026080004",
@@ -111985,7 +112153,7 @@
     "issn_l": "",
     "publisher": "AccScience Publishing",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7154685692",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S5407049595",
@@ -113283,6 +113451,144 @@
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 12.684615384615384,
     "openalex_venue_rank_percentile": 0.949,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+  },
+  {
+    "id": "10.1016/j.isci.2026.118006",
+    "title": "Design, modeling, and validation of a computer-vision-enabled 3D-printed soft robotic glove for stroke telerehabilitation",
+    "authors": [
+      "Charbel Tawk",
+      "George Saab",
+      "George Abdallah",
+      "Jason El Khoury",
+      "Reynald Aouad"
+    ],
+    "author_details": [
+      {
+        "name": "Charbel Tawk",
+        "orcid": "https://orcid.org/0000-0002-2917-5985",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "George Saab",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "George Abdallah",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Jason El Khoury",
+        "orcid": "https://orcid.org/0009-0003-6835-8623",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Reynald Aouad",
+        "orcid": "https://orcid.org/0009-0001-4270-8336",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "year": 2026,
+    "venue": "iScience",
+    "doi": "10.1016/j.isci.2026.118006",
+    "url": "https://doi.org/10.1016/j.isci.2026.118006",
+    "source": [
+      "Crossref"
+    ],
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2589-0042"
+    ],
+    "issn_l": "",
+    "publisher": "Elsevier BV",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S2898358376",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S2898358376",
+      "issn_l": "2589-0042",
+      "issn": [
+        "2589-0042"
+      ],
+      "type": "journal",
+      "host_organization_name": "Cell Press",
+      "works_count": 16365,
+      "cited_by_count": 253170,
+      "two_year_mean_citedness": 4.343382928739232,
+      "h_index": 136,
+      "i10_index": 6981,
+      "is_core": true,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 4.343382928739232,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 2",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "publication_type": "journal_article",
+    "venue_trust": "trusted",
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "is_core_venue": false,
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "categories": [
+      "Multi-material AM"
+    ],
+    "tags": [
+      "Soft robotics"
+    ],
+    "relevance_score": 5,
+    "curation_priority": false,
+    "ai_summary_en": "1. Topic - Design, modeling, and validation of a computer-vision-enabled 3D-printed soft robotic glove for stroke telerehabilitation is a 2026 paper from iScience about Soft robotics.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Soft robotics.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Soft robotics; current relevance score is 5/10.",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_en": "Relevant to the tracker through Soft robotics; score: 5/10.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-10-26",
+    "last_updated": "2026-10-26",
+    "is_weekly_new": true,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-10-26",
+    "openalex_venue_rank": "Rank 2",
+    "openalex_venue_rank_number": 2,
+    "openalex_venue_rank_score": 4.343382928739232,
+    "openalex_venue_rank_percentile": 0.6335,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
@@ -119905,7 +120211,7 @@
         "name": "Luquan Ren",
         "openalex_author_id": "https://openalex.org/A5100389643",
         "orcid": "https://orcid.org/0000-0003-1102-8482",
-        "position": "middle",
+        "position": "last",
         "is_corresponding": true,
         "institutions": [
           {
@@ -120712,7 +121018,7 @@
         "name": "Mondher Nasri",
         "openalex_author_id": "https://openalex.org/A5006405851",
         "orcid": "https://orcid.org/0000-0001-7848-4365",
-        "position": "middle",
+        "position": "first",
         "is_corresponding": true,
         "institutions": [
           {
@@ -128872,7 +129178,7 @@
         "name": "Erin Lavik",
         "openalex_author_id": "https://openalex.org/A5079335476",
         "orcid": "https://orcid.org/0000-0002-0644-744X",
-        "position": "middle",
+        "position": "last",
         "is_corresponding": true,
         "institutions": [
           {
@@ -151218,8 +151524,8 @@
     "corresponding_authors": [
       {
         "name": "Cheng Zhang",
-        "openalex_author_id": "https://openalex.org/A5100769098",
-        "orcid": "https://orcid.org/0000-0001-8282-9901",
+        "openalex_author_id": null,
+        "orcid": null,
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -173529,8 +173835,8 @@
       },
       {
         "name": "Wenzhuo Liu",
-        "openalex_author_id": "https://openalex.org/A5107441690",
-        "orcid": "https://orcid.org/0009-0004-3542-8418",
+        "openalex_author_id": null,
+        "orcid": null,
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -190933,7 +191239,7 @@
         "name": "Luquan Ren",
         "openalex_author_id": "https://openalex.org/A5100389643",
         "orcid": "https://orcid.org/0000-0003-1102-8482",
-        "position": "middle",
+        "position": "last",
         "is_corresponding": true,
         "institutions": [
           {
@@ -201316,9 +201622,30 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Rahul P. Panat",
+        "openalex_author_id": "https://openalex.org/A5002697876",
+        "orcid": "https://orcid.org/0000-0002-4824-2936",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Carnegie Mellon University",
+            "ror": "https://ror.org/05x2bcf33",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering Carnegie Mellon University  Pittsburgh PA 15213 USA",
+          "Manufacturing Futures Institute Carnegie Mellon University  Pittsburgh PA 15213 USA",
+          "Robotics Institute Carnegie Mellon University  Pittsburgh PA 15213 USA"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2025,
     "venue": "Advanced Science",
     "doi": "10.1002/advs.202405334",
@@ -201338,8 +201665,8 @@
     "issn_l": "",
     "publisher": "Wiley",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4407295823",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2737737698",
     "venue_metrics": {
@@ -202428,6 +202755,24 @@
       }
     ],
     "corresponding_authors": [
+      {
+        "name": "Myung‐Seo Kim",
+        "openalex_author_id": "https://openalex.org/A5027659047",
+        "orcid": "https://orcid.org/0000-0003-2916-0131",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Yonsei University",
+            "ror": "https://ror.org/01wjejq96",
+            "country_code": "KR",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering, Yonsei University, 50 Yonsei-ro, Seodaemun-gu, Seoul 03722, Republic of Korea"
+        ]
+      },
       {
         "name": "Seok Kim",
         "openalex_author_id": "https://openalex.org/A5100618782",
@@ -204106,12 +204451,6 @@
         "is_corresponding": true,
         "institutions": [
           {
-            "name": "Northwestern Polytechnical University",
-            "ror": "https://ror.org/01y0j0j86",
-            "country_code": "CN",
-            "type": "education"
-          },
-          {
             "name": "Chengdu University",
             "ror": "https://ror.org/034z67559",
             "country_code": "CN",
@@ -204119,8 +204458,7 @@
           }
         ],
         "raw_affiliation_strings": [
-          "Institute for Advanced Study, Chengdu University, Chengdu 610106, PR China",
-          "School of Aeronautics, Institute of Extreme Mechanics, Northwestern Polytechnical University, Xi’an 710072, PR China"
+          "Institute for Advanced Study, Chengdu University, Chengdu 610106, PR China"
         ]
       },
       {
@@ -206865,9 +207203,28 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Aitor Cazón",
+        "openalex_author_id": "https://openalex.org/A5066195141",
+        "orcid": "https://orcid.org/0000-0002-9561-5029",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Universidad de Navarra",
+            "ror": "https://ror.org/02rxc7m23",
+            "country_code": "ES",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "University of Navarra – Tecnun Department of Mechanical Engineering and Materials, , San Sebastián,"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2025,
     "venue": "Rapid Prototyping Journal",
     "doi": "10.1108/rpj-10-2024-0444",
@@ -206887,7 +207244,7 @@
     "issn_l": "",
     "publisher": "Emerald",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4409691674",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S173500210",
@@ -222840,9 +223197,29 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Xiangjia Li",
+        "openalex_author_id": "https://openalex.org/A5046416828",
+        "orcid": "https://orcid.org/0000-0002-8549-4251",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Arizona State University",
+            "ror": "https://ror.org/03efmqc40",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          ". Department of Aerospace and Mechanical Engineering , School for Engineering of Matter, Transport and Energy , Arizona State University , Phoenix , AZ",
+          ". Manufacturing Engineering , School of Manufacturing Systems and Networks , Arizona State University , Mesa , AZ"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2025,
     "venue": "Light: Advanced Manufacturing",
     "doi": "10.37188/lam.2025.063",
@@ -222861,7 +223238,7 @@
     "issn_l": "",
     "publisher": "Changchun Institute of Optics, Fine Mechanics and Physics, Chinese Academy of Sciences",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4413000115",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S4210238819",
@@ -238212,9 +238589,9 @@
     "corresponding_authors": [
       {
         "name": "Songhao Wang",
-        "openalex_author_id": "https://openalex.org/A5057228007",
+        "openalex_author_id": null,
         "orcid": "https://orcid.org/0000-0003-3643-4698",
-        "position": "first",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -273844,9 +274221,28 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Filippo Sanfilippo",
+        "openalex_author_id": "https://openalex.org/A5087578160",
+        "orcid": "https://orcid.org/0000-0002-1437-8368",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Agder",
+            "ror": "https://ror.org/03x297z98",
+            "country_code": "NO",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Engineering Sciences, University of Agder (UiA), Grimstad, Norway"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2024,
     "venue": "Rapid Prototyping Journal",
     "doi": "10.1108/rpj-10-2023-0360",
@@ -273866,7 +274262,7 @@
     "issn_l": "",
     "publisher": "Emerald",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4392897209",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S173500210",
@@ -281169,10 +281565,10 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Ratnesh Kumar Raj Singh",
-        "openalex_author_id": "https://openalex.org/A5066015004",
-        "orcid": "https://orcid.org/0000-0001-9377-6753",
-        "position": "middle",
+        "name": "Manish Pratap Singh",
+        "openalex_author_id": "https://openalex.org/A5021211339",
+        "orcid": "https://orcid.org/0000-0002-9530-2348",
+        "position": "first",
         "is_corresponding": true,
         "institutions": [
           {
@@ -289551,9 +289947,28 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Shaohua Han",
+        "openalex_author_id": "https://openalex.org/A5067136550",
+        "orcid": "https://orcid.org/0000-0002-6104-9778",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Fuzhou University",
+            "ror": "https://ror.org/011xvna82",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Mechanical Engineering and Automation, Fuzhou University, Fuzhou, China"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2024,
     "venue": "Rapid Prototyping Journal",
     "doi": "10.1108/rpj-04-2023-0133",
@@ -289573,7 +289988,7 @@
     "issn_l": "",
     "publisher": "Emerald",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4393276968",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S173500210",
@@ -300014,7 +300429,7 @@
         "name": "Hao Zhang",
         "openalex_author_id": null,
         "orcid": null,
-        "position": "middle",
+        "position": "last",
         "is_corresponding": true,
         "institutions": [
           {
@@ -311609,9 +312024,28 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Girish Chandra Verma",
+        "openalex_author_id": "https://openalex.org/A5039693705",
+        "orcid": null,
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Indian Institute of Technology Indore",
+            "ror": "https://ror.org/01hhf7w52",
+            "country_code": "IN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering, Indian Institute of Technology Indore, Indore, India"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2024,
     "venue": "Rapid Prototyping Journal",
     "doi": "10.1108/rpj-02-2024-0083",
@@ -311631,7 +312065,7 @@
     "issn_l": "",
     "publisher": "Emerald",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4400055671",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S173500210",
