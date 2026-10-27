@@ -24156,17 +24156,17 @@
   },
   {
     "id": "10.1039/d6dd00638h",
-    "title": "Dual Digital Twins for Experimental Planning: From Imaging and Characterization to Self-Driving Laboratories and Manufacturing",
+    "title": "Dual digital twins for experimental planning: from imaging and characterization to self-driving laboratories and manufacturing",
     "authors": [
       "Sergei V. Kalinin",
       "Yu Liu",
-      "Ioannis Sgouralis",
-      "Charles Cao",
       "Boris Slautin",
-      "Sheryl Sanchez",
+      "Sheryl L. Sanchez",
       "Kamyar Barakati",
-      "Hector Santos",
+      "Ioannis Sgouralis",
+      "Hector Santos-Villalobos",
       "Gerd Duscher",
+      "Charles Cao",
       "Mahshid Ahmadi"
     ],
     "author_details": [
@@ -24175,80 +24175,144 @@
         "orcid": "",
         "position": "first",
         "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
+        "institutions": [
+          {
+            "name": "Department of Materials Science and Engineering, University of Tennessee, Knoxville, Tennessee, 37996, USA"
+          },
+          {
+            "name": "Department of Electrical Engineering and Computer Science, University of Tennessee, Knoxville, Tennessee, 37996, USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Materials Science and Engineering, University of Tennessee, Knoxville, Tennessee, 37996, USA",
+          "Department of Electrical Engineering and Computer Science, University of Tennessee, Knoxville, Tennessee, 37996, USA"
+        ]
       },
       {
         "name": "Yu Liu",
-        "orcid": "",
+        "orcid": "https://orcid.org/0000-0001-9871-9301",
         "position": "additional",
         "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
+        "institutions": [
+          {
+            "name": "Department of Materials Science and Engineering, University of Tennessee, Knoxville, Tennessee, 37996, USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Materials Science and Engineering, University of Tennessee, Knoxville, Tennessee, 37996, USA"
+        ]
+      },
+      {
+        "name": "Boris Slautin",
+        "orcid": "https://orcid.org/0000-0002-1237-7070",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Materials Science and Engineering, University of Tennessee, Knoxville, Tennessee, 37996, USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Materials Science and Engineering, University of Tennessee, Knoxville, Tennessee, 37996, USA"
+        ]
+      },
+      {
+        "name": "Sheryl L. Sanchez",
+        "orcid": "https://orcid.org/0000-0002-1485-3966",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Materials Science and Engineering, University of Tennessee, Knoxville, Tennessee, 37996, USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Materials Science and Engineering, University of Tennessee, Knoxville, Tennessee, 37996, USA"
+        ]
+      },
+      {
+        "name": "Kamyar Barakati",
+        "orcid": "https://orcid.org/0000-0003-3487-6652",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Materials Science and Engineering, University of Tennessee, Knoxville, Tennessee, 37996, USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Materials Science and Engineering, University of Tennessee, Knoxville, Tennessee, 37996, USA"
+        ]
       },
       {
         "name": "Ioannis Sgouralis",
         "orcid": "",
         "position": "additional",
         "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
+        "institutions": [
+          {
+            "name": "Department of Mathematics, University of Tennessee, Knoxville, Tennessee, 37996, USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mathematics, University of Tennessee, Knoxville, Tennessee, 37996, USA"
+        ]
       },
       {
-        "name": "Charles Cao",
-        "orcid": "",
+        "name": "Hector Santos-Villalobos",
+        "orcid": "https://orcid.org/0000-0001-8749-0636",
         "position": "additional",
         "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Boris Slautin",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Sheryl Sanchez",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Kamyar Barakati",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Hector Santos",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
+        "institutions": [
+          {
+            "name": "Department of Electrical Engineering and Computer Science, University of Tennessee, Knoxville, Tennessee, 37996, USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Electrical Engineering and Computer Science, University of Tennessee, Knoxville, Tennessee, 37996, USA"
+        ]
       },
       {
         "name": "Gerd Duscher",
         "orcid": "",
         "position": "additional",
         "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
+        "institutions": [
+          {
+            "name": "Department of Materials Science and Engineering, University of Tennessee, Knoxville, Tennessee, 37996, USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Materials Science and Engineering, University of Tennessee, Knoxville, Tennessee, 37996, USA"
+        ]
       },
       {
-        "name": "Mahshid Ahmadi",
+        "name": "Charles Cao",
         "orcid": "",
         "position": "additional",
         "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
+        "institutions": [
+          {
+            "name": "Department of Electrical Engineering and Computer Science, University of Tennessee, Knoxville, Tennessee, 37996, USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Electrical Engineering and Computer Science, University of Tennessee, Knoxville, Tennessee, 37996, USA"
+        ]
+      },
+      {
+        "name": "Mahshid Ahmadi",
+        "orcid": "https://orcid.org/0000-0002-3268-7957",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Materials Science and Engineering, University of Tennessee, Knoxville, Tennessee, 37996, USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Materials Science and Engineering, University of Tennessee, Knoxville, Tennessee, 37996, USA"
+        ]
       }
     ],
     "corresponding_authors": [],
@@ -24316,15 +24380,14 @@
     ],
     "tags": [
       "Self-driving Labs",
-      "Digital Twins",
-      "Manufacturing automation"
+      "Digital Twins"
     ],
     "relevance_score": 7,
     "curation_priority": false,
-    "ai_summary_en": "1. Topic - Dual Digital Twins for Experimental Planning: From Imaging and Characterization to Self-Driving Laboratories and Manufacturing is a 2026 paper from Digital Discovery about Self-driving Labs, Digital Twins, and Manufacturing automation.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Self-driving Labs, Digital Twins, and Manufacturing automation.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Self-driving Labs, Digital Twins, and Manufacturing automation; current relevance score is 7/10.",
+    "ai_summary_en": "1. Topic - Dual digital twins for experimental planning: from imaging and characterization to self-driving laboratories and manufacturing is a 2026 paper from Digital Discovery about Self-driving Labs and Digital Twins.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Self-driving Labs and Digital Twins.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Self-driving Labs and Digital Twins; current relevance score is 7/10.",
     "summary_provider": "fallback",
     "openai_summary_applied": false,
-    "relevance_note_en": "Relevant to the tracker through Self-driving Labs, Digital Twins, and Manufacturing automation; score: 7/10.",
+    "relevance_note_en": "Relevant to the tracker through Self-driving Labs and Digital Twins; score: 7/10.",
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
@@ -197492,9 +197555,9 @@
     ],
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "Advanced Materials",
-    "crossref_target_issn": "0935-9648",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
     "issn": [
       "0935-9648",
       "1521-4095"
