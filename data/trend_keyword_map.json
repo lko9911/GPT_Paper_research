@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T16:04:06+00:00",
+  "updated_at": "2026-10-27T00:20:46+00:00",
   "source": "derived from titles, tags, AI Q5 summaries, relevance notes, and public metadata; abstract text is not published",
   "recent_basis": "publication year 2026, plus records explicitly marked weekly-new",
   "node_count": 30,
@@ -42,20 +42,20 @@
       "id": "machine-learning",
       "label": "Machine Learning",
       "group": "AI",
-      "count": 376,
-      "recent_count": 179,
-      "trend_score": 0.3589,
+      "count": 377,
+      "recent_count": 180,
+      "trend_score": 0.3607,
       "x": 620.0,
       "y": 68.0,
-      "radius": 15.8
+      "radius": 15.9
     },
     {
       "id": "digital-twin",
       "label": "Digital Twin",
       "group": "AI",
-      "count": 385,
-      "recent_count": 175,
-      "trend_score": 0.3552,
+      "count": 386,
+      "recent_count": 176,
+      "trend_score": 0.3569,
       "x": 684.0,
       "y": 120.0,
       "radius": 16.0
@@ -358,8 +358,8 @@
     {
       "source": "digital-twin",
       "target": "machine-learning",
-      "count": 236,
-      "recent_count": 107
+      "count": 237,
+      "recent_count": 108
     },
     {
       "source": "4d-printing",
