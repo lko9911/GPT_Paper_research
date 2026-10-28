@@ -1,4 +1,163 @@
 {
+  "10.1093/jhps/hnaf069.213": {
+    "author_details": [
+      {
+        "name": "Firas Baklouti",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "University of Ottawa , Ottawa ,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "University of Ottawa , Ottawa ,"
+        ]
+      },
+      {
+        "name": "Gerd Melkus",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Carleton University , Ottawa ,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Carleton University , Ottawa ,"
+        ]
+      },
+      {
+        "name": "Kawan Rahkra",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "The Ottawa Hospital , Ottawa ,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "The Ottawa Hospital , Ottawa ,"
+        ]
+      },
+      {
+        "name": "Ariane Parisien",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "The Ottawa Hospital , Ottawa ,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "The Ottawa Hospital , Ottawa ,"
+        ]
+      },
+      {
+        "name": "Andrew Speirs",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Carleton University , Ottawa ,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Carleton University , Ottawa ,"
+        ]
+      },
+      {
+        "name": "Paul Beaule",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "The Ottawa Hospital , Ottawa ,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "The Ottawa Hospital , Ottawa ,"
+        ]
+      },
+      {
+        "name": "Thomas Uchida",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "University of Ottawa , Ottawa ,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "University of Ottawa , Ottawa ,"
+        ]
+      }
+    ],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2054-8397"
+    ],
+    "issn_l": "",
+    "publisher": "Oxford University Press (OUP)",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "https://openalex.org/W7116691879",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S2735648559",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S2735648559",
+      "issn_l": "2054-8397",
+      "issn": [
+        "2054-8397"
+      ],
+      "type": "journal",
+      "host_organization_name": "Oxford University Press",
+      "works_count": 1631,
+      "cited_by_count": 8546,
+      "two_year_mean_citedness": 0.18860103626943006,
+      "h_index": 40,
+      "i10_index": 284,
+      "is_core": true,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 0.18860103626943006,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 4",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The study focuses on a multi-material 3D-printed hip joint model designed for surgical planning.\n2. Problem - Cam-type femoroacetabular impingement (FAI) can lead to labral and cartilage damage, with existing treatments yielding low patient satisfaction.\n3. Method - MRI and CT images were used to create a 3D model, which was then tested for labral seal efficacy through distraction testing.\n4. Key Result - The model achieved a maximum distraction force of 116 N and a displacement of 3.31 mm at seal break, comparable to cadaveric studies.\n5. Takeaway - This innovative 3D-printed model shows potential as a valuable tool for improving surgical planning in hip joint procedures.",
+    "relevance_note_en": "The summary captures the essence of the study, highlighting its significance and findings.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-10-28",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1093/jhps/hnaf069.213"
+  },
   "10.1002/admt.70217": {
     "author_details": [
       {
@@ -1981,9 +2140,9 @@
     "corresponding_author_source": "openalex_cross_check",
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Advanced Materials",
+    "crossref_target_issn": "0935-9648",
     "issn": [
       "0935-9648",
       "1521-4095"
@@ -34930,212 +35089,5 @@
     "last_seen_in_crossref_run": "2026-10-28",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1007/s40964-024-00746-2"
-  },
-  "10.1021/acsami.4c22950": {
-    "author_details": [
-      {
-        "name": "Yilin Zhao",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "School of Power and Mechanical Engineering"
-          },
-          {
-            "name": "Wuhan University"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "School of Power and Mechanical Engineering",
-          "Wuhan University"
-        ]
-      },
-      {
-        "name": "Longju Yi",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "School of Power and Mechanical Engineering"
-          },
-          {
-            "name": "Wuhan University"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "School of Power and Mechanical Engineering",
-          "Wuhan University"
-        ]
-      },
-      {
-        "name": "Yunfan Li",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "School of Power and Mechanical Engineering"
-          },
-          {
-            "name": "Wuhan University"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "School of Power and Mechanical Engineering",
-          "Wuhan University"
-        ]
-      },
-      {
-        "name": "Ziran Zeng",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "School of Power and Mechanical Engineering"
-          },
-          {
-            "name": "Wuhan University"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "School of Power and Mechanical Engineering",
-          "Wuhan University"
-        ]
-      },
-      {
-        "name": "Zhe Liu",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "School of Power and Mechanical Engineering"
-          },
-          {
-            "name": "Wuhan University"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "School of Power and Mechanical Engineering",
-          "Wuhan University"
-        ]
-      },
-      {
-        "name": "Tian-Ling Ren",
-        "orcid": "https://orcid.org/0000-0002-7330-0544",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Institute of Microelectronics and Beijing National Research Center for Information Science and Technology (BNRist)"
-          },
-          {
-            "name": "Tsinghua University"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Institute of Microelectronics and Beijing National Research Center for Information Science and Technology (BNRist)",
-          "Tsinghua University"
-        ]
-      },
-      {
-        "name": "Yong Ruan",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Precision Instrument"
-          },
-          {
-            "name": "Tsinghua University"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Precision Instrument",
-          "Tsinghua University"
-        ]
-      },
-      {
-        "name": "Feng Liu",
-        "orcid": "https://orcid.org/0000-0002-3301-7613",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "School of Power and Mechanical Engineering"
-          },
-          {
-            "name": "Wuhan University"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "School of Power and Mechanical Engineering",
-          "Wuhan University"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "ACS Applied Materials & Interfaces",
-    "crossref_target_issn": "1944-8244",
-    "issn": [
-      "1944-8244",
-      "1944-8252"
-    ],
-    "issn_l": "",
-    "publisher": "American Chemical Society (ACS)",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4409321774",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S164001016",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S164001016",
-      "issn_l": "1944-8244",
-      "issn": [
-        "1944-8244",
-        "1944-8252"
-      ],
-      "type": "journal",
-      "host_organization_name": "American Chemical Society",
-      "works_count": 69722,
-      "cited_by_count": 3298786,
-      "two_year_mean_citedness": 7.780907972281588,
-      "h_index": 372,
-      "i10_index": 53076,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 7.780907972281588,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 1",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The study focuses on a novel laser thermal-curing printing method for magnetic soft robots.\n2. Problem - Current magnetic soft robots struggle with issues related to reparability, functional expansion, and motion adjustment.\n3. Method - The proposed method utilizes infrared laser directionality and the thermal-curing properties of resin to enable efficient fabrication and repair.\n4. Key Result - This approach allows for the integration of fabrication, reparability, reconfigurability, and reprogrammability in soft robots, demonstrated through various applications.\n5. Takeaway - The laser thermal-curing printing method represents a significant advancement in soft robotics, facilitating the creation of complex magnetic soft robots.",
-    "relevance_note_en": "The summary captures the core aspects of the research, including its innovative method and implications for soft robotics.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-28",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1021/acsami.4c22950"
   }
 }
