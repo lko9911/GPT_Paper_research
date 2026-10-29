@@ -6773,9 +6773,48 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "CD Yang",
+        "openalex_author_id": "https://openalex.org/A5091776260",
+        "orcid": "https://orcid.org/0000-0001-6947-1706",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Shanghai Jiao Tong University",
+            "ror": "https://ror.org/0220qvk04",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Inner Mongolia Research Institute Shanghai Jiao Tong University  Hohhot China",
+          "School of Materials Science and Engineering Shanghai Jiao Tong University  Shanghai China"
+        ]
+      },
+      {
+        "name": "Ye Wei",
+        "openalex_author_id": "https://openalex.org/A5020554327",
+        "orcid": "https://orcid.org/0000-0003-1965-2298",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "City University of Hong Kong",
+            "ror": "https://ror.org/03q8dnn23",
+            "country_code": "HK",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Data Science City University of Hong Kong  Hong Kong China",
+          "Department of Materials Science City University of Hong Kong  Hong Kong China"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Advanced Science",
     "doi": "10.1002/advs.202524273",
@@ -6795,7 +6834,7 @@
     "issn_l": "",
     "publisher": "Wiley",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7154455347",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2737737698",
@@ -19781,9 +19820,29 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "José Xavier",
+        "openalex_author_id": "https://openalex.org/A5023128594",
+        "orcid": "https://orcid.org/0000-0002-7836-4598",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Universidade Nova de Lisboa",
+            "ror": "https://ror.org/02xankh89",
+            "country_code": "PT",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Intelligent Systems Associate Laboratory (LASI), Campus Azurém, 4800-058 Guimarães, Portugal",
+          "Research and Development Unit for Mechanical and Industrial Engineering (UNIDEMI), Department of Mechanical and Industrial Engineering (DEMI), NOVA School of Science and Technology, NOVA University Lisbon, 2829-516 Caparica, Portugal"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Materials",
     "doi": "10.3390/ma19163379",
@@ -19802,7 +19861,7 @@
     "issn_l": "",
     "publisher": "MDPI AG",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7202077040",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S18714766",
@@ -21153,9 +21212,72 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Kang Wang",
+        "openalex_author_id": "https://openalex.org/A5100616488",
+        "orcid": "https://orcid.org/0000-0001-5745-5530",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "State Key Laboratory Fluid Power and Mechatronic Systems",
+            "ror": "https://ror.org/01h0g5x34",
+            "country_code": "CN",
+            "type": "facility"
+          },
+          {
+            "name": "Zhejiang University",
+            "ror": "https://ror.org/00a2xv884",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "State Key Laboratory of Fluid Power and Mechatronic Systems School of Mechanical Engineering Zhejiang University Hangzhou Zhejiang China",
+          "Zhejiang Key Laboratory of Advanced Equipment Manufacturing and Measurement Technology School of Mechanical Engineering Zhejiang University Hangzhou Zhejiang China"
+        ]
+      },
+      {
+        "name": "Liuchao Jin",
+        "openalex_author_id": "https://openalex.org/A5074547553",
+        "orcid": "https://orcid.org/0000-0001-6204-1922",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Chinese University of Hong Kong",
+            "ror": "https://ror.org/00t33hh48",
+            "country_code": "HK",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical and Automation Engineering The Chinese University of Hong Kong Hong Kong China"
+        ]
+      },
+      {
+        "name": "Wei‐Hsin Liao",
+        "openalex_author_id": "https://openalex.org/A5027148333",
+        "orcid": "https://orcid.org/0000-0001-7221-5906",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Chinese University of Hong Kong",
+            "ror": "https://ror.org/00t33hh48",
+            "country_code": "HK",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical and Automation Engineering The Chinese University of Hong Kong Hong Kong China",
+          "Institute of Intelligent Design and Manufacturing The Chinese University of Hong Kong Hong Kong China"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Advanced Science",
     "doi": "10.1002/advs.78384",
@@ -21175,7 +21297,7 @@
     "issn_l": "",
     "publisher": "Wiley",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7223655659",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2737737698",
@@ -29849,14 +29971,7 @@
         "orcid": "https://orcid.org/0009-0004-6141-0545",
         "position": "first",
         "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "Indian Institute of Technology Palakkad",
-            "ror": "https://ror.org/0264cg909",
-            "country_code": "IN",
-            "type": "facility"
-          }
-        ],
+        "institutions": [],
         "raw_affiliation_strings": []
       }
     ],
@@ -39001,9 +39116,28 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Yousung Jung",
+        "openalex_author_id": "https://openalex.org/A5090795969",
+        "orcid": "https://orcid.org/0000-0003-2615-8394",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Seoul National University",
+            "ror": "https://ror.org/04h9pn542",
+            "country_code": "KR",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Seoul National University , , 1 Gwanak-ro, Gwanak-gu , ,"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Chemical Reviews",
     "doi": "10.1021/acs.chemrev.6c00154",
@@ -39023,7 +39157,7 @@
     "issn_l": "",
     "publisher": "American Chemical Society (ACS)",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7172433625",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S41143188",
@@ -45607,9 +45741,28 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Daniel Helmuth Meile",
+        "openalex_author_id": "https://openalex.org/A5042271851",
+        "orcid": "https://orcid.org/0009-0007-6677-4120",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Technical University of Denmark",
+            "ror": "https://ror.org/04qtj9h94",
+            "country_code": "DK",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Civil and Mechanical Engineering Technical University of Denmark Lyngby Denmark"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Advanced Science",
     "doi": "10.1002/advs.78364",
@@ -45629,7 +45782,7 @@
     "issn_l": "",
     "publisher": "Wiley",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7223560714",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2737737698",
@@ -51259,9 +51412,29 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Simon Laflamme",
+        "openalex_author_id": "https://openalex.org/A5009338916",
+        "orcid": "https://orcid.org/0000-0002-0601-9664",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Iowa State University",
+            "ror": "https://ror.org/04rswrd78",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Civil, Construction, and Environmental Engineering, Iowa State University, Ames, IA 50010, USA",
+          "Department of Electrical and Computer Engineering, Iowa State University, Ames, IA 50010, USA"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Sensors",
     "doi": "10.3390/s26103204",
@@ -51280,7 +51453,7 @@
     "issn_l": "",
     "publisher": "MDPI AG",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7161623227",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S101949793",
@@ -62714,9 +62887,34 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Guoyong Mao",
+        "openalex_author_id": "https://openalex.org/A5014117630",
+        "orcid": "https://orcid.org/0000-0002-7570-6206",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "State Key Laboratory Fluid Power and Mechatronic Systems",
+            "ror": "https://ror.org/01h0g5x34",
+            "country_code": "CN",
+            "type": "facility"
+          },
+          {
+            "name": "Zhejiang University",
+            "ror": "https://ror.org/00a2xv884",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "State Key Laboratory of Fluid Power and Mechatronic Systems, Key Laboratory of Soft Machines and Smart Devices of Zhejiang Province, Center for X-mechanics, Department of Engineering Mechanics, \rZhejiang University, Hangzhou 310027, People’s Republic of China"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Research",
     "doi": "10.34133/research.1174",
@@ -62735,7 +62933,7 @@
     "issn_l": "",
     "publisher": "American Association for the Advancement of Science (AAAS)",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7128038182",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S4210218516",
@@ -72509,9 +72707,29 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Linyu Xiang",
+        "openalex_author_id": "https://openalex.org/A5159239360",
+        "orcid": null,
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Central South University",
+            "ror": "https://ror.org/00f1zfq44",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Key Laboratory of Ministry of Education on Metallogenic Prediction of Nonferrous Metals and Geological Environment Monitoring, Central South University, Changsha, 410083, China",
+          "School of Geosciences and Info-Physics, Central South University, Changsha, 410083, China"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Diamond and Related Materials",
     "doi": "10.1016/j.diamond.2026.114310",
@@ -72530,7 +72748,7 @@
     "issn_l": "",
     "publisher": "Elsevier BV",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7223188719",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S124577123",
@@ -85901,9 +86119,65 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Michael  Arthur Cullinan",
+        "openalex_author_id": "https://openalex.org/A5052106224",
+        "orcid": "https://orcid.org/0000-0001-8256-7921",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "The University of Texas at Austin",
+            "ror": "https://ror.org/00hj54h04",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Walker Department of Mechanical Engineering, University of Texas at Austin, Austin, TX 78712, USA"
+        ]
+      },
+      {
+        "name": "Zachariah A. Page",
+        "openalex_author_id": "https://openalex.org/A5015417245",
+        "orcid": "https://orcid.org/0000-0002-1013-5422",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "The University of Texas at Austin",
+            "ror": "https://ror.org/00hj54h04",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Chemistry, University of Texas at Austin, Austin, TX 78712, USA",
+          "McKetta Department of Chemical Engineering, University of Texas at Austin, Austin, TX 78712, USA"
+        ]
+      },
+      {
+        "name": "Rajesh Menon",
+        "openalex_author_id": "https://openalex.org/A5017005305",
+        "orcid": "https://orcid.org/0000-0002-4777-376X",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Utah",
+            "ror": "https://ror.org/03r0ha626",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Electrical and Computer Engineering, University of Utah, Salt Lake City, UT 84112, USA"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Science Advances",
     "doi": "10.1126/sciadv.aec3536",
@@ -85922,7 +86196,7 @@
     "issn_l": "",
     "publisher": "American Association for the Advancement of Science (AAAS)",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7123734634",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2737427234",
@@ -88572,7 +88846,7 @@
     "last_updated": "2026-10-28",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-10-28",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 14.256403502995983,
@@ -89973,9 +90247,28 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Keun Park",
+        "openalex_author_id": "https://openalex.org/A5037541649",
+        "orcid": "https://orcid.org/0000-0003-3823-0672",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Seoul National University of Science and Technology",
+            "ror": "https://ror.org/00chfja07",
+            "country_code": "KR",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Design and Robot Engineering Seoul National University of Science and Technology  Seoul Republic of Korea"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Advanced Science",
     "doi": "10.1002/advs.77412",
@@ -89995,7 +90288,7 @@
     "issn_l": "",
     "publisher": "Wiley",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7204140450",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2737737698",
@@ -102622,7 +102915,7 @@
     "first_added": "2026-10-13",
     "last_updated": "2026-10-28",
     "is_weekly_new": false,
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "last_seen_in_crossref_run": "2026-10-28",
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
@@ -105049,9 +105342,66 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Jiajia Yang",
+        "openalex_author_id": "https://openalex.org/A5101869501",
+        "orcid": "https://orcid.org/0000-0002-6972-8708",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Tianjin University",
+            "ror": "https://ror.org/012tb2g32",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Materials Science and Engineering, Tianjin University, Tianjin 300350, P.R. China"
+        ]
+      },
+      {
+        "name": "Wei Feng",
+        "openalex_author_id": "https://openalex.org/A5159983908",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Tianjin University",
+            "ror": "https://ror.org/012tb2g32",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Binhai Industrial Research Institute, Tianjin University, Tianjin 300452, P.R. China",
+          "School of Materials Science and Engineering, Tianjin University, Tianjin 300350, P.R. China"
+        ]
+      },
+      {
+        "name": "Ling Wang",
+        "openalex_author_id": "https://openalex.org/A5069192349",
+        "orcid": "https://orcid.org/0000-0002-1655-0854",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Tianjin University",
+            "ror": "https://ror.org/012tb2g32",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Binhai Industrial Research Institute, Tianjin University, Tianjin 300452, P.R. China",
+          "School of Materials Science and Engineering, Tianjin University, Tianjin 300350, P.R. China"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "iScience",
     "doi": "10.1016/j.isci.2026.115746",
@@ -105070,7 +105420,7 @@
     "issn_l": "",
     "publisher": "Elsevier BV",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7154492567",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2898358376",
@@ -106914,9 +107264,9 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Cong Liu",
-        "openalex_author_id": "https://openalex.org/A5068812099",
-        "orcid": "https://orcid.org/0000-0002-2677-0180",
+        "name": "Hong Wang",
+        "openalex_author_id": null,
+        "orcid": "https://orcid.org/0000-0001-6799-1732",
         "position": "last",
         "is_corresponding": true,
         "institutions": [
@@ -113118,7 +113468,9 @@
         "position": "last",
         "is_corresponding": true,
         "institutions": [],
-        "raw_affiliation_strings": []
+        "raw_affiliation_strings": [
+          "ZXY Intelligent Precision -Advanced Manufacturing (ZIP-AM) Laboratory , Department of Mechanical Engineering and Materials Science , University of Pittsburgh , Pittsburgh , Pennsylvania , United States of America"
+        ]
       }
     ],
     "corresponding_author_available": true,
@@ -113670,9 +114022,28 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Cagri Ayranci",
+        "openalex_author_id": "https://openalex.org/A5039488581",
+        "orcid": "https://orcid.org/0000-0002-9638-4445",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Alberta",
+            "ror": "https://ror.org/0160cpw27",
+            "country_code": "CA",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "University of Alberta Department of Mechanical Engineering, , Alberta,"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Rapid Prototyping Journal",
     "doi": "10.1108/rpj-07-2025-0313",
@@ -113692,7 +114063,7 @@
     "issn_l": "",
     "publisher": "Emerald",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7124432678",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S173500210",
@@ -115458,9 +115829,9 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Eduard Farber",
-        "openalex_author_id": null,
-        "orcid": null,
+        "name": "Eduard Färber",
+        "openalex_author_id": "https://openalex.org/A5006666630",
+        "orcid": "https://orcid.org/0009-0007-8830-9887",
         "position": "first",
         "is_corresponding": true,
         "institutions": [
@@ -119095,9 +119466,29 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Aminul Islam",
+        "openalex_author_id": "https://openalex.org/A5101775050",
+        "orcid": "https://orcid.org/0000-0002-8275-6631",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Technical University of Denmark",
+            "ror": "https://ror.org/04qtj9h94",
+            "country_code": "DK",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Centre for Acoustic-Mechanical Microsystems (CAMM), Technical University of Denmark, 2800 Kgs. Lyngby, Denmark",
+          "Department of Civil and Mechanical Engineering, Technical University of Denmark, 2800 Kgs. Lyngby, Denmark"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Polymers",
     "doi": "10.3390/polym18101213",
@@ -119116,7 +119507,7 @@
     "issn_l": "",
     "publisher": "MDPI AG",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7161574611",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S123288148",
@@ -120412,9 +120803,71 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Qiping Xu",
+        "openalex_author_id": "https://openalex.org/A5077404501",
+        "orcid": "https://orcid.org/0000-0003-3569-4068",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Zhejiang Normal University",
+            "ror": "https://ror.org/01vevwk45",
+            "country_code": "CN",
+            "type": "education"
+          },
+          {
+            "name": "National University of Singapore",
+            "ror": "https://ror.org/01tgyzw49",
+            "country_code": "SG",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering College of Design and Engineering 9 Engineering Drive 1 National University of Singapore Singapore Singapore",
+          "Key Laboratory of Urban Rail Transit Intelligent Operation and Maintenance Technology and Equipment of Zhejiang Province Department of Robotics Engineering College of Engineering Zhejiang Normal University Jinhua P. R. China"
+        ]
+      },
+      {
+        "name": "Chee–Meng Chew",
+        "openalex_author_id": "https://openalex.org/A5073468340",
+        "orcid": "https://orcid.org/0000-0002-6396-4371",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "National University of Singapore",
+            "ror": "https://ror.org/01tgyzw49",
+            "country_code": "SG",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering College of Design and Engineering 9 Engineering Drive 1 National University of Singapore Singapore Singapore"
+        ]
+      },
+      {
+        "name": "E Shiju",
+        "openalex_author_id": "https://openalex.org/A5012644867",
+        "orcid": "https://orcid.org/0009-0009-8948-4171",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Zhejiang Normal University",
+            "ror": "https://ror.org/01vevwk45",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Key Laboratory of Urban Rail Transit Intelligent Operation and Maintenance Technology and Equipment of Zhejiang Province Department of Robotics Engineering College of Engineering Zhejiang Normal University Jinhua P. R. China"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Advanced Science",
     "doi": "10.1002/advs.76403",
@@ -120434,7 +120887,7 @@
     "issn_l": "",
     "publisher": "Wiley",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7167265560",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2737737698",
@@ -121348,9 +121801,28 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Basar Ozkan",
+        "openalex_author_id": "https://openalex.org/A5061479697",
+        "orcid": "https://orcid.org/0000-0003-0283-6322",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Loughborough University",
+            "ror": "https://ror.org/04vg4w365",
+            "country_code": "GB",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Materials, Loughborough University, Loughborough, Leicestershire LE11 3TU, United Kingdom"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Materials & Design",
     "doi": "10.1016/j.matdes.2026.117043",
@@ -121369,7 +121841,7 @@
     "issn_l": "",
     "publisher": "Elsevier BV",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7213293108",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S8792693",
@@ -121795,9 +122267,29 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Abdol Hamid Akbarzadeh",
+        "openalex_author_id": "https://openalex.org/A5110086130",
+        "orcid": "https://orcid.org/0000-0003-0097-0341",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "McGill University",
+            "ror": "https://ror.org/01pxwe438",
+            "country_code": "CA",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Bioresource Engineering McGill University  Montreal Quebec Canada",
+          "Department of Mechanical Engineering McGill University  Montreal Quebec Canada"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Advanced Science",
     "doi": "10.1002/advs.77984",
@@ -121817,7 +122309,7 @@
     "issn_l": "",
     "publisher": "Wiley",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7214545129",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2737737698",
@@ -124248,9 +124740,46 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Dotan Ilssar",
+        "openalex_author_id": "https://openalex.org/A5047332933",
+        "orcid": "https://orcid.org/0000-0003-4343-7491",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "ETH Zurich",
+            "ror": "https://ror.org/05a28rw58",
+            "country_code": "CH",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical and Process Engineering, ETH Zurich, Zurich 8092, Switzerland"
+        ]
+      },
+      {
+        "name": "Dennis M. Kochmann",
+        "openalex_author_id": "https://openalex.org/A5083881460",
+        "orcid": "https://orcid.org/0000-0002-9112-6615",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "ETH Zurich",
+            "ror": "https://ror.org/05a28rw58",
+            "country_code": "CH",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical and Process Engineering, ETH Zurich, Zurich 8092, Switzerland"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Science Advances",
     "doi": "10.1126/sciadv.aeg3937",
@@ -124269,7 +124798,7 @@
     "issn_l": "",
     "publisher": "American Association for the Advancement of Science (AAAS)",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7128788549",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2737427234",
@@ -125939,9 +126468,35 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Hassan Nosrati",
+        "openalex_author_id": "https://openalex.org/A5044419797",
+        "orcid": "https://orcid.org/0000-0003-1509-9819",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Tarbiat Modares University",
+            "ror": "https://ror.org/03mwgfy56",
+            "country_code": "IR",
+            "type": "education"
+          },
+          {
+            "name": "Aarhus University",
+            "ror": "https://ror.org/01aj84f44",
+            "country_code": "DK",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Clinical Medicine, Aarhus University, Aarhus, Denmark",
+          "Department of Materials Engineering, Tarbiat Modares University, Tehran, Iran"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Materials & Design",
     "doi": "10.1016/j.matdes.2026.116885",
@@ -125960,7 +126515,7 @@
     "issn_l": "",
     "publisher": "Elsevier BV",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7204183253",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S8792693",
@@ -130105,9 +130660,9 @@
         ]
       },
       {
-        "name": "Ezinne Oguguo",
-        "openalex_author_id": "https://openalex.org/A5123496675",
-        "orcid": "https://orcid.org/0009-0001-4254-3615",
+        "name": "Erin Lavik",
+        "openalex_author_id": "https://openalex.org/A5079335476",
+        "orcid": "https://orcid.org/0000-0002-0644-744X",
         "position": "last",
         "is_corresponding": true,
         "institutions": [
@@ -131396,10 +131951,10 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-08-19",
-    "last_updated": "2026-10-23",
+    "last_updated": "2026-10-28",
     "is_weekly_new": false,
-    "not_seen_in_latest_crossref_run": true,
-    "last_seen_in_crossref_run": "2026-10-23",
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-10-28",
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 3.830161054172767,
@@ -135697,9 +136252,55 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Hui Li",
+        "openalex_author_id": "https://openalex.org/A5065859286",
+        "orcid": "https://orcid.org/0000-0001-9198-3951",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Northwestern Polytechnical University",
+            "ror": "https://ror.org/01y0j0j86",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Shaanxi Key Laboratory of Fiber Reinforced Light Composite Materials, School of Materials Science and Engineering, Northwestern Polytechnical University, Xi’an 710072, China"
+        ]
+      },
+      {
+        "name": "Jian Lü",
+        "openalex_author_id": "https://openalex.org/A5100341536",
+        "orcid": "https://orcid.org/0000-0001-5362-0316",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "City University of Hong Kong",
+            "ror": "https://ror.org/03q8dnn23",
+            "country_code": "HK",
+            "type": "education"
+          },
+          {
+            "name": "City University of Hong Kong, Shenzhen Research Institute",
+            "ror": "https://ror.org/00xc0ma20",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "City University of Hong Kong Matter Science Research Institute (Futian), Shenzhen 518045, China",
+          "Department of Mechanical Engineering, City University of Hong Kong, Tat Chee Avenue, Kowloon, Hong Kong 999077, China",
+          "Guangdong-Hong Kong Joint Laboratory of Modern Surface Engineering Technology, City University of Hong Kong, Hong Kong 999077, China",
+          "Hong Kong Branch of National Precious Metals Material Engineering Research Centre, City University of Hong Kong, Hong Kong 999077, China"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Science Advances",
     "doi": "10.1126/sciadv.aed0172",
@@ -135718,7 +136319,7 @@
     "issn_l": "",
     "publisher": "American Association for the Advancement of Science (AAAS)",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7161020121",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2737427234",
@@ -141119,9 +141720,34 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Bikram Jyoti Sahariah",
+        "openalex_author_id": null,
+        "orcid": null,
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Indian Institute of Technology Guwahati",
+            "ror": "https://ror.org/0022nd079",
+            "country_code": "IN",
+            "type": "education"
+          },
+          {
+            "name": "Jorhat Institute of Science and Technology",
+            "ror": "https://ror.org/053v3sh50",
+            "country_code": "IN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Indian Institute of Technology Guwahati Technology Innovation Hub (TIH), Technology Innovation and Development Foundation (TIDF), , Guwahati, , and Department of Mechanical Engineering, Jorhat Institute of Science and Technology, Jorhat, India"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Rapid Prototyping Journal",
     "doi": "10.1108/rpj-04-2025-0155",
@@ -141141,7 +141767,7 @@
     "issn_l": "",
     "publisher": "Emerald",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7114789745",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S173500210",
@@ -144085,9 +144711,80 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Yanlin Song",
+        "openalex_author_id": "https://openalex.org/A5109553608",
+        "orcid": "https://orcid.org/0000-0002-0267-3917",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Chinese Academy of Sciences",
+            "ror": "https://ror.org/034t30j35",
+            "country_code": "CN",
+            "type": "government"
+          },
+          {
+            "name": "Technical Institute of Physics and Chemistry",
+            "ror": "https://ror.org/04akaak77",
+            "country_code": "CN",
+            "type": "facility"
+          },
+          {
+            "name": "Institute of Chemistry",
+            "ror": "https://ror.org/048y1rc66",
+            "country_code": "CN",
+            "type": "facility"
+          },
+          {
+            "name": "University of Chinese Academy of Sciences",
+            "ror": "https://ror.org/05qbk4x57",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Key Laboratory of Green Printing, Institute of Chemistry, \rChinese Academy of Sciences, Beijing 100190, P. R. China",
+          "University of Chinese Academy of Sciences",
+          "Technical Institute of Physics and Chemistry Chinese Academy of Sciences: Technical Institute of Physics and Chemistry"
+        ]
+      },
+      {
+        "name": "Lei Wu",
+        "openalex_author_id": "https://openalex.org/A5101511799",
+        "orcid": "https://orcid.org/0000-0002-2600-6342",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Chinese Academy of Sciences",
+            "ror": "https://ror.org/034t30j35",
+            "country_code": "CN",
+            "type": "government"
+          },
+          {
+            "name": "Institute of Chemistry",
+            "ror": "https://ror.org/048y1rc66",
+            "country_code": "CN",
+            "type": "facility"
+          },
+          {
+            "name": "University of Chinese Academy of Sciences",
+            "ror": "https://ror.org/05qbk4x57",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Key Laboratory of Green Printing, Institute of Chemistry, \rChinese Academy of Sciences, Beijing 100190, P. R. China",
+          "University of Chinese Academy of Sciences",
+          "Institute of Chemistry Chinese Academy of Sciences"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2025,
     "venue": "Research",
     "doi": "10.34133/research.0889",
@@ -144106,7 +144803,7 @@
     "issn_l": "",
     "publisher": "American Association for the Advancement of Science (AAAS)",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4413336703",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S4210218516",
@@ -154900,9 +155597,28 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Li Yi",
+        "openalex_author_id": "https://openalex.org/A5100742308",
+        "orcid": "https://orcid.org/0000-0002-4041-3921",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Beihang University",
+            "ror": "https://ror.org/00wk2mp56",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Digital Twin International Research Center of International Institute for Interdisciplinary and Frontiers, Beihang University, Beijing, China"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2025,
     "venue": "Digital Twin",
     "doi": "10.12688/digitaltwin.17931.2",
@@ -154921,7 +155637,7 @@
     "issn_l": "",
     "publisher": "Informa UK Limited",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4408277532",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S4210238617",
@@ -169129,24 +169845,6 @@
       },
       {
         "name": "Zhangdong Chen",
-        "openalex_author_id": null,
-        "orcid": null,
-        "position": "middle",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "South China University of Technology",
-            "ror": "https://ror.org/0530pts50",
-            "country_code": "CN",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Shien-Ming Wu School of Intelligent Engineering, South China University of Technology, Guangzhou, China"
-        ]
-      },
-      {
-        "name": "Zhangdong Chen",
         "openalex_author_id": "https://openalex.org/A5070746638",
         "orcid": "https://orcid.org/0000-0002-9223-9371",
         "position": "middle",
@@ -169164,9 +169862,27 @@
         ]
       },
       {
+        "name": "Xiaoqi Chen",
+        "openalex_author_id": "https://openalex.org/A5100704656",
+        "orcid": "https://orcid.org/0000-0003-3227-4607",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "South China University of Technology",
+            "ror": "https://ror.org/0530pts50",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Shien-Ming Wu School of Intelligent Engineering, South China University of Technology, Guangzhou, China"
+        ]
+      },
+      {
         "name": "Yingjie Zhang",
-        "openalex_author_id": null,
-        "orcid": null,
+        "openalex_author_id": "https://openalex.org/A5089761223",
+        "orcid": "https://orcid.org/0000-0002-4170-6152",
         "position": "last",
         "is_corresponding": true,
         "institutions": [
@@ -174759,9 +175475,28 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Miguel Ângelo Vieira",
+        "openalex_author_id": "https://openalex.org/A5108994779",
+        "orcid": null,
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Aveiro",
+            "ror": "https://ror.org/00nt41z93",
+            "country_code": "PT",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Communication and Art, Research Institute for Design, Media and Culture, University of Aveiro, Aveiro, Portugal and Department of Mechanical Engineering, TEMA – Centre for Mechanical Technology and Automation, University of Aveiro, Aveiro, Portugal"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2025,
     "venue": "Rapid Prototyping Journal",
     "doi": "10.1108/rpj-02-2024-0084",
@@ -174781,7 +175516,7 @@
     "issn_l": "",
     "publisher": "Emerald",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4403046998",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S173500210",
@@ -175150,9 +175885,9 @@
         ]
       },
       {
-        "name": "Fanbo Meng",
-        "openalex_author_id": null,
-        "orcid": null,
+        "name": "F. Meng",
+        "openalex_author_id": "https://openalex.org/A5107951803",
+        "orcid": "https://orcid.org/0000-0003-0443-5071",
         "position": "last",
         "is_corresponding": true,
         "institutions": [
@@ -188178,9 +188913,28 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Haoqin Yang",
+        "openalex_author_id": "https://openalex.org/A5087313512",
+        "orcid": "https://orcid.org/0009-0000-2295-8058",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Nanjing University of Aeronautics and Astronautics",
+            "ror": "https://ror.org/01scyh794",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "College of Material Science and Technology, Nanjing University of Aeronautics and Astronautics, Nanjing, China and State Key Laboratory of Structural Mechanics and Control for Aeronautics and Astronautics, Nanjing, China"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2025,
     "venue": "Rapid Prototyping Journal",
     "doi": "10.1108/rpj-05-2024-0205",
@@ -188200,7 +188954,7 @@
     "issn_l": "",
     "publisher": "Emerald",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4404484105",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S173500210",
@@ -196826,7 +197580,7 @@
     "corresponding_authors": [
       {
         "name": "István Ember",
-        "openalex_author_id": null,
+        "openalex_author_id": "https://openalex.org/A5088358470",
         "orcid": "https://orcid.org/0000-0002-9877-0366",
         "position": "first",
         "is_corresponding": true,
@@ -205302,7 +206056,7 @@
       },
       {
         "name": "Rujie He",
-        "openalex_author_id": null,
+        "openalex_author_id": "https://openalex.org/A5100725537",
         "orcid": "https://orcid.org/0000-0003-2498-2363",
         "position": "last",
         "is_corresponding": true,
@@ -206705,9 +207459,9 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Shlomo Magdassi",
-        "openalex_author_id": "https://openalex.org/A5001377522",
-        "orcid": "https://orcid.org/0000-0002-6794-0553",
+        "name": "Jin He",
+        "openalex_author_id": "https://openalex.org/A5061554742",
+        "orcid": "https://orcid.org/0000-0002-9570-5921",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -206736,9 +207490,9 @@
         ]
       },
       {
-        "name": "Jin He",
-        "openalex_author_id": "https://openalex.org/A5061554742",
-        "orcid": "https://orcid.org/0000-0002-9570-5921",
+        "name": "Xiaofeng Wang",
+        "openalex_author_id": null,
+        "orcid": "https://orcid.org/0000-0002-9913-1064",
         "position": "last",
         "is_corresponding": true,
         "institutions": [
@@ -232714,9 +233468,28 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Hardik D. Sondagar",
+        "openalex_author_id": "https://openalex.org/A5075431976",
+        "orcid": "https://orcid.org/0009-0004-6018-4945",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Sardar Vallabhbhai National Institute of Technology Surat",
+            "ror": "https://ror.org/02y394t43",
+            "country_code": "IN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering, Sardar Vallabhbhai National Institute of Technology, Surat, India"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2025,
     "venue": "Rapid Prototyping Journal",
     "doi": "10.1108/rpj-05-2024-0219",
@@ -232736,7 +233509,7 @@
     "issn_l": "",
     "publisher": "Emerald",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4403845081",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S173500210",
@@ -233040,9 +233813,28 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Subham Banerjee",
+        "openalex_author_id": "https://openalex.org/A5057480339",
+        "orcid": "https://orcid.org/0000-0002-2984-1159",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "National Institute of Pharmaceutical Education and Research",
+            "ror": "https://ror.org/04p9b6182",
+            "country_code": "IN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Pharmaceutics, NIPER Guwahati, Guwahati, India"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2025,
     "venue": "Rapid Prototyping Journal",
     "doi": "10.1108/rpj-07-2024-0295",
@@ -233062,7 +233854,7 @@
     "issn_l": "",
     "publisher": "Emerald",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4407423910",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S173500210",
@@ -237250,9 +238042,28 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Gabriel Seymour",
+        "openalex_author_id": "https://openalex.org/A5087624541",
+        "orcid": null,
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Colorado Boulder",
+            "ror": "https://ror.org/02ttsq026",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Electrical, Computer, and Energy Engineering, University of Colorado Boulder, Boulder, CO 80309, USA"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2025,
     "venue": "Optics Express",
     "doi": "10.1364/oe.540200",
@@ -237271,7 +238082,7 @@
     "issn_l": "",
     "publisher": "Optica Publishing Group",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4406431766",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S178776955",
@@ -237575,9 +238386,9 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Jing Ting Luo",
-        "openalex_author_id": "https://openalex.org/A5101466745",
-        "orcid": "https://orcid.org/0000-0001-5299-3997",
+        "name": "Ling Wang",
+        "openalex_author_id": null,
+        "orcid": "https://orcid.org/0000-0001-5897-8122",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
@@ -237602,8 +238413,8 @@
       },
       {
         "name": "Dichen Li",
-        "openalex_author_id": null,
-        "orcid": null,
+        "openalex_author_id": "https://openalex.org/A5103057773",
+        "orcid": "https://orcid.org/0000-0002-6459-4878",
         "position": "last",
         "is_corresponding": true,
         "institutions": [
@@ -239890,9 +240701,9 @@
         ]
       },
       {
-        "name": "Bo Du",
-        "openalex_author_id": "https://openalex.org/A5091153647",
-        "orcid": "https://orcid.org/0000-0002-3316-9692",
+        "name": "Rui Wang",
+        "openalex_author_id": "https://openalex.org/A5100619422",
+        "orcid": "https://orcid.org/0000-0001-5958-2234",
         "position": "last",
         "is_corresponding": true,
         "institutions": [
@@ -250033,9 +250844,28 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Abbas Zolfaghari",
+        "openalex_author_id": "https://openalex.org/A5035791827",
+        "orcid": "https://orcid.org/0000-0002-7168-2083",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Babol Noshirvani University of Technology",
+            "ror": "https://ror.org/02zc85170",
+            "country_code": "IR",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering, Babol Noshirvani University of Technology, Babol, Iran"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2025,
     "venue": "Rapid Prototyping Journal",
     "doi": "10.1108/rpj-06-2024-0238",
@@ -250055,7 +250885,7 @@
     "issn_l": "",
     "publisher": "Emerald",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4405952859",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S173500210",
@@ -262965,9 +263795,101 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Liang Ding",
+        "openalex_author_id": "https://openalex.org/A5012020883",
+        "orcid": "https://orcid.org/0000-0002-8351-5178",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Harbin Institute of Technology",
+            "ror": "https://ror.org/01yqg2h08",
+            "country_code": "CN",
+            "type": "education"
+          },
+          {
+            "name": "State Key Laboratory of Robotics and Systems",
+            "ror": "https://ror.org/015m77g16",
+            "country_code": "CN",
+            "type": "facility"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "State Key Laboratory of Robotics and System, Harbin Institute of Technology, Harbin, 150080, China. liangding@hit.edu.cn"
+        ]
+      },
+      {
+        "name": "Haibo Gao",
+        "openalex_author_id": "https://openalex.org/A5033616367",
+        "orcid": "https://orcid.org/0000-0002-6501-656X",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Harbin Institute of Technology",
+            "ror": "https://ror.org/01yqg2h08",
+            "country_code": "CN",
+            "type": "education"
+          },
+          {
+            "name": "State Key Laboratory of Robotics and Systems",
+            "ror": "https://ror.org/015m77g16",
+            "country_code": "CN",
+            "type": "facility"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "State Key Laboratory of Robotics and System, Harbin Institute of Technology, Harbin, 150080, China. gaohaibo@hit.edu.cn"
+        ]
+      },
+      {
+        "name": "Jian Li",
+        "openalex_author_id": "https://openalex.org/A5000637556",
+        "orcid": "https://orcid.org/0000-0003-1720-9727",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Beijing Aerospace Flight Control Center",
+            "ror": "https://ror.org/007a14354",
+            "country_code": "CN",
+            "type": "other"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Beijing Aerospace Control Center, Beijing, 100094, China. lisirjian@163.com"
+        ]
+      },
+      {
+        "name": "Jianzhong Liu",
+        "openalex_author_id": "https://openalex.org/A5100693295",
+        "orcid": "https://orcid.org/0000-0002-8324-3782",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Chinese Academy of Sciences",
+            "ror": "https://ror.org/034t30j35",
+            "country_code": "CN",
+            "type": "government"
+          },
+          {
+            "name": "Institute of Geochemistry",
+            "ror": "https://ror.org/049d6bh38",
+            "country_code": "CN",
+            "type": "facility"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "CAS Center for Excellence in Comparative Planetology, Hefei, 230026, China. liujianzhong@vip.gyig.ac.cn",
+          "Center for Lunar and Planetary Sciences, Institute of Geochemistry, Chinese Academy of Science, Guiyang, 550081, China. liujianzhong@vip.gyig.ac.cn"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2024,
     "venue": "Nature Communications",
     "doi": "10.1038/s41467-024-46233-8",
@@ -262986,7 +263908,7 @@
     "issn_l": "",
     "publisher": "Springer Science and Business Media LLC",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4392597526",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S64187185",
@@ -267080,9 +268002,40 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Asad Waqar Malik",
+        "openalex_author_id": "https://openalex.org/A5067899667",
+        "orcid": "https://orcid.org/0000-0003-3804-997X",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Missouri University of Science and Technology",
+            "ror": "https://ror.org/00scwqd12",
+            "country_code": "US",
+            "type": "education"
+          },
+          {
+            "name": "Intelligent Systems Center",
+            "ror": "https://ror.org/04wg2aj17",
+            "country_code": "US",
+            "type": "facility"
+          },
+          {
+            "name": "National University of Sciences and Technology",
+            "ror": "https://ror.org/03w2j5y17",
+            "country_code": "PK",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Intelligent Systems Center, Missouri University of Science and Technology, Rolla, Missouri, USA and Department of Computing, National University of Sciences and Technology, Islamabad, Pakistan"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2024,
     "venue": "Rapid Prototyping Journal",
     "doi": "10.1108/rpj-02-2024-0091",
@@ -267102,7 +268055,7 @@
     "issn_l": "",
     "publisher": "Emerald",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4401584909",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S173500210",
@@ -269097,9 +270050,35 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Guillaume Pronost",
+        "openalex_author_id": "https://openalex.org/A5071139514",
+        "orcid": "https://orcid.org/0000-0002-0642-1709",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Équipe de Recherche sur les Processus Innovatifs",
+            "ror": "https://ror.org/01hntn815",
+            "country_code": "FR",
+            "type": "facility"
+          },
+          {
+            "name": "Université de Lorraine",
+            "ror": "https://ror.org/04vfs2w97",
+            "country_code": "FR",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Université de Lorraine, ERPI",
+          "ERPI - Equipe de Recherche sur les Processus Innovatifs (Université de Lorraine - ENSGSI, 8, rue Bastien Lepage, BP 90647, 54010, Nancy Cedex - France)"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2024,
     "venue": "Digital Twin",
     "doi": "10.12688/digitaltwin.17807.2",
@@ -269118,7 +270097,7 @@
     "issn_l": "",
     "publisher": "Informa UK Limited",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4392596511",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S4210238617",
@@ -280115,9 +281094,28 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Amir Hossein Behravesh",
+        "openalex_author_id": "https://openalex.org/A5009033158",
+        "orcid": "https://orcid.org/0000-0003-3089-5709",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Tarbiat Modares University",
+            "ror": "https://ror.org/03mwgfy56",
+            "country_code": "IR",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering, Tarbiat Modares University, Tehran, Iran"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2024,
     "venue": "Rapid Prototyping Journal",
     "doi": "10.1108/rpj-02-2024-0085",
@@ -280137,7 +281135,7 @@
     "issn_l": "",
     "publisher": "Emerald",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4401915934",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S173500210",
@@ -300572,9 +301570,9 @@
         ]
       },
       {
-        "name": "Gong Wang",
-        "openalex_author_id": "https://openalex.org/A5100650790",
-        "orcid": "https://orcid.org/0000-0003-1670-9084",
+        "name": "Fei Chen",
+        "openalex_author_id": "https://openalex.org/A5100727322",
+        "orcid": "https://orcid.org/0000-0001-9643-7191",
         "position": "last",
         "is_corresponding": true,
         "institutions": [
@@ -305361,9 +306359,28 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Saliq Shamim Shah",
+        "openalex_author_id": "https://openalex.org/A5041597564",
+        "orcid": "https://orcid.org/0000-0003-1423-8266",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Thapar Institute of Engineering & Technology",
+            "ror": "https://ror.org/00wdq3744",
+            "country_code": "IN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Mechanical Engineering Department, Thapar Institute of Engineering and Technology, Patiala, India"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2024,
     "venue": "Rapid Prototyping Journal",
     "doi": "10.1108/rpj-08-2023-0304",
@@ -305383,7 +306400,7 @@
     "issn_l": "",
     "publisher": "Emerald",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4391820088",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S173500210",
@@ -314738,9 +315755,28 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Dan Luo",
+        "openalex_author_id": "https://openalex.org/A5034032841",
+        "orcid": "https://orcid.org/0000-0003-1760-0451",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "The University of Queensland",
+            "ror": "https://ror.org/00rqy9422",
+            "country_code": "AU",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Achitecture, Design and Planning, School of Civil Engineering, Faculty of Engineering, Architecture and Information Technology, The University of Queensland, Saint Lucia, Australia"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2024,
     "venue": "Rapid Prototyping Journal",
     "doi": "10.1108/rpj-01-2024-0020",
@@ -314760,7 +315796,7 @@
     "issn_l": "",
     "publisher": "Emerald",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4402414290",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S173500210",
@@ -345105,9 +346141,9 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Dichen Li",
-        "openalex_author_id": "https://openalex.org/A5055879264",
-        "orcid": "https://orcid.org/0000-0001-6013-5255",
+        "name": "Ling Wang",
+        "openalex_author_id": "https://openalex.org/A5115592675",
+        "orcid": "https://orcid.org/0000-0002-5176-7469",
         "position": "last",
         "is_corresponding": true,
         "institutions": [
