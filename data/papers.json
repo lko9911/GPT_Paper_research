@@ -8745,8 +8745,17 @@
         "orcid": "https://orcid.org/0000-0003-1001-3422",
         "position": "first",
         "is_corresponding": true,
-        "institutions": [],
-        "raw_affiliation_strings": []
+        "institutions": [
+          {
+            "name": "Saveetha University",
+            "ror": "https://ror.org/0034me914",
+            "country_code": "IN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Research and Innovation, Saveetha School of Engineering, SIMATS, Chennai 602105, Tamil Nadu, India"
+        ]
       }
     ],
     "corresponding_author_available": true,
@@ -74263,9 +74272,28 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Christian Maximilian Hechtl",
+        "openalex_author_id": "https://openalex.org/A5024181578",
+        "orcid": "https://orcid.org/0000-0003-3119-850X",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Technical University of Munich",
+            "ror": "https://ror.org/02kkvpp62",
+            "country_code": "DE",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "TUM School of Engineering and Design, Centre for Building Materials (cbm), Technical University of Munich, Franz-Langinger-Straße 10, Munich, Bavaria, 81245, Germany"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Additive Manufacturing Letters",
     "doi": "10.1016/j.addlet.2025.100353",
@@ -74284,7 +74312,7 @@
     "issn_l": "",
     "publisher": "Elsevier BV",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7117753210",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S4210237284",
@@ -79751,9 +79779,28 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Ghaith Algharbi",
+        "openalex_author_id": "https://openalex.org/A5160013738",
+        "orcid": null,
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Diyala",
+            "ror": "https://ror.org/01eb5yv70",
+            "country_code": "IQ",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "College of Engineering, University of Diyala"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Journal of Science and Engineering Applications",
     "doi": "10.66262/btxf2t17",
@@ -79772,8 +79819,8 @@
     "issn_l": "",
     "publisher": "Islamic University of Najaf",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7224091107",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S7407055581",
     "venue_metrics": {
@@ -83527,7 +83574,7 @@
     "publisher": "Elsevier BV",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7224085971",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S5407037061",
     "venue_metrics": {
@@ -104172,28 +104219,9 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [
-      {
-        "name": "Feng Chen",
-        "openalex_author_id": "https://openalex.org/A5133240082",
-        "orcid": null,
-        "position": "last",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "Hunan University",
-            "ror": "https://ror.org/05htk5m33",
-            "country_code": "CN",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "National Engineering Research Centre for High Efficiency Grinding,  HNU College of Mechanical and Vehicle Engineering, Hunan University, Changsha, 410082, People’s Republic of China"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
     "year": 2026,
     "venue": "Advances in Manufacturing",
     "doi": "10.1007/s40436-026-00599-8",
@@ -104213,8 +104241,8 @@
     "issn_l": "",
     "publisher": "Springer Science and Business Media LLC",
     "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W7152415560",
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2764686670",
     "venue_metrics": {
@@ -113837,7 +113865,14 @@
         "orcid": "https://orcid.org/0000-0002-6092-1130",
         "position": "last",
         "is_corresponding": true,
-        "institutions": [],
+        "institutions": [
+          {
+            "name": "University of Pittsburgh",
+            "ror": "https://ror.org/01an3r305",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
         "raw_affiliation_strings": [
           "ZXY Intelligent Precision -Advanced Manufacturing (ZIP-AM) Laboratory , Department of Mechanical Engineering and Materials Science , University of Pittsburgh , Pittsburgh , Pennsylvania , United States of America"
         ]
@@ -114034,29 +114069,9 @@
         ]
       }
     ],
-    "corresponding_authors": [
-      {
-        "name": "Im Doo Jung",
-        "openalex_author_id": "https://openalex.org/A5126070018",
-        "orcid": "https://orcid.org/0000-0003-0883-1848",
-        "position": "last",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "Ulsan National Institute of Science and Technology",
-            "ror": "https://ror.org/017cjz748",
-            "country_code": "KR",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Artificial Intelligence Graduate School Ulsan National Institute of Science and Technology (UNIST)  Ulsan Republic of Korea",
-          "Department of Mechanical Engineering Ulsan National Institute of Science and Technology (UNIST)  Ulsan Republic of Korea"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
     "year": 2026,
     "venue": "Advanced Functional Materials",
     "doi": "10.1002/adfm.202531982",
@@ -114076,8 +114091,8 @@
     "issn_l": "",
     "publisher": "Wiley",
     "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W7139972603",
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S135204980",
     "venue_metrics": {
@@ -115238,7 +115253,7 @@
       {
         "name": "Charbel Tawk",
         "openalex_author_id": "https://openalex.org/A5135442068",
-        "orcid": null,
+        "orcid": "https://orcid.org/0000-0002-2917-5985",
         "position": "first",
         "is_corresponding": true,
         "institutions": [
@@ -136030,9 +136045,46 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Davood Rahmatabadi",
+        "openalex_author_id": "https://openalex.org/A5084332266",
+        "orcid": "https://orcid.org/0000-0002-6898-3061",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Tehran",
+            "ror": "https://ror.org/05vf56z40",
+            "country_code": "IR",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "University of Tehran"
+        ]
+      },
+      {
+        "name": "مصطفی باغانی",
+        "openalex_author_id": "https://openalex.org/A5040485694",
+        "orcid": null,
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Tehran",
+            "ror": "https://ror.org/05vf56z40",
+            "country_code": "IR",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "University of Tehran"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Virtual and Physical Prototyping",
     "doi": "10.1080/17452759.2026.2752620",
@@ -136052,8 +136104,8 @@
     "issn_l": "",
     "publisher": "Informa UK Limited",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7224079267",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S152936027",
     "venue_metrics": {
@@ -194831,9 +194883,28 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Nihal Yumak",
+        "openalex_author_id": "https://openalex.org/A5027266267",
+        "orcid": "https://orcid.org/0000-0003-4492-7142",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Afyon Kocatepe University",
+            "ror": "https://ror.org/03a1crh56",
+            "country_code": "TR",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "afyon kocatepe üniversitesi"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2025,
     "venue": "Hittite Journal of Science and Engineering",
     "doi": "10.17350/hjse19030000360",
@@ -194852,7 +194923,7 @@
     "issn_l": "",
     "publisher": "Hitit University",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4414683567",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S4210214157",
@@ -270528,7 +270599,7 @@
     "last_updated": "2026-10-29",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-10-29",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 3",
     "openalex_venue_rank_number": 3,
     "openalex_venue_rank_score": 2.0,
@@ -278044,6 +278115,12 @@
           {
             "name": "Western University",
             "ror": "https://ror.org/02grkyz14",
+            "country_code": "CA",
+            "type": "education"
+          },
+          {
+            "name": "Ivey Business School",
+            "ror": "https://ror.org/05esnc164",
             "country_code": "CA",
             "type": "education"
           }
