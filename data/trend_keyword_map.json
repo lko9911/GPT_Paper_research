@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T15:33:28+00:00",
+  "updated_at": "2026-10-30T00:29:25+00:00",
   "source": "derived from titles, tags, AI Q5 summaries, relevance notes, and public metadata; abstract text is not published",
   "recent_basis": "publication year 2026, plus records explicitly marked weekly-new",
   "node_count": 30,
@@ -9,9 +9,9 @@
       "id": "multi-material-am",
       "label": "Multi-material AM",
       "group": "AM",
-      "count": 1204,
-      "recent_count": 474,
-      "trend_score": 0.9934,
+      "count": 1205,
+      "recent_count": 475,
+      "trend_score": 0.9932,
       "x": 310.0,
       "y": 148.0,
       "radius": 22.8
@@ -20,9 +20,9 @@
       "id": "additive-manufacturing",
       "label": "Additive Manufacturing",
       "group": "AM",
-      "count": 1231,
-      "recent_count": 450,
-      "trend_score": 0.9646,
+      "count": 1233,
+      "recent_count": 452,
+      "trend_score": 0.9661,
       "x": 369.8,
       "y": 170.5,
       "radius": 23.0
@@ -31,9 +31,9 @@
       "id": "functionally-graded-am",
       "label": "Functionally Graded AM",
       "group": "AM",
-      "count": 664,
-      "recent_count": 214,
-      "trend_score": 0.4779,
+      "count": 665,
+      "recent_count": 215,
+      "trend_score": 0.4786,
       "x": 359.4,
       "y": 233.5,
       "radius": 18.8
@@ -42,9 +42,9 @@
       "id": "machine-learning",
       "label": "Machine Learning",
       "group": "AI",
-      "count": 379,
-      "recent_count": 182,
-      "trend_score": 0.3611,
+      "count": 380,
+      "recent_count": 183,
+      "trend_score": 0.3621,
       "x": 620.0,
       "y": 68.0,
       "radius": 15.9
@@ -55,7 +55,7 @@
       "group": "AI",
       "count": 387,
       "recent_count": 177,
-      "trend_score": 0.3557,
+      "trend_score": 0.355,
       "x": 684.0,
       "y": 120.0,
       "radius": 16.0
@@ -64,9 +64,9 @@
       "id": "process-optimization",
       "label": "Process Optimization",
       "group": "Automation",
-      "count": 312,
-      "recent_count": 123,
-      "trend_score": 0.2577,
+      "count": 313,
+      "recent_count": 124,
+      "trend_score": 0.2589,
       "x": 525.0,
       "y": 158.0,
       "radius": 15.1
@@ -77,7 +77,7 @@
       "group": "4D",
       "count": 276,
       "recent_count": 102,
-      "trend_score": 0.2179,
+      "trend_score": 0.2175,
       "x": 285.0,
       "y": 298.0,
       "radius": 14.6
@@ -86,12 +86,23 @@
       "id": "composites",
       "label": "Composites",
       "group": "Materials",
-      "count": 224,
-      "recent_count": 93,
-      "trend_score": 0.1919,
+      "count": 225,
+      "recent_count": 94,
+      "trend_score": 0.1933,
       "x": 185.0,
       "y": 118.0,
       "radius": 13.8
+    },
+    {
+      "id": "metamaterials",
+      "label": "Metamaterials",
+      "group": "Materials",
+      "count": 201,
+      "recent_count": 92,
+      "trend_score": 0.1845,
+      "x": 249.0,
+      "y": 170.0,
+      "radius": 13.5
     },
     {
       "id": "soft-robotics",
@@ -99,21 +110,10 @@
       "group": "Robotics",
       "count": 215,
       "recent_count": 89,
-      "trend_score": 0.1838,
+      "trend_score": 0.1835,
       "x": 540.0,
       "y": 318.0,
       "radius": 13.7
-    },
-    {
-      "id": "metamaterials",
-      "label": "Metamaterials",
-      "group": "Materials",
-      "count": 200,
-      "recent_count": 91,
-      "trend_score": 0.1831,
-      "x": 249.0,
-      "y": 170.0,
-      "radius": 13.4
     },
     {
       "id": "monitoring",
@@ -121,7 +121,7 @@
       "group": "Automation",
       "count": 211,
       "recent_count": 82,
-      "trend_score": 0.1725,
+      "trend_score": 0.1722,
       "x": 589.0,
       "y": 210.0,
       "radius": 13.6
@@ -132,7 +132,7 @@
       "group": "AM",
       "count": 230,
       "recent_count": 73,
-      "trend_score": 0.1639,
+      "trend_score": 0.1635,
       "x": 310.0,
       "y": 274.0,
       "radius": 13.9
@@ -141,9 +141,9 @@
       "id": "alloys-metals",
       "label": "Metals / Alloys",
       "group": "Materials",
-      "count": 167,
-      "recent_count": 70,
-      "trend_score": 0.1441,
+      "count": 168,
+      "recent_count": 71,
+      "trend_score": 0.1455,
       "x": 185.0,
       "y": 222.0,
       "radius": 12.9
@@ -154,7 +154,7 @@
       "group": "AM",
       "count": 156,
       "recent_count": 66,
-      "trend_score": 0.1355,
+      "trend_score": 0.1352,
       "x": 260.6,
       "y": 233.5,
       "radius": 12.7
@@ -165,7 +165,7 @@
       "group": "4D",
       "count": 170,
       "recent_count": 61,
-      "trend_score": 0.1315,
+      "trend_score": 0.1313,
       "x": 349.0,
       "y": 350.0,
       "radius": 12.9
@@ -176,7 +176,7 @@
       "group": "Application",
       "count": 134,
       "recent_count": 44,
-      "trend_score": 0.0976,
+      "trend_score": 0.0974,
       "x": 160.0,
       "y": 285.5,
       "radius": 12.3
@@ -187,7 +187,7 @@
       "group": "4D",
       "count": 130,
       "recent_count": 39,
-      "trend_score": 0.0893,
+      "trend_score": 0.0891,
       "x": 285.0,
       "y": 402.0,
       "radius": 12.2
@@ -198,7 +198,7 @@
       "group": "Manufacturing",
       "count": 96,
       "recent_count": 41,
-      "trend_score": 0.0839,
+      "trend_score": 0.0838,
       "x": 430.0,
       "y": 240.5,
       "radius": 11.5
@@ -209,10 +209,10 @@
       "group": "Automation",
       "count": 79,
       "recent_count": 31,
-      "trend_score": 0.065,
+      "trend_score": 0.0649,
       "x": 525.0,
       "y": 262.0,
-      "radius": 11.1
+      "radius": 11.0
     },
     {
       "id": "lce",
@@ -220,7 +220,7 @@
       "group": "4D",
       "count": 65,
       "recent_count": 31,
-      "trend_score": 0.0616,
+      "trend_score": 0.0615,
       "x": 221.0,
       "y": 350.0,
       "radius": 10.7
@@ -231,7 +231,7 @@
       "group": "Materials",
       "count": 80,
       "recent_count": 26,
-      "trend_score": 0.0579,
+      "trend_score": 0.0578,
       "x": 121.0,
       "y": 170.0,
       "radius": 11.1
@@ -242,10 +242,21 @@
       "group": "AI",
       "count": 50,
       "recent_count": 27,
-      "trend_score": 0.0521,
+      "trend_score": 0.052,
       "x": 620.0,
       "y": 172.0,
       "radius": 10.2
+    },
+    {
+      "id": "volumetric-am",
+      "label": "Volumetric AM",
+      "group": "AM",
+      "count": 57,
+      "recent_count": 22,
+      "trend_score": 0.0463,
+      "x": 250.2,
+      "y": 170.5,
+      "radius": 10.4
     },
     {
       "id": "self-driving-lab",
@@ -253,21 +264,10 @@
       "group": "AML",
       "count": 32,
       "recent_count": 26,
-      "trend_score": 0.0462,
+      "trend_score": 0.0461,
       "x": 710.0,
       "y": 248.0,
       "radius": 9.6
-    },
-    {
-      "id": "volumetric-am",
-      "label": "Volumetric AM",
-      "group": "AM",
-      "count": 56,
-      "recent_count": 21,
-      "trend_score": 0.0447,
-      "x": 250.2,
-      "y": 170.5,
-      "radius": 10.4
     },
     {
       "id": "closed-loop-control",
@@ -275,7 +275,7 @@
       "group": "Automation",
       "count": 43,
       "recent_count": 22,
-      "trend_score": 0.043,
+      "trend_score": 0.0429,
       "x": 461.0,
       "y": 210.0,
       "radius": 10.0
@@ -286,7 +286,7 @@
       "group": "AML",
       "count": 26,
       "recent_count": 19,
-      "trend_score": 0.0344,
+      "trend_score": 0.0343,
       "x": 774.0,
       "y": 300.0,
       "radius": 9.3
@@ -297,7 +297,7 @@
       "group": "AML",
       "count": 32,
       "recent_count": 13,
-      "trend_score": 0.027,
+      "trend_score": 0.0269,
       "x": 710.0,
       "y": 352.0,
       "radius": 9.6
@@ -340,8 +340,8 @@
     {
       "source": "additive-manufacturing",
       "target": "multi-material-am",
-      "count": 1002,
-      "recent_count": 355
+      "count": 1003,
+      "recent_count": 356
     },
     {
       "source": "functionally-graded-am",
@@ -352,8 +352,8 @@
     {
       "source": "additive-manufacturing",
       "target": "functionally-graded-am",
-      "count": 576,
-      "recent_count": 183
+      "count": 577,
+      "recent_count": 184
     },
     {
       "source": "digital-twin",
@@ -376,8 +376,8 @@
     {
       "source": "additive-manufacturing",
       "target": "process-optimization",
-      "count": 224,
-      "recent_count": 77
+      "count": 225,
+      "recent_count": 78
     },
     {
       "source": "metamaterials",
@@ -394,25 +394,25 @@
     {
       "source": "additive-manufacturing",
       "target": "composites",
-      "count": 176,
-      "recent_count": 68
+      "count": 177,
+      "recent_count": 69
     },
     {
       "source": "additive-manufacturing",
       "target": "metamaterials",
-      "count": 164,
-      "recent_count": 68
+      "count": 165,
+      "recent_count": 69
+    },
+    {
+      "source": "additive-manufacturing",
+      "target": "alloys-metals",
+      "count": 151,
+      "recent_count": 64
     },
     {
       "source": "additive-manufacturing",
       "target": "vat-photopolymerization",
       "count": 214,
-      "recent_count": 63
-    },
-    {
-      "source": "additive-manufacturing",
-      "target": "alloys-metals",
-      "count": 150,
       "recent_count": 63
     },
     {
@@ -429,14 +429,14 @@
     },
     {
       "source": "additive-manufacturing",
-      "target": "soft-robotics",
-      "count": 167,
-      "recent_count": 59
+      "target": "machine-learning",
+      "count": 144,
+      "recent_count": 60
     },
     {
       "source": "additive-manufacturing",
-      "target": "machine-learning",
-      "count": 143,
+      "target": "soft-robotics",
+      "count": 167,
       "recent_count": 59
     },
     {
@@ -470,6 +470,12 @@
       "recent_count": 49
     },
     {
+      "source": "machine-learning",
+      "target": "process-optimization",
+      "count": 101,
+      "recent_count": 49
+    },
+    {
       "source": "digital-twin",
       "target": "multi-material-am",
       "count": 67,
@@ -482,12 +488,6 @@
       "recent_count": 48
     },
     {
-      "source": "machine-learning",
-      "target": "process-optimization",
-      "count": 100,
-      "recent_count": 48
-    },
-    {
       "source": "multi-material-am",
       "target": "process-optimization",
       "count": 124,
@@ -496,8 +496,8 @@
     {
       "source": "alloys-metals",
       "target": "functionally-graded-am",
-      "count": 108,
-      "recent_count": 44
+      "count": 109,
+      "recent_count": 45
     },
     {
       "source": "4d-printing",
@@ -506,16 +506,16 @@
       "recent_count": 40
     },
     {
+      "source": "composites",
+      "target": "functionally-graded-am",
+      "count": 129,
+      "recent_count": 40
+    },
+    {
       "source": "biomedical",
       "target": "multi-material-am",
       "count": 127,
       "recent_count": 40
-    },
-    {
-      "source": "composites",
-      "target": "functionally-graded-am",
-      "count": 128,
-      "recent_count": 39
     },
     {
       "source": "digital-twin",
@@ -550,8 +550,8 @@
     {
       "source": "functionally-graded-am",
       "target": "metamaterials",
-      "count": 70,
-      "recent_count": 34
+      "count": 71,
+      "recent_count": 35
     },
     {
       "source": "machine-learning",
@@ -650,6 +650,18 @@
       "recent_count": 23
     },
     {
+      "source": "multi-material-am",
+      "target": "volumetric-am",
+      "count": 50,
+      "recent_count": 22
+    },
+    {
+      "source": "composites",
+      "target": "machine-learning",
+      "count": 29,
+      "recent_count": 22
+    },
+    {
       "source": "biomedical",
       "target": "functionally-graded-am",
       "count": 72,
@@ -659,18 +671,6 @@
       "source": "additive-manufacturing",
       "target": "sustainability",
       "count": 61,
-      "recent_count": 21
-    },
-    {
-      "source": "multi-material-am",
-      "target": "volumetric-am",
-      "count": 49,
-      "recent_count": 21
-    },
-    {
-      "source": "composites",
-      "target": "machine-learning",
-      "count": 28,
       "recent_count": 21
     },
     {
@@ -686,6 +686,12 @@
       "recent_count": 20
     },
     {
+      "source": "additive-manufacturing",
+      "target": "volumetric-am",
+      "count": 55,
+      "recent_count": 20
+    },
+    {
       "source": "4d-printing",
       "target": "soft-robotics",
       "count": 52,
@@ -695,12 +701,6 @@
       "source": "additive-manufacturing",
       "target": "hydrogels",
       "count": 56,
-      "recent_count": 19
-    },
-    {
-      "source": "additive-manufacturing",
-      "target": "volumetric-am",
-      "count": 54,
       "recent_count": 19
     },
     {
@@ -770,8 +770,20 @@
       "recent_count": 14
     },
     {
+      "source": "alloys-metals",
+      "target": "composites",
+      "count": 28,
+      "recent_count": 14
+    },
+    {
       "source": "4d-printing",
       "target": "metamaterials",
+      "count": 26,
+      "recent_count": 14
+    },
+    {
+      "source": "composites",
+      "target": "process-optimization",
       "count": 26,
       "recent_count": 14
     },
@@ -806,18 +818,6 @@
       "recent_count": 13
     },
     {
-      "source": "alloys-metals",
-      "target": "composites",
-      "count": 27,
-      "recent_count": 13
-    },
-    {
-      "source": "composites",
-      "target": "process-optimization",
-      "count": 25,
-      "recent_count": 13
-    },
-    {
       "source": "fdm-material-extrusion",
       "target": "process-optimization",
       "count": 25,
@@ -834,6 +834,12 @@
       "target": "metamaterials",
       "count": 22,
       "recent_count": 13
+    },
+    {
+      "source": "functionally-graded-am",
+      "target": "process-optimization",
+      "count": 40,
+      "recent_count": 12
     },
     {
       "source": "functionally-graded-am",
@@ -855,6 +861,12 @@
     },
     {
       "source": "machine-learning",
+      "target": "metamaterials",
+      "count": 25,
+      "recent_count": 12
+    },
+    {
+      "source": "machine-learning",
       "target": "sustainability",
       "count": 23,
       "recent_count": 12
@@ -872,9 +884,9 @@
       "recent_count": 12
     },
     {
-      "source": "functionally-graded-am",
+      "source": "metamaterials",
       "target": "process-optimization",
-      "count": 39,
+      "count": 31,
       "recent_count": 11
     },
     {
@@ -890,9 +902,15 @@
       "recent_count": 11
     },
     {
-      "source": "machine-learning",
+      "source": "alloys-metals",
+      "target": "process-optimization",
+      "count": 25,
+      "recent_count": 11
+    },
+    {
+      "source": "composites",
       "target": "metamaterials",
-      "count": 24,
+      "count": 18,
       "recent_count": 11
     },
     {
@@ -914,21 +932,9 @@
       "recent_count": 10
     },
     {
-      "source": "metamaterials",
-      "target": "process-optimization",
-      "count": 30,
-      "recent_count": 10
-    },
-    {
       "source": "lce",
       "target": "shape-morphing",
       "count": 30,
-      "recent_count": 10
-    },
-    {
-      "source": "alloys-metals",
-      "target": "process-optimization",
-      "count": 24,
       "recent_count": 10
     },
     {
@@ -947,12 +953,6 @@
       "source": "composites",
       "target": "lce",
       "count": 20,
-      "recent_count": 10
-    },
-    {
-      "source": "composites",
-      "target": "metamaterials",
-      "count": 17,
       "recent_count": 10
     },
     {
@@ -995,6 +995,12 @@
       "source": "biomedical",
       "target": "hydrogels",
       "count": 25,
+      "recent_count": 9
+    },
+    {
+      "source": "alloys-metals",
+      "target": "machine-learning",
+      "count": 23,
       "recent_count": 9
     },
     {
@@ -1046,15 +1052,15 @@
       "recent_count": 8
     },
     {
-      "source": "alloys-metals",
-      "target": "machine-learning",
-      "count": 22,
-      "recent_count": 8
-    },
-    {
       "source": "machine-learning",
       "target": "toolpath-planning",
       "count": 21,
+      "recent_count": 8
+    },
+    {
+      "source": "alloys-metals",
+      "target": "metamaterials",
+      "count": 19,
       "recent_count": 8
     },
     {
@@ -1109,12 +1115,6 @@
       "source": "composites",
       "target": "monitoring",
       "count": 24,
-      "recent_count": 7
-    },
-    {
-      "source": "biomedical",
-      "target": "vat-photopolymerization",
-      "count": 21,
       "recent_count": 7
     }
   ]
