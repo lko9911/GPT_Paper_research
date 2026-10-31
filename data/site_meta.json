@@ -1,9 +1,9 @@
 {
-  "last_run_at_utc": "2026-10-31T06:59:18Z",
+  "last_run_at_utc": "2026-10-31T13:38:32Z",
   "last_run_date": "2026-10-31",
   "paper_count": 1756,
   "curated_count": 1756,
-  "raw_candidate_count": 2221,
+  "raw_candidate_count": 2219,
   "merged_candidate_count": 2304,
   "archived_count": 614,
   "new_archived_count": 548,
@@ -11,7 +11,7 @@
   "hidden_low_venue_trust_count": 480,
   "duplicate_archived_count": 53,
   "papers_added": 548,
-  "raw_records_added": 2221,
+  "raw_records_added": 2219,
   "weekly_added_count": 11,
   "weekly_window_days": 7,
   "since_year": 2024,
@@ -22,24 +22,24 @@
   "collection_mode": "incremental_crossref_merge",
   "existing_active_preserved": true,
   "existing_active_count_before": 1756,
-  "new_crossref_curated_candidates": 2221,
+  "new_crossref_curated_candidates": 2219,
   "merge_stats": {
     "existing_active_before": 1756,
-    "new_crossref_records": 2221,
-    "existing_updated": 1673,
+    "new_crossref_records": 2219,
+    "existing_updated": 1671,
     "new_added": 548,
-    "existing_preserved_without_current_match": 83
+    "existing_preserved_without_current_match": 85
   },
   "openalex_general_search_enabled": false,
   "priority_venue_search_enabled": false,
   "openalex_used_for": "missing_corresponding_author_doi_cross_check_only",
   "openalex_corresponding_author_stats": {
-    "checked": 2221,
+    "checked": 2219,
     "completed": 1708,
     "authors_completed": 17,
-    "not_found": 513,
+    "not_found": 511,
     "skipped_has_crossref_corresponding": 0,
     "skipped_no_doi": 0
   },
-  "backup_dir": "data/old_exports/full_rebuild_20261031065918"
+  "backup_dir": "data/old_exports/full_rebuild_20261031133832"
 }

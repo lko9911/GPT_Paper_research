@@ -132834,7 +132834,7 @@
     "first_added": "2026-08-19",
     "last_updated": "2026-10-31",
     "is_weekly_new": false,
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "last_seen_in_crossref_run": "2026-10-31",
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
@@ -155606,9 +155606,29 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Gianni Stano",
+        "openalex_author_id": "https://openalex.org/A5023611435",
+        "orcid": "https://orcid.org/0000-0002-6676-8472",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Polytechnic University of Bari",
+            "ror": "https://ror.org/03c44v465",
+            "country_code": "IT",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanics, Mathematic and Management Engineering (DMMM), Polytechnic University of Bari, Via E. Orabona 4, 70125, Bari, Italy",
+          "Interdisciplinary Additive Manufacturing (IAM) Lab, Polytechnic University of Bari, Viale del Turismo 8, 74100, Taranto, Italy"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2025,
     "venue": "The International Journal of Advanced Manufacturing Technology",
     "doi": "10.1007/s00170-025-15798-z",
@@ -155628,8 +155648,8 @@
     "issn_l": "",
     "publisher": "Springer Science and Business Media LLC",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4410886495",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S77056576",
     "venue_metrics": {
@@ -312202,7 +312222,7 @@
     "last_updated": "2026-10-31",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-10-31",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 21.19633376740459,
