@@ -1,4 +1,91 @@
 {
+  "10.1007/s00170-025-15290-8": {
+    "author_details": [
+      {
+        "name": "Efrain Rodriguez",
+        "orcid": "https://orcid.org/0000-0003-4926-2127",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Alberto Alvares",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Cristhian Riaño",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "International Journal of Advanced Manufacturing Technology",
+    "crossref_target_issn": "0268-3768",
+    "issn": [
+      "0268-3768",
+      "1433-3015"
+    ],
+    "issn_l": "",
+    "publisher": "Springer Science and Business Media LLC",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4409289543",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S77056576",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S77056576",
+      "issn_l": "0268-3768",
+      "issn": [
+        "0268-3768",
+        "1433-3015"
+      ],
+      "type": "journal",
+      "host_organization_name": "Springer Science+Business Media",
+      "works_count": 31026,
+      "cited_by_count": 730438,
+      "two_year_mean_citedness": 3.7044257112750265,
+      "h_index": 199,
+      "i10_index": 18166,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 3.7044257112750265,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 2",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The paper reviews the application of STEP-NC in additive manufacturing.\n2. Problem - Current manufacturing relies on outdated formats like STL and G-code, which do not meet modern industry needs.\n3. Method - The authors propose new STEP-NC entity definitions and a cyber-physical architecture to enhance data management in additive manufacturing processes.\n4. Key Result - The proposed framework aims to improve data integration and contextual awareness in manufacturing, facilitating better Digital Twin and Digital Thread implementations.\n5. Takeaway - Implementing STEP-NC can significantly advance data management and interoperability in additive manufacturing, addressing existing challenges.",
+    "relevance_note_en": "The summary captures the essence of the paper's focus on STEP-NC and its implications for additive manufacturing.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-10-31",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1007/s00170-025-15290-8"
+  },
   "10.3389/fnuen.2025.1603437": {
     "author_details": [
       {
@@ -28928,114 +29015,5 @@
     "last_seen_in_crossref_run": "2026-06-28",
     "not_seen_in_latest_crossref_run": true,
     "id": "10.3390/jmmp9100343"
-  },
-  "10.21037/ajo-24-59": {
-    "author_details": [
-      {
-        "name": "Emma Kanaganayagam",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "David Forrestal",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Roozbeh Fakhr",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Jean-Michel Bourque",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Michael Wagels",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "James Bowman",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2616-2792"
-    ],
-    "issn_l": "",
-    "publisher": "AME Publishing Company",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4415732155",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S4210217316",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S4210217316",
-      "issn_l": "2616-2792",
-      "issn": [
-        "2616-2792"
-      ],
-      "type": "journal",
-      "host_organization_name": "AME Publishing Company",
-      "works_count": 337,
-      "cited_by_count": 847,
-      "two_year_mean_citedness": 0.6416666666666667,
-      "h_index": 13,
-      "i10_index": 20,
-      "is_core": true,
-      "is_oa": true,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 0.6416666666666667,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 4",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The study investigates the effectiveness of a multi-material 3D printed temporal bone model for otolaryngology training.\n2. Problem - Traditional cadaveric temporal bones for dissection training face challenges such as high costs, limited availability, and ethical issues.\n3. Method - Otolaryngology registrars evaluated the 3D printed model through a questionnaire assessing its realism, anatomical accuracy, and educational value.\n4. Key Result - Participants found the 3D printed model beneficial, especially novice registrars, who appreciated its utility for learning anatomical landmarks and surgical techniques.\n5. Takeaway - The 3D printed temporal bone model serves as a valuable training tool, particularly for novice trainees, enhancing their understanding of anatomy and surgical procedures.",
-    "relevance_note_en": "The summary captures the core findings and implications of the study without directly paraphrasing the abstract.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-31",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.21037/ajo-24-59"
   }
 }
