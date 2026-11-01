@@ -9298,9 +9298,46 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Hang Jerry Qi",
+        "openalex_author_id": "https://openalex.org/A5100335427",
+        "orcid": "https://orcid.org/0000-0002-3212-5284",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Georgia Institute of Technology",
+            "ror": "https://ror.org/01zkghx44",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Georgia Institute of Technology , , , ,"
+        ]
+      },
+      {
+        "name": "Rampi Ramprasad",
+        "openalex_author_id": "https://openalex.org/A5031952600",
+        "orcid": "https://orcid.org/0000-0003-4630-1565",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Georgia Institute of Technology",
+            "ror": "https://ror.org/01zkghx44",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Georgia Institute of Technology , , , ,"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Chemistry of Materials",
     "doi": "10.1021/acs.chemmater.6c01600",
@@ -9320,7 +9357,7 @@
     "issn_l": "",
     "publisher": "American Chemical Society (ACS)",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7221132440",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S66104727",
@@ -16930,7 +16967,7 @@
     "publisher": "Springer Science and Business Media LLC",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7225017243",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S77056576",
     "venue_metrics": {
@@ -80193,13 +80230,22 @@
     "id": "10.66262/btxf2t17",
     "title": "Vat Photopolymerization Additive Manufacturing: Processes, Materials, And Applications",
     "authors": [
-      "Ghaith Algharbi"
+      "Ghaith Algharbi",
+      "Suha K. Shihab"
     ],
     "author_details": [
       {
         "name": "Ghaith Algharbi",
         "orcid": "",
         "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Suha K. Shihab",
+        "orcid": "",
+        "position": "additional",
         "is_corresponding": false,
         "institutions": [],
         "raw_affiliation_strings": []
@@ -180190,7 +180236,7 @@
         ]
       },
       {
-        "name": "Yolita M. Eggeler",
+        "name": "Yolita Maria Eggeler",
         "openalex_author_id": "https://openalex.org/A5003212076",
         "orcid": "https://orcid.org/0000-0003-3645-0209",
         "position": "middle",
@@ -312974,6 +313020,8 @@
           }
         ],
         "raw_affiliation_strings": [
+          "Department of Electrical Engineering and Computer Science, University of Missouri, Columbia, MO 65211, United States",
+          "Department of Mechanical and Aerospace Engineering, University of Missouri, Columbia, MO 65211, United States",
           "Department of Electrical Engineering and Computer Science, University of Missouri, Columbia, Missouri 65211, United States",
           "Department of Mechanical and Aerospace Engineering, University of Missouri, Columbia, Missouri 65211, United States"
         ]
@@ -335653,7 +335701,7 @@
     ],
     "corresponding_authors": [
       {
-        "name": "H. Wang",
+        "name": "Hong‐Lei Wang",
         "openalex_author_id": "https://openalex.org/A5018920468",
         "orcid": "https://orcid.org/0000-0002-3737-1548",
         "position": "last",
