@@ -1,4 +1,123 @@
 {
+  "10.1177/08927057251332788": {
+    "author_details": [
+      {
+        "name": "Kai Steltner",
+        "orcid": "https://orcid.org/0000-0003-1590-3707",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Hamburg University of Technology"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Hamburg University of Technology"
+        ]
+      },
+      {
+        "name": "Johann Kipping",
+        "orcid": "https://orcid.org/0000-0001-7780-2712",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Hamburg University of Technology"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Hamburg University of Technology"
+        ]
+      },
+      {
+        "name": "Thorsten Schüppstuhl",
+        "orcid": "https://orcid.org/0000-0002-9616-3976",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Hamburg University of Technology"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Hamburg University of Technology"
+        ]
+      },
+      {
+        "name": "Benedikt Kriegesmann",
+        "orcid": "https://orcid.org/0000-0001-5330-9886",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Hamburg University of Technology"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Hamburg University of Technology"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "0892-7057",
+      "1530-7980"
+    ],
+    "issn_l": "",
+    "publisher": "SAGE Publications",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4410939815",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S159246406",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S159246406",
+      "issn_l": "0892-7057",
+      "issn": [
+        "0892-7057",
+        "1530-7980"
+      ],
+      "type": "journal",
+      "host_organization_name": "SAGE Publishing",
+      "works_count": 2866,
+      "cited_by_count": 47232,
+      "two_year_mean_citedness": 3.443413729128015,
+      "h_index": 75,
+      "i10_index": 1346,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 3.443413729128015,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 3",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The paper focuses on optimizing the design of structures for additive manufacturing using fiber-reinforced composites.\n2. Problem - It addresses the challenge of aligning structural optimization with the capabilities of modern additive manufacturing techniques.\n3. Method - A comprehensive workflow is proposed that includes material orientation optimization, topology design, non-planar slicing, and load-oriented path planning.\n4. Key Result - The workflow is validated through both academic and practical examples, revealing critical considerations for manufacturing continuously fiber-reinforced structures.\n5. Takeaway - The study highlights the importance of integrating manufacturability into the design process to enhance the performance of optimized structures.",
+    "relevance_note_en": "The summary captures the core aspects of the paper, including its focus on optimization and additive manufacturing.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-11-04",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1177/08927057251332788"
+  },
   "10.1039/d5py00603a": {
     "author_details": [
       {
@@ -6607,8 +6726,8 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
     "crossref_collection_route": "issn_venue_query",
@@ -6620,8 +6739,8 @@
     "issn_l": "",
     "publisher": "Springer Science and Business Media LLC",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4400199226",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S64187185",
     "venue_metrics": {
@@ -13773,7 +13892,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "last_seen_in_crossref_run": "2026-11-04",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "id": "10.12688/digitaltwin.17807.2"
   },
   "10.54660/ijaiet.2024.5.1.58-65": {
@@ -29061,106 +29180,5 @@
     "last_seen_in_crossref_run": "2026-11-04",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.matdes.2024.112915"
-  },
-  "10.1038/s41467-024-45345-5": {
-    "author_details": [
-      {
-        "name": "Johann Reinhard",
-        "orcid": "https://orcid.org/0000-0002-9151-3930",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Philipp Urban",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Stephen Bell",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "David Carpenter",
-        "orcid": "https://orcid.org/0000-0001-7697-511X",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Mandeep S. Sagoo",
-        "orcid": "https://orcid.org/0000-0003-1530-3824",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "Nature Communications",
-    "crossref_target_issn": "2041-1723",
-    "issn": [
-      "2041-1723"
-    ],
-    "issn_l": "",
-    "publisher": "Springer Science and Business Media LLC",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4392200966",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S64187185",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S64187185",
-      "issn_l": "2041-1723",
-      "issn": [
-        "2041-1723"
-      ],
-      "type": "journal",
-      "host_organization_name": "Nature Portfolio",
-      "works_count": 90441,
-      "cited_by_count": 7551319,
-      "two_year_mean_citedness": 16.130086313193587,
-      "h_index": 743,
-      "i10_index": 68559,
-      "is_core": true,
-      "is_oa": true,
-      "is_in_doaj": true
-    },
-    "journal_quality": {
-      "label": "High-impact general journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 16.130086313193587,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 1",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - The study focuses on the automated design and production of custom ocular prostheses using 3D printing technology.\n2. Problem - Current manual methods for creating ocular prosthetics are labor-intensive and inconsistent in quality.\n3. Method - An automatic digital process utilizes image data from optical coherence tomography and a statistical shape model to create prostheses that match both shape and color of the fellow eye.\n4. Key Result - The new approach significantly reduces the labor required by ocularists by five times and yields consistent results across patients.\n5. Takeaway - This innovation in ocular prosthesis manufacturing enhances efficiency and quality, potentially transforming patient care in this field.",
-    "relevance_note_en": "The summary captures the essence of the research, highlighting the innovation and its impact on ocular prosthesis manufacturing.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-11-04",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1038/s41467-024-45345-5"
   }
 }
