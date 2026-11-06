@@ -4728,9 +4728,28 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Deborah Gabriela Sarria Garcia",
+        "openalex_author_id": "https://openalex.org/A5160648521",
+        "orcid": null,
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Pontifícia Universidade Católica do Paraná",
+            "ror": "https://ror.org/02x1vjk79",
+            "country_code": "BR",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Industrial and Systems Engineering Graduate Program (PPGPES), Pontifical Catholic University of Parana (PUCPR), Curitiba, 80215-901, Brazil"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "The International Journal of Advanced Manufacturing Technology",
     "doi": "10.1007/s00170-026-19438-y",
@@ -4750,7 +4769,7 @@
     "issn_l": "",
     "publisher": "Springer Science and Business Media LLC",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7225244907",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S77056576",
@@ -13996,9 +14015,46 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Samira Gholizadeh",
+        "openalex_author_id": "https://openalex.org/A5031696581",
+        "orcid": "https://orcid.org/0000-0001-6705-1150",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Cape Town",
+            "ror": "https://ror.org/03p74gp79",
+            "country_code": "ZA",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Division of Biomedical Engineering, Biomedical Engineering Research Centre (BMERC), Department of Human Biology,, University of Cape Town, Observatory, Cape Town, South Africa"
+        ]
+      },
+      {
+        "name": "Sudesh Sivarasu",
+        "openalex_author_id": "https://openalex.org/A5035897970",
+        "orcid": "https://orcid.org/0000-0002-0812-568X",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Cape Town",
+            "ror": "https://ror.org/03p74gp79",
+            "country_code": "ZA",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Division of Biomedical Engineering, Biomedical Engineering Research Centre (BMERC), Department of Human Biology,, University of Cape Town, Observatory, Cape Town, South Africa"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Progress in Additive Manufacturing",
     "doi": "10.1007/s40964-026-01889-0",
@@ -14018,7 +14074,7 @@
     "issn_l": "",
     "publisher": "Springer Science and Business Media LLC",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7202160739",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S4210206835",
@@ -14087,6 +14143,256 @@
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
     "local_summary_applied": true,
     "summary_model": "qwen2.5:7b"
+  },
+  {
+    "id": "10.1080/17452759.2026.2751873",
+    "title": "Next-generation process monitoring and control for metal additive manufacturing: toward a physics-informed digital twin framework",
+    "authors": [
+      "Kunpeng Zhu",
+      "Yangkun Mao",
+      "Qi Zhou",
+      "Jiawei Yan",
+      "Jiangge Deng",
+      "Qisheng Wang",
+      "Meng Cheng",
+      "Ying Hsi Jerry Fuh",
+      "Qing-Guo Wang",
+      "Xin Lin"
+    ],
+    "author_details": [
+      {
+        "name": "Kunpeng Zhu",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Wuhan University of Science and Technology"
+          },
+          {
+            "name": "Hefei Institutes of Physical Science, Chinese Academy of Sciences"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Wuhan University of Science and Technology",
+          "Hefei Institutes of Physical Science, Chinese Academy of Sciences"
+        ]
+      },
+      {
+        "name": "Yangkun Mao",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Hefei Institutes of Physical Science, Chinese Academy of Sciences"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Hefei Institutes of Physical Science, Chinese Academy of Sciences"
+        ]
+      },
+      {
+        "name": "Qi Zhou",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Lingyun Science & Technology Group Co."
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Lingyun Science & Technology Group Co."
+        ]
+      },
+      {
+        "name": "Jiawei Yan",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "AVIC Xi’an Aircraft Industry Group Company Ltd."
+          }
+        ],
+        "raw_affiliation_strings": [
+          "AVIC Xi’an Aircraft Industry Group Company Ltd."
+        ]
+      },
+      {
+        "name": "Jiangge Deng",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Lingyun Science & Technology Group Co."
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Lingyun Science & Technology Group Co."
+        ]
+      },
+      {
+        "name": "Qisheng Wang",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Hefei Institutes of Physical Science, Chinese Academy of Sciences"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Hefei Institutes of Physical Science, Chinese Academy of Sciences"
+        ]
+      },
+      {
+        "name": "Meng Cheng",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Wuhan University of Science and Technology"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Wuhan University of Science and Technology"
+        ]
+      },
+      {
+        "name": "Ying Hsi Jerry Fuh",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "National University of Singapore"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "National University of Singapore"
+        ]
+      },
+      {
+        "name": "Qing-Guo Wang",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Wuhan University of Science and Technology"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Wuhan University of Science and Technology"
+        ]
+      },
+      {
+        "name": "Xin Lin",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Wuhan University of Science and Technology"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Wuhan University of Science and Technology"
+        ]
+      }
+    ],
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "year": 2026,
+    "venue": "Virtual and Physical Prototyping",
+    "doi": "10.1080/17452759.2026.2751873",
+    "url": "https://doi.org/10.1080/17452759.2026.2751873",
+    "source": [
+      "Crossref"
+    ],
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Virtual and Physical Prototyping",
+    "crossref_target_issn": "1745-2759",
+    "issn": [
+      "1745-2759",
+      "1745-2767"
+    ],
+    "issn_l": "",
+    "publisher": "Informa UK Limited",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S152936027",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S152936027",
+      "issn_l": "1745-2759",
+      "issn": [
+        "1745-2759",
+        "1745-2767"
+      ],
+      "type": "journal",
+      "host_organization_name": "Taylor & Francis",
+      "works_count": 1288,
+      "cited_by_count": 39605,
+      "two_year_mean_citedness": 10.10738255033557,
+      "h_index": 92,
+      "i10_index": 718,
+      "is_core": true,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 10.10738255033557,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "publication_type": "journal_article",
+    "venue_trust": "trusted",
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "is_core_venue": true,
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "categories": [
+      "Multi-material AM"
+    ],
+    "tags": [
+      "Digital Twins",
+      "Manufacturing automation"
+    ],
+    "relevance_score": 7,
+    "curation_priority": false,
+    "ai_summary_en": "1. Topic - Next-generation process monitoring and control for metal additive manufacturing: toward a physics-informed digital twin framework is a 2026 paper from Virtual and Physical Prototyping about Digital Twins and Manufacturing automation.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Digital Twins and Manufacturing automation.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Digital Twins and Manufacturing automation; current relevance score is 7/10.",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_en": "Relevant to the tracker through Digital Twins and Manufacturing automation; score: 7/10.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-11-06",
+    "last_updated": "2026-11-06",
+    "is_weekly_new": true,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-11-06",
+    "openalex_venue_rank": "Rank 1",
+    "openalex_venue_rank_number": 1,
+    "openalex_venue_rank_score": 10.10738255033557,
+    "openalex_venue_rank_percentile": 0.9106,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
     "id": "10.1007/s10845-026-02970-9",
@@ -29160,7 +29466,7 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Narayanaperumal Arunachalam",
+        "name": "N. Arunachalam",
         "openalex_author_id": "https://openalex.org/A5055086752",
         "orcid": "https://orcid.org/0000-0001-5768-6347",
         "position": "middle",
@@ -49734,9 +50040,28 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Elisha Lerner",
+        "openalex_author_id": "https://openalex.org/A5086281820",
+        "orcid": "https://orcid.org/0000-0002-9495-0730",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Colorado State University",
+            "ror": "https://ror.org/03k1gpj17",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Adaptive Robotics Lab Department of Mechanical Engineering Colorado State University  Fort Collins Colorado United States"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Advanced Robotics Research",
     "doi": "10.1002/adrr.70158",
@@ -49756,7 +50081,7 @@
     "issn_l": "",
     "publisher": "Wiley",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7202249564",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S5407036553",
@@ -57465,9 +57790,28 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Vanessa Restrepo",
+        "openalex_author_id": "https://openalex.org/A5008277895",
+        "orcid": "https://orcid.org/0000-0003-2123-2145",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Texas A&M University",
+            "ror": "https://ror.org/01f5ytq51",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering , Texas A&M University , College Station , Texas , USA"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Procedia Structural Integrity",
     "doi": "10.1016/j.prostr.2026.09.115",
@@ -57486,8 +57830,8 @@
     "issn_l": "",
     "publisher": "Elsevier BV",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7225295413",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2764766352",
     "venue_metrics": {
@@ -62358,7 +62702,7 @@
         ]
       },
       {
-        "name": "Samuel  C. Leguizamon",
+        "name": "Samuel Leguizamon",
         "openalex_author_id": "https://openalex.org/A5025262217",
         "orcid": "https://orcid.org/0000-0003-3395-6562",
         "position": "last",
@@ -80740,7 +81084,7 @@
     "last_updated": "2026-11-06",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-11-06",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 11.276349614395887,
@@ -97778,9 +98122,29 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Zhijun Chen",
+        "openalex_author_id": "https://openalex.org/A5100739496",
+        "orcid": "https://orcid.org/0000-0001-7203-5788",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Northeast Forestry University",
+            "ror": "https://ror.org/02yxnh564",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Key Laboratory of Bio‐based Material Science and Technology of Ministry of Education Northeast Forestry University  Harbin People's Republic of China",
+          "State Key Laboratory of Woody Oil Resources Utilization Northeast Forestry University  Harbin People's Republic of China"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Advanced Functional Materials",
     "doi": "10.1002/adfm.79506",
@@ -97800,8 +98164,8 @@
     "issn_l": "",
     "publisher": "Wiley",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7225340711",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S135204980",
     "venue_metrics": {
@@ -110870,6 +111234,251 @@
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
     "local_summary_applied": true,
     "summary_model": "qwen2.5:7b"
+  },
+  {
+    "id": "10.1002/adfm.79487",
+    "title": "Freeform 3D Printing of Omnidirectionally Deformable Conductors via Newtonian Liquid Metal Droplet-Mediated Stress Relaxation",
+    "authors": [
+      "Tianqi Pang",
+      "Yaxin Zhang",
+      "Yuhan Jiang",
+      "Xinying Li",
+      "Miao Yu",
+      "Xiang Lin",
+      "Fengxian Gao",
+      "Min Gong",
+      "Dongrui Wang",
+      "Liang Zhang"
+    ],
+    "author_details": [
+      {
+        "name": "Tianqi Pang",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "School of Chemistry and Biological Engineering University of Science and Technology Beijing  Beijing People's Republic of China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Chemistry and Biological Engineering University of Science and Technology Beijing  Beijing People's Republic of China"
+        ]
+      },
+      {
+        "name": "Yaxin Zhang",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "School of Chemistry and Biological Engineering University of Science and Technology Beijing  Beijing People's Republic of China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Chemistry and Biological Engineering University of Science and Technology Beijing  Beijing People's Republic of China"
+        ]
+      },
+      {
+        "name": "Yuhan Jiang",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "School of Chemistry and Biological Engineering University of Science and Technology Beijing  Beijing People's Republic of China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Chemistry and Biological Engineering University of Science and Technology Beijing  Beijing People's Republic of China"
+        ]
+      },
+      {
+        "name": "Xinying Li",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "School of Chemistry and Biological Engineering University of Science and Technology Beijing  Beijing People's Republic of China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Chemistry and Biological Engineering University of Science and Technology Beijing  Beijing People's Republic of China"
+        ]
+      },
+      {
+        "name": "Miao Yu",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "School of Chemistry and Biological Engineering University of Science and Technology Beijing  Beijing People's Republic of China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Chemistry and Biological Engineering University of Science and Technology Beijing  Beijing People's Republic of China"
+        ]
+      },
+      {
+        "name": "Xiang Lin",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "School of Chemistry and Biological Engineering University of Science and Technology Beijing  Beijing People's Republic of China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Chemistry and Biological Engineering University of Science and Technology Beijing  Beijing People's Republic of China"
+        ]
+      },
+      {
+        "name": "Fengxian Gao",
+        "orcid": "https://orcid.org/0009-0001-6395-3998",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "School of Chemistry and Biological Engineering University of Science and Technology Beijing  Beijing People's Republic of China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Chemistry and Biological Engineering University of Science and Technology Beijing  Beijing People's Republic of China"
+        ]
+      },
+      {
+        "name": "Min Gong",
+        "orcid": "https://orcid.org/0000-0001-7131-0725",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "School of Chemistry and Biological Engineering University of Science and Technology Beijing  Beijing People's Republic of China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Chemistry and Biological Engineering University of Science and Technology Beijing  Beijing People's Republic of China"
+        ]
+      },
+      {
+        "name": "Dongrui Wang",
+        "orcid": "https://orcid.org/0000-0002-0306-9439",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "School of Chemistry and Biological Engineering University of Science and Technology Beijing  Beijing People's Republic of China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Chemistry and Biological Engineering University of Science and Technology Beijing  Beijing People's Republic of China"
+        ]
+      },
+      {
+        "name": "Liang Zhang",
+        "orcid": "https://orcid.org/0000-0002-2914-9891",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "School of Chemistry and Biological Engineering University of Science and Technology Beijing  Beijing People's Republic of China"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Chemistry and Biological Engineering University of Science and Technology Beijing  Beijing People's Republic of China"
+        ]
+      }
+    ],
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "year": 2026,
+    "venue": "Advanced Functional Materials",
+    "doi": "10.1002/adfm.79487",
+    "url": "https://doi.org/10.1002/adfm.79487",
+    "source": [
+      "Crossref"
+    ],
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Advanced Functional Materials",
+    "crossref_target_issn": "1616-301X",
+    "issn": [
+      "1616-301X",
+      "1616-3028"
+    ],
+    "issn_l": "",
+    "publisher": "Wiley",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S135204980",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S135204980",
+      "issn_l": "1616-301X",
+      "issn": [
+        "1616-301X",
+        "1616-3028"
+      ],
+      "type": "journal",
+      "host_organization_name": "Wiley",
+      "works_count": 42483,
+      "cited_by_count": 2508008,
+      "two_year_mean_citedness": 14.256403502995983,
+      "h_index": 476,
+      "i10_index": 26898,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "High-impact general journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 14.256403502995983,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "publication_type": "journal_article",
+    "venue_trust": "trusted",
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "is_core_venue": true,
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "categories": [
+      "Multi-material AM"
+    ],
+    "tags": [
+      "Soft robotics"
+    ],
+    "relevance_score": 5,
+    "curation_priority": false,
+    "ai_summary_en": "1. Topic - Freeform 3D Printing of Omnidirectionally Deformable Conductors via Newtonian Liquid Metal Droplet-Mediated Stress Relaxation is a 2026 paper from Advanced Functional Materials about Soft robotics.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Soft robotics.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Soft robotics; current relevance score is 5/10.",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_en": "Relevant to the tracker through Soft robotics; score: 5/10.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-11-06",
+    "last_updated": "2026-11-06",
+    "is_weekly_new": true,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-11-06",
+    "openalex_venue_rank": "Rank 1",
+    "openalex_venue_rank_number": 1,
+    "openalex_venue_rank_score": 14.256403502995983,
+    "openalex_venue_rank_percentile": 0.9662,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
     "id": "10.1108/4dp-12-2025-0024",
@@ -132032,7 +132641,7 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Dorin  Sabin Copaci",
+        "name": "Dorin Copaci",
         "openalex_author_id": "https://openalex.org/A5048336494",
         "orcid": "https://orcid.org/0000-0002-3070-0994",
         "position": "last",
@@ -140237,9 +140846,46 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Laurence Bodelot",
+        "openalex_author_id": "https://openalex.org/A5032957012",
+        "orcid": "https://orcid.org/0000-0001-7482-7463",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Centre National de la Recherche Scientifique",
+            "ror": "https://ror.org/02feahw73",
+            "country_code": "FR",
+            "type": "government"
+          },
+          {
+            "name": "École Polytechnique",
+            "ror": "https://ror.org/05hy3tk52",
+            "country_code": "FR",
+            "type": "education"
+          },
+          {
+            "name": "Laboratoire Mécanique des Solides",
+            "ror": "https://ror.org/00xd1ek73",
+            "country_code": "FR",
+            "type": "facility"
+          },
+          {
+            "name": "Institut Polytechnique de Paris",
+            "ror": "https://ror.org/042tfbd02",
+            "country_code": "FR",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Laboratoire de Mécanique des Solides (LMS), CNRS, Ecole Polytechnique Institut Polytechnique de Paris Palaiseau France"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Advanced Materials Technologies",
     "doi": "10.1002/admt.71264",
@@ -140259,7 +140905,7 @@
     "issn_l": "",
     "publisher": "Wiley",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7204083612",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2765038284",
@@ -201913,7 +202559,7 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Amir  Mohammad Jamili",
+        "name": "A.M. Jamili",
         "openalex_author_id": "https://openalex.org/A5051622764",
         "orcid": "https://orcid.org/0009-0006-9254-1569",
         "position": "first",
@@ -300555,7 +301201,7 @@
         ]
       },
       {
-        "name": "Samuel  C. Leguizamon",
+        "name": "Samuel Leguizamon",
         "openalex_author_id": "https://openalex.org/A5025262217",
         "orcid": "https://orcid.org/0000-0003-3395-6562",
         "position": "last",
@@ -333804,7 +334450,7 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Brian  Jun Lee",
+        "name": "Brian J. Lee",
         "openalex_author_id": "https://openalex.org/A5081519275",
         "orcid": "https://orcid.org/0000-0002-8931-3956",
         "position": "first",
@@ -338206,7 +338852,7 @@
     "last_updated": "2026-11-06",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-11-06",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 4",
     "openalex_venue_rank_number": 4,
     "openalex_venue_rank_score": 0.5019047619047619,

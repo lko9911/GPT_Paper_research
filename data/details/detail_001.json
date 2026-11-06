@@ -1,4 +1,106 @@
 {
+  "10.1016/j.rcim.2026.103234": {
+    "author_details": [
+      {
+        "name": "Liang Chen",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Yue Zhao",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Aihua Su",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Wenqiang Yang",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Yu Zheng",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Robotics and Computer-Integrated Manufacturing",
+    "crossref_target_issn": "0736-5845",
+    "issn": [
+      "0736-5845"
+    ],
+    "issn_l": "",
+    "publisher": "Elsevier BV",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7119742978",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S118216261",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S118216261",
+      "issn_l": "0736-5845",
+      "issn": [
+        "0736-5845",
+        "1879-2537"
+      ],
+      "type": "journal",
+      "host_organization_name": "Elsevier BV",
+      "works_count": 3891,
+      "cited_by_count": 147298,
+      "two_year_mean_citedness": 10.130597014925373,
+      "h_index": 157,
+      "i10_index": 2463,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 10.130597014925373,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - The study focuses on a digital twin approach for analyzing deviations in the assembly of aircraft hydraulic pipelines.\n2. Problem - It addresses challenges in ensuring precision and quality during the assembly process of hydraulic pipelines in aircraft.\n3. Method - The authors propose a deviation analysis framework that leverages digital twin technology to simulate and evaluate assembly processes.\n4. Key Result - The approach effectively identifies and quantifies deviations, leading to improved assembly accuracy and efficiency.\n5. Takeaway - Implementing a digital twin-driven analysis can significantly enhance the quality control of complex assembly tasks in aerospace manufacturing.",
+    "relevance_note_en": "The summary captures the essence of the study's focus on digital twin technology in assembly processes.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-11-06",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1016/j.rcim.2026.103234"
+  },
   "10.1016/j.rcim.2025.103213": {
     "author_details": [
       {
@@ -3479,8 +3581,8 @@
         ]
       }
     ],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
     "crossref_collection_route": "keyword_query",
@@ -3493,7 +3595,7 @@
     "issn_l": "",
     "publisher": "Wiley",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7202249564",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S5407036553",
@@ -8683,8 +8785,8 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
     "crossref_collection_route": "keyword_query",
@@ -8696,8 +8798,8 @@
     "issn_l": "",
     "publisher": "Elsevier BV",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7225295413",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2764766352",
     "venue_metrics": {
@@ -23933,7 +24035,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "last_seen_in_crossref_run": "2026-11-06",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "id": "10.1016/j.chempr.2026.103082"
   },
   "10.1002/adfm.202523767": {
@@ -33276,107 +33378,5 @@
     "not_seen_in_latest_crossref_run": false,
     "last_seen_in_crossref_run": "2026-11-06",
     "id": "10.1016/j.amf.2026.200405"
-  },
-  "10.1016/j.matdes.2026.115704": {
-    "author_details": [
-      {
-        "name": "Kaveh Rahmani",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Shawn Ravanbod",
-        "orcid": "https://orcid.org/0000-0002-6944-5847",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Mohammadreza L. Dezaki",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Callum Branfoot",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Mahdi Bodaghi",
-        "orcid": "https://orcid.org/0000-0002-0707-944X",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "Materials & Design",
-    "crossref_target_issn": "0264-1275",
-    "issn": [
-      "0264-1275"
-    ],
-    "issn_l": "",
-    "publisher": "Elsevier BV",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W7130895099",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S8792693",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S8792693",
-      "issn_l": "0264-1275",
-      "issn": [
-        "0264-1275",
-        "1873-4197"
-      ],
-      "type": "journal",
-      "host_organization_name": "Elsevier BV",
-      "works_count": 14476,
-      "cited_by_count": 516286,
-      "two_year_mean_citedness": 5.543417366946779,
-      "h_index": 222,
-      "i10_index": 8917,
-      "is_core": true,
-      "is_oa": true,
-      "is_in_doaj": true
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 5.543417366946779,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 2",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - This study focuses on a novel pellet-fed 3D/4D printing method for bio-composites.\n2. Problem - The research addresses the limitations of polylactic acid (PLA) in terms of strength, thermal creep, and flammability.\n3. Method - A continuous-fibre co-deposition technique is utilized to create a PLA/bamboo-charcoal/continuous-silk-fibre composite directly from pellets.\n4. Key Result - The resulting composite shows significant improvements in tensile strength, bending strength, and reduced burning rates compared to pure PLA.\n5. Takeaway - This approach not only enhances material properties but also supports sustainable manufacturing practices by minimizing waste and energy use.",
-    "relevance_note_en": "The summary captures the core findings and implications of the research effectively.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-11-06",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1016/j.matdes.2026.115704"
   }
 }

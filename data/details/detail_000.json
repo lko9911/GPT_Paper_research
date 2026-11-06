@@ -3217,8 +3217,8 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
     "crossref_collection_route": "issn_venue_query",
@@ -3231,7 +3231,7 @@
     "issn_l": "",
     "publisher": "Springer Science and Business Media LLC",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7225244907",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S77056576",
@@ -9014,8 +9014,8 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
     "crossref_collection_route": "issn_venue_query",
@@ -9028,7 +9028,7 @@
     "issn_l": "",
     "publisher": "Springer Science and Business Media LLC",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7202160739",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S4210206835",
@@ -9073,6 +9073,213 @@
     "not_seen_in_latest_crossref_run": false,
     "last_seen_in_crossref_run": "2026-11-06",
     "id": "10.1007/s40964-026-01889-0"
+  },
+  "10.1080/17452759.2026.2751873": {
+    "author_details": [
+      {
+        "name": "Kunpeng Zhu",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Wuhan University of Science and Technology"
+          },
+          {
+            "name": "Hefei Institutes of Physical Science, Chinese Academy of Sciences"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Wuhan University of Science and Technology",
+          "Hefei Institutes of Physical Science, Chinese Academy of Sciences"
+        ]
+      },
+      {
+        "name": "Yangkun Mao",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Hefei Institutes of Physical Science, Chinese Academy of Sciences"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Hefei Institutes of Physical Science, Chinese Academy of Sciences"
+        ]
+      },
+      {
+        "name": "Qi Zhou",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Lingyun Science & Technology Group Co."
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Lingyun Science & Technology Group Co."
+        ]
+      },
+      {
+        "name": "Jiawei Yan",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "AVIC Xi’an Aircraft Industry Group Company Ltd."
+          }
+        ],
+        "raw_affiliation_strings": [
+          "AVIC Xi’an Aircraft Industry Group Company Ltd."
+        ]
+      },
+      {
+        "name": "Jiangge Deng",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Lingyun Science & Technology Group Co."
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Lingyun Science & Technology Group Co."
+        ]
+      },
+      {
+        "name": "Qisheng Wang",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Hefei Institutes of Physical Science, Chinese Academy of Sciences"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Hefei Institutes of Physical Science, Chinese Academy of Sciences"
+        ]
+      },
+      {
+        "name": "Meng Cheng",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Wuhan University of Science and Technology"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Wuhan University of Science and Technology"
+        ]
+      },
+      {
+        "name": "Ying Hsi Jerry Fuh",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "National University of Singapore"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "National University of Singapore"
+        ]
+      },
+      {
+        "name": "Qing-Guo Wang",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Wuhan University of Science and Technology"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Wuhan University of Science and Technology"
+        ]
+      },
+      {
+        "name": "Xin Lin",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Wuhan University of Science and Technology"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Wuhan University of Science and Technology"
+        ]
+      }
+    ],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Virtual and Physical Prototyping",
+    "crossref_target_issn": "1745-2759",
+    "issn": [
+      "1745-2759",
+      "1745-2767"
+    ],
+    "issn_l": "",
+    "publisher": "Informa UK Limited",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S152936027",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S152936027",
+      "issn_l": "1745-2759",
+      "issn": [
+        "1745-2759",
+        "1745-2767"
+      ],
+      "type": "journal",
+      "host_organization_name": "Taylor & Francis",
+      "works_count": 1288,
+      "cited_by_count": 39605,
+      "two_year_mean_citedness": 10.10738255033557,
+      "h_index": 92,
+      "i10_index": 718,
+      "is_core": true,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 10.10738255033557,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - Next-generation process monitoring and control for metal additive manufacturing: toward a physics-informed digital twin framework is a 2026 paper from Virtual and Physical Prototyping about Digital Twins and Manufacturing automation.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Digital Twins and Manufacturing automation.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Digital Twins and Manufacturing automation; current relevance score is 7/10.",
+    "relevance_note_en": "Relevant to the tracker through Digital Twins and Manufacturing automation; score: 7/10.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-11-06",
+    "id": "10.1080/17452759.2026.2751873"
   },
   "10.1007/s10845-026-02970-9": {
     "author_details": [
@@ -28394,107 +28601,5 @@
     "not_seen_in_latest_crossref_run": false,
     "last_seen_in_crossref_run": "2026-11-06",
     "id": "10.1016/j.compind.2026.104544"
-  },
-  "10.1016/j.rcim.2026.103234": {
-    "author_details": [
-      {
-        "name": "Liang Chen",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Yue Zhao",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Aihua Su",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Wenqiang Yang",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Yu Zheng",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "Robotics and Computer-Integrated Manufacturing",
-    "crossref_target_issn": "0736-5845",
-    "issn": [
-      "0736-5845"
-    ],
-    "issn_l": "",
-    "publisher": "Elsevier BV",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W7119742978",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S118216261",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S118216261",
-      "issn_l": "0736-5845",
-      "issn": [
-        "0736-5845",
-        "1879-2537"
-      ],
-      "type": "journal",
-      "host_organization_name": "Elsevier BV",
-      "works_count": 3891,
-      "cited_by_count": 147298,
-      "two_year_mean_citedness": 10.130597014925373,
-      "h_index": 157,
-      "i10_index": 2463,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Core manufacturing journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 10.130597014925373,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 1",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - The study focuses on a digital twin approach for analyzing deviations in the assembly of aircraft hydraulic pipelines.\n2. Problem - It addresses challenges in ensuring precision and quality during the assembly process of hydraulic pipelines in aircraft.\n3. Method - The authors propose a deviation analysis framework that leverages digital twin technology to simulate and evaluate assembly processes.\n4. Key Result - The approach effectively identifies and quantifies deviations, leading to improved assembly accuracy and efficiency.\n5. Takeaway - Implementing a digital twin-driven analysis can significantly enhance the quality control of complex assembly tasks in aerospace manufacturing.",
-    "relevance_note_en": "The summary captures the essence of the study's focus on digital twin technology in assembly processes.",
-    "abstract_used_for_summary": false,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-11-06",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1016/j.rcim.2026.103234"
   }
 }
