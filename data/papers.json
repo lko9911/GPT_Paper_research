@@ -14305,9 +14305,41 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Qing-Guo Wang",
+        "openalex_author_id": "https://openalex.org/A5161137096",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Chinese Academy of Sciences",
+            "ror": "https://ror.org/034t30j35",
+            "country_code": "CN",
+            "type": "government"
+          },
+          {
+            "name": "Hefei Institutes of Physical Science",
+            "ror": "https://ror.org/046n57345",
+            "country_code": "CN",
+            "type": "facility"
+          },
+          {
+            "name": "Wuhan University of Science and Technology",
+            "ror": "https://ror.org/00e4hrk88",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Hefei Institutes of Physical Science, Chinese Academy of Sciences",
+          "Wuhan University of Science and Technology"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Virtual and Physical Prototyping",
     "doi": "10.1080/17452759.2026.2751873",
@@ -14327,8 +14359,8 @@
     "issn_l": "",
     "publisher": "Informa UK Limited",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7225403737",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S152936027",
     "venue_metrics": {
@@ -29466,7 +29498,7 @@
     ],
     "corresponding_authors": [
       {
-        "name": "N. Arunachalam",
+        "name": "Narayanaperumal Arunachalam",
         "openalex_author_id": "https://openalex.org/A5055086752",
         "orcid": "https://orcid.org/0000-0001-5768-6347",
         "position": "middle",
@@ -52262,9 +52294,29 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Ryan L. Truby",
+        "openalex_author_id": "https://openalex.org/A5058930967",
+        "orcid": "https://orcid.org/0000-0002-1313-6463",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Northwestern University",
+            "ror": "https://ror.org/000e0be47",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Materials Science and Engineering, Northwestern University, Evanston, IL 60208, USA",
+          "Department of Mechanical Engineering, Northwestern University, Evanston, IL 60208, USA"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Science Advances",
     "doi": "10.1126/sciadv.aei1146",
@@ -52283,7 +52335,7 @@
     "issn_l": "",
     "publisher": "American Association for the Advancement of Science (AAAS)",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7225250001",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2737427234",
@@ -82556,7 +82608,7 @@
     "last_updated": "2026-11-07",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-11-07",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 8.402641353693769,
@@ -111392,9 +111444,28 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Liang Zhang",
+        "openalex_author_id": "https://openalex.org/A5100425264",
+        "orcid": "https://orcid.org/0000-0002-2914-9891",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Science and Technology Beijing",
+            "ror": "https://ror.org/02egmk993",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Chemistry and Biological Engineering University of Science and Technology Beijing  Beijing People's Republic of China"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Advanced Functional Materials",
     "doi": "10.1002/adfm.79487",
@@ -111414,8 +111485,8 @@
     "issn_l": "",
     "publisher": "Wiley",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7225427093",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S135204980",
     "venue_metrics": {
@@ -148155,10 +148226,10 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-12",
-    "last_updated": "2026-11-06",
+    "last_updated": "2026-11-07",
     "is_weekly_new": false,
-    "last_seen_in_crossref_run": "2026-11-06",
-    "not_seen_in_latest_crossref_run": true,
+    "last_seen_in_crossref_run": "2026-11-07",
+    "not_seen_in_latest_crossref_run": false,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 4.095050580487474,
@@ -149377,9 +149448,9 @@
     ],
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "Robotics and Computer-Integrated Manufacturing",
-    "crossref_target_issn": "0736-5845",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
     "issn": [
       "0736-5845"
     ],

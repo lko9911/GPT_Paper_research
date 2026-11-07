@@ -5047,8 +5047,8 @@
         ]
       }
     ],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
     "crossref_collection_route": "issn_venue_query",
@@ -5060,7 +5060,7 @@
     "issn_l": "",
     "publisher": "American Association for the Advancement of Science (AAAS)",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7225250001",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2737427234",
@@ -25013,7 +25013,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "last_seen_in_crossref_run": "2026-11-07",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "id": "10.1002/advs.202600009"
   },
   "10.1002/adfm.202530758": {

@@ -11087,8 +11087,8 @@
         ]
       }
     ],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
     "crossref_collection_route": "issn_venue_query",
@@ -11101,8 +11101,8 @@
     "issn_l": "",
     "publisher": "Wiley",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7225427093",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S135204980",
     "venue_metrics": {
@@ -35518,8 +35518,8 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-11-06",
-    "not_seen_in_latest_crossref_run": true,
+    "last_seen_in_crossref_run": "2026-11-07",
+    "not_seen_in_latest_crossref_run": false,
     "id": "10.3390/ma18081820"
   },
   "10.3390/jcs9100534": {
@@ -36311,9 +36311,9 @@
     "corresponding_author_source": "openalex_cross_check",
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "Robotics and Computer-Integrated Manufacturing",
-    "crossref_target_issn": "0736-5845",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
     "issn": [
       "0736-5845"
     ],
