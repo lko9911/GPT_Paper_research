@@ -56283,10 +56283,10 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-07-03",
-    "last_updated": "2026-11-07",
+    "last_updated": "2026-11-08",
     "is_weekly_new": false,
-    "not_seen_in_latest_crossref_run": true,
-    "last_seen_in_crossref_run": "2026-11-07",
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-11-08",
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 17.209580838323355,
@@ -145093,9 +145093,29 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Shlomo Magdassi",
+        "openalex_author_id": "https://openalex.org/A5001377522",
+        "orcid": "https://orcid.org/0000-0002-6794-0553",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Hebrew University of Jerusalem",
+            "ror": "https://ror.org/03qxff017",
+            "country_code": "IL",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Campus for Research Excellence and Technological Enterprise (CREATE)  Singapore Singapore",
+          "Casali Center for Applied Chemistry Institute of Chemistry, and Center for Nanotechnology and Nanoscience Hebrew University of Jerusalem  Jerusalem Israel"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Advanced Materials Technologies",
     "doi": "10.1002/admt.71196",
@@ -145115,8 +145135,8 @@
     "issn_l": "",
     "publisher": "Wiley",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7128166324",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2765038284",
     "venue_metrics": {
@@ -145261,29 +145281,9 @@
         ]
       }
     ],
-    "corresponding_authors": [
-      {
-        "name": "Shlomo Magdassi",
-        "openalex_author_id": "https://openalex.org/A5001377522",
-        "orcid": "https://orcid.org/0000-0002-6794-0553",
-        "position": "last",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "Hebrew University of Jerusalem",
-            "ror": "https://ror.org/03qxff017",
-            "country_code": "IL",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Campus for Research Excellence and Technological Enterprise (CREATE)  Singapore Singapore",
-          "Casali Center for Applied Chemistry Institute of Chemistry, and Center for Nanotechnology and Nanoscience Hebrew University of Jerusalem  Jerusalem Israel"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
     "year": 2026,
     "venue": "Advanced Materials Technologies",
     "doi": "10.1002/admt.202502588",
@@ -145303,8 +145303,8 @@
     "issn_l": "",
     "publisher": "Wiley",
     "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W7128166324",
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2765038284",
     "venue_metrics": {
@@ -154262,29 +154262,9 @@
         ]
       }
     ],
-    "corresponding_authors": [
-      {
-        "name": "Eric D. Wachsman",
-        "openalex_author_id": "https://openalex.org/A5026590769",
-        "orcid": "https://orcid.org/0000-0002-0667-1927",
-        "position": "last",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "University of Maryland, College Park",
-            "ror": "https://ror.org/047s2c258",
-            "country_code": "US",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Materials Science &amp; Engineering University of Maryland  College Park Maryland USA",
-          "Maryland Energy Innovation Institute University of Maryland  College Park Maryland USA"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
     "year": 2025,
     "venue": "Advanced Functional Materials",
     "doi": "10.1002/adfm.202511349",
@@ -154304,8 +154284,8 @@
     "issn_l": "",
     "publisher": "Wiley",
     "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4412777799",
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S135204980",
     "venue_metrics": {
@@ -158565,7 +158545,7 @@
     "publisher": "Informa UK Limited",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4393262154",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S4210238617",
     "venue_metrics": {
@@ -278245,34 +278225,9 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [
-      {
-        "name": "Jianfeng Tao",
-        "openalex_author_id": "https://openalex.org/A5062253666",
-        "orcid": "https://orcid.org/0000-0001-6098-9779",
-        "position": "middle",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "Shanghai Jiao Tong University",
-            "ror": "https://ror.org/0220qvk04",
-            "country_code": "CN",
-            "type": "education"
-          },
-          {
-            "name": "State Key Laboratory of Mechanical System and Vibration",
-            "ror": "https://ror.org/02hphne60",
-            "country_code": "CN",
-            "type": "facility"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "State Key Laboratory of Mechanical Systems and Vibration, Shang Hai Jiao Tong University, Shanghai, China 201100"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
     "year": 2024,
     "venue": "Journal of Manufacturing Systems",
     "doi": "10.1016/j.jmsy.2024.10.016",
@@ -278291,8 +278246,8 @@
     "issn_l": "",
     "publisher": "Elsevier BV",
     "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4403929936",
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S201698446",
     "venue_metrics": {
@@ -339739,7 +339694,7 @@
       {
         "name": "Pengbing Zhao",
         "openalex_author_id": "https://openalex.org/A5063682437",
-        "orcid": "https://orcid.org/0000-0002-8330-3802",
+        "orcid": "https://orcid.org/0009-0009-7802-150X",
         "position": "middle",
         "is_corresponding": true,
         "institutions": [
