@@ -1,4 +1,155 @@
 {
+  "10.63463/kjes1230": {
+    "author_details": [
+      {
+        "name": "Mohamed abd Almahdi",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Islamic Azad University, Iran."
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Islamic Azad University, Iran."
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2709-6718"
+    ],
+    "issn_l": "",
+    "publisher": "College of Engineering - University of Kerbala",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7167032426",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S5407023041",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S5407023041",
+      "issn_l": "2709-6718",
+      "issn": [
+        "2709-6718"
+      ],
+      "type": "journal",
+      "host_organization_name": null,
+      "works_count": 113,
+      "cited_by_count": 54,
+      "two_year_mean_citedness": 0.08695652173913043,
+      "h_index": 3,
+      "i10_index": 0,
+      "is_core": false,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 0.08695652173913043,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 4",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - This study focuses on a physics-informed machine learning framework for optimizing processes in laser powder bed fusion additive manufacturing.\n2. Problem - Quality variability in additive manufacturing arises from complex interactions and defect formations during the build process.\n3. Method - The research integrates physics knowledge with advanced machine learning models to predict outcomes and optimize parameters in near real-time.\n4. Key Result - The physics-informed neural network demonstrated superior performance, achieving a coefficient of determination of 0.827 and reducing mean absolute error by up to 4.7%.\n5. Takeaway - Combining physical principles with machine learning significantly improves prediction accuracy and enables effective real-time control in additive manufacturing.",
+    "relevance_note_en": "The paper presents a novel approach that effectively addresses quality issues in additive manufacturing using machine learning.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-11-09",
+    "id": "10.63463/kjes1230"
+  },
+  "10.3390/mca31050200": {
+    "author_details": [
+      {
+        "name": "Daniel N. Wilke",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "School of Mechanical, Industrial and Aeronautical Engineering, University of the Witwatersrand, Johannesburg 2050, South Africa"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Mechanical, Industrial and Aeronautical Engineering, University of the Witwatersrand, Johannesburg 2050, South Africa"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2297-8747"
+    ],
+    "issn_l": "",
+    "publisher": "MDPI AG",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7213982749",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S4210201516",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210201516",
+      "issn_l": "1300-686X",
+      "issn": [
+        "1300-686X",
+        "2297-8747"
+      ],
+      "type": "journal",
+      "host_organization_name": "Multidisciplinary Digital Publishing Institute",
+      "works_count": 1895,
+      "cited_by_count": 15179,
+      "two_year_mean_citedness": 1.7860262008733625,
+      "h_index": 47,
+      "i10_index": 376,
+      "is_core": true,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 1.7860262008733625,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 3",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - Physics by Design: Additive Manufacturing for Reproducible Science is a 2026 paper from Mathematical and Computational Applications about Vat photopolymerization and FDM/Material extrusion.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Vat photopolymerization and FDM/Material extrusion.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Vat photopolymerization and FDM/Material extrusion; current relevance score is 5/10.",
+    "relevance_note_en": "Relevant to the tracker through Vat photopolymerization and FDM/Material extrusion; score: 5/10.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-11-09",
+    "id": "10.3390/mca31050200"
+  },
   "10.1016/j.amf.2026.200405": {
     "author_details": [
       {
@@ -21154,6 +21305,133 @@
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/adma.202516809"
   },
+  "10.1007/s40964-026-02049-0": {
+    "author_details": [
+      {
+        "name": "Gabriel Maia Vieira",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Marcelo Augusto Rosa",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Apuniano Aman Baldarrago Alcantara",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Eric Diller",
+        "orcid": "https://orcid.org/0000-0003-4627-0797",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Paulo Antônio Pereira Wendhausen",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Maximiliano Delany Martins",
+        "orcid": "https://orcid.org/0000-0003-4010-8043",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Bruno Lourencio Dias dos Santos",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Juliano Assis Baron Engerroff",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Progress in Additive Manufacturing",
+    "crossref_target_issn": "2363-9512",
+    "issn": [
+      "2363-9512",
+      "2363-9520"
+    ],
+    "issn_l": "",
+    "publisher": "Springer Science and Business Media LLC",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S4210206835",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210206835",
+      "issn_l": "2363-9512",
+      "issn": [
+        "2363-9512",
+        "2363-9520"
+      ],
+      "type": "journal",
+      "host_organization_name": "Springer Science+Business Media",
+      "works_count": 1809,
+      "cited_by_count": 21422,
+      "two_year_mean_citedness": 4.039043824701195,
+      "h_index": 63,
+      "i10_index": 494,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 4.039043824701195,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 2",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - Assessment of 4D magnetic printing capability of UV composite resin containing recycled Nd-Fe-B nanocrystalline particles is a 2026 paper from Progress in Additive Manufacturing about 4D printing and DLP.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to 4D printing and DLP.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for 4D printing and DLP; current relevance score is 5/10.",
+    "relevance_note_en": "Relevant to the tracker through 4D printing and DLP; score: 5/10.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-11-09",
+    "id": "10.1007/s40964-026-02049-0"
+  },
   "10.1016/j.polymer.2026.130199": {
     "author_details": [
       {
@@ -35620,7 +35898,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "last_seen_in_crossref_run": "2026-11-09",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "id": "10.3390/ma18081820"
   },
   "10.3390/jcs9100534": {
@@ -36356,304 +36634,5 @@
     "last_seen_in_crossref_run": "2026-11-09",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/adfm.202502042"
-  },
-  "10.1016/j.rcim.2025.103012": {
-    "author_details": [
-      {
-        "name": "Bohan Feng",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Zeqing Wang",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Lianjie Yuan",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Qi Zhou",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Yulin Chen",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Youyi Bi",
-        "orcid": "https://orcid.org/0009-0002-0815-8569",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "Robotics and Computer-Integrated Manufacturing",
-    "crossref_target_issn": "0736-5845",
-    "issn": [
-      "0736-5845"
-    ],
-    "issn_l": "",
-    "publisher": "Elsevier BV",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4408179778",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S118216261",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S118216261",
-      "issn_l": "0736-5845",
-      "issn": [
-        "0736-5845",
-        "1879-2537"
-      ],
-      "type": "journal",
-      "host_organization_name": "Elsevier BV",
-      "works_count": 3891,
-      "cited_by_count": 147298,
-      "two_year_mean_citedness": 10.130597014925373,
-      "h_index": 157,
-      "i10_index": 2463,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Core manufacturing journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 10.130597014925373,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 1",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - The study focuses on enhancing human-robot interaction in manufacturing through a co-evolution approach.\n2. Problem - Current methods for human-robot collaboration are limited in adaptability to dynamic environments and unforeseen changes.\n3. Method - The authors propose a co-evolution framework utilizing human digital twin and mixed reality technologies for safe motion planning.\n4. Key Result - The approach was validated in realistic manufacturing scenarios, showing improved adaptability and interaction between humans and robots.\n5. Takeaway - Integrating human digital twins and mixed reality can significantly enhance the safety and effectiveness of human-robot interactions in smart manufacturing.",
-    "relevance_note_en": "The summary captures the essence of the study's focus on improving human-robot interaction through innovative technologies.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-11-09",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1016/j.rcim.2025.103012"
-  },
-  "10.1016/j.rcim.2025.102965": {
-    "author_details": [
-      {
-        "name": "Zhongfei Zhang",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Ting Qu",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "George Q. Huang",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Yongheng Zhang",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Kuo Zhao",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Jun Zhang",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "Robotics and Computer-Integrated Manufacturing",
-    "crossref_target_issn": "0736-5845",
-    "issn": [
-      "0736-5845"
-    ],
-    "issn_l": "",
-    "publisher": "Elsevier BV",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4406894270",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S118216261",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S118216261",
-      "issn_l": "0736-5845",
-      "issn": [
-        "0736-5845",
-        "1879-2537"
-      ],
-      "type": "journal",
-      "host_organization_name": "Elsevier BV",
-      "works_count": 3891,
-      "cited_by_count": 147298,
-      "two_year_mean_citedness": 10.130597014925373,
-      "h_index": 157,
-      "i10_index": 2463,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Core manufacturing journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 10.130597014925373,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 1",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - The paper explores a decision-making framework for social production logistics using blockchain and digital twin technologies.\n2. Problem - It addresses the challenges of trust and synchronization in decision-making processes within logistics systems.\n3. Method - The authors propose a method that integrates blockchain for transparency and digital twins for real-time data synchronization.\n4. Key Result - The proposed approach enhances trust and efficiency in logistics decision-making, demonstrating significant improvements over traditional methods.\n5. Takeaway - Implementing blockchain and digital twins can revolutionize decision-making in social production logistics by fostering trust and synchronization.",
-    "relevance_note_en": "The paper presents a novel approach to improve decision-making in logistics systems, aligning well with current trends in technology integration.",
-    "abstract_used_for_summary": false,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-11-09",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1016/j.rcim.2025.102965"
-  },
-  "10.1007/s40964-025-00988-8": {
-    "author_details": [
-      {
-        "name": "Alessio Pricci",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Gianluca Percoco",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2363-9512",
-      "2363-9520"
-    ],
-    "issn_l": "",
-    "publisher": "Springer Science and Business Media LLC",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4407253661",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S4210206835",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S4210206835",
-      "issn_l": "2363-9512",
-      "issn": [
-        "2363-9512",
-        "2363-9520"
-      ],
-      "type": "journal",
-      "host_organization_name": "Springer Science+Business Media",
-      "works_count": 1809,
-      "cited_by_count": 21422,
-      "two_year_mean_citedness": 4.039043824701195,
-      "h_index": 63,
-      "i10_index": 494,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Core manufacturing journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 4.039043824701195,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 2",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - The study focuses on developing a numerical model for optimizing the ironing process in extrusion-based additive manufacturing.\n2. Problem - The challenge addressed is reducing porosity and manufacturing time while improving the mechanical properties of 3D printed PLA parts.\n3. Method - A multiphase non-Newtonian CFD simulation was employed to analyze the effects of various parameters like extrusion temperature and strand overlap on the ironing process.\n4. Key Result - The findings indicate that optimal ironing parameters can significantly reduce manufacturing time by up to 31.97% and enhance ultimate tensile strength by up to 21.49%.\n5. Takeaway - This research lays the groundwork for a digital twin of material extrusion processes, aiming to enhance part quality and efficiency in additive manufacturing.",
-    "relevance_note_en": "The summary captures the core aspects of the study, including its focus, methods, and implications for additive manufacturing.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-11-09",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1007/s40964-025-00988-8"
   }
 }

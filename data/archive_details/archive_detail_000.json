@@ -3031,6 +3031,102 @@
     "pdf_stored": false,
     "id": "10.2139/ssrn.6797269"
   },
+  "10.1109/swc69865.2026.11763896": {
+    "author_details": [
+      {
+        "name": "Isabel Córdoba Quesada",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Tecnológico de Costa Rica"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Tecnológico de Costa Rica"
+        ]
+      },
+      {
+        "name": "Jason Leitón Jiménez",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Tecnológico de Costa Rica"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Tecnológico de Costa Rica"
+        ]
+      },
+      {
+        "name": "Luis Barboza Artavia",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Tecnológico de Costa Rica"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Tecnológico de Costa Rica"
+        ]
+      },
+      {
+        "name": "Luis Chavarría Zamora",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Tecnológico de Costa Rica"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Tecnológico de Costa Rica"
+        ]
+      }
+    ],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "proceedings-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [],
+    "issn_l": "",
+    "publisher": "IEEE",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "venue_trust_reason": "conference/proceedings not in trusted allowlist",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - Digital twin system for analysis and verification of automotive parts through photogrammetry and 3D printing is a 2026 paper from 2026 IEEE Smart World Congress (SWC) about Digital Twins.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Digital Twins.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Digital Twins; current relevance score is 7/10.",
+    "relevance_note_en": "Relevant to the tracker through Digital Twins; score: 7/10.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-11-09",
+    "id": "10.1109/swc69865.2026.11763896"
+  },
   "10.1201/9781042024865-23": {
     "author_details": [
       {
@@ -19781,51 +19877,5 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "id": "10.1115/imece-india2025-159500"
-  },
-  "10.31224/5307": {
-    "author_details": [
-      {
-        "name": "Yonatan Morocz",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "posted-content",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [],
-    "issn_l": "",
-    "publisher": "Open Engineering Inc",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4414013152",
-    "openalex_work_id": "",
-    "openalex_source_id": "",
-    "venue_metrics": {},
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": null,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
-    },
-    "venue_trust_reason": "missing venue metadata",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The paper discusses advancements in multi-axis Fused Deposition Modeling (FDM) 3D printing.\n2. Problem - Traditional FDM is limited by a single build direction, leading to anisotropic properties and the need for support structures.\n3. Method - The authors propose a method that utilizes standard 3-axis printers with in-situ printed work-holding components to enable multi-axis fabrication.\n4. Key Result - This approach allows for improved mechanical interfaces and reduced support needs, achieving tolerances of 100–300 µm in various case studies.\n5. Takeaway - The proposed framework enhances design flexibility in FDM while minimizing the need for specialized equipment.",
-    "relevance_note_en": "The summary captures the core contributions and findings of the paper effectively.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "id": "10.31224/5307"
   }
 }

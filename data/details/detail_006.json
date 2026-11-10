@@ -1,4 +1,368 @@
 {
+  "10.1021/acsami.4c14792": {
+    "author_details": [
+      {
+        "name": "Joselle M. McCracken",
+        "orcid": "https://orcid.org/0000-0002-0411-3542",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Chemical and Biological Engineering, University of Colorado Boulder, Boulder, Colorado 80309, United States"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Chemical and Biological Engineering, University of Colorado Boulder, Boulder, Colorado 80309, United States"
+        ]
+      },
+      {
+        "name": "Grant E. Bauman",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Chemical and Biological Engineering, University of Colorado Boulder, Boulder, Colorado 80309, United States"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Chemical and Biological Engineering, University of Colorado Boulder, Boulder, Colorado 80309, United States"
+        ]
+      },
+      {
+        "name": "Graham Williams",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Mechanical Engineering, University of Colorado Boulder, Boulder, Colorado 80309, United States"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering, University of Colorado Boulder, Boulder, Colorado 80309, United States"
+        ]
+      },
+      {
+        "name": "Misael Santos",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Chemical and Biological Engineering, University of Colorado Boulder, Boulder, Colorado 80309, United States"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Chemical and Biological Engineering, University of Colorado Boulder, Boulder, Colorado 80309, United States"
+        ]
+      },
+      {
+        "name": "Lawrence Smith",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Mechanical Engineering, University of Colorado Boulder, Boulder, Colorado 80309, United States"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering, University of Colorado Boulder, Boulder, Colorado 80309, United States"
+        ]
+      },
+      {
+        "name": "Robert MacCurdy",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Mechanical Engineering, University of Colorado Boulder, Boulder, Colorado 80309, United States"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering, University of Colorado Boulder, Boulder, Colorado 80309, United States"
+        ]
+      },
+      {
+        "name": "Timothy J. White",
+        "orcid": "https://orcid.org/0000-0001-8006-7173",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Chemical and Biological Engineering, University of Colorado Boulder, Boulder, Colorado 80309, United States"
+          },
+          {
+            "name": "Materials Science and Engineering Program, University of Colorado Boulder, Boulder, Colorado 80309, United States"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Chemical and Biological Engineering, University of Colorado Boulder, Boulder, Colorado 80309, United States",
+          "Materials Science and Engineering Program, University of Colorado Boulder, Boulder, Colorado 80309, United States"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "ACS Applied Materials & Interfaces",
+    "crossref_target_issn": "1944-8244",
+    "issn": [
+      "1944-8244",
+      "1944-8252"
+    ],
+    "issn_l": "",
+    "publisher": "American Chemical Society (ACS)",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4404991086",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S164001016",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S164001016",
+      "issn_l": "1944-8244",
+      "issn": [
+        "1944-8244",
+        "1944-8252"
+      ],
+      "type": "journal",
+      "host_organization_name": "American Chemical Society",
+      "works_count": 69722,
+      "cited_by_count": 3298786,
+      "two_year_mean_citedness": 7.780907972281588,
+      "h_index": 372,
+      "i10_index": 53076,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 7.780907972281588,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The study focuses on the cuboidal deformation of multimaterial composites made through 3-D printing of liquid crystalline elastomers.\n2. Problem - Understanding how the geometry and composition of these composites influence their thermomechanical deformation upon heating.\n3. Method - The research combines experimental characterization with finite element analysis to investigate the deformation behavior of the printed elements.\n4. Key Result - Findings reveal that local stress gradients, influenced by material composition and anisotropy, drive the cuboidal shape transformation in the composites.\n5. Takeaway - The ability to manipulate the spatial distribution of materials leads to complex deformation behaviors, offering insights into multimaterial elastomer actuation.",
+    "relevance_note_en": "The summary captures the essence of the study's focus on multimaterial composites and their deformation characteristics.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-11-09",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1021/acsami.4c14792"
+  },
+  "10.24425/amm.2024.150902": {
+    "author_details": [
+      {
+        "name": "M. Emami",
+        "orcid": "https://orcid.org/0000-0001-8369-6565",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "University of Bonab, Department of Materials Science and Engineering, Bonab, Iran"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "University of Bonab, Department of Materials Science and Engineering, Bonab, Iran"
+        ]
+      },
+      {
+        "name": "S.H. Elahi",
+        "orcid": "https://orcid.org/0000-0002-6658-8834",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Arak University of Technology, Department of Mechanical engineering, Arak, Iran"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Arak University of Technology, Department of Mechanical engineering, Arak, Iran"
+        ]
+      }
+    ],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2300-1909"
+    ],
+    "issn_l": "",
+    "publisher": "Polish Academy of Sciences Chancellery",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "https://openalex.org/W4402884184",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S20440071",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S20440071",
+      "issn_l": "1733-3490",
+      "issn": [
+        "1733-3490",
+        "2300-1909"
+      ],
+      "type": "journal",
+      "host_organization_name": "De Gruyter Open",
+      "works_count": 4617,
+      "cited_by_count": 26723,
+      "two_year_mean_citedness": 0.7265917602996255,
+      "h_index": 41,
+      "i10_index": 854,
+      "is_core": true,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 0.7265917602996255,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 4",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The study focuses on controlling dilution in multilayer welding for additive manufacturing of functionally graded materials.\n2. Problem - Dilution during welding significantly affects the properties of functionally graded materials.\n3. Method - The research examined the impact of weld overlay layer number and thickness on dilution using gas metal arc and flux-cored arc welding processes.\n4. Key Result - It was found that weld thickness primarily influences dilution, while the arrangement of layers does not have a direct effect.\n5. Takeaway - Controlling weld overlay thickness is crucial for managing chemical composition changes in multilayer welding.",
+    "relevance_note_en": "The summary accurately reflects the main findings and implications of the research.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-11-09",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.24425/amm.2024.150902"
+  },
+  "10.1038/s41467-024-49469-6": {
+    "author_details": [
+      {
+        "name": "Pei He",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Junyu Yue",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Zhennan Qiu",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Zijie Meng",
+        "orcid": "https://orcid.org/0000-0002-5375-5162",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Jiankang He",
+        "orcid": "https://orcid.org/0000-0002-9386-5833",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Dichen Li",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Nature Communications",
+    "crossref_target_issn": "2041-1723",
+    "issn": [
+      "2041-1723"
+    ],
+    "issn_l": "",
+    "publisher": "Springer Science and Business Media LLC",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4399799640",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S64187185",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S64187185",
+      "issn_l": "2041-1723",
+      "issn": [
+        "2041-1723"
+      ],
+      "type": "journal",
+      "host_organization_name": "Nature Portfolio",
+      "works_count": 90441,
+      "cited_by_count": 7551319,
+      "two_year_mean_citedness": 16.130086313193587,
+      "h_index": 743,
+      "i10_index": 68559,
+      "is_core": true,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
+    "journal_quality": {
+      "label": "High-impact general journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 16.130086313193587,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - The study focuses on creating biomimetic ionic hydrogel power sources inspired by electric eels.\n2. Problem - Existing methods for developing these power sources suffer from inefficiencies, instability, and limited flexibility due to manual assembly.\n3. Method - A novel consecutive multimaterial printing technique is employed to fabricate these power sources, enhancing their structural integrity and performance.\n4. Key Result - The resulting power sources exhibit impressive stretchability of 137% and can maintain stable voltage outputs over extensive stretching cycles.\n5. Takeaway - This approach enables the efficient production of flexible power sources suitable for various applications, such as wearable technology.",
+    "relevance_note_en": "The summary captures the essence of the study's contributions and findings.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-11-09",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1038/s41467-024-49469-6"
+  },
   "10.1177/00952443241270804": {
     "author_details": [
       {
@@ -32921,481 +33285,5 @@
     "last_seen_in_crossref_run": "2026-11-09",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1080/17452759.2024.2425386"
-  },
-  "10.1126/scirobotics.adh4060": {
-    "author_details": [
-      {
-        "name": "S. Conrad",
-        "orcid": "https://orcid.org/0000-0002-3486-9842",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Plant Biomechanics Group (PBG) Freiburg @ Botanic Garden of the University of Freiburg, Freiburg, Germany."
-          },
-          {
-            "name": "Cluster of Excellence livMatS @ FIT–Freiburg Center for Interactive Materials and Bioinspired Technologies, University of Freiburg, Freiburg, Germany."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Plant Biomechanics Group (PBG) Freiburg @ Botanic Garden of the University of Freiburg, Freiburg, Germany.",
-          "Cluster of Excellence livMatS @ FIT–Freiburg Center for Interactive Materials and Bioinspired Technologies, University of Freiburg, Freiburg, Germany."
-        ]
-      },
-      {
-        "name": "J. Teichmann",
-        "orcid": "https://orcid.org/0000-0003-3501-3074",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Plant Biomechanics Group (PBG) Freiburg @ Botanic Garden of the University of Freiburg, Freiburg, Germany."
-          },
-          {
-            "name": "Cluster of Excellence livMatS @ FIT–Freiburg Center for Interactive Materials and Bioinspired Technologies, University of Freiburg, Freiburg, Germany."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Plant Biomechanics Group (PBG) Freiburg @ Botanic Garden of the University of Freiburg, Freiburg, Germany.",
-          "Cluster of Excellence livMatS @ FIT–Freiburg Center for Interactive Materials and Bioinspired Technologies, University of Freiburg, Freiburg, Germany."
-        ]
-      },
-      {
-        "name": "P. Auth",
-        "orcid": "https://orcid.org/0009-0000-7897-1470",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Plant Biomechanics Group (PBG) Freiburg @ Botanic Garden of the University of Freiburg, Freiburg, Germany."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Plant Biomechanics Group (PBG) Freiburg @ Botanic Garden of the University of Freiburg, Freiburg, Germany."
-        ]
-      },
-      {
-        "name": "N. Knorr",
-        "orcid": "https://orcid.org/0000-0001-7901-4808",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Plant Biomechanics Group (PBG) Freiburg @ Botanic Garden of the University of Freiburg, Freiburg, Germany."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Plant Biomechanics Group (PBG) Freiburg @ Botanic Garden of the University of Freiburg, Freiburg, Germany."
-        ]
-      },
-      {
-        "name": "K. Ulrich",
-        "orcid": "https://orcid.org/0000-0002-4196-8814",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Plant Biomechanics Group (PBG) Freiburg @ Botanic Garden of the University of Freiburg, Freiburg, Germany."
-          },
-          {
-            "name": "Cluster of Excellence livMatS @ FIT–Freiburg Center for Interactive Materials and Bioinspired Technologies, University of Freiburg, Freiburg, Germany."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Plant Biomechanics Group (PBG) Freiburg @ Botanic Garden of the University of Freiburg, Freiburg, Germany.",
-          "Cluster of Excellence livMatS @ FIT–Freiburg Center for Interactive Materials and Bioinspired Technologies, University of Freiburg, Freiburg, Germany."
-        ]
-      },
-      {
-        "name": "D. Bellin",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Plant Biomechanics Group (PBG) Freiburg @ Botanic Garden of the University of Freiburg, Freiburg, Germany."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Plant Biomechanics Group (PBG) Freiburg @ Botanic Garden of the University of Freiburg, Freiburg, Germany."
-        ]
-      },
-      {
-        "name": "T. Speck",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Plant Biomechanics Group (PBG) Freiburg @ Botanic Garden of the University of Freiburg, Freiburg, Germany."
-          },
-          {
-            "name": "Cluster of Excellence livMatS @ FIT–Freiburg Center for Interactive Materials and Bioinspired Technologies, University of Freiburg, Freiburg, Germany."
-          },
-          {
-            "name": "Freiburg Center for Interactive Materials and Bioinspired Technologies (FIT), University of Freiburg, Freiburg, Germany."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Plant Biomechanics Group (PBG) Freiburg @ Botanic Garden of the University of Freiburg, Freiburg, Germany.",
-          "Cluster of Excellence livMatS @ FIT–Freiburg Center for Interactive Materials and Bioinspired Technologies, University of Freiburg, Freiburg, Germany.",
-          "Freiburg Center for Interactive Materials and Bioinspired Technologies (FIT), University of Freiburg, Freiburg, Germany."
-        ]
-      },
-      {
-        "name": "F. J. Tauber",
-        "orcid": "https://orcid.org/0000-0001-7225-1472",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Plant Biomechanics Group (PBG) Freiburg @ Botanic Garden of the University of Freiburg, Freiburg, Germany."
-          },
-          {
-            "name": "Cluster of Excellence livMatS @ FIT–Freiburg Center for Interactive Materials and Bioinspired Technologies, University of Freiburg, Freiburg, Germany."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Plant Biomechanics Group (PBG) Freiburg @ Botanic Garden of the University of Freiburg, Freiburg, Germany.",
-          "Cluster of Excellence livMatS @ FIT–Freiburg Center for Interactive Materials and Bioinspired Technologies, University of Freiburg, Freiburg, Germany."
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2470-9476"
-    ],
-    "issn_l": "",
-    "publisher": "American Association for the Advancement of Science (AAAS)",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4391380825",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S4210213233",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S4210213233",
-      "issn_l": "2470-9476",
-      "issn": [
-        "2470-9476"
-      ],
-      "type": "journal",
-      "host_organization_name": "American Association for the Advancement of Science",
-      "works_count": 952,
-      "cited_by_count": 92140,
-      "two_year_mean_citedness": 15.948328267477203,
-      "h_index": 161,
-      "i10_index": 619,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "High-impact general journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 15.948328267477203,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 1",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - The study focuses on the development of 3D-printed pneumatic logic gates for soft robotic actuators.\n2. Problem - Existing pneumatic control systems for soft robots often require significant manual effort and lack sufficient pressure tolerance.\n3. Method - The authors designed and fabricated 3D-printable pneumatic logic gates that can perform Boolean operations without the need for electronic components.\n4. Key Result - These gates can be produced in under 7 hours and can operate under various pressure conditions, demonstrating their functionality through a pneumatic drink dispenser and a flexible robotic walker.\n5. Takeaway - This innovation offers a more efficient and compliant method for controlling soft robots, potentially expanding their application range.",
-    "relevance_note_en": "The summary captures the essence of the research and its implications for soft robotics.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-11-09",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1126/scirobotics.adh4060"
-  },
-  "10.1016/j.desal.2024.117768": {
-    "author_details": [
-      {
-        "name": "Wanquan Cai",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Zechang Wei",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Jiawen Ji",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Jing Liu",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Yibo Wang",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Fulin Cheng",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Chenyang Cai",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Yu Fu",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "0011-9164"
-    ],
-    "issn_l": "",
-    "publisher": "Elsevier BV",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4398231708",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S86512602",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S86512602",
-      "issn_l": "0011-9164",
-      "issn": [
-        "0011-9164",
-        "1873-4464"
-      ],
-      "type": "journal",
-      "host_organization_name": "Elsevier BV",
-      "works_count": 20998,
-      "cited_by_count": 886980,
-      "two_year_mean_citedness": 9.84362292051756,
-      "h_index": 280,
-      "i10_index": 13710,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 9.84362292051756,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 1",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The study focuses on a novel liquid metal ink designed for 3D printing applications.\n2. Problem - The challenge addressed is the need for effective shape-morphing capabilities in solar evaporators.\n3. Method - A programmable 'freeze-printing' strategy is employed to create the liquid metal structures.\n4. Key Result - The developed ink demonstrates significant potential in enhancing the performance of solar evaporators through shape transformation.\n5. Takeaway - This research highlights the innovative use of liquid metal inks in 3D printing for advanced solar energy applications.",
-    "relevance_note_en": "The summary captures the essence of the paper's contributions and findings.",
-    "abstract_used_for_summary": false,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-11-09",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1016/j.desal.2024.117768"
-  },
-  "10.1089/soro.2023.0079": {
-    "author_details": [
-      {
-        "name": "Yang Yang",
-        "orcid": "https://orcid.org/0000-0001-6216-7437",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "School of Automation, Nanjing University of Information Science and Technology, Nanjing, China."
-          },
-          {
-            "name": "Jiangsu Province Engineering Research Center of Intelligent Meteorological Exploration Robot, Nanjing University of Information Science and Technology, Nanjing, China."
-          },
-          {
-            "name": "Jiangsu Collaborative Innovation Center of Atmospheric Environment and Equipment Technology (CICAEET), Nanjing University of Information Science and Technology, Nanjing, China."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "School of Automation, Nanjing University of Information Science and Technology, Nanjing, China.",
-          "Jiangsu Province Engineering Research Center of Intelligent Meteorological Exploration Robot, Nanjing University of Information Science and Technology, Nanjing, China.",
-          "Jiangsu Collaborative Innovation Center of Atmospheric Environment and Equipment Technology (CICAEET), Nanjing University of Information Science and Technology, Nanjing, China."
-        ]
-      },
-      {
-        "name": "Yuan Xie",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "School of Automation, Nanjing University of Information Science and Technology, Nanjing, China."
-          },
-          {
-            "name": "Jiangsu Province Engineering Research Center of Intelligent Meteorological Exploration Robot, Nanjing University of Information Science and Technology, Nanjing, China."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "School of Automation, Nanjing University of Information Science and Technology, Nanjing, China.",
-          "Jiangsu Province Engineering Research Center of Intelligent Meteorological Exploration Robot, Nanjing University of Information Science and Technology, Nanjing, China."
-        ]
-      },
-      {
-        "name": "Jia Liu",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "School of Automation, Nanjing University of Information Science and Technology, Nanjing, China."
-          },
-          {
-            "name": "Jiangsu Province Engineering Research Center of Intelligent Meteorological Exploration Robot, Nanjing University of Information Science and Technology, Nanjing, China."
-          },
-          {
-            "name": "Tianchang Research Institute of NUIST, Tianchang, Anhui, China."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "School of Automation, Nanjing University of Information Science and Technology, Nanjing, China.",
-          "Jiangsu Province Engineering Research Center of Intelligent Meteorological Exploration Robot, Nanjing University of Information Science and Technology, Nanjing, China.",
-          "Tianchang Research Institute of NUIST, Tianchang, Anhui, China."
-        ]
-      },
-      {
-        "name": "Yunquan Li",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Shien-Ming Wu School of Intelligent Engineering, South China University of Technology, Guangzhou, China."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Shien-Ming Wu School of Intelligent Engineering, South China University of Technology, Guangzhou, China."
-        ]
-      },
-      {
-        "name": "Feifei Chen",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "State Key Laboratory of Mechanical System and Vibration, Shanghai Jiao Tong University and Robotics Institute, School of Mechanical Engineering, Shanghai Jiao Tong University, Shanghai, China."
-          }
-        ],
-        "raw_affiliation_strings": [
-          "State Key Laboratory of Mechanical System and Vibration, Shanghai Jiao Tong University and Robotics Institute, School of Mechanical Engineering, Shanghai Jiao Tong University, Shanghai, China."
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2169-5172",
-      "2169-5180"
-    ],
-    "issn_l": "",
-    "publisher": "SAGE Publications",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4391658527",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S2764443376",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S2764443376",
-      "issn_l": "2169-5172",
-      "issn": [
-        "2169-5172",
-        "2169-5180"
-      ],
-      "type": "journal",
-      "host_organization_name": "Mary Ann Liebert, Inc.",
-      "works_count": 868,
-      "cited_by_count": 44334,
-      "two_year_mean_citedness": 4.570135746606335,
-      "h_index": 106,
-      "i10_index": 569,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 4.570135746606335,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 2",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The study focuses on the creation of 3D-printed origami actuators for a soft robot inspired by multiple animals.\n2. Problem - There is a need for soft robots that can efficiently navigate both aquatic and terrestrial environments while mimicking biological movements.\n3. Method - The researchers designed and manufactured various types of programmable origami actuators, including Z-shaped and twist tower actuators, for different locomotion and hunting functions.\n4. Key Result - Experiments demonstrated that the soft robot could effectively move in water and on land and perform tongue hunting actions using the developed actuators.\n5. Takeaway - This work highlights the potential of 3D-printed origami actuators in advancing soft robotics with bioinspired functionalities.",
-    "relevance_note_en": "The summary captures the essence of the research, focusing on the innovative use of origami actuators in soft robotics.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-11-09",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1089/soro.2023.0079"
   }
 }
