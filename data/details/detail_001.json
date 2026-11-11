@@ -356,8 +356,8 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
     "crossref_collection_route": "issn_venue_query",
@@ -370,8 +370,8 @@
     "issn_l": "",
     "publisher": "Springer Science and Business Media LLC",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7225750175",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S161464388",
     "venue_metrics": {
@@ -5665,6 +5665,255 @@
     "last_seen_in_crossref_run": "2026-10-24",
     "id": "10.1016/j.powtec.2026.123391"
   },
+  "10.1021/acsami.6c18846": {
+    "author_details": [
+      {
+        "name": "Joo-Hyeon Park",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Seoul National University , , ,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Seoul National University , , ,"
+        ]
+      },
+      {
+        "name": "Ju-Yong Lee",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Seoul National University , , ,"
+          },
+          {
+            "name": "Stanford University , , , ,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Seoul National University , , ,",
+          "Stanford University , , , ,"
+        ]
+      },
+      {
+        "name": "Se-Hun Kang",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Seoul National University , , ,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Seoul National University , , ,"
+        ]
+      },
+      {
+        "name": "Minseong Chae",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Seoul National University , , ,"
+          },
+          {
+            "name": "Asan Medical Center , , ,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Seoul National University , , ,",
+          "Asan Medical Center , , ,"
+        ]
+      },
+      {
+        "name": "Minjung Chae",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Seoul National University , , ,"
+          },
+          {
+            "name": "Korea Institute of Science and Technology (KIST) , , ,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Seoul National University , , ,",
+          "Korea Institute of Science and Technology (KIST) , , ,"
+        ]
+      },
+      {
+        "name": "Jeongwoo Ham",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Korea Institute of Science and Technology (KIST) , , ,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Korea Institute of Science and Technology (KIST) , , ,"
+        ]
+      },
+      {
+        "name": "Jae-Young Bae",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Seoul National University , , ,"
+          },
+          {
+            "name": "Seoul National University , , ,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Seoul National University , , ,",
+          "Seoul National University , , ,"
+        ]
+      },
+      {
+        "name": "Yong-Wu Kim",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Seoul National University , , ,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Seoul National University , , ,"
+        ]
+      },
+      {
+        "name": "Jong-hyoung Kim",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Pukyong National University , , ,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Pukyong National University , , ,"
+        ]
+      },
+      {
+        "name": "Myoung-Ryul Ok",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Korea Institute of Science and Technology (KIST) , , ,"
+          },
+          {
+            "name": "KIST School, Korea University of Science and Technology , , ,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Korea Institute of Science and Technology (KIST) , , ,",
+          "KIST School, Korea University of Science and Technology , , ,"
+        ]
+      },
+      {
+        "name": "Seung-Kyun Kang",
+        "orcid": "https://orcid.org/0000-0001-9779-8976",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Seoul National University , , ,"
+          },
+          {
+            "name": "Seoul National University , , ,"
+          },
+          {
+            "name": "Nano Systems Institute SOFT Foundry, Seoul National University , ,"
+          },
+          {
+            "name": "Seoul National University , , ,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Seoul National University , , ,",
+          "Seoul National University , , ,",
+          "Nano Systems Institute SOFT Foundry, Seoul National University , ,",
+          "Seoul National University , , ,"
+        ]
+      }
+    ],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "ACS Applied Materials & Interfaces",
+    "crossref_target_issn": "1944-8244",
+    "issn": [
+      "1944-8244",
+      "1944-8252"
+    ],
+    "issn_l": "",
+    "publisher": "American Chemical Society (ACS)",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S164001016",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S164001016",
+      "issn_l": "1944-8244",
+      "issn": [
+        "1944-8244",
+        "1944-8252"
+      ],
+      "type": "journal",
+      "host_organization_name": "American Chemical Society",
+      "works_count": 69722,
+      "cited_by_count": 3298786,
+      "two_year_mean_citedness": 7.780907972281588,
+      "h_index": 372,
+      "i10_index": 53076,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 7.780907972281588,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - Porous-Architectured Composite for Fully 3D-Printed Biodegradable Soft Electronics is a 2026 paper from ACS Applied Materials & Interfaces about Additive manufacturing.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Additive manufacturing.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Additive manufacturing; current relevance score is 6/10.",
+    "relevance_note_en": "Relevant to the tracker through Additive manufacturing; score: 6/10.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-11-11",
+    "id": "10.1021/acsami.6c18846"
+  },
   "10.1002/advs.202519147": {
     "author_details": [
       {
@@ -7297,7 +7546,7 @@
     "author_details": [
       {
         "name": "Moslem Mohammadi",
-        "orcid": "",
+        "orcid": "https://orcid.org/0000-0002-6321-2778",
         "position": "first",
         "is_corresponding": false,
         "institutions": [
@@ -7310,7 +7559,7 @@
         ]
       },
       {
-        "name": "Euihyun Kim Kim",
+        "name": "Eui-Hyun Kim",
         "orcid": "https://orcid.org/0009-0008-1519-828X",
         "position": "additional",
         "is_corresponding": false,
@@ -7330,11 +7579,11 @@
         "is_corresponding": false,
         "institutions": [
           {
-            "name": "Seoul National University of Science & Technology"
+            "name": "Seoul National University of Science and Technology"
           }
         ],
         "raw_affiliation_strings": [
-          "Seoul National University of Science & Technology"
+          "Seoul National University of Science and Technology"
         ]
       },
       {
@@ -7344,11 +7593,11 @@
         "is_corresponding": false,
         "institutions": [
           {
-            "name": "Deakin University Faculty of Science Engineering and Built Environment"
+            "name": "Deakin University"
           }
         ],
         "raw_affiliation_strings": [
-          "Deakin University Faculty of Science Engineering and Built Environment"
+          "Deakin University"
         ]
       }
     ],
@@ -7403,7 +7652,7 @@
     "core_status": "non-core",
     "venue_scope": "non-core",
     "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - Multistable Kirigami Soft Grippers with Sustainable Magnetic Actuation and Conformal 3D/4D Printing is a 2026 paper from Bioinspiration & Biomimetics about FGAM, 4D printing, and FDM/Material extrusion.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to FGAM, 4D printing, and FDM/Material extrusion.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for FGAM, 4D printing, and FDM/Material extrusion; current relevance score is 6/10.",
+    "ai_summary_en": "1. Topic - Multistable kirigami soft grippers with sustainable magnetic actuation and conformal 3D/4D printing is a 2026 paper from Bioinspiration & Biomimetics about FGAM, 4D printing, and FDM/Material extrusion.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to FGAM, 4D printing, and FDM/Material extrusion.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for FGAM, 4D printing, and FDM/Material extrusion; current relevance score is 6/10.",
     "relevance_note_en": "Relevant to the tracker through FGAM, 4D printing, and FDM/Material extrusion; score: 6/10.",
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
@@ -19714,7 +19963,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "last_seen_in_crossref_run": "2026-11-11",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "id": "10.1111/jace.70419"
   },
   "10.1002/lpor.71200": {
@@ -25622,7 +25871,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "last_seen_in_crossref_run": "2026-11-11",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "id": "10.1002/advs.202600009"
   },
   "10.1002/adfm.202530758": {
@@ -32464,7 +32713,7 @@
     "publisher": "National Academy of Sciences",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7225712726",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S125754415",
     "venue_metrics": {
@@ -33286,165 +33535,5 @@
     "last_seen_in_crossref_run": "2026-11-11",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.addma.2026.105108"
-  },
-  "10.1002/advs.202521216": {
-    "author_details": [
-      {
-        "name": "Lukas Hein",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Max Planck Institute for Polymer Research (MPIP)  Mainz Germany"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Max Planck Institute for Polymer Research (MPIP)  Mainz Germany"
-        ]
-      },
-      {
-        "name": "Renan Colucci",
-        "orcid": "https://orcid.org/0000-0002-0669-9823",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Max Planck Institute for Polymer Research (MPIP)  Mainz Germany"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Max Planck Institute for Polymer Research (MPIP)  Mainz Germany"
-        ]
-      },
-      {
-        "name": "Xin Wei",
-        "orcid": "https://orcid.org/0000-0002-0716-3051",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Max Planck Institute for Polymer Research (MPIP)  Mainz Germany"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Max Planck Institute for Polymer Research (MPIP)  Mainz Germany"
-        ]
-      },
-      {
-        "name": "Tsvetomir Ivanov",
-        "orcid": "https://orcid.org/0000-0002-0199-9472",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Max Planck Institute for Polymer Research (MPIP)  Mainz Germany"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Max Planck Institute for Polymer Research (MPIP)  Mainz Germany"
-        ]
-      },
-      {
-        "name": "Katharina Landfester",
-        "orcid": "https://orcid.org/0000-0001-9591-4638",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Max Planck Institute for Polymer Research (MPIP)  Mainz Germany"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Max Planck Institute for Polymer Research (MPIP)  Mainz Germany"
-        ]
-      },
-      {
-        "name": "Ulrike Kraft",
-        "orcid": "https://orcid.org/0000-0002-2104-9706",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Max Planck Institute for Polymer Research (MPIP)  Mainz Germany"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Max Planck Institute for Polymer Research (MPIP)  Mainz Germany"
-        ]
-      },
-      {
-        "name": "Maria Villiou",
-        "orcid": "https://orcid.org/0000-0001-8966-3852",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Max Planck Institute for Polymer Research (MPIP)  Mainz Germany"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Max Planck Institute for Polymer Research (MPIP)  Mainz Germany"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "Advanced Science",
-    "crossref_target_issn": "2198-3844",
-    "issn": [
-      "2198-3844",
-      "2198-3844"
-    ],
-    "issn_l": "",
-    "publisher": "Wiley",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W7155380882",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S2737737698",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S2737737698",
-      "issn_l": "2198-3844",
-      "issn": [
-        "2198-3844"
-      ],
-      "type": "journal",
-      "host_organization_name": "Wiley",
-      "works_count": 20558,
-      "cited_by_count": 647035,
-      "two_year_mean_citedness": 8.402641353693769,
-      "h_index": 276,
-      "i10_index": 9993,
-      "is_core": true,
-      "is_oa": true,
-      "is_in_doaj": true
-    },
-    "journal_quality": {
-      "label": "High-impact general journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 8.402641353693769,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 1",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - The paper focuses on the creation of printable conductive hydrogels for use in biosensing and bioelectronic applications.\n2. Problem - Integrating printability, mechanical flexibility, biocompatibility, and electronic functionality in a single hydrogel is challenging.\n3. Method - A straightforward 3D-printing technique is employed to fabricate biofunctional conducting PEG-PPy hydrogels with tunable properties.\n4. Key Result - The developed hydrogels demonstrate excellent printability, mechanical integrity, high cytocompatibility, and effective enzymatic glucose sensing.\n5. Takeaway - This innovative PEG-PPy hydrogel platform presents a scalable solution for developing soft, flexible, and printable electronic interfaces.",
-    "relevance_note_en": "The summary captures the core contributions and findings of the research effectively.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-11-11",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1002/advs.202521216"
   }
 }
