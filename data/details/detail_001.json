@@ -8741,7 +8741,7 @@
     "publisher": "Elsevier BV",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7225920620",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S78268018",
     "venue_metrics": {
@@ -20245,7 +20245,7 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "last_seen_in_crossref_run": "2026-11-13",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "id": "10.1111/jace.70419"
   },
   "10.1002/lpor.71200": {
@@ -20883,7 +20883,7 @@
     "publisher": "American Chemical Society (ACS)",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7225891326",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S164001016",
     "venue_metrics": {
@@ -25563,8 +25563,8 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
     "crossref_collection_route": "keyword_query",
@@ -25576,7 +25576,7 @@
     "issn_l": "",
     "publisher": "Islamic University of Najaf",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7224091107",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S7407055581",
@@ -27927,9 +27927,9 @@
     "corresponding_author_source": "openalex_cross_check",
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Virtual and Physical Prototyping",
+    "crossref_target_issn": "1745-2759",
     "issn": [
       "1745-2759",
       "1745-2767"

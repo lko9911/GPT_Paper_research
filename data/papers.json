@@ -7921,7 +7921,7 @@
     "corresponding_authors": [
       {
         "name": "Qing Chang",
-        "openalex_author_id": null,
+        "openalex_author_id": "https://openalex.org/A5001339425",
         "orcid": "https://orcid.org/0000-0003-3744-1371",
         "position": "last",
         "is_corresponding": true,
@@ -25395,9 +25395,19 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Aswin Karkadakattil",
+        "openalex_author_id": "https://openalex.org/A5119150900",
+        "orcid": "https://orcid.org/0009-0004-6141-0545",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Journal of Research, Innovation and Technologies",
     "doi": "10.56578/jorit050305",
@@ -25417,8 +25427,8 @@
     "issn_l": "",
     "publisher": "Acadlore Publishing Services Limited",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7225912850",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S4387285363",
     "venue_metrics": {
@@ -33733,7 +33743,7 @@
     "publisher": "National University of Water and Environmental Engineering",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7225868038",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S4210183068",
     "venue_metrics": {
@@ -44035,8 +44045,8 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Justus Rein",
-        "openalex_author_id": null,
+        "name": "James E. Rein",
+        "openalex_author_id": "https://openalex.org/A5110119609",
         "orcid": "https://orcid.org/0009-0005-1896-3387",
         "position": "first",
         "is_corresponding": true,
@@ -57632,7 +57642,7 @@
     "publisher": "Elsevier BV",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7225920620",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S78268018",
     "venue_metrics": {
@@ -75381,7 +75391,7 @@
     "last_updated": "2026-11-13",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-11-13",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 3.464337003350886,
@@ -76278,7 +76288,7 @@
     "publisher": "American Chemical Society (ACS)",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7225891326",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S164001016",
     "venue_metrics": {
@@ -83249,9 +83259,28 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Ghaith Algharbi",
+        "openalex_author_id": "https://openalex.org/A5160013738",
+        "orcid": null,
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Diyala",
+            "ror": "https://ror.org/01eb5yv70",
+            "country_code": "IQ",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "College of Engineering, University of Diyala"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Journal of Science and Engineering Applications",
     "doi": "10.66262/btxf2t17",
@@ -83270,7 +83299,7 @@
     "issn_l": "",
     "publisher": "Islamic University of Najaf",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7224091107",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S7407055581",
@@ -86714,9 +86743,9 @@
     ],
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Virtual and Physical Prototyping",
+    "crossref_target_issn": "1745-2759",
     "issn": [
       "1745-2759",
       "1745-2767"
@@ -101079,8 +101108,8 @@
     "corresponding_authors": [
       {
         "name": "Julien Deschamps",
-        "openalex_author_id": null,
-        "orcid": null,
+        "openalex_author_id": "https://openalex.org/A5017350777",
+        "orcid": "https://orcid.org/0000-0002-6119-2419",
         "position": "first",
         "is_corresponding": true,
         "institutions": [
@@ -107889,10 +107918,10 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-10-13",
-    "last_updated": "2026-11-12",
+    "last_updated": "2026-11-13",
     "is_weekly_new": false,
-    "not_seen_in_latest_crossref_run": true,
-    "last_seen_in_crossref_run": "2026-11-12",
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-11-13",
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 14.256403502995983,
@@ -120148,9 +120177,62 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Huimin Wu",
+        "openalex_author_id": "https://openalex.org/A5146625124",
+        "orcid": "https://orcid.org/0009-0003-2799-1262",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "State Key Laboratory Fluid Power and Mechatronic Systems",
+            "ror": "https://ror.org/01h0g5x34",
+            "country_code": "CN",
+            "type": "facility"
+          },
+          {
+            "name": "Zhejiang University",
+            "ror": "https://ror.org/00a2xv884",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Engineering Mechanics Zhejiang University  Hangzhou China",
+          "Huanjiang Laboratory Zhejiang University  Zhuji China",
+          "State Key Laboratory of Fluid Power and Mechatronic Systems Zhejiang University  Hangzhou China"
+        ]
+      },
+      {
+        "name": "Jin Wen Qian",
+        "openalex_author_id": "https://openalex.org/A5055408579",
+        "orcid": "https://orcid.org/0000-0002-3597-5460",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "State Key Laboratory Fluid Power and Mechatronic Systems",
+            "ror": "https://ror.org/01h0g5x34",
+            "country_code": "CN",
+            "type": "facility"
+          },
+          {
+            "name": "Zhejiang University",
+            "ror": "https://ror.org/00a2xv884",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Engineering Mechanics Zhejiang University  Hangzhou China",
+          "Huanjiang Laboratory Zhejiang University  Zhuji China",
+          "State Key Laboratory of Fluid Power and Mechatronic Systems Zhejiang University  Hangzhou China"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Responsive Materials",
     "doi": "10.1002/rpm2.70091",
@@ -120170,7 +120252,7 @@
     "issn_l": "",
     "publisher": "Wiley",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7225830984",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S4393919739",
@@ -136256,7 +136338,7 @@
     "last_updated": "2026-11-13",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-11-13",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 4.245998315080033,
@@ -225664,7 +225746,7 @@
     "last_updated": "2026-11-13",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-11-13",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 3.7044257112750265,
@@ -230071,28 +230153,9 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [
-      {
-        "name": "Maxim Isachenkov",
-        "openalex_author_id": "https://openalex.org/A5023343888",
-        "orcid": "https://orcid.org/0000-0003-2273-8973",
-        "position": "first",
-        "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "Politecnico di Milano",
-            "ror": "https://ror.org/01nffqt88",
-            "country_code": "IT",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Aerospace Science and Technology, Politecnico di Milano, via La Masa 34, Milano 20156, Italy"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
     "year": 2025,
     "venue": "Additive Manufacturing",
     "doi": "10.1016/j.addma.2025.104863",
@@ -230111,8 +230174,8 @@
     "issn_l": "",
     "publisher": "Elsevier BV",
     "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4411449079",
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2764842179",
     "venue_metrics": {
@@ -230706,10 +230769,10 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-22",
-    "last_updated": "2026-11-12",
+    "last_updated": "2026-11-13",
     "is_weekly_new": false,
-    "last_seen_in_crossref_run": "2026-11-12",
-    "not_seen_in_latest_crossref_run": true,
+    "last_seen_in_crossref_run": "2026-11-13",
+    "not_seen_in_latest_crossref_run": false,
     "openalex_venue_rank": "Rank 3",
     "openalex_venue_rank_number": 3,
     "openalex_venue_rank_score": 1.7054817841334695,
@@ -267238,7 +267301,7 @@
     "last_updated": "2026-11-13",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-11-13",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 4.826666666666667,
@@ -278473,7 +278536,7 @@
     "last_updated": "2026-11-13",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-11-13",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 14.006451612903225,
@@ -316867,10 +316930,10 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-24",
-    "last_updated": "2026-10-31",
+    "last_updated": "2026-11-13",
     "is_weekly_new": false,
-    "last_seen_in_crossref_run": "2026-10-31",
-    "not_seen_in_latest_crossref_run": true,
+    "last_seen_in_crossref_run": "2026-11-13",
+    "not_seen_in_latest_crossref_run": false,
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 21.19633376740459,
@@ -341516,10 +341579,10 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-12",
-    "last_updated": "2026-11-12",
+    "last_updated": "2026-11-13",
     "is_weekly_new": false,
-    "last_seen_in_crossref_run": "2026-11-12",
-    "not_seen_in_latest_crossref_run": true,
+    "last_seen_in_crossref_run": "2026-11-13",
+    "not_seen_in_latest_crossref_run": false,
     "openalex_venue_rank": "Rank 4",
     "openalex_venue_rank_number": 4,
     "openalex_venue_rank_score": 0.5019047619047619,
