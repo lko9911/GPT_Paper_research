@@ -25665,7 +25665,9 @@
         "position": "first",
         "is_corresponding": true,
         "institutions": [],
-        "raw_affiliation_strings": []
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering , Independent Researcher , 671314 Kasaragod , India"
+        ]
       }
     ],
     "corresponding_author_available": true,
@@ -57882,9 +57884,48 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Yuanhui Gao",
+        "openalex_author_id": "https://openalex.org/A5026950087",
+        "orcid": "https://orcid.org/0000-0003-1819-8695",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Nanjing Tech University",
+            "ror": "https://ror.org/03sd35x91",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "National Engineering Research Center for Special Separation Membrane, College of Chemical Engineering, Nanjing Tech University, Nanjing, 211816, China"
+        ]
+      },
+      {
+        "name": "Zhaoxiang Zhong",
+        "openalex_author_id": "https://openalex.org/A5052200448",
+        "orcid": "https://orcid.org/0000-0002-0574-0185",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Nanjing Tech University",
+            "ror": "https://ror.org/03sd35x91",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "National Engineering Research Center for Special Separation Membrane, College of Chemical Engineering, Nanjing Tech University, Nanjing, 211816, China",
+          "School of Environmental Science and Engineering, Nanjing Tech University, Nanjing, 211816, China",
+          "Suzhou Laboratory, Suzhou 215000, PR China"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Chinese Journal of Chemical Engineering",
     "doi": "10.1016/j.cjche.2026.09.021",
@@ -57903,7 +57944,7 @@
     "issn_l": "",
     "publisher": "Elsevier BV",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7225920620",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S78268018",
@@ -67940,7 +67981,7 @@
     "first_added": "2026-09-14",
     "last_updated": "2026-11-14",
     "is_weekly_new": false,
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "last_seen_in_crossref_run": "2026-11-14",
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
@@ -75653,7 +75694,7 @@
     "last_updated": "2026-11-14",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-11-14",
-    "not_seen_in_latest_crossref_run": true,
+    "not_seen_in_latest_crossref_run": false,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 3.464337003350886,
@@ -92473,7 +92514,7 @@
     "last_updated": "2026-11-14",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-11-14",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 5.543417366946779,
@@ -226224,7 +226265,7 @@
     "last_updated": "2026-11-14",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-11-14",
-    "not_seen_in_latest_crossref_run": true,
+    "not_seen_in_latest_crossref_run": false,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 3.7044257112750265,
@@ -309759,7 +309800,7 @@
     "last_updated": "2026-11-14",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-11-14",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 3",
     "openalex_venue_rank_number": 3,
     "openalex_venue_rank_score": 2.287671232876712,
@@ -320344,10 +320385,10 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-11-02",
+    "last_updated": "2026-11-14",
     "is_weekly_new": false,
-    "last_seen_in_crossref_run": "2026-11-02",
-    "not_seen_in_latest_crossref_run": true,
+    "last_seen_in_crossref_run": "2026-11-14",
+    "not_seen_in_latest_crossref_run": false,
     "openalex_venue_rank": "Rank 4",
     "openalex_venue_rank_number": 4,
     "openalex_venue_rank_score": 0.1440677966101695,
