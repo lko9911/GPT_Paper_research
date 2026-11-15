@@ -3488,9 +3488,46 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Shiwu Zhang",
+        "openalex_author_id": "https://openalex.org/A5061049387",
+        "orcid": "https://orcid.org/0000-0001-7118-7704",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Science and Technology of China",
+            "ror": "https://ror.org/04c4dkn09",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Institute of Humanoid Robots Department of Precision Machinery and Precision Instrumentation University of Science and Technology of China  Hefei China"
+        ]
+      },
+      {
+        "name": "Mujun Li",
+        "openalex_author_id": "https://openalex.org/A5102971419",
+        "orcid": "https://orcid.org/0000-0001-7488-5364",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Science and Technology of China",
+            "ror": "https://ror.org/04c4dkn09",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Institute of Humanoid Robots Department of Precision Machinery and Precision Instrumentation University of Science and Technology of China  Hefei China"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Advanced Materials",
     "doi": "10.1002/adma.75697",
@@ -3510,8 +3547,8 @@
     "issn_l": "",
     "publisher": "Wiley",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7228098634",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S99352657",
     "venue_metrics": {
@@ -13584,6 +13621,128 @@
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 8.200902151283831,
     "openalex_venue_rank_percentile": 0.878,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+  },
+  {
+    "id": "10.1016/j.addma.2026.105430",
+    "title": "Overcoming the leading-edge bulge in ceramic stereolithography: towards a digital twin to optimize the fluid flow by part positioning and sacrificial structures",
+    "authors": [
+      "Anna Junger",
+      "Philippe Michaud",
+      "Vincent Pateloup"
+    ],
+    "author_details": [
+      {
+        "name": "Anna Junger",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Philippe Michaud",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Vincent Pateloup",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "year": 2026,
+    "venue": "Additive Manufacturing",
+    "doi": "10.1016/j.addma.2026.105430",
+    "url": "https://doi.org/10.1016/j.addma.2026.105430",
+    "source": [
+      "Crossref"
+    ],
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2214-8604"
+    ],
+    "issn_l": "",
+    "publisher": "Elsevier BV",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S2764842179",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S2764842179",
+      "issn_l": "2214-7810",
+      "issn": [
+        "2214-7810",
+        "2214-8604"
+      ],
+      "type": "journal",
+      "host_organization_name": "Elsevier BV",
+      "works_count": 5106,
+      "cited_by_count": 246110,
+      "two_year_mean_citedness": 7.721680420105026,
+      "h_index": 193,
+      "i10_index": 3661,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 7.721680420105026,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "publication_type": "journal_article",
+    "venue_trust": "trusted",
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "is_core_venue": true,
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "categories": [
+      "Multi-material AM"
+    ],
+    "tags": [
+      "SLA",
+      "Digital Twins"
+    ],
+    "relevance_score": 7,
+    "curation_priority": false,
+    "ai_summary_en": "1. Topic - Overcoming the leading-edge bulge in ceramic stereolithography: towards a digital twin to optimize the fluid flow by part positioning and sacrificial structures is a 2026 paper from Additive Manufacturing about SLA and Digital Twins.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to SLA and Digital Twins.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for SLA and Digital Twins; current relevance score is 7/10.",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_en": "Relevant to the tracker through SLA and Digital Twins; score: 7/10.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-11-15",
+    "last_updated": "2026-11-15",
+    "is_weekly_new": true,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-11-15",
+    "openalex_venue_rank": "Rank 1",
+    "openalex_venue_rank_number": 1,
+    "openalex_venue_rank_score": 7.721680420105026,
+    "openalex_venue_rank_percentile": 0.8469,
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
@@ -50165,9 +50324,21 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Altuğ Bakırcı",
+        "openalex_author_id": "https://openalex.org/A5086973534",
+        "orcid": "https://orcid.org/0000-0003-0438-6337",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [],
+        "raw_affiliation_strings": [
+          "Ermetal Otomotiv ve Esya San. Tic. A.S R&D Center, , Bursa,"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Rapid Prototyping Journal",
     "doi": "10.1108/rpj-04-2026-0233",
@@ -50187,7 +50358,7 @@
     "issn_l": "",
     "publisher": "Emerald",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7213983177",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S173500210",
@@ -50888,7 +51059,7 @@
         "name": "Yanhu Wang",
         "orcid": "",
         "position": "additional",
-        "is_corresponding": false,
+        "is_corresponding": true,
         "institutions": [],
         "raw_affiliation_strings": []
       },
@@ -50904,26 +51075,15 @@
     "corresponding_authors": [
       {
         "name": "Yanhu Wang",
-        "openalex_author_id": "https://openalex.org/A5143846676",
-        "orcid": null,
-        "position": "middle",
+        "orcid": "",
+        "position": "additional",
         "is_corresponding": true,
-        "institutions": [
-          {
-            "name": "Wenzhou University",
-            "ror": "https://ror.org/020hxh324",
-            "country_code": "CN",
-            "type": "education"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Provincial Key Laboratory of Equipment Monitoring and Intelligent Operation & Maintenance under Extreme Working Conditions, College of Mechanical and Electrical Engineering, Wenzhou University, Wenzhou, 325035, Zhejiang, China",
-          "Shenjiang Valve Co., Ltd., Wenzhou, 325035, Zhejiang, China"
-        ]
+        "institutions": [],
+        "raw_affiliation_strings": []
       }
     ],
     "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
+    "corresponding_author_source": "crossref",
     "year": 2026,
     "venue": "JOM",
     "doi": "10.1007/s11837-026-08742-3",
@@ -50942,9 +51102,9 @@
     ],
     "issn_l": "",
     "publisher": "Springer Science and Business Media LLC",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W7212045849",
+    "openalex_checked": false,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S116826539",
     "venue_metrics": {
@@ -70457,9 +70617,46 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Muhammed Hisham",
+        "openalex_author_id": "https://openalex.org/A5024813037",
+        "orcid": "https://orcid.org/0009-0009-6500-8680",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Khalifa University of Science and Technology",
+            "ror": "https://ror.org/05hffr360",
+            "country_code": "AE",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Khalifa University of Science and Technology Department of Mechanical and Nuclear Engineering, , Abu Dhabi,"
+        ]
+      },
+      {
+        "name": "Haider Butt",
+        "openalex_author_id": "https://openalex.org/A5012312110",
+        "orcid": "https://orcid.org/0000-0003-2434-9525",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Khalifa University of Science and Technology",
+            "ror": "https://ror.org/05hffr360",
+            "country_code": "AE",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Khalifa University of Science and Technology Department of Mechanical and Nuclear Engineering, , Abu Dhabi, , and Advanced Digital and Additive Manufacturing (ADAM) Research Group, Khalifa University of Science and Technology, Abu Dhabi, United Arab Emirates"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Rapid Prototyping Journal",
     "doi": "10.1108/rpj-10-2025-0528",
@@ -70479,7 +70676,7 @@
     "issn_l": "",
     "publisher": "Emerald",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7172534494",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S173500210",
@@ -70753,9 +70950,28 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Rajasanthosh Kumar Tulala",
+        "openalex_author_id": "https://openalex.org/A5120113336",
+        "orcid": "https://orcid.org/0009-0002-8687-0519",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Puducherry Technological University",
+            "ror": "https://ror.org/01w2xgk13",
+            "country_code": "IN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering, Puducherry Technological University, India"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Materials Research Express",
     "doi": "10.1088/2053-1591/ae2f29",
@@ -70774,7 +70990,7 @@
     "issn_l": "",
     "publisher": "IOP Publishing",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4417476000",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S4210216311",
@@ -108223,7 +108439,7 @@
     "first_added": "2026-10-13",
     "last_updated": "2026-11-15",
     "is_weekly_new": false,
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "last_seen_in_crossref_run": "2026-11-15",
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
@@ -126211,7 +126427,7 @@
     "first_added": "2026-07-06",
     "last_updated": "2026-11-15",
     "is_weekly_new": false,
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "last_seen_in_crossref_run": "2026-11-15",
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
@@ -140100,9 +140316,58 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Peng Min",
+        "openalex_author_id": "https://openalex.org/A5011944668",
+        "orcid": "https://orcid.org/0000-0002-1495-7263",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "State Key Laboratory of Organic-Inorganic Composite Materials",
+            "ror": "https://ror.org/04t3b2655",
+            "country_code": "CN",
+            "type": "facility"
+          },
+          {
+            "name": "Beijing University of Chemical Technology",
+            "ror": "https://ror.org/00df5yc52",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "State Key Laboratory of Organic‐Inorganic Composites College of Materials Science and Engineering Beijing University of Chemical Technology  Beijing China"
+        ]
+      },
+      {
+        "name": "Haobin Zhang",
+        "openalex_author_id": "https://openalex.org/A5019413084",
+        "orcid": "https://orcid.org/0000-0003-1156-0495",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "State Key Laboratory of Organic-Inorganic Composite Materials",
+            "ror": "https://ror.org/04t3b2655",
+            "country_code": "CN",
+            "type": "facility"
+          },
+          {
+            "name": "Beijing University of Chemical Technology",
+            "ror": "https://ror.org/00df5yc52",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "State Key Laboratory of Organic‐Inorganic Composites College of Materials Science and Engineering Beijing University of Chemical Technology  Beijing China"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Advanced Materials",
     "doi": "10.1002/adma.75627",
@@ -140122,7 +140387,7 @@
     "issn_l": "",
     "publisher": "Wiley",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7226000785",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S99352657",
@@ -146240,10 +146505,10 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-07-04",
-    "last_updated": "2026-11-02",
+    "last_updated": "2026-11-15",
     "is_weekly_new": false,
-    "not_seen_in_latest_crossref_run": true,
-    "last_seen_in_crossref_run": "2026-11-02",
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-11-15",
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 21.19633376740459,
@@ -155629,9 +155894,9 @@
     ],
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Materials & Design",
+    "crossref_target_issn": "0264-1275",
     "issn": [
       "0264-1275"
     ],
@@ -218611,9 +218876,64 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Xiewen Wen",
+        "openalex_author_id": null,
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Hong Kong Polytechnic University",
+            "ror": "https://ror.org/0030zas98",
+            "country_code": "HK",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "University Research Facility in 3D Printing and State Key Laboratory of Ultra-precision Machining Technology, Department of Industrial and Systems Engineering, The Hong Kong Polytechnic University, Hong Kong Special Administrative Region of China, SAR, People’s Republic of China"
+        ]
+      },
+      {
+        "name": "Xueli Chen",
+        "openalex_author_id": "https://openalex.org/A5086544304",
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Xidian University",
+            "ror": "https://ror.org/05s92vm98",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Center for Biomedical-photonics and Molecular Imaging, Advanced Diagnostic-Therapy Technology and Equipment Key Laboratory of Higher Education Institutions in Shaanxi Province, School of Life Science and Technology, Xidian University, Xi’an, Shaanxi 710126, People’s Republic of China"
+        ]
+      },
+      {
+        "name": "Jiebo Li",
+        "openalex_author_id": "https://openalex.org/A5053012756",
+        "orcid": "https://orcid.org/0000-0002-2295-6666",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Beihang University",
+            "ror": "https://ror.org/00wk2mp56",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Key Laboratory of Biomechanics and Mechanobiology (Beihang University), Ministry of Education, Institute of Medical Photonics, Beijing Advanced Innovation Center for Biomedical Engineering, School of Biological Science and Medical Engineering, Beihang University, Beijing 100191, People’s Republic of China"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2025,
     "venue": "International Journal of Extreme Manufacturing",
     "doi": "10.1088/2631-7990/adebbf",
@@ -218633,7 +218953,7 @@
     "issn_l": "",
     "publisher": "IOP Publishing",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4411986720",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S4210231351",
@@ -226262,10 +226582,10 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-24",
-    "last_updated": "2026-11-14",
+    "last_updated": "2026-11-15",
     "is_weekly_new": false,
-    "last_seen_in_crossref_run": "2026-11-14",
-    "not_seen_in_latest_crossref_run": true,
+    "last_seen_in_crossref_run": "2026-11-15",
+    "not_seen_in_latest_crossref_run": false,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 3.7044257112750265,
@@ -234064,9 +234384,9 @@
     ],
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Advanced Science",
+    "crossref_target_issn": "2198-3844",
     "issn": [
       "2198-3844",
       "2198-3844"
@@ -246913,7 +247233,7 @@
     "last_updated": "2026-11-15",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-11-15",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 6.711989982260253,
@@ -251613,9 +251933,53 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Qiping Xu",
+        "openalex_author_id": "https://openalex.org/A5077404501",
+        "orcid": "https://orcid.org/0000-0003-3569-4068",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Zhejiang Normal University",
+            "ror": "https://ror.org/01vevwk45",
+            "country_code": "CN",
+            "type": "education"
+          },
+          {
+            "name": "National University of Singapore",
+            "ror": "https://ror.org/01tgyzw49",
+            "country_code": "SG",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical Engineering, College of Design and Engineering, National University of Singapore, 9 Engineering Drive 1, Singapore 117575, Singapore",
+          "Key Laboratory of Urban Rail Transit Intelligent Operation and Maintenance Technology & Equipment of Zhejiang Province, Department of Robotics Engineering, College of Engineering, Zhejiang Normal University, Jinhua 321004, People’s Republic of China"
+        ]
+      },
+      {
+        "name": "Jinxin Chen",
+        "openalex_author_id": "https://openalex.org/A5111132858",
+        "orcid": "https://orcid.org/0000-0002-4484-8631",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Zhejiang Normal University",
+            "ror": "https://ror.org/01vevwk45",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Key Laboratory of Urban Rail Transit Intelligent Operation and Maintenance Technology & Equipment of Zhejiang Province, Department of Robotics Engineering, College of Engineering, Zhejiang Normal University, Jinhua 321004, People’s Republic of China"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2025,
     "venue": "Smart Materials and Structures",
     "doi": "10.1088/1361-665x/adcb0a",
@@ -251635,7 +251999,7 @@
     "issn_l": "",
     "publisher": "IOP Publishing",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4409305529",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S11146949",
@@ -256824,9 +257188,28 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Ana Paula Piedade",
+        "openalex_author_id": "https://openalex.org/A5057685296",
+        "orcid": "https://orcid.org/0000-0002-1588-0640",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Coimbra",
+            "ror": "https://ror.org/04z8k9a98",
+            "country_code": "PT",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "CEMMPRE, University of Coimbra Department of Mechanical Engineering, , ,"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2025,
     "venue": "4D Printing",
     "doi": "10.1108/4dp-12-2024-0002",
@@ -256845,7 +257228,7 @@
     "issn_l": "",
     "publisher": "Emerald",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4409263821",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S5407047337",
@@ -257215,7 +257598,7 @@
     "last_updated": "2026-11-15",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-11-15",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 4.165016931492576,
@@ -258331,7 +258714,7 @@
     "last_updated": "2026-11-15",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-11-15",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 7.751508120649652,
@@ -264226,9 +264609,28 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Yifan Wang",
+        "openalex_author_id": "https://openalex.org/A5100398543",
+        "orcid": "https://orcid.org/0000-0001-9966-682X",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Nanyang Technological University",
+            "ror": "https://ror.org/02e7b5302",
+            "country_code": "SG",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Mechanical and Aerospace Engineering, Nanyang Technological University, 50 Nanyang Avenue, Singapore, 639798, Singapore"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2025,
     "venue": "Journal of Polymer Materials",
     "doi": "10.32604/jpm.2025.065269",
@@ -264247,7 +264649,7 @@
     "issn_l": "",
     "publisher": "Tech Science Press",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4412386837",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S199798058",
@@ -265145,9 +265547,28 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Andreas Walker",
+        "openalex_author_id": "https://openalex.org/A5069369655",
+        "orcid": "https://orcid.org/0009-0009-2744-9661",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "ETH Zurich",
+            "ror": "https://ror.org/05a28rw58",
+            "country_code": "CH",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Engineering Design and Computing Laboratory, ETH Zurich, Tannenstrasse 3, 8092 Zurich, Switzerland"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2024,
     "venue": "Smart Materials and Structures",
     "doi": "10.1088/1361-665x/ad8a31",
@@ -265167,7 +265588,7 @@
     "issn_l": "",
     "publisher": "IOP Publishing",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4403628644",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S11146949",
@@ -314374,9 +314795,9 @@
     ],
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "3D Printing and Additive Manufacturing",
+    "crossref_target_issn": "2329-7662",
     "issn": [
       "2329-7662",
       "2329-7670"
@@ -317471,7 +317892,7 @@
     "last_updated": "2026-11-15",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-11-15",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 21.19633376740459,
@@ -334610,10 +335031,10 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-12",
-    "last_updated": "2026-11-14",
+    "last_updated": "2026-11-15",
     "is_weekly_new": false,
-    "last_seen_in_crossref_run": "2026-11-14",
-    "not_seen_in_latest_crossref_run": true,
+    "last_seen_in_crossref_run": "2026-11-15",
+    "not_seen_in_latest_crossref_run": false,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 4.364924242424243,
@@ -346482,9 +346903,28 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Ahmed G Hassabo",
+        "openalex_author_id": "https://openalex.org/A5082476320",
+        "orcid": "https://orcid.org/0000-0001-5337-8929",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "National Research Centre",
+            "ror": "https://ror.org/02n85j827",
+            "country_code": "EG",
+            "type": "facility"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "National Research Centre (NRC), Textile Research and Technology Institute (TRTI), Pre-treatment and Finishing of Cellulose based Textiles Department (PFCTD), El-Behouth St. (former El-Tahrir str.), Dokki, P.O. 12622, Giza, Egypt"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2024,
     "venue": "Journal of Textiles, Coloration and Polymer Science",
     "doi": "10.21608/jtcps.2024.258193.1249",
@@ -346503,7 +346943,7 @@
     "issn_l": "",
     "publisher": "Egyptian Knowledge Bank",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4391717611",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S4210177975",
