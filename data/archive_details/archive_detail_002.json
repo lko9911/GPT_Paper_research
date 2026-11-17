@@ -1,4 +1,980 @@
 {
+  "10.1016/j.matpr.2023.03.044": {
+    "author_details": [
+      {
+        "name": "Rupendra Singh Tanwar",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Suyog Jhavar",
+        "orcid": "https://orcid.org/0000-0003-4472-4839",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2214-7853"
+    ],
+    "issn_l": "",
+    "publisher": "Elsevier BV",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4353048806",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S2898407351",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S2898407351",
+      "issn_l": "2214-7853",
+      "issn": [
+        "2214-7853"
+      ],
+      "type": "journal",
+      "host_organization_name": "Elsevier BV",
+      "works_count": 41644,
+      "cited_by_count": 501359,
+      "two_year_mean_citedness": 4.616803278688525,
+      "h_index": 145,
+      "i10_index": 15268,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 4.616803278688525,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 2",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "conference/proceedings not in trusted allowlist",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - This paper reviews the additive manufacturing techniques for fabricating stainless steel-nickel multi-materials.\n2. Problem - The challenge lies in effectively combining different materials to achieve desired properties and performance.\n3. Method - The authors analyze various additive manufacturing methods and their applications in multi-material fabrication.\n4. Key Result - The review highlights advancements and current trends in the field, emphasizing the potential of multi-material approaches.\n5. Takeaway - Understanding these techniques can lead to improved material properties and innovative applications in manufacturing.",
+    "relevance_note_en": "The summary captures the essence of the review on multi-material additive manufacturing.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "id": "10.1016/j.matpr.2023.03.044"
+  },
+  "10.1115/msec2024-124383": {
+    "author_details": [
+      {
+        "name": "Changheon Han",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Purdue University , West Lafayette, Indiana, United States"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Purdue University , West Lafayette, Indiana, United States"
+        ]
+      },
+      {
+        "name": "Hojun Lee",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Purdue University , West Lafayette, Indiana, United States"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Purdue University , West Lafayette, Indiana, United States"
+        ]
+      },
+      {
+        "name": "Jiho Lee",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Purdue University , West Lafayette, Indiana, United States"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Purdue University , West Lafayette, Indiana, United States"
+        ]
+      },
+      {
+        "name": "Martin Byung-Guk Jun",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Purdue University , West Lafayette, Indiana, United States"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Purdue University , West Lafayette, Indiana, United States"
+        ]
+      },
+      {
+        "name": "Huitaek Yun",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Korea Advanced Institute of Science and Technology (KAIST) , Daejeon, Republic of Korea"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Korea Advanced Institute of Science and Technology (KAIST) , Daejeon, Republic of Korea"
+        ]
+      }
+    ],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "proceedings-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [],
+    "issn_l": "",
+    "publisher": "American Society of Mechanical Engineers",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "https://openalex.org/W4403409880",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "venue_trust_reason": "conference/proceedings not in trusted allowlist",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The research focuses on enhancing chip removal processes in CNC machines using a digital twin framework.\n2. Problem - Manual chip removal methods are inefficient and can lead to machining errors due to incomplete debris clearance.\n3. Method - A digital twin environment was created to train a deep learning model for autonomous chip localization and air-blowing direction optimization.\n4. Key Result - The developed model successfully predicted chip cluster locations and estimated effective air-blowing directions in a virtual setting.\n5. Takeaway - Implementing a digital twin approach can significantly improve the efficiency and accuracy of chip removal in CNC machining.",
+    "relevance_note_en": "The study addresses a specific problem in CNC machining and proposes a novel solution using digital twin technology.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "id": "10.1115/msec2024-124383"
+  },
+  "10.26434/chemrxiv-2024-f13l1": {
+    "author_details": [
+      {
+        "name": "Mohammad Zaki",
+        "orcid": "https://orcid.org/0009-0001-3472-6374",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Federal Institute For Materials Research and Testing"
+          },
+          {
+            "name": "Humboldt-Universität zu Berlin"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Federal Institute For Materials Research and Testing",
+          "Humboldt-Universität zu Berlin"
+        ]
+      },
+      {
+        "name": "Carsten Prinz",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Federal Institute For Materials Research and Testing"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Federal Institute For Materials Research and Testing"
+        ]
+      },
+      {
+        "name": "Bastian Ruehle",
+        "orcid": "https://orcid.org/0000-0003-3383-9999",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Federal Institute For Materials Research and Testing"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Federal Institute For Materials Research and Testing"
+        ]
+      }
+    ],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "posted-content",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [],
+    "issn_l": "",
+    "publisher": "American Chemical Society (ACS)",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "https://openalex.org/W4405202680",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "venue_trust_reason": "missing venue metadata",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - A Self-Driving Lab for Nano-and Advanced Materials Synthesis is a 2024 paper from an unknown venue about Self-driving Labs.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Self-driving Labs.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Self-driving Labs; current relevance score is 7/10.",
+    "relevance_note_en": "Relevant to the tracker through Self-driving Labs; score: 7/10.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "id": "10.26434/chemrxiv-2024-f13l1"
+  },
+  "10.1115/imece2024-145821": {
+    "author_details": [
+      {
+        "name": "David A. Guerra-Zubiaga",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Kennesaw State University , , ,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Kennesaw State University , , ,"
+        ]
+      },
+      {
+        "name": "Melody Colani",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Kennesaw State University , , ,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Kennesaw State University , , ,"
+        ]
+      },
+      {
+        "name": "Gershom Richards",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Kennesaw State University , , ,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Kennesaw State University , , ,"
+        ]
+      },
+      {
+        "name": "Katrina Cavens",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Kennesaw State University , , ,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Kennesaw State University , , ,"
+        ]
+      },
+      {
+        "name": "Logan Block",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Kennesaw State University , , ,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Kennesaw State University , , ,"
+        ]
+      },
+      {
+        "name": "George Olliff",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Kennesaw State University , , ,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Kennesaw State University , , ,"
+        ]
+      },
+      {
+        "name": "Murat Aksu",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "National Institute of Standards and Technologies , , ,"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "National Institute of Standards and Technologies , , ,"
+        ]
+      }
+    ],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "proceedings-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [],
+    "issn_l": "",
+    "publisher": "American Society of Mechanical Engineers",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "https://openalex.org/W4406764666",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "venue_trust_reason": "conference/proceedings not in trusted allowlist",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - A Novel Digital Twin Model to Support Intelligent Robotic Manufacturing System According to Industry 4.0 Trends is a 2024 paper from Volume 2: Advanced Manufacturing about Digital Twins and Robot-based Manufacturing.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Digital Twins and Robot-based Manufacturing.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Digital Twins and Robot-based Manufacturing; current relevance score is 7/10.",
+    "relevance_note_en": "Relevant to the tracker through Digital Twins and Robot-based Manufacturing; score: 7/10.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "id": "10.1115/imece2024-145821"
+  },
+  "10.2139/ssrn.4747004": {
+    "author_details": [
+      {
+        "name": "Caleb  Edmound Andrews",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Gabe Guss",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Jenny Wang",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Nicholas  P. Calta",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Justin Patridge",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Manyalibo Matthews",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "M. L. Taheri",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "posted-content",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [],
+    "issn_l": "",
+    "publisher": "Elsevier BV",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "https://openalex.org/W4392406011",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "venue_trust_reason": "missing venue metadata",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The study focuses on developing a digital twin for monitoring and optimizing the powder bed fusion process.\n2. Problem - Challenges exist in effectively monitoring and optimizing the microstructure during the powder bed fusion process.\n3. Method - A microstructure-sensitive digital twin approach is employed to enhance process monitoring and optimization.\n4. Key Result - The proposed digital twin demonstrates improved accuracy in predicting microstructural outcomes during the additive manufacturing process.\n5. Takeaway - Implementing a microstructure-sensitive digital twin can significantly enhance the efficiency and quality of powder bed fusion manufacturing.",
+    "relevance_note_en": "The paper presents a novel approach to improve monitoring in additive manufacturing, which is highly relevant to current trends in the field.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "id": "10.2139/ssrn.4747004"
+  },
+  "10.31399/asm.cp.am-epri-2024p0723": {
+    "author_details": [
+      {
+        "name": "Giacomo Melaragno",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "The Ohio State University , Columbus, OH, USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "The Ohio State University , Columbus, OH, USA"
+        ]
+      },
+      {
+        "name": "Boian Alexandrov",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "The Ohio State University , Columbus, OH, USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "The Ohio State University , Columbus, OH, USA"
+        ]
+      },
+      {
+        "name": "John Shingledecker",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Electric Power Research Institute , Charlotte, NC, USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Electric Power Research Institute , Charlotte, NC, USA"
+        ]
+      },
+      {
+        "name": "John Siefert",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Electric Power Research Institute , Charlotte, NC, USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Electric Power Research Institute , Charlotte, NC, USA"
+        ]
+      },
+      {
+        "name": "Michael Gagliano",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Electric Power Research Institute , Charlotte, NC, USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Electric Power Research Institute , Charlotte, NC, USA"
+        ]
+      },
+      {
+        "name": "Jorge Penso",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Shell Global Solutions (US) Inc. , Houston, TX, USA"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Shell Global Solutions (US) Inc. , Houston, TX, USA"
+        ]
+      }
+    ],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "proceedings-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2994-4031",
+      "2994-4023"
+    ],
+    "issn_l": "",
+    "publisher": "ASM International",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "https://openalex.org/W4403303310",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S4404670259",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4404670259",
+      "issn_l": "2994-4023",
+      "issn": [
+        "2994-4023",
+        "2994-4031"
+      ],
+      "type": "journal",
+      "host_organization_name": "ASM International",
+      "works_count": 765,
+      "cited_by_count": 1168,
+      "two_year_mean_citedness": 0.3445378151260504,
+      "h_index": 12,
+      "i10_index": 27,
+      "is_core": false,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 0.3445378151260504,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 4",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "conference/proceedings not in trusted allowlist",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The study focuses on evaluating the weldability of specially designed filler wires for additive manufacturing of functionally graded materials.\n2. Problem - Premature failures in U-bend fittings made from Fe-Ni-Cr alloys occur due to harsh service conditions, leading to cracking.\n3. Method - The research employs thermodynamic modeling, Cast Pin Tear Testing, and SEM characterization to assess the microstructures and solidification cracking susceptibility of the welding wires.\n4. Key Result - The findings provide insights into the solidification microstructures and printability challenges of graded WAAM structures, aiding in the design of more durable fittings.\n5. Takeaway - This work contributes to enhancing the longevity of U-bend fittings in olefin furnaces through improved material design and manufacturing techniques.",
+    "relevance_note_en": "The summary captures the essence of the research, focusing on weldability and material design for improved performance in harsh environments.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "id": "10.31399/asm.cp.am-epri-2024p0723"
+  },
+  "10.1117/12.3001274": {
+    "author_details": [
+      {
+        "name": "Jonas Boseila",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Paul Rob",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Max Rommerskirchen",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Johannes Henrich Schleifenbaum",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "proceedings-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [],
+    "issn_l": "",
+    "publisher": "SPIE",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "https://openalex.org/W4392691807",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "venue_trust_reason": "conference/proceedings not in trusted allowlist",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - Unveiling the potential of multimaterial laser-based powder bed fusion processes: a novel approach for enhancing design freedom in multimaterial additive manufacturing is a 2024 paper from Laser 3D Manufacturing XI about Additive manufacturing.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Additive manufacturing.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Additive manufacturing; current relevance score is 6/10.",
+    "relevance_note_en": "Relevant to the tracker through Additive manufacturing; score: 6/10.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "id": "10.1117/12.3001274"
+  },
+  "10.26434/chemrxiv-2024-6vjkz": {
+    "author_details": [
+      {
+        "name": "Trevor Kalkus",
+        "orcid": "https://orcid.org/0000-0002-9801-6144",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Heidelberg University"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Heidelberg University"
+        ]
+      },
+      {
+        "name": "Tamara V. Unterreiner",
+        "orcid": "https://orcid.org/0009-0006-1851-3690",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Heidelberg University"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Heidelberg University"
+        ]
+      },
+      {
+        "name": "Målin Schmidt",
+        "orcid": "https://orcid.org/0009-0002-8952-6596",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Heidelberg University"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Heidelberg University"
+        ]
+      },
+      {
+        "name": "Laura D. Wächter",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Heidelberg University"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Heidelberg University"
+        ]
+      },
+      {
+        "name": "Christina R. Schmitt",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Heidelberg University"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Heidelberg University"
+        ]
+      },
+      {
+        "name": "Ankit Mishra",
+        "orcid": "https://orcid.org/0000-0002-9330-5537",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Heidelberg University"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Heidelberg University"
+        ]
+      },
+      {
+        "name": "Christine Selhuber-Unkel",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Heidelberg University"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Heidelberg University"
+        ]
+      }
+    ],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "posted-content",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [],
+    "issn_l": "",
+    "publisher": "American Chemical Society (ACS)",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "https://openalex.org/W4403984464",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "venue_trust_reason": "missing venue metadata",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - Unlocking the flexibility of multi-material 3D extrusion printing for soft iontronics is a 2024 paper from an unknown venue about Additive manufacturing.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Additive manufacturing.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Additive manufacturing; current relevance score is 6/10.",
+    "relevance_note_en": "Relevant to the tracker through Additive manufacturing; score: 6/10.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "id": "10.26434/chemrxiv-2024-6vjkz"
+  },
+  "10.1115/msec2024-124636": {
+    "author_details": [
+      {
+        "name": "Seyedmehrab Hosseini",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Auburn University , Auburn, Alabama, United States"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Auburn University , Auburn, Alabama, United States"
+        ]
+      },
+      {
+        "name": "Elham Mirkoohi",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Auburn University , Auburn, Alabama, United States"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Auburn University , Auburn, Alabama, United States"
+        ]
+      }
+    ],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "proceedings-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [],
+    "issn_l": "",
+    "publisher": "American Society of Mechanical Engineers",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "https://openalex.org/W4403409868",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "venue_trust_reason": "conference/proceedings not in trusted allowlist",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The study focuses on understanding the fatigue life behavior of components produced through directed energy deposition (DED).\n2. Problem - Volumetric defects formed during the DED process significantly compromise the mechanical properties, particularly fatigue life, of the components.\n3. Method - The research introduces novel volumetric defect features and employs X-ray computed tomography to analyze defect distributions in stainless steel 316L samples, followed by fatigue testing.\n4. Key Result - Strong correlations were found between the statistical descriptors of defect features and the fatigue life, indicating that certain defect characteristics can predict fatigue performance.\n5. Takeaway - Improving specific defect features, such as compactness and gap, can enhance the fatigue life of DED-manufactured components.",
+    "relevance_note_en": "The summary captures the essence of the study's focus on volumetric defects and their impact on fatigue life in DED.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "id": "10.1115/msec2024-124636"
+  },
+  "10.2139/ssrn.4806332": {
+    "author_details": [
+      {
+        "name": "Umur Cicek",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Darren Southee",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Andrew Johnson",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "posted-content",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [],
+    "issn_l": "",
+    "publisher": "Elsevier BV",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "https://openalex.org/W4396238602",
+    "openalex_work_id": "",
+    "openalex_source_id": "",
+    "venue_metrics": {},
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": null,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile."
+    },
+    "venue_trust_reason": "missing venue metadata",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The Development and Characterisation of 3d-Printed Multi-Material Thermistor is a 2024 paper from an unknown venue about Additive manufacturing.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Additive manufacturing.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Additive manufacturing; current relevance score is 6/10.",
+    "relevance_note_en": "Relevant to the tracker through Additive manufacturing; score: 6/10.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "id": "10.2139/ssrn.4806332"
+  },
   "10.1109/icac61394.2024.10718858": {
     "author_details": [
       {
