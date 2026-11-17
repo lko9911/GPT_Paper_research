@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-16T09:26:29+00:00",
+  "updated_at": "2026-11-17T00:05:52+00:00",
   "source": "derived from titles, tags, AI Q5 summaries, relevance notes, and public metadata; abstract text is not published",
   "recent_basis": "publication year 2026, plus records explicitly marked weekly-new",
   "node_count": 30,
@@ -11,18 +11,18 @@
       "group": "AM",
       "count": 1225,
       "recent_count": 496,
-      "trend_score": 0.9945,
+      "trend_score": 0.9942,
       "x": 310.0,
       "y": 148.0,
-      "radius": 22.9
+      "radius": 22.8
     },
     {
       "id": "additive-manufacturing",
       "label": "Additive Manufacturing",
       "group": "AM",
-      "count": 1248,
-      "recent_count": 468,
-      "trend_score": 0.9605,
+      "count": 1249,
+      "recent_count": 469,
+      "trend_score": 0.9619,
       "x": 369.8,
       "y": 170.5,
       "radius": 23.0
@@ -33,7 +33,7 @@
       "group": "AM",
       "count": 665,
       "recent_count": 215,
-      "trend_score": 0.4633,
+      "trend_score": 0.4632,
       "x": 359.4,
       "y": 233.5,
       "radius": 18.7
@@ -42,9 +42,9 @@
       "id": "machine-learning",
       "label": "Machine Learning",
       "group": "AI",
-      "count": 386,
-      "recent_count": 189,
-      "trend_score": 0.3595,
+      "count": 387,
+      "recent_count": 190,
+      "trend_score": 0.3611,
       "x": 620.0,
       "y": 68.0,
       "radius": 15.9
@@ -55,7 +55,7 @@
       "group": "AI",
       "count": 394,
       "recent_count": 184,
-      "trend_score": 0.3544,
+      "trend_score": 0.3543,
       "x": 684.0,
       "y": 120.0,
       "radius": 16.0
@@ -64,9 +64,9 @@
       "id": "process-optimization",
       "label": "Process Optimization",
       "group": "Automation",
-      "count": 317,
-      "recent_count": 129,
-      "trend_score": 0.2583,
+      "count": 318,
+      "recent_count": 130,
+      "trend_score": 0.2598,
       "x": 525.0,
       "y": 158.0,
       "radius": 15.1
@@ -77,7 +77,7 @@
       "group": "4D",
       "count": 279,
       "recent_count": 105,
-      "trend_score": 0.2153,
+      "trend_score": 0.2152,
       "x": 285.0,
       "y": 298.0,
       "radius": 14.6
@@ -132,7 +132,7 @@
       "group": "AM",
       "count": 235,
       "recent_count": 78,
-      "trend_score": 0.1666,
+      "trend_score": 0.1665,
       "x": 310.0,
       "y": 274.0,
       "radius": 13.9
@@ -165,7 +165,7 @@
       "group": "4D",
       "count": 172,
       "recent_count": 63,
-      "trend_score": 0.1303,
+      "trend_score": 0.1302,
       "x": 349.0,
       "y": 350.0,
       "radius": 12.9
@@ -176,7 +176,7 @@
       "group": "Application",
       "count": 135,
       "recent_count": 45,
-      "trend_score": 0.096,
+      "trend_score": 0.0959,
       "x": 160.0,
       "y": 285.5,
       "radius": 12.3
@@ -223,7 +223,7 @@
       "trend_score": 0.0644,
       "x": 525.0,
       "y": 262.0,
-      "radius": 11.1
+      "radius": 11.0
     },
     {
       "id": "hydrogels",
@@ -264,7 +264,7 @@
       "group": "AM",
       "count": 57,
       "recent_count": 22,
-      "trend_score": 0.0448,
+      "trend_score": 0.0447,
       "x": 250.2,
       "y": 170.5,
       "radius": 10.4
@@ -376,8 +376,8 @@
     {
       "source": "additive-manufacturing",
       "target": "process-optimization",
-      "count": 226,
-      "recent_count": 80
+      "count": 227,
+      "recent_count": 81
     },
     {
       "source": "metamaterials",
@@ -430,8 +430,8 @@
     {
       "source": "additive-manufacturing",
       "target": "machine-learning",
-      "count": 146,
-      "recent_count": 62
+      "count": 147,
+      "recent_count": 63
     },
     {
       "source": "additive-manufacturing",
@@ -472,8 +472,8 @@
     {
       "source": "machine-learning",
       "target": "process-optimization",
-      "count": 103,
-      "recent_count": 51
+      "count": 104,
+      "recent_count": 52
     },
     {
       "source": "additive-manufacturing",
