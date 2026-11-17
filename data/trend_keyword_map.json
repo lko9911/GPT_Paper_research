@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-17T11:15:49+00:00",
+  "updated_at": "2026-11-17T22:53:28+00:00",
   "source": "derived from titles, tags, AI Q5 summaries, relevance notes, and public metadata; abstract text is not published",
   "recent_basis": "publication year 2026, plus records explicitly marked weekly-new",
   "node_count": 30,
@@ -11,7 +11,7 @@
       "group": "AM",
       "count": 1225,
       "recent_count": 496,
-      "trend_score": 0.9942,
+      "trend_score": 0.9938,
       "x": 310.0,
       "y": 148.0,
       "radius": 22.8
@@ -20,9 +20,9 @@
       "id": "additive-manufacturing",
       "label": "Additive Manufacturing",
       "group": "AM",
-      "count": 1249,
-      "recent_count": 469,
-      "trend_score": 0.9619,
+      "count": 1251,
+      "recent_count": 471,
+      "trend_score": 0.9647,
       "x": 369.8,
       "y": 170.5,
       "radius": 23.0
@@ -33,7 +33,7 @@
       "group": "AM",
       "count": 665,
       "recent_count": 215,
-      "trend_score": 0.4632,
+      "trend_score": 0.4629,
       "x": 359.4,
       "y": 233.5,
       "radius": 18.7
@@ -42,9 +42,9 @@
       "id": "machine-learning",
       "label": "Machine Learning",
       "group": "AI",
-      "count": 387,
-      "recent_count": 190,
-      "trend_score": 0.3611,
+      "count": 388,
+      "recent_count": 191,
+      "trend_score": 0.3626,
       "x": 620.0,
       "y": 68.0,
       "radius": 15.9
@@ -55,7 +55,7 @@
       "group": "AI",
       "count": 394,
       "recent_count": 184,
-      "trend_score": 0.3543,
+      "trend_score": 0.3542,
       "x": 684.0,
       "y": 120.0,
       "radius": 16.0
@@ -64,9 +64,9 @@
       "id": "process-optimization",
       "label": "Process Optimization",
       "group": "Automation",
-      "count": 318,
-      "recent_count": 130,
-      "trend_score": 0.2598,
+      "count": 319,
+      "recent_count": 131,
+      "trend_score": 0.2614,
       "x": 525.0,
       "y": 158.0,
       "radius": 15.1
@@ -77,7 +77,7 @@
       "group": "4D",
       "count": 279,
       "recent_count": 105,
-      "trend_score": 0.2152,
+      "trend_score": 0.2151,
       "x": 285.0,
       "y": 298.0,
       "radius": 14.6
@@ -86,9 +86,9 @@
       "id": "composites",
       "label": "Composites",
       "group": "Materials",
-      "count": 228,
-      "recent_count": 97,
-      "trend_score": 0.1917,
+      "count": 229,
+      "recent_count": 98,
+      "trend_score": 0.1932,
       "x": 185.0,
       "y": 118.0,
       "radius": 13.8
@@ -99,7 +99,7 @@
       "group": "Materials",
       "count": 204,
       "recent_count": 95,
-      "trend_score": 0.1831,
+      "trend_score": 0.183,
       "x": 249.0,
       "y": 170.0,
       "radius": 13.5
@@ -110,10 +110,21 @@
       "group": "Robotics",
       "count": 218,
       "recent_count": 92,
-      "trend_score": 0.1822,
+      "trend_score": 0.1821,
       "x": 540.0,
       "y": 318.0,
       "radius": 13.7
+    },
+    {
+      "id": "vat-photopolymerization",
+      "label": "Vat Photopolymerization",
+      "group": "AM",
+      "count": 236,
+      "recent_count": 79,
+      "trend_score": 0.1681,
+      "x": 310.0,
+      "y": 274.0,
+      "radius": 13.9
     },
     {
       "id": "monitoring",
@@ -121,29 +132,18 @@
       "group": "Automation",
       "count": 212,
       "recent_count": 83,
-      "trend_score": 0.1681,
+      "trend_score": 0.168,
       "x": 589.0,
       "y": 210.0,
       "radius": 13.6
     },
     {
-      "id": "vat-photopolymerization",
-      "label": "Vat Photopolymerization",
-      "group": "AM",
-      "count": 235,
-      "recent_count": 78,
-      "trend_score": 0.1665,
-      "x": 310.0,
-      "y": 274.0,
-      "radius": 13.9
-    },
-    {
       "id": "alloys-metals",
       "label": "Metals / Alloys",
       "group": "Materials",
-      "count": 170,
-      "recent_count": 73,
-      "trend_score": 0.1439,
+      "count": 171,
+      "recent_count": 74,
+      "trend_score": 0.1454,
       "x": 185.0,
       "y": 222.0,
       "radius": 12.9
@@ -204,26 +204,26 @@
       "radius": 11.4
     },
     {
+      "id": "toolpath-planning",
+      "label": "Toolpath / Path Planning",
+      "group": "Automation",
+      "count": 81,
+      "recent_count": 33,
+      "trend_score": 0.066,
+      "x": 525.0,
+      "y": 262.0,
+      "radius": 11.1
+    },
+    {
       "id": "lce",
       "label": "LCE",
       "group": "4D",
       "count": 69,
       "recent_count": 35,
-      "trend_score": 0.066,
+      "trend_score": 0.0659,
       "x": 221.0,
       "y": 350.0,
       "radius": 10.8
-    },
-    {
-      "id": "toolpath-planning",
-      "label": "Toolpath / Path Planning",
-      "group": "Automation",
-      "count": 80,
-      "recent_count": 32,
-      "trend_score": 0.0644,
-      "x": 525.0,
-      "y": 262.0,
-      "radius": 11.0
     },
     {
       "id": "hydrogels",
@@ -231,7 +231,7 @@
       "group": "Materials",
       "count": 81,
       "recent_count": 27,
-      "trend_score": 0.0576,
+      "trend_score": 0.0575,
       "x": 121.0,
       "y": 170.0,
       "radius": 11.1
@@ -242,7 +242,7 @@
       "group": "AI",
       "count": 51,
       "recent_count": 28,
-      "trend_score": 0.0518,
+      "trend_score": 0.0517,
       "x": 620.0,
       "y": 172.0,
       "radius": 10.2
@@ -286,7 +286,7 @@
       "group": "AML",
       "count": 26,
       "recent_count": 19,
-      "trend_score": 0.0331,
+      "trend_score": 0.033,
       "x": 774.0,
       "y": 300.0,
       "radius": 9.3
@@ -308,7 +308,7 @@
       "group": "AI",
       "count": 14,
       "recent_count": 8,
-      "trend_score": 0.0147,
+      "trend_score": 0.0146,
       "x": 556.0,
       "y": 120.0,
       "radius": 8.7
@@ -376,8 +376,8 @@
     {
       "source": "additive-manufacturing",
       "target": "process-optimization",
-      "count": 227,
-      "recent_count": 81
+      "count": 228,
+      "recent_count": 82
     },
     {
       "source": "metamaterials",
@@ -394,8 +394,8 @@
     {
       "source": "additive-manufacturing",
       "target": "composites",
-      "count": 179,
-      "recent_count": 71
+      "count": 180,
+      "recent_count": 72
     },
     {
       "source": "additive-manufacturing",
@@ -406,8 +406,14 @@
     {
       "source": "additive-manufacturing",
       "target": "vat-photopolymerization",
-      "count": 219,
-      "recent_count": 68
+      "count": 220,
+      "recent_count": 69
+    },
+    {
+      "source": "additive-manufacturing",
+      "target": "alloys-metals",
+      "count": 154,
+      "recent_count": 67
     },
     {
       "source": "multi-material-am",
@@ -417,20 +423,14 @@
     },
     {
       "source": "additive-manufacturing",
-      "target": "alloys-metals",
-      "count": 153,
-      "recent_count": 66
+      "target": "machine-learning",
+      "count": 148,
+      "recent_count": 64
     },
     {
       "source": "4d-printing",
       "target": "additive-manufacturing",
       "count": 185,
-      "recent_count": 63
-    },
-    {
-      "source": "additive-manufacturing",
-      "target": "machine-learning",
-      "count": 147,
       "recent_count": 63
     },
     {
@@ -590,6 +590,12 @@
       "recent_count": 29
     },
     {
+      "source": "additive-manufacturing",
+      "target": "toolpath-planning",
+      "count": 66,
+      "recent_count": 29
+    },
+    {
       "source": "functionally-graded-am",
       "target": "shape-morphing",
       "count": 101,
@@ -599,12 +605,6 @@
       "source": "digital-twin",
       "target": "monitoring",
       "count": 71,
-      "recent_count": 28
-    },
-    {
-      "source": "additive-manufacturing",
-      "target": "toolpath-planning",
-      "count": 65,
       "recent_count": 28
     },
     {
@@ -650,15 +650,15 @@
       "recent_count": 23
     },
     {
+      "source": "composites",
+      "target": "machine-learning",
+      "count": 30,
+      "recent_count": 23
+    },
+    {
       "source": "multi-material-am",
       "target": "volumetric-am",
       "count": 50,
-      "recent_count": 22
-    },
-    {
-      "source": "composites",
-      "target": "machine-learning",
-      "count": 29,
       "recent_count": 22
     },
     {
@@ -854,6 +854,12 @@
       "recent_count": 13
     },
     {
+      "source": "process-optimization",
+      "target": "vat-photopolymerization",
+      "count": 43,
+      "recent_count": 12
+    },
+    {
       "source": "functionally-graded-am",
       "target": "process-optimization",
       "count": 40,
@@ -884,6 +890,12 @@
       "recent_count": 12
     },
     {
+      "source": "alloys-metals",
+      "target": "process-optimization",
+      "count": 26,
+      "recent_count": 12
+    },
+    {
       "source": "machine-learning",
       "target": "sustainability",
       "count": 23,
@@ -902,12 +914,6 @@
       "recent_count": 11
     },
     {
-      "source": "process-optimization",
-      "target": "vat-photopolymerization",
-      "count": 42,
-      "recent_count": 11
-    },
-    {
       "source": "metamaterials",
       "target": "process-optimization",
       "count": 31,
@@ -917,12 +923,6 @@
       "source": "active-learning",
       "target": "machine-learning",
       "count": 27,
-      "recent_count": 11
-    },
-    {
-      "source": "alloys-metals",
-      "target": "process-optimization",
-      "count": 25,
       "recent_count": 11
     },
     {
@@ -1016,9 +1016,21 @@
       "recent_count": 9
     },
     {
+      "source": "machine-learning",
+      "target": "toolpath-planning",
+      "count": 22,
+      "recent_count": 9
+    },
+    {
       "source": "additive-manufacturing",
       "target": "closed-loop-control",
       "count": 22,
+      "recent_count": 9
+    },
+    {
+      "source": "composites",
+      "target": "toolpath-planning",
+      "count": 18,
       "recent_count": 9
     },
     {
@@ -1058,21 +1070,9 @@
       "recent_count": 8
     },
     {
-      "source": "machine-learning",
-      "target": "toolpath-planning",
-      "count": 21,
-      "recent_count": 8
-    },
-    {
       "source": "alloys-metals",
       "target": "metamaterials",
       "count": 19,
-      "recent_count": 8
-    },
-    {
-      "source": "composites",
-      "target": "toolpath-planning",
-      "count": 17,
       "recent_count": 8
     },
     {
