@@ -1216,6 +1216,95 @@
     "last_seen_in_crossref_run": "2026-11-18",
     "id": "10.1002/pen.70689"
   },
+  "10.1126/scirobotics.aei1264": {
+    "author_details": [
+      {
+        "name": "Yichen Zhai",
+        "orcid": "https://orcid.org/0000-0001-6174-7421",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Mechanical and Aerospace Engineering, University of California\r                    San Diego, La Jolla, CA 92093, USA."
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical and Aerospace Engineering, University of California\r                    San Diego, La Jolla, CA 92093, USA."
+        ]
+      },
+      {
+        "name": "Michael T. Tolley",
+        "orcid": "https://orcid.org/0000-0001-7821-7777",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Department of Mechanical and Aerospace Engineering, University of California\r                    San Diego, La Jolla, CA 92093, USA."
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical and Aerospace Engineering, University of California\r                    San Diego, La Jolla, CA 92093, USA."
+        ]
+      }
+    ],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2470-9476"
+    ],
+    "issn_l": "",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S4210213233",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210213233",
+      "issn_l": "2470-9476",
+      "issn": [
+        "2470-9476"
+      ],
+      "type": "journal",
+      "host_organization_name": "American Association for the Advancement of Science",
+      "works_count": 952,
+      "cited_by_count": 92140,
+      "two_year_mean_citedness": 15.948328267477203,
+      "h_index": 161,
+      "i10_index": 619,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "High-impact general journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 15.948328267477203,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - Printing powerful soft robots on a desktop is a 2026 paper from Science Robotics about Soft robotics and Manufacturing automation.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Soft robotics and Manufacturing automation.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Soft robotics and Manufacturing automation; current relevance score is 5/10.",
+    "relevance_note_en": "Relevant to the tracker through Soft robotics and Manufacturing automation; score: 5/10.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-11-18",
+    "id": "10.1126/scirobotics.aei1264"
+  },
   "10.1016/j.addma.2026.105108": {
     "author_details": [
       {
@@ -7192,8 +7281,8 @@
         ]
       }
     ],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
     "crossref_collection_route": "keyword_query",
@@ -7205,8 +7294,8 @@
     "issn_l": "",
     "publisher": "MDPI AG",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7234933227",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S4210232045",
     "venue_metrics": {
@@ -7622,8 +7711,8 @@
         ]
       }
     ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
     "crossref_collection_route": "issn_venue_query",
@@ -7636,8 +7725,8 @@
     "issn_l": "",
     "publisher": "Wiley",
     "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W7167818753",
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S99352657",
     "venue_metrics": {
@@ -20006,9 +20095,9 @@
     "corresponding_author_source": "openalex_cross_check",
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "International Journal of Advanced Manufacturing Technology",
-    "crossref_target_issn": "0268-3768",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
     "issn": [
       "0268-3768",
       "1433-3015"
@@ -20533,8 +20622,8 @@
         ]
       }
     ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
     "crossref_collection_route": "issn_venue_query",
@@ -20547,8 +20636,8 @@
     "issn_l": "",
     "publisher": "Wiley",
     "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W7161143253",
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S135204980",
     "venue_metrics": {
@@ -22580,8 +22669,8 @@
         ]
       }
     ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
     "crossref_collection_route": "issn_venue_query",
@@ -22594,8 +22683,8 @@
     "issn_l": "",
     "publisher": "Wiley",
     "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W7163647210",
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S99352657",
     "venue_metrics": {
@@ -26469,8 +26558,8 @@
         ]
       }
     ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
     "crossref_collection_route": "issn_venue_query",
@@ -26483,8 +26572,8 @@
     "issn_l": "",
     "publisher": "Wiley",
     "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W7124432578",
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S135204980",
     "venue_metrics": {
@@ -29847,8 +29936,8 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "not_seen_in_latest_crossref_run": true,
-    "last_seen_in_crossref_run": "2026-11-05",
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-11-18",
     "id": "10.1002/rob.70332"
   },
   "10.1016/j.eurpolymj.2026.115117": {
@@ -32555,6 +32644,123 @@
     "last_seen_in_crossref_run": "2026-11-18",
     "id": "10.1080/17452759.2026.2752620"
   },
+  "10.1038/s41467-026-79348-1": {
+    "author_details": [
+      {
+        "name": "H. B. Duc Tran",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Philipp Mainik",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Santiago Gomez Melo",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Lilliana Flórido Martins",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Ulrich S. Schwarz",
+        "orcid": "https://orcid.org/0000-0003-1483-640X",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Christoph A. Spiegel",
+        "orcid": "https://orcid.org/0000-0002-5228-9083",
+        "position": "additional",
+        "is_corresponding": true,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Eva Blasco",
+        "orcid": "https://orcid.org/0000-0002-0849-4223",
+        "position": "additional",
+        "is_corresponding": true,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "crossref",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Nature Communications",
+    "crossref_target_issn": "2041-1723",
+    "issn": [
+      "2041-1723"
+    ],
+    "issn_l": "",
+    "publisher": "Springer Science and Business Media LLC",
+    "openalex_checked": false,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S64187185",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S64187185",
+      "issn_l": "2041-1723",
+      "issn": [
+        "2041-1723"
+      ],
+      "type": "journal",
+      "host_organization_name": "Nature Portfolio",
+      "works_count": 90441,
+      "cited_by_count": 7551319,
+      "two_year_mean_citedness": 16.130086313193587,
+      "h_index": 743,
+      "i10_index": 68559,
+      "is_core": true,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
+    "journal_quality": {
+      "label": "High-impact general journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 16.130086313193587,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - 4D printing of multi-state pH-responsive microstructures is a 2026 paper from Nature Communications about 4D printing and Soft robotics.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to 4D printing and Soft robotics.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for 4D printing and Soft robotics; current relevance score is 5/10.",
+    "relevance_note_en": "Relevant to the tracker through 4D printing and Soft robotics; score: 5/10.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-11-18",
+    "id": "10.1038/s41467-026-79348-1"
+  },
   "10.1080/17452759.2026.2635781": {
     "author_details": [
       {
@@ -34048,8 +34254,8 @@
         ]
       }
     ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
     "crossref_collection_route": "issn_venue_query",
@@ -34062,8 +34268,8 @@
     "issn_l": "",
     "publisher": "Wiley",
     "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4413442968",
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2737737698",
     "venue_metrics": {
@@ -36822,281 +37028,5 @@
     "not_seen_in_latest_crossref_run": false,
     "last_seen_in_crossref_run": "2026-11-18",
     "id": "10.1002/admt.71196"
-  },
-  "10.1002/admt.202502588": {
-    "author_details": [
-      {
-        "name": "Ouriel Bliah",
-        "orcid": "https://orcid.org/0000-0002-1000-2160",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Casali Center for Applied Chemistry Institute of Chemistry, and Center for Nanotechnology and Nanoscience Hebrew University of Jerusalem  Jerusalem Israel"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Casali Center for Applied Chemistry Institute of Chemistry, and Center for Nanotechnology and Nanoscience Hebrew University of Jerusalem  Jerusalem Israel"
-        ]
-      },
-      {
-        "name": "Konstantin Sakharov",
-        "orcid": "https://orcid.org/0000-0002-3247-5743",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Campus for Research Excellence and Technological Enterprise (CREATE)  Singapore Singapore"
-          },
-          {
-            "name": "School of Materials Science and Engineering Nanyang Technological University  Singapore Singapore"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Campus for Research Excellence and Technological Enterprise (CREATE)  Singapore Singapore",
-          "School of Materials Science and Engineering Nanyang Technological University  Singapore Singapore"
-        ]
-      },
-      {
-        "name": "Pooi See Lee",
-        "orcid": "https://orcid.org/0000-0003-1383-1623",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Campus for Research Excellence and Technological Enterprise (CREATE)  Singapore Singapore"
-          },
-          {
-            "name": "School of Materials Science and Engineering Nanyang Technological University  Singapore Singapore"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Campus for Research Excellence and Technological Enterprise (CREATE)  Singapore Singapore",
-          "School of Materials Science and Engineering Nanyang Technological University  Singapore Singapore"
-        ]
-      },
-      {
-        "name": "Shlomo Magdassi",
-        "orcid": "https://orcid.org/0000-0002-6794-0553",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Casali Center for Applied Chemistry Institute of Chemistry, and Center for Nanotechnology and Nanoscience Hebrew University of Jerusalem  Jerusalem Israel"
-          },
-          {
-            "name": "Campus for Research Excellence and Technological Enterprise (CREATE)  Singapore Singapore"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Casali Center for Applied Chemistry Institute of Chemistry, and Center for Nanotechnology and Nanoscience Hebrew University of Jerusalem  Jerusalem Israel",
-          "Campus for Research Excellence and Technological Enterprise (CREATE)  Singapore Singapore"
-        ]
-      }
-    ],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2365-709X",
-      "2365-709X"
-    ],
-    "issn_l": "",
-    "publisher": "Wiley",
-    "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S2765038284",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S2765038284",
-      "issn_l": "2365-709X",
-      "issn": [
-        "2365-709X"
-      ],
-      "type": "journal",
-      "host_organization_name": "Wiley",
-      "works_count": 6302,
-      "cited_by_count": 132117,
-      "two_year_mean_citedness": 4.245998315080033,
-      "h_index": 131,
-      "i10_index": 2825,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 4.245998315080033,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 2",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The study focuses on developing a 3D printed conductive elastomer for soft robotics.\n2. Problem - There is a need for materials that are both mechanically compliant and capable of sensing for integrated soft robots.\n3. Method - The researchers created a porous polyurethane-acrylate elastomer using emulsion templating to enable metal salt reduction for conductivity.\n4. Key Result - The resulting material exhibits high stretchability, mechanical resilience, and stable conductivity under deformation, functioning as both a sensor and a structural element.\n5. Takeaway - This innovative approach allows for the creation of multifunctional soft robotic systems where the body and sensor are integrated into a single component.",
-    "relevance_note_en": "The summary captures the essence of the research on 3D printed conductive materials for soft robotics.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-11-18",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1002/admt.202502588"
-  },
-  "10.1002/adrr.202500076": {
-    "author_details": [
-      {
-        "name": "Changjiang Liu",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Australian Institute for Bioengineering and Nanotechnology The University of Queensland  Brisbane Australia"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Australian Institute for Bioengineering and Nanotechnology The University of Queensland  Brisbane Australia"
-        ]
-      },
-      {
-        "name": "Bin Cui",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Australian Institute for Bioengineering and Nanotechnology The University of Queensland  Brisbane Australia"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Australian Institute for Bioengineering and Nanotechnology The University of Queensland  Brisbane Australia"
-        ]
-      },
-      {
-        "name": "Xumin Huang",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Australian Institute for Bioengineering and Nanotechnology The University of Queensland  Brisbane Australia"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Australian Institute for Bioengineering and Nanotechnology The University of Queensland  Brisbane Australia"
-        ]
-      },
-      {
-        "name": "Xiaoyu (Rayne) Zheng",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Department of Material Science and Engineering University of California  Berkeley California USA"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Department of Material Science and Engineering University of California  Berkeley California USA"
-        ]
-      },
-      {
-        "name": "T. Thang Vo‐Doan",
-        "orcid": "https://orcid.org/0000-0002-5065-5887",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "School of Mechanical &amp; Mining Engineering The University of Queensland   St Lucia Australia"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "School of Mechanical &amp; Mining Engineering The University of Queensland   St Lucia Australia"
-        ]
-      },
-      {
-        "name": "Ruirui Qiao",
-        "orcid": "https://orcid.org/0000-0002-8351-7093",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Australian Institute for Bioengineering and Nanotechnology The University of Queensland  Brisbane Australia"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Australian Institute for Bioengineering and Nanotechnology The University of Queensland  Brisbane Australia"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2943-9973",
-      "2943-9973"
-    ],
-    "issn_l": "",
-    "publisher": "Wiley",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4414148070",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S5407036553",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S5407036553",
-      "issn_l": "2943-9973",
-      "issn": [
-        "2943-9973"
-      ],
-      "type": "journal",
-      "host_organization_name": null,
-      "works_count": 164,
-      "cited_by_count": 204,
-      "two_year_mean_citedness": 1.2439024390243902,
-      "h_index": 6,
-      "i10_index": 2,
-      "is_core": false,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 1.2439024390243902,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 4",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The paper focuses on advancements in 3D printing techniques for soft robotic systems.\n2. Problem - It addresses the challenges in the fabrication of soft robots, including material selection and manufacturing complexities.\n3. Method - The authors review various matrix materials, functional components, and 3D printing technologies, categorizing fabrication strategies by complexity.\n4. Key Result - The review highlights persistent challenges in soft robotics and proposes solutions while analyzing future trends in the field.\n5. Takeaway - The study emphasizes the importance of reliability and environmental considerations in the development of 3D-printed soft robotic systems.",
-    "relevance_note_en": "The summary captures the core themes and findings of the paper without direct paraphrasing.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-11-18",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1002/adrr.202500076"
   }
 }
