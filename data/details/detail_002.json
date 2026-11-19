@@ -1261,7 +1261,7 @@
     "publisher": "American Association for the Advancement of Science (AAAS)",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7236390815",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S4210213233",
     "venue_metrics": {
@@ -10433,8 +10433,8 @@
         ]
       }
     ],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
     "crossref_collection_route": "keyword_query",
@@ -10447,8 +10447,8 @@
     "issn_l": "",
     "publisher": "Wiley",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7235974657",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S108229257",
     "venue_metrics": {
@@ -18674,6 +18674,127 @@
     "last_seen_in_crossref_run": "2026-11-19",
     "id": "10.1108/rpj-03-2026-0193"
   },
+  "10.3390/act15110614": {
+    "author_details": [
+      {
+        "name": "Konstantinos Karagiannis",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Robotics Group, Department of Mechanical Engineering and Aeronautics, University of Patras, Rio, GR-26504 Patras, Greece"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Robotics Group, Department of Mechanical Engineering and Aeronautics, University of Patras, Rio, GR-26504 Patras, Greece"
+        ]
+      },
+      {
+        "name": "Ioanna Tzoumani",
+        "orcid": "https://orcid.org/0009-0008-7106-9650",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Robotics Group, Department of Mechanical Engineering and Aeronautics, University of Patras, Rio, GR-26504 Patras, Greece"
+          },
+          {
+            "name": "Department of Chemistry, University of Patras, GR-26504 Patras, Greece"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Robotics Group, Department of Mechanical Engineering and Aeronautics, University of Patras, Rio, GR-26504 Patras, Greece",
+          "Department of Chemistry, University of Patras, GR-26504 Patras, Greece"
+        ]
+      },
+      {
+        "name": "George Nikolakopoulos",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Robotics Group, Department of Mechanical Engineering and Aeronautics, University of Patras, Rio, GR-26504 Patras, Greece"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Robotics Group, Department of Mechanical Engineering and Aeronautics, University of Patras, Rio, GR-26504 Patras, Greece"
+        ]
+      },
+      {
+        "name": "Panagiotis Koustoumpardis",
+        "orcid": "https://orcid.org/0000-0002-3051-7321",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Robotics Group, Department of Mechanical Engineering and Aeronautics, University of Patras, Rio, GR-26504 Patras, Greece"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Robotics Group, Department of Mechanical Engineering and Aeronautics, University of Patras, Rio, GR-26504 Patras, Greece"
+        ]
+      }
+    ],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2076-0825"
+    ],
+    "issn_l": "",
+    "publisher": "MDPI AG",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S2736557103",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S2736557103",
+      "issn_l": "2076-0825",
+      "issn": [
+        "2076-0825"
+      ],
+      "type": "journal",
+      "host_organization_name": "Multidisciplinary Digital Publishing Institute",
+      "works_count": 3169,
+      "cited_by_count": 25919,
+      "two_year_mean_citedness": 2.4223684210526315,
+      "h_index": 54,
+      "i10_index": 770,
+      "is_core": true,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 2.4223684210526315,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 3",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - Design, Simulation, and Experimental Validation of a Soft Robotic Finger with Variable Stiffness and Embedded Sensing is a 2026 paper from Actuators about Soft robotics.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Soft robotics.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Soft robotics; current relevance score is 5/10.",
+    "relevance_note_en": "Relevant to the tracker through Soft robotics; score: 5/10.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-11-19",
+    "id": "10.3390/act15110614"
+  },
   "10.1016/j.matdes.2026.117413": {
     "author_details": [
       {
@@ -19892,8 +20013,8 @@
         ]
       }
     ],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
     "crossref_collection_route": "issn_venue_query",
@@ -19906,7 +20027,7 @@
     "issn_l": "",
     "publisher": "Wiley",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7213553075",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S135204980",
@@ -21331,7 +21452,7 @@
     "publisher": "Wiley",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4417456790",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S135204980",
     "venue_metrics": {
@@ -22165,8 +22286,8 @@
     "abstract_used_for_summary": false,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "not_seen_in_latest_crossref_run": true,
-    "last_seen_in_crossref_run": "2026-11-17",
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-11-19",
     "id": "10.1038/s41598-026-52065-x"
   },
   "10.1002/adfm.202523525": {
@@ -36972,124 +37093,5 @@
     "last_seen_in_crossref_run": "2026-11-19",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1080/17452759.2026.2654243"
-  },
-  "10.1108/rpj-04-2025-0155": {
-    "author_details": [
-      {
-        "name": "Bikram Jyoti Sahariah",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Indian Institute of Technology Guwahati Technology Innovation Hub (TIH), Technology Innovation and Development Foundation (TIDF), , Guwahati, , and Department of Mechanical Engineering, Jorhat Institute of Science and Technology, Jorhat, India"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Indian Institute of Technology Guwahati Technology Innovation Hub (TIH), Technology Innovation and Development Foundation (TIDF), , Guwahati, , and Department of Mechanical Engineering, Jorhat Institute of Science and Technology, Jorhat, India"
-        ]
-      },
-      {
-        "name": "Mayur Jiyalal Prajapati",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "National Taipei University of Technology High–Value Biomaterials Research and Commercialization Center, , Taipei City,"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "National Taipei University of Technology High–Value Biomaterials Research and Commercialization Center, , Taipei City,"
-        ]
-      },
-      {
-        "name": "Rengaswamy Jayaganthan",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Indian Institute of Technology Madras Department of Engineering Design, , Chennai,"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Indian Institute of Technology Madras Department of Engineering Design, , Chennai,"
-        ]
-      },
-      {
-        "name": "Biranchi Panda",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Indian Institute of Technology Guwahati Department of Mechanical Engineering, Sustainable Resources for Additive Manufacturing (SReAM) Lab, , Guwahati,"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Indian Institute of Technology Guwahati Department of Mechanical Engineering, Sustainable Resources for Additive Manufacturing (SReAM) Lab, , Guwahati,"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "Rapid Prototyping Journal",
-    "crossref_target_issn": "1355-2546",
-    "issn": [
-      "1355-2546",
-      "1758-7670"
-    ],
-    "issn_l": "",
-    "publisher": "Emerald",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W7114789745",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S173500210",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S173500210",
-      "issn_l": "1355-2546",
-      "issn": [
-        "1355-2546",
-        "1758-7670"
-      ],
-      "type": "journal",
-      "host_organization_name": "Emerald Publishing Limited",
-      "works_count": 2524,
-      "cited_by_count": 98147,
-      "two_year_mean_citedness": 3.0,
-      "h_index": 139,
-      "i10_index": 1507,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Core manufacturing journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 3.0,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 3",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - The review focuses on auxetic cardiovascular stents and their advancements in design and manufacturing.\n2. Problem - Conventional stents face limitations such as mechanical issues and foreshortening, impacting their effectiveness.\n3. Method - The study synthesizes experimental and simulation research on auxetic stents, including design strategies and manufacturing technologies.\n4. Key Result - Auxetic stents show improved radial strength and flexibility, but challenges like standardization and scalability persist.\n5. Takeaway - The review highlights the potential of auxetic stents and suggests areas for future research, including customization and durability.",
-    "relevance_note_en": "The summary accurately reflects the core themes and findings of the review on auxetic stents.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-11-19",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1108/rpj-04-2025-0155"
   }
 }

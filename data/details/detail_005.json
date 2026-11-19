@@ -1,4 +1,106 @@
 {
+  "10.1016/j.eswa.2024.125618": {
+    "author_details": [
+      {
+        "name": "Songhao Wang",
+        "orcid": "https://orcid.org/0000-0003-3643-4698",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Weiming Ou",
+        "orcid": "https://orcid.org/0000-0002-4350-348X",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Zhihao Liu",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Bo Du",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Rui Wang",
+        "orcid": "https://orcid.org/0000-0001-5958-2234",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "0957-4174"
+    ],
+    "issn_l": "",
+    "publisher": "Elsevier BV",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4403921189",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S13144211",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S13144211",
+      "issn_l": "0957-4174",
+      "issn": [
+        "0957-4174",
+        "1873-6793"
+      ],
+      "type": "journal",
+      "host_organization_name": "Elsevier BV",
+      "works_count": 31535,
+      "cited_by_count": 1222289,
+      "two_year_mean_citedness": 6.711989982260253,
+      "h_index": 345,
+      "i10_index": 19246,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 6.711989982260253,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - The paper focuses on competitive multi-task Bayesian optimization.\n2. Problem - It addresses the challenge of hyperparameter tuning in additive manufacturing processes.\n3. Method - The authors propose a Bayesian optimization framework that operates across multiple tasks simultaneously.\n4. Key Result - The method demonstrates improved efficiency and performance in tuning hyperparameters compared to traditional approaches.\n5. Takeaway - The study highlights the potential of multi-task Bayesian optimization for enhancing additive manufacturing outcomes.",
+    "relevance_note_en": "The summary captures the essence of the paper's focus on optimization methods in additive manufacturing.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-11-15",
+    "not_seen_in_latest_crossref_run": true,
+    "id": "10.1016/j.eswa.2024.125618"
+  },
   "10.1002/adma.202416621": {
     "author_details": [
       {
@@ -8239,8 +8341,8 @@
         ]
       }
     ],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
     "crossref_collection_route": "keyword_query",
@@ -8252,7 +8354,7 @@
     "issn_l": "",
     "publisher": "Emerald",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7101572459",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S5407047337",
@@ -21244,8 +21346,8 @@
         ]
       }
     ],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
     "crossref_collection_route": "keyword_query",
@@ -21257,7 +21359,7 @@
     "issn_l": "",
     "publisher": "International Journal of 3D Printing Technologies and Digital Industry",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4405586553",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S4210214343",
@@ -30279,124 +30381,5 @@
     "last_seen_in_crossref_run": "2026-11-19",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/srin.202400100"
-  },
-  "10.1007/s00170-024-13608-6": {
-    "author_details": [
-      {
-        "name": "Adam Zuyyinal Adib",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Juan Pratama",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Muhammad Imawan Badranaya",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Muslim Mahardika",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Suyitno",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Urip Agus Salim",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Budi Arifvianto",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "International Journal of Advanced Manufacturing Technology",
-    "crossref_target_issn": "0268-3768",
-    "issn": [
-      "0268-3768",
-      "1433-3015"
-    ],
-    "issn_l": "",
-    "publisher": "Springer Science and Business Media LLC",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4395456556",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S77056576",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S77056576",
-      "issn_l": "0268-3768",
-      "issn": [
-        "0268-3768",
-        "1433-3015"
-      ],
-      "type": "journal",
-      "host_organization_name": "Springer Science+Business Media",
-      "works_count": 31026,
-      "cited_by_count": 730438,
-      "two_year_mean_citedness": 3.7044257112750265,
-      "h_index": 199,
-      "i10_index": 18166,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 3.7044257112750265,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 2",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - The study investigates the flexural strength of sandwich-structured components made from polylactic acid and thermoplastic polyurethane.\n2. Problem - There is a need to understand the mechanical properties of multi-material structures produced through additive manufacturing techniques.\n3. Method - The research employs extrusion-based multi-material additive manufacturing to fabricate the sandwich structures and assess their flexural strength.\n4. Key Result - Findings indicate that the flexural strength of the fabricated parts varies significantly based on the material composition and structure.\n5. Takeaway - Optimizing material combinations in multi-material additive manufacturing can enhance the mechanical performance of sandwich-structured components.",
-    "relevance_note_en": "The paper addresses a specific aspect of multi-material additive manufacturing relevant to mechanical properties.",
-    "abstract_used_for_summary": false,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-11-19",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1007/s00170-024-13608-6"
   }
 }

@@ -1766,9 +1766,28 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Mehrshad Mehrpouya",
+        "openalex_author_id": "https://openalex.org/A5036535810",
+        "orcid": "https://orcid.org/0000-0001-8939-7937",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of Twente",
+            "ror": "https://ror.org/006hf6230",
+            "country_code": "NL",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "University of Twente Faculty of Engineering Technology, Enschede, The Netherlands"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "4D Printing",
     "doi": "10.1108/4dp-12-2025-0023",
@@ -1787,7 +1806,7 @@
     "issn_l": "",
     "publisher": "Emerald",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7154702244",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S5407047337",
@@ -17730,9 +17749,21 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Mahima Beohar",
+        "openalex_author_id": "https://openalex.org/A5074875110",
+        "orcid": "https://orcid.org/0009-0006-1892-6284",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [],
+        "raw_affiliation_strings": [
+          "Department of Pharmacy, Gyan Ganga Institute of Technology & Sciences, Tilwara Ghat, Jabalpur, Madhya Pradesh, 482003, INDIA"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Journal of Advanced Pharmaceutical Sciences and Natural Products",
     "doi": "10.66079/japsnp.v1i5.88",
@@ -17749,7 +17780,7 @@
     "issn_l": "",
     "publisher": "Wiseleaf Scientific Ventures",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7225098968",
     "openalex_work_id": "",
     "openalex_source_id": "",
@@ -19106,9 +19137,28 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Vladyslav Voronko",
+        "openalex_author_id": "https://openalex.org/A5056651581",
+        "orcid": "https://orcid.org/0009-0001-9743-4061",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "O.M. Beketov National University of Urban Economy in Kharkiv",
+            "ror": "https://ror.org/05ws31q32",
+            "country_code": "UA",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "O.M. Beketov National University of Urban Economy in Kharkiv"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Lighting Engineering & Power Engineering",
     "doi": "10.33042/2079-424x.2026.65.1.01",
@@ -19128,7 +19178,7 @@
     "issn_l": "",
     "publisher": "O.M.Beketov National University of Urban Economy in Kharkiv",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7144211788",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S4210179229",
@@ -22371,7 +22421,7 @@
     "last_updated": "2026-11-19",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-11-19",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 3",
     "openalex_venue_rank_number": 3,
     "openalex_venue_rank_score": 1.7471264367816093,
@@ -42647,9 +42697,35 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Gerbrand Ceder",
+        "openalex_author_id": "https://openalex.org/A5014983956",
+        "orcid": "https://orcid.org/0000-0001-9275-3605",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Lawrence Berkeley National Laboratory",
+            "ror": "https://ror.org/02jbv0t02",
+            "country_code": "US",
+            "type": "facility"
+          },
+          {
+            "name": "University of California, Berkeley",
+            "ror": "https://ror.org/01an7q238",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Materials Science & Engineering, University of California Berkeley, Berkeley, CA 94720, USA",
+          "Materials Sciences Division, Lawrence Berkeley National Laboratory, Berkeley, CA 94720, USA"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Digital Discovery",
     "doi": "10.1039/d6dd00502k",
@@ -42668,7 +42744,7 @@
     "issn_l": "",
     "publisher": "Royal Society of Chemistry (RSC)",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7220941000",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S4210202120",
@@ -56770,9 +56846,46 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Yi-Jun Yang",
+        "openalex_author_id": "https://openalex.org/A5076494144",
+        "orcid": "https://orcid.org/0000-0002-6357-5907",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Xi'an Jiaotong University",
+            "ror": "https://ror.org/017zhmm22",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Computer Science and Technology, Xi’an Jiaotong University, Xi’an 710049, China"
+        ]
+      },
+      {
+        "name": "Yuan Yao",
+        "openalex_author_id": "https://openalex.org/A5020423887",
+        "orcid": "https://orcid.org/0000-0003-3302-4909",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Shanghai University",
+            "ror": "https://ror.org/006teas31",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Mechanical Engineering, Electrical Engineering and Automation, Shanghai University, Shanghai, China"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Computer-Aided Design",
     "doi": "10.1016/j.cad.2026.104201",
@@ -56791,7 +56904,7 @@
     "issn_l": "",
     "publisher": "Elsevier BV",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7234997317",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S4210171473",
@@ -58057,10 +58170,10 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-07-03",
-    "last_updated": "2026-11-09",
+    "last_updated": "2026-11-19",
     "is_weekly_new": false,
-    "not_seen_in_latest_crossref_run": true,
-    "last_seen_in_crossref_run": "2026-11-09",
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-11-19",
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 17.209580838323355,
@@ -96532,7 +96645,7 @@
     "publisher": "American Association for the Advancement of Science (AAAS)",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7236390815",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S4210213233",
     "venue_metrics": {
@@ -109988,9 +110101,28 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Jiangxi Chen",
+        "openalex_author_id": "https://openalex.org/A5005062291",
+        "orcid": "https://orcid.org/0000-0001-6534-2552",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Xiamen University",
+            "ror": "https://ror.org/00mcjh785",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Key Laboratory of High Performance Ceramic Fibers of Education College of Materials Xiamen University  Xiamen People's Republic of China"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Advanced Optical Materials",
     "doi": "10.1002/adom.72039",
@@ -110010,8 +110142,8 @@
     "issn_l": "",
     "publisher": "Wiley",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7235974657",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S108229257",
     "venue_metrics": {
@@ -122460,6 +122592,163 @@
     "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
   },
   {
+    "id": "10.3390/act15110614",
+    "title": "Design, Simulation, and Experimental Validation of a Soft Robotic Finger with Variable Stiffness and Embedded Sensing",
+    "authors": [
+      "Konstantinos Karagiannis",
+      "Ioanna Tzoumani",
+      "George Nikolakopoulos",
+      "Panagiotis Koustoumpardis"
+    ],
+    "author_details": [
+      {
+        "name": "Konstantinos Karagiannis",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Robotics Group, Department of Mechanical Engineering and Aeronautics, University of Patras, Rio, GR-26504 Patras, Greece"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Robotics Group, Department of Mechanical Engineering and Aeronautics, University of Patras, Rio, GR-26504 Patras, Greece"
+        ]
+      },
+      {
+        "name": "Ioanna Tzoumani",
+        "orcid": "https://orcid.org/0009-0008-7106-9650",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Robotics Group, Department of Mechanical Engineering and Aeronautics, University of Patras, Rio, GR-26504 Patras, Greece"
+          },
+          {
+            "name": "Department of Chemistry, University of Patras, GR-26504 Patras, Greece"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Robotics Group, Department of Mechanical Engineering and Aeronautics, University of Patras, Rio, GR-26504 Patras, Greece",
+          "Department of Chemistry, University of Patras, GR-26504 Patras, Greece"
+        ]
+      },
+      {
+        "name": "George Nikolakopoulos",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Robotics Group, Department of Mechanical Engineering and Aeronautics, University of Patras, Rio, GR-26504 Patras, Greece"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Robotics Group, Department of Mechanical Engineering and Aeronautics, University of Patras, Rio, GR-26504 Patras, Greece"
+        ]
+      },
+      {
+        "name": "Panagiotis Koustoumpardis",
+        "orcid": "https://orcid.org/0000-0002-3051-7321",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Robotics Group, Department of Mechanical Engineering and Aeronautics, University of Patras, Rio, GR-26504 Patras, Greece"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Robotics Group, Department of Mechanical Engineering and Aeronautics, University of Patras, Rio, GR-26504 Patras, Greece"
+        ]
+      }
+    ],
+    "corresponding_authors": [],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "year": 2026,
+    "venue": "Actuators",
+    "doi": "10.3390/act15110614",
+    "url": "https://doi.org/10.3390/act15110614",
+    "source": [
+      "Crossref"
+    ],
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2076-0825"
+    ],
+    "issn_l": "",
+    "publisher": "MDPI AG",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S2736557103",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S2736557103",
+      "issn_l": "2076-0825",
+      "issn": [
+        "2076-0825"
+      ],
+      "type": "journal",
+      "host_organization_name": "Multidisciplinary Digital Publishing Institute",
+      "works_count": 3169,
+      "cited_by_count": 25919,
+      "two_year_mean_citedness": 2.4223684210526315,
+      "h_index": 54,
+      "i10_index": 770,
+      "is_core": true,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 2.4223684210526315,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 3",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "publication_type": "journal_article",
+    "venue_trust": "trusted",
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "is_core_venue": false,
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "categories": [
+      "Multi-material AM"
+    ],
+    "tags": [
+      "Soft robotics"
+    ],
+    "relevance_score": 5,
+    "curation_priority": false,
+    "ai_summary_en": "1. Topic - Design, Simulation, and Experimental Validation of a Soft Robotic Finger with Variable Stiffness and Embedded Sensing is a 2026 paper from Actuators about Soft robotics.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Soft robotics.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Soft robotics; current relevance score is 5/10.",
+    "summary_provider": "fallback",
+    "openai_summary_applied": false,
+    "relevance_note_en": "Relevant to the tracker through Soft robotics; score: 5/10.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "first_added": "2026-11-19",
+    "last_updated": "2026-11-19",
+    "is_weekly_new": true,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-11-19",
+    "openalex_venue_rank": "Rank 3",
+    "openalex_venue_rank_number": 3,
+    "openalex_venue_rank_score": 2.4223684210526315,
+    "openalex_venue_rank_percentile": 0.3652,
+    "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+  },
+  {
     "id": "10.1016/j.matdes.2026.117413",
     "title": "Design of patient-specific metamaterial orthopedic implants enabled by field-driven lattice grading for additive manufacturing",
     "authors": [
@@ -124238,9 +124527,28 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Mats K. G. Johansson",
+        "openalex_author_id": "https://openalex.org/A5005463911",
+        "orcid": "https://orcid.org/0000-0003-3201-5138",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "KTH Royal Institute of Technology",
+            "ror": "https://ror.org/026vcq606",
+            "country_code": "SE",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Fibre and Polymer Technology KTH Royal Institute of Technology  Stockholm Sweden"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Advanced Functional Materials",
     "doi": "10.1002/adfm.78494",
@@ -124260,7 +124568,7 @@
     "issn_l": "",
     "publisher": "Wiley",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7213553075",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S135204980",
@@ -126395,7 +126703,7 @@
     "publisher": "Wiley",
     "openalex_checked": true,
     "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4417456790",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S135204980",
     "venue_metrics": {
@@ -127676,10 +127984,10 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-07-06",
-    "last_updated": "2026-11-17",
+    "last_updated": "2026-11-19",
     "is_weekly_new": false,
-    "not_seen_in_latest_crossref_run": true,
-    "last_seen_in_crossref_run": "2026-11-17",
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-11-19",
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 4.5789508110936685,
@@ -173059,9 +173367,28 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Yeşim Tarhan",
+        "openalex_author_id": "https://openalex.org/A5023138277",
+        "orcid": "https://orcid.org/0000-0002-3901-9070",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Ardahan University",
+            "ror": "https://ror.org/042ejbk14",
+            "country_code": "TR",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "ARDAHAN ÜNİVERSİTESİ, ARDAHAN TEKNİK BİLİMLER MESLEK YÜKSEKOKULU"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2025,
     "venue": "Uludağ University Journal of The Faculty of Engineering",
     "doi": "10.17482/uumfd.1604638",
@@ -173080,7 +173407,7 @@
     "issn_l": "",
     "publisher": "Uludag University Journal of the Faculty of Engineering",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4417246574",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2736726804",
@@ -187087,9 +187414,46 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Jiahe Hu",
+        "openalex_author_id": null,
+        "orcid": null,
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Henan Polytechnic University",
+            "ror": "https://ror.org/05vr1c885",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "College of Computer Science and Technology , Henan Polytechnic University , Jiaozuo , China"
+        ]
+      },
+      {
+        "name": "Jiahui Li",
+        "openalex_author_id": "https://openalex.org/A5114804071",
+        "orcid": "https://orcid.org/0009-0005-0722-970X",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Henan Polytechnic University",
+            "ror": "https://ror.org/05vr1c885",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "College of Computer Science and Technology , Henan Polytechnic University , Jiaozuo , China"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2025,
     "venue": "International Journal of Computer Science and Information Technology",
     "doi": "10.62051/ijcsit.v6n1.10",
@@ -187109,7 +187473,7 @@
     "issn_l": "",
     "publisher": "Warwick Evans Publishing",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4411430866",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S4390963318",
@@ -208323,9 +208687,29 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Ximei Liu",
+        "openalex_author_id": "https://openalex.org/A5032973013",
+        "orcid": "https://orcid.org/0000-0002-3170-3118",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Jiangxi Science and Technology Normal University",
+            "ror": "https://ror.org/04r1zkp10",
+            "country_code": "CN",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Jiangxi Provincial Key Laboratory of Flexible Electronics, Jiangxi Science and Technology Normal University, Nanchang 330013, Jiangxi, China",
+          "School of Pharmacy, Jiangxi Science and Technology Normal University, Nanchang 330013, Jiangxi, China"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2025,
     "venue": "Soft Science",
     "doi": "10.20517/ss.2024.38",
@@ -208344,7 +208728,7 @@
     "issn_l": "",
     "publisher": "OAE Publishing Inc.",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4406479931",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S4210169458",
@@ -227955,7 +228339,7 @@
     "last_updated": "2026-11-19",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-11-19",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 3.7044257112750265,
@@ -261209,9 +261593,28 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Ali Zolfagharian",
+        "openalex_author_id": "https://openalex.org/A5072793982",
+        "orcid": "https://orcid.org/0000-0001-5302-360X",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Deakin University",
+            "ror": "https://ror.org/02czsnj07",
+            "country_code": "AU",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Deakin University – Geelong Campus at Waurn Ponds, Geelong, Australia"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2025,
     "venue": "4D Printing",
     "doi": "10.1108/4dp-04-2025-0008",
@@ -261230,7 +261633,7 @@
     "issn_l": "",
     "publisher": "Emerald",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7101572459",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S5407047337",
@@ -281918,9 +282321,28 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Kamil Çetin",
+        "openalex_author_id": "https://openalex.org/A5074234711",
+        "orcid": "https://orcid.org/0000-0003-1029-5626",
+        "position": "middle",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Izmir Kâtip Çelebi University",
+            "ror": "https://ror.org/024nx4843",
+            "country_code": "TR",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "IZMIR KATIP CELEBI UNIVERSITY"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2024,
     "venue": "International Journal of 3D Printing Technologies and Digital Industry",
     "doi": "10.46519/ij3dptdi.1452734",
@@ -281939,7 +282361,7 @@
     "issn_l": "",
     "publisher": "International Journal of 3D Printing Technologies and Digital Industry",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4405586553",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S4210214343",
@@ -300556,9 +300978,28 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Seyed Hossein Elahi",
+        "openalex_author_id": "https://openalex.org/A5103034404",
+        "orcid": "https://orcid.org/0000-0002-6658-8834",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Arak University of Technology",
+            "ror": "https://ror.org/053wftt74",
+            "country_code": "IR",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Arak University of Technology, Department of Mechanical engineering, Arak, Iran"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2024,
     "venue": "Archives of Metallurgy and Materials",
     "doi": "10.24425/amm.2024.150902",
@@ -300577,7 +301018,7 @@
     "issn_l": "",
     "publisher": "Polish Academy of Sciences Chancellery",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4402884184",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S20440071",
@@ -322208,7 +322649,7 @@
     "last_updated": "2026-11-19",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-11-19",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 4",
     "openalex_venue_rank_number": 4,
     "openalex_venue_rank_score": 0.1440677966101695,
@@ -326676,9 +327117,41 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Kai Blanco",
+        "openalex_author_id": "https://openalex.org/A5093991014",
+        "orcid": "https://orcid.org/0009-0008-0007-3599",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Consejo Superior de Investigaciones Científicas",
+            "ror": "https://ror.org/02gfc7t72",
+            "country_code": "ES",
+            "type": "government"
+          },
+          {
+            "name": "Centre for Automation and Robotics",
+            "ror": "https://ror.org/02wh02235",
+            "country_code": "ES",
+            "type": "facility"
+          },
+          {
+            "name": "Universidad Politécnica de Madrid",
+            "ror": "https://ror.org/03n6nwv02",
+            "country_code": "ES",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Centre for Automation and Robotics (CAR), CSIC-UPM, Madrid, Spain",
+          "Centre for Automation and Robotics, UPM-CSIC, Carretera CAMPO-REAL Km 0.2, Arganda del Rey, Madrid, Spain"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2024,
     "venue": "IEEE Access",
     "doi": "10.1109/access.2024.3369493",
@@ -326697,7 +327170,7 @@
     "issn_l": "",
     "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4392114349",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2485537415",
