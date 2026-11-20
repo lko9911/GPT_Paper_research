@@ -58172,7 +58172,7 @@
     "first_added": "2026-07-03",
     "last_updated": "2026-11-20",
     "is_weekly_new": false,
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "last_seen_in_crossref_run": "2026-11-20",
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
@@ -96623,9 +96623,46 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Yichen Zhai",
+        "openalex_author_id": "https://openalex.org/A5074251294",
+        "orcid": "https://orcid.org/0000-0001-6174-7421",
+        "position": "first",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of California San Diego",
+            "ror": "https://ror.org/0168r3w48",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical and Aerospace Engineering, University of California\r                    San Diego, La Jolla, CA 92093, USA"
+        ]
+      },
+      {
+        "name": "Michael Thomas Tolley",
+        "openalex_author_id": "https://openalex.org/A5056621190",
+        "orcid": "https://orcid.org/0000-0001-7821-7777",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "University of California San Diego",
+            "ror": "https://ror.org/0168r3w48",
+            "country_code": "US",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Department of Mechanical and Aerospace Engineering, University of California\r                    San Diego, La Jolla, CA 92093, USA"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Science Robotics",
     "doi": "10.1126/scirobotics.aei1264",
@@ -96644,7 +96681,7 @@
     "issn_l": "",
     "publisher": "American Association for the Advancement of Science (AAAS)",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W7236390815",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S4210213233",
@@ -122662,9 +122699,19 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Panagiotis Ν. Koustoumpardis",
+        "openalex_author_id": "https://openalex.org/A5022270711",
+        "orcid": "https://orcid.org/0000-0002-3051-7321",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Actuators",
     "doi": "10.3390/act15110614",
@@ -122683,8 +122730,8 @@
     "issn_l": "",
     "publisher": "MDPI AG",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7214093547",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S2736557103",
     "venue_metrics": {
@@ -126680,9 +126727,28 @@
         ]
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Sam Ladak",
+        "openalex_author_id": "https://openalex.org/A5013234444",
+        "orcid": "https://orcid.org/0000-0002-0275-0927",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Cardiff University",
+            "ror": "https://ror.org/03kk7td41",
+            "country_code": "GB",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "School of Physics & Astronomy Cardiff University Cardiff UK"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Advanced Functional Materials",
     "doi": "10.1002/adfm.79485",
@@ -126702,7 +126768,7 @@
     "issn_l": "",
     "publisher": "Wiley",
     "openalex_checked": true,
-    "openalex_used_for": null,
+    "openalex_used_for": "corresponding_author_completion",
     "openalex_crosscheck_work_id": "https://openalex.org/W4417456790",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S135204980",
@@ -127986,7 +128052,7 @@
     "first_added": "2026-07-06",
     "last_updated": "2026-11-20",
     "is_weekly_new": false,
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "last_seen_in_crossref_run": "2026-11-20",
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
@@ -228494,10 +228560,10 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-24",
-    "last_updated": "2026-11-19",
+    "last_updated": "2026-11-20",
     "is_weekly_new": false,
-    "last_seen_in_crossref_run": "2026-11-19",
-    "not_seen_in_latest_crossref_run": true,
+    "last_seen_in_crossref_run": "2026-11-20",
+    "not_seen_in_latest_crossref_run": false,
     "openalex_venue_rank": "Rank 2",
     "openalex_venue_rank_number": 2,
     "openalex_venue_rank_score": 3.7044257112750265,
@@ -233849,7 +233915,7 @@
     ],
     "corresponding_authors": [
       {
-        "name": "Rui Fang Ding",
+        "name": "Rui Ding",
         "openalex_author_id": "https://openalex.org/A5101938132",
         "orcid": "https://orcid.org/0009-0004-5909-8759",
         "position": "first",
@@ -312216,10 +312282,10 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-19",
-    "last_updated": "2026-11-14",
+    "last_updated": "2026-11-20",
     "is_weekly_new": false,
-    "last_seen_in_crossref_run": "2026-11-14",
-    "not_seen_in_latest_crossref_run": true,
+    "last_seen_in_crossref_run": "2026-11-20",
+    "not_seen_in_latest_crossref_run": false,
     "openalex_venue_rank": "Rank 3",
     "openalex_venue_rank_number": 3,
     "openalex_venue_rank_score": 2.287671232876712,
