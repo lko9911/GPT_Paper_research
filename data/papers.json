@@ -47231,7 +47231,7 @@
         "name": "Cho‐Pei Jiang",
         "openalex_author_id": "https://openalex.org/A5030912367",
         "orcid": "https://orcid.org/0000-0002-7933-7356",
-        "position": "last",
+        "position": "middle",
         "is_corresponding": true,
         "institutions": [
           {
@@ -47239,10 +47239,17 @@
             "ror": "https://ror.org/00cn92c09",
             "country_code": "TW",
             "type": "education"
+          },
+          {
+            "name": "University of Waterloo",
+            "ror": "https://ror.org/01aff2v68",
+            "country_code": "CA",
+            "type": "education"
           }
         ],
         "raw_affiliation_strings": [
-          "Department of Mechanical Engineering, National Taipei University of Technology"
+          "National Taipei University of Technology",
+          "National Taipei University of Technology Ehsan Toyserkani University of Waterloo"
         ]
       }
     ],
@@ -47267,7 +47274,7 @@
     "publisher": "Tech Science Press",
     "openalex_checked": true,
     "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W7143654623",
+    "openalex_crosscheck_work_id": "https://openalex.org/W4391105019",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S4210191605",
     "venue_metrics": {
@@ -57955,7 +57962,7 @@
     "first_added": "2026-07-03",
     "last_updated": "2026-11-24",
     "is_weekly_new": false,
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "last_seen_in_crossref_run": "2026-11-24",
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
@@ -68275,10 +68282,10 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-09-14",
-    "last_updated": "2026-11-15",
+    "last_updated": "2026-11-24",
     "is_weekly_new": false,
-    "not_seen_in_latest_crossref_run": true,
-    "last_seen_in_crossref_run": "2026-11-15",
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-11-24",
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
     "openalex_venue_rank_score": 6.531800046937339,
@@ -73308,9 +73315,28 @@
         "raw_affiliation_strings": []
       }
     ],
-    "corresponding_authors": [],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_authors": [
+      {
+        "name": "Kunal Masania",
+        "openalex_author_id": "https://openalex.org/A5082870560",
+        "orcid": "https://orcid.org/0000-0001-9498-1505",
+        "position": "last",
+        "is_corresponding": true,
+        "institutions": [
+          {
+            "name": "Delft University of Technology",
+            "ror": "https://ror.org/02e2c7k09",
+            "country_code": "NL",
+            "type": "education"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Shaping Matter Lab, Faculty of Aerospace Engineering, Delft University of Technology, Delft, 2629 HS, the Netherlands"
+        ]
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "year": 2026,
     "venue": "Materials & Design",
     "doi": "10.1016/j.matdes.2026.117611",
@@ -73329,8 +73355,8 @@
     "issn_l": "",
     "publisher": "Elsevier BV",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7238791505",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S8792693",
     "venue_metrics": {
@@ -84154,6 +84180,12 @@
             "ror": "https://ror.org/00rqy9422",
             "country_code": "AU",
             "type": "education"
+          },
+          {
+            "name": "Australian Institute for Bioengineering and Nanotechnology",
+            "ror": "https://ror.org/02n6v4633",
+            "country_code": "AU",
+            "type": "facility"
           }
         ],
         "raw_affiliation_strings": [
@@ -84190,6 +84222,12 @@
             "ror": "https://ror.org/00rqy9422",
             "country_code": "AU",
             "type": "education"
+          },
+          {
+            "name": "Australian Institute for Bioengineering and Nanotechnology",
+            "ror": "https://ror.org/02n6v4633",
+            "country_code": "AU",
+            "type": "facility"
           }
         ],
         "raw_affiliation_strings": [
@@ -117998,12 +118036,6 @@
         "is_corresponding": true,
         "institutions": [
           {
-            "name": "Cardiff University",
-            "ror": "https://ror.org/03kk7td41",
-            "country_code": "GB",
-            "type": "education"
-          },
-          {
             "name": "Cardiff Metropolitan University",
             "ror": "https://ror.org/00bqvf857",
             "country_code": "GB",
@@ -126389,6 +126421,12 @@
             "ror": "https://ror.org/04cm2y595",
             "country_code": "CA",
             "type": "facility"
+          },
+          {
+            "name": "Acceleration Consortium",
+            "ror": "https://ror.org/01peh9047",
+            "country_code": "CA",
+            "type": "facility"
           }
         ],
         "raw_affiliation_strings": [
@@ -126419,6 +126457,12 @@
           {
             "name": "Vector Institute",
             "ror": "https://ror.org/03kqdja62",
+            "country_code": "CA",
+            "type": "facility"
+          },
+          {
+            "name": "Acceleration Consortium",
+            "ror": "https://ror.org/01peh9047",
             "country_code": "CA",
             "type": "facility"
           }
@@ -148615,7 +148659,7 @@
     "first_added": "2026-07-04",
     "last_updated": "2026-11-24",
     "is_weekly_new": false,
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "last_seen_in_crossref_run": "2026-11-24",
     "openalex_venue_rank": "Rank 1",
     "openalex_venue_rank_number": 1,
@@ -151123,6 +151167,12 @@
             "ror": "https://ror.org/00rqy9422",
             "country_code": "AU",
             "type": "education"
+          },
+          {
+            "name": "Australian Institute for Bioengineering and Nanotechnology",
+            "ror": "https://ror.org/02n6v4633",
+            "country_code": "AU",
+            "type": "facility"
           }
         ],
         "raw_affiliation_strings": [
@@ -202461,6 +202511,12 @@
             "ror": "https://ror.org/00rqy9422",
             "country_code": "AU",
             "type": "education"
+          },
+          {
+            "name": "Australian Institute for Bioengineering and Nanotechnology",
+            "ror": "https://ror.org/02n6v4633",
+            "country_code": "AU",
+            "type": "facility"
           }
         ],
         "raw_affiliation_strings": [
@@ -202479,6 +202535,12 @@
             "ror": "https://ror.org/00rqy9422",
             "country_code": "AU",
             "type": "education"
+          },
+          {
+            "name": "Australian Institute for Bioengineering and Nanotechnology",
+            "ror": "https://ror.org/02n6v4633",
+            "country_code": "AU",
+            "type": "facility"
           }
         ],
         "raw_affiliation_strings": [
@@ -231508,6 +231570,12 @@
             "ror": "https://ror.org/02wnxgj78",
             "country_code": "KR",
             "type": "education"
+          },
+          {
+            "name": "Korea Institute of Medical Microrobotics",
+            "ror": "https://ror.org/00vkb0w33",
+            "country_code": "KR",
+            "type": "nonprofit"
           }
         ],
         "raw_affiliation_strings": [
@@ -231521,7 +231589,14 @@
         "orcid": null,
         "position": "middle",
         "is_corresponding": true,
-        "institutions": [],
+        "institutions": [
+          {
+            "name": "Korea Institute of Medical Microrobotics",
+            "ror": "https://ror.org/00vkb0w33",
+            "country_code": "KR",
+            "type": "nonprofit"
+          }
+        ],
         "raw_affiliation_strings": [
           "Korea Institute of Medical Microrobotics 43-26, Cheomdangwagi-ro 208-beon-gil, Buk-gu, Gwangju 61011, South Korea"
         ]
@@ -231532,7 +231607,14 @@
         "orcid": "https://orcid.org/0000-0001-5362-2661",
         "position": "middle",
         "is_corresponding": true,
-        "institutions": [],
+        "institutions": [
+          {
+            "name": "Korea Institute of Medical Microrobotics",
+            "ror": "https://ror.org/00vkb0w33",
+            "country_code": "KR",
+            "type": "nonprofit"
+          }
+        ],
         "raw_affiliation_strings": [
           "Korea Institute of Medical Microrobotics 43-26, Cheomdangwagi-ro 208-beon-gil, Buk-gu, Gwangju 61011, South Korea"
         ]
@@ -231549,6 +231631,12 @@
             "ror": "https://ror.org/05kzjxq56",
             "country_code": "KR",
             "type": "education"
+          },
+          {
+            "name": "Korea Institute of Medical Microrobotics",
+            "ror": "https://ror.org/00vkb0w33",
+            "country_code": "KR",
+            "type": "nonprofit"
           }
         ],
         "raw_affiliation_strings": [
@@ -279401,10 +279489,10 @@
     "raw_abstract_displayed": false,
     "pdf_stored": false,
     "first_added": "2026-06-12",
-    "last_updated": "2026-11-23",
+    "last_updated": "2026-11-24",
     "is_weekly_new": false,
-    "last_seen_in_crossref_run": "2026-11-23",
-    "not_seen_in_latest_crossref_run": true,
+    "last_seen_in_crossref_run": "2026-11-24",
+    "not_seen_in_latest_crossref_run": false,
     "openalex_venue_rank": "Rank 3",
     "openalex_venue_rank_number": 3,
     "openalex_venue_rank_score": 1.5357142857142858,
@@ -303622,7 +303710,14 @@
         "orcid": "https://orcid.org/0009-0006-1201-4575",
         "position": "first",
         "is_corresponding": true,
-        "institutions": [],
+        "institutions": [
+          {
+            "name": "Sri Shakthi Institute of Engineering and Technology",
+            "ror": "https://ror.org/04gryye41",
+            "country_code": "IN",
+            "type": "education"
+          }
+        ],
         "raw_affiliation_strings": [
           "Department of Mechanical Engineering, Sri Shakthi Institute of Engineering and Technology, Coimbatore, Tamil Nadu, India"
         ]
@@ -314501,6 +314596,12 @@
           {
             "name": "State Key Laboratory of Solid Lubrication",
             "ror": "https://ror.org/00tnqka34",
+            "country_code": "CN",
+            "type": "facility"
+          },
+          {
+            "name": "Shandong Laboratory of Advanced Materials and Green Manufacturing",
+            "ror": "https://ror.org/02vxs3y60",
             "country_code": "CN",
             "type": "facility"
           }
@@ -338746,7 +338847,7 @@
     "last_updated": "2026-11-24",
     "is_weekly_new": false,
     "last_seen_in_crossref_run": "2026-11-24",
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "openalex_venue_rank": "Rank 3",
     "openalex_venue_rank_number": 3,
     "openalex_venue_rank_score": 3.1695652173913045,
@@ -349977,6 +350078,12 @@
             "ror": "https://ror.org/00rqy9422",
             "country_code": "AU",
             "type": "education"
+          },
+          {
+            "name": "Australian Institute for Bioengineering and Nanotechnology",
+            "ror": "https://ror.org/02n6v4633",
+            "country_code": "AU",
+            "type": "facility"
           }
         ],
         "raw_affiliation_strings": [
@@ -349995,6 +350102,12 @@
             "ror": "https://ror.org/00rqy9422",
             "country_code": "AU",
             "type": "education"
+          },
+          {
+            "name": "Australian Institute for Bioengineering and Nanotechnology",
+            "ror": "https://ror.org/02n6v4633",
+            "country_code": "AU",
+            "type": "facility"
           }
         ],
         "raw_affiliation_strings": [
@@ -350013,6 +350126,12 @@
             "ror": "https://ror.org/00rqy9422",
             "country_code": "AU",
             "type": "education"
+          },
+          {
+            "name": "Australian Institute for Bioengineering and Nanotechnology",
+            "ror": "https://ror.org/02n6v4633",
+            "country_code": "AU",
+            "type": "facility"
           }
         ],
         "raw_affiliation_strings": [
