@@ -1,4 +1,98 @@
 {
+  "10.1016/j.addma.2026.105187": {
+    "author_details": [
+      {
+        "name": "Jiayu Pan",
+        "orcid": "https://orcid.org/0009-0006-3411-6185",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Feng Liu",
+        "orcid": "https://orcid.org/0009-0002-5910-3488",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Dong Wang",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Meng Ye",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2214-8604"
+    ],
+    "issn_l": "",
+    "publisher": "Elsevier BV",
+    "openalex_checked": true,
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7147648722",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S2764842179",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S2764842179",
+      "issn_l": "2214-7810",
+      "issn": [
+        "2214-7810",
+        "2214-8604"
+      ],
+      "type": "journal",
+      "host_organization_name": "Elsevier BV",
+      "works_count": 5106,
+      "cited_by_count": 246110,
+      "two_year_mean_citedness": 7.721680420105026,
+      "h_index": 193,
+      "i10_index": 3661,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 7.721680420105026,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - This paper discusses a method for path planning in 3D printing using reinforcement learning.\n2. Problem - The challenge addressed is optimizing the printing process for continuous fiber reinforced thermoplastic composites.\n3. Method - The authors propose a reinforcement learning-based approach to enhance the efficiency of the path planning process.\n4. Key Result - The proposed method demonstrates improved performance in terms of print quality and material usage compared to traditional techniques.\n5. Takeaway - Reinforcement learning can significantly optimize path planning in advanced 3D printing applications.",
+    "relevance_note_en": "The summary captures the essence of the paper's focus on reinforcement learning for 3D printing path planning.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "last_seen_in_crossref_run": "2026-11-25",
+    "not_seen_in_latest_crossref_run": false,
+    "id": "10.1016/j.addma.2026.105187"
+  },
   "10.1007/s00170-025-17144-9": {
     "author_details": [
       {
@@ -25102,8 +25196,8 @@
         ]
       }
     ],
-    "corresponding_author_available": false,
-    "corresponding_author_source": null,
+    "corresponding_author_available": true,
+    "corresponding_author_source": "openalex_cross_check",
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
     "crossref_collection_route": "keyword_query",
@@ -25116,8 +25210,8 @@
     "issn_l": "",
     "publisher": "Wiley",
     "openalex_checked": true,
-    "openalex_used_for": null,
-    "openalex_crosscheck_work_id": "",
+    "openalex_used_for": "corresponding_author_completion",
+    "openalex_crosscheck_work_id": "https://openalex.org/W7239431878",
     "openalex_work_id": "",
     "openalex_source_id": "https://openalex.org/S4210232622",
     "venue_metrics": {
@@ -30895,7 +30989,7 @@
     "abstract_used_for_summary": true,
     "raw_abstract_displayed": false,
     "pdf_stored": false,
-    "not_seen_in_latest_crossref_run": false,
+    "not_seen_in_latest_crossref_run": true,
     "last_seen_in_crossref_run": "2026-11-25",
     "id": "10.1002/rob.70332"
   },
@@ -36710,272 +36804,5 @@
     "not_seen_in_latest_crossref_run": false,
     "last_seen_in_crossref_run": "2026-11-25",
     "id": "10.1021/acsami.6c09727"
-  },
-  "10.1002/adma.202523039": {
-    "author_details": [
-      {
-        "name": "Chun Zhang",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Institute for Advanced Study Chengdu University  Sichuan China"
-          },
-          {
-            "name": "State Key Laboratory of Advanced Polymer Materials Polymer Research Institute Sichuan University  Chengdu China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Institute for Advanced Study Chengdu University  Sichuan China",
-          "State Key Laboratory of Advanced Polymer Materials Polymer Research Institute Sichuan University  Chengdu China"
-        ]
-      },
-      {
-        "name": "Jialong Lu",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Institute for Advanced Study Chengdu University  Sichuan China"
-          },
-          {
-            "name": "College of Food and Biological Engineering Chengdu University  Chengdu China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Institute for Advanced Study Chengdu University  Sichuan China",
-          "College of Food and Biological Engineering Chengdu University  Chengdu China"
-        ]
-      },
-      {
-        "name": "Shuang Fu",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "State Key Laboratory of Advanced Polymer Materials Polymer Research Institute Sichuan University  Chengdu China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "State Key Laboratory of Advanced Polymer Materials Polymer Research Institute Sichuan University  Chengdu China"
-        ]
-      },
-      {
-        "name": "Junpeng Cheng",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "State Key Laboratory of Advanced Polymer Materials Polymer Research Institute Sichuan University  Chengdu China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "State Key Laboratory of Advanced Polymer Materials Polymer Research Institute Sichuan University  Chengdu China"
-        ]
-      },
-      {
-        "name": "Reyihanguli Muhetaer",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "State Key Laboratory of Advanced Polymer Materials Polymer Research Institute Sichuan University  Chengdu China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "State Key Laboratory of Advanced Polymer Materials Polymer Research Institute Sichuan University  Chengdu China"
-        ]
-      },
-      {
-        "name": "Tongzhi Zang",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "State Key Laboratory of Advanced Polymer Materials Polymer Research Institute Sichuan University  Chengdu China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "State Key Laboratory of Advanced Polymer Materials Polymer Research Institute Sichuan University  Chengdu China"
-        ]
-      },
-      {
-        "name": "Guoxia Fei",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "State Key Laboratory of Advanced Polymer Materials Polymer Research Institute Sichuan University  Chengdu China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "State Key Laboratory of Advanced Polymer Materials Polymer Research Institute Sichuan University  Chengdu China"
-        ]
-      },
-      {
-        "name": "Kun Yang",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Institute for Advanced Study Chengdu University  Sichuan China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Institute for Advanced Study Chengdu University  Sichuan China"
-        ]
-      },
-      {
-        "name": "Jian Wang",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "College of Food and Biological Engineering Chengdu University  Chengdu China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "College of Food and Biological Engineering Chengdu University  Chengdu China"
-        ]
-      },
-      {
-        "name": "Li Yang",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Institute for Advanced Study Chengdu University  Sichuan China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Institute for Advanced Study Chengdu University  Sichuan China"
-        ]
-      },
-      {
-        "name": "Qingyuan Wang",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Institute for Advanced Study Chengdu University  Sichuan China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Institute for Advanced Study Chengdu University  Sichuan China"
-        ]
-      },
-      {
-        "name": "Xili Lu",
-        "orcid": "https://orcid.org/0000-0003-3705-3694",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "State Key Laboratory of Advanced Polymer Materials Polymer Research Institute Sichuan University  Chengdu China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "State Key Laboratory of Advanced Polymer Materials Polymer Research Institute Sichuan University  Chengdu China"
-        ]
-      },
-      {
-        "name": "Hesheng Xia",
-        "orcid": "https://orcid.org/0000-0001-8087-7272",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "State Key Laboratory of Advanced Polymer Materials Polymer Research Institute Sichuan University  Chengdu China"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "State Key Laboratory of Advanced Polymer Materials Polymer Research Institute Sichuan University  Chengdu China"
-        ]
-      },
-      {
-        "name": "Yue Zhao",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "Département de chimie Université de Sherbrooke  Sherbrooke Québec Canada"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "Département de chimie Université de Sherbrooke  Sherbrooke Québec Canada"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "issn_venue_query",
-    "crossref_target_venue": "Advanced Materials",
-    "crossref_target_issn": "0935-9648",
-    "issn": [
-      "0935-9648",
-      "1521-4095"
-    ],
-    "issn_l": "",
-    "publisher": "Wiley",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W7140383733",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S99352657",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S99352657",
-      "issn_l": "0935-9648",
-      "issn": [
-        "0935-9648",
-        "1521-4095"
-      ],
-      "type": "journal",
-      "host_organization_name": null,
-      "works_count": 44789,
-      "cited_by_count": 4803689,
-      "two_year_mean_citedness": 21.19633376740459,
-      "h_index": 743,
-      "i10_index": 31001,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "High-impact general journal",
-      "basis": "manual_core_venue",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 21.19633376740459,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 1",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "core",
-    "venue_scope": "core",
-    "core_source": "manual_core_venue",
-    "ai_summary_en": "1. Topic - The study focuses on a 3D-printed light-driven liquid crystal elastomer robot inspired by water striders.\n2. Problem - The challenge addressed is creating a robot that can adapt its locomotion modes at the air-water interface.\n3. Method - The robot utilizes carbon nanotubes for photothermal effects and dynamic disulfide bonds for reconfigurability, enabling various propulsion modes.\n4. Key Result - The robot demonstrates three distinct locomotion modes and can perform complex tasks like maze navigation and cargo transport.\n5. Takeaway - This research showcases the potential of dynamic liquid crystal elastomer robots for advanced applications in soft robotics and biomimetic designs.",
-    "relevance_note_en": "The summary captures the essence of the study's innovations and applications in soft robotics.",
-    "abstract_used_for_summary": true,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-11-25",
-    "not_seen_in_latest_crossref_run": false,
-    "id": "10.1002/adma.202523039"
   }
 }
