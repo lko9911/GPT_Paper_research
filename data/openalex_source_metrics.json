@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-25T23:35:14Z",
+  "updated_at": "2026-11-26T10:36:47Z",
   "rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR.",
   "venues": {
     "1st international conference on industrial manufacturing and process engineering icimp 2024": {
@@ -13779,8 +13779,33 @@
       "openalex_venue_rank_percentile": 0.8643,
       "openalex_venue_rank_score": 8.13,
       "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "matec web of conferences": {
+      "matched": true,
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210175061",
+      "display_name": "MATEC Web of Conferences",
+      "abbreviated_title": "",
+      "issn": [
+        "2261-236X",
+        "2274-7214"
+      ],
+      "issn_l": "2261-236X",
+      "type": "conference",
+      "host_organization_name": "EDP Sciences",
+      "homepage_url": "http://www.matec-conferences.org",
+      "works_count": 30166,
+      "cited_by_count": 142202,
+      "two_year_mean_citedness": 0.96,
+      "h_index": 74,
+      "i10_index": 3927,
+      "is_core": false,
+      "is_oa": true,
+      "is_in_doaj": true,
+      "updated_date": "2026-11-25T02:05:55",
+      "fetched_at": "2026-11-26T10:36:46Z"
     }
   },
-  "venue_count": 626,
-  "matched_venue_count": 436
+  "venue_count": 627,
+  "matched_venue_count": 437
 }
