@@ -5832,9 +5832,9 @@
     "corresponding_author_source": "openalex_cross_check",
     "metadata_source": "crossref",
     "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
+    "crossref_collection_route": "issn_venue_query",
+    "crossref_target_venue": "Rapid Prototyping Journal",
+    "crossref_target_issn": "1355-2546",
     "issn": [
       "1355-2546",
       "1758-7670"
@@ -20464,6 +20464,123 @@
     "not_seen_in_latest_crossref_run": false,
     "id": "10.3390/gels12020138"
   },
+  "10.3390/ceramics9120137": {
+    "author_details": [
+      {
+        "name": "Valentina Rigano",
+        "orcid": "https://orcid.org/0009-0009-7817-3124",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Institute of Materials Physics and Engineering, Department of Applied Science and Technology, Politecnico di Torino, 10129 Torino, Italy"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Institute of Materials Physics and Engineering, Department of Applied Science and Technology, Politecnico di Torino, 10129 Torino, Italy"
+        ]
+      },
+      {
+        "name": "Francesco Braghò",
+        "orcid": "https://orcid.org/0009-0000-6139-6860",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Institute of Materials Physics and Engineering, Department of Applied Science and Technology, Politecnico di Torino, 10129 Torino, Italy"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Institute of Materials Physics and Engineering, Department of Applied Science and Technology, Politecnico di Torino, 10129 Torino, Italy"
+        ]
+      },
+      {
+        "name": "Federico Smeacetto",
+        "orcid": "https://orcid.org/0000-0003-0764-5269",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Institute of Materials Physics and Engineering, Department of Applied Science and Technology, Politecnico di Torino, 10129 Torino, Italy"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Institute of Materials Physics and Engineering, Department of Applied Science and Technology, Politecnico di Torino, 10129 Torino, Italy"
+        ]
+      },
+      {
+        "name": "Francesco Baino",
+        "orcid": "https://orcid.org/0000-0001-8860-0497",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [
+          {
+            "name": "Institute of Materials Physics and Engineering, Department of Applied Science and Technology, Politecnico di Torino, 10129 Torino, Italy"
+          }
+        ],
+        "raw_affiliation_strings": [
+          "Institute of Materials Physics and Engineering, Department of Applied Science and Technology, Politecnico di Torino, 10129 Torino, Italy"
+        ]
+      }
+    ],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "2571-6131"
+    ],
+    "issn_l": "",
+    "publisher": "MDPI AG",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S4210235895",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S4210235895",
+      "issn_l": "2571-6131",
+      "issn": [
+        "2571-6131"
+      ],
+      "type": "journal",
+      "host_organization_name": "Multidisciplinary Digital Publishing Institute",
+      "works_count": 772,
+      "cited_by_count": 6225,
+      "two_year_mean_citedness": 3.6538461538461537,
+      "h_index": 31,
+      "i10_index": 179,
+      "is_core": true,
+      "is_oa": true,
+      "is_in_doaj": true
+    },
+    "journal_quality": {
+      "label": "Not classified",
+      "basis": "insufficient_open_metric",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 3.6538461538461537,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 2",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "non-core",
+    "venue_scope": "non-core",
+    "core_source": "schema_placeholder_crossref_rebuild",
+    "ai_summary_en": "1. Topic - Design and Additive Manufacturing of a Novel Porous Alumina Orbital Implant by Vat Photopolymerization is a 2026 paper from Ceramics about Vat photopolymerization.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Vat photopolymerization.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Vat photopolymerization; current relevance score is 5/10.",
+    "relevance_note_en": "Relevant to the tracker through Vat photopolymerization; score: 5/10.",
+    "abstract_used_for_summary": true,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-11-27",
+    "id": "10.3390/ceramics9120137"
+  },
   "10.1002/advs.202516989": {
     "author_details": [
       {
@@ -29695,6 +29812,116 @@
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1016/j.matdes.2026.115628"
   },
+  "10.1016/j.jmapro.2026.11.073": {
+    "author_details": [
+      {
+        "name": "Dipanjan Dey",
+        "orcid": "",
+        "position": "first",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Arun Kumar Singh",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Aeruru Sai Rupesh",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Shubham Sadhya",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Mukulanand Jha",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      },
+      {
+        "name": "Yuvraj K. Madhukar",
+        "orcid": "",
+        "position": "additional",
+        "is_corresponding": false,
+        "institutions": [],
+        "raw_affiliation_strings": []
+      }
+    ],
+    "corresponding_author_available": false,
+    "corresponding_author_source": null,
+    "metadata_source": "crossref",
+    "crossref_type": "journal-article",
+    "crossref_collection_route": "keyword_query",
+    "crossref_target_venue": "",
+    "crossref_target_issn": "",
+    "issn": [
+      "1526-6125"
+    ],
+    "issn_l": "",
+    "publisher": "Elsevier BV",
+    "openalex_checked": true,
+    "openalex_used_for": null,
+    "openalex_crosscheck_work_id": "",
+    "openalex_work_id": "",
+    "openalex_source_id": "https://openalex.org/S120037611",
+    "venue_metrics": {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/S120037611",
+      "issn_l": "1526-6125",
+      "issn": [
+        "1526-6125",
+        "2212-4616"
+      ],
+      "type": "journal",
+      "host_organization_name": "Elsevier BV",
+      "works_count": 8195,
+      "cited_by_count": 224910,
+      "two_year_mean_citedness": 8.200902151283831,
+      "h_index": 135,
+      "i10_index": 5394,
+      "is_core": true,
+      "is_oa": false,
+      "is_in_doaj": false
+    },
+    "journal_quality": {
+      "label": "Core manufacturing journal",
+      "basis": "manual_core_venue",
+      "official_jif": null,
+      "official_quartile": null,
+      "openalex_two_year_mean_citedness": 8.200902151283831,
+      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
+      "openalex_venue_rank": "Rank 1",
+      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
+    },
+    "venue_trust_reason": "journal article with named venue and no low-trust marker",
+    "core_status": "core",
+    "venue_scope": "core",
+    "core_source": "manual_core_venue",
+    "ai_summary_en": "1. Topic - A novel non-planar path planning for multi-step hybrid wire-laser additive manufacturing to fabricate functional springs with design freedom is a 2026 paper from Journal of Manufacturing Processes about Additive manufacturing.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to Additive manufacturing.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for Additive manufacturing; current relevance score is 5/10.",
+    "relevance_note_en": "Relevant to the tracker through Additive manufacturing; score: 5/10.",
+    "abstract_used_for_summary": false,
+    "raw_abstract_displayed": false,
+    "pdf_stored": false,
+    "not_seen_in_latest_crossref_run": false,
+    "last_seen_in_crossref_run": "2026-11-27",
+    "id": "10.1016/j.jmapro.2026.11.073"
+  },
   "10.1108/rpj-04-2025-0157": {
     "author_details": [
       {
@@ -36507,203 +36734,5 @@
     "last_seen_in_crossref_run": "2026-11-27",
     "not_seen_in_latest_crossref_run": false,
     "id": "10.1002/adma.202512662"
-  },
-  "10.1021/cbe.5c00152": {
-    "author_details": [
-      {
-        "name": "Tao Xie",
-        "orcid": "https://orcid.org/0000-0003-0222-9717",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [
-          {
-            "name": "State Key Laboratory of Chemical Engineering and Low Carbon Technology, College of Chemical and Biological Engineering"
-          },
-          {
-            "name": "Zhejiang University"
-          }
-        ],
-        "raw_affiliation_strings": [
-          "State Key Laboratory of Chemical Engineering and Low Carbon Technology, College of Chemical and Biological Engineering",
-          "Zhejiang University"
-        ]
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "2836-967X",
-      "2836-967X"
-    ],
-    "issn_l": "",
-    "publisher": "American Chemical Society (ACS)",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W4417503199",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S4390648409",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S4390648409",
-      "issn_l": "2836-967X",
-      "issn": [
-        "2836-967X"
-      ],
-      "type": "journal",
-      "host_organization_name": "American Chemical Society",
-      "works_count": 266,
-      "cited_by_count": 1942,
-      "two_year_mean_citedness": 7.3007518796992485,
-      "h_index": 23,
-      "i10_index": 74,
-      "is_core": true,
-      "is_oa": true,
-      "is_in_doaj": true
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 7.3007518796992485,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 1",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - This paper discusses advancements in 3D and 4D printing technologies.\n2. Problem - It addresses the challenges and limitations currently faced in these printing methods.\n3. Method - The author reviews various techniques and innovations in the field of additive manufacturing.\n4. Key Result - The findings highlight significant improvements in material properties and printing efficiency.\n5. Takeaway - The study emphasizes the potential of 3D/4D printing to revolutionize manufacturing processes.",
-    "relevance_note_en": "The summary captures the essence of the paper's focus on advancements and challenges in 3D/4D printing.",
-    "abstract_used_for_summary": false,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "last_seen_in_crossref_run": "2026-10-06",
-    "not_seen_in_latest_crossref_run": true,
-    "id": "10.1021/cbe.5c00152"
-  },
-  "10.1016/j.sna.2026.118468": {
-    "author_details": [
-      {
-        "name": "Zhenhua Wang",
-        "orcid": "",
-        "position": "first",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Chengzhen Yin",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Hengjia Zhu",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Jizhe Wang",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Hehao Chen",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Lianzhong Zhao",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      },
-      {
-        "name": "Nanjia Zhou",
-        "orcid": "",
-        "position": "additional",
-        "is_corresponding": false,
-        "institutions": [],
-        "raw_affiliation_strings": []
-      }
-    ],
-    "corresponding_author_available": true,
-    "corresponding_author_source": "openalex_cross_check",
-    "metadata_source": "crossref",
-    "crossref_type": "journal-article",
-    "crossref_collection_route": "keyword_query",
-    "crossref_target_venue": "",
-    "crossref_target_issn": "",
-    "issn": [
-      "0924-4247"
-    ],
-    "issn_l": "",
-    "publisher": "Elsevier BV",
-    "openalex_checked": true,
-    "openalex_used_for": "corresponding_author_completion",
-    "openalex_crosscheck_work_id": "https://openalex.org/W7210285386",
-    "openalex_work_id": "",
-    "openalex_source_id": "https://openalex.org/S16945967",
-    "venue_metrics": {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/S16945967",
-      "issn_l": "0924-4247",
-      "issn": [
-        "0924-4247",
-        "1873-3069"
-      ],
-      "type": "journal",
-      "host_organization_name": "Elsevier BV",
-      "works_count": 18832,
-      "cited_by_count": 521992,
-      "two_year_mean_citedness": 5.1145866581551225,
-      "h_index": 207,
-      "i10_index": 11309,
-      "is_core": true,
-      "is_oa": false,
-      "is_in_doaj": false
-    },
-    "journal_quality": {
-      "label": "Not classified",
-      "basis": "insufficient_open_metric",
-      "official_jif": null,
-      "official_quartile": null,
-      "openalex_two_year_mean_citedness": 5.1145866581551225,
-      "note": "Official JIF/quartile is not inferred. Add licensed JCR/Scopus data to populate official_jif or official_quartile.",
-      "openalex_venue_rank": "Rank 2",
-      "openalex_venue_rank_basis": "Internal OpenAlex 2yr mean citedness percentile among tracked venues; not JCR."
-    },
-    "venue_trust_reason": "journal article with named venue and no low-trust marker",
-    "core_status": "non-core",
-    "venue_scope": "non-core",
-    "core_source": "schema_placeholder_crossref_rebuild",
-    "ai_summary_en": "1. Topic - 3D-printed liquid crystal elastomer/silicone bistable actuators for reversible snap-through motion is a 2026 paper from Sensors and Actuators A: Physical about LCE.\n2. Problem - It is tracked because it addresses a design, process, material, or automation issue connected to LCE.\n3. Method - The fallback summary is generated from title, venue, metadata, topic tags, and any transient abstract signal without reproducing abstract text.\n4. Key Result - The detailed finding should be verified in the DOI source; this tracker records the paper's topic-level contribution and relevance.\n5. Takeaway - It is useful for this tracker as comparison or background literature for LCE; current relevance score is 5/10.",
-    "relevance_note_en": "Relevant to the tracker through LCE; score: 5/10.",
-    "abstract_used_for_summary": false,
-    "raw_abstract_displayed": false,
-    "pdf_stored": false,
-    "not_seen_in_latest_crossref_run": false,
-    "last_seen_in_crossref_run": "2026-11-27",
-    "id": "10.1016/j.sna.2026.118468"
   }
 }
